@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Upward composition emphasizing stacked archives.
   atmosphere: Reflection, study, and collective memory.
   key_features: Archive spires, moon codex halls, and silent atriums.
-  creative_brief: A lunarpunk library where civic memory is treated as infrastructure.
+  creative_brief: >-
+    Preserve moonshade library-spires grammar as a reusable style system:
+    contemplative vertical archives, low-lumen knowledge architecture, and
+    civic memory infrastructure should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk-noise, military-tech, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-074.webp }
 attributes:

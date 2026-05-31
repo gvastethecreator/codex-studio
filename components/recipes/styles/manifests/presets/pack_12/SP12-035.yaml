@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Epic fantasy aboard an armored train crossing kingdoms.
-  subject_treatment: Car defenders wielding elemental weapons.
-  color_and_tone: Dark steel, heroic gold, and night blue.
-  lighting_and_shadow: Rail sparks and moving magic.
-  texture_and_material: Riveted iron, aged wood, and leather.
-  camera_and_composition: Forward-moving perspective with frontal threat.
-  atmosphere_and_mood: Urgent travel, cooperation, and mobile epic scale.
-  rendering_and_quality: High-readability co-op mission art.
+  aesthetic: Co-op defense sobre tren blindado en fantasía bélica, con progreso por vagones y eventos de asedio móvil.
+  subject_treatment: Defensores por rol elemental (control, ruptura, soporte, anti-swarm) con identidad visual clara.
+  color_and_tone: Acero oscuro, oro heroico y azul nocturno para codificar ofensiva, defensa y estado crítico.
+  lighting_and_shadow: Chispas de riel, magia en tránsito y sombras dinámicas por velocidad del convoy.
+  texture_and_material: Hierro remachado, madera envejecida, cuero reforzado y mecanismos de artillería ritual.
+  camera_and_composition: Perspectiva de avance con amenazas frontales y laterales por carril de vagón.
+  atmosphere_and_mood: Urgente, cooperativa y épica en movimiento constante.
+  rendering_and_quality: Mission art gameplay-first con legibilidad de objetivos por vagón, daño y prioridad enemiga.
 avoidRules:
   - watermark
   - text

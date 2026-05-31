@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Single-parent devotion across changing seasons, wolf-child wildness, mountain houses, weather-rich realism and fairy-tale softness in one maternal frame
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Tender, rural, weathered, loving
-  key_features: Seasonal countryside, parent-child motion, rain-swept fields, mountain-house intimacy, transformation softness
-  creative_brief: Rain washes the mountain house clean of everything but the fierce tenderness of a mother raising children who belong to two worlds and fully to neither. Seasons paint the countryside while she plants, repairs, and holds on with hands that have learned to let go. The wolf and the child are one creature in the soft light of morning, and she is the bridge between what they are and what they choose to become.
+  aesthetic: Realismo rural afectivo con núcleo maternal, integrando cotidianidad doméstica y lirismo de metamorfosis en clave estacional.
+  form_and_line: Línea suave de intimidad familiar, anatomía naturalista cálida y gestualidad de cuidado en movimiento diario.
+  color_palette: Verdes de montaña húmeda, marrones de madera habitada, grises lluviosos y dorados suaves de hogar encendido.
+  lighting_setup: Luz meteorológica cambiante por estación, interiores cálidos de refugio y exteriores nublados con contraste bajo.
+  material_texture: Tierra labrada, madera reparada, ropa cotidiana mojada por lluvia y vegetación de ciclo anual visible.
+  render_quality: Acabado premium de drama humano, con foco en microemociones, ritmo doméstico y continuidad temporal de crecimiento.
+  spatial_distortion: Espacialidad naturalista con composición de proximidad familiar y apertura de paisaje para respiración emocional.
+  atmosphere: Tierna, laboriosa, nostálgica, protectora.
+  key_features: Casa de montaña vivida, dinámica madre e hijos, clima como narrador y transformación integrada sin espectáculo.
+  creative_brief: Crea una gramática reusable de maternidad estacional para cualquier sujeto combinando textura rural, luz climática y lenguaje corporal de cuidado persistente.
 avoidRules:
   - realistic
   - 3d render

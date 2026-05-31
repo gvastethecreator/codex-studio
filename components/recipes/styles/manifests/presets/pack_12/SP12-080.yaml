@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Endgame ritual-throne confrontation language with eclipse-driven mythic contrast and sovereign-collapse iconography.
-  subject_treatment: Final-boss authority silhouette versus hero challenger framing, dominance-distance coding, and duel-centric visual hierarchy.
-  color_and_tone: Umbra blacks, blood-carmine accents, lunar-silver edges, and desaturated imperial stone neutrals.
-  lighting_and_shadow: Coronagraph halo backlight, high-drama silhouette carve, low-lying smoke diffusion, and throne-axis shadow falloff.
-  texture_and_material: Mirror-polished basalt, dark ceremonial alloys, ash-fine atmospheric particulate, and worn imperial ornament details.
-  camera_and_composition: Frontal climax architecture with axial throne dominance, duel lane clarity, and layered symbolic depth planes.
-  atmosphere_and_mood: Fate-locked tension, terminal resolve, and catastrophic epic closure.
-  rendering_and_quality: Campaign-finale key-art fidelity with cinematic confrontation staging, premium material contrast, and decisive narrative readability.
+  aesthetic: Final-boss confrontation de trono eclipsado, centrada en duelo axial, fases y colapso de soberanía.
+  subject_treatment: Silueta autoritaria de jefe final versus héroe retador con jerarquía visual duel-centric.
+  color_and_tone: Negro umbra, carmín sangre, borde plata lunar y neutros imperiales desaturados.
+  lighting_and_shadow: Halo coronográfico a contraluz, carve dramático de silueta y humo bajo difusivo.
+  texture_and_material: Basalto pulido espejo, aleaciones ceremoniales oscuras, ceniza fina y ornamento imperial desgastado.
+  camera_and_composition: Arquitectura frontal de clímax con dominio axial del trono y carril de duelo claro.
+  atmosphere_and_mood: Fatalista, resuelta y catastróficamente épica.
+  rendering_and_quality: Campaign-finale gameplay key-art con legibilidad decisiva de fase, distancia y cierre narrativo.
 avoidRules:
   - watermark
   - text

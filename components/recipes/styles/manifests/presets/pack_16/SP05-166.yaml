@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Meiji-era wandering swordsman drama, sakura and guilt, reverse-blade restraint, dojo warmth punctured by lethal memory, historical romance and steel discipline
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Reflective, noble, restrained, fierce
-  key_features: Kimono-and-sword silhouettes, Meiji streets, reverse-blade stances, sakura accents, inner-conflict close-ups
-  creative_brief: A blade turned backward, every cherry blossom a memory of blood washed away by decades of wandering under a vow that refuses to break. The new era smells of kerosene and progress, but this man still walks in kimono and silence, carrying a reverse-edge sword that promises never to kill again while his eyes remember exactly how many bodies it took to earn that promise. Redemption is not a destination; it is the road between every village, measured in sakura seasons.
+  aesthetic: Drama histórico Meiji de espada redentora, entre disciplina marcial, culpa persistente y sensibilidad romántica.
+  form_and_line: Línea noventera elegante, lectura clara de kenjutsu y acting contenido de conflicto moral.
+  color_palette: Rosas de sakura, ocres de calle Meiji, azules de crepúsculo y grises de acero templado.
+  lighting_setup: Contraste suave de época con atardecer cálido, interiores de dojo y brillo preciso en hoja.
+  material_texture: Madera pulida, tela de kimono, piedra urbana y grano clásico de drama de periodo.
+  render_quality: Acabado premium 90s con balance entre duelo refinado, calma itinerante y peso ético.
+  spatial_distortion: Composición de calle y patio dojo para enfrentamientos sobrios y pausas introspectivas.
+  atmosphere: Reflexiva, noble, contenida, feroz.
+  key_features: Silueta de espadachín errante, gestualidad de no-matar, sakura episódica y memoria de batalla.
+  creative_brief: Diseña una gramática reusable de redención samurái para cualquier sujeto, fusionando honor disciplinado, pasado oscuro y ternura de nueva era.
 avoidRules:
   - realistic
   - 3d render

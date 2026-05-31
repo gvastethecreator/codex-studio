@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Relic race among obelisks in an ancient desert.
-  subject_treatment: Archaeologist racers with lightweight vehicles.
-  color_and_tone: Amber sand, turquoise, and clay red.
-  lighting_and_shadow: Intense sun with volumetric dust.
-  texture_and_material: Eroded stone, leather, and bronze.
-  camera_and_composition: Serpentine route with monumental landmarks.
-  atmosphere_and_mood: Fierce competition and historical mystery.
-  rendering_and_quality: Seasonal event for an adventure game.
+  aesthetic: Racing-event arqueológico en desierto de obeliscos, enfocado en velocidad, relic pickup y navegación por landmarks.
+  subject_treatment: Corredores-arqueólogos con vehículos ligeros y utilidades de exploración competitiva.
+  color_and_tone: Arena ámbar, turquesa y rojo arcilla para diferenciación de ruta y objetivo.
+  lighting_and_shadow: Sol intenso con polvo volumétrico para lectura dramática de trayectorias.
+  texture_and_material: Piedra erosionada, cuero técnico, bronce antiguo y sedimento móvil.
+  camera_and_composition: Ruta serpenteante con hitos monumentales y atajos de alto riesgo.
+  atmosphere_and_mood: Competitiva, feroz y cargada de misterio histórico.
+  rendering_and_quality: Seasonal-race gameplay art con claridad de checkpoints, reliquias y pacing.
 avoidRules:
   - watermark
   - text

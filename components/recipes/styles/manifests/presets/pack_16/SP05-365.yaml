@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ballroom dance under hot competition lights, flowing gowns, polished shoes, partner tension, spin momentum and public judgment turned into dramatic movement theater
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Dazzling, pressured, romantic, intense
-  key_features: Dance-floor reflections, gown motion, pair silhouettes, competition-judge ambiance, spin blur
-  creative_brief: Gowns bloom and collapse like tropical flowers under the scorching geometry of competition spotlights, every spin a negotiation between two bodies and the watching world. The floor becomes a pressure cooker where romance and rivalry share the same heated breath.
+  aesthetic: Ballroom competitivo de pareja, orientado a frame coreográfico, tracción de piso y duelo escénico.
+  form_and_line: Línea de pareja tensa, giro de cadera coordinado y extensión de brazos de alta precisión.
+  color_palette: Dorados de salón, negros de contraste formal, rojos profundos y blancos de brillo de gala.
+  lighting_setup: Spotlights cálidos de competición con reflejo fuerte en piso encerado y bordes de silueta.
+  material_texture: Satén de vestido en flujo, cuero de zapato pulido, parquet brillante y pedrería escénica fina.
+  render_quality: Frame de danza premium con lectura de liderazgo-seguimiento, giro y postura.
+  spatial_distortion: Barrido circular de spin con compresión de fondo y foco en eje de pareja.
+  atmosphere: Deslumbrante, tensa, romántica e intensa.
+  key_features: Reflejo de dance-floor, silueta dual, dinámica de giro y presencia de juez implícita.
+  creative_brief: >-
+    Define una gramática reusable de competition-ballroom donde técnica de
+    pareja, teatralidad de giro y presión pública sostengan identidad visual
+    más allá de una rutina específica.
 avoidRules:
   - realistic
   - 3d render

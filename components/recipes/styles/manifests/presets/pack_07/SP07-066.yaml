@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Brick-built toy-city language based on modular ABS construction, stud-visible assembly logic, and playful engineered urban composition
-  form_and_line: Orthogonal stud grid, stepped block massing, interlocking corner bonds, repeated module cadence, and clean toy-scale geometry transitions
+  aesthetic: Ciudad toy brick-built con ensamblaje modular ABS, lógica stud-visible y urbanismo lúdico de ingeniería simplificada.
+  form_and_line: Retícula ortogonal de studs, masa escalonada por bloques, trabas de esquina y transición geométrica de escala juguete.
   color_palette: Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing blocks, and occasional transparent-plastic highlight tones
-  lighting_setup: Broad diffuse indoor key light with crisp plastic speculars, stud-top highlight clustering, and low-roughness reflections across molded surfaces
-  material_texture: Injection-mold ABS sheen, circular stud caps, seamline joints, smooth slope-piece transitions, and subtle tooling marks typical of toy bricks
-  render_quality: High-readability toy-architecture rendering with precise modular assembly, glossy material fidelity, and deliberate non-realistic block abstraction
+  lighting_setup: Key difusa amplia de interior, especulares plásticas nítidas y agrupaciones de highlight sobre coronas stud.
+  material_texture: Brillo ABS inyectado, tapas circulares, juntas de pieza, transiciones slope y marcas leves de moldeo.
+  render_quality: Toy-architecture de lectura alta con ensamblaje preciso y abstracción de bloque no realista deliberada.
   spatial_distortion: None
-  atmosphere: Energetic, constructive, optimistic, playful, and system-driven
-  key_features: Visible stud fields, baseplate-aligned footprints, modular façade stacking, interlocking brick seams, toy-scale proportion logic, and bright plastic color blocking
+  atmosphere: Energética, constructiva y optimista, guiada por sistema modular.
+  key_features: Campos de studs visibles, huellas alineadas a baseplate, apilado de fachada, seams interlock y color blocking plástico intenso.
   creative_brief: >-
-    Preserve a reusable brick-built grammar: stud-first modular geometry,
-    glossy ABS material response, and color-blocked toy urbanism should remain
-    stable across any subject.
+    Construye una gramática brick-built reusable con geometría modular por
+    stud, respuesta plástica ABS brillante y color blocking consistente en
+    cualquier sujeto.
 avoidRules:
   - smooth
   - realistic

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Hyper-masculine wasteland action, thick shadows, severe physiques, bulging muscles, post-apocalyptic leather, dramatic blood splatter
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Brutal, iconic, intense, visceral
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Bulging anatomy tears through leather and shadow in a post-apocalyptic arena where blood sprays in dramatic arcs across hand-painted wasteland skies. Every muscle fiber strains against thick cel contours, each blow a thunderclap of hyper-masculine fury etched into the very grain of the analogue frame.
+  aesthetic: Épica marcial postapocalíptica de impacto físico extremo, con iconografía de supervivencia y ferocidad ritual.
+  form_and_line: Línea gruesa y cortante, anatomía hipertensa y puesta de golpe frontal con lectura brutal inmediata.
+  color_palette: Ocres abrasados, negros pesados, rojos secos y acentos hueso de paisaje devastado.
+  lighting_setup: Sol alto implacable y sombras densas, con destellos duros sobre sudor, metal y cuero gastado.
+  material_texture: Cuero curtido, polvo volcánico, cicatriz visible y grano áspero de cinta analógica violenta.
+  render_quality: Acabado retro de alto contraste corporal, privilegiando contundencia, daño y resiliencia.
+  spatial_distortion: Horizonte árido abierto con encuadres de colisión directa y escala de duelo primitivo.
+  atmosphere: Brutal, icónica, tensa, visceral.
+  key_features: Siluetas masivas, gesto de superviviente, iconografía wasteland y coreografía de impacto sin ornamento.
+  creative_brief: Construye una gramática reusable de combate de supervivencia en desierto colapsado para cualquier sujeto, enfocada en peso físico, dureza material y catarsis de choque.
 avoidRules:
   - realistic
   - 3d render

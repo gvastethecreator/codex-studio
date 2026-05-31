@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Classic OVA fantasy grandeur, shining armor, party-lined adventure posters, elves and dragons under painterly skies, pure tabletop fantasy sincerity
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Noble, mythic, classic, adventurous
-  key_features: Party-quest formations, painterly fantasy skies, shining armor, dragon-scale worldbuilding, OVA-era grandeur
-  creative_brief: Shining armor catches the light of a painterly sky as party-line adventurers stride through tapestry-born quests. Every elf, every dragon, every clanking paladin is rendered with the sincerity of a D&D session believed in completely. The OVA era never stopped dreaming in jewel tones.
+  aesthetic: Grandilocuencia OVA de fantasy clásico, con sinceridad tabletop y nobleza heroica de aventura coral.
+  form_and_line: Contorno elegante tradicional, ornamento medieval visible y composición de party frontal tipo póster de campaña.
+  color_palette: Zafiro profundo, oro heráldico, rojo estandarte, marfil de pergamino y verde bosque épico.
+  lighting_setup: Cielo pictórico luminoso, key cálido de amanecer de quest y rim heroico en armadura pulida.
+  material_texture: Cota de malla brillante, estandartes bordados, piedra antigua, cuero noble y escamas dracónicas decorativas.
+  render_quality: Acabado clásico de fantasía ilustrada con lectura mítica y belleza de cuadro aventurero.
+  spatial_distortion: Escala heroica tradicional, profundidad de paisaje amplio y staging de formación de grupo.
+  atmosphere: Mítica, noble y aspiracional, con pureza de aventura antigua.
+  key_features: Formación de party, armadura reluciente, cielos pintados y códigos visuales de campaña épica.
+  creative_brief: >-
+    Define una gramática OVA-quest reusable donde iconografía medieval clásica,
+    composición de grupo y romanticismo aventurero conserven una épica sincera
+    y atemporal.
 avoidRules:
   - realistic
   - 3d render

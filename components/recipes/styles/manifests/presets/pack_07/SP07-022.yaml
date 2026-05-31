@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Government building/Museum, temple-front authority, Enlightenment reason, civic monument
-  form_and_line: Columns, pediments, triangular tympanum, stepped plinths, axial vistas
-  color_palette: White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow
-  lighting_setup: Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama
-  material_texture: Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper
-  render_quality: Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion
-  spatial_distortion: None
-  atmosphere: Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride
-  key_features: Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry
-  creative_brief: Columns march in disciplined procession toward a pediment that crowns reason triumphant over chaos. Stone carries the echo of senates and symposiums, every fluted shaft a vote for order over impulse. The structure does not persuade, it declares, wearing its authority in marble and proportion.
+  aesthetic: Neoclásico institucional de autoridad cívica, orden axial y monumentalidad racional.
+  form_and_line: Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría estricta.
+  color_palette: Mármol blanco, caliza clara, piedra fría y bronce dorado con sombras gris azuladas.
+  lighting_setup: Sol lateral que estría columnas, sombras porticadas profundas y acentos nocturnos monumentales.
+  material_texture: Piedra lisa, mármol cincelado, granito pulido, yeso colado y cobre con verdín.
+  render_quality: Monumental clásico de proporción rigurosa y legibilidad institucional permanente.
+  spatial_distortion: Perspectiva axial neutra con jerarquía frontal y escala ceremonial.
+  atmosphere: Seria, estable, cívica y atemporal.
+  key_features: Orden columnario, frontón canónico, escalinatas magnas, rotunda y composición perfectamente simétrica.
+  creative_brief: >-
+    Define una gramática neoclásica transferible por proporción, eje y orden
+    tectónico. La autoridad debe emerger de la composición y la masa pétrea,
+    evitando retórica narrativa o escenográfica.
 avoidRules:
   - modern
   - asymmetry

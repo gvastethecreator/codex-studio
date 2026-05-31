@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Karesansui minimalism, dry-landscape abstraction, contemplative stone-field composition
-  form_and_line: Intentional rake-wave geometry, void-dominant horizontal planes, asymmetrical stone clusters, controlled negative space
+  aesthetic: Karesansui de abstracción seca, contemplación material y economía extrema de gesto.
+  form_and_line: Ondas rastrilladas de alta intención, planos vacíos dominantes y agrupaciones pétreas asimétricas de equilibrio tenso.
   color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
-  lighting_setup: Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp
-  material_texture: Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz
-  render_quality: Hyper-clean minimal rendering, granular surface precision, disciplined compositional silence
+  lighting_setup: Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.
+  material_texture: Arena/grava fina, granito meteorizado, cuarzo triturado y musgo puntual de grano aterciopelado.
+  render_quality: Minimalismo hiperlimpio con precisión granular y silencio compositivo disciplinado.
   spatial_distortion: None
-  atmosphere: Focused stillness, restrained ritual order, quiet temporal suspension
-  key_features: Raked ripple fields, anchored stone triads, selective moss masses, hard boundary containment, water-absence emphasis
+  atmosphere: Quietud enfocada, orden ritual y suspensión temporal.
+  key_features: Campos de rastrillado, tríadas de piedra anclada, masas de musgo selectivas y contención perimetral estricta.
   creative_brief: >-
-    Define este preset por economía extrema de medios: pocos elementos, máxima
-    intención espacial. El gesto de rastrillado y la posición de la piedra deben
-    funcionar como lenguaje compositivo principal, no como decoración zen genérica.
+    Define una gramática zen seca transferible donde el vacío, el rastrillado y
+    la posición pétrea sean lenguaje estructural. Debe evitar iconografía zen
+    superficial y sostener intención espacial máxima con pocos elementos.
 avoidRules:
   - plants
   - water

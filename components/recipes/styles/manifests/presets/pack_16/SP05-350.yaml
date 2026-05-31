@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Aquatic team camaraderie, blue-tiled pool brilliance, water-surface light caustics, relay urgency, youth friendship and polished bodies rendered through warm sports-drama spectacle
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Refreshing, bright, emotional, competitive
-  key_features: Splash arcs, lane-line geometry, wet-hair highlights, relay handoff tension, poolside team silhouettes
-  creative_brief: Water keeps no secrets but holds every friendship. Caustics dance on chlorine-blue tile, and the relay is a promise passed through splash and breath. Togetherness is measured in lane lines and the moment before the dive.
+  aesthetic: Natación de relevos centrada en sincronía de equipo, técnica de salida y transición de testigo.
+  form_and_line: Anatomía hidrodinámica limpia, arcos de brazada fluidos y lectura clara de cambio en pared.
+  color_palette: Azules de piscina clorada, blancos de espuma y acentos de escuadra saturados para lane clarity.
+  lighting_setup: Iluminación interior acuática con caústicas controladas y highlights sobre superficie de agua.
+  material_texture: Agua en lámina especular, baldosa húmeda, tejido elástico de competición y gotas en suspensión.
+  render_quality: Sports frame acuático de alta nitidez con prioridad en salida, ritmo y relevo.
+  spatial_distortion: Distorsión suave por refracción y perspectiva longitudinal de carriles para lectura de velocidad.
+  atmosphere: Refrescante, competitiva y emocionalmente cohesionada.
+  key_features: Splash arcs definidos, geometría de lane-line, handoff de relevo y siluetas poolside.
+  creative_brief: >-
+    Formula una gramática reusable de relay-swim donde caústicas, ritmo de
+    carril y transición de relevo sostengan identidad transferible, no una
+    escena cerrada.
 avoidRules:
   - realistic
   - 3d render

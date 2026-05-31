@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Long corridor depth with branching cellular ribs.
   atmosphere: Adaptive infrastructure, calm motion, and living-system trust.
   key_features: Mycelial rails, transit pods, and nutrient maintenance nodes.
-  creative_brief: A biopunk transit spine where the city moves through a living fungal backbone.
+  creative_brief: >-
+    Preserve mycelial transit-spine grammar as a reusable style system:
+    fungal-structural mobility corridors, branching cellular wayfinding, and
+    calm adaptive infrastructure should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk-grime, violent-neon, watermark, text, logo, rust]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-103.webp }
 attributes:

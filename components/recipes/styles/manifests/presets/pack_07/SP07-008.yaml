@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Japanese zen-wabi interior style with disciplined emptiness, seasonal restraint, and contemplative material quietude
-  form_and_line: Modular tatami grid logic, shoji and fusuma linear cadence, alcove focal minimalism, and low horizon furniture profiles
-  color_palette: Rice-paper whites, bamboo and cedar warms, tatami greens, sumi-charcoal accents, and muted indigo depth notes
-  lighting_setup: Shoji-filtered daylight diffusion, lantern-soft ambient pools, alcove emphasis lighting, and seasonal shadow subtlety
-  material_texture: Tatami fiber weave, raw wood grain, hand-troweled clay matte, paper translucency, and silk-soft accent surfaces
-  render_quality: Refined minimalist rendering with high material calm, balanced negative space, and meditative visual precision
-  spatial_distortion: Neutral geometric proportioning with depth expressed through layered screens and controlled emptiness
-  atmosphere: Meditative, serene, disciplined, reverent, still
-  key_features: Modular calm composition, shoji-tatami grammar, seasonal light subtlety, wabi material restraint
+  aesthetic: Zen doméstico de contención extrema, vacío disciplinado y materialidad natural silenciosa.
+  form_and_line: Retícula tatami modular, secuencia lineal de shoji/fusuma, focos tokonoma y horizontes de mobiliario bajo.
+  color_palette: Blanco papel de arroz, madera clara cálida, verde tatami, carbón sumi e índigo apagado.
+  lighting_setup: Difusión filtrada por paneles, pools cálidos de baja intensidad y sombras estacionales de transición lenta.
+  material_texture: Fibra tatami visible, veta de madera cruda, arcilla mate alisada a mano y translucidez de papel.
+  render_quality: Render minimal refinado con equilibrio de espacio negativo y precisión contemplativa.
+  spatial_distortion: Geometría neutra; profundidad por capas de pantalla y vacíos secuenciados.
+  atmosphere: Serene, reverente, lenta y enfocada.
+  key_features: Sistema shoji-tatami, alcobas focales sobrias, materiales orgánicos desnudos y ritmo espacial contenido.
   creative_brief: >-
-    Keep this preset defined by disciplined emptiness and modular natural
-    material rhythm; meditative screen-filtered light and restrained focal
-    gestures should drive style transferability.
+    Define el preset como una gramática de calma modular: retícula, filtro de
+    luz y vacío intencional. La transferencia debe sostener quietud material y
+    precisión ritual sin depender de escenas tradicionales específicas.
 avoidRules:
   - clutter
   - western

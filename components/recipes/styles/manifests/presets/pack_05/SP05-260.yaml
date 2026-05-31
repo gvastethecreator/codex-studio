@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Bright fantasy party with desserts, polished town squares, cute teamwork, soft comedy, banquet abundance and colorful adventure rendered with candy-clean appeal
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Cheerful, tasty, friendly, polished
-  key_features: Banquet spreads, polished town plazas, cute party staging, candy-fantasy color, soft comedic expressions
-  creative_brief: 'Every quest ends at a banquet table where dessert outranks treasure and polished town squares host the real victory: friendship served in candy-clean pastels. The party that fights together feasts together, their camaraderie the sweetest loot in a world painted with the colors of shared joy.'
+  aesthetic: Fantasía pastel de party alegre, con estética de banquet, comedia suave y aventura de convivencia luminosa.
+  form_and_line: Siluetas cute limpias, staging grupal amigable y arquitectura urbana pulida de plaza central.
+  color_palette: Rosa crema, azul caramelo, melocotón, verde menta y dorado postre.
+  lighting_setup: Luz alta de mediodía festivo, rebote cálido de mesa y acentos brillantes en dulces y ornamentos.
+  material_texture: Glaseado, panadería fantástica, cerámica decorada, tela colorida y piedra urbana impecable.
+  render_quality: Acabado candy-clean con legibilidad de ensemble y tono celebratorio continuo.
+  spatial_distortion: Composición de fiesta horizontal, densidad amable de extras y foco en mesa compartida.
+  atmosphere: Alegre, acogedora y deliciosa.
+  key_features: Banquetes abundantes, plaza pulida, expresiones cómicas suaves y colorimetría de postre.
+  creative_brief: >-
+    Construye una gramática banquet-quest-pastel reusable donde camaradería,
+    abundancia culinaria y diseño urbano luminoso conviertan la aventura en
+    celebración compartida.
 avoidRules:
   - realistic
   - 3d render

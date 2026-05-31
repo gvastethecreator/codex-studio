@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Luminous gem-like bodies suspended in open emptiness, sparse worldbuilding, fragile identity in crystalline stillness, minimalist melancholy and reflective translucency
-  form_and_line: Minimal precise contour, gem-edge line clarity, low-density expressive marks
+  aesthetic: Minimalismo mineral introspectivo con corporalidad gema translúcida suspendida en vacío contemplativo.
+  form_and_line: Contorno mínimo preciso, arista cristalina limpia y marcas expresivas de baja densidad.
   color_palette: Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue
-  lighting_setup: Clean refractive light, edge glow, vast ambient openness, crystalline sparkle without clutter
-  material_texture: Polished mineral translucency, sea-wind smoothness, glasslike skin, sparse matte ground
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido escénico.
+  material_texture: Translucidez mineral pulida, suavidad de erosión marina, piel vítrea y terreno mate mínimo.
+  render_quality: Claridad contemplativa de alto control, con espacio negativo dominante y detalle selectivo.
   spatial_distortion: Slim fragile anatomy, open-space isolation, clean silhouette spacing, low-clutter monumental emptiness
-  atmosphere: Sparse, crystalline, introspective, luminous
-  key_features: Gem-body translucency, open void composition, sparse landscape, fragile posture language, reflective surfaces
-  creative_brief: Bodies as geodes hollowed to translucence. Identity floats in mineral suspension, fragile and crystalline, waiting for light to prove it still exists. Emptiness is not absence but the condition for clarity.
+  atmosphere: Esparsa, luminosa e introspectiva, sostenida por fragilidad cristalina.
+  key_features: Translucidez corporal gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.
+  creative_brief: >-
+    Construye una gramática mineral-void reusable donde translucidez, espacio
+    negativo y melancolía minimal definan identidad, evitando saturación visual
+    o dramatismo ruidoso.
 avoidRules:
   - still
   - calm

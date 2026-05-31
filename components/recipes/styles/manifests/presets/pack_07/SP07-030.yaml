@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Constructivist civic-machine language, ideological monumentality, tectonic propaganda geometry
-  form_and_line: Aggressive diagonals, interlocking prismatic/cylindrical bodies, exposed structural vectors, suspended connectors
-  color_palette: Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson
-  lighting_setup: Overcast, low-angle drama, stark shadow projection, factory-window rhythm
-  material_texture: Concrete, rough-cast render, steel frame, glass-block, bolted plate
-  render_quality: Diagrammatic mass clarity, high-contrast volumetric legibility, archival-modernist severity
-  spatial_distortion: Floating masses
-  atmosphere: Austere, programmatic, collectivist, machine-age idealism with historical residue
-  key_features: Cantilever stress reads, pilotis lift-off, bridge-like connectors, banner-red accent planes, structural hierarchy exposed
+  aesthetic: Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.
+  form_and_line: Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y conectores suspendidos.
+  color_palette: Gris crudo, negro industrial, ocre desvaído y rojo propaganda como acento estratégico.
+  lighting_setup: Cielo cubierto, dramatismo de ángulo bajo, sombras duras proyectadas y ritmo de hueco fabril.
+  material_texture: Hormigón bruto, revoque áspero, acero estructural, bloque de vidrio y placas atornilladas.
+  render_quality: Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.
+  spatial_distortion: Sensación de masas en tensión y volúmenes en suspensión controlada.
+  atmosphere: Austera, colectiva, disciplinada y mecánico-utópica.
+  key_features: Cantiléveres tensos, pilotis, puentes de conexión, planos rojos de comando y estructura explícita.
   creative_brief: >-
-    Construye composiciones donde la forma actúe como manifiesto: geometría en
-    conflicto controlado, estructura visible y cromatismo político mínimo pero
-    contundente. Debe sentirse como arquitectura-programa (función + ideología), no
-    como set cinematográfico puntual.
+    Define una gramática constructivista transferible donde la forma opere como
+    manifiesto: conflicto geométrico, estructura sin ocultamiento y color
+    político mínimo pero incisivo. Debe leerse como arquitectura-programa.
 avoidRules:
   - ornate
   - capitalist

@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react';
 
 import { startViewTransition } from '../utils/transitionUtils';
+import { runWorkspaceSwitchLifecycle } from './workspaceLifecycle';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioRuntimeStatusItem } from './studioDiagnostics';
@@ -34,14 +35,20 @@ interface StudioHeaderToolbarOverlayContext {
 }
 
 interface StudioHeaderToolbarCommandCenterContext {
-  defaultProviderId: HeaderToolbarProps['activeProviderId'] | null | undefined;
-  statusItems: StudioRuntimeStatusItem[];
-  queueResultPreviews: HeaderToolbarProps['queueResultPreviews'];
-  queueJobCount: number;
-  activeServerJobCount: number;
-  isQueueOpen: HeaderToolbarProps['isQueueOpen'];
-  setIsQueueOpen: Dispatch<SetStateAction<boolean>>;
-  onOpenSettings: HeaderToolbarProps['onOpenSettings'];
+  provider: {
+    defaultProviderId: HeaderToolbarProps['activeProviderId'] | null | undefined;
+  };
+  queue: {
+    statusItems: StudioRuntimeStatusItem[];
+    queueResultPreviews: HeaderToolbarProps['queueResultPreviews'];
+    queueJobCount: number;
+    activeServerJobCount: number;
+    isQueueOpen: HeaderToolbarProps['isQueueOpen'];
+    setIsQueueOpen: Dispatch<SetStateAction<boolean>>;
+  };
+  actions: {
+    onOpenSettings: HeaderToolbarProps['onOpenSettings'];
+  };
 }
 
 export interface BuildStudioHeaderToolbarPropsArgs {
@@ -87,10 +94,12 @@ export function buildStudioHeaderToolbarProps({
     activeWorkspaceId: workspace.activeWorkspaceId,
     onSwitchWorkspace: (workspaceId) =>
       startTransition(() => {
-        workspace.setActiveWorkspace(workspaceId);
-        if (view.currentView !== 'studio') {
-          view.onViewChange('studio');
-        }
+        runWorkspaceSwitchLifecycle({
+          workspaceId,
+          currentView: view.currentView,
+          setActiveWorkspace: workspace.setActiveWorkspace,
+          onViewChange: view.onViewChange,
+        });
       }),
     onAddWorkspace: workspace.onAddWorkspace,
     onDeleteWorkspace: workspace.onDeleteWorkspace,
@@ -105,12 +114,12 @@ export function buildStudioHeaderToolbarProps({
     trashCount: overlays.trashCount,
     onToggleDebug: overlays.onToggleDebug,
     usage: view.usage,
-    activeProviderId: commandCenter.defaultProviderId ?? 'codex',
-    runtimeStatus: summarizeRuntimeStatus(commandCenter.statusItems),
-    queueResultPreviews: commandCenter.queueResultPreviews,
-    queueCount: commandCenter.queueJobCount + commandCenter.activeServerJobCount,
-    isQueueOpen: commandCenter.isQueueOpen,
-    onToggleQueue: () => commandCenter.setIsQueueOpen((previous) => !previous),
-    onOpenSettings: commandCenter.onOpenSettings,
+    activeProviderId: commandCenter.provider.defaultProviderId ?? 'codex',
+    runtimeStatus: summarizeRuntimeStatus(commandCenter.queue.statusItems),
+    queueResultPreviews: commandCenter.queue.queueResultPreviews,
+    queueCount: commandCenter.queue.queueJobCount + commandCenter.queue.activeServerJobCount,
+    isQueueOpen: commandCenter.queue.isQueueOpen,
+    onToggleQueue: () => commandCenter.queue.setIsQueueOpen((previous) => !previous),
+    onOpenSettings: commandCenter.actions.onOpenSettings,
   };
 }

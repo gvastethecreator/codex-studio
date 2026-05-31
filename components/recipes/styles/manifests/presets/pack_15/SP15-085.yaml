@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Circular greenhouse rings around central timer tower.
   atmosphere: Patient elegance and mechanical gentleness.
   key_features: Clock vines, pendulum sprinklers, and time-wound orchards.
-  creative_brief: A clockpunk greenhouse where plants and mechanisms grow together.
+  creative_brief: >-
+    Preserve gilded gear-conservatory grammar as a reusable style system:
+    ornamental horological botany, brass filigree growth mechanics, and
+    patient eco-temporal elegance should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk, industrial-grunge, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-085.webp }
 attributes:

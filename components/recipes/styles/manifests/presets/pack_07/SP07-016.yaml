@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Functional modernist room, form follows function, workshop aesthetic, design-for-all
-  form_and_line: Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic
-  color_palette: Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey
-  lighting_setup: Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity
-  material_texture: Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate
-  render_quality: Design classic, rational, German-modern clarity, timeless efficiency, honest construction
-  spatial_distortion: None
-  atmosphere: Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm
-  key_features: Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms
-  creative_brief: Primary colors assert themselves against white space with the confidence of manifestos made visible. Steel arcs through air with industrial grace, every tube and plane answering to function alone. Beauty emerges not from decoration but from the honesty of things being exactly what they are.
+  aesthetic: Modernismo Bauhaus funcional, claridad industrial y belleza derivada de función explícita.
+  form_and_line: Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de lectura didáctica.
+  color_palette: Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso jerárquico.
+  lighting_setup: Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización superflua.
+  material_texture: Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linóleo de acabado honesto.
+  render_quality: Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual atemporal.
+  spatial_distortion: Neutralidad geométrica con énfasis en orden proporcional e interacción de formas básicas.
+  atmosphere: Intelectual, limpio, pragmático y optimista.
+  key_features: Mobiliario cantilever, acentos cromáticos controlados, estructura visible y gramática geométrica elemental.
+  creative_brief: >-
+    Formula una gramática Bauhaus transferible donde función, estructura y
+    geometría primaria ordenen todo el lenguaje visual. El estilo debe
+    comunicar claridad productiva sin recurrir a ornamento narrativo.
 avoidRules:
   - ornate
   - cluttered

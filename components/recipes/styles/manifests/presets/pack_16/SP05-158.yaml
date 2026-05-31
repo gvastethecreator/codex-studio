@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Quiet wandering folkloric medicine, pale supernatural ecology, mossy villages, soft light over invisible lifeforms, contemplative 2000s fantasy naturalism
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Quiet, mystical, healing, solitary
-  key_features: Forest hush, pale spirit traces, herbal-traveler framing, misty villages, contemplative body language
-  creative_brief: Invisible life breathes between the trees, pale filaments of existence that most eyes will never register, and one wandering man who carries the cure for what cannot be named in a simple wooden box. Every village holds a secret illness, every forest whispers a diagnosis, and healing moves at walking speed through moss and mist. The supernatural is not spectacle here; it is ecology.
+  aesthetic: Fantasía naturalista contemplativa de medicina folklórica, con sobrenatural ecológico de baja estridencia y ritmo de caminata.
+  form_and_line: Línea serena y precisa, postura de viajero observador y gestualidad mínima orientada a diagnóstico silencioso.
+  color_palette: Verdes musgo, marfiles pálidos, grises de niebla y marrones orgánicos de sendero húmedo.
+  lighting_setup: Luz difusa de bosque con gradientes suaves y halos leves sobre trazas espirituales casi invisibles.
+  material_texture: Corteza húmeda, tela de viaje gastada, cajas de remedio de madera y atmósfera de rocío permanente.
+  render_quality: Acabado premium contemplativo 2000s con claridad poética y detalle ambiental calmado.
+  spatial_distortion: Espacio profundo de bosque-villa sin exageración, privilegiando percepción lenta y distancia meditativa.
+  atmosphere: Silenciosa, mística, terapéutica, solitaria.
+  key_features: Huellas espirituales tenues, viajero herbolario, aldeas brumosas y composición de curación paciente.
+  creative_brief: Diseña una gramática reusable de sanación sobrenatural ecológica para cualquier sujeto, usando luz blanda, materia orgánica y narrativa de observación tranquila.
 avoidRules:
   - realistic
   - 3d render

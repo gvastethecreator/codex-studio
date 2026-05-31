@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Treasure-hunter space adventure, grappler-arm ship duels, outlaw swagger, dusty ports and star corridors, pulpy cosmic optimism with rough-edged bravado
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Adventurous, cocky, starry, scrappy
-  key_features: Starship silhouettes, engine trails, outlaw coats, cosmic route maps, treasure-chase action framing
-  creative_brief: Cosmic highwaymen chasing legend between asteroid belts, a grappler-arm ship that fights with the elegance of a street brawler and the heart of a treasure map. Freedom measured in light-years and engine trails, every port a new scheme, every star a potential fortune or a grave. The galaxy is too big for laws, too wild for borders, and just the right size for a crew that believes the greatest treasure is the chase itself.
+  aesthetic: Aventura espacial pulp de cazarrecompensas y tesoro, con bravado outlaw y optimismo cósmico áspero.
+  form_and_line: Línea 90s de acción nítida, pose de tripulación descarada y lectura mecánica de maniobra naval.
+  color_palette: Azules profundos de vacío, naranjas de estela, metales cálidos de hangar y neón de puerto.
+  lighting_setup: Contraste dinámico de cabina y exterior estelar con highlights de propulsión y reflejo de casco.
+  material_texture: Chapa usada, paneles de nave, textiles utilitarios y grano analógico de space-western anime.
+  render_quality: Acabado premium noventero con ritmo de persecución y claridad de set-piece orbital.
+  spatial_distortion: Composición de ruta interestelar con encuadre de dogfight, abordaje y escape improvisado.
+  atmosphere: Aventurera, chulesca, estelar, callejera.
+  key_features: Siluetas de nave distintivas, estelas largas, ropa outlaw y mapas de ruta cósmica.
+  creative_brief: Define una gramática reusable de aventura espacial buscatesoros para cualquier sujeto, priorizando libertad, riesgo y espíritu de tripulación.
 avoidRules:
   - realistic
   - 3d render

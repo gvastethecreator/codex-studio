@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Campus composition centered on a clock tower.
   atmosphere: Curiosity, discipline, and apprenticeship pride.
   key_features: Gear classrooms, demonstration clocks, and maintenance labs.
-  creative_brief: A clockpunk school where learning is literally hands-on mechanics.
+  creative_brief: >-
+    Preserve gearwork schoolhouse grammar as a reusable style system:
+    tactile apprenticeship pedagogy, model-driven institutional clarity, and
+    disciplined curiosity culture should remain coherent across subjects.
 avoidRules: [photoreal, toyish, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-096.webp }
 attributes:

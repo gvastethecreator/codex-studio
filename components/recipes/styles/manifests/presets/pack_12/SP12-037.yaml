@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Colorful fantasy in a giant-mushroom biome.
-  subject_treatment: Agile explorers and friendly borderline creatures.
-  color_and_tone: Organic magenta, mint green, and warm cream.
-  lighting_and_shadow: Soft light filtered through giant mushroom caps.
-  texture_and_material: Spongy surfaces, moss, and living wood.
-  camera_and_composition: Curved path with playful verticality.
-  atmosphere_and_mood: Wonder, adventure, and light humor.
-  rendering_and_quality: Platformer world with strong identity.
+  aesthetic: Platformer-exploration whimsical en bioma de hongos gigantes, con énfasis en salto, momentum y rutas secretas.
+  subject_treatment: Exploradores ágiles y criaturas liminales amistosas con lectura clara de interacción/no amenaza.
+  color_and_tone: Magenta orgánico, verde menta y crema cálido para navegación amable por bioma.
+  lighting_and_shadow: Luz suave filtrada por sombreros gigantes, con contraste moderado para lectura de plataformas.
+  texture_and_material: Superficies esponjosas, musgo vivo, madera orgánica y setas con propiedades de rebote.
+  camera_and_composition: Camino curvo con verticalidad lúdica, checkpoints visuales y reward loops.
+  atmosphere_and_mood: Maravillosa, aventurera y con humor ligero.
+  rendering_and_quality: Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.
 avoidRules:
   - watermark
   - text

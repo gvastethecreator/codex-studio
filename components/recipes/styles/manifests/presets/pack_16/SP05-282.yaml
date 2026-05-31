@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Homeless trio comedy-drama, winter city alleys, neon nativity warmth, imperfect kindness in cramped urban spaces, humane chaos under holiday lights
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Messy, humane, festive, redemptive
-  key_features: Christmas neon, alleyway city depth, trio ensemble staging, urban clutter tenderness, improvised family body language
-  creative_brief: Neon halos crown the uncrowned, replacing gold and frankincense with convenience-store warmth and shared cardboard shelter. The alley does not judge, only holds whatever grace three broken souls can offer each other. Humor and heartbreak share a cigarette on a frozen street corner, arguing about what counts as a miracle.
+  aesthetic: Humanismo urbano navideño que mezcla comedia de supervivencia y ternura social en escenarios densos de callejón metropolitano.
+  form_and_line: Línea expresiva de ensemble, gestualidad corporal desprolija pero cálida y staging coral para transmitir vínculo improvisado.
+  color_palette: Neones festivos de tienda, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.
+  lighting_setup: Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad callejera.
+  material_texture: Asfalto mojado, cartón gastado, telas superpuestas de invierno y señalética urbana con desgaste cotidiano.
+  render_quality: Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental de barrio vivido.
+  spatial_distortion: Perspectiva urbana comprimida con capas de objetos y peatones que envuelven al trío sin perder foco relacional.
+  atmosphere: Caótica, compasiva, festiva, redentora.
+  key_features: Trío protagonista en bloque, clutter urbano navideño, refugios improvisados, humor corporal y microgestos de cuidado mutuo.
+  creative_brief: Define un estilo reusable de gracia urbana invernal para cualquier sujeto combinando neón navideño, textura de precariedad y composición coral centrada en vínculo humano.
 avoidRules:
   - realistic
   - 3d render

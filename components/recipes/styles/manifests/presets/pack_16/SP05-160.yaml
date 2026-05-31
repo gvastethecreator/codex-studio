@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Elite academy parody, rose-petal excess, sparkling host-club nonsense, rich-kid interiors, theatrical self-awareness, comedic reverse-harem flamboyance
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Playful, polished, satirical, extravagant
-  key_features: Rose-backdrop comedy, princely school uniforms, ornate academy rooms, ensemble pose symmetry, theatrical sparkle
-  creative_brief: Chandeliers and common sense both shattering in equal measure, rich boys performing affection as high theater in halls where the tuition costs more than most families earn in a lifetime. Rose petals fall like confetti over the beautiful absurdity of privilege, and somewhere in the glittering parody, a scholarship student learns that class is the one fantasy these princes cannot escape. Satire with a silk lining and a genuine beating heart underneath.
+  aesthetic: Satira de élite escolar en clave reverse-harem cómica, con exceso floral y teatralidad autorreferencial.
+  form_and_line: Línea digital elegante, poses simétricas de ensemble y acting de príncipe-parodia con timing de sketch.
+  color_palette: Rosas de pétalo, dorados de salón, marfiles de uniforme de élite y acentos pastel brillantes.
+  lighting_setup: Iluminación alta y pulida de interior noble con sparkles selectivos y gradiente suave de comedia romántica.
+  material_texture: Ornamento académico, telas refinadas y acabado digital limpio con brillo controlado de fantasía social.
+  render_quality: Producción premium 2000s con lectura clara de sátira de clase y encanto escénico.
+  spatial_distortion: Escena de salón-principal con profundidad teatral y encuadre de host club centrado en performance.
+  atmosphere: Juguetona, pulida, satírica, exuberante.
+  key_features: Pétalos y sparkle, uniformes principescos, interiores opulentos y composición coral de anfitriones.
+  creative_brief: Diseña una gramática reusable de comedia de élite teatral para cualquier sujeto, equilibrando glamour absurdo, crítica social y calidez romántica.
 avoidRules:
   - realistic
   - 3d render

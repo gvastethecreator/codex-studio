@@ -126,6 +126,11 @@ describe('recipeModules', () => {
       defaultTask: 'image_generate',
       supportedProviders: ['codex', 'dry_run'],
     });
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'image_general',
+      subject: null,
+      negative: [],
+    });
   });
 
   it('adds compact provider directives for style preset specs without dropping legacy context', () => {
@@ -153,6 +158,11 @@ describe('recipeModules', () => {
       recipeId: 'styles',
       title: 'Styles',
     });
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'product_or_ui_asset',
+      style: 'Glass Owl',
+      color: 'cool mineral blues',
+    });
   });
 
   it('uses recipe-specific default tasks without encoding providers into task names', () => {
@@ -171,6 +181,7 @@ describe('recipeModules', () => {
 
     expect(spec.task).toBe('sprite_sheet');
     expect(spec.providerId).toBe('codex');
+    expect(spec.quality?.qualityPresetId).toBe('sprite_sheet');
   });
 
   it('rejects unsupported provider pairings before provider compilation', () => {

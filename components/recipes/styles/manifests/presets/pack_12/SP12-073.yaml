@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Colossus hunt in orchards of monumental scale.
-  subject_treatment: Tactical climbers and biomechanical beasts.
-  color_and_tone: Olive green, ripe-fruit red, and gray metal.
-  lighting_and_shadow: Sol nublado con brillos de armadura.
-  texture_and_material: Giant bark, sap, and mechanical plates.
-  camera_and_composition: Extreme scale with a minimal human figure.
-  atmosphere_and_mood: Awe, danger, and epic cooperation.
-  rendering_and_quality: Key art de hunting season.
+  aesthetic: Colossus-hunt cooperativo en huertos titánicos, enfocado en escalada táctica y derribo por fases.
+  subject_treatment: Escaladores tácticos y bestias biomecánicas con lectura clara de puntos débiles.
+  color_and_tone: Verde oliva, rojo fruta madura y gris metal para contraste orgánico-mecánico.
+  lighting_and_shadow: Cielo nublado con brillos de armadura que señalan momentos de vulnerabilidad.
+  texture_and_material: Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.
+  camera_and_composition: Escala extrema con figura humana mínima para reforzar amenaza colosal.
+  atmosphere_and_mood: Asombrosa, peligrosa y cooperativamente épica.
+  rendering_and_quality: Hunting-season gameplay key-art con telegraph claro de fase, ascenso y remate.
 avoidRules:
   - watermark
   - text

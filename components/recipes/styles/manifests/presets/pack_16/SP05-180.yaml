@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Car chases, handguns and muscle cars, Chicago garage cool, sharp female leads, firearm fetish detail, sleek 90s crime-action confidence with urban grease
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Sharp, hot-rodded, confident, dangerous
-  key_features: Garage-and-car props, gun-detail focus, urban pursuit framing, leather-jacket silhouettes, procedural-action cool
-  creative_brief: Chrome reflects a city that rewards precision and punishes hesitation. Leather creaks with earned attitude, and every pistol slide carries the click of personal code. Chicago is not backdrop but character, its grease and grain baked into every frame like gunpowder residue on skilled hands.
+  aesthetic: Acción criminal urbana noventera con persecución automotriz, precisión balística y protagonismo femenino decidido.
+  form_and_line: Línea limpia y rápida, posing táctica confiada y composición de chase en calle industrial.
+  color_palette: Azules noche de ciudad, acero cromado, negros de cuero y naranjas de luz vial.
+  lighting_setup: Contraste de farola urbana, reflejos de carrocería y highlights duros en metal de armas.
+  material_texture: Grasa de taller, caucho, cuero, cromado y grano de thriller policial clásico.
+  render_quality: Acabado premium 90s con legibilidad técnica de armamento, mecánica y persecución cinética.
+  spatial_distortion: Espacios de garage-calle-autopista para ritmo continuo de huida, derrape y confrontación.
+  atmosphere: Afilada, acelerada, segura, peligrosa.
+  key_features: Muscle cars, detalle mecánico-armamentístico, silueta de chaqueta y staging de caza metropolitana.
+  creative_brief: Define una gramática reusable de crimen automotor estilizado para cualquier sujeto, mezclando precisión técnica, actitud callejera y dinamismo de persecución.
 avoidRules:
   - realistic
   - 3d render

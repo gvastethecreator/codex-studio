@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Xeric landscape design, drought-morphology showcase, arid sculptural planting system
-  form_and_line: Rosette/columnar plant contrast, gravel swales, dry-runoff channels, low-maintenance clustered masses
+  aesthetic: Paisaje xerófito de austeridad escultórica y desempeño hídrico explícito.
+  form_and_line: Contraste de formas roseta/columnar, swales de grava, canales secos y masas agrupadas de bajo mantenimiento.
   color_palette: Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit
-  lighting_setup: Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night
-  material_texture: Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge
-  render_quality: Climate-resilient landscape realism, high botanical morphology clarity, water-wise composition credibility
+  lighting_setup: Sol duro con shimmer térmico, contraluz de espinas y glow cálido de última hora.
+  material_texture: Piedra árida, suculenta cerosa, granito descompuesto, espina rígida y borde metálico oxidado.
+  render_quality: Realismo climático resiliente con morfología botánica precisa y lógica water-wise verificable.
   spatial_distortion: None
-  atmosphere: Sun-hardened calm, resilient austerity, low-water elegance
-  key_features: Agave rosette focals, decomposed-granite mulch, dry creek routing, cactus height cadence, rusted steel edging bands
+  atmosphere: Calma endurecida por sol, sobriedad resiliente y elegancia de baja demanda hídrica.
+  key_features: Rosetas focales de agave, mulch mineral, dry creek routing, cadencia de cactus y bandas de acero oxidado.
   creative_brief: >-
-    El preset debe mostrar diseño xerófito con criterio técnico: especies de baja
-    demanda hídrica, suelos drenantes y lectura clara de control de escorrentía.
-    Busca una belleza austera y táctil, no una postal turística del desierto.
+    Define una gramática xeriscape transferible donde selección vegetal, drenaje
+    y escorrentía sean legibles como sistema. Debe transmitir belleza austera y
+    táctica climática, no estética turística de desierto.
 avoidRules:
   - lawn
   - wet

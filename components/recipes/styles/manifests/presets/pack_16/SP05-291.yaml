@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Modern-school emotional realism, bridges and rivers, apology and disability awareness, soft city sunlight, longing and accountability rendered with humane patience
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Tender, remorseful, airy, human
-  key_features: Riverside paths, modern school detail, hand-focused emotional framing, apology body language, soft city light
-  creative_brief: An apology crosses a bridge in soft city light, each step weighted with years spent learning that cruelty is not erased but accounted for. Hands speak a language the voice abandoned, forming words that reach toward the person once pushed away. The river does not forget but flows forward, teaching that forgiveness is not a gift to the forgiven but a release for the forgiver.
+  aesthetic: Drama íntimo de reparación emocional en entorno escolar-contemporáneo, centrado en vulnerabilidad, escucha y dignidad relacional.
+  form_and_line: Línea delicada de microgesto, énfasis en manos, hombros y mirada baja, con contornos limpios que priorizan lectura afectiva sobre acción.
+  color_palette: Azules de río calmado, beiges urbanos suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.
+  lighting_setup: Luz natural de tarde nublada con difusión amable, contraste bajo y brillos discretos que favorecen intimidad conversacional.
+  material_texture: Hormigón de puente húmedo, telas escolares cotidianas, barandas metálicas gastadas y reflejos acuosos serenos.
+  render_quality: Acabado premium de realismo sensible con foco en expresión corporal mínima y continuidad emocional entre planos.
+  spatial_distortion: Espacialidad naturalista abierta con distancia interpersonal modulada como métrica visual de confianza y perdón.
+  atmosphere: Tierno, arrepentido, respirable, humano.
+  key_features: Composición de dos cuerpos en reconciliación, manos como núcleo semántico, ribera urbana y silencios visuales elocuentes.
+  creative_brief: Construye una gramática reusable de reconciliación humana para cualquier sujeto usando microgesto, luz suave y espacio interpersonal como lenguaje principal.
 avoidRules:
   - realistic
   - 3d render

@@ -13,16 +13,16 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Epic-scale samurai clan warfare.
-  form_and_line: Armored silhouettes, banners, and stylized spear lines.
-  color_palette: Crimson, charcoal black, and aged gold.
-  lighting_setup: War-dawn lighting with illuminated mist.
-  material_texture: Scratched steel, mud, and banner cloth.
-  render_quality: Highly readable, war-focused anime panorama.
-  spatial_distortion: Open battlefield layered with troop depth.
-  atmosphere: Martial honor and collective destiny.
-  key_features: Clan standard, leading general, front-line collision.
-  creative_brief: A pre-charge battlefield moment with strong historical-anime gravitas.
+  aesthetic: Grand-strategy war anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.
+  form_and_line: Broad armored silhouettes, banner arcs that map faction flow, and spearline repetition used as directional rhythm.
+  color_palette: Dominant clan crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.
+  lighting_setup: Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command focal points.
+  material_texture: Battle-scored lamellar steel, mud-caked greaves, frayed standards, and humid particulate air.
+  render_quality: Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.
+  spatial_distortion: Multi-plane battlefield depth using atmospheric compression and diagonal advance vectors for collective force direction.
+  atmosphere: Inevitable collision, inherited duty, and synchronized resolve under banner doctrine.
+  key_features: Rank geometry, signal standards, cavalry or infantry wave cadence, and collision-ready front interfaces.
+  creative_brief: Create a transferable clan-war grammar that can style any subject through formation-driven composition, heraldic color dominance, and disciplined large-scale motion cues.
 avoidRules:
   - photoreal
   - cartoon-goofy

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Exorcist uniforms, cursed machinery, gothic Europe, innocence weaponry, melancholy stained-glass combat, youthful burden carried through dark sacred spaces
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Somber, holy, cursed, determined
-  key_features: Exorcist coat silhouettes, sacred-tech weapons, cathedral depth, mourning-eyed expressions, curse-mark motifs
-  creative_brief: Cathedrals that hum with the quiet prayer of cursed machinery, stained glass filtering light onto children carrying weapons they were never meant to hold. Innocence weaponized, melancholy consecrated, every exorcism a negotiation between damnation and grace conducted through iron and sacrament. The holy and the mechanical share the same breath here.
+  aesthetic: Gótico exorcista tecno-sacral, con juventud marcada por maldición y liturgia bélica en paisajes de catedral sombría.
+  form_and_line: Línea digital fina con silueta de abrigo exorcista, gesto melancólico y lenguaje de arma sacramental.
+  color_palette: Azules fríos de nave, granates de vitral, marfiles sagrados y negros de condena mecánica.
+  lighting_setup: Luz filtrada de vitrales, rim tenue sobre insignias y sombras graduales de interior sacro-industrial.
+  material_texture: Piedra gótica, metal de maquinaria maldita, tela pesada de uniforme y pátina de polvo eclesial.
+  render_quality: Acabado premium dark-2000s con equilibrio entre combate ritual y dolor juvenil persistente.
+  spatial_distortion: Profundidad de nave catedralicia con compresión de corredor para enfatizar carga espiritual y amenaza.
+  atmosphere: Lúgubre, sagrada, maldita, decidida.
+  key_features: Abrigo exorcista, iconografía de inocencia-armada, marcas de maldición y profundidad de templo.
+  creative_brief: Construye una gramática reusable de exorcismo tecno-gótico para cualquier sujeto, mezclando solemnidad religiosa, ingeniería maldita y determinación juvenil.
 avoidRules:
   - realistic
   - 3d render

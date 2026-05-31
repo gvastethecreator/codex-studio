@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Infernal dungeon with active demonic foundries.
-  subject_treatment: Titanic blacksmiths as zone mini-bosses.
-  color_and_tone: Molten oranges, charcoal blacks and copper reflections.
-  lighting_and_shadow: Lava as a key-light and smoke as a dense fill.
-  texture_and_material: Slag, incandescent iron, and aged chains.
-  camera_and_composition: Diagonal axis between bridges and crucibles.
-  atmosphere_and_mood: Hostile, abrasive, and ritualistic.
-  rendering_and_quality: Playable environment with clear landmarks.
+  aesthetic: Dungeon-crawler infernal enfocado en navegación de riesgo térmico, crafting bélico y encuentros con mini-boss industriales.
+  subject_treatment: Enemigos forjadores colosales y mobs de soporte, con telegraphs de ataque por calor y ritmo de martillo.
+  color_and_tone: Naranja fundido, negro carbón y reflejos cobrizo-escoria para lectura inmediata de zonas letales.
+  lighting_and_shadow: Lava como key dominante, humo denso de fill y pulsos de horno para timing de mecánicas.
+  texture_and_material: Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.
+  camera_and_composition: Eje diagonal de puentes, crisoles y plataformas seguras con landmarks de progresión claros.
+  atmosphere_and_mood: Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.
+  rendering_and_quality: Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.
 avoidRules:
   - watermark
   - text

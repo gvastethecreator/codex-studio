@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Elevated skyline promenades suspended by helium architecture and atom-era engineering.
-  form_and_line: Cantilever decks, observation pylons, and buoyant pod stations.
-  color_palette: Powder blue, white metal, and citrus accents.
-  lighting_setup: High-altitude sunlight with anti-glare deck strips.
-  material_texture: Lightweight alloys, translucent membranes, and anti-slip polymers.
-  render_quality: Architectural concept visualization with airy scale.
-  spatial_distortion: Dramatic high-angle perspective over layered decks.
-  atmosphere: Lightness, thrill, and infrastructural wonder.
-  key_features: Helium lift towers, cloud gardens, and reactor-fed sky trams.
-  creative_brief: An atompunk skyline where public space floats above traditional street constraints.
+  aesthetic: Buoyant civic atompunk where architecture looks held up by optimism, helium math, and beautifully visible tension.
+  form_and_line: Cantilever deck slices, pylon spines, helium pod bellies, tensioned membrane curves, and hairline suspension cables.
+  color_palette: Powder blue, white metal, citrus yellow, cloud gray, and tiny red altitude markers.
+  lighting_setup: High-altitude sunlight, anti-glare deck strips, cloud bounce under platforms, and sharp cable highlights.
+  material_texture: Lightweight alloy skins, translucent membranes, anti-slip polymers, sealed rivet seams, and sun-warmed rubber joints.
+  render_quality: Architectural visualization with airy scale, crisp suspension logic, and no generic floating-city blur.
+  spatial_distortion: High-angle perspective opens under the feet, making every deck edge feel thrilling but engineered.
+  atmosphere: Lightness, vertigo, civic wonder, and absolute trust in optimistic infrastructure.
+  key_features: Helium lift towers, cloud-garden pods, reactor-fed sky trams, floating observation lips, and tension gauge panels.
+  creative_brief: >-
+    Preserve helium skyline-decks grammar as a reusable style system:
+    visible buoyancy engineering, cable-tension legibility, and airy
+    civic-optimist vertigo should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-042.webp }
 attributes:
   negativePrompt: photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-atompunk,
+    categoryName: 8. Corepunk — Atompunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

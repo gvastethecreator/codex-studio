@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Theater girls crossing into symbolic stage combat, spotlight duels, staircase sets, costume drama and performance-as-rivalry rendered through lavish allegorical staging
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Theatrical, competitive, symbolic, luminous
-  key_features: Stage spotlight beams, duel-choreography poses, staircase set pieces, costume-pageantry detail, allegorical theater space
-  creative_brief: Spotlight beams cross like blades above a staircase that climbs into allegory, costume and combat fusing into a single radiant gesture. The stage becomes a liminal arena where performance is the only truth and every duel is a poem delivered at sword-point.
+  aesthetic: Stage-duel performativo alegórico, centrado en rivalidad escénica y combate coreografiado de alto simbolismo.
+  form_and_line: Poses teatrales de confrontación, silueta de espada-escena y transición dramática entre niveles de set.
+  color_palette: Carmín escénico, azul zafiro nocturno, dorado de gala y negros de fondo operático.
+  lighting_setup: Cruce de spotlights con backlight teatral y sombras recortadas de escalinata.
+  material_texture: Terciopelo de vestuario, madera pintada de escenografía, metal utilería y humo de escena controlado.
+  render_quality: Frame performativo de alto impacto con legibilidad de duelo, símbolo y jerarquía dramática.
+  spatial_distortion: Arquitectura axial de teatro con capas de escalera y profundidad alegórica en fuga vertical.
+  atmosphere: Teatral, competitiva, simbólica y luminosa.
+  key_features: Hazes de spotlight cruzado, poses de duelo, set de escalera y pageantry de vestuario.
+  creative_brief: >-
+    Construye una gramática reusable de revue-stage-duel donde alegoría,
+    coreografía de confrontación y arquitectura teatral sostengan una identidad
+    visual transferible sin escena fija.
 avoidRules:
   - realistic
   - 3d render

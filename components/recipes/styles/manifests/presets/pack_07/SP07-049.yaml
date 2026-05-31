@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Championship golf-landscape formalism, high-control turf architecture, leisure-sport topographic curation
-  form_and_line: Ribboned fairway corridors, bunker-cut parabolas, green contour micro-undulations, routing-driven sightline geometry
+  aesthetic: Formalismo de campo de golf de alto mantenimiento, donde topografía y estrategia deportiva se codifican en el terreno.
+  form_and_line: Corredores de fairway en cinta, parábolas de bunker, microondas de green y visuales dirigidas por routing.
   color_palette: Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow
-  lighting_setup: Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama
-  material_texture: Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern
-  render_quality: Tournament-grade landscape visualization, precise maintenance readability, high-fidelity sport-terrain legibility
+  lighting_setup: Neblina de mañana, ángulo bajo sobre fairway, brillo de rocío y dramatismo de sombra en bunker.
+  material_texture: Césped corto de corte preciso, arena rastrillada, agua lisa de hazard y señalética de bandera de alta visibilidad.
+  render_quality: Visualización tournament-grade con lectura de mantenimiento y estrategia de juego a distancia.
   spatial_distortion: None
-  atmosphere: Controlled calm, competitive focus, curated exclusivity, early-round concentration
-  key_features: Stripe-mown fairways, edge-defined bunkers, pin-position focality, hazard choreography, route legibility from tee to green
+  atmosphere: Calma controlada, concentración competitiva y exclusividad curada.
+  key_features: Franjas de siega, bunkers de borde nítido, focos de pin y coreografía de hazards desde tee a green.
   creative_brief: >-
-    Define this preset through golf-course design grammar: disciplined turf
-    gradients, strategic hazard placement, and route-readability from distance.
-    Keep the style anchored in precision maintenance and competitive play optics,
-    not a specific club or tournament narrative.
+    Define una gramática golf transferible por gradiente de turf, hazards
+    estratégicos y legibilidad de ruta de juego. Debe comunicar precisión de
+    mantenimiento y óptica competitiva sin referencia a club concreto.
 avoidRules:
   - weeds
   - forest

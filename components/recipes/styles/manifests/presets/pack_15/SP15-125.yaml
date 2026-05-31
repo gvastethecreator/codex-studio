@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Long pier perspective with repeating shell stations.
   atmosphere: Travel, lightness, and seaside civic life.
   key_features: Shell metro stalls, pier rails, and wave shelters.
-  creative_brief: A seapunk metro pier where every station feels like a shell found on the tide line.
+  creative_brief: >-
+    Preserve shell metro-pier grammar as a reusable style system:
+    tide-line shell transit modules, repeating pierline station rhythm, and
+    lightweight seaside mobility should remain coherent across subjects.
 avoidRules: [photoreal, dingy, industrial, watermark, text, logo, clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-125.webp }
 attributes:

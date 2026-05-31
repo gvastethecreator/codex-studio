@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Traveling fantasy comfort food, merchant roads, giant familiar appetite, practical camp cookware, low-stakes abundance and wandering culinary coziness
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Relaxed, tasty, itinerant, warm
-  key_features: Cookpot focus, road-camp compositions, familiar-animal scale contrast, merchant packs, food-steam detail
-  creative_brief: A stewpot bubbling on a merchant road transforms hunger into communion, the giant familiar's appetite a measure of how far from home this new world feels. Low-stakes abundance radiates from every campfire frame, where the greatest quest is simply feeding those who walk beside you.
+  aesthetic: Fantasy itinerante de comfort-food, con economía de ruta, cocina de campamento y abundancia de baja tensión.
+  form_and_line: Composición centrada en olla y mesa improvisada, siluetas amables de viaje y gesto culinario doméstico.
+  color_palette: Dorado caldo, marrón pan, verde campo, azul cielo abierto y crema de vajilla rústica.
+  lighting_setup: Fuego de campamento cálido, luz crepuscular amable y vapor iluminado como acento narrativo.
+  material_texture: Hierro de cacerola, madera de carreta, tela de alforja, especias visibles y superficies gastronómicas brillantes.
+  render_quality: Slice-of-life fantástico con detalle comestible y legibilidad de convivencia en ruta.
+  spatial_distortion: Escala de carretera y campamento, con foco íntimo en la estación de cocina móvil.
+  atmosphere: Cálida, relajada y hambrienta, de viaje sin urgencia trágica.
+  key_features: Olla protagonista, familiar glotón, packs de mercader y nubes de vapor apetecible.
+  creative_brief: >-
+    Construye una gramática merchant-road-stew reusable donde cocina práctica,
+    hospitalidad de viaje y abundancia cotidiana sostengan una aventura amable
+    centrada en el acto de compartir comida.
 avoidRules:
   - realistic
   - 3d render

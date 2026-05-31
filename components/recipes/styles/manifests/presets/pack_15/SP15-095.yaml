@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Terraced slope perspective with nested home fronts.
   atmosphere: Domestic care and mechanical intimacy.
   key_features: Balcony clocks, repair benches, and window chimes.
-  creative_brief: A clockpunk neighborhood where household life is tuned with craft precision.
+  creative_brief: >-
+    Preserve clockmaker's terrace grammar as a reusable style system:
+    domestic horological craft intimacy, staggered balcony atelier patterns,
+    and tuned household precision should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk, ruin-punk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-095.webp }
 attributes:

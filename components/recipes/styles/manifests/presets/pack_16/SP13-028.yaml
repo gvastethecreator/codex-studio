@@ -13,16 +13,16 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Medieval anime knight in a solemn oath scene.
-  form_and_line: Ornate armor and a lineage-marked cloak.
-  color_palette: Silver, royal blue, and warm amber.
-  lighting_setup: Stained-glass light with cathedral shadows.
-  material_texture: Polished steel, carved stone, and heavy fabric.
-  render_quality: Premium-finish heroic illustration.
-  spatial_distortion: Ceremonial vertical composition.
-  atmosphere: Nobility, duty, and sacrifice.
-  key_features: Sword grounded tip-down, heraldic shield, halo-like light.
-  creative_brief: A solemn, iconic knightly oath captured in a single frame.
+  aesthetic: Chivalric vow iconography built around sacred verticality, heraldic gravitas, and devotional stillness rather than combat spectacle.
+  form_and_line: Clean plate-armor contours, cape folds with weighted gravity, and emblem-first line emphasis to foreground lineage coding.
+  color_palette: Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.
+  lighting_setup: Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on helm and gauntlet planes.
+  material_texture: Mirror-polished yet worn steel, carved limestone relief, waxed fabric banners, and ceremonial leather straps.
+  render_quality: Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.
+  spatial_distortion: Monumental upward composition with columnar framing that magnifies oath posture and insignia readability.
+  atmosphere: Reverence, obligation, and intergenerational burden accepted in silence.
+  key_features: Oath-anchor weapon posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.
+  creative_brief: Define a reusable knightly-vow style by prioritizing heraldry, sacred vertical framing, and solemn material response that can transfer to any character or object.
 avoidRules:
   - photoreal
   - sci-fi-ui

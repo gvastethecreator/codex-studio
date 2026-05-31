@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Cyberpunk river district with holographic fish.
-  subject_treatment: Urban patrols and amphibious mercenaries.
-  color_and_tone: Cyan, neon pink, and deep black.
-  lighting_and_shadow: Liquid reflections and animated signage.
-  texture_and_material: Wet steel, aged wood, and glass.
-  camera_and_composition: Diagonal canals crossed by high bridges.
-  atmosphere_and_mood: Urban elegance and criminal tension.
-  rendering_and_quality: Premium open-world environment.
+  aesthetic: Open-world cyberpunk de distrito fluvial, centrado en patrulla urbana, contrabando y control de canales.
+  subject_treatment: Patrullas urbanas y mercenarios anfibios con diferenciación por movilidad y equipamiento.
+  color_and_tone: Cian, rosa neon y negro profundo para lectura de facción y nivel de alerta.
+  lighting_and_shadow: Reflejos líquidos y señalética animada como guía de rutas/POIs.
+  texture_and_material: Acero mojado, madera envejecida, cristal urbano y superficies de atraque.
+  camera_and_composition: Canales diagonales con puentes altos, rutas múltiples y sightlines de emboscada.
+  atmosphere_and_mood: Elegante, criminalmente tensa y viva.
+  rendering_and_quality: Premium environment gameplay-first con navegación clara por agua y altura.
 avoidRules:
   - watermark
   - text

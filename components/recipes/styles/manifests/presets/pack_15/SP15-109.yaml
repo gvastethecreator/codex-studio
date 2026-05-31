@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Bridge grid crossing layered urban terraces.
   atmosphere: Connection, resilience, and responsive infrastructure.
   key_features: Living spans, root anchors, and adaptive footpaths.
-  creative_brief: A biopunk district where the bridges are alive and the city’s circulation is grown rather than built.
+  creative_brief: >-
+    Preserve living bridge-district grammar as a reusable style system:
+    bio-arched circulation networks, root-anchor resilience engineering, and
+    responsive connective urbanism should remain coherent across subjects.
 avoidRules: [photoreal, militaristic, neon-gloom, watermark, text, logo, decay]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-109.webp }
 attributes:

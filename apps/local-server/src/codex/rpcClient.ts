@@ -44,7 +44,12 @@ export class CodexRpcClient {
     { resolve: (value: any) => void; reject: (error: Error) => void }
   >();
   private notifications: JsonRpcMessage[] = [];
-  private notificationWaiters = new Set<(error: Error) => void>();
+  private notificationListeners = new Set<{
+    predicate: (message: JsonRpcMessage) => boolean;
+    resolve: (message: JsonRpcMessage) => void;
+    reject: (error: Error) => void;
+    timeout: ReturnType<typeof setTimeout>;
+  }>();
 
   constructor({
     ensureAppServer: ensureAppServerFn = ensureAppServer,
@@ -94,10 +99,7 @@ export class CodexRpcClient {
             pending.reject(error);
           }
           this.pending.clear();
-          for (const reject of this.notificationWaiters) {
-            reject(error);
-          }
-          this.notificationWaiters.clear();
+          this.rejectNotificationListeners(error);
         });
         resolve();
       });
@@ -129,27 +131,24 @@ export class CodexRpcClient {
     if (existing) return Promise.resolve(existing);
 
     return new Promise<JsonRpcMessage>((resolve, reject) => {
-      const started = Date.now();
-      const handleSocketClose = (error: Error) => {
-        clearInterval(interval);
-        this.notificationWaiters.delete(handleSocketClose);
-        reject(error);
+      const listener = {
+        predicate,
+        resolve: (message: JsonRpcMessage) => {
+          clearTimeout(listener.timeout);
+          this.notificationListeners.delete(listener);
+          resolve(message);
+        },
+        reject: (error: Error) => {
+          clearTimeout(listener.timeout);
+          this.notificationListeners.delete(listener);
+          reject(error);
+        },
+        timeout: setTimeout(() => {
+          listener.reject(new Error('Timed out waiting for Codex notification'));
+        }, timeoutMs),
       };
-      const interval = setInterval(() => {
-        const match = this.notifications.find(predicate);
-        if (match) {
-          clearInterval(interval);
-          this.notificationWaiters.delete(handleSocketClose);
-          resolve(match);
-          return;
-        }
-        if (Date.now() - started > timeoutMs) {
-          clearInterval(interval);
-          this.notificationWaiters.delete(handleSocketClose);
-          reject(new Error('Timed out waiting for Codex notification'));
-        }
-      }, 250);
-      this.notificationWaiters.add(handleSocketClose);
+
+      this.notificationListeners.add(listener);
     });
   }
 
@@ -162,8 +161,16 @@ export class CodexRpcClient {
   }
 
   close() {
+    this.rejectNotificationListeners(new Error('Codex app-server socket closed'));
     this.socket?.close();
     this.socket = null;
+  }
+
+  private rejectNotificationListeners(error: Error) {
+    for (const listener of this.notificationListeners) {
+      listener.reject(error);
+    }
+    this.notificationListeners.clear();
   }
 
   private handleMessage(raw: string) {
@@ -186,6 +193,11 @@ export class CodexRpcClient {
     }
 
     this.notifications.push(message);
+    for (const listener of [...this.notificationListeners]) {
+      if (listener.predicate(message)) {
+        listener.resolve(message);
+      }
+    }
   }
 }
 

@@ -29,6 +29,17 @@ export type CompiledProviderPayloadKind =
   | 'comfy_workflow'
   | 'dry_run';
 
+export const GENERATION_QUALITY_PRESET_IDS = [
+  'image_general',
+  'image_edit',
+  'style_reference',
+  'sprite_sheet',
+  'texture',
+  'product_or_ui_asset',
+] as const;
+
+export type GenerationQualityPresetId = (typeof GENERATION_QUALITY_PRESET_IDS)[number];
+
 export interface GenerationTaskAssetRef {
   role: 'input' | 'reference' | 'mask' | 'control' | 'external_output';
   name: string;
@@ -37,6 +48,25 @@ export interface GenerationTaskAssetRef {
   localPath?: string;
   sourceUrl?: string;
   strength?: number;
+}
+
+export interface GenerationReferenceRoleInstruction {
+  assetName?: string | null;
+  role: GenerationTaskAssetRef['role'];
+  instruction: string;
+}
+
+export interface GenerationQualityIntent {
+  qualityPresetId: GenerationQualityPresetId | null;
+  subject: string | null;
+  composition: string | null;
+  style: string | null;
+  lighting: string | null;
+  color: string | null;
+  materials: string | null;
+  constraints: string[];
+  negative: string[];
+  referenceRoles: GenerationReferenceRoleInstruction[];
 }
 
 export interface GenerationOutputContract {
@@ -60,6 +90,7 @@ export interface GenerationTaskSpec {
   recipeParams: Record<string, unknown> | null;
   stylePresetId: string | null;
   assets: GenerationTaskAssetRef[];
+  quality: GenerationQualityIntent | null;
   output: GenerationOutputContract;
   metadata: Record<string, unknown>;
 }
@@ -74,6 +105,7 @@ export interface CreateGenerationTaskSpecInput {
   recipeParams?: Record<string, unknown> | null;
   stylePresetId?: string | null;
   assets?: GenerationTaskAssetRef[];
+  quality?: Partial<GenerationQualityIntent> | null;
   output?: Partial<GenerationOutputContract>;
   metadata?: Record<string, unknown>;
 }
@@ -162,9 +194,67 @@ const DEFAULT_OUTPUT_CONTRACT: GenerationOutputContract = {
   requiresExactPath: true,
 };
 
+export const GENERATION_QUALITY_PRESET_GUIDANCE = {
+  image_general: ['Readable subject, coherent lighting, clean composition, artifact-free output.'],
+  image_edit: [
+    'Preserve source identity and structure; apply requested edits without unintended restyling.',
+  ],
+  style_reference: [
+    'Transfer style, palette, mood, and medium cues without copying unwanted reference artifacts.',
+  ],
+  sprite_sheet: ['Keep identity, scale, silhouette, and frame separation consistent and readable.'],
+  texture: [
+    'Prioritize seamless continuity, material fidelity, reusable detail, and no hard borders.',
+  ],
+  product_or_ui_asset: [
+    'Centered inspectable asset, clean edges, readable materials, minimal background clutter.',
+  ],
+} satisfies Record<GenerationQualityPresetId, string[]>;
+
 function cleanOptionalString(value: string | null | undefined) {
   const trimmed = value?.trim();
   return trimmed ? trimmed : null;
+}
+
+function cleanStringList(value: string[] | null | undefined) {
+  return (value ?? []).flatMap((item) => {
+    const trimmed = item.trim();
+    return trimmed ? [trimmed] : [];
+  });
+}
+
+function cleanReferenceRoleInstructions(
+  value: GenerationReferenceRoleInstruction[] | null | undefined,
+) {
+  return (value ?? []).flatMap((item) => {
+    const instruction = item.instruction.trim();
+    if (!instruction) return [];
+    return [
+      {
+        role: item.role,
+        assetName: cleanOptionalString(item.assetName),
+        instruction,
+      },
+    ];
+  });
+}
+
+function normalizeQualityIntent(
+  quality: Partial<GenerationQualityIntent> | null | undefined,
+): GenerationQualityIntent | null {
+  if (!quality) return null;
+  return {
+    qualityPresetId: quality.qualityPresetId ?? null,
+    subject: cleanOptionalString(quality.subject),
+    composition: cleanOptionalString(quality.composition),
+    style: cleanOptionalString(quality.style),
+    lighting: cleanOptionalString(quality.lighting),
+    color: cleanOptionalString(quality.color),
+    materials: cleanOptionalString(quality.materials),
+    constraints: cleanStringList(quality.constraints),
+    negative: cleanStringList(quality.negative),
+    referenceRoles: cleanReferenceRoleInstructions(quality.referenceRoles),
+  };
 }
 
 export function isBuiltInGenerationProvider(
@@ -208,6 +298,7 @@ export function createGenerationTaskSpec({
   recipeParams = null,
   stylePresetId = null,
   assets = [],
+  quality = null,
   output = {},
   metadata = {},
 }: CreateGenerationTaskSpecInput): GenerationTaskSpec {
@@ -227,6 +318,7 @@ export function createGenerationTaskSpec({
     recipeParams,
     stylePresetId: cleanOptionalString(stylePresetId),
     assets,
+    quality: normalizeQualityIntent(quality),
     output: {
       ...DEFAULT_OUTPUT_CONTRACT,
       ...output,
@@ -441,6 +533,58 @@ export function validateGenerationTaskSpec(
   });
 
   return issues;
+}
+
+function pushUniqueSection(lines: string[], seen: Set<string>, label: string, value: string) {
+  const cleanedValue = value.trim();
+  if (!cleanedValue) return;
+  const key = `${label}:${cleanedValue}`.toLowerCase();
+  if (seen.has(key)) return;
+  seen.add(key);
+  lines.push(`- ${label}: ${cleanedValue}`);
+}
+
+export function composeGenerationQualityPromptSections(sourceSpec: GenerationTaskSpec) {
+  const quality = sourceSpec.quality;
+  if (!quality) return [];
+
+  const sections: string[] = [];
+  const lines: string[] = [];
+  const seen = new Set<string>();
+
+  if (quality.qualityPresetId) {
+    const presetGuidance = GENERATION_QUALITY_PRESET_GUIDANCE[quality.qualityPresetId];
+    sections.push('Quality preset:', quality.qualityPresetId);
+    for (const item of presetGuidance) pushUniqueSection(lines, seen, 'Preset guidance', item);
+  }
+
+  pushUniqueSection(lines, seen, 'Subject', quality.subject ?? '');
+  pushUniqueSection(lines, seen, 'Composition', quality.composition ?? '');
+  pushUniqueSection(lines, seen, 'Style', quality.style ?? '');
+  pushUniqueSection(lines, seen, 'Lighting', quality.lighting ?? '');
+  pushUniqueSection(lines, seen, 'Color', quality.color ?? '');
+  pushUniqueSection(lines, seen, 'Materials', quality.materials ?? '');
+  for (const constraint of quality.constraints) {
+    pushUniqueSection(lines, seen, 'Constraint', constraint);
+  }
+  for (const avoid of quality.negative) {
+    pushUniqueSection(lines, seen, 'Avoid', avoid);
+  }
+  for (const referenceRole of quality.referenceRoles) {
+    const assetLabel = referenceRole.assetName ? `${referenceRole.assetName} ` : '';
+    pushUniqueSection(
+      lines,
+      seen,
+      'Reference role',
+      `${assetLabel}(${referenceRole.role}): ${referenceRole.instruction}`,
+    );
+  }
+
+  if (lines.length > 0) {
+    sections.push('Quality intent:', ...lines);
+  }
+
+  return sections;
 }
 
 export function createProviderInputMetrics(

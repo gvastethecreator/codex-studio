@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: East Asian court-fantasy worldbuilding, beast envoys, throne-room mandate, wandering exile becoming sovereign, dense political mythology and spiritual weight
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Regal, mythic, searching, fated
-  key_features: Imperial robes, beast envoy motifs, throne-room scale, wandering-road contrast, mythology-rich props
-  creative_brief: Imperial robes trail across throne-room stone while beast envoys whisper mandates from a heaven that chose an exile for a crown. Sovereignty is not seized but survived—a wandering road that ends in duty. The spiritual weight of a kingdom presses through silk and silence.
+  aesthetic: Fantasía cortesana de mandato celeste, con exilio iniciático, simbolismo bestial y densidad político-espiritual.
+  form_and_line: Silueta ceremonial oriental, pliegues de túnica imperial y arquitectura de sala del trono con eje de autoridad.
+  color_palette: Verde jade, rojo cinabrio, dorado imperial, negro tinta y azul niebla de montañas sagradas.
+  lighting_setup: Luz solemne de corte, contraluz de salón ritual y brillos selectivos sobre insignias de legitimidad.
+  material_texture: Seda pesada, laca ceremonial, piedra de palacio, ornamento broncíneo y talismanes de bestia mensajera.
+  render_quality: Drama de alta fantasía político-mítica con lectura jerárquica clara y peso ceremonial.
+  spatial_distortion: Verticalidad de poder en interiores y contraste con horizontalidad de camino de exilio.
+  atmosphere: Regia, fatal y reflexiva, atravesada por destino y deber.
+  key_features: Túnica imperial, emisarios bestiales, trono monumental y dualidad entre corte y peregrinaje.
+  creative_brief: >-
+    Construye una gramática imperial-destiny reusable donde protocolo cortesano,
+    imaginería mandática y transformación del exilio en soberanía definan la
+    identidad visual.
 avoidRules:
   - realistic
   - 3d render

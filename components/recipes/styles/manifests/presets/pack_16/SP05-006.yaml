@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Idol glamour mixed with transformable aircraft and bright theatrical staging, stage lights, microphone stands, flight decks, concert energy
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Romantic, spectacular, dazzling, hopeful
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Stage lights melt into afterburner trails as pop-idol glamour and transformable fighter craft share the same kaleidoscopic spotlight. Sequins and vernier thrusters catch the key light together, a dizzying marriage of concert spectacle and aerial ballet that dares the frame to contain its own radiance.
+  aesthetic: Fusión idol-mecha de espectáculo aéreo, con teatralidad pop y tecnología transformable de alto brillo.
+  form_and_line: Trazo cel dinámico con coreografía de escenario y vuelo, enfatizando transición performance-combate.
+  color_palette: Magentas de show, cian eléctrico, blanco perlado y acentos metálicos cromados.
+  lighting_setup: Spotlights de concierto combinados con flare de toberas, rim brillante y gradiente glam futurista.
+  material_texture: Lentejuela textil, pintura aeronáutica, panel translúcido de cockpit y grano cálido broadcast.
+  render_quality: Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y máquina.
+  spatial_distortion: Escenario elevado y cielo operativo conectados por encuadres de ascenso y transformación.
+  atmosphere: Radiante, emotiva, espectacular, eufórica.
+  key_features: Silueta idol distintiva, mecha transformable, iluminación de concierto y gestualidad de clímax performático.
+  creative_brief: Diseña una gramática reusable de pop-aeronáutica transformable para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo.
 avoidRules:
   - realistic
   - 3d render

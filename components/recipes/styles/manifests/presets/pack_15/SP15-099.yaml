@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Broad transit perspective leading through green frames.
   atmosphere: Mobility, civic care, and breathable urban optimism.
   key_features: Tram platforms, canopy bridges, and solar wayfinding panels.
-  creative_brief: A solarpunk transit node where mobility is shaded, quiet, and beautifully integrated with nature.
+  creative_brief: >-
+    Preserve canopy tram-exchange grammar as a reusable style system:
+    biophilic mobility integration, breathable elevated transit frames, and
+    shaded civic calm should remain coherent across subjects.
 avoidRules: [photoreal, dystopian, heavy-neon, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-099.webp }
 attributes:

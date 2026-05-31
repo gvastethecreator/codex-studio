@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Halloween-town architecture, moon-face grins, striped fashion silhouettes, weapon-partner action, Tim-Burton-meets-shonen rhythm, exaggerated soul-wave cool
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Spooky, stylish, energetic, mischievous
-  key_features: Moon-face iconography, striped accessories, weapon forms, playful gothic backdrops, rhythm-heavy action poses
-  creative_brief: The moon wears a grin it did not earn, and the school hallway bends into a nightmare carnival where weapons are partners sharing the same pulse. Stripes, stitches, and crescent shadows compose a grammar of spooky cool. Halloween never ended — it just enrolled in the academy and started a band.
+  aesthetic: Gothic pop escolar con humor macabro, ritmo punk sobrenatural y dinámica arma-compañero de alta energía.
+  form_and_line: Línea digital afilada con siluetas estilizadas, gestualidad exagerada y coreografía de combate musicalizada.
+  color_palette: Morados de noche de Halloween, naranjas encendidos, negros tinta y acentos cian de resonancia espiritual.
+  lighting_setup: Contrastes teatrales con glow espectral, sombras planas expresivas y rim frío en bordes de arma.
+  material_texture: Acabados limpios de era digital, superficies góticas estilizadas y grano leve para tono siniestro-pop.
+  render_quality: Producción premium early-2000s con lectura inmediata de pose, beat visual y personalidad de dúo.
+  spatial_distortion: Perspectiva dinámica de pasillo y plaza académica con deformación juguetona en golpes de alma.
+  atmosphere: Traviesa, spooky, vibrante, desafiante.
+  key_features: Luna expresiva icónica, accesorios a rayas, morfologías arma-humana y arquitectura de academia-carnaval.
+  creative_brief: Diseña una gramática reusable de acción gótica juvenil para cualquier sujeto, combinando iconografía de Halloween, resonancia de alma y energía de banda rebelde.
 avoidRules:
   - realistic
   - 3d render

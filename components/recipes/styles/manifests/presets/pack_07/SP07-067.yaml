@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Ephemeral littoral architecture language built from wet-sand sculpting, tidal vulnerability, and playful improvised fortress typologies
-  form_and_line: Bucket-cast cylindrical towers, drip-formed verticals, scalloped parapets, concentric moat cuts, and soft-edged erosion-prone contours
+  aesthetic: Arquitectura litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.
+  form_and_line: Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a erosión.
   color_palette: Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents
-  lighting_setup: Hard coastal daylight, reflected water shimmer, low-angle beach shadows, slight marine haze, and bright specular micro-highlights on damp surfaces
-  material_texture: Granular sand aggregation, compacted wet-sand crust, drip-strand ridges, shell inclusions, pebble interruptions, and erosion-softened edges
-  render_quality: High-detail transient-sculpture rendering emphasizing granular fidelity, controlled collapse cues, and intentionally impermanent structural character
+  lighting_setup: Daylight costero duro, shimmer de agua reflejada, sombras bajas de playa y microespeculares en superficie húmeda.
+  material_texture: Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por desgaste.
+  render_quality: Escultura transitoria de detalle alto con fidelidad granular y señales de colapso controlado.
   spatial_distortion: Crumbling
-  atmosphere: Sunlit, playful, fragile, tactile, and shaped by imminent natural decay
-  key_features: Drip-cast turret profiles, bucket-mold repeat modules, carved moat channels, crenelated sand ridges, shell inlay accents, and visible tidal wear lines
+  atmosphere: Soleada, táctil y frágil, condicionada por decadencia natural inminente.
+  key_features: Perfiles de torreta por goteo, módulos repetidos de balde, canales de foso, crestas almenadas y líneas de desgaste de marea.
   creative_brief: >-
-    Keep the style anchored in wet-sand construction grammar: granular
-    material behavior, bucket-cast geometry, and erosion-prone ephemeral
-    forms should define outputs across varied subjects.
+    Mantén una gramática reusable de construcción en arena húmeda donde
+    geometría de molde, comportamiento granular y erosión visible definan el
+    estilo en sujetos variados.
 avoidRules:
   - stone
 assets:

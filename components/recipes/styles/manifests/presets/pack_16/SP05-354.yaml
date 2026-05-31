@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Modern street-racing futurism, telemetry-thinking drivers, high-end road machines, coastal circuits and digital-age grip rendered with sleek athletic motor focus
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Sleek, exacting, modern, competitive
-  key_features: Car-apex cornering, telemetry-like cues, coastal-road speed, precision driving posture, sleek neon reflections
-  creative_brief: Data streams trace the perfect line through coastal switchbacks where carbon-fiber precision meets telemetry-driven instinct. The future of speed wears a sleek digital skin, every apex calculated yet somehow alive with human hunger.
+  aesthetic: Street-racing tecnificado de nueva generación, orientado a telemetría, trazada óptima y precisión de frenada.
+  form_and_line: Silueta automotriz limpia, gestualidad de piloto analítica y líneas de apex de alta definición.
+  color_palette: Cian digital, grises titanio, azules costeros y acentos magenta de interfaz de rendimiento.
+  lighting_setup: Iluminación costera nocturna con reflejos controlados y cues de tablero de alta legibilidad.
+  material_texture: Fibra de carbono pulida, pintura metalizada, asfalto liso de circuito abierto y vidrio de cabina técnico.
+  render_quality: Motor-performance frame premium con claridad de datos, velocidad y control fino.
+  spatial_distortion: Perspectiva de curva rápida con vector de trazada y compresión de distancia a punto de frenada.
+  atmosphere: Precisa, moderna, fría y tácticamente competitiva.
+  key_features: Línea de apex limpia, lectura telemetry-like, reflejo de costa, postura de control y tracción fina.
+  creative_brief: >-
+    Formula una gramática reusable de smart-apex-racing donde telemetría,
+    trazada y estética digital de rendimiento definan identidad visual
+    transferible.
 avoidRules:
   - realistic
   - 3d render

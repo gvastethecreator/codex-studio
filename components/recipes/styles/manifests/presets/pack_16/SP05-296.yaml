@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Retro-futurist city towers, art-deco industrial grandeur, boy-and-android innocence, class conflict and monumental machinery in warm old-cinema wonder
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Grand, nostalgic, metallic, human
-  key_features: Deco skyline forms, android character contrast, monumental machinery, crowd-class scale, retro-future city framing
-  creative_brief: Art deco towers scrape a sky that looks backward and forward simultaneously, holding a boy and an android in the warm amber of old cinema wonder. Monuments to industry dominate class divisions that machinery was meant to erase but only deepened. Innocence becomes the most radical technology when it refuses to distinguish between the human heart and the mechanical one.
+  aesthetic: Retrofuturismo art-decó monumental con tensión de clase, donde asombro tecnológico clásico convive con melancolía industrial humanista.
+  form_and_line: Contorno arquitectónico robusto, geometría decó escalonada y contraste de siluetas orgánicas-humanoides frente a maquinaria masiva.
+  color_palette: Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería urbana.
+  lighting_setup: Iluminación de ciudad vertical con bruma cálida, contraluces de rascacielos y brillos controlados sobre metal.
+  material_texture: Acero remachado, mármol art-decó, cristal antiguo y superficies mecánicas con pátina de uso civil.
+  render_quality: Acabado premium de gran espectáculo urbano con lectura jerárquica impecable entre escala humana y escala sistémica.
+  spatial_distortion: Perspectiva ascendente de megaciudad con profundidad estratificada por clases y flujos de movilidad vertical.
+  atmosphere: Grandiosa, nostálgica, metálica, empática.
+  key_features: Skyline decó icónico, maquinaria colosal, contraste niño-androide y composición social en capas.
+  creative_brief: Construye una gramática reusable de retrofuturo humanista para cualquier sujeto, articulando geometría decó, escala industrial y ternura tecnológica.
 avoidRules:
   - realistic
   - 3d render

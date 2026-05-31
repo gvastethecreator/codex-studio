@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Poster-hot speed, brutal shadows, graphic car or fist momentum, razor-sliced anatomy, neon pulp adrenaline, every frame built like a racing poster explosion
-  form_and_line: Razor contour, thick-thin poster ink, aggressive silhouette carving
+  aesthetic: Estética pulp de velocidad extrema construida como póster de impacto, con agresividad gráfica y adrenalina neon-noir.
+  form_and_line: Contorno afilado tipo cuchilla, contraste grueso-fino de tinta y tallado de silueta en bloques violentos.
   color_palette: Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet
-  lighting_setup: Poster-contrast spotlighting, hard rim edges, race-night neon glare, shadow blocks
-  material_texture: Gloss paint, tire-rubber hints, screenprint boldness, polished poster surfaces
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Spot de alto contraste, rim duro, glare de neón nocturno y masas de sombra en cuña.
+  material_texture: Brillo de pintura automotriz, guiños de caucho, grano screenprint y acabado de cartel pulido.
+  render_quality: Acción hiperdinámica con lectura instantánea de movimiento y composición de afiche cinético.
   spatial_distortion: Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing
-  atmosphere: Aggressive, sleek, adrenalized, loud
-  key_features: Razorline anatomy, heavy shadow wedges, poster-speed motion, neon pulp attitude, impossible velocity cues
-  creative_brief: Speed carved into the frame with a blade. Shadows fall like guillotines, chrome gleams with criminal intent, and stillness is not an option but a defeat. Every line is a velocity vector.
+  atmosphere: Agresiva, estridente y elegante, impulsada por urgencia de carrera.
+  key_features: Anatomía razorline, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.
+  creative_brief: >-
+    Define una gramática reusable de razor-velocity basada en silueta cortante,
+    contrastes gráficos severos y sensación de desplazamiento imposible. Debe
+    priorizar impacto visual inmediato sobre naturalismo.
 avoidRules:
   - still
   - calm

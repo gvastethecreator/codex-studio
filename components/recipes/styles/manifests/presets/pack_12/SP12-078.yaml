@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Moonlit stealth-op romanticism combining elegant garden architecture with high-precision vertical infiltration language.
-  subject_treatment: Agile shinobi silhouettes, grappling-focused mobility roles, and discipline-coded team presence with minimal visual noise.
-  color_and_tone: Deep indigo night fields, lotus-magenta highlights, lacquer-black anchors, and subtle lantern amber punctuation.
-  lighting_and_shadow: Soft lunar key, paper-lantern practical pools, water-reflected fill, and razor-edged concealment bands.
-  texture_and_material: Mirror-still water skins, wet polished stone, silk movement trails, aged timber bridge grain, and mossy edge detail.
-  camera_and_composition: Curved bridge chains, rooftop relay paths, and layered occlusion framing designed for stealth readability.
-  atmosphere_and_mood: Controlled tension, poetic silence, and surgical execution discipline.
-  rendering_and_quality: Premium stealth key-art finish with clean target-path communication, elegant contrast hierarchy, and minimal-clutter tactical clarity.
+  aesthetic: Stealth-op nocturna de infiltración shinobi, centrada en verticalidad, silencio y ejecución quirúrgica.
+  subject_treatment: Siluetas ágiles con movilidad de gancho y roles coordinados de entrada/cobertura/exfil.
+  color_and_tone: Índigo profundo, magenta loto, negro lacado y ámbar de farol para contraste selectivo.
+  lighting_and_shadow: Luz lunar suave, islas de linterna y bandas de ocultamiento de borde nítido.
+  texture_and_material: Agua espejo, piedra pulida húmeda, seda en movimiento y madera envejecida.
+  camera_and_composition: Cadenas de puentes curvos, rutas de azotea y oclusión por capas para lectura stealth.
+  atmosphere_and_mood: Tensa, poética y disciplinadamente precisa.
+  rendering_and_quality: Premium stealth gameplay key-art con comunicación limpia de ruta, objetivo y escape.
 avoidRules:
   - watermark
   - text

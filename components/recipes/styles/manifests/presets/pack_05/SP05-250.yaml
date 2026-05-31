@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Solemn undead guardians, quiet vows, old temples, righteous adventure without irony, dawn-lit armor and spiritual apprenticeship in a lonely fantasy world
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Solemn, devout, hopeful, old-world
-  key_features: Temple stonework, guardian silhouettes, dawn-lit armor, vow-centered posing, pilgrimage-road compositions
-  creative_brief: Dawn light catches armor in an old temple where undead guardians teach the living how to swear oaths that outlast death. Righteousness has no irony here—just stone walls, quiet vows, and a paladin walking toward a horizon that believes in him. Faith is a pilgrimage taken alone but never unaccompanied.
+  aesthetic: Espiritualidad paladín de tono sobrio, con mentoría funeraria, templo antiguo y heroísmo devocional sin cinismo.
+  form_and_line: Postura de voto y peregrinaje, armadura clásica al amanecer y siluetas guardianas de solemnidad sepulcral.
+  color_palette: Oro alba, azul oración, gris piedra ancestral, blanco juramento y verde de santuario antiguo.
+  lighting_setup: Amanecer litúrgico, shafts en nave de templo y halo moderado sobre armadura y símbolos sagrados.
+  material_texture: Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo de capilla olvidada.
+  render_quality: Fantasía devocional de gran claridad ética, con equilibrio entre épica y contemplación religiosa.
+  spatial_distortion: Profundidad de nave-templo y horizonte de peregrinaje, con eje vertical de trascendencia.
+  atmosphere: Solemne, esperanzada y piadosa, de camino interior y exterior.
+  key_features: Guardianes no-muertos, arquitectura de templo, juramentos visualizados y composiciones de ruta paladina.
+  creative_brief: >-
+    Construye una gramática quiet-paladin reusable donde rito, deber y
+    monumentalidad sagrada expresen aprendizaje moral y aventura contemplativa
+    sin perder impulso heroico.
 avoidRules:
   - realistic
   - 3d render

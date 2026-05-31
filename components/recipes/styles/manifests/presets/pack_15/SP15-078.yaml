@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Spiral descent into resonant core.
   atmosphere: Serenity, resonance, and ritual repair.
   key_features: Echo dishes, choir platforms, and tone altars.
-  creative_brief: A lunarpunk temple where healing is achieved through shared sound.
+  creative_brief: >-
+    Preserve crater choir-sanctuary grammar as a reusable style system:
+    concentric sonic architecture, resonant ritual healing, and
+    serenity-through-acoustics should remain coherent across subjects.
 avoidRules: [photoreal, horror, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-078.webp }
 attributes:

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Railway slicing through the cosmos, immortal sorrow, station-platform nostalgia, child traveler wonder mixed with elegiac infinite travel
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Melancholic, wondrous, star-bound, poetic
-  key_features: Cosmic train imagery, station platforms, traveler duo staging, star-snow ambience, long-journey symbolism
-  creative_brief: Steam and starlight entwine as a locomotive threads the needle between planets and grief. Platform after platform, the journey gathers silence like snow on a window, each stop a question the stars refuse to answer. This is travel as meditation, where departure is forever and arrival is a ghost.
+  aesthetic: Balada ferroviaria cósmica de tránsito existencial, con nostalgia elegíaca y maravilla iniciática.
+  form_and_line: Línea clásica de locomotora y personajes estilizados, acting contemplativo y ritmo visual de trayecto largo.
+  color_palette: Azules noche ferroviaria, dorados de vagón antiguo, blancos de nieve estelar y sepias de recuerdo.
+  lighting_setup: Faroles de andén lechosos, compartimentos cálidos de vagón y contraluz de ventanilla sobre nieve estelar.
+  material_texture: Metal de vagón envejecido, vapor suave, madera de andén y película granulada de época.
+  render_quality: Acabado premium retro-poético con legibilidad narrativa de tránsito y emoción de despedida continua.
+  spatial_distortion: Perspectiva longitudinal de vías y vagones, con profundidad astral que extiende sensación de viaje eterno.
+  atmosphere: Melancólica, maravillada, sideral, meditativa.
+  key_features: Locomotora astral frontal, estaciones-umbral, motivo de equipaje simbólico y horizonte de vías infinitas.
+  creative_brief: Diseña una gramática reusable de peregrinaje ferroviario metafísico para cualquier sujeto, fusionando liturgia de estación, melancolía de trayecto y escala cósmica íntima.
 avoidRules:
   - realistic
   - 3d render

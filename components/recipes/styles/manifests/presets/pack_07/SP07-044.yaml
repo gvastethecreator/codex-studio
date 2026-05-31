@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Post-industrial ecological promenade style blending infrastructural linearity with softened native planting systems
-  form_and_line: Longitudinal circulation bands, alternating hardscape-softscape strips, bench-block rhythm, articulated edge transitions
+  aesthetic: Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.
+  form_and_line: Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de bancos/bordes.
   color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
-  lighting_setup: Diffuse late-day illumination with mild reflected fill and gentle luminance falloff across linear surfaces
-  material_texture: Raw concrete grain, corten oxidation bloom, brushed steel edges, gravel fines, wind-responsive grasses, weathered timber inserts
-  render_quality: Competition-board landscape fidelity, adaptive-reuse legibility, ecologically credible planting succession and detailing
+  lighting_setup: Luz difusa de tarde con rebote urbano suave y caída progresiva sobre superficies lineales.
+  material_texture: Hormigón crudo, corten oxidado, acero cepillado, grava fina, gramíneas al viento e inserciones de madera envejecida.
+  render_quality: Nivel concurso de paisaje con legibilidad de reutilización y sucesión vegetal creíble.
   spatial_distortion: Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility
-  atmosphere: Civic respite under infrastructural memory, contemporary but weathered, socially permeable
-  key_features: Rail-origin linearity, corten-edge stratification, modular seat-wall interfaces, pollinator-support planting mixes, pedestrian procession cues
+  atmosphere: Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.
+  key_features: Linealidad ferroviaria, bordes estratificados, interfaces asiento-muro y mezclas de plantación para polinizadores.
   creative_brief: >-
-    Mantén tensión entre pasado industrial y ecología contemporánea: la retícula
-    infraestructural debe seguir visible mientras la vegetación la suaviza y reprograma.
-    El estilo debe servir para corredores lineales, parques elevados y bordes urbanos
-    reconvertidos.
+    Formula una gramática de corredor postindustrial transferible donde la
+    retícula dura siga legible mientras la ecología la reprograma. Debe
+    funcionar en parques lineales, infraestructuras elevadas y bordes reciclados.
 avoidRules:
   - wild forest
 assets:

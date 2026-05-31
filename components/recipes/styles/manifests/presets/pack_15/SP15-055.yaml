@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Indoor urban garden merging luxury ecology and deco engineering.
-  form_and_line: Geometric planters, vaulted glass, and stepped promenades.
-  color_palette: Emerald, brass, and cream.
-  lighting_setup: Filtered daylight and uplighted fountain nodes.
-  material_texture: Brass lattice, marble, and humid glass panes.
-  render_quality: High-fidelity lifestyle concept with botanical detail.
-  spatial_distortion: Atrium depth with layered balcony rings.
-  atmosphere: Refined calm and curated abundance.
-  key_features: Geometric fountain, greenhouse balconies, and brass pergolas.
-  creative_brief: A decopunk sanctuary where ecology is framed as metropolitan luxury.
+  aesthetic: Botanical decopunk where nature is not wild but staged, polished, humid, and ruled by brass geometry.
+  form_and_line: Geometric planter blocks, vaulted glass ribs, stepped promenade terraces, balcony rings, and clipped leaf silhouettes.
+  color_palette: Emerald, brass, cream, wet leaf black-green, and fountain white.
+  lighting_setup: Filtered daylight, uplighted fountain nodes, humid sparkle on brass lattice, and soft green bounce from dense leaves.
+  material_texture: Brass lattice, marble, humid glass panes, waxy leaves, polished fountain stone, and condensation beads.
+  render_quality: High-fidelity lifestyle concept with botanical density constrained by clear deco structure.
+  spatial_distortion: Atrium depth rises through balcony rings, fountain axes, clipped plant beds, and vertical greenhouse sightlines.
+  atmosphere: Refined calm, curated abundance, luxury ecology, and controlled indoor weather.
+  key_features: Geometric fountains, brass pergolas, greenhouse balcony rings, clipped ornamental planting, and misting nozzle patterns.
+  creative_brief: >-
+    Preserve brass garden-atrium grammar as a reusable style system:
+    curated humid botany, geometric horticultural discipline, and
+    brass-marble luxury ecology should remain coherent across subjects.
 avoidRules: [photoreal, rustic-farm, cyber-grunge, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-055.webp }
 attributes:
   negativePrompt: photoreal, rustic-farm, cyber-grunge, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

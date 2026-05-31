@@ -55,28 +55,6 @@ export interface StudioSettingsController {
         workspaceId?: string | null,
       ) => Promise<void>;
     };
-    settings: EditableStudioSettings | null;
-    isLoading: boolean;
-    isSaving: boolean;
-    providerCapabilities: GenerationProviderCapabilitiesResponse | null;
-    providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
-    outputSources: ExternalOutputSourcesResponse | null;
-    outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
-    isLoadingOutputSources: boolean;
-    loadingOutputSourceFiles: Record<string, boolean>;
-    isRegisteringOutputSource: boolean;
-    importingOutputSources: Record<string, boolean>;
-    error: string | null;
-    refresh: () => Promise<void>;
-    refreshOutputSources: () => Promise<void>;
-    update: (patch: EditableStudioSettingsPatch) => Promise<void>;
-    registerOutputSource: (input: RegisterExternalOutputSourceInput) => Promise<void>;
-    loadOutputSourceFiles: (sourceId: string) => Promise<void>;
-    importOutputSourceFiles: (
-      sourceId: string,
-      files: string[],
-      workspaceId?: string | null,
-    ) => Promise<void>;
   };
 }
 
@@ -327,24 +305,6 @@ export function useStudioSettings({
         loadOutputSourceFiles,
         importOutputSourceFiles,
       },
-      settings,
-      isLoading,
-      isSaving,
-      providerCapabilities,
-      providerRuntimePreflight,
-      outputSources,
-      outputSourceFiles,
-      isLoadingOutputSources,
-      loadingOutputSourceFiles,
-      isRegisteringOutputSource,
-      importingOutputSources,
-      error,
-      refresh: refreshSettings,
-      refreshOutputSources,
-      update: updateSettings,
-      registerOutputSource,
-      loadOutputSourceFiles,
-      importOutputSourceFiles,
     },
   };
 }

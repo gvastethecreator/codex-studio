@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Submerged metropolis retro-futurism, art-deco abyss architecture, drowned-utopia monumental decay
-  form_and_line: Pressure-dome clusters, glass transit arteries, deco verticals, ring-hub circulation geometry, leak-path fractures
+  aesthetic: Metrópolis sumergida retrofuturista con deco abisal y decadencia monumental reclamadas por el mar.
+  form_and_line: Clústeres de domos de presión, arterias vítreas de tránsito, verticales deco y fracturas por filtración.
   color_palette: Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass
-  lighting_setup: Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red
-  material_texture: Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete
-  render_quality: Cinematic underwater-city fidelity with pressure-aware detail, deco readability, and ruin-overgrowth balance
+  lighting_setup: Filtro acuático azul profundo, constelaciones bioluminiscentes y contraste entre glow dorado interior y alarma roja.
+  material_texture: Piedra mojada, vidrio presurizado, pátina cobre-verde, coral incrustado y hormigón con fugas.
+  render_quality: Ciudad submarina cinematográfica con detalle de presión, legibilidad deco y balance ruina-colonización biológica.
   spatial_distortion: None
-  atmosphere: Pressurized awe, elegiac decline, silent grandeur, abyssal melancholy
-  key_features: Deco-metal motifs, dome leak signatures, coral colonization layers, biolum wayfinding accents, bathysphere interface docks
+  atmosphere: Asombro presurizado, melancolía abisal y grandeza silenciosa en declive.
+  key_features: Motivos deco metálicos, firmas de fuga, capas de coralización y wayfinding bioluminiscente.
   creative_brief: >-
-    Anchor the style in art-deco underwater urbanism: elegant geometric
-    infrastructure under pressure, marine reclamation, and luminous deep-sea
-    ambience. Preserve the lost-civilization tone without locking to a single
-    fictional city.
+    Formula una gramática underwater-deco transferible donde infraestructura
+    elegante bajo presión y reclamación marina definan la identidad. Debe
+    preservar tono de civilización perdida sin ciudad ficticia fija.
 avoidRules:
   - sky
   - dry

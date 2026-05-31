@@ -2,6 +2,7 @@ import {
   createCompiledProviderInput,
   createGenerationTaskSpec,
   createProviderSessionContract,
+  composeGenerationQualityPromptSections,
   type CompiledProviderInput,
   type GenerationOutputContract,
   type GenerationProviderId,
@@ -38,6 +39,8 @@ export interface HostedImageApiCompiledPayload {
     recipeId: string | null;
     stylePresetId: string | null;
     sourceProviderId: GenerationProviderId | null;
+    qualityPresetId: string | null;
+    hasQualityIntent: boolean;
     hasRecipeProviderDirectives: boolean;
   };
 }
@@ -53,6 +56,8 @@ export interface ComfyWorkflowCompiledPayload {
     recipeId: string | null;
     stylePresetId: string | null;
     sourceProviderId: GenerationProviderId | null;
+    qualityPresetId: string | null;
+    hasQualityIntent: boolean;
     hasRecipeProviderDirectives: boolean;
   };
 }
@@ -204,6 +209,8 @@ function createProviderPayloadMetadata(sourceSpec: GenerationTaskSpec) {
     recipeId: sourceSpec.recipeId,
     stylePresetId: sourceSpec.stylePresetId,
     sourceProviderId: sourceSpec.providerId,
+    qualityPresetId: sourceSpec.quality?.qualityPresetId ?? null,
+    hasQualityIntent: Boolean(sourceSpec.quality),
     hasRecipeProviderDirectives: isRecipeProviderDirectives(
       sourceSpec.metadata.recipeProviderDirectives,
     ),
@@ -217,6 +224,11 @@ function buildProviderPrompt(sourceSpec: GenerationTaskSpec) {
       ? sourceSpec.metadata.variationBrief.trim()
       : '';
   const sections = [sourceSpec.prompt];
+  const qualitySections = composeGenerationQualityPromptSections(sourceSpec);
+
+  if (qualitySections.length > 0) {
+    sections.push('', ...qualitySections);
+  }
 
   if (!isRecipeProviderDirectives(recipeProviderDirectives)) {
     if (variationBrief) {

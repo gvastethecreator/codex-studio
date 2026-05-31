@@ -1,8 +1,14 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { Effect } from 'effect';
 import type { CompiledProviderInput } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
 import { resolveLibraryPath } from '../library';
+import {
+  getExternalProviderRetryDelayMs,
+  isRetryableProviderStatus,
+  normalizeExternalProviderRetryPolicy,
+} from './externalProviderRetryPolicy';
 
 export type ExternalProviderFetch = (
   input: string | URL | Request,
@@ -76,7 +82,7 @@ export function responseSnippet(value: string, secrets: readonly string[] = []) 
 }
 
 export function isRetryableStatus(status: number) {
-  return status === 408 || status === 429 || status >= 500;
+  return isRetryableProviderStatus(status);
 }
 
 function isAbortError(error: unknown) {
@@ -97,27 +103,54 @@ export async function fetchExternalProviderWithRetry({
   input: string | URL | Request;
   init?: RequestInit;
 } & ExternalProviderRetryOptions) {
-  let lastNetworkError: unknown = null;
+  const retryPolicy = normalizeExternalProviderRetryPolicy({
+    maxAttempts,
+    retryDelayMs,
+  });
 
-  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
-    try {
-      const response = await fetch(input, init);
-      if (response.ok || !isRetryableStatus(response.status) || attempt === maxAttempts) {
-        return { response, attempts: attempt };
+  const program = Effect.gen(function* () {
+    let lastNetworkError: unknown = null;
+
+    for (let attempt = 1; attempt <= retryPolicy.maxAttempts; attempt += 1) {
+      const attemptResult = yield* Effect.tryPromise({
+        try: () => fetch(input, init),
+        catch: (error) => error,
+      }).pipe(
+        Effect.map((response) => ({ type: 'response' as const, response })),
+        Effect.catchAll((error) => Effect.succeed({ type: 'error' as const, error })),
+      );
+
+      if (attemptResult.type === 'response') {
+        if (
+          attemptResult.response.ok ||
+          !isRetryableStatus(attemptResult.response.status) ||
+          attempt === retryPolicy.maxAttempts
+        ) {
+          return { response: attemptResult.response, attempts: attempt };
+        }
+      } else {
+        if (isAbortError(attemptResult.error) || attempt === retryPolicy.maxAttempts) {
+          return yield* Effect.fail(attemptResult.error);
+        }
+        lastNetworkError = attemptResult.error;
       }
-    } catch (error) {
-      if (isAbortError(error) || attempt === maxAttempts) {
-        throw error;
-      }
-      lastNetworkError = error;
+
+      const delayMs = getExternalProviderRetryDelayMs(retryPolicy.retryDelayMs, attempt);
+      yield* Effect.tryPromise({
+        try: () => sleep(delayMs),
+        catch: (error) =>
+          error instanceof Error ? error : new Error(`${label} retry delay failed.`),
+      });
     }
 
-    await sleep(retryDelayMs * attempt);
-  }
+    return yield* Effect.fail(
+      lastNetworkError instanceof Error
+        ? lastNetworkError
+        : new Error(`${label} failed without a response.`),
+    );
+  });
 
-  throw lastNetworkError instanceof Error
-    ? lastNetworkError
-    : new Error(`${label} failed without a response.`);
+  return await Effect.runPromise(program);
 }
 
 export function findFirstHostedImageUrl(value: unknown): string | null {

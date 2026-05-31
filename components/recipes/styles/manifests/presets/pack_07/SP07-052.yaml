@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Subterranean dwarven monumentalism, forge-centric mountain architecture, ancestral stonecraft doctrine
-  form_and_line: Megalithic pillar grids, chisel-defined mass geometry, rune-banded arches, load-bearing vault heaviness
+  aesthetic: Monumentalidad enana subterránea, forja central y doctrina ancestral de cantería pesada.
+  form_and_line: Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.
   color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
-  lighting_setup: Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth
-  material_texture: Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather
-  render_quality: Epic fantasy-fortress fidelity with dense material weight, craft-mark readability, and structural gravity
+  lighting_setup: Brillo de lava y forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja subterráneo.
+  material_texture: Granito labrado, marcas de cincel, oro martillado, hierro fundido, vetas cristalinas y cuero denso.
+  render_quality: Fortaleza épica de alta fidelidad con peso material y gravedad estructural contundente.
   spatial_distortion: None
-  atmosphere: Ancestral resilience, forge heat, clan authority, deep-earth solemnity
-  key_features: Rune-carved support systems, forge-anvil cores, lava heat channels, treasure-vein geology, hall-scale axiality
+  atmosphere: Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.
+  key_features: Soportes rúnicos, núcleos de forja-yunque, canales térmicos de lava y axialidad de salón monumental.
   creative_brief: >-
-    Treat this style as dwarven architectural grammar: massive stone systems,
-    forge-lit interiors, and rune-encoded craftsmanship must drive identity.
-    Maintain weight, durability, and lineage cues without hard-locking to a
-    specific franchise hall.
+    Construye una gramática enana transferible donde masa pétrea, luz de forja
+    y oficio rúnico definan identidad. Debe comunicar linaje y durabilidad sin
+    dependencia de una sala de franquicia concreta.
 avoidRules:
   - wood
   - light

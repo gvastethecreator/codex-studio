@@ -12,16 +12,17 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Blue-sky school summer, leaping motion through ordinary neighborhoods, young regret and comedic consequence, warm clouds and temporal tenderness
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Youthful, breezy, wistful, playful
-  key_features: Rooftop and cloud framing, leaping-body motion, suburban summer light, time-jump iconography, youthful ensemble warmth
-  creative_brief: 'A leap rewinds the afternoon but every reversed moment tightens the knot between what could be and what was meant to happen. Rooftops become launch pads for second chances that teach the harshest lesson youth can learn: time is not a currency but a gift. Summer clouds bear witness to a girl who races against herself, losing and winning in the same breath.'
+  aesthetic: Juventud veraniega con elasticidad temporal ligera, combinando comedia de error cotidiano y melancolía de decisiones irreversibles.
+  form_and_line: Trazos ágiles para movimiento de salto, expresividad facial espontánea y siluetas escolares limpias de alta legibilidad.
+  color_palette: Azules de cielo brillante, blancos de nube cálida, verdes suburbanos suaves y acentos rosados de emoción adolescente.
+  lighting_setup: Sol de tarde alto con rebotes claros en azoteas, sombras suaves y brillo atmosférico de verano en expansión.
+  material_texture: Concreto de techo escolar, barandas metálicas calientes al sol, telas ligeras de uniforme y aire húmedo estival.
+  render_quality: Acabado cinematográfico fresco con prioridad en ritmo corporal, timing visual y lectura clara de loop temporal.
+  spatial_distortion: Perspectiva naturalista con elongación dinámica en saltos y microdeformación de trayectoria para sugerir rewind temporal.
+  atmosphere: Lúdica, nostálgica, aérea, impulsiva.
+  key_features: Azoteas como plataforma, nubes protagonistas, gestualidad de salto, iconografía temporal sutil y ensemble juvenil.
+  creative_brief: Crea una gramática reusable de verano temporal para cualquier sujeto usando luz de tarde, composición de salto y tensión entre juego y arrepentimiento.
+
 avoidRules:
   - realistic
   - 3d render

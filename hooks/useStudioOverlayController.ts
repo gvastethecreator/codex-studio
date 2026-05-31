@@ -70,34 +70,10 @@ interface StudioOverlayOnboardingContext {
   complete: () => void;
   refreshHealth: () => void | Promise<void>;
   ensureAppServer: () => void | Promise<void>;
+  diagnosticsLibraryDir: string | null;
 }
 
-interface StudioOverlaySettingsContext {
-  isOpen: StudioSystemOverlayFlags['isSettingsModalOpen'];
-  close: StudioSystemOverlaysProps['closeSettings'];
-  settings: StudioSystemOverlaysProps['settings'];
-  error: StudioSystemOverlaysProps['settingsError'];
-  isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
-  isSaving: StudioSystemOverlayFlags['isSavingSettings'];
-  providerCapabilities: StudioSystemOverlaysProps['providerCapabilities'];
-  providerRuntimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
-  outputSources: StudioSystemOverlaysProps['outputSources'];
-  outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
-  isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
-  loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
-  isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
-  importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
-  libraryDir: StudioSystemOverlaysProps['settingsLibraryDir'];
-  refresh: StudioSystemOverlaysProps['refreshSettings'];
-  update: StudioSystemOverlaysProps['updateSettings'];
-  registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
-  loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
-  importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
-  isBackgroundEnabled: StudioSystemOverlayFlags['isBackgroundEnabled'];
-  onToggleBackground: StudioSystemOverlaysProps['onToggleBackground'];
-  onResetStudio: StudioSystemOverlaysProps['onResetStudio'];
-  isResettingStudio: StudioSystemOverlayFlags['isResettingStudio'];
-}
+type StudioOverlaySettingsContext = StudioSystemOverlaysProps['settingsModule'];
 
 interface StudioOverlayWorkspaceContext {
   catalogVisualGroupCount: number;
@@ -121,9 +97,7 @@ interface StudioShellOverlayChromeContext {
 interface StudioShellOverlayRuntimeContext {
   mergedLogs: StudioSystemOverlaysProps['mergedLogs'];
   studioJobs: StudioSystemOverlaysProps['studioJobs'];
-  onboarding: StudioOverlayOnboardingContext & {
-    diagnosticsLibraryDir: string | null;
-  };
+  onboarding: StudioOverlayOnboardingContext;
 }
 
 interface StudioShellOverlayActivityContext {
@@ -132,46 +106,6 @@ interface StudioShellOverlayActivityContext {
   onInspectJob: StudioSystemOverlaysProps['onInspectJob'];
   onClearSelectedJob: StudioSystemOverlaysProps['onClearSelectedJob'];
   onRetryJob?: StudioSystemOverlaysProps['onRetryJob'];
-}
-
-interface StudioShellOverlaySettingsModuleContext {
-  modal: {
-    isOpen: StudioSystemOverlayFlags['isSettingsModalOpen'];
-    close: StudioSystemOverlaysProps['closeSettings'];
-  };
-  data: {
-    settingsDomain: {
-      settings: StudioSystemOverlaysProps['settings'];
-      error: StudioSystemOverlaysProps['settingsError'];
-      isLoading: StudioSystemOverlayFlags['isLoadingSettings'];
-      isSaving: StudioSystemOverlayFlags['isSavingSettings'];
-      refresh: StudioSystemOverlaysProps['refreshSettings'];
-      update: StudioSystemOverlaysProps['updateSettings'];
-    };
-    providerDomain: {
-      capabilities: StudioSystemOverlaysProps['providerCapabilities'];
-      runtimePreflight: StudioSystemOverlaysProps['providerRuntimePreflight'];
-    };
-    outputSourcesDomain: {
-      outputSources: StudioSystemOverlaysProps['outputSources'];
-      outputSourceFiles: StudioSystemOverlaysProps['outputSourceFiles'];
-      isLoadingOutputSources: StudioSystemOverlayFlags['isLoadingOutputSources'];
-      loadingOutputSourceFiles: StudioSystemOverlaysProps['loadingOutputSourceFiles'];
-      isRegisteringOutputSource: StudioSystemOverlayFlags['isRegisteringOutputSource'];
-      importingOutputSources: StudioSystemOverlaysProps['importingOutputSources'];
-      registerOutputSource: StudioSystemOverlaysProps['registerOutputSource'];
-      loadOutputSourceFiles: StudioSystemOverlaysProps['loadOutputSourceFiles'];
-      importOutputSourceFiles: StudioSystemOverlaysProps['importOutputSourceFiles'];
-    };
-  };
-  background: {
-    isEnabled: StudioSystemOverlayFlags['isBackgroundEnabled'];
-    setEnabled: (isEnabled: boolean) => void;
-  };
-  reset: {
-    onResetStudio: StudioSystemOverlaysProps['onResetStudio'];
-    isResettingStudio: StudioSystemOverlayFlags['isResettingStudio'];
-  };
 }
 
 type StartTransition = (callback: () => void) => void;
@@ -184,7 +118,8 @@ export interface BuildStudioOverlayControllerArgs {
   activity: StudioOverlayActivityContext;
   vault: StudioOverlayVaultContext;
   onboarding: StudioOverlayOnboardingContext;
-  settings: StudioOverlaySettingsContext;
+  isSettingsModalOpen: boolean;
+  settingsModule: StudioOverlaySettingsContext;
   workspace: StudioOverlayWorkspaceContext;
   workspaceActions: StudioOverlayWorkspaceActions;
   confirmation: StudioConfirmationOverlayProps;
@@ -198,7 +133,8 @@ export interface BuildStudioShellOverlayControllerArgs {
   runtime: StudioShellOverlayRuntimeContext;
   activity: StudioShellOverlayActivityContext;
   vault: StudioOverlayVaultContext;
-  settings: StudioShellOverlaySettingsModuleContext;
+  isSettingsModalOpen: boolean;
+  settingsModule: StudioOverlaySettingsContext;
   workspace: StudioOverlayWorkspaceContext;
   workspaceActions: StudioOverlayWorkspaceActions;
   confirmation: StudioConfirmationOverlayProps;
@@ -217,7 +153,8 @@ export function buildStudioOverlayController({
   activity,
   vault,
   onboarding,
-  settings,
+  isSettingsModalOpen,
+  settingsModule,
   workspace,
   workspaceActions,
   confirmation,
@@ -251,13 +188,13 @@ export function buildStudioOverlayController({
         isOnboardingOpen: onboarding.isOpen,
         isOnboardingReady: onboarding.isReady,
         isStartingAppServer: onboarding.isStartingAppServer,
-        isSettingsModalOpen: settings.isOpen,
-        isLoadingSettings: settings.isLoading,
-        isSavingSettings: settings.isSaving,
-        isLoadingOutputSources: settings.isLoadingOutputSources,
-        isRegisteringOutputSource: settings.isRegisteringOutputSource,
-        isBackgroundEnabled: settings.isBackgroundEnabled,
-        isResettingStudio: settings.isResettingStudio,
+        isSettingsModalOpen,
+        isLoadingSettings: settingsModule.settingsDomain.isLoading,
+        isSavingSettings: settingsModule.settingsDomain.isSaving,
+        isLoadingOutputSources: settingsModule.outputSourcesDomain.isLoadingOutputSources,
+        isRegisteringOutputSource: settingsModule.outputSourcesDomain.isRegisteringOutputSource,
+        isBackgroundEnabled: settingsModule.isBackgroundEnabled,
+        isResettingStudio: settingsModule.isResettingStudio,
       },
       closeDebugPanel: debugPanel.close,
       mergedLogs: activity.mergedLogs,
@@ -285,23 +222,14 @@ export function buildStudioOverlayController({
       ensureAppServer: () => {
         void onboarding.ensureAppServer();
       },
-      closeSettings: settings.close,
-      settings: settings.settings,
-      settingsError: settings.error,
-      providerCapabilities: settings.providerCapabilities,
-      providerRuntimePreflight: settings.providerRuntimePreflight,
-      outputSources: settings.outputSources,
-      outputSourceFiles: settings.outputSourceFiles,
-      loadingOutputSourceFiles: settings.loadingOutputSourceFiles,
-      importingOutputSources: settings.importingOutputSources,
-      settingsLibraryDir: settings.libraryDir,
-      refreshSettings: settings.refresh,
-      updateSettings: settings.update,
-      registerOutputSource: settings.registerOutputSource,
-      loadOutputSourceFiles: settings.loadOutputSourceFiles,
-      importOutputSourceFiles: settings.importOutputSourceFiles,
-      onToggleBackground: settings.onToggleBackground,
-      onResetStudio: settings.onResetStudio,
+      settingsModule: {
+        ...settingsModule,
+        libraryDir:
+          settingsModule.libraryDir ??
+          onboarding.diagnosticsLibraryDir ??
+          onboarding.health?.libraryDir ??
+          null,
+      },
     },
     workspaceOverlays: {
       isTrashModalOpen: workspace.isTrashModalOpen,
@@ -322,7 +250,8 @@ export function buildStudioShellOverlayController({
   runtime,
   activity,
   vault,
-  settings,
+  isSettingsModalOpen,
+  settingsModule,
   workspace,
   workspaceActions,
   confirmation,
@@ -344,33 +273,8 @@ export function buildStudioShellOverlayController({
     },
     vault,
     onboarding: runtime.onboarding,
-    settings: {
-      isOpen: settings.modal.isOpen,
-      close: settings.modal.close,
-      settings: settings.data.settingsDomain.settings,
-      error: settings.data.settingsDomain.error,
-      isLoading: settings.data.settingsDomain.isLoading,
-      isSaving: settings.data.settingsDomain.isSaving,
-      providerCapabilities: settings.data.providerDomain.capabilities,
-      providerRuntimePreflight: settings.data.providerDomain.runtimePreflight,
-      outputSources: settings.data.outputSourcesDomain.outputSources,
-      outputSourceFiles: settings.data.outputSourcesDomain.outputSourceFiles,
-      isLoadingOutputSources: settings.data.outputSourcesDomain.isLoadingOutputSources,
-      loadingOutputSourceFiles: settings.data.outputSourcesDomain.loadingOutputSourceFiles,
-      isRegisteringOutputSource: settings.data.outputSourcesDomain.isRegisteringOutputSource,
-      importingOutputSources: settings.data.outputSourcesDomain.importingOutputSources,
-      libraryDir:
-        runtime.onboarding.diagnosticsLibraryDir ?? runtime.onboarding.health?.libraryDir ?? null,
-      refresh: settings.data.settingsDomain.refresh,
-      update: settings.data.settingsDomain.update,
-      registerOutputSource: settings.data.outputSourcesDomain.registerOutputSource,
-      loadOutputSourceFiles: settings.data.outputSourcesDomain.loadOutputSourceFiles,
-      importOutputSourceFiles: settings.data.outputSourcesDomain.importOutputSourceFiles,
-      isBackgroundEnabled: settings.background.isEnabled,
-      onToggleBackground: () => settings.background.setEnabled(!settings.background.isEnabled),
-      onResetStudio: settings.reset.onResetStudio,
-      isResettingStudio: settings.reset.isResettingStudio,
-    },
+    isSettingsModalOpen,
+    settingsModule,
     workspace,
     workspaceActions,
     confirmation,

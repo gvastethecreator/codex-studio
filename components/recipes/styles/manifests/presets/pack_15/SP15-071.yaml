@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Viewport-driven depth into star battle.
   atmosphere: Tactical urgency and heroic pressure.
   key_features: Ray cannons, command dais, and alert pylons.
-  creative_brief: A raypunk flagship deck where split-second choices decide constellations.
+  creative_brief: >-
+    Preserve aurora battle-deck grammar as a reusable style system:
+    heroic command-tier staging, alert-spectrum instrumentation, and
+    viewport-driven tactical urgency should remain coherent across subjects.
 avoidRules: [photoreal, medieval, cyberpunk-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-071.webp }
 attributes:

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Acoustic cavern where sound opens pathways.
-  subject_treatment: Explorer with resonant instrument-technology.
-  color_and_tone: Dark blue, mineral green, and amber light.
-  lighting_and_shadow: Luminous echoes based on activated frequency.
-  texture_and_material: Resonant crystal, wet rock, and fine metal.
-  camera_and_composition: Chambers connected by curved tunnels.
-  atmosphere_and_mood: Musical mystery and discovery.
-  rendering_and_quality: Puzzle design with clear visual clues.
+  aesthetic: Sound-puzzle cavern con progresión por frecuencia, resonancia y desbloqueo acústico de rutas.
+  subject_treatment: Explorador con instrumento-tecnología resonante y feedback visual de tono/armonía.
+  color_and_tone: Azul oscuro, verde mineral y ámbar para mapear estados acústicos activos.
+  lighting_and_shadow: Ecos luminosos dependientes de frecuencia que revelan caminos y mecanismos.
+  texture_and_material: Cristal resonante, roca húmeda, metal fino y membranas vibrantes.
+  camera_and_composition: Cámaras conectadas por túneles curvos con nodos de prueba sonoro claramente marcados.
+  atmosphere_and_mood: Musical, misteriosa y de descubrimiento progresivo.
+  rendering_and_quality: Puzzle design clarity-first con pistas visuales robustas y ritmo de resolución.
 avoidRules:
   - watermark
   - text

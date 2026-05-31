@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Downward peek under the pier into layered drift gardens.
   atmosphere: Slow growth, tide patience, and luminous ecology.
   key_features: Drift roots, subpier planters, and tide-fed blooms.
-  creative_brief: A seapunk underpier garden where the sea cultivates its own hanging ecosystem.
+  creative_brief: >-
+    Preserve drift garden-subpier grammar as a reusable style system:
+    substructure hanging ecologies, tide-fed luminous root layering, and
+    patient submerged growth should remain coherent across subjects.
 avoidRules: [photoreal, oil-slick, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-120.webp }
 attributes:

@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Nested lab rings converging on a central test core.
   atmosphere: Precision, care, and optimistic experimentation.
   key_features: Quiet engine pods, calibration decks, and communal design bays.
-  creative_brief: A lunarpunk lab where propulsion progress is measured by harmony, not noise.
+  creative_brief: >-
+    Preserve cradle of quiet-engines grammar as a reusable style system:
+    low-noise propulsion experimentation, nested acoustic lab geometry, and
+    care-centered technical optimism should remain coherent across subjects.
 avoidRules: [photoreal, militarized-weapons, cyber-grunge, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-084.webp }
 attributes:

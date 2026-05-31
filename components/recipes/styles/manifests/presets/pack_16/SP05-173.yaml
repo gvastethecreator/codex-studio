@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Sun-bleached desert towns, ridiculous outlaw silhouette, hidden grief behind slapstick, revolver iconography, church-and-saloon westward sci-fi sorrow
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Goofy, lonely, dusty, compassionate
-  key_features: Desert-town staging, revolver poses, red-coat silhouette, comic-to-serious tonal contrast, giant sky backdrops
-  creative_brief: A walking contradiction in a red coat, the deadliest gun in the wasteland terrified of killing, laughter deployed as shield against a grief so vast it could swallow the desert whole. Sun-bleached towns where his silhouette is legend and his clumsiness is performance, a gun-saint who carries every life he ever took like a stone in his heart. Comedy and tragedy share the same trigger here, and neither one gets the last word.
+  aesthetic: Space-western desértico con héroe bufón trágico, iconografía de revólver y compasión en paisaje abrasado.
+  form_and_line: Línea 90s energética, acting de comedia defensiva y quiebres dramáticos de gran densidad emocional.
+  color_palette: Arenas doradas, cielos azul seco, rojo icónico dominante y marrones de pueblo frontera.
+  lighting_setup: Sol duro de desierto con sombras amplias, rim cálido y dramatismo crepuscular en duelo.
+  material_texture: Madera gastada de saloon, polvo suspendido, cuero de viaje y grano cinematográfico seco.
+  render_quality: Acabado premium noventero con transición fluida entre slapstick, balística y duelo moral.
+  spatial_distortion: Horizontes enormes, pueblo comprimido y encuadre de pistolero para soledad épica.
+  atmosphere: Bufonesca, solitaria, polvorienta, compasiva.
+  key_features: Silueta de abrigo rojo, staging de western sci-fi, contraste tono cómico-serio y cielo monumental.
+  creative_brief: Construye una gramática reusable de forajido humanista en frontera árida para cualquier sujeto, mezclando humor, duelo ético y melancolía de largo alcance.
 avoidRules:
   - realistic
   - 3d render

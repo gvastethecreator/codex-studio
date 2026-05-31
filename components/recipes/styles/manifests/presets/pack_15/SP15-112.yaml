@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Vertical terraced stack rising like a living garden tower.
   atmosphere: Domestic comfort, ecological intelligence, and bright stability.
   key_features: Chloroplast panels, air gardens, and terrace nurseries.
-  creative_brief: A biopunk home stack where the building behaves like a giant productive leaf.
+  creative_brief: >-
+    Preserve chloroplast housing-stack grammar as a reusable style system:
+    photosynthetic domestic envelopes, terraced air-garden comfort, and
+    bright ecological stability should remain coherent across subjects.
 avoidRules: [photoreal, dystopian, dystopic, watermark, text, logo, cold-grit]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-112.webp }
 attributes:

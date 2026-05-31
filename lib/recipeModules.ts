@@ -1,5 +1,6 @@
 import {
   createGenerationTaskSpec,
+  type GenerationQualityPresetId,
   type GenerationProviderId,
   type GenerationTaskKind,
 } from '../packages/shared/src/generationContracts';
@@ -968,6 +969,12 @@ export function buildGenerationTaskSpecFromRecipe({
     }
   }
 
+  const qualityPresetId = resolveRecipeQualityPresetId({
+    task: taskKind,
+    recipeId: config.recipeId ?? null,
+    hasAttachments: config.attachments.length > 0,
+  });
+
   return createGenerationTaskSpec({
     id,
     task: taskKind,
@@ -986,6 +993,29 @@ export function buildGenerationTaskSpecFromRecipe({
       dataUrl: attachment.dataUrl,
       strength: attachment.strength,
     })),
+    quality: {
+      qualityPresetId,
+      subject: null,
+      composition: null,
+      style:
+        config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
+          ? config.recipeParams.presetName
+          : null,
+      lighting: null,
+      color:
+        typeof config.recipeParams?.colorTone === 'string' ? config.recipeParams.colorTone : null,
+      materials: null,
+      constraints: [],
+      negative: [],
+      referenceRoles: config.attachments.map((attachment) => ({
+        role: 'reference' as const,
+        assetName: attachment.name,
+        instruction:
+          config.recipeId === 'styles'
+            ? 'Use as style and mood reference while preserving the requested subject.'
+            : 'Use as visual reference according to the requested generation task.',
+      })),
+    },
     output: {
       count: config.batchCount,
       aspectRatio: config.aspectRatio,
@@ -1014,4 +1044,21 @@ export function buildGenerationTaskSpecFromRecipe({
       },
     },
   });
+}
+
+function resolveRecipeQualityPresetId({
+  task,
+  recipeId,
+  hasAttachments,
+}: {
+  task: GenerationTaskKind;
+  recipeId: RecipeId;
+  hasAttachments: boolean;
+}): GenerationQualityPresetId {
+  if (task === 'image_edit') return 'image_edit';
+  if (task === 'sprite_sheet') return 'sprite_sheet';
+  if (task === 'texture_generate') return 'texture';
+  if (recipeId === 'styles' && hasAttachments) return 'style_reference';
+  if (task === 'style_preset_card') return 'product_or_ui_asset';
+  return 'image_general';
 }

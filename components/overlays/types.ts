@@ -86,27 +86,41 @@ export interface StudioSystemOverlaysProps {
   completeOnboarding: () => void;
   refreshOnboardingHealth: () => void;
   ensureAppServer: () => void;
-  closeSettings: () => void;
-  settings: EditableStudioSettings | null;
-  settingsError: string | null;
-  providerCapabilities: GenerationProviderCapabilitiesResponse | null;
-  providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
-  outputSources: ExternalOutputSourcesResponse | null;
-  outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
-  loadingOutputSourceFiles: Record<string, boolean>;
-  importingOutputSources: Record<string, boolean>;
-  settingsLibraryDir: string | null;
-  refreshSettings: () => void | Promise<void>;
-  updateSettings: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
-  registerOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
-  loadOutputSourceFiles: (sourceId: string) => void | Promise<void>;
-  importOutputSourceFiles: (
-    sourceId: string,
-    files: string[],
-    workspaceId?: string | null,
-  ) => void | Promise<void>;
-  onToggleBackground: () => void;
-  onResetStudio: () => void | Promise<void>;
+  settingsModule: {
+    close: () => void;
+    settingsDomain: {
+      settings: EditableStudioSettings | null;
+      error: string | null;
+      isLoading: boolean;
+      isSaving: boolean;
+      refresh: () => void | Promise<void>;
+      update: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
+    };
+    providerDomain: {
+      capabilities: GenerationProviderCapabilitiesResponse | null;
+      runtimePreflight: GenerationProviderRuntimePreflightResponse | null;
+    };
+    outputSourcesDomain: {
+      outputSources: ExternalOutputSourcesResponse | null;
+      outputSourceFiles: Record<string, ExternalOutputSourceFile[]>;
+      isLoadingOutputSources: boolean;
+      loadingOutputSourceFiles: Record<string, boolean>;
+      isRegisteringOutputSource: boolean;
+      importingOutputSources: Record<string, boolean>;
+      registerOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
+      loadOutputSourceFiles: (sourceId: string) => void | Promise<void>;
+      importOutputSourceFiles: (
+        sourceId: string,
+        files: string[],
+        workspaceId?: string | null,
+      ) => void | Promise<void>;
+    };
+    libraryDir: string | null;
+    isBackgroundEnabled: boolean;
+    onToggleBackground: () => void;
+    onResetStudio: () => void | Promise<void>;
+    isResettingStudio: boolean;
+  };
 }
 
 export interface StudioWorkspaceOverlaysProps {

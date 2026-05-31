@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Extreme arcade sport on mobile volcanic platforms.
-  subject_treatment: Futuristic riders with thermal reactive equipment.
-  color_and_tone: Magma red, basalt black, and cyan from diegetic UI elements.
-  lighting_and_shadow: Nether lava glow and stadium spotlights.
-  texture_and_material: Vitrified rock, anodized metal, and dense smoke.
-  camera_and_composition: Wide plane with route lines.
-  atmosphere_and_mood: Vertigo, spectacle, and high rhythm.
-  rendering_and_quality: Promotional art for competitive mode.
+  aesthetic: Arcade sport extremo de alta velocidad sobre plataformas dinámicas con hazards térmicos reactivos.
+  subject_treatment: Riders por arquetipo (speed/control/trick) con equipamiento termo-reactivo visible.
+  color_and_tone: Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.
+  lighting_and_shadow: Glow de lava + focos arena para alternar visibilidad de ruta y zonas de castigo.
+  texture_and_material: Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.
+  camera_and_composition: Plano amplio con líneas de circuito, jumps y bifurcaciones competitivas legibles.
+  atmosphere_and_mood: Vertiginosa, espectacular y frenética.
+  rendering_and_quality: Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.
 avoidRules:
   - watermark
   - text

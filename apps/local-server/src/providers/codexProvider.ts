@@ -1,6 +1,7 @@
 import {
   createCompiledProviderInput,
   createGenerationTaskSpec,
+  composeGenerationQualityPromptSections,
   type CompiledProviderInput,
   type GenerationTaskSpec,
 } from '../../../../packages/shared/src/generationContracts';
@@ -111,11 +112,16 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
+  const qualitySections = composeGenerationQualityPromptSections(sourceSpec);
   const variationBrief =
     typeof sourceSpec.metadata.variationBrief === 'string'
       ? sourceSpec.metadata.variationBrief.trim()
       : '';
   const assetLines = buildCodexAssetLines(sourceSpec);
+
+  if (qualitySections.length > 0) {
+    parts.push('', ...qualitySections);
+  }
 
   if (isRecipeProviderDirectives(recipeProviderDirectives)) {
     parts.push(

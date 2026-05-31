@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
 visualDna:
-  aesthetic: Bustling workshop bazaar where friction engines and artisan mechanics dominate daily life.
-  form_and_line: Dense market alleys, pulley canopies, and stepped workshop fronts.
-  color_palette: Clay red, smoke gray, and amber firelight.
-  lighting_setup: Torch strings and forge sparks under shaded textile awnings.
-  material_texture: Flint components, braided hemp, raw timber stalls, and blackened bronze.
-  render_quality: Character-rich environment concept with strong material readability.
-  spatial_distortion: Compressed street perspective emphasizing crowded machine commerce.
-  atmosphere: Noisy invention, communal trade, and practical improvisation.
-  key_features: Spark-wheel stalls, mobile anvils, barter counters, and pit-forge kiosks.
-  creative_brief: A stonepunk market where every invention is assembled in public and tested immediately.
+  aesthetic: Friction-age maker style where invention happens in public, loud, dangerous, and half-bartered before sparks cool.
+  form_and_line: Sawtooth stall fronts, pulley-canopy slashes, stepped trade shelves, spark-wheel circles, and squat workbench blocks.
+  color_palette: Clay red, smoke gray, amber firelight, hemp tan, and blackened bronze green.
+  lighting_setup: Torch strings under sagging awnings, forge sparks on faces, and hot rimlight from open friction wheels.
+  material_texture: Flint teeth, braided hemp, raw timber, blackened bronze, cracked clay counters, and powdery stone dust.
+  render_quality: Character-rich concept art with tactile tools, readable commerce, and controlled clutter.
+  spatial_distortion: Compressed bazaar depth turns repair benches, barter trays, and test rigs into a single noisy machine.
+  atmosphere: Immediate invention, public risk, communal trade, and practical improvisation.
+  key_features: Spark-wheel modules, portable anvils, pit-forge mouths, barter tokens, hemp pulley loops, and half-tested mechanisms.
+  creative_brief: >-
+    Preserve flint engine-market grammar as a reusable style system:
+    public improvisational fabrication, flint-and-hemp tool tactility, and
+    visible test-repair marks should remain coherent across subjects.
 avoidRules: [photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-033.webp }
 attributes:
   negativePrompt: photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-stonepunk, categoryName: 12. Corepunk — Stonepunk, tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-stonepunk,
+    categoryName: 12. Corepunk — Stonepunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Deconstructivist architectural style focused on controlled instability, anti-orthogonal form language, and sculptural kinetic tension
-  form_and_line: Folded planes, fractured mass intersections, torsion-like profiles, displaced axes, and non-linear envelope continuity
-  color_palette: Brushed titanium and steel neutrals with warm mineral countertones, mirrored sky reflections, and restrained metallic highlights
-  lighting_setup: Sharp angular shadow cuts, reflective glint choreography, and dynamic sun-tracking contrast across faceted surfaces
-  material_texture: Metal cladding seams, zinc-titanium panel grain, glass specular fracture, and high-precision structural skin detailing
-  render_quality: High-end sculptural architecture visualization with fluid mass readability and disciplined anti-symmetry coherence
-  spatial_distortion: Intentional geometric dislocation with twisting volumetric vectors and collapsing-perspective cues
-  atmosphere: Disorienting, cerebral, energetic, provocative, audacious
-  key_features: Anti-right-angle composition, folded metallic envelope, displaced volume grammar, kinetic mass choreography
+  aesthetic: Deconstructivismo de inestabilidad controlada, tensión escultórica y rechazo deliberado de la ortogonalidad.
+  form_and_line: Planos plegados, intersecciones fracturadas, ejes desplazados y envolvente no lineal en conflicto ordenado.
+  color_palette: Titanio/ acero cepillado, minerales cálidos secundarios y reflejos especulares contenidos.
+  lighting_setup: Cortes de sombra angulares, destellos especulares y contraste dinámico sobre facetas múltiples.
+  material_texture: Piel metálica segmentada, panelería zinc-titanio, vidrio de alto brillo y detalle de junta de precisión.
+  render_quality: Visualización escultórica de alta gama con anti-simetría legible y coherencia tectónica.
+  spatial_distortion: Dislocación geométrica intencional con vectores de torsión y perspectiva en tensión.
+  atmosphere: Cerebral, provocadora, energética y desestabilizante.
+  key_features: Composición anti-ángulo recto, pliegues dominantes, volúmenes desplazados y coreografía de masa cinética.
   creative_brief: >-
-    Keep this preset anchored in deconstructive geometry logic: fractured axes,
-    folded metallic skins, and controlled spatial disorientation should define
-    the style independent of any specific landmark reference.
+    Establece una gramática deconstructiva transferible: conflicto geométrico
+    controlado, piel metálica plegada y desorientación espacial calculada.
+    Debe sostener identidad formal sin depender de arquitectos o hitos concretos.
 avoidRules:
   - box
   - symmetrical

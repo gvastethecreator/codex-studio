@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Dungeon delving as culinary craft, cast-iron pans over campfire, monster ingredients, practical fantasy ecology, hungry camaraderie and dangerous kitchens in stone ruins
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Hearty, curious, practical, fun
-  key_features: Cooking tools, dungeon stones, monster-ingredient motifs, hungry party expressions, practical ecology detail
-  creative_brief: Cast-iron pans hiss over dungeon campfires while monster anatomy becomes recipe notation and survival becomes cuisine. A party eats their way through ecology, curiosity seasoning every bite. The dungeon is not just threat but pantry, laboratory, communal table.
+  aesthetic: Cocina de supervivencia fantástica, donde la exploración de dungeon se transforma en gastronomía ecológica aplicada.
+  form_and_line: Gestualidad culinaria en combate, utensilios protagonistas y composición de mesa improvisada sobre ruina pétrea.
+  color_palette: Dorado de caldo, rojo especia, verde hierba de caverna, gris piedra y azul tenue de fuego mágico.
+  lighting_setup: Fuego de cocina en cueva, luz cálida de hornilla portátil y rebote tenue en paredes húmedas.
+  material_texture: Hierro fundido, superficies de corte, piedra rugosa, tejido aventurero manchado y brillo de grasa.
+  render_quality: Fantasía culinaria de alto detalle funcional con equilibrio entre humor, peligro y apetito.
+  spatial_distortion: Espacio de cocina-campamento comprimido dentro de sala de dungeon de gran escala.
+  atmosphere: Curiosa, nutritiva y aventurera, con alegría práctica.
+  key_features: Ollas y cuchillos, ingredientes monstruo, estación de cocción de campaña y party hambrienta colaborativa.
+  creative_brief: >-
+    Construye una gramática stove-top-dungeon reusable donde lógica culinaria,
+    ecología de monstruos y camaradería de campo conviertan la exploración en
+    acto técnico y comunitario.
 avoidRules:
   - realistic
   - 3d render

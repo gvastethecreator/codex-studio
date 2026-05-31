@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: PvP control point on an interdimensional bridge.
-  subject_treatment: Opposing squads with mobility gadgets.
-  color_and_tone: Plasma blue, rival orange, and titanium gray.
-  lighting_and_shadow: Rift energy as the dominant light source.
-  texture_and_material: Metallic surfaces, shields, and sparks.
-  camera_and_composition: Central axis with playable flanks.
-  atmosphere_and_mood: Frenetic competition and map control.
-  rendering_and_quality: Clear layout for objective mode.
+  aesthetic: Objective-PvP de captura en puente interdimensional, centrado en control de punto y rotación de escuadras.
+  subject_treatment: Escuadras rivales con gadgets de movilidad y roles de entrada/sostén/limpieza.
+  color_and_tone: Azul plasma, naranja rival y gris titanio para friend-foe clarity.
+  lighting_and_shadow: Energía de grieta como key light para telegraph de eventos y overtime.
+  texture_and_material: Superficies metálicas, escudos de campo y chispas de impacto sostenido.
+  camera_and_composition: Eje central contestado con flancos jugables y rutas de reconquista.
+  atmosphere_and_mood: Frenética, competitiva y de control territorial.
+  rendering_and_quality: Objective-mode map con layout nítido de punto, cobertura y líneas de empuje.
 avoidRules:
   - watermark
   - text

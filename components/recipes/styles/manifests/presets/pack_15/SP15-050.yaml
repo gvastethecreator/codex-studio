@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Grand entertainment boulevard blending film culture and power aesthetics.
-  form_and_line: Marquee facades, fan motifs, and layered promenades.
-  color_palette: Midnight blue, amber gold, and ruby accents.
-  lighting_setup: Theater marquees and reflective wet pavement glow.
-  material_texture: Brass rails, velvet banners, and enamel signage.
-  render_quality: Cinematic city concept with strong nighttime mood.
-  spatial_distortion: Long boulevard axis with repeating façades.
-  atmosphere: Stylish spectacle and social ritual.
-  key_features: Cinema palaces, radio kiosks, and lit deco towers.
-  creative_brief: A decopunk avenue where culture industries project civic identity.
+  aesthetic: Decopunk cinema ritual where nightlife, brass, velvet, and mass attention turn the street into a projection machine.
+  form_and_line: Marquee facade stacks, fan-ray canopies, layered promenade bands, vertical tower reveals, and poster-window grids.
+  color_palette: Midnight blue, amber gold, ruby accents, black stone, and soft champagne bulb halos.
+  lighting_setup: Theater marquee glow, wet-ground reflections, amber rim lights, ruby sign pulses, and poster vitrine highlights.
+  material_texture: Brass rails, velvet banners, enamel signage, black stone, polished poster glass, and rain-slick curb edges.
+  render_quality: Cinematic city concept with strong night mood, readable spectacle hierarchy, and tactile entertainment surfaces.
+  spatial_distortion: Long axis perspective repeats facades, promenade tiers, bulbs, and tower beats like frames in a film strip.
+  atmosphere: Stylish spectacle, civic glamour, social ritual, and the machinery of attention.
+  key_features: Cinema palace silhouettes, radio kiosk forms, lit deco towers, fan-shaped canopies, and glowing poster vitrines.
+  creative_brief: >-
+    Preserve brass cinema-esplanade grammar as a reusable style system:
+    marquee-ritual nightlife choreography, brass-and-velvet spectacle, and
+    wet nocturnal projection culture should remain coherent across subjects.
 avoidRules: [photoreal, medieval, cyberpunk-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-050.webp }
 attributes:
   negativePrompt: photoreal, medieval, cyberpunk-grit, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

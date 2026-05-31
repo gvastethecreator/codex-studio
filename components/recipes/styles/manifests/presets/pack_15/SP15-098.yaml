@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Nave depth toward central gear altar.
   atmosphere: Reverence, precision, and ceremonial awe.
   key_features: Gear altar, time reliquaries, and clock choir stalls.
-  creative_brief: A clockpunk cathedral where faith and engineering are the same liturgy.
+  creative_brief: >-
+    Preserve cog cathedral-annex grammar as a reusable style system:
+    sacred-mechanical monumentality, gear-liturgical symbolism, and
+    ceremonial engineering reverence should remain coherent across subjects.
 avoidRules: [photoreal, whimsical, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-098.webp }
 attributes:

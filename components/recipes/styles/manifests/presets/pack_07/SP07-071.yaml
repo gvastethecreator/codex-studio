@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Fungal vernacular architecture language with whimsical woodland domesticity, bulbous toadstool massing, and miniature fairy-settlement logic
-  form_and_line: Rounded stem columns, dome-cap roof volumes, gill-like undersides, soft swelling transitions, clustered ring settlement layouts, and circular aperture motifs
+  aesthetic: Vernáculo fúngico doméstico de bosque encantado con masa bulbosa y lógica de microasentamiento feérico.
+  form_and_line: Columnas tipo tallo, cubiertas domo-cap, intradós acanalado de láminas y transiciones orgánicas de volumen hinchado.
   color_palette: Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm forest-amber undertones
-  lighting_setup: Canopy-filtered dapple light, cool shade fill, subtle bioluminescent edge accents, low-height rim glow, and gentle under-cap shadow pockets
-  material_texture: Matte fungal skin, cap speckle patterning, ribbed gill surfaces, moist moss mats, fine spore dust, loam substrate, and dew micro-highlights
-  render_quality: Storybook-fantasy rendering with organic curvature fidelity, tactile fungal detail, and controlled whimsy without scene-locking
+  lighting_setup: Luz moteada filtrada por dosel, relleno frío de sombra y acentos bioluminiscentes sutiles en bordes bajos.
+  material_texture: Piel fúngica mate, moteado de sombrero, costillas de lámina, manto musgoso húmedo y polvo fino de esporas.
+  render_quality: Fantasía storybook con curvatura orgánica fiel y detalle táctil de micromaterial biológico.
   spatial_distortion: Cap-and-stem volumetric swelling and softened miniature-scale proportion stretching
-  atmosphere: Enchanted, sheltered, tiny-scale, gentle, and ecologically integrated
-  key_features: Dome-cap roof silhouettes, speckled fungal patterning, stem-based wall bodies, circular doors and windows, moss-integrated foundations, and clustered micro-settlement composition
+  atmosphere: Encantada, protegida y de escala diminuta con integración ecológica total.
+  key_features: Siluetas cap-dome, muros de tallo, puertas y ventanas circulares, base de musgo y composición en clúster.
   creative_brief: >-
-    Preserve mushroom-house grammar as a reusable style system: bulbous fungal
-    forms, cap-and-stem architectural hierarchy, and miniature ecological scale
-    cues should remain stable across subject changes.
+    Define una gramática reusable de mushroom-house donde jerarquía cap-stem,
+    volumen fúngico bulboso y escala ecológica miniatura sostengan identidad
+    estable entre sujetos.
 avoidRules:
   - square
 assets:

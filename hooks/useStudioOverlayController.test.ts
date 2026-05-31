@@ -127,38 +127,45 @@ describe('buildStudioOverlayController', () => {
         ensureAppServer: () => {
           calls.push('ensureAppServer');
         },
+        diagnosticsLibraryDir: null,
       },
-      settings: {
-        isOpen: false,
+      isSettingsModalOpen: false,
+      settingsModule: {
         close: () => calls.push('closeSettings'),
-        settings: null,
-        error: null,
-        isLoading: false,
-        isSaving: false,
-        providerCapabilities: null,
-        providerRuntimePreflight: null,
-        outputSources: null,
-        outputSourceFiles: {},
-        isLoadingOutputSources: false,
-        loadingOutputSourceFiles: {},
-        isRegisteringOutputSource: false,
-        importingOutputSources: {},
+        settingsDomain: {
+          settings: null,
+          error: null,
+          isLoading: false,
+          isSaving: false,
+          refresh: () => {
+            calls.push('refreshSettings');
+          },
+          update: () => {
+            calls.push('updateSettings');
+          },
+        },
+        providerDomain: {
+          capabilities: null,
+          runtimePreflight: null,
+        },
+        outputSourcesDomain: {
+          outputSources: null,
+          outputSourceFiles: {},
+          isLoadingOutputSources: false,
+          loadingOutputSourceFiles: {},
+          isRegisteringOutputSource: false,
+          importingOutputSources: {},
+          registerOutputSource: () => {
+            calls.push('registerOutputSource');
+          },
+          loadOutputSourceFiles: () => {
+            calls.push('loadOutputSourceFiles');
+          },
+          importOutputSourceFiles: () => {
+            calls.push('importOutputSourceFiles');
+          },
+        },
         libraryDir: 'D:/AI-Studio-Library',
-        refresh: () => {
-          calls.push('refreshSettings');
-        },
-        update: () => {
-          calls.push('updateSettings');
-        },
-        registerOutputSource: () => {
-          calls.push('registerOutputSource');
-        },
-        loadOutputSourceFiles: () => {
-          calls.push('loadOutputSourceFiles');
-        },
-        importOutputSourceFiles: () => {
-          calls.push('importOutputSourceFiles');
-        },
         isBackgroundEnabled: true,
         onToggleBackground: () => calls.push('toggleBackground'),
         onResetStudio: () => {
@@ -219,9 +226,9 @@ describe('buildStudioOverlayController', () => {
     controller.systemOverlays.completeOnboarding();
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
-    controller.systemOverlays.closeSettings();
+    controller.systemOverlays.settingsModule.close();
     controller.systemOverlays.handleExportLegacyVisualBatchSnapshot();
-    void controller.systemOverlays.refreshSettings();
+    void controller.systemOverlays.settingsModule.settingsDomain.refresh();
     controller.workspaceOverlays.restoreAllFromTrash();
     controller.workspaceOverlays.emptyTrash();
 
@@ -394,60 +401,53 @@ describe('buildStudioOverlayController', () => {
           calls.push('deepScan');
         },
       },
-      settings: {
-        modal: {
-          isOpen: true,
-          close: () => {
-            calls.push('closeSettings');
+      isSettingsModalOpen: true,
+      settingsModule: {
+        close: () => {
+          calls.push('closeSettings');
+        },
+        settingsDomain: {
+          settings: null,
+          error: null,
+          isLoading: false,
+          isSaving: false,
+          refresh: () => {
+            calls.push('refreshSettings');
+          },
+          update: () => {
+            calls.push('updateSettings');
           },
         },
-        data: {
-          settingsDomain: {
-            settings: null,
-            error: null,
-            isLoading: false,
-            isSaving: false,
-            refresh: () => {
-              calls.push('refreshSettings');
-            },
-            update: () => {
-              calls.push('updateSettings');
-            },
+        providerDomain: {
+          capabilities: null,
+          runtimePreflight: null,
+        },
+        outputSourcesDomain: {
+          outputSources: null,
+          outputSourceFiles: {},
+          isLoadingOutputSources: false,
+          loadingOutputSourceFiles: {},
+          isRegisteringOutputSource: false,
+          importingOutputSources: {},
+          registerOutputSource: () => {
+            calls.push('registerOutputSource');
           },
-          providerDomain: {
-            capabilities: null,
-            runtimePreflight: null,
+          loadOutputSourceFiles: () => {
+            calls.push('loadOutputSourceFiles');
           },
-          outputSourcesDomain: {
-            outputSources: null,
-            outputSourceFiles: {},
-            isLoadingOutputSources: false,
-            loadingOutputSourceFiles: {},
-            isRegisteringOutputSource: false,
-            importingOutputSources: {},
-            registerOutputSource: () => {
-              calls.push('registerOutputSource');
-            },
-            loadOutputSourceFiles: () => {
-              calls.push('loadOutputSourceFiles');
-            },
-            importOutputSourceFiles: () => {
-              calls.push('importOutputSourceFiles');
-            },
+          importOutputSourceFiles: () => {
+            calls.push('importOutputSourceFiles');
           },
         },
-        background: {
-          isEnabled: true,
-          setEnabled: (isEnabled) => {
-            calls.push(`setBackground:${String(isEnabled)}`);
-          },
+        libraryDir: null,
+        isBackgroundEnabled: true,
+        onToggleBackground: () => {
+          calls.push('toggleBackground');
         },
-        reset: {
-          onResetStudio: () => {
-            calls.push('resetStudio');
-          },
-          isResettingStudio: false,
+        onResetStudio: () => {
+          calls.push('resetStudio');
         },
+        isResettingStudio: false,
       },
       workspace: {
         catalogVisualGroupCount: 0,
@@ -480,10 +480,10 @@ describe('buildStudioOverlayController', () => {
       },
     });
 
-    expect(controller.systemOverlays.settingsLibraryDir).toBe('D:/from-diagnostics');
+    expect(controller.systemOverlays.settingsModule.libraryDir).toBe('D:/from-diagnostics');
 
-    controller.systemOverlays.onToggleBackground();
+    controller.systemOverlays.settingsModule.onToggleBackground();
 
-    expect(calls).toContain('setBackground:false');
+    expect(calls).toContain('toggleBackground');
   });
 });

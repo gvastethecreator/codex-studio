@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Long-arc baseball life story, little-league dreams scaling to pro pressure, family legacy and mound determination, stadium lights and dirt rendered with emotional athletic realism
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Resolute, nostalgic, driven, heartfelt
-  key_features: Glove-and-ball iconography, mound posture, stadium-light depth, childhood-to-pro echoes, family-sport emotional cues
-  creative_brief: A glove passed between generations carries decades of unspoken love. Stadium lights illuminate not just the diamond but the lineage of dreams that cross home plate. Legacy is a grip you inherit before you understand it.
+  aesthetic: Baseball generacional de largo arco, orientado a legado deportivo y maduración competitiva entre etapas.
+  form_and_line: Acting deportivo emocional, mecánica de lanzamiento sólida y postura de montículo de determinación.
+  color_palette: Paleta de estadio clásica con azules profundos, blancos cálidos y acentos rojos de herencia competitiva.
+  lighting_setup: Iluminación de estadio nocturno con foco sentimental en guante, pelota y rostro del lanzador.
+  material_texture: Cuero envejecido de guante, polvo de diamante, tela uniforme en desgaste progresivo y metal de graderío.
+  render_quality: Frame deportivo emotivo con lectura clara de trayectoria vital y tensión de juego.
+  spatial_distortion: Perspectiva progresiva de diamante que conserva eje pitcher-home como núcleo simbólico.
+  atmosphere: Resuelta, nostálgica y profundamente motivada.
+  key_features: Iconografía guante-pelota, profundidad de estadio, ecos de crecimiento y herencia deportiva intergeneracional.
+  creative_brief: >-
+    Define una gramática reusable de generational-baseball donde legado,
+    crecimiento competitivo y simbolismo de batería deportiva funcionen como
+    sistema visual transferible.
 avoidRules:
   - realistic
   - 3d render

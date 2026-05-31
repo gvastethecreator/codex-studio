@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Panoramic arc framing cosmic horizon.
   atmosphere: Reverence, community, and perspective.
   key_features: Earthrise seats, story circles, and phase lanterns.
-  creative_brief: A lunarpunk plaza where cosmology is a daily social practice.
+  creative_brief: >-
+    Preserve earthrise commons-balcony grammar as a reusable style system:
+    panoramic communal rituals, amphitheater civic intimacy, and
+    cosmological perspective practice should remain coherent across subjects.
 avoidRules: [photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-077.webp }
 attributes:

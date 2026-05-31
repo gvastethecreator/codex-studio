@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Volleyball momentum, spring-loaded jumps, gymnasium light, underdog team chemistry, orange court heat, libero dives and setter precision rendered with ecstatic motion clarity
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Electric, uplifting, kinetic, team-driven
-  key_features: Jump-serve silhouettes, net-line depth, team-call gestures, sneaker-squeak court energy, airborne spike framing
-  creative_brief: Gravity is a suggestion the body refuses. The court becomes a launchpad, orange light baptizes underdogs, and every jump carries the team on its back. Momentum is shared before it is earned.
+  aesthetic: Vóley shonen de impulso vertical y cooperación táctica, con énfasis en sincronía de equipo y lectura de rotación.
+  form_and_line: Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre setter, spiker y libero.
+  color_palette: Naranjas de parquet cálido, cian de acento competitivo, blancos energéticos y contraste uniforme por escuadra.
+  lighting_setup: Luz de gimnasio de alto rebote con backlight de remate para siluetas aéreas legibles.
+  material_texture: Barniz brillante de cancha, malla de red nítida, tela deportiva transpirable y marcas de fricción en suela.
+  render_quality: Frame deportivo premium con jerarquía clara de balón, rematador y eje de bloqueo.
+  spatial_distortion: Foreshortening de salto y perspectiva de red que prioriza timing de recepción, colocación y spike.
+  atmosphere: Eléctrica, optimista y cohesionada por esfuerzo colectivo.
+  key_features: Silueta de saque en suspensión, geometría de red dominante, llamadas de equipo y energía de rally prolongado.
+  creative_brief: >-
+    Formula una gramática reusable de volleyball-momentum donde salto,
+    sincronía de rotación y lectura de red definan identidad visual sostenida
+    sin depender de una jugada puntual.
 avoidRules:
   - realistic
   - 3d render

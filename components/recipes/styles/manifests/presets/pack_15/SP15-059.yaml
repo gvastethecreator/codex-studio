@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Judicial plaza where formal power is mirrored in rigid geometry.
-  form_and_line: Symmetric courts, reflective walls, and stepped forecourts.
-  color_palette: Stone white, brass, and deep teal.
-  lighting_setup: Midday glare with shadow grids from colonnades.
-  material_texture: Polished stone, mirrored steel, and engraved brass plates.
-  render_quality: High-clarity urban concept with strong focal order.
-  spatial_distortion: Axis-based perspective terminating at tribunal doors.
-  atmosphere: Authority, scrutiny, and polished intimidation.
-  key_features: Mirror colonnades, legal obelisks, and ceremonial stairs.
-  creative_brief: A decopunk legal square designed to make power feel inevitable.
+  aesthetic: Judicial decopunk where symmetry acts like surveillance and polished reflection makes judgment feel already decided.
+  form_and_line: Symmetric court axes, mirror-wall planes, stepped forecourts, legal obelisk alignments, and tribunal chevrons.
+  color_palette: Stone white, brass, deep teal, mirror silver, and black shadow lines.
+  lighting_setup: Midday glare, colonnade shadow grids, hard mirror reflections, and brass plate highlights at eye level.
+  material_texture: Polished stone, mirrored steel, engraved brass, teal enamel seals, crisp stair edges, and cold door glass.
+  render_quality: High-clarity urban concept with severe focal order and institutional sharpness.
+  spatial_distortion: Axis perspective terminates at formal thresholds while mirror planes duplicate scrutiny on both sides.
+  atmosphere: Authority, scrutiny, polished intimidation, and ceremonial inevitability.
+  key_features: Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stairs, and engraved verdict plates.
+  creative_brief: >-
+    Preserve mirrorline court-plaza grammar as a reusable style system:
+    severe judicial symmetry, reflective scrutiny pressure, and polished civic
+    intimidation should remain coherent across subjects.
 avoidRules: [photoreal, comedic, cyberpunk-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-059.webp }
 attributes:
   negativePrompt: photoreal, comedic, cyberpunk-slum, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

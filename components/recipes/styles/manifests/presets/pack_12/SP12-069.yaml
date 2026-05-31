@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Conflict over radio towers in electric dunes.
-  subject_treatment: Mobile squads and signal operators.
-  color_and_tone: Light sand, static blue, and charcoal black.
-  lighting_and_shadow: Electrical flashes and harsh sunlight.
-  texture_and_material: Corroded antennas, canvas, and fine sand.
-  camera_and_composition: Torres como objetivos dominantes.
-  atmosphere_and_mood: Information warfare and survival.
-  rendering_and_quality: Dynamic objective-mode artwork.
+  aesthetic: Objective-warfare en dunas electrificadas, centrado en captura/interferencia de torres de señal.
+  subject_treatment: Escuadras móviles y operadores de radio con roles de hack, defensa y sabotaje.
+  color_and_tone: Arena clara, azul estático y negro carbón para lectura de control territorial.
+  lighting_and_shadow: Destellos eléctricos y sol severo para telegraph de ventanas operativas.
+  texture_and_material: Antenas corroídas, lona técnica, arena fina y cableado expuesto por tormenta.
+  camera_and_composition: Torres como objetivos dominantes con rutas de aproximación y zonas contestadas.
+  atmosphere_and_mood: Estratégica, hostil y de supervivencia informacional.
+  rendering_and_quality: Dynamic objective-mode gameplay art con legibilidad de control de señal y prioridad táctica.
 avoidRules:
   - watermark
   - text

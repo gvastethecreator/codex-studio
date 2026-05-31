@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Neon retro roadside for pilots and bounty crews.
-  form_and_line: Tailfin motels, sign pylons, and curved awnings.
-  color_palette: Teal, magenta, and cream.
-  lighting_setup: Twilight neon and rocket trail backlight.
-  material_texture: Painted metal, vinyl, and asphalt gloss.
-  render_quality: Stylized pulp environment art.
-  spatial_distortion: Long roadside perspective.
-  atmosphere: Wanderlust, hustle, and cosmic nightlife.
-  key_features: Comet signage, fuel diners, and mission bulletin walls.
-  creative_brief: A raypunk roadside where every room hosts a different star map.
+  aesthetic: Cosmic roadside noir where motel signage behaves like a navigational constellation and every surface promises escape.
+  form_and_line: Tailfin rooflines, comet-shaped sign pylons, crescent awnings, capsule doors, and road stripes that bend like orbital paths.
+  color_palette: Oxidized teal, motel magenta, warm cream, asphalt black, and pale rocket-smoke blue.
+  lighting_setup: Twilight neon bloom, rocket-trail backlight, room-number halos, and sodium puddle reflections.
+  material_texture: Flaking painted metal, ribbed vinyl, glossy rain asphalt, plastic star charts, and cracked ceramic diner tile.
+  render_quality: Stylized pulp environment art with graphic sign hierarchy and strong silhouettes.
+  spatial_distortion: Roadside one-point perspective warped into a comet tail, pulling eye through signs, rooms, and fuel islands.
+  atmosphere: Cheap glamour, fugitive sleep, cosmic wanderlust, and mission-board temptation.
+  key_features: Comet motel signs, fuel-diner counters, mission bulletin walls, tailfin shadows, and room keys shaped like coordinates.
+  creative_brief: >-
+    Push comet motel-strip as a reusable style: turn any subject into a
+    roadside constellation of neon promises, transient pilots, coded room
+    numbers, and orbital escape lines.
 avoidRules: [photoreal, gritty-cyber, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-062.webp }
 attributes:
   negativePrompt: photoreal, gritty-cyber, medieval, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Upward city composition around central tower axis.
   atmosphere: Order, trust, and rhythmic public life.
   key_features: Phase beacon, civic clocks, and scheduling terraces.
-  creative_brief: A lunarpunk beacon that turns celestial rhythm into social infrastructure.
+  creative_brief: >-
+    Preserve phasewatch civic-tower grammar as a reusable style system:
+    lunar-cycle synchronization architecture, trusted public timing signals,
+    and rhythmic civic order should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-surveillance, cyber-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-083.webp }
 attributes:

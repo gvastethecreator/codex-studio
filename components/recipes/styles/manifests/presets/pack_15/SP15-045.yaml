@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: High-speed atomic-era terminal linking continental megaregions.
-  form_and_line: Sweeping platforms, radial timetable walls, and sleek train noses.
-  color_palette: Teal, cream, and graphite.
-  lighting_setup: Concourse skylight plus platform strip illumination.
-  material_texture: Brushed steel, terrazzo flooring, and glazed enamel signage.
-  render_quality: Grand transit concept with clear movement logic.
-  spatial_distortion: Strong vanishing lines along parallel platforms.
-  atmosphere: Momentum, precision, and hopeful mobility.
-  key_features: Isotope express trains, civic map wall, and panoramic waiting lounges.
-  creative_brief: An atompunk station where national identity is expressed through transit design.
+  aesthetic: National mobility atompunk where trains look like civic promises sharpened into aerodynamic instruments.
+  form_and_line: Sweeping platform bands, radial timetable suns, sleek train noses, graphite rail seams, and queue lanes like circuit traces.
+  color_palette: Teal enamel, cream tile, graphite rail, chrome flash, and red departure ticks.
+  lighting_setup: Concourse skylight wash, platform strip illumination, polished edge highlights, and departure-board pulses.
+  material_texture: Brushed steel, terrazzo, glazed enamel signage, rubber thresholds, glass timetable covers, and worn ticket brass.
+  render_quality: Grand transit concept with exact movement logic, readable boarding choreography, and heroic civic scale.
+  spatial_distortion: Parallel rails, ceiling ribs, queue lanes, and train noses converge into a single national-speed vector.
+  atmosphere: Momentum, precision, hopeful mobility, and bureaucratic elegance.
+  key_features: Isotope express silhouettes, radial map walls, panoramic lounge bands, boarding tick marks, and enamel route seals.
+  creative_brief: >-
+    Preserve atomic rail-concourse grammar as a reusable style system:
+    aerodynamic civic mobility, radial transit graphics, and enamel platform
+    choreography should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-chaos, medieval, body-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-045.webp }
 attributes:
   negativePrompt: photoreal, dystopian-chaos, medieval, body-horror, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-atompunk,
+    categoryName: 8. Corepunk — Atompunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

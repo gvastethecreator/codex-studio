@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Track-side perspective toward signal tower.
   atmosphere: Coordination, urgency, and precise movement.
   key_features: Semaphore arms, signal clocks, and route levers.
-  creative_brief: A clockpunk rail node where timing discipline shapes the whole city.
+  creative_brief: >-
+    Preserve gilded railway signal-house grammar as a reusable style system:
+    semaphore-forest coordination, route-lever timing authority, and
+    platform urgency discipline should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk, dystopian-rust, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-097.webp }
 attributes:

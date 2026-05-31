@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Bowl-shaped depth around central interchange.
   atmosphere: Calm mobility and civic coordination.
   key_features: Shuttle docks, low-g lifts, and basin concourses.
-  creative_brief: A lunarpunk node where mobility is designed for accessibility and rhythm.
+  creative_brief: >-
+    Preserve tidal crater transit-hub grammar as a reusable style system:
+    bowl-topography interchange logic, low-gravity accessibility choreography,
+    and calm civic mobility rhythm should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-chaos, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-075.webp }
 attributes:

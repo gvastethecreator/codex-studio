@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Promenade vanishing point crossing reef terraces.
   atmosphere: Exploration, stewardship, and aquatic curiosity.
   key_features: Coral benches, tide instruments, and reef observation pods.
-  creative_brief: A biopunk shoreline where marine research and public leisure share the same living promenade.
+  creative_brief: >-
+    Preserve coral laboratory-promenade grammar as a reusable style system:
+    reef-adjacent research leisure integration, coastal biocalcium tactility,
+    and exploratory stewardship should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk, storm-chaos, watermark, text, logo, over-dark]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-107.webp }
 attributes:

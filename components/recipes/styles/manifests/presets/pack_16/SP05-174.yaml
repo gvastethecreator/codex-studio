@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Mercenary brutality, iron weight, ruined castles, black trauma and mud, doomed brotherhood, heavy sword arcs under ash-dark skies
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Brutal, mournful, doomed, relentless
-  key_features: Oversized sword silhouette, ruined masonry, battlefield mud, scarred facial acting, oppressive medieval scale
-  creative_brief: 'A man too angry to die, swinging iron through a world that betrayed him, blood and rain indistinguishable on ruined stone where brotherhood curdled into the worst betrayal ever forged. Every swing of the dragonslayer cuts through more than flesh: it carves through fate, through causality, through the very idea that suffering has meaning. The sky is ash, the castle is memory, and the only prayer left is the sound of steel meeting monster.'
+  aesthetic: Fantasía medieval oscura de trauma y acero, con brutalidad mercenaria y destino trágico irreversible.
+  form_and_line: Línea 90s pesada y agresiva, anatomía marcada por cicatriz y coreografía de espada colosal.
+  color_palette: Negros ceniza, óxidos de sangre seca, grises de piedra rota y rojos apagados de herida antigua.
+  lighting_setup: Iluminación sombría de tormenta, highlights metálicos duros y sombra opresiva de ruina.
+  material_texture: Hierro rugoso, lodo de campo de batalla, mampostería quebrada y grano fílmico áspero.
+  render_quality: Acabado premium noventero con densidad dramática extrema y legibilidad de violencia trágica.
+  spatial_distortion: Escala monumental de ruina y espada para sensación de carga física y fatalidad histórica.
+  atmosphere: Brutal, fúnebre, condenada, implacable.
+  key_features: Silueta de hoja gigantesca, castillos derruidos, barro bélico y acting de dolor irreparable.
+  creative_brief: Define una gramática reusable de épica oscura de supervivencia para cualquier sujeto, priorizando peso material, trauma persistente y tragedia medieval.
 avoidRules:
   - realistic
   - 3d render

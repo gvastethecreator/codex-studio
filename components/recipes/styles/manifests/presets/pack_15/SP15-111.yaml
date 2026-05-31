@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Pavilion shell focused on a central specimen spine.
   atmosphere: Preservation, contemplation, and scientific tenderness.
   key_features: Tissue drawers, bio-index panels, and preservation domes.
-  creative_brief: A biopunk archive that treats living tissue as both record and artifact.
+  creative_brief: >-
+    Preserve tissue archive-pavilion grammar as a reusable style system:
+    specimen-centered memory architecture, fragile bio-preservation elegance,
+    and scientific tenderness should remain coherent across subjects.
 avoidRules: [photoreal, horror, gore, watermark, text, logo, messy-clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-111.webp }
 attributes:

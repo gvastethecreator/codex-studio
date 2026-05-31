@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: National broadcast studio with theatrical deco gravitas.
-  form_and_line: Acoustic fan walls, stage arcs, and signal tower spine.
-  color_palette: Burgundy, brass, and charcoal.
-  lighting_setup: Stage spotlights and warm perimeter sconces.
-  material_texture: Velvet drape, lacquer wood, and mic chrome.
-  render_quality: Interior concept with rich tonal staging.
-  spatial_distortion: Stage-centric composition with layered audience boxes.
-  atmosphere: Authority performance and glamorous control.
-  key_features: Live orchestra pit, announcer dais, and signal meter walls.
-  creative_brief: A decopunk media hall where voice becomes architecture.
+  aesthetic: Velvet authority system where voice is not sound but architecture, signal, ritual, and soft propaganda.
+  form_and_line: Acoustic fan ribs, signal-spine towers, stage arcs, waveform grille patterns, and audience boxes stacked like speakers.
+  color_palette: Deep burgundy, tarnished brass, charcoal felt, microphone chrome, and warm vacuum-tube amber.
+  lighting_setup: Stage spot cones, perimeter sconces, glowing signal meters, and chrome pinlights on microphone heads.
+  material_texture: Velvet drape, lacquer wood, mic chrome, acoustic felt, perforated brass, and warm tube glass.
+  render_quality: Interior concept with rich tonal staging, readable broadcast hardware, and theatrical command of attention.
+  spatial_distortion: Composition compresses toward announcer axis while fan walls radiate the voice outward.
+  atmosphere: Glamorous control, official intimacy, signal authority, and performance discipline.
+  key_features: Sculptural microphones, waveform walls, announcer dais, orchestra-pit arcs, glowing meters, and brass acoustic grilles.
+  creative_brief: >-
+    Preserve velvet broadcast-hall grammar as a reusable style system:
+    staged voice authority, burgundy acoustic softness, and chrome signal
+    ritual should remain coherent across subjects.
 avoidRules: [photoreal, minimalist, cyber-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-052.webp }
 attributes:
   negativePrompt: photoreal, minimalist, cyber-noise, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

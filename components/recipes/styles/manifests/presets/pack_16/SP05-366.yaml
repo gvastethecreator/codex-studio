@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: School performance drama around traditional strings, lacquered instruments, stage light, group harmony and personal healing rendered through poised hands and emotional ensemble spacing
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Earnest, resonant, delicate, uplifting
-  key_features: Koto string detail, seated ensemble staging, lacquer gleam, hand-position focus, recital-hall warmth
-  creative_brief: Thirteen silk strings hum in unison across a recital-hall stage, each pluck a voice in a fragile democracy of sound. Lacquer gleams under warm spotlights as adolescent hands coax centuries-old timber into something achingly present.
+  aesthetic: Performance escolar de ensamble tradicional, centrada en resonancia colectiva y precisión de digitación.
+  form_and_line: Postura sentada estable, gesto de mano fino y coreografía mínima de conjunto por respiración.
+  color_palette: Maderas cálidas, ámbar de sala, negro laca y acentos crema de vestuario formal.
+  lighting_setup: Luz de recital suave con foco frontal sobre cuerdas y rebote cálido de escenario.
+  material_texture: Laca pulida del instrumento, cuerda tensada visible, tela ceremonial y piso de madera resonante.
+  render_quality: Frame musical de alta delicadeza con legibilidad de ataque, dinámica y balance entre intérpretes.
+  spatial_distortion: Perspectiva de ensamble en abanico con profundidad serena y jerarquía de secciones.
+  atmosphere: Sincera, resonante, delicada y elevadora.
+  key_features: Detalle de cuerdas, staging sentado, brillo de laca y foco en colocación de manos.
+  creative_brief: >-
+    Formula una gramática reusable de koto-ensemble-resonance donde materialidad
+    del instrumento, respiración grupal y lectura de gesto musical construyan
+    una identidad transferible.
 avoidRules:
   - realistic
   - 3d render

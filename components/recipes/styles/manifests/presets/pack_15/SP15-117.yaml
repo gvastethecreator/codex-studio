@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Amphitheater curve around a harbor inlet.
   atmosphere: Communal celebration, tidal resonance, and playful immersion.
   key_features: Reef choir shells, harbor steps, and signal fins.
-  creative_brief: A seapunk harbor where the reef itself amplifies song and civic life.
+  creative_brief: >-
+    Preserve reef choir-harbor grammar as a reusable style system:
+    acoustic reef amphitheater geometry, luminous communal tidal rituals, and
+    playful civic resonance should remain coherent across subjects.
 avoidRules: [photoreal, bleak, rust, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-117.webp }
 attributes:

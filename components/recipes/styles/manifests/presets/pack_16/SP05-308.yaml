@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: 80s action-comedy private-eye swagger, skyscraper nights, shoulder pads and handguns, comic pervert bravado punctured by crisp urban action cool
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Suave, neon, funny, dangerous
-  key_features: Skyscraper-night backdrops, detective handgun poses, 80s fashion detail, urban chase framing, slick-comedy contrast
-  creative_brief: Glass towers mirror the moon while a suited silhouette adjusts his cufflinks with lethal precision. Danger wears cologne in this city where bullets have better manners than lovers. Every trigger pull is a punchline, and every punchline leaves a bruise shaped like longing.
+  aesthetic: Noir urbano ochentero de pistolero privado, con cinismo seductor, comedia insolente y peligro de contrato.
+  form_and_line: Contorno firme de figura en traje, acting de pose confiada y encuadres dinámicos de persecución calle-cielo.
+  color_palette: Azules nocturnos de cristal, morados neón, grises acero y acentos rojos de peligro instantáneo.
+  lighting_setup: Neón de rascacielo reflejado en cristal, key cortante de calle y sombras planas de thriller televisivo.
+  material_texture: Vidrio de rascacielos, asfalto brillante, gabardina o traje texturado y metal de arma estilizado.
+  render_quality: Acabado premium retro-noir con lectura clara de acción, punchline visual y elegancia de detective urbano.
+  spatial_distortion: Profundidad de canyon urbano con verticalidad exagerada y lente de acción para ritmo de chase.
+  atmosphere: Suave, neón, irónica, peligrosa.
+  key_features: Skyline nocturno, postura detective-armada, moda 80s marcada y contraste entre chiste y violencia precisa.
+  creative_brief: Construye una gramática reusable de detective-noir de altura para cualquier sujeto, mezclando verticalidad metropolitana, ironía de mercenario y violencia precisa de escena corta.
 avoidRules:
   - realistic
   - 3d render

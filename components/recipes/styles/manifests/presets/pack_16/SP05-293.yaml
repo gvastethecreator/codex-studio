@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Urban kid mythology, crowded roofs and alleys, rough sacred city energy, innocence and violence stacked vertically in a dense modern labyrinth
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Rough, spiritual, crowded, feral
-  key_features: Dense city alleys, child silhouette contrast, rooftop motion, rough sacred iconography, urban myth staging
-  creative_brief: Two boys own the city vertical chaos like stray gods born from concrete and corrugated tin, their rooftop kingdom held together by nothing but shared survival. Every alley is a myth waiting to happen, every shadow a lesson in the animal logic of streets that raise their own. The city breathes through them, sacred and feral in equal measure.
+  aesthetic: Mitología urbana callejera con pulso infantil feroz, donde la ciudad densa se vuelve sistema espiritual y territorio de supervivencia.
+  form_and_line: Línea rugosa y nerviosa, siluetas compactas en movimiento vertical y contornos irregulares que transmiten impulso instintivo.
+  color_palette: Amarillos sucios de sodio, cianes de señal urbana, rojos gastados de concreto pintado y sombras petroladas profundas.
+  lighting_setup: Iluminación urbana mixta con focos de calle, interiores contaminados de neón y contraluces duros en azotea.
+  material_texture: Chapa corrugada, muro descascarado, cableado expuesto, asfalto caliente y suciedad cotidiana de barrio vivo.
+  render_quality: Terminación premium de crudeza controlada con alta legibilidad espacial en caos urbano multicapa.
+  spatial_distortion: Perspectiva vertical laberíntica con compresión de callejón y saltos de altura que refuerzan dominio territorial.
+  atmosphere: Áspera, sagrada, abarrotada, feral.
+  key_features: Azoteas interconectadas, pasajes estrechos, presencia infantil dominante y símbolos urbanos convertidos en tótems.
+  creative_brief: Crea una gramática reusable de mito callejero para cualquier sujeto usando textura urbana densa, verticalidad agresiva y energía de supervivencia compartida.
 avoidRules:
   - realistic
   - 3d render

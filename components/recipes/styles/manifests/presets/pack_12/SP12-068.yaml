@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Aerial shipyard where draconic mounts are outfitted.
-  subject_treatment: Winged mechanics and elite riders.
-  color_and_tone: Sky blue, steel, and burnished gold.
-  lighting_and_shadow: Open daylight with localized forge smoke.
-  texture_and_material: Scales, rivets, and reinforced leather.
-  camera_and_composition: Elevated platform overlooking the void.
-  atmosphere_and_mood: Epic preparation and wartime anticipation.
-  rendering_and_quality: Premium faction visual.
+  aesthetic: Skyforge prep-hub de monturas dracónicas, enfocado en loadout, mantenimiento y salida a campaña aérea.
+  subject_treatment: Mecánicos alados y riders élite con lectura clara de rol técnico/combatiente.
+  color_and_tone: Azul cielo, acero y oro bruñido para jerarquía de facción y rango.
+  lighting_and_shadow: Luz abierta de altura con humo de forja localizado en zonas de trabajo.
+  texture_and_material: Escamas tratadas, remaches aeronáuticos, cuero reforzado y herrajes térmicos.
+  camera_and_composition: Plataforma elevada sobre vacío con líneas de tráfico aéreo y puntos de despliegue.
+  atmosphere_and_mood: Épica, preparatoria y de anticipación bélica.
+  rendering_and_quality: Premium faction gameplay art con claridad de logística, equipamiento y salida táctica.
 avoidRules:
   - watermark
   - text

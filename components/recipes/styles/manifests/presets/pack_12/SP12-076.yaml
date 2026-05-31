@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Polar-fortress siege epic blending glacial militarism, celestial sky phenomena, and entrenched defensive architecture.
-  subject_treatment: Coordinated defender archetypes, breach-specialist assault units, and readable class-role separation under pressure.
-  color_and_tone: Aurora greens, steel-cold cyans, storm-slate neutrals, and disciplined war-signal reds for combat legibility.
-  lighting_and_shadow: Boreal sky wash, low-angle frozen reflections, blast-lit choke points, and long snowfield shadow geometry.
-  texture_and_material: Wind-cut ice slabs, frost-sealed masonry, impact-scarred ironworks, and powdered snow accumulation strata.
-  camera_and_composition: Multi-tier bastion overview with attack vectors, siege-lane hierarchy, and depth-staged defensive fallback zones.
-  atmosphere_and_mood: Heroic attrition, tactical urgency, and last-stand resolve under hostile climate severity.
-  rendering_and_quality: Premium warfront key-art fidelity with high unit readability, environment strategy cues, and cinematic weather integration.
+  aesthetic: Polar-siege de bastión auroral, orientado a defensa por capas, ruptura de línea y fallback táctico.
+  subject_treatment: Defensores coordinados y asaltantes de brecha con separación de clase legible bajo presión.
+  color_and_tone: Verdes aurora, cian acero, pizarra tormenta y rojos de señal para legibilidad bélica.
+  lighting_and_shadow: Baño boreal, reflejos helados rasantes y choke-points iluminados por explosión.
+  texture_and_material: Placas de hielo talladas por viento, mampostería escarchada y hierro marcado por impacto.
+  camera_and_composition: Vista multi-tier con vectores de ataque, jerarquía de lanes y zonas de repliegue.
+  atmosphere_and_mood: Heroica, urgente y de resistencia extrema.
+  rendering_and_quality: Warfront gameplay key-art con claridad de clase, ruta y tempo de asedio.
 avoidRules:
   - watermark
   - text

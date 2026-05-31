@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Waterway depth with alternating lock chambers.
   atmosphere: Measured flow and engineered adaptability.
   key_features: Canal locks, gear sluices, and maintenance docks.
-  creative_brief: A clockpunk waterway where flow is controlled with ceremonial precision.
+  creative_brief: >-
+    Preserve brass canal-locks grammar as a reusable style system:
+    hydraulic timing governance, alternating sluice choreography, and
+    ceremonial flow precision should remain coherent across subjects.
 avoidRules: [photoreal, cartoonish, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-093.webp }
 attributes:

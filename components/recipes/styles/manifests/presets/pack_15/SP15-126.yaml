@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Courtyard inward pull framed by reefs and bubbles.
   atmosphere: Playfulness, calm, and close-knit aquatic community.
   key_features: Bubble reefs, courtyard rings, and shell benches.
-  creative_brief: A seapunk courtyard where bubbles and coral build a sheltered public room.
+  creative_brief: >-
+    Preserve bubble reef-courtyard grammar as a reusable style system:
+    inward coral-resin enclosure geometry, buoyant micro-community intimacy,
+    and playful aquatic shelter should remain coherent across subjects.
 avoidRules: [photoreal, harsh-industrial, sewage, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-126.webp }
 attributes:

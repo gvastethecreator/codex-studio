@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Cooperative hunt in open electric plains.
-  subject_treatment: Mounted hunters facing colossal beasts.
-  color_and_tone: Storm blue, lightning yellow, and dark earth.
-  lighting_and_shadow: Intermittent lightning and dramatic skies.
-  texture_and_material: Wet fur, armored leather, and mud.
-  camera_and_composition: Large-scale framing with a dominant monster.
-  atmosphere_and_mood: High-risk epic action, coordination, and reward.
-  rendering_and_quality: Key art for a hunting-season campaign.
+  aesthetic: Co-op monster-hunt en llanuras eléctricas abiertas, con énfasis en rastreo, coordinación de escuadra y ejecución por ventanas.
+  subject_treatment: Cazadores montados y bestias colosales con lectura clara de rol, amenaza y patrón de ataque.
+  color_and_tone: Azul tormenta, amarillo rayo y tierra oscura para codificar clima, peligro y terreno.
+  lighting_and_shadow: Relámpagos intermitentes, cielos dramáticos y flashes de impacto para telegraph de fase.
+  texture_and_material: Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.
+  camera_and_composition: Escala amplia con monstruo dominante, rutas de cerco y líneas de escape visibles.
+  atmosphere_and_mood: Épica, riesgosa y altamente coordinada.
+  rendering_and_quality: Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.
 avoidRules:
   - watermark
   - text

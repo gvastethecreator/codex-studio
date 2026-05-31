@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Urban jazz obsession, smoky club stages, saxophone glow, relentless practice and stage eruption rendered through adult performance intensity and blue-hour city mood
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Driven, nocturnal, soulful, explosive
-  key_features: Saxophone shine, club-stage spotlights, smoke haze, soloist silhouette, city-night music vibe
-  creative_brief: Smoke curls around a saxophone bell as blue-hour city light leaks through club windows, the soloist ascending note by note into a private stratosphere. Jazz becomes pilgrimage, every late-night session a station on the road to total sound.
+  aesthetic: Jazz urbano de club nocturno, centrado en improvisación visceral y presencia escénica solista.
+  form_and_line: Silueta de saxofonista en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.
+  color_palette: Azules midnight, dorados latón, magentas de neón tenue y negros humo de sala.
+  lighting_setup: Spot cálido de club con contraluz de neblina y glow lateral sobre campana del saxo.
+  material_texture: Latón con pátina, madera de tarima, humo volumétrico fino y tela oscura de escenario.
+  render_quality: Frame performativo adulto con lectura de intensidad, dinámica de solo y respuesta de sala.
+  spatial_distortion: Profundidad de club comprimida hacia solista con halo de audiencia periférica difusa.
+  atmosphere: Nocturna, impulsada, soulful y explosiva.
+  key_features: Brillo de sax, haze de club, spot aislado y silueta de solo en ascenso.
+  creative_brief: >-
+    Define una gramática reusable de midnight-jazz-ascension donde timbre de
+    latón, atmósfera de club y cuerpo performativo construyan identidad más
+    allá de un concierto particular.
 avoidRules:
   - realistic
   - 3d render

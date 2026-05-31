@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Schoolgirl through the bone-eater's well, beads and claws, demon-laden forests, sacred arrows, romance and bickering on a feudal road beneath red skies
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Adventurous, combative, nostalgic, mythic
-  key_features: Shrine-well iconography, demon forest backdrops, sacred-arrow poses, clawed silhouette, traveling-party dynamics
-  creative_brief: The bone-eater's well gapes between centuries like a wound that refuses to close, a schoolgirl falling through time into a world of claw and fang and sacred arrow. Demon-laden forests rustle with nostalgia and danger in equal measure, where love and bickering share the same feudal road beneath red-tinged skies.
+  aesthetic: Fantasía feudal de cruce temporal con romance combativo, folclore y demonología de ruta.
+  form_and_line: Contraste schoolwear-feudal, silueta garra de yokai y composición de viaje episódico en bosque.
+  color_palette: Rojo crepuscular, verde bosque profundo, púrpura espiritual, marfil de talismán y azul nostalgia.
+  lighting_setup: Luz de santuario, atardecer rojizo y destellos de flecha sagrada en entorno sombrío.
+  material_texture: Madera de shrine, tela escolar, armadura desgastada, tierra de sendero y aura demoníaca particulada.
+  render_quality: Aventura fantástica de largo aliento con equilibrio entre acción, comedia de fricción y melancolía.
+  spatial_distortion: Profundidad de camino feudal y transición de pozo como umbral temporal recurrente.
+  atmosphere: Nostálgica, combativa y mítica.
+  key_features: Pozo santuario, bosque demonio, iconografía de flecha purificadora y dinámica de party itinerante.
+  creative_brief: >-
+    Construye una gramática shrine-well-feudal reusable donde umbral temporal,
+    folklore demoníaco y aventura romántica de carretera estructuren la
+    identidad sin anclarse a una escena única.
 avoidRules:
   - realistic
   - 3d render

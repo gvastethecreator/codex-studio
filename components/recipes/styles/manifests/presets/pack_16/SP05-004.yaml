@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Tall figures, sweeping capes, lonely starfields, romantic space adventure, operatic scale, cosmic loneliness, vast ship corridors
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Melancholic, heroic, yearning, grand
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: A solitary cape billows against the infinite void, hand-painted stars flickering like distant memories as a romantic wanderer drifts between worlds no longer home. Operatic scale collides with intimate sorrow—vast ship corridors framing a single figure, the ache of cosmic loneliness rendered in warm gouache and sweeping perspective.
+  aesthetic: Ópera espacial romántica de corsario errante, con heroicidad melancólica y escala astral monumental.
+  form_and_line: Línea cel clásica de figura alta y capa amplia, acting contenido de añoranza y nobleza.
+  color_palette: Índigos profundos, oro envejecido, rojo vino ceremonial y grises siderales desaturados.
+  lighting_setup: Claroscuro estelar con key lateral dramática, halos de vacío y rim tenue sobre capa en movimiento.
+  material_texture: Metal de nave envejecido, terciopelo de uniforme, ventanal de puente y grano analógico elegante.
+  render_quality: Producción retro premium con lectura épica-lírica y composición de gran aliento visual.
+  spatial_distortion: Grandes vacíos cósmicos y corredores largos para enfatizar soledad heroica y destino itinerante.
+  atmosphere: Melancólica, heroica, anhelante, grandiosa.
+  key_features: Capa icónica, silueta de corsario, arquitectura naval y horizonte estelar como contrapeso emocional.
+  creative_brief: Construye una gramática reusable de romance espacial crepuscular para cualquier sujeto, equilibrando majestuosidad operática y soledad noble.
 avoidRules:
   - realistic
   - 3d render

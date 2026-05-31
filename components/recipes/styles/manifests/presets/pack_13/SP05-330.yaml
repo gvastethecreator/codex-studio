@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Folkloric yokai procession with documentary oddness, soft rural night, grotesque spirits treated with deadpan familiarity, brush-ink humor and ghostly taxonomy
-  form_and_line: Brushy folklore contour, blunt creature detailing, ink-wash edge diffusion
+  aesthetic: Folklore yokai de desfile nocturno con extrañeza documental, humor seco y familiaridad inquietante.
+  form_and_line: Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta lavada.
   color_palette: Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan
-  lighting_setup: Lantern-and-moon dual lighting, ink-dark negative space, rural-night haze
-  material_texture: Brush-ink bleeds, washi paper tooth, damp earth texture, mossy wood grain
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.
+  material_texture: Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.
+  render_quality: Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.
   spatial_distortion: Odd spirit anatomy, procession depth, deadpan human-scale contrast, uncanny silhouette spacing
-  atmosphere: Folkloric, eerie, amused, nocturnal
-  key_features: Yokai parade silhouettes, rural-night backdrops, brush-ink humor, lantern glow, documentary-spirit staging
-  creative_brief: The supernatural walks past you on a country road and no one blinks. Spirits are catalogued with the same deadpan care as mushrooms, each one a footnote in the encyclopedia of the dark. Lantern light agrees to keep their secrets.
+  atmosphere: Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.
+  key_features: Siluetas de parada yokai, fondo campestre nocturno, glow de linterna y staging pseudo-documental.
+  creative_brief: >-
+    Define una gramática yokai-parade transferible basada en trazo de tinta,
+    nocturnidad rural y catalogación deadpan de espíritus grotescos sin caer
+    en terror explícito ni caricatura vacía.
 avoidRules:
   - still
   - calm

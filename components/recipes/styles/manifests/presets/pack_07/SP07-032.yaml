@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Metropolitan underground transit vernacular, ceramic-infrastructure patina, commuter-intensity public realm
-  form_and_line: Repetitive bay rhythm, rail-perspective convergence, vaulted/flat hybrid ceilings, sign-band alignment
+  aesthetic: Infraestructura metropolitana subterránea de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.
+  form_and_line: Ritmo repetitivo de crujías, convergencia longitudinal de rieles, techos híbridos y bandas de señalética estructural.
   color_palette: Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone
-  lighting_setup: Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void
-  material_texture: Chipped ceramic tile glaze, oxidized rail steel, oil-dark ballast edges, moisture staining, anti-slip platform wear
-  render_quality: Documentary transit realism, high micro-wear authenticity, dense urban public-space legibility
+  lighting_setup: Fluorescencia intermitente, pools de borde de andén, glare publicitario y vacío negro de túnel como contrapunto.
+  material_texture: Baldosa astillada, acero oxidado, grasa mineral en borde de vía, humedad capilar y pavimento antideslizante gastado.
+  render_quality: Realismo documental de tránsito con microdesgaste verosímil y lectura clara de espacio público denso.
   spatial_distortion: Motion blur train
-  atmosphere: Transitory, anonymous, humid subterranean pressure, routine urgency
-  key_features: Platform warning strip, tiled wayfinding bands, ad-light spill, service conduit clutter, tunnel mouth void
+  atmosphere: Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.
+  key_features: Franja de seguridad de andén, wayfinding en banda, conducciones vistas, derrame de luz comercial y bocas de túnel profundas.
   creative_brief: >-
-    Diseña este preset como lenguaje de movilidad masiva: repetición modular,
-    desgaste de alto tráfico y señalética como estructura compositiva principal.
-    La escena debe sentirse operativa y habitada por flujos, no como decorado vacío.
+    Construye una gramática de metro transferible donde repetición modular,
+    desgaste por tráfico y jerarquía de señalética gobiernen la composición.
+    Debe sentirse operativa y permanentemente habitada por flujo.
 avoidRules:
   - clean
   - sunny

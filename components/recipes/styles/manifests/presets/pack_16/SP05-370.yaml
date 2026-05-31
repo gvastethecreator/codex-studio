@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Indie-band romance under small-venue lights, emotional songwriting, guitar-and-vocal intimacy, stage confession energy and soft heartbreak in modern performance framing
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Intimate, aching, warm, musical
-  key_features: Mic-stand framing, guitar close-up, small-venue spotlights, duo emotional spacing, song-performance body language
-  creative_brief: A single mic stand catches the amber glow of a small-venue spotlight as unsaid words find their way through guitar strings. The stage becomes a confessional booth where melody carries the weight that silence could not bear.
+  aesthetic: Indie-performance íntima de sala pequeña, centrada en confesión lírica y vulnerabilidad en escena.
+  form_and_line: Gestualidad vocal cercana, postura de guitarra contenida y distancia emocional de dúo claramente legible.
+  color_palette: Ámbar cálido de venue, azul nocturno suave y acentos granate de melancolía contemporánea.
+  lighting_setup: Spotlights pequeños con caída suave y penumbra envolvente de club reducido.
+  material_texture: Madera de escenario mínimo, metal de mic stand, acabado mate de instrumento y humo ligero ambiental.
+  render_quality: Frame musical emotivo con lectura de letra, silencio y clímax de interpretación.
+  spatial_distortion: Perspectiva frontal compacta con foco íntimo en micrófono y eje de respiración compartida.
+  atmosphere: Íntima, doliente, cálida y musical.
+  key_features: Framing de mic stand, close-up de cuerda, spacing emocional dual y lenguaje corporal confesional.
+  creative_brief: >-
+    Construye una gramática reusable de stage-confession-indie donde
+    intimidad acústica, tensión emocional y mínima puesta escénica definan una
+    identidad visual reutilizable.
 avoidRules:
   - realistic
   - 3d render

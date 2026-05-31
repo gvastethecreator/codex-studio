@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Child-king underdog fantasy, soft storybook lines, giant emotional sincerity, fairy-tale castles and bodily vulnerability transformed into heroic grace
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Innocent, moving, brave, storybook
-  key_features: Storybook castle forms, tiny-hero scale contrast, crown motifs, emotional gesture clarity, fairy-tale silhouettes
-  creative_brief: A crown too large for a small head sits steady on courage that fills the space where strength could not reach. Storybook lines draw castles with the tenderness of bedtime illustrations, a tiny king moving through fairy-tale halls where vulnerability is not weakness but the highest form of bravery.
+  aesthetic: Cuento de coronación vulnerable, con ternura gráfica y heroísmo moral en clave infantil.
+  form_and_line: Trazo storybook suave, silueta pequeña protagonista y arquitectura de castillo de fábula.
+  color_palette: Celeste claro, amarillo mantequilla, rojo corona, verde prado y gris piedra amable.
+  lighting_setup: Luz de cuento diurna, halos cálidos de inocencia y sombras blandas de drama emocional.
+  material_texture: Mampostería simple, tejido noble ligero, madera palaciega y acabado ilustrado de libro infantil.
+  render_quality: Narrativa visual emotiva de alta claridad gestual con estilo de fábula moderna.
+  spatial_distortion: Contraste deliberado entre figura mínima y espacio monumental para enfatizar coraje.
+  atmosphere: Inocente, valiente y conmovedora.
+  key_features: Corona sobredimensionada, castillos de cuento, lenguaje corporal transparente y contraste de escala afectivo.
+  creative_brief: >-
+    Define una gramática storybook-crown reusable donde fragilidad corporal,
+    monumentalidad de fábula y valentía ética construyan una épica sensible y
+    universal.
 avoidRules:
   - realistic
   - 3d render

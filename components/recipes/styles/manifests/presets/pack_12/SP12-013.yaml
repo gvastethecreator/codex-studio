@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Mystical sanctuary in resonant quartz desert.
-  subject_treatment: Guardians with prismatic weapons and long capes.
-  color_and_tone: Rose sand, amethyst, and solar white.
-  lighting_and_shadow: Harsh sun with multicolor refractions.
-  texture_and_material: Faceted crystals, fine dust, and carved stone.
-  camera_and_composition: Wide-angle framing with a ceremonial stairway.
-  atmosphere_and_mood: Sacred, silent, and expectant.
-  rendering_and_quality: Environmental art for a premium zone.
+  aesthetic: Action-adventure místico de santuario desértico con énfasis en puzzle lumínico y orientación geométrica.
+  subject_treatment: Guardian archetypes y player silhouettes diferenciadas por interacción con prismas/runas.
+  color_and_tone: Arena rosada, amatista, blanco solar y acentos espectrales por refracción.
+  lighting_and_shadow: Sol duro con rebotes policromáticos usados como mecánica de progresión visual.
+  texture_and_material: Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.
+  camera_and_composition: Gran angular con escalera ceremonial y líneas guía hacia nodos puzzle.
+  atmosphere_and_mood: Sagrada, silenciosa y analítica, de descubrimiento ritual.
+  rendering_and_quality: Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.
 avoidRules:
   - watermark
   - text

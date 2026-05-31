@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   createCompiledProviderInput,
+  composeGenerationQualityPromptSections,
   createProviderInputMetrics,
   createGenerationTaskSpec,
   createProviderSessionContract,
@@ -88,6 +89,47 @@ describe('generationContracts', () => {
     expect(input.payload).toEqual({
       text: 'Task: image_generate\nPrompt: small brass key on velvet cloth',
     });
+  });
+
+  it('normalizes quality intent and composes compact quality prompt sections', () => {
+    const spec = createGenerationTaskSpec({
+      id: 'spec-quality',
+      task: 'image_generate',
+      prompt: 'editorial product image of a glass owl',
+      quality: {
+        qualityPresetId: 'product_or_ui_asset',
+        subject: 'glass owl',
+        composition: 'centered three-quarter view',
+        constraints: ['clean silhouette', 'clean silhouette', '  '],
+        negative: ['watermark'],
+        referenceRoles: [
+          {
+            role: 'reference',
+            assetName: 'mood.png',
+            instruction: 'Use for cool color mood only.',
+          },
+        ],
+      },
+    });
+
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'product_or_ui_asset',
+      subject: 'glass owl',
+      composition: 'centered three-quarter view',
+      constraints: ['clean silhouette', 'clean silhouette'],
+      negative: ['watermark'],
+    });
+    expect(composeGenerationQualityPromptSections(spec)).toEqual([
+      'Quality preset:',
+      'product_or_ui_asset',
+      'Quality intent:',
+      '- Preset guidance: Centered inspectable asset, clean edges, readable materials, minimal background clutter.',
+      '- Subject: glass owl',
+      '- Composition: centered three-quarter view',
+      '- Constraint: clean silhouette',
+      '- Avoid: watermark',
+      '- Reference role: mood.png (reference): Use for cool color mood only.',
+    ]);
   });
 
   it('recognizes built-in providers while allowing future provider ids', () => {

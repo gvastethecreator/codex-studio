@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Low-level adventurers in a damp fantasy world, debt and fear, smoky campfires, hesitant teamwork, grounded monster hunting and fragile grief
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Humble, smoky, vulnerable, earnest
-  key_features: Campfire staging, patched equipment, fearful party spacing, muddy paths, low-level survival details
-  creative_brief: Smoke curls from a campfire too small to chase the fear away, and patched armor tells stories no epic would remember. A party of underdogs kills one goblin and grieves like it was a king. Fantasy has a smell here—damp wool, iron, hesitation.
+  aesthetic: Fantasía de bajo nivel marcada por precariedad, duelo íntimo y supervivencia de escuadra sin épica grandilocuente.
+  form_and_line: Siluetas contenidas, postura defensiva, distancia emocional entre miembros y lectura de movimiento cauteloso.
+  color_palette: Marrón humo, gris barro, verde apagado, naranja tenue de fogata y azul noche húmeda.
+  lighting_setup: Fuego débil de campamento, niebla baja, sombras largas y luz ambiental fría de bosque hostil.
+  material_texture: Cuero remendado, tela mojada, metal sin pulir, barro adherido y desgaste acumulado en equipo improvisado.
+  render_quality: Realismo anime sobrio con foco en vulnerabilidad corporal y narrativa de pérdidas pequeñas.
+  spatial_distortion: Escala humana reducida, encuadres cerrados de grupo y profundidad incierta por niebla y maleza.
+  atmosphere: Frágil, humilde y sincera, con miedo persistente y lealtad emergente.
+  key_features: Fogata mínima, armadura parchada, senderos lodados y formación insegura de party novata.
+  creative_brief: >-
+    Construye una gramática smoke-and-mud reusable donde materialidad precaria,
+    luz pobre y colaboración temblorosa expresen crecimiento desde la
+    vulnerabilidad.
 avoidRules:
   - realistic
   - 3d render

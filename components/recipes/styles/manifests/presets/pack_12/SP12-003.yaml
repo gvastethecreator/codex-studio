@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Mechanized post-apocalypse on dunes and highway remains.
-  subject_treatment: Heavy-load mechs escorting armored vehicles.
-  color_and_tone: Burnt ochres, oxidized iron, and bleached skies.
-  lighting_and_shadow: Severe overhead sun with short shadows and bright dust.
-  texture_and_material: Corroded sheet metal, torn canvas and abrasive sand.
-  camera_and_composition: Side-scrolling panoramic framing with tactical readability.
-  atmosphere_and_mood: Relentless march, extreme heat, and survival.
-  rendering_and_quality: Faction illustration with stylized realism.
+  aesthetic: Vehicular combat sandbox postapocalíptico con logística de convoy y combate de largo alcance en terreno abierto.
+  subject_treatment: Unidades pesadas, escolta híbrida y clases de vehículo/mech diferenciadas por silueta funcional.
+  color_and_tone: Ocre quemado, hierro oxidado y cielo de desecación extrema con contraste táctico mínimo.
+  lighting_and_shadow: Sol cenital duro, polvo suspendido y scintillation térmica para sensación de calor operativo.
+  texture_and_material: Metal corroído, lonas reparadas, caucho degradado y abrasión granular persistente.
+  camera_and_composition: Panorámica lateral de ruta con lectura de lanes, flank routes y amenazas de horizonte.
+  atmosphere_and_mood: Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.
+  rendering_and_quality: Estilo faction-keyart con realismo estilizado y claridad de sistemas de movilidad/combate.
 avoidRules:
   - watermark
   - text

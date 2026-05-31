@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Jade shrine on the edge of an active volcano.
-  subject_treatment: Warrior pilgrims and stone guardians.
-  color_and_tone: Jade green, lava black, and fiery orange.
-  lighting_and_shadow: Magma glow and dense smoke.
-  texture_and_material: Vitrified stone, ritual gold, and ash.
-  camera_and_composition: Ascending path toward the upper temple.
-  atmosphere_and_mood: Devotion, danger, and transcendence.
-  rendering_and_quality: Memorable endgame-zone visual.
+  aesthetic: Endgame shrine-run volcánico místico, orientado a ascenso por fases, hazard térmico y combate ritual.
+  subject_treatment: Peregrinos guerreros y guardianes pétreos con lectura clara de arquetipo y amenaza.
+  color_and_tone: Verde jade, negro lava y naranja ígneo para jerarquía de riesgo/progreso.
+  lighting_and_shadow: Glow de magma con humo denso para telegraph de zonas de daño y ventanas seguras.
+  texture_and_material: Piedra vitrificada, oro ritual, ceniza suspendida y grietas activas.
+  camera_and_composition: Ruta ascendente hacia templo superior con checkpoints visuales y cuellos de botella.
+  atmosphere_and_mood: Devocional, peligrosa y trascendente.
+  rendering_and_quality: Endgame-zone gameplay art con legibilidad alta de ruta, fase y prioridad táctica.
 avoidRules:
   - watermark
   - text

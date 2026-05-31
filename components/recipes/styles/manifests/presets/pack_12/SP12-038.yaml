@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Tactical naval combat among metallic reefs.
-  subject_treatment: Fragatas ligeras y corbetas de asalto.
-  color_and_tone: Steel blue, white foam, and signal red.
-  lighting_and_shadow: Clouded sky with cold marine reflections.
-  texture_and_material: Wet plating, taut ropes, and rough water.
-  camera_and_composition: Vista amplia con rutas de flanqueo.
-  atmosphere_and_mood: Maneuvering, pressure, and maritime control.
-  rendering_and_quality: Naval map with strategic readability.
+  aesthetic: Naval tactics de escaramuza en arrecifes metálicos, orientado a maniobra, control de ruta y fuego cruzado.
+  subject_treatment: Fragatas ligeras y corbetas de asalto diferenciadas por perfil de alcance y movilidad.
+  color_and_tone: Azul acero, espuma blanca y rojo señal para lectura de aliados, daño y alerta.
+  lighting_and_shadow: Cielo cubierto con reflejos marinos fríos y destellos de artillería.
+  texture_and_material: Planchas húmedas, cabos tensos, óxido salino y oleaje áspero de alta fricción.
+  camera_and_composition: Vista amplia con corredores de flanqueo, zonas de bloqueo y puntos de emboscada.
+  atmosphere_and_mood: Tensa, táctica y dominada por control marítimo.
+  rendering_and_quality: Naval map strategy-first con legibilidad de vectores, alcance y prioridades de objetivo.
 avoidRules:
   - watermark
   - text

@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Boxing gym sweat, taped fists, underdog muscle effort, ropes and bruises, comeback spirit and technical grit rendered with old-school sports-drama sincerity
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Grueling, inspiring, rough, determined
-  key_features: Boxing-ring ropes, glove-impact pose, corner-stool exhaustion, taped-hand detail, coach-fighter framing
-  creative_brief: Taped fists rest heavy on aching knees while the ring ropes hum with the crowd's distant thunder. Sweat pools on the corner stool like a sacrament of perseverance, every bruise a chapter in the gospel of rising once more.
+  aesthetic: Boxeo de superación clásica orientado a resistencia, técnica de guardia y comeback por rounds.
+  form_and_line: Anatomía de golpeo pesada, guardia compacta y acting físico de castigo acumulado.
+  color_palette: Rojos de esquina, azul acero de sombra de ring y tonos piel cálidos de esfuerzo extremo.
+  lighting_setup: Spot duro de ring con penumbra periférica y foco dramático en cuerda/esquina.
+  material_texture: Cuero de guante castigado, vendas saturadas, lona gastada y sudor de gimnasio viejo.
+  render_quality: Frame de combate deportivo con legibilidad de impacto, defensa y recuperación.
+  spatial_distortion: Perspectiva de cuerdas con compresión de distancia en intercambio corto y uppercut.
+  atmosphere: Dura, inspiradora, áspera y obstinada.
+  key_features: Cuerdas tensas, postura de impacto, fatiga en banquillo y dúo coach-boxeador.
+  creative_brief: >-
+    Construye una gramática reusable de comeback-boxing donde fisicidad de
+    round, disciplina técnica y estética de gym clásico sostengan una identidad
+    transferible.
 avoidRules:
   - realistic
   - 3d render

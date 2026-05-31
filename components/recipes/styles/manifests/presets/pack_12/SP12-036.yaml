@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Puzzle chamber in a lunar monolith of ancient technology.
-  subject_treatment: Lone explorer interacting with moving runes.
-  color_and_tone: Ash gray, soft blue, and spectral white.
-  lighting_and_shadow: Central halo with soft geometric shadows.
-  texture_and_material: Smooth basalt, lunar dust, and opaque crystal.
-  camera_and_composition: Symmetric composition oriented around mechanics.
-  atmosphere_and_mood: Contemplation, ingenuity, and mystery.
-  rendering_and_quality: Puzzle space with functional clarity.
+  aesthetic: Puzzle-chamber lunar de tecnología ancestral con mecánicas de rotación, sincronía y energía diferida.
+  subject_treatment: Explorador solitario con feedback visual claro sobre interacción de runas móviles.
+  color_and_tone: Gris ceniza, azul tenue y blanco espectral para lectura de estado activo/inactivo.
+  lighting_and_shadow: Halo central con sombras geométricas suaves que revelan alineaciones correctas.
+  texture_and_material: Basalto pulido, polvo lunar, cristal opaco y juntas de mecanismo antiguo.
+  camera_and_composition: Simetría funcional orientada a mecánicas, con foco en nodos de resolución.
+  atmosphere_and_mood: Contemplativa, ingeniosa y enigmática.
+  rendering_and_quality: Puzzle-space clarity-first con telegraph nítido de reglas, progreso y solución.
 avoidRules:
   - watermark
   - text

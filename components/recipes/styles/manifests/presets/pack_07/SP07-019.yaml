@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 1900s organic room, Belle Epoque bloom, nature-as-structure, total-art Gesamtkunstwerk
-  form_and_line: Whiplash curves, tendril stair rails, floral doorframes, sinuous glass, flowing wrought iron
-  color_palette: Sage, Gold, Wood, Peacock Blue, Lilac, Amber glass, Moss green
-  lighting_setup: Stained glass light, Tiffany-lamp warmth, lotus-petal sconces, insect-wing glow
-  material_texture: Carved wood, glass, wrought iron, iridescent favrile glass, patinated bronze, floral marquetry
-  render_quality: Horta decorative flowing turn-of-century, whiplash beauty
-  spatial_distortion: Melting shapes
-  atmosphere: Romantic, nature, soft, enchanted, organic rhythm, floral intoxication
-  key_features: Curved wood, floral motifs everywhere, tendril staircase, stained glass skylight, organic lamp forms
-  creative_brief: Wrought iron grows like vines up the stairwell, tendrils of metal blooming into lamp shades and door handles. Every surface curves away from geometry, the room a garden that learned to speak architecture. Light passes through iris-colored glass, falling on wood carved into the shape of wind.
+  aesthetic: Art Nouveau orgánico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
+  form_and_line: Curvas whiplash, barandas en zarcillo, marcos florales, vidrio sinuoso y hierro forjado fluido.
+  color_palette: Salvia, dorado, azul pavo real, lila, ámbar vítreo y verdes musgo.
+  lighting_setup: Luz filtrada por vitral, lámparas cálidas tipo Tiffany, apliques pétalo y brillo irisado suave.
+  material_texture: Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marquetería floral.
+  render_quality: Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.
+  spatial_distortion: Ligera fluidez morfológica para enfatizar continuidad orgánica sobre rigidez geométrica.
+  atmosphere: Romántica, envolvente, botánica y artesanal.
+  key_features: Motivos florales estructurales, escaleras tendril, vitrales activos y luminarias orgánicas.
+  creative_brief: >-
+    Conserva una gramática Art Nouveau transferible donde línea orgánica,
+    ornamento botánico y material artesanal formen un sistema continuo. Debe
+    leerse como estructura viva, no como simple decoración floral aplicada.
 avoidRules:
   - straight lines
 assets:

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Theatrical court intrigue with dark baroque aesthetics.
-  subject_treatment: Masked murderers among nobles and curtains.
-  color_and_tone: Burgundy, velvet black, and aged gold.
-  lighting_and_shadow: Dramatic lamps with strong scenic contrast.
-  texture_and_material: Silk, polished marble and decorated steel.
-  camera_and_composition: Frontal composition in narrative-tableau style.
-  atmosphere_and_mood: Lethal elegance and social paranoia.
-  rendering_and_quality: Visual key of factions and plot.
+  aesthetic: Immersive-sim de asesinato cortesano con barroco oscuro, infiltración social y manipulación de facciones.
+  subject_treatment: Roles de stealth/disguise/assassin con lectura por máscara, postura y vestuario de clase.
+  color_and_tone: Burdeos, negro terciopelo y oro envejecido para codificar estatus y amenaza.
+  lighting_and_shadow: Lámparas dramáticas con alto contraste para rutas de ocultamiento y ventanas de ejecución.
+  texture_and_material: Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.
+  camera_and_composition: Tableau frontal con capas de foreground para line-of-sight y rutas silenciosas.
+  atmosphere_and_mood: Elegancia letal, paranoia social y tensión ritualizada.
+  rendering_and_quality: Faction key-art orientado a sandbox sistémico, lectura de sospecha y agencia del jugador.
 avoidRules:
   - watermark
   - text

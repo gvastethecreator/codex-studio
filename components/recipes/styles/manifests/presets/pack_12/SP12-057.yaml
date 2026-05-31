@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Aeronaval piracy romanticism with oxidized-industrial harbor verticality and high-drama sky-lane conflict.
-  subject_treatment: Distinct pirate factions through sail signatures, crew silhouette coding, and asymmetric vessel identity markers.
-  color_and_tone: Verdigris patina greens, copper browns, storm-sea blues, and sunlit brass flashes for faction contrast.
-  lighting_and_shadow: Broken-cloud god rays, hull-edge rim light, volumetric distance haze, and high-contrast boarding action pockets.
-  texture_and_material: Tar-sealed timber, corroded brass fittings, stressed sailcloth, riveted plating patches, and salt-weathered deck surfaces.
-  camera_and_composition: Diagonal aerial engagement staging with altitude-tier layering, crossing trajectory lines, and flagship focal lock.
-  atmosphere_and_mood: Swashbuckling aggression, opportunistic greed, and storm-borne spectacle.
-  rendering_and_quality: Premium faction splash-art finish with clear combat readability, dynamic aerial scale, and collectible-poster impact.
+  aesthetic: Sky-piracy aeronaval en puerto verdigris, enfocada en abordaje aéreo, dominio de carriles y botín oportunista.
+  subject_treatment: Facciones pirata diferenciadas por velamen, silueta de tripulación y firma de nave.
+  color_and_tone: Verde pátina, cobre marrón, azul tormenta y destellos de latón para contraste de facción.
+  lighting_and_shadow: Claros rotos entre nubes, rim light de casco y niebla volumétrica por altura.
+  texture_and_material: Madera alquitranada, latón corroído, lona tensionada y planchas remachadas salinizadas.
+  camera_and_composition: Escena diagonal de combate aéreo con capas por altitud y trayectorias cruzadas legibles.
+  atmosphere_and_mood: Agressiva, codiciosa y espectacularmente tormentosa.
+  rendering_and_quality: Faction splash gameplay-first con lectura nítida de abordaje, flagship priority y escala aérea.
 avoidRules:
   - watermark
   - text

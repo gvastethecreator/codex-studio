@@ -265,6 +265,48 @@ describe('codexProvider', () => {
     expect(compiled.payload.text).toContain('fresh interpretation');
   });
 
+  it('adds structured quality intent before recipe directives', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-quality',
+      task: 'image_generate',
+      providerId: 'codex',
+      prompt: 'glass owl on a plinth',
+      quality: {
+        qualityPresetId: 'product_or_ui_asset',
+        subject: 'glass owl',
+        composition: 'centered three-quarter product view',
+        constraints: ['clean silhouette'],
+      },
+      metadata: {
+        recipeProviderDirectives: createRecipeProviderDirectives({
+          recipeId: 'styles',
+          title: 'Styles',
+          sections: [
+            {
+              title: 'Visual DNA',
+              directives: [{ label: 'Core Aesthetic', value: 'polished glass' }],
+            },
+          ],
+        }),
+      },
+    });
+
+    const compiled = compileCodexImagegenInput({
+      id: 'job-quality',
+      projectId: 'project-1',
+      prompt: 'fallback',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain('Quality preset:\nproduct_or_ui_asset');
+    expect(compiled.payload.text).toContain('- Subject: glass owl');
+    expect(compiled.payload.text).toContain('- Constraint: clean silhouette');
+    expect(compiled.payload.text.indexOf('Quality intent:')).toBeLessThan(
+      compiled.payload.text.indexOf('Recipe directives:'),
+    );
+  });
+
   it('delegates execution to the Codex Product Runtime with compiled input text', async () => {
     const calls: TurnParams[] = [];
     const turn: CodexTurn = {

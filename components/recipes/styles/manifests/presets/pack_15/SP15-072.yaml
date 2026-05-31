@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Campus perspective linking training zones.
   atmosphere: Discipline, ambition, and heroic futurism.
   key_features: Simulator pods, cadet parade deck, and star-map hall.
-  creative_brief: A raypunk school where courage is trained as a technical skill.
+  creative_brief: >-
+    Preserve zenith ray-academy grammar as a reusable style system:
+    aspirational pilot-institution order, launch-lane discipline, and
+    heroic pedagogic futurism should remain coherent across subjects.
 avoidRules: [photoreal, medieval, cyberpunk-dystopia, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-072.webp }
 attributes:

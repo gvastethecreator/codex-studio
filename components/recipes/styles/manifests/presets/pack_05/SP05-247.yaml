@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: English-cottage occult romance, horned mage mystery, fairy folklore, moss and bone, tea and terror coexisting in lush magical domesticity
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Enchanted, lonely, mossy, intimate
-  key_features: Cottage interiors, fairy-folk props, horned mage silhouette, moss textures, magical domestic ritual
-  creative_brief: A thorn-hedged cottage breathes with fairies, bone charms, and the quiet terror of being loved by something ancient and horned. Tea steeps beside occult tomes; domestic magic grows in moss between stones. Enchantment is not spectacle but the creak of a floorboard at dusk.
+  aesthetic: Romance ocultista doméstica de cottage británico, entre ternura ritual y extrañeza feérica de hueso y musgo.
+  form_and_line: Contorno delicado de cuento gótico, silueta cornuda icónica y detalle botánico en entorno íntimo.
+  color_palette: Verde musgo, crema té, marrón madera húmeda, negro hueso y dorado tenue de lámpara.
+  lighting_setup: Luz de atardecer filtrada por ventana, velas bajas y brillos mágicos discretos de hadario interior.
+  material_texture: Piedra húmeda, madera antigua, porcelana de té, pergamino arcano y fibras vegetales vivas.
+  render_quality: Fantasía íntima de alta atmósfera con microdetalle doméstico y pulsación sobrenatural sutil.
+  spatial_distortion: Espacio acogedor comprimido, profundidad de pasillo rural y foco en rituales de escala humana.
+  atmosphere: Encantada, melancólica y cálida, con inquietud amorosa latente.
+  key_features: Interior de cottage, talismanes óseos, silueta del mago, folklore feérico y rito cotidiano mágico.
+  creative_brief: >-
+    Define una gramática thorn-cottage reusable donde domesticidad ritual,
+    naturaleza encantada y misterio afectivo convivan sin perder delicadeza ni
+    tensión sobrenatural.
 avoidRules:
   - realistic
   - 3d render

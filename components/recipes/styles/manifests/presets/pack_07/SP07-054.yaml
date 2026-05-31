@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Hyper-dense techno-brutalist residential style focused on vertical compression, improvised modularity, and infrastructural overload
-  form_and_line: Repeating module stacks, cable-bundle diagonals, service-ladder zigzags, grille and shutter rhythms, fragmented light channels
+  aesthetic: Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural persistente.
+  form_and_line: Apilamiento modular repetitivo, diagonales de cableado, escaleras de servicio zigzagueantes y canales de luz fragmentados.
   color_palette: Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints
-  lighting_setup: Persistent artificial spill, flicker-prone practicals, hard occlusion pockets, wet-surface micro-reflections, narrow contrast windows
-  material_texture: Corrugated steel fatigue, polymer grime bloom, layered paint peel, stained concrete, oxidized fastener patina, damp residue
-  render_quality: High-detail architectural dystopia rendering with clutter legibility, controlled noise, and material density realism
+  lighting_setup: Derrame artificial continuo, prácticos inestables, oclusión dura y microreflejos húmedos de contraste estrecho.
+  material_texture: Acero corrugado fatigado, polímero con mugre incrustada, pintura pelada en capas y hormigón manchado.
+  render_quality: Densidad distópica de detalle alto, clutter legible y ruido visual controlado.
   spatial_distortion: Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals
-  atmosphere: Oppressive, overbuilt, unstable, electrically saturated, survivalist
-  key_features: Modular stack logic, exposed service infrastructure, cable congestion patterns, degraded industrial surfaces, constrained circulation geometry
+  atmosphere: Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.
+  key_features: Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y circulación constreñida.
   creative_brief: >-
-    Preserve the style as a system of compression and infrastructural excess:
-    the visual identity must emerge from modular density, material wear, and
-    electric clutter rather than a specific named district.
+    Construye una gramática slum-cyber transferible en la que densidad modular,
+    desgaste material y clutter eléctrico definan identidad. Debe sentirse
+    estructuralmente comprimida, no meramente sucia o caótica.
 avoidRules:
   - clean
   - wide streets

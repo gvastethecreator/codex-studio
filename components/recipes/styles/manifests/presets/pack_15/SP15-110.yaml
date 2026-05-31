@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Plaza-centered circular layout with branching signal arms.
   atmosphere: Communication, adaptation, and communal intelligence.
   key_features: Spore beacons, memory spores, and public signal blooms.
-  creative_brief: A biopunk plaza where spores carry the city’s messages like living civic infrastructure.
+  creative_brief: >-
+    Preserve spore signal-plaza grammar as a reusable style system:
+    fungal communication monuments, circular signal-civic choreography, and
+    communal adaptive intelligence should remain coherent across subjects.
 avoidRules: [photoreal, horror, grimdark, watermark, text, logo, over-saturation]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-110.webp }
 attributes:

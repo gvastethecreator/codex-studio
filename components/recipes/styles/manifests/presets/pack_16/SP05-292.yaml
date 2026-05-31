@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Historical biwa performance exploding into glam-rock spectacle, distorted limbs turned into stage identity, medieval Japan colliding with ecstatic music-theater motion
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Ecstatic, theatrical, historical, rebellious
-  key_features: Stage-performance poses, historical costume-glam fusion, biwa instrumentation, audience-energy framing, body-transformation iconography
-  creative_brief: A biwa string snaps and the Heike dead rise not in vengeance but in glam rock glory, distorted bodies becoming the instruments of their own reclamation. Medieval Japan ghosts discover electricity, their grief transformed into a stage spectacle that history cannot silence. The performance is not rebellion but resurrection, every chord a name spoken aloud for the first time in centuries.
+  aesthetic: Teatro musical histórico-punk con energía de resurrección escénica, donde tradición narrativa y performance glam se fusionan sin nostalgia conservadora.
+  form_and_line: Trazos elásticos y angulares para corporalidad performativa, siluetas exageradas de escenario y pose dramática de alta visibilidad.
+  color_palette: Rojos de telón, púrpuras eléctricos, negros de escenario y dorados antiguos reactivados como acentos de linaje.
+  lighting_setup: Contraluces de concierto, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.
+  material_texture: Tejidos históricos reinterpretados con brillo de show, madera de tarima, cuerdas de instrumento y humo de performance.
+  render_quality: Acabado premium de ópera-rock animada con foco en impacto gestual, lectura coral y ritmo visual musical.
+  spatial_distortion: Espacio escénico expansivo con perspectiva de público y compresión frontal en momentos de explosión performativa.
+  atmosphere: Extático, rebelde, ceremonial, liberador.
+  key_features: Fusión vestuario histórico-glam, iconografía musical central, cuerpos transformados en manifiesto escénico y audiencia en trance.
+  creative_brief: Diseña una gramática reusable de teatro-punk histórico para cualquier sujeto, usando pose musical extrema, luz de concierto y ornamentación de linaje resignificada.
 avoidRules:
   - realistic
   - 3d render

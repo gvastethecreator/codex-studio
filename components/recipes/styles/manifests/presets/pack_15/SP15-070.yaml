@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: High-volume orbital post office linking remote colonies.
-  form_and_line: Sorting belts, capsule chutes, and docking loops.
-  color_palette: Tangerine, gray, and cyan.
-  lighting_setup: Workbay strips and status beacon flashes.
-  material_texture: Cargo polymers, metal mesh, and stencil paint.
-  render_quality: Functional worldbuilding concept.
-  spatial_distortion: Layered conveyor depth through sorting hall.
-  atmosphere: Kinetic order and everyday cosmic logistics.
-  key_features: Mail rockets, capsule racks, and route holograph boards.
-  creative_brief: A raypunk depot where postal reliability keeps the frontier alive.
+  aesthetic: Orbital postal machinery treated like a cheerful mechanical circulatory system for scattered colonies.
+  form_and_line: Sorting-belt arteries, capsule chute veins, docking-loop organs, route-board grids, and stamped rocket silhouettes.
+  color_palette: Tangerine mail paint, graphite gray, ion cyan, paper white, and red priority-strip accents.
+  lighting_setup: Workbay strip rhythm, status beacon flashes, scanner-line sweeps, and cyan glow inside capsule chutes.
+  material_texture: Cargo polymers, metal mesh, stencil paint, paper label edges, worn rubber belts, and scuffed capsule shells.
+  render_quality: Functional worldbuilding concept with high logistical readability and playful graphic coding.
+  spatial_distortion: Layered conveyor depth that moves like circulation through foreground belts, midground racks, and docking loops.
+  atmosphere: Kinetic order, everyday cosmic logistics, civic trust, and absurdly heroic reliability.
+  key_features: Mail rocket silhouettes, capsule rack grids, route holograph boards, stamp-color lanes, and priority chute clusters.
+  creative_brief: >-
+    Push orbit postal-depot as reusable style: make subjects feel sorted,
+    routed, stamped, and kept alive by bright orbital logistics, with mail
+    graphics acting as both decoration and system diagram.
 avoidRules: [photoreal, medieval, cyberpunk-noir, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-070.webp }
 attributes:
   negativePrompt: photoreal, medieval, cyberpunk-noir, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Rustic shelter style emphasizing heavy natural mass, handcrafted durability, and hearth-centered warmth
-  form_and_line: Thick timber geometries, stacked masonry rhythm, robust joinery expression, compact protective proportions
-  color_palette: Burnt umber and smoked oak base, ember ambers, pine-greens, muted ash neutrals, low-saturation warmth gradients
-  lighting_setup: Hearth-priority low-key glow, warm practical flicker, soft exterior daylight filtration, deep shadow comfort zones
-  material_texture: Hand-hewn wood grain, rough stone porosity, wool and hide tactility, forged metal patina, matte earthen finishes
-  render_quality: Authentic rustic realism with material weight clarity, thermal atmosphere, and durable craft legibility
-  spatial_distortion: Stable enclosed depth with compressive intimacy that reinforces protective interior character
-  atmosphere: Sheltering, grounded, quiet, warm, resilient
-  key_features: Hearth-centric composition, heavy natural material hierarchy, handcrafted structural expression, thermal visual comfort
+  aesthetic: Refugio rústico de masa natural, oficio manual visible y calor centrado en núcleo térmico.
+  form_and_line: Geometrías gruesas de madera y mampostería, ensambles robustos, proporciones compactas protectoras.
+  color_palette: Umber quemado, roble ahumado, ámbar brasa, verde pino y cenizas neutras de baja saturación.
+  lighting_setup: Prioridad de hogar/chimenea, parpadeo cálido de prácticos, filtrado diurno moderado y zonas de sombra confortable.
+  material_texture: Veta labrada a mano, piedra porosa, lana y piel, metal forjado patinado y acabados terrosos mates.
+  render_quality: Realismo rústico auténtico con lectura de peso material y construcción duradera.
+  spatial_distortion: Profundidad cerrada estable con compresión íntima de abrigo.
+  atmosphere: Protector, terrenal, silencioso y resistente.
+  key_features: Centro térmico dominante, jerarquía de materiales pesados, carpintería artesanal y confort visual cálido.
   creative_brief: >-
-    Keep this preset identifiable by massy natural materials and hearth-led
-    light behavior, translating rustic protection and craft durability across
-    different interior subjects.
+    Preserva una gramática rústica transferible basada en masa, fuego y oficio.
+    El estilo debe comunicar protección climática y permanencia material en
+    cualquier programa interior, sin quedar atado a una cabaña específica.
 avoidRules:
   - city
   - modern

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Alien nocturnal jungle with reactive bioluminescent flora.
-  subject_treatment: Tactical squad hidden among giant ferns.
-  color_and_tone: Phosphorescent greens, ink blues, and lime accents.
-  lighting_and_shadow: Localized organic light with softly scattering fog.
-  texture_and_material: Wet bark, translucent leaves and thick mud.
-  camera_and_composition: Low angle, tension diagonals, layered depth.
-  atmosphere_and_mood: Stealth, danger, and biological wonder.
-  rendering_and_quality: Mission concept art, high gameplay readability.
+  aesthetic: Extraction shooter en bioma alienígena nocturno, con énfasis en rastreo, stealth y navegación orgánica hostil.
+  subject_treatment: Escuadras de 3-4 roles con perfiles térmicos y lectura inmediata de aliado/enemigo en vegetación densa.
+  color_and_tone: Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.
+  lighting_and_shadow: Luz orgánica puntual + niebla volumétrica para ocultamiento parcial y ventanas de visibilidad situacional.
+  texture_and_material: Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.
+  camera_and_composition: Composición por capas de cobertura, líneas de visión quebradas y diagonales de emboscada.
+  atmosphere_and_mood: Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.
+  rendering_and_quality: Concept gameplay con claridad de encounter design, lectura de terreno y prioridades de target.
 avoidRules:
   - watermark
   - text

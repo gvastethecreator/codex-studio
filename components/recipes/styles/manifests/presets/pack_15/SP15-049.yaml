@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Financial skybridge district in opulent machine-age style.
-  form_and_line: Stepped towers, chevron braces, and arched connectors.
-  color_palette: Black lacquer, brass, and jade.
-  lighting_setup: Evening marquee bands and art-deco uplights.
-  material_texture: Polished stone, gilded trim, and smoked glass.
-  render_quality: Luxurious urban concept with geometric clarity.
-  spatial_distortion: Elevated perspective across bridge network.
-  atmosphere: Ambition, secrecy, and metropolitan glamour.
-  key_features: Currency halls, deco skybridges, and turbine lobbies.
-  creative_brief: A decopunk exchange quarter where wealth circulates through architecture.
+  aesthetic: Decopunk finance as aerial circulation, where wealth moves through bridges like a hidden weather system of brass and jade.
+  form_and_line: Stepped towers, chevron brace stacks, arched connectors, ledger-band facades, and suspended vault-threshold frames.
+  color_palette: Black lacquer, aged brass, deep jade, smoke glass gray, and small currency-green glints.
+  lighting_setup: Evening marquee bands, deco uplights, brass edge glow, and jade reflections caught in smoked glass.
+  material_texture: Polished stone, gilded trim, smoked glass, lacquer panels, jade inlay, and fingerless vault-door metal.
+  render_quality: Luxurious urban concept with strict geometric clarity and readable financial circulation.
+  spatial_distortion: Elevated bridge perspective interlocks atria, towers, and vertical wealth channels into a controlled maze.
+  atmosphere: Ambition, secrecy, metropolitan glamour, and elegant predation.
+  key_features: Currency hall thresholds, deco skybridge ribs, turbine lobby forms, vault portals, and chevron transaction lanes.
+  creative_brief: >-
+    Preserve deco skybridge-exchange grammar as a reusable style system:
+    elevated financial circulation, lacquer-and-brass wealth coding, and
+    geometric metropolitan predation should remain coherent across subjects.
 avoidRules: [photoreal, rustic, cyber-neon-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-049.webp }
 attributes:
   negativePrompt: photoreal, rustic, cyber-neon-chaos, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

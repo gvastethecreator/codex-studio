@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Long axis perspective through layered dials.
   atmosphere: Measured movement and navigational discipline.
   key_features: Direction dials, time markers, and route brasswork.
-  creative_brief: A clockpunk transit hall where travel is calibrated by instrument-grade ritual.
+  creative_brief: >-
+    Preserve brass astrolabe-passage grammar as a reusable style system:
+    navigational-instrument corridor rhythm, calibrated directional ritual,
+    and measured transit discipline should remain coherent across subjects.
 avoidRules: [photoreal, toy-like, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-087.webp }
 attributes:

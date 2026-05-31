@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Hunt for wild mechs in a metallic forest.
-  subject_treatment: Trackers wielding electromagnetic bows.
-  color_and_tone: Oxide green, copper, and electric blue.
-  lighting_and_shadow: Backlight filtered through steel leaves.
-  texture_and_material: Alloy trunks, organic cabling, and mud.
-  camera_and_composition: Stalking shot with prey in the background.
-  atmosphere_and_mood: Stealth, tension, and precision.
-  rendering_and_quality: Eco-hunting gameplay concept.
+  aesthetic: Mech-hunt táctico en bosque metálico vivo, centrado en rastreo de firmas, sigilo y captura selectiva.
+  subject_treatment: Trackers con arcos electromagnéticos y roles de scout, trampa y remate.
+  color_and_tone: Verde óxido, cobre y azul eléctrico para señalizar biomasa sintética y actividad mecánica.
+  lighting_and_shadow: Contraluz filtrado por follaje de acero con zonas de ocultamiento táctico.
+  texture_and_material: Troncado de aleación, cableado orgánico, barro conductor y depósitos de limadura.
+  camera_and_composition: Encuadre de acecho con presa al fondo y rutas de rodeo claramente legibles.
+  atmosphere_and_mood: Silenciosa, precisa y de tensión incremental.
+  rendering_and_quality: Hunting gameplay concept con claridad de firma objetivo, cobertura y ventana de ataque.
 avoidRules:
   - watermark
   - text

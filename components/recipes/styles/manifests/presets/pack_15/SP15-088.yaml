@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Harbor depth leading to a central time tower.
   atmosphere: Order, signal discipline, and civic tide control.
   key_features: Tide clocks, signal cranes, and quay pendulums.
-  creative_brief: A clockpunk port where schedules regulate waves as much as ships.
+  creative_brief: >-
+    Preserve timekeeper harbor grammar as a reusable style system:
+    maritime schedule governance, tidal signal control machinery, and
+    beacon-led civic coordination should remain coherent across subjects.
 avoidRules: [photoreal, neon-dystopia, industrial-rust, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-088.webp }
 attributes:

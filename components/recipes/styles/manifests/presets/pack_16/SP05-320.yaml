@@ -12,19 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Easygoing cosmic rogue swagger, laser arm, nightclub planets, flirtation and danger with a perpetual grin, pulp-space cool rendered in cel-era shine
-  form_and_line: Pulp-space rogue silhouette language, sleek swagger posture geometry, clean retro contour confidence, action-strip staging
-  color_palette: Signature red-jacket dominance, nightclub neon purples, smoky ambers, steel-blues, and comic-pulp contrast blacks
-  lighting_setup: Lounge-noir practical lighting, laser-edge highlights, low-key corridor pools, starfield back rim
-  material_texture: Glossy retro-future wardrobe sheen, smoke-layer diffusion, brushed sci-fi surfaces, analog cel compositing grain
-  render_quality: Stylish 80s pulp-space anime fidelity with crisp character readability and seductive retro-noir atmosphere
-  spatial_distortion: Charisma-first framing, corridor perspective pull, dynamic one-versus-many staging with confident center-weight
-  atmosphere: Cocky, cosmic, playful, dangerous
-  key_features: Red-jacket icon silhouette, laser-arm motif, nightclub-planet ambience, pulp rogue attitude grammar
-  creative_brief: >-
-    Preserve Cobra’s identity through effortless rogue charisma, pulp-space
-    noir styling, and seductive retro-futurist framing. The style must read
-    as playful danger and cosmopolitan swagger, not generic space-opera action.
+  aesthetic: Pulp espacial canalla de carisma seductor, con humor insolente y peligro cool en clave noir retrofuturista.
+  form_and_line: Silueta rogue confiada, postura relajada de duelo y contorno cel limpio con staging pulp de viñeta dinámica.
+  color_palette: Dominante rojo-jacket, púrpuras de club interestelar, ámbar ahumado y azules acero de corredor espacial.
+  lighting_setup: Iluminación lounge-noir, bordes de láser, charcos de luz baja y rim estelar de fondo cosmopolita.
+  material_texture: Brillo de vestuario retro, humo difuso de ambiente, superficies sci-fi cepilladas y grano compositivo analógico.
+  render_quality: Acabado premium pulp-80s con legibilidad total del protagonista y atmósfera de peligro juguetón.
+  spatial_distortion: Encuadre centrado en carisma con perspectiva de pasillo y dinámica one-vs-many de alta confianza.
+  atmosphere: Desfachatada, cósmica, juguetona, peligrosa.
+  key_features: Icono chaqueta roja, motivo brazo-láser, ambiente club-planetario y gramática de bribón galáctico.
+  creative_brief: Construye una gramática reusable de rogue pulp espacial para cualquier sujeto, equilibrando seducción, ironía y amenaza en encuadre elegante de anti-héroe carismático.
 avoidRules:
   - realistic
   - 3d render

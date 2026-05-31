@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Cascading basin sequence to central thermal core.
   atmosphere: Restoration and social calm.
   key_features: Thermal baths, filter columns, and communal changing arcs.
-  creative_brief: A lunarpunk wellness district where hygiene is civic ritual.
+  creative_brief: >-
+    Preserve silver regolith-baths grammar as a reusable style system:
+    cascading thermal infrastructure, mineral-filtration social wellness, and
+    restorative civic calm should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-medlab, cyber-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-081.webp }
 attributes:

@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Frontier scrapyard rebuilding broken explorers into new ships.
-  form_and_line: Debris stacks, crane arms, and repair bays.
-  color_palette: Rust orange, cobalt, and black.
-  lighting_setup: Arc welding sparks and floodlight cones.
-  material_texture: Scored metal, cable bundles, and burnt paint.
-  render_quality: Gritty pulp concept with rich prop detail.
-  spatial_distortion: Dense layered junkyard depth.
-  atmosphere: Ingenuity under pressure and outlaw pragmatism.
-  key_features: Salvage cranes, part bazaars, and retrofit pits.
-  creative_brief: A raypunk yard where every wreck becomes a second launch.
+  aesthetic: Raypunk resurrection style where wreckage is treated like raw myth and every repair bay becomes an outlaw altar.
+  form_and_line: Debris totems, crane-arm silhouettes, retrofit pit rings, cable-bundle roots, and half-rebuilt hull profiles.
+  color_palette: Rust orange, cobalt worklight, tar black, welding white, and chipped mission-patch color.
+  lighting_setup: Arc-welding sparks, floodlight cones, backlit dust, and cobalt glows under raised wreck sections.
+  material_texture: Scored metal, cable bundles, burnt paint, patched hull cloth, greasy tool foam, and cratered ceramic plating.
+  render_quality: Gritty pulp concept with rich prop detail and clear salvage hierarchy.
+  spatial_distortion: Dense layered depth built from stacked wreck silhouettes, repair pits, and crane diagonals.
+  atmosphere: Ingenuity under pressure, outlaw pragmatism, second chances, and mechanical stubbornness.
+  key_features: Salvage crane claws, part bazaar trays, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.
+  creative_brief: >-
+    Push comet salvage-yard as reusable style: make subjects feel rebuilt from
+    heroic wreckage, with repair scars, crane diagonals, and outlaw invention
+    carrying emotional weight.
 avoidRules: [photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-067.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

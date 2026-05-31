@@ -43,25 +43,31 @@ describe('buildStudioHeaderToolbarProps', () => {
         onToggleDebug: () => calls.push('toggleDebug'),
       },
       commandCenter: {
-        defaultProviderId: null,
-        statusItems: [
-          {
-            key: 'backend',
-            label: 'Backend',
-            value: 'Offline',
-            detail: '...',
-            tone: 'danger',
-          },
-        ],
-        queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
-        queueJobCount: 3,
-        activeServerJobCount: 1,
-        isQueueOpen: false,
-        setIsQueueOpen: (value) => {
-          nextQueueOpen = typeof value === 'function' ? value(false) : value;
-          calls.push(`toggleQueue:${String(nextQueueOpen)}`);
+        provider: {
+          defaultProviderId: null,
         },
-        onOpenSettings: () => calls.push('openSettings'),
+        queue: {
+          statusItems: [
+            {
+              key: 'backend',
+              label: 'Backend',
+              value: 'Offline',
+              detail: '...',
+              tone: 'danger',
+            },
+          ],
+          queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
+          queueJobCount: 3,
+          activeServerJobCount: 1,
+          isQueueOpen: false,
+          setIsQueueOpen: (value) => {
+            nextQueueOpen = typeof value === 'function' ? value(false) : value;
+            calls.push(`toggleQueue:${String(nextQueueOpen)}`);
+          },
+        },
+        actions: {
+          onOpenSettings: () => calls.push('openSettings'),
+        },
       },
       startTransition: (callback) => {
         calls.push('transition');

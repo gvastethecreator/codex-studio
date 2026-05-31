@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Corrupted carnival-horror spectacle blending festive visual language with predatory underworld game-space design.
-  subject_treatment: Twisted ringmaster archetypes, malfunctioning attraction constructs, and exaggerated mascot-fear iconography.
-  color_and_tone: Nicotine yellows, coagulated carmine, bruise-violet haze, and intermittent sodium-white glare for unstable tonal rhythm.
-  lighting_and_shadow: Erratic marquee flicker, strobing practicals, volumetric fog beams, and deep pocketed shadows at circulation edges.
-  texture_and_material: Cracked enamel coatings, mildew-stained canvas, rusted ride mechanics, and grease-darkened junction hardware.
-  camera_and_composition: Choke-point entry composition with layered threat reveals, asymmetrical framing tension, and forced perspective funnels.
-  atmosphere_and_mood: Carnivalesque dread, malicious playfulness, and escalating boss-arena unpredictability.
-  rendering_and_quality: High-impact encounter concept-art fidelity with clear gameplay readability and grotesque environmental character.
+  aesthetic: Horror-action de parque maldito con diseño de encounter arena, telegraphs engañosos y progresión por zonas corruptas.
+  subject_treatment: Arquetipos ringmaster monstruoso, atracciones fallidas hostiles y simbología mascot-fear como señal de mecánica.
+  color_and_tone: Amarillos nicotina, carmín coagulado, violeta amoratado y blanco sodio intermitente para inestabilidad emocional.
+  lighting_and_shadow: Parpadeo errático de marquesina, estrobos prácticos y sombras profundas en bordes de circulación.
+  texture_and_material: Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.
+  camera_and_composition: Entradas en choke-point con revelación escalonada de amenazas y funnels de presión.
+  atmosphere_and_mood: Macabra, burlona y crecientemente impredecible.
+  rendering_and_quality: Encounter key-art de alto impacto con legibilidad de fases de boss y hazards ambientales grotescos.
 avoidRules:
   - watermark
   - text

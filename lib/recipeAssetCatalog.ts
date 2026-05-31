@@ -1,33 +1,29 @@
 import type { RecipeId } from '../types';
 import { buildPackFallbackCatalog } from './stylePresetVisuals';
 
-type ImportMetaGlobFn = (
-  pattern: string,
-  options: { eager: true; query: '?url'; import: 'default' },
-) => Record<string, unknown>;
+const recipeCardImageFiles = import.meta.glob('../assets/recipes/cards/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, unknown>;
 
-function safeImportMetaGlob(pattern: string): Record<string, unknown> {
-  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
-  if (typeof glob === 'function') {
-    return glob(pattern, {
-      eager: true,
-      query: '?url',
-      import: 'default',
-    });
-  }
+const styleCategoryImageFiles = import.meta.glob('../assets/recipes/styles/category-bases/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, unknown>;
 
-  return {};
-}
+const styleDefaultImageFiles = import.meta.glob('../assets/recipes/styles/defaults/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, unknown>;
 
-const recipeCardImageFiles = safeImportMetaGlob('../assets/recipes/cards/*.webp');
-
-const styleCategoryImageFiles = safeImportMetaGlob(
-  '../assets/recipes/styles/category-bases/*.webp',
-);
-
-const styleDefaultImageFiles = safeImportMetaGlob('../assets/recipes/styles/defaults/*.webp');
-
-const stylePreviewImageFiles = safeImportMetaGlob('../assets/recipes/styles/previews/*.webp');
+const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, unknown>;
 
 function buildUrlCatalog(files: Record<string, unknown>) {
   const catalog: Record<string, string> = {};
@@ -46,9 +42,15 @@ function buildUrlCatalog(files: Record<string, unknown>) {
 const recipeCardCatalog = buildUrlCatalog(recipeCardImageFiles);
 const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
 
-export const RECIPE_CARD_IMAGES = recipeCardCatalog as Partial<
-  Record<Exclude<RecipeId, null>, string>
->;
+const recipeCardCatalogByRecipeId = Object.entries(recipeCardCatalog).reduce<
+  Partial<Record<Exclude<RecipeId, null>, string>>
+>((acc, [key, value]) => {
+  const normalizedKey = key.startsWith('recipe-') ? key.slice('recipe-'.length) : key;
+  acc[normalizedKey as Exclude<RecipeId, null>] = value;
+  return acc;
+}, {});
+
+export const RECIPE_CARD_IMAGES = recipeCardCatalogByRecipeId;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
 export const STYLE_DEFAULT_IMAGES = buildUrlCatalog(styleDefaultImageFiles);
 export const STYLE_PACK_FALLBACK_IMAGES = buildPackFallbackCatalog(STYLE_DEFAULT_IMAGES);

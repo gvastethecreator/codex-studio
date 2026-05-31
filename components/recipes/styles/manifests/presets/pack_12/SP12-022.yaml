@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Improvised arctic market in a hostile survival world.
-  subject_treatment: Armed traders and hunters with thermal lanterns.
-  color_and_tone: Glacial blues, warm amber, and smoke gray.
-  lighting_and_shadow: Localized lantern light against dense blizzard conditions.
-  texture_and_material: Scratched ice, heavy canvas, and wet wood.
-  camera_and_composition: Central alley with lively side stalls.
-  atmosphere_and_mood: Precarious refuge through an endless night.
-  rendering_and_quality: Readable, narrative survival hub.
+  aesthetic: Survival sandbox ártico con enclave comercial improvisado como nodo de crafting, trueque y expedición.
+  subject_treatment: Traders, hunters y scouts armados con perfiles de clase legibles por equipo térmico.
+  color_and_tone: Azul glaciar, ámbar cálido y gris humo para separar refugio de amenaza exterior.
+  lighting_and_shadow: Fuentes puntuales de farol sobre blizzard denso, con contraste funcional de zonas seguras.
+  texture_and_material: Hielo rayado, lona pesada, madera húmeda y metal congelado por uso extremo.
+  camera_and_composition: Calle central de hub con puestos laterales, puntos de misión y salida a whiteout.
+  atmosphere_and_mood: Refugio precario, cooperación tensa y supervivencia nocturna prolongada.
+  rendering_and_quality: Hub visual de alta legibilidad para economía de recursos y preparación de runs.
 avoidRules:
   - watermark
   - text

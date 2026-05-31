@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Fantasy-mecha hybrid with insect armor, misty otherworld terrain, sword-bearing machines, 80s dreamlike war fantasy suspended in glowing fog
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Strange, misty, heroic, otherworldly
-  key_features: Insect-mecha silhouettes, mist realms, sword poses, fantasy-war backdrops, luminous fog atmosphere
-  creative_brief: Chitinous steel beats translucent wings in mist so thick it becomes a character, a shroud that remembers ancient wars. Fantasy bleeds into circuitry and the sword becomes a question neither magic nor machine can answer alone. The air itself glows with the residue of impossible allegiances.
+  aesthetic: Fantasía bélica bio-mecánica de extrañeza onírica, fusionando imaginería de insecto, caballería y tecnología ritual.
+  form_and_line: Siluetas quiméricas de mecha con línea orgánico-metálica, poses de espada heroica y contorno clásico de cel.
+  color_palette: Verdes brumosos, violetas de crepúsculo arcano, metales opacos y acentos lumínicos etéreos.
+  lighting_setup: Niebla luminosa como fuente principal, key suave de contracampo y sombras planas que conservan legibilidad retro.
+  material_texture: Quitina metálica, membranas translúcidas, roca húmeda fantástica y ruido fílmico analógico.
+  render_quality: Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de guerra irreal sostenida.
+  spatial_distortion: Profundidad de valle envuelto en bruma con distorsión ligera de escala para reforzar mundo no terrestre.
+  atmosphere: Extraña, brumosa, heroica, ultraterrena.
+  key_features: Silueta mecha-insecto ritual, espada energética, niebla viva persistente y relieve fantástico en guerra.
+  creative_brief: Construye una gramática reusable de guerra bio-mecánica fantástica para cualquier sujeto, combinando niebla viva, siluetas quiméricas y heroísmo de espada tecnológica.
 avoidRules:
   - realistic
   - 3d render

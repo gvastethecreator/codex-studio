@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Rhythmic gymnastics team jumps, mat spring, synchronized airborne silhouettes, school-club encouragement and body-control beauty rendered with buoyant athletic optimism
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Light, synchronized, hopeful, energetic
-  key_features: Midair sync poses, gym-mat staging, team timing cues, body-extension elegance, school-club warmth
-  creative_brief: Bodies arc through gymnasium air in synchronized constellations, suspended for a heartbeat between spring-mat rebound and gravity's recall. Team trust written in midair geometry where individual doubt dissolves into collective flight.
+  aesthetic: Gimnasia rítmica masculina de club escolar, centrada en sincronía aérea, ritmo de conjunto y control corporal.
+  form_and_line: Extensiones limpias de columna y piernas, arcos de salto coordinados y timing gestual colectivo.
+  color_palette: Azules y blancos de uniforme, acentos naranja de energía y fondos cálidos de gimnasio de competencia.
+  lighting_setup: Luz deportiva homogénea con realce en fase aérea y sombra suave sobre colchoneta.
+  material_texture: Colchoneta de rebote granular, textil elástico técnico, resina de agarre ligera y piso deportivo pulido.
+  render_quality: Frame deportivo de alta nitidez con legibilidad de sincronía, altura y aterrizaje.
+  spatial_distortion: Foreshortening vertical moderado para enfatizar suspensión grupal y alineación de figuras.
+  atmosphere: Ligera, esperanzadora, sincronizada y vibrante.
+  key_features: Poses midair en espejo, lectura de conteo, extensión corporal y calor de club escolar.
+  creative_brief: >-
+    Define una gramática reusable de rhythmic-flight-team donde sincronía
+    aérea, precisión de rebote y confianza colectiva articulen identidad visual
+    transferible sin depender de una coreografía puntual.
 avoidRules:
   - realistic
   - 3d render

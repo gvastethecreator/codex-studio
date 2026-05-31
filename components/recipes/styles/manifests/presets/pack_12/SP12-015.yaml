@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Ancient ruins fused with colossal technology.
-  subject_treatment: Inactive mechanical colossi as living architecture.
-  color_and_tone: Beige stone, green patina and blue core.
-  lighting_and_shadow: Zenithal rays between cracks and suspended dust.
-  texture_and_material: Basalt, embedded circuits, and dry moss.
-  camera_and_composition: Monumental scale with a minimal human figure.
-  atmosphere_and_mood: Reverence, mystery, and lost grandeur.
-  rendering_and_quality: Matte concept for discovery area.
+  aesthetic: Metroidvania tecno-arcano de ruina monumental con foco en exploración, gating y activación de sistemas ancestrales.
+  subject_treatment: Colosos mecánicos como arquitectura interactiva por estados (dormant/active/hostile).
+  color_and_tone: Piedra beige, pátina verde y núcleos azules para señalizar función tecnológica latente.
+  lighting_and_shadow: Rayos cenitales y polvo volumétrico para guiar descubrimiento de paths secretos.
+  texture_and_material: Basalto, circuitería incrustada, musgo seco y juntas mecánicas erosionadas.
+  camera_and_composition: Escala monumental con anclas humanas mínimas para reforzar lectura de progreso espacial.
+  atmosphere_and_mood: Reverente, misteriosa y arqueotecnológica.
+  rendering_and_quality: Matte gameplay concept con landmarks de navegación y jerarquía de interacción ambiental.
 avoidRules:
   - watermark
   - text

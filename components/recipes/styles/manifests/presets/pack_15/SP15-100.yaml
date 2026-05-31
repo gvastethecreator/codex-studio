@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Layered rooftop perspective climbing into the skyline.
   atmosphere: Social warmth, abundance, and neighborhood exchange.
   key_features: Rooftop stalls, herb beds, and rainwater channels.
-  creative_brief: A solarpunk neighborhood market that turns every roof into shared productive land.
+  creative_brief: >-
+    Preserve roofgarden market-terraces grammar as a reusable style system:
+    layered edible urbanism, rooftop exchange conviviality, and
+    productive-neighborhood abundance should remain coherent across subjects.
 avoidRules: [photoreal, sterile-minimal, cyberpunk, watermark, text, logo, cold-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-100.webp }
 attributes:

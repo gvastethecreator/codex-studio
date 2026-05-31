@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Borg-inspired cybernetic hive-architecture language emphasizing modular collective infrastructure, relentless utility, and machine-organic integration
-  form_and_line: Orthogonal cube massing, dense conduit bundles, repetitive alcove grids, emitter-ring nodes, layered service gantries, and infrastructural panel recursion
+  aesthetic: Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.
+  form_and_line: Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de servicio.
   color_palette: Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep void-shadow undertones
-  lighting_setup: Low-key space ambience, pulsing green conduit glow, localized alcove practicals, intermittent plasma highlights, and high-contrast industrial shadow depth
-  material_texture: Greeble-dense armor plates, biomechanical interface surfaces, cable harness clusters, regeneration-gel translucency, machined panel seams, and worn conductive patina
-  render_quality: High-density techno-industrial rendering with strong modular repetition, oppressive mechanical precision, and coherent cybernetic-hive identity
+  lighting_setup: Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de alto contraste.
+  material_texture: Placas greeble densas, interfaces biomecánicas, arneses de cable, gel translúcido y pátina conductiva desgastada.
+  render_quality: Tecnoindustrial denso con repetición modular estricta y precisión mecánica opresiva.
   spatial_distortion: None
-  atmosphere: Ominous, collective, dehumanized, efficient, and technologically invasive
-  key_features: Cube-shell modularity, regeneration alcove matrices, conduit superstructure webs, green plasma channeling, emitter-ring apparatus, and dense service-surface detailing
+  atmosphere: Ominosa, deshumanizada y eficiente, con invasividad tecnológica constante.
+  key_features: Modularidad cube-shell, matrices de regeneración, superred de conducciones, canales de plasma verde y aparatos emisores circulares.
   creative_brief: >-
-    Keep the preset anchored in cybernetic-hive grammar: orthogonal cube
-    macroform, conduit-saturated infrastructure, and phosphor-green collective
-    systems should remain consistent across subject changes.
+    Construye una gramática reusable de cybernetic-hive donde macroforma
+    cúbica ortogonal, infraestructura saturada de conducciones y sistemas
+    colectivos fosforoverdes sostengan identidad consistente.
 avoidRules:
   - smooth
 assets:

@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Grounded mature faces, urban suspense, tiny emotional shifts under huge moral pressure, procedural detail and old fears quietly filling the frame
-  form_and_line: Measured contour, realistic feature detail, restrained expression marks
+  aesthetic: Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el encuadre urbano.
+  form_and_line: Contorno medido, detalle facial naturalista y marcas expresivas mínimas de alta intención dramática.
   color_palette: Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent
-  lighting_setup: Fluorescent office realism, rainy-day window light, interrogation-level practical shadows
-  material_texture: Suit fabric, office paper, cigarette smoke haze, rain-specked glass, lived-in walls
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Fluorescencia de oficina, ventana lluviosa y sombras prácticas tipo interrogatorio en baja saturación.
+  material_texture: Tejido de traje, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.
+  render_quality: Dramaturgia de close-up sobrio con legibilidad psicológica y tensión procedural sostenida.
   spatial_distortion: Natural adult proportions, camera-close tension framing, realistic perspective, stillness-driven composition
-  atmosphere: Tense, grounded, adult, humane
-  key_features: Adult facial subtlety, urban procedural backdrops, moral-pressure close-ups, grounded body language, suspense in stillness
-  creative_brief: A face can flinch louder than a gunshot. Suspense lives in the micro-movement, the unspoken, the fluorescent hum of a room where someone has stopped lying. Adulthood is the pressure you cannot see.
+  atmosphere: Tensa, humana y terrenal, con inquietud ética persistente.
+  key_features: Sutileza facial adulta, fondos urbanos de procedimiento, close-ups bajo presión y suspense por casi inmovilidad.
+  creative_brief: >-
+    Construye una gramática reusable de adult-suspense donde el conflicto viva
+    en microgesto, espacio cotidiano y carga moral implícita. Debe evitar
+    espectacularidad y sostener tensión por observación.
 avoidRules:
   - still
   - calm

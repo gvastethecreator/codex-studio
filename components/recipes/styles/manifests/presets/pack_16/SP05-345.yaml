@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: 90s gym sweat and basketball swagger, delinquent charisma redirected into team play, underdog confidence, squeaking hardwood and emotional rebounds in a brightly lit school arena
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Sweaty, charismatic, competitive, hopeful
-  key_features: Basketball arc shots, gymnasium light pools, rivalry stare-downs, rebound body mechanics, court-side bench reactions
-  creative_brief: Swagger inherited from detention halls, channeled through a basketball. The squeak of sneakers is a redemption anthem played in gymnasium echo. Charisma is a rebound that changes trajectory.
+  aesthetic: Baloncesto escolar noventero de carisma callejero reconducido a juego colectivo y disciplina de equipo.
+  form_and_line: Anatomía atlética expresiva, arcos de tiro limpios, rebote corporal físico y acting rivalidad-driven.
+  color_palette: Rojos y blancos de uniforme clásico, madera miel, azul de sombra de gimnasio y acentos dorados cálidos.
+  lighting_setup: Luminaria escolar directa con rebote en parquet y sombras de media altura en clave retro.
+  material_texture: Madera encerada, balón granulado, tejido de jersey vintage y sudor de partido de alta fricción.
+  render_quality: Frame deportivo narrativo con lectura clara de posesión, rebote y contraataque.
+  spatial_distortion: Perspectiva de cancha media con exageración moderada de salto y penetración al aro.
+  atmosphere: Carismática, sudada, competitiva y esperanzada.
+  key_features: Trayectorias de tiro en arco, contacto de rebote, miradas de duelo y banca reactiva.
+  creative_brief: >-
+    Construye una gramática reusable de hardwood-rivalry donde energía escolar,
+    fisicidad de rebote y carisma de equipo mantengan identidad visual sin
+    quedar atados a una escena narrativa específica.
 avoidRules:
   - realistic
   - 3d render

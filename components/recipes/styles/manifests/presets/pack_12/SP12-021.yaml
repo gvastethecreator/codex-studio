@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Arid motorsport ceremonial-futurism with pageantry-grade race iconography and high-velocity desert spectacle.
-  subject_treatment: Performance drivers as faction-athlete silhouettes, lightweight combat-sport armor, heraldic motifs integrated into race gear.
-  color_and_tone: Sun-scorched ochres, oxidized turquoise, heat-haze ambers, and disciplined crimson accents for team readability.
-  lighting_and_shadow: Low-angle desert key light, elongated cast shadows, backlit dust plumes, and high-contrast rim separation on moving forms.
-  texture_and_material: Wind-abraded stone composites, burnished alloy fairings, stitched leather interfaces, and particulate sand abrasion layers.
-  camera_and_composition: Apex-turn framing with lateral motion vectors, multi-depth track geometry, and strong directional flow through foreground dust.
-  atmosphere_and_mood: Ritualized rivalry, kinetic honor culture, and high-stakes competitive intensity under harsh climate pressure.
-  rendering_and_quality: Premium event-key-art finish with crisp silhouette hierarchy, readable faction coding, and motion-rich environmental storytelling.
+  aesthetic: Racing-arcade ceremonial en desierto hostil, centrado en velocidad sostenida, control de derrape y rivalidad por escuderías.
+  subject_treatment: Pilotos como siluetas de facción con armadura ligera y señalética visual por rol de carrera.
+  color_and_tone: Ocres abrasados, turquesa oxidado, ámbar térmico y rojo disciplinado para lectura por equipo.
+  lighting_and_shadow: Luz rasante de tarde, sombras largas y polvo a contraluz para reforzar percepción de velocidad.
+  texture_and_material: Compuestos erosionados por arena, aleaciones bruñidas y desgaste mecánico por fricción constante.
+  camera_and_composition: Curva de apex con líneas de trayectoria, rutas de adelantamiento y capas de profundidad competitiva.
+  atmosphere_and_mood: Rivalidad ritual, intensidad técnica y presión climática permanente.
+  rendering_and_quality: Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.
 avoidRules:
   - watermark
   - text

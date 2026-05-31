@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Offbeat overpowered merchant fantasy, moonlit roads, demi-human communities, deadpan social detachment, practical trade and absurd strength sharing the same calm frame
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Detached, moonlit, practical, powerful
-  key_features: Merchant-road props, moonlit travel staging, overpowered calm posing, demi-human ensemble, trade-driven worldbuilding
-  creative_brief: Moonlight silver-plates the merchant road where a deadpan wanderer walks with world-breaking strength tucked behind an unassuming smile. Demi-human communities gather in the glow of practical trade, their unlikely protector moving through the night like a secret the moon already knows.
+  aesthetic: Isekai mercantil lunar de tono deadpan, donde poder abrumador convive con economía práctica y diplomacia local.
+  form_and_line: Silueta sobria de viajero, staging de negociación en ruta y contraste entre calma expresiva y fuerza implícita.
+  color_palette: Plata de luna, azul medianoche, verde comercio, ocre de camino y violeta tenue de aura contenida.
+  lighting_setup: Nocturnidad limpia, highlights de fogón y acentos suaves sobre puestos, mapas y mercancía.
+  material_texture: Madera de carreta, cuero de mercader, moneda metálica, tela de puesto y polvo de sendero.
+  render_quality: Fantasía de viaje transaccional con detalle de worldbuilding económico y poder subrayado por contención.
+  spatial_distortion: Espacio de ruta abierta con microescenas de intercambio y focalización en figura central serena.
+  atmosphere: Desapegada, práctica y confiada.
+  key_features: Road-market, comunidad demi-humana, postura overpowered serena y utilería comercial.
+  creative_brief: >-
+    Define una gramática moonlit-merchant reusable donde comercio itinerante,
+    convivencia multi-especie y poder desproporcionado de baja exhibición se
+    articulen con tono tranquilo.
 avoidRules:
   - realistic
   - 3d render

@@ -13,16 +13,16 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Grotesque anime horror in an abandoned theater.
-  form_and_line: Nervous strokes and stylized anatomical distortion.
-  color_palette: Dark burgundy, dirty ivory, and ink black.
-  lighting_setup: Dim central spotlight with theatrical shadows.
-  material_texture: Aged wood, torn velvet, and dense dust.
-  render_quality: Disturbing yet readable horror illustration.
-  spatial_distortion: Frontal stage framing with compressed depth.
-  atmosphere: Unease, strangeness, and implied body horror.
-  key_features: Ominous puppet, ripped curtain, empty stare.
-  creative_brief: Sinister stage scene with sustained visual tension.
+  aesthetic: Grotesque performance-horror language where theatrical elegance is corrupted by puppet-like anatomy and staged cruelty.
+  form_and_line: Twitchy contour cadence, marionette-joint segmentation, and curtain-driven framing lines that trap the focal subject.
+  color_palette: Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.
+  lighting_setup: Isolated stage spotlight with aggressive falloff, leaving wings and rafters in predatory darkness.
+  material_texture: Splintered stage timber, dust-saturated velvet, cracked lacquered props, and dry residue buildup.
+  render_quality: Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.
+  spatial_distortion: Proscenium compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.
+  atmosphere: Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
+  key_features: Puppet morphology cues, torn drapery vectors, empty seats as black void patterning, and central fixation points.
+  creative_brief: Define a reusable puppet-theater horror grammar by merging corrupted stage aesthetics, anatomical stylization, and spotlight-isolation composition.
 avoidRules:
   - photoreal
   - slapstick

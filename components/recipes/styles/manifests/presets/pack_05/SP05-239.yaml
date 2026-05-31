@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Wild scale shifts, pop-color mecha exuberance, expressive cosmic nonsense, energetic school-age pilots, giant impossible machines with playful confidence and heartbreak
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Exuberant, strange, huge, heartfelt
-  key_features: Scale-warp cosmic framing, pop-color mecha, playful pilot expressions, giant action silhouettes, impossible spectacle design
-  creative_brief: Cosmic scale warps into candy-colored chaos as school-age pilots pilot impossible machines with the confidence of children who have not yet learned limits. Geometry breaks, physics blushes, and the universe concedes to exuberance. Heartbreak lives inside the biggest things.
+  aesthetic: Exuberancia mecha pop-cósmica con elasticidad de escala, energía juvenil y sentimentalidad escondida bajo espectáculo imposible.
+  form_and_line: Líneas dinámicas de super-robot estilizado, poses expansivas y anatomía de acción expresiva no literal.
+  color_palette: Rosa bubblegum, azul eléctrico, amarillo solar, violeta espacial y blanco de flare emocional.
+  lighting_setup: Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto cromático.
+  material_texture: Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles mecánicos simplificados.
+  render_quality: Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del caos.
+  spatial_distortion: Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo frame.
+  atmosphere: Exultante, extraña y conmovedora, de caos colorido con corazón.
+  key_features: Mecha pop saturado, pilotos juveniles, espectáculo desmedido y cambios bruscos de escala cósmica.
+  creative_brief: >-
+    Construye una gramática bubblegum-overdrive reusable donde color explosivo,
+    elasticidad escalar y emoción juvenil convivan en equilibrio entre juego y
+    tragedia.
 avoidRules:
   - realistic
   - 3d render

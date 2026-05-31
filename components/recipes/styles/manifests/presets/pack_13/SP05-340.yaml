@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Classic beauty-anime portraiture, velvet eyelashes, painterly glamour, aristocratic poise, mature romantic intensity and old-school sophistication in every pose
-  form_and_line: Lash-rich contour, elegant facial precision, glamour-focused line softness
+  aesthetic: Retrato beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.
+  form_and_line: Contorno rico en pestaña, precisión facial refinada y suavidad lineal orientada a pose de alta clase.
   color_palette: Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach
-  lighting_setup: Beauty-portrait spotlighting, soft velvet shadow, glamour rim light, painterly cheek glow
-  material_texture: Velvet drape, glossy hair sheen, satin costume detail, old-cel portrait softness
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.
+  material_texture: Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.
+  render_quality: Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.
   spatial_distortion: Beauty-first portrait proportions, swan-neck posing, luxuriant hair framing, noble silhouette emphasis
-  atmosphere: Velvety, elegant, mature, dramatic
-  key_features: Lash-heavy portraits, aristocratic pose language, glamour close-ups, old-school beauty rendering, velvet mood
-  creative_brief: Eyelashes cast shadows that hold entire romances. Glamour is not decoration but the architecture of longing, painted in velvet and held breath. Every portrait is a confession dressed for a ballroom.
+  atmosphere: Aterciopelada, madura y dramática, de confesión íntima ceremonial.
+  key_features: Retrato lash-heavy, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.
+  creative_brief: >-
+    Define una gramática reusable de velvet-elegance donde retrato, textura
+    lujosa y tensión romántica sofisticada articulen identidad sin caer en
+    mera decoración superficial.
 avoidRules:
   - still
   - calm

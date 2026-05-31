@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Tight alley perspective with repeating façades.
   atmosphere: Craft pride, quiet focus, and intimate scale.
   key_features: Watchmaker benches, tool clocks, and repair kiosks.
-  creative_brief: A clockpunk artisan row where time is repaired one mechanism at a time.
+  creative_brief: >-
+    Preserve pocketwatch workshop-row grammar as a reusable style system:
+    intimate micro-mechanics craftsmanship, dense storefront repair culture,
+    and quiet precision pride should remain coherent across subjects.
 avoidRules: [photoreal, messy-industrial, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-089.webp }
 attributes:

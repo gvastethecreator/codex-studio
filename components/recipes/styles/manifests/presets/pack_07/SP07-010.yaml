@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Neo-futurist habitat style with seamless ergonomics, ambient intelligence, and high-purity spatial minimalism
-  form_and_line: Continuous shell geometry, cornerless flow transitions, integrated interface planes, and biomorphic module repetition
-  color_palette: Clinical white foundations with cool cyan-blue light channels, holographic silver mids, and sparse magenta signal accents
-  lighting_setup: Embedded indirect luminance, adaptive ambient gradients, responsive zone highlights, and soft panel-based glow architecture
-  material_texture: Composite smart surfaces, matte-gloss polymer contrast, low-friction glass skins, touch-reactive interface finishes
-  render_quality: Ultra-clean futuristic interior rendering with precision surfacing, controlled bloom, and sterile-detail clarity
-  spatial_distortion: Smooth axial continuity with no abrupt depth breaks, reinforcing weightless circulation and frictionless occupancy
-  atmosphere: Sterile, serene, advanced, controlled, weightless
-  key_features: Seamless shell language, integrated interface lighting, adaptive ambient systems, cornerless ergonomic flow
+  aesthetic: Hábitat neo-futurista de fricción cero, ergonomía continua e inteligencia ambiental integrada.
+  form_and_line: Shells continuas sin esquina, transiciones fluidas, planos interfaz embebidos y repetición biomórfica modular.
+  color_palette: Blanco clínico, cian/azul frío lumínico, plata holográfica y magenta puntual de señalización.
+  lighting_setup: Luminancia indirecta integrada, gradientes adaptativos por zona y glow controlado en paneles activos.
+  material_texture: Polímeros smart mate-brillo, vidrio de baja fricción, superficies táctiles reactivas y uniones invisibles.
+  render_quality: Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta legibilidad.
+  spatial_distortion: Continuidad axial suave, sin quiebres abruptos, con percepción de flotación funcional.
+  atmosphere: Controlada, avanzada, serena y ligeramente clínica.
+  key_features: Geometría cornerless, iluminación sistémica integrada, mobiliario fusión-carcasa y señalética mínima reactiva.
   creative_brief: >-
-    Preserve identity through seamless volumetric continuity and intelligent
-    ambient lighting behavior; the style should communicate post-friction
-    futurity regardless of specific room program.
+    Formula una gramática futurista transferible donde continuidad de carcasa,
+    luz adaptativa y ergonomía post-fricción sean innegociables. Cada sujeto
+    debe integrarse como extensión del sistema, no como objeto insertado.
 avoidRules:
   - old
   - dirty

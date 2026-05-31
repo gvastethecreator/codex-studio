@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Humanity-on-the-brink mecha warfare, alien mass threat, tactical suits in ruined cities, command-screen panic and military sacrifice at desperate scale
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Dire, militarized, relentless, sacrificial
-  key_features: Tactical suit silhouettes, command-screen overlays, alien swarm contrast, ruined city scale, emergency sortie framing
-  creative_brief: Tactical screens flicker red over cities already cadavers, and the line between sortie and sacrifice blurs to silence. Mecha stand in formation like headstones waiting for names. The alien mass is not a monster but a mathematics of despair.
+  aesthetic: Apocalipsis militar de desgaste total, con trajes tácticos y guerra de aniquilación contra masa aliena impersonal.
+  form_and_line: Silueta de exotraje vectorial, composición de comando en capas y masa enemiga tratada como volumen estadístico.
+  color_palette: Acero opaco, rojo de alarma, humo gris, naranja de detonación y verde instrumental de HUD.
+  lighting_setup: Parpadeo de alertas, backlight de incendio urbano y luminancia electrónica de centro de mando.
+  material_texture: Armadura golpeada, concreto fracturado, residuos térmicos y lluvia sobre superficies bélicas.
+  render_quality: Campo de batalla sci-fi con claridad operativa, presión visual alta y escala de colapso civilizatorio.
+  spatial_distortion: Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo crítico.
+  atmosphere: Desesperada, militarizada y sacrificial, de urgencia sostenida.
+  key_features: Tactical suits, overlays de control, enjambre alienígena, ciudad arrasada y salidas de emergencia.
+  creative_brief: >-
+    Formula una gramática extinction-war reusable donde interfaz táctica,
+    desgaste urbano y amenaza masiva no antropomórfica definan el estilo con
+    rigor de comando y tragedia operacional.
 avoidRules:
   - realistic
   - 3d render

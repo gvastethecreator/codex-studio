@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Theatrical symbolic staging, roses, trains, ritual arenas, emotional conflict expressed through icon systems rather than realism, operatic adolescent psyche rendered as ceremony
-  form_and_line: Elegant symbolic contour, ceremonial costume precision, flourish-heavy ornament lines
+  aesthetic: Teatralidad alegórica de alta ceremonia, donde conflicto emocional se codifica en iconos, rosas y arquitectura ritual.
+  form_and_line: Contorno elegante simbólico, precisión de vestuario ceremonial y ornamento lineal con flourishes operáticos.
   color_palette: Rose crimson, cathedral violet, candle gold, ivory, shadow navy, ceremonial black
-  lighting_setup: Stage spotlighting, ritual backlight, stained-symbol glow, theatrical curtain darkness
-  material_texture: Velvet drape, rose-petal softness, marble stage sheen, candle smoke haze
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Spot de escenario, contraluz ritual, glow simbólico teñido y oscuridad de telón dramático.
+  material_texture: Terciopelo de cortina, pétalo suave, mármol satinado de arena y velo de humo de vela.
+  render_quality: Composición alegórica de alta legibilidad semiótica con densidad escénica controlada.
   spatial_distortion: Ceremonial symmetry, impossible stage transitions, allegorical scale changes, posed ritual spacing
-  atmosphere: Symbolic, theatrical, intoxicating, unstable
-  key_features: Rose altars, train symbolism, ritual arenas, icon-heavy staging, emotionally coded props
-  creative_brief: Architecture of the soul built from roses and railway tracks. Emotions become props, rituals replace plot, and adolescence is performed as an opera no one in the audience can hear. Symbols are the only honest language.
+  atmosphere: Simbólica, intoxicante e inestable, con intensidad ritual adolescente.
+  key_features: Altares de rosas, simbolismo ferroviario, arenas rituales y utilería emocional codificada.
+  creative_brief: >-
+    Define una gramática rose-altar reusable donde ceremonia teatral,
+    iconografía recurrente y staging simbólico sustituyan realismo literal,
+    preservando conflicto emocional como sistema visual.
 avoidRules:
   - still
   - calm

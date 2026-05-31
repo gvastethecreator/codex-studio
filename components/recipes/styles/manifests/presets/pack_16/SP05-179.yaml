@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: 90s sports confidence, sweaty gym drama, delinquent swagger redirected into team growth, hardwood bounce and underdog sincerity, emotionally readable game intensity
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Competitive, sweaty, hopeful, charismatic
-  key_features: Gymnasium lighting, basketball motion arcs, rivalry face-offs, team-bond body language, court-perspective dynamism
-  creative_brief: The squeak of sneakers on polished wood is a hymn of second chances. Every jump shot traces an arc from who you were to who the team needs you to become. Sweat is temporary ink, writing a story that won't survive the final buzzer but will echo long after the lights go down.
+  aesthetic: Drama deportivo noventero de baloncesto con crecimiento colectivo, rivalidad frontal y carisma underdog.
+  form_and_line: Línea enérgica de cancha, acting competitivo legible y anatomía atlética de impulso continuo.
+  color_palette: Maderas cálidas de parquet, rojos/azules de uniforme y blancos intensos de luz de gimnasio.
+  lighting_setup: Iluminación de pabellón con contraste limpio, reflejo en piso pulido y rim de esfuerzo físico.
+  material_texture: Parquet encerado, tela deportiva sudada, balón gastado y grano clásico de anime de partido.
+  render_quality: Acabado premium 90s con claridad táctica de jugada, emoción coral y ritmo de remontada.
+  spatial_distortion: Perspectiva de media cancha y aro para enfatizar salto, pase y choque de rivalidades.
+  atmosphere: Competitiva, sudada, esperanzadora, magnética.
+  key_features: Arcos de tiro, foco en duelo cara a cara, química de equipo y gesto de superación barrial.
+  creative_brief: Construye una gramática reusable de épica de baloncesto juvenil para cualquier sujeto, equilibrando intensidad de partido, vínculo de equipo y narrativa de segunda oportunidad.
 avoidRules:
   - realistic
   - 3d render

@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Mission-critical data infrastructure interior, machine-first architecture, uptime-centric technical environment
-  form_and_line: Rack-bay serial rhythm, strict hot/cold aisle zoning, orthogonal cable trays, perforated panel cadence
+  aesthetic: Infraestructura crítica de datos orientada a continuidad operativa y arquitectura machine-first.
+  form_and_line: Serie de racks, pasillos térmicos rígidos, bandejas ortogonales y repetición de panel perforado funcional.
   color_palette: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
-  lighting_setup: Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment
-  material_texture: Powder-coated rack steel, braided fiber looms, perforated mesh doors, rubberized raised-floor tiles, fan-intake dusting
-  render_quality: Facility-grade realism, high information density, precise systems legibility under cool artificial light
+  lighting_setup: Luz fría artificial continua, glow de rack, tiras de servicio y constelaciones LED de estado con contención térmica visible.
+  material_texture: Acero pintado en polvo, mazos de fibra trenzada, malla perforada, piso técnico gomado y polvo de admisión.
+  render_quality: Realismo facility-grade con alta densidad informativa y legibilidad de sistema bajo iluminación técnica.
   spatial_distortion: None
-  atmosphere: Controlled urgency, uninterrupted operation, low-human occupancy, infrastructural vigilance
-  key_features: Status-LED clusters, aisle containment, CRAC airflow cues, labeled patch fields, redundancy-oriented rack repetition
+  atmosphere: Urgencia controlada, vigilancia infraestructural y ocupación humana mínima.
+  key_features: Clúster LED de estado, contención de pasillos, pistas de flujo CRAC, patch fields etiquetados y repetición redundante.
   creative_brief: >-
-    La identidad debe surgir de operación continua y control térmico: todo elemento
-    visual (racks, aire, cableado, señalización) responde a disponibilidad y
-    mantenimiento. Evita look futurista genérico; busca realismo de infraestructura
-    crítica contemporánea.
+    Construye una gramática de sala de servidores transferible donde continuidad,
+    redundancia y control térmico gobiernen cada decisión visual. Debe verse
+    contemporánea y crítica, no sci-fi genérica.
 avoidRules:
   - messy
   - organic

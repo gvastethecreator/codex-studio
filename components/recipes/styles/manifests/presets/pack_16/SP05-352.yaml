@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Street-skate rivalry under tropical neon, colorful ramps, underground race bravado, friendship and adrenaline sharing one electric frame, wheels and attitude in bright motion
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Rebellious, fun, fast, vibrant
-  key_features: Board tricks midair, ramp curvature, neon-night venue cues, streetwear silhouettes, wheel-motion streaks
-  creative_brief: Palm trees catch neon runoff while wheels carve rainbow arcs across illegal midnight ramps. Gravity and grudge dissolve into pure velocity, friendship painted in board-slide streaks against the tropical dark.
+  aesthetic: Skate competitivo underground de noche, centrado en trick flow, estilo personal y rivalidad de circuito.
+  form_and_line: Poses elásticas de board control, curvas de rampa expresivas y anatomía street-dynamic legible.
+  color_palette: Neones tropicales saturados, negros de asfalto y acentos cromáticos por crew.
+  lighting_setup: Iluminación nocturna de venue ilegal con contraluces duros y rebote de piso húmedo.
+  material_texture: Asfalto rugoso, grip tape gastado, metal de rampa marcado y textil streetwear vibrante.
+  render_quality: Frame de skate premium con lectura instantánea de truco, aterrizaje y velocidad.
+  spatial_distortion: Foreshortening aéreo y curvatura de half-pipe para enfatizar altura y trayectoria.
+  atmosphere: Rebelde, divertida, acelerada y extremadamente viva.
+  key_features: Trucos midair, geometría de rampa, estelas de rueda y silueta street de crew.
+  creative_brief: >-
+    Define una gramática reusable de neon-ramp-skate donde trick flow,
+    identidad de crew y lectura de trayectoria prioricen jugabilidad visual por
+    encima de anécdotas de escena.
 avoidRules:
   - realistic
   - 3d render

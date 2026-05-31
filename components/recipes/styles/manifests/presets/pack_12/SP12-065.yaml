@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Royal duel hall beneath a crystal dome.
-  subject_treatment: Champions with stylized ceremonial armor.
-  color_and_tone: Pearl white, sapphire blue, and soft gold.
-  lighting_and_shadow: Elegant, clean overhead illumination.
-  texture_and_material: Carved crystal, silk, and marble.
-  camera_and_composition: Frontal symmetry for 1v1 combat.
-  atmosphere_and_mood: Nobility, rivalry, and precision.
-  rendering_and_quality: Competitive stage with premium identity.
+  aesthetic: Duel-arena real bajo cúpula cristalina, orientada a 1v1 técnico de spacing, feints y castigo preciso.
+  subject_treatment: Campeones con armadura ceremonial estilizada y lectura de estilo de combate.
+  color_and_tone: Blanco perla, azul zafiro y oro suave para máxima claridad en enfrentamiento directo.
+  lighting_and_shadow: Iluminación cenital limpia para preservar lectura frame-by-frame de animación.
+  texture_and_material: Cristal tallado, seda de gala, mármol pulido y detalles de desgaste controlado.
+  camera_and_composition: Simetría frontal con límites de arena y zonas neutrales claras.
+  atmosphere_and_mood: Noble, rival y extremadamente precisa.
+  rendering_and_quality: Competitive stage gameplay-first con legibilidad impecable de alcance, timing y ventaja.
 avoidRules:
   - watermark
   - text

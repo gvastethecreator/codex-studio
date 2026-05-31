@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Art Deco glamour style with geometric opulence, metallic luxury contrast, and high-society theatrical polish
-  form_and_line: Stepped ziggurat profiles, chevron rhythms, sunburst motifs, and symmetrical ornament hierarchies with strong axial control
-  color_palette: Black-gold dominance with emerald and deep navy enrichments, ivory balancing planes, and chrome highlight accents
-  lighting_setup: Dramatic uplight architecture, mirrored bounce play, sconce-and-chandelier glow layering, and marquee-like brilliance nodes
-  material_texture: Polished brass sheen, marble veining, velvet softness, lacquer depth, etched-glass detailing, and chrome inlay precision
-  render_quality: Luxe deco visualization with crisp ornamental readability and cinematic night-glamour finish
-  spatial_distortion: Structured symmetry with vertical accent pulls to reinforce grandeur and formal theatrical presence
-  atmosphere: Opulent, glamorous, dramatic, celebratory, nocturnal
-  key_features: Geometric ornament grammar, metallic-luxury contrast, stepped silhouette architecture, mirror-light amplification
+  aesthetic: Glamour deco de alta densidad geométrica, lujo metálico y teatralidad axial controlada.
+  form_and_line: Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de lectura frontal.
+  color_palette: Dominante negro-dorado con esmeralda y azul noche, balanceado por marfil y reflejos cromados.
+  lighting_setup: Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y nodos tipo marquee.
+  material_texture: Latón pulido, mármol veteado, terciopelo profundo, lacas brillantes y vidrio grabado.
+  render_quality: Acabado deco cinematográfico con precisión ornamental y contraste de lujo legible.
+  spatial_distortion: Simetría estructurada con tirón vertical para enfatizar monumentalidad ceremonial.
+  atmosphere: Opulento, nocturno, ceremonial y escénico.
+  key_features: Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y focos teatrales.
   creative_brief: >-
-    Preserve Art Deco identity through geometric ornament hierarchy and
-    metallic-material drama, keeping the style transferable beyond party or
-    speakeasy storytelling.
+    Mantén una gramática art déco transferible basada en jerarquía geométrica,
+    contraste metálico y composición axial escénica. La ornamentación debe ser
+    sistema visual, no decoración anecdótica de contexto.
 avoidRules:
   - minimal
   - rustic

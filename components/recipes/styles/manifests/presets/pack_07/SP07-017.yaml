@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Pattern on pattern room, controlled chaos, collected gallery, riotous personality
-  form_and_line: Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile
-  color_palette: Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral
-  lighting_setup: Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow
-  material_texture: Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines
-  render_quality: Eclectic, busy, rich, more-is-more, layered opulence, collected over generations
-  spatial_distortion: None
-  atmosphere: Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance
-  key_features: No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections
-  creative_brief: Pattern collides with pattern in joyful anarchy, every surface a shout against the tyranny of restraint. Collections spill across surfaces like civilizations compressed into objects, each shelf a small museum of personal obsession. The room vibrates at the frequency of too-much, and refuses to apologize.
+  aesthetic: Maximalismo curatorial de alta saturación, donde superposición y colección son gramática base.
+  form_and_line: Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de superficies.
+  color_palette: Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias controladas.
+  lighting_setup: Red cálida de lámparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.
+  material_texture: Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro visible.
+  render_quality: Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de jerarquía.
+  spatial_distortion: Profundidad estable con compresión visual por saturación de objetos y patrones.
+  atmosphere: Efervescente, personal, exuberante y deliberadamente excesiva.
+  key_features: Muros galería piso-techo, mezcla agresiva de patrón, capas textiles y colecciones de objetos.
+  creative_brief: >-
+    Construye una gramática maximalista transferible basada en saturación
+    cromática, densidad objetual y superposición textil. Debe mantenerse la
+    legibilidad curatorial sin caer en ruido visual indiscriminado.
 avoidRules:
   - empty
   - white

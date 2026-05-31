@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Rose-crested duels, theatrical academia, impossible symbolism, prince-aspiration elegance, staircase ritual drama, emotional allegory made architectural
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Theatrical, symbolic, elegant, unsettling
-  key_features: Rose motifs, dueling platform staging, academy pageantry, allegorical poses, stylized ritual space
-  creative_brief: A girl who refuses to wait for princes, brandishing a rose as both weapon and declaration that the fairy tale ending was always a cage disguised as a reward. The academy is a stage, the dueling platform an altar, and every staircase ascends toward a revolution dressed in the language of ritual and the grammar of impossible architecture. To become a prince oneself is not imitation; it is the most elegant form of insurrection ever performed in a ballgown.
+  aesthetic: Alegoría escolar teatral de duelo y revolución íntima, con heráldica rosa y elegancia de ruptura de roles.
+  form_and_line: Línea refinada noventera, acting ceremonioso y composición simbólica de plataforma ritual.
+  color_palette: Rosas profundos, blancos de uniforme ceremonial, lilas dramáticos y dorados de escenario académico.
+  lighting_setup: Luz escénica de ópera juvenil con contrastes limpios y halo de rito emocional.
+  material_texture: Satén y encaje estilizados, arquitectura idealizada y grano de fantasía psicológica elegante.
+  render_quality: Acabado premium 90s con claridad de símbolo, tensión de poder y lirismo performático.
+  spatial_distortion: Escaleras imposibles y arena ritual para dramatizar transformación identitaria y choque de discurso.
+  atmosphere: Teatral, simbólica, elegante, inquietante.
+  key_features: Motivo de rosa, duelo en plataforma, academia ceremonial y poses alegóricas codificadas.
+  creative_brief: Diseña una gramática reusable de duelo simbólico emancipador para cualquier sujeto, combinando ritual estético, tensión de género y revolución emocional.
 avoidRules:
   - realistic
   - 3d render

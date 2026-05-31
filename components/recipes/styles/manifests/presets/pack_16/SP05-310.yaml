@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Working-space-adventurer bravado, orange pilot suits, ship hangars, pulpy rescue jobs, professional competence and 80s optimism under hard cel color
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Pulp, adventurous, capable, bright
-  key_features: Pilot-suit color pop, hangar interiors, rescue-job framing, working-spacecrew staging, 80s cel boldness
-  creative_brief: Orange suit against vacuum black, a declaration that work can be heroic and heroes can clock in. Hangar bays smell of ozone and optimism, the kind that survives planetary storms and corporate fine print. Competence is its own aesthetic when the galaxy needs a rescue and professionalism is the only superpower.
+  aesthetic: Pulp espacial profesionalista, con ética de oficio, aventura resolutiva y optimismo técnico ochentero.
+  form_and_line: Contorno robusto de uniforme técnico, acting de equipo competente y staging funcional orientado a misión-rescate.
+  color_palette: Naranjas de traje piloto, azules de hangar, grises industriales y blancos de señal operativa.
+  lighting_setup: Iluminación de bahía de mantenimiento con key frontal claro, sombras planas técnicas y acentos de baliza.
+  material_texture: Metal de hangar, paneles de servicio, tejido técnico de vuelo y desgaste mecánico de uso intensivo.
+  render_quality: Acabado premium retro-pulp con foco en claridad de procedimientos, jerarquía de equipo y acción resolutiva.
+  spatial_distortion: Hangar de gran volumen con líneas de rampa y boca de nave para enfatizar flujo operativo.
+  atmosphere: Pulp, aventurera, competente, luminosa.
+  key_features: Traje naranja icónico, hangar operativo, tripulación de oficio y composición de rescate profesional.
+  creative_brief: Crea una gramática reusable de aventura espacial de equipo técnico para cualquier sujeto, priorizando claridad procedimental, color-identidad de uniforme y heroísmo de trabajo competente.
 avoidRules:
   - realistic
   - 3d render

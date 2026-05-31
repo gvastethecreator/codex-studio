@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Maritime miniature craft language defined by encapsulated vessel composition, curio-display precision, and impossible-scale illusion within glass containment
-  form_and_line: Elongated bottle silhouette, narrowed neck constraint, compressed mast geometry, fine rigging thread networks, and hull curvature framed by cylindrical enclosure
+  aesthetic: Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.
+  form_and_line: Silueta elongada de botella, cuello restrictivo, mástiles comprimidos y red fina de aparejos en marco cilíndrico.
   color_palette: Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones
-  lighting_setup: Controlled display lighting with elongated glass specular streaks, refractive edge highlights, mild internal shadow compression, and shelf-ambient fill
-  material_texture: Clear glass surface, micro-scratched display patina, varnished miniature wood, thread rigging fibers, folded sail paper texture, and porous cork grain
-  render_quality: High-precision miniature rendering with strong scale readability, glass-optics fidelity, and handcrafted curio-display finish
+  lighting_setup: Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de sombra interna suave.
+  material_texture: Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo en rigging, papel de vela plegado y corcho poroso.
+  render_quality: Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.
   spatial_distortion: Cylindrical refraction warp and magnification compression introduced by curved bottle glass
-  atmosphere: Reverent, meticulous, contemplative, archival, and quietly impossible
-  key_features: Neck-constrained assembly illusion, fine thread rigging web, cork-sealed enclosure, magnified glass curvature, miniature hull detailing, and display-plinth presentation
+  atmosphere: Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.
+  key_features: Ilusión de inserción por cuello, malla fina de aparejos, sellado de corcho, magnificación por curvatura y base de exhibición.
   creative_brief: >-
-    Keep the preset anchored in encapsulated-miniature craft grammar: visible
-    glass refraction behavior, constrained-insertion assembly logic, and
-    meticulous rigging density must remain stable across subjects.
+    Construye una gramática reusable de bottle-miniature donde refracción
+    visible del vidrio, ensamblaje restringido y densidad de aparejo fina sean
+    invariantes estilísticas.
 avoidRules:
   - ocean
 assets:

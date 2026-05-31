@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Scandinavian hygge interior style emphasizing thermal comfort minimalism, soft domestic intimacy, and restorative calm
-  form_and_line: Low-profile furniture rhythm, rounded edge gentleness, textile-heavy layering, and uncluttered ergonomic composition
-  color_palette: Soft whites and creams with pale timber tones, muted sage-rose accents, and low-contrast warmth harmonics
-  lighting_setup: Candle-practical glow networks, diffuse window softness, warm pendants, and evening comfort luminance balance
-  material_texture: Knit wool tactility, sheepskin softness, matte ceramics, oiled light wood grain, and brushed natural-fiber surfaces
-  render_quality: Clean Nordic editorial finish with cozy readability, restrained detailing, and comfort-first visual hierarchy
-  spatial_distortion: Neutral spatial behavior with intimacy built through layered soft materials rather than geometric exaggeration
-  atmosphere: Comforting, quiet, warm, restorative, safe
-  key_features: Thermal-comfort light logic, soft textile dominance, pale timber calm, uncluttered hygge composition
+  aesthetic: Higiene visual nórdica orientada al confort térmico, intimidad suave y bienestar cotidiano sin ruido formal.
+  form_and_line: Volúmenes bajos, cantos redondeados, capas textiles continuas y ergonomía despejada de circulación limpia.
+  color_palette: Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento.
+  lighting_setup: Ventana difusa, red de prácticos cálidos, velas/pendientes de baja intensidad y balance nocturno envolvente.
+  material_texture: Lana tejida, piel suave, cerámica mate, lino cepillado y madera de veta discreta.
+  render_quality: Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmósfera doméstica coherente.
+  spatial_distortion: Neutralidad geométrica; profundidad construida por superposición blanda de textiles y luminancia cálida.
+  atmosphere: Refugio, calma, seguridad y calidez continua de escala humana.
+  key_features: Mobiliario bajo, textiles dominantes, madera pálida, iluminación cálida distribuida y ausencia de estridencia visual.
   creative_brief: >-
-    Keep identity centered on comfort architecture: soft luminance, natural
-    textile tactility, and low-contrast Nordic restraint should remain
-    transferable beyond winter-home narratives.
+    Asegura transferencia hygge mediante una tríada constante: luz blanda,
+    tactilidad natural y contraste bajo. El estilo debe priorizar confort
+    sensorial y claridad funcional por encima de cualquier narrativa estacional.
 avoidRules:
   - dark
   - cold

@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Radial market geometry around eclipse beacon.
   atmosphere: Celebration, mystery, and timed scarcity.
   key_features: Eclipse stalls, phase clocks, and barter domes.
-  creative_brief: A lunarpunk bazaar where commerce follows celestial timing.
+  creative_brief: >-
+    Preserve eclipse market-canopy grammar as a reusable style system:
+    phase-timed temporary commerce, folding radial canopy choreography, and
+    celebratory scarcity mystique should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk-nightclub, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-080.webp }
 attributes:

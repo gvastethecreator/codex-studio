@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Abyssal transit-horror language centered on confined infrastructure failure and unseen predatory presence.
-  subject_treatment: Civilian vulnerability silhouettes, fragmented survivor groupings, and implied non-human threat through spatial absence.
-  color_and_tone: Pressure-depth blues, blackout blacks, arterial emergency reds, and sickly desaturated neutrals under panic lighting.
-  lighting_and_shadow: Intermittent emergency flicker, hard strobe interruptions, low-visibility recesses, and silhouette-breaking backflares.
-  texture_and_material: Brine-streaked steel panels, condensation-heavy glazing, corroded fasteners, wet flooring film, and mineral salt crusting.
-  camera_and_composition: Tight carriage sightlines with choke-point framing, foreground obstruction, and vanishing-depth anxiety construction.
-  atmosphere_and_mood: Claustrophobic dread, escalating paranoia, and survival-driven urgency.
-  rendering_and_quality: High-intensity survival-horror concept fidelity with cinematic tension control and environment-first fear readability.
+  aesthetic: Transit-survival horror abisal en infraestructura colapsada, con foco en encierro, fallo sistémico y amenaza no visible.
+  subject_treatment: Civiles vulnerables y grupos de supervivientes fragmentados con lectura clara de vulnerabilidad.
+  color_and_tone: Azules de profundidad, negros de apagón, rojos de emergencia y neutros desaturados bajo pánico.
+  lighting_and_shadow: Parpadeo de emergencia, estrobos duros y recesos de baja visibilidad para tensión escalonada.
+  texture_and_material: Acero salinizado, vidrio con condensación, fijaciones corroídas y suelo húmedo continuo.
+  camera_and_composition: Sightlines cerradas de vagón con choke-points, oclusiones frontales y fuga ansiosa de profundidad.
+  atmosphere_and_mood: Claustrofóbica, paranoica y de urgencia extrema.
+  rendering_and_quality: Survival-horror gameplay art con control fino de tensión y lectura ambiental del miedo.
 avoidRules:
   - watermark
   - text

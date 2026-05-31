@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Curving causeway through layered marine platforms.
   atmosphere: Motion, nightlife, and tidal futurity.
   key_features: Tide beacons, floating rail links, and reef-lit edges.
-  creative_brief: A seapunk causeway where the ocean becomes a neon civic corridor.
+  creative_brief: >-
+    Preserve tidal neon-causeway grammar as a reusable style system:
+    sinuous floating circulation, tide-instrument nightlife glow, and
+    marine civic motion should remain coherent across subjects.
 avoidRules: [photoreal, diesel, grim, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-116.webp }
 attributes:

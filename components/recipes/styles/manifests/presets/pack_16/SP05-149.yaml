@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: School-comedy absurdity maturing into ring-battle mafia spectacle, baby-suited tutor menace, bright comedy turned clan action, family crest iconography, hyper-youthful underworld energy
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Rowdy, comic, fiery, loyal
-  key_features: Family emblems, ring-battle effects, school-to-mafia contrast, eccentric mentor framing, bright clan poses
-  creative_brief: A baby in a suit issues orders and the schoolyard becomes a crime family, rings flashing promises between exams and explosions. Loyalties are tested in the space between lunch period and life-or-death clan warfare. Growing up is just another gang war with better accessories and much higher stakes.
+  aesthetic: Comedia mafiosa escolar en escalada shonen, con iconografía de clan y rito de anillos de alta energía.
+  form_and_line: Línea digital expresiva, pose de pandilla juvenil y transición visual de gag a combate formal de familia.
+  color_palette: Primarios intensos de acción 2000s, negros de traje mafioso y acentos fuego para ring-battle.
+  lighting_setup: Highlights pulidos de comedia, contraste medio de arena y rim energético en activación de anillos.
+  material_texture: Uniformes escolares, telas de traje, emblemas de familia y compositing digital limpio con grano mínimo.
+  render_quality: Acabado premium de shonen mafioso con lectura clara de jerarquía de clan y evolución de tono.
+  spatial_distortion: Escena híbrida escuela-submundo con encuadres de juramento, duelo y trabajo en equipo.
+  atmosphere: Ruidosa, cómica, leal, incendiaria.
+  key_features: Motivos heráldicos de familia, mentor excéntrico central, efectos de anillo y contraste aula-mafia.
+  creative_brief: Define una gramática reusable de ascenso mafioso juvenil para cualquier sujeto, combinando sátira escolar, ritual de clan y acción de pertenencia.
 avoidRules:
   - realistic
   - 3d render

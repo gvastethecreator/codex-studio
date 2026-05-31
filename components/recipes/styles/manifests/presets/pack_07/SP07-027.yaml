@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Tudor-revival residential style with half-timber heritage expression, romantic asymmetry, and hearth-centered historic warmth
-  form_and_line: Exposed timber grid overlays, steep gable silhouettes, irregular ridge rhythm, leaded-diamond fenestration, and chimney vertical anchors
-  color_palette: Dark stained wood against limewash whites, terracotta earth notes, moss-lichen greens, and warm ochre weathering tones
-  lighting_setup: Soft overcast daylight with warm interior hearth glow, leaded-window diffusion, and gentle evening candle accents
-  material_texture: Aged timber grain, lime plaster chalkiness, handmade brick variation, leaded glass facets, and weathered roof textures
-  render_quality: Heritage-rich visualization balancing storybook softness with authentic historical construction detail
-  spatial_distortion: Mild picturesque irregularity in beam and ridge alignment to reinforce handcrafted pre-modern character
-  atmosphere: Rooted, warm, nostalgic, protective, intimate
-  key_features: Half-timber façade grammar, steep gable profile, leaded window rhythm, chimney-hearth vertical identity
+  aesthetic: Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico protector.
+  form_and_line: Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería plomada romboidal.
+  color_palette: Madera oscura sobre cal blanquecina, tierras terracota, verdes musgo y ocre envejecido.
+  lighting_setup: Cielo difuso, brillo cálido interior de hogar y filtrado suave por vidrios emplomados.
+  material_texture: Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina climática.
+  render_quality: Patrimonio doméstico de detalle constructivo sólido y atmósfera de arraigo.
+  spatial_distortion: Irregularidad pintoresca leve en cumbreras y entramados para reforzar artesanía premoderna.
+  atmosphere: Íntima, protectora, nostálgica y terrenal.
+  key_features: Fachada half-timber, gable pronunciado, ventanas emplomadas y núcleo chimenea-hogar.
   creative_brief: >-
-    Keep this preset defined by timber-lime contrast, picturesque asymmetry,
-    and hearth-driven warmth, preserving Tudor revival language beyond any
-    specific cottage narrative.
+    Conserva una gramática Tudor transferible basada en contraste madera-cal,
+    asimetría pintoresca y calor de hogar. Debe transmitir continuidad
+    histórica sin quedar reducida a una postal de cottage.
 avoidRules:
   - modern
 assets:

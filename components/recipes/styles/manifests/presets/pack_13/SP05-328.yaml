@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Long-nosed space-romantic melancholy, star trains and capes, distant ideals, cosmic loneliness conveyed through elegant retro-futurist silhouettes and infinite distance
-  form_and_line: Elegant retro contour, long facial proportions, fine cape and machine linework
+  aesthetic: Romanticismo espacial retrofuturista de melancolía noble, con distancia cósmica y heroísmo resignado.
+  form_and_line: Contorno elegante retro, proporciones faciales alargadas, linework fino en capas y maquinaria ferroviaria estelar.
   color_palette: Deep navy, brass gold, wine red, vacuum black, starlight white, engine blue
-  lighting_setup: Starfield backlight, brass console glow, melancholy bridge lighting, cosmic silhouette framing
-  material_texture: Painted starfields, brass panel wear, velvet cape drape, cel-era cosmic softness
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Contraluz de campo estelar, glow de consola latón y framing de silueta en puente de mando sombrío.
+  material_texture: Cielo pintado profundo, paneles metálicos gastados, caída de capa aterciopelada y suavidad cel-era.
+  render_quality: Space-opera de alta legibilidad con escala infinita y dramatismo de horizonte prolongado.
   spatial_distortion: Tall melancholy figures, long horizon lines, deep star-distance perspective, theatrical cape flow
-  atmosphere: Lonely, romantic, cosmic, noble
-  key_features: Star-track imagery, caped silhouettes, endless-horizon framing, retro-future control rooms, mournful distance
-  creative_brief: Infinity has a silhouette. Stars become station platforms, capes billow against the vacuum, and every departure is a small death measured in light-years of longing. Nobility is not armor but acceptance of the distance.
+  atmosphere: Solitaria, romántica y cósmica, con nobleza de despedida interminable.
+  key_features: Imaginería de star-track, siluetas en capa, control rooms retro y framing de distancia luctuosa.
+  creative_brief: >-
+    Define una gramática de cosmic-melancholy transferible con silueta
+    retrofuturista, iconografía ferroviaria estelar y escala emocional de
+    lejanía persistente.
 avoidRules:
   - still
   - calm

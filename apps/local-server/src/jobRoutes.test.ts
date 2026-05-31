@@ -304,4 +304,50 @@ describe('jobRoutes', () => {
     });
     expect(enqueueJob).not.toHaveBeenCalled();
   });
+
+  it('rejects malformed JSON and invalid boundary payloads', async () => {
+    const enqueueJob = vi.fn();
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: () => null,
+      getJobDetail: async () => null,
+      cancelQueuedOrRunningJob: () => null,
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-new',
+      createJob: () => createJob({ id: 'job-new' }),
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({
+        augmentedPrompt: 'draw a lighthouse',
+        persistedRefs: [],
+      }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const malformedJson = await routes.request('/', {
+      method: 'POST',
+      body: '{"kind":"codex_imagegen",',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    expect(malformedJson.status).toBe(400);
+    await expect(malformedJson.json()).resolves.toMatchObject({
+      code: 'invalid_json',
+    });
+
+    const invalidPayload = await routes.request('/', {
+      method: 'POST',
+      body: JSON.stringify({ kind: 123, prompt: 'draw a lighthouse' }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    expect(invalidPayload.status).toBe(400);
+    await expect(invalidPayload.json()).resolves.toMatchObject({
+      code: 'invalid_request_body',
+    });
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
 });

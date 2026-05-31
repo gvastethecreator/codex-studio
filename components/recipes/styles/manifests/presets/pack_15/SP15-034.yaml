@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Marine-tech harbor where ocean ecology and rave-coded engineering coexist.
-  form_and_line: Floating docks, modular reef towers, and wavy circuit-like pathways.
-  color_palette: Turquoise, magenta, and seafoam green.
-  lighting_setup: Bioluminescent reef glow and humid sunset reflections on wet decks.
-  material_texture: Iridescent polymers, coral composites, wet concrete, and translucent tubing.
-  render_quality: Vibrant high-detail concept with strong nightlife and infrastructure cues.
-  spatial_distortion: Curvilinear marina composition guiding eye through layered floating platforms.
-  atmosphere: Playful futurity, tidal rhythm, and communal experimentation.
-  key_features: Reef reactors, floating dance piers, and algae-powered transit pods.
-  creative_brief: A seapunk marina where public life literally floats on regenerative ocean systems.
+  aesthetic: Reef-circuit seapunk where party lighting, civic utilities, and living coral all pulse through one wet nervous system.
+  form_and_line: Buoyant platform cells, branching reef towers, wavy circuit paths, pontoon seams, and soft current-drawn loops.
+  color_palette: Turquoise voltage, hot magenta, seafoam green, wet concrete gray, and pearly coral white.
+  lighting_setup: Bioluminescent reef pulses, humid sunset reflections, under-platform LEDs, and specular wet-edge flashes.
+  material_texture: Iridescent polymers, coral composites, wet concrete, translucent tubing, algae film, and salt-crusted handrails.
+  render_quality: Vibrant high-detail concept with nightlife color discipline and clear regenerative infrastructure.
+  spatial_distortion: Curvilinear waterline composition; platforms float like circuit nodes drifting but still connected.
+  atmosphere: Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.
+  key_features: Reef-reactor nodes, buoyant dance/social decks, algae power pods, luminous waterlines, and coral cable junctions.
+  creative_brief: >-
+    Preserve coral circuit-marina grammar as a reusable style system:
+    wet-circuit civic modules, reef-luminescent infrastructure, and tidal
+    nightlife ecology should remain coherent across subjects.
 avoidRules: [photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-034.webp }
 attributes:
   negativePrompt: photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

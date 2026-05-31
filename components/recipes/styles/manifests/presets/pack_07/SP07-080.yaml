@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: TARDIS-inspired dimensional console-chamber language combining time-machine retro-tech, organic architectural growth, and impossible interior expansion
-  form_and_line: Central time-rotor axis, hex-console radial geometry, roundel wall repetition, layered gallery rings, sweeping organic arches, and deep non-euclidean recession cues
+  aesthetic: Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión interior imposible.
+  form_and_line: Eje central de rotor temporal, consola hex radial, repetición de roundels y anillos de galería en recesión no euclidiana.
   color_palette: Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows
-  lighting_setup: Pulsing rotor core illumination, console practical spill, indirect roundel bounce, tiered gallery ambience, and controlled golden regeneration-like bloom
-  material_texture: Mixed organic-tech surfaces, coral-like ribbed wall growth, worn metallic console plating, glass roundel diffusion, braided cabling, and translucent control interfaces
-  render_quality: High-detail franchise-faithful sci-fi interior rendering with layered dimensional depth, rich tactile complexity, and coherent retrofuturist machine elegance
+  lighting_setup: Pulso lumínico del rotor, spill de consola, rebote indirecto en roundels y bloom dorado controlado de regeneración.
+  material_texture: Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y cableado trenzado.
+  render_quality: Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.
   spatial_distortion: Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation
-  atmosphere: Adventurous, wondrous, mysterious, temporal, and spatially unbounded
-  key_features: Time-rotor central column, radial hex-console command node, repeating roundel wall language, multi-level gallery circulation, and infinite-depth chamber perspective
+  atmosphere: Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.
+  key_features: Columna central de rotor, nodo de mando hex radial, muro roundel repetitivo y circulación de galería multinivel.
   creative_brief: >-
-    Keep the preset anchored in "bigger-on-the-inside" chamber grammar:
-    central rotor hierarchy, roundel-driven wall rhythm, and organic-retrotech
-    dimensional layering should remain consistent across subject changes.
+    Formula una gramática reusable de console-chamber "bigger-on-the-inside"
+    donde jerarquía de rotor central, ritmo mural roundel y capas orgánico-
+    retrotech dimensionales permanezcan constantes entre sujetos.
 avoidRules:
   - small
 assets:

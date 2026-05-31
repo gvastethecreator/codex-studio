@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Motorcycle freedom, idol video lies, hidden-simulation city, glossy 80s cyber-youth rebellion, highways and holograms under manufactured skies
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Sleek, rebellious, glossy, revelatory
-  key_features: Motorcycle silhouettes, hologram-idol motifs, highway city night, hidden-system hints, glossy retro-future fashion
-  creative_brief: A highway curves through a city that is a lie, hologram idols singing over engines that know the truth. Glossy rebellion wears a motorcycle jacket and refuses the simulated sky. The future was promised; the future was a video loop.
+  aesthetic: Rebellión pop-cyber ochentera de superficie brillante, entre autopistas nocturnas, cultura idol y simulación encubierta.
+  form_and_line: Diseño aerodinámico de moto, silueta juvenil estilizada y geometría urbana de cartelería holográfica.
+  color_palette: Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub futurista.
+  lighting_setup: Reflejos húmedos de avenida, signage holográfico pulsante y highlights de vitrina nocturna.
+  material_texture: Cuero brillante, plástico translúcido, cromo pulido, lluvia fina y granulado retro de pantalla.
+  render_quality: Retrofuturo anime de acabado glossy con energía urbana y legibilidad de diseño pop.
+  spatial_distortion: Profundidad de corredor vial con fuga alta velocidad y capas de publicidad simulada.
+  atmosphere: Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.
+  key_features: Motocicleta icónica, idol holográfica, noche de autopista, moda cyber retro y pistas de ciudad simulada.
+  creative_brief: >-
+    Construye una gramática highway-pop-cyber reusable donde brillo urbano,
+    iconografía motera e ilusión mediática convivan en tensión entre libertad
+    juvenil y control sintético.
 avoidRules:
   - realistic
   - 3d render

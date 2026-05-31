@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Elite diplomatic hotel where protocol meets machine-age luxury.
-  form_and_line: Chevron façades, tiered balconies, and formal entrance canopies.
-  color_palette: Onyx, champagne gold, and deep green.
-  lighting_setup: Warm marquee wash and corridor uplights.
-  material_texture: Marble veneers, brass inlays, and mirrored panels.
-  render_quality: Premium hospitality concept with precise decor hierarchy.
-  spatial_distortion: Lobby depth perspective through repeated arches.
-  atmosphere: Polished intrigue and ceremonial hospitality.
-  key_features: Grand concierge desk, private salons, and coded elevator banks.
-  creative_brief: A decopunk hotel designed to host negotiations disguised as galas.
+  aesthetic: Diplomatic decopunk where hospitality is camouflage for negotiation, surveillance, and perfectly choreographed etiquette.
+  form_and_line: Chevron facade codes, tiered balcony bands, canopy shields, elevator monoliths, and reception desks like treaty altars.
+  color_palette: Onyx, champagne gold, deep green, mirror silver, and discreet passport red.
+  lighting_setup: Warm marquee wash, corridor uplights, mirror glints at thresholds, and soft private-salon lamp pools.
+  material_texture: Marble veneer, brass inlay, mirrored paneling, velvet ropes, lacquered concierge surfaces, and embossed seal paper.
+  render_quality: Premium hospitality concept with exact decor hierarchy and hidden power cues.
+  spatial_distortion: Lobby depth passes through arches, screens, desk layers, and elevator banks like protocol checkpoints.
+  atmosphere: Polished intrigue, ceremonial hospitality, quiet surveillance, and gala-grade tension.
+  key_features: Treaty-desk silhouettes, private salon thresholds, coded elevator banks, diplomatic seal motifs, and mirrored waiting alcoves.
+  creative_brief: >-
+    Preserve chevron diplomatic-hotel grammar as a reusable style system:
+    polished protocol hospitality, mirrored surveillance etiquette, and
+    rank-coded negotiation surfaces should remain coherent across subjects.
 avoidRules: [photoreal, rustic, cyberpunk-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-053.webp }
 attributes:
   negativePrompt: photoreal, rustic, cyberpunk-slum, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

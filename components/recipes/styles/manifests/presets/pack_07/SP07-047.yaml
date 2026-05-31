@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Formal hedge-labyrinth typology, navigational puzzle landscape, clipped-green enclosure architecture
-  form_and_line: Orthogonal corridor matrix, controlled dead-end cadence, center-seeking path hierarchy, high hedge wall continuity
+  aesthetic: Tipología de laberinto vegetal formal, basada en desorientación lúdica y cerramiento topiario.
+  form_and_line: Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad de muros vivos altos.
   color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
-  lighting_setup: Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end
-  material_texture: Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall
-  render_quality: Precise topiary geometry readability, wayfinding-tension composition, disciplined landscape architecture rendering
+  lighting_setup: Pasillos en sombra con franjas solares, remates de luz al fondo y patrón moteado sobre grava.
+  material_texture: Seto densamente podado, hoja compacta, grava de tránsito y acentos de piedra/musgo en nodos.
+  render_quality: Geometría topiaria precisa con tensión de wayfinding y legibilidad de recorrido.
   spatial_distortion: None
-  atmosphere: Curious disorientation, playful anxiety, enclosed progression, destination suspense
-  key_features: High clipped hedges, junction-node rhythm, gravel route texture, central terminus marker, formal trimming precision
+  atmosphere: Desorientación curiosa, ansiedad lúdica y progresión cerrada hacia destino incierto.
+  key_features: Seto alto recortado, ritmo de nodos, textura de ruta en grava y marcador central de terminación.
   creative_brief: >-
-    El estilo debe priorizar experiencia de recorrido y pérdida controlada: muros
-    verdes altos, intersecciones repetidas y orientación progresiva hacia un núcleo.
-    Mantén legibilidad geométrica y tensión lúdica sin convertirlo en narrativa de
-    fantasía cerrada.
+    Define una gramática de laberinto transferible donde pérdida controlada y
+    lectura geométrica convivan. La tensión debe surgir del recorrido repetitivo
+    y la contención vegetal, no de narrativa fantástica cerrada.
 avoidRules:
   - open field
 assets:

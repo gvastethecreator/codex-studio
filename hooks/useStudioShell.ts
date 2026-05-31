@@ -271,6 +271,7 @@ export function useStudioShell(): StudioShellController {
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,
+      clearWorkspace: clearCatalogWorkspace,
       addToast,
       onRequestDeleteWorkspace: requestDeleteWorkspace,
     });
@@ -376,24 +377,40 @@ export function useStudioShell(): StudioShellController {
           handleExportLegacyVisualBatchSnapshot: exportLegacyVisualBatchSnapshot,
           handleDeepScan: () => {},
         },
-        settings: {
-          modal: {
-            isOpen: viewState.overlays.settings.isOpen,
-            close: viewState.overlays.settings.close,
+        isSettingsModalOpen: viewState.overlays.settings.isOpen,
+        settingsModule: {
+          close: viewState.overlays.settings.close,
+          settingsDomain: {
+            settings: studioSettings.data.settingsDomain.settings,
+            error: studioSettings.data.settingsDomain.error,
+            isLoading: studioSettings.data.settingsDomain.isLoading,
+            isSaving: studioSettings.data.settingsDomain.isSaving,
+            refresh: studioSettings.data.settingsDomain.refresh,
+            update: studioSettings.data.settingsDomain.update,
           },
-          data: {
-            settingsDomain: studioSettings.data.settingsDomain,
-            providerDomain: studioSettings.data.providerDomain,
-            outputSourcesDomain: studioSettings.data.outputSourcesDomain,
+          providerDomain: {
+            capabilities: studioSettings.data.providerDomain.capabilities,
+            runtimePreflight: studioSettings.data.providerDomain.runtimePreflight,
           },
-          background: {
-            isEnabled: isBackgroundEnabled,
-            setEnabled: setBackgroundEnabled,
+          outputSourcesDomain: {
+            outputSources: studioSettings.data.outputSourcesDomain.outputSources,
+            outputSourceFiles: studioSettings.data.outputSourcesDomain.outputSourceFiles,
+            isLoadingOutputSources: studioSettings.data.outputSourcesDomain.isLoadingOutputSources,
+            loadingOutputSourceFiles:
+              studioSettings.data.outputSourcesDomain.loadingOutputSourceFiles,
+            isRegisteringOutputSource:
+              studioSettings.data.outputSourcesDomain.isRegisteringOutputSource,
+            importingOutputSources: studioSettings.data.outputSourcesDomain.importingOutputSources,
+            registerOutputSource: studioSettings.data.outputSourcesDomain.registerOutputSource,
+            loadOutputSourceFiles: studioSettings.data.outputSourcesDomain.loadOutputSourceFiles,
+            importOutputSourceFiles:
+              studioSettings.data.outputSourcesDomain.importOutputSourceFiles,
           },
-          reset: {
-            onResetStudio: requestResetStudio,
-            isResettingStudio,
-          },
+          libraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
+          isBackgroundEnabled,
+          onToggleBackground: () => setBackgroundEnabled(!isBackgroundEnabled),
+          onResetStudio: requestResetStudio,
+          isResettingStudio,
         },
         workspace: {
           catalogVisualGroupCount,
@@ -706,14 +723,20 @@ export function useStudioShell(): StudioShellController {
           onToggleDebug: activitySession.debugPanel.toggle,
         },
         commandCenter: {
-          defaultProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId,
-          statusItems: studioRuntime.status.diagnostics.statusItems,
-          queueResultPreviews,
-          queueJobCount: jobs.length,
-          activeServerJobCount: studioRuntime.activity.activeServerJobCount,
-          isQueueOpen: viewState.queue.isOpen,
-          setIsQueueOpen: viewState.queue.setIsOpen,
-          onOpenSettings: viewState.overlays.settings.open,
+          provider: {
+            defaultProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId,
+          },
+          queue: {
+            statusItems: studioRuntime.status.diagnostics.statusItems,
+            queueResultPreviews,
+            queueJobCount: jobs.length,
+            activeServerJobCount: studioRuntime.activity.activeServerJobCount,
+            isQueueOpen: viewState.queue.isOpen,
+            setIsQueueOpen: viewState.queue.setIsOpen,
+          },
+          actions: {
+            onOpenSettings: viewState.overlays.settings.open,
+          },
         },
       }),
     [
