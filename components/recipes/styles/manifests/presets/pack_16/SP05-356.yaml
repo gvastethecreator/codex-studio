@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Tennis as superhuman duel theater, baseline standoffs, spinning serves, character-specific swagger and national-tournament pressure rendered like arena combat
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Stylized, intense, youthful, dramatic
-  key_features: Racket-swing arcs, baseline geometry, serve-impact trails, rivalry face-offs, indoor-court tournament framing
-  creative_brief: The court transforms into arena theater where serves crack like thunder and baseline geometry frames impossible rivalries. Every racket swing writes a signature across the air, youth distilled into the physics of defiance.
+  aesthetic: Tennis de duelo estilizado orientado a baseline control, saque de efecto y presión de torneo.
+  form_and_line: Arcos de swing marcados, postura de split-step precisa y acting de rivalidad frontal.
+  color_palette: Azules de indoor-court, blancos técnicos y acentos cromáticos por jugador para lectura de matchup.
+  lighting_setup: Iluminación indoor contrastada con focos en impacto de raqueta y zona de bote.
+  material_texture: Superficie acrílica de cancha, cuerda de raqueta tensa, pelota con fuzz visible y textil de alto rendimiento.
+  render_quality: Frame deportivo de alta teatralidad con claridad de punto, ventaja y respuesta.
+  spatial_distortion: Foreshortening en servicio y compresión de fondo de pista para enfatizar timing de devolución.
+  atmosphere: Estilizada, intensa, juvenil y dramática.
+  key_features: Arco de saque, geometría de baseline, estela de golpe y framing de enfrentamiento frontal.
+  creative_brief: >-
+    Define una gramática reusable de baseline-showdown donde duelismo,
+    trayectoria de bola y teatralidad de torneo sostengan una identidad
+    transferible.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Cute rural summer shattered by paranoia, cicada noise, festival masks, friendship turning knife-edge, hot village afternoons that hide catastrophic loops and dread
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Pastoral, paranoid, feverish, terrifying
-  key_features: Village festival imagery, cute-to-horror contrast, cicada-summer palette, breakdown expressions, shrine-and-home staging
-  creative_brief: Summer that loops infinitely, cicadas screaming the same hour over and over until friendship curdles into suspicion and festival masks hide faces that may no longer be human. A village so small that the sky presses down on it, so sweet that the rot must be hidden somewhere beneath the rice fields. Trust becomes the deadliest currency when the calendar resets and someone you love is holding the knife.
+  aesthetic: Horror rural de bucle veraniego, con fachada moe quebrada por paranoia comunitaria y colapso de confianza.
+  form_and_line: Trazado cute limpio con ruptura facial extrema en crisis, alternando inocencia visual y violencia psicológica.
+  color_palette: Verdes de aldea estival, rojos de alarma, amarillos de tarde densa y sombras violetas de fiebre.
+  lighting_setup: Luz solar opresiva de verano con transiciones abruptas a contraste ansioso en momentos de breakdown.
+  material_texture: Madera de santuario, tierra de pueblo, telas festivas y limpieza digital que potencia el quiebre tonal.
+  render_quality: Acabado premium horror-2000s con alto contraste cute-to-terror y claridad de escalada paranoica.
+  spatial_distortion: Espacio aldeano cerrado con repetición de rutas, encuadre de bucle y presión del entorno sobre personajes.
+  atmosphere: Pastoril, paranoica, febril, aterradora.
+  key_features: Máscaras de festival, cigarras como pulso sonoro visual, expresiones de quiebre y staging santuario-casa.
+  creative_brief: Diseña una gramática reusable de horror estival en bucle para cualquier sujeto, combinando estética tierna, repetición ritual y terror de sospecha íntima.
 avoidRules:
   - realistic
   - 3d render

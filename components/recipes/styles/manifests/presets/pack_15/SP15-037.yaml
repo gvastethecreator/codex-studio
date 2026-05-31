@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Civic-agro atompunk neighborhood where reactor heat powers greenhouse towers.
-  form_and_line: Rounded reactor domes, orchard terraces, and tubular skywalks.
-  color_palette: Pistachio mint, cream white, and chrome.
-  lighting_setup: Soft midday glare and core glow bleeding through vent fins.
-  material_texture: Enamel steel, glass blocks, and irrigated concrete planters.
-  render_quality: Clear concept render with strong city-systems readability.
-  spatial_distortion: Multi-tier district perspective anchored by a central reactor orchard.
-  atmosphere: Productive optimism, engineered abundance, and latent atomic anxiety.
-  key_features: Reactor-heated greenhouses, isotope tram loops, and orchard plazas.
-  creative_brief: An atompunk district where food sovereignty is treated as infrastructure design.
+  aesthetic: Atomic abundance style where orchards look laboratory-calibrated and reactor warmth masquerades as domestic sunshine.
+  form_and_line: Rounded reactor domes, orchard terrace grids, tubular skywalk loops, vent-fin ribs, and irrigation arcs drawn like circuit diagrams.
+  color_palette: Pistachio mint, cream white, chrome, chlorophyll green, and faint reactor amber.
+  lighting_setup: Soft midday glare, contained core glow through vent fins, greenhouse diffusion, and chrome glints on irrigation controls.
+  material_texture: Enamel steel, glass blocks, irrigated concrete, sterile planter lips, chrome trim, and wet leaf gloss.
+  render_quality: Clear concept render where food systems, heat loops, and civic optimism remain visually legible.
+  spatial_distortion: Multi-tier perspective follows heat circulation from reactor core to terraces, public paths, and crop grids.
+  atmosphere: Engineered abundance, productive optimism, hygienic utopia, and faint atomic unease.
+  key_features: Reactor greenhouse domes, isotope tram loops, calibrated irrigation panels, orchard-grid plazas, and heat-transfer vents.
+  creative_brief: >-
+    Preserve atomic orchard-district grammar as a reusable style system:
+    reactor-assisted agricultural order, polished mid-century civic control,
+    and uncanny abundance cues should remain coherent across subjects.
 avoidRules: [photoreal, post-apocalypse-rust, medieval, gore, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-037.webp }
 attributes:
   negativePrompt: photoreal, post-apocalypse-rust, medieval, gore, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-atompunk,
+    categoryName: 8. Corepunk — Atompunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

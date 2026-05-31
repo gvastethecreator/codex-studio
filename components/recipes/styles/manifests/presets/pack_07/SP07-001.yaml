@@ -12,16 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Clean white open space, airy volume, sculptural emptiness, light as material
-  form_and_line: Straight horizontal lines, floating planes, silent geometry, invisible junctions
-  color_palette: White, Warm Beige, Cool Grey, Muted Sand, Pale Oak
-  lighting_setup: Soft diffuse daylight, shadowless ambient, luminous ceiling, hidden cove glow
-  material_texture: Smooth plaster, matte paint, honed stone, micro-cement, tactile stucco
-  render_quality: Architectural Digest design-editorial clean, aspirational perfection
-  spatial_distortion: None
-  atmosphere: Calm, spacious, expensive, meditative, weightless, curated stillness
-  key_features: Empty space, hidden storage, frameless glazing, floating staircase
-  creative_brief: Silence acquires geometry, absence becoming presence through the discipline of subtraction. Light pools and recedes across seamless planes, each surface a meditation on what was removed. The frame exhales stillness, every void as intentional as the forms that define it.
+  aesthetic: Minimalismo arquitectónico de alta precisión, donde la ausencia programática y la continuidad material construyen lujo silencioso.
+  form_and_line: Planos ortogonales largos, encuentros sin marco, espesores ocultos, ejes de circulación limpios y piezas flotantes de bajo perfil.
+  color_palette: Blanco mineral, marfil cálido, gris piedra frío, arena pálida y roble desaturado como único acento térmico.
+  lighting_setup: Luz diurna difusa de gran apertura, rebotes uniformes sin hotspots, cove lighting perimetral oculto y sombras extremadamente blandas.
+  material_texture: Yeso fino continuo, microcemento mate, piedra apomazada de poro cerrado y madera cepillada casi sin veta visible.
+  render_quality: Visualización editorial ultra-clean con énfasis en proporción, borde, alineación y disciplina de vacío.
+  spatial_distortion: Perspectiva neutra y estable, con profundidad construida por capas tonales suaves en lugar de dramatización angular.
+  atmosphere: Serenidad curada, control acústico implícito, claridad mental, y sensación de lujo por contención.
+  key_features: Mobiliario integrado, almacenaje invisible, carpinterías enrasadas, escaleras o plataformas suspendidas y continuidad suelo-muro.
+  creative_brief: >-
+    Preserva una gramática minimalista transferible basada en sustracción
+    extrema, continuidad constructiva y jerarquía por vacío. Cualquier sujeto
+    debe leerse como parte de un sistema de planos silenciosos, luz uniforme y
+    detalle oculto de alta precisión.
 avoidRules:
   - clutter
   - ornate

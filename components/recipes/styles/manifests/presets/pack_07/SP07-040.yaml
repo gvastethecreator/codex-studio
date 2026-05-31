@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Arboreal micro-architecture, elevated timber refuge typology, canopy-integrated hideaway design
-  form_and_line: Stilt/branch hybrid supports, staggered deck plates, rope/cable diagonals, trunk-avoidance cutouts
+  aesthetic: Microarquitectura arbórea de refugio elevado, integrada a copa y condicionada por soporte vivo.
+  form_and_line: Soportes híbridos entre pilotes y ramas, plataformas escalonadas, diagonales de cable y vacíos de evasión de tronco.
   color_palette: Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss
-  lighting_setup: Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber
-  material_texture: Weathered softwood grain, rope fiber fray, bark abrasion contacts, galvanized hardware oxidation, canvas sun-fade
-  render_quality: Hand-built authenticity, lightweight structural plausibility, crafted outdoor living detail
+  lighting_setup: Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos de linterna en escala íntima.
+  material_texture: Veta de madera expuesta al clima, cuerda fibrosa, abrasión de corteza y herrajes galvanizados oxidados.
+  render_quality: Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.
   spatial_distortion: Crooked
-  atmosphere: Elevated intimacy, playful autonomy, wind-exposed shelter, exploratory calm
-  key_features: Trunk-through-floor apertures, rope access points, lookout edges, lantern-scale warm pools, improvised joinery details
+  atmosphere: Íntima y lúdica, con autonomía exploratoria y abrigo frente a exposición de viento.
+  key_features: Aberturas de tronco en piso, accesos de cuerda, bordes mirador, pools cálidos de linterna y uniones improvisadas.
   creative_brief: >-
-    Construye una gramática de refugio elevado donde la estructura se adapta al
-    árbol en vez de dominarlo. El estilo debe combinar improvisación artesanal,
-    seguridad funcional y atmósfera de descubrimiento sin caer en iconografía infantil
-    obligatoria.
+    Define una gramática treehouse transferible en la que estructura y árbol se
+    negocian mutuamente. Debe combinar improvisación artesanal, seguridad básica
+    y sensación de descubrimiento sin infantilizar la tipología.
 avoidRules:
   - ground level
 assets:

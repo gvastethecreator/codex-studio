@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Fantasy star harbor with a faction-driven economy.
-  subject_treatment: Armed merchants, organic ships, and escort guards.
-  color_and_tone: Solar gold, space purple, and deep blue.
-  lighting_and_shadow: Cosmic backlight and dock beacons.
-  texture_and_material: Nacre-like hulls, burnished metal, and ceremonial fabrics.
-  camera_and_composition: Panoramic view with multiple narrative focal points.
-  atmosphere_and_mood: Fragile diplomacy, ambition, and latent danger.
-  rendering_and_quality: Chapter-cover style with robust worldbuilding.
+  aesthetic: Space-trade RPG de puertos estelares con economía faccional, diplomacia armada y logística interestelar.
+  subject_treatment: Clases mercantiles/escolta con identidad visual de corporación, sindicato o casa comercial.
+  color_and_tone: Oro solar, púrpura espacial y azul profundo para marcar riqueza, neutralidad y conflicto.
+  lighting_and_shadow: Contraluz cósmico, balizas de muelle y focos de inspección de carga por zona.
+  texture_and_material: Cascos nacarados, metal bruñido, textiles ceremoniales y superficies de carga modular.
+  camera_and_composition: Panorámica de hub con rutas de tránsito, puntos de negociación y áreas de disputa visibles.
+  atmosphere_and_mood: Ambiciosa, diplomática y volátil.
+  rendering_and_quality: Worldbuilding key art orientado a sistemas de comercio, reputación y control de rutas.
 avoidRules:
   - watermark
   - text

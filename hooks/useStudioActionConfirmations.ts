@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { runWorkspaceDeleteLifecycle } from '../lib/workspaceLifecycle';
 
 export type ConfirmationTone = 'danger' | 'warning' | 'accent';
 
@@ -17,8 +18,8 @@ interface PendingConfirmation extends ConfirmationRequest {
 }
 
 interface UseStudioActionConfirmationsProps {
-  clearWorkspace: (workspaceId: string) => void;
-  deleteWorkspace: (workspaceId: string) => void;
+  clearWorkspace: (workspaceId: string) => void | Promise<void>;
+  deleteWorkspace: (workspaceId: string) => void | Promise<void>;
   resetStudio: () => void | Promise<void>;
   restoreAllFromTrash: () => void;
   emptyTrash: () => void;
@@ -96,10 +97,16 @@ export function useStudioActionConfirmations({
           ],
           note: 'The default workspace is protected. This UI action does not delete local library files from disk.',
         },
-        () => deleteWorkspace(workspace.id),
+        async () => {
+          await runWorkspaceDeleteLifecycle({
+            workspaceId: workspace.id,
+            clearWorkspace,
+            deleteWorkspace,
+          });
+        },
       );
     },
-    [deleteWorkspace, requestConfirmation],
+    [clearWorkspace, deleteWorkspace, requestConfirmation],
   );
 
   const requestRestoreAllTrash = useCallback(

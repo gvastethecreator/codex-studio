@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Mythic armor, zodiac temples, heroic friendship, constellation power flares, divine punches and young blood screaming beneath marble skies
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Mythic, earnest, celestial, fierce
-  key_features: Armor silhouettes, constellation effects, temple staircases, team-friendship posing, marble-sky epic scale
-  creative_brief: Marble cracked by divine pressure as bronze-clad fists tear through the boundary between myth and boy. Constellations lean closer, hungry to witness what young blood sounds like when it believes. Every armor piece carries the weight of a star and the fragility of a friendship.
+  aesthetic: Épica zodiacal juvenil de combate mítico, con fraternidad heroica y dramatismo cósmico de gran declaratoria emocional.
+  form_and_line: Contornos brillantes de armadura, anatomía heroica elongada y poses de impacto frontal con energía de torneo sagrado.
+  color_palette: Azules celestes, dorados astrales, blancos marmóreos y rojos de voluntad combativa.
+  lighting_setup: Flares de constelación sobre clave dura de cel, sombras planas de duelo y rim luminoso en bordes de armadura.
+  material_texture: Metal pulido ceremonial, piedra de templo, polvo de combate y grano analógico retro.
+  render_quality: Acabado premium retro-shonen con lectura instantánea de equipo, poder astral y escalada de intensidad.
+  spatial_distortion: Perspectiva monumental de escalinata y cielo abierto para amplificar sacrificio, golpe y destino estelar.
+  atmosphere: Mítica, vehemente, celeste, sacrificial.
+  key_features: Armaduras zodiacales brillantes, escalinata-templo axial, estelas cósmicas y juramento de camaradería combativa.
+  creative_brief: Diseña una gramática reusable de heroísmo zodiacal para cualquier sujeto, fusionando iconografía estelar, armadura ritual y emoción combativa juvenil.
 avoidRules:
   - realistic
   - 3d render

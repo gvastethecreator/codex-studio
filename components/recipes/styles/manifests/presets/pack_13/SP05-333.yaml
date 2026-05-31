@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Subtle body language, lived-in domestic motion, gentle realism within animation, believable weight, quiet humanity and observational tenderness over spectacle
-  form_and_line: Subtle natural contour, minimal stylization, motion-observation line clarity
+  aesthetic: Naturalismo humano silencioso centrado en microgesto cotidiano, peso corporal creíble y ternura observacional anti-espectáculo.
+  form_and_line: Contorno natural discreto, estilización mínima y claridad en gesto funcional de vida diaria.
   color_palette: Soft beige, denim blue, skin-warm peach, kitchen white, rainy grey, muted green
-  lighting_setup: Natural window light, restrained interior bounce, overcast softness, human-scale practical lamps
-  material_texture: Cotton shirts, kitchen surfaces, floor scuffs, skin warmth, rainy-window diffusion
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Luz de ventana natural, rebote interior moderado, suavidad nublada y prácticos domésticos de escala humana.
+  material_texture: Algodón usado, superficies de cocina vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.
+  render_quality: Realismo animado íntimo con temporalidad pausada y lectura fina de comportamiento humano.
   spatial_distortion: Believable anatomy, restrained perspective, human-scale room depth, natural gait and gesture
-  atmosphere: Human, modest, grounded, intimate
-  key_features: Observed body language, lived-in apartments, natural posture weight, realistic gesture timing, domestic emotional subtlety
-  creative_brief: The ordinary is sacred. A shoulder shifts, a hand pauses on a doorknob, and meaning arrives without announcement in the quiet gravity of everyday motion. Spectacle is absent because it was never invited.
+  atmosphere: Íntima, modesta y arraigada, con gravedad emocional cotidiana.
+  key_features: Body language observada, interiores habitados, peso postural natural y timing gestual realista.
+  creative_brief: >-
+    Construye una gramática quiet-human reusable donde microgesto, iluminación
+    doméstica y materialidad vivida transmitan emoción sin subrayado ni
+    espectacularidad externa.
 avoidRules:
   - still
   - calm

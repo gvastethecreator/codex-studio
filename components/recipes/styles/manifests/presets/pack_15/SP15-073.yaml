@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Ring composition pulling eye to central biosphere.
   atmosphere: Cooperative abundance and gentle futurism.
   key_features: Hydro rings, seed libraries, and moon compost vaults.
-  creative_brief: A lunarpunk farm city where food systems are visibly communal.
+  creative_brief: >-
+    Preserve crescent agro-rings grammar as a reusable style system:
+    concentric hydro-agriculture urbanism, cooperative biosphere logistics,
+    and gentle lunar abundance should remain coherent across subjects.
 avoidRules: [photoreal, militarized-base, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-073.webp }
 attributes:

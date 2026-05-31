@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Dock perspective leading to regenerative intake pods.
   atmosphere: Recovery, exchange, and compassionate infrastructure.
   key_features: Stemcell clinics, tide docks, and restorative capsules.
-  creative_brief: A biopunk harbor where the port itself participates in healing and renewal.
+  creative_brief: >-
+    Preserve stemcell harbor grammar as a reusable style system:
+    regenerative maritime logistics, dockside care infrastructure, and
+    compassionate renewal pathways should remain coherent across subjects.
 avoidRules: [photoreal, hospital-gore, cyberpunk, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-113.webp }
 attributes:

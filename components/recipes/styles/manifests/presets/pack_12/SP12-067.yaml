@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Siege camp in bronze marshlands.
-  subject_treatment: War engineers and push units.
-  color_and_tone: Mud green, old bronze, and banner red.
-  lighting_and_shadow: Low fog with scattered torches.
-  texture_and_material: Mud, wet wood, and metal plates.
-  camera_and_composition: Trenches converging toward the fort.
-  atmosphere_and_mood: Military pressure and prolonged attrition.
-  rendering_and_quality: Tactical setting for a war campaign.
+  aesthetic: Warfront attrition en marismas de bronce, orientado a avance por trincheras, desgaste y control de suministros.
+  subject_treatment: Ingenieros de asedio y unidades de empuje con lectura de función táctica.
+  color_and_tone: Verde barro, bronce viejo y rojo estandarte para codificar bando y presión de frente.
+  lighting_and_shadow: Niebla baja con antorchas dispersas para visibilidad parcial y amenaza constante.
+  texture_and_material: Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.
+  camera_and_composition: Trincheras convergentes hacia fortín objetivo con rutas de asalto definidas.
+  atmosphere_and_mood: Opresiva, militar y de desgaste prolongado.
+  rendering_and_quality: Tactical war-campaign art con legibilidad de líneas de avance y colapso defensivo.
 avoidRules:
   - watermark
   - text

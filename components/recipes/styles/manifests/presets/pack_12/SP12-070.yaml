@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Spiritual archery trials in a nighttime shrine.
-  subject_treatment: Mystical archers with energy arrows.
-  color_and_tone: Moon blue, silver, and soft violet.
-  lighting_and_shadow: Moonlight and paper lanterns.
-  texture_and_material: Polished wood, wet stone, and silk.
-  camera_and_composition: Firing alley with ritual targets.
-  atmosphere_and_mood: Focus, calm, and precision.
-  rendering_and_quality: Challenge stage with impeccable readability.
+  aesthetic: Precision-trial de arquería mística en santuario nocturno, orientado a timing, trayectoria y control respiratorio.
+  subject_treatment: Arqueros espirituales con flechas de energía y lectura clara de estilo técnico.
+  color_and_tone: Azul lunar, plata y violeta tenue para concentración visual sin ruido.
+  lighting_and_shadow: Luz de luna y faroles de papel para contrastes suaves y foco de objetivo.
+  texture_and_material: Madera pulida, piedra húmeda, seda ritual y marcas de práctica.
+  camera_and_composition: Calle de tiro con dianas rituales por distancia y dificultad progresiva.
+  atmosphere_and_mood: Concentrada, calmada y extremadamente precisa.
+  rendering_and_quality: Challenge-stage gameplay art con legibilidad impecable de trayectoria, impacto y scoring.
 avoidRules:
   - watermark
   - text

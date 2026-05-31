@@ -13,16 +13,16 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: School-horror anime with psychological tension.
-  form_and_line: Subtly broken contours and implied figures.
-  color_palette: Sickly green, pale gray, and muted red.
-  lighting_setup: Flickering fluorescent light with long shadows.
-  material_texture: Damp walls, aged tiles, and suspended dust.
-  render_quality: High-clarity atmospheric horror illustration.
-  spatial_distortion: Deep corridor with oppressive vanishing depth.
-  atmosphere: Anxiety, isolation, and invisible threat.
-  key_features: Half-open door, distant silhouette, ambiguous reflection.
-  creative_brief: An apparently empty hallway that radiates imminent danger.
+  aesthetic: Institutional liminal horror centered on everyday spaces becoming psychologically unstable through subtle visual dissonance.
+  form_and_line: Slightly misregistered contours, straight architectural lines that warp near the vanishing point, and peripheral figure suggestions.
+  color_palette: Fluorescent sick-green, chalk gray, nicotine beige, and restrained coagulated-red warning accents.
+  lighting_setup: Intermittent overhead flicker pattern with alternating dead zones that create uncertain visibility cadence.
+  material_texture: Damp paint bloom, worn vinyl flooring sheen, stained acoustic panels, and particulate haze.
+  render_quality: Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.
+  spatial_distortion: Corridor tunnel perspective stretched beyond comfort, with micro-tilt and depth drag near terminal doors.
+  atmosphere: Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.
+  key_features: Repeating lockers or doors, uncertain reflections, failed lighting intervals, and threshold interruptions.
+  creative_brief: Create a reusable school-liminal horror grammar for any subject by combining bureaucratic geometry, flicker rhythm, and barely-perceived distortions.
 avoidRules:
   - photoreal
   - comedy

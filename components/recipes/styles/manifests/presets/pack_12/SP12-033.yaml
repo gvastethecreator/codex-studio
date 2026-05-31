@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Futuristic rural defense in automated orchards.
-  subject_treatment: Armed agricultural drones and engineer farmers.
-  color_and_tone: Vibrant greens, industrial orange, and solar white.
-  lighting_and_shadow: Warm afternoon light with active sensor highlights.
-  texture_and_material: Waxy fruit, enameled metal, and damp soil.
-  camera_and_composition: Crop corridors functioning as defensive lanes.
-  atmosphere_and_mood: Rural ingenuity and community resilience.
-  rendering_and_quality: Fresh, original tower-defense scene.
+  aesthetic: Tower-defense rural sci-fi en huertos automatizados, orientado a defensa por carriles vivos y gestión de recursos.
+  subject_treatment: Drones agrícolas armados e ingenieros-campesinos con roles de soporte, control y daño.
+  color_and_tone: Verdes vibrantes, naranja industrial y blanco solar para distinguir producción y combate.
+  lighting_and_shadow: Tarde cálida con highlights de sensores y señalización activa de torres.
+  texture_and_material: Fruta cerosa, metal esmaltado, tierra húmeda y tubería de riego inteligente.
+  camera_and_composition: Corredores de cultivo como lanes defensivos con choke-points y nodos de upgrade.
+  atmosphere_and_mood: Ingenio comunitario, urgencia agrícola y resistencia cooperativa.
+  rendering_and_quality: Tower-defense visual fresco con legibilidad alta de oleadas, rango y estado estructural.
 avoidRules:
   - watermark
   - text

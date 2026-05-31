@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Vertical central void pulling the city upward.
   atmosphere: Public trust, climatic comfort, and collective aspiration.
   key_features: Solar chimney, civic ramps, and shared atrium gardens.
-  creative_brief: A solarpunk civic heart where energy, climate, and public life are harmonized in one bright atrium.
+  creative_brief: >-
+    Preserve sunstack civic-atrium grammar as a reusable style system:
+    vertically layered public climate architecture, solar-chimney energy
+    symbolism, and bright civic trust should remain coherent across subjects.
 avoidRules: [photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-102.webp }
 attributes:

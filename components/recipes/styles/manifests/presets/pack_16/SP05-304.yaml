@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Baroque court portraiture, officer uniforms, revolutionary romance, powdered elegance cracking under history, roses and tears moving through palace light
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Regal, tragic, historical, dramatic
-  key_features: Baroque interiors, uniform detail, rose symbolism, court portrait poses, revolutionary tension
-  creative_brief: Powdered wigs crack under the strain of revolution while rose petals fall like torn pages from history ledger. Satin and sword share the same trembling light in halls where etiquette masks fury. Beauty here is the final dignity before the guillotine shadow.
+  aesthetic: Tragedia barroca pre-revolucionaria, con glamour cortesano quebrado y política sentimental de alto voltaje.
+  form_and_line: Línea ornamental y estilizada, posturas de retrato de corte y gestualidad trágica de alta teatralidad histórica.
+  color_palette: Marfiles empolvados, azules reales, rojos de rosa heráldica y dorados envejecidos de palacio.
+  lighting_setup: Luz palaciega lateral con sombras planas nobles, halos suaves sobre uniformes y contraste ceremonial.
+  material_texture: Brocado ceremonial, encaje rígido, mármol palaciego y pátina aristocrática al borde del derrumbe.
+  render_quality: Acabado premium retro-histórico con lectura de emblema visual y tensión dramática de destino.
+  spatial_distortion: Composición de salón profundo con eje de retrato frontal y presión de multitud histórica en segundo plano.
+  atmosphere: Regia, trágica, histórica, apasionada.
+  key_features: Uniforme de guardia nobiliaria, escalinata versallesca, heráldica floral y mirada trágica de retrato oficial.
+  creative_brief: Define una gramática reusable de melodrama barroco insurgente para cualquier sujeto, combinando protocolo aristocrático, sensualidad pictórica y fractura histórica inminente.
 avoidRules:
   - realistic
   - 3d render

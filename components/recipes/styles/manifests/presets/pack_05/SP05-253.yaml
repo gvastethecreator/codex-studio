@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Adult heroine competence, herbal labs, court politeness, soothing green magic, restrained romance and workplace fantasy healing rendered with poised elegance
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Calm, capable, luminous, graceful
-  key_features: Herbal-lab props, court costume detail, gentle magic bloom, composed heroine posture, workplace-fantasy warmth
-  creative_brief: Green magic rises from herbarium vials like answered prayer, the saint's power resting not in spectacle but in the quiet confidence of a woman who knows her worth. Courtly restraint frames every gesture, proving that the most potent sorcery wears a composed smile and steady hands.
+  aesthetic: Elegancia de healing-fantasy adulta, con competencia profesional, laboratorio herbal y cortesía palaciega contenida.
+  form_and_line: Silueta serena de especialista, trazo limpio de gesto técnico y diseño de vestuario cortesano funcional.
+  color_palette: Verde botánico, marfil clínico, dorado tenue de corte y azul pastel de calma mágica.
+  lighting_setup: Luz suave de invernadero, reflejo en frascos de herbario y bloom curativo de baja agresividad.
+  material_texture: Vidrio de laboratorio, papel de fórmula, seda formal y plantas medicinales detalladas.
+  render_quality: Fantasía terapéutica de alta pulcritud con foco en proceso, cuidado y autoridad tranquila.
+  spatial_distortion: Espacio de trabajo ordenado y jerarquía visual por estaciones de preparación alquímica.
+  atmosphere: Calmada, luminosa y competente.
+  key_features: Herbario, frascos de cura, protocolo de corte y postura profesional de protagonista.
+  creative_brief: >-
+    Define una gramática herbarium-court reusable donde sanación botánica,
+    compostura adulta y refinamiento institucional conviertan la magia en
+    práctica experta, no en espectáculo.
 avoidRules:
   - realistic
   - 3d render

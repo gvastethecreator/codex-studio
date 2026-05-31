@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Meandering path through illuminated water corridors.
   atmosphere: Night stroll, orientation, and civic sparkle.
   key_features: Tide lanterns, buoy markers, and wet promenade steps.
-  creative_brief: A seapunk quarter where lanterns float with the tide and guide every shoreline turn.
+  creative_brief: >-
+    Preserve tide lantern-quarter grammar as a reusable style system:
+    tidal wayfinding luminance, meandering waterfront promenade guidance, and
+    nocturnal civic sparkle should remain coherent across subjects.
 avoidRules: [photoreal, dystopia, harsh-dark, watermark, text, logo, muddy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-121.webp }
 attributes:

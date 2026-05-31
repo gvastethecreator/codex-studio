@@ -1,4 +1,5 @@
 import { Hono } from 'hono';
+import { Either, Schema } from 'effect';
 import type {
   CreateJobRequest,
   GenerationTaskSpec,
@@ -53,6 +54,38 @@ interface JobRoutesDependencies {
   publishEvent: typeof publishEvent;
   logJobCreated: (kind: string, jobId: string) => void;
   enqueueJob: (job: Job) => void;
+}
+
+const CreateJobRequestBoundarySchema = Schema.Struct({
+  projectId: Schema.optional(Schema.String),
+  kind: Schema.Union(
+    Schema.Literal('dry_run'),
+    Schema.Literal('codex_imagegen'),
+    Schema.Literal('image_generate'),
+    Schema.Literal('image_edit'),
+    Schema.Literal('style_preset_card'),
+    Schema.Literal('sprite_sheet'),
+    Schema.Literal('texture_generate'),
+  ),
+  providerId: Schema.optional(Schema.Union(Schema.String, Schema.Null)),
+  sourceSpec: Schema.optional(Schema.Union(Schema.Unknown, Schema.Null)),
+  prompt: Schema.optional(Schema.String),
+  execution: Schema.optional(Schema.Union(Schema.Unknown, Schema.Null)),
+  references: Schema.optional(
+    Schema.Array(
+      Schema.Struct({
+        name: Schema.String,
+        dataUrl: Schema.String,
+        strength: Schema.Number,
+      }),
+    ),
+  ),
+});
+
+type CreateJobRequestBoundary = Schema.Schema.Type<typeof CreateJobRequestBoundarySchema>;
+
+function decodeCreateJobRequestBoundary(body: unknown) {
+  return Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(body);
 }
 
 function shouldRequireLocalRunIds(sourceSpec: GenerationTaskSpec | null) {
@@ -134,7 +167,43 @@ export function createJobRoutes({
   });
 
   routes.post('/', async (c) => {
-    const body = (await c.req.json()) as CreateJobRequest;
+    const rawBody = await c.req
+      .json()
+      .catch(() => ({ __invalidJson: true }) as { __invalidJson: true });
+    if ('__invalidJson' in rawBody) {
+      return c.json(
+        {
+          error: 'Invalid request body',
+          code: 'invalid_json',
+          reason: 'Request body must be valid JSON.',
+        },
+        400,
+      );
+    }
+
+    const decodedBody = decodeCreateJobRequestBoundary(rawBody);
+    if (Either.isLeft(decodedBody)) {
+      return c.json(
+        {
+          error: 'Invalid request body',
+          code: 'invalid_request_body',
+          reason: 'Request payload does not match CreateJobRequest boundary schema.',
+        },
+        400,
+      );
+    }
+
+    const boundaryBody: CreateJobRequestBoundary = decodedBody.right;
+    const body: CreateJobRequest = {
+      projectId: boundaryBody.projectId,
+      kind: boundaryBody.kind,
+      providerId: boundaryBody.providerId,
+      sourceSpec: boundaryBody.sourceSpec as CreateJobRequest['sourceSpec'],
+      prompt: boundaryBody.prompt ?? '',
+      execution: boundaryBody.execution as CreateJobRequest['execution'],
+      references: boundaryBody.references as CreateJobRequest['references'],
+    };
+
     const projectId = body.projectId || ensureDefaultProjectId();
     const prompt = (body.prompt || body.sourceSpec?.prompt || '').trim();
     if (!prompt) return c.json({ error: 'Prompt is required' }, 400);

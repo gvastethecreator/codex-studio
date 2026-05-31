@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
 visualDna:
-  aesthetic: Proto-industrial sanctuary where megalith engineering drives communal survival.
-  form_and_line: Cyclopean arches, carved gear motifs, and gravity-fed terraces.
-  color_palette: Basalt charcoal, copper oxide green, and fire ember orange.
-  lighting_setup: Hearthlight cores and skylight shafts across rough-cut stone planes.
-  material_texture: Chiseled basalt, rope pulleys, hammered copper, and packed clay.
-  render_quality: Heavy tactile concept art with robust structural clarity.
-  spatial_distortion: Layered vertical fortress view anchored by a central gear temple.
-  atmosphere: Ancient ingenuity, ritual labor, and elemental endurance.
-  key_features: Stone gear arrays, aqueduct lifts, and monolith workshop cloisters.
-  creative_brief: A stonepunk citadel proving complex machinery can emerge from primal materials.
+  aesthetic: Stonepunk sacred machinery where gravity, labor chants, and basalt mass feel like technology older than language.
+  form_and_line: Cyclopean arch jaws, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes that dwarf figures.
+  color_palette: Basalt charcoal, copper-oxide green, ember orange, ash beige, and blackened handprint marks.
+  lighting_setup: Hearth-core glow buried inside stone teeth, hard skylight shafts, and sparks catching dust around rotating mass.
+  material_texture: Chiseled basalt, rope-burn fibers, hammered copper seams, packed clay, soot-polished wear, and carved tally grooves.
+  render_quality: Heavy tactile concept art where every mechanism reads as buildable, brutal, and devotional.
+  spatial_distortion: Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.
+  atmosphere: Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.
+  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work bays, ember pits, and carved maintenance prayers.
+  creative_brief: >-
+    Preserve basalt gear-sanctuary grammar as a reusable style system:
+    weight-driven mechanics, rope-and-ember labor rituals, and sacred stone
+    machinery logic should remain coherent across subjects.
 avoidRules: [photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-031.webp }
 attributes:
   negativePrompt: photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-stonepunk, categoryName: 12. Corepunk — Stonepunk, tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-stonepunk,
+    categoryName: 12. Corepunk — Stonepunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

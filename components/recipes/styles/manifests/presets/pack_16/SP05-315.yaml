@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Sharper-edged war mecha, colony politics, cockpit grief, military uniforms under harsher 80s sci-fi lighting, youth crushed by factional conflict
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Tense, militarized, tragic, angular
-  key_features: Cockpit and colony imagery, war-uniform silhouettes, sharper mecha forms, political tension framing, pilot trauma close-ups
-  creative_brief: Colony glass fractures in slow motion while cockpit screens paint a teenager face in the colors of impossible choices. Metal sharpens into ideology and grief comes in angular shadows that no mobile suit can shield. War in this register tastes like static and smells like someone else future burning.
+  aesthetic: Tragedia política de guerra mecha con tono más áspero, donde juventud y maquinaria quedan atrapadas en conflicto institucional.
+  form_and_line: Contorno angular severo, siluetas militares rígidas y actuación contenida de trauma en cabina.
+  color_palette: Grises de colonia industrial, azules fríos de monitor, rojos de alerta táctica y blancos desaturados de uniforme.
+  lighting_setup: Luz dura de cockpit y corredor militar, sombras cel planas tajantes y destellos de interfaz en rostros tensos.
+  material_texture: Aleación de mobile suit, vidrio fracturable de colonia, paneles tácticos y ruido analógico de señal bélica.
+  render_quality: Acabado premium retro-militar con lectura estratégica clara y peso emocional de decisión irreversible.
+  spatial_distortion: Profundidad comprimida de cabina y corredor bélico, con escala orbital opresiva para reforzar claustrofobia política.
+  atmosphere: Tensa, militarizada, trágica, cortante.
+  key_features: Cabina como cámara de crisis, mecha de arista dura, códigos de facción y duelo psicológico de piloto.
+  creative_brief: Diseña una gramática reusable de drama bélico mecha-político para cualquier sujeto, combinando geometría angular, luz de conflicto y trauma juvenil institucionalizado.
 avoidRules:
   - realistic
   - 3d render

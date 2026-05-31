@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Nautical-themed social club for machine-age elites and inventors.
-  form_and_line: Porthole motifs, curved staircases, and fan ceiling ribs.
-  color_palette: Navy, brass, and ivory.
-  lighting_setup: Low ambient sconces and focused table pools.
-  material_texture: Polished teak, brass trim, and leather seating.
-  render_quality: Intimate interior concept with rich material contrast.
-  spatial_distortion: Curved lounge plan guiding eye to central bar.
-  atmosphere: Confidential luxury and engineered nostalgia.
-  key_features: Brass bar, sonar murals, and private cigar booths.
-  creative_brief: A decopunk club where naval mythology becomes social currency.
+  aesthetic: Submarine-club decopunk where nautical pressure, elite secrecy, and warm alcohol light compress into one sealed room.
+  form_and_line: Porthole constellations, curved stair rails, fan ceiling ribs, pressure-hull arcs, and booth capsules tucked into walls.
+  color_palette: Naval midnight, aged brass, ivory enamel, cigar brown, and faint sonar green.
+  lighting_setup: Low sconces, focused table pools, brass porthole halos, and muted green instrument glows.
+  material_texture: Polished teak, brass trim, leather seating, smoked glass, enamel navigation plaques, and condensation on portholes.
+  render_quality: Intimate interior concept with rich material contrast and compressed social geography.
+  spatial_distortion: Curved lounge plan wraps the viewer like a pressure hull, hiding booths behind bar arcs and stair turns.
+  atmosphere: Confidential luxury, engineered nostalgia, submerged paranoia, and old-money warmth.
+  key_features: Brass bar ribs, sonar mural rings, booth capsules, nautical gauges, porthole mirrors, and hidden service hatches.
+  creative_brief: >-
+    Preserve deco submarine-club grammar as a reusable style system:
+    sealed porthole rhythm, teak-brass pressure intimacy, and confidential
+    nautical luxury should remain coherent across subjects.
 avoidRules: [photoreal, cyber-neon, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-054.webp }
 attributes:
   negativePrompt: photoreal, cyber-neon, medieval, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

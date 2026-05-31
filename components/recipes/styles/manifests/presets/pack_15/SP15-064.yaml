@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Public arena for ray duels and honor contracts.
-  form_and_line: Circular pit, shield pylons, and tiered stands.
-  color_palette: Plasma blue, crimson, and gunmetal.
-  lighting_setup: Spot arrays and arc discharge bursts.
-  material_texture: Reinforced steel, scorched concrete, and energy shields.
-  render_quality: Action keyframe concept.
-  spatial_distortion: Arena depth centered on duel core.
-  atmosphere: Spectacle, danger, and performative valor.
-  key_features: Duel ring, crowd tiers, and plasma banners.
-  creative_brief: A raypunk colosseum where contracts are settled in visible lightning.
+  aesthetic: Ritualized raypunk violence where honor contracts become visible electrical geometry around a central impact void.
+  form_and_line: Concentric duel pits, shield-pylon teeth, tiered crowd bands, plasma banner arcs, and split-second ray trajectories.
+  color_palette: Plasma blue, contract crimson, black gunmetal, white-hot arc cores, and scorched violet shadows.
+  lighting_setup: Overhead spot arrays, burst-frame arc discharge, shield shimmer halos, and rimlight from charged weapons.
+  material_texture: Reinforced steel ribs, scorched concrete rings, translucent energy shields, burnt banner cloth, and etched contract plaques.
+  render_quality: Action keyframe concept with theatrical readability and kinetic silhouettes.
+  spatial_distortion: Arena depth collapses toward duel core, with circular crowd tiers bending around the electric conflict.
+  atmosphere: Public danger, performative valor, betting tension, and ceremonial menace.
+  key_features: Duel-ring glyphs, crowd-tier shadow bands, shield pylons, plasma banners, and contract boards burned into walls.
+  creative_brief: >-
+    Push nova duel-colosseum as reusable style: every subject should feel
+    caught inside ceremonial electrical judgment, with honor, audience pressure,
+    and ray trajectories shaping composition.
 avoidRules: [photoreal, medieval-fantasy, cyberpunk-slums, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-064.webp }
 attributes:
   negativePrompt: photoreal, medieval-fantasy, cyberpunk-slums, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

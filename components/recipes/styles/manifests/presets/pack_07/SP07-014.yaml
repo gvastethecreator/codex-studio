@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Cyber-clutter interior style with improvised techno-living density, salvage modularity, and nocturnal hacker ambience
-  form_and_line: Cable-mass diagonals, stacked display rectangles, ad-hoc rack assemblies, layered utility object silhouettes, compressed circulation paths
-  color_palette: Deep charcoal base, toxic neon pink-blue-green accents, amber CRT pockets, cold violet shadows, fluorescent sickly fills
-  lighting_setup: Multi-source low-light mix from displays, strips, indicator LEDs, and localized neon spill with sharp falloff pockets
-  material_texture: Scuffed metal housings, brittle plastic shells, adhesive residue layers, worn synthetic upholstery, dusted heat-sink fins
-  render_quality: High-detail lived-in cyber interior rendering with controlled chaos readability and tactile grime realism
-  spatial_distortion: Dense near-field composition with depth blocked by stacked hardware planes and overlapping cable strata
-  atmosphere: Restless, saturated, unstable, sleep-deprived, obsessive
-  key_features: Hardware accumulation grammar, cable entropy patterns, mixed-display luminance, scavenged modular furniture, patinated tech surfaces
+  aesthetic: Interior ciber-residencial saturado, con densidad tecnológica improvisada y nocturnidad eléctrica funcional.
+  form_and_line: Diagonales de cableado, racks apilados, pantallas de múltiples formatos y circulación comprimida por hardware.
+  color_palette: Carbón profundo, neones tóxicos rosa/azul/verde, bolsillos ámbar CRT y violetas fríos de sombra.
+  lighting_setup: Mezcla multi-fuente de baja iluminación con displays, tiras LED, indicadores y derrames neón de caída abrupta.
+  material_texture: Chapa rayada, plásticos quebradizos, residuos adhesivos, tapicerías sintéticas gastadas y disipadores empolvados.
+  render_quality: Alta densidad de detalle con caos controlado, legibilidad técnica y suciedad creíble de uso continuo.
+  spatial_distortion: Primer plano obstruido por estratos de tecnología, profundidad fragmentada por planos superpuestos.
+  atmosphere: Insomne, hiperestimulada, obsesiva y frágilmente funcional.
+  key_features: Entropía de cableado, luminancia heterogénea de pantallas, muebles recuperados y textura tecnológica patinada.
   creative_brief: >-
-    Express cyber-residential identity through infrastructural clutter logic,
-    mixed-source low-light behavior, and improvised material wear, without
-    anchoring the style to one narrative room setup.
+    Formula una gramática cyber transferible donde infraestructura visible,
+    luminancia de fuentes mixtas y desgaste improvisado sean el núcleo. Debe
+    sentirse habitada por tecnología, no decorada con tecnología.
 avoidRules:
   - clean
   - organized

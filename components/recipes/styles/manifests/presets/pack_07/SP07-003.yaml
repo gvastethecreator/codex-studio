@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Mid-century modern interior style with atomic optimism, sculptural domesticity, and restrained retro sophistication
-  form_and_line: Organic modern curves, tapered structural elements, floating cabinetry lines, and iconically balanced furniture silhouettes
-  color_palette: Teak-walnut browns with mustard-olive accents, burnt orange punctuation, and warm neutral support fields
-  lighting_setup: Warm ambient lamp pools, period pendant glow, filtered afternoon daylight, and low-contrast hospitality warmth
-  material_texture: Veneered wood grain clarity, tweed and wool tactility, molded plywood smoothness, and light metal detailing
-  render_quality: Editorial retro-modern visualization with clean compositional discipline and materially rich but controlled nostalgia
-  spatial_distortion: Stable proportions with gentle curvature emphasis to preserve sculptural furniture readability
-  atmosphere: Warm, stylish, nostalgic, social, composed
-  key_features: Atomic-modern silhouette language, wood-textile harmony, tapered geometry cadence, retro editorial balance
+  aesthetic: Modernismo doméstico de mitad de siglo con optimismo atómico, sofisticación sobria y presencia escultórica habitable.
+  form_and_line: Curvas orgánicas contenidas, patas cónicas, volúmenes bajos, módulos horizontales y siluetas icónicas equilibradas.
+  color_palette: Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para cohesión.
+  lighting_setup: Pools cálidos de lámpara, colgantes de época, luz de tarde filtrada y contraste suave de hospitalidad social.
+  material_texture: Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.
+  render_quality: Editorial retro contemporáneo con nostalgia controlada, claridad de mobiliario y composición funcional elegante.
+  spatial_distortion: Proporción estable con énfasis en lectura de piezas; profundidad por ritmo de mobiliario, no por teatralidad.
+  atmosphere: Acogedor, conversacional, curado y optimista sin exceso decorativo.
+  key_features: Aparadores flotantes, asientos orgánicos bajos, luminarias icónicas, textiles cálidos y gramática tapered constante.
   creative_brief: >-
-    Preserve this preset through iconic mid-century proportion logic and
-    warm material choreography, keeping atomic-era optimism as a transferable
-    mood rather than a fixed period scene.
+    Mantén una gramática mid-century transferible: proporción baja, silueta
+    icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse
+    social y refinado en cualquier escena, sin caer en pastiche vintage.
 avoidRules:
   - antique
   - victorian

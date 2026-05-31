@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Regal cryomorphic palace language built from faceted ice architecture, glacial monumentality, and pristine winter-fantasy elegance
-  form_and_line: Needle spires, crystalline buttresses, icicle colonnades, stepped frozen terraces, high pointed arches, and frost-lattice ornamentation
+  aesthetic: Palacial criomórfico de monumentalidad glacial, con elegancia invernal soberana y pureza cristalina.
+  form_and_line: Agujas de hielo, arbotantes facetados, columnatas de carámbano y terrazas congeladas en gradación vertical.
   color_palette: Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights
-  lighting_setup: Subsurface ice transmission, aurora-inspired ambient wash, moonlit edge accents, crisp snow bounce, and controlled high-specular sparkle
-  material_texture: Polished ice planes, frosted crystalline grain, rime buildup, compacted snow embankments, translucent glacial slabs, and faceted crystal detailing
-  render_quality: High-fidelity winter fantasy rendering with sharp refractive definition, disciplined cold tonality, and cathedral-scale clarity
+  lighting_setup: Transmisión subsuperficial en hielo, wash auroral, acentos lunares de borde y rebote nítido sobre nieve compacta.
+  material_texture: Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.
+  render_quality: Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de escala catedralicia.
   spatial_distortion: None
-  atmosphere: Sovereign, austere, luminous, silent, enchanted, and distinctly subzero in emotional temperature
-  key_features: Crystal vault halls, icicle colonnade cadence, frozen throne focal node, refractive stair masses, aurora-reactive interior glow, and sculpted ice bridges
+  atmosphere: Soberana, austera y silenciosa, con temperatura emocional subcero.
+  key_features: Salas abovedadas de cristal, cadencia de columnata helada, nodo de trono congelado y puentes de hielo esculpido.
   creative_brief: >-
-    Maintain a reusable ice-palace grammar: faceted crystalline massing,
-    refractive cold-light behavior, and regal winter monumentality should stay
-    consistent regardless of subject composition.
+    Define una gramática reusable de palacio de hielo donde masa facetada,
+    óptica fría refractiva y monumentalidad regia sostengan identidad en
+    cualquier composición.
 avoidRules:
   - warm
   - fire

@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Sports-like mecha training escalating to impossible cosmic war, determination and scale, hot-blooded sacrifice, old-school mechanical heroism under starfield awe
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Triumphant, emotional, colossal, earnest
-  key_features: Training-hangar backdrops, giant-mecha launch energy, cosmic scale transitions, heroic shouting poses, sacrifice iconography
-  creative_brief: Training hangar fluorescence yields to the impossible light of collapsing galaxies, and one girl's determination bends physics into sacrifice. Scale inflates until the human heart is the only unit of measurement left. Triumph tastes like starlight and goodbye.
+  aesthetic: Heroísmo mecha clásico de sangre caliente que escala de entrenamiento técnico a sacrificio cósmico.
+  form_and_line: Silueta robusta de super-robot, diagonales de lanzamiento y gestualidad enfática de determinación juvenil.
+  color_palette: Azul hangar, rojo heroico, blanco de explosión estelar, negro espacial y amarillo de energía núcleo.
+  lighting_setup: Fluorescente de base militar, flare de ignición y bañado estelar en escenas de escala astronómica.
+  material_texture: Carcasa metálica marcada, juntas mecánicas visibles, humo térmico y brillo energético de alto contraste.
+  render_quality: Super robot anime con claridad emocional, expansión de escala y dramatismo de sacrificio final.
+  spatial_distortion: Transición de escala deportiva a cósmica con foreshortening heroico y verticalidad monumental.
+  atmosphere: Triunfante, emotiva y colosal, de épica sincera.
+  key_features: Hangar de entrenamiento, launches masivos, iconografía de sacrificio y encuadres de grito heroico.
+  creative_brief: >-
+    Construye una gramática galaxy-sacrifice reusable donde disciplina de
+    formación, energía de despegue y expansión astronómica converjan en una
+    épica emocional directa y legible.
 avoidRules:
   - realistic
   - 3d render

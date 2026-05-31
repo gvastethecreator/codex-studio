@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Googie retro-futurist style with atomic-age optimism, velocity-driven geometry, and exuberant commercial-modern spectacle
-  form_and_line: Upswept cantilevers, boomerang vectors, starburst motifs, flying-V canopies, and angular glazing rhythms
-  color_palette: Neon-bright primaries with chrome neutrals, turquoise-red anchors, buttery yellow highlights, and atomic orange punches
-  lighting_setup: High-signage neon glow, backlit plastic diffusion, marquee-like edge lighting, and animated luminance sequencing
-  material_texture: Polished chrome, terrazzo sparkle, Formica gloss, painted stucco grain, and crisp glazed surface reflections
-  render_quality: High-energy mid-century retro-future rendering with kitsch precision and polished optimism-forward finish
-  spatial_distortion: Directional boomerang skew and upswept perspective emphasis to imply constant forward motion
-  atmosphere: Playful, optimistic, fast, theatrical, nostalgic
-  key_features: Velocity geometry language, neon-chrome contrast, starburst ornament grammar, exuberant cantilever choreography
+  aesthetic: Retrofuturismo Googie de optimismo atómico, velocidad visual y espectáculo comercial modernista.
+  form_and_line: Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos angulares dinámicos.
+  color_palette: Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con naranja atómico.
+  lighting_setup: Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia luminosa.
+  material_texture: Cromo pulido, terrazo brillante, Formica esmaltada, estuco pintado y reflejos duros de vidrio.
+  render_quality: Retro-futuro de media centuria con energía kitsch precisa y acabado optimista de alto contraste.
+  spatial_distortion: Sesgo direccional y perspectiva levantada para sugerir movimiento continuo.
+  atmosphere: Lúdica, veloz, nostálgica y espectacular.
+  key_features: Motivos starburst, geometría de impulso, neón-cromo dominante y coreografía de voladizos.
   creative_brief: >-
-    Keep the preset identifiable through atomic-age velocity forms and
-    neon-chrome exuberance; prioritize optimistic retro-future geometry over
-    any fixed roadside venue narrative.
+    Define una gramática Googie transferible donde velocidad geométrica,
+    exuberancia neón-cromo y optimismo atómico sean constantes visuales. Debe
+    funcionar sin depender de la narrativa de un diner o carretera concreta.
 avoidRules:
   - square
   - boring

@@ -14,7 +14,7 @@ const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
 );
 
-interface AppContentProps {}
+interface AppContentProps { }
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();
@@ -39,19 +39,15 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
-      <button
-        type="button"
+      <div
         className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
         onClick={shell.root.onMainClick}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') shell.root.onMainClick();
-        }}
       >
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />
         </div>
         <StudioOperationsRail {...shell.viewport.studioPageController.operations} />
-      </button>
+      </div>
 
       <StudioGenerationDock {...shell.generationDock} />
 

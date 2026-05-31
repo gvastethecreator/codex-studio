@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Postindustrial horror in abandoned underground network.
-  subject_treatment: Mutated creatures emerging from rusted train cars.
-  color_and_tone: Toxic greens, black shadows, and signal red.
-  lighting_and_shadow: Flickering tubes and halos of humidity.
-  texture_and_material: Rust, mold, wet concrete, and exposed wires.
-  camera_and_composition: Narrow hallway with threat in depth.
-  atmosphere_and_mood: Discomfort, confinement, and constant alertness.
-  rendering_and_quality: Survival scene with focus on environmental tension.
+  aesthetic: Survival-horror postindustrial de metro abandonado, con loops de recursos, stealth y encounters de proximidad.
+  subject_treatment: Mutantes por clase de amenaza y lectura de comportamiento (lurker/rusher/brute) en espacios cerrados.
+  color_and_tone: Verde tóxico, negro húmedo y rojo señal para navegación de riesgo y objetivos de escape.
+  lighting_and_shadow: Fluorescentes inestables, parches oscuros y halos de humedad que alteran visibilidad.
+  texture_and_material: Óxido, moho, hormigón mojado, cableado expuesto y residuos orgánicos intrusivos.
+  camera_and_composition: Pasillos estrechos con profundidad amenazante y rutas secundarias de evasión.
+  atmosphere_and_mood: Opresiva, incómoda y paranoica.
+  rendering_and_quality: Horror gameplay con tensión ambiental sostenida y telemetría visual de peligro.
 avoidRules:
   - watermark
   - text

@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Orbital habitat realism, utilitarian aerospace interior, operational zero-G workstation density
-  form_and_line: Modular rack matrices, radial hatch apertures, tether paths, cable bundles, tool-retention zones
+  aesthetic: Interior aeroespacial operativo de microgravedad, donde la habitabilidad emerge de la ingeniería y no de la decoración.
+  form_and_line: Retículas de racks modulares, escotillas circulares, redes de pasamanos y vectores de sujeción para cuerpo y herramientas.
   color_palette: White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents
-  lighting_setup: Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber
-  material_texture: Nomex-like soft panels, brushed alloy fasteners, hook-loop retention strips, MLI foil reflections, molded control plastics
-  render_quality: Mission-grade technical fidelity, dense but readable instrumentation, believable spacecraft wear patterns
+  lighting_setup: LED técnico de alto control, focos de tarea integrados en panel, rebote frío de cupola y modo nocturno ámbar de baja fatiga.
+  material_texture: Paneles textiles técnicos ignífugos, aleación cepillada, velcro de retención, foil aislante y polímeros moldeados funcionales.
+  render_quality: Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste realista de uso continuo.
   spatial_distortion: Zero-G floating
-  atmosphere: Contained, procedural, sleep-deprived precision, fragile livability in hostile vacuum context
-  key_features: Handrail networks, laptop tether points, labeled rack bays, circular pressure hatches, floating utility pouches
+  atmosphere: Contenida y procedimental, con precisión operativa bajo fatiga y sensación de vida frágil en entorno hostil.
+  key_features: Redes de handrails, puntos de tether, módulos etiquetados, escotillas presurizadas y bolsillos utilitarios flotantes.
   creative_brief: >-
-    Mantén una lógica de ingeniería operativa: cada superficie debe sugerir función
-    (sujeción, acceso, control o mantenimiento). La estética se apoya en densidad
-    instrumental, ergonomía en microgravedad y jerarquía visual de interfaces,
-    evitando clichés sci-fi limpios o teatrales.
+    Define una gramática orbital transferible basada en función explícita,
+    retención física y legibilidad de interfaz. Cada elemento debe justificar
+    operación, acceso o mantenimiento, evitando futurismo escenográfico limpio.
 avoidRules:
   - wood
   - brick

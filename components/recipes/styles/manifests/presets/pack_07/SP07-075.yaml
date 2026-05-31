@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Paradox-architecture language inspired by Escher-like visual logic, impossible circulation systems, and mathematically staged optical ambiguity
-  form_and_line: Interlocking stair loops, inversion-ready arches, isometric structural grids, floor-wall-ceiling role swaps, and closed-path ascent/descent paradoxes
+  aesthetic: Arquitectura de paradoja con lógica escheriana, ambigüedad óptica matemática y circulación imposible.
+  form_and_line: Bucles de escaleras interbloqueadas, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en trayectorias cerradas.
   color_palette: Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia undertones, and cool shadow modulation bands
-  lighting_setup: Print-style even exposure with intentionally conflicting shadow cues, multi-vector light implication, and restrained contrast for illusion persistence
-  material_texture: Lithograph paper grain, etched ink hatch marks, matte stone-like plane treatment, and fine engraving-style contour detailing
-  render_quality: High-precision optical-illusion rendering with strict geometric coherence, controlled print aesthetic, and cognitively destabilizing yet readable topology
+  lighting_setup: Exposición uniforme de impresión con sombras deliberadamente conflictivas y contraste moderado para sostener la ilusión.
+  material_texture: Grano de papel litográfico, hatch de tinta grabada y tratamiento plano mate de piedra abstracta.
+  render_quality: Ilusión óptica de precisión alta, coherencia geométrica estricta y topología desestabilizante pero legible.
   spatial_distortion: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
-  atmosphere: Cerebral, disorienting, elegant, infinite, and intriguingly unresolved
-  key_features: Multi-gravity stair circuits, impossible arch transitions, perspective-locked loop topology, inversion-compatible courtyards, and lithographic line hierarchy
+  atmosphere: Cerebral, elegante y desorientante, con infinitud no resuelta.
+  key_features: Circuitos multi-gravedad, transiciones imposibles de arco, loops bloqueados por perspectiva y jerarquía de línea litográfica.
   creative_brief: >-
-    Preserve a reusable impossible-architecture grammar: paradox stair loops,
-    stable line logic under contradictory gravity cues, and lithograph-like
-    tonal discipline should define the preset across subject changes.
+    Construye una gramática reusable de impossible-architecture donde bucles
+    paradójicos, lógica lineal estable bajo gravedad contradictoria y disciplina
+    tonal litográfica definan el sistema visual.
 avoidRules:
   - logical physics
 assets:

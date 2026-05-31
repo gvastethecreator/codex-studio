@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Reflective institution curating atomic promises, failures, and public memory.
-  form_and_line: Monumental slabs, recessed galleries, and didactic corridor axes.
-  color_palette: Slate, brass, and archival ivory.
-  lighting_setup: Museum wash lighting with dramatic exhibit spot accents.
-  material_texture: Board-formed concrete, brushed brass plaques, and archival glass.
-  render_quality: Serious concept scene with documentary precision.
-  spatial_distortion: Processional interior path leading through thematic chambers.
-  atmosphere: Civic introspection, cautionary optimism, and historical weight.
-  key_features: Reactor cross-sections, policy murals, and oral history booths.
-  creative_brief: A public atompunk museum where memory design prevents repeating old mistakes.
+  aesthetic: Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying politeness.
+  form_and_line: Monumental slab planes, recessed vitrines, corridor axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.
+  color_palette: Slate, brushed brass, archival ivory, faded warning orange, and cold exhibit glass blue.
+  lighting_setup: Museum wash light, precise exhibit spots, brass label glints, and low shadow bands under heavy concrete.
+  material_texture: Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room fragments.
+  render_quality: Documentary concept scene with controlled hierarchy, no melodrama, and clear evidence staging.
+  spatial_distortion: Processional path forces subjects through chambers, vitrines, confession walls, and policy diagrams.
+  atmosphere: Civic introspection, cautionary optimism, historical weight, and quiet institutional shame.
+  key_features: Reactor cross-section exhibits, policy mural slabs, oral-history booths, preserved switches, and brass date markers.
+  creative_brief: >-
+    Preserve civic fallout-museum grammar as a reusable style system:
+    restrained evidentiary staging, archival slab-and-glass severity, and
+    polite institutional guilt should remain coherent across subjects.
 avoidRules: [photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-044.webp }
 attributes:
   negativePrompt: photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-atompunk,
+    categoryName: 8. Corepunk — Atompunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

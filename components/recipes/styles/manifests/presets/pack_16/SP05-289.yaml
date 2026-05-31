@@ -12,16 +12,17 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Monumental gothic emptiness, impossible vessels, sacred ruin, dream-like Christian symbolism and oceanic stillness inside a nearly wordless apocalyptic reverie
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Sacred, silent, dreamlike, mournful
-  key_features: Cathedral ruin scale, water-black emptiness, egg imagery, elongated silhouettes, sacred-symbolic composition
-  creative_brief: Water covers the cathedral floor, a mirror that reflects no god, only the hollow grandeur of belief abandoned to stillness. An egg cradled in thin fingers holds either everything or nothing, and the film refuses to answer which. Sacred images drift through ruined arches like forgotten prayers, their meaning no longer remembered but still unbearably felt.
+  aesthetic: Alegoría gótica de silencio apocalíptico, con monumentalidad sacra vaciada y simbolismo ambiguo de contemplación extrema.
+  form_and_line: Línea fina y ascética, figuras alargadas casi litúrgicas y contornos de ruina monumental con ritmo arquitectónico severo.
+  color_palette: Azul petróleo profundo, grises de piedra mojada, marfiles apagados y negros acuosos de profundidad incierta.
+  lighting_setup: Iluminación baja y difusa con reflejos acuáticos fríos, focos puntuales de vidriera rota y sombras de gran masa.
+  material_texture: Piedra erosionada, superficies inundadas espejadas, madera antigua saturada y pátina ritual de abandono.
+  render_quality: Acabado premium de contemplación lenta, detalle textural sobrio y jerarquía simbólica por vacío compositivo.
+  spatial_distortion: Escala catedralicia sobredimensionada con perspectiva reverencial que reduce lo humano a signo frágil.
+  atmosphere: Sacra, muda, onírica, doliente.
+  key_features: Ruina monumental inundada, símbolo ovoide ambiguo, siluetas elongadas y composición devocional de vacío.
+  creative_brief: Diseña un lenguaje reusable de misticismo en ruina donde cualquier sujeto quede absorbido por silencio arquitectónico, agua oscura y simbología no resuelta.
+
 avoidRules:
   - realistic
   - 3d render

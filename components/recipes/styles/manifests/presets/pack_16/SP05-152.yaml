@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Samurai-comedy nonsense in a sci-fi Edo city, deadpan punchlines, absurd parodies, wooden swords and vending machines sharing one street, lazy hero swagger, chaos with heart
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Irreverent, chaotic, lovable, stupid-smart
-  key_features: Anachronistic prop mashups, comedic reaction faces, lazy hero postures, sci-fi Edo streets, parody-ready staging
-  creative_brief: The sacred art of nonsense, practiced daily on streets where wooden swords rest beside vending machines and aliens run neighborhood shops. A lazy hero who has seen too much to take anything seriously turns every crisis into a punchline and every punchline into a life lesson whispered between explosions. Chaos is not the enemy here; it is the native language.
+  aesthetic: Comedia samurái sci-fi irreverente de anacronismo total, con corazón dramático escondido bajo parodia constante.
+  form_and_line: Línea digital expresiva para reacción cómica extrema, postura holgazana de antihéroe y ritmo visual de gag.
+  color_palette: Saturaciones pop de ciudad Edo-futurista, neones moderados y tierra urbana tradicional en choque continuo.
+  lighting_setup: Iluminación flexible de comedia-acción, highlights pulidos y contraste medio para sostener cambios de tono abruptos.
+  material_texture: Madera de bokken, metal de utilería urbana, señalética híbrida y acabados limpios de producción 2000s.
+  render_quality: Acabado premium de parodia-action con legibilidad alta de chiste, acción y microdrama humano.
+  spatial_distortion: Escena urbana modular para setpiece episódico, con perspectivas exageradas en punchlines y duelos.
+  atmosphere: Irreverente, caótica, entrañable, astuta.
+  key_features: Mashup de props históricos-modernos, acting deadpan, heroísmo perezoso y staging de caos con timing preciso.
+  creative_brief: Diseña una gramática reusable de comedia anacrónica samurái-sci-fi para cualquier sujeto, mezclando absurdo, swagger y humanidad subyacente.
 avoidRules:
   - realistic
   - 3d render

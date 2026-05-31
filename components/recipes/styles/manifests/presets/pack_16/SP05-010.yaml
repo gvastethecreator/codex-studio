@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Round forms, playful action, whimsical journeys, bright comic timing, chubby character shapes, bouncing movement, cartoon dust clouds
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Adventurous, joyful, comedic, light-hearted
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Bouncy round forms tumble through whimsical landscapes trailing cartoon dust clouds, every chubby-fisted punch landing with the percussive joy of a child's imagination unleashed. The line work stays loose and playful, warm primaries wrapping earnest adventurers in the unshakeable optimism of classic gag-timing.
+  aesthetic: Aventura marcial cómica de formas redondas, con inocencia física, slapstick amable y energía itinerante.
+  form_and_line: Trazo cel elástico y expresivo, timing de gag corporal y silueta cartoon de lectura instantánea.
+  color_palette: Amarillos soleados, verdes vivos, naranjas suaves y azules limpios de viaje clásico.
+  lighting_setup: Iluminación abierta de aventura diurna, sombra simple y acentos brillantes de humor físico.
+  material_texture: Polvo caricaturesco, tela simple de viaje, piedra ligera y grano retro optimista.
+  render_quality: Acabado broadcast cálido con énfasis en claridad cómica y ternura de movimiento.
+  spatial_distortion: Mundo expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.
+  atmosphere: Aventurera, alegre, juguetona, entrañable.
+  key_features: Proporción redondeada, energía de troupe viajera, beat de broma visual y combate de tono amistoso.
+  creative_brief: Define una gramática reusable de aventura marcial humorística para cualquier sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de gag físico.
 avoidRules:
   - realistic
   - 3d render

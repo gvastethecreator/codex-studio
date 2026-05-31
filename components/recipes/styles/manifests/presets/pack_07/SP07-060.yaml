@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Retro TV cartoon haunted-manor language blending playful menace, exaggerated architecture, and Saturday-morning mystery energy in the Scooby-Doo tradition
-  form_and_line: Canted verticals, bowing roof ridges, asymmetrical shutter rhythm, warped fenestration, and elastic silhouette curves with readable inked outlines
+  aesthetic: Mansión embrujada cartoon retro, con amenaza juguetona y exageración arquitectónica de lectura inmediata.
+  form_and_line: Verticales inclinadas, cubiertas combadas, vanos deformados y silueta elástica con contorno gráfico claro.
   color_palette: Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools
-  lighting_setup: Intermittent lightning keys, cool moon backlight, selective window glow, high-contrast cel-shadow blocks, and storm-driven rim flashes
-  material_texture: Flat painted clapboard planes, stylized ink contouring, limited cel-shaded gradients, simplified weathered timber motifs, and graphic silhouette props
-  render_quality: Clean 2D-cartoon readability with nostalgic TV-era finish, high shape clarity, controlled texture minimalism, and playful spooky tone
+  lighting_setup: Keys de relámpago intermitente, contraluz lunar frío, ventanas selectivas brillantes y bloques cel-shade de alto contraste.
+  material_texture: Planos pintados flat, contorno entintado, gradientes limitados y motivos de madera simplificada de estilo TV.
+  render_quality: Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.
   spatial_distortion: Face in window
-  atmosphere: Campy, eerie, mischievous, nostalgic, theatrical, and suspenseful without realistic horror intensity
-  key_features: Leaning manor profile, zig-zag lightning motifs, crescent or full moon framing, bat silhouettes, twisted foreground trees, iron gate rhythm, and bright window pops
+  atmosphere: Campy, traviesa y teatral, con suspenso amable sin violencia realista.
+  key_features: Perfil de mansión inclinada, relámpagos zigzag, luna enmarcante, siluetas de murciélago, árboles retorcidos y gate rhythm.
   creative_brief: >-
-    Keep the preset anchored in stylized cartoon-haunt grammar: exaggerated
-    crooked architecture, storm-lit silhouette contrast, and playful spooky
-    staging should remain consistent while avoiding realistic horror rendering.
+    Formula una gramática haunted-cartoon transferible donde arquitectura torcida,
+    contraste de tormenta y staging spooky lúdico se mantengan constantes. Debe
+    evitar por completo el horror realista y sostener legibilidad gráfica.
 avoidRules:
   - scary realistic
 assets:

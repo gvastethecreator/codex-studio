@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Adult rom-com tenderness, boarding-house clutter, sunset laundry, long-term yearning and everyday comedy rendered with mature retro softness
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Warm, wistful, domestic, patient
-  key_features: Boarding-house props, sunset balconies, mature-romance close-ups, everyday clutter, retro domestic calm
-  creative_brief: Afternoon light pools like honey across cluttered hallways where longing has steeped for seasons. A boarding house becomes a universe of unspoken words, each creaking floorboard a metronome of patience. Maturity in love is the courage to wait while the sunset does its slow and certain work.
+  aesthetic: Comedia romántica adulta de convivencia lenta, con erosión del tiempo cotidiano y ternura de segunda oportunidad.
+  form_and_line: Línea suave de convivencia, actuación sutil de proximidad y composición de interiores con humor de fricción diaria.
+  color_palette: Ámbares de atardecer, marrones de madera vivida, verdes apagados y rojos discretos de intimidad hogareña.
+  lighting_setup: Luz dorada de fin de tarde con sombras planas tranquilas y contraste bajo que favorece ternura acumulativa.
+  material_texture: Pasillos gastados, lavandería colgada, muebles usados y grano cálido de serie televisiva clásica.
+  render_quality: Acabado premium retro-doméstico con énfasis en microdrama emocional y timing cómico cotidiano.
+  spatial_distortion: Pensión de corredores estrechos y cuartos conectados que intensifica roce emocional continuo.
+  atmosphere: Cálida, nostálgica, doméstica, paciente.
+  key_features: Balcones al atardecer, clutter habitable, primerísimos emocionales y coreografía de vecinos.
+  creative_brief: Crea una gramática reusable de intimidad doméstica adulta para cualquier sujeto, basada en rutina compartida, microgesto afectivo y desgaste entrañable del espacio común.
 avoidRules:
   - realistic
   - 3d render

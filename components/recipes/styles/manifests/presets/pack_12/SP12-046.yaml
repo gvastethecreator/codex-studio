@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Nomadic camp following solar rail lines.
-  subject_treatment: Traveling clans with recycled technology.
-  color_and_tone: Solar yellow, rust red, and dusty blue.
-  lighting_and_shadow: Warm afternoon light with photovoltaic glints.
-  texture_and_material: Canvas, panels, and repaired wood.
-  camera_and_composition: Semicircular camp layout beside the tracks.
-  atmosphere_and_mood: Mobile community and hard-earned hope.
-  rendering_and_quality: Faction visual for an open-world RPG.
+  aesthetic: Open-world nomad-sci-fi de campamentos móviles sobre riel solar, enfocado en logística, ruta y supervivencia comunitaria.
+  subject_treatment: Clanes viajeros con tecnología recuperada y diferenciación visual por oficio itinerante.
+  color_and_tone: Amarillo solar, rojo óxido y azul polvoriento para mapear energía, desgaste y horizonte.
+  lighting_and_shadow: Tarde cálida con destellos fotovoltaicos que marcan nodos de recarga y actividad.
+  texture_and_material: Lona resistente, paneles reparados, madera recompuesta y metal reciclado.
+  camera_and_composition: Campamento semicircular junto a vías con zonas de comercio, taller y guardia.
+  atmosphere_and_mood: Esperanzada, austera y resiliente.
+  rendering_and_quality: Faction-worldbuilding gameplay art con lectura de circulación, abastecimiento y seguridad.
 avoidRules:
   - watermark
   - text

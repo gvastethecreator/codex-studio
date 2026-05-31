@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Arcane marketplace for a roguelike card game.
-  subject_treatment: Mystical merchants and animated artifacts.
-  color_and_tone: Sapphire blue, copper, and rich purple.
-  lighting_and_shadow: Magical lanterns with pulsing glow.
-  texture_and_material: Scrolls, carved wood, and gems.
-  camera_and_composition: Fan-shaped stands with a central focal point.
-  atmosphere_and_mood: Curiosity, strategy, and calculated risk.
-  rendering_and_quality: Highly readable run-selection hub.
+  aesthetic: Deckbuilder-roguelike hub arcano orientado a draft, compra de reliquias y preparación de run.
+  subject_treatment: Comerciantes místicos y artefactos animados con lectura de rareza y función.
+  color_and_tone: Azul zafiro, cobre y púrpura intenso para jerarquía de recompensa/riesgo.
+  lighting_and_shadow: Faroles mágicos pulsantes que marcan oferta activa y eventos especiales.
+  texture_and_material: Pergaminos, madera tallada, gemas facetadas y vitrinas rituales.
+  camera_and_composition: Stands en abanico con foco central para navegación clara entre opciones.
+  atmosphere_and_mood: Curiosa, estratégica y de riesgo calculado.
+  rendering_and_quality: Run-selection hub gameplay-first con claridad de rutas de build y economía.
 avoidRules:
   - watermark
   - text

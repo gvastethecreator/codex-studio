@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: 2000s magic-academy comedy, aristocratic fantasy schools, pink-haired tantrum energy, summoned-familiar romance, wand-duel pageantry, playful noblesse fantasy
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Comic, magical, bratty, romantic
-  key_features: Magic-school uniforms, aristocratic interiors, wand-duel staging, summoned-companion motifs, tsundere expression acting
-  creative_brief: A summoning spell that went sideways, a boy from another world bound to a tiny aristocrat with a temper larger than her magical talent. Halls of privilege shake with the thunder of her indignation, and every wand duel is a courtship conducted through explosions. Magic here is less about power and more about the impossible algebra of two people learning to share a heart.
+  aesthetic: Comedia romántica de academia mágica aristocrática, con energía tsundere y espectáculo de duelo encantado.
+  form_and_line: Línea digital brillante, acting exagerado de conflicto afectivo y poses de varita de alto dramatismo cómico.
+  color_palette: Rosas nobles, azules de uniforme, dorados de castillo y blancos de hechizo de gran saturación.
+  lighting_setup: Luz de salón mágico pulida, destellos de conjuro y gradientes suaves de producción 2000s.
+  material_texture: Piedra de academia, ornamento aristocrático, textiles de uniforme y brillo limpio de compositing digital.
+  render_quality: Acabado premium romcom-fantasy con legibilidad de gag romántico y duelo ceremonial.
+  spatial_distortion: Espacio de campus nobiliario con teatralidad de pasillo y arena de magia para choques relacionales.
+  atmosphere: Cómica, mágica, caprichosa, romántica.
+  key_features: Uniforme de academia, motivo familiar invocado, duelos de varita y expresividad tsundere central.
+  creative_brief: Construye una gramática reusable de academia mágica tsundere para cualquier sujeto, equilibrando nobleza lúdica, hechicería pop y romance conflictivo.
 avoidRules:
   - realistic
   - 3d render

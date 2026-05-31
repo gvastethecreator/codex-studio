@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Hayao Miyazaki style, lush hand-painted backgrounds, expressive animation, magical realism, lively spirit bathhouse, hand-painted wonder, expressive mystery, warm eccentric detail, soot-sprites, bath tokens, no-face spirit, radish spirit
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Wonderstruck, magical, enchanting, dreamy
-  key_features: Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry
-  creative_brief: A bathhouse floats between worlds, its corridors crowded with gods who come to wash away the dust of the divine. No-Face drifts through the steam like loneliness given form, hungry for connection but speaking only in gold. Childhood discovers that courage is not the absence of fear but the decision to keep walking through a world that defies understanding.
+  aesthetic: Fantasía termal liminal con calidez artesanal, humor espiritual y extrañeza amable de cuento iniciático.
+  form_and_line: Línea de largometraje orgánica, acting expresivo de curiosidad valiente y siluetas de criatura no amenazante.
+  color_palette: Ocres cálidos de interior, rojos lacados, verdes musgo suaves y dorados de luz húmeda.
+  lighting_setup: Vapor volumétrico con glow ámbar, faroles difusos y contraste blando de pasillo encantado.
+  material_texture: Madera barnizada, cerámica húmeda, papel tradicional y fondos pintados con densidad artesanal.
+  render_quality: Acabado cinematográfico premium con microgesto emocional y atmósfera envolvente continua.
+  spatial_distortion: Arquitectura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.
+  atmosphere: Asombrada, mágica, íntima, onírica.
+  key_features: Espacios rituales vivos, criaturas de diseño entrañable y narrativa visual de descubrimiento ético.
+  creative_brief: Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Military mecha realism, dusty battlefields, sober sci-fi drama, tank treads, tactical maps, weary soldier faces
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Serious, war-torn, grim, resolute
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Dust chokes the battlefield as weary soldiers huddle beneath the shadow of walking tanks scarred by a hundred campaigns, every panel line and tread link etched with documentary precision. This is not heroic fantasy but the grim arithmetic of war, rendered in muted retro tones where survival itself is victory.
+  aesthetic: Mecha bélico realista de frente terrestre, con doctrina militar, fatiga de campaña y sobriedad táctica.
+  form_and_line: Línea técnica robusta, panelado legible y acting de escuadra en tensión operacional continua.
+  color_palette: Olivas apagados, tierra polvorienta, acero mate y rojos mínimos de señal de riesgo.
+  lighting_setup: Luz dura de campo abierto, sombras secas de blindaje y reflejos discretos en metal funcional.
+  material_texture: Chasis rayado, barro compactado, lona de vehículo y grano viejo de crónica de guerra.
+  render_quality: Acabado retro de precisión mecánica con claridad documental de hardware y cadena de mando.
+  spatial_distortion: Profundidad de llanura de combate con bloqueos de columna, cobertura y avance por capas.
+  atmosphere: Seria, devastada, áspera, resiliente.
+  key_features: Silueta de mecha de línea de frente, mapa táctico implícito y desgaste visible de campaña prolongada.
+  creative_brief: Define una gramática reusable de mecha militar terrenal para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico.
 avoidRules:
   - realistic
   - 3d render

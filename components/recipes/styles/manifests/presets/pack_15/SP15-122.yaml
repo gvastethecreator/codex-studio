@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Industrial dock geometry softened by wave curves.
   atmosphere: Making, flow, and oceanic adaptation.
   key_features: Wave fins, fabrication cradles, and harbor hands.
-  creative_brief: A seapunk dockyard where marine mechanics and wavecraft are one practice.
+  creative_brief: >-
+    Preserve waveforge dockyard grammar as a reusable style system:
+    wave-shaped fabrication infrastructure, polished marine work rhythms, and
+    adaptive oceanic making should remain coherent across subjects.
 avoidRules: [photoreal, rust, diesel, watermark, text, logo, sludge]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-122.webp }
 attributes:

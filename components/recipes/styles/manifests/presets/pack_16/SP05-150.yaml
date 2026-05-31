@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: School life folding into ember-eyed battle fantasy, tiny-tsundere severity, floating flame fragments, hidden-world combat, early-digital supernatural romance tension
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Fiery, severe, romantic, hidden
-  key_features: Ember particles, school-uniform contrast, sword-and-flame poses, hidden-world overlays, compact but intense framing
-  creative_brief: Embers drift through the classroom window, trailing the scent of a world hidden one dimension over where crimson eyes are the only warning before steel meets destiny. Her grip on the sword says this is not the first school year she has spent at war. Twilight is when the ordinary bleeds, and the boundary between timelines catches fire.
+  aesthetic: Fantasía de combate sobrenatural escolar en clave early-2000s, con tensión romántica y severidad tsundere de alta combustión emocional.
+  form_and_line: Línea digital limpia y compacta, silueta pequeña pero dominante, poses de espada frontal y acting de intensidad contenida.
+  color_palette: Rojos brasa, naranjas ígneos, azules de uniforme y negros de portal oculto con saturación nítida.
+  lighting_setup: Glow de fuego sobrenatural, key de atardecer urbano y gradiente suave típico de compositing digital de época.
+  material_texture: Superficies escolares limpias, partículas de ceniza flotante y acabado cel-digital con ruido sutil.
+  render_quality: Acabado premium de acción romántica 2000s con lectura inmediata de choque mundo ordinario-mundo oculto.
+  spatial_distortion: Espacio cotidiano tensionado por overlays dimensionales y encuadre cerrado de duelo en transición crepuscular.
+  atmosphere: Ígnea, estricta, romántica, secreta.
+  key_features: Ojos carmesí, partículas de ember, contraste uniforme-arma y superposición de plano oculto.
+  creative_brief: Diseña una gramática reusable de school-fantasy incendiaria para cualquier sujeto, combinando iconografía escolar, fuego arcano y romance de frontera dimensional.
 avoidRules:
   - realistic
   - 3d render

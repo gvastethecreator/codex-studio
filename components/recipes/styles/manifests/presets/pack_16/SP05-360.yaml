@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Karuta competition as athletic poetry, tatami rooms, kimono sleeves, explosive card-strike speed, cultural refinement transformed into fierce competitive intensity
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Focused, elegant, disciplined, urgent
-  key_features: Tatami geometry, hand-strike blur, kimono sleeve motion, low-room tension, concentration close-ups
-  creative_brief: Syllables hang in the tatami air for a breathless instant before a hand strikes like a heron through still water. Ancient poetry becomes athletic reflex, kimono sleeves trailing the ghost of the verse just snatched from silence.
+  aesthetic: Karuta competitivo de poesía atlética, orientado a reflejo de lectura, memoria sonora y golpe instantáneo.
+  form_and_line: Gesto de mano ultrarrápido, postura baja disciplinada y movimiento de manga como vector de acción.
+  color_palette: Tonos de tatami cálido, índigo tradicional y acentos carmín de tensión competitiva.
+  lighting_setup: Iluminación interior suave con foco sobre cartas y contraste de concentración facial.
+  material_texture: Trama de tatami, papel de carta nítido, seda de kimono y madera de sala ceremonial.
+  render_quality: Frame deportivo-cultural con lectura precisa de sílaba, reacción y captura de carta.
+  spatial_distortion: Perspectiva rasante de suelo y estiramiento de mano para dramatizar velocidad de strike.
+  atmosphere: Concentrada, elegante, disciplinada y urgentemente competitiva.
+  key_features: Geometría de tatami, blur de mano, tensión de sala baja y close-up de foco mental.
+  creative_brief: >-
+    Formula una gramática reusable de tatami-card-strike donde cultura,
+    velocidad de reacción y legibilidad de gesto conviertan la competencia en
+    sistema visual transferible.
 avoidRules:
   - realistic
   - 3d render

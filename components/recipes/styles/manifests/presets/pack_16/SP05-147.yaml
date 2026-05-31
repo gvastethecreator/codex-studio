@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Compact school romance with emotional blunt-force trauma, winter streets, domestic apartment warmth, tiny tiger hostility, youth awkwardness sharpened into comedy and heartbreak
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Combative, sweet, wintery, sincere
-  key_features: School-uniform warmth, winter streetlights, apartment clutter intimacy, sharp reaction acting, emotional proximity framing
-  creative_brief: Winter narrows the world to the space between two people who refuse to admit the distance is closing, harsh words serving as frost on something warmer underneath. Every slammed door and sharp retort is just grammar for a feeling too large for the vocabulary of youth. The coldest season knows best how to make a heart burn.
+  aesthetic: Romcom escolar invernal de fricción emocional, con ternura escondida bajo choque verbal y torpeza juvenil.
+  form_and_line: Línea digital compacta, acting reactivo intenso y siluetas cercanas para conflicto afectivo continuo.
+  color_palette: Azules fríos de calle, naranjas cálidos de interior, rojos suaves de rubor emocional y grises de invierno.
+  lighting_setup: Contraste entre farola nocturna fría y luz doméstica cálida, con gradientes suaves de cercanía íntima.
+  material_texture: Tejido de uniforme, superficies de apartamento vivido y acabado limpio early-HD con ruido sutil.
+  render_quality: Producción premium 2000s con excelente lectura de timing cómico y desgarro sentimental.
+  spatial_distortion: Espacios escolares y domésticos comprimidos para enfatizar proximidad, choque y reconciliación.
+  atmosphere: Combativa, dulce, invernal, honesta.
+  key_features: Dúo tsundere en tensión, luminaria de invierno, clutter íntimo y acting de distancia que se acorta.
+  creative_brief: Diseña una gramática reusable de romance de invierno conflictivo para cualquier sujeto, equilibrando humor cortante y calidez emocional.
 avoidRules:
   - realistic
   - 3d render

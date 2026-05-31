@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Kubrickian alien-monolith language based on absolute geometric austerity, symbolic artifact presence, and minimal cosmic monumentality
-  form_and_line: Strict 1:4:9 rectangular proportion, flawless planar faces, razor-clean vertical edges, zero ornament policy, and uncompromised orthogonal silhouette dominance
+  aesthetic: Monolito alienígena de austeridad geométrica absoluta, presencia simbólica y monumentalidad cósmica mínima.
+  form_and_line: Proporción rectangular estricta 1:4:9, caras planas impecables y aristas verticales limpias sin ornamento.
   color_palette: Deep matte black mass, near-void black absorption fields, faint edge silver glints, and sparse neutral lunar-gray environmental reflections
-  lighting_setup: High-contrast directional lighting with extreme absorption response, minimal edge catch-light, severe cast shadow geometry, and restrained ambient fill
-  material_texture: Ultra-smooth featureless surface, non-granular matte finish, near-specular suppression, and artifact-grade manufacturing uniformity
-  render_quality: Precision-minimal rendering with maximum geometric authority, disciplined tonal economy, and enigmatic high-concept sci-fi clarity
+  lighting_setup: Iluminación direccional de alto contraste, absorción extrema, catch-light mínimo y sombra proyectada severa.
+  material_texture: Superficie ultrasuave y anónima, mate no granular, supresión casi total del especular y uniformidad de artefacto.
+  render_quality: Minimalismo de precisión con autoridad geométrica máxima y economía tonal disciplinada.
   spatial_distortion: None
-  atmosphere: Ominous, contemplative, transcendent, silent, and intellectually unsettling
-  key_features: Canonical 1:4:9 proportion control, light-absorbing black plane behavior, featureless monolithic slab profile, and severe vertical compositional anchoring
+  atmosphere: Ominosa, contemplativa y trascendente, con silencio intelectualmente inquietante.
+  key_features: Control canónico 1:4:9, planos negros absorbentes, perfil monolítico sin rasgos y anclaje compositivo vertical severo.
   creative_brief: >-
-    Preserve monolith style as a reusable grammar of geometric absolutes:
-    strict proportion, featureless black material response, and symbolic
-    minimal monumentality should remain stable across subject changes.
+    Define una gramática reusable de monolith basada en proporción estricta,
+    respuesta material negra sin rasgos y monumentalidad simbólica mínima
+    estable entre variaciones de sujeto.
 avoidRules:
   - ornamentation
 assets:

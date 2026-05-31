@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Informal cottage planting, romantic abundance horticulture, soft-edged domestic garden vernacular
-  form_and_line: Layered mixed-height borders, meandering circulation, rounded perennial masses, climbing-arch punctuation
+  aesthetic: Jardín cottage de abundancia romántica, domesticidad hortícola y espontaneidad cuidadosamente compuesta.
+  form_and_line: Borduras estratificadas por altura, recorridos sinuosos, masas redondeadas y acentos verticales trepadores.
   color_palette: Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose
-  lighting_setup: Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow
-  material_texture: Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage
-  render_quality: Painterly botanical richness, seasonal stratification clarity, intentionally informal but composed garden structure
+  lighting_setup: Sol suave con difusión nubosa, dapple bajo arbolado y brillo cálido de pétalo en tarde baja.
+  material_texture: Pétalo y hoja de textura variada, ladrillo con musgo, piedra rugosa, mulch de corteza y follaje plumoso.
+  render_quality: Riqueza botánica pictórica con estratificación estacional legible e informalidad estructurada.
   spatial_distortion: None
-  atmosphere: Gentle abundance, sensory softness, lived-in horticultural intimacy
-  key_features: Overflowing border transitions, scented herb drifts, rose/clematis vertical accents, curved gravel paths, pollinator cues
+  atmosphere: Íntima, suave y vivida, con abundancia vegetal acogedora.
+  key_features: Transiciones desbordadas, manchas de aromáticas, rosas/clematis verticales, senderos curvos y señales para polinizadores.
   creative_brief: >-
-    Prioriza mezcla, estratificación y espontaneidad controlada: debe parecer libre
-    pero diseñada por capas de floración, textura y altura. Evita formalismo rígido;
-    busca calidez doméstica y continuidad estacional.
+    Construye una gramática cottage transferible basada en mezcla, altura y
+    secuencia de floración. Debe parecer libre pero responder a una estructura
+    de capas estacionales y calidez doméstica sostenida.
 avoidRules:
   - formal
   - concrete

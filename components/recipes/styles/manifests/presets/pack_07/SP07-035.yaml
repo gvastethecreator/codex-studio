@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Historic reading-room classicism, archival interior atmosphere, bibliographic monumentality
-  form_and_line: Tall shelf bays, ladder-track verticals, table-aisle symmetry, vault/alcove cadence, spine-color striping
+  aesthetic: Clasicismo bibliográfico histórico con monumentalidad silenciosa y disciplina de lectura.
+  form_and_line: Crugías altas de estantería, verticales de escalera, simetría de mesas y cadencia de bóveda/alcoba.
   color_palette: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
-  lighting_setup: Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce
-  material_texture: Oxidized leather grain, deckled paper edges, gilt tooling wear, polished oak handling patina, brass lamp tarnish
-  render_quality: Museum-grade interior rendering, fine material aging fidelity, deep focus for catalog-like readability
+  lighting_setup: Lámparas cálidas focales, pantalla verde de lectura, shafts altos de ventana y apliques de latón envejecido.
+  material_texture: Cuero oxidado, papel de canto irregular, dorados gastados, roble pulido por uso y latón oscurecido.
+  render_quality: Calidad museo con envejecimiento noble y profundidad de campo apta para lectura catalográfica.
   spatial_distortion: None
-  atmosphere: Contemplative discipline, inherited scholarship, reverent silence with warm pooled light
-  key_features: Green-shade task lamps, catalog-table clusters, rolling rail ladders, shelf-bay numbering logic, atlas/globe accents
+  atmosphere: Contemplativa, rigurosa y reverencial, con calidez puntual sobre un fondo de silencio estructurado.
+  key_features: Lámparas green-shade, clúster de mesas de catálogo, escaleras móviles, numeración de bahías y acentos cartográficos.
   creative_brief: >-
-    Haz que el preset funcione como tipología bibliográfica completa: ritmo de
-    estanterías, luz de lectura localizada y envejecimiento noble de materiales.
-    Debe conservar solemnidad intelectual y legibilidad editorial sin depender de
-    una biblioteca histórica concreta.
+    Construye una gramática bibliográfica transferible basada en ritmo de
+    estantería, luz focal de lectura y materialidad envejecida con nobleza.
+    Debe sostener solemnidad intelectual sin depender de un edificio concreto.
 avoidRules:
   - digital
   - modern

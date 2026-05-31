@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Tournament-arena rivalry, spirit-gun bursts, delinquent confidence, sharp 90s facial acting, underworld martial drama, honor and swagger sharing the same frame
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Fiery, competitive, cool, earnest
-  key_features: Arena staging, energy-burst fists, delinquent posture, underworld iconography, rival stare-downs
-  creative_brief: A punk with a heart too big for the underworld, fighting his way through heaven bureaucracy armed with a finger-gun and a loyalty that transcends death itself. Tournament arenas where the prize is never the trophy but the friend standing just outside the ring, bleeding belief into every punch thrown. Delinquent swagger masking a spirit so bright it burns through the paperwork of the afterlife and rewrites the rules of who gets to come home.
+  aesthetic: Torneo espiritual noventero con rivalidad intensa, honor callejero y energía sobrenatural de alto voltaje.
+  form_and_line: Línea 90s firme y expresiva, acting facial combativo y coreografía de puños con momentum limpio.
+  color_palette: Azules eléctricos, naranjas de impacto, verdes oscuros de inframundo y acentos púrpura místicos.
+  lighting_setup: Cel contrastado con flashes de técnica espiritual, rim de arena y sombras de duelo frontal.
+  material_texture: Superficie de estadio, polvo de combate, telas urbanas y grano analógico de acción clásica.
+  render_quality: Acabado premium de torneo sobrenatural con legibilidad perfecta de técnica, rivalidad y emoción.
+  spatial_distortion: Escena de ring expansivo con encuadres de stare-down, rush ofensivo y cierre heroico.
+  atmosphere: Ardiente, competitiva, cool, sincera.
+  key_features: Arena marcada, estallidos de energía, postura delinquent y símbolos de inframundo marcial.
+  creative_brief: Define una gramática reusable de combate espiritual de torneo para cualquier sujeto, mezclando bravura juvenil, lealtad y mística de superación.
 avoidRules:
   - realistic
   - 3d render

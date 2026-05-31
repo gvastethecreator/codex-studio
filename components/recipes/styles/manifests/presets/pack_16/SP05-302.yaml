@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Romantic outlaw in deep space, skull insignia, lonely heroic piracy, cape whipping against starfields, melancholic rebellion at operatic scale
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Romantic, lonely, rebellious, cosmic
-  key_features: Cape silhouette, skull insignia, starfield loneliness, bridge-deck poses, outlaw idealism framing
-  creative_brief: A lone silhouette cuts through the galaxy indifference, cape dragging across constellations like a brushstroke of defiance. The skull emblem becomes not a threat but a promise—that even in the void, someone remembers how to feel. Romance here is a blade drawn against loneliness itself.
+  aesthetic: Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y mito del capitán errante.
+  form_and_line: Silueta de capa dominante, línea heroica elongada y contornos limpios de icono outlaw de alto contraste.
+  color_palette: Negros terciopelo, azules de abismo estelar, rojos vino de emblema y blancos fríos de insignia.
+  lighting_setup: Contraluz estelar dramático con rim fuerte sobre capa y rostro, sombras planas de fuerte identidad gráfica.
+  material_texture: Tejido pesado en movimiento, superficies de casco oscurecidas y señalética pirata de acabado clásico.
+  render_quality: Terminación premium retro-operática con foco en presencia de figura única y aura de leyenda errante.
+  spatial_distortion: Contraste de primerísimo monumental contra vacío astral negativo para acentuar aislamiento soberano.
+  atmosphere: Romántica, solitaria, rebelde, cósmica.
+  key_features: Emblema calavérico, capa al viento estelar, pose de mando disidente y composición de vacío alrededor.
+  creative_brief: Crea una gramática reusable de leyenda corsaria melancólica para cualquier sujeto, anclada en silueta imperial, viento estelar y código moral insumiso.
 avoidRules:
   - realistic
   - 3d render

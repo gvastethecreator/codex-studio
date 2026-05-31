@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Monumental record tower preserving corporate-civic memory in style.
-  form_and_line: Vertical fins, archive stacks, and geometric reading halls.
-  color_palette: Brass gold, charcoal, and parchment beige.
-  lighting_setup: Vertical slit lights and reading desk luminance.
-  material_texture: Brass mesh, stone shelving, and leather-bound files.
-  render_quality: Detailed institutional concept with precise hierarchy.
-  spatial_distortion: Upward tower perspective emphasizing authority.
-  atmosphere: Bureaucratic majesty and controlled permanence.
-  key_features: Pneumatic file tubes, index rotunda, and clockwork elevators.
-  creative_brief: A decopunk archive where data architecture is literal architecture.
+  aesthetic: Bureaucratic decopunk monument where memory becomes vertical machinery, gold indexing, and controlled access.
+  form_and_line: Vertical fin stacks, archive shelf grids, reading-hall rings, pneumatic tube diagonals, and elevator shafts like filing spines.
+  color_palette: Brass gold, charcoal, parchment beige, dust brown, and red index-tab accents.
+  lighting_setup: Vertical slit lights, desk luminance, brass-mesh glints, and warm shafts inside catalog towers.
+  material_texture: Brass mesh, stone shelving, leather files, parchment labels, clockwork lift rails, and dusty glass catalog drawers.
+  render_quality: Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.
+  spatial_distortion: Upward tower perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
+  atmosphere: Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.
+  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevators, goldline catalog tabs, and locked reading desks.
+  creative_brief: >-
+    Preserve goldline archives-tower grammar as a reusable style system:
+    vertical filing monumentality, indexed access control, and brass
+    bureaucratic machinery should remain coherent across subjects.
 avoidRules: [photoreal, minimalist, cyberpunk-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-058.webp }
 attributes:
   negativePrompt: photoreal, minimalist, cyberpunk-chaos, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

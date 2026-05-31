@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Post-apocalyptic ecology myth, glider silhouette over toxic forests, giant insects, compassion amid planetary ruin, wind and pollen carrying epic spiritual urgency
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Prophetic, ecological, windswept, compassionate
-  key_features: Glider profile, toxic-jungle color, giant-insect scale, wind-swept cloak movement, ecological epic framing
-  creative_brief: Spores do not kill but purify, and only one who flies into the toxic wind with open arms can read the planet silent prophecy. Giant insects are not monsters but custodians of a deeper ecology that human fear cannot parse. Compassion becomes the only technology that survives the apocalypse intact.
+  aesthetic: Epopeya eco-profética postcolapso donde lo tóxico se resignifica como proceso de purificación y reconciliación planetaria.
+  form_and_line: Siluetas aerodinámicas de planeo, curvas orgánicas para megafauna insectoide y trazo firme en capas de viento.
+  color_palette: Ocres contaminados, turquesas velados, dorados de polvo esporal y azules de cielo quebrado por neblina tóxica.
+  lighting_setup: Luz ventosa de alto contraste con rayos filtrados por esporas, generando profundidad y pulso espiritual ambiental.
+  material_texture: Superficies bio-minerales, membranas orgánicas iridiscentes, telas de vuelo erosionadas y terreno sedimentado.
+  render_quality: Calidad fílmica premium con prioridad en escala ecológica, legibilidad aérea y dramatismo ambiental sostenido.
+  spatial_distortion: Horizonte amplio con compresión atmosférica y flujos diagonales que guían la mirada como corrientes de viento.
+  atmosphere: Profética, compasiva, eólica, reverente.
+  key_features: Perfil de planeador, ecosistema tóxico vivo, insectos colosales no monstruosos y gestualidad de empatía activa.
+  creative_brief: Define un estilo reusable de mito ecológico donde cualquier sujeto dialogue con un mundo herido mediante viento, esporas luminosas y composición de reconciliación entre humano y biosfera.
 avoidRules:
   - realistic
   - 3d render

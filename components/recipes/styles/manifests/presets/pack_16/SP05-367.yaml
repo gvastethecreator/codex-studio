@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Concert-band adolescence, brass reflections, after-school rehearsal rooms, competition anxiety and friendship rendered with polished KyoAni-style emotional specificity
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Tender, aspirational, polished, musical
-  key_features: Brass-instrument reflections, rehearsal-room depth, embouchure hand detail, uniform subtlety, ensemble proximity
-  creative_brief: Sunset spills through rehearsal-room windows, catching the bell of a euphonium in amber as breath and brass negotiate an elusive perfect tone. After-school hours become sacred territory where adolescent hope learns to resonate in B-flat.
+  aesthetic: Banda escolar de concierto orientada a precisión de sección, color tímbrico y ansiedad de certamen.
+  form_and_line: Gestualidad de embocadura detallada, postura de atril disciplinada y microacting de respiración conjunta.
+  color_palette: Dorados de metal pulido, azules de uniforme sobrio y atardecer ámbar de sala de ensayo.
+  lighting_setup: Luz de tarde de aula con foco cálido sobre campanas y sombras suaves de atriles.
+  material_texture: Latón espejo, llaves metálicas usadas, papel de partitura mate y tejido formal del uniforme.
+  render_quality: Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos instrumentales.
+  spatial_distortion: Profundidad de ensamble por filas de atril y compresión leve hacia solista de sección.
+  atmosphere: Tierna, aspiracional, pulida y profundamente musical.
+  key_features: Reflejos de brass, detalle de embocadura, proximidad de ensamble y escala de sala de ensayo.
+  creative_brief: >-
+    Construye una gramática reusable de brass-section-practice donde
+    materialidad del metal, disciplina de ensamble y sensibilidad adolescente
+    formen un sistema visual estable y transferible.
 avoidRules:
   - realistic
   - 3d render

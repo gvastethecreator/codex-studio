@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Bauhaus modernist style with machine-age rationalism, functional clarity, and disciplined anti-ornamental expression
-  form_and_line: Cubic massing, ribbon windows, planar asymmetry, flat-roof horizontals, and exposed structural legibility
-  color_palette: White-black-gray base with steel-blue neutrals and sparse signal-color accents for functional hierarchy
-  lighting_setup: Even daylight distribution, low-drama shadows, strip-window rhythm, and clarity-first luminance balance
-  material_texture: Mineral render matte, steel-frame precision, glass plane clarity, linoleum tactility, and tubular metal detailing
-  render_quality: Crisp modernist visualization prioritizing proportion discipline, material truth, and graphic compositional order
-  spatial_distortion: Geometric stability with orthogonal rigor and asymmetry handled through measured mass relationships
-  atmosphere: Rational, calm, precise, progressive, utilitarian
-  key_features: Function-first composition, ribbon glazing language, flat-roof planar order, restrained signal accents
+  aesthetic: Bauhaus arquitectónico de racionalismo industrial, antiornamento y legibilidad funcional explícita.
+  form_and_line: Masas cúbicas, ventanas corridas, cubiertas planas, asimetría planificada y estructura clara.
+  color_palette: Base blanco-negro-gris con acentos puntuales de color-señal de baja frecuencia.
+  lighting_setup: Distribución diurna homogénea, sombras sobrias y ritmos de ventana lineales sin teatralización.
+  material_texture: Revoque mineral mate, acero preciso, vidrio plano, linóleo y detalles metálicos tubulares.
+  render_quality: Modernismo nítido de orden gráfico y verdad material.
+  spatial_distortion: Estabilidad ortogonal con equilibrio de masas y asimetría medida.
+  atmosphere: Precisa, progresiva, utilitaria y calmada.
+  key_features: Composición función-primero, cinta de ventana, planos limpios y señalética cromática mínima.
   creative_brief: >-
-    Preserve identity through functional hierarchy and geometric discipline:
-    anti-ornamental clarity, structural legibility, and measured asymmetry are
-    the transferable core of this preset.
+    Conserva una gramática Bauhaus transferible donde función, masa y estructura
+    ordenen cada decisión visual. La asimetría debe ser racional y medible,
+    nunca expresiva por capricho formal.
 avoidRules:
   - decoration
   - roof tiles

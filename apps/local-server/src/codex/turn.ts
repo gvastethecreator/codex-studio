@@ -8,6 +8,11 @@ import { resolveJobExecutionOptions } from './executionOptions';
 import { resolveCodexImagegenSessionIdentity } from './sessionIdentity';
 import { buildCodexImagegenTurnInput } from './turnInput';
 import {
+  DEFAULT_CODEX_RETRY_POLICY,
+  isTransientCodexRuntimeErrorMessage,
+  normalizeCodexRetryPolicy,
+} from './runtimePolicy';
+import {
   closeImagegenSession,
   getImagegenSession,
   getImagegenSessionKey,
@@ -50,6 +55,8 @@ export interface CodexTurnDependencies {
   imagegenSkillPath?: string;
   logger?: typeof log;
   sleep?: (durationMs: number) => Promise<unknown>;
+  maxAttempts?: number;
+  retryDelayMs?: number;
 }
 
 function createAbortError() {
@@ -124,6 +131,8 @@ interface ResolvedCodexTurnDependencies {
   imagegenSkillPath: string;
   logger: typeof log;
   sleep: (durationMs: number) => Promise<unknown>;
+  maxAttempts: number;
+  retryDelayMs: number;
 }
 
 async function runCodexImagegenTurn(
@@ -273,8 +282,12 @@ async function runImagegenJob(
   });
   const { sessionKey, reusable: reusableSession } = sessionIdentity;
   let lastError: unknown = null;
+  const retryPolicy = normalizeCodexRetryPolicy({
+    maxAttempts: dependencies.maxAttempts,
+    retryDelayMs: dependencies.retryDelayMs,
+  });
 
-  for (let attempt = 1; attempt <= 2; attempt += 1) {
+  for (let attempt = 1; attempt <= retryPolicy.maxAttempts; attempt += 1) {
     let runResult!: TurnResult;
     const session = await dependencies.getSession(sessionKey, job.execution);
     const run = session.queue.then(async () => {
@@ -315,18 +328,15 @@ async function runImagegenJob(
       lastError = error;
       if (isAbortError(error)) throw error;
       const message = error instanceof Error ? error.message : String(error);
-      const retryable =
-        /stream disconnected|Timed out waiting for Codex notification|thread.+not found|unknown thread|invalid thread|socket is not open|socket closed|websocket/i.test(
-          message,
-        );
-      if (!retryable || attempt === 2) throw error;
+      const retryable = isTransientCodexRuntimeErrorMessage(message);
+      if (!retryable || attempt === retryPolicy.maxAttempts) throw error;
       dependencies.logger(
         'warn',
         'codex-session',
         `Retrying ${job.id} after transient Codex failure on ${sessionKey}: ${message}`,
         job.id,
       );
-      await dependencies.sleep(1_500);
+      await dependencies.sleep(retryPolicy.retryDelayMs);
     }
   }
 
@@ -349,6 +359,8 @@ export function createCodexTurn({
   ),
   logger = log,
   sleep = (durationMs: number) => Bun.sleep(durationMs),
+  maxAttempts = DEFAULT_CODEX_RETRY_POLICY.maxAttempts,
+  retryDelayMs = DEFAULT_CODEX_RETRY_POLICY.retryDelayMs,
 }: CodexTurnDependencies = {}): CodexTurn {
   const dependencies: ResolvedCodexTurnDependencies = {
     createAssetExtractor: createAssetExtractorFn,
@@ -361,6 +373,8 @@ export function createCodexTurn({
     imagegenSkillPath,
     logger,
     sleep,
+    maxAttempts,
+    retryDelayMs,
   };
 
   return {

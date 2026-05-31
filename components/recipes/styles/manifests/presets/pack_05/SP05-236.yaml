@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Utilitarian armored troopers, mud and rust, industrial war fatigue, scoped visor focus, practical mecha treated like military hardware rather than legend
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Gruff, tactical, muddy, exhausted
-  key_features: Scoped visor iconography, utilitarian mecha detail, trench-scale staging, rust-and-mud surfaces, hard-war realism
-  creative_brief: Scopedogs squat in mud like industrial toads, machines that never asked to be mythic but earned every rust streak with blood. War is a logistics problem solved in trenches. The visor does not see glory—it sees the next hill, the next body, the next rain.
+  aesthetic: Realismo militar utilitario de desgaste extremo, con mecha tratado como hardware desechable de trinchera.
+  form_and_line: Volúmenes compactos de blindado, óptica visor monocular y panelado funcional sin heroización formal.
+  color_palette: Verde oliva sucio, marrón barro, gris acero oxidado y rojo de testigo operativo mínimo.
+  lighting_setup: Cielo plomizo, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.
+  material_texture: Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción mecánica.
+  render_quality: Mecánica bélica de alta credibilidad con peso físico, suciedad persistente y enfoque anti-glamour.
+  spatial_distortion: Perspectiva de campo bajo con compresión de trinchera y visibilidad táctica limitada.
+  atmosphere: Ruda, agotada y pragmática, de guerra sin épica.
+  key_features: Visor scope, chasis utilitario, barro y herrumbre, staging de trincheras y lenguaje de supervivencia táctica.
+  creative_brief: >-
+    Define una gramática scopedog-attrition reusable donde masa compacta,
+    materialidad de desgaste y puesta en escena logística expresen conflicto
+    prolongado sin espectacularización heroica.
 avoidRules:
   - realistic
   - 3d render

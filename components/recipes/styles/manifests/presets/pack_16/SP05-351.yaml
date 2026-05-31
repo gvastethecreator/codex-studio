@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Distance-running discipline, night roads, campus lamps, thin winter breath, team growth through long miles and quiet suffering rendered with human-scale sports lyricism
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Determined, cool, introspective, communal
-  key_features: Running-form silhouettes, streetlamp rhythm, breath-in-cold-air cues, pack spacing, night-road momentum
-  creative_brief: A cold wind threads through campus lamps as runners carve silhouettes against the dark, each stride a meditation on endurance shared. The road becomes a quiet covenant between body and breath, distance dissolving into the rhythm of collective will.
+  aesthetic: Running de fondo universitario orientado a resistencia progresiva, pacing mental y cohesión de grupo.
+  form_and_line: Siluetas de zancada eficiente, postura de economía de carrera y acting de fatiga contenida.
+  color_palette: Azules nocturnos fríos, ámbar de farola y acentos uniformes discretos de equipo.
+  lighting_setup: Cadencia lumínica por farolas, contraste bajo de ruta nocturna y halos de respiración en frío.
+  material_texture: Asfalto húmedo fino, textil técnico de running, vapor de aliento y suela de desgaste continuo.
+  render_quality: Frame deportivo introspectivo con claridad de pack spacing, ritmo y esfuerzo acumulado.
+  spatial_distortion: Perspectiva de ruta larga con compresión gradual de distancia y vector de avance continuo.
+  atmosphere: Determinada, fría, introspectiva y comunitaria.
+  key_features: Ritmo de farola, spacing de pack, vapor respiratorio y continuidad de ruta nocturna extendida.
+  creative_brief: >-
+    Construye una gramática reusable de night-marathon-drift donde pacing,
+    resistencia y coreografía de grupo mantengan una identidad visual de largo
+    recorrido sin anécdota puntual.
 avoidRules:
   - realistic
   - 3d render

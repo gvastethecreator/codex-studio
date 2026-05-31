@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Loom-centered floor plan with radial patient bays.
   atmosphere: Care, repair, and embodied trust.
   key_features: Nerve looms, bioscan petals, and restorative membranes.
-  creative_brief: A biopunk clinic where healing is woven rather than assembled.
+  creative_brief: >-
+    Preserve nerve loom-clinic grammar as a reusable style system:
+    loom-based restorative medicine, soft radial treatment choreography, and
+    humane biofabric trust should remain coherent across subjects.
 avoidRules: [photoreal, horror, harsh-metal, watermark, text, logo, slime-gross]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-106.webp }
 attributes:

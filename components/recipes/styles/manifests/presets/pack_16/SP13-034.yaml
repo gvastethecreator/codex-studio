@@ -13,16 +13,16 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Rural Japanese-inspired horror centered on a cursed well.
-  form_and_line: Somber fine linework with implied presence.
-  color_palette: Cold blue, wet black, and fog gray.
-  lighting_setup: Diffused moonlight and damp shadows.
-  material_texture: Wet stone, mud, and weathered wood.
-  render_quality: Atmospheric image with sustained dread.
-  spatial_distortion: Open framing anchored by the central well.
-  atmosphere: Oppressive silence and invisible threat.
-  key_features: Ancient well, broken rope, low-lying mist.
-  creative_brief: Minimalist horror where a central void creates relentless tension.
+  aesthetic: Void-centered rural horror built on subtraction, silence, and the oppressive pull of a central absence.
+  form_and_line: Sparse somber linework, low-detail peripheral elements, and circular anchoring forms that repeatedly return attention to the void.
+  color_palette: Cold indigo wash, peat-black moisture zones, mineral gray fog, and faint desaturated cyan reflections.
+  lighting_setup: Diffuse nocturnal top-light with weak ground bounce, preserving deep occlusion around cavity edges.
+  material_texture: Water-dark stone porosity, saturated soil clumps, frayed rope fibers, and mist-laden air density.
+  render_quality: Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.
+  spatial_distortion: Open negative-space layout with gravitational pull toward the central cavity and suppressed horizon cues.
+  atmosphere: Listening-state tension, rural desolation, and the conviction that something waits below perception.
+  key_features: Circular void anchors, moisture halos, decayed functional objects, and thin low-lying fog sheets.
+  creative_brief: Build a transferable deep-void horror style by using minimal geometry, moisture-rich materials, and compositional gravity around an unseen center.
 avoidRules:
   - photoreal
   - daylight-bright

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Dockyard mech-sport league aesthetic blending industrial maritime grit with broadcast-ready arena energy.
-  subject_treatment: Team-coded lightweight mech-athletes, modular armor kit differentiation, and role-based silhouette taxonomy.
-  color_and_tone: Cobalt-dominant base, signal-orange competition accents, neutral steel scaffolding tones, and damp-cold marine highlights.
-  lighting_and_shadow: High-rig stadium beams, mist-softened fill, specular wet-ground reflections, and directional spotlight player isolation.
-  texture_and_material: Coated alloy bodywork, impact-scuffed polymer panels, rubberized sport flooring, wet dock concrete, and cable-net details.
-  camera_and_composition: Arena-bowl framing with central objective emphasis, crowd-tier depth, and tactical lane visibility for readable play.
-  atmosphere_and_mood: Festival-scale rivalry, kinetic teamwork, and high-adrenaline competitive momentum.
-  rendering_and_quality: Esports-grade league key-art polish with sharp team readability, motion-rich staging, and premium sports-broadcast clarity.
+  aesthetic: Mechball league portuaria de alta energía, centrada en objetivo central, rotaciones rápidas y juego de equipo.
+  subject_treatment: Mechs-atleta ligeros codificados por equipo con silueta y rol táctico inequívocos.
+  color_and_tone: Cobalto dominante, naranja de competencia y neutros acero con reflejo marino frío.
+  lighting_and_shadow: Focos de estadio, niebla suave y reflejos especulares en piso húmedo para lectura de jugada.
+  texture_and_material: Aleación recubierta, polímero marcado por impacto, piso deportivo gomado y hormigón de muelle.
+  camera_and_composition: Arena-bowl con objetivo central, profundidad de graderío y lanes tácticos visibles.
+  atmosphere_and_mood: Rival, cinética y de adrenalina sostenida.
+  rendering_and_quality: Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.
 avoidRules:
   - watermark
   - text

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Papercraft urban miniature language centered on folded construction logic, diorama layering, and handcrafted architectural model sensibility
-  form_and_line: Crisp cut-edge silhouettes, scored fold hinges, tab-locked joints, stepped pop-up planes, and shallow stacked depth cues
+  aesthetic: Miniatura urbana papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad de maqueta hecha a mano.
+  form_and_line: Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad baja apilada.
   color_palette: Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents
-  lighting_setup: Soft tabletop key, directional shadow cuts from paper edges, low-contrast fill, and subtle translucency glow through thin sheet layers
-  material_texture: Visible paper fiber, card-stock tooth, scored crease memory, cut-edge fuzz, dried glue seams, and matte bristol finish
-  render_quality: High-clarity handcrafted miniature rendering with delicate construction detail, controlled scale cues, and intentionally non-photoreal material behavior
+  lighting_setup: Key de mesa suave, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.
+  material_texture: Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.
+  render_quality: Miniatura artesanal de alta claridad con escala controlada y materialidad deliberadamente no fotoreal.
   spatial_distortion: None
-  atmosphere: Delicate, patient, precise, contemplative, and visibly hand-assembled
-  key_features: Exposed fold-score lines, tab-and-slot joins, layered façade planes, miniature street depth stacking, paper-edge shadow rhythm, and matte handmade finish
+  atmosphere: Delicada, paciente y contemplativa, con ensamblaje manual explícito.
+  key_features: Líneas de score expuestas, uniones tab-slot, fachadas por capas y ritmo de sombra en borde de papel.
   creative_brief: >-
-    Keep this preset defined by papercraft construction grammar: folded planar
-    architecture, exposed assembly seams, and miniature diorama depth should
-    remain consistent and transferable across subjects.
+    Mantén una gramática papercraft transferible donde arquitectura planar
+    plegada, costuras visibles y profundidad de diorama definan identidad en
+    múltiples sujetos.
 avoidRules:
   - realistic
 assets:

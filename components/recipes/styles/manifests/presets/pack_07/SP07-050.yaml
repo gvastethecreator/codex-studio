@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Historic iron-and-glass conservatory typology, botanical-display architecture, climate-controlled plant cathedral
-  form_and_line: Ribbed glazed vaults, fine cast-iron module repetition, ridge-and-furrow canopy logic, vertical specimen layering
+  aesthetic: Tipología de glasshouse histórico en hierro y vidrio con lógica de catedral botánica climáticamente controlada.
+  form_and_line: Bóvedas acristaladas nervadas, repetición modular de hierro colado y capas verticales de espécimen vegetal.
   color_palette: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
-  lighting_setup: Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow
-  material_texture: Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface
-  render_quality: Museum-grade conservatory rendering with structural clarity, humidity atmosphere control, and specimen readability
+  lighting_setup: Brillo difuso de invernadero, prismas de condensación, lluvia sobre vidrio y glow cálido sobre herrería.
+  material_texture: Vidrio húmedo, hierro fundido, baldosa de terracota y textura vegetal tropical de gran hoja.
+  render_quality: Conservatorio museum-grade con claridad estructural y atmósfera húmeda técnicamente creíble.
   spatial_distortion: None
-  atmosphere: Enclosed lushness, humid cultivation calm, curated botanical awe
-  key_features: Cast-iron lattice bays, condensation-prism glazing, layered tropical canopies, conservatory circulation clarity
+  atmosphere: Lushness encerrada, calma húmeda de cultivo y asombro botánico curado.
+  key_features: Bahías de celosía de hierro, vidrio prismático condensado, doseles tropicales en capas y circulación limpia.
   creative_brief: >-
-    Build a reusable conservatory language where ironwork precision and dense
-    botanical growth coexist in a controlled humid envelope. Prioritize
-    greenhouse structural rhythm, plant-display hierarchy, and atmospheric
-    moisture cues over landmark-specific storytelling.
+    Construye una gramática glasshouse transferible donde precisión de herrería,
+    crecimiento botánico denso y humedad visible coexistan en equilibrio.
+    Prioriza ritmo estructural y jerarquía de exhibición vegetal sobre landmark.
 avoidRules:
   - outdoor
 assets:

@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Classic manga-horror panic, striped shock, screaming children, spiraling dread, black-white psychic sickness rendered with high-contrast theatrical terror
-  form_and_line: Jagged horror contour, heavy black fills, shrill stress-line density
+  aesthetic: Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica corrosiva.
+  form_and_line: Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del rostro.
   color_palette: Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet
-  lighting_setup: Harsh spotlight horror, deep negative shadows, overexposed panic faces
-  material_texture: Ink-rich blacks, scratchy screentone feel, paper tooth, rough horror shading
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Spotlight hostil, negativos profundos y sobreexposición de facciones en estado de shock.
+  material_texture: Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla impresa.
+  render_quality: Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.
   spatial_distortion: Wide screaming mouths, bulging eyes, warped hallway depth, panic-twisted posture
-  atmosphere: Hysterical, uncanny, retro, terrifying
-  key_features: Screaming faces, spiral motifs, striped fear patterns, child-horror contrast, high-contrast black-white logic
-  creative_brief: Fear is a spiral that tightens with every glance. Black and white scream louder than color ever could, and childhood innocence curdles into nightmare geometry. The panel is a trap door and you are already falling.
+  atmosphere: Histérica, uncanny y retro, con amenaza infantil deformada.
+  key_features: Rostros al grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.
+  creative_brief: >-
+    Construye una gramática spiral-horror reusable donde geometría de pánico,
+    contraste blanco-negro feroz y expresividad facial desbordada marquen la
+    identidad en cualquier sujeto.
 avoidRules:
   - still
   - calm

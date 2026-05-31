@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Futuristic racing in vertical city with holographic posters.
-  subject_treatment: Stylized anti-gravity single-seaters built for extreme speed.
-  color_and_tone: Electric blue, violet and high energy white.
-  lighting_and_shadow: Sweeping neons and dynamic light trails.
-  texture_and_material: Carbon fiber, smart glass and wet asphalt.
-  camera_and_composition: Closed curve plane with motion framing.
-  atmosphere_and_mood: Adrenaline, competition, and urban spectacle.
-  rendering_and_quality: High-impact in-game marketing shot.
+  aesthetic: Arcade racer futurista de alta velocidad con verticalidad urbana, readability de pista y feedback visual instantáneo.
+  subject_treatment: Chasis anti-gravedad por clase (grip/boost/agile) con perfiles de handling distinguibles.
+  color_and_tone: Azul eléctrico y violeta dominante, con blanco energético para boost-state y timing windows.
+  lighting_and_shadow: Neón barrido, trails vectoriales y destellos de checkpoint para ritmo competitivo.
+  texture_and_material: Fibra de carbono, vidrio inteligente, asfaltos húmedos y señalética holográfica funcional.
+  camera_and_composition: Curvas cerradas con frame de velocidad, apex legible y capas de obstáculo por carril.
+  atmosphere_and_mood: Adrenalina limpia, espectáculo competitivo y precisión de conducción.
+  rendering_and_quality: Marketing key art gameplay-driven con claridad de trayectoria, boost economy y lectura de rival.
 avoidRules:
   - watermark
   - text

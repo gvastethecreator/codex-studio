@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Night defense of a mechanized plantation.
-  subject_treatment: Rural sentinels with improvised turrets.
-  color_and_tone: Dark green, lamp orange, and steel gray.
-  lighting_and_shadow: Perimeter lights with long shadows.
-  texture_and_material: Damp soil, oxidized metal, and leaves.
-  camera_and_composition: Defensive lanes converging on the barn.
-  atmosphere_and_mood: Teamwork and local resistance.
-  rendering_and_quality: Clear tactical stage for tower defense.
+  aesthetic: Tower-defense nocturno en plantación mecanizada, centrado en economía local y defensa por carriles.
+  subject_treatment: Centinelas rurales con torretas improvisadas por rol (slow, burst, support).
+  color_and_tone: Verde oscuro, naranja lámpara y gris acero para separar línea defensiva y puntos críticos.
+  lighting_and_shadow: Iluminación perimetral con sombras largas para telegraph de oleadas.
+  texture_and_material: Suelo húmedo, metal oxidado, follaje utilitario y maquinaria agrícola reforzada.
+  camera_and_composition: Carriles convergentes hacia granero central con nodos de upgrade visibles.
+  atmosphere_and_mood: Cooperativa, resistente y de presión sostenida.
+  rendering_and_quality: Tactical stage gameplay-first con legibilidad de pathing, alcance y prioridades.
 avoidRules:
   - watermark
   - text

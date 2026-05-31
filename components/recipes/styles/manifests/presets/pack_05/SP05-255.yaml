@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Rescue fantasy with armor, giant summons, rune-powered machinery, candy-bright courage and mystical quest framing for a heroic team of girls
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Brave, bright, enchanted, team-driven
-  key_features: Rune magic, armor accents, giant summon silhouettes, quest-team posing, jewel-bright backgrounds
-  creative_brief: Three girls become knights become legends, their armor blooming from rune-light like petals from enchanted ore. Giant summons cast shadows across jewel-bright worlds where the rescue mission is also a becoming, courage reforged with every step toward the one who must be saved.
+  aesthetic: Heroísmo grupal de magical-knights con misión de rescate, runas tecnomísticas y valentía cromática de alto brillo.
+  form_and_line: Siluetas diferenciadas de equipo, ornamentación rúnica en armadura y lectura de invocación gigante.
+  color_palette: Rojo rubí, azul cobalto, verde esmeralda, dorado mágico y blanco de energía invocada.
+  lighting_setup: Emisión de runa, flare de summon y key vibrante de aventura de rescate.
+  material_texture: Metal encantado, tela ceremonial, piedra de templo y superficies lumínicas de círculo mágico.
+  render_quality: Fantasy-team de acabado brillante con claridad de roles y épica juvenil cooperativa.
+  spatial_distortion: Escala dual entre equipo humano e invocaciones colosales con composición ascendente.
+  atmosphere: Valiente, luminosa y solidaria.
+  key_features: Runas activas, summons gigantes, poses de escuadrón y colorimetría joya.
+  creative_brief: >-
+    Define una gramática gem-engine-rescue reusable donde cooperación de
+    protagonistas, visualidad rúnica y contraste de escala con invocaciones
+    sostengan una épica de rescate clara y enérgica.
 avoidRules:
   - realistic
   - 3d render

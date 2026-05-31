@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Forum circle over water with radiating dock spokes.
   atmosphere: Dialogue, openness, and buoyant civic exchange.
   key_features: Saltlight poles, debate rings, and floating steps.
-  creative_brief: A seapunk public forum where civic conversation happens above the tide on a glowing floating platform.
+  creative_brief: >-
+    Preserve saltlight forum-platform grammar as a reusable style system:
+    floating deliberative civic rings, dusk saltlight debate staging, and
+    buoyant democratic openness should remain coherent across subjects.
 avoidRules: [photoreal, dark, militarized, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-127.webp }
 attributes:

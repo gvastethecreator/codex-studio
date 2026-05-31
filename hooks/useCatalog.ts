@@ -46,7 +46,7 @@ export interface UseStudioCatalogControllerResult {
   deleteCatalogImage: (imageId: string) => void;
   deleteCatalogImages: (imageIds: string[]) => void;
   toggleCatalogFavorite: (imageId: string) => void;
-  clearCatalogWorkspace: (workspaceId: string) => void;
+  clearCatalogWorkspace: (workspaceId: string) => Promise<void>;
   restoreCatalogBatch: (batchId: string) => void;
   restoreAllCatalogTrash: () => void;
   emptyCatalogTrash: () => void;
@@ -172,26 +172,28 @@ export function useStudioCatalogController({
   const refreshActiveCatalog = activeCatalog.refresh;
   const refreshWorkspaceCatalog = workspaceCatalog.refresh;
   const refreshTrashCatalog = trashCatalog.refresh;
-  const refreshCatalogs = useCallback(() => {
-    void Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog(), refreshTrashCatalog()]);
+  const refreshCatalogs = useCallback(async () => {
+    await Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog(), refreshTrashCatalog()]);
   }, [refreshActiveCatalog, refreshWorkspaceCatalog, refreshTrashCatalog]);
 
   const runCatalogMutation = useCallback(
-    (operation: Promise<unknown>, fallbackMessage: string) => {
-      void operation
-        .then(() => {
-          refreshCatalogs();
-        })
-        .catch((error) => {
-          addToast(resolveCatalogMutationError(error, fallbackMessage), 'error');
-        });
+    async (operation: Promise<unknown>, fallbackMessage: string) => {
+      try {
+        await operation;
+        await refreshCatalogs();
+      } catch (error) {
+        addToast(resolveCatalogMutationError(error, fallbackMessage), 'error');
+      }
     },
     [addToast, refreshCatalogs],
   );
 
   const deleteCatalogImage = useCallback(
     (imageId: string) => {
-      runCatalogMutation(deleteCatalogImageRequest(imageId), `Unable to archive image ${imageId}`);
+      void runCatalogMutation(
+        deleteCatalogImageRequest(imageId),
+        `Unable to archive image ${imageId}`,
+      );
     },
     [runCatalogMutation],
   );
@@ -202,7 +204,7 @@ export function useStudioCatalogController({
         return;
       }
 
-      runCatalogMutation(
+      void runCatalogMutation(
         Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId))),
         'Unable to archive selected images',
       );
@@ -214,7 +216,7 @@ export function useStudioCatalogController({
     (imageId: string) => {
       const current = activeCatalog.view.byId.get(imageId);
 
-      runCatalogMutation(
+      void runCatalogMutation(
         updateCatalogImageRequest(imageId, {
           isFavorite: !(current?.isFavorite ?? false),
         }),
@@ -225,14 +227,14 @@ export function useStudioCatalogController({
   );
 
   const clearCatalogWorkspace = useCallback(
-    (workspaceId: string) => {
+    async (workspaceId: string) => {
       const imageIds = collectWorkspaceCatalogImageIds(activeCatalog.entries, workspaceId);
 
       if (imageIds.length === 0) {
         return;
       }
 
-      runCatalogMutation(
+      await runCatalogMutation(
         Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId))),
         'Unable to archive workspace images',
       );
@@ -248,7 +250,7 @@ export function useStudioCatalogController({
         return;
       }
 
-      runCatalogMutation(
+      void runCatalogMutation(
         Promise.all(entries.map((entry) => restoreCatalogImageRequest(entry.id))),
         'Unable to restore catalog batch',
       );
@@ -261,7 +263,7 @@ export function useStudioCatalogController({
       return;
     }
 
-    runCatalogMutation(
+    void runCatalogMutation(
       Promise.all(trashCatalog.entries.map((entry) => restoreCatalogImageRequest(entry.id))),
       'Unable to restore catalog trash',
     );
@@ -272,7 +274,7 @@ export function useStudioCatalogController({
       return;
     }
 
-    runCatalogMutation(
+    void runCatalogMutation(
       Promise.all(trashCatalog.entries.map((entry) => purgeCatalogImageRequest(entry.id))),
       'Unable to empty catalog trash',
     );

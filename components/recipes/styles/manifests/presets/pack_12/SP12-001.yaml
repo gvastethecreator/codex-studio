@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Urban Japanese neo-noir with electric rain and kanji reflections.
-  subject_treatment: Cyber warrior with modular armor and sharp silhouette.
-  color_and_tone: Magentas, cyan and oil black with hard contrasts.
-  lighting_and_shadow: Side neon tubes with volumetric backlighting.
-  texture_and_material: Brushed metal, wet asphalt, and grainy holograms.
-  camera_and_composition: Mid-shot framing, narrow street, deep vanishing point.
-  atmosphere_and_mood: Silent tension before the duel.
-  rendering_and_quality: AAA key art, fine detail, cinematic sharpness.
+  aesthetic: Action RPG ciberpunk neo-noir orientado a infiltración urbana nocturna y lectura táctica por silueta.
+  subject_treatment: Operadores player-class con kit modular legible por rol (assault, recon, tech) y jerarquía visual clara.
+  color_and_tone: Dúo cian-magenta sobre negros aceitosos, con codificación cromática de facción y threat level.
+  lighting_and_shadow: Iluminación diegética de neón con pockets de sombra para stealth readability y rim de detección.
+  texture_and_material: Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía de baja persistencia tipo HUD-world.
+  camera_and_composition: Cámara third-person táctica con lanes de navegación, choke points y puntos de cobertura reconocibles.
+  atmosphere_and_mood: Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.
+  rendering_and_quality: Key art AAA con pipeline de legibilidad gameplay-first, contraste de objetivo y nitidez de interacción.
 avoidRules:
   - watermark
   - text

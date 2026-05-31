@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Stellar-scale megastructure architecture language defined by enclosed-star infrastructure, Kardashev-level engineering motifs, and cosmic industrial monumentalism
-  form_and_line: Hex-panel lattice arrays, concentric structural ribs, star-centered radial symmetry, immense inner-horizon curvature, and orbital ring segment articulation
+  aesthetic: Megaestructura estelar de escala civilizatoria con infraestructura de estrella encerrada y monumentalismo industrial cósmico.
+  form_and_line: Retículas hex-panel, costillas concéntricas, simetría radial estelar y segmentación orbital de anillos en curvatura extrema.
   color_palette: Near-black structural silhouettes, solar gold-orange emission, corona-white edge burn, deep panel graphite grays, and faint ionized blue fringes
-  lighting_setup: Extreme stellar backlight, high-contrast rim definition, panel self-shadow banding, controlled bloom around core emissive zones, and sparse reflected fill
-  material_texture: High-density engineered metal composites, collector-panel micro-tiling, heat-dissipation finning, low-roughness structural skins, and macro-scale fabrication seams
-  render_quality: Ultra-scale speculative-engineering rendering with rigorous structural legibility, cinematic astrophysical contrast, and monumental scale coherence
+  lighting_setup: Contraluz estelar extremo, rim de alto contraste, bandas de autosombra en panel y bloom controlado en núcleos emisivos.
+  material_texture: Compuestos metálicos densos, microtiling de colectores, aletas de disipación y costuras macro de fabricación.
+  render_quality: Ingeniería especulativa ultra-escala con legibilidad estructural rigurosa y contraste astrofísico cinematográfico.
   spatial_distortion: Extreme interior-horizon curvature and radial mega-scale perspective compression
-  atmosphere: Sublime, colossal, austere, technological, and civilizationally ambitious
-  key_features: Enclosed stellar core framing, hexagonal collector field logic, radial ring segmentation, immense curved interior horizon, high-contrast silhouette profile, and macro-fabrication seam systems
+  atmosphere: Sublime, colosal y austera, impulsada por ambición tecnológica de civilización tipo II.
+  key_features: Núcleo estelar enmarcado, campos colectores hexagonales, segmentación radial, horizonte interior curvo y silueta de alto contraste.
   creative_brief: >-
-    Keep the preset anchored in Dyson-megastructure grammar: radial stellar
-    enclosure geometry, panelized energy-harvest surface systems, and extreme
-    scale-readability should remain consistent across different subjects.
+    Define una gramática reusable de Dyson-megastructure con geometría radial
+    de encapsulamiento estelar, panelización energética y legibilidad extrema
+    de escala como invariantes.
 avoidRules:
   - planet surface
 assets:

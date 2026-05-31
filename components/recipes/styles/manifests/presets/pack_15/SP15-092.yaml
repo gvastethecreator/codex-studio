@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Stepped upward composition toward dome center.
   atmosphere: Curiosity, patience, and astronomical order.
   key_features: Dial telescopes, time maps, and stargear platforms.
-  creative_brief: A clockpunk observatory where precision mechanics meet sky study.
+  creative_brief: >-
+    Preserve brass observatory-steps grammar as a reusable style system:
+    stepped astronomical instrumentation, dial-driven sky analysis, and
+    patient celestial order should remain coherent across subjects.
 avoidRules: [photoreal, futuristic-minimal, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-092.webp }
 attributes:

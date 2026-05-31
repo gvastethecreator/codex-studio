@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Criminal stealth in a rainy midnight harbor.
-  subject_treatment: Agile smugglers and mechanized guards.
-  color_and_tone: Petrol blue, sodium orange, and deep black.
-  lighting_and_shadow: Wet streetlights and container shadows.
-  texture_and_material: Painted metal, puddles, and wet ropes.
-  camera_and_composition: Crossing sightlines designed for stealth play.
-  atmosphere_and_mood: Nerve, opportunity, and imminent risk.
-  rendering_and_quality: Infiltration map with clear landmarks.
+  aesthetic: Stealth-heist portuario nocturno con infiltración modular, extracción silenciosa y rutas de contrabando.
+  subject_treatment: Smugglers ágiles y guardias mecanizados con lectura clara de patrulla y respuesta.
+  color_and_tone: Azul petróleo, naranja sodio y negro profundo para separar cobertura, alarma y sombra útil.
+  lighting_and_shadow: Farolas mojadas, contraluces de contenedor y charcos reflectivos como riesgo de exposición.
+  texture_and_material: Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.
+  camera_and_composition: Sightlines cruzadas con rutas altas/bajas, puntos ciegos y nodos de botín.
+  atmosphere_and_mood: Nerviosa, oportunista y al borde del fallo.
+  rendering_and_quality: Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.
 avoidRules:
   - watermark
   - text

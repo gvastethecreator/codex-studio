@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Ultra-luxury aerial residential style with monolithic glazing, restrained opulence, and curated minimal spatial drama
-  form_and_line: Long uninterrupted glazing lines, floating slab planes, cantilever gestures, low-profile furnishings, disciplined negative space
-  color_palette: Warm ivory neutrals, charcoal anchors, smoky blue-greys, brushed brass accents, muted stone undertones
-  lighting_setup: Layered ambient cove light, soft practical pools, controlled reflection management, low-glare premium interior illumination
-  material_texture: Book-matched marble veining, satin metal trims, full-grain leather, soft woven textiles, polished glass depth, matte lacquer panels
-  render_quality: Architectural-visualization premium finish with high material fidelity, clean staging, and luxury hospitality polish
-  spatial_distortion: Wide-angle restraint with elongated interior axis and balanced foreground-midground luxury object hierarchy
-  atmosphere: Serene, controlled, aspirational, private, rarefied
-  key_features: Continuous glazing language, floating architectural planes, high-end material pairings, low-clutter composition, curated statement objects
-  creative_brief: Encode luxury through proportion, material choreography, and lighting discipline rather than landmarks; the style should remain transferable to any high-end interior program.
+  aesthetic: Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva editorial.
+  form_and_line: Grandes paños de vidrio continuo, losas flotantes, planos largos y mobiliario bajo curado por jerarquía de vacío.
+  color_palette: Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea neutra.
+  lighting_setup: Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga visual.
+  material_texture: Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta calidad.
+  render_quality: Acabado de hospitality de lujo con fidelidad material alta y staging impecable.
+  spatial_distortion: Gran angular contenido con eje interior elongado y profundidad por piezas statement cuidadosamente espaciadas.
+  atmosphere: Privado, aspiracional, sereno y altamente controlado.
+  key_features: Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle constructivo invisible.
+  creative_brief: >-
+    Define una gramática de lujo transferible por proporción, detalle oculto,
+    material noble y control lumínico. Evita la postal de penthouse: el valor
+    debe emerger del sistema espacial, no de la vista o el contexto externo.
 avoidRules:
   - basement
   - dark

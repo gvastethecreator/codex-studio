@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Subterranean colony-architecture language centered on exposed tunnel networks, bio-functional chamber zoning, and observational cutaway clarity
-  form_and_line: Branching capillary tunnels, nodal chamber clusters, vertical shaft connectors, oval brood cavities, and layered cross-section strata boundaries
+  aesthetic: Arquitectura colonial subterránea con claridad de cutaway, red de túneles y zonificación biofuncional estricta.
+  form_and_line: Túneles capilares ramificados, cámaras nodales, conectores verticales y estratos seccionados por capas.
   color_palette: Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones
-  lighting_setup: Lateral cutaway illumination, translucent gel transmission, controlled subterranean shadow pockets, and rim-lit observation-pane edge highlights
-  material_texture: Granular soil compaction, particulate sand bands, moist tunnel wall smoothing, gel-suspended clarity, and fine excavation scoring
-  render_quality: High-detail naturalistic cutaway rendering with strong system readability, dense micro-activity cues, and precise subterranean stratification legibility
+  lighting_setup: Iluminación lateral de corte, transmisión translúcida en gel y pockets de sombra controlada en profundidad.
+  material_texture: Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.
+  render_quality: Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.
   spatial_distortion: None
-  atmosphere: Industrious, concealed, biological, system-driven, and relentlessly functional
-  key_features: Exposed tunnel mesh hierarchy, specialized chamber typologies, vertical circulation shafts, brood-cell clustering, colony path density, and transparent observation boundary
+  atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie observada.
+  key_features: Jerarquía de malla de túneles, tipologías de cámara, ejes de circulación vertical y borde transparente de observación.
   creative_brief: >-
-    Preserve ant-farm style as a reusable cutaway grammar: branching
-    subterranean circulation, function-specific chamber typologies, and
-    granular earth stratification should remain consistent across subjects.
+    Define una gramática reusable de ant-farm cutaway donde circulación
+    ramificada, cámaras por función y estratificación granular del suelo
+    permanezcan consistentes entre composiciones.
 avoidRules:
   - surface
 assets:

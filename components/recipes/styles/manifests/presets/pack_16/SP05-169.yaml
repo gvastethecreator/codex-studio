@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Bedroom terminals, humming cables, thin reality, disconnected suburbia, static-lit silence, identity blur between schoolgirl life and network consciousness
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Isolated, wired, whispery, uncanny
-  key_features: Cable clusters, CRT glow, empty suburban streets, detached gaze, static-rich digital overlays
-  creative_brief: A girl dissolving into the network, her bedroom a terminal where reality bleeds into signal and every cable hums with the static of a universe learning to speak. Suburbia outside the window is empty not because nobody is there but because everyone has already gone somewhere else inside themselves. The self becomes transmission, silence becomes data, and the question of whether you exist is answered by how many wires are plugged into you.
+  aesthetic: Cyber-aislamiento doméstico con mística de red, donde la identidad se vuelve señal y la intimidad, interfaz.
+  form_and_line: Línea fina y distanciada, acting minimal de disociación y composición de habitación-terminal obsesiva.
+  color_palette: Verdes CRT, grises de suburbio vacío, azules fríos y blancos de estática electrónica.
+  lighting_setup: Luz baja de monitor, sombra blanda de madrugada y parpadeo digital como pulso emocional.
+  material_texture: Cableado denso, plástico viejo de terminal, pared suburbana desaturada y grano de señal analógica.
+  render_quality: Acabado premium 90s con tensión psicológica persistente y estética proto-red inquietante.
+  spatial_distortion: Espacio íntimo comprimido y vacío urbano periférico para sensación de presencia fantasma.
+  atmosphere: Aislada, conectada, susurrante, extraña.
+  key_features: Clústeres de cables, glow de CRT, overlays de estática y mirada distante de sujeto en tránsito digital.
+  creative_brief: Construye una gramática reusable de desmaterialización identitaria en red para cualquier sujeto, combinando silencio suburbano, densidad electrónica y ambigüedad existencial.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Military logistics crossing with melancholy vampiric violence, night trains, schoolgirl burden, sharp blades against modern corridors, secret-war seriousness
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Bleak, disciplined, nocturnal, tragic
-  key_features: Sword-bearing schoolgirl contrast, military convoy spaces, vampiric motion blur, sterile interiors, night-travel framing
-  creative_brief: War travels by night train, blood stored in refrigerated cargo, a schoolgirl sword cutting through decades of silence. The military machine demands discipline, but the heart demands blood, and somewhere in the sterile corridors between orders and instinct, a girl learns that the blade she carries answers to something older than any chain of command.
+  aesthetic: Thriller vampírico militar de carretera nocturna, con disciplina operativa y tragedia íntima en tensión permanente.
+  form_and_line: Trazado limpio de acción táctica, silueta escolar-armada contrastante y movimiento cortante de combate cercano.
+  color_palette: Azules hospitalarios, rojos hemáticos contenidos, grises de convoy y blancos fríos de interior estéril.
+  lighting_setup: Iluminación fluorescente de pasillo/logística, contraluces de tren nocturno y highlights de hoja metálica.
+  material_texture: Acero clínico, vidrio de transporte, textil de uniforme y superficies limpias de infraestructura militar.
+  render_quality: Acabado premium dark-action 2000s con legibilidad de operación y peso emocional de misión secreta.
+  spatial_distortion: Composición longitudinal de tren y corredor para reforzar viaje forzado y encierro psicológico.
+  atmosphere: Desolada, disciplinada, nocturna, trágica.
+  key_features: Protagonista escolar con katana, logística militar en tránsito, iconografía hemática y frame de guerra oculta.
+  creative_brief: Diseña una gramática reusable de vampirismo militar moderno para cualquier sujeto, combinando limpieza táctica, melancolía y violencia controlada de noche.
 avoidRules:
   - realistic
   - 3d render

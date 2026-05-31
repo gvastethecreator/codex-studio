@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Mundane practical skills becoming precious in fantasy, rope and lockpick utility, modest party bonds, dungeon logistics with empathy and comic warmth
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Practical, warm, modest, dependable
-  key_features: Toolbox motifs, support-role staging, dungeon logistics, practical problem-solving poses, everyday-competence charm
-  creative_brief: A toolbox opens in a dungeon corridor and suddenly lockpicks are holier than relics, rope more precious than prophecy. The modest handyman walks behind the heroes, solving what swords cannot, his quiet competence the real magic in a world that fetishizes flash.
+  aesthetic: Fantasía de utilidad cotidiana donde el valor reside en habilidades manuales, logística y apoyo de equipo.
+  form_and_line: Composición funcional de herramientas, gesto de trabajo y lectura clara de roles de soporte no heroicos.
+  color_palette: Marrón herramienta, acero gris, naranja lámpara, verde cuerda y beige de piedra utilitaria.
+  lighting_setup: Iluminación de pasillo de dungeon con focos portátiles y acentos cálidos de campamento técnico.
+  material_texture: Cuerdas, cerraduras, metal de caja de herramientas, cuero de cinturón y polvo de obra subterránea.
+  render_quality: Slice-of-adventure con detalle operativo y encanto de competencia práctica en primer plano.
+  spatial_distortion: Escala humana de mantenimiento en espacios peligrosos, con foco en interacción herramienta-entorno.
+  atmosphere: Modesta, cálida y confiable.
+  key_features: Toolbox visible, soporte de party, resolución práctica y microgestos de oficio.
+  creative_brief: >-
+    Construye una gramática toolbox-quest reusable donde competencia manual,
+    logística de dungeon y empatía de equipo reemplacen el espectáculo por
+    eficacia narrativa.
 avoidRules:
   - realistic
   - 3d render

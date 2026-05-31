@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Table tennis pressure seen through psychological deformation, speed and identity colliding across a tiny table, rough athletic tension and emotional asymmetry made visual
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Psychological, fast, raw, strange
-  key_features: Table-edge perspective, paddle-snap motion, facial distortion under pressure, gym-shadow intimacy, spin trajectory cues
-  creative_brief: The table shrinks into a psychological battlefield where paddle-snap echoes warp faces and identities fracture under spin. Speed becomes a mirror — what you see across the net is never just the opponent, but yourself distorted.
+  aesthetic: Tenis de mesa psicológico de alta velocidad, enfocado en spin, anticipación y fractura perceptiva competitiva.
+  form_and_line: Trazos nerviosos, microgesto facial bajo presión y snap de muñeca hiperlegible.
+  color_palette: Verdes fríos de sala, amarillos de pelota en alta visibilidad y sombras azul-gris de tensión.
+  lighting_setup: Luz interior contenida con contrastes abruptos en zona de mesa y rostro.
+  material_texture: Superficie de mesa mate, goma de paleta marcada, suelo de gimnasio áspero y sudor granular.
+  render_quality: Frame deportivo expresionista con lectura instantánea de spin, respuesta y quiebre mental.
+  spatial_distortion: Perspectiva de borde de mesa con deformación subjetiva en intercambios de ritmo extremo.
+  atmosphere: Psicológica, rápida, cruda y competitivamente íntima.
+  key_features: Mesa dominante, snap de paleta, distorsión de presión y cues de trayectoria rotacional.
+  creative_brief: >-
+    Formula una gramática reusable de table-spin-distortion donde presión
+    mental, lectura de efecto y deformación perceptiva definan estilo más allá
+    de cualquier rally específico.
 avoidRules:
   - realistic
   - 3d render

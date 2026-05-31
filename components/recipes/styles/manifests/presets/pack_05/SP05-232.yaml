@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Warzone youth in spider-like machines, ethnic oppression, radio chatter over dust plains, tactical precision colliding with grief and dehumanization
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Somber, tactical, windswept, tragic
-  key_features: Spider-mech motion, dustfront horizon lines, military comms mood, squad-loss emotion, battlefield debris
-  creative_brief: Dust plains carry radio static and the weight of children sent to die in spider-legged coffins. Precision is grief made mechanical; every tactical overlay masks a face someone stopped remembering. The wind howls names that command forgot.
+  aesthetic: Militarismo trágico de juventud desechable, con mechas arácnidos y austeridad de frente polvoriento.
+  form_and_line: Geometría baja y artrópoda, patas articuladas funcionales y composición táctica de horizonte horizontal.
+  color_palette: Arena desaturada, acero pálido, óxido mate y señales de interfaz en rojo de alerta contenido.
+  lighting_setup: Cielo lechoso de guerra, contraluces de polvo en suspensión y pantallas tácticas como fuente secundaria.
+  material_texture: Blindaje erosionado, abrasión eólica, barro seco, arañazos de campo y polímero envejecido.
+  render_quality: Realismo anime táctico con énfasis en desgaste operacional y lectura de escuadra.
+  spatial_distortion: Perspectiva terrestre comprimida con telemetría superpuesta y sensación de distancia sin salida.
+  atmosphere: Sombría, ventosa y fatalista, de duelo militar silencioso.
+  key_features: Unidades spider-mech, overlays de mando, llanura de polvo, ruina bélica y lenguaje de pérdida colectiva.
+  creative_brief: >-
+    Construye una gramática dustfront-drone reusable donde hardware arácnido,
+    paisaje abrasivo y emoción de baja frecuencia expresen deshumanización
+    sistémica sin caer en épica glorificada.
 avoidRules:
   - realistic
   - 3d render

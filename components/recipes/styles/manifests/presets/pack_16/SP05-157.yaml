@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Motorized inline-skate gangs, rooftop freedom, wind-carved city movement, youth bravado, punk-tech speed culture, kinetic parkour and impossible airtime
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Fast, rebellious, flashy, weightless
-  key_features: Skate silhouettes, rooftop city motion, street-gang fashion, wind effects, airborne action poses
-  creative_brief: Gravity is a suggestion that these streets never accepted, rooftops becoming launch pads and sky becoming territory for those brave enough to claim it. Motorized wheels sing a neon hymn across the city skyline, and every jump is a declaration of sovereignty over the vertical world. Speed is not escape here; speed is identity.
+  aesthetic: Cultura speed-tech urbana de pandilla aérea, con rebeldía juvenil y libertad vertical como identidad central.
+  form_and_line: Línea dinámica de parkour sobre ruedas, diagonales de impulso y siluetas aerodinámicas de alta energía.
+  color_palette: Cianes eléctricos, naranjas de fricción, morados urbanos y negros de asfalto nocturno.
+  lighting_setup: Iluminación de ciudad en movimiento con brillos de velocidad, gradiente digital pulido y rim en salto.
+  material_texture: Concreto de azotea, metal de rail, goma de ruedas motorizadas y grano leve de era HD temprana.
+  render_quality: Acabado premium action-2000s con legibilidad cinética, pose aérea y cultura de crew bien diferenciada.
+  spatial_distortion: Perspectiva de vértigo vertical con elongación de trayectoria y compresión de skyline.
+  atmosphere: Rápida, rebelde, vistosa, ingrávida.
+  key_features: Siluetas skate motorizadas, rooftops encadenados, moda gang-tech y estelas de viento urbano.
+  creative_brief: Construye una gramática reusable de velocidad aérea urbana para cualquier sujeto, mezclando estilo de crew, trayectoria extrema y sensación de conquista vertical.
 avoidRules:
   - realistic
   - 3d render

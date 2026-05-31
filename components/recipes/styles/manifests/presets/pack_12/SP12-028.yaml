@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Duel arena in a monastery suspended among clouds.
-  subject_treatment: Disciplined duelists with ritual weapons.
-  color_and_tone: Stone white, sky blue, and restrained gold.
-  lighting_and_shadow: Clean natural light with minimal shadows.
-  texture_and_material: Polished marble, lacquered wood, and ceremonial cloth.
-  camera_and_composition: Central symmetry emphasizing balance.
-  atmosphere_and_mood: Tense serenity and competitive honor.
-  rendering_and_quality: Elegant, readable PvP stage.
+  aesthetic: Duel-fighter ceremonial en monasterio celeste, centrado en spacing, timing y neutral game.
+  subject_treatment: Duelistas disciplinados con armas rituales y perfiles de alcance claramente diferenciados.
+  color_and_tone: Blanco pétreo, azul cielo y oro sobrio para claridad de escenario y foco en combatientes.
+  lighting_and_shadow: Luz natural limpia con sombra contenida para preservar lectura de animación frame a frame.
+  texture_and_material: Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.
+  camera_and_composition: Simetría central de arena con límites claros, zonas de presión y reset neutral.
+  atmosphere_and_mood: Serena, tensa y honorable.
+  rendering_and_quality: PvP stage elegante con legibilidad de hitbox, distancia y estados de ventaja.
 avoidRules:
   - watermark
   - text

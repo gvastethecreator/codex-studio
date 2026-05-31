@@ -264,12 +264,12 @@ Review dimensions:
 ## Done checklist
 
 - [ ] Representative quality set chosen.
-- [ ] Quality structure added only where useful.
+- [x] Quality structure added in `Generation Task Spec.quality`.
 - [ ] Reference roles validated before queue.
-- [ ] Prompt tightening helper tested.
-- [ ] Quality presets defined and documented.
+- [x] Prompt tightening helper tested through `composeGenerationQualityPromptSections()`.
+- [x] Quality presets defined and documented.
 - [ ] Live comparison templates filled.
 - [ ] Reviewer notes stored as refs, not images.
-- [ ] `SKILLS.md` updated with quality workflow.
-- [ ] Focused tests pass.
+- [x] `SKILLS.md` updated with quality workflow.
+- [x] Focused tests pass.
 - [ ] Broad gates attempted and reported.

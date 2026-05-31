@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Touge night racing, hairpin drift choreography, headlight fog, driver concentration and machine balance rendered with asphalt obsession and midnight speed
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Nocturnal, tense, technical, exhilarating
-  key_features: Drift-angle framing, headlight beams, guardrail curves, dashboard focus, tire-smoke mountain roads
-  creative_brief: Guardrails blur into silver ribbons as headlight beams cut through mountain fog and tire smoke, the road a tightening spiral of nerve and precision. Every hairpin holds a silent conversation between machine, asphalt, and the driver's unblinking focus.
+  aesthetic: Touge-racing nocturno centrado en drift técnico, control de transferencia de peso y lectura de curva ciega.
+  form_and_line: Contornos de vehículo afilados, vectores de derrape y postura de conducción de concentración máxima.
+  color_palette: Azules de noche montañosa, blanco de faro alto, naranja de freno térmico y negros de asfalto húmedo.
+  lighting_setup: Cortes de luz por faros direccionales y halos de niebla que enfatizan apex y salida de curva.
+  material_texture: Asfalto granular, guardarraíl metálico mojado, humo de neumático fino y cabina con reflejo bajo.
+  render_quality: Frame de motorsport anime con prioridad en trayectoria, adherencia y lectura de riesgo.
+  spatial_distortion: Perspectiva de hairpin con compresión agresiva del túnel vial y estiramiento lateral del drift.
+  atmosphere: Nocturna, tensa, técnica y adictiva.
+  key_features: Ángulo de derrape, conos de faro, curva cerrada, foco de volante y estela de humo quirúrgica.
+  creative_brief: >-
+    Define una gramática reusable de mountain-drift donde lectura de curva,
+    comportamiento de tracción y tensión nocturna estructuren identidad sin
+    depender de una carrera concreta.
 avoidRules:
   - realistic
   - 3d render

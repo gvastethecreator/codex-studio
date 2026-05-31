@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heroic bridge-deck drama, blue space oceans, giant battleship gravitas, analog control panels, humanity-faces-extinction sincerity and noble formation flying
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Noble, urgent, cosmic, patriotic
-  key_features: Battleship silhouettes, bridge-console layouts, star-ocean backdrops, formation-fleet compositions, noble crew acting
-  creative_brief: Humanity whispers against the infinite black in this bridge-deck opera where analog consoles pulse with the weight of extinction. Scale shrinks flesh and stretches spirit until a single warship becomes the last cathedral of hope. Every frame holds both the cold geometry of stars and the warm tremor of a hand on the helm.
+  aesthetic: Ópera espacial militar de convoy interestelar, con liturgia de puente y épica de supervivencia civilizatoria.
+  form_and_line: Contorno grueso de ingeniería naval, siluetas de tripulación jerarquizadas y acting decidido de mando clásico setentero.
+  color_palette: Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de consola.
+  lighting_setup: Iluminación de alarma táctica con pools rojos intermitentes, key de consola y sombra cel de alta urgencia.
+  material_texture: Paneles analógicos, metal naval pintado, monitores de fósforo y grano de telecine vintage.
+  render_quality: Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional de capitán-tripulación.
+  spatial_distortion: Perspectiva forzada de puente y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.
+  atmosphere: Noble, urgente, cósmica, sacrificial.
+  key_features: Geometría de puente por rangos, consola analógica saturada, casco insignia volumétrico y coreografía de mando coral.
+  creative_brief: Construye una gramática reusable de mando naval interestelar para cualquier sujeto, priorizando ritual de puente, tensión de alerta y heroísmo de tripulación sincronizada.
 avoidRules:
   - realistic
   - 3d render

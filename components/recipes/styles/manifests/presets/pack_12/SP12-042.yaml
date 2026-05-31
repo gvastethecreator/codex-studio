@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Quantum laboratory fractured by a dimensional rupture.
-  subject_treatment: Combat scientists and contained anomalies.
-  color_and_tone: Clinical white, rift violet, and ice blue.
-  lighting_and_shadow: Pulsos intermitentes de portal abierto.
-  texture_and_material: Armored glass, cables, and broken holography.
-  camera_and_composition: Central core with containment rings.
-  atmosphere_and_mood: Science at the limit and controlled chaos.
-  rendering_and_quality: AAA critical-incident scene.
+  aesthetic: Sci-fi incident-response en laboratorio cuántico, centrado en contención, sellado y gestión de anomalías.
+  subject_treatment: Científicos de combate y entidades contenidas por nivel de riesgo claramente codificado.
+  color_and_tone: Blanco clínico, violeta de fisura y azul hielo para lectura de estado de contención.
+  lighting_and_shadow: Pulsos intermitentes de portal con parpadeo de emergencia en áreas críticas.
+  texture_and_material: Vidrio blindado, cableado expuesto, holografía rota y módulos de confinamiento.
+  camera_and_composition: Núcleo central con anillos de contención y rutas de intervención por sector.
+  atmosphere_and_mood: Tensa, científica y caótica bajo protocolo.
+  rendering_and_quality: Critical-incident gameplay art con claridad de niveles de amenaza, ruta y objetivo.
 avoidRules:
   - watermark
   - text

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Hyper-detailed rain, shoes and leaves, quiet age-gap longing, garden pavilion intimacy, wet surfaces carrying impossible emotional precision
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Rainy, intimate, lonely, exquisite
-  key_features: Rain-surface detail, pavilion framing, shoe-and-step motifs, wet foliage reflections, emotionally charged stillness
-  creative_brief: Every raindrop becomes a lens, magnifying the unspoken between two people who meet in a garden pavilion as if by accident but stay by design. Shoes left beside a wet bench hold more biography than any dialogue could bear. The garden is not a setting but a confidant, holding their silence with the patience of moss and the precision of falling water.
+  aesthetic: Lirismo pluvial hiperobservacional, donde intimidad adulta y deseo contenido se expresan a través de materia húmeda y pausa contemplativa.
+  form_and_line: Línea pulcra y elegante, anatomía naturalista serena y encuadres de detalle que priorizan objetos-cuerpo como signos emocionales.
+  color_palette: Verdes de jardín saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.
+  lighting_setup: Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de pabellón cubierto.
+  material_texture: Gotas sobre follaje, madera barnizada húmeda, concreto encharcado y cuero de calzado con brillo de lluvia.
+  render_quality: Acabado premium de refinamiento atmosférico extremo, con foco en microdetalle material y silencio expresivo.
+  spatial_distortion: Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas de vegetación reflectante.
+  atmosphere: Lluviosa, íntima, solitaria, exquisita.
+  key_features: Pabellón-jardín, huellas y zapatos como narrativa, detalle de agua milimétrico y quietud de alta carga emocional.
+  creative_brief: Diseña una gramática reusable de intimidad bajo lluvia para cualquier sujeto, usando textura acuosa, objetos cotidianos y composición de silencio compartido.
 avoidRules:
   - realistic
   - 3d render

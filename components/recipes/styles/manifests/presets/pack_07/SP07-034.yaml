@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Derelict institutional interior, bureaucratic ruin, pathology of maintenance failure
-  form_and_line: Rigid corridor axiality disrupted by collapses, repeated door modules, suspended-ceiling failure patterns
+  aesthetic: Ruina institucional burocrática, donde el deterioro acumulado se convierte en sistema visual principal.
+  form_and_line: Axialidad rígida de pasillo interrumpida por colapsos, repetición de puertas y fallas de cielo suspendido.
   color_palette: Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream
-  lighting_setup: Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners
-  material_texture: Delaminated paint skins, mineral streaking, rust bloom at junctions, damp plaster blistering, fungal spread traces
-  render_quality: Forensic decay readability, high tactile distress detail, institutional-era authenticity
+  lighting_setup: Hazes de luz quebrada, polvo en suspensión, parpadeo eléctrico residual y esquinas de oscuridad profunda.
+  material_texture: Pintura delaminada, escurridos minerales, oxidación en uniones, yeso ampollado y trazas fúngicas progresivas.
+  render_quality: Lectura forense del deterioro con autenticidad de edificio público abandonado.
   spatial_distortion: Collapsed ceiling
-  atmosphere: Oppressive stillness, administrative abandonment, cold acoustic emptiness
-  key_features: Faded compliance signage, broken fluorescent housings, cracked linoleum seams, dust shafts, partial ceiling cave-ins
+  atmosphere: Inmovilidad opresiva, vacío acústico frío y memoria administrativa detenida.
+  key_features: Señalética deslavada, luminarias rotas, juntas de linóleo abiertas, pilares de polvo y techos parciales caídos.
   creative_brief: >-
-    Construye la identidad desde la degradación sistémica: pintura, yeso, luminarias
-    y pavimentos deben narrar décadas de uso y abandono. Mantén tensión psicológica
-    sin teatralidad explícita; el miedo surge de la evidencia material y la escala
-    institucional repetitiva.
+    Define una gramática de abandono institucional transferible en la que cada
+    capa material evidencie décadas de fallo de mantenimiento. La tensión debe
+    nacer de repetición arquitectónica y evidencia física, no de susto explícito.
 avoidRules:
   - clean
   - new

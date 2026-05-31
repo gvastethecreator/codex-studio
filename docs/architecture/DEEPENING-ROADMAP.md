@@ -2,7 +2,7 @@
 
 Esta hoja de ruta sigue refactors que convierten módulos superficiales en módulos más profundos, con mejor locality, leverage y testabilidad. Las decisiones relacionadas viven en `docs/adr/`.
 
-Current findings index: `docs/architecture/architecture-review-2026-05-29.md`.
+Current findings index: `docs/architecture/architecture-review-2026-05-31.md`.
 
 ## Conceptos
 
@@ -22,6 +22,19 @@ Execution order for the accepted batch:
 4. Deepen `appFactory` runtime composition (finish stream + library route extraction).
 5. Deepen `Local Studio Sync` refresh policy semantics.
 6. Review naming and seam clarity in `Local Generation Run` provider-neutral flow.
+
+## Lote de revisión aceptado - 2026-05-31
+
+The latest accepted batch comes from `docs/architecture/architecture-review-2026-05-31.md`.
+
+Execution order for this batch:
+
+1. Deepen `Studio Shell` composition policy.
+2. Deepen `Workspace lifecycle` invariants.
+3. Remove dual `Studio Settings` interface (domain + flat compatibility).
+4. Deepen `Command Center` projection policy.
+5. Add direct test surface for `createStudioApp` composition seam.
+6. Deepen `Local Studio Sync` refresh policy semantics.
 
 ## Seguimiento de trabajo
 
@@ -179,6 +192,104 @@ Execution order for the accepted batch:
   - done: added route-seam tests in `apps/local-server/src/libraryRoutes.test.ts` for traversal safety, missing-file 404, and thumbnail variant serving.
 - **Exit criteria:** `appFactory.ts` acts mainly as runtime composition module, with heavy route groups mounted from focused route modules.
 - **Docs:** update `docs/ARCHITECTURE.md` backend seam section once providers/codex route groups are also extracted.
+
+### 10. Deepen `Studio Shell` composition policy (2026-05-31 batch)
+
+- **Status:** In progress
+- **Files:** `hooks/useStudioShell.ts`, `components/AppContent.tsx`,
+  `lib/buildStudioHeaderToolbarProps.ts`, `lib/buildStudioPageController.ts`
+- **Depends on:** none
+- **Unblocks:** narrower shell interface and stable integration test surface
+- **Concrete steps:**
+  - define one deep composition-policy module for cross-seam shell invariants;
+  - keep `useStudioShell.ts` as a thinner adapter interface over that policy;
+  - add focused tests for shell policy (without mounting full UI tree).
+- **Exit criteria:** shell callers stop depending on broad cross-domain wiring details.
+- **Docs:** `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`, findings index.
+
+### 11. Deepen `Workspace lifecycle` invariants (2026-05-31 batch)
+
+- **Status:** In progress
+- **Files:** `hooks/useWorkspaceStrip.ts`, `hooks/useStudioActionConfirmations.ts`,
+  `hooks/useCatalog.ts`, `lib/buildStudioHeaderToolbarProps.ts`, `components/header/WorkspaceStrip.tsx`
+- **Depends on:** 10
+- **Unblocks:** deterministic workspace switch/delete/clear behavior
+- **Concrete steps:**
+  - done: added `lib/workspaceLifecycle.ts` with shared lifecycle invariants for switch and delete ordering;
+  - done: routed `buildStudioHeaderToolbarProps`, `useStudioActionConfirmations`, and `useWorkspaceStrip` through the shared lifecycle seam;
+  - done: added focused seam tests in `lib/workspaceLifecycle.test.ts` for default workspace guard, switch behavior, and clear-before-delete ordering.
+  - next: add integration tests that cover the full strip + confirmation flow through the same seam.
+- **Exit criteria:** workspace policy no longer leaks across strip/confirm/catalog callers.
+- **Docs:** `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`.
+
+### 12. Retire dual `Studio Settings` interface (2026-05-31 batch)
+
+- **Status:** Done
+- **Files:** `hooks/useStudioSettings.ts`, `hooks/useStudioShell.ts`, `components/StudioSettingsModal.tsx`
+- **Depends on:** 10
+- **Unblocks:** smaller settings fixtures and clearer domain seams
+- **Concrete steps:**
+  - done: migrated remaining shell callers to `settingsDomain` / `providerDomain` / `outputSourcesDomain`.
+  - done: removed flat compatibility fields from `useStudioSettings` return contract.
+  - next: add focused hook tests for domain-only interface behavior.
+- **Exit criteria:** no caller depends on flat compatibility fields.
+- **Docs:** `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`.
+
+### 13. Deepen `Command Center` projection policy (2026-05-31 batch)
+
+- **Status:** Done
+- **Files:** `lib/buildStudioHeaderToolbarProps.ts`, `lib/buildStudioPageController.ts`, `components/HeaderToolbar.tsx`
+- **Depends on:** 10
+- **Unblocks:** explicit projection invariants and reduced shell wiring spread
+- **Concrete steps:**
+  - done: compressed projection inputs into a policy seam with explicit invariants by grouping provider, queue, and actions contexts;
+  - done: kept `HeaderToolbar` as a visual adapter;
+  - done: added direct tests for projection policy outputs.
+- **Exit criteria:** projection invariants are testable through a dedicated module interface.
+- **Docs:** `docs/ARCHITECTURE.md`, findings index.
+
+### 14. Add direct test surface for `createStudioApp` composition seam (2026-05-31 batch)
+
+- **Status:** In progress
+- **Files:** `apps/local-server/src/appFactory.ts`, `apps/local-server/src/appFactory.test.ts`
+- **Depends on:** none
+- **Unblocks:** safe backend composition changes and ADR-0014 closure criteria
+- **Concrete steps:**
+  - done: create first composition tests for injected codex/project seams and catalog command wiring;
+  - done: added failure-path coverage for codex route composition (`/api/codex/models` error path).
+  - done: added runtime wiring coverage for injected app-server dependencies (`/api/app-server/start`).
+  - next: add coverage for worker dependency wiring and additional failure-path composition behavior in job/runtime routes.
+- **Exit criteria:** `createStudioApp` has direct seam tests that cover primary wiring paths.
+- **Docs:** `docs/adr/0014-backend-dependency-injection-seams.md`, `docs/ARCHITECTURE.md`.
+
+### 15. Deepen `Local Studio Sync` refresh policy semantics (2026-05-31 batch)
+
+- **Status:** Planned
+- **Files:** `hooks/useLocalStudioSync.ts`, `hooks/localStudioSyncRefreshPolicy.ts`, `hooks/localStudioSyncProjection.ts`
+- **Depends on:** 10, 13
+- **Unblocks:** resilient refresh behavior under burst and reconnect patterns
+- **Concrete steps:**
+  - model refresh triggers with explicit event categories;
+  - expand coalescing/retry semantics beyond asset-added/disconnect;
+  - add focused tests for burst and reconnect scenarios.
+- **Exit criteria:** refresh behavior evolves behind policy seam without hook churn.
+- **Docs:** `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`.
+
+### 16. Deepen `Studio Overlay Controller` settings seam (2026-05-31 batch)
+
+- **Status:** Done
+- **Files:** `hooks/useStudioOverlayController.ts`, `components/overlays/types.ts`,
+  `components/overlays/StudioSystemOverlays.tsx`, `hooks/useStudioOverlayController.test.ts`
+- **Depends on:** 10, 12
+- **Unblocks:** smaller system-overlay interface and clearer domain ownership for `Studio Settings` data
+- **Concrete steps:**
+  - done: `StudioSystemOverlaysProps` now groups settings data and actions under `settingsModule` instead of exposing a broad flat settings surface;
+  - done: `buildStudioOverlayController()` now publishes grouped `settingsModule` data into `systemOverlays`;
+  - done: `StudioSystemOverlays` now consumes grouped `settingsModule` domains and keeps modal wiring behavior unchanged;
+  - done: updated overlay seam tests to assert `settingsModule` paths.
+  - done: reduced the remaining controller argument flattening by renaming the shell seam input to `settingsModule` and threading the grouped settings module straight through the controller.
+- **Exit criteria:** no new callers depend on flat settings fields in `systemOverlays`; overlay settings wiring remains domain-grouped.
+- **Docs:** `docs/ARCHITECTURE.md`, findings index.
 
 ### 6. Deepen `Local Studio Sync` state ownership
 

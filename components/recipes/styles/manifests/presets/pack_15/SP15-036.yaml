@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Coastal megacity transit line running through transparent tidal tunnels.
-  form_and_line: Cylindrical glass tubes, wavebreaker stations, and modular ferry interchanges.
-  color_palette: Aqua glass, coral pink, and midnight blue.
-  lighting_setup: Refraction caustics and station LEDs creating moving light bands.
-  material_texture: Reinforced tideglass, anti-salt alloys, and damp composite walkways.
-  render_quality: Detailed infrastructure concept with strong kinetic framing.
-  spatial_distortion: Long tunnel vanishing lines with fish silhouettes and passing trains.
-  atmosphere: Fast coastal energy, aquatic wonder, and civic fluidity.
-  key_features: Tideglass train tubes, reef transfer hubs, and kelp-powered station vents.
-  creative_brief: A seapunk metro where commuting itself becomes an underwater public spectacle.
+  aesthetic: Transparent transit seapunk where commuters move inside engineered waves and infrastructure becomes an aquarium of velocity.
+  form_and_line: Tideglass cylinders, wavebreaker fins, gasket rings, modular interchange knots, and long rail ribbons bending through water.
+  color_palette: Aqua glass, coral pink, midnight blue, stainless salt gray, and pale kelp green.
+  lighting_setup: Moving caustic bands, linear LEDs, passing shadow silhouettes, and refracted station glow on wet walkways.
+  material_texture: Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter grates.
+  render_quality: Detailed infrastructure concept with kinetic framing and believable pressure-control logic.
+  spatial_distortion: Tube vanishing lines bend through water, interrupted by refraction, motion blur, and fishlike traffic silhouettes.
+  atmosphere: Fast coastal energy, civic fluidity, public wonder, and controlled pressure risk.
+  key_features: Tideglass corridors, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic station maps.
+  creative_brief: >-
+    Preserve tideglass subway grammar as a reusable style system:
+    refracted transit transparency, gasketed pressure infrastructure, and
+    coastal public-speed choreography should remain coherent across subjects.
 avoidRules: [photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-036.webp }
 attributes:
   negativePrompt: photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Elevated biophilic-modern terrace style with calm geometric planting composition and hospitality-grade outdoor minimalism
-  form_and_line: Linear planter modules, low horizontal furniture massing, thin-frame pergola rhythm, softened orthogonal hardscape
+  aesthetic: Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica calmada.
+  form_and_line: Módulos lineales de jardineras, mobiliario bajo horizontal, pergolado ligero y hardscape ortogonal suavizado.
   color_palette: Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights
-  lighting_setup: Warm twilight gradient with soft practical point-lights and controlled low-contrast edge definition
-  material_texture: Oiled hardwood decking, matte powder-coated metal, coarse aggregate gravel, woven exterior textile, brushed zinc planters
-  render_quality: Premium landscape-architecture visualization finish with clean hierarchy, restrained bloom, and tactile material legibility
+  lighting_setup: Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.
+  material_texture: Deck de madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y jardineras de zinc cepillado.
+  render_quality: Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.
   spatial_distortion: Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence
-  atmosphere: Quiet, restorative, refined, breathable, contemplative, design-forward
-  key_features: Modular planting bands, warm deck planes, integrated ambient lighting, low-profile lounge geometry, material contrast between greenery and hardscape
+  atmosphere: Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.
+  key_features: Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste verde-hardscape.
   creative_brief: >-
-    Keep the preset anchored in biophilic terrace language: structured
-    planting rhythm, restrained luxury materials, and atmospheric calm should
-    carry the identity without depending on any specific location narrative.
+    Preserva una gramática rooftop transferible basada en ritmo de plantación,
+    materialidad sobria de lujo y calma atmosférica. Debe mantener identidad
+    sin depender de ubicación o skyline específicos.
 avoidRules:
   - ground level
 assets:

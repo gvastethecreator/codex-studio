@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Ossuary architecture, ritualized mortality display, subterranean bone-structure interior language
-  form_and_line: Repetitive cranium/fracture motifs, long-bone lattice arrangements, shallow arch-bay sequencing, compressed tunnel axiality
+  aesthetic: Arquitectura osario subterránea donde mortalidad ritual y módulo óseo definen el lenguaje espacial.
+  form_and_line: Patrones repetitivos de cráneo y hueso largo, arcos bajos secuenciados y axialidad comprimida de túnel.
   color_palette: Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream
-  lighting_setup: Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow
-  material_texture: Chalky calcium bloom, porous cortical-bone pitting, dust-loaded mortar seams, damp stone substrate transitions
-  render_quality: Archaeological-macabre fidelity, high microtexture readability, low-light subterranean material realism
+  lighting_setup: Fuentes cálidas puntuales de antorcha o linterna, parpadeo sobre hueso y sombras densas de bajo nivel.
+  material_texture: Calcio yesoso, porosidad cortical, juntas de mortero polvorientas y transiciones húmedas de piedra enterrada.
+  render_quality: Fidelidad arqueológica de bajo nivel lumínico con microtextura funeraria legible.
   spatial_distortion: None
-  atmosphere: Solemn, compressed, reverential dread, deep-time stillness
-  key_features: Patterned skull courses, femur cross-stack bands, ossuary niches, candle/torch hotspot falloff, low vault pressure
+  atmosphere: Solemne, comprimida y reverencial, con quietud de tiempo profundo.
+  key_features: Hiladas de cráneos, bandas de fémures cruzados, nichos osarios y presión de bóveda baja.
   creative_brief: >-
-    Define la estética por repetición material y orden funerario: el hueso funciona
-    como módulo arquitectónico y símbolo simultáneamente. La composición debe
-    transmitir reverencia, densidad histórica y lectura espacial subterránea sin
-    depender de relato gótico explícito.
+    Define una gramática osaria transferible en la que repetición material y
+    orden funerario estructuren el espacio. Debe transmitir reverencia histórica
+    y lectura subterránea sin teatralidad gótica explícita.
 avoidRules:
   - living
 assets:

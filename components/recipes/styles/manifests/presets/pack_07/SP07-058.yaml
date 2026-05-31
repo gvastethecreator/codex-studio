@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Crystalline megastructure fantasy, geologic-growth architecture, mineral monolith futurism
-  form_and_line: Faceted vertical stacks, hex-column bundles, shard convergence vectors, prismatic apex geometry
+  aesthetic: Megaestructura cristalina de crecimiento geológico y futurismo mineral monolítico.
+  form_and_line: Apilamientos facetados verticales, haces hexagonales y convergencias prismáticas hacia ápice agudo.
   color_palette: Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash
-  lighting_setup: Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth
-  material_texture: Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode
-  render_quality: High-clarity crystal-architecture rendering with refraction-coherent light behavior and gemstone-scale precision
+  lighting_setup: Refracción interna intensa, dispersión espectral, núcleo autoiluminado y bordes de faceta de alto brillo.
+  material_texture: Cristal vítreo, caras gema, profundidad translúcida y geodas de amatista de microdetalle.
+  render_quality: Arquitectura cristalina de alta claridad con óptica coherente y precisión mineral de escala monumental.
   spatial_distortion: None
-  atmosphere: Luminous stillness, cold awe, otherworld elegance, mineral transcendence
-  key_features: Refraction-edged facet planes, translucent depth cores, prism-spire silhouette, internal glow strata, geode-scale detailing
+  atmosphere: Quietud luminosa, asombro frío y elegancia mineral de otro mundo.
+  key_features: Planos facetados refractivos, núcleos translúcidos, silueta de aguja prismática y estratos de brillo interno.
   creative_brief: >-
-    Treat this preset as crystal-growth architecture language: faceted geometry,
-    translucent mass, and optical dispersion should carry the identity. Keep
-    forms precise and majestic, with geological logic that remains reusable
-    across fantasy or sci-fi settings.
+    Construye una gramática cristalina transferible donde geometría facetada,
+    masa translúcida y dispersión óptica sostengan la identidad. Debe conservar
+    lógica geológica reutilizable en contextos fantasy o sci-fi.
 avoidRules:
   - brick
   - wood

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Tokyo apartment rock drama, black-lipstick cool, fashion-band melancholy, cigarettes and vulnerability, youth cohabitation, emotional abrasion in late-night city interiors
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Stylish, aching, adult, intimate
-  key_features: Band-fashion silhouettes, apartment clutter romance, train-and-city motifs, black-lipstick contrast, emotionally loaded close-ups
-  creative_brief: Two women named the same, sharing cigarettes and heartbreak in cramped Tokyo rooms where guitar feedback drowns out the sound of loneliness. Black lipstick stains on coffee cups, fashion as emotional armor, the city at midnight through train windows reflecting faces that are learning how to hurt each other and how to heal. Rock and roll as the only honest language between two people who have forgotten how to speak without performance.
+  aesthetic: Drama rock urbano adulto de cohabitación emocional, con estilismo punk-feminino y vulnerabilidad nocturna en interiores compactos.
+  form_and_line: Línea limpia de retrato íntimo, siluetas fashion de banda y close-up expresivo cargado de fricción afectiva.
+  color_palette: Negros carbón, burdeos de labial, luces ámbar de apartamento y grises azulados de tren nocturno.
+  lighting_setup: Luz de interior tenue, highlights de club y reflejos urbanos de ventana para tono melancólico sofisticado.
+  material_texture: Tela de moda rock, superficies de departamento vivido, humo de cigarrillo y grano digital de época.
+  render_quality: Acabado premium drama-2000s con foco en química interpersonal, estilo performativo y herida emocional latente.
+  spatial_distortion: Espacio íntimo de apartamento con compresión de convivencia y aperturas urbanas de escape visual.
+  atmosphere: Estilizada, doliente, adulta, íntima.
+  key_features: Iconografía de banda y moda, contraste labial oscuro, clutter romántico urbano y primeros planos de tensión.
+  creative_brief: Construye una gramática reusable de melodrama rock metropolitano para cualquier sujeto, combinando estética de escena, convivencia frágil y nocturnidad emocional.
 avoidRules:
   - realistic
   - 3d render

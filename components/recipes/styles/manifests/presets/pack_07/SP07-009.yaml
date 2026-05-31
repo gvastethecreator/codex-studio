@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - historical-and-sacred-architecture
 visualDna:
-  aesthetic: Gothic revival style with sacred verticality, ornamental stone drama, and reverential shadowed grandeur
-  form_and_line: Pointed-arch grammar, ribbed vault structure, tracery intricacy, buttress rhythm, and spire-led upward composition
-  color_palette: Weathered stone grays with stained-jewel chroma bursts, deep crimson-blue shadows, and muted burnished metallic notes
-  lighting_setup: Low-key candle and moon shafts, stained-glass projection color pools, and high-contrast devotional shadow layering
-  material_texture: Carved limestone erosion detail, aged oak relief, cold iron patina, dusted masonry surfaces, tarnished brass accents
-  render_quality: Monumental historic visualization with high ornamental fidelity and atmospheric sacred-darkness precision
-  spatial_distortion: Vertical elongation emphasis with vaulted depth pull to intensify reverential upward focus
-  atmosphere: Solemn, dramatic, ancient, sacred, awe-struck
-  key_features: Vertical-devotional composition, pointed-arch language, stained-light dramaturgy, carved stone ornament hierarchy
+  aesthetic: Revival gótico de verticalidad devocional, dramatismo pétreo y solemnidad de luz filtrada.
+  form_and_line: Arco apuntado, bóveda nervada, tracería compleja, contrafuertes rítmicos y remates de aguja ascendente.
+  color_palette: Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal apagado.
+  lighting_setup: Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta reverencia.
+  material_texture: Caliza tallada, roble envejecido, hierro frío patinado, polvo mineral y latón oscurecido.
+  render_quality: Visualización histórico-monumental con fidelidad ornamental y atmósfera sacra precisa.
+  spatial_distortion: Énfasis en elongación vertical y tracción de profundidad hacia naves y bóvedas.
+  atmosphere: Solemne, ancestral, reverencial y dramática.
+  key_features: Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta densidad.
   creative_brief: >-
-    Preserve this preset through vertical sacred geometry and stained-light
-    contrast logic; Gothic reverence should be conveyed by material and form
-    grammar rather than haunted-narrative tropes.
+    Mantén una gramática gótica transferible donde verticalidad, piedra tallada
+    y luz de vitral construyan reverencia espacial. Debe funcionar sin caer en
+    clichés narrativos de horror o ruina escénica.
 avoidRules:
   - modern
   - bright

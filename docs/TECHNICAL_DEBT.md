@@ -13,7 +13,7 @@ Cola de ejecución actual:
 
 1. Profundizar orquestación de `Studio Shell`.
 2. Profundizar `Studio Generation Session`.
-3. Separar seams de `Studio Settings` por dominio operativo.
+3. Reducir traducción de overlays de sistema tras separar seams de `Studio Settings` por dominio operativo.
 4. Completar deepening de rutas en `appFactory`.
 5. Mejorar semántica de refresh en `Local Studio Sync`.
 6. Revisar claridad de seams en `Local Generation Run`.
@@ -70,6 +70,11 @@ Recommended next steps:
 - continue moving DB, logger, event bus, worker, and provider dependencies behind explicit factory inputs;
 - strengthen isolated tests for catalog, worker lifecycle, and provider execution;
 - preserve the Provider Boundary so route handlers and non-provider modules do not import concrete provider executors directly.
+
+Recent delta:
+
+- `useStudioSettings` removed the flat compatibility interface and now exposes only domain seams (`settingsDomain`, `providerDomain`, `outputSourcesDomain`) for shell callers.
+- `createStudioApp` composition tests now also cover codex failure-path behavior and app-server runtime dependency wiring.
 
 ## Prioridad media
 

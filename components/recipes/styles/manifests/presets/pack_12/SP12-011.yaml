@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Underwater thriller in fractured scientific complex.
-  subject_treatment: Tactical divers and rescue drones in evacuation.
-  color_and_tone: Deep turquoise, emergency red and blued steel.
-  lighting_and_shadow: Broken caustics and intermittent alarms.
-  texture_and_material: Cracked glass, biofilm, and wet panels.
-  camera_and_composition: Central walkway with gap in the background.
-  atmosphere_and_mood: Countdown anxiety under pressure.
-  rendering_and_quality: Campaign scene with lens focal points.
+  aesthetic: Survival sci-fi submarino orientado a reparación, contención y extracción bajo presión estructural.
+  subject_treatment: Roles de diver/engineer/drone-support legibles por silueta y toolset funcional.
+  color_and_tone: Turquesa profundo, rojo alarma y acero azulado para jerarquía de riesgo ambiental.
+  lighting_and_shadow: Caústicas rotas, flashes de emergencia y zonas de visibilidad intermitente por fallo de energía.
+  texture_and_material: Cristal fisurado, biofilm, juntas húmedas y panelado industrial saturado por agua.
+  camera_and_composition: Pasarela central con rutas de evacuación, nodos de reparación y hazards de ruptura.
+  atmosphere_and_mood: Ansiedad de cuenta regresiva, claustrofobia acuática y disciplina operativa.
+  rendering_and_quality: Estilo campaign-gameplay con lectura clara de objetivos, rutas y estados de sistema.
 avoidRules:
   - watermark
   - text

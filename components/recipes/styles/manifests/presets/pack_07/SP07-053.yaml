@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Aerial-fortress romanticism, floating-island megastructure fantasy, skyborne sovereign architecture
-  form_and_line: Vertiginous spire clusters, suspended landmass tiering, bridge-span void crossings, downward waterfall vectors
+  aesthetic: Romanticismo de fortaleza aérea con megastructura suspendida y soberanía en altura.
+  form_and_line: Clústeres de agujas verticales, estratificación de masa flotante, puentes de vacío y vectores de cascada descendente.
   color_palette: White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above
-  lighting_setup: Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light
-  material_texture: Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base
-  render_quality: High-fantasy sky-architecture rendering with atmospheric depth, impossible-engineering coherence, and majestic scale control
+  lighting_setup: Sol alto, rebote en nubes, rayos volumétricos y rim dorado de borde sobre siluetas suspendidas.
+  material_texture: Piedra aérea, niebla de base, aristas cristalinas y roca flotante de estrato erosionado.
+  render_quality: Sky-architecture fantástica con profundidad atmosférica y coherencia de ingeniería imposible.
   spatial_distortion: Floating rocks
-  atmosphere: Sublime altitude, impossible calm, wind-driven grandeur, transcendent distance
-  key_features: Void-bridging spans, cloud-below horizon lines, floating mass undercuts, skyfall waterfalls, aerial silhouette dominance
+  atmosphere: Sublime de gran altitud, calma improbable y grandeza impulsada por viento.
+  key_features: Tramos sobre vacío, horizonte con nubes inferiores, undercuts flotantes, cascadas aéreas y silueta dominante.
   creative_brief: >-
-    Prioritize floating-castle visual logic through suspended massing,
-    high-altitude atmosphere, and vertical landmark composition. Keep the
-    identity in weight-defying architecture and sky-scale wonder rather than a
-    single named fortress narrative.
+    Define una gramática de castillo flotante transferible en la que masa
+    suspendida, atmósfera de gran altitud y verticalidad icónica sostengan la
+    identidad. Debe evitar dependencia de una fortaleza nombrada.
 avoidRules:
   - grounded
 assets:

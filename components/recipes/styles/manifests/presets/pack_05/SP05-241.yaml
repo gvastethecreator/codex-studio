@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: MMO civilization after the log-in, guild politics, plaza meetings, tactical worldbuilding, glass-and-stone fantasy city life organized around systems and cooperation
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Strategic, communal, thoughtful, adventurous
-  key_features: Guild emblems, city-plaza staging, party-role clarity, system-overlay hints, collaborative ensemble framing
-  creative_brief: A glass-and-stone city reorganizes around guild emblems and plaza diplomacy, where the game became the world and strategy became survival. Cooperation is architecture, knowledge is infrastructure. The after-login civilization builds itself one meeting, one contract, one shared meal at a time.
+  aesthetic: Civilización post-login de fantasía sistémica, con política de gremios, urbanismo social y cooperación como tecnología cultural.
+  form_and_line: Arquitectura ordenada de plazas y foros, siluetas de party-role claras y linework táctico de interfaz diegética.
+  color_palette: Azul acero urbano, verde esmeralda administrativo, ámbar cálido de taberna y acentos cian de UI arcana.
+  lighting_setup: Luz diurna de plaza, interiores de guildhall en tungsteno suave y superposición luminosa de ventanas de sistema.
+  material_texture: Piedra cívica pulida, madera de cartelera, pergamino de contrato, metal de insignia y tela de uniforme gremial.
+  render_quality: Fantasía urbana de alta legibilidad estratégica, con composición coral y claridad de roles en escena.
+  spatial_distortion: Escala comunitaria horizontal, jerarquía visual por grupos y profundidad orientada a mapa social.
+  atmosphere: Comunal, analítica y esperanzada, de ciudad que aprende a autogobernarse.
+  key_features: Emblemas de guild, plazas de negociación, pizarras de quest y staging colaborativo de escuadras.
+  creative_brief: >-
+    Define una gramática strategy-guild reusable donde infraestructura social,
+    estética de sistema y cooperación visible articulen identidad de mundo sin
+    depender de una misión concreta.
 avoidRules:
   - realistic
   - 3d render

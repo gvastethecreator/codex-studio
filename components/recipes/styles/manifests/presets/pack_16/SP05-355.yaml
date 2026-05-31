@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Horse-girl racing pageantry, stadium cheers, ribboned athletic costumes, track dust and idol energy fused into one hyper-bright sports-performance spectacle
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Sparkling, speedy, cheerful, dramatic
-  key_features: Track-lane depth, cheering stadium read, costume-motion ribbons, finish-line rush, sports-meets-idol contrast
-  creative_brief: Turf dust catches stadium light like scattered sequins as ribbon-trailing sprinters blur past roaring grandstands. Athletic fury dressed in idol pageantry, where the finish line is both victory and stage curtain.
+  aesthetic: Turf-sprint idolizado de energía festiva, centrado en velocidad de pista y showmanship competitivo.
+  form_and_line: Siluetas de carrera livianas, movimiento de listones/cabello y acting de rivalidad alegre.
+  color_palette: Pasteles saturados de evento, verdes de césped vivo y acentos de equipo de alto contraste.
+  lighting_setup: Iluminación de estadio brillante con destellos de final de carrera y rebote cálido de graderío.
+  material_texture: Tierra de pista, telas ornamentales ligeras, accesorios de presentación y brillo deportivo pulido.
+  render_quality: Sports-performance frame hyper-bright con lectura limpia de sprint, carril y photo-finish.
+  spatial_distortion: Perspectiva de recta final con estelas de velocidad y compresión hacia meta.
+  atmosphere: Centelleante, veloz, alegre y dramática.
+  key_features: Profundidad de carril, energía de público, cintas en movimiento y rush de línea de meta.
+  creative_brief: >-
+    Construye una gramática reusable de idol-derby-sprint donde espectáculo,
+    velocidad y legibilidad de carril se integren sin depender de un photo-finish
+    específico.
 avoidRules:
   - realistic
   - 3d render

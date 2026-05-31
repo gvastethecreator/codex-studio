@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Training montage emotion, giant launch gantries, hot-blooded schoolgirls and cosmic stakes, tears and determination rendered in thick retro spectacle
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Earnest, grand, tearful, heroic
-  key_features: Launch-gantry scale, mecha training posture, crying determination close-ups, retro-cosmic effects, school-to-war contrast
-  creative_brief: Gantry lights drip like tears down the face of a machine too large for any sky. A girl fist trembles not with fear but with the terrifying fullness of purpose while warp engines hum the anthem of leaving everything behind. The mecha stands not as weapon but as cathedral to the cost of growing up.
+  aesthetic: Drama mecha de entrenamiento y sacrificio, con transición emocional de academia a guerra cósmica en clave súper sentida.
+  form_and_line: Línea cel de alto contraste, close-ups lacrimales intensos y siluetas de mecha monumental frente a piloto vulnerable.
+  color_palette: Azules nocturnos de base, blancos técnicos de instalación, rojos de alarma y naranjas de impulso de lanzamiento.
+  lighting_setup: Luz industrial de gantry con destellos de motor warp, sombras planas rígidas y backlight de cuenta regresiva terminal.
+  material_texture: Estructura metálica pesada, panelería de hangar, superficies de traje de piloto y grano televisivo ochentero.
+  render_quality: Acabado premium retro-dramático con énfasis en escala máquina-cuerpo y crescendo emocional de partida.
+  spatial_distortion: Perspectiva vertical extrema de plataforma de lanzamiento que magnifica el salto de madurez forzada.
+  atmosphere: Sincera, grandiosa, llorosa, heroica.
+  key_features: Gantry colosal, lenguaje visual de entrenamiento, lágrimas de determinación y iconografía de motor espacial.
+  creative_brief: Crea una gramática reusable de heroísmo formativo mecha para cualquier sujeto, combinando infraestructura de lanzamiento, vulnerabilidad emotiva y salto irreversible al destino cósmico.
 avoidRules:
   - realistic
   - 3d render

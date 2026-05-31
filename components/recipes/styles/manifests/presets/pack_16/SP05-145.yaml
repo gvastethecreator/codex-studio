@@ -12,20 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Aerial surf mecha, teenage longing, counterculture energy, sunset cloud seas, board-riding robots, bright emotional rebellion, sky-soaked romance and motion
-  form_and_line: Fluid airborne contouring, aerodynamic mecha-curve language, youth-driven character silhouettes, clean digital inking
-  color_palette: Sky-heavy cyans, sunset magentas, bright surf-accent neons, and optimistic high-chroma atmospheric transitions
-  lighting_setup: Golden-hour sky backlight, polished digital gradients, cloud-reflected fill, horizon rim streaks
-  material_texture: Semi-gloss board surfaces, smooth digital-cel overlays, airy cloud-volume softness, light filmic noise
-  render_quality: Mid-2000s high-polish anime compositing with motion-rich aerial readability and emotionally bright tonal control
-  spatial_distortion: Arc-based flight perspective, sweeping diagonal motion lanes, gravity-light framing with open sky depth
-  atmosphere: Airy, romantic, youthful, free
-  key_features: Air-surf mecha choreography, cloud-ocean staging, youth-culture fashion coding, luminous horizon kinetics
-  creative_brief: >-
-    Keep Eureka Seven’s identity in the fusion of romantic youth energy and
-    aerial mecha flow: open skies, surf-like motion grammar, and emotionally
-    saturated color transitions. The style should privilege lift, momentum,
-    and longing over ground-bound combat staging.
+  aesthetic: Mecha aéreo romántico de juventud contracultural, con sensación de vuelo libre y melancolía luminosa.
+  form_and_line: Contornos fluidos aerodinámicos, siluetas de rider y mecha con curvas de surf y cinética de arco.
+  color_palette: Cianes de cielo abierto, magentas de atardecer, neones de tabla y gradientes de alta saturación optimista.
+  lighting_setup: Backlight dorado de horizonte, relleno por nube reflectante y streaks de rim para velocidad en altura.
+  material_texture: Superficies semibrillo de board, compositing digital pulido y volumen nuboso suave de alto recorrido.
+  render_quality: Calidad premium mid-2000s con lectura aérea clara y control emocional vibrante.
+  spatial_distortion: Perspectiva de vuelo diagonal, profundidad de océano de nubes y framing liviano de gravedad reducida.
+  atmosphere: Aérea, romántica, juvenil, liberadora.
+  key_features: Coreografía de air-surf mecha, skyline de nubes, códigos de subcultura y dinámica de impulso continuo.
+  creative_brief: Define una gramática reusable de mecha romance aéreo para cualquier sujeto, priorizando lift, momentum y anhelo sobre combate terrestre.
 avoidRules:
   - realistic
   - 3d render

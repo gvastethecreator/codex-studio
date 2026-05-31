@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Mediterranean sun-architecture style with limewashed simplicity, thermal brightness, and breezy coastal restraint
-  form_and_line: Soft-edged stucco volumes, arch repetition, terrace layering, colonnade cadence, courtyard flow geometry
-  color_palette: Lime white fields, azure accents, terracotta earths, warm ochre mids, sea-glass greens, restrained floral magenta notes
-  lighting_setup: High-intensity solar wash with crisp shadow cuts, reflected courtyard bounce, warm dusk practical transitions
-  material_texture: Mineral stucco grain, handmade tile variation, rough stone joints, weathered timber bleach, wrought-iron matte detail
-  render_quality: Clean Mediterranean realism with sun-bleached precision, airy depth, and disciplined material-light interplay
-  spatial_distortion: Open-volume perspective calm with framed axial views and layered indoor-outdoor transitions
-  atmosphere: Luminous, relaxed, airy, warm, restorative
-  key_features: Limewash-and-terracotta signature, high-sun shadow architecture, courtyard flow sequencing, coastal chroma restraint
+  aesthetic: Mediterráneo solar de cal y terracota, claridad térmica y fluidez patio-terraza.
+  form_and_line: Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones interior-exterior continuas.
+  color_palette: Blanco de cal, azul mediterráneo, terracota, ocre cálido y verdes vidrio mar en acento moderado.
+  lighting_setup: Sol alto de contraste nítido, rebote cálido en patio, y transición crepuscular con prácticos discretos.
+  material_texture: Estuco mineral, baldosa manual, piedra junta abierta, madera blanqueada y hierro forjado mate.
+  render_quality: Realismo mediterráneo limpio con precisión de luz solar y lectura material aérea.
+  spatial_distortion: Perspectiva abierta con encuadres axiales suaves y secuencia de umbrales ventilados.
+  atmosphere: Luminosa, relajada, ventilada y restaurativa.
+  key_features: Binomio cal-terracota, sombra de arco, patios conectores y paleta costera de saturación contenida.
   creative_brief: >-
-    Encode Mediterranean identity through solar contrast behavior and
-    limewash-terra material pairing, ensuring the style remains transferable
-    beyond any single villa setting.
+    Mantén una gramática mediterránea transferible de alto sol, cal mineral y
+    terracota estructurante. La identidad debe sostenerse por clima, material y
+    secuencia espacial, no por una narrativa de villa puntual.
 avoidRules:
   - rain
   - cold

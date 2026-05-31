@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Fated, romantic, bright, dramatic
-  key_features: Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances
-  creative_brief: A book opens and the world tilts sideways, ink becoming sky and stars rearranging into warriors sworn by celestial oath. Romance blooms in the space between pages, where earnest devotion outshines any constellation and the journey home is measured in heartbeats, not miles.
+  aesthetic: Drama romántico de portal-libro con imaginería celeste y guardianes juramentados en tono noventero luminoso.
+  form_and_line: Contorno suave emocional, símbolos astrales recurrentes y composición de viaje con foco en vínculo afectivo.
+  color_palette: Rosa cósmico, azul estrella, oro constelar, blanco papel y violeta destino.
+  lighting_setup: Brillo de portal abierto, halos celestes y luz dramática difusa de melodrama fantástico.
+  material_texture: Páginas antiguas, tejidos rituales, ornamento metálico y partículas mágicas de constelación.
+  render_quality: Fantasía de romance épico con claridad sentimental y estética de aventura por capítulos.
+  spatial_distortion: Transición dimensional por marco-libro y profundidad de ruta entre dos mundos.
+  atmosphere: Predestinada, brillante y emotiva.
+  key_features: Portal textual, guardianes celestiales, simbología astral y staging de juramento romántico.
+  creative_brief: >-
+    Construye una gramática celestial-portal reusable donde libro, constelación
+    y devoción romántica organicen una aventura de tránsito dimensional con
+    alta legibilidad emocional.
 avoidRules:
   - realistic
   - 3d render

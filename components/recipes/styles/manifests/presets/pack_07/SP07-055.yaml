@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - landscape-and-gardens
 visualDna:
-  aesthetic: Confectionery urban fantasy, edible-architecture surrealism, high-whimsy sugarcraft environment language
-  form_and_line: Soft rounded massing, candy-column repetition, piped-icing ornament bands, dessert-object modular forms
+  aesthetic: Fantasía confitera urbana de surrealismo comestible y arquitectura de azúcar modular.
+  form_and_line: Masas redondeadas blandas, columnas candy repetitivas y bandas ornamentales de glaseado.
   color_palette: Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black
-  lighting_setup: Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer
-  material_texture: Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip
-  render_quality: Stylized high-saturation fantasy rendering with material-edibility cues and playful structural coherence
+  lighting_setup: Glow cálido de confitería, brillos de frosting, translucidez gumdrop y destellos de cristal de azúcar.
+  material_texture: Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hilos de azúcar estirada.
+  render_quality: Fantasía estilizada de saturación alta con coherencia lúdica de material comestible.
   spatial_distortion: Melting
-  atmosphere: Playful excess, cheerful surrealism, hyper-sweet escapism
-  key_features: Icing-ornament facades, gumdrop route markers, sprinkle particulate accents, candy-cane structural motifs, syrup-flow features
+  atmosphere: Exceso lúdico, surrealismo alegre y escapismo hiper-dulce.
+  key_features: Fachadas de icing, marcadores gumdrop, acentos sprinkle y motivos estructurales candy-cane.
   creative_brief: >-
-    Build this preset as a confectionery design system: edible materials,
-    playful ornament, and bright sugar-coded contrast should define the style.
-    Keep it whimsical and modular so subjects can change while the candy
-    architecture identity stays unmistakable.
+    Define una gramática candy transferible con materialidad comestible,
+    contraste cromático de azúcar y modularidad juguetona. Debe mantener
+    identidad inequívoca sin fijarse en un cuento o reino concreto.
 avoidRules:
   - scary
   - realistic

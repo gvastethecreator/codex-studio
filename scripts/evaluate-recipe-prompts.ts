@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 import {
+  composeGenerationQualityPromptSections,
   createGenerationTaskSpec,
   type GenerationTaskSpec,
 } from '../packages/shared/src/generationContracts';
@@ -61,6 +62,8 @@ export interface EvaluationSummary {
 
 export function createBareVariant(spec: GenerationTaskSpec): EvaluationVariant {
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
+  const qualitySections = composeGenerationQualityPromptSections(spec);
+  if (qualitySections.length > 0) parts.push('', ...qualitySections);
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
   if (spec.recipeId) parts.push('', `Recipe: ${spec.recipeId}`);
   if (spec.stylePresetId) parts.push(`Style preset: ${spec.stylePresetId}`);
@@ -86,6 +89,8 @@ export function createLegacyVariant(spec: GenerationTaskSpec): EvaluationVariant
   const recipeContext =
     typeof spec.metadata.recipeContext === 'string' ? spec.metadata.recipeContext : '';
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
+  const qualitySections = composeGenerationQualityPromptSections(spec);
+  if (qualitySections.length > 0) parts.push('', ...qualitySections);
   if (recipeContext) parts.push('', 'Recipe instructions:', recipeContext.trim());
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
   if (spec.recipeId) parts.push('', `Recipe: ${spec.recipeId}`);
@@ -119,6 +124,8 @@ export function createDirectivesVariant(spec: GenerationTaskSpec): EvaluationVar
     ? serializeRecipeProviderDirectives(directives)
     : '';
   const parts = [`Task: ${spec.task}`, '', 'Prompt:', spec.prompt];
+  const qualitySections = composeGenerationQualityPromptSections(spec);
+  if (qualitySections.length > 0) parts.push('', ...qualitySections);
   if (serialized) parts.push('', 'Recipe directives:', serialized);
   if (spec.negativePrompt) parts.push('', 'Avoid:', spec.negativePrompt);
   if (spec.recipeId) parts.push('', `Recipe: ${spec.recipeId}`);
@@ -194,6 +201,25 @@ export function buildRecipeSpec(module: RecipeModule): GenerationTaskSpec {
     recipeParams: params,
     stylePresetId: module.id === 'styles' ? 'SP01-001' : null,
     assets: [],
+    quality: {
+      qualityPresetId:
+        task === 'sprite_sheet'
+          ? 'sprite_sheet'
+          : task === 'texture_generate'
+            ? 'texture'
+            : task === 'style_preset_card'
+              ? 'product_or_ui_asset'
+              : 'image_general',
+      subject: null,
+      composition: null,
+      style: module.title,
+      lighting: null,
+      color: null,
+      materials: null,
+      constraints: [],
+      negative: [],
+      referenceRoles: [],
+    },
     output: {
       count: 1,
       aspectRatio: DEFAULT_GENERATION_CONFIG.aspectRatio,

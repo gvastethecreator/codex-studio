@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Axial symmetry toward governance dais.
   atmosphere: Deliberation, accountability, and measured power.
   key_features: Sundial court, vote levers, and council meters.
-  creative_brief: A clockpunk government that literally aligns policy with daylight.
+  creative_brief: >-
+    Preserve sundial government-steps grammar as a reusable style system:
+    solar-calibrated civic authority, axial deliberative architecture, and
+    measured public accountability should remain coherent across subjects.
 avoidRules: [photoreal, dystopian, cyber-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-090.webp }
 attributes:

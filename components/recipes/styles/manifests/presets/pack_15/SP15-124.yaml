@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Centered relay hub with radiating lagoon spokes.
   atmosphere: Connection, distance translation, and quiet power.
   key_features: Relay disks, buoy antennas, and mirror-water channels.
-  creative_brief: A seapunk relay station where the lagoon itself carries and repeats the signal.
+  creative_brief: >-
+    Preserve lagoon relay-station grammar as a reusable style system:
+    circular waterborne signal infrastructure, buoy-antenna relay choreography,
+    and quiet connective power should remain coherent across subjects.
 avoidRules: [photoreal, stormy, industrial-rust, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-124.webp }
 attributes:

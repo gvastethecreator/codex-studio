@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Atrium verticality with layered water flow.
   atmosphere: Renewal, abundance, and climate adaptation.
   key_features: Rain catchers, bioglass walls, and water nerve channels.
-  creative_brief: A biopunk rain atrium where water collection is expressed as elegant living architecture.
+  creative_brief: >-
+    Preserve bioglass rain-atrium grammar as a reusable style system:
+    vertical rain-harvest choreography, reflective wet bioglass tactility, and
+    climate-adaptive abundance should remain coherent across subjects.
 avoidRules: [photoreal, dark-industrial, cyberpunk, watermark, text, logo, muddy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-115.webp }
 attributes:

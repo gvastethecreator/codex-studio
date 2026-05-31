@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Habitable ringworld megastructure language with Niven-inspired orbital-band ecology, engineered horizon behavior, and macro-civilization landscape planning
-  form_and_line: Upward-curving horizon arcs, continuous ribbon-terrain bands, colossal edge-wall verticals, axial shadow swaths, and long curvature-led sightlines
+  aesthetic: Megaestructura habitable tipo ringworld con ecología orbital en banda y paisaje planificado a escala de macro-civilización.
+  form_and_line: Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales guiadas por curvatura.
   color_palette: Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void black backdrop, and high-altitude white haze
-  lighting_setup: Stellar directional sunlight with large-scale self-shadow sectors, atmospheric forward scatter, edge-wall rim illumination, and high-contrast void separation
-  material_texture: Planetary-scale terrain tiling, cloud-layer streaking, water-band reflectivity, megastructure wall faceting, and engineered orbital substrate transitions
-  render_quality: Ultra-vast speculative landscape rendering with rigorous curvature readability, macro-engineering coherence, and cinematic scale clarity
+  lighting_setup: Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en edge-walls.
+  material_texture: Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en contención.
+  render_quality: Paisaje especulativo ultra-vasto con lectura rigurosa de curvatura y coherencia de ingeniería macro.
   spatial_distortion: Orbital-band curvature with upward horizon wrap and macro-scale perspective compression
-  atmosphere: Grand, engineered, expansive, serene, and cosmically inhabited
-  key_features: Upward sky-arching terrain, habitable ribbon biosphere, kilometer-scale edge-wall containment, ring-rotation shadow bands, and continuous orbital horizon logic
+  atmosphere: Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.
+  key_features: Terreno arqueado al cielo, biosfera en cinta habitable, contención kilométrica de borde y bandas de sombra por rotación.
   creative_brief: >-
-    Preserve ringworld identity as a reusable style grammar: orbital-horizon
-    curvature behavior, ribbon-biosphere stratification, and edge-wall
-    megastructure cues should remain stable across subject matter.
+    Formula una gramática reusable de ringworld donde comportamiento de
+    horizonte orbital curvo, estratificación biosférica en cinta y edge-wall
+    megastructural definan identidad transversal.
 avoidRules:
   - globe
 assets:

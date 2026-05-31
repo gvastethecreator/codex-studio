@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Monumental funerary urbanism defined by sepulchral grandeur, ritual geometry, and necromantic civic order at megalopolis scale
-  form_and_line: Obelisk-dominant axial planning, stepped mausoleum masses, repetitive crypt grids, sarcophagus colonnades, and severe pointed skyline rhythm
+  aesthetic: Urbanismo funerario monumental con grandeza sepulcral y orden cívico necromántico de escala megalópolis.
+  form_and_line: Axialidad dominada por obeliscos, mausoleos escalonados, retículas de criptas y skyline severo de puntas rituales.
   color_palette: Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields
-  lighting_setup: Low underlit crypt glow, pallid moon diffusion, selective soul-lantern accents, volumetric cemetery fog, and ember-like rune highlights
-  material_texture: Weather-eaten stone blocks, cracked marble facings, oxidized iron gates, ash-coated paving, carved ossuary reliefs, and eroded funerary inscriptions
-  render_quality: High-detail dark-fantasy architectural rendering with disciplined tonal restraint, monumental readability, and oppressive atmospheric layering
+  lighting_setup: Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de cementerio.
+  material_texture: Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.
+  render_quality: Dark fantasy arquitectónica de alto detalle con contención tonal y lectura monumental opresiva.
   spatial_distortion: None
-  atmosphere: Solemn, oppressive, ritualistic, haunted, and acoustically muted as if sound itself were entombed
-  key_features: Processional obelisk avenues, stacked crypt terraces, sarcophagus field repetition, necro-rune wayfinding, skull-derived ornament systems, and monument-scale mausoleum gates
+  atmosphere: Solemne, ritualista y opresiva, con silencio acústico de enclave enterrado.
+  key_features: Avenidas procesionales de obeliscos, terrazas de criptas apiladas, wayfinding rúnico y portones de mausoleo masivo.
   creative_brief: >-
-    Keep the preset driven by funerary megacity grammar: axial tomb planning,
-    obelisk hierarchy, and spectral low-light atmosphere should remain
-    structurally consistent across compositions.
+    Formula una gramática de necrópolis transferible donde jerarquía obeliscal,
+    planificación axial de tumbas y baja luz espectral definan identidad de
+    forma consistente entre composiciones.
 avoidRules:
   - life
   - lush vegetation

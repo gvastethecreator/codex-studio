@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Elven organic classicism, nature-integrated sanctuary architecture, high-fantasy lyrical refinement
-  form_and_line: Filigree arch systems, branch-derived colonnades, cascading terrace tiers, flowing non-orthogonal structural curves
+  aesthetic: Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de alta fantasía.
+  form_and_line: Arcos filigranados, columnatas derivadas de ramas, terrazas en cascada y curvas estructurales no ortogonales.
   color_palette: Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk
-  lighting_setup: Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance
-  material_texture: Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light
-  render_quality: High-fidelity fantasy-environment rendering with handcrafted-biotic integration and timeless ornamental clarity
+  lighting_setup: Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de carácter ceremonial.
+  material_texture: Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo cristalino.
+  render_quality: Alta fidelidad fantástica con integración biótica-artesanal y ornamento de lectura precisa.
   spatial_distortion: None
-  atmosphere: Sacred refuge, melancholic peace, timeless continuity, elevated wonder
-  key_features: Water-threaded terraces, arbor-structural fusion, fine bridge tracery, open-air ceremonial halls, star-facing platforms
+  atmosphere: Refugio sacro, melancolía luminosa y continuidad atemporal.
+  key_features: Terrazas atravesadas por agua, fusión árbol-estructura, puentes de traza fina y plataformas orientadas al cielo.
   creative_brief: >-
-    Keep this preset centered on elven design language: graceful curvature,
-    biotic-architectural fusion, and luminous serenity should define identity.
-    Preserve author-specific fantasy elegance while avoiding fixed scene beats
-    or single-location dependence.
+    Define una gramática élfica transferible basada en curvatura elegante,
+    fusión biótica y serenidad luminosa. Debe mantener sofisticación fantástica
+    sin quedar anclada a una localización única.
 avoidRules:
   - industrial
   - blocky

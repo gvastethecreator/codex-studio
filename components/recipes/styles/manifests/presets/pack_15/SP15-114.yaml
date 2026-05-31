@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Dome-centered observatory with layered organ gardens.
   atmosphere: Awe, measurement, and organic wonder.
   key_features: Organ blooms, sensor domes, and growth benches.
-  creative_brief: A biopunk observatory where cultivated living organs study the sky.
+  creative_brief: >-
+    Preserve organ garden-observatory grammar as a reusable style system:
+    sensory-organ astronomical instrumentation, petaled growth observatories,
+    and organic wonder measurement should remain coherent across subjects.
 avoidRules: [photoreal, gore, horror, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-114.webp }
 attributes:

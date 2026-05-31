@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Fantastic medieval with gothic ruins and siege fire.
-  subject_treatment: Cooperative squad defending the main nave.
-  color_and_tone: Ash grays, ember red, and muted gold.
-  lighting_and_shadow: Contrast of torches and stormy sky.
-  texture_and_material: Eroded stone, shattered stained glass, and worn metal.
-  camera_and_composition: Focus on a broken altar with active flanks.
-  atmosphere_and_mood: Desperate heroism and constant pressure.
-  rendering_and_quality: Narrative illustration for an endgame raid.
+  aesthetic: Co-op siege medieval-fantasy con layout de defensa por oleadas y escalado de presión en espacio gótico.
+  subject_treatment: Party sinérgica por rol (tank/heal/range/control) con prioridad de objetivos y posicionamiento defensivo.
+  color_and_tone: Grises ceniza, rojo brasa y oro apagado para diferenciar estado de fortificación y daño acumulado.
+  lighting_and_shadow: Antorchas locales + cielo de tormenta para alternar zonas seguras y puntos de riesgo.
+  texture_and_material: Piedra erosionada, vitrales rotos, metal fatigado y restos de barricada reutilizable.
+  camera_and_composition: Nave central como objective hub, flancos activos y rutas de oleada claramente telegráficas.
+  atmosphere_and_mood: Presión sostenida, heroísmo cooperativo y resistencia de último tramo.
+  rendering_and_quality: Raid-endgame visual con excelente readability de objetivos, flujos enemigos y ventanas de cooldown.
 avoidRules:
   - watermark
   - text

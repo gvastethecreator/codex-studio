@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Flow-based district plan bending around current loops.
   atmosphere: Ease, flow, and refined maritime living.
   key_features: Current chambers, pearl plazas, and tide bridges.
-  creative_brief: A seapunk district designed around moving water as the city’s main organizing force.
+  creative_brief: >-
+    Preserve pearl current-district grammar as a reusable style system:
+    flow-organized maritime urbanism, pearl-chamber circulation logic, and
+    refined aquatic ease should remain coherent across subjects.
 avoidRules: [photoreal, heavy-industrial, rust, watermark, text, logo, sludge]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-119.webp }
 attributes:

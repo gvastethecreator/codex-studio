@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Rotational composition around the giant wheel.
   atmosphere: Social motion and measured delight.
   key_features: Timewheel rides, ticket counters, and gear carnival stalls.
-  creative_brief: A clockpunk fairground where amusement is engineered as a precision ritual.
+  creative_brief: >-
+    Preserve timewheel arcade grammar as a reusable style system:
+    rotational public amusement engineering, dial-and-ticket ritual rhythm,
+    and measured social delight should remain coherent across subjects.
 avoidRules: [photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-094.webp }
 attributes:

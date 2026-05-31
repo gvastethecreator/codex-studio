@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Arboreal tribal settlement language with elevated canopy dwellings, handcrafted organic engineering, and Endor-inspired communal treetop living
-  form_and_line: Circular platform hubs, tensile rope catenaries, trunk-embracing ring structures, ladder diagonals, and layered vertical circulation across canopy tiers
+  aesthetic: Asentamiento tribal arbóreo de vida comunal elevada con ingeniería orgánica artesanal en copa forestal.
+  form_and_line: Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles de dosel.
   color_palette: Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling
-  lighting_setup: Dappled leaf-filtered daylight, warm hanging lantern practicals, soft campfire bounce, sunset scatter through branches, and low-contrast nocturnal glow
-  material_texture: Rough-hewn timber, braided rope fiber, woven thatch panels, bark-integrated supports, vine lashings, hide accents, and weather-softened wood grain
-  render_quality: Adventure-ready handcrafted realism with strong natural integration, legible vertical depth, and modest tribal-tech detailing
+  lighting_setup: Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.
+  material_texture: Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.
+  render_quality: Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.
   spatial_distortion: None
-  atmosphere: Communal, resourceful, elevated, ecological, vigilant, and gently ceremonial
-  key_features: Interlinked rope bridges, radial treetop platforms, trunk-clamped walkways, lookout nests, rope-ladder transitions, thatched hut clusters, and suspended lantern chains
+  atmosphere: Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.
+  key_features: Puentes de cuerda enlazados, plataformas radiales, pasarelas ceñidas al tronco y nidos de observación elevados.
   creative_brief: >-
-    Preserve a style grammar of canopy-native tribal architecture: elevated
-    wooden platforms, rope-suspension circulation, and full structural respect
-    for living trees should define the preset across different scenes.
+    Construye una gramática tribal-canopy transferible basada en plataformas
+    elevadas, suspensión por cuerda y respeto estructural al árbol vivo, sin
+    fijarse a una escena concreta.
 avoidRules:
   - metal
 assets:

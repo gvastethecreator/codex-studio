@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Cozy pixel-art for social adventure hub.
-  subject_treatment: Charismatic NPCs with clear and animatable silhouettes.
-  color_and_tone: Warm palette of wood, copper and candles.
-  lighting_and_shadow: Soft interior lighting with gentle contrast.
-  texture_and_material: Clean pixel clusters and controlled noise.
-  camera_and_composition: Side view of room with points of interest.
-  atmosphere_and_mood: Cozy, friendly and full of secrets.
-  rendering_and_quality: Tileable background with excellent readability.
+  aesthetic: Pixel-RPG hub social de 16-bit, centrado en loops de quest, comercio y descanso narrativo.
+  subject_treatment: NPCs por arquetipo (quest giver, vendor, lore) con silueta de tile y animación idle/readable.
+  color_and_tone: Madera cálida, cobre, velas y acentos de UI diegética para POIs.
+  lighting_and_shadow: Iluminación interior suave en banding de píxel, con contraste suficiente para navegación.
+  texture_and_material: Clusters limpios, dithering controlado y tiles modulares sin ruido ambiguo.
+  camera_and_composition: Side-view de hub con circulación clara entre menú, tienda, crafting y salida de mapa.
+  atmosphere_and_mood: Acogedora, social y curiosa, con sensación de progreso seguro.
+  rendering_and_quality: Pixel pipeline de alta legibilidad con tileset reusable y jerarquía visual por interacción.
 avoidRules:
   - watermark
   - text

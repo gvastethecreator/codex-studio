@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Urban cool, sharp tailoring, neon skyline tension, action-comedy rhythm, tailored suits, cityscape windows, retro firearm styling
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Slick, streetwise, sharp, charismatic
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Tailored suits cut through the neon-drenched night as a sharp-eyed detective stalks skyline-window corridors where every reflection hides a clue. The rhythm bounces between deadpan comedy and gun-barrel intensity, bold linework wrapping each character in the effortless cool of a city that raised them.
+  aesthetic: Policial urbano retro con filo cómico, sastrería impecable y tensión de investigación nocturna.
+  form_and_line: Trazo cel preciso de detective-action, acting seco y blocking de equipo en ciudad vertical.
+  color_palette: Cobalto nocturno, neón rosa-controlado, ámbar de interior y grafito metropolitano.
+  lighting_setup: Contraste de vidriera y calle, reflejos en ventanal y key dirigida para lectura de pista.
+  material_texture: Tejido de traje, metal de arma vintage, vidrio lluvioso y grano cinematográfico pulcro.
+  render_quality: Acabado broadcast 80s con equilibrio entre carisma procedural y ritmo de persecución.
+  spatial_distortion: Profundidad de avenida y azotea, con encuadres de vigilancia, emboscada y resolución rápida.
+  atmosphere: Elegante, callejera, afilada, magnética.
+  key_features: Siluetas de traje, neón de expediente nocturno, acción compacta y humor de dupla investigadora.
+  creative_brief: Diseña una gramática reusable de detective-action retro para cualquier sujeto, combinando sofisticación urbana, dinamismo táctico y timing irónico.
 avoidRules:
   - realistic
   - 3d render

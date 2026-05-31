@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 80s postmodern room, Italian radical design, Sottsass irreverence, anti-taste manifesto
-  form_and_line: Squiggles and triangles, totemic shelves, asymmetrical bookcases, confetti geometry, playful offsets
-  color_palette: Pastel + Black/White pattern, Bubblegum Pink, Teal, Traffic Yellow, Vivid Orange
-  lighting_setup: Bright studio, neon accents, colored bulb glow, gallery-track spots, plastic-filtered light
-  material_texture: Laminate, plastic, terrazzo chip, printed Formica, glossy enamel, rubber
-  render_quality: Playful, weird, retro, radical-postmodern, joyous clash, ironic surface
-  spatial_distortion: Asymmetry
-  atmosphere: Fun, chaotic, art, rebellious, child-like, design manifesto energy
-  key_features: Bacterial pattern, asymmetrical shelving, squiggle mirror, color-blocked surfaces, totemic plinths
-  creative_brief: Squiggles disrupt the tyranny of the straight line, color blocking declares war on beige conformity. Shelves tilt at impossible angles like the whole room just discovered it has a sense of humor. Design becomes manifesto, every laminate surface a joke told at the expense of seriousness.
+  aesthetic: Postmodernismo Memphis radical, lúdico e irreverente, orientado al choque visual deliberado.
+  form_and_line: Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos provocativos.
+  color_palette: Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja vivo.
+  lighting_setup: Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto contraste.
+  material_texture: Formica impresa, plástico brillante, esmalte, goma y terrazo en escala juguetona.
+  render_quality: Clash postmoderno legible, irónico y energético sin perder estructura formal.
+  spatial_distortion: Asimetría intencional con jerarquía por color y geometría de alto impacto.
+  atmosphere: Rebelde, festiva, anti-solemnidad y manifiesto de diseño.
+  key_features: Patrones bacterianos, espejos squiggle, estanterías descentradas, bloques cromáticos y objetos totemizados.
+  creative_brief: >-
+    Define una gramática Memphis transferible donde asimetría, patrón gráfico y
+    color confrontativo sean reglas estructurales. Debe conservar ironía y
+    energía manifiesto sin caer en caricatura decorativa superficial.
 avoidRules:
   - boring
   - beige

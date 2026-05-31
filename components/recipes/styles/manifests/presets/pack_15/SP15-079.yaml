@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Courtyard-centric plan with layered treatment wings.
   atmosphere: Care, trust, and shared resilience.
   key_features: Moonwater basins, med pods, and public health kiosks.
-  creative_brief: A lunarpunk clinic where medicine is embedded in daily public space.
+  creative_brief: >-
+    Preserve moonwater clinic-arcade grammar as a reusable style system:
+    courtyard-integrated public care, hydrothermic trust infrastructure, and
+    community health governance should remain coherent across subjects.
 avoidRules: [photoreal, dystopian-lab, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-079.webp }
 attributes:

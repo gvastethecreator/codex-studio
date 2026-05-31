@@ -13,16 +13,16 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Classic samurai anime set in a mountain temple.
-  form_and_line: Elegant linework, ceremonial stance, and precise katana handling.
-  color_palette: Stone gray, lacquered red, and midnight blue.
-  lighting_setup: Cool side lighting with warm lantern accents.
-  material_texture: Aged wood, wet stone, and polished steel.
-  render_quality: Restrained, narrative-focused illustration.
-  spatial_distortion: Corridor depth with centered dramatic tension.
-  atmosphere: Honor, tense calm, and an imminent duel.
-  key_features: Torii gate, unsheathed katana, wind in the haori.
-  creative_brief: Capture the silent instant before the duel, charged with intent.
+  aesthetic: Prestige samurai minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.
+  form_and_line: Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around weapon-bearing limbs to amplify intent.
+  color_palette: Slate mineral neutrals, lacquer crimson accents, and indigo night tones with sparse warm punctuation.
+  lighting_setup: Raking lateral key with low lantern bounce, keeping facial planes half-obscured and blade edges selectively highlighted.
+  material_texture: Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished steel micro-glints.
+  render_quality: High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.
+  spatial_distortion: Axial temple perspective with compressed midground, creating a pressure chamber effect around opposing vectors.
+  atmosphere: Ceremonial tension, disciplined breath control, and the sensation that motion is being withheld by code.
+  key_features: Static-ready stance geometry, controlled sleeve and haori wind cues, ritual thresholds, and line-of-sight dominance.
+  creative_brief: Build a reusable pre-duel grammar for any subject by prioritizing poised silhouettes, selective steel highlights, and compositional stillness that feels seconds away from release.
 avoidRules:
   - photoreal
   - modern-firearms

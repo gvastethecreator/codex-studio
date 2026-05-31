@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Champion trial in a coliseum of living obsidian.
-  subject_treatment: Heroic gladiators with rune-forged armor.
-  color_and_tone: Volcanic black, inner red, and muted gold.
-  lighting_and_shadow: Glowing fissures and ritual spotlights.
-  texture_and_material: Glassy stone, forged metal, and sand.
-  camera_and_composition: Circular arena centered on the duelists.
-  atmosphere_and_mood: Brutal honor and ancestral spectacle.
-  rendering_and_quality: Key art de boss challenge.
+  aesthetic: Arena-combat ritual en coliseo de obsidiana viva, orientado a duelos por fases y lectura de patrón.
+  subject_treatment: Gladiadores heroicos con armadura rúnica, perfiles de alcance y tempo claramente diferenciados.
+  color_and_tone: Negro volcánico, rojo interno y oro apagado para jerarquía de amenaza y estatus.
+  lighting_and_shadow: Fisuras incandescentes y focos rituales que marcan zonas de castigo y apertura.
+  texture_and_material: Piedra vítrea, metal forjado, arena abrasiva y grietas activas por energía.
+  camera_and_composition: Arena circular con foco en duelistas, límites de ring y hazards periféricos.
+  atmosphere_and_mood: Brutal, honorable y ancestralmente espectacular.
+  rendering_and_quality: Boss-trial key-art gameplay-first con cues nítidas de fase, telegraph y oportunidad.
 avoidRules:
   - watermark
   - text

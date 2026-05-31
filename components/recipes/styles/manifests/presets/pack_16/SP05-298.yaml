@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Nightlife romance rendered as a whimsical city odyssey, pub interiors, surreal side quests, warm chaos and literary flirtation rushing through one magical evening
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Tipsy, whimsical, urban, affectionate
-  key_features: Night-street glow, pub clutter, festival-night momentum, literary props, whimsical encounter staging
-  creative_brief: One Kyoto evening stretches into an impossible odyssey where every pub doorway opens onto a different genre of joy. Literary references tumble through the streets like drunk philosophers chasing a girl who chases nothing but the night itself. Romance is not a destination but the particular velocity of a city in love with its own strangeness.
+  aesthetic: Comedia romántica nocturna de deriva urbana, con tono etílico-lúdico y surrealismo social de encuentros encadenados.
+  form_and_line: Trazo ágil de comedia de situación, siluetas expresivas de tránsito peatonal y staging coral de ciudad festiva.
+  color_palette: Naranjas de farol, rojos de izakaya, violetas nocturnos y verdes de neón suave para ritmo de ronda nocturna.
+  lighting_setup: Iluminación nocturna cálida por locales y señalética, con contrastes dinámicos que favorecen sensación de aventura improvisada.
+  material_texture: Madera de bar, vidrio empañado, papel impreso de afiches y pavimento urbano con brillo de noche húmeda.
+  render_quality: Acabado premium de odisea urbana ligera, con legibilidad alta en multiescena y pulso narrativo continuo.
+  spatial_distortion: Ciudad-laberinto amable con compresión de calle y expansión episódica por puertas y desvíos narrativos.
+  atmosphere: Etílica, caprichosa, urbana, afectuosa.
+  key_features: Calles nocturnas vibrantes, interiores de pub cargados, iconos literarios y encuentros excéntricos en cadena.
+  creative_brief: Construye una gramática reusable de odisea nocturna romántica para cualquier sujeto, combinando luz de barrio, caos cálido y deriva episódica con humor.
 avoidRules:
   - realistic
   - 3d render

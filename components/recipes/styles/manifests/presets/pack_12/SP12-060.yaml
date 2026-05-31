@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Final defense in a hollow basilica of ancient stone.
-  subject_treatment: Exhausted guardians against the final wave.
-  color_and_tone: Dust gray, deep red, and muted gold.
-  lighting_and_shadow: Top light broken by shattered stained glass.
-  texture_and_material: Rubble, fractured marble, and damaged steel.
-  camera_and_composition: Central staircase as the defensive line.
-  atmosphere_and_mood: Heroic sacrifice and maximum tension.
-  rendering_and_quality: Narrative climax keyframe.
+  aesthetic: Last-stand siege en basílica hueca, orientado a defensa escalonada y gestión de recursos finales.
+  subject_treatment: Guardianes exhaustos vs oleada final, con lectura clara de rol y estado crítico.
+  color_and_tone: Gris polvo, rojo profundo y oro apagado para dramatizar desgaste y resistencia.
+  lighting_and_shadow: Luz cenital rota por vitrales fracturados que marca zonas de presión.
+  texture_and_material: Escombro, mármol quebrado, acero dañado y restos de fortificación improvisada.
+  camera_and_composition: Escalinata central como línea de defensa con flancos y puntos de colapso legibles.
+  atmosphere_and_mood: Heroica, sacrificial y al máximo de tensión.
+  rendering_and_quality: Narrative-climax gameplay art con telegraph claro de oleadas, objetivo y supervivencia.
 avoidRules:
   - watermark
   - text

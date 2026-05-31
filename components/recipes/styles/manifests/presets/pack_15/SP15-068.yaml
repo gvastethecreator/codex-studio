@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Elegant boarding terminal for long-range ray cruisers.
-  form_and_line: Curved lounges, docking tubes, and gate pylons.
-  color_palette: Violet, cyan, and pearl white.
-  lighting_setup: Soft terminal glow and nebula backlight through glass.
-  material_texture: Gloss composites, polished rails, and transparent membranes.
-  render_quality: Premium transit concept scene.
-  spatial_distortion: Gate depth toward anchored cruisers.
-  atmosphere: Anticipation and interstellar sophistication.
-  key_features: Boarding bridges, mission lounges, and launch boards.
-  creative_brief: A raypunk terminal where departure feels like entering myth.
+  aesthetic: Luxurious departure myth where boarding infrastructure feels like a theatrical threshold into impossible distance.
+  form_and_line: Crescent lounges, translucent docking tubes, gate-pylon crowns, pearl ribs, and cruiser silhouettes staged like idols.
+  color_palette: Nebula violet, ion cyan, pearl white, soft chrome, and tiny rose status lights.
+  lighting_setup: Soft terminal glow, nebula backlight through glass, under-seat cyan halos, and pearl rimlight on gate crowns.
+  material_texture: Gloss composites, polished rails, transparent membranes, padded travel leather, and frosted itinerary glass.
+  render_quality: Premium transit concept scene with elegant pacing and strong threshold design.
+  spatial_distortion: Gate-depth perspective leading through lounges, tubes, and glass toward mythic departure silhouettes.
+  atmosphere: Anticipation, interstellar sophistication, quiet anxiety, and expensive wonder.
+  key_features: Boarding bridge crescents, mission lounge alcoves, launch-board constellations, docking tube membranes, and cruiser-idol views.
+  creative_brief: >-
+    Push nebula boarding-lounge as reusable style: turn any subject into a
+    polished threshold between comfort and cosmic risk, with pearl curves,
+    translucent gates, and departure myth.
 avoidRules: [photoreal, medieval, cyberpunk-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-068.webp }
 attributes:
   negativePrompt: photoreal, medieval, cyberpunk-grime, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

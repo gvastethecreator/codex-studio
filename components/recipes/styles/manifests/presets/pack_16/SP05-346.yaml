@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: High-school basketball rendered as illusion-speed spectacle, ghost-like passing lanes, aces with impossible momentum, dramatic indoor arenas, rivalry elevated into tactical myth
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Flashy, strategic, high-speed, competitive
-  key_features: Pass-trail cues, indoor-arena depth, player duels, impossible court angles, team-vs-star contrast
-  creative_brief: The pass was already there before anyone looked. Basketball elevated to illusion, where speed wears the mask of invisibility and the court becomes a magic trick. Presence is proved by what arrives, not by what was seen.
+  aesthetic: Basket táctico de velocidad ilusoria, orientado a circulación de balón invisible y ruptura de marca por timing.
+  form_and_line: Líneas rápidas de pase, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.
+  color_palette: Azules eléctricos, negros de contraste de arena y acentos cian para telegraph de circulación.
+  lighting_setup: Iluminación indoor dramática con highlights selectivos en balón, manos y línea de pase.
+  material_texture: Parquet pulido reflectivo, malla de aro definida, jersey técnico y trazas de movimiento estilizadas.
+  render_quality: Acabado deportivo de alta precisión con claridad de jugada colectiva vs estrella individual.
+  spatial_distortion: Compresión de cancha y estiramiento direccional en trayectorias de pase para lectura de sorpresa.
+  atmosphere: Estratégica, veloz y tácticamente deslumbrante.
+  key_features: Trails de pase, duelos perimetrales, cambios de dirección bruscos y contraste team-play vs ace-play.
+  creative_brief: >-
+    Formula una gramática reusable de phantom-pass-basketball donde timing,
+    ocultación de intención y lectura táctica de líneas de pase sean el núcleo
+    estilístico, no una jugada concreta.
 avoidRules:
   - realistic
   - 3d render

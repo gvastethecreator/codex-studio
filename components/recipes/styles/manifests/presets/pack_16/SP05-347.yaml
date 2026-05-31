@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Cycling-road obsession, mountain switchbacks, sweat and willpower, colorful jerseys, road-race camaraderie and insanity rendered through exaggerated climb intensity
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Exhausted, triumphant, obsessive, fast
-  key_features: Bike lean angles, hill-climb perspective, peloton spacing, jersey color separation, screaming uphill face acting
-  creative_brief: The mountain does not test your legs, it interrogates your soul. Every pedal stroke is a scream the road absorbs, every switchback a negotiation with quitting. Triumph is not arrival but refusal to unclip.
+  aesthetic: Ciclismo de montaña shonen orientado a escalada extrema, resistencia mental y dinámica de pelotón.
+  form_and_line: Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de pedaleo de alta cadencia.
+  color_palette: Colores de escuadra saturados sobre asfalto oscuro, verdes de ladera y cielos fríos de altura.
+  lighting_setup: Luz abierta de carretera con contraluces de pendiente y flare suave de altitud.
+  material_texture: Asfalto rugoso, fibra de cuadro ligero, tejido técnico de jersey y polvo fino en neumático.
+  render_quality: Frame de ruta premium con legibilidad de escalada, drafting y ruptura de pelotón.
+  spatial_distortion: Perspectiva de switchback con compresión de pendiente y elongación de curva para dramatizar ascenso.
+  atmosphere: Exhausta, obsesiva y triunfal por resistencia.
+  key_features: Ángulos de bici agresivos, spacing de pelotón, gestualidad de esfuerzo y topología de puerto ascendente.
+  creative_brief: >-
+    Define una gramática reusable de uphill-breakaway donde pendiente,
+    resistencia y lectura de pelotón estructuren la identidad visual sin quedar
+    fijados a un momento narrativo.
 avoidRules:
   - realistic
   - 3d render

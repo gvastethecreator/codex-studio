@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Jazz-noir bounty hunting, smoke-hazed interiors, used-future ships, emotional cool, melancholy drift between stylish gunfights and empty late-night meals
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Cool, lonely, jazzy, bittersweet
-  key_features: Smoke haze, space-western interiors, sharp suit silhouettes, jazzy body language, bounty-hunter framing
-  creative_brief: A blues riff drifting through vacuum, cigarette smoke curling in zero gravity, a crew of broken people chasing bounties they can never cash in for the one thing they actually want. The ship is a home that is always running, the past is luggage nobody can jettison, and every gunfight is scored by a lone saxophone mourning something that was lost before the opening credits rolled. You are gonna carry that weight.
+  aesthetic: Space noir jazzístico con elegancia cansada, cazarrecompensas melancólicos y futurismo usado de tono íntimo.
+  form_and_line: Línea 90s precisa de silueta cool, acting mínimo de fatiga emocional y composición de duelo urbano-espacial.
+  color_palette: Ámbares ahumados, azules nocturnos, rojos apagados y verdes desaturados de cabina vivida.
+  lighting_setup: Low-key contrastado con pools de luz interior, rim de neón y humo como difusor dramático.
+  material_texture: Metal gastado de nave, cuero de asiento, grano cinematográfico y superficies de diner nocturno.
+  render_quality: Acabado premium noventero con lectura sofisticada de acción breve y vacío emocional prolongado.
+  spatial_distortion: Framing de corredor y mesa vacía, profundidad de nave-hogar y tensión de pasado que invade el presente.
+  atmosphere: Cool, solitaria, jazzy, agridulce.
+  key_features: Humo de cigarro, traje y pistola estilizados, interiores usados y pausa melódica entre tiroteos.
+  creative_brief: Define una gramática reusable de noir espacial melancólico para cualquier sujeto, combinando groove jazz, desgaste vital y violencia elegante.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Play-structure inflatable architecture language with pressurized soft-volume massing, carnival color blocking, and temporary-event spatial identity
-  form_and_line: Bulging pneumatic tubes, welded panel segmentation, rounded turret lobes, soft crenellation bumps, and hose-fed anchoring geometry
+  aesthetic: Arquitectura inflable de juego con masa blanda presurizada, color blocking festivo y espacialidad de evento temporal.
+  form_and_line: Tubos neumáticos abultados, segmentación soldada, lóbulos redondeados de torre y geometría de anclaje por manguera.
   color_palette: High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents
-  lighting_setup: Outdoor diffuse sun with strong vinyl specular hits, translucent panel glow, localized party practicals, and subtle subsurface edge bloom
-  material_texture: Glossy PVC skin, heat-weld seam ridges, taut inflated membranes, wrinkle transitions at load points, nylon tie-down details, and blower-interface fittings
-  render_quality: Toy-like yet structurally legible inflatable rendering with high material fidelity, controlled sheen, and clear temporary-installation character
+  lighting_setup: Sol difuso exterior con especulares fuertes en vinilo, glow translúcido de panel y bloom suave en borde inflado.
+  material_texture: Piel PVC glossy, crestas de soldadura térmica, membranas tensas, arrugas en carga y herrajes de blower.
+  render_quality: Render inflable legible y juguetón con fidelidad material alta y brillo controlado de instalación temporal.
   spatial_distortion: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
-  atmosphere: Energetic, playful, kinetic, festive, and unmistakably temporary
-  key_features: Pressurized tubular frame, heat-weld seam grid, vivid panel zoning, mesh safety windows, blower-fed inflation node, and soft-impact edge profiles
+  atmosphere: Energética, cinética y festiva, inequívocamente temporal.
+  key_features: Bastidor tubular presurizado, retícula de costura térmica, zonificación vívida, ventanas mesh y nodos de inflado visibles.
   creative_brief: >-
-    Preserve inflatable-architecture grammar as a reusable style system:
-    pressure-rounded massing, welded vinyl seam topology, and saturated modular
-    color zoning must stay consistent independent of subject matter.
+    Construye un sistema reusable de arquitectura inflable con masa redondeada
+    por presión, topología de costura soldada y zonificación cromática saturada
+    consistente entre sujetos.
 avoidRules:
   - hard edges
 assets:

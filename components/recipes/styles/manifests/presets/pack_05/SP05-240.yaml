@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Graphic neon geometry, fire rescue mecha, angular city infernos, theatrical hero rivalry, poster-bright color blocking and anti-naturalistic heat
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Blazing, graphic, rebellious, maximal
-  key_features: Tri-color flame blocks, angular mecha silhouettes, rescue iconography, graphic city infernos, poster-like action poses
-  creative_brief: Tri-color flames eat through angular cities while rescue mecha pose like graphic-novel saints against an inferno that refuses naturalism. Rebellion is rendered in flat color blocks and perfect diagonal lines. Burn bright, burn deliberate, burn as protest.
+  aesthetic: Incendio geométrico anti-naturalista con mecha de rescate, rivalidad teatral y lenguaje gráfico tricolor de máxima intensidad.
+  form_and_line: Aristas diagonales agresivas, silueta de bombero-mecha icónica y composición de póster con bloques flameados.
+  color_palette: Cian intenso, magenta caliente, amarillo ácido, negro carbón y blanco de choque térmico.
+  lighting_setup: Llama plana de alto croma, backlight de incendio urbano y rims duros para separar masas en conflicto.
+  material_texture: Acabado gráfico semiplano, metal de respuesta térmica, hollín estilizado y overlays de energía lineal.
+  render_quality: Acción maximalista de lectura instantánea, con color-blocking extremo y control formal de caos ígneo.
+  spatial_distortion: Perspectiva en diagonales violentas y compresión dramática para amplificar colisión heroica.
+  atmosphere: Ardiente, rebelde y estruendosa, de protesta visual en combustión.
+  key_features: Flama tricolor, mecha angular de rescate, ciudad infernal estilizada y poses de santidad combativa.
+  creative_brief: >-
+    Define una gramática tri-fire-riot reusable donde geometría incendiaria,
+    cromática plana extrema e iconografía de rescate articulen una épica
+    contestataria, clara y transferible.
 avoidRules:
   - realistic
   - 3d render

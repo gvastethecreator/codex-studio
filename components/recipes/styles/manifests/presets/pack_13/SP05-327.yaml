@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Dramatic freeze-frame postcard shot, glowing highlights, emotional overstatement, roses and stars suspended in time, classic melodrama distilled into one burning still
-  form_and_line: Crisp classic contour, glamour-highlight accents, melodrama-weighted inking
+  aesthetic: Melodrama clásico de postcard-memory, con congelado emocional y glamour luminoso de alto voltaje romántico.
+  form_and_line: Contorno clásico nítido, inking dramático cargado y acentos de brillo tipo estallido sentimental.
   color_palette: Sepia gold, crimson rose, cream white, royal blue, amber light, filmic mauve
-  lighting_setup: Spotlit emotional key, highlight flares, freeze-frame glare, theatrical backlight
-  material_texture: Filmic grain, cel highlight bloom, airbrushed glow, paper postcard softness
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Key teatral en spot, flares en highlight, glare de congelado y contraluz de escenario melodramático.
+  material_texture: Grano fílmico suave, bloom cel, brillo aerografiado y tactilidad de papel postal.
+  render_quality: Frame icónico de memoria dramática con composición concentrada y claridad de gesto emocional.
   spatial_distortion: Heroic freeze poses, diagonally framed bodies, symbolic overlay space, concentrated emotional composition
-  atmosphere: Melodramatic, nostalgic, luminous, intense
-  key_features: Postcard freeze frame, dramatic highlight lines, symbolic floral overlays, emotional stare-downs, retro melodrama staging
-  creative_brief: Time stops but emotion accelerates. A single crystalline moment holds all the weight of melodrama, glowing like a postcard remembered too intensely. Roses and stars are frozen witnesses to a feeling that will not fade.
+  atmosphere: Nostálgica, intensa y luminosa, suspendida en un instante absoluto.
+  key_features: Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y stare-down emocional.
+  creative_brief: >-
+    Construye una gramática postcard-freeze reusable donde el tiempo se detiene
+    pero la emoción escala: brillo glam, símbolos florales y encuadre de
+    melodrama deben sostener identidad sin escena fija.
 avoidRules:
   - still
   - calm

@@ -51,7 +51,7 @@ graph TD
 - `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
 - `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection and also exposes the shared `buildStudioViewportController()` presentation seam, so route view, recipe props, and dock visibility stop being rebuilt inline in `useStudioShell.ts`.
 - `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
-- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules instead of leaving that wiring inline in `useStudioShell.ts`.
+- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules, then publishes grouped `settingsModule` data into `StudioSystemOverlays` instead of widening a flat settings prop surface.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
 - `apps/local-server/src/settingsRoutes.ts`: groups editable `Studio Settings` read/patch HTTP behavior so `appFactory.ts` keeps runtime composition concerns.
 - `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
@@ -71,7 +71,7 @@ graph TD
 
 1. The user works in the UI: prompt, recipe, attachments, batch count, provider, and workspace.
 2. `useGenerationPipeline` delegates execution to the local generation runner.
-3. The runner resolves the Recipe Module, creates a `batch-*` local run id, builds provider-independent Generation Task Specs with `spec-*` ids, creates one or more Persistent Jobs, and waits through the shared SSE stream.
+3. The runner resolves the Recipe Module, creates a `batch-*` local run id, builds provider-independent Generation Task Specs with `spec-*` ids and compact quality intent, creates one or more Persistent Jobs, and waits through the shared SSE stream.
 4. The backend worker executes each job through the Provider Boundary.
 5. Codex remains the primary adapter and runs turns against `codex app-server`.
 6. External adapters compile the same Generation Task Spec into compact provider-specific inputs and only execute when concrete runtime preflight passes.
@@ -102,6 +102,7 @@ The Provider Boundary keeps Generation Tasks provider-independent:
 
 - Recipe Modules produce Generation Task Specs.
 - Providers compile specs into compact provider-specific Compiled Provider Inputs.
+- Quality intent lives in Generation Task Specs and compiles into provider prompts before Recipe Provider Directives.
 - Provider Secrets remain outside SQLite-backed Studio Settings.
 - Providers must return the same local contract: job state, Local Assets, Catalog Entries, metadata, logs, and diagnostics.
 - Planned providers stay blocked until a concrete executor can produce or import Local Assets.

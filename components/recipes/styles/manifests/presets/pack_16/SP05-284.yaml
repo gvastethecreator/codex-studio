@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Brass robots, cloud-sea wonder, floating island myth, children against militarized greed, steampunk adventure carried by open skies and hand-painted warmth
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Adventurous, skybound, wondrous, brave
-  key_features: Floating-island vistas, brass robot motifs, cloud-sea backdrops, child-duo silhouettes, sky-adventure motion
-  creative_brief: Brass limbs reaching through clouds toward a home that floats above all the world greed, a testament to civilizations that chose the sky over conquest. Cloud-sea currents carry a girl and boy through ruins that hum with ancient memory, their adventure a rebuttal to every general who mistakes power for purpose. The floating island is not a destination but a promise written in laputa stone and held aloft by belief.
+  aesthetic: Aventura aero-mecánica de maravilla clásica, con espíritu de descubrimiento infantil y contraste entre tecnología noble y ambición militar.
+  form_and_line: Contornos claros de ingeniería retro, siluetas de vuelo dinámicas y curvas orgánicas que suavizan la mecánica de latón.
+  color_palette: Cielos cerúleos amplios, dorados envejecidos de metal, verdes de ruina suspendida y blancos de nube brillante.
+  lighting_setup: Iluminación de gran altitud con contraluces solares, volumen de nubes y destellos selectivos sobre superficies metálicas.
+  material_texture: Latón pulido y oxidado, piedra aérea erosionada, vegetación colgante y telas de aventura con desgaste funcional.
+  render_quality: Acabado premium de aventura cinematográfica, lectura limpia de escala aérea y claridad de acción en planos abiertos.
+  spatial_distortion: Perspectiva vertical expansiva con sensación de caída y ascenso continuo entre estratos de nubes.
+  atmosphere: Maravillosa, valiente, libre, expedicionaria.
+  key_features: Islas flotantes, robots de latón benevolentes, dúo juvenil en tránsito aéreo y ruinas tecnológicas en altura.
+  creative_brief: Construye una gramática reusable de aventura celeste donde cualquier sujeto se lea como explorador de civilizaciones suspendidas mediante luz de altura, metales retro y composición vertical abierta.
 avoidRules:
   - realistic
   - 3d render

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Hazard-quarry escape setpiece mixing industrial extraction infrastructure with predatory myth-creature territorial pressure.
-  subject_treatment: Improvisational survival specialists, resource-starved escape teams, and basilisk threat silhouettes governing path decisions.
-  color_and_tone: Crushed limestone whites, venomous green emissions, oxidized rust browns, and dust-muted earth midtones.
-  lighting_and_shadow: Broken overhead shafts, crane-cast lattice shadows, particulate haze diffusion, and danger-pool luminance pockets.
-  texture_and_material: Fractured quarry faces, tensioned chain hardware, dry clay ruts, cable abrasion wear, and rubble-edge sharpness.
-  camera_and_composition: Ascending zigzag escape topology with vertical risk layering, chokepoint staging, and route-readability emphasis.
-  atmosphere_and_mood: Tactical panic, improvised ingenuity, and escalating pursuit stress.
-  rendering_and_quality: Adventure-mission concept quality with clear traversal logic, enemy-territory signaling, and momentum-focused environmental storytelling.
+  aesthetic: Escape-setpiece en cantera hostil, centrado en traversal vertical, gestión de riesgo y persecución de basilisco.
+  subject_treatment: Especialistas de supervivencia improvisada con lectura de recursos escasos y prioridad de escape.
+  color_and_tone: Blanco caliza, verde venenoso, óxido marrón y tierras desaturadas para señal de peligro.
+  lighting_and_shadow: Lucernarios rotos, sombras de grúa y niebla particulada con bolsillos luminosos de amenaza.
+  texture_and_material: Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.
+  camera_and_composition: Topología zigzag ascendente con capas de riesgo y chokepoints legibles.
+  atmosphere_and_mood: Pánica, ingeniosa y de estrés ascendente.
+  rendering_and_quality: Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.
 avoidRules:
   - watermark
   - text

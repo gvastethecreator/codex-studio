@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Baseball-pitch precision, catcher signals, summer tournament pressure, dirt and dust, battery chemistry and bullpen urgency framed through shonen sports resolve
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Focused, heated, disciplined, youthful
-  key_features: Pitching-form anatomy, catcher mitt focal point, diamond geometry, dugout tension, summer-stadium glare
-  creative_brief: Summer heat thickens the air between pitcher and catcher. Dust hangs in the sunlight like suspended judgment, and the mound is an island of absolute will. The signal is a secret the whole stadium feels.
+  aesthetic: Béisbol de torneo escolar centrado en batería pitcher-catcher, control de zona y tensión de inning decisivo.
+  form_and_line: Mecánica de lanzamiento detallada, lectura de señas y anatomía de transferencia cinética precisa.
+  color_palette: Azules de uniforme, tierra rojiza de diamante, blancos de cal y dorado cálido de verano.
+  lighting_setup: Sol alto de estadio con rebote en polvo y contraluz de tribuna sobre montículo.
+  material_texture: Arcilla seca, cuero de guante, costura de pelota, tela técnica y metálico de dugout.
+  render_quality: Sports frame de alta nitidez con prioridad visual en señal, release y recepción.
+  spatial_distortion: Perspectiva pitcher-to-plate con compresión dramática de distancia y foco en trayectoria.
+  atmosphere: Concentrada, calurosa y disciplinadamente juvenil.
+  key_features: Foco en mitt receptor, geometría de diamante, tensión de banca y postura de montículo.
+  creative_brief: >-
+    Construye una gramática reusable de mound-duel-baseball donde diálogo
+    pitcher-catcher, presión de torneo y materialidad de diamante sostengan
+    identidad visual sin atarse a una jugada única.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Cheerful school-club energy with cosmological instability humming underneath, bright clubroom compositions, eccentric youth charisma, sudden genre fracture between slice-of-life and godlike anomaly
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
-  atmosphere: Playful, uncanny, bright, meta
-  key_features: Clubroom clutter, eccentric leader posing, school-lifestyle brightness, reality-bend hints, ensemble body language
-  creative_brief: A schoolgirl who is god without knowing it, a clubroom where the ordinary vibrates at mythic frequency. Boredom bends reality sideways, and the most dangerous force in the universe is a teenage whim dressed in a sailor uniform. Every beam of afternoon light carries the faint tremor of creation on the verge of rewriting itself.
+  aesthetic: Slice-of-life escolar con anomalía cosmológica latente, donde comedia de club y metafísica inestable conviven en el mismo plano.
+  form_and_line: Trazado digital pulcro de ensemble juvenil, acting excéntrico de líder central y staging de comedia con quiebre súbito.
+  color_palette: Amarillos de aula, azules vivos de uniforme, acentos primarios pop y destellos extraños de ruptura dimensional.
+  lighting_setup: Luz de tarde escolar brillante con gradientes suaves y micro-anomalías lumínicas que sugieren realidad maleable.
+  material_texture: Utilería de clubroom abarrotada, superficies limpias de era digital y ruido leve de broadcast 2000s.
+  render_quality: Acabado premium meta-escolar con legibilidad alta del tono híbrido entre cotidianeidad y amenaza cósmica.
+  spatial_distortion: Espacio de aula estable con microdesplazamientos perceptivos cuando emerge la capa de distorsión narrativa.
+  atmosphere: Lúdica, inquietante, brillante, meta.
+  key_features: Clubroom caótico, líder carismática dominante, ensemble reactivo y señales de reality bend en fondo.
+  creative_brief: Crea una gramática reusable de comedia escolar cosmológica para cualquier sujeto, equilibrando energía adolescente y ruptura de realidad de bajo umbral.
 avoidRules:
   - realistic
   - 3d render

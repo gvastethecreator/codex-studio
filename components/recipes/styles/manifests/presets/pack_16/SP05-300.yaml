@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Poster-bright rescue spectacle, triangular flames, anti-naturalistic mecha firefighting, operatic rivals, maximal color-block motion and modern theatrical bravado
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Blazing, theatrical, graphic, triumphant
-  key_features: Triangular fire shapes, rescue-mecha silhouettes, poster-color blocking, rival hero staging, maximal graphic motion
-  creative_brief: Fire does not consume but announces, triangular flames reshaping the world into poster-sized declarations of impossible will. Mecha firefighters move through the inferno like brushstrokes on a canvas that refuses naturalism, every rescue a graphic choice. Rivalry ignites into opera, and the stage is a burning city that asks not to be saved but to be spectacular.
+  aesthetic: Espectáculo heroico hipergráfico de rescate mecha, con anti-naturalismo cromático y teatralidad de rivalidad en clave de póster vivo.
+  form_and_line: Contorno duro y dinámico, geometría angular dominante y siluetas de acción que privilegian impacto inmediato sobre detalle realista.
+  color_palette: Bloques intensos en cian, magenta, naranja fuego y amarillos eléctricos con negros limpios de separación gráfica.
+  lighting_setup: Iluminación extrema de incendio estilizado, contraluces violentos y flashes de alto contraste para clímax continuo.
+  material_texture: Superficies mecha lisas de acabado sintético, humo estilizado y fuego triangular tratado como forma gráfica.
+  render_quality: Acabado premium de acción maximalista con legibilidad de coreografía de rescate y jerarquía clara de héroe-antihéroe.
+  spatial_distortion: Perspectiva de gran angular heroica con deformación cinética orientada a velocidad, choque y espectáculo.
+  atmosphere: Incandescente, teatral, gráfica, triunfal.
+  key_features: Llamas triangulares, unidades de rescate mecha, color blocking extremo y staging de rivalidad operática.
+  creative_brief: Construye una gramática reusable de acción cromática mecha para cualquier sujeto, usando fuego geométrico, composición de póster y energía de rescate como eje visual.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: High-pressure striker obsession, goalbox tunnel vision, neon field psychology, ruthless individual ambition inside a locked athletic laboratory, football treated like predator ritual
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Predatory, intense, focused, manic
-  key_features: Goal-net perspective, striker body torque, glaring eye-line intensity, stadium-rush framing, ego-crisis close-ups
-  creative_brief: The penalty box is a philosophy. Ambition sharpens into weaponry under stadium neons, and the goal is not a destination but a predation. The self is forged in the tunnel between hunger and net.
+  aesthetic: Fútbol competitivo de mentalidad striker-centric, orientado a presión de definición y dominio de área.
+  form_and_line: Líneas tensas de aceleración corta, torsión corporal agresiva y postura depredadora en finalización.
+  color_palette: Azules fríos de campo técnico, neón ácido de presión psicológica y rojos de amenaza en zona de gol.
+  lighting_setup: Iluminación de estadio high-contrast con foco en caja y recorte duro sobre atacante.
+  material_texture: Césped sintético de alta fricción, red de portería marcada, textiles de alto rendimiento y sudor especular.
+  render_quality: Sports frame de intensidad máxima con lectura instantánea de duelo delantero-portero.
+  spatial_distortion: Túnel visual hacia arco, compresión de distancia final y deformación dinámica por sprint terminal.
+  atmosphere: Predatoria, obsesiva y clínicamente competitiva.
+  key_features: Perspectiva de red frontal, torque de disparo, mirada de presión y framing de último toque letal.
+  creative_brief: >-
+    Define una gramática reusable de striker-obsession donde presión de área,
+    lectura de portería y agresividad de finalización construyan identidad
+    visual transferible entre sujetos.
 avoidRules:
   - realistic
   - 3d render

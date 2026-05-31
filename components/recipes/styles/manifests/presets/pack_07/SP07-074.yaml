@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Cutaway miniature domestic architecture language with staged room-box composition, toy-scale interior curation, and handcrafted display-house precision
-  form_and_line: Open-face sectional façade removal, stacked floor plate bands, compartmental room grids, diagonal staircase connectors, and compact miniature furnishing geometry
+  aesthetic: Doméstico miniatura en corte abierto, curado por habitaciones-caja y precisión de casa de exhibición artesanal.
+  form_and_line: Fachada retirada en sección, bandas de piso apiladas, retícula de cuartos y escaleras diagonales de conexión compacta.
   color_palette: Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige bases, dusty pink highlights, and muted decorative accents
-  lighting_setup: Even display-style room lighting, gentle interior practical glow, low-contrast compartment shadows, and soft frontal illumination for sectional readability
-  material_texture: Painted miniature timber, paper wallpaper grain, tiny textile upholstery, molded toy-plastic details, glazed micro-ceramics, and satin lacquer trims
-  render_quality: High-clarity miniature cutaway rendering with disciplined room-by-room legibility, balanced decorative density, and crafted dollhouse authenticity
+  lighting_setup: Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo para lectura seccional.
+  material_texture: Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín lacados.
+  render_quality: Miniatura cutaway de alta claridad con legibilidad habitación-por-habitación y densidad decorativa balanceada.
   spatial_distortion: None
-  atmosphere: Playful, curated, intimate, orderly, and theatrically domestic
-  key_features: Open-front sectional view, stacked micro-room modules, miniature stair transitions, toy-furniture silhouette language, decorative chandelier nodes, and crisp cutaway perimeter edges
+  atmosphere: Lúdica, íntima y ordenada, con teatralidad doméstica curada.
+  key_features: Frente abierto seccionado, módulos de microcuartos apilados, transiciones de escalera y perímetros de corte nítidos.
   creative_brief: >-
-    Keep the preset anchored in dollhouse-cutaway grammar: open-face sectional
-    room stacking, miniature interior detailing, and toy-scale domestic
-    proportion logic should stay transferable across subject matter.
+    Formula una gramática reusable de dollhouse-cutaway donde apilado seccional
+    abierto, interiorismo miniatura y proporción toy-scale dominen el estilo
+    sin depender del tema específico.
 avoidRules:
   - full wall
 assets:

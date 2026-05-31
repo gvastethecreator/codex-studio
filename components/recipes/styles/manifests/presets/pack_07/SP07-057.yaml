@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Neo-Victorian industrial futurism, brass-and-steam metropolis language, speculative imperial machinery urbanism
-  form_and_line: Gear-and-pipe lattice networks, chimney skyline cadence, clocktower landmarks, dirigible-port arches, flywheel silhouettes
+  aesthetic: Futurismo industrial neo-victoriano de metrópolis a vapor y maquinaria urbana especulativa.
+  form_and_line: Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos para tráfico de dirigibles.
   color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
-  lighting_setup: Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused
-  material_texture: Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat
-  render_quality: High-detail steampunk city rendering with mechanical plausibility, atmospheric soot layering, and retro-industrial readability
+  lighting_setup: Gaslight ámbar, glow callejero difuso en smog, chispas mecánicas y ventilación de vapor visible.
+  material_texture: Metal y ladrillo, cobre remachado, panel de madera, cuero y depósito de hollín en superficie.
+  render_quality: Ciudad steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.
   spatial_distortion: None
-  atmosphere: Industrious momentum, smoky ambition, engineered spectacle, retro-progress anxiety
-  key_features: Steam-vent rhythm, brass conduit runs, clockwork facade motifs, boiler infrastructure nodes, airship traffic cues
+  atmosphere: Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.
+  key_features: Ritmo de venteo, conducciones de latón, fachadas clockwork, nodos de caldera y señales de tráfico aéreo.
   creative_brief: >-
-    Preserve steampunk identity through mechanical urban systems: steam
-    infrastructure, brass articulation, and Victorian-derived form language.
-    Keep the world inventive and dense, but reusable beyond any one city or
-    literary reference.
+    Define una gramática steampunk transferible por infraestructura de vapor,
+    articulación en latón y forma neo-victoriana. Debe ser densa e inventiva
+    sin depender de ciudad o referencia literaria única.
 avoidRules:
   - clean energy
 assets:

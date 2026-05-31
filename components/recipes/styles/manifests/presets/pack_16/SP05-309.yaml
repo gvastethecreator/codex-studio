@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Bright sci-fi fashion, disaster-prone heroines, white corridors and pink explosions, glamorous chaos in one of the most colorful 80s space-action registers
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Flashy, mischievous, poppy, explosive
-  key_features: Sci-fi fashion silhouettes, white-corridor staging, laser effects, duo dynamic posing, glam-chaos color balance
-  creative_brief: White corridors explode into pink confetti as two women armed with fashion and firepower redefine collateral beauty. Glamour is the shockwave, style the afterimage, and competence the thing that keeps them standing when the ceiling comes down. Trouble is not something they find—it is something they accessorize.
+  aesthetic: Space-action glam de dupla hiperpop, con elegancia de misión y destrucción colateral coreografiada.
+  form_and_line: Siluetas fashion dinámicas, contorno cel contundente y lenguaje de pose dual coordinada en clave de impacto.
+  color_palette: Blancos clínicos de corredor, rosas explosivos, cianes láser y acentos amarillos de advertencia pop.
+  lighting_setup: Luz interior brillante de sci-fi retro con flashes de energía y sombras planas para legibilidad de acción veloz.
+  material_texture: Corredor sci-fi pulido, textil técnico brillante, residuos de disparo láser y grano analógico televisivo.
+  render_quality: Acabado premium retro-glam con claridad de dúo protagonista y balance entre espectacularidad y control.
+  spatial_distortion: Corredores de fuga y combate con perspectiva lineal acelerada para subrayar velocidad y destrucción elegante.
+  atmosphere: Flashy, traviesa, pop, explosiva.
+  key_features: Dúo heroico glam, pasillos blancos de misión, efectos láser coloridos y composición de caos coreografiado.
+  creative_brief: Diseña una gramática reusable de acción-glam en dupla para cualquier sujeto, fusionando moda sci-fi, croma explosivo y sincronía táctica entre dos protagonistas.
 avoidRules:
   - realistic
   - 3d render

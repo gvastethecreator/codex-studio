@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: San Francisco house, candy-colored heritage, architectural confection, gingerbread fantasy
-  form_and_line: Gingerbread trim, spindle work, fish-scale shingles, bay windows, gable ornament, tall narrow
-  color_palette: Pastel Blue/Pink/Yellow, Lavender, Mint Green, Cream trim, Dusty Rose
-  lighting_setup: Sunny day, San Francisco fog-diffused, golden-hour facade glow, painted-lady sparkle
-  material_texture: Wood siding, painted redwood, scroll-sawn ornament, turned spindles, bracketed eaves
-  render_quality: Charming, detailed, dollhouse, postcard-perfect, neighborhood jewel, color-pop delight
-  spatial_distortion: None
-  atmosphere: Happy, nostalgic, cute, cheerful, preserved-history, whimsical pride
-  key_features: Turret, gingerbread trim, three-color paint scheme, bay windows, fish-scale shingles
-  creative_brief: Gingerbread trim frills against fog like lace on a widow, every spindle and fish-scale shingle a small act of joy against grey skies. Pastel paint schemes announce the house before you see it, a chromatic argument that homes should sing. The painted lady stands dressed for a party that never ends, San Francisco her eternal ballroom.
+  aesthetic: Revival victoriano cromático de fachada ornamental, identidad barrial y detalle carpintero exuberante.
+  form_and_line: Gingerbread trim, spindles torneados, bay windows, frontones decorados y verticalidad estrecha.
+  color_palette: Pasteles complejos (azul/rosa/amarillo), lavanda, menta y molduras crema con rosa polvoso.
+  lighting_setup: Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.
+  material_texture: Siding de madera, pintura multicapa, calados finos, aleros con ménsulas y tejuela decorativa.
+  render_quality: Detalle residencial histórico de alta legibilidad ornamental con alegría cromática controlada.
+  spatial_distortion: Perspectiva residencial estable centrada en fachada y jerarquía de ornamentación.
+  atmosphere: Nostálgica, festiva, cívica y orgullosamente preservada.
+  key_features: Torreta, esquemas tricromos, bay windows, tejuela fish-scale y carpintería recortada de alta densidad.
+  creative_brief: >-
+    Mantén una gramática Painted Lady transferible por ornamentación de madera,
+    cromática pastel estratificada y composición vertical doméstica. La
+    identidad debe sostenerse por lenguaje constructivo, no por postal turística.
 avoidRules:
   - plain
   - grey

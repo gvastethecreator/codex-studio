@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Vertical biophilic high-rise, metabolist eco-tower, planted-envelope architecture, urban rewilding facade
-  form_and_line: Orthogonal slab grid interleaved with irregular canopy protrusions, cantilevered planter bands, stacked terrace strata
-  color_palette: Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color
-  lighting_setup: Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow
-  material_texture: Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate
-  render_quality: High-detail architectural visualization, species-level planting readability, believable facade ecology and maintenance logic
-  spatial_distortion: Overgrown
-  atmosphere: Regenerative urbanism, breathable density, temperate microclimate comfort, long-horizon civic optimism
-  key_features: Deep planter setbacks, mixed-height canopy layers, facade irrigation tracks, bird-supportive ledges, evapotranspirative shading
+  aesthetic: Torre bioclimática de envolvente viva, donde paisaje y edificio operan como un único sistema metabólico urbano.
+  form_and_line: Retícula ortogonal base con protrusiones vegetales irregulares, bandas de jardineras en voladizo y terrazas estratificadas.
+  color_palette: Verdes estacionales, madera natural, reflejos de cielo, marrones de sustrato y floraciones puntuales.
+  lighting_setup: Sol natural filtrado por copa vegetal, dapple dinámico y sombras estacionales por ángulo de incidencia.
+  material_texture: Hoja, corteza, madera, bambú, tierra compactada y áridos reciclados con lectura ecológica tangible.
+  render_quality: Visualización eco-arquitectónica de alto detalle con lógica de mantenimiento, riego y desempeño climático verosímil.
+  spatial_distortion: Sensación de sobrecrecimiento controlado, con profundidad por capas de vegetación funcional.
+  atmosphere: Regenerativa, respirable, cívica y optimista a largo plazo.
+  key_features: Jardineras profundas, corredores verdes, riego visible, bordes para biodiversidad y sombreamiento evapotranspirativo.
   creative_brief: >-
-    Construye una tipología de torre-jardín donde la vegetación no sea decorativa,
-    sino parte del sistema arquitectónico: control solar, amortiguación térmica,
-    identidad de fachada y hábitat urbano. El estilo debe mantener lectura técnica
-    (estructura, drenaje, mantenimiento) y al mismo tiempo una presencia orgánica
-    densa, apta para múltiples programas residenciales o mixtos.
+    Formula una gramática de torre-jardín transferible en la que vegetación,
+    estructura y clima sean inseparables. La estética debe mostrar desempeño
+    técnico real (sombra, drenaje, inercia, mantenimiento) además de densidad
+    orgánica, aplicable a múltiples programas.
 avoidRules:
   - concrete
   - industrial

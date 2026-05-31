@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Curving river edge creating a generous communal composition.
   atmosphere: Repair culture, stewardship, and shared skill-building.
   key_features: Tool libraries, river steps, and public worktables.
-  creative_brief: A solarpunk commons where maintenance is social, visible, and elegant.
+  creative_brief: >-
+    Preserve riverbend repair-commons grammar as a reusable style system:
+    riverside maintenance pedagogy, open civic tool-sharing culture, and
+    elegant stewardship pragmatism should remain coherent across subjects.
 avoidRules: [photoreal, grit, industrial-smoke, watermark, text, logo, gloom]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-101.webp }
 attributes:

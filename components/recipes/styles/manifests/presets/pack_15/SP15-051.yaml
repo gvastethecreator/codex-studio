@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Monumental transit hub as an art-deco civic cathedral.
-  form_and_line: Circular concourse, ribbed vaults, and ticket balcony rings.
-  color_palette: Ivory, brass, and emerald accents.
-  lighting_setup: Diffused skylight and perimeter chandelier bands.
-  material_texture: Marble floors, brass grilles, and etched glass.
-  render_quality: Architectural concept with precise circulation logic.
-  spatial_distortion: Central rotunda focus with radial exits.
-  atmosphere: Ordered movement and ceremonial modernity.
-  key_features: Deco timetable clock, turbine escalators, and grand ticket hall.
-  creative_brief: A decopunk station where mobility is framed as elegant public theater.
+  aesthetic: Decopunk transit cathedral where tickets, clocks, and crowd flow become a gilded civic liturgy.
+  form_and_line: Circular concourse mandalas, ribbed vault fans, ticket balcony rings, radial spokes, and turbine escalator spirals.
+  color_palette: Warm ivory, aged brass, emerald glass, black timetable ink, and polished floor cream.
+  lighting_setup: Diffused skylight, perimeter chandelier halos, brass reflections on marble arcs, and clock-face glow.
+  material_texture: Marble floors, brass grilles, etched glass, enamel clocks, ribbed stone trim, and worn ticket leather.
+  render_quality: Architectural concept with precise circulation logic, ceremonial scale, and readable public choreography.
+  spatial_distortion: Rotunda focus pulls bodies through radial exits like planets around a timetable sun.
+  atmosphere: Ordered movement, ceremonial modernity, civic patience, and cathedral-like transit awe.
+  key_features: Deco timetable suns, turbine escalators, grand ticket arches, emerald route markers, and balcony crowd rings.
+  creative_brief: >-
+    Preserve gilded transit-rotunda grammar as a reusable style system:
+    ticketed radial circulation, ceremonial public timing, and brass civic
+    order should remain coherent across subjects.
 avoidRules: [photoreal, grunge, medieval-rustic, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-051.webp }
 attributes:
   negativePrompt: photoreal, grunge, medieval-rustic, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

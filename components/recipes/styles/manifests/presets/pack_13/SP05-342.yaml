@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Modern realism destabilized by performance and memory, mirrors and media screens leaking into one another, polished adult surfaces hiding identity fractures
-  form_and_line: Refined realistic contour, performance-ready facial detail, subtle disorientation in framing lines
+  aesthetic: Realismo urbano pulido quebrado por memoria, performance e identidad inestable entre reflejos y pantallas.
+  form_and_line: Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.
   color_palette: Cool steel, skin peach, screen blue, lipstick crimson, hallway beige, shadow plum
-  lighting_setup: Reflective practical lighting, TV-screen spill, dressing-room spotlights, polished suspense shadows
-  material_texture: Glass reflections, makeup sheen, hallway varnish, media-screen scan glow, urban polish
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Iluminación práctica reflectiva, spill de monitor, spot de camerino y sombras de suspense de superficie limpia.
+  material_texture: Reflexos en vidrio, brillo cosmético, barniz de pasillo y glow de escaneo electrónico.
+  render_quality: Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas perceptivas.
   spatial_distortion: Reality-slip match cuts, reflection-depth confusion, poised adult anatomy, cinematic frame logic with subtle breakage
-  atmosphere: Unsettling, polished, psychological, cinematic
-  key_features: Mirrors, media screens, adult urban spaces, reality-slip transitions, polished suspense framing
-  creative_brief: The mirror does not reflect you, it remembers someone else. Reality slips between frames, identity fractures across screens, and the hallway leads to a version of yourself you never agreed to become. Sanity is a surface tension.
+  atmosphere: Inquietante y sofisticada, de tensión mental bajo control aparente.
+  key_features: Espejos, pantallas, espacios adultos urbanos y transiciones de reality-slip en continuidad ilusoria.
+  creative_brief: >-
+    Define una gramática reusable de mirror-reality-slip donde reflejo, corte
+    perceptivo y espacio urbano pulido construyan fractura identitaria sin
+    necesidad de horror explícito.
 avoidRules:
   - still
   - calm

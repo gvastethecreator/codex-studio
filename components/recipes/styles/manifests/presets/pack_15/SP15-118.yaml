@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Pier perspective extending into underwater columns.
   atmosphere: Fun, drift, and coastal exuberance.
   key_features: Kelp cabinets, boardwalk lanterns, and wave game pods.
-  creative_brief: A seapunk boardwalk where the arcade floats half in the sea and half in light.
+  creative_brief: >-
+    Preserve kelp arcade-boardwalk grammar as a reusable style system:
+    pierline leisure circuitry, swaying kelp interface ornament, and
+    sunset-neon coastal exuberance should remain coherent across subjects.
 avoidRules: [photoreal, grimdark, industrial, watermark, text, logo, foggy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-118.webp }
 attributes:

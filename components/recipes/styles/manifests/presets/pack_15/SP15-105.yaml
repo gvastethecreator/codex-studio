@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Amphitheater depth framed by botanical layers.
   atmosphere: Debate, cultivation, and intelligent stewardship.
   key_features: Genome benches, pollen displays, and bio-learning panels.
-  creative_brief: A biopunk forum where public discourse grows inside a carefully tended living garden of knowledge.
+  creative_brief: >-
+    Preserve genome garden-forum grammar as a reusable style system:
+    botanical knowledge amphitheaters, DNA-trellis civic debate framing, and
+    cultivated stewardship intelligence should remain coherent across subjects.
 avoidRules: [photoreal, sterile, cyberpunk, watermark, text, logo, flat-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-105.webp }
 attributes:

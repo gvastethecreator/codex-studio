@@ -10,13 +10,13 @@ Este refactor corrige presets que describían escenas específicas en lugar de e
 
 ## Decisiones clave
 
-| Tema | Decisión |
-|---|---|
-| Identidad de preset | La identidad vive en trazo, paleta, iluminación, materialidad, composición y acabado; no en lugar/acción concreta. |
-| Referencias de autor | Si el preset es explícitamente de autor/escuela, se conserva el nombre del autor como ancla estilística. |
-| Campo `creative_brief` | Debe explicar lógica visual y transferibilidad del estilo, no contar una escena cerrada. |
-| Refactor | Manual 1-a-1 en presets críticos para evitar clones de keywords y plantillas narrativas. |
-| Calidad | Mantener diferenciación entre presets vecinos de una misma categoría. |
+| Tema                   | Decisión                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Identidad de preset    | La identidad vive en trazo, paleta, iluminación, materialidad, composición y acabado; no en lugar/acción concreta. |
+| Referencias de autor   | Si el preset es explícitamente de autor/escuela, se conserva el nombre del autor como ancla estilística.           |
+| Campo `creative_brief` | Debe explicar lógica visual y transferibilidad del estilo, no contar una escena cerrada.                           |
+| Refactor               | Manual 1-a-1 en presets críticos para evitar clones de keywords y plantillas narrativas.                           |
+| Calidad                | Mantener diferenciación entre presets vecinos de una misma categoría.                                              |
 
 ## Implementación completada (Phase 1)
 
@@ -728,6 +728,409 @@ Quincuagésima ola manual completada (30 presets adicionales, revisión profunda
 
 Total manual refactorizado hasta ahora: **458 presets**.
 
+Quincuagésima primera ola manual completada (10 presets adicionales, continuidad `pack_15`):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-033.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-040.yaml`
+
+Total manual refactorizado hasta ahora: **468 presets**.
+
+Quincuagésima segunda ola manual completada (10 presets adicionales, revisión profunda sin atajos):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-050.yaml`
+
+Total manual refactorizado hasta ahora: **478 presets**.
+
+Quincuagésima tercera ola manual completada (10 presets adicionales, revisión profunda sin atajos):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-051.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-053.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-054.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-056.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-057.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-059.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-060.yaml`
+
+Total manual refactorizado hasta ahora: **488 presets**.
+
+Quincuagésima cuarta ola manual completada (10 presets adicionales, nuevo estándar creativo aplicado):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-061.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-063.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-064.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-065.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-066.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-068.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-069.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-070.yaml`
+
+Total manual refactorizado hasta ahora: **498 presets**.
+
+Quincuagésima quinta ola manual completada (30 presets adicionales, revisión profunda):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-071.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-072.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-073.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-074.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-080.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-081.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-082.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-083.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-084.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-085.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-086.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-087.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-088.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-089.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-090.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-091.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-092.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-093.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-094.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-095.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-096.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-097.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-098.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-099.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-100.yaml`
+
+Total manual refactorizado hasta ahora: **528 presets**.
+
+Quincuagésima sexta ola manual completada (27 presets adicionales, cierre de `pack_15`):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-101.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-102.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-103.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-104.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-105.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-106.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-107.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-108.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-109.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-110.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-111.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-112.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-113.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-114.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-115.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-116.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-117.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-118.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-119.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-120.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-121.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-122.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-123.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-124.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-125.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-126.yaml`
+- `components/recipes/styles/manifests/presets/pack_15/SP15-127.yaml`
+
+Total manual refactorizado hasta ahora: **555 presets**.
+
+Reauditoría creativa aplicada sobre lote previo (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-031.yaml` a `SP15-060.yaml`
+- Motivo: el primer pase era correcto pero demasiado genérico; se elevó a tesis visual específica por preset.
+- Resultado esperado: stonepunk más táctil/ritual, seapunk más sistémico, atompunk con tensión institucional y decopunk más narrativo/material para generación.
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-001.yaml` a `SP07-030.yaml`
+- Alcance: reescritura integral de `visualDna` (no sólo `creative_brief`) para elevar especificidad técnica, transferibilidad style-first y diferenciación semántica entre presets.
+- Validación técnica: `bun run styles:validate -- --pack=pack_07` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-031.yaml` a `SP07-060.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `lighting_setup`, `material_texture`, `render_quality`, `atmosphere`, `key_features`, `creative_brief`) para reforzar completitud y consistencia style-first.
+- Validación técnica: `bun run styles:validate -- --pack=pack_07` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-061.yaml` a `SP07-080.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `lighting_setup`, `material_texture`, `render_quality`, `atmosphere`, `key_features`, `creative_brief`) para elevar especificidad semántica y transferibilidad style-first en presets de alta fantasía, miniatura, paradoja espacial y megaestructura sci-fi.
+- Validación técnica: `bun run styles:validate -- --pack=pack_07` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_13/SP05-326.yaml` a `SP05-335.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `lighting_setup`, `material_texture`, `render_quality`, `atmosphere`, `key_features`, `creative_brief`) para reforzar diferenciación estilística dentro de `12. Anime Style Spectrum` y evitar briefs narrativos genéricos.
+- Validación técnica: `bun run styles:validate -- --pack=pack_13` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_13/SP05-336.yaml` a `SP05-342.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `lighting_setup`, `material_texture`, `render_quality`, `atmosphere`, `key_features`, `creative_brief`) para preservar contraste semántico entre autores/escuelas y elevar especificidad técnica del bloque final contiguo.
+- Validación técnica: `bun run styles:validate -- --pack=pack_13` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_05/SP05-231.yaml` a `SP05-240.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para eliminar plantillas repetidas y consolidar diferenciación fina en `7. Mecha & Cyberpunk`.
+- Validación técnica: `bun run styles:validate -- --pack=pack_05` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_05/SP05-241.yaml` a `SP05-250.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para diferenciar con precisión sublíneas de `8. Isekai & High Fantasy` y remover uniformidad de base.
+- Validación técnica: `bun run styles:validate -- --pack=pack_05` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_05/SP05-251.yaml` a `SP05-260.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para fortalecer contraste entre fantasía militar, cozy-road, romance de portal, utilitarian quest y cuento pastel.
+- Validación técnica: `bun run styles:validate -- --pack=pack_05` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-001.yaml` a `SP12-010.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) para migrar de escenas concretas a gramáticas de géneros de videojuegos, legibilidad gameplay-first y lenguaje de pipeline/render.
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-011.yaml` a `SP12-020.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) con énfasis en subgéneros jugables (survival sci-fi submarino, pixel-RPG hub, action-adventure místico, hero shooter vertical, metroidvania tecno-arcano, immersive-sim cortesano, arcade sport extremo, tower-defense modular, survival-horror subterráneo y space-trade RPG).
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-021.yaml` a `SP12-030.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) reforzando identidad por subgénero (racing-arcade desértico, survival-hub ártico, colony-builder orbital, runner de trampas, beat-em-up neon-noir, tactical-RPG isométrico, co-op extraction minero, duel-fighter ceremonial, action-RPG submarino y horror-action de parque maldito).
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-031.yaml` a `SP12-040.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) consolidando estilos por tipo de juego y loop dominante (auto-battler táctico, stealth-heist portuario, tower-defense rural sci-fi, tactical-shooter vertical, co-op defense móvil, puzzle-chamber lunar, platformer whimsical, naval tactics, rhythm-battle gótico y co-op monster-hunt).
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-041.yaml` a `SP12-050.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) en clave gameplay-first para frontier-defense, incident-response sci-fi, urban-disaster, social-stealth, mech-hunt táctico, nomad open-world, arena-boss trial, urban crystalpunk transit, dungeon-raid coordinado y survival-horror polar.
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-051.yaml` a `SP12-060.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) reforzando tipologías de loop y legibilidad sistémica (deckbuilder hub, objective-PvP capture, tactical-fantasy coven arena, train-heist futurista, puzzle-garden lumínico, mobility chase urbano, sky-piracy aeronaval, sound-puzzle cavern, hero-draft esports y last-stand siege).
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-061.yaml` a `SP12-070.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) para consolidar presets de endgame shrine-run, open-world urbano fluvial, race-event arqueológico, tower-defense rural nocturno, duel-arena de precisión, transit-survival horror, warfront de desgaste, skyforge prep-hub, objective-warfare de señal y archery-trial místico.
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_12/SP12-071.yaml` a `SP12-080.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `subject_treatment`, `color_and_tone`, `lighting_and_shadow`, `texture_and_material`, `camera_and_composition`, `atmosphere_and_mood`, `rendering_and_quality`) cerrando el pack con lenguaje de géneros jugables (urban-insurgency, raid-racer de ruinas, colossus-hunt cooperativo, card-duel clandestino, mechball esports, polar-siege, quarry-escape, stealth-op shinobi, co-op citadel-defense y final-boss eclipse).
+- Validación técnica: `bun run styles:validate -- --pack=pack_12` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-343.yaml` a `SP05-352.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para convertir presets sports-performance de scene-driven a gramáticas transferibles por disciplina (volleyball, striker-football, hardwood basketball, phantom-pass basketball, uphill cycling, mound-duel baseball, relay swim, endurance run, neon-ramp skate).
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-353.yaml` a `SP05-362.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para consolidar gramáticas deportivas transferibles en motorsport/touge, smart-apex racing, derby-idol sprint, tennis duel theater, ping-pong psicológico, boxing comeback, figure-skating performance, karuta competitivo, tennis metódico y fairway duel.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-363.yaml` a `SP05-372.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para convertir el bloque performance en gramáticas transferibles de rhythmic gymnastics, ballet rehearsal, ballroom competition, koto ensemble, brass section practice, midnight jazz, garage band growth, indie stage confession, orchestra rehearsal y revue stage duel.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP13-026.yaml` a `SP13-035.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para convertir bloques samurai-medieval y horror de scene-driven a gramáticas style-first transferibles, con contraste semántico fuerte entre presets contiguos (duelo ceremonial, guerra de clanes, voto caballeresco, brecha de asedio, ascetismo marcial, liminal escolar, omen lunar, teatro grotesco, vacío rural y rito oni).
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-281.yaml` a `SP05-290.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para reemplazar narrativa scene-locked por gramáticas transferibles en `10. Studio Masterpieces`, diferenciando cine-memoria, humanismo urbano navideño, duelo metafísico, aventura celeste retro, eco-profecía postcolapso, maternidad rural estacional, ópera digital, temporalidad juvenil, misticismo en ruina y tragedia paramilitar.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-291.yaml` a `SP05-300.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para consolidar gramáticas transferibles y no scene-locked en `10. Studio Masterpieces`, diferenciando reconciliación íntima, teatro punk histórico, mito callejero vertical, mutación psicodélica, cámara musical de microgesto, retrofuturo art-decó, lirismo pluvial, odisea nocturna etílica, invasión onírica carnavalesca y rescate mecha hipergráfico.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-301.yaml` a `SP05-310.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para transformar el bloque `11. 70s & 80s Retro Anime` en gramáticas style-first transferibles, diferenciando ópera naval espacial, outlaw melancólico, ferrocarril cósmico poético, drama barroco revolucionario, rom-com sci-fi estridente, romance doméstico maduro, nostalgia baseball juvenil, action-noir urbano, space-glam en dúo y pulp profesional de rescate.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-311.yaml` a `SP05-320.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para cerrar el tramo retro con gramáticas transferibles de aventura ecológica postcolapso, heist glam nocturno, épica zodiacal, drama mecha formativo, guerra política angular, bio-mecha fantástica, techno-rebeldía urbana, horror demónico expresionista, dualidad mecha-pop y rogue pulp espacial.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-150.yaml` a `SP05-159.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para robustecer `2. 2000s Classics` con gramáticas style-first de fantasy escolar ígnea, club meta-cosmológico, comedia samurái anacrónica, exorcismo tecno-gótico, thriller vampírico militar, romcom de academia mágica, horror rural en bucle, speed-tech de rooftop, contemplación ecológica sobrenatural y melodrama rock urbano.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de consistencia style-first aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_15/SP15-031.yaml` a `SP15-060.yaml`
+- Ajuste aplicado: normalización de `creative_brief` para reforzar formulación reusable, coherencia inter-preset y transferibilidad semántica por subgénero.
+- Validación técnica: `bun run styles:validate -- --pack=pack_15` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-141.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-145.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-146.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-147.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-149.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-160.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-161.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-163.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-164.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-165.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-166.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-167.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-169.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-170.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-173.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-174.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-175.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-179.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-180.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) con lineamiento style-first estricto, briefs transferibles no scene-locked y diferenciación semántica reforzada en bloque amplio.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-003.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-005.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-006.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-007.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-009.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-010.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-011.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-012.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para transformar presets legacy de base template en gramáticas style-first transferibles, con contraste semántico reforzado entre heist noir, space opera melancólica, mecha bélico, idol-mecha, wasteland marcial, detective urbano, megaciudad cyber, aventura cómica y dúo shonen/magical noventero.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría profunda de completitud aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-071.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-072.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-073.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-074.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-080.yaml`
+- Alcance: refactor integral multi-campo (`aesthetic`, `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`, `render_quality`, `spatial_distortion`, `atmosphere`, `key_features`, `creative_brief`) para convertir el bloque scene-heavy de `10. Studio Masterpieces` en gramáticas style-first transferibles, reforzando contraste semántico entre fantasía liminal cálida, eco-épica ancestral, steampunk romántico errante, melodrama celeste, drama pluvial urbano, surrealismo onírico, thriller identitario, cyber-apocalipsis megalopolitano, carrera hipercinética y lirismo oceánico-cósmico.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-301.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-302.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-303.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-304.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-305.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-306.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-307.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-308.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-309.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-310.yaml`
+- Alcance: segunda pasada manual preset-por-preset para aumentar contraste fino entre vecinos (ritmo, textura, iluminación y tesis narrativa) sin perder lineamiento style-first reusable.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-311.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-312.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-313.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-314.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-315.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-316.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-317.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-318.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-319.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-320.yaml`
+- Alcance: segunda pasada manual preset-por-preset enfocada en micro-diferenciación semántica (gestualidad, iluminación, materialidad y framing) dentro del tramo retro para evitar convergencia estilística entre vecinos.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-343.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-344.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-345.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-346.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-347.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-348.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-349.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-350.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-351.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-352.yaml`
+- Alcance: segunda pasada manual preset-por-preset sobre bloque sports-performance para reforzar contraste semántico fino entre vecinos (ritmo, tesis competitiva, materialidad y framing) manteniendo lineamiento style-first reusable.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-353.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-354.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-355.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-356.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-357.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-358.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-359.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-360.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-361.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-362.yaml`
+- Alcance: segunda pasada manual preset-por-preset en motorsport, racket-sports, boxing, skating, karuta y golf para reforzar diferenciación de foco competitivo, ritmo y materialidad sin perder transferibilidad style-first.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
 ## Guía de reescritura aplicada
 
 ### Do ✅
@@ -735,14 +1138,21 @@ Total manual refactorizado hasta ahora: **458 presets**.
 - Describir **lenguaje visual** (linework, color logic, material response, compositional behavior).
 - Usar términos de estilo transferibles a múltiples temas.
 - Definir diferencias reales entre presets cercanos.
+- Darle a cada preset una **tesis visual rara y útil**, no sólo una gramática reusable genérica.
+- Forzar contraste entre vecinos del mismo subgénero: rol, ritmo, material, luz, motivo y composición deben cambiar.
+- Convertir escena base en mecanismo de dirección artística: “cómo se ve y cómo transforma cualquier sujeto”.
 
 ### Avoid ❌
 
 - Fijar la identidad en “city/street/classroom/market/rooftop/battle scene”.
 - Repetir bloques idénticos de `visualDna` en lotes grandes.
 - Escribir briefs como mini-historias cerradas del mismo set narrativo.
+- Resolver presets con fórmulas pobres tipo “Preserve X grammar as reusable style” sin una apuesta visual concreta.
+- Dejar presets vecinos como vagas similitudes con distinto nombre.
 
 ## Próxima fase sugerida
+
+Abrir siguiente bache contiguo en `pack_16` sobre `SP05-363.yaml` a `SP05-372.yaml` para segunda pasada de precisión manual, manteniendo estilo transferable y contraste semántico fuerte entre presets adyacentes.
 
 Prioridad por riesgo de drift semántico (scene-heavy):
 

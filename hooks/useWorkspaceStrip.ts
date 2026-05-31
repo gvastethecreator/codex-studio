@@ -2,6 +2,11 @@ import { useCallback, useEffect, useMemo } from 'react';
 import type { CatalogImage } from '../packages/shared/src';
 import { resolveCatalogEntryThumbnailUrl } from '../lib/studioCatalogImageAdapter';
 import type { StudioCatalogView } from '../lib/studioCatalogView';
+import {
+  isDefaultWorkspace,
+  runWorkspaceDeleteLifecycle,
+  type RunWorkspaceDeleteLifecycleArgs,
+} from '../lib/workspaceLifecycle';
 import type { Workspace } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -16,6 +21,7 @@ interface UseWorkspaceStripProps {
   createWorkspace: (workspace: Workspace, options?: { activate?: boolean }) => void;
   deleteWorkspace: (id: string) => void;
   renameWorkspace: (id: string, name: string) => void;
+  clearWorkspace?: RunWorkspaceDeleteLifecycleArgs['clearWorkspace'];
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   onRequestDeleteWorkspace?: (workspace: WorkspaceWithThumbs) => void;
 }
@@ -127,6 +133,7 @@ export function useWorkspaceStrip({
   createWorkspace,
   deleteWorkspace,
   renameWorkspace,
+  clearWorkspace,
   addToast,
   onRequestDeleteWorkspace,
 }: UseWorkspaceStripProps) {
@@ -167,7 +174,7 @@ export function useWorkspaceStrip({
 
   const handleDeleteWorkspace = useCallback(
     (id: string) => {
-      if (id === 'default') {
+      if (isDefaultWorkspace(id)) {
         addToast('The default workspace cannot be deleted', 'error');
         return;
       }
@@ -178,12 +185,38 @@ export function useWorkspaceStrip({
         return;
       }
 
+      if (clearWorkspace) {
+        startViewTransition(() => {
+          void runWorkspaceDeleteLifecycle({
+            workspaceId: id,
+            clearWorkspace,
+            deleteWorkspace,
+          })
+            .then(() => {
+              addToast('Workspace removed from the active Studio', 'info');
+            })
+            .catch((error) => {
+              addToast(
+                error instanceof Error ? error.message : 'Unable to remove workspace',
+                'error',
+              );
+            });
+        });
+        return;
+      }
+
       startViewTransition(() => {
         deleteWorkspace(id);
         addToast('Workspace removed from the active Studio', 'info');
       });
     },
-    [addToast, deleteWorkspace, onRequestDeleteWorkspace, workspacesWithThumbs],
+    [
+      addToast,
+      clearWorkspace,
+      deleteWorkspace,
+      onRequestDeleteWorkspace,
+      workspacesWithThumbs,
+    ],
   );
 
   const handleRenameWorkspace = useCallback(

@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: 80s TV color punch, alien-schoolgirl chaos, domestic slapstick, fluorescent city nights, sci-fi flirtation and loud romantic nonsense
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Hyper, flirty, neon, mischievous
-  key_features: Oni-horn silhouette, neon-night streets, domestic-comedy staging, alien-tech gags, loud expression acting
-  creative_brief: Neon pink splashes against domestic tatami as an alien girl rewrites the rules of gravity and affection one flying mallet at a time. The city hums in fluorescent frequencies while love stumbles through doors it was never meant to open. Chaos becomes a love language spoken in lightning bolts and instant noodles.
+  aesthetic: Sitcom sci-fi ochentera de caos afectivo, con choque doméstico-alien y erotismo caricaturesco de alto voltaje.
+  form_and_line: Contorno grueso caricaturesco, acting facial exagerado y timing visual de gag físico instantáneo.
+  color_palette: Neones rosas y turquesa, amarillos eléctricos, azules nocturnos saturados y acentos pastel de sitcom.
+  lighting_setup: Luz frontal de set televisivo con neón de calle filtrado, contraste bajo y acentos de gag instantáneo.
+  material_texture: Tatami cotidiano, señalética fluorescente, utilería sci-fi ligera y grano retro de emisión.
+  render_quality: Acabado premium retro-pop con claridad de broma, ritmo de caos y legibilidad de ensemble romántico.
+  spatial_distortion: Espacio elástico de comedia con deformaciones leves para golpes visuales y persecuciones domésticas.
+  atmosphere: Hiperactiva, coqueta, neón, traviesa.
+  key_features: Motivo oni de contraste, apartamento hiperactivo, gadget alien absurdo y persecución romántica de timing corto.
+  creative_brief: Construye una gramática reusable de rom-com sci-fi histriónica para cualquier sujeto, priorizando color fluorescente, slapstick corporal y fricción sentimental episódica.
 avoidRules:
   - realistic
   - 3d render

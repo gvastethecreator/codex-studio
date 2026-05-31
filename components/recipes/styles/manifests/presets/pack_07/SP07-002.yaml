@@ -12,19 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Industrial adaptive-reuse style centered on structural honesty, patinated utility, and refined rawness
-  form_and_line: Exposed load-bearing geometry, truss and conduit rhythm, riveted junction articulation, long-span volumetric framing
-  color_palette: Brick oxides, concrete neutrals, graphite metals, oxidized copper notes, muted amber warmth
-  lighting_setup: High-aperture daylight shafts with warm practical pools, shadow zoning, and contrast-led volumetric depth
-  material_texture: Board-formed concrete, rough masonry grain, weathered steel oxidation, reclaimed timber wear, matte leather accents
-  render_quality: High-fidelity industrial-chic finish balancing grit legibility with editorial polish and material truthfulness
-  spatial_distortion: Perspective stability with scale-forward depth, emphasizing structural rhythm over decorative clutter
-  atmosphere: Grounded, utilitarian, creative, mature, atmospheric
-  key_features: Structure-as-ornament language, patina hierarchy, utility-driven composition, adaptive-reuse material choreography
+  aesthetic: Reutilización industrial sofisticada, con infraestructura expuesta como ornamento principal y pátina funcional controlada.
+  form_and_line: Tramas estructurales repetitivas, cerchas visibles, canalizaciones ortográficas y secuencias de pórticos de gran luz.
+  color_palette: Óxidos de ladrillo, neutros cementicios, grafito metálico, cobre envejecido y ámbar cálido de apoyo.
+  lighting_setup: Entradas cenitales o laterales profundas, contraste medio-alto, zonas de penumbra técnica y prácticos cálidos puntuales.
+  material_texture: Hormigón encofrado, mampostería rugosa, acero oxidado estabilizado, madera recuperada y cuero mate desgastado.
+  render_quality: Acabado industrial-chic con legibilidad tectónica y balance entre crudeza material y curaduría editorial.
+  spatial_distortion: Profundidad longitudinal marcada por repetición estructural; sin deformación expresiva, sí compresión por capas técnicas.
+  atmosphere: Productivo, robusto, creativo y adulto; tensión entre taller y vivienda premium.
+  key_features: Vigas y uniones expuestas, instalaciones visibles, cerramientos de gran formato, escalas loft y objetos utilitarios en primer plano.
   creative_brief: >-
-    Preserve identity through exposed structural systems and patinated material
-    contrast, treating utility elements as primary visual grammar independent of
-    any specific loft narrative.
+    Conserva la identidad loft mediante una lógica estructura-instalación
+    explícita: lo técnico debe dominar la composición y la pátina contar uso
+    real. La transferencia debe funcionar en cualquier programa interior sin
+    perder la tensión entre crudeza y refinamiento.
 avoidRules:
   - cozy
   - soft

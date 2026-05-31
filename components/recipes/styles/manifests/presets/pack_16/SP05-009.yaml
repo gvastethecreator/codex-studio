@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Dense futuristic cityscapes, motorcycles, kinetic motion, cyber unrest, neon billboards, highway overpasses, crowd riots, tech clutter
-  form_and_line: Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision
-  color_palette: Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues
-  lighting_setup: Simple cel shadows, bold key light, flat directional shading, rim highlights
-  material_texture: Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture
-  render_quality: Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness
-  spatial_distortion: Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging
-  atmosphere: Electric, rebellious, anarchic, charged
-  key_features: Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style
-  creative_brief: Motorcycles scream through canyons of hand-painted signage and riot-scarred overpasses, a cyberpunk revolution rendered in obsessive architectural density that makes every frame feel like a city that actually breathes. Motion lines fracture the chaos into pure kinetic electricity, the air itself vibrating with rebellion.
+  aesthetic: Megaciudad neo-retro hiperdensa, con fricción social, velocidad mecánica y saturación de infraestructura.
+  form_and_line: Línea detallista y nerviosa, arquitectura protagonista y dinámica de desplazamiento a máxima inercia.
+  color_palette: Violeta eléctrico, verde neón urbano, concreto gris-azul y rojos de señal disruptiva.
+  lighting_setup: Brillo de cartel superpuesto, flare industrial y sombras recortadas por viaductos elevados.
+  material_texture: Asfalto caliente, chapa urbana, señalética luminosa y suciedad tecnológica acumulada.
+  render_quality: Acabado retro de alta complejidad visual con lectura clara de caos estructurado.
+  spatial_distortion: Capas de ciudad superpuestas (vía, pasarela, torre) para sensación de presión metropolitana constante.
+  atmosphere: Eléctrica, rebelde, convulsa, adrenalínica.
+  key_features: Horizonte saturado de ingeniería, movilidad agresiva, densidad de cartelería y pulso de revuelta cívica.
+  creative_brief: Construye una gramática reusable de urbanismo cyber-retro extremo para cualquier sujeto, priorizando densidad arquitectónica, energía social y movimiento continuo.
 avoidRules:
   - realistic
   - 3d render

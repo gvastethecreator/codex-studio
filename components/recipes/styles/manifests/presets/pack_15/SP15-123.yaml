@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Conservatory dome with concentric wave gardens.
   atmosphere: Curiosity, translation, and marine harmony.
   key_features: Signal fronds, tide instruments, and wave blooms.
-  creative_brief: A seapunk conservatory where the ocean’s signals are grown into living botanical language.
+  creative_brief: >-
+    Preserve ocean signal-conservatory grammar as a reusable style system:
+    wave-linguistic botanical instrumentation, concentric marine greenhouse
+    systems, and luminous translational harmony should remain coherent across subjects.
 avoidRules: [photoreal, bleak, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-123.webp }
 attributes:

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Dark fantasy in a living library of forbidden magic.
-  subject_treatment: Colossal grimoire summoned as an antagonistic entity.
-  color_and_tone: Violets, aged golds, and ink black.
-  lighting_and_shadow: Runic circles illuminating suspended dust.
-  texture_and_material: Cracked parchment, wet marble and ancient metal.
-  camera_and_composition: Circular arena in three-quarter view with a central pedestal.
-  atmosphere_and_mood: Mystery, solemnity, and supernatural danger.
-  rendering_and_quality: Encounter concept with clear visual hierarchy.
+  aesthetic: Boss-arena dark fantasy para action RPG, con lenguaje arcano sistémico y telemetría de mecánicas por símbolo.
+  subject_treatment: Entidad grimorio como boss-phase controller y avatar conjurado con weak points visuales explícitos.
+  color_and_tone: Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.
+  lighting_and_shadow: Círculos rúnicos como UI diegética, iluminación por patrón de ataque y sombras de lectura circular.
+  texture_and_material: Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.
+  camera_and_composition: Arena radial con centro mecánico, perímetro de evasión y lanes para posicionamiento de party.
+  atmosphere_and_mood: Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.
+  rendering_and_quality: Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.
 avoidRules:
   - watermark
   - text

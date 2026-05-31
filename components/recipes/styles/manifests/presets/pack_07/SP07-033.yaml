@@ -12,20 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Conservatory bioclimatic enclosure, botanical-display architecture, iron-and-glass horticultural shell
-  form_and_line: Ribbed glazed spans, fine iron tracery modules, greenhouse nave rhythm, layered planting depth bands
+  aesthetic: Envolvente bioclimática de cultivo, donde estructura de hierro y masa vegetal conviven en equilibrio técnico.
+  form_and_line: Luces acristaladas nervadas, tracería metálica fina, secuencias de nave y estratos de plantación por profundidad.
   color_palette: Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron
-  lighting_setup: Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays
-  material_texture: Condensed glazing film, oxidized painted iron, damp gravel, terracotta efflorescence, broadleaf wax sheen
-  render_quality: Botanical-specimen precision, humidity-sensitive light bloom, curated lushness with structural clarity
+  lighting_setup: Sol filtrado por vidrio, difusión húmeda, prismas por condensación y rayos suavizados por neblina interna.
+  material_texture: Película de condensación, hierro pintado oxidado, grava húmeda, terracota eflorescente y hojas de brillo ceroso.
+  render_quality: Precisión botánica con control de atmósfera húmeda y claridad estructural de invernadero operativo.
   spatial_distortion: Condensation
-  atmosphere: Warm-humid cultivation calm, protected growth environment, quiet ecological abundance
-  key_features: Condensation gradients on panes, species-zoned planting beds, iron rib repetition, mist stratification, service paths
+  atmosphere: Cálida-húmeda, protectora y fértil, con calma de cultivo intensivo controlado.
+  key_features: Gradientes de condensación, zonificación por especies, repetición de nervios, estratificación de niebla y rutas de servicio.
   creative_brief: >-
-    Prioriza el contraste entre precisión estructural y vitalidad vegetal: la
-    retícula portante debe leerse con nitidez mientras la masa botánica introduce
-    variación orgánica, humedad y densidad. Evita convertirlo en jardín genérico;
-    debe sentirse como arquitectura de cultivo controlado.
+    Formula una gramática de conservatorio transferible basada en retícula
+    estructural legible, humedad visible y estratificación botánica técnica.
+    Debe leerse como arquitectura de cultivo, no jardín ornamental genérico.
 avoidRules:
   - dark
   - dry

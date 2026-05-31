@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Starfortress life, austere uniforms, biomechanical space combat, humanity surviving in a giant drifting ship, stark cosmic isolation and disciplined action
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Austere, cosmic, disciplined, lonely
-  key_features: Fortress interior scale, biomechanical suits, starfield void contrast, military formation staging, sparse cosmic lighting
-  creative_brief: A seed ship drifting through absolute void, humanity compressed into corridors where photosynthesis is prayer and every launch is a wager against extinction. Discipline wears austere uniforms; loneliness wears a starfield. Survival has the texture of recycled air.
+  aesthetic: Supervivencia austera en fortaleza interestelar, con disciplina militar y biotecnología defensiva de último recurso.
+  form_and_line: Estructura modular cerrada, corredores ortogonales, mecha de perfil sobrio y bloque volumétrico de nave-seed.
+  color_palette: Gris grafito, verde tenue de sistemas vitales, blanco clínico y negro cósmico profundo.
+  lighting_setup: Iluminación funcional de habitáculo, franjas frías de emergencia y contraluz de vacío exterior.
+  material_texture: Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y superficies de uso continuo.
+  render_quality: Sci-fi de precisión sobria con foco en escala interior y sensación de ecosistema cerrado.
+  spatial_distortion: Profundidad longitudinal de nave-hábitat y contraste radical entre interior denso y exterior infinito.
+  atmosphere: Ascética, aislada y resiliente, con tensión de extinción permanente.
+  key_features: Ciudad-nave, uniformidad operativa, launch decks, vacío estelar y ritual de supervivencia cotidiana.
+  creative_brief: >-
+    Define una gramática vacuum-fortress reusable donde arquitectura de
+    hábitat cerrado, disciplina de supervivencia y escala cósmica inhóspita
+    sostengan identidad coherente.
 avoidRules:
   - realistic
   - 3d render

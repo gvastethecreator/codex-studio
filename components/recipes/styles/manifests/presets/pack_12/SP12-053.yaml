@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Mystical swamp with ritual combat circles.
-  subject_treatment: Clan witches and summoned spirits.
-  color_and_tone: Dark green, amber, and misty violet.
-  lighting_and_shadow: Magical luminescence in dense fog.
-  texture_and_material: Murky water, roots, and wet stone.
-  camera_and_composition: Circular clearings connected by walkways.
-  atmosphere_and_mood: Sorcery, danger, and theatrical flair.
-  rendering_and_quality: Fantasy stage for tactical combat.
+  aesthetic: Tactical-fantasy de coven en pantano ritual, orientado a zonas de control, invocación y deny de terreno.
+  subject_treatment: Brujas de clan y espíritus invocados con silueta clara por escuela mágica.
+  color_and_tone: Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.
+  lighting_and_shadow: Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.
+  texture_and_material: Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.
+  camera_and_composition: Claros circulares conectados por pasarelas con choke-points tácticos.
+  atmosphere_and_mood: Arcana, peligrosa y teatralmente agresiva.
+  rendering_and_quality: Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.
 avoidRules:
   - watermark
   - text

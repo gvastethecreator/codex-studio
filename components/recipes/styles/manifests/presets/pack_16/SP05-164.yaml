@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Rain-heavy cybernetic statecraft, surveillance corridors, philosophical gunplay, thermoptic stealth, reflective city glass, identity anxiety inside hard tactical polish
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Clinical, philosophical, tactical, nocturnal
-  key_features: Wet urban reflections, tactical firearm posing, cybernetic body detail, surveillance imagery, cold-thoughtful close-ups
-  creative_brief: 'Rain never stops falling on this city of glass and surveillance, where the ghost inside the machine asks questions the titanium shell can never answer. A woman whose body is property of the state searches for the one thing that cannot be hacked, downloaded, or deleted: a soul that knows its own name. The trigger finger and the philosopher share the same hand here, and every corridor leads deeper into the question of what remains when everything replaceable is replaced.'
+  aesthetic: Ciber-noir táctico de lluvia perpetua, con vigilancia estatal, sigilo óptico y dilema filosófico de identidad.
+  form_and_line: Línea 90s precisa y austera, blocking militar limpio y close-ups analíticos de tensión cognitiva.
+  color_palette: Cian neón húmedo, grafito urbano, ámbar de interfaz y reflejos metálicos fríos.
+  lighting_setup: Nocturno high-contrast con especular en asfalto mojado, rim quirúrgico y sombras de corredor vigilado.
+  material_texture: Vidrio lluvioso, acero cepillado, polímero táctico y grano fílmico sobrio de thriller tecnológico.
+  render_quality: Acabado premium noventero con lectura cristalina de acción táctica y subtexto existencial.
+  spatial_distortion: Profundidad de megaciudad y pasillo institucional, composición de infiltración y duelo filosófico.
+  atmosphere: Clínica, filosófica, táctica, nocturna.
+  key_features: Reflejo urbano mojado, interfaces discretas, silueta cibernética y framing de vigilancia omnipresente.
+  creative_brief: Construye una gramática reusable de techno-noir identitario para cualquier sujeto, equilibrando precisión operativa, melancolía urbana y cuestionamiento del yo.
 avoidRules:
   - realistic
   - 3d render

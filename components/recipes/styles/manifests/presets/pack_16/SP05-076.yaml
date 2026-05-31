@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Dream parades, impossible transitions, saturated symbolism, psychological spectacle, DC-mini devices, parade-of-objects, dream-therapy tech, blurring-reality
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Surreal, delirious, kaleidoscopic, mind-bending
-  key_features: Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry
-  creative_brief: A parade of impossible objects marches through the dissolving wall between sleeping and waking — a filmstrip of the subconscious unspooled across latex skies. Every cut is a breath held too long; every scene bleeds into the next like watercolor in rain. Make it feel like a dream you can't quite remember but can't stop chasing.
+  aesthetic: Surrealismo psico-onírico de collage cinético, con transición imposible y arquitectura mental en fuga.
+  form_and_line: Línea metamórfica de montaje continuo, silhouettes mutantes y raccord deliberadamente inestable.
+  color_palette: Saturación carnavalesca, fucsias intensos, amarillos ácidos y negros de vacío subconsciente.
+  lighting_setup: Destellos abruptos, focos teatrales flotantes y variaciones lumínicas que rompen continuidad realista.
+  material_texture: Superficie de objeto-ícono, plástico ritual, papel simbólico y grano de sueño inestable.
+  render_quality: Acabado de feature experimental con ritmo de edición alucinada y claridad de motivo simbólico.
+  spatial_distortion: Espacios plegables con tránsito entre interior psíquico y escenario urbano sin corte lógico.
+  atmosphere: Delirante, hipnótica, exuberante, inquietante.
+  key_features: Desfile de íconos, metamorfosis de plano, lógica de sueño y tensión entre terapia y colapso mental.
+  creative_brief: Construye una gramática reusable de surrealismo onírico cinematográfico para cualquier sujeto, priorizando transformación continua, choque simbólico y vértigo perceptivo.
 avoidRules:
   - realistic
   - 3d render

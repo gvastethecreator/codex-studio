@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Angular anatomy, dramatic power flares, larger-than-life rivalry energy, speed-line backdrops, aura bursts, intense stare-downs, combat grit
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Epic, explosive, fierce, legendary
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Speed lines rip through the frame as rival auras detonate against stark backgrounds, angular anatomy coiled into poses that scream before fists even move. The golden-era cel polish catches every dramatic rim light like lightning frozen mid-strike, friendship and fury indistinguishable in the holy trinity of the shonen stare-down.
+  aesthetic: Shonen de aura y rivalidad absoluta, con dramatismo noventero de combate iniciático y leyenda juvenil.
+  form_and_line: Línea angulosa de alta tensión, anatomía cinética y puesta en pose de desafío frontal.
+  color_palette: Amarillo energía, azul eléctrico, rojo rival y negro profundo de impacto cel clásico.
+  lighting_setup: Contraste duro con flare de aura, rim agresivo y sombra marcada para potencia corporal.
+  material_texture: Fondo pintado de explosión abstracta, polvo de choque y grano fílmico de torneo épico.
+  render_quality: Acabado 90s premium con lectura cristalina de power-up, choque ideológico y catarsis física.
+  spatial_distortion: Perspectiva forzada, speed lines y compresión de distancia para aumentar urgencia del duelo.
+  atmosphere: Épica, explosiva, feroz, legendaria.
+  key_features: Stare-down icónico, aura visible, coreografía de rivalidad y silueta heroica de alto contraste.
+  creative_brief: Diseña una gramática reusable de batalla de aura generacional para cualquier sujeto, priorizando intensidad emocional, escalada de poder y energía de confrontación.
 avoidRules:
   - realistic
   - 3d render

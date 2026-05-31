@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Astronomical institute wrapped in art-deco precision and civic pride.
-  form_and_line: Stepped dome base, radial instrument galleries, and finned towers.
-  color_palette: Midnight navy, brass, and ivory.
-  lighting_setup: Night sky contrast with subtle observatory perimeter glow.
-  material_texture: Polished brass mechanisms, stone decks, and frosted glass.
-  render_quality: Elegant scientific concept with balanced detail density.
-  spatial_distortion: Dome-up perspective emphasizing celestial alignment.
-  atmosphere: Intellectual grandeur and cosmic ambition.
-  key_features: Rotating dome slit, star chart hall, and brass telescope arrays.
-  creative_brief: A decopunk observatory where science is framed as urban pageantry.
+  aesthetic: Celestial decopunk where astronomy becomes civic pageantry, all brass mechanisms, stepped domes, and disciplined night.
+  form_and_line: Stepped dome bases, radial instrument galleries, finned crowns, telescope axes, and star-chart fan geometries.
+  color_palette: Midnight navy, polished brass, ivory stone, frosted glass blue, and tiny constellation white.
+  lighting_setup: Night-sky contrast, subtle perimeter glow, brass ring highlights, and controlled star-chart illumination.
+  material_texture: Polished brass mechanisms, stone decks, frosted glass, enamel star charts, dark seams, and oiled gear teeth.
+  render_quality: Elegant scientific concept with balanced detail density, clear instruments, and ceremonial skyline presence.
+  spatial_distortion: Dome-up perspective aligns stepped ascent, telescope axes, and celestial geometry into civic ambition.
+  atmosphere: Intellectual grandeur, cosmic ambition, disciplined darkness, and public wonder.
+  key_features: Rotating dome slits, brass telescope arrays, star-chart halls, finned observation towers, and constellation inlay floors.
+  creative_brief: >-
+    Preserve zenith deco-observatory grammar as a reusable style system:
+    celestial brass instrumentation, ceremonial scientific pageantry, and
+    controlled midnight precision should remain coherent across subjects.
 avoidRules: [photoreal, medieval, cyber-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-060.webp }
 attributes:
   negativePrompt: photoreal, medieval, cyber-chaos, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -59,6 +59,8 @@ describe('external provider input compilers', () => {
         recipeId: 'image_to_image',
         stylePresetId: 'SP03-010',
         sourceProviderId: 'google',
+        qualityPresetId: null,
+        hasQualityIntent: false,
         hasRecipeProviderDirectives: false,
       },
     });
@@ -167,6 +169,47 @@ describe('external provider input compilers', () => {
 
     expect(compiled.payload.prompt).toContain('Variation brief:');
     expect(compiled.payload.prompt).toContain('noticeably different');
+  });
+
+  it('adds structured quality intent to hosted API prompts and metadata', () => {
+    const sourceSpec = createGenerationTaskSpec({
+      id: 'spec-google-quality',
+      task: 'image_generate',
+      providerId: 'google',
+      prompt: 'glass owl on a plinth',
+      quality: {
+        qualityPresetId: 'product_or_ui_asset',
+        subject: 'glass owl',
+        lighting: 'softbox highlights on glass edges',
+        referenceRoles: [
+          {
+            role: 'reference',
+            assetName: 'mood.png',
+            instruction: 'Use for cool mineral color mood only.',
+          },
+        ],
+      },
+    });
+
+    const compiled = compileGoogleImageApiInput({
+      id: 'job-google-quality',
+      projectId: 'project-1',
+      providerId: 'google',
+      prompt: 'fallback',
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.prompt).toContain('Quality preset:\nproduct_or_ui_asset');
+    expect(compiled.payload.prompt).toContain('- Subject: glass owl');
+    expect(compiled.payload.prompt).toContain('- Lighting: softbox highlights on glass edges');
+    expect(compiled.payload.prompt).toContain(
+      '- Reference role: mood.png (reference): Use for cool mineral color mood only.',
+    );
+    expect(compiled.payload.metadata).toMatchObject({
+      qualityPresetId: 'product_or_ui_asset',
+      hasQualityIntent: true,
+    });
   });
 
   it('compiles Comfy local workflow input for adapter conformance fixtures', () => {

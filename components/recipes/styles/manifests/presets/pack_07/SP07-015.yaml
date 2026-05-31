@@ -12,16 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: 19th century cluttered room, Empire excess, mourning elegance, parlour theatre
-  form_and_line: Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails
-  color_palette: Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass
-  lighting_setup: Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra
-  material_texture: Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie
-  render_quality: Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance
-  spatial_distortion: None
-  atmosphere: Oppressive, historic, rich, cluttered memory, mothball, ancestral weight
-  key_features: Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy
-  creative_brief: Velvet swallows light, brocade fighting pattern against pattern in a war of abundance. Each surface carries the weight of ancestors who confused accumulation with permanence, every object a memorial to acquisition. The air is thick with mothball and memory, rooms that stopped breathing a century ago.
+  aesthetic: Interior victoriano de herencia pesada, exceso ornamental y teatralidad de salón histórico.
+  form_and_line: Densidad de patrón, marcos repetidos, drapeados voluminosos y siluetas de mobiliario sobrecargadas.
+  color_palette: Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y latón antiguo.
+  lighting_setup: Gaslight tenue, pools de lámpara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje espeso.
+  material_texture: Terciopelo, brocado, papel mural, mármol de chimenea, maderas oscuras y metal oscurecido.
+  render_quality: Densidad museográfica de época con lectura material opulenta y atmósfera histórica cerrada.
+  spatial_distortion: Profundidad estable saturada por acumulación decorativa en múltiples capas.
+  atmosphere: Opresiva, aristocrática, nostálgica y ceremoniosa.
+  key_features: Cortinajes de piso a techo, tapizados cargados, galerías de cuadros, ornamentación floral y mobiliario overstuffed.
+  creative_brief: >-
+    Define una gramática victoriana transferible por sobrecarga ornamental,
+    paleta profunda y luz baja ceremonial. El estilo debe expresar peso
+    histórico y acumulación material sin depender de una narrativa literaria.
 avoidRules:
   - minimal
   - bright

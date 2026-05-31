@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Tactical warfare on a polar fortress excavated in blue ice.
-  subject_treatment: Assault units with thermal equipment and magnetic ropes.
-  color_and_tone: Cold cyan, dark steel and orange equipment lights.
-  lighting_and_shadow: Diffuse cloudy sky with flashes of explosions.
-  texture_and_material: Frost, compacted snow, and armored plates.
-  camera_and_composition: Oblique view of playable map by sectors.
-  atmosphere_and_mood: Extreme cold, precision, and resilience.
-  rendering_and_quality: Military operation art with topographic reading.
+  aesthetic: Tactical shooter de asalto polar con enfoque en control por sectores, movilidad vertical y gestión climática.
+  subject_treatment: Escuadras de breacher/sniper/support con equipamiento térmico y anclajes magnéticos de ascenso.
+  color_and_tone: Cian gélido, acero oscuro y naranjas de instrumentación para visibilidad operacional.
+  lighting_and_shadow: Nublado difuso con destellos de artillería y blancos de nieve que alteran contraste perceptivo.
+  texture_and_material: Hielo compacto, nieve pisada, escarcha en blindaje y superficies antideslizantes de combate.
+  camera_and_composition: Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego identificables.
+  atmosphere_and_mood: Resistencia extrema, precisión táctica y desgaste ambiental continuo.
+  rendering_and_quality: Operation key art con lectura topográfica, claridad de objetivos y flujo de asedio.
 avoidRules:
   - watermark
   - text

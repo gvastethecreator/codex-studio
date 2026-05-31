@@ -109,6 +109,22 @@ bun run test -- packages/shared/src/generationContracts.test.ts apps/local-serve
 bun run check -- packages/shared/src/generationContracts.ts packages/shared/src/generationContracts.test.ts apps/local-server/src/jobRoutes.ts apps/local-server/src/jobRoutes.test.ts
 ```
 
+## Mejorar calidad de generación
+
+1. Keep quality semantics in provider-independent `Generation Task Spec.quality`, not React surfaces.
+2. Use compact quality presets (`image_general`, `image_edit`, `style_reference`, `sprite_sheet`, `texture`, `product_or_ui_asset`) to add intent without restoring huge Recipe Context prompts.
+3. Providers should compile quality sections with `composeGenerationQualityPromptSections()` before recipe directives, then keep stable output rules in Provider Session Contract.
+4. Do not duplicate the base prompt or `negativePrompt` inside quality fields; only add real structured hints such as style, color, constraints, and reference-role instructions.
+5. For live evidence, run dry evaluation first and store only job/catalog/transcript refs plus reviewer notes.
+
+Focused validation:
+
+```bash
+bun run test -- packages/shared/src/generationContracts.test.ts lib/recipeModules.test.ts apps/local-server/src/providers/codexProvider.test.ts apps/local-server/src/providers/externalProviderInputs.test.ts scripts/evaluate-recipe-prompts.test.ts
+bun run providers:verify
+bun run recipes:verify
+```
+
 ## Agregar UI o configuración de Settings
 
 1. Ask: is this Bootstrap Configuration, Studio Settings, or Provider Secret?

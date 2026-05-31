@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Colony simulation in a botanical orbital ring.
-  subject_treatment: Ecological engineers and autonomous agricultural drones.
-  color_and_tone: Vivid greens, clinical white, and space blue.
-  lighting_and_shadow: Diffused dome light with soft reflections.
-  texture_and_material: Solar panels, curved glass, and damp leaves.
-  camera_and_composition: Vista modular por sectores conectados.
-  atmosphere_and_mood: Technical optimism and sustainable growth.
-  rendering_and_quality: UI-friendly para city builder complejo.
+  aesthetic: Colony-builder orbital biofílico orientado a balance entre producción, sostenibilidad y expansión modular.
+  subject_treatment: Ingenieros ecológicos y drones agrícolas por función (siembra, mantenimiento, transporte).
+  color_and_tone: Verdes vivos, blanco clínico y azul espacial para lectura de salud sistémica.
+  lighting_and_shadow: Luz difusa de domo con reflejos suaves que facilitan lectura de overlays estratégicos.
+  texture_and_material: Paneles solares, vidrio curvo, sustrato húmedo y estructura compuesta de alta eficiencia.
+  camera_and_composition: Vista sectorial conectada con nodos de logística, energía y cultivo claramente jerarquizados.
+  atmosphere_and_mood: Optimismo técnico, crecimiento metódico y gestión de riesgo controlada.
+  rendering_and_quality: Visual city-builder UI-friendly con claridad de cadenas productivas y estados de colonia.
 avoidRules:
   - watermark
   - text

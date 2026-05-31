@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Dense block composition with visible micro-scenes.
   atmosphere: Hands-on solidarity and practical creativity.
   key_features: Open fab benches, repair kiosks, and shared tool depots.
-  creative_brief: A lunarpunk district where repair is celebrated as civic art.
+  creative_brief: >-
+    Preserve selenite artisan-block grammar as a reusable style system:
+    cooperative fabrication density, modular repair culture, and
+    practical-creative solidarity should remain coherent across subjects.
 avoidRules: [photoreal, sterile-corporate, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-076.webp }
 attributes:

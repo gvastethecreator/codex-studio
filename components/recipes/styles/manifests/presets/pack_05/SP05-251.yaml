@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Military bureaucracy and high-altitude spell warfare, trench maps and gemstone computation, ruthless child officer commanding impossible destruction in a pseudo-European war
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Severe, tactical, aerial, merciless
-  key_features: Aerial magic circles, military map props, child-officer contrast, war-cloud skies, tactical command poses
-  creative_brief: 'Cold calculus meets divine incantation at ten thousand feet, where a child-officer computes destruction through gemstone logic and aerial sigils. The contradiction lives in every frame: innocence wielding annihilation, bureaucracy dressed in magical radiance, war-clouds parting for the geometry of absolute command.'
+  aesthetic: Doctrina militar arcana de altura, con burocracia bélica y brutalidad estratégica en clave austero-imperial.
+  form_and_line: Silueta de oficial aérea, círculos de conjuro geométricos y lenguaje visual de mapa/orden táctico.
+  color_palette: Gris uniforme, rojo mando, azul glaciar de cielo de guerra y ámbar tenue de gema de cómputo.
+  lighting_setup: Contraluz de estrato nuboso, flare frío de vuelo y destellos duros de magia de artillería.
+  material_texture: Lana militar, cuero de arnés, metal aeronáutico, papel de cartografía y cristal de hechizo facetado.
+  render_quality: Frame táctico de alta precisión con lectura jerárquica de mando y conflicto aéreo.
+  spatial_distortion: Profundidad vertical de combate, compresión de escuadrón y diagonales de picado ofensivo.
+  atmosphere: Severa, calculadora e implacable.
+  key_features: Magia aérea vectorial, utilería cartográfica, contraste niñez-mando y nubes de teatro bélico.
+  creative_brief: >-
+    Define una gramática aerial-war-doctrine reusable donde disciplina de
+    estado mayor, magia balística y verticalidad de combate expresen poder
+    táctico sin romantizar la devastación.
 avoidRules:
   - realistic
   - 3d render

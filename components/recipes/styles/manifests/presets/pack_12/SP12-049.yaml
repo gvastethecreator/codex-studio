@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Night raid on a castle covered in magical thorns.
-  subject_treatment: Raid team with clearly differentiated roles.
-  color_and_tone: Moon blue, dark green, and ritual red.
-  lighting_and_shadow: Sparse torches and silver mist.
-  texture_and_material: Wet stone, vines, and old iron.
-  camera_and_composition: High walls with a clear entry point.
-  atmosphere_and_mood: Calculated risk and collective bravery.
-  rendering_and_quality: Dungeon-raid opening scene.
+  aesthetic: Dungeon-raid nocturno en fortaleza de espinas arcanas, orientado a asalto coordinado y progresión por capas defensivas.
+  subject_treatment: Equipo de incursión con roles explícitos de brecha, soporte, control y eliminación prioritaria.
+  color_and_tone: Azul lunar, verde oscuro y rojo ritual para lectura de ruta, trampa y objetivo.
+  lighting_and_shadow: Antorchas escasas, niebla plateada y sombras profundas para windows de entrada.
+  texture_and_material: Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.
+  camera_and_composition: Murallas altas con punto de entrada claro y rutas secundarias de infiltración.
+  atmosphere_and_mood: Calculada, valiente y tensa en cooperación.
+  rendering_and_quality: Raid-opening gameplay art con claridad de acceso, amenaza y priorización táctica.
 avoidRules:
   - watermark
   - text

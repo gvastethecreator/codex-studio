@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Clandestine card duel in a prismatic alley.
-  subject_treatment: Urban duelists with holographic avatars.
-  color_and_tone: Deep purple, cyan, and neon yellow.
-  lighting_and_shadow: Focused lighting from fractured signs.
-  texture_and_material: Wet asphalt, glass, and light metal.
-  camera_and_composition: Central table with crowd in a semicircle.
-  atmosphere_and_mood: Mental tension, high stakes, and style.
-  rendering_and_quality: Urban tactical PvP scene.
+  aesthetic: Card-duel clandestino urbano, orientado a mindgame, lectura de mano y presión psicológica competitiva.
+  subject_treatment: Duelistas callejeros con avatares holográficos y estilos de mazo distinguibles.
+  color_and_tone: Púrpura profundo, cian y amarillo neon para separar jugadores, efectos y estado crítico.
+  lighting_and_shadow: Señalética fracturada como key light focal para mesa y zonas de público.
+  texture_and_material: Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.
+  camera_and_composition: Mesa central con semicírculo de espectadores y focos en ventanas de jugada.
+  atmosphere_and_mood: Tensa, estilizada y de apuestas altas.
+  rendering_and_quality: Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.
 avoidRules:
   - watermark
   - text

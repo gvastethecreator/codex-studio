@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Windswept, romantic, mystical, heroic
-  key_features: Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses
-  creative_brief: Red skies meet wind-swept capes and a dragon mech kneels before a girl who holds the tarot deck of fate. Prophetic romance rides the jet stream between shojo heartbreak and shonen valor. Every frame is a card turned, every glance a destiny unfolding.
+  aesthetic: Híbrido shōjo-mecha de profecía romántica, con caballería, fatalismo de tarot y melancolía de cielo rojo.
+  form_and_line: Curva emocional en vestuario y cabello, contraste con mecha dracónico angular y pose caballeresca teatral.
+  color_palette: Carmín crepuscular, azul viento, dorado arcano, plata de armadura y violeta profético.
+  lighting_setup: Backlight ventoso de horizonte rojo, glow místico de carta y key dramático de duelo sentimental.
+  material_texture: Capa batida por viento, metal caballeresco, piedra de corte, brillo de tarot y humo de campo bélico.
+  render_quality: Fantasía romántica de alto dramatismo con fusión legible de épica mecha y sensibilidad shōjo.
+  spatial_distortion: Profundidad por corrientes de viento y énfasis en diagonales de destino entre personaje y máquina.
+  atmosphere: Ventosa, mística y apasionada, con tensión entre amor y guerra.
+  key_features: Simbolismo de tarot, capa en ráfaga, knight-mecha dracónico y encuadre de mirada predestinada.
+  creative_brief: >-
+    Define una gramática windblown-prophecy reusable donde romance fatalista,
+    iconografía adivinatoria y caballería mecha construyan una épica emotiva y
+    transferible.
 avoidRules:
   - realistic
   - 3d render

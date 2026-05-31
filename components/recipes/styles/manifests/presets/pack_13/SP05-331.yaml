@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Hyper-finished modern hero illustration, chrome musculature, destructive perspective, city-cleaving punch clarity, lavish draftsmanship aimed at maximum spectacle
-  form_and_line: Precision contour, anatomy-rich detailing, ultra-clean action line control
+  aesthetic: Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y destrucción urbana coreografiada con precisión quirúrgica.
+  form_and_line: Contorno de precisión absoluta, detalle anatómico denso y control ultralimpio de líneas de acción.
   color_palette: Steel grey, explosion orange, hero red, electric cyan, soot black, flash white
-  lighting_setup: HDR impact lighting, specular hero sheen, explosion backlight, debris-lit action
-  material_texture: Polished metal and skin finish, debris granularity, smoke plumes, high-detail rubble
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Iluminación HDR de impacto, sheen especular heroico, contraluz de explosión y relleno por escombro incandescente.
+  material_texture: Acabado pulido en piel/metal, granulado de debris, columnas de humo y rubble de microdetalle.
+  render_quality: Action frame premium con claridad de lectura cinética y acabado editorial de alto brillo.
   spatial_distortion: Extreme foreshortening, fist-to-camera compression, spectacle-first city scale, perfect action readability
-  atmosphere: Polished, explosive, metallic, triumphant
-  key_features: Chrome-like anatomy finish, giant impact craters, city-shatter perspective, lavish detail density, poster-hero posing
-  creative_brief: Perfection weaponized. Every muscle rendered, every impact crater mapped, the body becomes a chrome-plated argument for maximum spectacle. Nothing is left to chance, nothing is left unpolished.
+  atmosphere: Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.
+  key_features: Anatomía chrome-like, cráteres de impacto, perspectiva city-shatter y posing de póster heroico.
+  creative_brief: >-
+    Construye una gramática hero-impact reusable donde acabado hiperdefinido,
+    foreshortening extremo y destrucción urbana legible establezcan espectáculo
+    sin sacrificar claridad compositiva.
 avoidRules:
   - still
   - calm

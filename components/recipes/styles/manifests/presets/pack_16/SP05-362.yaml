@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: High-stakes golf rivalry with flamboyant color, long fairway compositions, fashion-forward competitors, absurd skill confidence and underground-to-elite course drama
-  form_and_line: Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control
-  color_palette: Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast
-  lighting_setup: Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast
-  material_texture: Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture
-  render_quality: Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish
-  spatial_distortion: Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues
-  atmosphere: Flashy, precise, playful, fierce
-  key_features: Fairway depth lines, golf-swing silhouettes, luxury-course read, color-coded rivals, shot-trace arcs
-  creative_brief: Fairways stretch like chromatic ribbons toward impossible greens where fashion-forward rivals trade shot-traces like signature moves. Golf becomes spectacle, each swing a declaration of identity painted across the luxury-course sky.
+  aesthetic: Golf-rivalry de alto riesgo con estilización glam, centrada en precisión de swing y duelo de identidad competitiva.
+  form_and_line: Arco de swing elegante, postura de control fino y silueta de rival claramente codificada.
+  color_palette: Verdes de fairway premium, blancos luminosos, acentos cromáticos de rival y cielo de contraste limpio.
+  lighting_setup: Luz abierta de campo con focos dramáticos en tee, impacto y vuelo de bola.
+  material_texture: Césped recortado de alta gama, guante y grip detallados, tejido deportivo de lujo y metal de palo pulido.
+  render_quality: Sports frame de precisión vistosa con legibilidad de línea de tiro y presión de match.
+  spatial_distortion: Profundidad larga de fairway con trazas de bola y compresión selectiva de distancia al green.
+  atmosphere: Lujosa, precisa, lúdica y ferozmente competitiva.
+  key_features: Líneas de fairway, silueta de swing, trazas de tiro y contraste de rivales codificados.
+  creative_brief: >-
+    Construye una gramática reusable de fairway-duel donde precisión de golpe,
+    lectura de trayectoria y teatralidad competitiva sostengan estilo sin
+    encerrar el preset en una escena puntual.
 avoidRules:
   - realistic
   - 3d render

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Strategic battlefield inspired by an astral board.
-  subject_treatment: Archetypal units with strict visual hierarchy.
-  color_and_tone: Deep indigo, silver, and turquoise accents.
-  lighting_and_shadow: Uniform cosmic glow with skill focal highlights.
-  texture_and_material: Stellar marble, liquid energy, and fine metal.
-  camera_and_composition: Soft top-down view for systemic readability.
-  atmosphere_and_mood: Tactical calm and cerebral anticipation.
-  rendering_and_quality: Arte de reglas claras para strategy game.
+  aesthetic: Auto-battler táctico astral inspirado en tablero, centrado en economía de unidades, sinergias y posicionamiento previo.
+  subject_treatment: Unidades arquetípicas con jerarquía visual estricta por rol (frontline, burst, support, control).
+  color_and_tone: Índigo profundo, plata y acentos turquesa para codificar rareza, estado y alineación.
+  lighting_and_shadow: Brillo cósmico uniforme con highlights focales para ultimates y activaciones clave.
+  texture_and_material: Mármol estelar, energía fluida y metal fino de interfaz arcano-tecnológica.
+  camera_and_composition: Top-down suave con cuadrícula implícita y espacios limpios para lectura sistémica.
+  atmosphere_and_mood: Calma cerebral, cálculo estratégico y anticipación táctica.
+  rendering_and_quality: Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.
 avoidRules:
   - watermark
   - text

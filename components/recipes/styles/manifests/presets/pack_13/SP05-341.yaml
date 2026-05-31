@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Expressive ensemble action with engineering literacy, practical machinery, dirt and family, humor and grief interlocked through generous draftsmanship and industrial empathy
-  form_and_line: Confident clean contour, machine-and-face detail balance, expressive practical linework
+  aesthetic: Aventura industrial-humanista con ensamble coral, ingeniería práctica y emocionalidad familiar entre humor y duelo.
+  form_and_line: Contorno limpio y seguro, balance rostro-máquina y linework expresivo funcional.
   color_palette: Steel blue, workwear brown, ember orange, cream, engine red, soot grey
-  lighting_setup: Workshop practicals, sunset action glow, warm-and-cool industrial contrast, emotionally readable highlights
-  material_texture: Machine grease, cloth uniforms, workshop wood, dusted metal, scuffed leather
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible en acción.
+  material_texture: Grasa mecánica, telas de trabajo, madera de taller, metal empolvado y cuero marcado por uso.
+  render_quality: Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.
   spatial_distortion: Strong readable anatomy, ensemble-balanced composition, practical action depth, robust physical posing
-  atmosphere: Warm, strong, practical, emotional
-  key_features: Mechanical detail, ensemble chemistry, family-coded gestures, practical costumes, humor-to-grief tonal flexibility
-  creative_brief: Gears turn on love. Machines inherit the warmth of the hands that build them, and family is measured in spanner wrenches and shared silence. Industry and intimacy are two names for the same engine.
+  atmosphere: Cálida y fuerte, con pragmatismo emocional de equipo.
+  key_features: Detalle mecánico legible, química de ensamble, gestos family-coded y oscilación tonal humor-duelo.
+  creative_brief: >-
+    Construye una gramática reusable de mechanical-warmth donde oficio técnico,
+    vínculo humano y puesta en escena de grupo funcionen como un mismo motor
+    visual.
 avoidRules:
   - still
   - calm

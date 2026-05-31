@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Muscle-defined cel-era combat, mountain-breaking impact, screaming aura power-ups, iconic stare-downs, cratered landscapes, hard-shadow spectacle and emotional yelling
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Explosive, iconic, relentless, mythic
-  key_features: Aura flares, craters, battle-torn rocks, screaming profile shots, planet-scale action stakes
-  creative_brief: Screams that crack continents, hair that defies physics, the body as divine engine of destruction pushed past every conceivable limit. The planet trembles when these warriors lock eyes, and mountains become collateral damage in arguments settled through fists and fury. Every battle is a conversation with mortality conducted at volumes that register on seismographs.
+  aesthetic: Shonen de potencia absoluta noventera, con duelo mítico de aura y escala planetaria en clave de leyenda combativa.
+  form_and_line: Contorno muscular contundente, foreshortening agresivo y acting de grito-catarsis de alto impacto.
+  color_palette: Amarillos eléctricos de aura, azules de cielo de batalla, verdes rocosos y naranjas de choque energético.
+  lighting_setup: Cel contrastado con rim extremo, highlights duros y separación de sombra para fuerza corporal.
+  material_texture: Roca fracturada, polvo de cráter, grano de cel clásico y fondos pintados de era dorada.
+  render_quality: Acabado premium 90s con lectura inmediata de power-up, choque físico y stakes descomunales.
+  spatial_distortion: Escala hiperexpresiva con anatomía exagerada y perspectiva cinética de impacto frontal.
+  atmosphere: Explosiva, icónica, incansable, mítica.
+  key_features: Estelas de aura, terrenos devastados, perfiles de grito y coreografía de rivalidad trascendente.
+  creative_brief: Construye una gramática reusable de combate de poder desatado para cualquier sujeto, priorizando energía corporal, escala extrema y dramatismo de transformación.
 avoidRules:
   - realistic
   - 3d render

@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Rotational composition around a central dance clock.
   atmosphere: Ceremonial motion and elegant precision.
   key_features: Pendulum columns, timer balconies, and waltz automata.
-  creative_brief: A clockpunk ballroom where every dance step is mechanically coordinated.
+  creative_brief: >-
+    Preserve pendulum court-ballroom grammar as a reusable style system:
+    ceremonial kinetic symmetry, pendulum-governed choreography, and
+    luxurious mechanical etiquette should remain coherent across subjects.
 avoidRules: [photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-086.webp }
 attributes:

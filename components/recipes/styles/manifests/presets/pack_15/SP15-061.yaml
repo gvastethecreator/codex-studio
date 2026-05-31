@@ -7,18 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Interplanetary bazaar inside a raycraft service hangar.
-  form_and_line: Arched hangars, cargo lanes, and antenna ribs.
-  color_palette: Orange, cyan, and steel gray.
-  lighting_setup: Harsh skylight and ion strip accents.
-  material_texture: Riveted metal, polymer crates, and fuel-stained deck.
-  render_quality: Dynamic pulp-scifi concept.
-  spatial_distortion: Deep hangar vanishing lines.
-  atmosphere: Hustle, risk, and frontier commerce.
-  key_features: Raygun stalls, cargo skiffs, and launch gantries.
-  creative_brief: A raypunk marketplace where exploration hardware is everyday currency.
+  aesthetic: Raypunk barter chaos where alien hardware, hand-painted price codes, and launch rituals collide in one overloaded hangar language.
+  form_and_line: Cathedral hangar arches, diagonal cargo lanes, antenna-rib canopies, raygun display forks, and stacked skiff silhouettes.
+  color_palette: Safety orange, ion cyan, oil-silver steel, and small magenta permit stamps.
+  lighting_setup: Brutal roof slits, cyan ion strips under tables, and hot orange hazard pools around active engines.
+  material_texture: Riveted hull metal, translucent polymer crates, fuel-stained deck paint, chipped enamel tags, and greasy cable braids.
+  render_quality: Dense pulp-scifi production concept with readable stall logic, no empty generic sci-fi space.
+  spatial_distortion: Deep hangar perspective compressed by booth clutter, suspended cargo nets, and gantry shadows.
+  atmosphere: Improvised trade, launch anxiety, black-market optimism, and frontier noise.
+  key_features: Raygun stall forks, skiff repair altars, cargo-lane glyphs, launch gantry silhouettes, and hand-numbered fuel tokens.
+  creative_brief: >-
+    Push ray bazaar-hangar as a reusable visual system: every subject should
+    feel priced, repaired, bartered, and almost ready to launch, with commerce
+    graphics fused directly into spacecraft service hardware.
 avoidRules: [photoreal, cyberpunk-grime, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-061.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-grime, medieval, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

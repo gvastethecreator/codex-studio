@@ -12,16 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Morphing anatomy and ecstatic motion, dance-like action, color bursts, reality bending under pure expressive velocity, anti-stiff animation freedom made visual
-  form_and_line: Elastic contour, rough brush taper, unstable shape language, rhythm-led line motion
+  aesthetic: Expresionismo cinético de anatomía elástica, donde la realidad se pliega al gesto y la velocidad emocional gobierna la imagen.
+  form_and_line: Contorno gomoso, taper de brocha nerviosa, siluetas inestables y curvas de movimiento tipo danza explosiva.
   color_palette: Acid cyan, burnt orange, grape purple, hot pink, black ink, fever yellow
-  lighting_setup: Graphic color-flash lighting, abrupt stage-like shifts, expression-over-realism illumination
-  material_texture: Paint-smear energy, rough digital brush, poster-flat color blocks, animation-boil traces
-  render_quality: Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering
+  lighting_setup: Flashes cromáticos abruptos de escenario, cambios de key violentos y prioridad expresiva sobre realismo fotométrico.
+  material_texture: Mancha pictórica energética, pincel digital áspero, bloques flat de póster y boil de animación visible.
+  render_quality: Frame de sakuga hiperactivo con legibilidad de impacto y caos controlado por ritmo.
   spatial_distortion: Constant anatomical morphing, melting perspective, dance-curve poses, explosive timing shapes
-  atmosphere: Elastic, ecstatic, surreal, alive
-  key_features: Morphing anatomy, dance-motion arcs, wild color bursts, anti-model dynamism, velocity-first staging
-  creative_brief: Animation in revolt against the frozen frame. Bodies liquefy into gesture, color detonates at the point of impact, and the line between ecstasy and chaos vanishes in a smear of velocity. Rigidity is the only crime here.
+  atmosphere: Elástica, extática y febril, siempre al borde de romper la forma.
+  key_features: Morphing anatómico continuo, arcos bailados, bursts de color ácido y staging velocity-first anti-model.
+  creative_brief: >-
+    Define una gramática de rubber-reality transferible donde anatomía mutable,
+    color detonante y timing gestual extremo sustituyan rigidez por energía.
+    Debe sentirse en rebelión permanente contra el frame congelado.
 avoidRules:
   - still
   - calm

@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Neo-transit crystalpunk urbanism with militarized commuter infrastructure and high-throughput mobility design.
-  subject_treatment: Civilian-military overlap silhouettes, station sentry archetypes, and transit-role readable population layering.
-  color_and_tone: Electric cyan cores, clinical whites, lilac haze transitions, and steel-cool neutrals with alert-state accents.
-  lighting_and_shadow: Distributed platform luminaires, reflective canopy spill, holographic signage glow, and controlled hard-edge shadows.
-  texture_and_material: Faceted smart-glass skins, brushed transit alloys, anti-slip platform composites, and volumetric hologram artifacts.
-  camera_and_composition: Hub-centered circulation geometry with radial path vectors, multi-level depth lanes, and clear tactical sightlines.
-  atmosphere_and_mood: Ordered velocity, civic sophistication, and subdued security tension.
-  rendering_and_quality: AAA action-RPG environment concept quality with strong navigational readability and polished futurist material response.
+  aesthetic: Urban-action crystalpunk de movilidad masiva, centrado en control de estación, tránsito y seguridad cívica militarizada.
+  subject_treatment: Siluetas cívico-militares por función de estación (control, mantenimiento, respuesta).
+  color_and_tone: Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.
+  lighting_and_shadow: Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.
+  texture_and_material: Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.
+  camera_and_composition: Hub radial multi-nivel con vectores de circulación y sightlines tácticas limpias.
+  atmosphere_and_mood: Ordenada, veloz y con tensión de seguridad contenida.
+  rendering_and_quality: AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.
 avoidRules:
   - watermark
   - text

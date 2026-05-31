@@ -12,14 +12,14 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Esports arena for drafting prismatic heroes.
-  subject_treatment: Characters with highly differentiated silhouettes.
-  color_and_tone: Controlled multicolor palette over a neutral background.
-  lighting_and_shadow: Stage spotlights and LED panels.
-  texture_and_material: Clean armor, crystal, and energy.
-  camera_and_composition: Frontal reveal-style presentation.
-  atmosphere_and_mood: Competition, hype, and visual precision.
-  rendering_and_quality: Promotional material for the draft phase.
+  aesthetic: Hero-draft arena de esports, centrada en selección estratégica, counterpicks y lectura instantánea de roster.
+  subject_treatment: Héroes de silueta altamente diferenciada por clase, función y amenaza temprana.
+  color_and_tone: Multicolor controlado sobre base neutra para evitar ruido y preservar claridad competitiva.
+  lighting_and_shadow: Spotlights escénicos y paneles LED que refuerzan turnos de pick/ban.
+  texture_and_material: Armaduras limpias, cristal de energía y materiales de escenario broadcast-ready.
+  camera_and_composition: Presentación frontal de reveal con jerarquía de picks y foco en composición de equipo.
+  atmosphere_and_mood: Competitiva, hypeada y visualmente precisa.
+  rendering_and_quality: Draft-phase promotional art con legibilidad superior de roles, counters y narrativa competitiva.
 avoidRules:
   - watermark
   - text

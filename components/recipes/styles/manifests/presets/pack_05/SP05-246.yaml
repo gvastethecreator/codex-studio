@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Arabian Nights adventure with bright jewel magic, bustling bazaars, dungeon towers, friendship and empire intrigue rendered through warm fantasy color
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Colorful, adventurous, magical, expansive
-  key_features: Bazaar detail, jewel magic, dungeon towers, caravan silhouettes, empire-versus-friendship staging
-  creative_brief: Bazaar spices and jewel magic swirl through labyrinth-carved kingdoms where friendship dares to challenge empire. Caravan silhouettes cut across golden horizons; every dungeon conquered is a conversation between courage and greed. Arabian Nights meets shonen fire in warm, saturated adventure.
+  aesthetic: Aventura de fantasía caravanera con imaginería de bazar, magia joya y tensión entre amistad itinerante e imperio.
+  form_and_line: Ornamento arabesco dinámico, silueta de caravana y torres-laberinto verticales con lectura de ruta épica.
+  color_palette: Ámbar desértico, turquesa brillante, rojo granate, verde esmeralda y azul noche de mercado.
+  lighting_setup: Sol cálido de arena, luces de mercado colgante y destellos mágicos facetados tipo gema.
+  material_texture: Tejidos bordados, latón trabajado, piedra caliza, polvo de viaje y cristal encantado.
+  render_quality: Fantasía saturada de aventura móvil con riqueza decorativa y claridad narrativa de expedición.
+  spatial_distortion: Profundidad por avenida de bazar y horizonte de dunas, con verticalidad de dungeon monumental.
+  atmosphere: Colorida, expansiva y enérgica, de descubrimiento continuo.
+  key_features: Bazar vivo, caravanas, torres-laberinto, magia gema y conflicto comercio-autoridad.
+  creative_brief: >-
+    Construye una gramática labyrinth-caravan reusable donde densidad de mercado,
+    cromática cálida y aventura de ruta articulen un mundo de fábula comercial
+    y política.
 avoidRules:
   - realistic
   - 3d render

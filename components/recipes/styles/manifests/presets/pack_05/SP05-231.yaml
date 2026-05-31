@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Musical metaphysics, blue-blood alien war, coral mecha forms, city-barrier mystery, operatic mecha emotion sung through strange sacred visuals
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Operatic, mysterious, blue-lit, mournful
-  key_features: Coral mecha shapes, musical-symbol motifs, sacred city scale, strange blue blood accents, lyrical combat framing
-  creative_brief: Coral mecha rise from blue-blood seas while music becomes the shape of catastrophe and longing. Sacred geometry overwrites weaponry; combat is liturgy, each sortie a psalm sung into unknown skies. The barrier between self and world dissolves in resonant color.
+  aesthetic: Ópera mecha metafísica con imaginería coral, simbolismo sonoro y melancolía ritual en escala de ciudad-santuario.
+  form_and_line: Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas de armadura.
+  color_palette: Azul abisal y cobalto litúrgico con acentos coral rojo, blanco sacramental y negro de vacío acuoso.
+  lighting_setup: Halo ceremonial azul, contraluces de barrera urbana y destellos resonantes sincronizados al motivo musical.
+  material_texture: Carcasa nacarada, estrías coralinas, metal húmedo, pátina salina y superficies de energía translúcida.
+  render_quality: Alta definición simbólica con legibilidad de iconografía sacra y dramatismo de escala operática.
+  spatial_distortion: Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno visual.
+  atmosphere: Sagrada, enigmática y doliente, como himno de guerra en cámara lenta.
+  key_features: Mecha coral, sangre azul alienígena, motivos musicales geométricos y combate tratado como liturgia.
+  creative_brief: >-
+    Define una gramática mecha-liturgy reusable donde biotectónica coral,
+    resonancia musical y monumentalidad sacra articulen la identidad sin
+    depender de una escena puntual.
 avoidRules:
   - realistic
   - 3d render

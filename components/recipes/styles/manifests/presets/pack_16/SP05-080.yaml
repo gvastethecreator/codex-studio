@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Studio 4°C style, incredibly fluid water animation, cosmic ocean imagery, highly detailed eyes, flowing water motion, spiritual scale, delicate faces, aquarium-mystery, meteor-fall origin, whale-song communion, oceanic-cosmos merge
-  form_and_line: Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening
-  color_palette: Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature
-  lighting_setup: Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth
-  material_texture: Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness
-  render_quality: Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality
-  spatial_distortion: Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design
-  atmosphere: Mystical, aquatic, ethereal, cosmic
-  key_features: Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry
-  creative_brief: Water remembers everything — the ocean is a memory palace where whale songs echo ancient truths and human eyes hold the depth of cosmos. Fluid animation dissolves the boundary between girl and sea, between body and universe. Let each frame float untethered, suspended in the amniotic glow of creation itself.
+  aesthetic: Lirismo oceánico-cósmico de contemplación mística, con biología marina y trascendencia sensorial.
+  form_and_line: Línea delicada y fluida, anatomía etérea y movimiento acuático continuo de baja fricción.
+  color_palette: Turquesas abisales, azules ultraprofundos, plateados lunares y destellos bioluminiscentes.
+  lighting_setup: Luz submarina difusa, caústicas suaves y halos celestes que funden agua y firmamento.
+  material_texture: Película de agua translúcida, piel húmeda luminosa, partículas suspendidas y fondos de profundidad orgánica.
+  render_quality: Acabado cinematográfico de alta pureza visual con foco en fluidez y silencio emocional.
+  spatial_distortion: Escalas líquidas entre macrocosmos marino y proximidad íntima para experiencia de inmersión total.
+  atmosphere: Mística, acuática, etérea, cósmica.
+  key_features: Movimiento de marea coreográfico, mirada contemplativa y fusión iconográfica de océano-universo.
+  creative_brief: Define una gramática reusable de espiritualidad oceánica cósmica para cualquier sujeto, equilibrando fluidez material, asombro contemplativo y resonancia trascendente.
 avoidRules:
   - realistic
   - 3d render

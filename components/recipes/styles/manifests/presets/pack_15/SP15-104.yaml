@@ -16,7 +16,10 @@ visualDna:
   spatial_distortion: Sweeping market aisle under layered living roofs.
   atmosphere: Exchange, nourishment, and mutual dependence.
   key_features: Symbiotic stalls, nutrient kiosks, and canopy vent petals.
-  creative_brief: A biopunk marketplace where commerce is sheltered by cooperative living architecture.
+  creative_brief: >-
+    Preserve symbiont market-canopy grammar as a reusable style system:
+    cooperative bio-canopy commerce, nutrient-linked stall ecology, and
+    mutualist public exchange should remain coherent across subjects.
 avoidRules: [photoreal, dystopian, harsh-neon, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-104.webp }
 attributes:
