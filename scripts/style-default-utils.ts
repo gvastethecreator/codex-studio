@@ -2,11 +2,13 @@ import { stat } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
+import { Effect } from 'effect';
 import type { StyleRuntimePreset } from '../components/recipes/styles/runtimeTypes';
 import { loadStyleManifestGraph, styleManifestsDir } from './style-manifest-files';
 import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
 import { compareStylePackIdsForDisplay } from '../components/recipes/styles/packOrdering';
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
+import { runWithScriptRetry } from './runtimePolicy';
 
 export const rootDir = process.cwd();
 const homeDir = process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir();
@@ -112,31 +114,29 @@ export async function loadPacks() {
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
   const apiBase = process.env.STUDIO_API_BASE || 'http://localhost:17223';
   const attempts = Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
-  let lastError: unknown;
 
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      const headers = new Headers(init?.headers);
-      headers.set('Content-Type', 'application/json');
+  return runWithScriptRetry(
+    () =>
+      Effect.tryPromise(async () => {
+        const headers = new Headers(init?.headers);
+        headers.set('Content-Type', 'application/json');
 
-      const response = await fetch(`${apiBase}${pathName}`, {
-        ...init,
-        headers,
-      });
-      if (!response.ok) {
-        throw new Error(
-          `${init?.method || 'GET'} ${pathName} failed: ${response.status} ${await response.text()}`,
-        );
-      }
-      return response.json() as Promise<T>;
-    } catch (error) {
-      lastError = error;
-      if (attempt === attempts) break;
-      await Bun.sleep(5000);
-    }
-  }
-
-  throw lastError instanceof Error ? lastError : new Error(String(lastError));
+        const response = await fetch(`${apiBase}${pathName}`, {
+          ...init,
+          headers,
+        });
+        if (!response.ok) {
+          throw new Error(
+            `${init?.method || 'GET'} ${pathName} failed: ${response.status} ${await response.text()}`,
+          );
+        }
+        return response.json() as Promise<T>;
+      }),
+    {
+      attempts,
+      delayMs: 5_000,
+    },
+  );
 }
 
 export function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {

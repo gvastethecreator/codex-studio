@@ -3,8 +3,10 @@ import { describe, expect, it } from 'vite-plus/test';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { ImageGenerationConfig } from '../types';
 import {
+  buildLocalGenerationFailureOutcome,
   buildJobAssets,
   buildLocalGenerationTaskPrompt,
+  classifyLocalGenerationFailureReason,
   createLocalRunBatchId,
   createLocalRunTaskSpecId,
   resolveLocalGenerationProviderId,
@@ -137,5 +139,45 @@ describe('localGenerationRun', () => {
         strength: 1,
       },
     ]);
+  });
+
+  it('classifies lifecycle failures as cancelled, timeout, or failed', () => {
+    const cancelled = new Error('Operation cancelled by user');
+    cancelled.name = 'AbortError';
+
+    expect(classifyLocalGenerationFailureReason(cancelled)).toBe('cancelled');
+    expect(
+      classifyLocalGenerationFailureReason(new Error('Timed out waiting for job completion')),
+    ).toBe('timeout');
+    expect(classifyLocalGenerationFailureReason(new Error('provider failed'))).toBe('failed');
+  });
+
+  it('builds typed lifecycle failure outcomes', () => {
+    const timeoutOutcome = buildLocalGenerationFailureOutcome({
+      error: new Error('timeout during watch'),
+      durationMs: 1200,
+    });
+
+    expect(timeoutOutcome).toMatchObject({
+      status: 'failed',
+      reason: 'timeout',
+      message: 'timeout during watch',
+      durationMs: 1200,
+    });
+
+    const cancelled = new Error('Operation cancelled by user');
+    cancelled.name = 'AbortError';
+
+    const cancelledOutcome = buildLocalGenerationFailureOutcome({
+      error: cancelled,
+      durationMs: 350,
+    });
+
+    expect(cancelledOutcome).toMatchObject({
+      status: 'cancelled',
+      reason: 'cancelled',
+      message: 'Operation cancelled by user',
+      durationMs: 350,
+    });
   });
 });

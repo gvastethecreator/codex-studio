@@ -28,6 +28,8 @@ import {
   valueOf,
   writeRepoWebpAsset,
 } from './style-default-utils';
+import { Effect } from 'effect';
+import { pollWithScriptTimeout, sleepWithEffect } from './runtimePolicy';
 
 interface PendingPreset {
   pack: StyleRuntimePack;
@@ -42,6 +44,8 @@ const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
 const studioDbPath = resolveLibraryPathFromRoot(libraryDir, 'studio.sqlite');
 const IMAGE_RETRY_ATTEMPTS = Math.max(1, Number(process.env.CODEX_IMAGEGEN_RETRY_ATTEMPTS || 2));
 const WAIT_POLL_MS = 800;
+const WAIT_TIMEOUT_MS_RAW = Number(process.env.CODEX_IMAGEGEN_WAIT_TIMEOUT_MS || 0);
+const WAIT_TIMEOUT_MS = Number.isFinite(WAIT_TIMEOUT_MS_RAW) ? Math.max(0, WAIT_TIMEOUT_MS_RAW) : 0;
 const RETRY_RETRY_DELAY_MS = 600;
 
 const CATEGORY_BASE_PROMPTS: Record<string, string> = {
@@ -577,9 +581,7 @@ function categorySceneAnchor(pack: StyleRuntimePack, category: string, seed?: st
 }
 
 function presetMotif(preset: StyleRuntimePreset) {
-  return PRESET_MOTIFS[
-    hashString(`${preset.id}:${preset.name}`) % PRESET_MOTIFS.length
-  ];
+  return PRESET_MOTIFS[hashString(`${preset.id}:${preset.name}`) % PRESET_MOTIFS.length];
 }
 
 function pickVariant(list: string[], seed: string) {
@@ -742,9 +744,10 @@ function readJobStatusFromSqlite(jobId: string) {
   try {
     const db = new Database(studioDbPath, { readonly: true });
     try {
-      return db
-        .query('SELECT id, status, error FROM jobs WHERE id = ? LIMIT 1')
-        .get(jobId) as Pick<Job, 'id' | 'status' | 'error'> | null;
+      return db.query('SELECT id, status, error FROM jobs WHERE id = ? LIMIT 1').get(jobId) as Pick<
+        Job,
+        'id' | 'status' | 'error'
+      > | null;
     } finally {
       db.close(false);
     }
@@ -778,21 +781,42 @@ function readAssetForJobFromSqlite(jobId: string) {
 }
 
 async function waitForJob(jobId: string) {
-  while (true) {
-    const job =
-      readJobStatusFromSqlite(jobId) ??
-      (() => {
-        throw new Error(`Job ${jobId} is not visible in local studio.sqlite`);
-      })();
-    if (job.status === 'completed') return job;
-    if (job.status === 'failed' || job.status === 'cancelled') {
-      throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);
-    }
-    if (job.status === 'needs_review') {
-      throw new Error(`Job ${jobId} status needs_review`);
-    }
-    await Bun.sleep(WAIT_POLL_MS);
+  const pollEffect = pollWithScriptTimeout(
+    () =>
+      Effect.try({
+        try: () =>
+          readJobStatusFromSqlite(jobId) ??
+          (() => {
+            throw new Error(`Job ${jobId} is not visible in local studio.sqlite`);
+          })(),
+        catch: (error) => (error instanceof Error ? error : new Error(String(error))),
+      }),
+    {
+      pollMs: WAIT_POLL_MS,
+      timeoutMs: WAIT_TIMEOUT_MS > 0 ? WAIT_TIMEOUT_MS : Number.MAX_SAFE_INTEGER,
+      timeoutMessage:
+        WAIT_TIMEOUT_MS > 0
+          ? `Job ${jobId} timed out after ${WAIT_TIMEOUT_MS} ms while waiting in local studio.sqlite`
+          : `Job ${jobId} timed out while waiting in local studio.sqlite`,
+      isTerminal: (job) =>
+        job.status === 'completed' ||
+        job.status === 'failed' ||
+        job.status === 'cancelled' ||
+        job.status === 'needs_review',
+    },
+  );
+
+  const job = await Effect.runPromise(pollEffect);
+
+  if (job.status === 'completed') return job;
+  if (job.status === 'failed' || job.status === 'cancelled') {
+    throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);
   }
+  if (job.status === 'needs_review') {
+    throw new Error(`Job ${jobId} status needs_review`);
+  }
+
+  throw new Error(`Job ${jobId} reached unsupported terminal status: ${job.status}`);
 }
 
 async function newestAssetForJob(jobId: string) {
@@ -974,7 +998,7 @@ async function processPreset(target: PendingPreset) {
       console.warn(
         `[txt2img-retry-needed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`,
       );
-      await Bun.sleep(RETRY_RETRY_DELAY_MS);
+      await sleepWithEffect(RETRY_RETRY_DELAY_MS);
     }
   }
 

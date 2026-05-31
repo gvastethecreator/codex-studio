@@ -6,11 +6,57 @@ type Listener<T> = (payload: T) => void;
 
 const TERMINAL_STATUSES = new Set(['completed', 'failed', 'cancelled', 'needs_review']);
 
+export interface StudioEventReconnectPolicy {
+  initialDelayMs: number;
+  maxDelayMs: number;
+}
+
+export const DEFAULT_STUDIO_EVENT_RECONNECT_POLICY: StudioEventReconnectPolicy = {
+  initialDelayMs: 1000,
+  maxDelayMs: 30_000,
+};
+
+export function normalizeStudioEventReconnectPolicy(
+  policy: Partial<StudioEventReconnectPolicy>,
+): StudioEventReconnectPolicy {
+  const initialDelayMs = Math.max(
+    100,
+    Math.floor(policy.initialDelayMs ?? DEFAULT_STUDIO_EVENT_RECONNECT_POLICY.initialDelayMs),
+  );
+  const maxDelayMs = Math.max(
+    initialDelayMs,
+    Math.floor(policy.maxDelayMs ?? DEFAULT_STUDIO_EVENT_RECONNECT_POLICY.maxDelayMs),
+  );
+
+  return {
+    initialDelayMs,
+    maxDelayMs,
+  };
+}
+
+export function isTerminalStudioJobStatus(status: Job['status']) {
+  return TERMINAL_STATUSES.has(status);
+}
+
 export class JobWatchTimeoutError extends Error {
   constructor(jobId: string) {
     super(`Local studio job ${jobId} timed out`);
     this.name = 'JobWatchTimeoutError';
   }
+}
+
+export class JobWatchCancelledError extends Error {
+  constructor() {
+    super('Operation cancelled by user');
+    this.name = 'AbortError';
+  }
+}
+
+export function createJobTerminalStatusError(job: Job) {
+  if (job.status === 'cancelled') {
+    return new JobWatchCancelledError();
+  }
+  return new Error(job.error || `Local studio job ${job.status}`);
 }
 
 export interface StudioEventStream {
@@ -28,14 +74,17 @@ export interface StudioEventStream {
 class BrowserStudioEventStream implements StudioEventStream {
   private source: EventSource | null = null;
   private closed = false;
-  private reconnectTimer: number | null = null;
-  private reconnectDelay = 1000;
+  private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
+  private reconnectDelay = DEFAULT_STUDIO_EVENT_RECONNECT_POLICY.initialDelayMs;
   private jobListeners = new Map<string, Set<Listener<Job>>>();
   private assetListeners = new Set<Listener<Asset>>();
   private logListeners = new Set<Listener<SystemLog>>();
   private connectionListeners = new Set<Listener<boolean>>();
 
-  constructor(private readonly apiBase = getStudioApiBase()) {
+  constructor(
+    private readonly apiBase = getStudioApiBase(),
+    private readonly reconnectPolicy: StudioEventReconnectPolicy = DEFAULT_STUDIO_EVENT_RECONNECT_POLICY,
+  ) {
     this.connect();
   }
 
@@ -65,7 +114,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   close() {
     this.closed = true;
     this.source?.close();
-    if (this.reconnectTimer) window.clearTimeout(this.reconnectTimer);
+    if (this.reconnectTimer) globalThis.clearTimeout(this.reconnectTimer);
   }
 
   private connect() {
@@ -74,7 +123,7 @@ class BrowserStudioEventStream implements StudioEventStream {
     const source = new EventSource(`${this.apiBase}/api/events`);
     this.source = source;
     source.onopen = () => {
-      this.reconnectDelay = 1000;
+      this.reconnectDelay = this.reconnectPolicy.initialDelayMs;
       this.emitConnection(true);
     };
     source.onerror = () => {
@@ -93,11 +142,11 @@ class BrowserStudioEventStream implements StudioEventStream {
 
   private scheduleReconnect() {
     if (this.closed || this.reconnectTimer) return;
-    this.reconnectTimer = window.setTimeout(() => {
+    this.reconnectTimer = globalThis.setTimeout(() => {
       this.reconnectTimer = null;
       this.connect();
     }, this.reconnectDelay);
-    this.reconnectDelay = Math.min(this.reconnectDelay * 2, 30_000);
+    this.reconnectDelay = Math.min(this.reconnectDelay * 2, this.reconnectPolicy.maxDelayMs);
   }
 
   private emitConnection(connected: boolean) {
@@ -122,7 +171,10 @@ class BrowserStudioEventStream implements StudioEventStream {
  * instance when they need correlated job and asset updates.
  */
 export function createStudioEventStream(apiBase?: string): StudioEventStream {
-  return new BrowserStudioEventStream(apiBase);
+  return new BrowserStudioEventStream(
+    apiBase,
+    normalizeStudioEventReconnectPolicy(DEFAULT_STUDIO_EVENT_RECONNECT_POLICY),
+  );
 }
 
 /**
@@ -135,33 +187,33 @@ export async function watchJob(
   timeoutMs = 240_000,
 ) {
   const initial = (await listStudioJobs()).find((job) => job.id === jobId);
-  if (initial && TERMINAL_STATUSES.has(initial.status)) {
+  if (initial && isTerminalStudioJobStatus(initial.status)) {
     if (initial.status === 'failed' || initial.status === 'cancelled') {
-      throw new Error(initial.error || `Local studio job ${initial.status}`);
+      throw createJobTerminalStatusError(initial);
     }
     return initial;
   }
 
   return new Promise<Job>((resolve, reject) => {
-    const timeout = window.setTimeout(() => {
+    const timeout = globalThis.setTimeout(() => {
       cleanup();
       reject(new JobWatchTimeoutError(jobId));
     }, timeoutMs);
     const abort = () => {
       cleanup();
-      reject(new Error('Operation cancelled by user'));
+      reject(new JobWatchCancelledError());
     };
     const unsubscribe = stream.onJobUpdate(jobId, (job) => {
-      if (!TERMINAL_STATUSES.has(job.status)) return;
+      if (!isTerminalStudioJobStatus(job.status)) return;
       cleanup();
       if (job.status === 'failed' || job.status === 'cancelled') {
-        reject(new Error(job.error || `Local studio job ${job.status}`));
+        reject(createJobTerminalStatusError(job));
       } else {
         resolve(job);
       }
     });
     const cleanup = () => {
-      window.clearTimeout(timeout);
+      globalThis.clearTimeout(timeout);
       signal?.removeEventListener('abort', abort);
       unsubscribe();
     };

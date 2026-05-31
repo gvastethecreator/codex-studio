@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { Effect } from 'effect';
 
 import type {
   CatalogImage,
@@ -24,6 +25,7 @@ import {
   type EvaluationVariant,
   type EvaluationVariantMetadata,
 } from './evaluate-recipe-prompts';
+import { pollWithScriptTimeout, runWithScriptRetry } from './runtimePolicy';
 
 export const LIVE_EVALUATION_VARIANT_NAMES = ['bare', 'legacy', 'directives'] as const;
 
@@ -148,6 +150,8 @@ const DEFAULT_API_BASE = 'http://127.0.0.1:17223';
 const DEFAULT_VARIANT_NAMES: LiveEvaluationVariantName[] = ['legacy', 'directives'];
 const DEFAULT_POLL_MS = 2_000;
 const DEFAULT_TIMEOUT_MS = 15 * 60_000;
+const DEFAULT_REQUEST_RETRY_ATTEMPTS = 3;
+const DEFAULT_REQUEST_RETRY_DELAY_MS = 1_000;
 
 function isRecordLike(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
@@ -505,25 +509,49 @@ export function evaluateLiveRuntimeReadiness(
 }
 
 async function requestJson<T>(apiBase: string, pathname: string, init?: RequestInit): Promise<T> {
-  const headers = new Headers(init?.headers);
-  headers.set('Content-Type', 'application/json');
-  const response = await fetch(`${apiBase}${pathname}`, {
-    ...init,
-    headers,
-  });
+  const attempts = Math.max(
+    1,
+    Number.parseInt(
+      process.env.LIVE_EVAL_API_RETRY_ATTEMPTS || `${DEFAULT_REQUEST_RETRY_ATTEMPTS}`,
+      10,
+    ) || DEFAULT_REQUEST_RETRY_ATTEMPTS,
+  );
+  const delayMs = Math.max(
+    0,
+    Number.parseInt(
+      process.env.LIVE_EVAL_API_RETRY_DELAY_MS || `${DEFAULT_REQUEST_RETRY_DELAY_MS}`,
+      10,
+    ) || DEFAULT_REQUEST_RETRY_DELAY_MS,
+  );
 
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(
-      `${init?.method ?? 'GET'} ${pathname} failed: ${response.status} ${text || response.statusText}`,
-    );
-  }
+  return runWithScriptRetry(
+    () =>
+      Effect.tryPromise(async () => {
+        const headers = new Headers(init?.headers);
+        headers.set('Content-Type', 'application/json');
+        const response = await fetch(`${apiBase}${pathname}`, {
+          ...init,
+          headers,
+        });
 
-  return response.json() as Promise<T>;
-}
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(
+            `${init?.method ?? 'GET'} ${pathname} failed: ${response.status} ${text || response.statusText}`,
+          );
+        }
 
-async function sleep(durationMs: number) {
-  await new Promise((resolve) => setTimeout(resolve, durationMs));
+        return response.json() as Promise<T>;
+      }),
+    {
+      attempts,
+      delayMs,
+      shouldRetry: (error) => {
+        if (!(error instanceof Error)) return true;
+        return !/\b(400|401|403|404|422)\b/.test(error.message);
+      },
+    },
+  );
 }
 
 async function readLiveRuntimeSnapshot(apiBase: string) {
@@ -541,26 +569,21 @@ async function waitForJobDetail(
   jobId: string,
   { pollMs, timeoutMs }: { pollMs: number; timeoutMs: number },
 ) {
-  const startedAt = Date.now();
-
-  while (true) {
-    const detail = await requestJson<JobDetailResponse>(apiBase, `/api/jobs/${jobId}`);
-    const { job } = detail;
-    if (
-      job.status === 'completed' ||
-      job.status === 'failed' ||
-      job.status === 'cancelled' ||
-      job.status === 'needs_review'
-    ) {
-      return detail;
-    }
-
-    if (Date.now() - startedAt > timeoutMs) {
-      throw new Error(`Job ${jobId} timed out after ${timeoutMs} ms.`);
-    }
-
-    await sleep(pollMs);
-  }
+  return Effect.runPromise(
+    pollWithScriptTimeout(
+      () => Effect.tryPromise(() => requestJson<JobDetailResponse>(apiBase, `/api/jobs/${jobId}`)),
+      {
+        pollMs,
+        timeoutMs,
+        timeoutMessage: `Job ${jobId} timed out after ${timeoutMs} ms.`,
+        isTerminal: (detail) =>
+          detail.job.status === 'completed' ||
+          detail.job.status === 'failed' ||
+          detail.job.status === 'cancelled' ||
+          detail.job.status === 'needs_review',
+      },
+    ),
+  );
 }
 
 async function createLiveJob(

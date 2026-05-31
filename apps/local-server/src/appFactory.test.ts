@@ -325,4 +325,98 @@ describe('createStudioApp', () => {
     expect(isAppServerRunning).toHaveBeenCalled();
     expect(getAppServerDiagnostics).toHaveBeenCalled();
   });
+
+  it('wires runtime health worker status through the injected worker dependency', async () => {
+    const workerStatus = {
+      maxConcurrentJobs: 9,
+      activeWorkerCount: 3,
+      queuedJobs: 4,
+      trackedJobs: 7,
+    };
+    const worker = createWorkerDependency();
+    worker.getWorkerStatus = vi.fn(() => workerStatus);
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker,
+      },
+    });
+
+    const response = await studio.app.request('/api/health');
+    expect(response.status).toBe(200);
+
+    const payload = (await response.json()) as { worker: typeof workerStatus };
+    expect(payload.worker).toEqual(workerStatus);
+    expect(worker.getWorkerStatus).toHaveBeenCalledTimes(2);
+  });
+
+  it('surfaces runtime start failures through the composition seam', async () => {
+    const ensureAppServer = vi.fn(() => {
+      throw new Error('unable to start app-server');
+    });
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+        ensureAppServer,
+      },
+    });
+
+    const response = await studio.app.request('/api/app-server/start', {
+      method: 'POST',
+    });
+
+    expect(response.status).toBeGreaterThanOrEqual(500);
+    expect(ensureAppServer).toHaveBeenCalledWith('user');
+  });
+
+  it('wires cancel conflict path through injected worker dependency', async () => {
+    const activeJob = {
+      id: 'job-active',
+      projectId: 'project-default',
+      kind: 'dry_run' as const,
+      providerId: null,
+      sourceSpec: null,
+      status: 'running' as const,
+      execution: null,
+      originalPrompt: 'hello',
+      expandedPrompt: null,
+      finalPromptUsed: 'hello',
+      error: null,
+      createdAt: '2026-05-31T00:00:00.000Z',
+      updatedAt: '2026-05-31T00:00:00.000Z',
+      completedAt: null,
+    };
+
+    const getJobSpy = vi.fn((id: string) => (id === activeJob.id ? activeJob : null));
+    const getJobMock: StudioDbStore['getJob'] = (id: string) => getJobSpy(id);
+    const dbStore = createFakeDbStore({ getJob: getJobMock });
+    const worker = createWorkerDependency();
+    const cancelQueuedOrRunningJobMock = vi.fn(() => null);
+    worker.cancelQueuedOrRunningJob = cancelQueuedOrRunningJobMock;
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore,
+        catalogStore: createFakeCatalogStore(),
+        worker,
+      },
+    });
+
+    const response = await studio.app.request(`/api/jobs/${activeJob.id}/cancel`, {
+      method: 'POST',
+    });
+
+    expect(response.status).toBe(409);
+    await expect(response.json()).resolves.toEqual({ error: 'Job cannot be cancelled right now' });
+    expect(getJobSpy).toHaveBeenCalledWith(activeJob.id);
+    expect(cancelQueuedOrRunningJobMock).toHaveBeenCalledWith(activeJob.id);
+  });
 });

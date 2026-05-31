@@ -17,26 +17,26 @@ Adopt Effect-TS incrementally in Codex Studio to improve reliability, typed erro
 
 ### Slice 01 - Provider retry runtime seam with Effect (AFK)
 
-- **Status**: In progress (implemented in this session)
+- **Status**: Implemented (phase 1 complete)
 - **Scope**:
   - Refactor provider retry runtime in `apps/local-server/src/providers/externalProviderResults.ts`.
   - Keep current function signature and behavior for callers (`fal`, `google`, `comfy`).
 - **Acceptance criteria**:
-  - [ ] Retry logic still retries transient failures and stops on abort.
-  - [ ] Existing provider results tests pass.
-  - [ ] No API changes required for executors.
+  - [x] Retry logic still retries transient failures and stops on abort.
+  - [x] Existing provider results tests pass.
+  - [x] No API changes required for executors.
 - **Blocked by**: None.
 
 ### Slice 02 - `POST /jobs` boundary schema validation pilot (AFK)
 
-- **Status**: In progress (implemented in this session)
+- **Status**: Implemented (phase 1 complete)
 - **Scope**:
   - Add Effect Schema decoding at route boundary in `apps/local-server/src/jobRoutes.ts`.
   - Return explicit 400 payloads for malformed JSON and schema mismatch.
 - **Acceptance criteria**:
-  - [ ] Malformed JSON returns `code: invalid_json`.
-  - [ ] Schema mismatch returns `code: invalid_request_body`.
-  - [ ] Existing happy path tests remain green.
+  - [x] Malformed JSON returns `code: invalid_json`.
+  - [x] Schema mismatch returns `code: invalid_request_body`.
+  - [x] Existing happy path tests remain green.
 - **Blocked by**: None.
 
 ### Slice 03 - Shared provider retry policy module (AFK)
@@ -88,67 +88,67 @@ Adopt Effect-TS incrementally in Codex Studio to improve reliability, typed erro
 
 ### Slice 07 - Local generation run typed runtime pipeline (AFK)
 
-- **Status**: Planned.
+- **Status**: In progress (phase 1).
 - **Scope**:
   - Refactor `services/localGenerationRun.ts` and adapters into typed outcome pipeline.
 - **Acceptance criteria**:
-  - [ ] `cancelled` / `failed` / `timeout` outcomes are explicit and stable.
-  - [ ] Hook consumers keep existing interface.
-  - [ ] No behavior drift in successful generation path.
+  - [x] `cancelled` / `failed` / `timeout` outcomes are explicit and stable.
+  - [x] Hook consumers keep existing interface.
+  - [x] No behavior drift in successful generation path.
 - **Blocked by**: Slice 02 (schema pilot lessons), optional.
 
 ### Slice 08 - SSE client/server stream lifecycle consolidation (AFK)
 
-- **Status**: Planned.
+- **Status**: In progress (phase 1).
 - **Scope**:
   - Consolidate reconnection/heartbeat/cancel policies across:
     - `apps/local-server/src/eventStreamRoutes.ts`
     - `services/studioEventSource.ts`
 - **Acceptance criteria**:
-  - [ ] Event stream recovers cleanly from transient disconnects.
-  - [ ] Keepalive and watcher stop behavior are deterministic.
-  - [ ] No regressions in Local Studio Sync behavior.
+  - [x] Event stream recovers cleanly from transient disconnects.
+  - [x] Keepalive and watcher stop behavior are deterministic.
+  - [x] No regressions in Local Studio Sync behavior.
 - **Blocked by**: Slice 04 and Slice 06 preferred.
 
 ### Slice 09 - App-server process supervision resource scoping (AFK)
 
-- **Status**: Planned.
+- **Status**: In progress (phase 1).
 - **Scope**:
   - Harden process lifecycle in `apps/local-server/src/codex/processSupervisor.ts` with explicit acquisition/release semantics.
 - **Acceptance criteria**:
-  - [ ] Startup timeout and failure causes become explicit.
-  - [ ] Teardown is deterministic in tests.
-  - [ ] No regression in app-server startup path.
+  - [x] Startup timeout and failure causes become explicit.
+  - [x] Teardown is deterministic in tests.
+  - [x] No regression in app-server startup path.
 - **Blocked by**: Slice 05 preferred.
 
 ### Slice 10 - Local codex session typed fallback causes (AFK)
 
-- **Status**: Planned.
+- **Status**: In progress (phase 1).
 - **Scope**:
   - Improve cause taxonomy and fallback handling in `apps/local-server/src/codex/localCodexSession.ts`.
 - **Acceptance criteria**:
-  - [ ] Distinct fallback causes are mapped consistently.
-  - [ ] Ready/offline messaging remains behavior-compatible.
-  - [ ] Related tests include cause differentiation.
+  - [x] Distinct fallback causes are mapped consistently.
+  - [x] Ready/offline messaging remains behavior-compatible.
+  - [x] Related tests include cause differentiation.
 - **Blocked by**: None.
 
 ### Slice 11 - Tooling scripts runtime standardization (AFK)
 
-- **Status**: Planned.
+- **Status**: In progress (phase 1).
 - **Scope**:
   - Apply Effect-based retry/timeout/concurrency utilities in:
     - `scripts/generate-style-defaults.ts`
     - `scripts/style-default-utils.ts`
     - `scripts/evaluate-recipe-prompts-live.ts`
 - **Acceptance criteria**:
-  - [ ] Script retries and timeout policies are centralized.
-  - [ ] Output/report contracts remain unchanged.
-  - [ ] Tooling scripts remain Bun-compatible.
+  - [x] Script retries and timeout policies are centralized.
+  - [x] Output/report contracts remain unchanged.
+  - [x] Tooling scripts remain Bun-compatible.
 - **Blocked by**: Slice 03 preferred.
 
 ### Slice 12 - Expand schema boundary coverage to remaining routes (AFK)
 
-- **Status**: In progress.
+- **Status**: Implemented (phase 1 complete).
 - **Scope**:
   - Roll out Schema-based boundary decoding to:
     - `settingsRoutes.ts`
@@ -157,7 +157,7 @@ Adopt Effect-TS incrementally in Codex Studio to improve reliability, typed erro
     - `librariesRoutes.ts`
 - **Acceptance criteria**:
   - [x] Input validation errors are consistent across routes.
-  - [ ] Route semantics stay backwards-compatible.
+  - [x] Route semantics stay backwards-compatible.
   - [x] Route tests cover malformed and shape-invalid payloads.
 - **Blocked by**: Slice 02.
 

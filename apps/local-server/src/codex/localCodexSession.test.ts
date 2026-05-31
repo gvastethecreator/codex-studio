@@ -1,6 +1,25 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { beforeAll, describe, expect, it, vi } from 'vite-plus/test';
 
 import { extractUsageSnapshot, pickRateLimitSnapshot } from './rateLimitUsage';
+
+vi.mock('./rpcClient', () => ({
+  CodexRpcClient: class {
+    async connect() {}
+    async request() {
+      return null;
+    }
+    notify() {}
+    close() {}
+  },
+}));
+
+let buildLocalCodexSessionResponse: typeof import('./localCodexSession').buildLocalCodexSessionResponse;
+let classifyLocalCodexSessionFallbackReason: typeof import('./localCodexSession').classifyLocalCodexSessionFallbackReason;
+
+beforeAll(async () => {
+  ({ buildLocalCodexSessionResponse, classifyLocalCodexSessionFallbackReason } =
+    await import('./localCodexSession'));
+});
 
 describe('localCodexSession usage parsing', () => {
   it('picks codex rate limit snapshots from app-server responses', () => {
@@ -67,5 +86,39 @@ describe('localCodexSession usage parsing', () => {
       unit: 'quota_percent',
       display: '90%',
     });
+  });
+});
+
+describe('localCodexSession fallback cause taxonomy', () => {
+  it('maps fallback connection errors to app_server_unavailable', () => {
+    expect(classifyLocalCodexSessionFallbackReason(new Error('ECONNREFUSED 127.0.0.1'))).toBe(
+      'app_server_unavailable',
+    );
+    expect(classifyLocalCodexSessionFallbackReason('websocket timed out while connecting')).toBe(
+      'app_server_unavailable',
+    );
+  });
+
+  it('maps non-network fallback errors to unknown', () => {
+    expect(classifyLocalCodexSessionFallbackReason(new Error('invalid payload shape'))).toBe(
+      'unknown',
+    );
+    expect(classifyLocalCodexSessionFallbackReason(null)).toBe('unknown');
+  });
+
+  it('uses fallbackReason when source is fallback and error is present', () => {
+    const response = buildLocalCodexSessionResponse({
+      authMode: null,
+      planType: null,
+      usage: null,
+      source: 'fallback',
+      fetchedAt: '2026-05-31T00:00:00.000Z',
+      error: 'invalid payload shape',
+      fallbackReason: 'unknown',
+    });
+
+    expect(response.state).toBe('unavailable');
+    expect(response.reason).toBe('unknown');
+    expect(response.canRunLocalJobs).toBe(false);
   });
 });

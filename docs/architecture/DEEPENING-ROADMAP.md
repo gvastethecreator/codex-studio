@@ -250,7 +250,7 @@ Execution order for this batch:
 
 ### 14. Add direct test surface for `createStudioApp` composition seam (2026-05-31 batch)
 
-- **Status:** In progress
+- **Status:** Done
 - **Files:** `apps/local-server/src/appFactory.ts`, `apps/local-server/src/appFactory.test.ts`
 - **Depends on:** none
 - **Unblocks:** safe backend composition changes and ADR-0014 closure criteria
@@ -258,20 +258,24 @@ Execution order for this batch:
   - done: create first composition tests for injected codex/project seams and catalog command wiring;
   - done: added failure-path coverage for codex route composition (`/api/codex/models` error path).
   - done: added runtime wiring coverage for injected app-server dependencies (`/api/app-server/start`).
-  - next: add coverage for worker dependency wiring and additional failure-path composition behavior in job/runtime routes.
+  - done: added runtime failure-path composition coverage for `/api/app-server/start` when injected `ensureAppServer` throws.
+  - done: added worker dependency wiring coverage for job cancel conflict path (`/api/jobs/:id/cancel` -> injected `cancelQueuedOrRunningJob`).
+  - done: added worker status wiring coverage for runtime health composition (`/api/health`).
 - **Exit criteria:** `createStudioApp` has direct seam tests that cover primary wiring paths.
 - **Docs:** `docs/adr/0014-backend-dependency-injection-seams.md`, `docs/ARCHITECTURE.md`.
 
 ### 15. Deepen `Local Studio Sync` refresh policy semantics (2026-05-31 batch)
 
-- **Status:** Planned
+- **Status:** In progress
 - **Files:** `hooks/useLocalStudioSync.ts`, `hooks/localStudioSyncRefreshPolicy.ts`, `hooks/localStudioSyncProjection.ts`
 - **Depends on:** 10, 13
 - **Unblocks:** resilient refresh behavior under burst and reconnect patterns
 - **Concrete steps:**
-  - model refresh triggers with explicit event categories;
-  - expand coalescing/retry semantics beyond asset-added/disconnect;
-  - add focused tests for burst and reconnect scenarios.
+  - done: modeled refresh triggers with explicit event categories (`asset_added`, `connection_lost`, `connection_restored`) inside `localStudioSyncRefreshPolicy`.
+  - done: expanded coalescing semantics to include reconnect transitions (`false -> true`) in addition to asset-added/disconnect.
+  - done: added focused tests for reconnect and mixed burst trigger scenarios in `hooks/localStudioSyncRefreshPolicy.test.ts`.
+  - done: added differentiated retry/backoff semantics for reconnect refresh failures (`connection_restored`) without introducing retries for asset-only refresh failures.
+  - next: add integration-level coverage through `useLocalStudioSync` to validate reconnect retry behavior with event-stream bursts.
 - **Exit criteria:** refresh behavior evolves behind policy seam without hook churn.
 - **Docs:** `docs/ARCHITECTURE.md`, `docs/TECHNICAL_DEBT.md`.
 

@@ -33,6 +33,53 @@ const ImportOutputSourceBoundarySchema = Schema.Struct({
   workspaceId: Schema.optional(Schema.Union(Schema.String, Schema.Null)),
 });
 
+function decodeImportOutputSourceBody(rawBody: unknown) {
+  const strict = Schema.decodeUnknownEither(ImportOutputSourceBoundarySchema)(rawBody);
+  if (Either.isRight(strict)) return strict.right;
+
+  if (typeof rawBody !== 'object' || rawBody === null || Array.isArray(rawBody)) {
+    return null;
+  }
+
+  const raw = rawBody as {
+    files?: unknown;
+    limit?: unknown;
+    workspaceId?: unknown;
+  };
+
+  if (!Array.isArray(raw.files) || raw.files.some((item) => typeof item !== 'string')) {
+    return null;
+  }
+
+  let limit: number | undefined;
+  if (typeof raw.limit === 'number') {
+    limit = raw.limit;
+  } else if (typeof raw.limit === 'string') {
+    const parsed = Number.parseInt(raw.limit, 10);
+    if (!Number.isFinite(parsed)) {
+      return null;
+    }
+    limit = parsed;
+  } else if (raw.limit !== undefined) {
+    return null;
+  }
+
+  let workspaceId: string | null | undefined;
+  if (raw.workspaceId === undefined) {
+    workspaceId = undefined;
+  } else if (raw.workspaceId === null || typeof raw.workspaceId === 'string') {
+    workspaceId = raw.workspaceId;
+  } else {
+    return null;
+  }
+
+  return {
+    files: raw.files,
+    limit,
+    workspaceId,
+  };
+}
+
 export function createOutputSourceRoutes({
   settingsStorage,
   readSettings,
@@ -120,8 +167,8 @@ export function createOutputSourceRoutes({
       );
     }
 
-    const decodedBody = Schema.decodeUnknownEither(ImportOutputSourceBoundarySchema)(rawBody);
-    if (Either.isLeft(decodedBody)) {
+    const decodedBody = decodeImportOutputSourceBody(rawBody);
+    if (!decodedBody) {
       return c.json(
         {
           error: 'Invalid request body',
@@ -136,7 +183,7 @@ export function createOutputSourceRoutes({
       storage: settingsStorage,
       sourceId: c.req.param('id'),
       libraryDir: readConfig().libraryDir,
-      input: decodedBody.right as {
+      input: decodedBody as {
         files: string[];
         limit?: number;
         workspaceId?: string | null;

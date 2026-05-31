@@ -20,7 +20,7 @@ visualDna:
   render_quality: Acabado premium de shonen mafioso con lectura clara de jerarquía de clan y evolución de tono.
   spatial_distortion: Escena híbrida escuela-submundo con encuadres de juramento, duelo y trabajo en equipo.
   atmosphere: Ruidosa, cómica, leal, incendiaria.
-  key_features: Motivos heráldicos de familia, mentor excéntrico central, efectos de anillo y contraste aula-mafia.
+  key_features: Motivos heráldicos de familia, mentor excéntrico central, efectos de anillo y contraste aula-mafia en escalada.
   creative_brief: Define una gramática reusable de ascenso mafioso juvenil para cualquier sujeto, combinando sátira escolar, ritual de clan y acción de pertenencia.
 avoidRules:
   - realistic

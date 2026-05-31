@@ -1131,6 +1131,63 @@ Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
 - Alcance: segunda pasada manual preset-por-preset en motorsport, racket-sports, boxing, skating, karuta y golf para reforzar diferenciación de foco competitivo, ritmo y materialidad sin perder transferibilidad style-first.
 - Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
 
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-363.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-364.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-365.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-366.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-367.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-368.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-369.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-370.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-371.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-372.yaml`
+- Alcance: segunda pasada manual preset-por-preset en performance arts/sports para reforzar contraste fino de ritmo escénico, materialidad y tesis competitiva entre presets adyacentes.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP13-026.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-027.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-028.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-029.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-033.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP13-035.yaml`
+- Alcance: segunda pasada manual preset-por-preset en samurai-medieval + horror para reforzar contraste fino de geometría ritual, escala ominosa y gramática de tensión entre presets adyacentes.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-141.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-145.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-146.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-147.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-149.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-150.yaml`
+- Nota: `SP05-142`, `SP05-143`, `SP05-144` y `SP05-148` no existen en `pack_16`; el bache se cerró sobre presets disponibles.
+- Alcance: segunda pasada manual en 2000s Classics para reforzar diferenciación fina entre gótico-punk, mecha aéreo, aristocracia oscura, romcom invernal, mafia-shonen y fantasía ígnea escolar.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
+Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
+
+- `components/recipes/styles/manifests/presets/pack_16/SP05-160.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-161.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-163.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-164.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-165.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-166.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-167.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-169.yaml`
+- `components/recipes/styles/manifests/presets/pack_16/SP05-170.yaml`
+- Nota: `SP05-162` y `SP05-168` no existen en `pack_16`; el bache se cerró sobre presets disponibles.
+- Alcance: segunda pasada manual en transición `2000s Classics` -> `90s Golden Era` para reforzar contraste fino entre sátira de élite, shonen de escala total, noir espacial, ciber-noir táctico, torneo espiritual, redención samurái, aventura pulp, disolución identitaria digital y magia cotidiana.
+- Validación técnica: `bun run styles:validate -- --pack=pack_16` ✅
+
 ## Guía de reescritura aplicada
 
 ### Do ✅
@@ -1152,7 +1209,7 @@ Reauditoría de precisión manual aplicada (sin sumar al total, ya contado):
 
 ## Próxima fase sugerida
 
-Abrir siguiente bache contiguo en `pack_16` sobre `SP05-363.yaml` a `SP05-372.yaml` para segunda pasada de precisión manual, manteniendo estilo transferable y contraste semántico fuerte entre presets adyacentes.
+Abrir siguiente bache en `pack_16` sobre `SP05-171.yaml` a `SP05-180.yaml` para segunda pasada de precisión manual, manteniendo estilo transferable y contraste semántico fuerte entre presets adyacentes.
 
 Prioridad por riesgo de drift semántico (scene-heavy):
 
