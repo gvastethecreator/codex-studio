@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Pixelation, stair-step edge, aliasing jaggies
   atmosphere: Y2K, candid, early-upload memory, digital infancy
   key_features: Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow
-  creative_brief: The pixel blocks and chromatic noise of a technology still learning to see, where every jagged edge and compression smear carries the urgency of its era. Images fold into artifact-laden rectangles — the magenta fringe, the noisy shadow, the blocky contour — as if each megabyte were precious and every upload a declaration. This is not the past seen through nostalgia but the past seen through its own honest, limited eyes.
+  creative_brief: >-
+    Apply early-2000s digital-camera limits to any subject: 2MP softness, JPEG
+    compression blocks, stair-step aliasing, purple fringing, noisy shadows,
+    clipped pop-up flash highlights, and muddy CCD chroma. Keep upload-era
+    immediacy without requiring parties, webcams, family snapshots, or dated UI.
 avoidRules:
   - film grain
 assets:

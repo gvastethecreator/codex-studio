@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-002
 packId: pack_14
-name: Velvet Reliquary Atelier
+name: Velvet Relic Conservation Noir
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Aristocratic restoration atelier with esoteric craftsmanship.
-  form_and_line: Artisan-focused silhouette, suspended relics, and precise gesture lines.
+  aesthetic: Aristocratic relic-conservation noir with esoteric craft precision and velvet danger.
+  form_and_line: Precise artisan gesture lines, suspended-fragment arcs, drawer-grid order, and careful restoration geometry.
   color_palette: Oxblood velvet, tarnished brass, and parchment ivory.
-  lighting_setup: Focused task-lamp pools with peripheral candle glow.
+  lighting_setup: Focused task-lamp pools, peripheral candle glow, and tight brass edge highlights.
   material_texture: Burnished metal filings, antique velvet, wax seals, and lacquered wood.
   render_quality: Premium narrative illustration with editorial precision and controlled contrast.
-  spatial_distortion: Workbench-first framing with layered shelves and hanging reliquaries.
+  spatial_distortion: Layered conservation-depth framing with shelves, drawers, or suspended fragments as optional cues.
   atmosphere: Obsessive concentration, sacred secrecy, and museum-grade elegance.
-  key_features: Relic disassembly tools, velvet-lined drawers, suspended sanctified fragments.
-  creative_brief: A master conservator restoring forbidden relics in a midnight atelier where every object feels priceless and dangerous.
+  key_features: Velvet-lined shadow, relic-fragment geometry, wax-seal accents, brass tool precision, and forbidden-object value.
+  creative_brief: >-
+    Conserve the input as velvet relic noir: oxblood depth, tarnished brass
+    precision, parchment highlights, wax-seal accents, and suspended fragment
+    logic should make any subject feel priceless and dangerous without requiring
+    an atelier, workbench, dedicated restorer, or literal relic set.
 avoidRules: [photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-002.webp }
 attributes:
   negativePrompt: photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

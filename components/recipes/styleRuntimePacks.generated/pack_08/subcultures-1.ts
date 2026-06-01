@@ -10,7 +10,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'suit, strict, dark',
     style: {
       aesthetic:
-        'Coachella desert festival outfit, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie',
+        'Bohemian festival styling, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie',
       form_and_line:
         'Flowing layers, fringe, tiered maxi dress, bell-sleeve drama, off-shoulder ease',
       color_palette:
@@ -21,11 +21,11 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Free People bohemian editorial, hippie, summer, festival romance, sun-drenched nostalgia',
       spatial_distortion: 'None',
-      atmosphere: 'Free, happy, natural, carefree wanderlust, desert-magic dusk, barefoot abandon',
+      atmosphere: 'Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease',
       key_features:
         'Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings',
       creative_brief:
-        'Sunlight caught in crochet holes like honey in a sieve, the desert wind a collaborator rather than adversary. Layers of lace and fringe move to a rhythm older than the festival grounds, bare feet on warm earth, turquoise catching the last gold of the dying sun.',
+        'Render the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn suede, eyelet cotton and sun-bleached florals. Keep the golden, handmade, wind-touched feeling while avoiding a fixed desert festival, crowd, stage or barefoot travel scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
     },
   },
   {
@@ -34,21 +34,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'suit, formal, old',
     style: {
-      aesthetic: 'Urban youth fashion, capsule-drop exclusivity, sneakerhead culture',
+      aesthetic: 'Streetwear hype grammar, capsule-drop exclusivity, sneakerhead culture',
       form_and_line: 'Oversized silhouette, boxy hoodie cut, dropped shoulders, wide-leg cargo',
       color_palette: 'Black, White, Red, Neon accents, high-vis lime, saturated electric blue',
       lighting_setup:
-        'Street lights or flash, harsh direct flash, nighttime city bounce, billboard glow',
+        'Harsh direct flash, nighttime bounce, billboard-color glow, social-feed contrast',
       material_texture:
         'Heavyweight cotton, ripstop nylon, pebbled leather, reflective 3M, mesh paneling',
       render_quality:
         'Supreme/Off-White luxury streetwear, trendy, hype-drop energy, drop-day precision',
       spatial_distortion: 'Baggy clothes',
       atmosphere:
-        'Cool, rebellious, rich, exclusivity hunger, block-party confidence, line-wait tension',
+        'Cool, rebellious, rich, exclusivity hunger, drop-day confidence, scarcity pressure',
       key_features: 'Sneaker focus, hyped collab footwear, visible branding, crossbody bag',
       creative_brief:
-        'The street as catwalk, asphalt pulpit for the religion of the drop. Oversized silhouettes carry the confidence of those who queued at dawn, each logo a badge of belonging rendered in neon defiance. Flash-lit and filter-fed, the image crackles with the hunger of wanting what cannot be owned by everyone.',
+        'Convert the input into a hype-drop object language: oversized massing, sneaker emphasis, reflective hits and brand-like graphic confidence. Keep the flash-lit social-media bite and scarcity energy without forcing a street, queue, block party or specific urban scene.',
     },
   },
   {
@@ -57,19 +57,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'bright, delicate, clean',
     style: {
-      aesthetic: 'Tactical soldier gear, field-readiness doctrine, combat-proven silhouette',
+      aesthetic:
+        'Military surplus styling, field-readiness doctrine, combat-proven utility silhouette',
       form_and_line: 'Boxy, pockets, armor, MOLLE grid, plate-carrier bulk, bloused-boot taper',
       color_palette: 'Olive Drab, Camo, Desert Tan, Multicam breakup, ranger green, coyote brown',
       lighting_setup: 'Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey',
       material_texture:
         'Mil-spec canvas, Cordura nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric',
-      render_quality: 'Tough, functional, war, battlefield authenticity, deployment-worn veracity',
+      render_quality: 'Tough, functional, field-worn authenticity, deployment-worn veracity',
       spatial_distortion: 'Bulky silhouette',
-      atmosphere:
-        'Serious, dangerous, ready, operational tension, mission focus, silent professionalism',
+      atmosphere: 'Serious, ready, operational tension, mission focus, silent professionalism',
       key_features: 'Utility pockets, magazine pouches, patrol cap, combat boots, unit patch',
       creative_brief:
-        'Every pocket carries purpose, every strap distributes weight according to doctrine written in blood and terrain. Olive drab bleached by sun and sweat into a thousand shades of endurance, Cordura scuffed by landscapes that do not care about fashion but demand function, the silence before movement heavy with consequence.',
+        'Convert the input into military-surplus utility: olive drab, camo breakup, MOLLE grids, plate-carrier bulk, Cordura abrasion, unit-patch accents and pocket logic. Keep readiness and field wear without requiring a soldier, battlefield, weapon, patrol scene or combat narrative.',
     },
   },
   {
@@ -78,21 +78,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'urban, modern',
     style: {
-      aesthetic: 'Rural fantasy, pastoral-romance daydream, meadow-wandering solitude',
+      aesthetic: 'Cottagecore pastoral styling, rural-romance daydream, handmade softness',
       form_and_line:
         'Soft dresses, empire waist, puff-sleeve volume, midi-length hem, apron-tie waist cinch',
       color_palette:
         'Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue',
-      lighting_setup: 'Golden hour, meadow-backlight, dappled orchard shade, morning-dew sparkle',
+      lighting_setup: 'Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight',
       material_texture:
         'Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk',
       render_quality: 'Whimsical, soft, fairytale illustration, sun-drenched pastoral',
       spatial_distortion: 'None',
       atmosphere:
-        'Peaceful, nature, bramble-hedge serenity, bread-baking warmth, wildflower fragility',
+        'Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness',
       key_features: 'Apron, basket, straw hat, lace-up bodice, ribbon ties',
       creative_brief:
-        'Linen dresses catching orchard breeze like sails of a slower century, puff sleeves holding the shape of churned butter and sourdough starter. A straw basket swings from an arm that has gathered wildflowers and forgotten the name of the nearest city, each eyelet hole a window onto a life where the only deadline is sunset and the only algorithm is the turning of seasons.',
+        'Soften the input with cottagecore textile cues: linen, muslin, eyelet, puff sleeves, apron ties, woven straw, wildflower prints and warm slow-life light. Keep rural fantasy as texture and mood, without requiring meadow, orchard, basket, bread, cottage or a wandering figure.',
     },
   },
   {
@@ -105,16 +105,16 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line:
         'Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume',
       color_palette: 'Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory',
-      lighting_setup: 'Sunny, chrome-gleam reflections, diner-neon glow, afternoon-sun flare',
+      lighting_setup: 'Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare',
       material_texture:
         'Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin',
       render_quality: 'Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit',
       spatial_distortion: 'Pompadour hair',
-      atmosphere: 'Rebellious, fun, Saturday-night swagger, drag-race adrenaline, soda-shop cool',
+      atmosphere: 'Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool',
       key_features:
         'Tattoos, sailor-style ink, rolled cigarette sleeve, cuffed jeans, engineer boots',
       creative_brief:
-        'Horsehide leather cracked like desert earth, pomade gleaming under diner neon as a Greaser leans into the Saturday night he was born for. Cuffed denim and swallow tattoos tell stories of drag races won and lost, chrome reflections catching the rebel silhouette of someone who wears his heart on his rolled-up sleeve.',
+        'Apply rockabilly Americana to the input: horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow embroidery, sailor tattoo cues and chrome-red contrast. Keep hot-rod swagger without requiring a diner, drag race, greaser portrait or literal motorcycle/car.',
     },
   },
   {
@@ -128,8 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve',
       color_palette:
         'Black + Pastel Pink/Mint, lavender, baby blue, candy-corpse contrast, chalky pastel',
-      lighting_setup:
-        'Soft, diffused daylight, candy-colored gels, bedroom-window natural, Halloween fairy lights',
+      lighting_setup: 'Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle',
       material_texture:
         'Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet',
       render_quality: 'Kawaii, spooky, pastel-goth crispness, creepy-cute editorial',
@@ -137,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cute, dark, sweet unease, candy-wrapper menace, adorable dread',
       key_features: 'Bat wings, bow hair clips, pentagram choker, platform creepers',
       creative_brief:
-        'Cotton-candy sweet wrapped around a pentagram, lavender tulle floating over platform soles that echo through graveyards. This is cute that bites back, bows tied with lace soaked in moonlight, a pastel hymn to the beautiful unease of being both sugar and shadow in the same breath.',
+        'Mix cute and occult on the input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows, chokers, platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring graveyards, bedroom lighting, a doll pose or a specific gothic subject.',
     },
   },
   {
@@ -157,11 +156,10 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Vivienne Westwood punk-boutique, rebellious, safety-pin haute couture, SEX boutique rawness',
       spatial_distortion: 'Mohawk hair',
-      atmosphere:
-        'Angry, loud, chaotic, confrontational snarl, three-chord fury, spit-and-sawdust electricity',
+      atmosphere: 'Angry, loud, chaotic, confrontational snarl, three-chord fury, DIY refusal',
       key_features: 'DIY aesthetic, hand-scrawled slogans, padlock necklace, torn fishnets',
       creative_brief:
-        'Destruction as design, safety pins as punctuation in a grammar of refusal. Tartan torn against the grain, leather baptized in club sweat and three-chord fury, every rip a manifesto scrawled in thread. This is clothing as crime scene, beautiful precisely because it refuses to be.',
+        'Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer tape repairs, slogans, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a club, crime scene, specific body, mohawk or performance setting.',
     },
   },
   {
@@ -170,13 +168,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'bright, sport',
     style: {
-      aesthetic:
-        'University student 1940s, Oxford-common-room nostalgia, candlelit-scholar romance',
+      aesthetic: 'Dark academia tailoring, Oxford-common-room nostalgia, candlelit-scholar romance',
       form_and_line:
         'Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap',
       color_palette: 'Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal',
       lighting_setup:
-        'Library dim, reading-lamp pool, stained-glass amber, fireplace glow, overcast-window grey',
+        'Reading-lamp pools, stained-glass amber, fireplace glow, overcast-window grey',
       material_texture:
         'Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons',
       render_quality: 'Intellectual, moody, library-quiet gravitas, Brideshead nostalgia',
@@ -185,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension',
       key_features: 'Glasses, wire-rim frames, worn-leather satchel, fountain pen',
       creative_brief:
-        'Tweed worn thin at the elbows from leaning over oak tables in libraries that smell of leather bindings and buried secrets. Cable-knit wool holds the warmth of a fireplace that has witnessed whispered Greek translations, oxblood leather satchel carrying fountain pens and the weight of knowledge pursued for its own sake, the uniform of those who find romance in footnotes.',
+        'Apply dark-academia codes to the input: tweed, corduroy, cable-knit wool, oxblood leather, horn buttons, elbow patches and paper-cream contrast. Keep secret-history tension without requiring a university, library table, fountain pen, satchel or student figure.',
     },
   },
   {
@@ -197,17 +194,15 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Motorcycle club, outlaw-brotherhood iconography, open-road defiance',
       form_and_line: 'Heavy leather, cut-off vest, engineer-boot stomp, bandana-mask line',
       color_palette: 'Black leather, Silver, denim-blue, club-patch color, chrome, grease-black',
-      lighting_setup:
-        'Harsh, midday-sun glare, chrome-reflection highlights, bar-sign neon, desert-highway heat',
+      lighting_setup: 'Harsh chrome-reflection highlights, bar-sign neon hints, sun-glare heat',
       material_texture:
         'Heavyweight cowhide leather, embroidered patches, metal studs, chain, dirty denim, brass zippers',
       render_quality: 'Tough, dangerous, asphalt-authenticity, Sons of Anarchy grittiness',
       spatial_distortion: 'None',
-      atmosphere:
-        'Intimidating, cool, road-dog brotherhood, exhaust-fume authority, clubhouse gravity',
+      atmosphere: 'Intimidating, cool, road-dog defiance, exhaust-fume authority, outlaw gravity',
       key_features: 'Leather vest, three-piece patch, engineer boots, chain wallet',
       creative_brief:
-        'Cowhide leather heavy enough to stop a story before it starts, club patches sewn with the thread of miles traveled and debts unpaid. Engineer boots planted on asphalt like territorial markers, chrome and grease and chain-wallet gravity, the cut-off vest a flag flown by a nation of two wheels and no fixed address.',
+        'Recast the input in outlaw biker codes: heavyweight cowhide, cut-off vest, embroidered patches, engineer boots, chain wallet, grease black and chrome glints. Keep two-wheel defiance as style pressure without requiring a gang, clubhouse, road scene, motorcycle or intimidating person.',
     },
   },
   {
@@ -216,18 +211,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'tight clothes',
     style: {
-      aesthetic: 'Thrasher skate-zine style, deck-grip authenticity, parking-lot session culture',
+      aesthetic: 'Skate-zine style, deck-grip authenticity, casual session culture',
       form_and_line: 'Baggy, relaxed-denim silhouette, oversized tee, hoodie-stack, beanie-slouch',
       color_palette: 'Grey, Black, Graphic Tee, heather, logo-white, washed-black, grip-tape grey',
-      lighting_setup: 'Outdoor sun, fisheye-lens flare, golden-hour ledge, parking-lot shade',
+      lighting_setup:
+        'Outdoor sun, fisheye-lens flare, golden-hour edge light, hard pavement bounce',
       material_texture:
         'Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy',
       render_quality: 'Casual, active, fisheye-video energy, street-credible rawness',
       spatial_distortion: 'None',
-      atmosphere: 'Chill, active, session-flow zen, board-pop rhythm, endless-summer ease',
+      atmosphere: 'Chill, active, session-flow ease, board-pop rhythm, raw casualness',
       key_features: 'Vans skate shoes, ollie-worn suede, five-panel cap, logo tee',
       creative_brief:
-        'Grip-tape grit transferred to canvas sneakers, each scuff a signature of the trick that almost landed. The oversized tee hangs like a flag of surrender to gravity fought all afternoon, five-panel cap shading eyes that measure ledges and gaps in a city that becomes a playground when seen through fisheye glass.',
+        'Convert the input into skater casual: oversized tee, hoodie stack, baggy denim, suede scuffs, grip-tape grit, five-panel cap cues and fisheye video rawness. Keep board-pop rhythm without requiring tricks, ledges, parking lots, city playgrounds or a skater body.',
     },
   },
   {
@@ -236,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'boring, grey',
     style: {
-      aesthetic: 'PLUR vibes, warehouse-rave euphoria, sunrise-set transcendence',
+      aesthetic: '90s raver styling, PLUR euphoria, sunrise-set transcendence',
       form_and_line:
         'Baggy pants, phat-pant flare, crop-top crop, bucket-hat circumference, platform-sole stomp',
       color_palette:
@@ -246,11 +242,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'PVC plastic, faux fur, mesh, reflective 3M, nylon parachute, fuzzy knit',
       render_quality: 'Energetic, loud, rave-flyer saturation, peak-time euphoria',
       spatial_distortion: 'None',
-      atmosphere:
-        'Party, happy, warehouse-bass unity, 4AM transcendence, collective-euphoria embrace',
+      atmosphere: 'Party, happy, bass-unity, 4AM transcendence, collective-euphoria glow',
       key_features: 'Kandi bracelets, pacifier, bucket hat, phat pants, neon hair extensions',
       creative_brief:
-        'Blacklight catching reflective 3M like a secret language visible only to those who stayed past midnight, phat pants billowing with the bass drop that just passed through the warehouse floor. Kandi bracelets traded between strangers who became family at 4AM, pacifiers worn as badges of a tribe that worships at the altar of strobe light and collective euphoria.',
+        'Push the input through 90s rave style: UV-reactive color, reflective 3M, phat-pant volume, PVC, faux fur, kandi beads, bucket-hat cues and strobe-fragmented light. Keep PLUR euphoria without requiring a warehouse, dance floor, pacifier, crowd or party scene.',
     },
   },
   {
@@ -259,19 +254,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'modern, pants',
     style: {
-      aesthetic: 'Victorian doll style, porcelain-dream sweetness, Harajuku tea-party fantasy',
+      aesthetic: 'Lolita fashion, Victorian doll sweetness, porcelain-dream refinement',
       form_and_line:
         'Ruffles, bell shape, tiered cupcake skirt, mutton-leg sleeve, high-neck lace collar',
       color_palette: 'Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white',
-      lighting_setup: 'Soft, diffused window light, tea-room warmth, petal-pink bounce',
+      lighting_setup: 'Soft diffused light, petal-pink bounce, porcelain-bright warmth',
       material_texture:
         'Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons',
       render_quality: 'Cute, elaborate, Angelic Pretty refinement, doll-like perfection',
       spatial_distortion: 'None',
-      atmosphere: 'Sweet, innocent, candy-land gentility, storybook serenity, lace-gloved delicacy',
+      atmosphere: 'Sweet, innocent, storybook serenity, lace-gloved delicacy, porcelain calm',
       key_features: 'Bonnet, lace gloves, Mary-Jane pumps, ribbon-laced corset back',
       creative_brief:
-        'A bell-shaped daydream constructed from tiered ruffles and the memory of Victorian tea parties that never happened. Satin ribbons tie bows that hold innocence like a kept promise, each pintuck a whisper of porcelain-doll perfection walking through Harajuku as if the street were a dollhouse parlor.',
+        'Render the input through Lolita construction: bell silhouette, tiered ruffles, satin ribbons, pintucked voile, bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid a Harajuku street, dollhouse parlor, fixed girl figure or literal party. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
     },
   },
   {
@@ -285,17 +280,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Flowing, loose, bell-bottom flare, peasant-blouse blouson, kaftan drape, headband circumference',
       color_palette:
         'Tie-dye, Earth tones, acid-wash rainbow, rust, avocado green, sunflower yellow, indigo',
-      lighting_setup:
-        'Sun flare, Kodachrome warmth, meadow-afternoon glow, psychedelic poster saturation',
+      lighting_setup: 'Sun flare, Kodachrome warmth, psychedelic poster saturation, warm haze',
       material_texture:
         'Cotton cheesecloth, suede fringe, crochet, distressed denim, leather cord, seed-bead embroidery',
       render_quality: 'Peaceful, psychedelic, Fillmore-poster vibrancy, acid-dream softness',
       spatial_distortion: 'None',
-      atmosphere:
-        'Free, happy, peace-and-love euphoria, sun-drenched togetherness, counterculture hope',
+      atmosphere: 'Free, happy, peace-and-love euphoria, counterculture hope, soft protest',
       key_features: 'Flower crown, round sunglasses, peace-sign pendant, fringed vest',
       creative_brief:
-        'Tie-dye spirals radiating outward like the consciousness they expanded, bell-bottoms sweeping meadow grass in rhythms borrowed from sitar strings. Suede fringe catches the golden-hour breeze as flower crowns wilt beautifully toward dusk, each peace-sign pendant a small revolution worn against bare chest, the whole silhouette a soft protest against the straight lines of the world.',
+        'Give the input 60s hippie counterculture styling: tie-dye spirals, bell-bottom flare, suede fringe, crochet, seed beads, peace-sign jewelry and warm Kodachrome haze. Keep flower-power optimism without requiring meadow, bare chest, sitar, group gathering or festival scene.',
     },
   },
   {
@@ -304,21 +297,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'happy, pink, sun',
     style: {
-      aesthetic: 'Traditional goth style, Victorian mourning revival, batcave cathedral',
+      aesthetic: 'Traditional goth style, Victorian mourning revival, darkwave elegance',
       form_and_line:
         'Sharp edges, spikes, fishtail hem, coffin-cut shoulders, corseted waist silhouette',
       color_palette:
         'Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow',
-      lighting_setup:
-        'Moonlight, pale skin, silver rim light, candle-flicker ambiance, graveyard mist',
+      lighting_setup: 'Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow',
       material_texture:
         'Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet',
       render_quality: 'Dramatic, spooky, elegant, undead refinement, crypt-chic atmosphere',
       spatial_distortion: 'Corset waist',
       atmosphere: 'Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay',
-      key_features: 'Pale skin contrast, black lipstick, silver ankh pendant, platform boots',
+      key_features:
+        'Black-on-black layering, silver occult jewelry, platform-boot mass, corset or lace cues',
       creative_brief:
-        'Mourning made magnificent, every shade of black a different grief worn on crushed velvet sleeves. Silver catches candlelight across an ankh pendant as platform boots echo through cathedral stone, the corset tightening with each beat of a heart that chose darkness and found it beautiful.',
+        'Cast the input in goth darkwave styling: black velvet depth, lace transparency, patent shine, pewter hardware and occult silver accents. Preserve mourning romance and beautiful decay without requiring pale skin, cathedral stone, graveyard mist or a specific gothic character.',
     },
   },
   {
@@ -327,22 +320,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Subcultures',
     negativePrompt: 'clean, ironed',
     style: {
-      aesthetic:
-        'Kurt Cobain 90s slouch-grunge, flannel melancholy, Seattle apathy, Nevermind-era dishevelment',
+      aesthetic: '90s slouch-grunge, flannel melancholy, Seattle apathy, lo-fi dishevelment',
       form_and_line:
         'Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette',
       color_palette:
         'Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check',
-      lighting_setup:
-        'Dim, overcast, Pacific-Northwest grey, basement-rehearsal amber, rainy-street flatness',
+      lighting_setup: 'Dim overcast grey, basement-amber warmth, rainy-flat low contrast',
       material_texture:
         'Brushed flannel, distressed knit, stonewashed denim, thermal waffle, Converse canvas',
       render_quality: 'Messy, cool, apathy, lo-fi honesty, garage-band authenticity',
       spatial_distortion: 'None',
-      atmosphere: 'Angst, relaxed, quiet desperation, rainy-afternoon numbness, feedback-hum ennui',
+      atmosphere: 'Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity',
       key_features: 'Flannel shirt, ripped jeans, cardigan, beanie, Converse sneakers',
       creative_brief:
-        'Flannel worn like a memory of warmth in Seattle grey, the sleeves too long because caring about fit would mean caring about something. Ripped denim and thermal waffle carry the weight of rehearsal-room feedback, Converse scuffed by rain-slicked sidewalks that lead nowhere in particular, the uniform of those who already know the ending.',
+        'Push the input into grunge slouch: brushed flannel, distressed knits, stonewashed denim, waffle thermal, canvas sneakers and deliberately poor fit. Keep lo-fi melancholy without requiring Seattle, rehearsal rooms, rainy sidewalks, a band reference or a human slacker.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

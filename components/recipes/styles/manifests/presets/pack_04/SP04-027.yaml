@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Humorous, lively, irreverent
   key_features: Ink flicks, broken contour continuity, lively splash punctuation
   creative_brief: >-
-    Keep the line alive and unruly: fast marks, playful distortions, and watercolor accents that support humor without over-rendering. Preserve Quentin Blake-like spontaneity while keeping compositions open enough for broad prompt reuse.
+    Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours,
+    watercolor splashes, spiky gesture exaggeration, and lively splatter punctuation should carry
+    humor without requiring characters, animals, jokes, children, or fixed story vignettes.
 avoidRules:
   - heavy
   - dark

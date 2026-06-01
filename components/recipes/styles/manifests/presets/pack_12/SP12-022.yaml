@@ -12,14 +12,21 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Survival sandbox ártico con enclave comercial improvisado como nodo de crafting, trueque y expedición.
-  subject_treatment: Traders, hunters y scouts armados con perfiles de clase legibles por equipo térmico.
+  aesthetic: Gramática survival sandbox ártica con refugio precario, crafting, trueque, expedición y contraste térmico.
+  subject_treatment: >-
+    Reinterpreta el input como trader, hunter, scout, recurso o estación improvisada; usar equipo térmico y perfiles de
+    clase sólo cuando aporten lectura.
   color_and_tone: Azul glaciar, ámbar cálido y gris humo para separar refugio de amenaza exterior.
   lighting_and_shadow: Fuentes puntuales de farol sobre blizzard denso, con contraste funcional de zonas seguras.
   texture_and_material: Hielo rayado, lona pesada, madera húmeda y metal congelado por uso extremo.
-  camera_and_composition: Calle central de hub con puestos laterales, puntos de misión y salida a whiteout.
+  camera_and_composition: Hub de supervivencia con puntos de misión, recursos y salida a whiteout como estructura flexible, no bazaar literal.
   atmosphere_and_mood: Refugio precario, cooperación tensa y supervivencia nocturna prolongada.
   rendering_and_quality: Hub visual de alta legibilidad para economía de recursos y preparación de runs.
+  creative_brief: >-
+    Aplica Frozen Bazaar Survival Night como gramatica original de videojuego sobre cualquier input: conserva su sistema
+    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

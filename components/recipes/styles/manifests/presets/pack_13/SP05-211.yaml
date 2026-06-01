@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-211
 packId: pack_13
-name: Super Cub - Mechanical Quietude Road
+name: Utilitarian Quiet-Freedom Minimalism
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Super Cub title anchor translated into practical quietude, utilitarian independence, small-scale emotional expansion, and ordinary movement rendered with spare confidence
-  form_and_line: Practical contour precision, restrained gesture linework, compact mechanical rhythm, and open-air compositional simplicity that can wrap any subject
-  color_palette: Matte black anchors, cold morning blues, subdued neutral fields, rubber-gray shadows, and occasional warm sunset accents
-  lighting_setup: Clear daylight restraint, overcast commuting softness, sparse golden-hour rim light, and low-drama highlights on functional surfaces
-  material_texture: Matte metal, rubber grain, worn vinyl, asphalt-like grit, weathered utility surfaces, and wind-pressed fabric cues
-  render_quality: Minimal mechanical-slice rendering with quiet freedom tone, functional fidelity, and calm emotional restraint
-  spatial_distortion: Long-perspective taper and open negative space used as a freedom cue, not as a required road scene
-  atmosphere: Minimal, freeing, quiet, clean
-  key_features: Utilitarian silhouette discipline, sparse open-air framing, practical material detail, low-voice emotional expansion, subtle acting
+  aesthetic: >-
+    Practical quiet-freedom anime minimalism where utilitarian surfaces, spare independence, and
+    ordinary motion create emotional expansion
+  form_and_line: >-
+    Precise functional contour, restrained gestures, compact mechanical rhythm, open-air negative
+    space, and low-noise silhouette discipline
+  color_palette: >-
+    Matte black, cold morning blue, subdued neutrals, rubber gray, dry asphalt beige, and rare
+    sunset amber
+  lighting_setup: >-
+    Clear daylight restraint, overcast commuter softness, sparse golden rim, and low-drama
+    highlights on functional edges
+  material_texture: >-
+    Matte metal, rubber grain, worn vinyl, roadlike grit, utility fabric, and weathered practical
+    surfaces
+  render_quality: >-
+    Minimal mechanical-slice finish with calm fidelity, functional texture, and low-voice emotional
+    restraint
+  spatial_distortion: >-
+    Long negative-space taper and open perspective used as liberation cue without needing literal
+    travel scenery
+  atmosphere: Minimal, freeing, quiet, clean, self-possessed
+  key_features: >-
+    Utilitarian silhouettes, spare open framing, practical material detail, mechanical quietude, and
+    subtle emotional expansion
   creative_brief: >-
-    Use Super Cub as a style anchor for functional quietude: practical
-    mechanical texture, spare open framing, and low-voice liberation should
-    remain readable without requiring a bike, road, rider, or school setup.
+    Use Super Cub as style anchor for utilitarian quiet freedom. Apply matte functional texture,
+    spare open framing, restrained daylight, and small independence cues to any subject. Bikes,
+    roads, riders, and school setups are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-211.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

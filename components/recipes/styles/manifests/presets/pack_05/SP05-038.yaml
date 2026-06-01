@@ -12,19 +12,26 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Psychic-expression action style with sketch-rough spontaneity, emotional volatility, and pop-abstract rupture dynamics
-  form_and_line: Intentional line wobble, scribble-energy bursts, contour destabilization under emotional peaks, and hand-drawn unpredictability
+  aesthetic: >-
+    Psychic-expression action style with sketch-rough spontaneity, emotional volatility, and pop-abstract rupture
+    dynamics
+  form_and_line: >-
+    Intentional line wobble, scribble-energy bursts, contour destabilization under emotional peaks, and hand-drawn
+    unpredictability
   color_palette: Hyper-saturated emotional spikes over neutral calm fields, abrupt neon surges, and cathartic chroma inversions
   lighting_setup: Unstable luminance pulses, aura bloom surges, and expression-tied exposure shifts that mirror emotional escalation
   material_texture: Crayon-like edge noise, sketch grain overlays, painterly smear accents, and cel-polish broken by raw marks
   render_quality: Stylized high-energy rendering that keeps rough expressive artifacts intentionally visible as part of the finish
   spatial_distortion: Emotion-driven perspective warping and psychic blast deformation with elastic frame pressure
   atmosphere: Cathartic, unstable, empathetic, surreal, explosive
-  key_features: Sketch-to-burst transitions, emotion-linked visual instability, pop-abstract psychic motifs, rough-expression fidelity
+  key_features: >-
+    Sketch-to-burst transitions, emotion-linked visual instability, pop-abstract psychic motifs, rough-expression
+    fidelity
   creative_brief: >-
-    Define this preset by emotional-energy visualization: sketch roughness should
-    escalate into abstract psychic rupture, making inner state the structural
-    driver of style.
+    Define this preset by emotional-energy visualization: sketch roughness should escalate into abstract psychic
+    rupture, making inner state the structural driver of style. Apply this anime/IP-title grammar over any input:
+    preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a
+    required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +48,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-038.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

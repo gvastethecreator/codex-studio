@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Pixelated by tiles
   atmosphere: Ancient, solid
   key_features: Tile grid
-  creative_brief: Images built from cubic fragments, each tessera a decision made by hands working in mortar and time. The whole emerges from the accumulation of small certainties, a pixel art made permanent in stone and glass.
+  creative_brief: >-
+    Apply mosaic tessera construction to the input: small stone or glass tiles,
+    grout gaps, hand-set irregularity, and cumulative fragment logic should
+    build the subject from durable modular pieces.
 avoidRules:
   - smooth painting
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

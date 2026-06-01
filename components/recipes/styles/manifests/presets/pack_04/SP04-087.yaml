@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Methodical, exploratory, selection-oriented
   key_features: High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing
   creative_brief: >-
-    Explore broad morphological directions through silhouette only. Keep variants scale-consistent and formally distinct so comparative review can isolate the strongest proportion, mass distribution, and negative-space logic before internal detail development.
+    Apply silhouette-iteration board logic to any input: black-shape variants, negative-space deltas, proportion
+    experiments, readable thumbnails, and design exploration pacing. If no character or creature exists, translate the
+    subject into abstract silhouette options without requiring a grid, lineup, or figure design.
 avoidRules:
   - detailed
   - rendered

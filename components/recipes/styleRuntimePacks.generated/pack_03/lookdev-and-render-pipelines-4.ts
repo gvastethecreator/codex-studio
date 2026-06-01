@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, tactile, old-world craft',
       key_features: 'Fingerprints',
       creative_brief:
-        "Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine, and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman's soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation.",
+        "Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine, and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman's soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation. Apply Claymation as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
     },
   },
   {
@@ -33,12 +33,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Glowing from inside, warm subsurface hues',
       lighting_setup: 'Backlit, rim-penetration',
       material_texture: 'Waxy, organic, light-permeable',
-      render_quality: 'Realistic organic, portrait-grade',
+      render_quality: 'Realistic organic material, portrait-grade softness when relevant',
       spatial_distortion: 'Soft edges',
       atmosphere: 'Soft, organic, life-like warmth',
       key_features: 'Inner glow',
       creative_brief:
-        "Light does not stop at the surface — it enters, scatters, and emerges somewhere unexpected, carrying the warm blush of interior depths. Backlit edges glow like candlelight through alabaster, and the material reads as something alive, breathing warmth from within. The image feels like holding jade up to the sun or watching sunlight pass through a child's ear.",
+        "Give the input subsurface scattering: light penetration, warm internal bounce, wax/jade/alabaster softness, backlit rim glow and organic depth. Keep life-like warmth without requiring skin, portrait framing, a child's ear or a biological subject.",
     },
   },
   {
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'opaque, dull',
     style: {
-      aesthetic: 'Transparent refractive object',
+      aesthetic: 'Transparent refractive material system',
       form_and_line: 'Caustics',
       color_palette: 'Prismatic dispersion',
       lighting_setup: 'Refracted light',
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Elegant, fragile, luxury boutique',
       key_features: 'Transparency, dispersion rainbow',
       creative_brief:
-        'Light enters a solid and forgets its straight-line discipline — caustic patterns bloom on nearby surfaces like luminous water lilies, and prismatic dispersion paints rainbows where geometry bends the spectrum. The object is both present and absent, defined by what passes through it rather than what stays. A boutique window at midnight, every edge a blade of frozen clarity.',
+        'Apply transparent refractive lookdev to the input: caustic lace, prismatic dispersion, glass-thick edges and optical bending that make form legible through what light does inside it. Keep boutique crystal polish without requiring a standalone object, display window or still-life setup.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, gross, messy joy',
       key_features: 'Drips, stretch strings',
       creative_brief:
-        'Viscosity becomes the protagonist — strands of neon goo stretch between surfaces like bridges of liquid light, and glossy highlights pool in the thickest parts, catching studio strobes with wet, obscene glee. The palette screams Nickelodeon excess: electric greens, hot pinks, colors that refuse to take themselves seriously. The image drips with the joy of mess, a celebration of the gloopy and the gloriously unrefined.',
+        'Apply slime material behavior to any input: viscous neon goo, stretch strands, wet specular pooling, dripping deformation, electric green or hot pink gross-out color, and playful sticky volume. Keep messy cartoon energy without requiring a bucket, prank, creature, lab accident, or body beneath.',
     },
   },
   {
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Futuristic, tech, ghost-data',
       key_features: 'Transparency, flickering projection',
       creative_brief:
-        'An object built from interference patterns rather than matter — cyan and blue scanlines raster across transparent forms, and volumetric light constructs flicker at the edge of perception like a transmission fighting static. The image reads as ghost-data given shape, an AR overlay floating in physical space, defined by what it obscures rather than what it occupies. Sci-fi interface aesthetics rendered as architectural presence, a blueprint made visible through the air itself.',
+        'Rebuild the input as ghost-data: cyan scanlines, transparent interference, volumetric flicker, AR registration seams and blueprint-like light constructs. Preserve sci-fi interface presence without requiring a floating object, architecture mockup or physical room.',
     },
   },
   {
@@ -103,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'plastic, metal',
     style: {
-      aesthetic: 'Ceramic figure',
+      aesthetic: 'Glazed ceramic material treatment',
       form_and_line: 'Smooth curves',
       color_palette: 'White, painted details, hand-glazed accents',
       lighting_setup: 'Soft gloss, ceramic luster',
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Delicate, creepy, period-piece elegance',
       key_features: 'Glaze, crackle-line detail',
       creative_brief:
-        'Smooth as frozen milk, the vitreous glaze catches light with the restraint of fine china — hand-painted details trace floral geometries across curved surfaces, and crackle lines web through the finish like frozen lightning. There is something unsettling in the perfection, a doll-like stillness that borders on the uncanny. Period-piece elegance meets the fragility of a collectible never meant to be touched.',
+        'Smooth as frozen milk, the vitreous glaze catches light with the restraint of fine china — hand-painted details trace floral geometries across curved surfaces, and crackle lines web through the finish like frozen lightning. There is something unsettling in the perfection, a doll-like stillness that borders on the uncanny. Period-piece elegance meets the fragility of a collectible never meant to be touched. Apply Porcelain as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fast, strong, engineering precision',
       key_features: 'Weave pattern, carbon-fiber direction',
       creative_brief:
-        'Geometry becomes textile — the weave pattern shifts direction across compound curves like grain through machined metal, and anisotropic highlights follow the thread orientation with motorsport precision. A clear coat floats above the carbon lattice, catching the world in a thin skin of reflection. The image speaks the language of the pit lane: weightless strength, engineering as aesthetic, every fiber aligned to a purpose you can feel.',
+        'Wrap the input in carbon-fiber engineering language: visible weave direction, clear-coat depth, anisotropic glints and weightless-strength precision. Keep motorsport tension as material attitude only; do not force pit lanes, vehicles or racing context. Apply Carbon Fiber as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Professional, polished confidence',
       key_features: 'Rim light, three-point separation',
       creative_brief:
-        'Three lights work in concert — the key carves form from shadow, the fill softens the dark side without erasing mystery, and the rim traces a hairline of brilliance that separates subject from background with surgical precision. Broadcast-safe balance holds every tone within gamut, and the controlled triangle of illumination leaves nothing to chance. The image radiates professional confidence, a portrait or product so perfectly lit it feels inevitable.',
+        'Apply premium studio lighting discipline to the input: controlled key/fill/rim ratios, softbox gradients, clean shadow approval and broadcast-safe polish. Works for product, portrait or abstract subject without forcing any one of those formats.',
     },
   },
   {
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mysterious, epic, cinematic tension',
       key_features: 'Edge highlight, halo definition',
       creative_brief:
-        "The subject retreats into near-silhouette while a halo of brilliance traces its outline with the precision of a calligrapher's final stroke — backlight carves definition from darkness, and every edge that catches the rim becomes the entire story. The dark masses between highlights pulse with withheld revelation, and the image holds tension like a dramatic pause before the hero steps forward. Moody, cinematic, a reveal staged in light's most economical gesture.",
+        'Use rim lighting as primary style: electric silhouette edges, dark falloff, halo separation and reveal-first contrast. Preserve dramatic hero energy only as lighting attitude; do not require a character, face or step-forward pose. Apply Rim Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -184,7 +184,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ethereal, complex, underwater magic',
       key_features: 'Light dancing, photon mapping',
       creative_brief:
-        'Photons converge like a magnifying glass held to the sun — bright patterns dance across surfaces in shifting webs of concentrated brilliance, the signature of light bent through water or crystal. Prismatic bands separate and recombine, and every caustic net tells the story of the refractive object that cast it. The image captures underwater magic rendered with optical precision, light transformed from illumination into event.',
+        'Apply caustic light behavior to any input: concentrated photon webs, prismatic separation, refractive patterning, bright surface pools, and optical precision from water or crystal-like bending. Keep the caustic effect as lighting grammar without requiring underwater content, glass props, pools, or a specific refractive object.',
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Neutral, shape focus, pure geometry',
       key_features: 'Corner shadows, contact darkness',
       creative_brief:
-        "Stripped of color, texture, and direct light, the object speaks through shadow alone — soft grey gradients pool in crevices and undercuts, and contact darkness anchors forms to their plane with the gravity of proximity. The clay-white matte surface reads as a sculptor's review pass, pure geometry assessed without the distraction of materials. The image is form study at its most honest: every curve proven by the darkness it gathers.",
+        'Render any input as an ambient-occlusion review pass: clay-white matte surface, soft grey crevice gradients, contact darkness, undercut emphasis, and geometry-first readability with color and direct light removed. Keep sculptural form study without requiring a standalone object, turntable, character model, or studio plane.',
     },
   },
   {
@@ -211,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'flat, realistic scale',
     style: {
-      aesthetic: 'Miniature world',
+      aesthetic: 'Miniature tilt-shift treatment',
       form_and_line: 'Tilt-shift blur',
       color_palette: 'Saturated, cozy, miniature palette',
       lighting_setup: 'Warm, close, macro-lighting',
@@ -220,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, tiny, tabletop wonder',
       key_features: 'Miniature, depth-of-field isolation',
       creative_brief:
-        'The world shrinks to fit on a tabletop — tilt-shift depth of field blurs the near and far into creamy abstraction, leaving only the subject in hyper-real miniature sharpness. Saturated colors and warm macro-lighting make every tiny tree and building feel hand-painted by an obsessive modelmaker. The image is tilt-shift magic: a universe you could cup in both hands, cozy and impossibly detailed.',
+        'Miniaturize the input through tilt-shift optics: macro-scale warmth, saturated model-kit color, creamy near/far blur and handcrafted surface cues. Do not require trees, buildings, tabletop worlds or a literal diorama. Apply Diorama Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -229,17 +229,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'daylight, sun',
     style: {
-      aesthetic: 'Night city rain',
+      aesthetic: 'Cyberpunk neon-rain lookdev',
       form_and_line: 'Reflections',
       color_palette: 'Pink, Cyan, Purple',
       lighting_setup: 'Emissive signs',
-      material_texture: 'Wet asphalt, reflective surfaces',
+      material_texture: 'Wet reflective surfaces, emissive haze',
       render_quality: 'Blade Runner rain-soaked neon megacity',
       spatial_distortion: 'None',
       atmosphere: 'Dystopian, cool, future-noir',
       key_features: 'Neon glow',
       creative_brief:
-        "Rain-slicked asphalt mirrors a sky that never existed — pink and cyan neon bleed across wet surfaces, every puddle a portal to the signage above. Emissive kanji and holographic advertisements paint the night in electric magenta, while shadows pool in alleyways where the glow cannot reach. Blade Runner's grandchildren walk these streets: future-noir rendered in 3D, dystopian beauty that tastes like ozone and filter cigarettes.",
+        'Apply cyberpunk neon-rain treatment to the input: magenta/cyan emissive bleed, wet reflective sheen, holographic haze, high-contrast future-noir shadows and ozone atmosphere. It may hint at signage or urban density, but must not force streets, alleys, kanji, pedestrians or a literal city.',
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'clean render',
     style: {
-      aesthetic: 'Model with visible topology',
+      aesthetic: 'Shaded topology overlay',
       form_and_line: 'White wires over grey model',
       color_palette: 'Grey and White, wire-color contrast',
       lighting_setup: 'Studio, dual-pass render',
@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Educational, process, design-transparency',
       key_features: 'Wire overlay, shaded+wireframe combo',
       creative_brief:
-        'The shaded model and its wireframe ghost occupy the same space — white edge loops trace topology across grey surfaces, a dual-pass render that reveals the skeleton dancing beneath the skin. Studio lighting gives the shaded form weight and presence, while the wire overlay insists on transparency, on showing the work. The image is breakdown beauty: the making-of as final product, process elevated to aesthetic.',
+        'Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material surface retained beneath technical linework. Treat mesh logic as graphic pattern; do not require a model turntable or peeled-skin object. Apply Wireframe on Shaded as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -271,11 +271,11 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Rainbow (Blue cold, Red hot), thermal gradient',
       lighting_setup: 'Emissive temperature, heat-source mapping',
       material_texture: 'None, temperature-emissive',
-      render_quality: 'Predator vision, tactical overlay',
-      atmosphere: 'Tactical, alien, reconnaissance',
+      render_quality: 'Thermal false-color sensor overlay',
+      atmosphere: 'Tactical, alien, sensor-data intensity',
       key_features: 'Heat map, cold-to-hot spectrum',
       creative_brief:
-        'Color replaces material — deep blue recedes into cold hollows while orange flares at heat sources and white peaks where temperature hits its ceiling. The rainbow gradient maps physics to palette, every surface glowing not from illumination but from its own thermal emission. The image channels Predator vision and tactical reconnaissance: a world seen through the lens of energy rather than light, hot and cold telling stories invisible to the naked eye.',
+        'Translate the input into thermal false color: white/yellow heat peaks, blue cold zones, soft diffusion edges and sensor-grade data contrast. Keep tactical sci-fi flavor without requiring predator vision, reconnaissance or a literal world scan.',
     },
   },
   {
@@ -289,11 +289,11 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Clean background, component contrast',
       lighting_setup: 'Top down, shadow-free',
       material_texture: 'Clean parts, disassembly beauty',
-      render_quality: 'Organization porn, product-exploded',
+      render_quality: 'Organized exploded-layout clarity',
       atmosphere: 'Satisfying, organized, design-museum',
       key_features: 'Grid layout, 90-degree arrangement',
       creative_brief:
-        'Every component lies at perfect right angles, a exploded-view diagram rendered beautiful — top-down lighting eliminates shadows, and the clean background turns disassembly into museum curation. Each part occupies its ordained grid cell with the satisfaction of a perfectly packed toolbox. The image is organization elevated to art: a design museum where even the screws have their moment of solo exhibition.',
+        'Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded relationships and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate its visual elements into a precise grid. Do not require a product teardown. Apply Knolling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -308,10 +308,10 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Soft studio, shadow-casting consistency',
       material_texture: 'Smooth, isometric-unity feel',
       render_quality: 'Mobile game, icon, asset-store ready',
-      atmosphere: 'Organized, tiny, world-in-a-box',
+      atmosphere: 'Organized, tiny, isometric clarity',
       key_features: '30 degree angle, parallel projection',
       creative_brief:
-        'Parallel lines refuse to converge — every object maintains its true dimensions regardless of distance, and the thirty-degree tilt transforms everyday scenes into dioramas of quiet perfection. Pastel gradients wash across smooth surfaces, shadow-casting consistency gives weight without perspective distortion. The image is a world-in-a-box, an asset-store daydream where every miniature tells a story from an angle that never lies.',
+        'Convert the input to clean isometric projection: locked parallel lines, thirty-degree tilt, pastel gradients and consistent soft shadows. Keep asset-store readability and miniature charm without requiring an everyday everyday setup, diorama world, or story vignette.',
     },
   },
   {
@@ -329,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Trippy, alien, mind-bending',
       key_features: 'Self-similarity, fractal recursion',
       creative_brief:
-        'Zoom in and the pattern repeats — zoom in again and it repeats again, a Mandelbulb cathedral of self-similarity where scale becomes meaningless. Psychedelic recursion tones spiral through deep cave shadows, and procedural surfaces carry the fingerprint of the equation that birthed them. The image is alien geometry rendered familiar through mathematics, a trip into algorithmic wonder where every detail contains the whole and the whole contains every detail.',
+        'Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density, algorithmic ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a cathedral, cave or traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -343,12 +343,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Vibrant',
       lighting_setup: 'Global illumination',
       material_texture: 'None, clean grid faces',
-      render_quality: 'Minecraft/MagicaVoxel block-world voxel art, cube poetry',
+      render_quality: 'Minecraft/MagicaVoxel voxel art, cube poetry',
       spatial_distortion: 'Blocky',
       atmosphere: 'Cute, digital, nostalgic sandbox',
       key_features: 'Cubes',
       creative_brief:
-        'The world resolves into its smallest meaningful unit — cubes stacked like digital Legos on an invisible grid, global illumination softening their hard edges into something almost innocent. MagicaVoxel poetry: vibrant colors mapped to three-dimensional pixels, each block a vote in the democracy of form. Nostalgia for the sandbox bleeds through every right angle, a universe you could rebuild with a single click.',
+        'Resolve the input into voxel grammar: cubic sampling, visible grid logic, MagicaVoxel color blocks and soft GI over hard right angles. Keep sandbox nostalgia as construction style, without requiring a block world, terrain or Minecraft-style environment.',
     },
   },
   {
@@ -366,7 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Technical, cyber, developer aesthetic',
       key_features: 'Topology, edge-flow visibility',
       creative_brief:
-        "The object sheds its skin to reveal the skeleton beneath — neon edge loops trace topology across a black void like constellations mapped onto an invisible form. No surface, no texture, only pure structure glowing in self-illuminated wireframe. The image reads as a developer's dream rendered beautiful: the debug viewport elevated to gallery status, every edge-flow decision visible and celebrated.",
+        'Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and debug-viewport elegance. No need for a standalone object or black void; the style is structure made visible. Apply Wireframe Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -375,16 +375,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'messy, lived in',
     style: {
-      aesthetic: 'Modern house render',
+      aesthetic: 'Architectural visualization render system',
       form_and_line: 'Straight verticals',
       color_palette: 'Beige, White, Wood, natural-material tones',
       lighting_setup: 'Sunlight, window-daylight simulation',
       material_texture: 'Realistic materials, lived-in warmth',
       render_quality: 'Real estate brochure, lifestyle luxury',
       atmosphere: 'Aspirational, clean, designer-curated',
-      key_features: 'Perfect furniture, architectural storytelling',
+      key_features: 'Straight verticals, daylight material truth',
       creative_brief:
-        "Sunlight enters through floor-to-ceiling glass and lands on beige textiles and pale oak with the precision of a real estate photographer's best day — straight verticals keep the architecture honest, and window-daylight simulation warms every surface without ever feeling staged. Lived-in warmth without the mess: designer-curated aspiration where every throw pillow and coffee-table book earned its position through a stylist's deliberation. The image sells a life you could walk into, if only you had the keys.",
+        'Give the input ArchViz discipline: straight verticals, daylight simulation, calibrated natural materials, clean brochure contrast and designer-curated warmth. If architecture or interiors exist, clarify them; otherwise apply architectural lighting logic without forcing a house, furniture layout, lifestyle props, or real-estate setup. Apply Architectural Visualization as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'dust, scratches',
     style: {
-      aesthetic: 'Consumer electronics',
+      aesthetic: 'Premium product-render discipline',
       form_and_line: 'Sleek curves',
       color_palette: 'Brand colors',
       lighting_setup: 'Studio reflection',
@@ -401,9 +401,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Apple flagship product launch, minimalist perfection',
       spatial_distortion: 'None',
       atmosphere: 'Desirable, expensive, luxury reveal',
-      key_features: 'White background',
+      key_features: 'Controlled reflections, premium reveal',
       creative_brief:
-        'The object floats on an infinite white void — no environment, no context, only the product itself rendered with the reverence of a religious icon. Matte aluminum catches studio reflections in controlled sweeps, and brand colors pop against the absence of distraction with flagship-launch confidence. The image channels Apple keynote minimalism: every chamfer, every seam, every material transition designed to make you reach for your wallet.',
+        'Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps, premium material transitions, clean silhouette hierarchy and launch-keynote desire. Do not require consumer electronics, a floating object, wallet cue or infinite white void. Apply Product Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -412,16 +412,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'dirty, dented',
     style: {
-      aesthetic: 'Car commercial CGI',
+      aesthetic: 'Automotive launch-film finish',
       form_and_line: 'Aerodynamic lines',
       color_palette: 'Metallic paint, color-shift finish',
       lighting_setup: 'Studio sweep, highlight-catch reflections',
-      material_texture: 'Car paint, rubber, glass laminate',
+      material_texture: 'Metallic paint, rubber/glass cues when relevant',
       render_quality: 'High end, pristine, launch-film quality',
       atmosphere: 'Fast, luxury, aerodynamic desire',
       key_features: 'Reflection lines, body-contour flow',
       creative_brief:
-        'Highlight lines sweep across the bodywork in unbroken arcs, tracing aerodynamic intent from grille to tail — metallic paint shifts color as the studio sweep reflection bends across compound curves. Rubber reads as rubber, glass laminate catches the world in controlled distortion, and every surface material is rendered with launch-film conviction. The image is speed made still: a car commercial frozen at the exact frame where desire meets engineering.',
+        'Apply automotive launch-film rendering to the input: long reflection sweeps, color-shifting metallic finish, aerodynamic highlight flow and pristine material separation. If a vehicle is present, enhance grille/tail/rubber/ glass truth; otherwise use automotive surface language without forcing a car.',
     },
   },
   {
@@ -437,10 +437,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Digital fabric, weave simulation',
       render_quality: 'Clo3D/Marvelous Designer digital garment simulation',
       spatial_distortion: 'Floating cloth',
-      atmosphere: 'Futuristic, fashion, runway spectacle',
+      atmosphere: 'Futuristic, fashion-material spectacle',
       key_features: 'Drape, cloth dynamics',
       creative_brief:
-        "Fabric that cannot exist in the physical world — iridescent weaves shift color with viewing angle, and cloth simulation drapes across invisible forms with Marvelous Designer precision. Runway lighting catches every fold and flutter, and digital weave patterns map thread-level detail onto garments that float in defiance of gravity. The image is fashion's digital frontier: a Clo3D spectacle where the only limit on material is imagination, and every drape tells a story the physical runway could never stage.",
+        'Apply digital-fashion material logic to the input: impossible iridescent weaves, simulation-grade drape, thread-level patterns and runway-grade highlight control. If garments exist, elevate them; otherwise use fashion textile behavior without forcing a model, runway or floating dress.',
     },
   },
   {
@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Friendly, UI, app-store ready',
       key_features: 'Front facing, soft shadow base',
       creative_brief:
-        'The squircle shape announces its platform allegiance before any detail registers — smooth plastic and glass materials catch soft studio light with UI-grade polish, and vibrant gradients give the icon chromatic presence at any size. A soft shadow anchors the object to an implied surface, and front-facing composition maximizes legibility for the app drawer. The image is macOS Big Sur elegance distilled: friendly enough to tap, premium enough to trust, an icon that carries the weight of its application in a single glance.',
+        'Compress the input into platform-icon language: squircle discipline, UI-grade plastic/glass, vibrant gradients, soft shadow grounding and front-facing legibility. Keep macOS Big Sur polish without requiring a literal app, drawer context or standalone object.',
     },
   },
   {
@@ -468,7 +468,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'solid, cartoon fire',
     style: {
-      aesthetic: 'Explosion or fire',
+      aesthetic: 'Houdini pyro simulation',
       form_and_line: 'Turbulence',
       color_palette: 'Orange, Black smoke',
       lighting_setup: 'Self illuminated',
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, dynamic, cinematic destruction',
       key_features: 'Physics, turbulence control',
       creative_brief:
-        'Orange heat blooms into black smoke — turbulence curls the pyroclastic density into rolling vortices, and self-illuminated volumes cast their own light onto the scene like a miniature sun born in an instant. The expansion reads as physics rather than art direction, Houdini simulations where every wisp of smoke and tongue of flame obeys the mathematics of fluid dynamics. The image is cinematic destruction frozen at its peak: dangerous, dynamic, a fireball that will have consumed itself before the next frame renders.',
+        'Apply Houdini pyro behavior to the input: turbulent density curls, self-illuminated heat volumes, smoke layering and fluid-dynamics credibility. It can imply blast, flame or destruction when relevant, but must not require a fireball, disaster staging, or consumed environment.',
     },
   },
   {
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creative, delicate, art-project warmth',
       key_features: 'Layered depth, fold-crease definition',
       creative_brief:
-        'Paper grain catches light at grazing angles, and fold creases cast micro-shadows between layered cardstock planes — every surface reads as something you could cut with scissors and reassemble on a craft table. The depth between layers is physical, built from stacked sheets rather than extruded geometry, and folded construction replaces curved surfaces with the honest language of the crease. The image is origami precision meets art-project warmth: papercraft rendered with the conviction that glue and patience built this world.',
+        'Translate the input into papercraft construction: cardstock grain, layered-sheet depth, fold creases, cut edges and warm craft lighting. Keep handmade precision without forcing craft-table context, glue props or a paper-built world.',
     },
   },
   {
@@ -505,16 +505,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'empty, boring',
     style: {
-      aesthetic: 'Game level art',
-      form_and_line: 'Compositional path',
+      aesthetic: 'Environment-design render language',
+      form_and_line: 'Modular composition and guided depth',
       color_palette: 'Atmospheric perspective, distance-blue fade',
       lighting_setup: 'Baked global illumination, environment-lighting',
       material_texture: 'Tileable textures, world-building materials',
-      render_quality: 'Level art, immersive, game-world ready',
-      atmosphere: 'Adventure, place, explorable wonder',
-      key_features: 'Walkable path, environment storytelling',
+      render_quality: 'Level-art material logic, immersive readiness',
+      atmosphere: 'Explorable depth, designed place energy',
+      key_features: 'Modular kits, environmental-storytelling cues',
       creative_brief:
-        'A compositional path leads the eye from foreground to vanishing point — atmospheric perspective fades distant mountains into blue haze, and baked global illumination anchors the scene in lighting that feels lived-in rather than placed. Tileable textures build worlds from modular kits, and environmental storytelling whispers narratives through ruin placement, foliage choice, and the suggestion of a path someone walked before you. The image is level art at its most inviting: a game world that makes you reach for the controller.',
+        'Apply environment-design thinking to the input: modular material kits, atmospheric perspective, baked-GI credibility and depth cues that imply explorable space. If the prompt is an environment, strengthen level-art readability; otherwise borrow worldbuilding texture logic without forcing mountains, ruins, foliage, paths, or a game-level layout.',
     },
   },
   {
@@ -533,7 +533,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, weird, pioneering spirit',
       key_features: 'No shadows, jitter-free geometry',
       creative_brief:
-        'Simple geometry wears Phong shading like a badge of its era — primary colors pop against checkerboard textures, and ambient-fill lighting substitutes for the bounce light these renderers could not yet calculate. No ambient occlusion, no global illumination, just the honest awkwardness of pioneer polygons rendered with the tools of 1995. The image channels Reboot and Toy Story 1: stiff animation, uncanny charm, the pioneering spirit of an industry discovering what it could become.',
+        'Simple geometry wears Phong shading like a badge of its era — primary colors pop against checkerboard textures, and ambient-fill lighting substitutes for the bounce light these renderers could not yet calculate. No ambient occlusion, no global illumination, just the honest awkwardness of pioneer polygons rendered with the tools of 1995. The image channels Reboot and Toy Story 1: stiff animation, uncanny charm, the pioneering spirit of an industry discovering what it could become. Apply Retro CGI as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -542,7 +542,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'flesh, color',
     style: {
-      aesthetic: 'Cast metal figure',
+      aesthetic: 'Cast bronze sculptural material',
       form_and_line: 'Sculpted details',
       color_palette: 'Bronze, Patina (Green), verdigris aging',
       lighting_setup: 'Specular highlights, metal-luster',
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Timeless, heavy, historical gravity',
       key_features: 'Patina in crevices, cast-metal detail',
       creative_brief:
-        'Specular highlights ride the crest of sculpted musculature and draped fabric — the bronze holds its warm metallic luster across broad planes while verdigris patina gathers in crevices like green memory of centuries of weather. Cast-metal texture betrays the mold that birthed it, and the weight of the material reads in every shadow. The image is monumental: a sculpture-garden centerpiece rendered with the gravity of history, timeless metal carrying the likeness of something mortal into permanence.',
+        'Cast the input in bronze-sculpture language: warm metal luster, verdigris in crevices, mold texture, heavy shadows and monument-grade surface gravity. If figurative forms exist, preserve them; otherwise apply sculptural metal permanence without forcing a statue garden or human figure. Apply Bronze Statue as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, pure, sculpted eternity',
       key_features: 'Stone texture, vein-flow naturalism',
       creative_brief:
-        "Grey veins drift through white Carrara like weather systems frozen in stone — slight subsurface scattering gives the marble a translucency that suggests depth beneath the polished surface, and chisel marks (where present) record the sculptor's last touch before setting down the tool. The stone polish reflects soft light without the hardness of metal, and the veined-crystal surface reads as geology repurposed into art. The image is neoclassical perfection: a museum piece rendered with the stillness of eternity, carved from the same material as Michelangelo's dreams.",
+        'Recast the input in Carrara-marble sculpture style: grey veining, semi-translucent stone depth, polished soft reflection and optional chisel marks. Keep neoclassical dignity as material language, not a forced museum piece, figure, or Michelangelo reference setup. Apply Marble Statue as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Friendly, soft, warm-invitation',
       key_features: 'Floating elements, pill-shape softness',
       creative_brief:
-        'Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI: an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft invitation.',
+        'Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI: an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft invitation. Apply Clay UI as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -605,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cold, temporary, ephemeral beauty',
       key_features: 'Transparency, melt-edge detail',
       creative_brief:
-        'Chiseled edges catch light and throw it through the frozen interior — refractive dispersion bends the spectrum inside crystal-clear geometry, and a blue tint whispers the temperature of the material even in a still image. Melt-edge details soften the harshest cuts, and frosty translucence gives the sculpture the temporality of something already beginning to disappear. The image is gala-tier ephemeral beauty: an ice sculpture at the peak of its existence, cold and perfect and already melting.',
+        'Carve the input into ice-sculpture material: cold translucence, blue-tinted refraction, chiseled edges, melt-softened corners and frosty dispersion. Preserve gala-tier ephemerality without forcing a literal sculpture or event setting. Apply Ice Sculpture as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'smooth, melted',
     style: {
-      aesthetic: 'Built from toy bricks, Lego world, snap-together reality, stud-and-tube logic',
+      aesthetic: 'Toy-brick construction, stud-and-tube logic',
       form_and_line: 'Studs',
       color_palette: 'Plastic primary colors, brick-bright palette',
       lighting_setup: 'Plastic gloss, animated-film lighting',
@@ -624,7 +624,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, constructive, brick-by-brick magic',
       key_features: 'Studs on top, clutch power',
       creative_brief:
-        'Studs rise from every surface like braille for the fingers — plastic primary colors snap together with clutch-power logic, and ABS material catches animated-film lighting with the gloss of molded polymer. Brick-stepped curves approximate what smooth geometry would achieve, and visible seams between elements celebrate the constructive constraint rather than hiding it. The image is Lego Movie energy: a world built brick by brick where everything is indeed awesome, every stud a tiny declaration of snap-together possibility.',
+        'Convert the input into toy-brick construction: studs, clutch-power seams, ABS gloss, primary-color modules and stepped approximations of curves. Keep Lego Movie feature energy without forcing a brick world, playset or specific setup.',
     },
   },
   {
@@ -633,17 +633,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'rotten, dry',
     style: {
-      aesthetic: 'Perfect burger ad',
+      aesthetic: 'Hyper-appetizing food-ad CGI',
       form_and_line: 'Juicy details',
       color_palette: 'Saturated, fresh',
       lighting_setup: 'Backlit steam',
       material_texture: 'Wet, condensation, micro-droplets',
-      render_quality: 'McDonalds fast-food hero ad, impossibly appetizing',
+      render_quality: 'Fast-food hero-ad polish, impossibly appetizing',
       spatial_distortion: 'Flying ingredients',
       atmosphere: 'Delicious, hyperreal, crave-inducing',
       key_features: 'Water droplets, steam wisps',
       creative_brief:
-        'Micro-droplets of condensation bead on a fresh tomato slice while steam wisps curl upward through backlit air — every ingredient is suspended at its peak of impossible freshness, flying lettuce and sesame seeds frozen mid-launch. The saturation is cranked to fast-food fantasy, wet surfaces glisten with appetite-engineered precision, and the image triggers a craving your stomach believes before your brain can object. This is hero-ad CGI at its most weaponized: food rendered more delicious than food could ever be.',
+        'Apply appetizing food-CGI craft to the input: macro compression, glossy edible highlights, subsurface sauce-like glow, calibrated droplets and crumb-level texture. If food exists, make it craveable; otherwise borrow food-ad lighting/material richness without forcing burger ingredients.',
     },
   },
   {
@@ -662,7 +662,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Energetic, corporate, broadcast-level',
       key_features: 'Abstract shapes, kinetic flow',
       creative_brief:
-        "Geometry forgets to be still — glossy abstract shapes trail kinetic echoes behind them, and vibrant gradients smear across the frame like a motion-blur photograph of pure energy. Squash and stretch remembers animation's elastic origins, and Cinema 4D mograph sensibilities give every sphere and spline the confidence of broadcast design. The image pulses with corporate creativity at its most unleashed: a logo reveal frozen at the peak of its own spectacle.",
+        "Geometry forgets to be still — glossy abstract shapes trail kinetic echoes behind them, and vibrant gradients smear across the frame like a motion-blur photograph of pure energy. Squash and stretch remembers animation's elastic origins, and Cinema 4D mograph sensibilities give every sphere and spline the confidence of broadcast design. The image pulses with corporate creativity at its most unleashed: a logo reveal frozen at the peak of its own spectacle. Apply Motion Graphics as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
     },
   },
   {
@@ -681,7 +681,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Smart, complex, knowledge-driven',
       key_features: 'Data points, scale-reference',
       creative_brief:
-        'Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the weight of measurement.',
+        'Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the weight of measurement. Apply Scientific Visualization as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -699,7 +699,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Neutral, design, audition-ready',
       key_features: 'T-Pose or A-Pose, turn-around clarity',
       creative_brief:
-        'The character stands arms-out in the universal language of the pipeline — T-pose or A-pose, neutral and unposed, every anatomical decision laid bare under even, character-sheet lighting. Skin tones render accurately without dramatic shadow, and cloth drapes with production-ready honesty. The image is an audition: a model sheet waiting for a rigger, a concept made tangible, design clarity prioritized over drama.',
+        'Use production model-sheet clarity. If a character exists, keep T-pose or A-pose, neutral turnaround lighting and rig-ready anatomy/cloth truth. If no character exists, translate the subject into a neutral asset sheet with orthographic readability. Avoid action pose or narrative background. Apply Character Design as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -708,7 +708,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'high poly, unoptimized',
     style: {
-      aesthetic: 'Optimized prop',
+      aesthetic: 'Game-asset PBR optimization',
       form_and_line: 'Normal map details',
       color_palette: 'Albedo map',
       lighting_setup: 'Marmoset asset viewer lighting, turntable glory',
@@ -716,9 +716,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Game ready, portfolio turntable',
       spatial_distortion: 'None',
       atmosphere: 'Functional, clean, asset-showcase',
-      key_features: 'Asset turntable, normal map detail',
+      key_features: 'Asset-ready PBR, normal map detail',
       creative_brief:
-        'Every polygon earns its place — the normal map whispers detail the geometry never actually carried, and roughness/metalness values define surface behavior with the economy of a well-written function. Marmoset-style turntable lighting wraps the prop in portfolio glory, no wasted texture space, no unused vertices. The image is game-ready confidence: an asset waiting its turn in the level editor, optimized and undeniable.',
+        'Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior, readable edge wear and performance-minded material hierarchy. If it is a prop or asset, make it level-editor credible; otherwise apply game-asset clarity without forcing a prop. Apply Game Asset as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -736,7 +736,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, digital, zen-productivity',
       key_features: 'No focal point, flowing composition',
       creative_brief:
-        'No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at.',
+        'No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at. Apply Abstract Background as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -756,7 +756,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Professional, studio, fast-turnaround',
       key_features: 'Fast blur, out-of-core rendering',
       creative_brief:
-        "Speed and beauty converge in a renderer that knows exactly which corners to cut without leaving a trace — caustics cascade through photon-mapped precision while soft shadows pool like spilled ink. Redshift's biased genius lies in choosing its battles: flawless blur, noise-free interiors, production-ready frames delivered at the pace of creative impulse. The result is broadcast-ready clarity, a signal unblemished by hesitation.",
+        "Speed and beauty converge in a renderer that knows exactly which corners to cut without leaving a trace — caustics cascade through photon-mapped precision while soft shadows pool like spilled ink. Redshift's biased genius lies in choosing its battles: flawless blur, noise-free interiors, production-ready frames delivered at the pace of creative impulse. The result is broadcast-ready clarity, a signal unblemished by hesitation. Apply Redshift Biased GPU Renderer as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
     },
   },
   {
@@ -768,15 +768,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Architectural visualization',
       form_and_line: 'Precise',
-      color_palette: 'Warm interior, balanced exposure',
+      color_palette: 'Warm neutral exposure, architectural balance, believable material color',
       lighting_setup: 'IES lights, sun, adaptive dome',
       material_texture: 'Photorealistic materials, layered BRDF',
-      render_quality: 'ArchViz, catalog, interior design',
+      render_quality: 'ArchViz clarity, catalog realism, interior-design lighting discipline',
       spatial_distortion: 'None',
-      atmosphere: 'Inviting, expensive, aspirational living',
+      atmosphere: 'Inviting, expensive, aspirational, clean real-estate polish',
       key_features: 'Clean lines, adaptive sampling',
       creative_brief:
-        'Sunlight pours through virtual windows calibrated to real-world lumens, warming surfaces that feel inhabited before anyone arrives — IES profiles paint light with the precision of architectural specification. Layered BRDF materials blur the line between render and photograph, and adaptive sampling sharpens edges that matter while letting others soften into atmosphere. The space invites you to imagine living there, an aspiration rendered in wood grain and warm exposure.',
+        'Apply V-Ray ArchViz discipline to the input: calibrated IES light, adaptive dome softness, layered BRDF materials, warm exposure, straight-line clarity and expensive catalog realism. It can make architecture feel habitable, but must not force an interior, window wall, furniture layout, or lifestyle setup.',
     },
   },
   {
@@ -786,16 +786,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'environment, messy',
     style: {
       aesthetic: 'Product design render',
-      form_and_line: 'Studio setup',
+      form_and_line: 'Studio-isolated presentation, controlled silhouette, clean design-read',
       color_palette: 'Accurate plastics/metals, brand-specific',
       lighting_setup: 'HDRI studio, real-time ray tracing',
       material_texture: 'Mold tech textures, scientifically accurate',
       render_quality: 'Industrial design, packaging comp',
       spatial_distortion: 'None',
       atmosphere: 'Clean, commercial, premium retail',
-      key_features: 'Product focus, interactive rendering',
+      key_features:
+        'Controlled studio reflections, accurate material swatches, interactive-render polish',
       creative_brief:
-        "A product floats in studio space, every injection-molded curve and metallic sheen rendered with the scientific accuracy of mold-tech textures — HDRI environments wrap the object in light borrowed from the real world. Real-time ray tracing makes the designer's intent visible long before the mold is cut, and scientifically accurate materials speak the language of Pantone and polymer. Commerce meets craft in a frame that could be a premium catalog spread, asking nothing of the viewer but desire.",
+        'Give the input KeyShot product-studio treatment: HDRI studio reflections, scientifically accurate plastics/metals, Pantone-like color discipline, polymer texture fidelity and premium catalog isolation. Keep commerce-ready clarity without requiring a consumer product, packaging comp, floating object or empty studio void.',
     },
   },
   {
@@ -815,7 +816,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cinematic, slick, hyper-polished',
       key_features: 'Octane signature spectral bloom',
       creative_brief:
-        "Light fractures into its constituent wavelengths like a prism held against the sun — spectral highlights bloom across glossy surfaces, each reflection a small revelation of physics made beautiful. Octane's GPU path tracing treats every photon as a character, scattering and bending with spectral precision. The image feels engineered by someone who understands that true polish is the absence of compromise.",
+        'Render any input with Octane spectral GPU path-tracer polish: physically precise glossy reflections, spectral dispersion, clean caustic hints, high-contrast bloom, and portfolio-grade material clarity. Keep photon-rich luxury without requiring a product pedestal, car, jewelry object, or studio still life.',
     },
   },
   {
@@ -831,10 +832,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'PBR materials, substance integrations',
       render_quality: 'Game cinematic, cutscene-grade',
       spatial_distortion: 'None',
-      atmosphere: 'Dynamic, interactive, player-driven',
+      atmosphere: 'Dynamic, interactive-feeling, cinematic real-time energy',
       key_features: 'Lens flares, HDRP pipeline',
       creative_brief:
-        "Volumetric fog rolls through real-time global illumination, and lens flares bloom where light sources dare to face the camera directly — HDRP orchestrates post-processing like a colorist's final pass. PBR materials integrate Substance-authored textures into a pipeline that turns interactive frames into cinematic stills. Player agency meets directorial intention in a world that renders faster than the eye can question, each cutscene-grade frame a promise of what lies beyond the loading screen.",
+        'Apply Unity HDRP polish to the input: volumetric fog, filmic tonemapping, lens flares, real-time GI and Substance-style PBR texture integration. Keep cutscene-grade energy without requiring a player, loading screen, game world, level layout, or character action.',
     },
   },
   {
@@ -843,17 +844,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Lookdev And Render Pipelines',
     negativePrompt: 'pre-rendered, low poly',
     style: {
-      aesthetic: 'Real-time next-gen game',
+      aesthetic: 'Real-time next-gen game-engine rendering',
       form_and_line: 'Lumen global illumination',
       color_palette: 'Realistic, dynamic, physically based',
       lighting_setup: 'Ray traced shadows, Nanite-lit',
       material_texture: 'Nanite geometry detail',
-      render_quality: 'AAA Game, screenshot, virtual production',
+      render_quality: 'AAA game fidelity, virtual production polish, real-time final-frame clarity',
       spatial_distortion: 'None',
       atmosphere: 'Immersive, interactive, cinematic depth',
       key_features: 'High fidelity, real-time path tracing',
       creative_brief:
-        "A world rendered in real time yet indistinguishable from a paused dream — Nanite geometry holds infinite detail while Lumen traces every photon's journey through volumetric space. The image breathes with the immediacy of a live game loop yet carries the compositional weight of a final frame. Virtual production meets AAA ambition in a render that refuses to acknowledge the boundary between interactive and cinematic.",
+        'Render the input with Unreal Engine 5 language: Nanite-like geometric density, Lumen-style bounce, ray-traced shadows, volumetric depth and real-time virtual-production polish. Keep AAA game immediacy without requiring a full world, screenshot, level, character, or playable setup.',
     },
   },
   {
@@ -866,13 +867,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Soft shapes',
       color_palette: 'Vibrant, cinematic, storybook saturation',
       lighting_setup: 'Artistic control, per-light AOVs',
-      material_texture: 'Stylized realism, hero-material pipeline',
+      material_texture: 'Stylized realism, feature-animation material pipeline',
       render_quality: 'Disney/Pixar family feature animation, heartfelt, timeless',
       spatial_distortion: 'Squash and stretch',
-      atmosphere: 'Magical, story, emotional resonance',
+      atmosphere: 'Magical, emotional resonance, family-feature warmth',
       key_features: 'Subsurface scattering, deep compositing',
       creative_brief:
-        "Subsurface light travels through skin and fabric like a secret, emerging as soft glow at the edges of every form — RenderMan's hero-material pipeline dresses characters in stylized realism that feels more true than truth. Squash and stretch remembers animation's hand-drawn origins while deep compositing gives every light its own independent story, isolatable and tweakable into the final grade. The frame holds wonder like a cupped hand holds water, timeless and trembling with potential energy.",
+        'Render the input with feature-animation warmth: soft shapes, stylized-real material response, subsurface edge glow, squash-and-stretch elasticity and deep-composited light control. Preserve Pixar/RenderMan emotional polish without requiring characters, skin, fabric, story pose or family-film setup.',
     },
   },
   {
@@ -887,11 +888,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Rim light, sculpting-studio setup',
       material_texture: 'Clay strokes, matcap highlights',
       render_quality: 'High poly model, sculpted detail',
-      spatial_distortion: 'Anatomical study',
+      spatial_distortion: 'Sculptural anatomy optional',
       atmosphere: 'Artistic, raw, hands-on feel',
       key_features: 'Matcap material, dynamesh topology',
       creative_brief:
-        'Digital clay remembers the pressure of a stylus like real clay remembers a thumbprint — matcap highlights ride the crest of every sculpted fold, and dynamesh topology flows beneath the surface like invisible grain. The monochromatic wax palette strips away distraction, leaving pure form under rim-lit scrutiny, anatomical studies that feel excavated rather than constructed. The raw model stands in its own honesty, untextured and unapologetic.',
+        'Treat the input as a ZBrush digital-clay sculpt: matcap highlights, dynamesh topology, visible stylus pressure, wax/clay monochrome and raw high-poly form. Anatomy may emerge when relevant, but the preset should not require a body study, standing model or untextured character bust. Apply ZBrush Digital Clay Sculpt as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -911,7 +912,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Realistic, grounded, cinematic gravitas',
       key_features: 'Physical accuracy, volume scattering',
       creative_brief:
-        'Every ray of light is accounted for, bouncing through space with the diligence of a forensic investigator — unclamped global illumination traces paths that real photons would recognize. ACES color science bends the spectrum into cinema, and micro-displacement turns flat polygons into landscapes of tactile truth. The frame carries the quiet authority of a Hollywood film that knows it will outlive its audience.',
+        'Render any input with Arnold feature-film path tracing: unclamped global illumination, ACES color discipline, micro-displacement detail, soft indirect bounce, and cinema-grade material response. Keep Hollywood render authority without requiring characters, creatures, sets, props, or VFX shot staging.',
     },
   },
   {
@@ -930,7 +931,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creative, solid, accessible artistry',
       key_features: 'Principled BSDF, GPU+CPU hybrid',
       creative_brief:
-        'Community-built light traces paths through open-source geometries, democratizing the physics of beauty — the Principled BSDF is a single node that speaks a dozen material languages. Filmic log encoding gives the image room to breathe before the final grade, and GPU+CPU hybrid rendering erases the line between patience and performance. Creator-friendly excellence, no gatekeeper required, every frame a testament to the power of the commons.',
+        'Render any input through Blender Cycles lookdev: Principled BSDF material variety, Filmic log highlight rolloff, path-traced bounce, open-source geometry cleanliness, and creator-friendly polish. Keep flexible CG craft without requiring a benchmark object, product turntable, demo setup, or gallery environment.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

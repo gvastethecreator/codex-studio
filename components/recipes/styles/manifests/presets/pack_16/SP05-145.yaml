@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Perspectiva diagonal ascendente, profundidad atmosférica y framing liviano de gravedad reducida.
   atmosphere: Aérea, romántica, juvenil y liberadora.
   key_features: Trazas de aire, gradientes de altura, códigos de subcultura, siluetas en suspensión y dinámica de impulso continuo.
-  creative_brief: Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo sin imponer mechas, tablas, riders ni cielo literal.
+  creative_brief: Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo. El input puede recibir tabla, mecha ligero, rider silhouette o estela de vuelo cuando refuerce el estilo, sin fijar cielo literal ni escena de carrera.
 avoidRules:
   - realistic
   - 3d render

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Craft, quality
   key_features: Impression depth
-  creative_brief: Type bites into cotton paper, leaving words you can feel with your fingertips as well as your eyes. Each character is a small crater of ink and shadow, a physical commitment to language in an age of weightless pixels.
+  creative_brief: >-
+    Apply letterpress impression to the input: inked relief edges, cotton-paper
+    tooth, debossed shadows, pressure marks, and tactile print depth should make
+    any subject feel physically pressed without requiring readable type.
 avoidRules:
   - flat print
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -23,7 +23,9 @@ visualDna:
   key_features: Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.
   creative_brief: >-
     Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada:
-    geometría decó, escala y sensibilidad tecnológica sin imponer skylines, androides, maquinaria literal ni jerarquías narrativas.
+    geometría decó, escala y sensibilidad tecnológica. Androides, maquinaria
+    cívica o siluetas monumentales pueden aparecer como indicios humanistas
+    cuando fortalezcan el input, sin fijar skyline ni jerarquía narrativa.
 avoidRules:
   - realistic
   - 3d render

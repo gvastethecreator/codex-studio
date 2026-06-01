@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-056
 packId: pack_07
-name: Underwater City
-category: 1. Residential Interiors
+name: Abyssal Deco Pressure
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,25 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Deco abisal retrofuturista con presión marina y decadencia monumental reclamadas por el agua.
   form_and_line: Clústeres de presión, arterias vítreas, verticales deco y fracturas por filtración.
   color_palette: Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass
-  lighting_setup: Filtro acuático azul profundo, constelaciones bioluminiscentes y contraste entre glow dorado interior y alarma roja.
+  lighting_setup: >-
+    Filtro acuático azul profundo, constelaciones bioluminiscentes y contraste entre glow dorado
+    interior y alarma roja.
   material_texture: Piedra mojada, vidrio presurizado, pátina cobre-verde, coral incrustado y hormigón con fugas.
-  render_quality: Subacuático cinematográfico con detalle de presión, legibilidad deco y balance ruina-colonización biológica.
+  render_quality: >-
+    Subacuático cinematográfico con detalle de presión, legibilidad deco y balance
+    ruina-colonización biológica.
   spatial_distortion: None
   atmosphere: Asombro presurizado, melancolía abisal y grandeza silenciosa en declive.
   key_features: Motivos deco metálicos, firmas de fuga, capas de coralización y wayfinding bioluminiscente.
   creative_brief: >-
-    Formula una gramática underwater-deco transferible donde infraestructura
-    elegante bajo presión y reclamación marina definan la identidad. Debe
-    preservar tono de civilización perdida sin ciudad ficticia fija.
+    Convierte cualquier sujeto o entorno en una sintaxis abisal-deco: presión visible, geometría
+    elegante bajo agua, metal envejecido, vidrio presurizado y bioluminiscencia como sistema de
+    lectura. Evita fijar ciudad; prioriza sensación de ingeniería sumergida y lujo erosionado.
 avoidRules:
   - sky
   - dry
@@ -35,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Hidden side
   atmosphere: Conflict, mystery
   key_features: Half dark
-  creative_brief: A 90-degree side light divides any subject into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.
+  creative_brief: Apply split lighting to the input with a 90-degree side source, dividing forms into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.
 avoidRules:
   - flat
   - fill light

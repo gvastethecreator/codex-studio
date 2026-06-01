@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, modern-ui, plastic-look',
     style: {
       aesthetic:
-        'Action-adventure steampunk aéreo con foco en traversal vertical, combate de abordaje y exploración de nodos flotantes.',
+        'Gramática action-adventure steampunk aérea con verticalidad, mecanismos de abordaje y exploración por nodos flotantes.',
       subject_treatment:
-        'Clases corsair/engineer/pilot identificables por equipamiento y lenguaje de animación mecánica.',
+        'Reinterpreta el input con rol corsair/engineer/pilot cuando aplique, o con arneses, hélices, presión, poleas y animación mecánica legible.',
       color_and_tone:
         'Cobre viejo, azul tormenta y crema envejecido para codificar tecnología victoriana-fantástica.',
       lighting_and_shadow:
@@ -20,11 +20,13 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Remaches, latón aceitado, madera barnizada y lona de dirigible con desgaste funcional.',
       camera_and_composition:
-        'Triangulación de objetivos (nave, torre, ruta) para indicar flow de misión y puntos de interés.',
+        'Triangulación de objetivos visuales, verticalidad clara y flow de misión; nave, torre o ruta son anclas opcionales.',
       atmosphere_and_mood:
         'Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.',
       rendering_and_quality:
         'Splash art premium orientado a gameplay loops de vuelo, abordaje y puzzle de navegación.',
+      creative_brief:
+        'Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -34,16 +36,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, anti-aliased-blur, noisy',
     style: {
       aesthetic:
-        'Pixel-RPG hub social de 16-bit, centrado en loops de quest, comercio y descanso narrativo.',
+        'Gramática pixel-RPG social de 16-bit con loops de quest, comercio, descanso narrativo y tileset cálido.',
       subject_treatment:
-        'NPCs por arquetipo (quest giver, vendor, lore) con silueta de tile y animación idle/readable.',
+        'Convierte el input en NPC, item, menú diegético o espacio tileable; arquetipos quest/vendor/lore son anclas opcionales.',
       color_and_tone: 'Madera cálida, cobre, velas y acentos de UI diegética para POIs.',
       lighting_and_shadow:
         'Iluminación interior suave en banding de píxel, con contraste suficiente para navegación.',
       texture_and_material:
         'Clusters limpios, dithering controlado y tiles modulares sin ruido ambiguo.',
       camera_and_composition:
-        'Side-view de hub con circulación clara entre menú, tienda, crafting y salida de mapa.',
+        'Side-view o isométrica simple con circulación clara entre interacción, crafting y salida de mapa sin exigir taberna.',
       atmosphere_and_mood: 'Acogedora, social y curiosa, con sensación de progreso seguro.',
       rendering_and_quality:
         'Pixel pipeline de alta legibilidad con tileset reusable y jerarquía visual por interacción.',
@@ -56,9 +58,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clutter, low-contrast',
     style: {
       aesthetic:
-        'Puzzle-chamber lunar de tecnología ancestral con mecánicas de rotación, sincronía y energía diferida.',
+        'Gramática puzzle-chamber ancestral con rotación, sincronía, energía diferida y reglas visuales limpias.',
       subject_treatment:
-        'Explorador solitario con feedback visual claro sobre interacción de runas móviles.',
+        'Reinterpreta el input como explorador, monolito, runa móvil, nodo de solución o mecanismo alineable.',
       color_and_tone:
         'Gris ceniza, azul tenue y blanco espectral para lectura de estado activo/inactivo.',
       lighting_and_shadow:
@@ -66,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Basalto pulido, polvo lunar, cristal opaco y juntas de mecanismo antiguo.',
       camera_and_composition:
-        'Simetría funcional orientada a mecánicas, con foco en nodos de resolución.',
+        'Simetría funcional, nodos de resolución y sombras geométricas sin exigir cámara lunar.',
       atmosphere_and_mood: 'Contemplativa, ingeniosa y enigmática.',
       rendering_and_quality:
         'Puzzle-space clarity-first con telegraph nítido de reglas, progreso y solución.',
@@ -79,9 +81,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grimdark, photoreal-grain',
     style: {
       aesthetic:
-        'Platformer-exploration whimsical en bioma de hongos gigantes, con énfasis en salto, momentum y rutas secretas.',
+        'Gramática platformer-exploration whimsical con rebote orgánico, momentum, rutas secretas y lectura amable.',
       subject_treatment:
-        'Exploradores ágiles y criaturas liminales amistosas con lectura clara de interacción/no amenaza.',
+        'Convierte el input en explorador ágil, criatura amistosa, plataforma esponjosa o recompensa secreta.',
       color_and_tone:
         'Magenta orgánico, verde menta y crema cálido para navegación amable por bioma.',
       lighting_and_shadow:
@@ -89,10 +91,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Superficies esponjosas, musgo vivo, madera orgánica y setas con propiedades de rebote.',
       camera_and_composition:
-        'Camino curvo con verticalidad lúdica, checkpoints visuales y reward loops.',
+        'Verticalidad lúdica, checkpoints visuales y reward loops; hongos gigantes pueden reforzar pero no dominar.',
       atmosphere_and_mood: 'Maravillosa, aventurera y con humor ligero.',
       rendering_and_quality:
         'Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.',
+      creative_brief:
+        'Aplica Mushroom Kingdom Frontier como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -102,15 +106,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, bland-ui, low-detail',
     style: {
       aesthetic:
-        'Deckbuilder-roguelike hub arcano orientado a draft, compra de reliquias y preparación de run.',
+        'Gramática deckbuilder-roguelike arcana con draft, reliquias, preparación de run y rareza legible.',
       subject_treatment:
-        'Comerciantes místicos y artefactos animados con lectura de rareza y función.',
+        'Convierte el input en carta, comerciante, reliquia, opción de build o artefacto animado con función clara.',
       color_and_tone: 'Azul zafiro, cobre y púrpura intenso para jerarquía de recompensa/riesgo.',
       lighting_and_shadow:
         'Faroles mágicos pulsantes que marcan oferta activa y eventos especiales.',
       texture_and_material: 'Pergaminos, madera tallada, gemas facetadas y vitrinas rituales.',
       camera_and_composition:
-        'Stands en abanico con foco central para navegación clara entre opciones.',
+        'Opciones en abanico, foco central y navegación de build sin exigir bazaar o hub literal.',
       atmosphere_and_mood: 'Curiosa, estratégica y de riesgo calculado.',
       rendering_and_quality:
         'Run-selection hub gameplay-first con claridad de rutas de build y economía.',
@@ -123,15 +127,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
     style: {
       aesthetic:
-        'Sound-puzzle cavern con progresión por frecuencia, resonancia y desbloqueo acústico de rutas.',
+        'Gramática sound-puzzle con frecuencia, resonancia, desbloqueo acústico y feedback de armonía.',
       subject_treatment:
-        'Explorador con instrumento-tecnología resonante y feedback visual de tono/armonía.',
+        'Transforma el input en explorador, instrumento, cristal resonante, membrana o nodo sonoro según su forma.',
       color_and_tone: 'Azul oscuro, verde mineral y ámbar para mapear estados acústicos activos.',
       lighting_and_shadow:
         'Ecos luminosos dependientes de frecuencia que revelan caminos y mecanismos.',
       texture_and_material: 'Cristal resonante, roca húmeda, metal fino y membranas vibrantes.',
       camera_and_composition:
-        'Cámaras conectadas por túneles curvos con nodos de prueba sonoro claramente marcados.',
+        'Nodos sonoros, conexiones curvas y ritmo de resolución sin exigir caverna.',
       atmosphere_and_mood: 'Musical, misteriosa y de descubrimiento progresivo.',
       rendering_and_quality:
         'Puzzle design clarity-first con pistas visuales robustas y ritmo de resolución.',
@@ -144,17 +148,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, tropical, low-detail',
     style: {
       aesthetic:
-        'Raid-racer motorizado entre catedrales en ruina, centrado en conquista de ruta y objetivos intermedios.',
+        'Gramática raid-racer motorizada con conquista de ruta, objetivos intermedios y ruina monumental polvorienta.',
       subject_treatment:
-        'Riders blindados y drones de soporte con lectura clara de función ofensiva/logística.',
+        'Reinterpreta el input como rider blindado, drone soporte, vehículo, checkpoint o tramo de choque.',
       color_and_tone:
         'Beige polvo, rojo óxido y azul acero para separar terreno, riesgo y checkpoints.',
       lighting_and_shadow:
         'Luz filtrada por arcos colapsados que marca ventanas de tracción y salto.',
       texture_and_material:
         'Piedra erosionada, caucho de alto desgaste, metal reforzado y escombro activo.',
-      camera_and_composition:
-        'Ruta de carrera con checkpoints visuales inequívocos, atajos y zonas de choque.',
+      camera_and_composition: 'Checkpoints, atajos y zonas de choque sin exigir catedrales.',
       atmosphere_and_mood: 'Ruidosa, veloz y de conquista territorial.',
       rendering_and_quality:
         'Seasonal action-racer gameplay art con legibilidad robusta de pacing y control de tramo.',
@@ -167,9 +170,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, medieval-castle, low-detail',
     style: {
       aesthetic:
-        'Card-duel clandestino urbano, orientado a mindgame, lectura de mano y presión psicológica competitiva.',
+        'Gramática card-duel clandestina con mindgame, presión psicológica, avatares holográficos y lectura de mano.',
       subject_treatment:
-        'Duelistas callejeros con avatares holográficos y estilos de mazo distinguibles.',
+        'Convierte el input en duelista, avatar de mazo, carta, efecto o señal de ventaja competitiva.',
       color_and_tone:
         'Púrpura profundo, cian y amarillo neon para separar jugadores, efectos y estado crítico.',
       lighting_and_shadow:
@@ -177,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.',
       camera_and_composition:
-        'Mesa central con semicírculo de espectadores y focos en ventanas de jugada.',
+        'Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.',
       atmosphere_and_mood: 'Tensa, estilizada y de apuestas altas.',
       rendering_and_quality:
         'Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.',
@@ -190,9 +193,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clean-futuristic, lowres',
     style: {
       aesthetic:
-        'Escape-setpiece en cantera hostil, centrado en traversal vertical, gestión de riesgo y persecución de basilisco.',
+        'Gramática escape-setpiece hostil con traversal vertical, riesgo ascendente y persecución de basilisco.',
       subject_treatment:
-        'Especialistas de supervivencia improvisada con lectura de recursos escasos y prioridad de escape.',
+        'Si el input contiene criatura, darle amenaza basilisco; si no, convertirlo en superviviente, recurso, ruta o peligro petrificante.',
       color_and_tone:
         'Blanco caliza, verde venenoso, óxido marrón y tierras desaturadas para señal de peligro.',
       lighting_and_shadow:
@@ -200,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.',
       camera_and_composition:
-        'Topología zigzag ascendente con capas de riesgo y chokepoints legibles.',
+        'Zigzag ascendente, capas de riesgo y chokepoints legibles sin exigir cantera.',
       atmosphere_and_mood: 'Pánica, ingeniosa y de estrés ascendente.',
       rendering_and_quality:
         'Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.',
@@ -213,9 +216,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, comedic-style, lowres',
     style: {
       aesthetic:
-        'Final-boss confrontation de trono eclipsado, centrada en duelo axial, fases y colapso de soberanía.',
+        'Gramática final-boss eclipse con duelo axial, fases, soberanía colapsada y halo de cierre de campaña.',
       subject_treatment:
-        'Silueta autoritaria de jefe final versus héroe retador con jerarquía visual duel-centric.',
+        'Eleva el input a jefe final, héroe retador, trono-símbolo, reliquia de poder o fase de colapso.',
       color_and_tone:
         'Negro umbra, carmín sangre, borde plata lunar y neutros imperiales desaturados.',
       lighting_and_shadow:
@@ -223,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Basalto pulido espejo, aleaciones ceremoniales oscuras, ceniza fina y ornamento imperial desgastado.',
       camera_and_composition:
-        'Arquitectura frontal de clímax con dominio axial del trono y carril de duelo claro.',
+        'Dominio axial, carril de duelo y arquitectura de clímax sin exigir trono físico.',
       atmosphere_and_mood: 'Fatalista, resuelta y catastróficamente épica.',
       rendering_and_quality:
         'Campaign-finale gameplay key-art con legibilidad decisiva de fase, distancia y cierre narrativo.',

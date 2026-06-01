@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, slick
   key_features: Marker streaks
-  creative_brief: Alcohol-based ink saturates paper in translucent veils, each pass deepening the stain, edges bleeding slightly beyond the line. The marker squeaks its signature frequency, a sound that means rendering is happening. Glossy highlights bloom in the white space reserved for light, untouched by the permeating color.
+  creative_brief: >-
+    Apply Copic-marker rendering to any input: translucent alcohol-ink layers,
+    soft edge bleed, saturated paper stain, reserved white highlights, and smooth
+    illustrative gradients. Keep marker-board polish without requiring product
+    sketches, fashion plates, manga faces, or visible marker tools.
 avoidRules:
   - photo
   - realistic

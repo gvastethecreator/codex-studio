@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Ceremonial, classic, literate, archival quietness
   key_features: Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing
   creative_brief: >-
-    Build form through disciplined stroke choreography. Emphasize contrast between razor hairlines and saturated broad strokes, preserving ink-flow dynamics and taper quality. Keep compositions balanced and breathable so calligraphic motion remains the primary carrier of identity.
+    Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink
+    pooling, tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form
+    through stroke choreography without requiring writing, manuscripts, letters, signatures, or
+    archival props.
 avoidRules:
   - pencil
   - dry

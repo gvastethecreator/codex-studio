@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-045
 packId: pack_11
-name: Psychedelic
+name: Liquid Optic Recursion
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,17 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Psychedelic poster language with liquid optical distortion
-  form_and_line: Melting, swirling, paisley-whorl, flame-tongue contours, morphing-edges, fluid-mandala
-  color_palette: Rainbow, shifting, Day-Glo spectrum, magenta-cyan-yellow trippy, neon-chartreuse, blacklight-purple, op-art contrast
-  lighting_setup: Glowing, blacklight-fluorescence, lava-lamp convection, strobe-freeze, pulse-blink rhythm
-  material_texture: Fractals, liquid-emulsion, oil-projection blob, poster-ink bleed, light-machine swirl
-  render_quality: High-intensity trippy rendering with immersive pattern recursion
-  spatial_distortion: Melting reality, Dali-clock droop, kaleidoscopic fragmentation, mirror-room infinity, perspective-liquefaction
-  atmosphere: Crazy, expanding, cosmic-consciousness, ego-dissolution, doors-of-perception, heightened-awareness
-  key_features: Paisley recursion, mandala centers, blacklight glow, fluid edge morphing, fractal spirals
+  aesthetic: Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback
+  form_and_line: Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops
+  color_palette: Day-Glo rainbow, blacklight purple, neon chartreuse, hot magenta, acid cyan, saturated orange, op-art contrast
+  lighting_setup: Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing
+  material_texture: Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves
+  render_quality: Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity
+  spatial_distortion: Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal
+  atmosphere: Trippy, euphoric, saturated, unstable, mesmerizing, loud
+  key_features: Paisley recursion, mandala centers, liquid contours, blacklight glow, vibrating color clashes, fractal spiral pressure
   creative_brief: >-
-    Maximize psychedelic force through liquid distortion, chromatic clash, and recursive ornament. Keep visual intensity and altered-perception cues high while avoiding fixed venue or narrative anchors.
+    Drive any input through psychedelic perception mechanics: recursive ornament, liquid contours, color clashes, and optical vibration. Keep it style-first; avoid fixed venues, posters, bands, characters, or narrative drug imagery.
 avoidRules:
   - boring
   - straight

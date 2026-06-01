@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-201
 packId: pack_13
-name: Hyouka - Tea-Light Mystery Classroom
+name: Tea-Light Observational Mystery
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Quiet mystery anime language where low-drama deduction becomes beautiful through light, stillness, and curiosity carrying the frame
-  form_and_line: Deliberate observational line economy, eye-acting emphasis, and tidy contour hierarchy that supports deduction readability
-  color_palette: Tea amber, worn-paper cream, polished wood browns, uniform navy, and late-afternoon honey highlights
-  lighting_setup: Afternoon slat light, amber pockets, and soft suspended dust-glow in still tonal fields
-  material_texture: Matte dark surfaces, bookcloth wear, ceramic glaze, varnished grain, and aged patina cues
-  render_quality: Refined quiet-mystery rendering with disciplined stillness and high prop-legibility balance
-  spatial_distortion: Subtle viewpoint tightening around clue-like focal points and gaze vectors
-  atmosphere: Curious, refined, calm, observant
-  key_features: Attentive facial acting, sunlit dust motes, clue-forward focus, tea-amber warmth, and restrained mystery framing
+  aesthetic: >-
+    Observational mystery anime built from warm intellectual stillness, clue-forward attention,
+    polished quiet, and suspended curiosity
+  form_and_line: >-
+    Precise quiet contours, object-attention framing, restrained eye-line geometry, and small
+    inference cues embedded in composition
+  color_palette: Tea amber, library brown, soft cream, muted green-black, pale window blue, and subtle gold dust
+  lighting_setup: >-
+    Warm lamplike pools, soft window fill, focused clue highlights, and low-contrast intellectual
+    ambience
+  material_texture: Paper fiber, polished wood, ceramic matte, dust motes, cloth grain, and clean glass reflections
+  render_quality: >-
+    Polished contemplative anime finish with high detail control, clue readability, and calm
+    emotional restraint
+  spatial_distortion: Still-life compression and attention tunnels that make any subject feel quietly investigated
+  atmosphere: Curious, calm, warm, observant, restrained
+  key_features: >-
+    Clue-focused framing, tea-light warmth, observational stillness, precise microgestures, and
+    intellectual hush
   creative_brief: >-
-    Use the title as a style anchor for tea-light mystery. Keep observational
-    stillness, clue-forward focus, and warm intellectual ambience without
-    requiring classroom, clubroom, books, or tea props.
+    Use Hyouka as style anchor for tea-light observational mystery. Any prompt should feel gently
+    investigated: warm focus pools, clue hierarchy, stillness, and polished curiosity. Classrooms,
+    books, clubrooms, and tea props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-201.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Motion blur
   atmosphere: Intense, work
   key_features: Trajectory
-  creative_brief: Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel.
+  creative_brief: >-
+    Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a
+    tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point
+    lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the
+    beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - fire
 assets:

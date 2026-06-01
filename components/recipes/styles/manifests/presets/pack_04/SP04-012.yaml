@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Vast, meditative, enigmatic, serene
   key_features: Stipple gradients, expansive negative space, poetic architecture
   creative_brief: >-
-    Combine clean line precision with spacious, pastel sci-fi atmospheres in a Moebius-influenced manner. Favor contemplative scale, unusual architecture, and restrained contrast so imagery feels exploratory and dreamlike without anchoring to any single scene narrative.
+    Apply dreamline retro sci-fi comic grammar to any input: clean contour precision, stipple
+    gradients, pastel atmospheres, organic-futurist forms, and vast contemplative scale should feel
+    exploratory without requiring deserts, spacecraft, architecture, alien worlds, travelers, or one
+    scene narrative.
 avoidRules:
   - dark
   - heavy shadows

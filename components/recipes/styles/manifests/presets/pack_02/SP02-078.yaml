@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Magic, art, drawing-with-light, nocturnal abstraction
   key_features: Trails, light ribbon, calligraphic light, motion-blur glow
-  creative_brief: 'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time.'
+  creative_brief: >-
+    Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and
+    neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by
+    light traces that reveal motion over time. Apply Light Painting as a portable cinematic/camera style over any input:
+    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
+    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - static light
 assets:

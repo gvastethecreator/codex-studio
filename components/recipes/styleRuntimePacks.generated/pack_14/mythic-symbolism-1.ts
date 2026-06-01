@@ -5,32 +5,38 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP14-001',
-    name: 'Cathedral Eclipse Procession',
+    name: 'Eclipse Reliquary Processional',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cute, flat-light, watermark, text, logo, low-quality',
     style: {
-      aesthetic: 'Dark sacred fantasy with processional elegance.',
-      form_and_line: 'Long ritual silhouettes, gothic ornament, and a solemn composition.',
+      aesthetic:
+        'Dark sacred fantasy with eclipse-lit reliquary authority and processional rhythm.',
+      form_and_line:
+        'Long ritual silhouettes, gothic ornament bands, vertical icon axes, and solemn procession-like spacing.',
       color_palette: 'Negro obsidiana, marfil antiguo y oro quemado.',
-      lighting_setup: 'Eclipse backlight with cathedral interior beams.',
+      lighting_setup:
+        'Eclipse backlight, narrow sacred beams, gold rim partitions, and deep obsidian falloff.',
       material_texture: 'Wet stone, liturgical metal, and heavy velvet.',
       render_quality: 'Key art premium con dramatismo controlado.',
-      spatial_distortion: 'Deep central nave with monumental perspective.',
+      spatial_distortion:
+        'Monumental central-axis depth that feels processional without requiring a cathedral interior.',
       atmosphere: 'Reverence, fatality, and ceremonial magnetism.',
-      key_features: 'Sacred procession, eclipsed stained glass, silent authority.',
+      key_features:
+        'Eclipse halo hierarchy, reliquary gold accents, processional silhouette rhythm, gothic verticals, and silent authority.',
       creative_brief:
-        'A cathedral procession under eclipse—dark, majestic, and perfectly readable.',
+        'Process the input through eclipse reliquary grandeur: obsidian negative space, antique-ivory sacred axes, burned-gold rimlight, and solemn processional spacing should make any subject feel dark, majestic, and ceremonial without requiring a cathedral, clergy, stained glass, or parade.',
     },
   },
   {
     id: 'SP14-005',
-    name: 'Marble Wraith Banquet',
+    name: 'Petrified Banquet Etiquette',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, comedy, candy-colors, watermark, text, logo',
     style: {
-      aesthetic: 'Aristocratic death-feast noir where etiquette persists beyond mortality.',
+      aesthetic:
+        'Aristocratic death-feast noir where etiquette persists as cursed protocol and petrified luxury.',
       form_and_line:
-        'Rigid seated silhouettes, knife-and-goblet rhythm, and elongated axial table choreography.',
+        'Rigid protocol silhouettes, knife-and-goblet rhythm, axial table-like geometry, and formal spacing.',
       color_palette: 'Bone ivory, coagulated wine black, and smoked pewter gray.',
       lighting_setup: 'Candle troughs with mirrored marble bounce and deep peripheral falloff.',
       material_texture:
@@ -38,252 +44,285 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Prestige editorial key art with high micro-detail and controlled tonal compression.',
       spatial_distortion:
-        'Vaulted banquet hall vanishing point that tunnels attention toward a silent host seat.',
+        'Vaulted axial depth that tunnels attention through ceremonial place-setting rhythm without requiring a banquet hall.',
       atmosphere: 'Ritualized decay, dynastic arrogance, and prophetic unease.',
       key_features:
-        'Petrified courtiers, carbonized fruit centerpieces, oath-cutlery place settings, empty sovereign chair.',
+        'Petrified etiquette cues, carbonized centerpiece forms, oath-cutlery lines, veined marble, and empty sovereign-axis tension.',
       creative_brief:
-        'A noble house continues its eternal supper in stone-bound silence, as if the curse is enforced through perfect table protocol.',
+        'Petrify the input through banquet etiquette noir: bone ivory, coagulated wine-black shadows, pewter decay, oath-cutlery rhythm, and rigid protocol geometry should make any subject feel cursed by perfect manners without requiring nobles, table, courtiers, food, or dining room.',
     },
   },
   {
     id: 'SP14-011',
-    name: 'Obsidian Mask Theatre',
+    name: 'Obsidian Mask Stagecraft',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo',
     style: {
-      aesthetic: 'Ritual performance noir with mythic stagecraft and symbolic menace.',
-      form_and_line: 'Strong proscenium geometry, masked silhouettes, and choreographed diagonals.',
+      aesthetic:
+        'Ritual performance noir translated into masked symbolism and controlled theatrical menace.',
+      form_and_line:
+        'Mask-like silhouettes, proscenium cues, and choreographed diagonals that can wrap any subject.',
       color_palette: 'Obsidian black, lacquer red, and pearl smoke.',
       lighting_setup: 'Knife-like stage spotlights with dense velvet shadow pockets.',
-      material_texture: 'Lacquered masks, heavy curtains, carved stone, and metallic dust.',
-      render_quality: 'Prestige concept illustration with theatrical composition clarity.',
-      spatial_distortion: 'Layered stage depth with recursive curtains framing focal action.',
+      material_texture: 'Lacquered masks, velvet shadow, carved emblems, and metallic dust.',
+      render_quality: 'Prestige concept illustration with clear theatrical staging language.',
+      spatial_distortion:
+        'Layered stage depth and recursive curtain geometry without requiring a literal theatre.',
       atmosphere: 'Fatal spectacle, sacred drama, and poised emotional tension.',
-      key_features: 'Ceremonial masks, fractured proscenium arch, ritual choreography marks.',
+      key_features: 'Ceremonial mask cues, fractured proscenium shapes, ritual choreography marks.',
       creative_brief:
-        'A forbidden theatre where mythic rites are performed as immaculate noir tragedy.',
+        'Recast the input as an immaculate noir rite, using obsidian masks and stagecraft as symbolic style cues rather than a fixed theatre setup.',
     },
   },
   {
     id: 'SP14-095',
-    name: 'Thorned Sun Relic',
+    name: 'Thorned Solar Relic Icon',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cute, low-detail, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Sacred relic built around a sun icon pierced by thorned metal.',
-      form_and_line: 'Circular halo, pointed thorns, and vertical altar framing.',
+      aesthetic: 'Sacred solar iconography pierced by thorned metal and sacrificial noir tension.',
+      form_and_line:
+        'Circular halo logic, pointed thorns, and vertical relic framing adaptable to any subject.',
       color_palette: 'Bone white, soot black, and burnished gold.',
       lighting_setup: 'Hard rimlight through stained haze.',
-      material_texture: 'Hammered bronze, cracked stone, and velvet shadow.',
+      material_texture: 'Hammered bronze, cracked stone, scarred enamel, and velvet shadow.',
       render_quality: 'Editorial mythic illustration with high contrast.',
-      spatial_distortion: 'Central relic composition with radiating tension lines.',
+      spatial_distortion:
+        'Radiating tension lines and compressed icon depth without requiring a pedestal.',
       atmosphere: 'Reverence, danger, and compressed power.',
-      key_features: 'Sun sigil, thorn crown, and ceremonial pedestal.',
+      key_features: 'Sun sigil, thorn crown, burnished sacrificial edges.',
       creative_brief:
-        'A symbolic relic where solar divinity and sacrifice are fused into one icon.',
+        'Transform the input through a thorn-pierced solar relic language, fusing divinity and sacrifice without locking the image to an altar object.',
     },
   },
   {
     id: 'SP14-096',
-    name: 'Mirror Oracle Archive',
+    name: 'Mirror Oracle Refraction Archive',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cheerful, neon, watermark, text, logo, empty-space',
     style: {
-      aesthetic: 'Archive chamber where mirrored tablets store prophecy fragments.',
-      form_and_line: 'Repeating mirror arches, index shelves, and reflective corridors.',
+      aesthetic:
+        'Prophetic archive language built from mirrored fragments, uncertain memory, and refracted omens.',
+      form_and_line:
+        'Repeating mirror arcs, catalog-like divisions, and reflective corridor rhythms.',
       color_palette: 'Silvered gray, indigo, and ivory.',
       lighting_setup: 'Broken reflections and candle glimmers.',
-      material_texture: 'Polished glass, archival paper, and lacquered wood.',
+      material_texture:
+        'Polished glass, vellum-like surfaces, lacquered wood, and silvering scars.',
       render_quality: 'Lyrical concept art with precise symbolic layering.',
-      spatial_distortion: 'Hall-of-mirrors depth with archival order.',
+      spatial_distortion:
+        'Hall-of-mirrors depth with archival order, applicable to portraits, objects, or abstract forms.',
       atmosphere: 'Uncertainty, memory, and hidden knowledge.',
-      key_features: 'Oracle mirrors, catalog tablets, and sealed volumes.',
-      creative_brief: 'A symbolic library where mirrors preserve prophecies instead of faces.',
+      key_features: 'Oracle mirror shards, catalog tablets, sealed prophecy fragments.',
+      creative_brief:
+        'Reframe any input as reflective oracle archive logic: mirror shards, silvering scars, catalog divisions, indigo memory, and refracted prophecy should reshape the subject without requiring rooms, libraries, tablets, corridors, or literal archive furniture.',
     },
   },
   {
     id: 'SP14-097',
-    name: 'Serpent Knot Chapel',
+    name: 'Serpent Knot Renewal Glyph',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cute, sci-fi, watermark, text, logo, overexposed',
     style: {
-      aesthetic: 'Chapel centered on interwoven serpent iconography.',
-      form_and_line: 'Braided curves, looping arches, and spiral sanctum geometry.',
+      aesthetic:
+        'Interwoven serpent iconography as a renewal glyph with vigilant mythic noir energy.',
+      form_and_line:
+        'Braided curves, looping arches, and spiral geometry that can coil around any subject.',
       color_palette: 'Jade black, tarnished gold, and ember red.',
       lighting_setup: 'Low lantern pools and glints on scale-like surfaces.',
       material_texture: 'Carved stone, woven metal, and polished bone.',
       render_quality: 'Mythic illustration with strong emblematic readability.',
-      spatial_distortion: 'Spiraling nave pulling toward the altar.',
+      spatial_distortion:
+        'Spiraling pull toward a symbolic core without requiring chapel architecture.',
       atmosphere: 'Transformation, vigilance, and sacred continuity.',
-      key_features: 'Serpent knot, spiral altar, and wrapped pillars.',
-      creative_brief: 'A symbolic chapel where the serpent is a loop of renewal and memory.',
+      key_features: 'Serpent knot, renewal loops, scale-like surfaces.',
+      creative_brief:
+        'Convert the input into a serpent-knot renewal emblem, keeping the serpentine identity while avoiding a fixed chapel or altar setup.',
     },
   },
   {
     id: 'SP14-098',
-    name: 'Ashen Crown Reliquary',
+    name: 'Ash-Crown Residue Authority',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, playful, candy-color, watermark, text, logo, glossy',
     style: {
-      aesthetic: 'Reliquary cabinet preserving a crown of ash and soot.',
-      form_and_line: 'Framed shrine, brittle crown silhouette, and ash cascades.',
+      aesthetic:
+        'Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.',
+      form_and_line:
+        'Brittle crown silhouettes, shrine-like framing cues, and ash cascade rhythms.',
       color_palette: 'Charcoal, muted silver, and antique ivory.',
       lighting_setup: 'Narrow halo beam from above.',
-      material_texture: 'Charred wood, cracked enamel, and dusty glass.',
+      material_texture: 'Charred wood, cracked enamel, dusty glass, and powdery soot.',
       render_quality: 'Cinematic symbolic still life.',
-      spatial_distortion: 'Tight frontal icon with layered relic depth.',
+      spatial_distortion: 'Tight iconic depth with layered relic framing, not a required cabinet.',
       atmosphere: 'Loss, legitimacy, and solemn afterimage.',
-      key_features: 'Ash crown, reliquary frame, and memorial dust.',
-      creative_brief: 'A symbolic shrine where authority survives only as residue and memory.',
+      key_features: 'Ash crown, residue halos, memorial dust.',
+      creative_brief:
+        'Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring crowns, shrines, relic cabinets, rulers, or literal objects.',
     },
   },
   {
     id: 'SP14-099',
-    name: 'Lantern of the Underworld',
+    name: 'Underworld Lantern Threshold',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cute, vaporwave, watermark, text, logo, busy-background',
     style: {
-      aesthetic: 'Ritual lantern carried through a mythic underworld passage.',
-      form_and_line: 'Hanging lantern, tunnel silhouettes, and stepped descent.',
+      aesthetic:
+        'Mythic underworld guidance expressed through lantern glow, mourning, and threshold crossing.',
+      form_and_line: 'Lantern-core geometry, veil silhouettes, and descending rhythm cues.',
       color_palette: 'Amber glow, abyss black, and oxblood.',
       lighting_setup: 'Single source lantern light with deep falloff.',
-      material_texture: 'Oiled metal, damp stone, and waxed cloth.',
+      material_texture: 'Oiled metal, damp stone, waxed cloth, and smoke-darkened edges.',
       render_quality: 'Narrative key art with dramatic light focus.',
-      spatial_distortion: 'Descending path pulled toward the lantern core.',
+      spatial_distortion:
+        'Forms pulled toward a lantern-like core without forcing a tunnel or staircase.',
       atmosphere: 'Guidance, mourning, and crossing thresholds.',
-      key_features: 'Underworld lantern, descent steps, and threshold veil.',
-      creative_brief: 'A symbolic lantern that turns darkness into a road rather than a void.',
+      key_features: 'Underworld lantern, threshold veil, amber falloff.',
+      creative_brief:
+        'Use underworld-lantern logic as the visual engine for any input, turning darkness into a navigable threshold through amber falloff, veil silhouettes, smoke edges, and mourning-metal detail without requiring lantern props, tunnels, stairs, guides, or passage setups.',
     },
   },
   {
     id: 'SP14-100',
-    name: 'Broken Halo Garden',
+    name: 'Broken Halo Regrowth',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition',
     style: {
-      aesthetic: 'Overgrown garden organized around a fractured halo monument.',
-      form_and_line: 'Circular ruin, climbing vines, and petal-like debris.',
+      aesthetic: 'Fractured sanctity expressed through broken halo geometry and quiet regrowth.',
+      form_and_line: 'Circular ruin motifs, climbing organic lines, and petal-like debris.',
       color_palette: 'Pale moss, tarnished gold, and stone gray.',
-      lighting_setup: 'Soft dusk light with halo fragments catching highlights.',
+      lighting_setup: 'Soft dusk light with halo fragments catching restrained highlights.',
       material_texture: 'Weathered marble, wet leaves, and oxidized metal.',
       render_quality: 'Poetic symbolic landscape with calm tension.',
-      spatial_distortion: 'Garden spiral orbiting the broken ring.',
+      spatial_distortion:
+        'Orbital spiral around broken ring forms without requiring a literal garden.',
       atmosphere: 'Recovery, sanctity, and wounded beauty.',
-      key_features: 'Broken halo, revival growth, and memorial stones.',
-      creative_brief: 'A symbolic garden where divinity is fractured but life continues around it.',
+      key_features: 'Broken halo, revival growth, wounded sanctity.',
+      creative_brief:
+        'Recast the input through broken-halo regrowth, with fractured divinity and organic renewal continuing through it.',
     },
   },
   {
     id: 'SP14-101',
-    name: 'Black River Totem',
+    name: 'Blackwater Totem Memory',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, neon, pop-art, watermark, text, logo, cute',
     style: {
-      aesthetic: 'Totem monument rising from a black riverbank.',
-      form_and_line: 'Vertical stacked forms, carved notches, and water reflections.',
+      aesthetic: 'Ancestral totem language marked by blackwater reflections and ritual memory.',
+      form_and_line: 'Vertical stacked forms, carved notches, and horizontal reflection bands.',
       color_palette: 'Ink black, river teal, and oxidized copper.',
       lighting_setup: 'Moonlit reflections and lantern scatter.',
       material_texture: 'River stone, carved wood, and corroded metal.',
-      render_quality: 'Mythic environmental concept with emblematic clarity.',
-      spatial_distortion: 'Upright totem anchored against flowing horizontal water.',
+      render_quality: 'Mythic concept illustration with emblematic clarity.',
+      spatial_distortion:
+        'Upright totem tension against flowing blackwater bands, adaptable beyond landscape.',
       atmosphere: 'Ancestor memory, passage, and river-bound ritual.',
-      key_features: 'Totem pillars, black water, and carved marks.',
+      key_features: 'Totem pillars, blackwater sheen, carved ancestral marks.',
       creative_brief:
-        'A symbolic river monument where the flow of memory is marked by ancestral signs.',
+        'Translate any input into blackwater totem memory, using carved vertical signs, oxidized-copper scars, reflection bands, and ink-dark flow. Keep ancestor-memory weight without forcing totems, riverbanks, landscapes, carved figures, or ritual sites.',
     },
   },
   {
     id: 'SP14-102',
-    name: 'Veil of Names',
+    name: 'Veil of Erased Names',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, loud-patterns, comic style, watermark, text, logo, over-saturation',
     style: {
-      aesthetic: 'Memorial veil embroidered with erased and recovered names.',
-      form_and_line: 'Soft drape, layered lettering, and narrow altar frame.',
+      aesthetic:
+        'Memorial veil language built from erased names, recovered marks, and quiet witness.',
+      form_and_line: 'Soft drape, layered glyph-like traces, and narrow ritual framing.',
       color_palette: 'Smoke gray, ash white, and muted violet.',
       lighting_setup: 'Backlit cloth glow and candle edge light.',
       material_texture: 'Fine linen, thread shimmer, and wax residue.',
-      render_quality: 'Intimate symbolic still life with textile detail.',
-      spatial_distortion: 'Shallow stage-like composition emphasizing textural layers.',
+      render_quality: 'Intimate symbolic rendering with textile detail.',
+      spatial_distortion:
+        'Shallow layered depth emphasizing veils, traces, and translucent memory.',
       atmosphere: 'Absence, remembrance, and quiet witness.',
-      key_features: 'Name veil, memorial needles, and folded ledgers.',
+      key_features: 'Veiled name traces, memorial stitches, folded witness layers.',
       creative_brief:
-        'A symbolic textile where the act of naming becomes a ritual of mourning and return.',
+        'Reinterpret any input through veils, erased-name marks, and mourning stitches. Use abstract glyph traces, linen translucency, wax residue, and witness-like layering instead of readable text, plaques, literal names, memorial rooms, or fixed ceremonial props.',
     },
   },
   {
     id: 'SP14-103',
-    name: 'Salt Bone Sigil Hall',
+    name: 'Salt-Bone Sigil Liturgy',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, whimsical, candy colors, watermark, text, logo, blur',
     style: {
-      aesthetic: 'Hall of sigils carved from salt-encrusted bone.',
-      form_and_line: 'Repeating sigil panels, vertebra-like arches, and ceremonial symmetry.',
+      aesthetic: 'Sigil liturgy carved from salt-encrusted bone, severe and ceremonial.',
+      form_and_line: 'Repeating sigil panels, vertebra-like arcs, and ceremonial symmetry.',
       color_palette: 'Salt white, dark sepia, and iron gray.',
       lighting_setup: 'Cold skylight with crisp shadow cuts.',
       material_texture: 'Chiseled bone, salt crust, and rough stone.',
-      render_quality: 'Esoteric architecture with precise symbolic read.',
-      spatial_distortion: 'Corridor rhythm that multiplies sigils into depth.',
+      render_quality: 'Esoteric symbolic rendering with precise emblem readability.',
+      spatial_distortion: 'Receding sigil rhythm that multiplies meaning without requiring a hall.',
       atmosphere: 'Severance, permanence, and ritual authority.',
-      key_features: 'Bone sigils, salt encrustation, and oath panels.',
-      creative_brief: 'A symbolic hall where memory is etched into bones and preserved by salt.',
+      key_features: 'Bone sigils, salt encrustation, oath-like panels.',
+      creative_brief:
+        'Rework the input as a salt-bone sigil liturgy, where memory is etched and preserved by salt rather than staged in a fixed hall.',
     },
   },
   {
     id: 'SP14-104',
-    name: 'Eclipse Cipher Library',
+    name: 'Eclipse Cipher Knowledge',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, whimsical, neon, watermark, text, logo, clutter',
     style: {
-      aesthetic: 'Library of lunar codes and eclipse-based symbology.',
-      form_and_line: 'Radial shelves, cipher rings, and circular reading tables.',
+      aesthetic:
+        'Eclipse-based cipher knowledge rendered through lunar codes and secret symbolic order.',
+      form_and_line: 'Radial divisions, cipher rings, and circular reading-table cues.',
       color_palette: 'Midnight blue, brass, and parchment.',
       lighting_setup: 'Eclipse shadow with thin clerical lamps.',
-      material_texture: 'Old paper, etched brass, and polished oak.',
+      material_texture: 'Old paper, etched brass, polished oak, and darkened lunar enamel.',
       render_quality: 'Scholarly mythic concept art.',
-      spatial_distortion: 'Circular plan centering on cipher altar.',
+      spatial_distortion:
+        'Circular planning and orbital cipher pull without requiring a library interior.',
       atmosphere: 'Intellect, secrecy, and cosmic patterning.',
-      key_features: 'Cipher scrolls, eclipse disks, and encoded indexes.',
+      key_features: 'Cipher scroll cues, eclipse disks, encoded index marks.',
       creative_brief:
-        'A symbolic library where eclipse geometry becomes a language of secret knowledge.',
+        'Apply eclipse-cipher knowledge to the input, turning lunar geometry into secret language without forcing shelves or a study room.',
     },
   },
   {
     id: 'SP14-105',
-    name: 'Feathered Stairway',
+    name: 'Feathered Ascent Threshold',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, violent, toy-like, watermark, text, logo, over-sharp',
     style: {
-      aesthetic: 'Ascending stairway lined with feather emblems and rites of passage.',
-      form_and_line: 'Long stairs, layered plumes, and upward thrust.',
+      aesthetic:
+        'Rite-of-passage ascent expressed through feather emblems, thresholds, and graceful motion.',
+      form_and_line: 'Upward thrust, layered plumes, and step-like progression cues.',
       color_palette: 'Ivory, smoke, and deep teal.',
       lighting_setup: 'Dawn-side glow and soft shadow gradation.',
-      material_texture: 'Stone steps, delicate feathers, and brushed metal accents.',
+      material_texture: 'Weathered stone, delicate feathers, brushed metal accents, and soft dust.',
       render_quality: 'Mythic ascent illustration with graceful motion.',
-      spatial_distortion: 'Vertical climb pulled into a sacred vanishing point.',
+      spatial_distortion:
+        'Vertical climb sensation pulled toward a sacred vanishing point without requiring stairs.',
       atmosphere: 'Transition, aspiration, and guided ascent.',
-      key_features: 'Feather motifs, stair processions, and threshold markers.',
-      creative_brief: 'A symbolic staircase where feathers mark the journey between worlds.',
+      key_features: 'Feather motifs, ascent markers, threshold bands.',
+      creative_brief:
+        'Reframe the input as a feathered ascent threshold, suggesting passage between worlds while leaving subject and setting free.',
     },
   },
   {
     id: 'SP14-106',
-    name: 'Stone Psalm Observatory',
+    name: 'Stone Psalm Celestial Marker',
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, neon, sketchy, watermark, text, logo, flat-perspective',
     style: {
-      aesthetic: 'Observatory carved with hymn-like stone symbols and celestial markers.',
-      form_and_line: 'Ringed platforms, psalmic inscriptions, and viewing apertures.',
+      aesthetic:
+        'Celestial marker language carved with hymn-like stone symbols and sacred astronomy.',
+      form_and_line: 'Ringed forms, psalmic mark bands, and viewing-aperture cues.',
       color_palette: 'Granite, moon silver, and faded blue.',
       lighting_setup: 'Night sky glow with measured interior lanterns.',
-      material_texture: 'Chiseled stone, bronze lenses, and weathered inscriptions.',
-      render_quality: 'Monumental symbolic architecture.',
-      spatial_distortion: 'Rising concentric rings toward the sky aperture.',
+      material_texture: 'Chiseled stone, bronze lens accents, and weathered carved marks.',
+      render_quality: 'Monumental symbolic render with sacred astronomy and carved-stone clarity.',
+      spatial_distortion:
+        'Rising concentric rings toward a celestial aperture without requiring an observatory.',
       atmosphere: 'Contemplation, astronomy, and sacred order.',
-      key_features: 'Psalm carvings, stone telescope mounts, and star ledger tablets.',
+      key_features: 'Psalm-like carvings, celestial apertures, star-ledger marks.',
       creative_brief:
-        'A symbolic observatory where stone inscriptions turn the night sky into liturgy.',
+        'Mark the input with stone psalm astronomy: granite mass, moon-silver rings, faded-blue night glow, chiseled hymn bands, and celestial aperture cues should make any subject feel liturgical and star-measured without requiring an observatory, monument, stairs, telescope, or sky-viewing setup.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

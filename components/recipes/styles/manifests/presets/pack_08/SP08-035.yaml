@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Japanese warrior, bushido silence, floating-world legend
+  aesthetic: Samurai armor regalia, bushido silence, floating-world legend
   form_and_line: Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity
   color_palette: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
-  lighting_setup: Dramatic, bamboo-forest dapple, castle-interior shadow, dawn-mist atmosphere
+  lighting_setup: Dramatic dawn-mist light, lacquer edge shine, indigo shadow, gold-leaf glint
   material_texture: Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo
   render_quality: Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft
   spatial_distortion: None
-  atmosphere: Honorable, fierce, cherry-blossom impermanence, pre-dawn stillness, unblinking discipline
-  key_features: Kabuto helmet, maedate crest, mempo face mask, katana pair, sashimono back-banner
-  creative_brief: Red lacquer catching bamboo-filtered light on plates laced together by silk cords that count generations of service, the mempo mask frozen in a snarl that speaks of demons faced and stillness earned. Every knot of odoshi threading binds duty to form, the kabuto crest rising like a final thought before the blade leaves its scabbard into cherry-blossom air.
+  atmosphere: Honorable, fierce, impermanence, pre-dawn stillness, unblinking discipline
+  key_features: Kabuto helmet, maedate crest, mempo mask cues, silk odoshi lacing, sashimono geometry
+  creative_brief: >-
+    Translate the input into samurai armor language: lacquered plates, silk
+    odoshi lacing, kabuto crest, mempo severity, sode shoulders and disciplined
+    red-black-gold craft. Preserve warrior identity cues without requiring
+    bamboo forest, castle interior, katana duel or fixed human face.
 avoidRules:
   - european armor
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

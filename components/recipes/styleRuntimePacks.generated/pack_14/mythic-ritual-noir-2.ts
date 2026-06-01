@@ -5,35 +5,39 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP14-002',
-    name: 'Velvet Reliquary Atelier',
+    name: 'Velvet Relic Conservation Noir',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Aristocratic restoration atelier with esoteric craftsmanship.',
-      form_and_line: 'Artisan-focused silhouette, suspended relics, and precise gesture lines.',
+      aesthetic:
+        'Aristocratic relic-conservation noir with esoteric craft precision and velvet danger.',
+      form_and_line:
+        'Precise artisan gesture lines, suspended-fragment arcs, drawer-grid order, and careful restoration geometry.',
       color_palette: 'Oxblood velvet, tarnished brass, and parchment ivory.',
-      lighting_setup: 'Focused task-lamp pools with peripheral candle glow.',
+      lighting_setup:
+        'Focused task-lamp pools, peripheral candle glow, and tight brass edge highlights.',
       material_texture: 'Burnished metal filings, antique velvet, wax seals, and lacquered wood.',
       render_quality:
         'Premium narrative illustration with editorial precision and controlled contrast.',
-      spatial_distortion: 'Workbench-first framing with layered shelves and hanging reliquaries.',
+      spatial_distortion:
+        'Layered conservation-depth framing with shelves, drawers, or suspended fragments as optional cues.',
       atmosphere: 'Obsessive concentration, sacred secrecy, and museum-grade elegance.',
       key_features:
-        'Relic disassembly tools, velvet-lined drawers, suspended sanctified fragments.',
+        'Velvet-lined shadow, relic-fragment geometry, wax-seal accents, brass tool precision, and forbidden-object value.',
       creative_brief:
-        'A master conservator restoring forbidden relics in a midnight atelier where every object feels priceless and dangerous.',
+        'Conserve the input as velvet relic noir: oxblood depth, tarnished brass precision, parchment highlights, wax-seal accents, and suspended fragment logic should make any subject feel priceless and dangerous without requiring an atelier, workbench, dedicated restorer, or literal relic set.',
     },
   },
   {
     id: 'SP14-003',
-    name: 'Saint of Broken Neon',
+    name: 'Broken Neon Saint Icon',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, bright-daylight, playful, watermark, text, logo',
     style: {
       aesthetic:
         'Ruined metropolitan iconography where sanctity survives as unstable electric folklore.',
       form_and_line:
-        'Frontal martyr geometry, fractured aureole rings, and shrine-like wall symmetry.',
+        'Frontal icon geometry, fractured aureole rings, cable-bundle arcs, and shrine-like symmetry.',
       color_palette: 'Faded cyan plasma, wounded magenta, and soot-black concrete.',
       lighting_setup: 'Intermittent neon fault flicker with rain-slick reflected halos.',
       material_texture:
@@ -41,45 +45,46 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'High-impact poster-concept hybrid with crisp silhouette readability for key-art use.',
       spatial_distortion:
-        'Flat-compressed alley altar framing that pushes devotional icons toward the viewer.',
+        'Flat-compressed devotional framing that pushes broken neon iconography toward the viewer without requiring an alley shrine.',
       atmosphere: 'Defiant faith, civic collapse, and reverent urban tension.',
-      key_features: 'Broken halo scaffold, votive cable bundles, rain-lit graffiti scripture.',
+      key_features:
+        'Broken halo scaffolds, votive cable bundles, rain-neon reflections, soot concrete, and unstable electric sainthood.',
       creative_brief:
-        'A canonized figure of the blackout era venerated in a rain-soaked city shrine assembled from failing neon infrastructure.',
+        'Canonize the input as broken neon sainthood: fractured aureoles, cyan-magenta fault light, rain-slick concrete, votive cable bundles, and blackout-era devotional symmetry should sanctify any subject without requiring a saint, city shrine, alley, graffiti wall, or literal figure.',
     },
   },
   {
     id: 'SP14-006',
-    name: 'Crowned Ash Oracle',
+    name: 'Ash-Crown Oracle Decree',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, soft-cute, random-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Eschatological court-noir centered on a sovereign oracle issuing final decrees.',
+      aesthetic: 'Eschatological court-noir where prophecy reads as legal force and sovereign ash.',
       form_and_line:
-        'High-throne verticality, decree-bearing hand geometry, and strict heraldic symmetry.',
+        'High vertical authority, decree-tablet geometry, strict heraldic symmetry, and crown-halo framing.',
       color_palette: 'Volcanic ash gray, funerary gold, and deep ultramarine dusk.',
       lighting_setup: 'Ember uplight from censers plus a narrow crown halo rim.',
       material_texture:
         'Charred vellum, oxidized regalia, cinder dust, and brocade ceremonial cloth.',
       render_quality: 'Prestige key art with precise icon hierarchy and high-distance readability.',
       spatial_distortion:
-        'Tribunal axis converging behind the throne through smoke-layered arches.',
+        'Tribunal-axis convergence through smoke-layered arches or equivalent authority planes without requiring a throne room.',
       atmosphere: 'Judicial inevitability, prophetic dread, and sovereign calm.',
       key_features:
-        'Cracked coronet, decree tablets, oath-bearer attendants, intelligent ash plumes.',
+        'Cracked coronet cues, decree tablets, oath geometry, intelligent ash plumes, and funerary-gold verdict light.',
       creative_brief:
-        'A crowned oracle delivers binding prophecy as legal sentence, blending ritual authority and end-time governance.',
+        'Decree the input through ash-crown oracle law: volcanic gray fields, funerary-gold halos, ultramarine dusk, charred-vellum texture, and heraldic verdict symmetry should make any subject feel prophetically binding without requiring a literal oracle figure, courtroom, attendants, tablets, or apocalypse tableau.',
     },
   },
   {
     id: 'SP14-007',
-    name: 'Moonlit Reliquary Hunt',
+    name: 'Moonsteel Relic Infiltration',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cheerful-light, sci-fi-clean, watermark, text, logo',
     style: {
-      aesthetic: 'Covert mythic-noir infiltration centered on relic recovery before dawn liturgy.',
+      aesthetic: 'Covert mythic-noir relic infiltration with stealth precision and sacred urgency.',
       form_and_line:
-        'Low-profile tracker silhouette, rope-led diagonals, and stealth-biased stance language.',
+        'Low-profile silhouette bias, rope-led diagonals, ritual cartography marks, and stealth-vector geometry.',
       color_palette: 'Moonsteel blue, weathered slate, and blood-seal crimson accents.',
       lighting_setup:
         'Intermittent moon breaks, hand-lantern occlusion, and shard reflections off wet stone.',
@@ -88,214 +93,239 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Tactical narrative concept art with crisp readability across mid and far planes.',
       spatial_distortion:
-        'Vertical ruin shaft composition with chained landings and hidden side passages.',
+        'Vertical ruin-shaft depth, chained landings, or hidden-passage diagonals as optional structure cues.',
       atmosphere: 'Measured tension, sacred urgency, and disciplined restraint.',
       key_features:
-        'Relic lockbox, route-marking sigils, suspended bridge remnants, silent tracking posture.',
+        'Relic lockbox cues, route-marking sigils, moonsteel reflections, suspended bridge fragments, and silent tracking posture.',
       creative_brief:
-        'A sanctioned relic operative navigates forbidden ruins using ritual cartography and stealth precision before rival orders arrive.',
+        'Infiltrate the input with moonsteel relic tension: blue wet-stone shadows, blood-seal accents, ritual map lines, stealth diagonals, and lockbox-like sacred-object cues should make any subject feel covert and urgent without requiring an operative, forbidden ruins, rival orders, bridge, or mission setup.',
     },
   },
   {
     id: 'SP14-010',
-    name: 'Clockwork Exorcist Tribunal',
+    name: 'Clockwork Exorcism Tribunal',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Judicial occult noir fused with antique mechanical ritualism.',
+      aesthetic:
+        'Judicial occult noir fused with antique mechanical ritualism and verdict pressure.',
       form_and_line:
-        'Triangular courtroom staging, articulated devices, and strict figure blocking.',
+        'Triangular verdict staging, articulated device geometry, strict blocking, and procedural sigil alignment.',
       color_palette: 'Charcoal black, brass amber, and parchment umber.',
       lighting_setup: 'Overhead judicial beams with hot sparks from arcane machinery.',
       material_texture: 'Engraved brass, scorched oak, vellum dossiers, and iron chains.',
       render_quality: 'High-legibility narrative tableau with premium editorial sharpness.',
-      spatial_distortion: 'Forced-perspective chamber emphasizing a central verdict platform.',
+      spatial_distortion:
+        'Forced-perspective chamber logic emphasizing a central verdict axis without requiring a courtroom.',
       atmosphere: 'Moral gravity, procedural dread, and controlled ceremonial violence.',
-      key_features: 'Mechanized exorcism rig, robed judges, evidentiary relic arrays.',
+      key_features:
+        'Mechanized exorcism rig cues, brass verdict devices, evidentiary relic arrays, parchment dossiers, and moral-gravity beams.',
       creative_brief:
-        'A secret tribunal where exorcisms are prosecuted like trials and every instrument doubles as legal authority.',
+        'Prosecute the input through clockwork exorcism tribunal logic: charcoal verdict shadows, brass amber machinery, parchment dossiers, iron-chain geometry, and procedural occult alignment should make any subject feel judged and ritually constrained without requiring judges, courtroom, exorcist, rig, or secret trial staging.',
     },
   },
   {
     id: 'SP14-107',
-    name: 'Midnight Candle Vault',
+    name: 'Midnight Candle Compression',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cheerful, empty, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Hidden vault lit by dozens of candles and ritual ironwork.',
-      form_and_line: 'Tight vault geometry, vertical candle clusters, and iron rails.',
+      aesthetic: 'Ritual noir compressed by dense candlelight, black wax, and ironwork discipline.',
+      form_and_line:
+        'Tight chamber-like geometry, vertical candle clusters, and iron rail rhythms.',
       color_palette: 'Black wax, amber flame, and aged brass.',
       lighting_setup: 'Dense candle pools with deep surrounding shadow.',
       material_texture: 'Sooted stone, melted wax, and oxidized metal.',
-      render_quality: 'Editorial noir with claustrophobic detail.',
-      spatial_distortion: 'Close chamber perspective compressing the ritual space.',
+      render_quality: 'Editorial noir with claustrophobic detail and clear symbolic hierarchy.',
+      spatial_distortion:
+        'Close compressed depth that makes any subject feel sealed into ritual power.',
       atmosphere: 'Secrecy, devotion, and controlled tension.',
-      key_features: 'Candle stacks, iron grates, and sealed alcoves.',
-      creative_brief: 'A ritual vault where candlelight becomes a compact geometry of power.',
+      key_features: 'Candle stacks, iron grates, sealed-alcove silhouettes.',
+      creative_brief:
+        'Recast the input through midnight candle compression, where candlelight and iron geometry make power feel compact and secret.',
     },
   },
   {
     id: 'SP14-108',
-    name: 'Blood Moon Procession',
+    name: 'Blood Moon Processional Omen',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, playful, bright-day, watermark, text, logo, action-pose',
     style: {
-      aesthetic: 'Silent procession under a blood moon through ceremonial streets.',
-      form_and_line: 'Long vertical robes, lantern poles, and a lunar arc overhead.',
+      aesthetic: 'Processional blood-moon omen language with solemn public ritual pressure.',
+      form_and_line: 'Long vertical robe cues, lantern-pole rhythms, and a lunar arc overhead.',
       color_palette: 'Blood red, midnight indigo, and ash gray.',
       lighting_setup: 'Moonlit backlight with lantern accents.',
-      material_texture: 'Wet cobblestone, ceremonial cloth, and lacquered wood.',
-      render_quality: 'Cinematic mythic narrative with procession clarity.',
-      spatial_distortion: 'Receding avenue that leads into the moon disk.',
+      material_texture: 'Wet stone sheen, ceremonial cloth, lacquered wood, and ash haze.',
+      render_quality: 'Cinematic mythic rendering with processional clarity.',
+      spatial_distortion:
+        'Receding ritual rhythm that leads visual force toward a blood moon disk.',
       atmosphere: 'Omen, obedience, and a solemn public rite.',
-      key_features: 'Processional masks, lantern standards, and moon sigils.',
-      creative_brief: 'A ritual march where the moon itself seems to testify.',
+      key_features: 'Processional mask cues, lantern standards, blood moon sigils.',
+      creative_brief:
+        'Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, ash haze, solemn verticals, and obedient negative space without forcing moon disks, street marches, masks, crowds, or ritual parades.',
     },
   },
   {
     id: 'SP14-109',
-    name: 'Blackwater Confessional',
+    name: 'Blackwater Confessional Reflection',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cute, pastel, watermark, text, logo, daytime',
     style: {
-      aesthetic: 'Confessional chamber hovering over dark water channels.',
-      form_and_line: 'Narrow vertical stall forms, water reflections, and arch slits.',
+      aesthetic:
+        'Confessional noir translated through blackwater reflections, secrecy, and ritual cleansing.',
+      form_and_line: 'Narrow vertical screen forms, water reflection bands, and arch-slit cues.',
       color_palette: 'Tar black, tarnished silver, and deep teal.',
       lighting_setup: 'Reflected water shimmer and slit-window light.',
       material_texture: 'Damp stone, brushed metal, and polished confession screens.',
-      render_quality: 'Mysterious interior concept with clean symbolic contrast.',
-      spatial_distortion: 'Repeated stall rhythm over a submerged void.',
+      render_quality: 'Mysterious symbolic rendering with clean contrast.',
+      spatial_distortion:
+        'Repeated screen rhythm over a submerged void feeling, usable on subjects or objects.',
       atmosphere: 'Admission, secrecy, and ritual cleansing.',
-      key_features: 'Confessional screens, blackwater basin, and whisper grilles.',
+      key_features: 'Confessional screens, blackwater basin cues, whisper-grille textures.',
       creative_brief:
-        'A ritual confessional where the floor beneath the penitent is a dark moving tide.',
+        'Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, or religious props.',
     },
   },
   {
     id: 'SP14-110',
-    name: 'Oath Knife Chapel',
+    name: 'Oath Knife Binding',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cartoon, neon, watermark, text, logo, glossy',
     style: {
-      aesthetic: 'Chapel of vows guarded by ceremonial blades and iron stands.',
-      form_and_line: 'Knife-sharp verticals, altar edge, and disciplined symmetry.',
+      aesthetic: 'Vow-binding noir guarded by ceremonial blades, cords, and austere authority.',
+      form_and_line: 'Knife-sharp verticals, altar-edge cues, and disciplined symmetry.',
       color_palette: 'Iron black, dried crimson, and bone white.',
       lighting_setup: 'Single altar beam and edge highlights on metal.',
       material_texture: 'Forged steel, cracked stone, and stained leather.',
       render_quality: 'Stark mythic key art with ceremonial precision.',
-      spatial_distortion: 'Frontal chapel axis with blades framing the altar.',
+      spatial_distortion:
+        'Frontal axis with blades framing a symbolic commitment point, not a required chapel.',
       atmosphere: 'Binding, sacrifice, and austere authority.',
-      key_features: 'Oath blades, binding cords, and vow tablets.',
-      creative_brief: 'A ritual chapel where promises are sealed through blade-lit ceremony.',
+      key_features: 'Oath blades, binding cords, vow-tablet shapes.',
+      creative_brief:
+        'Convert any input into oath-knife binding style, where promises feel sealed by blade-lit ceremony. Keep knife-sharp verticals, cord tension, dried crimson, altar-beam contrast, and austere symmetry without requiring knives, chapels, altars, vows, or sacrifice scenes.',
     },
   },
   {
     id: 'SP14-111',
-    name: 'Ash Choir Vestibule',
+    name: 'Ash Choir Absence',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, busy-patterns, daylight, watermark, text, logo, cute',
     style: {
-      aesthetic: 'Entry vestibule where a choir is implied only by ash traces and architecture.',
-      form_and_line: 'Tall vestibule arches, ash streaks, and layered alcoves.',
+      aesthetic:
+        'Silent choir absence expressed through ash traces, tall arch cues, and echoing negative space.',
+      form_and_line: 'Tall arch rhythms, ash streaks, and layered alcove silhouettes.',
       color_palette: 'Charcoal, ivory ash, and bruised plum.',
       lighting_setup: 'Soft overhead dusk and side-lamp glow.',
       material_texture: 'Soot residue, stone dust, and faded silk.',
       render_quality: 'Atmospheric symbolism with quiet architectural detail.',
-      spatial_distortion: 'Narrow entrance funneling into a hidden choir space.',
+      spatial_distortion: 'Narrow funneling depth toward an implied hidden voice source.',
       atmosphere: 'Absence, prayer, and echoing memory.',
-      key_features: 'Ash drifts, choir stalls, and sealed choir doors.',
+      key_features: 'Ash drifts, choir-stall traces, sealed-door silhouettes.',
       creative_brief:
-        'A ritual foyer where the choir has gone silent, leaving only ash and architecture.',
+        'Render the input through ash choir absence, leaving the feeling of vanished voices and ritual architecture without requiring a foyer.',
     },
   },
   {
     id: 'SP14-112',
-    name: 'Veiled Grimoire Salon',
+    name: 'Veiled Grimoire Secrecy',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, action-chaos, neon, watermark, text, logo, messy',
     style: {
-      aesthetic: 'Salon for reading forbidden books behind veils and screens.',
-      form_and_line: 'Layered curtains, semicircle reading nooks, and hidden book stands.',
+      aesthetic:
+        'Forbidden grimoire secrecy filtered through veils, coded margins, and intimate noir mystery.',
+      form_and_line: 'Layered curtains, semicircle sightlines, and hidden book-stand cues.',
       color_palette: 'Ink blue, velvet burgundy, and parchment gold.',
       lighting_setup: 'Desk lamps through gauze veils and candle reflections.',
       material_texture: 'Suede, paper grain, brass clasps, and gauze fabric.',
-      render_quality: 'Premium interior illustration with intimate mystery.',
-      spatial_distortion: 'Curved salon plan with veiled sightlines.',
+      render_quality: 'Premium mythic illustration with intimate mystery.',
+      spatial_distortion: 'Curved veiled sightlines that partially conceal and reveal the input.',
       atmosphere: 'Curiosity, privacy, and sealed knowledge.',
-      key_features: 'Veiled shelves, coded margins, and ritual reading desks.',
-      creative_brief: 'A ritual salon where forbidden texts are read through layers of secrecy.',
+      key_features: 'Veiled shelf cues, coded margins, ritual reading surfaces.',
+      creative_brief:
+        'Reframe the input through veiled grimoire secrecy, using forbidden-book cues and gauze layers without requiring a salon or readable text.',
     },
   },
   {
     id: 'SP14-113',
-    name: 'Silent Bell Crypt',
+    name: 'Silent Bell Warning',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cute, neon, watermark, text, logo, bright-white',
     style: {
-      aesthetic: 'Crypt chamber anchored by suspended silent bells.',
-      form_and_line: 'Heavy crypt arches, bell silhouettes, and repeating niches.',
+      aesthetic:
+        'Suspended bell warning language with mourning, silence, and monumental noir stillness.',
+      form_and_line: 'Heavy arch cues, bell silhouettes, and repeating niche rhythms.',
       color_palette: 'Stone gray, bronze patina, and smoke black.',
       lighting_setup: 'Dim crypt light with focused bell-edge highlights.',
       material_texture: 'Chiseled stone, aged bronze, and cobwebbed cloth.',
       render_quality: 'Monumental mythic stillness with strong contrast.',
-      spatial_distortion: 'Deep crypt tunnel ending in a bell altar.',
+      spatial_distortion: 'Deep receding tunnel feeling ending in a silent bell focal cue.',
       atmosphere: 'Mourning, suspension, and unspoken warning.',
-      key_features: 'Silent bells, crypt niches, and ritual chainwork.',
-      creative_brief: 'A ritual crypt where bells hang in silence as a warning, not a sound.',
+      key_features: 'Silent bells, niche shadows, ritual chainwork.',
+      creative_brief:
+        'Apply silent-bell warning to any input, making suspended mass read as omen rather than sound. Use bronze patina, niche rhythm, chainwork, cryptic stillness, and focused edge highlights without requiring bells, crypts, arches, tunnels, or mourning figures.',
     },
   },
   {
     id: 'SP14-114',
-    name: 'Crimson Ledger Sanctum',
+    name: 'Crimson Ledger Judgment',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, pastel, cartoon, watermark, text, logo, gloss',
     style: {
-      aesthetic: 'Sanctum of records and vows written in crimson inks.',
-      form_and_line: 'Ledger towers, upright files, and altar table symmetry.',
+      aesthetic:
+        'Judgment and vow-accounting rendered through crimson ledgers, archival order, and ritual gravitas.',
+      form_and_line: 'Ledger-tower cues, upright file rhythms, and altar-table symmetry.',
       color_palette: 'Crimson, charcoal, and antique paper.',
       lighting_setup: 'Warm desk lamps and shadowed shelf depths.',
       material_texture: 'Threaded bindings, thick paper, and lacquered wood.',
       render_quality: 'Scholarly noir with ritual gravitas.',
-      spatial_distortion: 'Library sanctum stretching upward into darkness.',
+      spatial_distortion:
+        'Upward archival depth stretching into darkness without requiring a library sanctum.',
       atmosphere: 'Accounting, judgment, and ceremonial order.',
-      key_features: 'Blood-red ledgers, ritual stamps, and sealed drawers.',
-      creative_brief: 'A ritual archive where every vow is kept as an illuminated ledger.',
+      key_features: 'Blood-red ledgers, ritual stamps, sealed-drawer shapes.',
+      creative_brief:
+        'Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated archival pressure.',
     },
   },
   {
     id: 'SP14-115',
-    name: 'Wax Seal Inquisition',
+    name: 'Wax Seal Verdict Grid',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cute, neon, watermark, text, logo, empty-space',
     style: {
-      aesthetic: 'Investigative chamber dominated by wax seals and ceremonial stamps.',
-      form_and_line: 'Tabletop layout, seal arrays, and sharp document edges.',
+      aesthetic:
+        'Ritual investigation expressed through wax seals, ceremonial stamp grids, and procedural suspicion.',
+      form_and_line: 'Tabletop-plane cues, seal arrays, and sharp document-edge geometry.',
       color_palette: 'Deep red wax, midnight black, and parchment beige.',
       lighting_setup: 'Tight inspection lamps with low peripheral shadow.',
       material_texture: 'Melted wax, cardstock, brass stamp heads, and linen.',
-      render_quality: 'Micro-detail interior with ritual investigation mood.',
-      spatial_distortion: 'Flat table plane with towering seal stacks at the back.',
+      render_quality: 'Micro-detail noir rendering with ritual investigation mood.',
+      spatial_distortion:
+        'Flattened evidence-plane perspective with towering seal stacks as visual pressure.',
       atmosphere: 'Suspicion, procedure, and disciplined scrutiny.',
-      key_features: 'Wax seals, verdict stamps, and confession packets.',
-      creative_brief: 'A ritual investigation room where seals themselves carry the verdict.',
+      key_features: 'Wax seals, verdict stamps, confession-packet shapes.',
+      creative_brief:
+        'Rework the input through wax-seal verdict logic, where stamps and seals carry judgment without requiring an investigation room.',
     },
   },
   {
     id: 'SP14-116',
-    name: 'Night Orchid Ritual House',
+    name: 'Night Orchid Witness',
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cartoonish, overbright, watermark, text, logo, clutter',
     style: {
-      aesthetic: 'Ritual residence overrun by nocturnal orchids and velvet drapery.',
-      form_and_line: 'House silhouette, floral verticals, and ritual balcony rhythms.',
+      aesthetic:
+        'Nocturnal orchid witness language with velvet drapery, secrecy, and ceremonial stillness.',
+      form_and_line: 'Floral verticals, screen rhythms, and balcony-like layered silhouettes.',
       color_palette: 'Dark plum, black green, and muted gold.',
       lighting_setup: 'Orchid biolight mixed with candle glows.',
       material_texture: 'Velvet curtains, glossy petals, and dark lacquer.',
       render_quality: 'Dreamlike mythic illustration with refined botanical detail.',
-      spatial_distortion: 'House-depth composition with floral framing.',
+      spatial_distortion: 'Layered depth with floral framing that can surround any subject.',
       atmosphere: 'Seduction, secrecy, and ceremonial stillness.',
-      key_features: 'Orchid altar, midnight terrace, and ritual screens.',
-      creative_brief: 'A ritual house where orchids bloom as the final witness of the night.',
+      key_features: 'Orchid altar cues, midnight terrace silhouettes, ritual screens.',
+      creative_brief:
+        'Recast the input through night-orchid witness, where dark blossoms become the final witness of a ritual without fixing the setting as a house.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

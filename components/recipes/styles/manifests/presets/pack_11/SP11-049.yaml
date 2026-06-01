@@ -12,17 +12,23 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: Burger ad, quick-service-photography, crave-engineering, food-styling trickery, drive-thru theater
-  form_and_line: Perfect layers, bun-dome contour, lettuce-ruffle edge, patty-sear ring, cheese-drape curves
+  aesthetic: Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish
+  form_and_line: Perfect stack layers, rounded hero contours, ruffled edges, sear-like texture rings, draped melt curves
   color_palette: Saturated Orange, Brown, Heinz-red, lettuce-chlorophyll green, sesame-gold, pickle-neon green
   lighting_setup: High key studio, backlight-through-bun, rim-light on cheese, oil-sheen catch, steam-backlit glow
   material_texture: Melting cheese, water drops, sesame-seed nub, grill-mark char, condensation-bead, oil-slick gloss
   render_quality: Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap
   spatial_distortion: Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly
-  atmosphere: Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure
-  key_features: Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen
+  atmosphere: Exciting, hungry, late-night craving, guilty-pleasure, glossy commercial intensity
+  key_features: >-
+    Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice
+    sheen
   creative_brief: >-
-    Construct hyper-stylized fast-food hero shots with idealized layering, condensation control, and high-key crave lighting. Focus on commercial appetizing cues and dynamic ingredient staging without tying to a specific brand or scene.
+    Push the input into hyper-stylized fast-food commercial language: idealized layering, condensation control, high-key
+    crave lighting, exaggerated freshness, and dynamic ingredient staging. Burger cues may appear as anchors, but avoid
+    locking to a brand, drive-thru, or specific menu item. Apply Fast Food Commercial as a portable style system over
+    any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
+    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - real
   - soggy

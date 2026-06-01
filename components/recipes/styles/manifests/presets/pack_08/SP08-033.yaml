@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Pharaoh or Queen, Nile-divinity splendor, temple-relief majesty
+  aesthetic: Ancient Egyptian regalia, Nile-divinity splendor, temple-relief majesty
   form_and_line: Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette
   color_palette: White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum
-  lighting_setup: Desert sun, temple-interior shadow, golden-hour sand, torchlight flicker
+  lighting_setup: Desert-gold sun, temple-shadow contrast, torchlight flicker, lapis highlight
   material_texture: Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals
   render_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
   spatial_distortion: None
-  atmosphere: Regal, divine, eternal-Nile serenity, temple-incense reverence, absolute-power stillness
-  key_features: Gold collar, kohl-lined eyes, uraeus crown, crook and flail, pleated kalasiris
-  creative_brief: Pleated linen falling like frozen Nile water from shoulders anointed with the weight of two kingdoms, gold leaf catching desert sun on a usekh collar that maps the cosmos across a mortal chest. Kohl traces protective lines around eyes that have seen dynasties rise and fall, turquoise and lapis singing the old hymns in a language of stone and light.
+  atmosphere: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
+  key_features: Gold usekh collar, kohl-line cues, uraeus or crown detail, pleated kalasiris
+  creative_brief: >-
+    Render the input through Ancient Egyptian regalia: pleated linen, usekh
+    collar spread, faience beads, lapis, turquoise, electrum and kohl-like line
+    precision. Keep pharaonic divinity without requiring a pharaoh/queen,
+    temple, desert pose, crook/flail or human eyes.
 avoidRules:
   - pants
   - modern
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

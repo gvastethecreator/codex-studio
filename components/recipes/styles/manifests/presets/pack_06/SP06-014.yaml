@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Clean shapes
   atmosphere: Classic, sturdy
   key_features: Velvet matte finish
-  creative_brief: Milk protein suspends pigment in a velvet embrace, drying to a surface that absorbs light like powdered stone. The matte finish whispers where oil would shout, carrying illustration into the realm of the permanent. Every stroke dries waterproof and indelible, a commitment made visible.
+  creative_brief: >-
+    Apply casein-paint surface logic to any input: milk-protein matte pigment,
+    powdered-stone opacity, fast opaque layering, crisp illustration edges, and
+    waterproof permanence. Keep quiet durable color without requiring vintage
+    posters, editorial illustration, packaging, or dairy-themed subject matter.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

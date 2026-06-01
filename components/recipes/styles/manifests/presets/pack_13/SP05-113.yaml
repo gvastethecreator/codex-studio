@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-113
 packId: pack_13
-name: Stained-Glass Cathedral Anime
+name: Leaded Jewel-Light Segmentation
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,37 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Stained-glass anime treatment with black lead-came segmentation, jewel-toned translucent fields, sacred backlight, rosette geometry, and illuminated-manuscript ornament
-  form_and_line: Thick black lead-came segmentation, gothic-arch rhythm, geometric rosette divisions, hieratic scale shifts, and decorative border filigree
-  color_palette: Sapphire-blue, ruby-red, emerald-green, amethyst-purple, gold-yellow, translucent-jewel-spectrum, cathedral-gloom-dark-edges, sun-through-color-glow
-  lighting_setup: Backlit translucent glow, colored-glass light transmission, dim-value contrast, and divine ray-like illumination
-  material_texture: Textured-stained-glass surface, lead-came-metallic-joints, glass-bubble-imperfections, hand-blown-variation, stone-tracery-framing
-  render_quality: Stained-glass-anime-fusion, cathedral-window-beauty, translucent-color-rendering, sacred-art-aesthetic, jewel-toned-divine-light
-  spatial_distortion: Lead-line segmentation, circular rosette framing, gothic vertical emphasis, flat-icon perspective, and hieratic scale logic
-  atmosphere: Sacred, awe-inspiring, divine-light, hushed, medieval-reverence-meets-anime-emotion, transcendent-beauty
-  key_features: Black lead-came segmentation, jewel-toned translucent colors, backlit glow, gothic-arch rhythm, rosette composition, glass-imperfection texture
+  aesthetic: >-
+    Leaded jewel-light anime treatment with black came segmentation, translucent color fields,
+    sacred backlight, rosette geometry, and manuscript ornament
+  form_and_line: >-
+    Thick black lead-came segmentation, gothic-arch rhythm, geometric rosette divisions, hieratic
+    scale shifts, and decorative border filigree
+  color_palette: >-
+    Sapphire-blue, ruby-red, emerald-green, amethyst-purple, gold-yellow,
+    translucent-jewel-spectrum, cathedral-gloom-dark-edges, sun-through-color-glow
+  lighting_setup: >-
+    Backlit translucent glow, colored-glass light transmission, dim-value contrast, and divine
+    ray-like illumination
+  material_texture: >-
+    Textured-stained-glass surface, lead-came-metallic-joints, glass-bubble-imperfections,
+    hand-blown-variation, stone-tracery-framing
+  render_quality: >-
+    Stained-glass-anime-fusion, cathedral-window-beauty, translucent-color-rendering,
+    sacred-art-aesthetic, jewel-toned-divine-light
+  spatial_distortion: >-
+    Lead-line segmentation, circular rosette framing, gothic vertical emphasis, flat-icon
+    perspective, and hieratic scale logic
+  atmosphere: >-
+    Sacred, awe-inspiring, divine-light, hushed, medieval-reverence-meets-anime-emotion,
+    transcendent-beauty
+  key_features: >-
+    Lead-came segmentation, jewel translucency, backlit glow, rosette rhythm, glass imperfection,
+    and illuminated color panes
   creative_brief: >-
-    Preserve stained-glass cathedral anime grammar as a reusable style system:
-    lead-came segmentation, jewel-translucent backlight transmission, and
-    gothic rosette framing should remain consistent across subjects without
-    requiring a cathedral, saints, angels, or literal window scene.
+    Use leaded jewel-light segmentation as luminous partition grammar. Any prompt should break into
+    black leading, translucent jewel panes, sacred glow, and rosette rhythm. Cathedrals, saints,
+    angels, windows, and church interiors are optional.
 avoidRules:
   - flat
   - opaque

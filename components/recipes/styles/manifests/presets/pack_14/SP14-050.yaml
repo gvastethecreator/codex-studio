@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-050
 packId: pack_14
-name: River Styx Toll Fort
+name: River Styx Passage Toll
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Underworld border outpost enforcing passage rites.
-  form_and_line: Fort walls, mooring stairs, and toll altar symmetry.
+  aesthetic: Underworld passage toll language enforcing solemn rites, coin debt, and fatal bureaucracy.
+  form_and_line: Fort-wall cues, mooring stairs, and toll altar symmetry.
   color_palette: Charcoal, cold silver, and muted violet.
   lighting_setup: Low fog glow and lantern edge illumination.
   material_texture: Wet stone, black timber, and coin-worn bronze.
   render_quality: Moody underworld concept with high tonal control.
-  spatial_distortion: Riverbank depth fading into misted void.
+  spatial_distortion: Riverbank depth fading into a misted void.
   atmosphere: Fatal bureaucracy and solemn inevitability.
-  key_features: Ferryman docks, coin basins, and oath obelisks.
-  creative_brief: A mythic checkpoint where every soul negotiates passage cost.
+  key_features: Ferryman dock cues, coin basins, oath obelisks.
+  creative_brief: Recast any input through River Styx passage toll, where every form feels weighed against the cost of crossing. Use fatal bureaucracy, coin-worn bronze, fog falloff, toll symmetry, and wet-stone gravity without requiring ferrymen, docks, rivers, boats, coins, or an underworld scene.
 avoidRules: [photoreal, comedy, bright-pop, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-050.webp }
 attributes:
   negativePrompt: photoreal, comedy, bright-pop, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

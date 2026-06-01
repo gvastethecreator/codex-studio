@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Victorian doll style, porcelain-dream sweetness, Harajuku tea-party fantasy
+  aesthetic: Lolita fashion, Victorian doll sweetness, porcelain-dream refinement
   form_and_line: Ruffles, bell shape, tiered cupcake skirt, mutton-leg sleeve, high-neck lace collar
   color_palette: Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white
-  lighting_setup: Soft, diffused window light, tea-room warmth, petal-pink bounce
+  lighting_setup: Soft diffused light, petal-pink bounce, porcelain-bright warmth
   material_texture: Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons
   render_quality: Cute, elaborate, Angelic Pretty refinement, doll-like perfection
   spatial_distortion: None
-  atmosphere: Sweet, innocent, candy-land gentility, storybook serenity, lace-gloved delicacy
+  atmosphere: Sweet, innocent, storybook serenity, lace-gloved delicacy, porcelain calm
   key_features: Bonnet, lace gloves, Mary-Jane pumps, ribbon-laced corset back
-  creative_brief: A bell-shaped daydream constructed from tiered ruffles and the memory of Victorian tea parties that never happened. Satin ribbons tie bows that hold innocence like a kept promise, each pintuck a whisper of porcelain-doll perfection walking through Harajuku as if the street were a dollhouse parlor.
+  creative_brief: >-
+    Render the input through Lolita construction: bell silhouette, tiered ruffles, satin ribbons, pintucked voile,
+    bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid a Harajuku
+    street, dollhouse parlor, fixed girl figure or literal party. Apply this fashion/costume grammar over any input:
+    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
+    body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - modern
   - pants
@@ -42,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

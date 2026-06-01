@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-081
 packId: pack_13
-name: K-On! – KyoAni Cozy Band Practice
+name: KyoAni Shared-Warmth Microacting
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: KyoAni-inspired cozy moe language centered on post-effort warmth, soft ensemble intimacy, and affectionate daily-life rhythm
-  form_and_line: Rounded soft contours with subtle facial elasticity, clean low-noise line weight, and composition tuned to shared attention rather than fixed props
-  color_palette: Creamy beiges, warm butter yellows, mint-soft accents, tea-toned browns, and low-saturation pastel support hues
-  lighting_setup: Late-afternoon warmth, ambient practical fill, diffuse bounce softness, and low-contrast highlight rolloff
-  material_texture: Polished wood warmth, soft cloth folds, ceramic matte-gloss contrast, and lived-in surface wear kept gentle
-  render_quality: Comfort-forward slice-of-life anime rendering with polished softness, stable expression readability, and premium cozy tonal control
-  spatial_distortion: Compact intimate framing with mild cute-proportion stylization and balanced shared-focus staging
-  atmosphere: Warm, friendly, relaxed, and musically affectionate
-  key_features: Gentle expression rhythm, warm shared-focus cues, tea-toned domesticity, and relaxed ensemble familiarity
+  aesthetic: >-
+    KyoAni-inspired shared-warmth moe built from post-effort softness, ensemble eye-lines, tiny
+    social beats, and comfort that feels earned rather than decorative
+  form_and_line: >-
+    Rounded clean contours, small elastic expression shifts, hands and shoulders used as emotional
+    punctuation, and group-focus composition that can wrap any subject
+  color_palette: >-
+    Cream paper neutrals, butter-yellow warmth, soft mint accents, tea browns, rose blush notes, and
+    low-saturation pastel supports
+  lighting_setup: >-
+    Diffuse afternoon key, gentle practical bounce, low-contrast highlight rolloff, and soft rim
+    warmth that keeps every form approachable
+  material_texture: >-
+    Polished-but-lived-in surfaces, brushed fabric folds, matte ceramic softness, faint wood grain,
+    and mild handling wear used as comfort texture
+  render_quality: >-
+    Premium slice-of-life anime finish with soft polish, expression readability, tiny gesture
+    fidelity, and no hard cinematic aggression
+  spatial_distortion: >-
+    Intimate medium-close staging, mild cute-proportion compression, and shared-attention geometry
+    rather than prop-led composition
+  atmosphere: Warm, relaxed, affectionate, quietly funny, socially comfortable
+  key_features: >-
+    Microacting clusters, warm shared-focus cues, tea-toned comfort fields, soft domestic tactility,
+    and gentle ensemble rhythm
   creative_brief: >-
-    Use the title as a style anchor for cozy ensemble moe. Transfer the warmth,
-    soft polish, and friendship-driven micro-acting to any subject without
-    requiring instruments, clubrooms, uniforms, or practice scenes.
+    Use K-On!/KyoAni as style anchor for shared-warmth microacting. Any prompt should become soft
+    ensemble emotion: tiny gestures, clean pastel polish, lived-in comfort, and post-effort glow.
+    Music, clubrooms, uniforms, and instruments are optional, never required.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-081.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

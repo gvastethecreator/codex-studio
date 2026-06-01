@@ -144,7 +144,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hopeful, messy',
       key_features: 'Pinned items',
       creative_brief:
-        'Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals.',
+        'Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creative, recycled',
       key_features: 'Torn bits',
       creative_brief:
-        'Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing.',
+        'Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Temporary, geometric, improvised',
       key_features: 'Tape strips',
       creative_brief:
-        'Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive.',
+        'Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rich, ornamental',
       key_features: 'Metallic shine',
       creative_brief:
-        'Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back as radiance, an active source rather than passive surface. The image should feel precious through material reflectivity and ornament, not through any fixed subject.',
+        'Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back as radiance, an active source rather than passive surface. The image should feel precious through material reflectivity and ornament, not through any fixed subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -270,7 +270,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Antique, homey',
       key_features: 'Varnish shine',
       creative_brief:
-        'Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject.',
+        'Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -374,7 +374,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ethereal, dark',
       key_features: 'Smoke patterns',
       creative_brief:
-        'Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery.',
+        'Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -394,7 +394,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Trippy, fluid',
       key_features: 'Oil patterns',
       creative_brief:
-        'Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design.',
+        'Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
   {
@@ -415,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, surreal',
       key_features: 'Cutout edges',
       creative_brief:
-        'Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work.',
+        'Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

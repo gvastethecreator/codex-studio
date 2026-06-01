@@ -23,7 +23,9 @@ visualDna:
   key_features: Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.
   creative_brief: >-
     Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada:
-    estrategia, espectáculo y romance gráfico sin imponer carrier decks, idols, ciudades nave, mechas ni operaciones militares.
+    estrategia, espectáculo y romance gráfico. Idols, mechas, carrier decks,
+    ciudad-nave u operaciones militares pueden funcionar como indicios de escala
+    y dualidad pop-táctica cuando aporten estilo, sin fijar una escena militar.
 avoidRules:
   - realistic
   - 3d render

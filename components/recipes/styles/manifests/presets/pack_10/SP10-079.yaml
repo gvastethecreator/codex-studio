@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Expensive, elegant
   key_features: Metallic shine
-  creative_brief: Gold leaf pressed into paper by heat and pressure, the impression catching light at an angle that whispers luxury. The metal remembers the die that marked it, a permanent kiss of refinement on the page.
+  creative_brief: >-
+    Apply foil-stamping luxury to the input: metallic pressed highlights,
+    debossed edges, heat-transfer shine, and angle-dependent gold or silver
+    reflections should refine forms without requiring packaging or typography.
 avoidRules:
   - print
   - ink
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Casual, energetic, improvised',
       key_features: 'Stroke stacking, bleed halos, quick gradient blends via overlap',
       creative_brief:
-        'Let marker behavior drive the image: fast stroke confidence, transparent layering, and paper bleed artifacts. Keep the style bold and flexible across subjects while avoiding over-specific scene cues that reduce prompt adaptability.',
+        'Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge bleed, overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold and flexible without requiring sketchbook pages, fashion poses, product drawings, or fixed scene cues.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, surprising, engineered wonder',
       key_features: 'Tabs, slots, folds, lift layers, mechanical page architecture',
       creative_brief:
-        'Compose scenes as foldable structures, not flat illustrations. Prioritize readable paper mechanisms—hinges, layers, and slots—so dimensional surprise remains central while the style stays transferable to different subjects and narrative contexts.',
+        'Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot construction, hinge relief, layered cardstock depth, and cast-paper shadows should make forms feel foldable without requiring books, pages, children, mechanisms, theater sets, or fixed narrative scenes.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, calm, bedtime softness',
       key_features: 'Smudged transitions, dust halos, matte bloom highlights',
       creative_brief:
-        'Build mood through powdery transitions and softened boundaries rather than crisp drawing. Keep chalk pastel behavior central—smudge blending, tooth catch, and diffuse atmosphere—so the style remains reusable without binding it to a fixed seasonal scene.',
+        'Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending, dust halos, matte bloom, and reduced hard edges should build mood without requiring bedtime scenes, landscapes, portraits, seasonal motifs, or a fixed soft-focus subject.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Joyful, innocent, spontaneous',
       key_features: 'Uneven fill, directional scribble, layered wax bloom',
       creative_brief:
-        'Emphasize authentic child-drawing energy through bold wax marks, imperfect fill boundaries, and simplified forms. Keep the style emotionally direct and flexible across subjects without locking it to any specific pose or setting cliché.',
+        'Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries, visible paper tooth, simplified forms, and spontaneous overlap should keep the style direct without requiring children, stick figures, suns, houses, classroom pages, or fixed pose cliches.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Quiet, reflective, domestic warmth',
       key_features: 'Layered glazing, crosshatch modulation, stump-like soft blending',
       creative_brief:
-        'Build forms through incremental colored-pencil layering and visible stroke direction. Prioritize tactile paper interaction, subtle value shifts, and soft-edge transitions so the style remains calm and portable across subjects without scene-specific dependencies.',
+        'Apply colored-pencil sketch language to any input: incremental pigment layering, visible stroke direction, paper-tooth drag, soft-edge transitions, and subtle value shifts should stay calm and portable without requiring sketchbooks, domestic scenes, portraits, still lifes, or fixed props.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Whimsical, handcrafted, comedic warmth',
       key_features: 'Tactile surface dents, clay seam lines, armature-informed posing hints',
       creative_brief:
-        'Preserve the physicality of hand-sculpted clay in every form. Keep Aardman-like tactile imperfection—fingerprints, seam traces, and chunky silhouettes—while ensuring the style can apply to varied subjects without hard-coding specific pose beats or locations.',
+        'Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky silhouettes, matte clay chroma, and armature-informed posing should preserve physical model charm without requiring comedy characters, sets, props, studios, or hard-coded pose beats.',
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, punchy, identity-forward',
       key_features: 'White border halo, isolated silhouette, peel-and-stick visual grammar',
       creative_brief:
-        'Build artwork as standalone decal units: clear silhouette, strong edge contrast, and high-chroma focal hierarchy. Keep compositions uncluttered and border-aware so designs stay recognizable at thumbnail and physical sticker scale.',
+        'Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact vinyl gloss, saturated vector color, and thumbnail-readable edge contrast should make the subject collectible without requiring mascots, icons, slogans, sticker sheets, or peel-off props.',
     },
   },
   {
@@ -160,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Airbrushed montage composition, theatrical light contrast, high-impact focal stacking, title-safe hero spacing',
       creative_brief:
-        'Anchor this preset in painted epic-poster grammar: airbrushed montage layering, theatrical warm/cool lighting conflict, and promise-driven composition should remain the transferable identity beyond any specific saga.',
+        'Apply hand-painted epic poster grammar to any input: airbrushed montage layers, theatrical warm-cool conflict, symbolic background expansion, title-safe focal spacing, and nostalgic one-sheet polish should promise drama without requiring films, casts, faces, weapons, titles, or a specific saga.',
     },
   },
   {
@@ -187,7 +187,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline',
       creative_brief:
-        'Define this preset through vintage travel-poster grammar: flattened scenic planes, optimistic color blocking, and destination-led composition should carry identity beyond one railway or seaside locale.',
+        'Apply vintage travel-poster grammar to any input: flattened scenic planes, optimistic ink bands, simplified landmark anchors, archival litho grain, and destination-like composition should carry promotional clarity without requiring trains, beaches, mountains, cities, titles, or a real destination.',
     },
   },
   {
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Luxurious, optimistic, metropolitan',
       key_features: 'Sunbursts, frame borders, speed motifs, ornamental geometry',
       creative_brief:
-        'Compose with Deco-era visual rhythm: bold geometry, metallic-accent color blocking, and elegant streamlining. Keep the poster language iconic and adaptable, avoiding over-specific location narratives while preserving period identity.',
+        'Apply Art Deco poster grammar to any input: stepped geometry, sunburst rhythm, metallic-adjacent color blocking, streamlined elongation, and elegant frame discipline should make the image iconic without requiring cities, travel posters, skyscrapers, products, or period scenery.',
     },
   },
   {
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Romantic, ornamental, reverent',
       key_features: 'Circular nimbus motifs, botanical arabesques, integrated border systems',
       creative_brief:
-        'Preserve Mucha-style ornamental flow where figure and decoration interweave seamlessly. Prioritize rhythmic line arabesques, halo framing, and floral geometry so the style remains instantly Art Nouveau across varied subjects without fixed scene constraints.',
+        'Apply Art Nouveau lithograph flow to any input: sinuous contour, botanical arabesque, halo framing, muted gold, integrated borders, and ornamental curve dominance should unify subject and decoration without requiring women, hair, flowers, posters, or fixed portrait staging.',
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Strong, commanding, revolutionary urgency, mass-movement energy',
       key_features: 'Rays, bold typography, constructivist geometry',
       creative_brief:
-        'Keep this preset defined by command-poster grammar: constructivist diagonals, high-contrast propaganda palette, and declarative type-shape hierarchy should drive impact without tying to any single artist brand.',
+        'Apply constructivist propaganda-poster grammar to any input: bold red-black-cream contrast, command diagonals, rays, screenprint flatness, type-shape hierarchy, and heroic low-angle pressure should drive impact without requiring workers, flags, crowds, slogans, politics, or readable text.',
     },
   },
   {
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rational, didactic, constructive',
       key_features: 'Modular grid, primary blocks, asymmetric equilibrium, typographic integration',
       creative_brief:
-        'Compose with strict Bauhaus economy: geometric primitives, disciplined grid logic, and purpose-led typography. Preserve functional clarity and asymmetrical balance while keeping the style portable across subjects beyond any single poster message.',
+        'Apply Bauhaus poster economy to any input: grid-governed primitives, primary blocks, asymmetric balance, diagonal typographic tension, and matte functional clarity should make purpose visible without requiring school posters, readable type, furniture, buildings, or one message.',
     },
   },
   {
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups',
       creative_brief:
-        'Keep this preset rooted in screenprint gig-poster grammar: limited spot colors, overprint logic, and tactile registration imperfections should define identity beyond any specific band reference.',
+        'Apply screenprint gig-poster grammar to any input: limited spot colors, overprint logic, distressed borders, squeegee drag, headline-weight shapes, and tactile registration drift should create live-event energy without requiring bands, venues, instruments, readable typography, or posters.',
     },
   },
   {
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Majestic, nostalgic, civic-romantic',
       key_features: 'Serif titling, horizontal strata, landmark silhouette simplification',
       creative_brief:
-        'Translate landscape into iconic poster forms: layered silhouettes, limited inks, and strong typographic framing. Keep the WPA travel-poster spirit while avoiding dependence on one specific landmark composition.',
+        'Apply WPA travel-poster screenprint grammar to any input: simplified landmark-like silhouettes, horizon strata, limited earth-tone inks, flat scenic banding, and civic nostalgia should create poster majesty without requiring national parks, mountains, titles, specific landmarks, or travel ads.',
     },
   },
   {
@@ -329,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Countercultural, ecstatic, sensory-saturated',
       key_features: 'Swirling typographic masses, radial waves, vibrating color adjacency',
       creative_brief:
-        'Treat typography as image and perception effect. Build high-impact psychedelic compositions through warping, chromatic clash, and pattern rhythm while keeping the style reusable beyond any specific event or location context.',
+        'Apply 60s psychedelic poster grammar to any input: liquid warped forms, vibrating complementary color, radial waves, dense pattern rhythm, and screenprint ink overlap should disrupt perception without requiring band names, concerts, readable typography, faces, or event posters.',
     },
   },
   {
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rebellious, absurdist, provocative',
       key_features: 'Visible seams, torn edges, fragment clash composition',
       creative_brief:
-        'Build meaning from collision: juxtapose mismatched found fragments without smoothing continuity. Preserve visible cut seams, halftone textures, and intentional scale/light contradictions to keep the Dada montage language unmistakable and adaptable.',
+        'Apply Dada photomontage collage to any input: hard scissor seams, mismatched fragments, halftone wear, source-light contradiction, and abrupt scale discontinuity should create conceptual friction without requiring human bodies, newspapers, manifestos, politics, or fixed found-image scenes.',
     },
   },
   {
@@ -367,7 +367,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Friendly, approachable, optimistic',
       key_features: 'Abstract human forms, geometric props, flat compositional hierarchy',
       creative_brief:
-        'Keep figures abstract, accessible, and instantly legible through flat geometry and simplified proportion. Maintain Corporate Memphis visual familiarity while avoiding over-specific narrative framing so assets stay reusable across product contexts.',
+        'Apply minimalist vector character grammar to any input: flat geometry, simplified proportion, bright accessible color, soft blobby morphology, and modular shape hierarchy should stay UI/editorial-ready without requiring office people, product scenes, charts, apps, or corporate storytelling.',
     },
   },
   {
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Action, plan, pre-vis intensity, production hustle',
       key_features: 'Frame border, camera arrows, shot description',
       creative_brief:
-        'Keep this preset anchored in storyboard grammar: framing boxes, motion arrows, value-priority blocking, and shot-intent shorthand should define identity without tying to one concrete sequence.',
+        'Apply storyboard previsualization grammar to any input: framing boxes, motion arrows, value-priority blocking, camera shorthand, and shot-intent marks should communicate direction without requiring action sequences, panels of characters, captions, film scenes, or one concrete beat.',
     },
   },
   {
@@ -407,7 +407,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Vast, invisible, suspension-of-disbelief, epic silence',
       key_features: 'Horizon line, depth layering, atmospheric haze',
       creative_brief:
-        'Vastness asserts itself through atmospheric perspective, mountains dissolving into the distance like a promise receding. Light behaves with the physics of cinema, sculpting depth from haze and horizon. This is the background as protagonist, where the world itself carries the emotional weight of the story.',
+        'Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering, photobash seams, god-ray structure, haze scale, and invisible-composite realism should make world weight carry emotion without requiring mountains, landscapes, backgrounds, castles, skies, or vast scenery.',
     },
   },
   {
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy',
       creative_brief:
-        'Assemble believable concepts from heterogeneous photo sources, then unify them with selective overpaint and grading. Preserve enough source texture to retain realism while enforcing consistent lighting, scale logic, and focal readability across the composite.',
+        'Apply photobash-paintover iteration to any input: mixed-source texture logic, hard photo fragments, painted unification strokes, material seams, lasso-shape edits, and exploratory overpaint marks. Keep the workflow visible without requiring environments, robots, kitbash machinery, or a before/after scene.',
     },
   },
   {
@@ -450,7 +450,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Story beat, narrative tension, turning-point weight',
       key_features: '16:9 ratio, letterbox framing, cinematic composition',
       creative_brief:
-        'Keep this preset grounded in keyframe grammar: story-pivot composition, color-temperature emotion mapping, and cinematic focal control should define identity without hardcoding one plot beat.',
+        'Apply narrative keyframe grammar to any input: story-pivot composition, cinematic focal control, motivated light, color-temperature emotion mapping, and letterbox pressure should create turning-point weight without requiring characters, plot scenes, battles, dialogue, or a specific beat.',
     },
   },
   {
@@ -472,7 +472,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail',
       creative_brief:
-        'Capture action and weight flow in the minimum number of decisive marks. Allow overlap, correction traces, and density shifts to remain visible so the drawing records movement intent, not polished anatomy, while still preserving readable pose dynamics in a Glen Keane-inspired gestural spirit.',
+        'Apply loose gesture-sketch energy to any input: searching lines, weight shifts, elastic contours, directional force marks, erased construction ghosts, and minimal value accents. If there is no body or action, convert the main forms into gestural movement studies without requiring anatomy poses, animation frames, or characters.',
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Realism, concept, speculative design, art-department urgency',
       key_features: 'Texture clash, photo-fragment seam, value-unify grading',
       creative_brief:
-        'Preserve identity through photobash grammar: multi-source texture assembly, value/color unification, and seam-disguise compositing should define the style beyond one specific concept scene.',
+        'Apply photobash concept grammar to any input: multi-source texture assembly, perspective harmonization, seam-disguise compositing, unified grading, and silhouette cleanup should create art-direction realism without requiring environments, sci-fi concepts, vehicles, ruins, or one scene.',
     },
   },
   {
@@ -521,7 +521,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression',
       creative_brief:
-        'Preserve identity through speedpainting grammar: large-value block-ins, gestural stroke economy, and mood-prioritized form solving should define the preset without anchoring to a single sketch narrative.',
+        'Apply speedpaint concept grammar to any input: large value block-ins, gestural stroke economy, rough opacity passes, selective detail suppression, and mood-first form solving should define ideation energy without requiring landscapes, characters, thumbnails, fantasy scenes, or unfinished sketches.',
     },
   },
   {
@@ -542,7 +542,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Adventure, place, exploration wonder, threshold excitement',
       key_features: 'Scale figure, perspective grid, environmental storytelling',
       creative_brief:
-        'Define identity through environment-concept grammar: atmospheric depth, scale cues, and exploration-forward composition should carry the style without binding it to one specific level narrative.',
+        'Apply environment-concept grammar to any input: atmospheric depth, scale cues, path-guided composition, readable silhouette layering, and mood-led worldbuilding should create place-feel without requiring landscapes, ruins, level design, tiny figures, architecture, or one narrative location.',
     },
   },
   {
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, simple, CD-ROM childhood, fifth-gen warmth',
       key_features: 'Polygons, unfiltered textures, affine warping',
       creative_brief:
-        'Keep this preset rooted in low-poly constraint grammar: faceted geometry, low-res texture warping cues, and fixed-function shading simplicity should define identity beyond one console-era memory.',
+        'Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes, vertex-color ramps, affine texture cues, and fixed-function shading simplicity should create early-3D warmth without requiring games, consoles, characters, terrain, or specific polygon scenes.',
     },
   },
   {
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Variant taxonomy, functional callouts, scale references, modular part breakdown',
       creative_brief:
-        'Compare multiple prop directions within a consistent visual framework. Emphasize functional differences, material behavior, and assembly logic so design decisions can be evaluated quickly across tiers while maintaining clear handoff value for downstream modeling and illustration.',
+        'Apply prop-variant design logic to any input: functional shape families, material swaps, modular silhouettes, construction notes as graphic marks, and option-to-option progression. If no prop exists, convert the subject into useful object-design variants without requiring weapons, inventory sheets, or literal items.',
     },
   },
   {
@@ -608,7 +608,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Iterative studio workflow, design-review readiness',
       key_features: 'Silhouette matrices, swatch clusters, trim notes, color strip comparisons',
       creative_brief:
-        'Build wardrobe identity through systematic variation, not single-look finality. Pair silhouette options with textile behavior and palette alternatives so fit, readability, and character coding can be evaluated quickly across multiple production directions.',
+        'Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette swatches, accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms into fashion/costume language without requiring a model sheet, clothing catalog, or posed figure.',
     },
   },
   {
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, alive, predatory stillness, ecological tension',
       key_features: 'Silhouette, anatomical breakdown, adaptive feature',
       creative_brief:
-        'Preserve identity through eco-anatomical design grammar: adaptive morphology, habitat-driven feature logic, and high-read silhouette threat should define style beyond one monster vignette.',
+        'Apply creature-design grammar to any input: adaptive morphology, habitat-driven features, anatomical construction, predator-profile silhouette, and biological material logic should create living threat without requiring monsters, beasts, claws, fangs, horror scenes, or one creature vignette.',
     },
   },
   {
@@ -655,7 +655,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Silhouette readability sets, species variation matrices, season-state alternatives',
       creative_brief:
-        'Build foliage as a modular visual vocabulary for environment design. Prioritize silhouette distinction at gameplay/read distance, while preserving material and seasonal variation so vegetation sets remain flexible across biome mood and art-direction targets, with Hayao Miyazaki-influenced warmth in shape rhythm and ecological mood.',
+        'Apply foliage-design-kit logic to any input: branching rhythms, leaf-shape families, botanical silhouettes, texture clusters, color swatches, and growth-pattern variants. If no plants exist, translate the subject into organic growth vocabulary without requiring a garden, forest, or plant catalog.',
     },
   },
   {
@@ -676,7 +676,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Valuable, useful, item-card significance, inventory worth',
       key_features: 'Isolated, orthographic view, material breakdown',
       creative_brief:
-        'Define this preset through prop-sheet grammar: isolated presentation, material-history cues, and utility-read composition should carry identity beyond one specific item lore.',
+        'Apply prop-design presentation grammar to any input: isolated silhouette, material-history cues, orthographic clarity, callout-friendly edges, and utility-read composition should create asset significance without requiring RPG items, weapons, inventory cards, labels, or fixed lore.',
     },
   },
   {
@@ -698,7 +698,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast',
       creative_brief:
-        'Build character and prop identity from pure outer shape before adding detail. Keep each variant legible at thumbnail scale through disciplined value grouping, strong contour contrast, and intentional proportion shifts, following a Feng Zhu-style high-iteration design cadence.',
+        'Apply thumbnail-silhouette exploration to any input as a high-read design language: small-value shapes, bold figure-ground separation, multiple scale reads, simplified masses, and quick ideation marks. If characters or props exist, iterate them; otherwise convert the prompt into abstract silhouette families without requiring a character sheet, grid, or prop lineup.',
     },
   },
   {
@@ -727,7 +727,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina',
       creative_brief:
-        'Prioritize cartographic language as style: ornamental navigation marks, disciplined icon systems, and tactile print-era texture should define the image independently of any specific fictional place.',
+        'Apply illustrated world-map/carto graphic style to any input: parchment texture, route marks, contour coastlines, inset cartouches, rhumb-line geometry, terrain icons, and aged ink. If no geography exists, turn the subject into an abstract cartographic system without requiring a fictional place, compass centerpiece, readable labels, or literal map accuracy.',
     },
   },
   {
@@ -750,7 +750,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Big-shape hierarchy, focal light anchor, layered recession planes, thumbnail legibility',
       creative_brief:
-        'Establish believable world scale quickly through large compositional masses and atmospheric depth cues. Keep detail intentionally suppressed so light direction, silhouette hierarchy, and distance layering carry the full environmental read at small viewing sizes, blending Feng Zhu-style blockout efficiency with James Gurney-like atmospheric logic.',
+        'Apply rough environment-pass rendering to any input: broad value blocking, atmospheric depth, macro-shape staging, haze layers, painterly edge economy, and quick world-building texture. If no place exists, convert the prompt into environmental mood abstraction without requiring a landscape, building, or location.',
     },
   },
   {
@@ -771,7 +771,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Smart, plan, drafting-table focus, patent-office gravity',
       key_features: 'Measurements, dimension lines, grid sub-base',
       creative_brief:
-        'Define this preset by schematic-blueprint grammar: orthographic projection, measurement hierarchy, and title-block drafting structure should carry identity beyond any single mechanical design.',
+        'Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy, exploded-view logic, grid sub-base, and white technical linework should create drafting authority without requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.',
     },
   },
   {
@@ -792,7 +792,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing',
       creative_brief:
-        'Explore broad morphological directions through silhouette only. Keep variants scale-consistent and formally distinct so comparative review can isolate the strongest proportion, mass distribution, and negative-space logic before internal detail development.',
+        'Apply silhouette-iteration board logic to any input: black-shape variants, negative-space deltas, proportion experiments, readable thumbnails, and design exploration pacing. If no character or creature exists, translate the subject into abstract silhouette options without requiring a grid, lineup, or figure design.',
     },
   },
   {
@@ -820,7 +820,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology',
       creative_brief:
-        'Treat this preset as a lighting-grammar engine: keep composition stable and let emotional identity emerge from controlled pass-to-pass illumination decisions, not from narrative scene changes.',
+        'Apply lighting-scenario pass logic to any input: same-form relighting, rim-light options, bounce color, shadow-temperature studies, exposure variation, and cinematic value planning. It should work on subjects, products, spaces, or abstractions without requiring a scene matrix or narrative location.',
     },
   },
   {
@@ -841,7 +841,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tech, info, augmented awareness, mission-ops focus',
       key_features: 'Floating, thin rule-lines, data readout',
       creative_brief:
-        'Keep this preset defined by HUD grammar: translucent data layering, diegetic readouts, and functional vector hierarchy should carry identity beyond any single mission UI layout.',
+        'Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI text.',
     },
   },
   {
@@ -864,7 +864,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-frame mood continuity, temperature mapping, depth via fog stratification',
       creative_brief:
-        'Use light progression as the narrative engine. Build a sequence where palette temperature, shadow character, and atmospheric density shift coherently across time, allowing mood transitions to read instantly even in simplified, low-detail environment passes.',
+        'Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys, atmospheric transitions, and cinematic color continuity. If there is no environment, turn the prompt into a color-script abstraction without requiring location panels, story beats, or a film scene.',
     },
   },
   {
@@ -891,7 +891,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction',
       creative_brief:
-        'Keep identity in modular isometric grammar: fixed-angle spatial logic, tile-grid coherence, and readable system layering should transfer across subjects beyond any particular city-simulator reference.',
+        'Apply modular isometric game-art grammar to any input: fixed-angle spatial logic, tile-grid coherence, zone-based color, toy-scale abstraction, and system readability should transfer across subjects without requiring cities, buildings, simulation UI, roads, or game maps.',
     },
   },
   {
@@ -911,7 +911,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Clinical, exact, instruction-driven',
       key_features: 'Multi-view orthos, dimension strings, labeled leaders, scale references',
       creative_brief:
-        'Communicate intent for downstream modeling and production without stylistic noise. Organize views, dimensions, and annotations into a strict hierarchy so structural decisions, part relationships, and proportional constraints remain immediately actionable.',
+        'Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require readable dimensions, machinery, weapons, vehicles, or a literal product schematic.',
     },
   },
   {
@@ -921,7 +921,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final',
     style: {
-      aesthetic: 'Tiered weapon progression sheet emphasizing upgrade readability',
+      aesthetic: 'Tiered equipment progression sheet emphasizing upgrade readability',
       form_and_line: 'Stable base silhouette with controlled complexity increase per tier',
       color_palette:
         'Structured rarity progression from muted utilitarian to luminous high-tier accents',
@@ -933,7 +933,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline',
       creative_brief:
-        'Show advancement through controlled visual deltas rather than silhouette replacement. Keep core identity stable while escalating materials, ornament, and energy cues so each tier feels earned, distinct, and instantly rank-readable in UI and gameplay contexts.',
+        'Apply weapon-tier progression language to any input: upgrade deltas, rarity materials, silhouette escalation, modular attachments, and increasingly ornate construction. If no weapon or equipment exists, convert the subject into tiered design evolution without requiring weapons, game inventory UI, or readable labels.',
     },
   },
   {
@@ -952,7 +952,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rebellious, simple, urban-dissident energy, unauthorized truth',
       key_features: 'Bridges, cutout connections, stencil registration',
       creative_brief:
-        'Preserve identity through protest-stencil grammar: bridge-supported cutouts, single-ink high-contrast silhouettes, and fast unauthorized wall readability should define the style without referencing any named artist.',
+        'Apply protest-stencil print grammar to any input: bridged cutouts, hard one-ink silhouettes, overspray halos, poster-paper grain, registration slippage, and urgent negative-space compression. Preserve the stencil language without requiring slogans, readable text, political scenes, walls, crowds, or any named artist imitation.',
     },
   },
   {
@@ -971,7 +971,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ceremonial, classic, literate, archival quietness',
       key_features: 'Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing',
       creative_brief:
-        'Build form through disciplined stroke choreography. Emphasize contrast between razor hairlines and saturated broad strokes, preserving ink-flow dynamics and taper quality. Keep compositions balanced and breathable so calligraphic motion remains the primary carrier of identity.',
+        'Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink pooling, tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form through stroke choreography without requiring writing, manuscripts, letters, signatures, or archival props.',
     },
   },
   {
@@ -991,7 +991,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Strong vertical columns, broken curves, tight spacing cadence, serifed terminals',
       creative_brief:
-        'Treat lettering as constructed architecture. Preserve strict nib-angle discipline, dense vertical cadence, and carefully measured spacing to maintain authority and rhythm. Apply ornament sparingly and structurally so decorative elements support, rather than dilute, blackletter clarity.',
+        'Apply blackletter calligraphic architecture to any input: nib-angle rhythm, vertical compression, thorned terminals, dense counters, ink pooling, ruled spacing, and manuscript-like texture. If the prompt has no text, translate forms into ornamental blackletter strokes without requiring readable words, scrolls, religious manuscript scenes, or literal documents.',
     },
   },
   {
@@ -1012,7 +1012,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Official, bureaucratic, desk-clerk authority, document-weight',
       key_features: 'Border, stamp frame, ink-fade authenticity',
       creative_brief:
-        'Preserve identity through stamp-impression grammar: uneven pressure, ink-starvation artifacts, and frame-locked official mark structure should define style beyond any single document context.',
+        'Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps, frame-locked geometry, red-black stamp-pad economy, and official-mark roughness should define style without requiring documents, offices, seals, labels, bureaucracy scenes, or readable text.',
     },
   },
   {
@@ -1033,7 +1033,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Obsessive, soft, pointillist trance, meticulous calm',
       key_features: 'Dots only, stipple gradient, point-by-point tone',
       creative_brief:
-        'Preserve identity through stipple grammar: point-density value modeling, dot-cluster edge control, and stroke-less tonal construction should define the style beyond one tattoo or illustration context.',
+        'Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges, stroke-less tonal construction, slow monochrome accumulation, and meditative texture should define form without requiring tattoos, skin, portraits, animals, or fixed illustration context.',
     },
   },
   {
@@ -1054,7 +1054,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bold, commercial, screenprint bazaar, poster-shop energy',
       key_features: 'Layer overlap, color misregistration, halftone rosette',
       creative_brief:
-        'Preserve identity through serigraph-pop grammar: repeatable flat layers, misregistration offsets, and halftone process texture should define style without depending on one celebrity motif.',
+        'Apply pop-serigraph grammar to any input: repeatable flat layers, mesh-screen texture, misregistration offsets, halftone rosettes, and consumer-media color authority should create process impact without requiring celebrities, cans, products, posters, or repeat grids.',
     },
   },
   {
@@ -1074,7 +1074,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Continuous black ground, staged highlight recovery, velvety midtone transitions',
       creative_brief:
-        'Build images from darkness outward: start with an uninterrupted black matrix and carve readable form through controlled highlight recovery. Prioritize tonal choreography over line detail, preserving soft transitions, burnished focal accents, and dense shadow architecture that sustains dramatic yet elegant print depth.',
+        'Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished highlight recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms from darkness without requiring night scenes, portraits, museum prints, or fixed black-ground subjects.',
     },
   },
   {
@@ -1093,7 +1093,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Urgent, unapologetic, direct, poster-like confidence',
       key_features: 'Heavy contour weight, visible nib angle behavior, permanent-ink spread',
       creative_brief:
-        'Prioritize commitment and graphic force over precision. Use decisive chisel strokes, broad black masses, and controlled bleed artifacts to create a no-undo visual language. Keep detail economy intentional so marker pressure, direction, and saturation define character.',
+        'Apply permanent-marker grammar to any input: chisel-tip strokes, broad black masses, fiber soak, edge feathering, back-bleed ghosts, and no-undo commitment should create graphic force without requiring posters, graffiti, labels, signage, or fixed sketch subjects.',
     },
   },
   {
@@ -1112,7 +1112,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nocturnal, kinetic, urban, improvised immediacy',
       key_features: 'Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency',
       creative_brief:
-        'Focus on movement and signature identity. Build letterforms from uninterrupted gestural flow, preserving cap-behavior artifacts like overspray, taper bursts, and drips. Keep compositions energetic and readable within a compressed footprint, emphasizing rhythm over polish.',
+        'Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes, cap-width variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge noise. If the prompt has no text, convert its main shapes into gestural tag-like contours and motion accents without requiring readable words, names, walls, signatures, or an urban scene.',
     },
   },
   {
@@ -1131,7 +1131,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Somber, introspective, gothic-romantic, haunted stillness',
       key_features: 'Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast',
       creative_brief:
-        'Treat tone as the primary drawing language. Use granular gradients to model volume, letting contours stay secondary and partially submerged in shadow. Keep transitions misted and cohesive, with controlled grain visibility that conveys handcrafted etch character without sacrificing legibility.',
+        'Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity, misted tone stacking, submerged contours, and soft shadow pools should make atmosphere primary without requiring gothic scenes, landscapes, figures, ruins, or fixed somber subjects.',
     },
   },
   {
@@ -1151,7 +1151,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Nested outlines, dimensional drop logic, connector lattice, readable abstraction',
       creative_brief:
-        'Construct a full piece as layered typographic architecture. Balance complexity and legibility through clear hierarchy: primary letter mass, secondary connectors, and tertiary effects. Use color blocking, bevel cues, and arrow rhythm to create depth-rich compositions that stay coherent at wall scale.',
+        'Apply wildstyle graffiti-piece construction to any input as layered typographic architecture: interlocking contours, arrows, bevels, bubble fills, cutback highlights, aerosol gradients, fat outlines, and paint buildup. If there are no letters, transform the subject silhouette into abstract letterform structures without requiring readable words, a mural wall, a train, or a street scene.',
     },
   },
   {
@@ -1173,7 +1173,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy, blue, alternative-process magic, Victorian science',
       key_features: 'Blue only, contact shadow, silhouette photogram',
       creative_brief:
-        'Keep this preset anchored in cyanotype grammar: UV-contact silhouettes, Prussian-blue wash behavior, and chemistry-led tonal emergence should define style beyond one botanical arrangement.',
+        'Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes, soft exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define style without requiring botanicals, photograms, objects on paper, science props, or Victorian scenes.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

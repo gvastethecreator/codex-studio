@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-044
 packId: pack_11
-name: Pop Art
+name: Silkscreen Icon Impact
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,17 +12,23 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Pop Art silkscreen language (Andy Warhol influence)
-  form_and_line: Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges
-  color_palette: High contrast neon, Marilyn-blonde, tomato-soup red, electric-chair yellow, mickey-mouse black, offset-CMYK
-  lighting_setup: Flat, silkscreen-exposure, photo-stencil light, pop-shop fluorescence, studio-flash
-  material_texture: Screenprint, ink-push-through canvas, squeegee-drag texture, canvas-tooth underlay, offset-print halftone
-  render_quality: High-contrast mass-media print rendering with serial repetition logic
-  spatial_distortion: Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment
-  atmosphere: Ironic, bold, Campbell's-soup nostalgia, celebrity-worship, mechanical-reproduction
-  key_features: Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout
+  aesthetic: >-
+    Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic
+    repetition
+  form_and_line: Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic
+  color_palette: Tomato red, electric yellow, cyan blocks, hot pink, black ink, cream paper, deliberately offset CMYK
+  lighting_setup: Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis
+  material_texture: Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss
+  render_quality: Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial
+  spatial_distortion: Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment
+  atmosphere: Commercial, ironic, loud, iconic, mass-produced, playful
+  key_features: Halftone fields, CMYK separation, registration slips, posterized shadow, repeated icon blocks, ink bleed
   creative_brief: >-
-    Use Warhol-informed serial repetition, halftone structure, and channel-shifted silkscreen color blocks to create iconic pop impact. Keep imagery reproducible, high-contrast, and mechanically printed in character.
+    Make the subject feel mechanically reproduced and culturally amplified: halftone, flat commodity color, registration
+    errors, and serial pop rhythm should carry the style. Avoid forcing celebrity portraits, soup cans, comic panels, or
+    named artworks. Apply Silkscreen Icon Impact as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - subtle
 assets:

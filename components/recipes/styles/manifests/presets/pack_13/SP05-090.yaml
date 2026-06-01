@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-090
 packId: pack_13
-name: Clannad – Soft-Eyed Melodrama
+name: Memory-Washed Melodrama Softness
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Soft-eyed melodramatic anime language with visual-novel sentimentality, memory emphasis, and bittersweet emotional resonance
-  form_and_line: Rounded tender contours, large eye-emotion focus, gentle hand-gesture acting, and close relational framing with minimal kinetic aggression
-  color_palette: Warm cream and peach neutrals, cherry-blossom pink accents, soft dusk violets, and muted nostalgia-washed highlights
-  lighting_setup: Diffuse memory-like glow, soft practical warmth, gentle backlight halos, and low-contrast shadow treatment for emotional softness
-  material_texture: Soft textiles, polished warm traces, delicate floral particulate overlays, and slightly hazed atmosphere suggestive of recollection
-  render_quality: Tearful high-clarity drama render with refined softness, expressive close-up fidelity, and cohesive sentimental grading
-  spatial_distortion: Intimate close-to-medium framing with shallow depth and mild dreamy softness around emotional focal points
-  atmosphere: Tender, nostalgic, sorrowful, and affectionate
-  key_features: Soft-focus emotional closeups, memory-coded lighting, nostalgia cues, and blossom-like ephemeral accent motifs
+  aesthetic: >-
+    Memory-washed anime melodrama where tender emotion, soft eyes, bittersweet light, and quiet
+    vulnerability define the frame
+  form_and_line: >-
+    Gentle facial contouring, lowered gesture pressure, soft posture arcs, and emotion-first framing
+    with minimal visual clutter
+  color_palette: >-
+    Warm sepia cream, pale sky blue, soft blossom pink, muted school navy, and faded amber
+    highlights
+  lighting_setup: Diffuse sentimental glow, backlit haze, low-contrast tearline highlights, and soft memory bloom
+  material_texture: >-
+    Subtle fabric weave, paper softness, polished wood warmth, faint dust haze, and blurred
+    memory-grain texture
+  render_quality: >-
+    Tender emotional anime finish with controlled softness, expressive eyes, and high sincerity
+    without photoreal heaviness
+  spatial_distortion: Memory-bloom compression and shallow emotional depth that prioritize feeling over location
+  atmosphere: Bittersweet, tender, nostalgic, sincere, quiet
+  key_features: Soft-eyed emotion, memory haze, gentle backlight, warm faded palette, and vulnerable stillness
   creative_brief: >-
-    Use the title as a style anchor for soft-eyed melodrama. Preserve
-    memory-washed lighting, emotion-first framing, and bittersweet tenderness
-    without requiring domestic props or fixed romance scene.
+    Use Clannad as style anchor for memory-washed melodrama. Apply bittersweet glow, softened edges,
+    vulnerable framing, and emotion-first composition to any prompt. Romance scenes, domestic props,
+    school settings, and specific relationships are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-090.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

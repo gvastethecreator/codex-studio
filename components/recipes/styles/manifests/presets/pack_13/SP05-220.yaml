@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-220
 packId: pack_13
-name: Sketchbook Full Colors - Stray Cat Afternoon
+name: Observational Watercolor Drift
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Sketchbook Full Colors title anchor translated into quiet observational calm, watercolor-soft afternoons, tiny noticing, and nearly plotless comfort
-  form_and_line: Gentle sketchbook contours, drifting motion-trace cues, observational still-life balance, and soft curiosity-led spacing
-  color_palette: Watercolor creams, dusty pastel fields, warm amber afternoon tones, muted foliage greens, and soft ink accents
-  lighting_setup: Slow afternoon sidelight, soft ambient bleed, and diffuse cloud-filtered illumination with minimal dramatic pressure
-  material_texture: Watercolor wash grain, notebook paper tooth, stucco-like wear, wooden patina, and soft-fiber tactility
-  render_quality: Meditative observational rendering with minimal plot pressure and high comfort readability
-  spatial_distortion: Light vignette-like focus drift to prioritize quiet noticing over dramatic depth
-  atmosphere: Drifting, soft, observant, comforting
-  key_features: Observational stillness, watercolor softness, tiny detail noticing, warm afternoon drift, gentle curiosity
+  aesthetic: >-
+    Observational watercolor anime calm where tiny noticing, gentle curiosity, nearly plotless
+    comfort, and afternoon drift make the subject quiet
+  form_and_line: >-
+    Soft sketch contours, drifting motion traces, still-life balance, curiosity-led spacing, and
+    minimal narrative pressure
+  color_palette: >-
+    Watercolor cream, dusty pastel, amber afternoon, muted foliage green, soft ink accents, and pale
+    sky wash
+  lighting_setup: Slow sidelight, cloud-filtered ambient, diffuse warm bleed, and minimal dramatic contrast
+  material_texture: >-
+    Watercolor grain, notebook paper tooth, stucco wear, wood patina, soft fiber, and translucent
+    wash edges
+  render_quality: >-
+    Meditative anime finish with minimal plot pressure, gentle detail fidelity, and comfort-first
+    readability
+  spatial_distortion: Light vignette focus drift and soft observational cropping around any subject
+  atmosphere: Drifting, soft, observant, comforting, quiet
+  key_features: >-
+    Tiny noticing, watercolor softness, warm afternoon drift, still-life balance, gentle curiosity,
+    and minimal narrative demand
   creative_brief: >-
-    Use Sketchbook Full Colors as a style anchor for observational watercolor
-    calm: tiny noticing, gentle curiosity, and minimal narrative comfort should
-    transfer without requiring art club, cats, town backdrops, or sketchbook
-    props.
+    Use Sketchbook Full Colors as style anchor for observational watercolor drift. Any prompt should
+    become quiet noticing: paper grain, soft wash, small details, and warm afternoon curiosity. Art
+    clubs, cats, town backdrops, and sketchbook props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-220.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

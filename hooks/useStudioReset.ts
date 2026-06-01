@@ -5,7 +5,6 @@ import { startViewTransition } from '../utils/transitionUtils';
 
 const DEFAULT_RESET_LOCAL_STORAGE_KEYS = [
   'generation-config',
-  'isBackgroundEnabled',
   'user-wallet-balance',
 ] as const;
 

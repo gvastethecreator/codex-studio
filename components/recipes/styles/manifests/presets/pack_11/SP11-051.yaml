@@ -12,17 +12,20 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Fresh bread and pastries, boulangerie-window, artisan-crust, early-morning-bake, yeast-sunrise
+  aesthetic: Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow
   form_and_line: Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers
   color_palette: Golden Brown, crust-mahogany, crumb-cream, egg-wash amber, rye-earth, sesame-toast, butter-yellow
   lighting_setup: Warm yellow, bakery-window morning, incandescent-gold, crust-sheen catch, steam-haze diffusion
   material_texture: Flour, flaky crust, dusting-flour, shatter-crust, air-pocket honeycomb, butter-laminate, steam-gelatinized starch
   render_quality: Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual
   spatial_distortion: Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash
-  atmosphere: Comfort, smell, bakery-dawn, yeast-aroma, crust-tap satisfaction, carb-comfort
+  atmosphere: Comfort, warmth, yeast-aroma, crust-tap satisfaction, carb-comfort
   key_features: Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring
   creative_brief: >-
-    Highlight artisan bread cues through crust scoring, crumb honeycomb structure, and warm bakehouse color temperature. Keep the visual language focused on texture-rich freshness and handcrafted baking detail across varied pastry forms.
+    Translate the input through artisan bakery language: crust scoring, crumb
+    honeycomb structure, flour dust, laminated layers, steam haze, and warm
+    bakehouse color temperature. Keep texture-rich freshness, without requiring
+    a window display, bakery room, or specific pastry.
 avoidRules:
   - burnt
 assets:

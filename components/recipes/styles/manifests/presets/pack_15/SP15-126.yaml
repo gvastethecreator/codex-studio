@@ -12,14 +12,14 @@ visualDna:
   color_palette: Bubblegum coral, aqua, and white foam.
   lighting_setup: Bright diffused daylight with underwater bubble glints.
   material_texture: Coral aggregate, translucent resin, and wet stone.
-  render_quality: Cheerful coastal concept with crisp courtyard geometry.
+  render_quality: Cheerful coastal render with crisp enclosure geometry and bubble-reef softness.
   spatial_distortion: Inward pull framed by reefs, bubbles, and soft marine domes.
   atmosphere: Playfulness, calm, and close-knit aquatic community.
   key_features: Bubble reefs, courtyard-ring motifs, shell benches, and soft reef arch glow.
   creative_brief: >-
-    Preserve bubble reef-courtyard grammar as a reusable style system:
-    inward coral-resin enclosure geometry, buoyant micro-community intimacy,
-    and playful aquatic shelter should remain coherent across subjects.
+    Cushion the input inside bubble reef shelter: coral-pink dome clusters,
+    aqua reef arches, white-foam glints, translucent resin walls, and shell bench
+    curves make any subject feel buoyant, close-knit, and protected.
 avoidRules: [photoreal, harsh-industrial, sewage, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-126.webp }
 attributes:

@@ -1,4 +1,4 @@
-import { STYLE_DEFAULT_IMAGES } from '../../lib/recipeAssetCatalog';
+import { resolveStyleDefaultImage } from '../../lib/recipeAssetCatalog';
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 import { compareStylePackIdsForDisplay } from './styles/packOrdering';
 import {
@@ -8,26 +8,18 @@ import {
 } from './stylePresetManifests';
 
 type ManifestGlobLoader = () => Promise<unknown>;
-type ImportMetaGlobFn = (
-  pattern: string,
-  options: { query: '?raw'; import: 'default'; eager: false },
-) => Record<string, ManifestGlobLoader>;
 
-function safeImportMetaGlob(pattern: string): Record<string, ManifestGlobLoader> {
-  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
-  if (typeof glob === 'function') {
-    return glob(pattern, {
-      query: '?raw',
-      import: 'default',
-      eager: false,
-    });
-  }
-  return {};
-}
+const packManifestFiles = import.meta.glob('./styles/manifests/packs/*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: false,
+}) as Record<string, ManifestGlobLoader>;
 
-const packManifestFiles = safeImportMetaGlob('./styles/manifests/packs/*.yaml');
-
-const presetManifestFiles = safeImportMetaGlob('./styles/manifests/presets/**/*.yaml');
+const presetManifestFiles = import.meta.glob('./styles/manifests/presets/**/*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: false,
+}) as Record<string, ManifestGlobLoader>;
 
 function hasManifestGlobs() {
   return Object.keys(packManifestFiles).length > 0 && Object.keys(presetManifestFiles).length > 0;
@@ -93,7 +85,7 @@ let catalogCache: LoadedStylePresetCatalog | null = null;
 let catalogPromise: Promise<LoadedStylePresetCatalog> | null = null;
 
 function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
-  const defaultImageExists = Boolean(STYLE_DEFAULT_IMAGES[preset.id]);
+  const defaultImageExists = Boolean(resolveStyleDefaultImage(preset.id));
   return {
     ...preset,
     assets: {

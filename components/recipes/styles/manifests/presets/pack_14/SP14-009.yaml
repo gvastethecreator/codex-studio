@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-009
 packId: pack_14
-name: Abyssal Chapel Leviathan
+name: Abyssal Leviathan Chapel
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Maritime mythic noir with cathedral-scale sea dread.
-  form_and_line: Vertical nave-like hull interiors and colossal curved anatomy cues.
+  aesthetic: Maritime mythic noir with cathedral-scale pressure, abyssal devotion, and leviathan mass.
+  form_and_line: Vertical nave-like ribs, colossal curved anatomy cues, tidal arches, and altar-core pull.
   color_palette: Abyssal teal, oxidized bronze, and moonlit bone.
   lighting_setup: Bioluminescent shafts filtered through submerged stained glass.
   material_texture: Salt-scarred metal, wet basalt, barnacled stone, and ritual silk.
   render_quality: Cinematic key art with crisp hierarchy and premium atmospheric depth.
-  spatial_distortion: Tidal perspective tunnels that pull toward a submerged altar core.
+  spatial_distortion: Tidal perspective tunnels that pull toward a submerged sacred core without requiring a chapel.
   atmosphere: Sacred terror, pressure, and silent devotion to the unknown.
-  key_features: Flooded chapel aisles, leviathan silhouette, submerged reliquary shrine.
-  creative_brief: A drowned chapel inside a leviathan-scale ruin where worship and deep-ocean horror become indistinguishable.
+  key_features: Flooded aisle rhythm, leviathan-scale silhouette cues, submerged reliquary glow, barnacled stone, and abyssal teal pressure.
+  creative_brief: >-
+    Drown the input in abyssal leviathan chapel pressure: teal darkness,
+    oxidized bronze ribs, moonlit bone highlights, submerged stained-glass
+    shafts, and colossal anatomy curves should make any subject sacred and
+    oceanic without requiring a chapel, monster body, altar, ruin, or underwater setting.
 avoidRules: [photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-009.webp }
 attributes:
   negativePrompt: photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

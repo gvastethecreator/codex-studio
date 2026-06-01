@@ -4,8 +4,13 @@ packId: pack_15
 name: Mangrove Lift City
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: Coastal resilience solarpunk with amphibious civic elevation, root-network logic, and tidal reciprocity.
   form_and_line: Elevated walkway rhythm, buoyant modular bands, and branching mangrove geometry.
@@ -17,21 +22,33 @@ visualDna:
   atmosphere: Resilient tranquility, civic ingenuity, and ecological reciprocity.
   key_features: Amphibious module motifs, mangrove filtration belts, tidal mobility corridors.
   creative_brief: >-
-    Preserve mangrove lift-city grammar as a reusable style language:
-    amphibious civic elevation, root-network filtration logic, and tidal
-    continuity should remain stable across subjects without requiring a city,
-    walkways, platforms, or literal mangroves.
-avoidRules: [photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-012.webp }
+    Lift the input through amphibious root logic: branching support lines, buoyant bands, tidal blue-gray reflections,
+    and salt-tolerant woven membranes. Cities, walkways, platforms, or mangroves can reinforce the anchor, but the style
+    is adaptive elevation and reciprocal filtration. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - apocalyptic-flood
+  - militarized-seawall
+  - dirty-smog
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-012.webp
 attributes:
   negativePrompt: photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

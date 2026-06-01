@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-228
 packId: pack_05
-name: Casshern Sins - White Wasteland Robot Elegy
+name: White Machine Elegy
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,30 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: White wasteland robot elegy, with pale entropy, lonely heroism, post-collapse silence, and machine mortality.
-  form_and_line: Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic action lines.
+  aesthetic: >-
+    Pale machine elegy with enamel decay, post-collapse silence, lonely contrast, worn synthetic
+    surfaces, and dust-haze mortality
+  form_and_line: >-
+    Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic
+    action lines.
   color_palette: Chalk white, ash gray, dead black, pale blue, rust whisper orange, and faint gold memory.
   lighting_setup: Bleached overcast, soft rim isolation, dust diffusion, and almost-shadowless elegiac light.
   material_texture: Powder dust, worn enamel, chipped metal, dry polymer, wind-erased grain, and soft cel haze.
-  render_quality: High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic loneliness.
-  spatial_distortion: Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland staging.
+  render_quality: >-
+    High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic
+    loneliness.
+  spatial_distortion: >-
+    Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland
+    staging.
   atmosphere: Elegiac, pale, lonely, mythic
-  key_features: Pale entropy, elegant machinery, lonely contrast, dust silence, machine elegy.
+  key_features: >-
+    Pale entropy, worn enamel, elegant machinery, dust silence, lonely contrast, and machine
+    mortality
   creative_brief: >-
-    Make any prompt feel like a pale machine elegy: use white silence, worn
-    enamel, dust haze, and lonely contrast without requiring robots, ruins,
-    wastelands, or combat against entropy.
+    Use Casshern Sins as style anchor for white machine elegy. Any prompt should feel pale, silent,
+    synthetic, lonely, and worn by time. If figure or object exists, suggest enamel machine surfaces,
+    worn synthetic joints, or robot elegy; ruins, wastelands, heroism, and combat against entropy
+    remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +52,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-228.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

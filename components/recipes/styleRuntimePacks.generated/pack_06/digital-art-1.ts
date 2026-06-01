@@ -24,7 +24,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Polished',
       key_features: 'Layered polish, crisp focal rendering, editable-feeling control',
       creative_brief:
-        'Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.',
+        'Apply digital-painting workflow to any input: pressure-sensitive brushwork, layered corrections, sampled color precision, soft undo-polished gradients, and clean iterative finish. Keep weightless painterly control without requiring fantasy characters, concept sheets, tablet UI, or visible layers.',
     },
   },
   {
@@ -46,7 +46,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expansive, coherent, cinematic',
       key_features: 'Seamless blend',
       creative_brief:
-        'Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless atmosphere. Cinematic light unifies fragments that were never together, making scale, depth, and continuity feel inevitable. The image convinces through coherence, not through requiring environments, skies, architecture, or vistas.',
+        'Apply matte-painting extension logic to any input: phototexture integration, painted continuity, atmospheric depth, cinematic color matching, and seamless scale expansion. Keep VFX-believable cohesion without requiring skies, architecture, vistas, plate photography, or environment-only subjects.',
     },
   },
   {
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic, storytelling',
       key_features: 'Focal point detail',
       creative_brief:
-        'Mood precedes detail, atmosphere driving form rather than following it, the image designed to test a visual direction before final production. Photobash fragments meet painterly strokes in a hybrid language of readable possibility. The image proposes rather than concludes, using cinematic light to make any subject feel designed and production-ready.',
+        'Apply concept-art development language to any input: mood-first lighting, readable design intent, photobash-paint hybrid texture, production-ready shape decisions, and exploratory polish. Keep visual-direction utility without requiring characters, environments, callouts, model sheets, or story beats.',
     },
   },
   {
@@ -88,7 +88,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Simple, clean',
       key_features: 'Triangles',
       creative_brief:
-        'The mesh is visible, every triangle a declaration that smoothness is a lie we tell through polygon count. Flat shading refuses to pretend curvature, each facet catching light with the honesty of origami. The image finds beauty in the geometry itself, the wireframe barely hidden beneath the surface.',
+        'Apply low-poly art to any input: visible triangular facets, flat-shaded planes, simplified geometry, crisp ambient occlusion, and origami-like light breaks. Keep polygon beauty without requiring game terrain, animals, landscapes, or asset turntables.',
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dynamic, fast',
       key_features: 'Loose strokes',
       creative_brief:
-        'Gestural strokes land with the urgency of an idea fighting its own evaporation, form suggested rather than defined, edges loose with velocity. The brush moves at the speed of thought — faster than craft, slower than instinct. The image breathes with the confidence of an artist who knows that finish is the enemy of life.',
+        'Apply speedpaint energy to any input: broad gestural strokes, loose edges, compressed detail, fast value blocking, visible brush shortcuts, and idea-first confidence. Keep rapid concept vitality without requiring fantasy key art, YouTube process frames, characters, or unfinished sketch borders.',
     },
   },
   {
@@ -129,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Organized, toy-like',
       key_features: '30 degree angle',
       creative_brief:
-        'Parallel lines never converge, perspective abandoned for a geometry where every plane receives equal attention. The subject tilts thirty degrees, revealing itself as a diorama-like construction with clean dimensional logic. Distance is measured in grid cells and stacked planes, not vanishing points or literal worlds.',
+        'Apply isometric projection to any input: parallel nonconverging lines, thirty-degree tilt, equal plane attention, stacked grid logic, and miniature dimensional clarity. Keep diagrammatic charm without requiring buildings, rooms, game maps, dioramas, or explorable worlds.',
     },
   },
   {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy',
       key_features: 'Silhouette container',
       creative_brief:
-        'Two visual systems occupy the same frame, one visible through the contours or tonal mask of the other. Interior and exterior logic collapse into one exposure, holding contradiction as composition rather than narrative. Meaning emerges from overlap, transparency, and negative space without requiring faces, forests, mountains, or human profiles.',
+        'Apply double-exposure composition to any input: tonal masking, overlapping visual fields, translucent registration drift, additive density, and negative space fusion. Keep layered memory logic without requiring faces, forests, mountains, human profiles, or portrait silhouettes.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful',
       key_features: 'Depth layers',
       creative_brief:
-        'Layers of digital paper float at different depths, drop shadows creating the illusion of physicality in a world made of zeroes. The cuts are too perfect, the edges too clean, but the conceit charms through commitment to its own fiction. The image feels like a craft project rendered by a machine that wishes it had hands.',
+        'Apply digital paper-cutout style to any input: layered flat paper planes, clean cut edges, soft drop shadows, staged depth, and machine-perfect craft illusion. Keep handmade charm simulated digitally without requiring greeting cards, landscapes, characters, or tabletop craft scenes.',
     },
   },
   {
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic',
       key_features: 'Grid alignment',
       creative_brief:
-        'Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Forms snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. Nostalgia should come from palette, dithering, tile rhythm, and crisp scale, not from game props.',
+        'Apply 16-bit pixel-art constraints to any input: intentional pixel placement, limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep hardware-era nostalgia from construction, not from forced game props, HUDs, sprites, or level scenes.',
     },
   },
   {
@@ -212,7 +212,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, cool',
       key_features: 'Sunset gradient',
       creative_brief:
-        'Neon gridlines, chrome gradients, magenta-cyan bloom, and scanline haze create a remembered future that never existed. Reflective bands and synthetic color make the image move even when still, driven by a beat implied through rhythm and glow. The style should not require sunsets, roads, cars, horizons, or specific retro props.',
+        'Apply synthwave visual language to any input: magenta-cyan bloom, neon grid rhythm, chrome gradients, scanline haze, reflective bands, and synthetic retrofuturist glow. Keep remembered-future energy without requiring sunsets, roads, cars, horizons, palm trees, or retro props.',
     },
   },
   {
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tech, code',
       key_features: 'Glyph density image, monospaced grid, terminal glow',
       creative_brief:
-        'Characters from the ASCII set assemble into image through density and contrast, each glyph functioning as a pixel-value decision. The image exists as symbol field and picture at once, but it should avoid readable words, captions, signatures, or logos. Every keystroke builds form from limited geometry and terminal-era constraint.',
+        'Apply ASCII-art construction to any input: monospaced glyph density, symbol fields as tonal pixels, terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction while avoiding readable words, captions, signatures, or logos.',
     },
   },
   {
@@ -254,7 +254,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, tech',
       key_features: 'Digital artifacts',
       creative_brief:
-        'Data corrupts beautifully, pixels displaced into RGB ghosts that haunt the wrong positions, the image tearing along algorithmic fault lines. The error becomes the aesthetic, malfunction elevated to medium, entropy as creative collaborator. The glitch reveals the structure by breaking it, truth emerging from the crash.',
+        'Apply glitch-art corruption to any input: RGB channel displacement, data tearing, compression blocks, scanline breaks, algorithmic offsets, and malfunction-as-medium structure. Keep digital failure expressive without requiring screens, hackers, cyberpunk rooms, or UI overlays.',
     },
   },
   {
@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, precise, frictionless',
       key_features: 'Infinite resolution',
       creative_brief:
-        'Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies.',
+        'Apply flat vector-art construction to any input: precise Bezier contours, deliberate anchor-point curves, solid color fills, clean geometric hierarchy, and resolution-independent edges. Keep scalable graphic clarity without requiring icons, logos, infographics, app UI, or brand marks.',
     },
   },
   {
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Clean, sharp',
       key_features: 'Triangular mesh',
       creative_brief:
-        'Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries its own tonal decision, tiny planes stitched into a unified structure. Geometry is the art; the subject is only the occasion for angular arrangement.',
+        'Apply polygon-art tessellation to any input: triangular facets, angular tonal decisions, low-resolution form memory, and flat geometric patchwork. Keep geometry as the art system without requiring portraits, animals, landscapes, or stock low-poly subjects.',
     },
   },
   {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cute, digital',
       key_features: 'Cubes',
       creative_brief:
-        'The image assembles from identical cubes, complexity emerging from simple repetition like a system growing from a single unit. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. Meaning builds from the voxel, not from any specific game, building, or landscape.',
+        'Apply voxel-art construction to any input: cubic sampling, repeated block units, stepped curves, crevice ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without requiring Minecraft worlds, terrain, buildings, or game dioramas.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

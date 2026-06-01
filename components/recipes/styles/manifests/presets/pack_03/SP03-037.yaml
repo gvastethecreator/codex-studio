@@ -20,7 +20,12 @@ visualDna:
   render_quality: Technical, form study, sculpt-review
   atmosphere: Neutral, shape focus, pure geometry
   key_features: Corner shadows, contact darkness
-  creative_brief: 'Stripped of color, texture, and direct light, the object speaks through shadow alone — soft grey gradients pool in crevices and undercuts, and contact darkness anchors forms to their plane with the gravity of proximity. The clay-white matte surface reads as a sculptor''s review pass, pure geometry assessed without the distraction of materials. The image is form study at its most honest: every curve proven by the darkness it gathers.'
+  creative_brief: >-
+    Render any input as an ambient-occlusion review pass: clay-white matte
+    surface, soft grey crevice gradients, contact darkness, undercut emphasis,
+    and geometry-first readability with color and direct light removed. Keep
+    sculptural form study without requiring a standalone object, turntable,
+    character model, or studio plane.
 avoidRules:
   - color
   - light

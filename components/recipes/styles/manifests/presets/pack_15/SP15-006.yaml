@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Collective gratitude, practical hope, and celebratory responsibility.
   key_features: Seed-swap patterning, stewardship glyph walls, crop-lineage display logic, and communal planting-table rhythm.
   creative_brief: >-
-    Preserve seed-vault festival grammar as a reusable style language:
-    circular stewardship choreography, archive-centered civic ceremony, and
-    biodiversity literacy cues should remain stable across subjects without
-    requiring crowds, banners, kiosks, tables, or a literal vault.
+    Make the input feel like biodiversity memory made visible: seed-capsule
+    nodes, lineage rings, pollinator yellow accents, linen glyph surfaces, and
+    ceremonial archive light. Crowds, banners, tables, or vault structures can
+    appear as anchors, but the style is stewardship ritual, not event staging.
 avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
 attributes:

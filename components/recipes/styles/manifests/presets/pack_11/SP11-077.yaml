@@ -20,9 +20,15 @@ visualDna:
   render_quality: Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep
   spatial_distortion: None, flat-sheet, grit-density, particle-projection, backing-plane
   atmosphere: Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience
-  key_features: Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch
+  key_features: >-
+    Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction
+    scratch
   creative_brief: >-
-    Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers.
+    Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch
+    evidence. Keep workshop material realism and roughness-grade readability as primary style drivers. Apply Sandpaper
+    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - smooth
 assets:

@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Norse raider, fjord-borne fury, shield-wall legend
+  aesthetic: Viking warrior garb, fjord-borne fury, shield-wall legend
   form_and_line: Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather
   color_palette: Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber
-  lighting_setup: Cold overcast, North-Sea grey, longhouse firelight, misty-fjord diffusion
+  lighting_setup: Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights
   material_texture: Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle
   render_quality: Rugged, dirty, saga-page authenticity, shield-wall grit
   spatial_distortion: None
-  atmosphere: Tough, cold, sea-spray resolve, mead-hall warmth, raven-flight omen
-  key_features: Beard/Braids, Thor's hammer pendant, round shield, bearded axe, fur mantle
-  creative_brief: Wolf fur matted by salt spray and the breath of northern seas, chainmail riveted by hands that knew the weight of an axe before they knew the weight of a name. Coarse wool wadmal wraps a body built for longship benches and shield-wall thunder, Thor's hammer swinging against a chest tattooed with runes that promise Valhalla to those who die with a sword in hand.
+  atmosphere: Tough, cold, sea-spray resolve, saga warmth, raven-flight omen
+  key_features: Thor-hammer pendant cues, round-shield motif, fur mantle, braid or rune detail
+  creative_brief: >-
+    Wrap the input in Norse warrior materiality: wolf fur, riveted chainmail,
+    coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber
+    warmth. Keep saga brutality without requiring beard, longship, shield wall,
+    axe, tattooed chest or specific raider body.
 avoidRules:
   - clean
   - shiny
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

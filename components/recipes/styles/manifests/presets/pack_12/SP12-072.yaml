@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Raid-racer motorizado entre catedrales en ruina, centrado en conquista de ruta y objetivos intermedios.
-  subject_treatment: Riders blindados y drones de soporte con lectura clara de función ofensiva/logística.
+  aesthetic: Gramática raid-racer motorizada con conquista de ruta, objetivos intermedios y ruina monumental polvorienta.
+  subject_treatment: Reinterpreta el input como rider blindado, drone soporte, vehículo, checkpoint o tramo de choque.
   color_and_tone: Beige polvo, rojo óxido y azul acero para separar terreno, riesgo y checkpoints.
   lighting_and_shadow: Luz filtrada por arcos colapsados que marca ventanas de tracción y salto.
   texture_and_material: Piedra erosionada, caucho de alto desgaste, metal reforzado y escombro activo.
-  camera_and_composition: Ruta de carrera con checkpoints visuales inequívocos, atajos y zonas de choque.
+  camera_and_composition: Checkpoints, atajos y zonas de choque sin exigir catedrales.
   atmosphere_and_mood: Ruidosa, veloz y de conquista territorial.
   rendering_and_quality: Seasonal action-racer gameplay art con legibilidad robusta de pacing y control de tramo.
 avoidRules:

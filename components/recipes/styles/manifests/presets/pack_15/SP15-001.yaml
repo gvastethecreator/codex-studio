@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Productive calm, collective pride, and grounded optimism.
   key_features: Tiered agro-cell patterning, gravity-fed water logic, seedling-scale repetition, and shared-harvest rhythm.
   creative_brief: >-
-    Preserve terraced sky-harvest grammar as a reusable style system: stepped
-    agro-ecology zoning, gravity-fed civic logistics, and cooperative
-    stewardship cues should remain consistent across subjects without requiring
-    crops, terraces, workers, or a literal harvest.
+    Treat any input as a living food-sovereignty diagram: tier it into
+    harvest-bands, cistern veins, seedling repetition, and cooperative access
+    paths. Crops, terraces, workers, or harvest rituals may appear when useful,
+    but the core style is stepped abundance and gravity-fed stewardship.
 avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
 attributes:

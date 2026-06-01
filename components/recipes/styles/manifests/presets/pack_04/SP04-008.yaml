@@ -12,19 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual storytelling
-  form_and_line: Negative-space carving with razor-edged contour breaks, stark shape blocking, and subtraction-first figure construction
+  aesthetic: >-
+    Hard-boiled monochrome noir style built on brutal contrast logic and silhouette-dominant visual
+    storytelling
+  form_and_line: >-
+    Negative-space carving with razor-edged contour breaks, stark shape blocking, and
+    subtraction-first figure construction
   color_palette: Black and White only, stark binary, zero greyscale
   lighting_setup: Harsh, single-source key, knife-edge cast shadows
   material_texture: Dry ink grain, splatter accents, rough print-like edges, and gritty black-fill density variation
-  render_quality: Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and aggressive readability
+  render_quality: >-
+    Ultra-contrast noir rendering prioritizing shadow hierarchy, binary value discipline, and
+    aggressive readability
   spatial_distortion: Silhouette-forward composition with compressed midtone absence and hard cutout depth cues
   atmosphere: Dark, menacing, tense, unforgiving, nocturnal
   key_features: No greyscale, silhouette framing, white-out rim
   creative_brief: >-
-    Preserve identity through binary-light discipline: deep blacks, strategic white
-    carve-outs, and silhouette verdicts should carry the narrative weight without
-    leaning on named noir franchises or fixed alleyway scenes.
+    Apply binary noir comic discipline to any input: deep blacks, strategic white carve-outs, hard
+    silhouette verdicts, dry ink grain, and zero-gray contrast should carry narrative weight without
+    requiring alleys, detectives, violence, rain, city streets, or named noir-franchise staging.
 avoidRules:
   - grey
   - color

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Vibrating effect
   atmosphere: Dizzying, kinetic
   key_features: High contrast
-  creative_brief: The canvas breathes and pulses, static lines becoming a storm behind the eyes. Vision becomes a participant, not a witness, caught in the shimmer between seeing and believing.
+  creative_brief: >-
+    Apply op-art optical stress to the input: pulsing line fields, high-contrast
+    waves, vibrating figure-ground reversals, and controlled visual interference
+    should make any subject feel unstable without losing silhouette legibility.
 avoidRules:
   - still
   - calm
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

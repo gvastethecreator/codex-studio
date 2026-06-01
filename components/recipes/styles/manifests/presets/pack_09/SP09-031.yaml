@@ -17,11 +17,11 @@ visualDna:
   color_palette: Black or Red
   lighting_setup: High specularity
   material_texture: Smooth, sticky
-  render_quality: Fetish, superhero
+  render_quality: Sleek, high-specular
   spatial_distortion: Tight fit
   atmosphere: Intense, sleek
   key_features: Highlights
-  creative_brief: Compose the liquid tension of shiny latex stretched tight over form, where specular highlights run like liquid mercury along curves of pure reflectivity, mapping the surface with rivers of white glare. The material should feel slick and second-skin close, a surface that erases the boundary between object and its own light. Render the intensity of absolute smoothness, gleaming and faintly unnerving.
+  creative_brief: 'Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.'
 avoidRules:
   - matte
   - cloth

@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Hero shooter de movilidad vertical en entorno urbano denso, orientado a control de altura y rotación rápida.
-  subject_treatment: Operadores ligeros con kits parkour/grapple y lectura de hitbox por animación.
+  aesthetic: Gramática hero-shooter de movilidad vertical con control de altura, rotación rápida y lectura de ruta en movimiento.
+  subject_treatment: Aplica kits parkour/grapple, silueta ligera y hitbox legible al input cuando corresponda, sin exigir rooftop ni ciudad.
   color_and_tone: Grises metropolitanos con acentos de equipo saturados para friend-foe clarity.
   lighting_and_shadow: Amanecer frío con sombras largas útiles para trazado de rutas y cobertura parcial.
   texture_and_material: Hormigón, metal galvanizado, graffiti táctico y vidrio rompible contextual.
-  camera_and_composition: Perspectiva dinámica con jump lines, rutas de flanqueo y puntos high-ground evidentes.
+  camera_and_composition: Perspectiva dinámica con jump lines, flancos y high-ground abstracto como señal de navegación.
   atmosphere_and_mood: Rítmica, competitiva y técnica, centrada en posicionamiento.
   rendering_and_quality: PvP readability-first con layout claro de lanes, alturas y líneas de visión.
 avoidRules:

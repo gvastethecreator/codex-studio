@@ -4,8 +4,14 @@ packId: pack_15
 name: Nuclide Aquatics Dome
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Reactor-wellness atompunk where sanitized circular calm is powered by suspiciously perfect surplus heat.
   form_and_line: Smooth dome shells, concentric thermal rings, turbine-water spirals, capsule modules, and rounded hygiene lines.
@@ -17,20 +23,34 @@ visualDna:
   atmosphere: Wellness, civic pride, thermal luxury, and sanitized reactor unease.
   key_features: Thermal isotope rings, health-capsule forms, wave-turbine displays, hydrotherapy panels, and protocol color stripes.
   creative_brief: >-
-    Preserve nuclide aquatics-dome grammar as a reusable style system:
-    reactor-surplus wellness aesthetics, circular hydro-civic optimization,
-    and sanitized thermal luxury cues should remain coherent across subjects.
-avoidRules: [photoreal, horror, cyberpunk-grime, medieval, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-046.webp }
+    Sanitize the input with reactor-wellness calm: pool-aqua rings, citrus status lights, wet enamel, glazed tile, and
+    hydrothermal loops should feel luxurious and too perfect. Aquatic domes can appear, but the style is surplus heat
+    turned into hygienic civic comfort. Apply this corepunk genre grammar over any input: preserve the faction mood,
+    material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city,
+    vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - horror
+  - cyberpunk-grime
+  - medieval
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-046.webp
 attributes:
   negativePrompt: photoreal, horror, cyberpunk-grime, medieval, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

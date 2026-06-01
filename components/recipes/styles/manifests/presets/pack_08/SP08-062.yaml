@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Fantasy rogue, shadow-guild anonymity, dungeon-crawler practicality
+  aesthetic: Leather armor utility, shadow-guild anonymity, fantasy rogue practicality
   form_and_line: Straps, studs, asymmetrical-harness geometry, pauldron-shoulder square, bracer-forearm wrap, hooded-cowl depth
   color_palette: Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke
-  lighting_setup: Subsurface scatter, torchlit-corridor amber, dungeon-shadow depth, candle-flicker rim, moonlight-through-bars
+  lighting_setup: Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast
   material_texture: Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel
   render_quality: Tough, flexible, D&D-manual realism, stealth-gear authenticity
   spatial_distortion: None
-  atmosphere: Adventure, tough, shadow-alley tension, lockpick silence, midnight-escape adrenaline
-  key_features: Buckles, hood, hidden pouches, throwing-knife bandolier, soft-soled boots
-  creative_brief: Oil-tanned hide molded by use into a second skeleton that moves without sound, brass studs catching torchlight in brief flashes that reveal nothing. The asymmetrical harness crosses a chest that rises and falls with the rhythm of someone who picks locks by feel and counts footsteps by instinct, hidden pouches holding tools for a trade that prefers to leave no signature.
+  atmosphere: Adventure, tough, lockpick silence, midnight-escape adrenaline, stealth utility
+  key_features: Buckles, hood cues, hidden pouches, bracer wraps, asymmetrical harness
+  creative_brief: >-
+    Armor the input with stealth leather: oil-tanned hide, asymmetrical harness,
+    brass studs, buckles, bracers, tooled panels and hidden-pouch logic. Keep
+    rogue utility without requiring dungeon corridors, lockpicking, weapons,
+    shadow alley or humanoid adventurer.
 avoidRules:
   - metal
   - cloth
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

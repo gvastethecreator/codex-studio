@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dynamic, wet, in-motion energy',
       key_features: 'Splash shape, foam particles',
       creative_brief:
-        'A frozen millisecond of chaos where surface tension stretches to breaking and droplets hang in midair like glass beads scattered from a broken necklace. Specular highlights trace the curvature of every splash crown, and foam particles cluster at the periphery like witnesses to the impact. The image is pure kinetic poetry, a fluid sculpture arrested at the apex of its drama.',
+        'Apply liquid-simulation behavior to any input: surface-tension stretch, suspended droplets, splash-crown curvature, foam particles, wet speculars, and frozen fluid motion. Keep kinetic waterlike sculpture without requiring a falling object, ocean, glass, body, or literal impact event.',
     },
   },
   {
@@ -35,10 +35,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Fluffy, soft, dimensional volume',
       render_quality: 'XGen groom simulation, every strand deliberate',
       spatial_distortion: 'Wind blown',
-      atmosphere: 'Cozy, creature, tactile warmth',
+      atmosphere: 'Cozy, tactile warmth, groomed softness',
       key_features: 'Hair strands, clump variation',
       creative_brief:
-        'Every strand is deliberate — clumps part like wheat in a field, and rim light catches the fuzz at grazing angles, turning each filament into a golden thread. The groomed volume reads as something you could sink your hand into, soft gradients mapping depth through density. Wind-frozen or studio-still, the fur carries the warmth of a living creature rendered with XGen precision.',
+        'Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density gradients and wind-frozen filament behavior. It may imply creature warmth, but should not require an animal, character, field metaphor or living body. Apply Fur & Hair as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, realistic, naturally lit',
       key_features: 'Soft shadows, indirect fill',
       creative_brief:
-        'Light arrives from everywhere and nowhere — photons bounce off walls, bleed color across neighboring surfaces, and fill shadows with borrowed warmth until no darkness remains absolute. Ambient occlusion gathers softly in corners like settled dust, and indirect fill sculpts form with the gentleness of overcast afternoon. The image feels naturally lit, as if the room itself were a light source, calm radiating from every soft gradient.',
+        'Emphasize global-illumination behavior across the input: color bleed, diffuse bounce, ambient fill, soft contact shadows and believable photon ricochet. Preserve natural expensive light without requiring a room, wall set or interior environment.',
     },
   },
   {
@@ -71,10 +71,10 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Scattered light, god-ray projection',
       material_texture: 'Fog density, volumetric depth',
       render_quality: 'Cinematic, atmospheric, immersive mystery',
-      atmosphere: 'Mysterious, epic, cathedral scale',
+      atmosphere: 'Mysterious, epic, volumetric scale',
       key_features: 'Light shafts, air-density sculpting',
       creative_brief:
-        'The air itself becomes visible — god rays pierce through cathedral windows or forest canopies, carving luminous architecture from suspended particles. Volumetric density sculpts the beam into something you could almost touch, desaturated depth receding into haze where objects forget their edges. The image breathes mystery at epic scale, every light shaft a doorway between the seen and the suggested.',
+        'Make atmosphere a render material around the input: layered fog volumes, blue-grey depth falloff, particulate beams and cinematic air density. Keep cathedral/forest grandeur as optional mood only; do not require windows, canopy, or specific environment. Apply Volumetric Fog as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -84,17 +84,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'day, sun',
     style: {
       aesthetic:
-        'Luminous alien forest, Avatar Pandora style, bioluminescent wonder, floating mountains, connected ecosystem',
-      form_and_line: 'Glowing plants',
+        'Bioluminescent alien ecology, Avatar/Pandora-style wonder, connected organic glow',
+      form_and_line: 'Glowing organic silhouettes, spore halos, branching luminous networks',
       color_palette: 'Blue, Purple night, cyan bloom',
       lighting_setup: 'Plant glow, ambient bioluminescence',
       material_texture: 'Organic, alien, phosphorescent',
       render_quality: 'Fantasy, magical, otherworldly immersion',
       spatial_distortion: 'None',
-      atmosphere: 'Wonder, magic, spiritual awe',
+      atmosphere: 'Wonder, magic, spiritual awe, connected-biology calm',
       key_features: 'Glow in dark, floating spores',
       creative_brief:
-        "Darkness is not the absence of light but the canvas for a living glow — phosphorescent flora pulse in cyan and violet, and floating spores drift through the understory like airborne constellations. Every plant is its own light source, ambient bioluminescence replacing sunlight with something more intimate and alien. The image channels Pandora's spiritual awe: an ecosystem lit from within, wonder rendered as connected biology, magic explained by the science of light.",
+        'Infuse the input with bioluminescent alien ecology: cyan/violet phosphorescence, spore halos, internal plant-like glow, connected organic networks and ambient light replacing sunlight. Keep Pandora-style awe without requiring a forest, floating mountains, specific flora, ecosystem setting, or landscape.',
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fluid, abstract, hypnotic flow',
       key_features: 'Merging shapes, surface tension',
       creative_brief:
-        'Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion. The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical inevitability.',
+        'Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion. The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical inevitability. Apply Metaballs as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, broken, signal failure',
       key_features: 'Artifacts, vertex explosion',
       creative_brief:
-        'Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic: chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium.',
+        'Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic: chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium. Apply Glitch 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -139,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Character Cgi',
     negativePrompt: 'traditional art',
     style: {
-      aesthetic: '3D character portrait',
+      aesthetic: 'Collectible avatar render language',
       form_and_line: 'Clean',
       color_palette: 'Neon, Gold, Rare traits, rarity gradient',
       lighting_setup: 'Studio, promo-ready',
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hype, digital, exclusive drop',
       key_features: 'Profile view, trait accessories',
       creative_brief:
-        "The character faces forward in the profile-view language of the collector's marketplace — neon traits glow with rare-drop energy, gold accessories signal scarcity, and studio lighting wraps the figure in promo-ready gloss. Plastic and metal finishes read as premium collectible surfaces, every accessory a generative trait rendered with avatar-centric precision. The image pulses with digital hype: a Bored Ape rendered in three dimensions, exclusivity made visible through the vocabulary of rarity gradients and exclusive drops.",
+        'Give the input collectible-avatar styling: rarity-trait clarity, glossy feature emphasis, profile-picture legibility and drop-ready color blocking. If a face or character exists, amplify it; otherwise translate subject cues into trait metadata without forcing an ape, portrait, or NFT-drop setup. Apply NFT Collectible Avatar Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -167,7 +167,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bold, message, visual proclamation',
       key_features: 'Readable, letterform sculpting',
       creative_brief:
-        'The alphabet becomes sculpture — bold letterforms constructed from unexpected materials, each character a tiny world of physical texture and volumetric presence. Studio lighting preserves typographic readability while revealing the material truth of every serif and stem, and vibrant brand-expression hues give the message chromatic urgency. The image is a visual proclamation: a headline you could walk around, typography that demands to be touched as much as read.',
+        'Apply 3D typography logic to any input: bold letterform-like massing, material-built glyph structure, studio-lit bevels, extruded volume, readable silhouette rhythm, and brand-expression color. Keep typographic sculpture without requiring readable words, slogans, alphabet props, logos, or a headline composition.',
     },
   },
   {
@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Technical, complex, assembly logic',
       key_features: 'Alignment, explosion direction',
       creative_brief:
-        'Components drift apart along invisible assembly axes, each part maintaining its exact spatial relationship to every other — the explosion is orderly, didactic, a diagram rendered in three dimensions. Assembly-color coding distinguishes subsystems, and flat lighting prioritizes legibility over drama, cross-section surfaces revealing what the solid exterior conceals. The image is engineering as spectacle: an instruction manual elevated to sculpture, every screw and housing floating in the precise position that explains how it all fits together.',
+        'Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding and cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer component layers without forcing screws, housings or a manufactured product. Apply Exploded View as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, pop art, celebration',
       key_features: 'Seams, reflective curves',
       creative_brief:
-        'Mylar wrinkles catch the world in distorted high-reflection — metallic foil shimmers across inflated curves, and visible seams trace the construction logic of balloons designed to impress at gallery scale. The reflective surfaces map studio lights into abstract highlights, and the inflated tension gives every form the buoyancy of helium and the weight of pop art. The image channels Jeff Koons party spectacle: celebration rendered in foil and air, sculpture that feels like it might float away mid-exhibition.',
+        'Inflate the input into Mylar pop-sculpture language: wrinkled foil, metallic shimmer, visible seams, distorted studio reflections and buoyant tension. Keep celebration/Jeff Koons energy without forcing party props, gallery context or a balloon object. Apply Balloon Art as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Delicate, precise, folded poetry',
       key_features: 'No cuts, pure-fold geometry',
       creative_brief:
-        'No cuts, no glue — only the purity of the fold — sharp creases define every plane and vertex, and paper grain textures the flat surfaces with natural-fiber warmth. Soft lighting highlights fold geometry without burning the edges, and the absence of curves makes every angle a deliberate geometric decision. The image is folded poetry: traditional origami rendered in 3D with zen precision, a crane or lotus built from mathematical crease patterns that transform a single sheet into sculpture.',
+        'Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper grain and curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional subject matter. Apply Origami 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -231,16 +231,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Character Cgi',
     negativePrompt: 'gross, blood',
     style: {
-      aesthetic: 'Clean anatomy render',
+      aesthetic: 'Clean diagnostic cutaway render',
       form_and_line: 'Cutaway view',
       color_palette: 'Red, Blue, White, medical-chart palettes',
       lighting_setup: 'Soft, clear, shadowless diagnostic',
-      material_texture: 'Translucent tissue, anatomical accuracy',
+      material_texture: 'Translucent layers, anatomical or system accuracy',
       render_quality: 'Textbook, educational, clinical-reference',
       atmosphere: 'Scientific, clean, knowledge-dense',
       key_features: 'Label space, cutaway clarity',
       creative_brief:
-        'The body opens like a textbook — cutaway views reveal layered systems in clinical red, blue, and white, every vessel and bone rendered with diagrammatic clarity rather than surgical gore. Shadowless diagnostic lighting flattens drama in favor of legibility, and translucent tissue gradients map density to opacity with the precision of a radiology workstation. The image is knowledge made visible: anatomy as architecture, the human machine explained through the lens of medical illustration.',
+        'Turn the input into a clean diagnostic cutaway: layered systems, translucent density gradients, red/blue/white clinical coding and shadowless educational clarity. If biological anatomy fits, use it; otherwise expose internal structure like a medical diagram without forcing human body content. Apply Medical Illustration 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -249,17 +249,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Character Cgi',
     negativePrompt: 'hard edge, robot',
     style: {
-      aesthetic: 'Creature or plant',
+      aesthetic: 'Organic modeling flow',
       form_and_line: 'Flowing topology',
       color_palette: 'Skin tones, green',
       lighting_setup: 'Subsurface scattering',
       material_texture: 'Skin, bark, organic texture map',
       render_quality: 'ZBrush digital sculpt, organic flow, natural forms',
       spatial_distortion: 'None',
-      atmosphere: 'Alive, natural, breathing world',
+      atmosphere: 'Alive, natural, organic credibility',
       key_features: 'Muscle/Growth flow, dynamesh topology',
       creative_brief:
-        'Topology flows like water across muscle groups and branching forms — dynamesh topology follows the grain of imagined biology, and subsurface scattering warms skin and bark from within as if chlorophyll or blood were glowing just beneath. ZBrush sculptural flow defines natural forms through digital clay, every ridge and fold the result of a stylus tracing evolutionary logic. The image breathes: a creature or plant rendered with the conviction that it exists somewhere.',
+        'Push the input through organic-modeling language: flowing topology, dynamesh sculptural mass, branching or muscular rhythm, subsurface warmth and evolution-like surface logic. It may become creature/plant-like when useful, but must not require a living body, forest or biological subject. Apply Organic Modeling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

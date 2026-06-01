@@ -20,7 +20,12 @@ visualDna:
   render_quality: Classical art, museum, neoclassical perfection
   atmosphere: Classic, pure, sculpted eternity
   key_features: Stone texture, vein-flow naturalism
-  creative_brief: 'Grey veins drift through white Carrara like weather systems frozen in stone — slight subsurface scattering gives the marble a translucency that suggests depth beneath the polished surface, and chisel marks (where present) record the sculptor''s last touch before setting down the tool. The stone polish reflects soft light without the hardness of metal, and the veined-crystal surface reads as geology repurposed into art. The image is neoclassical perfection: a museum piece rendered with the stillness of eternity, carved from the same material as Michelangelo''s dreams.'
+  creative_brief: >-
+    Recast the input in Carrara-marble sculpture style: grey veining, semi-translucent stone depth, polished soft
+    reflection and optional chisel marks. Keep neoclassical dignity as material language, not a forced museum piece,
+    figure, or Michelangelo reference setup. Apply Marble Statue as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
+    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - flesh
   - warm

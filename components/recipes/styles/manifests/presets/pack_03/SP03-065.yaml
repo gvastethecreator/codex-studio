@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Squircle
   atmosphere: Friendly, UI, app-store ready
   key_features: Front facing, soft shadow base
-  creative_brief: 'The squircle shape announces its platform allegiance before any detail registers — smooth plastic and glass materials catch soft studio light with UI-grade polish, and vibrant gradients give the icon chromatic presence at any size. A soft shadow anchors the object to an implied surface, and front-facing composition maximizes legibility for the app drawer. The image is macOS Big Sur elegance distilled: friendly enough to tap, premium enough to trust, an icon that carries the weight of its application in a single glance.'
+  creative_brief: >-
+    Compress the input into platform-icon language: squircle discipline,
+    UI-grade plastic/glass, vibrant gradients, soft shadow grounding and
+    front-facing legibility. Keep macOS Big Sur polish without requiring a
+    literal app, drawer context or standalone object.
 avoidRules:
   - flat
   - 2d icon

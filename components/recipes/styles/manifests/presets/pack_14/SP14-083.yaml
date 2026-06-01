@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-083
 packId: pack_14
-name: Zodiac Forge Basilica
+name: Zodiac Tempered Destiny
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Star-sign forge where weapons are tempered to celestial cycles.
-  form_and_line: Vaulted naves, zodiac anvils, and constellation aisles.
+  aesthetic: Star-sign forge discipline where destiny is tempered to celestial cycles.
+  form_and_line: Vaulted nave cues, zodiac anvils, and constellation aisle rhythms.
   color_palette: Iron blue, brass, and cinder orange.
   lighting_setup: Furnace cores and rotating skylight apertures.
   material_texture: Heat-cracked stone, riveted steel, and etched brass rings.
   render_quality: High-drama craft concept with cosmic readability.
-  spatial_distortion: Long nave perspective ending at stellar forge.
+  spatial_distortion: Long nave-like perspective ending at a stellar forge core.
   atmosphere: Determined ritual and astral discipline.
-  key_features: Zodiac anvils, orbit hammers, and omen quench basins.
-  creative_brief: A forge where destiny is literally hammered into steel.
+  key_features: Zodiac anvils, orbit hammers, omen quench-basin cues.
+  creative_brief: Reinterpret any input as zodiac-tempered destiny, as if its form were hammered into alignment with star-sign cycles. Preserve orbit-ring geometry, iron-blue craft discipline, brass constellation marks, furnace apertures, and astral order without requiring anvils, zodiac symbols, naves, hammers, or forge scenes.
 avoidRules: [photoreal, cartoon, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-083.webp }
 attributes:
   negativePrompt: photoreal, cartoon, cyberpunk, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -4,33 +4,56 @@ packId: pack_15
 name: Brass Garden Atrium
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Botanical decopunk where nature is staged, polished, humid, and ruled by brass geometry.
   form_and_line: Geometric planter blocks, vaulted glass ribs, stepped terrace bands, balcony rings, and clipped leaf silhouettes.
   color_palette: Emerald, brass, cream, wet leaf black-green, and fountain white.
-  lighting_setup: Filtered daylight, uplighted fountain nodes, humid sparkle on brass lattice, and soft green bounce from dense leaves.
+  lighting_setup: >-
+    Filtered daylight, uplighted fountain nodes, humid sparkle on brass lattice, and soft green bounce from dense
+    leaves.
   material_texture: Brass lattice, marble, humid glass panes, waxy leaves, polished fountain stone, and condensation beads.
   render_quality: High-fidelity lifestyle concept with botanical density constrained by clear deco structure.
   spatial_distortion: Atrium-like depth rises through balcony rings, fountain axes, clipped plant geometry, and greenhouse sightlines.
   atmosphere: Refined calm, curated abundance, luxury ecology, and controlled indoor weather.
-  key_features: Geometric fountain motifs, brass pergola lines, greenhouse rings, clipped ornamental planting, and misting-nozzle patterns.
+  key_features: >-
+    Geometric fountain motifs, brass pergola lines, greenhouse rings, clipped ornamental planting, and misting-nozzle
+    patterns.
   creative_brief: >-
-    Preserve brass garden-atrium grammar as a reusable style system:
-    curated humid botany, geometric horticultural discipline, and
-    brass-marble luxury ecology should remain coherent across subjects.
-avoidRules: [photoreal, rustic-farm, cyber-grunge, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-055.webp }
+    Discipline the input with botanical decopunk luxury: clipped emerald silhouettes, brass pergola lines, condensation
+    beads, marble fountain axes, and humid glass sparkle should make nature feel staged. Atriums or gardens can appear,
+    but the style is curated abundance ruled by geometry. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - rustic-farm
+  - cyber-grunge
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-055.webp
 attributes:
   negativePrompt: photoreal, rustic-farm, cyber-grunge, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

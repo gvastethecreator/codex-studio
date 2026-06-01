@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Peeling emulsion, lifted edge, craquelure decay
   atmosphere: Timeless, alchemical, eternal stillness, process-haunted
   key_features: Focus falloff, petzval swirl, glass-plate negative
-  creative_brief: 'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty.'
+  creative_brief: >-
+    Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow
+    focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions.
+    The subject should feel captured by unstable chemistry while the edges decay into handmade beauty. Apply Wet Plate
+    Collodion as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
+    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
+    fixed IP scene, or narrative setup.
 avoidRules:
   - clean
 assets:

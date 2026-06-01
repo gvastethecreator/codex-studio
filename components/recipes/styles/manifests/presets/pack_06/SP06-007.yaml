@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Faded areas
   atmosphere: Historic, grand
   key_features: Plaster texture
-  creative_brief: Pigment fuses chemically with wet plaster, becoming wall rather than hanging on it. Time cracks the surface into cartography of age, each fissure a map of centuries endured. The image asserts permanence through absorption, a surface that cannot be separated from what it carries.
+  creative_brief: >-
+    Apply fresco wall-painting materiality to any input: pigment absorbed into
+    plaster, mineral matte color, hairline cracks, worn lime surface, and aged
+    architectural permanence. Keep wall-bound durability without requiring
+    murals, churches, ruins, figures, or literal architecture.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

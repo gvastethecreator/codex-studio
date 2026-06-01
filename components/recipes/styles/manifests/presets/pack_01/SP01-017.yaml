@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Heavy vignette
   atmosphere: Fun, unpredictable
   key_features: Tunnel vision
-  creative_brief: 'A plastic lens drunk on stray photons: cross-processed saturation, light leaks, smeared corners, heavy vignette, and color running where precision would normally hold it back. Turn any subject into a lo-fi analog accident, playful without requiring a specific place or event.'
+  creative_brief: >-
+    Apply Lomo LC-A plastic-lens accident to the input: cross-processed color,
+    light leaks, smeared corners, heavy vignette, and loose analog exposure
+    should make any subject playful without requiring a specific place or event.
 avoidRules:
   - illustration
   - painting

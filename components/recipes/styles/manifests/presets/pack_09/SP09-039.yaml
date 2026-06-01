@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Surface buildup
   atmosphere: Freezing, preserved
   key_features: Crystal growth
-  creative_brief: Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture.
+  creative_brief: >-
+    Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each
+    branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the
+    brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture
+    the moment water becomes architecture. Use Frozen/Frosted as portable surface/render behavior over any input: map
+    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - melted
   - wet

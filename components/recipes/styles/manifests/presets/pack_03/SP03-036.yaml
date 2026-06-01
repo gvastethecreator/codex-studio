@@ -20,7 +20,12 @@ visualDna:
   render_quality: Physically correct, optical precision
   atmosphere: Ethereal, complex, underwater magic
   key_features: Light dancing, photon mapping
-  creative_brief: Photons converge like a magnifying glass held to the sun — bright patterns dance across surfaces in shifting webs of concentrated brilliance, the signature of light bent through water or crystal. Prismatic bands separate and recombine, and every caustic net tells the story of the refractive object that cast it. The image captures underwater magic rendered with optical precision, light transformed from illumination into event.
+  creative_brief: >-
+    Apply caustic light behavior to any input: concentrated photon webs,
+    prismatic separation, refractive patterning, bright surface pools, and
+    optical precision from water or crystal-like bending. Keep the caustic effect
+    as lighting grammar without requiring underwater content, glass props, pools,
+    or a specific refractive object.
 avoidRules:
   - diffuse
   - matte

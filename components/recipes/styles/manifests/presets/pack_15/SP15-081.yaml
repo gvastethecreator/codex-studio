@@ -12,14 +12,14 @@ visualDna:
   color_palette: Silver, mint, and warm sand.
   lighting_setup: Steam diffusion and low ambient strips.
   material_texture: Mineral stone, matte ceramics, and woven privacy screens.
-  render_quality: Spa-infrastructure concept with strong material clarity.
+  render_quality: Mineral wellness render with strong material clarity and reusable thermal-infrastructure cues.
   spatial_distortion: Cascading sequence toward a soft thermal core without requiring a bath facility.
   atmosphere: Restoration and social calm.
   key_features: Silver thermal rings, filter columns, regolith mineral shimmer, and communal arc motifs.
   creative_brief: >-
-    Preserve silver regolith-baths grammar as a reusable style system:
-    cascading thermal infrastructure, mineral-filtration social wellness, and
-    restorative civic calm should remain coherent across subjects.
+    Bathe the input in silver regolith wellness: cascading basin terraces,
+    mint thermal rings, filter-column silhouettes, mineral shimmer, and woven
+    privacy screens make any subject feel restored, filtered, and socially calm.
 avoidRules: [photoreal, dystopian-medlab, cyber-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-081.webp }
 attributes:

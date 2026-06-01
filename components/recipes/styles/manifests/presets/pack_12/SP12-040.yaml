@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Co-op monster-hunt en llanuras eléctricas abiertas, con énfasis en rastreo, coordinación de escuadra y ejecución por ventanas.
-  subject_treatment: Cazadores montados y bestias colosales con lectura clara de rol, amenaza y patrón de ataque.
+  aesthetic: Gramática co-op monster-hunt eléctrica con rastreo, coordinación, ventanas de ejecución y telegraphs de tormenta.
+  subject_treatment: Si el input contiene criatura/personaje, escalarlo a bestia, hunter o montura; si es objeto, volverlo rastro, herramienta o weak point.
   color_and_tone: Azul tormenta, amarillo rayo y tierra oscura para codificar clima, peligro y terreno.
   lighting_and_shadow: Relámpagos intermitentes, cielos dramáticos y flashes de impacto para telegraph de fase.
   texture_and_material: Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.
-  camera_and_composition: Escala amplia con monstruo dominante, rutas de cerco y líneas de escape visibles.
+  camera_and_composition: Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.
   atmosphere_and_mood: Épica, riesgosa y altamente coordinada.
   rendering_and_quality: Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.
 avoidRules:

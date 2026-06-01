@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Soft edges
   atmosphere: Dreamy, atmospheric
   key_features: Chalky finish
-  creative_brief: Pure pigment held together by the weakest binder — barely more than dust on paper — achieves saturation that feels like breathing color instead of air. Smudged edges soften the world into a remembered dream, focus yielding to atmosphere. The drawing exists on sufferance, one careless touch away from erasure.
+  creative_brief: >-
+    Apply soft pastel drawing to any input: powdery pure pigment, fragile
+    smudged edges, velvety saturation, paper tooth, atmospheric softness, and
+    touch-sensitive haze. Keep color-as-dust immediacy without requiring figure
+    studies, landscapes, chalk sets, or classroom boards.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

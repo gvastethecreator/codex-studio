@@ -4,8 +4,14 @@ packId: pack_15
 name: Isotope School Campus
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Atomic pedagogy style where cheerful diagrams explain a future nobody fully understands yet.
   form_and_line: Sawtooth rhythms, corridor-like bands, atom-emblem fields, lab-grid repetition, and oversized instructional arrows.
@@ -17,20 +23,34 @@ visualDna:
   atmosphere: Curious optimism, disciplined learning, soft propaganda, and future-facing ambition.
   key_features: Demo-reactor silhouettes, atom mural geometry, isotope growth cues, diagram panels, and lab safety color bands.
   creative_brief: >-
-    Preserve isotope school-campus grammar as a reusable style system:
-    diagrammatic pedagogy, bright civic science graphics, and future-facing
-    classroom optimism should remain coherent across subjects.
-avoidRules: [photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-039.webp }
+    Teach the input in atomic classroom language: sawtooth diagram bands, lemon-cream science graphics, chalk dust, atom
+    emblems, and demo-reactor silhouettes should make the future feel freshly explained. Schools or campuses can appear,
+    but the style is bright pedagogy and soft propaganda. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - dystopian-prison
+  - medieval
+  - neon-nightclub
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-039.webp
 attributes:
   negativePrompt: photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Zero gravity
   atmosphere: Spiritual, empty
   key_features: White void
-  creative_brief: Pure sensation drifts through white infinity, rectangles and circles untethered from gravity and meaning. The void is not absence but potential, a field where shape becomes feeling.
+  creative_brief: >-
+    Apply suprematist weightlessness to the input: floating rectangles, circles,
+    stark white voids, minimal gravity, and pure color-shape tension should make
+    any subject feel abstracted into sensation.
 avoidRules:
   - complex
   - real
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

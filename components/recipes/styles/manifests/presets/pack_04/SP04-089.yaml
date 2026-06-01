@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Scientific, exploratory, speculative naturalism
   key_features: Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks
   creative_brief: >-
-    Develop creatures as coherent biological systems. Pair silhouette and anatomy passes to test mobility, survivability, and material behavior, keeping overlays and callouts explicit enough to compare evolutionary variants before committing to final render direction in a Terryl Whitlatch-style creature-development mindset.
+    Apply creature-design iteration language to any input: anatomy-like layering, silhouette mutations, material
+    biology, exploratory appendage rhythms, and evolutionary variant marks. If no creature exists, translate the subject
+    into biomorphic design studies without requiring animals, monsters, or a final character render.
 avoidRules:
   - human
   - normal

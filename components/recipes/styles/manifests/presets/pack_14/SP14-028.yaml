@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-028
 packId: pack_14
-name: Valkyrie Ice Causeway
+name: Valkyrie Ice Weighing
 category: 8. Mythic — Norse Sagas
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, norse-myth]
 visualDna:
-  aesthetic: Celestial war-road where valkyries escort chosen souls through glacial skies.
-  form_and_line: Arcing bridge spans, winged standards, and blade-like vertical accents.
+  aesthetic: Valkyrie ice weighing where chosen souls pass through glacial sky and martial grace.
+  form_and_line: Arcing bridge cues, winged standards, and blade-like vertical accents.
   color_palette: Aurora cyan, storm violet, and iron silver.
   lighting_setup: Aurora veils and lightning backlight across drifting snow haze.
   material_texture: Frosted metal, carved ice slabs, chainmail glints, and fur-lined pennants.
   render_quality: Dramatic cinematic painting with crisp silhouette choreography.
-  spatial_distortion: Elevated aerial perspective with receding causeway into cloud depth.
+  spatial_distortion: Elevated aerial perspective receding into cloud depth.
   atmosphere: Heroic melancholy, martial grace, and imminent transcendence.
-  key_features: Valkyrie riders, soul lanterns, storm ravens, and sword-rune balustrades.
-  creative_brief: A frozen sky-bridge where destiny is weighed by warriors of the afterlife.
+  key_features: Valkyrie rider cues, soul lanterns, storm ravens, sword-rune balustrades.
+  creative_brief: Transform the input through valkyrie ice weighing, where destiny is judged by warriors of the afterlife without requiring a causeway.
 avoidRules: [photoreal, modern-aircraft, comedic, neon-city, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-028.webp }
 attributes:
   negativePrompt: photoreal, modern-aircraft, comedic, neon-city, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-norse-sagas,
+    categoryName: 8. Mythic — Norse Sagas,
+    tags: [mythic-noir-curated-vault, mythic, norse-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

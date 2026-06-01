@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-043
 packId: pack_11
-name: Memphis Design
+name: Postmodern Pattern Clash
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,17 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Memphis postmodern design with playful anti-minimal geometric clash
-  form_and_line: Squiggles, triangles, zigzag-lines, polka-dot grids, confetti-burst contours, zany-circles
-  color_palette: Black + Primary Colors, hot-pink, teal-contrast, traffic-cone orange, acid-yellow, midnight-blue matte
-  lighting_setup: Flat, no-shadow graphic, offset-print registration, two-dimensional clarity, poster-flat
-  material_texture: Speckled pattern, terrazzo-chip, laminate-veneer, plastic-laminate gloss, rubber-paint finish
-  render_quality: Bold retro-pattern rendering with high-energy postmodern contrast
-  spatial_distortion: Abstract shapes, floating-pattern planes, Op-art illusions, checkerboard-grid, squiggle-rhythm
-  atmosphere: Playful, energetic, rule-breaking joy, design-anarchy, sugar-cereal morning
-  key_features: Geometric patterns, squiggle-motif, terrazzo-speckle, black-white-checkerboard, contrasting-bold-outlines
+  aesthetic: Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction
+  form_and_line: Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation
+  color_palette: Hot pink, teal, primary yellow, traffic-cone orange, matte black, white, acid accents, cobalt depth
+  lighting_setup: Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability
+  material_texture: Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility
+  render_quality: Bold, cheeky, graphic, design-object sharp, deliberately over-patterned, high-contrast
+  spatial_distortion: Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance
+  atmosphere: Playful, decorative, contrarian, optimistic, ironic, loud
+  key_features: Squiggle motifs, checkerboard fragments, terrazzo noise, primary blocks, black outline accents, anti-minimal composition
   creative_brief: >-
-    Compose with high-contrast Memphis primitives: squiggles, checkerboards, terrazzo noise, and bold geometric blocks. Preserve playful anti-minimal tension while keeping pattern vocabulary reusable in any layout.
+    Use Memphis as a pattern-behavior engine: clashing primitives, synthetic surfaces, terrazzo noise, and playful anti-minimal balance should style any subject. Avoid making the image merely furniture, interiors, or design showroom scenes.
 avoidRules:
   - realistic
   - 3d

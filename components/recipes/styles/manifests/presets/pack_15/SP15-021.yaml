@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Cheerful futurism, consumer ritual, and launch-night anticipation.
   key_features: Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.
   creative_brief: >-
-    Preserve orbit diner-strip grammar as a reusable style system:
-    roadside atomic-age signage rhythm, consumer-nightlife futurism, and
-    launch-culture anticipation should remain coherent across any subject.
+    Dress the input in launch-night atomic consumer sparkle: tailfin curves,
+    bubblegum-cyan chrome, blank marquee rhythm, vinyl sheen, and rocket-flare
+    reflections. Diner strips or roadside cues may appear, but the style should
+    function as cheerful orbit-age anticipation on any subject.
 avoidRules: [photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-021.webp }
 attributes:

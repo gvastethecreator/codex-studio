@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Tearing
   atmosphere: Chaotic, tech
   key_features: Digital artifacts
-  creative_brief: Data corrupts beautifully, pixels displaced into RGB ghosts that haunt the wrong positions, the image tearing along algorithmic fault lines. The error becomes the aesthetic, malfunction elevated to medium, entropy as creative collaborator. The glitch reveals the structure by breaking it, truth emerging from the crash.
+  creative_brief: >-
+    Apply glitch-art corruption to any input: RGB channel displacement, data
+    tearing, compression blocks, scanline breaks, algorithmic offsets, and
+    malfunction-as-medium structure. Keep digital failure expressive without
+    requiring screens, hackers, cyberpunk rooms, or UI overlays.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

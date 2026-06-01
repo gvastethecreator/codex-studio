@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-083
 packId: pack_13
-name: Lucky Star – Otaku Chat Slice
+name: Low-Stakes Banter Flatness
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Otaku-chat slice anime language with laid-back conversational comedy, flat-color comfort calm, and social micro-rhythm focus
-  form_and_line: Relaxed everyday contouring, stable conversational composition, expression-over-action line prioritization, and low-drama gesture pacing
-  color_palette: Gentle indoor pastels, beige and cream neutrals, mint accents, snack-toned warm highlights, and balanced low-contrast skin hues
-  lighting_setup: Soft ambient fill, mild daylight wash, minimal dramatic shadowing, and steady tonal consistency for dialogue-led moments
-  material_texture: Simple flat surfaces, soft textile cues, low-noise small details, and unobtrusive environmental support
-  render_quality: Dialogue-forward anime rendering with crisp facial readability, consistent low-key polish, and comfortable episodic pacing tone
-  spatial_distortion: Stable conversational framing with mild cute stylization and clear line-of-sight readability
-  atmosphere: Casual, nerdy, witty, and comfortable
-  key_features: Conversation-circle composition, tiny banter anchors, expression-timing subtlety, and relaxed social energy continuity
+  aesthetic: >-
+    Low-stakes otaku-banter anime flatness where conversational rhythm, tiny personality deltas, and
+    comfortable repetition carry the image
+  form_and_line: >-
+    Relaxed everyday contours, stable talk-circle composition, expression-over-action priority, and
+    low-drama gesture pacing
+  color_palette: >-
+    Gentle indoor pastels, cream neutrals, mint accents, snack-warm highlights, and balanced
+    low-contrast skin tones
+  lighting_setup: >-
+    Soft ambient fill, mild daylight wash, minimal dramatic shadow, and steady tonal consistency for
+    dialogue-led viewing
+  material_texture: >-
+    Flat simple surfaces, soft textile hints, low-noise small details, and unobtrusive environmental
+    supports
+  render_quality: >-
+    Dialogue-forward anime finish with crisp expression readability, consistent polish, and episodic
+    comfort pacing
+  spatial_distortion: >-
+    Stable conversational framing, mild cute stylization, and clear line-of-sight geometry around
+    any subject
+  atmosphere: Casual, nerdy, witty, comfortable, low-pressure
+  key_features: >-
+    Banter pacing, low-contrast calm, tiny reaction shifts, talk-circle composition, and relaxed
+    social continuity
   creative_brief: >-
-    Use the title as a style anchor for otaku-chat slice rhythm. Prioritize
-    dialogue-first staging, low-contrast calm, and personality micro-acting
-    without requiring seated groups, snacks, classrooms, or living rooms.
+    Use Lucky Star as style anchor for low-stakes banter flatness. Any prompt should feel
+    conversational: clean flat colors, tiny timing changes, calm repetition, and personality
+    microacting. Seated groups, snacks, classrooms, and living rooms are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-083.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

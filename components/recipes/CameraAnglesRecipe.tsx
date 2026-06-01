@@ -19,6 +19,7 @@ import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegist
 import { createCameraRecipeParams } from '../../lib/recipeDerivedParams';
 import { hasRecipeIdentity } from '../../lib/recipeIdentity';
 import { RecipeLayout } from './RecipeLayout';
+import { QuickStartText } from './QuickStartText';
 import { getRecipeModuleUiModel, getRecipeRange } from './recipeModuleUi';
 
 interface CameraAnglesRecipeProps {
@@ -375,12 +376,13 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                     className="text-zinc-500 group-hover:text-white transition-colors"
                   />
                 </div>
-                <h4 className="text-xs font-black text-zinc-400 uppercase tracking-widest text-center">
-                  Add Reference
-                </h4>
-                <p className="text-[8px] text-zinc-600 font-bold uppercase mt-1 text-center">
-                  Optional: upload a reference
-                </p>
+                <QuickStartText
+                  title="Add Reference"
+                  subtitle="Optional: upload a reference"
+                  toneClassName="text-zinc-400 group-hover:text-white"
+                  subtitleClassName="text-zinc-600"
+                  maxTitleFontSize={12}
+                />
               </button>
             )}
           </div>

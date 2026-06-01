@@ -77,8 +77,6 @@ describe('buildStudioPageController', () => {
         clearCompleted: () => {},
         isResting: false,
         exportLegacyVisualBatchSnapshot: () => {},
-        isBackgroundEnabled: true,
-        setBackgroundEnabled: () => {},
         activeServerJobCount: 1,
         onInspectJob: () => {},
         diagnostics: {
@@ -154,8 +152,6 @@ describe('buildStudioPageController', () => {
         clearCompleted: () => {},
         isResting: false,
         exportLegacyVisualBatchSnapshot: () => {},
-        isBackgroundEnabled: true,
-        setBackgroundEnabled: () => {},
         activeServerJobCount: 0,
         onInspectJob: () => {},
         diagnostics: {

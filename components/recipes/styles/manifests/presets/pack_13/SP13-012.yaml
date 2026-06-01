@@ -24,8 +24,9 @@ visualDna:
   creative_brief: >-
     Use Retro Mecha VHS Grain as style anchor for analog industrial drama:
     angular cel-era machine design, signal artifacts, and hard directional
-    lighting should transfer without requiring a mecha, cockpit, hangar,
-    crew-scale marker, or launch context.
+    lighting should transfer by giving the input mecha silhouette, cockpit-like
+    compression, panel breakup, or crew-scale cues when useful, without fixing a
+    hangar or launch context.
 avoidRules:
   - photoreal
   - ultra-clean-digital

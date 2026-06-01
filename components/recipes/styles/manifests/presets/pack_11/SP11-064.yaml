@@ -20,9 +20,15 @@ visualDna:
   render_quality: Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect
   spatial_distortion: Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
   atmosphere: Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment
-  key_features: Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle
+  key_features: >-
+    Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern,
+    conjunctiva-vessels, lacrimal-caruncle
   creative_brief: >-
-    Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints.
+    Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights.
+    Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints. Apply
+    Iris/Eye Macro as a portable style system over any input: preserve its construction grammar, material cues, scale
+    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
+    sample, product shot, or scene template.
 avoidRules:
   - skin
 assets:

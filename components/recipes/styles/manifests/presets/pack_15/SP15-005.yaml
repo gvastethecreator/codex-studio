@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Collective comfort, thermal relief, and visible ecological stewardship.
   key_features: Thermal battery basins, refill-node motifs, mist-pergola rhythm, and mixed-use civic occupancy cues.
   creative_brief: >-
-    Preserve sun-reservoir commons grammar as a reusable style system:
-    concentric hydro-civic planning, thermal-relief architecture, and public
-    stewardship visibility should remain coherent across subjects without
-    requiring basins, kiosks, crowds, or a literal commons.
+    Recast the input as a cooling civic hydrology object: concentric aquifer
+    rings, mist-pergola shadows, pale porous stone, and blue thermal relief
+    highlights. Basins, kiosks, crowds, or commons may support the read, but the
+    style should travel as calm water governance and sun-tempered geometry.
 avoidRules: [photoreal, militarized, dirty-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-005.webp }
 attributes:

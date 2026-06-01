@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-233
 packId: pack_05
-name: Knights of Sidonia - Vacuum Fortress Survival
+name: Vacuum-Fortress Survival Discipline
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Supervivencia austera en vacío-fortaleza, con disciplina sistémica y biotecnología defensiva de último recurso.
-  form_and_line: Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de hábitat.
+  aesthetic: >-
+    Austere survival anime in hostile scale, with closed-habitat discipline, cosmic emptiness,
+    defensive biotechnology, and everyday last-resort ritual
+  form_and_line: >-
+    Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de
+    hábitat.
   color_palette: Gris grafito, verde tenue de sistemas vitales, blanco clínico y negro cósmico profundo.
   lighting_setup: Iluminación funcional de habitáculo, franjas frías de emergencia y contraluz de vacío exterior.
-  material_texture: Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y superficies de uso continuo.
+  material_texture: >-
+    Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y
+    superficies de uso continuo.
   render_quality: Sci-fi de precisión sobria con foco en escala interior y sensación de ecosistema cerrado.
-  spatial_distortion: Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior infinito.
+  spatial_distortion: >-
+    Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior
+    infinito.
   atmosphere: Ascética, aislada y resiliente, con tensión de extinción permanente.
-  key_features: Hábitat cerrado, uniformidad operativa, vacío estelar, biotecnología defensiva y ritual de supervivencia cotidiana.
+  key_features: >-
+    Closed-habitat geometry, operational uniformity, hostile void, defensive biotechnology, survival
+    ritual, and systemic austerity
   creative_brief: >-
-    Define una gramática vacuum-fortress reusable donde arquitectura de
-    hábitat cerrado, disciplina de supervivencia y escala cósmica inhóspita
-    sostengan identidad coherente sin exigir nave, deck o ciudad literal.
+    Use Knights of Sidonia as style anchor for vacuum-fortress survival discipline. Any prompt
+    should feel sealed, procedural, isolated, and cosmically threatened. Ships, decks, cities,
+    uniforms, pilots, and space battles are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-233.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

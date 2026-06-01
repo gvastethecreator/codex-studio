@@ -15,13 +15,18 @@ visualDna:
   aesthetic: Classic American college style, Ivy League legacy, Nantucket summer ease
   form_and_line: Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll
   color_palette: Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold
-  lighting_setup: Daylight, campus, autumn-gold hour, library reading-room warmth, crew-regatta morning
+  lighting_setup: Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness
   material_texture: Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan
   render_quality: Ralph Lauren heritage prep, rich, classic, country-club ease, old-money nonchalance
   spatial_distortion: None
-  atmosphere: Smart, wealthy, traditional, generational ease, tailored confidence, ivy-covered privilege
+  atmosphere: Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish
   key_features: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters
-  creative_brief: Cable-knit generations draped across shoulders like inherited wisdom, oxford cloth carrying the weight of libraries filled with leather-bound certainty. Nantucket reds fade toward pink under autumn sun, each crease earned by privilege too old to question itself, ease worn as casually as a half-untucked shirt.
+  creative_brief: >-
+    Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp
+    stripes, blazer roll, needlepoint detail, cordovan shine and crisp
+    navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere
+    only; do not require a college scene, human student or inherited-wealth
+    portrait.
 avoidRules:
   - messy
   - ripped
@@ -43,4 +48,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

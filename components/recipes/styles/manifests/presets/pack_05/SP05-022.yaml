@@ -12,19 +12,28 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Urban-supernatural severity style with monochrome dominance, high-fashion restraint, and spiritual pressure as controlled aura geometry
-  form_and_line: Long razor diagonals, contour precision, severe silhouette blocking, mask-like simplification, ink-clean negative-space cuts
+  aesthetic: >-
+    Urban-supernatural severity style with monochrome dominance, high-fashion restraint, and spiritual pressure as
+    controlled aura geometry
+  form_and_line: >-
+    Long razor diagonals, contour precision, severe silhouette blocking, mask-like simplification, ink-clean
+    negative-space cuts
   color_palette: Black-white core with selective cyan-violet spectral accents, silver mids, and sparse high-intensity contrast nodes
   lighting_setup: Hard-edged rim illumination, selective underglow, concentrated aura bloom pockets, and dramatic shadow partitioning
-  material_texture: Smooth matte cloth against polished blade sheen, faint particle haze, low-grain digital cel patina, crisp effect overlays
+  material_texture: >-
+    Smooth matte cloth against polished blade sheen, faint particle haze, low-grain digital cel patina, crisp effect
+    overlays
   render_quality: Premium early-digital shonen polish optimized for iconic pose readability and supernatural edge fidelity
   spatial_distortion: High-angle slash trajectories with compressed depth lanes and silhouette-priority framing for impact authority
   atmosphere: Severe, iconic, charged, controlled, intimidating
-  key_features: Monochrome supremacy, razor-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction
+  key_features: >-
+    Monochrome supremacy, razor-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature
+    abstraction
   creative_brief: >-
-    Anchor this preset in monochrome edge-energy language and strict silhouette
-    authority; emphasize spiritual-pressure contrast design over any specific
-    transformation scene or character setup.
+    Anchor this preset in monochrome edge-energy language and strict silhouette authority; emphasize spiritual-pressure
+    contrast design over any specific transformation scene or character setup. Apply this anime/IP-title grammar over
+    any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while
+    avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-022.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

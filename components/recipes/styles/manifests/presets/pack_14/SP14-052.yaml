@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-052
 packId: pack_14
-name: Helios Beacon Cliffs
+name: Helios Beacon Signal
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Coastal beacon chain aligned to solar rites and naval warnings.
-  form_and_line: Cliff towers, signal braziers, and stepped lookout paths.
+  aesthetic: Helios beacon signal where sunlight becomes weaponized communication and sacred warning.
+  form_and_line: Cliff-tower cues, signal braziers, and stepped lookout paths.
   color_palette: Sun gold, sea blue, and chalk stone.
   lighting_setup: Intense horizon glare and ember beacon punctuations.
   material_texture: Wind-eroded limestone, bronze mirrors, and rope rigging.
   render_quality: Wide environmental concept with clear distance cues.
-  spatial_distortion: Cliffline perspective cascading between beacon points.
+  spatial_distortion: Cascading perspective between beacon points and sun-struck edges.
   atmosphere: Alert devotion and maritime vigilance.
-  key_features: Solar mirrors, beacon pyres, and cliff shrines.
-  creative_brief: A Greek coastline where sunlight itself is weaponized as communication.
+  key_features: Solar mirrors, beacon pyres, cliff-shrine cues.
+  creative_brief: Transform the input through Helios beacon signal, using sunlight as warning and communication without requiring cliffs.
 avoidRules: [photoreal, modern-lighthouse-tech, goofy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-052.webp }
 attributes:
   negativePrompt: photoreal, modern-lighthouse-tech, goofy, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

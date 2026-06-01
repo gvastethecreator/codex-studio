@@ -19,12 +19,13 @@ visualDna:
   material_texture: Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth
   render_quality: Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance
   spatial_distortion: Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision
-  atmosphere: Adventure, invention, zeppelin-dock excitement, mad-scientist workshop, tea-and-gears coziness
+  atmosphere: Adventure, invention, analog futurism, pressure-system tension, brass-and-steam coziness
   key_features: Cog-wheel motif language, pressure-gauge instrumentation, brass fittings, steam venting cues, mechanical ornament layering
   creative_brief: >-
-    Keep this preset defined by ornate steam-mechanical grammar: brass-copper
-    assemblies, pressure instrumentation, and gaslight warmth should drive the
-    style without depending on named literary references.
+    Apply ornate steam-mechanical grammar to the input: brass-copper
+    assemblies, pressure instrumentation, exposed mechanisms, leather straps,
+    and gaslight warmth should drive the style without requiring zeppelins,
+    workshops, tea tables, or named literary references.
 avoidRules:
   - plastic
   - digital

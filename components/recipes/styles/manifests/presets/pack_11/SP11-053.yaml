@@ -12,17 +12,20 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream
+  aesthetic: Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity
   form_and_line: Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex
   color_palette: Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen
   lighting_setup: Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror
   material_texture: Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity
   render_quality: Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry
   spatial_distortion: Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
-  atmosphere: Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment
+  atmosphere: Indulgent, sweet, luxurious, cocoa-comfort, melting-moment
   key_features: Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl
   creative_brief: >-
-    Render chocolate as a viscosity-driven material: ribbon folds, glossy highlights, and dense fluid thickness. Emphasize premium confection texture and controlled flow behavior without hardcoding a specific dessert scene.
+    Render the input through chocolate-flow material behavior: ribbon folds,
+    glossy highlights, dense viscosity, drip formation, and tempered sheen.
+    Preserve premium confection texture without requiring a dessert, river,
+    waterfall, fondue setup, or patisserie scene.
 avoidRules:
   - watery
 assets:

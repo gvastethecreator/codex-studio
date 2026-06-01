@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-219
 packId: pack_13
-name: Daily Lives of High School Boys - Hallway Idiot Theater
+name: Mundane Absurdist Theater
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Daily Lives title anchor translated into dead-serious nonsense, sketch-comedy timing, mundane-stage absurdity, awkward underplaying, and loose ensemble rhythm
-  form_and_line: Deadpan-comedy contour economy, exaggerated reaction silhouette beats, and banal-stage composition that can wrap any prompt
-  color_palette: Neutral grays, navy anchors, faded concrete tones, casual green notes, and occasional comedic accent pops
-  lighting_setup: Flat everyday daylight, casual afternoon fill, and low-drama illumination supporting timing-first gags
-  material_texture: Wool-like cloth texture, desk-edge scuffs, grass-and-dirt matte notes, and everyday prop finishes as optional comedic tactility
-  render_quality: Ensemble deadpan rendering with timing clarity, awkward-boy body language, and low-stakes absurdist rhythm
-  spatial_distortion: Momentary gag exaggeration through reaction-scale pops within otherwise normal perspective
-  atmosphere: Goofy, deadpan, schoolyard, loose
-  key_features: Deadpan commitment, low-budget absurdist posing, mundane-stage framing, reaction-scale pops, ensemble rhythm
+  aesthetic: >-
+    Mundane absurdist anime theater where dead-serious nonsense, awkward underplaying, sketch
+    timing, and banal staging make comedy dry
+  form_and_line: >-
+    Deadpan contour economy, exaggerated reaction beats, plain stage geometry, and loose ensemble
+    rhythm around the subject
+  color_palette: >-
+    Neutral gray, navy anchors, faded concrete, casual green, beige daylight, and sudden small comic
+    accent pops
+  lighting_setup: >-
+    Flat everyday daylight, casual afternoon fill, low-drama illumination, and timing-first
+    visibility
+  material_texture: >-
+    Woollike cloth, desk-edge scuffs, grass-dirt matte, cheap plastic, and plain everyday finish as
+    comic tactility
+  render_quality: >-
+    Deadpan ensemble anime finish with timing clarity, awkward body language, and low-budget absurd
+    rhythm
+  spatial_distortion: Momentary gag exaggeration and reaction-scale pops inside otherwise normal perspective
+  atmosphere: Goofy, deadpan, loose, dry, underplayed
+  key_features: >-
+    Deadpan commitment, banal-stage framing, reaction pops, low-budget absurdism, ensemble rhythm,
+    and awkward silence
   creative_brief: >-
-    Use Daily Lives of High School Boys as a style anchor for mundane absurdist
-    theater: deadpan commitment and ensemble timing should survive without
-    requiring boys, hallways, riverbanks, blazers, or school staging.
+    Use Daily Lives of High School Boys as style anchor for mundane absurdist theater. Any prompt
+    should perform dead-serious nonsense through plain staging, awkward timing, and dry reaction
+    pops. Boys, hallways, riverbanks, blazers, and schools are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-219.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

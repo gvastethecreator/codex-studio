@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Romantic, ornamental, reverent
   key_features: Circular nimbus motifs, botanical arabesques, integrated border systems
   creative_brief: >-
-    Preserve Mucha-style ornamental flow where figure and decoration interweave seamlessly. Prioritize rhythmic line arabesques, halo framing, and floral geometry so the style remains instantly Art Nouveau across varied subjects without fixed scene constraints.
+    Apply Art Nouveau lithograph flow to any input: sinuous contour, botanical arabesque, halo
+    framing, muted gold, integrated borders, and ornamental curve dominance should unify subject and
+    decoration without requiring women, hair, flowers, posters, or fixed portrait staging.
 avoidRules:
   - straight lines
   - minimal

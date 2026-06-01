@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Happy, expressive, digital, instant communication, friendly warmth, pixel joy
   key_features: Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette
   creative_brief: >-
-    Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth.
+    Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and
+    silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth.
+    Apply Emoji 3D as a portable style system over any input: preserve its construction grammar, material cues, scale
+    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
+    sample, product shot, or scene template.
 avoidRules:
   - flat
   - 2d

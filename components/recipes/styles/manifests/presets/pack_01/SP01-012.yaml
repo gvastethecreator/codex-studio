@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Crushed blacks
   atmosphere: Vibrant, punchy
   key_features: Magenta bias
-  creative_brief: "Reality translated into its boldest slide-film dialect: greens, blues, and reds pushed toward jewel intensity, blacks compressed into decisive graphic weight, edges cut with crystalline confidence. Apply Velvia's saturated conviction to any subject, not only landscape or nature."
+  creative_brief: >-
+    Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens,
+    saturated blues and reds, crisp edges, compressed blacks, and vivid chrome
+    contrast should energize any subject without requiring landscape or nature.
 avoidRules:
   - illustration
   - painting

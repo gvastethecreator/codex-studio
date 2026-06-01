@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-036
 packId: pack_07
-name: Casino Floor
-category: 3. Historical And Sacred Architecture
+name: Casino Sensory Grid
+category: 3. Civic Infrastructure And Specialty Spaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - historical-and-sacred-architecture
+  - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: Hipercomercio de juego sensorial, diseñado para atención continua y permanencia prolongada.
-  form_and_line: Densidad ortogonal de módulos brillantes, patrón no direccional, espejos estratégicos y circulación deliberadamente ambigua.
+  form_and_line: >-
+    Densidad ortogonal de módulos brillantes, patrón no direccional, espejos estratégicos y
+    circulación deliberadamente ambigua.
   color_palette: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
-  lighting_setup: Base oscura con hotspots seriados, wash de techo, destellos decorativos y sobreestimulación luminosa controlada.
+  lighting_setup: >-
+    Base oscura con hotspots seriados, wash de techo, destellos decorativos y sobreestimulación
+    luminosa controlada.
   material_texture: Patrón saturado, carcasas moldeadas, cromo usado, laminados brillantes y paño denso.
   render_quality: Realismo de estímulo alto con jerarquía lumínica comercial y acabado nocturno de gran densidad.
   spatial_distortion: None
   atmosphere: Activación continua, desorientación temporal y confort-presión de consumo.
-  key_features: Envolvente sin tiempo, glow bajo, clusters de premio, supresión de wayfinding y profundidad espejada.
+  key_features: >-
+    Envolvente sin tiempo, glow bajo, clusters de premio, supresión de wayfinding y profundidad
+    espejada.
   creative_brief: >-
-    Define una gramática de casino transferible donde patrón, brillo y reflejo
-    secuestren la atención de forma estratégica. Debe sentirse táctico y
-    comercial, nunca caricatura festiva.
+    El preset debe secuestrar atención con patrón, glow bajo, reflejo y desorientación comercial.
+    Cualquier input se vuelve estímulo táctico de permanencia prolongada, más psicología ambiental
+    que fiesta decorativa.
 avoidRules:
   - daylight
   - calm
@@ -35,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: historical-and-sacred-architecture
-  categoryName: 3. Historical And Sacred Architecture
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
   tags:
     - architecture-and-interior
-    - historical-and-sacred-architecture
+    - civic-infrastructure-and-specialty-spaces
   supportedTasks:
     - image_generate
     - image_edit

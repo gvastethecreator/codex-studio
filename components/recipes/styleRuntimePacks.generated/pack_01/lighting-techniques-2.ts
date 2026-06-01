@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Serious, artistic',
       key_features: 'Chiaroscuro',
       creative_brief:
-        "A single 45-degree source sculpts any subject from darkness with warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep Rembrandt's reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.",
+        'Apply Rembrandt lighting to the input with a single 45-degree source, warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.',
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Conceptual, trippy',
       key_features: 'Light pattern',
       creative_brief:
-        'A projected source turns any surface into a temporary screen: pattern overlay, pixel-grid texture, mixed color, and light warped by form. Treat projection as conceptual photographic lighting without requiring faces, skin, identity narrative, or music-video staging.',
+        'Apply projector-light mapping to the input: pattern overlay, pixel-grid texture, mixed color spill, and warped light across form should turn any surface into a temporary screen without requiring faces or music-video staging.',
     },
   },
   {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Conflict, mystery',
       key_features: 'Half dark',
       creative_brief:
-        'A 90-degree side light divides any subject into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.',
+        'Apply split lighting to the input with a 90-degree side source, dividing forms into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.',
     },
   },
   {
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic, anonymous',
       key_features: 'Dark subject',
       creative_brief:
-        'Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to outline, the subject becoming archetype through the erasure of detail. Anonymity elevated to universality, where what is obscured speaks louder than what is shown.',
+        'Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to outline, the subject becoming archetype through the erasure of detail. Anonymity elevated to universality, where what is obscured speaks louder than what is shown. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -236,7 +236,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Magical, kinetic',
       key_features: 'Dark background',
       creative_brief:
-        'Light granted the freedom of a brushstroke, luminous calligraphy inscribed upon the darkness of time itself. Neon ribbons tracing invisible choreographies through space, the dancer vanished but their movement permanently etched. A photograph that remembers not the object but its path, duration collapsed into a single radiant glyph.',
+        'Apply light-painting exposure to the input: luminous trails, long-shutter neon ribbons, gestural calligraphy, and duration marks should draw around or through the subject without requiring a dancer or performance setup.',
     },
   },
   {
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Unsettling, factual',
       key_features: 'Evidence-like markers',
       creative_brief:
-        'Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime scene, blood, ruler, or investigation props.',
+        'Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime setting, blood, ruler, or investigation props.',
     },
   },
   {
@@ -389,7 +389,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Surreal, time passing',
       key_features: 'Soft focus',
       creative_brief:
-        "Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the patience of a long exposure, moments bleeding into one another like watercolor on wet paper.",
+        "Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the patience of a long exposure, moments bleeding into one another like watercolor on wet paper. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

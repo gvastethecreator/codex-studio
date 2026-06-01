@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Tender, pastoral, comforting
   key_features: White-space breathing room, feathered wash edges, subtle detail accents
   creative_brief: >-
-    Maintain a Beatrix Potter-style balance of observational nature detail and gentle anthropomorphic charm. Use transparent watercolor behavior, soft edge transitions, and paper-white breathing space to keep imagery warm, calm, and timelessly storybook.
+    Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft
+    edge transitions, observational detail, and paper-white breathing space should feel gentle and
+    timeless without requiring animals, gardens, cottages, children, pastoral scenery, or fixed
+    storybook vignettes.
 avoidRules:
   - digital
   - sharp

@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Masthead-safe title zone, blurb-driven layout logic, sensational focal center, newsstand-impact color blocking',
       creative_brief:
-        'Keep this preset defined by pulp-cover sales grammar: lurid contrast, dramatic focal diagonals, and headline-first composition should drive identity without hardcoding one detective scene.',
+        'Apply pulp magazine cover grammar to any input: lurid contrast, dramatic diagonals, cheap coated-paper wear, masthead-safe pressure, and sensational focal hierarchy should create newsstand urgency without requiring detectives, monsters, peril scenes, headlines, weapons, or fixed covers.',
     },
   },
   {
@@ -46,7 +46,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chic, fast, atelier energy, catwalk motion',
       key_features: '9 heads tall, loose gesture, editorial whitespace',
       creative_brief:
-        'Brushstrokes capture the fugitive moment between steps, fabric still settling from motion, the figure already moving on. Ink washes suggest rather than describe, leaving space for the eye to complete what the hand began. This is the atelier at speed, where elegance emerges from the chase, not the capture.',
+        'Apply runway fashion-illustration grammar to any input: elongated gesture, fugitive brush motion, editorial whitespace, watercolor splash, and fabric-suggesting line speed should make elegance feel caught in motion without requiring models, catwalks, clothing, poses, or atelier scenes.',
     },
   },
   {
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging',
       creative_brief:
-        'Define this preset through surreal symbolic composition and paradox lighting: the style should feel like a conceptual music-cover portal without referencing any specific band legacy or canonical album motif.',
+        'Apply surreal album-cover grammar to any input: square-format tension, symbolic paradox, impossible lighting, prismatic accents, and matte print mystery should make the subject iconic without requiring bands, records, portraits, instruments, landscapes, or canonical album motifs.',
     },
   },
   {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Analytical, trustworthy, concise',
       key_features: 'Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds',
       creative_brief:
-        'Prioritize information hierarchy and cognitive clarity. Build visuals from reusable chart and icon modules, keeping color semantics and reading flow explicit so complex topics remain quickly understandable across editorial contexts.',
+        'Apply editorial infographic grammar to any input: modular chart primitives, icon families, directional flow, semantic color grouping, and dashboard-grade hierarchy should clarify complex subjects without requiring labels, arrows, UI dashboards, statistics, or explainer-page layouts.',
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, heavy, trigger discipline, combat-readiness',
       key_features: 'Side view, mechanical detail, magazine/guard',
       creative_brief:
-        'Preserve identity through weapon-design grammar: component hierarchy, material wear logic, and isolated profile readability should define the style without anchoring it to one battle story.',
+        'Apply weapon-design concept grammar to any input: component hierarchy, side-profile clarity, industrial material wear, ergonomic line flow, and tactical edge highlights should create controlled silhouette authority without requiring guns, blades, armories, combat, magazines, or battle stories.',
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Neutral, design, professional review, iterative feedback',
       key_features: 'Scale, turnaround views, callout annotations',
       creative_brief:
-        'Keep this preset grounded in turnaround-sheet grammar: proportion locking, neutral lighting, and annotation-ready orthographic consistency should define identity beyond any specific character persona.',
+        'Apply character-turnaround sheet grammar to any input: proportion locking, neutral lighting, orthographic consistency, material callouts, annotation-ready edges, and scale discipline should support design handoff without requiring humanoid characters, T-poses, expression sheets, labels, or fixed sheet layouts.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

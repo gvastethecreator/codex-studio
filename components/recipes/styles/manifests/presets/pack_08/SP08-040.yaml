@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Apollo retro moon mission, one-small-step romance, Cape-Canaveral optimism
+  aesthetic: Apollo-era retro space suit, one-small-step romance, Cape-Canaveral optimism
   form_and_line: Bulky suit, pressurized-ring segmentation, hose-connector geometry, glove-gasket bulk, backpack-box volume
   color_palette: White, silver, American-flag accent, visor-gold, beta-cloth cream, mission-patch color
-  lighting_setup: Harsh space sun, lunar-surface contrast, unfiltered-solar glare, helmet-interior bounce
+  lighting_setup: Harsh vacuum-like key light, unfiltered-solar glare, helmet-interior bounce, gold-visor reflection
   material_texture: Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing, Velcro patches
   render_quality: Historic, tech, NASA-archive authenticity, vacuum-silence clarity
   spatial_distortion: None
-  atmosphere: Heroic, exploration, sea-of-tranquility wonder, mission-control suspense, giant-leap awe
+  atmosphere: Heroic, exploration, mission-control suspense, giant-leap awe, archival optimism
   key_features: Bubble helmet, gold visor, mission patch, umbilical hoses, moon boots
-  creative_brief: Beta cloth gleaming in the unfiltered light of a sun that has never touched atmosphere, gold visor reflecting the curve of a world left behind. Rubber gaskets and aluminum connectors seal a human shape against the silence of vacuum, mission patches sewn with the optimism of an era that believed the stars were the next frontier and suited up accordingly, each Velcro tab a small grasp at infinity.
+  creative_brief: >-
+    Translate the input into retro EVA suit language: beta cloth, bubble helmet,
+    gold visor, rubber gaskets, umbilical hoses, aluminum rings and mission-patch
+    color. Keep Apollo optimism and vacuum clarity without requiring a lunar
+    surface, astronaut hero pose or NASA archive reenactment.
 avoidRules:
   - modern sleek
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

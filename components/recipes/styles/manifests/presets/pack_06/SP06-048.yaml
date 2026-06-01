@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Expansive, coherent, cinematic
   key_features: Seamless blend
-  creative_brief: Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless atmosphere. Cinematic light unifies fragments that were never together, making scale, depth, and continuity feel inevitable. The image convinces through coherence, not through requiring environments, skies, architecture, or vistas.
+  creative_brief: >-
+    Apply matte-painting extension logic to any input: phototexture integration,
+    painted continuity, atmospheric depth, cinematic color matching, and seamless
+    scale expansion. Keep VFX-believable cohesion without requiring skies,
+    architecture, vistas, plate photography, or environment-only subjects.
 avoidRules:
   - photo
   - realistic

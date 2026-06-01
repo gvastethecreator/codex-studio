@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-006
 packId: pack_07
 name: Brutalist Architecture
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,37 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica sin concesiones decorativas.
-  form_and_line: Apilamientos monolíticos, vacíos profundos, cantiléveres pesados, ortogonalidad dura y cantos tallados por sombra.
-  color_palette: Gama de grises minerales, carbón y pizarra, con variaciones húmedas de ceniza de baja saturación.
-  lighting_setup: Sol direccional severo, pozos de sombra profundos, contraste alto y lectura volumétrica por recesos.
-  material_texture: Marca de encofrado visible, poro de árido expuesto, junta estructural franca y pátina mineral envejecida.
-  render_quality: Render tectónico de alta fidelidad material, con prioridad de masa, proporción y lectura estructural.
-  spatial_distortion: Perspectiva monumental estable, compresión de profundidad por peso volumétrico y jerarquía de bloque.
+  aesthetic: >-
+    Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica
+    sin concesiones decorativas.
+  form_and_line: >-
+    Apilamientos monolíticos, vacíos profundos, cantiléveres pesados, ortogonalidad dura y cantos
+    tallados por sombra.
+  color_palette: >-
+    Gama de grises minerales, carbón y pizarra, con variaciones húmedas de ceniza de baja
+    saturación.
+  lighting_setup: >-
+    Sol direccional severo, pozos de sombra profundos, contraste alto y lectura volumétrica por
+    recesos.
+  material_texture: >-
+    Marca de encofrado visible, poro de árido expuesto, junta estructural franca y pátina mineral
+    envejecida.
+  render_quality: >-
+    Render tectónico de alta fidelidad material, con prioridad de masa, proporción y lectura
+    estructural.
+  spatial_distortion: >-
+    Perspectiva monumental estable, compresión de profundidad por peso volumétrico y jerarquía de
+    bloque.
   atmosphere: Austero, contundente, contemplativo y duradero.
-  key_features: Hormigón crudo protagonista, huecos sombreados, planos pesados superpuestos y cantiléveres expresivos.
+  key_features: >-
+    Hormigón crudo protagonista, huecos sombreados, planos pesados superpuestos y cantiléveres
+    expresivos.
   creative_brief: >-
-    Construye una gramática brutalista transferible donde la masa y la sombra
-    definan el carácter. La estructura debe leerse sin maquillaje y sostener
-    una sensación de permanencia institucional en cualquier tipología.
+    Construye una gramática brutalista transferible donde la masa y la sombra definan el carácter.
+    La estructura debe leerse sin maquillaje y sostener una sensación de permanencia institucional
+    en cualquier tipología.
 avoidRules:
   - delicate
   - painted
@@ -37,11 +53,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

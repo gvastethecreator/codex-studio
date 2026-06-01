@@ -12,7 +12,9 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil
+  aesthetic: >-
+    Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful
+    disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil
   form_and_line: Bold trading-card outline, gross sticker contours, crash-zoom impact marks, swollen defect shapes
   color_palette: Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black
   lighting_setup: Flat collectible-card lighting, hard highlight on goo, no atmospheric depth
@@ -21,7 +23,13 @@ visualDna:
   spatial_distortion: Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration
   atmosphere: Gross, gleeful, juvenile, loud
   key_features: Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic
-  creative_brief: 'Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects, loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required content. Revulsion should loop back into collectible comedy.'
+  creative_brief: >-
+    Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects,
+    loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required
+    content. Revulsion should loop back into collectible comedy. Apply Crash Zoom Garbage Pail Caricature as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
+    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
+    narrative setup.
 avoidRules:
   - digital
   - HD

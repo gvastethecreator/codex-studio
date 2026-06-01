@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-019
 packId: pack_07
 name: Art Nouveau Interior
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Art Nouveau orgánico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
   form_and_line: Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.
@@ -22,9 +22,9 @@ visualDna:
   atmosphere: Romántica, envolvente, botánica y artesanal.
   key_features: Motivos florales estructurales, curvas tendril, vidrio cromático activo y luminancia orgánica.
   creative_brief: >-
-    Conserva una gramática Art Nouveau transferible donde línea orgánica,
-    ornamento botánico y material artesanal formen un sistema continuo. Debe
-    leerse como estructura viva, no como simple decoración floral aplicada.
+    Conserva una gramática Art Nouveau transferible donde línea orgánica, ornamento botánico y
+    material artesanal formen un sistema continuo. Debe leerse como estructura viva, no como simple
+    decoración floral aplicada.
 avoidRules:
   - straight lines
 assets:
@@ -34,11 +34,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

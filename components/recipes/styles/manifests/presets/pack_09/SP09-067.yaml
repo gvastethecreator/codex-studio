@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Compression
   atmosphere: Quiet, cold
   key_features: Sparkle
-  creative_brief: Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white.
+  creative_brief: >-
+    Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the
+    white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must
+    feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow,
+    the world rendered in a single note of white. Use Snow as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - ice
   - slush

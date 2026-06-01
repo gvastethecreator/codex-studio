@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Simplified shapes
   atmosphere: Bold, graphic
   key_features: Clean cuts
-  creative_brief: Linoleum surrenders to the blade in smooth curves impossible in wood, the cut flowing like ink itself frozen mid-gesture. Each color demands its own block, its own registration, its own risk of misalignment. The print celebrates the hand that carves negative space into positive vision.
+  creative_brief: >-
+    Apply linocut relief printing to any input: smooth carved curves, bold
+    negative-space cuts, flat ink planes, slight registration wobble, and
+    hand-pulled pressure texture. Keep graphic print immediacy without requiring
+    poster subjects, protest art, animals, portraits, or workshop tools.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

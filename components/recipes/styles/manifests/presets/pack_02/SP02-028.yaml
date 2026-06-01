@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Morphing, image warp, video feedback, liquid dissolve
   atmosphere: Rebellious, cool, anti-establishment, mosh-pit energy
   key_features: Fast-cut feel, scribble overlays, feedback warp
-  creative_brief: 'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh scenes.'
+  creative_brief: 'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.'
 avoidRules:
   - clean
 assets:

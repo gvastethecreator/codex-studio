@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Tactical-fantasy de coven en pantano ritual, orientado a zonas de control, invocación y deny de terreno.
-  subject_treatment: Brujas de clan y espíritus invocados con silueta clara por escuela mágica.
+  aesthetic: Gramática tactical-fantasy de coven con zonas de control, invocación, deny de terreno y ritual brumoso.
+  subject_treatment: Convierte el input en bruja, espíritu, tótem, zona de hechizo o amenaza invocada con escuela mágica clara.
   color_and_tone: Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.
   lighting_and_shadow: Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.
   texture_and_material: Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.
-  camera_and_composition: Claros circulares conectados por pasarelas con choke-points tácticos.
+  camera_and_composition: Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.
   atmosphere_and_mood: Arcana, peligrosa y teatralmente agresiva.
   rendering_and_quality: Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.
 avoidRules:

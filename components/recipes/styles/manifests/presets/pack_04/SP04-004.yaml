@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Intense, competitive, escalation-driven
   key_features: Speed vectors, panel impact framing, energy-emphasis effects
   creative_brief: >-
-    Drive action through panel rhythm, value punch, and directional line force. Prioritize kinetic clarity and emotional intensity using bold black masses, screentone modulation, and perspective exaggeration that keeps movement readable at a glance.
+    Apply shonen manga action grammar to any input: bold black masses, screentone modulation,
+    speed-line fields, impact burst geometry, and perspective exaggeration should make motion
+    readable at a glance without requiring fighters, tournament beats, attacks, arenas, or a fixed
+    action scene.
 avoidRules:
   - color
   - american comic

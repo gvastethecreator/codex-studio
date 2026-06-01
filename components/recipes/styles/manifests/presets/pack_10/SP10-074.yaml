@@ -12,16 +12,16 @@ tags:
   - abstract-and-experimental
   - pattern-and-texture
 visualDna:
-  aesthetic: Colored glass window
+  aesthetic: Stained glass segmentation
   form_and_line: Black lead came
   color_palette: Glowing, saturated
   lighting_setup: Backlit
   material_texture: Glass imperfections
-  render_quality: Religious, colorful
+  render_quality: Luminous, leaded glass
   spatial_distortion: Simplified shapes
-  atmosphere: Holy, bright
+  atmosphere: Reverent, bright
   key_features: Lead lines
-  creative_brief: Light filtered through cobalt and ruby, saints and stories rendered in lead lines and luminous panes. The window transforms sunlight into sermon, color becoming scripture for those who cannot read.
+  creative_brief: Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or symbols exist, make them reverent; otherwise convert the subject into leaded color fields without requiring saints, windows, or sermon imagery.
 avoidRules:
   - opaque
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -4,8 +4,14 @@ packId: pack_15
 name: Goldline Archives Tower
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Bureaucratic decopunk monument where memory becomes vertical machinery, gold indexing, and controlled access.
   form_and_line: Vertical fin stacks, archive-grid shelves, reading-hall rings, pneumatic tube diagonals, and filing-spine shafts.
@@ -15,22 +21,37 @@ visualDna:
   render_quality: Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.
   spatial_distortion: Upward vertical perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
   atmosphere: Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.
-  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.
+  key_features: >-
+    Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk
+    geometry.
   creative_brief: >-
-    Preserve goldline archives-tower grammar as a reusable style system:
-    vertical filing monumentality, indexed access control, and brass
-    bureaucratic machinery should remain coherent across subjects.
-avoidRules: [photoreal, minimalist, cyberpunk-chaos, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-058.webp }
+    File the input into vertical bureaucratic power: gold index tabs, pneumatic tubes, parchment labels, brass mesh, and
+    clockwork lift rails should make memory feel mechanical and controlled. Archives or towers can appear, but the style
+    is indexed permanence and access pressure. Apply this corepunk genre grammar over any input: preserve the faction
+    mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required
+    city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - minimalist
+  - cyberpunk-chaos
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-058.webp
 attributes:
   negativePrompt: photoreal, minimalist, cyberpunk-chaos, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

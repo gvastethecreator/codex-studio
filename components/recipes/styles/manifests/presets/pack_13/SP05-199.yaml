@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Resolute, romantic, sweeping, brave
   key_features: Wind-worn silhouettes, crimson focal points, wilderness-to-regal contrast, guardian-like ensemble staging, heroic profile poses
   creative_brief: >-
-    Preserve crimson-princess quest grammar as a reusable style system:
-    wind-worn fantasy silhouettes, guardian-ensemble composition, and
-    resolve-centered chroma hierarchy should remain stable across subjects.
+    Lead the input through crimson princess resolve: wind-worn cloth rhythm,
+    sandstone ochres, dusk-violet depth, crimson focal hierarchy, and guardian
+    ensemble warmth can heroicize any subject without requiring a princess,
+    travel party, battlefield, throne, or wilderness journey.
 avoidRules:
   - realistic
   - 3d render

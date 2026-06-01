@@ -12,19 +12,36 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making
-  form_and_line: Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first structure
-  color_palette: Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy
-  lighting_setup: Ambient atmospheric lighting established through large value masses and early-stage contrast anchors
-  material_texture: Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence
-  render_quality: Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish
-  spatial_distortion: Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction
+  aesthetic: >-
+    Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and
+    exploratory visual decision-making
+  form_and_line: >-
+    Gestural brush massing with minimal contour commitment, directional stroke flow, and
+    value-shape-first structure
+  color_palette: >-
+    Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast
+    read hierarchy
+  lighting_setup: >-
+    Ambient atmospheric lighting established through large value masses and early-stage contrast
+    anchors
+  material_texture: >-
+    Visible digital brush grain with layered opacity passes, rough-edge blending, and
+    process-forward stroke evidence
+  render_quality: >-
+    Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and
+    iterative velocity over polish
+  spatial_distortion: >-
+    Intentionally unresolved edge zones with simplified depth grouping and suggestive form
+    abstraction
   atmosphere: Energetic, exploratory, rough, expressive, iterative
-  key_features: Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression
+  key_features: >-
+    Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail
+    suppression
   creative_brief: >-
-    Preserve identity through speedpainting grammar: large-value block-ins,
-    gestural stroke economy, and mood-prioritized form solving should define
-    the preset without anchoring to a single sketch narrative.
+    Apply speedpaint concept grammar to any input: large value block-ins, gestural stroke economy,
+    rough opacity passes, selective detail suppression, and mood-first form solving should define
+    ideation energy without requiring landscapes, characters, thumbnails, fantasy scenes, or
+    unfinished sketches.
 avoidRules:
   - detailed
   - polished

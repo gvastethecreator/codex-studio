@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Warm, ancient',
       key_features: 'Layers',
       creative_brief:
-        'Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs. Render the quiet dignity of the elemental, rock that remembers being sand.',
+        'Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs. Render the quiet dignity of the elemental, rock that remembers being sand. Use Sandstone as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -33,12 +33,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Grey, White, Black tips',
       lighting_setup: 'Soft sheen',
       material_texture: 'Fluffy, layered',
-      render_quality: 'Wildlife, warm',
+      render_quality: 'Warm, directional',
       spatial_distortion: 'Flowing hair',
       atmosphere: 'Wild, soft',
       key_features: 'Fur direction',
       creative_brief:
-        'Render the layered architecture of wolf fur, where grey and white guard hairs float above a dense undercoat of warmth, each strand carrying direction and purpose as if wind still passes through it. The soft sheen should trace the contours of a living creature without revealing the animal itself. Capture the paradox of softness that shelters wildness, comfort that conceals tooth and claw.',
+        'Apply wolf-fur architecture as directional material: grey and white guard hairs floating over dense warm undercoat, strand flow following form, soft sheen tracing contours, and wild softness with hidden strength. If the input includes a creature or character, let the coat transform it; otherwise use fur as a tactile surface treatment without requiring an animal reveal.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Light, natural',
       key_features: 'Overlapping',
       creative_brief:
-        'Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order. The image must float between fragility and resilience.',
+        'Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order. The image must float between fragility and resilience. Use Bird Feathers as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, sudden',
       key_features: 'Spiderweb crack',
       creative_brief:
-        'Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath.',
+        'Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -90,12 +90,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Black/Grey marble look',
       lighting_setup: 'Glossy clear coat',
       material_texture: 'Smooth but visual depth',
-      render_quality: 'Supercar, high tech',
+      render_quality: 'High tech, performance',
       spatial_distortion: 'None',
       atmosphere: 'Fast, expensive',
       key_features: 'Random flakes',
       creative_brief:
-        'Render the depth illusion of forged carbon fiber where random black flakes float in a glossy matrix like a frozen storm trapped in obsidian, creating a marble-like chaos of high-performance engineering. The clear coat should create an infinite window into a void where structure becomes ornament. Capture the aesthetic of speed made solid.',
+        'Render forged carbon fiber as performance material over the input: random black and grey flakes suspended in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite depth without requiring a supercar.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cold, urban',
       key_features: 'Air bubbles',
       creative_brief:
-        'Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban.',
+        'Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban. Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Solid, history',
       key_features: 'Running bond',
       creative_brief:
-        'Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges.',
+        'Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fx And Procedural Materiality',
     negativePrompt: 'metal, wood',
     style: {
-      aesthetic: 'Consumer product',
+      aesthetic: 'Injection molded plastic',
       form_and_line: 'Parting lines',
       color_palette: 'Bright, saturated',
       lighting_setup: 'Subsurface scattering (slight)',
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Artificial, toy',
       key_features: 'Uniform color',
       creative_brief:
-        'Capture the synthetic honesty of injection-molded plastic with its faint parting lines and subtle sink marks like the fingerprints of manufacture pressed into saturated color. The surface should feel unnaturally uniform, smooth in a way that nature never achieves, catching subsurface light with a slight translucency at the edges. This is the material of mass desire, smooth and democratic.',
+        'Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.',
     },
   },
   {
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fx And Procedural Materiality',
     negativePrompt: 'shiny plastic',
     style: {
-      aesthetic: 'Car tire',
+      aesthetic: 'Tire-grade rubber tread',
       form_and_line: 'Treads',
       color_palette: 'Black',
       lighting_setup: 'Matte',
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Functional, dirty',
       key_features: 'Tread pattern',
       creative_brief:
-        'Render the functional sculpture of tire tread cut into black rubber valleys designed for grip and water dispersal, a landscape of geometric channels repeating around the curve. The surface must feel matte and slightly tacky, absorbing light into dense darkness while the raised tread pattern catches subtle sheen. Capture the industrial beauty of form following friction to its most direct conclusion.',
+        'Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Trendy, soft',
       key_features: 'Uniform length',
       creative_brief:
-        'Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor.',
+        'Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, temporary',
       key_features: 'Dust',
       creative_brief:
-        'Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution.',
+        'Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution. Use Chalk as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, sticky',
       key_features: 'Drips',
       creative_brief:
-        'Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd.',
+        'Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Functional, dry',
       key_features: 'Granules',
       creative_brief:
-        'Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions.',
+        'Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions. Use Cork Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Protective, cheap',
       key_features: 'Grid of bubbles',
       creative_brief:
-        "Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene.",
+        "Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Quiet, time',
       key_features: 'Top surface only',
       creative_brief:
-        "Summon the quiet blanket of time where a fine grey particulate settles on forgotten surfaces like a slow snowfall of decay, disturbed only by the calligraphy of a passing finger that reveals the original surface beneath. The layer should feel soft and weightless, the visual equivalent of silence accumulating grain by grain. Capture the poetry of the undisturbed, time's slowest signature rendered in dust.",
+        "Summon the quiet blanket of time where a fine grey particulate settles on forgotten surfaces like a slow snowfall of decay, disturbed only by the calligraphy of a passing finger that reveals the original surface beneath. The layer should feel soft and weightless, the visual equivalent of silence accumulating grain by grain. Capture the poetry of the undisturbed, time's slowest signature rendered in dust. Use Dusty Surface as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Gross, old',
       key_features: 'Tide lines',
       creative_brief:
-        "Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a ceiling painting itself in stains.",
+        "Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a ceiling painting itself in stains. Use Water Damage as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, eco',
       key_features: 'Grid',
       creative_brief:
-        'Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future.',
+        'Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future. Use Solar Panel as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fake, clean',
       key_features: 'Uniform height',
       creative_brief:
-        'Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul.',
+        'Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Shocking, fast',
       key_features: 'Branching',
       creative_brief:
-        'Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture.',
+        'Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -380,7 +380,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mysterious, blind',
       key_features: 'Density',
       creative_brief:
-        'Render the soft erasure of thick fog where the world dissolves into gradients of grey, edges softening into suggestion and distance becoming a mystery of volumetric density that swallows form in stages. The material must feel cool and damp, a veil that reveals by hiding, turbulence swirling through the mist like slow thought. Capture the beauty of the half-seen, atmosphere as the art of withholding.',
+        'Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.',
     },
   },
   {
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Futuristic, protected',
       key_features: 'Hex grid (optional)',
       creative_brief:
-        'Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light.',
+        'Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -418,7 +418,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Heavy, sticky',
       key_features: 'Thick',
       creative_brief:
-        'Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of heaviness, the material that time forgot to finish.',
+        'Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of heaviness, the material that time forgot to finish. Use Tar as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Quiet, cold',
       key_features: 'Sparkle',
       creative_brief:
-        'Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white.',
+        'Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white. Use Snow as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -451,12 +451,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Black',
       lighting_setup: 'Matte',
       material_texture: 'Porous, sharp',
-      render_quality: 'Volcanic, barren',
+      render_quality: 'Volcanic, porous',
       spatial_distortion: 'Flow lines',
       atmosphere: 'Desolate, hard',
       key_features: 'Air holes',
       creative_brief:
-        'Render the barren landscape of cooled basalt where gas bubbles have frozen into a black sponge of volcanic origin, sharp edges and flow lines testifying to the violence of its molten birth now stilled into permanence. The surface should feel light but hard, a paradox of porosity and durability, air holes mapping the escape of the fire that formed it. Capture the silence after the flame.',
+        'Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken edges, frozen gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or object exists, give it lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without forcing a barren landscape. Use Lava Rock as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fx And Procedural Materiality',
     negativePrompt: 'tile, wood',
     style: {
-      aesthetic: 'Kitchen floor 70s',
+      aesthetic: 'Retro linoleum pattern',
       form_and_line: 'Printed pattern',
       color_palette: 'Beige, pattern',
       lighting_setup: 'Waxy sheen',
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, home',
       key_features: 'Repeat pattern',
       creative_brief:
-        'Render the nostalgic pattern of mid-century linoleum where printed motifs repeat across a waxy beige surface, edges curling slightly with age like a photograph of domestic memory. The material should feel smooth but tired, a floor that has witnessed decades of footsteps in kitchens long remodeled. Capture the warmth of the retro, the domestic archaeology of an ordinary afternoon preserved in vinyl.',
+        'Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.',
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cozy, retro',
       key_features: 'Messy pile',
       creative_brief:
-        'Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion.',
+        'Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

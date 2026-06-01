@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability
-  form_and_line: Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly structure
+  aesthetic: >-
+    Prop-design presentation style with isolated artifact focus, material storytelling, and
+    game-ready readability
+  form_and_line: >-
+    Clean technical-art contouring with form-break accents, silhouette-first readability, and
+    callout-friendly structure
   color_palette: Material render, PBR-reference, asset-library spectrum
   lighting_setup: Studio, product-isolation light, neutral-pedestal
   material_texture: Wear and tear
@@ -22,9 +26,9 @@ visualDna:
   atmosphere: Valuable, useful, item-card significance, inventory worth
   key_features: Isolated, orthographic view, material breakdown
   creative_brief: >-
-    Define this preset through prop-sheet grammar: isolated presentation,
-    material-history cues, and utility-read composition should carry identity
-    beyond one specific item lore.
+    Apply prop-design presentation grammar to any input: isolated silhouette, material-history cues,
+    orthographic clarity, callout-friendly edges, and utility-read composition should create asset
+    significance without requiring RPG items, weapons, inventory cards, labels, or fixed lore.
 avoidRules:
   - background
 assets:

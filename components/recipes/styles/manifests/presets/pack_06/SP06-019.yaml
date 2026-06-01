@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Rough shading
   atmosphere: Casual, restless, improvised
   key_features: Scribble texture
-  creative_brief: Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Paper dimples under dense scribbles, cross-contours, and obsessive hatch fields that turn idle marks into structure. The style should feel casual and compulsive without requiring notebooks, margins, classrooms, or text.
+  creative_brief: >-
+    Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure
+    variation, paper dimples, obsessive hatching, scribbled cross-contours, and
+    casual compulsive buildup. Keep everyday pen intimacy without requiring
+    notebooks, margins, classrooms, or readable text.
 avoidRules:
   - photo
   - realistic

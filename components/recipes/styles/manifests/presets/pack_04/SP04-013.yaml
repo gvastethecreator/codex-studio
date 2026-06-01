@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Playful, comedic, lighthearted
   key_features: Oversized head, tiny limbs, exaggerated props and expression icons
   creative_brief: >-
-    Prioritize silhouette charm and immediate facial readability through extreme proportion stylization. Keep forms simple, bouncy, and high-contrast so characters remain expressive at small sizes across stickers, panels, and UI-style contexts.
+    Prioritize silhouette charm through extreme proportion stylization. If a
+    character or mascot exists, use oversized head, tiny limbs and expression
+    icons; otherwise apply the style to any input by translating the subject into bouncy simplified chibi
+    proportions usable across stickers, panels and UI-style contexts.
 avoidRules:
   - tall
   - realistic

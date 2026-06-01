@@ -19,9 +19,14 @@ visualDna:
   material_texture: Matte paint, body-paint film, glycerin-sheen, airbrush-gradient, brush-stroke relief, skin-oil through paint
   render_quality: Artistic, illusion, living-canvas spectacle, body-art mastery
   spatial_distortion: None
-  atmosphere: Creative, naked, painted-vulnerability confidence, art-gallery hush, body-ceremony ritual
-  key_features: Paint, brush strokes, trompe-l-oeil effect, painted seams, skin-texture beneath
-  creative_brief: Brush strokes that trace lapels and buttonholes where none exist, the body a trompe-l'oeil canvas that tricks the eye into seeing fabric where there is only pigment and skin. Acrylic matte drying to a second epidermis, airbrush gradients creating shadows that move when the wearer does, the paint fragile and temporary, clothing worn only for the duration of a photograph before water returns the body to itself.
+  atmosphere: Creative, painted-vulnerability confidence, art-gallery hush, temporary-surface ritual
+  key_features: Paint, brush strokes, trompe-l-oeil effect, painted seams, visible substrate texture
+  creative_brief: >-
+    Paint clothing illusion onto the input: acrylic matte film, brush-stroke relief, airbrush gradients, fake seams,
+    faux buttons and trompe-l'oeil shadows. Keep body-paint vulnerability only when the subject calls for it; otherwise
+    treat it as temporary pigment over any surface, not a nude body scene. Apply this fashion/costume grammar over any
+    input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a
+    required body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - clothes
 assets:
@@ -41,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

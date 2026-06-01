@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Planning, technical
   key_features: White on Blue
-  creative_brief: White lines on Prussian blue, the language of engineers rendered in diazo paper and ammonia dreams. Every dimension is a promise, every annotation a constraint, the future drawn before it is built.
+  creative_brief: >-
+    Apply blueprint drafting to the input: Prussian-blue field, white technical
+    linework, dimension-like marks without readable text, and construction
+    schematics should make any subject feel designed before built.
 avoidRules:
   - color
   - 3d
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

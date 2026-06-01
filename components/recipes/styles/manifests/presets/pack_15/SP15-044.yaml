@@ -4,33 +4,61 @@ packId: pack_15
 name: Civic Fallout Museum
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
-  aesthetic: Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying politeness.
-  form_and_line: Monumental slab planes, recessed evidence frames, corridor-like axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.
+  aesthetic: >-
+    Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying
+    politeness.
+  form_and_line: >-
+    Monumental slab planes, recessed evidence frames, corridor-like axes, archive-grid panels, and reactor diagrams cut
+    like autopsy drawings.
   color_palette: Slate, brushed brass, archival ivory, faded warning orange, and cold exhibit glass blue.
   lighting_setup: Museum wash light, precise exhibit spots, brass label glints, and low shadow bands under heavy concrete.
-  material_texture: Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room fragments.
+  material_texture: >-
+    Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room
+    fragments.
   render_quality: Documentary concept scene with controlled hierarchy, no melodrama, and clear evidence staging.
   spatial_distortion: Processional depth forces subjects through evidence frames, confession walls, and policy diagrams.
   atmosphere: Civic introspection, cautionary optimism, historical weight, and quiet institutional shame.
-  key_features: Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date markers.
+  key_features: >-
+    Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date
+    markers.
   creative_brief: >-
-    Preserve civic fallout-museum grammar as a reusable style system:
-    restrained evidentiary staging, archival slab-and-glass severity, and
-    polite institutional guilt should remain coherent across subjects.
-avoidRules: [photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-044.webp }
+    Exhibit the input like public evidence after the blast: archival ivory panels, brushed brass markers, slab shadows,
+    policy diagrams, and cold glass restraint should make guilt polite. Museums or archives can anchor the read; the
+    style is civic memory staged with terrifying calm. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - comedic
+  - fantasy-castle
+  - neon-club
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-044.webp
 attributes:
   negativePrompt: photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

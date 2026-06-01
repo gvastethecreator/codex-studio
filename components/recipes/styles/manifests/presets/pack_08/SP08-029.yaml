@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: University student 1940s, Oxford-common-room nostalgia, candlelit-scholar romance
+  aesthetic: Dark academia tailoring, Oxford-common-room nostalgia, candlelit-scholar romance
   form_and_line: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
   color_palette: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
-  lighting_setup: Library dim, reading-lamp pool, stained-glass amber, fireplace glow, overcast-window grey
+  lighting_setup: Reading-lamp pools, stained-glass amber, fireplace glow, overcast-window grey
   material_texture: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
   render_quality: Intellectual, moody, library-quiet gravitas, Brideshead nostalgia
   spatial_distortion: None
   atmosphere: Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension
   key_features: Glasses, wire-rim frames, worn-leather satchel, fountain pen
-  creative_brief: Tweed worn thin at the elbows from leaning over oak tables in libraries that smell of leather bindings and buried secrets. Cable-knit wool holds the warmth of a fireplace that has witnessed whispered Greek translations, oxblood leather satchel carrying fountain pens and the weight of knowledge pursued for its own sake, the uniform of those who find romance in footnotes.
+  creative_brief: >-
+    Apply dark-academia codes to the input: tweed, corduroy, cable-knit wool,
+    oxblood leather, horn buttons, elbow patches and paper-cream contrast. Keep
+    secret-history tension without requiring a university, library table,
+    fountain pen, satchel or student figure.
 avoidRules:
   - bright
   - sport
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

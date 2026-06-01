@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Mechball league portuaria de alta energía, centrada en objetivo central, rotaciones rápidas y juego de equipo.
-  subject_treatment: Mechs-atleta ligeros codificados por equipo con silueta y rol táctico inequívocos.
+  aesthetic: Gramática mechball esports con objetivo central, rotaciones rápidas, posesión y juego de equipo de alta energía.
+  subject_treatment: Si el input admite cuerpo o máquina, mecanizarlo como mech-atleta; si es objeto, volverlo balón, objetivo o pieza de rotación.
   color_and_tone: Cobalto dominante, naranja de competencia y neutros acero con reflejo marino frío.
   lighting_and_shadow: Focos de estadio, niebla suave y reflejos especulares en piso húmedo para lectura de jugada.
   texture_and_material: Aleación recubierta, polímero marcado por impacto, piso deportivo gomado y hormigón de muelle.
-  camera_and_composition: Arena-bowl con objetivo central, profundidad de graderío y lanes tácticos visibles.
+  camera_and_composition: Objetivo central, lanes tácticos y lectura de posesión sin exigir docks o arena-bowl.
   atmosphere_and_mood: Rival, cinética y de adrenalina sostenida.
   rendering_and_quality: Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.
 avoidRules:

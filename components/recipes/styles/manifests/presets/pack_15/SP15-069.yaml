@@ -4,11 +4,19 @@ packId: pack_15
 name: Rocket Chapel Outpost
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
   aesthetic: Rocket-age devotional style where engines, vows, and navigation icons merge into sacred preparation.
-  form_and_line: Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary forms.
+  form_and_line: >-
+    Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary
+    forms.
   color_palette: Mission white, worn brass, cosmic blue, candle amber, and scorched launch gray.
   lighting_setup: Narrow altar spot, hatchway rimlight, blue engine glow, and small votive reflections on polished metal.
   material_texture: Painted steel, cloth mission banners, worn floor plating, heat-scarred brass, and paper blessing tags.
@@ -17,20 +25,33 @@ visualDna:
   atmosphere: Faith, fear, mission resolve, and quiet mechanical tenderness.
   key_features: Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.
   creative_brief: >-
-    Push rocket chapel-outpost as reusable style: any subject should feel
-    sanctified by launch risk, with engine geometry, fragile vows, and cosmic
-    iconography fused into one ritual aesthetic.
-avoidRules: [photoreal, comedy, cyberpunk-slum, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-069.webp }
+    Sanctify the input through launch risk: nozzle halos, mission-white steel, star triptychs, candle-amber engine glow,
+    and paper blessing tags should fuse machinery with vow. Chapel or outpost cues may appear, but the style is
+    devotional preparation for mechanical departure. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - comedy
+  - cyberpunk-slum
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-069.webp
 attributes:
   negativePrompt: photoreal, comedy, cyberpunk-slum, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Serenity, resonance, ritual repair, and communal breath.
   key_features: Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.
   creative_brief: >-
-    Apply crater choir-sanctuary as an abstract style treatment: make any
-    subject feel tuned, suspended, echoed, and ritually softened by visible
-    sound geometry.
+    Tune the input into crater resonance: lavender-silver harmonic rings,
+    suspended wire lines, echo-dish curves, acoustic fins, and spiral tone paths
+    visibly soften any subject with ritual sound geometry.
 avoidRules: [photoreal, horror, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-078.webp }
 attributes:

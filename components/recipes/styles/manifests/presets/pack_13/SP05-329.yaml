@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-329
 packId: pack_13
-name: Kazuo Umezz - Spiral Screaming Horror
+name: Spiral Panic Engraving
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica corrosiva.
-  form_and_line: Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del foco.
+  aesthetic: >-
+    Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica
+    corrosiva.
+  form_and_line: >-
+    Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del
+    foco.
   color_palette: Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet
   lighting_setup: Spotlight hostil, negativos profundos y sobreexposición de formas en estado de shock.
-  material_texture: Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla impresa.
+  material_texture: >-
+    Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla
+    impresa.
   render_quality: Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.
-  spatial_distortion: Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and panic-twisted posture
+  spatial_distortion: >-
+    Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and
+    panic-twisted posture
   atmosphere: Histérica, uncanny y retro, con amenaza infantil deformada.
-  key_features: Expresión de grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.
+  key_features: >-
+    Spiral panic geometry, severe black-white contrast, striated fear patterns, theatrical
+    expression pressure, and corrosive manga texture
   creative_brief: >-
-    Construye una gramática spiral-horror reusable donde geometría de pánico,
-    contraste blanco-negro feroz y expresividad desbordada marquen identidad
-    sin exigir rostro humano, hallway, víctima o escena de persecución.
+    Use Kazuo Umezz as style anchor for spiral panic engraving. Any prompt should be trapped by
+    graphic fear geometry, high-contrast pressure, and obsessive line pattern. Human faces, screams,
+    hallways, victims, and chase scenes are optional.
 avoidRules:
   - still
   - calm

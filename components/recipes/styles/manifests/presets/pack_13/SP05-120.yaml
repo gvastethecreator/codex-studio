@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Thermal-camera anime treatment where subjects become heat maps, emotion and intensity register as false-color temperature, and sensor overlays replace natural sight
-  form_and_line: Heat-gradient contours replacing drawn lines, no ink edges, temperature boundaries, thermal isotherm banding, and HUD-overlay alignment lines
-  color_palette: White-hot-core, yellow-very-hot, red-hot, magenta-warm, purple-cooling, cyan-cold, deep-blue-coldest, black-absolute-zero, ironbow-false-color-spectrum, rainbow-thermal-palette
-  lighting_setup: Emissive-heat-only illumination, no external light sources, self-radiating warmth, and hot forms glowing against cold fields
-  material_texture: Thermal-sensor-noise-grain, microbolometer-pixel-artifacts, digital-readout-overlay, emissivity-difference-texture, heat-bloom-halo
-  render_quality: Thermal-camera anime, heat-signature beauty, infrared sensor rendering, and false-color body-heat abstraction
-  spatial_distortion: Thermal reticle alignment, heat-plume distortion, temperature translucency, and cold-receding hot-advancing depth
+  aesthetic: >-
+    Thermal-camera anime treatment where subjects become heat maps, emotion and intensity register
+    as false-color temperature, and sensor overlays replace natural sight
+  form_and_line: >-
+    Heat-gradient contours replacing drawn lines, no ink edges, temperature boundaries, thermal
+    isotherm banding, and HUD-overlay alignment lines
+  color_palette: >-
+    White-hot-core, yellow-very-hot, red-hot, magenta-warm, purple-cooling, cyan-cold,
+    deep-blue-coldest, black-absolute-zero, ironbow-false-color-spectrum, rainbow-thermal-palette
+  lighting_setup: >-
+    Emissive-heat-only illumination, no external light sources, self-radiating warmth, and hot forms
+    glowing against cold fields
+  material_texture: >-
+    Thermal-sensor-noise-grain, microbolometer-pixel-artifacts, digital-readout-overlay,
+    emissivity-difference-texture, heat-bloom-halo
+  render_quality: >-
+    Thermal-camera anime, heat-signature beauty, infrared sensor rendering, and false-color
+    body-heat abstraction
+  spatial_distortion: >-
+    Thermal reticle alignment, heat-plume distortion, temperature translucency, and cold-receding
+    hot-advancing depth
   atmosphere: Tactical, predatory, invisible-spectrum, beyond-human vision, technological bloodlust
-  key_features: White-hot to blue-cold gradients, ironbow false-color spectrum, thermal HUD marks, heat-bloom halos, no ink edges, emissive-only lighting
+  key_features: >-
+    White-hot to blue-cold gradients, ironbow false-color spectrum, thermal HUD marks, heat-bloom
+    halos, no ink edges, emissive-only lighting
   creative_brief: >-
-    Preserve thermal-signature anime grammar as a reusable style system:
-    false-color heat-band mapping, emissive-only scene logic, and HUD-tracked
-    sensor perception should remain consistent across subjects without relying
-    on Predator IP, target-hunting scenes, walls, or tactical combat setup.
+    Use thermal heat-signature vision as false-color perception grammar. Any prompt should become
+    emissive temperature logic: ironbow bands, heat bloom, cold zones, HUD-like tracking, and no
+    natural light. Predator IP, targets, walls, weapons, and hunting scenes are optional.
 avoidRules:
   - muted
   - low-contrast heat separation
@@ -37,7 +52,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-120.webp
 attributes:
-  negativePrompt: muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight palette, non-sensor rendering
+  negativePrompt: >-
+    muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight
+    palette, non-sensor rendering
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

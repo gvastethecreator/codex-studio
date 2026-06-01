@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Studious, quiet
   key_features: Graphite texture
-  creative_brief: Graphite layers build from whisper to shout through pressure alone, the hand learning form by tracing its shadow onto paper. Metallic sheen catches light at oblique angles, a secret visible only to those who lean close. The drawing breathes in grey values, a world made entirely of lead and patience.
+  creative_brief: >-
+    Apply graphite-pencil rendering to any input: pressure-built grey values,
+    paper tooth, soft blending, crisp line accents, erased highlights, and subtle
+    metallic sheen. Keep patient drawing craft without requiring sketchbooks,
+    portraits, academic studies, or visible artist tools.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -12,15 +12,20 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-industrial-cgi
 visualDna:
-  aesthetic: Robot or gun
+  aesthetic: Hard-surface mecha engineering
   form_and_line: Bevels, panel lines
   color_palette: Gunmetal, painted metal, military-grade
   lighting_setup: Rim light, mechanical edge-pop
   material_texture: Scratched metal, machined wear
-  render_quality: Mech design, precise, weapon-grade
-  atmosphere: Industrial, military, tactical grit
+  render_quality: Mech-design precision, machined credibility
+  atmosphere: Industrial, tactical, engineered grit
   key_features: Functional parts, panel-line definition
-  creative_brief: 'Every bevel catches rim light like a knife edge, and panel lines carve functional logic across gunmetal surfaces — machined wear and scratched metal tell stories of assembly, disassembly, and combat. The geometry serves purpose before aesthetics: every greeble is a hypothetical component, every seam a maintenance access point. The image radiates weapon-grade precision, mech design where form follows function into the realm of tactical beauty.'
+  creative_brief: >-
+    Give the input hard-surface/mecha discipline: bevel hierarchy, panel-line logic, service seams, machined wear and
+    believable component density. If a character or object exists, it may mechanize toward mecha; avoid forcing weapons,
+    combat, or military staging. Apply Hard Surface Modeling as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
+    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - organic
   - soft

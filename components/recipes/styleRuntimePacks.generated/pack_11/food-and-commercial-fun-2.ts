@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'real, soggy',
     style: {
       aesthetic:
-        'Burger ad, quick-service-photography, crave-engineering, food-styling trickery, drive-thru theater',
+        'Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish',
       form_and_line:
-        'Perfect layers, bun-dome contour, lettuce-ruffle edge, patty-sear ring, cheese-drape curves',
+        'Perfect stack layers, rounded hero contours, ruffled edges, sear-like texture rings, draped melt curves',
       color_palette:
         'Saturated Orange, Brown, Heinz-red, lettuce-chlorophyll green, sesame-gold, pickle-neon green',
       lighting_setup:
@@ -23,11 +23,12 @@ export const GENERATED_STYLE_PRESETS = [
         'Unrealistic perfection, food-stylist magic, spray-bottle mist, tweezer-placement, hunger-trap',
       spatial_distortion:
         'Flying ingredients, levitation-burst, ingredient-explosion, suspended-motion, mid-air assembly',
-      atmosphere: 'Exciting, hungry, late-night craving, drive-thru anticipation, guilty-pleasure',
+      atmosphere:
+        'Exciting, hungry, late-night craving, guilty-pleasure, glossy commercial intensity',
       key_features:
         'Sesame seeds, cheese-pull stretch, condensation water-beads, grill-mark cross-hatch, lettuce-edge frill, patty-juice sheen',
       creative_brief:
-        'Construct hyper-stylized fast-food hero shots with idealized layering, condensation control, and high-key crave lighting. Focus on commercial appetizing cues and dynamic ingredient staging without tying to a specific brand or scene.',
+        'Push the input into hyper-stylized fast-food commercial language: idealized layering, condensation control, high-key crave lighting, exaggerated freshness, and dynamic ingredient staging. Burger cues may appear as anchors, but avoid locking to a brand, drive-thru, or specific menu item. Apply Fast Food Commercial as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -37,25 +38,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, cafeteria',
     style: {
       aesthetic:
-        'Fine dining plate, tasting-menu artistry, white-tablecloth theater, culinary-stage',
+        'Fine-dining editorial geometry, tasting-menu precision, negative-space culinary composition, premium plating art',
       form_and_line:
         'Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking',
       color_palette:
         'Vibrant, fresh, reduction-glaze mahogany, herb-oil emerald, nasturtium-orange, crème-fraîche white, plate-negative-space',
       lighting_setup:
-        'Soft window light, candle-glow warmth, tablecloth-bounce fill, rim-light-on-sauce sheen',
+        'Soft editorial light, candle-warm accents, clean bounce fill, rim-light-on-sauce sheen',
       material_texture:
         'Sauce gloss, fresh herbs, demi-glace mirror, micro-green velvet, tuile-crisp, edible-flower petal, sea-salt crystal',
       render_quality:
-        'Delicious, expensive, Michelin-star precision, tasting-menu journey, culinary-art, gastronomic-beauty',
+        'Delicious, expensive, Michelin-level precision, tasting-menu restraint, culinary-art, gastronomic-beauty',
       spatial_distortion:
         'Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition',
-      atmosphere:
-        'Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation',
+      atmosphere: 'Elegant, tasty, restrained, premium, quiet anticipation',
       key_features:
         'Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake',
       creative_brief:
-        'Design fine-dining plating as geometric composition: controlled negative space, precise garnish placement, and sauce architecture. Emphasize texture contrast and premium finish cues while keeping dish subjects open and reusable.',
+        'Apply fine-dining editorial logic to the input: controlled negative space, precise garnish-like accents, sauce-architecture curves, texture contrast, and premium finish cues. Plating can anchor the style, but avoid requiring a dining room, white tablecloth, service ritual, or specific dish.',
     },
   },
   {
@@ -65,7 +65,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cold',
     style: {
       aesthetic:
-        'Cheese pull, pizzeria-magic, molten-mozzarella, slice-photography, delivery-crave',
+        'Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy',
       form_and_line:
         'Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup',
       color_palette:
@@ -78,11 +78,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style',
       spatial_distortion:
         'Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool',
-      atmosphere: 'Craving, greasy, delivery-doorbell, napkin-stack anticipation, box-steam reveal',
+      atmosphere: 'Craving, greasy, hot, elastic, box-steam warmth',
       key_features:
         'Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion',
       creative_brief:
-        'Emphasize pizza craving cues through elastic cheese pull, blistered crust texture, and glossy topping oils. Maintain commercial appetite intensity with dynamic melt behavior and high warmth contrast, independent of brand context.',
+        'Translate the input through pizza-melt craving cues: elastic cheese pull, blistered crust-like texture, glossy topping oils, warm red-yellow contrast, and dynamic melt behavior. Pizza slices may anchor the preset, but avoid requiring delivery boxes, doorbells, napkin stacks, or one menu item.',
     },
   },
   {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watery',
     style: {
       aesthetic:
-        'Melting chocolate river, patisserie-waterfall, temper-dark-flow, molten-cocoa, fondue-dream',
+        'Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity',
       form_and_line:
         'Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex',
       color_palette:
@@ -105,12 +105,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry',
       spatial_distortion:
         'Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple',
-      atmosphere:
-        'Indulgent, sweet, pâtisserie-afternoon, truffle-luxury, cocoa-comfort, melting-moment',
+      atmosphere: 'Indulgent, sweet, luxurious, cocoa-comfort, melting-moment',
       key_features:
         'Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin, chocolate-shavings curl',
       creative_brief:
-        'Render chocolate as a viscosity-driven material: ribbon folds, glossy highlights, and dense fluid thickness. Emphasize premium confection texture and controlled flow behavior without hardcoding a specific dessert scene.',
+        'Render the input through chocolate-flow material behavior: ribbon folds, glossy highlights, dense viscosity, drip formation, and tempered sheen. Preserve premium confection texture without requiring a dessert, river, waterfall, fondue setup, or patisserie scene.',
     },
   },
   {
@@ -120,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy',
     style: {
       aesthetic:
-        'Cute lunch box, kyaraben-art, obento-love, character-bento, Japanese-mother devotion',
+        'Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision',
       form_and_line:
         'Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours',
       color_palette:
@@ -132,12 +131,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood',
       spatial_distortion:
-        'Food shaped like animals, rice-ball-bear, sausage-octopus, egg-sheet-panda, carrot-flower, apple-rabbit',
-      atmosphere: 'Cute, hungry, lunch-break-joy, bento-box-surprise, oh-my-god-its-a-panda',
+        'Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament',
+      atmosphere: 'Cute, hungry, organized, lunch-break-joy, surprise-and-delight',
       key_features:
-        'Panda rice ball, nori-cutout face, sausage-octopus, tamagoyaki-roll, cherry-tomato, grass-separator, apple-rabbit ears, bento-pick flag',
+        'Nori-cutout faces, rice-ball geometry, tamagoyaki-roll bands, cherry-tomato accents, grass-separator rhythm, bento-pick flags',
       creative_brief:
-        'Build kyaraben compositions around compartment balance, character-shaped ingredients, and precise decorative food cuts. Keep the style playful and organized, with reusable cute-food motifs suitable for many lunchbox concepts.',
+        'Map the input into kyaraben design logic: compartment balance, character-like simplification, precise decorative cuts, cute food motifs, and organized color blocks. Bento boxes and animal shapes can reinforce the style, but avoid requiring one lunchbox, one mascot, or a fixed meal. Apply Bento Box as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -147,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'healthy, savory',
     style: {
       aesthetic:
-        'World made of sweets, confectionery-kingdom, gumdrop-forest, gingerbread-architecture, sugar-plum-fairy',
+        'Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy',
       form_and_line:
         'Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles',
       color_palette:
@@ -159,12 +158,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy',
       spatial_distortion:
-        'Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns',
-      atmosphere: 'Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe',
+        'Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane striping',
+      atmosphere: 'Happy, hungry, sugar-plum brightness, candy-shop awe, high-sugar unreality',
       key_features:
-        'Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti',
+        'Sugar crystals, gumdrop translucency, frosting drips, candy-cane stripes, chocolate gloss, sprinkle-confetti',
       creative_brief:
-        'Build a confectionery fantasy system with edible architecture, candy-pattern materials, and high-sugar color harmony. Keep forms whimsical and modular so the style can map onto varied environments without a fixed storyline.',
+        'Map the input into a confectionery fantasy system: edible materials, candy-pattern surfaces, sugar-crystal sparkle, frosting edges, and high-sugar color harmony. Gumdrops, lollipops, and gingerbread can appear as style anchors, but avoid forcing a kingdom, forest, fairy tale, or fixed candy-land scene. Apply Candy Land as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -186,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette',
       creative_brief:
-        'Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth.',
+        'Model icons as simple rounded volumes with clean specular response and high readability. Keep expression and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce friendly depth. Apply Emoji 3D as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -212,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands',
       creative_brief:
-        'Prioritize rounded silhouettes, pastel harmony, and expression-first facial design. Keep proportions chibi-extreme and emotionally positive while avoiding scene-locked motifs so the style adapts across many character concepts.',
+        'Prioritize rounded silhouettes, pastel harmony, and expression-first facial design. Keep proportions chibi-extreme and emotionally positive while avoiding scene-locked motifs so the style adapts across many character concepts. Apply Kawaii Pastel as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Illustrated, fun, anime energy
   key_features: Banded shading, ink-line edges
-  creative_brief: 'Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear''s fighting-game bravado and Zelda''s illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion.'
+  creative_brief: >-
+    Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a
+    comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare
+    themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's
+    illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from
+    motion. Apply Toon Shader as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - realistic
   - gradient

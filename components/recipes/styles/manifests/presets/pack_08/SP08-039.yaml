@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Marie Antoinette, Versailles-excess dream, let-them-eat-cake glamour
+  aesthetic: Rococo court excess, Marie Antoinette reference, pre-revolution glamour
   form_and_line: Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep
   color_palette: Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove
-  lighting_setup: Chandelier, candlelit-hall sparkle, mirrored-gallery bounce, gilded-reflection warmth
+  lighting_setup: Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce
   material_texture: Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher
   render_quality: Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy
   spatial_distortion: Huge wig
   atmosphere: Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension
   key_features: Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops
-  creative_brief: Taffeta the color of powdered sugar and impossible indulgence, panniers stretching silk horizons wide enough to require doorways built for excess. Ostrich plumes tremble atop a tower of powdered hair while a beauty patch marks the cheek like a punctuation mark in a sentence the guillotine is about to interrupt, the whole confection suspended in a candlelit bubble that history is already pressing a pin against.
+  creative_brief: >-
+    Turn the input into Rococo excess: pannier width, robe-a-la-francaise
+    volume, silk taffeta, powdered-hair cues, ostrich plumes, ribbon garlands
+    and paste-jewel sparkle. Keep Versailles/Antoinette tension as style anchor
+    without requiring palace halls, a face, fan pose or guillotine narrative.
 avoidRules:
   - modern
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

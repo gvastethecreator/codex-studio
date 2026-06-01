@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-322
 packId: pack_13
-name: CLAMP - Celestial Limb Elongation
+name: Celestial Vertical Ornament
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Elegant CLAMP-inspired supernatural poise with impossible verticality, ornate geometry, moonlit glamour, and emotionally restrained luminous fashion logic
-  form_and_line: Refined tapered contour, ornamental linework, graceful eyelash intricacy, and cathedral-tall silhouette construction
+  aesthetic: >-
+    Elegant CLAMP-inspired supernatural poise with impossible verticality, ornate geometry, moonlit
+    glamour, and emotionally restrained luminous fashion logic
+  form_and_line: >-
+    Refined tapered contour, ornamental linework, graceful eyelash intricacy, and cathedral-tall
+    silhouette construction
   color_palette: Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender
   lighting_setup: Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow
-  material_texture: Silk sheen, gem sparkle, lace filigree, polished ribbon-like accents, and glossy highlight points
-  render_quality: High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned compositional clarity
-  spatial_distortion: Fashion-figure proportions, cathedral-tall silhouettes, and elegant extension of hands, necks, objects, or ornamental forms
+  material_texture: >-
+    Silk sheen, gem sparkle, lace filigree, polished ribbon-like accents, and glossy highlight
+    points
+  render_quality: >-
+    High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned
+    compositional clarity
+  spatial_distortion: >-
+    Fashion-figure proportions, cathedral-tall silhouettes, and elegant extension of hands, necks,
+    objects, or ornamental forms
   atmosphere: Elegant, lunar, poised, dramatic
-  key_features: Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional distance
+  key_features: >-
+    Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional
+    distance
   creative_brief: >-
-    Use CLAMP title as style anchor for celestial elongation: cathedral-tall
-    silhouettes, ornamental geometry, and moonlit emotional poise should
-    transfer without requiring human limbs, costumes, accessories, or a specific
-    fantasy figure.
+    Use CLAMP as style anchor for celestial vertical ornament. Any prompt should stretch into poised
+    verticality, moonlit geometry, jewel accents, and emotional distance. Human limbs, costumes,
+    accessories, and fantasy figures are optional.
 avoidRules:
   - photoreal anatomy realism
   - short compact proportions
@@ -35,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-322.webp
 attributes:
-  negativePrompt: photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking
+  negativePrompt: >-
+    photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy
+    lighting, thick comic inking
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

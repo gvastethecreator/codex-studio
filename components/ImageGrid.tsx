@@ -9,6 +9,7 @@ import {
   ClipboardList,
   History,
   Heart,
+  ImageOff,
   ArrowUpDown,
   CheckSquare,
   Square,
@@ -48,6 +49,9 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const itemRef = useRef<HTMLDivElement>(null);
     const [copiedPrompt, setCopiedPrompt] = useState(false);
     const timeoutRef = useRef<number | null>(null);
+    const primaryImageSrc = image.thumbnail || image.src;
+    const [imageSrc, setImageSrc] = useState(primaryImageSrc);
+    const [imageLoadFailed, setImageLoadFailed] = useState(false);
 
     React.useEffect(() => {
       const timeout = timeoutRef.current;
@@ -57,6 +61,19 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         }
       };
     }, []);
+
+    React.useEffect(() => {
+      setImageSrc(primaryImageSrc);
+      setImageLoadFailed(false);
+    }, [primaryImageSrc]);
+
+    const handleImageError = () => {
+      if (imageSrc !== image.src) {
+        setImageSrc(image.src);
+        return;
+      }
+      setImageLoadFailed(true);
+    };
 
     const handleSelectClick = (e: React.MouseEvent) => {
       e.stopPropagation();
@@ -102,14 +119,25 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           aria-label="Open image preview"
           className="block w-full appearance-none border-none bg-transparent p-0 text-left"
         >
-          <img
-            src={image.thumbnail || image.src}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
-            style={{ viewTransitionName: transitionName }}
-          />
+          {imageLoadFailed ? (
+            <div
+              className="flex aspect-[3/4] w-full items-center justify-center rounded-xl bg-zinc-900 text-[10px] font-black uppercase tracking-widest text-zinc-600"
+              style={{ viewTransitionName: transitionName }}
+              aria-label="Image unavailable"
+            >
+              <ImageOff size={20} aria-hidden="true" />
+            </div>
+          ) : (
+            <img
+              src={imageSrc}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              onError={handleImageError}
+              className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
+              style={{ viewTransitionName: transitionName }}
+            />
+          )}
 
           <div
             className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
@@ -128,10 +156,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 onToggleFavorite(image.id);
               }}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${image.isFavorite
-                  ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                }`}
+                      ${
+                        image.isFavorite
+                          ? 'bg-accent-500 border-accent-400 text-white scale-110'
+                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                      }`}
             >
               <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
             </button>
@@ -141,10 +170,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               type="button"
               onClick={handleSelectClick}
               className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
-                      ${isSelected
-                  ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                  : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
-                }`}
+                      ${
+                        isSelected
+                          ? 'bg-accent-600 border-accent-400 text-white scale-110'
+                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                      }`}
             >
               <Check size={14} strokeWidth={3} />
             </button>

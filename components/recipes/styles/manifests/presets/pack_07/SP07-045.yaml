@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-045
 packId: pack_07
-name: Desert Xeriscape
-category: 4. Landscape And Gardens
+name: Xeriscape Climate Grammar
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,10 +10,12 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - landscape-and-garden-systems
 visualDna:
   aesthetic: Paisaje xerófito de austeridad escultórica y desempeño hídrico explícito.
-  form_and_line: Contraste de formas roseta/columnar, swales de grava, canales secos y masas agrupadas de bajo mantenimiento.
+  form_and_line: >-
+    Contraste de formas roseta/columnar, swales de grava, canales secos y masas agrupadas de bajo
+    mantenimiento.
   color_palette: Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit
   lighting_setup: Sol duro con shimmer térmico, contraluz de espinas y glow cálido de última hora.
   material_texture: Piedra árida, suculenta cerosa, granito descompuesto, espina rígida y borde metálico oxidado.
@@ -22,9 +24,8 @@ visualDna:
   atmosphere: Calma endurecida por sol, sobriedad resiliente y elegancia de baja demanda hídrica.
   key_features: Rosetas focales, mulch mineral, dry creek routing, cadencia xerófita y bandas de acero oxidado.
   creative_brief: >-
-    Define una gramática xeriscape transferible donde selección vegetal, drenaje
-    y escorrentía sean legibles como sistema. Debe transmitir belleza austera y
-    táctica climática, no estética turística de desierto.
+    Convierte cualquier prompt en tactica hidrica visible: suculentas escultoricas, mulch mineral,
+    swales, drenaje seco y sol duro. Belleza austera por desempeno climatico, no postal de desierto.
 avoidRules:
   - lawn
   - wet
@@ -35,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

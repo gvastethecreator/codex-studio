@@ -23,7 +23,9 @@ visualDna:
   key_features: Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.
   creative_brief: >-
     Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada:
-    niebla, quimera y tecnología ritual sin imponer insectos, espadas, guerras ni mechas.
+    niebla, quimera y tecnología ritual. Insectos, espadas, mechas orgánicos o
+    reliquias vivas pueden transformar el input si sostienen el estilo, sin
+    fijar guerra ni escena de combate.
 avoidRules:
   - realistic
   - 3d render

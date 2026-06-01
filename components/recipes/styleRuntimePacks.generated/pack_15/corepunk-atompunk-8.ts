@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Atom-halo badges, isotope glyph clusters, civic-poster framing, and controlled hazard accents.',
       creative_brief:
-        'Preserve neon isotope-plaza grammar as a reusable style system: retro-atomic monumentality, spectacle-driven public science cues, and latent-risk aesthetic tension should remain coherent across any subject.',
+        'Make the input a mid-century atomic warning poster come alive: isotope halos, boomerang cuts, uranium-chartreuse glow, enamel panels, chrome risk reflections, and radial civic spectacle. Plaza cues are optional; the style is optimistic science with a visible hazard pulse. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -44,7 +44,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Transparent shield layers, reactor-lime halos, turbine ribs, and public-science diagram clarity.',
       creative_brief:
-        'Preserve reactor-promenade grammar as a reusable style language: orbiting clean-energy structure, transparent educational readability, and controlled scientific wonder should remain stable across any subject.',
+        'Orbit the input around clean-energy wonder: transparent shielding layers, reactor-lime halos, cobalt turbine ribs, ceramic-white safety edges, and diagram-clear energy flow. Promenade or reactor forms may appear as anchors, but the useful style is controlled exhilaration and readable power. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -65,7 +65,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cheerful futurism, consumer ritual, and launch-night anticipation.',
       key_features: 'Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.',
       creative_brief:
-        'Preserve orbit diner-strip grammar as a reusable style system: roadside atomic-age signage rhythm, consumer-nightlife futurism, and launch-culture anticipation should remain coherent across any subject.',
+        'Dress the input in launch-night atomic consumer sparkle: tailfin curves, bubblegum-cyan chrome, blank marquee rhythm, vinyl sheen, and rocket-flare reflections. Diner strips or roadside cues may appear, but the style should function as cheerful orbit-age anticipation on any subject.',
     },
   },
   {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Reactor-greenhouse halos, isotope loop marks, calibrated irrigation panels, growth-grid geometry, and heat-transfer vents.',
       creative_brief:
-        'Preserve atomic orchard-district grammar as a reusable style system: reactor-assisted agricultural order, polished mid-century civic control, and uncanny abundance cues should remain coherent across subjects.',
+        'Calibrate the input as reactor-grown abundance: pistachio enamel, chrome irrigation loops, greenhouse diffusion, isotope heat marks, and wet leaf gloss should feel both sunny and engineered. Orchards or districts can appear, but the style is hygienic utopia with faint atomic unease. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -121,7 +121,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Voting-board geometry, reactor globe motifs, radial command marks, mission-gallery bands, and public-facing gauge clusters.',
       creative_brief:
-        'Preserve radial control-theater grammar as a reusable style system: concentric instrumentation staging, audience-power surveillance overlap, and polished institutional performance should remain coherent across subjects.',
+        'Stage the input as civic power performing itself: radial console ribs, bakelite panels, instrument glow, spotlight rings, and voting-board geometry should make transparency feel rehearsed. Theaters or control rooms may appear, but the style is institutional spectacle and surveillance overlap. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Demo-reactor silhouettes, atom mural geometry, isotope growth cues, diagram panels, and lab safety color bands.',
       creative_brief:
-        'Preserve isotope school-campus grammar as a reusable style system: diagrammatic pedagogy, bright civic science graphics, and future-facing classroom optimism should remain coherent across subjects.',
+        'Teach the input in atomic classroom language: sawtooth diagram bands, lemon-cream science graphics, chalk dust, atom emblems, and demo-reactor silhouettes should make the future feel freshly explained. Schools or campuses can appear, but the style is bright pedagogy and soft propaganda. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon arcs.',
       creative_brief:
-        'Preserve fission fairgrounds grammar as a reusable style system: circular expo choreography, cheerful atomic salesmanship, and glossy civic spectacle with latent unease should remain coherent across subjects.',
+        'Sell the input as an atomic carnival demo: candy-mint expo loops, reactor-dome glow, aluminum rails, future-home silhouettes, and slogan-like ribbon arcs without readable text. Fairgrounds can appear, but the style is cheerful fission persuasion with a charmingly uneasy smile. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Turbine carousel hubs, atom-game silhouettes, capsule modules, prize-token spirals, and curved waiting rails.',
       creative_brief:
-        'Preserve turbine family-arcade grammar as a reusable style system: cheerful consumer turbine motifs, cabinet-light spectacle, and family-coded atomic leisure should remain coherent across subjects.',
+        'Package the input as cheerful atomic leisure machinery: turbine carousel hubs, candy cabinet glow, chrome trim, capsule modules, and prize-token spirals should make pleasure feel engineered. Arcades or family showrooms can appear, but the style is domesticated atomic anxiety in bright plastic. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Helium lift forms, cloud-garden pods, reactor-fed linework, floating lips, and tension-gauge panels.',
       creative_brief:
-        'Preserve helium skyline-decks grammar as a reusable style system: visible buoyancy engineering, cable-tension legibility, and airy civic-optimist vertigo should remain coherent across subjects.',
+        'Suspend the input with visible optimism: helium pod bellies, hairline cables, powder-blue membranes, altitude ticks, and open negative space should make weight feel negotiated. Skyline decks can appear as anchors, but the style is buoyant civic trust and engineered vertigo. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Isotope ring arches, atom floral canopies, radiant circles, brass rail curves, and reactor-blessing lamp motifs.',
       creative_brief:
-        'Preserve reactor wedding-pavilion grammar as a reusable style system: ceremonial isotope-ring intimacy, satin-science elegance, and polished brass ritual cues should remain coherent across subjects.',
+        'Make the input ceremonially radiant: isotope ring arches, satin-science surfaces, pearl enamel, blush reactor halos, and brass vow-rail curves should turn utility into ritual. Wedding or pavilion cues may appear, but the style is engineered tenderness with unnervingly perfect optimism. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date markers.',
       creative_brief:
-        'Preserve civic fallout-museum grammar as a reusable style system: restrained evidentiary staging, archival slab-and-glass severity, and polite institutional guilt should remain coherent across subjects.',
+        'Exhibit the input like public evidence after the blast: archival ivory panels, brushed brass markers, slab shadows, policy diagrams, and cold glass restraint should make guilt polite. Museums or archives can anchor the read; the style is civic memory staged with terrifying calm. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Isotope express silhouettes, radial map-like walls, panoramic bands, boarding tick marks, and enamel route seals.',
       creative_brief:
-        'Preserve atomic rail-concourse grammar as a reusable style system: aerodynamic civic mobility, radial transit graphics, and enamel platform choreography should remain coherent across subjects.',
+        'Aim the input into national-speed atompunk: teal enamel bands, nose-cone seams, radial timetable suns, chrome departure ticks, and queue-lane circuitry should sharpen motion into promise. Rail or concourse cues may appear, but the style is aerodynamic civic choreography. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Thermal isotope rings, health-capsule forms, wave-turbine displays, hydrotherapy panels, and protocol color stripes.',
       creative_brief:
-        'Preserve nuclide aquatics-dome grammar as a reusable style system: reactor-surplus wellness aesthetics, circular hydro-civic optimization, and sanitized thermal luxury cues should remain coherent across subjects.',
+        'Sanitize the input with reactor-wellness calm: pool-aqua rings, citrus status lights, wet enamel, glazed tile, and hydrothermal loops should feel luxurious and too perfect. Aquatic domes can appear, but the style is surplus heat turned into hygienic civic comfort. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Atom obelisks, marching turbine marks, civic-tech float shapes, pennant shadows, and synchronized route markings.',
       creative_brief:
-        'Preserve reactor parade-avenue grammar as a reusable style system: synchronized civic-tech procession, flag-shadow spectacle rhythm, and polished mass enthusiasm with unease should remain coherent across subjects.',
+        'March the input through atomic civic spectacle: atom obelisks, parade-white glare, turbine float curves, synchronized route marks, and pennant shadows should technologize joy. Parade or avenue cues may appear, but the style is rehearsed mass enthusiasm with polished unease. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -397,7 +397,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Isotope telescope rings, astronomy pod modules, aperture lips, calibrated star charts, and low-glow warning tags.',
       creative_brief:
-        'Preserve isotope night-observatory grammar as a reusable style system: dark precision instrumentation, soft mint isotope power cues, and disciplined civic stargazing wonder should remain coherent across subjects.',
+        'Darken the input into disciplined isotope astronomy: mint power glows, anti-reflective black shells, telescope-ring halos, star-chart plates, and low-light restraint should protect wonder. Observatory cues can appear, but the style is compact power kept quiet under night. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

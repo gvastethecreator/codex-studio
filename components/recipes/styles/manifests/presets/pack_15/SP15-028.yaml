@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Quiet futurism, contemplative community, and ritual calm.
   key_features: Moonwater reflections, crescent terrace bands, phase-lantern dots, and aqua biolume rims.
   creative_brief: >-
-    Preserve moonwater terraces grammar as a reusable style language:
-    low-gravity reflective ecology, crescent civic planning, and ritual lunar
-    calm should remain stable across any subject.
+    Cool the input into reflective lunar ecology: crescent strata, pearl-white
+    regolith, moonlit aqua rims, drifting particles, and low-gravity water
+    bands. Terraces or pools may support the anchor, but the transferable style
+    is ritual calm, soft phase light, and civic reflection.
 avoidRules: [photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-028.webp }
 attributes:

@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, bright',
       key_features: 'Square grid',
       creative_brief:
-        'Cobalt blue dancing across white glaze in geometries borrowed from Moorish palaces, each tile a fragment of a larger narrative. Ceramic carries the light of Lisbon, a wall that sings in painted porcelain.',
+        'Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture, or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without forcing Lisbon, palaces, or wall setting.',
     },
   },
   {
@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Pattern & Texture',
     negativePrompt: 'modern, messy',
     style: {
-      aesthetic: 'Ornate wallpaper',
+      aesthetic: 'Damask ornamental repeat',
       form_and_line: 'Symmetrical floral',
       color_palette: 'Two tone (e.g. Red/Gold)',
       lighting_setup: 'Flat',
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expensive, old',
       key_features: 'Symmetry',
       creative_brief:
-        'Luxury woven into symmetry, acanthus leaves and fleur-de-lis repeating across silk and shadow. The pattern whispers of drawing rooms and candlelight, a texture of inherited elegance.',
+        'Apply damask as luxurious repeat over the input with two-tone symmetry, acanthus and fleur-de-lis motifs, silk-velvet sheen, old-world restraint, and dense ornamental rhythm. If interiors or textiles exist, reinforce them; otherwise use damask as surface grammar without requiring wallpaper, drawing rooms, or candlelight.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Professional',
       key_features: 'Grid',
       creative_brief:
-        'The check fractures into jagged repetition, a pattern that walks the line between order and agitation. Woven authority, the textile equivalent of a sharp glance across a boardroom table.',
+        'Apply houndstooth as jagged woven authority over the input with broken black-white checks, sharp tooth-like repetition, flat fashion clarity, and controlled agitation. If clothing or fabric exists, use it directly; otherwise map the pattern onto forms without requiring boardroom or professional staging.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, clean',
       key_features: 'Random chips',
       creative_brief:
-        'Marble fragments suspended in a matrix like geological confetti, the random made orderly by the binder that holds it. Each chip a different quarry, each slab a democracy of stone.',
+        'Apply terrazzo material logic to the input: irregular marble chips, mineral flecks, polished binder fields, and orderly random scatter should turn surfaces or silhouettes into composite stone without requiring floors.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Sporty, modern',
       key_features: 'Weave',
       creative_brief:
-        'Thousands of filaments woven into a fabric stronger than steel, the weave catching light in diagonal whispers. The texture of speed and precision, a material that promises performance before it promises beauty.',
+        'Apply carbon-fiber performance texture to the input: diagonal woven filaments, subtle anisotropic sheen, dark composite depth, and precision surface discipline should make any subject feel lightweight and engineered.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, warm',
       key_features: 'Grid',
       creative_brief:
-        'Warp and weft crossing in ancient code, each intersection a clan signature, each color a landscape. Wool remembers highlands and hearths, the grid worn into softness by generations.',
+        'Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness, layered warp and weft, warm tradition, and color intersections that behave like inherited structure. Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume context.',
     },
   },
   {
@@ -123,17 +123,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Pattern & Texture',
     negativePrompt: 'fabric, smooth',
     style: {
-      aesthetic: 'Animal hide',
+      aesthetic: 'Leather grain',
       form_and_line: 'Pores and creases',
       color_palette: 'Brown, Black',
       lighting_setup: 'Sheen',
-      material_texture: 'Skin pattern',
+      material_texture: 'Pores, creases, patina',
       render_quality: 'Luxury, durable',
       spatial_distortion: 'Wrinkles',
       atmosphere: 'Classic, rich',
       key_features: 'Pores',
       creative_brief:
-        'Skin preserved in its final texture, pores and grain lines carrying the ghost of the animal that wore it first. Patina deepens with use, each crease a collaboration between craft and time.',
+        'Apply leather grain as durable patinated surface over the input with pores, creases, brown-black sheen, softened wear, and rich craft depth. If bag, jacket, armor, furniture, or object exists, leatherize it; otherwise use leather texture as abstract material finish without focusing on animal hide.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Craft, quality',
       key_features: 'Impression depth',
       creative_brief:
-        'Type bites into cotton paper, leaving words you can feel with your fingertips as well as your eyes. Each character is a small crater of ink and shadow, a physical commitment to language in an age of weightless pixels.',
+        'Apply letterpress impression to the input: inked relief edges, cotton-paper tooth, debossed shadows, pressure marks, and tactile print depth should make any subject feel physically pressed without requiring readable type.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ancient, solid',
       key_features: 'Tile grid',
       creative_brief:
-        'Images built from cubic fragments, each tessera a decision made by hands working in mortar and time. The whole emerges from the accumulation of small certainties, a pixel art made permanent in stone and glass.',
+        'Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set irregularity, and cumulative fragment logic should build the subject from durable modular pieces.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Boho, intricate',
       key_features: 'Seamless',
       creative_brief:
-        'The teardrop bends and repeats, a droplet frozen into ornament and multiplied into labyrinthine fields. Persian gardens translated into textile, each curve a memory of cypress and mango and the geometry of paradise.',
+        'Apply paisley as ornamental flow over the input with bent teardrop boteh forms, intricate floral curls, multicolor textile repetition, and labyrinthine curves that can wrap, mask, or replace surfaces. Keep cultural ornament as pattern logic, not as garden setting or literal paradise illustration.',
     },
   },
   {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hidden, military',
       key_features: 'Random blobs',
       creative_brief:
-        "Shapes engineered to deceive the eye, organic blobs that break the silhouette into unreadable fragments. The pattern's purpose is disappearance, but its aesthetic has become a statement of visible aggression.",
+        'Apply camouflage disruption to the input: irregular concealment blobs, broken silhouette edges, tactical color fields, and visibility-denial logic should fracture form without requiring soldiers, forests, or vehicles.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Groovy, fun',
       key_features: 'Spiral center',
       creative_brief:
-        'Fabric twisted into a vortex, pigment bleeding along folds in psychedelic mandalas. Every unwrap is a revelation, a flower of color that could not have been predicted and cannot be repeated.',
+        'Apply tie-dye behavior to the input: radial folds, pigment blooms, spiral bleed, unpredictable color rings, and fabric-like saturation should make surfaces feel hand-dyed without requiring shirts or festival context.',
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expensive, cold',
       key_features: 'Veins',
       creative_brief:
-        'Mineral impurities that trace the geology of pressure across polished surfaces, frozen lightning in stone. Each vein is a fault line that became ornament, chaos compressed into elegance by millennia.',
+        'Apply marble veining to the input: polished stone depth, branching mineral lines, cloudy translucency, and pressure-born elegance should harden forms into geological luxury without requiring sculpture or architecture.',
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rustic, solid',
       key_features: 'Directional grain',
       creative_brief:
-        "Growth rings spreading outward from a core of patience, each line a year of rain and sun transcribed into cellulose. The tree's autobiography, readable by anyone who runs a finger across its surface.",
+        'Apply wood-grain structure to the input: growth rings, warm cellulose striations, knots, directional fibers, and varnished or raw grain shifts should make forms feel grown and carved without requiring trees.',
     },
   },
   {
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Warm, soft',
       key_features: 'Loops',
       creative_brief:
-        'Loops captured in loops, a topology of warmth built stitch by stitch from wool and patience. The texture holds the memory of hands, the rhythm of needles, the mathematics of interlocking comfort.',
+        'Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and tactile stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.',
     },
   },
   {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Casual, tough',
       key_features: 'Twill lines',
       creative_brief:
-        'Indigo-dyed cotton woven into diagonal twill, the warp showing blue while the weft stays white beneath. A texture born from work and worn into softness, the fabric of rebellion and routine alike.',
+        'Apply denim twill to the input: indigo warp, white weft flashes, diagonal weave, worn fades, seam-like stress marks, and casual durability should materialize surfaces without requiring jeans or clothing.',
     },
   },
   {
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, cheap',
       key_features: 'Sparkle density',
       creative_brief:
-        'A galaxy of micro-mirrors scattering light in every direction simultaneously, each fleck a tiny disco ball. The texture of celebration refusing subtlety, joy expressed as refractive geometry in maximum density.',
+        'Apply glitter density to the input: micro-mirror flecks, refractive sparkle, dense specular scatter, and celebratory particulate geometry should make surfaces flare without requiring party props or product piles.',
     },
   },
   {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cool, collectible',
       key_features: 'Rainbow gradient',
       creative_brief:
-        'Light split into its full spectrum by microscopic ridges, silver surrendering to every color at once. The surface never settles on a single identity, shifting with the angle of the eye that beholds it.',
+        'Apply holographic-foil optics to the input: silver base shine, spectral angle shifts, micro-ridge diffraction, and rainbow flashes should make forms change identity with light direction.',
     },
   },
   {
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Strong, protective',
       key_features: 'Ring pattern',
       creative_brief:
-        'Thousands of rings interlocked into a fabric that breathes steel, flexible armor that flows like metallic water. Each link depends on its neighbors, a textile of mutual defense forged one circle at a time.',
+        'Apply chainmail structure to the input: interlocked metal rings, flexible armor flow, repeated circular links, and cool steel highlights should wrap or replace surfaces without forcing medieval characters.',
     },
   },
   {
@@ -380,7 +380,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Wild, luxury',
       key_features: 'Scale grid',
       creative_brief:
-        'Overlapping shields of keratin laid down in a pattern older than mammals, catching light in diamond facets. The texture of silent movement, a surface that promises danger and demands attention.',
+        'Apply snake-skin pattern as exotic scale geometry over the input with overlapping keratin shields, diamond facets, patterned sheen, and dangerous luxury. If creature, costume, object, or surface exists, wrap it in scale logic; otherwise use the scale grid as abstract texture without requiring a snake body.',
     },
   },
   {
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rustic, simple',
       key_features: 'Weave pattern',
       creative_brief:
-        'Over and under, over and under, the oldest technology of containment woven from reed and rhythm. Each crossing is a decision that holds the next in place, a geometry of simple interdependence.',
+        'Apply basket-weave interlock to the input: over-under strips, reed-like rhythm, tactile crossing shadows, and simple containment geometry should organize surfaces without requiring baskets or craft setup.',
     },
   },
   {
@@ -418,7 +418,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Sweet, orderly',
       key_features: 'Hexagon grid',
       creative_brief:
-        "Nature's most efficient packing solution, beeswax hexagons tessellating into a storage system perfected by evolution. The geometry of sweetness, a lattice built by instinct and filled with gold.",
+        'Apply honeycomb tessellation to the input: hexagonal packing, waxy golden cells, efficient modular repetition, and shallow cavity shadows should turn forms into organic lattice without requiring bees or hives.',
     },
   },
   {
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Smart, complex',
       key_features: 'Traces',
       creative_brief:
-        'Copper rivers flowing across green fiberglass, carrying electrons along paths designed by human logic. The topography of computation, a landscape where distance is measured in nanoseconds and intention is etched in metal.',
+        'Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.',
     },
   },
   {
@@ -456,7 +456,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Digital, code',
       key_features: 'Corner markers',
       creative_brief:
-        'Information rendered as a chessboard of black and white squares, a pattern designed to be read by machines but seen by humans as alien script. The aesthetics of pure data, beauty in the functional arrangement of bits.',
+        'Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.',
     },
   },
   {
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Healing, beautiful',
       key_features: 'Gold veins',
       creative_brief:
-        'The break becomes the most valuable part, gold lacquer filling cracks like rivers of light across a shattered landscape. Damage is not hidden but celebrated, the object made more beautiful by having survived its own destruction.',
+        'Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered landscape.',
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, vibrant',
       key_features: 'Dots only',
       creative_brief:
-        'Thousands of pigment points applied with scientific precision, colors refusing to mix on the palette and instead blending in the eye of the observer. The image assembles itself at a distance, dissolving into atoms of color up close.',
+        'Apply pointillist color construction to the input: tiny separated pigment dots, optical color mixing, bright local marks, and distance-based cohesion should let the subject assemble from painterly particles.',
     },
   },
   {
@@ -503,17 +503,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Pattern & Texture',
     negativePrompt: 'opaque',
     style: {
-      aesthetic: 'Colored glass window',
+      aesthetic: 'Stained glass segmentation',
       form_and_line: 'Black lead came',
       color_palette: 'Glowing, saturated',
       lighting_setup: 'Backlit',
       material_texture: 'Glass imperfections',
-      render_quality: 'Religious, colorful',
+      render_quality: 'Luminous, leaded glass',
       spatial_distortion: 'Simplified shapes',
-      atmosphere: 'Holy, bright',
+      atmosphere: 'Reverent, bright',
       key_features: 'Lead lines',
       creative_brief:
-        'Light filtered through cobalt and ruby, saints and stories rendered in lead lines and luminous panes. The window transforms sunlight into sermon, color becoming scripture for those who cannot read.',
+        'Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or symbols exist, make them reverent; otherwise convert the subject into leaded color fields without requiring saints, windows, or sermon imagery.',
     },
   },
   {
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Traditional, cute',
       key_features: 'X pattern',
       creative_brief:
-        'X-shaped stitches accumulate across linen, each a binary decision of color that builds toward image one thread at a time. The needle encodes pixels in cotton, a digital sensibility executed by analog hands.',
+        'Apply cross-stitch encoding to the input: X-shaped thread marks, linen grid, limited color cells, and analog pixel logic should embroider any subject without requiring samplers or readable text.',
     },
   },
   {
@@ -546,12 +546,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'White, Pastel on Black',
       lighting_setup: 'Flat',
       material_texture: 'Chalk dust, slate',
-      render_quality: 'Cafe menu, temporary',
+      render_quality: 'Temporary, hand-drawn',
       spatial_distortion: 'Smudged',
       atmosphere: 'Casual, hand drawn',
       key_features: 'Black background',
       creative_brief:
-        'Calcium carbonate dust pressed into slate, lines that smudge at the slightest touch. The impermanence is the point, a visual thought that knows it will be erased but commits itself to the board anyway.',
+        'Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable residue, and hand-drawn instructional marks without readable text should make forms feel temporary and tactile.',
     },
   },
   {
@@ -570,7 +570,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cool, dark',
       key_features: 'Dark background',
       creative_brief:
-        'Gas ignited inside glass tubes bent by hand into cursive declarations, red and blue buzzing against the night. Light becomes line, line becomes sign, and the darkness makes the glow possible.',
+        'Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field contrast, buzzing edge light, and sign-like contours should illuminate forms without requiring readable signage.',
     },
   },
   {
@@ -589,7 +589,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expensive, elegant',
       key_features: 'Metallic shine',
       creative_brief:
-        'Gold leaf pressed into paper by heat and pressure, the impression catching light at an angle that whispers luxury. The metal remembers the die that marked it, a permanent kiss of refinement on the page.',
+        'Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges, heat-transfer shine, and angle-dependent gold or silver reflections should refine forms without requiring packaging or typography.',
     },
   },
   {
@@ -608,7 +608,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, retro',
       key_features: 'Dots',
       creative_brief:
-        'Circles march across the surface in perfect cadence, a pattern that never takes itself seriously. The dot is the simplest possible mark, repeated until it becomes a declaration of joy.',
+        'Apply polka-dot rhythm to the input: repeated circular marks, playful scale variation, crisp figure-ground spacing, and bright graphic cadence should wrap or segment forms without requiring fabric or fashion staging.',
     },
   },
   {
@@ -627,7 +627,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Abandoned, gritty',
       key_features: 'Random patches',
       creative_brief:
-        'Iron returning to earth one flake at a time, orange and brown blooms of entropy spreading across what was once smooth and strong. Decay becomes a palette, and neglect paints with patient, corrosive beauty.',
+        'Apply rust corrosion to the input: orange-brown blooms, flaking iron, pitted edges, oxidized stains, and slow entropy gradients should age any subject without requiring metal junkyards or abandoned settings.',
     },
   },
   {
@@ -646,7 +646,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Planning, technical',
       key_features: 'White on Blue',
       creative_brief:
-        'White lines on Prussian blue, the language of engineers rendered in diazo paper and ammonia dreams. Every dimension is a promise, every annotation a constraint, the future drawn before it is built.',
+        'Apply blueprint drafting to the input: Prussian-blue field, white technical linework, dimension-like marks without readable text, and construction schematics should make any subject feel designed before built.',
     },
   },
   {
@@ -660,12 +660,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Line art',
       lighting_setup: 'Flat',
       material_texture: 'Paper',
-      render_quality: 'Map, geographic',
+      render_quality: 'Contour-line abstraction',
       spatial_distortion: 'None',
       atmosphere: 'Exploration',
       key_features: 'Contours',
       creative_brief:
-        "Landscape abstracted into concentric whispers, each line a promise of equal altitude. Mountains become fingerprints, valleys become signatures, and the cartographer's pen traces what the earth already knows.",
+        "Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise contour the subject's planes and volumes without requiring mountains or a literal map.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

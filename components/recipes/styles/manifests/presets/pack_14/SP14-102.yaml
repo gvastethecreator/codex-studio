@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-102
 packId: pack_14
-name: Veil of Names
+name: Veil of Erased Names
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Memorial veil embroidered with erased and recovered names.
-  form_and_line: Soft drape, layered lettering, and narrow altar frame.
+  aesthetic: Memorial veil language built from erased names, recovered marks, and quiet witness.
+  form_and_line: Soft drape, layered glyph-like traces, and narrow ritual framing.
   color_palette: Smoke gray, ash white, and muted violet.
   lighting_setup: Backlit cloth glow and candle edge light.
   material_texture: Fine linen, thread shimmer, and wax residue.
-  render_quality: Intimate symbolic still life with textile detail.
-  spatial_distortion: Shallow stage-like composition emphasizing textural layers.
+  render_quality: Intimate symbolic rendering with textile detail.
+  spatial_distortion: Shallow layered depth emphasizing veils, traces, and translucent memory.
   atmosphere: Absence, remembrance, and quiet witness.
-  key_features: Name veil, memorial needles, and folded ledgers.
-  creative_brief: A symbolic textile where the act of naming becomes a ritual of mourning and return.
+  key_features: Veiled name traces, memorial stitches, folded witness layers.
+  creative_brief: Reinterpret any input through veils, erased-name marks, and mourning stitches. Use abstract glyph traces, linen translucency, wax residue, and witness-like layering instead of readable text, plaques, literal names, memorial rooms, or fixed ceremonial props.
 avoidRules: [photoreal, loud-patterns, comic style, watermark, text, logo, over-saturation]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-102.webp }
 attributes:
   negativePrompt: photoreal, loud-patterns, comic style, watermark, text, logo, over-saturation
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

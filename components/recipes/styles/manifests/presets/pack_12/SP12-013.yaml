@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Action-adventure místico de santuario desértico con énfasis en puzzle lumínico y orientación geométrica.
-  subject_treatment: Guardian archetypes y player silhouettes diferenciadas por interacción con prismas/runas.
+  aesthetic: Gramática action-adventure mística con puzzle lumínico, refracción cristalina y orientación geométrica ritual.
+  subject_treatment: >-
+    Reinterpreta el input como guardián, prisma, llave, avatar o superficie calibrada; santuario y desierto son anclas
+    opcionales.
   color_and_tone: Arena rosada, amatista, blanco solar y acentos espectrales por refracción.
   lighting_and_shadow: Sol duro con rebotes policromáticos usados como mecánica de progresión visual.
   texture_and_material: Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.
-  camera_and_composition: Gran angular con escalera ceremonial y líneas guía hacia nodos puzzle.
+  camera_and_composition: >-
+    Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica
+    visual.
   atmosphere_and_mood: Sagrada, silenciosa y analítica, de descubrimiento ritual.
   rendering_and_quality: Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.
+  creative_brief: >-
+    Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

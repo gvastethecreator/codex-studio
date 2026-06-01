@@ -1,11 +1,9 @@
-import type { BackgroundConfig, LogEntry, Workspace } from '../types';
+import type { LogEntry, Workspace } from '../types';
 
 export interface GlobalState {
   logs: LogEntry[];
   workspaces: Workspace[];
   activeWorkspaceId: string;
-  isBackgroundEnabled: boolean;
-  bgConfig: BackgroundConfig;
 }
 
 export type GlobalAction =
@@ -15,17 +13,13 @@ export type GlobalAction =
   | { type: 'CREATE_WORKSPACE'; workspace: Workspace; activate?: boolean }
   | { type: 'DELETE_WORKSPACE'; id: string }
   | { type: 'RENAME_WORKSPACE'; id: string; name: string }
-  | { type: 'SET_ACTIVE_WORKSPACE'; id: string }
-  | { type: 'SET_BACKGROUND_ENABLED'; enabled: boolean }
-  | { type: 'UPDATE_BACKGROUND_CONFIG'; patch: Partial<BackgroundConfig> };
+  | { type: 'SET_ACTIVE_WORKSPACE'; id: string };
 
 export function createInitialGlobalState(): GlobalState {
   return {
     logs: [],
     workspaces: ensureDefaultWorkspace([{ id: 'default', createdAt: Date.now() }]),
     activeWorkspaceId: 'default',
-    isBackgroundEnabled: true,
-    bgConfig: { density: 0.4, speed: 0.002 },
   };
 }
 
@@ -55,8 +49,6 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         logs: action.state.logs ?? state.logs,
         workspaces: hydratedWorkspaces,
         activeWorkspaceId: hydratedActiveWorkspaceId,
-        isBackgroundEnabled: action.state.isBackgroundEnabled ?? state.isBackgroundEnabled,
-        bgConfig: action.state.bgConfig ?? state.bgConfig,
       };
     }
 
@@ -115,21 +107,6 @@ export function globalReducer(state: GlobalState, action: GlobalAction): GlobalS
         activeWorkspaceId: state.workspaces.some((workspace) => workspace.id === action.id)
           ? action.id
           : state.activeWorkspaceId,
-      };
-
-    case 'SET_BACKGROUND_ENABLED':
-      return {
-        ...state,
-        isBackgroundEnabled: action.enabled,
-      };
-
-    case 'UPDATE_BACKGROUND_CONFIG':
-      return {
-        ...state,
-        bgConfig: {
-          ...state.bgConfig,
-          ...action.patch,
-        },
       };
 
     default:

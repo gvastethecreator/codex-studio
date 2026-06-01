@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Analytical, trustworthy, concise
   key_features: Chart blocks, iconography families, data-flow arrows, hierarchy scaffolds
   creative_brief: >-
-    Prioritize information hierarchy and cognitive clarity. Build visuals from reusable chart and icon modules, keeping color semantics and reading flow explicit so complex topics remain quickly understandable across editorial contexts.
+    Apply editorial infographic grammar to any input: modular chart primitives, icon families,
+    directional flow, semantic color grouping, and dashboard-grade hierarchy should clarify complex
+    subjects without requiring labels, arrows, UI dashboards, statistics, or explainer-page layouts.
 avoidRules:
   - messy
   - art

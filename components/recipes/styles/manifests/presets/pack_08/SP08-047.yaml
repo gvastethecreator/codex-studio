@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Dracula style, Carpathian aristocracy, immortal-danger elegance
   form_and_line: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, ring-adorned fingers
   color_palette: Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white
-  lighting_setup: Moonlight, silver-wash rim, candelabra flicker, fog-diffused ambiance, stained-glass dimness
+  lighting_setup: Moonlight silver rim, candelabra flicker, fog-diffused ambiance, stained-glass dimness
   material_texture: Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
   render_quality: Gothic, scary, Stoker-novel atmosphere, Hammer-horror elegance
   spatial_distortion: None
-  atmosphere: Evil, elegant, ancient-hunger menace, moonlit-seduction danger, castle-silence dread
-  key_features: Cape, high collar, medallion, signet ring, widow's peak
-  creative_brief: Black velvet opera cape lined with crimson silk the color of the last thing you will ever see, the high collar framing a face that has watched centuries die. An onyx signet ring catches moonlight through castle windows that have not been opened since the Ottoman Empire, cravat tied with the precision of someone who has had four hundred years to perfect the knot.
+  atmosphere: Evil, elegant, ancient-hunger menace, moonlit-seduction danger, aristocratic dread
+  key_features: Opera cape, high collar, medallion, signet ring, crimson lining
+  creative_brief: >-
+    Style the input as vampire aristocratic costume: black velvet cape, crimson
+    silk lining, high collar, cravat precision, onyx signet and moonlit silver
+    edge. Keep immortal menace and old-world elegance without requiring a castle,
+    specific face, widow's peak or literal Dracula portrait.
 avoidRules:
   - modern
   - messy
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

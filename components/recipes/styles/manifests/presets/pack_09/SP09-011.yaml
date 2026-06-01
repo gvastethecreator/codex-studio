@@ -17,11 +17,11 @@ visualDna:
   color_palette: Grey, White, Black tips
   lighting_setup: Soft sheen
   material_texture: Fluffy, layered
-  render_quality: Wildlife, warm
+  render_quality: Warm, directional
   spatial_distortion: Flowing hair
   atmosphere: Wild, soft
   key_features: Fur direction
-  creative_brief: Render the layered architecture of wolf fur, where grey and white guard hairs float above a dense undercoat of warmth, each strand carrying direction and purpose as if wind still passes through it. The soft sheen should trace the contours of a living creature without revealing the animal itself. Capture the paradox of softness that shelters wildness, comfort that conceals tooth and claw.
+  creative_brief: 'Apply wolf-fur architecture as directional material: grey and white guard hairs floating over dense warm undercoat, strand flow following form, soft sheen tracing contours, and wild softness with hidden strength. If the input includes a creature or character, let the coat transform it; otherwise use fur as a tactile surface treatment without requiring an animal reveal.'
 avoidRules:
   - matted
   - wet

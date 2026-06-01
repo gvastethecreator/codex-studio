@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Dreamy, synthetic, wistful, weightless, ambient.
   key_features: Cathode glow, tiled grid rhythm, vapor reflection bands, chrome-soft bevels, and pastel humidity.
   creative_brief: >-
-    Preserve cathode pool reverie as a reusable style system: CRT bloom,
-    leisure-tile rhythm, and humid pastel reflections should transform any
-    subject without forcing a pool, screen, mall, or interior scene.
+    Dream the input through cathode pool reverie: CRT bloom, aqua tile rhythm,
+    chrome-soft bevels, milky pastel humidity, and mirrored vapor reflections
+    transform any subject without forcing a pool, screen, mall, or interior scene.
 avoidRules: [photoreal, gritty-realism, horror, rusty-industrial, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-130.webp }
 attributes:

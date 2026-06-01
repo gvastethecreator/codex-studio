@@ -24,8 +24,9 @@ visualDna:
   creative_brief: >-
     Use Mecha Hangar Ignition as style anchor for industrial scale drama:
     heavy mechanical construction, hard technical light, and infrastructure-like
-    contrast should transfer without requiring a robot, hangar, operator, or
-    launch scene.
+    contrast should transfer by mechanizing the input when useful, adding
+    robot-scale mass, panel logic, or launch-readiness cues without fixing a
+    hangar, operator, or launch scene.
 avoidRules:
   - photoreal
   - toy-like

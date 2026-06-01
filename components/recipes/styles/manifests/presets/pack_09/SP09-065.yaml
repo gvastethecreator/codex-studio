@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Slow flow
   atmosphere: Heavy, sticky
   key_features: Thick
-  creative_brief: Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of heaviness, the material that time forgot to finish.
+  creative_brief: >-
+    Summon the slow gravity of thick tar oozing in glossy black drips of endless viscosity, a liquid that seems to
+    forget it should flow but moves anyway, heavy with its own darkness. The surface should catch highlights like dark
+    mirrors, depth without reflection, thick bodies catching light at their rounded crests. Capture the aesthetics of
+    heaviness, the material that time forgot to finish. Use Tar as portable surface/render behavior over any input: map
+    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - water
   - oil

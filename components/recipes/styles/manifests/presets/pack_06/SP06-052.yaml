@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Blocky
   atmosphere: Cute, digital
   key_features: Cubes
-  creative_brief: The image assembles from identical cubes, complexity emerging from simple repetition like a system growing from a single unit. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. Meaning builds from the voxel, not from any specific game, building, or landscape.
+  creative_brief: >-
+    Apply voxel-art construction to any input: cubic sampling, repeated block
+    units, stepped curves, crevice ambient occlusion, and toy-like volumetric
+    readability. Keep voxel grammar without requiring Minecraft worlds, terrain,
+    buildings, or game dioramas.
 avoidRules:
   - photo
   - realistic

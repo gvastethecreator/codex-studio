@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Retro signage monoliths, mirrored pool logic, synthetic palm silhouettes, and open social spacing.',
       creative_brief:
-        'Preserve sunset mall-mirage grammar as a reusable style system: retro-consumer spatial nostalgia, climate-adaptive plaza logic, and soft digital leisure mood should remain coherent across subjects without requiring a mall, fountain, signage text, palms, or a literal plaza.',
+        'Bathe the input in climate-adapted vaporpunk leisure: lavender acrylic reflections, aqua mirage depth, terrazzo softness, synthetic palm rhythm, and sunset chrome. Malls, fountains, signage blocks, palms, or plazas are optional anchors; the style is nostalgic public softness with humid glow. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -50,7 +50,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cathode glow, tiled grid rhythm, vapor reflection bands, chrome-soft bevels, and pastel humidity.',
       creative_brief:
-        'Preserve cathode pool reverie as a reusable style system: CRT bloom, leisure-tile rhythm, and humid pastel reflections should transform any subject without forcing a pool, screen, mall, or interior scene.',
+        'Dream the input through cathode pool reverie: CRT bloom, aqua tile rhythm, chrome-soft bevels, milky pastel humidity, and mirrored vapor reflections transform any subject without forcing a pool, screen, mall, or interior scene.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Arcade-button rhythm, gradient slab fields, smoked-glass reflections, chrome trim, and poster-like color blocks.',
       creative_brief:
-        'Preserve gradient arcade mirage as a reusable style system: Memphis arcade geometry, obsolete interface gloss, and synthetic nostalgia should apply to any prompt without requiring an arcade, game cabinet, signage, or room.',
+        'Mirage the input through gradient arcade memory: Memphis diagonals, hot-pink/teal interface gloss, button-circle rhythm, smoked-glass planes, and obsolete-tech nostalgia apply without requiring an arcade, game cabinet, signage, or room.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

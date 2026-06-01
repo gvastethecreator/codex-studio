@@ -13,7 +13,9 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing energy
-  form_and_line: Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line cadence
+  form_and_line: >-
+    Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line
+    cadence
   color_palette: Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast bursts
   lighting_setup: Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic pacing
   material_texture: Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers
@@ -22,9 +24,10 @@ visualDna:
   atmosphere: Deranged, visceral, anarchic, darkly comic, volatile
   key_features: Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing
   creative_brief: >-
-    Preserve identity through grindhouse splatter grammar and absurd tonal
-    collision: rough print textures and manic frame ruptures should define the
-    style regardless of character premise.
+    Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic
+    frame ruptures should define the style regardless of character premise. Apply this anime/IP-title grammar over any
+    input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while
+    avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-033.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

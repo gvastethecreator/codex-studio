@@ -23,8 +23,9 @@ visualDna:
   key_features: Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing
   creative_brief: >-
     Keep this preset grounded in polished blockbuster-comic grammar: heroic
-    silhouette clarity, dynamic light separation, and high-gloss action staging
-    should define identity without dependence on any specific comic universe.
+    silhouette clarity, dynamic light separation, high-gloss FX and widescreen
+    impact should define identity without requiring a superhero, suit, fight
+    scene or specific comic universe.
 avoidRules:
   - flat
   - retro

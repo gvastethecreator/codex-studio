@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Surface tension
   atmosphere: Refreshing, dynamic
   key_features: Droplets
-  creative_brief: Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful.
+  creative_brief: >-
+    Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each
+    sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its
+    absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the
+    instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - still water
 assets:

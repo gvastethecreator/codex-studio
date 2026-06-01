@@ -12,14 +12,14 @@ visualDna:
   color_palette: Sea glass, turquoise, and blush coral.
   lighting_setup: Sunlit water refractions and deep-blue aquarium glow.
   material_texture: Glass, kelp mesh, and polished shell surfaces.
-  render_quality: Luminous seapunk conservatory with crisp flora detail.
+  render_quality: Luminous seapunk render with crisp flora detail and ocean-signal instrumentation.
   spatial_distortion: Conservatory-dome composition with concentric wave-garden rhythm.
   atmosphere: Curiosity, translation, and marine harmony.
   key_features: Signal fronds, tide instruments, wave blooms, and glass shell caustics.
   creative_brief: >-
-    Preserve ocean signal-conservatory grammar as a reusable style system:
-    wave-linguistic botanical instrumentation, concentric marine greenhouse
-    systems, and luminous translational harmony should remain coherent across subjects.
+    Translate the input into ocean-signal botany: sea-glass shells, turquoise
+    tide instruments, blush-coral fronds, concentric wave rings, and aquarium
+    glow make any subject feel responsive, botanical, and marine-linguistic.
 avoidRules: [photoreal, bleak, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-123.webp }
 attributes:

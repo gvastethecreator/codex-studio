@@ -12,14 +12,14 @@ visualDna:
   color_palette: Pearl white, turquoise, and seafoam.
   lighting_setup: Clear aquamarine daylight and soft water caustics.
   material_texture: Mother-of-pearl panels, polished shells, and slick stone.
-  render_quality: Clean marine urban concept with elegant circulation.
+  render_quality: Clean marine render with elegant circulation and pearl-current flow logic.
   spatial_distortion: Flow-based plan bending around current loops and pearl chamber repeats.
   atmosphere: Ease, flow, and refined maritime living.
   key_features: Current chamber motifs, pearl plaza loops, tide bridge arcs, and opalescent water seams.
   creative_brief: >-
-    Preserve pearl current-district grammar as a reusable style system:
-    flow-organized maritime urbanism, pearl-chamber circulation logic, and
-    refined aquatic ease should remain coherent across subjects.
+    Pearl-route the input through aquatic ease: white opalescent loops, turquoise
+    current channels, seafoam bridge arcs, shell-panel sheen, and caustic water
+    seams make any subject feel flowing, refined, and maritime.
 avoidRules: [photoreal, heavy-industrial, rust, watermark, text, logo, sludge]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-119.webp }
 attributes:

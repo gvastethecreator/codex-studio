@@ -23,7 +23,9 @@ visualDna:
   key_features: Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.
   creative_brief: >-
     Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada:
-    geometría, saturación y heroísmo abstracto sin imponer fuego, rescate, mechas ni rivalidades narrativas.
+    geometría, saturación y heroísmo abstracto. El input puede ganar mecha
+    sintético, fuego triangular, rescate gráfico o rivalidad visual si aumenta
+    impacto, sin fijar una escena narrativa concreta.
 avoidRules:
   - realistic
   - 3d render

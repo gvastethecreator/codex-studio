@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-071
 packId: pack_07
-name: Mushroom House
-category: 1. Residential Interiors
+name: Fungal Vernacular Miniature
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,11 +10,13 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Vernáculo fúngico encantado con masa bulbosa y lógica ecológica miniatura.
   form_and_line: Columnas tipo tallo, cubiertas domo-cap, intradós acanalado de láminas y transiciones orgánicas de volumen hinchado.
-  color_palette: Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm forest-amber undertones
+  color_palette: >-
+    Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm
+    forest-amber undertones
   lighting_setup: Luz moteada filtrada por dosel, relleno frío de sombra y acentos bioluminiscentes sutiles en bordes bajos.
   material_texture: Piel fúngica mate, moteado de sombrero, costillas de lámina, manto musgoso húmedo y polvo fino de esporas.
   render_quality: Fantasía storybook con curvatura orgánica fiel y detalle táctil de micromaterial biológico.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Encantada, protegida y de escala diminuta con integración ecológica total.
   key_features: Siluetas cap-dome, tallos estructurales, aperturas circulares, base de musgo y composición en clúster.
   creative_brief: >-
-    Define una gramática reusable de mushroom-house donde jerarquía cap-stem,
-    volumen fúngico bulboso y escala ecológica miniatura sostengan identidad
-    estable entre sujetos.
+    Usa morfología fúngica como estilo: jerarquía cap-stem, piel moteada, láminas acanaladas, musgo húmedo y escala
+    miniatura ecológica. El sujeto puede variar; la lógica biológica y bulbosa debe mandar. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - square
 assets:
@@ -34,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

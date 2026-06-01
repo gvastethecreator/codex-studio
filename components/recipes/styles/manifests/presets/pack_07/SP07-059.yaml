@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-059
 packId: pack_07
-name: Hobbit Hole Hillside Roundhouse, Bag End comfort
-category: 1. Residential Interiors
+name: Bermed Round-Door Pastoral
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,11 +10,13 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Domesticidad pastoral semienterrada de escala humana, con umbrales circulares y calidez artesanal cotidiana.
   form_and_line: Aberturas redondas dominantes, cubierta bermada baja, corredores arqueados suaves y planificación radial íntima.
-  color_palette: Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes
+  color_palette: >-
+    Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta
+    accents, soft wildflower notes
   lighting_setup: Clave cálida de hogar, spill bajo de umbral, prácticos de linterna y rebote difuso de tarde.
   material_texture: Cubierta de césped, madera cepillada a mano, revoco de cal-arcilla, piedra gastada y latón cepillado.
   render_quality: Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.
   key_features: Umbral circular, cubierta vegetal, aperturas redondeadas y núcleo compacto de calor doméstico.
   creative_brief: >-
-    Define una gramática hobbit transferible de arquitectura semienterrada,
-    umbral circular y artesanía cálida. Debe mantener intimidad pastoral y
-    funcionalidad doméstica sin depender de protagonista o set concreto.
+    Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales circulares, proporciones bajas, materiales
+    cálidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y táctil sin depender de una
+    casa concreta. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues,
+    architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type,
+    landscape, franchise set, creature, or fixed scene.
 avoidRules:
   - square
   - tall
@@ -35,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

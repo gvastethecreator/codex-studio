@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Stitch pattern
   atmosphere: Warm, soft
   key_features: Loops
-  creative_brief: Loops captured in loops, a topology of warmth built stitch by stitch from wool and patience. The texture holds the memory of hands, the rhythm of needles, the mathematics of interlocking comfort.
+  creative_brief: >-
+    Apply knitted topology to the input: interlocking loops, ribbing, cable
+    relief, wool halo, and tactile stitch rhythm should soften or wrap forms
+    without requiring sweaters or domestic props.
 avoidRules:
   - smooth
   - flat
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

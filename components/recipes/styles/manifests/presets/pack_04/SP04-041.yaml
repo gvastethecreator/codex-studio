@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Elongated legs
   atmosphere: Chic, fast, atelier energy, catwalk motion
   key_features: 9 heads tall, loose gesture, editorial whitespace
-  creative_brief: Brushstrokes capture the fugitive moment between steps, fabric still settling from motion, the figure already moving on. Ink washes suggest rather than describe, leaving space for the eye to complete what the hand began. This is the atelier at speed, where elegance emerges from the chase, not the capture.
+  creative_brief: >-
+    Apply runway fashion-illustration grammar to any input: elongated gesture, fugitive brush
+    motion, editorial whitespace, watercolor splash, and fabric-suggesting line speed should make
+    elegance feel caught in motion without requiring models, catwalks, clothing, poses, or atelier
+    scenes.
 avoidRules:
   - short
   - realistic

@@ -12,8 +12,12 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy
-  form_and_line: Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm
+  aesthetic: >-
+    Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful
+    constructive energy
+  form_and_line: >-
+    Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural
+    rhythm
   color_palette: High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation
   lighting_setup: Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability
   material_texture: Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish
@@ -22,9 +26,11 @@ visualDna:
   atmosphere: Playful, inventive, structured, nostalgic, constructive
   key_features: Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic
   creative_brief: >-
-    Keep this preset defined by modular snap-assembly language and toy-plastic
-    material behavior, so brick-system readability remains the transferable core
-    beyond specific diorama scenes.
+    Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system
+    readability remains the transferable core beyond specific diorama scenes. Apply Lego Toy Brick Build as a portable
+    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
+    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - melted
   - smooth

@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Taxonomic, scholarly, measured
   key_features: Nomenclature labels, anatomical callouts, curated specimen grouping
   creative_brief: >-
-    Illustrate flora as study objects with clear morphology and readable annotation hierarchy. Balance scientific precision and aesthetic restraint through clean ink structure, transparent tinting, and plate-style composition adaptable to varied species.
+    Apply vintage scientific-plate logic to the input: clean ink contour,
+    transparent tinting, annotation hierarchy and orthographic specimen clarity.
+    If flora exists, make morphology botanical; otherwise use field-guide
+    organization without forcing plants or a species study.
 avoidRules:
   - cartoon
   - messy

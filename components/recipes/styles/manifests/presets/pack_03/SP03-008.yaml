@@ -16,12 +16,17 @@ visualDna:
   form_and_line: Soft shapes
   color_palette: Vibrant, cinematic, storybook saturation
   lighting_setup: Artistic control, per-light AOVs
-  material_texture: Stylized realism, hero-material pipeline
+  material_texture: Stylized realism, feature-animation material pipeline
   render_quality: Disney/Pixar family feature animation, heartfelt, timeless
   spatial_distortion: Squash and stretch
-  atmosphere: Magical, story, emotional resonance
+  atmosphere: Magical, emotional resonance, family-feature warmth
   key_features: Subsurface scattering, deep compositing
-  creative_brief: Subsurface light travels through skin and fabric like a secret, emerging as soft glow at the edges of every form — RenderMan's hero-material pipeline dresses characters in stylized realism that feels more true than truth. Squash and stretch remembers animation's hand-drawn origins while deep compositing gives every light its own independent story, isolatable and tweakable into the final grade. The frame holds wonder like a cupped hand holds water, timeless and trembling with potential energy.
+  creative_brief: >-
+    Render the input with feature-animation warmth: soft shapes,
+    stylized-real material response, subsurface edge glow, squash-and-stretch
+    elasticity and deep-composited light control. Preserve Pixar/RenderMan
+    emotional polish without requiring characters, skin, fabric, story pose or
+    family-film setup.
 avoidRules:
   - anime
   - 2d

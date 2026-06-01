@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Explosion or fire
+  aesthetic: Houdini pyro simulation
   form_and_line: Turbulence
   color_palette: Orange, Black smoke
   lighting_setup: Self illuminated
@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Expanding
   atmosphere: Dangerous, dynamic, cinematic destruction
   key_features: Physics, turbulence control
-  creative_brief: 'Orange heat blooms into black smoke — turbulence curls the pyroclastic density into rolling vortices, and self-illuminated volumes cast their own light onto the scene like a miniature sun born in an instant. The expansion reads as physics rather than art direction, Houdini simulations where every wisp of smoke and tongue of flame obeys the mathematics of fluid dynamics. The image is cinematic destruction frozen at its peak: dangerous, dynamic, a fireball that will have consumed itself before the next frame renders.'
+  creative_brief: >-
+    Apply Houdini pyro behavior to the input: turbulent density curls,
+    self-illuminated heat volumes, smoke layering and fluid-dynamics credibility.
+    It can imply blast, flame or destruction when relevant, but must not require
+    a fireball, disaster staging, or consumed environment.
 avoidRules:
   - solid
   - cartoon fire

@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Cracked blocks
   atmosphere: Dark, fire
   key_features: Rectangular cracks
-  creative_brief: Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as durable beauty.
+  creative_brief: >-
+    Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked
+    landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char
+    should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield.
+    Capture the paradox of fire as preservative, destruction worn as durable beauty. Use Burnt Wood as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
+    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
+    or scene where the material naturally appears.
 avoidRules:
   - ash
   - grey

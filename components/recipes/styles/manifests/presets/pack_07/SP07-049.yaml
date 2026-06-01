@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-049
 packId: pack_07
-name: Golf Course
-category: 4. Landscape And Gardens
+name: Tournament Turf Strategy
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,9 +10,11 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - landscape-and-garden-systems
 visualDna:
-  aesthetic: Formalismo de campo de golf de alto mantenimiento, donde topografía y estrategia deportiva se codifican en el terreno.
+  aesthetic: >-
+    Formalismo de campo de golf de alto mantenimiento, donde topografía y estrategia deportiva se codifican en el
+    terreno.
   form_and_line: Corredores de fairway en cinta, parábolas de bunker, microondas de green y visuales dirigidas por routing.
   color_palette: Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow
   lighting_setup: Neblina de mañana, ángulo bajo sobre fairway, brillo de rocío y dramatismo de sombra en bunker.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Calma controlada, concentración competitiva y exclusividad curada.
   key_features: Franjas de siega, bunkers de borde nítido, focos de objetivo y coreografía de hazards.
   creative_brief: >-
-    Define una gramática golf transferible por gradiente de turf, hazards
-    estratégicos y legibilidad de ruta de juego. Debe comunicar precisión de
-    mantenimiento y óptica competitiva sin referencia a club concreto.
+    El estilo convierte superficie en estrategia: franjas de siega, curvas de bunker, rocío, hazards y ruta de juego
+    legible. Debe sentirse mantenido con obsesion competitiva, no como paisaje verde generico. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - weeds
   - forest
@@ -35,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

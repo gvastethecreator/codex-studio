@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Romantic, fated, windswept, grand
   key_features: Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky-heavy compositions, prophecy-charged focal tension
   creative_brief: >-
-    Preserve tarot-mecha-fantasy grammar as a reusable style system:
-    prophecy symbolism, windswept ceremonial silhouette drama, and
-    jewel-sky romantic tension should remain consistent across subjects.
+    Fate the input through tarot-mecha fantasy: prophecy-card segmentation,
+    jewel-sky backlight, ornate machine-myth contours, and windswept shojo
+    gravity can mechanize or ceremonialize any subject without fixing a cockpit,
+    battlefield, castle, or literal tarot reading.
 avoidRules:
   - realistic
   - 3d render

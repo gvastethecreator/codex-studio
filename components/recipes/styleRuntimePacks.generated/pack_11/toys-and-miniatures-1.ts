@@ -9,7 +9,8 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Toys And Miniatures',
     negativePrompt: 'opaque',
     style: {
-      aesthetic: 'Drink closeup, cocktail-porn, mixology-art, back-bar-beauty, happy-hour-glamour',
+      aesthetic:
+        'Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish',
       form_and_line:
         'Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral',
       color_palette:
@@ -21,11 +22,11 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Refreshing, cold, happy-hour glamour, sip-ready desire, liquid-lens beauty',
       spatial_distortion:
         'Bubbles, carbonation-trail, ice-stack architecture, citrus-wheel plane, garnish-suspension',
-      atmosphere: 'Party, relax, cocktail-hour murmur, ice-clink rhythm, Friday-evening freedom',
+      atmosphere: 'Relaxed, luxurious, chilled, ice-clink rhythm, evening-glamour',
       key_features:
         'Ice cubes, condensation-beads, citrus-peel twist, sugar-rim, cocktail-pick, carbonation-stream, mint-slap bruise',
       creative_brief:
-        'Frame cocktails as liquid-physics portraits: refraction through glass, condensation microdetail, and garnish architecture. Keep mood luxurious and tactile while making the style portable across drink types and bar contexts.',
+        'Apply cocktail-macro optics to the input: refraction through glass, condensation microdetail, ice caustics, liquid gradients, and garnish-like accent architecture. Keep it luxurious and tactile without requiring a bar, party, or specific drink recipe.',
     },
   },
   {
@@ -52,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior',
       creative_brief:
-        'Preserve identity through articulated toy-hero grammar: molded plastic anatomy, visible joint systems, and display-ready gloss should carry the preset without anchoring it to one fixed living-room battle story.',
+        'Preserve identity through articulated toy-hero grammar: molded plastic anatomy, visible joint systems, and display-ready gloss should carry the preset without anchoring it to one fixed living-room battle story. Apply Action Figure as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -79,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic',
       creative_brief:
-        'Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system readability remains the transferable core beyond specific diorama scenes.',
+        'Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system readability remains the transferable core beyond specific diorama scenes. Apply Lego Toy Brick Build as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -106,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Big-head abstraction grammar, button-eye minimalism, display-figure composition cues, vinyl-matte surface discipline',
       creative_brief:
-        'Preserve this preset through collectible abstraction rules—overscaled head ratios, reduced facial geometry, and matte vinyl display polish should define the style regardless of franchise character source.',
+        'Preserve this preset through collectible abstraction rules—overscaled head ratios, reduced facial geometry, and matte vinyl display polish should define the style regardless of franchise character source. Apply Funko Pop Vinyl Collectible Figure as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -131,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Funny, charming, warm, quirky, optimistic',
       key_features: 'Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows',
       creative_brief:
-        'Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature practical-set lighting should hold identity without referencing specific studios or characters.',
+        'Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature practical-set lighting should hold identity without referencing specific studios or characters. Apply Clay Stop-Motion Comedy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -157,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia',
       key_features: 'Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail',
       creative_brief:
-        'Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative.',
+        'Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin Toy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -184,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material evidence',
       creative_brief:
-        'Keep this preset rooted in miniature layered-stage grammar: handcrafted material evidence, parallax plane stacking, and peephole worldbuilding should define identity beyond any specific shoebox classroom narrative.',
+        'Keep this preset rooted in miniature layered-stage grammar: handcrafted material evidence, parallax plane stacking, and peephole worldbuilding should define identity beyond any specific shoebox classroom narrative. Apply Diorama Box as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -205,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Comforting, soft, security-blanket warmth, bedtime safety, unconditional love',
       key_features: 'Button eyes, stitched smile, bean-bag weight, satin-bow accent',
       creative_brief:
-        'Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber tactility should define identity without depending on a specific nursery storyline.',
+        'Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber tactility should define identity without depending on a specific nursery storyline. Apply Plushie as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -225,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
       key_features: 'Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine',
       creative_brief:
-        'Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and endearing, with crochet construction details driving form identity across any character or object.',
+        'Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and endearing, with crochet construction details driving form identity across any character or object. Apply Amigurumi Crochet as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -245,10 +246,10 @@ export const GENERATED_STYLE_PRESETS = [
         'Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm',
       spatial_distortion:
         'Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry',
-      atmosphere: "Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness",
+      atmosphere: 'Nostalgic, simple, warm, handcrafted, old-world tenderness',
       key_features: 'Wood texture, visible grain rings, dovetail joints, paint-wear edges',
       creative_brief:
-        'Grain rings record the life of the tree now shaped into a plaything for new generations, each growth ring a calendar preserved in oak. Paint chips at the edges reveal layered history of countless small hands, each touch polishing the wood toward heirloom satin. Simplicity carved from a single block carries more warmth than any assembly line could manufacture.',
+        'Translate the input into carved wooden-toy logic: simplified block forms, rounded peg-like joints, visible grain rings, hand-painted accents, and age-polished bevels. Keep heirloom craft warmth, but avoid requiring small hands, a workshop, or one literal toy object.',
     },
   },
   {
@@ -275,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces',
       creative_brief:
-        'Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread material unease should carry the preset without referencing specific films or studios.',
+        'Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread material unease should carry the preset without referencing specific films or studios. Apply Button Eye Doll as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -301,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'White outline, kiss-cut border, gloss-laminate sheen, color-separation registration',
       creative_brief:
-        'Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate gloss behavior should define the preset without anchoring it to one urban micro-scene.',
+        'Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate gloss behavior should define the preset without anchoring it to one urban micro-scene. Apply Sticker Art as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -355,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp',
       creative_brief:
-        'Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits.',
+        'Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits. Apply Soap Bubble as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -410,7 +411,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen',
       creative_brief:
-        'Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle moment.',
+        'Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle moment. Apply Cork as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

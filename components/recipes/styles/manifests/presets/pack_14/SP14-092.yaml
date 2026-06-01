@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-092
 packId: pack_14
-name: Equinox Bridge Sanctum
+name: Equinox Balance Axis
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Balanced bridge sanctuary activated only at equinox moments.
-  form_and_line: Twin spans, mirrored pylons, and axial shrine chambers.
+  aesthetic: Equinox balance axis with bilateral precision, sacred calibration, and liminal poise.
+  form_and_line: Twin-span cues, mirrored pylons, and axial shrine-chamber geometry.
   color_palette: Stone white, bronze, and blue dusk.
   lighting_setup: Symmetric light split and low ritual lanterns.
   material_texture: Cut granite, bronze inlays, and polished rails.
   render_quality: Architectural concept focused on symmetry precision.
-  spatial_distortion: Perfect bilateral framing along bridge axis.
+  spatial_distortion: Perfect bilateral framing along a bridge-like balance axis.
   atmosphere: Poise, tension, and sacred calibration.
-  key_features: Equinox markers, twin altars, and mirrored water basins.
-  creative_brief: A liminal bridge where balance itself is the deity.
+  key_features: Equinox markers, twin altar cues, mirrored water basins.
+  creative_brief: Apply equinox balance axis to the input, making balance itself feel divine without requiring a bridge sanctuary.
 avoidRules: [photoreal, chaotic-neon, cartoon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-092.webp }
 attributes:
   negativePrompt: photoreal, chaotic-neon, cartoon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

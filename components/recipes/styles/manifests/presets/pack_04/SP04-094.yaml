@@ -12,7 +12,9 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Educational anatomical reference plate with layered structural clarity (Leonardo da Vinci and classical medical-plate influence)
+  aesthetic: >-
+    Educational anatomical reference plate with layered structural clarity (Leonardo da Vinci and classical
+    medical-plate influence)
   form_and_line: Precise technical linework for muscle, bone, and tendon mapping
   color_palette: Standardized didactic coding (muscle warm, bone neutral, vascular cool/warm accents)
   lighting_setup: Even clinical illumination for unambiguous form legibility
@@ -22,7 +24,9 @@ visualDna:
   atmosphere: Scientific, disciplined, pedagogical
   key_features: Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity
   creative_brief: >-
-    Present anatomy as a readable structural system. Use consistent labeling, overlay logic, and view alignment so skeletal framework, muscular volume, and connective pathways can be studied independently and in relation without stylistic ambiguity, preserving a Leonardo da Vinci-informed observational rigor.
+    Apply anatomy-reference-sheet structure to any input: layered construction, skeletal-like scaffolds, muscle-flow
+    analogues, cutaway marks, and educational diagram composition. If no biological body exists, convert forms into
+    anatomical systems without requiring humans, animals, labels, or medical realism.
 avoidRules:
   - stylized
   - cartoon

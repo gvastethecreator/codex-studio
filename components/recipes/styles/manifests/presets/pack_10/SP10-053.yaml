@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Spiral
   atmosphere: Groovy, fun
   key_features: Spiral center
-  creative_brief: Fabric twisted into a vortex, pigment bleeding along folds in psychedelic mandalas. Every unwrap is a revelation, a flower of color that could not have been predicted and cannot be repeated.
+  creative_brief: >-
+    Apply tie-dye behavior to the input: radial folds, pigment blooms, spiral
+    bleed, unpredictable color rings, and fabric-like saturation should make
+    surfaces feel hand-dyed without requiring shirts or festival context.
 avoidRules:
   - sharp lines
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

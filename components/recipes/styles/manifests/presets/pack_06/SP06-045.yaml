@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Abstracted
   atmosphere: Rough, organic
   key_features: Heavy texture
-  creative_brief: Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as raised terrain. Valleys hold ink while peaks print light, relief becoming the image generator. The print carries the memory of every material sacrificed to its creation without requiring literal landscape or collage objects.
+  creative_brief: >-
+    Apply collagraph print materiality to any input: raised sand/glue/fiber
+    texture, relief valleys holding ink, irregular pressure, cardboard-like
+    surface memory, and tactile printed terrain. Keep material sacrifice visible
+    without requiring literal collage objects, landscapes, or printing plates.
 avoidRules:
   - photo
   - realistic

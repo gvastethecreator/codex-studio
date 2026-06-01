@@ -13,13 +13,15 @@ visualDna:
   lighting_setup: Low sun through smoke haze, portable lamp pools, hard rim glints on metal edges, and warm repair sparks.
   material_texture: Grease-dark steel, canvas tape, weld beads, cracked rubber, sandblasted paint, and oily handprint smears.
   render_quality: Tactile dieselpunk finish with readable repair logic, rugged mass hierarchy, and controlled utilitarian clutter.
-  spatial_distortion: Compressed maintenance-depth layers and diagonal tool-flow without requiring vehicles, mechanics, garages, or war.
+  spatial_distortion: Compressed maintenance-depth layers, diagonal tool-flow, and optional vehicle-scale cues without requiring a garage, battlefront, or literal repair crew.
   atmosphere: Practical, gritty, stubborn, warm, resourceful.
   key_features: Patch-plate logic, amber repair lamps, hose-loop rhythm, rivet rows, weld scars, and grease-marked material history.
   creative_brief: >-
-    Preserve signal amber field repair as a reusable style system: patched
-    endurance, diesel utility, and warm maintenance light should apply to any
-    subject without requiring vehicles, workshops, weapons, or mechanics.
+    Patch the input with signal amber field repair: plate rectangles, hose-loop
+    rhythm, rivet rows, weld scars, grease-dark steel, and warm maintenance lamps
+    apply diesel utility to any subject. Vehicles, tools, field mechanics, or
+    weapon-hardware silhouettes may reinforce style when useful, without fixing
+    a workshop, garage, or war scene.
 avoidRules: [photoreal, neon-cyber, luxury-clean, magical-fantasy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-135.webp }
 attributes:

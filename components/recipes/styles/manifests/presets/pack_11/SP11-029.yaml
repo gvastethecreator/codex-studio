@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Homey, detailed, fireside-craft, generational skill, slow-thread meditation
   key_features: Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette
   creative_brief: >-
-    Define this preset by embroidery-system grammar: stitch families as mark
-    vocabulary, thread-direction shading, and cloth-grid resolution limits
-    should carry identity beyond one handcrafted vignette.
+    Define this preset by embroidery-system grammar: stitch families as mark vocabulary, thread-direction shading, and
+    cloth-grid resolution limits should carry identity beyond one handcrafted vignette. Apply Embroidery as a portable
+    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
+    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - paint
   - flat

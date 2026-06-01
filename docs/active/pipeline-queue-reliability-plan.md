@@ -98,11 +98,13 @@ Tasks:
 - In queue manager, snapshot attachments before clearing composer.
 - Ensure edit mode keeps `input` and `mask` assets while text-to-image uses references.
 - Add test for queueing image-guided job then changing composer attachments.
+- Done: Browser Queue jobs persist in IndexedDB across refresh. Browser-only `processing` jobs resume as `pending`; jobs already linked to backend are not re-executed and point users to Backend Session Jobs.
 
 Acceptance:
 
 - UI queue item owns immutable generation snapshot.
 - User changes after enqueue cannot corrupt running job.
+- Refreshing browser does not drop pending Browser Queue jobs or duplicate already-created backend jobs.
 
 ### 3. Backend reference preflight
 

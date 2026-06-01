@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Atmospheric, monumental
   key_features: Light shafts
-  creative_brief: Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious scene.
+  creative_brief: Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious setting.
 avoidRules:
   - clear air
 assets:

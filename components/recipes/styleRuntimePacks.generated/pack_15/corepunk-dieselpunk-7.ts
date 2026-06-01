@@ -25,7 +25,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Diesel-hauler motifs, communal machine-shop rhythm, fuel reclamation towers, and worker-solidarity cues.',
       creative_brief:
-        'Preserve iron convoy-commons grammar as a reusable style system: heavy repair urbanism, reclaimed fuel logistics, and worker-solidarity infrastructure should remain coherent across subjects without requiring trucks, hangars, canteens, workers, or a literal convoy.',
+        'Weight the input with cooperative diesel endurance: oxide-red chassis geometry, grease-dark repair marks, amber signal lamps, tarped utility surfaces, and reclaimed fuel logic. Trucks, hangars, workers, or convoys may appear, but the style is solidarity through rugged maintained mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Aerostat hull rhythm, relief-signal amber, cable-brace geometry, sootline weathering, and repaired utility surfaces.',
       creative_brief:
-        'Preserve sootline aerostat relief as a reusable style system: heavy lift, repaired logistics, and warm diesel-era endurance should transform any subject without forcing airships, convoys, disaster scenes, or crews.',
+        'Load the input with sootline relief endurance: blunt hull rhythm, cable-brace diagonals, rescue-amber lamps, canvas khaki weathering, and repaired diesel-era logistics transform any subject without forcing airships, convoys, disaster scenes, or crews.',
     },
   },
   {
@@ -75,12 +75,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Tactile dieselpunk finish with readable repair logic, rugged mass hierarchy, and controlled utilitarian clutter.',
       spatial_distortion:
-        'Compressed maintenance-depth layers and diagonal tool-flow without requiring vehicles, mechanics, garages, or war.',
+        'Compressed maintenance-depth layers, diagonal tool-flow, and optional vehicle-scale cues without requiring a garage, battlefront, or literal repair crew.',
       atmosphere: 'Practical, gritty, stubborn, warm, resourceful.',
       key_features:
         'Patch-plate logic, amber repair lamps, hose-loop rhythm, rivet rows, weld scars, and grease-marked material history.',
       creative_brief:
-        'Preserve signal amber field repair as a reusable style system: patched endurance, diesel utility, and warm maintenance light should apply to any subject without requiring vehicles, workshops, weapons, or mechanics.',
+        'Patch the input with signal amber field repair: plate rectangles, hose-loop rhythm, rivet rows, weld scars, grease-dark steel, and warm maintenance lamps apply diesel utility to any subject. Vehicles, tools, field mechanics, or weapon-hardware silhouettes may reinforce style when useful, without fixing a workshop, garage, or war scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

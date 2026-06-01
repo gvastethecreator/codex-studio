@@ -7,7 +7,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-012',
     name: 'Smoke Photography',
     category: '2. Fluid & Organic',
-    negativePrompt: 'solid object',
+    negativePrompt: 'hard-edged clutter',
     style: {
       aesthetic: 'Wisps of smoke',
       form_and_line: 'Soft curves',
@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mysterious, ephemeral',
       key_features: 'Black background',
       creative_brief:
-        'Form barely held together, a sculpture of hesitation carved from air. Each tendril is a question the wind forgets to answer, presence fading into the suggestion of itself.',
+        'Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, sci-fi',
       key_features: 'Spikes',
       creative_brief:
-        'Liquid metal rises in defiance of gravity, sculpted by invisible fields into alien architectures. Each spike is a negotiation between chaos and order, the magnetic and the material.',
+        'Apply ferrofluid magnetism to the input: glossy black liquid metal, field-led spikes, radial clustering, and alien surface tension should make any subject feel pulled into magnetic order.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creative, messy',
       key_features: 'Cells',
       creative_brief:
-        "Colors collide in slow motion, cells forming and breaking like miniature geology. The pour is a controlled accident, a negotiation between gravity's pull and pigment's will.",
+        'Apply acrylic-pour behavior to the input: marbled pigment flows, cellular blooms, gravity trails, and accidental color continents should cover or reshape the subject without replacing it with a generic paint puddle.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hypnotic, natural',
       key_features: 'Fingerprint pattern',
       creative_brief:
-        'Chemistry dreaming in stripes and spots, the mathematics that paints leopards and zebras from nothing. Two competing forces spiral outward, generating complexity from simple rules.',
+        'Apply reaction-diffusion patterning to the input: chemical stripes, spots, wave fronts, and competing growth fields should generate organic complexity across surfaces without requiring animal bodies.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Scientific, orderly',
       key_features: 'Mandala',
       creative_brief:
-        'Frequency made visible, sand arranging itself into the fingerprint of a note. Sound becomes architect, geometry the frozen echo of vibration seeking rest.',
+        'Apply cymatic vibration to the input: radial frequency nodes, sand-like particle ridges, resonance rings, and frozen sound-wave geometry should make any subject feel organized by invisible audio pressure.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic, vast',
       key_features: 'Stars',
       creative_brief:
-        'Stellar afterbirth drifting across light-years, pink and indigo nurseries where stars ignite. The cosmic scale renders the viewer microscopic, a witness to creation at its most indifferent.',
+        'Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous depth, and cosmic-scale haze should make forms feel suspended in astronomical color without requiring an outer-space backdrop.',
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy, fluid',
       key_features: 'Gold veins',
       creative_brief:
-        'Pigment surrenders to solvent, blooming outward in uncontrolled ecstasy. Boundaries dissolve into soft continents of color, a map of the moment before definition arrives.',
+        'Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders, and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Delicate, colorful',
       key_features: 'Surface tension',
       creative_brief:
-        'Architecture of surface tension, iridescent domes balancing on the edge of nothing. A universe held in a film thinner than thought, swirling with colors borrowed from light itself.',
+        'Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections, meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Connected, growth',
       key_features: 'Web pattern',
       creative_brief:
-        'The underground conversation, white threads stitching soil into sentience. A web older than forests, humming with the silent commerce of nutrients and secrets.',
+        'Apply mycelium-network logic to the input: branching white filaments, nutrient-web connectivity, porous organic nodes, and subterranean softness should link forms into living fungal communication without requiring soil or forest.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Psychedelic, toxic',
       key_features: 'Rainbow sheen',
       creative_brief:
-        'Petroleum rainbows on water, beauty born from something the earth never meant to release. Shifting skin of color, every angle a different jewel dragged from darkness.',
+        'Apply oil-slick interference to the input: thin-film rainbow sheens, black wet depth, shifting magenta-cyan-gold highlights, and surface-angle color flips should make any subject feel iridescent and contaminated.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -18,10 +18,15 @@ visualDna:
   lighting_setup: Studio, ring-light reflection, cold-lab overhead, LED-indicator glow, surgical-key sharpness
   material_texture: Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface, anodized aluminum
   render_quality: Sci-fi, body mod, Ghost-in-the-Shell precision, augment-realism clarity
-  spatial_distortion: Robot arm
+  spatial_distortion: Optional visible augmentation
   atmosphere: Transhuman, cool, augmentation-identity tension, clinical-aesthetic chill, future-body wonder
   key_features: Metal parts, seam-line integration, exposed circuitry, bionic eye, neural port
-  creative_brief: Titanium tracing the boundary where biology yields to engineering, carbon-fiber contours following bone that remembers being human. Bioluminescent circuits pulse beneath semi-transparent silicone, the neural port glowing at the temple like a third eye that sees data streams instead of dreams, the body no longer a given but a decision.
+  creative_brief: >-
+    Mechanize the input through cybernetic augmentation: titanium seams, carbon-fiber contour, medical silicone, bionic
+    eye cues, neural ports and bio-luminescent circuit glow. Preserve transhuman body-mod tension while allowing
+    non-human subjects to gain implant logic instead of forcing a portrait, lab scene or full robot arm. Apply this
+    fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and
+    styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - fully human
 assets:
@@ -41,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

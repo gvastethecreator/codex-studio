@@ -4,8 +4,14 @@ packId: pack_15
 name: Gilded Transit Rotunda
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Decopunk transit liturgy where clocks, route logic, and crowd flow become gilded civic pattern.
   form_and_line: Circular concourse mandalas, ribbed vault fans, balcony rings, radial spokes, and turbine-spiral motion.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Ordered movement, ceremonial modernity, civic patience, and cathedral-like transit awe.
   key_features: Deco timetable suns, turbine spirals, grand ticket arches, emerald route markers, and balcony-ring geometry.
   creative_brief: >-
-    Preserve gilded transit-rotunda grammar as a reusable style system:
-    ticketed radial circulation, ceremonial public timing, and brass civic
-    order should remain coherent across subjects.
-avoidRules: [photoreal, grunge, medieval-rustic, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-051.webp }
+    Rotate the input through gilded public timing: timetable suns, brass grilles, emerald route markers, marble arcs,
+    and turbine spirals should make movement feel ceremonial. Transit rotundas may appear, but the style is radial civic
+    order and patient modernity. Apply this corepunk genre grammar over any input: preserve the faction mood, material
+    ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle,
+    room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - grunge
+  - medieval-rustic
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-051.webp
 attributes:
   negativePrompt: photoreal, grunge, medieval-rustic, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

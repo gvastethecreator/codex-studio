@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge
   key_features: Reflections, crease-free tension, zip front, corset lacing, high-shine polish
-  creative_brief: Light slides across polished latex like a gloved hand searching for a seam that does not exist, every curve a mirror reflecting the room back at itself in distorted worship. The material is a second skin that reveals everything while concealing everything, high-gloss armor for those who understand that the most powerful garment is the one that leaves nothing to the imagination but the person inside it.
+  creative_brief: >-
+    Coat the input in latex/PVC logic: seamless high-gloss reflection, tight
+    compression, zip lines, corset lacing cues and strip-light catchlights.
+    Preserve power-dressing intensity without requiring a body, club, fetish
+    scene or second-skin portrait.
 avoidRules:
   - matte
   - cotton
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

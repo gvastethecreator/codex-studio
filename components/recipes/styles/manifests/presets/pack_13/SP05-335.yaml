@@ -15,16 +15,22 @@ visualDna:
   aesthetic: Minimalismo mineral introspectivo con translucidez gema suspendida en vacío contemplativo.
   form_and_line: Contorno mínimo preciso, arista cristalina limpia y marcas expresivas de baja densidad.
   color_palette: Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue
-  lighting_setup: Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido escénico.
-  material_texture: Translucidez mineral pulida, suavidad de erosión marina, superficie vítrea y terreno mate mínimo.
+  lighting_setup: >-
+    Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido
+    escénico.
+  material_texture: >-
+    Translucidez mineral pulida, suavidad de erosión marina, superficie vítrea y terreno mate
+    mínimo.
   render_quality: Claridad contemplativa de alto control, con espacio negativo dominante y detalle selectivo.
-  spatial_distortion: Slim fragile proportion logic, open-space isolation, clean silhouette spacing, and low-clutter monumental emptiness
+  spatial_distortion: >-
+    Slim fragile proportion logic, open-space isolation, clean silhouette spacing, and low-clutter
+    monumental emptiness
   atmosphere: Esparsa, luminosa e introspectiva, sostenida por fragilidad cristalina.
   key_features: Translucidez gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.
   creative_brief: >-
-    Construye una gramática mineral-void reusable donde translucidez, espacio
-    negativo y melancolía minimal definan identidad sin exigir cuerpos gema,
-    terreno vacío, figuras frágiles o paisaje literal.
+    Use Haruko Ichikawa as style anchor for mineral-void serenity. Any prompt should become
+    translucent, quiet, faceted, spacious, and melancholic through negative space. Gem bodies, empty
+    terrain, fragile figures, and literal landscapes are optional.
 avoidRules:
   - noisy maximalism
   - cluttered environment
@@ -36,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
 attributes:
-  negativePrompt: noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense crowd staging, opaque plastic surfaces
+  negativePrompt: >-
+    noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy
+    outline cartooning, dense crowd staging, opaque plastic surfaces
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

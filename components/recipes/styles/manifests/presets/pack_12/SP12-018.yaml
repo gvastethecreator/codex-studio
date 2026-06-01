@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Tower-defense arcanotecnológico de bastión de tormenta con énfasis en control de rutas y sinergias modulares.
-  subject_treatment: Torres intercambiables por función (slow/burst/chain/support) con silueta y FX diferenciables.
+  aesthetic: Gramática tower-defense arcanotecnológica con control de rutas, sinergias modulares, rayos y nodos conductores.
+  subject_treatment: Convierte el input en torre, nodo, criatura de oleada o módulo defensivo con función slow/burst/chain/support si corresponde.
   color_and_tone: Azul tormenta, plata y pulsos naranja para telegraphear estados de carga/descarga.
   lighting_and_shadow: Rayos frecuentes, flashes de impacto y contraste dirigido para leer oleadas.
   texture_and_material: Piedra tallada, cobre conductor, runas activas y superficies quemadas por descarga.
-  camera_and_composition: Isométrica limpia con rutas enemigas, nodos de torre y áreas de upgrade claras.
+  camera_and_composition: Isométrica limpia con rutas, nodos y áreas de upgrade claras sin exigir bastión físico.
   atmosphere_and_mood: Estratégica, tensa y metódica.
   rendering_and_quality: Gameplay-first visual con readability de pathing, timing y economía de defensa.
 avoidRules:

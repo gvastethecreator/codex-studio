@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Raincoat, weather-ready futurism, urban-downpour chic
+  aesthetic: Transparent plastic fashion, weather-ready futurism, clear-shell chic
   form_and_line: Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc
   color_palette: Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose
-  lighting_setup: Reflective, wet-surface glare, rain-streak catchlights, streetlamp-refraction, overcast-diffusion
+  lighting_setup: Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion
   material_texture: Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC
   render_quality: Waterproof, modern, wet-weather editorial, transparent-tech sophistication
   spatial_distortion: See-through
-  atmosphere: Wet, tech, urban-rain serenity, downpour-preparedness, future-commute cool
+  atmosphere: Wet, tech, downpour-preparedness, future-commute cool, clear-shell precision
   key_features: Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim
-  creative_brief: Raindrops bead on clear TPU like mercury searching for a seam that was heat-sealed into nonexistence, the body beneath visible through a membrane that separates the wearer from weather without hiding anything. Streetlamp light refracts through the transparent shell, casting prismatic distortions across the silhouette of someone who prepared for this downpour and now walks through it like a ghost through a wall.
+  creative_brief: >-
+    Wrap the input in transparent plastic logic: clear TPU, heat-sealed seams,
+    layered visibility, refraction, rain beads, smoked tint and reflective trim.
+    Keep weather-ready futurism without requiring a raincoat wearer, streetlamp,
+    downpour scene or commute.
 avoidRules:
   - opaque
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

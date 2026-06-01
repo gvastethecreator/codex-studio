@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-031
 packId: pack_07
-name: Space Station Interior
-category: 1. Residential Interiors
+name: Orbital Utility Habitat
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,35 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Utilitarismo aeroespacial operativo, donde la habitabilidad emerge de ingeniería compacta y no de decoración.
-  form_and_line: Retículas modulares, aperturas circulares, vectores de sujeción y grillas de acceso técnico de alta densidad.
+  aesthetic: >-
+    Utilitarismo aeroespacial operativo, donde la habitabilidad emerge de ingeniería compacta y no
+    de decoración.
+  form_and_line: >-
+    Retículas modulares, aperturas circulares, vectores de sujeción y grillas de acceso técnico de
+    alta densidad.
   color_palette: White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents
-  lighting_setup: LED técnico de alto control, focos de tarea integrados en panel, rebote frío y modo nocturno ámbar de baja fatiga.
-  material_texture: Paneles textiles técnicos ignífugos, aleación cepillada, velcro de retención, foil aislante y polímeros moldeados funcionales.
-  render_quality: Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste realista de uso continuo.
+  lighting_setup: >-
+    LED técnico de alto control, focos de tarea integrados en panel, rebote frío y modo nocturno
+    ámbar de baja fatiga.
+  material_texture: >-
+    Paneles textiles técnicos ignífugos, aleación cepillada, velcro de retención, foil aislante y
+    polímeros moldeados funcionales.
+  render_quality: >-
+    Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste
+    realista de uso continuo.
   spatial_distortion: Flotación funcional y orientación múltiple sugerida por grillas técnicas.
-  atmosphere: Contenida y procedimental, con precisión operativa bajo fatiga y sensación de vida frágil en entorno hostil.
-  key_features: Sujeciones redundantes, módulos etiquetados, aperturas presurizadas, bolsillos utilitarios y orientación no terrestre.
+  atmosphere: >-
+    Contenida y procedimental, con precisión operativa bajo fatiga y sensación de vida frágil en
+    entorno hostil.
+  key_features: >-
+    Sujeciones redundantes, módulos etiquetados, aperturas presurizadas, bolsillos utilitarios y
+    orientación no terrestre.
   creative_brief: >-
-    Define una gramática orbital transferible basada en función explícita,
-    retención física y legibilidad de interfaz. Cada elemento debe justificar
-    operación, acceso o mantenimiento, evitando futurismo escenográfico limpio.
+    Lleva cualquier sujeto hacia habitabilidad orbital compacta: retención física, orientación
+    múltiple, paneles de acceso y fatiga operacional. El estilo debe sentirse diseñado para
+    sobrevivir microgravedad, no para verse futurista.
 avoidRules:
   - wood
   - brick
@@ -35,11 +49,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

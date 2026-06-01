@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-017
 packId: pack_07
 name: Maximalist Decor
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Maximalismo curatorial de alta saturación, donde superposición y colección son gramática base.
-  form_and_line: Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de superficies.
-  color_palette: Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias controladas.
+  form_and_line: >-
+    Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de
+    superficies.
+  color_palette: >-
+    Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias
+    controladas.
   lighting_setup: Red cálida de lámparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.
-  material_texture: Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro visible.
-  render_quality: Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de jerarquía.
+  material_texture: >-
+    Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro
+    visible.
+  render_quality: >-
+    Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de
+    jerarquía.
   spatial_distortion: Profundidad estable con compresión visual por saturación de objetos y patrones.
   atmosphere: Efervescente, personal, exuberante y deliberadamente excesiva.
   key_features: Campo galería saturado, mezcla agresiva de patrón, capas textiles y acumulación curatorial.
   creative_brief: >-
-    Construye una gramática maximalista transferible basada en saturación
-    cromática, densidad curatorial y superposición textil. Debe mantenerse la
-    legibilidad curatorial sin caer en ruido visual indiscriminado.
+    Construye una gramática maximalista transferible basada en saturación cromática, densidad
+    curatorial y superposición textil. Debe mantenerse la legibilidad curatorial sin caer en ruido
+    visual indiscriminado.
 avoidRules:
   - empty
   - white
@@ -36,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

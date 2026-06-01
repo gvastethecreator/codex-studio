@@ -12,14 +12,14 @@ visualDna:
   color_palette: Teal water, brass, and stone gray.
   lighting_setup: Reflected water shimmer and warm lock lamps.
   material_texture: Weathered brass, wet stone, and timber lock arms.
-  render_quality: Infrastructure concept with strong water motion cues.
+  render_quality: Hydraulic clockwork render with strong water motion cues and ornate flow control.
   spatial_distortion: Waterway-like depth with alternating lock-chamber rhythm.
   atmosphere: Measured flow and engineered adaptability.
   key_features: Canal-lock motifs, gear sluices, maintenance dock marks, and calibrated waterlines.
   creative_brief: >-
-    Preserve brass canal-locks grammar as a reusable style system:
-    hydraulic timing governance, alternating sluice choreography, and
-    ceremonial flow precision should remain coherent across subjects.
+    Regulate the input with brass canal-lock flow: teal water bands, sluice gear
+    housings, calibrated waterlines, wet stone texture, and alternating chamber
+    rhythm make any subject feel measured, adaptive, and hydraulically precise.
 avoidRules: [photoreal, cartoonish, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-093.webp }
 attributes:

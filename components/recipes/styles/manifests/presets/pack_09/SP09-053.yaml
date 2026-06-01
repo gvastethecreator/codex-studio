@@ -21,9 +21,9 @@ visualDna:
   spatial_distortion: Turbulence
   atmosphere: Mysterious, blind
   key_features: Density
-  creative_brief: Render the soft erasure of thick fog where the world dissolves into gradients of grey, edges softening into suggestion and distance becoming a mystery of volumetric density that swallows form in stages. The material must feel cool and damp, a veil that reveals by hiding, turbulence swirling through the mist like slow thought. Capture the beauty of the half-seen, atmosphere as the art of withholding.
+  creative_brief: 'Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.'
 avoidRules:
-  - solid object
+  - hard-edged clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-053.webp
 attributes:

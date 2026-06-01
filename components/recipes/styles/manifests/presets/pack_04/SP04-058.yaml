@@ -12,19 +12,26 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction
-  form_and_line: Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape simplification
+  aesthetic: >-
+    Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and
+    nostalgic polygonal abstraction
+  form_and_line: >-
+    Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era
+    shape simplification
   color_palette: Flat shading, vertex-colored, low-spec palette
   lighting_setup: Vertex light, gouraud shading, no real-time lighting
   material_texture: Pixelated
-  render_quality: Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and deliberate technical limitation aesthetics
+  render_quality: >-
+    Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture
+    behavior, and deliberate technical limitation aesthetics
   spatial_distortion: Blocky
   atmosphere: Nostalgic, simple, CD-ROM childhood, fifth-gen warmth
   key_features: Polygons, unfiltered textures, affine warping
   creative_brief: >-
-    Keep this preset rooted in low-poly constraint grammar: faceted geometry,
-    low-res texture warping cues, and fixed-function shading simplicity should
-    define identity beyond one console-era memory.
+    Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes,
+    vertex-color ramps, affine texture cues, and fixed-function shading simplicity should create
+    early-3D warmth without requiring games, consoles, characters, terrain, or specific polygon
+    scenes.
 avoidRules:
   - smooth
   - high res

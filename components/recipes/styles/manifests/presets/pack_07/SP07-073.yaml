@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-073
 packId: pack_07
-name: Ant Farm
-category: 1. Residential Interiors
+name: Subterranean Bio-Cutaway
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,11 +10,13 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Cutaway subterráneo con red capilar y zonificación biofuncional estricta.
   form_and_line: Túneles capilares ramificados, cámaras nodales, conectores verticales y estratos seccionados por capas.
-  color_palette: Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones
+  color_palette: >-
+    Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly
+    turned earth tones
   lighting_setup: Iluminación lateral de corte, transmisión translúcida en gel y pockets de sombra controlada en profundidad.
   material_texture: Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.
   render_quality: Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie observada.
   key_features: Jerarquía de malla capilar, cámaras funcionales, ejes de circulación vertical y borde transparente de observación.
   creative_brief: >-
-    Define una gramática reusable de ant-farm cutaway donde circulación
-    ramificada, cámaras por función y estratificación granular del suelo
-    permanezcan consistentes entre composiciones.
+    Representa cualquier sistema como corte biofuncional subterráneo: túneles capilares, cámaras nodales, estratos
+    granulares y lectura lateral de observación. La función interna importa más que insectos o superficie literal. Apply
+    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - surface
 assets:
@@ -34,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Fresh, clean, future, login-screen possibility, broadband-dawn, digital-optimism
   key_features: Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection
   creative_brief: >-
-    Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects.
+    Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain
+    optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects. Apply Frutiger Aero
+    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - flat
   - matte

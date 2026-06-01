@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Total abstraction
   atmosphere: Conceptual
   key_features: No subject
-  creative_brief: The camera unmoors from its duty to describe, wandering into territories where color itself becomes the protagonist and form exists only as suggestion. Blur and close-range mystery conspire to dissolve the familiar until recognition fails and new meaning assembles in the wreckage of the recognizable. What the eye cannot name, the imagination begins to furnish.
+  creative_brief: >-
+    Apply abstract-photography dissolution to the input: close-range cropping,
+    color-first composition, blur, partial recognition, and suggestive form
+    fragments should let any subject become photographic abstraction.
 avoidRules:
   - recognizable object
 assets:

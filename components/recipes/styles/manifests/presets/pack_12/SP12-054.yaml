@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Heist-western futurista sobre tren en cañón cobrizo, centrado en abordaje, saqueo y escape en movimiento.
-  subject_treatment: Bandidos con jetpack y guardias ferroviarios por rol (defensa, persecución, corte de ruta).
+  aesthetic: Gramática heist-western futurista con abordaje, saqueo, escape en movimiento y polvo cobrizo.
+  subject_treatment: Aplica roles bandido/guardia/persecución/corte de ruta al input; jetpack, tren y cañón son anclas opcionales.
   color_and_tone: Cobre brillante, azul cielo y negro carbón para lectura de facción y estado de alerta.
   lighting_and_shadow: Sol duro con polvo a contraluz para enfatizar velocidad y exposición.
   texture_and_material: Madera envejecida, acero remachado, tierra seca y humo de propulsión.
-  camera_and_composition: Tren diagonal con puntos de salto, ventanas de abordaje y rutas de repliegue.
+  camera_and_composition: Diagonal de movimiento con puntos de salto, abordaje y repliegue sin exigir tren literal.
   atmosphere_and_mood: Explosiva, audaz y narrativamente tensa.
   rendering_and_quality: Mission key-art gameplay-first con claridad de objetivo, botín y extracción.
 avoidRules:

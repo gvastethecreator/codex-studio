@@ -12,14 +12,14 @@ visualDna:
   color_palette: Sap green, cloud white, and soft amber.
   lighting_setup: Sky daylight filtered through translucent living spans.
   material_texture: Root fiber, bio-resin, and woven membrane.
-  render_quality: Infrastructure concept with lush organic engineering.
+  render_quality: Lush organic-infrastructure render with adaptive bridge engineering.
   spatial_distortion: Bridge-grid crossing layered terrace depth.
   atmosphere: Connection, resilience, and responsive infrastructure.
   key_features: Living span motifs, root anchors, adaptive path bands, and self-healing seam textures.
   creative_brief: >-
-    Preserve living bridge-district grammar as a reusable style system:
-    bio-arched circulation networks, root-anchor resilience engineering, and
-    responsive connective urbanism should remain coherent across subjects.
+    Span the input with living bridge resilience: sap-green bio-arches,
+    cloud-white membranes, amber seam glows, root-anchor textures, and adaptive
+    path bands make any subject feel connected, healing, and responsive.
 avoidRules: [photoreal, militaristic, neon-gloom, watermark, text, logo, decay]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-109.webp }
 attributes:

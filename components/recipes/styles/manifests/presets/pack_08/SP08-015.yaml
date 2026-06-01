@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: High quality cosplay photo, character-faithful replication, convention-floor spectacle
-  form_and_line: Accurate to character, silhouette-matched precision, exaggerated anime proportions
+  aesthetic: High quality cosplay construction, character-faithful transformation, anime-costume spectacle
+  form_and_line: Silhouette-matched precision, exaggerated anime proportions, prop-scale geometry
   color_palette: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
-  lighting_setup: Convention floor or studio, three-point studio rig, colored gel accents, anime-style rim
+  lighting_setup: Studio craft lighting, three-point rig, colored gel accents, anime-style rim
   material_texture: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
   render_quality: Fan art, detailed, fun, craftsmanship pride, competition-grade finish
   spatial_distortion: Big props
-  atmosphere: Playful, character, fake, joyful transformation, fandom devotion, costume-hall electricity
+  atmosphere: Playful, character, fake, joyful transformation, fandom devotion, handmade spectacle
   key_features: Wig texture, styled fiber sheen, armor seam lines, prop replica detail
-  creative_brief: A drawing stepped out of its cell-shaded world and into three dimensions, foam and Worbla holding impossible proportions with the gravity of devotion. Wig fibers catch convention-hall fluorescence like a dream refusing to wake, every seam of handmade armor a love letter written in hot glue and reference sheets.
+  creative_brief: >-
+    Convert the input into cosplay craft language: styled synthetic fiber,
+    EVA/Worbla armor seams, thermoplastic props, holographic spandex and
+    silhouette-matched anime exaggeration. Preserve character-faithful cues
+    without forcing a convention hall, named character, replica pose or photo
+    booth scene.
 avoidRules:
   - realistic clothes
   - dull
@@ -42,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

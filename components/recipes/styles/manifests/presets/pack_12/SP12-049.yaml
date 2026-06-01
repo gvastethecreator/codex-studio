@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Dungeon-raid nocturno en fortaleza de espinas arcanas, orientado a asalto coordinado y progresión por capas defensivas.
-  subject_treatment: Equipo de incursión con roles explícitos de brecha, soporte, control y eliminación prioritaria.
+  aesthetic: Gramática dungeon-raid nocturna con espinas arcanas, asalto coordinado y capas defensivas.
+  subject_treatment: Aplica roles de brecha/soporte/control/eliminación al input, o conviértelo en barrera orgánica, trampa o punto de entrada.
   color_and_tone: Azul lunar, verde oscuro y rojo ritual para lectura de ruta, trampa y objetivo.
   lighting_and_shadow: Antorchas escasas, niebla plateada y sombras profundas para windows de entrada.
   texture_and_material: Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.
-  camera_and_composition: Murallas altas con punto de entrada claro y rutas secundarias de infiltración.
+  camera_and_composition: Punto de entrada claro, rutas secundarias y capas defensivas sin exigir castillo o murallas.
   atmosphere_and_mood: Calculada, valiente y tensa en cooperación.
   rendering_and_quality: Raid-opening gameplay art con claridad de acceso, amenaza y priorización táctica.
 avoidRules:

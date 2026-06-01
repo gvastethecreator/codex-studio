@@ -12,16 +12,20 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Night city rain
+  aesthetic: Cyberpunk neon-rain lookdev
   form_and_line: Reflections
   color_palette: Pink, Cyan, Purple
   lighting_setup: Emissive signs
-  material_texture: Wet asphalt, reflective surfaces
+  material_texture: Wet reflective surfaces, emissive haze
   render_quality: Blade Runner rain-soaked neon megacity
   spatial_distortion: None
   atmosphere: Dystopian, cool, future-noir
   key_features: Neon glow
-  creative_brief: 'Rain-slicked asphalt mirrors a sky that never existed — pink and cyan neon bleed across wet surfaces, every puddle a portal to the signage above. Emissive kanji and holographic advertisements paint the night in electric magenta, while shadows pool in alleyways where the glow cannot reach. Blade Runner''s grandchildren walk these streets: future-noir rendered in 3D, dystopian beauty that tastes like ozone and filter cigarettes.'
+  creative_brief: >-
+    Apply cyberpunk neon-rain treatment to the input: magenta/cyan emissive
+    bleed, wet reflective sheen, holographic haze, high-contrast future-noir
+    shadows and ozone atmosphere. It may hint at signage or urban density, but
+    must not force streets, alleys, kanji, pedestrians or a literal city.
 avoidRules:
   - daylight
   - sun

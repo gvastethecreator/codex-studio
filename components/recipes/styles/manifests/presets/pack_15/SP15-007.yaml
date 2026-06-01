@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Care, calm, and technological trust without coldness.
   key_features: Green facade logic, therapeutic terrace rhythm, serene circulation.
   creative_brief: >-
-    Preserve vertical-meadow clinic grammar as a reusable style system:
-    therapeutic biophilic layering, accessible healing circulation, and
-    human-centered calm should remain coherent across subjects without
-    requiring a clinic, patients, floors, or a building facade.
+    Render the input with therapeutic meadow logic: stacked chlorophyll veils,
+    warm clinical whites, accessible loop geometry, and matte bioceramic calm.
+    Clinics, patients, floors, or facades are optional; the transferable style
+    is care infrastructure softened until it feels alive.
 avoidRules: [photoreal, sterile-corporate, dark-gloomy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-007.webp }
 attributes:

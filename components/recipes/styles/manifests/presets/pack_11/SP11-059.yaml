@@ -20,9 +20,15 @@ visualDna:
   render_quality: Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory
   spatial_distortion: Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal
   atmosphere: Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder
-  key_features: Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding
+  key_features: >-
+    Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge
+    rounding
   creative_brief: >-
-    Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.
+    Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro
+    compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.
+    Apply Snowflake as a portable style system over any input: preserve its construction grammar, material cues, scale
+    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
+    sample, product shot, or scene template.
 avoidRules:
   - melted
 assets:

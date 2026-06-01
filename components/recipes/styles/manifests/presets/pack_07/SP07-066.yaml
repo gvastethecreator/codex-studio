@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-066
 packId: pack_07
-name: Lego Brick-Built City
-category: 1. Residential Interiors
+name: Studded ABS Brick System
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,20 +10,34 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Toy brick-built con ensamblaje modular ABS, lógica stud-visible e ingeniería lúdica simplificada.
-  form_and_line: Retícula ortogonal de studs, masa escalonada por bloques, trabas de esquina y transición geométrica de escala juguete.
-  color_palette: Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing blocks, and occasional transparent-plastic highlight tones
-  lighting_setup: Key difusa amplia de interior, especulares plásticas nítidas y agrupaciones de highlight sobre coronas stud.
-  material_texture: Brillo ABS inyectado, tapas circulares, juntas de pieza, transiciones slope y marcas leves de moldeo.
-  render_quality: Toy-architecture de lectura alta con ensamblaje preciso y abstracción de bloque no realista deliberada.
+  aesthetic: >-
+    Toy brick-built con ensamblaje modular ABS, lógica stud-visible e ingeniería lúdica
+    simplificada.
+  form_and_line: >-
+    Retícula ortogonal de studs, masa escalonada por bloques, trabas de esquina y transición
+    geométrica de escala juguete.
+  color_palette: >-
+    Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing
+    blocks, and occasional transparent-plastic highlight tones
+  lighting_setup: >-
+    Key difusa amplia de interior, especulares plásticas nítidas y agrupaciones de highlight sobre
+    coronas stud.
+  material_texture: >-
+    Brillo ABS inyectado, tapas circulares, juntas de pieza, transiciones slope y marcas leves de
+    moldeo.
+  render_quality: >-
+    Toy-architecture de lectura alta con ensamblaje preciso y abstracción de bloque no realista
+    deliberada.
   spatial_distortion: None
   atmosphere: Energética, constructiva y optimista, guiada por sistema modular.
-  key_features: Campos de studs visibles, huellas alineadas a baseplate, apilado modular, seams interlock y color blocking plástico intenso.
+  key_features: >-
+    Campos de studs visibles, huellas alineadas a baseplate, apilado modular, seams interlock y
+    color blocking plástico intenso.
   creative_brief: >-
-    Construye una gramática brick-built reusable con geometría modular por
-    stud, respuesta plástica ABS brillante y color blocking consistente en
+    Convierte forma y superficie en ensamblaje brick-built: studs visibles, juntas interlock, color
+    blocking plástico y brillo ABS. El estilo debe leer como sistema modular de juguete aplicable a
     cualquier sujeto.
 avoidRules:
   - smooth
@@ -35,11 +49,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

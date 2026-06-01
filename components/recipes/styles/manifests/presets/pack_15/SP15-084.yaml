@@ -12,14 +12,15 @@ visualDna:
   color_palette: Cool gray, teal, and soft amber.
   lighting_setup: Controlled lab light and subtle status halos.
   material_texture: Acoustic ceramics, test composites, and insulated paneling.
-  render_quality: Advanced R&D concept with serene technical tone.
+  render_quality: Serene propulsion-design render with careful technical tone and low-noise cues.
   spatial_distortion: Nested calibration rings converging on a quiet test core.
   atmosphere: Precision, care, and optimistic experimentation.
   key_features: Quiet engine pods, calibration rings, acoustic shell ribs, and communal design markings.
   creative_brief: >-
-    Preserve cradle of quiet-engines grammar as a reusable style system:
-    low-noise propulsion experimentation, nested acoustic lab geometry, and
-    care-centered technical optimism should remain coherent across subjects.
+    Grow the input around quiet propulsion care: acoustic ceramic shells,
+    teal calibration rings, insulated cradle curves, soft amber status halos,
+    and thrust-petal motifs make any subject feel tuned, protected, and
+    experimentally alive.
 avoidRules: [photoreal, militarized-weapons, cyber-grunge, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-084.webp }
 attributes:

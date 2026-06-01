@@ -12,14 +12,14 @@ visualDna:
   color_palette: Pale green, sandstone, and sky gold.
   lighting_setup: Top-lit atrium with diffuse bounces and daylight shafts.
   material_texture: Glazed brick, timber, and translucent solar film.
-  render_quality: Monumental but welcoming public architecture.
+  render_quality: Monumental welcoming render with public climate architecture and solar updraft cues.
   spatial_distortion: Vertical central void pulling forms upward through light and garden layers.
   atmosphere: Public trust, climatic comfort, and collective aspiration.
   key_features: Solar chimney motifs, civic ramp bands, shared garden layers, and warm updraft light.
   creative_brief: >-
-    Preserve sunstack civic-atrium grammar as a reusable style system:
-    vertically layered public climate architecture, solar-chimney energy
-    symbolism, and bright civic trust should remain coherent across subjects.
+    Stack the input into sunlit civic trust: pale-green vertical terraces,
+    sandstone voids, sky-gold shafts, translucent solar film, and chimney-core
+    updraft geometry make any subject feel public, climatic, and aspirational.
 avoidRules: [photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-102.webp }
 attributes:

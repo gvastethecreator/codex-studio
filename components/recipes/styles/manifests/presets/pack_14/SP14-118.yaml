@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-118
 packId: pack_14
-name: Cinder Sun Pantheon Hall
+name: Cinder Sun Pantheon Trial
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Hall for a sun pantheon tempered by ash, smoke, and sacrificial brilliance.
-  form_and_line: Radial altar, stepped tiers, and haloed deity niches.
+  aesthetic: Sun-pantheon trial tempered by ash, smoke, and sacrificial brilliance.
+  form_and_line: Radial altar cues, stepped tiers, and haloed deity-niche rhythms.
   color_palette: Ash gold, ember red, and blackened ivory.
   lighting_setup: Furnace glow and solar shafts through smoke.
   material_texture: Burnt stone, gold leaf residue, and soot-streaked silk.
-  render_quality: High-drama mythic architecture with iconographic clarity.
-  spatial_distortion: Concentric sanctuary around a furnace altar.
+  render_quality: High-drama mythic rendering with iconographic clarity.
+  spatial_distortion: Concentric sanctuary logic around a furnace-like solar core.
   atmosphere: Majesty, ordeal, and radiant severity.
-  key_features: Sun disc, ash steps, and deity niches.
-  creative_brief: A pantheon hall where the sun survives by passing through ash and flame.
+  key_features: Sun disc, ash-step bands, deity-niche silhouettes.
+  creative_brief: Recast the input through a cinder sun pantheon trial, making radiance survive through ash and flame without requiring a hall.
 avoidRules: [photoreal, cheerful, neon, watermark, text, logo, toy-like]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-118.webp }
 attributes:
   negativePrompt: photoreal, cheerful, neon, watermark, text, logo, toy-like
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

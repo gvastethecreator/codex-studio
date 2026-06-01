@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-074
 packId: pack_07
-name: Dollhouse (Cutaway)
-category: 1. Residential Interiors
+name: Toy-Scale Sectional Cutaway
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,33 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Miniatura en corte abierto, curada por compartimentos-caja y precisión de exhibición artesanal.
-  form_and_line: Cara retirada en sección, bandas apiladas, retícula de compartimentos y diagonales de conexión compacta.
-  color_palette: Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige bases, dusty pink highlights, and muted decorative accents
-  lighting_setup: Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo para lectura seccional.
-  material_texture: Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín lacados.
-  render_quality: Miniatura cutaway de alta claridad con legibilidad compartimento-por-compartimento y densidad decorativa balanceada.
+  form_and_line: >-
+    Cara retirada en sección, bandas apiladas, retícula de compartimentos y diagonales de conexión
+    compacta.
+  color_palette: >-
+    Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige
+    bases, dusty pink highlights, and muted decorative accents
+  lighting_setup: >-
+    Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo
+    para lectura seccional.
+  material_texture: >-
+    Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín
+    lacados.
+  render_quality: >-
+    Miniatura cutaway de alta claridad con legibilidad compartimento-por-compartimento y densidad
+    decorativa balanceada.
   spatial_distortion: None
   atmosphere: Lúdica, íntima y ordenada, con teatralidad doméstica curada.
-  key_features: Frente abierto seccionado, módulos apilados, transiciones diagonales y perímetros de corte nítidos.
+  key_features: >-
+    Frente abierto seccionado, módulos apilados, transiciones diagonales y perímetros de corte
+    nítidos.
   creative_brief: >-
-    Formula una gramática reusable de dollhouse-cutaway donde apilado seccional
-    abierto, interiorismo miniatura y proporción toy-scale dominen el estilo
-    sin depender del tema específico.
+    Aplica corte seccional toy-scale: frente abierto, compartimentos apilados, materiales
+    miniaturizados y luz de vitrina. Debe revelar estructura interna como maqueta curada sin exigir
+    dollhouse doméstica.
 avoidRules:
   - full wall
 assets:
@@ -34,11 +46,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

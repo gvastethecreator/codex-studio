@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-072
 packId: pack_07
-name: Bottle Ship
-category: 1. Residential Interiors
+name: Bottle-Glass Curio Miniature
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,33 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.
-  form_and_line: Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de marco cilíndrico.
-  color_palette: Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones
-  lighting_setup: Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de sombra interna suave.
-  material_texture: Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y corcho poroso.
+  aesthetic: >-
+    Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala
+    imposible dentro de vidrio.
+  form_and_line: >-
+    Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de
+    marco cilíndrico.
+  color_palette: >-
+    Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral
+    glass highlights, and cork earth tones
+  lighting_setup: >-
+    Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de
+    sombra interna suave.
+  material_texture: >-
+    Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y
+    corcho poroso.
   render_quality: Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.
   spatial_distortion: Cylindrical refraction warp and magnification compression introduced by curved bottle glass
   atmosphere: Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.
-  key_features: Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por curvatura y base de exhibición.
+  key_features: >-
+    Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por
+    curvatura y base de exhibición.
   creative_brief: >-
-    Construye una gramática reusable de bottle-miniature donde refracción
-    visible del vidrio, ensamblaje restringido y densidad de microdetalle sean
-    invariantes estilísticas.
+    Encapsula cualquier sujeto como curio miniatura dentro de vidrio: refracción cilíndrica,
+    compresión por cuello, microdetalle meticuloso y base de vitrina. No depende de barco; depende
+    de imposibilidad artesanal encapsulada.
 avoidRules:
   - ocean
 assets:
@@ -34,11 +46,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

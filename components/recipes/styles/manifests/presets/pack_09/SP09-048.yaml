@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Pinhole
   atmosphere: Functional, dry
   key_features: Granules
-  creative_brief: Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions.
+  creative_brief: >-
+    Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held
+    in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material
+    should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of
+    the bulletin, surface as archive of pinned intentions. Use Cork Board as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - wood grain
 assets:

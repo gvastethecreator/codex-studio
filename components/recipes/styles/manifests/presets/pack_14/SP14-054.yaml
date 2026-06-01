@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-054
 packId: pack_14
-name: Oracle Wind Colonnade
+name: Oracle Wind Legal Instrument
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Open-air oracle corridor where wind patterns are read as messages.
-  form_and_line: Long colonnade, hanging chimes, and divination markers.
+  aesthetic: Oracle wind interpretation where weather becomes legal instrument and sacred message.
+  form_and_line: Long colonnade cues, hanging chimes, and divination markers.
   color_palette: Pale stone, sky gray, and laurel green.
   lighting_setup: Overcast diffuse light and intermittent shrine fire.
   material_texture: Chalky marble, bronze chimes, and weathered cloth banners.
   render_quality: Refined atmospheric concept with motion cues.
-  spatial_distortion: Linear tunnel effect through repeated columns.
+  spatial_distortion: Linear tunnel effect through repeated column-like rhythms.
   atmosphere: Suspense, interpretation, and ritual patience.
-  key_features: Wind chime arrays, prophecy steles, and supplicant stations.
-  creative_brief: A Greek oracle hall where weather becomes a legal instrument.
+  key_features: Wind chime arrays, prophecy steles, supplicant station cues.
+  creative_brief: Apply oracle-wind legal instrument logic to the input, letting weather read as verdict without requiring an oracle hall.
 avoidRules: [photoreal, cartoon, futuristic-ui, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-054.webp }
 attributes:
   negativePrompt: photoreal, cartoon, futuristic-ui, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

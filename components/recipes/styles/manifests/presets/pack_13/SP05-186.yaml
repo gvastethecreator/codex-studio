@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Funny, sweet, loud, sincere
   key_features: Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft timing
   creative_brief: >-
-    Preserve height-gap comedy-romance grammar as a reusable style system:
-    banter-driven reaction timing, scale-contrast staging, and loud-to-tender
-    emotional pivots should remain consistent across subjects.
+    Scale the input through height-gap romcom timing: elastic acting lines,
+    bright pastel pop beats, exaggerated proportion contrast, and loud-to-tender
+    rhythm can make any subject funny and sincere without requiring a couple,
+    school setting, argument pose, or literal height joke.
 avoidRules:
   - realistic
   - 3d render

@@ -12,8 +12,12 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and carnival-scale freedom tone
-  form_and_line: Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing
+  aesthetic: >-
+    Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and
+    carnival-scale freedom tone
+  form_and_line: >-
+    Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour
+    timing
   color_palette: Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control
   lighting_setup: Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability
   material_texture: Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing
@@ -22,9 +26,10 @@ visualDna:
   atmosphere: Joyful, adventurous, playful, free, high-spirited
   key_features: Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing
   creative_brief: >-
-    Keep identity anchored in elastic expressive physics and bright exploratory
-    momentum; the style should communicate boundless adventure energy without
-    relying on specific faction, ship, sea, or lore motifs.
+    Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate
+    boundless adventure energy without relying on specific faction, ship, sea, or lore motifs. Apply this anime/IP-title
+    grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic
+    cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-023.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

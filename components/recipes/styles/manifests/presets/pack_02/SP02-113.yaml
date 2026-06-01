@@ -12,7 +12,9 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy
+  aesthetic: >-
+    Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park
+    grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy
   form_and_line: Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks
   color_palette: Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink
   lighting_setup: Flat polluted ambience, sour daylight, no glamour, environmental haze
@@ -21,7 +23,13 @@ visualDna:
   spatial_distortion: Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity
   atmosphere: Bleak, satirical, mutated, weirdly cozy
   key_features: Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor
-  creative_brief: 'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy.'
+  creative_brief: >-
+    Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and
+    environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required
+    content. The image should feel poisoned yet weirdly cozy. Apply The Oblongs - Toxic Suburb Family as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
+    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
+    narrative setup.
 avoidRules:
   - digital
   - HD

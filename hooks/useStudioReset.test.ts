@@ -15,7 +15,7 @@ describe('performStudioReset', () => {
       },
       clearGenerationState: () => calls.push('clearGenerationState'),
       clearUiState: () => calls.push('clearUiState'),
-      localStorageKeys: ['generation-config', 'isBackgroundEnabled'],
+      localStorageKeys: ['generation-config'],
       requestStudioReset: async () => {
         calls.push('requestStudioReset');
       },
@@ -34,7 +34,6 @@ describe('performStudioReset', () => {
       'requestStudioReset',
       'clearIndexedDb',
       'remove:generation-config',
-      'remove:isBackgroundEnabled',
       'resetQueue',
       'clearGenerationState',
       'startTransition',

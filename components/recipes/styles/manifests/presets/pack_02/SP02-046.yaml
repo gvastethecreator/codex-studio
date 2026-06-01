@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Long-exposure drift, breath ghost, mirrored plate depth
   atmosphere: Haunting, history, frozen time, Victorian silence
   key_features: Vignette, brass frame, chemical bloom, tarnished edge
-  creative_brief: 'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness.'
+  creative_brief: >-
+    Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges,
+    long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific
+    artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness. Apply
+    Daguerreotype as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
+    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
+    readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - color
   - paper

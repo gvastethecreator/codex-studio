@@ -12,14 +12,14 @@ visualDna:
   color_palette: Soft rose, algae green, and pale ivory.
   lighting_setup: Celestial moonlight mixed with internal bioglow.
   material_texture: Living membranes, polished lens glass, and soft organic ribs.
-  render_quality: Surreal but readable biotech concept art.
+  render_quality: Surreal readable biotech render with living sensory instrumentation.
   spatial_distortion: Dome-centered observation composition with layered organ-garden depth.
   atmosphere: Awe, measurement, and organic wonder.
   key_features: Organ blooms, sensor domes, growth-bench motifs, and living sensory membranes.
   creative_brief: >-
-    Preserve organ garden-observatory grammar as a reusable style system:
-    sensory-organ astronomical instrumentation, petaled growth observatories,
-    and organic wonder measurement should remain coherent across subjects.
+    Observe the input through organ-garden senses: soft-rose petals, algae-green
+    stalk arrays, pale-ivory rib platforms, polished lens domes, and internal
+    bioglow make any subject feel measured, alive, and wondrous.
 avoidRules: [photoreal, gore, horror, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-114.webp }
 attributes:

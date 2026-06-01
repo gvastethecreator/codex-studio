@@ -20,7 +20,12 @@ visualDna:
   render_quality: Engineering, diagram, instructional
   atmosphere: Technical, complex, assembly logic
   key_features: Alignment, explosion direction
-  creative_brief: 'Components drift apart along invisible assembly axes, each part maintaining its exact spatial relationship to every other — the explosion is orderly, didactic, a diagram rendered in three dimensions. Assembly-color coding distinguishes subsystems, and flat lighting prioritizes legibility over drama, cross-section surfaces revealing what the solid exterior conceals. The image is engineering as spectacle: an instruction manual elevated to sculpture, every screw and housing floating in the precise position that explains how it all fits together.'
+  creative_brief: >-
+    Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding and
+    cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer component layers
+    without forcing screws, housings or a manufactured product. Apply Exploded View as a portable 3D/render style system
+    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - assembled
   - solid

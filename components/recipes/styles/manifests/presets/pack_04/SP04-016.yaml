@@ -12,19 +12,28 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial framing
-  form_and_line: Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained crosshatch texture
-  color_palette: Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation
+  aesthetic: >-
+    Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist
+    editorial framing
+  form_and_line: >-
+    Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained
+    crosshatch texture
+  color_palette: >-
+    Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight
+    punctuation
   lighting_setup: Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard silhouette separation
   material_texture: Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints
   render_quality: High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom
   spatial_distortion: Perspective compression tuned for dramatic panel composition and foreground-background tension
   atmosphere: Ominous, electric, tense, sophisticated, anti-utopian
-  key_features: Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes
+  key_features: >-
+    Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion
+    bands, sharp graphic silhouettes
   creative_brief: >-
-    Treat this preset as a comic-language system: contrast hierarchy, duotone
-    chroma control, and graphic noir shadow architecture should define identity
-    without locking to a specific place.
+    Apply tech-noir comic language to any input: contrast hierarchy, cyan-magenta duotone control,
+    reflective black planes, vapor diffusion bands, and sharp graphic silhouettes should define
+    identity without locking to alleys, skylines, screens, vehicles, detectives, or any specific
+    place.
 avoidRules:
   - daylight
   - nature

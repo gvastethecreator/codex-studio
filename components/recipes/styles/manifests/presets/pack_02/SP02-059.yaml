@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Tech, analytical, sensor-vision, invisible-energy
   key_features: White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom
-  creative_brief: 'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form.'
+  creative_brief: >-
+    Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat
+    bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance
+    assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form. Apply Thermal
+    Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
+    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
+    fixed IP scene, or narrative setup.
 avoidRules:
   - visible light
 assets:

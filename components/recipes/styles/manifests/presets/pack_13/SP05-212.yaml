@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-212
 packId: pack_13
-name: Komi Can't Communicate - Chalkboard Social Jitters
+name: Immaculate Social-Jitter Comedy
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Komi title anchor translated into polished social-anxiety comedy, pristine beauty, nervous silence, cute exaggeration, and tidy emotional pressure
-  form_and_line: Clean beauty-contour discipline, micro-expression emphasis, polite negative-space framing, and graphic pause panels around social friction
-  color_palette: Polished whites, navy anchors, soft blush accents, dark green-black contrast fields, and warm skin highlights
-  lighting_setup: Bright clear fill, reflective tidy surfaces, focused contrast for confession-like tension, and gentle blush-lit reaction beats
-  material_texture: Chalk-dust softness, pressed fabric planes, smooth paper fibers, dry marker traces, and immaculate surface polish
-  render_quality: Polished social-jitter comedy rendering with high expression readability, tidy clarity, and elegant cute exaggeration
-  spatial_distortion: Anxiety-point-of-view tightening around expressions and empty graphic space rather than fixed classroom geography
-  atmosphere: Shy, polished, funny, affectionate
-  key_features: Pristine orderliness, chalk-dust graphic motifs, awkward body language, social-jitter reaction beats, beauty-and-comedy contrast
+  aesthetic: >-
+    Immaculate social-jitter anime comedy where pristine beauty, nervous silence, graphic restraint,
+    and overpolite pressure define the image
+  form_and_line: >-
+    Clean beauty contours, microexpression emphasis, large polite negative space, tidy pause panels,
+    and controlled awkward body language
+  color_palette: >-
+    Polished white, navy anchors, soft blush, green-black contrast, warm skin highlights, and pale
+    chalk dust
+  lighting_setup: >-
+    Bright clean fill, reflective tidy surfaces, focused confession-like contrast, and blush-lit
+    reaction beats
+  material_texture: >-
+    Chalk dust, pressed cloth planes, smooth paper, dry marker residue, immaculate polish, and faint
+    surface grain
+  render_quality: >-
+    Polished social-comedy anime finish with high expression readability, elegant exaggeration, and
+    precise awkwardness
+  spatial_distortion: >-
+    Anxiety-POV tightening around expressions and empty graphic space rather than literal classroom
+    geography
+  atmosphere: Shy, polished, funny, affectionate, tense
+  key_features: >-
+    Pristine order, silent pressure, chalk-dust motifs, social-jitter beats, beauty-comedy contrast,
+    and polite empty space
   creative_brief: >-
-    Use Komi Can't Communicate as a style anchor for immaculate social-jitter
-    comedy: polished beauty cues, silent pressure, and chalk-dust graphic
-    restraint should survive without requiring a classroom or chalkboard scene.
+    Use Komi as style anchor for immaculate social-jitter comedy. Apply pristine contours, silent
+    pressure, blush beats, and chalk-dust restraint to any prompt. Classrooms, chalkboards, school
+    setup, and specific social scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-212.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

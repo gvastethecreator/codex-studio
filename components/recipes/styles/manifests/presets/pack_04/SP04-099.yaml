@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Functional, restrained, information-priority design
   key_features: Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints
   creative_brief: >-
-    Prototype interface systems that communicate critical gameplay data with minimal cognitive load. Compare multiple layout paradigms under consistent hierarchy rules, ensuring legibility, interaction clarity, and screen-space economy across different play contexts.
+    Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids, reticles,
+    status blocks, icon placeholders, and layered interface hierarchy. If no software/game context exists, translate the
+    prompt into abstract interface architecture without requiring readable UI text, screenshots, or a game scene.
 avoidRules:
   - finished
   - polished

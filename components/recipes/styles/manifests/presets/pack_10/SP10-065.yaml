@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Rustic, simple
   key_features: Weave pattern
-  creative_brief: Over and under, over and under, the oldest technology of containment woven from reed and rhythm. Each crossing is a decision that holds the next in place, a geometry of simple interdependence.
+  creative_brief: >-
+    Apply basket-weave interlock to the input: over-under strips, reed-like
+    rhythm, tactile crossing shadows, and simple containment geometry should
+    organize surfaces without requiring baskets or craft setup.
 avoidRules:
   - solid
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Handmade, rebellious, art-press energy
   key_features: Overprint collisions, halftone grain fields, registration mismatch signatures
   creative_brief: >-
-    Embrace riso mechanics as core style grammar: limited inks, imperfect registration, and tactile noise. Compose around overprint behavior and channel offset so each image feels materially printed rather than digitally simulated.
+    Apply risograph mechanics to any input: limited soy-ink channels, imperfect registration,
+    overprint collisions, halftone grain, roller noise, and paper absorbency should make the image
+    materially printed without requiring zines, posters, typography, badges, flyers, or fixed
+    print-shop content.
 avoidRules:
   - perfect registration
 assets:

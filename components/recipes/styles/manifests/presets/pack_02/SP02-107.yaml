@@ -12,7 +12,9 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill
+  aesthetic: >-
+    Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted
+    domesticity, uncanny insert shock, fear made cute and shrill
   form_and_line: Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing
   color_palette: Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow
   lighting_setup: Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting
@@ -21,7 +23,13 @@ visualDna:
   spatial_distortion: Negative-space expansion, tiny form against vast field, sudden insert scale shock
   atmosphere: Terrified, lonely, surreal, absurd
   key_features: Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition
-  creative_brief: 'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure.'
+  creative_brief: >-
+    Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic
+    colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as
+    requirements. The style should make emptiness feel like pressure. Apply Courage the Cowardly Dog - Rural Nightmare
+    Pastel as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
+    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
+    fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - HD

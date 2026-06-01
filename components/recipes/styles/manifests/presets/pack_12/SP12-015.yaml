@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Metroidvania tecno-arcano de ruina monumental con foco en exploración, gating y activación de sistemas ancestrales.
-  subject_treatment: Colosos mecánicos como arquitectura interactiva por estados (dormant/active/hostile).
+  aesthetic: Gramática metroidvania tecno-arcana con gating, activación ancestral, escala monumental y mecha sagrado.
+  subject_treatment: >-
+    Si el input contiene personaje/objeto/criatura, darle indicios de coloso mecánico, núcleo latente o arquitectura
+    interactiva por estados dormant/active/hostile.
   color_and_tone: Piedra beige, pátina verde y núcleos azules para señalizar función tecnológica latente.
   lighting_and_shadow: Rayos cenitales y polvo volumétrico para guiar descubrimiento de paths secretos.
   texture_and_material: Basalto, circuitería incrustada, musgo seco y juntas mecánicas erosionadas.
-  camera_and_composition: Escala monumental con anclas humanas mínimas para reforzar lectura de progreso espacial.
+  camera_and_composition: >-
+    Escala monumental, rutas bloqueadas y landmarks de progreso; templo o ruina pueden aparecer pero no son
+    obligatorios.
   atmosphere_and_mood: Reverente, misteriosa y arqueotecnológica.
   rendering_and_quality: Matte gameplay concept con landmarks de navegación y jerarquía de interacción ambiental.
+  creative_brief: >-
+    Aplica Ancient Mecha Temple como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

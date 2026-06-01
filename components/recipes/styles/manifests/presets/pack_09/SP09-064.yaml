@@ -12,16 +12,16 @@ tags:
   - texture-and-materiality
   - surface-wear-and-aging
 visualDna:
-  aesthetic: Dried lake bed
+  aesthetic: Cracked dry mud
   form_and_line: Puzzle cracks
   color_palette: Tan, Brown
-  lighting_setup: Harsh sun
+  lighting_setup: Hard dry light
   material_texture: Dry clay
-  render_quality: Drought, desert
+  render_quality: Arid, brittle
   spatial_distortion: Curled plates
   atmosphere: Thirsty, hot
   key_features: Crack pattern
-  creative_brief: Capture the drought geometry of cracked mud where puzzle-piece plates curl at the edges, separating into a map of thirst written in tan and brown under harsh desert sun. Each polygon should feel baked and brittle, the curled edges casting thin shadows that deepen the sense of arid abandonment. Render the beauty of dessication, the landscape of thirst drawn in shrinking clay.
+  creative_brief: 'Apply cracked-mud desiccation to the input: tan-brown puzzle plates, curled brittle edges, shrinking-clay gaps, and thin shadows under hard dry light. If ground, terrain, clay, skin-like surface, or object exists, fracture it directly; otherwise use drought geometry as surface pattern without forcing a desert landscape.'
 avoidRules:
   - wet mud
 assets:

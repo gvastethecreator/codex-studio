@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-070
 packId: pack_07
-name: Gingerbread House
-category: 1. Residential Interiors
+name: Confectionery Structural Ornament
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,33 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Construcción festiva comestible con lógica de ornamento confitero y masa de cuento artesanal.
-  form_and_line: Contornos de icing trazado, teja de galleta festoneada, repetición de columnas candy y marcos de pretzel redondeados.
-  color_palette: Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel notes, and sprinkle multicolor highlights
-  lighting_setup: Ámbar interior cálido, destellos de cristal de azúcar, twinkle festivo suave y sombra cozy de bajo contraste.
-  material_texture: Grano de galleta horneada, relieve de icing, polvo azucarado cristalino, gloss candy duro y acentos de glaseado chocolate.
-  render_quality: Confection-architecture de alto detalle con materialidad comestible legible y precisión decorativa artesanal.
+  form_and_line: >-
+    Contornos de icing trazado, teja de galleta festoneada, repetición de columnas candy y marcos de
+    pretzel redondeados.
+  color_palette: >-
+    Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm
+    caramel notes, and sprinkle multicolor highlights
+  lighting_setup: >-
+    Ámbar interior cálido, destellos de cristal de azúcar, twinkle festivo suave y sombra cozy de
+    bajo contraste.
+  material_texture: >-
+    Grano de galleta horneada, relieve de icing, polvo azucarado cristalino, gloss candy duro y
+    acentos de glaseado chocolate.
+  render_quality: >-
+    Confection-architecture de alto detalle con materialidad comestible legible y precisión
+    decorativa artesanal.
   spatial_distortion: None
   atmosphere: Festiva, indulgente y acogedora, con ritual artesanal celebratorio.
-  key_features: Juntas definidas por icing, nodos gumdrop, ritmo de cubierta cookie, motivos peppermint lineales y microdetalle sprinkle.
+  key_features: >-
+    Juntas definidas por icing, nodos gumdrop, ritmo de cubierta cookie, motivos peppermint lineales
+    y microdetalle sprinkle.
   creative_brief: >-
-    Define una gramática reusable de gingerbread donde masa
-    comestible, linework estructural de icing y sistema ornamental candy sean
-    invariantes de identidad entre sujetos.
+    Convierte estructura en sistema comestible ornamental: icing como línea constructiva, galleta
+    como masa, azúcar como textura y candy como acento modular. Funciona sobre cualquier tema sin
+    exigir casita navideña.
 avoidRules:
   - inedible
 assets:
@@ -34,11 +46,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

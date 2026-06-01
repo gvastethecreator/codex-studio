@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Rational, didactic, constructive
   key_features: Modular grid, primary blocks, asymmetric equilibrium, typographic integration
   creative_brief: >-
-    Compose with strict Bauhaus economy: geometric primitives, disciplined grid logic, and purpose-led typography. Preserve functional clarity and asymmetrical balance while keeping the style portable across subjects beyond any single poster message.
+    Apply Bauhaus poster economy to any input: grid-governed primitives, primary blocks, asymmetric
+    balance, diagonal typographic tension, and matte functional clarity should make purpose visible
+    without requiring school posters, readable type, furniture, buildings, or one message.
 avoidRules:
   - decorative
   - floral

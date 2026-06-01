@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-323
 packId: pack_13
-name: Naoko Takeuchi - Moon-Prism Glamour Frame
+name: Prism-Glamour Transformation Polish
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Shimmering moon-prism glamour with fashion-magazine grace, diary-heart tenderness, celestial romance, and polished transformation energy
-  form_and_line: Clean beauty-line contours, glossy eyelash emphasis, accessory-like inking, and ribbon-sweep composition
+  aesthetic: >-
+    Shimmering moon-prism glamour with fashion-magazine grace, diary-heart tenderness, celestial
+    romance, and polished transformation energy
+  form_and_line: >-
+    Clean beauty-line contours, glossy eyelash emphasis, accessory-like inking, and ribbon-sweep
+    composition
   color_palette: Blush pink, moon white, navy velvet, gold sparkle, peach pearl, lavender gleam
   lighting_setup: Soft star-filter bloom, moonlit key light, cosmetic glow with sparkle flares
-  material_texture: Glossy cosmetic highlights, satin ribbon sheen, enamel-like ornament detail, and pearl-shine glow
-  render_quality: Romantic magical-girl rendering with polished fashion-beauty framing and sparkle-disciplined clarity
-  spatial_distortion: Long flowing arcs, elongated eye-like focal shapes, floating ribbons, and graceful transformation posture cues
+  material_texture: >-
+    Glossy cosmetic highlights, satin ribbon sheen, enamel-like ornament detail, and pearl-shine
+    glow
+  render_quality: >-
+    Romantic magical-girl rendering with polished fashion-beauty framing and sparkle-disciplined
+    clarity
+  spatial_distortion: >-
+    Long flowing arcs, elongated eye-like focal shapes, floating ribbons, and graceful
+    transformation posture cues
   atmosphere: Romantic, sparkling, feminine, dreamy
-  key_features: Moon motifs, gem-like emblems, fashion-pose rhythm, ribbon motion, starry romance framing
+  key_features: >-
+    Prismatic sparkle, fashion rhythm, ribbonlike motion, gem-light accents, tender celestial
+    framing, and polished shoujo glamour
   creative_brief: >-
-    Use Naoko Takeuchi title as style anchor for moon-prism glamour:
-    transformation-fashion elegance, ribbon sparkle, emblem light, and tender
-    celestial romance should transfer without requiring magical girls, brooches,
-    pose callouts, or fixed moon iconography.
+    Use Naoko Takeuchi as style anchor for prism-glamour transformation polish. Any prompt should
+    become luminous, romantic, fashion-clean, and jewel-bright. Magical girls, brooches, pose
+    callouts, ribbons, and moon symbols are optional.
 avoidRules:
   - gritty realism
   - desaturated palettes
@@ -35,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-323.webp
 attributes:
-  negativePrompt: gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting
+  negativePrompt: >-
+    gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane
+    flat lighting
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

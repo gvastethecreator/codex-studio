@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Color shift
   atmosphere: Cool, collectible
   key_features: Rainbow gradient
-  creative_brief: Light split into its full spectrum by microscopic ridges, silver surrendering to every color at once. The surface never settles on a single identity, shifting with the angle of the eye that beholds it.
+  creative_brief: >-
+    Apply holographic-foil optics to the input: silver base shine, spectral
+    angle shifts, micro-ridge diffraction, and rainbow flashes should make forms
+    change identity with light direction.
 avoidRules:
   - matte paper
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

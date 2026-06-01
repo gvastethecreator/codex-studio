@@ -12,14 +12,14 @@ visualDna:
   color_palette: Sea blue, brass, and storm gray.
   lighting_setup: Dawn reflection and beacon lamp rows.
   material_texture: Weathered wood, riveted brass, and stone quays.
-  render_quality: Strong worldbuilding with maritime clarity.
+  render_quality: Strong maritime-clockwork render with beacon clarity and schedule-control motifs.
   spatial_distortion: Harbor-like depth leading to a central timekeeping axis.
   atmosphere: Order, signal discipline, and civic tide control.
   key_features: Tide clocks, signal-crane motifs, quay pendulums, and brass waterline markers.
   creative_brief: >-
-    Preserve timekeeper harbor grammar as a reusable style system:
-    maritime schedule governance, tidal signal control machinery, and
-    beacon-led civic coordination should remain coherent across subjects.
+    Tide-lock the input into maritime clockpunk order: brass waterline markers,
+    pendulum masts, crane-arm arcs, sea-blue timing bands, and beacon rows make
+    any subject feel governed by signals, tides, and civic schedule.
 avoidRules: [photoreal, neon-dystopia, industrial-rust, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-088.webp }
 attributes:

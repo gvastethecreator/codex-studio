@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Glitch, tearing, horizontal displacement, time-base error
   atmosphere: Memory, raw, unguarded nostalgia
   key_features: Date stamp, REC indicator, zoom wobble
-  creative_brief: 'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family scenes.'
+  creative_brief: 'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family setups.'
 avoidRules:
   - hd
   - digital

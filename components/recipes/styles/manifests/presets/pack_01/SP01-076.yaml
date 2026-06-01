@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Unsettling, factual
   key_features: Evidence-like markers
-  creative_brief: Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime scene, blood, ruler, or investigation props.
+  creative_brief: Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime setting, blood, ruler, or investigation props.
 avoidRules:
   - artistic
   - emotional

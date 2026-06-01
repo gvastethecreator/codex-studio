@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Shocking, fast
   key_features: Branching
-  creative_brief: Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture.
+  creative_brief: >-
+    Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of
+    blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc
+    should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance.
+    Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
+    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
+    or scene where the material naturally appears.
 avoidRules:
   - fire
   - smoke

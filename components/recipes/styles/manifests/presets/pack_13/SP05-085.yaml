@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-085
 packId: pack_13
-name: Bocchi the Rock! – Anxiety Glitch Music Comedy
+name: Anxiety-Glitch Catharsis Comedy
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Anxiety-comedy music language where mundane softness collides with stylized panic-breakdown insertions and sudden cathartic release
-  form_and_line: Soft everyday contours punctuated by abrupt exaggeration modes, collapse-face elasticity, and stabilized release silhouettes
-  color_palette: Base warm pastels with occasional high-saturation anxiety spikes, glitch-tone accents, and hard contrast bursts
-  lighting_setup: Calm ambient baseline transitioning to hard key accents and stylized flash overlays during emotional overload beats
-  material_texture: Everyday soft textures with mixed-media interruption cues (halftone/glitch/pixel artifacts) used as expressive overlays
-  render_quality: Hybrid slice-comedy render with controlled mode-switching between awkward stillness and high-energy stage intensity while preserving readability
-  spatial_distortion: Contextual distortion toggles from grounded social framing to expressive panic-warps and back to stable cathartic composition
-  atmosphere: Anxious, funny, vulnerable, and musically liberating
-  key_features: Mode-switch visual language, panic-to-release contrast, glitch overlays, and socially awkward micro-acting clarity
+  aesthetic: >-
+    Anxiety-glitch anime comedy where grounded softness ruptures into mixed-media panic modes, then
+    releases into cathartic brightness
+  form_and_line: >-
+    Soft everyday contours broken by abrupt exaggeration modes, collapse-face elasticity, hard
+    graphic inserts, and stabilized release silhouettes
+  color_palette: >-
+    Warm pastel baseline, high-saturation anxiety spikes, magenta glitch accents, hard black-white
+    bursts, and stage-like release color
+  lighting_setup: >-
+    Calm ambient baseline switching to hard key accents, flash overlays, and cathartic glow bursts
+    during emotional overload
+  material_texture: >-
+    Soft everyday surfaces interrupted by halftone, pixel, smear, photocopy, glitch, or collage
+    overlays used as internal emotion texture
+  render_quality: >-
+    Hybrid slice-comedy anime finish with controlled mode-switching, awkward stillness, and
+    high-energy release readability
+  spatial_distortion: >-
+    Grounded social framing toggles into panic warps, mixed-media cut-ins, and stable cathartic
+    composition
+  atmosphere: Anxious, funny, vulnerable, explosive, liberating
+  key_features: >-
+    Mode switching, panic inserts, glitch texture, awkward microacting, collapse/release contrast,
+    and cathartic color bursts
   creative_brief: >-
-    Use the title as a style anchor for anxiety-glitch comedy. Transfer
-    grounded softness, meltdown insertions, and cathartic release to any
-    subject without requiring band gear, school, or stage.
+    Use Bocchi the Rock! as style anchor for anxiety-glitch catharsis comedy. Apply soft baseline,
+    sudden mixed-media panic, distorted self-perception, and release glow to any prompt. Band gear,
+    school, stage, and music props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-085.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

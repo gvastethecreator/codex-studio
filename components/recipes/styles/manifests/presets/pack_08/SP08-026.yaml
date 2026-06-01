@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Motorcycle club, outlaw-brotherhood iconography, open-road defiance
   form_and_line: Heavy leather, cut-off vest, engineer-boot stomp, bandana-mask line
   color_palette: Black leather, Silver, denim-blue, club-patch color, chrome, grease-black
-  lighting_setup: Harsh, midday-sun glare, chrome-reflection highlights, bar-sign neon, desert-highway heat
+  lighting_setup: Harsh chrome-reflection highlights, bar-sign neon hints, sun-glare heat
   material_texture: Heavyweight cowhide leather, embroidered patches, metal studs, chain, dirty denim, brass zippers
   render_quality: Tough, dangerous, asphalt-authenticity, Sons of Anarchy grittiness
   spatial_distortion: None
-  atmosphere: Intimidating, cool, road-dog brotherhood, exhaust-fume authority, clubhouse gravity
+  atmosphere: Intimidating, cool, road-dog defiance, exhaust-fume authority, outlaw gravity
   key_features: Leather vest, three-piece patch, engineer boots, chain wallet
-  creative_brief: Cowhide leather heavy enough to stop a story before it starts, club patches sewn with the thread of miles traveled and debts unpaid. Engineer boots planted on asphalt like territorial markers, chrome and grease and chain-wallet gravity, the cut-off vest a flag flown by a nation of two wheels and no fixed address.
+  creative_brief: >-
+    Recast the input in outlaw biker codes: heavyweight cowhide, cut-off vest,
+    embroidered patches, engineer boots, chain wallet, grease black and chrome
+    glints. Keep two-wheel defiance as style pressure without requiring a gang,
+    clubhouse, road scene, motorcycle or intimidating person.
 avoidRules:
   - soft
   - colorful
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

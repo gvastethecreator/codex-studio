@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Warfront attrition en marismas de bronce, orientado a avance por trincheras, desgaste y control de suministros.
-  subject_treatment: Ingenieros de asedio y unidades de empuje con lectura de función táctica.
+  aesthetic: Gramática warfront-attrition con avance por trincheras, desgaste, suministros y barro metálico.
+  subject_treatment: Reinterpreta el input como ingeniero de asedio, unidad de empuje, suministro, fortín o línea de avance.
   color_and_tone: Verde barro, bronce viejo y rojo estandarte para codificar bando y presión de frente.
   lighting_and_shadow: Niebla baja con antorchas dispersas para visibilidad parcial y amenaza constante.
   texture_and_material: Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.
-  camera_and_composition: Trincheras convergentes hacia fortín objetivo con rutas de asalto definidas.
+  camera_and_composition: Líneas de avance, rutas de asalto y colapso defensivo sin exigir marisma o fortín.
   atmosphere_and_mood: Opresiva, militar y de desgaste prolongado.
   rendering_and_quality: Tactical war-campaign art con legibilidad de líneas de avance y colapso defensivo.
 avoidRules:

@@ -4,8 +4,14 @@ packId: pack_15
 name: Comet Salvage Yard
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
   aesthetic: Raypunk resurrection style where wreckage becomes raw myth and repair geometry becomes outlaw ritual.
   form_and_line: Debris totems, crane-arm silhouettes, retrofit pit rings, cable-bundle roots, and half-rebuilt hull profiles.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Ingenuity under pressure, outlaw pragmatism, second chances, and mechanical stubbornness.
   key_features: Salvage crane claws, parts-tray grids, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.
   creative_brief: >-
-    Push comet salvage-yard as reusable style: make subjects feel rebuilt from
-    heroic wreckage, with repair scars, crane diagonals, and outlaw invention
-    carrying emotional weight.
-avoidRules: [photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-067.webp }
+    Rebuild the input from heroic wreckage: crane diagonals, welding-white scars, mission-patch scraps, retrofit pit
+    rings, and cobalt worklight should make repair feel mythic. Salvage yards or wreck sections can anchor the style,
+    but the point is outlaw invention and second chances. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - cyberpunk-city
+  - fantasy-castle
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-067.webp
 attributes:
   negativePrompt: photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

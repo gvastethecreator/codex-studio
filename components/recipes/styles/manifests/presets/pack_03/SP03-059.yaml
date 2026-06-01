@@ -19,9 +19,13 @@ visualDna:
   material_texture: Digital fabric, weave simulation
   render_quality: Clo3D/Marvelous Designer digital garment simulation
   spatial_distortion: Floating cloth
-  atmosphere: Futuristic, fashion, runway spectacle
+  atmosphere: Futuristic, fashion-material spectacle
   key_features: Drape, cloth dynamics
-  creative_brief: 'Fabric that cannot exist in the physical world — iridescent weaves shift color with viewing angle, and cloth simulation drapes across invisible forms with Marvelous Designer precision. Runway lighting catches every fold and flutter, and digital weave patterns map thread-level detail onto garments that float in defiance of gravity. The image is fashion''s digital frontier: a Clo3D spectacle where the only limit on material is imagination, and every drape tells a story the physical runway could never stage.'
+  creative_brief: >-
+    Apply digital-fashion material logic to the input: impossible iridescent
+    weaves, simulation-grade drape, thread-level patterns and runway-grade
+    highlight control. If garments exist, elevate them; otherwise use fashion
+    textile behavior without forcing a model, runway or floating dress.
 avoidRules:
   - stiff cloth
 assets:

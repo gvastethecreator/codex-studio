@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Sphere
   atmosphere: Light, fun
   key_features: Transparency
-  creative_brief: Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops.
+  creative_brief: >-
+    Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature
+    weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each
+    sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render
+    the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
+    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
+    or scene where the material naturally appears.
 avoidRules:
   - plastic ball
 assets:

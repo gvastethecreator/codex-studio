@@ -4,8 +4,14 @@ packId: pack_15
 name: Reactor Wedding Pavilion
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Isotopic romance style where reactor halos and civic optimism become soft ceremonial machinery.
   form_and_line: Spiral approach lines, atom-canopy ribs, isotope ring frames, circular focal platforms, and floral orbits.
@@ -17,20 +23,34 @@ visualDna:
   atmosphere: Tender futurism, social ritual, engineered elegance, and unnervingly perfect optimism.
   key_features: Isotope ring arches, atom floral canopies, radiant circles, brass rail curves, and reactor-blessing lamp motifs.
   creative_brief: >-
-    Preserve reactor wedding-pavilion grammar as a reusable style system:
-    ceremonial isotope-ring intimacy, satin-science elegance, and polished
-    brass ritual cues should remain coherent across subjects.
-avoidRules: [photoreal, dystopian-bunker, medieval, grunge-horror, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-043.webp }
+    Make the input ceremonially radiant: isotope ring arches, satin-science surfaces, pearl enamel, blush reactor halos,
+    and brass vow-rail curves should turn utility into ritual. Wedding or pavilion cues may appear, but the style is
+    engineered tenderness with unnervingly perfect optimism. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - dystopian-bunker
+  - medieval
+  - grunge-horror
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-043.webp
 attributes:
   negativePrompt: photoreal, dystopian-bunker, medieval, grunge-horror, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

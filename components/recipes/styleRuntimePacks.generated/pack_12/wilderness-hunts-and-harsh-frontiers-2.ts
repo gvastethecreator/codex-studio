@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, flat-light, lowres',
     style: {
       aesthetic:
-        'Extraction shooter en bioma alienígena nocturno, con énfasis en rastreo, stealth y navegación orgánica hostil.',
+        'Gramática extraction-shooter bioluminiscente con stealth orgánico, rastreo térmico y hostilidad alienígena nocturna.',
       subject_treatment:
-        'Escuadras de 3-4 roles con perfiles térmicos y lectura inmediata de aliado/enemigo en vegetación densa.',
+        'Transforma el input en lectura de presa/equipo/ruta con perfiles térmicos, señales aliado-enemigo y camuflaje vivo sin exigir una jungla literal.',
       color_and_tone:
         'Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.',
       lighting_and_shadow:
@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.',
       camera_and_composition:
-        'Composición por capas de cobertura, líneas de visión quebradas y diagonales de emboscada.',
+        'Capas de cobertura orgánica, líneas de visión quebradas, diagonales de emboscada y ventanas de extracción sugeridas.',
       atmosphere_and_mood:
         'Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.',
       rendering_and_quality:
@@ -34,9 +34,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, snow, pastel',
     style: {
       aesthetic:
-        'Dungeon-crawler infernal enfocado en navegación de riesgo térmico, crafting bélico y encuentros con mini-boss industriales.',
+        'Gramática dungeon-crawler infernal con riesgo térmico, crafting bélico, calor telegráfico y maquinaria ritual.',
       subject_treatment:
-        'Enemigos forjadores colosales y mobs de soporte, con telegraphs de ataque por calor y ritmo de martillo.',
+        'Transforma el input en enemigo forjador, arma, estación o criatura endurecida por horno; usar telegraphs de calor y ritmo de martillo sin fijar un dungeon.',
       color_and_tone:
         'Naranja fundido, negro carbón y reflejos cobrizo-escoria para lectura inmediata de zonas letales.',
       lighting_and_shadow:
@@ -44,7 +44,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.',
       camera_and_composition:
-        'Eje diagonal de puentes, crisoles y plataformas seguras con landmarks de progresión claros.',
+        'Eje diagonal de progresión con crisoles, plataformas seguras y landmarks térmicos como anclas opcionales.',
       atmosphere_and_mood: 'Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.',
       rendering_and_quality:
         'Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.',
@@ -57,9 +57,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, tropical, low-detail',
     style: {
       aesthetic:
-        'Survival sandbox ártico con enclave comercial improvisado como nodo de crafting, trueque y expedición.',
+        'Gramática survival sandbox ártica con refugio precario, crafting, trueque, expedición y contraste térmico.',
       subject_treatment:
-        'Traders, hunters y scouts armados con perfiles de clase legibles por equipo térmico.',
+        'Reinterpreta el input como trader, hunter, scout, recurso o estación improvisada; usar equipo térmico y perfiles de clase sólo cuando aporten lectura.',
       color_and_tone:
         'Azul glaciar, ámbar cálido y gris humo para separar refugio de amenaza exterior.',
       lighting_and_shadow:
@@ -67,11 +67,13 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hielo rayado, lona pesada, madera húmeda y metal congelado por uso extremo.',
       camera_and_composition:
-        'Calle central de hub con puestos laterales, puntos de misión y salida a whiteout.',
+        'Hub de supervivencia con puntos de misión, recursos y salida a whiteout como estructura flexible, no bazaar literal.',
       atmosphere_and_mood:
         'Refugio precario, cooperación tensa y supervivencia nocturna prolongada.',
       rendering_and_quality:
         'Hub visual de alta legibilidad para economía de recursos y preparación de runs.',
+      creative_brief:
+        'Aplica Frozen Bazaar Survival Night como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -81,9 +83,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
     style: {
       aesthetic:
-        'Co-op extraction shooter en minería planetaria extrema, con foco en objetivos, evacuación y supervivencia de escuadra.',
+        'Gramática co-op extraction shooter minera con objetivos, evacuación, polvo mineral y supervivencia de escuadra.',
       subject_treatment:
-        'Operarios pesados con tool-weapons modulares y roles complementarios de perforación/defensa/soporte.',
+        'Reinterpreta el input como operario pesado, tool-weapon, recurso, amenaza o equipo de extracción modular.',
       color_and_tone:
         'Cobre oscuro, verde radar y naranja industrial para lectura de objetivo y estado de equipo.',
       lighting_and_shadow:
@@ -91,10 +93,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Roca fracturada, polvo mineral denso, acero rugoso y marcas de perforación reciente.',
       camera_and_composition:
-        'Túnel descendente con objetivos a distancia, rutas de retorno y zonas de emboscada legibles.',
+        'Objetivos a distancia, rutas de retorno y zonas de emboscada legibles; túnel o mina son anclas opcionales.',
       atmosphere_and_mood: 'Labor extrema, camaradería funcional y riesgo continuo.',
       rendering_and_quality:
         'Mission visual gameplay-first con claridad de objetivo, amenaza y ruta de extracción.',
+      creative_brief:
+        'Aplica Deep Mine Co-op Extraction como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -104,9 +108,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, murky-water, lowres',
     style: {
       aesthetic:
-        'Action-RPG submarino de reino coralino, orientado a exploración vertical, patrullas y combate de movilidad acuática.',
+        'Gramática action-RPG submarina coralina con exploración vertical, patrullas, movilidad acuática y biominera viva.',
       subject_treatment:
-        'Guardianes anfibios y monturas abisales por rol (vanguardia, control, persecución).',
+        'Convierte el input en guardián anfibio, montura abisal, ruta, reliquia o estructura coralina según su silueta.',
       color_and_tone:
         'Turquesa brillante, rojo coral y blanco nacarado para separar rutas seguras y zonas hostiles.',
       lighting_and_shadow:
@@ -114,10 +118,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Coral poroso, escamas nacaradas, algas estructurales y arquitectura bio-mineral viva.',
       camera_and_composition:
-        'Perspectiva amplia con ciudad aterrazada, corrientes principales y puntos de ascenso/descenso.',
+        'Perspectiva amplia con corrientes, ascenso/descenso y jerarquía territorial; ciudad coralina es opcional.',
       atmosphere_and_mood: 'Maravillosa, elegante y peligrosamente impredecible.',
       rendering_and_quality:
         'Worldbuilding gameplay key-art con lectura clara de rutas, amenaza y jerarquía territorial.',
+      creative_brief:
+        'Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -127,9 +133,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, neon-city, lowres',
     style: {
       aesthetic:
-        'Tactical shooter de largo alcance en cañones verticales, centrado en control de líneas y ventaja de altura.',
+        'Gramática tactical-shooter de largo alcance con control de líneas, ventaja de altura y exposición calculada.',
       subject_treatment:
-        'Marksmen especialistas con camuflaje geológico y kits de reposicionamiento.',
+        'Aplica rol marksman, camuflaje geológico, kit de reposicionamiento o vulnerabilidad de cruce al input.',
       color_and_tone:
         'Rojo mineral, beige seco y azul limpio para separar terreno, cobertura y exposición.',
       lighting_and_shadow:
@@ -137,7 +143,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.',
       camera_and_composition:
-        'Profundidad extrema entre riscos y puentes, con rutas de flanqueo claramente trazadas.',
+        'Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.',
       atmosphere_and_mood: 'Precisa, paciente y letal a distancia.',
       rendering_and_quality:
         'Competitive map readability-first con claridad de sightlines, sniping nests y riesgo de cruce.',
@@ -150,9 +156,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, cityscape, low-detail',
     style: {
       aesthetic:
-        'Co-op monster-hunt en llanuras eléctricas abiertas, con énfasis en rastreo, coordinación de escuadra y ejecución por ventanas.',
+        'Gramática co-op monster-hunt eléctrica con rastreo, coordinación, ventanas de ejecución y telegraphs de tormenta.',
       subject_treatment:
-        'Cazadores montados y bestias colosales con lectura clara de rol, amenaza y patrón de ataque.',
+        'Si el input contiene criatura/personaje, escalarlo a bestia, hunter o montura; si es objeto, volverlo rastro, herramienta o weak point.',
       color_and_tone:
         'Azul tormenta, amarillo rayo y tierra oscura para codificar clima, peligro y terreno.',
       lighting_and_shadow:
@@ -160,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.',
       camera_and_composition:
-        'Escala amplia con monstruo dominante, rutas de cerco y líneas de escape visibles.',
+        'Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.',
       atmosphere_and_mood: 'Épica, riesgosa y altamente coordinada.',
       rendering_and_quality:
         'Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.',
@@ -173,9 +179,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, snow-theme, lowres',
     style: {
       aesthetic:
-        'Frontier-defense RPG en bosque de brasas permanentes, orientado a patrulla, fortificación y caza reactiva.',
+        'Gramática frontier-defense RPG con brasas permanentes, patrulla, fortificación y caza reactiva.',
       subject_treatment:
-        'Rangers híbridos tecno-místicos con roles de rastreo, control y defensa de perímetro.',
+        'Convierte el input en ranger tecno-místico, refugio, trampa, rastro o perímetro defensivo según aplique.',
       color_and_tone:
         'Naranja brasa, verde pino y negro humo para separar refugio, amenaza y rutas.',
       lighting_and_shadow:
@@ -183,10 +189,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.',
       camera_and_composition:
-        'Portón del outpost como ancla, con líneas de defensa y accesos secundarios visibles.',
+        'Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.',
       atmosphere_and_mood: 'Vigilante, resistente y tácticamente austera.',
       rendering_and_quality:
         'Defensive-hub gameplay-first con legibilidad de patrulla, alarma y respuesta.',
+      creative_brief:
+        'Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -196,9 +204,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, neon, low-detail',
     style: {
       aesthetic:
-        'Warfront attrition en marismas de bronce, orientado a avance por trincheras, desgaste y control de suministros.',
+        'Gramática warfront-attrition con avance por trincheras, desgaste, suministros y barro metálico.',
       subject_treatment:
-        'Ingenieros de asedio y unidades de empuje con lectura de función táctica.',
+        'Reinterpreta el input como ingeniero de asedio, unidad de empuje, suministro, fortín o línea de avance.',
       color_and_tone:
         'Verde barro, bronce viejo y rojo estandarte para codificar bando y presión de frente.',
       lighting_and_shadow:
@@ -206,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.',
       camera_and_composition:
-        'Trincheras convergentes hacia fortín objetivo con rutas de asalto definidas.',
+        'Líneas de avance, rutas de asalto y colapso defensivo sin exigir marisma o fortín.',
       atmosphere_and_mood: 'Opresiva, militar y de desgaste prolongado.',
       rendering_and_quality:
         'Tactical war-campaign art con legibilidad de líneas de avance y colapso defensivo.',
@@ -219,17 +227,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, city-neon, lowres',
     style: {
       aesthetic:
-        'Colossus-hunt cooperativo en huertos titánicos, enfocado en escalada táctica y derribo por fases.',
+        'Gramática colossus-hunt cooperativa con escalada táctica, derribo por fases y weak points biomecánicos.',
       subject_treatment:
-        'Escaladores tácticos y bestias biomecánicas con lectura clara de puntos débiles.',
+        'Si el input contiene criatura, escalarla a coloso; si contiene personaje/objeto, convertirlo en escalador, anclaje o weak point.',
       color_and_tone:
         'Verde oliva, rojo fruta madura y gris metal para contraste orgánico-mecánico.',
       lighting_and_shadow:
         'Cielo nublado con brillos de armadura que señalan momentos de vulnerabilidad.',
       texture_and_material:
         'Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.',
-      camera_and_composition:
-        'Escala extrema con figura humana mínima para reforzar amenaza colosal.',
+      camera_and_composition: 'Escala extrema y puntos de ascenso sin exigir huerto titánico.',
       atmosphere_and_mood: 'Asombrosa, peligrosa y cooperativamente épica.',
       rendering_and_quality:
         'Hunting-season gameplay key-art con telegraph claro de fase, ascenso y remate.',

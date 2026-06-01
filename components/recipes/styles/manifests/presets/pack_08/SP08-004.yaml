@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Coachella desert festival outfit, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie
+  aesthetic: Bohemian festival styling, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie
   form_and_line: Flowing layers, fringe, tiered maxi dress, bell-sleeve drama, off-shoulder ease
   color_palette: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
   lighting_setup: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
   material_texture: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
   render_quality: Free People bohemian editorial, hippie, summer, festival romance, sun-drenched nostalgia
   spatial_distortion: None
-  atmosphere: Free, happy, natural, carefree wanderlust, desert-magic dusk, barefoot abandon
+  atmosphere: Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease
   key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
-  creative_brief: Sunlight caught in crochet holes like honey in a sieve, the desert wind a collaborator rather than adversary. Layers of lace and fringe move to a rhythm older than the festival grounds, bare feet on warm earth, turquoise catching the last gold of the dying sun.
+  creative_brief: >-
+    Render the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn suede, eyelet
+    cotton and sun-bleached florals. Keep the golden, handmade, wind-touched feeling while avoiding a fixed desert
+    festival, crowd, stage or barefoot travel scene. Apply this fashion/costume grammar over any input: preserve textile
+    behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait,
+    runway, room, prop, role, or fixed character scene.
 avoidRules:
   - suit
   - strict
@@ -43,4 +48,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

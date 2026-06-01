@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-070
 packId: pack_14
-name: Valkyrie Dock Bastion
+name: Valkyrie Soul Departure
 category: 8. Mythic — Norse Sagas
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, norse-myth]
 visualDna:
-  aesthetic: Sky dock where valkyries embark with soul-lantern fleets.
-  form_and_line: Pier arms, wing standards, and high cliff ramps.
+  aesthetic: Valkyrie soul departure where funeral honor and battle summons share one divine logistics.
+  form_and_line: Pier-arm cues, wing standards, and high cliff ramp geometry.
   color_palette: Aurora green, steel, and midnight blue.
   lighting_setup: Aurora backlight and wind-burned fire pits.
   material_texture: Frosted iron, rope rigging, and carved oak.
   render_quality: Dramatic aerial concept frame.
-  spatial_distortion: Cliff-edge depth into cloud seas.
+  spatial_distortion: Cliff-edge depth into cloud-sea distance.
   atmosphere: Heroic melancholy and divine logistics.
-  key_features: Valkyrie moorings, lantern cranes, and oath pylons.
-  creative_brief: A mythic dock where departures are funeral honors and battle summons.
+  key_features: Valkyrie mooring cues, lantern cranes, oath pylons.
+  creative_brief: Recast the input through valkyrie soul departure, making exit feel both funeral honor and battle summons without requiring a dock.
 avoidRules: [photoreal, comedy, futuristic-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-070.webp }
 attributes:
   negativePrompt: photoreal, comedy, futuristic-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-norse-sagas,
+    categoryName: 8. Mythic — Norse Sagas,
+    tags: [mythic-noir-curated-vault, mythic, norse-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

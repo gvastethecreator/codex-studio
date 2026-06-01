@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-231
 packId: pack_05
-name: RahXephon - Coral Mecha Liturgy
+name: Coral Resonance Liturgy
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Ópera mecha metafísica con imaginería coral, simbolismo sonoro y melancolía ritual en escala de ciudad-santuario.
-  form_and_line: Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas ceremoniales.
-  color_palette: Azul abisal y cobalto litúrgico con acentos coral rojo, blanco sacramental y negro de vacío acuoso.
-  lighting_setup: Halo ceremonial azul, contraluces de barrera urbana y destellos resonantes sincronizados al motivo musical.
-  material_texture: Carcasa nacarada, estrías coralinas, metal húmedo, pátina salina y superficies de energía translúcida.
+  aesthetic: >-
+    Metaphysical bio-mechanical opera with coral tectonics, sonic symbolism, sacred scale, and
+    melancholic ritual structure
+  form_and_line: >-
+    Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas
+    ceremoniales.
+  color_palette: >-
+    Azul abisal y cobalto litúrgico con acentos coral rojo, blanco sacramental y negro de vacío
+    acuoso.
+  lighting_setup: >-
+    Halo ceremonial azul, contraluces de barrera urbana y destellos resonantes sincronizados al
+    motivo musical.
+  material_texture: >-
+    Carcasa nacarada, estrías coralinas, metal húmedo, pátina salina y superficies de energía
+    translúcida.
   render_quality: Alta definición simbólica con legibilidad de iconografía sacra y dramatismo de escala operática.
-  spatial_distortion: Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno visual.
+  spatial_distortion: >-
+    Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno
+    visual.
   atmosphere: Sagrada, enigmática y doliente, como himno visual en cámara lenta.
-  key_features: Coral biomecánico, azul alienígena, motivos musicales geométricos y liturgia de escala.
+  key_features: >-
+    Coral biomechanical forms, alien blue, sonic geometry, liturgical scale, resonant symmetry, and
+    sacred machine melancholy
   creative_brief: >-
-    Define una gramática mecha-liturgy reusable donde biotectónica coral,
-    resonancia musical y monumentalidad sacra articulen la identidad sin
-    depender de una escena, combate o entidad mecánica puntual.
+    Use RahXephon as style anchor for coral resonance liturgy. Any prompt should feel biotectonic,
+    musical, sacred, and monumental. Mecha, cities, temples, entities, battles, and musical props
+    are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-231.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

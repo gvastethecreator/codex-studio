@@ -12,7 +12,9 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Vegetation design kit with broad botanical shape-library coverage (Hayao Miyazaki-influenced natural poetry + production readability)
+  aesthetic: >-
+    Vegetation design kit with broad botanical shape-library coverage (Hayao Miyazaki-influenced natural poetry +
+    production readability)
   form_and_line: Organic contour families spanning canopy, shrub, vine, and groundcover archetypes
   color_palette: Seasonal green-driven spectrum with bark/flower accent channels
   lighting_setup: Dappled canopy light with subsurface hints and cool understory shadow
@@ -22,7 +24,9 @@ visualDna:
   atmosphere: Lush, breathable, ecosystem-rich
   key_features: Silhouette readability sets, species variation matrices, season-state alternatives
   creative_brief: >-
-    Build foliage as a modular visual vocabulary for environment design. Prioritize silhouette distinction at gameplay/read distance, while preserving material and seasonal variation so vegetation sets remain flexible across biome mood and art-direction targets, with Hayao Miyazaki-influenced warmth in shape rhythm and ecological mood.
+    Apply foliage-design-kit logic to any input: branching rhythms, leaf-shape families, botanical silhouettes, texture
+    clusters, color swatches, and growth-pattern variants. If no plants exist, translate the subject into organic growth
+    vocabulary without requiring a garden, forest, or plant catalog.
 avoidRules:
   - bare
   - dead

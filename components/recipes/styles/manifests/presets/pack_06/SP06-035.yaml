@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Misregistration (offset)
   atmosphere: Commercial, bold
   key_features: Layered colors
-  creative_brief: Squeegee drags ink through mesh onto paper, each color a separate pass, separate screen, separate prayer for registration. Flat planes of pigment overlap with the confidence of commerce, art refusing to distinguish itself from poster. The image announces rather than whispers, designed for distance and reproduction.
+  creative_brief: >-
+    Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat
+    separated color passes, bold registration offsets, opaque poster planes, and
+    reproduction-first contrast. Keep graphic commercial punch without requiring
+    slogans, portraits, pop icons, product ads, or readable text.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

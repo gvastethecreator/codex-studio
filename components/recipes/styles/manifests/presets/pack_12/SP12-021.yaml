@@ -12,14 +12,23 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Racing-arcade ceremonial en desierto hostil, centrado en velocidad sostenida, control de derrape y rivalidad por escuderías.
-  subject_treatment: Pilotos como siluetas de facción con armadura ligera y señalética visual por rol de carrera.
+  aesthetic: >-
+    Gramática racing-arcade ceremonial con derrape sostenido, rivalidad de escuderías, polvo térmico y lectura de
+    trayectoria.
+  subject_treatment: >-
+    Convierte el input en piloto, vehículo, emblema o módulo de carrera; armadura ligera y señalética de rol si ayudan a
+    leer velocidad.
   color_and_tone: Ocres abrasados, turquesa oxidado, ámbar térmico y rojo disciplinado para lectura por equipo.
   lighting_and_shadow: Luz rasante de tarde, sombras largas y polvo a contraluz para reforzar percepción de velocidad.
   texture_and_material: Compuestos erosionados por arena, aleaciones bruñidas y desgaste mecánico por fricción constante.
-  camera_and_composition: Curva de apex con líneas de trayectoria, rutas de adelantamiento y capas de profundidad competitiva.
+  camera_and_composition: Apex, líneas de trayectoria y rutas de adelantamiento como ritmo visual; no exigir copa, desierto o circuito fijo.
   atmosphere_and_mood: Rivalidad ritual, intensidad técnica y presión climática permanente.
   rendering_and_quality: Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.
+  creative_brief: >-
+    Aplica Drift Kingdom Sandstorm Cup como gramatica original de videojuego sobre cualquier input: conserva su sistema
+    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

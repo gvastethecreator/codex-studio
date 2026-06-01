@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Nostalgic, calm, bedtime softness
   key_features: Smudged transitions, dust halos, matte bloom highlights
   creative_brief: >-
-    Build mood through powdery transitions and softened boundaries rather than crisp drawing. Keep chalk pastel behavior central—smudge blending, tooth catch, and diffuse atmosphere—so the style remains reusable without binding it to a fixed seasonal scene.
+    Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending,
+    dust halos, matte bloom, and reduced hard edges should build mood without requiring bedtime
+    scenes, landscapes, portraits, seasonal motifs, or a fixed soft-focus subject.
 avoidRules:
   - sharp
   - pen

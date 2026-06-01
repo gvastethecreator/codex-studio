@@ -20,8 +20,13 @@ visualDna:
   render_quality: Magical, mythical, lagoon-dream ethereality, siren-song enchantment
   spatial_distortion: Fish tail
   atmosphere: Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic
-  key_features: Tail, fin, seashell top, flowing hair underwater, scale texture
-  creative_brief: Iridescent scales catching caustic light refracted through water that has never touched shore, the fishtail sweeping currents that carry shipwreck secrets and coral prayers. Hair floats weightless in a medium that turns every gesture into dance, seashells and pearls the only currency that matters at a depth where sunlight becomes memory and voices become bubbles rising toward a surface that belongs to another world.
+  key_features: Tail or fin cues, scale texture, pearlescent shell detail, liquid organza flow
+  creative_brief: >-
+    Give the input mermaid-costume transformation: iridescent scales, fin ridges, pearlescent shell detail, wet-look
+    silicone, liquid organza and caustic turquoise light. It may convert a figure into a tail silhouette, but should not
+    require shipwrecks, coral reef, underwater hair or a siren scene. Apply this fashion/costume grammar over any input:
+    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
+    body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - legs
 assets:
@@ -41,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

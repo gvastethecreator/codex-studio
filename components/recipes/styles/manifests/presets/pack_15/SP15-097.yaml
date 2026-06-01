@@ -12,14 +12,14 @@ visualDna:
   color_palette: Brick red, brass, and smoke blue.
   lighting_setup: Signal lamps and overcast platform glow.
   material_texture: Riveted steel, polished brass, and soot-stained stone.
-  render_quality: Transport concept with strong directional cues.
+  render_quality: Transport-signal render with strong directional cues and semaphore timing authority.
   spatial_distortion: Track-side-like perspective toward a signal tower axis.
   atmosphere: Coordination, urgency, and precise movement.
   key_features: Semaphore arms, signal clocks, route levers, and brass rail-time markers.
   creative_brief: >-
-    Preserve gilded railway signal-house grammar as a reusable style system:
-    semaphore-forest coordination, route-lever timing authority, and
-    platform urgency discipline should remain coherent across subjects.
+    Signal the input with gilded railway urgency: brick-red planes, brass
+    semaphore arms, route-lever diagonals, smoke-blue platform glow, and rail-time
+    markers make any subject feel coordinated, urgent, and precisely routed.
 avoidRules: [photoreal, cyberpunk, dystopian-rust, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-097.webp }
 attributes:

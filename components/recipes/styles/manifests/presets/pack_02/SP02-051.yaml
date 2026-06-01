@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Flash reflection, red-edge glare, plastic lens warp
   atmosphere: Memory, casual, 90s, disposable immediacy
   key_features: Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain
-  creative_brief: 'Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The style should feel accidental, immediate, and physically limited by a single-use camera.'
+  creative_brief: >-
+    Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap
+    plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The
+    style should feel accidental, immediate, and physically limited by a single-use camera. Apply Disposable Camera as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - professional lighting
 assets:

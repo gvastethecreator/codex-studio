@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Colors bleeding outside lines
   atmosphere: Dreamy, soft, nostalgic
   key_features: Watery texture
-  creative_brief: Pigment bleeds into water and paper becomes light, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The style breathes with the humidity of the moment it was made, never fully dry, always becoming.
+  creative_brief: >-
+    Apply soft watercolor behavior to any input: translucent washes, pigment
+    blooms, feathered wet edges, paper-white luminosity, granulation, and gentle
+    value layering. Keep airy water-media softness without requiring florals,
+    landscapes, sketchbook pages, or botanical study.
 avoidRules:
   - photo
   - realistic

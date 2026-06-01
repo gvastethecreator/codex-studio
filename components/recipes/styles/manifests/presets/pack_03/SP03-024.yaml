@@ -20,7 +20,12 @@ visualDna:
   render_quality: Technical, blueprint, debug-preview
   atmosphere: Technical, cyber, developer aesthetic
   key_features: Topology, edge-flow visibility
-  creative_brief: 'The object sheds its skin to reveal the skeleton beneath — neon edge loops trace topology across a black void like constellations mapped onto an invisible form. No surface, no texture, only pure structure glowing in self-illuminated wireframe. The image reads as a developer''s dream rendered beautiful: the debug viewport elevated to gallery status, every edge-flow decision visible and celebrated.'
+  creative_brief: >-
+    Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and debug-viewport
+    elegance. No need for a standalone object or black void; the style is structure made visible. Apply Wireframe Render
+    as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
+    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI
+    screen, product shot, or scene template.
 avoidRules:
   - solid
   - textured

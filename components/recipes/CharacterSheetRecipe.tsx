@@ -5,6 +5,7 @@ import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
+import { QuickStartText } from './QuickStartText';
 import { getRecipeModuleUiModel, getRecipeOptions, getRecipeStringDefault } from './recipeModuleUi';
 
 interface CharacterSheetRecipeProps {
@@ -180,13 +181,13 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                   className="text-zinc-600 group-hover:text-indigo-400 transition-colors"
                 />
               </div>
-              <div className="text-center relative z-10">
-                <h3 className="text-2xl font-black text-zinc-300 group-hover:text-white uppercase tracking-tight">
-                  Character Source
-                </h3>
-                <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mt-3 hover:text-white transition-colors">
-                  Upload Reference or Describe below
-                </p>
+              <div className="relative z-10 w-full">
+                <QuickStartText
+                  title="Character Source"
+                  subtitle="Upload reference or describe below"
+                  toneClassName="text-zinc-300 group-hover:text-white"
+                  subtitleClassName="text-zinc-500 group-hover:text-white"
+                />
               </div>
             </button>
           )}

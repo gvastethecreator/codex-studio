@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Vignette
   atmosphere: Memory, retro
   key_features: Square crop
-  creative_brief: 'A recollection still damp from instant chemistry: square crop, milky color shift, flash falloff, vignetted edges, and uneven chemical spread marks. Any subject becomes an object of immediate memory, casual and imperfect, without needing party faces or domestic nostalgia.'
+  creative_brief: >-
+    Apply Polaroid 600 instant chemistry to the input: square framing, milky
+    color shift, flash falloff, vignetted edges, and uneven chemical spread marks
+    should make any subject feel immediate, casual, and imperfect.
 avoidRules:
   - illustration
   - painting

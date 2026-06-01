@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic
   atmosphere: Innocent, joyful chaos, giggling anarchy, pure creative abandon
   key_features: Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout
-  creative_brief: 'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art scene.'
+  creative_brief: 'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art subject.'
 avoidRules:
   - realistic
   - proportional

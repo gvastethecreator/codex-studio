@@ -18,7 +18,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Sleek, futuristic, precision luxury',
       key_features: 'Reflection, anisotropic highlights',
       creative_brief:
-        'A surface so polished it ceases to describe itself and becomes a mirror for the world around it — HDRI environments wrap every curve in borrowed geography, and anisotropic highlights stretch across brushed metal like streaks of frozen lightning. Gold, chrome, and anodized titanium share the frame like instruments in an orchestra of precision. The image radiates showroom confidence, every reflection a second composition hiding within the first.',
+        'Turn the input into a chrome-and-metal reflection study: HDRI ribbons, anisotropic highlight streaks, gold/chrome/anodized shifts and hard specular confidence. It may suggest automotive or showroom polish when relevant, but must not require a vehicle, product pedestal or surrounding world. Apply Chrome & Metal as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Environment And Worldbuilding',
     negativePrompt: 'studio background',
     style: {
-      aesthetic: 'Object in real location',
+      aesthetic: 'HDRI matched-light integration',
       form_and_line: 'Realistic reflections',
       color_palette: 'Natural, environment-derived',
       lighting_setup: 'Image based lighting, spherical harmony',
@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Grounded, location-accurate',
       key_features: 'Matched lighting, reflection authenticity',
       creative_brief:
-        'A 360-degree photograph becomes the entire lighting rig — spherical harmony wraps the subject in light borrowed from a real sunset, a real mountaintop, a real city square at golden hour. Reflections carry the DNA of an actual place, not a studio approximation, and ambient integration makes the render disappear into the plate. The object belongs because the light says it belongs, photorealistic integration achieved through environmental truth rather than fakery.',
+        'Integrate the input with HDRI truth: matched reflections, contact shadows, ambient color wrap and unseen-environment lighting that gives CG weight. Use location cues only as reflection language; do not require a sunset, mountaintop, city square or object placement. Apply HDRI Environment as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -45,16 +45,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Environment And Worldbuilding',
     negativePrompt: 'clear, sharp',
     style: {
-      aesthetic: 'Sunbeams through window/trees',
+      aesthetic: 'Volumetric light-shaft rendering',
       form_and_line: 'Shafts of light',
       color_palette: 'Warm or Cool beams, gradient shafts',
       lighting_setup: 'Directional, atmosphere-piercing',
       material_texture: 'Dust motes, particulate volume',
-      render_quality: 'Epic, spiritual, cathedral grandeur',
+      render_quality: 'Epic volumetric scattering, spiritual scale',
       atmosphere: 'Hopeful, grand, transcendent awe',
       key_features: 'Light beams, atmospheric scattering',
       creative_brief:
-        'Sunlight finds its architecture — shafts of brilliance pour through windows or forest canopy, illuminating dust motes suspended like slow-motion snow in the column of radiance. Atmospheric scattering gives the beam volume, gradient warmth or coolness defining the time of day and the mood of the space. The image reaches for cathedral grandeur, spiritual awe rendered as particulate physics, light made solid enough to walk through.',
+        'Add volumetric light shafts to the input: directional beams, dust motes, particulate scattering and warm/cool gradient columns that make air visible. Keep spiritual scale without forcing windows, trees, cathedral space or forest canopy. Apply God Rays as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -63,7 +63,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Environment And Worldbuilding',
     negativePrompt: 'perfect, modeled',
     style: {
-      aesthetic: 'Scanned real object',
+      aesthetic: 'Photogrammetry scan realism',
       form_and_line: 'Realistic geometry',
       color_palette: 'Photo texture',
       lighting_setup: 'Baked lighting (delit)',
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Real, grounded, authentic capture',
       key_features: 'Photo realism, surface-level scan detail',
       creative_brief:
-        "Thousands of photographs resolve into a single mesh — photogrammetry captures the authentic noise of the real world, every surface imperfection a gift from the scan rather than an artist's decision. Baked delit lighting carries the memory of the original capture environment, and photo-textured surfaces read as documentary truth rather than constructed fiction. The image channels Quixel Megascans realism: a rock, a tree stump, a ruined wall, rendered with the authority of something that actually exists.",
+        'Give the input photogrammetry truth: scan noise, photo-textured surfaces, baked de-lit color, imperfect mesh detail and Quixel/Megascans credibility. Do not force rocks, tree stumps, ruined walls or outdoor capture subjects. Apply 3D Scan as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Environment And Worldbuilding',
     negativePrompt: '2d, flat',
     style: {
-      aesthetic: 'Immersive world',
+      aesthetic: 'Immersive VR presence',
       form_and_line: '360 degree feel',
       color_palette: 'Vibrant',
       lighting_setup: 'Baked',
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Presence, digital, embodied experience',
       key_features: 'Player scale, 180-degree depth',
       creative_brief:
-        "The frame stretches wide beyond peripheral vision — baked global illumination wraps an optimized world in real-time-ready beauty, and player-scale references anchor the scene in embodied presence. Wide FOV distorts the edges just enough to suggest a 360-degree panorama waiting beyond the crop. The image is a VR headset's promise: immersion you could step into, a digital environment that feels less like a render and more like a place you've already visited.",
+        'Render the input with VR presence: player-scale cues, stereo-depth thinking, peripheral composition, parallax-ready layers and interaction-distance clarity. It can feel inhabitable without requiring a full room, environment or place narrative.',
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Elegant, rich, bridal-prestige',
       key_features: 'Sparkle, facet-fire dispersion',
       creative_brief:
-        "Facets catch light and throw it back in prismatic fire — dispersion rainbows dance across the brilliant-cut geometry, and caustic patterns bloom on nearby surfaces like luminous signatures of the stone's internal architecture. Gold and platinum settings hold carat-level clarity against macro depths of field, every inclusion and polish line rendered with jewelry-bench precision. The image radiates bridal-prestige luxury: an object so perfect it feels like a promise.",
+        'Render any input with jewelry-bench macro polish: prismatic facet fire, carat-level clarity, gold or platinum specular control, tiny inclusion detail, shallow macro depth, and premium caustic sparkle. Keep bridal-luxury precision without requiring rings, gemstones, boxes, hands, or proposal staging.',
     },
   },
   {
@@ -119,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Environment And Worldbuilding',
     negativePrompt: '2d map, paper',
     style: {
-      aesthetic: 'Isometric terrain map',
+      aesthetic: 'Isometric cartographic render',
       form_and_line: 'Topography',
       color_palette: 'Map colors, topographic contrast',
       lighting_setup: 'Sunlight, terrain-shadow casting',
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Informative, toy, exploration-inviting',
       key_features: 'Grid, elevation readability',
       creative_brief:
-        'Elevation becomes information — topographic layers stack like contour cake, and sunlight casts terrain shadows that make every hill and valley legible at a glance. Low-poly geometry gives the landscape a toy-like charm, and cartographic color coding maps height to hue with the clarity of a game-world minimap. The image is exploration made irresistible: a 3D map you want to zoom into, every grid cell a promise of undiscovered terrain.',
+        'Translate the input into isometric cartographic logic: stacked contour layers, height-coded color, terrain-shadow style and minimap readability. If landscape exists, map it; otherwise treat subject hierarchy as topographic information without forcing hills, valleys or terrain.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

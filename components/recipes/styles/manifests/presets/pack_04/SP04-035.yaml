@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Friendly, approachable, optimistic
   key_features: Abstract human forms, geometric props, flat compositional hierarchy
   creative_brief: >-
-    Keep figures abstract, accessible, and instantly legible through flat geometry and simplified proportion. Maintain Corporate Memphis visual familiarity while avoiding over-specific narrative framing so assets stay reusable across product contexts.
+    Apply minimalist vector character grammar to any input: flat geometry, simplified proportion,
+    bright accessible color, soft blobby morphology, and modular shape hierarchy should stay
+    UI/editorial-ready without requiring office people, product scenes, charts, apps, or corporate
+    storytelling.
 avoidRules:
   - detail
   - texture

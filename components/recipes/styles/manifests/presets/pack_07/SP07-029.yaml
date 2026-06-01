@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-029
 packId: pack_07
 name: Adobe/Pueblo
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Vernáculo adobe de masa térmica, domesticidad desértica y expresión manual de arraigo territorial.
-  form_and_line: Muros gruesos monolíticos, aristas suavizadas, cubiertas escalonadas, huecos profundos y parapetos bajos.
+  aesthetic: >-
+    Vernáculo adobe de masa térmica, domesticidad desértica y expresión manual de arraigo
+    territorial.
+  form_and_line: >-
+    Muros gruesos monolíticos, aristas suavizadas, cubiertas escalonadas, huecos profundos y
+    parapetos bajos.
   color_palette: Terracota, arena, ocre cálido, salvia, canela y arcilla soleada.
   lighting_setup: Sol desértico duro, sombras profundas en vanos, glow de nichos y parpadeo de hogar tipo kiva.
-  material_texture: Revoco de tierra encalada, fibra vegetal visible, huella de llana manual, vigas expuestas y teja de barro usada.
+  material_texture: >-
+    Revoco de tierra encalada, fibra vegetal visible, huella de llana manual, vigas expuestas y teja
+    de barro usada.
   render_quality: Honestidad material de alto realismo climático con imperfección artesanal plausible.
   spatial_distortion: Ondulación leve de muros por manufactura manual, manteniendo estabilidad tectónica.
   atmosphere: Cobijo térmico, calma árida y continuidad ancestral.
-  key_features: Huecos profundos, masa excavada, nichos térmicos, geometría de hogar kiva y aristas manuales suavizadas.
+  key_features: >-
+    Huecos profundos, masa excavada, nichos térmicos, geometría de hogar kiva y aristas manuales
+    suavizadas.
   creative_brief: >-
-    Mantén una gramática adobe transferible centrada en inercia térmica, hueco
-    profundo y acabado manual visible. Debe comunicar adaptación climática y
-    arraigo constructivo, no exotismo escénico.
+    Mantén una gramática adobe transferible centrada en inercia térmica, hueco profundo y acabado
+    manual visible. Debe comunicar adaptación climática y arraigo constructivo, no exotismo
+    escénico.
 avoidRules:
   - sharp edges
   - wood
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

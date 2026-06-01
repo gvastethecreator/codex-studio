@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-205
 packId: pack_13
-name: Barakamon - Island Calligraphy Summer
+name: Breezy Brush-Reinvention Summer
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Summer reinvention anime language where brushlike expression, broad comedy, ocean-wind freshness, and craft identity soften each other
-  form_and_line: Expressive brush-gesture motifs, broad comedic body language, and breezy open contour spacing
-  color_palette: Cerulean summer sky, sea salt whites, island greenery, ink-black calligraphy accents, and sun-warmed ochres
-  lighting_setup: High summer daylight, sea-reflected highlights, cool shade contrast, and warm evening glows
-  material_texture: Brush-bristle ink density, paper absorbency, weathered wood, cotton softness, and rough handmade surfaces
-  render_quality: Warm comedic-healing rendering with lively island rhythm and craft-identity clarity
-  spatial_distortion: Wind-driven framing looseness with gesture-led motion emphasis
-  atmosphere: Refreshing, funny, breezy, heartfelt
-  key_features: Brush-and-ink expressiveness, breezy open spacing, summer sky expanses, broad comic timing, and heartfelt reset energy
+  aesthetic: >-
+    Breezy reinvention anime where brush energy, summer looseness, comedy warmth, and self-repair
+    make the image feel freshly restarted
+  form_and_line: >-
+    Loose brushlike contours, breezy gesture arcs, occasional comedy deformation, and open spacing
+    around acts of trying again
+  color_palette: Sea-air blue, sunlit white, ink black, straw beige, watermelon red, and warm summer green
+  lighting_setup: Bright summer daylight, soft bounce, ink-emphasis contrast, and airy highlight wash
+  material_texture: >-
+    Brush ink drag, paper tooth, weathered wood, cotton texture, salty air haze, and handmade
+    surface irregularity
+  render_quality: >-
+    Breezy slice anime finish with brush-material fidelity, emotional comedy, and relaxed summer
+    clarity
+  spatial_distortion: Open-air spacing and loose brush rhythm that imply reset and motion without locking place
+  atmosphere: Breezy, comic, sincere, summery, renewing
+  key_features: >-
+    Brush energy, summer air, self-reinvention tone, loose comedy, paper texture, and bright
+    sincerity
   creative_brief: >-
-    Use the title as a style anchor for island-calligraphy summer. Keep
-    brush-and-ink energy, breezy comedy, and self-reinvention tone without
-    requiring island village, kids, fish market, or calligraphy tools.
+    Use Barakamon as style anchor for breezy brush-reinvention. Any prompt should feel like a warm
+    restart: ink drag, summer air, loosened posture, and comic sincerity. Islands, villages,
+    children, fish markets, and calligraphy tools are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-205.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

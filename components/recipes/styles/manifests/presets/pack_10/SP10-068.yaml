@@ -17,11 +17,11 @@ visualDna:
   color_palette: Line art
   lighting_setup: Flat
   material_texture: Paper
-  render_quality: Map, geographic
+  render_quality: Contour-line abstraction
   spatial_distortion: None
   atmosphere: Exploration
   key_features: Contours
-  creative_brief: Landscape abstracted into concentric whispers, each line a promise of equal altitude. Mountains become fingerprints, valleys become signatures, and the cartographer's pen traces what the earth already knows.
+  creative_brief: Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise contour the subject's planes and volumes without requiring mountains or a literal map.
 avoidRules:
   - straight lines
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

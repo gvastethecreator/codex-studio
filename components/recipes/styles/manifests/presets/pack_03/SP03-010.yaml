@@ -19,9 +19,13 @@ visualDna:
   material_texture: PBR materials, substance integrations
   render_quality: Game cinematic, cutscene-grade
   spatial_distortion: None
-  atmosphere: Dynamic, interactive, player-driven
+  atmosphere: Dynamic, interactive-feeling, cinematic real-time energy
   key_features: Lens flares, HDRP pipeline
-  creative_brief: Volumetric fog rolls through real-time global illumination, and lens flares bloom where light sources dare to face the camera directly — HDRP orchestrates post-processing like a colorist's final pass. PBR materials integrate Substance-authored textures into a pipeline that turns interactive frames into cinematic stills. Player agency meets directorial intention in a world that renders faster than the eye can question, each cutscene-grade frame a promise of what lies beyond the loading screen.
+  creative_brief: >-
+    Apply Unity HDRP polish to the input: volumetric fog, filmic tonemapping,
+    lens flares, real-time GI and Substance-style PBR texture integration. Keep
+    cutscene-grade energy without requiring a player, loading screen, game
+    world, level layout, or character action.
 avoidRules:
   - mobile game
 assets:

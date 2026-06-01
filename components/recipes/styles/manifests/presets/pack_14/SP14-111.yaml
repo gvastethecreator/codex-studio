@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-111
 packId: pack_14
-name: Ash Choir Vestibule
+name: Ash Choir Absence
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Entry vestibule where a choir is implied only by ash traces and architecture.
-  form_and_line: Tall vestibule arches, ash streaks, and layered alcoves.
+  aesthetic: Silent choir absence expressed through ash traces, tall arch cues, and echoing negative space.
+  form_and_line: Tall arch rhythms, ash streaks, and layered alcove silhouettes.
   color_palette: Charcoal, ivory ash, and bruised plum.
   lighting_setup: Soft overhead dusk and side-lamp glow.
   material_texture: Soot residue, stone dust, and faded silk.
   render_quality: Atmospheric symbolism with quiet architectural detail.
-  spatial_distortion: Narrow entrance funneling into a hidden choir space.
+  spatial_distortion: Narrow funneling depth toward an implied hidden voice source.
   atmosphere: Absence, prayer, and echoing memory.
-  key_features: Ash drifts, choir stalls, and sealed choir doors.
-  creative_brief: A ritual foyer where the choir has gone silent, leaving only ash and architecture.
+  key_features: Ash drifts, choir-stall traces, sealed-door silhouettes.
+  creative_brief: Render the input through ash choir absence, leaving the feeling of vanished voices and ritual architecture without requiring a foyer.
 avoidRules: [photoreal, busy-patterns, daylight, watermark, text, logo, cute]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-111.webp }
 attributes:
   negativePrompt: photoreal, busy-patterns, daylight, watermark, text, logo, cute
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

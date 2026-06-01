@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-068
 packId: pack_14
-name: Ancestor Fire Parliament
+name: Ancestor Fire Deliberation
 category: 6. Mythic — African Cosmologies
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, african-myth]
 visualDna:
-  aesthetic: Night parliament where elders legislate beside ancestral flames.
-  form_and_line: Circular council ring, stepped seats, and fire channels.
+  aesthetic: Ancestor fire deliberation where law, memory, and collective accountability meet.
+  form_and_line: Circular deliberation rings, stepped accountability bands, ember channels, and ancestral witness marks.
   color_palette: Ebony, ember, and bronze.
   lighting_setup: Central bonfire and perimeter torch halos.
-  material_texture: Stone benches, carved staffs, and woven cloaks.
-  render_quality: Political-ritual concept with strong character staging.
-  spatial_distortion: Circular focus around central flame.
+  material_texture: Carved stone, staff-like verticals, woven fiber cues, ember ash, and bronze ritual marks.
+  render_quality: Political-ritual render with strong symbolic staging.
+  spatial_distortion: Circular focus around a central ancestral flame or equivalent ember core.
   atmosphere: Debate, memory, and collective accountability.
-  key_features: Council staves, fire pit parliament, and ancestry murals.
-  creative_brief: A legislative rite where law is negotiated under ancestral witness.
+  key_features: Council-staff cues, ember parliament rhythm, ancestry mural marks, bronze memory light, and collective accountability.
+  creative_brief: >-
+    Deliberate the input through ancestor fire law: ebony fields, bronze marks,
+    ember cores, circular accountability bands, and ancestral witness symbols
+    should make any subject feel judged by memory without requiring parliament,
+    council, seated figures, fire pit, or literal debate.
 avoidRules: [photoreal, goofy, neon-sci-fi, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-068.webp }
 attributes:
   negativePrompt: photoreal, goofy, neon-sci-fi, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-african-cosmologies,
+    categoryName: 6. Mythic — African Cosmologies,
+    tags: [mythic-noir-curated-vault, mythic, african-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -20,7 +20,14 @@ visualDna:
   render_quality: Friendly, app design, approachable UI
   atmosphere: Friendly, soft, warm-invitation
   key_features: Floating elements, pill-shape softness
-  creative_brief: 'Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI: an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft invitation.'
+  creative_brief: >-
+    Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte
+    surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and
+    buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI:
+    an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft
+    invitation. Apply Clay UI as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - sharp
   - flat

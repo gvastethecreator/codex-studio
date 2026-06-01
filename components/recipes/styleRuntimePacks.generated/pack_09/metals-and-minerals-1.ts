@@ -14,12 +14,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'White with Black lenticels',
       lighting_setup: 'Outdoor',
       material_texture: 'Papery, peeling',
-      render_quality: 'Forest, nature',
+      render_quality: 'Natural, layered',
       spatial_distortion: 'Curved bark',
       atmosphere: 'Natural, wild',
       key_features: 'Horizontal lines',
       creative_brief:
-        'Render the paper-thin architecture of birch bark peeling away in whispers of white and charcoal. The lenticels form a natural cuneiform, a script of the forest written in horizontal strokes across a surface that curls with the memory of the trunk it once embraced. Capture the tension between protection and vulnerability, a skin designed to shed.',
+        'Apply birch-bark logic as a white-and-charcoal surface system: paper-thin peeling layers, horizontal lenticel marks, curled edges, and protective skin beginning to shed. If the input already contains plant, trunk, or organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata without forcing a forest or tree scene.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Solid, cold',
       key_features: 'Random speckles',
       creative_brief:
-        'Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink.',
+        'Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink. Use Granite as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cold, strong',
       key_features: 'Layers',
       creative_brief:
-        'Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise.',
+        'Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise. Use Slate as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -69,14 +69,14 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Stone covered in green',
       form_and_line: 'Fuzzy outline',
       color_palette: 'Grey stone, Green moss',
-      lighting_setup: 'Dappled forest',
+      lighting_setup: 'Soft dappled light',
       material_texture: 'Velvet moss on hard stone',
-      render_quality: 'Forest floor, damp',
+      render_quality: 'Damp, ancient',
       spatial_distortion: 'Softened edges',
       atmosphere: 'Ancient, quiet',
       key_features: 'Growth pattern',
       creative_brief:
-        'Render the union of opposites where velvet moss colonizes ancient stone in a silent pact of softness against permanence, green life clinging to grey mineral. Dappled forest light should caress the fuzzy surface, creating a miniature landscape of cushioned ridges above hard stone. The image must feel damp with the breath of woodland mornings.',
+        'Apply moss-on-stone contrast to the input: velvet green growth softening grey mineral hardness, fuzzy ridges catching soft dappled light, damp edges, and softened silhouettes. If rock, ruin, plant, or terrain exists, intensify it; otherwise use moss colonization as surface behavior without forcing a woodland floor.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, wet',
       key_features: 'Pile',
       creative_brief:
-        "Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of the tumbled, the beauty of edges long since forgiven.",
+        "Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of the tumbled, the beauty of edges long since forgiven. Use River Stones as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, dangerous',
       key_features: 'Sharp edges',
       creative_brief:
-        'Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of impact translated into mineral poetry. The material must feel simultaneously precious and predatory, beautiful and unforgiving.',
+        'Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of impact translated into mineral poetry. The material must feel simultaneously precious and predatory, beautiful and unforgiving. Use Obsidian as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -126,14 +126,14 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Marine structure',
       form_and_line: 'Pores and branches',
       color_palette: 'Pink, Orange, Purple',
-      lighting_setup: 'Underwater caustic',
+      lighting_setup: 'Caustic light',
       material_texture: 'Rough, porous',
-      render_quality: 'Ocean, vibrant',
+      render_quality: 'Vibrant, porous',
       spatial_distortion: 'Branching',
       atmosphere: 'Alive, colorful',
       key_features: 'Porous',
       creative_brief:
-        'Render the porous city-building of coral, where calcium carbonate rises into branching spires and honeycombed domes beneath shifting underwater light. The surface should feel simultaneously alive and mineral, a bridge between animal and architecture painted in pink, orange, and purple. Caustic light must dance across the porous structure like a second living layer.',
+        'Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching spires, honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If marine or organic content exists, reinforce it; otherwise use coral growth as abstract porous structure without forcing an underwater scene. Use Coral Reef as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Warm, busy',
       key_features: 'Hex grid',
       creative_brief:
-        'Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by purpose.',
+        'Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by purpose. Use Honeycomb Wax as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expensive, fragile',
       key_features: 'Square sheets',
       creative_brief:
-        "Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate.",
+        "Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate. Use Gold Leaf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -180,17 +180,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Metals And Minerals',
     negativePrompt: 'new penny',
     style: {
-      aesthetic: 'Aged copper roof',
+      aesthetic: 'Aged copper patina',
       form_and_line: 'Drips',
       color_palette: 'Verdigris (Teal/Green)',
       lighting_setup: 'Matte',
       material_texture: 'Chalky oxidation',
-      render_quality: 'Statue of Liberty, old',
+      render_quality: 'Historic, oxidized',
       spatial_distortion: 'None',
       atmosphere: 'Historic, weathered',
       key_features: 'Green stains',
       creative_brief:
-        'Capture the alchemy of aged copper transforming into verdigris, where teal and green blooms spread across the metal like a slow tide of oxidation painting history onto rooftops. The chalky crust should feel dry and mineral, the drip lines mapping decades of rainfall into vertical streaks of turquoise. This is time rendered as pigment, corrosion as cathedral.',
+        'Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.',
     },
   },
   {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, clean',
       key_features: 'Directional scratch',
       creative_brief:
-        'Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity.',
+        'Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Decay, heavy',
       key_features: 'Random rust',
       creative_brief:
-        'Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time paints with corrosion what fire once shaped.',
+        'Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time paints with corrosion what fire once shaped. Use Rusty Iron as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Clean, natural',
       key_features: 'Pores',
       creative_brief:
-        'Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the useful grown rather than made.',
+        'Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the useful grown rather than made. Use Sponge as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rough, functional',
       key_features: 'Uniform grit',
       creative_brief:
-        'Capture the uniform grit of sandpaper where sharp mineral particles bristle in ordered ranks across a red-brown field of abrasive purpose, each speck a microscopic tooth awaiting contact. The surface should feel hostile to the touch, a constellation of cutting edges that catches light as tiny sparks of silver on rust. Render the beauty of aggressive function, texture designed to erase other textures.',
+        'Capture the uniform grit of sandpaper where sharp mineral particles bristle in ordered ranks across a red-brown field of abrasive purpose, each speck a microscopic tooth awaiting contact. The surface should feel hostile to the touch, a constellation of cutting edges that catches light as tiny sparks of silver on rust. Render the beauty of aggressive function, texture designed to erase other textures. Use Sandpaper as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Party, flashy',
       key_features: 'Scale pattern',
       creative_brief:
-        'Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event.',
+        'Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Functional',
       key_features: 'Rows of hooks',
       creative_brief:
-        'Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale.',
+        'Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rotting, damp',
       key_features: 'Spreading spots',
       creative_brief:
-        'Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory in the quiet language of mold.',
+        'Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory in the quiet language of mold. Use Mold & Mildew as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Industrial, dirty',
       key_features: 'Drip pattern',
       creative_brief:
-        'Render the accidental rainbows of oil spreading across concrete in dark puddles where thin-film interference paints iridescent maps in magenta, cyan, and gold across the garage floor. The surface should feel wet and heavy in the dark pools while the rainbow sheen floats like a ghost of color atop the grime. Capture the strange loveliness of the unwanted, the mechanics of spectrum blooming in neglect.',
+        'Render the accidental rainbows of oil spreading across concrete in dark puddles where thin-film interference paints iridescent maps in magenta, cyan, and gold across the garage floor. The surface should feel wet and heavy in the dark pools while the rainbow sheen floats like a ghost of color atop the grime. Capture the strange loveliness of the unwanted, the mechanics of spectrum blooming in neglect. Use Oil Stains as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Industrial, hard',
       key_features: 'Random direction',
       creative_brief:
-        'Capture the patina of use written in random scratches across steel, where each mark is a moment of contact frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The random direction of the scratches should tell the story of careless handling and honest work. Render the accumulating biography of a worked surface, wear as a form of record-keeping.',
+        'Capture the patina of use written in random scratches across steel, where each mark is a moment of contact frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The random direction of the scratches should tell the story of careless handling and honest work. Render the accumulating biography of a worked surface, wear as a form of record-keeping. Use Scratched Metal as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -380,7 +380,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Freezing, preserved',
       key_features: 'Crystal growth',
       creative_brief:
-        'Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture.',
+        'Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Refreshing, dynamic',
       key_features: 'Droplets',
       creative_brief:
-        'Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful.',
+        'Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -413,12 +413,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Thin film interference',
       lighting_setup: 'Reflective',
       material_texture: 'Liquid',
-      render_quality: 'Pollution, colorful',
+      render_quality: 'Iridescent, fluid',
       spatial_distortion: 'Fluid',
       atmosphere: 'Dirty but pretty',
       key_features: 'Rainbow',
       creative_brief:
-        'Compose the liquid psychedelia of oil spreading on water, where thin-film interference paints swirling rainbows of magenta, cyan, and gold in fluid calligraphy across a dark puddle. The surface should feel both dirty and mesmerizing, the accidental beauty of a parking lot after rain revealing spectrum in pollution. Capture the strange poetry of the unwanted, grace blooming in the gutter.',
+        'Compose oil-on-water interference as fluid color behavior over the input: thin-film rainbow swirls, magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle, water, street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mystical, valuable',
       key_features: 'Cluster',
       creative_brief:
-        'Summon the deep-earth geometry of amethyst crystal where purple facets climb toward pointed terminations in a cluster of mineral intelligence, each face a window into internal reflections that bounce light through lattice corridors. The geometric growth should feel intentional yet natural, a cathedral built by chemistry at geological scale. Capture the magic of ordered growth, the lattice that dreams in violet.',
+        'Apply raw amethyst growth as crystalline structure over the input: purple facets, white mineral base, pointed terminations, internal reflections, and lattice corridors of light. If gem, cave, magic, tech, or ornament exists, amplify it; otherwise let crystal clusters grow from edges and planes without requiring a literal gemstone display.',
     },
   },
   {
@@ -456,7 +456,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Intense, work',
       key_features: 'Trajectory',
       creative_brief:
-        'Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel.',
+        'Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Light, fun',
       key_features: 'Transparency',
       creative_brief:
-        'Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops.',
+        'Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Sci-fi, fluid',
       key_features: 'High surface tension',
       creative_brief:
-        'Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid.',
+        'Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -508,12 +508,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'White',
       lighting_setup: 'Soft',
       material_texture: 'Dense gas',
-      render_quality: 'Stage effect, spooky',
+      render_quality: 'Low, cold, theatrical',
       spatial_distortion: 'Heavy gas',
       atmosphere: 'Eerie, stage',
       key_features: 'Low lying',
       creative_brief:
-        'Render the heavy theatre of dry ice fog rolling low across the ground in dense white clouds that behave more like liquid than gas, pooling and pouring with an eerie obedience to gravity. The fog should feel cold to the eye, a dense atmosphere that transforms the ordinary floor into a stage between worlds. Capture the aesthetics of the liminal, the breath of the unseen made visible.',
+        'Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.',
     },
   },
   {
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Happy, party',
       key_features: 'Random rotation',
       creative_brief:
-        'Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry.',
+        'Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -546,12 +546,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Grey, White',
       lighting_setup: 'Backlit',
       material_texture: 'Sticky, dusty',
-      render_quality: 'Haunted house, old',
+      render_quality: 'Aged, abandoned',
       spatial_distortion: 'Drape',
       atmosphere: 'Spooky, abandoned',
       key_features: 'Messy strands',
       creative_brief:
-        'Render the dusty drapery of abandoned cobwebs where chaotic strands of grey silk hang in messy veils, catching dead light and dead insects with equal indifference in their sticky architecture of neglect. The fine strands should catch backlight like silver thread while shadows pool in the gathered dust at intersections. Capture the beauty of abandonment, architecture built by spiders long departed.',
+        'Render cobweb material as dusty filament architecture over the input: chaotic grey silk strands, messy draped veils, sticky intersections, backlit silver thread, and dust gathered where lines meet. If corner, object, ruin, or creature context exists, let webs cling to it; otherwise use cobwebs as aged overlay without forcing haunted-house staging. Use Cobweb as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -565,12 +565,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Beige',
       lighting_setup: 'Sunlight',
       material_texture: 'Grainy',
-      render_quality: 'Beach, vacation',
-      spatial_distortion: 'Footprints',
+      render_quality: 'Wet, granular',
+      spatial_distortion: 'Compaction marks',
       atmosphere: 'Relaxing, warm',
       key_features: 'Grains',
       creative_brief:
-        'Render the granular serenity of wet beach sand where ripples map the retreating tide in gentle waves of beige, each grain a tiny crystal of eroded mountain now compacted by water into a surface that catches sunlight and footprints with equal fidelity. The texture should feel cool and dense, a meditative surface where land and ocean negotiate their border in miniature.',
+        'Apply wet compacted sand as granular surface logic: beige ripples, dense water-darkened grain, tiny crystalline sparkle, shallow compaction marks, and sunlight caught in miniature ridges. If beach, shore, footprint, or terrain exists, reinforce it; otherwise transform planes and bases into damp sand texture without requiring vacation scenery.',
     },
   },
   {
@@ -589,7 +589,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Industrial, cheap',
       key_features: 'Random chips',
       creative_brief:
-        'Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments.',
+        'Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments. Use OSB Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -608,7 +608,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Restricted, urban',
       key_features: 'Diamond grid',
       creative_brief:
-        'Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent.',
+        'Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent. Use Chain Link Fence as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -627,7 +627,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, forbidden',
       key_features: 'Barbs every few inches',
       creative_brief:
-        'Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence.',
+        'Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Metals And Minerals',
     negativePrompt: 'fish scale',
     style: {
-      aesthetic: 'Fantasy armor',
+      aesthetic: 'Dragon-hide armor',
       form_and_line: 'Thick scales',
       color_palette: 'Red/Gold/Black',
       lighting_setup: 'Metallic sheen',
@@ -646,7 +646,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic, dangerous',
       key_features: 'Overlapping armor',
       creative_brief:
-        'Render the epic armor of dragon hide where thick scales overlap in a cascading shield of red, gold, and obsidian, each plate a forged scale of fantasy that catches metallic sheen along its ridged crest while shadow pools in the gaps between. The surface should feel indestructible and ancient, a skin designed to deflect both blade and time. Capture the material of legend, protection imagined at monumental scale.',
+        'Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character, creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating as fantasy material without requiring a dragon.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Loss of detail
   atmosphere: Light, airy, fleeting
   key_features: Dabbed paint texture
-  creative_brief: Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving hard boundaries into shimmering dabs of pure sensation. The image feels painted from perception rather than description, all atmosphere and optical afterimage.
+  creative_brief: >-
+    Apply impressionist oil perception to any input: broken color dabs, optical
+    mixing, shimmering light, softened contours, quick visible strokes, and
+    atmospheric afterimage. Keep perception-first painting without requiring
+    gardens, riverbanks, dancers, plein-air landscapes, or period scenes.
 avoidRules:
   - photo
   - realistic

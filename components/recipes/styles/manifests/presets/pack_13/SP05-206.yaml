@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-206
 packId: pack_13
-name: Usagi Drop - Single-Parent Everyday Tenderness
+name: Everyday-Care Gesture Intimacy
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Gentle everyday tenderness where care, responsibility, and emotional growth emerge through small ordinary gestures
-  form_and_line: Soft caregiving-gesture contour emphasis, routine-detail readability, and grounded everyday pose language
-  color_palette: Tatami beige, gentle cream whites, muted pastel clothing tones, and warm morning kitchen ambers
-  lighting_setup: Early soft daylight, overhead diffusion, and evening lamp warmth in care routines
-  material_texture: Cotton softness, worn lived-in surfaces, small utility plastics, cloth wraps, and paper textures
-  render_quality: Intimate domestic slice rendering with calm emotional clarity and routine-detail fidelity
-  spatial_distortion: Close framing compression that reinforces caregiving intimacy
-  atmosphere: Tender, domestic, patient, soft
-  key_features: Routine-detail anchors, caregiving gestures, close relational framing, patient pauses, and small acts of responsibility
+  aesthetic: >-
+    Everyday-care anime intimacy where responsibility, patience, small practical rituals, and
+    sincere tenderness carry emotional weight
+  form_and_line: >-
+    Close relational spacing, softened posture arcs, careful hand gestures, and uncluttered
+    composition around acts of care
+  color_palette: Cotton cream, soft beige, lunchbox red, mild navy, warm skin peach, and pale morning blue
+  lighting_setup: >-
+    Gentle domestic daylight, soft practical warmth, low-contrast fill, and small highlight accents
+    on useful objects
+  material_texture: >-
+    Cotton softness, worn surfaces, small utility plastics, cloth wraps, paper textures, and handled
+    everyday tactility
+  render_quality: >-
+    Intimate anime finish with sincere emotional clarity, routine detail fidelity, and low-melodrama
+    restraint
+  spatial_distortion: Close framing compression that turns any subject into a quiet care ritual
+  atmosphere: Tender, patient, domestic, soft, responsible
+  key_features: >-
+    Caregiving gestures, small practical details, patient pauses, close spacing, and emotional
+    sincerity
   creative_brief: >-
-    Use the title as a style anchor for everyday care. Preserve caregiving
-    gesture focus and emotional sincerity without requiring apartments,
-    lunches, school items, or parent-child scene.
+    Use Usagi Drop as style anchor for everyday-care gesture intimacy. Apply patient hand placement,
+    soft practical light, close responsibility, and small-use textures to any prompt. Apartments,
+    lunches, school items, and parent-child scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-206.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

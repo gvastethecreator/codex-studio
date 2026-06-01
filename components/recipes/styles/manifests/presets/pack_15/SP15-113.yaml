@@ -12,14 +12,14 @@ visualDna:
   color_palette: Seafoam, pearl white, and muted aqua.
   lighting_setup: Harbor daylight with soft water bounce.
   material_texture: Wet bio-panels, translucent tubes, and ceramic docks.
-  render_quality: Clean maritime biotech concept with calm precision.
+  render_quality: Clean maritime-biotech render with calm precision and regenerative logistics cues.
   spatial_distortion: Dock-like perspective leading to regenerative intake pods.
   atmosphere: Recovery, exchange, and compassionate infrastructure.
   key_features: Stemcell capsule motifs, tide-line curves, restorative pods, and fluid column silhouettes.
   creative_brief: >-
-    Preserve stemcell harbor grammar as a reusable style system:
-    regenerative maritime logistics, dockside care infrastructure, and
-    compassionate renewal pathways should remain coherent across subjects.
+    Harbor the input in stemcell renewal: seafoam dock curves, pearl treatment
+    pods, muted-aqua fluid towers, translucent capsule arcs, and soft water bounce
+    make any subject feel compassionate, precise, and regenerative.
 avoidRules: [photoreal, hospital-gore, cyberpunk, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-113.webp }
 attributes:

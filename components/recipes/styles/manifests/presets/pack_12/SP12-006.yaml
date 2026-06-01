@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Boss-arena dark fantasy para action RPG, con lenguaje arcano sistémico y telemetría de mecánicas por símbolo.
-  subject_treatment: Entidad grimorio como boss-phase controller y avatar conjurado con weak points visuales explícitos.
+  aesthetic: Gramática boss-arena dark fantasy con telemetría arcana, fases legibles y símbolos como mecánica visual.
+  subject_treatment: >-
+    Eleva el input a boss, avatar conjurado o artefacto controlador; si aparece grimorio, debe reforzar fase y weak
+    points, no fijar una biblioteca.
   color_and_tone: Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.
   lighting_and_shadow: Círculos rúnicos como UI diegética, iluminación por patrón de ataque y sombras de lectura circular.
   texture_and_material: Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.
-  camera_and_composition: Arena radial con centro mecánico, perímetro de evasión y lanes para posicionamiento de party.
+  camera_and_composition: >-
+    Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena
+    cerrada.
   atmosphere_and_mood: Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.
   rendering_and_quality: Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.
+  creative_brief: >-
+    Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

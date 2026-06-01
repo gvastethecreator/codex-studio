@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Trendy, soft
   key_features: Uniform length
-  creative_brief: Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor.
+  creative_brief: >-
+    Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a
+    manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice.
+    The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of
+    the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input:
+    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - real fur
   - skin

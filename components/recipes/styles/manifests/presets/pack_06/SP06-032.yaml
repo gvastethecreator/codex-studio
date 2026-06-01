@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Angular forms
   atmosphere: Dramatic, primitive
   key_features: Gouge marks
-  creative_brief: Wood yields its soft grain to the gouge, leaving white channels where the block once stood. Ink sits on the remaining surface like snow on a relief map, transferring darkness only where the carver allowed height to persist. The image arrives through reduction, a sculpture flattened into print.
+  creative_brief: >-
+    Apply woodcut print logic to any input: gouged white channels, raised black
+    ink shapes, visible wood grain, rough relief edges, and reduction-carved
+    contrast. Keep block-print force without requiring folk scenes, waves,
+    landscapes, animals, or historical illustration.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

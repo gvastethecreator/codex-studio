@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity
-  form_and_line: Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement
+  aesthetic: >-
+    Monotype one-off print style with painterly transfer unpredictability and unique
+    impression-first identity
+  form_and_line: >-
+    Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink
+    movement
   color_palette: Ink wash, single-pass tone, monoprint spontaneity
   lighting_setup: Unpredictable, plate-pressure variation, unique ghost-artifact
   material_texture: Plate texture
@@ -22,9 +26,9 @@ visualDna:
   atmosphere: Expressive, unique, printmaking surprise, serendipitous beauty
   key_features: Ghost image, ink-bleed edge, plate-memory residue
   creative_brief: >-
-    Define this preset through monotype grammar: one-pass transfer,
-    non-repeatable ghosting, and pressure-born variation should carry identity
-    beyond any single expressive print scene.
+    Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting,
+    smudged plate edges, and non-repeatable ink movement should create unique impression energy
+    without requiring abstract figures, print plates, studios, or one expressive scene.
 avoidRules:
   - repeatable
   - clean

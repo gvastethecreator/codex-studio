@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Escape-setpiece en cantera hostil, centrado en traversal vertical, gestión de riesgo y persecución de basilisco.
-  subject_treatment: Especialistas de supervivencia improvisada con lectura de recursos escasos y prioridad de escape.
+  aesthetic: Gramática escape-setpiece hostil con traversal vertical, riesgo ascendente y persecución de basilisco.
+  subject_treatment: Si el input contiene criatura, darle amenaza basilisco; si no, convertirlo en superviviente, recurso, ruta o peligro petrificante.
   color_and_tone: Blanco caliza, verde venenoso, óxido marrón y tierras desaturadas para señal de peligro.
   lighting_and_shadow: Lucernarios rotos, sombras de grúa y niebla particulada con bolsillos luminosos de amenaza.
   texture_and_material: Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.
-  camera_and_composition: Topología zigzag ascendente con capas de riesgo y chokepoints legibles.
+  camera_and_composition: Zigzag ascendente, capas de riesgo y chokepoints legibles sin exigir cantera.
   atmosphere_and_mood: Pánica, ingeniosa y de estrés ascendente.
   rendering_and_quality: Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.
 avoidRules:

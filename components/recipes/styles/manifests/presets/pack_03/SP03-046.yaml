@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Optimized prop
+  aesthetic: Game-asset PBR optimization
   form_and_line: Normal map details
   color_palette: Albedo map
   lighting_setup: Marmoset asset viewer lighting, turntable glory
@@ -20,8 +20,13 @@ visualDna:
   render_quality: Game ready, portfolio turntable
   spatial_distortion: None
   atmosphere: Functional, clean, asset-showcase
-  key_features: Asset turntable, normal map detail
-  creative_brief: 'Every polygon earns its place — the normal map whispers detail the geometry never actually carried, and roughness/metalness values define surface behavior with the economy of a well-written function. Marmoset-style turntable lighting wraps the prop in portfolio glory, no wasted texture space, no unused vertices. The image is game-ready confidence: an asset waiting its turn in the level editor, optimized and undeniable.'
+  key_features: Asset-ready PBR, normal map detail
+  creative_brief: >-
+    Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior, readable edge
+    wear and performance-minded material hierarchy. If it is a prop or asset, make it level-editor credible; otherwise
+    apply game-asset clarity without forcing a prop. Apply Game Asset as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
+    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - high poly
   - unoptimized

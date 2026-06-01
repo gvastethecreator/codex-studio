@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-022
 packId: pack_07
 name: Neoclassical
-category: 3. Historical And Sacred Architecture
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,24 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - historical-and-sacred-architecture
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Neoclásico institucional de autoridad cívica, orden axial y monumentalidad racional.
-  form_and_line: Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría estricta.
+  form_and_line: >-
+    Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría
+    estricta.
   color_palette: Mármol blanco, caliza clara, piedra fría y bronce dorado con sombras gris azuladas.
   lighting_setup: Sol lateral que estría columnas, sombras porticadas profundas y acentos nocturnos monumentales.
   material_texture: Piedra lisa, mármol cincelado, granito pulido, yeso colado y cobre con verdín.
   render_quality: Monumental clásico de proporción rigurosa y legibilidad institucional permanente.
   spatial_distortion: Perspectiva axial neutra con jerarquía frontal y escala ceremonial.
   atmosphere: Seria, estable, cívica y atemporal.
-  key_features: Orden columnario, frontón canónico, basamento escalonado, masa cívica y composición perfectamente simétrica.
+  key_features: >-
+    Orden columnario, frontón canónico, basamento escalonado, masa cívica y composición
+    perfectamente simétrica.
   creative_brief: >-
-    Define una gramática neoclásica transferible por proporción, eje y orden
-    tectónico. La autoridad debe emerger de la composición y la masa pétrea,
-    evitando retórica narrativa o escenográfica.
+    Define una gramática neoclásica transferible por proporción, eje y orden tectónico. La autoridad
+    debe emerger de la composición y la masa pétrea, evitando retórica narrativa o escenográfica.
 avoidRules:
   - modern
   - asymmetry
@@ -35,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: historical-and-sacred-architecture
-  categoryName: 3. Historical And Sacred Architecture
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - historical-and-sacred-architecture
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

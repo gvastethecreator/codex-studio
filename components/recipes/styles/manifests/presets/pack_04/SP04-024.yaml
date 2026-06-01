@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Whimsical, handcrafted, comedic warmth
   key_features: Tactile surface dents, clay seam lines, armature-informed posing hints
   creative_brief: >-
-    Preserve the physicality of hand-sculpted clay in every form. Keep Aardman-like tactile imperfection—fingerprints, seam traces, and chunky silhouettes—while ensuring the style can apply to varied subjects without hard-coding specific pose beats or locations.
+    Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky
+    silhouettes, matte clay chroma, and armature-informed posing should preserve physical model
+    charm without requiring comedy characters, sets, props, studios, or hard-coded pose beats.
 avoidRules:
   - 2d
   - drawn

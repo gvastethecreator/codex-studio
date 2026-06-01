@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Analytical, cinematic, pre-production momentum
   key_features: Shot-size variety, perspective alternation, compositional cadence mapping
   creative_brief: >-
-    Plan visual storytelling through rapid compositional permutations. Keep each frame simple but intention-rich, focusing on camera placement, value hierarchy, and staging rhythm so sequence readability and emotional pacing can be evaluated before final rendering, with Alfred Hitchcock-style suspense-oriented framing discipline.
+    Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal hierarchy
+    tests, lens-like framing, and miniature layout variants. It should generate composition diversity without requiring
+    storyboards, film scenes, characters, or sequential narrative panels.
 avoidRules:
   - rendered
   - polished

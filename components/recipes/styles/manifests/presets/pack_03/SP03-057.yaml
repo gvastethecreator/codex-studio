@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - organic-and-character-cgi
 visualDna:
-  aesthetic: 3D character portrait
+  aesthetic: Collectible avatar render language
   form_and_line: Clean
   color_palette: Neon, Gold, Rare traits, rarity gradient
   lighting_setup: Studio, promo-ready
@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hype, digital, exclusive drop
   key_features: Profile view, trait accessories
-  creative_brief: 'The character faces forward in the profile-view language of the collector''s marketplace — neon traits glow with rare-drop energy, gold accessories signal scarcity, and studio lighting wraps the figure in promo-ready gloss. Plastic and metal finishes read as premium collectible surfaces, every accessory a generative trait rendered with avatar-centric precision. The image pulses with digital hype: a Bored Ape rendered in three dimensions, exclusivity made visible through the vocabulary of rarity gradients and exclusive drops.'
+  creative_brief: >-
+    Give the input collectible-avatar styling: rarity-trait clarity, glossy feature emphasis, profile-picture legibility
+    and drop-ready color blocking. If a face or character exists, amplify it; otherwise translate subject cues into
+    trait metadata without forcing an ape, portrait, or NFT-drop setup. Apply NFT Collectible Avatar Render as a
+    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language,
+    lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
+    product shot, or scene template.
 avoidRules:
   - traditional art
 assets:

@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Functional
   key_features: Rows of hooks
-  creative_brief: Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale.
+  creative_brief: >-
+    Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon
+    forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look
+    scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the
+    fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - smooth
 assets:

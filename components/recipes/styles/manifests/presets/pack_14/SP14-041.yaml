@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-041
 packId: pack_14
-name: Cormorant Spirit Harbor
+name: Cormorant Kami Appeasement
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, japanese-myth]
 visualDna:
-  aesthetic: Fishing port protected by avian river spirits and ritual fire boats.
-  form_and_line: Jetty rows, lantern masts, and shrine breakwater arcs.
+  aesthetic: Cormorant kami appeasement where labor, tide, and avian river spirits share ritual timing.
+  form_and_line: Jetty row cues, lantern masts, and shrine breakwater arcs.
   color_palette: Marine navy, ember orange, and weathered wood brown.
   lighting_setup: Night harbor braziers and lantern wake reflections.
   material_texture: Tarred ropes, wet timber, lacquer charms, and salt-dark stone.
   render_quality: Detailed coastal concept with strong silhouette rhythm.
-  spatial_distortion: Harbor depth with receding boat lanes.
+  spatial_distortion: Harbor-like depth with receding boat lane rhythms.
   atmosphere: Tidal solemnity, labor devotion, and protective folklore.
-  key_features: Spirit cormorant perches, offering docks, and tide ward totems.
-  creative_brief: A working harbor where each catch begins with a kami appeasement rite.
+  key_features: Spirit cormorant perches, offering dock cues, tide ward totems.
+  creative_brief: Rework the input through cormorant kami appeasement, making each effort begin with river-spirit respect without requiring a harbor.
 avoidRules: [photoreal, comedic, neon-club, dieselpunk-war, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-041.webp }
 attributes:
   negativePrompt: photoreal, comedic, neon-club, dieselpunk-war, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-japanese-kami-yokai,
+    categoryName: 7. Mythic — Japanese Yokai & Kami,
+    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

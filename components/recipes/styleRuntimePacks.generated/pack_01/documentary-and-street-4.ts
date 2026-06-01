@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Real, fleeting, documentary, slice-of-life, energetic',
       rendering_and_quality: 'High quality documentary photography, authentic, unretouched look',
       creative_brief:
-        'Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion, urban grit, and unposed immediacy without requiring a person, sidewalk, or city scene.',
+        'Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion, urban grit, and unposed immediacy without requiring a person, sidewalk, or city setting.',
     },
   },
   {
@@ -61,7 +61,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Lonely, post-apocalyptic',
       key_features: 'Ruin texture',
       creative_brief:
-        'Urbex style turns any subject into evidence of abandonment: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and haunting documentary grit. Keep ruin atmosphere without requiring buildings, rooms, plaster, or post-apocalyptic scene.',
+        'Apply urbex abandonment to the input: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and documentary grit should age any subject without requiring buildings or post-apocalyptic setting.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

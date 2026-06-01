@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-213
 packId: pack_13
-name: Working!! - Family Restaurant Shift Comedy
+name: Shift-Comedy Choreography Warmth
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Working!! title anchor translated into workplace-shift banter, ensemble chemistry, low-stakes service chaos, and punchy cooperative warmth
-  form_and_line: Clear blocking lines, uniform-like silhouette contrast, fast ensemble reaction timing cues, and choreographed handoff rhythm
-  color_palette: Diner cream warmth, black-and-white anchors, menu-red accents, amber practical glow, and stainless highlight notes
-  lighting_setup: Bright practical illumination, warm pass-through glow, evening interior comfort, and clean comic reaction spotlighting
-  material_texture: Apron-cloth softness, laminated sheen, ceramic gloss, countertop smoothness, and practical metal highlights as optional texture cues
-  render_quality: Workplace-comedy rendering with rhythm-first readability, upbeat service realism, and ensemble timing clarity
-  spatial_distortion: Quick-cut staging compression and reaction-scale pops used to support banter-driven comedic pace
-  atmosphere: Cheery, busy, ensemble-driven, comfy
-  key_features: Service-work choreography, uniform-like silhouettes, coworker chemistry staging, practical warmth, comedic timing beats
+  aesthetic: >-
+    Shift-comedy anime warmth where ensemble banter, coordinated handoffs, practical service rhythm,
+    and low-stakes workplace chaos become style
+  form_and_line: >-
+    Clear blocking lines, uniform-like silhouette contrast, fast reaction timing cues, handoff arcs,
+    and choreographed movement paths
+  color_palette: >-
+    Diner cream, black-white anchors, menu red, amber practical glow, stainless highlights, and warm
+    beige supports
+  lighting_setup: >-
+    Bright practical illumination, warm pass-through glow, evening comfort, and clean comic reaction
+    spotlighting
+  material_texture: >-
+    Apron cloth, laminated sheen, ceramic gloss, counter smoothness, metal highlights, and handled
+    work-surface wear
+  render_quality: >-
+    Workplace-comedy anime finish with rhythm-first readability, upbeat practicality, and ensemble
+    timing clarity
+  spatial_distortion: Quick-cut compression and reaction-scale pops supporting banter pace around any subject
+  atmosphere: Cheery, busy, ensemble-driven, comfy, punchy
+  key_features: >-
+    Handoff choreography, coworker chemistry, practical warmth, service rhythm, comic reaction
+    beats, and clear blocking
   creative_brief: >-
-    Use Working!! as a style anchor for shift-comedy rhythm: ensemble banter,
-    practical workplace warmth, and service-like choreography should remain
-    readable without forcing a restaurant, counter, tray, apron, or order scene.
+    Use Working!! as style anchor for shift-comedy choreography warmth. Any prompt should feel timed
+    by handoffs, practical glow, and ensemble banter. Restaurants, counters, trays, aprons, and
+    order scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-213.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

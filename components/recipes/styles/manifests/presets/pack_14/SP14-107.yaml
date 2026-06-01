@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-107
 packId: pack_14
-name: Midnight Candle Vault
+name: Midnight Candle Compression
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Hidden vault lit by dozens of candles and ritual ironwork.
-  form_and_line: Tight vault geometry, vertical candle clusters, and iron rails.
+  aesthetic: Ritual noir compressed by dense candlelight, black wax, and ironwork discipline.
+  form_and_line: Tight chamber-like geometry, vertical candle clusters, and iron rail rhythms.
   color_palette: Black wax, amber flame, and aged brass.
   lighting_setup: Dense candle pools with deep surrounding shadow.
   material_texture: Sooted stone, melted wax, and oxidized metal.
-  render_quality: Editorial noir with claustrophobic detail.
-  spatial_distortion: Close chamber perspective compressing the ritual space.
+  render_quality: Editorial noir with claustrophobic detail and clear symbolic hierarchy.
+  spatial_distortion: Close compressed depth that makes any subject feel sealed into ritual power.
   atmosphere: Secrecy, devotion, and controlled tension.
-  key_features: Candle stacks, iron grates, and sealed alcoves.
-  creative_brief: A ritual vault where candlelight becomes a compact geometry of power.
+  key_features: Candle stacks, iron grates, sealed-alcove silhouettes.
+  creative_brief: Recast the input through midnight candle compression, where candlelight and iron geometry make power feel compact and secret.
 avoidRules: [photoreal, cheerful, empty, watermark, text, logo, flat-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-107.webp }
 attributes:
   negativePrompt: photoreal, cheerful, empty, watermark, text, logo, flat-light
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

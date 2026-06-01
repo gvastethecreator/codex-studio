@@ -22,7 +22,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Raycraft silhouettes, expedition-stripe bands, ion-tower linework, and blank mission plaques.',
       creative_brief:
-        'Preserve photon safari-port grammar as a reusable style system: pulp expedition graphics, outbound vector staging, and optimistic serial-era adventure energy should remain coherent across any subject.',
+        'Launch the input as pulp ray expedition graphics: atomic orange vectors, finned silhouettes, mission-stripe bands, cyan beacons, and riveted alloy glare. Ports, raycraft, or expedition plaques can reinforce the style, but the useful grammar is outbound bravado and cosmic cartography. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -44,7 +44,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.',
       creative_brief:
-        'Preserve rocket cathedral-arcade grammar as a reusable style language: sacred-science monumental planning, longitudinal launch choreography, and civic mythmaking cues should remain stable across any subject.',
+        'Give the input sacred-science scale: rocket arches, plasma-blue ribs, mission-mosaic grids, ivory ceramic light, and processional launch symmetry. Cathedral or arcade cues may appear, but the style is civic mythmaking through monumental function, not worship staging. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ion-trail ribbons, suspended rail motifs, expedition hazard stripes, and cyan signal beacons.',
       creative_brief:
-        'Preserve ion frontier-monorail grammar as a reusable style system: elevated frontier transit cues, canyon-scale vector depth, and exploratory engineering optimism should remain coherent across any subject.',
+        'Pull the input along ion-frontier vectors: cyan trail ribbons, elevated suspension arcs, desert-peach glare, graphite hazard stripes, and expedition beacon marks. Monorail or canyon cues can appear, but the style should read as suspended travel momentum and rugged optimistic engineering. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Raygun fork motifs, skiff-repair altar shapes, cargo-lane glyphs, gantry silhouettes, and hand-numbered token marks.',
       creative_brief:
-        'Push ray bazaar-hangar as a reusable visual system: every subject should feel priced, repaired, bartered, and almost ready to launch, with commerce graphics fused directly into spacecraft service hardware.',
+        'Overload the input with frontier barter hardware: cargo-lane glyphs, raygun forks, chipped permit marks, greasy cable braids, and service-hangar shadows should make it feel priced, repaired, and almost ready to launch. Bazaar or hangar cues can anchor the style without becoming required scene. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -121,7 +121,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Comet sign shapes, fuel-diner color bands, mission-bulletin panels, tailfin shadows, and coordinate-key motifs.',
       creative_brief:
-        'Push comet motel-strip as a reusable style: turn any subject into a roadside constellation of neon promises, transient pilots, coded room numbers, and orbital escape lines.',
+        'Repaint the input as cosmic roadside noir: comet pylons, orbital stripes, magenta motel glow, cracked ceramic shine, and coordinate-key motifs should promise escape. Motel strips, pilots, or room-number cues are optional anchors; the style is transient glamour bent into star navigation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scanner arches, ray turret eyes, pneumatic stamp blocks, confiscation-grid cages, and permit-slot geometry.',
       creative_brief:
-        'Push asteroid customs-gate as reusable style: make forms feel inspected, stamped, divided, and legally trapped, with raypunk hardware behaving like bureaucratic predators.',
+        'Trap the input in cosmic paperwork machinery: scanner bars, permit slots, pneumatic stamp blocks, octagonal lock frames, and turret-eye circles should divide forms into legal zones. Customs gates are optional; the style is frontier administration acting like a raypunk predator. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Duel-ring glyphs, tier shadow bands, shield pylons, plasma banners, and contract-board burn marks.',
       creative_brief:
-        'Push nova duel-colosseum as reusable style: every subject should feel caught inside ceremonial electrical judgment, with honor, audience pressure, and ray trajectories shaping composition.',
+        'Charge the input with ceremonial electrical judgment: contract-crimson marks, plasma trajectories, shield-pylon teeth, impact rings, and burnt honor plaques should bend composition around conflict. Colosseum, duel, or audience cues can appear, but the style is ritualized raypunk consequence. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Radar dish petals, chart-window grids, emergency beacon stacks, ridge-line silhouettes, and nebula route scars.',
       creative_brief:
-        'Push pulp observatory-ridge as reusable style: make any subject feel like it watches a beautiful threat, with instruments, horizon pressure, and defensive curiosity driving the image.',
+        'Make the input watch a beautiful threat: radar-petal silhouettes, scratched glass domes, emergency beacons, taped star charts, and horizon vectors should turn curiosity defensive. Ridge or observatory cues can appear, but the style is lonely vigilance under cosmic weather. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -229,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Open plasma rails, transfer-pod sockets, mission-fin silhouettes, service-line strokes, and safety icon clusters.',
       creative_brief:
-        'Push plasma rail-commons as reusable style: treat movement as public electricity, with exposed energy channels, disciplined transfer geometry, and everyday travel framed like starship launch prep.',
+        'Electrify the input as trusted public speed: plasma rails, ceramic insulators, pod sockets, safety icon clusters, and cyan underdeck spill should make travel feel dangerous but organized. Rail or commons cues may appear; the style is everyday motion framed like launch preparation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Salvage crane claws, parts-tray grids, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.',
       creative_brief:
-        'Push comet salvage-yard as reusable style: make subjects feel rebuilt from heroic wreckage, with repair scars, crane diagonals, and outlaw invention carrying emotional weight.',
+        'Rebuild the input from heroic wreckage: crane diagonals, welding-white scars, mission-patch scraps, retrofit pit rings, and cobalt worklight should make repair feel mythic. Salvage yards or wreck sections can anchor the style, but the point is outlaw invention and second chances. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Departure crescents, mission alcoves, launch constellations, tube membranes, and cruiser-idol views.',
       creative_brief:
-        'Push nebula boarding-lounge as reusable style: turn any subject into a polished threshold between comfort and cosmic risk, with pearl curves, translucent gates, and departure myth.',
+        'Polish the input into a departure threshold: pearl ribs, translucent gate membranes, nebula violet backlight, rose status lights, and crescent lounge arcs should make comfort face cosmic risk. Boarding lounge cues can appear, but the style is elegant anticipation before impossible distance. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.',
       creative_brief:
-        'Push rocket chapel-outpost as reusable style: any subject should feel sanctified by launch risk, with engine geometry, fragile vows, and cosmic iconography fused into one ritual aesthetic.',
+        'Sanctify the input through launch risk: nozzle halos, mission-white steel, star triptychs, candle-amber engine glow, and paper blessing tags should fuse machinery with vow. Chapel or outpost cues may appear, but the style is devotional preparation for mechanical departure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Mail-rocket silhouettes, capsule rack grids, route holograph boards, stamp-color lanes, and priority chute clusters.',
       creative_brief:
-        'Push orbit postal-depot as reusable style: make subjects feel sorted, routed, stamped, and kept alive by bright orbital logistics, with mail graphics acting as both decoration and system diagram.',
+        'Route the input through cheerful orbital logistics: tangerine mail paint, capsule chute veins, scanner sweeps, stamp-color lanes, and docking-loop organs should keep it sorted and alive. Postal depot cues can appear, but the style is reliability made heroic through bright system diagrams. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Aurora alert gradients, command-tier composition, cyan-magenta focus bands, hard tactical diagonals, and signal-stripe overlays.',
       creative_brief:
-        'Apply aurora battle-deck as an abstract style treatment: transform any subject into a decisive raypunk action image through aurora alert color, command-tier framing, and tactical focus hierarchy.',
+        'Charge the input with aurora command pressure: stack cyan-magenta alert bands, hard tactical diagonals, brushed control-surface textures, and viewport compression so any subject reads as a decisive raypunk operation.',
     },
   },
   {
@@ -391,7 +391,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Launch-lane graphics, academy-white surfaces, blue-orange instruction accents, diagrammatic overlays, and ranked alignment rhythm.',
       creative_brief:
-        'Apply zenith ray-academy as an abstract style treatment: make any subject feel trained, ranked, diagrammed, and launch-ready through clean raypunk institutional graphics.',
+        'Drill the input into launch-ready raypunk discipline: academy-white panels, blue-orange rank stripes, simulator ovals, diagram arcs, and precise lane markings turn any subject into trained future hardware or cadet ritual.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

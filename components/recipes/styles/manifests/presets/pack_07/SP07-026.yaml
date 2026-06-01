@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-026
 packId: pack_07
 name: Googie Architecture
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Retrofuturismo Googie de optimismo atómico, velocidad visual y espectáculo comercial modernista.
-  form_and_line: Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos angulares dinámicos.
-  color_palette: Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con naranja atómico.
-  lighting_setup: Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia luminosa.
+  form_and_line: >-
+    Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos
+    angulares dinámicos.
+  color_palette: >-
+    Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con
+    naranja atómico.
+  lighting_setup: >-
+    Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia
+    luminosa.
   material_texture: Cromo pulido, terrazo brillante, Formica esmaltada, estuco pintado y reflejos duros de vidrio.
   render_quality: Retro-futuro de media centuria con energía kitsch precisa y acabado optimista de alto contraste.
   spatial_distortion: Sesgo direccional y perspectiva levantada para sugerir movimiento continuo.
   atmosphere: Lúdica, veloz, nostálgica y espectacular.
   key_features: Motivos starburst, geometría de impulso, neón-cromo dominante y coreografía de voladizos.
   creative_brief: >-
-    Define una gramática Googie transferible donde velocidad geométrica,
-    exuberancia neón-cromo y optimismo atómico sean constantes visuales. Debe
-    funcionar sin depender de la narrativa de un diner o carretera concreta.
+    Define una gramática Googie transferible donde velocidad geométrica, exuberancia neón-cromo y
+    optimismo atómico sean constantes visuales. Debe funcionar sin depender de la narrativa de un
+    diner o carretera concreta.
 avoidRules:
   - square
   - boring
@@ -35,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-025
 packId: pack_07
 name: Bauhaus Architecture
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,9 +10,11 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Bauhaus arquitectónico de racionalismo industrial, antiornamento y legibilidad funcional explícita.
+  aesthetic: >-
+    Bauhaus arquitectónico de racionalismo industrial, antiornamento y legibilidad funcional
+    explícita.
   form_and_line: Masas cúbicas, bandas lineales, cubiertas planas, asimetría planificada y estructura clara.
   color_palette: Base blanco-negro-gris con acentos puntuales de color-señal de baja frecuencia.
   lighting_setup: Distribución diurna homogénea, sombras sobrias y ritmos lineales sin teatralización.
@@ -22,9 +24,8 @@ visualDna:
   atmosphere: Precisa, progresiva, utilitaria y calmada.
   key_features: Composición función-primero, bandas horizontales, planos limpios y señalética cromática mínima.
   creative_brief: >-
-    Conserva una gramática Bauhaus transferible donde función, masa y estructura
-    ordenen cada decisión visual. La asimetría debe ser racional y medible,
-    nunca expresiva por capricho formal.
+    Conserva una gramática Bauhaus transferible donde función, masa y estructura ordenen cada
+    decisión visual. La asimetría debe ser racional y medible, nunca expresiva por capricho formal.
 avoidRules:
   - decoration
   - roof tiles
@@ -35,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

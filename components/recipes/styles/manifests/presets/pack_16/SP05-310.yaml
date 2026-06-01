@@ -23,7 +23,9 @@ visualDna:
   key_features: Color-identidad fuerte, claridad procedimental, hardware funcional sugerido, oficio competente y aventura directa.
   creative_brief: >-
     Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada:
-    oficio, claridad técnica y heroísmo práctico sin imponer trajes, hangares, tripulaciones ni rescates.
+    oficio, claridad técnica y heroísmo práctico. Trajes, hangares, tripulación
+    o rescate pueden operar como indicios de oficio espacial cuando el input lo
+    admita, sin convertir el resultado en una escena obligatoria.
 avoidRules:
   - realistic
   - 3d render

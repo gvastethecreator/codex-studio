@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - metals-and-minerals
 visualDna:
-  aesthetic: Fantasy armor
+  aesthetic: Dragon-hide armor
   form_and_line: Thick scales
   color_palette: Red/Gold/Black
   lighting_setup: Metallic sheen
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Spiked
   atmosphere: Epic, dangerous
   key_features: Overlapping armor
-  creative_brief: Render the epic armor of dragon hide where thick scales overlap in a cascading shield of red, gold, and obsidian, each plate a forged scale of fantasy that catches metallic sheen along its ridged crest while shadow pools in the gaps between. The surface should feel indestructible and ancient, a skin designed to deflect both blade and time. Capture the material of legend, protection imagined at monumental scale.
+  creative_brief: 'Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character, creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating as fantasy material without requiring a dragon.'
 avoidRules:
   - fish scale
 assets:

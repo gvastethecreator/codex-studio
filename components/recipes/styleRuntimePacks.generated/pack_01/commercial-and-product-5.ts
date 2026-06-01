@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Professional, desire',
       key_features: 'White/Grey background',
       creative_brief:
-        'The object floats in its own perfection, suspended in a void where nothing competes for attention and every edge resolves into certainty. Light wraps around form like tailored silk, revealing contour without distraction, isolating the thing from its own history. Desire crystallizes in the absence of context, the thing becoming only what it promises to become.',
+        'Apply premium product-photography isolation to the input: controlled void background, wrapped highlight gradients, crisp contour reveal, clean shadow grounding, and desire-focused polish should elevate any subject as an object.',
     },
   },
   {

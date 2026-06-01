@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Antique, classic',
       key_features: 'Plate mark',
       creative_brief:
-        'Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Every line should feel bitten, fuzzy, pressured, and impossible to mistake for clean digital ink.',
+        'Apply etched-print linework to any input: acid-bitten copper lines, fuzzy inked grooves, plate-pressure emboss, fine crosshatching, and delicate chemical irregularity. Keep intaglio bite without requiring old maps, architecture, portraits, botanical plates, or antique scenes.',
     },
   },
   {
@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bold, graphic',
       key_features: 'Clean cuts',
       creative_brief:
-        'Linoleum surrenders to the blade in smooth curves impossible in wood, the cut flowing like ink itself frozen mid-gesture. Each color demands its own block, its own registration, its own risk of misalignment. The print celebrates the hand that carves negative space into positive vision.',
+        'Apply linocut relief printing to any input: smooth carved curves, bold negative-space cuts, flat ink planes, slight registration wobble, and hand-pulled pressure texture. Keep graphic print immediacy without requiring poster subjects, protest art, animals, portraits, or workshop tools.',
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dramatic, primitive',
       key_features: 'Gouge marks',
       creative_brief:
-        'Wood yields its soft grain to the gouge, leaving white channels where the block once stood. Ink sits on the remaining surface like snow on a relief map, transferring darkness only where the carver allowed height to persist. The image arrives through reduction, a sculpture flattened into print.',
+        'Apply woodcut print logic to any input: gouged white channels, raised black ink shapes, visible wood grain, rough relief edges, and reduction-carved contrast. Keep block-print force without requiring folk scenes, waves, landscapes, animals, or historical illustration.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Commercial, bold',
       key_features: 'Layered colors',
       creative_brief:
-        'Squeegee drags ink through mesh onto paper, each color a separate pass, separate screen, separate prayer for registration. Flat planes of pigment overlap with the confidence of commerce, art refusing to distinguish itself from poster. The image announces rather than whispers, designed for distance and reproduction.',
+        'Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat separated color passes, bold registration offsets, opaque poster planes, and reproduction-first contrast. Keep graphic commercial punch without requiring slogans, portraits, pop icons, product ads, or readable text.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ghostly, soft',
       key_features: 'Transfer texture',
       creative_brief:
-        'Paint applied to glass, transferred to paper in a single irreversible press — no edition, no repeat, no second chance. The transfer blurs and blends in ways the artist predicted but could not control, spontaneity baked into the process. Each print is an original, the plate wiped clean for the next unique birth.',
+        'Apply monotype transfer behavior to any input: single-pull softness, glass-plate smear, accidental blending, pressure blur, and unrepeatable painterly transfer marks. Keep one-off print spontaneity without requiring botanical subjects, abstract plates, studio tools, or edition context.',
     },
   },
   {
@@ -120,7 +120,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, moody',
       key_features: 'Granular tone',
       creative_brief:
-        'Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The style breathes atmosphere through particulate shadow rather than outlines, turning mood into a printed chemical field.',
+        'Apply aquatint tonal printmaking to any input: rosin-grain texture, acid-built darkness, stop-out protected highlights, particulate shadow, and atmospheric intaglio tone. Keep chemical mood fields without requiring landscapes, weather, old plates, or narrative illustration.',
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Night, dramatic',
       key_features: 'Rich blacks',
       creative_brief:
-        'A copper plate textured entirely with microscopic teeth, then burnished smooth where light must emerge from absolute darkness. Velvet blacks cradle highlights so delicate they seem to float above the surface. The image is born from subtraction — light scraped into being from a field of ink.',
+        'Apply mezzotint darkness to any input: rocked-plate grain, velvet black fields, burnished highlights, smoky tonal transitions, and light scraped out of ink. Keep nocturnal print depth without requiring portraits, interiors, candles, old-master subjects, or antique framing.',
     },
   },
   {
@@ -160,7 +160,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Official, rough, repetitive',
       key_features: 'Incomplete impression',
       creative_brief:
-        'Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The style carries the pressure, wobble, and broken ink of mechanical repetition made human by imperfection. Each pressing records touch, alignment error, and ink-pad fatigue without needing readable labels.',
+        'Apply rubber-stamp printing to any input: inkpad pressure, incomplete impressions, broken edges, alignment wobble, repeated mechanical marks, and ink fatigue. Keep tactile repetition without requiring labels, office forms, postage, logos, or readable text.',
     },
   },
   {
@@ -182,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Serious, valuable',
       key_features: 'Guilloche patterns',
       creative_brief:
-        'Parallel lines of impossible fineness weave into guilloche patterns that defy casual reproduction, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust implied through precision and repetition. Value comes from line discipline, not from currency, portraits, seals, or readable denominations.',
+        'Apply security-engraving precision to any input: ultra-fine parallel lines, guilloche geometry, micro-pattern density, exact hatch curvature, and anti-counterfeit line discipline. Keep trust-through-detail without requiring currency, portraits, seals, certificates, or denominations.',
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Soft, rich',
       key_features: 'Burr texture',
       creative_brief:
-        'A needle scratches directly into metal, throwing up a burr that holds ink like velvet, giving every line a halo of soft darkness. The edition is small — the burr crushes under pressure after a handful of pulls, the image degrading into a ghost of its first impression. Rarity is structural, not artificial.',
+        'Apply drypoint intaglio to any input: needle-scratched lines, burr-held ink, velvety dark halos, plate-pressure softness, and slightly fragile edition wear. Keep direct-metal intimacy without requiring portraits, landscapes, antique plates, or print-shop context.',
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, indie, handmade, slightly unstable',
       key_features: 'Grainy dither',
       creative_brief:
-        'Soy-based inks layer through a drum that turns digital input into imperfect physical color, each pass slightly offset, each layer adding grain. The dither pattern becomes texture, the misregistration becomes charm, the paper absorbs neon with an appetite for the handmade. Every image should feel duplicated, cheap, vivid, and intentionally unstable.',
+        'Apply Risograph duplication to any input: soy-ink grain, neon spot colors, drum-print texture, dithered tonal fields, paper absorption, and charming misregistration. Keep cheap vivid instability without requiring zines, posters, typography, flyers, or student-print context.',
     },
   },
   {
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Vintage, gritty',
       key_features: 'Visible dots',
       creative_brief:
-        'The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs ink greedily, cheap paper already yellowing toward oblivion. The style should feel mass-reproduced, urgent, and degraded without requiring headlines, captions, or newspaper layout.',
+        'Apply newspaper halftone to any input: visible dot matrix, grey through dot spacing, cheap yellowing paper, ink absorption, coarse reproduction, and degraded mass-print urgency. Keep press texture without requiring headlines, captions, columns, photos, or newspaper layout.',
     },
   },
   {
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Blue, scientific',
       key_features: 'Blue monochrome',
       creative_brief:
-        'Iron salts sensitize paper to ultraviolet light, turning Prussian blue where exposure reaches and leaving white where matter interrupts it. The image is a photogram logic, a direct impression of blocked light, science indistinguishable from art. The style should feel exposed, rinsed, monochrome, and materially tied to light.',
+        'Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure softness, paper fiber, contact-print whites, rinsed edges, and scientific photogram calm. Keep sun-printed material logic without requiring plants, specimen sheets, blueprints, labels, or archival catalog layouts.',
     },
   },
   {
@@ -282,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Artistic, soft',
       key_features: 'Grainy texture',
       creative_brief:
-        'Grease and water repel on limestone, an ancient chemical truce that separates ink from void at the molecular level. The crayon texture of the drawing transfers faithfully, grain and all, to paper that remembers the stone. Every print carries the geology of the process, sediment made image.',
+        'Apply lithographic print behavior to any input: crayon-like stone grain, grease-water separation, soft tonal transfer, paper pressure, and subtle speckled drawing texture. Keep chemical print softness without requiring posters, portraits, theatre bills, stones, or edition markings.',
     },
   },
   {
@@ -302,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rough, organic',
       key_features: 'Heavy texture',
       creative_brief:
-        'Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as raised terrain. Valleys hold ink while peaks print light, relief becoming the image generator. The print carries the memory of every material sacrificed to its creation without requiring literal landscape or collage objects.',
+        'Apply collagraph print materiality to any input: raised sand/glue/fiber texture, relief valleys holding ink, irregular pressure, cardboard-like surface memory, and tactile printed terrain. Keep material sacrifice visible without requiring literal collage objects, landscapes, or printing plates.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

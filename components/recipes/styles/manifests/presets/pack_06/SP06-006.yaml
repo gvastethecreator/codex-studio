@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Blurred details
   atmosphere: Mysterious, tactile
   key_features: Waxy surface
-  creative_brief: Molten beeswax traps color in amber, each layer fused by flame into a surface you want to touch. Translucent depths reveal what lies beneath, like memory visible through time. The image holds heat even when cold, a fossil of pigment suspended forever in waxen embrace.
+  creative_brief: >-
+    Apply encaustic wax painting to any input: fused translucent layers,
+    beeswax haze, scraped inclusions, heat-smoothed pigment, amber depth, and
+    tactile cloudy surface. Keep warm material memory without requiring abstract
+    panels, candles, relics, or preserved-object subject matter.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

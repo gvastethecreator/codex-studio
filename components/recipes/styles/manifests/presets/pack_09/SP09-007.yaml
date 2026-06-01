@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Flat layers
   atmosphere: Cold, strong
   key_features: Layers
-  creative_brief: Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise.
+  creative_brief: >-
+    Capture the clean violence of split slate, where nature fractures into planar perfection along dark grey-blue planes
+    with edges that carry the memory of the break. The face reveals the patient accumulation of sediment, layer upon
+    layer of dark mineral patience. This is geology as geometry, raw and precise. Use Slate as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - smooth
   - polished

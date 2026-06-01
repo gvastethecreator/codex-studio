@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Cracks
   atmosphere: Cold, urban
   key_features: Air bubbles
-  creative_brief: Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban.
+  creative_brief: >-
+    Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil
+    record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the
+    gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban.
+    Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - polished
   - painted

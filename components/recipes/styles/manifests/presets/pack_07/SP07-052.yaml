@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-052
 packId: pack_07
-name: Dwarven Fortress
-category: 1. Residential Interiors
+name: Dwarven Megalithic Forge
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Monumentalidad enana de tierra profunda, calor de forja y doctrina ancestral de cantería pesada.
   form_and_line: Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.
   key_features: Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.
   creative_brief: >-
-    Construye una gramática enana transferible donde masa pétrea, luz de forja
-    y oficio rúnico definan identidad. Debe comunicar linaje y durabilidad sin
-    depender de un recinto licenciado concreto.
+    Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal
+    martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza generica. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - wood
   - light
@@ -36,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Soft cyan, eucalyptus green, and porcelain.
   lighting_setup: Clean clinical glow softened by living tissue luminescence.
   material_texture: Biofabric threads, gel pads, and matte ceramic.
-  render_quality: Gentle biotech interior with humane readability.
+  render_quality: Gentle biotech render with humane readability and tactile nerve-repair cues.
   spatial_distortion: Loom-centered radial plan with restorative pocket depth.
   atmosphere: Care, repair, and embodied trust.
   key_features: Nerve loom motifs, bioscan petals, restorative membranes, and filament pathway glow.
   creative_brief: >-
-    Preserve nerve loom-clinic grammar as a reusable style system:
-    loom-based restorative medicine, soft radial treatment choreography, and
-    humane biofabric trust should remain coherent across subjects.
+    Weave the input through nerve-repair care: soft cyan filaments, eucalyptus
+    membrane ribs, porcelain alcove pockets, gel-pad highlights, and loom-frame
+    pathways make any subject feel restored, embodied, and trusted.
 avoidRules: [photoreal, horror, harsh-metal, watermark, text, logo, slime-gross]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-106.webp }
 attributes:

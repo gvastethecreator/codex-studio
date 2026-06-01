@@ -20,7 +20,14 @@ visualDna:
   render_quality: Abstract, motion graphics, organic fluidity
   atmosphere: Fluid, abstract, hypnotic flow
   key_features: Merging shapes, surface tension
-  creative_brief: 'Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion. The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical inevitability.'
+  creative_brief: >-
+    Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap
+    into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy
+    gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion.
+    The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical
+    inevitability. Apply Metaballs as a portable 3D/render style system over any input: preserve its renderer logic,
+    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
+    vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - sharp
   - geometric

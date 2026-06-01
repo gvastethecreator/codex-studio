@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Seinfeld everyday sitcom casual, 90s New York normcore, puffy jacket charm, nothing-to-prove comfort
   form_and_line: Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape
   color_palette: Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo
-  lighting_setup: Flat, fluorescent-office overhead, overcast sidewalk, diner-booth warmth
+  lighting_setup: Flat everyday overhead, overcast softness, low-contrast practical warmth
   material_texture: Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
   render_quality: Boring, ironic, comfortable, deliberately average, anti-fashion confidence
   spatial_distortion: None
-  atmosphere: Casual, unpretentious, genuine, coffee-shop routine, unbothered authenticity
+  atmosphere: Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease
   key_features: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker
-  creative_brief: The radical proposition that enough is enough, dad jeans worn without irony because irony requires effort. Fleece and stonewash exist in a state of grace, nothing-to-prove comfort that took forty years to achieve, standing in a coffee shop looking exactly like someone who has never tried to look like anything.
+  creative_brief: >-
+    Flatten the input into normcore anti-fashion: dad denim, fleece, washed
+    canvas, plain jersey, windbreaker logic and deliberately average
+    proportions. It should feel comfortable and unoptimized without requiring a
+    coffee shop, sidewalk, sitcom reference or human standing pose.
 avoidRules:
   - flashy
   - expensive
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

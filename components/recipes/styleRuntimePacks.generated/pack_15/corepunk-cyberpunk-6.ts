@@ -24,7 +24,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Mesh-router motifs, encrypted micro-market geometry, cooperative sensor cues, and coded mural-wall patterning.',
       creative_brief:
-        'Preserve meshlight alley-protocol grammar as a reusable style language: encrypted street-scale infrastructure, cooperative data autonomy, and wet-night wayfinding clarity should remain stable across subjects without requiring alleys, kiosks, drones, stalls, or readable signage.',
+        'Encrypt the input as humane night infrastructure: braided fiber conduits, wet carbon edges, magenta-blue mesh pulses, sensor glyph rhythm, and cooperative wayfinding light. Alleys, kiosks, drones, stalls, or signage can support the style, but the image should not depend on a street scene. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Blooming firewall lattices, fiber-braid arcs, encrypted node constellations, rain-neon reflections, and civic interface warmth.',
       creative_brief:
-        'Preserve cooperative firewall bloom as a reusable style system: encryption, public safety, and neon data-flower geometry should transform any subject without requiring hackers, drones, cities, or literal screens.',
+        'Shield the input with cooperative firewall bloom: encrypted node clusters, neon data-petal lattices, braided fiber arcs, rain-slick charcoal surfaces, and warm civic trust accents transform any subject without requiring hackers, drones, cities, or literal screens.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rain-streak circuitry, transparent kernel nodes, glass-plane layering, diode constellations, and warm repair-light accents.',
       creative_brief:
-        'Preserve rain kernel alleyglass as a reusable style system: wet transparent circuitry, micro-node glow, and layered nocturnal reflections should apply to any subject without requiring a city alley, gadgets, or readable UI text.',
+        'Compress the input into rain kernel alleyglass: wet transparent circuitry, black-glass layers, electric-blue micro nodes, magenta diode constellations, and warm repair-light accents apply without requiring a city alley, gadgets, or readable UI text.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

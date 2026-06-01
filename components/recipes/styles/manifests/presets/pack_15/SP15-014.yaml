@@ -4,10 +4,18 @@ packId: pack_15
 name: Brass Aether Dockyard
 category: 4. Corepunk — Steampunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, steampunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - steampunk
 visualDna:
-  aesthetic: Neo-victorian steampunk where civic logistics run on elegant pressure systems, brass optimism, and artisanal machinery.
+  aesthetic: >-
+    Neo-victorian steampunk where civic logistics run on elegant pressure systems, brass optimism, and artisanal
+    machinery.
   form_and_line: Riveted arch rhythm, aether-mast verticals, and articulated crane-like silhouettes as compositional grammar.
   color_palette: Aged brass, coal umber, and oxidized teal.
   lighting_setup: Golden industrial dusk with furnace glow and vapor beams.
@@ -17,21 +25,35 @@ visualDna:
   atmosphere: Industrious wonder, mechanical pride, and measured optimism.
   key_features: Aether-crane motifs, pressure gauges, civic airship cues, and cooperative labor rhythm.
   creative_brief: >-
-    Preserve brass aether-dockyard grammar as a reusable style language:
-    pressure-era civic logistics, riveted artisanal machinery, and cooperative
-    labor rhythm should remain stable across subjects without requiring a port,
-    airships, crews, cranes, or a literal dockyard.
-avoidRules: [photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-014.webp }
+    Reforge the input as optimistic pressure-era logistics: riveted brass arcs, aether-mast verticals, vapor beams,
+    gauges, and cooperative machine rhythm. Ports, airships, crews, cranes, or dockyards can act as anchors, while the
+    core style remains artisanal machinery and civic pressure flow. Apply this corepunk genre grammar over any input:
+    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
+    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
+avoidRules:
+  - photoreal
+  - grimdark-war
+  - neon-cyber
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-014.webp
 attributes:
   negativePrompt: photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-steampunk,
-    categoryName: 4. Corepunk — Steampunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, steampunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-steampunk
+  categoryName: 4. Corepunk — Steampunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - steampunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

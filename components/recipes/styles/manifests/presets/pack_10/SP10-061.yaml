@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Corrosion
   atmosphere: Abandoned, gritty
   key_features: Random patches
-  creative_brief: Iron returning to earth one flake at a time, orange and brown blooms of entropy spreading across what was once smooth and strong. Decay becomes a palette, and neglect paints with patient, corrosive beauty.
+  creative_brief: >-
+    Apply rust corrosion to the input: orange-brown blooms, flaking iron,
+    pitted edges, oxidized stains, and slow entropy gradients should age any
+    subject without requiring metal junkyards or abandoned settings.
 avoidRules:
   - clean
   - new
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

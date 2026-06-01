@@ -12,14 +12,19 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Rhythm-battle gótico de arena escénica, centrado en timing estricto, patrones musicales y lectura de carriles.
-  subject_treatment: Performers fantasmales como anclas de compás, coreografía por silueta y gestualidad beat-synced.
+  aesthetic: Gramática rhythm-battle gótica con timing estricto, carriles musicales, spotlight pulsado y coreografía espectral.
+  subject_treatment: Convierte el input en performer fantasmal, nota, carril, gesto beat-synced o amenaza sincronizada.
   color_and_tone: Púrpura real, dorado gastado, cian espectral y sombras burdeos para contraste temporal dramático.
   lighting_and_shadow: Conos de spotlight programados, bloom pulsado y sombras sincronizadas al tempo.
   texture_and_material: Madera lacada desgastada, terciopelo comprimido, latón oxidado y niebla particulada.
-  camera_and_composition: Framing de proscenio con capas de escenario, hotspots de tempo y lanes claramente visibles.
+  camera_and_composition: Framing de ritmo con hotspots de tempo y lanes visibles; teatro/proscenio son anclas opcionales.
   atmosphere_and_mood: Teatral, urgente y ceremonialmente competitiva.
   rendering_and_quality: Key-art competitivo de rhythm-game con cues visuales precisas de timing, combo y fase.
+  creative_brief: >-
+    Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su
+    sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

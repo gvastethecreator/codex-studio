@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Celebration, mystery, timed scarcity, and communal anticipation.
   key_features: Folding canopy petals, phase-clock motifs, cyan-lantern webs, plum shadow centers, and radial temporary geometry.
   creative_brief: >-
-    Apply eclipse market-canopy as an abstract style treatment: make any
-    subject feel temporary, phase-timed, petal-folded, lantern-lit, and alive
-    under rare shadow.
+    Bloom the input under eclipse timing: folding membrane petals, plum shadow
+    centers, cyan-lantern webs, phase-clock rings, and radial exchange lanes make
+    any subject feel temporary, ceremonial, and alive under rare shadow.
 avoidRules: [photoreal, cyberpunk-nightclub, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-080.webp }
 attributes:

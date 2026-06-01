@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-047
 packId: pack_07
-name: Maze/Labyrinth
-category: 1. Residential Interiors
+name: Topiary Wayfinding Trap
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,24 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - landscape-and-garden-systems
 visualDna:
   aesthetic: Tipología de laberinto vegetal formal, basada en desorientación lúdica y cerramiento topiario.
-  form_and_line: Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad de muros vivos altos.
+  form_and_line: >-
+    Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad
+    de muros vivos altos.
   color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
   lighting_setup: Pasillos en sombra con franjas solares, remates de luz al fondo y patrón moteado sobre grava.
   material_texture: Seto densamente podado, hoja compacta, grava de tránsito y acentos de piedra/musgo en nodos.
   render_quality: Geometría topiaria precisa con tensión de wayfinding y legibilidad de recorrido.
   spatial_distortion: None
   atmosphere: Desorientación curiosa, ansiedad lúdica y progresión cerrada hacia destino incierto.
-  key_features: Cerramiento vivo recortado, ritmo de nodos, textura de ruta en grava y marcador central de terminación.
+  key_features: >-
+    Cerramiento vivo recortado, ritmo de nodos, textura de ruta en grava y marcador central de
+    terminación.
   creative_brief: >-
-    Define una gramática de laberinto transferible donde pérdida controlada y
-    lectura geométrica convivan. La tensión debe surgir del recorrido repetitivo
-    y la contención vegetal, no de narrativa fantástica cerrada.
+    Cualquier imagen se vuelve decision espacial repetida: seto alto, ruta parcial, nodos falsos y
+    centro prometido. La tension nace de wayfinding controlado, no de fantasia ni misterio literal.
 avoidRules:
   - open field
 assets:
@@ -34,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

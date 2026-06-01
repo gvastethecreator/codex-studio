@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Earnest iconic silhouette language, warm cel-era optimism, emblematic posing rhythm, hand-painted scenic restraint',
       creative_brief:
-        'Early TV-anime optimism should read immediately through bold contour clarity, emotionally direct posing, and warm analog cel color logic. Keep compositions clean, uplifting, and iconic, with craftsmanship rooted in hand-painted backgrounds and pre-digital broadcast constraints.',
+        'Early TV-anime optimism should read immediately through bold contour clarity, emotionally direct posing, and warm analog cel color logic. Keep compositions clean, uplifting, and iconic, with craftsmanship rooted in hand-painted backgrounds and pre-digital broadcast constraints. Apply this as reusable retro-pioneer grammar to any prompt or input image: rounded heroic simplification, warm cel-era bravery, analog registration softness, and emblematic uplift without requiring a boy hero, robot, sidekick, broadcast frame, or fixed adventure scene.',
     },
   },
   {
@@ -471,7 +471,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Color-identidad fuerte, claridad procedimental, hardware funcional sugerido, oficio competente y aventura directa.',
       creative_brief:
-        'Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada: oficio, claridad técnica y heroísmo práctico sin imponer trajes, hangares, tripulaciones ni rescates.',
+        'Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada: oficio, claridad técnica y heroísmo práctico. Trajes, hangares, tripulación o rescate pueden operar como indicios de oficio espacial cuando el input lo admita, sin convertir el resultado en una escena obligatoria.',
     },
   },
   {
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Overlays de arcade, neón sintético, velocidad lateral, vigilancia abstracta y revelación de verdad oculta.',
       creative_brief:
-        'Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada: arcade, velocidad y paranoia sin imponer motos, carreteras, skylines ni riders.',
+        'Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada: arcade, velocidad y paranoia. El input puede recibir moto, rider silhouette, carretera abstracta o skyline glitch si refuerza la tensión retro-tech, sin fijar persecución ni ciudad literal.',
     },
   },
   {
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Monumental massing grammar, riveted panel articulation, launch-vector perspective drama, and metallic cel highlight choreography.',
       creative_brief:
-        'Preserve vintage mechanical grandeur through heavy silhouette logic, high-contrast cel shading, riveted articulation, and emotionally maximal hero framing. Transfer this logic to any subject or input image without requiring robots, vehicles, launch bays, pilots, or machinery as literal content.',
+        'Preserve vintage mechanical grandeur through heavy silhouette logic, high-contrast cel shading, riveted articulation, and emotionally maximal hero framing. Transfer this logic to any subject or input image by mechanizing forms when useful, adding riveted mass, robot-scale posture, or vehicle-like panel rhythm without requiring launch bays, pilots, or a fixed machine scene.',
     },
   },
   {
@@ -664,7 +664,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Masa funcional, mapa táctico implícito, desgaste prolongado y peso logístico visible.',
       creative_brief:
-        'Define una gramática reusable de grounded-tactical-machinery para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico sin imponer mechas, vehículos, frentes de guerra, escuadras, mapas ni campo de batalla.',
+        'Define una gramática reusable de grounded-tactical-machinery para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico. Si el input admite transformación mecánica, puede volverse mecha, vehículo táctico o hardware operativo; si no, debe recibir placas, marcas de mantenimiento y peso logístico sin fijar frente de guerra, escuadra, mapa ni campo de batalla.',
     },
   },
   {
@@ -692,7 +692,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Silueta pop distintiva, transformación técnica, iluminación de show y gestualidad de clímax.',
       creative_brief:
-        'Diseña una gramática reusable de pop-transformable-aerial-spectacle para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo sin imponer idols, mechas, escenarios, conciertos, cockpits, aeronaves ni combate.',
+        'Diseña una gramática reusable de pop-transformable-aerial-spectacle para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo. Puede convertir el input en ícono transformable, mecha pop o nave-espectáculo si refuerza el estilo; evita fijar idol, escenario, concierto, cockpit, aeronave literal o combate.',
     },
   },
   {
@@ -748,7 +748,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.',
       creative_brief:
-        'Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada: niebla, quimera y tecnología ritual sin imponer insectos, espadas, guerras ni mechas.',
+        'Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada: niebla, quimera y tecnología ritual. Insectos, espadas, mechas orgánicos o reliquias vivas pueden transformar el input si sostienen el estilo, sin fijar guerra ni escena de combate.',
     },
   },
   {
@@ -832,7 +832,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.',
       creative_brief:
-        'Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada: estrategia, espectáculo y romance gráfico sin imponer carrier decks, idols, ciudades nave, mechas ni operaciones militares.',
+        'Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada: estrategia, espectáculo y romance gráfico. Idols, mechas, carrier decks, ciudad-nave u operaciones militares pueden funcionar como indicios de escala y dualidad pop-táctica cuando aporten estilo, sin fijar una escena militar.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

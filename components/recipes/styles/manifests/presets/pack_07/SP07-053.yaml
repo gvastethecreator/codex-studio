@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-053
 packId: pack_07
-name: Floating Castle
-category: 1. Residential Interiors
+name: Suspended Fortress Sublime
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,10 +10,12 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Romanticismo de fortaleza aérea con megastructura suspendida y soberanía en altura.
-  form_and_line: Clústeres de agujas verticales, estratificación de masa flotante, cortes de vacío y vectores descendentes.
+  form_and_line: >-
+    Clústeres de agujas verticales, estratificación de masa flotante, cortes de vacío y vectores
+    descendentes.
   color_palette: White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above
   lighting_setup: Sol alto, rebote en nubes, rayos volumétricos y rim dorado de borde sobre siluetas suspendidas.
   material_texture: Piedra aérea, niebla de base, aristas cristalinas y roca flotante de estrato erosionado.
@@ -22,9 +24,9 @@ visualDna:
   atmosphere: Sublime de gran altitud, calma improbable y grandeza impulsada por viento.
   key_features: Tramos sobre vacío, nubes inferiores, undercuts flotantes, vectores aéreos y silueta dominante.
   creative_brief: >-
-    Define una gramática de castillo flotante transferible en la que masa
-    suspendida, atmósfera de gran altitud y verticalidad icónica sostengan la
-    identidad. Debe evitar dependencia de una fortaleza nombrada.
+    Cualquier sujeto gana soberania aerea mediante masa suspendida, undercuts, niebla inferior y rim
+    solar de altura. Lo importante es gravedad negada con coherencia visual, no un castillo
+    especifico.
 avoidRules:
   - grounded
 assets:
@@ -34,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

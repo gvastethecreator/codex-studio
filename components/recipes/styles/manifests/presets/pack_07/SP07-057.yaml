@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-057
 packId: pack_07
-name: Steampunk City
-category: 1. Residential Interiors
+name: Neo-Victorian Steamwork
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Futurismo industrial neo-victoriano de vapor, latón y maquinaria especulativa.
   form_and_line: Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos de tránsito aéreo.
@@ -20,11 +20,13 @@ visualDna:
   render_quality: Steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.
   spatial_distortion: None
   atmosphere: Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.
-  key_features: Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de tránsito aéreo.
+  key_features: >-
+    Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de
+    tránsito aéreo.
   creative_brief: >-
-    Define una gramática steampunk transferible por infraestructura de vapor,
-    articulación en latón y forma neo-victoriana. Debe ser densa e inventiva
-    sin depender de ciudad o referencia literaria única.
+    Aplica un lenguaje neo-victoriano de vapor a cualquier input: articulaciones de latón, remaches
+    funcionales, tuberías legibles, hollín material y glow gaslight. La utilidad mecánica debe
+    sentirse plausible sin necesitar una ciudad ni vehículo específico.
 avoidRules:
   - clean energy
 assets:
@@ -34,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

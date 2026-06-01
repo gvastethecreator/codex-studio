@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Fades
   atmosphere: Casual, tough
   key_features: Twill lines
-  creative_brief: Indigo-dyed cotton woven into diagonal twill, the warp showing blue while the weft stays white beneath. A texture born from work and worn into softness, the fabric of rebellion and routine alike.
+  creative_brief: >-
+    Apply denim twill to the input: indigo warp, white weft flashes, diagonal
+    weave, worn fades, seam-like stress marks, and casual durability should
+    materialize surfaces without requiring jeans or clothing.
 avoidRules:
   - silk
   - smooth
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

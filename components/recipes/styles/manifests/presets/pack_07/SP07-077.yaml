@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-077
 packId: pack_07
-name: Ringworld
-category: 1. Residential Interiors
+name: Orbital Ribbon Habitat
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
   aesthetic: Megaestructura habitable en banda orbital con ecología lineal y paisaje planificado a escala de macro-civilización.
-  form_and_line: Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales guiadas por curvatura.
-  color_palette: Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void black backdrop, and high-altitude white haze
-  lighting_setup: Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en edge-walls.
-  material_texture: Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en contención.
+  form_and_line: >-
+    Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales
+    guiadas por curvatura.
+  color_palette: >-
+    Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void
+    black backdrop, and high-altitude white haze
+  lighting_setup: >-
+    Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en
+    edge-walls.
+  material_texture: >-
+    Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en
+    contención.
   render_quality: Paisaje especulativo ultra-vasto con lectura rigurosa de curvatura y coherencia de ingeniería macro.
   spatial_distortion: Orbital-band curvature with upward horizon wrap and macro-scale perspective compression
   atmosphere: Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.
   key_features: Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.
   creative_brief: >-
-    Formula una gramática reusable de ringworld donde comportamiento de
-    horizonte orbital curvo, estratificación biosférica en cinta y edge-wall
-    megastructural definan identidad transversal.
+    Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de
+    borde y macro-perspectiva. La identidad viene de continuidad anular y planificación biosférica. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - globe
 assets:
@@ -34,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

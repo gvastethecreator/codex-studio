@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: Abstract shapes, geometric reduction, angular stylization
   atmosphere: Jazz, modern, mid-century optimism, cool intellectual
   key_features: Flatness, limited animation, graphic silhouette
-  creative_brief: Geometry carries the confidence of a jazz quartet improvising on silence, every negative space as deliberate as the shape it defines. Cool intellect meets postwar optimism in flat planes of teal and mustard that refuse to apologize for their simplicity. The line is not decoration but argument — clean, graphic, unquestionably modern.
+  creative_brief: >-
+    Apply UPA mid-century reduction to any subject: flat geometric planes,
+    deliberate negative space, limited-animation silhouette logic, teal-mustard
+    poster color, matte paper texture, and clean modernist linework. Keep jazz-age
+    graphic wit without requiring characters, city offices, domestic settings, or
+    literal retro props.
 avoidRules:
   - realistic
   - 3d

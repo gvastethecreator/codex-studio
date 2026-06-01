@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Stains
   atmosphere: Rotting, damp
   key_features: Spreading spots
-  creative_brief: Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory in the quiet language of mold.
+  creative_brief: >-
+    Capture the organic creep of decay where fuzzy colonies of black, green, and grey spread across damp surfaces like a
+    map of neglect drawn by spores. The texture should feel dusty and soft, a living carpet of dissolution eating its
+    way through the man-made one millimeter at a time. Render the unsettling beauty of rot, nature reclaiming territory
+    in the quiet language of mold. Use Mold & Mildew as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - clean
   - sterile

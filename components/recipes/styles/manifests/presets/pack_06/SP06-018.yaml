@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Stylized shading
   atmosphere: Classic, storybook
   key_features: Line shading
-  creative_brief: Every line is a decision with no eraser, ink committing to paper with the finality of law. Hatching builds shadow through accumulation, density becoming darkness through disciplined repetition. The white of the page is not absence but presence, the loudest element in the composition.
+  creative_brief: >-
+    Apply pen-and-ink drawing to any input: committed black linework, crosshatch
+    value, disciplined contour, untouched paper white, and crisp graphic
+    contrast. Keep irreversible ink clarity without requiring comic panels,
+    architectural plates, portraits, or handwritten labels.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

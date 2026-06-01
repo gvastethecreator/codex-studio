@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Divine, orderly
   key_features: Radial symmetry
-  creative_brief: Infinity caught in a lattice of stars, each intersection a prayer for the ineffable. Geometry becomes devotion, the repeating pattern a doorway to the boundless.
+  creative_brief: >-
+    Apply Islamic geometric order to the input: star lattices, interlocking
+    tessellations, radial symmetry, and disciplined repetition should turn any
+    subject into devotional pattern logic without requiring architecture.
 avoidRules:
   - figurative
   - random
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

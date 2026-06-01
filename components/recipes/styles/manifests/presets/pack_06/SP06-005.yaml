@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Flattened icon-plane depth, deliberate frontality, and fine linear modeling
   atmosphere: Reverent, ancient, luminous through craft rather than narrative content
   key_features: Fine linear brushwork
-  creative_brief: Egg yolk binds pigment into luminous permanence, a medium that predates oil and outlasts empires. Fine cross-hatching builds form from patience, each translucent layer glowing from within like stained glass. The image feels sacred not through subject but through the discipline of its making.
+  creative_brief: >-
+    Apply egg-tempera discipline to any input: luminous thin pigment, fine
+    cross-hatched modeling, crisp small strokes, panel-like permanence, and
+    restrained inner glow. Keep sacred-craft precision as technique, not as
+    required religious icon, portrait, gold ground, or medieval subject.
 avoidRules:
   - photo
   - realistic

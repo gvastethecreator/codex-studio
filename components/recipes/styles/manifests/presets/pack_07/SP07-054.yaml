@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-054
 packId: pack_07
-name: Cyberpunk Slums
-category: 1. Residential Interiors
+name: Techno-Brutalist Compression
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,35 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural persistente.
-  form_and_line: Apilamiento modular repetitivo, diagonales de cableado, escaleras de servicio zigzagueantes y canales de luz fragmentados.
-  color_palette: Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints
-  lighting_setup: Derrame artificial continuo, prácticos inestables, oclusión dura y microreflejos húmedos de contraste estrecho.
-  material_texture: Acero corrugado fatigado, polímero con mugre incrustada, pintura pelada en capas y hormigón manchado.
+  aesthetic: >-
+    Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural
+    persistente.
+  form_and_line: >-
+    Apilamiento modular repetitivo, diagonales de cableado, escaleras de servicio zigzagueantes y
+    canales de luz fragmentados.
+  color_palette: >-
+    Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys,
+    low-luminance neon tints
+  lighting_setup: >-
+    Derrame artificial continuo, prácticos inestables, oclusión dura y microreflejos húmedos de
+    contraste estrecho.
+  material_texture: >-
+    Acero corrugado fatigado, polímero con mugre incrustada, pintura pelada en capas y hormigón
+    manchado.
   render_quality: Densidad distópica de detalle alto, clutter legible y ruido visual controlado.
-  spatial_distortion: Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals
+  spatial_distortion: >-
+    Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space
+    intervals
   atmosphere: Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.
-  key_features: Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y circulación constreñida.
+  key_features: >-
+    Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y
+    circulación constreñida.
   creative_brief: >-
-    Construye una gramática slum-cyber transferible en la que densidad modular,
-    desgaste material y clutter eléctrico definan identidad. Debe sentirse
-    estructuralmente comprimida, no meramente sucia o caótica.
+    Presiona cualquier input con apilamiento modular, servicios expuestos, cables, neon bajo y
+    material fatigado. Debe sentirse comprimido por infraestructura de supervivencia, no sucio por
+    decoracion.
 avoidRules:
   - clean
   - wide empty space
@@ -35,11 +49,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

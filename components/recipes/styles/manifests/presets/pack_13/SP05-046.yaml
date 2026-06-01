@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Tender, wistful, elegant, reflective, intimate
   key_features: Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing
   creative_brief: >-
-    Preserve identity via epistolary intimacy: paper-ink tactility, amber
-    portrait lighting, and restrained romantic stillness should define this
-    style independent of specific story letters.
+    Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained romantic
+    stillness should define this style independent of specific story letters. Apply this anime/IP-title grammar over any
+    input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a
+    required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-046.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

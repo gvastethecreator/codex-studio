@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Stylized texture
   atmosphere: Dramatic, inverted
   key_features: White on black
-  creative_brief: Light is carved out of darkness, the stylus scratching white into an ink-black surface, image emerging through removal rather than addition. Every line is an act of excavation, finding form in what the blackness had hidden. The result is photographic negative made tactile, darkness serving as canvas rather than mark.
+  creative_brief: >-
+    Apply scratchboard technique to any input: ink-black ground, white incised
+    marks, carved highlights, dense hatch excavation, and negative-like tactile
+    contrast. Keep subtractive drawing drama without requiring animals, vintage
+    engraving subjects, logos, or black-card closeups.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

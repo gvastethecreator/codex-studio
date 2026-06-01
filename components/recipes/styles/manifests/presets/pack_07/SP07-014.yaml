@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-014
 packId: pack_07
 name: Cyberpunk Apartment
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,33 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Ciber-nocturnidad saturada, con densidad tecnológica improvisada y electricidad funcional.
-  form_and_line: Diagonales de cableado, grillas técnicas apiladas, fuentes lumínicas múltiples y circulación comprimida por hardware.
+  form_and_line: >-
+    Diagonales de cableado, grillas técnicas apiladas, fuentes lumínicas múltiples y circulación
+    comprimida por hardware.
   color_palette: Carbón profundo, neones tóxicos rosa/azul/verde, bolsillos ámbar CRT y violetas fríos de sombra.
-  lighting_setup: Mezcla multi-fuente de baja iluminación con displays, tiras LED, indicadores y derrames neón de caída abrupta.
-  material_texture: Chapa rayada, plásticos quebradizos, residuos adhesivos, tapicerías sintéticas gastadas y disipadores empolvados.
-  render_quality: Alta densidad de detalle con caos controlado, legibilidad técnica y suciedad creíble de uso continuo.
-  spatial_distortion: Primer plano obstruido por estratos de tecnología, profundidad fragmentada por planos superpuestos.
+  lighting_setup: >-
+    Mezcla multi-fuente de baja iluminación con displays, tiras LED, indicadores y derrames neón de
+    caída abrupta.
+  material_texture: >-
+    Chapa rayada, plásticos quebradizos, residuos adhesivos, tapicerías sintéticas gastadas y
+    disipadores empolvados.
+  render_quality: >-
+    Alta densidad de detalle con caos controlado, legibilidad técnica y suciedad creíble de uso
+    continuo.
+  spatial_distortion: >-
+    Primer plano obstruido por estratos de tecnología, profundidad fragmentada por planos
+    superpuestos.
   atmosphere: Insomne, hiperestimulada, obsesiva y frágilmente funcional.
-  key_features: Entropía de cableado, luminancia heterogénea, módulos recuperados y textura tecnológica patinada.
+  key_features: >-
+    Entropía de cableado, luminancia heterogénea, módulos recuperados y textura tecnológica
+    patinada.
   creative_brief: >-
-    Formula una gramática cyber transferible donde infraestructura visible,
-    luminancia de fuentes mixtas y desgaste improvisado sean el núcleo. Debe
-    sentirse habitada por tecnología, no decorada con tecnología.
+    Formula una gramática cyber transferible donde infraestructura visible, luminancia de fuentes
+    mixtas y desgaste improvisado sean el núcleo. Debe sentirse habitada por tecnología, no decorada
+    con tecnología.
 avoidRules:
   - clean
   - organized
@@ -36,11 +48,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

@@ -7,22 +7,17 @@ describe('globalReducer', () => {
     const initial = {
       ...createInitialGlobalState(),
       logs: [{ id: 'log-1', timestamp: 1, message: 'ready' }],
-      bgConfig: { density: 0.2, speed: 0.01 },
-      isBackgroundEnabled: false,
     };
 
     const next = globalReducer(initial, {
       type: 'HYDRATE_STATE',
-      state: {
-        logs: undefined,
-        bgConfig: undefined,
-        workspaces: undefined,
-      },
-    });
+        state: {
+          logs: undefined,
+          workspaces: undefined,
+        },
+      });
 
     expect(next.logs).toEqual(initial.logs);
-    expect(next.bgConfig).toEqual(initial.bgConfig);
-    expect(next.isBackgroundEnabled).toBe(false);
     expect(next.workspaces).toEqual(initial.workspaces);
     expect(next.activeWorkspaceId).toBe(initial.activeWorkspaceId);
   });

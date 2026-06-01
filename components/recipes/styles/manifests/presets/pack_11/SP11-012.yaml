@@ -12,19 +12,31 @@ tags:
   - miscellaneous-and-fun
   - science-and-bio-curiosities
 visualDna:
-  aesthetic: Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced organic-technological harmony
-  form_and_line: Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth growth-driven contours
-  color_palette: Chlorophyll-rich greens with warm solar golds, clean sky blues, and soft neutral whites for breathable visual clarity
-  lighting_setup: Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful atmosphere
-  material_texture: Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown material cues
+  aesthetic: >-
+    Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced
+    organic-technological harmony
+  form_and_line: >-
+    Flowing botanical arcs merged with engineered modular structures, branch-like network geometry, and smooth
+    growth-driven contours
+  color_palette: >-
+    Chlorophyll-rich greens with warm solar golds, clean sky blues, and soft neutral whites for breathable visual
+    clarity
+  lighting_setup: >-
+    Clear daylight with leaf-filtered dapple, gentle solar glints, and selective bio-luminous accents for hopeful
+    atmosphere
+  material_texture: >-
+    Living-wall foliage, transparent energy glass, matte photovoltaic surfaces, bamboo-like composites, and bio-grown
+    material cues
   render_quality: Clean high-clarity eco-future rendering emphasizing regenerative readability and integrated nature-tech cohesion
   spatial_distortion: Vertical garden layering, canopy-network depth paths, and architecture-as-ecosystem spatial interweaving
   atmosphere: Hopeful, bright, restorative, sustainable, calm
   key_features: Biophilic structure integration, solar-surface mosaics, layered green roofs, regenerative systems readability
   creative_brief: >-
-    Preserve identity through regenerative design grammar: integrated greenery,
-    clean-energy material language, and optimistic daylight ecology should define
-    the preset beyond any specific city narrative.
+    Preserve identity through regenerative design grammar: integrated greenery, clean-energy material language, and
+    optimistic daylight ecology should define the preset beyond any specific city narrative. Apply Solarpunk as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - dark
   - industrial

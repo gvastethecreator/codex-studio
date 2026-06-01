@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, valuable
   key_features: Guilloche patterns
-  creative_brief: Parallel lines of impossible fineness weave into guilloche patterns that defy casual reproduction, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust implied through precision and repetition. Value comes from line discipline, not from currency, portraits, seals, or readable denominations.
+  creative_brief: >-
+    Apply security-engraving precision to any input: ultra-fine parallel lines,
+    guilloche geometry, micro-pattern density, exact hatch curvature, and
+    anti-counterfeit line discipline. Keep trust-through-detail without
+    requiring currency, portraits, seals, certificates, or denominations.
 avoidRules:
   - photo
   - realistic

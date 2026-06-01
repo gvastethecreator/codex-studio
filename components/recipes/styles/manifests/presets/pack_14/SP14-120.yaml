@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-120
 packId: pack_14
-name: Harbor of the Twin Gods
+name: Twin Gods Tidal Duality
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Harbor shrine shared by mirrored twin deities.
-  form_and_line: Paired towers, tidal gates, and mirrored causeways.
+  aesthetic: Mirrored twin-deity duality shaped by tides, protection, rivalry, and seasonal balance.
+  form_and_line: Paired tower cues, tidal gate shapes, and mirrored causeway geometry.
   color_palette: Sea teal, copper, and storm white.
   lighting_setup: Dawn surf glow and lantern reflections.
   material_texture: Salt stone, bronze fittings, and wet timber.
-  render_quality: Mythic coastal architecture with strong duality.
-  spatial_distortion: Symmetric harbor halves meeting at a central gate.
+  render_quality: Mythic rendering with strong duality and clean mirrored structure.
+  spatial_distortion: Symmetric halves meeting at a central tidal threshold.
   atmosphere: Brotherhood, rivalry, and seasonal protection.
-  key_features: Twin altars, tide gates, and mirrored statues.
-  creative_brief: A pantheon harbor where twin gods guard the tides from opposite shores.
+  key_features: Twin altar cues, tide gates, mirrored deity silhouettes.
+  creative_brief: Reframe any input through twin-gods tidal duality, balancing protection and rivalry. Use mirrored halves, sea-teal gates, copper fittings, tide-threshold symmetry, and paired-force tension without locking the image to harbors, gods, towers, causeways, or deity figures.
 avoidRules: [photoreal, bland, cyberpunk, watermark, text, logo, flat-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-120.webp }
 attributes:
   negativePrompt: photoreal, bland, cyberpunk, watermark, text, logo, flat-light
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

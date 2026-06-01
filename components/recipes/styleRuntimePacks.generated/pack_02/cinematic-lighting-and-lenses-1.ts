@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cool, intellectual, existential, restless',
       key_features: 'Natural light, handheld rupture, location immediacy',
       creative_brief:
-        'French New Wave style rejects polish through handheld framing, available light, 16mm grain, jump-cut rupture, and casual location immediacy. Apply rebellious cinematic looseness to any subject without requiring Paris, street scenes, cigarettes, apartments, or dialogue.',
+        'French New Wave style rejects polish through handheld framing, available light, 16mm grain, jump-cut rupture, and casual location immediacy. Apply rebellious cinematic looseness to any subject without requiring Paris, street settings, cigarettes, apartments, or dialogue.',
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mystery, stylish, hallucinatory dread',
       key_features: 'Color gels, polished threat, baroque shadow',
       creative_brief:
-        'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime scenes.',
+        'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime evidence. Apply Giallo Horror as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Joyful, theatrical, magical spectacle, storybook wonder',
       key_features: 'Dye-transfer saturation, theatrical color clarity',
       creative_brief:
-        'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging.',
+        'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor Musical as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -442,7 +442,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rebellious, cool, anti-establishment, mosh-pit energy',
       key_features: 'Fast-cut feel, scribble overlays, feedback warp',
       creative_brief:
-        'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh scenes.',
+        'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.',
     },
   },
   {
@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Memory, raw, unguarded nostalgia',
       key_features: 'Date stamp, REC indicator, zoom wobble',
       creative_brief:
-        'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family scenes.',
+        'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family setups.',
     },
   },
   {
@@ -685,7 +685,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection',
       creative_brief:
-        'Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material flaws.',
+        'Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material flaws. Apply Laika Moody Stop-Motion as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -727,7 +727,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Artistic, emotional, painterly devotion, melancholic beauty',
       key_features: 'Brush direction, visible stroke, canvas weave, palette texture',
       creative_brief:
-        'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical scene quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes.',
+        'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical composition quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes. Apply Oil Paint Animation as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -747,7 +747,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines',
       creative_brief:
-        'Color channels split at the edges like a misprinted page caught mid-press, releasing phantom reds and cyans into the frame. Halftone constellations swarm across three-dimensional form, reminding the eye that everything here was once ink on pulp. Motion stutters purposefully, as if each panel demands its own heartbeat before yielding to the next.',
+        'Apply comic-offset 3D grammar to any subject: misregistered red/cyan edges, Ben-Day halftone breakup, ink-on-paper texture over dimensional form, stepped animation rhythm, and panel-like motion accents. Preserve multiverse comic energy without requiring masked heroes, city swings, speech bubbles, or a fixed action sequence.',
     },
   },
   {
@@ -787,7 +787,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Jazz, modern, mid-century optimism, cool intellectual',
       key_features: 'Flatness, limited animation, graphic silhouette',
       creative_brief:
-        'Geometry carries the confidence of a jazz quartet improvising on silence, every negative space as deliberate as the shape it defines. Cool intellect meets postwar optimism in flat planes of teal and mustard that refuse to apologize for their simplicity. The line is not decoration but argument — clean, graphic, unquestionably modern.',
+        'Apply UPA mid-century reduction to any subject: flat geometric planes, deliberate negative space, limited-animation silhouette logic, teal-mustard poster color, matte paper texture, and clean modernist linework. Keep jazz-age graphic wit without requiring characters, city offices, domestic settings, or literal retro props.',
     },
   },
   {
@@ -808,7 +808,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic',
       creative_brief:
-        'Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours, noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props. The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible motion.',
+        'Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours, noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props. The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible motion. Apply Fleischer Rubber Hose Cartoon as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -848,7 +848,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints',
       creative_brief:
-        'Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates. The style should feel blunt, cheap, and readable because the paper construction itself is the visual language.',
+        'Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates. The style should feel blunt, cheap, and readable because the paper construction itself is the visual language. Apply South Park Style as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -986,7 +986,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Disorienting, intense, discontinuous rhythm, flash-cut energy',
       key_features: 'Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm',
       creative_brief:
-        'Render motion as strobe discontinuity: millisecond flash bursts, frozen fragments, hard white glare, black gaps, and ghosted multi-exposure trails. Avoid club scenes, dancers, panic, or specific action props. The image should feel cut into separate time slices by light.',
+        'Render motion as strobe discontinuity: millisecond flash bursts, frozen fragments, hard white glare, black gaps, and ghosted multi-exposure trails. Avoid club scenes, dancers, panic, or specific action props. The image should feel cut into separate time slices by light. Apply Strobe Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1006,7 +1006,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Future, bright, optimistic spectacle, epic scale',
       key_features: 'Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout',
       creative_brief:
-        'Use anamorphic overflare as the style driver: horizontal cyan-white streaks, blown highlights, lens-element reflections, bloom washout, and glossy blockbuster dazzle. Avoid requiring starships, space, crews, or sci-fi props. The camera artifacts should become the spectacle.',
+        'Use anamorphic overflare as the style driver: horizontal cyan-white streaks, blown highlights, lens-element reflections, bloom washout, and glossy blockbuster dazzle. Avoid requiring starships, space, crews, or sci-fi props. The camera artifacts should become the spectacle. Apply JJ Abrams Anamorphic Overflare as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1033,7 +1033,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bi-chromatic reflections, dark-field contrast architecture, emissive point-source rhythm, moisture-driven specular response',
       creative_brief:
-        'Treat this preset as a nocturnal lighting system: chroma reflections, controlled emissive spill, and wet-surface specularity should define the style independent of a specific location.',
+        'Treat this preset as a nocturnal lighting system: chroma reflections, controlled emissive spill, and wet-surface specularity should define the style independent of a specific location. Apply Neon Noir as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1052,7 +1052,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Moonlight, fake, studio night, theatrical illusion',
       key_features: 'Blue cast, dark shadows at noon, noir-at-daylight',
       creative_brief:
-        'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness.',
+        'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness. Apply Day for Night as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1091,7 +1091,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mystery, drama, anonymous form, graphic suspense',
       key_features: 'No fill light, recognizable outline, backlit separation, shape-first read',
       creative_brief:
-        'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail.',
+        'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail. Apply Silhouette as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1110,7 +1110,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Romantic, secret, flickering intimacy, warm darkness',
       key_features: 'Low warm key, flame flicker, amber falloff, moving shadow edge',
       creative_brief:
-        'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting.',
+        'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1129,7 +1129,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, deep, abyssal peace, submerged solitude',
       key_features: 'Caustics, light-net projection, suspended particles, refractive wobble',
       creative_brief:
-        'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean scenes. The image should feel filtered through depth and fluid refraction.',
+        'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean environments. The image should feel filtered through depth and fluid refraction. Apply Underwater Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1148,7 +1148,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Magic, art, drawing-with-light, nocturnal abstraction',
       key_features: 'Trails, light ribbon, calligraphic light, motion-blur glow',
       creative_brief:
-        'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time.',
+        'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time. Apply Light Painting as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1167,7 +1167,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Surreal, memory, dual exposure, fleeting connection',
       key_features: 'Layer blend, silhouette mask, translucent density, exposure sandwich',
       creative_brief:
-        'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface.',
+        'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface. Apply Double Exposure as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1205,7 +1205,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Heroic, mystery, defined presence, emerging from shadow',
       key_features: 'Halo, glowing outline, edge definition',
       creative_brief:
-        'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow.',
+        'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow. Apply Rim Lighting as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1224,7 +1224,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Sacred, still, suspended, revelation moment',
       key_features: 'Visible beams, dust motes, shaft geometry, particulate haze',
       creative_brief:
-        'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material.',
+        'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material. Apply God Rays as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1262,7 +1262,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Soft, optical, intimate, romantic haze',
       key_features: 'Shallow DOF, background abstraction, specular discs, creamy falloff',
       creative_brief:
-        'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night scenes. Bokeh should support the input by simplifying everything outside the focal plane.',
+        'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups. Bokeh should support the input by simplifying everything outside the focal plane. Apply Bokeh as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1301,7 +1301,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Haunting, history, frozen time, Victorian silence',
       key_features: 'Vignette, brass frame, chemical bloom, tarnished edge',
       creative_brief:
-        'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness.',
+        'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness. Apply Daguerreotype as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1339,7 +1339,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Serious, old, stoic endurance, documentary gravity',
       key_features: 'Black edges, iron oxidation, thumb-mark, plate wear',
       creative_brief:
-        'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling.',
+        'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling. Apply Tintype as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1359,7 +1359,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'White border, square format, chemical fog, developer smear, soft plastic-lens focus',
       creative_brief:
-        'Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already requested. The ritual of instant development should be visible in the image chemistry itself.',
+        'Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already requested. The ritual of instant development should be visible in the image chemistry itself. Apply Polaroid as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1380,7 +1380,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain',
       creative_brief:
-        'Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The style should feel accidental, immediate, and physically limited by a single-use camera.',
+        'Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The style should feel accidental, immediate, and physically limited by a single-use camera. Apply Disposable Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1400,7 +1400,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow',
       creative_brief:
-        'The pixel blocks and chromatic noise of a technology still learning to see, where every jagged edge and compression smear carries the urgency of its era. Images fold into artifact-laden rectangles — the magenta fringe, the noisy shadow, the blocky contour — as if each megabyte were precious and every upload a declaration. This is not the past seen through nostalgia but the past seen through its own honest, limited eyes.',
+        'Apply early-2000s digital-camera limits to any subject: 2MP softness, JPEG compression blocks, stair-step aliasing, purple fringing, noisy shadows, clipped pop-up flash highlights, and muddy CCD chroma. Keep upload-era immediacy without requiring parties, webcams, family snapshots, or dated UI.',
     },
   },
   {
@@ -1419,7 +1419,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ethereal, time, solargraph, patient observation',
       key_features: 'Blur, no lens, circular vignette, time-smear, light-leak edge',
       creative_brief:
-        'Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye.',
+        'Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye. Apply Pinhole Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1438,7 +1438,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hidden, nocturnal, phosphor eerie, low-light uncanny',
       key_features: 'Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom',
       creative_brief:
-        'Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation scenes. Darkness should become visible through sensor artifacts rather than natural color.',
+        'Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation scenes. Darkness should become visible through sensor artifacts rather than natural color. Apply Night Vision as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1476,7 +1476,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Timeless, alchemical, eternal stillness, process-haunted',
       key_features: 'Focus falloff, petzval swirl, glass-plate negative',
       creative_brief:
-        'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty.',
+        'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty. Apply Wet Plate Collodion as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1496,7 +1496,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Experimental, fun, rule-breaking, analog play',
       key_features: 'Light leaks, sprocket holes, film rebate, double-exposure ghost',
       creative_brief:
-        'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition.',
+        'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition. Apply Lomography as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1537,7 +1537,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom',
       creative_brief:
-        'Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination.',
+        'Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination. Apply Infrared Film as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1557,7 +1557,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom',
       creative_brief:
-        'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form.',
+        'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form. Apply Thermal Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1659,7 +1659,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture',
       creative_brief:
-        'Use dumb slouch caricature as visual grammar: sagging posture logic, jagged profiles, cheap-TV glow, ugly low-rent color, and vacant timing. Avoid couches, teens, interiors, overbites, or specific bodies as requirements. The style should make boredom look physically heavy.',
+        'Use dumb slouch caricature as visual grammar: sagging posture logic, jagged profiles, cheap-TV glow, ugly low-rent color, and vacant timing. Avoid couches, teens, interiors, overbites, or specific bodies as requirements. The style should make boredom look physically heavy. Apply Beavis and Butt-Head - Dumb Couch Slouch as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1712,7 +1712,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor',
       creative_brief:
-        'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy.',
+        'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy. Apply The Oblongs - Toxic Suburb Family as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1792,7 +1792,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic',
       creative_brief:
-        'Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects, loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required content. Revulsion should loop back into collectible comedy.',
+        'Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects, loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required content. Revulsion should loop back into collectible comedy. Apply Crash Zoom Garbage Pail Caricature as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1846,7 +1846,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression',
       creative_brief:
-        'Use shared-body elastic design as abstraction: one stretched form contains two opposing visual states, bending impossibly with sitcom simplicity and elastic compression. Avoid cats, dogs, creatures, lawns, props, or anatomy as requirements. The style should be long, contradictory, and playful.',
+        'Use shared-body elastic design as abstraction: one stretched form contains two opposing visual states, bending impossibly with sitcom simplicity and elastic compression. Avoid cats, dogs, creatures, lawns, props, or anatomy as requirements. The style should be long, contradictory, and playful. Apply CatDog - Shared-Body Elastic Nonsense as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1901,7 +1901,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color',
       creative_brief:
-        'Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky outlines, soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys, children, or specific props as requirements. The style should make scale feel emotionally huge.',
+        'Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky outlines, soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys, children, or specific props as requirements. The style should make scale feel emotionally huge. Apply Rugrats - Toddler Crayon Panic as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -1928,7 +1928,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic',
       creative_brief:
-        'Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb scenes. The tone should be goofy dread under soft colors.',
+        "Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb settings. The tone should be goofy dread under soft colors. Apply Rocko's Modern Life - Beige Suburban Anxiety as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.",
     },
   },
   {
@@ -1983,7 +1983,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions',
       creative_brief:
-        'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text.',
+        'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text. Apply Political Satire Cartoon as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -2038,7 +2038,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos',
       creative_brief:
-        'Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious marks.',
+        'Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious marks. Apply Toxic Marker Classroom Freakout as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -2150,7 +2150,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout',
       creative_brief:
-        'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art scene.',
+        'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art subject.',
     },
   },
   {
@@ -2289,7 +2289,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition',
       creative_brief:
-        'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure.',
+        'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure. Apply Courage the Cowardly Dog - Rural Nightmare Pastel as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -2629,7 +2629,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text',
       creative_brief:
-        'Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal eureka scenes. The surface should feel urgent and improvised.',
+        'Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal eureka setups. The surface should feel urgent and improvised. Apply Napkin Scribble Blueprint as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -2656,7 +2656,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour',
       creative_brief:
-        'Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips stretch structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses, bodies, or anatomy. The subject should look like reality is losing viscosity.',
+        'Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips stretch structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses, bodies, or anatomy. The subject should look like reality is losing viscosity. Apply Liquid Melt Caricature as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

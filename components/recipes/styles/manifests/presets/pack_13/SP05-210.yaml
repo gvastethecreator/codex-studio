@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-210
 packId: pack_13
-name: Hidamari Sketch - Art Dorm Sunshine Scribble
+name: Sunshine-Scribble Soft Geometry
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Sunshine-scribble slice language with warm sketchbook texture, soft geometry, little rituals, low-pressure humor, and cozy abstraction
-  form_and_line: Sketchbook-first contouring, simplified geometric blocking, and playful art-supply-like silhouette motifs
-  color_palette: Warm paper creams, soft coral and mint accents, gentle graphite grays, and sunwashed dorm yellows
-  lighting_setup: Late-afternoon sunlight, warm lamp pockets, and low-contrast ambient wrap
-  material_texture: Pencil grain, paper stacks, soft fabric surfaces, tape edges, and tabletop wear
-  render_quality: Relaxed art-dorm rendering with abstracted comfort geometry and handmade sketch warmth
-  spatial_distortion: Mild geometric flattening that supports cozy visual abstraction
-  atmosphere: Sunny, crafty, relaxed, cute
-  key_features: Sketchbook tactility, soft geometric composition, art-supply clutter logic, soft comedic staging, and warm pastel light
+  aesthetic: >-
+    Sunshine-scribble anime abstraction where sketchbook tactility, soft geometry, low-pressure
+    humor, and cozy creative ritual define the image
+  form_and_line: >-
+    Sketchbook-first contours, simplified geometric blocking, playful supply-like silhouette motifs,
+    and relaxed compositional symmetry
+  color_palette: >-
+    Warm paper cream, soft coral, mint accent, graphite gray, sunwashed yellow, and peach lamp
+    warmth
+  lighting_setup: Late-afternoon sunlight, warm lamp pockets, low-contrast ambient wrap, and paper-soft bounce
+  material_texture: Pencil grain, paper stacks, tape edges, tabletop wear, soft fabric, and handmade doodle texture
+  render_quality: >-
+    Relaxed anime finish with abstracted comfort geometry, handmade sketch warmth, and gentle
+    comedic clarity
+  spatial_distortion: Mild geometric flattening and cozy vignette compression around any subject
+  atmosphere: Sunny, crafty, relaxed, cute, low-pressure
+  key_features: >-
+    Sketchbook tactility, soft geometric fields, warm paper light, playful abstraction, and
+    low-pressure creative ritual
   creative_brief: >-
-    Use the title as a style anchor for art-dorm sunshine. Keep sketchbook
-    tactility, soft geometry, and low-pressure creative ritual tone without
-    requiring dorm rooms, school life, or art supplies.
+    Use Hidamari Sketch as style anchor for sunshine-scribble soft geometry. Any prompt should feel
+    handmade, warm, simplified, and softly geometric. Dorm rooms, school life, art supplies, and
+    literal sketchbooks are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-210.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

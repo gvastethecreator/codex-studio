@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Cast metal figure
+  aesthetic: Cast bronze sculptural material
   form_and_line: Sculpted details
   color_palette: Bronze, Patina (Green), verdigris aging
   lighting_setup: Specular highlights, metal-luster
@@ -20,7 +20,12 @@ visualDna:
   render_quality: Monument, classic, sculpture-garden
   atmosphere: Timeless, heavy, historical gravity
   key_features: Patina in crevices, cast-metal detail
-  creative_brief: 'Specular highlights ride the crest of sculpted musculature and draped fabric — the bronze holds its warm metallic luster across broad planes while verdigris patina gathers in crevices like green memory of centuries of weather. Cast-metal texture betrays the mold that birthed it, and the weight of the material reads in every shadow. The image is monumental: a sculpture-garden centerpiece rendered with the gravity of history, timeless metal carrying the likeness of something mortal into permanence.'
+  creative_brief: >-
+    Cast the input in bronze-sculpture language: warm metal luster, verdigris in crevices, mold texture, heavy shadows
+    and monument-grade surface gravity. If figurative forms exist, preserve them; otherwise apply sculptural metal
+    permanence without forcing a statue garden or human figure. Apply Bronze Statue as a portable 3D/render style system
+    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - flesh
   - color

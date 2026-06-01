@@ -23,7 +23,7 @@ Se mantiene routing hash-based liviano para studio, recipes, modales y editor, p
 
 ## Cola persistente
 
-La cola visible mezcla jobs transitorios (UI) y jobs persistentes (SQLite). Los persistentes sobreviven recargas/cierre de UI.
+La cola visible mezcla Browser Queue y jobs persistentes (SQLite). La Browser Queue persiste sus jobs en IndexedDB para sobrevivir refreshes. Si un job ya llegó al backend antes del refresh, la UI no lo re-ejecuta: el seguimiento durable queda en Backend Session Jobs.
 
 ## Sincronización en vivo
 

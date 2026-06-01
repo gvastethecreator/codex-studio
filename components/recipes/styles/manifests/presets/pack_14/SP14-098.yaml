@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-098
 packId: pack_14
-name: Ashen Crown Reliquary
+name: Ash-Crown Residue Authority
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Reliquary cabinet preserving a crown of ash and soot.
-  form_and_line: Framed shrine, brittle crown silhouette, and ash cascades.
+  aesthetic: Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.
+  form_and_line: Brittle crown silhouettes, shrine-like framing cues, and ash cascade rhythms.
   color_palette: Charcoal, muted silver, and antique ivory.
   lighting_setup: Narrow halo beam from above.
-  material_texture: Charred wood, cracked enamel, and dusty glass.
+  material_texture: Charred wood, cracked enamel, dusty glass, and powdery soot.
   render_quality: Cinematic symbolic still life.
-  spatial_distortion: Tight frontal icon with layered relic depth.
+  spatial_distortion: Tight iconic depth with layered relic framing, not a required cabinet.
   atmosphere: Loss, legitimacy, and solemn afterimage.
-  key_features: Ash crown, reliquary frame, and memorial dust.
-  creative_brief: A symbolic shrine where authority survives only as residue and memory.
+  key_features: Ash crown, residue halos, memorial dust.
+  creative_brief: Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring crowns, shrines, relic cabinets, rulers, or literal objects.
 avoidRules: [photoreal, playful, candy-color, watermark, text, logo, glossy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-098.webp }
 attributes:
   negativePrompt: photoreal, playful, candy-color, watermark, text, logo, glossy
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

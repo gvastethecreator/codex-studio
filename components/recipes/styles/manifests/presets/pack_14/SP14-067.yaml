@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-067
 packId: pack_14
-name: Palm Crown Astral Docks
+name: Palm Crown Astral Navigation
 category: 6. Mythic — African Cosmologies
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, african-myth]
 visualDna:
-  aesthetic: Delta docks aligned to star tides and lunar shipping rites.
-  form_and_line: Pier ladders, mast forests, and shrine watchtowers.
+  aesthetic: Palm-crown astral navigation aligned to star tides, lunar timing, and ritual trade.
+  form_and_line: Pier ladder cues, mast forests, and shrine watchtower silhouettes.
   color_palette: Lagoon teal, palm green, and dusk amber.
   lighting_setup: Wet sunset reflections and mast lanterns.
   material_texture: Palm rope, river timber, and clay amphorae.
   render_quality: Maritime myth concept with detailed docking life.
-  spatial_distortion: Curved dock perspective into open delta channels.
+  spatial_distortion: Curved dock-like perspective into open delta channels.
   atmosphere: Trade, ritual timing, and tidal mysticism.
-  key_features: Astral dock charts, palm crown shrine, and omen buoy lights.
-  creative_brief: A delta port where navigation follows sacred stellar calendars.
+  key_features: Astral chart cues, palm crown shrine, omen buoy lights.
+  creative_brief: Apply palm-crown astral navigation to the input, letting stellar calendars guide motion without requiring a port.
 avoidRules: [photoreal, modern-container-port, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-067.webp }
 attributes:
   negativePrompt: photoreal, modern-container-port, cyber-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-african-cosmologies,
+    categoryName: 6. Mythic — African Cosmologies,
+    tags: [mythic-noir-curated-vault, mythic, african-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

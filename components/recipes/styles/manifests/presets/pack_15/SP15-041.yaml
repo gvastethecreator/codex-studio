@@ -4,8 +4,14 @@ packId: pack_15
 name: Turbine Family Arcade
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Consumer atompunk play style where joy is packaged as turbine worship, candy buttons, and domestic propaganda.
   form_and_line: Streamlined facade arcs, rounded canopy lips, turbine-medallion loops, cabinet-like fins, and capsule shapes.
@@ -17,20 +23,35 @@ visualDna:
   atmosphere: Cheerful excess, family spectacle, polished futurity, and domesticated atomic anxiety.
   key_features: Turbine carousel hubs, atom-game silhouettes, capsule modules, prize-token spirals, and curved waiting rails.
   creative_brief: >-
-    Preserve turbine family-arcade grammar as a reusable style system:
-    cheerful consumer turbine motifs, cabinet-light spectacle, and
-    family-coded atomic leisure should remain coherent across subjects.
-avoidRules: [photoreal, bleak-industrial, fantasy-medieval, blood-gore, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-041.webp }
+    Package the input as cheerful atomic leisure machinery: turbine carousel hubs, candy cabinet glow, chrome trim,
+    capsule modules, and prize-token spirals should make pleasure feel engineered. Arcades or family showrooms can
+    appear, but the style is domesticated atomic anxiety in bright plastic. Apply this corepunk genre grammar over any
+    input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color
+    tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
+avoidRules:
+  - photoreal
+  - bleak-industrial
+  - fantasy-medieval
+  - blood-gore
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-041.webp
 attributes:
   negativePrompt: photoreal, bleak-industrial, fantasy-medieval, blood-gore, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

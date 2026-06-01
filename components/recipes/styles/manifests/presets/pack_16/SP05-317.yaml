@@ -23,7 +23,9 @@ visualDna:
   key_features: Overlays de arcade, neón sintético, velocidad lateral, vigilancia abstracta y revelación de verdad oculta.
   creative_brief: >-
     Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada:
-    arcade, velocidad y paranoia sin imponer motos, carreteras, skylines ni riders.
+    arcade, velocidad y paranoia. El input puede recibir moto, rider silhouette,
+    carretera abstracta o skyline glitch si refuerza la tensión retro-tech, sin
+    fijar persecución ni ciudad literal.
 avoidRules:
   - realistic
   - 3d render

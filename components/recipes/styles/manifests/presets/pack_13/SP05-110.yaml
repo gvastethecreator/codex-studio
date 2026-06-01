@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Impossible dream-logic anime with reality-blend montage, symbolic object shifts, inverted spatial intuition, parade-like subconscious rhythm, and liminal mystery
-  form_and_line: Shifting inconsistent outlines, figure-ground ambiguity, morphing-object contours, and one-line-becoming-another transitions
-  color_palette: Surreal twilight gradients, impossible sky colors, memory-desaturated pastels, dream-symbol gold, deep-sleep indigo, astral-projection lavender
-  lighting_setup: Light from impossible sources, objects self-illuminating without cast shadows, contradictory shadow directions, glow without origin
-  material_texture: Cloud-solid hybrids, liquid-mirror surfaces, material-state transitions, memory-film grain overlay, and dream-veil softness
-  render_quality: Surrealist anime dream-frame, experimental-animation beauty, psychological-symbolism rendering, impossible-image poetry
-  spatial_distortion: Infinite-regression depth, impossible object architecture, scale-shifting between frames, and non-Euclidean dream geography
+  aesthetic: >-
+    Impossible dream-logic anime with reality-blend montage, symbolic object shifts, inverted
+    spatial intuition, parade-like subconscious rhythm, and liminal mystery
+  form_and_line: >-
+    Shifting inconsistent outlines, figure-ground ambiguity, morphing-object contours, and
+    one-line-becoming-another transitions
+  color_palette: >-
+    Surreal twilight gradients, impossible sky colors, memory-desaturated pastels, dream-symbol
+    gold, deep-sleep indigo, astral-projection lavender
+  lighting_setup: >-
+    Light from impossible sources, objects self-illuminating without cast shadows, contradictory
+    shadow directions, glow without origin
+  material_texture: >-
+    Cloud-solid hybrids, liquid-mirror surfaces, material-state transitions, memory-film grain
+    overlay, and dream-veil softness
+  render_quality: >-
+    Surrealist anime dream-frame, experimental-animation beauty, psychological-symbolism rendering,
+    impossible-image poetry
+  spatial_distortion: >-
+    Infinite-regression depth, impossible object architecture, scale-shifting between frames, and
+    non-Euclidean dream geography
   atmosphere: Disorienting, hypnotic, profound, symbolic, between-worlds liminality, sleeping-mind poetry
-  key_features: Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops
+  key_features: >-
+    Impossible architecture, floating disconnected elements, morphing dream transitions,
+    contradictory light sources, infinite spatial loops
   creative_brief: >-
-    Preserve surreal dream-logic grammar as a reusable style system:
-    impossible spatial transitions, contradictory light logic, and symbolic
-    non-Euclidean composition should remain consistent across subjects without
-    requiring corridors, cities, doors, parades, or wall-walking figures.
+    Use surreal dream logic as non-Euclidean transition grammar. Any prompt should bend through
+    contradictory light, symbolic cuts, impossible adjacency, and floating continuity errors.
+    Corridors, doors, parades, cities, and walking figures are optional.
 avoidRules:
   - realistic
   - logical
@@ -40,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-110.webp
 attributes:
-  negativePrompt: realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear, ordinary
+  negativePrompt: >-
+    realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear,
+    ordinary
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

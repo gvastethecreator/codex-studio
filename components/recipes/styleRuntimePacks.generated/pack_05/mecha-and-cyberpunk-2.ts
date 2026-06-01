@@ -5,13 +5,13 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-056',
-    name: 'Geometric Ignition Rescue Style',
+    name: 'Geometric Ignition Urgency',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heroic ignition through sharp geometry, flat-shaded flame language, pastel-neon urgency, and clean angular optimism.',
+        'Heroic ignition anime through sharp geometry, flat-shaded heat, pastel-neon urgency, and clean angular optimism',
       form_and_line:
         'Triangular contour rhythm, blocky urgent silhouettes, explosive straight vectors, hard graphic cuts, and heroic angular posing.',
       color_palette:
@@ -26,20 +26,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Triangle-led perspective, explosive foreshortening, angular depth slices, and speed-grid compression around action.',
       atmosphere: 'Hyper, triumphant, chaotic, spirited',
       key_features:
-        'Triangular heat shapes, urgent momentum, pastel-neon heat, heroic geometry, and clean chaotic color blocking.',
+        'Triangular heat shapes, urgent diagonals, pastel-neon flame, heroic geometry, readable chaos, and hot color blocking',
       creative_brief:
-        'Apply geometric ignition rescue as a reusable style treatment: make any subject feel urgent, brave, hot, and shape-driven while staying abstract, portable, and detached from fixed responders, transport forms, locations, or literal emergency events.',
+        'Use geometric ignition urgency as heat-shape grammar. Any prompt should feel brave, fast, hot, and angular through clean flame geometry. Rescue teams, vehicles, cities, disasters, and literal emergency events are optional.',
     },
   },
   {
     id: 'SP05-222',
-    name: 'Patlabor - Municipal Mecha Procedure',
+    name: 'Municipal Machine Procedure',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Municipal mecha procedure, with practical engineering, civic bureaucracy, low-key humor, and grounded machine detail.',
+        'Grounded civic sci-fi procedure with practical engineering, maintenance realism, bureaucratic calm, utility palettes, and low-key humor',
       form_and_line:
         'Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry, and civic layout grids.',
       color_palette:
@@ -54,20 +54,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed city or cockpit views.',
       atmosphere: 'Procedural, grounded, urban, practical',
       key_features:
-        'Civic machinery, maintenance realism, procedural grids, paperwork humor, practical engineering.',
+        'Civic machinery logic, maintenance grids, paperwork humor, utility color, procedural diagrams, and practical engineering surfaces',
       creative_brief:
-        'Make any prompt feel like grounded civic sci-fi: emphasize maintenance logic, utility color, procedural diagrams, and bureaucratic calm without requiring specific machines, police, named cities, command vehicles, or patrols.',
+        'Use Patlabor as style anchor for municipal machine procedure. Any prompt should feel maintained, regulated, useful, and civically grounded. If the subject can become machinery, give it service panels, maintenance labels, rubber seals, or civic robot practicality; police, named cities, patrols, and public incidents remain optional.',
     },
   },
   {
     id: 'SP05-224',
-    name: 'Appleseed - Tactical Arcology Assault',
+    name: 'Sterile Arcology Severity',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tactical arcology assault, with clean futurism, bio-political severity, machine precision, and fragile postwar control.',
+        'Clean tactical futurism with sterile arcology pressure, ceramic hard surfaces, bio-political restraint, and polished control geometry',
       form_and_line:
         'Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor perspective, and severe panel discipline.',
       color_palette:
@@ -82,20 +82,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without fixed squad staging.',
       atmosphere: 'Tactical, polished, civic, severe',
       key_features:
-        'Clean tactical grids, ceramic hard surfaces, bio-political tension, severe civic control, polished assault geometry.',
+        'Sterile grids, ceramic reflections, severe civic control, polished tactical geometry, cold material contrast, and bio-political pressure',
       creative_brief:
-        'Apply tactical arcology severity to any prompt through sterile grids, ceramic surfaces, cold reflections, and controlled pressure without requiring wearable hardware, squads, corridors, weapons, or a city-state setting.',
+        'Use Appleseed as style anchor for sterile arcology severity. Any prompt should feel controlled, clean, tactical, and politically tense. If a body or object exists, add exosuit/ceramic-armor logic or arcology control geometry; assaults, squads, corridors, weapons, and city-states remain optional.',
     },
   },
   {
     id: 'SP05-228',
-    name: 'Casshern Sins - White Wasteland Robot Elegy',
+    name: 'White Machine Elegy',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'White wasteland robot elegy, with pale entropy, lonely heroism, post-collapse silence, and machine mortality.',
+        'Pale machine elegy with enamel decay, post-collapse silence, lonely contrast, worn synthetic surfaces, and dust-haze mortality',
       form_and_line:
         'Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic action lines.',
       color_palette:
@@ -110,20 +110,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland staging.',
       atmosphere: 'Elegiac, pale, lonely, mythic',
       key_features:
-        'Pale entropy, elegant machinery, lonely contrast, dust silence, machine elegy.',
+        'Pale entropy, worn enamel, elegant machinery, dust silence, lonely contrast, and machine mortality',
       creative_brief:
-        'Make any prompt feel like a pale machine elegy: use white silence, worn enamel, dust haze, and lonely contrast without requiring robots, ruins, wastelands, or combat against entropy.',
+        'Use Casshern Sins as style anchor for white machine elegy. Any prompt should feel pale, silent, synthetic, lonely, and worn by time. If figure or object exists, suggest enamel machine surfaces, worn synthetic joints, or robot elegy; ruins, wastelands, heroism, and combat against entropy remain optional.',
     },
   },
   {
     id: 'SP05-236',
-    name: 'Compact Attrition Hardware Style',
+    name: 'Compact Attrition Hardware',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Realismo utilitario de desgaste extremo, hardware compacto tratado como material desechable, presión logística, anti-glamour industrial.',
+        'Extreme utilitarian anime wear where compact hardware, mud, rust, logistical pressure, and anti-glamour function replace spectacle',
       form_and_line:
         'Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones bajas y ausencia de heroización formal.',
       color_palette:
@@ -138,20 +138,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en primer plano.',
       atmosphere: 'Ruda, agotada y pragmática, sin épica.',
       key_features:
-        'Chasis utilitario abstracto, barro y herrumbre, lectura funcional, supervivencia material, compactación pesada.',
+        'Low compact mass, utility chassis logic, mud-rust texture, survival materiality, compressed pressure, and anti-heroic function',
       creative_brief:
-        'Define una gramática compact-attrition reusable donde masa baja, materialidad de desgaste y presión logística expresen supervivencia prolongada sin transportes concretos, facciones, zanjas tácticas, conflicto literal o espectacularización heroica.',
+        'Use compact attrition hardware as worn-function grammar. Any prompt should feel low, heavy, disposable, repaired, and logistically stressed. Vehicles, factions, trenches, war, and hero spectacle are optional.',
     },
   },
   {
     id: 'SP05-238',
-    name: 'SSSS.Gridman - Tokusatsu Neon City Grid',
+    name: 'Tokusatsu Digital Grid Scale',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Neo-tokusatsu melancólico con heroísmo de silueta gigante y gramática digital de rejilla energética.',
+        'Neo-tokusatsu anime melancholy with colossus-scale silhouettes, digital lattice motifs, clean heroic geometry, and nostalgic signal light',
       form_and_line:
         'Contorno monumental limpio, apilado de escala por capas y overlays geométricos de precisión controlada.',
       color_palette:
@@ -166,20 +166,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Compresión de profundidad para escalar la figura central y tensión foreground-midground de mundo miniaturizado.',
       atmosphere: 'Heroica y resonante, con nostalgia tecnológica contenida.',
       key_features:
-        'Silueta colosal, lattice digital, nostalgia tecnológica e iconografía de escala sentimental.',
+        'Colossal silhouette contrast, digital lattice, nostalgic tech glow, clean hero geometry, sentimental scale, and grid energy',
       creative_brief:
-        'Define una gramática tokusatsu-grid reusable donde contraste de silueta colosal y motivos de malla digital sostengan una heroicidad contemplativa, limpia y transferible entre sujetos.',
+        'Use SSSS.Gridman as style anchor for tokusatsu digital grid scale. Any prompt should feel huge, clean, signal-lit, and contemplatively heroic. If subject supports it, add colossus/robot scale hints or digital-lattice armor; cities, monsters, literal screens, and battle scenes remain optional.',
     },
   },
   {
     id: 'SP05-240',
-    name: 'Tri-Color Ignition Protest Style',
+    name: 'Tri-Fire Riot Geometry',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ignición geométrica anti-naturalista, protesta visual, rivalidad cromática, lenguaje gráfico tricolor de máxima intensidad.',
+        'Anti-naturalistic ignition anime with tricolor fire geometry, protest intensity, flat chromatic collision, and legible formal chaos',
       form_and_line:
         'Aristas diagonales agresivas, siluetas icónicas abstractas, composición de póster y bloques de calor facetado.',
       color_palette:
@@ -194,20 +194,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva en diagonales violentas y compresión dramática para amplificar colisión heroica.',
       atmosphere: 'Ardiente, rebelde y estruendosa, de protesta visual en combustión.',
       key_features:
-        'Flama tricolor, geometría angular, protesta térmica, santidad combativa abstracta y caos formal legible.',
+        'Tricolor flame planes, angular riot geometry, flat extreme color, combative sanctity, readable chaos, and thermal protest pressure',
       creative_brief:
-        'Define una gramática tri-fire-riot reusable donde geometría incendiaria, cromática plana extrema e iconografía de urgencia articulen épica contestataria sin hardware específico, urbe, roles de emergencia, transportes o incidente concreto.',
+        'Use tri-fire riot geometry as incendiary graphic grammar. Any prompt should feel urgent, flat-colored, angular, and rebellious. Hardware, cities, emergency roles, vehicles, and incident scenes are optional.',
     },
   },
   {
     id: 'SP05-051',
-    name: 'Neon Tragic Sprint',
+    name: 'Neon Kinetic Alloy Sprint',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Kinetic cyber-athletic anime style with velocity-forward line energy, prosthetic-mech elegance, and emotional high-voltage momentum',
+        'High-voltage kinetic alloy anime where velocity lines, prosthetic elegance, reflective machinery, and tragic momentum fuse into engineered motion',
       form_and_line:
         'Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp technical edge discipline',
       color_palette:
@@ -222,20 +222,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory readability',
       atmosphere: 'Urgent, cathartic, intense, adrenaline-charged',
       key_features:
-        'Velocity line grammar, prosthetic silhouette readability, motion-led composition, reflective mech surfaces, kinetic luminance trails',
+        'Velocity vectors, alloy reflection, engineered body rhythm, neon motion trails, sprint compression, and emotional acceleration',
       creative_brief:
-        'Define the preset through speed grammar and engineered body dynamics: directional line force, mechatronic material response, and emotional motion tension should remain the core identity.',
+        'Use neon kinetic alloy sprint as speed-and-material grammar. Any prompt should feel engineered, fast, reflective, and emotionally charged through line force and metal response. If a character or body exists, push prosthetic/mecha-athletic cues; athletes, races, streets, and fixed cyber bodies remain optional.',
     },
   },
   {
     id: 'SP05-052',
-    name: 'Surveillance Verdict Grid Style',
+    name: 'Surveillance Verdict Grid',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bureaucratic techno-control rendered as verdict logic, surveillance pressure, clinical social sorting, and cold institutional paranoia.',
+        'Bureaucratic techno-control rendered through verdict logic, clinical sorting, cold grid authority, and institutional paranoia',
       form_and_line:
         'Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid geometry, and clean blocking.',
       color_palette:
@@ -250,20 +250,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed perspective corridors of control.',
       atmosphere: 'Clinical, oppressive, dystopian, cold',
       key_features:
-        'Verdict glyphs, coefficient-like overlays, cold grid authority, glass reflections, and machine-readable emotional distance.',
+        'Verdict glyphs, coefficient overlays, cold authority grids, glass reflections, machine-readable distance, and social-pressure geometry',
       creative_brief:
-        'Apply surveillance verdict grid as a reusable style treatment: make any subject feel measured, sorted, judged, and lit by institutional data while staying abstract, portable, and detached from fixed civic roles, props, locations, or incident narratives.',
+        'Use surveillance verdict grid as institutional data grammar. Any prompt should feel measured, sorted, scored, and judged by cold systems. Police, citizens, terminals, city incidents, and readable UI text are optional.',
     },
   },
   {
     id: 'SP05-054',
-    name: 'Luminous Beam Opera Style',
+    name: 'Luminous Beam Opera',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Operatic luminous conflict, sleek heroic geometry, psychic color pressure, radiant scale, and melodramatic cosmic stakes.',
+        'Operatic luminous anime conflict rendered through sleek heroic geometry, psychic color pressure, radiant scale, and melodramatic energy staging',
       form_and_line:
         'Clean heroic hard-edge linework, long beam diagonals, crisp panel accents, elegant silhouette contrast, and elevated stance framing.',
       color_palette:
@@ -278,20 +278,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Grand diagonal scale, beam-led depth, telephoto compression, and cosmic negative space around the focal silhouette.',
       atmosphere: 'Dramatic, luminous, operatic, cosmic',
       key_features:
-        'Beam diagonals, psychic color bloom, operatic silhouette contrast, luminous particles, and heroic negative-space staging.',
+        'Beam diagonals, psychic bloom, operatic silhouette contrast, luminous particles, strategic negative space, and radiant scale',
       creative_brief:
-        'Apply luminous beam opera as a reusable style treatment: make any subject feel grand, radiant, emotionally strategic, and staged through colored energy while staying abstract, portable, and detached from fixed operators, hardware, territory, or combat narratives.',
+        'Use luminous beam opera as colored-energy staging grammar. Any prompt should become grand, radiant, strategic, and emotionally charged through light diagonals. Operators, hardware, territory, factions, and combat narratives are optional.',
     },
   },
   {
     id: 'SP05-055',
-    name: 'Gothic Tech Existential Dread Style',
+    name: 'Gothic Tech Existential Dread',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gothic techno-dread, sacred industrial stillness, bio-synthetic unease, philosophical coldness, and elegant decay.',
+        'Sacred industrial techno-dread with bio-synthetic unease, black-metal sheen, hollow verticality, and restrained philosophical menace',
       form_and_line:
         'Severe hard-edge linework, ribbed verticals, grotesque silhouette pressure, fine hatchwork, and solemn contour spacing.',
       color_palette:
@@ -306,20 +306,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Vertical compression, sacred-scale symmetry, deep axial recession, and hollow negative space around the subject.',
       atmosphere: 'Brooding, cerebral, existential, haunting',
       key_features:
-        'Sacred-industrial geometry, bio-tech unease, black-metal sheen, hollow vertical space, and restrained existential menace.',
+        'Sacred-industrial geometry, bio-tech unease, black-metal gloss, hollow vertical space, ritual stillness, and elegant decay',
       creative_brief:
-        'Apply gothic tech existential dread as a reusable style treatment: make any subject feel ritualized, hollow, elegant, and bio-synthetic while staying abstract, portable, and detached from fixed architecture, figures, places, or horror set pieces.',
+        'Use gothic tech existential dread as ritualized machine-anxiety grammar. Any prompt should feel hollow, elegant, synthetic, and sacredly wrong. Cathedrals, monsters, facilities, figures, and horror set pieces are optional.',
     },
   },
   {
     id: 'SP05-057',
-    name: 'Sleek Post-Apoc Romance Style',
+    name: 'Sleek Collapse Romance',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sleek post-apocalyptic tenderness, polished fragility, sunset loneliness, romantic pressure, and floral-tech melancholy.',
+        'Sleek post-collapse tenderness where polished fragility, sunset loneliness, floral-tech melancholy, and engineered intimacy carry emotion',
       form_and_line:
         'Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and vulnerable negative-space framing.',
       color_palette:
@@ -334,20 +334,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Intimate compression against broad empty space, soft horizon drag, and paired-vector composition without fixed setting.',
       atmosphere: 'Vulnerable, sleek, bittersweet, romantic',
       key_features:
-        'Sleek paired silhouettes, sunset ruin color, petal-tech motifs, fragile intimacy, and polished melancholy surfaces.',
+        'Paired-silhouette rhythm, petal-tech motifs, sunset ruin color, polished melancholy, fragile intimacy, and glossy edge softness',
       creative_brief:
-        'Apply sleek post-apoc romance as a reusable style treatment: make any subject feel tender, engineered, lonely, and hopeful after collapse while staying abstract, portable, and detached from fixed operators, equipment, attire systems, decay settings, or alert scenarios.',
+        'Use sleek collapse romance as fragile-engineered tenderness grammar. Any prompt should feel lonely, polished, hopeful, and post-catastrophic. Operators, suits, ruins, alarms, equipment, and romance scenes are optional.',
     },
   },
   {
     id: 'SP05-058',
-    name: 'Remote Conflict Grief Style',
+    name: 'Remote Command Grief',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Remote conflict grief, cold command logic, adolescent vulnerability under systems pressure, and disciplined tragedy.',
+        'Remote conflict grief anime built from cold command logic, system pressure, disciplined tragedy, and vulnerable distance',
       form_and_line:
         'Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained faces, and precise formation spacing.',
       color_palette:
@@ -362,20 +362,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Remote-control framing, compressed command depth, map-like overlays, and emotional distance between subject layers.',
       atmosphere: 'Tragic, disciplined, somber, remote',
       key_features:
-        'Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained emotional damage.',
+        'Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained emotional damage',
       creative_brief:
-        'Apply remote conflict grief as a reusable style treatment: make any subject feel controlled from afar, disciplined, young, and emotionally burdened while staying abstract, portable, and detached from fixed transport forms, roles, rooms, props, or conflict scenes.',
+        'Use remote command grief as distance-and-control grammar. Any prompt should feel operated from afar, disciplined, young, and burdened by systems. If characters or machines appear, imply remote interface, cockpit logic, uniform restraint, or weapon-system pressure; vehicles, rooms, and battle scenes remain optional.',
     },
   },
   {
     id: 'SP05-059',
-    name: 'Tactical Network Procedure Style',
+    name: 'Tactical Network Cognition',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Procedural cyber cognition, network pressure, modular tactical overlays, identity uncertainty, and calm investigative momentum.',
+        'Procedural cyber cognition with modular overlays, optical transparency, network pressure, identity uncertainty, and calm investigative tension',
       form_and_line:
         'Clean technical linework, modular contour blocks, thin overlay vectors, precise facial restraint, and grounded cyber-anime silhouettes.',
       color_palette:
@@ -390,20 +390,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Network-layer parallax, transparent overlay depth, surveillance compression, and modular data planes around subject forms.',
       atmosphere: 'Tactical, cool-headed, procedural, cerebral',
       key_features:
-        'Tactical overlays, optical transparency, modular data planes, identity-fracture calm, and procedural cyber-noir clarity.',
+        'Transparent data planes, modular tactical overlays, identity fracture, optical layering, network pressure, and cyber-noir clarity',
       creative_brief:
-        'Apply tactical network procedure as a reusable style treatment: make any subject feel analyzed, networked, partially hidden, and intellectually tense while staying abstract, portable, and detached from fixed operators, brands, devices, institutions, rooms, or casework scenes.',
+        'Use tactical network cognition as analyzed-visibility grammar. Any prompt should feel partially hidden, networked, inspected, and intellectually tense. Agents, devices, brands, institutions, casework, and rooms are optional.',
     },
   },
   {
     id: 'SP05-060',
-    name: 'Orbital Rivalry Frame Style',
+    name: 'Orbital Rivalry Symmetry',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Orbital rivalry, elegant technical contrast, high-altitude political pressure, gravity defiance, and crystalline strategic grandeur.',
+        'Elegant orbital anime rivalry where high-altitude pressure, gravity defiance, crystalline seams, and strategic grandeur shape the frame',
       form_and_line:
         'Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced opposing silhouettes, and calm tactical posing.',
       color_palette:
@@ -418,20 +418,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector composition across large scale.',
       atmosphere: 'Grand, competitive, epic, political',
       key_features:
-        'Orbital arcs, crystalline seams, elegant rivalry symmetry, high-altitude glow, and strategic negative-space tension.',
+        'Orbital arcs, crystalline seams, rivalry symmetry, high-altitude glow, strategic negative space, and graceful technical contrast',
       creative_brief:
-        'Apply orbital rivalry frame as a reusable style treatment: make any subject feel elevated, strategic, graceful, and politically charged while staying abstract, portable, and detached from fixed celestial bodies, hardware, operators, alliances, or combat narratives.',
+        'Use orbital rivalry symmetry as elevated-strategy grammar. Any prompt should feel graceful, suspended, politically charged, and technically precise. If subject or character supports it, add crystalline hardware seams, pilot/rivalry cues, or orbital-mecha elegance; planets, alliances, and combat scenes remain optional.',
     },
   },
   {
     id: 'SP05-221',
-    name: 'Macross - Idol Signal Dogfight',
+    name: 'Pop-Signal Engineered Romance',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Idol signal dogfight style, with pop broadcast emotion, missile-calligraphy motion, and romance refracted through machinery.',
+        'Broadcast-pop mecha emotion where concert light, contrail calligraphy, engineered romance, and signal layers collide in glossy motion',
       form_and_line:
         'Hard-edged mechanical contours, music-wave arcs, contrail swarms, panel-line rhythm, and stage-light silhouette cuts.',
       color_palette:
@@ -446,20 +446,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Aerial vector depth, broadcast-layer overlays, and sweeping contrail perspective without fixed cockpit framing.',
       atmosphere: 'Aerial, poppy, heroic, romantic',
       key_features:
-        'Signal-pop lighting, contrail calligraphy, mechanical romance, broadcast layers, stage-combat fusion.',
+        'Signal-pop lighting, contrail rhythm, broadcast overlays, engineered romance, glossy motion, and stage-scale emotional color',
       creative_brief:
-        'Apply pop-signal mecha emotion to any prompt through concert light, contrail rhythm, broadcast overlays, and engineered romance without requiring aircraft, dogfights, performers, cockpit views, or war scenes.',
+        'Use Macross as style anchor for pop-signal engineered romance. Any prompt should mix broadcast glow, contrail calligraphy, glossy machinery, and romantic signal noise. If character or vehicle cues exist, let them pick up idol-signal/mecha-aircraft hints; dogfights, cockpits, performers, and war scenes remain optional.',
     },
   },
   {
     id: 'SP05-223',
-    name: 'Bubblegum Crisis - Neon Power-Suit Hunt',
+    name: 'Armored Chrome Noir Elegance',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Retro cyber-noir anime armor style with aggressive chrome femininity, analog-tech glamour, and precision mechanical elegance',
+        'Retro cyber-noir anime armor glamour with segmented articulation, analog-tech voltage, aggressive chrome femininity, and precision ornament',
       form_and_line:
         'Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch accents, high-clarity line discipline',
       color_palette:
@@ -474,20 +474,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical depth layering',
       atmosphere: 'Sleek, high-voltage, assertive, dangerous, stylishly militant',
       key_features:
-        'Exosuit silhouette grammar, segmented armor articulation, specular edge choreography, neon-metal contrast, precision mechanical ornament',
+        'Segmented armor grammar, specular edge choreography, neon-metal contrast, analog glamour, abrasion detail, and mechanical elegance',
       creative_brief:
-        'Preserve a signature of armored cyber-noir elegance: the preset should read through line discipline, material contrast, and chromatic voltage rather than any fixed narrative setting.',
+        'Use Bubblegum Crisis as style anchor for armored chrome noir elegance. Any prompt should read through segmented shine, neon voltage, analog grit, and precision linework. Power suits, hunts, gangs, alleys, and fixed cyberpunk settings are optional.',
     },
   },
   {
     id: 'SP05-225',
-    name: 'Battle Angel Alita - Scrap-Yard Velocity',
+    name: 'Scrap Velocity Resilience',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Scrap-yard velocity style, with cyber-body resilience, junk-steel humanity, kinetic ferocity, and loss under speed.',
+        'Scrap-metal anime velocity where cyber resilience, junk-steel humanity, compact impact arcs, and spark-lit grit make motion emotional',
       form_and_line:
         'Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force geometry, and sharp hatch detail.',
       color_palette:
@@ -502,20 +502,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed arena framing.',
       atmosphere: 'Raw, fast, scrapyard, determined',
       key_features:
-        'Scrap-metal texture, cyber resilience, speed compression, ferocious close motion, dented humanity.',
+        'Dented metal, cyber resilience, speed compression, spark trails, ferocious close motion, and battered humanity',
       creative_brief:
-        'Apply scrap-yard velocity to any prompt through dented metal, compact impact arcs, spark-lit speed, and resilient grit without requiring a cyborg, race, scrapyard city, or combat setup.',
+        'Use Battle Angel Alita as style anchor for scrap velocity resilience. Any prompt should feel fast, dented, tough, and human under metal. Cyborgs, races, scrapyards, arenas, and combat setups are optional.',
     },
   },
   {
     id: 'SP05-226',
-    name: 'Ergo Proxy - Mausoleum City Dread',
+    name: 'Cyber-Goth Mausoleum Dread',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mausoleum city dread, with cyber-goth severity, abandoned modernism, personhood anxiety, and concrete rain.',
+        'Cyber-goth anime dread with abandoned modernism, concrete emptiness, rain-dark reflection, black silhouette severity, and personhood anxiety',
       form_and_line:
         'Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical stillness.',
       color_palette:
@@ -530,20 +530,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel trapped.',
       atmosphere: 'Bleak, cerebral, cool, funereal',
       key_features:
-        'Cyber-goth stillness, concrete rain, personhood dread, black silhouette severity, abandoned modernism.',
+        'Concrete voids, rain reflection, black silhouettes, cold self-awareness, abandoned modernism, and mausoleum stillness',
       creative_brief:
-        'Make any prompt feel like philosophical cyber-goth dread: use concrete emptiness, rain-dark reflection, black silhouettes, and cold self-awareness without requiring androids, domes, city spaces, or narrative procession.',
+        'Use Ergo Proxy as style anchor for cyber-goth mausoleum dread. Any prompt should become empty, rain-dark, severe, and philosophically uncertain. Androids, domes, cities, processions, and human figures are optional.',
     },
   },
   {
     id: 'SP05-229',
-    name: 'Cyber City Oedo 808 - Prison Hacker Neon Vice',
+    name: 'Punitive Neon Vice Texture',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gritty enforcement-cyberpunk anime style with analog surveillance mood, punitive tech iconography, and hardboiled futurist attitude',
+        'Gritty enforcement cyberpunk anime with punitive tech iconography, warning-light discipline, analog surveillance mood, and hardboiled abrasion',
       form_and_line:
         'Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight shifts',
       color_palette:
@@ -558,20 +558,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and visual tension',
       atmosphere: 'Coercive, paranoid, punitive, claustrophobic, electrically unstable',
       key_features:
-        'Enforcement-tech silhouette language, warning-light color discipline, abrasion-heavy armor surfaces, surveillance-era mechanical detailing',
+        'Warning lights, enforcement-tech silhouettes, worn armor texture, surveillance-era detail, hard neon vice, and mechanical severity',
       creative_brief:
-        'Encode a law-and-pressure cyber aesthetic through texture wear, austere lighting, and mechanical severity; avoid fixed story beats so the preset remains reusable across subjects.',
+        'Use Cyber City Oedo 808 as style anchor for punitive neon vice texture. Any prompt should feel abrasive, surveilled, constrained, and neon-hard. Prisoners, hackers, police, missions, alleys, and fixed story beats are optional.',
     },
   },
   {
     id: 'SP05-230',
-    name: 'BLAME! - Megastructure Terminal Silence',
+    name: 'Terminal Megastructure Silence',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Megastructure terminal silence, with endless concrete scale, industrial emptiness, and machine civilization beyond meaning.',
+        'Endless industrial anime silence with recursive concrete, terminal scale, sparse machine light, tiny markers, and civilization beyond meaning',
       form_and_line:
         'Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes, and severe panel discipline.',
       color_palette:
@@ -586,20 +586,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.',
       atmosphere: 'Monumental, empty, lethal, alienated',
       key_features:
-        'Recursive architecture, concrete void, terminal scale, tiny markers, industrial silence.',
+        'Recursive architecture, concrete void, terminal scale, sparse machine light, tiny markers, and industrial silence',
       creative_brief:
-        'Give any prompt terminal megastructure silence: use impossible scale, concrete recursion, tiny markers, and sparse machine light without requiring weapons, corridors, lone figures, or a specific facility.',
+        'Use BLAME! as style anchor for terminal megastructure silence. Any prompt should become vast, recursive, concrete, sparse, and machine-haunted. Corridors, weapons, lone figures, facilities, and literal megastructure interiors are optional.',
     },
   },
   {
     id: 'SP05-231',
-    name: 'RahXephon - Coral Mecha Liturgy',
+    name: 'Coral Resonance Liturgy',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ópera mecha metafísica con imaginería coral, simbolismo sonoro y melancolía ritual en escala de ciudad-santuario.',
+        'Metaphysical bio-mechanical opera with coral tectonics, sonic symbolism, sacred scale, and melancholic ritual structure',
       form_and_line:
         'Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas ceremoniales.',
       color_palette:
@@ -614,20 +614,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno visual.',
       atmosphere: 'Sagrada, enigmática y doliente, como himno visual en cámara lenta.',
       key_features:
-        'Coral biomecánico, azul alienígena, motivos musicales geométricos y liturgia de escala.',
+        'Coral biomechanical forms, alien blue, sonic geometry, liturgical scale, resonant symmetry, and sacred machine melancholy',
       creative_brief:
-        'Define una gramática mecha-liturgy reusable donde biotectónica coral, resonancia musical y monumentalidad sacra articulen la identidad sin depender de una escena, combate o entidad mecánica puntual.',
+        'Use RahXephon as style anchor for coral resonance liturgy. Any prompt should feel biotectonic, musical, sacred, and monumental. Mecha, cities, temples, entities, battles, and musical props are optional.',
     },
   },
   {
     id: 'SP05-232',
-    name: '86 - Dustfront Drone Lament',
+    name: 'Dustfront Drone Lament',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Militarismo trágico de juventud desechable, con geometría drónica y austeridad de frente polvoriento.',
+        'Tragic operational anime austerity with drone geometry, abrasive dust, low-frequency grief, and systemic dehumanization',
       form_and_line:
         'Geometría baja y artrópoda abstracta, articulación funcional y composición táctica de horizonte horizontal.',
       color_palette:
@@ -642,20 +642,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva terrestre comprimida con telemetría superpuesta y sensación de distancia sin salida.',
       atmosphere: 'Sombría, ventosa y fatalista, de duelo militar silencioso.',
       key_features:
-        'Hardware drónico, overlays de mando, polvo abrasivo, ruina operacional y lenguaje de pérdida colectiva.',
+        'Drone-like hardware grammar, command overlays, abrasive dust, operational ruin, collective loss, and low-frequency emotion',
       creative_brief:
-        'Construye una gramática dustfront-drone reusable donde hardware arácnido, paisaje abrasivo y emoción de baja frecuencia expresen deshumanización sistémica sin requerir unidad, frente o batalla concreta.',
+        'Use 86 as style anchor for dustfront drone lament. Any prompt should express disposability, remote pressure, abrasive terrain, and muted grief. Units, fronts, battles, spider machines, soldiers, and uniforms are optional.',
     },
   },
   {
     id: 'SP05-233',
-    name: 'Knights of Sidonia - Vacuum Fortress Survival',
+    name: 'Vacuum-Fortress Survival Discipline',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Supervivencia austera en vacío-fortaleza, con disciplina sistémica y biotecnología defensiva de último recurso.',
+        'Austere survival anime in hostile scale, with closed-habitat discipline, cosmic emptiness, defensive biotechnology, and everyday last-resort ritual',
       form_and_line:
         'Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de hábitat.',
       color_palette:
@@ -670,20 +670,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior infinito.',
       atmosphere: 'Ascética, aislada y resiliente, con tensión de extinción permanente.',
       key_features:
-        'Hábitat cerrado, uniformidad operativa, vacío estelar, biotecnología defensiva y ritual de supervivencia cotidiana.',
+        'Closed-habitat geometry, operational uniformity, hostile void, defensive biotechnology, survival ritual, and systemic austerity',
       creative_brief:
-        'Define una gramática vacuum-fortress reusable donde arquitectura de hábitat cerrado, disciplina de supervivencia y escala cósmica inhóspita sostengan identidad coherente sin exigir nave, deck o ciudad literal.',
+        'Use Knights of Sidonia as style anchor for vacuum-fortress survival discipline. Any prompt should feel sealed, procedural, isolated, and cosmically threatened. Ships, decks, cities, uniforms, pilots, and space battles are optional.',
     },
   },
   {
     id: 'SP05-234',
-    name: 'Muv-Luv Alternative - Tactical Suit Extinction War',
+    name: 'Extinction Interface Command',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Apocalipsis táctico de desgaste total, con interfaz de aniquilación y amenaza impersonal de masa estadística.',
+        'Total-attrition tactical anime apocalypse with annihilation interfaces, critical alarms, mass-threat abstraction, and command-pressure geometry',
       form_and_line:
         'Silueta vectorial dura, composición de comando en capas y masa hostil tratada como volumen estadístico.',
       color_palette:
@@ -697,20 +697,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo crítico.',
       atmosphere: 'Desesperada, militarizada y sacrificial, de urgencia sostenida.',
       key_features:
-        'Overlays de control, amenaza masiva, desgaste urbano, alarmas críticas y geometría de evacuación.',
+        'Control overlays, critical alarms, mass threat fields, evacuation geometry, urban wear, and command-pressure severity',
       creative_brief:
-        'Formula una gramática extinction-war reusable donde interfaz táctica, desgaste urbano y amenaza masiva no antropomórfica definan el estilo con rigor de comando sin exigir traje, ciudad, enemigo o batalla literal.',
+        'Use Muv-Luv Alternative as style anchor for extinction interface command. Any prompt should feel statistically overwhelmed, tactically compressed, and near-collapse. Suits, cities, enemies, battles, cockpits, and war scenes are optional.',
     },
   },
   {
     id: 'SP05-235',
-    name: 'Megazone 23 - Highway Pop-Cyber Revelation',
+    name: 'Pop-Cyber Simulation Gloss',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rebellión pop-cyber ochentera de superficie brillante, con glamour nocturno, cultura mediática y simulación encubierta.',
+        'Eighties pop-cyber rebellion with glossy nocturnal surfaces, media holography, youth freedom pressure, and concealed simulation unease',
       form_and_line:
         'Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería holográfica.',
       color_palette:
@@ -725,20 +725,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad de corredor luminoso con fuga alta velocidad y capas de publicidad simulada.',
       atmosphere: 'Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.',
       key_features:
-        'Glamour pop-cyber, holografía mediática, fuga nocturna, moda retro y señales de realidad simulada.',
+        'Pop-cyber glamour, media holography, glossy escape lines, retro fashion light, simulation signals, and nocturnal synthetic shine',
       creative_brief:
-        'Construye una gramática highway-pop-cyber reusable donde brillo urbano, velocidad glossy e ilusión mediática convivan en tensión entre libertad juvenil y control sintético sin exigir vehículo, idol o autopista literal.',
+        'Use Megazone 23 as style anchor for pop-cyber simulation gloss. Any prompt should feel glossy, free, mediated, and secretly synthetic. Highways, vehicles, idols, city nights, screens, and chase scenes are optional.',
     },
   },
   {
     id: 'SP05-237',
-    name: 'Monumental Launch Sacrifice Style',
+    name: 'Monumental Ignition Sacrifice',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heroísmo clásico de sangre caliente, disciplina técnica, lanzamiento monumental, sacrificio luminoso y escala emocional creciente.',
+        'Classic hot-blooded anime heroism built from technical discipline, monumental ignition, direct emotion, luminous sacrifice, and rising scale',
       form_and_line:
         'Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad monumental y contornos de determinación.',
       color_palette:
@@ -753,20 +753,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Transición de escala íntima a cósmica con foreshortening heroico y verticalidad monumental.',
       atmosphere: 'Triunfante, emotiva y colosal, de épica sincera.',
       key_features:
-        'Diagonales de lanzamiento, núcleo luminoso, verticalidad colosal, emoción directa e iconografía de sacrificio abstracta.',
+        'Launch diagonals, luminous core, colossal verticality, direct emotion, sacrificial iconography, and astronomical expansion',
       creative_brief:
-        'Construye una gramática launch-sacrifice reusable donde disciplina, ignición, verticalidad y expansión astronómica converjan en épica emocional directa sin infraestructura fija, entrenamiento literal, operadores, hardware concreto o cierre narrativo obligatorio.',
+        'Use monumental ignition sacrifice as vertical-epic grammar. Any prompt should feel disciplined, lit from within, ascending, and emotionally direct. Launch pads, operators, training, machines, and narrative finales are optional.',
     },
   },
   {
     id: 'SP05-239',
-    name: 'Bubblegum Cosmic Overdrive Style',
+    name: 'Bubblegum Cosmic Overdrive',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Exuberancia pop-cósmica, elasticidad de escala, energía juvenil abstracta y sentimentalidad escondida bajo espectáculo imposible.',
+        'Pop-cosmic anime exuberance where scale elasticity, saturated color, impossible spectacle, and hidden sentiment collide',
       form_and_line:
         'Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas pop de alto impulso.',
       color_palette:
@@ -781,20 +781,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo frame.',
       atmosphere: 'Exultante, extraña y conmovedora, de caos colorido con corazón.',
       key_features:
-        'Pop saturado, escala mutable, energía juvenil abstracta, espectáculo desmedido y corazón bajo caos cromático.',
+        'Saturated pop color, mutable scale, youthful energy, impossible spectacle, elastic geometry, and heart under chromatic chaos',
       creative_brief:
-        'Construye una gramática bubblegum-overdrive reusable donde color explosivo, elasticidad escalar y emoción juvenil convivan sin máquinas específicas, roles fijos, worldbuilding literal o espectáculo narrativo fijo.',
+        'Use bubblegum cosmic overdrive as elastic-pop scale grammar. Any prompt should feel huge, joyful, impossible, and secretly sincere. Machines, pilots, galaxies, roles, and fixed worldbuilding are optional.',
     },
   },
   {
     id: 'SP05-227',
-    name: 'Texhnolyze - Rust Wire Descent',
+    name: 'Rust-Wire Descent',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rust wire descent, with cybernetic nihilism, social decay, hard shadow, and dead-purpose machinery.',
+        'Cybernetic nihilism rendered through oxidized wire, failing light, cable abrasion, hard shadow, and downward social pressure',
       form_and_line:
         'Rigid amputated geometry, rust-wire diagonals, severe low silhouettes, tunnel-like compression, and brutal panel cuts.',
       color_palette:
@@ -809,20 +809,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Downward compression, subterranean depth, and claustrophobic perspective breaks.',
       atmosphere: 'Nihilistic, rusted, oppressive, cold',
       key_features:
-        'Rust-wire texture, cybernetic decay, oppressive descent, failing light, hard-shadow nihilism.',
+        'Rust-wire texture, cable scars, failing fluorescent light, oppressive descent, hard-shadow nihilism, and dead machinery',
       creative_brief:
-        'Apply rust-wire descent to any prompt through oxidized texture, failing fluorescent light, cable abrasion, and downward pressure without requiring prosthetics, corridors, underground spaces, or body-damage scenes.',
+        'Use Texhnolyze as style anchor for rust-wire descent. Any prompt should feel corroded, downward, bruised by infrastructure, and dimly alive. Prosthetics, underground spaces, corridors, body damage, and violence are optional.',
     },
   },
   {
     id: 'SP05-053',
-    name: 'Hydraulic Mass Attrition Style',
+    name: 'Hydraulic Attrition Mass',
     category: '7. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Industrial weight under attrition, hydraulic strain, scarred machinery logic, mud-heavy motion, and pressure-tested endurance.',
+        'Industrial anime weight under repeated attrition, hydraulic strain, scarred plating, mud-heavy motion, and pressure-tested endurance',
       form_and_line:
         'Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed stances, and blunt impact diagonals.',
       color_palette:
@@ -837,9 +837,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like perspective drag.',
       atmosphere: 'Gruff, pressured, gritty, mechanical',
       key_features:
-        'Hydraulic weight cues, scarred plating language, dirty sparks, compressed stance energy, and attrition-worn mechanical rhythm.',
+        'Hydraulic compression, scarred plating, dirty sparks, compact stance energy, worn mechanical rhythm, and impact-fatigue texture',
       creative_brief:
-        'Apply hydraulic mass attrition as a reusable style treatment: make any subject feel heavy, functional, stressed, and worn by repeated impacts while staying abstract, portable, and detached from fixed machines, operators, props, transport forms, or conflict settings.',
+        'Use hydraulic attrition mass as heavy-function grammar. Any prompt should feel load-bearing, stressed, dented, and built for survival. If a subject can carry hardware, add scarred plating, joints, hydraulics, or operator-scale mecha hints; vehicles, weapons, trenches, and conflict settings remain optional.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

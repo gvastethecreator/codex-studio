@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Saturday Night Fever, dancefloor-king swagger, polyester-dream confidence
+  aesthetic: 70s disco styling, mirror-ball swagger, polyester-dream confidence
   form_and_line: Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation
   color_palette: White suit, Gold, burgundy, burnt orange, avocado green, shiny-black, metallic silver
-  lighting_setup: Disco ball, mirrored-sphere fragments, colored-dancefloor squares, tri-light beam, fog-machine haze
+  lighting_setup: Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze
   material_texture: Polyester crepe, liquid satin, gold lamé, Qiana nylon, crushed velvet, patent leather
   render_quality: Fun, dance, Studio 54 electricity, Bee-Gees swagger
   spatial_distortion: None
-  atmosphere: Groovy, energetic, dancefloor-euphoria peak, mirror-ball transcendence, Saturday-night immortality
+  atmosphere: Groovy, energetic, mirror-ball transcendence, Saturday-night immortality
   key_features: Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair
-  creative_brief: Polyester gleams under a mirror ball's fractured universe, wide lapels framing a chest that breathes Saturday-night immortality. Platform soles elevate the dancer above the gravity of the weekday world, gold medallion catching colored light like a small sun orbiting a body that has discovered rhythm as religion and the dancefloor as sanctuary.
+  creative_brief: >-
+    Style the input as 70s disco: polyester sheen, wide lapels, flared pants,
+    platform soles, gold medallion cues, burnt orange and mirror-ball sparkle.
+    Keep dancefloor euphoria without requiring a dancer, chest hair, club,
+    Studio 54 reference or dancefloor sanctuary.
 avoidRules:
   - boring
   - matte
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

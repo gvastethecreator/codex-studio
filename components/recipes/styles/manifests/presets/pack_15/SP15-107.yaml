@@ -12,14 +12,14 @@ visualDna:
   color_palette: Coral red, aqua, and pearl gray.
   lighting_setup: Sea shimmer and bright coastal diffusion.
   material_texture: Calcium-like structures, glassy bio-panels, and wet stone.
-  render_quality: Coastal biotech concept art with graceful clarity.
+  render_quality: Coastal biotech render with graceful clarity and coral research instrumentation.
   spatial_distortion: Promenade-like vanishing point crossing reef terrace rhythm.
   atmosphere: Exploration, stewardship, and aquatic curiosity.
   key_features: Coral support motifs, tide instruments, reef observation pod shapes, and living research membranes.
   creative_brief: >-
-    Preserve coral laboratory-promenade grammar as a reusable style system:
-    reef-adjacent research leisure integration, coastal biocalcium tactility,
-    and exploratory stewardship should remain coherent across subjects.
+    Reef the input into coral research grace: coral-red lattice arcs, aqua tide
+    instruments, pearl-gray bio-panels, calcium-like textures, and promenade rail
+    strokes make any subject feel coastal, curious, and stewarded.
 avoidRules: [photoreal, cyberpunk, storm-chaos, watermark, text, logo, over-dark]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-107.webp }
 attributes:

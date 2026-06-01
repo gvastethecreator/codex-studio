@@ -54,15 +54,6 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
     message: 'YAML parser must load only while parsing catalog manifests.',
   },
   {
-    id: 'app-content-no-static-background',
-    filePath: 'components/AppContent.tsx',
-    forbidden: [
-      "import LiquidBlackBackground from './LiquidBlackBackground'",
-      'import LiquidBlackBackground from "./LiquidBlackBackground"',
-    ],
-    message: 'Liquid background must stay lazy because it is a visual effect.',
-  },
-  {
     id: 'viewport-no-static-route-pages',
     filePath: 'components/shell/StudioViewport.tsx',
     forbidden: [

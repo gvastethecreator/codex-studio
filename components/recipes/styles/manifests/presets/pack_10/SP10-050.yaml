@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Weave
   atmosphere: Classic, warm
   key_features: Grid
-  creative_brief: Warp and weft crossing in ancient code, each intersection a clan signature, each color a landscape. Wool remembers highlands and hearths, the grid worn into softness by generations.
+  creative_brief: Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness, layered warp and weft, warm tradition, and color intersections that behave like inherited structure. Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume context.
 avoidRules:
   - curved lines
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

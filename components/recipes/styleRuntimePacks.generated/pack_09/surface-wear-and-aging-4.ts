@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Freezing, ancient',
       key_features: 'Blue depth',
       creative_brief:
-        'Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile.',
+        'Summon the compressed time of glacial ice, where millennia of pressure have squeezed air into blue oblivion and internal cracks map the stress of slow, patient movement. An internal luminescence should glow from within, a cyan heart beating in frozen sleep that deepens toward the center. The material must feel ancient, patient, and terrifyingly fragile. Use Glacier Ice as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Poor, rural',
       key_features: 'Grid weave',
       creative_brief:
-        "Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave.",
+        "Capture the rough honesty of burlap where coarse jute fibers interlace in a grid of tan and brown utility, each thread a visible record of plant turned to purpose. The surface must feel dry and scratchy to the eye, a loose weave that hints at the grain it once carried. Render the dignity of the cheap and functional, beauty found in necessity's simplest weave. Use Burlap Sack as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -47,17 +47,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Surface Wear And Aging',
     negativePrompt: 'wet mud',
     style: {
-      aesthetic: 'Dried lake bed',
+      aesthetic: 'Cracked dry mud',
       form_and_line: 'Puzzle cracks',
       color_palette: 'Tan, Brown',
-      lighting_setup: 'Harsh sun',
+      lighting_setup: 'Hard dry light',
       material_texture: 'Dry clay',
-      render_quality: 'Drought, desert',
+      render_quality: 'Arid, brittle',
       spatial_distortion: 'Curled plates',
       atmosphere: 'Thirsty, hot',
       key_features: 'Crack pattern',
       creative_brief:
-        'Capture the drought geometry of cracked mud where puzzle-piece plates curl at the edges, separating into a map of thirst written in tan and brown under harsh desert sun. Each polygon should feel baked and brittle, the curled edges casting thin shadows that deepen the sense of arid abandonment. Render the beauty of dessication, the landscape of thirst drawn in shrinking clay.',
+        'Apply cracked-mud desiccation to the input: tan-brown puzzle plates, curled brittle edges, shrinking-clay gaps, and thin shadows under hard dry light. If ground, terrain, clay, skin-like surface, or object exists, fracture it directly; otherwise use drought geometry as surface pattern without forcing a desert landscape.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Disposable, white',
       key_features: 'Cell structure',
       creative_brief:
-        'Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology.',
+        'Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -78,7 +78,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text',
       creative_brief:
-        'Use local-news package design as style: clean studio light, blue-red broadcast graphics, lower-third bars, inset rectangles, chroma-key edge halos, and compressed video sharpness. Avoid requiring anchors, desks, maps, headlines, or readable text. The input should feel composited into urgent TV grammar.',
+        'Use local-news package design as style: clean studio light, blue-red broadcast graphics, lower-third bars, inset rectangles, chroma-key edge halos, and compressed video sharpness. Avoid requiring anchors, desks, maps, headlines, or readable text. The input should feel composited into urgent TV grammar. Apply Local News Chroma Key Package as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {
@@ -104,7 +104,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text',
       creative_brief:
-        'Render any prompt as public-access cable: cheap title-safe layout, crawl-band shapes, VHS tracking noise, analog snow, overscan crop, and sincere low-budget staging. Avoid readable announcements, specific community events, hosts, or studio scenes. The style should feel routed through a worn municipal cable feed.',
+        'Render any prompt as public-access cable: cheap title-safe layout, crawl-band shapes, VHS tracking noise, analog snow, overscan crop, and sincere low-budget staging. Avoid readable announcements, specific community events, hosts, or studio setups. The style should feel routed through a worn municipal cable feed.',
     },
   },
   {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels',
       creative_brief:
-        'Map the input through weather-radar broadcast design: storm-color blobs, contour bands, radar arcs, gridded overlays, screen glow, and compression artifacts. Avoid literal maps, meteorologists, cities, labels, or readable warnings as requirements. The result should feel like form translated into Doppler data.',
+        'Map the input through weather-radar broadcast design: storm-color blobs, contour bands, radar arcs, gridded overlays, screen glow, and compression artifacts. Avoid literal maps, meteorologists, cities, labels, or readable warnings as requirements. The result should feel like form translated into Doppler data. Apply Weather Radar Doppler Graphic as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
     },
   },
   {

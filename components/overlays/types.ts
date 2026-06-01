@@ -58,7 +58,6 @@ export interface StudioSystemOverlayFlags {
   isSavingSettings: boolean;
   isLoadingOutputSources: boolean;
   isRegisteringOutputSource: boolean;
-  isBackgroundEnabled: boolean;
   isResettingStudio: boolean;
 }
 
@@ -116,8 +115,6 @@ export interface StudioSystemOverlaysProps {
       ) => void | Promise<void>;
     };
     libraryDir: string | null;
-    isBackgroundEnabled: boolean;
-    onToggleBackground: () => void;
     onResetStudio: () => void | Promise<void>;
     isResettingStudio: boolean;
   };

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Seafoam, pale gold, and blue-black.
   lighting_setup: Saltlit dusk with luminous waterline edges.
   material_texture: Salted metal, polished shell, and translucent deck panels.
-  render_quality: Clear civic seascape with forum structure.
+  render_quality: Clear civic-seapunk render with forum structure and saltlit tidal ritual.
   spatial_distortion: Forum-circle geometry over water with radiating dock-like spokes.
   atmosphere: Dialogue, openness, and buoyant civic exchange.
   key_features: Saltlight poles, debate-ring motifs, floating step bands, and tidal civic glow.
   creative_brief: >-
-    Preserve saltlight forum-platform grammar as a reusable style system:
-    floating deliberative civic rings, dusk saltlight debate staging, and
-    buoyant democratic openness should remain coherent across subjects.
+    Open the input into saltlight civic exchange: seafoam forum rings,
+    pale-gold waterline edges, blue-black dusk, salted metal poles, and floating
+    dock spokes make any subject feel deliberative, buoyant, and public.
 avoidRules: [photoreal, dark, militarized, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-127.webp }
 attributes:

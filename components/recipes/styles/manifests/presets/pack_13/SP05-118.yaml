@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-118
 packId: pack_13
-name: Sunset Silhouette Romance
+name: Backlit Contour Longing
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Golden-hour silhouette anime style with sky-dominant emotional storytelling, backlit contour poetry, and twilight longing through color
-  form_and_line: Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape language, minimal internal line intrusion
-  color_palette: Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk transitions, cyan zenith remnants
-  lighting_setup: Extreme backlight staging with flare halos, atmospheric diffusion, crepuscular beam accents, and overexposed solar edge treatment
-  material_texture: Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain shadow structure
-  render_quality: High-impact sunset silhouette rendering with cinematic sky scripting and emotionally readable negative-space composition
-  spatial_distortion: Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven perceived depth expansion
+  aesthetic: >-
+    Backlit contour anime longing where sky-led color scripts, pure silhouette dramaturgy, flare
+    haze, and golden rim light carry emotion
+  form_and_line: >-
+    Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape
+    language, minimal internal line intrusion
+  color_palette: >-
+    Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk
+    transitions, cyan zenith remnants
+  lighting_setup: >-
+    Extreme backlight staging with flare halos, atmospheric diffusion, crepuscular beam accents, and
+    overexposed solar edge treatment
+  material_texture: >-
+    Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain
+    shadow structure
+  render_quality: >-
+    High-impact sunset silhouette rendering with cinematic sky scripting and emotionally readable
+    negative-space composition
+  spatial_distortion: >-
+    Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven
+    perceived depth expansion
   atmosphere: Nostalgic, bittersweet, romantic, tender, wistful
-  key_features: Sky-as-narrator framing, pure silhouette dramaturgy, golden rim contour logic, flare-and-haze emotional depth
+  key_features: >-
+    Sky-led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script,
+    and posture-like contour emotion
   creative_brief: >-
-    Preserve identity through sky-led silhouette storytelling: emotional weight
-    should emerge from backlight color scripts, posture contours, and atmospheric
-    flare depth rather than specific rooftop or seaside scenes.
+    Use backlit contour longing as silhouette-emotion grammar. Any prompt should gain sky-scale
+    color, rim-lit edges, flare haze, and readable contour drama. Rooftops, beaches, couples,
+    sunsets as literal scene, and romance staging are optional.
 avoidRules:
   - dark
   - gloomy

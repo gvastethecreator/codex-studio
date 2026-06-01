@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, old, stoic endurance, documentary gravity
   key_features: Black edges, iron oxidation, thumb-mark, plate wear
-  creative_brief: 'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling.'
+  creative_brief: >-
+    Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened
+    edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image
+    should feel carried through time on metal, scarred by process and handling. Apply Tintype as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
+    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
+    narrative setup.
 avoidRules:
   - clean
   - white

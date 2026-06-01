@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, tropical-elements, low-detail',
     style: {
       aesthetic:
-        'Tactical shooter de asalto polar con enfoque en control por sectores, movilidad vertical y gestión climática.',
+        'Gramática tactical-shooter polar con control por sectores, movilidad vertical, visibilidad térmica y clima como sistema.',
       subject_treatment:
-        'Escuadras de breacher/sniper/support con equipamiento térmico y anclajes magnéticos de ascenso.',
+        'Aplica roles breacher/sniper/support o equipo térmico al input cuando corresponda; si no, usar anclajes, capas antideslizantes y señales operativas.',
       color_and_tone:
         'Cian gélido, acero oscuro y naranjas de instrumentación para visibilidad operacional.',
       lighting_and_shadow:
@@ -20,10 +20,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hielo compacto, nieve pisada, escarcha en blindaje y superficies antideslizantes de combate.',
       camera_and_composition:
-        'Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego identificables.',
+        'Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego como lectura táctica flexible.',
       atmosphere_and_mood: 'Resistencia extrema, precisión táctica y desgaste ambiental continuo.',
       rendering_and_quality:
         'Operation key art con lectura topográfica, claridad de objetivos y flujo de asedio.',
+      creative_brief:
+        'Aplica Glacier Fortress Assault como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -33,9 +35,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, modern-weapons, lowres',
     style: {
       aesthetic:
-        'Co-op siege medieval-fantasy con layout de defensa por oleadas y escalado de presión en espacio gótico.',
+        'Gramática co-op siege medieval-fantasy con defensa por oleadas, presión escalada y ornamentación gótica funcional.',
       subject_treatment:
-        'Party sinérgica por rol (tank/heal/range/control) con prioridad de objetivos y posicionamiento defensivo.',
+        'Reinterpreta el input como party, fortificación, reliquia o amenaza de asedio; roles tank/heal/range/control deben aparecer sólo cuando ayudan a la lectura.',
       color_and_tone:
         'Grises ceniza, rojo brasa y oro apagado para diferenciar estado de fortificación y daño acumulado.',
       lighting_and_shadow:
@@ -43,10 +45,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Piedra erosionada, vitrales rotos, metal fatigado y restos de barricada reutilizable.',
       camera_and_composition:
-        'Nave central como objective hub, flancos activos y rutas de oleada claramente telegráficas.',
+        'Objective hub, flancos activos y rutas de oleada telegráficas como composición; no exigir catedral ni nave central.',
       atmosphere_and_mood: 'Presión sostenida, heroísmo cooperativo y resistencia de último tramo.',
       rendering_and_quality:
         'Raid-endgame visual con excelente readability de objetivos, flujos enemigos y ventanas de cooldown.',
+      creative_brief:
+        'Aplica Ruined Cathedral Co-op Siege como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -56,9 +60,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, cluttered-ui, blur',
     style: {
       aesthetic:
-        'Tactical-RPG isométrico en ruinas vivas, orientado a posicionamiento, cobertura orgánica y control por turnos.',
+        'Gramática tactical-RPG isométrica con posicionamiento, cobertura orgánica, turnos y tiles de ruina viva.',
       subject_treatment:
-        'Escuadras de clases contrastadas (tank/skirmisher/support/ranger) con silueta inequívoca.',
+        'Convierte el input en clase tank/skirmisher/support/ranger, cobertura, unidad u objetivo táctico según su forma.',
       color_and_tone:
         'Verde musgo, piedra beige y acentos escarlata para codificar aliados, amenaza y objetivo.',
       lighting_and_shadow:
@@ -66,7 +70,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Mármol fracturado, follaje húmedo, tejido táctico y raíces estructurales activas.',
       camera_and_composition:
-        'Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes.',
+        'Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes sin exigir ruinas.',
       atmosphere_and_mood: 'Estratégica, calculada y tensa.',
       rendering_and_quality:
         'Battle-map readability-first con telemetría visual de alcance, cobertura y prioridad táctica.',
@@ -79,9 +83,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, static-background, blur',
     style: {
       aesthetic:
-        'Co-op defense sobre tren blindado en fantasía bélica, con progreso por vagones y eventos de asedio móvil.',
+        'Gramática co-op defense móvil de fantasía bélica con progreso por módulos, asedio en movimiento y presión lateral.',
       subject_treatment:
-        'Defensores por rol elemental (control, ruptura, soporte, anti-swarm) con identidad visual clara.',
+        'Convierte el input en defensor elemental, vagón-módulo, reliquia móvil o amenaza de asedio según convenga.',
       color_and_tone:
         'Acero oscuro, oro heroico y azul nocturno para codificar ofensiva, defensa y estado crítico.',
       lighting_and_shadow:
@@ -89,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hierro remachado, madera envejecida, cuero reforzado y mecanismos de artillería ritual.',
       camera_and_composition:
-        'Perspectiva de avance con amenazas frontales y laterales por carril de vagón.',
+        'Perspectiva de avance con amenazas frontales/laterales y carriles modulares sin exigir tren literal.',
       atmosphere_and_mood: 'Urgente, cooperativa y épica en movimiento constante.',
       rendering_and_quality:
         'Mission art gameplay-first con legibilidad de objetivos por vagón, daño y prioridad enemiga.',
@@ -102,16 +106,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, landlocked, lowres',
     style: {
       aesthetic:
-        'Naval tactics de escaramuza en arrecifes metálicos, orientado a maniobra, control de ruta y fuego cruzado.',
+        'Gramática naval-tactics de escaramuza con maniobra, bloqueo de ruta, fuego cruzado y vectores de alcance.',
       subject_treatment:
-        'Fragatas ligeras y corbetas de asalto diferenciadas por perfil de alcance y movilidad.',
+        'Transforma el input en fragata, corbeta, obstáculo, vector táctico o estructura marina armada.',
       color_and_tone:
         'Azul acero, espuma blanca y rojo señal para lectura de aliados, daño y alerta.',
       lighting_and_shadow: 'Cielo cubierto con reflejos marinos fríos y destellos de artillería.',
       texture_and_material:
         'Planchas húmedas, cabos tensos, óxido salino y oleaje áspero de alta fricción.',
       camera_and_composition:
-        'Vista amplia con corredores de flanqueo, zonas de bloqueo y puntos de emboscada.',
+        'Vista amplia con corredores de flanqueo, bloqueo y emboscada sin exigir arrecife o mar literal.',
       atmosphere_and_mood: 'Tensa, táctica y dominada por control marítimo.',
       rendering_and_quality:
         'Naval map strategy-first con legibilidad de vectores, alcance y prioridades de objetivo.',
@@ -124,14 +128,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clutter, blur',
     style: {
       aesthetic:
-        'Objective-PvP de captura en puente interdimensional, centrado en control de punto y rotación de escuadras.',
+        'Gramática objective-PvP de captura con punto disputado, rotación de escuadras y energía interdimensional.',
       subject_treatment:
-        'Escuadras rivales con gadgets de movilidad y roles de entrada/sostén/limpieza.',
+        'Reinterpreta el input como squad, gadget, punto de captura, cobertura o recurso de overtime.',
       color_and_tone: 'Azul plasma, naranja rival y gris titanio para friend-foe clarity.',
       lighting_and_shadow: 'Energía de grieta como key light para telegraph de eventos y overtime.',
       texture_and_material:
         'Superficies metálicas, escudos de campo y chispas de impacto sostenido.',
-      camera_and_composition: 'Eje central contestado con flancos jugables y rutas de reconquista.',
+      camera_and_composition:
+        'Eje central contestado, flancos jugables y rutas de reconquista sin exigir puente.',
       atmosphere_and_mood: 'Frenética, competitiva y de control territorial.',
       rendering_and_quality:
         'Objective-mode map con layout nítido de punto, cobertura y líneas de empuje.',
@@ -144,16 +149,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, playful-style, lowres',
     style: {
       aesthetic:
-        'Last-stand siege en basílica hueca, orientado a defensa escalonada y gestión de recursos finales.',
+        'Gramática last-stand siege con defensa escalonada, recursos finales, desgaste y climax heroico.',
       subject_treatment:
-        'Guardianes exhaustos vs oleada final, con lectura clara de rol y estado crítico.',
+        'Convierte el input en guardián exhausto, reliquia defendida, oleada final o fortificación improvisada.',
       color_and_tone:
         'Gris polvo, rojo profundo y oro apagado para dramatizar desgaste y resistencia.',
       lighting_and_shadow: 'Luz cenital rota por vitrales fracturados que marca zonas de presión.',
       texture_and_material:
         'Escombro, mármol quebrado, acero dañado y restos de fortificación improvisada.',
       camera_and_composition:
-        'Escalinata central como línea de defensa con flancos y puntos de colapso legibles.',
+        'Línea de defensa, flancos y puntos de colapso legibles sin exigir basílica o escalinata.',
       atmosphere_and_mood: 'Heroica, sacrificial y al máximo de tensión.',
       rendering_and_quality:
         'Narrative-climax gameplay art con telegraph claro de oleadas, objetivo y supervivencia.',
@@ -166,16 +171,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, futuristic-city, noisy',
     style: {
       aesthetic:
-        'Tower-defense nocturno en plantación mecanizada, centrado en economía local y defensa por carriles.',
+        'Gramática tower-defense nocturna con plantación mecanizada, economía local y carriles convergentes.',
       subject_treatment:
-        'Centinelas rurales con torretas improvisadas por rol (slow, burst, support).',
+        'Reinterpreta el input como centinela, torreta improvisada, cultivo-máquina o unidad de oleada.',
       color_and_tone:
         'Verde oscuro, naranja lámpara y gris acero para separar línea defensiva y puntos críticos.',
       lighting_and_shadow: 'Iluminación perimetral con sombras largas para telegraph de oleadas.',
       texture_and_material:
         'Suelo húmedo, metal oxidado, follaje utilitario y maquinaria agrícola reforzada.',
       camera_and_composition:
-        'Carriles convergentes hacia granero central con nodos de upgrade visibles.',
+        'Carriles convergentes y nodos de upgrade visibles sin exigir granero u orchard.',
       atmosphere_and_mood: 'Cooperativa, resistente y de presión sostenida.',
       rendering_and_quality:
         'Tactical stage gameplay-first con legibilidad de pathing, alcance y prioridades.',
@@ -188,9 +193,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, tropical, low-detail',
     style: {
       aesthetic:
-        'Polar-siege de bastión auroral, orientado a defensa por capas, ruptura de línea y fallback táctico.',
+        'Gramática polar-siege auroral con defensa por capas, ruptura de línea y fallback táctico.',
       subject_treatment:
-        'Defensores coordinados y asaltantes de brecha con separación de clase legible bajo presión.',
+        'Convierte el input en defensor, asaltante de brecha, capa de bastión, ruta o clase bajo presión.',
       color_and_tone:
         'Verdes aurora, cian acero, pizarra tormenta y rojos de señal para legibilidad bélica.',
       lighting_and_shadow:
@@ -198,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Placas de hielo talladas por viento, mampostería escarchada y hierro marcado por impacto.',
       camera_and_composition:
-        'Vista multi-tier con vectores de ataque, jerarquía de lanes y zonas de repliegue.',
+        'Multi-tier, vectores de ataque y zonas de repliegue sin exigir bastión concreto.',
       atmosphere_and_mood: 'Heroica, urgente y de resistencia extrema.',
       rendering_and_quality:
         'Warfront gameplay key-art con claridad de clase, ruta y tempo de asedio.',
@@ -211,9 +216,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grimdark, blur',
     style: {
       aesthetic:
-        'Co-op citadel-defense luminosa, orientada a sinergia de clases y sostén de múltiples accesos.',
+        'Gramática co-op defense luminosa con sinergia de clases, múltiples accesos y sostén de línea.',
       subject_treatment:
-        'Roles complementarios (support/damage/tank/control) sosteniendo lanes convergentes con claridad total.',
+        'Convierte el input en support/damage/tank/control, objetivo protegido, acceso o nodo cristalino defensivo.',
       color_and_tone:
         'Blanco alabastro, oro regio, acentos cobalto/azur y microseñales rojas de amenaza.',
       lighting_and_shadow:
@@ -221,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Mármol ceremonial pulido, aleación filigranada, nodos cristalinos y piedra patrimonial.',
       camera_and_composition:
-        'Plaza-hub con ingresos ramificados, posiciones de equipo legibles y foco objetivo por capas.',
+        'Ingresos ramificados, posiciones de equipo y foco objetivo por capas sin exigir citadel.',
       atmosphere_and_mood: 'Unida, urgente y épicamente esperanzada.',
       rendering_and_quality:
         'Co-op warfront gameplay art de alta claridad con cues sólidos de pacing y control de línea.',

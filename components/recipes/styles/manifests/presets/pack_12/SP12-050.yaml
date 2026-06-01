@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Survival-horror polar en estación de señal aislada, centrado en reparación de sistemas y defensa de perímetro.
-  subject_treatment: Técnicos armados vs entidades desconocidas, con lectura de rol por herramienta y protocolo.
+  aesthetic: Gramática survival-horror polar con reparación de sistemas, defensa de perímetro, baliza rota y aislamiento.
+  subject_treatment: Convierte el input en técnico armado, entidad desconocida, herramienta, antena parcial o fallo de protocolo.
   color_and_tone: Blanco grisáceo, rojo emergencia y azul metálico para jerarquía de estado crítico.
   lighting_and_shadow: Baliza rotatoria, penumbra dominante y ventanas de visibilidad intermitente.
   texture_and_material: Nieve compacta, acero helado, escarcha y cableado expuesto por clima extremo.
-  camera_and_composition: Torre central en vacío hostil con rutas de acceso y puntos de fallo identificables.
+  camera_and_composition: Nodo central, rutas de acceso y puntos de fallo identificables sin exigir torre o estación.
   atmosphere_and_mood: Aislada, paranoica y resistente.
   rendering_and_quality: Survival gameplay visual con identidad fuerte y telemetría clara de riesgo operativo.
 avoidRules:

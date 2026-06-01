@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Combative, cute, sparkling, energetic
   key_features: Frill-coded sparkle, strict-to-flustered acting, secret-identity staging, authority-costume contrast, playful dominance framing
   creative_brief: >-
-    Preserve secret-uniform double-life grammar as a reusable style system:
-    authority-versus-frill visual contrast, identity-switch expression rhythm,
-    and playful dominance staging should stay stable across subjects.
+    Split the input into secret-uniform double life: strict black-white binaries,
+    pastel embarrassment flashes, frill-coded sparkle, authority-red punctuation,
+    and identity-switch acting can energize any subject without requiring a maid
+    cafe, school council, uniform gag, or romance duel.
 avoidRules:
   - realistic
   - 3d render

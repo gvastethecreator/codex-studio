@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Gene-lit path motifs, communal wetlab cues, symbiotic canopy nodes, and bio-signal geometry.',
       creative_brief:
-        'Preserve biolumina night-grid grammar as a reusable style system: organism-powered civic infrastructure, metabolic corridor legibility, and trust-centered biotech should remain coherent across subjects without requiring streets, labs, kiosks, or a literal neighborhood.',
+        'Make the input glow like a trusted living circuit: cyan metabolic pulses, mycelial conduits, wet bioceramic pores, and safe-path light logic should organize the image. Streets, labs, kiosks, or neighborhood cues may appear, but the transferable style is civic biotech that illuminates by breathing.',
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Community gene-care motifs, edible tissue greenhouse cues, open-source wetlab geometry.',
       creative_brief:
-        'Preserve gene-garden borough grammar as a reusable style language: civic biotech accessibility, ethical wetlab openness, and community-scale ecological adaptation should remain stable across subjects without requiring neighborhoods, clinics, labs, or greenhouses.',
+        'Grow the input as ethical public biotech: wet biogel membranes, mycelial walls, lilac specimen glow, open-source care nodes, and adaptive green anatomy. Neighborhoods, clinics, labs, or greenhouses can be hints; the transferable style is accessible genomic craft with warmth.',
     },
   },
   {
@@ -67,13 +67,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Mushroom cream, moss green, and dusk violet.',
       lighting_setup: 'Subsurface glow and soft bioluminescent pulses.',
       material_texture: 'Fungal felt, porous ceramic, and damp stone.',
-      render_quality: 'Clean biotech concept with organic legibility.',
+      render_quality: 'Clean biotech render with organic legibility and living mobility structure.',
       spatial_distortion: 'Long corridor-like depth with branching cellular ribs.',
       atmosphere: 'Adaptive infrastructure, calm motion, and living-system trust.',
       key_features:
         'Mycelial rail motifs, pod silhouettes, nutrient maintenance nodes, and soft hyphae glow.',
       creative_brief:
-        'Preserve mycelial transit-spine grammar as a reusable style system: fungal-structural mobility corridors, branching cellular wayfinding, and calm adaptive infrastructure should remain coherent across subjects.',
+        'Grow the input along a mycelial transit spine: mushroom-cream ribs, moss-green branch nodes, dusk-violet bioglow, porous ceramic arches, and hyphae wayfinding lines make any subject feel adaptive and mobile.',
     },
   },
   {
@@ -87,13 +87,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Leaf green, coral pink, and pearl white.',
       lighting_setup: 'Dappled canopy light with gentle bioglow accents.',
       material_texture: 'Living fabric, translucent membranes, and woven fiber.',
-      render_quality: 'Bright civic biotech scene with highly readable stalls.',
+      render_quality: 'Bright civic biotech render with readable mutualist canopy cues.',
       spatial_distortion: 'Sweeping aisle-like depth under layered living roof forms.',
       atmosphere: 'Exchange, nourishment, and mutual dependence.',
       key_features:
         'Symbiotic exchange motifs, nutrient-node shapes, canopy vent petals, and hanging pod clusters.',
       creative_brief:
-        'Preserve symbiont market-canopy grammar as a reusable style system: cooperative bio-canopy commerce, nutrient-linked stall ecology, and mutualist public exchange should remain coherent across subjects.',
+        'Shelter the input under symbiotic exchange: leaf-green bio-canopies, coral-pink pod clusters, pearl membranes, nutrient-node accents, and vent petal rhythms make any subject feel mutualist, nourished, and public.',
     },
   },
   {
@@ -108,13 +108,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Chlorophyll green, rose amber, and clean white.',
       lighting_setup: 'Bright diffused daylight with reflective leaf scatter.',
       material_texture: 'Living trellises, polished bio-glass, and soft soil beds.',
-      render_quality: 'Elegant civic biotech concept art.',
+      render_quality:
+        'Elegant civic biotech render with botanical debate and genome-learning cues.',
       spatial_distortion: 'Amphitheater-like depth framed by botanical layers.',
       atmosphere: 'Debate, cultivation, and intelligent stewardship.',
       key_features:
         'Genome bench motifs, pollen display grids, bio-learning panels, and DNA trellis shadows.',
       creative_brief:
-        'Preserve genome garden-forum grammar as a reusable style system: botanical knowledge amphitheaters, DNA-trellis civic debate framing, and cultivated stewardship intelligence should remain coherent across subjects.',
+        'Debate the input inside genome garden logic: chlorophyll spiral bands, rose-amber pollen grids, DNA trellis shadows, petal lab alcoves, and clean-white bio-learning panels make any subject feel cultivated and civic.',
     },
   },
   {
@@ -128,13 +129,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Soft cyan, eucalyptus green, and porcelain.',
       lighting_setup: 'Clean clinical glow softened by living tissue luminescence.',
       material_texture: 'Biofabric threads, gel pads, and matte ceramic.',
-      render_quality: 'Gentle biotech interior with humane readability.',
+      render_quality:
+        'Gentle biotech render with humane readability and tactile nerve-repair cues.',
       spatial_distortion: 'Loom-centered radial plan with restorative pocket depth.',
       atmosphere: 'Care, repair, and embodied trust.',
       key_features:
         'Nerve loom motifs, bioscan petals, restorative membranes, and filament pathway glow.',
       creative_brief:
-        'Preserve nerve loom-clinic grammar as a reusable style system: loom-based restorative medicine, soft radial treatment choreography, and humane biofabric trust should remain coherent across subjects.',
+        'Weave the input through nerve-repair care: soft cyan filaments, eucalyptus membrane ribs, porcelain alcove pockets, gel-pad highlights, and loom-frame pathways make any subject feel restored, embodied, and trusted.',
     },
   },
   {
@@ -150,13 +152,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Coral red, aqua, and pearl gray.',
       lighting_setup: 'Sea shimmer and bright coastal diffusion.',
       material_texture: 'Calcium-like structures, glassy bio-panels, and wet stone.',
-      render_quality: 'Coastal biotech concept art with graceful clarity.',
+      render_quality:
+        'Coastal biotech render with graceful clarity and coral research instrumentation.',
       spatial_distortion: 'Promenade-like vanishing point crossing reef terrace rhythm.',
       atmosphere: 'Exploration, stewardship, and aquatic curiosity.',
       key_features:
         'Coral support motifs, tide instruments, reef observation pod shapes, and living research membranes.',
       creative_brief:
-        'Preserve coral laboratory-promenade grammar as a reusable style system: reef-adjacent research leisure integration, coastal biocalcium tactility, and exploratory stewardship should remain coherent across subjects.',
+        'Reef the input into coral research grace: coral-red lattice arcs, aqua tide instruments, pearl-gray bio-panels, calcium-like textures, and promenade rail strokes make any subject feel coastal, curious, and stewarded.',
     },
   },
   {
@@ -172,13 +175,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Warm white, moss, and amber biolight.',
       lighting_setup: 'Workshop daylight and internal growth lamps.',
       material_texture: 'Bio-foam, smooth glass, and plant-fiber mesh.',
-      render_quality: 'Productive civic biotech with clear process readability.',
+      render_quality:
+        'Productive civic biotech render with clear process readability and co-growth fabrication cues.',
       spatial_distortion: 'Open-plan radial geometry with fabrication bay rhythm.',
       atmosphere: 'Collaboration, invention, and ecological pragmatism.',
       key_features:
         'Growth trays, living molds, maker-station motifs, and translucent biofabrication vats.',
       creative_brief:
-        'Preserve biofoundry commons grammar as a reusable style system: public co-growth fabrication workflows, organoid production legibility, and ecological maker pragmatism should remain coherent across subjects.',
+        'Fabricate the input in public biofoundry rhythm: warm-white worktable grids, moss growth trays, amber internal lamps, translucent vats, and plant-fiber mesh make any subject feel co-grown, shared, and pragmatically alive.',
     },
   },
   {
@@ -193,13 +197,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Sap green, cloud white, and soft amber.',
       lighting_setup: 'Sky daylight filtered through translucent living spans.',
       material_texture: 'Root fiber, bio-resin, and woven membrane.',
-      render_quality: 'Infrastructure concept with lush organic engineering.',
+      render_quality: 'Lush organic-infrastructure render with adaptive bridge engineering.',
       spatial_distortion: 'Bridge-grid crossing layered terrace depth.',
       atmosphere: 'Connection, resilience, and responsive infrastructure.',
       key_features:
         'Living span motifs, root anchors, adaptive path bands, and self-healing seam textures.',
       creative_brief:
-        'Preserve living bridge-district grammar as a reusable style system: bio-arched circulation networks, root-anchor resilience engineering, and responsive connective urbanism should remain coherent across subjects.',
+        'Span the input with living bridge resilience: sap-green bio-arches, cloud-white membranes, amber seam glows, root-anchor textures, and adaptive path bands make any subject feel connected, healing, and responsive.',
     },
   },
   {
@@ -215,13 +219,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Mushroom beige, moss green, and twilight blue.',
       lighting_setup: 'Gentle bioluminescent signal pulses and reflected plaza light.',
       material_texture: 'Fungal surfaces, wet stone, and translucent growth membranes.',
-      render_quality: 'Symbolic biotech cityscape with legible circulation.',
+      render_quality:
+        'Symbolic biotech render with legible circulation and public spore-signal cues.',
       spatial_distortion: 'Circular public-interface layout with branching signal arms.',
       atmosphere: 'Communication, adaptation, and communal intelligence.',
       key_features:
         'Spore beacons, memory spores, public signal blooms, and branching interface petals.',
       creative_brief:
-        'Preserve spore signal-plaza grammar as a reusable style system: fungal communication monuments, circular signal-civic choreography, and communal adaptive intelligence should remain coherent across subjects.',
+        'Broadcast the input through spore civic intelligence: mushroom-beige rings, moss signal petals, twilight-blue pulses, fungal surface texture, and branching interface arms make any subject feel communicative and adaptive.',
     },
   },
   {
@@ -237,13 +242,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Pearl, muted coral, and quiet jade.',
       lighting_setup: 'Museum diffusion with internal biological glow.',
       material_texture: 'Bio-glass, preserved membranes, and smooth ceramic.',
-      render_quality: 'Museum-grade biotech concept with fragile elegance.',
+      render_quality: 'Museum-grade biotech render with fragile elegance and specimen-memory cues.',
       spatial_distortion: 'Pavilion-shell focus around a central specimen spine.',
       atmosphere: 'Preservation, contemplation, and scientific tenderness.',
       key_features:
         'Tissue-drawer motifs, bio-index panels, preservation domes, and translucent specimen membranes.',
       creative_brief:
-        'Preserve tissue archive-pavilion grammar as a reusable style system: specimen-centered memory architecture, fragile bio-preservation elegance, and scientific tenderness should remain coherent across subjects.',
+        'Archive the input as tender tissue memory: pearl shell ribs, muted-coral specimen bands, quiet-jade bio-index panels, preservation domes, and translucent membrane layers make any subject feel fragile and remembered.',
     },
   },
   {
@@ -259,13 +264,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Verdant green, cream, and honey amber.',
       lighting_setup: 'Sunlit facades with diffuse interior glow.',
       material_texture: 'Leaf-film, timber composites, and matte bioceramic.',
-      render_quality: 'Warm housing concept with strong environmental readability.',
+      render_quality:
+        'Warm photosynthetic render with strong environmental readability and domestic comfort cues.',
       spatial_distortion: 'Vertical terraced stack rising like living garden machinery.',
       atmosphere: 'Domestic comfort, ecological intelligence, and bright stability.',
       key_features:
         'Chloroplast panels, air-garden motifs, terrace nurseries, and photosynthetic glow seams.',
       creative_brief:
-        'Preserve chloroplast housing-stack grammar as a reusable style system: photosynthetic domestic envelopes, terraced air-garden comfort, and bright ecological stability should remain coherent across subjects.',
+        'Photosynthesize the input into domestic stability: verdant leaf-film panels, cream bioceramic terraces, honey glow seams, sun-capture fins, and air-garden ribs make any subject feel breathable, powered, and sheltered.',
     },
   },
   {
@@ -281,13 +287,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Seafoam, pearl white, and muted aqua.',
       lighting_setup: 'Harbor daylight with soft water bounce.',
       material_texture: 'Wet bio-panels, translucent tubes, and ceramic docks.',
-      render_quality: 'Clean maritime biotech concept with calm precision.',
+      render_quality:
+        'Clean maritime-biotech render with calm precision and regenerative logistics cues.',
       spatial_distortion: 'Dock-like perspective leading to regenerative intake pods.',
       atmosphere: 'Recovery, exchange, and compassionate infrastructure.',
       key_features:
         'Stemcell capsule motifs, tide-line curves, restorative pods, and fluid column silhouettes.',
       creative_brief:
-        'Preserve stemcell harbor grammar as a reusable style system: regenerative maritime logistics, dockside care infrastructure, and compassionate renewal pathways should remain coherent across subjects.',
+        'Harbor the input in stemcell renewal: seafoam dock curves, pearl treatment pods, muted-aqua fluid towers, translucent capsule arcs, and soft water bounce make any subject feel compassionate, precise, and regenerative.',
     },
   },
   {
@@ -302,13 +309,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Soft rose, algae green, and pale ivory.',
       lighting_setup: 'Celestial moonlight mixed with internal bioglow.',
       material_texture: 'Living membranes, polished lens glass, and soft organic ribs.',
-      render_quality: 'Surreal but readable biotech concept art.',
+      render_quality: 'Surreal readable biotech render with living sensory instrumentation.',
       spatial_distortion: 'Dome-centered observation composition with layered organ-garden depth.',
       atmosphere: 'Awe, measurement, and organic wonder.',
       key_features:
         'Organ blooms, sensor domes, growth-bench motifs, and living sensory membranes.',
       creative_brief:
-        'Preserve organ garden-observatory grammar as a reusable style system: sensory-organ astronomical instrumentation, petaled growth observatories, and organic wonder measurement should remain coherent across subjects.',
+        'Observe the input through organ-garden senses: soft-rose petals, algae-green stalk arrays, pale-ivory rib platforms, polished lens domes, and internal bioglow make any subject feel measured, alive, and wondrous.',
     },
   },
   {
@@ -324,13 +331,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Clear aqua, moss, and sunlit white.',
       lighting_setup: 'Rain-diffused skylight and reflective wet surfaces.',
       material_texture: 'Bioglass, living fiber, and smooth stone.',
-      render_quality: 'Bright infrastructure illustration with environmental clarity.',
+      render_quality:
+        'Bright climate-infrastructure render with environmental clarity and wet bioglass tactility.',
       spatial_distortion: 'Atrium verticality with layered water-flow depth.',
       atmosphere: 'Renewal, abundance, and climate adaptation.',
       key_features:
         'Rain-catcher rings, bioglass wall glow, water nerve channels, and vine-laced downspout marks.',
       creative_brief:
-        'Preserve bioglass rain-atrium grammar as a reusable style system: vertical rain-harvest choreography, reflective wet bioglass tactility, and climate-adaptive abundance should remain coherent across subjects.',
+        'Rain-wash the input in bioglass abundance: clear-aqua catch rings, moss vine downspouts, sunlit-white shafts, water-nerve channels, and reflective wet surfaces make any subject feel renewed and climate-adaptive.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

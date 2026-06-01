@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Joy, innocence, pastel-paradise, friendship-festival, sugar-rush delight, unconditional-sweetness
   key_features: Sparkles, ribbon-bows, heart-motifs, blush-stickers, star-twinkle accents, animal-ear headbands
   creative_brief: >-
-    Prioritize rounded silhouettes, pastel harmony, and expression-first facial design. Keep proportions chibi-extreme and emotionally positive while avoiding scene-locked motifs so the style adapts across many character concepts.
+    Prioritize rounded silhouettes, pastel harmony, and expression-first facial design. Keep proportions chibi-extreme
+    and emotionally positive while avoiding scene-locked motifs so the style adapts across many character concepts.
+    Apply Kawaii Pastel as a portable style system over any input: preserve its construction grammar, material cues,
+    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
+    classroom sample, product shot, or scene template.
 avoidRules:
   - dark
   - scary

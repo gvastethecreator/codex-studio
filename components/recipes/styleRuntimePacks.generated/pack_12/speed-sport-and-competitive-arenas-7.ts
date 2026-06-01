@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, static-scene, muddy-colors',
     style: {
       aesthetic:
-        'Arcade racer futurista de alta velocidad con verticalidad urbana, readability de pista y feedback visual instantáneo.',
+        'Gramática arcade-racer futurista de alta velocidad con boost feedback, trazas holográficas y lectura de trayectoria.',
       subject_treatment:
-        'Chasis anti-gravedad por clase (grip/boost/agile) con perfiles de handling distinguibles.',
+        'Si el input admite vehículo, convertirlo en chasis anti-gravedad por clase; si no, aplicar perfiles de velocidad, paneles aerodinámicos y señales de handling.',
       color_and_tone:
         'Azul eléctrico y violeta dominante, con blanco energético para boost-state y timing windows.',
       lighting_and_shadow:
@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fibra de carbono, vidrio inteligente, asfaltos húmedos y señalética holográfica funcional.',
       camera_and_composition:
-        'Curvas cerradas con frame de velocidad, apex legible y capas de obstáculo por carril.',
+        'Curvas, apex, carriles y capas de obstáculo como abstracción de velocidad; no requiere pista urbana ni grand prix.',
       atmosphere_and_mood: 'Adrenalina limpia, espectáculo competitivo y precisión de conducción.',
       rendering_and_quality:
         'Marketing key art gameplay-driven con claridad de trayectoria, boost economy y lectura de rival.',
@@ -33,9 +33,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, static-pose, lowres',
     style: {
       aesthetic:
-        'Arcade sport extremo de alta velocidad sobre plataformas dinámicas con hazards térmicos reactivos.',
+        'Gramática arcade-sport extrema con velocidad, plataformas dinámicas, hazards térmicos y feedback de mastery.',
       subject_treatment:
-        'Riders por arquetipo (speed/control/trick) con equipamiento termo-reactivo visible.',
+        'Si hay personaje, usar arquetipos speed/control/trick; si hay objeto, darle equipamiento termo-reactivo, marcas de agarre y energía de truco.',
       color_and_tone:
         'Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.',
       lighting_and_shadow:
@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.',
       camera_and_composition:
-        'Plano amplio con líneas de circuito, jumps y bifurcaciones competitivas legibles.',
+        'Líneas de circuito, jumps y bifurcaciones como ritmo visual competitivo sin exigir arena literal.',
       atmosphere_and_mood: 'Vertiginosa, espectacular y frenética.',
       rendering_and_quality:
         'Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.',
@@ -56,9 +56,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, muddy, lowres',
     style: {
       aesthetic:
-        'Racing-arcade ceremonial en desierto hostil, centrado en velocidad sostenida, control de derrape y rivalidad por escuderías.',
+        'Gramática racing-arcade ceremonial con derrape sostenido, rivalidad de escuderías, polvo térmico y lectura de trayectoria.',
       subject_treatment:
-        'Pilotos como siluetas de facción con armadura ligera y señalética visual por rol de carrera.',
+        'Convierte el input en piloto, vehículo, emblema o módulo de carrera; armadura ligera y señalética de rol si ayudan a leer velocidad.',
       color_and_tone:
         'Ocres abrasados, turquesa oxidado, ámbar térmico y rojo disciplinado para lectura por equipo.',
       lighting_and_shadow:
@@ -66,10 +66,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Compuestos erosionados por arena, aleaciones bruñidas y desgaste mecánico por fricción constante.',
       camera_and_composition:
-        'Curva de apex con líneas de trayectoria, rutas de adelantamiento y capas de profundidad competitiva.',
+        'Apex, líneas de trayectoria y rutas de adelantamiento como ritmo visual; no exigir copa, desierto o circuito fijo.',
       atmosphere_and_mood: 'Rivalidad ritual, intensidad técnica y presión climática permanente.',
       rendering_and_quality:
         'Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.',
+      creative_brief:
+        'Aplica Drift Kingdom Sandstorm Cup como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -79,9 +81,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clutter, noisy-palette',
     style: {
       aesthetic:
-        'Auto-battler táctico astral inspirado en tablero, centrado en economía de unidades, sinergias y posicionamiento previo.',
+        'Gramática auto-battler astral con tablero implícito, economía de unidades, sinergias y posicionamiento previo.',
       subject_treatment:
-        'Unidades arquetípicas con jerarquía visual estricta por rol (frontline, burst, support, control).',
+        'Convierte el input en unidad, pieza, aura de sinergia o tablero parcial con jerarquía estricta por rol.',
       color_and_tone:
         'Índigo profundo, plata y acentos turquesa para codificar rareza, estado y alineación.',
       lighting_and_shadow:
@@ -89,7 +91,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Mármol estelar, energía fluida y metal fino de interfaz arcano-tecnológica.',
       camera_and_composition:
-        'Top-down suave con cuadrícula implícita y espacios limpios para lectura sistémica.',
+        'Top-down suave, cuadrícula implícita y espacios limpios para lectura sistémica sin exigir ajedrez literal.',
       atmosphere_and_mood: 'Calma cerebral, cálculo estratégico y anticipación táctica.',
       rendering_and_quality:
         'Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.',
@@ -102,9 +104,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, static, muddy-colors',
     style: {
       aesthetic:
-        'Rhythm-battle gótico de arena escénica, centrado en timing estricto, patrones musicales y lectura de carriles.',
+        'Gramática rhythm-battle gótica con timing estricto, carriles musicales, spotlight pulsado y coreografía espectral.',
       subject_treatment:
-        'Performers fantasmales como anclas de compás, coreografía por silueta y gestualidad beat-synced.',
+        'Convierte el input en performer fantasmal, nota, carril, gesto beat-synced o amenaza sincronizada.',
       color_and_tone:
         'Púrpura real, dorado gastado, cian espectral y sombras burdeos para contraste temporal dramático.',
       lighting_and_shadow:
@@ -112,10 +114,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Madera lacada desgastada, terciopelo comprimido, latón oxidado y niebla particulada.',
       camera_and_composition:
-        'Framing de proscenio con capas de escenario, hotspots de tempo y lanes claramente visibles.',
+        'Framing de ritmo con hotspots de tempo y lanes visibles; teatro/proscenio son anclas opcionales.',
       atmosphere_and_mood: 'Teatral, urgente y ceremonialmente competitiva.',
       rendering_and_quality:
         'Key-art competitivo de rhythm-game con cues visuales precisas de timing, combo y fase.',
+      creative_brief:
+        'Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -125,9 +129,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, modern-guns, lowres',
     style: {
       aesthetic:
-        'Arena-combat ritual en coliseo de obsidiana viva, orientado a duelos por fases y lectura de patrón.',
+        'Gramática arena-combat ritual con obsidiana viva, duelos por fases, telegraph y lectura de patrón.',
       subject_treatment:
-        'Gladiadores heroicos con armadura rúnica, perfiles de alcance y tempo claramente diferenciados.',
+        'Reinterpreta el input como gladiador, campeón, hazard, arma rúnica o fase de trial con alcance claro.',
       color_and_tone:
         'Negro volcánico, rojo interno y oro apagado para jerarquía de amenaza y estatus.',
       lighting_and_shadow:
@@ -135,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Piedra vítrea, metal forjado, arena abrasiva y grietas activas por energía.',
       camera_and_composition:
-        'Arena circular con foco en duelistas, límites de ring y hazards periféricos.',
+        'Foco en duelistas, límites de ring y hazards periféricos sin exigir coliseo físico.',
       atmosphere_and_mood: 'Brutal, honorable y ancestralmente espectacular.',
       rendering_and_quality:
         'Boss-trial key-art gameplay-first con cues nítidas de fase, telegraph y oportunidad.',
@@ -148,16 +152,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, muddy-palette, low-detail',
     style: {
       aesthetic:
-        'Hero-draft arena de esports, centrada en selección estratégica, counterpicks y lectura instantánea de roster.',
+        'Gramática hero-draft esports con selección estratégica, counterpicks, roster instantáneo y presentación broadcast.',
       subject_treatment:
-        'Héroes de silueta altamente diferenciada por clase, función y amenaza temprana.',
+        'Convierte el input en héroe, rol, counterpick, emblema de clase o amenaza temprana con silueta diferenciada.',
       color_and_tone:
         'Multicolor controlado sobre base neutra para evitar ruido y preservar claridad competitiva.',
       lighting_and_shadow: 'Spotlights escénicos y paneles LED que refuerzan turnos de pick/ban.',
       texture_and_material:
         'Armaduras limpias, cristal de energía y materiales de escenario broadcast-ready.',
       camera_and_composition:
-        'Presentación frontal de reveal con jerarquía de picks y foco en composición de equipo.',
+        'Presentación frontal, jerarquía de picks y composición de equipo sin exigir arena.',
       atmosphere_and_mood: 'Competitiva, hypeada y visualmente precisa.',
       rendering_and_quality:
         'Draft-phase promotional art con legibilidad superior de roles, counters y narrativa competitiva.',
@@ -170,15 +174,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, rainy-city, lowres',
     style: {
       aesthetic:
-        'Racing-event arqueológico en desierto de obeliscos, enfocado en velocidad, relic pickup y navegación por landmarks.',
+        'Gramática racing-event arqueológica con velocidad, relic pickup, landmarks monumentales y navegación por riesgo.',
       subject_treatment:
-        'Corredores-arqueólogos con vehículos ligeros y utilidades de exploración competitiva.',
+        'Convierte el input en corredor, vehículo ligero, reliquia, checkpoint o utilidad de exploración competitiva.',
       color_and_tone:
         'Arena ámbar, turquesa y rojo arcilla para diferenciación de ruta y objetivo.',
       lighting_and_shadow:
         'Sol intenso con polvo volumétrico para lectura dramática de trayectorias.',
       texture_and_material: 'Piedra erosionada, cuero técnico, bronce antiguo y sedimento móvil.',
-      camera_and_composition: 'Ruta serpenteante con hitos monumentales y atajos de alto riesgo.',
+      camera_and_composition:
+        'Ruta serpenteante, hitos y atajos de alto riesgo sin exigir desierto u obeliscos.',
       atmosphere_and_mood: 'Competitiva, feroz y cargada de misterio histórico.',
       rendering_and_quality:
         'Seasonal-race gameplay art con claridad de checkpoints, reliquias y pacing.',
@@ -191,16 +196,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grunge, low-detail',
     style: {
       aesthetic:
-        'Duel-arena real bajo cúpula cristalina, orientada a 1v1 técnico de spacing, feints y castigo preciso.',
+        'Gramática duel-arena real cristalina con 1v1 técnico, spacing, feints y castigo preciso.',
       subject_treatment:
-        'Campeones con armadura ceremonial estilizada y lectura de estilo de combate.',
+        'Convierte el input en campeón, arma, stance, corona-cristal o señal de ventaja de duelo.',
       color_and_tone:
         'Blanco perla, azul zafiro y oro suave para máxima claridad en enfrentamiento directo.',
       lighting_and_shadow:
         'Iluminación cenital limpia para preservar lectura frame-by-frame de animación.',
       texture_and_material:
         'Cristal tallado, seda de gala, mármol pulido y detalles de desgaste controlado.',
-      camera_and_composition: 'Simetría frontal con límites de arena y zonas neutrales claras.',
+      camera_and_composition:
+        'Simetría frontal, límites de arena y zonas neutrales claras sin exigir hall o cúpula.',
       atmosphere_and_mood: 'Noble, rival y extremadamente precisa.',
       rendering_and_quality:
         'Competitive stage gameplay-first con legibilidad impecable de alcance, timing y ventaja.',
@@ -213,9 +219,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, gritty-horror, lowres',
     style: {
       aesthetic:
-        'Mechball league portuaria de alta energía, centrada en objetivo central, rotaciones rápidas y juego de equipo.',
+        'Gramática mechball esports con objetivo central, rotaciones rápidas, posesión y juego de equipo de alta energía.',
       subject_treatment:
-        'Mechs-atleta ligeros codificados por equipo con silueta y rol táctico inequívocos.',
+        'Si el input admite cuerpo o máquina, mecanizarlo como mech-atleta; si es objeto, volverlo balón, objetivo o pieza de rotación.',
       color_and_tone:
         'Cobalto dominante, naranja de competencia y neutros acero con reflejo marino frío.',
       lighting_and_shadow:
@@ -223,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Aleación recubierta, polímero marcado por impacto, piso deportivo gomado y hormigón de muelle.',
       camera_and_composition:
-        'Arena-bowl con objetivo central, profundidad de graderío y lanes tácticos visibles.',
+        'Objetivo central, lanes tácticos y lectura de posesión sin exigir docks o arena-bowl.',
       atmosphere_and_mood: 'Rival, cinética y de adrenalina sostenida.',
       rendering_and_quality:
         'Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.',

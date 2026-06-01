@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Isometric terrain map
+  aesthetic: Isometric cartographic render
   form_and_line: Topography
   color_palette: Map colors, topographic contrast
   lighting_setup: Sunlight, terrain-shadow casting
@@ -20,7 +20,11 @@ visualDna:
   render_quality: Game map, cute, cartographic style
   atmosphere: Informative, toy, exploration-inviting
   key_features: Grid, elevation readability
-  creative_brief: 'Elevation becomes information — topographic layers stack like contour cake, and sunlight casts terrain shadows that make every hill and valley legible at a glance. Low-poly geometry gives the landscape a toy-like charm, and cartographic color coding maps height to hue with the clarity of a game-world minimap. The image is exploration made irresistible: a 3D map you want to zoom into, every grid cell a promise of undiscovered terrain.'
+  creative_brief: >-
+    Translate the input into isometric cartographic logic: stacked contour
+    layers, height-coded color, terrain-shadow style and minimap readability.
+    If landscape exists, map it; otherwise treat subject hierarchy as topographic
+    information without forcing hills, valleys or terrain.
 avoidRules:
   - 2d map
   - paper

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Frost white, olive green, and graphite.
   lighting_setup: Controlled vault glow and transit beacon strips.
   material_texture: Cryo casings, metal ribs, and insulated polymer shells.
-  render_quality: Precision infrastructure concept with ecological emphasis.
+  render_quality: Precision preservation render with ecological emphasis and clear capsule/vault logic.
   spatial_distortion: Linear protected depth crossing through rings, locks, and capsule repeats.
   atmosphere: Stewardship, caution, and long-term planning.
   key_features: Seed capsule grids, cryo-ring glow, biosecurity seals, and lunar archive hush.
   creative_brief: >-
-    Preserve orbital seed-vault annex grammar as a reusable style system:
-    redundant biodiversity stewardship, cryogenic continuity logistics, and
-    long-horizon ecological caution should remain coherent across subjects.
+    Preserve the input as orbital biodiversity logistics: frost-white capsule
+    grids, olive bioseals, graphite ribs, cryo-ring glow, and protected transfer
+    bands turn any subject into long-horizon ecological memory.
 avoidRules: [photoreal, military-bunker, cyberpunk-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-082.webp }
 attributes:

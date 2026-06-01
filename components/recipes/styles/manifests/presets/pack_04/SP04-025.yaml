@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Casual, energetic, improvised
   key_features: Stroke stacking, bleed halos, quick gradient blends via overlap
   creative_brief: >-
-    Let marker behavior drive the image: fast stroke confidence, transparent layering, and paper bleed artifacts. Keep the style bold and flexible across subjects while avoiding over-specific scene cues that reduce prompt adaptability.
+    Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge
+    bleed, overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold
+    and flexible without requiring sketchbook pages, fashion poses, product drawings, or fixed scene
+    cues.
 avoidRules:
   - paint
   - blend

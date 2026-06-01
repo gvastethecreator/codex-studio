@@ -18,10 +18,16 @@ visualDna:
   lighting_setup: Rim light, sculpting-studio setup
   material_texture: Clay strokes, matcap highlights
   render_quality: High poly model, sculpted detail
-  spatial_distortion: Anatomical study
+  spatial_distortion: Sculptural anatomy optional
   atmosphere: Artistic, raw, hands-on feel
   key_features: Matcap material, dynamesh topology
-  creative_brief: Digital clay remembers the pressure of a stylus like real clay remembers a thumbprint — matcap highlights ride the crest of every sculpted fold, and dynamesh topology flows beneath the surface like invisible grain. The monochromatic wax palette strips away distraction, leaving pure form under rim-lit scrutiny, anatomical studies that feel excavated rather than constructed. The raw model stands in its own honesty, untextured and unapologetic.
+  creative_brief: >-
+    Treat the input as a ZBrush digital-clay sculpt: matcap highlights, dynamesh topology, visible stylus pressure,
+    wax/clay monochrome and raw high-poly form. Anatomy may emerge when relevant, but the preset should not require a
+    body study, standing model or untextured character bust. Apply ZBrush Digital Clay Sculpt as a portable 3D/render
+    style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar,
+    and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or
+    scene template.
 avoidRules:
   - textured
   - low poly

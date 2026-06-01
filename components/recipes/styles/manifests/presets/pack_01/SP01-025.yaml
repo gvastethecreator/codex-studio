@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Wide angle distortion
   atmosphere: Creepy, voyeuristic
   key_features: Surveillance UI burn-in
-  creative_brief: 'A machine watching without intention: low-resolution compression, scanlines, wide-angle distortion, security-camera contrast, and timestamp-like UI burn-in marks. Any subject becomes evidence under indifferent surveillance; no bodies, crime scene, hallway, or literal witness narrative required.'
+  creative_brief: >-
+    Apply CCTV surveillance optics to the input: low-resolution compression,
+    scanlines, wide-angle distortion, harsh security contrast, and timestamp-like
+    burn-in marks without readable text should make any subject feel observed.
 avoidRules:
   - hd
   - 4k

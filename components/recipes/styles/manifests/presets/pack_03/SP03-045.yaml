@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Model with visible topology
+  aesthetic: Shaded topology overlay
   form_and_line: White wires over grey model
   color_palette: Grey and White, wire-color contrast
   lighting_setup: Studio, dual-pass render
@@ -20,7 +20,12 @@ visualDna:
   render_quality: Making-of, technical, breakdown beauty
   atmosphere: Educational, process, design-transparency
   key_features: Wire overlay, shaded+wireframe combo
-  creative_brief: 'The shaded model and its wireframe ghost occupy the same space — white edge loops trace topology across grey surfaces, a dual-pass render that reveals the skeleton dancing beneath the skin. Studio lighting gives the shaded form weight and presence, while the wire overlay insists on transparency, on showing the work. The image is breakdown beauty: the making-of as final product, process elevated to aesthetic.'
+  creative_brief: >-
+    Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material surface retained
+    beneath technical linework. Treat mesh logic as graphic pattern; do not require a model turntable or peeled-skin
+    object. Apply Wireframe on Shaded as a portable 3D/render style system over any input: preserve its renderer logic,
+    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
+    vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - clean render
 assets:

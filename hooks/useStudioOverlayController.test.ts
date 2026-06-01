@@ -166,8 +166,6 @@ describe('buildStudioOverlayController', () => {
           },
         },
         libraryDir: 'D:/AI-Studio-Library',
-        isBackgroundEnabled: true,
-        onToggleBackground: () => calls.push('toggleBackground'),
         onResetStudio: () => {
           calls.push('resetStudio');
         },
@@ -440,10 +438,6 @@ describe('buildStudioOverlayController', () => {
           },
         },
         libraryDir: null,
-        isBackgroundEnabled: true,
-        onToggleBackground: () => {
-          calls.push('toggleBackground');
-        },
         onResetStudio: () => {
           calls.push('resetStudio');
         },
@@ -481,9 +475,5 @@ describe('buildStudioOverlayController', () => {
     });
 
     expect(controller.systemOverlays.settingsModule.libraryDir).toBe('D:/from-diagnostics');
-
-    controller.systemOverlays.settingsModule.onToggleBackground();
-
-    expect(calls).toContain('toggleBackground');
   });
 });

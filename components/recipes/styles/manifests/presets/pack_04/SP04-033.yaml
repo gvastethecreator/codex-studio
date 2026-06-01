@@ -17,14 +17,17 @@ visualDna:
   color_palette: Red, Black, Cream, revolutionary tension, stark authority
   lighting_setup: High contrast, heroic low-angle, dramatic light-beam
   material_texture: Screenprint
-  render_quality: High-impact poster rendering with command-tone typography, screenprint flatness, and mass-communication urgency
+  render_quality: >-
+    High-impact poster rendering with command-tone typography, screenprint flatness, and
+    mass-communication urgency
   spatial_distortion: Heroic angle
   atmosphere: Strong, commanding, revolutionary urgency, mass-movement energy
   key_features: Rays, bold typography, constructivist geometry
   creative_brief: >-
-    Keep this preset defined by command-poster grammar: constructivist
-    diagonals, high-contrast propaganda palette, and declarative type-shape
-    hierarchy should drive impact without tying to any single artist brand.
+    Apply constructivist propaganda-poster grammar to any input: bold red-black-cream contrast,
+    command diagonals, rays, screenprint flatness, type-shape hierarchy, and heroic low-angle
+    pressure should drive impact without requiring workers, flags, crowds, slogans, politics, or
+    readable text.
 avoidRules:
   - subtle
   - weak

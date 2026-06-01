@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: No surface detail
   atmosphere: Diagnostic, technical
   key_features: Heat gradient
-  creative_brief: 'The world translated into temperature logic: surfaces simplified into blobby heat zones, violet shadows rising through red and orange into yellow-white intensity. Apply thermal diagnostic imaging to any subject, living or inert, without predator framing or mandatory bodies.'
+  creative_brief: >-
+    Apply thermal-camera temperature logic to the input: violet cool zones,
+    red-orange heat gradients, yellow-white intensity peaks, and simplified
+    diagnostic blobs should map any subject without requiring living bodies.
 avoidRules:
   - realistic colors
 assets:

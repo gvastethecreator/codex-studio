@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Vignette, circular edge, keyhole darkening
   atmosphere: Ethereal, time, solargraph, patient observation
   key_features: Blur, no lens, circular vignette, time-smear, light-leak edge
-  creative_brief: Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye.
+  creative_brief: >-
+    Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water.
+    The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness
+    accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered
+    through the softest possible eye. Apply Pinhole Camera as a portable cinematic/camera style over any input: preserve
+    its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - sharp focus
 assets:

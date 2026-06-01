@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Music video outfit, comeback-stage spectacle, fan-chant energy
   form_and_line: Sharp, layered, cropped jacket, high-waist trouser, asymmetric hem, fitted silhouette
   color_palette: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
-  lighting_setup: Studio bright, music-show array, high-key beauty light, color-shifting cyc wall
+  lighting_setup: Studio-bright beauty light, color-shifting gels, high-key rim sparkle
   material_texture: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
   render_quality: Perfect, trendy, coordinated, music-show polish, fan-cam ready, synchronized precision
   spatial_distortion: None
-  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, stadium-scale joy
-  key_features: Dyed hair, pastel or jewel-tone color, matching group coordination, statement earrings
-  creative_brief: Precision worn as skin, sequins catching studio light in a choreographed galaxy of synchronized perfection. Pastel hair frames a face that has rehearsed this smile ten thousand times, every outfit a comeback, every comeback a ritual in the church of coordinated spectacle where fandom chants become weather.
+  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy
+  key_features: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings
+  creative_brief: >-
+    Rebuild the input with K-pop comeback polish: cropped jackets, asymmetric
+    hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact
+    coordination. Preserve idol-performance charisma without requiring a face,
+    group choreography, music-show set or fandom crowd.
 avoidRules:
   - boring
   - dark
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

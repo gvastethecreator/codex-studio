@@ -12,16 +12,21 @@ tags:
   - 3d-and-cgi-rendering
   - organic-and-character-cgi
 visualDna:
-  aesthetic: Creature or plant
+  aesthetic: Organic modeling flow
   form_and_line: Flowing topology
   color_palette: Skin tones, green
   lighting_setup: Subsurface scattering
   material_texture: Skin, bark, organic texture map
   render_quality: ZBrush digital sculpt, organic flow, natural forms
   spatial_distortion: None
-  atmosphere: Alive, natural, breathing world
+  atmosphere: Alive, natural, organic credibility
   key_features: Muscle/Growth flow, dynamesh topology
-  creative_brief: 'Topology flows like water across muscle groups and branching forms — dynamesh topology follows the grain of imagined biology, and subsurface scattering warms skin and bark from within as if chlorophyll or blood were glowing just beneath. ZBrush sculptural flow defines natural forms through digital clay, every ridge and fold the result of a stylus tracing evolutionary logic. The image breathes: a creature or plant rendered with the conviction that it exists somewhere.'
+  creative_brief: >-
+    Push the input through organic-modeling language: flowing topology, dynamesh sculptural mass, branching or muscular
+    rhythm, subsurface warmth and evolution-like surface logic. It may become creature/plant-like when useful, but must
+    not require a living body, forest or biological subject. Apply Organic Modeling as a portable 3D/render style system
+    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
+    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - hard edge
   - robot

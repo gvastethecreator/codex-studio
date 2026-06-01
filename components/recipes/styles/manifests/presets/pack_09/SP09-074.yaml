@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Matted
   atmosphere: Cozy, retro
   key_features: Messy pile
-  creative_brief: Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion.
+  creative_brief: >-
+    Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape
+    of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like
+    visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the
+    brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture,
+    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - berber
   - flat

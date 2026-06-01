@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-094
 packId: pack_14
-name: Night Meridian Archives
+name: Night Meridian State Secret
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Archive tower preserving centuries of meridian anomaly records.
-  form_and_line: Vertical stacks, narrow galleries, and rotating index bridges.
+  aesthetic: Night meridian secrecy with anomaly records, obsessive study, and scholarly noir dread.
+  form_and_line: Vertical stack cues, narrow galleries, and rotating index-bridge rhythms.
   color_palette: Ink black, brass, and parchment beige.
   lighting_setup: Desk pools and faint celestial backlight.
   material_texture: Leather folios, brass rails, and timber shelves.
   render_quality: Scholarly noir concept with dense detail.
-  spatial_distortion: Tower interior depth with stacked perspective.
+  spatial_distortion: Tower-like interior depth with stacked perspective and sealed layers.
   atmosphere: Obsessive study and quiet dread.
-  key_features: Meridian ledgers, index clockwork, and sealed prophecy vaults.
-  creative_brief: A high archive where cosmic anomalies are treated as state secrets.
+  key_features: Meridian ledgers, index clockwork, sealed prophecy-vault cues.
+  creative_brief: Translate the input through night-meridian state secrecy, treating cosmic anomaly as classified evidence without requiring an archive tower.
 avoidRules: [photoreal, playful, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-094.webp }
 attributes:
   negativePrompt: photoreal, playful, neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

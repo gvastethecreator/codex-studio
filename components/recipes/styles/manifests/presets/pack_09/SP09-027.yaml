@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - fx-and-procedural-materiality
 visualDna:
-  aesthetic: Car tire
+  aesthetic: Tire-grade rubber tread
   form_and_line: Treads
   color_palette: Black
   lighting_setup: Matte
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Functional, dirty
   key_features: Tread pattern
-  creative_brief: Render the functional sculpture of tire tread cut into black rubber valleys designed for grip and water dispersal, a landscape of geometric channels repeating around the curve. The surface must feel matte and slightly tacky, absorbing light into dense darkness while the raised tread pattern catches subtle sheen. Capture the industrial beauty of form following friction to its most direct conclusion.
+  creative_brief: 'Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.'
 avoidRules:
   - shiny plastic
 assets:

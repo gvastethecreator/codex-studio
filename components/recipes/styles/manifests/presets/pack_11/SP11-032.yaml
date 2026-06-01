@@ -12,19 +12,20 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty
+  aesthetic: Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art
   form_and_line: Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry
   color_palette: Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory
-  lighting_setup: Overhead cafe, counter-spot warmth, crema-gloss catch, steamed-milk sheen
+  lighting_setup: Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen
   material_texture: Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas
   render_quality: Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft
-  spatial_distortion: Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature
-  atmosphere: Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet
-  key_features: Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps
+  spatial_distortion: Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature
+  atmosphere: Cozy, warm, temporary, crafted, first-sip quiet
+  key_features: Crema ring, latte-art rosetta, steamed-milk gloss, microfoam bubbles, pour-steam wisps
   creative_brief: >-
     Anchor this preset in latte-surface grammar: microfoam density control,
-    crema-contrast flow patterns, and pour-path symmetry should define identity
-    beyond one café narrative moment.
+    crema-contrast flow patterns, pour-path symmetry, and soft liquid-edge
+    behavior should transform the input. A cup or rosetta can reinforce the
+    style, but avoid locking the result to a cafe table scene.
 avoidRules:
   - solid
   - paint

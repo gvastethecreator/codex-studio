@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Objective-PvP de captura en puente interdimensional, centrado en control de punto y rotación de escuadras.
-  subject_treatment: Escuadras rivales con gadgets de movilidad y roles de entrada/sostén/limpieza.
+  aesthetic: Gramática objective-PvP de captura con punto disputado, rotación de escuadras y energía interdimensional.
+  subject_treatment: Reinterpreta el input como squad, gadget, punto de captura, cobertura o recurso de overtime.
   color_and_tone: Azul plasma, naranja rival y gris titanio para friend-foe clarity.
   lighting_and_shadow: Energía de grieta como key light para telegraph de eventos y overtime.
   texture_and_material: Superficies metálicas, escudos de campo y chispas de impacto sostenido.
-  camera_and_composition: Eje central contestado con flancos jugables y rutas de reconquista.
+  camera_and_composition: Eje central contestado, flancos jugables y rutas de reconquista sin exigir puente.
   atmosphere_and_mood: Frenética, competitiva y de control territorial.
   rendering_and_quality: Objective-mode map con layout nítido de punto, cobertura y líneas de empuje.
 avoidRules:

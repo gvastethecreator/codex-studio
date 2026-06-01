@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-020
 packId: pack_14
-name: Oracle of Bronze Smoke
+name: Bronze Smoke Oracle Fragment
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Delphic divination chamber with aristocratic austerity and prophetic unease.
-  form_and_line: Circular tripod dais, ascending amphitheater steps, and laurel-pattern friezes.
+  aesthetic: Delphic divination austerity with bronze smoke, aristocratic protocol, and prophetic unease.
+  form_and_line: Circular tripod-dais cues, ascending amphitheater steps, and laurel-pattern friezes.
   color_palette: Patinated bronze, charcoal violet, and candle amber.
   lighting_setup: Underlit incense smoke and skylight shafts isolating the seer.
   material_texture: Burnished bronze panels, ash-stained marble, and woven wool drapery.
   render_quality: Premium matte-painting detail tuned for symbolic and narrative focus.
-  spatial_distortion: Bowl-like shrine geometry drawing attention toward the prophecy seat.
+  spatial_distortion: Bowl-like shrine geometry drawing attention toward a prophecy focal point.
   atmosphere: Ambiguous revelation, sacred protocol, and political dread.
-  key_features: Tripod oracle throne, smoke vents, supplicant terraces, and laurel votive walls.
-  creative_brief: A Greek prophetic sanctuary where truth arrives fragmented through ritual smoke.
+  key_features: Tripod oracle cues, smoke vents, supplicant terraces, laurel votive marks.
+  creative_brief: Reinterpret the input through bronze-smoke oracle fragments, making truth arrive broken through ritual smoke without requiring a sanctuary.
 avoidRules: [photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-020.webp }
 attributes:
   negativePrompt: photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

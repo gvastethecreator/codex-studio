@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-057
 packId: pack_05
-name: Sleek Post-Apoc Romance Style
+name: Sleek Collapse Romance
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,20 +12,35 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Sleek post-apocalyptic tenderness, polished fragility, sunset loneliness, romantic pressure, and floral-tech melancholy.
-  form_and_line: Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and vulnerable negative-space framing.
-  color_palette: Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet shadow.
-  lighting_setup: Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around emotional focal points.
-  material_texture: Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and clean composite sheen.
-  render_quality: Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet high-detail restraint.
-  spatial_distortion: Intimate compression against broad empty space, soft horizon drag, and paired-vector composition without fixed setting.
+  aesthetic: >-
+    Sleek post-collapse tenderness where polished fragility, sunset loneliness, floral-tech
+    melancholy, and engineered intimacy carry emotion
+  form_and_line: >-
+    Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and
+    vulnerable negative-space framing.
+  color_palette: >-
+    Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet
+    shadow.
+  lighting_setup: >-
+    Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around
+    emotional focal points.
+  material_texture: >-
+    Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and
+    clean composite sheen.
+  render_quality: >-
+    Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet
+    high-detail restraint.
+  spatial_distortion: >-
+    Intimate compression against broad empty space, soft horizon drag, and paired-vector composition
+    without fixed setting.
   atmosphere: Vulnerable, sleek, bittersweet, romantic
-  key_features: Sleek paired silhouettes, sunset ruin color, petal-tech motifs, fragile intimacy, and polished melancholy surfaces.
+  key_features: >-
+    Paired-silhouette rhythm, petal-tech motifs, sunset ruin color, polished melancholy, fragile
+    intimacy, and glossy edge softness
   creative_brief: >-
-    Apply sleek post-apoc romance as a reusable style treatment: make any
-    subject feel tender, engineered, lonely, and hopeful after collapse while
-    staying abstract, portable, and detached from fixed operators, equipment,
-    attire systems, decay settings, or alert scenarios.
+    Use sleek collapse romance as fragile-engineered tenderness grammar. Any prompt should feel
+    lonely, polished, hopeful, and post-catastrophic. Operators, suits, ruins, alarms, equipment,
+    and romance scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-057.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

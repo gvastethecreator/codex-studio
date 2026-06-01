@@ -34,11 +34,12 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
-  STYLE_DEFAULT_IMAGES,
   STYLE_PACK_FALLBACK_IMAGES,
+  resolveStyleDefaultImage,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
+import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
@@ -211,7 +212,10 @@ function normalizeCategoryIdFromTitle(title: string) {
     .replace(/^-+|-+$/g, '');
 }
 
-function getCategoryVisualIdentity(packId: string, categoryTitle: string): CategoryVisualIdentity | null {
+function getCategoryVisualIdentity(
+  packId: string,
+  categoryTitle: string,
+): CategoryVisualIdentity | null {
   const size = 12;
   const categoryId = normalizeCategoryIdFromTitle(categoryTitle);
 
@@ -291,6 +295,7 @@ interface StylePresetVisualState {
   presetPackName: string;
   resultImages: GeneratedImageWithConfig[];
   defaultImage: string | undefined;
+  defaultImageStale: boolean;
   previewImage: string | undefined;
   exampleImageSrc: string | null;
 }
@@ -363,6 +368,17 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
     e.stopPropagation();
     onCycle(direction);
   };
+
+  if (visualState?.defaultImageStale) {
+    return (
+      <button
+        type="button"
+        onClick={() => onApply(preset)}
+        className="absolute inset-0 flex size-full cursor-pointer bg-zinc-950 disabled:cursor-not-allowed"
+        aria-label={`Apply ${preset.name}`}
+      />
+    );
+  }
 
   if (activeResultImage) {
     return (
@@ -598,10 +614,11 @@ const StylePresetCard = React.memo(
           }}
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${active
-            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-            }`}
+          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
+            active
+              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
+              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+          }`}
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
             <StylePresetResultButton
@@ -1057,8 +1074,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const recipePresetId =
     config.recipeId === 'styles' &&
-      config.recipeParams &&
-      typeof config.recipeParams.presetId === 'string'
+    config.recipeParams &&
+    typeof config.recipeParams.presetId === 'string'
       ? config.recipeParams.presetId
       : null;
   const prevRecipePresetIdRef = useRef(recipePresetId);
@@ -1128,27 +1145,31 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       const resultImages = images
         .filter((img) => hasStylePresetIdentity(img.config, preset.id))
         .sort((a, b) => b.createdAt - a.createdAt);
-      const defaultImage = STYLE_DEFAULT_IMAGES[preset.id];
+      const defaultImageStale = isStyleDefaultImageStale(preset.id);
+      const defaultImage = resolveStyleDefaultImage(preset.id);
       const packFallbackImage = STYLE_PACK_FALLBACK_IMAGES[presetPackId];
       const categoryImage = preset.category
         ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
         : undefined;
-      const previewImage =
-        categoryImage ||
-        (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
-        packFallbackImage;
+      const previewImage = defaultImageStale
+        ? undefined
+        : categoryImage ||
+          (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
+          packFallbackImage;
 
       stateMap.set(preset.id, {
         presetPackName: presetPack.name,
         resultImages,
         defaultImage,
+        defaultImageStale,
         previewImage,
-        exampleImageSrc:
-          defaultImage ||
-          previewImage ||
-          resultImages[0]?.thumbnail ||
-          resultImages[0]?.src ||
-          null,
+        exampleImageSrc: defaultImageStale
+          ? null
+          : defaultImage ||
+            previewImage ||
+            resultImages[0]?.thumbnail ||
+            resultImages[0]?.src ||
+            null,
       });
     });
 
@@ -1248,9 +1269,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     const effectiveImage = activeImage || fallbackAttachment;
     const normalizedReference = effectiveImage
       ? {
-        ...effectiveImage,
-        strength: 0.15,
-      }
+          ...effectiveImage,
+          strength: 0.15,
+        }
       : null;
     const intensity = styleStrength;
     const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(presetPackId);
@@ -1624,10 +1645,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             }}
             className={`
                   group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                    ${currentPackId === FAVORITES_PACK_ID
-                ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-              }
+                    ${
+                      currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
+                    }
                 `}
           >
             <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
@@ -1657,10 +1679,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 }}
                 className={`
                       group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
-                            ${isActive
-                    ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
-                    : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
-                  }
+                            ${
+                              isActive
+                                ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
+                                : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                            }
                         `}
               >
                 <div className={`relative z-10 transition-colors ${isActive ? theme.text : ''}`}>

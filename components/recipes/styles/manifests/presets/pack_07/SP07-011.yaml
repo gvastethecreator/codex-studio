@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-011
 packId: pack_07
 name: Luxury Penthouse
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,33 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
-  aesthetic: Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva editorial.
+  aesthetic: >-
+    Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva
+    editorial.
   form_and_line: Paños continuos, losas flotantes, planos largos y siluetas bajas curadas por jerarquía de vacío.
-  color_palette: Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea neutra.
-  lighting_setup: Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga visual.
-  material_texture: Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta calidad.
+  color_palette: >-
+    Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea
+    neutra.
+  lighting_setup: >-
+    Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga
+    visual.
+  material_texture: >-
+    Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta
+    calidad.
   render_quality: Acabado de hospitality de lujo con fidelidad material alta y staging impecable.
-  spatial_distortion: Gran angular contenido con eje interior elongado y profundidad por piezas statement cuidadosamente espaciadas.
+  spatial_distortion: >-
+    Gran angular contenido con eje interior elongado y profundidad por piezas statement
+    cuidadosamente espaciadas.
   atmosphere: Privado, aspiracional, sereno y altamente controlado.
-  key_features: Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle constructivo invisible.
+  key_features: >-
+    Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle
+    constructivo invisible.
   creative_brief: >-
-    Define una gramática de lujo transferible por proporción, detalle oculto,
-    material noble y control lumínico. Evita la postal aspiracional: el valor
-    debe emerger del sistema visual, no de vista, altura o contexto externo.
+    Define una gramática de lujo transferible por proporción, detalle oculto, material noble y
+    control lumínico. Evita la postal aspiracional: el valor debe emerger del sistema visual, no de
+    vista, altura o contexto externo.
 avoidRules:
   - basement
   - dark
@@ -36,11 +48,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

@@ -20,8 +20,12 @@ visualDna:
   render_quality: Survival, gritty, post-apocalypse vérité, guzzoline-desperation rawness
   spatial_distortion: None
   atmosphere: Desperate, tough, resource-scarcity tension, wasteland-wind solitude, witness-me ferocity
-  key_features: Goggles, shoulder pad, bandolier, gas-mask, improvised weapon
-  creative_brief: Tire rubber reshaped into shoulder armor by hands that have forgotten the feel of clean water, car parts bolted across a chest that breathes aerosolized chrome and guzzoline dreams. Gauze wraps hold together a body that keeps moving because stopping means becoming part of the rust, every layer scavenged from a civilization that ended but left its garbage as inheritance.
+  key_features: Goggles, shoulder pad, bandolier, gas-mask, improvised armor cues
+  creative_brief: >-
+    Render the input as scavenged survival couture: dirty canvas, tire rubber,
+    rusty chain, car-part armor, gauze wraps, oxidized metal and dust-choked
+    layering. Keep Mad Max resource-scarcity ferocity without requiring a
+    wasteland chase, weapon, survivor portrait or specific desert scene.
 avoidRules:
   - clean
   - new
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

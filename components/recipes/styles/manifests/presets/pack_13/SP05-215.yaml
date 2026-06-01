@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-215
 packId: pack_13
-name: Slow Loop - Riverside Fishing Sisters
+name: Looped-Routine Healing Pastel
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Slow Loop title anchor translated into reflective hobby-healing, inherited routine, pastel calm, practical intimacy, and soft family reconstruction
-  form_and_line: Gentle flow-line composition, loop-and-thread contour precision, close relational spacing, and careful hand-activity softness
-  color_palette: Water pastel blues, grassy greens, neutral outdoorwear tones, lure-bright accent sparks, and evening amber warmth
-  lighting_setup: Reflective daylight fill, cloud-soft sky diffusion, small practical highlights, and low-contrast warmth around shared routines
-  material_texture: Nylon-line sheen, cork-like grain, damp stone matte, layered knit clothing, and packed-lunch surface softness
-  render_quality: Pastoral-healing rendering with practical hobby fidelity, calm relational warmth, and quiet restorative pacing
-  spatial_distortion: Gentle depth easing and looped visual paths used to support reflection, not to mandate water or fishing scenes
-  atmosphere: Pastoral, healing, quiet, tender
-  key_features: Reflective hobby rhythm, practical line motifs, inherited-routine intimacy, soft outdoor textures, calm relational spacing
+  aesthetic: >-
+    Looped-routine healing anime built from reflective repetition, inherited care, practical hobby
+    rhythm, and pastel emotional repair
+  form_and_line: >-
+    Gentle looping paths, threadlike contours, close relational spacing, hand-activity softness, and
+    calm curved composition
+  color_palette: >-
+    Water pastel blue, grassy green, outdoor neutral, lure-bright micro accents, soft coral, and
+    evening amber warmth
+  lighting_setup: >-
+    Reflective daylight fill, cloud diffusion, small glints, and low-contrast warmth around repeated
+    actions
+  material_texture: >-
+    Nylon-line sheen, cork grain, damp stone matte, knit layers, lunch-wrap softness, and quiet
+    hobby tactility
+  render_quality: >-
+    Pastoral-healing anime finish with practical detail, calm relational warmth, and restorative
+    pacing
+  spatial_distortion: >-
+    Looped visual paths and eased depth that suggest reflection, repetition, and gentle repair
+    across any subject
+  atmosphere: Pastoral, healing, tender, quiet, patient
+  key_features: >-
+    Loop motifs, repeated-care rhythm, soft outdoor texture, inherited routine, reflective calm, and
+    close emotional spacing
   creative_brief: >-
-    Use Slow Loop as a style anchor for practical healing through routine:
-    reflective calm, inherited hobby intimacy, and line-loop visual motifs should
-    transfer without requiring fishing gear, riverside backdrops, or siblings.
+    Use Slow Loop as style anchor for looped-routine healing. Any prompt should feel repaired
+    through gentle repetition: curved paths, tactile hobby detail, pastel calm, and inherited care.
+    Fishing gear, rivers, siblings, and waterfront scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-215.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -20,7 +20,12 @@ visualDna:
   render_quality: Indie game, retro, geometric charm
   atmosphere: Simple, clean, polygon purity
   key_features: Facets, edge visibility
-  creative_brief: Beauty in the count of polygons you can number on two hands — flat-shaded triangles catch ambient occlusion at their edges like folded paper holding its crease. Vibrant stylized tones celebrate geometry as geometry, refusing to disguise the mesh beneath smooth fakery. The image channels indie-game charm, a world comfortable in its own visible construction, each facet a deliberate choice rather than a limitation.
+  creative_brief: >-
+    Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion crease
+    accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or landscape. Apply
+    Low Poly as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - high poly
   - smooth

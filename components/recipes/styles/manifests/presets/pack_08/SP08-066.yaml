@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Rigid
   atmosphere: Creative, stiff, museum-gallery hush, delicate-construction tension, ephemeral-material poetry
   key_features: Folds, crisp crease lines, paper edges, origami geometry, tear-away reveal
-  creative_brief: Washi fiber holding mountain and valley folds with the tension of a crane suspended between flight and stillness, triangular panels constructing a bodice from the same mathematics that turns a flat sheet into a universe of form. Raking light carves shadows into the creases, each fold a decision that cannot be unmade, the dress standing at the intersection of architecture and impermanence.
+  creative_brief: >-
+    Fold the input into origami-paper couture: washi grain, mountain-valley
+    creases, triangular panels, accordion pleats, crisp kraft edges and hard
+    raking shadows. Keep paper-dress wonder without requiring bodice, crane,
+    gallery display or standing garment.
 avoidRules:
   - fabric
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

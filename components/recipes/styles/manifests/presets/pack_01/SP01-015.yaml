@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: High contrast
   atmosphere: Historic, vivid
   key_features: Red pop
-  creative_brief: 'Archival slide-film permanence: rich reds, clean direct light, crisp microdetail, and contrast that feels catalogued rather than stylized. Make any subject look preserved in durable dye layers, vivid but believable, historical without requiring skies, travel, or a mid-century scene.'
+  creative_brief: >-
+    Apply Kodachrome archival permanence to the input: rich reds, clean direct
+    light, crisp microdetail, dense dye-layer contrast, and believable vintage
+    vividness should preserve any subject without requiring travel or mid-century staging.
 avoidRules:
   - illustration
   - painting

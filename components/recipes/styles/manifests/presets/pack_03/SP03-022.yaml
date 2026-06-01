@@ -17,11 +17,15 @@ visualDna:
   color_palette: Vibrant
   lighting_setup: Global illumination
   material_texture: None, clean grid faces
-  render_quality: Minecraft/MagicaVoxel block-world voxel art, cube poetry
+  render_quality: Minecraft/MagicaVoxel voxel art, cube poetry
   spatial_distortion: Blocky
   atmosphere: Cute, digital, nostalgic sandbox
   key_features: Cubes
-  creative_brief: 'The world resolves into its smallest meaningful unit — cubes stacked like digital Legos on an invisible grid, global illumination softening their hard edges into something almost innocent. MagicaVoxel poetry: vibrant colors mapped to three-dimensional pixels, each block a vote in the democracy of form. Nostalgia for the sandbox bleeds through every right angle, a universe you could rebuild with a single click.'
+  creative_brief: >-
+    Resolve the input into voxel grammar: cubic sampling, visible grid logic,
+    MagicaVoxel color blocks and soft GI over hard right angles. Keep sandbox
+    nostalgia as construction style, without requiring a block world, terrain or
+    Minecraft-style environment.
 avoidRules:
   - curves
   - smooth

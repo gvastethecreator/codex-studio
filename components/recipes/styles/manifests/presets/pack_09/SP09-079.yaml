@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Curved
   atmosphere: Delicate, ocean
   key_features: Luster
-  creative_brief: Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience.
+  creative_brief: >-
+    Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green
+    like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or
+    destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within
+    the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience. Use Mother of
+    Pearl as portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - plastic
 assets:

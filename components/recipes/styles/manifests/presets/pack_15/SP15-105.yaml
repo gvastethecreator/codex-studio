@@ -12,14 +12,14 @@ visualDna:
   color_palette: Chlorophyll green, rose amber, and clean white.
   lighting_setup: Bright diffused daylight with reflective leaf scatter.
   material_texture: Living trellises, polished bio-glass, and soft soil beds.
-  render_quality: Elegant civic biotech concept art.
+  render_quality: Elegant civic biotech render with botanical debate and genome-learning cues.
   spatial_distortion: Amphitheater-like depth framed by botanical layers.
   atmosphere: Debate, cultivation, and intelligent stewardship.
   key_features: Genome bench motifs, pollen display grids, bio-learning panels, and DNA trellis shadows.
   creative_brief: >-
-    Preserve genome garden-forum grammar as a reusable style system:
-    botanical knowledge amphitheaters, DNA-trellis civic debate framing, and
-    cultivated stewardship intelligence should remain coherent across subjects.
+    Debate the input inside genome garden logic: chlorophyll spiral bands,
+    rose-amber pollen grids, DNA trellis shadows, petal lab alcoves, and
+    clean-white bio-learning panels make any subject feel cultivated and civic.
 avoidRules: [photoreal, sterile, cyberpunk, watermark, text, logo, flat-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-105.webp }
 attributes:

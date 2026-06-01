@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Vignette blur, edge falloff, tunnel softness
   atmosphere: Experimental, fun, rule-breaking, analog play
   key_features: Light leaks, sprocket holes, film rebate, double-exposure ghost
-  creative_brief: 'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition.'
+  creative_brief: >-
+    Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge
+    falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait
+    assumptions. Perfection is removed; the artifact, leak, and mistake become the composition. Apply Lomography as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - correct color
 assets:

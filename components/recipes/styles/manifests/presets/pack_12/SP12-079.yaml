@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Co-op citadel-defense luminosa, orientada a sinergia de clases y sostén de múltiples accesos.
-  subject_treatment: Roles complementarios (support/damage/tank/control) sosteniendo lanes convergentes con claridad total.
+  aesthetic: Gramática co-op defense luminosa con sinergia de clases, múltiples accesos y sostén de línea.
+  subject_treatment: Convierte el input en support/damage/tank/control, objetivo protegido, acceso o nodo cristalino defensivo.
   color_and_tone: Blanco alabastro, oro regio, acentos cobalto/azur y microseñales rojas de amenaza.
   lighting_and_shadow: Emisivos arquitectónicos, fill heroico balanceado y canales de sombra que definen rutas.
   texture_and_material: Mármol ceremonial pulido, aleación filigranada, nodos cristalinos y piedra patrimonial.
-  camera_and_composition: Plaza-hub con ingresos ramificados, posiciones de equipo legibles y foco objetivo por capas.
+  camera_and_composition: Ingresos ramificados, posiciones de equipo y foco objetivo por capas sin exigir citadel.
   atmosphere_and_mood: Unida, urgente y épicamente esperanzada.
   rendering_and_quality: Co-op warfront gameplay art de alta claridad con cues sólidos de pacing y control de línea.
 avoidRules:

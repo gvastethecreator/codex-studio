@@ -12,19 +12,31 @@ tags:
   - miscellaneous-and-fun
   - toys-and-miniatures
 visualDna:
-  aesthetic: Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm
+  aesthetic: >-
+    Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile
+    craft-theater charm
   form_and_line: Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability
-  color_palette: Mixed handmade craft hues with construction-paper saturation, painted backdrop transitions, and collage-friendly contrast blocks
+  color_palette: >-
+    Mixed handmade craft hues with construction-paper saturation, painted backdrop transitions, and collage-friendly
+    contrast blocks
   lighting_setup: Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion
-  material_texture: Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity
-  render_quality: Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical legibility
+  material_texture: >-
+    Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted
+    irregularity
+  render_quality: >-
+    Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical
+    legibility
   spatial_distortion: Forced-perspective micro-staging with deliberate scale compression between foreground and backdrop planes
   atmosphere: Curious, creative, intimate, playful, wonder-filled
-  key_features: Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material evidence
+  key_features: >-
+    Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material
+    evidence
   creative_brief: >-
-    Keep this preset rooted in miniature layered-stage grammar: handcrafted
-    material evidence, parallax plane stacking, and peephole worldbuilding
-    should define identity beyond any specific shoebox classroom narrative.
+    Keep this preset rooted in miniature layered-stage grammar: handcrafted material evidence, parallax plane stacking,
+    and peephole worldbuilding should define identity beyond any specific shoebox classroom narrative. Apply Diorama Box
+    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - full scale
 assets:

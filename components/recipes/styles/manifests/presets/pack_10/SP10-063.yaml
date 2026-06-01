@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Drape
   atmosphere: Strong, protective
   key_features: Ring pattern
-  creative_brief: Thousands of rings interlocked into a fabric that breathes steel, flexible armor that flows like metallic water. Each link depends on its neighbors, a textile of mutual defense forged one circle at a time.
+  creative_brief: >-
+    Apply chainmail structure to the input: interlocked metal rings, flexible
+    armor flow, repeated circular links, and cool steel highlights should wrap
+    or replace surfaces without forcing medieval characters.
 avoidRules:
   - plate armor
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

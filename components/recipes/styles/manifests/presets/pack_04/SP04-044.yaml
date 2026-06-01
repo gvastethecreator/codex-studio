@@ -12,19 +12,36 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Vintage travel-poster style with idealized destination abstraction, optimistic transit-era polish, and graphic promotional clarity
-  form_and_line: Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and poster-friendly horizon banding
-  color_palette: Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro print contrast
-  lighting_setup: Even poster illumination with soft midday optimism and minimal shadow complexity to maximize graphic legibility
-  material_texture: Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival surface character
-  render_quality: Clean promotional illustration finish emphasizing readable forms, aspirational mood, and destination-forward composition
-  spatial_distortion: Deliberately simplified depth planes with flattened perspective and iconized environment hierarchy
+  aesthetic: >-
+    Vintage travel-poster style with idealized destination abstraction, optimistic transit-era
+    polish, and graphic promotional clarity
+  form_and_line: >-
+    Simplified geometric landmark silhouettes with clean contour economy, broad shape stacking, and
+    poster-friendly horizon banding
+  color_palette: >-
+    Sunlit flat chroma blocks with warm coastal tones, sky-sea separation, and restrained retro
+    print contrast
+  lighting_setup: >-
+    Even poster illumination with soft midday optimism and minimal shadow complexity to maximize
+    graphic legibility
+  material_texture: >-
+    Lithographic print grain with subtle ink spread, paper aging cues, and lightly faded archival
+    surface character
+  render_quality: >-
+    Clean promotional illustration finish emphasizing readable forms, aspirational mood, and
+    destination-forward composition
+  spatial_distortion: >-
+    Deliberately simplified depth planes with flattened perspective and iconized environment
+    hierarchy
   atmosphere: Bright, inviting, relaxed, optimistic, escapist
-  key_features: Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors, travel-poster layout discipline
+  key_features: >-
+    Bottom title-lockup zone, destination-led typographic framing, simplified landmark anchors,
+    travel-poster layout discipline
   creative_brief: >-
-    Define this preset through vintage travel-poster grammar: flattened scenic
-    planes, optimistic color blocking, and destination-led composition should
-    carry identity beyond one railway or seaside locale.
+    Apply vintage travel-poster grammar to any input: flattened scenic planes, optimistic ink bands,
+    simplified landmark anchors, archival litho grain, and destination-like composition should carry
+    promotional clarity without requiring trains, beaches, mountains, cities, titles, or a real
+    destination.
 avoidRules:
   - photo
 assets:

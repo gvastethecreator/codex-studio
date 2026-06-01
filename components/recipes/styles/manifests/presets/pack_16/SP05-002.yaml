@@ -24,9 +24,10 @@ visualDna:
   creative_brief: >-
     Preserve vintage mechanical grandeur through heavy silhouette logic,
     high-contrast cel shading, riveted articulation, and emotionally maximal
-    hero framing. Transfer this logic to any subject or input image without
-    requiring robots, vehicles, launch bays, pilots, or machinery as literal
-    content.
+    hero framing. Transfer this logic to any subject or input image by
+    mechanizing forms when useful, adding riveted mass, robot-scale posture, or
+    vehicle-like panel rhythm without requiring launch bays, pilots, or a fixed
+    machine scene.
 avoidRules:
   - realistic
   - 3d render

@@ -20,7 +20,11 @@ visualDna:
   render_quality: Realistic, architectural, path-trace beauty
   atmosphere: Calm, realistic, naturally lit
   key_features: Soft shadows, indirect fill
-  creative_brief: Light arrives from everywhere and nowhere — photons bounce off walls, bleed color across neighboring surfaces, and fill shadows with borrowed warmth until no darkness remains absolute. Ambient occlusion gathers softly in corners like settled dust, and indirect fill sculpts form with the gentleness of overcast afternoon. The image feels naturally lit, as if the room itself were a light source, calm radiating from every soft gradient.
+  creative_brief: >-
+    Emphasize global-illumination behavior across the input: color bleed, diffuse
+    bounce, ambient fill, soft contact shadows and believable photon ricochet.
+    Preserve natural expensive light without requiring a room, wall set or
+    interior environment.
 avoidRules:
   - direct flash
   - harsh shadows

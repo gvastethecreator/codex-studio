@@ -11,15 +11,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Melting clocks style',
       form_and_line: 'Realistic rendering',
-      color_palette: 'Desert warm',
+      color_palette: 'Warm uncanny neutrals',
       lighting_setup: 'Long shadows',
       material_texture: 'Smooth oil',
       render_quality: 'Fine art, bizarre',
       spatial_distortion: 'Melting, elongated',
       atmosphere: 'Dreamlike, weird',
-      key_features: 'Desert horizon',
+      key_features: 'Impossible liquefaction',
       creative_brief:
-        'Time liquefies on a desert branch, solid objects betraying their nature in the heat of the subconscious. The irrational parades with photographic precision, daring the waking mind to make sense of dream logic.',
+        'Apply Dali-like surreal logic to the input with precise oil-rendered forms, long-shadow stillness, warm uncanny neutrals, liquefied edges, elongated proportions, and rational detail serving irrational transformation. If clocks, branches, horizons, or architecture already exist, bend them; otherwise melt and stretch the subject without forcing a desert setting.',
     },
   },
   {
@@ -34,11 +34,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Overexposed',
       material_texture: 'Low res photo',
       render_quality: 'Internet aesthetic',
-      spatial_distortion: 'Eye objects',
+      spatial_distortion: 'Familiarity drift',
       atmosphere: 'Nostalgic, wrong',
-      key_features: 'Blue sky',
+      key_features: 'Pastel wrongness',
       creative_brief:
-        'Childhood photographs edited into something slightly off, the familiar twisted by an intelligence that remembers incorrectly. Warmth curdles into unease, and the house you grew up in no longer recognizes you.',
+        'Apply dreamcore as nostalgic wrongness over the input with overexposed pastel bloom, low-res-photo softness, familiar forms slightly misremembered, cheerful daylight turning uneasy, and impossible symbolic intrusions. If house, yard, toy, sky, or childhood cue exists, bend it; otherwise make the subject feel like a corrupted memory without requiring a domestic setting.',
     },
   },
   {
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Surrealism & Dream',
     negativePrompt: 'fantasy, cartoon',
     style: {
-      aesthetic: 'Real world with magic',
+      aesthetic: 'Grounded impossible realism',
       form_and_line: 'Realistic',
       color_palette: 'Natural',
       lighting_setup: 'Subtle glow',
@@ -55,9 +55,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Literary, subtle',
       spatial_distortion: 'One impossible element',
       atmosphere: 'Wonder, grounded',
-      key_features: 'Real world context',
+      key_features: 'One quiet impossibility',
       creative_brief:
-        'The extraordinary slips quietly into the mundane, a floating teapot in a kitchen that otherwise obeys physics. Magic here does not announce itself; it simply exists, as natural and unnoticed as breathing.',
+        'Apply magical realism as restrained contradiction over the input with mostly natural rendering, one impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the subject without turning it into overt fantasy or cartoon.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, creepy',
       key_features: 'Cute but dark',
       creative_brief:
-        'Saturday morning cartoons dragged through the gutters of fine art, big eyes staring from canvases that refuse to decide between cute and disturbing. Pop culture achieves self-awareness and finds itself monstrous.',
+        'Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration, cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware without forcing a mascot.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chill, nostalgic',
       key_features: 'Windows 95 UI',
       creative_brief:
-        'A mall that never existed, rendered in chrome gradients and Greek busts under palm tree sunsets. The aesthetic of futures that never arrived, slowed down and looped into melancholic infinity.',
+        'Apply vaporwave nostalgia to the input: chrome gradients, pastel magenta-cyan haze, faux-classical fragments, sunset grids, and slowed consumer-future melancholy should stylize any subject without requiring a mall, bust, or palm backdrop.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Terrifying, sexual',
       key_features: 'Ribbed pattern',
       creative_brief:
-        'Flesh and machine in unholy union, vertebrae becoming cable, ribcage becoming chassis. The organic surrenders to the mechanical with a dark intimacy that makes the viewer complicit in the fusion.',
+        'Apply biomechanical fusion to the input: bone-like struts, cable tendons, ribbed chassis forms, slick dark surfaces, and organic-machine seams should make subjects feel engineered from anatomy without requiring a humanoid body.',
     },
   },
   {
@@ -123,17 +123,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Surrealism & Dream',
     negativePrompt: 'people, life',
     style: {
-      aesthetic: 'Empty hallway/pool',
+      aesthetic: 'Liminal absence field',
       form_and_line: 'Perspective',
       color_palette: 'Beige, fluorescent',
       lighting_setup: 'Flat artificial',
-      material_texture: 'Carpet, tile',
+      material_texture: 'Carpet, tile, synthetic surfaces',
       render_quality: 'Unsettling, familiar',
       spatial_distortion: 'None',
       atmosphere: 'Eerie, lonely',
-      key_features: 'No people',
+      key_features: 'Transitional emptiness',
       creative_brief:
-        'Places built for transit but emptied of purpose, fluorescent lights humming over carpets no one walks. The architecture remembers people who were never there, and the air thickens with the echo of absence.',
+        'Apply liminal-space unease as atmosphere over the input with flat fluorescent light, beige synthetic surfaces, over-clean emptiness, transitional perspective, and a sense of purpose removed. If hallway, pool, mall, office, or room exists, empty it; otherwise make subject and background feel stranded in functional space without requiring architecture.',
     },
   },
   {
@@ -148,11 +148,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Glowing',
       material_texture: 'Fractal',
       render_quality: 'Trippy, 60s',
-      spatial_distortion: 'Melting walls',
+      spatial_distortion: 'Melting geometry',
       atmosphere: 'Intense, hallucination',
-      key_features: 'Eyes everywhere',
+      key_features: 'Pulse motifs',
       creative_brief:
-        'Reality peels back in layers, fractals blooming behind the eyelids like neon flowers in accelerated time. Color becomes temperature, pattern becomes pulse, and the boundary between self and image dissolves completely.',
+        'Apply psychedelic pulse to the input: neon fractals, vibrating complementary colors, recursive floral geometry, liquid contour drift, and sensory overload should transform any subject without requiring faces, posters, or drug imagery.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Psychological',
       key_features: 'Silhouette container',
       creative_brief:
-        "Two realities occupying the same frame, a forest growing through a portrait's skull like memory colonizing consciousness. The self becomes a landscape, the landscape becomes a face, and neither takes priority.",
+        'Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as containers for a second visual field.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Intellectual, confusing',
       key_features: 'Tessellation',
       creative_brief:
-        'Staircases that return to themselves, water that flows upward into its own source. The eye believes what the mind rejects, trapped in a diagram that obeys local logic while defying universal truth.',
+        'Apply Escher-like impossible logic to the input: recursive geometry, reversible figure-ground, paradoxical depth, and locally plausible edges should make any subject structurally impossible without requiring stairs.',
     },
   },
   {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Optimistic, bright',
       key_features: 'Plants everywhere',
       creative_brief:
-        'Vines embrace solar panels, buildings breathe through green lungs, and technology serves the ecosystem rather than consuming it. The future glows with chlorophyll and circuitry in symbiotic radiance.',
+        'Apply solarpunk symbiosis to the input: chlorophyll greens, warm sunlight, visible renewable tech, botanical circuitry, and optimistic repair detail should make any subject feel ecologically integrated without forcing buildings.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Confusing, unsafe',
       key_features: 'Text overlay',
       creative_brief:
-        'Images edited with the wrong tools by hands that meant something else entirely. The result hovers between incompetence and nightmare, a visual language that communicates danger not through what it shows but through how it fails to show correctly.',
+        'Apply weirdcore wrongness to the input: uncanny low-skill edits, mismatched scaling, harsh cutouts, off-color overlays, and broken composition should make the subject feel emotionally unsafe without requiring text or rooms.',
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hopeless, grand',
       key_features: 'Fog',
       creative_brief:
-        'Ruined cathedrals tower over landscapes that have forgotten hope, every stone weighed down by centuries of myth. Beauty persists in the wreckage, fiercer and more precious for the darkness that surrounds it.',
+        'Apply dark-fantasy nightmare grandeur over the input with desaturated black weight, rot and rust texture, scratchy detail, fog, skeletal structural cues, and mythic despair at monumental scale. If ruins, cathedrals, armor, creatures, or landscapes exist, deepen them; otherwise make the subject feel ancient, corroded, and hopeless without forcing architecture.',
     },
   },
   {
@@ -262,11 +262,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Mismatched',
       material_texture: 'Paper',
       render_quality: 'Dada, retro',
-      spatial_distortion: 'Big heads',
+      spatial_distortion: 'Scale mismatch',
       atmosphere: 'Absurd, funny',
       key_features: 'Cutout look',
       creative_brief:
-        "Scissors impose new logic on old paper, a businessman's head transplanted onto a giraffe's body without explanation or apology. The absurd assembles itself from the discarded fragments of mass culture.",
+        'Apply collage surrealism as cut-paper recombination over the input with faded magazine stock, scissor edges, mismatched lighting, abrupt scale shifts, and absurd fragments assembled without seamless blending. If people, animals, products, or props exist, recombine them; otherwise fracture the subject into mass-culture cutouts without requiring a specific hybrid gag.',
     },
   },
   {
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Surrealism & Dream',
     negativePrompt: 'busy, detailed',
     style: {
-      aesthetic: 'Empty city square',
+      aesthetic: 'Metaphysical stillness',
       form_and_line: 'Long shadows',
       color_palette: 'Yellow, Green, Dark',
       lighting_setup: 'Afternoon sun',
@@ -283,9 +283,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'De Chirico, silent',
       spatial_distortion: 'Mannequins',
       atmosphere: 'Silent, philosophical',
-      key_features: 'Arches',
+      key_features: 'Suspended time',
       creative_brief:
-        'Plazas emptied of people, classical arches framing a silence thicker than architecture. Mannequins and long shadows inhabit a world where time has been suspended by decree of geometry.',
+        'Apply metaphysical-art stillness over the input with long afternoon shadows, yellow-green-dark tonal tension, plaster or stone quietness, mannequin-like simplification when figures appear, and geometry that suspends time. If plaza, arch, or architecture exists, use it; otherwise impose classical silence and philosophical emptiness without requiring a city square.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

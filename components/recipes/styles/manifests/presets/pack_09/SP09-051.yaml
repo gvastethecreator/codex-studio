@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Melting rock
   atmosphere: Dangerous, intense
   key_features: Heat
-  creative_brief: Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming.
+  creative_brief: >-
+    Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence
+    pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire,
+    the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty
+    of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture,
+    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - cold
   - blue

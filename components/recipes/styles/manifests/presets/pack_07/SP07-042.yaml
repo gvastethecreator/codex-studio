@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-042
 packId: pack_07
-name: English Cottage Garden
-category: 1. Residential Interiors
+name: Cottage Bloom Layering
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - landscape-and-garden-systems
 visualDna:
-  aesthetic: Jardín cottage de abundancia romántica, domesticidad hortícola y espontaneidad cuidadosamente compuesta.
-  form_and_line: Borduras estratificadas por altura, recorridos sinuosos, masas redondeadas y acentos verticales trepadores.
+  aesthetic: >-
+    Jardín cottage de abundancia romántica, domesticidad hortícola y espontaneidad cuidadosamente
+    compuesta.
+  form_and_line: >-
+    Borduras estratificadas por altura, recorridos sinuosos, masas redondeadas y acentos verticales
+    trepadores.
   color_palette: Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose
   lighting_setup: Sol suave con difusión nubosa, dapple bajo arbolado y brillo cálido de pétalo en tarde baja.
-  material_texture: Pétalo y hoja de textura variada, ladrillo con musgo, piedra rugosa, mulch de corteza y follaje plumoso.
+  material_texture: >-
+    Pétalo y hoja de textura variada, ladrillo con musgo, piedra rugosa, mulch de corteza y follaje
+    plumoso.
   render_quality: Riqueza botánica pictórica con estratificación estacional legible e informalidad estructurada.
   spatial_distortion: None
   atmosphere: Íntima, suave y vivida, con abundancia vegetal acogedora.
-  key_features: Transiciones desbordadas, manchas aromáticas, floración vertical, recorridos curvos y señales para polinizadores.
+  key_features: >-
+    Transiciones desbordadas, manchas aromáticas, floración vertical, recorridos curvos y señales
+    para polinizadores.
   creative_brief: >-
-    Construye una gramática cottage transferible basada en mezcla, altura y
-    secuencia de floración. Debe parecer libre pero responder a una estructura
-    de capas estacionales y calidez doméstica sostenida.
+    Lleva cualquier input a abundancia hortícola compuesta: capas por altura, bordes que desbordan,
+    floración escalonada y calidez doméstica. Debe parecer espontáneo, pero revelar estructura
+    estacional al mirarlo de cerca.
 avoidRules:
   - formal
   - concrete
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

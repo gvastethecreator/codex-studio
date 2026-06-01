@@ -157,7 +157,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Warm, happy',
       key_features: 'Warm cast',
       creative_brief:
-        'Low-angle warm light turns any subject into amber atmosphere: long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not sunset scenery; it is honeyed temporal warmth applied as photographic light behavior.',
+        'Low-angle warm light turns any subject into amber atmosphere with long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not a sunset backdrop; it is honeyed temporal warmth applied as photographic light behavior.',
     },
   },
   {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Quiet, cold',
       key_features: 'Blue cast',
       creative_brief:
-        'The suspended stillness between darkness and dawn, when the world holds its breath wrapped in indigo silence. No sun to cast shadows, only the ambient exhale of a sky transitioning through violet depths. A quietude so profound you can almost hear the color blue.',
+        'Apply blue-hour ambient stillness to the input: indigo-violet low light, soft shadowless exposure, cool atmospheric fill, and quiet transitional color should calm any subject without requiring sky or dawn backdrop.',
     },
   },
   {
@@ -233,7 +233,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Atmospheric, monumental',
       key_features: 'Light shafts',
       creative_brief:
-        'Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious scene.',
+        'Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious setting.',
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Magical, alien',
       key_features: 'Dark background',
       creative_brief:
-        'Organic-looking light appears born from within the subject: blue-green phosphor glow, dark-background separation, soft emissive edges, and alien biological rhythm. Keep bioluminescent self-illumination without requiring water, skin, creatures, Avatar, or underwater scenes.',
+        'Apply bioluminescent self-illumination to the input: blue-green phosphor glow, dark-background separation, soft emissive edges, and alien organic rhythm should light any subject from within without requiring water or creatures.',
     },
   },
   {
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Imposing, structured',
       key_features: 'Vertical lines',
       creative_brief:
-        'Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban scene.',
+        'Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban setting.',
     },
   },
   {
@@ -423,7 +423,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic portrait',
       key_features: 'Thin focus plane',
       creative_brief:
-        'Impossible depth collapses into breath, the subject floating on a sea of dissolved light while background melts into abstract devotion. This is not focus but consecration, a single point of clarity surrounded by the beautiful surrender of everything else.',
+        'Impossible depth collapses into breath, the subject floating on a sea of dissolved light while background melts into abstract devotion. This is not focus but consecration, a single point of clarity surrounded by the beautiful surrender of everything else. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -575,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Calm, empty',
       key_features: 'Isolation',
       creative_brief:
-        'One thing, one place, one thought: the frame breathes around its subject like silence around a struck bell. An economy of tones whispers where abundance would shout, the isolated form suspended in a field of stillness that makes it more present by subtraction. The image does not merely illustrate emptiness but practices it, every absent element an act of disciplined love for what remains.',
+        'One thing, one place, one thought: the frame breathes around its subject like silence around a struck bell. An economy of tones whispers where abundance would shout, the isolated form suspended in a field of stillness that makes it more present by subtraction. The image does not merely illustrate emptiness but practices it, every absent element an act of disciplined love for what remains. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -594,7 +594,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tiny, cute',
       key_features: 'Miniature effect',
       creative_brief:
-        'Tilt-shift miniature style shrinks any subject into diorama logic: saturated daylight, selective focus band, blurred top and bottom, and toy-like clarity at the focal plane. Use scale inversion without requiring cities, buildings, or playset scenery.',
+        'Apply tilt-shift miniature optics to the input: selective focus band, top-bottom blur, saturated daylight, and toy-scale clarity should shrink any subject into diorama logic without requiring cities or playsets.',
     },
   },
   {
@@ -708,7 +708,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creepy, voyeuristic',
       key_features: 'Surveillance UI burn-in',
       creative_brief:
-        'A machine watching without intention: low-resolution compression, scanlines, wide-angle distortion, security-camera contrast, and timestamp-like UI burn-in marks. Any subject becomes evidence under indifferent surveillance; no bodies, crime scene, hallway, or literal witness narrative required.',
+        'Apply CCTV surveillance optics to the input: low-resolution compression, scanlines, wide-angle distortion, harsh security contrast, and timestamp-like burn-in marks without readable text should make any subject feel observed.',
     },
   },
   {

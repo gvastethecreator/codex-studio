@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-051
 packId: pack_07
-name: Rivendell Verdant Elven Refuge, Last Homely House
-category: 1. Residential Interiors
+name: Verdant Elven Sanctuary
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,30 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de alta fantasía.
-  form_and_line: Arcos filigranados, soportes derivados de ramas, estratos en cascada y curvas estructurales no ortogonales.
+  aesthetic: >-
+    Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de
+    alta fantasía.
+  form_and_line: >-
+    Arcos filigranados, soportes derivados de ramas, estratos en cascada y curvas estructurales no
+    ortogonales.
   color_palette: Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk
-  lighting_setup: Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de carácter ceremonial.
-  material_texture: Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo cristalino.
+  lighting_setup: >-
+    Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de
+    carácter ceremonial.
+  material_texture: >-
+    Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo
+    cristalino.
   render_quality: Alta fidelidad fantástica con integración biótica-artesanal y ornamento de lectura precisa.
   spatial_distortion: None
   atmosphere: Refugio sacro, melancolía luminosa y continuidad atemporal.
-  key_features: Estratos atravesados por agua, fusión árbol-estructura, trazas finas suspendidas y orientación celeste.
+  key_features: >-
+    Estratos atravesados por agua, fusión árbol-estructura, trazas finas suspendidas y orientación
+    celeste.
   creative_brief: >-
-    Define una gramática élfica transferible basada en curvatura elegante,
-    fusión biótica y serenidad luminosa. Debe mantener sofisticación fantástica
-    sin quedar anclada a una localización única.
+    Cualquier sujeto adopta curvatura filigranada, fusión árbol-estructura, agua como estrato y luz
+    melancólica. La referencia élfica guía refinamiento lírico, no una localización licenciada.
 avoidRules:
   - industrial
   - blocky
@@ -35,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

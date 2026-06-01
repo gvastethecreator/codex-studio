@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Bent
   atmosphere: Restricted, urban
   key_features: Diamond grid
-  creative_brief: Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent.
+  creative_brief: >-
+    Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you
+    can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface
+    should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the
+    beauty of the permeable boundary, exclusion made transparent. Use Chain Link Fence as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - wood fence
 assets:

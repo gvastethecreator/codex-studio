@@ -12,7 +12,7 @@ tags:
   - illustration-and-graphic-novel
   - childrens-and-educational
 visualDna:
-  aesthetic: Creature size-comparison chart with educational scale framing
+  aesthetic: Size-comparison chart with educational scale framing
   form_and_line: Baseline-aligned silhouettes with measurement ticks and reference markers
   color_palette: Neutral comparative scheme with restrained atmospheric scaling cues
   lighting_setup: Consistent silhouette rim/read light for cross-subject legibility
@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Awe-oriented yet analytical, museum-chart clarity
   key_features: Human and real-world benchmarks, incremental height logic, clear unit hierarchy
   creative_brief: >-
-    Communicate extreme scale through disciplined comparative layout. Anchor every creature to shared baseline and measurement context, combining familiar reference objects with escalating silhouettes so perceived magnitude remains immediate and unambiguous.
+    Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating silhouettes,
+    cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the subject into abstract
+    scale-study forms without requiring monsters, humans for scale, chart labels, or a creature lineup.
 avoidRules:
   - single creature
   - no reference

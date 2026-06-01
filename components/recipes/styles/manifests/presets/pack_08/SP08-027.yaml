@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Thrasher skate-zine style, deck-grip authenticity, parking-lot session culture
+  aesthetic: Skate-zine style, deck-grip authenticity, casual session culture
   form_and_line: Baggy, relaxed-denim silhouette, oversized tee, hoodie-stack, beanie-slouch
   color_palette: Grey, Black, Graphic Tee, heather, logo-white, washed-black, grip-tape grey
-  lighting_setup: Outdoor sun, fisheye-lens flare, golden-hour ledge, parking-lot shade
+  lighting_setup: Outdoor sun, fisheye-lens flare, golden-hour edge light, hard pavement bounce
   material_texture: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
   render_quality: Casual, active, fisheye-video energy, street-credible rawness
   spatial_distortion: None
-  atmosphere: Chill, active, session-flow zen, board-pop rhythm, endless-summer ease
+  atmosphere: Chill, active, session-flow ease, board-pop rhythm, raw casualness
   key_features: Vans skate shoes, ollie-worn suede, five-panel cap, logo tee
-  creative_brief: Grip-tape grit transferred to canvas sneakers, each scuff a signature of the trick that almost landed. The oversized tee hangs like a flag of surrender to gravity fought all afternoon, five-panel cap shading eyes that measure ledges and gaps in a city that becomes a playground when seen through fisheye glass.
+  creative_brief: >-
+    Convert the input into skater casual: oversized tee, hoodie stack, baggy
+    denim, suede scuffs, grip-tape grit, five-panel cap cues and fisheye video
+    rawness. Keep board-pop rhythm without requiring tricks, ledges, parking
+    lots, city playgrounds or a skater body.
 avoidRules:
   - tight clothes
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

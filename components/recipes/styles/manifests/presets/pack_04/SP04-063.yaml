@@ -12,19 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm
+  aesthetic: >-
+    Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour
+    elegance, and floating-world calm
   form_and_line: Variable width
   color_palette: Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth
   lighting_setup: Flat, no shadow, graphic elegance, woodblock tradition
   material_texture: Wood grain
-  render_quality: Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and repeatable impression clarity
+  render_quality: >-
+    Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance,
+    and repeatable impression clarity
   spatial_distortion: Flattened perspective
   atmosphere: Nature, calm, ukiyo-e transience, seasonal reverence
   key_features: Outline, gradient band, seal signature
   creative_brief: >-
-    Anchor identity in ukiyo-e woodblock grammar: carved contour rhythm,
-    bokashi gradient transitions, and indigo-forward restraint should define the
-    preset without naming a specific masterwork or artist.
+    Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients,
+    Prussian-indigo restraint, flattened perspective, and repeatable impression clarity should
+    define style without requiring waves, landscapes, actors, seals, nature scenes, or named
+    masterworks.
 avoidRules:
   - western
   - 3d

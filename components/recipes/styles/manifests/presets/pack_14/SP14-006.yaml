@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-006
 packId: pack_14
-name: Crowned Ash Oracle
+name: Ash-Crown Oracle Decree
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Eschatological court-noir centered on a sovereign oracle issuing final decrees.
-  form_and_line: High-throne verticality, decree-bearing hand geometry, and strict heraldic symmetry.
+  aesthetic: Eschatological court-noir where prophecy reads as legal force and sovereign ash.
+  form_and_line: High vertical authority, decree-tablet geometry, strict heraldic symmetry, and crown-halo framing.
   color_palette: Volcanic ash gray, funerary gold, and deep ultramarine dusk.
   lighting_setup: Ember uplight from censers plus a narrow crown halo rim.
   material_texture: Charred vellum, oxidized regalia, cinder dust, and brocade ceremonial cloth.
   render_quality: Prestige key art with precise icon hierarchy and high-distance readability.
-  spatial_distortion: Tribunal axis converging behind the throne through smoke-layered arches.
+  spatial_distortion: Tribunal-axis convergence through smoke-layered arches or equivalent authority planes without requiring a throne room.
   atmosphere: Judicial inevitability, prophetic dread, and sovereign calm.
-  key_features: Cracked coronet, decree tablets, oath-bearer attendants, intelligent ash plumes.
-  creative_brief: A crowned oracle delivers binding prophecy as legal sentence, blending ritual authority and end-time governance.
+  key_features: Cracked coronet cues, decree tablets, oath geometry, intelligent ash plumes, and funerary-gold verdict light.
+  creative_brief: >-
+    Decree the input through ash-crown oracle law: volcanic gray fields,
+    funerary-gold halos, ultramarine dusk, charred-vellum texture, and heraldic
+    verdict symmetry should make any subject feel prophetically binding without
+    requiring a literal oracle figure, courtroom, attendants, tablets, or apocalypse tableau.
 avoidRules: [photoreal, soft-cute, random-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-006.webp }
 attributes:
   negativePrompt: photoreal, soft-cute, random-chaos, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

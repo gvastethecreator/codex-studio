@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Surface wrap
   atmosphere: Antique, homey
   key_features: Varnish shine
-  creative_brief: Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject.
+  creative_brief: >-
+    Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new
+    surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second
+    composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject. Apply
+    this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering
+    logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or
+    literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -43,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-063.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, decorative object requirement, readable printed motif
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border, decorative object requirement, readable printed motif
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

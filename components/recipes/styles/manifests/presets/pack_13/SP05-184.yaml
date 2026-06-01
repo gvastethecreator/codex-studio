@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Playful, elegant, satirical, affectionate
   key_features: Rose effects, princely silhouette cues, ornate polish, ensemble comedy staging, tailored detail
   creative_brief: >-
-    Preserve rose-cloud flirt-theater grammar as a reusable style system:
-    theatrical princely staging, satirical romance motifs, and ensemble
-    comedy-confession balance should remain consistent across subjects.
+    Stage the input inside rose-cloud flirt theater: champagne spot pockets,
+    rose overlays, princely silhouette cues, ornate polish, and ensemble comic
+    timing can make any subject elegant and self-aware without requiring a host
+    club, ballroom, bouquet scene, or romance confession.
 avoidRules:
   - realistic
   - 3d render

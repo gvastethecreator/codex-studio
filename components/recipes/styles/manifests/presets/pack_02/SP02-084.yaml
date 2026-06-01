@@ -12,7 +12,9 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty
+  aesthetic: >-
+    Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature
+    selection, Daumier lithograph irreverence, Punch magazine cruelty
   form_and_line: Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch
   color_palette: Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow
   lighting_setup: Harsh side-light carving shadows into exaggerated features, unflattering key
@@ -21,7 +23,13 @@ visualDna:
   spatial_distortion: Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion
   atmosphere: Biting, cynical, merciless observation, righteous mockery
   key_features: Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions
-  creative_brief: 'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text.'
+  creative_brief: >-
+    Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic
+    enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech
+    bubbles. Every line should argue through shape and pressure, not through readable text. Apply Political Satire
+    Cartoon as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting
+    setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text,
+    fixed IP scene, or narrative setup.
 avoidRules:
   - flattering
   - beautiful

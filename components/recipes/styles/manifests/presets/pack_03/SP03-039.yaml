@@ -12,16 +12,21 @@ tags:
   - 3d-and-cgi-rendering
   - organic-and-character-cgi
 visualDna:
-  aesthetic: Luminous alien forest, Avatar Pandora style, bioluminescent wonder, floating mountains, connected ecosystem
-  form_and_line: Glowing plants
+  aesthetic: Bioluminescent alien ecology, Avatar/Pandora-style wonder, connected organic glow
+  form_and_line: Glowing organic silhouettes, spore halos, branching luminous networks
   color_palette: Blue, Purple night, cyan bloom
   lighting_setup: Plant glow, ambient bioluminescence
   material_texture: Organic, alien, phosphorescent
   render_quality: Fantasy, magical, otherworldly immersion
   spatial_distortion: None
-  atmosphere: Wonder, magic, spiritual awe
+  atmosphere: Wonder, magic, spiritual awe, connected-biology calm
   key_features: Glow in dark, floating spores
-  creative_brief: 'Darkness is not the absence of light but the canvas for a living glow — phosphorescent flora pulse in cyan and violet, and floating spores drift through the understory like airborne constellations. Every plant is its own light source, ambient bioluminescence replacing sunlight with something more intimate and alien. The image channels Pandora''s spiritual awe: an ecosystem lit from within, wonder rendered as connected biology, magic explained by the science of light.'
+  creative_brief: >-
+    Infuse the input with bioluminescent alien ecology: cyan/violet
+    phosphorescence, spore halos, internal plant-like glow, connected organic
+    networks and ambient light replacing sunlight. Keep Pandora-style awe
+    without requiring a forest, floating mountains, specific flora, ecosystem
+    setting, or landscape.
 avoidRules:
   - day
   - sun

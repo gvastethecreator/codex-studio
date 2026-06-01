@@ -13,18 +13,28 @@ tags:
   - toys-and-miniatures
 visualDna:
   aesthetic: Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness
-  form_and_line: Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward geometry
+  form_and_line: >-
+    Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward
+    geometry
   color_palette: Saturated toy primaries with metallic accent paints, molded skin-tone neutrals, and high-contrast accessory blocks
-  lighting_setup: Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism
+  lighting_setup: >-
+    Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging
+    realism
   material_texture: Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish
-  render_quality: High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish
+  render_quality: >-
+    High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic
+    mass-market polish
   spatial_distortion: Action-figure joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning
   atmosphere: Playful, energetic, nostalgic, bold, adventurous
-  key_features: Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior
+  key_features: >-
+    Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting
+    behavior
   creative_brief: >-
-    Preserve identity through articulated toy-hero grammar: molded plastic
-    anatomy, visible joint systems, and display-ready gloss should carry the
-    preset without anchoring it to one fixed living-room battle story.
+    Preserve identity through articulated toy-hero grammar: molded plastic anatomy, visible joint systems, and
+    display-ready gloss should carry the preset without anchoring it to one fixed living-room battle story. Apply Action
+    Figure as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - realistic skin
 assets:

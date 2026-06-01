@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-090
 packId: pack_14
-name: Auroral Prison of Signs
+name: Auroral Omen Containment
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Polar prison where condemned omens are archived and contained.
-  form_and_line: Isolated towers, aurora cages, and radial confinement yards.
+  aesthetic: Auroral omen containment with polar fatalism, controlled prophecy, and cosmic paranoia.
+  form_and_line: Isolated tower cues, aurora cages, and radial confinement bands.
   color_palette: Polar cyan, black ice, and warning amber.
   lighting_setup: Aurora veils and guarded spotlight corridors.
   material_texture: Frozen steel, chained stone, and etched sigils.
   render_quality: Stark concept art with oppressive geometry.
-  spatial_distortion: Multi-ring compound depth under open sky.
+  spatial_distortion: Multi-ring confinement depth under an open auroral sky.
   atmosphere: Fatalism, control, and cosmic paranoia.
-  key_features: Omen vaults, aurora bars, and sentinel walkways.
-  creative_brief: A penitentiary built for prophecies too dangerous to release.
+  key_features: Omen vault cues, aurora bars, sentinel walkways.
+  creative_brief: Recast any input through auroral omen containment, as if dangerous prophecies were held inside polar light. Keep aurora bars, black-ice geometry, guarded amber signals, sigil-etched confinement, and cosmic paranoia without requiring towers, prisons, sentinels, vaults, or polar landscapes.
 avoidRules: [photoreal, comedic, colorful-pop, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-090.webp }
 attributes:
   negativePrompt: photoreal, comedic, colorful-pop, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

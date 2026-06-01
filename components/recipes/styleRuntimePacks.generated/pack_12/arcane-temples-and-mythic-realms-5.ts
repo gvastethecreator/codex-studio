@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, cartoon, flat',
     style: {
       aesthetic:
-        'Boss-arena dark fantasy para action RPG, con lenguaje arcano sistémico y telemetría de mecánicas por símbolo.',
+        'Gramática boss-arena dark fantasy con telemetría arcana, fases legibles y símbolos como mecánica visual.',
       subject_treatment:
-        'Entidad grimorio como boss-phase controller y avatar conjurado con weak points visuales explícitos.',
+        'Eleva el input a boss, avatar conjurado o artefacto controlador; si aparece grimorio, debe reforzar fase y weak points, no fijar una biblioteca.',
       color_and_tone:
         'Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.',
       lighting_and_shadow:
@@ -20,10 +20,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.',
       camera_and_composition:
-        'Arena radial con centro mecánico, perímetro de evasión y lanes para posicionamiento de party.',
+        'Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena cerrada.',
       atmosphere_and_mood: 'Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.',
       rendering_and_quality:
         'Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.',
+      creative_brief:
+        'Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -33,19 +35,21 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, urban-neon, lowres',
     style: {
       aesthetic:
-        'Action-adventure místico de santuario desértico con énfasis en puzzle lumínico y orientación geométrica.',
+        'Gramática action-adventure mística con puzzle lumínico, refracción cristalina y orientación geométrica ritual.',
       subject_treatment:
-        'Guardian archetypes y player silhouettes diferenciadas por interacción con prismas/runas.',
+        'Reinterpreta el input como guardián, prisma, llave, avatar o superficie calibrada; santuario y desierto son anclas opcionales.',
       color_and_tone: 'Arena rosada, amatista, blanco solar y acentos espectrales por refracción.',
       lighting_and_shadow:
         'Sol duro con rebotes policromáticos usados como mecánica de progresión visual.',
       texture_and_material:
         'Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.',
       camera_and_composition:
-        'Gran angular con escalera ceremonial y líneas guía hacia nodos puzzle.',
+        'Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica visual.',
       atmosphere_and_mood: 'Sagrada, silenciosa y analítica, de descubrimiento ritual.',
       rendering_and_quality:
         'Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.',
+      creative_brief:
+        'Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -55,9 +59,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clean-modern, flat-light',
     style: {
       aesthetic:
-        'Metroidvania tecno-arcano de ruina monumental con foco en exploración, gating y activación de sistemas ancestrales.',
+        'Gramática metroidvania tecno-arcana con gating, activación ancestral, escala monumental y mecha sagrado.',
       subject_treatment:
-        'Colosos mecánicos como arquitectura interactiva por estados (dormant/active/hostile).',
+        'Si el input contiene personaje/objeto/criatura, darle indicios de coloso mecánico, núcleo latente o arquitectura interactiva por estados dormant/active/hostile.',
       color_and_tone:
         'Piedra beige, pátina verde y núcleos azules para señalizar función tecnológica latente.',
       lighting_and_shadow:
@@ -65,10 +69,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Basalto, circuitería incrustada, musgo seco y juntas mecánicas erosionadas.',
       camera_and_composition:
-        'Escala monumental con anclas humanas mínimas para reforzar lectura de progreso espacial.',
+        'Escala monumental, rutas bloqueadas y landmarks de progreso; templo o ruina pueden aparecer pero no son obligatorios.',
       atmosphere_and_mood: 'Reverente, misteriosa y arqueotecnológica.',
       rendering_and_quality:
         'Matte gameplay concept con landmarks de navegación y jerarquía de interacción ambiental.',
+      creative_brief:
+        'Aplica Ancient Mecha Temple como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -78,9 +84,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, empty-scene, low-detail',
     style: {
       aesthetic:
-        'Space-trade RPG de puertos estelares con economía faccional, diplomacia armada y logística interestelar.',
+        'Gramática space-trade RPG con economía faccional, diplomacia armada, lujo logístico y rutas interestelares.',
       subject_treatment:
-        'Clases mercantiles/escolta con identidad visual de corporación, sindicato o casa comercial.',
+        'Aplica identidad mercantil/escolta, corporación, sindicato o casa comercial al input; naves, carga o puerto son anclas opcionales.',
       color_and_tone:
         'Oro solar, púrpura espacial y azul profundo para marcar riqueza, neutralidad y conflicto.',
       lighting_and_shadow:
@@ -88,10 +94,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Cascos nacarados, metal bruñido, textiles ceremoniales y superficies de carga modular.',
       camera_and_composition:
-        'Panorámica de hub con rutas de tránsito, puntos de negociación y áreas de disputa visibles.',
+        'Rutas de tránsito, negociación y disputa como lectura compositiva; no exigir hub, puerto ni muelle físico.',
       atmosphere_and_mood: 'Ambiciosa, diplomática y volátil.',
       rendering_and_quality:
         'Worldbuilding key art orientado a sistemas de comercio, reputación y control de rutas.',
+      creative_brief:
+        'Aplica Celestial Harbor Trade Wars como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -101,9 +109,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grunge, chaotic-fx',
     style: {
       aesthetic:
-        'Duel-fighter ceremonial en monasterio celeste, centrado en spacing, timing y neutral game.',
+        'Gramática duel-fighter ceremonial con spacing limpio, timing estricto, neutral game y sobriedad marcial.',
       subject_treatment:
-        'Duelistas disciplinados con armas rituales y perfiles de alcance claramente diferenciados.',
+        'Transforma el input en duelista, arma ritual, stance o arena de alcance; monasterio celeste queda como ancla opcional.',
       color_and_tone:
         'Blanco pétreo, azul cielo y oro sobrio para claridad de escenario y foco en combatientes.',
       lighting_and_shadow:
@@ -111,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.',
       camera_and_composition:
-        'Simetría central de arena con límites claros, zonas de presión y reset neutral.',
+        'Simetría central, límites claros, zonas de presión y reset neutral sin exigir arena física.',
       atmosphere_and_mood: 'Serena, tensa y honorable.',
       rendering_and_quality:
         'PvP stage elegante con legibilidad de hitbox, distancia y estados de ventaja.',
@@ -124,9 +132,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
     style: {
       aesthetic:
-        'Social-stealth de gala en palacio ilusorio, orientado a engaño, acceso por estatus y fuga limpia.',
+        'Gramática social-stealth ilusoria con engaño, acceso por estatus, fuga limpia y prestigio peligroso.',
       subject_treatment:
-        'Espías ceremoniales con gadgets discretos y lectura de identidad por etiqueta/facción.',
+        'Convierte el input en espía ceremonial, máscara de estatus, gadget discreto o nodo de vigilancia social.',
       color_and_tone:
         'Oro suave, azul nocturno y púrpura real para codificar zonas de prestigio y riesgo.',
       lighting_and_shadow:
@@ -134,10 +142,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Cristal facetado, seda de alto rango, mármol pulido y metal de ornamento funcional.',
       camera_and_composition:
-        'Corredores espejados con rutas ocultas, nodos de vigilancia y puntos de extracción.',
+        'Rutas ocultas, vigilancia y extracción en planos reflectivos; palacio o gala son anclas opcionales.',
       atmosphere_and_mood: 'Glamorosa, engañosa y socialmente tensa.',
       rendering_and_quality:
         'Stealth-playground de alta sofisticación con legibilidad de patrullas, cobertura y acceso.',
+      creative_brief:
+        'Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -147,16 +157,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, sci-fi-neon, lowres',
     style: {
       aesthetic:
-        'Tactical-fantasy de coven en pantano ritual, orientado a zonas de control, invocación y deny de terreno.',
+        'Gramática tactical-fantasy de coven con zonas de control, invocación, deny de terreno y ritual brumoso.',
       subject_treatment:
-        'Brujas de clan y espíritus invocados con silueta clara por escuela mágica.',
+        'Convierte el input en bruja, espíritu, tótem, zona de hechizo o amenaza invocada con escuela mágica clara.',
       color_and_tone:
         'Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.',
       lighting_and_shadow:
         'Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.',
       texture_and_material: 'Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.',
       camera_and_composition:
-        'Claros circulares conectados por pasarelas con choke-points tácticos.',
+        'Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.',
       atmosphere_and_mood: 'Arcana, peligrosa y teatralmente agresiva.',
       rendering_and_quality:
         'Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.',
@@ -169,8 +179,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, combat-chaos, murky',
     style: {
       aesthetic:
-        'Puzzle-garden palaciego de luz y rotación, orientado a cadenas de activación y lectura espacial fina.',
-      subject_treatment: 'Arquitectura viva como mecanismo de nivel con feedback claro por estado.',
+        'Gramática puzzle-garden refinada con luz redirigida, rotación, cadenas de activación y lectura espacial fina.',
+      subject_treatment:
+        'Convierte el input en mecanismo vivo, espejo, nodo vegetal, llave floral o superficie calibrable.',
       color_and_tone:
         'Verde jade, rosa orquídea y mármol claro para navegación serena y foco mecánico.',
       lighting_and_shadow:
@@ -178,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Pétalos, piedra pulida, bronce fino y superficies reflectantes calibrables.',
       camera_and_composition:
-        'Trazado geométrico con metas visuales explícitas y nodos puzzle encadenados.',
+        'Trazado geométrico, metas visuales y nodos encadenados sin exigir palacio o jardín literal.',
       atmosphere_and_mood: 'Serena, refinada y cognitivamente desafiante.',
       rendering_and_quality:
         'Puzzle environment clarity-first con pistas visuales robustas y mínima ambigüedad.',
@@ -191,15 +202,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, snow, lowres',
     style: {
       aesthetic:
-        'Endgame shrine-run volcánico místico, orientado a ascenso por fases, hazard térmico y combate ritual.',
+        'Gramática endgame shrine-run volcánica con ascenso por fases, hazard térmico y combate ritual.',
       subject_treatment:
-        'Peregrinos guerreros y guardianes pétreos con lectura clara de arquetipo y amenaza.',
+        'Convierte el input en peregrino guerrero, guardián pétreo, checkpoint, reliquia o hazard ígneo.',
       color_and_tone: 'Verde jade, negro lava y naranja ígneo para jerarquía de riesgo/progreso.',
       lighting_and_shadow:
         'Glow de magma con humo denso para telegraph de zonas de daño y ventanas seguras.',
       texture_and_material: 'Piedra vitrificada, oro ritual, ceniza suspendida y grietas activas.',
       camera_and_composition:
-        'Ruta ascendente hacia templo superior con checkpoints visuales y cuellos de botella.',
+        'Ascenso por fases, checkpoints y cuellos de botella sin exigir templo o volcán literal.',
       atmosphere_and_mood: 'Devocional, peligrosa y trascendente.',
       rendering_and_quality:
         'Endgame-zone gameplay art con legibilidad alta de ruta, fase y prioridad táctica.',
@@ -212,15 +223,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, daytime, clutter',
     style: {
       aesthetic:
-        'Precision-trial de arquería mística en santuario nocturno, orientado a timing, trayectoria y control respiratorio.',
+        'Gramática precision-trial de arquería mística con timing, trayectoria, control respiratorio y foco lunar.',
       subject_treatment:
-        'Arqueros espirituales con flechas de energía y lectura clara de estilo técnico.',
+        'Reinterpreta el input como arquero espiritual, flecha de energía, diana ritual, trayectoria o scoring de precisión.',
       color_and_tone: 'Azul lunar, plata y violeta tenue para concentración visual sin ruido.',
       lighting_and_shadow:
         'Luz de luna y faroles de papel para contrastes suaves y foco de objetivo.',
       texture_and_material: 'Madera pulida, piedra húmeda, seda ritual y marcas de práctica.',
       camera_and_composition:
-        'Calle de tiro con dianas rituales por distancia y dificultad progresiva.',
+        'Trayectoria, impacto y dificultad progresiva sin exigir santuario o calle de tiro.',
       atmosphere_and_mood: 'Concentrada, calmada y extremadamente precisa.',
       rendering_and_quality:
         'Challenge-stage gameplay art con legibilidad impecable de trayectoria, impacto y scoring.',

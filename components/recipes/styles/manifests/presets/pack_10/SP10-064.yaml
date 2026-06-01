@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Wild, luxury
   key_features: Scale grid
-  creative_brief: Overlapping shields of keratin laid down in a pattern older than mammals, catching light in diamond facets. The texture of silent movement, a surface that promises danger and demands attention.
+  creative_brief: Apply snake-skin pattern as exotic scale geometry over the input with overlapping keratin shields, diamond facets, patterned sheen, and dangerous luxury. If creature, costume, object, or surface exists, wrap it in scale logic; otherwise use the scale grid as abstract texture without requiring a snake body.
 avoidRules:
   - fur
   - smooth
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

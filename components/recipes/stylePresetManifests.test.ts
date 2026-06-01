@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
+import type { StylePackManifest } from './styles/manifestTypes';
 import type { StyleRuntimePack } from './styles/runtimeTypes';
 import {
   composeStyleRuntimePacksFromManifests,
@@ -107,6 +108,56 @@ describe('stylePresetManifests', () => {
     expect(composeStyleRuntimePacksFromManifests(packManifests, presetManifests)).toEqual(
       runtimePacks,
     );
+  });
+
+  it('composes runtime category names from pack subcategories instead of stale preset fields', () => {
+    const packManifests: StylePackManifest[] = [
+      {
+        schemaVersion: 1,
+        id: 'pack-a',
+        name: 'Pack A',
+        description: 'First pack',
+        categories: [
+          {
+            id: 'manifest-category',
+            name: 'Manifest Category',
+            presetRefs: ['pack-a/preset-a.yaml'],
+          },
+        ],
+        presetRefs: ['pack-a/preset-a.yaml'],
+      },
+    ];
+    const presetManifests = createStylePresetManifests([
+      {
+        id: 'pack-a',
+        name: 'Pack A',
+        description: 'First pack',
+        presets: [
+          {
+            id: 'preset-a',
+            name: 'Preset A',
+            category: 'Stale Preset Category',
+            style: {
+              aesthetic: 'noir',
+              subject_treatment: 'sculptural',
+              color_and_tone: 'cool',
+              lighting_and_shadow: 'hard',
+              texture_and_material: 'glass',
+              camera_and_composition: 'centered',
+              atmosphere_and_mood: 'quiet',
+              rendering_and_quality: 'high',
+            },
+          },
+        ],
+      },
+    ]);
+
+    expect(
+      composeStyleRuntimePacksFromManifests(packManifests, presetManifests)[0].presets[0],
+    ).toMatchObject({
+      id: 'preset-a',
+      category: 'Manifest Category',
+    });
   });
 
   it('creates a granular catalog with direct preset and pack lookups', () => {
@@ -408,8 +459,8 @@ describe('stylePresetManifests', () => {
     );
 
     expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(11);
-    expect(catalog.presetManifests).toHaveLength(1253);
+    expect(catalog.packManifests).toHaveLength(16);
+    expect(catalog.presetManifests).toHaveLength(1662);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
     expect(runtimeIndex.packs).toEqual(recomposedPacks);
     expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();

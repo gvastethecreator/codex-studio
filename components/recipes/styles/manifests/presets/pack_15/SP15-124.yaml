@@ -12,14 +12,14 @@ visualDna:
   color_palette: Lagoon blue, neon mint, and pearl.
   lighting_setup: Twilight glow with mirrored lagoon reflections.
   material_texture: Floating polymers, water glass, and brushed aluminum.
-  render_quality: Sleek coastal infrastructure with readable signal logic.
+  render_quality: Sleek coastal render with readable signal logic and lagoon relay calm.
   spatial_distortion: Centered relay hub with radiating lagoon-like spokes.
   atmosphere: Connection, distance translation, and quiet power.
   key_features: Relay disks, buoy antennas, mirror-water channels, and calm signal rings.
   creative_brief: >-
-    Preserve lagoon relay-station grammar as a reusable style system:
-    circular waterborne signal infrastructure, buoy-antenna relay choreography,
-    and quiet connective power should remain coherent across subjects.
+    Relay the input across calm lagoon signals: lagoon-blue mirror channels,
+    neon-mint buoy stacks, pearl relay disks, floating spoke bands, and reflected
+    twilight rings make any subject feel connected and quietly powerful.
 avoidRules: [photoreal, stormy, industrial-rust, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-124.webp }
 attributes:

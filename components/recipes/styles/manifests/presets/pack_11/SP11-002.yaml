@@ -13,18 +13,24 @@ tags:
   - toys-and-miniatures
 visualDna:
   aesthetic: Designer-vinyl collectible style with iconic simplification, shelf-display charisma, and fandom-object polish
-  form_and_line: Big-head minimal silhouette logic, rounded contour economy, reduced facial feature grammar, and toy-like geometric abstraction
+  form_and_line: >-
+    Big-head minimal silhouette logic, rounded contour economy, reduced facial feature grammar, and toy-like geometric
+    abstraction
   color_palette: Matte-vinyl friendly saturated blocks with restrained pastel accents and high-contrast identity markers
-  lighting_setup: Soft-box product illumination, even diffusion for form clarity, controlled specular restraint, and shelf-ready glow balance
+  lighting_setup: >-
+    Soft-box product illumination, even diffusion for form clarity, controlled specular restraint, and shelf-ready glow
+    balance
   material_texture: Rotocast vinyl matte skin, smooth molded edges, subtle seam minimalism, and semi-soft tactile finish cues
   render_quality: Premium collectible-render aesthetic focused on silhouette recognizability and display-case merchandising clarity
   spatial_distortion: Exaggerated cranium-to-body ratio with simplified limb volume to maintain stylized collectible identity
   atmosphere: Cute, curated, iconic, collectible, display-forward
   key_features: Big-head abstraction grammar, button-eye minimalism, display-figure composition cues, vinyl-matte surface discipline
   creative_brief: >-
-    Preserve this preset through collectible abstraction rules—overscaled head
-    ratios, reduced facial geometry, and matte vinyl display polish should
-    define the style regardless of franchise character source.
+    Preserve this preset through collectible abstraction rules—overscaled head ratios, reduced facial geometry, and
+    matte vinyl display polish should define the style regardless of franchise character source. Apply Funko Pop Vinyl
+    Collectible Figure as a portable style system over any input: preserve its construction grammar, material cues,
+    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
+    classroom sample, product shot, or scene template.
 avoidRules:
   - realistic proportions
   - small head

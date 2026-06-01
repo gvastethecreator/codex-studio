@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration
-  form_and_line: Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure
+  aesthetic: >-
+    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
+    screen-space integration
+  form_and_line: >-
+    Thin vector line discipline with modular widget framing, reticle geometry, and precision
+    micro-typographic structure
   color_palette: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
   lighting_setup: Glow, emissive interface, screen-space radiance
   material_texture: Screen
@@ -22,9 +26,10 @@ visualDna:
   atmosphere: Tech, info, augmented awareness, mission-ops focus
   key_features: Floating, thin rule-lines, data readout
   creative_brief: >-
-    Keep this preset defined by HUD grammar: translucent data layering,
-    diegetic readouts, and functional vector hierarchy should carry identity
-    beyond any single mission UI layout.
+    Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry,
+    modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add
+    augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI
+    text.
 avoidRules:
   - organic
   - messy

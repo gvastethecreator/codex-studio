@@ -17,14 +17,18 @@ visualDna:
   color_palette: Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends
   lighting_setup: Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth
   material_texture: Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability
-  render_quality: Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth
+  render_quality: >-
+    Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic
+    warmth
   spatial_distortion: Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands
   atmosphere: Funny, charming, warm, quirky, optimistic
   key_features: Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows
   creative_brief: >-
-    Define this preset by clay stop-motion grammar: visible thumbprints,
-    sculpted expression swaps, and miniature practical-set lighting should hold
-    identity without referencing specific studios or characters.
+    Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature
+    practical-set lighting should hold identity without referencing specific studios or characters. Apply Clay
+    Stop-Motion Comedy as a portable style system over any input: preserve its construction grammar, material cues,
+    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
+    classroom sample, product shot, or scene template.
 avoidRules:
   - smooth cgi
 assets:

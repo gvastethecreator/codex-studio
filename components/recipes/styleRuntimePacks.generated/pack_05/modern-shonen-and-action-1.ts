@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar',
       creative_brief:
-        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond any institution or arena narrative.',
+        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond any institution or arena narrative. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure grammar',
       creative_brief:
-        'Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific tactical setup.',
+        'Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific tactical setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'System-logic grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing',
       creative_brief:
-        'Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references.',
+        'Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag mechanics',
       creative_brief:
-        'The style should read as high-budget action satire: catastrophic impact grammar contrasted with emotionally flat reaction framing, making comedic dissonance the transferable core.',
+        'The style should read as high-budget action satire: catastrophic impact grammar contrasted with emotionally flat reaction framing, making comedic dissonance the transferable core. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Symbol-field iconography, ceremonial opposition, reality-layer rupture cues, regal color authority',
       creative_brief:
-        'Preserve identity through mythic symbolism and ceremonial opposition; reality-warp spectacle should support an operatic visual grammar beyond specific lore references or combat setups.',
+        'Preserve identity through mythic symbolism and ceremonial opposition; reality-warp spectacle should support an operatic visual grammar beyond specific lore references or combat setups. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -700,7 +700,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sketch-to-burst transitions, emotion-linked visual instability, pop-abstract psychic motifs, rough-expression fidelity',
       creative_brief:
-        'Define this preset by emotional-energy visualization: sketch roughness should escalate into abstract psychic rupture, making inner state the structural driver of style.',
+        'Define this preset by emotional-energy visualization: sketch roughness should escalate into abstract psychic rupture, making inner state the structural driver of style. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -784,7 +784,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Calligraphic motion language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging',
       creative_brief:
-        'Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues or fixed subject matter.',
+        'Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues or fixed subject matter. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -812,7 +812,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing',
       creative_brief:
-        'Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic frame ruptures should define the style regardless of character premise.',
+        'Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic frame ruptures should define the style regardless of character premise. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -924,7 +924,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Kinetic motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting',
       creative_brief:
-        'Preserve a youthful combat grammar through motion-vector linework, emblematic shape cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale or accessory.',
+        'Preserve a youthful combat grammar through motion-vector linework, emblematic shape cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale or accessory. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -952,7 +952,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Monochrome supremacy, razor-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction',
       creative_brief:
-        'Anchor this preset in monochrome edge-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene or character setup.',
+        'Anchor this preset in monochrome edge-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene or character setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -980,7 +980,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing',
       creative_brief:
-        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific faction, ship, sea, or lore motifs.',
+        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific faction, ship, sea, or lore motifs. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -1008,7 +1008,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rhythm-cut action grammar, lo-fi texture stack, swagger-forward motion, analog groove visual cadence',
       creative_brief:
-        'Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically improvised, with texture and pacing as the transferable identity rather than a literal action-travel setup.',
+        'Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically improvised, with texture and pacing as the transferable identity rather than a literal action-travel setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {
@@ -1036,7 +1036,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing',
       creative_brief:
-        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene, cast, or location.',
+        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene, cast, or location. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
     },
   },
   {

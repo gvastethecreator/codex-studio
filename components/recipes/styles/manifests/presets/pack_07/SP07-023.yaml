@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-023
 packId: pack_07
 name: Parametric Architecture
-category: 5. Speculative And Concept Architecture
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - speculative-and-concept-architecture
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Parametricismo fluido de lógica algorítmica, continuidad topológica y espacialidad casi líquida.
-  form_and_line: Curvas continuas, superficies sin junta visible, volúmenes morfogenéticos y transiciones tipo cinta.
+  form_and_line: >-
+    Curvas continuas, superficies sin junta visible, volúmenes morfogenéticos y transiciones tipo
+    cinta.
   color_palette: Blanco técnico, gris frío gradual, plata líquida y azul hielo en señal lumínica.
-  lighting_setup: Ambiente suave continuo, líneas de glow embebidas, iluminación de borde y núcleos de volumen activos.
-  material_texture: Compuestos lisos, hormigón de piel continua, panelería GRP y membranas tensadas de alta precisión.
-  render_quality: Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle constructivo plausible.
+  lighting_setup: >-
+    Ambiente suave continuo, líneas de glow embebidas, iluminación de borde y núcleos de volumen
+    activos.
+  material_texture: >-
+    Compuestos lisos, hormigón de piel continua, panelería GRP y membranas tensadas de alta
+    precisión.
+  render_quality: >-
+    Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle
+    constructivo plausible.
   spatial_distortion: Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.
   atmosphere: Elegante, avanzada, ligera y matemática.
-  key_features: Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta visible.
+  key_features: >-
+    Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta
+    visible.
   creative_brief: >-
-    Construye una gramática paramétrica transferible donde continuidad de
-    superficie, variación algorítmica y precisión constructiva sean inseparables.
-    Debe sentirse computacional sin depender de un edificio específico.
+    Construye una gramática paramétrica transferible donde continuidad de superficie, variación
+    algorítmica y precisión constructiva sean inseparables. Debe sentirse computacional sin depender
+    de un edificio específico.
 avoidRules:
   - brick
   - square
@@ -35,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: speculative-and-concept-architecture
-  categoryName: 5. Speculative And Concept Architecture
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - speculative-and-concept-architecture
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Amorphous
   atmosphere: Epic, vast
   key_features: Stars
-  creative_brief: Stellar afterbirth drifting across light-years, pink and indigo nurseries where stars ignite. The cosmic scale renders the viewer microscopic, a witness to creation at its most indifferent.
+  creative_brief: >-
+    Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust
+    speckles, luminous depth, and cosmic-scale haze should make forms feel
+    suspended in astronomical color without requiring an outer-space backdrop.
 avoidRules:
   - solid
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

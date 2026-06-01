@@ -106,11 +106,6 @@ export interface LogEntry {
   message: string;
 }
 
-export interface BackgroundConfig {
-  density: number;
-  speed: number;
-}
-
 export interface Toast {
   id: string;
   message: string;

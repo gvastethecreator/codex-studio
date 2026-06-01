@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-095
 packId: pack_14
-name: Thorned Sun Relic
+name: Thorned Solar Relic Icon
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Sacred relic built around a sun icon pierced by thorned metal.
-  form_and_line: Circular halo, pointed thorns, and vertical altar framing.
+  aesthetic: Sacred solar iconography pierced by thorned metal and sacrificial noir tension.
+  form_and_line: Circular halo logic, pointed thorns, and vertical relic framing adaptable to any subject.
   color_palette: Bone white, soot black, and burnished gold.
   lighting_setup: Hard rimlight through stained haze.
-  material_texture: Hammered bronze, cracked stone, and velvet shadow.
+  material_texture: Hammered bronze, cracked stone, scarred enamel, and velvet shadow.
   render_quality: Editorial mythic illustration with high contrast.
-  spatial_distortion: Central relic composition with radiating tension lines.
+  spatial_distortion: Radiating tension lines and compressed icon depth without requiring a pedestal.
   atmosphere: Reverence, danger, and compressed power.
-  key_features: Sun sigil, thorn crown, and ceremonial pedestal.
-  creative_brief: A symbolic relic where solar divinity and sacrifice are fused into one icon.
+  key_features: Sun sigil, thorn crown, burnished sacrificial edges.
+  creative_brief: Transform the input through a thorn-pierced solar relic language, fusing divinity and sacrifice without locking the image to an altar object.
 avoidRules: [photoreal, cute, low-detail, watermark, text, logo, flat-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-095.webp }
 attributes:
   negativePrompt: photoreal, cute, low-detail, watermark, text, logo, flat-light
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Warped, refractive bend, swim-goggle perspective
   atmosphere: Calm, deep, abyssal peace, submerged solitude
   key_features: Caustics, light-net projection, suspended particles, refractive wobble
-  creative_brief: 'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean scenes. The image should feel filtered through depth and fluid refraction.'
+  creative_brief: >-
+    Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive
+    wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required
+    props, or literal ocean environments. The image should feel filtered through depth and fluid refraction. Apply
+    Underwater Light as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
+    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
+    readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - dry
 assets:

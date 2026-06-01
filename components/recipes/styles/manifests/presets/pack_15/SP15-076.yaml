@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Hands-on solidarity, practical creativity, repair pride, and lunar neighborhood warmth.
   key_features: Patchwork modules, copper task-light accents, tool-loop motifs, woven insulation textures, and mint-white maker graphics.
   creative_brief: >-
-    Apply selenite artisan-block as an abstract style treatment: make any
-    subject feel patched, repaired, shared, ceramic, copper-lit, and
-    hand-built.
+    Repair the input as selenite maker craft: patch ceramic planes, woven
+    insulation seams, copper task-light loops, mint-white module grids, and
+    visible hand-built fixes across any subject without forcing a workshop scene.
 avoidRules: [photoreal, sterile-corporate, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-076.webp }
 attributes:

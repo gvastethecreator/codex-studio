@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Deckbuilder-roguelike hub arcano orientado a draft, compra de reliquias y preparación de run.
-  subject_treatment: Comerciantes místicos y artefactos animados con lectura de rareza y función.
+  aesthetic: Gramática deckbuilder-roguelike arcana con draft, reliquias, preparación de run y rareza legible.
+  subject_treatment: Convierte el input en carta, comerciante, reliquia, opción de build o artefacto animado con función clara.
   color_and_tone: Azul zafiro, cobre y púrpura intenso para jerarquía de recompensa/riesgo.
   lighting_and_shadow: Faroles mágicos pulsantes que marcan oferta activa y eventos especiales.
   texture_and_material: Pergaminos, madera tallada, gemas facetadas y vitrinas rituales.
-  camera_and_composition: Stands en abanico con foco central para navegación clara entre opciones.
+  camera_and_composition: Opciones en abanico, foco central y navegación de build sin exigir bazaar o hub literal.
   atmosphere_and_mood: Curiosa, estratégica y de riesgo calculado.
   rendering_and_quality: Run-selection hub gameplay-first con claridad de rutas de build y economía.
 avoidRules:

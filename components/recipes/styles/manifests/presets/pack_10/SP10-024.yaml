@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Curved screen
   atmosphere: Retro, tech
   key_features: Scanlines
-  creative_brief: Phosphor glow at intimate distance, the grid of red-green-blue that built a generation's dreams. Scanlines hum their horizontal song, each pixel a tiny window into a warmer, heavier light.
+  creative_brief: >-
+    Apply CRT phosphor display logic to the input: RGB triad texture, scanline
+    hum, curved-glass bloom, warm electronic glow, and slight convergence errors
+    should make any subject feel emitted by an old monitor.
 avoidRules:
   - lcd
   - sharp pixels
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

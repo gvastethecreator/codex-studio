@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Gym to street look, pre-to-post-workout fluidity, wellness-as-status
+  aesthetic: Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status
   form_and_line: Tight fitting, ergonomic, compressive sculpt, racerback lines, high-waist compression
   color_palette: Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal
-  lighting_setup: Gym lights or outdoor, sweat-sheen reflection, early-morning clarity, golden-hour pavement
+  lighting_setup: Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights
   material_texture: Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib
   render_quality: Nike/Lululemon performance-luxury activewear, fit-tech, always-ready, motion-capture sharpness
   spatial_distortion: None
-  atmosphere: Active, healthy, modern, endorphin glow, urban discipline, pre-dawn determination
+  atmosphere: Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination
   key_features: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs
-  creative_brief: The body as engineered instrument, muscles traced by compressive knit like a living blueprint. Sweat-sheened and neon-trimmed, the garment promises transformation between reps and errands, the 5 AM discipline of those who treat wellness as architecture and the street as runway.
+  creative_brief: >-
+    Translate the input into engineered activewear language: compressive knit,
+    reflective trims, seamless ribbing, ergonomic panel lines and motion-ready
+    tension. Preserve the wellness-as-performance aura without forcing a gym,
+    street, workout pose or exposed anatomy.
 avoidRules:
   - dress
   - jeans
@@ -43,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

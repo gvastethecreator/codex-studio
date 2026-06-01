@@ -12,7 +12,7 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Tiered weapon progression sheet emphasizing upgrade readability
+  aesthetic: Tiered equipment progression sheet emphasizing upgrade readability
   form_and_line: Stable base silhouette with controlled complexity increase per tier
   color_palette: Structured rarity progression from muted utilitarian to luminous high-tier accents
   lighting_setup: Standardized comparison light with incremental specular/emissive escalation
@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Aspirational, reward-centric, game-economy legibility
   key_features: Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline
   creative_brief: >-
-    Show advancement through controlled visual deltas rather than silhouette replacement. Keep core identity stable while escalating materials, ornament, and energy cues so each tier feels earned, distinct, and instantly rank-readable in UI and gameplay contexts.
+    Apply weapon-tier progression language to any input: upgrade deltas, rarity materials, silhouette escalation,
+    modular attachments, and increasingly ornate construction. If no weapon or equipment exists, convert the subject
+    into tiered design evolution without requiring weapons, game inventory UI, or readable labels.
 avoidRules:
   - one version
   - static

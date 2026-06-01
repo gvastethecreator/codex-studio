@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Melting
   atmosphere: Dystopian, aesthetic
   key_features: Vertical sort
-  creative_brief: The image unravels along luminance gradients, bright pixels dragged across the frame like a comb through wet paint. Digital entropy made visible, a glitch that reveals the hidden architecture of seeing.
+  creative_brief: >-
+    Apply pixel-sorting entropy to the input: luminance-drag streaks,
+    combed-out bright regions, directional digital smears, and broken raster
+    order should pull any subject into controlled glitch abstraction.
 avoidRules:
   - horizontal lines
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

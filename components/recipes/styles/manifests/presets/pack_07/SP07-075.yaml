@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-075
 packId: pack_07
-name: Escher Staircase
-category: 1. Residential Interiors
+name: Escherian Impossible Circulation
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
   aesthetic: Paradoja espacial escheriana, ambigüedad óptica matemática y circulación imposible.
-  form_and_line: Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en trayectorias cerradas.
-  color_palette: Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia undertones, and cool shadow modulation bands
-  lighting_setup: Exposición uniforme de impresión con sombras deliberadamente conflictivas y contraste moderado para sostener la ilusión.
+  form_and_line: >-
+    Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en
+    trayectorias cerradas.
+  color_palette: >-
+    Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia
+    undertones, and cool shadow modulation bands
+  lighting_setup: >-
+    Exposición uniforme de impresión con sombras deliberadamente conflictivas y contraste moderado
+    para sostener la ilusión.
   material_texture: Grano de papel litográfico, hatch de tinta grabada y tratamiento plano mate de piedra abstracta.
-  render_quality: Ilusión óptica de precisión alta, coherencia geométrica estricta y topología desestabilizante pero legible.
+  render_quality: >-
+    Ilusión óptica de precisión alta, coherencia geométrica estricta y topología desestabilizante
+    pero legible.
   spatial_distortion: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
   atmosphere: Cerebral, elegante y desorientante, con infinitud no resuelta.
-  key_features: Circuitos multi-gravedad, transiciones imposibles de arco, loops bloqueados por perspectiva y jerarquía de línea litográfica.
+  key_features: >-
+    Circuitos multi-gravedad, transiciones imposibles de arco, loops bloqueados por perspectiva y
+    jerarquía de línea litográfica.
   creative_brief: >-
-    Construye una gramática reusable de impossible-architecture donde bucles
-    paradójicos, lógica lineal estable bajo gravedad contradictoria y disciplina
-    tonal litográfica definan el sistema visual.
+    Usa arquitectura imposible como estilo transferible: gravedad contradictoria, bucles cerrados,
+    transiciones suelo-muro-techo y línea litográfica disciplinada. El objetivo es paradoja legible,
+    no una escalera específica.
 avoidRules:
   - logical physics
 assets:
@@ -34,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

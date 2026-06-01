@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: PLUR vibes, warehouse-rave euphoria, sunrise-set transcendence
+  aesthetic: 90s raver styling, PLUR euphoria, sunrise-set transcendence
   form_and_line: Baggy pants, phat-pant flare, crop-top crop, bucket-hat circumference, platform-sole stomp
   color_palette: Neon, Reflective, hi-vis yellow, electric cyan, safety-orange, silver-reflective, blacklight-reactive
   lighting_setup: Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid
   material_texture: PVC plastic, faux fur, mesh, reflective 3M, nylon parachute, fuzzy knit
   render_quality: Energetic, loud, rave-flyer saturation, peak-time euphoria
   spatial_distortion: None
-  atmosphere: Party, happy, warehouse-bass unity, 4AM transcendence, collective-euphoria embrace
+  atmosphere: Party, happy, bass-unity, 4AM transcendence, collective-euphoria glow
   key_features: Kandi bracelets, pacifier, bucket hat, phat pants, neon hair extensions
-  creative_brief: Blacklight catching reflective 3M like a secret language visible only to those who stayed past midnight, phat pants billowing with the bass drop that just passed through the warehouse floor. Kandi bracelets traded between strangers who became family at 4AM, pacifiers worn as badges of a tribe that worships at the altar of strobe light and collective euphoria.
+  creative_brief: >-
+    Push the input through 90s rave style: UV-reactive color, reflective 3M,
+    phat-pant volume, PVC, faux fur, kandi beads, bucket-hat cues and
+    strobe-fragmented light. Keep PLUR euphoria without requiring a warehouse,
+    dance floor, pacifier, crowd or party scene.
 avoidRules:
   - boring
   - grey
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

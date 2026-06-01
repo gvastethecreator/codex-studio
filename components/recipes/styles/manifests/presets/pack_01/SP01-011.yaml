@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Nostalgic, warm
   key_features: Yellow/Red bias
-  creative_brief: Sunlight folded into emulsion, surrendering harsh edges for a tender amber embrace. Colors breathe through warm neutrals, gentle saturation, pastel highlight rolloff, and fine analog grain. Any subject should feel photographed through honeyed memory, intimate without forcing a human face or scene.
+  creative_brief: >-
+    Apply Kodak Portra 400 warmth to the input: gentle saturation, amber skinlike
+    neutrals, pastel highlight rolloff, fine analog grain, and soft contrast
+    should make any subject feel intimate without requiring faces or lifestyle setup.
 avoidRules:
   - illustration
   - painting

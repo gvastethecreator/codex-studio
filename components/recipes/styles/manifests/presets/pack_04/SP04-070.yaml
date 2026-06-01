@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Nocturnal, contemplative, austere, museum-print gravitas
   key_features: Continuous black ground, staged highlight recovery, velvety midtone transitions
   creative_brief: >-
-    Build images from darkness outward: start with an uninterrupted black matrix and carve readable form through controlled highlight recovery. Prioritize tonal choreography over line detail, preserving soft transitions, burnished focal accents, and dense shadow architecture that sustains dramatic yet elegant print depth.
+    Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished
+    highlight recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms
+    from darkness without requiring night scenes, portraits, museum prints, or fixed black-ground
+    subjects.
 avoidRules:
   - white background
   - lines

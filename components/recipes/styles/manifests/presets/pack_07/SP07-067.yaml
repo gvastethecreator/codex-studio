@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-067
 packId: pack_07
-name: Sandcastle
-category: 1. Residential Interiors
+name: Wet-Sand Ephemeral Modeling
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Construcción litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.
-  form_and_line: Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a erosión.
+  form_and_line: >-
+    Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a
+    erosión.
   color_palette: Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents
   lighting_setup: Daylight costero duro, shimmer de agua reflejada, sombras bajas de playa y microespeculares en superficie húmeda.
-  material_texture: Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por desgaste.
+  material_texture: >-
+    Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por
+    desgaste.
   render_quality: Escultura transitoria de detalle alto con fidelidad granular y señales de colapso controlado.
   spatial_distortion: Crumbling
   atmosphere: Soleada, táctil y frágil, condicionada por decadencia natural inminente.
-  key_features: Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de marea.
+  key_features: >-
+    Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de
+    marea.
   creative_brief: >-
-    Mantén una gramática reusable de construcción en arena húmeda donde
-    geometría de molde, comportamiento granular y erosión visible definan el
-    estilo en sujetos variados.
+    Usa arena húmeda como lenguaje material: granulación compactada, bordes erosionables, goteo, molde repetido y
+    vulnerabilidad temporal. No necesita castillo ni playa; necesita comportamiento escultórico efímero. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - stone
 assets:
@@ -34,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

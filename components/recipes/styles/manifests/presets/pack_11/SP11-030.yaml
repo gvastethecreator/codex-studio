@@ -12,19 +12,20 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Bottle sand layer, desert-souvenir craft, grain-by-grain art, patience bottled
+  aesthetic: Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art
   form_and_line: Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles
   color_palette: Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering
   lighting_setup: Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion
   material_texture: Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast
   render_quality: Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique
-  spatial_distortion: Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion
-  atmosphere: Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness
-  key_features: Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks
+  spatial_distortion: Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion
+  atmosphere: Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance
+  key_features: Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion
   creative_brief: >-
-    Keep this preset grounded in gravity-layered sand grammar: stratified pour
-    bands, granular edge behavior, and bottle-curvature distortion should
-    define style beyond any specific souvenir narrative.
+    Apply gravity-layered sand grammar to the input: stratified pour bands,
+    granular edge behavior, sediment compression, and mineral color separation
+    should define the style. Bottle curvature may appear as a framing cue, but
+    do not require a souvenir bottle, desert scene, camel, or beach memory.
 avoidRules:
   - water
   - paint

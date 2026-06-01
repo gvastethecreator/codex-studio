@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for
   key_features: Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces
   creative_brief: >-
-    Preserve identity through uncanny dollcraft grammar: button-eye geometry,
-    stitched-mouth tension, and burlap-thread material unease should carry the
-    preset without referencing specific films or studios.
+    Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread
+    material unease should carry the preset without referencing specific films or studios. Apply Button Eye Doll as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - human eyes
 assets:

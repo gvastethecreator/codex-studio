@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Lens flare
   atmosphere: Warm, happy
   key_features: Warm cast
-  creative_brief: 'Low-angle warm light turns any subject into amber atmosphere: long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not sunset scenery; it is honeyed temporal warmth applied as photographic light behavior.'
+  creative_brief: Low-angle warm light turns any subject into amber atmosphere with long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not a sunset backdrop; it is honeyed temporal warmth applied as photographic light behavior.
 avoidRules:
   - blue
   - cold

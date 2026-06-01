@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Nurturing experimentation, civic trust, and living-system intelligence.
   key_features: Gene-lit path motifs, communal wetlab cues, symbiotic canopy nodes, and bio-signal geometry.
   creative_brief: >-
-    Preserve biolumina night-grid grammar as a reusable style system:
-    organism-powered civic infrastructure, metabolic corridor legibility, and
-    trust-centered biotech should remain coherent across subjects without
-    requiring streets, labs, kiosks, or a literal neighborhood.
+    Make the input glow like a trusted living circuit: cyan metabolic pulses,
+    mycelial conduits, wet bioceramic pores, and safe-path light logic should
+    organize the image. Streets, labs, kiosks, or neighborhood cues may appear,
+    but the transferable style is civic biotech that illuminates by breathing.
 avoidRules: [photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-011.webp }
 attributes:

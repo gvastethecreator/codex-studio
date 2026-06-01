@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Pixel drag
   atmosphere: Chaotic, digital
   key_features: I-Frame destruction
-  creative_brief: Frames bleed into each other, the boundary between moments liquefied by algorithmic failure. Pixels that were supposed to forget instead dissolve forward, a haunting of movement trapped between keyframes.
+  creative_brief: >-
+    Apply datamosh failure to the input: inter-frame smears, motion-block bleed,
+    codec ghosts, and liquefied temporal edges should corrupt subject movement
+    or contours while retaining enough identity to read the prompt.
 avoidRules:
   - clean
   - perfect
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

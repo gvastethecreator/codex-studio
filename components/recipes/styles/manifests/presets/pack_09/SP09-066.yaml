@@ -17,11 +17,11 @@ visualDna:
   color_palette: Beige
   lighting_setup: Sunlight
   material_texture: Grainy
-  render_quality: Beach, vacation
-  spatial_distortion: Footprints
+  render_quality: Wet, granular
+  spatial_distortion: Compaction marks
   atmosphere: Relaxing, warm
   key_features: Grains
-  creative_brief: Render the granular serenity of wet beach sand where ripples map the retreating tide in gentle waves of beige, each grain a tiny crystal of eroded mountain now compacted by water into a surface that catches sunlight and footprints with equal fidelity. The texture should feel cool and dense, a meditative surface where land and ocean negotiate their border in miniature.
+  creative_brief: 'Apply wet compacted sand as granular surface logic: beige ripples, dense water-darkened grain, tiny crystalline sparkle, shallow compaction marks, and sunlight caught in miniature ridges. If beach, shore, footprint, or terrain exists, reinforce it; otherwise transform planes and bases into damp sand texture without requiring vacation scenery.'
 avoidRules:
   - desert dunes
 assets:

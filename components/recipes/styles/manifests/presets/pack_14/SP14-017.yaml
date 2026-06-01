@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-017
 packId: pack_14
-name: Hall of the Feathered Scale
+name: Feathered Scale Afterlife Verdict
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, egyptian-myth]
 visualDna:
-  aesthetic: Egyptian afterlife noir focused on judgment symbolism and funerary precision.
-  form_and_line: Processional pylons, scale-centered symmetry, and jackal-priest silhouettes.
+  aesthetic: Egyptian afterlife noir focused on feather-scale judgment, funerary precision, and eternal consequence.
+  form_and_line: Processional pylon cues, scale-centered symmetry, and jackal-priest silhouettes.
   color_palette: Desert umber, lapis shadow blue, and funerary electrum.
   lighting_setup: Oblique tomb apertures with oil-lamp edge glows on carved reliefs.
   material_texture: Sand-worn limestone, gilded inlays, linen wrappings, and polished basalt floors.
   render_quality: Monumental concept key art with high symbolic legibility and restrained contrast.
-  spatial_distortion: Long hypostyle hall perspective converging on a central weighing altar.
+  spatial_distortion: Long hypostyle depth converging on a central weighing force.
   atmosphere: Solemn verdict, ritual order, and eternal consequence.
-  key_features: Heart-weighing scale, feather standard, canopic reliquaries, and painted hieratic friezes.
-  creative_brief: A judgment chamber where each soul is measured against cosmic balance under silent priestly scrutiny.
+  key_features: Heart-weighing scale, feather standard, canopic reliquary cues, abstract hieratic friezes.
+  creative_brief: Apply feathered-scale afterlife verdict to the input, measuring it against cosmic balance without requiring a chamber.
 avoidRules: [photoreal, comedic, bright-pop, sci-fi-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-017.webp }
 attributes:
   negativePrompt: photoreal, comedic, bright-pop, sci-fi-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, egyptian-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic, egyptian-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

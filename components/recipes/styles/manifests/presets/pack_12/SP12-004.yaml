@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Action-adventure steampunk aéreo con foco en traversal vertical, combate de abordaje y exploración de nodos flotantes.
-  subject_treatment: Clases corsair/engineer/pilot identificables por equipamiento y lenguaje de animación mecánica.
+  aesthetic: >-
+    Gramática action-adventure steampunk aérea con verticalidad, mecanismos de abordaje y exploración por nodos
+    flotantes.
+  subject_treatment: >-
+    Reinterpreta el input con rol corsair/engineer/pilot cuando aplique, o con arneses, hélices, presión, poleas y
+    animación mecánica legible.
   color_and_tone: Cobre viejo, azul tormenta y crema envejecido para codificar tecnología victoriana-fantástica.
   lighting_and_shadow: Luz oblicua entre vapor de caldera, con silhouettes de casco y lectura de altura/plataformas.
   texture_and_material: Remaches, latón aceitado, madera barnizada y lona de dirigible con desgaste funcional.
-  camera_and_composition: Triangulación de objetivos (nave, torre, ruta) para indicar flow de misión y puntos de interés.
+  camera_and_composition: Triangulación de objetivos visuales, verticalidad clara y flow de misión; nave, torre o ruta son anclas opcionales.
   atmosphere_and_mood: Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.
   rendering_and_quality: Splash art premium orientado a gameplay loops de vuelo, abordaje y puzzle de navegación.
+  creative_brief: >-
+    Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

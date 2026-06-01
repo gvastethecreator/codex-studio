@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Geometric reduction
   atmosphere: Modern, tech
   key_features: Triangles
-  creative_brief: The world reduced to its crystalline essence, every surface a facet of light. Digital geometry whispers of computation, a landscape born from vertex and vector.
+  creative_brief: >-
+    Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital
+    triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply this
+    abstract/vector construction over any input: preserve shape system, color logic, edge treatment, composition rhythm,
+    and graphic rendering behavior while avoiding a required subject category, poster layout, icon, or scene template.
 avoidRules:
   - curved
   - smooth
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

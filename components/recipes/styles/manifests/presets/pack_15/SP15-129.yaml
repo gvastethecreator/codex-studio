@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Fragile, ornate, haunted, graceful, intimate.
   key_features: Lace valve geometry, porcelain-mechanism contrast, spring-loop halos, pressure dial motifs, and soft steam veils.
   creative_brief: >-
-    Preserve pressure lace automata as a reusable style system: refined
-    pneumatic ornament, porcelain softness, and lace-like brass mechanics should
-    apply to any subject without requiring dolls, salons, servants, or machines.
+    Ornament the input with pressure lace automata: porcelain softness, rose-brass
+    valve filigree, spring-loop halos, cloudy gauges, and steam-veiled hinge
+    seams apply refined pneumatic tenderness without requiring dolls, salons,
+    servants, or literal machines.
 avoidRules: [photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-129.webp }
 attributes:

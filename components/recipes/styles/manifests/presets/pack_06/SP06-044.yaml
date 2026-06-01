@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Soft, rich
   key_features: Burr texture
-  creative_brief: A needle scratches directly into metal, throwing up a burr that holds ink like velvet, giving every line a halo of soft darkness. The edition is small — the burr crushes under pressure after a handful of pulls, the image degrading into a ghost of its first impression. Rarity is structural, not artificial.
+  creative_brief: >-
+    Apply drypoint intaglio to any input: needle-scratched lines, burr-held ink,
+    velvety dark halos, plate-pressure softness, and slightly fragile edition
+    wear. Keep direct-metal intimacy without requiring portraits, landscapes,
+    antique plates, or print-shop context.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

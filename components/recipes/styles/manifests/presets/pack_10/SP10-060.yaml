@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Fun, cheap
   key_features: Sparkle density
-  creative_brief: A galaxy of micro-mirrors scattering light in every direction simultaneously, each fleck a tiny disco ball. The texture of celebration refusing subtlety, joy expressed as refractive geometry in maximum density.
+  creative_brief: >-
+    Apply glitter density to the input: micro-mirror flecks, refractive sparkle,
+    dense specular scatter, and celebratory particulate geometry should make
+    surfaces flare without requiring party props or product piles.
 avoidRules:
   - matte
   - dull
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

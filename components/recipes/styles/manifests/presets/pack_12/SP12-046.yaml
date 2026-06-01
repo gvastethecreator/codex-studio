@@ -12,14 +12,18 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Open-world nomad-sci-fi de campamentos móviles sobre riel solar, enfocado en logística, ruta y supervivencia comunitaria.
-  subject_treatment: Clanes viajeros con tecnología recuperada y diferenciación visual por oficio itinerante.
+  aesthetic: Gramática open-world nomad-sci-fi con logística móvil, ruta solar, tecnología recuperada y comunidad itinerante.
+  subject_treatment: Transforma el input en clan viajero, oficio itinerante, módulo de campamento, vehículo o nodo de recarga.
   color_and_tone: Amarillo solar, rojo óxido y azul polvoriento para mapear energía, desgaste y horizonte.
   lighting_and_shadow: Tarde cálida con destellos fotovoltaicos que marcan nodos de recarga y actividad.
   texture_and_material: Lona resistente, paneles reparados, madera recompuesta y metal reciclado.
-  camera_and_composition: Campamento semicircular junto a vías con zonas de comercio, taller y guardia.
+  camera_and_composition: Circulación, abastecimiento, taller y guardia como zonas visuales; campamento y riel son opcionales.
   atmosphere_and_mood: Esperanzada, austera y resiliente.
   rendering_and_quality: Faction-worldbuilding gameplay art con lectura de circulación, abastecimiento y seguridad.
+  creative_brief: >-
+    Aplica Solar Rail Nomad Camp como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

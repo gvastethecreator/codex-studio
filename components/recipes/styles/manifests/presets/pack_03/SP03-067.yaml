@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Prosthetic
   atmosphere: Futuristic, body horror, identity tension
   key_features: Seamless blend, implant integration
-  creative_brief: 'Chrome meets skin at a seam that is neither wound nor ornament — integration lines trace the border between born and built, and LED indicators glow beneath translucent dermal layers like technology learning to blush. The bio-mech fusion renders the transition from metal to flesh with unsettling seamlessness, prosthetic forms that feel less like replacement and more like evolution. The image channels Deus Ex transhumanism: identity tension rendered in chrome and tissue, the augmented self asking where the body ends and the machine begins.'
+  creative_brief: >-
+    Apply cybernetic integration to the input: chrome/organic seams, LED status
+    glows, prosthetic geometry and bio-mech fusion lines. If a body or character
+    exists, augment it; otherwise embed transhuman interface cues into the
+    subject without forcing flesh, portrait framing or body horror.
 avoidRules:
   - flesh only
 assets:

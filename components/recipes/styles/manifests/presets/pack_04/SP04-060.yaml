@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - editorial-illustration
 visualDna:
-  aesthetic: Weapon concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority
-  form_and_line: Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification clarity
+  aesthetic: >-
+    Weapon concept-sheet style with functional lethality readability, industrial precision, and
+    controlled silhouette authority
+  form_and_line: >-
+    Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile
+    specification clarity
   color_palette: Gunmetal, tactical finish, weapon-grade metals
   lighting_setup: Rim light, barrel gleam, tactical edge highlight
   material_texture: Scratched metal
@@ -22,9 +26,10 @@ visualDna:
   atmosphere: Dangerous, heavy, trigger discipline, combat-readiness
   key_features: Side view, mechanical detail, magazine/guard
   creative_brief: >-
-    Preserve identity through weapon-design grammar: component hierarchy,
-    material wear logic, and isolated profile readability should define the
-    style without anchoring it to one battle story.
+    Apply weapon-design concept grammar to any input: component hierarchy, side-profile clarity,
+    industrial material wear, ergonomic line flow, and tactical edge highlights should create
+    controlled silhouette authority without requiring guns, blades, armories, combat, magazines, or
+    battle stories.
 avoidRules:
   - soft
   - toy

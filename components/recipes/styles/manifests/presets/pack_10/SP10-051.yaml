@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Fun, retro
   key_features: Dots
-  creative_brief: Circles march across the surface in perfect cadence, a pattern that never takes itself seriously. The dot is the simplest possible mark, repeated until it becomes a declaration of joy.
+  creative_brief: >-
+    Apply polka-dot rhythm to the input: repeated circular marks, playful scale
+    variation, crisp figure-ground spacing, and bright graphic cadence should
+    wrap or segment forms without requiring fabric or fashion staging.
 avoidRules:
   - square
   - line
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

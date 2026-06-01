@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Vast, invisible, suspension-of-disbelief, epic silence
   key_features: Horizon line, depth layering, atmospheric haze
-  creative_brief: Vastness asserts itself through atmospheric perspective, mountains dissolving into the distance like a promise receding. Light behaves with the physics of cinema, sculpting depth from haze and horizon. This is the background as protagonist, where the world itself carries the emotional weight of the story.
+  creative_brief: >-
+    Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering,
+    photobash seams, god-ray structure, haze scale, and invisible-composite realism should make
+    world weight carry emotion without requiring mountains, landscapes, backgrounds, castles, skies,
+    or vast scenery.
 avoidRules:
   - cartoon
   - sketch

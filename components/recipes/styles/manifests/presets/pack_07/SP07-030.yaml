@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-030
 packId: pack_07
 name: Soviet Constructivist
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,25 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.
-  form_and_line: Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y conectores suspendidos.
+  form_and_line: >-
+    Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y
+    conectores suspendidos.
   color_palette: Gris crudo, negro industrial, ocre desvaído y rojo propaganda como acento estratégico.
   lighting_setup: Cielo cubierto, dramatismo de ángulo bajo, sombras duras proyectadas y ritmo de hueco fabril.
   material_texture: Hormigón bruto, revoque áspero, acero estructural, bloque de vidrio y placas atornilladas.
   render_quality: Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.
   spatial_distortion: Sensación de masas en tensión y volúmenes en suspensión controlada.
   atmosphere: Austera, colectiva, disciplinada y mecánico-utópica.
-  key_features: Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y estructura explícita.
+  key_features: >-
+    Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y
+    estructura explícita.
   creative_brief: >-
-    Define una gramática constructivista transferible donde la forma opere como
-    manifiesto: conflicto geométrico, estructura sin ocultamiento y color
-    político mínimo pero incisivo. Debe leerse como sistema-programa.
+    Define una gramática constructivista transferible donde la forma opere como manifiesto:
+    conflicto geométrico, estructura sin ocultamiento y color político mínimo pero incisivo. Debe
+    leerse como sistema-programa.
 avoidRules:
   - ornate
   - capitalist
@@ -35,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

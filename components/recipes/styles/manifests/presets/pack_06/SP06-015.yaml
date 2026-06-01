@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Soft focus
   atmosphere: Kitsch, sincere, nocturnal, theatrical
   key_features: Black background dominance
-  creative_brief: Neon colors hover above infinite blackness, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary, turning any subject into glowing icon against tactile dark.
+  creative_brief: >-
+    Apply black-velvet painting to any input: light-swallowing velvet ground,
+    saturated neon pigment, floating icon contrast, soft pile texture, and
+    sincere kitsch luminosity. Keep visionary dark-glow drama without requiring
+    Elvis portraits, animals, tropical scenes, casinos, or souvenir art.
 avoidRules:
   - photo
   - realistic

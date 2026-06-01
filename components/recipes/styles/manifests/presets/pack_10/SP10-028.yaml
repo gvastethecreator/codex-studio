@@ -12,7 +12,7 @@ tags:
   - abstract-and-experimental
   - digital-glitch-and-noise
 visualDna:
-  aesthetic: Object on flatbed scanner
+  aesthetic: Flatbed scanner distortion
   form_and_line: Distorted motion
   color_palette: High contrast, dark background
   lighting_setup: Moving light bar
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Squashed
   atmosphere: Eerie, surreal
   key_features: Black background
-  creative_brief: The scanner sees with a light that erases depth, pressing objects flat against glass like botanical specimens from a digital herbarium. Shadows bloom where three dimensions once lived.
+  creative_brief: Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an eerie abstraction without requiring a specimen layout.
 avoidRules:
   - camera photo
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

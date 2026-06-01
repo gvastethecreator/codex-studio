@@ -22,9 +22,9 @@ visualDna:
   atmosphere: Rebellious, simple, urban-dissident energy, unauthorized truth
   key_features: Bridges, cutout connections, stencil registration
   creative_brief: >-
-    Preserve identity through protest-stencil grammar: bridge-supported cutouts,
-    single-ink high-contrast silhouettes, and fast unauthorized wall
-    readability should define the style without referencing any named artist.
+    Apply protest-stencil print grammar to any input: bridged cutouts, hard one-ink silhouettes, overspray halos,
+    poster-paper grain, registration slippage, and urgent negative-space compression. Preserve the stencil language
+    without requiring slogans, readable text, political scenes, walls, crowds, or any named artist imitation.
 avoidRules:
   - freehand
 assets:

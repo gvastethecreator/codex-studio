@@ -14,6 +14,7 @@ import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
+import { QuickStartText } from './QuickStartText';
 import {
   getRecipeModuleUiModel,
   getRecipeNumberDefault,
@@ -223,14 +224,11 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all">
               <Upload size={24} className="text-zinc-600 group-hover:text-accent-400" />
             </div>
-            <div className="text-center">
-              <h3 className="text-xl font-black text-zinc-500 group-hover:text-white uppercase tracking-tight">
-                Load image or type a prompt
-              </h3>
-              <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-[0.2em] mt-2">
-                Supported formats: JPG, PNG, WEBP
-              </p>
-            </div>
+            <QuickStartText
+              title="Load image or type a prompt"
+              subtitle="Supported formats: JPG, PNG, WEBP"
+              maxTitleFontSize={20}
+            />
           </button>
         )}
       </div>

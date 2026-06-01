@@ -12,14 +12,14 @@ visualDna:
   color_palette: Moon blue, white, and brass accents.
   lighting_setup: Time-signal pulses and nighttime perimeter glow.
   material_texture: Ceramic cladding, brushed alloy, and glass panels.
-  render_quality: Iconic city landmark concept with clean readability.
+  render_quality: Iconic civic-timing render with clean readability and phase-signal hierarchy.
   spatial_distortion: Upward axial composition around phase-clock geometry.
   atmosphere: Order, trust, and rhythmic public life.
   key_features: Phase beacons, civic clock rings, scheduling terraces as abstract bands, and lunar signal arrays.
   creative_brief: >-
-    Preserve phasewatch civic-tower grammar as a reusable style system:
-    lunar-cycle synchronization architecture, trusted public timing signals,
-    and rhythmic civic order should remain coherent across subjects.
+    Synchronize the input to lunar public time: vertical clock fins, moon-blue
+    halos, brass phase marks, signal mast geometry, and rhythmic beacon pulses
+    make any subject feel trusted, scheduled, and civically legible.
 avoidRules: [photoreal, dystopian-surveillance, cyber-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-083.webp }
 attributes:

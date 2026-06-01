@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-239
 packId: pack_05
-name: Bubblegum Cosmic Overdrive Style
+name: Bubblegum Cosmic Overdrive
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Exuberancia pop-cósmica, elasticidad de escala, energía juvenil abstracta y sentimentalidad escondida bajo espectáculo imposible.
-  form_and_line: Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas pop de alto impulso.
+  aesthetic: >-
+    Pop-cosmic anime exuberance where scale elasticity, saturated color, impossible spectacle, and
+    hidden sentiment collide
+  form_and_line: >-
+    Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas
+    pop de alto impulso.
   color_palette: Rosa bubblegum, azul eléctrico, amarillo solar, violeta espacial y blanco de flare emocional.
-  lighting_setup: Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto cromático.
-  material_texture: Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles técnicos simplificados.
-  render_quality: Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del caos.
-  spatial_distortion: Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo frame.
+  lighting_setup: >-
+    Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto
+    cromático.
+  material_texture: >-
+    Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles técnicos
+    simplificados.
+  render_quality: >-
+    Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del
+    caos.
+  spatial_distortion: >-
+    Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo
+    frame.
   atmosphere: Exultante, extraña y conmovedora, de caos colorido con corazón.
-  key_features: Pop saturado, escala mutable, energía juvenil abstracta, espectáculo desmedido y corazón bajo caos cromático.
+  key_features: >-
+    Saturated pop color, mutable scale, youthful energy, impossible spectacle, elastic geometry, and
+    heart under chromatic chaos
   creative_brief: >-
-    Construye una gramática bubblegum-overdrive reusable donde color explosivo,
-    elasticidad escalar y emoción juvenil convivan sin máquinas específicas,
-    roles fijos, worldbuilding literal o espectáculo narrativo fijo.
+    Use bubblegum cosmic overdrive as elastic-pop scale grammar. Any prompt should feel huge,
+    joyful, impossible, and secretly sincere. Machines, pilots, galaxies, roles, and fixed
+    worldbuilding are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-239.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Knots
   atmosphere: Rustic, solid
   key_features: Directional grain
-  creative_brief: Growth rings spreading outward from a core of patience, each line a year of rain and sun transcribed into cellulose. The tree's autobiography, readable by anyone who runs a finger across its surface.
+  creative_brief: >-
+    Apply wood-grain structure to the input: growth rings, warm cellulose
+    striations, knots, directional fibers, and varnished or raw grain shifts
+    should make forms feel grown and carved without requiring trees.
 avoidRules:
   - metal
   - stone
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Rough shapes
   atmosphere: Playful, bold
   key_features: Chunky texture
-  creative_brief: Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves chunky residue, pressure ridges, and scraped interruptions that make process visible. The image celebrates a hand that does not apologize for force, friction, or imperfect coverage.
+  creative_brief: >-
+    Apply oil-pastel force to any input: wax-bound pigment, chunky residue,
+    visible pressure ridges, scraped interruptions, saturated nonblended color,
+    and tactile friction. Keep assertive mark-making without requiring child-art
+    cues, paper closeups, still-life subjects, or classroom materials.
 avoidRules:
   - photo
   - realistic

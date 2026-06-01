@@ -12,14 +12,18 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Platformer-exploration whimsical en bioma de hongos gigantes, con énfasis en salto, momentum y rutas secretas.
-  subject_treatment: Exploradores ágiles y criaturas liminales amistosas con lectura clara de interacción/no amenaza.
+  aesthetic: Gramática platformer-exploration whimsical con rebote orgánico, momentum, rutas secretas y lectura amable.
+  subject_treatment: Convierte el input en explorador ágil, criatura amistosa, plataforma esponjosa o recompensa secreta.
   color_and_tone: Magenta orgánico, verde menta y crema cálido para navegación amable por bioma.
   lighting_and_shadow: Luz suave filtrada por sombreros gigantes, con contraste moderado para lectura de plataformas.
   texture_and_material: Superficies esponjosas, musgo vivo, madera orgánica y setas con propiedades de rebote.
-  camera_and_composition: Camino curvo con verticalidad lúdica, checkpoints visuales y reward loops.
+  camera_and_composition: Verticalidad lúdica, checkpoints visuales y reward loops; hongos gigantes pueden reforzar pero no dominar.
   atmosphere_and_mood: Maravillosa, aventurera y con humor ligero.
   rendering_and_quality: Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.
+  creative_brief: >-
+    Aplica Mushroom Kingdom Frontier como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

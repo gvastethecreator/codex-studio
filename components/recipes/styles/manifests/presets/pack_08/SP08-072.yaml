@@ -15,13 +15,18 @@ visualDna:
   aesthetic: Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion
   form_and_line: Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background
   color_palette: Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas
-  lighting_setup: Skin, studio-softbox evenness, rim-light muscle definition, tattoo-parlor fluorescent, healed-ink saturation
+  lighting_setup: Studio-softbox evenness, healed-ink saturation, low rim definition
   material_texture: Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork
   render_quality: Artistic, permanent, irezumi-master precision, living-canvas dedication
   spatial_distortion: None
   atmosphere: Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride
-  key_features: Ink, full-coverage bodysuit, Japanese background, sleeve-to-chest connection, healed-settle depth
-  creative_brief: Indigo pushed into skin by tebori needles held in hands that learned from hands that learned from hands, a bodysuit of ink mapping a life across the landscape of a single canvas. Japanese waves and wind bars flow from shoulder to wrist, koi swimming upstream toward a chest that holds the story of every hour spent under the needle, the healed ink settled into skin like a memory that cannot be separated from the body that carries it.
+  key_features: Ink coverage, irezumi waves, wind bars, healed-settle depth, sleeve-to-field connection
+  creative_brief: >-
+    Tattoo the input with living-canvas logic: tebori indigo, black linework,
+    old-school accents, irezumi waves, wind bars, stippled shading and healed-ink
+    depth. Preserve skin/ink devotion when relevant, but allow non-human inputs
+    to receive tattoo-like surface mapping without requiring a chest, body suit
+    portrait or tattoo-parlor scene.
 avoidRules:
   - clean skin
 assets:
@@ -41,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

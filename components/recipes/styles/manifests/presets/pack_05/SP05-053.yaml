@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-053
 packId: pack_05
-name: Hydraulic Mass Attrition Style
+name: Hydraulic Attrition Mass
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,20 +12,34 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Industrial weight under attrition, hydraulic strain, scarred machinery logic, mud-heavy motion, and pressure-tested endurance.
-  form_and_line: Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed stances, and blunt impact diagonals.
+  aesthetic: >-
+    Industrial anime weight under repeated attrition, hydraulic strain, scarred plating, mud-heavy
+    motion, and pressure-tested endurance
+  form_and_line: >-
+    Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed
+    stances, and blunt impact diagonals.
   color_palette: Oil black, worn steel, oxidized orange, bruised olive, emergency amber, and dull blue shadow.
-  lighting_setup: Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted rim separation.
-  material_texture: Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust over dense surfaces.
-  render_quality: Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled grime detail.
-  spatial_distortion: Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like perspective drag.
+  lighting_setup: >-
+    Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted
+    rim separation.
+  material_texture: >-
+    Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust
+    over dense surfaces.
+  render_quality: >-
+    Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled
+    grime detail.
+  spatial_distortion: >-
+    Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like
+    perspective drag.
   atmosphere: Gruff, pressured, gritty, mechanical
-  key_features: Hydraulic weight cues, scarred plating language, dirty sparks, compressed stance energy, and attrition-worn mechanical rhythm.
+  key_features: >-
+    Hydraulic compression, scarred plating, dirty sparks, compact stance energy, worn mechanical
+    rhythm, and impact-fatigue texture
   creative_brief: >-
-    Apply hydraulic mass attrition as a reusable style treatment: make any
-    subject feel heavy, functional, stressed, and worn by repeated impacts while
-    staying abstract, portable, and detached from fixed machines, operators,
-    props, transport forms, or conflict settings.
+    Use hydraulic attrition mass as heavy-function grammar. Any prompt should feel load-bearing,
+    stressed, dented, and built for survival. If a subject can carry hardware, add scarred plating,
+    joints, hydraulics, or operator-scale mecha hints; vehicles, weapons, trenches, and conflict
+    settings remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +56,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-053.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

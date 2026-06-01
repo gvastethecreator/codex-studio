@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-035
 packId: pack_07
-name: Library (Old)
-category: 1. Residential Interiors
+name: Bibliographic Classicism
+category: 3. Civic Infrastructure And Specialty Spaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: Clasicismo bibliográfico histórico con monumentalidad silenciosa y disciplina de lectura.
   form_and_line: Crugías altas de archivo, verticales de acceso, simetría de lectura y cadencia de bóveda/alcoba.
   color_palette: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
-  lighting_setup: Lámparas cálidas focales, pantalla verde de lectura, shafts altos de luz y apliques de latón envejecido.
-  material_texture: Cuero oxidado, papel de canto irregular, dorados gastados, roble pulido por uso y latón oscurecido.
+  lighting_setup: >-
+    Lámparas cálidas focales, pantalla verde de lectura, shafts altos de luz y apliques de latón
+    envejecido.
+  material_texture: >-
+    Cuero oxidado, papel de canto irregular, dorados gastados, roble pulido por uso y latón
+    oscurecido.
   render_quality: Calidad museo con envejecimiento noble y profundidad de campo apta para lectura catalográfica.
   spatial_distortion: None
-  atmosphere: Contemplativa, rigurosa y reverencial, con calidez puntual sobre un fondo de silencio estructurado.
-  key_features: Luz green-shade, clústeres catalográficos, verticales móviles, numeración de bahías y acentos cartográficos.
+  atmosphere: >-
+    Contemplativa, rigurosa y reverencial, con calidez puntual sobre un fondo de silencio
+    estructurado.
+  key_features: >-
+    Luz green-shade, clústeres catalográficos, verticales móviles, numeración de bahías y acentos
+    cartográficos.
   creative_brief: >-
-    Construye una gramática bibliográfica transferible basada en ritmo de
-    estantería, luz focal de lectura y materialidad envejecida con nobleza.
-    Debe sostener solemnidad intelectual sin depender de un edificio concreto.
+    Cualquier sujeto debe ordenarse como conocimiento viejo: ritmos verticales de archivo, luz focal
+    verde-ambar, cuero oxidado, papel irregular y latón apagado. La solemnidad viene de catalogar y
+    preservar, no de un salón fijo.
 avoidRules:
   - digital
   - modern
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - civic-infrastructure-and-specialty-spaces
   supportedTasks:
     - image_generate
     - image_edit

@@ -12,19 +12,33 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone
-  form_and_line: Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge softness, and shadow behavior
-  color_palette: Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep nocturnal indigos
-  lighting_setup: Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast steps across render passes
-  material_texture: Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping
-  render_quality: Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined cinematic polish
+  aesthetic: >-
+    Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light
+    alone
+  form_and_line: >-
+    Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge softness,
+    and shadow behavior
+  color_palette: >-
+    Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep
+    nocturnal indigos
+  lighting_setup: >-
+    Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast steps across
+    render passes
+  material_texture: >-
+    Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity
+    mapping
+  render_quality: >-
+    Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined
+    cinematic polish
   spatial_distortion: Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes
   atmosphere: Analytical yet emotional, cinematic, temporal, expressive, study-driven
-  key_features: Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology
+  key_features: >-
+    Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control,
+    mood-through-illumination methodology
   creative_brief: >-
-    Treat this preset as a lighting-grammar engine: keep composition stable
-    and let emotional identity emerge from controlled pass-to-pass
-    illumination decisions, not from narrative scene changes.
+    Apply lighting-scenario pass logic to any input: same-form relighting, rim-light options, bounce color,
+    shadow-temperature studies, exposure variation, and cinematic value planning. It should work on subjects, products,
+    spaces, or abstractions without requiring a scene matrix or narrative location.
 avoidRules:
   - single lighting
   - one time of day

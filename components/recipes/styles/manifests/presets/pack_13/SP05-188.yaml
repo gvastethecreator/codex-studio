@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Tumultuous, glamorous, bruising, addictive
   key_features: Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked dramatic beats
   creative_brief: >-
-    Preserve elite-campus melodrama grammar as a reusable style system:
-    hierarchy-coded fashion contrast, vertical confrontation staging, and
-    polished emotional tension should remain consistent across subjects.
+    Rank the input through elite melodrama: ivory/navy status contrast, polished
+    rain sheen, tailored contour control, gold hierarchy accents, and vertical
+    confrontation pressure can elevate any subject without requiring a campus,
+    rich students, romance triangle, or hallway scene.
 avoidRules:
   - realistic
   - 3d render

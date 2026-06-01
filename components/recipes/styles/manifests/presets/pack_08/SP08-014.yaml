@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Tactical soldier gear, field-readiness doctrine, combat-proven silhouette
+  aesthetic: Military surplus styling, field-readiness doctrine, combat-proven utility silhouette
   form_and_line: Boxy, pockets, armor, MOLLE grid, plate-carrier bulk, bloused-boot taper
   color_palette: Olive Drab, Camo, Desert Tan, Multicam breakup, ranger green, coyote brown
   lighting_setup: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
   material_texture: Mil-spec canvas, Cordura nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric
-  render_quality: Tough, functional, war, battlefield authenticity, deployment-worn veracity
+  render_quality: Tough, functional, field-worn authenticity, deployment-worn veracity
   spatial_distortion: Bulky silhouette
-  atmosphere: Serious, dangerous, ready, operational tension, mission focus, silent professionalism
+  atmosphere: Serious, ready, operational tension, mission focus, silent professionalism
   key_features: Utility pockets, magazine pouches, patrol cap, combat boots, unit patch
-  creative_brief: Every pocket carries purpose, every strap distributes weight according to doctrine written in blood and terrain. Olive drab bleached by sun and sweat into a thousand shades of endurance, Cordura scuffed by landscapes that do not care about fashion but demand function, the silence before movement heavy with consequence.
+  creative_brief: >-
+    Convert the input into military-surplus utility: olive drab, camo breakup,
+    MOLLE grids, plate-carrier bulk, Cordura abrasion, unit-patch accents and
+    pocket logic. Keep readiness and field wear without requiring a soldier,
+    battlefield, weapon, patrol scene or combat narrative.
 avoidRules:
   - bright
   - delicate
@@ -43,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

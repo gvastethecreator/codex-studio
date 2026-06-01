@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-208
 packId: pack_13
-name: Do It Yourself!! - Handmade Craft Club Glow
+name: Beginner-Made DIY Glow
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: DIY softness where tactile material process, earnest beginner imperfection, warm afternoons, and friendship build through making
-  form_and_line: Tool-and-material contour clarity, handmade imperfection cues, and cheerful workshop-like gesture arcs
-  color_palette: Sanded wood beiges, glue-white highlights, cloth pastels, soft mint accents, and amber afternoon window tones
-  lighting_setup: Side daylight, dust-mote backlight, and gentle practical fill on making surfaces
-  material_texture: Sawdust particulate, unfinished timber grain, fabric scraps, adhesive sheen, and hand-painted craft surfaces
-  render_quality: Craft-club rendering with tactile object fidelity, beginner warmth, and process-over-polish readability
-  spatial_distortion: Process-focused framing that magnifies handmade object presence
-  atmosphere: Crafty, sweet, tactile, optimistic
-  key_features: Craft-material clarity, warm process light, beginner-made textures, collaborative posing, and handmade focus
+  aesthetic: >-
+    Beginner-made DIY anime glow where visible process, earnest imperfection, tactile construction,
+    and optimistic collaboration become the style itself
+  form_and_line: >-
+    Handmade contour wobble, tool-path clarity, assembled-shape rhythm, cheerful gesture arcs, and
+    process marks kept legible around any subject
+  color_palette: >-
+    Sanded wood beige, glue white, cloth pastel, mint hardware accents, pencil gray, and amber
+    window warmth
+  lighting_setup: Side daylight, dust-mote backlight, soft practical fill, and warm work-surface bounce
+  material_texture: >-
+    Sawdust particulate, unfinished timber grain, fabric scraps, tape edges, adhesive sheen,
+    brush-painted surfaces, and scuffed craft material
+  render_quality: >-
+    Tactile anime rendering that favors process honesty, maker warmth, material readability, and
+    charming nonindustrial imperfection
+  spatial_distortion: >-
+    Process-focused cropping, magnified handmade presence, and constructive diagonals that imply
+    building without requiring tools
+  atmosphere: Crafty, optimistic, tactile, sweet, constructive
+  key_features: >-
+    DIY material traces, beginner imperfection, warm process light, assembled contours, and
+    collaborative making energy
   creative_brief: >-
-    Use the title as a style anchor for handmade craft glow. Preserve tactile
-    material process, visible making, and collaborative optimism without
-    requiring school club, workshop, tools, or specific objects.
+    Use Do It Yourself!! as style anchor for beginner-made glow. Any prompt should feel physically
+    made: taped edges, sawdust warmth, soft mistakes, constructive diagonals, and friendly process
+    light. Clubs, workshops, tools, and specific objects are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-208.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

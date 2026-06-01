@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Alien, dream, invisible-spectrum hallucination
   key_features: False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom
-  creative_brief: 'Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination.'
+  creative_brief: >-
+    Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and
+    ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The
+    subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination. Apply
+    Infrared Film as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
+    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
+    readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - natural color
 assets:

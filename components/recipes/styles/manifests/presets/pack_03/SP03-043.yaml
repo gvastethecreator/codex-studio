@@ -12,15 +12,20 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-industrial-cgi
 visualDna:
-  aesthetic: See-through object
+  aesthetic: X-ray transparency render
   form_and_line: Internal structure
   color_palette: Blue/White inverted, clinical spectrum
   lighting_setup: Internal glow, self-illuminated core
-  material_texture: Bone, metal, density-based
+  material_texture: Density-based internal layers
   render_quality: Medical, sci-fi, diagnostic scan
   atmosphere: Analytical, cold, forensic insight
   key_features: Internal view, see-through silhouette
-  creative_brief: 'Opacity becomes optional — the outer shell dissolves into a ghost of itself, and internal structures reveal themselves like blueprints given physical form. Bone, circuitry, and mechanical skeletons glow from within in clinical blue-white, density-based transparency mapping hidden complexity to visible light. The image reads as a diagnostic scan elevated to art: forensic, cold, and strangely intimate in its exposure of what was never meant to be seen.'
+  creative_brief: >-
+    Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal structure and
+    diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent structural layers without
+    forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style system over any input: preserve its
+    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - opaque
   - skin

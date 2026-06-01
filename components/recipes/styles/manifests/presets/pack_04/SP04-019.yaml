@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Joyful, innocent, spontaneous
   key_features: Uneven fill, directional scribble, layered wax bloom
   creative_brief: >-
-    Emphasize authentic child-drawing energy through bold wax marks, imperfect fill boundaries, and simplified forms. Keep the style emotionally direct and flexible across subjects without locking it to any specific pose or setting cliché.
+    Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries,
+    visible paper tooth, simplified forms, and spontaneous overlap should keep the style direct
+    without requiring children, stick figures, suns, houses, classroom pages, or fixed pose cliches.
 avoidRules:
   - professional
   - smooth

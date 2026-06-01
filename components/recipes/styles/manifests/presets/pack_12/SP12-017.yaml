@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Arcade sport extremo de alta velocidad sobre plataformas dinámicas con hazards térmicos reactivos.
-  subject_treatment: Riders por arquetipo (speed/control/trick) con equipamiento termo-reactivo visible.
+  aesthetic: Gramática arcade-sport extrema con velocidad, plataformas dinámicas, hazards térmicos y feedback de mastery.
+  subject_treatment: Si hay personaje, usar arquetipos speed/control/trick; si hay objeto, darle equipamiento termo-reactivo, marcas de agarre y energía de truco.
   color_and_tone: Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.
   lighting_and_shadow: Glow de lava + focos arena para alternar visibilidad de ruta y zonas de castigo.
   texture_and_material: Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.
-  camera_and_composition: Plano amplio con líneas de circuito, jumps y bifurcaciones competitivas legibles.
+  camera_and_composition: Líneas de circuito, jumps y bifurcaciones como ritmo visual competitivo sin exigir arena literal.
   atmosphere_and_mood: Vertiginosa, espectacular y frenética.
   rendering_and_quality: Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.
 avoidRules:

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Circles, aperture shape projection, specular discs, cat-eye edges
   atmosphere: Soft, optical, intimate, romantic haze
   key_features: Shallow DOF, background abstraction, specular discs, creamy falloff
-  creative_brief: 'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night scenes. Bokeh should support the input by simplifying everything outside the focal plane.'
+  creative_brief: >-
+    Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge
+    distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups. Bokeh
+    should support the input by simplifying everything outside the focal plane. Apply Bokeh as a portable
+    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern,
+    and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
+    narrative setup.
 avoidRules:
   - deep focus
 assets:

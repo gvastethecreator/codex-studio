@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Tactical urgency, heroic pressure, disciplined motion, and electric dread.
   key_features: Aurora alert gradients, command-tier composition, cyan-magenta focus bands, hard tactical diagonals, and signal-stripe overlays.
   creative_brief: >-
-    Apply aurora battle-deck as an abstract style treatment: transform any
-    subject into a decisive raypunk action image through aurora alert color,
-    command-tier framing, and tactical focus hierarchy.
+    Charge the input with aurora command pressure: stack cyan-magenta alert
+    bands, hard tactical diagonals, brushed control-surface textures, and
+    viewport compression so any subject reads as a decisive raypunk operation.
 avoidRules: [photoreal, medieval, cyberpunk-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-071.webp }
 attributes:

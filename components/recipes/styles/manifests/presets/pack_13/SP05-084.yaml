@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-084
 packId: pack_13
-name: Haruhi Suzumiya – School Sci-Fi Whimsy
+name: Ordinary-Cosmic Whimsy Pivot
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Slice-of-life sci-fi whimsy where ordinary warmth coexists with latent cosmic instability and playful meta-chaos
-  form_and_line: Everyday anime line softness punctuated by occasional uncanny geometry accents, energetic silhouette spikes, and ensemble reaction framing
-  color_palette: Warm scholastic pastels, beige-neutral fields, ribbon-like accent colors, and selective uncanny cool highlights for reality-slippage cues
-  lighting_setup: Cozy ambient baseline with intermittent anomalous glow accents and subtle contrast lifts during uncanny beats
-  material_texture: Familiar paper, textile, and everyday textures with lightly abstracted atmospheric overlays for cosmic-adjacent moments
-  render_quality: Hybrid slice-of-life plus uncanny-sci-fi anime rendering with stable character readability and controlled tonal pivots between normal and strange
-  spatial_distortion: Mostly grounded perspective with occasional mild non-euclidean hinting to suggest adjacent closed-space oddity
-  atmosphere: Playful, odd, meta-aware, and unpredictably charged
-  key_features: Social staging, chaos cues, ordinary-to-cosmic contrast, and uncanny interruption rhythms
+  aesthetic: >-
+    Ordinary-cosmic anime whimsy where cozy routine suddenly admits impossible scale, meta-chaos,
+    and playful reality instability
+  form_and_line: >-
+    Everyday soft lines interrupted by uncanny geometry, energetic silhouette spikes, ensemble
+    reaction arcs, and anomaly framing
+  color_palette: >-
+    Warm scholastic pastels, beige neutrals, ribbon-like accents, cool anomaly highlights, and
+    selective cosmic blues
+  lighting_setup: >-
+    Cozy ambient baseline with intermittent anomalous glow, contrast lifts, and reality-slip edge
+    lighting
+  material_texture: >-
+    Paper, textile, and everyday surfaces overlaid with lightly abstracted atmospheric or cosmic
+    interference
+  render_quality: >-
+    Hybrid slice-of-life plus uncanny-sci-fi anime finish with stable readability and controlled
+    tonal pivots
+  spatial_distortion: >-
+    Mostly grounded perspective with mild non-euclidean hints, closed-space pressure, and sudden
+    impossible scale cues
+  atmosphere: Playful, odd, charged, meta-aware, unpredictable
+  key_features: >-
+    Ordinary-to-cosmic contrast, social reaction dynamics, anomaly glow, playful chaos cues, and
+    reality-pivot staging
   creative_brief: >-
-    Use the title as a style anchor for whimsy-cosmos contrast. Keep ordinary
-    slice-of-life warmth, sudden uncanny inflections, and ensemble reaction
-    dynamics without requiring school, clubroom, or fixed props.
+    Use Haruhi as style anchor for ordinary-cosmic whimsy. Apply warm daily-life polish plus sudden
+    anomaly geometry, ensemble reaction pressure, and playful meta-instability to any prompt.
+    School, clubrooms, and fixed props are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-084.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-060
 packId: pack_07
-name: Haunted House (Cartoon)
-category: 1. Residential Interiors
+name: Haunted Toon Deformation
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,11 +10,13 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Haunted-cartoon retro, con amenaza juguetona y exageración torcida de lectura inmediata.
   form_and_line: Verticales inclinadas, cubiertas combadas, vanos deformados y silueta elástica con contorno gráfico claro.
-  color_palette: Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools
+  color_palette: >-
+    Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep
+    indigo shadow pools
   lighting_setup: Keys de relámpago intermitente, contraluz lunar frío, brillos selectivos y bloques cel-shade de alto contraste.
   material_texture: Planos pintados flat, contorno entintado, gradientes limitados y motivos de madera simplificada de estilo TV.
   render_quality: Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Campy, traviesa y teatral, con suspenso amable sin violencia realista.
   key_features: Perfil inclinado, relámpagos zigzag, contraluz lunar, siluetas spooky y ritmo de gate gráfico.
   creative_brief: >-
-    Formula una gramática haunted-cartoon transferible donde forma torcida,
-    contraste de tormenta y staging spooky lúdico se mantengan constantes. Debe
-    evitar por completo el horror realista y sostener legibilidad gráfica.
+    Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica
+    y contraste de tormenta. Debe funcionar como estilo de render, no como obligación de mostrar una casa embrujada.
+    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - scary realistic
 assets:
@@ -34,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

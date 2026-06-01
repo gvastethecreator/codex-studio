@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Gentle, colorful
   key_features: Wax texture
-  creative_brief: Wax pigment layers bloom into impossible smoothness, colors blending like oil but dragging like crayon on paper grain. Each stroke carries the faint squeak of friction, a sound translated into saturation. The drawing glows with the warmth of an afternoon spent coloring outside the lines with expensive intent.
+  creative_brief: >-
+    Apply colored-pencil rendering to any input: waxy pigment layering, visible
+    paper grain, burnished blends, sharp colored linework, and hand-pressure
+    saturation. Keep warm drawn color without requiring coloring-book subjects,
+    childhood cues, botanical studies, or stationery props.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

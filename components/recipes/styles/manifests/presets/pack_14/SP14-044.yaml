@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-044
 packId: pack_14
-name: Dawn Purification Basin
+name: Dawn Purification Silence
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, japanese-myth]
 visualDna:
-  aesthetic: First-light purification sanctuary cleansing spirit residue from travelers.
-  form_and_line: Basin terraces, stone channels, and radial stepping stones.
+  aesthetic: Dawn purification silence where first light washes spirit residue into calm transition.
+  form_and_line: Basin terrace cues, stone channels, and radial stepping stones.
   color_palette: Pale jade, dawn peach, and temple wood umber.
   lighting_setup: Sunrise edge light and mist diffusion over water surfaces.
   material_texture: Smooth river stone, carved bamboo spouts, and linen prayer cloth.
   render_quality: Calm high-end concept illustration with refined mood control.
-  spatial_distortion: Gentle concentric geometry centered on water altar.
+  spatial_distortion: Gentle concentric geometry centered on a water-altar cue.
   atmosphere: Renewal, relief, and sacred transition.
-  key_features: Purification ladles, spirit ash channels, and dawn prayer plaques.
-  creative_brief: A liminal basin where night’s hauntings are washed into morning silence.
+  key_features: Purification ladles, spirit ash channels, dawn prayer plaque cues.
+  creative_brief: Recast the input through dawn purification silence, washing night hauntings into morning calm without requiring a basin.
 avoidRules: [photoreal, comic-fun, cyber-neon, modern-spa, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-044.webp }
 attributes:
   negativePrompt: photoreal, comic-fun, cyber-neon, modern-spa, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-japanese-kami-yokai,
+    categoryName: 7. Mythic — Japanese Yokai & Kami,
+    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

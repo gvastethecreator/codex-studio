@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, bright
   key_features: Square grid
-  creative_brief: Cobalt blue dancing across white glaze in geometries borrowed from Moorish palaces, each tile a fragment of a larger narrative. Ceramic carries the light of Lisbon, a wall that sings in painted porcelain.
+  creative_brief: Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture, or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without forcing Lisbon, palaces, or wall setting.
 avoidRules:
   - modern
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -15,13 +15,19 @@ visualDna:
   aesthetic: Marine structure
   form_and_line: Pores and branches
   color_palette: Pink, Orange, Purple
-  lighting_setup: Underwater caustic
+  lighting_setup: Caustic light
   material_texture: Rough, porous
-  render_quality: Ocean, vibrant
+  render_quality: Vibrant, porous
   spatial_distortion: Branching
   atmosphere: Alive, colorful
   key_features: Porous
-  creative_brief: Render the porous city-building of coral, where calcium carbonate rises into branching spires and honeycombed domes beneath shifting underwater light. The surface should feel simultaneously alive and mineral, a bridge between animal and architecture painted in pink, orange, and purple. Caustic light must dance across the porous structure like a second living layer.
+  creative_brief: >-
+    Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching spires,
+    honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If marine or organic
+    content exists, reinforce it; otherwise use coral growth as abstract porous structure without forcing an underwater
+    scene. Use Coral Reef as portable surface/render behavior over any input: map its texture, light response, edge
+    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - dead
   - bleached

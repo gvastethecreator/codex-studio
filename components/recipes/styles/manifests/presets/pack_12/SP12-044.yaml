@@ -12,14 +12,19 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Social-stealth de gala en palacio ilusorio, orientado a engaño, acceso por estatus y fuga limpia.
-  subject_treatment: Espías ceremoniales con gadgets discretos y lectura de identidad por etiqueta/facción.
+  aesthetic: Gramática social-stealth ilusoria con engaño, acceso por estatus, fuga limpia y prestigio peligroso.
+  subject_treatment: Convierte el input en espía ceremonial, máscara de estatus, gadget discreto o nodo de vigilancia social.
   color_and_tone: Oro suave, azul nocturno y púrpura real para codificar zonas de prestigio y riesgo.
   lighting_and_shadow: Candelabros refractados en múltiples planos para crear coberturas y falsos positivos visuales.
   texture_and_material: Cristal facetado, seda de alto rango, mármol pulido y metal de ornamento funcional.
-  camera_and_composition: Corredores espejados con rutas ocultas, nodos de vigilancia y puntos de extracción.
+  camera_and_composition: Rutas ocultas, vigilancia y extracción en planos reflectivos; palacio o gala son anclas opcionales.
   atmosphere_and_mood: Glamorosa, engañosa y socialmente tensa.
   rendering_and_quality: Stealth-playground de alta sofisticación con legibilidad de patrullas, cobertura y acceso.
+  creative_brief: >-
+    Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema
+    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Geometric
   atmosphere: Simple, clean
   key_features: Triangles
-  creative_brief: The mesh is visible, every triangle a declaration that smoothness is a lie we tell through polygon count. Flat shading refuses to pretend curvature, each facet catching light with the honesty of origami. The image finds beauty in the geometry itself, the wireframe barely hidden beneath the surface.
+  creative_brief: >-
+    Apply low-poly art to any input: visible triangular facets, flat-shaded
+    planes, simplified geometry, crisp ambient occlusion, and origami-like light
+    breaks. Keep polygon beauty without requiring game terrain, animals,
+    landscapes, or asset turntables.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

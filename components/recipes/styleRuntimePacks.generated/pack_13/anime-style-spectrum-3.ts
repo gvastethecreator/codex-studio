@@ -5,7 +5,7 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-324',
-    name: 'Rumiko Takahashi - Elastic Rom-Com Combat',
+    name: 'Elastic Rom-Com Slapstick Timing',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static poses, heavy cinematic blur',
@@ -24,14 +24,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Elastic slapstick deformation, giant reaction-scale shifts, and instant pose readability',
       atmosphere: 'Playful, combative, charming, lively',
       key_features:
-        'Comic motion smears, expressive reaction faces, slapstick impact beats, readable silhouette humor, flirt-fight energy',
+        'Comic smears, expressive reactions, slapstick timing, readable silhouettes, buoyant affection tension, and bright cartoon clarity',
       creative_brief:
-        'Use Rumiko Takahashi title as style anchor for elastic rom-com chaos: clear silhouette slapstick, flirt-fight timing, and bright cartoon energy should transfer without requiring martial combat, object hits, couple argument, or specific character acting.',
+        'Use Rumiko Takahashi as style anchor for elastic rom-com slapstick timing. Any prompt should carry bounce, argument rhythm, readable silhouettes, and affectionate chaos. Combat, object hits, couples, martial arts, and character acting are optional.',
     },
   },
   {
     id: 'SP05-323',
-    name: 'Naoko Takeuchi - Moon-Prism Glamour Frame',
+    name: 'Prism-Glamour Transformation Polish',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting',
@@ -52,14 +52,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Long flowing arcs, elongated eye-like focal shapes, floating ribbons, and graceful transformation posture cues',
       atmosphere: 'Romantic, sparkling, feminine, dreamy',
       key_features:
-        'Moon motifs, gem-like emblems, fashion-pose rhythm, ribbon motion, starry romance framing',
+        'Prismatic sparkle, fashion rhythm, ribbonlike motion, gem-light accents, tender celestial framing, and polished shoujo glamour',
       creative_brief:
-        'Use Naoko Takeuchi title as style anchor for moon-prism glamour: transformation-fashion elegance, ribbon sparkle, emblem light, and tender celestial romance should transfer without requiring magical girls, brooches, pose callouts, or fixed moon iconography.',
+        'Use Naoko Takeuchi as style anchor for prism-glamour transformation polish. Any prompt should become luminous, romantic, fashion-clean, and jewel-bright. Magical girls, brooches, pose callouts, ribbons, and moon symbols are optional.',
     },
   },
   {
     id: 'SP05-331',
-    name: 'Yusuke Murata - Chrome Impact Hero Frame',
+    name: 'Chrome Impact Spectacle',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
@@ -80,14 +80,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Extreme foreshortening, focal compression, spectacle-first scale, and perfect action readability',
       atmosphere: 'Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.',
       key_features:
-        'Anatomía chrome-like, fracturas de impacto, perspectiva spectacle-shatter y posing de póster heroico.',
+        'Chrome-like anatomy, impact fractures, extreme foreshortening, scale-shatter perspective, and hyperdefined spectacle polish',
       creative_brief:
-        'Construye una gramática hero-impact reusable donde acabado hiperdefinido, foreshortening extremo y fractura de escala legible establezcan espectáculo sin exigir ciudad, cráter, héroe concreto o golpe a cámara.',
+        'Use Yusuke Murata as style anchor for chrome impact spectacle. Any prompt should gain hyperdefined polish, forceful foreshortening, crisp anatomy, and scale fracture. Cities, craters, superheroes, punches, and camera-hit poses are optional.',
     },
   },
   {
     id: 'SP05-334',
-    name: 'Hideaki Anno - Storyboard Emergency Sketch',
+    name: 'Emergency Storyboard Tension',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
@@ -108,14 +108,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin compression',
       atmosphere: 'Urgente, ansiosa y esquelética, al borde de colapso planificado.',
       key_features:
-        'Paneles de storyboard, flechas de emergencia, notación técnica, ansiedad monocroma y framing explosivo.',
+        'Raw storyboard panels, emergency arrows, technical notation, incomplete strokes, monochrome anxiety, and explosive preproduction framing',
       creative_brief:
-        'Define una gramática emergency-board reusable donde trazo incompleto, anotación visible y tensión de preproducción se conviertan en identidad sin exigir misil, desastre, mecha, cabina o panel narrativo específico.',
+        'Use Hideaki Anno as style anchor for emergency storyboard tension. Any prompt should feel urgent, unfinished, annotated, and emotionally diagrammed. Missiles, disasters, mecha, cockpits, panel narratives, and readable notes are optional.',
     },
   },
   {
     id: 'SP05-339',
-    name: 'Naoki Urasawa - Adult Suspense Close-Up',
+    name: 'Adult Suspense Microgesture',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render',
@@ -136,14 +136,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Natural adult proportions, camera-close tension framing, realistic perspective, and stillness-driven composition',
       atmosphere: 'Tensa, humana y terrenal, con inquietud ética persistente.',
       key_features:
-        'Sutileza facial adulta, fondos procedurales, close-ups bajo presión y suspense por casi inmovilidad.',
+        'Adult microgesture tension, restrained realism, procedural backgrounds, moral pressure, almost-still pacing, and unsentimental focus',
       creative_brief:
-        'Construye una gramática reusable de adult-suspense donde conflicto viva en microgesto, espacio cotidiano y carga moral implícita, sin exigir oficina, expediente, humo, ciudad, detective o close-up humano.',
+        'Use Naoki Urasawa as style anchor for adult suspense microgesture. Any prompt should hold tension through tiny shifts, grounded space, and moral pressure. Offices, files, smoke, cities, detectives, human close-ups, and crime scenes are optional.',
     },
   },
   {
     id: 'SP05-342',
-    name: 'Satoshi Kon - Mirror Hallway Reality Slip',
+    name: 'Reality-Slip Reflection Continuity',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism',
@@ -164,9 +164,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic frame logic with subtle breakage',
       atmosphere: 'Inquietante y sofisticada, de tensión mental bajo control aparente.',
       key_features:
-        'Espejos, pantallas, espacios adultos pulidos y transiciones de reality-slip en continuidad ilusoria.',
+        'Reflection logic, polished adult spaces, screenlike cuts, memory-performance slippage, identity fracture, and seamless impossible continuity',
       creative_brief:
-        'Define una gramática reusable de mirror-reality-slip donde reflejo, corte perceptivo y espacio pulido construyan fractura identitaria sin exigir hallway, ciudad, pantalla, espejo literal o protagonista humano.',
+        'Use Satoshi Kon as style anchor for reality-slip reflection continuity. Any prompt should fracture identity through polished surfaces, perceptual cuts, memory drift, and seamless impossible transitions. Hallways, cities, screens, mirrors, protagonists, and literal reflections are optional.',
     },
   },
   {
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Translucidez gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.',
       creative_brief:
-        'Construye una gramática mineral-void reusable donde translucidez, espacio negativo y melancolía minimal definan identidad sin exigir cuerpos gema, terreno vacío, figuras frágiles o paisaje literal.',
+        'Use Haruko Ichikawa as style anchor for mineral-void serenity. Any prompt should become translucent, quiet, faceted, spacious, and melancholic through negative space. Gem bodies, empty terrain, fragile figures, and literal landscapes are optional.',
     },
   },
   {
@@ -248,12 +248,12 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.',
       creative_brief:
-        'Construye una gramática reusable de mechanical-warmth donde oficio técnico, vínculo humano y coralidad funcionen como motor visual sin exigir taller, grupo, familia, prótesis, vehículo o escena de acción.',
+        'Use Hiromu Arakawa as style anchor for mechanical-warmth ensemble grammar. Any prompt should combine legible craft, practical engineering, tonal humor/grief, and humanist warmth. Workshops, groups, families, prosthetics, vehicles, and action scenes are optional.',
     },
   },
   {
     id: 'SP05-328',
-    name: 'Leiji Matsumoto - Endless Star-Track Melancholy',
+    name: 'Retrofuture Distance Melancholy',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'photoreal spaceship realism, hard sci-fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale',
@@ -273,20 +273,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Tall melancholy forms, long horizon lines, deep star-distance perspective, and theatrical fabric flow',
       atmosphere: 'Solitaria, romántica y cósmica, con nobleza de despedida interminable.',
       key_features:
-        'Imaginería de star-track, siluetas retro, metal noble envejecido y framing de distancia luctuosa.',
+        'Retrofuture silhouettes, noble aged metal, star-track-like distance cues, long-loss framing, and romantic cosmic scale',
       creative_brief:
-        'Define una gramática cosmic-melancholy transferible con silueta retrofuturista, señales de viaje estelar y escala emocional de lejanía persistente, sin exigir tren, puente de mando, capa o personaje heroico.',
+        'Use Leiji Matsumoto as style anchor for retrofuture distance melancholy. Any prompt should feel noble, far away, aged by travel, and emotionally vast. Trains, command bridges, capes, starships, and heroic characters are optional.',
     },
   },
   {
     id: 'SP05-109',
-    name: 'Action-Line Battle Intensity',
+    name: 'Kinetic Impact-Line Choreography',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Maximum-impact shonen action style with speed-line overload, impact-burst energy, motion-blur afterimages, aura distortions, shattered-panel manga force, and paint-splash explosiveness',
+        'Maximum-impact kinetic anime style where speed-line architecture, radial force marks, afterimage rhythm, aura distortion, and fractured panels make motion legible',
       form_and_line:
         'Dense speed-line forests, impact-burst radial lines, action-smear tracers, after-image ghost contours, velocity-deformation edges',
       color_palette:
@@ -302,9 +302,9 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         'Electric, explosive, adrenaline-maximum, impact-fever intensity, unstoppable momentum',
       key_features:
-        'Speed-line forests, impact-burst radial marks, afterimage trails, aura distortion, kinetic fracture shapes',
+        'Speed-line forests, impact-burst radials, afterimage trails, aura deformation, kinetic fracture geometry, and readable force direction',
       creative_brief:
-        'Preserve action-line intensity grammar as a reusable style system: speed-line density architecture, impact-burst focal choreography, and kinetic deformation readability should remain consistent across subjects.',
+        'Use kinetic impact-line choreography as motion grammar. Any prompt should read as concentrated force through speed-line density, radial bursts, afterimages, and deformation cues. Battles, fighters, weapons, explosions, and combat events are optional.',
     },
   },
   {
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-322',
-    name: 'CLAMP - Celestial Limb Elongation',
+    name: 'Celestial Vertical Ornament',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking',
@@ -360,12 +360,12 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional distance',
       creative_brief:
-        'Use CLAMP title as style anchor for celestial elongation: cathedral-tall silhouettes, ornamental geometry, and moonlit emotional poise should transfer without requiring human limbs, costumes, accessories, or a specific fantasy figure.',
+        'Use CLAMP as style anchor for celestial vertical ornament. Any prompt should stretch into poised verticality, moonlit geometry, jewel accents, and emotional distance. Human limbs, costumes, accessories, and fantasy figures are optional.',
     },
   },
   {
     id: 'SP05-332',
-    name: 'Kunihiko Ikuhara - Rose-Altar Allegory',
+    name: 'Ritual Allegory Icon System',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low-symbolism composition, random prop clutter',
@@ -386,14 +386,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Ceremonial symmetry, impossible stage transitions, allegorical scale changes, and posed ritual spacing',
       atmosphere: 'Simbólica, intoxicante e inestable, con intensidad ritual adolescente.',
       key_features:
-        'Rosas simbólicas, tránsito alegórico, espacio ritual abstracto y utilería emocional codificada.',
+        'Symbolic repetition, ceremonial symmetry, coded props as abstract icons, emotional scale shifts, and theatrical ritual space',
       creative_brief:
-        'Define una gramática rose-altar reusable donde ceremonia teatral, iconografía recurrente y staging simbólico sustituyan realismo literal, sin exigir altar, tren, arena, duelo, uniforme o set teatral concreto.',
+        'Use Kunihiko Ikuhara as style anchor for ritual allegory icon systems. Any prompt should become symbolic, ceremonial, symmetrical, and emotionally coded. Roses, altars, trains, duels, uniforms, arenas, and literal theater sets are optional.',
     },
   },
   {
     id: 'SP05-337',
-    name: 'Yoh Yoshinari - Firework Fantasy Draftsmanship',
+    name: 'Technomagic Draftsmanship Burst',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
@@ -414,9 +414,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition',
       atmosphere: 'Lúdica, compleja y expansiva, con energía de celebración artesanal.',
       key_features:
-        'Hardware fantástico complejo, magia tipo fuegos artificiales, arcos de acción festivos y draftsmanship protagonista.',
+        'Complex fantasy hardware, celebratory motion arcs, bright technical magic, expressive construction lines, and draftsmanship as spectacle',
       creative_brief:
-        'Construye una gramática reusable de firework-fantasy donde precisión técnica, hardware mágico y dinamismo celebratorio se integren sin exigir maquinaria, festival nocturno, fuegos artificiales, mago o aventura concreta.',
+        'Use Yoh Yoshinari as style anchor for technomagic draftsmanship bursts. Any prompt should feel engineered, magical, precise, explosive, and joyfully drawn. Machinery, festivals, fireworks, mages, and adventure scenes are optional.',
     },
   },
   {
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm echoes, rain-streak cadence, rice-paper texture',
       creative_brief:
-        'Preserve ukiyo-e woodblock anime grammar as a reusable style system: carved-line contour behavior, flat decorative color-field depth, and washi-print texture logic should remain consistent across subjects without requiring battle scenes, landscapes, skies, or specific print motifs.',
+        'Use ukiyo-e woodblock anime as carved-print grammar. Any prompt should gain bokashi gradients, washi texture, flat decorative depth, carved contours, and rhythmic weather marks. Battles, landscapes, waves, skies, and historic motifs are optional.',
     },
   },
   {
@@ -477,7 +477,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-340',
-    name: 'Akio Sugino - Velvet Lash Elegance',
+    name: 'Velvet Lash Refined Tension',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render',
@@ -497,14 +497,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette emphasis',
       atmosphere: 'Aterciopelada, madura y dramática, de confesión íntima ceremonial.',
       key_features:
-        'Lash-heavy focal design, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.',
+        'Velvet texture, lash-heavy graphic elegance, aristocratic posture language, slow romantic pressure, and classic beauty-anime polish',
       creative_brief:
-        'Define una gramática reusable de velvet-elegance donde textura lujosa, presencia refinada y tensión romántica sofisticada articulen identidad sin exigir retrato humano, swan-neck pose, cortinaje o close-up.',
+        'Use Akio Sugino as style anchor for velvet-lash refined tension. Any prompt should become elegant, luxurious, slow, and romantically pressurized. Human portraits, swan-neck poses, curtains, close-ups, and aristocratic scenes are optional.',
     },
   },
   {
     id: 'SP05-325',
-    name: 'Taiyo Matsumoto - Scratchy Urban Drift',
+    name: 'Scratchy Concrete-Poetry Drift',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy ornament overuse',
@@ -526,18 +526,18 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scratchy concrete textures, tilted silhouettes, adolescent motion, rough civic iconography, sacred-ugly weirdness',
       creative_brief:
-        'Use Taiyo Matsumoto title as style anchor for scratchy urban drift: dry-ink roughness, concrete-poetry composition, and adolescent restless energy should transfer without requiring bikes, rooftops, city streets, or youth characters.',
+        'Use Taiyo Matsumoto as style anchor for scratchy concrete-poetry drift. Any prompt should feel rough, sacred-ugly, restless, dry-inked, and emotionally sketched. Bikes, rooftops, city streets, youth characters, and urban scenes are optional.',
     },
   },
   {
     id: 'SP05-118',
-    name: 'Sunset Silhouette Romance',
+    name: 'Backlit Contour Longing',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'dark, gloomy, muted, flat, grey, cloudy, indoor, harsh, detailed-face, visible features, gloomy',
     style: {
       aesthetic:
-        'Golden-hour silhouette anime style with sky-dominant emotional storytelling, backlit contour poetry, and twilight longing through color',
+        'Backlit contour anime longing where sky-led color scripts, pure silhouette dramaturgy, flare haze, and golden rim light carry emotion',
       form_and_line:
         'Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape language, minimal internal line intrusion',
       color_palette:
@@ -552,20 +552,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven perceived depth expansion',
       atmosphere: 'Nostalgic, bittersweet, romantic, tender, wistful',
       key_features:
-        'Sky-as-narrator framing, pure silhouette dramaturgy, golden rim contour logic, flare-and-haze emotional depth',
+        'Sky-led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script, and posture-like contour emotion',
       creative_brief:
-        'Preserve identity through sky-led silhouette storytelling: emotional weight should emerge from backlight color scripts, posture contours, and atmospheric flare depth rather than specific rooftop or seaside scenes.',
+        'Use backlit contour longing as silhouette-emotion grammar. Any prompt should gain sky-scale color, rim-lit edges, flare haze, and readable contour drama. Rooftops, beaches, couples, sunsets as literal scene, and romance staging are optional.',
     },
   },
   {
     id: 'SP05-113',
-    name: 'Stained-Glass Cathedral Anime',
+    name: 'Leaded Jewel-Light Segmentation',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple',
     style: {
       aesthetic:
-        'Stained-glass anime treatment with black lead-came segmentation, jewel-toned translucent fields, sacred backlight, rosette geometry, and illuminated-manuscript ornament',
+        'Leaded jewel-light anime treatment with black came segmentation, translucent color fields, sacred backlight, rosette geometry, and manuscript ornament',
       form_and_line:
         'Thick black lead-came segmentation, gothic-arch rhythm, geometric rosette divisions, hieratic scale shifts, and decorative border filigree',
       color_palette:
@@ -581,9 +581,9 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         'Sacred, awe-inspiring, divine-light, hushed, medieval-reverence-meets-anime-emotion, transcendent-beauty',
       key_features:
-        'Black lead-came segmentation, jewel-toned translucent colors, backlit glow, gothic-arch rhythm, rosette composition, glass-imperfection texture',
+        'Lead-came segmentation, jewel translucency, backlit glow, rosette rhythm, glass imperfection, and illuminated color panes',
       creative_brief:
-        'Preserve stained-glass cathedral anime grammar as a reusable style system: lead-came segmentation, jewel-translucent backlight transmission, and gothic rosette framing should remain consistent across subjects without requiring a cathedral, saints, angels, or literal window scene.',
+        'Use leaded jewel-light segmentation as luminous partition grammar. Any prompt should break into black leading, translucent jewel panes, sacred glow, and rosette rhythm. Cathedrals, saints, angels, windows, and church interiors are optional.',
     },
   },
   {
@@ -615,13 +615,13 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-116',
-    name: 'Sumi-e Brushstroke Combat',
+    name: 'Sumi-e Impact Brushstroke',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy',
     style: {
       aesthetic:
-        'Sumi-e action treatment where single brushstrokes imply force arcs, black-ink bursts mark impact, negative space carries tension, and calligraphy becomes motion',
+        'Sumi-e impact treatment where pressure-variable brushwork, ink bursts, dry-brush splintering, negative space, and monochrome value arcs imply force',
       form_and_line:
         'Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at stroke-end, wet-ink-pooling at stroke-start, economy-of-line philosophy',
       color_palette:
@@ -637,9 +637,9 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         'Zen discipline, explosive silence, one-stroke certainty, ink-grind meditation, quiet confidence',
       key_features:
-        'Sumi-ink-monochrome, single-brushstroke-gestures, dry-brush-splinter-edges, ink-pool-wetness, rice-paper-texture, negative-space-as-light, vermillion-seal-stamp',
+        'Sumi ink monochrome, pressure-variable strokes, dry-brush splinters, ink-pool wetness, rice-paper texture, and negative-space impact',
       creative_brief:
-        'Preserve sumi-e brushstroke combat grammar as a reusable style system: pressure-variable calligraphic stroke anatomy, negative-space impact logic, and monochrome ink-value composition should remain consistent across subjects without requiring a fight scene, sword cut, warrior, or literal combat event.',
+        'Use sumi-e impact brushstroke as calligraphic-force grammar. Any prompt should be shaped by pressure, splintering dry brush, ink pools, and negative-space tension. Fights, swords, warriors, cuts, and literal combat are optional.',
     },
   },
   {
@@ -667,18 +667,18 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Negative space dominance, minimalist line count, single-color atmospheres, scale humility, intentional silence',
       creative_brief:
-        'Preserve minimalist-indie-quiet grammar as a reusable style system: negative-space dominance, sparse line economy, and low-saturation contemplative atmospheres should remain consistent across subjects.',
+        'Use minimalist indie quiet as silence-composition grammar. Any prompt should breathe through negative space, low-saturation fields, sparse line economy, and scale humility. Empty space must carry feeling instead of needing a specific lonely scene.',
     },
   },
   {
     id: 'SP05-112',
-    name: 'Graffiti-Wall Anime',
+    name: 'Spray-Drip Wildstyle Anime',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls',
     style: {
       aesthetic:
-        'Graffiti-anime fusion with spray-paint texture, wildstyle rhythm, rough-surface tactility, drip energy, overspray halos, and rebellious mural-motion',
+        'Spray-drip anime fusion with wildstyle rhythm, overspray halos, rough substrate tactility, stencil edges, and rebellious mural-scale motion',
       form_and_line:
         'Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines, fat-cap-thick-to-skinny-cap-thin transitions, overspray-soft-halos',
       color_palette:
@@ -693,20 +693,20 @@ export const GENERATED_STYLE_PRESETS = [
         'Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture integrates into design without fixed background dependence',
       atmosphere: 'Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing',
       key_features:
-        'Spray-paint drips, stencil-edge sharpness, graffiti-tag integration, overspray halos, concrete-grain surface, mural-scale shape language',
+        'Spray drips, stencil-sharp edges, overspray halos, rough surface grain, wildstyle composition, and large-scale contour energy',
       creative_brief:
-        'Preserve graffiti-wall anime grammar as a reusable style system: spray-drip contour behavior, wall-texture integration, and wildstyle-tag compositional interaction should remain consistent across subjects without requiring a literal wall, tags as readable text, or urban background scene.',
+        'Use spray-drip wildstyle anime as aerosol-mark grammar. Any prompt should feel painted through overspray, drips, stencil edges, rough substrate, and rebellious scale. Literal walls, readable tags, alleys, and urban backgrounds are optional.',
     },
   },
   {
     id: 'SP05-119',
-    name: 'Chalkboard Classroom Sketch',
+    name: 'Chalk-Dust Slate Sketch',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'digital, permanent, clean, polished, colorful, smooth, glossy, final, professional, printed',
     style: {
       aesthetic:
-        'Hand-drawn chalk-anime treatment emphasizing impermanent mark-making, tactile fragility, and analog board-surface expression',
+        'Chalk-dust anime sketch treatment built from powder residue, erasure memory, broken strokes, slate contrast, and fragile analog mark-making',
       form_and_line:
         'Variable-pressure chalk strokes, dry-friction breaks, eraser-softened contours, ghost-line remnants, powder-edge diffusion',
       color_palette:
@@ -721,9 +721,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Flat-board presentation with slight perspective drift, edge-framing emphasis, and composition anchored by mark density',
       atmosphere: 'Nostalgic, delicate, ephemeral, intimate, process-oriented',
       key_features:
-        'Powder halos, smudge ghosts, broken-stroke cadence, erasure memory layers, substrate grain response, fragile contour rhythm',
+        'Powder halos, smudge ghosts, broken-stroke cadence, erasure memory, slate grain, and fragile contour rhythm',
       creative_brief:
-        'Preserve chalkboard-sketch anime grammar as a reusable style system: powder-residue mark behavior, erasure-memory layering, and fragile hand-drawn slate contrast should remain consistent across subjects.',
+        'Use chalk-dust slate sketch as impermanent-mark grammar. Any prompt should look drawn, erased, redrawn, and softened by powder residue over dark matte surface. Classrooms, chalkboards, equations, and school props are optional.',
     },
   },
   {
@@ -733,7 +733,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round',
     style: {
       aesthetic:
-        'Photorealistic anime linework with documentary-frame gravity, lived-in wear, adult-drama restraint, labor marks, and zero glamour',
+        'Hard-lit realist seinen anime with documentary-frame gravity, lived-in wear, adult-drama restraint, labor marks, and zero glamour',
       form_and_line:
         'Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy, and no idealized pose language',
       color_palette:
@@ -748,14 +748,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic exaggeration',
       atmosphere: 'Weary, grounded, melancholic realism, adult resignation, quiet desperation',
       key_features:
-        'Facial pores and wrinkles, tired-eye weight, clothing fabric detail, worn surfaces, practical-light harshness',
+        'Tired-eye weight, age-and-labor detail, worn surfaces, practical harsh light, grounded material realism, and unsentimental framing',
       creative_brief:
-        'Preserve gritty realist seinen grammar as a reusable style system: unflattering practical lighting, age-and-labor facial detail fidelity, and grounded adult-drama material realism should remain consistent across subjects without requiring salarymen, offices, cigarettes, or urban decay.',
+        'Use gritty realist seinen as hard-lit adult material grammar. Any prompt should gain worn surfaces, tired detail, practical light, and unsentimental drama. Salarymen, offices, cigarettes, urban decay, and human close-ups are optional.',
     },
   },
   {
     id: 'SP05-321',
-    name: 'Yoshitaka Amano - Ether-Wisp Gothic Fantasy',
+    name: 'Ether-Wisp Gothic Ornament',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern streetwear styling',
@@ -778,7 +778,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elongated silhouettes, decorative ink wisps, gilded accents, void-rich composition, feathered ornamental detail',
       creative_brief:
-        'Use Yoshitaka Amano title as style anchor for ether-wisp fantasy: calligraphic elongation, gilded-void ornament, and melancholic celestial elegance should transfer without requiring bodies, costumes, wings, or gothic fantasy characters.',
+        'Use Yoshitaka Amano as style anchor for ether-wisp gothic ornament. Any prompt should elongate into calligraphic contour, gilded void, featherlike decoration, and celestial melancholy. Bodies, costumes, wings, and fantasy characters are optional.',
     },
   },
   {
@@ -807,7 +807,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops',
       creative_brief:
-        'Preserve surreal dream-logic grammar as a reusable style system: impossible spatial transitions, contradictory light logic, and symbolic non-Euclidean composition should remain consistent across subjects without requiring corridors, cities, doors, parades, or wall-walking figures.',
+        'Use surreal dream logic as non-Euclidean transition grammar. Any prompt should bend through contradictory light, symbolic cuts, impossible adjacency, and floating continuity errors. Corridors, doors, parades, cities, and walking figures are optional.',
     },
   },
   {
@@ -835,7 +835,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Floating floral particles, sparkle dust, lace-pattern borders, ribbon-like framing devices, transformation-glow softness',
       creative_brief:
-        'Preserve fairy-tale storybook-soft grammar as a reusable style system: pastel-lace ornament framing, gentle diffused glow hierarchy, and tender shoujo-fantasy softness should remain consistent across subjects.',
+        'Use fairy-tale storybook anime as tender ornament grammar. Any prompt should gain pastel-lace framing, illuminated softness, floating decorative particles, and gentle shoujo fantasy glow. Princesses, forests, castles, or transformation scenes are optional.',
     },
   },
   {
@@ -863,12 +863,12 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Geometric fan shapes, faceted-jewel focal points, ruler-straight lines, stained-glass color separation, staged symmetry',
       creative_brief:
-        'Preserve deco-geometric anime grammar as a reusable style system: faceted planar construction, jewel-tone staged lighting, and ruler-precise contour discipline should remain consistent across subjects.',
+        'Use deco-geometric anime as faceted poster grammar. Any prompt should sharpen into ruler-straight contours, jewel planes, staged symmetry, and theatrical light separation. Architecture, fashion poses, or literal stained glass are optional.',
     },
   },
   {
     id: 'SP05-330',
-    name: 'Shigeru Mizuki - Yokai Night Parade Ink',
+    name: 'Folkloric Deadpan Ink Catalog',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background',
@@ -888,9 +888,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette spacing',
       atmosphere: 'Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.',
       key_features:
-        'Siluetas yokai-like, nocturnidad terrosa, glow de linterna y staging pseudo-documental.',
+        'Earthy nocturnal ink, deadpan catalog framing, friendly grotesque silhouettes, dry humor, and pseudo-documentary oddity',
       creative_brief:
-        'Define una gramática yokai-parade transferible basada en trazo de tinta, nocturnidad terrosa y catalogación deadpan de lo grotesco sin exigir yokai, desfile, campo, linterna, humano testigo ni escena narrativa fija.',
+        'Use Shigeru Mizuki as style anchor for folkloric deadpan ink catalog. Any prompt should feel archived from strange folklore: earthy ink, dry humor, nocturnal calm, and friendly grotesque logic. Yokai, parades, fields, lanterns, witnesses, and story scenes are optional.',
     },
   },
   {
@@ -917,12 +917,12 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stitching-trail contours, yarn-bundle texture, fabric-patchwork seams, embroidery-hoop framing, frayed fabric edges, sashiko-like patterns',
       creative_brief:
-        'Preserve threadbare patchwork anime grammar as a reusable style system: stitch-trail contour substitution, fabric-weave material hierarchy, and handcrafted seam composition should remain consistent across subjects without requiring dolls, button eyes, kimono patterns, or sewing-room scenes.',
+        'Use threadbare textile patchwork as stitched-material grammar. Any prompt should become fabric-built: seams, frayed edges, embroidery contours, quilted planes, and handmade softness. Dolls, button eyes, kimonos, sewing rooms, and literal garments are optional.',
     },
   },
   {
     id: 'SP05-329',
-    name: 'Kazuo Umezz - Spiral Screaming Horror',
+    name: 'Spiral Panic Engraving',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
@@ -943,14 +943,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and panic-twisted posture',
       atmosphere: 'Histérica, uncanny y retro, con amenaza infantil deformada.',
       key_features:
-        'Expresión de grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.',
+        'Spiral panic geometry, severe black-white contrast, striated fear patterns, theatrical expression pressure, and corrosive manga texture',
       creative_brief:
-        'Construye una gramática spiral-horror reusable donde geometría de pánico, contraste blanco-negro feroz y expresividad desbordada marquen identidad sin exigir rostro humano, hallway, víctima o escena de persecución.',
+        'Use Kazuo Umezz as style anchor for spiral panic engraving. Any prompt should be trapped by graphic fear geometry, high-contrast pressure, and obsessive line pattern. Human faces, screams, hallways, victims, and chase scenes are optional.',
     },
   },
   {
     id: 'SP05-338',
-    name: 'Atsushi Ohkubo - Triangle-Grin Fire Geometry',
+    name: 'Angular Combustion Iconography',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
@@ -970,9 +970,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Angular anatomy, sharp perspective cuts, grin-led focal geometry, and icon-heavy pose language',
       atmosphere: 'Incendiaria, insolente y lúdicamente siniestra.',
       key_features:
-        'Motivo triangular persistente, grin-centric geometry, fuego angular y silueta street-goth limpia.',
+        'Triangular rhythm, angular flame geometry, toothlike graphic accents, clean street-goth silhouette, and aggressive contrast',
       creative_brief:
-        'Define una gramática reusable de triangle-grin donde fuego angular, expresividad dentada y contraste gráfico sostengan identidad agresiva sin depender de rostro, personaje, uniforme o combate específico.',
+        'Use Atsushi Ohkubo as style anchor for angular combustion iconography. Any prompt should gain sharp triangular rhythm, firelike geometry, toothy graphic energy, and clean dark contrast. Faces, uniforms, characters, weapons, and combat scenes are optional.',
     },
   },
   {
@@ -1001,7 +1001,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pencil underdrawing visible, smudge marks, peg-bar registration holes, rough construction lines, colored pencil fill',
       creative_brief:
-        'Preserve textured hand-drawn rough grammar as a reusable style system: visible underdrawing, paper-tooth graphite behavior, and imperfect human line variance should remain consistent across subjects.',
+        'Use textured hand-drawn rough as visible-process grammar. Any prompt should show underdrawing, graphite tooth, eraser ghosts, imperfect line search, and human timing. Production marks are texture language, not required animation-sheet props.',
     },
   },
   {
@@ -1029,7 +1029,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation, wet-paper texture',
       creative_brief:
-        'Preserve fluid painterly anime grammar as a reusable style system: wet-into-wet edge dissolution, ink-wash gesture hierarchy, and porous paper-driven pigment behavior should remain consistent across subjects without forcing landscape or character composition.',
+        'Use fluid painterly anime as pigment-behavior grammar. Any prompt should dissolve into wet edges, porous paper, ink-pool negative space, and gesture hierarchy. The style should abstract subjects through material flow, not force landscapes or character staging.',
     },
   },
   {
@@ -1058,7 +1058,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting, ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures',
       creative_brief:
-        'Preserve ice-crystal refractive anime grammar as a reusable style system: faceted prism anatomy, internal refraction hierarchy, and sub-zero geometric material logic should remain consistent across subjects without requiring ice people, monarch archetypes, or literal sculpture poses.',
+        'Use ice-crystal refractive anime as faceted-cold material grammar. Any prompt should refract through prism anatomy, internal light splits, frost geometry, and sub-zero elegance. Ice people, monarch poses, sculptures, and frozen environments are optional.',
     },
   },
   {
@@ -1087,18 +1087,18 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Anatomical pattern density, red-black clinical dread, bone-texture rendering, biological-precision abstraction, spiral contamination motifs',
       creative_brief:
-        'Preserve visceral-horror anime grammar as a reusable style system: clinical-detail rendering discipline, transgressive anatomical abstraction, and high-contrast dread composition should remain consistent across subjects.',
+        'Use visceral horror anime as anatomical-abstraction grammar. Any prompt should become clinical, high-contrast, pattern-dense, and dread-weighted through biological shapes and crimson-black pressure. Bodies, wounds, monsters, and shock scenes are optional.',
     },
   },
   {
     id: 'SP05-117',
-    name: 'Night-Vision Tactical Footage',
+    name: 'Phosphor Sensor-Vision Grain',
     category: '12. Anime Style Spectrum',
     negativePrompt:
       'colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft',
     style: {
       aesthetic:
-        'Green-phosphor sensor footage with ghostly monochrome, HUD corner elements, tactical grid overlays, image-intensifier noise, and technology-mediated vulnerability',
+        'Green-phosphor sensor vision with monochrome glow, HUD-like corner logic, intensifier grain, vignette falloff, and mediated vulnerability',
       form_and_line:
         'Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements, and reticle-like alignment marks',
       color_palette:
@@ -1113,9 +1113,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Fisheye lens distortion, HUD elements composited over subject space, body-cam-like motion blur, reticle-centered framing',
       atmosphere: 'Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia',
       key_features:
-        'Green-phosphor monochrome, image-intensifier grain, HUD overlay, reticle alignment, lens vignette, infrared points, body-cam framing',
+        'Phosphor monochrome, intensifier grain, reticle-like alignment, lens vignette, infrared points, and sensor-mediated framing',
       creative_brief:
-        'Preserve night-vision tactical-footage grammar as a reusable style system: phosphor monochrome sensor response, HUD-overlay compositing, and intensifier-grain perception should remain consistent across subjects without requiring military combat, battlefield, explosions, or weapons.',
+        'Use phosphor sensor-vision grain as mediated-sight grammar. Any prompt should feel seen through noisy green intensifier optics, HUD framing, vignette, and fragile visibility. Tactical scenes, weapons, battlefields, explosions, and body cameras are optional.',
     },
   },
   {
@@ -1144,7 +1144,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'White-hot to blue-cold gradients, ironbow false-color spectrum, thermal HUD marks, heat-bloom halos, no ink edges, emissive-only lighting',
       creative_brief:
-        'Preserve thermal-signature anime grammar as a reusable style system: false-color heat-band mapping, emissive-only scene logic, and HUD-tracked sensor perception should remain consistent across subjects without relying on Predator IP, target-hunting scenes, walls, or tactical combat setup.',
+        'Use thermal heat-signature vision as false-color perception grammar. Any prompt should become emissive temperature logic: ironbow bands, heat bloom, cold zones, HUD-like tracking, and no natural light. Predator IP, targets, walls, weapons, and hunting scenes are optional.',
     },
   },
   {
@@ -1172,7 +1172,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture signal language, digital glitch artifacts',
       creative_brief:
-        'Preserve neon-hyperpop grammar as a reusable style system: RGB-split edge behavior, high-saturation digital glow stacking, and holographic glitch overlays should remain consistent across subjects.',
+        'Use neon hyperpop anime as digital excess grammar. Any prompt should become RGB-split, glow-stacked, holographic, corrupted, and avatar-bright. The identity comes from signal overload and candy-color pressure, not from internet props or music-cover staging.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

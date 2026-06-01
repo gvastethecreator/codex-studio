@@ -12,7 +12,9 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact character
+  aesthetic: >-
+    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue
+    office artifact character
   form_and_line: Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry
   color_palette: Red or Black ink, stamp-pad economy, official pigment
   lighting_setup: Uneven pressure, ink-starvation pattern, hand-stamped irregularity
@@ -22,9 +24,9 @@ visualDna:
   atmosphere: Official, bureaucratic, desk-clerk authority, document-weight
   key_features: Border, stamp frame, ink-fade authenticity
   creative_brief: >-
-    Preserve identity through stamp-impression grammar: uneven pressure,
-    ink-starvation artifacts, and frame-locked official mark structure should
-    define style beyond any single document context.
+    Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps,
+    frame-locked geometry, red-black stamp-pad economy, and official-mark roughness should define
+    style without requiring documents, offices, seals, labels, bureaucracy scenes, or readable text.
 avoidRules:
   - perfect
   - clean

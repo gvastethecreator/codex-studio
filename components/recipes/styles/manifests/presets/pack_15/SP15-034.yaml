@@ -4,8 +4,14 @@ packId: pack_15
 name: Coral Circuit Marina
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Reef-circuit seapunk where party lighting, civic utility, and living coral pulse as one wet nervous system.
   form_and_line: Buoyant cell clusters, branching reef towers, wavy circuit paths, pontoon seams, and current-drawn loops.
@@ -17,20 +23,34 @@ visualDna:
   atmosphere: Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.
   key_features: Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.
   creative_brief: >-
-    Preserve coral circuit-marina grammar as a reusable style system:
-    wet-circuit civic modules, reef-luminescent infrastructure, and tidal
-    nightlife ecology should remain coherent across subjects.
-avoidRules: [photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-034.webp }
+    Rewire the input as a wet reef circuit: turquoise voltage, magenta pulses, coral cable junctions, algae power beads,
+    buoyant rhythm cells, and salt-crusted wet edges. Marinas or platforms can appear as anchors; the style is tidal
+    nightlife infrastructure with a living nervous system. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - diesel-grime
+  - medieval-port
+  - bleak-militarized
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-034.webp
 attributes:
   negativePrompt: photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

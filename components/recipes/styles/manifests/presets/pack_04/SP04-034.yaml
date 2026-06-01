@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Countercultural, ecstatic, sensory-saturated
   key_features: Swirling typographic masses, radial waves, vibrating color adjacency
   creative_brief: >-
-    Treat typography as image and perception effect. Build high-impact psychedelic compositions through warping, chromatic clash, and pattern rhythm while keeping the style reusable beyond any specific event or location context.
+    Apply 60s psychedelic poster grammar to any input: liquid warped forms, vibrating complementary
+    color, radial waves, dense pattern rhythm, and screenprint ink overlap should disrupt perception
+    without requiring band names, concerts, readable typography, faces, or event posters.
 avoidRules:
   - straight
   - readable

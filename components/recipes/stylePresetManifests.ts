@@ -441,38 +441,56 @@ export function composeStyleRuntimePacksFromManifests(
     presetManifests.map((preset) => [toStylePresetManifestRef(preset.packId, preset.id), preset]),
   );
 
-  return packManifests.map((pack) => ({
-    id: pack.id,
-    name: getStylePackDisplayName(pack.id, pack.name),
-    description: pack.description,
-    presets: pack.presetRefs.flatMap((ref): StyleRuntimePreset[] => {
-      const preset = presetsByRef.get(ref);
-      if (!preset) return [];
+  return packManifests.map((pack) => {
+    const categoryNameByRef = new Map<string, string>();
+    for (const category of pack.categories) {
+      for (const ref of category.presetRefs) {
+        categoryNameByRef.set(ref, category.name);
+      }
+    }
 
-      return [
-        {
-          id: preset.id,
-          name: preset.name,
-          category: preset.category,
-          ...(preset.domain ? { domain: preset.domain } : {}),
-          ...(createNegativePrompt(preset) ? { negativePrompt: createNegativePrompt(preset) } : {}),
-          style: preset.visualDna,
-          ...(preset.attributes?.camera !== undefined ? { camera: preset.attributes.camera } : {}),
-          ...(preset.attributes?.render !== undefined ? { render: preset.attributes.render } : {}),
-          ...(preset.attributes?.type !== undefined ? { type: preset.attributes.type } : {}),
-          ...(preset.attributes?.ui !== undefined ? { ui: preset.attributes.ui } : {}),
-          ...(preset.attributes?.layout !== undefined ? { layout: preset.attributes.layout } : {}),
-          ...(preset.attributes?.materials !== undefined
-            ? { materials: preset.attributes.materials }
-            : {}),
-          ...(preset.attributes?.print !== undefined ? { print: preset.attributes.print } : {}),
-          ...(preset.attributes?.digital !== undefined
-            ? { digital: preset.attributes.digital }
-            : {}),
-        },
-      ];
-    }),
-  }));
+    return {
+      id: pack.id,
+      name: getStylePackDisplayName(pack.id, pack.name),
+      description: pack.description,
+      presets: pack.presetRefs.flatMap((ref): StyleRuntimePreset[] => {
+        const preset = presetsByRef.get(ref);
+        if (!preset) return [];
+
+        return [
+          {
+            id: preset.id,
+            name: preset.name,
+            category:
+              categoryNameByRef.get(ref) ?? preset.taxonomy?.categoryName ?? preset.category,
+            ...(preset.domain ? { domain: preset.domain } : {}),
+            ...(createNegativePrompt(preset)
+              ? { negativePrompt: createNegativePrompt(preset) }
+              : {}),
+            style: preset.visualDna,
+            ...(preset.attributes?.camera !== undefined
+              ? { camera: preset.attributes.camera }
+              : {}),
+            ...(preset.attributes?.render !== undefined
+              ? { render: preset.attributes.render }
+              : {}),
+            ...(preset.attributes?.type !== undefined ? { type: preset.attributes.type } : {}),
+            ...(preset.attributes?.ui !== undefined ? { ui: preset.attributes.ui } : {}),
+            ...(preset.attributes?.layout !== undefined
+              ? { layout: preset.attributes.layout }
+              : {}),
+            ...(preset.attributes?.materials !== undefined
+              ? { materials: preset.attributes.materials }
+              : {}),
+            ...(preset.attributes?.print !== undefined ? { print: preset.attributes.print } : {}),
+            ...(preset.attributes?.digital !== undefined
+              ? { digital: preset.attributes.digital }
+              : {}),
+          },
+        ];
+      }),
+    };
+  });
 }
 
 export function createStylePresetCatalog(

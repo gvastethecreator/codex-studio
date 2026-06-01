@@ -12,7 +12,7 @@ tags:
   - abstract-and-experimental
   - pattern-and-texture
 visualDna:
-  aesthetic: Ornate wallpaper
+  aesthetic: Damask ornamental repeat
   form_and_line: Symmetrical floral
   color_palette: Two tone (e.g. Red/Gold)
   lighting_setup: Flat
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Repeat
   atmosphere: Expensive, old
   key_features: Symmetry
-  creative_brief: Luxury woven into symmetry, acanthus leaves and fleur-de-lis repeating across silk and shadow. The pattern whispers of drawing rooms and candlelight, a texture of inherited elegance.
+  creative_brief: Apply damask as luxurious repeat over the input with two-tone symmetry, acanthus and fleur-de-lis motifs, silk-velvet sheen, old-world restraint, and dense ornamental rhythm. If interiors or textiles exist, reinforce them; otherwise use damask as surface grammar without requiring wallpaper, drawing rooms, or candlelight.
 avoidRules:
   - modern
   - messy
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life
   key_features: Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency
   creative_brief: >-
-    Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes.
+    Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are
+    core. Keep the style botanical, structural, and adaptable across species and seasonal palettes. Apply Leaf Veins as
+    a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - dead
 assets:

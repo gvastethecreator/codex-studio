@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Expensive, cold
   key_features: Veins
-  creative_brief: Mineral impurities that trace the geology of pressure across polished surfaces, frozen lightning in stone. Each vein is a fault line that became ornament, chaos compressed into elegance by millennia.
+  creative_brief: >-
+    Apply marble veining to the input: polished stone depth, branching mineral
+    lines, cloudy translucency, and pressure-born elegance should harden forms
+    into geological luxury without requiring sculpture or architecture.
 avoidRules:
   - wood
   - plastic
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

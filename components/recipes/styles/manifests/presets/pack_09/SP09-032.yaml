@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Creased
   atmosphere: Trash, storage
   key_features: Corrugation
-  creative_brief: Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait.
+  creative_brief: >-
+    Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure
+    beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface
+    should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the
+    poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - wood
   - plastic

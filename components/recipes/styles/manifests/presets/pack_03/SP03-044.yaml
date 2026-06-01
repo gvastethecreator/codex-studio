@@ -17,10 +17,14 @@ visualDna:
   color_palette: Rainbow (Blue cold, Red hot), thermal gradient
   lighting_setup: Emissive temperature, heat-source mapping
   material_texture: None, temperature-emissive
-  render_quality: Predator vision, tactical overlay
-  atmosphere: Tactical, alien, reconnaissance
+  render_quality: Thermal false-color sensor overlay
+  atmosphere: Tactical, alien, sensor-data intensity
   key_features: Heat map, cold-to-hot spectrum
-  creative_brief: 'Color replaces material — deep blue recedes into cold hollows while orange flares at heat sources and white peaks where temperature hits its ceiling. The rainbow gradient maps physics to palette, every surface glowing not from illumination but from its own thermal emission. The image channels Predator vision and tactical reconnaissance: a world seen through the lens of energy rather than light, hot and cold telling stories invisible to the naked eye.'
+  creative_brief: >-
+    Translate the input into thermal false color: white/yellow heat peaks, blue
+    cold zones, soft diffusion edges and sensor-grade data contrast. Keep
+    tactical sci-fi flavor without requiring predator vision, reconnaissance or
+    a literal world scan.
 avoidRules:
   - realistic color
 assets:

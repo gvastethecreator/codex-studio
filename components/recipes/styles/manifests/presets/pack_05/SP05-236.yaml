@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-236
 packId: pack_05
-name: Compact Attrition Hardware Style
+name: Compact Attrition Hardware
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,20 +12,31 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Realismo utilitario de desgaste extremo, hardware compacto tratado como material desechable, presión logística, anti-glamour industrial.
-  form_and_line: Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones bajas y ausencia de heroización formal.
+  aesthetic: >-
+    Extreme utilitarian anime wear where compact hardware, mud, rust, logistical pressure, and
+    anti-glamour function replace spectacle
+  form_and_line: >-
+    Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones
+    bajas y ausencia de heroización formal.
   color_palette: Verde oliva sucio, marrón barro, gris acero oxidado y rojo de testigo operativo mínimo.
   lighting_setup: Luz plomiza, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.
-  material_texture: Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción mecánica.
-  render_quality: Mecánica utilitaria de alta credibilidad con peso físico, suciedad persistente y enfoque anti-glamour.
-  spatial_distortion: Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en primer plano.
+  material_texture: >-
+    Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción
+    mecánica.
+  render_quality: >-
+    Mecánica utilitaria de alta credibilidad con peso físico, suciedad persistente y enfoque
+    anti-glamour.
+  spatial_distortion: >-
+    Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en
+    primer plano.
   atmosphere: Ruda, agotada y pragmática, sin épica.
-  key_features: Chasis utilitario abstracto, barro y herrumbre, lectura funcional, supervivencia material, compactación pesada.
+  key_features: >-
+    Low compact mass, utility chassis logic, mud-rust texture, survival materiality, compressed
+    pressure, and anti-heroic function
   creative_brief: >-
-    Define una gramática compact-attrition reusable donde masa baja,
-    materialidad de desgaste y presión logística expresen supervivencia
-    prolongada sin transportes concretos, facciones, zanjas tácticas, conflicto
-    literal o espectacularización heroica.
+    Use compact attrition hardware as worn-function grammar. Any prompt should feel low, heavy,
+    disposable, repaired, and logistically stressed. Vehicles, factions, trenches, war, and hero
+    spectacle are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-236.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

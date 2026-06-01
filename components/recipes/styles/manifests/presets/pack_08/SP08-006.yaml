@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Futuristic ninja outfit, neon-drenched operator, rain-slicked mercenary
+  aesthetic: Cyberpunk technical utility, stealth modular operator cues, rain-slicked futurewear
   form_and_line: Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines
   color_palette: Matte Black, Dark Grey, charcoal shadow, stealth anthracite, muted olive-black
-  lighting_setup: Neon city lights, wet-asphalt reflections, sodium-vapor amber, holographic spill
+  lighting_setup: Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light
   material_texture: Waterproof technical fabric, Gore-Tex Pro, Dyneema composite, laser-cut nylon, bonded seam tape
   render_quality: Acronym technical utility, dystopian, functional, Errolson Hugh silence, shadow-ops precision
-  spatial_distortion: Masked face
-  atmosphere: Dark, prepared, cool, anticipatory stillness, urban camouflage, modular survival
+  spatial_distortion: Optional masked or hooded identity cues
+  atmosphere: Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint
   key_features: Utility focus, MOLLE webbing, magnetic fidlock closures, articulated hood
-  creative_brief: A silhouette carved from shadow and sealed seams, breathing only where the fabric allows. Neon hieroglyphs paint the rain-slicked operator in borrowed color while magnetic buckles click like whispered passwords. This is clothing as armor for a war fought in data, worn by ghosts who move between surveillance cameras.
+  creative_brief: >-
+    Mechanize the input through cyberpunk techwear: bonded seams, Dyneema panels, harness geometry, magnetic closures,
+    hooded or masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley,
+    mercenary scene, weapon, surveillance camera or fixed character role. Apply this fashion/costume grammar over any
+    input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a
+    required body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - vintage
   - natural
@@ -43,4 +48,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

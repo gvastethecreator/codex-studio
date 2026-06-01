@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-235
 packId: pack_05
-name: Megazone 23 - Highway Pop-Cyber Revelation
+name: Pop-Cyber Simulation Gloss
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,27 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Rebellión pop-cyber ochentera de superficie brillante, con glamour nocturno, cultura mediática y simulación encubierta.
-  form_and_line: Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería holográfica.
-  color_palette: Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub futurista.
+  aesthetic: >-
+    Eighties pop-cyber rebellion with glossy nocturnal surfaces, media holography, youth freedom
+    pressure, and concealed simulation unease
+  form_and_line: >-
+    Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería
+    holográfica.
+  color_palette: >-
+    Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub
+    futurista.
   lighting_setup: Reflejos húmedos, signage holográfico pulsante y highlights de vitrina nocturna.
   material_texture: Cuero brillante, plástico translúcido, cromo pulido, lluvia fina y granulado retro de pantalla.
   render_quality: Retrofuturo anime de acabado glossy con energía urbana y legibilidad de diseño pop.
   spatial_distortion: Profundidad de corredor luminoso con fuga alta velocidad y capas de publicidad simulada.
   atmosphere: Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.
-  key_features: Glamour pop-cyber, holografía mediática, fuga nocturna, moda retro y señales de realidad simulada.
+  key_features: >-
+    Pop-cyber glamour, media holography, glossy escape lines, retro fashion light, simulation
+    signals, and nocturnal synthetic shine
   creative_brief: >-
-    Construye una gramática highway-pop-cyber reusable donde brillo urbano,
-    velocidad glossy e ilusión mediática convivan en tensión entre libertad
-    juvenil y control sintético sin exigir vehículo, idol o autopista literal.
+    Use Megazone 23 as style anchor for pop-cyber simulation gloss. Any prompt should feel glossy,
+    free, mediated, and secretly synthetic. Highways, vehicles, idols, city nights, screens, and
+    chase scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-235.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -20,8 +20,12 @@ visualDna:
   render_quality: Expensive, statue, Klimt-gold luxuriance, gilded-age opulence
   spatial_distortion: None
   atmosphere: Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness
-  key_features: Gold skin, leafing seams, burnished reflection, flake edges, gilded contour
-  creative_brief: Twenty-four karat leaf applied directly to skin with a gilder's brush, each flake overlapping the next in a mosaic of pure light that transforms the body into a temple treasury. Burnished surfaces catch and return every photon that touches them, the contours of the figure traced in gold that will outlast the skin beneath, a temporary divinity achieved through the alchemy of metal beaten thinner than thought.
+  key_features: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust
+  creative_brief: >-
+    Gild the input with gold-leaf behavior: overlapping foil flakes, burnished
+    reflection, leaf seams, mica dust, white-gold or copper-patina variation and
+    Klimt-like luxury. Keep divine opulence without requiring skin application,
+    temple treasury, figure contour or living-statue body.
 avoidRules:
   - dull
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Eroded
   atmosphere: Warm, ancient
   key_features: Layers
-  creative_brief: Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs. Render the quiet dignity of the elemental, rock that remembers being sand.
+  creative_brief: >-
+    Evoke the breath of ancient deserts captured in strata of red, orange, and ochre, a surface that feels granular and
+    thirsty under harsh sun. Each layer is a page in a stone diary carved by wind and time into a record of epochs.
+    Render the quiet dignity of the elemental, rock that remembers being sand. Use Sandstone as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - shiny
   - wet

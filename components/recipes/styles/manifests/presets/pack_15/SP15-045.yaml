@@ -4,11 +4,19 @@ packId: pack_15
 name: Atomic Rail Concourse
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: National-mobility atompunk where speed feels like a civic promise sharpened into an aerodynamic instrument.
-  form_and_line: Sweeping platform bands, radial timetable suns, sleek nose cones, graphite seams, and queue lanes like circuit traces.
+  form_and_line: >-
+    Sweeping platform bands, radial timetable suns, sleek nose cones, graphite seams, and queue lanes like circuit
+    traces.
   color_palette: Teal enamel, cream tile, graphite rail, chrome flash, and red departure ticks.
   lighting_setup: Concourse skylight wash, platform strip illumination, polished edge highlights, and departure-board pulses.
   material_texture: Brushed steel, terrazzo, glazed enamel signage, rubber thresholds, glass timetable covers, and worn ticket brass.
@@ -17,20 +25,34 @@ visualDna:
   atmosphere: Momentum, precision, hopeful mobility, and bureaucratic elegance.
   key_features: Isotope express silhouettes, radial map-like walls, panoramic bands, boarding tick marks, and enamel route seals.
   creative_brief: >-
-    Preserve atomic rail-concourse grammar as a reusable style system:
-    aerodynamic civic mobility, radial transit graphics, and enamel platform
-    choreography should remain coherent across subjects.
-avoidRules: [photoreal, dystopian-chaos, medieval, body-horror, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-045.webp }
+    Aim the input into national-speed atompunk: teal enamel bands, nose-cone seams, radial timetable suns, chrome
+    departure ticks, and queue-lane circuitry should sharpen motion into promise. Rail or concourse cues may appear, but
+    the style is aerodynamic civic choreography. Apply this corepunk genre grammar over any input: preserve the faction
+    mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required
+    city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - dystopian-chaos
+  - medieval
+  - body-horror
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-045.webp
 attributes:
   negativePrompt: photoreal, dystopian-chaos, medieval, body-horror, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

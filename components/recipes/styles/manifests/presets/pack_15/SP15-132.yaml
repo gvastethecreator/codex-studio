@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Alert, protective, luminous, cooperative, tactical.
   key_features: Blooming firewall lattices, fiber-braid arcs, encrypted node constellations, rain-neon reflections, and civic interface warmth.
   creative_brief: >-
-    Preserve cooperative firewall bloom as a reusable style system: encryption,
-    public safety, and neon data-flower geometry should transform any subject
-    without requiring hackers, drones, cities, or literal screens.
+    Shield the input with cooperative firewall bloom: encrypted node clusters,
+    neon data-petal lattices, braided fiber arcs, rain-slick charcoal surfaces,
+    and warm civic trust accents transform any subject without requiring hackers,
+    drones, cities, or literal screens.
 avoidRules:
   [photoreal, military-oppression, empty-corporate, medieval-fantasy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-132.webp }

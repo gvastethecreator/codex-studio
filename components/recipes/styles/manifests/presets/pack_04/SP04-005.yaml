@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Tender, dreamy, introspective
   key_features: Decorative overlays, ornamental borders, emotion-forward closeups
   creative_brief: >-
-    Emphasize emotional nuance through delicate line economy, soft tonal gradients, and ornamental composition cues. Keep visual flow gentle and lyrical, using decorative screentones and expressive close framing to prioritize intimacy over action impact.
+    Apply shojo manga emotional grammar to any input: delicate line economy, soft tonal gradients,
+    decorative screentones, airy negative space, and lyrical close framing should prioritize
+    intimacy without requiring romance, flowers, sparkles, faces, school scenes, or a fixed
+    relationship setup.
 avoidRules:
   - rough
   - ugly

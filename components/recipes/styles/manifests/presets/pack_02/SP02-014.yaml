@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: POV unease, obscured geometry
   atmosphere: Mystery, stylish, hallucinatory dread
   key_features: Color gels, polished threat, baroque shadow
-  creative_brief: 'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime scenes.'
+  creative_brief: >-
+    Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike
+    blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands,
+    blades, blood, or crime evidence. Apply Giallo Horror as a portable cinematic/camera style over any input: preserve
+    its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
+    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - natural lighting
 assets:

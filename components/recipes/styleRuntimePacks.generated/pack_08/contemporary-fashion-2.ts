@@ -9,24 +9,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'ready-to-wear, cheap, simple',
     style: {
-      aesthetic: 'Avant-garde runway look, Paris Fashion Week centerpiece, high-drama presentation',
+      aesthetic:
+        'Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language',
       form_and_line:
         'Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette',
       color_palette:
         'Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire',
       lighting_setup:
-        'Runway spotlights, high-contrast key light, dramatic shadow falloff, catwalk haze',
+        'High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze',
       material_texture:
         'Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth',
       render_quality:
-        'Vogue runway editorial, Met Gala gala spectacle, masterpiece, fashion-week apex, haute-couture precision',
+        'Vogue couture editorial, Met Gala spectacle, masterpiece, fashion-week apex, haute-couture precision',
       spatial_distortion: 'Exaggerated silhouette',
       atmosphere:
-        'Dramatic, expensive, artistic, front-row murmur, reverent silence, aspirational awe',
+        'Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise',
       key_features:
-        'High fashion pose, exaggerated contrapposto, editorial gaze, avant-garde headpiece',
+        'Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues',
       creative_brief:
-        'A cathedral of cloth where every seam sings of impossible precision. The body becomes sculpture under the weight of silk mountains and feather clouds, architecture worn rather than inhabited. Light carves the silhouette like a chisel finding form in marble, each step down the runway a sentence in a language spoken only at the apex of craft.',
+        'Treat any input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork, feathers, organza and tulle exaggerate the silhouette without demanding a runway walk or fixed model pose. Light should carve volume with museum severity, turning the subject into wearable architecture.',
     },
   },
   {
@@ -41,16 +42,16 @@ export const GENERATED_STYLE_PRESETS = [
         'Flowing train, mermaid sweep, column-drape silhouette, chapel-length train, plunging neckline',
       color_palette: 'Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald',
       lighting_setup:
-        'Flash photography, paparazzi-wall strobe, step-and-repeat glow, golden-hour arrivals',
+        'Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression',
       material_texture:
         'Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh',
       render_quality: 'Glamorous, expensive, best-dressed-list caliber, diamond-season perfection',
       spatial_distortion: 'None',
       atmosphere:
-        'Celebrity, fame, awards-show electricity, telecast anticipation, career-defining moment',
+        'Celebrity, fame, awards-night electricity, telecast anticipation, career-defining glamour',
       key_features: 'Long train, statement jewels, strapless bodice, red-soled heels',
       creative_brief:
-        'A flashbulb galaxy erupts as silk charmeuse sweeps across carpet dyed the color of cardinal sin. Crystal mesh scatters light into a thousand tiny nominations, each step a career condensed into the length of a train, the gown holding breath and borrowed diamonds with equal gravity while the world watches through telephoto lenses.',
+        'Give the input red-carpet gown drama: silk charmeuse, crystal mesh, chapel-length train, strapless or column geometry, statement jewels and flashbulb sparkle. Keep celebrity electricity without requiring carpet, step-and-repeat, paparazzi wall or a walking figure.',
     },
   },
   {
@@ -63,16 +64,15 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line:
         'Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column',
       color_palette: 'Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey',
-      lighting_setup:
-        'Office fluorescent, window-filtered daylight, conference-room downlight, lobby atrium glow',
+      lighting_setup: 'Window-filtered daylight, soft professional overhead, lobby-neutral glow',
       material_texture:
         'Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit',
       render_quality: 'Professional, safe, competent polish, LinkedIn-headshot ready',
       spatial_distortion: 'None',
-      atmosphere: 'Work, standard, professional calm, deadline focus, water-cooler normalcy',
+      atmosphere: 'Professional calm, deadline focus, competent neutrality, low-risk polish',
       key_features: 'Blazer, structured shoulder, pointed-toe pump, leather portfolio bag',
       creative_brief:
-        'The quiet armor of the competent, notch lapels tracing lines of authority that no one questions because they were earned in conference rooms with bad coffee. Navy suiting and dove-grey wool exist in the narrow band between ambition and assimilation, dressed for a promotion that has not yet been announced but has already been priced into the lease.',
+        'Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured shoulders and soft neutral whites. Keep office authority as tone, not as a conference room, LinkedIn headshot, portfolio-bag scene or corporate character. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
     },
   },
   {
@@ -81,23 +81,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'dress, jeans, formal',
     style: {
-      aesthetic: 'Gym to street look, pre-to-post-workout fluidity, wellness-as-status',
+      aesthetic: 'Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status',
       form_and_line:
         'Tight fitting, ergonomic, compressive sculpt, racerback lines, high-waist compression',
       color_palette:
         'Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal',
       lighting_setup:
-        'Gym lights or outdoor, sweat-sheen reflection, early-morning clarity, golden-hour pavement',
+        'Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights',
       material_texture:
         'Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib',
       render_quality:
         'Nike/Lululemon performance-luxury activewear, fit-tech, always-ready, motion-capture sharpness',
       spatial_distortion: 'None',
       atmosphere:
-        'Active, healthy, modern, endorphin glow, urban discipline, pre-dawn determination',
+        'Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination',
       key_features: 'Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs',
       creative_brief:
-        'The body as engineered instrument, muscles traced by compressive knit like a living blueprint. Sweat-sheened and neon-trimmed, the garment promises transformation between reps and errands, the 5 AM discipline of those who treat wellness as architecture and the street as runway.',
+        'Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing, ergonomic panel lines and motion-ready tension. Preserve the wellness-as-performance aura without forcing a gym, street, workout pose or exposed anatomy.',
     },
   },
   {
@@ -106,21 +106,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'suit, tie',
     style: {
-      aesthetic:
-        'Steve Jobs/Zuckerberg tech-founder uniform, black turtleneck authority, keynote-stage iconography',
+      aesthetic: 'Tech-founder uniform, black turtleneck authority, product-launch minimalism',
       form_and_line:
         'Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve',
       color_palette: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
-      lighting_setup: 'Stage light, keynote spotlight, product-launch haze, auditorium backlight',
+      lighting_setup:
+        'Controlled product-launch spotlight, soft auditorium backlight, keynote-grade haze',
       material_texture:
         'Cotton t-shirt, merino turtleneck, selvedge denim, New Balance suede, brushed cashmere',
       render_quality: 'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
       spatial_distortion: 'None',
-      atmosphere: 'Serious, visionary, keynote gravitas, disruptive calm, controlled intensity',
+      atmosphere:
+        'Serious, visionary, disruptive calm, controlled intensity, uniform-dressing certainty',
       key_features:
         'Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding',
       creative_brief:
-        'One decision eliminated each morning, the black turtleneck absorbing all questions about identity so the mind can orbit bigger problems. Merino wool and round-frame glasses as uniform of a priesthood that worships iteration speed, standing alone on a stage lit for revelation, wearing the simplicity that costs a billion dollars to achieve.',
+        'Reduce the input to tech-founder uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote energy as polish, but avoid requiring a stage, founder portrait, glasses or specific tech persona. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
     },
   },
   {
@@ -134,19 +135,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Sharp, layered, cropped jacket, high-waist trouser, asymmetric hem, fitted silhouette',
       color_palette:
         'Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink',
-      lighting_setup:
-        'Studio bright, music-show array, high-key beauty light, color-shifting cyc wall',
+      lighting_setup: 'Studio-bright beauty light, color-shifting gels, high-key rim sparkle',
       material_texture:
         'Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones',
       render_quality:
         'Perfect, trendy, coordinated, music-show polish, fan-cam ready, synchronized precision',
       spatial_distortion: 'None',
       atmosphere:
-        'Energetic, cute, cool, high-polish perfection, synchronized charisma, stadium-scale joy',
+        'Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy',
       key_features:
-        'Dyed hair, pastel or jewel-tone color, matching group coordination, statement earrings',
+        'Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
       creative_brief:
-        'Precision worn as skin, sequins catching studio light in a choreographed galaxy of synchronized perfection. Pastel hair frames a face that has rehearsed this smile ten thousand times, every outfit a comeback, every comeback a ritual in the church of coordinated spectacle where fandom chants become weather.',
+        'Rebuild the input with K-pop comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve idol-performance charisma without requiring a face, group choreography, music-show set or fandom crowd.',
     },
   },
   {
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance',
       key_features: 'Neutral palette, tonal layering, absence of hardware, invisible fastenings',
       creative_brief:
-        'The luxury of absence, where subtraction achieves what addition never could. A single seam traced down a column of oatmeal cashmere speaks louder than any ornament, silence dressed in bone-white linen, walking through a room emptied of everything but light and breath.',
+        'Apply quiet-luxury subtraction to any subject: clean geometry, tonal layering, invisible closures, premium matte fibers and a palette held near bone, oatmeal and charcoal. The image should feel edited down to the one seam that matters, without requiring a room, wardrobe scene or human figure.',
     },
   },
   {
@@ -184,15 +184,15 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
       color_palette:
         'Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo',
-      lighting_setup: 'Flat, fluorescent-office overhead, overcast sidewalk, diner-booth warmth',
+      lighting_setup: 'Flat everyday overhead, overcast softness, low-contrast practical warmth',
       material_texture:
         'Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas',
       render_quality: 'Boring, ironic, comfortable, deliberately average, anti-fashion confidence',
       spatial_distortion: 'None',
-      atmosphere: 'Casual, unpretentious, genuine, coffee-shop routine, unbothered authenticity',
+      atmosphere: 'Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease',
       key_features: 'Dad sneakers, light-wash jeans, tucked-in tee, windbreaker',
       creative_brief:
-        'The radical proposition that enough is enough, dad jeans worn without irony because irony requires effort. Fleece and stonewash exist in a state of grace, nothing-to-prove comfort that took forty years to achieve, standing in a coffee shop looking exactly like someone who has never tried to look like anything.',
+        'Flatten the input into normcore anti-fashion: dad denim, fleece, washed canvas, plain jersey, windbreaker logic and deliberately average proportions. It should feel comfortable and unoptimized without requiring a coffee shop, sidewalk, sitcom reference or human standing pose.',
     },
   },
   {
@@ -206,18 +206,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll',
       color_palette: 'Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold',
       lighting_setup:
-        'Daylight, campus, autumn-gold hour, library reading-room warmth, crew-regatta morning',
+        'Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness',
       material_texture:
         'Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan',
       render_quality:
         'Ralph Lauren heritage prep, rich, classic, country-club ease, old-money nonchalance',
       spatial_distortion: 'None',
       atmosphere:
-        'Smart, wealthy, traditional, generational ease, tailored confidence, ivy-covered privilege',
+        'Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish',
       key_features:
         'Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
       creative_brief:
-        'Cable-knit generations draped across shoulders like inherited wisdom, oxford cloth carrying the weight of libraries filled with leather-bound certainty. Nantucket reds fade toward pink under autumn sun, each crease earned by privilege too old to question itself, ease worn as casually as a half-untucked shirt.',
+        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere only; do not require a college scene, human student or inherited-wealth portrait.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

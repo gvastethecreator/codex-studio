@@ -3,11 +3,14 @@ import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
-  STYLE_DEFAULT_IMAGES,
+  STYLE_AVAILABLE_DEFAULT_IMAGES,
   STYLE_PACK_FALLBACK_IMAGES,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
-import { resolveStyleCatalogResultImage, resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
+import {
+  resolveStyleCatalogResultImage,
+  resolveStylePreviewImage,
+} from '../../lib/stylePresetVisuals';
 
 import {
   searchStylePresetCatalog,
@@ -56,11 +59,11 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
     () =>
       catalog
         ? searchStylePresetCatalog(catalog, {
-          query,
-          packId: packId || undefined,
-          task: task || undefined,
-          limit: 80,
-        })
+            query,
+            packId: packId || undefined,
+            task: task || undefined,
+            limit: 80,
+          })
         : [],
     [catalog, packId, query, task],
   );
@@ -143,10 +146,11 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               type="button"
               key={filter.id || 'all'}
               onClick={() => setTask(filter.id)}
-              className={`h-8 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest transition-colors ${task === filter.id
+              className={`h-8 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest transition-colors ${
+                task === filter.id
                   ? 'bg-white text-black'
                   : 'text-zinc-500 hover:bg-white/8 hover:text-white'
-                }`}
+              }`}
             >
               {filter.label}
             </button>
@@ -166,12 +170,11 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               const resultImageFromDefault = resolveStyleCatalogResultImage({
                 presetId: result.id,
                 packId: result.packId,
-                defaultImages: STYLE_DEFAULT_IMAGES,
+                defaultImages: STYLE_AVAILABLE_DEFAULT_IMAGES,
                 packFallbackImages: STYLE_PACK_FALLBACK_IMAGES,
               });
-              const categoryImage = STYLE_CATEGORY_IMAGES[
-                styleCategoryImageKey(result.packId, result.categoryName)
-              ];
+              const categoryImage =
+                STYLE_CATEGORY_IMAGES[styleCategoryImageKey(result.packId, result.categoryName)];
               const resultImageFromPreview = resolveStylePreviewImage({
                 categoryImage,
                 categoryPreviewImage: STYLE_CATEGORY_PREVIEWS[result.categoryName],

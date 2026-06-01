@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Object in real location
+  aesthetic: HDRI matched-light integration
   form_and_line: Realistic reflections
   color_palette: Natural, environment-derived
   lighting_setup: Image based lighting, spherical harmony
@@ -20,7 +20,12 @@ visualDna:
   render_quality: Photorealistic integration, composited realism
   atmosphere: Grounded, location-accurate
   key_features: Matched lighting, reflection authenticity
-  creative_brief: A 360-degree photograph becomes the entire lighting rig — spherical harmony wraps the subject in light borrowed from a real sunset, a real mountaintop, a real city square at golden hour. Reflections carry the DNA of an actual place, not a studio approximation, and ambient integration makes the render disappear into the plate. The object belongs because the light says it belongs, photorealistic integration achieved through environmental truth rather than fakery.
+  creative_brief: >-
+    Integrate the input with HDRI truth: matched reflections, contact shadows, ambient color wrap and unseen-environment
+    lighting that gives CG weight. Use location cues only as reflection language; do not require a sunset, mountaintop,
+    city square or object placement. Apply HDRI Environment as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
+    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - studio background
 assets:

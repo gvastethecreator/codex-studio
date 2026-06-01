@@ -12,19 +12,27 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale
-  form_and_line: High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and impact-first panel rhythm
+  aesthetic: >-
+    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic
+    interstellar scale
+  form_and_line: >-
+    High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and
+    impact-first panel rhythm
   color_palette: Bright primary, comic pop spectrum, magenta/cyan punch
   lighting_setup: Dramatic, cosmic backlight, heroic rim glow
   material_texture: Newsprint
-  render_quality: Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action silhouette clarity
+  render_quality: >-
+    Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic
+    action silhouette clarity
   spatial_distortion: Exaggerated perspective
   atmosphere: Epic, sci-fi, super-powered wonder, interstellar drama
-  key_features: Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel cadence
+  key_features: >-
+    Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic
+    panel cadence
   creative_brief: >-
-    Keep this preset anchored in silver-age cosmic action grammar: crackling
-    energy-dot fields, optimistic interstellar scale, and aggressive
-    foreshortened hero staging should define identity without naming any author.
+    Apply silver-age cosmic action grammar to any input: crackling energy-dot fields, atom-age burst
+    halos, optimistic interstellar scale, and aggressive foreshortened panel rhythm should define
+    identity without requiring heroes, capes, planets, battles, rockets, or a fixed cosmic scene.
 avoidRules:
   - dark
   - gritty

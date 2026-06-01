@@ -4,8 +4,14 @@ packId: pack_15
 name: Plasma Rail Commons
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
   aesthetic: Civic raypunk infrastructure where motion looks dangerous enough to thrill and organized enough to trust.
   form_and_line: Elevated plasma lines, exposed conduit spines, cantilever slices, transfer-pod sockets, and terminal fins.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Speed, civic momentum, controlled danger, and commuter adrenaline.
   key_features: Open plasma rails, transfer-pod sockets, mission-fin silhouettes, service-line strokes, and safety icon clusters.
   creative_brief: >-
-    Push plasma rail-commons as reusable style: treat movement as public
-    electricity, with exposed energy channels, disciplined transfer geometry,
-    and everyday travel framed like starship launch prep.
-avoidRules: [photoreal, medieval, cyber-grunge, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-066.webp }
+    Electrify the input as trusted public speed: plasma rails, ceramic insulators, pod sockets, safety icon clusters,
+    and cyan underdeck spill should make travel feel dangerous but organized. Rail or commons cues may appear; the style
+    is everyday motion framed like launch preparation. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - medieval
+  - cyber-grunge
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-066.webp
 attributes:
   negativePrompt: photoreal, medieval, cyber-grunge, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

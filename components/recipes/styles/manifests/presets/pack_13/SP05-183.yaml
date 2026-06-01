@@ -22,10 +22,10 @@ visualDna:
   atmosphere: Shy, bright, hopeful, soft
   key_features: Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate confession framing
   creative_brief: >-
-    Preserve shy-hallway-bloom grammar as a reusable style system:
-    daylight-soft proximity framing, blush-led micro-expression acting, and
-    sincerity-over-spectacle romance pacing should remain consistent across
-    subjects.
+    Let the input bloom with shy daylight romance: fine contours, blush-soft
+    accents, cautious spacing, pale sky-blue warmth, and near-but-not-touching
+    emotional distance should guide any subject without requiring hallways,
+    school uniforms, confession staging, or paired characters.
 avoidRules:
   - realistic
   - 3d render

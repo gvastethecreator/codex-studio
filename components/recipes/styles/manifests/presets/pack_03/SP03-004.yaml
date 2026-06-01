@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Realistic, grounded, cinematic gravitas
   key_features: Physical accuracy, volume scattering
-  creative_brief: Every ray of light is accounted for, bouncing through space with the diligence of a forensic investigator — unclamped global illumination traces paths that real photons would recognize. ACES color science bends the spectrum into cinema, and micro-displacement turns flat polygons into landscapes of tactile truth. The frame carries the quiet authority of a Hollywood film that knows it will outlive its audience.
+  creative_brief: >-
+    Render any input with Arnold feature-film path tracing: unclamped global
+    illumination, ACES color discipline, micro-displacement detail, soft indirect
+    bounce, and cinema-grade material response. Keep Hollywood render authority
+    without requiring characters, creatures, sets, props, or VFX shot staging.
 avoidRules:
   - photo
   - drawing

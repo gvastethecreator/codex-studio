@@ -19,9 +19,13 @@ visualDna:
   material_texture: Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface
   render_quality: Scary, void, light-swallowing menace, heart-of-darkness poetry
   spatial_distortion: Silhouette
-  atmosphere: Evil, mystery, primeval-darkness dread, unnamed-fear stillness, shadow-realm silence
+  atmosphere: Mystery, primeval-darkness dread, unnamed-fear stillness, shadow-realm silence
   key_features: No details, featureless void, light-absorbing depth, negative shape, silhouette-only form
-  creative_brief: A shape defined only by what it swallows, the silhouette a void where light goes to die, edges bleeding into the surrounding darkness without the courtesy of a boundary. The figure absorbs every photon that dares approach, standing in a depth that has no surface, wearing shadow as skin and silence as voice, a presence known only by the cold spot it leaves in the air and the extinguishing of every light that comes too close.
+  creative_brief: >-
+    Transform the input into shadow-form materiality: light-absorbing void,
+    velvety black depth, rim-only edge, undefined silhouette and absence as
+    surface. Keep menace optional and atmospheric; do not require a humanoid
+    figure, evil character, realm scene or literal standing pose.
 avoidRules:
   - light
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

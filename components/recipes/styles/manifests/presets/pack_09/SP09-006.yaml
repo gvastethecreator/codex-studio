@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Classic, pure
   key_features: Veining
-  creative_brief: Sculpt light through the translucent skin of Carrara marble, where grey veins drift like smoke frozen in alabaster across a field of pure white. The material should glow as if lit from within, cold to the eye but warm in its perfection. This is stone that dreams of being cloud, the ceiling of the Sistine rendered as pure surface.
+  creative_brief: "Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical architecture or a fixed sculpture."
 avoidRules:
   - dirty
   - yellow

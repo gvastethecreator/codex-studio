@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-100
 packId: pack_14
-name: Broken Halo Garden
+name: Broken Halo Regrowth
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Overgrown garden organized around a fractured halo monument.
-  form_and_line: Circular ruin, climbing vines, and petal-like debris.
+  aesthetic: Fractured sanctity expressed through broken halo geometry and quiet regrowth.
+  form_and_line: Circular ruin motifs, climbing organic lines, and petal-like debris.
   color_palette: Pale moss, tarnished gold, and stone gray.
-  lighting_setup: Soft dusk light with halo fragments catching highlights.
+  lighting_setup: Soft dusk light with halo fragments catching restrained highlights.
   material_texture: Weathered marble, wet leaves, and oxidized metal.
   render_quality: Poetic symbolic landscape with calm tension.
-  spatial_distortion: Garden spiral orbiting the broken ring.
+  spatial_distortion: Orbital spiral around broken ring forms without requiring a literal garden.
   atmosphere: Recovery, sanctity, and wounded beauty.
-  key_features: Broken halo, revival growth, and memorial stones.
-  creative_brief: A symbolic garden where divinity is fractured but life continues around it.
+  key_features: Broken halo, revival growth, wounded sanctity.
+  creative_brief: Recast the input through broken-halo regrowth, with fractured divinity and organic renewal continuing through it.
 avoidRules: [photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-100.webp }
 attributes:
   negativePrompt: photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

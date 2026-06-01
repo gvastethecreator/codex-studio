@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-342
 packId: pack_13
-name: Satoshi Kon - Mirror Hallway Reality Slip
+name: Reality-Slip Reflection Continuity
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,30 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos, pantallas y cortes perceptivos.
+  aesthetic: >-
+    Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos,
+    pantallas y cortes perceptivos.
   form_and_line: Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.
   color_palette: Cool steel, skin peach, screen blue, lipstick crimson, neutral beige, shadow plum
-  lighting_setup: Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de superficie limpia.
+  lighting_setup: >-
+    Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de
+    superficie limpia.
   material_texture: Reflejos en vidrio, brillo cosmético, barniz pulido y glow de escaneo electrónico.
-  render_quality: Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas perceptivas.
-  spatial_distortion: Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic frame logic with subtle breakage
+  render_quality: >-
+    Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas
+    perceptivas.
+  spatial_distortion: >-
+    Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic
+    frame logic with subtle breakage
   atmosphere: Inquietante y sofisticada, de tensión mental bajo control aparente.
-  key_features: Espejos, pantallas, espacios adultos pulidos y transiciones de reality-slip en continuidad ilusoria.
+  key_features: >-
+    Reflection logic, polished adult spaces, screenlike cuts, memory-performance slippage, identity
+    fracture, and seamless impossible continuity
   creative_brief: >-
-    Define una gramática reusable de mirror-reality-slip donde reflejo, corte
-    perceptivo y espacio pulido construyan fractura identitaria sin exigir
-    hallway, ciudad, pantalla, espejo literal o protagonista humano.
+    Use Satoshi Kon as style anchor for reality-slip reflection continuity. Any prompt should
+    fracture identity through polished surfaces, perceptual cuts, memory drift, and seamless
+    impossible transitions. Hallways, cities, screens, mirrors, protagonists, and literal
+    reflections are optional.
 avoidRules:
   - blunt horror gore
   - chaotic dream collage
@@ -36,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-342.webp
 attributes:
-  negativePrompt: blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism
+  negativePrompt: >-
+    blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy
+    low-detail realism, fantasy ornament clutter, obvious literal symbolism
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

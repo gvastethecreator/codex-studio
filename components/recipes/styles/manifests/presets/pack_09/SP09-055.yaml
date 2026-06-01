@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Sharp points
   atmosphere: Mystical, valuable
   key_features: Cluster
-  creative_brief: Summon the deep-earth geometry of amethyst crystal where purple facets climb toward pointed terminations in a cluster of mineral intelligence, each face a window into internal reflections that bounce light through lattice corridors. The geometric growth should feel intentional yet natural, a cathedral built by chemistry at geological scale. Capture the magic of ordered growth, the lattice that dreams in violet.
+  creative_brief: 'Apply raw amethyst growth as crystalline structure over the input: purple facets, white mineral base, pointed terminations, internal reflections, and lattice corridors of light. If gem, cave, magic, tech, or ornament exists, amplify it; otherwise let crystal clusters grow from edges and planes without requiring a literal gemstone display.'
 avoidRules:
   - glass
   - smooth

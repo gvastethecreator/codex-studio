@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Romantic, secret, flickering intimacy, warm darkness
   key_features: Low warm key, flame flicker, amber falloff, moving shadow edge
-  creative_brief: 'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting.'
+  creative_brief: >-
+    Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and
+    pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should
+    appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a portable cinematic/camera style
+    over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar
+    while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - electric light
 assets:

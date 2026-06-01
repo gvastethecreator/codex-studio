@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Smart, complex
   key_features: Traces
-  creative_brief: Copper rivers flowing across green fiberglass, carrying electrons along paths designed by human logic. The topography of computation, a landscape where distance is measured in nanoseconds and intention is etched in metal.
+  creative_brief: Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.
 avoidRules:
   - organic
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

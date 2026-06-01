@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-019
 packId: pack_11
-name: Felt Puppet
+name: Felt Signal Handmade Broadcast
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,19 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Broadcast-era felt-puppet style with hand-operated expressivity, sewn-form character charm, and workshop craft energy
-  form_and_line: Fuzzy edges, fabric-cut contours, sewn-shape silhouettes, armature skeleton
-  color_palette: Bright felt, craft-store spectrum, neon-green, hot-pink, safety-orange, deep-purple
-  lighting_setup: TV studio, three-point broadcast, key-fill-backlight, warm-stage glow
-  material_texture: Felt fabric, foam padding, sewn-seam detail, ping-pong-ball eyes, fleece nap
-  render_quality: Handmade, expressive, hand-in-sock life, backstage magic, felt-and-fur personality
-  spatial_distortion: Flapping mouth, hand-driven jaw, rod-controlled arms, loose-neck wobble
-  atmosphere: Funny, lively, theatrical, warm, handmade
-  key_features: Arm rods, seam-stitch detail, googly-eye placement, felt-color blocking
+  aesthetic: Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit
+  form_and_line: Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry
+  color_palette: Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black button contrast
+  lighting_setup: Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage
+  material_texture: Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity
+  render_quality: Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface
+  spatial_distortion: Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth
+  atmosphere: Warm, comedic, approachable, nostalgic, handmade, emotionally legible
+  key_features: Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft jaw-like deformation
   creative_brief: >-
-    Preserve this preset through hand-operated puppet grammar: felt seams,
-    foam volume, rod-assisted gesture, and broadcast-stage lighting should
-    define identity without relying on named puppet franchises.
+    Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm, and operated-expression timing should define the image. The result should feel tactile and performed, without requiring literal puppets, sets, rods, or franchise references.
 avoidRules:
   - cgi
   - smooth

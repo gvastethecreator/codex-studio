@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Discipline, ambition, heroic futurism, and carefully managed risk.
   key_features: Launch-lane graphics, academy-white surfaces, blue-orange instruction accents, diagrammatic overlays, and ranked alignment rhythm.
   creative_brief: >-
-    Apply zenith ray-academy as an abstract style treatment: make any subject
-    feel trained, ranked, diagrammed, and launch-ready through clean raypunk
-    institutional graphics.
+    Drill the input into launch-ready raypunk discipline: academy-white panels,
+    blue-orange rank stripes, simulator ovals, diagram arcs, and precise lane
+    markings turn any subject into trained future hardware or cadet ritual.
 avoidRules: [photoreal, medieval, cyberpunk-dystopia, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-072.webp }
 attributes:

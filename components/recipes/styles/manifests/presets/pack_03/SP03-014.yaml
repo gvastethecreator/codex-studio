@@ -20,7 +20,13 @@ visualDna:
   render_quality: Automotive finish, showroom gloss
   atmosphere: Sleek, futuristic, precision luxury
   key_features: Reflection, anisotropic highlights
-  creative_brief: A surface so polished it ceases to describe itself and becomes a mirror for the world around it — HDRI environments wrap every curve in borrowed geography, and anisotropic highlights stretch across brushed metal like streaks of frozen lightning. Gold, chrome, and anodized titanium share the frame like instruments in an orchestra of precision. The image radiates showroom confidence, every reflection a second composition hiding within the first.
+  creative_brief: >-
+    Turn the input into a chrome-and-metal reflection study: HDRI ribbons, anisotropic highlight streaks,
+    gold/chrome/anodized shifts and hard specular confidence. It may suggest automotive or showroom polish when
+    relevant, but must not require a vehicle, product pedestal or surrounding world. Apply Chrome & Metal as a portable
+    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting
+    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product
+    shot, or scene template.
 avoidRules:
   - matte
   - rough

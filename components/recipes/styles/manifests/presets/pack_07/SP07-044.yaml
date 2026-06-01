@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-044
 packId: pack_07
-name: Urban Park (High Line)
-category: 4. Landscape And Gardens
+name: Postindustrial Ecological Promenade
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - landscape-and-garden-systems
 visualDna:
   aesthetic: Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.
   form_and_line: Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de borde.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.
   key_features: Linealidad infraestructural, bordes estratificados, interfaces de pausa y mezclas de plantación para polinizadores.
   creative_brief: >-
-    Formula una gramática de corredor postindustrial transferible donde la
-    retícula dura siga legible mientras la ecología la reprograma. Debe
-    funcionar como estilo de borde reciclado, no como cita de un sitio concreto.
+    Cualquier composicion queda reprogramada como borde reciclado: infraestructura lineal, corten, hormigon heredado y
+    plantacion resiliente. La ecologia debe colonizar la reticula sin borrar su pasado industrial. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - wild forest
 assets:
@@ -34,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Exploratory, energetic, design-lab momentum
   key_features: Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast
   creative_brief: >-
-    Build character and prop identity from pure outer shape before adding detail. Keep each variant legible at thumbnail scale through disciplined value grouping, strong contour contrast, and intentional proportion shifts, following a Feng Zhu-style high-iteration design cadence.
+    Apply thumbnail-silhouette exploration to any input as a high-read design language: small-value shapes, bold
+    figure-ground separation, multiple scale reads, simplified masses, and quick ideation marks. If characters or props
+    exist, iterate them; otherwise convert the prompt into abstract silhouette families without requiring a character
+    sheet, grid, or prop lineup.
 avoidRules:
   - detailed
   - polished

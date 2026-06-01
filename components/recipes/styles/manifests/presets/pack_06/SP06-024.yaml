@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Warm, classical
   key_features: Earth tones
-  creative_brief: Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeological, colors dug from the ground and pressed into disciplined value structure. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.
+  creative_brief: >-
+    Apply conte-crayon drawing to any input: compressed earth tones, sanguine
+    and sepia value structure, square-stick strokes, textured paper drag, and
+    warm disciplined modeling. Keep archaeological restraint without requiring
+    academy figures, portraits, anatomy plates, or antique sketchbooks.
 avoidRules:
   - photo
   - realistic

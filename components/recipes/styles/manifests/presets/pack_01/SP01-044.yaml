@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Surface distortion by light
   atmosphere: Conceptual, trippy
   key_features: Light pattern
-  creative_brief: 'A projected source turns any surface into a temporary screen: pattern overlay, pixel-grid texture, mixed color, and light warped by form. Treat projection as conceptual photographic lighting without requiring faces, skin, identity narrative, or music-video staging.'
+  creative_brief: >-
+    Apply projector-light mapping to the input: pattern overlay, pixel-grid
+    texture, mixed color spill, and warped light across form should turn any
+    surface into a temporary screen without requiring faces or music-video staging.
 avoidRules:
   - clean light
 assets:

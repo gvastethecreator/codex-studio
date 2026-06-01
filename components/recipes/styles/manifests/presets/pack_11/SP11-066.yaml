@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-066
 packId: pack_11
-name: Glitter Macro
+name: Holographic Flake Scatter
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,17 +12,21 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Pile of glitter, sparkle-drift, craft-mess, micro-mirror chaos, holographic-confetti
-  form_and_line: Tiny hexagons, polygonal-flake edges, irregular-cut shapes, star-confetti, micro-geometry
-  color_palette: Multi-color, holographic-spectrum, metallic-foil, iridescent-shift, confetti-rainbow, silver-mirror, neon-bright
-  lighting_setup: Sparkle bokeh, point-source-glint, macro-ring flash, multiple-catchlight, disco-ball scatter
-  material_texture: Rough, shiny, metallic-foil, PET-film edges, micro-scratch, glitter-dust, adhesive-residue
-  render_quality: Party, mess, craft-project aftermath, sparkle-explosion, disco-floor, kindergarten-chaos
-  spatial_distortion: None, random-scatter, pile-depth, flake-overlap, specular-point-cloud
-  atmosphere: Fun, bright, art-room joy, celebration-scatter, make-a-mess, glitter-in-everything
-  key_features: Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix
+  aesthetic: Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry
+  form_and_line: Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets
+  color_palette: Holographic rainbow, metallic silver, iridescent cyan-pink shifts, foil gold, neon accents, prismatic whites
+  lighting_setup: Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast
+  material_texture: Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips
+  render_quality: Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure
+  spatial_distortion: Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts
+  atmosphere: Celebratory, kinetic, glossy, playful, glamorous, high-energy
+  key_features: Iridescent flake geometry, specular hot spots, bokeh scatter, prism shifts, metallic dust, micro-facet density
   creative_brief: >-
-    Build macro sparkle fields from dense glitter geometry, holographic specular scatter, and color-shifting foil reflections. Keep the visual mood celebratory and high-energy while preserving a reusable material-focused direction.
+    Turn the input into a holographic flake-and-sparkle material treatment. Use prismatic scatter, micro-facet
+    reflections, shallow macro depth, and dense glitter geometry while avoiding literal piles, craft tables, party
+    scenes, or product shots. Apply Holographic Flake Scatter as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required
+    franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - matte
 assets:

@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, storybook',
       key_features: 'Line shading',
       creative_brief:
-        'Every line is a decision with no eraser, ink committing to paper with the finality of law. Hatching builds shadow through accumulation, density becoming darkness through disciplined repetition. The white of the page is not absence but presence, the loudest element in the composition.',
+        'Apply pen-and-ink drawing to any input: committed black linework, crosshatch value, disciplined contour, untouched paper white, and crisp graphic contrast. Keep irreversible ink clarity without requiring comic panels, architectural plates, portraits, or handwritten labels.',
     },
   },
   {
@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, slick',
       key_features: 'Marker streaks',
       creative_brief:
-        'Alcohol-based ink saturates paper in translucent veils, each pass deepening the stain, edges bleeding slightly beyond the line. The marker squeaks its signature frequency, a sound that means rendering is happening. Glossy highlights bloom in the white space reserved for light, untouched by the permeating color.',
+        'Apply Copic-marker rendering to any input: translucent alcohol-ink layers, soft edge bleed, saturated paper stain, reserved white highlights, and smooth illustrative gradients. Keep marker-board polish without requiring product sketches, fashion plates, manga faces, or visible marker tools.',
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Studious, quiet',
       key_features: 'Graphite texture',
       creative_brief:
-        'Graphite layers build from whisper to shout through pressure alone, the hand learning form by tracing its shadow onto paper. Metallic sheen catches light at oblique angles, a secret visible only to those who lean close. The drawing breathes in grey values, a world made entirely of lead and patience.',
+        'Apply graphite-pencil rendering to any input: pressure-built grey values, paper tooth, soft blending, crisp line accents, erased highlights, and subtle metallic sheen. Keep patient drawing craft without requiring sketchbooks, portraits, academic studies, or visible artist tools.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, intense',
       key_features: 'Smudged texture',
       creative_brief:
-        'Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from pressure, subtraction, and haze. The drawing lives in the tension between accident and intention.',
+        'Apply expressive charcoal drawing to any input: dusty black deposits, rough paper tooth, broad smudges, erased highlights, pressure haze, and unstable edge softness. Keep dramatic subtraction without requiring figure studies, studio easels, life drawing, or monochrome portrait framing.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Gentle, colorful',
       key_features: 'Wax texture',
       creative_brief:
-        'Wax pigment layers bloom into impossible smoothness, colors blending like oil but dragging like crayon on paper grain. Each stroke carries the faint squeak of friction, a sound translated into saturation. The drawing glows with the warmth of an afternoon spent coloring outside the lines with expensive intent.',
+        'Apply colored-pencil rendering to any input: waxy pigment layering, visible paper grain, burnished blends, sharp colored linework, and hand-pressure saturation. Keep warm drawn color without requiring coloring-book subjects, childhood cues, botanical studies, or stationery props.',
     },
   },
   {
@@ -120,7 +120,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy, atmospheric',
       key_features: 'Chalky finish',
       creative_brief:
-        'Pure pigment held together by the weakest binder — barely more than dust on paper — achieves saturation that feels like breathing color instead of air. Smudged edges soften the world into a remembered dream, focus yielding to atmosphere. The drawing exists on sufferance, one careless touch away from erasure.',
+        'Apply soft pastel drawing to any input: powdery pure pigment, fragile smudged edges, velvety saturation, paper tooth, atmospheric softness, and touch-sensitive haze. Keep color-as-dust immediacy without requiring figure studies, landscapes, chalk sets, or classroom boards.',
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rustic, temporary, handmade',
       key_features: 'Dusty lines',
       creative_brief:
-        'Calcium carbonate dust clings to dark tooth, every line a temporary claim destined for erasure. White on black reverses the natural order, light emerging from darkness through powder and pressure. The drawing should feel provisional and handmade without requiring menus, classrooms, boards, or written notes.',
+        'Apply chalk-dust drawing to any input: powdery white marks on dark tooth, erasable residue, pressure-grain variation, soft dust halos, and handmade provisional contrast. Keep temporary mark energy without requiring menus, classrooms, chalkboards, or written notes.',
     },
   },
   {
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dramatic, inverted',
       key_features: 'White on black',
       creative_brief:
-        'Light is carved out of darkness, the stylus scratching white into an ink-black surface, image emerging through removal rather than addition. Every line is an act of excavation, finding form in what the blackness had hidden. The result is photographic negative made tactile, darkness serving as canvas rather than mark.',
+        'Apply scratchboard technique to any input: ink-black ground, white incised marks, carved highlights, dense hatch excavation, and negative-like tactile contrast. Keep subtractive drawing drama without requiring animals, vintage engraving subjects, logos, or black-card closeups.',
     },
   },
   {
@@ -182,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Graphic, stark',
       key_features: 'Solid shape',
       creative_brief:
-        'Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The contour must do all expressive work, turning omission into the primary design tool. Absence becomes eloquence when what is removed outweighs what remains.',
+        'Apply silhouette-first drawing to any input: pure contour recognition, interior detail removed, high figure-ground contrast, edge clarity, and omission as design language. Keep shape-driven eloquence without requiring profile portraits, sunsets, cut paper, theatre screens, or human bodies.',
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fluid, simple',
       key_features: 'Single line',
       creative_brief:
-        'A single unbroken line wanders the page like a melody that never resolves, touching every contour without lifting, without retreating. The hand moves in faith, trusting the journey more than the destination. Form emerges from the discipline of connection, every subject revealed as one continuous thread.',
+        'Apply continuous-line drawing to any input: one unbroken contour path, looping simplification, minimal lifts, expressive detours, and structure built from uninterrupted connection. Keep elegant line discipline without requiring faces, hands, figure studies, sketchbook margins, or cafe scenes.',
     },
   },
   {
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Casual, restless, improvised',
       key_features: 'Scribble texture',
       creative_brief:
-        'Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Paper dimples under dense scribbles, cross-contours, and obsessive hatch fields that turn idle marks into structure. The style should feel casual and compulsive without requiring notebooks, margins, classrooms, or text.',
+        'Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure variation, paper dimples, obsessive hatching, scribbled cross-contours, and casual compulsive buildup. Keep everyday pen intimacy without requiring notebooks, margins, classrooms, or readable text.',
     },
   },
   {
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, bold',
       key_features: 'Chunky texture',
       creative_brief:
-        'Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves chunky residue, pressure ridges, and scraped interruptions that make process visible. The image celebrates a hand that does not apologize for force, friction, or imperfect coverage.',
+        'Apply oil-pastel force to any input: wax-bound pigment, chunky residue, visible pressure ridges, scraped interruptions, saturated nonblended color, and tactile friction. Keep assertive mark-making without requiring child-art cues, paper closeups, still-life subjects, or classroom materials.',
     },
   },
   {
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Warm, classical',
       key_features: 'Earth tones',
       creative_brief:
-        'Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeological, colors dug from the ground and pressed into disciplined value structure. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.',
+        'Apply conte-crayon drawing to any input: compressed earth tones, sanguine and sepia value structure, square-stick strokes, textured paper drag, and warm disciplined modeling. Keep archaeological restraint without requiring academy figures, portraits, anatomy plates, or antique sketchbooks.',
     },
   },
   {
@@ -282,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Precise, technical',
       key_features: 'Clean lines',
       creative_brief:
-        'Steel nib delivers ink with the precision of engineering, every line a measurement, every hatch a calculation. The drawing rejects atmosphere for accuracy, mistaking nothing for poetry. Beauty emerges from the discipline of the straightedge, emotion from the refusal to embellish.',
+        'Apply technical-pen precision to any input: uniform steel-nib lines, measured hatching, straightedge discipline, controlled line weights, and accuracy-first detail. Keep engineering clarity without requiring machinery, blueprints, architecture, labels, or diagrammatic annotations.',
     },
   },
   {
@@ -302,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Antique, delicate',
       key_features: 'Fine lines',
       creative_brief:
-        'Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over time, warming from grey into sepia, so the drawing appears to age inside its own surface. Every stroke should feel patient, exact, and almost irreversible.',
+        'Apply silverpoint discipline to any input: hairline metal marks, prepared ground texture, nearly irreversible contour, pale grey-to-sepia tarnish, and patient exact modeling. Keep Renaissance precision without requiring portrait studies, hands, drapery, religious subjects, or museum-paper framing.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

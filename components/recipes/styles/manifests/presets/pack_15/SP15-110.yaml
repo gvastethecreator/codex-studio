@@ -12,14 +12,14 @@ visualDna:
   color_palette: Mushroom beige, moss green, and twilight blue.
   lighting_setup: Gentle bioluminescent signal pulses and reflected plaza light.
   material_texture: Fungal surfaces, wet stone, and translucent growth membranes.
-  render_quality: Symbolic biotech cityscape with legible circulation.
+  render_quality: Symbolic biotech render with legible circulation and public spore-signal cues.
   spatial_distortion: Circular public-interface layout with branching signal arms.
   atmosphere: Communication, adaptation, and communal intelligence.
   key_features: Spore beacons, memory spores, public signal blooms, and branching interface petals.
   creative_brief: >-
-    Preserve spore signal-plaza grammar as a reusable style system:
-    fungal communication monuments, circular signal-civic choreography, and
-    communal adaptive intelligence should remain coherent across subjects.
+    Broadcast the input through spore civic intelligence: mushroom-beige rings,
+    moss signal petals, twilight-blue pulses, fungal surface texture, and
+    branching interface arms make any subject feel communicative and adaptive.
 avoidRules: [photoreal, horror, grimdark, watermark, text, logo, over-saturation]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-110.webp }
 attributes:

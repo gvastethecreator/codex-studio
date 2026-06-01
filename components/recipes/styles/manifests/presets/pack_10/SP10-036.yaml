@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Ghosting
   atmosphere: Psychological
   key_features: Silhouette container
-  creative_brief: Two realities occupying the same frame, a forest growing through a portrait's skull like memory colonizing consciousness. The self becomes a landscape, the landscape becomes a face, and neither takes priority.
+  creative_brief: Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as containers for a second visual field.
 avoidRules:
   - single image
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

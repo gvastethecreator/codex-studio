@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Intense, competitive, escalation-driven',
       key_features: 'Speed vectors, panel impact framing, energy-emphasis effects',
       creative_brief:
-        'Drive action through panel rhythm, value punch, and directional line force. Prioritize kinetic clarity and emotional intensity using bold black masses, screentone modulation, and perspective exaggeration that keeps movement readable at a glance.',
+        'Apply shonen manga action grammar to any input: bold black masses, screentone modulation, speed-line fields, impact burst geometry, and perspective exaggeration should make motion readable at a glance without requiring fighters, tournament beats, attacks, arenas, or a fixed action scene.',
     },
   },
   {
@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Outline-free form definition, portrait-grade facial modeling, painterly fabric rendering',
       creative_brief:
-        'Treat comic imagery as formal portrait painting: model form through nuanced value, edge temperature, and restrained color shifts. Preserve Alex Ross-style gravitas and Rockwell-like human realism while keeping composition adaptable across subjects and poses.',
+        'Apply painted graphic-novel gravitas to any input: nuanced value modeling, controlled edge temperature, gouache-like pigment, portrait-grade realism, and solemn spotlighting should create mythic human weight without requiring superheroes, capes, portraits, Americana, group tableaux, or fixed poses.',
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments',
       creative_brief:
-        'Design for continuous vertical reading rhythm. Balance expressive characters, high-contrast focal points, and spacing-driven pacing so emotion lands panel-to-panel without relying on fixed scene staging or single-shot composition tropes.',
+        'Apply vertical-scroll webtoon grammar to any input: mobile-first spacing, clean digital contours, saturated full color, beat gaps, and high-contrast focal stacking should create episode rhythm without requiring characters, romance beats, dialogue panels, phone UI, or fixed scene staging.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Action, classic, square-jawed heroism, serial cliffhanger',
       key_features: '4-color process, halftone pattern, speech balloon',
       creative_brief:
-        'The hero stands defiant against a sky of halftone dots, every line drawn with the conviction of an era that believed in absolutes. Colors pop with the unapologetic boldness of CMYK primaries, cheap paper texture bleeding through like newsprint nostalgia. This is visual storytelling at its most direct—no gradients, no subtlety, just pure graphic energy that hits like a Saturday morning revelation.',
+        'Apply golden-age comic grammar to the input: thick confident ink, Ben-Day dots, cheap newsprint texture and primary-color pulp optimism. If a hero or character exists, push defiant square-jawed energy; otherwise keep the four-color graphic force without forcing a heroic pose or sky backdrop.',
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Widescreen action composition, specular-driven suit rendering, flare-controlled highlights, decompressed-impact pacing',
       creative_brief:
-        'Keep this preset grounded in polished blockbuster-comic grammar: heroic silhouette clarity, dynamic light separation, and high-gloss action staging should define identity without dependence on any specific comic universe.',
+        'Keep this preset grounded in polished blockbuster-comic grammar: heroic silhouette clarity, dynamic light separation, high-gloss FX and widescreen impact should define identity without requiring a superhero, suit, fight scene or specific comic universe.',
     },
   },
   {
@@ -126,7 +126,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Curious, adventurous, lucid, observational',
       key_features: 'Zero hatching, stable line weight, readable architecture and props',
       creative_brief:
-        'Preserve absolute clarity in every mark: monoline contour, flat color fields, and legible staging. Keep compositions information-rich but visually calm, following the Hergé-derived Ligne Claire discipline where readability is the main expressive engine.',
+        'Apply Ligne Claire discipline to any input: uniform monoline contour, flat color fields, readable props, clear spatial logic, and noise-free staging should make clarity the expressive engine without requiring adventurers, vehicles, architecture, travel scenes, or a fixed European-comic setup.',
     },
   },
   {
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel cadence',
       creative_brief:
-        'Keep this preset anchored in silver-age cosmic action grammar: crackling energy-dot fields, optimistic interstellar scale, and aggressive foreshortened hero staging should define identity without naming any author.',
+        'Apply silver-age cosmic action grammar to any input: crackling energy-dot fields, atom-age burst halos, optimistic interstellar scale, and aggressive foreshortened panel rhythm should define identity without requiring heroes, capes, planets, battles, rockets, or a fixed cosmic scene.',
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tender, dreamy, introspective',
       key_features: 'Decorative overlays, ornamental borders, emotion-forward closeups',
       creative_brief:
-        'Emphasize emotional nuance through delicate line economy, soft tonal gradients, and ornamental composition cues. Keep visual flow gentle and lyrical, using decorative screentones and expressive close framing to prioritize intimacy over action impact.',
+        'Apply shojo manga emotional grammar to any input: delicate line economy, soft tonal gradients, decorative screentones, airy negative space, and lyrical close framing should prioritize intimacy without requiring romance, flowers, sparkles, faces, school scenes, or a fixed relationship setup.',
     },
   },
   {
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, menacing, tense, unforgiving, nocturnal',
       key_features: 'No greyscale, silhouette framing, white-out rim',
       creative_brief:
-        'Preserve identity through binary-light discipline: deep blacks, strategic white carve-outs, and silhouette verdicts should carry the narrative weight without leaning on named noir franchises or fixed alleyway scenes.',
+        'Apply binary noir comic discipline to any input: deep blacks, strategic white carve-outs, hard silhouette verdicts, dry ink grain, and zero-gray contrast should carry narrative weight without requiring alleys, detectives, violence, rain, city streets, or named noir-franchise staging.',
     },
   },
   {
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp graphic silhouettes',
       creative_brief:
-        'Treat this preset as a comic-language system: contrast hierarchy, duotone chroma control, and graphic noir shadow architecture should define identity without locking to a specific place.',
+        'Apply tech-noir comic language to any input: contrast hierarchy, cyan-magenta duotone control, reflective black planes, vapor diffusion bands, and sharp graphic silhouettes should define identity without locking to alleys, skylines, screens, vehicles, detectives, or any specific place.',
     },
   },
   {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Uncanny, claustrophobic, cosmic-anxious',
       key_features: 'Compulsive ink density, motif recursion, skin-to-pattern collapse',
       creative_brief:
-        'Build horror through accumulation and repetition. Maintain Junji Ito-like obsessive line discipline, recurring spiral/cavity logic, and controlled anatomical corruption so dread grows from pattern inevitability rather than fixed narrative location.',
+        'Apply obsessive horror manga grammar to any input: micro-line accumulation, spiral or cavity recursion, suffocating dark fields, and controlled anatomical or material corruption should grow dread from pattern inevitability without requiring bodies, villages, rooms, monsters, or fixed narrative location.',
     },
   },
   {
@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Vast, meditative, enigmatic, serene',
       key_features: 'Stipple gradients, expansive negative space, poetic architecture',
       creative_brief:
-        'Combine clean line precision with spacious, pastel sci-fi atmospheres in a Moebius-influenced manner. Favor contemplative scale, unusual architecture, and restrained contrast so imagery feels exploratory and dreamlike without anchoring to any single scene narrative.',
+        'Apply dreamline retro sci-fi comic grammar to any input: clean contour precision, stipple gradients, pastel atmospheres, organic-futurist forms, and vast contemplative scale should feel exploratory without requiring deserts, spacecraft, architecture, alien worlds, travelers, or one scene narrative.',
     },
   },
   {
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Subversive, satirical, abrasive, id-driven',
       key_features: 'Heavy hatch webs, warped panel borders, hyper-detailed clutter zones',
       creative_brief:
-        'Lean into restless hand energy and deliberate visual overload. Use crosshatch mass, unstable contour rhythm, and grotesque proportion shifts to maintain a R. Crumb-like underground comix attitude without locking the prompt to a specific scene setup.',
+        'Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable contour rhythm, grotesque proportion shifts, and abrasive print density should carry counterculture tension without requiring crowds, street satire, cluttered rooms, caricature figures, or a fixed scene setup.',
     },
   },
   {
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail',
       creative_brief:
-        'Treat resolution limits as style drivers. Build readable forms through pixel clustering, palette economy, and dithering strategy so compositions feel authentically retro while staying clear in both static comic frames and sprite-like action beats.',
+        'Apply retro pixel-comic constraints to any input: indexed palette economy, tile-grid alignment, cluster logic, hard aliasing, and deliberate dithering should drive readability without requiring game sprites, combat frames, platforms, UI, characters, or fixed 16-bit scenes.',
     },
   },
   {
@@ -318,7 +318,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fast, tech, prototype adrenaline, engineering cool',
       key_features: 'Perspective, technical form-language, callout detail',
       creative_brief:
-        'Keep this preset defined by vehicle-design grammar: aerodynamic surface logic, functional panel hierarchy, and material-response readability should drive identity without depending on a specific sci-fi model.',
+        'Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel hierarchy, studio highlight control, material separation, and engineering-forward silhouette should create mobility intent without requiring cars, spacecraft, wheels, cockpits, callouts, or a specific sci-fi model.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

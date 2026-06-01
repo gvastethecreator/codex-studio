@@ -12,16 +12,20 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Perfect burger ad
+  aesthetic: Hyper-appetizing food-ad CGI
   form_and_line: Juicy details
   color_palette: Saturated, fresh
   lighting_setup: Backlit steam
   material_texture: Wet, condensation, micro-droplets
-  render_quality: McDonalds fast-food hero ad, impossibly appetizing
+  render_quality: Fast-food hero-ad polish, impossibly appetizing
   spatial_distortion: Flying ingredients
   atmosphere: Delicious, hyperreal, crave-inducing
   key_features: Water droplets, steam wisps
-  creative_brief: 'Micro-droplets of condensation bead on a fresh tomato slice while steam wisps curl upward through backlit air — every ingredient is suspended at its peak of impossible freshness, flying lettuce and sesame seeds frozen mid-launch. The saturation is cranked to fast-food fantasy, wet surfaces glisten with appetite-engineered precision, and the image triggers a craving your stomach believes before your brain can object. This is hero-ad CGI at its most weaponized: food rendered more delicious than food could ever be.'
+  creative_brief: >-
+    Apply appetizing food-CGI craft to the input: macro compression, glossy
+    edible highlights, subsurface sauce-like glow, calibrated droplets and
+    crumb-level texture. If food exists, make it craveable; otherwise borrow
+    food-ad lighting/material richness without forcing burger ingredients.
 avoidRules:
   - rotten
   - dry

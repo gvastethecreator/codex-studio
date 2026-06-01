@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Flesh/Metal fusion
   atmosphere: Terrifying, sexual
   key_features: Ribbed pattern
-  creative_brief: Flesh and machine in unholy union, vertebrae becoming cable, ribcage becoming chassis. The organic surrenders to the mechanical with a dark intimacy that makes the viewer complicit in the fusion.
+  creative_brief: >-
+    Apply biomechanical fusion to the input: bone-like struts, cable tendons,
+    ribbed chassis forms, slick dark surfaces, and organic-machine seams should
+    make subjects feel engineered from anatomy without requiring a humanoid body.
 avoidRules:
   - clean
   - cute
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

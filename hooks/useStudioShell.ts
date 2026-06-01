@@ -4,7 +4,7 @@ import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
 import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
-import type { BackgroundConfig, RecipeId } from '../types';
+import type { RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import { useGlobal } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
@@ -38,12 +38,8 @@ export interface StudioShellController {
     onDragLeave: ReturnType<typeof useImageInputSurface>['handleDragLeave'];
     onDrop: ReturnType<typeof useImageInputSurface>['handleDrop'];
     onMainClick: () => void;
+    isUiChromeSuppressed: boolean;
   };
-  background: {
-    isGenerating: boolean;
-    activeModel: ReturnType<typeof useGeneration>['config']['generationConfig']['model'];
-    config: BackgroundConfig;
-  } | null;
   toasts: {
     items: ToastMessage[];
     onDismiss: (id: string) => void;
@@ -62,6 +58,7 @@ export interface StudioShellController {
   };
   generationDock: {
     isModalOpen: boolean;
+    isUiChromeSuppressed: boolean;
     currentView: AppPageView;
     activeRecipe: RecipeId | null;
     isDragging: boolean;
@@ -85,9 +82,6 @@ export function useStudioShell(): StudioShellController {
     activeWorkspaceId,
     setActiveWorkspace,
     resetStudioState,
-    isBackgroundEnabled,
-    setBackgroundEnabled,
-    bgConfig,
     toasts,
     removeToast,
     addToast,
@@ -407,8 +401,6 @@ export function useStudioShell(): StudioShellController {
               studioSettings.data.outputSourcesDomain.importOutputSourceFiles,
           },
           libraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
-          isBackgroundEnabled,
-          onToggleBackground: () => setBackgroundEnabled(!isBackgroundEnabled),
           onResetStudio: requestResetStudio,
           isResettingStudio,
         },
@@ -478,8 +470,6 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain,
       studioSettings.data.providerDomain,
       studioSettings.data.outputSourcesDomain,
-      isBackgroundEnabled,
-      setBackgroundEnabled,
       requestResetStudio,
       isResettingStudio,
       catalogVisualGroupCount,
@@ -573,8 +563,6 @@ export function useStudioShell(): StudioShellController {
           clearCompleted,
           isResting,
           exportLegacyVisualBatchSnapshot,
-          isBackgroundEnabled,
-          setBackgroundEnabled,
           activeServerJobCount: studioRuntime.activity.activeServerJobCount,
           onInspectJob: activitySession.selection.inspectJob,
           diagnostics: studioRuntime.status.diagnostics,
@@ -622,8 +610,6 @@ export function useStudioShell(): StudioShellController {
       clearCompleted,
       isResting,
       exportLegacyVisualBatchSnapshot,
-      isBackgroundEnabled,
-      setBackgroundEnabled,
       studioRuntime.activity.activeServerJobCount,
       activitySession.selection.inspectJob,
       studioRuntime.status.diagnostics,
@@ -773,6 +759,14 @@ export function useStudioShell(): StudioShellController {
     ui.setIsKeyPopoverOpen(false);
   }, [ui.setIsInteractingWithToolbar, ui.setIsKeyPopoverOpen]);
 
+  const isUiChromeSuppressed =
+    modal.isModalOpen ||
+    viewState.editor.isOpen ||
+    viewState.overlays.dashboard.isOpen ||
+    viewState.overlays.settings.isOpen ||
+    viewState.overlays.trash.isOpen ||
+    studioRuntime.onboarding.isOpen;
+
   return useMemo(
     (): StudioShellController => ({
       root: {
@@ -780,24 +774,21 @@ export function useStudioShell(): StudioShellController {
         onDragLeave: handleDragLeave,
         onDrop: handleDrop,
         onMainClick,
+        isUiChromeSuppressed,
       },
-      background: isBackgroundEnabled
-        ? {
-            isGenerating: pipeline.isGenerating,
-            activeModel: config.generationConfig.model,
-            config: bgConfig,
-          }
-        : null,
       toasts: {
         items: toasts,
         onDismiss: removeToast,
       },
       headerToolbar: {
-        isVisible: !modal.isModalOpen,
+        isVisible: !isUiChromeSuppressed,
         props: headerToolbarProps,
       },
       viewport: viewportController.viewport,
-      generationDock: viewportController.generationDock,
+      generationDock: {
+        ...viewportController.generationDock,
+        isUiChromeSuppressed,
+      },
       overlays: overlayController,
     }),
     [
@@ -805,13 +796,10 @@ export function useStudioShell(): StudioShellController {
       handleDragLeave,
       handleDrop,
       onMainClick,
-      isBackgroundEnabled,
+      isUiChromeSuppressed,
       pipeline.isGenerating,
-      config.generationConfig.model,
-      bgConfig,
       toasts,
       removeToast,
-      modal.isModalOpen,
       headerToolbarProps,
       viewportController,
       overlayController,

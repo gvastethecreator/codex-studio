@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-041
 packId: pack_07
-name: French Formal Garden
-category: 4. Landscape And Gardens
+name: Formal Topiary Axis
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - landscape-and-garden-systems
 visualDna:
-  aesthetic: Clasicismo paisajístico formal donde la geometría vegetal expresa poder, protocolo y orden territorial.
-  form_and_line: Eje central dominante, parterres espejados, allées perspectivos y jerarquía de focos por lámina de agua.
+  aesthetic: >-
+    Clasicismo paisajístico formal donde la geometría vegetal expresa poder, protocolo y orden
+    territorial.
+  form_and_line: >-
+    Eje central dominante, parterres espejados, allées perspectivos y jerarquía de focos por lámina
+    de agua.
   color_palette: Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone
-  lighting_setup: Sol plano de lectura planimétrica, dramatismo axial por sombras largas y destellos en nodos ceremoniales.
-  material_texture: Setos recortados milimétricos, grava rastrillada, piedra de fuente y césped de patrón controlado.
+  lighting_setup: >-
+    Sol plano de lectura planimétrica, dramatismo axial por sombras largas y destellos en nodos
+    ceremoniales.
+  material_texture: >-
+    Setos recortados milimétricos, grava rastrillada, piedra de fuente y césped de patrón
+    controlado.
   render_quality: Precisión de proyecto de paisaje con profundidad ceremonial y legibilidad topiaria estricta.
   spatial_distortion: None
   atmosphere: Ceremonial, monumental y disciplinada, con autoridad visual intencional.
-  key_features: Parterres bordados, planos de seto, reflejos axiales, nodos ceremoniales y puntos de control visual lejano.
+  key_features: >-
+    Parterres bordados, planos de seto, reflejos axiales, nodos ceremoniales y puntos de control
+    visual lejano.
   creative_brief: >-
-    Define una gramática de jardín formal transferible donde eje, simetría y
-    precisión topiaria manden la composición. Debe funcionar como arquitectura
-    horizontal con lectura clara tanto en planta como en perspectiva.
+    Cualquier sujeto debe someterse a eje, espejo y corte vegetal milimetrico. La imagen funciona
+    como arquitectura horizontal: protocolo, control visual lejano y topiaria precisa reemplazan
+    espontaneidad.
 avoidRules:
   - wild
   - messy
@@ -35,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-065
 packId: pack_07
-name: Paper Town
-category: 1. Residential Interiors
+name: Papercraft Diorama Construction
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,11 +10,13 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad de maqueta hecha a mano.
   form_and_line: Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad baja apilada.
-  color_palette: Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents
+  color_palette: >-
+    Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency,
+    and muted pigment accents
   lighting_setup: Key de mesa suave, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.
   material_texture: Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.
   render_quality: Miniatura artesanal de alta claridad con escala controlada y materialidad deliberadamente no fotoreal.
@@ -22,9 +24,11 @@ visualDna:
   atmosphere: Delicada, paciente y contemplativa, con ensamblaje manual explícito.
   key_features: Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.
   creative_brief: >-
-    Mantén una gramática papercraft transferible donde construcción planar
-    plegada, costuras visibles y profundidad de diorama definan identidad en
-    múltiples sujetos.
+    Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina,
+    sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano, no escena urbana obligatoria.
+    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - realistic
 assets:
@@ -34,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

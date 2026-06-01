@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Subversive, satirical, abrasive, id-driven
   key_features: Heavy hatch webs, warped panel borders, hyper-detailed clutter zones
   creative_brief: >-
-    Lean into restless hand energy and deliberate visual overload. Use crosshatch mass, unstable contour rhythm, and grotesque proportion shifts to maintain a R. Crumb-like underground comix attitude without locking the prompt to a specific scene setup.
+    Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable
+    contour rhythm, grotesque proportion shifts, and abrasive print density should carry
+    counterculture tension without requiring crowds, street satire, cluttered rooms, caricature
+    figures, or a fixed scene setup.
 avoidRules:
   - clean
   - mainstream

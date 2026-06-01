@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-064
 packId: pack_07
-name: Bespin Sunset Cloud Metropolis, carbon-freeze elegance, tibanna gas glow
-category: 1. Residential Interiors
+name: Aerostatic Cloud Retrofuture
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,35 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
   aesthetic: Retrofuturismo nuboso de gran altitud, entre lujo modernista y equilibrio aerostático sereno.
-  form_and_line: Plataformas circulares estratificadas, cubiertas aerodinámicas curvadas, aletas de aguja y anillos concéntricos suspendidos.
-  color_palette: Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne metallics, and cool silver edge highlights
-  lighting_setup: Ambiente difuso de horizonte, balizas suaves, backscatter cálido y bloom controlado en atmósfera de altura.
-  material_texture: Revestimiento de aleación satinada, piel compuesta pulida, vidrio de grano bajo y costuras de precisión.
-  render_quality: Arquitectura especulativa premium, legible a distancia y separada por capas atmosféricas elegantes.
-  spatial_distortion: Emphasize stacked floating tier depth, long vertical voids, and gentle perspective curvature without surreal deformation
+  form_and_line: >-
+    Plataformas circulares estratificadas, cubiertas aerodinámicas curvadas, aletas de aguja y
+    anillos concéntricos suspendidos.
+  color_palette: >-
+    Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne
+    metallics, and cool silver edge highlights
+  lighting_setup: >-
+    Ambiente difuso de horizonte, balizas suaves, backscatter cálido y bloom controlado en atmósfera
+    de altura.
+  material_texture: >-
+    Revestimiento de aleación satinada, piel compuesta pulida, vidrio de grano bajo y costuras de
+    precisión.
+  render_quality: >-
+    Arquitectura especulativa premium, legible a distancia y separada por capas atmosféricas
+    elegantes.
+  spatial_distortion: >-
+    Emphasize stacked floating tier depth, long vertical voids, and gentle perspective curvature
+    without surreal deformation
   atmosphere: Refinada, tranquila y aspiracional, con gracia tecnológica diplomática.
-  key_features: Jerarquía de plataformas concéntricas, domos terminales, aproximaciones balizadas y contorno metálico prístino.
+  key_features: >-
+    Jerarquía de plataformas concéntricas, domos terminales, aproximaciones balizadas y contorno
+    metálico prístino.
   creative_brief: >-
-    Define una gramática cloud-metropolis transferible de tiers flotantes,
-    atmósfera cálida de ocaso y superficies retrofuturistas pulidas, evitando
-    dependencia de una ciudad licenciada específica.
+    Define un retrofuturo aerostático transferible: tiers flotantes, superficies satinadas,
+    atmósfera de ocaso, balizas suaves y vacío vertical elegante. Debe sugerir altura y lujo
+    tecnológico sin depender de una ciudad licenciada.
 avoidRules:
   - ground
 assets:
@@ -34,11 +48,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

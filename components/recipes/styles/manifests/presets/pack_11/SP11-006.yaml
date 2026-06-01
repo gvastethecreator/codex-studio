@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Casual, temporary, rustic, creative, fleeting, nostalgic melancholy
   key_features: Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending
   creative_brief: >-
-    Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression.
+    Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge
+    transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply Chalkboard Art as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - paper
   - ink

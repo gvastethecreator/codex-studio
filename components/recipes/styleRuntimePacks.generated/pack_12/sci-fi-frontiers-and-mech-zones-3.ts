@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, oversaturated, low-detail',
     style: {
       aesthetic:
-        'Vehicular combat sandbox postapocalíptico con logística de convoy y combate de largo alcance en terreno abierto.',
+        'Gramática vehicular-combat postapocalíptica con desgaste logístico, siluetas mech/convoy y lectura de largo alcance.',
       subject_treatment:
-        'Unidades pesadas, escolta híbrida y clases de vehículo/mech diferenciadas por silueta funcional.',
+        'Si el input incluye personaje, objeto o criatura, mecanizarlo con indicios mech, blindaje, suspensión o escolta modular; si ya hay vehículo/mech, reforzar clase y función.',
       color_and_tone:
         'Ocre quemado, hierro oxidado y cielo de desecación extrema con contraste táctico mínimo.',
       lighting_and_shadow:
@@ -20,11 +20,13 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Metal corroído, lonas reparadas, caucho degradado y abrasión granular persistente.',
       camera_and_composition:
-        'Panorámica lateral de ruta con lectura de lanes, flank routes y amenazas de horizonte.',
+        'Encuadre ancho de ruta sugerida con lanes, flancos y amenazas de horizonte como lenguaje compositivo, no como desierto obligatorio.',
       atmosphere_and_mood:
         'Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.',
       rendering_and_quality:
         'Estilo faction-keyart con realismo estilizado y claridad de sistemas de movilidad/combate.',
+      creative_brief:
+        'Aplica Desert Mech Convoy como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -34,9 +36,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, warm-sunlight, lowres',
     style: {
       aesthetic:
-        'Sci-fi survival/maintenance en base lunar, centrado en crisis de sistemas, sellado de módulos y respuesta cooperativa.',
+        'Gramática sci-fi survival/maintenance con alarma roja, crisis de sistemas, sellado modular y respuesta cooperativa.',
       subject_treatment:
-        'Roles de engineer/medic/security con iconografía de herramienta y estados de emergencia legibles.',
+        'Convierte el input en asset de contingencia con engineer/medic/security si es personaje, o módulo reparable con iconografía de herramienta y estado de emergencia.',
       color_and_tone:
         'Blanco clínico frío, rojo alarma y sombras grafito para jerarquía de riesgo.',
       lighting_and_shadow:
@@ -44,7 +46,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Titanio cepillado, escarcha interior, juntas de caucho técnico y condensación por despresurización.',
       camera_and_composition:
-        'Corredor de fuga con puntos de cierre de compuerta y objetivos de reparación por etapas.',
+        'Profundidad claustrofóbica con compuertas, etapas de reparación y rutas de fuga sugeridas sin exigir corredor lunar.',
       atmosphere_and_mood: 'Claustrofobia operativa, urgencia técnica y heroísmo de contingencia.',
       rendering_and_quality:
         'Background de nivel con estándares de readability para hazards, rutas y objetivos de interacción.',
@@ -57,9 +59,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, dry-environment, low-detail',
     style: {
       aesthetic:
-        'Survival sci-fi submarino orientado a reparación, contención y extracción bajo presión estructural.',
+        'Gramática survival sci-fi submarina con presión estructural, reparación crítica, contención y extracción.',
       subject_treatment:
-        'Roles de diver/engineer/drone-support legibles por silueta y toolset funcional.',
+        'Aplica lectura diver/engineer/drone-support si el input admite rol; si no, convertirlo en sistema presurizado, herramienta o amenaza acuática legible.',
       color_and_tone:
         'Turquesa profundo, rojo alarma y acero azulado para jerarquía de riesgo ambiental.',
       lighting_and_shadow:
@@ -67,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Cristal fisurado, biofilm, juntas húmedas y panelado industrial saturado por agua.',
       camera_and_composition:
-        'Pasarela central con rutas de evacuación, nodos de reparación y hazards de ruptura.',
+        'Rutas de evacuación, nodos de reparación y hazards de ruptura como composición funcional sin exigir pasarela o instalación concreta.',
       atmosphere_and_mood:
         'Ansiedad de cuenta regresiva, claustrofobia acuática y disciplina operativa.',
       rendering_and_quality:
@@ -81,9 +83,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, chaotic-ui, low-contrast',
     style: {
       aesthetic:
-        'Tower-defense arcanotecnológico de bastión de tormenta con énfasis en control de rutas y sinergias modulares.',
+        'Gramática tower-defense arcanotecnológica con control de rutas, sinergias modulares, rayos y nodos conductores.',
       subject_treatment:
-        'Torres intercambiables por función (slow/burst/chain/support) con silueta y FX diferenciables.',
+        'Convierte el input en torre, nodo, criatura de oleada o módulo defensivo con función slow/burst/chain/support si corresponde.',
       color_and_tone:
         'Azul tormenta, plata y pulsos naranja para telegraphear estados de carga/descarga.',
       lighting_and_shadow:
@@ -91,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Piedra tallada, cobre conductor, runas activas y superficies quemadas por descarga.',
       camera_and_composition:
-        'Isométrica limpia con rutas enemigas, nodos de torre y áreas de upgrade claras.',
+        'Isométrica limpia con rutas, nodos y áreas de upgrade claras sin exigir bastión físico.',
       atmosphere_and_mood: 'Estratégica, tensa y metódica.',
       rendering_and_quality:
         'Gameplay-first visual con readability de pathing, timing y economía de defensa.',
@@ -104,9 +106,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grimdark, noisy',
     style: {
       aesthetic:
-        'Colony-builder orbital biofílico orientado a balance entre producción, sostenibilidad y expansión modular.',
+        'Gramática colony-builder orbital biofílica con producción modular, sostenibilidad, salud sistémica y expansión legible.',
       subject_treatment:
-        'Ingenieros ecológicos y drones agrícolas por función (siembra, mantenimiento, transporte).',
+        'Transforma el input en módulo, ingeniero ecológico, drone agrícola o cadena productiva visual con función clara.',
       color_and_tone:
         'Verdes vivos, blanco clínico y azul espacial para lectura de salud sistémica.',
       lighting_and_shadow:
@@ -114,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Paneles solares, vidrio curvo, sustrato húmedo y estructura compuesta de alta eficiencia.',
       camera_and_composition:
-        'Vista sectorial conectada con nodos de logística, energía y cultivo claramente jerarquizados.',
+        'Vista sectorial o modular con nodos de logística, energía y cultivo claramente jerarquizados sin exigir colonia visible.',
       atmosphere_and_mood:
         'Optimismo técnico, crecimiento metódico y gestión de riesgo controlada.',
       rendering_and_quality:
@@ -128,9 +130,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, grimdark, overfog',
     style: {
       aesthetic:
-        'Tower-defense rural sci-fi en huertos automatizados, orientado a defensa por carriles vivos y gestión de recursos.',
+        'Gramática tower-defense rural sci-fi con carriles vivos, automatización agrícola y economía de recursos.',
       subject_treatment:
-        'Drones agrícolas armados e ingenieros-campesinos con roles de soporte, control y daño.',
+        'Convierte el input en drone agrícola, torre, cultivo defensivo, ingeniero o unidad de oleada según su función visual.',
       color_and_tone:
         'Verdes vibrantes, naranja industrial y blanco solar para distinguir producción y combate.',
       lighting_and_shadow:
@@ -138,10 +140,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fruta cerosa, metal esmaltado, tierra húmeda y tubería de riego inteligente.',
       camera_and_composition:
-        'Corredores de cultivo como lanes defensivos con choke-points y nodos de upgrade.',
+        'Lanes defensivos, choke-points y nodos de upgrade; orchard y cultivo son anclas opcionales.',
       atmosphere_and_mood: 'Ingenio comunitario, urgencia agrícola y resistencia cooperativa.',
       rendering_and_quality:
         'Tower-defense visual fresco con legibilidad alta de oleadas, rango y estado estructural.',
+      creative_brief:
+        'Aplica Robot Orchard Defense como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -151,9 +155,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, fantasy-castle, muddy',
     style: {
       aesthetic:
-        'Sci-fi incident-response en laboratorio cuántico, centrado en contención, sellado y gestión de anomalías.',
+        'Gramática sci-fi incident-response con contención cuántica, sellado, anomalías y protocolos de crisis.',
       subject_treatment:
-        'Científicos de combate y entidades contenidas por nivel de riesgo claramente codificado.',
+        'Reinterpreta el input como científico de combate, anomalía, módulo de confinamiento o entidad codificada por nivel de riesgo.',
       color_and_tone:
         'Blanco clínico, violeta de fisura y azul hielo para lectura de estado de contención.',
       lighting_and_shadow:
@@ -161,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Vidrio blindado, cableado expuesto, holografía rota y módulos de confinamiento.',
       camera_and_composition:
-        'Núcleo central con anillos de contención y rutas de intervención por sector.',
+        'Núcleo, anillos de contención y rutas de intervención como estructura visual sin exigir laboratorio.',
       atmosphere_and_mood: 'Tensa, científica y caótica bajo protocolo.',
       rendering_and_quality:
         'Critical-incident gameplay art con claridad de niveles de amenaza, ruta y objetivo.',
@@ -174,8 +178,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
     style: {
       aesthetic:
-        'Mech-hunt táctico en bosque metálico vivo, centrado en rastreo de firmas, sigilo y captura selectiva.',
-      subject_treatment: 'Trackers con arcos electromagnéticos y roles de scout, trampa y remate.',
+        'Gramática mech-hunt táctica con rastreo de firmas, sigilo, captura selectiva y biomasa metálica viva.',
+      subject_treatment:
+        'Si el input contiene personaje/criatura, convertirlo en tracker o presa mech; si es objeto, darle firma electromagnética, trampa o weak point.',
       color_and_tone:
         'Verde óxido, cobre y azul eléctrico para señalizar biomasa sintética y actividad mecánica.',
       lighting_and_shadow:
@@ -183,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Troncado de aleación, cableado orgánico, barro conductor y depósitos de limadura.',
       camera_and_composition:
-        'Encuadre de acecho con presa al fondo y rutas de rodeo claramente legibles.',
+        'Acecho, presa, rodeo y ventana de ataque como composición sin exigir bosque.',
       atmosphere_and_mood: 'Silenciosa, precisa y de tensión incremental.',
       rendering_and_quality:
         'Hunting gameplay concept con claridad de firma objetivo, cobertura y ventana de ataque.',
@@ -196,9 +201,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, neon-city, noisy',
     style: {
       aesthetic:
-        'Open-world nomad-sci-fi de campamentos móviles sobre riel solar, enfocado en logística, ruta y supervivencia comunitaria.',
+        'Gramática open-world nomad-sci-fi con logística móvil, ruta solar, tecnología recuperada y comunidad itinerante.',
       subject_treatment:
-        'Clanes viajeros con tecnología recuperada y diferenciación visual por oficio itinerante.',
+        'Transforma el input en clan viajero, oficio itinerante, módulo de campamento, vehículo o nodo de recarga.',
       color_and_tone:
         'Amarillo solar, rojo óxido y azul polvoriento para mapear energía, desgaste y horizonte.',
       lighting_and_shadow:
@@ -206,10 +211,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Lona resistente, paneles reparados, madera recompuesta y metal reciclado.',
       camera_and_composition:
-        'Campamento semicircular junto a vías con zonas de comercio, taller y guardia.',
+        'Circulación, abastecimiento, taller y guardia como zonas visuales; campamento y riel son opcionales.',
       atmosphere_and_mood: 'Esperanzada, austera y resiliente.',
       rendering_and_quality:
         'Faction-worldbuilding gameplay art con lectura de circulación, abastecimiento y seguridad.',
+      creative_brief:
+        'Aplica Solar Rail Nomad Camp como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
     },
   },
   {
@@ -219,16 +226,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, underwater, lowres',
     style: {
       aesthetic:
-        'Skyforge prep-hub de monturas dracónicas, enfocado en loadout, mantenimiento y salida a campaña aérea.',
+        'Gramática skyforge prep-hub con monturas dracónicas, loadout, mantenimiento y salida aérea.',
       subject_treatment:
-        'Mecánicos alados y riders élite con lectura clara de rol técnico/combatiente.',
+        'Si el input contiene criatura o vehículo, darle arnés dracónico/forjado; si es personaje, rol rider/mecánico/combatiente.',
       color_and_tone: 'Azul cielo, acero y oro bruñido para jerarquía de facción y rango.',
       lighting_and_shadow:
         'Luz abierta de altura con humo de forja localizado en zonas de trabajo.',
       texture_and_material:
         'Escamas tratadas, remaches aeronáuticos, cuero reforzado y herrajes térmicos.',
       camera_and_composition:
-        'Plataforma elevada sobre vacío con líneas de tráfico aéreo y puntos de despliegue.',
+        'Puntos de despliegue, logística y líneas aéreas sin exigir dock o plataforma concreta.',
       atmosphere_and_mood: 'Épica, preparatoria y de anticipación bélica.',
       rendering_and_quality:
         'Premium faction gameplay art con claridad de logística, equipamiento y salida táctica.',

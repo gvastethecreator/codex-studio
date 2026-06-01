@@ -18,65 +18,16 @@ const STYLE_VISUAL_DNA_KEYS = [
   'rendering_and_quality',
 ] as const;
 
-interface StyleDefaultManifestEntry {
-  presetId?: unknown;
-  category?: unknown;
-}
-
 function normalizeStyleRuntimePreset(preset: StyleRuntimePreset): StyleRuntimePreset {
   const normalizedStyle = Object.fromEntries(
     STYLE_VISUAL_DNA_KEYS.map((key) => [key, preset.style[key]]),
   ) as StyleRuntimePreset['style'];
 
-  const normalizedCategory = STYLE_DEFAULT_CATEGORY_BY_PRESET_ID.get(preset.id);
-
   return {
     ...preset,
     style: normalizedStyle,
-    ...(normalizedCategory ? { category: normalizedCategory } : {}),
   };
 }
-
-type ImportMetaGlobFn = (
-  pattern: string,
-  options: { eager: true; import: 'default' },
-) => Record<string, unknown>;
-
-function safeImportMetaGlob(pattern: string): Record<string, unknown> {
-  const glob = (import.meta as ImportMeta & { glob?: ImportMetaGlobFn }).glob;
-  if (typeof glob === 'function') {
-    return glob(pattern, {
-      eager: true,
-      import: 'default',
-    });
-  }
-  return {};
-}
-
-const styleDefaultManifestFiles = safeImportMetaGlob(
-  '../../assets/recipes/styles/defaults/manifest-pack_*.json',
-);
-
-function isNonEmptyString(value: unknown): value is string {
-  return typeof value === 'string' && value.trim().length > 0;
-}
-
-function createStyleDefaultCategoryByPresetId() {
-  const categoryByPresetId = new Map<string, string>();
-
-  for (const manifestContent of Object.values(styleDefaultManifestFiles)) {
-    if (!Array.isArray(manifestContent)) continue;
-
-    for (const entry of manifestContent as StyleDefaultManifestEntry[]) {
-      if (!isNonEmptyString(entry.presetId) || !isNonEmptyString(entry.category)) continue;
-      categoryByPresetId.set(entry.presetId, entry.category);
-    }
-  }
-
-  return categoryByPresetId;
-}
-
-const STYLE_DEFAULT_CATEGORY_BY_PRESET_ID = createStyleDefaultCategoryByPresetId();
 
 function normalizeStyleRuntimePack(pack: StyleRuntimePack): StyleRuntimePack {
   return {

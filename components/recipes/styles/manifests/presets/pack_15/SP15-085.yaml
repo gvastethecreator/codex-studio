@@ -12,14 +12,14 @@ visualDna:
   color_palette: Brass gold, emerald, and cream.
   lighting_setup: Sunlight filtered through clockwork glass.
   material_texture: Filigree metal, cut glass, and polished wood.
-  render_quality: Delicate conceptual illustration with rich decorative detail.
+  render_quality: Delicate ornamental render with rich decorative detail and clockwork-botanical readability.
   spatial_distortion: Circular growth rings around a timer-axis focal point.
   atmosphere: Patient elegance and mechanical gentleness.
   key_features: Clock vines, pendulum sprinkler motifs, gear-petal blooms, and time-wound growth patterns.
   creative_brief: >-
-    Preserve gilded gear-conservatory grammar as a reusable style system:
-    ornamental horological botany, brass filigree growth mechanics, and
-    patient eco-temporal elegance should remain coherent across subjects.
+    Wind the input into gilded horological botany: brass ribs, gear-petal blooms,
+    emerald clock vines, pendulum sprinkler marks, and filtered clockwork glass
+    make any subject feel patiently grown by mechanism.
 avoidRules: [photoreal, cyberpunk, industrial-grunge, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-085.webp }
 attributes:

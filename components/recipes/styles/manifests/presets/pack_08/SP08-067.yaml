@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Bulky
   atmosphere: Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire
   key_features: Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers
-  creative_brief: Air-filled domes clustering across a bodice like a diagram of molecule bonds rendered in translucent polyethylene, each bubble catching studio light in a tiny convex mirror that distorts the world into a thousand miniature self-portraits. The crinkle of the film promises the satisfaction of a pop that never comes, the dress hovering between packaging material and sculpture, between joke and revelation.
+  creative_brief: >-
+    Bubble-wrap the input with translucent domes, heat-sealed grids, crinkle
+    film, convex highlights and inflated cushion volume. Keep pop-art absurdity
+    without requiring bodice, dress sculpture, packaging joke or gallery object.
 avoidRules:
   - fabric
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

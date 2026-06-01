@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sacred, still, suspended, revelation moment
   key_features: Visible beams, dust motes, shaft geometry, particulate haze
-  creative_brief: 'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material.'
+  creative_brief: >-
+    Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative
+    space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into
+    the main cinematic material. Apply God Rays as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - clear air
 assets:

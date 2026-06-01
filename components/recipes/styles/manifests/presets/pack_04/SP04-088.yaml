@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Expansive, exploratory, pre-production wonder
   key_features: Big-shape hierarchy, focal light anchor, layered recession planes, thumbnail legibility
   creative_brief: >-
-    Establish believable world scale quickly through large compositional masses and atmospheric depth cues. Keep detail intentionally suppressed so light direction, silhouette hierarchy, and distance layering carry the full environmental read at small viewing sizes, blending Feng Zhu-style blockout efficiency with James Gurney-like atmospheric logic.
+    Apply rough environment-pass rendering to any input: broad value blocking, atmospheric depth, macro-shape staging,
+    haze layers, painterly edge economy, and quick world-building texture. If no place exists, convert the prompt into
+    environmental mood abstraction without requiring a landscape, building, or location.
 avoidRules:
   - detailed
   - finished

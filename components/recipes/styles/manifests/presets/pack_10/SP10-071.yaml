@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Cracked
   atmosphere: Healing, beautiful
   key_features: Gold veins
-  creative_brief: The break becomes the most valuable part, gold lacquer filling cracks like rivers of light across a shattered landscape. Damage is not hidden but celebrated, the object made more beautiful by having survived its own destruction.
+  creative_brief: Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered landscape.
 avoidRules:
   - perfect
   - new
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

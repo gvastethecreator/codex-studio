@@ -20,9 +20,15 @@ visualDna:
   render_quality: Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second
   spatial_distortion: Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature
   atmosphere: Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty
-  key_features: Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp
+  key_features: >-
+    Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat,
+    background-reflection warp
   creative_brief: >-
-    Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits.
+    Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical
+    membrane behavior. Keep iridescent transience and optical delicacy as portable style traits. Apply Soap Bubble as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - popped
 assets:

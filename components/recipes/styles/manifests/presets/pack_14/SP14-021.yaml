@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-021
 packId: pack_14
-name: Griot Star Courtyard
+name: Griot Star Memory Ring
 category: 6. Mythic — African Cosmologies
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, african-myth]
 visualDna:
-  aesthetic: West African epic memory-space where cosmic lineage and oral history intertwine.
-  form_and_line: Circular storyteller courts, carved totem columns, and braided canopy geometries.
+  aesthetic: West African epic memory language where cosmic lineage and oral history intertwine.
+  form_and_line: Circular storyteller cues, carved column rhythms, and braided canopy geometries.
   color_palette: Indigo night, clay ochre, and brass sunlight.
   lighting_setup: Fire bowl halos and starlit rim light defining communal rings.
   material_texture: Packed earth, carved hardwood, dyed textiles, and hammered brass ornaments.
   render_quality: Rich cinematic concept art with narrative clarity and cultural gravitas.
   spatial_distortion: Concentric gathering layout emphasizing voice, rhythm, and collective focus.
   atmosphere: Ancestral dignity, call-and-response memory, and cosmic continuity.
-  key_features: Griot dais, talking drum circle, constellation wall map, and mask alcoves.
-  creative_brief: A mythic courtyard where songs preserve the architecture of the heavens.
+  key_features: Griot dais cues, talking drum circle, constellation map marks, mask-alcove silhouettes.
+  creative_brief: Recast the input through griot star memory, where song preserves cosmic lineage without requiring a courtyard.
 avoidRules: [photoreal, caricature, generic-tribal-cliche, sci-fi-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-021.webp }
 attributes:
   negativePrompt: photoreal, caricature, generic-tribal-cliche, sci-fi-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-african-cosmologies,
+    categoryName: 6. Mythic — African Cosmologies,
+    tags: [mythic-noir-curated-vault, mythic, african-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

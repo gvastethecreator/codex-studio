@@ -17,11 +17,17 @@ visualDna:
   color_palette: Grey, White
   lighting_setup: Backlit
   material_texture: Sticky, dusty
-  render_quality: Haunted house, old
+  render_quality: Aged, abandoned
   spatial_distortion: Drape
   atmosphere: Spooky, abandoned
   key_features: Messy strands
-  creative_brief: Render the dusty drapery of abandoned cobwebs where chaotic strands of grey silk hang in messy veils, catching dead light and dead insects with equal indifference in their sticky architecture of neglect. The fine strands should catch backlight like silver thread while shadows pool in the gathered dust at intersections. Capture the beauty of abandonment, architecture built by spiders long departed.
+  creative_brief: >-
+    Render cobweb material as dusty filament architecture over the input: chaotic grey silk strands, messy draped veils,
+    sticky intersections, backlit silver thread, and dust gathered where lines meet. If corner, object, ruin, or
+    creature context exists, let webs cling to it; otherwise use cobwebs as aged overlay without forcing haunted-house
+    staging. Use Cobweb as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - spider web (neat)
 assets:

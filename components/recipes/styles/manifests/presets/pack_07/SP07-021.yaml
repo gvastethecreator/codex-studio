@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-021
 packId: pack_07
 name: Deconstructivism
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Deconstructivismo de inestabilidad controlada, tensión escultórica y rechazo deliberado de la ortogonalidad.
-  form_and_line: Planos plegados, intersecciones fracturadas, ejes desplazados y envolvente no lineal en conflicto ordenado.
+  aesthetic: >-
+    Deconstructivismo de inestabilidad controlada, tensión escultórica y rechazo deliberado de la
+    ortogonalidad.
+  form_and_line: >-
+    Planos plegados, intersecciones fracturadas, ejes desplazados y envolvente no lineal en
+    conflicto ordenado.
   color_palette: Titanio/ acero cepillado, minerales cálidos secundarios y reflejos especulares contenidos.
   lighting_setup: Cortes de sombra angulares, destellos especulares y contraste dinámico sobre facetas múltiples.
-  material_texture: Piel metálica segmentada, panelería zinc-titanio, vidrio de alto brillo y detalle de junta de precisión.
+  material_texture: >-
+    Piel metálica segmentada, panelería zinc-titanio, vidrio de alto brillo y detalle de junta de
+    precisión.
   render_quality: Visualización escultórica de alta gama con anti-simetría legible y coherencia tectónica.
   spatial_distortion: Dislocación geométrica intencional con vectores de torsión y perspectiva en tensión.
   atmosphere: Cerebral, provocadora, energética y desestabilizante.
-  key_features: Composición anti-ángulo recto, pliegues dominantes, volúmenes desplazados y coreografía de masa cinética.
+  key_features: >-
+    Composición anti-ángulo recto, pliegues dominantes, volúmenes desplazados y coreografía de masa
+    cinética.
   creative_brief: >-
-    Establece una gramática deconstructiva transferible: conflicto geométrico
-    controlado, piel metálica plegada y desorientación espacial calculada.
-    Debe sostener identidad formal sin depender de arquitectos o hitos concretos.
+    Establece una gramática deconstructiva transferible: conflicto geométrico controlado, piel
+    metálica plegada y desorientación espacial calculada. Debe sostener identidad formal sin
+    depender de arquitectos o hitos concretos.
 avoidRules:
   - box
   - symmetrical
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

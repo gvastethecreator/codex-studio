@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-072
 packId: pack_14
-name: Fjord Rune Harbor
+name: Fjord Rune Navigation
 category: 8. Mythic — Norse Sagas
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, norse-myth]
 visualDna:
-  aesthetic: Strategic fjord harbor marked by giant rune breakwaters.
-  form_and_line: Narrow piers, carved sea walls, and mast forests.
+  aesthetic: Fjord rune navigation where currents and prophecy govern movement.
+  form_and_line: Narrow pier cues, carved sea walls, and mast forests.
   color_palette: Cold teal, slate gray, and brass firelight.
   lighting_setup: Clouded dawn and signal pyre highlights.
   material_texture: Wet timber, ice spray, and rough stone.
   render_quality: Maritime myth concept with layered depth.
   spatial_distortion: Fjord tunnel perspective toward horizon fog.
   atmosphere: Tactical calm and tidal menace.
-  key_features: Rune docks, war drakkars, and beacon towers.
-  creative_brief: A Norse port where navigation follows both currents and prophecy.
+  key_features: Rune dock cues, war drakkars, beacon towers.
+  creative_brief: Transform the input through fjord rune navigation, following currents and prophecy without requiring a port.
 avoidRules: [photoreal, cartoon, neon-signage, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-072.webp }
 attributes:
   negativePrompt: photoreal, cartoon, neon-signage, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-norse-sagas,
+    categoryName: 8. Mythic — Norse Sagas,
+    tags: [mythic-noir-curated-vault, mythic, norse-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

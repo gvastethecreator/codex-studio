@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Professional, studio, fast-turnaround
   key_features: Fast blur, out-of-core rendering
-  creative_brief: 'Speed and beauty converge in a renderer that knows exactly which corners to cut without leaving a trace — caustics cascade through photon-mapped precision while soft shadows pool like spilled ink. Redshift''s biased genius lies in choosing its battles: flawless blur, noise-free interiors, production-ready frames delivered at the pace of creative impulse. The result is broadcast-ready clarity, a signal unblemished by hesitation.'
+  creative_brief: >-
+    Speed and beauty converge in a renderer that knows exactly which corners to cut without leaving a trace — caustics
+    cascade through photon-mapped precision while soft shadows pool like spilled ink. Redshift's biased genius lies in
+    choosing its battles: flawless blur, noise-free interiors, production-ready frames delivered at the pace of creative
+    impulse. The result is broadcast-ready clarity, a signal unblemished by hesitation. Apply Redshift Biased GPU
+    Renderer as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - photo
   - drawing

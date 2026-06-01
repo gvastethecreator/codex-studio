@@ -5,67 +5,71 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP14-030',
-    name: 'Feathered Eclipse Causeway',
+    name: 'Feathered Eclipse Continuity',
     category: '9. Mythic — Mesoamerican Suns',
     negativePrompt:
       'photoreal, caricature, futuristic-neon, steampunk-gears, watermark, text, logo',
     style: {
       aesthetic:
-        'Mesoamerican ceremonial axis under an eclipse interpreted as divine recalibration.',
-      form_and_line: 'Stepped pyramids, serpent balustrades, and rhythmic processional plazas.',
+        'Feathered eclipse continuity where celestial shadow becomes divine recalibration.',
+      form_and_line:
+        'Stepped pyramid cues, serpent balustrades, and rhythmic processional plaza geometry.',
       color_palette: 'Obsidian black, jade green, and blood-sun crimson.',
       lighting_setup: 'Eclipse corona backlight with torchline highlights on carved reliefs.',
       material_texture:
         'Volcanic stone, painted stucco, feathered standards, and polished jade inserts.',
       render_quality: 'Monumental concept art with clear symbolic focal hierarchy.',
-      spatial_distortion: 'Long axial perspective linking solar altar to horizon temple tiers.',
+      spatial_distortion: 'Long axial perspective linking solar altar cues to horizon tiers.',
       atmosphere: 'Cosmic urgency, civic ritual, and awe under celestial shadow.',
       key_features:
-        'Feathered serpent motifs, eclipse disk, ritual stairways, and codex wall panels.',
+        'Feathered serpent motifs, eclipse disk, ritual stairway cues, abstract codex wall panels.',
       creative_brief:
-        'A sacred causeway where priests and citizens negotiate continuity through eclipse rites.',
+        'Recast the input through feathered eclipse continuity, negotiating survival through celestial recalibration without requiring a causeway.',
     },
   },
   {
     id: 'SP14-031',
-    name: 'Cenote of Jade Echoes',
+    name: 'Jade Cenote Echo Reading',
     category: '9. Mythic — Mesoamerican Suns',
     negativePrompt: 'photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo',
     style: {
-      aesthetic: 'Subterranean sacred water chamber where offerings mirror celestial cycles.',
-      form_and_line: 'Circular sinkhole terraces, suspended bridges, and carved niche sanctuaries.',
+      aesthetic:
+        'Jade cenote echo reading where sacred water mirrors celestial cycles and ancestral memory.',
+      form_and_line:
+        'Circular sinkhole cue terraces, suspended bridge lines, and carved niche sanctuaries.',
       color_palette: 'Deep jade, limestone beige, and moonlit silver.',
       lighting_setup: 'Overhead shaft light and candle flotillas reflecting on black water.',
       material_texture: 'Wet limestone, jade beads, woven fiber cords, and mineral deposits.',
       render_quality: 'Atmospheric exploration matte with strong depth and iconographic detail.',
       spatial_distortion:
-        'Vertical shaft composition descending from open sky to hidden altar basin.',
+        'Vertical shaft composition descending from open sky to hidden water core.',
       atmosphere: 'Reverent quiet, ancestral memory, and liquid mystery.',
-      key_features: 'Cenote altar raft, offering steps, serpent glyph walls, and echo chambers.',
-      creative_brief: 'A ritual cenote where each reflection is read as a message from old suns.',
+      key_features: 'Cenote altar cues, offering steps, serpent glyph walls, echo chamber traces.',
+      creative_brief:
+        'Apply jade cenote echo reading to the input, making reflection feel like message from old suns without requiring a chamber.',
     },
   },
   {
     id: 'SP14-032',
-    name: 'Obsidian Ballcourt Oath',
+    name: 'Obsidian Ballcourt Solar Oath',
     category: '9. Mythic — Mesoamerican Suns',
     negativePrompt:
       'photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo',
     style: {
-      aesthetic: 'Sacred ceremonial court where sport, sacrifice, and cosmic order intersect.',
-      form_and_line: 'Sloped stone walls, ring markers, and strict bilateral field geometry.',
+      aesthetic:
+        'Obsidian ballcourt solar oath where contest, sacrifice, and cosmic order intersect.',
+      form_and_line: 'Sloped stone wall cues, ring markers, and strict bilateral field geometry.',
       color_palette: 'Obsidian black, dusty ochre, and ceremonial turquoise.',
       lighting_setup: 'Low golden dusk with brazier flares at cardinal stations.',
       material_texture:
         'Chipped volcanic stone, lime plaster paint, braided leather, and shell inlay.',
       render_quality: 'Narrative action tableau with disciplined architectural readability.',
       spatial_distortion:
-        'Stadium perspective emphasizing ritual spectatorship and central contest space.',
+        'Stadium-like perspective emphasizing ritual spectatorship and central contest tension.',
       atmosphere: 'Competitive solemnity, civic spectacle, and metaphysical stakes.',
-      key_features:
-        'Ballcourt rings, priestly terraces, war banners, and eclipse scoreboard stele.',
+      key_features: 'Ballcourt rings, priestly terrace cues, war banners, eclipse stele.',
       creative_brief:
-        'A mythic court where victory is interpreted as alignment with solar destiny.',
+        'Reinterpret the input through obsidian ballcourt solar oath, where victory reads as alignment with solar destiny without requiring a court.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

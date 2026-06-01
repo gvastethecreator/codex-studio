@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Beat-em-up urbano neon-noir con combate por oleadas, control de espacio y flow rítmico.
-  subject_treatment: Gangs estilizadas y protagonistas iconográficos con lectura de rol por postura y arma improvisada.
+  aesthetic: Gramática beat-em-up neon-noir con combate por oleadas, control de espacio, hit-confirm claro y flow rítmico.
+  subject_treatment: Aplica postura de luchador, arma improvisada, rivalidad de facción o silueta de crowd-control al input si corresponde.
   color_and_tone: Fucsia, verde ácido y grafito para contraste de facción y claridad de impacto.
   lighting_and_shadow: Luces rotas, charcos reflectivos y contraluces que enfatizan silueta de combate.
   texture_and_material: Hormigón mojado, graffiti táctico, tuberías metálicas y señalética decadente.
-  camera_and_composition: Side-view clásico con capas activas, entradas laterales y zonas de combo.
+  camera_and_composition: Side-view clásico, capas activas y zonas de combo como lenguaje visual sin exigir underpass.
   atmosphere_and_mood: Energía callejera, agresiva y cadenciosa.
   rendering_and_quality: Stage-art jugable con legibilidad de hit confirms, crowd control y desplazamiento lateral.
 avoidRules:

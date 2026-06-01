@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Industrial, cheap
   key_features: Random chips
-  creative_brief: Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments.
+  creative_brief: >-
+    Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field
+    of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface
+    should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture
+    the accidental beauty of the cheap, structure assembled from forest fragments. Use OSB Board as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
+    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
+    or scene where the material naturally appears.
 avoidRules:
   - plywood
 assets:

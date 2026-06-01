@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Stylized shapes
   atmosphere: Energetic, contemporary
   key_features: Opaque paint layers
-  creative_brief: Plastic pigment sits proud on the surface, unapologetic in its opacity, drying faster than thought. Every flat plane announces itself with synthetic confidence, color refusing to blend where boundaries are meant to hold. The image crackles with contemporary energy, modern in spirit and material truth.
+  creative_brief: >-
+    Apply modern acrylic-paint logic to any input: fast-drying opaque color,
+    crisp blocked planes, synthetic pigment density, visible plastic surface
+    body, and bright contemporary contrast. Keep modern studio energy without
+    requiring canvas panels, abstract walls, or gallery installation context.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

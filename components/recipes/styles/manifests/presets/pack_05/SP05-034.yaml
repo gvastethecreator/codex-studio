@@ -13,18 +13,23 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Heroic optimism action style with emblematic costume coding, uplifted momentum, and bright civic-spectacle energy
-  form_and_line: Clean heroic contour grammar, readable emblem silhouettes, impact arcs with celebratory pose punctuation, comic-influenced line confidence
+  form_and_line: >-
+    Clean heroic contour grammar, readable emblem silhouettes, impact arcs with celebratory pose punctuation,
+    comic-influenced line confidence
   color_palette: Primary-forward chroma with high-key accents, disciplined shadow saturation, and motivational contrast hierarchy
   lighting_setup: Broadcast-bright keys, triumphant backlight halos, crowd-energy bloom, and crisp highlight framing for iconic poses
-  material_texture: Polished suit surfaces, effect particles with clean edge control, low-noise digital compositing, high-legibility finish
+  material_texture: >-
+    Polished suit surfaces, effect particles with clean edge control, low-noise digital compositing, high-legibility
+    finish
   render_quality: Blockbuster modern-anime polish tuned for inspirational action clarity and poster-grade frame readability
   spatial_distortion: Dynamic but orderly foreshortening and perspective thrust to amplify heroic ascent without chaos blur
   atmosphere: Aspirational, kinetic, uplifting, confident, bold
   key_features: Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar
   creative_brief: >-
-    Keep the preset anchored in optimistic hero readability: emblematic
-    silhouettes, high-key motivational color logic, and celebratory impact
-    staging should stay transferable beyond any institution or arena narrative.
+    Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic,
+    and celebratory impact staging should stay transferable beyond any institution or arena narrative. Apply this
+    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic,
+    and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-034.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

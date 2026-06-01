@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Analytical, didactic, workshop-reference clarity
   key_features: Swatch matrix, labeled material zones, detail zooms, controlled comparison framework
   creative_brief: >-
-    Present surface behavior as a system, not decoration. Pair a clean base design with labeled texture and finish callouts so each material choice is legible, comparable, and production-actionable across multiple manufacturing or rendering interpretations.
+    Apply material-texture exploration-sheet logic to any input: surface swatches, edge tests, wear patterns,
+    reflectance notes as visual marks, close-up inserts, and material contrast. It can stylize objects, characters,
+    spaces, or abstractions without requiring labels, a product board, or literal texture samples.
 avoidRules:
   - uniform
   - single material

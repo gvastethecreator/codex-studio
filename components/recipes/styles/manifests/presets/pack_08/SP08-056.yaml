@@ -15,13 +15,18 @@ visualDna:
   aesthetic: Slip dress, boudoir-elegance minimalism, liquid-light sensuality
   form_and_line: Fluid drape, bias-cut column, cowl-neck waterfall, spaghetti-strap line, floor-grazing hem
   color_palette: Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald
-  lighting_setup: Soft sheen, candlelight ripple, vanity-bulb warmth, afternoon-window silk glow
+  lighting_setup: Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll
   material_texture: Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette
   render_quality: Elegant, soft, boudoir-editorial luxury, light-caught-on-fabric poetry
   spatial_distortion: None
-  atmosphere: Sensual, expensive, bedroom-secret intimacy, champagne-bubble delicacy, silk-against-skin luxury
+  atmosphere: Sensual, expensive, champagne-bubble delicacy, liquid-fabric luxury
   key_features: Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement
-  creative_brief: Charmeuse pooling like spilled champagne across collarbones, the bias cut following gravity's argument with the body down to a hem that sweeps the floor in a whisper. Candlelight ripples across the surface in slow liquid waves, each fold a study in the physics of light meeting fiber spun by worms and woven into the closest thing a garment can get to being a second atmosphere.
+  creative_brief: >-
+    Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin ripples and
+    champagne specular highlights. Keep boudoir luxury as mood only; avoid bedroom scenes, collarbones, body cling or
+    fixed slip-dress framing. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette
+    logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop,
+    role, or fixed character scene.
 avoidRules:
   - rough
   - matte
@@ -42,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-058
 packId: pack_07
-name: Crystal Spire
-category: 1. Residential Interiors
+name: Prismatic Mineral Megastructure
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Megaestructura cristalina de crecimiento geológico y futurismo mineral monolítico.
   form_and_line: Apilamientos facetados verticales, haces hexagonales y convergencias prismáticas hacia ápice agudo.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Quietud luminosa, asombro frío y elegancia mineral de otro mundo.
   key_features: Planos facetados refractivos, núcleos translúcidos, silueta de aguja prismática y estratos de brillo interno.
   creative_brief: >-
-    Construye una gramática cristalina transferible donde geometría facetada,
-    masa translúcida y dispersión óptica sostengan la identidad. Debe conservar
-    lógica geológica reutilizable en contextos fantasy o sci-fi.
+    Haz que el estilo nazca de óptica mineral: masa facetada, crecimiento cristalino, refracción interna y color
+    espectral disciplinado. Funciona sobre arquitectura, objeto, personaje o paisaje sin obligar una aguja única. Apply
+    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - brick
   - wood
@@ -35,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

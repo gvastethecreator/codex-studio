@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Sci-fi survival/maintenance en base lunar, centrado en crisis de sistemas, sellado de módulos y respuesta cooperativa.
-  subject_treatment: Roles de engineer/medic/security con iconografía de herramienta y estados de emergencia legibles.
+  aesthetic: Gramática sci-fi survival/maintenance con alarma roja, crisis de sistemas, sellado modular y respuesta cooperativa.
+  subject_treatment: Convierte el input en asset de contingencia con engineer/medic/security si es personaje, o módulo reparable con iconografía de herramienta y estado de emergencia.
   color_and_tone: Blanco clínico frío, rojo alarma y sombras grafito para jerarquía de riesgo.
   lighting_and_shadow: Strobes de emergencia, paneles duros y zonas oscuras de fallo energético.
   texture_and_material: Titanio cepillado, escarcha interior, juntas de caucho técnico y condensación por despresurización.
-  camera_and_composition: Corredor de fuga con puntos de cierre de compuerta y objetivos de reparación por etapas.
+  camera_and_composition: Profundidad claustrofóbica con compuertas, etapas de reparación y rutas de fuga sugeridas sin exigir corredor lunar.
   atmosphere_and_mood: Claustrofobia operativa, urgencia técnica y heroísmo de contingencia.
   rendering_and_quality: Background de nivel con estándares de readability para hazards, rutas y objetivos de interacción.
 avoidRules:

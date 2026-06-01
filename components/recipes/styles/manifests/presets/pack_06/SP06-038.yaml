@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Night, dramatic
   key_features: Rich blacks
-  creative_brief: A copper plate textured entirely with microscopic teeth, then burnished smooth where light must emerge from absolute darkness. Velvet blacks cradle highlights so delicate they seem to float above the surface. The image is born from subtraction — light scraped into being from a field of ink.
+  creative_brief: >-
+    Apply mezzotint darkness to any input: rocked-plate grain, velvet black
+    fields, burnished highlights, smoky tonal transitions, and light scraped out
+    of ink. Keep nocturnal print depth without requiring portraits, interiors,
+    candles, old-master subjects, or antique framing.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

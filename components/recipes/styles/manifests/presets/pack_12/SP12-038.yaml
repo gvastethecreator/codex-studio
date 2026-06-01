@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Naval tactics de escaramuza en arrecifes metálicos, orientado a maniobra, control de ruta y fuego cruzado.
-  subject_treatment: Fragatas ligeras y corbetas de asalto diferenciadas por perfil de alcance y movilidad.
+  aesthetic: Gramática naval-tactics de escaramuza con maniobra, bloqueo de ruta, fuego cruzado y vectores de alcance.
+  subject_treatment: Transforma el input en fragata, corbeta, obstáculo, vector táctico o estructura marina armada.
   color_and_tone: Azul acero, espuma blanca y rojo señal para lectura de aliados, daño y alerta.
   lighting_and_shadow: Cielo cubierto con reflejos marinos fríos y destellos de artillería.
   texture_and_material: Planchas húmedas, cabos tensos, óxido salino y oleaje áspero de alta fricción.
-  camera_and_composition: Vista amplia con corredores de flanqueo, zonas de bloqueo y puntos de emboscada.
+  camera_and_composition: Vista amplia con corredores de flanqueo, bloqueo y emboscada sin exigir arrecife o mar literal.
   atmosphere_and_mood: Tensa, táctica y dominada por control marítimo.
   rendering_and_quality: Naval map strategy-first con legibilidad de vectores, alcance y prioridades de objetivo.
 avoidRules:

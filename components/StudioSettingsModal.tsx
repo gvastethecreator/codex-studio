@@ -8,7 +8,6 @@ import {
   RotateCcw,
   Save,
   Settings,
-  Sparkles,
   Upload,
   X,
 } from 'lucide-react';
@@ -52,8 +51,6 @@ interface StudioSettingsModalProps {
   isRegisteringOutputSource: boolean;
   importingOutputSources: Record<string, boolean>;
   error: string | null;
-  isBackgroundEnabled: boolean;
-  onToggleBackground: () => void;
   onRefresh: () => void | Promise<void>;
   onUpdate: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
   onRegisterOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
@@ -140,8 +137,6 @@ interface SettingsFormPanelProps {
   providerOptions: GenerationProviderId[];
   providerCapabilities: GenerationProviderCapabilitiesResponse | null;
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
-  isBackgroundEnabled: boolean;
-  onToggleBackground: () => void;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
 }
@@ -153,8 +148,6 @@ function SettingsFormPanel({
   providerOptions,
   providerCapabilities,
   providerRuntimePreflight,
-  isBackgroundEnabled,
-  onToggleBackground,
   onResetStudio,
   isResettingStudio,
 }: SettingsFormPanelProps) {
@@ -390,25 +383,6 @@ function SettingsFormPanel({
         </span>
         <span
           className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
-        />
-      </button>
-
-      <button
-        type="button"
-        onClick={onToggleBackground}
-        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${isBackgroundEnabled ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-      >
-        <span className="flex items-center gap-3">
-          <Sparkles
-            size={16}
-            className={isBackgroundEnabled ? 'text-accent-300' : 'text-zinc-500'}
-          />
-          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            Animated Background
-          </span>
-        </span>
-        <span
-          className={`size-2.5 rounded-full ${isBackgroundEnabled ? 'bg-accent-300' : 'bg-zinc-700'}`}
         />
       </button>
 
@@ -652,8 +626,6 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   isRegisteringOutputSource,
   importingOutputSources,
   error,
-  isBackgroundEnabled,
-  onToggleBackground,
   onRefresh,
   onUpdate,
   onRegisterOutputSource,
@@ -763,8 +735,6 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             providerOptions={providerOptions}
             providerCapabilities={providerCapabilities}
             providerRuntimePreflight={providerRuntimePreflight}
-            isBackgroundEnabled={isBackgroundEnabled}
-            onToggleBackground={onToggleBackground}
             onResetStudio={onResetStudio}
             isResettingStudio={isResettingStudio}
           />

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Flowing
   atmosphere: Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique
   key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
-  creative_brief: Surface tension holding a cascade in the shape of a gown, sheet-flow wrapping around a torso with the impossible stillness of water that has forgotten how to fall. Caustic light dapples through the liquid sleeve, droplets arrested mid-splash like a crown of diamonds orbiting the silhouette, the whole dress a moment stolen from a waterfall and taught to hold its breath.
+  creative_brief: >-
+    Make the input liquid-garment: sheet-flow drape, surface tension, arrested
+    droplets, meniscus edges, caustic light and transparent aquamarine volume.
+    Keep elemental transformation without requiring torso, waterfall, gown,
+    water-nymph or underwater scene.
 avoidRules:
   - dry
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

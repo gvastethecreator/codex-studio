@@ -12,7 +12,7 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Real world with magic
+  aesthetic: Grounded impossible realism
   form_and_line: Realistic
   color_palette: Natural
   lighting_setup: Subtle glow
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Literary, subtle
   spatial_distortion: One impossible element
   atmosphere: Wonder, grounded
-  key_features: Real world context
-  creative_brief: The extraordinary slips quietly into the mundane, a floating teapot in a kitchen that otherwise obeys physics. Magic here does not announce itself; it simply exists, as natural and unnoticed as breathing.
+  key_features: One quiet impossibility
+  creative_brief: Apply magical realism as restrained contradiction over the input with mostly natural rendering, one impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the subject without turning it into overt fantasy or cartoon.
 avoidRules:
   - fantasy
   - cartoon
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

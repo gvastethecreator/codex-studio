@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Abstracted
   atmosphere: Fluid, simple
   key_features: Single line
-  creative_brief: A single unbroken line wanders the page like a melody that never resolves, touching every contour without lifting, without retreating. The hand moves in faith, trusting the journey more than the destination. Form emerges from the discipline of connection, every subject revealed as one continuous thread.
+  creative_brief: >-
+    Apply continuous-line drawing to any input: one unbroken contour path,
+    looping simplification, minimal lifts, expressive detours, and structure
+    built from uninterrupted connection. Keep elegant line discipline without
+    requiring faces, hands, figure studies, sketchbook margins, or cafe scenes.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Comforting, soft, security-blanket warmth, bedtime safety, unconditional love
   key_features: Button eyes, stitched smile, bean-bag weight, satin-bow accent
   creative_brief: >-
-    Anchor this preset in plush-toy comfort grammar: seam-led softness,
-    oversized cuddly proportions, and velvet-fiber tactility should define
-    identity without depending on a specific nursery storyline.
+    Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber
+    tactility should define identity without depending on a specific nursery storyline. Apply Plushie as a portable
+    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
+    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - hard
   - plastic

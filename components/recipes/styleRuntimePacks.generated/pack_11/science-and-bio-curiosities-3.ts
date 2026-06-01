@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fingerprint topology, pinch-and-roll morphology, matte dough crackle cues, handmade asymmetry language',
       creative_brief:
-        'Keep this preset grounded in tactile hand-sculpting evidence: finger marks, uneven compression, and matte dough behavior should carry the identity independent of any specific craft-table narrative.',
+        'Keep this preset grounded in tactile hand-sculpting evidence: finger marks, uneven compression, and matte dough behavior should carry the identity independent of any specific craft-table narrative. Apply Play-Doh Clay as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight',
       creative_brief:
-        'Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence, grout rhythm, andamento flow-lines, and faceted reflective highlights should define identity beyond any specific historic setting.',
+        'Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence, grout rhythm, andamento flow-lines, and faceted reflective highlights should define identity beyond any specific historic setting. Apply Mosaic Tile as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette',
       creative_brief:
-        'Define this preset by embroidery-system grammar: stitch families as mark vocabulary, thread-direction shading, and cloth-grid resolution limits should carry identity beyond one handcrafted vignette.',
+        'Define this preset by embroidery-system grammar: stitch families as mark vocabulary, thread-direction shading, and cloth-grid resolution limits should carry identity beyond one handcrafted vignette. Apply Embroidery as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -89,7 +89,8 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Science And Bio Curiosities',
     negativePrompt: 'skin, color',
     style: {
-      aesthetic: "Medical scan, radiograph-art, shadow-bone portrait, Roentgen's ghost",
+      aesthetic:
+        'Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging',
       form_and_line:
         'Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge',
       color_palette:
@@ -99,14 +100,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain',
       render_quality:
-        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiology-lab aesthetic',
+        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision',
       spatial_distortion:
-        'Skeleton visible, interior-revelation, nested-anatomy transparency, bone-stacked projection',
-      atmosphere: 'Scientific, raw, clinical-mortality, hospital-quiet, body-interior mystery',
+        'Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting',
+      atmosphere: 'Scientific, raw, clinical, mortality-aware, interior mystery',
       key_features:
-        'Bones, joint-space gaps, dental-filling artifacts, fracture-line shadows, trabecular-bone grain',
+        'Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows, trabecular grain',
       creative_brief:
-        'Define identity through radiograph grammar: density-layer projection, monochrome transmission mapping, and skeletal contrast hierarchy should carry the style beyond one clinical narrative frame.',
+        'Define identity through radiograph grammar: density-layer projection, monochrome transmission mapping, and internal-structure hierarchy should carry the style. If the input has a body, reveal skeletal contrast; if it is an object, expose its hidden construction without forcing a hospital frame. Apply X-Ray as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -133,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Biophilic structure integration, solar-surface mosaics, layered green roofs, regenerative systems readability',
       creative_brief:
-        'Preserve identity through regenerative design grammar: integrated greenery, clean-energy material language, and optimistic daylight ecology should define the preset beyond any specific city narrative.',
+        'Preserve identity through regenerative design grammar: integrated greenery, clean-energy material language, and optimistic daylight ecology should define the preset beyond any specific city narrative. Apply Solarpunk as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -160,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dirty, loud, powerful, oppressive weight, grinding fatigue, iron-willed endurance',
       key_features: 'Exhaust smoke, bolted armor plates, pressure gauges, colossal treads',
       creative_brief:
-        'Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded atmosphere, and pressure-gauge industrial lighting should define the style without locking it to a single war narrative vignette.',
+        'Keep identity rooted in diesel-mechanical grammar: riveted mass, soot-loaded atmosphere, and pressure-gauge industrial lighting should define the style without locking it to a single war narrative vignette. Apply Dieselpunk as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -184,11 +185,11 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion:
         'Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision',
       atmosphere:
-        'Adventure, invention, zeppelin-dock excitement, mad-scientist workshop, tea-and-gears coziness',
+        'Adventure, invention, analog futurism, pressure-system tension, brass-and-steam coziness',
       key_features:
         'Cog-wheel motif language, pressure-gauge instrumentation, brass fittings, steam venting cues, mechanical ornament layering',
       creative_brief:
-        'Keep this preset defined by ornate steam-mechanical grammar: brass-copper assemblies, pressure instrumentation, and gaslight warmth should drive the style without depending on named literary references.',
+        'Apply ornate steam-mechanical grammar to the input: brass-copper assemblies, pressure instrumentation, exposed mechanisms, leather straps, and gaslight warmth should drive the style without requiring zeppelins, workshops, tea tables, or named literary references.',
     },
   },
   {
@@ -197,24 +198,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Science And Bio Curiosities',
     negativePrompt: 'sunlight, happy',
     style: {
-      aesthetic: 'Gothic horror romanticism with decayed aristocratic architecture',
+      aesthetic:
+        'Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace',
       form_and_line:
-        'Spiky architecture, flying-buttress silhouettes, tombstone-contours, wrought-iron flourishes',
+        'Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes',
       color_palette:
         'Black, Grey, Deep Red, midnight-blue, blood-wine, silver-moon, funeral-lilac, bone-ivory',
       lighting_setup:
-        'Moonlight, fog, candelabra-flicker, stained-glass-crypt, lightning-flash drama, torch-sconce warmth',
+        'Moonlight, fog, candelabra-flicker, stained-glass color cuts, lightning-flash drama, torch-sconce warmth',
       material_texture:
         'Stone, velvet, fog, crumbling-masonry, coffin-wood, wax-drip candle, cold-marble tomb, cobweb-silk',
       render_quality: 'Atmospheric gothic rendering blending elegance and menace',
       spatial_distortion:
-        'Shadows, elongated-fingers, stretched-castle towers, impossible-corridor depth, cape-swallowing darkness',
+        'Shadows, elongated-finger silhouettes, stretched verticals, impossible depth, cape-like darkness',
       atmosphere:
-        'Fear, elegance, crypt-whisper, eternal-twilight, forbidden-love, moonlit-solitude',
+        'Fear, elegance, whispered decay, eternal-twilight, forbidden-love, moonlit-solitude',
       key_features:
         'Wrought-iron motifs, candelabra light pools, stone decay, dramatic moonlit silhouettes',
       creative_brief:
-        'Build gothic tension through vertical architecture, candle/moon contrast, and ornamental decay. Keep the mood timeless and reusable, focusing on atmosphere systems rather than fixed character or location references.',
+        'Build gothic tension through vertical pressure, candle/moon contrast, ornamental decay, ironwork rhythm, and velvet-shadow depth. Architectural cues may reinforce the mood, but the style must adapt to any input without requiring a castle, crypt, character, or fixed location.',
     },
   },
   {
@@ -234,12 +236,11 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Visceral speculative bio-design with high organic detail density',
       spatial_distortion:
         'Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy',
-      atmosphere:
-        'Unsettling, biological, vivisection-table dread, accelerated-evolution, recombinant-anxiety',
+      atmosphere: 'Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety',
       key_features:
         'Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor',
       creative_brief:
-        'Merge soft tissue, vascular networks, and engineered structures into coherent biotechnological forms. Emphasize wet translucency, asymmetrical mutation logic, and lab-grown material cues without anchoring to a single narrative scene.',
+        'Transform the input through biopunk material logic: soft tissue, vascular networks, engineered growth seams, wet translucency, asymmetrical mutation, and lab-grown cues. Keep the result coherent and biological without requiring a vivisection table, specimen chamber, or fixed creature design.',
     },
   },
   {
@@ -267,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding',
       creative_brief:
-        'Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants.',
+        'Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants. Apply Snowflake as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -294,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color',
       creative_brief:
-        'Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens.',
+        'Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens. Apply Fungi/Mold as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -321,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands',
       creative_brief:
-        'Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries.',
+        'Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries. Apply Electron Microscope as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -349,7 +350,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity, birefringence-color',
       creative_brief:
-        'Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven morphology shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions open-ended.',
+        'Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven morphology shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions open-ended. Apply Crystal Growth as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -377,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar',
       creative_brief:
-        'Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell types.',
+        'Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell types. Apply Cellular Life as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -403,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove',
       creative_brief:
-        'Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body zone.',
+        'Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body zone. Apply Skin Pores as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -431,7 +432,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim',
       creative_brief:
-        'Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.',
+        'Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible. Apply Velcro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -483,7 +484,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency',
       creative_brief:
-        'Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes.',
+        'Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes. Apply Leaf Veins as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

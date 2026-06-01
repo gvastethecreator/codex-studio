@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-216
 packId: pack_13
-name: Laid-Back Camp - Winter Camp Stove Glow
+name: Bundled Warmth Pocket
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Laid-Back Camp title anchor translated into cold-weather coziness, practical comfort, quiet friendship, tactile warmth, and restorative outdoor calm
-  form_and_line: Practical silhouette clarity, bundled contour shapes, circular warmth-flow composition, and compact comfort against open cold space
-  color_palette: Winter blues, pine greens, stove-orange warmth, canvas neutrals, and star-night indigos
-  lighting_setup: Warm practical key-light, cold ambient fill, lantern-like accent points, and crisp dawn diffusion
-  material_texture: Nylon weave, quilted padding, enamel gloss, worn metal, frosted ground detail, and insulated fabric softness
-  render_quality: Cozy cold-weather rendering with practical fidelity, restorative social calm, and tactile comfort emphasis
-  spatial_distortion: Circular framing compression that concentrates shared warmth without forcing camp gear or flame as subject matter
-  atmosphere: Cozy, crisp, friendly, restorative
-  key_features: Cold-warm contrast, practical comfort textures, bundled silhouettes, shared warmth pockets, crisp restorative atmosphere
+  aesthetic: >-
+    Bundled warmth-pocket anime where cold space makes comfort feel deliberate, tactile, and shared
+    without requiring outdoors
+  form_and_line: >-
+    Practical silhouette clarity, rounded bundled shapes, circular warmth-flow composition, and
+    compact comfort against wider cool fields
+  color_palette: >-
+    Winter blue, pine green, orange heat glow, canvas neutral, star indigo, fleece cream, and muted
+    graphite
+  lighting_setup: >-
+    Warm practical key, cold ambient fill, tiny lantern points, crisp dawn diffusion, and soft
+    thermal spill
+  material_texture: >-
+    Nylon weave, quilted padding, enamel gloss, worn metal, frosted particulate, insulated cloth,
+    and soft vapor edges
+  render_quality: >-
+    Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative
+    social calm
+  spatial_distortion: >-
+    Circular compression concentrates shared warmth while cooler negative space breathes around the
+    subject
+  atmosphere: Cozy, crisp, friendly, restorative, tactile
+  key_features: >-
+    Bundled contours, cold-warm contrast, warmth pockets, practical textile cues, crisp air, and
+    quiet friendship light
   creative_brief: >-
-    Use Laid-Back Camp as a style anchor for cold-warm comfort: practical
-    texture, bundled softness, and quiet friendship warmth should transfer
-    without requiring a campsite, stove, tent, food, or flame scene.
+    Use Laid-Back Camp as style anchor for bundled warmth pockets. Apply cold-blue fields, practical
+    orange heat, padded texture, and calm shared comfort to any prompt. Campsites, stoves, tents,
+    food, and flame scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-216.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

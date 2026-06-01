@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, time
   key_features: Top surface only
-  creative_brief: Summon the quiet blanket of time where a fine grey particulate settles on forgotten surfaces like a slow snowfall of decay, disturbed only by the calligraphy of a passing finger that reveals the original surface beneath. The layer should feel soft and weightless, the visual equivalent of silence accumulating grain by grain. Capture the poetry of the undisturbed, time's slowest signature rendered in dust.
+  creative_brief: >-
+    Summon the quiet blanket of time where a fine grey particulate settles on forgotten surfaces like a slow snowfall of
+    decay, disturbed only by the calligraphy of a passing finger that reveals the original surface beneath. The layer
+    should feel soft and weightless, the visual equivalent of silence accumulating grain by grain. Capture the poetry of
+    the undisturbed, time's slowest signature rendered in dust. Use Dusty Surface as portable surface/render behavior
+    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - clean
   - polished

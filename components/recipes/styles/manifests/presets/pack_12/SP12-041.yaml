@@ -12,14 +12,18 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Frontier-defense RPG en bosque de brasas permanentes, orientado a patrulla, fortificación y caza reactiva.
-  subject_treatment: Rangers híbridos tecno-místicos con roles de rastreo, control y defensa de perímetro.
+  aesthetic: Gramática frontier-defense RPG con brasas permanentes, patrulla, fortificación y caza reactiva.
+  subject_treatment: Convierte el input en ranger tecno-místico, refugio, trampa, rastro o perímetro defensivo según aplique.
   color_and_tone: Naranja brasa, verde pino y negro humo para separar refugio, amenaza y rutas.
   lighting_and_shadow: Brillos cálidos entre troncos oscuros para lectura de vigilancia nocturna.
   texture_and_material: Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.
-  camera_and_composition: Portón del outpost como ancla, con líneas de defensa y accesos secundarios visibles.
+  camera_and_composition: Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.
   atmosphere_and_mood: Vigilante, resistente y tácticamente austera.
   rendering_and_quality: Defensive-hub gameplay-first con legibilidad de patrulla, alarma y respuesta.
+  creative_brief: >-
+    Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

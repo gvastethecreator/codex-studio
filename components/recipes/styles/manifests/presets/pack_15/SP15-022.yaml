@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Sophisticated ambition, urbane spectacle, and controlled excess.
   key_features: Deco turbine motifs, gilded dynamo rings, emerald inlays, and black-lacquer contrast.
   creative_brief: >-
-    Preserve gilded dynamo-atrium grammar as a reusable style language:
-    geometric art-deco monumentality, luxury-industrial symbolism, and staged
-    civic spectacle should remain stable across any subject.
+    Turn the input into luxury power architecture: black lacquer fields, emerald
+    inlays, brass fan geometry, turbine rings, and ceremonial uplight should
+    imply ambition under control. Atriums are optional; gilded dynamo hierarchy
+    and art-deco industrial symbolism are the transferable style.
 avoidRules: [photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-022.webp }
 attributes:

@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Fluffy batts
   atmosphere: Unfinished, itchy
   key_features: Fiber direction
-  creative_brief: Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal.
+  creative_brief: >-
+    Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of
+    suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel.
+    The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the
+    in-between, construction paused in mid-reveal. Use Fiberglass Insulation as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - cotton candy
 assets:

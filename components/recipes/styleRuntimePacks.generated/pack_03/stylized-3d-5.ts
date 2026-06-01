@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Illustrated, fun, anime energy',
       key_features: 'Banded shading, ink-line edges',
       creative_brief:
-        "Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion.",
+        "Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion. Apply Toon Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
     },
   },
   {
@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Simple, clean, polygon purity',
       key_features: 'Facets, edge visibility',
       creative_brief:
-        'Beauty in the count of polygons you can number on two hands — flat-shaded triangles catch ambient occlusion at their edges like folded paper holding its crease. Vibrant stylized tones celebrate geometry as geometry, refusing to disguise the mesh beneath smooth fakery. The image channels indie-game charm, a world comfortable in its own visible construction, each facet a deliberate choice rather than a limitation.',
+        'Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion crease accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or landscape. Apply Low Poly as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

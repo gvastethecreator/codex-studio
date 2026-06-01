@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-033
 packId: pack_14
-name: Paper Lantern Exorcist Alley
+name: Paper Lantern Exorcism Protocol
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, japanese-myth]
 visualDna:
-  aesthetic: Night district where folk exorcists patrol shrine alleys lit by paper fire.
-  form_and_line: Narrow lanes, stacked eaves, and talisman grids over sliding doors.
+  aesthetic: Paper-lantern exorcism protocol with folk wards, shrine noir, and ritual urgency.
+  form_and_line: Narrow lane cues, stacked eaves, and talisman grids over sliding-door shapes.
   color_palette: Vermilion, soot black, and lantern amber.
   lighting_setup: Dense lantern pools and rim moonlight on roof edges.
   material_texture: Oiled wood, rice paper, lacquer seals, and worn stone drains.
   render_quality: Cinematic matte painting with sharp atmosphere depth.
-  spatial_distortion: Compressed street perspective with layered shrine gates.
+  spatial_distortion: Compressed perspective with layered shrine-gate cues.
   atmosphere: Tense vigilance, ritual urgency, and whispering folklore.
-  key_features: Exorcist ward tags, fox masks, spirit bait altars.
-  creative_brief: A yokai quarter where each alley has its own purification protocol.
+  key_features: Exorcist ward tags, fox masks, spirit bait altar cues.
+  creative_brief: Reinterpret the input through paper-lantern exorcism protocol, using wards and purification cues without requiring an alley.
 avoidRules: [photoreal, cartoon-cute, cyberpunk-neon, modern-signage, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-033.webp }
 attributes:
   negativePrompt: photoreal, cartoon-cute, cyberpunk-neon, modern-signage, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-japanese-kami-yokai,
+    categoryName: 7. Mythic — Japanese Yokai & Kami,
+    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

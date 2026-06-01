@@ -4,8 +4,14 @@ packId: pack_15
 name: Iron Convoy Commons
 category: 7. Corepunk — Dieselpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - dieselpunk
 visualDna:
   aesthetic: Post-war dieselpunk rebuilt as cooperative freight logic, repair culture, and practical reconstruction grit.
   form_and_line: Heavy chassis geometry, elevated fuel-line vectors, and robust workshop-like framing.
@@ -17,21 +23,35 @@ visualDna:
   atmosphere: Gritty solidarity, practical endurance, and collective reconstruction.
   key_features: Diesel-hauler motifs, communal machine-shop rhythm, fuel reclamation towers, and worker-solidarity cues.
   creative_brief: >-
-    Preserve iron convoy-commons grammar as a reusable style system:
-    heavy repair urbanism, reclaimed fuel logistics, and worker-solidarity
-    infrastructure should remain coherent across subjects without requiring
-    trucks, hangars, canteens, workers, or a literal convoy.
-avoidRules: [photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-017.webp }
+    Weight the input with cooperative diesel endurance: oxide-red chassis geometry, grease-dark repair marks, amber
+    signal lamps, tarped utility surfaces, and reclaimed fuel logic. Trucks, hangars, workers, or convoys may appear,
+    but the style is solidarity through rugged maintained mass. Apply this corepunk genre grammar over any input:
+    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
+    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
+avoidRules:
+  - photoreal
+  - pristine-utopia
+  - neon-cyber
+  - magical-fantasy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-017.webp
 attributes:
   negativePrompt: photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-dieselpunk,
-    categoryName: 7. Corepunk — Dieselpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-dieselpunk
+  categoryName: 7. Corepunk — Dieselpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - dieselpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-063
 packId: pack_07
-name: Necropolis
-category: 1. Residential Interiors
+name: Sepulchral Civic Monumentalism
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Orden funerario monumental con grandeza sepulcral y civismo necromántico de escala masiva.
-  form_and_line: Axialidad dominada por obeliscos, masas escalonadas, retículas de cripta y siluetas severas de puntas rituales.
-  color_palette: Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields
-  lighting_setup: Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de cementerio.
-  material_texture: Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.
+  form_and_line: >-
+    Axialidad dominada por obeliscos, masas escalonadas, retículas de cripta y siluetas severas de
+    puntas rituales.
+  color_palette: >-
+    Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and
+    bruised violet shadow fields
+  lighting_setup: >-
+    Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de
+    cementerio.
+  material_texture: >-
+    Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios
+    tallados.
   render_quality: Dark fantasy arquitectónica de alto detalle con contención tonal y lectura monumental opresiva.
   spatial_distortion: Profundidad axial procesional con compresión sepulcral controlada.
   atmosphere: Solemne, ritualista y opresiva, con silencio acústico de enclave enterrado.
   key_features: Ritmo procesional de obeliscos, criptas apiladas, wayfinding rúnico y umbrales masivos.
   creative_brief: >-
-    Formula una gramática de necrópolis transferible donde jerarquía obeliscal,
-    planificación axial de tumbas y baja luz espectral definan identidad de
-    forma consistente entre composiciones.
+    Lleva cualquier input a civismo funerario monumental: axialidad procesional, piedra severa, baja
+    luz espectral, bronce oxidado y jerarquías de cripta. Evita cementerio literal como requisito;
+    sostén solemnidad arquitectónica.
 avoidRules:
   - life
   - lush vegetation
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

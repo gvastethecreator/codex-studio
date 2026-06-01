@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-007
 packId: pack_07
 name: Art Deco
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Glamour deco de alta densidad geométrica, lujo metálico y teatralidad axial controlada.
-  form_and_line: Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de lectura frontal.
+  form_and_line: >-
+    Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de
+    lectura frontal.
   color_palette: Dominante negro-dorado con esmeralda y azul noche, balanceado por marfil y reflejos cromados.
-  lighting_setup: Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y nodos tipo marquee.
+  lighting_setup: >-
+    Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y
+    nodos tipo marquee.
   material_texture: Latón pulido, mármol veteado, terciopelo profundo, lacas brillantes y vidrio grabado.
   render_quality: Acabado deco cinematográfico con precisión ornamental y contraste de lujo legible.
   spatial_distortion: Simetría estructurada con tirón vertical para enfatizar monumentalidad ceremonial.
   atmosphere: Opulento, nocturno, ceremonial y escénico.
-  key_features: Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y focos teatrales.
+  key_features: >-
+    Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y
+    focos teatrales.
   creative_brief: >-
-    Mantén una gramática art déco transferible basada en jerarquía geométrica,
-    contraste metálico y composición axial escénica. La ornamentación debe ser
-    sistema visual, no decoración anecdótica de contexto.
+    Mantén una gramática art déco transferible basada en jerarquía geométrica, contraste metálico y
+    composición axial escénica. La ornamentación debe ser sistema visual, no decoración anecdótica
+    de contexto.
 avoidRules:
   - minimal
   - rustic
@@ -36,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

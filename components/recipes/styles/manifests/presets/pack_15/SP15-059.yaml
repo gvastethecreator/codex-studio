@@ -4,8 +4,14 @@ packId: pack_15
 name: Mirrorline Court Plaza
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Judicial decopunk where symmetry acts like surveillance and polished reflection makes judgment feel already decided.
   form_and_line: Symmetric court axes, mirror-wall planes, stepped forecourt logic, legal obelisk alignments, and tribunal chevrons.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Authority, scrutiny, polished intimidation, and ceremonial inevitability.
   key_features: Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stair motifs, and engraved verdict plates.
   creative_brief: >-
-    Preserve mirrorline court-plaza grammar as a reusable style system:
-    severe judicial symmetry, reflective scrutiny pressure, and polished civic
-    intimidation should remain coherent across subjects.
-avoidRules: [photoreal, comedic, cyberpunk-slum, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-059.webp }
+    Judge the input through mirrorline severity: doubled reflections, tribunal chevrons, brass verdict plates, polished
+    stone axes, and cold teal seals should make scrutiny unavoidable. Court or plaza cues may appear, but the style is
+    symmetry as surveillance and authority as reflection. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - comedic
+  - cyberpunk-slum
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-059.webp
 attributes:
   negativePrompt: photoreal, comedic, cyberpunk-slum, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Ivory, bronze, and deep sapphire.
   lighting_setup: Stained-glass sunlight and lantern pools.
   material_texture: Carved stone, brass fittings, and polished wood.
-  render_quality: Monumental sacred-mechanical concept.
+  render_quality: Monumental sacred-mechanical render with devotional gear symbolism.
   spatial_distortion: Nave-like depth toward a central gear altar axis.
   atmosphere: Reverence, precision, and ceremonial awe.
   key_features: Gear altar motifs, time reliquary shapes, clock choir bands, and sacred brass cog halos.
   creative_brief: >-
-    Preserve cog cathedral-annex grammar as a reusable style system:
-    sacred-mechanical monumentality, gear-liturgical symbolism, and
-    ceremonial engineering reverence should remain coherent across subjects.
+    Consecrate the input as sacred clockwork: ivory vault ribs, bronze cog halos,
+    sapphire nave shadows, time-reliquary shapes, and stained-glass gear light
+    make any subject feel devotional, engineered, and monumental.
 avoidRules: [photoreal, whimsical, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-098.webp }
 attributes:

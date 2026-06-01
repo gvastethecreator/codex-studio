@@ -21,13 +21,13 @@ visualDna:
   spatial_distortion: Turbulence
   atmosphere: Mysterious, ephemeral
   key_features: Black background
-  creative_brief: Form barely held together, a sculpture of hesitation carved from air. Each tendril is a question the wind forgets to answer, presence fading into the suggestion of itself.
+  creative_brief: Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.
 avoidRules:
-  - solid object
+  - hard-edged clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-012.webp
 attributes:
-  negativePrompt: solid object
+  negativePrompt: hard-edged clutter
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

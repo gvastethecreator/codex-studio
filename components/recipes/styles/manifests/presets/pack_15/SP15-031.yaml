@@ -4,8 +4,14 @@ packId: pack_15
 name: Basalt Gear Sanctuary
 category: 12. Corepunk — Stonepunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - stonepunk
 visualDna:
   aesthetic: Stonepunk sacred machinery where gravity, labor chants, and basalt mass feel like technology older than language.
   form_and_line: Cyclopean arch-jaw rhythm, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes.
@@ -15,23 +21,38 @@ visualDna:
   render_quality: Heavy tactile stonepunk concept art where every mechanism reads as buildable, brutal, and devotional.
   spatial_distortion: Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.
   atmosphere: Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.
-  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.
+  key_features: >-
+    Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved
+    maintenance-prayer marks.
   creative_brief: >-
-    Preserve basalt gear-sanctuary grammar as a reusable style system:
-    weight-driven mechanics, rope-and-ember labor rituals, and sacred stone
-    machinery logic should remain coherent across subjects without requiring a
-    sanctuary, figures, work bays, or a literal ritual site.
-avoidRules: [photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-031.webp }
+    Crush the input into devotional stone machinery: basalt teeth, counterweight shafts, rope-burn fibers, ember pits,
+    and carved tally marks should make technology feel older than speech. Sanctuaries, workers, or ritual sites may
+    appear, but the style is weight, labor, and sacred mass. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - high-tech-glass-only
+  - neon-city
+  - cute-cartoon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-031.webp
 attributes:
   negativePrompt: photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-stonepunk,
-    categoryName: 12. Corepunk — Stonepunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-stonepunk
+  categoryName: 12. Corepunk — Stonepunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - stonepunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

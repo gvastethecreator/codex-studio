@@ -193,7 +193,6 @@ export function buildStudioOverlayController({
         isSavingSettings: settingsModule.settingsDomain.isSaving,
         isLoadingOutputSources: settingsModule.outputSourcesDomain.isLoadingOutputSources,
         isRegisteringOutputSource: settingsModule.outputSourcesDomain.isRegisteringOutputSource,
-        isBackgroundEnabled: settingsModule.isBackgroundEnabled,
         isResettingStudio: settingsModule.isResettingStudio,
       },
       closeDebugPanel: debugPanel.close,

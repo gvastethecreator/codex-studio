@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-237
 packId: pack_05
-name: Monumental Launch Sacrifice Style
+name: Monumental Ignition Sacrifice
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,20 +12,27 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Heroísmo clásico de sangre caliente, disciplina técnica, lanzamiento monumental, sacrificio luminoso y escala emocional creciente.
-  form_and_line: Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad monumental y contornos de determinación.
-  color_palette: Azul técnico, rojo heroico, blanco de flare estelar, negro profundo y amarillo de núcleo energético.
+  aesthetic: >-
+    Classic hot-blooded anime heroism built from technical discipline, monumental ignition, direct
+    emotion, luminous sacrifice, and rising scale
+  form_and_line: >-
+    Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad
+    monumental y contornos de determinación.
+  color_palette: >-
+    Azul técnico, rojo heroico, blanco de flare estelar, negro profundo y amarillo de núcleo
+    energético.
   lighting_setup: Fluorescente técnico, flare de ignición y bañado estelar de escala astronómica.
   material_texture: Carcasa marcada, juntas técnicas visibles, humo térmico y brillo energético de alto contraste.
   render_quality: Anime épico clásico con claridad emocional, expansión de escala y dramatismo de entrega final.
   spatial_distortion: Transición de escala íntima a cósmica con foreshortening heroico y verticalidad monumental.
   atmosphere: Triunfante, emotiva y colosal, de épica sincera.
-  key_features: Diagonales de lanzamiento, núcleo luminoso, verticalidad colosal, emoción directa e iconografía de sacrificio abstracta.
+  key_features: >-
+    Launch diagonals, luminous core, colossal verticality, direct emotion, sacrificial iconography,
+    and astronomical expansion
   creative_brief: >-
-    Construye una gramática launch-sacrifice reusable donde disciplina,
-    ignición, verticalidad y expansión astronómica converjan en épica emocional
-    directa sin infraestructura fija, entrenamiento literal, operadores,
-    hardware concreto o cierre narrativo obligatorio.
+    Use monumental ignition sacrifice as vertical-epic grammar. Any prompt should feel disciplined,
+    lit from within, ascending, and emotionally direct. Launch pads, operators, training, machines,
+    and narrative finales are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-237.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

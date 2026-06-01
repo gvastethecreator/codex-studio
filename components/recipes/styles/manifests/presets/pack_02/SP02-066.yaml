@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Mystery, drama, anonymous form, graphic suspense
   key_features: No fill light, recognizable outline, backlit separation, shape-first read
-  creative_brief: 'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail.'
+  creative_brief: >-
+    Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight
+    and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from
+    outer shape, not surface detail. Apply Silhouette as a portable cinematic/camera style over any input: preserve its
+    lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required
+    actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - detail in shadow
 assets:

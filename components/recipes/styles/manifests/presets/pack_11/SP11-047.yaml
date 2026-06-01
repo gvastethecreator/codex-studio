@@ -12,17 +12,24 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: World made of sweets, confectionery-kingdom, gumdrop-forest, gingerbread-architecture, sugar-plum-fairy
+  aesthetic: Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy
   form_and_line: Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles
   color_palette: Pink, Blue, Sugar, candy-floss spectrum, marshmallow-white, licorice-black, jellybean-rainbow, cotton-candy pastel
   lighting_setup: Bright, sparkly, sugar-crystal glitter, fairy-light twinkle, gumdrop-glow backlight
   material_texture: Sugar crystals, gummy, icing-smooth, fondant-mat, hard-candy gloss, chocolate-shell snap, sprinkle-crunch
   render_quality: Sweet, magical, Willy-Wonka wonder, candy-land fantasy, sugar-rush dream, gumdrop-path joy
-  spatial_distortion: Everything is edible, lollipop-tree scale, gingerbread-house proportions, chocolate-river flow, candy-cane columns
-  atmosphere: Happy, hungry, sugar-plum dreams, everlasting-gobstopper hope, candy-shop awe
-  key_features: Lollipops, gumdrop-path, frosting-icicle drip, candy-cane arch, chocolate-waterfall, sprinkle-confetti
+  spatial_distortion: >-
+    Edible material substitution, lollipop spiral geometry, gingerbread block proportions, frosting drips, candy-cane
+    striping
+  atmosphere: Happy, hungry, sugar-plum brightness, candy-shop awe, high-sugar unreality
+  key_features: Sugar crystals, gumdrop translucency, frosting drips, candy-cane stripes, chocolate gloss, sprinkle-confetti
   creative_brief: >-
-    Build a confectionery fantasy system with edible architecture, candy-pattern materials, and high-sugar color harmony. Keep forms whimsical and modular so the style can map onto varied environments without a fixed storyline.
+    Map the input into a confectionery fantasy system: edible materials, candy-pattern surfaces, sugar-crystal sparkle,
+    frosting edges, and high-sugar color harmony. Gumdrops, lollipops, and gingerbread can appear as style anchors, but
+    avoid forcing a kingdom, forest, fairy tale, or fixed candy-land scene. Apply Candy Land as a portable style system
+    over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior
+    while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - healthy
   - savory

@@ -79,8 +79,6 @@ interface StudioPageOperationsContext {
   clearCompleted: StudioOperationsRailProps['clearCompleted'];
   isResting: StudioOperationsRailProps['isResting'];
   exportLegacyVisualBatchSnapshot: StudioOperationsRailProps['exportLegacyVisualBatchSnapshot'];
-  isBackgroundEnabled: StudioOperationsRailProps['isBackgroundEnabled'];
-  setBackgroundEnabled: StudioOperationsRailProps['setBackgroundEnabled'];
   activeServerJobCount: StudioOperationsRailProps['activeServerJobCount'];
   onInspectJob: NonNullable<LeftDebugPanelProps['onInspectJob']>;
   diagnostics: StudioOperationsRailProps['diagnostics'];
@@ -176,8 +174,6 @@ export function buildStudioPageController(
       clearCompleted: args.operations.clearCompleted,
       isResting: args.operations.isResting,
       exportLegacyVisualBatchSnapshot: args.operations.exportLegacyVisualBatchSnapshot,
-      isBackgroundEnabled: args.operations.isBackgroundEnabled,
-      setBackgroundEnabled: args.operations.setBackgroundEnabled,
       activeServerJobCount: args.operations.activeServerJobCount,
       onInspectJob: args.operations.onInspectJob,
       diagnostics: args.operations.diagnostics,

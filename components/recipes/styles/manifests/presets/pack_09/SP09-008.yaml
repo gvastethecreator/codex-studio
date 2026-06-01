@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Stone covered in green
   form_and_line: Fuzzy outline
   color_palette: Grey stone, Green moss
-  lighting_setup: Dappled forest
+  lighting_setup: Soft dappled light
   material_texture: Velvet moss on hard stone
-  render_quality: Forest floor, damp
+  render_quality: Damp, ancient
   spatial_distortion: Softened edges
   atmosphere: Ancient, quiet
   key_features: Growth pattern
-  creative_brief: Render the union of opposites where velvet moss colonizes ancient stone in a silent pact of softness against permanence, green life clinging to grey mineral. Dappled forest light should caress the fuzzy surface, creating a miniature landscape of cushioned ridges above hard stone. The image must feel damp with the breath of woodland mornings.
+  creative_brief: 'Apply moss-on-stone contrast to the input: velvet green growth softening grey mineral hardness, fuzzy ridges catching soft dappled light, damp edges, and softened silhouettes. If rock, ruin, plant, or terrain exists, intensify it; otherwise use moss colonization as surface behavior without forcing a woodland floor.'
 avoidRules:
   - dry
   - city

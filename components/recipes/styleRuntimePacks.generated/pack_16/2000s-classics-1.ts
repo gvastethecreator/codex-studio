@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Symbolic circles, moral symmetry, mechanical edge highlights, tragic glow, and clear early-digital action hierarchy.',
       creative_brief:
-        'Build a reusable alchemical-moral-geometry grammar for any subject or input image: symbolic circles, sacrifice logic, clean digital-cel mechanical detail, warm tragic glow, and grounded epic framing without imposing military coats, brothers, automail limbs, transmutation scenes, philosopher stones, or faction symbols.',
+        'Build a reusable alchemical-moral-geometry grammar for any subject or input image: symbolic circles, sacrifice logic, clean digital-cel mechanical detail, warm tragic glow, and grounded epic framing. Mechanical prosthetic cues, etched metal, or equivalent-exchange diagram scars may transform the input when useful, without fixing military coats, brothers, transmutation scenes, philosopher stones, or faction symbols.',
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant defiance.',
       creative_brief:
-        'Build a reusable operatic-rebellion strategy grammar for any subject or input image: command posture, aristocratic tension, crimson-black graphic hierarchy, masked intent, and early-digital political drama without imposing mecha, royal costumes, command rooms, revolutionaries, masks, or empire scenes.',
+        'Build a reusable operatic-rebellion strategy grammar for any subject or input image: command posture, aristocratic tension, crimson-black graphic hierarchy, masked intent, and early-digital political drama. Mecha, masks, uniforms, or command geometry may appear as strategic style cues when they strengthen the input, without fixing a command room, revolution plot, empire scene, or specific costume.',
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spiral vectors, radial impact cores, upward scale escalation, declarative heroic pose logic, and clean hype readability.',
       creative_brief:
-        'Build a reusable spiral-overdrive bravado grammar for any subject or input image: upward force, radial impact, impossible scale, saturated heroic energy, and early-digital shonen clarity without imposing mecha, drills, galaxies, sunglasses, throwdowns, or specific heroes.',
+        'Build a reusable spiral-overdrive bravado grammar for any subject or input image: upward force, radial impact, impossible scale, saturated heroic energy, and early-digital shonen clarity. Spiral drills, mecha silhouettes, cosmic scale, or heroic impact geometry may transform the input when useful, without fixing a throwdown, galaxy set, sunglasses gag, or specific hero.',
     },
   },
   {
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Trazas de aire, gradientes de altura, códigos de subcultura, siluetas en suspensión y dinámica de impulso continuo.',
       creative_brief:
-        'Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo sin imponer mechas, tablas, riders ni cielo literal.',
+        'Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo. El input puede recibir tabla, mecha ligero, rider silhouette o estela de vuelo cuando refuerce el estilo, sin fijar cielo literal ni escena de carrera.',
     },
   },
   {

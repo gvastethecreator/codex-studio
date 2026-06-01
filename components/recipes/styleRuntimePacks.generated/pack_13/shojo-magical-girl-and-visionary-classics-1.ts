@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Techno-organic silhouette fusion, diagnostic shadow logic, existential enclosure tension, trauma-coded color architecture',
       creative_brief:
-        'Keep this preset rooted in biomech existential language: techno-organic morphology, clinical shadow partitions, and psychological dread should carry the style independent of franchise-specific entities.',
+        'Keep this preset rooted in biomech existential language: techno-organic morphology, clinical shadow partitions, and psychological dread should carry the style independent of franchise-specific entities. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Transformation symbolism, moon-emblem light logic, jewel-tone magic effects, multi-silhouette choreography',
       creative_brief:
-        'Preserve moonlit-ribbon-justice grammar as a reusable style system: transformation-ribbon choreography, moon-emblem light hierarchy, and compassionate jewel-toned heroic radiance should remain consistent across subjects.',
+        'Transform the input through moonlit ribbon justice: flowing ribbon arcs, moon-emblem halos, jewel-pastel glow blooms, heroic rim partitions, and compassionate magical radiance should reshape any subject without requiring a literal sailor uniform, wand, city rooftop, or transformation pose.',
     },
   },
   {
@@ -112,7 +112,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spell-circle bursts, flame-color punctuation, comic reaction geometry, mischievous silhouette energy, fireball spectacle',
       creative_brief:
-        'Preserve arcane-chaos-roadtrip grammar as a reusable style system: comedy-to-combat spell pivots, loud fantasy color contrast, and mischievous chaos choreography should remain consistent across subjects.',
+        'Detonate the input with arcane-chaos roadtrip energy: spell-circle bursts, fireball color punctuation, elastic comic reaction geometry, and mischievous fantasy bravado can turn any subject loud and rambunctious without requiring a party, wagon, tavern, or specific adventurer scene.',
     },
   },
   {
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky-heavy compositions, prophecy-charged focal tension',
       creative_brief:
-        'Preserve tarot-mecha-fantasy grammar as a reusable style system: prophecy symbolism, windswept ceremonial silhouette drama, and jewel-sky romantic tension should remain consistent across subjects.',
+        'Fate the input through tarot-mecha fantasy: prophecy-card segmentation, jewel-sky backlight, ornate machine-myth contours, and windswept shojo gravity can mechanize or ceremonialize any subject without fixing a cockpit, battlefield, castle, or literal tarot reading.',
     },
   },
   {
@@ -168,7 +168,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Jewel-faceted silhouettes, monumental magic motifs, rune light effects, chromatic team partitioning, bright quest-like motion',
       creative_brief:
-        'Preserve jewel-armor quest grammar as a reusable style system: synchronized silhouette choreography, rune-and-monumental light hierarchy, and bright friendship-driven fantasy momentum should remain consistent across subjects.',
+        'Facet the input into jewel-armor quest momentum: saturated team-color partitions, rune-lit arcs, gemlike silhouettes, and monumental fantasy bloom can armor, brighten, or emblemize any subject without requiring a fixed party lineup, weapon pose, castle, or quest scene.',
     },
   },
   {
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command-energy, bright group-body-language geometry',
       creative_brief:
-        'Preserve cheerful bridge-deck mecha grammar as a reusable style system: ensemble tactical kinetics, retro-UI practical lighting, and war-comedy tonal pivots should remain consistent across subjects.',
+        'Launch the input with cheerful bridge-deck mecha rhythm: retro console glow, ensemble banter spacing, alert cyan/amber accents, and sortie-vector motion can add mecha or command-deck hints when useful without locking the image to a bridge, ship interior, crew lineup, or battle scene. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ritual symbols, monster-vine invasions, emergency framing, lineage-pressure posture, occult-tech contrast',
       creative_brief:
-        'Preserve mythic-tokyo-purge grammar as a reusable style system: ritual-symbol emergency framing, invasive botanical threat geometry, and occult-procedural urban tension should remain consistent across subjects.',
+        'Infect the input with mythic urban purge pressure: ritual symbols, siren-red framing, toxic chlorophyll intrusions, talisman-gold flashes, and occult procedural tension can reshape any subject without requiring Tokyo streets, monster vines, responders, or a literal crisis scene.',
     },
   },
   {
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Signal-noise dramaturgy, fragmented silhouette logic, analog-digital tension, sparse emotional staging, interference-led mood design',
       creative_brief:
-        'Make the style recognizable through signal degradation behavior and perceptual instability: line breaks, static overlays, and contrast collapse should communicate psychological tension independent of character archetype.',
+        'Make the style recognizable through signal degradation behavior and perceptual instability: line breaks, static overlays, and contrast collapse should communicate psychological tension independent of character archetype. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -280,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony',
       creative_brief:
-        'Preserve this preset through ornamental magic grammar: emblem circles, ribbon-flow silhouettes, and soft jewel-pastel luminance should remain the transferable identity beyond specific character archetypes.',
+        'Preserve this preset through ornamental magic grammar: emblem circles, ribbon-flow silhouettes, and soft jewel-pastel luminance should remain the transferable identity beyond specific character archetypes. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate confession framing',
       creative_brief:
-        'Preserve shy-hallway-bloom grammar as a reusable style system: daylight-soft proximity framing, blush-led micro-expression acting, and sincerity-over-spectacle romance pacing should remain consistent across subjects.',
+        'Let the input bloom with shy daylight romance: fine contours, blush-soft accents, cautious spacing, pale sky-blue warmth, and near-but-not-touching emotional distance should guide any subject without requiring hallways, school uniforms, confession staging, or paired characters.',
     },
   },
   {
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart-stopping close-ups',
       creative_brief:
-        'Preserve clean-uniform reunion grammar as a reusable style system: minimal negative-space composition, quiet emotional distance cues, and polished restrained linework should remain consistent across subjects.',
+        'Hold the input in clean reunion ache: powder-blue restraint, winter-white planes, crisp negative space, side-lit pauses, and guarded emotional distance should quiet any subject without requiring uniforms, school corridors, reunited lovers, or closeup glances.',
     },
   },
   {
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry',
       creative_brief:
-        'Preserve zodiac-warmth-and-grief grammar as a reusable style system: compassionate warm lighting, soft emotional closeups, and symbolic zodiac tenderness should remain consistent across subjects.',
+        'Soften the input with zodiac warmth and grief: cream-peach halation, tea-brown tenderness, spring-green particulate haze, and subtle zodiac symbolism should make any subject feel healing and emotionally held without forcing a family scene, animal motif, embrace, or closeup.',
     },
   },
   {
@@ -420,7 +420,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rose effects, princely silhouette cues, ornate polish, ensemble comedy staging, tailored detail',
       creative_brief:
-        'Preserve rose-cloud flirt-theater grammar as a reusable style system: theatrical princely staging, satirical romance motifs, and ensemble comedy-confession balance should remain consistent across subjects.',
+        'Stage the input inside rose-cloud flirt theater: champagne spot pockets, rose overlays, princely silhouette cues, ornate polish, and ensemble comic timing can make any subject elegant and self-aware without requiring a host club, ballroom, bouquet scene, or romance confession.',
     },
   },
   {
@@ -448,7 +448,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Runway silhouettes, stitch-texture cues, fashion detail, angular romantic posing, night-glamour polish',
       creative_brief:
-        'Preserve runway-heartbreak chic grammar as a reusable style system: couture silhouette authority, backstage-versus-spotlight contrast, and self-invention-through-fashion emotional tension should remain consistent across subjects.',
+        'Cut the input into runway heartbreak chic: black-cherry silhouettes, magenta-plum emotional pressure, garment-structure contours, stitch detail, and spotlight/backstage contrast can fashionize any subject without requiring a catwalk, model, studio, or literal breakup.',
     },
   },
   {
@@ -476,7 +476,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft timing',
       creative_brief:
-        'Preserve height-gap comedy-romance grammar as a reusable style system: banter-driven reaction timing, scale-contrast staging, and loud-to-tender emotional pivots should remain consistent across subjects.',
+        'Scale the input through height-gap romcom timing: elastic acting lines, bright pastel pop beats, exaggerated proportion contrast, and loud-to-tender rhythm can make any subject funny and sincere without requiring a couple, school setting, argument pose, or literal height joke.',
     },
   },
   {
@@ -504,7 +504,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Showbiz costume logic, performance-space pressure, mask symbolism, revenge-expression spikes, starburst comedic effects',
       creative_brief:
-        'Preserve revenge-idol-stardom grammar as a reusable style system: theatrical persona-shift staging, mask-symbol emotional coding, and performance-driven self-reinvention tension should remain consistent across subjects.',
+        'Perform the input as revenge idol stardom: spotlight gold, magenta-violet persona shifts, mask-symbol emotion, starburst spikes, and costume-contour intensity can reinvent any subject without requiring an idol stage, audition room, audience, or literal celebrity plot.',
     },
   },
   {
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked dramatic beats',
       creative_brief:
-        'Preserve elite-campus melodrama grammar as a reusable style system: hierarchy-coded fashion contrast, vertical confrontation staging, and polished emotional tension should remain consistent across subjects.',
+        'Rank the input through elite melodrama: ivory/navy status contrast, polished rain sheen, tailored contour control, gold hierarchy accents, and vertical confrontation pressure can elevate any subject without requiring a campus, rich students, romance triangle, or hallway scene.',
     },
   },
   {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Frill-coded sparkle, strict-to-flustered acting, secret-identity staging, authority-costume contrast, playful dominance framing',
       creative_brief:
-        'Preserve secret-uniform double-life grammar as a reusable style system: authority-versus-frill visual contrast, identity-switch expression rhythm, and playful dominance staging should stay stable across subjects.',
+        'Split the input into secret-uniform double life: strict black-white binaries, pastel embarrassment flashes, frill-coded sparkle, authority-red punctuation, and identity-switch acting can energize any subject without requiring a maid cafe, school council, uniform gag, or romance duel.',
     },
   },
   {
@@ -643,7 +643,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright dramatic gazes',
       creative_brief:
-        'Preserve rose-of-versailles court grammar as a reusable style system: baroque portrait opulence, martial-elegance contrast, and pre-revolution emotional gravity should remain coherent across subjects.',
+        'Ennoble the input with Versailles court revolution: powdered ivory, royal blue and wine-red authority, lace-versus-martial contour tension, candlelit portrait falloff, and operatic tragic gravity can transform any subject without requiring a palace, court figure, duel, or historical scene.',
     },
   },
   {
@@ -725,7 +725,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vermilion sacred motifs, fox motifs, moonlit vertical rhythm, divine-contract details, playful supernatural intimacy',
       creative_brief:
-        'Preserve shrine-romance grammar as a reusable style system: vermilion spiritual ornament, moonlit familiar motifs, and playful devotional tenderness should remain stable across subject changes.',
+        'Bless the input with shrine romance and fox-familiar charm: vermilion ornament, moonlit indigo rims, talisman glows, sleeve-flow lines, and fox-gold familiar hints can spiritualize any subject without requiring a shrine, contract scene, priestess, fox character, or romantic pair.',
     },
   },
   {
@@ -837,7 +837,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Wind-worn silhouettes, crimson focal points, wilderness-to-regal contrast, guardian-like ensemble staging, heroic profile poses',
       creative_brief:
-        'Preserve crimson-princess quest grammar as a reusable style system: wind-worn fantasy silhouettes, guardian-ensemble composition, and resolve-centered chroma hierarchy should remain stable across subjects.',
+        'Lead the input through crimson princess resolve: wind-worn cloth rhythm, sandstone ochres, dusk-violet depth, crimson focal hierarchy, and guardian ensemble warmth can heroicize any subject without requiring a princess, travel party, battlefield, throne, or wilderness journey.',
     },
   },
   {
@@ -893,7 +893,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Couture-emotion coupling, ornament-driven composition, gaze-led dramaturgy, ceremonial color hierarchy',
       creative_brief:
-        'Encode this preset as an ornamental romance grammar: couture silhouettes, ceremonial lighting, and emotionally loaded gaze choreography should remain transferable beyond any single palace narrative.',
+        'Encode this preset as an ornamental romance grammar: couture silhouettes, ceremonial lighting, and emotionally loaded gaze choreography should remain transferable beyond any single palace narrative. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -921,7 +921,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Symbolic opposition framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography',
       creative_brief:
-        'Define this preset through allegorical stage language: symbolic rose motifs, ceremonial opposition poses, and surreal architecture should carry the emotional logic beyond any singular confrontation scenario.',
+        'Define this preset through allegorical stage language: symbolic rose motifs, ceremonial opposition poses, and surreal architecture should carry the emotional logic beyond any singular confrontation scenario. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -949,7 +949,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Comfort-led color discipline, soft material tenderness, ensemble expression readability, seasonal healing cadence',
       creative_brief:
-        'Keep the preset centered on restorative visual language—soft contour rhythm, warm-diffuse light behavior, and ensemble tenderness—so it communicates healing tone across varied subjects.',
+        'Keep the preset centered on restorative visual language—soft contour rhythm, warm-diffuse light behavior, and ensemble tenderness—so it communicates healing tone across varied subjects. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -977,7 +977,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Fashion-emotion coupling, eyeliner contrast language, music-scene visual cadence, close-range expressive dramaturgy',
       creative_brief:
-        'Define the preset through glam-punk material contrast and emotionally charged portrait staging; preserve the tension between tenderness and edge as a transferable visual language.',
+        'Define the preset through glam-punk material contrast and emotionally charged portrait staging; preserve the tension between tenderness and edge as a transferable visual language. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {
@@ -1033,7 +1033,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing-through-stillness framing',
       creative_brief:
-        'Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained romantic stillness should define this style independent of specific story letters.',
+        'Preserve identity via epistolary intimacy: paper-ink tactility, amber portrait lighting, and restrained romantic stillness should define this style independent of specific story letters. Apply this anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues while avoiding a required cast, lore event, location, prop, or fixed scene.',
     },
   },
   {

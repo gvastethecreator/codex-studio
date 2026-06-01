@@ -12,14 +12,14 @@ visualDna:
   color_palette: Aquamarine, coral, and dusk violet.
   lighting_setup: Underwater bloom light with surface shimmer.
   material_texture: Wet timber, coral lattice, and translucent roots.
-  render_quality: Atmospheric undersea concept with botanical detail.
+  render_quality: Atmospheric undersea render with botanical detail and tide-fed depth.
   spatial_distortion: Downward peek into layered drift-garden depth.
   atmosphere: Slow growth, tide patience, and luminous ecology.
   key_features: Drift roots, subpier planter motifs, tide-fed blooms, and suspended luminous flora.
   creative_brief: >-
-    Preserve drift garden-subpier grammar as a reusable style system:
-    substructure hanging ecologies, tide-fed luminous root layering, and
-    patient submerged growth should remain coherent across subjects.
+    Submerge the input under drift-garden patience: aquamarine bloom light,
+    coral lattice arcs, dusk-violet depth, hanging root bundles, and tide-fed
+    luminous flora make any subject feel slow-grown beneath structure.
 avoidRules: [photoreal, oil-slick, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-120.webp }
 attributes:

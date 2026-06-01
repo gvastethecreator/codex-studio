@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Rural fantasy, pastoral-romance daydream, meadow-wandering solitude
+  aesthetic: Cottagecore pastoral styling, rural-romance daydream, handmade softness
   form_and_line: Soft dresses, empire waist, puff-sleeve volume, midi-length hem, apron-tie waist cinch
   color_palette: Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue
-  lighting_setup: Golden hour, meadow-backlight, dappled orchard shade, morning-dew sparkle
+  lighting_setup: Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight
   material_texture: Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk
   render_quality: Whimsical, soft, fairytale illustration, sun-drenched pastoral
   spatial_distortion: None
-  atmosphere: Peaceful, nature, bramble-hedge serenity, bread-baking warmth, wildflower fragility
+  atmosphere: Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness
   key_features: Apron, basket, straw hat, lace-up bodice, ribbon ties
-  creative_brief: Linen dresses catching orchard breeze like sails of a slower century, puff sleeves holding the shape of churned butter and sourdough starter. A straw basket swings from an arm that has gathered wildflowers and forgotten the name of the nearest city, each eyelet hole a window onto a life where the only deadline is sunset and the only algorithm is the turning of seasons.
+  creative_brief: >-
+    Soften the input with cottagecore textile cues: linen, muslin, eyelet,
+    puff sleeves, apron ties, woven straw, wildflower prints and warm slow-life
+    light. Keep rural fantasy as texture and mood, without requiring meadow,
+    orchard, basket, bread, cottage or a wandering figure.
 avoidRules:
   - urban
   - modern
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

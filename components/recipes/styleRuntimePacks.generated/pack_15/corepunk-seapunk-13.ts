@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.',
       creative_brief:
-        'Preserve coral circuit-marina grammar as a reusable style system: wet-circuit civic modules, reef-luminescent infrastructure, and tidal nightlife ecology should remain coherent across subjects.',
+        'Rewire the input as a wet reef circuit: turquoise voltage, magenta pulses, coral cable junctions, algae power beads, buoyant rhythm cells, and salt-crusted wet edges. Marinas or platforms can appear as anchors; the style is tidal nightlife infrastructure with a living nervous system. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Neon coral arrays, pressure-lock collars, sonar rings, black-water voids, and submersible-scar detailing.',
       creative_brief:
-        'Preserve abyssal neon-reef grammar as a reusable style system: pressure-adapted luminous ecology, black-water depth layering, and submerged resilience cues should remain coherent across subjects.',
+        'Sink the input into pressure-lit abyssal nightlife: black-water voids, sonar rings, pressure-lock collars, neon coral ribs, and mineral-encrusted glow should make darkness feel structural. Reefs or submersible cues may appear, but the style is resilient beauty under heavy water. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tideglass bands, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic map-like patterns.',
       creative_brief:
-        'Preserve tideglass subway grammar as a reusable style system: refracted transit transparency, gasketed pressure infrastructure, and coastal public-speed choreography should remain coherent across subjects.',
+        'Bend the input through tideglass velocity: refracted tube lines, gasket rings, caustic bands, algae-filter grates, and controlled pressure seams should imply fast public motion. Subway or station cues are optional; the style is transparent coastal speed inside engineered waves. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -101,13 +101,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Electric cyan, ultraviolet, and foam white.',
       lighting_setup: 'Night tides with glowing signage and reflected water bloom.',
       material_texture: 'Translucent polymer, salt-wet metal, and coral composite.',
-      render_quality: 'Energetic seapunk concept art with clean pathway readability.',
+      render_quality:
+        'Energetic seapunk render with clean pathway readability and tide-instrument glow.',
       spatial_distortion: 'Curving causeway-like depth through layered marine bands.',
       atmosphere: 'Motion, nightlife, and tidal futurity.',
       key_features:
         'Tide beacons, floating rail-link motifs, reef-lit edges, and neon current marks.',
       creative_brief:
-        'Preserve tidal neon-causeway grammar as a reusable style system: sinuous floating circulation, tide-instrument nightlife glow, and marine civic motion should remain coherent across subjects.',
+        'Electrify the input with tidal neon motion: cyan wave rails, ultraviolet tide bands, foam-white pylons, reef-lit edges, and salt-wet reflections make any subject feel sinuous, marine, and civic at night.',
     },
   },
   {
@@ -122,13 +123,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Aqua, opal pink, and sea-glass green.',
       lighting_setup: 'Bioluminescent glow with bright coastal reflections.',
       material_texture: 'Shell composite, translucent fins, and slick stone.',
-      render_quality: 'Lush marine concept with acoustic architecture cues.',
+      render_quality: 'Lush marine render with acoustic architecture cues and reef resonance.',
       spatial_distortion: 'Amphitheater curve around an inlet-like acoustic void.',
       atmosphere: 'Communal celebration, tidal resonance, and playful immersion.',
       key_features:
         'Reef choir shells, tidal step motifs, signal fins, and resonant coral ribbing.',
       creative_brief:
-        'Preserve reef choir-harbor grammar as a reusable style system: acoustic reef amphitheater geometry, luminous communal tidal rituals, and playful civic resonance should remain coherent across subjects.',
+        'Resonate the input as reef choir architecture: aqua amphitheater bands, opal-pink shell ribs, sea-glass fins, tidal step motifs, and bioluminescent acoustic glow make any subject feel communal and sonically alive.',
     },
   },
   {
@@ -143,13 +144,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Neon teal, lime, and bubblegum coral.',
       lighting_setup: 'Sunset neon mixed with underwater glow.',
       material_texture: 'Wet decking, translucent plastic, and kelp fiber.',
-      render_quality: 'Bright concept art with arcade clarity.',
+      render_quality: 'Bright seapunk render with arcade clarity and swaying kelp interface cues.',
       spatial_distortion: 'Pier-like perspective extending into underwater column rhythm.',
       atmosphere: 'Fun, drift, and coastal exuberance.',
       key_features:
         'Kelp cabinet motifs, boardwalk lantern marks, wave-game pods, and submerged arcade glow.',
       creative_brief:
-        'Preserve kelp arcade-boardwalk grammar as a reusable style system: pierline leisure circuitry, swaying kelp interface ornament, and sunset-neon coastal exuberance should remain coherent across subjects.',
+        'Play the input through kelp arcade energy: neon-teal pier strokes, lime kelp strands, bubblegum-coral pods, wet decking shine, and submerged cabinet glow make any subject feel coastal, playful, and drifting.',
     },
   },
   {
@@ -165,13 +166,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Pearl white, turquoise, and seafoam.',
       lighting_setup: 'Clear aquamarine daylight and soft water caustics.',
       material_texture: 'Mother-of-pearl panels, polished shells, and slick stone.',
-      render_quality: 'Clean marine urban concept with elegant circulation.',
+      render_quality: 'Clean marine render with elegant circulation and pearl-current flow logic.',
       spatial_distortion: 'Flow-based plan bending around current loops and pearl chamber repeats.',
       atmosphere: 'Ease, flow, and refined maritime living.',
       key_features:
         'Current chamber motifs, pearl plaza loops, tide bridge arcs, and opalescent water seams.',
       creative_brief:
-        'Preserve pearl current-district grammar as a reusable style system: flow-organized maritime urbanism, pearl-chamber circulation logic, and refined aquatic ease should remain coherent across subjects.',
+        'Pearl-route the input through aquatic ease: white opalescent loops, turquoise current channels, seafoam bridge arcs, shell-panel sheen, and caustic water seams make any subject feel flowing, refined, and maritime.',
     },
   },
   {
@@ -187,13 +188,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Aquamarine, coral, and dusk violet.',
       lighting_setup: 'Underwater bloom light with surface shimmer.',
       material_texture: 'Wet timber, coral lattice, and translucent roots.',
-      render_quality: 'Atmospheric undersea concept with botanical detail.',
+      render_quality: 'Atmospheric undersea render with botanical detail and tide-fed depth.',
       spatial_distortion: 'Downward peek into layered drift-garden depth.',
       atmosphere: 'Slow growth, tide patience, and luminous ecology.',
       key_features:
         'Drift roots, subpier planter motifs, tide-fed blooms, and suspended luminous flora.',
       creative_brief:
-        'Preserve drift garden-subpier grammar as a reusable style system: substructure hanging ecologies, tide-fed luminous root layering, and patient submerged growth should remain coherent across subjects.',
+        'Submerge the input under drift-garden patience: aquamarine bloom light, coral lattice arcs, dusk-violet depth, hanging root bundles, and tide-fed luminous flora make any subject feel slow-grown beneath structure.',
     },
   },
   {
@@ -208,12 +209,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Moonlit blue, hot pink, and silver.',
       lighting_setup: 'Lantern glow over rippling water and wet decking.',
       material_texture: 'Glass lanterns, painted metal, and salt-worn wood.',
-      render_quality: 'Vibrant night city concept with clear navigation cues.',
+      render_quality:
+        'Vibrant night seapunk render with clear navigation cues and tide-lantern luminance.',
       spatial_distortion: 'Meandering path through illuminated water-corridor depth.',
       atmosphere: 'Night stroll, orientation, and civic sparkle.',
       key_features: 'Tide lanterns, buoy markers, wet step motifs, and floating route glows.',
       creative_brief:
-        'Preserve tide lantern-quarter grammar as a reusable style system: tidal wayfinding luminance, meandering waterfront promenade guidance, and nocturnal civic sparkle should remain coherent across subjects.',
+        'Guide the input by tide lantern sparkle: moonlit-blue water paths, hot-pink route glows, silver buoy markers, glass lantern strings, and wet reflection curves make any subject feel nocturnal, oriented, and civic.',
     },
   },
   {
@@ -228,12 +230,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Teal, chrome, and coral.',
       lighting_setup: 'Bright sea light with reflective wet steel.',
       material_texture: 'Marine-grade metal, translucent fins, and sea-slick stone.',
-      render_quality: 'Technical seapunk infrastructure with playful polish.',
+      render_quality: 'Technical seapunk render with playful polish and wave-fabrication cues.',
       spatial_distortion: 'Industrial dock-like geometry softened by wave curves.',
       atmosphere: 'Making, flow, and oceanic adaptation.',
       key_features: 'Wave fins, fabrication cradles, marine-hand motifs, and shaped current seams.',
       creative_brief:
-        'Preserve waveforge dockyard grammar as a reusable style system: wave-shaped fabrication infrastructure, polished marine work rhythms, and adaptive oceanic making should remain coherent across subjects.',
+        'Forge the input through shaped current craft: teal wave fins, chrome wet steel, coral fabrication cradles, modular dock bands, and sea-slick stone make any subject feel made by adaptive ocean machinery.',
     },
   },
   {
@@ -249,12 +251,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Sea glass, turquoise, and blush coral.',
       lighting_setup: 'Sunlit water refractions and deep-blue aquarium glow.',
       material_texture: 'Glass, kelp mesh, and polished shell surfaces.',
-      render_quality: 'Luminous seapunk conservatory with crisp flora detail.',
+      render_quality:
+        'Luminous seapunk render with crisp flora detail and ocean-signal instrumentation.',
       spatial_distortion: 'Conservatory-dome composition with concentric wave-garden rhythm.',
       atmosphere: 'Curiosity, translation, and marine harmony.',
       key_features: 'Signal fronds, tide instruments, wave blooms, and glass shell caustics.',
       creative_brief:
-        'Preserve ocean signal-conservatory grammar as a reusable style system: wave-linguistic botanical instrumentation, concentric marine greenhouse systems, and luminous translational harmony should remain coherent across subjects.',
+        'Translate the input into ocean-signal botany: sea-glass shells, turquoise tide instruments, blush-coral fronds, concentric wave rings, and aquarium glow make any subject feel responsive, botanical, and marine-linguistic.',
     },
   },
   {
@@ -270,12 +273,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Lagoon blue, neon mint, and pearl.',
       lighting_setup: 'Twilight glow with mirrored lagoon reflections.',
       material_texture: 'Floating polymers, water glass, and brushed aluminum.',
-      render_quality: 'Sleek coastal infrastructure with readable signal logic.',
+      render_quality: 'Sleek coastal render with readable signal logic and lagoon relay calm.',
       spatial_distortion: 'Centered relay hub with radiating lagoon-like spokes.',
       atmosphere: 'Connection, distance translation, and quiet power.',
       key_features: 'Relay disks, buoy antennas, mirror-water channels, and calm signal rings.',
       creative_brief:
-        'Preserve lagoon relay-station grammar as a reusable style system: circular waterborne signal infrastructure, buoy-antenna relay choreography, and quiet connective power should remain coherent across subjects.',
+        'Relay the input across calm lagoon signals: lagoon-blue mirror channels, neon-mint buoy stacks, pearl relay disks, floating spoke bands, and reflected twilight rings make any subject feel connected and quietly powerful.',
     },
   },
   {
@@ -291,13 +294,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Opal, aquamarine, and violet.',
       lighting_setup: 'Sunset reflections and interior shell glow.',
       material_texture: 'Shell laminate, wet decking, and soft polymer.',
-      render_quality: 'Playful urban seascape with transit legibility.',
+      render_quality:
+        'Playful urban-seapunk render with transit legibility and shell-module rhythm.',
       spatial_distortion: 'Long waterline perspective with repeating shell modules.',
       atmosphere: 'Travel, lightness, and seaside civic life.',
       key_features:
         'Shell metro forms, waterline rail marks, wave shelters, and repeating modular bay rhythm.',
       creative_brief:
-        'Preserve shell metro-pier grammar as a reusable style system: tide-line shell transit modules, repeating pierline station rhythm, and lightweight seaside mobility should remain coherent across subjects.',
+        'Transit the input through shell metro lightness: opal module repeats, aquamarine waterline marks, violet sunset glow, shell-laminate kiosks, and wave shelter arcs make any subject feel mobile and seaside.',
     },
   },
   {
@@ -312,12 +316,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Bubblegum coral, aqua, and white foam.',
       lighting_setup: 'Bright diffused daylight with underwater bubble glints.',
       material_texture: 'Coral aggregate, translucent resin, and wet stone.',
-      render_quality: 'Cheerful coastal concept with crisp courtyard geometry.',
+      render_quality:
+        'Cheerful coastal render with crisp enclosure geometry and bubble-reef softness.',
       spatial_distortion: 'Inward pull framed by reefs, bubbles, and soft marine domes.',
       atmosphere: 'Playfulness, calm, and close-knit aquatic community.',
       key_features: 'Bubble reefs, courtyard-ring motifs, shell benches, and soft reef arch glow.',
       creative_brief:
-        'Preserve bubble reef-courtyard grammar as a reusable style system: inward coral-resin enclosure geometry, buoyant micro-community intimacy, and playful aquatic shelter should remain coherent across subjects.',
+        'Cushion the input inside bubble reef shelter: coral-pink dome clusters, aqua reef arches, white-foam glints, translucent resin walls, and shell bench curves make any subject feel buoyant, close-knit, and protected.',
     },
   },
   {
@@ -333,13 +338,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Seafoam, pale gold, and blue-black.',
       lighting_setup: 'Saltlit dusk with luminous waterline edges.',
       material_texture: 'Salted metal, polished shell, and translucent deck panels.',
-      render_quality: 'Clear civic seascape with forum structure.',
+      render_quality: 'Clear civic-seapunk render with forum structure and saltlit tidal ritual.',
       spatial_distortion: 'Forum-circle geometry over water with radiating dock-like spokes.',
       atmosphere: 'Dialogue, openness, and buoyant civic exchange.',
       key_features:
         'Saltlight poles, debate-ring motifs, floating step bands, and tidal civic glow.',
       creative_brief:
-        'Preserve saltlight forum-platform grammar as a reusable style system: floating deliberative civic rings, dusk saltlight debate staging, and buoyant democratic openness should remain coherent across subjects.',
+        'Open the input into saltlight civic exchange: seafoam forum rings, pale-gold waterline edges, blue-black dusk, salted metal poles, and floating dock spokes make any subject feel deliberative, buoyant, and public.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - organic-and-bio-materials
 visualDna:
-  aesthetic: Old house wall
+  aesthetic: Peeling painted surface
   form_and_line: Cracked flakes
   color_palette: White paint, Grey wood under
   lighting_setup: Shadows under flakes
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Curled edges
   atmosphere: Neglected, textured
   key_features: Random peeling
-  creative_brief: Summon the slow undressing of time where paint surrenders its grip in curled flakes, revealing the grey wood beneath like a secret long kept under layers of white. Shadows must pool under each lifting edge, casting miniature worlds of depth and texture across the neglected wall. Render the beauty of release, surfaces learning to let go one curled petal at a time.
+  creative_brief: 'Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a house wall.'
 avoidRules:
   - fresh paint
 assets:

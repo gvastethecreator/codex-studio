@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-004
 packId: pack_14
-name: Warden of Glass Thorns
+name: Glass-Thorn Warden Botany
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Dark warden with lethal crystal botany.
-  form_and_line: Slender armor, translucent thorns, and a regal silhouette.
+  aesthetic: Lethal crystal-botany noir with warden-like vigilance and refined menace.
+  form_and_line: Slender guarded silhouettes, translucent thorn geometry, regal verticals, and labyrinthine botanical contours.
   color_palette: Petrol green, smoked crystal, and cold silver.
   lighting_setup: Glow interno en espinas y rim glacial.
   material_texture: Fractal glass, fine metal, and nocturnal garden mist.
   render_quality: Refined concept art with unmistakable personality.
-  spatial_distortion: Layered labyrinthine garden depth.
+  spatial_distortion: Layered labyrinthine depth made from glass thorns and nocturnal botanical planes.
   atmosphere: Refined menace, mystery, and vigilance.
-  key_features: Crystal thorn crown, dark garden, severe stance.
-  creative_brief: A cursed greenhouse warden—beautiful and highly dangerous.
+  key_features: Crystal thorn crowns, smoked-glass foliage, petrol-green glow, severe guarded stance, and nocturnal garden mist.
+  creative_brief: >-
+    Thorn the input with glass-botany menace: petrol greens, smoked crystal,
+    glacial rims, translucent spike geometry, and severe warden-like verticals
+    should make any subject beautiful and dangerous without requiring a
+    greenhouse, humanoid guardian, armor suit, or literal garden setting.
 avoidRules: [photoreal, cartoonish, low-detail, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-004.webp }
 attributes:
   negativePrompt: photoreal, cartoonish, low-detail, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

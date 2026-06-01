@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Living doll, uncanny-valley porcelain, toy-cabinet nightmare
   form_and_line: Cracks (optional), ball-joint articulation, bisque-head proportion, glass-eye stare, hinged-limb segmentation
   color_palette: Pale White, Pink, bisque, rose-blush, glass-blue iris, crackle-gold, doll-flesh cream
-  lighting_setup: Glossy, display-cabinet spot, porcelain-reflection highlights, window-ledge daylight, toy-room dimness
+  lighting_setup: Glossy porcelain highlights, display-spot precision, soft window daylight, toy-room dimness
   material_texture: Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi
   render_quality: Creepy, perfect, dollmaker-artisan precision, cabinet-photograph stillness
   spatial_distortion: Joints
-  atmosphere: Uncanny, stiff, toy-room-after-dark unease, porcelain-fragility tension, glass-stare mystery
-  key_features: Shiny skin, glass eyes, ball joints, painted cheeks, mohair wig
-  creative_brief: Bisque fired to the temperature of a blush that will never fade, glass eyes catching display-cabinet light with the frozen attentiveness of something that was never alive but never stops watching. Ball joints articulate limbs into poses chosen by someone else, mohair wig perfectly arranged, the crackle-gold kintsugi line across the cheek the only evidence that this perfection was ever broken and reassembled with more care than the original creation.
+  atmosphere: Uncanny, stiff, porcelain-fragility tension, glass-stare mystery
+  key_features: Glossy bisque, glass-eye cues, ball joints, painted blush, crackle-kintsugi detail
+  creative_brief: >-
+    Porcelain-doll the input with bisque glaze, ball-joint segmentation,
+    painted blush, glass-eye shine, mohair-like softness and crackle-kintsugi
+    seams. Keep uncanny toy-cabinet tension without requiring a living doll,
+    display cabinet, face stare or posed limbs.
 avoidRules:
   - skin
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

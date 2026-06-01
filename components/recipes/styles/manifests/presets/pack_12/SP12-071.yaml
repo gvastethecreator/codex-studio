@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Urban-insurgency eco-tech en red metropolitana subterránea, orientada a control de estación y guerra de barricadas.
-  subject_treatment: Células rebeldes con gear reciclado avanzado y roles de avance, soporte y sabotaje.
+  aesthetic: Gramática urban-insurgency eco-tech con barricadas, control territorial y gear reciclado avanzado.
+  subject_treatment: Convierte el input en célula rebelde, barricada, nodo de sabotaje, soporte o avance táctico.
   color_and_tone: Verde neon, gris hormigón y naranja señal para claridad de facción y objetivo.
   lighting_and_shadow: Tubos LED y sombras profundas de túnel para lectura de cobertura y riesgo.
   texture_and_material: Musgo artificial, metal urbano, pintura descascarada y estructuras improvisadas.
-  camera_and_composition: Estación central tomada con barricadas, rutas de flanco y nodos críticos visibles.
+  camera_and_composition: Barricadas, rutas de flanco y nodos críticos visibles sin exigir metro o estación.
   atmosphere_and_mood: Urgente, combativa y esperanzadamente política.
   rendering_and_quality: Insurgent-faction gameplay art con legibilidad de lanes, puntos de presión y control territorial.
 avoidRules:

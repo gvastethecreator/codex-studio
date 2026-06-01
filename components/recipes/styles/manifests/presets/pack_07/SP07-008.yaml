@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-008
 packId: pack_07
 name: Japanese Zen
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Zen doméstico de contención extrema, vacío disciplinado y materialidad natural silenciosa.
   form_and_line: Retícula modular baja, líneas horizontales contenidas, paneles translúcidos y focos asimétricos de vacío.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Serene, reverente, lenta y enfocada.
   key_features: Retícula baja, filtros translúcidos, focos sobrios, materiales orgánicos desnudos y ritmo contenido.
   creative_brief: >-
-    Define el preset como una gramática de calma modular: retícula, filtro de
-    luz y vacío intencional. La transferencia debe sostener quietud material y
-    precisión ritual sin depender de escenas tradicionales específicas.
+    Define el preset como una gramática de calma modular: retícula, filtro de luz y vacío intencional. La transferencia
+    debe sostener quietud material y precisión ritual sin depender de escenas tradicionales específicas. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - clutter
   - western
@@ -36,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

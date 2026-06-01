@@ -9,16 +9,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Hard Surface And Industrial Cgi',
     negativePrompt: 'opaque, skin',
     style: {
-      aesthetic: 'See-through object',
+      aesthetic: 'X-ray transparency render',
       form_and_line: 'Internal structure',
       color_palette: 'Blue/White inverted, clinical spectrum',
       lighting_setup: 'Internal glow, self-illuminated core',
-      material_texture: 'Bone, metal, density-based',
+      material_texture: 'Density-based internal layers',
       render_quality: 'Medical, sci-fi, diagnostic scan',
       atmosphere: 'Analytical, cold, forensic insight',
       key_features: 'Internal view, see-through silhouette',
       creative_brief:
-        'Opacity becomes optional — the outer shell dissolves into a ghost of itself, and internal structures reveal themselves like blueprints given physical form. Bone, circuitry, and mechanical skeletons glow from within in clinical blue-white, density-based transparency mapping hidden complexity to visible light. The image reads as a diagnostic scan elevated to art: forensic, cold, and strangely intimate in its exposure of what was never meant to be seen.',
+        'Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal structure and diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent structural layers without forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Perfect, engineered, mathematical precision',
       key_features: 'Smoothness, G2 continuity',
       creative_brief:
-        'Curves so smooth they vanish into mathematics — zebra-stripe reflections run across Class-A surfaces like diagnostic poetry, proving with every unbroken band that G2 continuity holds. No polygon dares show its face; nurbs define form as pure equation rendered into gloss. The image channels automotive design studios and CAD bays at dawn, where perfection is measured in the uninterrupted flow of a highlight across a fender.',
+        'Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection checks, G2 continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender, or design-studio setup is required. Apply Nurbs Surface as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Industrial, complex, constructed chaos',
       key_features: 'Dense detail, mechanical storytelling',
       creative_brief:
-        'A thousand borrowed parts assemble into something that feels designed rather than composed — greebles cluster at panel seams like barnacles on a starship hull, and ambient occlusion pools in the crevices of mechanical density. Industrial grey and worn metal tell stories of fabrication and repair, every rivet and panel line a fragment of worldbuilding. The image captures blockbuster sci-fi concept art at its most convincing: constructed chaos that somehow reads as functional.',
+        'Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and ambient-occlusion pockets that imply functional assembly. It can hint at starship/mecha engineering when suitable, but must not force a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -72,7 +72,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Clean, modern, translucent UX',
       key_features: 'Floating cards, depth-blur layers',
       creative_brief:
-        'Interface panels float in a hierarchy of blur — each card catches the colors behind it and softens them into frosted abstraction, and white borders trace the edges of translucent rectangles like window frames into another layer. Depth-blur cascades through the z-stack, and diffuse transmission gives glass its weight without its opacity. The image is modern UI rendered tactile: a glassmorphism dream where every surface is a window and every window is a promise of what lies beneath.',
+        'Interface panels float in a hierarchy of blur — each card catches the colors behind it and softens them into frosted abstraction, and white borders trace the edges of translucent rectangles like window frames into another layer. Depth-blur cascades through the z-stack, and diffuse transmission gives glass its weight without its opacity. The image is modern UI rendered tactile: a glassmorphism dream where every surface is a window and every window is a promise of what lies beneath. Apply Glassmorphism UI as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Urban, cool, nighttime energy',
       key_features: 'Tube connections, gas-glow realism',
       creative_brief:
-        'Bent glass tubes filled with noble gases emit electric red and blue — the glow spills onto the brick wall behind in a soft ambient bloom, and metal support fittings anchor the sign with industrial honesty. Tube connections and transformer housings render with gas-glow realism, and the wall reflection bleeds color into darkness like a bar sign at 2AM. The image is urban nightlife rendered in three dimensions: a neon sign you could walk up to and feel the warmth buzzing through the glass.',
+        'Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and emissive spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an urban setting. Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -99,16 +99,16 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Hard Surface And Industrial Cgi',
     negativePrompt: 'organic, soft',
     style: {
-      aesthetic: 'Robot or gun',
+      aesthetic: 'Hard-surface mecha engineering',
       form_and_line: 'Bevels, panel lines',
       color_palette: 'Gunmetal, painted metal, military-grade',
       lighting_setup: 'Rim light, mechanical edge-pop',
       material_texture: 'Scratched metal, machined wear',
-      render_quality: 'Mech design, precise, weapon-grade',
-      atmosphere: 'Industrial, military, tactical grit',
+      render_quality: 'Mech-design precision, machined credibility',
+      atmosphere: 'Industrial, tactical, engineered grit',
       key_features: 'Functional parts, panel-line definition',
       creative_brief:
-        'Every bevel catches rim light like a knife edge, and panel lines carve functional logic across gunmetal surfaces — machined wear and scratched metal tell stories of assembly, disassembly, and combat. The geometry serves purpose before aesthetics: every greeble is a hypothetical component, every seam a maintenance access point. The image radiates weapon-grade precision, mech design where form follows function into the realm of tactical beauty.',
+        'Give the input hard-surface/mecha discipline: bevel hierarchy, panel-line logic, service seams, machined wear and believable component density. If a character or object exists, it may mechanize toward mecha; avoid forcing weapons, combat, or military staging. Apply Hard Surface Modeling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
     },
   },
   {
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Futuristic, body horror, identity tension',
       key_features: 'Seamless blend, implant integration',
       creative_brief:
-        'Chrome meets skin at a seam that is neither wound nor ornament — integration lines trace the border between born and built, and LED indicators glow beneath translucent dermal layers like technology learning to blush. The bio-mech fusion renders the transition from metal to flesh with unsettling seamlessness, prosthetic forms that feel less like replacement and more like evolution. The image channels Deus Ex transhumanism: identity tension rendered in chrome and tissue, the augmented self asking where the body ends and the machine begins.',
+        'Apply cybernetic integration to the input: chrome/organic seams, LED status glows, prosthetic geometry and bio-mech fusion lines. If a body or character exists, augment it; otherwise embed transhuman interface cues into the subject without forcing flesh, portrait framing or body horror.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

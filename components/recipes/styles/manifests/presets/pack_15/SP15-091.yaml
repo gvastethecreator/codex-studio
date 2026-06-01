@@ -12,14 +12,14 @@ visualDna:
   color_palette: Burgundy, brass, and black.
   lighting_setup: Stage spotlights and chandelier shimmer.
   material_texture: Velvet curtains, brass instruments, and polished wood.
-  render_quality: Theatrical concept with dramatic focus control.
+  render_quality: Theatrical rhythmic render with dramatic focus control and visible tempo machinery.
   spatial_distortion: Stage-front-like perspective into layered rhythm tiers.
   atmosphere: Celebratory precision and musical elegance.
   key_features: Gear organs, tempo wheels, clockwork rig silhouettes, and brass acoustic fins.
   creative_brief: >-
-    Preserve gearsong theater grammar as a reusable style system:
-    orchestral timing machinery, proscenium gear dramaturgy, and
-    celebratory mechanical musicality should remain coherent across subjects.
+    Score the input with gearsong mechanics: burgundy stage shadows, brass
+    acoustic fins, tempo-wheel repeats, proscenium gear arcs, and spotlighted
+    rig silhouettes make any subject feel musical, timed, and celebratory.
 avoidRules: [photoreal, silly-cartoon, cyberpunk-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-091.webp }
 attributes:

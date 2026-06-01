@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Polar-siege de bastión auroral, orientado a defensa por capas, ruptura de línea y fallback táctico.
-  subject_treatment: Defensores coordinados y asaltantes de brecha con separación de clase legible bajo presión.
+  aesthetic: Gramática polar-siege auroral con defensa por capas, ruptura de línea y fallback táctico.
+  subject_treatment: Convierte el input en defensor, asaltante de brecha, capa de bastión, ruta o clase bajo presión.
   color_and_tone: Verdes aurora, cian acero, pizarra tormenta y rojos de señal para legibilidad bélica.
   lighting_and_shadow: Baño boreal, reflejos helados rasantes y choke-points iluminados por explosión.
   texture_and_material: Placas de hielo talladas por viento, mampostería escarchada y hierro marcado por impacto.
-  camera_and_composition: Vista multi-tier con vectores de ataque, jerarquía de lanes y zonas de repliegue.
+  camera_and_composition: Multi-tier, vectores de ataque y zonas de repliegue sin exigir bastión concreto.
   atmosphere_and_mood: Heroica, urgente y de resistencia extrema.
   rendering_and_quality: Warfront gameplay key-art con claridad de clase, ruta y tempo de asedio.
 avoidRules:

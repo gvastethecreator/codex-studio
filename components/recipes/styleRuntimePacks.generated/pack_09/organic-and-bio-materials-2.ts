@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, pure',
       key_features: 'Veining',
       creative_brief:
-        'Sculpt light through the translucent skin of Carrara marble, where grey veins drift like smoke frozen in alabaster across a field of pure white. The material should glow as if lit from within, cold to the eye but warm in its perfection. This is stone that dreams of being cloud, the ceiling of the Sistine rendered as pure surface.',
+        "Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical architecture or a fixed sculpture.",
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rustic, solid',
       key_features: 'Grain direction',
       creative_brief:
-        'Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the fibrous resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let the wood breathe with the dry warmth of a lumber yard at dawn, honest and unadorned.',
+        'Tactile direction for raw oak: the grain tells a story of slow growth and sun-filled years. Capture the fibrous resistance beneath the fingertip, where every ridge and furrow is a line of natural poetry. Let the wood breathe with the dry warmth of a lumber yard at dawn, honest and unadorned. Use Oak Wood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Elegant, rich',
       key_features: 'Smooth surface',
       creative_brief:
-        'Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not applied but released from within, a slow exhale of centuries.',
+        'Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not applied but released from within, a slow exhale of centuries. Use Mahogany as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Bio Materials',
     negativePrompt: 'fur, skin',
     style: {
-      aesthetic: 'Reptile skin',
+      aesthetic: 'Reptile scale tessellation',
       form_and_line: 'Overlapping scales',
       color_palette: 'Green/Black pattern',
       lighting_setup: 'Iridescent sheen',
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cold, sleek',
       key_features: 'Scale grid',
       creative_brief:
-        'Compose the dry tessellation of snake scales overlapping in mathematical precision across a flexible armor of keratin, each scale a shield in an endless grid of green and black. Iridescence should flicker at the edges like a secret the surface cannot quite keep. The material must feel sleek and alien, a geometry born of silent movement.',
+        'Compose snake-scale tessellation as flexible armor over the input: overlapping green-black shields, dry keratin smoothness, precise scale grid, and iridescent edge flicker. If a reptile or creature is present, sharpen that identity; otherwise treat the subject as alien armored geometry without requiring literal skin or a snake body.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Creepy, old',
       key_features: 'Crack network',
       creative_brief:
-        'Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The crack network should spread organically like roots seeking water, each line a record of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure.',
+        'Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The crack network should spread organically like roots seeking water, each line a record of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure. Use Porcelain as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -109,12 +109,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Black or Red',
       lighting_setup: 'High specularity',
       material_texture: 'Smooth, sticky',
-      render_quality: 'Fetish, superhero',
+      render_quality: 'Sleek, high-specular',
       spatial_distortion: 'Tight fit',
       atmosphere: 'Intense, sleek',
       key_features: 'Highlights',
       creative_brief:
-        'Compose the liquid tension of shiny latex stretched tight over form, where specular highlights run like liquid mercury along curves of pure reflectivity, mapping the surface with rivers of white glare. The material should feel slick and second-skin close, a surface that erases the boundary between object and its own light. Render the intensity of absolute smoothness, gleaming and faintly unnerving.',
+        'Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.',
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Trash, storage',
       key_features: 'Corrugation',
       creative_brief:
-        'Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait.',
+        'Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -142,17 +142,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Bio Materials',
     negativePrompt: 'dry, desert',
     style: {
-      aesthetic: 'Rainy road',
-      form_and_line: 'Road markings',
+      aesthetic: 'Wet asphalt sheen',
+      form_and_line: 'Slick grain and reflective streaks',
       color_palette: 'Black, Grey',
       lighting_setup: 'Reflection of lights',
       material_texture: 'Grainy tar',
-      render_quality: 'City night, noir',
+      render_quality: 'Noir, reflective',
       spatial_distortion: 'Puddles',
       atmosphere: 'Urban, dark',
       key_features: 'Gravel grain',
       creative_brief:
-        'Render the noir gleam of wet asphalt where city lights dissolve into streaks of color on black grain, diffused by a thin skin of rainwater that turns every road marking into a luminous guide. The surface should feel heavy and reflective, a dark mirror holding the inverted sky in scattered puddles. Capture the romance of the ordinary, where a road becomes a river of reflected neon.',
+        'Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street layout.',
     },
   },
   {
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Organic And Bio Materials',
     negativePrompt: 'fresh paint',
     style: {
-      aesthetic: 'Old house wall',
+      aesthetic: 'Peeling painted surface',
       form_and_line: 'Cracked flakes',
       color_palette: 'White paint, Grey wood under',
       lighting_setup: 'Shadows under flakes',
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Neglected, textured',
       key_features: 'Random peeling',
       creative_brief:
-        'Summon the slow undressing of time where paint surrenders its grip in curled flakes, revealing the grey wood beneath like a secret long kept under layers of white. Shadows must pool under each lifting edge, casting miniature worlds of depth and texture across the neglected wall. Render the beauty of release, surfaces learning to let go one curled petal at a time.',
+        'Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a house wall.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, fire',
       key_features: 'Rectangular cracks',
       creative_brief:
-        'Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as durable beauty.',
+        'Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as durable beauty. Use Burnt Wood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dangerous, intense',
       key_features: 'Heat',
       creative_brief:
-        'Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming.',
+        'Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Delicate, ocean',
       key_features: 'Luster',
       creative_brief:
-        "Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience.",
+        "Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface without source or destination. The material should glow without emitting, reflecting a spectrum that seems to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster born of slow patience. Use Mother of Pearl as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Unfinished, work',
       key_features: 'Knots',
       creative_brief:
-        'Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient.',
+        'Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

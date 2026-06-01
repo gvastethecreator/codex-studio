@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Spherical
   atmosphere: Delicate, colorful
   key_features: Surface tension
-  creative_brief: Architecture of surface tension, iridescent domes balancing on the edge of nothing. A universe held in a film thinner than thought, swirling with colors borrowed from light itself.
+  creative_brief: >-
+    Apply macro-bubble optics to the input: fragile film domes, rainbow
+    interference, curved reflections, meniscus edges, and magnified surface
+    tension should transform forms into delicate optical membranes.
 avoidRules:
   - flat
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-071
 packId: pack_14
-name: Longnight Mead Hall
+name: Longnight Saga Doctrine
 category: 8. Mythic — Norse Sagas
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, norse-myth]
 visualDna:
-  aesthetic: Communal hall where sagas and strategy are forged in winter nights.
-  form_and_line: Beam-heavy nave, long table axis, and hearth symmetry.
+  aesthetic: Longnight saga doctrine where story, strategy, and winter brotherhood merge.
+  form_and_line: Beam-heavy nave cues, long table axis, and hearth symmetry.
   color_palette: Ember orange, soot black, and timber brown.
   lighting_setup: Hearth glow and narrow roof-slit moonlight.
   material_texture: Carved wood, fur textiles, and hammered cups.
   render_quality: Warm-noir interior concept with crisp detail.
-  spatial_distortion: Deep hall perspective to a carved high seat.
+  spatial_distortion: Deep hall-like perspective toward a carved high-seat focus.
   atmosphere: Brotherhood, tension, and ancestral voice.
-  key_features: Saga carvings, feast banners, and oath blade rack.
-  creative_brief: A Norse hall where stories function as military doctrine.
+  key_features: Saga carvings, feast banners, oath blade rack.
+  creative_brief: Apply longnight saga doctrine to the input, making stories function as military memory without requiring a mead hall.
 avoidRules: [photoreal, kawaii, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-071.webp }
 attributes:
   negativePrompt: photoreal, kawaii, cyberpunk, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-norse-sagas,
+    categoryName: 8. Mythic — Norse Sagas,
+    tags: [mythic-noir-curated-vault, mythic, norse-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

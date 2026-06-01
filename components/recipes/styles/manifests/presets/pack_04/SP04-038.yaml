@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Majestic, nostalgic, civic-romantic
   key_features: Serif titling, horizontal strata, landmark silhouette simplification
   creative_brief: >-
-    Translate landscape into iconic poster forms: layered silhouettes, limited inks, and strong typographic framing. Keep the WPA travel-poster spirit while avoiding dependence on one specific landmark composition.
+    Apply WPA travel-poster screenprint grammar to any input: simplified landmark-like silhouettes,
+    horizon strata, limited earth-tone inks, flat scenic banding, and civic nostalgia should create
+    poster majesty without requiring national parks, mountains, titles, specific landmarks, or
+    travel ads.
 avoidRules:
   - photo
   - detailed

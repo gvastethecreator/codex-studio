@@ -12,19 +12,28 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Youth-shonen velocity style with disciplined kinetic iconography, optimistic momentum arcs, and early-digital action clarity
-  form_and_line: Clean directional inking, compact contour economy, speed-line vectors, emblematic silhouette rhythm, readable motion architecture
-  color_palette: Saturated primaries with warm earth underlay, energetic accent spikes, high-contrast cel blocks, restrained shadow neutrals
+  aesthetic: >-
+    Youth-shonen velocity style with disciplined kinetic iconography, optimistic momentum arcs, and early-digital action
+    clarity
+  form_and_line: >-
+    Clean directional inking, compact contour economy, speed-line vectors, emblematic silhouette rhythm, readable motion
+    architecture
+  color_palette: >-
+    Saturated primaries with warm earth underlay, energetic accent spikes, high-contrast cel blocks, restrained shadow
+    neutrals
   lighting_setup: Balanced key-fill anime model with brisk rim accents, controlled highlight pops, and smooth gradient transitions
   material_texture: Matte cel surface discipline, subtle broadcast-era noise, clean plate layering, minimal micro-surface clutter
   render_quality: Early-2000s digital-cel finish with crisp action legibility, stable compositing, and confident color separation
   spatial_distortion: Forward-leaning perspective thrust, elastic action staging, and trajectory-oriented framing for kinetic storytelling
   atmosphere: Driven, hopeful, kinetic, focused, resilient
-  key_features: Kinetic motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting
+  key_features: >-
+    Kinetic motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed
+    setting
   creative_brief: >-
-    Preserve a youthful combat grammar through motion-vector linework,
-    emblematic shape cues, and saturated cel dynamism so the style transfers
-    across subjects without relying on a specific locale or accessory.
+    Preserve a youthful combat grammar through motion-vector linework, emblematic shape cues, and saturated cel dynamism
+    so the style transfers across subjects without relying on a specific locale or accessory. Apply this anime/IP-title
+    grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic
+    cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-021.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

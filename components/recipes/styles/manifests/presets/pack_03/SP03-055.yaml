@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Immersive world
+  aesthetic: Immersive VR presence
   form_and_line: 360 degree feel
   color_palette: Vibrant
   lighting_setup: Baked
@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Wide FOV
   atmosphere: Presence, digital, embodied experience
   key_features: Player scale, 180-degree depth
-  creative_brief: 'The frame stretches wide beyond peripheral vision — baked global illumination wraps an optimized world in real-time-ready beauty, and player-scale references anchor the scene in embodied presence. Wide FOV distorts the edges just enough to suggest a 360-degree panorama waiting beyond the crop. The image is a VR headset''s promise: immersion you could step into, a digital environment that feels less like a render and more like a place you''ve already visited.'
+  creative_brief: >-
+    Render the input with VR presence: player-scale cues, stereo-depth thinking,
+    peripheral composition, parallax-ready layers and interaction-distance
+    clarity. It can feel inhabitable without requiring a full room, environment
+    or place narrative.
 avoidRules:
   - 2d
   - flat

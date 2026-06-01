@@ -12,14 +12,14 @@ visualDna:
   color_palette: Stone ivory, brass, and sky blue.
   lighting_setup: Direct solar shafts with clock-shadow precision.
   material_texture: Carved limestone, gilded bronze, and linen drape.
-  render_quality: Formal public architecture with symbolic clarity.
+  render_quality: Formal civic-clockwork render with symbolic clarity and solar-shadow precision.
   spatial_distortion: Axial symmetry toward a governance-like timekeeping focal point.
   atmosphere: Deliberation, accountability, and measured power.
   key_features: Sundial court geometry, vote-lever motifs, council meters, and brass noon lines.
   creative_brief: >-
-    Preserve sundial government-steps grammar as a reusable style system:
-    solar-calibrated civic authority, axial deliberative architecture, and
-    measured public accountability should remain coherent across subjects.
+    Measure the input through sundial governance: stone-ivory terraces, brass
+    noon lines, sky-blue solar shafts, vote-lever motifs, and axial clock-shadow
+    geometry make any subject feel accountable, deliberative, and public.
 avoidRules: [photoreal, dystopian, cyber-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-090.webp }
 attributes:

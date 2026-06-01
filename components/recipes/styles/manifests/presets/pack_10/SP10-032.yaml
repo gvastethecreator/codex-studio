@@ -12,16 +12,16 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Empty hallway/pool
+  aesthetic: Liminal absence field
   form_and_line: Perspective
   color_palette: Beige, fluorescent
   lighting_setup: Flat artificial
-  material_texture: Carpet, tile
+  material_texture: Carpet, tile, synthetic surfaces
   render_quality: Unsettling, familiar
   spatial_distortion: None
   atmosphere: Eerie, lonely
-  key_features: No people
-  creative_brief: Places built for transit but emptied of purpose, fluorescent lights humming over carpets no one walks. The architecture remembers people who were never there, and the air thickens with the echo of absence.
+  key_features: Transitional emptiness
+  creative_brief: Apply liminal-space unease as atmosphere over the input with flat fluorescent light, beige synthetic surfaces, over-clean emptiness, transitional perspective, and a sense of purpose removed. If hallway, pool, mall, office, or room exists, empty it; otherwise make subject and background feel stranded in functional space without requiring architecture.
 avoidRules:
   - people
   - life
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

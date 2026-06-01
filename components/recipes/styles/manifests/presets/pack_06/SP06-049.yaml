@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Simplified
   atmosphere: Modern, precise, frictionless
   key_features: Infinite resolution
-  creative_brief: Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies.
+  creative_brief: >-
+    Apply flat vector-art construction to any input: precise Bezier contours,
+    deliberate anchor-point curves, solid color fills, clean geometric hierarchy,
+    and resolution-independent edges. Keep scalable graphic clarity without
+    requiring icons, logos, infographics, app UI, or brand marks.
 avoidRules:
   - photo
   - realistic

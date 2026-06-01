@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Curious, scholarly, warm, exacting, alive.
   key_features: Brass lens halos, herbarium vein patterning, pressure-gauge filigree, vellum labels as abstract marks, and living-machine tenderness.
   creative_brief: >-
-    Preserve steam herbarium optics as a reusable style system: botanical
-    classification, brass magnification, and delicate pressure-era instrument
-    logic should transform any subject without requiring plants, lab props, or
-    a literal observatory.
+    Classify the input through steam herbarium optics: brass lens halos,
+    fern-green caustics, vellum fiber grids, pressure-gauge filigree, and
+    delicate botanical vein logic transform any subject without requiring plants,
+    lab props, or a literal observatory.
 avoidRules: [photoreal, neon-cyber, plastic-minimal, war-machine, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-128.webp }
 attributes:

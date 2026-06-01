@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Care, trust, shared resilience, public dignity, and clean lunar humidity.
   key_features: Aqua basin curves, pod ovals, transparent green partitions, rose-beige softness, and public-care wayfinding.
   creative_brief: >-
-    Apply moonwater clinic-arcade as an abstract style treatment: make any
-    subject feel cared for, transparent, water-cooled, softly clinical, and
-    publicly trustworthy.
+    Care for the input through moonwater public health design: aqua basin curves,
+    rose-beige softness, algae-glass partitions, pod ovals, and clean civic
+    beacons make any subject feel transparent, water-cooled, and trustworthy.
 avoidRules: [photoreal, dystopian-lab, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-079.webp }
 attributes:

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Magnetic field
   atmosphere: Dark, sci-fi
   key_features: Spikes
-  creative_brief: Liquid metal rises in defiance of gravity, sculpted by invisible fields into alien architectures. Each spike is a negotiation between chaos and order, the magnetic and the material.
+  creative_brief: >-
+    Apply ferrofluid magnetism to the input: glossy black liquid metal, field-led
+    spikes, radial clustering, and alien surface tension should make any subject
+    feel pulled into magnetic order.
 avoidRules:
   - soft
   - colorful
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

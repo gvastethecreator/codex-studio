@@ -14,14 +14,18 @@ tags:
 visualDna:
   aesthetic: Partially invisible, refraction-mirage wonder, stealth-magic concealment
   form_and_line: Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended-garment shape
-  color_palette: Background, environment-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, reveal-flesh
+  color_palette: Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones
   lighting_setup: Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge
   material_texture: Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo
   render_quality: Magic, stealth, optical-illusion wonder, wizard-cloak mystery
   spatial_distortion: Missing parts
   atmosphere: Hidden, magic, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry
   key_features: Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam
-  creative_brief: A body dissolved into the background except where refractive distortion betrays the outline, the cloak bending light around the wearer like a river bends around a stone. A hand that is only visible where it catches chromatic rainbow at the edge, the rest surrendered to transparency, the garment suspended in the paradoxical tension between presence and absence, between being seen and being only the disturbance that seeing leaves behind.
+  creative_brief: >-
+    Apply invisibility-cloak optics to the input: refractive edge distortion,
+    background-matching transparency, glass-blue seams, chromatic fringe and
+    adaptive-camo shimmer. Preserve the disappearing-presence effect without
+    forcing a body, hand reveal, wizard cloak scene or specific environment.
 avoidRules:
   - visible
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

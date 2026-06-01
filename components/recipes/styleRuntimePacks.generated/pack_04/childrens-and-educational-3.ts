@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, comedic, lighthearted',
       key_features: 'Oversized head, tiny limbs, exaggerated props and expression icons',
       creative_brief:
-        'Prioritize silhouette charm and immediate facial readability through extreme proportion stylization. Keep forms simple, bouncy, and high-contrast so characters remain expressive at small sizes across stickers, panels, and UI-style contexts.',
+        'Prioritize silhouette charm through extreme proportion stylization. If a character or mascot exists, use oversized head, tiny limbs and expression icons; otherwise apply the style to any input by translating the subject into bouncy simplified chibi proportions usable across stickers, panels and UI-style contexts.',
     },
   },
   {
@@ -39,7 +39,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Handmade, rebellious, art-press energy',
       key_features: 'Overprint collisions, halftone grain fields, registration mismatch signatures',
       creative_brief:
-        'Embrace riso mechanics as core style grammar: limited inks, imperfect registration, and tactile noise. Compose around overprint behavior and channel offset so each image feels materially printed rather than digitally simulated.',
+        'Apply risograph mechanics to any input: limited soy-ink channels, imperfect registration, overprint collisions, halftone grain, roller noise, and paper absorbency should make the image materially printed without requiring zines, posters, typography, badges, flyers, or fixed print-shop content.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tender, pastoral, comforting',
       key_features: 'White-space breathing room, feathered wash edges, subtle detail accents',
       creative_brief:
-        'Maintain a Beatrix Potter-style balance of observational nature detail and gentle anthropomorphic charm. Use transparent watercolor behavior, soft edge transitions, and paper-white breathing space to keep imagery warm, calm, and timelessly storybook.',
+        'Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft edge transitions, observational detail, and paper-white breathing space should feel gentle and timeless without requiring animals, gardens, cottages, children, pastoral scenery, or fixed storybook vignettes.',
     },
   },
   {
@@ -77,7 +77,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bright, playful, exploratory, classroom-friendly',
       key_features: 'Overlap stratification, cut-edge rhythm, texture-rich color blocks',
       creative_brief:
-        'Build imagery through layered cut-paper construction rather than drawn contour modeling. Preserve Eric Carle-style tactile warmth: irregular edges, painted paper variation, and clear shape hierarchy that stays legible across diverse subjects and compositions.',
+        'Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color blocks, shallow cast shadows, fiber texture, and clear shape hierarchy should replace drawn contour modeling without requiring classroom subjects, animals, pages, props, or fixed story scenes.',
     },
   },
   {
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Humorous, lively, irreverent',
       key_features: 'Ink flicks, broken contour continuity, lively splash punctuation',
       creative_brief:
-        'Keep the line alive and unruly: fast marks, playful distortions, and watercolor accents that support humor without over-rendering. Preserve Quentin Blake-like spontaneity while keeping compositions open enough for broad prompt reuse.',
+        'Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours, watercolor splashes, spiky gesture exaggeration, and lively splatter punctuation should carry humor without requiring characters, animals, jokes, children, or fixed story vignettes.',
     },
   },
   {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Colorful, design, atomic-age optimism, playful modernism',
       key_features: 'Brush texture, dry-brush stroke, gouache opacity',
       creative_brief:
-        'Preserve identity through mid-century gouache design language: opaque geometric shape choreography, dry-brush texture, and warm optimistic color relationships should carry the style without referencing specific studios.',
+        'Apply mid-century gouache design to any input: opaque geometric shape choreography, dry-brush texture, chalky matte color, and warm optimistic relationships should carry the style without requiring classrooms, posters, families, interiors, product diagrams, or specific studio references.',
     },
   },
   {
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Taxonomic, scholarly, measured',
       key_features: 'Nomenclature labels, anatomical callouts, curated specimen grouping',
       creative_brief:
-        'Illustrate flora as study objects with clear morphology and readable annotation hierarchy. Balance scientific precision and aesthetic restraint through clean ink structure, transparent tinting, and plate-style composition adaptable to varied species.',
+        'Apply vintage scientific-plate logic to the input: clean ink contour, transparent tinting, annotation hierarchy and orthographic specimen clarity. If flora exists, make morphology botanical; otherwise use field-guide organization without forcing plants or a species study.',
     },
   },
   {
@@ -156,7 +156,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Optimistic, informative, high-clarity',
       key_features: 'Modular icon blocks, geometric metaphors, hierarchy-first composition',
       creative_brief:
-        'Translate complex concepts into concise geometric storytelling. Keep Kurzgesagt-style readability through consistent shape language, semantic color coding, and modular composition that remains adaptable across topics without anchoring to fixed narrative scenes.',
+        'Apply flat educational vector grammar to any input: geometric primitives, semantic color coding, modular icon blocks, rounded construction, and hierarchy-first composition should explain form clearly without requiring charts, planets, birds, UI labels, narration panels, or fixed explainer scenes.',
     },
   },
   {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Workshop-iterative, practical, form-discovery focus',
       key_features: 'Volumetric hierarchy, scale cues, handcrafted assembly traces',
       creative_brief:
-        'Emphasize architecture as mass and proportion rather than facade detail. Preserve handcrafted model artifacts—cut edges, seam joins, and board texture—so the image reads as an early design prototype built for fast spatial decision-making.',
+        'Apply architecture-massing model style to any input: foam-core planes, blocky volume studies, cast-shadow massing, chipboard texture, seam lines, and scale-model lighting. If no architecture exists, reinterpret the subject as spatial mass and structural rhythm without requiring buildings, city blocks, or a physical maquette.',
     },
   },
   {
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Swatch matrix, labeled material zones, detail zooms, controlled comparison framework',
       creative_brief:
-        'Present surface behavior as a system, not decoration. Pair a clean base design with labeled texture and finish callouts so each material choice is legible, comparable, and production-actionable across multiple manufacturing or rendering interpretations.',
+        'Apply material-texture exploration-sheet logic to any input: surface swatches, edge tests, wear patterns, reflectance notes as visual marks, close-up inserts, and material contrast. It can stylize objects, characters, spaces, or abstractions without requiring labels, a product board, or literal texture samples.',
     },
   },
   {
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison',
     style: {
-      aesthetic: 'Creature size-comparison chart with educational scale framing',
+      aesthetic: 'Size-comparison chart with educational scale framing',
       form_and_line: 'Baseline-aligned silhouettes with measurement ticks and reference markers',
       color_palette: 'Neutral comparative scheme with restrained atmospheric scaling cues',
       lighting_setup: 'Consistent silhouette rim/read light for cross-subject legibility',
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Human and real-world benchmarks, incremental height logic, clear unit hierarchy',
       creative_brief:
-        'Communicate extreme scale through disciplined comparative layout. Anchor every creature to shared baseline and measurement context, combining familiar reference objects with escalating silhouettes so perceived magnitude remains immediate and unambiguous.',
+        'Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating silhouettes, cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the subject into abstract scale-study forms without requiring monsters, humans for scale, chart labels, or a creature lineup.',
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity',
       creative_brief:
-        'Present anatomy as a readable structural system. Use consistent labeling, overlay logic, and view alignment so skeletal framework, muscular volume, and connective pathways can be studied independently and in relation without stylistic ambiguity, preserving a Leonardo da Vinci-informed observational rigor.',
+        'Apply anatomy-reference-sheet structure to any input: layered construction, skeletal-like scaffolds, muscle-flow analogues, cutaway marks, and educational diagram composition. If no biological body exists, convert forms into anatomical systems without requiring humans, animals, labels, or medical realism.',
     },
   },
   {
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Tough, nostalgic, craft-shop heritage, ceremonial permanence',
       key_features: 'Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes',
       creative_brief:
-        'Design for immediate recognition and long-term readability. Use thick black outlines, compact symbolic forms, and flat saturated fills with restrained shading accents. Maintain sheet-ready clarity where each motif works as a standalone emblem and as part of a cohesive flash collection.',
+        'Apply traditional tattoo-flash grammar to any input: bold-will-hold outlines, compact emblem silhouettes, flat classic primaries, pepper shading, and sheet-ready clarity should make motifs durable without requiring skulls, roses, daggers, skin, flash sheets, or tattoo-shop scenes.',
     },
   },
   {
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Casual yet meticulous, study-desk focus, spontaneous craft energy',
       key_features: 'Blue-only mark system, pressure-led value changes, margin-sketch rhythm',
       creative_brief:
-        'Compose with continuous pen flow and cumulative hatch density rather than painterly fills. Preserve the immediacy of notebook drawing: slight tremor, pressure shifts, and clustered line nests that convert quick doodle language into resolved illustrative structure.',
+        'Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative hatching, ink clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen flow without requiring notebooks, desks, studies, doodles, or fixed intimate scenes.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

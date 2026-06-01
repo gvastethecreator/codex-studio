@@ -13,18 +13,23 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Strategic-adventure shonen style with systems-driven readability, curiosity-forward energy, and tactical clarity
-  form_and_line: Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography that foregrounds planning
+  form_and_line: >-
+    Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography that
+    foregrounds planning
   color_palette: Bright exploratory saturation with disciplined tactical accents, cool-warm contrast nodes, and lucid value grouping
-  lighting_setup: Adventure-bright daylight with focused tactical highlights, balanced fill, and clear visual signaling for ability states
+  lighting_setup: >-
+    Adventure-bright daylight with focused tactical highlights, balanced fill, and clear visual signaling for ability
+    states
   material_texture: Clean modern anime surface polish, legible effect overlays, map-like compositional textures, low-grit digital finish
   render_quality: Premium strategy-action anime rendering that prioritizes intelligible logic and discovery freshness
   spatial_distortion: Dynamic depth with navigational clarity, emphasizing positional intelligence over chaotic motion blur
   atmosphere: Curious, competitive, analytical, adventurous, high-spirited
   key_features: System-logic grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing
   creative_brief: >-
-    Keep the preset centered on strategic legibility and discovery energy:
-    motion should feel like visible problem-solving, with action grammar driven
-    by tactical decisions rather than fixed lore references.
+    Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible
+    problem-solving, with action grammar driven by tactical decisions rather than fixed lore references. Apply this
+    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic,
+    and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-039.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

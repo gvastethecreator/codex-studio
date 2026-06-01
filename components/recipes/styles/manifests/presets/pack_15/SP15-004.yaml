@@ -4,10 +4,17 @@ packId: pack_15
 name: Fog Orchard Habitat
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
-  aesthetic: Cloudbelt solarpunk where atmospheric water capture, orchard softness, and elevated communal adaptation drive the style.
+  aesthetic: >-
+    Cloudbelt solarpunk where atmospheric water capture, orchard softness, and elevated communal adaptation drive the
+    style.
   form_and_line: Lightweight mist-tower verticals, braided bridge-like links, and canopy-layered modular forms.
   color_palette: Sage vapor green, pearl fog gray, and muted apricot bloom.
   lighting_setup: Diffused dawn humidity with soft backscatter through condensate nets.
@@ -17,21 +24,32 @@ visualDna:
   atmosphere: Quiet fertility, climatic intelligence, and gentle communal rhythm.
   key_features: Condensation-tower motifs, drip-fed orchard rhythm, suspended module silhouettes, and visible storage-cistern cues.
   creative_brief: >-
-    Preserve fog-orchard habitat grammar as a reusable style language:
-    atmospheric water-capture infrastructure, orchard-soft layering, and
-    cloudbelt adaptation cues should remain stable across subjects without
-    requiring homes, footbridges, towers, or an orchard scene.
-avoidRules: [photoreal, dystopian-rust, dark-horror, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-004.webp }
+    Wrap the input in cloudbelt adaptation: dew-catching mesh, pearl fog backscatter, suspended cistern skins, and
+    orchard-soft modular layering. Homes, bridges, towers, or fruiting canopies are optional anchors; the useful style
+    is humid resilience and gentle atmospheric engineering. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - dystopian-rust
+  - dark-horror
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-004.webp
 attributes:
   negativePrompt: photoreal, dystopian-rust, dark-horror, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

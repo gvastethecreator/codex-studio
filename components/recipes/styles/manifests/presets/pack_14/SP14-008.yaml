@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-008
 packId: pack_14
-name: Funeral Rose Cavalier
+name: Funeral Rose Psychopomp
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, psychopomp-legend]
 visualDna:
-  aesthetic: Mythic psychopomp legend framed as solemn chivalric funerary rite.
-  form_and_line: Processional rider profile, soul-guiding blade silhouette, and heraldic floral drapery.
+  aesthetic: Mythic psychopomp legend translated into solemn chivalric funerary grace.
+  form_and_line: Processional profile rhythm, soul-guiding blade-like diagonals, heraldic floral drapery, and threshold arcs.
   color_palette: Withered rose crimson, velvet black, and funerary silver.
   lighting_setup: Ashen dawn haze with selective metallic glints over wet petals.
   material_texture: Dried rose bundles, satin-polished armor, carved tomb marble, and mourning silk.
   render_quality: Lyrical prestige illustration with symbolic readability at mid-distance.
-  spatial_distortion: Necropolis axis perspective leading toward a gate-like mausoleum threshold.
+  spatial_distortion: Threshold-axis perspective leading toward symbolic passage without requiring a necropolis or mausoleum.
   atmosphere: Sacred mourning, oath-bound honor, and tender fatality.
-  key_features: Soulward rose trail, vigil cavalier, boundary mausoleum, and ceremonial grave standards.
-  creative_brief: A legendary funeral cavalier escorts the newly dead across the threshold, embodying mythic duty rather than simple romantic tragedy.
+  key_features: Soulward rose trails, vigil-cavalier cues, boundary-gate silhouettes, funerary silver, and ceremonial mourning standards.
+  creative_brief: >-
+    Escort the input through funeral rose psychopomp grace: withered crimson,
+    velvet black, silver threshold light, rose-trail arcs, and chivalric mourning
+    silhouettes should make any subject feel duty-bound and tenderly fatal
+    without requiring a rider, dead soul, cemetery, gate, or funeral procession.
 avoidRules: [photoreal, cartoon-comedy, bright-summer, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-008.webp }
 attributes:
   negativePrompt: photoreal, cartoon-comedy, bright-summer, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, psychopomp-legend], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic, psychopomp-legend],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

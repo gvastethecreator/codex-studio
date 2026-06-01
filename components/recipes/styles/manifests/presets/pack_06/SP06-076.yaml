@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: Ghostly
   atmosphere: Ethereal, dark
   key_features: Smoke patterns
-  creative_brief: Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery.
+  creative_brief: >-
+    Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon
+    traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based,
+    and never reliant on literal fire imagery. Apply this mixed-media process over any input: preserve material
+    assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required
+    clippings, readable text, boards, fire, studio setup, or literal craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -42,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-076.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, visible flame requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border, visible flame requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

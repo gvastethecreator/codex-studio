@@ -24,7 +24,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Moonwater reflections, crescent terrace bands, phase-lantern dots, and aqua biolume rims.',
       creative_brief:
-        'Preserve moonwater terraces grammar as a reusable style language: low-gravity reflective ecology, crescent civic planning, and ritual lunar calm should remain stable across any subject.',
+        'Cool the input into reflective lunar ecology: crescent strata, pearl-white regolith, moonlit aqua rims, drifting particles, and low-gravity water bands. Terraces or pools may support the anchor, but the transferable style is ritual calm, soft phase light, and civic reflection.',
     },
   },
   {
@@ -47,7 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Woven habitat texture, fab-grid patterning, coral care accents, and crystalline seam highlights.',
       creative_brief:
-        'Preserve selenite commons grammar as a reusable style system: cooperative dome cues, craft-forward mutual-aid infrastructure, and patient moon-district optimism should remain coherent across any subject.',
+        'Make the input feel hand-built for mutual aid on the moon: frost-white dome logic, woven habitat texture, coral care accents, crystalline seams, and soft radial commons geometry. Domes or districts can appear, but the style is patient craft, shared survival, and lunar tenderness. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tidal-converter glyphs, crater cistern rings, amber lantern trails, and algae-tube glow.',
       creative_brief:
-        'Preserve tidal crater-hamlet grammar as a reusable style language: crater-bowl communal planning, lunar energy-cycle participation, and resilient tenderness should remain stable across any subject.',
+        'Shape the input as resourceful lunar tidecraft: crater-bowl curves, amber lantern trails, algae-tube glow, basalt aggregate, and crescent converter marks. Hamlets or crater settlements may appear, but the style is resilient tenderness organized around circular energy cycles. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -98,7 +98,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Crescent crop-like bands, mint-cyan bio loops, seed-node motifs, translucent membranes, and orbital composition flow.',
       creative_brief:
-        'Apply crescent agro-rings as an abstract style treatment: transform any subject through lunar bio-cycles, crescent geometry, algae-light accents, and regenerative closed-loop softness.',
+        'Cycle the input through crescent lunarpunk ecology: wrap forms in pearl regolith rings, mint algae loops, translucent membranes, seed-node accents, and soft closed-loop geometry that suggests regenerative lunar agriculture. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -125,7 +125,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Vertical archive rhythm, lilac moonwash, fabric-baffle softness, glass-lamina layering, and pale bookmark accents.',
       creative_brief:
-        'Apply moonshade library-spires as an abstract style treatment: make any image feel hushed, vertical, indexed, moonlit, and protected from noise.',
+        'Index the input in moonshade quiet: stretch it into lilac vertical stacks, codex-slot ribs, glass-lamina layers, fabric acoustic baffles, and pale bookmark glints so the image feels stored, moonlit, and protected from noise. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.',
       creative_brief:
-        'Apply tidal crater transit-hub as an abstract style treatment: guide any subject with bowl geometry, low-gravity curves, rope tension, and soft amber movement cues.',
+        'Route the input through low-gravity civic motion: bowl-depth arcs, glide-lane ribbons, tension-cable drops, basin aqua reflections, and amber beacon nodes make any subject feel timed, accessible, and crater-shaped.',
     },
   },
   {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Patchwork modules, copper task-light accents, tool-loop motifs, woven insulation textures, and mint-white maker graphics.',
       creative_brief:
-        'Apply selenite artisan-block as an abstract style treatment: make any subject feel patched, repaired, shared, ceramic, copper-lit, and hand-built.',
+        'Repair the input as selenite maker craft: patch ceramic planes, woven insulation seams, copper task-light loops, mint-white module grids, and visible hand-built fixes across any subject without forcing a workshop scene.',
     },
   },
   {
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Horizon arcs, earthrise blue rimlight, phase-lantern dots, textile-shadow warmth, and pearl-gold communal framing.',
       creative_brief:
-        'Apply earthrise commons-balcony as an abstract style treatment: make any subject feel gathered, humbled, rimlit, and oriented toward a shared horizon.',
+        'Reframe the input under earthrise humility: wide indigo horizon arcs, pearl communal rails, phase-lantern dots, gold rimlight, and textile-shadow warmth make any subject feel gathered around planetary perspective.',
     },
   },
   {
@@ -233,7 +233,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.',
       creative_brief:
-        'Apply crater choir-sanctuary as an abstract style treatment: make any subject feel tuned, suspended, echoed, and ritually softened by visible sound geometry.',
+        'Tune the input into crater resonance: lavender-silver harmonic rings, suspended wire lines, echo-dish curves, acoustic fins, and spiral tone paths visibly soften any subject with ritual sound geometry.',
     },
   },
   {
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Aqua basin curves, pod ovals, transparent green partitions, rose-beige softness, and public-care wayfinding.',
       creative_brief:
-        'Apply moonwater clinic-arcade as an abstract style treatment: make any subject feel cared for, transparent, water-cooled, softly clinical, and publicly trustworthy.',
+        'Care for the input through moonwater public health design: aqua basin curves, rose-beige softness, algae-glass partitions, pod ovals, and clean civic beacons make any subject feel transparent, water-cooled, and trustworthy.',
     },
   },
   {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Folding canopy petals, phase-clock motifs, cyan-lantern webs, plum shadow centers, and radial temporary geometry.',
       creative_brief:
-        'Apply eclipse market-canopy as an abstract style treatment: make any subject feel temporary, phase-timed, petal-folded, lantern-lit, and alive under rare shadow.',
+        'Bloom the input under eclipse timing: folding membrane petals, plum shadow centers, cyan-lantern webs, phase-clock rings, and radial exchange lanes make any subject feel temporary, ceremonial, and alive under rare shadow.',
     },
   },
   {
@@ -302,14 +302,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Silver, mint, and warm sand.',
       lighting_setup: 'Steam diffusion and low ambient strips.',
       material_texture: 'Mineral stone, matte ceramics, and woven privacy screens.',
-      render_quality: 'Spa-infrastructure concept with strong material clarity.',
+      render_quality:
+        'Mineral wellness render with strong material clarity and reusable thermal-infrastructure cues.',
       spatial_distortion:
         'Cascading sequence toward a soft thermal core without requiring a bath facility.',
       atmosphere: 'Restoration and social calm.',
       key_features:
         'Silver thermal rings, filter columns, regolith mineral shimmer, and communal arc motifs.',
       creative_brief:
-        'Preserve silver regolith-baths grammar as a reusable style system: cascading thermal infrastructure, mineral-filtration social wellness, and restorative civic calm should remain coherent across subjects.',
+        'Bathe the input in silver regolith wellness: cascading basin terraces, mint thermal rings, filter-column silhouettes, mineral shimmer, and woven privacy screens make any subject feel restored, filtered, and socially calm.',
     },
   },
   {
@@ -325,14 +326,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Frost white, olive green, and graphite.',
       lighting_setup: 'Controlled vault glow and transit beacon strips.',
       material_texture: 'Cryo casings, metal ribs, and insulated polymer shells.',
-      render_quality: 'Precision infrastructure concept with ecological emphasis.',
+      render_quality:
+        'Precision preservation render with ecological emphasis and clear capsule/vault logic.',
       spatial_distortion:
         'Linear protected depth crossing through rings, locks, and capsule repeats.',
       atmosphere: 'Stewardship, caution, and long-term planning.',
       key_features:
         'Seed capsule grids, cryo-ring glow, biosecurity seals, and lunar archive hush.',
       creative_brief:
-        'Preserve orbital seed-vault annex grammar as a reusable style system: redundant biodiversity stewardship, cryogenic continuity logistics, and long-horizon ecological caution should remain coherent across subjects.',
+        'Preserve the input as orbital biodiversity logistics: frost-white capsule grids, olive bioseals, graphite ribs, cryo-ring glow, and protected transfer bands turn any subject into long-horizon ecological memory.',
     },
   },
   {
@@ -347,13 +349,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Moon blue, white, and brass accents.',
       lighting_setup: 'Time-signal pulses and nighttime perimeter glow.',
       material_texture: 'Ceramic cladding, brushed alloy, and glass panels.',
-      render_quality: 'Iconic city landmark concept with clean readability.',
+      render_quality:
+        'Iconic civic-timing render with clean readability and phase-signal hierarchy.',
       spatial_distortion: 'Upward axial composition around phase-clock geometry.',
       atmosphere: 'Order, trust, and rhythmic public life.',
       key_features:
         'Phase beacons, civic clock rings, scheduling terraces as abstract bands, and lunar signal arrays.',
       creative_brief:
-        'Preserve phasewatch civic-tower grammar as a reusable style system: lunar-cycle synchronization architecture, trusted public timing signals, and rhythmic civic order should remain coherent across subjects.',
+        'Synchronize the input to lunar public time: vertical clock fins, moon-blue halos, brass phase marks, signal mast geometry, and rhythmic beacon pulses make any subject feel trusted, scheduled, and civically legible.',
     },
   },
   {
@@ -369,13 +372,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Cool gray, teal, and soft amber.',
       lighting_setup: 'Controlled lab light and subtle status halos.',
       material_texture: 'Acoustic ceramics, test composites, and insulated paneling.',
-      render_quality: 'Advanced R&D concept with serene technical tone.',
+      render_quality:
+        'Serene propulsion-design render with careful technical tone and low-noise cues.',
       spatial_distortion: 'Nested calibration rings converging on a quiet test core.',
       atmosphere: 'Precision, care, and optimistic experimentation.',
       key_features:
         'Quiet engine pods, calibration rings, acoustic shell ribs, and communal design markings.',
       creative_brief:
-        'Preserve cradle of quiet-engines grammar as a reusable style system: low-noise propulsion experimentation, nested acoustic lab geometry, and care-centered technical optimism should remain coherent across subjects.',
+        'Grow the input around quiet propulsion care: acoustic ceramic shells, teal calibration rings, insulated cradle curves, soft amber status halos, and thrust-petal motifs make any subject feel tuned, protected, and experimentally alive.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

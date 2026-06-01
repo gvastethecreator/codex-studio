@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Low res
   atmosphere: Tech, code
   key_features: Glyph density image, monospaced grid, terminal glow
-  creative_brief: Characters from the ASCII set assemble into image through density and contrast, each glyph functioning as a pixel-value decision. The image exists as symbol field and picture at once, but it should avoid readable words, captions, signatures, or logos. Every keystroke builds form from limited geometry and terminal-era constraint.
+  creative_brief: >-
+    Apply ASCII-art construction to any input: monospaced glyph density, symbol
+    fields as tonal pixels, terminal-era spacing, low-resolution contrast, and
+    character-set geometry. Keep text-as-image abstraction while avoiding
+    readable words, captions, signatures, or logos.
 avoidRules:
   - photo
   - realistic

@@ -8,8 +8,6 @@ import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
 import ToastContainer from './ToastContainer';
 
-const LiquidBlackBackground = React.lazy(() => import('./LiquidBlackBackground'));
-
 const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
 );
@@ -22,19 +20,11 @@ export const AppContent: React.FC<AppContentProps> = () => {
   return (
     <div
       className="fixed inset-0 text-white font-sans flex flex-col selection:bg-accent-500/35 selection:text-white overflow-hidden"
+      data-ui-chrome-suppressed={shell.root.isUiChromeSuppressed ? 'true' : 'false'}
       onDragOver={shell.root.onDragOver}
       onDragLeave={shell.root.onDragLeave}
       onDrop={shell.root.onDrop}
     >
-      {shell.background && (
-        <Suspense fallback={null}>
-          <LiquidBlackBackground
-            isGenerating={shell.background.isGenerating}
-            activeModel={shell.background.activeModel}
-            config={shell.background.config}
-          />
-        </Suspense>
-      )}
       <ToastContainer toasts={shell.toasts.items} onDismiss={shell.toasts.onDismiss} />
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}

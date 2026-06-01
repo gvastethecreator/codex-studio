@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-338
 packId: pack_13
-name: Atsushi Ohkubo - Triangle-Grin Fire Geometry
+name: Angular Combustion Iconography
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,7 +12,9 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Diseño iconográfico angular de grin maligno, fuego geométrico y actitud callejera gótica de combustión estilizada.
+  aesthetic: >-
+    Diseño iconográfico angular de grin maligno, fuego geométrico y actitud callejera gótica de
+    combustión estilizada.
   form_and_line: Contorno duro limpio, dominio de diagonales y disciplina formal en triángulos, dientes y flamas.
   color_palette: Carbon black, fire orange, bone white, acid lime, charcoal grey, ember red
   lighting_setup: Contraste fuerte por fuego, underglow geométrico y rims nítidos que recortan siluetas agresivas.
@@ -20,11 +22,13 @@ visualDna:
   render_quality: Acción estilizada de lectura icónica con diseño de forma dominante sobre detalle realista.
   spatial_distortion: Angular anatomy, sharp perspective cuts, grin-led focal geometry, and icon-heavy pose language
   atmosphere: Incendiaria, insolente y lúdicamente siniestra.
-  key_features: Motivo triangular persistente, grin-centric geometry, fuego angular y silueta street-goth limpia.
+  key_features: >-
+    Triangular rhythm, angular flame geometry, toothlike graphic accents, clean street-goth
+    silhouette, and aggressive contrast
   creative_brief: >-
-    Define una gramática reusable de triangle-grin donde fuego angular,
-    expresividad dentada y contraste gráfico sostengan identidad agresiva sin
-    depender de rostro, personaje, uniforme o combate específico.
+    Use Atsushi Ohkubo as style anchor for angular combustion iconography. Any prompt should gain
+    sharp triangular rhythm, firelike geometry, toothy graphic energy, and clean dark contrast.
+    Faces, uniforms, characters, weapons, and combat scenes are optional.
 avoidRules:
   - still
   - calm

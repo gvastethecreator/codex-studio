@@ -20,7 +20,12 @@ visualDna:
   render_quality: Dramatic, moody, hero-reveal
   atmosphere: Mysterious, epic, cinematic tension
   key_features: Edge highlight, halo definition
-  creative_brief: The subject retreats into near-silhouette while a halo of brilliance traces its outline with the precision of a calligrapher's final stroke — backlight carves definition from darkness, and every edge that catches the rim becomes the entire story. The dark masses between highlights pulse with withheld revelation, and the image holds tension like a dramatic pause before the hero steps forward. Moody, cinematic, a reveal staged in light's most economical gesture.
+  creative_brief: >-
+    Use rim lighting as primary style: electric silhouette edges, dark falloff, halo separation and reveal-first
+    contrast. Preserve dramatic hero energy only as lighting attitude; do not require a character, face or step-forward
+    pose. Apply Rim Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - front light
   - flat

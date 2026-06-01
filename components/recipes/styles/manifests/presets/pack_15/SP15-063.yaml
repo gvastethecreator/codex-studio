@@ -4,8 +4,14 @@ packId: pack_15
 name: Asteroid Customs Gate
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
   aesthetic: Raypunk border bureaucracy rendered as hostile machinery of stamps, pressure locks, scanners, and dust.
   form_and_line: Clamp-like corridors, cargo-gantry teeth, octagonal lock frames, barcode shadows, and turret-eye circles.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Frontier law, procedural dread, and absurd cosmic administration.
   key_features: Scanner arches, ray turret eyes, pneumatic stamp blocks, confiscation-grid cages, and permit-slot geometry.
   creative_brief: >-
-    Push asteroid customs-gate as reusable style: make forms feel inspected,
-    stamped, divided, and legally trapped, with raypunk hardware behaving like
-    bureaucratic predators.
-avoidRules: [photoreal, cyberpunk-neon-city, medieval, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-063.webp }
+    Trap the input in cosmic paperwork machinery: scanner bars, permit slots, pneumatic stamp blocks, octagonal lock
+    frames, and turret-eye circles should divide forms into legal zones. Customs gates are optional; the style is
+    frontier administration acting like a raypunk predator. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - cyberpunk-neon-city
+  - medieval
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-063.webp
 attributes:
   negativePrompt: photoreal, cyberpunk-neon-city, medieval, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

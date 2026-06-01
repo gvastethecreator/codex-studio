@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Luxurious, optimistic, metropolitan
   key_features: Sunbursts, frame borders, speed motifs, ornamental geometry
   creative_brief: >-
-    Compose with Deco-era visual rhythm: bold geometry, metallic-accent color blocking, and elegant streamlining. Keep the poster language iconic and adaptable, avoiding over-specific location narratives while preserving period identity.
+    Apply Art Deco poster grammar to any input: stepped geometry, sunburst rhythm, metallic-adjacent
+    color blocking, streamlined elongation, and elegant frame discipline should make the image
+    iconic without requiring cities, travel posters, skyscrapers, products, or period scenery.
 avoidRules:
   - messy
   - organic

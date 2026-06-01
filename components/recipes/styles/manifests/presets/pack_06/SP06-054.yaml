@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: No perspective
   atmosphere: Organized, toy-like
   key_features: 30 degree angle
-  creative_brief: Parallel lines never converge, perspective abandoned for a geometry where every plane receives equal attention. The subject tilts thirty degrees, revealing itself as a diorama-like construction with clean dimensional logic. Distance is measured in grid cells and stacked planes, not vanishing points or literal worlds.
+  creative_brief: >-
+    Apply isometric projection to any input: parallel nonconverging lines,
+    thirty-degree tilt, equal plane attention, stacked grid logic, and miniature
+    dimensional clarity. Keep diagrammatic charm without requiring buildings,
+    rooms, game maps, dioramas, or explorable worlds.
 avoidRules:
   - photo
   - realistic

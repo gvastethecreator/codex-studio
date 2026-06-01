@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
   key_features: Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim
   creative_brief: >-
-    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.
+    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement
+    geometry. Preserve biomimetic engineering character while keeping subject framing flexible. Apply Velcro as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - smooth
 assets:

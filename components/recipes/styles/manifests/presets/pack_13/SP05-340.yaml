@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-340
 packId: pack_13
-name: Akio Sugino - Velvet Lash Elegance
+name: Velvet Lash Refined Tension
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.
-  form_and_line: Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta clase.
+  aesthetic: >-
+    Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de
+    tempo lento.
+  form_and_line: >-
+    Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta
+    clase.
   color_palette: Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach
   lighting_setup: Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.
   material_texture: Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.
   render_quality: Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.
-  spatial_distortion: Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette emphasis
+  spatial_distortion: >-
+    Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette
+    emphasis
   atmosphere: Aterciopelada, madura y dramática, de confesión íntima ceremonial.
-  key_features: Lash-heavy focal design, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.
+  key_features: >-
+    Velvet texture, lash-heavy graphic elegance, aristocratic posture language, slow romantic
+    pressure, and classic beauty-anime polish
   creative_brief: >-
-    Define una gramática reusable de velvet-elegance donde textura lujosa,
-    presencia refinada y tensión romántica sofisticada articulen identidad sin
-    exigir retrato humano, swan-neck pose, cortinaje o close-up.
+    Use Akio Sugino as style anchor for velvet-lash refined tension. Any prompt should become
+    elegant, luxurious, slow, and romantically pressurized. Human portraits, swan-neck poses,
+    curtains, close-ups, and aristocratic scenes are optional.
 avoidRules:
   - crude action pose
   - rough sketch dirt
@@ -36,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
 attributes:
-  negativePrompt: crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render
+  negativePrompt: >-
+    crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch
+    clutter, comic chibi proportions, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

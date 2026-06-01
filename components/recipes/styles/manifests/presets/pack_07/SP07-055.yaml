@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-055
 packId: pack_07
-name: Candy Kingdom
-category: 4. Landscape And Gardens
+name: Confectionery Surrealism
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Fantasía confitera de surrealismo comestible y modularidad de azúcar.
   form_and_line: Masas redondeadas blandas, columnas candy repetitivas y bandas ornamentales de glaseado.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Exceso lúdico, surrealismo alegre y escapismo hiper-dulce.
   key_features: Planos de icing, marcadores gumdrop, acentos sprinkle y motivos estructurales candy-cane.
   creative_brief: >-
-    Define una gramática candy transferible con materialidad comestible,
-    contraste cromático de azúcar y modularidad juguetona. Debe mantener
-    identidad inequívoca sin fijarse en un cuento o reino concreto.
+    Todo se vuelve arquitectura de azucar: glaseado como junta, caramelo como estructura, gumdrops como nodos y pastel
+    como masa. La fantasia debe ser material y tactil, no depender de reino, cuento o escena. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - scary
   - realistic
@@ -35,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

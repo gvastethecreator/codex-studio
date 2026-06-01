@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence
-  form_and_line: Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke dependency
+  aesthetic: >-
+    Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form
+    emergence
+  form_and_line: >-
+    Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke
+    dependency
   color_palette: Black ink, pointillist-mono, dot-gradient depth
   lighting_setup: Dot density, stipple-as-value, cumulative point shadow
   material_texture: Skin/Paper
@@ -22,9 +26,9 @@ visualDna:
   atmosphere: Obsessive, soft, pointillist trance, meticulous calm
   key_features: Dots only, stipple gradient, point-by-point tone
   creative_brief: >-
-    Preserve identity through stipple grammar: point-density value modeling,
-    dot-cluster edge control, and stroke-less tonal construction should define
-    the style beyond one tattoo or illustration context.
+    Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges,
+    stroke-less tonal construction, slow monochrome accumulation, and meditative texture should
+    define form without requiring tattoos, skin, portraits, animals, or fixed illustration context.
 avoidRules:
   - lines
   - solid

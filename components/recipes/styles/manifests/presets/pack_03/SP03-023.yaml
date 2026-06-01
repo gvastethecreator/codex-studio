@@ -18,9 +18,13 @@ visualDna:
   lighting_setup: Soft studio, shadow-casting consistency
   material_texture: Smooth, isometric-unity feel
   render_quality: Mobile game, icon, asset-store ready
-  atmosphere: Organized, tiny, world-in-a-box
+  atmosphere: Organized, tiny, isometric clarity
   key_features: 30 degree angle, parallel projection
-  creative_brief: Parallel lines refuse to converge — every object maintains its true dimensions regardless of distance, and the thirty-degree tilt transforms everyday scenes into dioramas of quiet perfection. Pastel gradients wash across smooth surfaces, shadow-casting consistency gives weight without perspective distortion. The image is a world-in-a-box, an asset-store daydream where every miniature tells a story from an angle that never lies.
+  creative_brief: >-
+    Convert the input to clean isometric projection: locked parallel lines,
+    thirty-degree tilt, pastel gradients and consistent soft shadows. Keep
+    asset-store readability and miniature charm without requiring an everyday
+    everyday setup, diorama world, or story vignette.
 avoidRules:
   - perspective
   - distortion

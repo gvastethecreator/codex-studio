@@ -12,16 +12,16 @@ tags:
   - texture-and-materiality
   - metals-and-minerals
 visualDna:
-  aesthetic: Aged copper roof
+  aesthetic: Aged copper patina
   form_and_line: Drips
   color_palette: Verdigris (Teal/Green)
   lighting_setup: Matte
   material_texture: Chalky oxidation
-  render_quality: Statue of Liberty, old
+  render_quality: Historic, oxidized
   spatial_distortion: None
   atmosphere: Historic, weathered
   key_features: Green stains
-  creative_brief: Capture the alchemy of aged copper transforming into verdigris, where teal and green blooms spread across the metal like a slow tide of oxidation painting history onto rooftops. The chalky crust should feel dry and mineral, the drip lines mapping decades of rainfall into vertical streaks of turquoise. This is time rendered as pigment, corrosion as cathedral.
+  creative_brief: 'Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.'
 avoidRules:
   - new penny
 assets:

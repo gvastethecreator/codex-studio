@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-330
 packId: pack_13
-name: Shigeru Mizuki - Yokai Night Parade Ink
+name: Folkloric Deadpan Ink Catalog
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad inquietante.
-  form_and_line: Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta lavada.
+  aesthetic: >-
+    Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad
+    inquietante.
+  form_and_line: >-
+    Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta
+    lavada.
   color_palette: Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan
   lighting_setup: Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.
   material_texture: Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.
   render_quality: Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.
-  spatial_distortion: Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette spacing
+  spatial_distortion: >-
+    Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette
+    spacing
   atmosphere: Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.
-  key_features: Siluetas yokai-like, nocturnidad terrosa, glow de linterna y staging pseudo-documental.
+  key_features: >-
+    Earthy nocturnal ink, deadpan catalog framing, friendly grotesque silhouettes, dry humor, and
+    pseudo-documentary oddity
   creative_brief: >-
-    Define una gramática yokai-parade transferible basada en trazo de tinta,
-    nocturnidad terrosa y catalogación deadpan de lo grotesco sin exigir yokai,
-    desfile, campo, linterna, humano testigo ni escena narrativa fija.
+    Use Shigeru Mizuki as style anchor for folkloric deadpan ink catalog. Any prompt should feel
+    archived from strange folklore: earthy ink, dry humor, nocturnal calm, and friendly grotesque
+    logic. Yokai, parades, fields, lanterns, witnesses, and story scenes are optional.
 avoidRules:
   - glossy digital polish
   - photoreal creature rendering
@@ -35,7 +43,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
-  negativePrompt: glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background
+  negativePrompt: >-
+    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi
+    palette, cute mascot simplification, empty flat background
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

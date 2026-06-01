@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tiered agro-cell patterning, gravity-fed water logic, seedling-scale repetition, and shared-harvest rhythm.',
       creative_brief:
-        'Preserve terraced sky-harvest grammar as a reusable style system: stepped agro-ecology zoning, gravity-fed civic logistics, and cooperative stewardship cues should remain consistent across subjects without requiring crops, terraces, workers, or a literal harvest.',
+        'Treat any input as a living food-sovereignty diagram: tier it into harvest-bands, cistern veins, seedling repetition, and cooperative access paths. Crops, terraces, workers, or harvest rituals may appear when useful, but the core style is stepped abundance and gravity-fed stewardship.',
     },
   },
   {
@@ -50,7 +50,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Quiet glide rhythm, pollinator-span motifs, open spacing, shade-rich promenade flow.',
       creative_brief:
-        'Preserve wind-garden monorail grammar as a reusable style language: ribbon-transit continuity, gardened canopy typology, and pedestrian-first civic flow should remain stable across subjects without requiring rails, trains, stations, or districts.',
+        'Turn the input into a quiet mobility ribbon: sweeping guide-lines, pollinator canopy arcs, satin bio-composite seams, and saffron wayfinding accents should make it feel shared, gliding, and civic. Rails, trains, or stations can reinforce the idea but should not become mandatory scenery.',
     },
   },
   {
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Tidal turbine motifs, floating exchange decks, amphibious micro-transit patterning.',
       creative_brief:
-        'Preserve tidal-bioport exchange grammar as a reusable style system: amphibious logistics layering, renewable tidal mechanics, and cooperative exchange flow should remain coherent across subjects without requiring docks, markets, boats, cargo, or a literal harbor.',
+        'Give the input amphibious civic metabolism: wet bioceramic ribs, tide-powered modular layers, floating exchange bands, and seafoam logistics marks. Docks, boats, cargo, or harbor cues can appear as style anchors, but the transferable language is porous exchange and tidal motion.',
     },
   },
   {
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Condensation-tower motifs, drip-fed orchard rhythm, suspended module silhouettes, and visible storage-cistern cues.',
       creative_brief:
-        'Preserve fog-orchard habitat grammar as a reusable style language: atmospheric water-capture infrastructure, orchard-soft layering, and cloudbelt adaptation cues should remain stable across subjects without requiring homes, footbridges, towers, or an orchard scene.',
+        'Wrap the input in cloudbelt adaptation: dew-catching mesh, pearl fog backscatter, suspended cistern skins, and orchard-soft modular layering. Homes, bridges, towers, or fruiting canopies are optional anchors; the useful style is humid resilience and gentle atmospheric engineering. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Thermal battery basins, refill-node motifs, mist-pergola rhythm, and mixed-use civic occupancy cues.',
       creative_brief:
-        'Preserve sun-reservoir commons grammar as a reusable style system: concentric hydro-civic planning, thermal-relief architecture, and public stewardship visibility should remain coherent across subjects without requiring basins, kiosks, crowds, or a literal commons.',
+        'Recast the input as a cooling civic hydrology object: concentric aquifer rings, mist-pergola shadows, pale porous stone, and blue thermal relief highlights. Basins, kiosks, crowds, or commons may support the read, but the style should travel as calm water governance and sun-tempered geometry.',
     },
   },
   {
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Seed-swap patterning, stewardship glyph walls, crop-lineage display logic, and communal planting-table rhythm.',
       creative_brief:
-        'Preserve seed-vault festival grammar as a reusable style language: circular stewardship choreography, archive-centered civic ceremony, and biodiversity literacy cues should remain stable across subjects without requiring crowds, banners, kiosks, tables, or a literal vault.',
+        'Make the input feel like biodiversity memory made visible: seed-capsule nodes, lineage rings, pollinator yellow accents, linen glyph surfaces, and ceremonial archive light. Crowds, banners, tables, or vault structures can appear as anchors, but the style is stewardship ritual, not event staging.',
     },
   },
   {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Care, calm, and technological trust without coldness.',
       key_features: 'Green facade logic, therapeutic terrace rhythm, serene circulation.',
       creative_brief:
-        'Preserve vertical-meadow clinic grammar as a reusable style system: therapeutic biophilic layering, accessible healing circulation, and human-centered calm should remain coherent across subjects without requiring a clinic, patients, floors, or a building facade.',
+        'Render the input with therapeutic meadow logic: stacked chlorophyll veils, warm clinical whites, accessible loop geometry, and matte bioceramic calm. Clinics, patients, floors, or facades are optional; the transferable style is care infrastructure softened until it feels alive.',
     },
   },
   {
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Resonant cistern bowls, choir-tier rhythm, rainfall channels, and participatory water-meter motifs.',
       creative_brief:
-        'Preserve rooftop rain-choir grammar as a reusable style language: pluvial acoustic civic rituals, visible catchment systems, and collective climate literacy should remain stable across subjects without requiring rooftops, singers, blocks, or a literal choir.',
+        'Score the input like rain infrastructure playing music: ribbed catchment panels, resonant cistern bowls, silver overcast glints, and repeating channel rhythms. Rooftops, singers, blocks, or choirs can appear as anchors, but the style is acoustic water literacy and soft pluvial ceremony. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Desalination-tower motifs, brine-art channels, productive oasis-terrace rhythm.',
       creative_brief:
-        'Preserve desert-bloom desalinatory grammar as a reusable style system: arid water-production elegance, shade-adaptive public infrastructure, and oasis-scale resilience cues should remain coherent across subjects without requiring desert, towers, gardens, or a literal desalinatory.',
+        'Transform the input through arid-water elegance: cobalt intake accents, salt-crystal sparkle, solar-sail shade ribs, and jade irrigation pulses. Deserts, towers, gardens, or desalination plants may appear as useful cues, but the style should read as bloom-through-watercraft, not fixed location.',
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Amphibious module motifs, mangrove filtration belts, tidal mobility corridors.',
       creative_brief:
-        'Preserve mangrove lift-city grammar as a reusable style language: amphibious civic elevation, root-network filtration logic, and tidal continuity should remain stable across subjects without requiring a city, walkways, platforms, or literal mangroves.',
+        'Lift the input through amphibious root logic: branching support lines, buoyant bands, tidal blue-gray reflections, and salt-tolerant woven membranes. Cities, walkways, platforms, or mangroves can reinforce the anchor, but the style is adaptive elevation and reciprocal filtration. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -273,7 +273,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Outdoor seminar-terrace rhythm, energy dashboard motifs, seed-library cues, and maker-learning nodes.',
       creative_brief:
-        'Preserve canopy learning-spiral grammar as a reusable style system: pedagogical ramp architecture, visible climate dashboards, and intergenerational eco-learning should remain coherent across subjects without requiring a campus, classrooms, students, or observatories.',
+        'Convert the input into climate literacy in motion: spiral inquiry paths, translucent canopy rings, dashboard-like energy cues, and warm timber/cork surfaces. Campus, classrooms, students, or observatories may appear, but the style should read as curiosity embedded in visible ecological systems.',
     },
   },
   {
@@ -288,14 +288,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Leaf green, sunlit cream, and warm terracotta.',
       lighting_setup: 'Filtered daylight through layered canopy leaves.',
       material_texture: 'Bamboo-laminate, glass, woven fiber, and brushed steel.',
-      render_quality: 'Optimistic city concept with crisp infrastructure detail.',
+      render_quality:
+        'Optimistic biophilic render with crisp infrastructure detail and canopy mobility cues.',
       spatial_distortion:
         'Broad transit-like perspective leading through green frames and curved beams.',
       atmosphere: 'Mobility, civic care, and breathable urban optimism.',
       key_features:
         'Transit-platform motifs, canopy span arcs, solar wayfinding panels, and leaf-filtered frames.',
       creative_brief:
-        'Preserve canopy tram-exchange grammar as a reusable style system: biophilic mobility integration, breathable elevated transit frames, and shaded civic calm should remain coherent across subjects.',
+        'Weave the input into canopy transit calm: leaf-filtered frames, bamboo-laminate beams, solar wayfinding bands, terracotta platform arcs, and brushed-steel mobility ribs make any subject feel breathable, elevated, and civic.',
     },
   },
   {
@@ -311,14 +312,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Herb green, coral clay, and bright sky blue.',
       lighting_setup: 'Golden afternoon sun with soft fabric shade.',
       material_texture: 'Recycled timber, ceramic planters, and woven shade cloth.',
-      render_quality: 'Community-centered future scene with lively detail.',
+      render_quality:
+        'Community-centered solarpunk render with lively detail and edible-urbanism cues.',
       spatial_distortion:
         'Layered rooftop-like perspective climbing through terraces and garden bands.',
       atmosphere: 'Social warmth, abundance, and neighborhood exchange.',
       key_features:
         'Stall-canopy motifs, herb-bed textures, rainwater channels, and edible garden color blocks.',
       creative_brief:
-        'Preserve roofgarden market-terraces grammar as a reusable style system: layered edible urbanism, rooftop exchange conviviality, and productive-neighborhood abundance should remain coherent across subjects.',
+        'Terrace the input into productive neighborhood abundance: herb-green ledges, coral-clay awnings, bright sky-blue rain channels, ceramic planter rhythms, and woven shade cloth make any subject feel edible, social, and sunlit.',
     },
   },
   {
@@ -333,13 +335,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'River teal, soft ochre, and fresh white.',
       lighting_setup: 'Reflected water light and open-air workshop glow.',
       material_texture: 'Rammed earth, recycled aluminum, and woven reeds.',
-      render_quality: 'Highly legible civic concept art.',
+      render_quality: 'Highly legible civic repair render with water-edge stewardship cues.',
       spatial_distortion: 'Curving river-edge composition creating generous communal flow.',
       atmosphere: 'Repair culture, stewardship, and shared skill-building.',
       key_features:
         'Tool-library grids, river-step bands, public worktable motifs, and repair commons markings.',
       creative_brief:
-        'Preserve riverbend repair-commons grammar as a reusable style system: riverside maintenance pedagogy, open civic tool-sharing culture, and elegant stewardship pragmatism should remain coherent across subjects.',
+        'Bend the input through civic repair culture: river-teal curves, soft ochre worktable motifs, reed textures, recycled aluminum tool grids, and open water-light make any subject feel maintained, shared, and stewarded.',
     },
   },
   {
@@ -354,14 +356,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Pale green, sandstone, and sky gold.',
       lighting_setup: 'Top-lit atrium with diffuse bounces and daylight shafts.',
       material_texture: 'Glazed brick, timber, and translucent solar film.',
-      render_quality: 'Monumental but welcoming public architecture.',
+      render_quality:
+        'Monumental welcoming render with public climate architecture and solar updraft cues.',
       spatial_distortion:
         'Vertical central void pulling forms upward through light and garden layers.',
       atmosphere: 'Public trust, climatic comfort, and collective aspiration.',
       key_features:
         'Solar chimney motifs, civic ramp bands, shared garden layers, and warm updraft light.',
       creative_brief:
-        'Preserve sunstack civic-atrium grammar as a reusable style system: vertically layered public climate architecture, solar-chimney energy symbolism, and bright civic trust should remain coherent across subjects.',
+        'Stack the input into sunlit civic trust: pale-green vertical terraces, sandstone voids, sky-gold shafts, translucent solar film, and chimney-core updraft geometry make any subject feel public, climatic, and aspirational.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-007
 packId: pack_14
-name: Moonlit Reliquary Hunt
+name: Moonsteel Relic Infiltration
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Covert mythic-noir infiltration centered on relic recovery before dawn liturgy.
-  form_and_line: Low-profile tracker silhouette, rope-led diagonals, and stealth-biased stance language.
+  aesthetic: Covert mythic-noir relic infiltration with stealth precision and sacred urgency.
+  form_and_line: Low-profile silhouette bias, rope-led diagonals, ritual cartography marks, and stealth-vector geometry.
   color_palette: Moonsteel blue, weathered slate, and blood-seal crimson accents.
   lighting_setup: Intermittent moon breaks, hand-lantern occlusion, and shard reflections off wet stone.
   material_texture: Rain-dark masonry, waxed travel leather, bronze relic clasps, and damp parchment maps.
   render_quality: Tactical narrative concept art with crisp readability across mid and far planes.
-  spatial_distortion: Vertical ruin shaft composition with chained landings and hidden side passages.
+  spatial_distortion: Vertical ruin-shaft depth, chained landings, or hidden-passage diagonals as optional structure cues.
   atmosphere: Measured tension, sacred urgency, and disciplined restraint.
-  key_features: Relic lockbox, route-marking sigils, suspended bridge remnants, silent tracking posture.
-  creative_brief: A sanctioned relic operative navigates forbidden ruins using ritual cartography and stealth precision before rival orders arrive.
+  key_features: Relic lockbox cues, route-marking sigils, moonsteel reflections, suspended bridge fragments, and silent tracking posture.
+  creative_brief: >-
+    Infiltrate the input with moonsteel relic tension: blue wet-stone shadows,
+    blood-seal accents, ritual map lines, stealth diagonals, and lockbox-like
+    sacred-object cues should make any subject feel covert and urgent without
+    requiring an operative, forbidden ruins, rival orders, bridge, or mission setup.
 avoidRules: [photoreal, cheerful-light, sci-fi-clean, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-007.webp }
 attributes:
   negativePrompt: photoreal, cheerful-light, sci-fi-clean, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

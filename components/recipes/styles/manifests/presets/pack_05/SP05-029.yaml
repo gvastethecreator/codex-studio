@@ -12,19 +12,32 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Adolescent kinetic-collage style with abrupt tonal pivots, rebellious surreal pop energy, and anti-linear visual rhythm
-  form_and_line: Mixed-grammar line states, impact-smear transitions, panel-break overlays, elastic contour interruptions, intentionally uneven stroke cadence
-  color_palette: Hyper-saturated primaries colliding with acidic neons, abrupt pastel inversions, high-chroma bursts against muted reset zones
-  lighting_setup: Rapid contrast switches, flash-frame highlights, intentional exposure jumps, and graphic shadow snapping between beats
-  material_texture: Hybrid cel-polish with manga halftone inserts, rough print fragments, and controlled noise patches for collage friction
-  render_quality: Experimental early-digital anime treatment favoring stylistic rupture, energetic readability, and emotionally volatile transitions
+  aesthetic: >-
+    Adolescent kinetic-collage style with abrupt tonal pivots, rebellious surreal pop energy, and anti-linear visual
+    rhythm
+  form_and_line: >-
+    Mixed-grammar line states, impact-smear transitions, panel-break overlays, elastic contour interruptions,
+    intentionally uneven stroke cadence
+  color_palette: >-
+    Hyper-saturated primaries colliding with acidic neons, abrupt pastel inversions, high-chroma bursts against muted
+    reset zones
+  lighting_setup: >-
+    Rapid contrast switches, flash-frame highlights, intentional exposure jumps, and graphic shadow snapping between
+    beats
+  material_texture: >-
+    Hybrid cel-polish with manga halftone inserts, rough print fragments, and controlled noise patches for collage
+    friction
+  render_quality: >-
+    Experimental early-digital anime treatment favoring stylistic rupture, energetic readability, and emotionally
+    volatile transitions
   spatial_distortion: Perspective ruptures, jump-cut framing logic, and composition resets that mimic impulsive developmental turbulence
   atmosphere: Restless, rebellious, volatile, cathartic, raw
   key_features: Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing
   creative_brief: >-
-    Keep this preset defined by abrupt stylistic modulation and collage-like
-    motion logic, turning emotional volatility into a transferable visual system
-    rather than a specific coming-of-age scene, cast, or location.
+    Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility
+    into a transferable visual system rather than a specific coming-of-age scene, cast, or location. Apply this
+    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic,
+    and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +54,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-029.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Auto-battler táctico astral inspirado en tablero, centrado en economía de unidades, sinergias y posicionamiento previo.
-  subject_treatment: Unidades arquetípicas con jerarquía visual estricta por rol (frontline, burst, support, control).
+  aesthetic: Gramática auto-battler astral con tablero implícito, economía de unidades, sinergias y posicionamiento previo.
+  subject_treatment: Convierte el input en unidad, pieza, aura de sinergia o tablero parcial con jerarquía estricta por rol.
   color_and_tone: Índigo profundo, plata y acentos turquesa para codificar rareza, estado y alineación.
   lighting_and_shadow: Brillo cósmico uniforme con highlights focales para ultimates y activaciones clave.
   texture_and_material: Mármol estelar, energía fluida y metal fino de interfaz arcano-tecnológica.
-  camera_and_composition: Top-down suave con cuadrícula implícita y espacios limpios para lectura sistémica.
+  camera_and_composition: Top-down suave, cuadrícula implícita y espacios limpios para lectura sistémica sin exigir ajedrez literal.
   atmosphere_and_mood: Calma cerebral, cálculo estratégico y anticipación táctica.
   rendering_and_quality: Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.
 avoidRules:

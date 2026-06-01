@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-123
 packId: pack_14
-name: Ashen Hearth Deities Hall
+name: Ashen Hearth Guardian Warmth
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Communal hall for hearth deities and domestic guardians.
-  form_and_line: Long hearth row, guardian alcoves, and smoke vents.
+  aesthetic: Hearth-deity guardianship expressed through ash warmth, shelter, kinship, and domestic flame.
+  form_and_line: Long hearth-row cues, guardian alcove rhythms, and smoke-vent silhouettes.
   color_palette: Ember orange, ash gray, and bronze.
   lighting_setup: Hearthfire flicker and smoke-softened daylight.
   material_texture: Firebrick, iron hooks, and soot-dark timber.
-  render_quality: Warm mythic interior with a strong domestic scale.
-  spatial_distortion: Horizontal hall elongated by repeated hearth bays.
+  render_quality: Warm mythic rendering with intimate domestic scale.
+  spatial_distortion: Horizontal warmth spreading through repeated hearth-like bands.
   atmosphere: Shelter, kinship, and sacred homecoming.
-  key_features: Hearth altars, guardian masks, and smoke glyphs.
-  creative_brief: A pantheon hall where gods of the hearth keep the domestic flame alive.
+  key_features: Hearth altar cues, guardian masks, smoke glyphs.
+  creative_brief: Recast the input through ashen hearth guardian warmth, making domestic flame feel sacred without requiring a communal hall.
 avoidRules: [photoreal, sterile, sci-fi, watermark, text, logo, cold]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-123.webp }
 attributes:
   negativePrompt: photoreal, sterile, sci-fi, watermark, text, logo, cold
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

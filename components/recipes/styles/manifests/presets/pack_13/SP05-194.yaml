@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Regal, tragic, historic, operatic
   key_features: Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright dramatic gazes
   creative_brief: >-
-    Preserve rose-of-versailles court grammar as a reusable style system:
-    baroque portrait opulence, martial-elegance contrast, and pre-revolution
-    emotional gravity should remain coherent across subjects.
+    Ennoble the input with Versailles court revolution: powdered ivory, royal
+    blue and wine-red authority, lace-versus-martial contour tension, candlelit
+    portrait falloff, and operatic tragic gravity can transform any subject
+    without requiring a palace, court figure, duel, or historical scene.
 avoidRules:
   - realistic
   - 3d render

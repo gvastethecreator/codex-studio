@@ -12,14 +12,14 @@ visualDna:
   color_palette: Warm white, moss, and amber biolight.
   lighting_setup: Workshop daylight and internal growth lamps.
   material_texture: Bio-foam, smooth glass, and plant-fiber mesh.
-  render_quality: Productive civic biotech with clear process readability.
+  render_quality: Productive civic biotech render with clear process readability and co-growth fabrication cues.
   spatial_distortion: Open-plan radial geometry with fabrication bay rhythm.
   atmosphere: Collaboration, invention, and ecological pragmatism.
   key_features: Growth trays, living molds, maker-station motifs, and translucent biofabrication vats.
   creative_brief: >-
-    Preserve biofoundry commons grammar as a reusable style system:
-    public co-growth fabrication workflows, organoid production legibility,
-    and ecological maker pragmatism should remain coherent across subjects.
+    Fabricate the input in public biofoundry rhythm: warm-white worktable grids,
+    moss growth trays, amber internal lamps, translucent vats, and plant-fiber
+    mesh make any subject feel co-grown, shared, and pragmatically alive.
 avoidRules: [photoreal, aggressive-industrial, cyberpunk, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-108.webp }
 attributes:

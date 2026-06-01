@@ -20,8 +20,6 @@ export const DEFAULT_RECOVERY_IGNORED_KEYS = [
   'app-workspaces',
   ...LEGACY_VISUAL_BATCH_CACHE_KEYS,
   'user-wallet-balance',
-  'bg-config',
-  'isBackgroundEnabled',
   'generation-config',
 ] as const;
 

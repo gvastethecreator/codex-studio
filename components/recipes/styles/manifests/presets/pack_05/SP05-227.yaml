@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-227
 packId: pack_05
-name: Texhnolyze - Rust Wire Descent
+name: Rust-Wire Descent
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Rust wire descent, with cybernetic nihilism, social decay, hard shadow, and dead-purpose machinery.
-  form_and_line: Rigid amputated geometry, rust-wire diagonals, severe low silhouettes, tunnel-like compression, and brutal panel cuts.
-  color_palette: Rust brown, dead black, sickly green, old fluorescent white, bloodless gray, and oxidized orange.
+  aesthetic: >-
+    Cybernetic nihilism rendered through oxidized wire, failing light, cable abrasion, hard shadow,
+    and downward social pressure
+  form_and_line: >-
+    Rigid amputated geometry, rust-wire diagonals, severe low silhouettes, tunnel-like compression,
+    and brutal panel cuts.
+  color_palette: >-
+    Rust brown, dead black, sickly green, old fluorescent white, bloodless gray, and oxidized
+    orange.
   lighting_setup: Failing tube light, harsh underlighting, narrow glow seams, and deep oppressive shadow blocks.
-  material_texture: Rust streaks, cable abrasion, scarred metal, damp concrete, oxidized fasteners, and oily reflective film.
+  material_texture: >-
+    Rust streaks, cable abrasion, scarred metal, damp concrete, oxidized fasteners, and oily
+    reflective film.
   render_quality: Mature sci-fi anime finish with abrasive grime, mechanical fidelity, and oppressive compositing.
   spatial_distortion: Downward compression, subterranean depth, and claustrophobic perspective breaks.
   atmosphere: Nihilistic, rusted, oppressive, cold
-  key_features: Rust-wire texture, cybernetic decay, oppressive descent, failing light, hard-shadow nihilism.
+  key_features: >-
+    Rust-wire texture, cable scars, failing fluorescent light, oppressive descent, hard-shadow
+    nihilism, and dead machinery
   creative_brief: >-
-    Apply rust-wire descent to any prompt through oxidized texture, failing
-    fluorescent light, cable abrasion, and downward pressure without requiring
-    prosthetics, corridors, underground spaces, or body-damage scenes.
+    Use Texhnolyze as style anchor for rust-wire descent. Any prompt should feel corroded, downward,
+    bruised by infrastructure, and dimly alive. Prosthetics, underground spaces, corridors, body
+    damage, and violence are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +51,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-227.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Mushroom cream, moss green, and dusk violet.
   lighting_setup: Subsurface glow and soft bioluminescent pulses.
   material_texture: Fungal felt, porous ceramic, and damp stone.
-  render_quality: Clean biotech concept with organic legibility.
+  render_quality: Clean biotech render with organic legibility and living mobility structure.
   spatial_distortion: Long corridor-like depth with branching cellular ribs.
   atmosphere: Adaptive infrastructure, calm motion, and living-system trust.
   key_features: Mycelial rail motifs, pod silhouettes, nutrient maintenance nodes, and soft hyphae glow.
   creative_brief: >-
-    Preserve mycelial transit-spine grammar as a reusable style system:
-    fungal-structural mobility corridors, branching cellular wayfinding, and
-    calm adaptive infrastructure should remain coherent across subjects.
+    Grow the input along a mycelial transit spine: mushroom-cream ribs,
+    moss-green branch nodes, dusk-violet bioglow, porous ceramic arches, and
+    hyphae wayfinding lines make any subject feel adaptive and mobile.
 avoidRules: [photoreal, cyberpunk-grime, violent-neon, watermark, text, logo, rust]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-103.webp }
 attributes:

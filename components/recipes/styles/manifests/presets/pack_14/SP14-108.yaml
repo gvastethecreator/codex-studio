@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-108
 packId: pack_14
-name: Blood Moon Procession
+name: Blood Moon Processional Omen
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Silent procession under a blood moon through ceremonial streets.
-  form_and_line: Long vertical robes, lantern poles, and a lunar arc overhead.
+  aesthetic: Processional blood-moon omen language with solemn public ritual pressure.
+  form_and_line: Long vertical robe cues, lantern-pole rhythms, and a lunar arc overhead.
   color_palette: Blood red, midnight indigo, and ash gray.
   lighting_setup: Moonlit backlight with lantern accents.
-  material_texture: Wet cobblestone, ceremonial cloth, and lacquered wood.
-  render_quality: Cinematic mythic narrative with procession clarity.
-  spatial_distortion: Receding avenue that leads into the moon disk.
+  material_texture: Wet stone sheen, ceremonial cloth, lacquered wood, and ash haze.
+  render_quality: Cinematic mythic rendering with processional clarity.
+  spatial_distortion: Receding ritual rhythm that leads visual force toward a blood moon disk.
   atmosphere: Omen, obedience, and a solemn public rite.
-  key_features: Processional masks, lantern standards, and moon sigils.
-  creative_brief: A ritual march where the moon itself seems to testify.
+  key_features: Processional mask cues, lantern standards, blood moon sigils.
+  creative_brief: Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, ash haze, solemn verticals, and obedient negative space without forcing moon disks, street marches, masks, crowds, or ritual parades.
 avoidRules: [photoreal, playful, bright-day, watermark, text, logo, action-pose]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-108.webp }
 attributes:
   negativePrompt: photoreal, playful, bright-day, watermark, text, logo, action-pose
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

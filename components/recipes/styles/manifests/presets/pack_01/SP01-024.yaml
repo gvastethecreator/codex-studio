@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: Flattened perspective
   atmosphere: Epic, overview
   key_features: Bird's eye view
-  creative_brief: 'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required.'
+  creative_brief: >-
+    Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic,
+    and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads,
+    fields, travel vista, or natural landscape required. Apply this photographic look over any input: preserve lens
+    behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place,
+    face, travel scene, landscape, or narrative setup.
 avoidRules:
   - illustration
   - painting
@@ -41,7 +46,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-024.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: >-
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text,
+    signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Solid, cold
   key_features: Random speckles
-  creative_brief: Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink.
+  creative_brief: >-
+    Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone like a frozen
+    night sky. Light should skim the surface like a blade, revealing depths that feel geological rather than
+    superficial. The image must carry the weight of mountains in every square inch of speckled grey and pink. Use
+    Granite as portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - concrete
   - matte

@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline
-  form_and_line: White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability
+  aesthetic: >-
+    Blueprint schematic style with engineering communication clarity, drafting-era precision, and
+    specification-forward layout discipline
+  form_and_line: >-
+    White technical line hierarchy with orthographic rigor, dimension-callout logic, and
+    exploded-view readability
   color_palette: Blue background, white-line cyan, blueprint nostalgia
   lighting_setup: None, diagrammatic, machine-drawing clarity
   material_texture: Grid paper
@@ -22,9 +26,10 @@ visualDna:
   atmosphere: Smart, plan, drafting-table focus, patent-office gravity
   key_features: Measurements, dimension lines, grid sub-base
   creative_brief: >-
-    Define this preset by schematic-blueprint grammar: orthographic projection,
-    measurement hierarchy, and title-block drafting structure should carry
-    identity beyond any single mechanical design.
+    Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy,
+    exploded-view logic, grid sub-base, and white technical linework should create drafting
+    authority without requiring machines, labels, title blocks, patents, vehicles, or readable
+    dimensions.
 avoidRules:
   - 3d
   - shaded

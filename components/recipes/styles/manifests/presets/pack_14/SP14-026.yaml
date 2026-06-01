@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-026
 packId: pack_14
-name: Kagura of Eight Storms
+name: Eight Storm Kagura Motion
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, japanese-myth]
 visualDna:
-  aesthetic: Celestial dance rite invoking storm kami through disciplined theatrical elegance.
-  form_and_line: Raised shrine stage, fan-like drape geometry, and braided ritual ropes.
+  aesthetic: Celestial kagura motion invoking storm kami through disciplined theatrical elegance.
+  form_and_line: Raised stage cues, fan-like drape geometry, and braided ritual ropes.
   color_palette: Ink black, moon silver, and crimson silk.
   lighting_setup: Spotlight-like moon shafts and ritual braziers framing masked performers.
   material_texture: Polished cypress floor, silk costumes, bronze bells, and rice-paper screens.
   render_quality: High-end performance key art with crisp silhouette language.
-  spatial_distortion: Stage-forward composition with layered audience shadows and shrine depth.
+  spatial_distortion: Stage-forward composition with layered shadow depth and divine weather corridors.
   atmosphere: Controlled ecstasy, divine attention, and formal danger.
-  key_features: Kagura masks, storm drums, sacred mirrors, and rope-bounded dance ring.
-  creative_brief: A shrine theater where each movement opens a temporary corridor to weather gods.
+  key_features: Kagura masks, storm drums, sacred mirrors, rope-bounded dance-ring cues.
+  creative_brief: Transform any input through eight-storm kagura motion, where disciplined gesture opens temporary corridors to weather gods. Use fan geometry, braided rope rhythm, moon-silver spotlighting, storm-drum pressure, and silk-like motion without requiring dancers, masks, stages, shrines, or performance scenes.
 avoidRules: [photoreal, modern-concert-tech, comedic, fluorescent-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-026.webp }
 attributes:
   negativePrompt: photoreal, modern-concert-tech, comedic, fluorescent-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-japanese-kami-yokai, categoryName: 7. Mythic — Japanese Yokai & Kami, tags: [mythic-noir-curated-vault, mythic, japanese-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-japanese-kami-yokai,
+    categoryName: 7. Mythic — Japanese Yokai & Kami,
+    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

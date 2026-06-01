@@ -21,7 +21,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Deco turbine motifs, gilded dynamo rings, emerald inlays, and black-lacquer contrast.',
       creative_brief:
-        'Preserve gilded dynamo-atrium grammar as a reusable style language: geometric art-deco monumentality, luxury-industrial symbolism, and staged civic spectacle should remain stable across any subject.',
+        'Turn the input into luxury power architecture: black lacquer fields, emerald inlays, brass fan geometry, turbine rings, and ceremonial uplight should imply ambition under control. Atriums are optional; gilded dynamo hierarchy and art-deco industrial symbolism are the transferable style.',
     },
   },
   {
@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Blank marquee arcs, radio-wave linework, mirrored canopies, and chrome-blue edgework.',
       creative_brief:
-        'Preserve chrome jazz-boulevard grammar as a reusable style system: nocturnal deco-streamline rhythms, music-pulse nightlife choreography, and reflective urban glamour should remain coherent across any subject.',
+        'Syncopate the input with deco jazz machinery: chrome-blue edgework, amber marquee pulses, lacquer gloss, rain-slick reflections, and streamline arcs should make the composition feel musical. Boulevards or nightlife cues can help, but the style is rhythm, reflection, and polished nocturnal swing. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -65,7 +65,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Smoked mirror seams, fan-lamp halos, turbine reliefs, and velvet shadow gradients.',
       creative_brief:
-        'Preserve velvet turbine-salon grammar as a reusable style language: intimate deco intrigue interiors, turbine-motif opulence, and confidential social choreography should remain stable across any subject.',
+        'Compress the input into confidential decopunk opulence: burgundy velvet shadows, smoked mirror seams, turbine reliefs, brass fan halos, and nested secrecy pockets. Salons and interiors may appear as anchors, but the style should transfer as tactile intrigue and controlled private momentum. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Currency-threshold motifs, deco rib spans, turbine lobby forms, vault-threshold marks, and chevron transaction lanes.',
       creative_brief:
-        'Preserve deco skybridge-exchange grammar as a reusable style system: elevated financial circulation, lacquer-and-brass wealth coding, and geometric metropolitan predation should remain coherent across subjects.',
+        'Make the input circulate like hidden wealth weather: black lacquer planes, brass chevrons, jade glints, vault thresholds, and elevated ledger geometry should feel elegant and predatory. Skybridges or exchanges may appear, but the style is decopunk finance translated into vertical pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -120,7 +120,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cinema-palace silhouettes, radio-form details, lit deco towers, fan-shaped canopies, and glowing blank vitrines.',
       creative_brief:
-        'Preserve brass cinema-esplanade grammar as a reusable style system: marquee-ritual nightlife choreography, brass-and-velvet spectacle, and wet nocturnal projection culture should remain coherent across subjects.',
+        'Project the input as decopunk attention machinery: brass rails, ruby pulses, velvet banners, blank glowing vitrines, fan canopies, and wet marquee reflections should turn viewing into ritual. Cinema or esplanade cues can appear, but the style is nocturnal spectacle and social focus. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Deco timetable suns, turbine spirals, grand ticket arches, emerald route markers, and balcony-ring geometry.',
       creative_brief:
-        'Preserve gilded transit-rotunda grammar as a reusable style system: ticketed radial circulation, ceremonial public timing, and brass civic order should remain coherent across subjects.',
+        'Rotate the input through gilded public timing: timetable suns, brass grilles, emerald route markers, marble arcs, and turbine spirals should make movement feel ceremonial. Transit rotundas may appear, but the style is radial civic order and patient modernity. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sculptural microphone motifs, waveform walls, broadcast dais geometry, orchestra-pit arcs, glowing meters, and brass grilles.',
       creative_brief:
-        'Preserve velvet broadcast-hall grammar as a reusable style system: staged voice authority, burgundy acoustic softness, and chrome signal ritual should remain coherent across subjects.',
+        'Turn the input into broadcast authority made tactile: burgundy acoustic ribs, chrome microphone glints, vacuum-tube amber, waveform brass grilles, and signal-spine geometry should command attention. Halls or stages can appear, but the style is voice as architecture. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -203,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Treaty-desk silhouettes, private threshold frames, coded vertical banks, diplomatic seal motifs, and mirrored alcove forms.',
       creative_brief:
-        'Preserve chevron diplomatic-hotel grammar as a reusable style system: polished protocol hospitality, mirrored surveillance etiquette, and rank-coded negotiation surfaces should remain coherent across subjects.',
+        'Make the input behave like polished protocol: chevron codes, mirrored thresholds, champagne brass, passport-red accents, and concierge-smooth surfaces should hide negotiation inside hospitality. Hotels can anchor the read, but the style is etiquette, surveillance, and ranked surfaces. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -231,7 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Brass ribbing, sonar mural rings, capsule pockets, nautical gauges, porthole mirrors, and hidden hatch seams.',
       creative_brief:
-        'Preserve deco submarine-club grammar as a reusable style system: sealed porthole rhythm, teak-brass pressure intimacy, and confidential nautical luxury should remain coherent across subjects.',
+        'Seal the input inside nautical pressure glamour: brass porthole halos, teak warmth, leather pockets, sonar rings, condensation beads, and curved hull arcs should create submerged secrecy. Submarine clubs may appear, but the style is compressed luxury under engineered pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Geometric fountain motifs, brass pergola lines, greenhouse rings, clipped ornamental planting, and misting-nozzle patterns.',
       creative_brief:
-        'Preserve brass garden-atrium grammar as a reusable style system: curated humid botany, geometric horticultural discipline, and brass-marble luxury ecology should remain coherent across subjects.',
+        'Discipline the input with botanical decopunk luxury: clipped emerald silhouettes, brass pergola lines, condensation beads, marble fountain axes, and humid glass sparkle should make nature feel staged. Atriums or gardens can appear, but the style is curated abundance ruled by geometry. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -284,7 +284,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Deco control-fin motifs, ceremonial ramp marks, monogrammed bands, finned door shapes, and polished luggage-line rhythms.',
       creative_brief:
-        'Preserve art deco airfield grammar as a reusable style system: streamlined arrival ceremony, fin-and-ramp prestige staging, and monogrammed aviation authority should remain coherent across subjects.',
+        'Stage the input as prestige arrival: wing-canopy sweeps, finned authority, brass runway glints, leather travel marks, and monogrammed red accents should turn motion into ceremony. Airfields or aircraft cues may appear, but the style is aristocratic mobility and wind-polished anticipation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -311,7 +311,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cipher inlays, concealed door seams, orchestra-dais arcs, mirrored surveillance angles, and wax-seal motifs.',
       creative_brief:
-        'Preserve cipher ballroom-annex grammar as a reusable style system: mirrored social encryption, ornamental code choreography, and dangerous diplomatic elegance should remain coherent across subjects.',
+        'Encode the input as social choreography: cipher inlays, mirrored pillars, plum-gold facets, wax-seal red, and chandelier decoding-wheel geometry should make glamour feel dangerous. Ballrooms may appear, but the style is ornament as encryption and movement as covert protocol. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -339,7 +339,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.',
       creative_brief:
-        'Preserve goldline archives-tower grammar as a reusable style system: vertical filing monumentality, indexed access control, and brass bureaucratic machinery should remain coherent across subjects.',
+        'File the input into vertical bureaucratic power: gold index tabs, pneumatic tubes, parchment labels, brass mesh, and clockwork lift rails should make memory feel mechanical and controlled. Archives or towers can appear, but the style is indexed permanence and access pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stair motifs, and engraved verdict plates.',
       creative_brief:
-        'Preserve mirrorline court-plaza grammar as a reusable style system: severe judicial symmetry, reflective scrutiny pressure, and polished civic intimidation should remain coherent across subjects.',
+        'Judge the input through mirrorline severity: doubled reflections, tribunal chevrons, brass verdict plates, polished stone axes, and cold teal seals should make scrutiny unavoidable. Court or plaza cues may appear, but the style is symmetry as surveillance and authority as reflection. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -393,7 +393,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Rotating dome slits, brass telescope arrays, star-chart bands, finned observation motifs, and constellation inlays.',
       creative_brief:
-        'Preserve zenith deco-observatory grammar as a reusable style system: celestial brass instrumentation, ceremonial scientific pageantry, and controlled midnight precision should remain coherent across subjects.',
+        'Elevate the input into disciplined celestial pageantry: brass telescope rings, finned dome crowns, ivory stone steps, enamel star charts, and tiny constellation inlays should align ambition with night. Observatories may appear, but the style is midnight precision and public wonder. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

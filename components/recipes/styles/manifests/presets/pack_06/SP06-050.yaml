@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Blocky
   atmosphere: Nostalgic
   key_features: Grid alignment
-  creative_brief: Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Forms snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. Nostalgia should come from palette, dithering, tile rhythm, and crisp scale, not from game props.
+  creative_brief: >-
+    Apply 16-bit pixel-art constraints to any input: intentional pixel placement,
+    limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and
+    hard aliasing. Keep hardware-era nostalgia from construction, not from forced
+    game props, HUDs, sprites, or level scenes.
 avoidRules:
   - photo
   - realistic

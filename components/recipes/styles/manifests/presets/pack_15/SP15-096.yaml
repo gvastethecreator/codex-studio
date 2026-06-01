@@ -12,14 +12,15 @@ visualDna:
   color_palette: Ivory, brass, and schoolhouse green.
   lighting_setup: Clean daylight and model-room spotlights.
   material_texture: Chalkboards, brass models, and polished desks.
-  render_quality: Warm institutional concept with educational clarity.
+  render_quality: Warm educational render with tactile mechanism clarity and apprenticeship cues.
   spatial_distortion: Learning-axis composition centered on clock geometry and mechanism diagrams.
   atmosphere: Curiosity, discipline, and apprenticeship pride.
   key_features: Gear lesson motifs, demonstration clocks, maintenance grids, and brass lesson panels.
   creative_brief: >-
-    Preserve gearwork schoolhouse grammar as a reusable style system:
-    tactile apprenticeship pedagogy, model-driven institutional clarity, and
-    disciplined curiosity culture should remain coherent across subjects.
+    Teach the input through gearwork apprenticeship: ivory lesson panels,
+    brass model diagrams, schoolhouse-green grids, chalk mechanism marks, and
+    hands-on timing towers make any subject feel curious, disciplined, and
+    learnable.
 avoidRules: [photoreal, toyish, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-096.webp }
 attributes:

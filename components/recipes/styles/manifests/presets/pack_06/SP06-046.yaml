@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Polished
   key_features: Layered polish, crisp focal rendering, editable-feeling control
-  creative_brief: Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.
+  creative_brief: >-
+    Apply digital-painting workflow to any input: pressure-sensitive brushwork,
+    layered corrections, sampled color precision, soft undo-polished gradients,
+    and clean iterative finish. Keep weightless painterly control without
+    requiring fantasy characters, concept sheets, tablet UI, or visible layers.
 avoidRules:
   - photo
   - realistic

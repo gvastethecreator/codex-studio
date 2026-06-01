@@ -20,8 +20,8 @@ visualDna:
   render_quality: Retro, lo-fi
   spatial_distortion: Tracking error
   atmosphere: Nostalgic, horror
-  key_features: Time stamp
-  creative_brief: Magnetic memory in decay, the tape struggling to reconstruct what it once held. Scanlines rip through faces, color bleeds sideways, and the machine aches with the burden of analog forgetting.
+  key_features: Tracking scars
+  creative_brief: Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.
 avoidRules:
   - hd
   - 4k
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

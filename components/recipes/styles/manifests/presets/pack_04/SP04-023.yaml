@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Nocturnal, theatrical, mysterious
   key_features: Dark-field base, luminous scratch marks, reverse-value composition
   creative_brief: >-
-    Render by removing darkness rather than adding light. Use incision rhythm, hatch density, and directional scratch patterns to define form and focal hierarchy while keeping the scratchboard inversion logic central and reusable across subjects.
+    Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch
+    density, burr-like chatter, and directional scratch patterns to define focal hierarchy without
+    requiring animals, night scenes, portraits, theatrical props, or fixed black-ground
+    compositions.
 avoidRules:
   - white background
 assets:

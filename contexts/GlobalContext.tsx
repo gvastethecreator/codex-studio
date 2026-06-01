@@ -13,9 +13,8 @@ import { useToasts, ToastMessage } from '../hooks/useToasts';
 import { usePanelManager } from '../hooks/usePanelManager';
 import { addLogEntry } from '../utils/logger';
 import { runtimeLogger } from '../utils/runtimeLogger';
-import { DEFAULT_BACKGROUND_CONFIG } from '../constants';
 import { get, set } from '../utils/idb';
-import type { LogEntry, Workspace, BackgroundConfig } from '../types';
+import type { LogEntry, Workspace } from '../types';
 import { createInitialGlobalState, globalReducer } from './globalReducer';
 
 interface GlobalContextType {
@@ -30,12 +29,6 @@ interface GlobalContextType {
   setActiveWorkspace: (id: string) => void;
 
   resetStudioState: () => void;
-
-  isBackgroundEnabled: boolean;
-  setBackgroundEnabled: (enabled: boolean) => void;
-
-  bgConfig: BackgroundConfig;
-  updateBackgroundConfig: (patch: Partial<BackgroundConfig>) => void;
 
   toasts: ToastMessage[];
   addToast: (
@@ -87,17 +80,11 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 
     const hydrate = async () => {
       try {
-        const [logs, workspaces, activeWorkspaceId, bgConfig] = await Promise.all([
+        const [logs, workspaces, activeWorkspaceId] = await Promise.all([
           get<LogEntry[]>('session-logs').catch(() => undefined),
           get<Workspace[]>('app-workspaces').catch(() => undefined),
           get<string>('app-active-workspace-id').catch(() => undefined),
-          get<BackgroundConfig>('bg-config').catch(() => undefined),
         ]);
-
-        const storedBackgroundEnabled = window.localStorage.getItem('isBackgroundEnabled');
-        const isBackgroundEnabled = storedBackgroundEnabled
-          ? JSON.parse(storedBackgroundEnabled)
-          : true;
 
         if (cancelled) return;
 
@@ -107,8 +94,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
             logs: logs ?? [],
             workspaces,
             activeWorkspaceId,
-            bgConfig: bgConfig ?? DEFAULT_BACKGROUND_CONFIG,
-            isBackgroundEnabled,
           },
         });
       } catch (error) {
@@ -129,17 +114,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   usePersistedIdbValue('session-logs', state.logs, isHydrated);
   usePersistedIdbValue('app-workspaces', state.workspaces, isHydrated);
   usePersistedIdbValue('app-active-workspace-id', state.activeWorkspaceId, isHydrated);
-  usePersistedIdbValue('bg-config', state.bgConfig, isHydrated);
-
-  useEffect(() => {
-    if (!isHydrated) return;
-
-    try {
-      window.localStorage.setItem('isBackgroundEnabled', JSON.stringify(state.isBackgroundEnabled));
-    } catch (error) {
-      runtimeLogger.warn('Error setting localStorage key "isBackgroundEnabled"', error);
-    }
-  }, [isHydrated, state.isBackgroundEnabled]);
 
   const log = useCallback((message: string) => {
     dispatch({ type: 'ADD_LOG', entry: addLogEntry(message) });
@@ -168,14 +142,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   const { toasts, addToast, removeToast } = useToasts();
   const { isDebugPanelOpen, toggleDebugPanel, openDebugPanel, closeDebugPanel } = usePanelManager();
 
-  const setBackgroundEnabled = useCallback((enabled: boolean) => {
-    dispatch({ type: 'SET_BACKGROUND_ENABLED', enabled });
-  }, []);
-
-  const updateBackgroundConfig = useCallback((patch: Partial<BackgroundConfig>) => {
-    dispatch({ type: 'UPDATE_BACKGROUND_CONFIG', patch });
-  }, []);
-
   const value = useMemo<GlobalContextType>(
     () => ({
       logs: state.logs,
@@ -187,10 +153,6 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       activeWorkspaceId: state.activeWorkspaceId,
       setActiveWorkspace,
       resetStudioState,
-      isBackgroundEnabled: state.isBackgroundEnabled,
-      setBackgroundEnabled,
-      bgConfig: state.bgConfig,
-      updateBackgroundConfig,
       toasts,
       addToast,
       removeToast,
@@ -203,16 +165,12 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
       state.logs,
       state.workspaces,
       state.activeWorkspaceId,
-      state.isBackgroundEnabled,
-      state.bgConfig,
       log,
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,
       setActiveWorkspace,
       resetStudioState,
-      setBackgroundEnabled,
-      updateBackgroundConfig,
       toasts,
       addToast,
       removeToast,

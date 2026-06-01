@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - organic-and-bio-materials
 visualDna:
-  aesthetic: Reptile skin
+  aesthetic: Reptile scale tessellation
   form_and_line: Overlapping scales
   color_palette: Green/Black pattern
   lighting_setup: Iridescent sheen
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Flexible armor
   atmosphere: Cold, sleek
   key_features: Scale grid
-  creative_brief: Compose the dry tessellation of snake scales overlapping in mathematical precision across a flexible armor of keratin, each scale a shield in an endless grid of green and black. Iridescence should flicker at the edges like a secret the surface cannot quite keep. The material must feel sleek and alien, a geometry born of silent movement.
+  creative_brief: 'Compose snake-scale tessellation as flexible armor over the input: overlapping green-black shields, dry keratin smoothness, precise scale grid, and iridescent edge flicker. If a reptile or creature is present, sharpen that identity; otherwise treat the subject as alien armored geometry without requiring literal skin or a snake body.'
 avoidRules:
   - fur
   - skin

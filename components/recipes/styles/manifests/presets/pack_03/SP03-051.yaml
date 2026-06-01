@@ -12,15 +12,21 @@ tags:
   - 3d-and-cgi-rendering
   - organic-and-character-cgi
 visualDna:
-  aesthetic: Clean anatomy render
+  aesthetic: Clean diagnostic cutaway render
   form_and_line: Cutaway view
   color_palette: Red, Blue, White, medical-chart palettes
   lighting_setup: Soft, clear, shadowless diagnostic
-  material_texture: Translucent tissue, anatomical accuracy
+  material_texture: Translucent layers, anatomical or system accuracy
   render_quality: Textbook, educational, clinical-reference
   atmosphere: Scientific, clean, knowledge-dense
   key_features: Label space, cutaway clarity
-  creative_brief: 'The body opens like a textbook — cutaway views reveal layered systems in clinical red, blue, and white, every vessel and bone rendered with diagrammatic clarity rather than surgical gore. Shadowless diagnostic lighting flattens drama in favor of legibility, and translucent tissue gradients map density to opacity with the precision of a radiology workstation. The image is knowledge made visible: anatomy as architecture, the human machine explained through the lens of medical illustration.'
+  creative_brief: >-
+    Turn the input into a clean diagnostic cutaway: layered systems, translucent density gradients, red/blue/white
+    clinical coding and shadowless educational clarity. If biological anatomy fits, use it; otherwise expose internal
+    structure like a medical diagram without forcing human body content. Apply Medical Illustration 3D as a portable
+    3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting
+    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product
+    shot, or scene template.
 avoidRules:
   - gross
   - blood

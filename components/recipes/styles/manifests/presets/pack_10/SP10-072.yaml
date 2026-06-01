@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Calm, vibrant
   key_features: Dots only
-  creative_brief: Thousands of pigment points applied with scientific precision, colors refusing to mix on the palette and instead blending in the eye of the observer. The image assembles itself at a distance, dissolving into atoms of color up close.
+  creative_brief: >-
+    Apply pointillist color construction to the input: tiny separated pigment
+    dots, optical color mixing, bright local marks, and distance-based cohesion
+    should let the subject assemble from painterly particles.
 avoidRules:
   - brush strokes
   - lines
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Pattern repeat
   atmosphere: Boho, intricate
   key_features: Seamless
-  creative_brief: The teardrop bends and repeats, a droplet frozen into ornament and multiplied into labyrinthine fields. Persian gardens translated into textile, each curve a memory of cypress and mango and the geometry of paradise.
+  creative_brief: Apply paisley as ornamental flow over the input with bent teardrop boteh forms, intricate floral curls, multicolor textile repetition, and labyrinthine curves that can wrap, mask, or replace surfaces. Keep cultural ornament as pattern logic, not as garden setting or literal paradise illustration.
 avoidRules:
   - solid color
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-016
 packId: pack_14
-name: Cenote Sun-Serpent Rite
+name: Cenote Sun-Serpent Cycle
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
 visualDna:
-  aesthetic: Mesoamerican mythic ceremony noir in a sacred cenote-temple complex.
-  form_and_line: Terraced glyph geometry, feathered serpent curves, and descending ritual procession.
+  aesthetic: Mesoamerican mythic ceremony noir shaped by cenote depth, sun-serpent cycles, and living water.
+  form_and_line: Terraced glyph geometry, feathered serpent curves, and descending ritual rhythms.
   color_palette: Jade green, obsidian black, and sacrificial gold.
   lighting_setup: Vertical cenote shaft light with torch flicker around glyph walls.
   material_texture: Carved volcanic stone, wet limestone, quetzal plume fibers, and lacquered ritual ceramics.
   render_quality: Premium symbolic concept art with strong shape language and atmospheric depth.
-  spatial_distortion: Deep cenote vortex perspective guiding toward a submerged altar.
+  spatial_distortion: Deep water-vortex perspective guiding toward a submerged symbolic core.
   atmosphere: Sacred gravity, cyclical time, and trembling devotion.
-  key_features: Feather-serpent reliefs, calendar discs, ritual banners, and water-mirror omens.
-  creative_brief: A night rite where cosmic cycles are negotiated at a cenote temple through serpent symbolism and living water.
+  key_features: Feather-serpent reliefs, calendar discs, ritual banner rhythm, water-mirror omens, and jade-gold cyclic light.
+  creative_brief: >-
+    Cycle the input through cenote sun-serpent cosmology: jade water glow,
+    obsidian depth, sacrificial-gold rims, feather-serpent curves, and calendar
+    glyph geometry should make any subject feel cyclic and sacred without
+    requiring a temple, cenote, procession, sacrifice, or literal serpent.
 avoidRules: [photoreal, parody, modern-urban, cute, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-016.webp }
 attributes:
   negativePrompt: photoreal, parody, modern-urban, cute, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

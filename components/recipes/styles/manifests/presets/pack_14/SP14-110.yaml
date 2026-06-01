@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-110
 packId: pack_14
-name: Oath Knife Chapel
+name: Oath Knife Binding
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Chapel of vows guarded by ceremonial blades and iron stands.
-  form_and_line: Knife-sharp verticals, altar edge, and disciplined symmetry.
+  aesthetic: Vow-binding noir guarded by ceremonial blades, cords, and austere authority.
+  form_and_line: Knife-sharp verticals, altar-edge cues, and disciplined symmetry.
   color_palette: Iron black, dried crimson, and bone white.
   lighting_setup: Single altar beam and edge highlights on metal.
   material_texture: Forged steel, cracked stone, and stained leather.
   render_quality: Stark mythic key art with ceremonial precision.
-  spatial_distortion: Frontal chapel axis with blades framing the altar.
+  spatial_distortion: Frontal axis with blades framing a symbolic commitment point, not a required chapel.
   atmosphere: Binding, sacrifice, and austere authority.
-  key_features: Oath blades, binding cords, and vow tablets.
-  creative_brief: A ritual chapel where promises are sealed through blade-lit ceremony.
+  key_features: Oath blades, binding cords, vow-tablet shapes.
+  creative_brief: Convert any input into oath-knife binding style, where promises feel sealed by blade-lit ceremony. Keep knife-sharp verticals, cord tension, dried crimson, altar-beam contrast, and austere symmetry without requiring knives, chapels, altars, vows, or sacrifice scenes.
 avoidRules: [photoreal, cartoon, neon, watermark, text, logo, glossy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-110.webp }
 attributes:
   negativePrompt: photoreal, cartoon, neon, watermark, text, logo, glossy
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

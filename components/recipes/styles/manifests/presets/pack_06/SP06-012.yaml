@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Stylized forms
   atmosphere: Urgent, improvised, graphic
   key_features: Spray texture
-  creative_brief: Aerosol mist feathers beyond every edge, creating halos that feel fast, public, and impossible to fully control. Stencil logic, drips, and layered color clouds turn any subject into a graphic act of pressure and release. The mark should feel immediate and risky without requiring walls, streets, tags, or readable lettering.
+  creative_brief: >-
+    Apply aerosol spray-paint logic to any input: feathered overspray, stencil
+    silhouettes, pressure halos, layered color clouds, drips, and fast public-mark
+    energy. Keep risky graphic immediacy without requiring walls, streets, tags,
+    graffiti words, or protest context.
 avoidRules:
   - photo
   - realistic

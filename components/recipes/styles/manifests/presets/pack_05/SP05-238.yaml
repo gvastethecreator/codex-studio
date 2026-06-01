@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-238
 packId: pack_05
-name: SSSS.Gridman - Tokusatsu Neon City Grid
+name: Tokusatsu Digital Grid Scale
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,34 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Neo-tokusatsu melancólico con heroísmo de silueta gigante y gramática digital de rejilla energética.
-  form_and_line: Contorno monumental limpio, apilado de escala por capas y overlays geométricos de precisión controlada.
+  aesthetic: >-
+    Neo-tokusatsu anime melancholy with colossus-scale silhouettes, digital lattice motifs, clean
+    heroic geometry, and nostalgic signal light
+  form_and_line: >-
+    Contorno monumental limpio, apilado de escala por capas y overlays geométricos de precisión
+    controlada.
   color_palette: Acero frío, cian eléctrico, magenta tenue de crepúsculo y blancos de energía puntuales.
-  lighting_setup: Contraluz de ícono heroico, emisión de grid holográfico y difusión atmosférica suave sobre key duro.
-  material_texture: Compuesto sintético semibrillo, panelado depurado, interacción lumínica energía-armadura y desgaste mínimo.
-  render_quality: Acabado nítido tokusatsu-anime con legibilidad de silueta y limpieza emocional de alto contraste.
-  spatial_distortion: Compresión de profundidad para escalar la figura central y tensión foreground-midground de mundo miniaturizado.
+  lighting_setup: >-
+    Contraluz de ícono heroico, emisión de grid holográfico y difusión atmosférica suave sobre key
+    duro.
+  material_texture: >-
+    Compuesto sintético semibrillo, panelado depurado, interacción lumínica energía-armadura y
+    desgaste mínimo.
+  render_quality: >-
+    Acabado nítido tokusatsu-anime con legibilidad de silueta y limpieza emocional de alto
+    contraste.
+  spatial_distortion: >-
+    Compresión de profundidad para escalar la figura central y tensión foreground-midground de mundo
+    miniaturizado.
   atmosphere: Heroica y resonante, con nostalgia tecnológica contenida.
-  key_features: Silueta colosal, lattice digital, nostalgia tecnológica e iconografía de escala sentimental.
+  key_features: >-
+    Colossal silhouette contrast, digital lattice, nostalgic tech glow, clean hero geometry,
+    sentimental scale, and grid energy
   creative_brief: >-
-    Define una gramática tokusatsu-grid reusable donde contraste de silueta
-    colosal y motivos de malla digital sostengan una heroicidad contemplativa,
-    limpia y transferible entre sujetos.
+    Use SSSS.Gridman as style anchor for tokusatsu digital grid scale. Any prompt should feel huge,
+    clean, signal-lit, and contemplatively heroic. If subject supports it, add colossus/robot scale
+    hints or digital-lattice armor; cities, monsters, literal screens, and battle scenes remain
+    optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +56,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-238.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

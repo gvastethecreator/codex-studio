@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Handmade look
   atmosphere: Playful, tactile, old-world craft
   key_features: Fingerprints
-  creative_brief: 'Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine, and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman''s soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation.'
+  creative_brief: >-
+    Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil
+    records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine,
+    and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman's
+    soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation. Apply
+    Claymation as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - smooth
   - digital

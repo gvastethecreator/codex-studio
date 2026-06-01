@@ -12,7 +12,9 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares
+  aesthetic: >-
+    Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV
+    satire, pastel wallpaper discomfort, mundane things becoming nightmares
   form_and_line: Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents
   color_palette: Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green
   lighting_setup: Flat sitcom illumination, fluorescent discomfort, no heroic contrast, ambient suburban wash
@@ -21,7 +23,13 @@ visualDna:
   spatial_distortion: Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration
   atmosphere: Neurotic, suburban, goofy, overstimulated
   key_features: Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic
-  creative_brief: 'Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb scenes. The tone should be goofy dread under soft colors.'
+  creative_brief: >-
+    Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer
+    shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb
+    settings. The tone should be goofy dread under soft colors. Apply Rocko's Modern Life - Beige Suburban Anxiety as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - digital
   - HD

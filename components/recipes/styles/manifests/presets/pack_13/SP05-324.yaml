@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-324
 packId: pack_13
-name: Rumiko Takahashi - Elastic Rom-Com Combat
+name: Elastic Rom-Com Slapstick Timing
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,25 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Cheerful romantic-comedy elasticity with instantly readable silhouettes, slapstick chaos, affection-argument rhythm, and buoyant cartoon clarity
+  aesthetic: >-
+    Cheerful romantic-comedy elasticity with instantly readable silhouettes, slapstick chaos,
+    affection-argument rhythm, and buoyant cartoon clarity
   form_and_line: Clean efficient contour, lively expression marks, simple comedic exaggeration
   color_palette: Candy red, sky blue, warm peach, clean black, sunny yellow, pond green
   lighting_setup: Bright TV-animation key, simple cel highlights, cheerful no-fuss lighting
   material_texture: Flat cel paint feel, clean paper grain, hair-shine pops, simple clothing folds
-  render_quality: Clean retro rom-com action rendering with readable slapstick timing and buoyant character-comedy impact
+  render_quality: >-
+    Clean retro rom-com action rendering with readable slapstick timing and buoyant character-comedy
+    impact
   spatial_distortion: Elastic slapstick deformation, giant reaction-scale shifts, and instant pose readability
   atmosphere: Playful, combative, charming, lively
-  key_features: Comic motion smears, expressive reaction faces, slapstick impact beats, readable silhouette humor, flirt-fight energy
+  key_features: >-
+    Comic smears, expressive reactions, slapstick timing, readable silhouettes, buoyant affection
+    tension, and bright cartoon clarity
   creative_brief: >-
-    Use Rumiko Takahashi title as style anchor for elastic rom-com chaos:
-    clear silhouette slapstick, flirt-fight timing, and bright cartoon energy
-    should transfer without requiring martial combat, object hits, couple
-    argument, or specific character acting.
+    Use Rumiko Takahashi as style anchor for elastic rom-com slapstick timing. Any prompt should
+    carry bounce, argument rhythm, readable silhouettes, and affectionate chaos. Combat, object
+    hits, couples, martial arts, and character acting are optional.
 avoidRules:
   - photoreal live-action look
   - muted deadpan lighting
@@ -35,7 +40,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-324.webp
 attributes:
-  negativePrompt: photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static poses, heavy cinematic blur
+  negativePrompt: >-
+    photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static
+    poses, heavy cinematic blur
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

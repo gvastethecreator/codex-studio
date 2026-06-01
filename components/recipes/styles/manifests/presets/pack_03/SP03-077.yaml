@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Built from toy bricks, Lego world, snap-together reality, stud-and-tube logic
+  aesthetic: Toy-brick construction, stud-and-tube logic
   form_and_line: Studs
   color_palette: Plastic primary colors, brick-bright palette
   lighting_setup: Plastic gloss, animated-film lighting
@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Brick steps
   atmosphere: Playful, constructive, brick-by-brick magic
   key_features: Studs on top, clutch power
-  creative_brief: 'Studs rise from every surface like braille for the fingers — plastic primary colors snap together with clutch-power logic, and ABS material catches animated-film lighting with the gloss of molded polymer. Brick-stepped curves approximate what smooth geometry would achieve, and visible seams between elements celebrate the constructive constraint rather than hiding it. The image is Lego Movie energy: a world built brick by brick where everything is indeed awesome, every stud a tiny declaration of snap-together possibility.'
+  creative_brief: >-
+    Convert the input into toy-brick construction: studs, clutch-power seams,
+    ABS gloss, primary-color modules and stepped approximations of curves. Keep
+    Lego Movie feature energy without forcing a brick world, playset or specific
+    setup.
 avoidRules:
   - smooth
   - melted

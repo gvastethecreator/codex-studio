@@ -17,11 +17,11 @@ visualDna:
   color_palette: White
   lighting_setup: Soft
   material_texture: Dense gas
-  render_quality: Stage effect, spooky
+  render_quality: Low, cold, theatrical
   spatial_distortion: Heavy gas
   atmosphere: Eerie, stage
   key_features: Low lying
-  creative_brief: Render the heavy theatre of dry ice fog rolling low across the ground in dense white clouds that behave more like liquid than gas, pooling and pouring with an eerie obedience to gravity. The fog should feel cold to the eye, a dense atmosphere that transforms the ordinary floor into a stage between worlds. Capture the aesthetics of the liminal, the breath of the unseen made visible.
+  creative_brief: 'Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.'
 avoidRules:
   - steam
   - hot

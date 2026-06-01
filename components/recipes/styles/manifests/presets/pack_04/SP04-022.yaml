@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Quiet, reflective, domestic warmth
   key_features: Layered glazing, crosshatch modulation, stump-like soft blending
   creative_brief: >-
-    Build forms through incremental colored-pencil layering and visible stroke direction. Prioritize tactile paper interaction, subtle value shifts, and soft-edge transitions so the style remains calm and portable across subjects without scene-specific dependencies.
+    Apply colored-pencil sketch language to any input: incremental pigment layering, visible stroke
+    direction, paper-tooth drag, soft-edge transitions, and subtle value shifts should stay calm and
+    portable without requiring sketchbooks, domestic scenes, portraits, still lifes, or fixed props.
 avoidRules:
   - ink
   - paint

@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Optimistic, informative, high-clarity
   key_features: Modular icon blocks, geometric metaphors, hierarchy-first composition
   creative_brief: >-
-    Translate complex concepts into concise geometric storytelling. Keep Kurzgesagt-style readability through consistent shape language, semantic color coding, and modular composition that remains adaptable across topics without anchoring to fixed narrative scenes.
+    Apply flat educational vector grammar to any input: geometric primitives, semantic color coding,
+    modular icon blocks, rounded construction, and hierarchy-first composition should explain form
+    clearly without requiring charts, planets, birds, UI labels, narration panels, or fixed
+    explainer scenes.
 avoidRules:
   - outline
   - texture

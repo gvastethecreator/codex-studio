@@ -12,14 +12,21 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Immersive-sim de asesinato cortesano con barroco oscuro, infiltración social y manipulación de facciones.
-  subject_treatment: Roles de stealth/disguise/assassin con lectura por máscara, postura y vestuario de clase.
+  aesthetic: Gramática immersive-sim barroca de infiltración social, sospecha faccional y ejecución silenciosa.
+  subject_treatment: >-
+    Convierte el input en rol stealth/disguise/assassin, máscara social, llave de acceso o amenaza cortesana según
+    aplique.
   color_and_tone: Burdeos, negro terciopelo y oro envejecido para codificar estatus y amenaza.
   lighting_and_shadow: Lámparas dramáticas con alto contraste para rutas de ocultamiento y ventanas de ejecución.
   texture_and_material: Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.
-  camera_and_composition: Tableau frontal con capas de foreground para line-of-sight y rutas silenciosas.
+  camera_and_composition: Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.
   atmosphere_and_mood: Elegancia letal, paranoia social y tensión ritualizada.
   rendering_and_quality: Faction key-art orientado a sandbox sistémico, lectura de sospecha y agencia del jugador.
+  creative_brief: >-
+    Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema
+    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

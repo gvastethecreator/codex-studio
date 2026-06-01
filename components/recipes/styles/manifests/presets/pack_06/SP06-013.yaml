@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Idealized forms
   atmosphere: Retro, slick
   key_features: Smooth gradients
-  creative_brief: Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under synthetic color. The image glows with the impossible perfection of a future that never arrived, all friction erased into vapor-soft transitions. Highlights gleam with retro-commercial confidence and frictionless fantasy.
+  creative_brief: >-
+    Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth
+    highlights, vapor-soft transitions, glossy synthetic color, and retro
+    commercial glow. Keep frictionless fantasy without requiring pinups, cars,
+    chrome logos, sunset grids, or mall-poster compositions.
 avoidRules:
   - photo
   - realistic

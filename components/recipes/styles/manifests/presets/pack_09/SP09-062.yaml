@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Falling
   atmosphere: Happy, party
   key_features: Random rotation
-  creative_brief: Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry.
+  creative_brief: >-
+    Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a
+    tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion
+    across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics
+    of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - trash
 assets:

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Disjointed
   atmosphere: Chaotic, surreal
   key_features: Cutout edges
-  creative_brief: Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work.
+  creative_brief: >-
+    Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended.
+    Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning
+    through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work. Apply this mixed-media
+    process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade
+    artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table
+    scene.
 avoidRules:
   - photo
   - realistic
@@ -43,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-061.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border, readable magazine text, specific source photo requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

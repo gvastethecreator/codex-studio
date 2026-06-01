@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Patient, observant',
       key_features: 'Blurred background',
       creative_brief:
-        'Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo look to any subject without forcing animals, forest, fur, feathers, or nature scenery.',
+        'Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo look to any subject without forcing animals, forest, fur, feathers, or nature setting.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Conceptual',
       key_features: 'No subject',
       creative_brief:
-        'The camera unmoors from its duty to describe, wandering into territories where color itself becomes the protagonist and form exists only as suggestion. Blur and close-range mystery conspire to dissolve the familiar until recognition fails and new meaning assembles in the wreckage of the recognizable. What the eye cannot name, the imagination begins to furnish.',
+        'Apply abstract-photography dissolution to the input: close-range cropping, color-first composition, blur, partial recognition, and suggestive form fragments should let any subject become photographic abstraction.',
     },
   },
   {
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Active, immersive',
       key_features: 'Wide FOV',
       creative_brief:
-        'The lens bends space around experience: ultra-wide FOV, curved horizons, digital sharpening, hard available light, and foreground exaggeration pulling viewer close. Apply immersive action-camera POV to any subject, even still objects, without requiring sports, travel, or outdoor action.',
+        'Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon distortion, digital sharpness, hard available light, and foreground pull should make any subject immersive without requiring sports or travel.',
     },
   },
   {
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Epic, overview',
       key_features: "Bird's eye view",
       creative_brief:
-        'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required.',
+        'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Diagnostic, technical',
       key_features: 'Heat gradient',
       creative_brief:
-        'The world translated into temperature logic: surfaces simplified into blobby heat zones, violet shadows rising through red and orange into yellow-white intensity. Apply thermal diagnostic imaging to any subject, living or inert, without predator framing or mandatory bodies.',
+        'Apply thermal-camera temperature logic to the input: violet cool zones, red-orange heat gradients, yellow-white intensity peaks, and simplified diagnostic blobs should map any subject without requiring living bodies.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,14 +12,18 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Action-RPG submarino de reino coralino, orientado a exploración vertical, patrullas y combate de movilidad acuática.
-  subject_treatment: Guardianes anfibios y monturas abisales por rol (vanguardia, control, persecución).
+  aesthetic: Gramática action-RPG submarina coralina con exploración vertical, patrullas, movilidad acuática y biominera viva.
+  subject_treatment: Convierte el input en guardián anfibio, montura abisal, ruta, reliquia o estructura coralina según su silueta.
   color_and_tone: Turquesa brillante, rojo coral y blanco nacarado para separar rutas seguras y zonas hostiles.
   lighting_and_shadow: Rayos filtrados, caústicas dinámicas y capas de profundidad para navegación tridimensional.
   texture_and_material: Coral poroso, escamas nacaradas, algas estructurales y arquitectura bio-mineral viva.
-  camera_and_composition: Perspectiva amplia con ciudad aterrazada, corrientes principales y puntos de ascenso/descenso.
+  camera_and_composition: Perspectiva amplia con corrientes, ascenso/descenso y jerarquía territorial; ciudad coralina es opcional.
   atmosphere_and_mood: Maravillosa, elegante y peligrosamente impredecible.
   rendering_and_quality: Worldbuilding gameplay key-art con lectura clara de rutas, amenaza y jerarquía territorial.
+  creative_brief: >-
+    Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

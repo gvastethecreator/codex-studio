@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Antique, classic
   key_features: Plate mark
-  creative_brief: Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Every line should feel bitten, fuzzy, pressured, and impossible to mistake for clean digital ink.
+  creative_brief: >-
+    Apply etched-print linework to any input: acid-bitten copper lines, fuzzy
+    inked grooves, plate-pressure emboss, fine crosshatching, and delicate
+    chemical irregularity. Keep intaglio bite without requiring old maps,
+    architecture, portraits, botanical plates, or antique scenes.
 avoidRules:
   - photo
   - realistic

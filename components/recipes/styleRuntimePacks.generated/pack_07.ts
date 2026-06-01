@@ -4,15 +4,29 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () =>
-    import('./pack_07/residential-interiors-1').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_07/interior-design-systems-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_07/historical-and-sacred-architecture-2').then(
+    import('./pack_07/architectural-movements-and-vernaculars-2').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_07/landscape-and-gardens-3').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_07/civic-infrastructure-and-specialty-spaces-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
   () =>
-    import('./pack_07/speculative-and-concept-architecture-4').then(
+    import('./pack_07/landscape-and-garden-systems-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_07/fantasy-and-mythic-architecture-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_07/toy-craft-and-miniature-architecture-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_07/megastructure-and-impossible-space-7').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
 ];

@@ -12,7 +12,7 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Empty city square
+  aesthetic: Metaphysical stillness
   form_and_line: Long shadows
   color_palette: Yellow, Green, Dark
   lighting_setup: Afternoon sun
@@ -20,8 +20,8 @@ visualDna:
   render_quality: De Chirico, silent
   spatial_distortion: Mannequins
   atmosphere: Silent, philosophical
-  key_features: Arches
-  creative_brief: Plazas emptied of people, classical arches framing a silence thicker than architecture. Mannequins and long shadows inhabit a world where time has been suspended by decree of geometry.
+  key_features: Suspended time
+  creative_brief: Apply metaphysical-art stillness over the input with long afternoon shadows, yellow-green-dark tonal tension, plaster or stone quietness, mannequin-like simplification when figures appear, and geometry that suspends time. If plaza, arch, or architecture exists, use it; otherwise impose classical silence and philosophical emptiness without requiring a city square.
 avoidRules:
   - busy
   - detailed
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

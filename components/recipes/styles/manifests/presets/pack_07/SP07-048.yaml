@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-048
 packId: pack_07
-name: Rooftop Garden
-category: 4. Landscape And Gardens
+name: Elevated Biophilic Terrace
+category: 4. Landscape And Garden Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - landscape-and-gardens
+  - landscape-and-garden-systems
 visualDna:
-  aesthetic: Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica calmada.
-  form_and_line: Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal suavizado.
-  color_palette: Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights
+  aesthetic: >-
+    Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica
+    calmada.
+  form_and_line: >-
+    Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal
+    suavizado.
+  color_palette: >-
+    Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents,
+    low-intensity amber highlights
   lighting_setup: Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.
   material_texture: Madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y zinc cepillado.
   render_quality: Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.
-  spatial_distortion: Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence
+  spatial_distortion: >-
+    Long-axis compositional pull with shallow vertical compression to preserve terrace layering and
+    planting cadence
   atmosphere: Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.
-  key_features: Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste verde-hardscape.
+  key_features: >-
+    Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste
+    verde-hardscape.
   creative_brief: >-
-    Preserva una gramática elevada transferible basada en ritmo de plantación,
-    materialidad sobria de lujo y calma atmosférica. Debe mantener identidad
-    sin depender de ubicación, altura o skyline específicos.
+    Trata cualquier prompt como paisaje elevado de baja voz: bandas de plantacion, deck calido, luz
+    integrada y borde contenido. La altura se sugiere por capas y aire, nunca por skyline
+    obligatorio.
 avoidRules:
   - ground level
 assets:
@@ -34,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: landscape-and-gardens
-  categoryName: 4. Landscape And Gardens
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
   tags:
     - architecture-and-interior
-    - landscape-and-gardens
+    - landscape-and-garden-systems
   supportedTasks:
     - image_generate
     - image_edit

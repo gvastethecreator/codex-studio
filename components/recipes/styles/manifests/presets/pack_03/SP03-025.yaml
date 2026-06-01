@@ -20,7 +20,12 @@ visualDna:
   render_quality: Concept art, detailed, blockbuster sci-fi
   atmosphere: Industrial, complex, constructed chaos
   key_features: Dense detail, mechanical storytelling
-  creative_brief: 'A thousand borrowed parts assemble into something that feels designed rather than composed — greebles cluster at panel seams like barnacles on a starship hull, and ambient occlusion pools in the crevices of mechanical density. Industrial grey and worn metal tell stories of fabrication and repair, every rivet and panel line a fragment of worldbuilding. The image captures blockbuster sci-fi concept art at its most convincing: constructed chaos that somehow reads as functional.'
+  creative_brief: >-
+    Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and ambient-occlusion
+    pockets that imply functional assembly. It can hint at starship/mecha engineering when suitable, but must not force
+    a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
+    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - organic
   - smooth

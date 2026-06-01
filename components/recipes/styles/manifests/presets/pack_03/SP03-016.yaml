@@ -19,9 +19,14 @@ visualDna:
   material_texture: Fluffy, soft, dimensional volume
   render_quality: XGen groom simulation, every strand deliberate
   spatial_distortion: Wind blown
-  atmosphere: Cozy, creature, tactile warmth
+  atmosphere: Cozy, tactile warmth, groomed softness
   key_features: Hair strands, clump variation
-  creative_brief: Every strand is deliberate — clumps part like wheat in a field, and rim light catches the fuzz at grazing angles, turning each filament into a golden thread. The groomed volume reads as something you could sink your hand into, soft gradients mapping depth through density. Wind-frozen or studio-still, the fur carries the warmth of a living creature rendered with XGen precision.
+  creative_brief: >-
+    Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density gradients
+    and wind-frozen filament behavior. It may imply creature warmth, but should not require an animal, character, field
+    metaphor or living body. Apply Fur & Hair as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required
+    character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - bald
   - smooth

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-234
 packId: pack_05
-name: Muv-Luv Alternative - Tactical Suit Extinction War
+name: Extinction Interface Command
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,27 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Apocalipsis táctico de desgaste total, con interfaz de aniquilación y amenaza impersonal de masa estadística.
-  form_and_line: Silueta vectorial dura, composición de comando en capas y masa hostil tratada como volumen estadístico.
+  aesthetic: >-
+    Total-attrition tactical anime apocalypse with annihilation interfaces, critical alarms,
+    mass-threat abstraction, and command-pressure geometry
+  form_and_line: >-
+    Silueta vectorial dura, composición de comando en capas y masa hostil tratada como volumen
+    estadístico.
   color_palette: Acero opaco, rojo de alarma, humo gris, naranja de detonación y verde instrumental de HUD.
   lighting_setup: Parpadeo de alertas, backlight de crisis y luminancia electrónica de mando.
   material_texture: Superficie golpeada, concreto fracturado, residuos térmicos y lluvia sobre materiales bélicos.
   render_quality: Sci-fi táctico con claridad operativa, presión visual alta y escala de colapso civilizatorio.
-  spatial_distortion: Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo crítico.
+  spatial_distortion: >-
+    Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo
+    crítico.
   atmosphere: Desesperada, militarizada y sacrificial, de urgencia sostenida.
-  key_features: Overlays de control, amenaza masiva, desgaste urbano, alarmas críticas y geometría de evacuación.
+  key_features: >-
+    Control overlays, critical alarms, mass threat fields, evacuation geometry, urban wear, and
+    command-pressure severity
   creative_brief: >-
-    Formula una gramática extinction-war reusable donde interfaz táctica,
-    desgaste urbano y amenaza masiva no antropomórfica definan el estilo con
-    rigor de comando sin exigir traje, ciudad, enemigo o batalla literal.
+    Use Muv-Luv Alternative as style anchor for extinction interface command. Any prompt should feel
+    statistically overwhelmed, tactically compressed, and near-collapse. Suits, cities, enemies,
+    battles, cockpits, and war scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-234.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

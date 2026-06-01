@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Rockabilly or housewife dress, soda-fountain sweetness, Eisenhower-era femininity
+  aesthetic: 1950s vintage dress styling, soda-fountain sweetness, Eisenhower-era femininity
   form_and_line: Cinched waist, full skirt, circle-skirt volume, petticoat layers, sweetheart neckline
   color_palette: Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check
-  lighting_setup: Bright, happy, Technicolor saturation, diner-neon cheer, sun-drenched suburbia
+  lighting_setup: Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth
   material_texture: Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim
   render_quality: Retro, pin-up, cute, Kodachrome nostalgia, malt-shop charm
   spatial_distortion: Hourglass figure
   atmosphere: Nostalgic, fun, feminine, jukebox innocence, sock-hop excitement, cherry-cola sweetness
-  key_features: Red lipstick, cat-eye liner, victory rolls, polka-dot headband
-  creative_brief: A twirl of taffeta caught between Technicolor frames, polka dots frozen mid-bounce above saddle shoes gleaming like fresh icing. The cinched waist holds the architecture of an era when femininity was engineered with crinoline scaffolding, cherry-red lipstick the only rebellion permitted beneath victory-rolled hair.
+  key_features: Cat-eye cues, victory-roll volume, polka-dot headband, crinoline or petticoat structure
+  creative_brief: >-
+    Dress the input in 1950s vintage codes: cinched waist, circle-skirt volume, petticoat lift, polka dots, gingham,
+    cherry red and glossy Technicolor sweetness. Keep lipstick or victory-roll cues when useful, but do not require a
+    housewife, diner, sock hop or human pin-up pose. Apply this fashion/costume grammar over any input: preserve textile
+    behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait,
+    runway, room, prop, role, or fixed character scene.
 avoidRules:
   - modern
   - pants
@@ -43,4 +48,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

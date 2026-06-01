@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Stealth-heist portuario nocturno con infiltración modular, extracción silenciosa y rutas de contrabando.
-  subject_treatment: Smugglers ágiles y guardias mecanizados con lectura clara de patrulla y respuesta.
+  aesthetic: Gramática stealth-heist nocturna con infiltración modular, extracción silenciosa y rutas clandestinas.
+  subject_treatment: Reinterpreta el input como smuggler, guardia, botín, contenedor o dispositivo de patrulla según aplique.
   color_and_tone: Azul petróleo, naranja sodio y negro profundo para separar cobertura, alarma y sombra útil.
   lighting_and_shadow: Farolas mojadas, contraluces de contenedor y charcos reflectivos como riesgo de exposición.
   texture_and_material: Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.
-  camera_and_composition: Sightlines cruzadas con rutas altas/bajas, puntos ciegos y nodos de botín.
+  camera_and_composition: Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.
   atmosphere_and_mood: Nerviosa, oportunista y al borde del fallo.
   rendering_and_quality: Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.
 avoidRules:

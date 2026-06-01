@@ -20,7 +20,14 @@ visualDna:
   render_quality: Desktop wallpaper, clean, background art
   atmosphere: Calm, digital, zen-productivity
   key_features: No focal point, flowing composition
-  creative_brief: 'No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at.'
+  creative_brief: >-
+    No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a
+    composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and
+    the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop
+    wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at. Apply
+    Abstract Background as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - subject
   - object

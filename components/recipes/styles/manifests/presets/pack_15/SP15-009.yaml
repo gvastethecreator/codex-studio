@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Resource intelligence, relief, and hopeful climatic resilience.
   key_features: Desalination-tower motifs, brine-art channels, productive oasis-terrace rhythm.
   creative_brief: >-
-    Preserve desert-bloom desalinatory grammar as a reusable style system:
-    arid water-production elegance, shade-adaptive public infrastructure, and
-    oasis-scale resilience cues should remain coherent across subjects without
-    requiring desert, towers, gardens, or a literal desalinatory.
+    Transform the input through arid-water elegance: cobalt intake accents,
+    salt-crystal sparkle, solar-sail shade ribs, and jade irrigation pulses.
+    Deserts, towers, gardens, or desalination plants may appear as useful cues,
+    but the style should read as bloom-through-watercraft, not fixed location.
 avoidRules: [photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-009.webp }
 attributes:

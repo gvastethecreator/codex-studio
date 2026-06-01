@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Timeless, expressive',
       key_features: 'Visible brushwork',
       creative_brief:
-        'Wet pigment yields its secrets layer by layer, each stroke a conversation between hand and surface. Canvas grain catches light like a held breath, suspending a moment that should have passed but chose to stay. The image carries the weight of centuries, yet feels as immediate as paint still wet on the palette.',
+        'Apply classic oil-paint handling to any input: slow layered pigment, visible canvas grain, soft wet-edge blending, glazed depth, varnish warmth, and brushwork with old-master weight. Keep painterly permanence without requiring portraits, landscapes, still lifes, galleries, or historical subject matter.',
     },
   },
   {
@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, sturdy',
       key_features: 'Velvet matte finish',
       creative_brief:
-        'Milk protein suspends pigment in a velvet embrace, drying to a surface that absorbs light like powdered stone. The matte finish whispers where oil would shout, carrying illustration into the realm of the permanent. Every stroke dries waterproof and indelible, a commitment made visible.',
+        'Apply casein-paint surface logic to any input: milk-protein matte pigment, powdered-stone opacity, fast opaque layering, crisp illustration edges, and waterproof permanence. Keep quiet durable color without requiring vintage posters, editorial illustration, packaging, or dairy-themed subject matter.',
     },
   },
   {
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Energetic, contemporary',
       key_features: 'Opaque paint layers',
       creative_brief:
-        'Plastic pigment sits proud on the surface, unapologetic in its opacity, drying faster than thought. Every flat plane announces itself with synthetic confidence, color refusing to blend where boundaries are meant to hold. The image crackles with contemporary energy, modern in spirit and material truth.',
+        'Apply modern acrylic-paint logic to any input: fast-drying opaque color, crisp blocked planes, synthetic pigment density, visible plastic surface body, and bright contemporary contrast. Keep modern studio energy without requiring canvas panels, abstract walls, or gallery installation context.',
     },
   },
   {
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy, soft, nostalgic',
       key_features: 'Watery texture',
       creative_brief:
-        'Pigment bleeds into water and paper becomes light, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The style breathes with the humidity of the moment it was made, never fully dry, always becoming.',
+        'Apply soft watercolor behavior to any input: translucent washes, pigment blooms, feathered wet edges, paper-white luminosity, granulation, and gentle value layering. Keep airy water-media softness without requiring florals, landscapes, sketchbook pages, or botanical study.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Playful, graphic',
       key_features: 'Matte opacity',
       creative_brief:
-        'Velvet-matte pigment absorbs light instead of reflecting it, creating a surface that feels like silence. Crisp edges meet chalky depth in a negotiation between graphic clarity and painterly substance. The result is design that remembers the hand, precision softened by pigment.',
+        'Apply flat gouache treatment to any input: velvet matte opacity, chalky pigment body, crisp graphic edges, softened hand-painted precision, and dense color fields that absorb light. Keep illustration-ready clarity without requiring posters, character art, packaging, or flat product layouts.',
     },
   },
   {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Reverent, ancient, luminous through craft rather than narrative content',
       key_features: 'Fine linear brushwork',
       creative_brief:
-        'Egg yolk binds pigment into luminous permanence, a medium that predates oil and outlasts empires. Fine cross-hatching builds form from patience, each translucent layer glowing from within like stained glass. The image feels sacred not through subject but through the discipline of its making.',
+        'Apply egg-tempera discipline to any input: luminous thin pigment, fine cross-hatched modeling, crisp small strokes, panel-like permanence, and restrained inner glow. Keep sacred-craft precision as technique, not as required religious icon, portrait, gold ground, or medieval subject.',
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mysterious, tactile',
       key_features: 'Waxy surface',
       creative_brief:
-        'Molten beeswax traps color in amber, each layer fused by flame into a surface you want to touch. Translucent depths reveal what lies beneath, like memory visible through time. The image holds heat even when cold, a fossil of pigment suspended forever in waxen embrace.',
+        'Apply encaustic wax painting to any input: fused translucent layers, beeswax haze, scraped inclusions, heat-smoothed pigment, amber depth, and tactile cloudy surface. Keep warm material memory without requiring abstract panels, candles, relics, or preserved-object subject matter.',
     },
   },
   {
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Historic, grand',
       key_features: 'Plaster texture',
       creative_brief:
-        'Pigment fuses chemically with wet plaster, becoming wall rather than hanging on it. Time cracks the surface into cartography of age, each fissure a map of centuries endured. The image asserts permanence through absorption, a surface that cannot be separated from what it carries.',
+        'Apply fresco wall-painting materiality to any input: pigment absorbed into plaster, mineral matte color, hairline cracks, worn lime surface, and aged architectural permanence. Keep wall-bound durability without requiring murals, churches, ruins, figures, or literal architecture.',
     },
   },
   {
@@ -184,7 +184,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Light, airy, fleeting',
       key_features: 'Dabbed paint texture',
       creative_brief:
-        'Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving hard boundaries into shimmering dabs of pure sensation. The image feels painted from perception rather than description, all atmosphere and optical afterimage.',
+        'Apply impressionist oil perception to any input: broken color dabs, optical mixing, shimmering light, softened contours, quick visible strokes, and atmospheric afterimage. Keep perception-first painting without requiring gardens, riverbanks, dancers, plein-air landscapes, or period scenes.',
     },
   },
   {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Static, shimmering',
       key_features: 'Dot pattern',
       creative_brief:
-        'Tiny points of pure color refuse to mix on the canvas, delegating all blending to the retinal dance beyond the frame. The image comes into focus only at distance, a conspiracy between pigment and perception. Every dot is a vote cast for a reality assembled by the viewer.',
+        'Apply pointillist construction to any input: separated pure-color dots, optical mixing at distance, ordered chromatic vibration, and image structure built from small repeated marks. Keep retinal color theory without requiring parks, figures, umbrellas, rivers, or Neo-Impressionist subject staging.',
     },
   },
   {
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Bold, energetic',
       key_features: 'Knife marks',
       creative_brief:
-        'Paint becomes sculpture as the blade carves slabs of pure pigment across the surface, each stroke a ridge you could measure with fingers. Detail yields to gesture, form to texture, until subject and surface become indistinguishable. The image does not depict — it occupies space, demanding acknowledgement of its physical presence.',
+        'Apply palette-knife painting to any input: thick impasto slabs, scraped ridges, blade-carved edges, compressed detail, and sculptural pigment mass. Keep physical paint presence without requiring landscapes, flowers, seascapes, abstract canvases, or gallery closeups.',
     },
   },
   {
@@ -247,7 +247,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Urgent, improvised, graphic',
       key_features: 'Spray texture',
       creative_brief:
-        'Aerosol mist feathers beyond every edge, creating halos that feel fast, public, and impossible to fully control. Stencil logic, drips, and layered color clouds turn any subject into a graphic act of pressure and release. The mark should feel immediate and risky without requiring walls, streets, tags, or readable lettering.',
+        'Apply aerosol spray-paint logic to any input: feathered overspray, stencil silhouettes, pressure halos, layered color clouds, drips, and fast public-mark energy. Keep risky graphic immediacy without requiring walls, streets, tags, graffiti words, or protest context.',
     },
   },
   {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Peaceful, meditative',
       key_features: 'Brush pressure variation',
       creative_brief:
-        'A single brushstroke carries structure, rhythm, and breath with nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.',
+        'Apply sumi-e ink-wash economy to any input: decisive brush pressure, black ink gradients, rice-paper absorption, visible water dilution, restrained negative space, and breathlike rhythm. Keep meditative reduction without requiring bamboo, mountains, birds, calligraphy, or East Asian scenery.',
     },
   },
   {
@@ -287,7 +287,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Retro, slick',
       key_features: 'Smooth gradients',
       creative_brief:
-        'Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under synthetic color. The image glows with the impossible perfection of a future that never arrived, all friction erased into vapor-soft transitions. Highlights gleam with retro-commercial confidence and frictionless fantasy.',
+        'Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth highlights, vapor-soft transitions, glossy synthetic color, and retro commercial glow. Keep frictionless fantasy without requiring pinups, cars, chrome logos, sunset grids, or mall-poster compositions.',
     },
   },
   {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Kitsch, sincere, nocturnal, theatrical',
       key_features: 'Black background dominance',
       creative_brief:
-        'Neon colors hover above infinite blackness, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary, turning any subject into glowing icon against tactile dark.',
+        'Apply black-velvet painting to any input: light-swallowing velvet ground, saturated neon pigment, floating icon contrast, soft pile texture, and sincere kitsch luminosity. Keep visionary dark-glow drama without requiring Elvis portraits, animals, tropical scenes, casinos, or souvenir art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-022
 packId: pack_14
-name: Orisha Thunder Harbor
+name: Orisha Thunder Verdict
 category: 6. Mythic — African Cosmologies
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, african-myth]
 visualDna:
-  aesthetic: Sacred coastal metropolis where storm deities govern tide, law, and ceremony.
-  form_and_line: Tiered docks, shrine pylons, and wave-like colonnade rhythms.
+  aesthetic: Orisha thunder verdict language where storm, tide, law, and ceremony converge.
+  form_and_line: Tiered dock cues, shrine pylons, and wave-like colonnade rhythms.
   color_palette: Atlantic teal, lightning silver, and ceremonial white.
   lighting_setup: Tempest flashes mixed with lantern processions along rain-slick piers.
   material_texture: Salted stone, painted wood hulls, coral inlays, and wet woven cloth.
   render_quality: Dynamic key art balancing large-scale weather and ritual detail.
-  spatial_distortion: Curving harbor perspective funneling toward a storm altar lighthouse.
+  spatial_distortion: Curving tidal perspective funneling toward a storm-altar focal point.
   atmosphere: Reverent power, civic urgency, and thunderous blessing.
-  key_features: Storm-bell tower, offering canoes, rain-lit shrines, and tide calendar walls.
-  creative_brief: A divine harbor where ocean storms are interpreted as immediate sacred verdicts.
+  key_features: Storm-bell cues, offering canoe silhouettes, rain-lit shrine marks, tide calendar walls.
+  creative_brief: Apply Orisha thunder verdict to the input, making ocean storm read as sacred judgment without requiring a harbor.
 avoidRules: [photoreal, parody, over-neon, steampunk-gears, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-022.webp }
 attributes:
   negativePrompt: photoreal, parody, over-neon, steampunk-gears, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-african-cosmologies, categoryName: 6. Mythic — African Cosmologies, tags: [mythic-noir-curated-vault, mythic, african-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-african-cosmologies,
+    categoryName: 6. Mythic — African Cosmologies,
+    tags: [mythic-noir-curated-vault, mythic, african-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

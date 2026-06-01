@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Artistic, soft
   key_features: Grainy texture
-  creative_brief: Grease and water repel on limestone, an ancient chemical truce that separates ink from void at the molecular level. The crayon texture of the drawing transfers faithfully, grain and all, to paper that remembers the stone. Every print carries the geology of the process, sediment made image.
+  creative_brief: >-
+    Apply lithographic print behavior to any input: crayon-like stone grain,
+    grease-water separation, soft tonal transfer, paper pressure, and subtle
+    speckled drawing texture. Keep chemical print softness without requiring
+    posters, portraits, theatre bills, stones, or edition markings.
 avoidRules:
   - photo
   - realistic

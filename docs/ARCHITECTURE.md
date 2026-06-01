@@ -84,6 +84,7 @@ graph TD
 - SQLite is the local source of truth for jobs, cataloged assets, libraries, projects, settings, job events, and system logs.
 - The Studio Library is an external local folder. By default it lives under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
 - Internal state lives under `.studio/`; generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
+- The Browser Queue is an IndexedDB-backed UI execution buffer. Pending browser-only items survive refresh; jobs that already reached the backend remain durable as Persistent Jobs and are tracked in the backend session list to avoid duplicate execution.
 - IndexedDB no longer persists the active visual cache. Legacy keys such as `catalog-cache` and `catalog-trash` remain recovery-only compatibility surfaces.
 - `LegacyVisualBatchContext` stores only lightweight refs for recovery dedupe and generated append compatibility.
 - External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets into the Studio Library.
@@ -120,7 +121,7 @@ Large or optional UI surfaces should not inflate startup:
 
 - recipe pages are lazy-loaded by route;
 - style catalog search mounts on demand;
-- heavy catalog data, YAML parsing, ZIP export, Three.js, and visual background effects are lazy-loaded;
+- heavy catalog data, YAML parsing, ZIP export, and Three.js are lazy-loaded;
 - `ui:source:verify` and `ui:chunks:verify` guard against regressions.
 
 ## Superficies de automatización

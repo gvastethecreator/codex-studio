@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Bubbles
   atmosphere: Protective, cheap
   key_features: Grid of bubbles
-  creative_brief: Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene.
+  creative_brief: >-
+    Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of
+    trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The
+    clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture
+    the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - flat plastic
 assets:

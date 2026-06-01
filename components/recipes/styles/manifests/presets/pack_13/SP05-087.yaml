@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-087
 packId: pack_13
-name: Non Non Biyori – Rural Quietude
+name: Pastoral Breathing-Room Stillness
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Rural-slow-life anime language with spacious pastoral quietude, nostalgic stillness, and micro-ritual everyday tenderness
-  form_and_line: Gentle low-tension contouring, simplified childlike gesture silhouettes, open negative-space framing, and minimal dramatic pose pressure
-  color_palette: Sunlit summer greens, sky-soft blues, straw and earth beiges, warm wood tones, and mild pastel accents with low contrast
-  lighting_setup: Broad afternoon daylight wash, cicada-hour warmth, soft fill, and subtle ambient haze to emphasize still-air calm
-  material_texture: Weathered timber, dusty matte surfaces, grasslike movement cues, and light cotton softness
-  render_quality: Pastoral slice render with serene clarity, restrained detail cadence, and strong atmosphere-over-action prioritization
-  spatial_distortion: Wide breathing compositions with gentle depth layering and abundant quiet-space around characters
-  atmosphere: Idyllic, calm, nostalgic, and quietly playful
-  key_features: Spacious stillness cues, seasonal ambient texture, tiny daily-action anchors, and low-pressure intimacy markers
+  aesthetic: >-
+    Pastoral breathing-room anime stillness where spacious quiet, tiny rituals, seasonal air, and
+    childlike softness slow the image down
+  form_and_line: >-
+    Low-tension contours, simplified gentle gestures, open negative-space framing, and minimal
+    dramatic pose pressure
+  color_palette: >-
+    Sunlit green, sky soft blue, straw beige, warm wood, muted earth, and low-contrast pastel
+    accents
+  lighting_setup: Broad afternoon wash, cicada-hour warmth, soft sky fill, and long low-drama shadow planes
+  material_texture: >-
+    Grass softness, wood grain, paper matte, cotton fabric, dust motes, and lightly weathered rural
+    tactility
+  render_quality: >-
+    Slow-life anime finish with clean open readability, warm nostalgia, and quiet everyday
+    tenderness
+  spatial_distortion: >-
+    Large breathing-room spacing, gentle horizon calm, and tiny subject emphasis without forcing
+    landscape content
+  atmosphere: Quiet, nostalgic, spacious, tender, sun-warmed
+  key_features: >-
+    Open negative space, tiny ritual focus, summer-air softness, childlike gesture economy, and
+    pastoral tonal calm
   creative_brief: >-
-    Use the title as a style anchor for rural quietude. Preserve spacious
-    pastoral breathing room, summer daylight softness, and tiny ritual focus
-    without requiring school, road, bus stop, or fixed countryside scene.
+    Use Non Non Biyori as style anchor for pastoral breathing-room stillness. Any prompt should gain
+    spacious air, tiny ritual attention, sunlit softness, and low-pressure nostalgia. Rural roads,
+    schools, bus stops, and countryside scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-087.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

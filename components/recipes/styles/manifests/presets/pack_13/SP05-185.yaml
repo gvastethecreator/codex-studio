@@ -22,10 +22,10 @@ visualDna:
   atmosphere: Chic, restless, romantic, self-inventing
   key_features: Runway silhouettes, stitch-texture cues, fashion detail, angular romantic posing, night-glamour polish
   creative_brief: >-
-    Preserve runway-heartbreak chic grammar as a reusable style system:
-    couture silhouette authority, backstage-versus-spotlight contrast, and
-    self-invention-through-fashion emotional tension should remain consistent
-    across subjects.
+    Cut the input into runway heartbreak chic: black-cherry silhouettes,
+    magenta-plum emotional pressure, garment-structure contours, stitch detail,
+    and spotlight/backstage contrast can fashionize any subject without requiring
+    a catwalk, model, studio, or literal breakup.
 avoidRules:
   - realistic
   - 3d render

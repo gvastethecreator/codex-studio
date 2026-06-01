@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nocturnal, moody',
       key_features: 'Red halos',
       creative_brief:
-        'Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets.',
+        'Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Historic, vivid',
       key_features: 'Red pop',
       creative_brief:
-        'Archival slide-film permanence: rich reds, clean direct light, crisp microdetail, and contrast that feels catalogued rather than stylized. Make any subject look preserved in durable dye layers, vivid but believable, historical without requiring skies, travel, or a mid-century scene.',
+        'Apply Kodachrome archival permanence to the input: rich reds, clean direct light, crisp microdetail, dense dye-layer contrast, and believable vintage vividness should preserve any subject without requiring travel or mid-century staging.',
     },
   },
   {
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, warm',
       key_features: 'Yellow/Red bias',
       creative_brief:
-        'Sunlight folded into emulsion, surrendering harsh edges for a tender amber embrace. Colors breathe through warm neutrals, gentle saturation, pastel highlight rolloff, and fine analog grain. Any subject should feel photographed through honeyed memory, intimate without forcing a human face or scene.',
+        'Apply Kodak Portra 400 warmth to the input: gentle saturation, amber skinlike neutrals, pastel highlight rolloff, fine analog grain, and soft contrast should make any subject feel intimate without requiring faces or lifestyle setup.',
     },
   },
   {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Vibrant, punchy',
       key_features: 'Magenta bias',
       creative_brief:
-        "Reality translated into its boldest slide-film dialect: greens, blues, and reds pushed toward jewel intensity, blacks compressed into decisive graphic weight, edges cut with crystalline confidence. Apply Velvia's saturated conviction to any subject, not only landscape or nature.",
+        'Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens, saturated blues and reds, crisp edges, compressed blacks, and vivid chrome contrast should energize any subject without requiring landscape or nature.',
     },
   },
   {
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Memory, retro',
       key_features: 'Square crop',
       creative_brief:
-        'A recollection still damp from instant chemistry: square crop, milky color shift, flash falloff, vignetted edges, and uneven chemical spread marks. Any subject becomes an object of immediate memory, casual and imperfect, without needing party faces or domestic nostalgia.',
+        'Apply Polaroid 600 instant chemistry to the input: square framing, milky color shift, flash falloff, vignetted edges, and uneven chemical spread marks should make any subject feel immediate, casual, and imperfect.',
     },
   },
   {
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Fun, unpredictable',
       key_features: 'Tunnel vision',
       creative_brief:
-        'A plastic lens drunk on stray photons: cross-processed saturation, light leaks, smeared corners, heavy vignette, and color running where precision would normally hold it back. Turn any subject into a lo-fi analog accident, playful without requiring a specific place or event.',
+        'Apply Lomo LC-A plastic-lens accident to the input: cross-processed color, light leaks, smeared corners, heavy vignette, and loose analog exposure should make any subject playful without requiring a specific place or event.',
     },
   },
   {
@@ -182,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Alien, dreamlike',
       key_features: 'False-color infrared response',
       creative_brief:
-        'The spectrum inverted: reflective surfaces flare pink and red, shadows cool toward indigo, and ordinary material becomes alien under infrared logic. Bend any subject toward Aerochrome false color and scientific psychedelia; no foliage, trees, sky, or landscape required.',
+        'Apply infrared/Aerochrome false color to the input: pink-red reflective surfaces, indigo shadows, alien material response, and scientific psychedelia should transform any subject without requiring foliage or sky.',
     },
   },
   {

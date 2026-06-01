@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Extraction shooter en bioma alienígena nocturno, con énfasis en rastreo, stealth y navegación orgánica hostil.
-  subject_treatment: Escuadras de 3-4 roles con perfiles térmicos y lectura inmediata de aliado/enemigo en vegetación densa.
+  aesthetic: Gramática extraction-shooter bioluminiscente con stealth orgánico, rastreo térmico y hostilidad alienígena nocturna.
+  subject_treatment: Transforma el input en lectura de presa/equipo/ruta con perfiles térmicos, señales aliado-enemigo y camuflaje vivo sin exigir una jungla literal.
   color_and_tone: Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.
   lighting_and_shadow: Luz orgánica puntual + niebla volumétrica para ocultamiento parcial y ventanas de visibilidad situacional.
   texture_and_material: Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.
-  camera_and_composition: Composición por capas de cobertura, líneas de visión quebradas y diagonales de emboscada.
+  camera_and_composition: Capas de cobertura orgánica, líneas de visión quebradas, diagonales de emboscada y ventanas de extracción sugeridas.
   atmosphere_and_mood: Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.
   rendering_and_quality: Concept gameplay con claridad de encounter design, lectura de terreno y prioridades de target.
 avoidRules:

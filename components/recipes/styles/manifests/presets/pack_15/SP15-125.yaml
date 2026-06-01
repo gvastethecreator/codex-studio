@@ -12,14 +12,14 @@ visualDna:
   color_palette: Opal, aquamarine, and violet.
   lighting_setup: Sunset reflections and interior shell glow.
   material_texture: Shell laminate, wet decking, and soft polymer.
-  render_quality: Playful urban seascape with transit legibility.
+  render_quality: Playful urban-seapunk render with transit legibility and shell-module rhythm.
   spatial_distortion: Long waterline perspective with repeating shell modules.
   atmosphere: Travel, lightness, and seaside civic life.
   key_features: Shell metro forms, waterline rail marks, wave shelters, and repeating modular bay rhythm.
   creative_brief: >-
-    Preserve shell metro-pier grammar as a reusable style system:
-    tide-line shell transit modules, repeating pierline station rhythm, and
-    lightweight seaside mobility should remain coherent across subjects.
+    Transit the input through shell metro lightness: opal module repeats,
+    aquamarine waterline marks, violet sunset glow, shell-laminate kiosks, and
+    wave shelter arcs make any subject feel mobile and seaside.
 avoidRules: [photoreal, dingy, industrial, watermark, text, logo, clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-125.webp }
 attributes:

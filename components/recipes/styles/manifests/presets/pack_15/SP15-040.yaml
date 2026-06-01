@@ -4,8 +4,14 @@ packId: pack_15
 name: Fission Fairgrounds
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Atomic carnival propaganda where family fun, policy messaging, and reactor demos share one glossy smile.
   form_and_line: Pavilion circles, expo arch loops, kinetic blank-sign towers, carousel radial flow, and atom-orbit silhouettes.
@@ -15,22 +21,38 @@ visualDna:
   render_quality: Playful yet sophisticated environment concept with clear spectacle hierarchy and intentional propaganda polish.
   spatial_distortion: Radial circulation spins subjects through demo-like zones, orbit motifs, and future-home display logic.
   atmosphere: Festive optimism, civic persuasion, spectacle, and charming unease.
-  key_features: Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon arcs.
+  key_features: >-
+    Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon
+    arcs.
   creative_brief: >-
-    Preserve fission fairgrounds grammar as a reusable style system:
-    circular expo choreography, cheerful atomic salesmanship, and glossy civic
-    spectacle with latent unease should remain coherent across subjects.
-avoidRules: [photoreal, grimdark, medieval, cyber-slums, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-040.webp }
+    Sell the input as an atomic carnival demo: candy-mint expo loops, reactor-dome glow, aluminum rails, future-home
+    silhouettes, and slogan-like ribbon arcs without readable text. Fairgrounds can appear, but the style is cheerful
+    fission persuasion with a charmingly uneasy smile. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - grimdark
+  - medieval
+  - cyber-slums
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-040.webp
 attributes:
   negativePrompt: photoreal, grimdark, medieval, cyber-slums, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

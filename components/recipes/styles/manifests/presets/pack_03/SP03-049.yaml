@@ -20,7 +20,13 @@ visualDna:
   render_quality: Concept art, production, model-sheet
   atmosphere: Neutral, design, audition-ready
   key_features: T-Pose or A-Pose, turn-around clarity
-  creative_brief: 'The character stands arms-out in the universal language of the pipeline — T-pose or A-pose, neutral and unposed, every anatomical decision laid bare under even, character-sheet lighting. Skin tones render accurately without dramatic shadow, and cloth drapes with production-ready honesty. The image is an audition: a model sheet waiting for a rigger, a concept made tangible, design clarity prioritized over drama.'
+  creative_brief: >-
+    Use production model-sheet clarity. If a character exists, keep T-pose or A-pose, neutral turnaround lighting and
+    rig-ready anatomy/cloth truth. If no character exists, translate the subject into a neutral asset sheet with
+    orthographic readability. Avoid action pose or narrative background. Apply Character Design as a portable 3D/render
+    style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar,
+    and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or
+    scene template.
 avoidRules:
   - action pose
   - background

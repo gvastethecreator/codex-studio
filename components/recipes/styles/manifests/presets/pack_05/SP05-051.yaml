@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-051
 packId: pack_05
-name: Neon Tragic Sprint
+name: Neon Kinetic Alloy Sprint
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,36 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Kinetic cyber-athletic anime style with velocity-forward line energy, prosthetic-mech elegance, and emotional high-voltage momentum
-  form_and_line: Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp technical edge discipline
-  color_palette: Electric cyan-magenta spikes over steel neutrals, deep violet shadows, selective hazard-orange micro-accents
-  lighting_setup: Dynamic rim bursts, strobing practical spill, high-speed specular streaking, sharp contrast pockets under moving glow
-  material_texture: Lightweight alloy limbs, polymer joint housings, brushed composite plates, reflective performance coatings, circuit-trace details
-  render_quality: Premium action-cel rendering with high temporal clarity, dense technical detail, and polished mecha-athletic finish
-  spatial_distortion: Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory readability
+  aesthetic: >-
+    High-voltage kinetic alloy anime where velocity lines, prosthetic elegance, reflective
+    machinery, and tragic momentum fuse into engineered motion
+  form_and_line: >-
+    Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp
+    technical edge discipline
+  color_palette: >-
+    Electric cyan-magenta spikes over steel neutrals, deep violet shadows, selective hazard-orange
+    micro-accents
+  lighting_setup: >-
+    Dynamic rim bursts, strobing practical spill, high-speed specular streaking, sharp contrast
+    pockets under moving glow
+  material_texture: >-
+    Lightweight alloy limbs, polymer joint housings, brushed composite plates, reflective
+    performance coatings, circuit-trace details
+  render_quality: >-
+    Premium action-cel rendering with high temporal clarity, dense technical detail, and polished
+    mecha-athletic finish
+  spatial_distortion: >-
+    Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory
+    readability
   atmosphere: Urgent, cathartic, intense, adrenaline-charged
-  key_features: Velocity line grammar, prosthetic silhouette readability, motion-led composition, reflective mech surfaces, kinetic luminance trails
+  key_features: >-
+    Velocity vectors, alloy reflection, engineered body rhythm, neon motion trails, sprint
+    compression, and emotional acceleration
   creative_brief: >-
-    Define the preset through speed grammar and engineered body dynamics:
-    directional line force, mechatronic material response, and emotional motion
-    tension should remain the core identity.
+    Use neon kinetic alloy sprint as speed-and-material grammar. Any prompt should feel engineered,
+    fast, reflective, and emotionally charged through line force and metal response. If a character
+    or body exists, push prosthetic/mecha-athletic cues; athletes, races, streets, and fixed cyber
+    bodies remain optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +58,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-051.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

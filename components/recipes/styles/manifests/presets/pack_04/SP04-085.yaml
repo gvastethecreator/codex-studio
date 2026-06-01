@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Cinematic, emotive, transitional, light-led storytelling
   key_features: Multi-frame mood continuity, temperature mapping, depth via fog stratification
   creative_brief: >-
-    Use light progression as the narrative engine. Build a sequence where palette temperature, shadow character, and atmospheric density shift coherently across time, allowing mood transitions to read instantly even in simplified, low-detail environment passes.
+    Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys, atmospheric
+    transitions, and cinematic color continuity. If there is no environment, turn the prompt into a color-script
+    abstraction without requiring location panels, story beats, or a film scene.
 avoidRules:
   - detailed linework
   - finished rendering

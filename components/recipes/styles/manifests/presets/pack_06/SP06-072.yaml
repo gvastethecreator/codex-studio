@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Geometric
   atmosphere: Temporary, geometric, improvised
   key_features: Tape strips
-  creative_brief: Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive.
+  creative_brief: >-
+    Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding
+    aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its
+    medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive. Apply this
+    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
+    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
+    craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -43,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-072.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wall requirement, street context
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border, wall requirement, street context
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Methodical, engineering-aware, iterative craft discipline
   key_features: Variant taxonomy, functional callouts, scale references, modular part breakdown
   creative_brief: >-
-    Compare multiple prop directions within a consistent visual framework. Emphasize functional differences, material behavior, and assembly logic so design decisions can be evaluated quickly across tiers while maintaining clear handoff value for downstream modeling and illustration.
+    Apply prop-variant design logic to any input: functional shape families, material swaps, modular silhouettes,
+    construction notes as graphic marks, and option-to-option progression. If no prop exists, convert the subject into
+    useful object-design variants without requiring weapons, inventory sheets, or literal items.
 avoidRules:
   - one version
   - single design

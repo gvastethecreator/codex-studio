@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context, launch-readiness lighting cues, and scale contrast markers',
       creative_brief:
-        'Use Mecha Hangar Ignition as style anchor for industrial scale drama: heavy mechanical construction, hard technical light, and infrastructure-like contrast should transfer without requiring a robot, hangar, operator, or launch scene.',
+        'Use Mecha Hangar Ignition as style anchor for industrial scale drama: heavy mechanical construction, hard technical light, and infrastructure-like contrast should transfer by mechanizing the input when useful, adding robot-scale mass, panel logic, or launch-readiness cues without fixing a hangar, operator, or launch scene.',
     },
   },
   {
@@ -270,7 +270,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'OVA-era mechanical silhouette authority, analog artifact signature, scale contrast, and hard-lit industrial context',
       creative_brief:
-        'Use Retro Mecha VHS Grain as style anchor for analog industrial drama: angular cel-era machine design, signal artifacts, and hard directional lighting should transfer without requiring a mecha, cockpit, hangar, crew-scale marker, or launch context.',
+        'Use Retro Mecha VHS Grain as style anchor for analog industrial drama: angular cel-era machine design, signal artifacts, and hard directional lighting should transfer by giving the input mecha silhouette, cockpit-like compression, panel breakup, or crew-scale cues when useful, without fixing a hangar or launch context.',
     },
   },
   {

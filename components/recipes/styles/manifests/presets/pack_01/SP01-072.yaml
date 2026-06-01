@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Selective focus plane
   atmosphere: Tiny, cute
   key_features: Miniature effect
-  creative_brief: 'Tilt-shift miniature style shrinks any subject into diorama logic: saturated daylight, selective focus band, blurred top and bottom, and toy-like clarity at the focal plane. Use scale inversion without requiring cities, buildings, or playset scenery.'
+  creative_brief: >-
+    Apply tilt-shift miniature optics to the input: selective focus band,
+    top-bottom blur, saturated daylight, and toy-scale clarity should shrink any
+    subject into diorama logic without requiring cities or playsets.
 avoidRules:
   - sharp everywhere
 assets:

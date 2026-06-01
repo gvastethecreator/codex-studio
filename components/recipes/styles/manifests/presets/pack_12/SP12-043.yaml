@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Urban-disaster action en puerto metropolitano, enfocado en evacuación dinámica y contención de amenaza colosal.
-  subject_treatment: Equipos de rescate y artillería costera por función (evac, suppression, shield).
+  aesthetic: Gramática urban-disaster action con evacuación dinámica, amenaza colosal y contención por fases.
+  subject_treatment: Si el input es criatura o máquina, escalarlo a amenaza kaiju; si es personaje/objeto, volverlo equipo evac/suppression/shield o infraestructura de crisis.
   color_and_tone: Gris tormenta, rojo alarma y cian marino para priorizar riesgo civil y respuesta táctica.
   lighting_and_shadow: Relámpagos, incendios industriales y humo para telegraph de fases de crisis.
   texture_and_material: Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.
-  camera_and_composition: Horizonte dominado por kaiju con corredores de evacuación y puntos de defensa visibles.
+  camera_and_composition: Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.
   atmosphere_and_mood: Abrumadora, urgente y de supervivencia colectiva.
   rendering_and_quality: Event-scale gameplay key-art con legibilidad de rutas civiles, amenaza y objetivos de contención.
 avoidRules:

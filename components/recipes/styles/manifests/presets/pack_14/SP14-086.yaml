@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-086
 packId: pack_14
-name: Starfall Tribunal Basin
+name: Starfall Precedent Basin
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Impact crater transformed into a civic omen tribunal.
-  form_and_line: Basin rings, stepped benches, and central meteor plinth.
+  aesthetic: Starfall precedent language where celestial debris becomes civic omen and judgment.
+  form_and_line: Basin rings, stepped bench cues, and central meteor-plinth geometry.
   color_palette: Cobalt, charcoal, and molten copper.
   lighting_setup: Meteor core glow and cool night perimeter lamps.
   material_texture: Fused glass, fractured rock, and ceremonial bronze.
   render_quality: Narrative keyframe with strong focal hierarchy.
-  spatial_distortion: Crater bowl depth emphasizing central relic.
+  spatial_distortion: Crater-bowl depth emphasizing a central meteor relic.
   atmosphere: Collective anxiety and interpretive ceremony.
-  key_features: Meteor altar, verdict terraces, and ash runes.
-  creative_brief: A public court where celestial debris becomes legal precedent.
+  key_features: Meteor altar cues, verdict terraces, ash runes.
+  creative_brief: Convert any input through starfall precedent, making celestial impact feel like legal omen. Use basin rings, fused-glass scars, molten copper focal glow, verdict terraces, and collective anxiety without forcing meteors, courts, benches, craters, public gatherings, or ritual hearings.
 avoidRules: [photoreal, bright-cartoon, cyber-city, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-086.webp }
 attributes:
   negativePrompt: photoreal, bright-cartoon, cyber-city, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

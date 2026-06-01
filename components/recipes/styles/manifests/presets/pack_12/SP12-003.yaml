@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Vehicular combat sandbox postapocalíptico con logística de convoy y combate de largo alcance en terreno abierto.
-  subject_treatment: Unidades pesadas, escolta híbrida y clases de vehículo/mech diferenciadas por silueta funcional.
+  aesthetic: Gramática vehicular-combat postapocalíptica con desgaste logístico, siluetas mech/convoy y lectura de largo alcance.
+  subject_treatment: >-
+    Si el input incluye personaje, objeto o criatura, mecanizarlo con indicios mech, blindaje, suspensión o escolta
+    modular; si ya hay vehículo/mech, reforzar clase y función.
   color_and_tone: Ocre quemado, hierro oxidado y cielo de desecación extrema con contraste táctico mínimo.
   lighting_and_shadow: Sol cenital duro, polvo suspendido y scintillation térmica para sensación de calor operativo.
   texture_and_material: Metal corroído, lonas reparadas, caucho degradado y abrasión granular persistente.
-  camera_and_composition: Panorámica lateral de ruta con lectura de lanes, flank routes y amenazas de horizonte.
+  camera_and_composition: >-
+    Encuadre ancho de ruta sugerida con lanes, flancos y amenazas de horizonte como lenguaje compositivo, no como
+    desierto obligatorio.
   atmosphere_and_mood: Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.
   rendering_and_quality: Estilo faction-keyart con realismo estilizado y claridad de sistemas de movilidad/combate.
+  creative_brief: >-
+    Aplica Desert Mech Convoy como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

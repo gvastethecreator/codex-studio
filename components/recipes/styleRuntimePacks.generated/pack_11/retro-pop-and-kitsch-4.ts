@@ -5,258 +5,272 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP11-019',
-    name: 'Felt Puppet',
+    name: 'Felt Signal Handmade Broadcast',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'cgi, smooth',
     style: {
       aesthetic:
-        'Broadcast-era felt-puppet style with hand-operated expressivity, sewn-form character charm, and workshop craft energy',
-      form_and_line: 'Fuzzy edges, fabric-cut contours, sewn-shape silhouettes, armature skeleton',
+        'Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit',
+      form_and_line:
+        'Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry',
       color_palette:
-        'Bright felt, craft-store spectrum, neon-green, hot-pink, safety-orange, deep-purple',
-      lighting_setup: 'TV studio, three-point broadcast, key-fill-backlight, warm-stage glow',
+        'Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black button contrast',
+      lighting_setup:
+        'Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage',
       material_texture:
-        'Felt fabric, foam padding, sewn-seam detail, ping-pong-ball eyes, fleece nap',
+        'Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity',
       render_quality:
-        'Handmade, expressive, hand-in-sock life, backstage magic, felt-and-fur personality',
-      spatial_distortion: 'Flapping mouth, hand-driven jaw, rod-controlled arms, loose-neck wobble',
-      atmosphere: 'Funny, lively, theatrical, warm, handmade',
-      key_features: 'Arm rods, seam-stitch detail, googly-eye placement, felt-color blocking',
+        'Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface',
+      spatial_distortion:
+        'Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth',
+      atmosphere: 'Warm, comedic, approachable, nostalgic, handmade, emotionally legible',
+      key_features:
+        'Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft jaw-like deformation',
       creative_brief:
-        'Preserve this preset through hand-operated puppet grammar: felt seams, foam volume, rod-assisted gesture, and broadcast-stage lighting should define identity without relying on named puppet franchises.',
+        'Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm, and operated-expression timing should define the image. The result should feel tactile and performed, without requiring literal puppets, sets, rods, or franchise references.',
     },
   },
   {
     id: 'SP11-028',
-    name: 'Neon Sign',
+    name: 'Gas-Tube Halo Typography',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'daylight, paint',
     style: {
       aesthetic:
-        'Bar sign, night-window glow, storefront-beacon, electric-avenue art, motel-vacancy poetry',
+        'Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed',
       form_and_line:
-        'Glass tubes, bent-tube contour, cursive-glow stroke, continuous-bend silhouette',
+        'Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition',
       color_palette:
-        'Glowing Red, Blue, noble-gas spectrum, argon-purple, krypton-white, mercury-vapor cyan',
+        'Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill',
       lighting_setup:
-        'Self-illuminated, gas-discharge glow, halo-bleed onto wall, dark-ambient backdrop, buzzing-bright contrast',
+        'Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff',
       material_texture:
-        'Glass, gas glow, phosphor-coated tube, electrode-dark ends, warm-transformer hum, glass-bend annealing',
+        'Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light',
       render_quality:
-        "Nightlife, electric, vintage-boulevard nostalgia, rain-slick-street reflection, sign-painter's electric heir",
+        'Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity',
       spatial_distortion:
-        'Continuous line, one-stroke drawing illusion, tube-path negative-space, cursive-electric flow',
-      atmosphere: 'Buzzing, night, last-call quiet, rain-on-neon romance, urban-loneliness beauty',
+        'Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry',
+      atmosphere: 'Nocturnal, electric, commercial, seductive, nostalgic, high-contrast',
       key_features:
-        'Black backing, tube-mounting clips, transformer-glow warmth, glass-bend highlights, wall-wash halo',
+        'Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow reflections',
       creative_brief:
-        'Preserve identity through neon-sign grammar: bent tube continuity, gas-discharge halo bleed, dark-background contrast, and reflective spill should define style without locking to one storefront scene.',
+        'Render any subject as if its visual grammar were built from neon tubing and gas-discharge light. Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force storefronts, bars, signs, words, or wall-mounted objects.',
     },
   },
   {
     id: 'SP11-026',
-    name: 'Spray Paint / Graffiti',
+    name: 'Aerosol Velocity Layering',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'brush strokes, clean',
     style: {
       aesthetic:
-        'Street mural, aerosol rebellion, urban-gallery, spray-can symphony, concrete-canyon art',
-      form_and_line: 'Drips, overspray, fat-cap strokes, skinny-cap detail, can-control finesse',
+        'Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory',
+      form_and_line:
+        'Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions',
       color_palette:
-        'Neon, Black outline, Montana-gold spectrum, chrome-silver, infrared-purple, alien-green, safety-yellow',
+        'Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey undertone',
       lighting_setup:
-        'Outdoor wall, daylight-blast, brick-texture shadow, alley-gloom ambient, night-security light',
+        'Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch',
       material_texture:
-        'Concrete wall, aerosol, brick-surface tooth, stucco grain, cap-spatter speckle, buffed-over ghost',
+        'Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields',
       render_quality:
-        'Urban, rebellious, yard-burner energy, piece-book precision, freight-train rolling gallery',
+        'Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation',
       spatial_distortion:
-        'Wildstyle lettering, interlocking form, letter-morph chaos, arrow-flow motion',
-      atmosphere: 'Cool, illegal, midnight mission, painted-steel thunder, huff-and-rattle cadence',
+        'Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth',
+      atmosphere: 'Energetic, illegal-feeling, urban-coded, loud, improvised, physical',
       key_features:
-        'Drips, fat-cap-to-skinny-cap transitions, halo-fade background, tag-handstyle flourish',
+        'Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed substrate',
       creative_brief:
-        'Define this preset through aerosol graffiti grammar: fat-cap fill vs skinny-cap line control, overspray halos, drip behavior, and wall-surface tooth should carry identity beyond any single train-yard narrative.',
+        'Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order, drip behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans, crews, or a street location. Apply Aerosol Velocity Layering as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
     id: 'SP11-010',
-    name: '8-Bit Pixel Art',
+    name: 'Indexed Pixel Constraint',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'hd, vector, smooth',
     style: {
-      aesthetic: '8-bit sprite-art language with strict retro hardware constraints',
-      form_and_line: 'Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners',
+      aesthetic:
+        'Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline',
+      form_and_line:
+        'Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours',
       color_palette:
-        'Limited 56 color palette, restricted index, retro-chip saturation, dithered blends',
-      lighting_setup: 'None, flat emission, self-illuminated pixel, screen-native glow',
+        'Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black separators',
+      lighting_setup:
+        'Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands',
       material_texture:
-        'Large pixels, visible grid cells, CRT phosphor grain, blocky texel surface',
-      render_quality: 'Crisp low-resolution sprite finish with tile-ready readability',
+        'Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness',
+      render_quality:
+        'Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing',
       spatial_distortion:
-        'Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic',
-      atmosphere: 'Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest',
-      key_features: 'Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic',
+        'Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective',
+      atmosphere: 'Playful, constrained, retro-computational, crisp, graphic',
+      key_features:
+        'Pixel grid alignment, cluster control, ordered dithering, indexed ramps, hard silhouettes, tile-map rhythm',
       creative_brief:
-        'Preserve grid discipline, limited palette logic, and dithering-based shading to define form. Favor strong silhouettes and cluster control so imagery stays authentic to 8-bit constraints across characters, props, and environments.',
+        'Convert any input into a low-resolution indexed-pixel treatment. The style must come from grid discipline, palette limits, dithering, and silhouette compression, not from specific game scenes, sprites, props, or environments.',
     },
   },
   {
     id: 'SP11-044',
-    name: 'Pop Art',
+    name: 'Silkscreen Icon Impact',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'subtle',
     style: {
-      aesthetic: 'Pop Art silkscreen language (Andy Warhol influence)',
+      aesthetic:
+        'Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition',
       form_and_line:
-        'Halftone dots, Ben-Day-dot grids, thick-outline contours, screen-registration edges',
+        'Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic',
       color_palette:
-        'High contrast neon, Marilyn-blonde, tomato-soup red, electric-chair yellow, mickey-mouse black, offset-CMYK',
+        'Tomato red, electric yellow, cyan blocks, hot pink, black ink, cream paper, deliberately offset CMYK',
       lighting_setup:
-        'Flat, silkscreen-exposure, photo-stencil light, pop-shop fluorescence, studio-flash',
+        'Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis',
       material_texture:
-        'Screenprint, ink-push-through canvas, squeegee-drag texture, canvas-tooth underlay, offset-print halftone',
-      render_quality: 'High-contrast mass-media print rendering with serial repetition logic',
+        'Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss',
+      render_quality:
+        'Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial',
       spatial_distortion:
-        'Repetition, color-variation grid, multiple-exposure overlap, registration-offset, print-misalignment',
-      atmosphere:
-        "Ironic, bold, Campbell's-soup nostalgia, celebrity-worship, mechanical-reproduction",
+        'Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment',
+      atmosphere: 'Commercial, ironic, loud, iconic, mass-produced, playful',
       key_features:
-        'Halftone, Ben-Day dots, silkscreen-registration marks, color-channel separation, ink-bleed edge, repetition-grid layout',
+        'Halftone fields, CMYK separation, registration slips, posterized shadow, repeated icon blocks, ink bleed',
       creative_brief:
-        'Use Warhol-informed serial repetition, halftone structure, and channel-shifted silkscreen color blocks to create iconic pop impact. Keep imagery reproducible, high-contrast, and mechanically printed in character.',
+        'Make the subject feel mechanically reproduced and culturally amplified: halftone, flat commodity color, registration errors, and serial pop rhythm should carry the style. Avoid forcing celebrity portraits, soup cans, comic panels, or named artworks. Apply Silkscreen Icon Impact as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
     id: 'SP11-036',
-    name: 'Vaporwave',
+    name: 'Liminal Consumer Vapor',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'serious, dark',
     style: {
       aesthetic:
-        'Retro-digital liminal surrealism with consumer-memory nostalgia, soft-ironic mood, and abandoned-future ambiance',
+        'Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic emptiness',
       form_and_line:
-        'Glitch-fringed geometry, pixel-sorted edges, RGB misregistration halos, and low-res UI-inspired shape rhythm',
+        'Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift',
       color_palette:
-        'Pastel magenta-cyan gradients with soft teal neutrals, sunset vapor tones, marble greys, and synthetic white highlights',
+        'Pastel magenta-cyan, teal neutrals, sunset vapor, synthetic white, washed purple, soft grey marble',
       lighting_setup:
-        'Fluorescent ambient haze, CRT-like glow spill, reflective chrome blooms, and deliberately unnatural backlight gradients',
+        'Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom',
       material_texture:
-        'Faux-marble surfaces, glossy retro-plastic finishes, pixel UI artifacts, scanline-like noise, and iridescent disc-like sheen',
+        'Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients',
       render_quality:
-        'Stylized retro-net aesthetic emphasizing liminal mood design, broken-digital texture poetry, and iconic vapor composition',
+        'Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal',
       spatial_distortion:
-        'Floating classical fragments, checker-grid infinite planes, and scale-ambiguous object staging in suspended void space',
-      atmosphere: 'Chill, surreal, ironic, nostalgic, liminal',
+        'Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective flattening',
+      atmosphere: 'Empty, ironic, nostalgic, synthetic, uncanny, cool',
       key_features:
-        'Sunset-gradient backdrops, checker-floor infinity cues, classical-fragment contrast, retro-digital artifact layering',
+        'Pastel vapor gradients, analog artifacts, UI grid fragments, glossy consumer surfaces, marble-plastic contrast',
       creative_brief:
-        'Define this preset through liminal retro-digital mood grammar: pastel synthetic gradients, artifacted UI-era textures, and surreal object staging should carry identity without depending on specific brand props or named icons.',
+        'Apply vaporwave as a mood and material system: synthetic gradients, screen artifacts, corporate nostalgia, and glossy emptiness should reshape the image. Do not require statues, malls, checker floors, palm trees, or staged surreal objects. Apply Liminal Consumer Vapor as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
     id: 'SP11-045',
-    name: 'Psychedelic',
+    name: 'Liquid Optic Recursion',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'boring, straight',
     style: {
-      aesthetic: 'Psychedelic poster language with liquid optical distortion',
+      aesthetic:
+        'Psychedelic optical recursion where color, line, and form melt into high-intensity perceptual feedback',
       form_and_line:
-        'Melting, swirling, paisley-whorl, flame-tongue contours, morphing-edges, fluid-mandala',
+        'Paisley whorls, melting contours, nested mandalas, flame tongues, vibrating curves, morphing edge loops',
       color_palette:
-        'Rainbow, shifting, Day-Glo spectrum, magenta-cyan-yellow trippy, neon-chartreuse, blacklight-purple, op-art contrast',
+        'Day-Glo rainbow, blacklight purple, neon chartreuse, hot magenta, acid cyan, saturated orange, op-art contrast',
       lighting_setup:
-        'Glowing, blacklight-fluorescence, lava-lamp convection, strobe-freeze, pulse-blink rhythm',
+        'Internal chromatic glow, blacklight saturation, high contrast optical vibration, color-field pulsing',
       material_texture:
-        'Fractals, liquid-emulsion, oil-projection blob, poster-ink bleed, light-machine swirl',
-      render_quality: 'High-intensity trippy rendering with immersive pattern recursion',
+        'Poster ink, liquid gradient bands, vibrating print grain, glossy ink pools, hand-drawn optical waves',
+      render_quality:
+        'Maximal, hallucinatory, dense, flowing, deliberately unstable, with intense graphic clarity',
       spatial_distortion:
-        'Melting reality, Dali-clock droop, kaleidoscopic fragmentation, mirror-room infinity, perspective-liquefaction',
-      atmosphere:
-        'Crazy, expanding, cosmic-consciousness, ego-dissolution, doors-of-perception, heightened-awareness',
+        'Recursive warping, swirl pull, contour melt, scale loops, radial feedback, figure-ground reversal',
+      atmosphere: 'Trippy, euphoric, saturated, unstable, mesmerizing, loud',
       key_features:
-        'Paisley recursion, mandala centers, blacklight glow, fluid edge morphing, fractal spirals',
+        'Paisley recursion, mandala centers, liquid contours, blacklight glow, vibrating color clashes, fractal spiral pressure',
       creative_brief:
-        'Maximize psychedelic force through liquid distortion, chromatic clash, and recursive ornament. Keep visual intensity and altered-perception cues high while avoiding fixed venue or narrative anchors.',
+        'Drive any input through psychedelic perception mechanics: recursive ornament, liquid contours, color clashes, and optical vibration. Keep it style-first; avoid fixed venues, posters, bands, characters, or narrative drug imagery.',
     },
   },
   {
     id: 'SP11-043',
-    name: 'Memphis Design',
+    name: 'Postmodern Pattern Clash',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'realistic, 3d',
     style: {
-      aesthetic: 'Memphis postmodern design with playful anti-minimal geometric clash',
+      aesthetic:
+        'Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction',
       form_and_line:
-        'Squiggles, triangles, zigzag-lines, polka-dot grids, confetti-burst contours, zany-circles',
+        'Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation',
       color_palette:
-        'Black + Primary Colors, hot-pink, teal-contrast, traffic-cone orange, acid-yellow, midnight-blue matte',
+        'Hot pink, teal, primary yellow, traffic-cone orange, matte black, white, acid accents, cobalt depth',
       lighting_setup:
-        'Flat, no-shadow graphic, offset-print registration, two-dimensional clarity, poster-flat',
+        'Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first readability',
       material_texture:
-        'Speckled pattern, terrazzo-chip, laminate-veneer, plastic-laminate gloss, rubber-paint finish',
-      render_quality: 'Bold retro-pattern rendering with high-energy postmodern contrast',
+        'Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility',
+      render_quality:
+        'Bold, cheeky, graphic, design-object sharp, deliberately over-patterned, high-contrast',
       spatial_distortion:
-        'Abstract shapes, floating-pattern planes, Op-art illusions, checkerboard-grid, squiggle-rhythm',
-      atmosphere: 'Playful, energetic, rule-breaking joy, design-anarchy, sugar-cereal morning',
+        'Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual imbalance',
+      atmosphere: 'Playful, decorative, contrarian, optimistic, ironic, loud',
       key_features:
-        'Geometric patterns, squiggle-motif, terrazzo-speckle, black-white-checkerboard, contrasting-bold-outlines',
+        'Squiggle motifs, checkerboard fragments, terrazzo noise, primary blocks, black outline accents, anti-minimal composition',
       creative_brief:
-        'Compose with high-contrast Memphis primitives: squiggles, checkerboards, terrazzo noise, and bold geometric blocks. Preserve playful anti-minimal tension while keeping pattern vocabulary reusable in any layout.',
+        'Use Memphis as a pattern-behavior engine: clashing primitives, synthetic surfaces, terrazzo noise, and playful anti-minimal balance should style any subject. Avoid making the image merely furniture, interiors, or design showroom scenes.',
     },
   },
   {
     id: 'SP11-011',
-    name: 'Synthwave 80s',
+    name: 'Chrome Horizon Voltage',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'nature, green, day',
     style: {
       aesthetic:
-        'Synthwave-retro digital aesthetic with neon geometric minimalism, analog-video nostalgia, and stylized horizon futurism',
+        'Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth',
       form_and_line:
-        'Vector-clean wireframe planes, triangular solar motifs, parallel grid recurrences, crisp retro-computational contours',
+        'Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome edge cuts',
       color_palette:
-        'High-voltage magenta-cyan axis, deep violet shadows, near-black base fields, selective chrome white accents',
+        'High-voltage magenta, cyan beams, deep violet shadow, near-black base, chrome white accents, hot sunset bands',
       lighting_setup:
-        'Emissive neon washes, bloom-forward gradient transitions, controlled halo response, reflective horizon glow',
+        'Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field contrast',
       material_texture:
-        'CRT phosphor bloom, subtle scanline interference, VHS-era grain noise, glossy chrome edge catches',
+        'VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise',
       render_quality:
-        'Polished outrun visual finish with poster clarity, era-authentic digital artifacting, and sharp retro-wave discipline',
+        'Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth',
       spatial_distortion:
-        'Infinite perspective grid pull with horizon compression and mirrored depth cues for stylized forward momentum',
-      atmosphere: 'Nostalgic, electric, melancholic, kinetic, euphoric',
+        'Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing',
+      atmosphere: 'Nocturnal, fast, polished, nostalgic, electric, aspirational',
       key_features:
-        'Neon gradient staging, wireframe depth lattice, triangular solar iconography, analog-video patina, chromed accent rhythm',
+        'Neon gradients, wireframe lattice, chrome accents, analog patina, horizon-band depth, vector geometry',
       creative_brief:
-        'Preserve a recognizable synthwave language through gradient voltage, geometric horizon systems, and analog display artifacts rather than any fixed narrative roadway scene.',
+        'Apply synthwave through voltage, geometry, and analog-display artifacts. The input should inherit neon rim light, wireframe depth, chrome accents, and dark-field contrast without requiring cars, sunsets, roads, grids, or 1980s props.',
     },
   },
   {
     id: 'SP11-066',
-    name: 'Glitter Macro',
+    name: 'Holographic Flake Scatter',
     category: '4. Retro Pop And Kitsch',
     negativePrompt: 'matte',
     style: {
       aesthetic:
-        'Pile of glitter, sparkle-drift, craft-mess, micro-mirror chaos, holographic-confetti',
+        'Macro sparkle material system built from iridescent flake scatter, specular chaos, and celebratory micro-geometry',
       form_and_line:
-        'Tiny hexagons, polygonal-flake edges, irregular-cut shapes, star-confetti, micro-geometry',
+        'Tiny hexagons, sliced polygons, star confetti, shard edges, bokeh circles, clustered micro-facets',
       color_palette:
-        'Multi-color, holographic-spectrum, metallic-foil, iridescent-shift, confetti-rainbow, silver-mirror, neon-bright',
+        'Holographic rainbow, metallic silver, iridescent cyan-pink shifts, foil gold, neon accents, prismatic whites',
       lighting_setup:
-        'Sparkle bokeh, point-source-glint, macro-ring flash, multiple-catchlight, disco-ball scatter',
+        'Hard specular points, shallow macro falloff, prismatic bounce, high sparkle density, dark-to-bright contrast',
       material_texture:
-        'Rough, shiny, metallic-foil, PET-film edges, micro-scratch, glitter-dust, adhesive-residue',
+        'Foil flakes, glitter dust, micro-mirrors, glossy confetti, granular sparkle fields, scattered reflective chips',
       render_quality:
-        'Party, mess, craft-project aftermath, sparkle-explosion, disco-floor, kindergarten-chaos',
-      spatial_distortion: 'None, random-scatter, pile-depth, flake-overlap, specular-point-cloud',
-      atmosphere:
-        'Fun, bright, art-room joy, celebration-scatter, make-a-mess, glitter-in-everything',
+        'Dense, festive, tactile, reflective, close-focus, with controlled chaos and readable shimmer structure',
+      spatial_distortion:
+        'Bokeh expansion, specular starbursts, scale ambiguity, shallow-depth scatter, chromatic reflection shifts',
+      atmosphere: 'Celebratory, kinetic, glossy, playful, glamorous, high-energy',
       key_features:
-        'Bling, individual-flake shape, specular-sparkle hot-spot, hexagonal-glitter, holo-shift, bokeh-background, confetti-mix',
+        'Iridescent flake geometry, specular hot spots, bokeh scatter, prism shifts, metallic dust, micro-facet density',
       creative_brief:
-        'Build macro sparkle fields from dense glitter geometry, holographic specular scatter, and color-shifting foil reflections. Keep the visual mood celebratory and high-energy while preserving a reusable material-focused direction.',
+        'Turn the input into a holographic flake-and-sparkle material treatment. Use prismatic scatter, micro-facet reflections, shallow macro depth, and dense glitter geometry while avoiding literal piles, craft tables, party scenes, or product shots. Apply Holographic Flake Scatter as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

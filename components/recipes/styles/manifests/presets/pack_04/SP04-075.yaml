@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Tough, nostalgic, craft-shop heritage, ceremonial permanence
   key_features: Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes
   creative_brief: >-
-    Design for immediate recognition and long-term readability. Use thick black outlines, compact symbolic forms, and flat saturated fills with restrained shading accents. Maintain sheet-ready clarity where each motif works as a standalone emblem and as part of a cohesive flash collection.
+    Apply traditional tattoo-flash grammar to any input: bold-will-hold outlines, compact emblem
+    silhouettes, flat classic primaries, pepper shading, and sheet-ready clarity should make motifs
+    durable without requiring skulls, roses, daggers, skin, flash sheets, or tattoo-shop scenes.
 avoidRules:
   - realistic
   - soft

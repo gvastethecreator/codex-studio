@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Joyful, theatrical, magical spectacle, storybook wonder
   key_features: Dye-transfer saturation, theatrical color clarity
-  creative_brief: 'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging.'
+  creative_brief: >-
+    Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio
+    fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing
+    yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor Musical as a portable cinematic/camera
+    style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation
+    grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - faded
   - dark

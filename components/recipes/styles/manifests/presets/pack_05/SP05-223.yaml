@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-223
 packId: pack_05
-name: Bubblegum Crisis - Neon Power-Suit Hunt
+name: Armored Chrome Noir Elegance
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Retro cyber-noir anime armor style with aggressive chrome femininity, analog-tech glamour, and precision mechanical elegance
-  form_and_line: Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch accents, high-clarity line discipline
-  color_palette: Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones, selective hot-pink highlights
-  lighting_setup: High-contrast practical glow with hard rim separation, tube-light specular streaks, and controlled reflective bounce
-  material_texture: Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams, mirrored trim flashes
-  render_quality: Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished techno-surface readability
-  spatial_distortion: Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical depth layering
+  aesthetic: >-
+    Retro cyber-noir anime armor glamour with segmented articulation, analog-tech voltage,
+    aggressive chrome femininity, and precision ornament
+  form_and_line: >-
+    Hard contour inking, segmented armor seam logic, angular silhouette blocking, technical hatch
+    accents, high-clarity line discipline
+  color_palette: >-
+    Acid cyan-magenta duality, graphite neutrals, electric violet sparks, cold steel midtones,
+    selective hot-pink highlights
+  lighting_setup: >-
+    High-contrast practical glow with hard rim separation, tube-light specular streaks, and
+    controlled reflective bounce
+  material_texture: >-
+    Brushed alloy plates, high-gloss polymer inserts, carbon weave panels, clean mechatronic seams,
+    mirrored trim flashes
+  render_quality: >-
+    Premium cel-anime mecha finish with dense micro-detail, crisp compositing, and polished
+    techno-surface readability
+  spatial_distortion: >-
+    Dynamic foreshortening with engineered silhouette priority, diagonal velocity framing, technical
+    depth layering
   atmosphere: Sleek, high-voltage, assertive, dangerous, stylishly militant
-  key_features: Exosuit silhouette grammar, segmented armor articulation, specular edge choreography, neon-metal contrast, precision mechanical ornament
+  key_features: >-
+    Segmented armor grammar, specular edge choreography, neon-metal contrast, analog glamour,
+    abrasion detail, and mechanical elegance
   creative_brief: >-
-    Preserve a signature of armored cyber-noir elegance: the preset should read
-    through line discipline, material contrast, and chromatic voltage rather
-    than any fixed narrative setting.
+    Use Bubblegum Crisis as style anchor for armored chrome noir elegance. Any prompt should read
+    through segmented shine, neon voltage, analog grit, and precision linework. Power suits, hunts,
+    gangs, alleys, and fixed cyberpunk settings are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-223.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

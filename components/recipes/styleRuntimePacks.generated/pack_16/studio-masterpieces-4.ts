@@ -139,7 +139,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Estela lumínica icónica, ingeniería obsesiva y tensión entre tecnología cívica y ruptura biológica.',
       creative_brief:
-        'Diseña una gramática reusable de colapso cyber-mecánico extremo para cualquier sujeto, priorizando densidad, aceleración social y horror de transformación sin imponer megaciudad, vehículos, autopistas ni estadios.',
+        'Diseña una gramática reusable de colapso cyber-mecánico extremo para cualquier sujeto, priorizando densidad, aceleración social y horror de transformación. Puede convertir el input en masa mutante, vehículo-luz o infraestructura viva si aporta estilo, sin fijar megaciudad, autopista ni estadio.',
     },
   },
   {
@@ -167,7 +167,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.',
       creative_brief:
-        'Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible sin imponer carreras, vehículos, pilotos ni pistas.',
+        'Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible. Si el input lo permite, puede volverse vehículo, piloto abstracto o bólido de trazo; si no, recibe líneas de boost, fricción y túnel cinético sin fijar carrera ni pista.',
     },
   },
   {
@@ -278,7 +278,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.',
       creative_brief:
-        'Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada: asombro, escala aérea y diseño retro-mecánico sin imponer islas flotantes, robots, ruinas ni personajes exploradores.',
+        'Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada: asombro, escala aérea y diseño retro-mecánico. Puede elevar el input con robots nobles, ruina suspendida, ingeniería aérea o silueta exploradora si suma identidad, sin fijar isla flotante ni escena de expedición.',
     },
   },
   {
@@ -530,7 +530,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.',
       creative_brief:
-        'Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada: geometría decó, escala y sensibilidad tecnológica sin imponer skylines, androides, maquinaria literal ni jerarquías narrativas.',
+        'Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada: geometría decó, escala y sensibilidad tecnológica. Androides, maquinaria cívica o siluetas monumentales pueden aparecer como indicios humanistas cuando fortalezcan el input, sin fijar skyline ni jerarquía narrativa.',
     },
   },
   {
@@ -642,7 +642,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.',
       creative_brief:
-        'Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada: geometría, saturación y heroísmo abstracto sin imponer fuego, rescate, mechas ni rivalidades narrativas.',
+        'Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada: geometría, saturación y heroísmo abstracto. El input puede ganar mecha sintético, fuego triangular, rescate gráfico o rivalidad visual si aumenta impacto, sin fijar una escena narrativa concreta.',
     },
   },
   {

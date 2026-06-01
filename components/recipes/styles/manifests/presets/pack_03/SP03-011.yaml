@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Transparent refractive object
+  aesthetic: Transparent refractive material system
   form_and_line: Caustics
   color_palette: Prismatic dispersion
   lighting_setup: Refracted light
@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Refraction
   atmosphere: Elegant, fragile, luxury boutique
   key_features: Transparency, dispersion rainbow
-  creative_brief: Light enters a solid and forgets its straight-line discipline — caustic patterns bloom on nearby surfaces like luminous water lilies, and prismatic dispersion paints rainbows where geometry bends the spectrum. The object is both present and absent, defined by what passes through it rather than what stays. A boutique window at midnight, every edge a blade of frozen clarity.
+  creative_brief: >-
+    Apply transparent refractive lookdev to the input: caustic lace, prismatic
+    dispersion, glass-thick edges and optical bending that make form legible
+    through what light does inside it. Keep boutique crystal polish without
+    requiring a standalone object, display window or still-life setup.
 avoidRules:
   - opaque
   - dull

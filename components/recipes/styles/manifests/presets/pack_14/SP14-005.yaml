@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-005
 packId: pack_14
-name: Marble Wraith Banquet
+name: Petrified Banquet Etiquette
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Aristocratic death-feast noir where etiquette persists beyond mortality.
-  form_and_line: Rigid seated silhouettes, knife-and-goblet rhythm, and elongated axial table choreography.
+  aesthetic: Aristocratic death-feast noir where etiquette persists as cursed protocol and petrified luxury.
+  form_and_line: Rigid protocol silhouettes, knife-and-goblet rhythm, axial table-like geometry, and formal spacing.
   color_palette: Bone ivory, coagulated wine black, and smoked pewter gray.
   lighting_setup: Candle troughs with mirrored marble bounce and deep peripheral falloff.
   material_texture: Veined marble slabs, tarnished heirloom silver, oxidized candelabra, and desiccated floral garlands.
   render_quality: Prestige editorial key art with high micro-detail and controlled tonal compression.
-  spatial_distortion: Vaulted banquet hall vanishing point that tunnels attention toward a silent host seat.
+  spatial_distortion: Vaulted axial depth that tunnels attention through ceremonial place-setting rhythm without requiring a banquet hall.
   atmosphere: Ritualized decay, dynastic arrogance, and prophetic unease.
-  key_features: Petrified courtiers, carbonized fruit centerpieces, oath-cutlery place settings, empty sovereign chair.
-  creative_brief: A noble house continues its eternal supper in stone-bound silence, as if the curse is enforced through perfect table protocol.
+  key_features: Petrified etiquette cues, carbonized centerpiece forms, oath-cutlery lines, veined marble, and empty sovereign-axis tension.
+  creative_brief: >-
+    Petrify the input through banquet etiquette noir: bone ivory, coagulated
+    wine-black shadows, pewter decay, oath-cutlery rhythm, and rigid protocol
+    geometry should make any subject feel cursed by perfect manners without
+    requiring nobles, table, courtiers, food, or dining room.
 avoidRules: [photoreal, comedy, candy-colors, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-005.webp }
 attributes:
   negativePrompt: photoreal, comedy, candy-colors, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

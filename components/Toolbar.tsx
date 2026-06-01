@@ -82,6 +82,7 @@ export interface ToolbarProps {
   onOpenKeySelector: () => void;
   onSelectKey: () => Promise<void>;
   maxAttachments: number;
+  interactionScope?: string;
 }
 
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
@@ -172,6 +173,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     onOpenKeySelector,
     onSelectKey,
     maxAttachments,
+    interactionScope,
   }) => {
     const { addToast } = useGlobal();
     const containerRef = useRef<HTMLDivElement>(null);
@@ -179,6 +181,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const [localPrompt, setLocalPrompt] = useState(generationConfig.prompt || '');
+    const [quickStartError, setQuickStartError] = useState(false);
+    const [isPromptFocused, setIsPromptFocused] = useState(false);
 
     // Menu States
     const [isAspectRatioOpen, setIsAspectRatioOpen] = useState(false);
@@ -371,7 +375,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const handleTriggerGenerate = useCallback(() => {
       const trimmedPrompt = localPrompt.trim();
-      if (!trimmedPrompt && generationConfig.attachments.length === 0) return;
+      if (!trimmedPrompt && generationConfig.attachments.length === 0) {
+        setQuickStartError(true);
+        setIsInteracting(true);
+        requestAnimationFrame(() => textareaRef.current?.focus({ preventScroll: true }));
+        return;
+      }
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
@@ -387,6 +396,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       onGenerate,
       closeAllMenus,
       isForcedMode,
+      setIsInteracting,
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -432,6 +442,17 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const hasAttachments = generationConfig.attachments.length > 0;
     const isNearLimit = generationConfig.attachments.length >= maxAttachments;
+    const hasQuickStartInput = localPrompt.trim().length > 0 || hasAttachments;
+
+    useEffect(() => {
+      setQuickStartError(false);
+    }, [interactionScope]);
+
+    useEffect(() => {
+      if (hasQuickStartInput) setQuickStartError(false);
+    }, [hasQuickStartInput]);
+
+    const showQuickStartErrorText = quickStartError && isPromptFocused;
 
     return (
       <div
@@ -456,8 +477,21 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           <div className="flex-1 relative min-w-0">
             {/* Input Container */}
             <div
-              className={`flex items-end gap-2 rounded-2xl p-1.5 px-3 min-h-[44px] shadow-lg transition-colors duration-300 bg-zinc-900/50 border border-white/5`}
+              className={`flex items-end gap-2 rounded-2xl p-1.5 px-3 min-h-[44px] shadow-lg transition-colors duration-300 bg-zinc-900/50 border border-white/5 ${quickStartError ? 'quick-start-error-frame' : ''}`}
             >
+              <AnimatePresence>
+                {showQuickStartErrorText && (
+                  <MotionDiv
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 6 }}
+                    transition={{ duration: 0.16, ease: 'easeOut' }}
+                    className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200"
+                  >
+                    Add prompt or image to generate
+                  </MotionDiv>
+                )}
+              </AnimatePresence>
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
@@ -505,9 +539,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 ref={textareaRef}
                 value={isEnhancingPrompt || isRefactoring ? scrambleText : localPrompt}
                 readOnly={isEnhancingPrompt || isRefactoring}
-                onFocus={() => setIsInteracting(true)}
+                onFocus={() => {
+                  setIsInteracting(true);
+                  setIsPromptFocused(true);
+                }}
                 aria-label="Prompt input"
                 onBlur={() => {
+                  setIsPromptFocused(false);
                   // IMMEDIATE SYNC ON BLUR: Fixes race condition when clicking external buttons
                   updateConfig('prompt', localPrompt);
                   closeAllMenus();

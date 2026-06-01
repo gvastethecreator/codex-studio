@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Pixelated by dots
   atmosphere: Vintage, gritty
   key_features: Visible dots
-  creative_brief: The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs ink greedily, cheap paper already yellowing toward oblivion. The style should feel mass-reproduced, urgent, and degraded without requiring headlines, captions, or newspaper layout.
+  creative_brief: >-
+    Apply newspaper halftone to any input: visible dot matrix, grey through dot
+    spacing, cheap yellowing paper, ink absorption, coarse reproduction, and
+    degraded mass-print urgency. Keep press texture without requiring headlines,
+    captions, columns, photos, or newspaper layout.
 avoidRules:
   - photo
   - realistic

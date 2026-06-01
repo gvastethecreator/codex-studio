@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Warping
   atmosphere: Futuristic, protected
   key_features: Hex grid (optional)
-  creative_brief: Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light.
+  creative_brief: >-
+    Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible
+    surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should
+    feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the
+    membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - fire
   - gas

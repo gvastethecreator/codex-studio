@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-122
 packId: pack_14
-name: Serpent Oracle Court
+name: Serpent Oracle Lineage
 category: 3. Mythic — Pantheons & Legends
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Court of serpent deities and prophetic attendants.
-  form_and_line: Coiling columns, court steps, and sinuous canopy lines.
+  aesthetic: Serpent-oracle lineage rendered through coiling prophecy, guarded wisdom, and emerald noir authority.
+  form_and_line: Coiling column cues, court-step bands, and sinuous canopy lines.
   color_palette: Emerald black, gold, and obsidian.
   lighting_setup: Controlled torchlight with emerald underglow.
   material_texture: Polished stone, scale-like enamel, and gold wire.
   render_quality: Elegant mythic court illustration.
-  spatial_distortion: Curved court plan that coils around the oracle seat.
+  spatial_distortion: Curved plan that coils around an oracle-like focal presence.
   atmosphere: Prophecy, continuity, and guarded wisdom.
-  key_features: Oracle dais, serpent pillars, and sigil mosaics.
-  creative_brief: A pantheon court where the serpent lineage speaks prophecy through architecture.
+  key_features: Oracle dais cues, serpent pillars, sigil mosaics.
+  creative_brief: Reinterpret the input as serpent-oracle lineage, letting prophecy coil through form and material without requiring a court.
 avoidRules: [photoreal, playful, candy-color, watermark, text, logo, static-pose]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-122.webp }
 attributes:
   negativePrompt: photoreal, playful, candy-color, watermark, text, logo, static-pose
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-pantheons, categoryName: 3. Mythic — Pantheons & Legends, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-pantheons,
+    categoryName: 3. Mythic — Pantheons & Legends,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

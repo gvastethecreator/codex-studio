@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Miniature world
+  aesthetic: Miniature tilt-shift treatment
   form_and_line: Tilt-shift blur
   color_palette: Saturated, cozy, miniature palette
   lighting_setup: Warm, close, macro-lighting
@@ -20,7 +20,12 @@ visualDna:
   render_quality: Cute, small, tilt-shift magic
   atmosphere: Playful, tiny, tabletop wonder
   key_features: Miniature, depth-of-field isolation
-  creative_brief: 'The world shrinks to fit on a tabletop — tilt-shift depth of field blurs the near and far into creamy abstraction, leaving only the subject in hyper-real miniature sharpness. Saturated colors and warm macro-lighting make every tiny tree and building feel hand-painted by an obsessive modelmaker. The image is tilt-shift magic: a universe you could cup in both hands, cozy and impossibly detailed.'
+  creative_brief: >-
+    Miniaturize the input through tilt-shift optics: macro-scale warmth, saturated model-kit color, creamy near/far blur
+    and handcrafted surface cues. Do not require trees, buildings, tabletop worlds or a literal diorama. Apply Diorama
+    Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - flat
   - realistic scale

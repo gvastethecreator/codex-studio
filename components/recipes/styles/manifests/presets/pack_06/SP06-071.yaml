@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Pixelated by scraps
   atmosphere: Creative, recycled
   key_features: Torn bits
-  creative_brief: Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing.
+  creative_brief: >-
+    Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail.
+    Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should
+    dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing. Apply this
+    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
+    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
+    craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -44,7 +50,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-071.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable typography, advertisement requirement, school craft mood
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border, readable typography, advertisement requirement, school craft mood
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

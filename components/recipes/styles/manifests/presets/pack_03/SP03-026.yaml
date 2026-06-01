@@ -17,10 +17,15 @@ visualDna:
   color_palette: Clean background, component contrast
   lighting_setup: Top down, shadow-free
   material_texture: Clean parts, disassembly beauty
-  render_quality: Organization porn, product-exploded
+  render_quality: Organized exploded-layout clarity
   atmosphere: Satisfying, organized, design-museum
   key_features: Grid layout, 90-degree arrangement
-  creative_brief: 'Every component lies at perfect right angles, a exploded-view diagram rendered beautiful — top-down lighting eliminates shadows, and the clean background turns disassembly into museum curation. Each part occupies its ordained grid cell with the satisfaction of a perfectly packed toolbox. The image is organization elevated to art: a design museum where even the screws have their moment of solo exhibition.'
+  creative_brief: >-
+    Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded relationships
+    and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate its visual elements
+    into a precise grid. Do not require a product teardown. Apply Knolling as a portable 3D/render style system over any
+    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues
+    while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - messy
   - piled

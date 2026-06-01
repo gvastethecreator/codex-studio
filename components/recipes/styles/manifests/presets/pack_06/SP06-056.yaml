@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Chrome reflection
   atmosphere: Nostalgic, cool
   key_features: Sunset gradient
-  creative_brief: Neon gridlines, chrome gradients, magenta-cyan bloom, and scanline haze create a remembered future that never existed. Reflective bands and synthetic color make the image move even when still, driven by a beat implied through rhythm and glow. The style should not require sunsets, roads, cars, horizons, or specific retro props.
+  creative_brief: >-
+    Apply synthwave visual language to any input: magenta-cyan bloom, neon grid
+    rhythm, chrome gradients, scanline haze, reflective bands, and synthetic
+    retrofuturist glow. Keep remembered-future energy without requiring sunsets,
+    roads, cars, horizons, palm trees, or retro props.
 avoidRules:
   - photo
   - realistic

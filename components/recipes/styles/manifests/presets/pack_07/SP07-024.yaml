@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-024
 packId: pack_07
 name: Victorian Painted Lady
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Revival victoriano cromático de ornamento pintado, identidad barrial y detalle carpintero exuberante.
-  form_and_line: Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad estrecha.
+  aesthetic: >-
+    Revival victoriano cromático de ornamento pintado, identidad barrial y detalle carpintero
+    exuberante.
+  form_and_line: >-
+    Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad
+    estrecha.
   color_palette: Pasteles complejos (azul/rosa/amarillo), lavanda, menta y molduras crema con rosa polvoso.
   lighting_setup: Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.
   material_texture: Siding de madera, pintura multicapa, calados finos, aleros con ménsulas y tejuela decorativa.
   render_quality: Detalle residencial histórico de alta legibilidad ornamental con alegría cromática controlada.
   spatial_distortion: Perspectiva estable centrada en jerarquía de ornamentación y capas cromáticas verticales.
   atmosphere: Nostálgica, festiva, cívica y orgullosamente preservada.
-  key_features: Esquemas tricromos, salientes facetados, tejuela fish-scale y carpintería recortada de alta densidad.
+  key_features: >-
+    Esquemas tricromos, salientes facetados, tejuela fish-scale y carpintería recortada de alta
+    densidad.
   creative_brief: >-
-    Mantén una gramática Painted Lady transferible por ornamentación de madera,
-    cromática pastel estratificada y composición vertical doméstica. La
-    identidad debe sostenerse por lenguaje constructivo, no por postal turística.
+    Mantén una gramática Painted Lady transferible por ornamentación de madera, cromática pastel
+    estratificada y composición vertical doméstica. La identidad debe sostenerse por lenguaje
+    constructivo, no por postal turística.
 avoidRules:
   - plain
   - grey
@@ -35,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

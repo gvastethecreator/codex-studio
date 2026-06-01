@@ -12,14 +12,14 @@ visualDna:
   color_palette: Copper, cream, and forest green.
   lighting_setup: Warm arcade lights and reflected dial faces.
   material_texture: Enamel plates, brass, and varnished timber.
-  render_quality: Playful yet refined concept art.
+  render_quality: Playful refined render with oversized timewheel logic and public spectacle cues.
   spatial_distortion: Rotational composition around giant wheel logic.
   atmosphere: Social motion and measured delight.
   key_features: Timewheel motifs, ticket-counter blocks, gear carnival shapes, and brass spoke halos.
   creative_brief: >-
-    Preserve timewheel arcade grammar as a reusable style system:
-    rotational public amusement engineering, dial-and-ticket ritual rhythm,
-    and measured social delight should remain coherent across subjects.
+    Spin the input through timewheel public delight: copper spoke halos, cream
+    arcade portals, forest-green enamel plates, dial-kiosk blocks, and carnival
+    gear loops make any subject feel rotational, social, and measured.
 avoidRules: [photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-094.webp }
 attributes:

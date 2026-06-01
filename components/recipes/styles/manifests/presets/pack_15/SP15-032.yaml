@@ -4,35 +4,60 @@ packId: pack_15
 name: Megalith Transit Spine
 category: 12. Corepunk — Stonepunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - stonepunk
 visualDna:
   aesthetic: Megalith logistics style where travel feels carved into geology, slow as a glacier, and impossible to privatize.
-  form_and_line: Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut like fossils.
+  form_and_line: >-
+    Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut
+    like fossils.
   color_palette: Sandstone beige, slate blue, iron rust, sun-bleached rope tan, and oxidized route-paint green.
-  lighting_setup: Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving weights.
-  material_texture: Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide grooves.
+  lighting_setup: >-
+    Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving
+    weights.
+  material_texture: >-
+    Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide
+    grooves.
   render_quality: Expansive stonepunk infrastructure concept with every route, lift, and exchange point legible at civic scale.
   spatial_distortion: Horizon compression stretches routes into monumental lines, making distance feel engineered by public effort.
   atmosphere: Slow momentum, civic pragmatism, trade ritual, and old-world futurity.
   key_features: Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.
   creative_brief: >-
-    Preserve megalith transit-spine grammar as a reusable style system:
-    carved-route logistics, public counterweight mobility, and geological
-    movement scale should remain coherent across subjects without requiring a
-    road, trade gate, towers, sleds, or literal transit.
+    Stretch the input into public geology in motion: carved route grooves, counterweight blocks, rope-shadow grids,
+    fossil-like distance marks, and stone-sled scars. Roads, trade gates, towers, or sleds can anchor the idea, but the
+    style is civic distance engineered through megalithic effort. Apply this corepunk genre grammar over any input:
+    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
+    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
 avoidRules:
-  [photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-032.webp }
+  - photoreal
+  - cyber-neon
+  - whimsical-fantasy-only
+  - modern-asphalt-roads
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-032.webp
 attributes:
   negativePrompt: photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-stonepunk,
-    categoryName: 12. Corepunk — Stonepunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-stonepunk
+  categoryName: 12. Corepunk — Stonepunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - stonepunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

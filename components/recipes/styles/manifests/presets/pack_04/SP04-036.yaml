@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Rebellious, absurdist, provocative
   key_features: Visible seams, torn edges, fragment clash composition
   creative_brief: >-
-    Build meaning from collision: juxtapose mismatched found fragments without smoothing continuity. Preserve visible cut seams, halftone textures, and intentional scale/light contradictions to keep the Dada montage language unmistakable and adaptable.
+    Apply Dada photomontage collage to any input: hard scissor seams, mismatched fragments, halftone
+    wear, source-light contradiction, and abrupt scale discontinuity should create conceptual
+    friction without requiring human bodies, newspapers, manifestos, politics, or fixed found-image
+    scenes.
 avoidRules:
   - seamless
   - painted

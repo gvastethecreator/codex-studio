@@ -12,14 +12,14 @@ visualDna:
   color_palette: Electric cyan, ultraviolet, and foam white.
   lighting_setup: Night tides with glowing signage and reflected water bloom.
   material_texture: Translucent polymer, salt-wet metal, and coral composite.
-  render_quality: Energetic seapunk concept art with clean pathway readability.
+  render_quality: Energetic seapunk render with clean pathway readability and tide-instrument glow.
   spatial_distortion: Curving causeway-like depth through layered marine bands.
   atmosphere: Motion, nightlife, and tidal futurity.
   key_features: Tide beacons, floating rail-link motifs, reef-lit edges, and neon current marks.
   creative_brief: >-
-    Preserve tidal neon-causeway grammar as a reusable style system:
-    sinuous floating circulation, tide-instrument nightlife glow, and
-    marine civic motion should remain coherent across subjects.
+    Electrify the input with tidal neon motion: cyan wave rails, ultraviolet
+    tide bands, foam-white pylons, reef-lit edges, and salt-wet reflections make
+    any subject feel sinuous, marine, and civic at night.
 avoidRules: [photoreal, diesel, grim, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-116.webp }
 attributes:

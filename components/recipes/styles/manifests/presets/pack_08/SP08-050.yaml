@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Fifth Element bold alien runway costuming, Jean-Paul Gaultier sci-fi, interstellar-couture rebellion
   form_and_line: Strange cutouts, geometric-negative-space, body-harness wrapping, asymmetrical neckline, tab-constructed sleeves
   color_palette: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
-  lighting_setup: Bright, space-terminal glow, chrome-reflection bounce, sterile-lab overhead, neon-advertisement spill
+  lighting_setup: Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill
   material_texture: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
   render_quality: Weird, futuristic, Gaultier-costume genius, space-opera runway spectacle
   spatial_distortion: None
-  atmosphere: Alien, fashion, interstellar-transit bustle, zero-g couture attitude, cosmic-terminal glamour
+  atmosphere: Alien, fashion, zero-g couture attitude, cosmic glamour, rebellious artificiality
   key_features: Straps, body harness, cutout geometry, contrast stitching, utility ring
-  creative_brief: Orange rubber cut into geometries that have no etymology in human tailoring, body harnesses wrapping the torso in a language of straps and negative space invented by a civilization that evolved fashion before they evolved language. Clear plastic and chrome vinyl catch space-terminal light on a silhouette that makes Earth couture look like cave painting, every cutout a window onto skin that has never known terrestrial sun.
+  creative_brief: >-
+    Make the input feel designed by non-human couture logic: orange rubber,
+    clear plastic, chrome vinyl, body-harness wrapping, strange cutouts,
+    tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element
+    rebellion without requiring a space terminal, alien body, lab or runway.
 avoidRules:
   - human clothes
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

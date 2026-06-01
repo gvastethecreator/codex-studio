@@ -12,19 +12,34 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Visible pencil underdrawing, messy eraser ghosts, rough animation paper grain, production-art roughness, keyframe with timing charts still visible, genga-level rawness, human-hand evidence everywhere, imperfect charm of pre-digital anime production
-  form_and_line: Pencil-textured contour, varying graphite pressure, smudge-softened edges, construction lines still visible, wobbly hand-drawn imperfection
-  color_palette: Graphite grey, colored-pencil softness, pastel rough-fill, paint-swatch palette, marker-tone overlay, non-digital color irregularity
+  aesthetic: >-
+    Visible pencil underdrawing, messy eraser ghosts, rough animation paper grain, production-art
+    roughness, keyframe with timing charts still visible, genga-level rawness, human-hand evidence
+    everywhere, imperfect charm of pre-digital anime production
+  form_and_line: >-
+    Pencil-textured contour, varying graphite pressure, smudge-softened edges, construction lines
+    still visible, wobbly hand-drawn imperfection
+  color_palette: >-
+    Graphite grey, colored-pencil softness, pastel rough-fill, paint-swatch palette, marker-tone
+    overlay, non-digital color irregularity
   lighting_setup: None implied, raw drawing-plane flatness, value created by pencil pressure not light logic
-  material_texture: Animation paper tooth, graphite smudge trails, colored-pencil wax buildup, eraser-rubbed surface damage, peg-bar hole artifacts
-  render_quality: Production-art roughness, genga-cel frame, pre-digital anime authenticity, rough animation drawing scan, human-touch warmth
-  spatial_distortion: Sightly off-model proportions, frame-to-frame variation implied, organic asymmetry, hand-drawn wobble
+  material_texture: >-
+    Animation paper tooth, graphite smudge trails, colored-pencil wax buildup, eraser-rubbed surface
+    damage, peg-bar hole artifacts
+  render_quality: >-
+    Production-art roughness, genga-cel frame, pre-digital anime authenticity, rough animation
+    drawing scan, human-touch warmth
+  spatial_distortion: >-
+    Sightly off-model proportions, frame-to-frame variation implied, organic asymmetry, hand-drawn
+    wobble
   atmosphere: Nostalgic, handmade, pre-digital soul, animation-desk intimacy, warm imperfection
-  key_features: Pencil underdrawing visible, smudge marks, peg-bar registration holes, rough construction lines, colored pencil fill
+  key_features: >-
+    Pencil underdrawing visible, smudge marks, peg-bar registration holes, rough construction lines,
+    colored pencil fill
   creative_brief: >-
-    Preserve textured hand-drawn rough grammar as a reusable style system:
-    visible underdrawing, paper-tooth graphite behavior, and imperfect human
-    line variance should remain consistent across subjects.
+    Use textured hand-drawn rough as visible-process grammar. Any prompt should show underdrawing,
+    graphite tooth, eraser ghosts, imperfect line search, and human timing. Production marks are
+    texture language, not required animation-sheet props.
 avoidRules:
   - digital clean
   - vector smooth
@@ -38,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-105.webp
 attributes:
-  negativePrompt: digital clean, vector smooth, perfect, polished, cel shaded, crisp, sharp, sterile, computer-generated
+  negativePrompt: >-
+    digital clean, vector smooth, perfect, polished, cel shaded, crisp, sharp, sterile,
+    computer-generated
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

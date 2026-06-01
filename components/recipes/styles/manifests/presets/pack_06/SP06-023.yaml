@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Antique, delicate
   key_features: Fine lines
-  creative_brief: Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over time, warming from grey into sepia, so the drawing appears to age inside its own surface. Every stroke should feel patient, exact, and almost irreversible.
+  creative_brief: >-
+    Apply silverpoint discipline to any input: hairline metal marks, prepared
+    ground texture, nearly irreversible contour, pale grey-to-sepia tarnish, and
+    patient exact modeling. Keep Renaissance precision without requiring portrait
+    studies, hands, drapery, religious subjects, or museum-paper framing.
 avoidRules:
   - photo
   - realistic

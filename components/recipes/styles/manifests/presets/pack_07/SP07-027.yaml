@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-027
 packId: pack_07
 name: Tudor Revival
-category: 1. Residential Interiors
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico protector.
-  form_and_line: Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería plomada romboidal.
+  aesthetic: >-
+    Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico
+    protector.
+  form_and_line: >-
+    Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería
+    plomada romboidal.
   color_palette: Madera oscura sobre cal blanquecina, tierras terracota, verdes musgo y ocre envejecido.
   lighting_setup: Cielo difuso, brillo cálido interior de hogar y filtrado suave por vidrios emplomados.
-  material_texture: Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina climática.
+  material_texture: >-
+    Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina
+    climática.
   render_quality: Patrimonio doméstico de detalle constructivo sólido y atmósfera de arraigo.
   spatial_distortion: Irregularidad pintoresca leve en cumbreras y entramados para reforzar artesanía premoderna.
   atmosphere: Íntima, protectora, nostálgica y terrenal.
   key_features: Half-timber contrastado, gable pronunciado, vidrio emplomado y núcleo térmico de hogar.
   creative_brief: >-
-    Conserva una gramática Tudor transferible basada en contraste madera-cal,
-    asimetría pintoresca y calor de hogar. Debe transmitir continuidad
-    histórica sin quedar reducida a una postal de cottage.
+    Conserva una gramática Tudor transferible basada en contraste madera-cal, asimetría pintoresca y
+    calor de hogar. Debe transmitir continuidad histórica sin quedar reducida a una postal de
+    cottage.
 avoidRules:
   - modern
 assets:
@@ -34,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

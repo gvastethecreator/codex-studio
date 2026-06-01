@@ -15,13 +15,18 @@ visualDna:
   aesthetic: Evangelion sleek biomech pilot suit, NERV interface, sync-ratio shine, plug-depth tension
   form_and_line: Panel lines, entry-plug contour, form-fitting compression, shoulder-interface cutout, neck-seal band
   color_palette: Glossy White/Red, EVA-purple, NERV orange, Unit-01 violet, caution-yellow, matte-black
-  lighting_setup: Cockpit glow, LCL-amber immersion, display-screen backlight, entry-plug bioluminescence
+  lighting_setup: LCL-amber immersion glow, display-screen backlight, entry-plug bioluminescence, sync-alert rim
   material_texture: Latex, plastic, neoprene compression, interface gel, carbon-fiber panel, memory-foam inner
   render_quality: Anime, sci-fi, cel-shaded precision, mecha-pilot intimacy
   spatial_distortion: None
-  atmosphere: Ready, tech, launch-tube tension, AT-field silence, impact-alert urgency
+  atmosphere: Ready, tech, sync-ratio tension, AT-field silence, impact-alert urgency
   key_features: Interface headset, A10 nerve clips, plug-suit panel lines, LCL fluid sheen
-  creative_brief: Glossy panel lines tracing the interface between human nerve and machine muscle, LCL fluid sheen catching amber cockpit light on a suit that is less clothing than communion. Interface clips anchor the pilot to a body eighty meters tall, the compression fabric holding a heartbeat that synchronizes with hydraulics, every seam designed for the moment when pilot and mecha become a single pronoun.
+  creative_brief: >-
+    Apply mecha-pilot interface design to the input: glossy plug-suit panel
+    lines, compression seams, neck seals, A10 nerve-clip cues, LCL amber sheen
+    and biomech synchronization signals. If a character is present, the style
+    may make them feel linked to a giant machine; if not, leave clear mecha
+    interface traces without requiring cockpit, hangar, launch tube or battle.
 avoidRules:
   - casual
 assets:
@@ -41,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

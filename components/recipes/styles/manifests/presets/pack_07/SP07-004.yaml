@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-004
 packId: pack_07
 name: Scandinavian Hygge
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Higiene visual nórdica orientada al confort térmico, intimidad suave y bienestar cotidiano sin ruido formal.
   form_and_line: Volúmenes bajos, cantos redondeados, capas textiles continuas y ergonomía despejada de circulación limpia.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Refugio, calma, seguridad y calidez continua de escala humana.
   key_features: Escala baja, capas textiles, madera pálida, iluminación cálida distribuida y ausencia de estridencia visual.
   creative_brief: >-
-    Asegura transferencia hygge mediante una tríada constante: luz blanda,
-    tactilidad natural y contraste bajo. El estilo debe priorizar confort
-    sensorial y claridad funcional por encima de cualquier narrativa estacional.
+    Asegura transferencia hygge mediante una tríada constante: luz blanda, tactilidad natural y contraste bajo. El
+    estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier narrativa estacional. Apply
+    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - dark
   - cold
@@ -37,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

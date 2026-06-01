@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Clinical, exact, instruction-driven
   key_features: Multi-view orthos, dimension strings, labeled leaders, scale references
   creative_brief: >-
-    Communicate intent for downstream modeling and production without stylistic noise. Organize views, dimensions, and annotations into a strict hierarchy so structural decisions, part relationships, and proportional constraints remain immediately actionable.
+    Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified
+    inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require
+    readable dimensions, machinery, weapons, vehicles, or a literal product schematic.
 avoidRules:
   - single view
   - one angle

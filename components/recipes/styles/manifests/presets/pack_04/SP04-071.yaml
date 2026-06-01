@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Somber, introspective, gothic-romantic, haunted stillness
   key_features: Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast
   creative_brief: >-
-    Treat tone as the primary drawing language. Use granular gradients to model volume, letting contours stay secondary and partially submerged in shadow. Keep transitions misted and cohesive, with controlled grain visibility that conveys handcrafted etch character without sacrificing legibility.
+    Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity,
+    misted tone stacking, submerged contours, and soft shadow pools should make atmosphere primary
+    without requiring gothic scenes, landscapes, figures, ruins, or fixed somber subjects.
 avoidRules:
   - sharp lines
 assets:

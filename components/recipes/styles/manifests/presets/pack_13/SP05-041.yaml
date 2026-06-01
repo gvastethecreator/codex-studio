@@ -13,18 +13,29 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Ornamental court-romance shojo style with aristocratic elegance, ceremonial drama, and emotionally charged decorum
-  form_and_line: Fine calligraphic contouring, elongated graceful anatomy, couture silhouette emphasis, gesture-rich hand and gaze choreography
-  color_palette: Rose-pearl pastels with jewel-toned ceremonial accents, warm candle ambers, ivory highlights, and muted velvet shadows
-  lighting_setup: Portrait-soft bloom, candle-like practical glows, selective rim polish, and luminous halation tuned for emotional proximity
-  material_texture: Silk drape fidelity, lace micro-detail, satin reflectance, floral appliqué softness, delicate ornamental surface layering
-  render_quality: Luxe shojo rendering with couture-grade fabric readability, polished emotional close-ups, and restrained cinematic softness
+  form_and_line: >-
+    Fine calligraphic contouring, elongated graceful anatomy, couture silhouette emphasis, gesture-rich hand and gaze
+    choreography
+  color_palette: >-
+    Rose-pearl pastels with jewel-toned ceremonial accents, warm candle ambers, ivory highlights, and muted velvet
+    shadows
+  lighting_setup: >-
+    Portrait-soft bloom, candle-like practical glows, selective rim polish, and luminous halation tuned for emotional
+    proximity
+  material_texture: >-
+    Silk drape fidelity, lace micro-detail, satin reflectance, floral appliqué softness, delicate ornamental surface
+    layering
+  render_quality: >-
+    Luxe shojo rendering with couture-grade fabric readability, polished emotional close-ups, and restrained cinematic
+    softness
   spatial_distortion: Ballroom-scale elegance through vertical elongation and curated depth layering that prioritizes relational staging
   atmosphere: Regal, yearning, tender, ceremonial, dramatic
   key_features: Couture-emotion coupling, ornament-driven composition, gaze-led dramaturgy, ceremonial color hierarchy
   creative_brief: >-
-    Encode this preset as an ornamental romance grammar: couture silhouettes,
-    ceremonial lighting, and emotionally loaded gaze choreography should remain
-    transferable beyond any single palace narrative.
+    Encode this preset as an ornamental romance grammar: couture silhouettes, ceremonial lighting, and emotionally
+    loaded gaze choreography should remain transferable beyond any single palace narrative. Apply this anime/IP-title
+    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues
+    while avoiding a required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +52,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-041.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling
-  form_and_line: Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm
+  aesthetic: >-
+    Environment concept-development style with mood-led worldbuilding, navigable composition logic,
+    and place-first visual storytelling
+  form_and_line: >-
+    Perspective-grid anchored block design with readable silhouette layering and path-guided spatial
+    rhythm
   color_palette: Atmospheric, mood-grade spectrum, location-feel depth
   lighting_setup: Key light, dramatic spotlight, environmental storytelling
   material_texture: Painted
@@ -22,9 +26,10 @@ visualDna:
   atmosphere: Adventure, place, exploration wonder, threshold excitement
   key_features: Scale figure, perspective grid, environmental storytelling
   creative_brief: >-
-    Define identity through environment-concept grammar: atmospheric depth,
-    scale cues, and exploration-forward composition should carry the style
-    without binding it to one specific level narrative.
+    Apply environment-concept grammar to any input: atmospheric depth, scale cues, path-guided
+    composition, readable silhouette layering, and mood-led worldbuilding should create place-feel
+    without requiring landscapes, ruins, level design, tiny figures, architecture, or one narrative
+    location.
 avoidRules:
   - character focus
 assets:

@@ -20,9 +20,15 @@ visualDna:
   render_quality: Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed
   spatial_distortion: Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity
   atmosphere: Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream
-  key_features: Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem
+  key_features: >-
+    Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift,
+    dandelion-stem
   creative_brief: >-
-    Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock.
+    Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended
+    drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock. Apply Dandelion Seed
+    as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - heavy
 assets:

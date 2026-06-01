@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-046
 packId: pack_14
-name: Cyclops Forge Ravine
+name: Cyclops Prophecy Forge
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Volcanic workshop where giant smith rites shape war relics.
-  form_and_line: Ravine furnaces, chain gantries, and anvil terraces.
+  aesthetic: Cyclopean forge prophecy where giant smith rites shape war relics under volcanic pressure.
+  form_and_line: Ravine-furnace cues, chain gantries, and anvil terraces.
   color_palette: Lava orange, soot black, and iron gray.
   lighting_setup: Furnace core glow with volcanic rimlight.
   material_texture: Scorched basalt, riveted iron, and slag glass.
   render_quality: High-contrast forge concept with tactile depth.
-  spatial_distortion: Descending ravine view toward a molten heart.
+  spatial_distortion: Descending pressure toward a molten heart.
   atmosphere: Brutal craft, mythic labor, and heat pressure.
-  key_features: Titan anvils, giant tongs, and lava channels.
-  creative_brief: A Greek myth forge where weapons are made to carry prophecies.
+  key_features: Titan anvils, giant tongs, lava-channel cues.
+  creative_brief: Recast any input through cyclops prophecy forge, as if its form were made to carry divine omens. Keep ravine-furnace pressure, molten orange core glow, slag-glass texture, titan-scale craft, and basalt weight without requiring cyclopes, war relics, giant tools, lava channels, or a forge location.
 avoidRules: [photoreal, bright-pop, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-046.webp }
 attributes:
   negativePrompt: photoreal, bright-pop, cyberpunk, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

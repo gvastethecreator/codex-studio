@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Melting edge
   atmosphere: Warm, busy
   key_features: Hex grid
-  creative_brief: Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by purpose.
+  creative_brief: >-
+    Capture the golden geometry of beeswax hexagons, where instinct engineers perfection in translucent amber walls that
+    glow with subsurface warmth. Light should penetrate the wax like it penetrates memory, warm and diffused, revealing
+    the sticky sweetness held within each cell. The surface must hum with the ghost of industry, geometry sweetened by
+    purpose. Use Honeycomb Wax as portable surface/render behavior over any input: map its texture, light response, edge
+    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
+    tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - plastic
   - dry

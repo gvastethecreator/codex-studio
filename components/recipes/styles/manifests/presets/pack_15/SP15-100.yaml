@@ -12,14 +12,14 @@ visualDna:
   color_palette: Herb green, coral clay, and bright sky blue.
   lighting_setup: Golden afternoon sun with soft fabric shade.
   material_texture: Recycled timber, ceramic planters, and woven shade cloth.
-  render_quality: Community-centered future scene with lively detail.
+  render_quality: Community-centered solarpunk render with lively detail and edible-urbanism cues.
   spatial_distortion: Layered rooftop-like perspective climbing through terraces and garden bands.
   atmosphere: Social warmth, abundance, and neighborhood exchange.
   key_features: Stall-canopy motifs, herb-bed textures, rainwater channels, and edible garden color blocks.
   creative_brief: >-
-    Preserve roofgarden market-terraces grammar as a reusable style system:
-    layered edible urbanism, rooftop exchange conviviality, and
-    productive-neighborhood abundance should remain coherent across subjects.
+    Terrace the input into productive neighborhood abundance: herb-green ledges,
+    coral-clay awnings, bright sky-blue rain channels, ceramic planter rhythms,
+    and woven shade cloth make any subject feel edible, social, and sunlit.
 avoidRules: [photoreal, sterile-minimal, cyberpunk, watermark, text, logo, cold-light]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-100.webp }
 attributes:

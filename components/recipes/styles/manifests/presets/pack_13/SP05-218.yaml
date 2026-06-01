@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-218
 packId: pack_13
-name: Yama no Susume - Summit Day Friendship
+name: Incremental-Ascent Confidence Light
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Yama no Susume title anchor translated into crisp effort, supportive friendship, incremental confidence, airy clarity, and uplifting outdoor-hobby sincerity
-  form_and_line: Upward route-like composition lines, practical silhouette clarity, encouragement-driven gesture readability, and breathable spacing
-  color_palette: High-altitude blues, pine greens, sunlit ochres, neutral gear-like tones, and rosy effort highlights
-  lighting_setup: Clear daylight, ridge-edge rim lighting, cool shadow fills, and bright reveal lighting for progress beats
-  material_texture: Technical fabric layers, nylon-strap tactility, rocky grit, tree-bark texture, and breathable knit cues as optional surface language
-  render_quality: Outdoor-hobby rendering with clean scenic readability, uplifting progression tone, and sincere confidence-building warmth
-  spatial_distortion: Elevation-gain perspective expansion used as emotional progress, not as a required mountain or summit view
-  atmosphere: Fresh, supportive, scenic, uplifting
-  key_features: Upward effort rhythm, supportive gestures, airy scenic clarity, practical texture cues, bright confidence-building reveals
+  aesthetic: >-
+    Incremental-ascent anime confidence where effort, crisp air, supportive rhythm, and small
+    progress reveals make the image feel earned
+  form_and_line: >-
+    Upward route-like composition, practical silhouette clarity, encouragement gestures, breathable
+    spacing, and stepwise progression lines
+  color_palette: >-
+    High-altitude blue, pine green, sunlit ochre, gear neutral, rosy effort highlights, and bright
+    cloud white
+  lighting_setup: Clear daylight, edge rim light, cool shadow fill, and reveal-like brightness for progress beats
+  material_texture: >-
+    Technical fabric, nylon strap tactility, rocky grit, bark texture, breathable knit, and dry air
+    sparkle
+  render_quality: >-
+    Outdoor-hobby anime finish with clean clarity, uplifting progression tone, and sincere
+    confidence-building warmth
+  spatial_distortion: Elevation-gain perspective used as emotional progress, without requiring mountains or trails
+  atmosphere: Fresh, supportive, scenic, uplifting, crisp
+  key_features: >-
+    Upward rhythm, incremental confidence, supportive gestures, crisp daylight, practical texture,
+    and reveal lighting
   creative_brief: >-
-    Use Yama no Susume as a style anchor for supportive ascent: crisp air,
-    practical texture, and incremental confidence should transfer without
-    requiring mountains, hiking gear, trails, summit vistas, or schoolgirls.
+    Use Yama no Susume as style anchor for incremental-ascent confidence light. Any prompt should
+    feel like progress made visible: upward composition, fresh air, practical texture, and
+    supportive brightness. Mountains, gear, trails, summits, and schoolgirls are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-218.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-026
 packId: pack_11
-name: Spray Paint / Graffiti
+name: Aerosol Velocity Layering
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,19 +12,25 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Street mural, aerosol rebellion, urban-gallery, spray-can symphony, concrete-canyon art
-  form_and_line: Drips, overspray, fat-cap strokes, skinny-cap detail, can-control finesse
-  color_palette: Neon, Black outline, Montana-gold spectrum, chrome-silver, infrared-purple, alien-green, safety-yellow
-  lighting_setup: Outdoor wall, daylight-blast, brick-texture shadow, alley-gloom ambient, night-security light
-  material_texture: Concrete wall, aerosol, brick-surface tooth, stucco grain, cap-spatter speckle, buffed-over ghost
-  render_quality: Urban, rebellious, yard-burner energy, piece-book precision, freight-train rolling gallery
-  spatial_distortion: Wildstyle lettering, interlocking form, letter-morph chaos, arrow-flow motion
-  atmosphere: Cool, illegal, midnight mission, painted-steel thunder, huff-and-rattle cadence
-  key_features: Drips, fat-cap-to-skinny-cap transitions, halo-fade background, tag-handstyle flourish
+  aesthetic: >-
+    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface
+    memory
+  form_and_line: >-
+    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline
+    collisions
+  color_palette: Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey undertone
+  lighting_setup: Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch
+  material_texture: Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields
+  render_quality: Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation
+  spatial_distortion: Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
+  atmosphere: Energetic, illegal-feeling, urban-coded, loud, improvised, physical
+  key_features: Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed substrate
   creative_brief: >-
-    Define this preset through aerosol graffiti grammar: fat-cap fill vs
-    skinny-cap line control, overspray halos, drip behavior, and wall-surface
-    tooth should carry identity beyond any single train-yard narrative.
+    Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order, drip
+    behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans, crews, or a
+    street location. Apply Aerosol Velocity Layering as a portable style system over any input: preserve its
+    construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required
+    franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - brush strokes
   - clean

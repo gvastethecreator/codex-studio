@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Light scribbles
   atmosphere: Magical, kinetic
   key_features: Dark background
-  creative_brief: Light granted the freedom of a brushstroke, luminous calligraphy inscribed upon the darkness of time itself. Neon ribbons tracing invisible choreographies through space, the dancer vanished but their movement permanently etched. A photograph that remembers not the object but its path, duration collapsed into a single radiant glyph.
+  creative_brief: >-
+    Apply light-painting exposure to the input: luminous trails, long-shutter
+    neon ribbons, gestural calligraphy, and duration marks should draw around or
+    through the subject without requiring a dancer or performance setup.
 avoidRules:
   - static light
 assets:

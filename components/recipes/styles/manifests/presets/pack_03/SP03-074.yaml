@@ -20,7 +20,12 @@ visualDna:
   render_quality: Nightlife, sign, urban-branding
   atmosphere: Urban, cool, nighttime energy
   key_features: Tube connections, gas-glow realism
-  creative_brief: 'Bent glass tubes filled with noble gases emit electric red and blue — the glow spills onto the brick wall behind in a soft ambient bloom, and metal support fittings anchor the sign with industrial honesty. Tube connections and transformer housings render with gas-glow realism, and the wall reflection bleeds color into darkness like a bar sign at 2AM. The image is urban nightlife rendered in three dimensions: a neon sign you could walk up to and feel the warmth buzzing through the glass.'
+  creative_brief: >-
+    Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and emissive
+    spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an urban setting.
+    Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - flat
   - print

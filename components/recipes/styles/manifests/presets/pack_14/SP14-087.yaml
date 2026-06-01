@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-087
 packId: pack_14
-name: Lunar Salt Monastery
+name: Lunar Salt Divination
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Desert monastery extracting omen salts under moon tides.
-  form_and_line: Cloister grids, salt pans, and observatory towers.
+  aesthetic: Lunar salt divination with monastic discipline, crystalline omens, and moon-tide vigilance.
+  form_and_line: Cloister grid cues, salt-pan bands, and observatory tower silhouettes.
   color_palette: Chalk white, deep indigo, and amber flame.
   lighting_setup: Moonwash and low torch perimeter glow.
   material_texture: Crystalline salt crust, adobe, and oxidized metal.
   render_quality: Serene yet ominous environment concept.
-  spatial_distortion: Layered cloister-to-pan progression.
+  spatial_distortion: Layered progression from cloister-like order to salt-flat reflection.
   atmosphere: Monastic discipline and astral vigilance.
-  key_features: Salt omens, lunar stills, and prayer terraces.
-  creative_brief: A cloister where meteorological and spiritual readings are one craft.
+  key_features: Salt omens, lunar stills, prayer-terrace cues.
+  creative_brief: Recast the input through lunar salt divination, where weather and spirit readings crystallize without requiring a monastery.
 avoidRules: [photoreal, comic, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-087.webp }
 attributes:
   negativePrompt: photoreal, comic, neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

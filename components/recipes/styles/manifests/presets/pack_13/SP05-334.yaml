@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-334
 packId: pack_13
-name: Hideaki Anno - Storyboard Emergency Sketch
+name: Emergency Storyboard Tension
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,29 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Urgencia de storyboard en crudo, monocromo ansioso y catástrofe emocional codificada en anotaciones de producción.
-  form_and_line: Contorno de lápiz nervioso, marcas técnicas densas, hatch urgente y soltura de boceto operacional.
+  aesthetic: >-
+    Urgencia de storyboard en crudo, monocromo ansioso y catástrofe emocional codificada en
+    anotaciones de producción.
+  form_and_line: >-
+    Contorno de lápiz nervioso, marcas técnicas densas, hatch urgente y soltura de boceto
+    operacional.
   color_palette: Pencil grey, warning red, photocopy black, paper white, rust sepia, alarm orange
   lighting_setup: Spotlight conceptual duro, estallidos rojo-alarma y glare de material no finalizado.
-  material_texture: Smudge de grafito, grano de fotocopia, pliegues de papel, bleed de marcador y líneas borradas de construcción.
+  material_texture: >-
+    Smudge de grafito, grano de fotocopia, pliegues de papel, bleed de marcador y líneas borradas de
+    construcción.
   render_quality: Sketch-frame de emergencia con lectura táctica alta y energía preproducción apocalíptica.
-  spatial_distortion: Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin compression
+  spatial_distortion: >-
+    Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin
+    compression
   atmosphere: Urgente, ansiosa y esquelética, al borde de colapso planificado.
-  key_features: Paneles de storyboard, flechas de emergencia, notación técnica, ansiedad monocroma y framing explosivo.
+  key_features: >-
+    Raw storyboard panels, emergency arrows, technical notation, incomplete strokes, monochrome
+    anxiety, and explosive preproduction framing
   creative_brief: >-
-    Define una gramática emergency-board reusable donde trazo incompleto,
-    anotación visible y tensión de preproducción se conviertan en identidad sin
-    exigir misil, desastre, mecha, cabina o panel narrativo específico.
+    Use Hideaki Anno as style anchor for emergency storyboard tension. Any prompt should feel
+    urgent, unfinished, annotated, and emotionally diagrammed. Missiles, disasters, mecha, cockpits,
+    panel narratives, and readable notes are optional.
 avoidRules:
   - still
   - calm

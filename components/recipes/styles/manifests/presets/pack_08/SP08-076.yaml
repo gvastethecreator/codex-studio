@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Covered in slime, toxic-spill horror, ectoplasmic-goo body
+  aesthetic: Slime/goo material, toxic-spill horror, ectoplasmic wet gloss
   form_and_line: Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation
   color_palette: Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow
   lighting_setup: Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker
   material_texture: Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension
-  render_quality: Gross, sci-fi, Ghostbusters-ectoplasm goo, lab-accident horror
+  render_quality: Gross, sci-fi, ectoplasm goo, containment-breach horror
   spatial_distortion: Melting
-  atmosphere: Weird, sticky, containment-breach disgust, slime-pit dread, oozing-drip tension
+  atmosphere: Weird, sticky, containment-breach disgust, oozing-drip tension
   key_features: Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form
-  creative_brief: Chartreuse viscosity draping over shoulders in thick sheets that sag under their own weight, stringy tendrils pulling gravity into long strands that drip toward a floor already pooled with luminous residue. Bubbles suspended in gelatinous depths catch blacklight and glow like small toxic moons, the body beneath visible only as a suggestion through layers of substance that blur the line between covering and consuming.
+  creative_brief: >-
+    Cover the input in slime/goo dynamics: chartreuse viscosity, stringy
+    tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence.
+    Keep containment-breach disgust without requiring shoulders, floor puddles,
+    body beneath, lab accident or creature scene.
 avoidRules:
   - dry
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

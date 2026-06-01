@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Geometric
   atmosphere: Precise, technical
   key_features: Clean lines
-  creative_brief: Steel nib delivers ink with the precision of engineering, every line a measurement, every hatch a calculation. The drawing rejects atmosphere for accuracy, mistaking nothing for poetry. Beauty emerges from the discipline of the straightedge, emotion from the refusal to embellish.
+  creative_brief: >-
+    Apply technical-pen precision to any input: uniform steel-nib lines,
+    measured hatching, straightedge discipline, controlled line weights, and
+    accuracy-first detail. Keep engineering clarity without requiring machinery,
+    blueprints, architecture, labels, or diagrammatic annotations.
 avoidRules:
   - photo
   - realistic

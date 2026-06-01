@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-226
 packId: pack_05
-name: Ergo Proxy - Mausoleum City Dread
+name: Cyber-Goth Mausoleum Dread
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Mausoleum city dread, with cyber-goth severity, abandoned modernism, personhood anxiety, and concrete rain.
-  form_and_line: Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical stillness.
+  aesthetic: >-
+    Cyber-goth anime dread with abandoned modernism, concrete emptiness, rain-dark reflection, black
+    silhouette severity, and personhood anxiety
+  form_and_line: >-
+    Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical
+    stillness.
   color_palette: Concrete gray, rain black, cold cyan, corpse white, muted violet, and faint sodium amber.
-  lighting_setup: Funereal top light, wet reflections, distant industrial glow, and minimal rim cuts against oppressive shadow.
-  material_texture: Rain-dark concrete, matte black fabric, oxidized metal, glass streaks, and low-grain digital polish.
-  render_quality: High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise silence.
-  spatial_distortion: Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel trapped.
+  lighting_setup: >-
+    Funereal top light, wet reflections, distant industrial glow, and minimal rim cuts against
+    oppressive shadow.
+  material_texture: >-
+    Rain-dark concrete, matte black fabric, oxidized metal, glass streaks, and low-grain digital
+    polish.
+  render_quality: >-
+    High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise
+    silence.
+  spatial_distortion: >-
+    Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel
+    trapped.
   atmosphere: Bleak, cerebral, cool, funereal
-  key_features: Cyber-goth stillness, concrete rain, personhood dread, black silhouette severity, abandoned modernism.
+  key_features: >-
+    Concrete voids, rain reflection, black silhouettes, cold self-awareness, abandoned modernism,
+    and mausoleum stillness
   creative_brief: >-
-    Make any prompt feel like philosophical cyber-goth dread: use concrete
-    emptiness, rain-dark reflection, black silhouettes, and cold self-awareness
-    without requiring androids, domes, city spaces, or narrative procession.
+    Use Ergo Proxy as style anchor for cyber-goth mausoleum dread. Any prompt should become empty,
+    rain-dark, severe, and philosophically uncertain. Androids, domes, cities, processions, and
+    human figures are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-226.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,19 +12,36 @@ tags:
   - illustration-and-graphic-novel
   - fantasy-and-concept-illustration
 visualDna:
-  aesthetic: Limited-ink screenprint gig-poster style with loud typographic presence, tactile print imperfection, and venue-energy graphic impact
-  form_and_line: Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant compositional structure
-  color_palette: Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma economy
-  lighting_setup: Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic illumination
-  material_texture: Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress artifacts
-  render_quality: Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate event-readability
-  spatial_distortion: Distressed print deformation with slight misregistration and compositionally intentional grit accents
+  aesthetic: >-
+    Limited-ink screenprint gig-poster style with loud typographic presence, tactile print
+    imperfection, and venue-energy graphic impact
+  form_and_line: >-
+    Thick ink contours with hand-pulled edge variance, halftone transitions, and letterform-dominant
+    compositional structure
+  color_palette: >-
+    Three-spot high-contrast palette with deliberate overprint interactions and poster-impact chroma
+    economy
+  lighting_setup: >-
+    Halftone-value illusion and flat print lighting logic prioritizing tonal punch over realistic
+    illumination
+  material_texture: >-
+    Fibrous poster stock with squeegee drag traces, ink density fluctuation, and worn-edge distress
+    artifacts
+  render_quality: >-
+    Handmade print-shop fidelity emphasizing process evidence, tactile ink layering, and immediate
+    event-readability
+  spatial_distortion: >-
+    Distressed print deformation with slight misregistration and compositionally intentional grit
+    accents
   atmosphere: Loud, raw, energetic, gritty, live
-  key_features: Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight typographic lockups
+  key_features: >-
+    Overprint zone behavior, registration offset cues, distressed border treatment, headline-weight
+    typographic lockups
   creative_brief: >-
-    Keep this preset rooted in screenprint gig-poster grammar: limited spot
-    colors, overprint logic, and tactile registration imperfections should
-    define identity beyond any specific band reference.
+    Apply screenprint gig-poster grammar to any input: limited spot colors, overprint logic,
+    distressed borders, squeegee drag, headline-weight shapes, and tactile registration drift should
+    create live-event energy without requiring bands, venues, instruments, readable typography, or
+    posters.
 avoidRules:
   - digital gradient
 assets:

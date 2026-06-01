@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Pragmatic, production-driven, high-iteration studio workflow
   key_features: Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy
   creative_brief: >-
-    Assemble believable concepts from heterogeneous photo sources, then unify them with selective overpaint and grading. Preserve enough source texture to retain realism while enforcing consistent lighting, scale logic, and focal readability across the composite.
+    Apply photobash-paintover iteration to any input: mixed-source texture logic, hard photo fragments, painted
+    unification strokes, material seams, lasso-shape edits, and exploratory overpaint marks. Keep the workflow visible
+    without requiring environments, robots, kitbash machinery, or a before/after scene.
 avoidRules:
   - clean
   - pure illustration

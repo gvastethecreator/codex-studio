@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Broken beads
   atmosphere: Disposable, white
   key_features: Cell structure
-  creative_brief: Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology.
+  creative_brief: >-
+    Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres,
+    each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the
+    edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the
+    accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile
+    rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object,
+    or scene where the material naturally appears.
 avoidRules:
   - smooth plastic
 assets:

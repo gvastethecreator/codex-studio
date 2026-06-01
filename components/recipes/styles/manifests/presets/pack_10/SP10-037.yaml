@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Infinite loop
   atmosphere: Intellectual, confusing
   key_features: Tessellation
-  creative_brief: Staircases that return to themselves, water that flows upward into its own source. The eye believes what the mind rejects, trapped in a diagram that obeys local logic while defying universal truth.
+  creative_brief: >-
+    Apply Escher-like impossible logic to the input: recursive geometry,
+    reversible figure-ground, paradoxical depth, and locally plausible edges
+    should make any subject structurally impossible without requiring stairs.
 avoidRules:
   - color
   - normal physics
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

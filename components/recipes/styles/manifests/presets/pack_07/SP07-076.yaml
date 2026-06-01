@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-076
 packId: pack_07
-name: Dyson Sphere
-category: 1. Residential Interiors
+name: Stellar Shell Megastructure
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,35 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Megaestructura estelar de escala civilizatoria con encapsulamiento luminoso y monumentalismo industrial cósmico.
-  form_and_line: Retículas hex-panel, costillas concéntricas, simetría radial estelar y segmentación orbital de anillos en curvatura extrema.
-  color_palette: Near-black structural silhouettes, solar gold-orange emission, corona-white edge burn, deep panel graphite grays, and faint ionized blue fringes
-  lighting_setup: Contraluz estelar extremo, rim de alto contraste, bandas de autosombra en panel y bloom controlado en núcleos emisivos.
-  material_texture: Compuestos metálicos densos, microtiling de colectores, aletas de disipación y costuras macro de fabricación.
-  render_quality: Ingeniería especulativa ultra-escala con legibilidad estructural rigurosa y contraste astrofísico cinematográfico.
+  aesthetic: >-
+    Megaestructura estelar de escala civilizatoria con encapsulamiento luminoso y monumentalismo
+    industrial cósmico.
+  form_and_line: >-
+    Retículas hex-panel, costillas concéntricas, simetría radial estelar y segmentación orbital de
+    anillos en curvatura extrema.
+  color_palette: >-
+    Near-black structural silhouettes, solar gold-orange emission, corona-white edge burn, deep
+    panel graphite grays, and faint ionized blue fringes
+  lighting_setup: >-
+    Contraluz estelar extremo, rim de alto contraste, bandas de autosombra en panel y bloom
+    controlado en núcleos emisivos.
+  material_texture: >-
+    Compuestos metálicos densos, microtiling de colectores, aletas de disipación y costuras macro de
+    fabricación.
+  render_quality: >-
+    Ingeniería especulativa ultra-escala con legibilidad estructural rigurosa y contraste
+    astrofísico cinematográfico.
   spatial_distortion: Extreme interior-horizon curvature and radial mega-scale perspective compression
   atmosphere: Sublime, colosal y austera, impulsada por ambición tecnológica de civilización tipo II.
-  key_features: Núcleo luminoso enmarcado, campos colectores hexagonales, segmentación radial, horizonte interior curvo y silueta de alto contraste.
+  key_features: >-
+    Núcleo luminoso enmarcado, campos colectores hexagonales, segmentación radial, horizonte
+    interior curvo y silueta de alto contraste.
   creative_brief: >-
-    Define una gramática reusable de Dyson-megastructure con geometría radial
-    de encapsulamiento estelar, panelización energética y legibilidad extrema
-    de escala como invariantes.
+    Escala cualquier tema a ingeniería estelar: paneles colectores, simetría radial, contraluz solar
+    extremo y horizonte interior curvo. Debe transmitir captura energética civilizatoria sin fijar
+    una esfera literal.
 avoidRules:
   - planet surface
 assets:
@@ -34,11 +48,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

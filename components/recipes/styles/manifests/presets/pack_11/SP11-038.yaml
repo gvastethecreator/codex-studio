@@ -19,10 +19,13 @@ visualDna:
   material_texture: Organic matter, membrane-film, pulsating-tissue, slime-coat, chitin-shell, grown-not-built surface
   render_quality: Visceral speculative bio-design with high organic detail density
   spatial_distortion: Mutations, extra-limb growth, asymmetric-organ placement, tumor-bud emergence, fused-anatomy
-  atmosphere: Unsettling, biological, vivisection-table dread, accelerated-evolution, recombinant-anxiety
+  atmosphere: Unsettling, biological, lab-grown, accelerated-evolution, recombinant-anxiety
   key_features: Flesh tubes, umbilical-cord coils, amniotic-fluid drip, pulsating-vein networks, grown-eye clusters, chitin-plate armor
   creative_brief: >-
-    Merge soft tissue, vascular networks, and engineered structures into coherent biotechnological forms. Emphasize wet translucency, asymmetrical mutation logic, and lab-grown material cues without anchoring to a single narrative scene.
+    Transform the input through biopunk material logic: soft tissue, vascular
+    networks, engineered growth seams, wet translucency, asymmetrical mutation,
+    and lab-grown cues. Keep the result coherent and biological without
+    requiring a vivisection table, specimen chamber, or fixed creature design.
 avoidRules:
   - metal
   - dry

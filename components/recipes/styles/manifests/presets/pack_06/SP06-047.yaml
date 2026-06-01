@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Unfinished edges
   atmosphere: Dynamic, fast
   key_features: Loose strokes
-  creative_brief: Gestural strokes land with the urgency of an idea fighting its own evaporation, form suggested rather than defined, edges loose with velocity. The brush moves at the speed of thought — faster than craft, slower than instinct. The image breathes with the confidence of an artist who knows that finish is the enemy of life.
+  creative_brief: >-
+    Apply speedpaint energy to any input: broad gestural strokes, loose edges,
+    compressed detail, fast value blocking, visible brush shortcuts, and
+    idea-first confidence. Keep rapid concept vitality without requiring fantasy
+    key art, YouTube process frames, characters, or unfinished sketch borders.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

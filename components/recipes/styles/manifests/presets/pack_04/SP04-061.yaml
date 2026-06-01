@@ -12,8 +12,12 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force
-  form_and_line: White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm
+  aesthetic: >-
+    Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold
+    democratic graphic force
+  form_and_line: >-
+    White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path
+    rhythm
   color_palette: Black ink, single-color assertion, bold monochrome
   lighting_setup: None, ink-only, no shading hierarchy
   material_texture: Ink roll texture
@@ -22,9 +26,9 @@ visualDna:
   atmosphere: Folk, strong, print-workshop resolve, democratic art
   key_features: No fine detail, gouge marks, carved texture
   creative_brief: >-
-    Define this preset through relief-linocut grammar: carved negative marks,
-    heavy ink transfer, and hand-tool gouge cadence should carry identity
-    beyond any specific folk scene.
+    Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer,
+    gouge cadence, chunky relief edges, and folk-print force should carry identity without requiring
+    folk scenes, workshops, portraits, animals, posters, or specific democratic-art subjects.
 avoidRules:
   - grey
   - gradient

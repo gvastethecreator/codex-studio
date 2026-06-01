@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-056
 packId: pack_05
-name: Geometric Ignition Rescue Style
+name: Geometric Ignition Urgency
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,20 +12,35 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Heroic ignition through sharp geometry, flat-shaded flame language, pastel-neon urgency, and clean angular optimism.
-  form_and_line: Triangular contour rhythm, blocky urgent silhouettes, explosive straight vectors, hard graphic cuts, and heroic angular posing.
-  color_palette: Hot magenta, cyan flame edges, lemon yellow, coral orange, black graphic anchors, and clean white highlights.
-  lighting_setup: Flat flame glow, hard cel highlights, color-block rim light, geometric bloom, and crisp emergency-heat contrast.
-  material_texture: Smooth enamel, clean graphic smoke, matte panels, stylized heat shimmer, and polished high-chroma surfaces.
-  render_quality: Premium hypergraphic anime finish with perfect shape readability, bright vector energy, and controlled chaos.
-  spatial_distortion: Triangle-led perspective, explosive foreshortening, angular depth slices, and speed-grid compression around action.
+  aesthetic: >-
+    Heroic ignition anime through sharp geometry, flat-shaded heat, pastel-neon urgency, and clean
+    angular optimism
+  form_and_line: >-
+    Triangular contour rhythm, blocky urgent silhouettes, explosive straight vectors, hard graphic
+    cuts, and heroic angular posing.
+  color_palette: >-
+    Hot magenta, cyan flame edges, lemon yellow, coral orange, black graphic anchors, and clean
+    white highlights.
+  lighting_setup: >-
+    Flat flame glow, hard cel highlights, color-block rim light, geometric bloom, and crisp
+    emergency-heat contrast.
+  material_texture: >-
+    Smooth enamel, clean graphic smoke, matte panels, stylized heat shimmer, and polished
+    high-chroma surfaces.
+  render_quality: >-
+    Premium hypergraphic anime finish with perfect shape readability, bright vector energy, and
+    controlled chaos.
+  spatial_distortion: >-
+    Triangle-led perspective, explosive foreshortening, angular depth slices, and speed-grid
+    compression around action.
   atmosphere: Hyper, triumphant, chaotic, spirited
-  key_features: Triangular heat shapes, urgent momentum, pastel-neon heat, heroic geometry, and clean chaotic color blocking.
+  key_features: >-
+    Triangular heat shapes, urgent diagonals, pastel-neon flame, heroic geometry, readable chaos,
+    and hot color blocking
   creative_brief: >-
-    Apply geometric ignition rescue as a reusable style treatment: make any
-    subject feel urgent, brave, hot, and shape-driven while staying abstract,
-    portable, and detached from fixed responders, transport forms, locations, or
-    literal emergency events.
+    Use geometric ignition urgency as heat-shape grammar. Any prompt should feel brave, fast, hot,
+    and angular through clean flame geometry. Rescue teams, vehicles, cities, disasters, and literal
+    emergency events are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-056.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

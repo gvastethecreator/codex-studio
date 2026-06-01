@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-202
 packId: pack_13
-name: Tamako Market - Mochi Street Warmth
+name: Market-Festival Community Softness
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Community-coziness anime language with confectionery softness, cheerful local rhythm, festival intimacy, and low-stakes affection
-  form_and_line: Rounded silhouette clusters, signage-friendly contour rhythm, and ensemble blocking tuned for neighborhood familiarity
-  color_palette: Mochi-cream whites, warm cedar browns, festival reds, mint paper signage accents, and evening amber shoplight
-  lighting_setup: Lantern-like strings, warm tungsten spill, and soft overcast daylight transitions across local rhythm
-  material_texture: Powdery matte softness, wooden grain, woven fabric, paper fibers, and polished display highlights
-  render_quality: Community-market slice rendering with cozy commerce detail and festive readability
-  spatial_distortion: Corridor-like depth curvature emphasizing intimate local scale
-  atmosphere: Cheerful, neighborhood-soft, tasty, warm
-  key_features: Community ensemble staging, food-craft texture cues, festive paper accents, cozy warm lighting, and local routine charm
+  aesthetic: >-
+    Local-community anime warmth built from festive intimacy, handmade commerce rhythm, cheerful
+    neighbor density, and confectionery-like softness without locking to a street scene
+  form_and_line: >-
+    Rounded silhouette clusters, welcoming contour rhythm, signage-like shape balance without
+    readable text, and neighborly spacing around the subject
+  color_palette: >-
+    Mochi cream, cedar brown, festival red, mint paper accents, warm amber shoplight, and soft
+    evening violet shadows
+  lighting_setup: >-
+    Lantern-like warm pools, overcast daylight softness, amber spill, and low-drama celebratory
+    highlights
+  material_texture: >-
+    Powdery matte softness, paper fiber, wood grain, woven cloth, polished display glints, and
+    handmade packaging tactility
+  render_quality: >-
+    Community-slice rendering with cozy density, friendly object clarity, festive readability, and
+    gentle local personality
+  spatial_distortion: >-
+    Compact neighborhood-scale depth, corridor-like warmth, and curved attention flow around the
+    main subject
+  atmosphere: Cheerful, neighborly, tasty, soft, festive
+  key_features: >-
+    Community rhythm, food-craft softness, paper accents, warm local light, rounded social
+    composition, and affectionate bustle
   creative_brief: >-
-    Use the title as a style anchor for mochi-street warmth. Transfer local
-    community rhythm, food-craft softness, and festive intimacy to any subject
-    without requiring market streets, storefronts, or food stalls.
+    Use Tamako Market as style anchor for community softness. Transform any subject into warm local
+    ritual: rounded neighborly density, powdery craft texture, paper-festival accents, and amber
+    friendliness. Markets, storefronts, mochi, and stalls stay optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-202.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

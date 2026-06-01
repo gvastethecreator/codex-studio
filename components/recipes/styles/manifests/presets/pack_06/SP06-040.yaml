@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Silhouette only
   atmosphere: Blue, scientific
   key_features: Blue monochrome
-  creative_brief: Iron salts sensitize paper to ultraviolet light, turning Prussian blue where exposure reaches and leaving white where matter interrupts it. The image is a photogram logic, a direct impression of blocked light, science indistinguishable from art. The style should feel exposed, rinsed, monochrome, and materially tied to light.
+  creative_brief: >-
+    Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure
+    softness, paper fiber, contact-print whites, rinsed edges, and scientific
+    photogram calm. Keep sun-printed material logic without requiring plants,
+    specimen sheets, blueprints, labels, or archival catalog layouts.
 avoidRules:
   - photo
   - realistic

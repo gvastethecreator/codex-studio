@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: False color
   atmosphere: Alien, dreamlike
   key_features: False-color infrared response
-  creative_brief: 'The spectrum inverted: reflective surfaces flare pink and red, shadows cool toward indigo, and ordinary material becomes alien under infrared logic. Bend any subject toward Aerochrome false color and scientific psychedelia; no foliage, trees, sky, or landscape required.'
+  creative_brief: >-
+    Apply infrared/Aerochrome false color to the input: pink-red reflective
+    surfaces, indigo shadows, alien material response, and scientific
+    psychedelia should transform any subject without requiring foliage or sky.
 avoidRules:
   - illustration
   - painting

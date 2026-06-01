@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Cellular
   atmosphere: Natural math
   key_features: Cell structure
-  creative_brief: Nature's partitioning algorithm, borders emerging where influences collide. Each cell a small sovereignty, the whole a map of equilibrium written in organic code.
+  creative_brief: >-
+    Apply Voronoi partitioning to the input: cellular borders, influence zones,
+    organic algorithmic tiles, and equilibrium maps should segment any subject
+    into living computational geometry.
 avoidRules:
   - square grid
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

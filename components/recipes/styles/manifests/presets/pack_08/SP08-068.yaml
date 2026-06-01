@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Dissolving
   atmosphere: Ghostly, magic, fading-presence melancholy, incense-ritual mystery, phantasm-elegance
   key_features: No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution
-  creative_brief: Tendrils of particulate suspension coiling around a form that is half body and half memory, the dress billowing upward in plumes that defy the gravity textiles obey. Laser shafts cut through the vapor, revealing strata of density and dissolution, a garment whose edges exist only as a negotiation between visibility and atmosphere, worn by a figure already beginning to fade at the hemline.
+  creative_brief: >-
+    Turn the input into smoke-dress materiality: particulate wisps, billowing
+    plumes, dissolving edges, volumetric shafts and layers of grey-white vapor.
+    Keep ghostly couture without requiring a body, figure, hemline, ritual or
+    laser-stage scene.
 avoidRules:
   - solid
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

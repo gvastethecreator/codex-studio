@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Dungeon-crawler infernal enfocado en navegación de riesgo térmico, crafting bélico y encuentros con mini-boss industriales.
-  subject_treatment: Enemigos forjadores colosales y mobs de soporte, con telegraphs de ataque por calor y ritmo de martillo.
+  aesthetic: Gramática dungeon-crawler infernal con riesgo térmico, crafting bélico, calor telegráfico y maquinaria ritual.
+  subject_treatment: Transforma el input en enemigo forjador, arma, estación o criatura endurecida por horno; usar telegraphs de calor y ritmo de martillo sin fijar un dungeon.
   color_and_tone: Naranja fundido, negro carbón y reflejos cobrizo-escoria para lectura inmediata de zonas letales.
   lighting_and_shadow: Lava como key dominante, humo denso de fill y pulsos de horno para timing de mecánicas.
   texture_and_material: Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.
-  camera_and_composition: Eje diagonal de puentes, crisoles y plataformas seguras con landmarks de progresión claros.
+  camera_and_composition: Eje diagonal de progresión con crisoles, plataformas seguras y landmarks térmicos como anclas opcionales.
   atmosphere_and_mood: Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.
   rendering_and_quality: Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.
 avoidRules:

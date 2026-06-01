@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Cooperative momentum, ocean stewardship, and optimistic trade energy.
   key_features: Tidal turbine motifs, floating exchange decks, amphibious micro-transit patterning.
   creative_brief: >-
-    Preserve tidal-bioport exchange grammar as a reusable style system:
-    amphibious logistics layering, renewable tidal mechanics, and cooperative
-    exchange flow should remain coherent across subjects without requiring
-    docks, markets, boats, cargo, or a literal harbor.
+    Give the input amphibious civic metabolism: wet bioceramic ribs,
+    tide-powered modular layers, floating exchange bands, and seafoam logistics
+    marks. Docks, boats, cargo, or harbor cues can appear as style anchors, but
+    the transferable language is porous exchange and tidal motion.
 avoidRules: [photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-003.webp }
 attributes:

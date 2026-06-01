@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Heroic, mystery, defined presence, emerging from shadow
   key_features: Halo, glowing outline, edge definition
-  creative_brief: 'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow.'
+  creative_brief: >-
+    Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid
+    depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against
+    shadow. Apply Rim Lighting as a portable cinematic/camera style over any input: preserve its lens behavior, color
+    process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop,
+    brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - flat
 assets:

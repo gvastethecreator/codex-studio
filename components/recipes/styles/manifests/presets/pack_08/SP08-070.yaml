@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Hunger Games ceremonial flame couture, Capitol excess, girl-on-fire moment, tribute-parade spectacle
+  aesthetic: Ceremonial flame couture, Capitol excess, girl-on-fire reference, controlled-combustion spectacle
   form_and_line: Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train
   color_palette: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
   lighting_setup: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
   material_texture: Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile
   render_quality: Dangerous, hot, Cinna-design spectacle, Capitol-television perfection
   spatial_distortion: Burning
-  atmosphere: Powerful, magic, arena-entrance electricity, revolutionary-symbol awe, controlled-combustion beauty
+  atmosphere: Powerful, magic, revolutionary-symbol awe, controlled-combustion beauty
   key_features: Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect
-  creative_brief: Flame tongues licking upward from a hemline that consumes itself and regenerates in the same instant, crimson core glowing through gold-white heat that shimmers the air around the silhouette into mirage. The cape sweeps behind in a conflagration trained to obey couture, synthetic ember fibers scattering light like a controlled supernova, the dress burning without being consumed, a spectacle that walks the line between tribute and revolution.
+  creative_brief: >-
+    Ignite the input with flame-couture behavior: ember trails, heat shimmer,
+    cape-like combustion, synthetic flame fibers, gold-white cores and smoke
+    haze. Keep Girl-on-Fire/Capitol spectacle as style anchor without requiring
+    tribute parade, arena entrance, hemline body or battle narrative.
 avoidRules:
   - cold
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

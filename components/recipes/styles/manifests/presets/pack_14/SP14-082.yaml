@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-082
 packId: pack_14
-name: Eclipse Court Meridian
+name: Eclipse Meridian Verdict
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Ceremonial court activated only during eclipse alignments.
-  form_and_line: Meridian spine, stepped tribunals, and celestial arcs.
+  aesthetic: Eclipse-meridian verdict language with judicial dread and cosmic inevitability.
+  form_and_line: Meridian spine, stepped tribunal cues, and celestial arcs.
   color_palette: Slate black, moon ivory, and blood amber.
   lighting_setup: Eclipse halo and brazier edge highlights.
   material_texture: Engraved basalt, bronze markers, and smoke-worn stone.
   render_quality: Monumental ritual tableau with strict geometry.
-  spatial_distortion: Axis-centered depth toward eclipse altar.
+  spatial_distortion: Axis-centered depth toward an eclipse judgment point.
   atmosphere: Judicial dread and cosmic inevitability.
-  key_features: Meridian obelisk, shadow dial, and omen choir pits.
-  creative_brief: A legal chamber where celestial events trigger sacred verdicts.
+  key_features: Meridian obelisk, shadow dial, omen-choir pit cues.
+  creative_brief: Transform the input through eclipse-meridian verdict geometry, making celestial alignment feel legally binding without requiring a chamber.
 avoidRules: [photoreal, comedic, neon-future, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-082.webp }
 attributes:
   negativePrompt: photoreal, comedic, neon-future, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

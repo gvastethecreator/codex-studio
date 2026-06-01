@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-010
 packId: pack_11
-name: 8-Bit Pixel Art
+name: Indexed Pixel Constraint
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,17 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: 8-bit sprite-art language with strict retro hardware constraints
-  form_and_line: Pixel grid, sharp blocky edges, stair-step diagonals, hard-square corners
-  color_palette: Limited 56 color palette, restricted index, retro-chip saturation, dithered blends
-  lighting_setup: None, flat emission, self-illuminated pixel, screen-native glow
-  material_texture: Large pixels, visible grid cells, CRT phosphor grain, blocky texel surface
-  render_quality: Crisp low-resolution sprite finish with tile-ready readability
-  spatial_distortion: Low resolution abstraction, blocky simplification, tile-based construction, forced grid logic
-  atmosphere: Nostalgic, fun, digital, childhood arcade, joypad romance, pixel-hero quest
-  key_features: Pixel grid alignment, dithering patterns, sprite boundaries, tile-map logic
+  aesthetic: Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline
+  form_and_line: Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours
+  color_palette: Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black separators
+  lighting_setup: Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value bands
+  material_texture: Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness
+  render_quality: Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing
+  spatial_distortion: Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective
+  atmosphere: Playful, constrained, retro-computational, crisp, graphic
+  key_features: Pixel grid alignment, cluster control, ordered dithering, indexed ramps, hard silhouettes, tile-map rhythm
   creative_brief: >-
-    Preserve grid discipline, limited palette logic, and dithering-based shading to define form. Favor strong silhouettes and cluster control so imagery stays authentic to 8-bit constraints across characters, props, and environments.
+    Convert any input into a low-resolution indexed-pixel treatment. The style must come from grid discipline, palette limits, dithering, and silhouette compression, not from specific game scenes, sprites, props, or environments.
 avoidRules:
   - hd
   - vector

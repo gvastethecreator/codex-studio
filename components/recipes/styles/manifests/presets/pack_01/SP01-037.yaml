@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: No detail
   atmosphere: Epic, anonymous
   key_features: Dark subject
-  creative_brief: Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to outline, the subject becoming archetype through the erasure of detail. Anonymity elevated to universality, where what is obscured speaks louder than what is shown.
+  creative_brief: >-
+    Identity reduced to its boldest geometry, a dark monument against a luminous veil. Features surrender to outline,
+    the subject becoming archetype through the erasure of detail. Anonymity elevated to universality, where what is
+    obscured speaks louder than what is shown. Apply this photographic look over any input: preserve lens behavior,
+    exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face,
+    travel scene, landscape, or narrative setup.
 avoidRules:
   - front light
   - detail

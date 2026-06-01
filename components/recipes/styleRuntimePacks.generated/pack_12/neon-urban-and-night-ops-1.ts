@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, lowres, blurry',
     style: {
       aesthetic:
-        'Action RPG ciberpunk neo-noir orientado a infiltración urbana nocturna y lectura táctica por silueta.',
+        'Gramática action-RPG cyberpunk neo-noir con lectura táctica por silueta, neón diegético y tensión de infiltración nocturna.',
       subject_treatment:
-        'Operadores player-class con kit modular legible por rol (assault, recon, tech) y jerarquía visual clara.',
+        'Convierte el input en clase jugable o asset de operación con kit modular, placas funcionales, señales de rol y jerarquía visual clara sin exigir distrito urbano.',
       color_and_tone:
         'Dúo cian-magenta sobre negros aceitosos, con codificación cromática de facción y threat level.',
       lighting_and_shadow:
@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía de baja persistencia tipo HUD-world.',
       camera_and_composition:
-        'Cámara third-person táctica con lanes de navegación, choke points y puntos de cobertura reconocibles.',
+        'Composición third-person táctica con profundidad legible, rutas sugeridas, cobertura abstracta y puntos de interacción reconocibles.',
       atmosphere_and_mood:
         'Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.',
       rendering_and_quality:
@@ -34,9 +34,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, fog-heavy, muddy-contrast',
     style: {
       aesthetic:
-        'Hero shooter de movilidad vertical en entorno urbano denso, orientado a control de altura y rotación rápida.',
+        'Gramática hero-shooter de movilidad vertical con control de altura, rotación rápida y lectura de ruta en movimiento.',
       subject_treatment:
-        'Operadores ligeros con kits parkour/grapple y lectura de hitbox por animación.',
+        'Aplica kits parkour/grapple, silueta ligera y hitbox legible al input cuando corresponda, sin exigir rooftop ni ciudad.',
       color_and_tone:
         'Grises metropolitanos con acentos de equipo saturados para friend-foe clarity.',
       lighting_and_shadow:
@@ -44,7 +44,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hormigón, metal galvanizado, graffiti táctico y vidrio rompible contextual.',
       camera_and_composition:
-        'Perspectiva dinámica con jump lines, rutas de flanqueo y puntos high-ground evidentes.',
+        'Perspectiva dinámica con jump lines, flancos y high-ground abstracto como señal de navegación.',
       atmosphere_and_mood: 'Rítmica, competitiva y técnica, centrada en posicionamiento.',
       rendering_and_quality:
         'PvP readability-first con layout claro de lanes, alturas y líneas de visión.',
@@ -57,9 +57,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, pastel, lowres',
     style: {
       aesthetic:
-        'Beat-em-up urbano neon-noir con combate por oleadas, control de espacio y flow rítmico.',
+        'Gramática beat-em-up neon-noir con combate por oleadas, control de espacio, hit-confirm claro y flow rítmico.',
       subject_treatment:
-        'Gangs estilizadas y protagonistas iconográficos con lectura de rol por postura y arma improvisada.',
+        'Aplica postura de luchador, arma improvisada, rivalidad de facción o silueta de crowd-control al input si corresponde.',
       color_and_tone:
         'Fucsia, verde ácido y grafito para contraste de facción y claridad de impacto.',
       lighting_and_shadow:
@@ -67,7 +67,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hormigón mojado, graffiti táctico, tuberías metálicas y señalética decadente.',
       camera_and_composition:
-        'Side-view clásico con capas activas, entradas laterales y zonas de combo.',
+        'Side-view clásico, capas activas y zonas de combo como lenguaje visual sin exigir underpass.',
       atmosphere_and_mood: 'Energía callejera, agresiva y cadenciosa.',
       rendering_and_quality:
         'Stage-art jugable con legibilidad de hit confirms, crowd control y desplazamiento lateral.',
@@ -80,9 +80,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, daylight, low-detail',
     style: {
       aesthetic:
-        'Stealth-heist portuario nocturno con infiltración modular, extracción silenciosa y rutas de contrabando.',
+        'Gramática stealth-heist nocturna con infiltración modular, extracción silenciosa y rutas clandestinas.',
       subject_treatment:
-        'Smugglers ágiles y guardias mecanizados con lectura clara de patrulla y respuesta.',
+        'Reinterpreta el input como smuggler, guardia, botín, contenedor o dispositivo de patrulla según aplique.',
       color_and_tone:
         'Azul petróleo, naranja sodio y negro profundo para separar cobertura, alarma y sombra útil.',
       lighting_and_shadow:
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.',
       camera_and_composition:
-        'Sightlines cruzadas con rutas altas/bajas, puntos ciegos y nodos de botín.',
+        'Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.',
       atmosphere_and_mood: 'Nerviosa, oportunista y al borde del fallo.',
       rendering_and_quality:
         'Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.',
@@ -103,9 +103,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, cute-style, low-detail',
     style: {
       aesthetic:
-        'Urban-disaster action en puerto metropolitano, enfocado en evacuación dinámica y contención de amenaza colosal.',
+        'Gramática urban-disaster action con evacuación dinámica, amenaza colosal y contención por fases.',
       subject_treatment:
-        'Equipos de rescate y artillería costera por función (evac, suppression, shield).',
+        'Si el input es criatura o máquina, escalarlo a amenaza kaiju; si es personaje/objeto, volverlo equipo evac/suppression/shield o infraestructura de crisis.',
       color_and_tone:
         'Gris tormenta, rojo alarma y cian marino para priorizar riesgo civil y respuesta táctica.',
       lighting_and_shadow:
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.',
       camera_and_composition:
-        'Horizonte dominado por kaiju con corredores de evacuación y puntos de defensa visibles.',
+        'Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.',
       atmosphere_and_mood: 'Abrumadora, urgente y de supervivencia colectiva.',
       rendering_and_quality:
         'Event-scale gameplay key-art con legibilidad de rutas civiles, amenaza y objetivos de contención.',
@@ -126,9 +126,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, medieval, low-detail',
     style: {
       aesthetic:
-        'Urban-action crystalpunk de movilidad masiva, centrado en control de estación, tránsito y seguridad cívica militarizada.',
+        'Gramática urban-action crystalpunk con tránsito masivo, movilidad por capas y seguridad cívica militarizada.',
       subject_treatment:
-        'Siluetas cívico-militares por función de estación (control, mantenimiento, respuesta).',
+        'Convierte el input en silueta cívico-militar, vehículo, estación parcial, señal de control o módulo de mantenimiento.',
       color_and_tone:
         'Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.',
       lighting_and_shadow:
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.',
       camera_and_composition:
-        'Hub radial multi-nivel con vectores de circulación y sightlines tácticas limpias.',
+        'Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.',
       atmosphere_and_mood: 'Ordenada, veloz y con tensión de seguridad contenida.',
       rendering_and_quality:
         'AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.',
@@ -149,16 +149,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, medieval, lowres',
     style: {
       aesthetic:
-        'Mobility-action parkour en megaciudad de carbono, centrado en persecución, momentum y elección de ruta.',
+        'Gramática mobility-action parkour con momentum, persecución, elección de ruta y superficies de carbono.',
       subject_treatment:
-        'Courier rebelde vs drones de caza, con lectura de velocidad y estado de amenaza.',
+        'Reinterpreta el input como courier, drone cazador, ruta, checkpoint o módulo de agarre según aplique.',
       color_and_tone:
         'Negro mate, cian brillante y rojo señal para guiar ruta, peligro y checkpoints.',
       lighting_and_shadow: 'Atardecer urbano con acentos neon orientados a navegación vertical.',
       texture_and_material:
         'Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.',
       camera_and_composition:
-        'Ruta de salto con profundidad vertical, líneas de flujo y alternativas de escape.',
+        'Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.',
       atmosphere_and_mood: 'Cinética, urgente y técnicamente precisa.',
       rendering_and_quality:
         'Mobility scene gameplay-first con legibilidad de trayectorias, riesgo y timing.',
@@ -171,15 +171,15 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, medieval, low-detail',
     style: {
       aesthetic:
-        'Open-world cyberpunk de distrito fluvial, centrado en patrulla urbana, contrabando y control de canales.',
+        'Gramática open-world cyberpunk fluvial con patrulla, contrabando, control de canales y reflejos neon líquidos.',
       subject_treatment:
-        'Patrullas urbanas y mercenarios anfibios con diferenciación por movilidad y equipamiento.',
+        'Reinterpreta el input como patrulla, mercenario anfibio, ruta acuática, POI o objeto de contrabando.',
       color_and_tone: 'Cian, rosa neon y negro profundo para lectura de facción y nivel de alerta.',
       lighting_and_shadow: 'Reflejos líquidos y señalética animada como guía de rutas/POIs.',
       texture_and_material:
         'Acero mojado, madera envejecida, cristal urbano y superficies de atraque.',
       camera_and_composition:
-        'Canales diagonales con puentes altos, rutas múltiples y sightlines de emboscada.',
+        'Diagonales líquidas, rutas múltiples y sightlines de emboscada sin exigir distrito o canal literal.',
       atmosphere_and_mood: 'Elegante, criminalmente tensa y viva.',
       rendering_and_quality:
         'Premium environment gameplay-first con navegación clara por agua y altura.',
@@ -192,9 +192,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, medieval, lowres',
     style: {
       aesthetic:
-        'Urban-insurgency eco-tech en red metropolitana subterránea, orientada a control de estación y guerra de barricadas.',
+        'Gramática urban-insurgency eco-tech con barricadas, control territorial y gear reciclado avanzado.',
       subject_treatment:
-        'Células rebeldes con gear reciclado avanzado y roles de avance, soporte y sabotaje.',
+        'Convierte el input en célula rebelde, barricada, nodo de sabotaje, soporte o avance táctico.',
       color_and_tone:
         'Verde neon, gris hormigón y naranja señal para claridad de facción y objetivo.',
       lighting_and_shadow:
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Musgo artificial, metal urbano, pintura descascarada y estructuras improvisadas.',
       camera_and_composition:
-        'Estación central tomada con barricadas, rutas de flanco y nodos críticos visibles.',
+        'Barricadas, rutas de flanco y nodos críticos visibles sin exigir metro o estación.',
       atmosphere_and_mood: 'Urgente, combativa y esperanzadamente política.',
       rendering_and_quality:
         'Insurgent-faction gameplay art con legibilidad de lanes, puntos de presión y control territorial.',
@@ -215,9 +215,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'watermark, text, logo, heavy-guns, low-detail',
     style: {
       aesthetic:
-        'Stealth-op nocturna de infiltración shinobi, centrada en verticalidad, silencio y ejecución quirúrgica.',
+        'Gramática stealth-op shinobi nocturna con verticalidad, silencio, ejecución quirúrgica y rutas en sombra.',
       subject_treatment:
-        'Siluetas ágiles con movilidad de gancho y roles coordinados de entrada/cobertura/exfil.',
+        'Convierte el input en infiltrador, gancho, ruta, objetivo o cobertura/exfil coordinada según aplique.',
       color_and_tone:
         'Índigo profundo, magenta loto, negro lacado y ámbar de farol para contraste selectivo.',
       lighting_and_shadow:
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Agua espejo, piedra pulida húmeda, seda en movimiento y madera envejecida.',
       camera_and_composition:
-        'Cadenas de puentes curvos, rutas de azotea y oclusión por capas para lectura stealth.',
+        'Rutas elevadas, oclusión por capas y lectura stealth sin exigir puentes, lotus o azoteas.',
       atmosphere_and_mood: 'Tensa, poética y disciplinadamente precisa.',
       rendering_and_quality:
         'Premium stealth gameplay key-art con comunicación limpia de ruta, objetivo y escape.',

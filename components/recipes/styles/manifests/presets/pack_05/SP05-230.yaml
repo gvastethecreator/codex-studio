@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-230
 packId: pack_05
-name: BLAME! - Megastructure Terminal Silence
+name: Terminal Megastructure Silence
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,27 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Megastructure terminal silence, with endless concrete scale, industrial emptiness, and machine civilization beyond meaning.
-  form_and_line: Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes, and severe panel discipline.
+  aesthetic: >-
+    Endless industrial anime silence with recursive concrete, terminal scale, sparse machine light,
+    tiny markers, and civilization beyond meaning
+  form_and_line: >-
+    Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes,
+    and severe panel discipline.
   color_palette: Concrete gray, abyss black, terminal green, cold white, rust shadow, and faint warning red.
   lighting_setup: Sparse industrial glow, distant strip lights, hard underlighting, and huge shadow masses.
   material_texture: Raw concrete, oxidized metal, dust film, scratched panels, cable scars, and cold digital grain.
-  render_quality: High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive architectural precision.
+  render_quality: >-
+    High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive
+    architectural precision.
   spatial_distortion: Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.
   atmosphere: Monumental, empty, lethal, alienated
-  key_features: Recursive architecture, concrete void, terminal scale, tiny markers, industrial silence.
+  key_features: >-
+    Recursive architecture, concrete void, terminal scale, sparse machine light, tiny markers, and
+    industrial silence
   creative_brief: >-
-    Give any prompt terminal megastructure silence: use impossible scale,
-    concrete recursion, tiny markers, and sparse machine light without requiring
-    weapons, corridors, lone figures, or a specific facility.
+    Use BLAME! as style anchor for terminal megastructure silence. Any prompt should become vast,
+    recursive, concrete, sparse, and machine-haunted. Corridors, weapons, lone figures, facilities,
+    and literal megastructure interiors are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +49,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-230.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

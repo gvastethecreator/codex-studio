@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-009
 packId: pack_07
 name: Gothic Revival
-category: 3. Historical And Sacred Architecture
+category: 2. Architectural Movements And Vernaculars
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - historical-and-sacred-architecture
+  - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: Revival gótico de verticalidad devocional, dramatismo pétreo y solemnidad de luz filtrada.
-  form_and_line: Ojivas, nervaduras, tracería compleja, contrafuertes rítmicos y remates ascendentes como lógica gráfica vertical.
-  color_palette: Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal apagado.
-  lighting_setup: Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta reverencia.
+  form_and_line: >-
+    Ojivas, nervaduras, tracería compleja, contrafuertes rítmicos y remates ascendentes como lógica
+    gráfica vertical.
+  color_palette: >-
+    Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal
+    apagado.
+  lighting_setup: >-
+    Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta
+    reverencia.
   material_texture: Caliza tallada, roble envejecido, hierro frío patinado, polvo mineral y latón oscurecido.
   render_quality: Visualización histórico-monumental con fidelidad ornamental y atmósfera sacra precisa.
-  spatial_distortion: Énfasis en elongación vertical, profundidad reverencial y tracción ascendente sin exigir nave o templo literal.
+  spatial_distortion: >-
+    Énfasis en elongación vertical, profundidad reverencial y tracción ascendente sin exigir nave o
+    templo literal.
   atmosphere: Solemne, ancestral, reverencial y dramática.
-  key_features: Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta densidad.
+  key_features: >-
+    Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta
+    densidad.
   creative_brief: >-
-    Mantén una gramática gótica transferible donde verticalidad, piedra tallada
-    y luz de vitral construyan reverencia espacial. Debe funcionar sin caer en
-    clichés narrativos de horror o ruina escénica.
+    Mantén una gramática gótica transferible donde verticalidad, piedra tallada y luz de vitral
+    construyan reverencia espacial. Debe funcionar sin caer en clichés narrativos de horror o ruina
+    escénica.
 avoidRules:
   - modern
   - bright
@@ -36,11 +46,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: historical-and-sacred-architecture
-  categoryName: 3. Historical And Sacred Architecture
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
   tags:
     - architecture-and-interior
-    - historical-and-sacred-architecture
+    - architectural-movements-and-vernaculars
   supportedTasks:
     - image_generate
     - image_edit

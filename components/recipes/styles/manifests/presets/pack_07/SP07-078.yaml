@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-078
 packId: pack_07
-name: Borg Industrial Hive Cube
-category: 1. Residential Interiors
+name: Cybernetic Hive Infrastructure
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
   aesthetic: Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.
-  form_and_line: Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de servicio.
-  color_palette: Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep void-shadow undertones
-  lighting_setup: Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de alto contraste.
+  form_and_line: >-
+    Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de
+    servicio.
+  color_palette: >-
+    Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep
+    void-shadow undertones
+  lighting_setup: >-
+    Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de
+    alto contraste.
   material_texture: Placas greeble densas, interfaces biomecánicas, arneses de cable, gel translúcido y pátina conductiva desgastada.
   render_quality: Tecnoindustrial denso con repetición modular estricta y precisión mecánica opresiva.
   spatial_distortion: None
   atmosphere: Ominosa, deshumanizada y eficiente, con invasividad tecnológica constante.
   key_features: Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.
   creative_brief: >-
-    Construye una gramática reusable de cybernetic-hive donde macroforma
-    cúbica ortogonal, infraestructura saturada de conducciones y sistemas
-    colectivos fosforoverdes sostengan identidad consistente.
+    Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería
+    recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar facción, personaje o nave. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - smooth
 assets:
@@ -34,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

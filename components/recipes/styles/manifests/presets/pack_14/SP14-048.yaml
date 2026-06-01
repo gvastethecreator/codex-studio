@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-048
 packId: pack_14
-name: Olive Crown Tribunal
+name: Olive Crown Jurisprudence
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Aristocratic legal court beneath sacred olive authority.
-  form_and_line: Court rectangle, colonnade rhythm, and stepped benches.
+  aesthetic: Sacred olive jurisprudence with aristocratic restraint and civic ritual gravity.
+  form_and_line: Court-rectangle cues, colonnade rhythm, and stepped bench geometry.
   color_palette: Olive green, stone beige, and bronze patina.
   lighting_setup: Side daylight and smoke-filtered braziers.
   material_texture: Carved marble, olive wood, and linen drapery.
   render_quality: Detailed civic-ritual concept frame.
-  spatial_distortion: Balanced frontal perspective emphasizing hierarchy.
+  spatial_distortion: Balanced frontal perspective emphasizing hierarchy and deliberation.
   atmosphere: Stern deliberation and sacred jurisprudence.
-  key_features: Laurel crown stand, verdict tablets, and votive niches.
-  creative_brief: A Greek tribunal where justice is framed as a pact with the gods.
+  key_features: Laurel crown stand, verdict tablets, votive niche cues.
+  creative_brief: Reinterpret the input through olive-crown jurisprudence, framing justice as a pact with the gods without requiring a tribunal.
 avoidRules: [photoreal, comic, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-048.webp }
 attributes:
   negativePrompt: photoreal, comic, neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

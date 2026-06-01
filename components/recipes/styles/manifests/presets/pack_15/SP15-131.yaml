@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Playful, nostalgic, synthetic, vacant, sweetly strange.
   key_features: Arcade-button rhythm, gradient slab fields, smoked-glass reflections, chrome trim, and poster-like color blocks.
   creative_brief: >-
-    Preserve gradient arcade mirage as a reusable style system: Memphis arcade
-    geometry, obsolete interface gloss, and synthetic nostalgia should apply to
-    any prompt without requiring an arcade, game cabinet, signage, or room.
+    Mirage the input through gradient arcade memory: Memphis diagonals,
+    hot-pink/teal interface gloss, button-circle rhythm, smoked-glass planes,
+    and obsolete-tech nostalgia apply without requiring an arcade, game cabinet,
+    signage, or room.
 avoidRules: [photoreal, grimy-cyberpunk, medieval-fantasy, horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-131.webp }
 attributes:

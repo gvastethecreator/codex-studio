@@ -12,19 +12,23 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar entre humor y duelo.
+  aesthetic: >-
+    Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar
+    entre humor y duelo.
   form_and_line: Contorno limpio y seguro, balance entre rostro y máquina, y linework expresivo funcional.
   color_palette: Steel blue, workwear brown, ember orange, cream, engine red, soot grey
   lighting_setup: Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible.
   material_texture: Grasa mecánica, telas de trabajo, madera usada, metal empolvado y cuero marcado por uso.
   render_quality: Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.
-  spatial_distortion: Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical posing
+  spatial_distortion: >-
+    Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical
+    posing
   atmosphere: Cálida y fuerte, con pragmatismo emocional de equipo.
   key_features: Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.
   creative_brief: >-
-    Construye una gramática reusable de mechanical-warmth donde oficio técnico,
-    vínculo humano y coralidad funcionen como motor visual sin exigir taller,
-    grupo, familia, prótesis, vehículo o escena de acción.
+    Use Hiromu Arakawa as style anchor for mechanical-warmth ensemble grammar. Any prompt should
+    combine legible craft, practical engineering, tonal humor/grief, and humanist warmth. Workshops,
+    groups, families, prosthetics, vehicles, and action scenes are optional.
 avoidRules:
   - sterile machine render
   - cold villainous armor
@@ -36,7 +40,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-341.webp
 attributes:
-  negativePrompt: sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone
+  negativePrompt: >-
+    sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat
+    generic workshop, weak mechanical detail, cynical grimdark tone
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -22,7 +22,11 @@ visualDna:
   atmosphere: Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity
   key_features: Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail
   creative_brief: >-
-    Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative.
+    Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep
+    insect-scale detail highly resolved and scientifically coherent without tying to one species narrative. Apply Insect
+    Eye as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and
+    signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
+    product shot, or scene template.
 avoidRules:
   - human eye
 assets:

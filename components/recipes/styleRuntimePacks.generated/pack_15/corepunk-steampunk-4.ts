@@ -25,7 +25,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Aether-crane motifs, pressure gauges, civic airship cues, and cooperative labor rhythm.',
       creative_brief:
-        'Preserve brass aether-dockyard grammar as a reusable style language: pressure-era civic logistics, riveted artisanal machinery, and cooperative labor rhythm should remain stable across subjects without requiring a port, airships, crews, cranes, or a literal dockyard.',
+        'Reforge the input as optimistic pressure-era logistics: riveted brass arcs, aether-mast verticals, vapor beams, gauges, and cooperative machine rhythm. Ports, airships, crews, cranes, or dockyards can act as anchors, while the core style remains artisanal machinery and civic pressure flow. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -52,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Brass lens halos, herbarium vein patterning, pressure-gauge filigree, vellum labels as abstract marks, and living-machine tenderness.',
       creative_brief:
-        'Preserve steam herbarium optics as a reusable style system: botanical classification, brass magnification, and delicate pressure-era instrument logic should transform any subject without requiring plants, lab props, or a literal observatory.',
+        'Classify the input through steam herbarium optics: brass lens halos, fern-green caustics, vellum fiber grids, pressure-gauge filigree, and delicate botanical vein logic transform any subject without requiring plants, lab props, or a literal observatory.',
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Lace valve geometry, porcelain-mechanism contrast, spring-loop halos, pressure dial motifs, and soft steam veils.',
       creative_brief:
-        'Preserve pressure lace automata as a reusable style system: refined pneumatic ornament, porcelain softness, and lace-like brass mechanics should apply to any subject without requiring dolls, salons, servants, or machines.',
+        'Ornament the input with pressure lace automata: porcelain softness, rose-brass valve filigree, spring-loop halos, cloudy gauges, and steam-veiled hinge seams apply refined pneumatic tenderness without requiring dolls, salons, servants, or literal machines.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

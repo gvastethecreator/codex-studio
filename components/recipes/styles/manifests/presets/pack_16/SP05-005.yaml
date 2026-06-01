@@ -24,8 +24,10 @@ visualDna:
   creative_brief: >-
     Define una gramática reusable de grounded-tactical-machinery para cualquier
     sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso
-    logístico sin imponer mechas, vehículos, frentes de guerra, escuadras,
-    mapas ni campo de batalla.
+    logístico. Si el input admite transformación mecánica, puede volverse mecha,
+    vehículo táctico o hardware operativo; si no, debe recibir placas, marcas de
+    mantenimiento y peso logístico sin fijar frente de guerra, escuadra, mapa ni
+    campo de batalla.
 avoidRules:
   - realistic
   - 3d render

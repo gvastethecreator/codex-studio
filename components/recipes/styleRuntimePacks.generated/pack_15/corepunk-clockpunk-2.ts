@@ -25,7 +25,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Public gear-library motifs, escapement nodework, cooperative chronometer-forge rhythm, and canopy clockwork cues.',
       creative_brief:
-        'Preserve circular maker-courtyard grammar as a reusable style language: radial precision-work choreography, visible clockwork governance, and communal repair culture should remain stable across subjects without requiring a workshop, courtyard, benches, or clock tower.',
+        'Rebuild the input as civic clockwork craft: radial escapement geometry, brass timing nodes, oil-dark leather touchpoints, and cooperative repair rhythm. Workshops, courtyards, benches, or clock towers are optional anchors; the style is patient public mechanics and precise communal ingenuity.',
     },
   },
   {
@@ -40,13 +40,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Brass gold, emerald, and cream.',
       lighting_setup: 'Sunlight filtered through clockwork glass.',
       material_texture: 'Filigree metal, cut glass, and polished wood.',
-      render_quality: 'Delicate conceptual illustration with rich decorative detail.',
+      render_quality:
+        'Delicate ornamental render with rich decorative detail and clockwork-botanical readability.',
       spatial_distortion: 'Circular growth rings around a timer-axis focal point.',
       atmosphere: 'Patient elegance and mechanical gentleness.',
       key_features:
         'Clock vines, pendulum sprinkler motifs, gear-petal blooms, and time-wound growth patterns.',
       creative_brief:
-        'Preserve gilded gear-conservatory grammar as a reusable style system: ornamental horological botany, brass filigree growth mechanics, and patient eco-temporal elegance should remain coherent across subjects.',
+        'Wind the input into gilded horological botany: brass ribs, gear-petal blooms, emerald clock vines, pendulum sprinkler marks, and filtered clockwork glass make any subject feel patiently grown by mechanism.',
     },
   },
   {
@@ -62,13 +63,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Champagne gold, burgundy, and midnight blue.',
       lighting_setup: 'Crystal chandeliers and reflected metal glints.',
       material_texture: 'Velvet, brass, marble, and smoked glass.',
-      render_quality: 'Luxurious interior concept with strong symmetry.',
+      render_quality:
+        'Luxurious kinetic render with strong symmetry and pendulum-governed composition.',
       spatial_distortion: 'Rotational composition around a central timekeeping axis.',
       atmosphere: 'Ceremonial motion and elegant precision.',
       key_features:
         'Pendulum columns, timer-balcony bands, waltz automata silhouettes, and brass etiquette markers.',
       creative_brief:
-        'Preserve pendulum court-ballroom grammar as a reusable style system: ceremonial kinetic symmetry, pendulum-governed choreography, and luxurious mechanical etiquette should remain coherent across subjects.',
+        'Choreograph the input with pendulum court etiquette: champagne brass arcs, burgundy velvet shadows, hanging weight rhythms, waltz spirals, and gear chandelier glints make any subject feel ceremonial, kinetic, and precise.',
     },
   },
   {
@@ -84,12 +86,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Brass, slate, and pale teal.',
       lighting_setup: 'Warm lamp pools and reflected dial highlights.',
       material_texture: 'Burnished metal, carved stone, and oiled leather.',
-      render_quality: 'Precision-rich conceptual corridor scene.',
+      render_quality: 'Precision-rich navigational render with layered instrument depth.',
       spatial_distortion: 'Long axis perspective through layered dials and pointer shadows.',
       atmosphere: 'Measured movement and navigational discipline.',
       key_features: 'Direction dials, time markers, astrolabe rings, and route brasswork.',
       creative_brief:
-        'Preserve brass astrolabe-passage grammar as a reusable style system: navigational-instrument corridor rhythm, calibrated directional ritual, and measured transit discipline should remain coherent across subjects.',
+        'Navigate the input through brass astrolabe logic: rotating dial rings, pointer arches, teal route glows, burnished metal apertures, and measured axis shadows turn any subject into calibrated direction ritual.',
     },
   },
   {
@@ -104,13 +106,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Sea blue, brass, and storm gray.',
       lighting_setup: 'Dawn reflection and beacon lamp rows.',
       material_texture: 'Weathered wood, riveted brass, and stone quays.',
-      render_quality: 'Strong worldbuilding with maritime clarity.',
+      render_quality:
+        'Strong maritime-clockwork render with beacon clarity and schedule-control motifs.',
       spatial_distortion: 'Harbor-like depth leading to a central timekeeping axis.',
       atmosphere: 'Order, signal discipline, and civic tide control.',
       key_features:
         'Tide clocks, signal-crane motifs, quay pendulums, and brass waterline markers.',
       creative_brief:
-        'Preserve timekeeper harbor grammar as a reusable style system: maritime schedule governance, tidal signal control machinery, and beacon-led civic coordination should remain coherent across subjects.',
+        'Tide-lock the input into maritime clockpunk order: brass waterline markers, pendulum masts, crane-arm arcs, sea-blue timing bands, and beacon rows make any subject feel governed by signals, tides, and civic schedule.',
     },
   },
   {
@@ -126,14 +129,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Walnut, brass, and deep green.',
       lighting_setup: 'Warm shop lamps and reflected glass sparkle.',
       material_texture: 'Polished brass, timber, leather, and felt pads.',
-      render_quality: 'Detail-rich street concept with tiny mechanical cues.',
+      render_quality: 'Detail-rich micro-mechanical render with intimate repair-craft cues.',
       spatial_distortion:
         'Tight alley-like perspective with repeating facade bands and tool-grid depth.',
       atmosphere: 'Craft pride, quiet focus, and intimate scale.',
       key_features:
         'Watchmaker tool grids, tool-clock motifs, repair-node silhouettes, and pocketwatch filigree.',
       creative_brief:
-        'Preserve pocketwatch workshop-row grammar as a reusable style system: intimate micro-mechanics craftsmanship, dense storefront repair culture, and quiet precision pride should remain coherent across subjects.',
+        'Miniaturize the input into pocketwatch craft: walnut bands, brass filigree, display-grid windows, felt-pad shadows, repair-node silhouettes, and tiny tool-clock motifs make any subject feel precise, intimate, and hand-serviced.',
     },
   },
   {
@@ -149,13 +152,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Stone ivory, brass, and sky blue.',
       lighting_setup: 'Direct solar shafts with clock-shadow precision.',
       material_texture: 'Carved limestone, gilded bronze, and linen drape.',
-      render_quality: 'Formal public architecture with symbolic clarity.',
+      render_quality:
+        'Formal civic-clockwork render with symbolic clarity and solar-shadow precision.',
       spatial_distortion: 'Axial symmetry toward a governance-like timekeeping focal point.',
       atmosphere: 'Deliberation, accountability, and measured power.',
       key_features:
         'Sundial court geometry, vote-lever motifs, council meters, and brass noon lines.',
       creative_brief:
-        'Preserve sundial government-steps grammar as a reusable style system: solar-calibrated civic authority, axial deliberative architecture, and measured public accountability should remain coherent across subjects.',
+        'Measure the input through sundial governance: stone-ivory terraces, brass noon lines, sky-blue solar shafts, vote-lever motifs, and axial clock-shadow geometry make any subject feel accountable, deliberative, and public.',
     },
   },
   {
@@ -171,13 +175,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Burgundy, brass, and black.',
       lighting_setup: 'Stage spotlights and chandelier shimmer.',
       material_texture: 'Velvet curtains, brass instruments, and polished wood.',
-      render_quality: 'Theatrical concept with dramatic focus control.',
+      render_quality:
+        'Theatrical rhythmic render with dramatic focus control and visible tempo machinery.',
       spatial_distortion: 'Stage-front-like perspective into layered rhythm tiers.',
       atmosphere: 'Celebratory precision and musical elegance.',
       key_features:
         'Gear organs, tempo wheels, clockwork rig silhouettes, and brass acoustic fins.',
       creative_brief:
-        'Preserve gearsong theater grammar as a reusable style system: orchestral timing machinery, proscenium gear dramaturgy, and celebratory mechanical musicality should remain coherent across subjects.',
+        'Score the input with gearsong mechanics: burgundy stage shadows, brass acoustic fins, tempo-wheel repeats, proscenium gear arcs, and spotlighted rig silhouettes make any subject feel musical, timed, and celebratory.',
     },
   },
   {
@@ -193,13 +198,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Brass, midnight blue, and ivory.',
       lighting_setup: 'Clear night sky and internal dial glow.',
       material_texture: 'Bronze metal, stone steps, and glass domes.',
-      render_quality: 'Scientific concept art with delicate machinery detail.',
+      render_quality:
+        'Scientific clockwork render with delicate machinery detail and celestial calibration cues.',
       spatial_distortion: 'Stepped upward composition toward a dome-center instrument axis.',
       atmosphere: 'Curiosity, patience, and astronomical order.',
       key_features:
         'Dial telescopes, time-map grids, stargear platforms, and brass calibration marks.',
       creative_brief:
-        'Preserve brass observatory-steps grammar as a reusable style system: stepped astronomical instrumentation, dial-driven sky analysis, and patient celestial order should remain coherent across subjects.',
+        'Aim the input toward brass celestial order: ringed step bands, midnight-blue dome curves, dial telescope booms, ivory calibration marks, and internal stargear glow make any subject feel patiently astronomical.',
     },
   },
   {
@@ -215,13 +221,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Teal water, brass, and stone gray.',
       lighting_setup: 'Reflected water shimmer and warm lock lamps.',
       material_texture: 'Weathered brass, wet stone, and timber lock arms.',
-      render_quality: 'Infrastructure concept with strong water motion cues.',
+      render_quality:
+        'Hydraulic clockwork render with strong water motion cues and ornate flow control.',
       spatial_distortion: 'Waterway-like depth with alternating lock-chamber rhythm.',
       atmosphere: 'Measured flow and engineered adaptability.',
       key_features:
         'Canal-lock motifs, gear sluices, maintenance dock marks, and calibrated waterlines.',
       creative_brief:
-        'Preserve brass canal-locks grammar as a reusable style system: hydraulic timing governance, alternating sluice choreography, and ceremonial flow precision should remain coherent across subjects.',
+        'Regulate the input with brass canal-lock flow: teal water bands, sluice gear housings, calibrated waterlines, wet stone texture, and alternating chamber rhythm make any subject feel measured, adaptive, and hydraulically precise.',
     },
   },
   {
@@ -236,13 +243,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Copper, cream, and forest green.',
       lighting_setup: 'Warm arcade lights and reflected dial faces.',
       material_texture: 'Enamel plates, brass, and varnished timber.',
-      render_quality: 'Playful yet refined concept art.',
+      render_quality:
+        'Playful refined render with oversized timewheel logic and public spectacle cues.',
       spatial_distortion: 'Rotational composition around giant wheel logic.',
       atmosphere: 'Social motion and measured delight.',
       key_features:
         'Timewheel motifs, ticket-counter blocks, gear carnival shapes, and brass spoke halos.',
       creative_brief:
-        'Preserve timewheel arcade grammar as a reusable style system: rotational public amusement engineering, dial-and-ticket ritual rhythm, and measured social delight should remain coherent across subjects.',
+        'Spin the input through timewheel public delight: copper spoke halos, cream arcade portals, forest-green enamel plates, dial-kiosk blocks, and carnival gear loops make any subject feel rotational, social, and measured.',
     },
   },
   {
@@ -258,13 +266,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Honey wood, brass, and pale blue.',
       lighting_setup: 'Late afternoon light and warm window glows.',
       material_texture: 'Painted plaster, brass hardware, and woven awnings.',
-      render_quality: 'Domestic future concept with meticulous detail.',
+      render_quality: 'Domestic horological render with meticulous detail and intimate craft cues.',
       spatial_distortion: 'Terraced slope perspective with nested domestic-front rhythms.',
       atmosphere: 'Domestic care and mechanical intimacy.',
       key_features:
         'Balcony clock motifs, repair-bench grids, window chimes, and pocketwatch rail patterns.',
       creative_brief:
-        "Preserve clockmaker's terrace grammar as a reusable style system: domestic horological craft intimacy, staggered balcony atelier patterns, and tuned household precision should remain coherent across subjects.",
+        'Domesticize the input as clockmaker intimacy: honey-wood bands, brass pocketwatch rails, pale-blue atelier windows, woven awning shadows, and repair-bench grids make any subject feel tuned, cared for, and precise.',
     },
   },
   {
@@ -279,14 +287,15 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Ivory, brass, and schoolhouse green.',
       lighting_setup: 'Clean daylight and model-room spotlights.',
       material_texture: 'Chalkboards, brass models, and polished desks.',
-      render_quality: 'Warm institutional concept with educational clarity.',
+      render_quality:
+        'Warm educational render with tactile mechanism clarity and apprenticeship cues.',
       spatial_distortion:
         'Learning-axis composition centered on clock geometry and mechanism diagrams.',
       atmosphere: 'Curiosity, discipline, and apprenticeship pride.',
       key_features:
         'Gear lesson motifs, demonstration clocks, maintenance grids, and brass lesson panels.',
       creative_brief:
-        'Preserve gearwork schoolhouse grammar as a reusable style system: tactile apprenticeship pedagogy, model-driven institutional clarity, and disciplined curiosity culture should remain coherent across subjects.',
+        'Teach the input through gearwork apprenticeship: ivory lesson panels, brass model diagrams, schoolhouse-green grids, chalk mechanism marks, and hands-on timing towers make any subject feel curious, disciplined, and learnable.',
     },
   },
   {
@@ -301,12 +310,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Brick red, brass, and smoke blue.',
       lighting_setup: 'Signal lamps and overcast platform glow.',
       material_texture: 'Riveted steel, polished brass, and soot-stained stone.',
-      render_quality: 'Transport concept with strong directional cues.',
+      render_quality:
+        'Transport-signal render with strong directional cues and semaphore timing authority.',
       spatial_distortion: 'Track-side-like perspective toward a signal tower axis.',
       atmosphere: 'Coordination, urgency, and precise movement.',
       key_features: 'Semaphore arms, signal clocks, route levers, and brass rail-time markers.',
       creative_brief:
-        'Preserve gilded railway signal-house grammar as a reusable style system: semaphore-forest coordination, route-lever timing authority, and platform urgency discipline should remain coherent across subjects.',
+        'Signal the input with gilded railway urgency: brick-red planes, brass semaphore arms, route-lever diagonals, smoke-blue platform glow, and rail-time markers make any subject feel coordinated, urgent, and precisely routed.',
     },
   },
   {
@@ -321,13 +331,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Ivory, bronze, and deep sapphire.',
       lighting_setup: 'Stained-glass sunlight and lantern pools.',
       material_texture: 'Carved stone, brass fittings, and polished wood.',
-      render_quality: 'Monumental sacred-mechanical concept.',
+      render_quality: 'Monumental sacred-mechanical render with devotional gear symbolism.',
       spatial_distortion: 'Nave-like depth toward a central gear altar axis.',
       atmosphere: 'Reverence, precision, and ceremonial awe.',
       key_features:
         'Gear altar motifs, time reliquary shapes, clock choir bands, and sacred brass cog halos.',
       creative_brief:
-        'Preserve cog cathedral-annex grammar as a reusable style system: sacred-mechanical monumentality, gear-liturgical symbolism, and ceremonial engineering reverence should remain coherent across subjects.',
+        'Consecrate the input as sacred clockwork: ivory vault ribs, bronze cog halos, sapphire nave shadows, time-reliquary shapes, and stained-glass gear light make any subject feel devotional, engineered, and monumental.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

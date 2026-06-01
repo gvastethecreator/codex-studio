@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Flipping
   atmosphere: Party, flashy
   key_features: Scale pattern
-  creative_brief: Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event.
+  creative_brief: >-
+    Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between
+    two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should
+    catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of
+    unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map
+    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - matte fabric
 assets:

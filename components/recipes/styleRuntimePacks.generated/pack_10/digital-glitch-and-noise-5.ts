@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, digital',
       key_features: 'I-Frame destruction',
       creative_brief:
-        'Frames bleed into each other, the boundary between moments liquefied by algorithmic failure. Pixels that were supposed to forget instead dissolve forward, a haunting of movement trapped between keyframes.',
+        'Apply datamosh failure to the input: inter-frame smears, motion-block bleed, codec ghosts, and liquefied temporal edges should corrupt subject movement or contours while retaining enough identity to read the prompt.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dizzy, intense',
       key_features: 'Edge fringe',
       creative_brief:
-        'Light splits at the edges, red and cyan pulling apart like a color divorced from itself. The error becomes the aesthetic, a deliberate wound in optics that makes the image vibrate with wrongness.',
+        'Apply chromatic-aberration optics to the input: red/cyan edge separation, lens-fringe vibration, slight focus mismatch, and prism-like contour drift should energize forms without turning the image into random blur.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dystopian, aesthetic',
       key_features: 'Vertical sort',
       creative_brief:
-        'The image unravels along luminance gradients, bright pixels dragged across the frame like a comb through wet paint. Digital entropy made visible, a glitch that reveals the hidden architecture of seeing.',
+        'Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions, directional digital smears, and broken raster order should pull any subject into controlled glitch abstraction.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Cyber, code',
       key_features: 'Grid alignment',
       creative_brief:
-        'Language turned to light, letters and symbols pressed into service as pixels of meaning. The image whispers in monospace, a cathedral built from the alphabet of machines.',
+        'Apply ASCII-art conversion to the input: monospace symbol density, character-cell shading, terminal contrast, and typographic pixel logic should rebuild forms without requiring readable words or UI.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Funny, trashy',
       key_features: '8x8 blocks',
       creative_brief:
-        'Compression as aesthetic, the image eaten by its own efficiency and regurgitated in blocks. What was lost becomes the point, degradation a deliberate fingerprint of digital decay.',
+        'Apply JPEG degradation to the input: block artifacts, ringing halos, chroma-subsampling mush, macroblock banding, and lossy edge damage should make any subject feel compressed until failure becomes style.',
     },
   },
   {
@@ -104,7 +104,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Digital Glitch & Noise',
     negativePrompt: 'camera photo',
     style: {
-      aesthetic: 'Object on flatbed scanner',
+      aesthetic: 'Flatbed scanner distortion',
       form_and_line: 'Distorted motion',
       color_palette: 'High contrast, dark background',
       lighting_setup: 'Moving light bar',
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Eerie, surreal',
       key_features: 'Black background',
       creative_brief:
-        'The scanner sees with a light that erases depth, pressing objects flat against glass like botanical specimens from a digital herbarium. Shadows bloom where three dimensions once lived.',
+        'Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an eerie abstraction without requiring a specimen layout.',
     },
   },
   {
@@ -131,9 +131,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Retro, lo-fi',
       spatial_distortion: 'Tracking error',
       atmosphere: 'Nostalgic, horror',
-      key_features: 'Time stamp',
+      key_features: 'Tracking scars',
       creative_brief:
-        'Magnetic memory in decay, the tape struggling to reconstruct what it once held. Scanlines rip through faces, color bleeds sideways, and the machine aches with the burden of analog forgetting.',
+        'Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Retro, tech',
       key_features: 'Scanlines',
       creative_brief:
-        "Phosphor glow at intimate distance, the grid of red-green-blue that built a generation's dreams. Scanlines hum their horizontal song, each pixel a tiny window into a warmer, heavier light.",
+        'Apply CRT phosphor display logic to the input: RGB triad texture, scanline hum, curved-glass bloom, warm electronic glow, and slight convergence errors should make any subject feel emitted by an old monitor.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Retro, graphic',
       key_features: 'Rosette pattern',
       creative_brief:
-        'Images dissolve into the language of print, cyan and magenta dots dancing at angles that trick the eye into seeing continuity. The press reveals its secret: everything solid is just a constellation of circles.',
+        'Apply halftone print logic to the input: angled dot screens, CMYK rosette texture, size-modulated circles, and press-like color separation should make forms resolve from printed particles.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Retro, binary',
       key_features: 'Atkinson dither',
       creative_brief:
-        'Every pixel faced with a binary ultimatum: black or white, nothing in between. The illusion of gray emerges from the arrangement of absolutes, decisions scattered like seeds across the canvas.',
+        'Apply one-bit dithering to the input: black-white thresholds, ordered or error-diffused pixel patterns, harsh quantization, and optical gray made from binary marks should keep the subject readable at low fidelity.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

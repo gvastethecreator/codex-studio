@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Simplified
   atmosphere: Playful
   key_features: Depth layers
-  creative_brief: Layers of digital paper float at different depths, drop shadows creating the illusion of physicality in a world made of zeroes. The cuts are too perfect, the edges too clean, but the conceit charms through commitment to its own fiction. The image feels like a craft project rendered by a machine that wishes it had hands.
+  creative_brief: >-
+    Apply digital paper-cutout style to any input: layered flat paper planes,
+    clean cut edges, soft drop shadows, staged depth, and machine-perfect craft
+    illusion. Keep handmade charm simulated digitally without requiring greeting
+    cards, landscapes, characters, or tabletop craft scenes.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

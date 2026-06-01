@@ -4,8 +4,14 @@ packId: pack_15
 name: Brass Cinema Esplanade
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Decopunk cinema ritual where brass, velvet, and mass attention become a projection machine.
   form_and_line: Marquee facade stacks, fan-ray canopies, layered bands, vertical tower reveals, and blank poster-window grids.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Stylish spectacle, civic glamour, social ritual, and the machinery of attention.
   key_features: Cinema-palace silhouettes, radio-form details, lit deco towers, fan-shaped canopies, and glowing blank vitrines.
   creative_brief: >-
-    Preserve brass cinema-esplanade grammar as a reusable style system:
-    marquee-ritual nightlife choreography, brass-and-velvet spectacle, and
-    wet nocturnal projection culture should remain coherent across subjects.
-avoidRules: [photoreal, medieval, cyberpunk-grit, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-050.webp }
+    Project the input as decopunk attention machinery: brass rails, ruby pulses, velvet banners, blank glowing vitrines,
+    fan canopies, and wet marquee reflections should turn viewing into ritual. Cinema or esplanade cues can appear, but
+    the style is nocturnal spectacle and social focus. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - medieval
+  - cyberpunk-grit
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-050.webp
 attributes:
   negativePrompt: photoreal, medieval, cyberpunk-grit, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

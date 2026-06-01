@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Symmetrical
   atmosphere: Scientific, orderly
   key_features: Mandala
-  creative_brief: Frequency made visible, sand arranging itself into the fingerprint of a note. Sound becomes architect, geometry the frozen echo of vibration seeking rest.
+  creative_brief: >-
+    Apply cymatic vibration to the input: radial frequency nodes, sand-like
+    particle ridges, resonance rings, and frozen sound-wave geometry should make
+    any subject feel organized by invisible audio pressure.
 avoidRules:
   - random
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

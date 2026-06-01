@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-051
 packId: pack_14
-name: Laurel Academy Citadel
+name: Laurel Academy Governance
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Scholarly fortress where philosophy and prophecy co-train leaders.
-  form_and_line: Courtyard cloisters, lecture tiers, and battlement edges.
+  aesthetic: Laurel academy governance where philosophy, prophecy, and leadership discipline shape the input.
+  form_and_line: Courtyard cloister cues, lecture tiers, and battlement edges.
   color_palette: Chalk white, olive, and warm terracotta.
   lighting_setup: Soft daylight and torch-lit arcades at dusk.
   material_texture: Plaster walls, scroll parchment, and carved wood desks.
   render_quality: Detailed architectural concept with narrative hints.
-  spatial_distortion: Central courtyard framing with academic wings receding.
+  spatial_distortion: Central courtyard-like framing with academic wings receding.
   atmosphere: Intellectual rigor and political gravity.
-  key_features: Debate rotunda, omen observatory, and laurel archive halls.
-  creative_brief: A Greek citadel where governance is taught as mythic responsibility.
+  key_features: Debate rotunda cues, omen observatory marks, laurel archive rhythms.
+  creative_brief: Apply laurel academy governance to the input, teaching authority as mythic responsibility without requiring a citadel.
 avoidRules: [photoreal, cartoon, neon-tech, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-051.webp }
 attributes:
   negativePrompt: photoreal, cartoon, neon-tech, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

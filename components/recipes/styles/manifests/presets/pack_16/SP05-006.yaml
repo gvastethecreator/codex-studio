@@ -24,8 +24,9 @@ visualDna:
   creative_brief: >-
     Diseña una gramática reusable de pop-transformable-aerial-spectacle para
     cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción
-    de directo sin imponer idols, mechas, escenarios, conciertos, cockpits,
-    aeronaves ni combate.
+    de directo. Puede convertir el input en ícono transformable, mecha pop o
+    nave-espectáculo si refuerza el estilo; evita fijar idol, escenario,
+    concierto, cockpit, aeronave literal o combate.
 avoidRules:
   - realistic
   - 3d render

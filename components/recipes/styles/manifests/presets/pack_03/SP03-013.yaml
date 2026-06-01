@@ -17,11 +17,15 @@ visualDna:
   color_palette: Glowing from inside, warm subsurface hues
   lighting_setup: Backlit, rim-penetration
   material_texture: Waxy, organic, light-permeable
-  render_quality: Realistic organic, portrait-grade
+  render_quality: Realistic organic material, portrait-grade softness when relevant
   spatial_distortion: Soft edges
   atmosphere: Soft, organic, life-like warmth
   key_features: Inner glow
-  creative_brief: Light does not stop at the surface — it enters, scatters, and emerges somewhere unexpected, carrying the warm blush of interior depths. Backlit edges glow like candlelight through alabaster, and the material reads as something alive, breathing warmth from within. The image feels like holding jade up to the sun or watching sunlight pass through a child's ear.
+  creative_brief: >-
+    Give the input subsurface scattering: light penetration, warm internal
+    bounce, wax/jade/alabaster softness, backlit rim glow and organic depth.
+    Keep life-like warmth without requiring skin, portrait framing, a child's
+    ear or a biological subject.
 avoidRules:
   - hard
   - plastic

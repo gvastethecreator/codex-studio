@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-112
 packId: pack_14
-name: Veiled Grimoire Salon
+name: Veiled Grimoire Secrecy
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Salon for reading forbidden books behind veils and screens.
-  form_and_line: Layered curtains, semicircle reading nooks, and hidden book stands.
+  aesthetic: Forbidden grimoire secrecy filtered through veils, coded margins, and intimate noir mystery.
+  form_and_line: Layered curtains, semicircle sightlines, and hidden book-stand cues.
   color_palette: Ink blue, velvet burgundy, and parchment gold.
   lighting_setup: Desk lamps through gauze veils and candle reflections.
   material_texture: Suede, paper grain, brass clasps, and gauze fabric.
-  render_quality: Premium interior illustration with intimate mystery.
-  spatial_distortion: Curved salon plan with veiled sightlines.
+  render_quality: Premium mythic illustration with intimate mystery.
+  spatial_distortion: Curved veiled sightlines that partially conceal and reveal the input.
   atmosphere: Curiosity, privacy, and sealed knowledge.
-  key_features: Veiled shelves, coded margins, and ritual reading desks.
-  creative_brief: A ritual salon where forbidden texts are read through layers of secrecy.
+  key_features: Veiled shelf cues, coded margins, ritual reading surfaces.
+  creative_brief: Reframe the input through veiled grimoire secrecy, using forbidden-book cues and gauze layers without requiring a salon or readable text.
 avoidRules: [photoreal, action-chaos, neon, watermark, text, logo, messy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-112.webp }
 attributes:
   negativePrompt: photoreal, action-chaos, neon, watermark, text, logo, messy
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

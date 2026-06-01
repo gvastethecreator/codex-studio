@@ -12,14 +12,14 @@ visualDna:
   color_palette: Honey wood, brass, and pale blue.
   lighting_setup: Late afternoon light and warm window glows.
   material_texture: Painted plaster, brass hardware, and woven awnings.
-  render_quality: Domestic future concept with meticulous detail.
+  render_quality: Domestic horological render with meticulous detail and intimate craft cues.
   spatial_distortion: Terraced slope perspective with nested domestic-front rhythms.
   atmosphere: Domestic care and mechanical intimacy.
   key_features: Balcony clock motifs, repair-bench grids, window chimes, and pocketwatch rail patterns.
   creative_brief: >-
-    Preserve clockmaker's terrace grammar as a reusable style system:
-    domestic horological craft intimacy, staggered balcony atelier patterns,
-    and tuned household precision should remain coherent across subjects.
+    Domesticize the input as clockmaker intimacy: honey-wood bands, brass
+    pocketwatch rails, pale-blue atelier windows, woven awning shadows, and
+    repair-bench grids make any subject feel tuned, cared for, and precise.
 avoidRules: [photoreal, cyberpunk, ruin-punk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-095.webp }
 attributes:

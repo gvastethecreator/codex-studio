@@ -12,15 +12,20 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Sunbeams through window/trees
+  aesthetic: Volumetric light-shaft rendering
   form_and_line: Shafts of light
   color_palette: Warm or Cool beams, gradient shafts
   lighting_setup: Directional, atmosphere-piercing
   material_texture: Dust motes, particulate volume
-  render_quality: Epic, spiritual, cathedral grandeur
+  render_quality: Epic volumetric scattering, spiritual scale
   atmosphere: Hopeful, grand, transcendent awe
   key_features: Light beams, atmospheric scattering
-  creative_brief: Sunlight finds its architecture — shafts of brilliance pour through windows or forest canopy, illuminating dust motes suspended like slow-motion snow in the column of radiance. Atmospheric scattering gives the beam volume, gradient warmth or coolness defining the time of day and the mood of the space. The image reaches for cathedral grandeur, spiritual awe rendered as particulate physics, light made solid enough to walk through.
+  creative_brief: >-
+    Add volumetric light shafts to the input: directional beams, dust motes, particulate scattering and warm/cool
+    gradient columns that make air visible. Keep spiritual scale without forcing windows, trees, cathedral space or
+    forest canopy. Apply God Rays as a portable 3D/render style system over any input: preserve its renderer logic,
+    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
+    vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - clear
   - sharp

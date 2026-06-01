@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-112
 packId: pack_13
-name: Graffiti-Wall Anime
+name: Spray-Drip Wildstyle Anime
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Graffiti-anime fusion with spray-paint texture, wildstyle rhythm, rough-surface tactility, drip energy, overspray halos, and rebellious mural-motion
-  form_and_line: Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines, fat-cap-thick-to-skinny-cap-thin transitions, overspray-soft-halos
-  color_palette: Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange, buff-paint-coverup-beige, chrome-silver-highlights, throw-up-fill-colors
-  lighting_setup: Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light catching
-  material_texture: Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain, buff-paint-roller-texture, rust-stain-mineral-deposits, drip-trail-gloss
-  render_quality: Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell hybrid, vandalism-as-beauty philosophy
-  spatial_distortion: Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture integrates into design without fixed background dependence
+  aesthetic: >-
+    Spray-drip anime fusion with wildstyle rhythm, overspray halos, rough substrate tactility,
+    stencil edges, and rebellious mural-scale motion
+  form_and_line: >-
+    Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines,
+    fat-cap-thick-to-skinny-cap-thin transitions, overspray-soft-halos
+  color_palette: >-
+    Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange,
+    buff-paint-coverup-beige, chrome-silver-highlights, throw-up-fill-colors
+  lighting_setup: >-
+    Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light
+    catching
+  material_texture: >-
+    Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain,
+    buff-paint-roller-texture, rust-stain-mineral-deposits, drip-trail-gloss
+  render_quality: >-
+    Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell
+    hybrid, vandalism-as-beauty philosophy
+  spatial_distortion: >-
+    Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture
+    integrates into design without fixed background dependence
   atmosphere: Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing
-  key_features: Spray-paint drips, stencil-edge sharpness, graffiti-tag integration, overspray halos, concrete-grain surface, mural-scale shape language
+  key_features: >-
+    Spray drips, stencil-sharp edges, overspray halos, rough surface grain, wildstyle composition,
+    and large-scale contour energy
   creative_brief: >-
-    Preserve graffiti-wall anime grammar as a reusable style system:
-    spray-drip contour behavior, wall-texture integration, and wildstyle-tag
-    compositional interaction should remain consistent across subjects without
-    requiring a literal wall, tags as readable text, or urban background scene.
+    Use spray-drip wildstyle anime as aerosol-mark grammar. Any prompt should feel painted through
+    overspray, drips, stencil edges, rough substrate, and rebellious scale. Literal walls, readable
+    tags, alleys, and urban backgrounds are optional.
 avoidRules:
   - clean
   - polished

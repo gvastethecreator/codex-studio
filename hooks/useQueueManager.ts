@@ -6,6 +6,13 @@ import {
   startQueuedJobExecution,
   type QueueJobExecuteGeneration,
 } from '../lib/queueStateMachine';
+import {
+  BROWSER_QUEUE_STORAGE_KEY,
+  prepareBrowserQueueJobsForPersist,
+  prepareBrowserQueueJobsForRestore,
+} from '../lib/browserQueuePersistence';
+import { get, set } from '../utils/idb';
+import { runtimeLogger } from '../utils/runtimeLogger';
 
 interface UseQueueManagerProps {
   executeGeneration: QueueJobExecuteGeneration;
@@ -48,6 +55,46 @@ export const useQueueManager = ({
   const abortControllersRef = useRef<Map<string, AbortController>>(new Map());
   const linkedServerJobIdsRef = useRef<Map<string, string>>(new Map());
   const processingJobsRef = useRef<Set<string>>(new Set());
+  const hasHydratedPersistedQueueRef = useRef(false);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    get<QueueJob[]>(BROWSER_QUEUE_STORAGE_KEY)
+      .then((storedJobs) => {
+        if (!isMounted) return;
+
+        const restoredJobs = prepareBrowserQueueJobsForRestore(storedJobs);
+        linkedServerJobIdsRef.current.clear();
+        for (const job of restoredJobs) {
+          if (job.serverJobId) {
+            linkedServerJobIdsRef.current.set(job.id, job.serverJobId);
+          }
+        }
+
+        setJobs((currentJobs) => (currentJobs.length > 0 ? currentJobs : restoredJobs));
+      })
+      .catch((error) => {
+        runtimeLogger.warn('Unable to restore browser queue from IndexedDB', error);
+      })
+      .finally(() => {
+        if (isMounted) {
+          hasHydratedPersistedQueueRef.current = true;
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!hasHydratedPersistedQueueRef.current) return;
+
+    set(BROWSER_QUEUE_STORAGE_KEY, prepareBrowserQueueJobsForPersist(jobs)).catch((error) => {
+      runtimeLogger.warn('Unable to persist browser queue to IndexedDB', error);
+    });
+  }, [jobs]);
 
   const enqueue = useCallback(
     (

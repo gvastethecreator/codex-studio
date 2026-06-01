@@ -24,9 +24,10 @@ visualDna:
   creative_brief: >-
     Build a reusable operatic-rebellion strategy grammar for any subject or
     input image: command posture, aristocratic tension, crimson-black graphic
-    hierarchy, masked intent, and early-digital political drama without
-    imposing mecha, royal costumes, command rooms, revolutionaries, masks, or
-    empire scenes.
+    hierarchy, masked intent, and early-digital political drama. Mecha, masks,
+    uniforms, or command geometry may appear as strategic style cues when they
+    strengthen the input, without fixing a command room, revolution plot, empire
+    scene, or specific costume.
 avoidRules:
   - realistic
   - 3d render

@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Playful, surprising, engineered wonder
   key_features: Tabs, slots, folds, lift layers, mechanical page architecture
   creative_brief: >-
-    Compose scenes as foldable structures, not flat illustrations. Prioritize readable paper mechanisms—hinges, layers, and slots—so dimensional surprise remains central while the style stays transferable to different subjects and narrative contexts.
+    Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot
+    construction, hinge relief, layered cardstock depth, and cast-paper shadows should make forms
+    feel foldable without requiring books, pages, children, mechanisms, theater sets, or fixed
+    narrative scenes.
 avoidRules:
   - flat page
 assets:

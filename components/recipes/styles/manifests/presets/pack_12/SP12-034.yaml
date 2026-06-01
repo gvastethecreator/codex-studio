@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Tactical shooter de largo alcance en cañones verticales, centrado en control de líneas y ventaja de altura.
-  subject_treatment: Marksmen especialistas con camuflaje geológico y kits de reposicionamiento.
+  aesthetic: Gramática tactical-shooter de largo alcance con control de líneas, ventaja de altura y exposición calculada.
+  subject_treatment: Aplica rol marksman, camuflaje geológico, kit de reposicionamiento o vulnerabilidad de cruce al input.
   color_and_tone: Rojo mineral, beige seco y azul limpio para separar terreno, cobertura y exposición.
   lighting_and_shadow: Sol agresivo con sombras definidas que marcan ventanas de disparo y tránsito.
   texture_and_material: Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.
-  camera_and_composition: Profundidad extrema entre riscos y puentes, con rutas de flanqueo claramente trazadas.
+  camera_and_composition: Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.
   atmosphere_and_mood: Precisa, paciente y letal a distancia.
   rendering_and_quality: Competitive map readability-first con claridad de sightlines, sniping nests y riesgo de cruce.
 avoidRules:

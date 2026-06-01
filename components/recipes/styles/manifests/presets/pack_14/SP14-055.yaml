@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-055
 packId: pack_14
-name: Hoplite Dawn Barracks
+name: Hoplite Dawn Discipline
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Military barracks staged as ritual preparation zone before campaign.
-  form_and_line: Grid barracks, shield walls, and drill-yard symmetry.
+  aesthetic: Hoplite dawn discipline where martial routine and sacred duty become one visual order.
+  form_and_line: Grid barrack cues, shield walls, and drill-yard symmetry.
   color_palette: Dust tan, bronze, and muted crimson.
   lighting_setup: Low dawn light with brazier contrast.
   material_texture: Packed earth, leather straps, and polished bronze gear.
   render_quality: Grounded epic concept with disciplined composition.
-  spatial_distortion: Yard-centric framing with depth into barrack rows.
+  spatial_distortion: Yard-centric framing with disciplined rows receding into dawn.
   atmosphere: Stoic resolve and communal duty.
-  key_features: Shield racks, spear drills, and oath pyre corners.
-  creative_brief: A Greek camp where martial routine is inseparable from sacred duty.
+  key_features: Shield racks, spear drill cues, oath pyre corners.
+  creative_brief: Recast the input through hoplite dawn discipline, making preparation feel sacred without requiring barracks.
 avoidRules: [photoreal, slapstick, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-055.webp }
 attributes:
   negativePrompt: photoreal, slapstick, neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

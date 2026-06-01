@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-076
 packId: pack_14
-name: Iceblade Foundry Steps
+name: Iceblade Quench Rite
 category: 8. Mythic — Norse Sagas
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, norse-myth]
 visualDna:
-  aesthetic: Stepped forge district tempering blades with glacial quench rites.
-  form_and_line: Terraced workshops, sluice channels, and chimney clusters.
+  aesthetic: Iceblade quench rite where winter itself becomes tool, judge, and tempering force.
+  form_and_line: Terraced workshop cues, sluice channels, and chimney clusters.
   color_palette: Glacier white, coal black, and ember orange.
   lighting_setup: Forge cores and reflected ice glow.
   material_texture: Quenched steel, frozen runoff, and soot brick.
   render_quality: Industrial myth concept with tactile realism.
-  spatial_distortion: Layered terraces descending to master forge.
+  spatial_distortion: Layered terraces descending toward a master forge focus.
   atmosphere: Harsh labor and precision ritual.
-  key_features: Quench vats, rune anvils, and smith shrines.
-  creative_brief: A smith quarter where winter itself is used as tool and judge.
+  key_features: Quench vats, rune anvils, smith shrine cues.
+  creative_brief: Transform the input through iceblade quench rite, using winter as tool and judge without requiring a foundry district.
 avoidRules: [photoreal, cartoon, futuristic-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-076.webp }
 attributes:
   negativePrompt: photoreal, cartoon, futuristic-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-norse-sagas, categoryName: 8. Mythic — Norse Sagas, tags: [mythic-noir-curated-vault, mythic, norse-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-norse-sagas,
+    categoryName: 8. Mythic — Norse Sagas,
+    tags: [mythic-noir-curated-vault, mythic, norse-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

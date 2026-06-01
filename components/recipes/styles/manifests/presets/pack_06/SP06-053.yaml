@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Epic, storytelling
   key_features: Focal point detail
-  creative_brief: Mood precedes detail, atmosphere driving form rather than following it, the image designed to test a visual direction before final production. Photobash fragments meet painterly strokes in a hybrid language of readable possibility. The image proposes rather than concludes, using cinematic light to make any subject feel designed and production-ready.
+  creative_brief: >-
+    Apply concept-art development language to any input: mood-first lighting,
+    readable design intent, photobash-paint hybrid texture, production-ready
+    shape decisions, and exploratory polish. Keep visual-direction utility
+    without requiring characters, environments, callouts, model sheets, or story
+    beats.
 avoidRules:
   - photo
   - realistic

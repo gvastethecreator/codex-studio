@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Melting
   atmosphere: Playful, sticky
   key_features: Drips
-  creative_brief: Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd.
+  creative_brief: >-
+    Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls
+    the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel
+    simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the
+    aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - solid
   - dry

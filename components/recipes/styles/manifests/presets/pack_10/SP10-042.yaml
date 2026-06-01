@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Big eyes
   atmosphere: Playful, creepy
   key_features: Cute but dark
-  creative_brief: Saturday morning cartoons dragged through the gutters of fine art, big eyes staring from canvases that refuse to decide between cute and disturbing. Pop culture achieves self-awareness and finds itself monstrous.
+  creative_brief: Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration, cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware without forcing a mascot.
 avoidRules:
   - serious
   - fine art
@@ -42,4 +42,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

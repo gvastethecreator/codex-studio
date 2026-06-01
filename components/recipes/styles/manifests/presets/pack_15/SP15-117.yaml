@@ -12,14 +12,14 @@ visualDna:
   color_palette: Aqua, opal pink, and sea-glass green.
   lighting_setup: Bioluminescent glow with bright coastal reflections.
   material_texture: Shell composite, translucent fins, and slick stone.
-  render_quality: Lush marine concept with acoustic architecture cues.
+  render_quality: Lush marine render with acoustic architecture cues and reef resonance.
   spatial_distortion: Amphitheater curve around an inlet-like acoustic void.
   atmosphere: Communal celebration, tidal resonance, and playful immersion.
   key_features: Reef choir shells, tidal step motifs, signal fins, and resonant coral ribbing.
   creative_brief: >-
-    Preserve reef choir-harbor grammar as a reusable style system:
-    acoustic reef amphitheater geometry, luminous communal tidal rituals, and
-    playful civic resonance should remain coherent across subjects.
+    Resonate the input as reef choir architecture: aqua amphitheater bands,
+    opal-pink shell ribs, sea-glass fins, tidal step motifs, and bioluminescent
+    acoustic glow make any subject feel communal and sonically alive.
 avoidRules: [photoreal, bleak, rust, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-117.webp }
 attributes:

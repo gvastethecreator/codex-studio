@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Overlap, layer nesting, translucent registration drift
   atmosphere: Surreal, memory, dual exposure, fleeting connection
   key_features: Layer blend, silhouette mask, translucent density, exposure sandwich
-  creative_brief: 'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface.'
+  creative_brief: >-
+    Use double exposure as a transferable layering method: two or more visual fields share one frame through masks,
+    translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or
+    nature fusion. The image should read as memory layers occupying one photographic surface. Apply Double Exposure as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - single image
 assets:

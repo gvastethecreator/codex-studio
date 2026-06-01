@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Nostalgic, arcade-coded, playful
   key_features: Palette discipline, cluster logic, hard-edge silhouettes, frame-efficient detail
   creative_brief: >-
-    Treat resolution limits as style drivers. Build readable forms through pixel clustering, palette economy, and dithering strategy so compositions feel authentically retro while staying clear in both static comic frames and sprite-like action beats.
+    Apply retro pixel-comic constraints to any input: indexed palette economy, tile-grid alignment,
+    cluster logic, hard aliasing, and deliberate dithering should drive readability without
+    requiring game sprites, combat frames, platforms, UI, characters, or fixed 16-bit scenes.
 avoidRules:
   - vector
   - smooth

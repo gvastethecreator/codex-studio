@@ -60,9 +60,9 @@ export const uiChunkBudgets: UiChunkBudget[] = [
   {
     id: 'style-catalog-data',
     pattern: /^stylePresetCatalogData-[\w-]+\.js$/,
-    maxBytes: 180 * KIB,
+    maxBytes: 220 * KIB,
     required: true,
-    note: 'Catalog YAML glob map should stay demand-loaded.',
+    note: 'Catalog YAML glob map should stay demand-loaded and scale with manifest count.',
   },
   {
     id: 'camera-recipe',

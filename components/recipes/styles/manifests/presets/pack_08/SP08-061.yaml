@@ -12,16 +12,23 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Wedding dress detail, heirloom-textile romance, cathedral-veil delicacy
+  aesthetic: Lace textile detail, heirloom romance, veil-like delicacy
   form_and_line: Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep
   color_palette: White, Black, ivory, candlelight, champagne, jet, nude-illusion
-  lighting_setup: Backlit, window-light diffusion, veil-glow translucency, chapel-candle warmth, morning-light ethereality
-  material_texture: Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs
+  lighting_setup: Backlit translucency, window-light diffusion, veil-glow softness, morning-light ethereality
+  material_texture: >-
+    Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué,
+    re-embroidered motifs
   render_quality: Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage
   spatial_distortion: None
-  atmosphere: Romantic, fragile, heirloom-promise tenderness, veil-lift anticipation, cathedral-hush beauty
+  atmosphere: Romantic, fragile, heirloom-promise tenderness, veil-like anticipation, hush beauty
   key_features: Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail
-  creative_brief: Threads thinner than hair woven into flowers that will never wilt, Alencon needlepoint mapping a garden across a cathedral-length train. Backlight through tulle turns the veil into a second sky, each Chantilly motif a small promise of permanence in a material defined by its open spaces, the bride wrapped in the accumulated patience of lacemakers who died before she was born.
+  creative_brief: >-
+    Lace the input with openwork structure: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle
+    ground and backlit translucency. Keep bridal heritage as mood, not as bride, cathedral train, chapel, veil lift or
+    wedding scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic,
+    trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or
+    fixed character scene.
 avoidRules:
   - solid
 assets:
@@ -41,4 +48,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

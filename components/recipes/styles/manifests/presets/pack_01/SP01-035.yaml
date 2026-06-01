@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Serious, artistic
   key_features: Chiaroscuro
-  creative_brief: A single 45-degree source sculpts any subject from darkness with warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep Rembrandt's reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.
+  creative_brief: Apply Rembrandt lighting to the input with a single 45-degree source, warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.
 avoidRules:
   - flat
   - bright

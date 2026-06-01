@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hypnotic, natural
   key_features: Fingerprint pattern
-  creative_brief: Chemistry dreaming in stripes and spots, the mathematics that paints leopards and zebras from nothing. Two competing forces spiral outward, generating complexity from simple rules.
+  creative_brief: >-
+    Apply reaction-diffusion patterning to the input: chemical stripes, spots,
+    wave fronts, and competing growth fields should generate organic complexity
+    across surfaces without requiring animal bodies.
 avoidRules:
   - random noise
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-003
 packId: pack_14
-name: Saint of Broken Neon
+name: Broken Neon Saint Icon
 category: 2. Mythic — Ritual Noir
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
   aesthetic: Ruined metropolitan iconography where sanctity survives as unstable electric folklore.
-  form_and_line: Frontal martyr geometry, fractured aureole rings, and shrine-like wall symmetry.
+  form_and_line: Frontal icon geometry, fractured aureole rings, cable-bundle arcs, and shrine-like symmetry.
   color_palette: Faded cyan plasma, wounded magenta, and soot-black concrete.
   lighting_setup: Intermittent neon fault flicker with rain-slick reflected halos.
   material_texture: Wet brutalist concrete, shattered acrylic tubes, oxidized steel, and pasted liturgical posters.
   render_quality: High-impact poster-concept hybrid with crisp silhouette readability for key-art use.
-  spatial_distortion: Flat-compressed alley altar framing that pushes devotional icons toward the viewer.
+  spatial_distortion: Flat-compressed devotional framing that pushes broken neon iconography toward the viewer without requiring an alley shrine.
   atmosphere: Defiant faith, civic collapse, and reverent urban tension.
-  key_features: Broken halo scaffold, votive cable bundles, rain-lit graffiti scripture.
-  creative_brief: A canonized figure of the blackout era venerated in a rain-soaked city shrine assembled from failing neon infrastructure.
+  key_features: Broken halo scaffolds, votive cable bundles, rain-neon reflections, soot concrete, and unstable electric sainthood.
+  creative_brief: >-
+    Canonize the input as broken neon sainthood: fractured aureoles, cyan-magenta
+    fault light, rain-slick concrete, votive cable bundles, and blackout-era
+    devotional symmetry should sanctify any subject without requiring a saint,
+    city shrine, alley, graffiti wall, or literal figure.
 avoidRules: [photoreal, bright-daylight, playful, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-003.webp }
 attributes:
   negativePrompt: photoreal, bright-daylight, playful, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-ritual-noir, categoryName: 2. Mythic — Ritual Noir, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-ritual-noir,
+    categoryName: 2. Mythic — Ritual Noir,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

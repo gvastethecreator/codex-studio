@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Forms dissolve into dots
   atmosphere: Static, shimmering
   key_features: Dot pattern
-  creative_brief: Tiny points of pure color refuse to mix on the canvas, delegating all blending to the retinal dance beyond the frame. The image comes into focus only at distance, a conspiracy between pigment and perception. Every dot is a vote cast for a reality assembled by the viewer.
+  creative_brief: >-
+    Apply pointillist construction to any input: separated pure-color dots,
+    optical mixing at distance, ordered chromatic vibration, and image structure
+    built from small repeated marks. Keep retinal color theory without requiring
+    parks, figures, umbrellas, rivers, or Neo-Impressionist subject staging.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

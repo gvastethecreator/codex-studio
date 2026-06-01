@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-010
 packId: pack_07
 name: Futuristic Pod
-category: 1. Residential Interiors
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
   aesthetic: Hábitat neo-futurista de fricción cero, ergonomía continua e inteligencia ambiental integrada.
-  form_and_line: Shells continuas sin esquina, transiciones fluidas, planos interfaz embebidos y repetición biomórfica modular.
+  form_and_line: >-
+    Shells continuas sin esquina, transiciones fluidas, planos interfaz embebidos y repetición
+    biomórfica modular.
   color_palette: Blanco clínico, cian/azul frío lumínico, plata holográfica y magenta puntual de señalización.
-  lighting_setup: Luminancia indirecta integrada, gradientes adaptativos por zona y glow controlado en paneles activos.
-  material_texture: Polímeros smart mate-brillo, vidrio de baja fricción, superficies táctiles reactivas y uniones invisibles.
-  render_quality: Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta legibilidad.
+  lighting_setup: >-
+    Luminancia indirecta integrada, gradientes adaptativos por zona y glow controlado en paneles
+    activos.
+  material_texture: >-
+    Polímeros smart mate-brillo, vidrio de baja fricción, superficies táctiles reactivas y uniones
+    invisibles.
+  render_quality: >-
+    Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta
+    legibilidad.
   spatial_distortion: Continuidad axial suave, sin quiebres abruptos, con percepción de flotación funcional.
   atmosphere: Controlada, avanzada, serena y ligeramente clínica.
-  key_features: Geometría cornerless, iluminación sistémica integrada, fusión carcasa-interfaz y señalética mínima reactiva.
+  key_features: >-
+    Geometría cornerless, iluminación sistémica integrada, fusión carcasa-interfaz y señalética
+    mínima reactiva.
   creative_brief: >-
-    Formula una gramática futurista transferible donde continuidad de carcasa,
-    luz adaptativa y ergonomía post-fricción sean innegociables. Cada input
-    debe integrarse como extensión del sistema, no como objeto insertado.
+    Formula una gramática futurista transferible donde continuidad de carcasa, luz adaptativa y
+    ergonomía post-fricción sean innegociables. Cada input debe integrarse como extensión del
+    sistema, no como objeto insertado.
 avoidRules:
   - old
   - dirty
@@ -36,11 +46,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

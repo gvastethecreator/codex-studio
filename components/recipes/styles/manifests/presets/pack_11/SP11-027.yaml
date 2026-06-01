@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity
   key_features: Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight
   creative_brief: >-
-    Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence,
-    grout rhythm, andamento flow-lines, and faceted reflective highlights
-    should define identity beyond any specific historic setting.
+    Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence, grout rhythm, andamento flow-lines, and
+    faceted reflective highlights should define identity beyond any specific historic setting. Apply Mosaic Tile as a
+    portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature
+    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product
+    shot, or scene template.
 avoidRules:
   - smooth painting
 assets:

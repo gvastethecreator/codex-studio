@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nocturnal, theatrical, mysterious',
       key_features: 'Dark-field base, luminous scratch marks, reverse-value composition',
       creative_brief:
-        'Render by removing darkness rather than adding light. Use incision rhythm, hatch density, and directional scratch patterns to define form and focal hierarchy while keeping the scratchboard inversion logic central and reusable across subjects.',
+        'Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch density, burr-like chatter, and directional scratch patterns to define focal hierarchy without requiring animals, night scenes, portraits, theatrical props, or fixed black-ground compositions.',
     },
   },
   {
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Analytical, cinematic, pre-production momentum',
       key_features: 'Shot-size variety, perspective alternation, compositional cadence mapping',
       creative_brief:
-        'Plan visual storytelling through rapid compositional permutations. Keep each frame simple but intention-rich, focusing on camera placement, value hierarchy, and staging rhythm so sequence readability and emotional pacing can be evaluated before final rendering, with Alfred Hitchcock-style suspense-oriented framing discipline.',
+        'Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal hierarchy tests, lens-like framing, and miniature layout variants. It should generate composition diversity without requiring storyboards, film scenes, characters, or sequential narrative panels.',
     },
   },
   {
@@ -63,7 +63,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints',
       creative_brief:
-        'Prototype interface systems that communicate critical gameplay data with minimal cognitive load. Compare multiple layout paradigms under consistent hierarchy rules, ensuring legibility, interaction clarity, and screen-space economy across different play contexts.',
+        'Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids, reticles, status blocks, icon placeholders, and layered interface hierarchy. If no software/game context exists, translate the prompt into abstract interface architecture without requiring readable UI text, screenshots, or a game scene.',
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks',
       creative_brief:
-        'Develop creatures as coherent biological systems. Pair silhouette and anatomy passes to test mobility, survivability, and material behavior, keeping overlays and callouts explicit enough to compare evolutionary variants before committing to final render direction in a Terryl Whitlatch-style creature-development mindset.',
+        'Apply creature-design iteration language to any input: anatomy-like layering, silhouette mutations, material biology, exploratory appendage rhythms, and evolutionary variant marks. If no creature exists, translate the subject into biomorphic design studies without requiring animals, monsters, or a final character render.',
     },
   },
   {
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Serious, valuable, mint-condition reverence, time-capsule gravitas',
       key_features: 'Hatching, crosshatching, fine-line density',
       creative_brief:
-        'Keep this preset anchored in engraving grammar: dense crosshatch tonality, burin-like incision discipline, and document-authority detail should define identity beyond any single banknote motif.',
+        'Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision, archival paper, document-authority detail, and micro-line direction should create old-master precision without requiring banknotes, documents, portraits, maps, seals, or antique scenes.',
     },
   },
   {
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Classic, soft, print-studio quiet, optical wonder',
       key_features: 'Grain, stone texture, crayon registration',
       creative_brief:
-        'Keep this preset defined by lithographic grammar: grease-on-stone mark behavior, granular tonal transfer, and chemistry-driven reveal should carry identity beyond any specific geometric subject.',
+        'Apply lithographic print grammar to any input: grease-crayon marks, stone-grain softness, pressure-sensitive wax variation, atmospheric tone, and press-transfer nuance should carry identity without requiring geometry, posters, portraits, print studios, or specific subjects.',
     },
   },
   {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expressive, unique, printmaking surprise, serendipitous beauty',
       key_features: 'Ghost image, ink-bleed edge, plate-memory residue',
       creative_brief:
-        'Define this preset through monotype grammar: one-pass transfer, non-repeatable ghosting, and pressure-born variation should carry identity beyond any single expressive print scene.',
+        'Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting, smudged plate edges, and non-repeatable ink movement should create unique impression energy without requiring abstract figures, print plates, studios, or one expressive scene.',
     },
   },
   {
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Folk, strong, print-workshop resolve, democratic art',
       key_features: 'No fine detail, gouge marks, carved texture',
       creative_brief:
-        'Define this preset through relief-linocut grammar: carved negative marks, heavy ink transfer, and hand-tool gouge cadence should carry identity beyond any specific folk scene.',
+        'Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer, gouge cadence, chunky relief edges, and folk-print force should carry identity without requiring folk scenes, workshops, portraits, animals, posters, or specific democratic-art subjects.',
     },
   },
   {
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nature, calm, ukiyo-e transience, seasonal reverence',
       key_features: 'Outline, gradient band, seal signature',
       creative_brief:
-        'Anchor identity in ukiyo-e woodblock grammar: carved contour rhythm, bokashi gradient transitions, and indigo-forward restraint should define the preset without naming a specific masterwork or artist.',
+        'Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients, Prussian-indigo restraint, flattened perspective, and repeatable impression clarity should define style without requiring waves, landscapes, actors, seals, nature scenes, or named masterworks.',
     },
   },
   {
@@ -212,7 +212,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Quiet, contemplative, fluid, meditative immediacy',
       key_features: 'One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients',
       creative_brief:
-        'Compose with maximal economy: few strokes, high intent. Let pressure, moisture, and speed create the full value system, using negative space as an active structural element. Preserve spontaneous gesture while maintaining compositional equilibrium and tonal clarity.',
+        'Apply brush-pen ink rendering to any input: pressure-sensitive strokes, dry-brush skips, wet pooling, feathered edges, controlled splatter, and confident negative space. Keep it usable on subjects, products, spaces, or abstractions without requiring calligraphy text, bamboo, landscapes, or traditional scene motifs.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

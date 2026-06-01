@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Smart, complex, knowledge-driven
   key_features: Data points, scale-reference
-  creative_brief: 'Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the weight of measurement.'
+  creative_brief: >-
+    Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render
+    protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space
+    or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels
+    NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the
+    weight of measurement. Apply Scientific Visualization as a portable 3D/render style system over any input: preserve
+    its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - fantasy
   - magic

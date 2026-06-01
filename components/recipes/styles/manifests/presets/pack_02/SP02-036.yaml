@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Noodle limbs, rubber-hose arms, boneless contortion
   atmosphere: Happy, weird, vaudeville rhythm, early-talkie energy
   key_features: Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic
-  creative_brief: 'Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours, noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props. The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible motion.'
+  creative_brief: >-
+    Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours,
+    noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props.
+    The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible
+    motion. Apply Fleischer Rubber Hose Cartoon as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - color
   - modern

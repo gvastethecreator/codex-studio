@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Bright sky, dark foreground paradox, impossible contrast
   atmosphere: Moonlight, fake, studio night, theatrical illusion
   key_features: Blue cast, dark shadows at noon, noir-at-daylight
-  creative_brief: 'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness.'
+  creative_brief: >-
+    Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed
+    foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The
+    output should feel like night manufactured by camera exposure rather than true darkness. Apply Day for Night as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - real night
 assets:

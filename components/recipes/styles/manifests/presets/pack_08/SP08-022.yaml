@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Kurt Cobain 90s slouch-grunge, flannel melancholy, Seattle apathy, Nevermind-era dishevelment
+  aesthetic: 90s slouch-grunge, flannel melancholy, Seattle apathy, lo-fi dishevelment
   form_and_line: Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette
   color_palette: Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check
-  lighting_setup: Dim, overcast, Pacific-Northwest grey, basement-rehearsal amber, rainy-street flatness
+  lighting_setup: Dim overcast grey, basement-amber warmth, rainy-flat low contrast
   material_texture: Brushed flannel, distressed knit, stonewashed denim, thermal waffle, Converse canvas
   render_quality: Messy, cool, apathy, lo-fi honesty, garage-band authenticity
   spatial_distortion: None
-  atmosphere: Angst, relaxed, quiet desperation, rainy-afternoon numbness, feedback-hum ennui
+  atmosphere: Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity
   key_features: Flannel shirt, ripped jeans, cardigan, beanie, Converse sneakers
-  creative_brief: Flannel worn like a memory of warmth in Seattle grey, the sleeves too long because caring about fit would mean caring about something. Ripped denim and thermal waffle carry the weight of rehearsal-room feedback, Converse scuffed by rain-slicked sidewalks that lead nowhere in particular, the uniform of those who already know the ending.
+  creative_brief: >-
+    Push the input into grunge slouch: brushed flannel, distressed knits,
+    stonewashed denim, waffle thermal, canvas sneakers and deliberately poor
+    fit. Keep lo-fi melancholy without requiring Seattle, rehearsal rooms, rainy
+    sidewalks, a band reference or a human slacker.
 avoidRules:
   - clean
   - ironed
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -12,17 +12,20 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: Cheese pull, pizzeria-magic, molten-mozzarella, slice-photography, delivery-crave
+  aesthetic: Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy
   form_and_line: Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup
   color_palette: Red, Yellow, White, sauce-crimson, mozzarella-ivory, crust-golden, pepperoni-charred, basil-green, oregano-fleck
   lighting_setup: Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam
   material_texture: Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust
   render_quality: Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style
   spatial_distortion: Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool
-  atmosphere: Craving, greasy, delivery-doorbell, napkin-stack anticipation, box-steam reveal
+  atmosphere: Craving, greasy, hot, elastic, box-steam warmth
   key_features: Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup, box-corner-grease-stain, garlic-knot companion
   creative_brief: >-
-    Emphasize pizza craving cues through elastic cheese pull, blistered crust texture, and glossy topping oils. Maintain commercial appetite intensity with dynamic melt behavior and high warmth contrast, independent of brand context.
+    Translate the input through pizza-melt craving cues: elastic cheese pull,
+    blistered crust-like texture, glossy topping oils, warm red-yellow contrast,
+    and dynamic melt behavior. Pizza slices may anchor the preset, but avoid
+    requiring delivery boxes, doorbells, napkin stacks, or one menu item.
 avoidRules:
   - cold
 assets:

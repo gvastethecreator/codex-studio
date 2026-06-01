@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-082
 packId: pack_13
-name: Nichijou – Absurd School Comedy
+name: Deadpan-Explosion Absurd Timing
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,33 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Nichijou-like absurd comedy language where mundane calm snaps into explosive surreal punchline energy and elastic reaction theatrics
-  form_and_line: Fast-switch line elasticity, sudden exaggeration bursts, readable gag-staging silhouettes, and timing-aware pose breakpoints for comedic snap
-  color_palette: Bright daily-life pastels with occasional high-saturation gag spikes, neutral soft bases, and contrast pops to emphasize punchline beats
-  lighting_setup: Flat-readable daily lighting baseline with abrupt highlight emphasis at gag apex frames and minimal cinematic shadow complexity
-  material_texture: Simplified everyday textures kept secondary to expression motion, with selective detail boosts only where timing needs focus
-  render_quality: High-clarity comedic anime rendering optimized for timing readability, reaction elasticity, and absurd-to-normal tonal pivots
-  spatial_distortion: Controlled reality warps and perspective exaggerations used rhythmically to land comedic escalation without losing subject legibility
-  atmosphere: Chaotic, witty, absurd, and hyper-energetic
-  key_features: Elastic reaction faces, deadpan-to-explosive timing contrast, ordinary-to-absurd pivots, and visual punchline clarity
+  aesthetic: >-
+    Absurd anime timing system where calm mundane baseline snaps into surreal elastic impact, then
+    returns to deadpan clarity
+  form_and_line: >-
+    Fast-switch contour elasticity, punchline silhouettes, reaction breakpoints, and deformation
+    bursts held inside readable staging
+  color_palette: >-
+    Daily-life pastels, neutral soft bases, sudden saturation spikes, comic accent primaries, and
+    clean pale backgrounds
+  lighting_setup: Flat readable baseline with abrupt gag-apex highlight emphasis and minimal shadow complexity
+  material_texture: >-
+    Simplified everyday surfaces kept secondary to timing, with detail spikes only where the joke
+    needs focus
+  render_quality: >-
+    High-clarity comedy anime finish optimized for reaction readability, elastic escalation, and
+    immediate visual punchlines
+  spatial_distortion: >-
+    Rhythmic reality warps, perspective snaps, and scale exaggerations that land comedy without
+    losing subject legibility
+  atmosphere: Chaotic, witty, absurd, bright, hyper-alert
+  key_features: >-
+    Deadpan baseline, explosive deformation, elastic reaction faces, sudden scale jumps, and
+    punchline-focused composition
   creative_brief: >-
-    Use the title as a style anchor for absurd timing. Keep sudden elasticity
-    spikes, deadpan contrast, and punchline clarity, but let any subject carry
-    the comedy without requiring school or classroom setup.
+    Use Nichijou as style anchor for deadpan-explosion timing. Any prompt can become a calm visual
+    setup interrupted by impossible elastic comedy, sharp reaction beats, and sudden saturation
+    spikes. School and classroom staging are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-082.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

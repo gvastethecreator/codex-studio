@@ -12,14 +12,14 @@ visualDna:
   color_palette: Moonlit blue, hot pink, and silver.
   lighting_setup: Lantern glow over rippling water and wet decking.
   material_texture: Glass lanterns, painted metal, and salt-worn wood.
-  render_quality: Vibrant night city concept with clear navigation cues.
+  render_quality: Vibrant night seapunk render with clear navigation cues and tide-lantern luminance.
   spatial_distortion: Meandering path through illuminated water-corridor depth.
   atmosphere: Night stroll, orientation, and civic sparkle.
   key_features: Tide lanterns, buoy markers, wet step motifs, and floating route glows.
   creative_brief: >-
-    Preserve tide lantern-quarter grammar as a reusable style system:
-    tidal wayfinding luminance, meandering waterfront promenade guidance, and
-    nocturnal civic sparkle should remain coherent across subjects.
+    Guide the input by tide lantern sparkle: moonlit-blue water paths, hot-pink
+    route glows, silver buoy markers, glass lantern strings, and wet reflection
+    curves make any subject feel nocturnal, oriented, and civic.
 avoidRules: [photoreal, dystopia, harsh-dark, watermark, text, logo, muddy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-121.webp }
 attributes:

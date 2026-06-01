@@ -12,19 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - printmaking-and-ink
 visualDna:
-  aesthetic: Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print process identity
-  form_and_line: Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation
+  aesthetic: >-
+    Stone-lithography style with grease-crayon mark character, tonal grain softness, and
+    chemical-print process identity
+  form_and_line: >-
+    Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark
+    variation
   color_palette: Black or Sepia, single-stone tone, litho-crayon warmth
   lighting_setup: Soft grain, stone-texture diffusion, atmospheric softness
   material_texture: Stone grain
-  render_quality: Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness
+  render_quality: >-
+    Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer
+    nuance, and atmospheric print softness
   spatial_distortion: None
   atmosphere: Classic, soft, print-studio quiet, optical wonder
   key_features: Grain, stone texture, crayon registration
   creative_brief: >-
-    Keep this preset defined by lithographic grammar: grease-on-stone mark
-    behavior, granular tonal transfer, and chemistry-driven reveal should carry
-    identity beyond any specific geometric subject.
+    Apply lithographic print grammar to any input: grease-crayon marks, stone-grain softness,
+    pressure-sensitive wax variation, atmospheric tone, and press-transfer nuance should carry
+    identity without requiring geometry, posters, portraits, print studios, or specific subjects.
 avoidRules:
   - sharp lines
 assets:

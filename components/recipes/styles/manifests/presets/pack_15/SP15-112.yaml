@@ -12,14 +12,14 @@ visualDna:
   color_palette: Verdant green, cream, and honey amber.
   lighting_setup: Sunlit facades with diffuse interior glow.
   material_texture: Leaf-film, timber composites, and matte bioceramic.
-  render_quality: Warm housing concept with strong environmental readability.
+  render_quality: Warm photosynthetic render with strong environmental readability and domestic comfort cues.
   spatial_distortion: Vertical terraced stack rising like living garden machinery.
   atmosphere: Domestic comfort, ecological intelligence, and bright stability.
   key_features: Chloroplast panels, air-garden motifs, terrace nurseries, and photosynthetic glow seams.
   creative_brief: >-
-    Preserve chloroplast housing-stack grammar as a reusable style system:
-    photosynthetic domestic envelopes, terraced air-garden comfort, and
-    bright ecological stability should remain coherent across subjects.
+    Photosynthesize the input into domestic stability: verdant leaf-film panels,
+    cream bioceramic terraces, honey glow seams, sun-capture fins, and air-garden
+    ribs make any subject feel breathable, powered, and sheltered.
 avoidRules: [photoreal, dystopian, dystopic, watermark, text, logo, cold-grit]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-112.webp }
 attributes:

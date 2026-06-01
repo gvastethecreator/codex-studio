@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-062
 packId: pack_07
-name: Ewok Canopy Rope Village, Endor treetops, forest-moon tribe
-category: 1. Residential Interiors
+name: Canopy Rope Vernacular
+category: 5. Fantasy And Mythic Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: Tribal-canopy elevado con ingeniería orgánica artesanal y vida comunal suspendida.
   form_and_line: Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles orgánicos.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.
   key_features: Cuerdas enlazadas, plataformas radiales, pasarelas ceñidas al soporte vivo y nidos de observación elevados.
   creative_brief: >-
-    Construye una gramática tribal-canopy transferible basada en plataformas
-    elevadas, suspensión por cuerda y respeto estructural al árbol vivo, sin
-    fijarse a un set concreto.
+    Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz
+    filtrada por dosel y materiales vivos. Debe expresar ingeniería comunal elevada sin tribu, planeta o set específico.
+    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - metal
 assets:
@@ -34,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - fantasy-and-mythic-architecture
   supportedTasks:
     - image_generate
     - image_edit

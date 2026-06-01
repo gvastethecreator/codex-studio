@@ -4,8 +4,14 @@ packId: pack_15
 name: Zenith Deco Observatory
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Celestial decopunk where astronomy becomes civic pageantry, brass mechanism, and disciplined night.
   form_and_line: Stepped dome bases, radial instrument galleries, finned crowns, telescope axes, and star-chart fan geometries.
@@ -17,20 +23,33 @@ visualDna:
   atmosphere: Intellectual grandeur, cosmic ambition, disciplined darkness, and public wonder.
   key_features: Rotating dome slits, brass telescope arrays, star-chart bands, finned observation motifs, and constellation inlays.
   creative_brief: >-
-    Preserve zenith deco-observatory grammar as a reusable style system:
-    celestial brass instrumentation, ceremonial scientific pageantry, and
-    controlled midnight precision should remain coherent across subjects.
-avoidRules: [photoreal, medieval, cyber-chaos, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-060.webp }
+    Elevate the input into disciplined celestial pageantry: brass telescope rings, finned dome crowns, ivory stone
+    steps, enamel star charts, and tiny constellation inlays should align ambition with night. Observatories may appear,
+    but the style is midnight precision and public wonder. Apply this corepunk genre grammar over any input: preserve
+    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
+    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - medieval
+  - cyber-chaos
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-060.webp
 attributes:
   negativePrompt: photoreal, medieval, cyber-chaos, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

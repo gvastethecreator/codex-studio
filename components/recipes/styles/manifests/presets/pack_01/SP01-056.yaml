@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Perspective correction
   atmosphere: Imposing, structured
   key_features: Vertical lines
-  creative_brief: Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban scene.
+  creative_brief: Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban setting.
 avoidRules:
   - messy
 assets:

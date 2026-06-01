@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - fx-and-procedural-materiality
 visualDna:
-  aesthetic: Consumer product
+  aesthetic: Injection molded plastic
   form_and_line: Parting lines
   color_palette: Bright, saturated
   lighting_setup: Subsurface scattering (slight)
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Sink marks
   atmosphere: Artificial, toy
   key_features: Uniform color
-  creative_brief: Capture the synthetic honesty of injection-molded plastic with its faint parting lines and subtle sink marks like the fingerprints of manufacture pressed into saturated color. The surface should feel unnaturally uniform, smooth in a way that nature never achieves, catching subsurface light with a slight translucency at the edges. This is the material of mass desire, smooth and democratic.
+  creative_brief: 'Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.'
 avoidRules:
   - metal
   - wood

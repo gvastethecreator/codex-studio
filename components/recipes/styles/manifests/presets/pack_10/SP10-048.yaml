@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, clean
   key_features: Random chips
-  creative_brief: Marble fragments suspended in a matrix like geological confetti, the random made orderly by the binder that holds it. Each chip a different quarry, each slab a democracy of stone.
+  creative_brief: >-
+    Apply terrazzo material logic to the input: irregular marble chips,
+    mineral flecks, polished binder fields, and orderly random scatter should
+    turn surfaces or silhouettes into composite stone without requiring floors.
 avoidRules:
   - wood
   - metal
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

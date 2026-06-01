@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Professor suit, donnish-academia charm, country-estate weekend
+  aesthetic: Tweed tailoring, donnish-academia charm, country-estate weekend
   form_and_line: Herringbone pattern, structured-shoulder drape, notch-lapel angle, three-roll-two button stance, trouser-break hem
   color_palette: Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss
-  lighting_setup: Flat, study-lamp pool, rainy-window grey, library-wingback warmth
+  lighting_setup: Rainy-window grey, study-lamp warmth, flat wool-revealing light
   material_texture: Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
   render_quality: Classic, textured, Savile Row heritage, country-house authenticity
   spatial_distortion: None
-  atmosphere: Smart, old school, leather-armchair comfort, pipe-smoke contemplation, donnish eccentricity
+  atmosphere: Smart, old school, textured contemplation, donnish eccentricity
   key_features: Herringbone, elbow patches, ticket pocket, knitted tie, brogues
-  creative_brief: Herringbone wool woven tight enough to stop a Yorkshire wind, Donegal flecks scattered across the surface like spice in a slow-cooked argument about Proust. Horn buttons, leather elbow patches worn smooth by oak desktops, the three-roll-two lapel rolling with the nonchalance of someone who has forgotten more than most people will ever know about the difference between a good book and a great one.
+  creative_brief: >-
+    Tailor the input with tweed: herringbone wool, Donegal flecks, horn buttons,
+    elbow-patch cues, three-roll-two lapel logic and moss-brown texture. Keep
+    professor charm without requiring a study, library, armchair, person or suit
+    portrait.
 avoidRules:
   - smooth
   - shiny
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

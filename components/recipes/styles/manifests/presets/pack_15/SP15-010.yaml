@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Patient mastery, communal ingenuity, and elegant mechanical rhythm.
   key_features: Public gear-library motifs, escapement nodework, cooperative chronometer-forge rhythm, and canopy clockwork cues.
   creative_brief: >-
-    Preserve circular maker-courtyard grammar as a reusable style language:
-    radial precision-work choreography, visible clockwork governance, and
-    communal repair culture should remain stable across subjects without
-    requiring a workshop, courtyard, benches, or clock tower.
+    Rebuild the input as civic clockwork craft: radial escapement geometry,
+    brass timing nodes, oil-dark leather touchpoints, and cooperative repair
+    rhythm. Workshops, courtyards, benches, or clock towers are optional anchors;
+    the style is patient public mechanics and precise communal ingenuity.
 avoidRules: [photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-010.webp }
 attributes:

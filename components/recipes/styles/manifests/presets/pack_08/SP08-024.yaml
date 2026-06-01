@@ -15,13 +15,17 @@ visualDna:
   aesthetic: 50s Greaser/Pinup, hot-rod Americana, tattooed-rebel romance
   form_and_line: Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume
   color_palette: Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory
-  lighting_setup: Sunny, chrome-gleam reflections, diner-neon glow, afternoon-sun flare
+  lighting_setup: Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare
   material_texture: Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin
   render_quality: Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit
   spatial_distortion: Pompadour hair
-  atmosphere: Rebellious, fun, Saturday-night swagger, drag-race adrenaline, soda-shop cool
+  atmosphere: Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool
   key_features: Tattoos, sailor-style ink, rolled cigarette sleeve, cuffed jeans, engineer boots
-  creative_brief: Horsehide leather cracked like desert earth, pomade gleaming under diner neon as a Greaser leans into the Saturday night he was born for. Cuffed denim and swallow tattoos tell stories of drag races won and lost, chrome reflections catching the rebel silhouette of someone who wears his heart on his rolled-up sleeve.
+  creative_brief: >-
+    Apply rockabilly Americana to the input: horsehide leather, cuffed denim,
+    pomade gloss, victory-roll volume, swallow embroidery, sailor tattoo cues
+    and chrome-red contrast. Keep hot-rod swagger without requiring a diner,
+    drag race, greaser portrait or literal motorcycle/car.
 avoidRules:
   - modern
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

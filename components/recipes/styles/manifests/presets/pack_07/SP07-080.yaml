@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-080
 packId: pack_07
-name: Tardis Infinite Console Chamber
-category: 1. Residential Interiors
+name: Dimensional Console Retrotech
+category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión interior imposible.
+  aesthetic: >-
+    Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión
+    interior imposible.
   form_and_line: Eje central energético, nodo hex radial, repetición de roundels y anillos en recesión no euclidiana.
-  color_palette: Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows
+  color_palette: >-
+    Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel
+    highlights, and temporal blue accent glows
   lighting_setup: Pulso lumínico central, spill de mando, rebote indirecto en roundels y bloom dorado controlado.
-  material_texture: Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y cableado trenzado.
+  material_texture: >-
+    Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y
+    cableado trenzado.
   render_quality: Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.
   spatial_distortion: Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation
   atmosphere: Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.
   key_features: Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.
   creative_brief: >-
-    Formula una gramática reusable de console-chamber "bigger-on-the-inside"
-    donde jerarquía de energía central, ritmo mural roundel y capas orgánico-
-    retrotech dimensionales permanezcan constantes entre sujetos.
+    Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no
+    euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando táctil. Apply
+    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
+    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
+    creature, or fixed scene.
 avoidRules:
   - small
 assets:
@@ -34,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - megastructure-and-impossible-space
   supportedTasks:
     - image_generate
     - image_edit

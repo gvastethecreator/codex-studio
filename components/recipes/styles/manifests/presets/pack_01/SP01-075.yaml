@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Lonely, post-apocalyptic
   key_features: Ruin texture
-  creative_brief: 'Urbex style turns any subject into evidence of abandonment: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and haunting documentary grit. Keep ruin atmosphere without requiring buildings, rooms, plaster, or post-apocalyptic scene.'
+  creative_brief: >-
+    Apply urbex abandonment to the input: desaturated rust palette, peeling
+    layers, dust, debris texture, lonely light shafts, and documentary grit
+    should age any subject without requiring buildings or post-apocalyptic setting.
 avoidRules:
   - clean
   - new

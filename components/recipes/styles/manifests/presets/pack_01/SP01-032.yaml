@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Quiet, cold
   key_features: Blue cast
-  creative_brief: The suspended stillness between darkness and dawn, when the world holds its breath wrapped in indigo silence. No sun to cast shadows, only the ambient exhale of a sky transitioning through violet depths. A quietude so profound you can almost hear the color blue.
+  creative_brief: >-
+    Apply blue-hour ambient stillness to the input: indigo-violet low light,
+    soft shadowless exposure, cool atmospheric fill, and quiet transitional
+    color should calm any subject without requiring sky or dawn backdrop.
 avoidRules:
   - sun
   - orange

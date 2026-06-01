@@ -13,7 +13,9 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: Tragic conflict-anime style with institutional gravity, elegiac pacing, and large-scale mechanized weight
-  form_and_line: Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful still-frame counterbeats
+  form_and_line: >-
+    Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful still-frame
+    counterbeats
   color_palette: Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights
   lighting_setup: Diffused overcast with intermittent rupture flashes, long shadow veils, and documentary-like contrast restraint
   material_texture: Sooted metal surfaces, churned particulate, worn fabric grain, static noise overlays for archival tragedy tone
@@ -22,9 +24,10 @@ visualDna:
   atmosphere: Somber, catastrophic, heavy, mournful, relentless
   key_features: Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure grammar
   creative_brief: >-
-    Preserve this preset as an elegy language: desaturated conflict weight,
-    institutional silhouette discipline, and grief-forward pacing should define
-    it beyond any specific tactical setup.
+    Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette discipline, and
+    grief-forward pacing should define it beyond any specific tactical setup. Apply this anime/IP-title grammar over any
+    input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while
+    avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +44,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-036.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

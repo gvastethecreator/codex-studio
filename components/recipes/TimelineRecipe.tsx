@@ -19,6 +19,7 @@ import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from
 import { RATIO_MAP } from '../../constants';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
+import { QuickStartText } from './QuickStartText';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
@@ -360,14 +361,11 @@ function TimelineCanvas({
               <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all shadow-2xl">
                 <Clock size={32} className="text-zinc-600 group-hover:text-teal-400" />
               </div>
-              <div className="text-center">
-                <h3 className="text-xl font-black text-zinc-500 group-hover:text-white uppercase tracking-tight">
-                  Load Scene Keyframe or Prompt
-                </h3>
-                <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-[0.2em] mt-2">
-                  The starting point of time
-                </p>
-              </div>
+              <QuickStartText
+                title="Load Scene Keyframe or Prompt"
+                subtitle="The starting point of time"
+                maxTitleFontSize={20}
+              />
             </button>
           )}
         </div>

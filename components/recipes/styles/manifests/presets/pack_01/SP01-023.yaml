@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Curved horizon
   atmosphere: Active, immersive
   key_features: Wide FOV
-  creative_brief: 'The lens bends space around experience: ultra-wide FOV, curved horizons, digital sharpening, hard available light, and foreground exaggeration pulling viewer close. Apply immersive action-camera POV to any subject, even still objects, without requiring sports, travel, or outdoor action.'
+  creative_brief: >-
+    Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon
+    distortion, digital sharpness, hard available light, and foreground pull
+    should make any subject immersive without requiring sports or travel.
 avoidRules:
   - illustration
   - painting

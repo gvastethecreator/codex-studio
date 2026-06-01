@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Emotion-forward, dramatic, contemporary digital storytelling
   key_features: Vertical pacing gaps, beat-driven panel stacking, gradient-backed emphasis moments
   creative_brief: >-
-    Design for continuous vertical reading rhythm. Balance expressive characters, high-contrast focal points, and spacing-driven pacing so emotion lands panel-to-panel without relying on fixed scene staging or single-shot composition tropes.
+    Apply vertical-scroll webtoon grammar to any input: mobile-first spacing, clean digital
+    contours, saturated full color, beat gaps, and high-contrast focal stacking should create
+    episode rhythm without requiring characters, romance beats, dialogue panels, phone UI, or fixed
+    scene staging.
 avoidRules:
   - black and white
 assets:

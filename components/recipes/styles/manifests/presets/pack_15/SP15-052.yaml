@@ -4,8 +4,14 @@ packId: pack_15
 name: Velvet Broadcast Hall
 category: 9. Corepunk — Decopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - decopunk
 visualDna:
   aesthetic: Velvet authority system where voice is not sound but architecture, signal, ritual, and soft propaganda.
   form_and_line: Acoustic fan ribs, signal-spine towers, stage-like arcs, waveform grille patterns, and speaker-box stacks.
@@ -15,22 +21,37 @@ visualDna:
   render_quality: Interior concept with rich tonal staging, readable broadcast hardware, and theatrical command of attention.
   spatial_distortion: Composition compresses toward a broadcast axis while fan walls radiate signal outward.
   atmosphere: Glamorous control, official intimacy, signal authority, and performance discipline.
-  key_features: Sculptural microphone motifs, waveform walls, broadcast dais geometry, orchestra-pit arcs, glowing meters, and brass grilles.
+  key_features: >-
+    Sculptural microphone motifs, waveform walls, broadcast dais geometry, orchestra-pit arcs, glowing meters, and brass
+    grilles.
   creative_brief: >-
-    Preserve velvet broadcast-hall grammar as a reusable style system:
-    staged voice authority, burgundy acoustic softness, and chrome signal
-    ritual should remain coherent across subjects.
-avoidRules: [photoreal, minimalist, cyber-noise, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-052.webp }
+    Turn the input into broadcast authority made tactile: burgundy acoustic ribs, chrome microphone glints, vacuum-tube
+    amber, waveform brass grilles, and signal-spine geometry should command attention. Halls or stages can appear, but
+    the style is voice as architecture. Apply this corepunk genre grammar over any input: preserve the faction mood,
+    material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city,
+    vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - minimalist
+  - cyber-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-052.webp
 attributes:
   negativePrompt: photoreal, minimalist, cyber-noise, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-decopunk,
-    categoryName: 9. Corepunk — Decopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-decopunk
+  categoryName: 9. Corepunk — Decopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - decopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -22,7 +22,9 @@ visualDna:
   atmosphere: Iterative studio workflow, design-review readiness
   key_features: Silhouette matrices, swatch clusters, trim notes, color strip comparisons
   creative_brief: >-
-    Build wardrobe identity through systematic variation, not single-look finality. Pair silhouette options with textile behavior and palette alternatives so fit, readability, and character coding can be evaluated quickly across multiple production directions.
+    Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette swatches,
+    accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms into fashion/costume
+    language without requiring a model sheet, clothing catalog, or posed figure.
 avoidRules:
   - finished
   - one version

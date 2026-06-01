@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Magical, alien
   key_features: Dark background
-  creative_brief: 'Organic-looking light appears born from within the subject: blue-green phosphor glow, dark-background separation, soft emissive edges, and alien biological rhythm. Keep bioluminescent self-illumination without requiring water, skin, creatures, Avatar, or underwater scenes.'
+  creative_brief: >-
+    Apply bioluminescent self-illumination to the input: blue-green phosphor
+    glow, dark-background separation, soft emissive edges, and alien organic
+    rhythm should light any subject from within without requiring water or creatures.
 avoidRules:
   - sun
   - day

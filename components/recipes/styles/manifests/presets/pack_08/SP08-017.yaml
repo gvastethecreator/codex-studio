@@ -12,16 +12,21 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Steve Jobs/Zuckerberg tech-founder uniform, black turtleneck authority, keynote-stage iconography
+  aesthetic: Tech-founder uniform, black turtleneck authority, product-launch minimalism
   form_and_line: Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve
   color_palette: Black, Grey, Navy, charcoal, midnight navy, washed black, graphite
-  lighting_setup: Stage light, keynote spotlight, product-launch haze, auditorium backlight
+  lighting_setup: Controlled product-launch spotlight, soft auditorium backlight, keynote-grade haze
   material_texture: Cotton t-shirt, merino turtleneck, selvedge denim, New Balance suede, brushed cashmere
   render_quality: Minimal, rich, billionaire-casual precision, uniform dressing philosophy
   spatial_distortion: None
-  atmosphere: Serious, visionary, keynote gravitas, disruptive calm, controlled intensity
+  atmosphere: Serious, visionary, disruptive calm, controlled intensity, uniform-dressing certainty
   key_features: Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding
-  creative_brief: One decision eliminated each morning, the black turtleneck absorbing all questions about identity so the mind can orbit bigger problems. Merino wool and round-frame glasses as uniform of a priesthood that worships iteration speed, standing alone on a stage lit for revelation, wearing the simplicity that costs a billion dollars to achieve.
+  creative_brief: >-
+    Reduce the input to tech-founder uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces,
+    columnar silhouette and product-launch restraint. Keep visionary keynote energy as polish, but avoid requiring a
+    stage, founder portrait, glasses or specific tech persona. Apply this fashion/costume grammar over any input:
+    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
+    body, portrait, runway, room, prop, role, or fixed character scene.
 avoidRules:
   - suit
   - tie
@@ -42,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

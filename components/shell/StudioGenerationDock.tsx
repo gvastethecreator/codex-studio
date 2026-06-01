@@ -8,6 +8,7 @@ import { BottomToolbar } from '../ui/BottomToolbar';
 
 interface StudioGenerationDockProps {
   isModalOpen: boolean;
+  isUiChromeSuppressed: boolean;
   currentView: AppPageView;
   activeRecipe: RecipeId | null;
   isDragging: boolean;
@@ -16,12 +17,14 @@ interface StudioGenerationDockProps {
 
 const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   isModalOpen,
+  isUiChromeSuppressed,
   currentView,
   activeRecipe,
   isDragging,
   toolbarProps,
 }) => {
-  const isVisible = !isModalOpen && (currentView === 'studio' || !!activeRecipe);
+  const isVisible =
+    !isModalOpen && !isUiChromeSuppressed && (currentView === 'studio' || !!activeRecipe);
 
   if (!isVisible) {
     return null;
@@ -30,7 +33,10 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   return (
     <BottomToolbar className="w-full relative z-30 shrink-0">
       <DropZoneOverlay isVisible={isDragging} />
-      <Toolbar {...toolbarProps} />
+      <Toolbar
+        {...toolbarProps}
+        interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
+      />
     </BottomToolbar>
   );
 };

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Swirling brush current, paint-flow drift, animated impasto displacement
   atmosphere: Artistic, emotional, painterly devotion, melancholic beauty
   key_features: Brush direction, visible stroke, canvas weave, palette texture
-  creative_brief: 'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical scene quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes.'
+  creative_brief: >-
+    Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife
+    texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or
+    art-historical composition quotes. The result should prioritize material paint behavior and gallery-grade movement
+    over literal subject changes. Apply Oil Paint Animation as a portable cinematic/camera style over any input:
+    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding
+    a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - digital
   - sharp

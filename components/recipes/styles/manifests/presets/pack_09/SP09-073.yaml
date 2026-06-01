@@ -12,7 +12,7 @@ tags:
   - texture-and-materiality
   - fx-and-procedural-materiality
 visualDna:
-  aesthetic: Kitchen floor 70s
+  aesthetic: Retro linoleum pattern
   form_and_line: Printed pattern
   color_palette: Beige, pattern
   lighting_setup: Waxy sheen
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Peeling corner
   atmosphere: Nostalgic, home
   key_features: Repeat pattern
-  creative_brief: Render the nostalgic pattern of mid-century linoleum where printed motifs repeat across a waxy beige surface, edges curling slightly with age like a photograph of domestic memory. The material should feel smooth but tired, a floor that has witnessed decades of footsteps in kitchens long remodeled. Capture the warmth of the retro, the domestic archaeology of an ordinary afternoon preserved in vinyl.
+  creative_brief: 'Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.'
 avoidRules:
   - tile
   - wood

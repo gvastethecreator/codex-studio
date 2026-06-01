@@ -4,8 +4,14 @@ packId: pack_15
 name: Rocket Cathedral Arcade
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
   aesthetic: Monumental raypunk sacred-science design without literal worship staging.
   form_and_line: Pointed rocket arches, ribbed tube vaults, cruciform vectors, and mission-mosaic grids.
@@ -17,20 +23,34 @@ visualDna:
   atmosphere: Triumphal curiosity, solemn innovation, and civic mythmaking.
   key_features: Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.
   creative_brief: >-
-    Preserve rocket cathedral-arcade grammar as a reusable style language:
-    sacred-science monumental planning, longitudinal launch choreography, and
-    civic mythmaking cues should remain stable across any subject.
-avoidRules: [photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-026.webp }
+    Give the input sacred-science scale: rocket arches, plasma-blue ribs, mission-mosaic grids, ivory ceramic light, and
+    processional launch symmetry. Cathedral or arcade cues may appear, but the style is civic mythmaking through
+    monumental function, not worship staging. Apply this corepunk genre grammar over any input: preserve the faction
+    mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required
+    city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+avoidRules:
+  - photoreal
+  - dystopian-decay
+  - rustic-medieval
+  - grim-bunker-only
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-026.webp
 attributes:
   negativePrompt: photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

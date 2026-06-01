@@ -23,7 +23,9 @@ visualDna:
   key_features: Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.
   creative_brief: >-
     Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada:
-    asombro, escala aérea y diseño retro-mecánico sin imponer islas flotantes, robots, ruinas ni personajes exploradores.
+    asombro, escala aérea y diseño retro-mecánico. Puede elevar el input con
+    robots nobles, ruina suspendida, ingeniería aérea o silueta exploradora si
+    suma identidad, sin fijar isla flotante ni escena de expedición.
 avoidRules:
   - realistic
   - 3d render

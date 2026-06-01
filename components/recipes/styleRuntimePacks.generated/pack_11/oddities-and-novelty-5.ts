@@ -10,7 +10,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'burnt',
     style: {
       aesthetic:
-        'Fresh bread and pastries, boulangerie-window, artisan-crust, early-morning-bake, yeast-sunrise',
+        'Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow',
       form_and_line:
         'Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers',
       color_palette:
@@ -23,11 +23,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Warm, homey, crackling-crust symphony, butter-scent memory, artisan-oven, break-fast ritual',
       spatial_distortion:
         'Rising dough, proofed-volume, oven-spring bloom, ear-and-gringe expansion, scoring-blade slash',
-      atmosphere: 'Comfort, smell, bakery-dawn, yeast-aroma, crust-tap satisfaction, carb-comfort',
+      atmosphere: 'Comfort, warmth, yeast-aroma, crust-tap satisfaction, carb-comfort',
       key_features:
         'Steam, flour-dusting, scoring-blade marks, crust-crack fissure, golden-crumb honeycomb, parchment-paper, banneton-ring',
       creative_brief:
-        'Highlight artisan bread cues through crust scoring, crumb honeycomb structure, and warm bakehouse color temperature. Keep the visual language focused on texture-rich freshness and handcrafted baking detail across varied pastry forms.',
+        'Translate the input through artisan bakery language: crust scoring, crumb honeycomb structure, flour dust, laminated layers, steam haze, and warm bakehouse color temperature. Keep texture-rich freshness, without requiring a window display, bakery room, or specific pastry.',
     },
   },
   {
@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'rotten, still',
     style: {
       aesthetic:
-        'Slicing fruit in air, splash-photography, high-speed-nature, juice-explosion, orchard-dynamism',
+        'High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism',
       form_and_line:
         'Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral',
       color_palette:
@@ -50,12 +50,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Fresh, dynamic, frozen-in-flight, split-second-splash, fruit-ninja zen, liquid-sculpture',
       spatial_distortion:
         'Exploding, radial-burst, centrifugal-juice, peel-unfurling, seed-launch trajectory',
-      atmosphere:
-        'Energy, vitamin, orchard-vitality, splash-play, life-force, morning-juice vitality',
+      atmosphere: 'Energy, vitamin-bright, fresh, splash-play, life-force, morning-juice vitality',
       key_features:
         'Juice drops, seed-suspension, peel-spiral, pulp-splash, knife-blade reflection, fruit-half cross-section, mid-air-droplet constellation',
       creative_brief:
-        'Compose high-speed fruit impact imagery with suspended droplets, radial pulp motion, and crisp cut geometry. Preserve kinetic freshness and strobe-frozen energy while keeping subjects and arrangements broadly interchangeable.',
+        'Apply high-speed freshness-burst logic to the input: suspended droplets, radial pulp or liquid motion, crisp cut geometry, peel-like curls, and strobe-frozen energy. Fruit cues can anchor the preset, but avoid requiring a knife, orchard, specific fruit, or literal slicing scene.',
     },
   },
   {
@@ -64,24 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'cooked, dry',
     style: {
-      aesthetic: 'Fresh sashimi, omakase-counter, fish-market dawn, sushi-master zen, itamae-art',
+      aesthetic:
+        'Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint',
       form_and_line:
         'Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement',
       color_palette:
         'Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green',
       lighting_setup:
-        'Glossy fish oil, sushi-counter spotlight, soy-sauce pool reflection, wasabi-grain texture light',
+        'Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light',
       material_texture:
         'Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char',
-      render_quality: 'Fresh, japanese, tsukiji-auction, Edomae-tradition, knife-skill reverence',
+      render_quality:
+        'Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish',
       spatial_distortion:
-        'None, natural-proportion, geta-board framing, sashimi-fan geometry, nigiri-oval balance',
-      atmosphere:
-        'Clean, tasty, sushi-counter quiet, soy-sauce dip anticipation, wasabi-nose-cleanse',
+        'Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing',
+      atmosphere: 'Clean, tasty, quiet, precise, fresh-cut anticipation',
       key_features:
         'Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish',
       creative_brief:
-        'Emphasize precision-cut seafood geometry, shari grain structure, and disciplined arrangement rhythm typical of high-end sushi presentation. Preserve freshness cues, lacquer contrast, and minimalist balance for reusable omakase-style direction.',
+        'Apply omakase presentation logic to the input: precision-cut geometry, disciplined spacing, glossy freshness cues, lacquer contrast, and minimal plate balance. Seafood, shari, nori, or wasabi can reinforce the style, but do not require a counter, fish market, platter, or single dish.',
     },
   },
   {
@@ -103,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
       key_features: 'Visible fold lines, tab-and-slot joins, score marks, polygon faces',
       creative_brief:
-        'Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling.',
+        'Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling. Apply Papercraft Low Poly as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -112,24 +112,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'sharp, flat',
     style: {
-      aesthetic: 'Twisted balloon animal, birthday-party clown, squeaky menagerie, latex zoo',
+      aesthetic:
+        'Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty',
       form_and_line: 'Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends',
       color_palette:
         'Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss',
       lighting_setup:
-        'High specular highlights, party-room glare, overhead fluorescent, balloon-surface reflection',
+        'High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection',
       material_texture:
         'Stretched rubber, latex skin, powder-dusted finish, taut inflation tension',
       render_quality:
-        'Party, fragile, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
+        'Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
       spatial_distortion:
         'Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form',
-      atmosphere:
-        'Fun, squeaky, celebration, birthday-cake excitement, carnival-joy, shared laughter',
+      atmosphere: 'Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary',
       key_features:
         'Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings',
       creative_brief:
-        'Keep the preset defined by latex-twist construction grammar: segmented tubular inflation, knot-node articulation, and glossy pressure-tension highlights should carry the style beyond any fixed party scene.',
+        'Convert the input into latex-twist construction grammar: segmented tubular inflation, knot-node articulation, glossy pressure-tension highlights, and inflated simplification should drive the style without requiring clowns, birthdays, animals, or a party room.',
     },
   },
   {
@@ -154,7 +154,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Black outlines mandatory, lead-came shadows, solder joints, textured glass surface',
       creative_brief:
-        'Build imagery as interconnected glass cells framed by dark lead lines. Emphasize backlit translucency, jewel-tone contrast, and subtle glass imperfections so illumination feels material and architectural.',
+        'Build imagery as interconnected glass cells framed by dark lead lines. Emphasize backlit translucency, jewel-tone contrast, and subtle glass imperfections so illumination feels material and architectural. Apply Stained Glass as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -163,23 +163,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'solid, paint',
     style: {
-      aesthetic: 'Coffee foam drawing, espresso-canvas art, barista-crema, morning-ritual beauty',
+      aesthetic:
+        'Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art',
       form_and_line:
         'Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry',
       color_palette:
         'Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory',
-      lighting_setup: 'Overhead cafe, counter-spot warmth, crema-gloss catch, steamed-milk sheen',
+      lighting_setup:
+        'Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen',
       material_texture:
         'Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas',
       render_quality:
         'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
       spatial_distortion:
-        'Liquid surface, pour-path flow, surface-tension boundary, ceramic-cup curvature',
-      atmosphere: 'Cozy, morning, cafe-hum warmth, espresso-machine rhythm, first-sip quiet',
+        'Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature',
+      atmosphere: 'Cozy, warm, temporary, crafted, first-sip quiet',
       key_features:
-        'Cup rim, crema ring, latte-art rosetta, saucer-spoon, steamed-milk gloss, pour-steam wisps',
+        'Crema ring, latte-art rosetta, steamed-milk gloss, microfoam bubbles, pour-steam wisps',
       creative_brief:
-        'Anchor this preset in latte-surface grammar: microfoam density control, crema-contrast flow patterns, and pour-path symmetry should define identity beyond one café narrative moment.',
+        'Anchor this preset in latte-surface grammar: microfoam density control, crema-contrast flow patterns, pour-path symmetry, and soft liquid-edge behavior should transform the input. A cup or rosetta can reinforce the style, but avoid locking the result to a cafe table scene.',
     },
   },
   {
@@ -201,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
       key_features: 'Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending',
       creative_brief:
-        'Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression.',
+        'Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply Chalkboard Art as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -210,7 +212,8 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Oddities And Novelty',
     negativePrompt: 'water, paint',
     style: {
-      aesthetic: 'Bottle sand layer, desert-souvenir craft, grain-by-grain art, patience bottled',
+      aesthetic:
+        'Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art',
       form_and_line:
         'Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles',
       color_palette:
@@ -221,13 +224,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique',
       spatial_distortion:
-        'Gravity layers, horizontal-strata formation, uphill-camel silhouette, canyon-wall illusion',
+        'Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion',
       atmosphere:
-        'Patience, nature, desert-quiet, beach-memory, wandering-nomad, sun-baked stillness',
+        'Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance',
       key_features:
-        'Layers, color-strata bands, glass-bottle curve, cork-seal top, pour-funnel marks',
+        'Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion',
       creative_brief:
-        'Keep this preset grounded in gravity-layered sand grammar: stratified pour bands, granular edge behavior, and bottle-curvature distortion should define style beyond any specific souvenir narrative.',
+        'Apply gravity-layered sand grammar to the input: stratified pour bands, granular edge behavior, sediment compression, and mineral color separation should define the style. Bottle curvature may appear as a framing cue, but do not require a souvenir bottle, desert scene, camel, or beach memory.',
     },
   },
   {
@@ -253,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection',
       creative_brief:
-        'Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks, melt-phase transitions, and facet-driven light behavior should define style beyond a specific event setting.',
+        'Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks, melt-phase transitions, and facet-driven light behavior should define style beyond a specific event setting. Apply Ice Carving as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -276,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pepper shading dots, banner typography, emblematic motif blocks, thick contour lock',
       creative_brief:
-        'Design each motif as a standalone flash emblem: thick outlines, limited palette fills, and compact symbolic forms. Keep contrast and shape clarity high so marks remain legible at both sheet and tattoo scales.',
+        'Design each motif as a standalone flash emblem: thick outlines, limited palette fills, and compact symbolic forms. Keep contrast and shape clarity high so marks remain legible at both sheet and tattoo scales. Apply Tattoo Flash as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -304,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference',
       creative_brief:
-        'Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string hierarchy, title-block structure, and diazo-paper tone should carry identity without a fixed building story.',
+        'Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string hierarchy, title-block structure, and diazo-paper tone should carry identity without a fixed building story. Apply Blueprint as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -330,7 +333,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast',
       creative_brief:
-        'Preserve this preset through thermal-imaging grammar: emissive heat maps, false-color temperature bands, sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt narratives.',
+        'Preserve this preset through thermal-imaging grammar: emissive heat maps, false-color temperature bands, sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt narratives. Apply Thermal Vision as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -357,7 +360,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Books and coffee, quill-and-inkwell, brass reading lamps, leather-bound stacks',
       creative_brief:
-        'Preserve identity through gothic-academic atmosphere grammar: mahogany, leather, dust-lit shafts, and candle-warm chiaroscuro should carry the preset without tying it to one specific institution or room.',
+        'Preserve identity through gothic-academic atmosphere grammar: mahogany, leather, dust-lit shafts, and candle-warm chiaroscuro should carry the preset without tying it to one specific institution or room. Apply Dark Academia as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -383,7 +386,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Lens flare, glossy-aqua button, grass-green progress bar, brushed-metal window chrome, droplet-reflection',
       creative_brief:
-        'Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects.',
+        'Build a Frutiger Aero system from glossy rounded controls, aqua translucency, and bright eco-tech accents. Maintain optimistic Y2K interface energy with modular UI motifs that can adapt across multiple subjects. Apply Frutiger Aero as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -410,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Botanical motif density, textile-and-ceramic warmth, handmade domestic texture stack, slow-living compositional pacing',
       creative_brief:
-        'Keep this preset defined by soft botanical domestic craft language and warm tactile calm; it should communicate gentle slow-living atmosphere without locking into a single countryside vignette.',
+        'Keep this preset defined by soft botanical domestic craft language and warm tactile calm; it should communicate gentle slow-living atmosphere without locking into a single countryside vignette. Apply Cottagecore as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -435,7 +438,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Skull iconography, purity seals, cathedral spires, battle-scarred armor plates, relic-tech ornament',
       creative_brief:
-        'Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials. Keep the tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to a specific franchise scene.',
+        'Prioritize monumental gothic-industrial massing, ritualized insignia, and heavily weathered war materials. Keep the tone oppressive and fatalistic through scale, grime, and relic-tech ornament without anchoring to a specific franchise scene. Apply Grimdark as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -463,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail',
       creative_brief:
-        'Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative.',
+        'Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative. Apply Insect Eye as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -490,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle',
       creative_brief:
-        'Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints.',
+        'Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints. Apply Iris/Eye Macro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -545,7 +548,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Chips, bond-pads, via-arrays, standard-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
       creative_brief:
-        'Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture.',
+        'Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture. Apply Circuit Board as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -572,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge',
       creative_brief:
-        'Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material studies.',
+        'Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material studies. Apply Fiber/Fabric Macro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -627,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem',
       creative_brief:
-        'Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock.',
+        'Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock. Apply Dandelion Seed as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -680,7 +683,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface',
       creative_brief:
-        'Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product surfaces.',
+        'Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product surfaces. Apply Carbon Fiber as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -706,7 +709,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture',
       creative_brief:
-        'Emphasize fluid-dynamics choreography with plume morphology, tendril vortices, and diffusion gradients suspended in clear liquid volume. Keep the abstraction kinetic and physically grounded, independent of one tank setup.',
+        'Emphasize fluid-dynamics choreography with plume morphology, tendril vortices, and diffusion gradients suspended in clear liquid volume. Keep the abstraction kinetic and physically grounded, independent of one tank setup. Apply Ink in Water as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
   {
@@ -731,7 +734,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch',
       creative_brief:
-        'Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers.',
+        'Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers. Apply Sandpaper as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

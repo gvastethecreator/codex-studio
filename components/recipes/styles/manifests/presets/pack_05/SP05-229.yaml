@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-229
 packId: pack_05
-name: Cyber City Oedo 808 - Prison Hacker Neon Vice
+name: Punitive Neon Vice Texture
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,35 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Gritty enforcement-cyberpunk anime style with analog surveillance mood, punitive tech iconography, and hardboiled futurist attitude
-  form_and_line: Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight shifts
-  color_palette: Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red warning accents
-  lighting_setup: Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with localized glow bursts
-  material_texture: Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily reflective film
-  render_quality: Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined compositing
-  spatial_distortion: Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and visual tension
+  aesthetic: >-
+    Gritty enforcement cyberpunk anime with punitive tech iconography, warning-light discipline,
+    analog surveillance mood, and hardboiled abrasion
+  form_and_line: >-
+    Dense industrial inking, rigid angular anatomy, mechanical panel etching, severe contour weight
+    shifts
+  color_palette: >-
+    Polluted tungsten ambers, toxic cyans, bruised violets, dirty steel greys, constrained red
+    warning accents
+  lighting_setup: >-
+    Harsh top-lit practicals, strip-light reflections, narrow rim passes, low-key contrast with
+    localized glow bursts
+  material_texture: >-
+    Scuffed metal casings, worn polymer shells, cable abrasion marks, oxidized fasteners, oily
+    reflective film
+  render_quality: >-
+    Mature seinen-mecha finish emphasizing grime realism, mechanical fidelity, and disciplined
+    compositing
+  spatial_distortion: >-
+    Compressed telephoto pressure mixed with abrupt perspective breaks for tactical hostility and
+    visual tension
   atmosphere: Coercive, paranoid, punitive, claustrophobic, electrically unstable
-  key_features: Enforcement-tech silhouette language, warning-light color discipline, abrasion-heavy armor surfaces, surveillance-era mechanical detailing
-  creative_brief: Encode a law-and-pressure cyber aesthetic through texture wear, austere lighting, and mechanical severity; avoid fixed story beats so the preset remains reusable across subjects.
+  key_features: >-
+    Warning lights, enforcement-tech silhouettes, worn armor texture, surveillance-era detail, hard
+    neon vice, and mechanical severity
+  creative_brief: >-
+    Use Cyber City Oedo 808 as style anchor for punitive neon vice texture. Any prompt should feel
+    abrasive, surveilled, constrained, and neon-hard. Prisoners, hackers, police, missions, alleys,
+    and fixed story beats are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-229.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

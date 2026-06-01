@@ -12,20 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Photorealistic anime linework with documentary-frame gravity, lived-in wear, adult-drama restraint, labor marks, and zero glamour
-  form_and_line: Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy, and no idealized pose language
-  color_palette: Concrete gray, fluorescent green cast, aged-skin ochre, smoke-white haze, steel-blue shadows, and overcast desaturation
-  lighting_setup: Harsh practical fluorescents, overcast window softness, unflattering overhead light, and sodium-vapor night accents
-  material_texture: Pilled fabric, skin grain, stain realism, concrete aggregate, scuffed leather, and worn everyday material tactility
-  render_quality: Gritty documentary-anime still, hyper-realist rendering, adult-drama production polish, no gloss no glamour
-  spatial_distortion: Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic exaggeration
+  aesthetic: >-
+    Hard-lit realist seinen anime with documentary-frame gravity, lived-in wear, adult-drama
+    restraint, labor marks, and zero glamour
+  form_and_line: >-
+    Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy,
+    and no idealized pose language
+  color_palette: >-
+    Concrete gray, fluorescent green cast, aged-skin ochre, smoke-white haze, steel-blue shadows,
+    and overcast desaturation
+  lighting_setup: >-
+    Harsh practical fluorescents, overcast window softness, unflattering overhead light, and
+    sodium-vapor night accents
+  material_texture: >-
+    Pilled fabric, skin grain, stain realism, concrete aggregate, scuffed leather, and worn everyday
+    material tactility
+  render_quality: >-
+    Gritty documentary-anime still, hyper-realist rendering, adult-drama production polish, no gloss
+    no glamour
+  spatial_distortion: >-
+    Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic
+    exaggeration
   atmosphere: Weary, grounded, melancholic realism, adult resignation, quiet desperation
-  key_features: Facial pores and wrinkles, tired-eye weight, clothing fabric detail, worn surfaces, practical-light harshness
+  key_features: >-
+    Tired-eye weight, age-and-labor detail, worn surfaces, practical harsh light, grounded material
+    realism, and unsentimental framing
   creative_brief: >-
-    Preserve gritty realist seinen grammar as a reusable style system:
-    unflattering practical lighting, age-and-labor facial detail fidelity, and
-    grounded adult-drama material realism should remain consistent across
-    subjects without requiring salarymen, offices, cigarettes, or urban decay.
+    Use gritty realist seinen as hard-lit adult material grammar. Any prompt should gain worn
+    surfaces, tired detail, practical light, and unsentimental drama. Salarymen, offices,
+    cigarettes, urban decay, and human close-ups are optional.
 avoidRules:
   - cute
   - kawaii

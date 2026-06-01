@@ -4,8 +4,14 @@ packId: pack_15
 name: Neon Isotope Plaza
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Retro-atomic graphic language where optimism carries visible scientific risk.
   form_and_line: Boomerang silhouettes, orbit rings, radial burst geometry, and safety-icon curves.
@@ -17,21 +23,34 @@ visualDna:
   atmosphere: Confident progress, latent risk, and mid-century spectacle.
   key_features: Atom-halo badges, isotope glyph clusters, civic-poster framing, and controlled hazard accents.
   creative_brief: >-
-    Preserve neon isotope-plaza grammar as a reusable style system:
-    retro-atomic monumentality, spectacle-driven public science cues, and
-    latent-risk aesthetic tension should remain coherent across any subject.
+    Make the input a mid-century atomic warning poster come alive: isotope halos, boomerang cuts, uranium-chartreuse
+    glow, enamel panels, chrome risk reflections, and radial civic spectacle. Plaza cues are optional; the style is
+    optimistic science with a visible hazard pulse. Apply this corepunk genre grammar over any input: preserve the
+    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
+    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
 avoidRules:
-  [photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-019.webp }
+  - photoreal
+  - post-apocalypse-rust
+  - grimdark-gore
+  - medieval-elements
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-019.webp
 attributes:
   negativePrompt: photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

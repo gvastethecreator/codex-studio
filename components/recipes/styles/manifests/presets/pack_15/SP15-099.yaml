@@ -12,14 +12,14 @@ visualDna:
   color_palette: Leaf green, sunlit cream, and warm terracotta.
   lighting_setup: Filtered daylight through layered canopy leaves.
   material_texture: Bamboo-laminate, glass, woven fiber, and brushed steel.
-  render_quality: Optimistic city concept with crisp infrastructure detail.
+  render_quality: Optimistic biophilic render with crisp infrastructure detail and canopy mobility cues.
   spatial_distortion: Broad transit-like perspective leading through green frames and curved beams.
   atmosphere: Mobility, civic care, and breathable urban optimism.
   key_features: Transit-platform motifs, canopy span arcs, solar wayfinding panels, and leaf-filtered frames.
   creative_brief: >-
-    Preserve canopy tram-exchange grammar as a reusable style system:
-    biophilic mobility integration, breathable elevated transit frames, and
-    shaded civic calm should remain coherent across subjects.
+    Weave the input into canopy transit calm: leaf-filtered frames, bamboo-laminate
+    beams, solar wayfinding bands, terracotta platform arcs, and brushed-steel
+    mobility ribs make any subject feel breathable, elevated, and civic.
 avoidRules: [photoreal, dystopian, heavy-neon, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-099.webp }
 attributes:

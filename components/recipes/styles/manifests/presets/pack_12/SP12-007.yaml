@@ -12,14 +12,22 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Tactical shooter de asalto polar con enfoque en control por sectores, movilidad vertical y gestión climática.
-  subject_treatment: Escuadras de breacher/sniper/support con equipamiento térmico y anclajes magnéticos de ascenso.
+  aesthetic: >-
+    Gramática tactical-shooter polar con control por sectores, movilidad vertical, visibilidad térmica y clima como
+    sistema.
+  subject_treatment: >-
+    Aplica roles breacher/sniper/support o equipo térmico al input cuando corresponda; si no, usar anclajes, capas
+    antideslizantes y señales operativas.
   color_and_tone: Cian gélido, acero oscuro y naranjas de instrumentación para visibilidad operacional.
   lighting_and_shadow: Nublado difuso con destellos de artillería y blancos de nieve que alteran contraste perceptivo.
   texture_and_material: Hielo compacto, nieve pisada, escarcha en blindaje y superficies antideslizantes de combate.
-  camera_and_composition: Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego identificables.
+  camera_and_composition: Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego como lectura táctica flexible.
   atmosphere_and_mood: Resistencia extrema, precisión táctica y desgaste ambiental continuo.
   rendering_and_quality: Operation key art con lectura topográfica, claridad de objetivos y flujo de asedio.
+  creative_brief: >-
+    Aplica Glacier Fortress Assault como gramatica original de videojuego sobre cualquier input: conserva su sistema de
+    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text

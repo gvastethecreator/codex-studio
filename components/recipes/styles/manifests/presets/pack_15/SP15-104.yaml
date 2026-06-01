@@ -12,14 +12,14 @@ visualDna:
   color_palette: Leaf green, coral pink, and pearl white.
   lighting_setup: Dappled canopy light with gentle bioglow accents.
   material_texture: Living fabric, translucent membranes, and woven fiber.
-  render_quality: Bright civic biotech scene with highly readable stalls.
+  render_quality: Bright civic biotech render with readable mutualist canopy cues.
   spatial_distortion: Sweeping aisle-like depth under layered living roof forms.
   atmosphere: Exchange, nourishment, and mutual dependence.
   key_features: Symbiotic exchange motifs, nutrient-node shapes, canopy vent petals, and hanging pod clusters.
   creative_brief: >-
-    Preserve symbiont market-canopy grammar as a reusable style system:
-    cooperative bio-canopy commerce, nutrient-linked stall ecology, and
-    mutualist public exchange should remain coherent across subjects.
+    Shelter the input under symbiotic exchange: leaf-green bio-canopies,
+    coral-pink pod clusters, pearl membranes, nutrient-node accents, and vent
+    petal rhythms make any subject feel mutualist, nourished, and public.
 avoidRules: [photoreal, dystopian, harsh-neon, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-104.webp }
 attributes:

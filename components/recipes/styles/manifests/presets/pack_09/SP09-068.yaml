@@ -17,11 +17,17 @@ visualDna:
   color_palette: Black
   lighting_setup: Matte
   material_texture: Porous, sharp
-  render_quality: Volcanic, barren
+  render_quality: Volcanic, porous
   spatial_distortion: Flow lines
   atmosphere: Desolate, hard
   key_features: Air holes
-  creative_brief: Render the barren landscape of cooled basalt where gas bubbles have frozen into a black sponge of volcanic origin, sharp edges and flow lines testifying to the violence of its molten birth now stilled into permanence. The surface should feel light but hard, a paradox of porosity and durability, air holes mapping the escape of the fire that formed it. Capture the silence after the flame.
+  creative_brief: >-
+    Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken edges, frozen
+    gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or object exists, give it
+    lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without forcing a barren landscape. Use
+    Lava Rock as portable surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
+    landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth stone
 assets:

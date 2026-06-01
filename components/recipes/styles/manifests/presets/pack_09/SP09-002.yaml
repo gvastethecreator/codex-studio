@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Elegant, rich
   key_features: Smooth surface
-  creative_brief: Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not applied but released from within, a slow exhale of centuries.
+  creative_brief: >-
+    Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges transformed. The
+    surface should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here is not
+    applied but released from within, a slow exhale of centuries. Use Mahogany as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - dusty
   - rough

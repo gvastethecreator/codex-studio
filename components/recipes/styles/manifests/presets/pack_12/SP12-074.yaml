@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Card-duel clandestino urbano, orientado a mindgame, lectura de mano y presión psicológica competitiva.
-  subject_treatment: Duelistas callejeros con avatares holográficos y estilos de mazo distinguibles.
+  aesthetic: Gramática card-duel clandestina con mindgame, presión psicológica, avatares holográficos y lectura de mano.
+  subject_treatment: Convierte el input en duelista, avatar de mazo, carta, efecto o señal de ventaja competitiva.
   color_and_tone: Púrpura profundo, cian y amarillo neon para separar jugadores, efectos y estado crítico.
   lighting_and_shadow: Señalética fracturada como key light focal para mesa y zonas de público.
   texture_and_material: Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.
-  camera_and_composition: Mesa central con semicírculo de espectadores y focos en ventanas de jugada.
+  camera_and_composition: Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.
   atmosphere_and_mood: Tensa, estilizada y de apuestas altas.
   rendering_and_quality: Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.
 avoidRules:

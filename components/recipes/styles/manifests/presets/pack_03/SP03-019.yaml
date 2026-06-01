@@ -20,7 +20,11 @@ visualDna:
   render_quality: Sci-fi interface, AR overlay
   atmosphere: Futuristic, tech, ghost-data
   key_features: Transparency, flickering projection
-  creative_brief: An object built from interference patterns rather than matter — cyan and blue scanlines raster across transparent forms, and volumetric light constructs flicker at the edge of perception like a transmission fighting static. The image reads as ghost-data given shape, an AR overlay floating in physical space, defined by what it obscures rather than what it occupies. Sci-fi interface aesthetics rendered as architectural presence, a blueprint made visible through the air itself.
+  creative_brief: >-
+    Rebuild the input as ghost-data: cyan scanlines, transparent interference,
+    volumetric flicker, AR registration seams and blueprint-like light constructs.
+    Preserve sci-fi interface presence without requiring a floating object,
+    architecture mockup or physical room.
 avoidRules:
   - solid
   - opaque

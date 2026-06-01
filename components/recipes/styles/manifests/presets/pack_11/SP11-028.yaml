@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-028
 packId: pack_11
-name: Neon Sign
+name: Gas-Tube Halo Typography
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,19 +12,17 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Bar sign, night-window glow, storefront-beacon, electric-avenue art, motel-vacancy poetry
-  form_and_line: Glass tubes, bent-tube contour, cursive-glow stroke, continuous-bend silhouette
-  color_palette: Glowing Red, Blue, noble-gas spectrum, argon-purple, krypton-white, mercury-vapor cyan
-  lighting_setup: Self-illuminated, gas-discharge glow, halo-bleed onto wall, dark-ambient backdrop, buzzing-bright contrast
-  material_texture: Glass, gas glow, phosphor-coated tube, electrode-dark ends, warm-transformer hum, glass-bend annealing
-  render_quality: Nightlife, electric, vintage-boulevard nostalgia, rain-slick-street reflection, sign-painter's electric heir
-  spatial_distortion: Continuous line, one-stroke drawing illusion, tube-path negative-space, cursive-electric flow
-  atmosphere: Buzzing, night, last-call quiet, rain-on-neon romance, urban-loneliness beauty
-  key_features: Black backing, tube-mounting clips, transformer-glow warmth, glass-bend highlights, wall-wash halo
+  aesthetic: Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed
+  form_and_line: Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition
+  color_palette: Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill
+  lighting_setup: Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff
+  material_texture: Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light
+  render_quality: Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity
+  spatial_distortion: Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry
+  atmosphere: Nocturnal, electric, commercial, seductive, nostalgic, high-contrast
+  key_features: Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow reflections
   creative_brief: >-
-    Preserve identity through neon-sign grammar: bent tube continuity,
-    gas-discharge halo bleed, dark-background contrast, and reflective spill
-    should define style without locking to one storefront scene.
+    Render any subject as if its visual grammar were built from neon tubing and gas-discharge light. Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force storefronts, bars, signs, words, or wall-mounted objects.
 avoidRules:
   - daylight
   - paint

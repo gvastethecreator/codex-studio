@@ -24,8 +24,9 @@ visualDna:
   creative_brief: >-
     Build a reusable spiral-overdrive bravado grammar for any subject or input
     image: upward force, radial impact, impossible scale, saturated heroic
-    energy, and early-digital shonen clarity without imposing mecha, drills,
-    galaxies, sunglasses, throwdowns, or specific heroes.
+    energy, and early-digital shonen clarity. Spiral drills, mecha silhouettes,
+    cosmic scale, or heroic impact geometry may transform the input when useful,
+    without fixing a throwdown, galaxy set, sunglasses gag, or specific hero.
 avoidRules:
   - realistic
   - 3d render

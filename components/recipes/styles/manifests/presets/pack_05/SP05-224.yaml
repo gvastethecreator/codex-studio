@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-224
 packId: pack_05
-name: Appleseed - Tactical Arcology Assault
+name: Sterile Arcology Severity
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,32 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Tactical arcology assault, with clean futurism, bio-political severity, machine precision, and fragile postwar control.
-  form_and_line: Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor perspective, and severe panel discipline.
+  aesthetic: >-
+    Clean tactical futurism with sterile arcology pressure, ceramic hard surfaces, bio-political
+    restraint, and polished control geometry
+  form_and_line: >-
+    Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor
+    perspective, and severe panel discipline.
   color_palette: Ceramic white, tactical gray, cold cyan, muted olive, warning red, and polished black.
   lighting_setup: Clinical overhead glow, hard tactical rims, glass reflection planes, and cold specular control.
-  material_texture: Ceramic armor sheen, brushed composite, glassy architecture, carbon weave, sterile floor reflection, and synthetic dust.
-  render_quality: High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic scale.
-  spatial_distortion: Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without fixed squad staging.
+  material_texture: >-
+    Ceramic armor sheen, brushed composite, glassy architecture, carbon weave, sterile floor
+    reflection, and synthetic dust.
+  render_quality: >-
+    High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic
+    scale.
+  spatial_distortion: >-
+    Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without
+    fixed squad staging.
   atmosphere: Tactical, polished, civic, severe
-  key_features: Clean tactical grids, ceramic hard surfaces, bio-political tension, severe civic control, polished assault geometry.
+  key_features: >-
+    Sterile grids, ceramic reflections, severe civic control, polished tactical geometry, cold
+    material contrast, and bio-political pressure
   creative_brief: >-
-    Apply tactical arcology severity to any prompt through sterile grids,
-    ceramic surfaces, cold reflections, and controlled pressure without
-    requiring wearable hardware, squads, corridors, weapons, or a city-state setting.
+    Use Appleseed as style anchor for sterile arcology severity. Any prompt should feel controlled,
+    clean, tactical, and politically tense. If a body or object exists, add exosuit/ceramic-armor
+    logic or arcology control geometry; assaults, squads, corridors, weapons, and city-states remain
+    optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +54,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-224.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

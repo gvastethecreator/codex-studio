@@ -12,19 +12,26 @@ tags:
   - illustration-and-graphic-novel
   - comics-and-graphic-novel
 visualDna:
-  aesthetic: Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form language
-  form_and_line: Technical line discipline with aerodynamic panel segmentation, functional contour logic, and engineering-forward silhouette design
+  aesthetic: >-
+    Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form
+    language
+  form_and_line: >-
+    Technical line discipline with aerodynamic panel segmentation, functional contour logic, and
+    engineering-forward silhouette design
   color_palette: Industrial, gunmetal primaries, functional-finish spectrum
   lighting_setup: Studio, product-shot key, technical highlight
   material_texture: Metal, dirt
-  render_quality: High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language, and mobility-focused intent
+  render_quality: >-
+    High-fidelity industrial concept rendering emphasizing material separation, manufacturable form
+    language, and mobility-focused intent
   spatial_distortion: None
   atmosphere: Fast, tech, prototype adrenaline, engineering cool
   key_features: Perspective, technical form-language, callout detail
   creative_brief: >-
-    Keep this preset defined by vehicle-design grammar: aerodynamic surface
-    logic, functional panel hierarchy, and material-response readability should
-    drive identity without depending on a specific sci-fi model.
+    Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel
+    hierarchy, studio highlight control, material separation, and engineering-forward silhouette
+    should create mobility intent without requiring cars, spacecraft, wheels, cockpits, callouts, or
+    a specific sci-fi model.
 avoidRules:
   - organic
 assets:

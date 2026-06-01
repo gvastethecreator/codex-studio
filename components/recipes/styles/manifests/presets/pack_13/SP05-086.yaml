@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-086
 packId: pack_13
-name: Yuru Camp – Campfire Comfort
+name: Cold-Warm Restorative Comfort
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Outdoor-comfort anime language emphasizing practical intimacy, cold-warm contrast, and contemplative companionship
-  form_and_line: Relaxed rounded contouring with utilitarian readability, layered comfort silhouettes, and small-task micro-gesture clarity
-  color_palette: Cool mountain blues and pine greens balanced by firelit oranges, wool neutrals, and muted earthy accents
-  lighting_setup: Warm thermal key with cool ambient fill, ember-like micro-highlights, and gentle steam-lit edge separation
-  material_texture: Brushed textiles, enamel-like sheen, rough natural grain, thermal breath haze, and lightweight fabric diffusion
-  render_quality: Cozy high-clarity camp slice render with tactile gear detail, slow pacing tone, and comfort-forward atmospheric balance
-  spatial_distortion: Grounded natural-space framing with intimate foreground warmth and serene background depth
-  atmosphere: Serene, restorative, practical, and warmly introspective
-  key_features: Thermal comfort anchors, practical-use cues, cold-vs-warm tonal dialogue, and quiet companionship cues
+  aesthetic: >-
+    Restorative cold-warm comfort anime built from practical intimacy, thermal contrast, unhurried
+    pacing, and small rituals of care
+  form_and_line: >-
+    Relaxed rounded contours, layered comfort silhouettes, utility-readable shapes, and small-task
+    microgesture clarity
+  color_palette: >-
+    Cool pine green, mountain blue, ember orange, wool neutral, muted earth, and breath-haze
+    lavender
+  lighting_setup: >-
+    Warm thermal key against cool ambient fill, ember-like micro highlights, steam-soft rim
+    separation, and dusk-blue depth
+  material_texture: >-
+    Brushed textile, enamel sheen, rough natural grain, insulated fabric diffusion, vapor haze, and
+    practical worn surfaces
+  render_quality: >-
+    High-clarity cozy anime finish with tactile utility detail, slow comfort pacing, and balanced
+    atmosphere
+  spatial_distortion: >-
+    Intimate warmth pocket set against open cool space, using foreground heat and background calm as
+    composition logic
+  atmosphere: Serene, practical, restorative, warm, contemplative
+  key_features: >-
+    Thermal dialogue, layered comfort, practical-use cues, soft vapor, cold ambient space, and
+    unhurried companionship rhythm
   creative_brief: >-
-    Use the title as a style anchor for restorative outdoor warmth. Keep
-    practical intimacy, cold-warm dialogue, and unhurried pacing without
-    requiring campfire, food, tents, or camping props.
+    Use Yuru Camp as style anchor for cold-warm restorative comfort. Apply thermal pockets,
+    practical texture, slow pacing, and calm intimacy to any prompt. Campfire, food, tents, camping
+    props, and landscape views are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +57,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-086.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

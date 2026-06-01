@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Cinematic, slick, hyper-polished
   key_features: Octane signature spectral bloom
-  creative_brief: Light fractures into its constituent wavelengths like a prism held against the sun — spectral highlights bloom across glossy surfaces, each reflection a small revelation of physics made beautiful. Octane's GPU path tracing treats every photon as a character, scattering and bending with spectral precision. The image feels engineered by someone who understands that true polish is the absence of compromise.
+  creative_brief: >-
+    Render any input with Octane spectral GPU path-tracer polish: physically
+    precise glossy reflections, spectral dispersion, clean caustic hints,
+    high-contrast bloom, and portfolio-grade material clarity. Keep photon-rich
+    luxury without requiring a product pedestal, car, jewelry object, or studio
+    still life.
 avoidRules:
   - photo
   - drawing

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Patient, observant
   key_features: Blurred background
-  creative_brief: 'Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo look to any subject without forcing animals, forest, fur, feathers, or nature scenery.'
+  creative_brief: >-
+    Wildlife photography becomes patient telephoto grammar: compressed distance,
+    soft background, golden field light, natural camouflage color, and fine
+    surface detail. Apply an observant, nonintrusive field-photo look to any
+    subject without forcing animals, forest, fur, feathers, or nature setting.
 avoidRules:
   - zoo
   - cage

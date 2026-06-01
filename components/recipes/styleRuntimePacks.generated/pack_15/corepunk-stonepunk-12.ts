@@ -29,7 +29,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.',
       creative_brief:
-        'Preserve basalt gear-sanctuary grammar as a reusable style system: weight-driven mechanics, rope-and-ember labor rituals, and sacred stone machinery logic should remain coherent across subjects without requiring a sanctuary, figures, work bays, or a literal ritual site.',
+        'Crush the input into devotional stone machinery: basalt teeth, counterweight shafts, rope-burn fibers, ember pits, and carved tally marks should make technology feel older than speech. Sanctuaries, workers, or ritual sites may appear, but the style is weight, labor, and sacred mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.',
       creative_brief:
-        'Preserve megalith transit-spine grammar as a reusable style system: carved-route logistics, public counterweight mobility, and geological movement scale should remain coherent across subjects without requiring a road, trade gate, towers, sleds, or literal transit.',
+        'Stretch the input into public geology in motion: carved route grooves, counterweight blocks, rope-shadow grids, fossil-like distance marks, and stone-sled scars. Roads, trade gates, towers, or sleds can anchor the idea, but the style is civic distance engineered through megalithic effort. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -84,7 +84,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Spark-wheel modules, portable-anvil motifs, pit-forge mouths, barter-token marks, hemp pulley loops, and half-tested mechanisms.',
       creative_brief:
-        'Preserve flint engine-market grammar as a reusable style system: public improvisational fabrication, flint-and-hemp tool tactility, and visible test-repair marks should remain coherent across subjects without requiring stalls, markets, benches, tokens, or literal makers.',
+        'Make the input look half-tested in a public friction-age workshop: flint teeth, hemp pulley loops, cracked clay counters, spark wheels, and barter marks should create noisy invention. Markets, benches, tokens, or makers can appear, but the style is communal improvisation and dangerous tactility. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {
@@ -111,7 +111,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Obsidian channel geometry, carved calibration marks, falling-water rhythm, basin circles, and mineral-stain history.',
       creative_brief:
-        'Preserve obsidian water clock as a reusable style system: hydraulic timing, polished black stone, and ritual calibration marks should transform any subject without forcing clocks, temples, waterworks, or figures.',
+        'Calibrate the input as an obsidian water clock: polished black channels, falling-water rhythm, chalk incision marks, mineral teal caustics, and circular basin recursion transform any subject without forcing clocks, temples, waterworks, or figures.',
     },
   },
   {
@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cairn-stack rhythm, bone toggle markers, lime glyph bands, cord path diagrams, and semaphore-like diagonals.',
       creative_brief:
-        'Preserve bone lime signal cairn as a reusable style system: pre-electric communication, chalk-bone marking, and windswept stone network rhythm should apply to any subject without requiring cairns, flags, people, or a literal ridge.',
+        'Signal the input through bone lime cairn logic: chalk-bone markings, stacked-stone rhythm, ochre cord paths, wind-vane diagonals, and dry semaphore tension apply pre-electric network energy without requiring cairns, flags, people, or a literal ridge.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

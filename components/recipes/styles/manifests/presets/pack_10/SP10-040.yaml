@@ -18,10 +18,10 @@ visualDna:
   lighting_setup: Mismatched
   material_texture: Paper
   render_quality: Dada, retro
-  spatial_distortion: Big heads
+  spatial_distortion: Scale mismatch
   atmosphere: Absurd, funny
   key_features: Cutout look
-  creative_brief: Scissors impose new logic on old paper, a businessman's head transplanted onto a giraffe's body without explanation or apology. The absurd assembles itself from the discarded fragments of mass culture.
+  creative_brief: Apply collage surrealism as cut-paper recombination over the input with faded magazine stock, scissor edges, mismatched lighting, abrupt scale shifts, and absurd fragments assembled without seamless blending. If people, animals, products, or props exist, recombine them; otherwise fracture the subject into mass-culture cutouts without requiring a specific hybrid gag.
 avoidRules:
   - seamless
 assets:
@@ -41,4 +41,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

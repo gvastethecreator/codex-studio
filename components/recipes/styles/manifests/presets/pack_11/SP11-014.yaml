@@ -12,19 +12,27 @@ tags:
   - miscellaneous-and-fun
   - oddities-and-novelty
 visualDna:
-  aesthetic: Soft handcrafted pastoral-romantic style centered on slow-living warmth, botanical gentleness, and domestic natural charm
+  aesthetic: >-
+    Soft handcrafted pastoral-romantic style centered on slow-living warmth, botanical gentleness, and domestic natural
+    charm
   form_and_line: Delicate organic contouring, airy floral tendrils, soft textile drape lines, and graceful hand-drawn edge behavior
   color_palette: Muted pastel-earth harmonies with sage, cream, lavender, butter, and blush accents tuned for comforting balance
   lighting_setup: Diffused golden warmth with curtain-soft scatter, candlelike ambient glows, and misty morning low-contrast serenity
-  material_texture: Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and dried-botanical tactility
+  material_texture: >-
+    Natural-fiber linens, hand-thrown ceramic matte grain, wicker weave detail, embroidered thread cues, and
+    dried-botanical tactility
   render_quality: Cozy handcrafted finish emphasizing tactile intimacy, visual softness, and calm domestic-natural storytelling
   spatial_distortion: Natural human-scale proportions with close-range framing and gently compressed depth for intimate mood
   atmosphere: Peaceful, tender, cozy, romantic, unhurried
-  key_features: Botanical motif density, textile-and-ceramic warmth, handmade domestic texture stack, slow-living compositional pacing
+  key_features: >-
+    Botanical motif density, textile-and-ceramic warmth, handmade domestic texture stack, slow-living compositional
+    pacing
   creative_brief: >-
-    Keep this preset defined by soft botanical domestic craft language and warm
-    tactile calm; it should communicate gentle slow-living atmosphere without
-    locking into a single countryside vignette.
+    Keep this preset defined by soft botanical domestic craft language and warm tactile calm; it should communicate
+    gentle slow-living atmosphere without locking into a single countryside vignette. Apply Cottagecore as a portable
+    style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering
+    behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
+    template.
 avoidRules:
   - city
   - modern

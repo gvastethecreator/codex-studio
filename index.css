@@ -191,6 +191,24 @@ react-scan-overlay,
       filter var(--panel-open-dur) var(--panel-ease);
   }
 
+  [data-ui-chrome-suppressed='true'] .recipe-module-bottom-dock {
+    opacity: 0;
+    transform: translateY(16px);
+    pointer-events: none;
+  }
+
+  .quick-start-error-frame {
+    border: 1px solid rgba(248, 113, 113, 0.7) !important;
+    background: rgba(69, 10, 10, 0.18) !important;
+  }
+
+  .quick-start-error-float {
+    text-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.9),
+      0 8px 18px rgba(0, 0, 0, 0.7),
+      0 0 18px rgba(248, 113, 113, 0.24);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .t-panel-slide {
       transition: none !important;

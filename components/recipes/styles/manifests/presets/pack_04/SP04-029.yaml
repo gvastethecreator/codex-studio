@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Playful, punchy, identity-forward
   key_features: White border halo, isolated silhouette, peel-and-stick visual grammar
   creative_brief: >-
-    Build artwork as standalone decal units: clear silhouette, strong edge contrast, and high-chroma focal hierarchy. Keep compositions uncluttered and border-aware so designs stay recognizable at thumbnail and physical sticker scale.
+    Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact
+    vinyl gloss, saturated vector color, and thumbnail-readable edge contrast should make the
+    subject collectible without requiring mascots, icons, slogans, sticker sheets, or peel-off
+    props.
 avoidRules:
   - background
 assets:

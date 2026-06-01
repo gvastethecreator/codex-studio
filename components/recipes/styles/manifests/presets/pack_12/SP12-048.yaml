@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Urban-action crystalpunk de movilidad masiva, centrado en control de estación, tránsito y seguridad cívica militarizada.
-  subject_treatment: Siluetas cívico-militares por función de estación (control, mantenimiento, respuesta).
+  aesthetic: Gramática urban-action crystalpunk con tránsito masivo, movilidad por capas y seguridad cívica militarizada.
+  subject_treatment: Convierte el input en silueta cívico-militar, vehículo, estación parcial, señal de control o módulo de mantenimiento.
   color_and_tone: Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.
   lighting_and_shadow: Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.
   texture_and_material: Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.
-  camera_and_composition: Hub radial multi-nivel con vectores de circulación y sightlines tácticas limpias.
+  camera_and_composition: Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.
   atmosphere_and_mood: Ordenada, veloz y con tensión de seguridad contenida.
   rendering_and_quality: AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.
 avoidRules:

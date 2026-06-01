@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: Fine cracks
   atmosphere: Creepy, old
   key_features: Crack network
-  creative_brief: Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The crack network should spread organically like roots seeking water, each line a record of stress survived. Render the beauty of the almost-broken, fragility that has chosen to endure.
+  creative_brief: >-
+    Compose the delicate horror of crazed porcelain where a fine network of cracks maps the surface like a frozen
+    lightning storm in cream and white, the glaze still gleaming smooth above fractures held in perpetual arrest. The
+    crack network should spread organically like roots seeking water, each line a record of stress survived. Render the
+    beauty of the almost-broken, fragility that has chosen to endure. Use Porcelain as portable surface/render behavior
+    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
+    material naturally appears.
 avoidRules:
   - plastic
 assets:

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Fluid dynamics
   atmosphere: Dynamic, wet, in-motion energy
   key_features: Splash shape, foam particles
-  creative_brief: A frozen millisecond of chaos where surface tension stretches to breaking and droplets hang in midair like glass beads scattered from a broken necklace. Specular highlights trace the curvature of every splash crown, and foam particles cluster at the periphery like witnesses to the impact. The image is pure kinetic poetry, a fluid sculpture arrested at the apex of its drama.
+  creative_brief: >-
+    Apply liquid-simulation behavior to any input: surface-tension stretch,
+    suspended droplets, splash-crown curvature, foam particles, wet speculars,
+    and frozen fluid motion. Keep kinetic waterlike sculpture without requiring
+    a falling object, ocean, glass, body, or literal impact event.
 avoidRules:
   - solid
   - dry

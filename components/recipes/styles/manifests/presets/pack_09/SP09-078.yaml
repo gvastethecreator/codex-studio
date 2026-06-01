@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, eco
   key_features: Grid
-  creative_brief: Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future.
+  creative_brief: >-
+    Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the
+    surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than
+    returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the
+    beauty of energy infrastructure, the quiet face of the electric future. Use Solar Panel as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - window
 assets:

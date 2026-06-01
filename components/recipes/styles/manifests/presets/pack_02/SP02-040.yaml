@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Waddle, paper-doll walk cycle, limited joint movement
   atmosphere: Satire, simple, blunt, intentionally crude
   key_features: Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints
-  creative_brief: 'Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates. The style should feel blunt, cheap, and readable because the paper construction itself is the visual language.'
+  creative_brief: >-
+    Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop
+    shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates.
+    The style should feel blunt, cheap, and readable because the paper construction itself is the visual language. Apply
+    South Park Style as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
+    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand,
+    readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - drawn
   - 3d

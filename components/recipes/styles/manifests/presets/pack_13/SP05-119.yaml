@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-119
 packId: pack_13
-name: Chalkboard Classroom Sketch
+name: Chalk-Dust Slate Sketch
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Hand-drawn chalk-anime treatment emphasizing impermanent mark-making, tactile fragility, and analog board-surface expression
-  form_and_line: Variable-pressure chalk strokes, dry-friction breaks, eraser-softened contours, ghost-line remnants, powder-edge diffusion
-  color_palette: Chalk white core, muted pastel accents, deep green-black substrate, dusty greys, low-saturation cyan and warm yellow notes
-  lighting_setup: Soft directional glow with particulate scattering and gentle specular hotspots on semi-gloss slate surfaces
-  material_texture: Micro-grain slate tooth, powder residue layering, felt-eraser streaking, fingertip smudge bloom, brittle chalk fracture traces
-  render_quality: Medium-faithful analog rendering with visible process artifacts, non-uniform deposition, and intentionally unfinished charm
-  spatial_distortion: Flat-board presentation with slight perspective drift, edge-framing emphasis, and composition anchored by mark density
+  aesthetic: >-
+    Chalk-dust anime sketch treatment built from powder residue, erasure memory, broken strokes,
+    slate contrast, and fragile analog mark-making
+  form_and_line: >-
+    Variable-pressure chalk strokes, dry-friction breaks, eraser-softened contours, ghost-line
+    remnants, powder-edge diffusion
+  color_palette: >-
+    Chalk white core, muted pastel accents, deep green-black substrate, dusty greys, low-saturation
+    cyan and warm yellow notes
+  lighting_setup: >-
+    Soft directional glow with particulate scattering and gentle specular hotspots on semi-gloss
+    slate surfaces
+  material_texture: >-
+    Micro-grain slate tooth, powder residue layering, felt-eraser streaking, fingertip smudge bloom,
+    brittle chalk fracture traces
+  render_quality: >-
+    Medium-faithful analog rendering with visible process artifacts, non-uniform deposition, and
+    intentionally unfinished charm
+  spatial_distortion: >-
+    Flat-board presentation with slight perspective drift, edge-framing emphasis, and composition
+    anchored by mark density
   atmosphere: Nostalgic, delicate, ephemeral, intimate, process-oriented
-  key_features: Powder halos, smudge ghosts, broken-stroke cadence, erasure memory layers, substrate grain response, fragile contour rhythm
+  key_features: >-
+    Powder halos, smudge ghosts, broken-stroke cadence, erasure memory, slate grain, and fragile
+    contour rhythm
   creative_brief: >-
-    Preserve chalkboard-sketch anime grammar as a reusable style system:
-    powder-residue mark behavior, erasure-memory layering, and fragile
-    hand-drawn slate contrast should remain consistent across subjects.
+    Use chalk-dust slate sketch as impermanent-mark grammar. Any prompt should look drawn, erased,
+    redrawn, and softened by powder residue over dark matte surface. Classrooms, chalkboards,
+    equations, and school props are optional.
 avoidRules:
   - digital
   - permanent

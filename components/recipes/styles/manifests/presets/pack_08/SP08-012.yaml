@@ -15,13 +15,17 @@ visualDna:
   aesthetic: 16th century court dress, Tudor majesty, Holbein-portrait splendor
   form_and_line: Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture
   color_palette: Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white
-  lighting_setup: Oil painting light, chiaroscuro depth, candlelit hall, stained-glass warmth
+  lighting_setup: Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold
   material_texture: Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul
-  render_quality: Historical, museum, painting, National Gallery gravitas, Holbein-precise realism
+  render_quality: Historical, museum, painting, Holbein-precise realism, courtly gravitas
   spatial_distortion: Stiff posture
   atmosphere: Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality
   key_features: Ornate details, neck ruff, jeweled bodice, French hood, chain of office
-  creative_brief: Cloth-of-gold heavy enough to bend posture, seed pearls sewn by hands that knew their place in the divine order. The ruff frames a face arranged for immortality, each jewel on the bodice a territorial claim rendered in ruby and imperial purple, power worn as fabric because fabric was all that separated the anointed from the dust.
+  creative_brief: >-
+    Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff
+    geometry, farthingale structure, slashed sleeves, seed pearls, jeweled
+    bodice and imperial velvet. Keep Holbein/Tudor authority as style anchor
+    without forcing a face, portrait pose, candlelit hall or specific monarch.
 avoidRules:
   - modern
   - simple
@@ -43,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

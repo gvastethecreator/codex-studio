@@ -24,9 +24,10 @@ visualDna:
   creative_brief: >-
     Build a reusable alchemical-moral-geometry grammar for any subject or
     input image: symbolic circles, sacrifice logic, clean digital-cel
-    mechanical detail, warm tragic glow, and grounded epic framing without
-    imposing military coats, brothers, automail limbs, transmutation scenes,
-    philosopher stones, or faction symbols.
+    mechanical detail, warm tragic glow, and grounded epic framing. Mechanical
+    prosthetic cues, etched metal, or equivalent-exchange diagram scars may
+    transform the input when useful, without fixing military coats, brothers,
+    transmutation scenes, philosopher stones, or faction symbols.
 avoidRules:
   - realistic
   - 3d render

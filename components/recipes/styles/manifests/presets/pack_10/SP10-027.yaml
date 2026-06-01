@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Color shift
   atmosphere: Dizzy, intense
   key_features: Edge fringe
-  creative_brief: Light splits at the edges, red and cyan pulling apart like a color divorced from itself. The error becomes the aesthetic, a deliberate wound in optics that makes the image vibrate with wrongness.
+  creative_brief: >-
+    Apply chromatic-aberration optics to the input: red/cyan edge separation,
+    lens-fringe vibration, slight focus mismatch, and prism-like contour drift
+    should energize forms without turning the image into random blur.
 avoidRules:
   - clean edges
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

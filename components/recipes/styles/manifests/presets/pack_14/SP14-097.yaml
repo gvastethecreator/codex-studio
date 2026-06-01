@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-097
 packId: pack_14
-name: Serpent Knot Chapel
+name: Serpent Knot Renewal Glyph
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Chapel centered on interwoven serpent iconography.
-  form_and_line: Braided curves, looping arches, and spiral sanctum geometry.
+  aesthetic: Interwoven serpent iconography as a renewal glyph with vigilant mythic noir energy.
+  form_and_line: Braided curves, looping arches, and spiral geometry that can coil around any subject.
   color_palette: Jade black, tarnished gold, and ember red.
   lighting_setup: Low lantern pools and glints on scale-like surfaces.
   material_texture: Carved stone, woven metal, and polished bone.
   render_quality: Mythic illustration with strong emblematic readability.
-  spatial_distortion: Spiraling nave pulling toward the altar.
+  spatial_distortion: Spiraling pull toward a symbolic core without requiring chapel architecture.
   atmosphere: Transformation, vigilance, and sacred continuity.
-  key_features: Serpent knot, spiral altar, and wrapped pillars.
-  creative_brief: A symbolic chapel where the serpent is a loop of renewal and memory.
+  key_features: Serpent knot, renewal loops, scale-like surfaces.
+  creative_brief: Convert the input into a serpent-knot renewal emblem, keeping the serpentine identity while avoiding a fixed chapel or altar setup.
 avoidRules: [photoreal, cute, sci-fi, watermark, text, logo, overexposed]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-097.webp }
 attributes:
   negativePrompt: photoreal, cute, sci-fi, watermark, text, logo, overexposed
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

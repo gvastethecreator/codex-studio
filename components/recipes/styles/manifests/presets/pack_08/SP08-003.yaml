@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance
   key_features: Neutral palette, tonal layering, absence of hardware, invisible fastenings
-  creative_brief: The luxury of absence, where subtraction achieves what addition never could. A single seam traced down a column of oatmeal cashmere speaks louder than any ornament, silence dressed in bone-white linen, walking through a room emptied of everything but light and breath.
+  creative_brief: >-
+    Apply quiet-luxury subtraction to any subject: clean geometry, tonal
+    layering, invisible closures, premium matte fibers and a palette held near
+    bone, oatmeal and charcoal. The image should feel edited down to the one
+    seam that matters, without requiring a room, wardrobe scene or human figure.
 avoidRules:
   - pattern
   - logo
@@ -43,4 +47,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

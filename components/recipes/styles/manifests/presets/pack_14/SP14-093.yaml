@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-093
 packId: pack_14
-name: Omen Salt Reservoir
+name: Omen Salt Processing
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Sacred reservoir storing crystallized omen readings.
-  form_and_line: Terraced basins, pillar rows, and intake channels.
+  aesthetic: Omen salt processing where prophecy crystallizes like water infrastructure.
+  form_and_line: Terraced basin cues, pillar rows, and intake channel geometry.
   color_palette: Salt white, graphite, and pale turquoise.
   lighting_setup: Dry heat glare and reflective basin shimmer.
   material_texture: Crusted salt, lime plaster, and weathered bronze valves.
   render_quality: Environmental concept with utility-ritual blend.
-  spatial_distortion: Stepwise descent toward deepest omen pool.
+  spatial_distortion: Stepwise descent toward the deepest omen pool.
   atmosphere: Arid solemnity and archival care.
-  key_features: Salt tablets, omen sluices, and measuring obelisks.
-  creative_brief: A civic utility where prophecy is processed like water.
+  key_features: Salt tablets, omen sluices, measuring obelisks.
+  creative_brief: Rework the input through omen salt processing, turning prophecy into crystallized utility without requiring a reservoir.
 avoidRules: [photoreal, comedy, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-093.webp }
 attributes:
   negativePrompt: photoreal, comedy, cyberpunk, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

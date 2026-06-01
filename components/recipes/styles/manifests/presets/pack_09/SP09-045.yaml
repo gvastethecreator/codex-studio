@@ -21,7 +21,14 @@ visualDna:
   spatial_distortion: None
   atmosphere: Warm, craft
   key_features: No weave
-  creative_brief: Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one.
+  creative_brief: >-
+    Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface
+    without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy
+    edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness
+    achieved through the pressure of becoming one. Use Felt Fabric as portable surface/render behavior over any input:
+    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - woven
   - shiny

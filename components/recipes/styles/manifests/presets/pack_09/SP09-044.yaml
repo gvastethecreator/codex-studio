@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Irregular holes
   atmosphere: Clean, natural
   key_features: Pores
-  creative_brief: Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the useful grown rather than made.
+  creative_brief: >-
+    Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of negative space
+    in warm tan and yellow, each cavity a breathing chamber in a natural architecture of filtration. The surface should
+    feel dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render the beauty of the
+    useful grown rather than made. Use Sponge as portable surface/render behavior over any input: map its texture, light
+    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
+    sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - kitchen sponge
   - square

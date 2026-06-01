@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-020
 packId: pack_07
 name: Memphis Design
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,29 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Postmodernismo Memphis radical, lúdico e irreverente, orientado al choque visual deliberado.
-  form_and_line: Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos provocativos.
-  color_palette: Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja vivo.
-  lighting_setup: Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto contraste.
+  form_and_line: >-
+    Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos
+    provocativos.
+  color_palette: >-
+    Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja
+    vivo.
+  lighting_setup: >-
+    Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto
+    contraste.
   material_texture: Formica impresa, plástico brillante, esmalte, goma y terrazo en escala juguetona.
   render_quality: Clash postmoderno legible, irónico y energético sin perder estructura formal.
   spatial_distortion: Asimetría intencional con jerarquía por color y geometría de alto impacto.
   atmosphere: Rebelde, festiva, anti-solemnidad y manifiesto de diseño.
-  key_features: Patrones bacterianos, squiggles reflectivos, módulos descentrados, bloques cromáticos y formas totemizadas.
+  key_features: >-
+    Patrones bacterianos, squiggles reflectivos, módulos descentrados, bloques cromáticos y formas
+    totemizadas.
   creative_brief: >-
-    Define una gramática Memphis transferible donde asimetría, patrón gráfico y
-    color confrontativo sean reglas estructurales. Debe conservar ironía y
-    energía manifiesto sin caer en caricatura decorativa superficial.
+    Define una gramática Memphis transferible donde asimetría, patrón gráfico y color confrontativo
+    sean reglas estructurales. Debe conservar ironía y energía manifiesto sin caer en caricatura
+    decorativa superficial.
 avoidRules:
   - boring
   - beige
@@ -35,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

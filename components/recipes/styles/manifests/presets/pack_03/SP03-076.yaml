@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: Inflated
   atmosphere: Fun, pop art, celebration
   key_features: Seams, reflective curves
-  creative_brief: 'Mylar wrinkles catch the world in distorted high-reflection — metallic foil shimmers across inflated curves, and visible seams trace the construction logic of balloons designed to impress at gallery scale. The reflective surfaces map studio lights into abstract highlights, and the inflated tension gives every form the buoyancy of helium and the weight of pop art. The image channels Jeff Koons party spectacle: celebration rendered in foil and air, sculpture that feels like it might float away mid-exhibition.'
+  creative_brief: >-
+    Inflate the input into Mylar pop-sculpture language: wrinkled foil, metallic shimmer, visible seams, distorted
+    studio reflections and buoyant tension. Keep celebration/Jeff Koons energy without forcing party props, gallery
+    context or a balloon object. Apply Balloon Art as a portable 3D/render style system over any input: preserve its
+    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - hard
   - heavy

@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
   atmosphere: Dark, handmade, gothic whimsy, craft unease
   key_features: Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection
-  creative_brief: 'Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material flaws.'
+  creative_brief: >-
+    Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical
+    shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or
+    character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material
+    flaws. Apply Laika Moody Stop-Motion as a portable cinematic/camera style over any input: preserve its lens
+    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
+    room, prop, brand, readable text, fixed IP scene, or narrative setup.
 avoidRules:
   - smooth 3d
 assets:

@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-084
 packId: pack_14
-name: Orbital Catacomb Spiral
+name: Orbital Death Spiral
 category: 4. Mythic — Cosmology & Omens
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, cosmology]
 visualDna:
-  aesthetic: Subterranean spiral catacombs aligned with planetary orbits.
-  form_and_line: Helix stairways, crypt rings, and orbital relief walls.
+  aesthetic: Planetary death mapping through orbital spirals, crypt rings, and sacred underworld geometry.
+  form_and_line: Helix stair cues, crypt rings, and orbital relief walls.
   color_palette: Bone gray, deep violet, and tarnished silver.
   lighting_setup: Candle constellations and shafted moonlight vents.
   material_texture: Damp stone, mineral deposits, and corroded relic metal.
   render_quality: Moody underworld concept with intricate depth.
-  spatial_distortion: Descending spiral composition to a void core.
+  spatial_distortion: Descending spiral composition toward a void core.
   atmosphere: Liminal dread and sacred curiosity.
-  key_features: Planet crypts, omen tablets, and sepulchral star maps.
-  creative_brief: A hidden necropolis where death is mapped as planetary motion.
+  key_features: Planet-crypt cues, omen tablets, sepulchral star maps.
+  creative_brief: Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs.
 avoidRules: [photoreal, cheerful, neon-tech, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-084.webp }
 attributes:
   negativePrompt: photoreal, cheerful, neon-tech, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-cosmology, categoryName: 4. Mythic — Cosmology & Omens, tags: [mythic-noir-curated-vault, mythic, cosmology], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-cosmology,
+    categoryName: 4. Mythic — Cosmology & Omens,
+    tags: [mythic-noir-curated-vault, mythic, cosmology],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

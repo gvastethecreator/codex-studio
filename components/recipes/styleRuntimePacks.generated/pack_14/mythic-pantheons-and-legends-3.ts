@@ -5,299 +5,330 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP14-004',
-    name: 'Warden of Glass Thorns',
+    name: 'Glass-Thorn Warden Botany',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cartoonish, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Dark warden with lethal crystal botany.',
-      form_and_line: 'Slender armor, translucent thorns, and a regal silhouette.',
+      aesthetic: 'Lethal crystal-botany noir with warden-like vigilance and refined menace.',
+      form_and_line:
+        'Slender guarded silhouettes, translucent thorn geometry, regal verticals, and labyrinthine botanical contours.',
       color_palette: 'Petrol green, smoked crystal, and cold silver.',
       lighting_setup: 'Glow interno en espinas y rim glacial.',
       material_texture: 'Fractal glass, fine metal, and nocturnal garden mist.',
       render_quality: 'Refined concept art with unmistakable personality.',
-      spatial_distortion: 'Layered labyrinthine garden depth.',
+      spatial_distortion:
+        'Layered labyrinthine depth made from glass thorns and nocturnal botanical planes.',
       atmosphere: 'Refined menace, mystery, and vigilance.',
-      key_features: 'Crystal thorn crown, dark garden, severe stance.',
-      creative_brief: 'A cursed greenhouse warden—beautiful and highly dangerous.',
+      key_features:
+        'Crystal thorn crowns, smoked-glass foliage, petrol-green glow, severe guarded stance, and nocturnal garden mist.',
+      creative_brief:
+        'Thorn the input with glass-botany menace: petrol greens, smoked crystal, glacial rims, translucent spike geometry, and severe warden-like verticals should make any subject beautiful and dangerous without requiring a greenhouse, humanoid guardian, armor suit, or literal garden setting.',
     },
   },
   {
     id: 'SP14-008',
-    name: 'Funeral Rose Cavalier',
+    name: 'Funeral Rose Psychopomp',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cartoon-comedy, bright-summer, watermark, text, logo',
     style: {
-      aesthetic: 'Mythic psychopomp legend framed as solemn chivalric funerary rite.',
+      aesthetic: 'Mythic psychopomp legend translated into solemn chivalric funerary grace.',
       form_and_line:
-        'Processional rider profile, soul-guiding blade silhouette, and heraldic floral drapery.',
+        'Processional profile rhythm, soul-guiding blade-like diagonals, heraldic floral drapery, and threshold arcs.',
       color_palette: 'Withered rose crimson, velvet black, and funerary silver.',
       lighting_setup: 'Ashen dawn haze with selective metallic glints over wet petals.',
       material_texture:
         'Dried rose bundles, satin-polished armor, carved tomb marble, and mourning silk.',
       render_quality: 'Lyrical prestige illustration with symbolic readability at mid-distance.',
       spatial_distortion:
-        'Necropolis axis perspective leading toward a gate-like mausoleum threshold.',
+        'Threshold-axis perspective leading toward symbolic passage without requiring a necropolis or mausoleum.',
       atmosphere: 'Sacred mourning, oath-bound honor, and tender fatality.',
       key_features:
-        'Soulward rose trail, vigil cavalier, boundary mausoleum, and ceremonial grave standards.',
+        'Soulward rose trails, vigil-cavalier cues, boundary-gate silhouettes, funerary silver, and ceremonial mourning standards.',
       creative_brief:
-        'A legendary funeral cavalier escorts the newly dead across the threshold, embodying mythic duty rather than simple romantic tragedy.',
+        'Escort the input through funeral rose psychopomp grace: withered crimson, velvet black, silver threshold light, rose-trail arcs, and chivalric mourning silhouettes should make any subject feel duty-bound and tenderly fatal without requiring a rider, dead soul, cemetery, gate, or funeral procession.',
     },
   },
   {
     id: 'SP14-009',
-    name: 'Abyssal Chapel Leviathan',
+    name: 'Abyssal Leviathan Chapel',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo',
     style: {
-      aesthetic: 'Maritime mythic noir with cathedral-scale sea dread.',
-      form_and_line: 'Vertical nave-like hull interiors and colossal curved anatomy cues.',
+      aesthetic:
+        'Maritime mythic noir with cathedral-scale pressure, abyssal devotion, and leviathan mass.',
+      form_and_line:
+        'Vertical nave-like ribs, colossal curved anatomy cues, tidal arches, and altar-core pull.',
       color_palette: 'Abyssal teal, oxidized bronze, and moonlit bone.',
       lighting_setup: 'Bioluminescent shafts filtered through submerged stained glass.',
       material_texture: 'Salt-scarred metal, wet basalt, barnacled stone, and ritual silk.',
       render_quality: 'Cinematic key art with crisp hierarchy and premium atmospheric depth.',
-      spatial_distortion: 'Tidal perspective tunnels that pull toward a submerged altar core.',
+      spatial_distortion:
+        'Tidal perspective tunnels that pull toward a submerged sacred core without requiring a chapel.',
       atmosphere: 'Sacred terror, pressure, and silent devotion to the unknown.',
-      key_features: 'Flooded chapel aisles, leviathan silhouette, submerged reliquary shrine.',
+      key_features:
+        'Flooded aisle rhythm, leviathan-scale silhouette cues, submerged reliquary glow, barnacled stone, and abyssal teal pressure.',
       creative_brief:
-        'A drowned chapel inside a leviathan-scale ruin where worship and deep-ocean horror become indistinguishable.',
+        'Drown the input in abyssal leviathan chapel pressure: teal darkness, oxidized bronze ribs, moonlit bone highlights, submerged stained-glass shafts, and colossal anatomy curves should make any subject sacred and oceanic without requiring a chapel, monster body, altar, ruin, or underwater setting.',
     },
   },
   {
     id: 'SP14-012',
-    name: 'Frostbound Reliquary Caravan',
+    name: 'Frostbound Reliquary Endurance',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt:
       'photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo',
     style: {
-      aesthetic: 'Glacial pilgrimage noir with austere sacred logistics.',
+      aesthetic:
+        'Glacial pilgrimage noir with austere sacred logistics and relic-protection discipline.',
       form_and_line:
-        'Processional wagon silhouettes, wind-cut capes, and elongated horizon rhythm.',
+        'Protected-relic silhouettes, wind-cut banner rhythms, armored container cues, and elongated horizon bands.',
       color_palette: 'Frost silver, midnight blue, and muted ember orange.',
       lighting_setup: 'Polar twilight with intermittent lantern halos through blowing snow.',
       material_texture: 'Iced leather, weathered wood, frosted iron, and crystalline snow crust.',
       render_quality: 'Premium environmental key art balancing atmosphere and subject readability.',
       spatial_distortion:
-        'Wide caravan depth cues with repeating relic wagons fading into blizzard haze.',
+        'Wide depth cues with repeated protected-object silhouettes fading into blizzard haze.',
       atmosphere: 'Endurance, solemn duty, and quiet eschatological urgency.',
-      key_features: 'Armored reliquary carts, wind-bent banners, frozen shrine milestones.',
+      key_features:
+        'Armored reliquary cues, wind-bent banners, frozen marker stones, lantern halos, and glacial duty.',
       creative_brief:
-        'A sacred caravan crossing a lethal winter frontier to protect relics that must never thaw nor fall.',
+        'Freeze the input into frostbound reliquary endurance: silver ice, midnight blue depth, ember lantern points, armored sacred-object cues, and wind-bent banner rhythm should imply pilgrimage discipline without requiring caravans, wagons, travelers, or a winter landscape.',
     },
   },
   {
     id: 'SP14-014',
-    name: 'Aegean Titan Tribunal',
+    name: 'Aegean Titan Judgment',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cheerful, modern-casual, flat-light, watermark, text, logo',
     style: {
-      aesthetic: 'Greek myth tribunal noir where titanic law is pronounced under storm-lit marble.',
+      aesthetic:
+        'Greek myth judgment noir where titanic law is pronounced through storm-lit marble and chthonic pressure.',
       form_and_line:
-        'Colonnade symmetry, toga-armored silhouettes, and thunderbolt sigil geometry.',
+        'Marble authority symmetry, armored drapery silhouettes, thunderbolt sigil geometry, and titan-scale vertical pressure.',
       color_palette: 'Aegean blue-black, weathered marble ivory, and oxidized gold.',
       lighting_setup: 'Lightning flashes with torch basin underlight.',
       material_texture:
         'Cracked marble steps, bronze laurel crowns, wet stone dust, and ceremonial drapery.',
       render_quality:
         'Prestige cinematic concept art with mythic scale and sharp icon readability.',
-      spatial_distortion: 'Amphitheater perspective rising toward a central judgment dais.',
+      spatial_distortion:
+        'Rising judgment perspective toward a central force without requiring a tribunal.',
       atmosphere: 'Epic authority, ancestral dread, and juridical grandeur.',
-      key_features: 'Titan masks, oath tablets, storm-lashed pillars, and sacrificial braziers.',
+      key_features:
+        'Titan-mask cues, oath tablets, storm-lashed marble, sacrificial fire accents, and oxidized-gold law.',
       creative_brief:
-        'A stormbound court where Olympian and chthonic powers negotiate judgment over a fractured world.',
+        'Judge the input through Aegean titan authority: Aegean blue-black fields, cracked marble ivory, oxidized gold, lightning cuts, and chthonic underlight should make form and light feel mythically sentenced without requiring a court, colonnade, judge, sacrifice, or Greek tableau.',
     },
   },
   {
     id: 'SP14-015',
-    name: 'Worldroot Oathforge',
+    name: 'Worldroot Oathforged Prophecy',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo',
     style: {
-      aesthetic: 'Norse mythic forge-noir beneath an immense world tree and omen sky.',
-      form_and_line: 'Rune-carved anvils, layered fur silhouettes, and trunk-to-vault verticality.',
+      aesthetic:
+        'Norse mythic forge-noir where worldroot prophecy, oath rings, and apocalyptic craft shape the input.',
+      form_and_line:
+        'Rune-carved anvil cues, layered fur silhouettes, and trunk-to-vault verticality.',
       color_palette: 'Frost steel, ember orange, and raven black.',
       lighting_setup: 'Forge core glow against glacial overcast rim light.',
       material_texture: 'Hammered iron, carved ash wood, snow crust, and smoked leather.',
-      render_quality: 'High-detail environment key art with robust silhouette legibility.',
+      render_quality: 'High-detail mythic key art with robust silhouette legibility.',
       spatial_distortion:
-        'Radial forge composition anchored by worldroot pillars and descending runic steps.',
+        'Radial forge logic anchored by worldroot pillars and descending runic steps.',
       atmosphere: 'Stoic resolve, ancestral weight, and apocalyptic preparedness.',
-      key_features: 'Rune anvils, oath rings, ravens, and worldroot sap braziers.',
+      key_features: 'Rune anvils, oath rings, ravens, worldroot sap brazier cues.',
       creative_brief:
-        'A covenant forge where prophecies are struck into weapons and treaties before the last winter.',
+        'Convert any input through worldroot oathforged prophecy, as if names, debts, tools, bodies, or treaties were struck before the last winter. Preserve rune-forge weight, oath-ring gravity, ash-wood verticality, and apocalyptic craft without requiring weapons, ravens, world trees, warriors, or a literal forge scene.',
     },
   },
   {
     id: 'SP14-016',
-    name: 'Cenote Sun-Serpent Rite',
+    name: 'Cenote Sun-Serpent Cycle',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, parody, modern-urban, cute, watermark, text, logo',
     style: {
-      aesthetic: 'Mesoamerican mythic ceremony noir in a sacred cenote-temple complex.',
+      aesthetic:
+        'Mesoamerican mythic ceremony noir shaped by cenote depth, sun-serpent cycles, and living water.',
       form_and_line:
-        'Terraced glyph geometry, feathered serpent curves, and descending ritual procession.',
+        'Terraced glyph geometry, feathered serpent curves, and descending ritual rhythms.',
       color_palette: 'Jade green, obsidian black, and sacrificial gold.',
       lighting_setup: 'Vertical cenote shaft light with torch flicker around glyph walls.',
       material_texture:
         'Carved volcanic stone, wet limestone, quetzal plume fibers, and lacquered ritual ceramics.',
       render_quality:
         'Premium symbolic concept art with strong shape language and atmospheric depth.',
-      spatial_distortion: 'Deep cenote vortex perspective guiding toward a submerged altar.',
+      spatial_distortion: 'Deep water-vortex perspective guiding toward a submerged symbolic core.',
       atmosphere: 'Sacred gravity, cyclical time, and trembling devotion.',
       key_features:
-        'Feather-serpent reliefs, calendar discs, ritual banners, and water-mirror omens.',
+        'Feather-serpent reliefs, calendar discs, ritual banner rhythm, water-mirror omens, and jade-gold cyclic light.',
       creative_brief:
-        'A night rite where cosmic cycles are negotiated at a cenote temple through serpent symbolism and living water.',
+        'Cycle the input through cenote sun-serpent cosmology: jade water glow, obsidian depth, sacrificial-gold rims, feather-serpent curves, and calendar glyph geometry should make any subject feel cyclic and sacred without requiring a temple, cenote, procession, sacrifice, or literal serpent.',
     },
   },
   {
     id: 'SP14-017',
-    name: 'Hall of the Feathered Scale',
+    name: 'Feathered Scale Afterlife Verdict',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, comedic, bright-pop, sci-fi-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Egyptian afterlife noir focused on judgment symbolism and funerary precision.',
-      form_and_line: 'Processional pylons, scale-centered symmetry, and jackal-priest silhouettes.',
+      aesthetic:
+        'Egyptian afterlife noir focused on feather-scale judgment, funerary precision, and eternal consequence.',
+      form_and_line:
+        'Processional pylon cues, scale-centered symmetry, and jackal-priest silhouettes.',
       color_palette: 'Desert umber, lapis shadow blue, and funerary electrum.',
       lighting_setup: 'Oblique tomb apertures with oil-lamp edge glows on carved reliefs.',
       material_texture:
         'Sand-worn limestone, gilded inlays, linen wrappings, and polished basalt floors.',
       render_quality:
         'Monumental concept key art with high symbolic legibility and restrained contrast.',
-      spatial_distortion: 'Long hypostyle hall perspective converging on a central weighing altar.',
+      spatial_distortion: 'Long hypostyle depth converging on a central weighing force.',
       atmosphere: 'Solemn verdict, ritual order, and eternal consequence.',
       key_features:
-        'Heart-weighing scale, feather standard, canopic reliquaries, and painted hieratic friezes.',
+        'Heart-weighing scale, feather standard, canopic reliquary cues, abstract hieratic friezes.',
       creative_brief:
-        'A judgment chamber where each soul is measured against cosmic balance under silent priestly scrutiny.',
+        'Apply feathered-scale afterlife verdict to the input, measuring it against cosmic balance without requiring a chamber.',
     },
   },
   {
     id: 'SP14-117',
-    name: 'Thunder Palace of the River King',
+    name: 'River King Thunder Sovereignty',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cute, cartoon, watermark, text, logo, empty-space',
     style: {
-      aesthetic: 'River deity palace built from storm stone and ceremonial water terraces.',
-      form_and_line: 'Cascading platforms, thunder pillars, and ceremonial flood channels.',
+      aesthetic:
+        'River-king sovereignty expressed through storm stone, flood memory, and lawful thunder.',
+      form_and_line:
+        'Cascading platform cues, thunder-pillar rhythms, and ceremonial flood channels.',
       color_palette: 'Rain gray, bronze, and deep blue-green.',
       lighting_setup: 'Storm-lit skylight with reflected water flashes.',
       material_texture: 'Wet basalt, river jade, and hammered bronze.',
-      render_quality: 'Epic mythic environment with authoritative scale.',
-      spatial_distortion: 'Diagonal water terraces leading to a high throne chamber.',
+      render_quality: 'Epic mythic rendering with authoritative scale.',
+      spatial_distortion: 'Diagonal water-terrace force leading toward a sovereign focal point.',
       atmosphere: 'Sovereignty, rainfall, and lawful power.',
-      key_features: 'River throne, storm basin, and oath channels.',
-      creative_brief: 'A pantheon palace where a river king governs both flood and memory.',
+      key_features: 'River-throne cues, storm basin motifs, oath-channel lines.',
+      creative_brief:
+        'Transform any input through river-king thunder sovereignty, where flood, memory, and lawful storm cues replace fixed palace requirements. Use wet basalt, bronze authority, thunder-pillar rhythm, oath-channel lines, and diagonal water force without requiring thrones, kings, rivers, storms, or palaces.',
     },
   },
   {
     id: 'SP14-118',
-    name: 'Cinder Sun Pantheon Hall',
+    name: 'Cinder Sun Pantheon Trial',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cheerful, neon, watermark, text, logo, toy-like',
     style: {
-      aesthetic: 'Hall for a sun pantheon tempered by ash, smoke, and sacrificial brilliance.',
-      form_and_line: 'Radial altar, stepped tiers, and haloed deity niches.',
+      aesthetic: 'Sun-pantheon trial tempered by ash, smoke, and sacrificial brilliance.',
+      form_and_line: 'Radial altar cues, stepped tiers, and haloed deity-niche rhythms.',
       color_palette: 'Ash gold, ember red, and blackened ivory.',
       lighting_setup: 'Furnace glow and solar shafts through smoke.',
       material_texture: 'Burnt stone, gold leaf residue, and soot-streaked silk.',
-      render_quality: 'High-drama mythic architecture with iconographic clarity.',
-      spatial_distortion: 'Concentric sanctuary around a furnace altar.',
+      render_quality: 'High-drama mythic rendering with iconographic clarity.',
+      spatial_distortion: 'Concentric sanctuary logic around a furnace-like solar core.',
       atmosphere: 'Majesty, ordeal, and radiant severity.',
-      key_features: 'Sun disc, ash steps, and deity niches.',
-      creative_brief: 'A pantheon hall where the sun survives by passing through ash and flame.',
+      key_features: 'Sun disc, ash-step bands, deity-niche silhouettes.',
+      creative_brief:
+        'Recast the input through a cinder sun pantheon trial, making radiance survive through ash and flame without requiring a hall.',
     },
   },
   {
     id: 'SP14-119',
-    name: 'Moon Judge Amphitheater',
+    name: 'Moon Judge Tribunal Ring',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cute, cartoon, watermark, text, logo, clutter',
     style: {
-      aesthetic: 'Amphitheater for a lunar judge deity with carved verdict tablets.',
-      form_and_line: 'Circular seats, crescent dais, and tribunal columns.',
+      aesthetic:
+        'Lunar judgment language with calm tribunal authority and carved verdict symbolism.',
+      form_and_line: 'Circular seat cues, crescent dais logic, and tribunal-column rhythms.',
       color_palette: 'Moon silver, dark stone, and pale lavender.',
       lighting_setup: 'Night-sky glow with crisp tribunal highlights.',
       material_texture: 'Chiseled limestone, silver inlay, and formal drapery.',
       render_quality: 'Ceremonial concept art with judicial solemnity.',
-      spatial_distortion: 'Ringed amphitheater converging on a crescent center.',
+      spatial_distortion: 'Ringed convergence toward a crescent judgment center.',
       atmosphere: 'Judgment, ritual fairness, and nocturnal authority.',
-      key_features: 'Verdict tablets, moon crest, and witness steps.',
+      key_features: 'Verdict tablets, moon crest, witness-step bands.',
       creative_brief:
-        'A pantheon amphitheater where the moon judges the living with calm precision.',
+        'Apply moon-judge tribunal logic to the input, letting lunar calm and ringed verdict geometry carry judgment without requiring an amphitheater.',
     },
   },
   {
     id: 'SP14-120',
-    name: 'Harbor of the Twin Gods',
+    name: 'Twin Gods Tidal Duality',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, bland, cyberpunk, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Harbor shrine shared by mirrored twin deities.',
-      form_and_line: 'Paired towers, tidal gates, and mirrored causeways.',
+      aesthetic:
+        'Mirrored twin-deity duality shaped by tides, protection, rivalry, and seasonal balance.',
+      form_and_line: 'Paired tower cues, tidal gate shapes, and mirrored causeway geometry.',
       color_palette: 'Sea teal, copper, and storm white.',
       lighting_setup: 'Dawn surf glow and lantern reflections.',
       material_texture: 'Salt stone, bronze fittings, and wet timber.',
-      render_quality: 'Mythic coastal architecture with strong duality.',
-      spatial_distortion: 'Symmetric harbor halves meeting at a central gate.',
+      render_quality: 'Mythic rendering with strong duality and clean mirrored structure.',
+      spatial_distortion: 'Symmetric halves meeting at a central tidal threshold.',
       atmosphere: 'Brotherhood, rivalry, and seasonal protection.',
-      key_features: 'Twin altars, tide gates, and mirrored statues.',
-      creative_brief: 'A pantheon harbor where twin gods guard the tides from opposite shores.',
+      key_features: 'Twin altar cues, tide gates, mirrored deity silhouettes.',
+      creative_brief:
+        'Reframe any input through twin-gods tidal duality, balancing protection and rivalry. Use mirrored halves, sea-teal gates, copper fittings, tide-threshold symmetry, and paired-force tension without locking the image to harbors, gods, towers, causeways, or deity figures.',
     },
   },
   {
     id: 'SP14-121',
-    name: 'Iron Harvest Basilica',
+    name: 'Iron Harvest Stewardship',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cute, modern-farm, watermark, text, logo, glossy',
     style: {
-      aesthetic: 'Agricultural basilica dedicated to a harvest pantheon of iron and grain.',
-      form_and_line: 'Grain-silo basilica, tall sheaves, and ceremonial threshing arcs.',
+      aesthetic:
+        'Harvest-pantheon stewardship where iron discipline and grain abundance become sacred labor.',
+      form_and_line: 'Grain-silo cues, tall sheaf rhythms, and ceremonial threshing arcs.',
       color_palette: 'Wheat gold, iron black, and dusty green.',
       lighting_setup: 'Late harvest sun with steel shadow lines.',
       material_texture: 'Forged iron, straw, sunbaked clay, and old oak.',
-      render_quality: 'Monumental rural mythic scene with strong detail.',
-      spatial_distortion: 'Nave-like farm axis expanding into fields.',
+      render_quality: 'Monumental mythic rendering with rural material detail.',
+      spatial_distortion:
+        'Nave-like axis expanding into field-like abundance without requiring a basilica.',
       atmosphere: 'Plenty, labor, and sacred stewardship.',
-      key_features: 'Harvest icons, iron scythes, and grain reliquaries.',
-      creative_brief: 'A pantheon basilica where the harvest is honored as both work and miracle.',
+      key_features: 'Harvest icons, iron scythes, grain reliquary cues.',
+      creative_brief:
+        'Convert the input through iron harvest stewardship, treating work, grain, and forged ritual as miracle without forcing a farm temple.',
     },
   },
   {
     id: 'SP14-122',
-    name: 'Serpent Oracle Court',
+    name: 'Serpent Oracle Lineage',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, playful, candy-color, watermark, text, logo, static-pose',
     style: {
-      aesthetic: 'Court of serpent deities and prophetic attendants.',
-      form_and_line: 'Coiling columns, court steps, and sinuous canopy lines.',
+      aesthetic:
+        'Serpent-oracle lineage rendered through coiling prophecy, guarded wisdom, and emerald noir authority.',
+      form_and_line: 'Coiling column cues, court-step bands, and sinuous canopy lines.',
       color_palette: 'Emerald black, gold, and obsidian.',
       lighting_setup: 'Controlled torchlight with emerald underglow.',
       material_texture: 'Polished stone, scale-like enamel, and gold wire.',
       render_quality: 'Elegant mythic court illustration.',
-      spatial_distortion: 'Curved court plan that coils around the oracle seat.',
+      spatial_distortion: 'Curved plan that coils around an oracle-like focal presence.',
       atmosphere: 'Prophecy, continuity, and guarded wisdom.',
-      key_features: 'Oracle dais, serpent pillars, and sigil mosaics.',
+      key_features: 'Oracle dais cues, serpent pillars, sigil mosaics.',
       creative_brief:
-        'A pantheon court where the serpent lineage speaks prophecy through architecture.',
+        'Reinterpret the input as serpent-oracle lineage, letting prophecy coil through form and material without requiring a court.',
     },
   },
   {
     id: 'SP14-123',
-    name: 'Ashen Hearth Deities Hall',
+    name: 'Ashen Hearth Guardian Warmth',
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, sterile, sci-fi, watermark, text, logo, cold',
     style: {
-      aesthetic: 'Communal hall for hearth deities and domestic guardians.',
-      form_and_line: 'Long hearth row, guardian alcoves, and smoke vents.',
+      aesthetic:
+        'Hearth-deity guardianship expressed through ash warmth, shelter, kinship, and domestic flame.',
+      form_and_line: 'Long hearth-row cues, guardian alcove rhythms, and smoke-vent silhouettes.',
       color_palette: 'Ember orange, ash gray, and bronze.',
       lighting_setup: 'Hearthfire flicker and smoke-softened daylight.',
       material_texture: 'Firebrick, iron hooks, and soot-dark timber.',
-      render_quality: 'Warm mythic interior with a strong domestic scale.',
-      spatial_distortion: 'Horizontal hall elongated by repeated hearth bays.',
+      render_quality: 'Warm mythic rendering with intimate domestic scale.',
+      spatial_distortion: 'Horizontal warmth spreading through repeated hearth-like bands.',
       atmosphere: 'Shelter, kinship, and sacred homecoming.',
-      key_features: 'Hearth altars, guardian masks, and smoke glyphs.',
-      creative_brief: 'A pantheon hall where gods of the hearth keep the domestic flame alive.',
+      key_features: 'Hearth altar cues, guardian masks, smoke glyphs.',
+      creative_brief:
+        'Recast the input through ashen hearth guardian warmth, making domestic flame feel sacred without requiring a communal hall.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

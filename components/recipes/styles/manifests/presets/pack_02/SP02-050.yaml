@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Chemical leak, developer smear, edge imperfection
   atmosphere: Nostalgic, fun, tactile memory, scrapbook intimacy
   key_features: White border, square format, chemical fog, developer smear, soft plastic-lens focus
-  creative_brief: 'Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already requested. The ritual of instant development should be visible in the image chemistry itself.'
+  creative_brief: >-
+    Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool
+    cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already
+    requested. The ritual of instant development should be visible in the image chemistry itself. Apply Polaroid as a
+    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
+    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene,
+    or narrative setup.
 avoidRules:
   - sharp
   - hd

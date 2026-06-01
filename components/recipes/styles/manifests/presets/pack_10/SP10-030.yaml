@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: No greyscale
   atmosphere: Retro, binary
   key_features: Atkinson dither
-  creative_brief: 'Every pixel faced with a binary ultimatum: black or white, nothing in between. The illusion of gray emerges from the arrangement of absolutes, decisions scattered like seeds across the canvas.'
+  creative_brief: >-
+    Apply one-bit dithering to the input: black-white thresholds, ordered or
+    error-diffused pixel patterns, harsh quantization, and optical gray made from
+    binary marks should keep the subject readable at low fidelity.
 avoidRules:
   - grey
   - smooth
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

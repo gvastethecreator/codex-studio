@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Splinters
   atmosphere: Unfinished, work
   key_features: Knots
-  creative_brief: Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient.
+  creative_brief: >-
+    Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of
+    blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should
+    reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the
+    provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture,
+    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - solid wood
 assets:

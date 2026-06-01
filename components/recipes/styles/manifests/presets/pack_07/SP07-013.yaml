@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-013
 packId: pack_07
 name: Mediterranean Villa
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Mediterráneo solar de cal y terracota, claridad térmica y umbral ventilado.
-  form_and_line: Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones de sombra abierta.
+  form_and_line: >-
+    Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones de
+    sombra abierta.
   color_palette: Blanco de cal, azul mediterráneo, terracota, ocre cálido y verdes vidrio mar en acento moderado.
-  lighting_setup: Sol alto de contraste nítido, rebote cálido mineral y transición crepuscular con prácticos discretos.
+  lighting_setup: >-
+    Sol alto de contraste nítido, rebote cálido mineral y transición crepuscular con prácticos
+    discretos.
   material_texture: Estuco mineral, baldosa manual, piedra junta abierta, madera blanqueada y hierro forjado mate.
   render_quality: Realismo mediterráneo limpio con precisión de luz solar y lectura material aérea.
   spatial_distortion: Perspectiva abierta con encuadres axiales suaves y secuencia de umbrales ventilados.
   atmosphere: Luminosa, relajada, ventilada y restaurativa.
-  key_features: Binomio cal-terracota, sombra arqueada, umbrales conectores y paleta costera de saturación contenida.
+  key_features: >-
+    Binomio cal-terracota, sombra arqueada, umbrales conectores y paleta costera de saturación
+    contenida.
   creative_brief: >-
-    Mantén una gramática mediterránea transferible de alto sol, cal mineral y
-    terracota estructurante. La identidad debe sostenerse por clima, material y
-    secuencia espacial, no por una narrativa de villa puntual.
+    Mantén una gramática mediterránea transferible de alto sol, cal mineral y terracota
+    estructurante. La identidad debe sostenerse por clima, material y secuencia espacial, no por una
+    narrativa de villa puntual.
 avoidRules:
   - rain
   - cold
@@ -37,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

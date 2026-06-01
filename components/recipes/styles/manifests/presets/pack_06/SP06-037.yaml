@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: None
   atmosphere: Dark, moody
   key_features: Granular tone
-  creative_brief: Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The style breathes atmosphere through particulate shadow rather than outlines, turning mood into a printed chemical field.
+  creative_brief: >-
+    Apply aquatint tonal printmaking to any input: rosin-grain texture,
+    acid-built darkness, stop-out protected highlights, particulate shadow, and
+    atmospheric intaglio tone. Keep chemical mood fields without requiring
+    landscapes, weather, old plates, or narrative illustration.
 avoidRules:
   - photo
   - realistic

@@ -12,14 +12,14 @@ visualDna:
   color_palette: Brass, slate, and pale teal.
   lighting_setup: Warm lamp pools and reflected dial highlights.
   material_texture: Burnished metal, carved stone, and oiled leather.
-  render_quality: Precision-rich conceptual corridor scene.
+  render_quality: Precision-rich navigational render with layered instrument depth.
   spatial_distortion: Long axis perspective through layered dials and pointer shadows.
   atmosphere: Measured movement and navigational discipline.
   key_features: Direction dials, time markers, astrolabe rings, and route brasswork.
   creative_brief: >-
-    Preserve brass astrolabe-passage grammar as a reusable style system:
-    navigational-instrument corridor rhythm, calibrated directional ritual,
-    and measured transit discipline should remain coherent across subjects.
+    Navigate the input through brass astrolabe logic: rotating dial rings,
+    pointer arches, teal route glows, burnished metal apertures, and measured
+    axis shadows turn any subject into calibrated direction ritual.
 avoidRules: [photoreal, toy-like, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-087.webp }
 attributes:

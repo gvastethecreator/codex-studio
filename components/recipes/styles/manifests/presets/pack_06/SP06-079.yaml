@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Liquid distortion
   atmosphere: Trippy, fluid
   key_features: Oil patterns
-  creative_brief: Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design.
+  creative_brief: >-
+    Pigment floats on the surface tension of thickened water, swirled into patterns by comb and stylus, then transferred
+    to paper in a single decisive contact. No two pulls are identical, no two patterns repeatable, the medium encoding
+    uniqueness into every sheet. The image is a liquid moment frozen, a turbulence caught becoming design. Apply this
+    mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic,
+    and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal
+    craft-table scene.
 avoidRules:
   - photo
   - realistic
@@ -41,7 +47,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-079.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: >-
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark,
+    text, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +63,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

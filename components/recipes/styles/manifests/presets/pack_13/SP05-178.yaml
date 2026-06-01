@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Urgent, mythic, urban, supernatural
   key_features: Ritual symbols, monster-vine invasions, emergency framing, lineage-pressure posture, occult-tech contrast
   creative_brief: >-
-    Preserve mythic-tokyo-purge grammar as a reusable style system:
-    ritual-symbol emergency framing, invasive botanical threat geometry, and
-    occult-procedural urban tension should remain consistent across subjects.
+    Infect the input with mythic urban purge pressure: ritual symbols, siren-red
+    framing, toxic chlorophyll intrusions, talisman-gold flashes, and occult
+    procedural tension can reshape any subject without requiring Tokyo streets,
+    monster vines, responders, or a literal crisis scene.
 avoidRules:
   - realistic
   - 3d render

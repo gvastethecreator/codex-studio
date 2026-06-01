@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Uncanny, claustrophobic, cosmic-anxious
   key_features: Compulsive ink density, motif recursion, skin-to-pattern collapse
   creative_brief: >-
-    Build horror through accumulation and repetition. Maintain Junji Ito-like obsessive line discipline, recurring spiral/cavity logic, and controlled anatomical corruption so dread grows from pattern inevitability rather than fixed narrative location.
+    Apply obsessive horror manga grammar to any input: micro-line accumulation, spiral or cavity
+    recursion, suffocating dark fields, and controlled anatomical or material corruption should grow
+    dread from pattern inevitability without requiring bodies, villages, rooms, monsters, or fixed
+    narrative location.
 avoidRules:
   - cute
   - clean

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Dripping
   atmosphere: Fun, gross, messy joy
   key_features: Drips, stretch strings
-  creative_brief: 'Viscosity becomes the protagonist — strands of neon goo stretch between surfaces like bridges of liquid light, and glossy highlights pool in the thickest parts, catching studio strobes with wet, obscene glee. The palette screams Nickelodeon excess: electric greens, hot pinks, colors that refuse to take themselves seriously. The image drips with the joy of mess, a celebration of the gloopy and the gloriously unrefined.'
+  creative_brief: >-
+    Apply slime material behavior to any input: viscous neon goo, stretch
+    strands, wet specular pooling, dripping deformation, electric green or hot
+    pink gross-out color, and playful sticky volume. Keep messy cartoon energy
+    without requiring a bucket, prank, creature, lab accident, or body beneath.
 avoidRules:
   - dry
   - solid

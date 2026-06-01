@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Simplified forms
   atmosphere: Playful, graphic
   key_features: Matte opacity
-  creative_brief: Velvet-matte pigment absorbs light instead of reflecting it, creating a surface that feels like silence. Crisp edges meet chalky depth in a negotiation between graphic clarity and painterly substance. The result is design that remembers the hand, precision softened by pigment.
+  creative_brief: >-
+    Apply flat gouache treatment to any input: velvet matte opacity, chalky
+    pigment body, crisp graphic edges, softened hand-painted precision, and
+    dense color fields that absorb light. Keep illustration-ready clarity without
+    requiring posters, character art, packaging, or flat product layouts.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Simplified forms
   atmosphere: Rational, bold
   key_features: Primary colors
-  creative_brief: Form stripped to its skeleton, every line an argument for necessity. Primary colors sing against geometry, a manifesto of clarity in a world of ornament.
+  creative_brief: >-
+    Apply Bauhaus reduction to the input: primary-color blocks, strict circles,
+    bars, grids, and functional negative space should strip any subject to clear
+    modular construction without becoming a poster-only layout.
 avoidRules:
   - organic
   - messy
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Title-safe margins, slightly skewed overlays, overscan cropping, analog edge warp
   atmosphere: Homemade, local, earnest, oddly hypnotic
   key_features: Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text
-  creative_brief: 'Render any prompt as public-access cable: cheap title-safe layout, crawl-band shapes, VHS tracking noise, analog snow, overscan crop, and sincere low-budget staging. Avoid readable announcements, specific community events, hosts, or studio scenes. The style should feel routed through a worn municipal cable feed.'
+  creative_brief: 'Render any prompt as public-access cable: cheap title-safe layout, crawl-band shapes, VHS tracking noise, analog snow, overscan crop, and sincere low-budget staging. Avoid readable announcements, specific community events, hosts, or studio setups. The style should feel routed through a worn municipal cable feed.'
 avoidRules:
   - high production value
   - crisp typography

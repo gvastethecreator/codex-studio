@@ -78,8 +78,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
       importOutputSourceFiles,
     },
     libraryDir: settingsLibraryDir,
-    isBackgroundEnabled,
-    onToggleBackground,
     onResetStudio,
     isResettingStudio,
   } = settingsModule;
@@ -167,8 +165,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             isRegisteringOutputSource={isRegisteringOutputSource}
             importingOutputSources={importingOutputSources}
             error={settingsError}
-            isBackgroundEnabled={isBackgroundEnabled}
-            onToggleBackground={onToggleBackground}
             onRefresh={refreshSettings}
             onUpdate={updateSettings}
             onRegisterOutputSource={registerOutputSource}

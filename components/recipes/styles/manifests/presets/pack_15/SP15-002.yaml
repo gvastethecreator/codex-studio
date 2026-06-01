@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Efficient calm, civic trust, and everyday delight in shared infrastructure.
   key_features: Quiet glide rhythm, pollinator-span motifs, open spacing, shade-rich promenade flow.
   creative_brief: >-
-    Preserve wind-garden monorail grammar as a reusable style language:
-    ribbon-transit continuity, gardened canopy typology, and pedestrian-first
-    civic flow should remain stable across subjects without requiring rails,
-    trains, stations, or districts.
+    Turn the input into a quiet mobility ribbon: sweeping guide-lines,
+    pollinator canopy arcs, satin bio-composite seams, and saffron wayfinding
+    accents should make it feel shared, gliding, and civic. Rails, trains, or
+    stations can reinforce the idea but should not become mandatory scenery.
 avoidRules: [photoreal, cyberpunk-grime, warlike, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-002.webp }
 attributes:

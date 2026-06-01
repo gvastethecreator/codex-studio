@@ -111,7 +111,7 @@ Before a public release candidate, review tracked files and history for local pr
 ## Notas de rendimiento
 
 - Heavy recipe surfaces should remain demand-loaded.
-- `react-scan`, Three.js, style catalog data, ZIP export, YAML parsing, and visual background effects should not enter the startup bundle eagerly.
+- `react-scan`, Three.js, style catalog data, ZIP export, and YAML parsing should not enter the startup bundle eagerly.
 - `ui:source:verify`, `ui:chunks:verify`, and `styles:render:verify` should remain release gates if they continue to catch real regressions.
 
 ## Brechas de documentación

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Geometric
   atmosphere: Clean, sharp
   key_features: Triangular mesh
-  creative_brief: Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries its own tonal decision, tiny planes stitched into a unified structure. Geometry is the art; the subject is only the occasion for angular arrangement.
+  creative_brief: >-
+    Apply polygon-art tessellation to any input: triangular facets, angular
+    tonal decisions, low-resolution form memory, and flat geometric patchwork.
+    Keep geometry as the art system without requiring portraits, animals,
+    landscapes, or stock low-poly subjects.
 avoidRules:
   - photo
   - realistic

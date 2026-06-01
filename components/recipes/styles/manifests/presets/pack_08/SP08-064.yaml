@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Peasant clothes, medieval-field humility, honest-labor simplicity
+  aesthetic: Burlap and rag textile, medieval-field humility, honest-labor simplicity
   form_and_line: Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease
   color_palette: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
-  lighting_setup: Flat, overcast-field light, cottage-window dimness, hearth-fire amber
+  lighting_setup: Flat overcast light, dim warm practical, rough-fiber revealing side light
   material_texture: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
   render_quality: Poor, scratchy, honest-poverty texture, feudal-era authenticity
   spatial_distortion: Holes
-  atmosphere: Sad, poverty, humble-endurance dignity, harvest-field weariness, simple-life resilience
+  atmosphere: Humble, rough, endurance dignity, simple-life resilience
   key_features: Fraying, rope belt, rough patches, raw hem, homespun texture
-  creative_brief: Jute fiber coarse enough to leave its imprint on skin, the tunic hanging from shoulders shaped by harvest seasons and the mathematics of scarcity. A rope belt cinches the waist at the point where dignity meets necessity, frayed hems trailing threads that catch morning light through a cottage window, the whole garment a testament to the beauty of fabric that has never known pretense.
+  creative_brief: >-
+    Roughen the input with burlap/rag material: jute fiber, coarse hemp,
+    homespun wool, rope-cord cinches, frayed hems, raw patches and weathered
+    oatmeal-brown tones. Keep humble endurance without requiring peasants,
+    harvest fields, cottage windows, poverty portrait or tunic body.
 avoidRules:
   - silk
   - clean
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

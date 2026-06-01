@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - lookdev-and-render-pipelines
 visualDna:
-  aesthetic: Consumer electronics
+  aesthetic: Premium product-render discipline
   form_and_line: Sleek curves
   color_palette: Brand colors
   lighting_setup: Studio reflection
@@ -20,8 +20,13 @@ visualDna:
   render_quality: Apple flagship product launch, minimalist perfection
   spatial_distortion: None
   atmosphere: Desirable, expensive, luxury reveal
-  key_features: White background
-  creative_brief: 'The object floats on an infinite white void — no environment, no context, only the product itself rendered with the reverence of a religious icon. Matte aluminum catches studio reflections in controlled sweeps, and brand colors pop against the absence of distraction with flagship-launch confidence. The image channels Apple keynote minimalism: every chamfer, every seam, every material transition designed to make you reach for your wallet.'
+  key_features: Controlled reflections, premium reveal
+  creative_brief: >-
+    Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps, premium material
+    transitions, clean silhouette hierarchy and launch-keynote desire. Do not require consumer electronics, a floating
+    object, wallet cue or infinite white void. Apply Product Render as a portable 3D/render style system over any input:
+    preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while
+    avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - dust
   - scratches

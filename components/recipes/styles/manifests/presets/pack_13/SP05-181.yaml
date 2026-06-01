@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Tender, healing, sorrowful, warm
   key_features: Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry
   creative_brief: >-
-    Preserve zodiac-warmth-and-grief grammar as a reusable style system:
-    compassionate warm lighting, soft emotional closeups, and symbolic zodiac
-    tenderness should remain consistent across subjects.
+    Soften the input with zodiac warmth and grief: cream-peach halation,
+    tea-brown tenderness, spring-green particulate haze, and subtle zodiac
+    symbolism should make any subject feel healing and emotionally held without
+    forcing a family scene, animal motif, embrace, or closeup.
 avoidRules:
   - realistic
   - 3d render

@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Blurred
   atmosphere: Ghostly, soft
   key_features: Transfer texture
-  creative_brief: Paint applied to glass, transferred to paper in a single irreversible press — no edition, no repeat, no second chance. The transfer blurs and blends in ways the artist predicted but could not control, spontaneity baked into the process. Each print is an original, the plate wiped clean for the next unique birth.
+  creative_brief: >-
+    Apply monotype transfer behavior to any input: single-pull softness,
+    glass-plate smear, accidental blending, pressure blur, and unrepeatable
+    painterly transfer marks. Keep one-off print spontaneity without requiring
+    botanical subjects, abstract plates, studio tools, or edition context.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

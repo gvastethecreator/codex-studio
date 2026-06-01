@@ -12,19 +12,35 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Art-deco anime fusion with geometric planes, faceted beauty, posterized color separation, theatrical composition, and shojo-classic elegance sharpened into abstraction
-  form_and_line: Precise geometric contour, ruler-straight ink lines, compass-circle precision, angular facet construction, and ornamental symmetry
-  color_palette: Gold leaf, lapis lazuli blue, ruby red, emerald facet green, black enamel, geometric color-blocking, jewel-tone exclusivity
-  lighting_setup: Theatrical spotlight, dramatic shadow geometry, stage-light precision, jewel-refraction highlights
-  material_texture: Metallic gold inlay, stained-glass segmentation, enamel gloss, faceted crystal surface, polished stone
-  render_quality: Deco-styled anime frame, theatrical rendering, geometric-abstraction beauty, and crystalline visual precision
-  spatial_distortion: Subjects become faceted planes, angular fan-shapes, jewel-cut surfaces, and stylized depth layers
+  aesthetic: >-
+    Art-deco anime fusion with geometric planes, faceted beauty, posterized color separation,
+    theatrical composition, and shojo-classic elegance sharpened into abstraction
+  form_and_line: >-
+    Precise geometric contour, ruler-straight ink lines, compass-circle precision, angular facet
+    construction, and ornamental symmetry
+  color_palette: >-
+    Gold leaf, lapis lazuli blue, ruby red, emerald facet green, black enamel, geometric
+    color-blocking, jewel-tone exclusivity
+  lighting_setup: >-
+    Theatrical spotlight, dramatic shadow geometry, stage-light precision, jewel-refraction
+    highlights
+  material_texture: >-
+    Metallic gold inlay, stained-glass segmentation, enamel gloss, faceted crystal surface, polished
+    stone
+  render_quality: >-
+    Deco-styled anime frame, theatrical rendering, geometric-abstraction beauty, and crystalline
+    visual precision
+  spatial_distortion: >-
+    Subjects become faceted planes, angular fan-shapes, jewel-cut surfaces, and stylized depth
+    layers
   atmosphere: Grand, theatrical, elegant severity, crystalline beauty, staged perfection
-  key_features: Geometric fan shapes, faceted-jewel focal points, ruler-straight lines, stained-glass color separation, staged symmetry
+  key_features: >-
+    Geometric fan shapes, faceted-jewel focal points, ruler-straight lines, stained-glass color
+    separation, staged symmetry
   creative_brief: >-
-    Preserve deco-geometric anime grammar as a reusable style system:
-    faceted planar construction, jewel-tone staged lighting, and ruler-precise
-    contour discipline should remain consistent across subjects.
+    Use deco-geometric anime as faceted poster grammar. Any prompt should sharpen into
+    ruler-straight contours, jewel planes, staged symmetry, and theatrical light separation.
+    Architecture, fashion poses, or literal stained glass are optional.
 avoidRules:
   - organic
   - round

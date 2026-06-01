@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: None
   atmosphere: Sporty, modern
   key_features: Weave
-  creative_brief: Thousands of filaments woven into a fabric stronger than steel, the weave catching light in diagonal whispers. The texture of speed and precision, a material that promises performance before it promises beauty.
+  creative_brief: >-
+    Apply carbon-fiber performance texture to the input: diagonal woven
+    filaments, subtle anisotropic sheen, dark composite depth, and precision
+    surface discipline should make any subject feel lightweight and engineered.
 avoidRules:
   - organic
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

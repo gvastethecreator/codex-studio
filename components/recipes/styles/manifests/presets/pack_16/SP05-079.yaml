@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Perspectiva túnel y curvatura extrema del espacio para sensación de riesgo constante.
   atmosphere: Adrenalínica, eufórica, vertiginosa, explosiva.
   key_features: Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.
-  creative_brief: Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible sin imponer carreras, vehículos, pilotos ni pistas.
+  creative_brief: Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible. Si el input lo permite, puede volverse vehículo, piloto abstracto o bólido de trazo; si no, recibe líneas de boost, fricción y túnel cinético sin fijar carrera ni pista.
 avoidRules:
   - realistic
   - 3d render

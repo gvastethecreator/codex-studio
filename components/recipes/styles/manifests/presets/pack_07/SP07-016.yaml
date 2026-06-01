@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP07-016
 packId: pack_07
 name: Bauhaus Interior
-category: 1. Residential Interiors
+category: 1. Interior Design Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,31 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - interior-design-systems
 visualDna:
   aesthetic: Modernismo Bauhaus funcional, claridad industrial y belleza derivada de función explícita.
-  form_and_line: Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de lectura didáctica.
-  color_palette: Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso jerárquico.
-  lighting_setup: Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización superflua.
+  form_and_line: >-
+    Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de
+    lectura didáctica.
+  color_palette: >-
+    Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso
+    jerárquico.
+  lighting_setup: >-
+    Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización
+    superflua.
   material_texture: Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linóleo de acabado honesto.
-  render_quality: Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual atemporal.
+  render_quality: >-
+    Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual
+    atemporal.
   spatial_distortion: Neutralidad geométrica con énfasis en orden proporcional e interacción de formas básicas.
   atmosphere: Intelectual, limpio, pragmático y optimista.
-  key_features: Cantilever visual, acentos cromáticos controlados, estructura visible y gramática geométrica elemental.
+  key_features: >-
+    Cantilever visual, acentos cromáticos controlados, estructura visible y gramática geométrica
+    elemental.
   creative_brief: >-
-    Formula una gramática Bauhaus transferible donde función, estructura y
-    geometría primaria ordenen todo el lenguaje visual. El estilo debe
-    comunicar claridad productiva sin recurrir a ornamento narrativo.
+    Formula una gramática Bauhaus transferible donde función, estructura y geometría primaria
+    ordenen todo el lenguaje visual. El estilo debe comunicar claridad productiva sin recurrir a
+    ornamento narrativo.
 avoidRules:
   - ornate
   - cluttered
@@ -35,11 +45,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - interior-design-systems
   supportedTasks:
     - image_generate
     - image_edit

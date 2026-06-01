@@ -20,7 +20,14 @@ visualDna:
   render_quality: Data moshing, digital decay
   atmosphere: Chaotic, broken, signal failure
   key_features: Artifacts, vertex explosion
-  creative_brief: 'Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic: chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium.'
+  creative_brief: >-
+    Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture
+    channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic:
+    chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure
+    rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium. Apply
+    Glitch 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
+    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
+    environment, UI screen, product shot, or scene template.
 avoidRules:
   - clean
   - perfect

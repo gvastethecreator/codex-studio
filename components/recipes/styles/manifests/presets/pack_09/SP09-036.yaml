@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: Bubbling paint
   atmosphere: Gross, old
   key_features: Tide lines
-  creative_brief: Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a ceiling painting itself in stains.
+  creative_brief: >-
+    Render the cartography of neglect where brown and yellow tide lines ring across ceilings like the growth rings of a
+    sick tree, each band a record of water's patient invasion. The surface should feel swollen and soft, gypsum turned
+    to paste beneath bubbling paint that maps the path of the leak above. Capture the strange watercolor of decay, a
+    ceiling painting itself in stains. Use Water Damage as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - dry
 assets:

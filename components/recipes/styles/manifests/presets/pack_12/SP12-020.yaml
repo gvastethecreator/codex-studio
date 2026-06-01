@@ -12,14 +12,21 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Space-trade RPG de puertos estelares con economía faccional, diplomacia armada y logística interestelar.
-  subject_treatment: Clases mercantiles/escolta con identidad visual de corporación, sindicato o casa comercial.
+  aesthetic: Gramática space-trade RPG con economía faccional, diplomacia armada, lujo logístico y rutas interestelares.
+  subject_treatment: >-
+    Aplica identidad mercantil/escolta, corporación, sindicato o casa comercial al input; naves, carga o puerto son
+    anclas opcionales.
   color_and_tone: Oro solar, púrpura espacial y azul profundo para marcar riqueza, neutralidad y conflicto.
   lighting_and_shadow: Contraluz cósmico, balizas de muelle y focos de inspección de carga por zona.
   texture_and_material: Cascos nacarados, metal bruñido, textiles ceremoniales y superficies de carga modular.
-  camera_and_composition: Panorámica de hub con rutas de tránsito, puntos de negociación y áreas de disputa visibles.
+  camera_and_composition: Rutas de tránsito, negociación y disputa como lectura compositiva; no exigir hub, puerto ni muelle físico.
   atmosphere_and_mood: Ambiciosa, diplomática y volátil.
   rendering_and_quality: Worldbuilding key art orientado a sistemas de comercio, reputación y control de rutas.
+  creative_brief: >-
+    Aplica Celestial Harbor Trade Wars como gramatica original de videojuego sobre cualquier input: conserva su sistema
+    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    fijo.
 avoidRules:
   - watermark
   - text

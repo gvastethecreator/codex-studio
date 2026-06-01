@@ -17,10 +17,10 @@ visualDna:
   atmosphere: Curious optimism, civic care, and intergenerational collaboration.
   key_features: Outdoor seminar-terrace rhythm, energy dashboard motifs, seed-library cues, and maker-learning nodes.
   creative_brief: >-
-    Preserve canopy learning-spiral grammar as a reusable style system:
-    pedagogical ramp architecture, visible climate dashboards, and
-    intergenerational eco-learning should remain coherent across subjects
-    without requiring a campus, classrooms, students, or observatories.
+    Convert the input into climate literacy in motion: spiral inquiry paths,
+    translucent canopy rings, dashboard-like energy cues, and warm timber/cork
+    surfaces. Campus, classrooms, students, or observatories may appear, but
+    the style should read as curiosity embedded in visible ecological systems.
 avoidRules: [photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-013.webp }
 attributes:

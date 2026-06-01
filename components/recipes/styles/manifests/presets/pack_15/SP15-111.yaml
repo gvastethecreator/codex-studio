@@ -12,14 +12,14 @@ visualDna:
   color_palette: Pearl, muted coral, and quiet jade.
   lighting_setup: Museum diffusion with internal biological glow.
   material_texture: Bio-glass, preserved membranes, and smooth ceramic.
-  render_quality: Museum-grade biotech concept with fragile elegance.
+  render_quality: Museum-grade biotech render with fragile elegance and specimen-memory cues.
   spatial_distortion: Pavilion-shell focus around a central specimen spine.
   atmosphere: Preservation, contemplation, and scientific tenderness.
   key_features: Tissue-drawer motifs, bio-index panels, preservation domes, and translucent specimen membranes.
   creative_brief: >-
-    Preserve tissue archive-pavilion grammar as a reusable style system:
-    specimen-centered memory architecture, fragile bio-preservation elegance,
-    and scientific tenderness should remain coherent across subjects.
+    Archive the input as tender tissue memory: pearl shell ribs, muted-coral
+    specimen bands, quiet-jade bio-index panels, preservation domes, and
+    translucent membrane layers make any subject feel fragile and remembered.
 avoidRules: [photoreal, horror, gore, watermark, text, logo, messy-clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-111.webp }
 attributes:

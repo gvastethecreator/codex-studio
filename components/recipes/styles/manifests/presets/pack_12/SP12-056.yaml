@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Mobility-action parkour en megaciudad de carbono, centrado en persecución, momentum y elección de ruta.
-  subject_treatment: Courier rebelde vs drones de caza, con lectura de velocidad y estado de amenaza.
+  aesthetic: Gramática mobility-action parkour con momentum, persecución, elección de ruta y superficies de carbono.
+  subject_treatment: Reinterpreta el input como courier, drone cazador, ruta, checkpoint o módulo de agarre según aplique.
   color_and_tone: Negro mate, cian brillante y rojo señal para guiar ruta, peligro y checkpoints.
   lighting_and_shadow: Atardecer urbano con acentos neon orientados a navegación vertical.
   texture_and_material: Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.
-  camera_and_composition: Ruta de salto con profundidad vertical, líneas de flujo y alternativas de escape.
+  camera_and_composition: Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.
   atmosphere_and_mood: Cinética, urgente y técnicamente precisa.
   rendering_and_quality: Mobility scene gameplay-first con legibilidad de trayectorias, riesgo y timing.
 avoidRules:

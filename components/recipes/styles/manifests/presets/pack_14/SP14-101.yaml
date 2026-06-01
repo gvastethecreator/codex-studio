@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-101
 packId: pack_14
-name: Black River Totem
+name: Blackwater Totem Memory
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Totem monument rising from a black riverbank.
-  form_and_line: Vertical stacked forms, carved notches, and water reflections.
+  aesthetic: Ancestral totem language marked by blackwater reflections and ritual memory.
+  form_and_line: Vertical stacked forms, carved notches, and horizontal reflection bands.
   color_palette: Ink black, river teal, and oxidized copper.
   lighting_setup: Moonlit reflections and lantern scatter.
   material_texture: River stone, carved wood, and corroded metal.
-  render_quality: Mythic environmental concept with emblematic clarity.
-  spatial_distortion: Upright totem anchored against flowing horizontal water.
+  render_quality: Mythic concept illustration with emblematic clarity.
+  spatial_distortion: Upright totem tension against flowing blackwater bands, adaptable beyond landscape.
   atmosphere: Ancestor memory, passage, and river-bound ritual.
-  key_features: Totem pillars, black water, and carved marks.
-  creative_brief: A symbolic river monument where the flow of memory is marked by ancestral signs.
+  key_features: Totem pillars, blackwater sheen, carved ancestral marks.
+  creative_brief: Translate any input into blackwater totem memory, using carved vertical signs, oxidized-copper scars, reflection bands, and ink-dark flow. Keep ancestor-memory weight without forcing totems, riverbanks, landscapes, carved figures, or ritual sites.
 avoidRules: [photoreal, neon, pop-art, watermark, text, logo, cute]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-101.webp }
 attributes:
   negativePrompt: photoreal, neon, pop-art, watermark, text, logo, cute
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

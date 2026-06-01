@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-214
 packId: pack_13
-name: Tanaka-kun Is Always Listless - Breeze-Drift Lethargy
+name: Breeze-Drift Beautiful Inertia
 category: 5. Slice of Life & Moe
 version: 1
 supportedTasks:
@@ -12,19 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Tanaka-kun title anchor translated into ambient lethargy, soft wind, low-energy friendship, sleepy elegance, and beautiful nothingness
-  form_and_line: Relaxed low-energy silhouettes, minimal expression lines, slow contour drift, and breezy negative-space composition control
-  color_palette: Pale sky blues, soft grays, neutral cloth fields, gentle spring greens, and light cream highlights
-  lighting_setup: Diffuse midday softness, sleepy ambient fill, soft side light, and low-contrast illumination that lets pauses breathe
-  material_texture: Light fabric drape, paper-like matte surfaces, soft wind-ruffled hair texture, and faint worn-surface tactility
-  render_quality: Lethargic-comfort rendering with calm comedic timing, airy minimalism, and deliberate low-exertion beauty
-  spatial_distortion: Time-dilation framing that stretches quiet pauses and ambient stillness across any subject or setting
-  atmosphere: Sleepy, gentle, airy, easygoing
-  key_features: Low-energy posture, breeze effects, wide negative space, minimal exertion comedy, soft ambient light
+  aesthetic: >-
+    Breeze-drift anime inertia where low energy, ambient friendship, sleepy elegance, and beautiful
+    nothingness slow every visual decision
+  form_and_line: >-
+    Relaxed silhouettes, minimal expression marks, drifting contours, soft posture collapse, and
+    broad airy negative space
+  color_palette: Pale sky blue, soft gray, neutral cloth, spring green, light cream, and faint warm blush
+  lighting_setup: >-
+    Diffuse midday softness, sleepy ambient fill, gentle side light, and low-contrast illumination
+    that lets pauses breathe
+  material_texture: >-
+    Light fabric drape, paper matte, faint worn surfaces, soft wind-ruffled texture, and dustlike
+    air
+  render_quality: >-
+    Lethargic-comfort anime finish with airy minimalism, precise low-exertion comedy, and deliberate
+    calm beauty
+  spatial_distortion: Time-dilation framing stretches quiet pauses and ambient stillness across any subject
+  atmosphere: Sleepy, gentle, airy, easygoing, elegant
+  key_features: >-
+    Low-energy posture, breeze effects, negative space, pause-centric timing, minimal exertion
+    comedy, and soft light
   creative_brief: >-
-    Use Tanaka-kun as a style anchor for breeze-drift lethargy: low-energy
-    friendship, pause-centric timing, and beautiful everyday inertia should stay
-    intact without requiring school, benches, classroom, or fixed recline scenes.
+    Use Tanaka-kun as style anchor for breeze-drift beautiful inertia. Apply slow pauses, airy
+    negative space, relaxed silhouettes, and low-energy elegance to any prompt. Schools, benches,
+    classrooms, and recline scenes are optional.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +53,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-214.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

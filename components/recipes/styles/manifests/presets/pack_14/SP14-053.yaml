@@ -1,24 +1,33 @@
 schemaVersion: 1
 id: SP14-053
 packId: pack_14
-name: Medusa Court Reliquary
+name: Medusa Reliquary Warning
 category: 5. Mythic — Greek Epics
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic, greek-myth]
 visualDna:
-  aesthetic: Reliquary chamber preserving monstrous memory as political warning.
-  form_and_line: Vaulted aisles, shield displays, and mirrored defense layout.
+  aesthetic: Medusa reliquary warning where monstrous memory becomes political discipline and ritual containment.
+  form_and_line: Vaulted aisle cues, shield displays, and mirrored defense layout.
   color_palette: Obsidian, pale green, and antique gold.
   lighting_setup: Low torchlight and mirrored reflection traps.
   material_texture: Dark stone, burnished shields, and cracked mosaics.
   render_quality: Intense interior concept with symbolic density.
-  spatial_distortion: Tight converging lines toward a central relic plinth.
+  spatial_distortion: Tight converging lines toward a central relic warning.
   atmosphere: Fear discipline and ritual containment.
-  key_features: Gorgon iconography, mirror walls, and hero relic alcoves.
-  creative_brief: A Greek chamber where monster myths are curated as state memory.
+  key_features: Gorgon iconography, mirror-wall cues, hero relic alcoves.
+  creative_brief: Reinterpret the input through Medusa reliquary warning, making monster myth read as state memory without requiring a chamber.
 avoidRules: [photoreal, comedic, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-053.webp }
 attributes:
   negativePrompt: photoreal, comedic, cyber-neon, watermark, text, logo
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-greek-epics, categoryName: 5. Mythic — Greek Epics, tags: [mythic-noir-curated-vault, mythic, greek-myth], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-greek-epics,
+    categoryName: 5. Mythic — Greek Epics,
+    tags: [mythic-noir-curated-vault, mythic, greek-myth],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

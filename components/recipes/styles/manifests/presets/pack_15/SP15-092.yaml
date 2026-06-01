@@ -12,14 +12,14 @@ visualDna:
   color_palette: Brass, midnight blue, and ivory.
   lighting_setup: Clear night sky and internal dial glow.
   material_texture: Bronze metal, stone steps, and glass domes.
-  render_quality: Scientific concept art with delicate machinery detail.
+  render_quality: Scientific clockwork render with delicate machinery detail and celestial calibration cues.
   spatial_distortion: Stepped upward composition toward a dome-center instrument axis.
   atmosphere: Curiosity, patience, and astronomical order.
   key_features: Dial telescopes, time-map grids, stargear platforms, and brass calibration marks.
   creative_brief: >-
-    Preserve brass observatory-steps grammar as a reusable style system:
-    stepped astronomical instrumentation, dial-driven sky analysis, and
-    patient celestial order should remain coherent across subjects.
+    Aim the input toward brass celestial order: ringed step bands, midnight-blue
+    dome curves, dial telescope booms, ivory calibration marks, and internal
+    stargear glow make any subject feel patiently astronomical.
 avoidRules: [photoreal, futuristic-minimal, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-092.webp }
 attributes:

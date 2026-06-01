@@ -12,14 +12,14 @@ visualDna:
   color_palette: Neon teal, lime, and bubblegum coral.
   lighting_setup: Sunset neon mixed with underwater glow.
   material_texture: Wet decking, translucent plastic, and kelp fiber.
-  render_quality: Bright concept art with arcade clarity.
+  render_quality: Bright seapunk render with arcade clarity and swaying kelp interface cues.
   spatial_distortion: Pier-like perspective extending into underwater column rhythm.
   atmosphere: Fun, drift, and coastal exuberance.
   key_features: Kelp cabinet motifs, boardwalk lantern marks, wave-game pods, and submerged arcade glow.
   creative_brief: >-
-    Preserve kelp arcade-boardwalk grammar as a reusable style system:
-    pierline leisure circuitry, swaying kelp interface ornament, and
-    sunset-neon coastal exuberance should remain coherent across subjects.
+    Play the input through kelp arcade energy: neon-teal pier strokes, lime kelp
+    strands, bubblegum-coral pods, wet decking shine, and submerged cabinet glow
+    make any subject feel coastal, playful, and drifting.
 avoidRules: [photoreal, grimdark, industrial, watermark, text, logo, foggy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-118.webp }
 attributes:

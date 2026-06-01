@@ -20,7 +20,12 @@ visualDna:
   render_quality: CAD, automotive, manufacturing-grade
   atmosphere: Perfect, engineered, mathematical precision
   key_features: Smoothness, G2 continuity
-  creative_brief: Curves so smooth they vanish into mathematics — zebra-stripe reflections run across Class-A surfaces like diagnostic poetry, proving with every unbroken band that G2 continuity holds. No polygon dares show its face; nurbs define form as pure equation rendered into gloss. The image channels automotive design studios and CAD bays at dawn, where perfection is measured in the uninterrupted flow of a highlight across a fender.
+  creative_brief: >-
+    Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection checks, G2
+    continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender, or design-studio
+    setup is required. Apply Nurbs Surface as a portable 3D/render style system over any input: preserve its renderer
+    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required
+    character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - polygons
   - sharp

@@ -20,9 +20,15 @@ visualDna:
   render_quality: Scientific, tiny, micrograph-journal, resolution-test beauty, lens-astigmatism correction, vacuum-seal cleanliness
   spatial_distortion: Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe
   atmosphere: Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon
-  key_features: Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands
+  key_features: >-
+    Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain,
+    magnification-readout, charging-artifact bands
   creative_brief: >-
-    Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries.
+    Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan
+    texture cues. Preserve scientific instrument character while allowing diverse specimen geometries. Apply Electron
+    Microscope as a portable style system over any input: preserve its construction grammar, material cues, scale logic,
+    and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom
+    sample, product shot, or scene template.
 avoidRules:
   - color
   - far away

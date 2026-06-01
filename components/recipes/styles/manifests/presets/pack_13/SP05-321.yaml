@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-321
 packId: pack_13
-name: Yoshitaka Amano - Ether-Wisp Gothic Fantasy
+name: Ether-Wisp Gothic Ornament
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,20 +12,27 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Ethereal Amano-like fantasy where elongated forms dissolve into decorative ink wisps, celestial melancholy, gilded voids, and feather-light dream-goth elegance
+  aesthetic: >-
+    Ethereal Amano-like fantasy where elongated forms dissolve into decorative ink wisps, celestial
+    melancholy, gilded voids, and feather-light dream-goth elegance
   form_and_line: Hair-thin ornamental contour, calligraphic tapering, decorative filigree line drift
   color_palette: Ivory, antique gold, moon-silver, dried rose, abyssal indigo, pale orchid haze
   lighting_setup: Moonlit haze, diffuse heavenly glow, soft metallic gleam, spectral backlighting
   material_texture: Airbrush mist, metallic leaf suggestion, silk translucency, ink feathering, velvety emptiness
-  render_quality: Ethereal fine-art anime rendering with ornamental void composition and spectral detail discipline
-  spatial_distortion: Weightless elongation, draped form flow, gravity-light contour drift, and cathedral-thin silhouettes
+  render_quality: >-
+    Ethereal fine-art anime rendering with ornamental void composition and spectral detail
+    discipline
+  spatial_distortion: >-
+    Weightless elongation, draped form flow, gravity-light contour drift, and cathedral-thin
+    silhouettes
   atmosphere: Ethereal, baroque, sorrowful, celestial
-  key_features: Elongated silhouettes, decorative ink wisps, gilded accents, void-rich composition, feathered ornamental detail
+  key_features: >-
+    Elongated silhouettes, decorative ink wisps, gilded accents, void-rich composition, feathered
+    ornamental detail
   creative_brief: >-
-    Use Yoshitaka Amano title as style anchor for ether-wisp fantasy:
-    calligraphic elongation, gilded-void ornament, and melancholic celestial
-    elegance should transfer without requiring bodies, costumes, wings, or
-    gothic fantasy characters.
+    Use Yoshitaka Amano as style anchor for ether-wisp gothic ornament. Any prompt should elongate
+    into calligraphic contour, gilded void, featherlike decoration, and celestial melancholy.
+    Bodies, costumes, wings, and fantasy characters are optional.
 avoidRules:
   - photorealism
   - heavy 3d shading
@@ -35,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-321.webp
 attributes:
-  negativePrompt: photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern streetwear styling
+  negativePrompt: >-
+    photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern
+    streetwear styling
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

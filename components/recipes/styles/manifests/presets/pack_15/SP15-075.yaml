@@ -17,9 +17,9 @@ visualDna:
   atmosphere: Calm mobility, civic coordination, low-gravity patience, and shared timing.
   key_features: Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.
   creative_brief: >-
-    Apply tidal crater transit-hub as an abstract style treatment: guide any
-    subject with bowl geometry, low-gravity curves, rope tension, and soft
-    amber movement cues.
+    Route the input through low-gravity civic motion: bowl-depth arcs, glide-lane
+    ribbons, tension-cable drops, basin aqua reflections, and amber beacon nodes
+    make any subject feel timed, accessible, and crater-shaped.
 avoidRules: [photoreal, dystopian-chaos, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-075.webp }
 attributes:

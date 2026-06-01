@@ -20,7 +20,12 @@ visualDna:
   render_quality: Math art, infinite, algorithmic wonder
   atmosphere: Trippy, alien, mind-bending
   key_features: Self-similarity, fractal recursion
-  creative_brief: Zoom in and the pattern repeats — zoom in again and it repeats again, a Mandelbulb cathedral of self-similarity where scale becomes meaningless. Psychedelic recursion tones spiral through deep cave shadows, and procedural surfaces carry the fingerprint of the equation that birthed them. The image is alien geometry rendered familiar through mathematics, a trip into algorithmic wonder where every detail contains the whole and the whole contains every detail.
+  creative_brief: >-
+    Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density, algorithmic
+    ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a cathedral, cave or
+    traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system over any input: preserve its
+    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
+    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - simple
   - clean

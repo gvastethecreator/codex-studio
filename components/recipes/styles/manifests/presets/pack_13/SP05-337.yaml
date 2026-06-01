@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-337
 packId: pack_13
-name: Yoh Yoshinari - Firework Fantasy Draftsmanship
+name: Technomagic Draftsmanship Burst
 category: 12. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -12,19 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del dibujo celebran movimiento.
+  aesthetic: >-
+    Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del
+    dibujo celebran movimiento.
   form_and_line: Contorno seguro y enérgico, detalle técnico abundante y arcos de movimiento con timing jubiloso.
   color_palette: Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple
-  lighting_setup: Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos direccionales.
-  material_texture: Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado pulcro.
-  render_quality: Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso controlado.
-  spatial_distortion: Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition
+  lighting_setup: >-
+    Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos
+    direccionales.
+  material_texture: >-
+    Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado
+    pulcro.
+  render_quality: >-
+    Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso
+    controlado.
+  spatial_distortion: >-
+    Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst
+    composition
   atmosphere: Lúdica, compleja y expansiva, con energía de celebración artesanal.
-  key_features: Hardware fantástico complejo, magia tipo fuegos artificiales, arcos de acción festivos y draftsmanship protagonista.
+  key_features: >-
+    Complex fantasy hardware, celebratory motion arcs, bright technical magic, expressive
+    construction lines, and draftsmanship as spectacle
   creative_brief: >-
-    Construye una gramática reusable de firework-fantasy donde precisión técnica,
-    hardware mágico y dinamismo celebratorio se integren sin exigir maquinaria,
-    festival nocturno, fuegos artificiales, mago o aventura concreta.
+    Use Yoh Yoshinari as style anchor for technomagic draftsmanship bursts. Any prompt should feel
+    engineered, magical, precise, explosive, and joyfully drawn. Machinery, festivals, fireworks,
+    mages, and adventure scenes are optional.
 avoidRules:
   - still
   - calm

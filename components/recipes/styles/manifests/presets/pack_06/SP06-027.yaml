@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Rough
   atmosphere: Rustic, temporary, handmade
   key_features: Dusty lines
-  creative_brief: Calcium carbonate dust clings to dark tooth, every line a temporary claim destined for erasure. White on black reverses the natural order, light emerging from darkness through powder and pressure. The drawing should feel provisional and handmade without requiring menus, classrooms, boards, or written notes.
+  creative_brief: >-
+    Apply chalk-dust drawing to any input: powdery white marks on dark tooth,
+    erasable residue, pressure-grain variation, soft dust halos, and handmade
+    provisional contrast. Keep temporary mark energy without requiring menus,
+    classrooms, chalkboards, or written notes.
 avoidRules:
   - photo
   - realistic

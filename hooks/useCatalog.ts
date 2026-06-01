@@ -64,6 +64,12 @@ function resolveCatalogMutationError(error: unknown, fallbackMessage: string) {
   return error instanceof Error ? error.message : fallbackMessage;
 }
 
+function createCatalogFilterKey(filters: CatalogQueryParams) {
+  return JSON.stringify(
+    Object.entries(filters).sort(([left], [right]) => left.localeCompare(right)),
+  );
+}
+
 export function collectWorkspaceCatalogImageIds(entries: CatalogImage[], workspaceId: string) {
   return entries.reduce<string[]>((acc, entry) => {
     if (belongsToWorkspace(workspaceId, entry.workspaceId)) {
@@ -86,6 +92,7 @@ export function useCatalog({
 
   const filtersRef = useRef(filters);
   filtersRef.current = filters;
+  const filtersKey = createCatalogFilterKey(filters);
 
   const loadPage = useCallback(
     async (offset: number, mode: 'replace' | 'append') => {
@@ -120,7 +127,7 @@ export function useCatalog({
 
   useEffect(() => {
     void refresh();
-  }, [refresh]);
+  }, [filtersKey, refresh]);
 
   const view = useMemo(() => createCatalogView(entries), [entries]);
 

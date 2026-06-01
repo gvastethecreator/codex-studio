@@ -19,7 +19,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Intellectual, fragmented',
       key_features: 'Geometric breakdown',
       creative_brief:
-        'Reality fractures into simultaneous viewpoints, each shard carrying its own truth. The eye must reassemble what the mind knows to be whole, finding order in deliberate disintegration.',
+        'Apply cubist fracture to the input: simultaneous viewpoints, angular planes, muted ochre-blue-grey paint facets, and deliberate spatial disassembly should let any subject remain readable while broken into intellectual geometry.',
     },
   },
   {
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Balanced, rigid',
       key_features: 'Grid structure',
       creative_brief:
-        'Universality distilled to ninety degrees, the grid as cosmic architecture. Black borders hold primary colors in suspended equilibrium, a meditation on what remains when everything inessential is removed.',
+        'Apply De Stijl grid logic to the input: black orthogonal bars, white space, primary color rectangles, and asymmetric balance should convert any subject into disciplined planar harmony without requiring a literal painting panel.',
     },
   },
   {
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rational, bold',
       key_features: 'Primary colors',
       creative_brief:
-        'Form stripped to its skeleton, every line an argument for necessity. Primary colors sing against geometry, a manifesto of clarity in a world of ornament.',
+        'Apply Bauhaus reduction to the input: primary-color blocks, strict circles, bars, grids, and functional negative space should strip any subject to clear modular construction without becoming a poster-only layout.',
     },
   },
   {
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Revolutionary, strong',
       key_features: 'Typography elements',
       creative_brief:
-        'The machine speaks in diagonal thunder, red and black charging across paper like revolution itself. Every composition is a declaration, every angle a refusal of the old world.',
+        'Drive the input through constructivist urgency: red-black diagonals, industrial geometry, hard typographic-like blocks without readable text, and poster-force composition should make any subject feel engineered, public, and declarative.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dizzying, kinetic',
       key_features: 'High contrast',
       creative_brief:
-        'The canvas breathes and pulses, static lines becoming a storm behind the eyes. Vision becomes a participant, not a witness, caught in the shimmer between seeing and believing.',
+        'Apply op-art optical stress to the input: pulsing line fields, high-contrast waves, vibrating figure-ground reversals, and controlled visual interference should make any subject feel unstable without losing silhouette legibility.',
     },
   },
   {
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Spiritual, empty',
       key_features: 'White void',
       creative_brief:
-        'Pure sensation drifts through white infinity, rectangles and circles untethered from gravity and meaning. The void is not absence but potential, a field where shape becomes feeling.',
+        'Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids, minimal gravity, and pure color-shape tension should make any subject feel abstracted into sensation.',
     },
   },
   {
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Divine, orderly',
       key_features: 'Radial symmetry',
       creative_brief:
-        'Infinity caught in a lattice of stars, each intersection a prayer for the ineffable. Geometry becomes devotion, the repeating pattern a doorway to the boundless.',
+        'Apply Islamic geometric order to the input: star lattices, interlocking tessellations, radial symmetry, and disciplined repetition should turn any subject into devotional pattern logic without requiring architecture.',
     },
   },
   {
@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Natural math',
       key_features: 'Cell structure',
       creative_brief:
-        "Nature's partitioning algorithm, borders emerging where influences collide. Each cell a small sovereignty, the whole a map of equilibrium written in organic code.",
+        'Apply Voronoi partitioning to the input: cellular borders, influence zones, organic algorithmic tiles, and equilibrium maps should segment any subject into living computational geometry.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Modern, tech',
       key_features: 'Triangles',
       creative_brief:
-        'The world reduced to its crystalline essence, every surface a facet of light. Digital geometry whispers of computation, a landscape born from vertex and vector.',
+        'Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply this abstract/vector construction over any input: preserve shape system, color logic, edge treatment, composition rhythm, and graphic rendering behavior while avoiding a required subject category, poster layout, icon, or scene template.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Infinite, trippy',
       key_features: 'Self-similarity',
       creative_brief:
-        'Mathematics blooms into cathedral windows, each recursion a deeper threshold. The infinite peers back through self-similar corridors, a coastline that never resolves into a straight line.',
+        'Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical edge repetition, and infinite-depth ornament should let any subject bloom into repeatable geometry.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

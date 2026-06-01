@@ -21,7 +21,12 @@ visualDna:
   spatial_distortion: None
   atmosphere: Creative, solid, accessible artistry
   key_features: Principled BSDF, GPU+CPU hybrid
-  creative_brief: Community-built light traces paths through open-source geometries, democratizing the physics of beauty — the Principled BSDF is a single node that speaks a dozen material languages. Filmic log encoding gives the image room to breathe before the final grade, and GPU+CPU hybrid rendering erases the line between patience and performance. Creator-friendly excellence, no gatekeeper required, every frame a testament to the power of the commons.
+  creative_brief: >-
+    Render any input through Blender Cycles lookdev: Principled BSDF material
+    variety, Filmic log highlight rolloff, path-traced bounce, open-source
+    geometry cleanliness, and creator-friendly polish. Keep flexible CG craft
+    without requiring a benchmark object, product turntable, demo setup, or
+    gallery environment.
 avoidRules:
   - eevee
   - realtime

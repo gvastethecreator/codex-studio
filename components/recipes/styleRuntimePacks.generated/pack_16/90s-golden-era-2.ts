@@ -559,7 +559,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Cel shading limpio, reflejos cromados, tensión operativa abstracta, posing confiado y ritmo visual de aceleración.',
       creative_brief:
-        'Aplica una gramática reusable de acción técnica noventera a cualquier prompt o imagen de entrada: precisión gráfica, actitud afilada y dinamismo cinético sin imponer vehículos, armas, garajes ni persecuciones.',
+        'Aplica una gramática reusable de acción técnica noventera a cualquier prompt o imagen de entrada: precisión gráfica, actitud afilada y dinamismo cinético. Vehículos, armas, garajes o persecuciones pueden aparecer como indicios de thriller técnico si potencian el input, sin fijar una escena literal.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,16 +12,20 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Gunslinger, frontier-justice mythology, tumbleweed-silence drama
+  aesthetic: Wild West frontier costume, gunslinger mythology, tumbleweed-silence drama
   form_and_line: Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle
   color_palette: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
-  lighting_setup: High noon, merciless desert sun, saloon-interior amber, campfire flicker
+  lighting_setup: High-noon glare, merciless desert sun, amber practical warmth, campfire flicker
   material_texture: Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel
   render_quality: Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty
   spatial_distortion: None
-  atmosphere: Tough, lonely, high-noon standoff tension, desert-expanse solitude, whiskey-bottle weariness
-  key_features: Stetson hat, gun belt and holster, spurred boots, bandana, tin star badge
-  creative_brief: Oilskin leather cracked by desert sun into maps of a thousand trail miles, the duster coat sweeping dust that has not settled since the buffalo roamed. A Stetson brim shadows eyes that squint toward high noon, gun belt heavy against the hip with the weight of consequence, spurred boots planted in a street where the only law is the speed of the draw.
+  atmosphere: Tough, lonely, high-noon tension, frontier solitude, whiskey-bottle weariness
+  key_features: Stetson cues, gun-belt or holster motif, spurred boots, bandana, tin-star detail
+  creative_brief: >-
+    Give the input frontier costume logic: oilskin leather, duster sweep,
+    tobacco tan, denim, bandana triangles, Stetson brim and spur-metal glints.
+    Keep gunslinger myth without requiring saloon, street standoff, weapon draw,
+    desert figure or cowboy portrait.
 avoidRules:
   - city
   - clean
@@ -42,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

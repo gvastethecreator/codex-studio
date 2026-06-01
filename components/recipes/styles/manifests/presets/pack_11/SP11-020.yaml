@@ -19,9 +19,13 @@ visualDna:
   material_texture: Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina
   render_quality: Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm
   spatial_distortion: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
-  atmosphere: Nostalgic, simple, fireside quiet, grandfather's workshop, old-world tenderness
+  atmosphere: Nostalgic, simple, warm, handcrafted, old-world tenderness
   key_features: Wood texture, visible grain rings, dovetail joints, paint-wear edges
-  creative_brief: Grain rings record the life of the tree now shaped into a plaything for new generations, each growth ring a calendar preserved in oak. Paint chips at the edges reveal layered history of countless small hands, each touch polishing the wood toward heirloom satin. Simplicity carved from a single block carries more warmth than any assembly line could manufacture.
+  creative_brief: >-
+    Translate the input into carved wooden-toy logic: simplified block forms,
+    rounded peg-like joints, visible grain rings, hand-painted accents, and
+    age-polished bevels. Keep heirloom craft warmth, but avoid requiring small
+    hands, a workshop, or one literal toy object.
 avoidRules:
   - plastic
   - metal

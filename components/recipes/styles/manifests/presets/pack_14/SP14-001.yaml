@@ -1,24 +1,37 @@
 schemaVersion: 1
 id: SP14-001
 packId: pack_14
-name: Cathedral Eclipse Procession
+name: Eclipse Reliquary Processional
 category: 1. Mythic — Symbolism
 version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [mythic-noir-curated-vault, mythic-noir]
 visualDna:
-  aesthetic: Dark sacred fantasy with processional elegance.
-  form_and_line: Long ritual silhouettes, gothic ornament, and a solemn composition.
+  aesthetic: Dark sacred fantasy with eclipse-lit reliquary authority and processional rhythm.
+  form_and_line: Long ritual silhouettes, gothic ornament bands, vertical icon axes, and solemn procession-like spacing.
   color_palette: Negro obsidiana, marfil antiguo y oro quemado.
-  lighting_setup: Eclipse backlight with cathedral interior beams.
+  lighting_setup: Eclipse backlight, narrow sacred beams, gold rim partitions, and deep obsidian falloff.
   material_texture: Wet stone, liturgical metal, and heavy velvet.
   render_quality: Key art premium con dramatismo controlado.
-  spatial_distortion: Deep central nave with monumental perspective.
+  spatial_distortion: Monumental central-axis depth that feels processional without requiring a cathedral interior.
   atmosphere: Reverence, fatality, and ceremonial magnetism.
-  key_features: Sacred procession, eclipsed stained glass, silent authority.
-  creative_brief: A cathedral procession under eclipse—dark, majestic, and perfectly readable.
+  key_features: Eclipse halo hierarchy, reliquary gold accents, processional silhouette rhythm, gothic verticals, and silent authority.
+  creative_brief: >-
+    Process the input through eclipse reliquary grandeur: obsidian negative
+    space, antique-ivory sacred axes, burned-gold rimlight, and solemn
+    processional spacing should make any subject feel dark, majestic, and
+    ceremonial without requiring a cathedral, clergy, stained glass, or parade.
 avoidRules: [photoreal, cute, flat-light, watermark, text, logo, low-quality]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP14-001.webp }
 attributes:
   negativePrompt: photoreal, cute, flat-light, watermark, text, logo, low-quality
-taxonomy: { packId: pack_14, packName: Mythic Noir Curated Vault, categoryId: mythic-symbolism, categoryName: 1. Mythic — Symbolism, tags: [mythic-noir-curated-vault, mythic-noir], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_14,
+    packName: Mythic Noir Curated Vault,
+    categoryId: mythic-symbolism,
+    categoryName: 1. Mythic — Symbolism,
+    tags: [mythic-noir-curated-vault, mythic-noir],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

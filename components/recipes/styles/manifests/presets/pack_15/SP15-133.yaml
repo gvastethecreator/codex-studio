@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Quiet, encrypted, damp, humane, watchful.
   key_features: Rain-streak circuitry, transparent kernel nodes, glass-plane layering, diode constellations, and warm repair-light accents.
   creative_brief: >-
-    Preserve rain kernel alleyglass as a reusable style system: wet transparent
-    circuitry, micro-node glow, and layered nocturnal reflections should apply
-    to any subject without requiring a city alley, gadgets, or readable UI text.
+    Compress the input into rain kernel alleyglass: wet transparent circuitry,
+    black-glass layers, electric-blue micro nodes, magenta diode constellations,
+    and warm repair-light accents apply without requiring a city alley, gadgets,
+    or readable UI text.
 avoidRules: [photoreal, sunny-pastoral, militarized, fantasy-medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-133.webp }
 attributes:

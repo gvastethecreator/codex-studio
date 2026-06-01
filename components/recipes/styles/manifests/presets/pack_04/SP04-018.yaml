@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Bright, playful, exploratory, classroom-friendly
   key_features: Overlap stratification, cut-edge rhythm, texture-rich color blocks
   creative_brief: >-
-    Build imagery through layered cut-paper construction rather than drawn contour modeling. Preserve Eric Carle-style tactile warmth: irregular edges, painted paper variation, and clear shape hierarchy that stays legible across diverse subjects and compositions.
+    Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color
+    blocks, shallow cast shadows, fiber texture, and clear shape hierarchy should replace drawn
+    contour modeling without requiring classroom subjects, animals, pages, props, or fixed story
+    scenes.
 avoidRules:
   - drawn
   - painted

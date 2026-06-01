@@ -8,7 +8,6 @@ import {
   Server,
   Share,
   ShieldCheck,
-  Sparkles,
   Terminal,
 } from 'lucide-react';
 import type { StudioDiagnosticsSnapshot, StudioRuntimeStatusItem } from '../lib/studioDiagnostics';
@@ -26,8 +25,6 @@ interface StatusItem {
 
 interface RightSystemPanelProps {
   onExportLegacyVisualBatchSnapshot: () => void;
-  isBackgroundEnabled: boolean;
-  onToggleBackground: () => void;
   isQueueOpen: boolean;
   onToggleQueue: () => void;
   queueCount: number;
@@ -92,8 +89,6 @@ function StatusCard({ label, value, detail, tone, icon: Icon }: StatusItem) {
 export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
   ({
     onExportLegacyVisualBatchSnapshot,
-    isBackgroundEnabled,
-    onToggleBackground,
     isQueueOpen,
     onToggleQueue,
     queueCount,
@@ -179,26 +174,6 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
               </div>
             </button>
 
-            <button
-              type="button"
-              onClick={onToggleBackground}
-              className={`group mb-4 flex h-10 w-full items-center justify-between rounded-xl px-4 transition-all ${isBackgroundEnabled ? 'border border-accent-500/20 bg-accent-500/10' : 'bg-white/5 hover:bg-white/10'}`}
-            >
-              <div className="flex items-center gap-3">
-                <Sparkles
-                  size={16}
-                  className={isBackgroundEnabled ? 'text-accent-400' : 'text-zinc-500'}
-                />
-                <span
-                  className={`text-[10px] font-black uppercase tracking-widest ${isBackgroundEnabled ? 'text-accent-400' : 'text-zinc-300'}`}
-                >
-                  Animated Background
-                </span>
-              </div>
-              <div
-                className={`size-2 rounded-full ${isBackgroundEnabled ? 'bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.8)]' : 'bg-zinc-700'}`}
-              />
-            </button>
           </div>
 
           <div className="h-px w-full bg-white/5" />

@@ -22,9 +22,10 @@ visualDna:
   atmosphere: Tender, hopeful, radiant, whimsical, reassuring
   key_features: Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony
   creative_brief: >-
-    Preserve this preset through ornamental magic grammar: emblem circles,
-    ribbon-flow silhouettes, and soft jewel-pastel luminance should remain the
-    transferable identity beyond specific character archetypes.
+    Preserve this preset through ornamental magic grammar: emblem circles, ribbon-flow silhouettes, and soft
+    jewel-pastel luminance should remain the transferable identity beyond specific character archetypes. Apply this
+    anime/IP-title grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and
+    production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +42,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-020.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Burdened, resilient, compassionate, smoky, operational.
   key_features: Aerostat hull rhythm, relief-signal amber, cable-brace geometry, sootline weathering, and repaired utility surfaces.
   creative_brief: >-
-    Preserve sootline aerostat relief as a reusable style system: heavy lift,
-    repaired logistics, and warm diesel-era endurance should transform any
-    subject without forcing airships, convoys, disaster scenes, or crews.
+    Load the input with sootline relief endurance: blunt hull rhythm, cable-brace
+    diagonals, rescue-amber lamps, canvas khaki weathering, and repaired
+    diesel-era logistics transform any subject without forcing airships, convoys,
+    disaster scenes, or crews.
 avoidRules: [photoreal, neon-cyber, pristine-utopia, magical-fantasy, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-134.webp }
 attributes:

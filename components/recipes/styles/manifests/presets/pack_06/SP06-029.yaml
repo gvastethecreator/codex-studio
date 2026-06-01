@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: No internal details
   atmosphere: Graphic, stark
   key_features: Solid shape
-  creative_brief: Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The contour must do all expressive work, turning omission into the primary design tool. Absence becomes eloquence when what is removed outweighs what remains.
+  creative_brief: >-
+    Apply silhouette-first drawing to any input: pure contour recognition,
+    interior detail removed, high figure-ground contrast, edge clarity, and
+    omission as design language. Keep shape-driven eloquence without requiring
+    profile portraits, sunsets, cut paper, theatre screens, or human bodies.
 avoidRules:
   - photo
   - realistic

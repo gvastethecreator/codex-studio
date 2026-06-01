@@ -18,10 +18,13 @@ visualDna:
   lighting_setup: Glowing
   material_texture: Fractal
   render_quality: Trippy, 60s
-  spatial_distortion: Melting walls
+  spatial_distortion: Melting geometry
   atmosphere: Intense, hallucination
-  key_features: Eyes everywhere
-  creative_brief: Reality peels back in layers, fractals blooming behind the eyelids like neon flowers in accelerated time. Color becomes temperature, pattern becomes pulse, and the boundary between self and image dissolves completely.
+  key_features: Pulse motifs
+  creative_brief: >-
+    Apply psychedelic pulse to the input: neon fractals, vibrating complementary
+    colors, recursive floral geometry, liquid contour drift, and sensory
+    overload should transform any subject without requiring faces, posters, or drug imagery.
 avoidRules:
   - dull
   - grey
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-034
 packId: pack_07
-name: Abandoned Asylum
-category: 1. Residential Interiors
+name: Institutional Ruin Patina
+category: 3. Civic Infrastructure And Specialty Spaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: Ruina institucional burocrática, donde el deterioro acumulado se convierte en sistema visual principal.
   form_and_line: Axialidad rígida interrumpida por colapsos, repetición administrativa y fallas de cielo suspendido.
@@ -22,9 +22,11 @@ visualDna:
   atmosphere: Inmovilidad opresiva, vacío acústico frío y memoria administrativa detenida.
   key_features: Señalética deslavada, luminarias rotas, juntas abiertas, pilares de polvo y cielos parciales caídos.
   creative_brief: >-
-    Define una gramática de abandono institucional transferible en la que cada
-    capa material evidencie décadas de fallo de mantenimiento. La tensión debe
-    nacer de repetición arquitectónica y evidencia física, no de susto explícito.
+    Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, ejes administrativos rotos,
+    humedad mineral y luz residual. La tensión debe surgir de burocracia detenida, no de susto ni narrativa de
+    manicomio. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues,
+    architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type,
+    landscape, franchise set, creature, or fixed scene.
 avoidRules:
   - clean
   - new
@@ -35,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - civic-infrastructure-and-specialty-spaces
   supportedTasks:
     - image_generate
     - image_edit

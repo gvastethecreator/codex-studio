@@ -17,9 +17,10 @@ visualDna:
   atmosphere: Ancient, exact, wet, solemn, intelligent.
   key_features: Obsidian channel geometry, carved calibration marks, falling-water rhythm, basin circles, and mineral-stain history.
   creative_brief: >-
-    Preserve obsidian water clock as a reusable style system: hydraulic timing,
-    polished black stone, and ritual calibration marks should transform any
-    subject without forcing clocks, temples, waterworks, or figures.
+    Calibrate the input as an obsidian water clock: polished black channels,
+    falling-water rhythm, chalk incision marks, mineral teal caustics, and
+    circular basin recursion transform any subject without forcing clocks,
+    temples, waterworks, or figures.
 avoidRules: [photoreal, neon-city, plastic-modern, cute-cartoon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-136.webp }
 attributes:

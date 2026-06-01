@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Moire pattern
   atmosphere: Retro, graphic
   key_features: Rosette pattern
-  creative_brief: 'Images dissolve into the language of print, cyan and magenta dots dancing at angles that trick the eye into seeing continuity. The press reveals its secret: everything solid is just a constellation of circles.'
+  creative_brief: >-
+    Apply halftone print logic to the input: angled dot screens, CMYK rosette
+    texture, size-modulated circles, and press-like color separation should make
+    forms resolve from printed particles.
 avoidRules:
   - smooth gradient
 assets:
@@ -41,4 +44,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

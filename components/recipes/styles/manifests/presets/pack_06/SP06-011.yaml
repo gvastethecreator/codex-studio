@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Abstracted details
   atmosphere: Bold, energetic
   key_features: Knife marks
-  creative_brief: Paint becomes sculpture as the blade carves slabs of pure pigment across the surface, each stroke a ridge you could measure with fingers. Detail yields to gesture, form to texture, until subject and surface become indistinguishable. The image does not depict — it occupies space, demanding acknowledgement of its physical presence.
+  creative_brief: >-
+    Apply palette-knife painting to any input: thick impasto slabs, scraped
+    ridges, blade-carved edges, compressed detail, and sculptural pigment mass.
+    Keep physical paint presence without requiring landscapes, flowers,
+    seascapes, abstract canvases, or gallery closeups.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +59,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

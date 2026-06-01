@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Runner-adventure de trampas mecánicas con loop de reflejos, timing y memorización de patrones.
-  subject_treatment: Explorer ligero con kit relic-hunter y señales claras de vulnerabilidad/ventana de acción.
+  aesthetic: Gramática runner-adventure de trampas mecánicas con timing, reflejos, memoria de patrón y telegraph inmediato.
+  subject_treatment: Convierte el input en explorer, relic kit, hazard o mecanismo secuenciado; templo y reliquia son anclas opcionales.
   color_and_tone: Arena ancestral, jade funcional y rojo alerta para telegraph de peligro inmediato.
   lighting_and_shadow: Rayos solares recortados y contraste direccional para anticipar obstáculos secuenciados.
   texture_and_material: Piedra tallada, madera estructural y metal oxidado de mecanismos activos.
-  camera_and_composition: Perspectiva de fuga con profundidad extrema, lanes y puntos de salto inequívocos.
+  camera_and_composition: Perspectiva de fuga, lanes y puntos de salto inequívocos como estructura, sin exigir gauntlet o templo.
   atmosphere_and_mood: Urgente, rítmica y punitiva, de riesgo constante.
   rendering_and_quality: Entorno endless-runner gameplay-first con lectura instantánea de hazards y ritmo.
 avoidRules:

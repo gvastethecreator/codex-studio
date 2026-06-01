@@ -20,7 +20,12 @@ visualDna:
   render_quality: Geometric, craft, zen-precision
   atmosphere: Delicate, precise, folded poetry
   key_features: No cuts, pure-fold geometry
-  creative_brief: 'No cuts, no glue — only the purity of the fold — sharp creases define every plane and vertex, and paper grain textures the flat surfaces with natural-fiber warmth. Soft lighting highlights fold geometry without burning the edges, and the absence of curves makes every angle a deliberate geometric decision. The image is folded poetry: traditional origami rendered in 3D with zen precision, a crane or lotus built from mathematical crease patterns that transform a single sheet into sculpture.'
+  creative_brief: >-
+    Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper grain and
+    curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional subject matter.
+    Apply Origami 3D as a portable 3D/render style system over any input: preserve its renderer logic, material
+    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
+    prop, environment, UI screen, product shot, or scene template.
 avoidRules:
   - curved
   - smooth

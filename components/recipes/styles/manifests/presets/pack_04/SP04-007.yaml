@@ -22,7 +22,10 @@ visualDna:
   atmosphere: Curious, adventurous, lucid, observational
   key_features: Zero hatching, stable line weight, readable architecture and props
   creative_brief: >-
-    Preserve absolute clarity in every mark: monoline contour, flat color fields, and legible staging. Keep compositions information-rich but visually calm, following the Hergé-derived Ligne Claire discipline where readability is the main expressive engine.
+    Apply Ligne Claire discipline to any input: uniform monoline contour, flat color fields,
+    readable props, clear spatial logic, and noise-free staging should make clarity the expressive
+    engine without requiring adventurers, vehicles, architecture, travel scenes, or a fixed
+    European-comic setup.
 avoidRules:
   - shading
   - gradient

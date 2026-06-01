@@ -4,33 +4,59 @@ packId: pack_15
 name: Ray Bazaar Hangar
 category: 10. Corepunk — Raypunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - raypunk
 visualDna:
-  aesthetic: Raypunk barter chaos where alien hardware, hand-painted codes, and launch rituals collide in overloaded visual language.
-  form_and_line: Cathedral-like arches, diagonal cargo lanes, antenna-rib canopies, raygun display forks, and stacked skiff silhouettes.
+  aesthetic: >-
+    Raypunk barter chaos where alien hardware, hand-painted codes, and launch rituals collide in overloaded visual
+    language.
+  form_and_line: >-
+    Cathedral-like arches, diagonal cargo lanes, antenna-rib canopies, raygun display forks, and stacked skiff
+    silhouettes.
   color_palette: Safety orange, ion cyan, oil-silver steel, and small magenta permit stamps.
   lighting_setup: Brutal roof slits, cyan ion strips under tables, and hot orange hazard pools around active engines.
-  material_texture: Riveted hull metal, translucent polymer crates, fuel-stained deck paint, chipped enamel tags, and greasy cable braids.
+  material_texture: >-
+    Riveted hull metal, translucent polymer crates, fuel-stained deck paint, chipped enamel tags, and greasy cable
+    braids.
   render_quality: Dense pulp-scifi production concept with readable stall logic, no empty generic sci-fi space.
   spatial_distortion: Deep compressed perspective crowded by booth-like clutter, suspended nets, and gantry shadows.
   atmosphere: Improvised trade, launch anxiety, black-market optimism, and frontier noise.
   key_features: Raygun fork motifs, skiff-repair altar shapes, cargo-lane glyphs, gantry silhouettes, and hand-numbered token marks.
   creative_brief: >-
-    Push ray bazaar-hangar as a reusable visual system: every subject should
-    feel priced, repaired, bartered, and almost ready to launch, with commerce
-    graphics fused directly into spacecraft service hardware.
-avoidRules: [photoreal, cyberpunk-grime, medieval, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-061.webp }
+    Overload the input with frontier barter hardware: cargo-lane glyphs, raygun forks, chipped permit marks, greasy
+    cable braids, and service-hangar shadows should make it feel priced, repaired, and almost ready to launch. Bazaar or
+    hangar cues can anchor the style without becoming required scene. Apply this corepunk genre grammar over any input:
+    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
+    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
+avoidRules:
+  - photoreal
+  - cyberpunk-grime
+  - medieval
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-061.webp
 attributes:
   negativePrompt: photoreal, cyberpunk-grime, medieval, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-raypunk,
-    categoryName: 10. Corepunk — Raypunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-raypunk
+  categoryName: 10. Corepunk — Raypunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - raypunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -21,7 +21,10 @@ visualDna:
   spatial_distortion: Blocky edges
   atmosphere: Funny, trashy
   key_features: 8x8 blocks
-  creative_brief: Compression as aesthetic, the image eaten by its own efficiency and regurgitated in blocks. What was lost becomes the point, degradation a deliberate fingerprint of digital decay.
+  creative_brief: >-
+    Apply JPEG degradation to the input: block artifacts, ringing halos,
+    chroma-subsampling mush, macroblock banding, and lossy edge damage should
+    make any subject feel compressed until failure becomes style.
 avoidRules:
   - png
   - lossless
@@ -42,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

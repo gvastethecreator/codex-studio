@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP11-036
 packId: pack_11
-name: Vaporwave
+name: Liminal Consumer Vapor
 category: 4. Retro Pop And Kitsch
 version: 1
 supportedTasks:
@@ -12,19 +12,25 @@ tags:
   - miscellaneous-and-fun
   - retro-pop-and-kitsch
 visualDna:
-  aesthetic: Retro-digital liminal surrealism with consumer-memory nostalgia, soft-ironic mood, and abandoned-future ambiance
-  form_and_line: Glitch-fringed geometry, pixel-sorted edges, RGB misregistration halos, and low-res UI-inspired shape rhythm
-  color_palette: Pastel magenta-cyan gradients with soft teal neutrals, sunset vapor tones, marble greys, and synthetic white highlights
-  lighting_setup: Fluorescent ambient haze, CRT-like glow spill, reflective chrome blooms, and deliberately unnatural backlight gradients
-  material_texture: Faux-marble surfaces, glossy retro-plastic finishes, pixel UI artifacts, scanline-like noise, and iridescent disc-like sheen
-  render_quality: Stylized retro-net aesthetic emphasizing liminal mood design, broken-digital texture poetry, and iconic vapor composition
-  spatial_distortion: Floating classical fragments, checker-grid infinite planes, and scale-ambiguous object staging in suspended void space
-  atmosphere: Chill, surreal, ironic, nostalgic, liminal
-  key_features: Sunset-gradient backdrops, checker-floor infinity cues, classical-fragment contrast, retro-digital artifact layering
+  aesthetic: >-
+    Retro-digital consumer-memory haze with synthetic gradients, low-res luxury, mall-air unreality, and soft ironic
+    emptiness
+  form_and_line: Pixel-sorted edges, glossy primitive geometry, UI-era grids, marble-like fragments, low-poly planes, VHS drift
+  color_palette: Pastel magenta-cyan, teal neutrals, sunset vapor, synthetic white, washed purple, soft grey marble
+  lighting_setup: Diffuse monitor glow, gradient backwash, weak ambient haze, artificial highlight bands, nostalgic screen bloom
+  material_texture: Compressed video artifacts, glossy plastic, cheap marble, CRT fuzz, low-res UI texture, airbrushed gradients
+  render_quality: Detached, glossy, synthetic, dreamlike, slightly degraded, intentionally corporate and unreal
+  spatial_distortion: >-
+    Pixel sorting, grid recession, VHS wobble, object-scale ambiguity, compression trails, liminal perspective
+    flattening
+  atmosphere: Empty, ironic, nostalgic, synthetic, uncanny, cool
+  key_features: Pastel vapor gradients, analog artifacts, UI grid fragments, glossy consumer surfaces, marble-plastic contrast
   creative_brief: >-
-    Define this preset through liminal retro-digital mood grammar: pastel
-    synthetic gradients, artifacted UI-era textures, and surreal object staging
-    should carry identity without depending on specific brand props or named icons.
+    Apply vaporwave as a mood and material system: synthetic gradients, screen artifacts, corporate nostalgia, and
+    glossy emptiness should reshape the image. Do not require statues, malls, checker floors, palm trees, or staged
+    surreal objects. Apply Liminal Consumer Vapor as a portable style system over any input: preserve its construction
+    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
+    prop, fixed specimen, classroom sample, product shot, or scene template.
 avoidRules:
   - serious
   - dark

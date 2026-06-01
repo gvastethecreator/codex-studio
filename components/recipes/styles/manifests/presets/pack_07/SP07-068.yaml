@@ -1,8 +1,8 @@
 schemaVersion: 1
 id: SP07-068
 packId: pack_07
-name: Cardboard Fort
-category: 1. Residential Interiors
+name: Corrugated Cardboard Improvisation
+category: 6. Toy Craft And Miniature Architecture
 version: 1
 supportedTasks:
   - image_generate
@@ -10,21 +10,27 @@ supportedTasks:
   - style_preset_card
 tags:
   - architecture-and-interior
-  - residential-interiors
+  - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Cartón reciclado improvisado con unión visible y fantasía manual de bajo recurso.
   form_and_line: Ortogonales de cajas apiladas, voladizos de solapa, trazas de cinta y aperturas recortadas a mano.
-  color_palette: Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft fabric neutrals
+  color_palette: >-
+    Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and
+    soft fabric neutrals
   lighting_setup: Base cálida interior, spill de lámpara, hotspots de linterna y rebote filtrado por manta en contraste bajo.
   material_texture: Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayón.
   render_quality: Realismo low-tech artesanal con imperfección de ensamblaje y tactilidad reciclada nostálgica.
   spatial_distortion: Sagging
   atmosphere: Ingeniosa, cozy y temporal, orgullosamente homemade.
-  key_features: Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos textiles.
+  key_features: >-
+    Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos
+    textiles.
   creative_brief: >-
-    Define una gramática reusable de cardboard-fort basada en masa de cajas,
-    lógica de ensamble con cinta y detalle manual low-tech, sin depender de
-    contenido narrativo.
+    Aplica construcción de cartón improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes
+    manuales y marcas de low-tech craft. Debe expresar invención material barata sin escena infantil fija. Apply this
+    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
+    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
+    fixed scene.
 avoidRules:
   - solid wall
 assets:
@@ -34,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior
-  categoryId: residential-interiors
-  categoryName: 1. Residential Interiors
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
   tags:
     - architecture-and-interior
-    - residential-interiors
+    - toy-craft-and-miniature-architecture
   supportedTasks:
     - image_generate
     - image_edit

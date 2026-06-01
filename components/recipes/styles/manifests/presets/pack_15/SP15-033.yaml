@@ -4,34 +4,58 @@ packId: pack_15
 name: Flint Engine Market
 category: 12. Corepunk — Stonepunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - stonepunk
 visualDna:
   aesthetic: Friction-age maker style where invention feels public, loud, dangerous, and half-bartered before sparks cool.
-  form_and_line: Sawtooth stall-front rhythm, pulley-canopy slashes, stepped trade-shelf geometry, spark-wheel circles, and squat workbench blocks.
+  form_and_line: >-
+    Sawtooth stall-front rhythm, pulley-canopy slashes, stepped trade-shelf geometry, spark-wheel circles, and squat
+    workbench blocks.
   color_palette: Clay red, smoke gray, amber firelight, hemp tan, and blackened bronze green.
   lighting_setup: Torch strings under sagging awnings, forge sparks on faces, and hot rimlight from open friction wheels.
   material_texture: Flint teeth, braided hemp, raw timber, blackened bronze, cracked clay counters, and powdery stone dust.
   render_quality: Character-rich stonepunk concept art with tactile tools, readable commerce, and controlled clutter.
   spatial_distortion: Compressed bazaar-like depth turns repair surfaces, barter trays, and test rigs into a single noisy machine.
   atmosphere: Immediate invention, public risk, communal trade, and practical improvisation.
-  key_features: Spark-wheel modules, portable-anvil motifs, pit-forge mouths, barter-token marks, hemp pulley loops, and half-tested mechanisms.
+  key_features: >-
+    Spark-wheel modules, portable-anvil motifs, pit-forge mouths, barter-token marks, hemp pulley loops, and half-tested
+    mechanisms.
   creative_brief: >-
-    Preserve flint engine-market grammar as a reusable style system:
-    public improvisational fabrication, flint-and-hemp tool tactility, and
-    visible test-repair marks should remain coherent across subjects without
-    requiring stalls, markets, benches, tokens, or literal makers.
-avoidRules: [photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-033.webp }
+    Make the input look half-tested in a public friction-age workshop: flint teeth, hemp pulley loops, cracked clay
+    counters, spark wheels, and barter marks should create noisy invention. Markets, benches, tokens, or makers can
+    appear, but the style is communal improvisation and dangerous tactility. Apply this corepunk genre grammar over any
+    input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color
+    tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
+    set-piece.
+avoidRules:
+  - photoreal
+  - minimalist-cleanroom
+  - cyber-neon
+  - sterile-luxury
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-033.webp
 attributes:
   negativePrompt: photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-stonepunk,
-    categoryName: 12. Corepunk — Stonepunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-stonepunk
+  categoryName: 12. Corepunk — Stonepunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - stonepunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -19,6 +19,7 @@ import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
+import { QuickStartText } from './QuickStartText';
 import {
   getRecipeModuleUiModel,
   getRecipeNumberDefault,
@@ -309,14 +310,13 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                 className="text-zinc-600 group-hover:text-rose-400 transition-colors"
               />
             </div>
-            <div className="text-center">
-              <h3 className="text-sm font-black text-white uppercase tracking-widest mb-1">
-                Source Frame
-              </h3>
-              <p className="text-[9px] font-bold text-zinc-400 uppercase">
-                Upload Shot or enter prompt
-              </p>
-            </div>
+            <QuickStartText
+              title="Source Frame"
+              subtitle="Upload shot or enter prompt"
+              toneClassName="text-white"
+              subtitleClassName="text-zinc-400"
+              maxTitleFontSize={14}
+            />
           </button>
         )}
 

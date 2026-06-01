@@ -12,17 +12,20 @@ tags:
   - miscellaneous-and-fun
   - food-and-commercial-fun
 visualDna:
-  aesthetic: Fine dining plate, tasting-menu artistry, white-tablecloth theater, culinary-stage
+  aesthetic: Fine-dining editorial geometry, tasting-menu precision, negative-space culinary composition, premium plating art
   form_and_line: Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking
   color_palette: Vibrant, fresh, reduction-glaze mahogany, herb-oil emerald, nasturtium-orange, crème-fraîche white, plate-negative-space
-  lighting_setup: Soft window light, candle-glow warmth, tablecloth-bounce fill, rim-light-on-sauce sheen
+  lighting_setup: Soft editorial light, candle-warm accents, clean bounce fill, rim-light-on-sauce sheen
   material_texture: Sauce gloss, fresh herbs, demi-glace mirror, micro-green velvet, tuile-crisp, edible-flower petal, sea-salt crystal
-  render_quality: Delicious, expensive, Michelin-star precision, tasting-menu journey, culinary-art, gastronomic-beauty
+  render_quality: Delicious, expensive, Michelin-level precision, tasting-menu restraint, culinary-art, gastronomic-beauty
   spatial_distortion: Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition
-  atmosphere: Elegant, tasty, hushed-dining-room, wine-glass-clink, white-glove-service, anticipation
+  atmosphere: Elegant, tasty, restrained, premium, quiet anticipation
   key_features: Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake
   creative_brief: >-
-    Design fine-dining plating as geometric composition: controlled negative space, precise garnish placement, and sauce architecture. Emphasize texture contrast and premium finish cues while keeping dish subjects open and reusable.
+    Apply fine-dining editorial logic to the input: controlled negative space,
+    precise garnish-like accents, sauce-architecture curves, texture contrast,
+    and premium finish cues. Plating can anchor the style, but avoid requiring
+    a dining room, white tablecloth, service ritual, or specific dish.
 avoidRules:
   - messy
   - cafeteria

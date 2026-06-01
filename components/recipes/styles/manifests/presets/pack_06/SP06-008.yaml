@@ -21,7 +21,11 @@ visualDna:
   spatial_distortion: Abstracted forms
   atmosphere: Peaceful, meditative
   key_features: Brush pressure variation
-  creative_brief: A single brushstroke carries structure, rhythm, and breath with nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.
+  creative_brief: >-
+    Apply sumi-e ink-wash economy to any input: decisive brush pressure, black
+    ink gradients, rice-paper absorption, visible water dilution, restrained
+    negative space, and breathlike rhythm. Keep meditative reduction without
+    requiring bamboo, mountains, birds, calligraphy, or East Asian scenery.
 avoidRules:
   - photo
   - realistic

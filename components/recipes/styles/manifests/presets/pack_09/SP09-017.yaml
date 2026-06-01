@@ -21,7 +21,13 @@ visualDna:
   spatial_distortion: None
   atmosphere: Modern, clean
   key_features: Directional scratch
-  creative_brief: Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity.
+  creative_brief: >-
+    Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that
+    catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral
+    arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the
+    quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - chrome
   - mirror

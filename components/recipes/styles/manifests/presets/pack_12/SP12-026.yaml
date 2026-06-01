@@ -12,12 +12,12 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Tactical-RPG isométrico en ruinas vivas, orientado a posicionamiento, cobertura orgánica y control por turnos.
-  subject_treatment: Escuadras de clases contrastadas (tank/skirmisher/support/ranger) con silueta inequívoca.
+  aesthetic: Gramática tactical-RPG isométrica con posicionamiento, cobertura orgánica, turnos y tiles de ruina viva.
+  subject_treatment: Convierte el input en clase tank/skirmisher/support/ranger, cobertura, unidad u objetivo táctico según su forma.
   color_and_tone: Verde musgo, piedra beige y acentos escarlata para codificar aliados, amenaza y objetivo.
   lighting_and_shadow: Luz filtrada por enredaderas con sombras suaves que no rompen lectura de casillas.
   texture_and_material: Mármol fracturado, follaje húmedo, tejido táctico y raíces estructurales activas.
-  camera_and_composition: Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes.
+  camera_and_composition: Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes sin exigir ruinas.
   atmosphere_and_mood: Estratégica, calculada y tensa.
   rendering_and_quality: Battle-map readability-first con telemetría visual de alcance, cobertura y prioridad táctica.
 avoidRules:

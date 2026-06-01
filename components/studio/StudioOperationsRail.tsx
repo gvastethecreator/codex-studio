@@ -23,8 +23,6 @@ export interface StudioOperationsRailProps {
   clearCompleted: () => void;
   isResting: boolean;
   exportLegacyVisualBatchSnapshot: () => void;
-  isBackgroundEnabled: boolean;
-  setBackgroundEnabled: (enabled: boolean) => void;
   activeServerJobCount: number;
   onInspectJob: (jobId: string) => void;
   diagnostics: StudioDiagnosticsSnapshot;

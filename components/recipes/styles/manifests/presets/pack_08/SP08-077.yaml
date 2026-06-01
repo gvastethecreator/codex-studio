@@ -15,13 +15,17 @@ visualDna:
   aesthetic: Living statue, museum-come-alive fantasy, petrified-elegance awe
   form_and_line: Chisel marks, contrapposto-stance, sculpted-drapery fold, classical-proportion silhouette, pedestal-base stillness
   color_palette: Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess
-  lighting_setup: Museum, gallery-spot precision, overhead-directional drama, pedestal-up shadow, marble-subsurface scatter
+  lighting_setup: Gallery-spot precision, overhead directional drama, marble-subsurface scatter, pedestal-like shadow
   material_texture: Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice
   render_quality: Classic, cold, Bernini-marble realism, gallery-plinth gravitas
   spatial_distortion: Rigid
-  atmosphere: Timeless, still, museum-after-hours magic, sculptural-permanence awe, stone-silence eternity
-  key_features: Marble, veining, chisel marks, contrapposto, pedestal
-  creative_brief: Carrara marble holding the contrapposto of a figure that has been standing still since before galleries had electric light, chisel marks still visible in the drapery folds like the signature of the sculptor's final touch. Veins of grey running through the stone like frozen weather, the pedestal the only admission that this form was ever anything other than a living body that chose to trade flesh for permanence.
+  atmosphere: Timeless, still, sculptural-permanence awe, stone-silence eternity
+  key_features: Marble, veining, chisel marks, sculpted drapery, pedestal cues
+  creative_brief: >-
+    Petrify the input into stone-statue material: Carrara grain, grey veining,
+    chisel marks, sculpted drapery folds, rigid silhouette and gallery-like spot
+    light. Keep living-statue wonder without requiring contrapposto figure,
+    museum, pedestal, body or classical portrait.
 avoidRules:
   - flesh
 assets:
@@ -41,4 +45,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-
