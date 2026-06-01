@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
 visualDna:
-  aesthetic: Riverside repair district where tools, teaching, and ecology overlap.
-  form_and_line: Water terraces, communal benches, and repair pavilions.
+  aesthetic: Solarpunk repair culture where tools, teaching, water, and ecology overlap.
+  form_and_line: Water terrace bands, communal bench shapes, repair-pavilion arcs, and riverbend curves.
   color_palette: River teal, soft ochre, and fresh white.
   lighting_setup: Reflected water light and open-air workshop glow.
   material_texture: Rammed earth, recycled aluminum, and woven reeds.
   render_quality: Highly legible civic concept art.
-  spatial_distortion: Curving river edge creating a generous communal composition.
+  spatial_distortion: Curving river-edge composition creating generous communal flow.
   atmosphere: Repair culture, stewardship, and shared skill-building.
-  key_features: Tool libraries, river steps, and public worktables.
+  key_features: Tool-library grids, river-step bands, public worktable motifs, and repair commons markings.
   creative_brief: >-
     Preserve riverbend repair-commons grammar as a reusable style system:
     riverside maintenance pedagogy, open civic tool-sharing culture, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, grit, industrial-smoke, watermark, text, logo, gloom]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-101.webp }
 attributes:
   negativePrompt: photoreal, grit, industrial-smoke, watermark, text, logo, gloom
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

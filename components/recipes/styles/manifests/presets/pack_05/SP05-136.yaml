@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Anti-magic underdog drive, squad-based spell warfare, medieval-black-bull energy, book-based spellcasting, ragged ambition versus noble polish
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus noble polish.
+  form_and_line: Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like energy bursts.
+  color_palette: Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.
+  lighting_setup: Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.
+  material_texture: Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.
+  render_quality: Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.
+  spatial_distortion: Aura shockwaves push perspective outward, while squad spacing creates forward pressure.
   atmosphere: Determined, loud, magical, scrappy
-  key_features: Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris
-  creative_brief: A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent.
+  key_features: Page-glow force, thunder squad rhythm, ragged ambition, anti-magic contrast, loud underdog aura.
+  creative_brief: >-
+    Apply loud underdog magic to any prompt through page-glow geometry, thunder
+    diagonals, ragged texture, and defiant aura pressure without requiring
+    specific props, teams, vertical power symbols, conflict sites, or hierarchy scenes.
 avoidRules:
   - realistic
   - 3d render

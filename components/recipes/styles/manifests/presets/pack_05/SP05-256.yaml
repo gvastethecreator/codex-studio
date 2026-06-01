@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía feudal de cruce temporal con romance combativo, folclore y demonología de ruta.
-  form_and_line: Contraste schoolwear-feudal, silueta garra de yokai y composición de viaje episódico en bosque.
-  color_palette: Rojo crepuscular, verde bosque profundo, púrpura espiritual, marfil de talismán y azul nostalgia.
-  lighting_setup: Luz de santuario, atardecer rojizo y destellos de flecha sagrada en entorno sombrío.
-  material_texture: Madera de shrine, tela escolar, armadura desgastada, tierra de sendero y aura demoníaca particulada.
+  aesthetic: Fantasía folclórica de umbral temporal, con romance combativo, nostalgia espiritual y tensión mítica.
+  form_and_line: Contrastes de época abstractos, cortes dinámicos, gestos de persecución y bordes espirituales filosos.
+  color_palette: Rojo crepuscular, verde musgo profundo, púrpura espiritual, marfil de talismán y azul nostalgia.
+  lighting_setup: Atardecer rojizo, destellos purificadores y sombras espirituales con contraste de memoria.
+  material_texture: Fibra ritual, papel talismán, metal desgastado, tierra pigmentada y aura particulada.
   render_quality: Aventura fantástica de largo aliento con equilibrio entre acción, comedia de fricción y melancolía.
-  spatial_distortion: Profundidad de camino feudal y transición de pozo como umbral temporal recurrente.
+  spatial_distortion: Profundidad episódica, pliegues de tiempo y umbrales sugeridos sin locación obligatoria.
   atmosphere: Nostálgica, combativa y mítica.
-  key_features: Pozo santuario, bosque demonio, iconografía de flecha purificadora y dinámica de party itinerante.
+  key_features: Rojo espiritual, talismán gráfico, nostalgia temporal, fricción romántica y energía folclórica.
   creative_brief: >-
-    Construye una gramática shrine-well-feudal reusable donde umbral temporal,
-    folklore demoníaco y aventura romántica de carretera estructuren la
-    identidad sin anclarse a una escena única.
+    Construye una gramática shrine-well-feudal reusable donde cualquier prompt
+    reciba folklore temporal, tensión romántica y aura purificadora sin exigir
+    locación, amenaza, arma, grupo o episodio de aventura literal.
 avoidRules:
   - realistic
   - 3d render

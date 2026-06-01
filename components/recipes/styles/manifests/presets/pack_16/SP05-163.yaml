@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-163
 packId: pack_16
-name: Cowboy Bebop - Cigarette Smoke Space Cool
+name: Smoke-Jazz Noir Cool Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Space noir jazzístico con elegancia cansada, cazarrecompensas melancólicos y futurismo usado de tono íntimo.
-  form_and_line: Línea 90s precisa de silueta cool, acting mínimo de fatiga emocional y composición de duelo urbano-espacial.
-  color_palette: Ámbares ahumados, azules nocturnos, rojos apagados y verdes desaturados de cabina vivida.
+  aesthetic: Noir jazzístico con elegancia cansada, futurismo usado y melancolía íntima de pausa prolongada.
+  form_and_line: Línea 90s precisa, siluetas cool, acting mínimo de fatiga emocional y composición de tensión contenida.
+  color_palette: Ámbares ahumados, azules nocturnos, rojos apagados y verdes desaturados de desgaste vivido.
   lighting_setup: Low-key contrastado con pools de luz interior, rim de neón y humo como difusor dramático.
-  material_texture: Metal gastado de nave, cuero de asiento, grano cinematográfico y superficies de diner nocturno.
+  material_texture: Metal gastado, cuero suavizado, grano cinematográfico y superficies nocturnas con pátina usada.
   render_quality: Acabado premium noventero con lectura sofisticada de acción breve y vacío emocional prolongado.
-  spatial_distortion: Framing de corredor y mesa vacía, profundidad de nave-hogar y tensión de pasado que invade el presente.
+  spatial_distortion: Framing asimétrico, vacío compositivo deliberado y tensión de pasado que invade el presente.
   atmosphere: Cool, solitaria, jazzy, agridulce.
-  key_features: Humo de cigarro, traje y pistola estilizados, interiores usados y pausa melódica entre estallidos breves.
-  creative_brief: Define una gramática reusable de noir espacial melancólico para cualquier sujeto, combinando groove jazz, desgaste vital y violencia elegante.
+  key_features: Humo gráfico, tailoring estilizado, pátina retrofutura, pausas melódicas y contraste entre quietud y estallido breve.
+  creative_brief: Define una gramática reusable de noir jazz melancólico para cualquier sujeto, combinando groove, desgaste vital y elegancia contenida sin imponer naves, armas, bares ni cazarrecompensas.
 avoidRules:
   - realistic
   - 3d render

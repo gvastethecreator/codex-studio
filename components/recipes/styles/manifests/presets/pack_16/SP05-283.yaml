@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-283
 packId: pack_16
-name: The Boy and the Heron - Marsh-Gate Mourning Dream
+name: Metaphysical Mourning Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía de duelo metafísico donde naturaleza húmeda y arquitectura imposible funcionan como umbral emocional más que escenario literal.
-  form_and_line: Línea delicada y contemplativa, siluetas de guía aviar ambigua y bordes suavemente inestables en zonas de transición onírica.
-  color_palette: Verdes de marisma apagados, grises de luto doméstico, marfiles velados y acentos cálidos mínimos de memoria íntima.
+  aesthetic: Fantasía metafísica de duelo, con naturaleza velada, umbrales abstractos y transformación interna.
+  form_and_line: Línea delicada y contemplativa, bordes suavemente inestables y siluetas tratadas como presencias ambiguas.
+  color_palette: Verdes apagados de humedad emocional, grises de luto, marfiles velados y acentos cálidos mínimos de memoria íntima.
   lighting_setup: Luz difusa de cielo cubierto con contraluces tenues en bruma, preservando ambigüedad entre vigilia y sueño.
-  material_texture: Agua quieta, juncos húmedos, muros antiguos de yeso y madera envejecida con acabado pictórico de alta sutileza.
+  material_texture: Veladuras húmedas, fibras orgánicas sugeridas, yeso erosionado y madera envejecida como memoria material.
   render_quality: Terminación premium de tono introspectivo, con jerarquía suave y microdetalle atmosférico orientado a sensación de tránsito.
   spatial_distortion: Profundidad por capas de neblina y arquitectura no euclidiana ligera que sugiere pasaje interior.
   atmosphere: Doliente, extraña, contemplativa, en búsqueda.
-  key_features: Silueta de ave guía, portales de torre y pantano, quietud suspendida y composición de umbral.
-  creative_brief: Diseña una gramática transferable de duelo-onírico para cualquier sujeto usando marisma, arquitectura umbral y luz velada como lenguaje de transformación interna.
+  key_features: Umbral simbólico, quietud suspendida, luz velada, escala emocional ambigua y materia orgánica sugerida.
+  creative_brief: >-
+    Diseña una gramática transferible de duelo onírico para cualquier prompt o imagen de entrada:
+    silencio metafísico, bordes inestables y sensación de tránsito interior sin imponer aves, torres, pantanos ni portales literales.
 
 avoidRules:
   - realistic

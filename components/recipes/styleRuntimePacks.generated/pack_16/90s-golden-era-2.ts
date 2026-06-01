@@ -5,562 +5,561 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-011',
-    name: 'Aura Battle Shonen',
+    name: 'Generational Aura Clash Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Angular anatomy, dramatic power flares, larger-than-life rivalry energy, speed-line backdrops, aura bursts, intense stare-downs, combat grit',
+        'Shonen de aura y rivalidad absoluta, dramatismo noventero de confrontación iniciática y leyenda juvenil.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea angulosa de alta tensión, anatomía cinética y puesta en pose de desafío frontal.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Amarillo energía, azul eléctrico, rojo rival y negro profundo de impacto cel clásico.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Contraste duro con flare de aura, rim agresivo y sombra marcada para potencia corporal.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Fondo pintado de explosión abstracta, polvo de choque y grano fílmico de catarsis épica.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado 90s premium con lectura cristalina de power-up, choque ideológico y catarsis física.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Epic, explosive, fierce, legendary',
+        'Perspectiva forzada, speed lines y compresión de distancia para aumentar urgencia de confrontación.',
+      atmosphere: 'Épica, explosiva, feroz, legendaria.',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Stare-down icónico, aura visible, rivalidad abstracta y silueta heroica de alto contraste.',
       creative_brief:
-        'Speed lines rip through the frame as rival auras detonate against stark backgrounds, angular anatomy coiled into poses that scream before fists even move. The golden-era cel polish catches every dramatic rim light like lightning frozen mid-strike, friendship and fury indistinguishable in the holy trinity of the shonen stare-down.',
+        'Diseña una gramática reusable de generational-aura-clash para cualquier sujeto, priorizando intensidad emocional, escalada de poder y energía de confrontación sin imponer batallas, torneos, duelos, rivales concretos ni coreografía de combate.',
     },
   },
   {
     id: 'SP05-012',
-    name: 'Sparkling Magical Team',
+    name: 'Sparkling Magical Chorus Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Transformation glamor, crescent silhouettes, pastel heroism, ornate accessories, magical ribbons, sparkle trails, tiara motifs, lunar backdrops',
+        'Transformación mágica coral con glamour lunar, heroísmo pastel y simbolismo ornamental de esperanza colectiva.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea 90s fina y elegante, silueta coreográfica coral y transición ornamental ritual.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Rosas perlados, lilas lunares, celestes suaves y dorados delicados de emblema mágico.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Halo etéreo de transformación, brillo satinado y contraste limpio de combate luminoso.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Satén mágico abstracto, cristal ornamental, partículas de glitter y grano cel de fantasía optimista.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado dorado noventero con legibilidad perfecta de metamorfosis, unión y victoria emotiva.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Romantic, empowering, graceful, radiant',
+        'Espacio ceremonial abierto para presentación, vuelo gráfico y cierre coral en formación.',
+      atmosphere: 'Romántica, empoderadora, grácil, radiante.',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Motivo creciente, cintas en espiral, composición coral e iconografía mística de emblema.',
       creative_brief:
-        "Transformation ribbons spiral into crescent silhouettes as pastel heroism blooms across lunar backdrops, tiaras and sparkle trails shimmering with the specific gravity of a 90s girl's bedroom ceiling come to life. Each ornate accessory tells a story of empowerment, the frame saturated with the conviction that grace can defeat darkness.",
+        'Construye una gramática reusable de sparkling-magical-chorus para cualquier sujeto, equilibrando elegancia ornamental, cohesión visual y luz esperanzadora sin imponer equipos, trajes, escuadrones, accesorios, transformación literal ni combate luminoso.',
     },
   },
   {
     id: 'SP05-014',
-    name: 'Jazzy Space Noir',
+    name: 'Jazzy Space-Noir Melancholy Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Space-age cool, smoky bars, bounty-chase melancholy, stylish staging, cigarette smoke trails, saxophone silhouettes, asteroid belts, retro-future ships',
+        '90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future elegance.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held in reserve.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay texture.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first staging.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+        'Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal subject.',
       atmosphere: 'Cool, wistful, lonely, stylish',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained stylish motion.',
       creative_brief:
-        "Saxophone smoke curls through the zero-G of a bounty hunter's solitude, retro-future ships drifting through asteroid belts like lonely notes searching for a melody. The 90s cel lighting wraps every scene in cool melancholy—stylish, wistful, the visual equivalent of a trumpet solo echoing down an empty station corridor.",
+        'Build a reusable jazzy-space-noir melancholy grammar for any subject or input image: cool restraint, smoke-like rhythm, retro-future polish, low-key cel lighting, and lonely negative space without imposing bars, bounty chases, cigarettes, saxophones, ships, asteroid belts, or stations.',
     },
   },
   {
     id: 'SP05-015',
-    name: 'Philosophical Cyber Ops',
+    name: 'Philosophical Cyber-Ops Vertigo Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dense cybernetic cities, tactical squads, philosophical tech-noir mood, tachikoma robots, network visualizations, government intrigue, hyper-connectivity',
+        'Cerebral cyber-ops noir with tactical precision, hyperconnected paranoia, and philosophical machine-age vertigo.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Crisp 90s anime linework, technical contour discipline, modular blocking, interface-like overlays, and measured motion cuts.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Cold cyan, signal green, gunmetal blue, pale skin light, amber warning accents, and dense charcoal shadows.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Hard cel contrast mixed with monitor glow, scanning rim highlights, data-layer bloom, and sterile institutional key light.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Painted environmental grain, glass reflections, matte tactical fabric, brushed alloy, CRT noise, and cel overlay texture.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color discipline.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
+        'Layered grid depth, surveillance-angle cropping, neural-network overlays, and compressed tactical sightlines.',
       atmosphere: 'Thoughtful, moody, paranoid, cerebral',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Interface ghosts, tactical stillness, network-grid depth, reflective tech surfaces, and human doubt inside clean geometry.',
       creative_brief:
-        'Tachikoma shells gleam with childlike curiosity against labyrinths of government intrigue and hyper-connected city grids that pulse like a neural network questioning its own sentience. Every frame balances tactical precision with philosophical vertigo, the crisp 90s line work drawing clean boundaries around ideas that refuse to stay contained.',
+        'Build a reusable philosophical-cyber-ops vertigo grammar for any subject or input image: tactical clarity, network paranoia, glass-and-metal reflection, cerebral noir, and 90s cel tech precision without imposing cities, squads, robots, government intrigue, grids, or specific ops scenes.',
     },
   },
   {
     id: 'SP05-016',
-    name: 'Spirit Tournament Action',
+    name: 'Spirit Tournament Pressure Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dark tournament staging, spectral energy, disciplined fighter poses, ring-out battles, spirit auras, numbered power levels, cratered arenas',
+        '90s supernatural pressure style with disciplined confrontation, spectral charge, and restrained power escalation.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Crisp cel-era linework, defined contours, tense stance geometry, aura edges, and impact strokes that imply force without fixed choreography.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Violet shadows, acid-green spirit accents, hot magenta energy pops, bruised blues, and warm skin-light contrast.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'High-contrast cel lighting with stark rim separation, aura bloom, and hard cuts between darkness and charged highlights.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Painted background grain, cel overlay texture, smoky aura particulate, rough impact dust, and inked shadow bands.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette hierarchy.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Supernatural, intense, fierce, otherworldly',
+        'Compressed confrontation space, elastic foreshortening, energy-field warping, and diagonal pressure vectors.',
+      atmosphere: 'Supernatural, intense, fierce, pressurized.',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Spectral aura contrast, disciplined stance rhythm, explosive pause, bold silhouette design, and impact-ready visual storytelling.',
       creative_brief:
-        'Spectral auras crackle across cratered arena floors as disciplined fighters lock eyes across the ring, numbered power levels burning the air between them. The darkness of the tournament stage becomes a canvas for supernatural light, every impact punctuated by the electric silence of an audience holding its breath.',
+        'Build a reusable spirit-tournament-pressure grammar for any subject or input image: supernatural charge, disciplined confrontation, compressed tension, aura-driven lighting, and 90s cel impact without imposing arenas, fighters, ring battles, numbered powers, crowds, or cratered floors.',
     },
   },
   {
     id: 'SP05-017',
-    name: 'Wandering Swordsman Drama',
+    name: 'Wandering Atonement Cel Drama Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Historical swordsman emotion, wind-swept robes, explosive duels, tender aftermath, cherry blossom drifts, reverse-blade sword, bloodless vs bloody contrast',
+        '90s atonement drama style with wind-cut melancholy, restrained violence memory, and noble emotional restraint.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Crisp cel-era contour, long drape rhythms, quiet posture tension, controlled action arcs, and expressive ink accents.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Washed sakura pinks, dusk blues, muted earth tones, soft ivory light, and restrained crimson memory accents.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Gentle rim light, high-contrast cel shadow, breeze-carried highlights, and poetic backlight on quiet silhouettes.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Layered watercolor backgrounds, fabric grain, brushed metal glints, blossom-like particulate, and cel overlay texture.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional readability.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Noble, reflective, sorrowful, poetic',
+        'Long-depth staging, wind-swept negative space, diagonal pause before motion, and intimate aftermath framing.',
+      atmosphere: 'Noble, reflective, sorrowful, poetic.',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Wind rhythm, vow-like restraint, soft particulate drift, iconic solitary silhouette, and grief held in clean linework.',
       creative_brief:
-        "Cherry blossoms drift through the aftermath of a duel that never needed to happen, a reverse-blade sword catching the same gentle light that bathes the wanderer's unreadable expression. Wind-swept robes speak of endless roads and the unbearable weight of a vow to never kill again, the 90s cel poetry of silent grief.",
+        'Build a reusable wandering-atonement cel drama for any subject or input image: poetic restraint, wind-shaped motion, noble sorrow, and 90s cel emotional action without imposing swordsmen, duels, roads, robes, cherry blossoms, or historical settings.',
     },
   },
   {
     id: 'SP05-018',
-    name: 'Desert Space Gunslinger',
+    name: 'Dusty Space-Western Absurdity Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dusty sci-fi westerns, oversized weapons, elastic expressions, desert horizons, spent shell casings, arm-guns, dusty saloons, heat haze',
+        'Dusty space-western absurdity, reckless comedy-action contrast, sunburnt loneliness, and elastic cool-to-chaos expression.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Crisp 90s cel contours, exaggerated gesture snaps, long coat-like silhouette rhythms, and slapstick-to-danger timing lines.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Sun-bleached ochres, turquoise sky accents, hot red impact pops, faded mauves, and scorched black cel shadows.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Harsh high-noon cel contrast, heat-haze bloom, hard rim light, and dry highlight separation on metal or fabric.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Painted dust grain, worn leather-like surfaces, scratched metal glints, sanded matte color, and cel overlay texture.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action silhouette design.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Chaotic, lonely, reckless, wild',
+        'Heat-warped horizon pressure, extreme foreshortening, comedic snap framing, and empty-space loneliness.',
+      atmosphere: 'Chaotic, lonely, reckless, wild.',
       key_features:
-        'Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling',
+        'Dust haze, oversized attitude, elastic expression contrast, dry kinetic impact, and absurd danger rendered with sincerity.',
       creative_brief:
-        'Oversized arm-guns kick against sand-scorched horizons as elastic expressions stretch from deadpan cool to manic fury in a single panel, spent shell casings pinging across dusty saloon floors. The sci-fi western mashup embraces its own absurdity with the reckless confidence of a gunslinger who stopped counting bullets long ago.',
+        'Build a reusable dusty-space-western absurdity grammar for any subject or input image: heat, dry texture, elastic cool-to-chaos acting, lonely negative space, and reckless 90s cel impact without imposing deserts, guns, saloons, shell casings, arm-weapons, or specific horizons.',
     },
   },
   {
     id: 'SP05-161',
-    name: 'Dragon Ball Z - Planet-Shattering Aura Duel',
+    name: 'Planetary Aura Impact Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Muscle-defined cel-era combat, mountain-breaking impact, screaming aura power-ups, iconic stare-downs, cratered landscapes, hard-shadow spectacle and emotional yelling',
+        'Shonen de potencia absoluta noventera, aura mítica, escala extrema y catarsis visual de transformación.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Contorno contundente, foreshortening agresivo y acting de presión energética de alto impacto.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Amarillos eléctricos de aura, azules saturados, verdes minerales y naranjas de choque energético.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Cel contrastado con rim extremo, highlights duros y separación de sombra para fuerza corporal.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Partículas fracturadas, polvo luminoso, grano de cel clásico y fondos pintados de era dorada.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con lectura inmediata de power-up, presión física y stakes descomunales.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Explosive, iconic, relentless, mythic',
+        'Escala hiperexpresiva con anatomía exagerada y perspectiva cinética de impacto frontal.',
+      atmosphere: 'Explosiva, icónica, incansable y mítica.',
       key_features:
-        'Aura flares, craters, battle-torn rocks, screaming profile shots, planet-scale action stakes',
+        'Estelas de aura, halos de impacto, perfiles de catarsis y coreografía abstracta de rivalidad trascendente.',
       creative_brief:
-        'Screams that crack continents, hair that defies physics, the body as divine engine of destruction pushed past every conceivable limit. The planet trembles when these warriors lock eyes, and mountains become collateral damage in arguments settled through fists and fury. Every battle is a conversation with mortality conducted at volumes that register on seismographs.',
+        'Construye una gramática reusable de impacto energético noventero para cualquier sujeto, priorizando aura, escala extrema y dramatismo de transformación sin imponer duelo, terreno devastado ni combate literal.',
     },
   },
   {
     id: 'SP05-163',
-    name: 'Cowboy Bebop - Cigarette Smoke Space Cool',
+    name: 'Smoke-Jazz Noir Cool Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Jazz-noir bounty hunting, smoke-hazed interiors, used-future ships, emotional cool, melancholy drift between stylish gunfights and empty late-night meals',
+        'Noir jazzístico con elegancia cansada, futurismo usado y melancolía íntima de pausa prolongada.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea 90s precisa, siluetas cool, acting mínimo de fatiga emocional y composición de tensión contenida.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Ámbares ahumados, azules nocturnos, rojos apagados y verdes desaturados de desgaste vivido.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Low-key contrastado con pools de luz interior, rim de neón y humo como difusor dramático.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Metal gastado, cuero suavizado, grano cinematográfico y superficies nocturnas con pátina usada.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium noventero con lectura sofisticada de acción breve y vacío emocional prolongado.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Cool, lonely, jazzy, bittersweet',
+        'Framing asimétrico, vacío compositivo deliberado y tensión de pasado que invade el presente.',
+      atmosphere: 'Cool, solitaria, jazzy, agridulce.',
       key_features:
-        'Smoke haze, space-western interiors, sharp suit silhouettes, jazzy body language, bounty-hunter framing',
+        'Humo gráfico, tailoring estilizado, pátina retrofutura, pausas melódicas y contraste entre quietud y estallido breve.',
       creative_brief:
-        'A blues riff drifting through vacuum, cigarette smoke curling in zero gravity, a crew of broken people chasing bounties they can never cash in for the one thing they actually want. The ship is a home that is always running, the past is luggage nobody can jettison, and every gunfight is scored by a lone saxophone mourning something that was lost before the opening credits rolled. You are gonna carry that weight.',
+        'Define una gramática reusable de noir jazz melancólico para cualquier sujeto, combinando groove, desgaste vital y elegancia contenida sin imponer naves, armas, bares ni cazarrecompensas.',
     },
   },
   {
     id: 'SP05-164',
-    name: 'Ghost in the Shell - Wet-City Tactical Consciousness',
+    name: 'Wet Techno-Noir Consciousness Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rain-heavy cybernetic statecraft, surveillance corridors, philosophical gunplay, thermoptic stealth, reflective city glass, identity anxiety inside hard tactical polish',
+        'Techno-noir húmedo, precisión táctica austera y dilema filosófico de identidad disuelta.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea 90s precisa y sobria, blocking geométrico limpio y close-ups analíticos de tensión cognitiva.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Cian neón húmedo, grafito nocturno, ámbar de interfaz y reflejos metálicos fríos.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Nocturno high-contrast con especulares húmedos, rim quirúrgico y sombras vigilantes de lectura clínica.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Vidrio lluvioso, acero cepillado, polímero táctico y grano fílmico sobrio de thriller tecnológico.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium noventero con lectura cristalina de acción táctica y subtexto existencial.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Clinical, philosophical, tactical, nocturnal',
+        'Profundidad estratificada, corredores abstractos de información y composición de vigilancia filosófica.',
+      atmosphere: 'Clínica, filosófica, táctica y nocturna.',
       key_features:
-        'Wet urban reflections, tactical firearm posing, cybernetic body detail, surveillance imagery, cold-thoughtful close-ups',
+        'Reflejo húmedo, interfaces discretas, siluetas cibernéticas, vigilancia omnipresente y vacío existencial.',
       creative_brief:
-        'Rain never stops falling on this city of glass and surveillance, where the ghost inside the machine asks questions the titanium shell can never answer. A woman whose body is property of the state searches for the one thing that cannot be hacked, downloaded, or deleted: a soul that knows its own name. The trigger finger and the philosopher share the same hand here, and every corridor leads deeper into the question of what remains when everything replaceable is replaced.',
+        'Construye una gramática reusable de techno-noir identitario para cualquier sujeto, equilibrando precisión operativa, melancolía húmeda y cuestionamiento del yo sin imponer megaciudad, policía, infiltración ni pasillos concretos.',
     },
   },
   {
     id: 'SP05-165',
-    name: 'Yu Yu Hakusho - Spirit Tournament Heat',
+    name: 'Spirit Pressure Rivalry Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tournament-arena rivalry, spirit-gun bursts, delinquent confidence, sharp 90s facial acting, underworld martial drama, honor and swagger sharing the same frame',
+        'Presión espiritual noventera con rivalidad intensa, bravura juvenil y energía sobrenatural de alto voltaje.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea 90s firme y expresiva, acting facial combativo y momentum corporal limpio.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Azules eléctricos, naranjas de impacto, verdes oscuros de inframundo y acentos púrpura místicos.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Cel contrastado con flashes de técnica espiritual, rims calientes y sombras de confrontación frontal.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Polvo energético, telas tensas, marcas gráficas de impacto y grano analógico de acción clásica.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium sobrenatural con legibilidad perfecta de técnica, rivalidad y emoción.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Fiery, competitive, cool, earnest',
+        'Encuadres de stare-down, rush ofensivo abstracto y cierre heroico sin fijar ring ni arena.',
+      atmosphere: 'Ardiente, competitiva, cool, sincera.',
       key_features:
-        'Arena staging, energy-burst fists, delinquent posture, underworld iconography, rival stare-downs',
+        'Estallidos de energía, postura delinquent, marcas de presión espiritual y símbolos místicos en crescendo.',
       creative_brief:
-        'A punk with a heart too big for the underworld, fighting his way through heaven bureaucracy armed with a finger-gun and a loyalty that transcends death itself. Tournament arenas where the prize is never the trophy but the friend standing just outside the ring, bleeding belief into every punch thrown. Delinquent swagger masking a spirit so bright it burns through the paperwork of the afterlife and rewrites the rules of who gets to come home.',
+        'Define una gramática reusable de rivalidad espiritual para cualquier sujeto, mezclando bravura juvenil, lealtad y mística de superación sin imponer torneo, ring, arena ni combate literal.',
     },
   },
   {
     id: 'SP05-166',
-    name: 'Rurouni Kenshin - Meiji Blade Redemption',
+    name: 'Redemption Restraint Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Meiji-era wandering swordsman drama, sakura and guilt, reverse-blade restraint, dojo warmth punctured by lethal memory, historical romance and steel discipline',
+        'Drama de redención contenida, disciplina marcial abstracta, culpa persistente y sensibilidad romántica.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea noventera elegante, lectura clara de postura disciplinada y acting contenido de conflicto moral.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Rosas suaves, ocres de época, azules de crepúsculo y grises de acero templado.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Contraste suave de época con atardecer cálido, sombra interior calma y brillo metálico preciso.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Madera pulida, tela tradicional, piedra gastada y grano clásico de drama de periodo.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con balance entre tensión refinada, calma itinerante y peso ético.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Reflective, noble, restrained, fierce',
+        'Composición sobria con pausas introspectivas, eje de confrontación moral y amplio silencio negativo.',
+      atmosphere: 'Reflexiva, noble, contenida, feroz.',
       key_features:
-        'Kimono-and-sword silhouettes, Meiji streets, reverse-blade stances, sakura accents, inner-conflict close-ups',
+        'Silueta errante abstracta, gesto de no-daño, memoria de batalla y ternura disciplinada.',
       creative_brief:
-        'A blade turned backward, every cherry blossom a memory of blood washed away by decades of wandering under a vow that refuses to break. The new era smells of kerosene and progress, but this man still walks in kimono and silence, carrying a reverse-edge sword that promises never to kill again while his eyes remember exactly how many bodies it took to earn that promise. Redemption is not a destination; it is the road between every village, measured in sakura seasons.',
+        'Diseña una gramática reusable de redemption-restraint para cualquier sujeto, fusionando honor disciplinado, pasado oscuro y ternura de nueva era sin imponer samuráis, espadas, calles Meiji, dojos, kimonos ni duelos.',
     },
   },
   {
     id: 'SP05-167',
-    name: 'Outlaw Star - Engine-Trail Treasure Chase',
+    name: 'Engine-Trail Outlaw Adventure Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Treasure-hunter space adventure, grappler-arm ship duels, outlaw swagger, dusty ports and star corridors, pulpy cosmic optimism with rough-edged bravado',
+        'Aventura pulp de estela cinética, bravado outlaw, optimismo cósmico áspero y riesgo improvisado.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea 90s de acción nítida, pose descarada, lectura mecánica abstracta y maniobra en diagonal.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Azules profundos, naranjas de estela, metales cálidos usados y neón periférico abstracto.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Contraste dinámico entre sombra técnica y exterior luminoso, highlights de propulsión y reflejo duro.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Chapa usada, paneles técnicos, textiles utilitarios y grano analógico de space-western anime.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium noventero con ritmo de escape y claridad de impulso cinético.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Adventurous, cocky, starry, scrappy',
+        'Composición de trayectoria extrema con diagonales de escape, abordaje abstracto y maniobra improvisada.',
+      atmosphere: 'Aventurera, chulesca, estelar y peligrosa.',
       key_features:
-        'Starship silhouettes, engine trails, outlaw coats, cosmic route maps, treasure-chase action framing',
+        'Estelas largas, actitud outlaw, mapas de trayectoria abstractos y optimismo de escape peligroso.',
       creative_brief:
-        'Cosmic highwaymen chasing legend between asteroid belts, a grappler-arm ship that fights with the elegance of a street brawler and the heart of a treasure map. Freedom measured in light-years and engine trails, every port a new scheme, every star a potential fortune or a grave. The galaxy is too big for laws, too wild for borders, and just the right size for a crew that believes the greatest treasure is the chase itself.',
+        'Define una gramática reusable de engine-trail-outlaw-adventure para cualquier sujeto, priorizando libertad, riesgo, estela cinética y espíritu de alianza improvisada sin imponer naves, hangares, cazarrecompensas, tesoros, dogfights, mapas ni puertos.',
     },
   },
   {
     id: 'SP05-169',
-    name: 'Serial Experiments Lain - Wired Bedroom Dissolution',
+    name: 'Wired Identity Dissolution Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bedroom terminals, humming cables, thin reality, disconnected suburbia, static-lit silence, identity blur between schoolgirl life and network consciousness',
+        'Cyber-aislamiento con mística de red, donde la identidad se vuelve señal y la intimidad, interfaz.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea fina y distanciada, acting minimal de disociación y composición de terminal obsesiva.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Verdes CRT, grises de vacío periférico, azules fríos y blancos de estática electrónica.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Luz baja de monitor, sombra blanda de madrugada y parpadeo digital como pulso emocional.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Cableado denso, plástico viejo de terminal, plano desaturado y grano de señal analógica.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con tensión psicológica persistente y estética proto-red inquietante.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Isolated, wired, whispery, uncanny',
+        'Espacio íntimo comprimido y vacío periférico para sensación de presencia fantasma.',
+      atmosphere: 'Aislada, conectada, susurrante, extraña.',
       key_features:
-        'Cable clusters, CRT glow, empty suburban streets, detached gaze, static-rich digital overlays',
+        'Clústeres de cables, glow de CRT, overlays de estática y mirada distante en tránsito digital.',
       creative_brief:
-        'A girl dissolving into the network, her bedroom a terminal where reality bleeds into signal and every cable hums with the static of a universe learning to speak. Suburbia outside the window is empty not because nobody is there but because everyone has already gone somewhere else inside themselves. The self becomes transmission, silence becomes data, and the question of whether you exist is answered by how many wires are plugged into you.',
+        'Construye una gramática reusable de desmaterialización identitaria en red para cualquier sujeto, combinando silencio periférico, densidad electrónica y ambigüedad existencial sin imponer dormitorios, terminales, cables ni suburbios literales.',
     },
   },
   {
     id: 'SP05-170',
-    name: 'Cardcaptor Sakura - Storybook Seal Magic',
+    name: 'Storybook Seal Magic Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Soft magical-girl wonder, ornate key designs, airy costume changes, schoolyard gentleness, toy-like magical seals, comforting city evenings with elegant charm',
+        'Magical-girl noventero de ternura luminosa, diseño ornamental, sellos elegantes y crecimiento emocional amable.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
-      color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Línea limpia y delicada, acting inocente determinado y staging de transformación con detalle artesanal.',
+      color_palette: 'Rosas pastel, dorados suaves, celestes claros y verdes de tarde acogedora.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Glow cálido de atardecer y magia blanda, con highlights perlados en ornamento místico.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Telas detalladas, papel simbólico, superficies suaves y grano analógico delicado.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con legibilidad impecable de encanto, ritual y cotidianidad protectora.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Sweet, magical, bright, comforting',
+        'Escala íntima y protectora con aperturas fantásticas para sello, giro y vuelo visual.',
+      atmosphere: 'Dulce, mágica, brillante, reconfortante.',
       key_features:
-        'Seal-circle motifs, ornate magical props, costume-detail focus, school-and-home softness, flying-card whimsy',
+        'Motivos de círculo-sello, ornamento arcano abstracto, transformación suave y coreografía aérea.',
       creative_brief:
-        'A key that unlocks everything but fear, a wand that seals chaos into cards smaller than a child hand, growing up measured one captured spirit at a time in a town where cherry blossoms fall like permission to believe in happy endings. Every costume change is a small act of courage, every sealed card a promise that the dark can be made manageable, catalogued, and ultimately loved. Gentleness here is not weakness but the highest form of magic.',
+        'Diseña una gramática reusable de storybook-seal-magic para cualquier sujeto, equilibrando delicadeza visual, aventura juvenil y esperanza serena sin imponer cartas, llaves, escuela, barrio, vestuario específico ni rituales literales.',
     },
   },
   {
     id: 'SP05-173',
-    name: 'Trigun - Desert Gun-Saint Melancholy',
+    name: 'Dust-Warm Pacifist Melancholy Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sun-bleached desert towns, ridiculous outlaw silhouette, hidden grief behind slapstick, revolver iconography, church-and-saloon westward sci-fi sorrow',
+        'Cel anime 90s de melancolía humanista, humor defensivo y heroísmo pacifista bajo luz abrasada.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea energética y elástica, siluetas largas, gestos cómicos que se quiebran en pausa dramática y contornos de gran soledad.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Ocres dorados, azul seco, rojo acento dominante, marrones quemados y sombras violeta apagadas.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Luz dura de mediodía, rim cálido, contraluces crepusculares y sombras amplias que agrandan la distancia emocional.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Grano seco de cel clásico, polvo atmosférico, superficies gastadas, cuero estilizado y ruido cinematográfico cálido.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium noventero que alterna slapstick, tensión ética y lirismo de largo alcance sin exigir props específicos.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Goofy, lonely, dusty, compassionate',
+        'Horizontes enormes y encuadres comprimidos que convierten cualquier sujeto en figura solitaria ante una decisión moral.',
+      atmosphere: 'Bufonesca, compasiva, errante, melancólica.',
       key_features:
-        'Desert-town staging, revolver poses, red-coat silhouette, comic-to-serious tonal contrast, giant sky backdrops',
+        'Rojo protagonista, polvo dorado, acting cómico-serio, líneas de distancia épica y contraste entre ternura y peligro.',
       creative_brief:
-        'A walking contradiction in a red coat, the deadliest gun in the wasteland terrified of killing, laughter deployed as shield against a grief so vast it could swallow the desert whole. Sun-bleached towns where his silhouette is legend and his clumsiness is performance, a gun-saint who carries every life he ever took like a stone in his heart. Comedy and tragedy share the same trigger here, and neither one gets the last word.',
+        'Aplica este preset como tratamiento abstracto de anime 90s: cualquier prompt debe ganar calidez polvorienta, humanidad contradictoria, humor frágil y melancolía ética sin quedar atado a una escena western.',
     },
   },
   {
     id: 'SP05-174',
-    name: 'Berserk 1997 - Iron Guts Medieval Ruin',
+    name: 'Iron Ruin Tragedy Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mercenary brutality, iron weight, ruined castles, black trauma and mud, doomed brotherhood, heavy sword arcs under ash-dark skies',
+        'Cel anime 90s de tragedia pesada, masa de hierro, sombra fúnebre y supervivencia emocional extrema.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea gruesa y agresiva, anatomía angulosa, contornos cargados de peso, diagonales brutales y poses de resistencia física.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Negro ceniza, gris hierro, óxido oscuro, rojo herida apagado y marrón barro profundo.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Tormenta baja, highlights metálicos duros, contraluces mínimos y sombra opresiva que aplasta el encuadre.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Hierro rugoso, barro seco, piel marcada, piedra quebrada abstracta y grano fílmico áspero.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium noventero con densidad dramática extrema, peso material claro y violencia sugerida por composición.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Brutal, mournful, doomed, relentless',
+        'Escala monumental y diagonales sobredimensionadas hacen que cualquier sujeto parezca cargar una fatalidad física.',
+      atmosphere: 'Brutal, fúnebre, condenada, implacable.',
       key_features:
-        'Oversized sword silhouette, ruined masonry, battlefield mud, scarred facial acting, oppressive medieval scale',
+        'Silueta pesada, grano áspero, sombra de trauma, masa metálica, rojos apagados y gesto de dolor contenido.',
       creative_brief:
-        'A man too angry to die, swinging iron through a world that betrayed him, blood and rain indistinguishable on ruined stone where brotherhood curdled into the worst betrayal ever forged. Every swing of the dragonslayer cuts through more than flesh: it carves through fate, through causality, through the very idea that suffering has meaning. The sky is ash, the castle is memory, and the only prayer left is the sound of steel meeting monster.',
+        'Aplica este preset como tratamiento abstracto de anime oscuro 90s: cualquier prompt debe ganar peso, fatalidad, textura áspera y tragedia corporal sin exigir espada, castillo ni escena medieval.',
     },
   },
   {
     id: 'SP05-175',
-    name: 'Revolutionary Girl Utena - Rose Duel Symbolism',
+    name: 'Rose Ritual Symbolism Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rose-crested duels, theatrical academia, impossible symbolism, prince-aspiration elegance, staircase ritual drama, emotional allegory made architectural',
+        'Cel anime 90s de simbolismo teatral, elegancia ritual, tensión identitaria y revolución emocional codificada.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea refinada, poses ceremoniosas, simetría alegórica, diagonales de confrontación y ornamento floral abstracto.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Rosas profundos, blanco ceremonial, lila dramático, dorado escénico y sombras violetas psicológicas.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Luz teatral abstracta, halo emocional limpio, contrastes de ópera juvenil y focos suaves sobre símbolos clave.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Satén estilizado, encaje gráfico, superficies idealizadas, brillos dorados planos y grano psicológico elegante.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con símbolo legible, tensión de poder, lirismo performático y abstracción emocional.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Theatrical, symbolic, elegant, unsettling',
+        'Perspectivas imposibles, profundidad teatral y composición ritual que convierten cualquier sujeto en alegoría.',
+      atmosphere: 'Teatral, simbólica, elegante, inquietante.',
       key_features:
-        'Rose motifs, dueling platform staging, academy pageantry, allegorical poses, stylized ritual space',
+        'Motivos de rosa abstractos, simetría ritual, poses codificadas, dorado ceremonial y ruptura de roles como forma visual.',
       creative_brief:
-        'A girl who refuses to wait for princes, brandishing a rose as both weapon and declaration that the fairy tale ending was always a cage disguised as a reward. The academy is a stage, the dueling platform an altar, and every staircase ascends toward a revolution dressed in the language of ritual and the grammar of impossible architecture. To become a prince oneself is not imitation; it is the most elegant form of insurrection ever performed in a ballgown.',
+        'Aplica este preset como tratamiento abstracto de anime simbólico 90s: cualquier prompt debe ganar teatralidad, ornamento emocional, tensión de identidad y lenguaje ritual sin forzar academia, duelo o plataforma.',
     },
   },
   {
     id: 'SP05-179',
-    name: 'Slam Dunk - Hardwood Rivalry Portrait',
+    name: 'Warm Rivalry Portrait Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        '90s sports confidence, sweaty gym drama, delinquent swagger redirected into team growth, hardwood bounce and underdog sincerity, emotionally readable game intensity',
+        'Cel anime 90s deportivo de rivalidad frontal, energía juvenil, esfuerzo sudado y carisma underdog.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea atlética, acting competitivo legible, diagonales de impulso, anatomía en tensión y gestos de remontada.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Miel cálida, rojos y azules limpios, blanco intenso, sombra de esfuerzo y naranja acento de energía.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Luz limpia de alto rebote, reflejos cálidos, rim de esfuerzo físico y contraste claro sobre gestos.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Superficie encerada abstracta, tela sudada, grano clásico de anime deportivo y brillo de movimiento rápido.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con claridad táctica, emoción coral y ritmo de superación sin fijar deporte específico.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Competitive, sweaty, hopeful, charismatic',
+        'Perspectiva dinámica de acción media, líneas de velocidad y encuadres bajos para enfatizar salto, choque o avance.',
+      atmosphere: 'Competitiva, sudada, esperanzadora, magnética.',
       key_features:
-        'Gymnasium lighting, basketball motion arcs, rivalry face-offs, team-bond body language, court-perspective dynamism',
+        'Diagonales deportivas, reflejos cálidos, gestos de esfuerzo, química de equipo, encuadre de rivalidad y ritmo de remontada.',
       creative_brief:
-        "The squeak of sneakers on polished wood is a hymn of second chances. Every jump shot traces an arc from who you were to who the team needs you to become. Sweat is temporary ink, writing a story that won't survive the final buzzer but will echo long after the lights go down.",
+        'Aplica este preset como tratamiento abstracto de anime deportivo 90s: cualquier prompt debe ganar intensidad competitiva, vínculo grupal, energía de remontada y fisicalidad clara sin forzar baloncesto ni cancha.',
     },
   },
   {
     id: 'SP05-180',
-    name: 'Gunsmith Cats - Chicago Garage Firefight',
+    name: 'Precision Action Cel Style',
     category: '3. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Car chases, handguns and muscle cars, Chicago garage cool, sharp female leads, firearm fetish detail, sleek 90s crime-action confidence with urban grease',
+        'Estilo cel anime noventero de acción técnica, tensión cinética abstracta y confianza gráfica afilada.',
       form_and_line:
-        'Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking',
+        'Línea limpia y rápida, siluetas decididas, diagonales de velocidad y encuadres compactos de lectura inmediata.',
       color_palette:
-        'Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop',
+        'Azules nocturnos, acero cromado, negros densos, piel cálida y acentos naranjas de luz dura.',
       lighting_setup:
-        'High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights',
+        'Contraste de farola estilizada, brillos duros sobre bordes metálicos y sombras recortadas de thriller.',
       material_texture:
-        'Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture',
+        'Acetato satinado, metal pulido, cuero gráfico, grano analógico y superficies mecánicas sugeridas sin literalidad.',
       render_quality:
-        'High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading',
+        'Acabado premium 90s con precisión de contorno, energía cinética y detalle técnico subordinado al sujeto original.',
       spatial_distortion:
-        'Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design',
-      atmosphere: 'Sharp, hot-rodded, confident, dangerous',
+        'Perspectiva comprimida, motion streaks controlados y planos tensos que vuelven dinámico cualquier motivo.',
+      atmosphere: 'Afilada, acelerada, segura, peligrosa.',
       key_features:
-        'Garage-and-car props, gun-detail focus, urban pursuit framing, leather-jacket silhouettes, procedural-action cool',
+        'Cel shading limpio, reflejos cromados, tensión operativa abstracta, posing confiado y ritmo visual de aceleración.',
       creative_brief:
-        'Chrome reflects a city that rewards precision and punishes hesitation. Leather creaks with earned attitude, and every pistol slide carries the click of personal code. Chicago is not backdrop but character, its grease and grain baked into every frame like gunpowder residue on skilled hands.',
+        'Aplica una gramática reusable de acción técnica noventera a cualquier prompt o imagen de entrada: precisión gráfica, actitud afilada y dinamismo cinético sin imponer vehículos, armas, garajes ni persecuciones.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

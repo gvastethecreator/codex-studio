@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Orbital postal machinery treated like a cheerful mechanical circulatory system for scattered colonies.
+  aesthetic: Orbital postal machinery treated like cheerful mechanical circulation for distant communities.
   form_and_line: Sorting-belt arteries, capsule chute veins, docking-loop organs, route-board grids, and stamped rocket silhouettes.
   color_palette: Tangerine mail paint, graphite gray, ion cyan, paper white, and red priority-strip accents.
   lighting_setup: Workbay strip rhythm, status beacon flashes, scanner-line sweeps, and cyan glow inside capsule chutes.
   material_texture: Cargo polymers, metal mesh, stencil paint, paper label edges, worn rubber belts, and scuffed capsule shells.
   render_quality: Functional worldbuilding concept with high logistical readability and playful graphic coding.
-  spatial_distortion: Layered conveyor depth that moves like circulation through foreground belts, midground racks, and docking loops.
+  spatial_distortion: Layered conveyor depth that moves like circulation through belts, racks, and docking loops.
   atmosphere: Kinetic order, everyday cosmic logistics, civic trust, and absurdly heroic reliability.
-  key_features: Mail rocket silhouettes, capsule rack grids, route holograph boards, stamp-color lanes, and priority chute clusters.
+  key_features: Mail-rocket silhouettes, capsule rack grids, route holograph boards, stamp-color lanes, and priority chute clusters.
   creative_brief: >-
     Push orbit postal-depot as reusable style: make subjects feel sorted,
     routed, stamped, and kept alive by bright orbital logistics, with mail

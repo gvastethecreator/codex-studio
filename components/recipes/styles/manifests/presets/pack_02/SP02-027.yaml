@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Forecast map
+  aesthetic: Weather forecast graphics
   form_and_line: Isobars
   color_palette: Radar Green/Red, precipitation blue, severe-weather magenta
   lighting_setup: Digital map, emissive screen, composited background
@@ -20,14 +20,14 @@ visualDna:
   render_quality: Info, graphics, Doppler sweep, forecast animation
   spatial_distortion: None
   atmosphere: Informative, reassuring, storm-track urgency, weekend outlook
-  key_features: Map, isobars, temperature crawl, 7-day forecast
-  creative_brief: The continent becomes a canvas painted in the urgent greens and magentas of approaching systems, Doppler pulses tracing the heartbeat of the sky. Cool composure meets the chaos of nature, the forecaster a steady hand pointing at a future still assembling itself. Between the isobars and the seven-day grid lies the ancient ritual of reading the heavens.
+  key_features: Radar palette, isobar curves, forecast-grid rhythm
+  creative_brief: 'Weather Channel style overlays any subject with forecast logic: radar green/red, precipitation blue, severe magenta, isobar curves, Doppler sweep, emissive map light, and reassuring broadcast order. Keep weather-graphics energy without requiring map, continent, forecaster, indoors/outdoors, or readable forecast.'
 avoidRules:
-  - indoors
+  - plain studio
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-027.webp
 attributes:
-  negativePrompt: indoors
+  negativePrompt: plain studio
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Conflict zone photo
-  form_and_line: Chaos
+  aesthetic: Harsh witness documentary
+  form_and_line: Chaotic factual framing
   color_palette: Desaturated, dusty
   lighting_setup: Harsh sun
-  material_texture: Dirt, smoke, grain
+  material_texture: Dust, smoke, grain
   render_quality: Raw, emotional
   spatial_distortion: None
-  atmosphere: Tragic, intense
+  atmosphere: Unflinching, intense
   key_features: Realism
-  creative_brief: 'Dust hangs in the frame like suspended grief, sunlight stripped to its bone-white harshness while smoke scribbles erasure across the sky. The image does not editorialize: it witnesses with a flat, unflinching gaze that refuses to prettify the weight of what a single instant can carry. Grain and desaturation are not style choices but the visual syntax of testimony.'
+  creative_brief: 'Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring battlefield, tragedy, weapons, sky, or conflict-zone narrative.'
 avoidRules:
   - posed
   - happy

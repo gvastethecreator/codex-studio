@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-175
 packId: pack_16
-name: Revolutionary Girl Utena - Rose Duel Symbolism
+name: Rose Ritual Symbolism Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Alegoría escolar teatral de duelo y revolución íntima, con heráldica rosa y elegancia de ruptura de roles.
-  form_and_line: Línea refinada noventera, acting ceremonioso y composición simbólica de plataforma ritual.
-  color_palette: Rosas profundos, blancos de uniforme ceremonial, lilas dramáticos y dorados de escenario académico.
-  lighting_setup: Luz escénica de ópera juvenil con contrastes limpios y halo de rito emocional.
-  material_texture: Satén y encaje estilizados, arquitectura idealizada y grano de fantasía psicológica elegante.
-  render_quality: Acabado premium 90s con claridad de símbolo, tensión de poder y lirismo performático.
-  spatial_distortion: Escaleras imposibles y arena ritual para dramatizar transformación identitaria y choque de discurso.
+  aesthetic: Cel anime 90s de simbolismo teatral, elegancia ritual, tensión identitaria y revolución emocional codificada.
+  form_and_line: Línea refinada, poses ceremoniosas, simetría alegórica, diagonales de confrontación y ornamento floral abstracto.
+  color_palette: Rosas profundos, blanco ceremonial, lila dramático, dorado escénico y sombras violetas psicológicas.
+  lighting_setup: Luz teatral abstracta, halo emocional limpio, contrastes de ópera juvenil y focos suaves sobre símbolos clave.
+  material_texture: Satén estilizado, encaje gráfico, superficies idealizadas, brillos dorados planos y grano psicológico elegante.
+  render_quality: Acabado premium 90s con símbolo legible, tensión de poder, lirismo performático y abstracción emocional.
+  spatial_distortion: Perspectivas imposibles, profundidad teatral y composición ritual que convierten cualquier sujeto en alegoría.
   atmosphere: Teatral, simbólica, elegante, inquietante.
-  key_features: Motivo de rosa, duelo en plataforma, academia ceremonial y poses alegóricas codificadas.
-  creative_brief: Diseña una gramática reusable de duelo simbólico emancipador para cualquier sujeto, combinando ritual estético, tensión de género y revolución emocional.
+  key_features: Motivos de rosa abstractos, simetría ritual, poses codificadas, dorado ceremonial y ruptura de roles como forma visual.
+  creative_brief: >-
+    Aplica este preset como tratamiento abstracto de anime simbólico 90s:
+    cualquier prompt debe ganar teatralidad, ornamento emocional, tensión de
+    identidad y lenguaje ritual sin forzar academia, duelo o plataforma.
 avoidRules:
   - realistic
   - 3d render

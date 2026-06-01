@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Club/Action freeze
+  aesthetic: Strobe-sliced motion freeze
   form_and_line: None
   color_palette: High contrast White, hard flash, bleached moment, deep shadow gaps
   lighting_setup: Flash freeze, strobe burst, millisecond illumination
-  material_texture: Sharp motion, frozen water, mid-air suspension
+  material_texture: Sharp motion edges, suspended droplets or fragments, hard-flash glare
   render_quality: Intense, frozen, time-slice, action-arrested
   spatial_distortion: Motion trails, ghost frame, multiple-exposure overlay
-  atmosphere: Party, panic, disorienting rhythm, seizure flicker
-  key_features: Frozen action, dancer mid-air, splashing liquid
-  creative_brief: Time is shattered into discontinuous slices, each flash carving a statue from velocity—a dancer suspended mid-arc, water frozen into glass, motion arrested at its most violent and beautiful. Between the bursts, darkness pools like deep water, waiting for the next blade of light to cut through.
+  atmosphere: Disorienting, intense, discontinuous rhythm, flash-cut energy
+  key_features: Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm
+  creative_brief: 'Render motion as strobe discontinuity: millisecond flash bursts, frozen fragments, hard white glare, black gaps, and ghosted multi-exposure trails. Avoid club scenes, dancers, panic, or specific action props. The image should feel cut into separate time slices by light.'
 avoidRules:
   - continuous light
 assets:

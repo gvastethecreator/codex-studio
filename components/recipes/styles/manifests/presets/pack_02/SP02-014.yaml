@@ -16,12 +16,12 @@ visualDna:
   form_and_line: None
   color_palette: Deep Red, Blue, Green gels, saturated primaries, blood crimson
   lighting_setup: Unnatural colored light, gel-drenched, theatrical splash
-  material_texture: Film grain, leather gloves, polished blade
-  render_quality: Stylish, bloody, baroque violence, operatic death
-  spatial_distortion: Black gloves, POV killer, obscured face
-  atmosphere: Mystery, stylish, psychosexual dread, hallucinatory
-  key_features: Color gels, gloved hand, ornate weapon
-  creative_brief: Light itself becomes the weapon — crimson bleeding across velvet, cobalt slicing through darkness, emerald pooling on polished steel. Each frame is a crime scene staged as a painting, where the gloved hand belongs as much to the canvas as to the killer.
+  material_texture: Film grain, polished surfaces, leatherlike shadow
+  render_quality: Stylish, baroque, operatic color dread
+  spatial_distortion: POV unease, obscured geometry
+  atmosphere: Mystery, stylish, hallucinatory dread
+  key_features: Color gels, polished threat, baroque shadow
+  creative_brief: 'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime scenes.'
 avoidRules:
   - natural lighting
 assets:

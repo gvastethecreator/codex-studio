@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Black-and-white suitmation monster spectacle, Godzilla 1954, miniature city destruction, lumbering scale terror
+  aesthetic: Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror
   form_and_line: None
   color_palette: B&W or Eastmancolor, muted desaturated, faded film stock
   lighting_setup: Miniature set, forced perspective, matte backdrop light
-  material_texture: Rubber suit, latex monster, toy tank, balsa wood buildings
+  material_texture: Rubber suit texture, latex sheen, toy-scale practical material
   render_quality: Tokusatsu, scale model, practical destruction, charming artifice
   spatial_distortion: Stiff movement, lumbering gait, wire-work float
-  atmosphere: Epic, destruction, national panic, citizen evacuation
-  key_features: Low angle, smashed power lines, fleeing crowds
-  creative_brief: Towering motion lurches across miniature cityscapes where balsa-wood skyscrapers collapse with the theatrical conviction of a stage set meeting its fate. There is profound sincerity in the artifice — rubber and latex convinced, frame by frame, of their own terrifying weight.
+  atmosphere: Epic, handmade, scale panic
+  key_features: Low angle, miniature scale, charming artifice
+  creative_brief: 'Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective, miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice. Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.'
 avoidRules:
   - cgi
   - realistic

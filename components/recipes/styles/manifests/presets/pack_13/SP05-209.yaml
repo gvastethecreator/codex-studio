@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Dessert-cafe moe softness, tiny uniforms, foam art and lace trims, decorative interiors, sugar-sweet pacing, plush friendliness and cozy customer-service charm
-  form_and_line: Tiny-uniform silhouette language, dessert-display contour neatness, and soft comedic service-gesture readability
+  aesthetic: Sugar-cotton moe softness with lace-like delicacy, dessert-display neatness, plush friendliness, and cozy hospitality charm
+  form_and_line: Tiny silhouette language, decorative contour neatness, and soft comedic service-gesture readability
   color_palette: Whipped-cream whites, pastel strawberry pinks, mint accents, caramel browns, and warm interior golds
-  lighting_setup: Cafe pendant warm pools, pastry-case glow, and gentle window diffusion for plush ambience
-  material_texture: Lace trim weave, ceramic cup glaze, foam microtexture, polished wood counters, and confectionery gloss details
+  lighting_setup: Pendant-like warm pools, pastry-glow softness, and gentle diffusion for plush ambience
+  material_texture: Lace trim weave, ceramic glaze, foam microtexture, polished wood warmth, and confectionery gloss details
   render_quality: Sugar-cozy moe rendering with high decorative legibility and inviting hospitality tone
-  spatial_distortion: Compact table-and-counter framing to heighten tiny-world charm
+  spatial_distortion: Compact framing to heighten tiny-world charm
   atmosphere: Sugary, tiny, cute, soothing
-  key_features: Cafe counters, lace uniform detail, desserts and teacups, plush texture cues, decorative interior symmetry
+  key_features: Lace detail, dessert-like softness, plush texture cues, decorative symmetry, and compact hospitality rhythm
   creative_brief: >-
-    Preserve cafe-sugar cotton grammar as a reusable style language:
-    dessert-display softness, lace-uniform charm, and compact cozy service
-    staging should remain stable across subjects.
+    Use the title as a style anchor for cafe-sugar cotton. Keep dessert-display
+    softness, lace charm, and compact hospitality rhythm without requiring cafe,
+    counters, uniforms, desserts, or teacups.
 avoidRules:
   - realistic
   - 3d render

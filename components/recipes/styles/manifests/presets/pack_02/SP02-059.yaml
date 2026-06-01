@@ -17,11 +17,11 @@ visualDna:
   color_palette: Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold
   lighting_setup: Emissive heat, self-illumination, temperature glow
   material_texture: Digital, sensor noise, microbolometer grid
-  render_quality: Military, predator, FLIR aesthetic, heat-signature tracking
+  render_quality: FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity
   spatial_distortion: None
-  atmosphere: Tech, hunting, surveillance, predator-vision
-  key_features: Hot is white, cold is black, body-glow silhouette
-  creative_brief: Temperature becomes palette and the world reorganizes itself around warmth. Cool surfaces recede into violet shadow while hidden heat blooms brilliant as a beacon, the visual logic of something that hunts by signature rather than sight. The gradient from cold to burning core traces a language older than light, where every living thing announces itself in fire.
+  atmosphere: Tech, analytical, sensor-vision, invisible-energy
+  key_features: White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom
+  creative_brief: 'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form.'
 avoidRules:
   - visible light
 assets:

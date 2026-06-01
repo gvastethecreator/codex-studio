@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-054
 packId: pack_05
-name: Beam Opera Mecha
+name: Luminous Beam Opera Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Sleek mecha heroics, colorful beam clashes, emotional space-opera staging, Gundam mobile suits, colony drop devastation, Newtype psychic flashes, Minovsky particle glow
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Operatic luminous conflict, sleek heroic geometry, psychic color pressure, radiant scale, and melodramatic cosmic stakes.
+  form_and_line: Clean heroic hard-edge linework, long beam diagonals, crisp panel accents, elegant silhouette contrast, and elevated stance framing.
+  color_palette: White-hot cores, saturated red-blue primaries, violet void shadows, chrome neutrals, and aurora-like particle color.
+  lighting_setup: Radiant beam keys, flare bloom, colored rim clashes, distant black-field contrast, and luminous particulate haze.
+  material_texture: Polished alloy sheen, smooth enamel planes, energy bloom, transparent particles, and cel-era specular snaps.
+  render_quality: Premium space-opera anime finish with clear heroic hierarchy, bright chroma discipline, and polished luminous drama.
+  spatial_distortion: Grand diagonal scale, beam-led depth, telephoto compression, and cosmic negative space around the focal silhouette.
   atmosphere: Dramatic, luminous, operatic, cosmic
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Light becomes weapon and music becomes war in the vacuum between colonies. Pilots reach across the void not with hands but with particle beams that sing like violins. The cosmos is a stage and each explosion is a note in an aria of survival.
+  key_features: Beam diagonals, psychic color bloom, operatic silhouette contrast, luminous particles, and heroic negative-space staging.
+  creative_brief: >-
+    Apply luminous beam opera as a reusable style treatment: make any subject
+    feel grand, radiant, emotionally strategic, and staged through colored
+    energy while staying abstract, portable, and detached from fixed operators,
+    hardware, territory, or combat narratives.
 avoidRules:
   - realistic
   - 3d render

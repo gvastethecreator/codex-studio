@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Repeating fate, ornate fantasy streets, emotional collapse, dread beneath beauty, return-by-death loop, silver-haired Emilia, witch-cult mansion, white-whale battle
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Anxious, tragic, harrowing, relentless
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: Fate rewinds while the horror stays fresh — a cobblestone street in the witch's hour holds the echo of every death that already happened and hasn't happened yet. Ornate beauty is the wallpaper over a room where hope keeps bleeding out. The loop tightens; make the viewer feel the vertigo of standing at the center of a spiral.
+  aesthetic: Reset-loop dark fantasy, with ornate beauty under dread, emotional collapse, and recursive fate pressure.
+  form_and_line: Elegant fantasy contouring interrupted by spiral repeats, stress-fracture accents, and tightening visual rhythms.
+  color_palette: Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory.
+  lighting_setup: Beautiful surface glow with dread below it, cold rim halos, looping highlight echoes, and suffocating low contrast.
+  material_texture: Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair.
+  render_quality: High-polish fantasy anime with psychological tension, delicate detail, and controlled emotional breakdown.
+  spatial_distortion: Spiral compression, deja-vu repetition, and ornamental depth that seems to close inward.
+  atmosphere: Anxious, tragic, harrowing, relentless.
+  key_features: Recursive fate, beauty-as-pressure, spiral dread, fragile hope, ornate emotional collapse.
+  creative_brief: >-
+    Treat any prompt as trapped inside beautiful repetition: use spiral
+    composition, delicate ornament, cold glow, and emotional pressure to imply a
+    reset-loop without literal locations, antagonists, set pieces, or named
+    characters.
 avoidRules:
   - realistic
   - 3d render

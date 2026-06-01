@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Primal wilderness civilization-building fused with competitive action energy, bright invention montages, chemistry-as-power spectacle, survival optimism and tactical intelligence
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Science kingdom action blueprint, with invention optimism, tactical intelligence, bright diagrams, and survival-to-civilization energy.
+  form_and_line: Blueprint overlays, clean schematic arrows, confident expression beats, toolpath-like lines, and construction rhythm.
+  color_palette: Blueprint cyan, mineral green, warm sunlight yellow, chalk white, earth brown, and invention spark orange.
+  lighting_setup: Clear daylight, diagram glow, discovery flashes, and optimistic rim light around practical breakthroughs.
+  material_texture: Chalk marks, paper diagrams, rough natural grain, glass glints, mineral dust, and handmade device polish.
+  render_quality: Bright modern anime finish with readable invention logic, strategic clarity, and optimistic action pacing.
+  spatial_distortion: Process-step composition, diagrammatic depth, and assembly-like motion that makes knowledge kinetic.
   atmosphere: Inventive, bold, optimistic, strategic
-  key_features: Blueprint overlays, primitive-to-modern tool contrast, science symbols, bright expression acting, invention triumph moments
-  creative_brief: A boy counts the seconds until civilization returns, using chemistry as his war drum and ingenuity as his compass. Stone-age horizons crack open under the pressure of relentless optimism, each invention a love letter to the future almost lost. The wilderness does not know it is being rebuilt until the first lightbulb flickers on.
+  key_features: Blueprint logic, invention spark, practical optimism, science symbols, constructive momentum.
+  creative_brief: >-
+    Render any prompt as clever invention in motion: use blueprint overlays,
+    practical materials, bright discovery light, and tactical clarity without
+    requiring wilderness, devices, science props, or rebuilding scenes.
 avoidRules:
   - realistic
   - 3d render

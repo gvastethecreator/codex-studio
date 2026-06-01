@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Decopunk transit cathedral where tickets, clocks, and crowd flow become a gilded civic liturgy.
-  form_and_line: Circular concourse mandalas, ribbed vault fans, ticket balcony rings, radial spokes, and turbine escalator spirals.
+  aesthetic: Decopunk transit liturgy where clocks, route logic, and crowd flow become gilded civic pattern.
+  form_and_line: Circular concourse mandalas, ribbed vault fans, balcony rings, radial spokes, and turbine-spiral motion.
   color_palette: Warm ivory, aged brass, emerald glass, black timetable ink, and polished floor cream.
   lighting_setup: Diffused skylight, perimeter chandelier halos, brass reflections on marble arcs, and clock-face glow.
   material_texture: Marble floors, brass grilles, etched glass, enamel clocks, ribbed stone trim, and worn ticket leather.
   render_quality: Architectural concept with precise circulation logic, ceremonial scale, and readable public choreography.
-  spatial_distortion: Rotunda focus pulls bodies through radial exits like planets around a timetable sun.
+  spatial_distortion: Rotunda focus pulls forms through radial exits like planets around a timetable sun.
   atmosphere: Ordered movement, ceremonial modernity, civic patience, and cathedral-like transit awe.
-  key_features: Deco timetable suns, turbine escalators, grand ticket arches, emerald route markers, and balcony crowd rings.
+  key_features: Deco timetable suns, turbine spirals, grand ticket arches, emerald route markers, and balcony-ring geometry.
   creative_brief: >-
     Preserve gilded transit-rotunda grammar as a reusable style system:
     ticketed radial circulation, ceremonial public timing, and brass civic

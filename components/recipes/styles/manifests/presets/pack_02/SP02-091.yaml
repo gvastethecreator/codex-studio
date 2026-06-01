@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Dry-erase marker on whiteboard, conference-room meeting doodles, stick-figure presentations with arrows everywhere, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, Venn-diagram jokes, SWOT-analysis-gone-wrong energy
+  aesthetic: Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity
   form_and_line: Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition
   color_palette: Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails
-  lighting_setup: Harsh office fluorescent overhead, glossy board reflection, shadow of the person drawing cast on board
+  lighting_setup: Harsh fluorescent overhead, glossy board reflection, shallow surface glare
   material_texture: Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection
   render_quality: Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor
-  spatial_distortion: Stick figures with comically oversized heads, arrows looping in impossible circles, text squeezed into board corners
+  spatial_distortion: Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective
   atmosphere: Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling
-  key_features: Dry-erase marker strokes, eraser ghost trails, stick figures everywhere, flowchart arrows, Venn-diagram joke circles, glossy board reflection
-  creative_brief: A glossy surface bears the archaeology of a meeting that lost its way—stick figures wage war with arrows, Venn diagrams collapse into absurdity, and the ghost of a previous idea lingers beneath an incomplete erasure. The fluorescent hum overhead witnesses this small rebellion, creativity blooming in the cracks of corporate obligation.
+  key_features: Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text
+  creative_brief: 'Translate any prompt into whiteboard doodle language: squeaky marker strokes, eraser ghosts, diagram arrows, glossy glare, color-coded marks, and half-erased residue. Avoid required meeting rooms, stick figures, readable text, or specific business diagrams. The surface should feel temporary, improvised, and slightly absurd.'
 avoidRules:
   - digital
   - clean

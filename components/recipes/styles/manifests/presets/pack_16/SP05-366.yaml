@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-366
 packId: pack_16
-name: Kono Oto Tomare! - Koto Ensemble Resonance
+name: Traditional Ensemble Resonance Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Performance escolar de ensamble tradicional, centrada en resonancia colectiva y precisión de digitación.
-  form_and_line: Postura sentada estable, gesto de mano fino y coreografía mínima de conjunto por respiración.
-  color_palette: Maderas cálidas, ámbar de sala, negro laca y acentos crema de vestuario formal.
-  lighting_setup: Luz de recital suave con foco frontal sobre cuerdas y rebote cálido de escenario.
-  material_texture: Laca pulida del instrumento, cuerda tensada visible, tela ceremonial y piso de madera resonante.
+  aesthetic: Ensamble tradicional de resonancia colectiva, precisión de digitación y sinceridad performativa.
+  form_and_line: Postura estable, gesto de mano fino y coreografía mínima de conjunto por respiración.
+  color_palette: Maderas cálidas, ámbar íntimo, negro laca y acentos crema de formalidad.
+  lighting_setup: Luz suave con foco frontal sobre líneas resonantes y rebote cálido de madera.
+  material_texture: Laca pulida, tensión lineal visible, tela ceremonial y madera resonante.
   render_quality: Frame musical de alta delicadeza con legibilidad de ataque, dinámica y balance entre intérpretes.
   spatial_distortion: Perspectiva de ensamble en abanico con profundidad serena y jerarquía de secciones.
   atmosphere: Sincera, resonante, delicada y elevadora.
-  key_features: Detalle de cuerdas, staging sentado, brillo de laca y foco en colocación de manos.
+  key_features: Detalle lineal resonante, postura estable, brillo de laca y foco en colocación de manos.
   creative_brief: >-
-    Formula una gramática reusable de koto-ensemble-resonance donde materialidad
-    del instrumento, respiración grupal y lectura de gesto musical construyan
-    identidad transferible.
+    Formula una gramática reusable de traditional-ensemble-resonance donde
+    materialidad resonante, respiración grupal y lectura de gesto musical
+    construyan identidad transferible sin imponer koto, escuela, escenario ni
+    postura sentada fija.
 avoidRules:
   - realistic
   - 3d render

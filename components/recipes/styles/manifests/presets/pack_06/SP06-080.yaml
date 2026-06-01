@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Street-protest stencil graphic
+  aesthetic: Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray-edge urgency
   form_and_line: Hard edges, bridges
   color_palette: Black, Red, White
   lighting_setup: Flat
   material_texture: Wall, spray paint
-  render_quality: Street art, graphic
+  render_quality: Graphic reproducible stencil finish without requiring street walls, protest text, or slogans
   spatial_distortion: Simplified
-  atmosphere: Bold, urban
+  atmosphere: Bold, urgent, reproducible
   key_features: Stencil bridges
-  creative_brief: Negative space becomes positive through the bridge that holds the island of the letter O in place, the stencil declaring its method in every uncut connection. The image reduces to silhouette, detail sacrificed to reproducibility, the wall becoming the canvas for a message that can be repeated by anyone with cardboard and a blade.
+  creative_brief: Negative space becomes positive through bridges that hold isolated shapes in place, the stencil declaring its method in every uncut connection. Detail is sacrificed to reproducibility, and spray edges reveal the process. The style should feel repeatable and urgent without requiring letters, slogans, walls, or protest scenes.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable slogan
+  - wall requirement
+  - protest scene
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-080.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, wall requirement, protest scene
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

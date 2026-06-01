@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-317
 packId: pack_16
-name: Megazone 23 - Arcade Highway Revelation
+name: Arcade Techno-Rebellion Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Retrofuturo urbano rebelde de OVA ochentera, con velocidad de moto y paranoia de ciudad-sistema encubierta.
-  form_and_line: Trazado afilado de señalética y asfalto, diagonales cinéticas y silueta rider como eje de identidad visual.
-  color_palette: Cianes y magentas arcade, violetas sintéticos de twilight y negros de asfalto húmedo.
-  lighting_setup: Derrame de neón nocturno, parpadeo de cartelería y contraste cel duro con backfill de sodio vial.
-  material_texture: Brillo de lluvia sobre calle, borde de bloom CRT y grano analógico de video-era.
+  aesthetic: Retrofuturo rebelde de OVA ochentera, con neón sintético, velocidad gráfica y paranoia de sistema encubierto.
+  form_and_line: Trazado afilado de señalética, diagonales cinéticas y silueta rebelde como eje de identidad visual.
+  color_palette: Cianes y magentas arcade, violetas sintéticos de twilight y negros húmedos.
+  lighting_setup: Derrame de neón nocturno, parpadeo de cartelería abstracta y contraste cel duro con backfill de sodio.
+  material_texture: Brillo de lluvia sobre superficie oscura, borde de bloom CRT y grano analógico de video-era.
   render_quality: Acabado premium OVA retro-tech con claridad de velocidad y atmósfera de inquietud sistémica.
-  spatial_distortion: Perspectiva de avance forzado con compresión de cañón urbano para enfatizar fuga y revelación.
+  spatial_distortion: Perspectiva de avance forzado con compresión profunda para enfatizar fuga y revelación.
   atmosphere: Elegante, rebelde, nocturna, revelatoria.
-  key_features: Rider central, overlays de arcade, skyline vigilado y gramática visual de verdad oculta.
-  creative_brief: Diseña una gramática reusable de techno-rebeldía urbana para cualquier sujeto, combinando impulso de carretera, neón sintético y paranoia de sistema encubierto.
+  key_features: Overlays de arcade, neón sintético, velocidad lateral, vigilancia abstracta y revelación de verdad oculta.
+  creative_brief: >-
+    Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada:
+    arcade, velocidad y paranoia sin imponer motos, carreteras, skylines ni riders.
 avoidRules:
   - realistic
   - 3d render

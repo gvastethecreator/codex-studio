@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Police booking photo
+  aesthetic: Booking-documentation photo
   form_and_line: Height chart
   color_palette: Grey, flat
   lighting_setup: Flat
-  material_texture: Rough skin
-  render_quality: Criminal, raw
-  spatial_distortion: Dead eyes
+  material_texture: Rough factual surface
+  render_quality: Raw institutional record
+  spatial_distortion: Deadpan frontal flattening
   atmosphere: Serious, trouble
   key_features: Height lines
-  creative_brief: Height lines measure what no ruler can touch, the flat light interrogating skin and bone until identity becomes mere case file. The gaze holds neither guilt nor innocence, only the unblinking fact of being seen by a system that has already made up its mind.
+  creative_brief: 'Mugshot style reduces any subject to institutional record: grey flat light, frontal deadpan composition, height-line grid, rough surface clarity, and zero glamour. Keep booking-photo severity without requiring person, face, skin, guilt, or police narrative.'
 avoidRules:
   - happy
   - posed

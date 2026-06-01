@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Educational solarpunk campus where climate literacy is embedded in architecture.
-  form_and_line: Spiral learning ramps, open-air classrooms, and layered canopy rings.
+  aesthetic: Educational solarpunk where climate literacy is embedded in visible systems, spiral movement, and canopy warmth.
+  form_and_line: Spiral learning-ramp rhythm, open-air classroom-like voids, and layered canopy rings.
   color_palette: Fern green, chalk white, and warm sunlight amber.
   lighting_setup: Soft midday daylight filtered through translucent bioplastic sunshades.
   material_texture: Cross-laminated timber, recycled composite railings, cork flooring, and living vine screens.
-  render_quality: Clean editorial concept scene with strong human scale and pedagogical clarity.
-  spatial_distortion: Ascending spiral perspective linking ground labs to elevated garden observatories.
+  render_quality: Clean editorial solarpunk concept with strong scale and pedagogical clarity.
+  spatial_distortion: Ascending spiral perspective linking ground-level inquiry cues to elevated garden-observatory motifs.
   atmosphere: Curious optimism, civic care, and intergenerational collaboration.
-  key_features: Outdoor seminar terraces, energy dashboards, seed libraries, and maker-learning nodes.
+  key_features: Outdoor seminar-terrace rhythm, energy dashboard motifs, seed-library cues, and maker-learning nodes.
   creative_brief: >-
     Preserve canopy learning-spiral grammar as a reusable style system:
     pedagogical ramp architecture, visible climate dashboards, and
-    intergenerational eco-learning should remain coherent across subjects.
+    intergenerational eco-learning should remain coherent across subjects
+    without requiring a campus, classrooms, students, or observatories.
 avoidRules: [photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-013.webp }
 attributes:
   negativePrompt: photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

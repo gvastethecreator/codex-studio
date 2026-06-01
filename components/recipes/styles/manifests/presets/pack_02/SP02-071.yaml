@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Bright sky, dark foreground paradox, impossible contrast
   atmosphere: Moonlight, fake, studio night, theatrical illusion
   key_features: Blue cast, dark shadows at noon, noir-at-daylight
-  creative_brief: The sun is forced to play moonlight through a conspiracy of filters and under-exposure, turning noon into a theater of deception. There is a beautiful wrongness to the image—shadows deeper than daylight should allow, sky brighter than night could produce, the whole frame humming with the delightful lie of cinema.
+  creative_brief: 'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness.'
 avoidRules:
   - real night
 assets:

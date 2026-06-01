@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-110
 packId: pack_06
-name: Chibi Platformer Character Sheet
+name: Chibi Platformer Sprite Bounce
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Chibi platformer sprite style with squashy silhouette rhythm, toy-like proportions, and instant read at small scale.
+  subject_treatment: Adapt any subject into cute compact forms with oversized key shapes, soft corner logic, and bouncy pose arcs.
+  color_and_tone: Bright candy palette, simple shadow ramps, cheerful accent colors, and clean separation from transparent ground.
+  lighting_and_shadow: Small consistent highlight caps, soft under-shadows, and minimal volume modeling for animation stability.
+  texture_and_material: Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture.
+  camera_and_composition: Centered orthographic sprite-sheet framing with stable scale, predictable pivot, and side/three-quarter clarity.
+  atmosphere_and_mood: Playful, agile, readable mood without requiring characters, platforms, costumes, or background scenes.
+  rendering_and_quality: Animation-sheet friendly, crisp edges, transparent-background safe, no motion blur, no text.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - human character requirement
+  - platform requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-110.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, human character requirement, platform requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

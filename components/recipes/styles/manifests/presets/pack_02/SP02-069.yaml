@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Half face shadow
+  aesthetic: Split-key high contrast lighting
   form_and_line: None
   color_palette: High contrast, deep shadow, bright highlight, no midtone bridge
   lighting_setup: 90 degree key, side-only illumination, perfect split
-  material_texture: Skin texture, pore detail, stubble relief
-  render_quality: Dramatic, villain, two-face tension, moral duality
+  material_texture: Hard side relief, surface texture, carved shadow edge
+  render_quality: Dramatic, severe, dual-zone tension, graphic contrast
   spatial_distortion: None
-  atmosphere: Tense, hidden, internal conflict, shadow self
-  key_features: Half black, half lit, eye in shadow, dramatic side-profile
-  creative_brief: The face becomes a battlefield where illumination and absence meet without negotiation—no gradient, no compromise, just a razor edge dividing revelation from concealment. One eye burns in the light while the other drowns in shadow, and the story lives in the tension between these two irreconcilable halves.
+  atmosphere: Tense, hidden, divided, severe
+  key_features: Half black, half lit, razor side key, hard falloff
+  creative_brief: 'Apply split lighting to any subject: one side cut by a hard key, the other side dropping into near-black with minimal midtone bridge. Avoid face-only drama, villain framing, or portrait assumptions. The image should feel divided by illumination itself.'
 avoidRules:
   - flat light
 assets:

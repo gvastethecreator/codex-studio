@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Doctrina militar arcana de altura, con burocracia bélica y brutalidad estratégica en clave austero-imperial.
-  form_and_line: Silueta de oficial aérea, círculos de conjuro geométricos y lenguaje visual de mapa/orden táctico.
-  color_palette: Gris uniforme, rojo mando, azul glaciar de cielo de guerra y ámbar tenue de gema de cómputo.
-  lighting_setup: Contraluz de estrato nuboso, flare frío de vuelo y destellos duros de magia de artillería.
-  material_texture: Lana militar, cuero de arnés, metal aeronáutico, papel de cartografía y cristal de hechizo facetado.
-  render_quality: Frame táctico de alta precisión con lectura jerárquica de mando y conflicto aéreo.
-  spatial_distortion: Profundidad vertical de combate, compresión de escuadrón y diagonales de picado ofensivo.
+  aesthetic: Doctrina arcana austero-imperial, con cálculo frío, jerarquía visual y tensión estratégica abstracta.
+  form_and_line: Geometría de mando, vectores diagonales, anillos técnicos y siluetas comprimidas por disciplina visual.
+  color_palette: Gris acero, rojo mandato, azul glaciar, negro tinta de expediente y ámbar cristalino de cálculo.
+  lighting_setup: Contraluz estratificado, brillos fríos de precisión y destellos duros colocados como marcas de decisión.
+  material_texture: Paño mate, cuero oscuro, metal bruñido, papel cartográfico abstracto y cristal facetado de energía contenida.
+  render_quality: Anime táctico de alta precisión, con orden visual severo y poder expresado por control compositivo.
+  spatial_distortion: Verticalidad opresiva, compresión jerárquica y diagonales de presión que organizan cualquier sujeto.
   atmosphere: Severa, calculadora e implacable.
-  key_features: Magia aérea vectorial, utilería cartográfica, contraste niñez-mando y nubes de teatro bélico.
+  key_features: Vectores arcanos, burocracia visual, precisión geométrica, disciplina cromática y presión vertical.
   creative_brief: >-
-    Define una gramática aerial-war-doctrine reusable donde disciplina de
-    estado mayor, magia balística y verticalidad de combate expresen poder
-    táctico sin romantizar la devastación.
+    Define una gramática aerial-war-doctrine reusable donde cualquier prompt se
+    vuelva severo, jerárquico y táctico mediante geometría fría, luz de cálculo
+    y sensación de poder administrado.
 avoidRules:
   - realistic
   - 3d render

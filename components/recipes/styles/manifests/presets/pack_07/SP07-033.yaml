@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Envolvente bioclimática de cultivo, donde estructura de hierro y masa vegetal conviven en equilibrio técnico.
-  form_and_line: Luces acristaladas nervadas, tracería metálica fina, secuencias de nave y estratos de plantación por profundidad.
+  aesthetic: Envolvente bioclimática húmeda, donde estructura fina y masa vegetal conviven en equilibrio técnico.
+  form_and_line: Luces acristaladas nervadas, tracería metálica fina y estratos orgánicos por profundidad.
   color_palette: Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron
   lighting_setup: Sol filtrado por vidrio, difusión húmeda, prismas por condensación y rayos suavizados por neblina interna.
   material_texture: Película de condensación, hierro pintado oxidado, grava húmeda, terracota eflorescente y hojas de brillo ceroso.
-  render_quality: Precisión botánica con control de atmósfera húmeda y claridad estructural de invernadero operativo.
-  spatial_distortion: Condensation
+  render_quality: Precisión botánica con control de atmósfera húmeda y claridad estructural operativa.
+  spatial_distortion: Condensación refractiva y capas de humedad que suavizan profundidad.
   atmosphere: Cálida-húmeda, protectora y fértil, con calma de cultivo intensivo controlado.
-  key_features: Gradientes de condensación, zonificación por especies, repetición de nervios, estratificación de niebla y rutas de servicio.
+  key_features: Gradientes de condensación, zonificación vegetal, repetición de nervios, estratificación de niebla y rutas técnicas.
   creative_brief: >-
     Formula una gramática de conservatorio transferible basada en retícula
     estructural legible, humedad visible y estratificación botánica técnica.
-    Debe leerse como arquitectura de cultivo, no jardín ornamental genérico.
+    Debe leerse como sistema de cultivo, no jardín ornamental genérico.
 avoidRules:
   - dark
   - dry

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-052
 packId: pack_05
-name: Dystopian Policing Grid
+name: Surveillance Verdict Grid Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Bureaucratic sci-fi policing, sleek weapons, surveillance interfaces, social control tension, dominator guns, psycho-pass hue checks, holographic crime coefficients, dystopian Tokyo
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Bureaucratic techno-control rendered as verdict logic, surveillance pressure, clinical social sorting, and cold institutional paranoia.
+  form_and_line: Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid geometry, and clean blocking.
+  color_palette: Acid cyan, magenta status pops, dark steel neutrals, cold violet shadows, and sterile white alert accents.
+  lighting_setup: Fluorescent grid glow, digital reflections, severe underlight, wet-surface specularity, and scanline-like rim highlights.
+  material_texture: Glossy polymer, brushed metal grain, glassy overlays, carbon-fiber hints, and rain-slick synthetic finish.
+  render_quality: High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold forensic clarity.
+  spatial_distortion: Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed perspective corridors of control.
   atmosphere: Clinical, oppressive, dystopian, cold
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Justice wears a digital mask and carries a numbered verdict. Every citizen walks beneath a halo of data, their soul reduced to a coefficient on a screen. The law is not blind; it is watching with infinite, unblinking eyes.
+  key_features: Verdict glyphs, coefficient-like overlays, cold grid authority, glass reflections, and machine-readable emotional distance.
+  creative_brief: >-
+    Apply surveillance verdict grid as a reusable style treatment: make any
+    subject feel measured, sorted, judged, and lit by institutional data while
+    staying abstract, portable, and detached from fixed civic roles, props,
+    locations, or incident narratives.
 avoidRules:
   - realistic
   - 3d render

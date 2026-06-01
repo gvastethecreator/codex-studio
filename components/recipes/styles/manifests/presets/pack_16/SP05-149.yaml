@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-149
 packId: pack_16
-name: Hitman Reborn! - Mafia Tutor Comedy Escalation
+name: Clan Comedy Escalation Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Comedia mafiosa escolar en escalada shonen, con iconografía de clan y rito de anillos de alta energía.
-  form_and_line: Línea digital expresiva, pose de pandilla juvenil y transición visual de gag a combate formal de familia.
-  color_palette: Primarios intensos de acción 2000s, negros de traje mafioso y acentos fuego para ring-battle.
-  lighting_setup: Highlights pulidos de comedia, contraste medio de arena y rim energético en activación de anillos.
-  material_texture: Uniformes escolares, telas de traje, emblemas de familia y compositing digital limpio con grano mínimo.
+  aesthetic: Comedia de pertenencia juvenil en escalada shonen, con heráldica pop, rito de compromiso y energía de clan.
+  form_and_line: Línea digital expresiva, poses grupales asimétricas y transición visual de gag cotidiano a solemnidad heroica.
+  color_palette: Primarios intensos de acción 2000s, negros ceremoniales, blancos limpios y acentos fuego para activación emocional.
+  lighting_setup: Highlights pulidos de comedia, contraste medio de ceremonia y rim energético en símbolos de pertenencia.
+  material_texture: Tela formal, emblemas gráficos, metal pulido pequeño y compositing digital limpio con grano mínimo.
   render_quality: Acabado premium de shonen mafioso con lectura clara de jerarquía de clan y evolución de tono.
-  spatial_distortion: Escena híbrida escuela-submundo con encuadres de juramento, duelo y trabajo en equipo.
+  spatial_distortion: Encuadres de juramento grupal, diagonales de escalada y profundidad comprimida hacia símbolo central.
   atmosphere: Ruidosa, cómica, leal, incendiaria.
-  key_features: Motivos heráldicos de familia, mentor excéntrico central, efectos de anillo y contraste aula-mafia en escalada.
-  creative_brief: Define una gramática reusable de ascenso mafioso juvenil para cualquier sujeto, combinando sátira escolar, ritual de clan y acción de pertenencia.
+  key_features: Motivos heráldicos, mentoría excéntrica sugerida, activación circular y contraste gag-solemnidad en escalada.
+  creative_brief: >-
+    Define una gramática reusable de clan-comedy-escalation para cualquier
+    sujeto: pertenencia juvenil, rito pop, jerarquía afectiva y acción de
+    compromiso sin imponer escuela, mafia, trajes, anillos, mentores, clanes
+    literales ni duelos.
 avoidRules:
   - realistic
   - 3d render

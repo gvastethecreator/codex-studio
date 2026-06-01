@@ -12,24 +12,23 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Abandoned building interior
-  form_and_line: Decay, peeling paint
+  aesthetic: Urbex decay documentary
+  form_and_line: Decay, peeling layers
   color_palette: Desaturated, rust
   lighting_setup: Shafts of light
   material_texture: Dust, debris
   render_quality: Gritty, haunting
   spatial_distortion: None
   atmosphere: Lonely, post-apocalyptic
-  key_features: Ruins
-  creative_brief: Dust holds its vigil in abandoned rooms where plaster peels like pages turning backward through decades of silence. Decay becomes the last living tenant, rust the slow ink rewriting what was once inhabited into what is now remembered.
+  key_features: Ruin texture
+  creative_brief: 'Urbex style turns any subject into evidence of abandonment: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and haunting documentary grit. Keep ruin atmosphere without requiring buildings, rooms, plaster, or post-apocalyptic scene.'
 avoidRules:
   - clean
   - new
-  - people
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-075.webp
 attributes:
-  negativePrompt: clean, new, people
+  negativePrompt: clean, new
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

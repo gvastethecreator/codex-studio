@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-127
+packId: pack_02
+name: Interlaced Music Video Glow
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: 90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream
+  form_and_line: Rhythmic crop, layered silhouettes, diagonal stage-like composition, motion smear trails
+  color_palette: Magenta gel, cyan backlight, amber spotlight, black crush, violet bloom, video white
+  lighting_setup: Color-gel backlights, hazer bloom, hard spotlight flare, video-camera gain
+  material_texture: Interlaced scanlines, VHS chroma smear, tape dropout, soft diffusion, bloom halo
+  render_quality: Glossy, rhythmic, analog, glamorous but degraded
+  spatial_distortion: Interlaced motion combing, frame echo, dutch crop, soft zoom smear
+  atmosphere: Hypnotic, stylish, late-night, video-age cool
+  key_features: Interlace, chroma smear, gel lights, motion echo, soft-focus bloom
+  creative_brief: 'Apply interlaced music-video broadcast style to any prompt: gel-color lighting, soft-focus bloom, scanlines, chroma smear, motion echoes, and rhythmic crop. Avoid stages, performers, instruments, microphones, or music scenes as requirements. The input should feel glamorous through analog video degradation.'
+avoidRules:
+  - clean digital cinema
+  - natural light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-127.webp
+attributes:
+  negativePrompt: clean digital cinema, natural light
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

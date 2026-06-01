@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Dysfunctional adventuring party, ridiculous spells, bright town chaos, parody energy, aqua-goddess uselessness, explosion-obsession daily, steal-panties skill, succubus dreams
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Comedic, chaotic, irreverent, satirical
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: Divine power trips over its own feet while a wizard collapses from casting exactly one spell — the epic quest is a train wreck, and every car is beautiful. Bright colors mock the seriousness of fantasy convention; the guild hall is a comedy club where the punchlines have hit points. Let the chaos feel joyfully, relentlessly inept.
+  aesthetic: Party-quest comedy style, with bright parody fantasy, theatrical incompetence, overblown magic timing, and joyful failure.
+  form_and_line: Bouncy contours, exaggerated reaction shapes, clean fantasy trims, comedic pose beats, and elastic timing accents.
+  color_palette: Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm tavern-amber notes.
+  lighting_setup: Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast for punchline timing.
+  material_texture: Polished cel surfaces, fluffy effect puffs, glossy magical sparks, soft cloth color, and bright comedic overlays.
+  render_quality: Clean comedy-fantasy anime finish with expressive timing, readable silhouettes, and charming controlled chaos.
+  spatial_distortion: Small perspective exaggerations, reaction zooms, and anticlimax framing that undercuts epic scale.
+  atmosphere: Comedic, chaotic, irreverent, satirical.
+  key_features: Parody brightness, elastic failure, gag-timed magic, cheerful disorder, anticlimax composition.
+  creative_brief: >-
+    Apply fantasy parody as a visual treatment: make any prompt bright,
+    theatrical, and joyfully inept through gag timing, saturated clarity, and
+    anticlimax composition without requiring a fixed group, place, or gag scene.
 avoidRules:
   - realistic
   - 3d render

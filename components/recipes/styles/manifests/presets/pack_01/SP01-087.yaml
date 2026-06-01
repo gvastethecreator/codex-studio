@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-087
+packId: pack_01
+name: E-Commerce White Sweep
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Marketplace listing photo
+  form_and_line: Straight-on readable silhouette
+  color_palette: Pure white, neutral shadow grey
+  lighting_setup: Even high-key studio box
+  material_texture: Accurate material, no styling noise
+  render_quality: Clean online retail image
+  spatial_distortion: Orthographic-like clarity
+  atmosphere: Functional, trustworthy, searchable
+  key_features: White sweep with soft contact shadow
+  creative_brief: 'E-commerce white sweep makes any subject readable fast: pure white background, even high-key light, soft contact shadow, accurate material, and marketplace clarity. It prioritizes search-result legibility without forcing packaging, props, brand marks, or decorative staging.'
+avoidRules:
+  - lifestyle scene
+  - dramatic lighting
+  - colored backdrop
+  - clutter
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-087.webp
+attributes:
+  negativePrompt: lifestyle scene, dramatic lighting, colored backdrop, clutter, watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

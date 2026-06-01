@@ -5,170 +5,169 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-073',
-    name: "Howl's Moving Castle – Ghibli Wandering Clockwork Castle",
+    name: 'Wandering Clockwork Hearth Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Brass-meets-magic architecture, moving fortress silhouettes, romantic whimsy, skyborne scale, calcifer fire-demon, flying castle-blimp, meadow flower fields, turnip-head scarecrow',
+        'Fantasía steampunk romántica, ingeniería encantada y ternura doméstica itinerante.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea fluida de cuento adulto, gesto elegante y diseño mecánico-mágico de alta legibilidad.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Cobre envejecido, crema cálido, turquesa de cielo abierto y rojos de hogar encendido.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Contraste suave entre calor íntimo y exterior ventoso, con glow ígneo y sol pastoral.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Latón remachado, yeso vivido, textiles usados y fondos pintados con pátina artesanal.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado fílmico premium que combina grandiosidad móvil y proximidad emocional íntima.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Enchanted, wandering, romantic, whimsical',
+        'Macro-silueta móvil y micro-espacios habitados para dualidad épica-hogar.',
+      atmosphere: 'Encantada, nómada, romántica, caprichosa.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Mecánica poética visible, núcleo ígneo carismático y tensión entre amenaza exterior y refugio interior.',
       creative_brief:
-        'A castle walks on mechanical chicken legs through meadows where magic and brass have learned to coexist like old lovers. Calcifer burns at the heart of it all, a demon whose contract is not servitude but found family. Every gear and spell in this wandering fortress sings the same refrain: home is not a place but the people who stoke your fire.',
+        'Construye una gramática reusable de steampunk afectivo errante para cualquier sujeto, equilibrando escala fantástica, artesanía mecánica y calor de pertenencia sin imponer castillos, hogares, calderas ni praderas literales.',
     },
   },
   {
     id: 'SP05-074',
-    name: 'Your Name – Makoto Shinkai Skyglow Longing Drama',
+    name: 'Skyglow Longing Drama Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hyper-realistic backgrounds, lens flares, stunning skies, vibrant lighting, hyper-luminous skies, urban longing, reflective youth, emotionally charged sunsets, body-swap comedy, comet-fall tragedy, braided-cord ribbon, twilight magic hour',
+        'Melodrama celeste hiper-luminoso con anhelo íntimo, memoria fragmentada y monumentalidad atmosférica.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea pulida de feature moderno, acting íntimo y composición de horizonte como eje emocional.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Azules profundos de crepúsculo, magentas de cielo tardío, naranjas de atardecer y cian cristalino.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Flare óptico controlado, contraluz de hora mágica y gradientes de cielo de alta saturación sentimental.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies limpias, aire húmedo translúcido y microdetalle ambiental de realismo pictórico.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico brillante con foco en luz narrativa y emoción suspendida en paisaje.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Romantic, breathtaking, luminous, aching',
+        'Escala dual entre proximidad y lejanía, con cortes espaciales que refuerzan distancia afectiva.',
+      atmosphere: 'Romántica, luminosa, nostálgica, doliente.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Cielo protagonista, motivo de hilo/memoria y contraste entre cotidianidad íntima y evento cósmico.',
       creative_brief:
-        'Two souls trade bodies across time and space, connected by a braided cord that holds memory like water cupped in trembling hands. The sky remembers everything: comets that fall like tears, sunsets that ache with the color of a name you cannot quite recall. At twilight the veil thins, and longing becomes a mountain crater that even time cannot fill.',
+        'Define una gramática reusable de romance cósmico-lumínico para cualquier sujeto, priorizando cielo expresivo, anhelo temporal y delicadeza emocional sin imponer ciudad, pueblo, adolescentes ni cometas literales.',
     },
   },
   {
     id: 'SP05-075',
-    name: 'Weathering With You – Shinkai Rainlight City Romance',
+    name: 'Rainlight Threshold Romance Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rain-soaked city detail, shafts of sunlight, emotional weather, intimate urban scale, sunshine-girl power, perpetual Tokyo rain, rooftop shrines, flooded city finale',
+        'Romance meteorológico con lluvia persistente, espiritualidad íntima y decisión afectiva contra lo inevitable.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea elegante de drama contemporáneo, acting de vulnerabilidad activa y composición minimal de umbral vertical.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Grises azulados de tormenta, cian húmedo, ámbar de claro solar y blancos de nube rota.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Lluvia en contraluz con rayos selectivos, reflejo acuoso y halos de tregua lumínica.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Cristal mojado, superficie mineral húmeda, tela empapada y neblina fina de precipitación continua.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de clima narrativo con gran sensibilidad de luz cambiante y gesto íntimo.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Atmospheric, tender, stormy, hopeful',
+        'Espacio vertical inundable, con foco en puntos altos de refugio emocional.',
+      atmosphere: 'Húmeda, tierna, tormentosa, esperanzada.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Dinámica lluvia-sol, intimidad húmeda, símbolo de plegaria climática y tensión entre sacrificio y deseo.',
       creative_brief:
-        'Rain falls endlessly on Tokyo, each drop a small grief that pools into a city-wide melancholy. A girl who prays sunlight into existence carries the weight of every clear sky on shoulders too young for the burden. Water rises around them like a decision being made, and love answers: let the city drown if it means keeping her light alive.',
+        'Diseña una gramática reusable de melodrama pluvial para cualquier sujeto, equilibrando clima emocional, intimidad y destellos de redención luminosa sin imponer ciudad, azotea, asfalto ni plegarias literales.',
     },
   },
   {
     id: 'SP05-077',
-    name: 'Perfect Blue – Satoshi Kon Mirror Identity Thriller',
+    name: 'Mirror Identity Collapse Thriller Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Unsettling urban realism, fractured self-image, reflective surfaces, intimate paranoia, idol-to-actress descent, stalker voyeurism, internet-age identity, mirrored-doppelganger',
+        'Thriller identitario de paranoia íntima, performance pública y disociación reflejada.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
-      color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Línea sobria y tensa, acting microexpresivo y composición de encierro psicológico.',
+      color_palette: 'Neón frío, piel desaturada, rojos de alarma y grises de vigilancia íntima.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación clínica nocturna, reflejos espejados agresivos y zonas de sombra de amenaza latente.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Cristal, pantalla CRT, maquillaje escénico y superficies cotidianas de realismo inquietante.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado fílmico de precisión psicológica con montaje de ambigüedad controlada.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tense, disorienting, paranoid, chilling',
+        'Interiores comprimidos y capas de reflejo para sensación de yo fragmentado y mirada externa invasiva.',
+      atmosphere: 'Tensa, desorientadora, paranoica, gélida.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Motivo de espejo duplicado, vigilancia implícita y tensión entre persona pública y privada.',
       creative_brief:
-        'Reflections lie — mirrors show strangers wearing familiar faces, and the self fractures into a thousand shards of performance. Urban neon casts accusation instead of light, turning apartment rooms into psychological interrogation chambers. The camera is watching, and the camera might be you.',
+        'Define una gramática reusable de thriller de identidad fracturada para cualquier sujeto, combinando intimidad hostil, vigilancia perceptiva y colapso del autorretrato sin imponer apartamentos, idols, escenarios ni cámaras literales.',
     },
   },
   {
     id: 'SP05-078',
-    name: 'Akira – Katsuhiro Otomo Light-Trail Mega-City',
+    name: 'Otomo Light-Trail Collapse Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Incredible mechanical detail, fluid animation, neo-Tokyo, iconic light trails, monumental city design, kinetic vehicles, precision detail, civic unrest at scale, psychic-awakening horror, capsule-gang bikes, military-coup chaos, stadium-conclusion',
+        'Cyber-apocalipsis de precisión mecánica, violencia juvenil abstracta y catástrofe psíquica en escalada.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea ultra-densa de ingeniería, movimiento cinético feroz y anatomía al borde de mutación.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Rojos de alarma, violetas nocturnos, cian eléctrico y negros profundos de infraestructura colapsada.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Neón agresivo, luces de emergencia intermitentes y contraste duro de distopía industrial.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Metal remachado, superficie caliente, concreto fracturado y grano de cel hiperdetallado.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado de largometraje técnico de altísima energía con legibilidad de caos sistémico.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Monumental, electric, apocalyptic, kinetic',
+        'Escala macro con capas infraestructurales y vacío institucional para sensación de implosión.',
+      atmosphere: 'Monumental, eléctrica, apocalíptica, cinética.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Estela lumínica icónica, ingeniería obsesiva y tensión entre tecnología cívica y ruptura biológica.',
       creative_brief:
-        'A city of impossible scale breathes neon and exhales revolution, its skyline carved by light-trail scars and crumbling civic monuments. Mechanical flesh and biological steel merge in the screaming vacuum of psychic awakening. Every frame should vibrate with the tension of a world one heartbeat from implosion.',
+        'Diseña una gramática reusable de colapso cyber-mecánico extremo para cualquier sujeto, priorizando densidad, aceleración social y horror de transformación sin imponer megaciudad, vehículos, autopistas ni estadios.',
     },
   },
   {
     id: 'SP05-079',
-    name: 'Redline – Hyperkinetic Cosmic Racing',
+    name: 'Hyperkinetic Cosmic Velocity Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hand-drawn hyper-detailed, extreme speed lines, heavy black shadows, vibrant colors, impossible race tracks, razor speed lines, thick shadow contrast, hand-drawn velocity, alien-racer roster, seven-year-hand-drawn, nitro-boost frames, Yellow Line planet',
+        'Velocidad cósmica hipercinética dibujada a pulso, con exceso cromático y culto absoluto al impulso.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Trazo brutal de inercia extrema, líneas de fuga violentas y siluetas aerodinámicas de alto contraste.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Primarios incendiarios, magentas eléctricos, negros densos y acentos neón de nitro en combustión.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Flashes de propulsión, contraluces duros y estallidos lumínicos que enfatizan aceleración sin reposo.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficie vibrante, fricción abrasada, humo dibujado y grano entintado de energía analógica.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado de espectáculo maximalista con claridad de velocidad y sobrecarga sensorial.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Adrenaline, ecstatic, breakneck, explosive',
+        'Perspectiva túnel y curvatura extrema del espacio para sensación de riesgo constante.',
+      atmosphere: 'Adrenalínica, eufórica, vertiginosa, explosiva.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.',
       creative_brief:
-        'Velocity becomes visible — speed is not movement but a material substance rendered in thick ink and explosive chroma. Hand-drawn frames scream past at escape velocity while shadows carve depth into pure kinetic poetry. Surrender to the ecstasy of the finish line, where God himself might be drag-racing.',
+        'Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible sin imponer carreras, vehículos, pilotos ni pistas.',
     },
   },
   {
@@ -179,668 +178,667 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Studio 4°C style, incredibly fluid water animation, cosmic ocean imagery, highly detailed eyes, flowing water motion, spiritual scale, delicate faces, aquarium-mystery, meteor-fall origin, whale-song communion, oceanic-cosmos merge',
+        'Lirismo oceánico-cósmico de contemplación mística, con biología marina y trascendencia sensorial.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea delicada y fluida, formas etéreas y movimiento acuático continuo de baja fricción.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Turquesas abisales, azules ultraprofundos, plateados lunares y destellos bioluminiscentes.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz submarina difusa, caústicas suaves y halos celestes que funden agua y firmamento.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Película de agua translúcida, superficies húmedas luminosas, partículas suspendidas y fondos de profundidad orgánica.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico de alta pureza visual con foco en fluidez y silencio emocional.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Mystical, aquatic, ethereal, cosmic',
+        'Escalas líquidas entre macrocosmos marino y proximidad íntima para experiencia de inmersión total.',
+      atmosphere: 'Mística, acuática, etérea, cósmica.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Movimiento de marea coreográfico, foco contemplativo y fusión iconográfica de océano-universo.',
       creative_brief:
-        'Water remembers everything — the ocean is a memory palace where whale songs echo ancient truths and human eyes hold the depth of cosmos. Fluid animation dissolves the boundary between girl and sea, between body and universe. Let each frame float untethered, suspended in the amniotic glow of creation itself.',
+        'Define una gramática reusable de espiritualidad oceánica cósmica para cualquier sujeto, equilibrando fluidez material, asombro contemplativo y resonancia trascendente.',
     },
   },
   {
     id: 'SP05-281',
-    name: 'Millennium Actress - Cinema-Memory Snowfall',
+    name: 'Temporal Memory Cinema Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Life story retold through film fragments, period costumes flowing into each other, snow and studio lights, longing carried across eras with luminous cinematic tenderness',
+        'Cine-memoria romántico de alto prestigio, construido con capas temporales, anhelo visual y montaje emocional.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Contorno elegante con variación fina de grosor, siluetas actorales limpias y raccord gestual entre estados del mismo sujeto.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Neutros de película envejecida, blancos de nieve luminosa, carmín de vestuario clásico y azules nocturnos de recuerdo persistente.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz de estudio suavizada con rebote frío exterior, halos leves sobre partículas de nieve y separación delicada de primer plano y fondo.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Tejidos de época con caída densa, celuloide sugerido por grano fino, superficies de set pintado y humedad invernal atmosférica.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado fílmico premium con énfasis en continuidad de montaje, foco emocional estable y lectura inmediata de silueta protagonista.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Nostalgic, romantic, layered, wistful',
+        'Espacio semi-naturalista con disolvencias visuales entre planos temporales para producir sensación de recuerdo en movimiento.',
+      atmosphere: 'Nostálgica, luminosa, melancólica, devota del recuerdo.',
       key_features:
-        'Era-shifting costumes, snow and light interplay, memory-cinema transitions, poised heroine silhouettes, temporal montage feeling',
+        'Montaje temporal, capas de recuerdo, cambios sutiles de textura visual, anhelo sostenido y composición de memoria superpuesta.',
       creative_brief:
-        'A lifetime dissolves into film stock where snow falling on a studio lot is indistinguishable from memory falling through time. Period costumes bleed into one another like watercolor, erasing the boundary between roles played and lives lived. The camera chases not a woman but the particular ache of longing that no era can contain.',
+        'Aplica una gramática reusable de cine-memoria a cualquier prompt o imagen de entrada: múltiples tiempos emocionales en una sola imagen, transiciones suaves y nostalgia activa sin imponer épocas, nieve ni vestuario narrativo.',
     },
   },
   {
     id: 'SP05-282',
-    name: 'Tokyo Godfathers - Christmas Alley Grace',
+    name: 'Social Humanist Warmth Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic:
-        'Homeless trio comedy-drama, winter city alleys, neon nativity warmth, imperfect kindness in cramped urban spaces, humane chaos under holiday lights',
+      aesthetic: 'Humanismo cálido con comedia amarga, textura social y ternura resistente.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea expresiva de ensemble, gestualidad corporal imperfecta pero cálida y staging coral adaptable a cualquier motivo.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Neones festivos, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficie mojada, cartón gastado, telas superpuestas de invierno y señalética con desgaste cotidiano.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental vivido.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Messy, humane, festive, redemptive',
+        'Perspectiva comprimida con capas de objetos y presencias que envuelven el foco relacional.',
+      atmosphere: 'Caótica, compasiva, festiva, redentora.',
       key_features:
-        'Christmas neon, alleyway city depth, trio ensemble staging, urban clutter tenderness, improvised family body language',
+        'Composición coral, microgestos de cuidado, humor corporal, textura social sugerida y contraste entre dureza visual y compasión.',
       creative_brief:
-        'Neon halos crown the uncrowned, replacing gold and frankincense with convenience-store warmth and shared cardboard shelter. The alley does not judge, only holds whatever grace three broken souls can offer each other. Humor and heartbreak share a cigarette on a frozen street corner, arguing about what counts as a miracle.',
+        'Define un estilo reusable de gracia humanista para cualquier prompt o imagen de entrada: calor emocional, imperfección expresiva y vínculo social sin imponer callejones, navidad, refugios ni grupos protagonistas.',
     },
   },
   {
     id: 'SP05-284',
-    name: 'Castle in the Sky - Floating Island Brass Adventure',
+    name: 'Airborne Wonder Adventure Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Brass robots, cloud-sea wonder, floating island myth, children against militarized greed, steampunk adventure carried by open skies and hand-painted warmth',
+        'Aventura celeste clásica, con maravilla retro-mecánica, optimismo de descubrimiento y escala vertical abierta.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Contornos claros, ingeniería retro sugerida, curvas orgánicas y diagonales de elevación que vuelven expansivo cualquier sujeto.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Cielos cerúleos amplios, dorados envejecidos de metal, verdes de ruina suspendida y blancos de nube brillante.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación de gran altitud con contraluces solares, volumen de nubes y destellos selectivos sobre superficies metálicas.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Latón pulido y oxidado, piedra aérea erosionada, vegetación colgante y telas de aventura con desgaste funcional.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de aventura cinematográfica, lectura limpia de escala aérea y claridad de acción en planos abiertos.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Adventurous, skybound, wondrous, brave',
+        'Perspectiva vertical expansiva con sensación de caída y ascenso continuo entre estratos de nubes.',
+      atmosphere: 'Maravillosa, valiente, libre, expedicionaria.',
       key_features:
-        'Floating-island vistas, brass robot motifs, cloud-sea backdrops, child-duo silhouettes, sky-adventure motion',
+        'Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.',
       creative_brief:
-        'Brass limbs reaching through clouds toward a home that floats above all the world greed, a testament to civilizations that chose the sky over conquest. Cloud-sea currents carry a girl and boy through ruins that hum with ancient memory, their adventure a rebuttal to every general who mistakes power for purpose. The floating island is not a destination but a promise written in laputa stone and held aloft by belief.',
+        'Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada: asombro, escala aérea y diseño retro-mecánico sin imponer islas flotantes, robots, ruinas ni personajes exploradores.',
     },
   },
   {
     id: 'SP05-285',
-    name: 'Nausicaa - Toxic Jungle Wind Prophecy',
+    name: 'Eco-Prophetic Wind Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Post-apocalyptic ecology myth, glider silhouette over toxic forests, giant insects, compassion amid planetary ruin, wind and pollen carrying epic spiritual urgency',
+        'Epopeya eco-profética donde lo contaminado se vuelve sagrado, vivo y capaz de reconciliación.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Siluetas aerodinámicas, curvas orgánicas, trazo firme y capas de viento que envuelven el motivo sin cambiar su identidad.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Ocres contaminados, turquesas velados, dorados de polvo esporal y azules de cielo quebrado por neblina tóxica.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz ventosa de alto contraste con rayos filtrados por esporas, generando profundidad y pulso espiritual ambiental.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies bio-minerales, membranas orgánicas iridiscentes, telas de vuelo erosionadas y terreno sedimentado.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Calidad fílmica premium con prioridad en escala ecológica, legibilidad aérea y dramatismo ambiental sostenido.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Prophetic, ecological, windswept, compassionate',
+        'Horizonte amplio con compresión atmosférica y flujos diagonales que guían la mirada como corrientes de viento.',
+      atmosphere: 'Profética, compasiva, eólica, reverente.',
       key_features:
-        'Glider profile, toxic-jungle color, giant-insect scale, wind-swept cloak movement, ecological epic framing',
+        'Viento visible, esporas luminosas, biología abstracta, escala ecológica y empatía visual frente a materia amenazante.',
       creative_brief:
-        'Spores do not kill but purify, and only one who flies into the toxic wind with open arms can read the planet silent prophecy. Giant insects are not monsters but custodians of a deeper ecology that human fear cannot parse. Compassion becomes the only technology that survives the apocalypse intact.',
+        'Define un estilo reusable de mito ecológico para cualquier prompt o imagen de entrada: viento, partículas vivas y reconciliación planetaria sin imponer junglas tóxicas, planeadores, insectos gigantes ni profecías narrativas.',
     },
   },
   {
     id: 'SP05-286',
-    name: 'Wolf Children - Rainy Countryside Motherhood',
+    name: 'Seasonal Intimacy Realism Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Single-parent devotion across changing seasons, wolf-child wildness, mountain houses, weather-rich realism and fairy-tale softness in one maternal frame',
+        'Realismo afectivo estacional, con intimidad cotidiana, cuidado persistente y transformación suave.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea suave, anatomía naturalista cálida y gestualidad de cuidado aplicada al sujeto original sin forzar parentescos.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Verdes de montaña húmeda, marrones de madera habitada, grises lluviosos y dorados suaves de hogar encendido.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz meteorológica cambiante por estación, interiores cálidos de refugio y exteriores nublados con contraste bajo.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Tierra labrada, madera reparada, ropa cotidiana mojada por lluvia y vegetación de ciclo anual visible.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de drama humano, con foco en microemociones, ritmo doméstico y continuidad temporal de crecimiento.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tender, rural, weathered, loving',
+        'Espacialidad naturalista con composición de proximidad familiar y apertura de paisaje para respiración emocional.',
+      atmosphere: 'Tierna, laboriosa, nostálgica, protectora.',
       key_features:
-        'Seasonal countryside, parent-child motion, rain-swept fields, mountain-house intimacy, transformation softness',
+        'Luz climática, textura doméstica abstracta, transformación no espectacular, calma estacional y lenguaje corporal protector.',
       creative_brief:
-        'Rain washes the mountain house clean of everything but the fierce tenderness of a mother raising children who belong to two worlds and fully to neither. Seasons paint the countryside while she plants, repairs, and holds on with hands that have learned to let go. The wolf and the child are one creature in the soft light of morning, and she is the bridge between what they are and what they choose to become.',
+        'Crea una gramática reusable de intimidad estacional para cualquier prompt o imagen de entrada: cuidado, clima y transformación silenciosa sin imponer maternidad, casas rurales, familias ni escenas domésticas.',
     },
   },
   {
     id: 'SP05-288',
-    name: 'The Girl Who Leapt Through Time - Summer Rooftop Rewind',
+    name: 'Elastic Summer Time Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Blue-sky school summer, leaping motion through ordinary neighborhoods, young regret and comedic consequence, warm clouds and temporal tenderness',
+        'Juventud luminosa con elasticidad temporal ligera, energía de error cotidiano y melancolía de decisión irreversible.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Trazos ágiles, expresividad espontánea, diagonales de impulso y siluetas limpias de alta legibilidad.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Azules brillantes, blancos cálidos, verdes suaves de cotidianidad abierta y acentos rosados de impulso emocional.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Sol de tarde alto con rebotes claros, sombras suaves y brillo atmosférico de verano en expansión.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies cálidas al sol, metal liviano, telas ligeras y aire húmedo estival sin anclar locación.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico fresco con prioridad en ritmo corporal, timing visual y lectura clara de loop temporal.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Youthful, breezy, wistful, playful',
+        'Perspectiva naturalista con elongación dinámica en saltos y microdeformación de trayectoria para sugerir rewind temporal.',
+      atmosphere: 'Lúdica, nostálgica, aérea, impulsiva.',
       key_features:
-        'Rooftop and cloud framing, leaping-body motion, suburban summer light, time-jump iconography, youthful ensemble warmth',
+        'Luz de tarde, impulso corporal, repetición temporal sutil, aire de verano abstracto y tensión entre juego y arrepentimiento.',
       creative_brief:
-        'A leap rewinds the afternoon but every reversed moment tightens the knot between what could be and what was meant to happen. Rooftops become launch pads for second chances that teach the harshest lesson youth can learn: time is not a currency but a gift. Summer clouds bear witness to a girl who races against herself, losing and winning in the same breath.',
+        'Crea una gramática reusable de tiempo elástico veraniego para cualquier prompt o imagen de entrada: ligereza, impulso y arrepentimiento suave sin imponer azoteas, escuelas, saltos literales ni grupos juveniles.',
     },
   },
   {
     id: 'SP05-290',
-    name: 'Jin-Roh - Riot Smoke Tragedy Frame',
+    name: 'Paramilitary Melancholy Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heavy riot armor, political sorrow, urban smoke and red optics, impossible tenderness trapped inside oppressive security structures and alternate-history unrest',
+        'Tragedia político-militar abstracta, con peso doctrinal, humanidad reprimida y amenaza institucional.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Siluetas macizas, contornos rígidos, encuadres cerrados y geometría opresiva que puede aplicarse a cualquier sujeto.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Grises carbón industriales, rojos ópticos de amenaza, marrones de humo y desaturados fríos de crisis prolongada.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Contraluces de incendio, haces tácticos, neblina densa de crisis y highlights selectivos en visores y metal.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Blindaje mate con abrasión, concreto ennegrecido, humo particulado y telas técnicas de uso operativo.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico severo con lectura táctica impecable, detalle industrial y dramatismo psicológico contenido.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Oppressive, tragic, political, smoky',
+        'Perspectiva comprimida por masas opresivas y humo, con profundidad fragmentada que sugiere cerco institucional.',
+      atmosphere: 'Opresiva, trágica, disciplinaria, crepuscular.',
       key_features:
-        'Riot-armor silhouettes, red optics, smoke-loaded streets, political unrest framing, tragic close-up tension',
+        'Ópticas rojas abstractas, humo denso, masa visual pesada, cercanía emocional y conflicto entre deber y conciencia.',
       creative_brief:
-        'Red optics cut through smoke like a question no one inside the armor is allowed to ask. The streets burn not with revolution but with the slow erosion of a soul forced to choose between duty and the person it was supposed to protect. Behind every visor a fairy tale rots, its moral inverted into the machinery of state violence.',
+        'Construye una gramática reusable de melancolía paramilitar para cualquier prompt o imagen de entrada: control, humo y peso moral sin imponer blindajes, calles de disturbio, armas ni fuerzas específicas.',
     },
   },
   {
     id: 'SP05-291',
-    name: 'A Silent Voice - Riverside Apology Light',
+    name: 'Delicate Reconciliation Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Modern-school emotional realism, bridges and rivers, apology and disability awareness, soft city sunlight, longing and accountability rendered with humane patience',
+        'Drama íntimo de reparación emocional, centrado en vulnerabilidad, escucha y dignidad relacional.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea delicada de microgesto, énfasis en manos, hombros y mirada baja, con contornos limpios que priorizan lectura afectiva sobre acción.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Azules calmados, beiges suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz natural de tarde nublada con difusión amable, contraste bajo y brillos discretos que favorecen intimidad conversacional.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Hormigón húmedo, telas cotidianas, metal gastado y reflejos acuosos serenos.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de realismo sensible con foco en expresión corporal mínima y continuidad emocional entre planos.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tender, remorseful, airy, human',
+        'Espacialidad naturalista abierta con distancia interpersonal modulada como métrica visual de confianza y perdón.',
+      atmosphere: 'Tierno, arrepentido, respirable, humano.',
       key_features:
-        'Riverside paths, modern school detail, hand-focused emotional framing, apology body language, soft city light',
+        'Microgesto, manos como énfasis opcional, luz suave, distancia afectiva y silencio visual elocuente.',
       creative_brief:
-        'An apology crosses a bridge in soft city light, each step weighted with years spent learning that cruelty is not erased but accounted for. Hands speak a language the voice abandoned, forming words that reach toward the person once pushed away. The river does not forget but flows forward, teaching that forgiveness is not a gift to the forgiven but a release for the forgiver.',
+        'Construye una gramática reusable de reconciliación humana para cualquier prompt o imagen de entrada: microgesto, escucha y fragilidad sin imponer escuelas, riberas, parejas de personajes ni escenas de disculpa.',
     },
   },
   {
     id: 'SP05-292',
-    name: 'Inu-Oh - Heike Punk Stage Vision',
+    name: 'Historical Glam Punk Performance Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Historical biwa performance exploding into glam-rock spectacle, distorted limbs turned into stage identity, medieval Japan colliding with ecstatic music-theater motion',
+        'Teatro musical histórico-punk, con tradición remezclada, glam radical y energía de resurrección escénica.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Trazos elásticos y angulares, corporalidad performativa, siluetas exageradas y pose dramática de alta visibilidad.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Rojos ceremoniales, púrpuras eléctricos, negros performativos y dorados antiguos reactivados como acentos de linaje.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Contraluces performativos, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Tejidos históricos reinterpretados con brillo de show, madera pulida, tensión lineal y humo de performance.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de ópera-rock animada con foco en impacto gestual, lectura coral y ritmo visual musical.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Ecstatic, theatrical, historical, rebellious',
+        'Espacio performativo expansivo con perspectiva coral y compresión frontal en momentos de explosión rítmica.',
+      atmosphere: 'Extático, rebelde, ceremonial, liberador.',
       key_features:
-        'Stage-performance poses, historical costume-glam fusion, biwa instrumentation, audience-energy framing, body-transformation iconography',
+        'Ornamento histórico remezclado, luz performativa, manifiesto corporal, ritmo musical visual y exceso teatral controlado.',
       creative_brief:
-        'A biwa string snaps and the Heike dead rise not in vengeance but in glam rock glory, distorted bodies becoming the instruments of their own reclamation. Medieval Japan ghosts discover electricity, their grief transformed into a stage spectacle that history cannot silence. The performance is not rebellion but resurrection, every chord a name spoken aloud for the first time in centuries.',
+        'Diseña una gramática reusable de teatro punk histórico para cualquier prompt o imagen de entrada: performance, ornamento y energía glam sin imponer escenarios, instrumentos, audiencias ni vestuario literal.',
     },
   },
   {
     id: 'SP05-293',
-    name: 'Tekkonkinkreet - Alleyway Child Myth',
+    name: 'Rough Mythic Density Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban kid mythology, crowded roofs and alleys, rough sacred city energy, innocence and violence stacked vertically in a dense modern labyrinth',
+        'Mitología rugosa de supervivencia compartida, con pulso feroz, espiritualidad gráfica y ternura bajo presión.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea nerviosa, contornos irregulares, verticalidad agresiva y siluetas compactas en tensión.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Amarillos sucios de sodio, cianes de señal, rojos gastados de pigmento erosionado y sombras petroladas profundas.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación mixta contaminada, focos duros, brillos sucios y contraluces altos.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Chapa rugosa, piel pictórica descascarada, filamentos expuestos, superficie caliente y desgaste cotidiano.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Terminación premium de crudeza controlada con alta legibilidad espacial en caos multicapa.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Rough, spiritual, crowded, feral',
+        'Perspectiva vertical laberíntica con compresión estrecha y saltos de altura que refuerzan dominio emocional.',
+      atmosphere: 'Áspera, sagrada, abarrotada, feral.',
       key_features:
-        'Dense city alleys, child silhouette contrast, rooftop motion, rough sacred iconography, urban myth staging',
+        'Textura densa, tótems gráficos, verticalidad agresiva, energía instintiva y mezcla de ternura con amenaza.',
       creative_brief:
-        'Two boys own the city vertical chaos like stray gods born from concrete and corrugated tin, their rooftop kingdom held together by nothing but shared survival. Every alley is a myth waiting to happen, every shadow a lesson in the animal logic of streets that raise their own. The city breathes through them, sacred and feral in equal measure.',
+        'Crea una gramática reusable de mito rugoso para cualquier prompt o imagen de entrada: densidad, irregularidad y supervivencia compartida sin imponer callejones, azoteas, infancia ni ciudad literal.',
     },
   },
   {
     id: 'SP05-295',
-    name: 'Liz and the Blue Bird - Oboe Hallway Distance',
+    name: 'Quiet Musical Distance Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Delicate school music drama, pale interior light, oboe and flute emotional spacing, friendship rendered through tiny movements and corridor air',
+        'Cámara musical intimista de precisión emocional, enfocada en distancia afectiva, pausa y resonancia silenciosa.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Trazo fino y reservado, microgestos delicados, respiración visual y timing compositivo entre presencia y ausencia.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Marfiles pálidos, azules deslavados, grises silenciosos y dorados suaves de resonancia acústica.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz interior filtrada de baja intensidad con sombras blandas que sostienen vulnerabilidad sin dramatismo excesivo.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Barniz cálido, superficies enceradas, telas ligeras y aire suspendido con sensación acústica contenida.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de alta sutileza, lectura de proximidad emocional y refinamiento acústico traducido a imagen.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Fragile, musical, restrained, aching',
+        'Profundidad longitudinal usada como métrica de distancia vincular, con limpieza compositiva y mínima distorsión.',
+      atmosphere: 'Frágil, musical, contenida, punzante.',
       key_features:
-        'Instrument detail, hallway spacing, delicate body language, pale interior lighting, sound-as-distance imagery',
+        'Distancia espacial, gestualidad mínima, luz pálida, ritmo de cámara y composición de silencio compartido.',
       creative_brief:
-        'An oboe line stretches across a hallway, the space between notes measuring the precise distance of a friendship too delicate to name. Pale light falls on the gap between two girls who communicate in the tiny movements of feet and eyelashes and the angle of a held breath. The blue bird is not one of them but the space they will soon learn to fill with music rather than silence.',
+        'Define una gramática reusable de intimidad musical para cualquier prompt o imagen de entrada: pausa, aire y distancia emocional sin imponer instrumentos, pasillos, escuelas ni dúos de personajes.',
     },
   },
   {
     id: 'SP05-296',
-    name: 'Metropolis - Deco Skyline Android Wonder',
+    name: 'Humanist Art Deco Retrofuture Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Retro-futurist city towers, art-deco industrial grandeur, boy-and-android innocence, class conflict and monumental machinery in warm old-cinema wonder',
+        'Retrofuturismo art deco monumental con tensión social, asombro tecnológico clásico y melancolía industrial humanista.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Contorno robusto, geometría decó escalonada, curvas humanoides suaves y masa mecánica abstracta.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería monumental.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación vertical con bruma cálida, contraluces monumentales y brillos controlados sobre metal.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Acero remachado, mármol art-decó, cristal antiguo y superficies mecánicas con pátina de uso civil.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de gran espectáculo retrofuturo con lectura jerárquica impecable entre escala humana y escala sistémica.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Grand, nostalgic, metallic, human',
+        'Perspectiva ascendente con profundidad estratificada por capas sociales y flujos verticales.',
+      atmosphere: 'Grandiosa, nostálgica, metálica, empática.',
       key_features:
-        'Deco skyline forms, android character contrast, monumental machinery, crowd-class scale, retro-future city framing',
+        'Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.',
       creative_brief:
-        'Art deco towers scrape a sky that looks backward and forward simultaneously, holding a boy and an android in the warm amber of old cinema wonder. Monuments to industry dominate class divisions that machinery was meant to erase but only deepened. Innocence becomes the most radical technology when it refuses to distinguish between the human heart and the mechanical one.',
+        'Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada: geometría decó, escala y sensibilidad tecnológica sin imponer skylines, androides, maquinaria literal ni jerarquías narrativas.',
     },
   },
   {
     id: 'SP05-297',
-    name: 'The Garden of Words - Rain Pavilion Solitude',
+    name: 'Hyperobserved Rain Intimacy Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hyper-detailed rain, shoes and leaves, quiet age-gap longing, garden pavilion intimacy, wet surfaces carrying impossible emotional precision',
+        'Lirismo pluvial hiperobservacional, donde intimidad contenida se expresa mediante materia húmeda y pausa contemplativa.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea pulcra y elegante, anatomía naturalista serena y encuadres de detalle que priorizan objetos-cuerpo como signos emocionales.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Verdes saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de refugio cubierto.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Gotas sobre materia orgánica, madera barnizada húmeda, concreto encharcado y cuero con brillo de lluvia.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de refinamiento atmosférico extremo, con foco en microdetalle material y silencio expresivo.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Rainy, intimate, lonely, exquisite',
+        'Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas reflectantes.',
+      atmosphere: 'Lluviosa, íntima, solitaria, exquisita.',
       key_features:
-        'Rain-surface detail, pavilion framing, shoe-and-step motifs, wet foliage reflections, emotionally charged stillness',
+        'Textura acuosa, detalle milimétrico, objetos cotidianos tratados como emoción y quietud de alta carga afectiva.',
       creative_brief:
-        'Every raindrop becomes a lens, magnifying the unspoken between two people who meet in a garden pavilion as if by accident but stay by design. Shoes left beside a wet bench hold more biography than any dialogue could bear. The garden is not a setting but a confidant, holding their silence with the patience of moss and the precision of falling water.',
+        'Diseña una gramática reusable de intimidad bajo lluvia para cualquier prompt o imagen de entrada: humedad, pausa y observación microscópica sin imponer jardines, pabellones, zapatos ni encuentros románticos.',
     },
   },
   {
     id: 'SP05-071',
-    name: 'Spirited Away – Ghibli Bathhouse Reverie Fantasy',
+    name: 'Warm Liminal Reverie Fantasy Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hayao Miyazaki style, lush hand-painted backgrounds, expressive animation, magical realism, lively spirit bathhouse, hand-painted wonder, expressive mystery, warm eccentric detail, soot-sprites, bath tokens, no-face spirit, radish spirit',
+        'Fantasía liminal cálida con artesanía viva, humor espiritual y extrañeza amable de cuento iniciático.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea de largometraje orgánica, acting expresivo de curiosidad valiente y siluetas de criatura no amenazante.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Ocres cálidos de interior, rojos lacados, verdes musgo suaves y dorados de luz húmeda.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Vapor volumétrico con glow ámbar, puntos de luz difusos y contraste blando de umbral encantado.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Madera barnizada, cerámica húmeda, papel tradicional y fondos pintados con densidad artesanal.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado cinematográfico premium con microgesto emocional y atmósfera envolvente continua.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Wonderstruck, magical, enchanting, dreamy',
+        'Estructura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.',
+      atmosphere: 'Asombrada, mágica, íntima, onírica.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Rituales cotidianos vivos, formas entrañables y narrativa visual de descubrimiento ético.',
       creative_brief:
-        'A bathhouse floats between worlds, its corridors crowded with gods who come to wash away the dust of the divine. No-Face drifts through the steam like loneliness given form, hungry for connection but speaking only in gold. Childhood discovers that courage is not the absence of fear but the decision to keep walking through a world that defies understanding.',
+        'Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional sin imponer bathhouses, criaturas, pasillos ni arquitectura concreta.',
     },
   },
   {
     id: 'SP05-287',
-    name: 'Belle - Virtual Cathedral Pop Opera',
+    name: 'Digital Pop Opera Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Digital fantasy stagecraft, whale-shaped servers, pop-idol catharsis, online identity and emotional spectacle rendered with ornate luminous scale',
+        'Fantasía digital operática de gran escala, con identidad luminosa, ornamento de datos y emoción pop monumental.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Siluetas elegantes, curvas ornamentales, linework limpio y coreografía visual de luz aplicada a cualquier motivo.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Magentas y cianes luminosos, blancos perla, violetas profundos y gradientes iridiscentes de entorno virtual.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación sinfónica con haces volumétricos, contraluces monumentales y acentos pulsantes sincronizados al clímax vocal.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies translúcidas tipo interfaz, metal pulido digital y partículas de luz como materia performativa.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de pop-opera virtual con nitidez de ícono, profundidad de espectáculo y jerarquía emocional contundente.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Grand, digital, heartfelt, operatic',
+        'Espacialidad expansiva no literal con escala reverencial y perspectiva ascendente que enfatiza trascendencia performativa.',
+      atmosphere: 'Grandiosa, catártica, conectiva, esperanzadora.',
       key_features:
-        'Virtual-cathedral geometry, pop-performance lighting, avatar elegance, online interface motifs, song-climax framing',
+        'Escala digital monumental, pulsos de luz, ornamento virtual, identidad radiante y teatralidad pop sin espacio fijo.',
       creative_brief:
-        'A cathedral rises from server racks where a girl voice becomes architecture, her song rebuilding the digital world one note at a time. Within the whale-shaped lattice of data, identity is both armor and anthem, a performance so luminous it becomes indistinguishable from truth. The avatar is not a mask but the soul projected at the scale it always deserved.',
+        'Define un estilo reusable de ópera digital para cualquier prompt o imagen de entrada: luz escénica, identidad luminosa y grandeza emocional sin imponer catedrales virtuales, avatares, conciertos ni multitudes.',
     },
   },
   {
     id: 'SP05-300',
-    name: 'Promare - Chromatic Firestorm Hero Theater',
+    name: 'Hypergraphic Chromatic Action Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Poster-bright rescue spectacle, triangular flames, anti-naturalistic mecha firefighting, operatic rivals, maximal color-block motion and modern theatrical bravado',
+        'Espectáculo heroico hipergráfico, con anti-naturalismo cromático, energía geométrica y teatralidad de póster vivo.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Contorno duro y dinámico, geometría angular dominante y siluetas de acción que privilegian impacto inmediato sobre detalle realista.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Bloques intensos en cian, magenta, naranja fuego y amarillos eléctricos con negros limpios de separación gráfica.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación extrema de incendio estilizado, contraluces violentos y flashes de alto contraste para clímax continuo.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies mecha lisas de acabado sintético, humo estilizado y fuego triangular tratado como forma gráfica.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de acción maximalista con legibilidad de coreografía de rescate y jerarquía clara de héroe-antihéroe.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Blazing, theatrical, graphic, triumphant',
+        'Perspectiva de gran angular heroica con deformación cinética orientada a velocidad, choque y espectáculo.',
+      atmosphere: 'Incandescente, teatral, gráfica, triunfal.',
       key_features:
-        'Triangular fire shapes, rescue-mecha silhouettes, poster-color blocking, rival hero staging, maximal graphic motion',
+        'Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.',
       creative_brief:
-        'Fire does not consume but announces, triangular flames reshaping the world into poster-sized declarations of impossible will. Mecha firefighters move through the inferno like brushstrokes on a canvas that refuses naturalism, every rescue a graphic choice. Rivalry ignites into opera, and the stage is a burning city that asks not to be saved but to be spectacular.',
+        'Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada: geometría, saturación y heroísmo abstracto sin imponer fuego, rescate, mechas ni rivalidades narrativas.',
     },
   },
   {
     id: 'SP05-072',
-    name: 'Princess Mononoke – Ghibli Forest Spirits Epic',
+    name: 'Eco-Mythic Conflict Epic Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ancient forests, sacred beasts, weathered warriors, ecological awe, mythic sorrow, deer-god forest spirit, kodama tree spirits, iron-town conflict, wolf-goddess Moro',
+        'Epopeya eco-mítica ancestral, conflicto civilizatorio y espiritualidad feroz de materia viva.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea robusta y noble, anatomía heroica contenida y composición de choque entre organicidad y hierro.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Verdes profundos, tierra húmeda, negros de hierro y blancos fantasmales de espíritu natural.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz filtrada con rayos dramáticos, niebla profunda y contrastes de incendio industrial.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Corteza viva, piel rugosa, metal forjado y barro bélico sobre fondo pictórico orgánico.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Producción cinematográfica de alta gravedad moral, con lectura clara de escala natural y tragedia humana.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Majestic, elemental, primal, awe-inspiring',
+        'Grandes vacíos orgánicos y gargantas de escala para enfatizar mundo viejo vs mundo mecánico.',
+      atmosphere: 'Majestuosa, elemental, primal, sobrecogedora.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Iconografía de guardián natural, tensión organicidad-industria y narrativa visual de pacto roto.',
       creative_brief:
-        'The forest does not whisper; it roars through the mouths of wolf-goddesses and walks on the hooves of a god whose footsteps sprout life and death in equal measure. Iron clashes against root, industry against ancient pact, and every wound on the earth bleeds a curse that no blade can cut. Kodama tilt their heads at the violence, waiting to see which side nature will choose.',
+        'Diseña una gramática reusable de conflicto eco-épico para cualquier sujeto, fusionando misticismo natural, violencia histórica y peso de decisión moral sin imponer bosques, bestias, armaduras ni guerra literal.',
     },
   },
   {
     id: 'SP05-076',
-    name: 'Paprika – Satoshi Kon Parade Dream Surrealism',
+    name: 'Cinematic Dream-Collapse Surrealism Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dream parades, impossible transitions, saturated symbolism, psychological spectacle, DC-mini devices, parade-of-objects, dream-therapy tech, blurring-reality',
+        'Surrealismo psico-onírico de collage cinético, con transición imposible y arquitectura mental en fuga.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea metamórfica de montaje continuo, silhouettes mutantes y raccord deliberadamente inestable.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Saturación carnavalesca, fucsias intensos, amarillos ácidos y negros de vacío subconsciente.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Destellos abruptos, focos teatrales flotantes y variaciones lumínicas que rompen continuidad realista.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficie de objeto-ícono, plástico ritual, papel simbólico y grano de sueño inestable.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado de feature experimental con ritmo de edición alucinada y claridad de motivo simbólico.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Surreal, delirious, kaleidoscopic, mind-bending',
+        'Espacios plegables con tránsito entre interior psíquico y plano externo sin corte lógico.',
+      atmosphere: 'Delirante, hipnótica, exuberante, inquietante.',
       key_features:
-        'Poetic visual storytelling, iconic composition mastery, emotional landscape integration, timeless frame artistry',
+        'Secuencias de íconos, metamorfosis de plano, lógica de sueño y tensión entre terapia y colapso mental.',
       creative_brief:
-        "A parade of impossible objects marches through the dissolving wall between sleeping and waking — a filmstrip of the subconscious unspooled across latex skies. Every cut is a breath held too long; every scene bleeds into the next like watercolor in rain. Make it feel like a dream you can't quite remember but can't stop chasing.",
+        'Construye una gramática reusable de surrealismo onírico cinematográfico para cualquier sujeto, priorizando transformación continua, choque simbólico y vértigo perceptivo sin imponer desfiles, escenarios urbanos ni objetos concretos.',
     },
   },
   {
     id: 'SP05-283',
-    name: 'The Boy and the Heron - Marsh-Gate Mourning Dream',
+    name: 'Metaphysical Mourning Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'War-era estate mourning, uncanny bird guide, dream-architecture beyond grief, painterly reeds and tower spaces, Miyazaki late-style metaphysical tenderness',
+        'Fantasía metafísica de duelo, con naturaleza velada, umbrales abstractos y transformación interna.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea delicada y contemplativa, bordes suavemente inestables y siluetas tratadas como presencias ambiguas.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Verdes apagados de humedad emocional, grises de luto, marfiles velados y acentos cálidos mínimos de memoria íntima.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Luz difusa de cielo cubierto con contraluces tenues en bruma, preservando ambigüedad entre vigilia y sueño.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Veladuras húmedas, fibras orgánicas sugeridas, yeso erosionado y madera envejecida como memoria material.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Terminación premium de tono introspectivo, con jerarquía suave y microdetalle atmosférico orientado a sensación de tránsito.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Mourning, uncanny, painterly, searching',
+        'Profundidad por capas de neblina y arquitectura no euclidiana ligera que sugiere pasaje interior.',
+      atmosphere: 'Doliente, extraña, contemplativa, en búsqueda.',
       key_features:
-        'Heron guide silhouette, tower-and-marsh imagery, war-era domestic detail, dream-gate framing, grief-soaked stillness',
+        'Umbral simbólico, quietud suspendida, luz velada, escala emocional ambigua y materia orgánica sugerida.',
       creative_brief:
-        'Grief opens doors that should not exist, a heron beak tapping on the glass between life and what comes after. The marsh is a threshold, a membrane through which mourning becomes architecture and architecture becomes a journey inward. Every reed sways with the weight of unspoken farewell, every tower ascends toward a silence only the dead can fill.',
+        'Diseña una gramática transferible de duelo onírico para cualquier prompt o imagen de entrada: silencio metafísico, bordes inestables y sensación de tránsito interior sin imponer aves, torres, pantanos ni portales literales.',
     },
   },
   {
     id: 'SP05-294',
-    name: 'Mind Game - Psychedelic Escape Sprint',
+    name: 'Mutating Psychedelic Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Explosive mixed-style self-reinvention, hot-blooded panic, abstract transitions, impossible comedic near-death and liberation surging through every visual decision',
+        'Psicodelia de reinvención radical con lógica mutante de estilos, donde la imagen cambia de piel como motor narrativo principal.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Hibridación de trazo caricatural, anatomía distorsionada y fragmentos gráficos que alternan registro cómico y existencial.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Saturaciones altas en magenta, cian, naranja ácido y negros de corte abrupto para choques perceptivos deliberados.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación no naturalista, flashes de transición y bloques de luz plana que marcan saltos de estado mental.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Collage gráfico, pinceladas abruptas, manchas digitales y capas visuales de apariencia heterogénea intencional.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de caos controlado, con claridad de ritmo interno pese a la ruptura constante de lenguaje visual.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Liberating, insane, bright, kinetic',
+        'Espacio elástico con deformaciones súbitas, cámaras imposibles y continuidad quebrada orientada a vértigo liberador.',
+      atmosphere: 'Liberadora, delirante, brillante, cinética.',
       key_features:
-        'Mixed-media bursts, escape-motion framing, psychedelic transitions, comic panic acting, freedom iconography',
+        'Estallidos mixed-media, transiciones violentas, distorsión corporal, colisión de registros y renacimiento por cambio de forma.',
       creative_brief:
-        'Death becomes a door and the door opens into a sprint where every frame sheds its own skin in pursuit of something wilder. The universe laughs at itself through watercolor dissolves, photographic collage, and line art that refuses to sit still. Liberation is not a state but a velocity, and the image accelerates until it escapes its own definition.',
+        'Construye una gramática reusable de mutación psicodélica para cualquier prompt o imagen de entrada: choque de estilos, distorsión espacial y reinvención gráfica sin imponer fugas, persecuciones ni escena narrativa.',
     },
   },
   {
     id: 'SP05-298',
-    name: 'Night Is Short, Walk on Girl - Drunken Kyoto Whirl',
+    name: 'Nocturnal Social Whirl Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Nightlife romance rendered as a whimsical city odyssey, pub interiors, surreal side quests, warm chaos and literary flirtation rushing through one magical evening',
+        'Comedia nocturna surreal, con deriva social, caos cálido y humor romántico sin gravedad.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Trazo ágil de comedia, siluetas expresivas, curvas de remolino y staging coral adaptable al sujeto original.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Naranjas de farol, rojos festivos, violetas nocturnos y verdes de neón suave para ritmo de ronda.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación nocturna cálida y señalética blanda, con contrastes dinámicos que favorecen aventura improvisada.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Madera cálida, vidrio empañado, papel impreso y superficie húmeda con brillo de noche.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de odisea ligera, con legibilidad alta en multiescena y pulso narrativo continuo.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Tipsy, whimsical, urban, affectionate',
+        'Laberinto amable con compresión íntima y expansión episódica por umbrales y desvíos narrativos.',
+      atmosphere: 'Caprichosa, nocturna, afectuosa, social.',
       key_features:
-        'Night-street glow, pub clutter, festival-night momentum, literary props, whimsical encounter staging',
+        'Luz nocturna cálida, remolino social, humor excéntrico, paleta festiva y deriva episódica abstracta.',
       creative_brief:
-        'One Kyoto evening stretches into an impossible odyssey where every pub doorway opens onto a different genre of joy. Literary references tumble through the streets like drunk philosophers chasing a girl who chases nothing but the night itself. Romance is not a destination but the particular velocity of a city in love with its own strangeness.',
+        'Construye una gramática reusable de remolino nocturno para cualquier prompt o imagen de entrada: comedia, calidez y azar social sin imponer ciudades, pubs, alcohol, literatura ni encuentros específicos.',
     },
   },
   {
     id: 'SP05-299',
-    name: 'Paprika - Parade Dream-Collapse Carnival',
+    name: 'Dream Invasion Carnival Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Psychoanalytic dream parades, appliance-icon chaos, identity slippage, theater curtains and impossible transitions, carnival-density surrealism with polished motion logic',
+        'Surrealismo psicoanalítico invasivo, con teatralidad cromática, metamorfosis de identidad y colapso de la vigilia.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Contornos pulidos con rupturas súbitas, metamorfosis en cadena y coreografía simbólica sin multitud obligatoria.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Primarios saturados de carnaval, dorados performativos, negros profundos de inconsciente y pasteles inquietantes.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación de show onírico con focos teatrales, pulsos cromáticos y transiciones abruptas entre planos mentales.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Superficies brillantes de objeto-pop, telas pesadas, plástico simbólico y niebla de densidad psicológica.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de alta densidad visual con orden interno preciso para sostener legibilidad en caos simbólico.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Surreal, carnivalesque, invasive, dazzling',
+        'Espacio no estable con colapso de fronteras sueño-vigilia y continuidad fluida entre planos incompatibles.',
+      atmosphere: 'Surreal, carnavalesca, invasiva, deslumbrante.',
       key_features:
-        'Dream-parade motifs, appliance iconography, stage-curtain transitions, identity-split framing, polished dream density',
+        'Saturación teatral, objetos simbólicos mutantes, fragmentación identitaria, ritmo carnavalesco y ruptura de fronteras mentales.',
       creative_brief:
-        'A parade marches from dream into waking, refrigerators and dolls and gods all dancing to a frequency that dissolves the boundary between therapist and patient. Identity peels away in strips like theater curtain, revealing not a true self but an infinite regression of possible selves. The carnival is not entertainment but invasion, and the mind has no immune system for what it secretly wants.',
+        'Diseña una gramática reusable de invasión onírica para cualquier prompt o imagen de entrada: carnaval mental, metamorfosis y exceso cromático sin imponer desfiles, objetos domésticos, multitudes ni escenas de sueño concretas.',
     },
   },
   {
     id: 'SP05-289',
-    name: "Angel's Egg - Cathedral Water Ruin Silence",
+    name: 'Ascetic Gothic Silence Style',
     category: '10. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Monumental gothic emptiness, impossible vessels, sacred ruin, dream-like Christian symbolism and oceanic stillness inside a nearly wordless apocalyptic reverie',
+        'Alegoría gótica de silencio apocalíptico, monumentalidad vaciada y simbolismo ambiguo de contemplación extrema.',
       form_and_line:
-        'Refined feature-animation linework, variable line weight, animation-quality contour, expressive in-betweening',
+        'Línea fina y ascética, proporciones alargadas, ritmo severo y espacios negativos tratados como materia espiritual.',
       color_palette:
-        'Rich painterly hues, nuanced gradients, cinematic color scripting, atmospheric palette depth, emotional color temperature',
+        'Azul petróleo profundo, grises de piedra mojada, marfiles apagados y negros acuosos de profundidad incierta.',
       lighting_setup:
-        'Cinematic natural light, atmospheric depth, volumetric god rays, soft aerial perspective, golden-hour warmth',
+        'Iluminación baja y difusa con reflejos acuáticos fríos, focos puntuales de vidriera rota y sombras de gran masa.',
       material_texture:
-        'Lush painted backgrounds, delicate environmental detail, canvas-like texture, foliage density, hand-painted surface richness',
+        'Piedra erosionada, superficies inundadas espejadas, madera antigua saturada y pátina ritual de abandono.',
       render_quality:
-        'Premium animated-film frame, theatrical-grade production polish, nuanced lighting passes, filmic image quality',
+        'Acabado premium de contemplación lenta, detalle textural sobrio y jerarquía simbólica por vacío compositivo.',
       spatial_distortion:
-        'Naturalistic expressive proportions, studied anatomical realism, believable scale relationships, lived-in spatial design',
-      atmosphere: 'Sacred, silent, dreamlike, mournful',
+        'Escala reverencial sobredimensionada con perspectiva contemplativa que reduce lo humano a signo frágil.',
+      atmosphere: 'Sacra, muda, onírica, doliente.',
       key_features:
-        'Cathedral ruin scale, water-black emptiness, egg imagery, elongated silhouettes, sacred-symbolic composition',
+        'Vacío devocional, agua oscura sugerida, símbolos no resueltos, siluetas elongadas y quietud extrema.',
       creative_brief:
-        'Water covers the cathedral floor, a mirror that reflects no god, only the hollow grandeur of belief abandoned to stillness. An egg cradled in thin fingers holds either everything or nothing, and the film refuses to answer which. Sacred images drift through ruined arches like forgotten prayers, their meaning no longer remembered but still unbearably felt.',
+        'Diseña un lenguaje reusable de misticismo ascético para cualquier prompt o imagen de entrada: silencio, vacío y símbolo ambiguo sin imponer catedrales, ruinas inundadas, huevos ni figuras litúrgicas concretas.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

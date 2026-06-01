@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-141
 packId: pack_16
-name: Soul Eater - Halloween Soul Resonance Punk
+name: Gothic Resonance Punk Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Gothic pop escolar con humor macabro, ritmo punk sobrenatural y dinámica arma-compañero de alta energía.
-  form_and_line: Línea digital afilada con siluetas estilizadas, gestualidad exagerada y coreografía de combate musicalizada.
+  aesthetic: Pop gótico de resonancia espiritual, humor macabro gráfico y pulso punk sobrenatural transferible.
+  form_and_line: Línea digital afilada, siluetas angulares, gestualidad exagerada y ritmo visual sincopado.
   color_palette: Morados de noche de Halloween, naranjas encendidos, negros tinta y acentos cian de resonancia espiritual.
-  lighting_setup: Contrastes teatrales con glow espectral, sombras planas expresivas y rim frío en bordes de arma.
-  material_texture: Acabados limpios de era digital, superficies góticas estilizadas y grano leve para tono siniestro-pop.
-  render_quality: Producción premium early-2000s con lectura inmediata de pose, beat visual y personalidad de dúo.
-  spatial_distortion: Perspectiva dinámica de pasillo y plaza académica con deformación juguetona en golpes de alma.
+  lighting_setup: Contrastes teatrales con glow espectral, sombras planas expresivas y rims fríos sobre bordes gráficos.
+  material_texture: Acabados limpios de era digital, superficies góticas estilizadas, patrones rayados y grano leve siniestro-pop.
+  render_quality: Producción premium early-2000s con lectura inmediata de pose, beat visual y personalidad visual intensa.
+  spatial_distortion: Perspectiva dinámica, diagonales juguetonas y deformación elástica alrededor de pulsos de alma.
   atmosphere: Traviesa, spooky, vibrante, desafiante.
-  key_features: Luna expresiva icónica, accesorios a rayas, morfologías arma-humana y arquitectura de academia-carnaval insurgente.
-  creative_brief: Diseña una gramática reusable de acción gótica juvenil para cualquier sujeto, combinando iconografía de Halloween, resonancia de alma y energía de banda rebelde.
+  key_features: Contrastes Halloween-pop, accesorios a rayas, morfologías angulares, iconografía lunar abstracta y acentos de resonancia.
+  creative_brief: Diseña una gramática reusable de punk gótico espiritual para cualquier sujeto, combinando iconografía de Halloween, ritmo rebelde y energía de alma sin imponer academia, armas, dúos ni combate.
 avoidRules:
   - realistic
   - 3d render

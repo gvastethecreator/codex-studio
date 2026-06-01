@@ -12,23 +12,23 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Surgery or anatomy
-  form_and_line: Clean, gross
-  color_palette: Red, Blue scrubs
+  aesthetic: Clinical medical documentation
+  form_and_line: Clean hyper-detailed framing
+  color_palette: Sterile red-blue accents
   lighting_setup: Bright surgical light
-  material_texture: Flesh, metal
+  material_texture: Sterile surface, metal, medical sheen
   render_quality: Clinical, sharp
   spatial_distortion: None
   atmosphere: Sterile, intense
   key_features: Clean background
-  creative_brief: The body laid bare under surgical light, flesh and metal converging at the boundary between catastrophe and repair. Sterility sharpens into its own aesthetic, the hyperreal revealing what only proximity to the wound can teach.
+  creative_brief: Medical photography applies bright surgical clarity, sterile color accents, sharp close detail, and unemotional documentation to any subject. Keep clinical intensity without requiring anatomy, surgery, flesh, wounds, scrubs, or medical procedure.
 avoidRules:
   - artistic
-  - shadow
+  - moody shadow
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-077.webp
 attributes:
-  negativePrompt: artistic, shadow
+  negativePrompt: artistic, moody shadow
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

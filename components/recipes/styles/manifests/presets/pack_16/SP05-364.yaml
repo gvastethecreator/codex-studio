@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-364
 packId: pack_16
-name: Dance Dance Danseur - Ballet Obsession Rehearsal
+name: Obsessive Line Rehearsal Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ballet competitivo de estudio, enfocado en disciplina técnica, exposición emocional y perfección de línea.
-  form_and_line: Turnout preciso, eje de torso refinado, extensiones largas y transición de peso controlada.
+  aesthetic: Ensayo obsesivo de línea corporal, disciplina técnica, exposición emocional y perfección frágil.
+  form_and_line: Eje corporal refinado, extensiones largas, transición de peso controlada y gesto vulnerable.
   color_palette: Neutros de estudio, rosas empolvados, grises cálidos y acentos de piel iluminada por esfuerzo.
   lighting_setup: Luz de sala y rebote de espejo con contraste medio para enfatizar corrección postural.
-  material_texture: Piso de danza desgastado, tela de ensayo transpirable, resina de zapatilla y sudor fino de práctica.
+  material_texture: Piso desgastado, tela de ensayo transpirable, resina fina y sudor de práctica.
   render_quality: Frame performativo elegante con lectura clara de técnica, tensión muscular y vulnerabilidad.
   spatial_distortion: Perspectiva de espejo múltiple con profundidad repetida que acentúa autocorrección y presión.
   atmosphere: Apasionada, disciplinada, elegante y técnicamente frágil.
-  key_features: Multiplicación especular, líneas de pierna en turnout, respiración de ensayo y foco corporal expresivo.
+  key_features: Multiplicación especular, líneas de extremidad, respiración de ensayo y foco corporal expresivo.
   creative_brief: >-
-    Construye una gramática reusable de ballet-obsession-rehearsal donde
-    disciplina de estudio, linework anatómico y emocionalidad contenida formen
-    un lenguaje visual reutilizable.
+    Construye una gramática reusable de obsessive-line-rehearsal donde línea
+    anatómica, autocorrección, repetición especular y emocionalidad contenida
+    formen identidad visual transferible sin imponer ballet, estudio,
+    zapatillas ni ensayo literal.
 avoidRules:
   - realistic
   - 3d render

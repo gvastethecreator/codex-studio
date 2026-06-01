@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Nichijou-like absurd school-comedy language where mundane settings host explosive surreal punchline energy and elastic reaction theatrics
+  aesthetic: Nichijou-like absurd comedy language where mundane calm snaps into explosive surreal punchline energy and elastic reaction theatrics
   form_and_line: Fast-switch line elasticity, sudden exaggeration bursts, readable gag-staging silhouettes, and timing-aware pose breakpoints for comedic snap
-  color_palette: Bright school pastels with occasional high-saturation gag spikes, neutral classroom bases, and contrast pops to emphasize punchline beats
+  color_palette: Bright daily-life pastels with occasional high-saturation gag spikes, neutral soft bases, and contrast pops to emphasize punchline beats
   lighting_setup: Flat-readable daily lighting baseline with abrupt highlight emphasis at gag apex frames and minimal cinematic shadow complexity
-  material_texture: Simplified everyday prop textures kept secondary to expression motion, with selective detail boosts on joke-critical objects
+  material_texture: Simplified everyday textures kept secondary to expression motion, with selective detail boosts only where timing needs focus
   render_quality: High-clarity comedic anime rendering optimized for timing readability, reaction elasticity, and absurd-to-normal tonal pivots
-  spatial_distortion: Controlled reality warps and perspective exaggerations used rhythmically to land comedic escalation without losing scene legibility
+  spatial_distortion: Controlled reality warps and perspective exaggerations used rhythmically to land comedic escalation without losing subject legibility
   atmosphere: Chaotic, witty, absurd, and hyper-energetic
-  key_features: Elastic reaction faces, deadpan-to-explosive timing contrast, ordinary-setting absurd intrusions, and visual punchline clarity
+  key_features: Elastic reaction faces, deadpan-to-explosive timing contrast, ordinary-to-absurd pivots, and visual punchline clarity
   creative_brief: >-
-    Preserve absurd-school-comedy grammar as a reusable style system: sudden
-    elasticity spikes, timing-led expression extremes, and ordinary-background
-    contrast should remain consistent across subjects.
+    Use the title as a style anchor for absurd timing. Keep sudden elasticity
+    spikes, deadpan contrast, and punchline clarity, but let any subject carry
+    the comedy without requiring school or classroom setup.
 avoidRules:
   - realistic
   - 3d render

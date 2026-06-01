@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Expressive
   key_features: Heavy texture
-  creative_brief: Paint meets sand, meets newspaper, meets fabric, meets anything that will stick to canvas and hold pigment. Texture builds into relief, the surface becoming as important as the image, tactility as content. The artwork asserts its objecthood, refusing to be a window into anything but its own material truth.
+  creative_brief: Paint meets grit, paper, fibers, and anything that can hold pigment, building a surface where relief becomes content. Texture rises into the image until support and subject negotiate equal weight. The artwork asserts objecthood through material truth, without requiring newspaper, fabric, or canvas as fixed props.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable newspaper
+  - fabric requirement
+  - canvas requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-067.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

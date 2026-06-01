@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Nocturnal decopunk avenue where nightlife, radio culture, and machine glamour mix.
-  form_and_line: Streamline facades, marquee arcs, and repeated geometric cornices.
+  aesthetic: Nocturnal decopunk rhythm where jazz-age glamour meets machine polish.
+  form_and_line: Streamline arcs, marquee-like bands, repeated cornice geometry, and syncopated curves.
   color_palette: Midnight navy, amber marquee light, and chrome blue reflections.
-  lighting_setup: Theater marquees and street neon outlining façades with rhythmic contrast.
-  material_texture: Gloss enamel signage, polished metal trims, lacquered wood, and rain-slick asphalt.
+  lighting_setup: Amber rim pools and blue chrome reflections with rhythmic high contrast.
+  material_texture: Gloss enamel, polished metal trims, lacquered wood, and rain-slick sheen.
   render_quality: Cinematic cityscape concept with high legibility and mood depth.
-  spatial_distortion: Diagonal boulevard view emphasizing speed and social flow.
+  spatial_distortion: Diagonal syncopated perspective emphasizing speed, rhythm, and flow.
   atmosphere: Electric elegance, urban music pulse, and curated decadence.
-  key_features: Jazz clubs, radio towers, deco taxis, and mirrored canopies.
+  key_features: Blank marquee arcs, radio-wave linework, mirrored canopies, and chrome-blue edgework.
   creative_brief: >-
     Preserve chrome jazz-boulevard grammar as a reusable style system:
     nocturnal deco-streamline rhythms, music-pulse nightlife choreography, and
-    reflective urban glamour should remain coherent across subjects.
+    reflective urban glamour should remain coherent across any subject.
 avoidRules: [photoreal, medieval-ornament, pastoral-rural, post-apocalypse, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-023.webp }
 attributes:
   negativePrompt: photoreal, medieval-ornament, pastoral-rural, post-apocalypse, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

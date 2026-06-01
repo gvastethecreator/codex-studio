@@ -12,23 +12,22 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Building facade
+  aesthetic: Modern architectural photography
   form_and_line: Geometric lines
   color_palette: Glass, Steel, Concrete
   lighting_setup: Sunlight and shadow
-  material_texture: Smooth materials
+  material_texture: Glass, steel, concrete response
   render_quality: ArchDaily, clean
   spatial_distortion: Perspective correction
   atmosphere: Imposing, structured
   key_features: Vertical lines
-  creative_brief: Geometry climbs toward a sky it cannot reach, every vertical line a declaration of ambition, every grid of glass a mirror that swallows the heavens and returns them as abstraction. Shadow carves the facade into a canvas of sharp light and deep void, the building posing as its own blueprint. No presence disturbs the dialogue between line and surface.
+  creative_brief: Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban scene.
 avoidRules:
-  - people
   - messy
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-056.webp
 attributes:
-  negativePrompt: people, messy
+  negativePrompt: messy
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

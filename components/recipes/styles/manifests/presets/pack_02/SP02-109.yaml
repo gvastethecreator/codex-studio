@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Single-body two-headed creature absurdity, opposite temperaments locked in one sausage body, suburban hijinks, long-body contortions, impossible shared anatomy, simple but deeply strange sitcom creature design
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Sausage-body contortions, impossible shared spine bends, mirrored emotional poses at both ends, accordion-body compression
+  aesthetic: Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design
+  form_and_line: Clean elastic outlines, long-contour continuity, simple sitcom construction, soft squash curves
+  color_palette: 90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents
+  lighting_setup: Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere
+  material_texture: Smooth cel fill, analog TV softness, light scan grain, simple painted surface
+  render_quality: Simple strange sitcom cartoon, elastic absurdity, readable long-form design
+  spatial_distortion: Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression
   atmosphere: Goofy, elastic, odd-couple, playful
-  key_features: Shared-body anatomy, impossible body bends, head-to-tail personality contrast, suburban prop gags, elastic long-form silhouettes
-  creative_brief: Anatomy becomes a punchline as two souls share one impossible spine, stretching across suburban lawns like taffy pulled by competing appetites. The creature's silhouette writes calligraphy of domestic friction — a single body negotiating separate hungers with elastic grace.
+  key_features: Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression
+  creative_brief: 'Use shared-body elastic design as abstraction: one stretched form contains two opposing visual states, bending impossibly with sitcom simplicity and elastic compression. Avoid cats, dogs, creatures, lawns, props, or anatomy as requirements. The style should be long, contradictory, and playful.'
 avoidRules:
   - digital
   - HD

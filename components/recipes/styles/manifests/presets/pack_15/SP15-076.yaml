@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Cooperative maker quarter focused on lunar craft and repair culture.
-  form_and_line: Modular workshops, open courts, and hanging service rails.
-  color_palette: Chalk white, mint green, and warm copper.
-  lighting_setup: Workshop strip lights and soft skylight bleed.
-  material_texture: Printed ceramics, woven insulation, and polished metals.
-  render_quality: Detailed artisanal future concept.
-  spatial_distortion: Dense block composition with visible micro-scenes.
-  atmosphere: Hands-on solidarity and practical creativity.
-  key_features: Open fab benches, repair kiosks, and shared tool depots.
+  aesthetic: Abstract lunar maker style with visible repair logic, modular patchwork, warm copper accents, and cooperative hand-built texture.
+  form_and_line: Modular bay grids, open-court spacing, hanging rail lines, tool-loop arcs, and patchwork panel rhythms.
+  color_palette: Chalk white, mint green, warm copper, regolith beige, and small safety-orange tags.
+  lighting_setup: Workshop strip light, pale skylight bleed, copper task glow, and small diagnostic highlights.
+  material_texture: Printed ceramic grain, woven insulation, polished repair metal, patched membrane softness, and powdery edge wear.
+  render_quality: Detailed artisanal future render with readable hand-built construction and no sterile corporate polish.
+  spatial_distortion: Dense layered composition creates many small repair/readymade moments without requiring a specific workshop scene.
+  atmosphere: Hands-on solidarity, practical creativity, repair pride, and lunar neighborhood warmth.
+  key_features: Patchwork modules, copper task-light accents, tool-loop motifs, woven insulation textures, and mint-white maker graphics.
   creative_brief: >-
-    Preserve selenite artisan-block grammar as a reusable style system:
-    cooperative fabrication density, modular repair culture, and
-    practical-creative solidarity should remain coherent across subjects.
+    Apply selenite artisan-block as an abstract style treatment: make any
+    subject feel patched, repaired, shared, ceramic, copper-lit, and
+    hand-built.
 avoidRules: [photoreal, sterile-corporate, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-076.webp }
 attributes:
   negativePrompt: photoreal, sterile-corporate, cyber-slum, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

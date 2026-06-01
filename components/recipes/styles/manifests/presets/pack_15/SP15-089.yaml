@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Dense artisan workshop street dedicated to precision watchcraft.
-  form_and_line: Narrow shopfronts, gear awnings, and window displays.
+  aesthetic: Dense artisan clockpunk precision where watchcraft becomes a compressed texture system.
+  form_and_line: Narrow shopfront-like bands, gear awnings, display-grid windows, and pocketwatch curves.
   color_palette: Walnut, brass, and deep green.
   lighting_setup: Warm shop lamps and reflected glass sparkle.
   material_texture: Polished brass, timber, leather, and felt pads.
   render_quality: Detail-rich street concept with tiny mechanical cues.
-  spatial_distortion: Tight alley perspective with repeating façades.
+  spatial_distortion: Tight alley-like perspective with repeating facade bands and tool-grid depth.
   atmosphere: Craft pride, quiet focus, and intimate scale.
-  key_features: Watchmaker benches, tool clocks, and repair kiosks.
+  key_features: Watchmaker tool grids, tool-clock motifs, repair-node silhouettes, and pocketwatch filigree.
   creative_brief: >-
     Preserve pocketwatch workshop-row grammar as a reusable style system:
     intimate micro-mechanics craftsmanship, dense storefront repair culture,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, messy-industrial, cyberpunk, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-089.webp }
 attributes:
   negativePrompt: photoreal, messy-industrial, cyberpunk, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-clockpunk,
+    categoryName: 2. Corepunk — Clockpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

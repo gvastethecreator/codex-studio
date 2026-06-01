@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: pack_02
 name: Cinematic & Media
-description: A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.
+description: A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.
 categories:
   - id: cinematic-lighting-and-lenses
     name: 1. Cinematic Lighting And Lenses
@@ -129,6 +129,14 @@ categories:
     name: 3. Broadcast And Tv Look
     presetRefs:
       - pack_02/SP02-115.yaml
+      - pack_02/SP02-121.yaml
+      - pack_02/SP02-122.yaml
+      - pack_02/SP02-123.yaml
+      - pack_02/SP02-124.yaml
+      - pack_02/SP02-125.yaml
+      - pack_02/SP02-126.yaml
+      - pack_02/SP02-127.yaml
+      - pack_02/SP02-128.yaml
 presetRefs:
   - pack_02/SP02-013.yaml
   - pack_02/SP02-005.yaml
@@ -250,3 +258,11 @@ presetRefs:
   - pack_02/SP02-098.yaml
   - pack_02/SP02-085.yaml
   - pack_02/SP02-115.yaml
+  - pack_02/SP02-121.yaml
+  - pack_02/SP02-122.yaml
+  - pack_02/SP02-123.yaml
+  - pack_02/SP02-124.yaml
+  - pack_02/SP02-125.yaml
+  - pack_02/SP02-126.yaml
+  - pack_02/SP02-127.yaml
+  - pack_02/SP02-128.yaml

@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Rural-slow-life anime language with spacious pastoral quietude, one-room school nostalgia, and micro-ritual everyday tenderness
+  aesthetic: Rural-slow-life anime language with spacious pastoral quietude, nostalgic stillness, and micro-ritual everyday tenderness
   form_and_line: Gentle low-tension contouring, simplified childlike gesture silhouettes, open negative-space framing, and minimal dramatic pose pressure
   color_palette: Sunlit summer greens, sky-soft blues, straw and earth beiges, warm wood tones, and mild pastel accents with low contrast
-  lighting_setup: Broad afternoon daylight wash, cicada-hour warmth, soft window fill, and subtle ambient haze to emphasize still-air calm
-  material_texture: Weathered school timber, dusty road and bus-stop surfaces, field grass movement cues, and light cotton clothing softness
+  lighting_setup: Broad afternoon daylight wash, cicada-hour warmth, soft fill, and subtle ambient haze to emphasize still-air calm
+  material_texture: Weathered timber, dusty matte surfaces, grasslike movement cues, and light cotton softness
   render_quality: Pastoral slice render with serene clarity, restrained detail cadence, and strong atmosphere-over-action prioritization
   spatial_distortion: Wide breathing compositions with gentle depth layering and abundant quiet-space around characters
   atmosphere: Idyllic, calm, nostalgic, and quietly playful
-  key_features: Countryside stillness cues, seasonal ambient texture, tiny daily-action anchors, and one-room-school intimacy markers
+  key_features: Spacious stillness cues, seasonal ambient texture, tiny daily-action anchors, and low-pressure intimacy markers
   creative_brief: >-
-    Preserve rural-quietude grammar as a reusable style system: spacious
-    pastoral framing, summer daylight softness, and small daily ritual focus
-    should remain consistent across subjects.
+    Use the title as a style anchor for rural quietude. Preserve spacious
+    pastoral breathing room, summer daylight softness, and tiny ritual focus
+    without requiring school, road, bus stop, or fixed countryside scene.
 avoidRules:
   - realistic
   - 3d render

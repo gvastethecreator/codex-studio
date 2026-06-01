@@ -9,14 +9,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, lowres, blurry',
     style: {
-      aesthetic: 'Urban Japanese neo-noir with electric rain and kanji reflections.',
-      subject_treatment: 'Cyber warrior with modular armor and sharp silhouette.',
-      color_and_tone: 'Magentas, cyan and oil black with hard contrasts.',
-      lighting_and_shadow: 'Side neon tubes with volumetric backlighting.',
-      texture_and_material: 'Brushed metal, wet asphalt, and grainy holograms.',
-      camera_and_composition: 'Mid-shot framing, narrow street, deep vanishing point.',
-      atmosphere_and_mood: 'Silent tension before the duel.',
-      rendering_and_quality: 'AAA key art, fine detail, cinematic sharpness.',
+      aesthetic:
+        'Action RPG ciberpunk neo-noir orientado a infiltración urbana nocturna y lectura táctica por silueta.',
+      subject_treatment:
+        'Operadores player-class con kit modular legible por rol (assault, recon, tech) y jerarquía visual clara.',
+      color_and_tone:
+        'Dúo cian-magenta sobre negros aceitosos, con codificación cromática de facción y threat level.',
+      lighting_and_shadow:
+        'Iluminación diegética de neón con pockets de sombra para stealth readability y rim de detección.',
+      texture_and_material:
+        'Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía de baja persistencia tipo HUD-world.',
+      camera_and_composition:
+        'Cámara third-person táctica con lanes de navegación, choke points y puntos de cobertura reconocibles.',
+      atmosphere_and_mood:
+        'Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.',
+      rendering_and_quality:
+        'Key art AAA con pipeline de legibilidad gameplay-first, contraste de objetivo y nitidez de interacción.',
     },
   },
   {
@@ -25,14 +33,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, fog-heavy, muddy-contrast',
     style: {
-      aesthetic: 'Competitive shooter on dense megacity rooftops.',
-      subject_treatment: 'Lightweight operators in acrobatic motion.',
-      color_and_tone: 'Urban grays with saturated team accents.',
-      lighting_and_shadow: 'Cold dawn with long, clean shadows.',
-      texture_and_material: 'Concrete, graffiti, galvanized metal, and glass.',
-      camera_and_composition: 'Dynamic perspective with jumping lines.',
-      atmosphere_and_mood: 'Speed, verticality, and positional advantage.',
-      rendering_and_quality: 'Clear layout for PvP readability.',
+      aesthetic:
+        'Hero shooter de movilidad vertical en entorno urbano denso, orientado a control de altura y rotación rápida.',
+      subject_treatment:
+        'Operadores ligeros con kits parkour/grapple y lectura de hitbox por animación.',
+      color_and_tone:
+        'Grises metropolitanos con acentos de equipo saturados para friend-foe clarity.',
+      lighting_and_shadow:
+        'Amanecer frío con sombras largas útiles para trazado de rutas y cobertura parcial.',
+      texture_and_material:
+        'Hormigón, metal galvanizado, graffiti táctico y vidrio rompible contextual.',
+      camera_and_composition:
+        'Perspectiva dinámica con jump lines, rutas de flanqueo y puntos high-ground evidentes.',
+      atmosphere_and_mood: 'Rítmica, competitiva y técnica, centrada en posicionamiento.',
+      rendering_and_quality:
+        'PvP readability-first con layout claro de lanes, alturas y líneas de visión.',
     },
   },
   {
@@ -41,14 +56,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, pastel, lowres',
     style: {
-      aesthetic: 'Urban beat-em-up in neon-flooded underpasses.',
-      subject_treatment: 'Stylized gangs and iconic-silhouette protagonists.',
-      color_and_tone: 'Fuchsia, acid green, and graphite black.',
-      lighting_and_shadow: 'Broken lights, reflective puddles, and backlighting.',
-      texture_and_material: 'Wet concrete, graffiti, and metal pipes.',
-      camera_and_composition: 'Classic side view with active background layers.',
-      atmosphere_and_mood: 'Street energy and rhythmic combat.',
-      rendering_and_quality: 'Playable art for fighting stages.',
+      aesthetic:
+        'Beat-em-up urbano neon-noir con combate por oleadas, control de espacio y flow rítmico.',
+      subject_treatment:
+        'Gangs estilizadas y protagonistas iconográficos con lectura de rol por postura y arma improvisada.',
+      color_and_tone:
+        'Fucsia, verde ácido y grafito para contraste de facción y claridad de impacto.',
+      lighting_and_shadow:
+        'Luces rotas, charcos reflectivos y contraluces que enfatizan silueta de combate.',
+      texture_and_material:
+        'Hormigón mojado, graffiti táctico, tuberías metálicas y señalética decadente.',
+      camera_and_composition:
+        'Side-view clásico con capas activas, entradas laterales y zonas de combo.',
+      atmosphere_and_mood: 'Energía callejera, agresiva y cadenciosa.',
+      rendering_and_quality:
+        'Stage-art jugable con legibilidad de hit confirms, crowd control y desplazamiento lateral.',
     },
   },
   {
@@ -57,14 +79,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, daylight, low-detail',
     style: {
-      aesthetic: 'Criminal stealth in a rainy midnight harbor.',
-      subject_treatment: 'Agile smugglers and mechanized guards.',
-      color_and_tone: 'Petrol blue, sodium orange, and deep black.',
-      lighting_and_shadow: 'Wet streetlights and container shadows.',
-      texture_and_material: 'Painted metal, puddles, and wet ropes.',
-      camera_and_composition: 'Crossing sightlines designed for stealth play.',
-      atmosphere_and_mood: 'Nerve, opportunity, and imminent risk.',
-      rendering_and_quality: 'Infiltration map with clear landmarks.',
+      aesthetic:
+        'Stealth-heist portuario nocturno con infiltración modular, extracción silenciosa y rutas de contrabando.',
+      subject_treatment:
+        'Smugglers ágiles y guardias mecanizados con lectura clara de patrulla y respuesta.',
+      color_and_tone:
+        'Azul petróleo, naranja sodio y negro profundo para separar cobertura, alarma y sombra útil.',
+      lighting_and_shadow:
+        'Farolas mojadas, contraluces de contenedor y charcos reflectivos como riesgo de exposición.',
+      texture_and_material:
+        'Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.',
+      camera_and_composition:
+        'Sightlines cruzadas con rutas altas/bajas, puntos ciegos y nodos de botín.',
+      atmosphere_and_mood: 'Nerviosa, oportunista y al borde del fallo.',
+      rendering_and_quality:
+        'Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.',
     },
   },
   {
@@ -73,14 +102,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, cute-style, low-detail',
     style: {
-      aesthetic: 'Urban catastrophe with a colossal creature in the harbor.',
-      subject_treatment: 'Evacuation teams and coastal artillery.',
-      color_and_tone: 'Storm gray, alarm red, and marine cyan.',
-      lighting_and_shadow: 'Mixed lightning strikes and industrial fire.',
-      texture_and_material: 'Turbulent water, concrete, and bent steel.',
-      camera_and_composition: 'Kaiju silhouette dominating the horizon.',
-      atmosphere_and_mood: 'Overwhelming scale and civilian survival.',
-      rendering_and_quality: 'Cinematic keyframe for a global event.',
+      aesthetic:
+        'Urban-disaster action en puerto metropolitano, enfocado en evacuación dinámica y contención de amenaza colosal.',
+      subject_treatment:
+        'Equipos de rescate y artillería costera por función (evac, suppression, shield).',
+      color_and_tone:
+        'Gris tormenta, rojo alarma y cian marino para priorizar riesgo civil y respuesta táctica.',
+      lighting_and_shadow:
+        'Relámpagos, incendios industriales y humo para telegraph de fases de crisis.',
+      texture_and_material:
+        'Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.',
+      camera_and_composition:
+        'Horizonte dominado por kaiju con corredores de evacuación y puntos de defensa visibles.',
+      atmosphere_and_mood: 'Abrumadora, urgente y de supervivencia colectiva.',
+      rendering_and_quality:
+        'Event-scale gameplay key-art con legibilidad de rutas civiles, amenaza y objetivos de contención.',
     },
   },
   {
@@ -89,14 +125,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, medieval, low-detail',
     style: {
-      aesthetic: 'Crystalline city crossed by fast hover lines.',
-      subject_treatment: 'Armed commuters and station guardians.',
-      color_and_tone: 'Bright cyan, pure white, and soft violet.',
-      lighting_and_shadow: 'Clean futuristic transit lighting.',
-      texture_and_material: 'Tempered crystal, brushed metal, and holograms.',
-      camera_and_composition: 'Central station as the flow hub.',
-      atmosphere_and_mood: 'Elegant modernity with latent tension.',
-      rendering_and_quality: 'Transit scene for an action RPG.',
+      aesthetic:
+        'Urban-action crystalpunk de movilidad masiva, centrado en control de estación, tránsito y seguridad cívica militarizada.',
+      subject_treatment:
+        'Siluetas cívico-militares por función de estación (control, mantenimiento, respuesta).',
+      color_and_tone:
+        'Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.',
+      lighting_and_shadow:
+        'Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.',
+      texture_and_material:
+        'Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.',
+      camera_and_composition:
+        'Hub radial multi-nivel con vectores de circulación y sightlines tácticas limpias.',
+      atmosphere_and_mood: 'Ordenada, veloz y con tensión de seguridad contenida.',
+      rendering_and_quality:
+        'AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.',
     },
   },
   {
@@ -105,14 +148,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, medieval, lowres',
     style: {
-      aesthetic: 'Parkour chase in a carbon megacity.',
-      subject_treatment: 'Rebel courier and pursuit drones.',
-      color_and_tone: 'Matte black, bright cyan, and signal red.',
-      lighting_and_shadow: 'Urban sunset with targeted neon highlights.',
-      texture_and_material: 'Carbon fiber, glass, and concrete.',
-      camera_and_composition: 'Jump route with vertical depth.',
-      atmosphere_and_mood: 'Kinetic urgency and route control.',
-      rendering_and_quality: 'Premium mobility scene.',
+      aesthetic:
+        'Mobility-action parkour en megaciudad de carbono, centrado en persecución, momentum y elección de ruta.',
+      subject_treatment:
+        'Courier rebelde vs drones de caza, con lectura de velocidad y estado de amenaza.',
+      color_and_tone:
+        'Negro mate, cian brillante y rojo señal para guiar ruta, peligro y checkpoints.',
+      lighting_and_shadow: 'Atardecer urbano con acentos neon orientados a navegación vertical.',
+      texture_and_material:
+        'Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.',
+      camera_and_composition:
+        'Ruta de salto con profundidad vertical, líneas de flujo y alternativas de escape.',
+      atmosphere_and_mood: 'Cinética, urgente y técnicamente precisa.',
+      rendering_and_quality:
+        'Mobility scene gameplay-first con legibilidad de trayectorias, riesgo y timing.',
     },
   },
   {
@@ -121,14 +170,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, medieval, low-detail',
     style: {
-      aesthetic: 'Cyberpunk river district with holographic fish.',
-      subject_treatment: 'Urban patrols and amphibious mercenaries.',
-      color_and_tone: 'Cyan, neon pink, and deep black.',
-      lighting_and_shadow: 'Liquid reflections and animated signage.',
-      texture_and_material: 'Wet steel, aged wood, and glass.',
-      camera_and_composition: 'Diagonal canals crossed by high bridges.',
-      atmosphere_and_mood: 'Urban elegance and criminal tension.',
-      rendering_and_quality: 'Premium open-world environment.',
+      aesthetic:
+        'Open-world cyberpunk de distrito fluvial, centrado en patrulla urbana, contrabando y control de canales.',
+      subject_treatment:
+        'Patrullas urbanas y mercenarios anfibios con diferenciación por movilidad y equipamiento.',
+      color_and_tone: 'Cian, rosa neon y negro profundo para lectura de facción y nivel de alerta.',
+      lighting_and_shadow: 'Reflejos líquidos y señalética animada como guía de rutas/POIs.',
+      texture_and_material:
+        'Acero mojado, madera envejecida, cristal urbano y superficies de atraque.',
+      camera_and_composition:
+        'Canales diagonales con puentes altos, rutas múltiples y sightlines de emboscada.',
+      atmosphere_and_mood: 'Elegante, criminalmente tensa y viva.',
+      rendering_and_quality:
+        'Premium environment gameplay-first con navegación clara por agua y altura.',
     },
   },
   {
@@ -137,14 +191,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, medieval, lowres',
     style: {
-      aesthetic: 'Eco-tech rebellion in an underground metropolitan network.',
-      subject_treatment: 'Urban cells with advanced recycled gear.',
-      color_and_tone: 'Neon green, concrete gray, and signal orange.',
-      lighting_and_shadow: 'LED tubes and deep tunnel shadows.',
-      texture_and_material: 'Artificial moss, metal, and weathered paint.',
-      camera_and_composition: 'Central station seized by barricades.',
-      atmosphere_and_mood: 'Political urgency and combative hope.',
-      rendering_and_quality: 'Narrative insurgent-faction scene.',
+      aesthetic:
+        'Urban-insurgency eco-tech en red metropolitana subterránea, orientada a control de estación y guerra de barricadas.',
+      subject_treatment:
+        'Células rebeldes con gear reciclado avanzado y roles de avance, soporte y sabotaje.',
+      color_and_tone:
+        'Verde neon, gris hormigón y naranja señal para claridad de facción y objetivo.',
+      lighting_and_shadow:
+        'Tubos LED y sombras profundas de túnel para lectura de cobertura y riesgo.',
+      texture_and_material:
+        'Musgo artificial, metal urbano, pintura descascarada y estructuras improvisadas.',
+      camera_and_composition:
+        'Estación central tomada con barricadas, rutas de flanco y nodos críticos visibles.',
+      atmosphere_and_mood: 'Urgente, combativa y esperanzadamente política.',
+      rendering_and_quality:
+        'Insurgent-faction gameplay art con legibilidad de lanes, puntos de presión y control territorial.',
     },
   },
   {
@@ -153,14 +214,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Neon Urban & Night Ops',
     negativePrompt: 'watermark, text, logo, heavy-guns, low-detail',
     style: {
-      aesthetic: 'Silent heist in nocturnal lotus gardens.',
-      subject_treatment: 'Ninjas specialized in vertical mobility.',
-      color_and_tone: 'Midnight blue, lotus pink, and ink black.',
-      lighting_and_shadow: 'Dim moonlight and paper lamps.',
-      texture_and_material: 'Calm water, polished stone, and silk.',
-      camera_and_composition: 'Curved bridges and chained rooftops.',
-      atmosphere_and_mood: 'Poetic stealth and surgical precision.',
-      rendering_and_quality: 'Refined, highly readable stealth scene.',
+      aesthetic:
+        'Stealth-op nocturna de infiltración shinobi, centrada en verticalidad, silencio y ejecución quirúrgica.',
+      subject_treatment:
+        'Siluetas ágiles con movilidad de gancho y roles coordinados de entrada/cobertura/exfil.',
+      color_and_tone:
+        'Índigo profundo, magenta loto, negro lacado y ámbar de farol para contraste selectivo.',
+      lighting_and_shadow:
+        'Luz lunar suave, islas de linterna y bandas de ocultamiento de borde nítido.',
+      texture_and_material:
+        'Agua espejo, piedra pulida húmeda, seda en movimiento y madera envejecida.',
+      camera_and_composition:
+        'Cadenas de puentes curvos, rutas de azotea y oclusión por capas para lectura stealth.',
+      atmosphere_and_mood: 'Tensa, poética y disciplinadamente precisa.',
+      rendering_and_quality:
+        'Premium stealth gameplay key-art con comunicación limpia de ruta, objetivo y escape.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-298
 packId: pack_16
-name: Night Is Short, Walk on Girl - Drunken Kyoto Whirl
+name: Nocturnal Social Whirl Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Comedia romántica nocturna de deriva urbana, con tono etílico-lúdico y surrealismo social de encuentros encadenados.
-  form_and_line: Trazo ágil de comedia de situación, siluetas expresivas de tránsito peatonal y staging coral de ciudad festiva.
-  color_palette: Naranjas de farol, rojos de izakaya, violetas nocturnos y verdes de neón suave para ritmo de ronda nocturna.
-  lighting_setup: Iluminación nocturna cálida por locales y señalética, con contrastes dinámicos que favorecen sensación de aventura improvisada.
-  material_texture: Madera de bar, vidrio empañado, papel impreso de afiches y pavimento urbano con brillo de noche húmeda.
-  render_quality: Acabado premium de odisea urbana ligera, con legibilidad alta en multiescena y pulso narrativo continuo.
-  spatial_distortion: Ciudad-laberinto amable con compresión de calle y expansión episódica por puertas y desvíos narrativos.
-  atmosphere: Etílica, caprichosa, urbana, afectuosa.
-  key_features: Calles nocturnas vibrantes, interiores de pub cargados, iconos literarios y encuentros excéntricos en cadena.
-  creative_brief: Construye una gramática reusable de odisea nocturna romántica para cualquier sujeto, combinando luz de barrio, caos cálido y deriva episódica con humor.
+  aesthetic: Comedia nocturna surreal, con deriva social, caos cálido y humor romántico sin gravedad.
+  form_and_line: Trazo ágil de comedia, siluetas expresivas, curvas de remolino y staging coral adaptable al sujeto original.
+  color_palette: Naranjas de farol, rojos festivos, violetas nocturnos y verdes de neón suave para ritmo de ronda.
+  lighting_setup: Iluminación nocturna cálida y señalética blanda, con contrastes dinámicos que favorecen aventura improvisada.
+  material_texture: Madera cálida, vidrio empañado, papel impreso y superficie húmeda con brillo de noche.
+  render_quality: Acabado premium de odisea ligera, con legibilidad alta en multiescena y pulso narrativo continuo.
+  spatial_distortion: Laberinto amable con compresión íntima y expansión episódica por umbrales y desvíos narrativos.
+  atmosphere: Caprichosa, nocturna, afectuosa, social.
+  key_features: Luz nocturna cálida, remolino social, humor excéntrico, paleta festiva y deriva episódica abstracta.
+  creative_brief: >-
+    Construye una gramática reusable de remolino nocturno para cualquier prompt o imagen de entrada:
+    comedia, calidez y azar social sin imponer ciudades, pubs, alcohol, literatura ni encuentros específicos.
 avoidRules:
   - realistic
   - 3d render

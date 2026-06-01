@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Quiet post-heroic travel, long-lived memory, serene fields, gentle spellcraft, elf time-perception, hero-party flashbacks, funeral-start journey, demon-king aftermath
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Reflective, serene, melancholic, timeless
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: An elf walks the same road her hero party once walked, now alone, now decades later, now beginning to understand what mortal time actually means. The fields haven't changed but the light has shifted imperceptibly, the way grief shifts from wound to weather. Frame each scene as a postcard from a journey whose destination is gratitude for the going.
+  aesthetic: Afterquest melancholy fantasy, with quiet post-heroic light, long memory, restrained spellcraft, and time-softened grief.
+  form_and_line: Gentle contours, delicate trim, small gesture emphasis, wide breathing spaces, and low-conflict silhouette rhythm.
+  color_palette: Pale sky blue, sage green, soft wheat gold, faded violet, pearl white, and warm memory amber.
+  lighting_setup: Diffuse morning light, slow rim glow, transparent magical motes, and subtle shifts that make time visible.
+  material_texture: Soft cloth grain, weathered parchment, grasslike brush texture, translucent particles, and watercolor-like cel softness.
+  render_quality: Serene fantasy anime finish with high restraint, lyrical clarity, and emotional negative space.
+  spatial_distortion: Open horizontal breathing room, postcard stillness, and time-depth layering through light rather than action.
+  atmosphere: Reflective, serene, melancholic, timeless.
+  key_features: Post-heroic quiet, memory light, soft horizon, gentle spellcraft, gratitude-through-distance.
+  creative_brief: >-
+    Give any prompt afterquest melancholy: let light carry memory, let space
+    breathe, and let magic feel almost incidental, avoiding fixed roads,
+    groups, rituals, landscapes, or aftermath scenes.
 avoidRules:
   - realistic
   - 3d render

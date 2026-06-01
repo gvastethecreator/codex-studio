@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-068
 packId: pack_05
-name: Dorohedoro – Industrial Masked Chaos
+name: Grimy Sorcery Collision Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Grimy alleys, masks, bizarre sorcery, anarchic humor, heavy surface filth, lizard-head protagonist, mushroom magic, door-portal frames, smoke-choked city
+  aesthetic: Grimy sorcery collision, anarchic humor in texture, industrial filth, masked ambiguity as shape language, portal-like framing, absurd menace without literal cast
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Tar grime, industrial soot, scraped enamel, greasy ink buildup, oxidized dust, warped organic stains, smoke-softened edges
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Colliding frames, smoke-bent edges, masklike silhouettes, portal-crop interruptions, chaotic but readable density, offbeat scale jolts
   atmosphere: Bizarre, dangerous, grimy, anarchic
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: A lizard-headed man cooks gyoza in a city where sorcerers use doorways as portals and mushrooms are weapons of mass destruction. Smoke from industry and magic chokes the same alley, and everyone wears a mask hiding something stranger than a face. Chaos here is not a crisis but a lifestyle, seasoned with dark laughter.
+  creative_brief: >
+    Push any prompt into filthy, funny, dangerous collision: soot, warped frames,
+    occult-industrial stains, and masklike ambiguity create absurd menace as a
+    transferable style, not a fixed place, character, prop system, or action setup.
 avoidRules:
   - realistic
   - 3d render

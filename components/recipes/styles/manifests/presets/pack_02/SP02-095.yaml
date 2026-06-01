@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Classic four-panel newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield-lazy-humor energy, Calvin-and-Hobbes-imagination jumps, Peanuts-philosophical-simplicity, cheap-newsprint-ink smell almost visible
+  aesthetic: Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible
   form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
   color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
   lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
   material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
   render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  spatial_distortion: Panel-grid division, balloon-like negative space, repeating simplified background, model-sheet consistency
   atmosphere: Cozy, familiar, breakfast-table comfort, gentle-humor warmth, daily-ritual companionship
-  key_features: Four-panel grid, Ben-Day dot coloring, speech balloons, repeating backgrounds, simple consistent character models, newsprint paper tone
-  creative_brief: Morning light filtered through cheap pulp, four rectangles holding a universe of gentle punchlines arranged in daily ritual. Ink that stains fingertips carries the rhythm of companionship, familiar faces returning panel by panel. A breakfast-table confidant printed in borrowed colors on paper that knows its own disposability.
+  key_features: Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating backgrounds, consistent model logic, newsprint paper tone
+  creative_brief: 'Apply Sunday-funnies print grammar to any input: panel rhythm, simple ink outlines, Ben-Day dots, newsprint tooth, off-register CMYK, and readable gag composition without actual readable text. Avoid forcing recurring characters or fixed four-panel narrative. The style should feel syndicated, disposable, and familiar.'
 avoidRules:
   - digital
   - HD

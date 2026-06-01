@@ -14,13 +14,13 @@ tags:
 visualDna:
   aesthetic: Modern action movie
   form_and_line: None
-  color_palette: Teal shadows, Orange skin, complementary grade, cyan bias
+  color_palette: Teal shadows, orange highlights, complementary grade, cyan bias
   lighting_setup: High contrast, backlit rim, dramatic underlight
   material_texture: Digital clean, noise-free, slick compositing
   spatial_distortion: Lens flare, anamorphic streak, specular bloom
   atmosphere: Intense, cinematic, bombastic spectacle, summer tentpole
-  key_features: Color grade, slow-motion hero walk, debris rain
-  creative_brief: Coolness pools in every shadow while warmth clings to skin like a second sun, the two temperatures locked in an embrace that defines the modern epic. Debris hangs suspended in amber light, and the hero's silhouette carves itself against a sky on fire.
+  key_features: Teal-orange grade, rim light, spectacle bloom
+  creative_brief: 'Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights, slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.'
 avoidRules:
   - natural color
 assets:

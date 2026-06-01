@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-357
 packId: pack_16
-name: Ping Pong the Animation - Table Spin Distortion
+name: Spin Pressure Distortion Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Tenis de mesa psicológico de alta velocidad, enfocado en spin, anticipación y fractura perceptiva competitiva.
+  aesthetic: Deporte psicológico de alta velocidad, enfocado en spin abstracto, anticipación y fractura perceptiva competitiva.
   form_and_line: Trazos nerviosos, microgesto facial bajo presión y snap de muñeca hiperlegible.
-  color_palette: Verdes fríos de sala, amarillos de pelota en alta visibilidad y sombras azul-gris de tensión.
-  lighting_setup: Luz interior contenida con contrastes abruptos en zona de mesa y rostro.
-  material_texture: Superficie de mesa mate, goma de paleta marcada, suelo de gimnasio áspero y sudor granular.
+  color_palette: Verdes fríos, amarillos de alta visibilidad y sombras azul-gris de tensión.
+  lighting_setup: Luz interior contenida con contrastes abruptos en zona de impacto y rostro.
+  material_texture: Superficie mate, goma marcada, plano áspero y sudor granular.
   render_quality: Frame deportivo expresionista con lectura instantánea de spin, respuesta y quiebre mental.
-  spatial_distortion: Perspectiva de borde de mesa con deformación subjetiva en intercambios de ritmo extremo.
+  spatial_distortion: Perspectiva de borde comprimido con deformación subjetiva en intercambios de ritmo extremo.
   atmosphere: Psicológica, rápida, cruda y competitivamente íntima.
-  key_features: Mesa dominante, snap de paleta, distorsión de presión y cues de trayectoria rotacional.
+  key_features: Plano dominante, snap de muñeca, distorsión de presión y cues de trayectoria rotacional.
   creative_brief: >-
-    Formula una gramática reusable de table-spin-distortion donde presión
-    mental, lectura de efecto y deformación perceptiva definan estilo más allá
-    de cualquier rally específico.
+    Formula una gramática reusable de spin-pressure-distortion para cualquier prompt o imagen de entrada:
+    presión mental, efecto y deformación perceptiva sin imponer mesa, paleta, pelota ni rally.
 avoidRules:
   - realistic
   - 3d render

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-169
 packId: pack_16
-name: Serial Experiments Lain - Wired Bedroom Dissolution
+name: Wired Identity Dissolution Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cyber-aislamiento doméstico con mística de red, donde la identidad se vuelve señal y la intimidad, interfaz.
-  form_and_line: Línea fina y distanciada, acting minimal de disociación y composición de habitación-terminal obsesiva.
-  color_palette: Verdes CRT, grises de suburbio vacío, azules fríos y blancos de estática electrónica.
+  aesthetic: Cyber-aislamiento con mística de red, donde la identidad se vuelve señal y la intimidad, interfaz.
+  form_and_line: Línea fina y distanciada, acting minimal de disociación y composición de terminal obsesiva.
+  color_palette: Verdes CRT, grises de vacío periférico, azules fríos y blancos de estática electrónica.
   lighting_setup: Luz baja de monitor, sombra blanda de madrugada y parpadeo digital como pulso emocional.
-  material_texture: Cableado denso, plástico viejo de terminal, pared suburbana desaturada y grano de señal analógica.
+  material_texture: Cableado denso, plástico viejo de terminal, plano desaturado y grano de señal analógica.
   render_quality: Acabado premium 90s con tensión psicológica persistente y estética proto-red inquietante.
-  spatial_distortion: Espacio íntimo comprimido y vacío urbano periférico para sensación de presencia fantasma.
+  spatial_distortion: Espacio íntimo comprimido y vacío periférico para sensación de presencia fantasma.
   atmosphere: Aislada, conectada, susurrante, extraña.
   key_features: Clústeres de cables, glow de CRT, overlays de estática y mirada distante en tránsito digital.
-  creative_brief: Construye una gramática reusable de desmaterialización identitaria en red para cualquier sujeto, combinando silencio suburbano, densidad electrónica y ambigüedad existencial.
+  creative_brief: Construye una gramática reusable de desmaterialización identitaria en red para cualquier sujeto, combinando silencio periférico, densidad electrónica y ambigüedad existencial sin imponer dormitorios, terminales, cables ni suburbios literales.
 avoidRules:
   - realistic
   - 3d render

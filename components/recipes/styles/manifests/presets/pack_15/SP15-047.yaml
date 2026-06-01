@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Atomic parade propaganda where governance moves as synchronized machinery and public joy is choreographed by technology.
-  form_and_line: Processional axes, review-stand tiers, atom obelisks, synchronized float silhouettes, banner grids, and marching turbine arcs.
+  aesthetic: Atomic parade propaganda where governance moves as synchronized machinery and public joy is technologized.
+  form_and_line: Processional axes, tier bands, atom obelisks, synchronized silhouettes, banner grids, and marching turbine arcs.
   color_palette: Cerulean, parade white, celebratory red, polished aluminum, and tiny brass insignia.
   lighting_setup: Hard day-parade sunlight, metallic float glints, banner-shadow rhythm, and white highlights on polished concrete.
   material_texture: Polished concrete, painted steel, glossy shells, fabric pennants, enamel insignia, and confetti caught in vents.
   render_quality: Epic wide concept with clear crowd segmentation, vehicle hierarchy, and ceremonial readability.
-  spatial_distortion: Processional depth magnifies scale through repeated obelisks, stands, flags, and engineered crowd lanes.
+  spatial_distortion: Processional depth magnifies scale through repeated obelisks, flags, and engineered lanes.
   atmosphere: National pride, theatrical governance, curated futurity, and rehearsed mass enthusiasm.
-  key_features: Atom obelisks, marching turbines, civic tech floats, review platforms, pennant shadows, and synchronized route markings.
+  key_features: Atom obelisks, marching turbine marks, civic-tech float shapes, pennant shadows, and synchronized route markings.
   creative_brief: >-
     Preserve reactor parade-avenue grammar as a reusable style system:
     synchronized civic-tech procession, flag-shadow spectacle rhythm, and

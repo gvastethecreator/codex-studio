@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Assemblage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection',
     style: {
       aesthetic: '3D object collage',
       form_and_line: 'Physical objects',
@@ -20,7 +20,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Mysterious, collection',
       key_features: 'Shadow box',
       creative_brief:
-        'Found objects arranged in a box become diorama, become theater, become universe in miniature. Rust dialogues with plastic, wood with glass, the found speaking to the made across material boundaries. The image is a collection that became a composition, taxonomy elevated to poetics.',
+        'Found-material logic becomes spatial composition, with rust dialoguing with plastic, wood with glass, and the found speaking to the made across material boundaries. Shadow, depth, and object scale create a sculptural collage grammar without requiring boxes, dioramas, or literal collections. Taxonomy turns into poetics through placement.',
     },
   },
   {
@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Embroidery on Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo',
     style: {
       aesthetic: 'Thread stitched over photo',
       form_and_line: 'Thread lines',
@@ -40,7 +40,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Personal, tactile',
       key_features: 'Thread texture',
       creative_brief:
-        'Thread pierces photographic paper, adding texture to captured light, the stitch becoming a third dimension on a two-dimensional memory. The needle leaves holes, the floss adds color, the photograph becomes substrate rather than endpoint. The image heals itself through embroidery, the visible mend becoming the art.',
+        'Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or literal photographs.',
     },
   },
   {
@@ -48,7 +48,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coffee Painting',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, mug ring requirement, kitchen mood',
     style: {
       aesthetic: 'Painted with coffee',
       form_and_line: 'Liquid stains',
@@ -57,10 +57,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Watercolor paper, granules',
       render_quality: 'Organic, warm',
       spatial_distortion: 'Fluid',
-      atmosphere: 'Cozy, rustic',
+      atmosphere: 'Warm, organic, stained',
       key_features: 'Monochrome brown',
       creative_brief:
-        'Coffee brewed strong enough to paint with leaves sepia stains on watercolor paper, the pigment organic, the process domestic. Rings from the bottom of the mug become compositional elements, accidents welcomed into the frame. The image smells faintly of morning, of kitchens, of the ritual that precedes creation.',
+        'Coffee-like organic pigment leaves sepia stains on absorbent paper, the process warm, fluid, and domestic in material feel. Rings, blooms, granules, and tide marks become compositional elements, accidents welcomed into the frame. The style should feel stained and aromatic without requiring mugs, kitchens, mornings, or beverage props.',
     },
   },
   {
@@ -68,9 +68,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Trash Polka',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, readable lettering',
     style: {
-      aesthetic: 'Bold tattoo style',
+      aesthetic:
+        'Trash-polka graphic collision style with black realism shards, red vector strikes, and splatter tension',
       form_and_line: 'Realistic vs graphic',
       color_palette: 'Black, Grey, Red',
       lighting_setup: 'High contrast',
@@ -80,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Intense, chaotic',
       key_features: 'Red and Black',
       creative_brief:
-        'Black ink and red blood are the only colors permitted in a world where realism collides with graphic abstraction on skin. Splatter, smear, and stencil share the same canvas, the same arm, the same philosophy of controlled chaos. The image hurts beautifully, aggression refined into iconography.',
+        'Black ink and red accents dominate a world where realistic fragments collide with graphic abstraction. Splatter, smear, stencil, and hard typography-like blocks share one aggressive composition without requiring skin, tattoos, arms, blood, or readable lettering. The style should feel dangerous through contrast and collision, not gore.',
     },
   },
   {
@@ -88,9 +89,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Zine Aesthetic',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement',
     style: {
-      aesthetic: 'Photocopied booklet',
+      aesthetic:
+        'Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts',
       form_and_line: 'High contrast, grainy',
       color_palette: 'Black and White',
       lighting_setup: 'Xerox flash',
@@ -100,17 +102,18 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Raw, underground',
       key_features: 'Xerox grain',
       creative_brief:
-        'The photocopier flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Staples and tape hold the booklet together, toner rubbing off on fingers that turn the pages. The image lives in the reproduction, the original lost or never existed — only the copy remains, and that is enough.',
+        'Photocopy logic flattens everything into high-contrast grain, shadows becoming solid black, highlights burning to paper white. Toner dust, tape shadows, rough crop edges, and repeated-copy degradation become the aesthetic. The image lives in reproduction, without requiring booklets, staples, pages, text, or punk slogans.',
     },
   },
   {
     id: 'SP06-069',
-    name: 'Moodboard',
+    name: 'Moodboard Color Story',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable captions, literal photo collection',
     style: {
-      aesthetic: 'Collection of images',
+      aesthetic:
+        'Moodboard color-story layout with coordinated fragments, swatches, texture samples, and provisional design logic',
       form_and_line: 'Grid or pile',
       color_palette: 'Coordinated palette',
       lighting_setup: 'Flat',
@@ -120,17 +123,18 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Aesthetic',
       key_features: 'Color theme',
       creative_brief:
-        'Images cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, the pins repositionable, the composition a proposition rather than a conclusion. Feeling crystallizes in the spaces between borrowed pictures.',
+        'Fragments cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, repositionable, and intentionally unresolved. Feeling crystallizes through palette, rhythm, spacing, swatches, and texture samples without requiring literal photos or captions.',
     },
   },
   {
     id: 'SP06-070',
-    name: 'Vision Board',
+    name: 'Pinned Planning Board',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, conspiracy board, readable goals, clipping requirement',
     style: {
-      aesthetic: 'Corkboard with pins',
+      aesthetic:
+        'Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional composition',
       form_and_line: 'Pins, string',
       color_palette: 'Varied',
       lighting_setup: 'Room light',
@@ -140,27 +144,27 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Hopeful, messy',
       key_features: 'Pinned items',
       creative_brief:
-        "Cork accepts the pin with a soft crunch, each punctured image a wish made physical on a board of intentions. String connects the connected, red yarn mapping relationships between clippings like a conspiracy theorist's dream board. The arrangement grows organically, a garden of aspiration pinned to vertical space.",
+        'Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals.',
     },
   },
   {
     id: 'SP06-071',
-    name: 'Mosaic (Paper)',
+    name: 'Torn Paper Mosaic',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable typography, advertisement requirement, school craft mood',
     style: {
       aesthetic: 'Torn paper image',
       form_and_line: 'Torn edges',
       color_palette: 'Magazine scraps',
       lighting_setup: 'Flat',
       material_texture: 'Paper fibers',
-      render_quality: 'Craft, school',
+      render_quality: 'Craft mosaic finish with distance-read coherence and fiber-edge tactility',
       spatial_distortion: 'Pixelated by scraps',
       atmosphere: 'Creative, recycled',
       key_features: 'Torn bits',
       creative_brief:
-        'Magazine pages torn into confetti reassemble into image at distance, the fragments finding coherence only when the eye surrenders detail. Each scrap carries its own color, its own typography, its own advertisement, the aggregate becoming more than the archive. The image is a mosaic of meanings, each tessera a story that does not belong to the whole.',
+        'Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing.',
     },
   },
   {
@@ -168,16 +172,17 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tape Art',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wall requirement, street context',
     style: {
       aesthetic: 'Image made of tape',
       form_and_line: 'Straight tape lines',
       color_palette: 'Masking tape, duct tape',
       lighting_setup: 'Flat',
       material_texture: 'Tape layers',
-      render_quality: 'Street art, installation',
+      render_quality:
+        'Tape-strip construction with installation-like precision but no required wall or street context',
       spatial_distortion: 'Geometric',
-      atmosphere: 'Urban, temporary',
+      atmosphere: 'Temporary, geometric, improvised',
       key_features: 'Tape strips',
       creative_brief:
         'Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive.',
@@ -188,19 +193,20 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paint over Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement',
     style: {
       aesthetic: 'Acrylic strokes on photo',
       form_and_line: 'Brush strokes',
       color_palette: 'Photo + Paint',
       lighting_setup: 'Mixed',
       material_texture: 'Paint texture',
-      render_quality: 'Gerhard Richter, expressive',
+      render_quality:
+        'Expressive overpainted-print finish with smeared opacity and obscured detail',
       spatial_distortion: 'Obscured details',
       atmosphere: 'Abstracted reality',
       key_features: 'Smeared paint',
       creative_brief:
-        'Thick acrylic strokes drag across the photographic surface, obscuring and revealing in the same gesture, the paint both veil and window. The brush moves with the confidence of an artist who knows the photo is already complete, already safe, and can therefore be risked. The image lives in the friction between captured truth and applied gesture.',
+        'Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture, paint acting as both veil and window. The brush risks the base layer through smear, opacity, and interruption. The image lives in friction between printed certainty and applied gesture, without requiring photographic realism.',
     },
   },
   {
@@ -215,12 +221,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Gold, Black',
       lighting_setup: 'Reflective',
       material_texture: 'Metal foil, cracks',
-      render_quality: 'Klimt, decorative',
+      render_quality:
+        'Ornamental gilded finish with metallic leaf behavior and decorative flatness',
       spatial_distortion: 'Flat gold areas',
       atmosphere: 'Rich, ornamental',
       key_features: 'Metallic shine',
       creative_brief:
-        'Gold leaf adheres to size with the delicacy of breath, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back, not as reflection but as radiance, an active source rather than passive surface. The image contains actual value — real gold, real light, a real refusal to be anything but precious.',
+        'Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into oblivion. The metal catches light and throws it back as radiance, an active source rather than passive surface. The image should feel precious through material reflectivity and ornament, not through any fixed subject.',
     },
   },
   {
@@ -228,19 +235,21 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stencil Art',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, wall requirement, protest scene',
     style: {
-      aesthetic: 'Street-protest stencil graphic',
+      aesthetic:
+        'Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray-edge urgency',
       form_and_line: 'Hard edges, bridges',
       color_palette: 'Black, Red, White',
       lighting_setup: 'Flat',
       material_texture: 'Wall, spray paint',
-      render_quality: 'Street art, graphic',
+      render_quality:
+        'Graphic reproducible stencil finish without requiring street walls, protest text, or slogans',
       spatial_distortion: 'Simplified',
-      atmosphere: 'Bold, urban',
+      atmosphere: 'Bold, urgent, reproducible',
       key_features: 'Stencil bridges',
       creative_brief:
-        'Negative space becomes positive through the bridge that holds the island of the letter O in place, the stencil declaring its method in every uncut connection. The image reduces to silhouette, detail sacrificed to reproducibility, the wall becoming the canvas for a message that can be repeated by anyone with cardboard and a blade.',
+        'Negative space becomes positive through bridges that hold isolated shapes in place, the stencil declaring its method in every uncut connection. Detail is sacrificed to reproducibility, and spray edges reveal the process. The style should feel repeatable and urgent without requiring letters, slogans, walls, or protest scenes.',
     },
   },
   {
@@ -248,9 +257,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Decoupage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, decorative object requirement, readable printed motif',
     style: {
-      aesthetic: 'Varnished paper on object',
+      aesthetic:
+        'Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth',
       form_and_line: 'Torn edges',
       color_palette: 'Faded, yellowed',
       lighting_setup: 'Glossy varnish',
@@ -260,27 +270,29 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Antique, homey',
       key_features: 'Varnish shine',
       creative_brief:
-        'Layers of paper sealed under glossy varnish, edges softened by age, images surrendering their context to a new surface. The crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. Every decoupage is a palimpsest, the old becoming ground for the new.',
+        'Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject.',
     },
   },
   {
     id: 'SP06-065',
-    name: 'Scrapbook',
+    name: 'Scrapbook Layer Grammar',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement',
     style: {
-      aesthetic: 'Memory book page',
+      aesthetic:
+        'Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm',
       form_and_line: 'Tape, stickers',
       color_palette: 'Pastel, vintage',
       lighting_setup: 'Flat lay',
-      material_texture: 'Paper, photos, handwriting',
+      material_texture:
+        'Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture',
       render_quality: 'Personal, cute',
       spatial_distortion: 'Layered',
       atmosphere: 'Nostalgic, sweet',
       key_features: 'Page layout',
       creative_brief:
-        'Ephemera arranged on a page — ticket stubs, pressed flowers, handwritten notes — each item a bookmark in the narrative of a life. Washi tape holds down memories like butterfly specimens, the composition a curated accident of affection. The page smells like a drawer that has not been opened since the person who filled it was young.',
+        'Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color, and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows create a curated accident of affection. Keep nostalgia material and compositional, without requiring tickets, flowers, handwriting, people, or readable notes.',
     },
   },
   {
@@ -288,14 +300,16 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Digital Collage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, software UI, vaporwave prop requirement',
     style: {
-      aesthetic: 'Photoshop composite',
+      aesthetic:
+        'Digital collage composite with layer logic, surreal scale play, and clean cut-screen edges',
       form_and_line: 'Clean cuts',
       color_palette: 'Vibrant, surreal',
       lighting_setup: 'Digital',
       material_texture: 'Screen',
-      render_quality: 'Modern art, vaporwave',
+      render_quality:
+        'Modern screen-native collage polish without requiring vaporwave props or platform UI',
       spatial_distortion: 'Scale play',
       atmosphere: 'Surreal, fun',
       key_features: 'Digital edges',
@@ -308,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Photomontage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement',
     style: {
       aesthetic: 'Seamless photo blending',
       form_and_line: 'Invisible',
@@ -320,7 +334,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamlike',
       key_features: 'Realistic blend',
       creative_brief:
-        'Photos blend at the pixel level, one world flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning — a teacup holds an ocean, a face contains a city — the impossible presented with the banality of a passport photo. The image disturbs through plausibility, not fantasy.',
+        'Image fragments blend at the pixel level, one visual plane flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning, impossible relationships presented with banal compositing confidence. The image disturbs through plausibility, not fantasy, without requiring faces, cities, objects, or passport-photo framing.',
     },
   },
   {
@@ -328,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mixed Media Canvas',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement',
     style: {
       aesthetic: 'Paint plus objects',
       form_and_line: 'Varied',
@@ -340,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Expressive',
       key_features: 'Heavy texture',
       creative_brief:
-        'Paint meets sand, meets newspaper, meets fabric, meets anything that will stick to canvas and hold pigment. Texture builds into relief, the surface becoming as important as the image, tactility as content. The artwork asserts its objecthood, refusing to be a window into anything but its own material truth.',
+        'Paint meets grit, paper, fibers, and anything that can hold pigment, building a surface where relief becomes content. Texture rises into the image until support and subject negotiate equal weight. The artwork asserts objecthood through material truth, without requiring newspaper, fabric, or canvas as fixed props.',
     },
   },
   {
@@ -348,7 +362,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fumage (Smoke Art)',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, visible flame requirement',
     style: {
       aesthetic: 'Soot on paper',
       form_and_line: 'Soft smoke trails',
@@ -360,7 +374,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ethereal, dark',
       key_features: 'Smoke patterns',
       creative_brief:
-        'Flame licks the underside of paper, depositing soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. The carbon traces are ghostly, gradations of grey that seem to hover above the surface. The image is a collaboration with combustion, a record of the fire that almost was.',
+        'Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery.',
     },
   },
   {
@@ -385,14 +399,15 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-061',
-    name: 'Collage (Analog)',
+    name: 'Analog Cut-Paper Collage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement',
     style: {
-      aesthetic: 'Cut and paste magazine',
+      aesthetic:
+        'Analog cut-paper collage with visible seams, mismatched print sources, and deliberate fragment tension',
       form_and_line: 'Scissor cuts',
-      color_palette: 'Vintage print',
+      color_palette: 'Vintage print fragments, mismatched ink ages, and clashing CMYK residues',
       lighting_setup: 'Inconsistent',
       material_texture: 'Paper, glue',
       render_quality: 'Dada, punk',
@@ -400,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Chaotic, surreal',
       key_features: 'Cutout edges',
       creative_brief:
-        'Scissor cuts interrupt the seamless world of the magazine, reassembling fragments into a reality that the original photographs never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, the gap between the fragments generating more truth than the fragments themselves.',
+        'Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

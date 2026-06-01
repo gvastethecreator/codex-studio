@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-265
 packId: pack_05
-name: 'Vampire Hunter D: Bloodlust - Baroque Wasteland Chase'
+name: Rose-Black Baroque Decadence Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Baroque vampire castles, post-apocalyptic moonlight, impossibly elegant hunter silhouette, gothic machinery, rose-black romance and predatory splendor in motion
+  aesthetic: Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant ruin pressure, ornamental darkness in motion
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty metallic trim
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal drift, decayed grandeur scale
   atmosphere: Elegant, predatory, moonlit, decadent
-  key_features: Hunter silhouette, gothic carriage and castle props, moonlit wasteland, aristocratic monster design, baroque frame detail
-  creative_brief: Gothic spires pierce post-apocalyptic skies where the hunter rides, half-creature himself, impossibly elegant in silhouette against baroque ruin and vampire moonlight. Bloodlust rendered beautiful by aristocratic stillness, the chase a rose-black romance between predator and predator, each recognizing the monster in the other.
+  key_features: Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent gothic machinery
+  creative_brief: >
+    Give any prompt a decadent rose-black baroque treatment: ornamental frames,
+    moonlit lacquer, predatory elegance, and ruined luxury should define the
+    image without fixed architecture, roles, transport forms, lore taxonomy, or
+    pursuit structure.
 avoidRules:
   - realistic
   - 3d render

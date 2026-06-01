@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-014
 packId: pack_16
-name: Jazzy Space Noir
+name: Jazzy Space-Noir Melancholy Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Space-age cool, smoky bars, bounty-chase melancholy, stylish staging, cigarette smoke trails, saxophone silhouettes, asteroid belts, retro-future ships
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: 90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future elegance.
+  form_and_line: Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held in reserve.
+  color_palette: Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.
+  lighting_setup: Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.
+  material_texture: Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay texture.
+  render_quality: Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first staging.
+  spatial_distortion: Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal subject.
   atmosphere: Cool, wistful, lonely, stylish
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Saxophone smoke curls through the zero-G of a bounty hunter's solitude, retro-future ships drifting through asteroid belts like lonely notes searching for a melody. The 90s cel lighting wraps every scene in cool melancholy—stylish, wistful, the visual equivalent of a trumpet solo echoing down an empty station corridor.
+  key_features: Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained stylish motion.
+  creative_brief: >-
+    Build a reusable jazzy-space-noir melancholy grammar for any subject or
+    input image: cool restraint, smoke-like rhythm, retro-future polish,
+    low-key cel lighting, and lonely negative space without imposing bars,
+    bounty chases, cigarettes, saxophones, ships, asteroid belts, or stations.
 avoidRules:
   - realistic
   - 3d render

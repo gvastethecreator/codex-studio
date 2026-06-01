@@ -17,11 +17,11 @@ visualDna:
   color_palette: Greyscale
   lighting_setup: Versatile
   material_texture: Visible grain
-  render_quality: Journalism, street
+  render_quality: Documentary film
   spatial_distortion: None
   atmosphere: Classic, gritty
   key_features: Monochrome
-  creative_brief: 'Stripped of chroma''s distraction, the frame reduces to its skeleton: light wrestling shadow across the street, a stranger''s hands, the geometry of waiting. Grain carries the newsprint urgency of a moment that refuses polish. Truth in silver, nothing hidden, nothing softened.'
+  creative_brief: "Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5 contrast on any subject; no street, stranger, or human detail required."
 avoidRules:
   - color
   - chromatic aberration

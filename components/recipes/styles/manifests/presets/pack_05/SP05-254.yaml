@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Drama romántico de portal-libro con imaginería celeste y guardianes juramentados en tono noventero luminoso.
-  form_and_line: Contorno suave emocional, símbolos astrales recurrentes y composición de viaje con foco en vínculo afectivo.
+  aesthetic: Melodrama romántico celestial, con destino brillante, ornamento astral y sensibilidad noventera luminosa.
+  form_and_line: Contorno suave emocional, símbolos astrales recurrentes y composición guiada por vínculos afectivos.
   color_palette: Rosa cósmico, azul estrella, oro constelar, blanco papel y violeta destino.
-  lighting_setup: Brillo de portal abierto, halos celestes y luz dramática difusa de melodrama fantástico.
-  material_texture: Páginas antiguas, tejidos rituales, ornamento metálico y partículas mágicas de constelación.
-  render_quality: Fantasía de romance épico con claridad sentimental y estética de aventura por capítulos.
-  spatial_distortion: Transición dimensional por marco-libro y profundidad de ruta entre dos mundos.
+  lighting_setup: Halos celestes, bloom difuso y luz dramática que sugiere tránsito emocional más que lugar fijo.
+  material_texture: Blanco fibroso, tejido ritual abstracto, ornamento metálico fino y partículas de constelación.
+  render_quality: Fantasía de romance épico con claridad sentimental, brillo editorial y aventura por capítulos.
+  spatial_distortion: Pliegues dimensionales, marcos luminosos no literales y profundidad de tránsito afectivo.
   atmosphere: Predestinada, brillante y emotiva.
-  key_features: Portal textual, guardianes celestiales, simbología astral y staging de juramento romántico.
+  key_features: Simbología astral, devoción cromática, brillo de destino, melodrama limpio y ornamento constelar.
   creative_brief: >-
-    Construye una gramática celestial-portal reusable donde libro, constelación
-    y devoción romántica organicen una aventura de tránsito dimensional con
-    alta legibilidad emocional.
+    Construye una gramática celestial-portal reusable donde cualquier prompt se
+    vuelva romántico, astral y predestinado mediante halos, constelaciones y
+    melodrama gráfico sin fijar composición de tránsito o elenco narrativo.
 avoidRules:
   - realistic
   - 3d render

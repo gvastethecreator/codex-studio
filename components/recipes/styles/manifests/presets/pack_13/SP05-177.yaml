@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Retro-space-opera comedy anime language balancing bridge-deck banter, earnest mecha sorties, and playful meta-genre self-awareness
-  form_and_line: Expressive ensemble line acting, cockpit-and-bridge UI framing geometry, dynamic sortie pose accents, and comedic reaction silhouette clarity
-  color_palette: Bright bridge-console cyans and ambers, team-uniform accent pops, deep space navy backdrops, and warm comedic interior tones
+  aesthetic: Retro-space-opera comedy anime language balancing ensemble banter, earnest mechanical momentum, and playful meta-genre self-awareness
+  form_and_line: Expressive ensemble line acting, analog UI framing geometry, dynamic launch-vector accents, and comedic reaction silhouette clarity
+  color_palette: Bright console cyans and ambers, team-accent pops, deep space navy fields, and warm comedic tonal bases
   lighting_setup: Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action beats, and occasional explosion rim flashes
-  material_texture: Analog sci-fi panel surfaces, painted space vistas, cel overlay grain, retro UI display bloom, and mechanical sortie detailing
+  material_texture: Analog sci-fi panel surfaces, painted space gradients, cel overlay grain, retro UI display bloom, and mechanical detailing
   render_quality: Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and charismatic crew-first polish
-  spatial_distortion: Alternating stable ensemble staging and kinetic sortie perspective bursts to maintain war-comedy pacing balance
+  spatial_distortion: Alternating stable ensemble rhythm and kinetic vector perspective bursts to maintain war-comedy pacing balance
   atmosphere: Bouncy, tactical, colorful, meta
-  key_features: Bridge-deck ensemble staging, mecha sortie framing, retro UI accents, playful command-room energy, bright team body language
+  key_features: Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command-energy, bright group-body-language geometry
   creative_brief: >-
     Preserve cheerful bridge-deck mecha grammar as a reusable style system:
-    ensemble command-room kinetics, retro-UI practical lighting, and war-comedy
+    ensemble tactical kinetics, retro-UI practical lighting, and war-comedy
     tonal pivots should remain consistent across subjects.
 avoidRules:
   - realistic

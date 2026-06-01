@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Romance ocultista doméstica de cottage británico, entre ternura ritual y extrañeza feérica de hueso y musgo.
-  form_and_line: Contorno delicado de cuento gótico, silueta cornuda icónica y detalle botánico en entorno íntimo.
+  aesthetic: Romance ocultista doméstico, ternura ritual, extrañeza feérica, hueso/musgo como materialidad y misterio afectivo.
+  form_and_line: Contorno delicado de cuento gótico, curvas botánicas, siluetas extrañas abstractas y detalle íntimo de rito cotidiano.
   color_palette: Verde musgo, crema té, marrón madera húmeda, negro hueso y dorado tenue de lámpara.
-  lighting_setup: Luz de atardecer filtrada por ventana, velas bajas y brillos mágicos discretos de hadario interior.
-  material_texture: Piedra húmeda, madera antigua, porcelana de té, pergamino arcano y fibras vegetales vivas.
+  lighting_setup: Luz de atardecer filtrada, velas bajas y brillos mágicos discretos de escala íntima.
+  material_texture: Piedra húmeda, madera antigua, porcelana, pergamino arcano y fibras vegetales vivas.
   render_quality: Fantasía íntima de alta atmósfera con microdetalle doméstico y pulsación sobrenatural sutil.
-  spatial_distortion: Espacio acogedor comprimido, profundidad de pasillo rural y foco en rituales de escala humana.
+  spatial_distortion: Acogimiento comprimido, profundidad íntima, escala humana y foco suave sobre ritualidad cotidiana.
   atmosphere: Encantada, melancólica y cálida, con inquietud amorosa latente.
-  key_features: Interior de cottage, talismanes óseos, silueta del mago, folklore feérico y rito cotidiano mágico.
+  key_features: Talismán óseo abstracto, musgo, luz cálida, botánica ritual, folklore feérico y delicadeza gótica.
   creative_brief: >-
     Define una gramática thorn-cottage reusable donde domesticidad ritual,
-    naturaleza encantada y misterio afectivo convivan sin perder delicadeza ni
-    tensión sobrenatural.
+    naturaleza encantada y misterio afectivo convivan con libertad de sujeto, sin
+    exigir vivienda, interior, rol mágico, pasaje o rito literal.
 avoidRules:
   - realistic
   - 3d render

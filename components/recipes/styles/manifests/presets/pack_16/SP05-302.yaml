@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-302
 packId: pack_16
-name: Captain Harlock - Cape in the Star Wind
+name: Melancholic Space Corsair Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y mito del capitán errante.
+  aesthetic: Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y soledad heroica.
   form_and_line: Silueta de capa dominante, línea heroica elongada y contornos limpios de icono outlaw de alto contraste.
   color_palette: Negros terciopelo, azules de abismo estelar, rojos vino de emblema y blancos fríos de insignia.
   lighting_setup: Contraluz estelar dramático con rim fuerte sobre capa y rostro, sombras planas de fuerte identidad gráfica.
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Terminación premium retro-operática con foco en presencia de figura única y aura de leyenda errante.
   spatial_distortion: Contraste de primerísimo monumental contra vacío astral negativo para acentuar aislamiento soberano.
   atmosphere: Romántica, solitaria, rebelde, cósmica.
-  key_features: Emblema calavérico, capa al viento estelar, pose de mando disidente y composición de vacío alrededor.
-  creative_brief: Crea una gramática reusable de leyenda corsaria melancólica para cualquier sujeto, anclada en silueta imperial, viento estelar y código moral insumiso.
+  key_features: Silueta imperial, vacío compositivo, viento estelar abstracto, emblemas oscuros y código moral insumiso.
+  creative_brief: >-
+    Crea una gramática reusable de leyenda corsaria melancólica para cualquier prompt o imagen de entrada:
+    elegancia fúnebre, vacío y disidencia sin imponer capas, calaveras, capitanes ni naves.
 avoidRules:
   - realistic
   - 3d render

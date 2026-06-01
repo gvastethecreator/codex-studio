@@ -13,19 +13,20 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical character sensitivity
+  aesthetic: Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical sensitivity
   form_and_line: Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing
   color_palette: Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony
   lighting_setup: Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features
   material_texture: Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish
   render_quality: Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading
-  spatial_distortion: Shallow depth emphasis around expression focal plane with restrained background recession
+  spatial_distortion: Shallow depth emphasis around expression or detail focal planes with restrained context recession
   atmosphere: Tender, nostalgic, romantic, calm, and introspective
-  key_features: Expressive gaze hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition
+  key_features: Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition
   creative_brief: >-
-    Keep this preset anchored in shojo emotional grammar: delicate line weight,
-    pastel romantic tonality, and expression-centered composition should remain
-    transferable across subjects.
+    Use Soft Shojo Spring as style anchor for gentle romantic clarity:
+    delicate line weight, pastel tonality, and expression-centered composition
+    should transfer without requiring school, romance plot, blossoms, or
+    character close-up.
 avoidRules:
   - photoreal
   - gritty

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-062
 packId: pack_05
-name: Tokyo Ghoul – Urban Monstrous Hunger
+name: Crimson Hunger Metamorphosis Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: City-night predation, glowing red eyes (kakugan), vibrant kagune, predator eyes, fleshy weaponization, alienated identity, urban dark fantasy, dark cityscapes, centipede kagune, ghoul masks, coffee-shop refuge
+  aesthetic: Crimson hunger tension, alienated identity split, predatory color flares, fleshy ribbon abstraction, mask-like concealment, appetite rendered as graphic pressure
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Damp ink grain, membrane gloss, scratched matte surfaces, bruised translucency, red wet-edge accents, worn urban-neutral grit
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Identity-split framing, asymmetrical flare shapes, close pressure cropping, predatory negative space, invasive contour echoes
   atmosphere: Tormented, hungry, alienated, violent
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: Hunger wears a human face until the mask slips and the kakugan ignites red in the dark. Flesh blooms into weapons of terrible beauty, crimson tendrils unfurling like a flower that feeds on sorrow. The coffee shop is sanctuary, but the city outside knows only appetite.
+  creative_brief: >
+    Treat any input as a study in appetite, concealment, and identity fracture.
+    Push crimson flares through desaturated shadows, membrane-like gloss, and
+    invasive ribbon silhouettes while keeping the style abstract, transferable,
+    and free of fixed locations, named effects, or literal pursuit setups.
 avoidRules:
   - realistic
   - 3d render

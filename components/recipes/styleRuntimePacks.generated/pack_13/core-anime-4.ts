@@ -9,17 +9,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, western-comic, 3d-render, watermark, text, logo, low-quality',
     style: {
-      aesthetic: 'Classic shonen cel style with bright heroic energy.',
-      form_and_line: 'Clean medium-thick linework, expressive outlines, and clear poses.',
-      color_palette: 'Warm primaries, saturated skies, and simple shadows.',
-      lighting_setup: 'Key light frontal, rim light suave, cel shadow de dos tonos.',
-      material_texture: 'Subtle cel grain with a traditional painted background.',
-      render_quality: 'Premium TV anime frame, clean and readable.',
-      spatial_distortion: 'Moderate dynamic perspective with silhouette emphasis.',
-      atmosphere: 'Hope, courage, and narrative momentum.',
-      key_features: 'Intense expression, iconic pose, instant readability.',
+      aesthetic:
+        'Classic heroic-shonen cel language anchored in late-90s/2000s TV anime readability, optimistic adventure tonality, and emblematic subject-first clarity',
+      form_and_line:
+        'Medium-weight contour hierarchy, clear exterior silhouette lines, selective interior simplification, and pose-forward shape design for instant card legibility',
+      color_palette:
+        'Warm primaries, sunrise oranges, sky blues, clean skin midtones, and restrained complementary accents for high emotional clarity',
+      lighting_setup:
+        'Front-biased key with gentle warm rim, binary cel shadow stepping, and limited specular highlights to preserve traditional cel discipline',
+      material_texture:
+        'Light cel grain simulation, painted-background softness, controlled flat-fill transitions, and low-noise anime finish',
+      render_quality:
+        'Broadcast-grade cel anime polish with crisp line stability, stable color blocking, and premium key-visual readability at small sizes',
+      spatial_distortion:
+        'Moderate dynamic lensing with silhouette-priority composition and minimal context competition',
+      atmosphere: 'Uplifting, determined, adventurous, and emotionally forward',
+      key_features:
+        'Heroic silhouette dominance, expressive focal line, two-step cel shading logic, warm dawn tonal bias, and iconic pose readability',
       creative_brief:
-        'A determined protagonist at dawn, with strong vertical composition and a classic adventure spirit.',
+        'Use Cel Heroic Dawn as style anchor for optimistic classic-shonen energy: silhouette-led composition, disciplined cel-shadow layering, and warm dawn color momentum should transfer without requiring a hero archetype, adventure scene, or fixed character pose.',
     },
   },
   {
@@ -28,17 +36,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, watercolor, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Nighttime anime cyberpunk with rain and neon.',
-      form_and_line: 'Sharp strokes, urban silhouettes, and selective tech details.',
-      color_palette: 'Magenta, cyan, black, and electric accents.',
-      lighting_setup: 'Neon backlight with wet reflections and controlled bloom.',
-      material_texture: 'Asfalto mojado, metal satinado y cristales brillantes.',
-      render_quality: 'High-contrast modern anime illustration.',
-      spatial_distortion: 'Deep street perspective with dramatic vanishing point.',
-      atmosphere: 'Urban tension, stealth, and a futuristic pulse.',
-      key_features: 'Atmospheric neon, vigilant character, noir mood.',
+      aesthetic:
+        'Neon-noir anime language with rain-polished layering, alert silhouette pressure, high-chroma cyber color control, and nocturnal tension',
+      form_and_line:
+        'Razor-edged silhouette cuts, angular framing lines, selective tech glyph details, and convergent geometry for depth pressure',
+      color_palette:
+        'Dominant magenta-cyan duality, deep wet-black fields, electric accent nodes, and cool metallic neutrals for structural balance',
+      lighting_setup:
+        'Back-biased neon rim systems, wet-surface reflection pooling, constrained bloom halos, and low-key fill preserving noir contrast',
+      material_texture:
+        'Wet specular streaks, satin metal paneling, rain-beaded glass, luminous diffusion, and damp fabric micro-sheen',
+      render_quality:
+        'High-contrast contemporary anime finish with cinematic night grading, clean edge discipline, and robust thumbnail readability',
+      spatial_distortion:
+        'Deep vanishing-point compression with controlled perspective exaggeration and strong foreground-midground-background separation',
+      atmosphere: 'Tense, alert, nocturnal, technological, and atmospheric',
+      key_features:
+        'Neon channel reflections, rain-layer depth, alert silhouette framing, cyan-magenta contrast gating, and noir silhouette integrity',
       creative_brief:
-        'A guardian in a rainy alley with bold visual identity and strong card readability.',
+        'Use Neon City Vigil as style anchor for cyber-noir pressure: neon-backed silhouettes, rain-reflective surfaces, and controlled high-contrast color tension should transfer without requiring city streets, signage, or a literal vigilante scene.',
     },
   },
   {
@@ -47,17 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, toy-like, lowres, watermark, text, logo',
     style: {
-      aesthetic: 'Industrial anime mecha with monumental scale.',
-      form_and_line: 'Technical paneling, defined mechanical lines, and a robust silhouette.',
-      color_palette: 'Cold steel, signal orange, and deep blue.',
-      lighting_setup: 'Focos de hangar, chispas de mantenimiento y rim duro.',
-      material_texture: 'Brushed metal, technical grease, and visible cabling.',
-      render_quality: 'Launch key visual with controlled detail.',
-      spatial_distortion: 'Gran angular con profundidad de hangar.',
-      atmosphere: 'Combat preparation and latent power.',
-      key_features: 'Mecha scale, operators, launch energy.',
+      aesthetic:
+        'Industrial ignition anime language with monumental machine pressure, maintenance-bay realism as texture, and pre-deployment tension',
+      form_and_line:
+        'Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and infrastructural line grids supporting scale cues',
+      color_palette:
+        'Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds',
+      lighting_setup:
+        'High-bay spotlight beams, hard metallic rim accents, intermittent spark accents, and low ambient fill for mass emphasis',
+      material_texture:
+        'Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint edges, and matte industrial surfaces',
+      render_quality:
+        'High-detail mechanical key-visual rendering with disciplined readability, layered depth hierarchy, and production-grade anime polish',
+      spatial_distortion:
+        'Wide-angle industrial depth exaggeration with controlled perspective convergence to reinforce scale',
+      atmosphere: 'Pressurized, anticipatory, technical, and power-laden',
+      key_features:
+        'Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context, launch-readiness lighting cues, and scale contrast markers',
       creative_brief:
-        'A primary mecha in pre-mission ignition, with heroic presence and clear readability.',
+        'Use Mecha Hangar Ignition as style anchor for industrial scale drama: heavy mechanical construction, hard technical light, and infrastructure-like contrast should transfer without requiring a robot, hangar, operator, or launch scene.',
     },
   },
   {
@@ -66,17 +90,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, horror-gore, sci-fi-ui, watermark, text, logo',
     style: {
-      aesthetic: 'Japanese spiritual fantasy at twilight.',
-      form_and_line: 'Organic linework, stylized traditional clothing, and ethereal silhouettes.',
-      color_palette: 'Indigo, twilight orange, and paper white.',
-      lighting_setup: 'Warm backlight with spiritual halos.',
-      material_texture: 'Madera antigua, papel washi y niebla suave.',
-      render_quality: 'Mystical anime illustration with high clarity.',
-      spatial_distortion: 'Profundidad de santuario con capas de torii.',
-      atmosphere: 'Serenidad, misterio y reverencia.',
-      key_features: 'Guiding spirit, shrine, twilight light.',
+      aesthetic:
+        'Spiritual twilight anime language with folkloric reverence, liminal fantasy atmosphere, ceremonial restraint, and sacred hush',
+      form_and_line:
+        'Organic contour flow, traditional fold rhythm, gate-like depth cadence, and softened silhouette transitions for ethereal readability',
+      color_palette:
+        'Indigo dusk fields, twilight amber highlights, washi-paper ivory, muted vermilion accents, and low-saturation forest neutrals',
+      lighting_setup:
+        'Warm rear halo backlight, diffuse twilight ambient fill, soft volumetric mist scattering, and selective lantern-like accent points',
+      material_texture:
+        'Weathered timber grain, fibrous washi surfaces, stone humidity patina, and fine fog particulate softness',
+      render_quality:
+        'High-clarity mystical anime rendering with controlled sacred tone, balanced ornamental detail, and stable atmospheric depth',
+      spatial_distortion:
+        'Layered ceremonial-axis depth with mild perspective compression through repeated gate-like intervals',
+      atmosphere: 'Reverent, tranquil, mysterious, and spiritually liminal',
+      key_features:
+        'Gate-depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material authenticity, and restrained supernatural cues',
       creative_brief:
-        'A meeting between human and spirit in a ceremonial setting with a contemplative tone.',
+        'Use Spirit Shrine Twilight as style anchor for reverent liminality: layered ceremonial depth, indigo-amber dusk, and mist-lit sacred atmosphere should transfer without requiring a shrine, torii, forest, ritual clothing, or fixed folklore scene.',
     },
   },
   {
@@ -85,16 +117,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, muddy-motion, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Sports anime at competitive climax.',
-      form_and_line: 'Speed lines, explosive pose, and clean athletic anatomy.',
-      color_palette: 'Electric blue, white, and orange accents.',
-      lighting_setup: 'Luces de estadio con highlights intensos.',
-      material_texture: 'Sports flooring, stylized sweat, and technical fabric.',
-      render_quality: 'Final-impact frame with maximum readability.',
-      spatial_distortion: 'Perspective compression to intensify action.',
-      atmosphere: 'Determination, effort, and catharsis.',
-      key_features: 'Freeze-frame action, strong expressions, visual energy.',
-      creative_brief: 'A decisive match moment with instant readability and high emotion.',
+      aesthetic:
+        'High-impact competitive anime climax language with kinetic framing, performance pressure, and emotionally charged momentum',
+      form_and_line:
+        'Velocity-biased line bursts, dynamic foreshortening, clean action geometry, and trajectory arcs guiding focal impact',
+      color_palette:
+        'Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral surface tones',
+      lighting_setup:
+        'Arena-like overhead arrays, hard specular highlights, motion-accent rim lighting, and selective contrast peaks at action focal zones',
+      material_texture:
+        'Polished surface reflections, moisture sheen, breathable fabric-like detail, and chalk/rubber micro-particulate cues',
+      render_quality:
+        'Broadcast-ready action frame quality with crisp motion readability, controlled detail density, and premium key-moment clarity',
+      spatial_distortion:
+        'Perspective compression with directional motion tunneling to intensify speed and impact perception',
+      atmosphere: 'Driven, explosive, cathartic, and performance-maximized',
+      key_features:
+        'Freeze-frame kinetic apex, competitive focal intensity, speed-line hierarchy, arena-light contrast gating, and action-vector composition',
+      creative_brief:
+        'Use Sports Climax Arena as style anchor for peak-performance impact: speed-vector composition, high-contrast athletic lighting, and action readability should transfer without requiring a stadium, court, athlete, or specific sport.',
     },
   },
   {
@@ -103,16 +144,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, cute-chibi, daylight, watermark, text, logo',
     style: {
-      aesthetic: 'Gothic vampire anime with dark elegance.',
-      form_and_line: 'Dramatic fine outlines and ornate wardrobe.',
-      color_palette: 'Burgundy, black, silver, and deep violet.',
-      lighting_setup: 'Warm candelabras against dense shadows.',
-      material_texture: 'Velvet, marble, and aged metal.',
-      render_quality: 'Sophisticated nighttime-mansion illustration.',
-      spatial_distortion: 'Perspectiva interior con profundidad teatral.',
-      atmosphere: 'Aristocratic melancholy and subtle danger.',
-      key_features: 'Escalinata, protagonista en capa, aura inquietante.',
-      creative_brief: 'An iconic vampiric presence in a baroque setting, readable and elegant.',
+      aesthetic:
+        'Gothic-vampiric anime language with aristocratic decadence, nocturnal romantic tension, and baroque theatricality',
+      form_and_line:
+        'Fine dramatic contouring, elongated regal silhouette treatment, ornate trim lines, and sweeping diagonal composition',
+      color_palette:
+        'Burgundy wine reds, abyssal blacks, oxidized silver accents, deep violet shadows, and candle-amber warmth',
+      lighting_setup:
+        'Candle-like key pools against heavy ambient darkness, selective rim highlights on edges, and controlled chiaroscuro depth layering',
+      material_texture:
+        'Crushed velvet drape, polished marble-like planes, aged wrought metal ornament, satin sheen, and carved dark-wood detail',
+      render_quality:
+        'High-polish gothic anime rendering with luxurious material separation, elegant contrast control, and premium nocturnal readability',
+      spatial_distortion:
+        'Theatrical depth recession through baroque diagonals, arch-like frames, and staged shadow anchors',
+      atmosphere: 'Seductive, melancholic, aristocratic, ominous, and composed',
+      key_features:
+        'Regal silhouette dominance, baroque ornament cadence, candlelit shadow orchestration, velvet-black value control, and noble-gothic iconography',
+      creative_brief:
+        'Use Gothic Vampire Manor as style anchor for aristocratic darkness: burgundy-black chiaroscuro, velvet materiality, and baroque silhouette drama should transfer without requiring a manor, staircase, cape, vampire, or interior scene.',
     },
   },
   {
@@ -121,16 +171,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, gritty, dark-horror, watermark, text, logo',
     style: {
-      aesthetic: 'Bright magical-girl style with prismatic transformation.',
-      form_and_line: 'Soft linework, elegant silhouette, and symbolic accessories.',
-      color_palette: 'Rosa, cyan, amarillo estrella y blanco.',
-      lighting_setup: 'Radial glow, magical particles, and clean bloom.',
-      material_texture: 'Ribbons, luminous jewelry, and soft sparkles.',
-      render_quality: 'High-impact colorful anime illustration.',
-      spatial_distortion: 'Dynamic abstract background for total focus on the character.',
-      atmosphere: 'Optimism, bravery, and charming fantasy.',
-      key_features: 'Transformation pose, magical emblem, radial energy.',
-      creative_brief: 'A heroine at peak power with vibrant, well-organized aesthetics.',
+      aesthetic:
+        'Transformational magical-girl anime language with prismatic optimism, ceremonial empowerment motifs, and icon-driven luminous confidence',
+      form_and_line:
+        'Graceful tapered linework, ribbon-led motion arcs, jewel-emblem geometry, and silhouette-first shape design tuned for transformation readability',
+      color_palette:
+        'Pastel rose, radiant cyan, star-yellow accents, clean whites, and high-chroma jewel highlights balanced by soft skin neutrals',
+      lighting_setup:
+        'Radial magical key bloom, layered particle glints, selective rim aura bands, and controlled sparkle density around focal emblems',
+      material_texture:
+        'Satin ribbons, polished gem-like ornaments, soft-glow fabric trims, and fine glitter particulate overlays',
+      render_quality:
+        'High-impact colorful anime finish with crisp transformation staging, disciplined effect hierarchy, and strong card-scale clarity',
+      spatial_distortion:
+        'Abstract radial dynamics that preserve central subject dominance while amplifying burst direction',
+      atmosphere: 'Hopeful, brave, luminous, and emotionally uplifting',
+      key_features:
+        'Transformation silhouette lock, emblem-centric composition, prism-energy ring motifs, and sparkle-field rhythm control',
+      creative_brief:
+        'Use Magical Girl Prism Burst as style anchor for luminous transformation: emblem-led power staging, prismatic color harmony, and ribbon-plus-particle motion should transfer without requiring a magical girl, costume change, or character-centered ritual scene.',
     },
   },
   {
@@ -139,16 +198,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, sci-fi-city, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Adventurous isekai with a caravan in a fantasy forest.',
-      form_and_line: 'Character design varied by class and role.',
-      color_palette: 'Forest greens, soft gold, and leather tones.',
-      lighting_setup: 'Light filtered through leaves, friendly shadows.',
-      material_texture: 'Wood, travel fabric, and handcrafted metal.',
-      render_quality: 'Escena party-anime con claridad de grupo.',
-      spatial_distortion: 'Layered composition with natural depth.',
-      atmosphere: 'Camaraderie, discovery, and an open road.',
-      key_features: 'Dynamic party, mount, visual travel map.',
-      creative_brief: 'A traveling party in a living world with a bright adventurous tone.',
+      aesthetic:
+        'Isekai travel anime language with warm exploratory spirit, class-coded styling, fantasy worldbuilding clarity, and friendly journey momentum',
+      form_and_line:
+        'Role-coded silhouettes, layered travel-flow lines, accessory-like readability cues, and forward-motion composition arcs',
+      color_palette:
+        'Forest greens, mossy neutrals, warm leather browns, soft gold accents, and sky-filtered natural highlights',
+      lighting_setup:
+        'Leaf-filtered key light, dappled bounce, soft shadow pooling, and warm rim accents on travel-texture focal points',
+      material_texture:
+        'Handworked wood grain, stitched travel fabrics, worn leather straps, forged low-polish metal fittings, and dust-softened surfaces',
+      render_quality:
+        'Ensemble-aware anime rendering with clear hierarchy, environmental cohesion, and reliable small-card legibility',
+      spatial_distortion:
+        'Layered journey composition using mild depth compression to keep subject readability without losing world scale',
+      atmosphere: 'Adventurous, friendly, curious, and road-forward',
+      key_features:
+        'Class-distinct design language, travel-texture cues, gear-like silhouette markers, and path-to-horizon compositional flow',
+      creative_brief:
+        'Use Isekai Forest Caravan as style anchor for warm fantasy travel: class-readable silhouettes, nature-filtered light, and journey-centric texture should transfer without requiring forest, caravan, party members, mounts, or travel props.',
     },
   },
   {
@@ -157,17 +225,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, daylight, flat-color-only, watermark, text, logo',
     style: {
-      aesthetic: 'Dungeon anime with bioluminescence and mystical echoes.',
-      form_and_line: 'Clear outlines, exploration props, and threatening silhouettes.',
-      color_palette: 'Dark blue, glowing green, and subdued amber.',
-      lighting_setup: 'Torchlight plus bioluminescent sources.',
-      material_texture: 'Wet stone, crystals, and underground mist.',
-      render_quality: 'Anime environment scene with explorer-focused framing.',
-      spatial_distortion: 'Tunnel perspective with progressive tension.',
-      atmosphere: 'Suspenso, curiosidad y peligro latente.',
-      key_features: 'Glowing portal, explorer backpack, runes.',
+      aesthetic:
+        'Labyrinthine glow anime language with bioluminescent mysticism, survival-focused readability, and escalating subterranean tension',
+      form_and_line:
+        'Clear contour hierarchy, jagged threat-like silhouettes, rune-guided path geometry, and tunnel-axis perspective lines that build pressure',
+      color_palette:
+        'Abyssal blue foundations, toxic-lime bioluminescent accents, muted amber torch warmth, and stone-neutral grays for value stability',
+      lighting_setup:
+        'Dual-source contrast of warm practicals and cool bio-glow pockets, with controlled fog diffusion and high-value focal anchoring',
+      material_texture:
+        'Moist carved stone faces, crystalline growth nodes, mossy damp seams, airborne subterranean mist, and weathered surface detail',
+      render_quality:
+        'High-clarity exploration-anime render with focal design, strong depth readability, and suspense-preserving tonal discipline',
+      spatial_distortion:
+        'Progressive tunnel-like compression with layered occlusion planes to intensify danger anticipation',
+      atmosphere: 'Suspenseful, curious, cautious, and latent-threat driven',
+      key_features:
+        'Bioluminescent rune cues, portal-like glow anchors, survival silhouette markers, and moisture-rich cavern material signatures',
       creative_brief:
-        'Expedition through a deep passage with atmospheric mood and crisp readability.',
+        'Use Meikyuu Dungeon Glow as style anchor for subterranean suspense: warm-cool bio glow, rune-guided spatial tension, and wet mineral material fidelity should transfer without requiring a dungeon, explorers, torches, or portal scene.',
     },
   },
   {
@@ -176,16 +252,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, ultra-clean-digital, lowres, watermark, text, logo',
     style: {
-      aesthetic: '90s retro mecha with stylized VHS grain.',
-      form_and_line: 'Angular design, armor panels, and visible cockpit.',
-      color_palette: 'Petrol blue, signal red, and warm white.',
-      lighting_setup: 'Hard hangar light and analog flares.',
-      material_texture: 'Grano retro, scanlines leves y cel paint.',
-      render_quality: 'Nostalgic OVA-style frame with a modern touch.',
-      spatial_distortion: 'Heroic framing with dramatic compression.',
-      atmosphere: 'Nostalgia, mechanical power, and classic drama.',
-      key_features: 'Central mecha, maintenance crew, analog vibe.',
-      creative_brief: 'A frame that evokes classic OVAs without losing contemporary sharpness.',
+      aesthetic:
+        '90s OVA-inspired retro-machine language blending analog broadcast nostalgia, angular industrial heroism, and cel-era cinematic staging',
+      form_and_line:
+        'Sharp mechanical contouring, segmented panel logic, enclosed focal framing, and robust silhouette framing for era-authentic machine presence',
+      color_palette:
+        'Petrol blue base, signal red accents, warm off-white highlights, graphite metal neutrals, and subtle CRT-era chroma bias',
+      lighting_setup:
+        'Hard industrial directional keys, analog lens-flare streaks, practical warning-light accents, and constrained shadow blocks echoing cel-era compositing',
+      material_texture:
+        'VHS grain overlays, mild horizontal scanline artifacts, painted cel-surface feel, worn industrial metal edges, and lightly noisy analog gradation',
+      render_quality:
+        'High-fidelity retro-anime frame quality with period-authentic artifact simulation and modern readability control',
+      spatial_distortion:
+        'Heroic telephoto-compressed action staging with strong machine-form dominance and layered support-depth cues',
+      atmosphere: 'Nostalgic, mechanical, dramatic, and mission-ready',
+      key_features:
+        'OVA-era mechanical silhouette authority, analog artifact signature, scale contrast, and hard-lit industrial context',
+      creative_brief:
+        'Use Retro Mecha VHS Grain as style anchor for analog industrial drama: angular cel-era machine design, signal artifacts, and hard directional lighting should transfer without requiring a mecha, cockpit, hangar, crew-scale marker, or launch context.',
     },
   },
   {
@@ -194,16 +279,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, goofy-chibi, modern-guns, watermark, text, logo',
     style: {
-      aesthetic: 'Urban samurai anime with a dusk duel.',
-      form_and_line: 'Long silhouettes, katana, and a tense stance.',
-      color_palette: 'Ink blue, subdued red, and street beige.',
-      lighting_setup: 'Warm lanterns and crossing hard shadows.',
-      material_texture: 'Wet stone, traditional fabric, and polished steel.',
-      render_quality: 'Duel key visual with clear action readability.',
-      spatial_distortion: 'Narrow street with dramatic central vanishing point.',
-      atmosphere: 'Honor, silencio y choque inminente.',
-      key_features: 'Two opposing figures, fine rain, static tension.',
-      creative_brief: 'The instant before the decisive strike—restrained and powerful.',
+      aesthetic:
+        'Ritualized stillness anime language with disciplined minimalism, dusk-noir restraint, and pre-impact tension',
+      form_and_line:
+        'Elongated opposing silhouettes, blade-like directional vectors, narrow axial composition, and stillness-biased geometry',
+      color_palette:
+        'Ink blue shadows, muted crimson accents, weathered stone beige, lantern amber highlights, and steel-gray reflective notes',
+      lighting_setup:
+        'Warm lantern-like pockets against cool dusk ambient, crossing hard shadow diagonals, and selective blade-edge rim accents',
+      material_texture:
+        'Rain-darkened stone texture, woven traditional textiles, polished worn steel surfaces, and fine mist particulate layers',
+      render_quality:
+        'Precision pre-impact key-visual rendering with strong pose readability, restrained FX noise, and high emotional tension clarity',
+      spatial_distortion:
+        'Central vanishing-point compression reinforcing confrontation symmetry and imminent-impact focus',
+      atmosphere: 'Honorable, silent, severe, and imminently explosive',
+      key_features:
+        'Opposition-lock silhouettes, rain-thread depth cues, blade-highlight discipline, and lantern-shadow conflict lines',
+      creative_brief:
+        'Use Ronin Alley Duel as style anchor for ritualized stillness: pre-impact restraint, lantern-versus-dusk contrast, and silhouette-driven blade tension should transfer without requiring ronin, alley, katana, two combatants, or duel event.',
     },
   },
   {
@@ -212,16 +306,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, low-contrast, muddy-fx, watermark, text, logo',
     style: {
-      aesthetic: 'Anime battle fantasy with elemental magic.',
-      form_and_line: 'Sorceress design with cape and dynamic gesture.',
-      color_palette: 'Storm blue, electric white, and violet.',
-      lighting_setup: 'Magical discharges as the primary light source.',
-      material_texture: 'Ritual fabric, glowing runes, and energy particles.',
-      render_quality: 'High-impact combat illustration.',
-      spatial_distortion: 'Upward perspective with enveloping energy.',
-      atmosphere: 'Poder, urgencia y grandiosidad arcana.',
-      key_features: 'Magic circle, central lightning bolt, dominant pose.',
-      creative_brief: 'Spell at peak climax with strong readability and a memorable form.',
+      aesthetic:
+        'Arcane stormcast anime language with elemental authority, ritual-combat iconography, and high-impact fantasy dynamism',
+      form_and_line:
+        'Commanding silhouette, cape-like motion vectors, rune-circle geometry anchors, and upward gesture lines emphasizing energy-release force',
+      color_palette:
+        'Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver highlights for energy separation',
+      lighting_setup:
+        'Spell-like emission as dominant key source, secondary rune uplight, high-contrast rim flashes, and particulate glow falloff control',
+      material_texture:
+        'Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous rune-inscription edges',
+      render_quality:
+        'Premium combat-anime rendering with sharp energy readability, disciplined effects layering, and strong pose-to-energy coherence',
+      spatial_distortion:
+        'Low-angle upward perspective with radial energy wrap and controlled context warping around focal point',
+      atmosphere: 'Urgent, powerful, grand, and arcane-charged',
+      key_features:
+        'Central magic-circle architecture, lightning discharge hierarchy, dominant stance geometry, and rune-particle choreography',
+      creative_brief:
+        'Use Battle Mage Stormcast as style anchor for arcane impact: rune-anchored geometry, electric-violet energy hierarchy, and low-angle dominance should transfer without requiring a mage, spell duel, cape, floor circle, or battle event.',
     },
   },
   {
@@ -230,16 +333,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, colorful-rainbow, 3d-render, watermark, text, logo',
     style: {
-      aesthetic: 'Anime detective noir with a strong ink language.',
-      form_and_line: 'High contrast, hard outlines, and graphic shadows.',
-      color_palette: 'Black and white with a single crimson accent.',
-      lighting_setup: 'Intense sidelight and venetian-blind shadows.',
-      material_texture: 'Rough paper, light rain, and minimal shine.',
-      render_quality: 'Highly readable anime noir poster style.',
-      spatial_distortion: 'Tight framing for psychological mystery.',
-      atmosphere: 'Intrigue, solitude, and deduction.',
-      key_features: 'Gabardina, calle nocturna, pista visual central.',
-      creative_brief: 'A detective at the moment of discovery—dramatic and restrained.',
+      aesthetic:
+        'Ink-driven anime noir language with psychological austerity, midnight isolation, and clue-like focal tension',
+      form_and_line:
+        'Hard-edged contour blocks, bold black massing, angular coat-like silhouettes, and graphic shadow slicing inspired by crime-poster composition',
+      color_palette:
+        'Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or emotional stress points',
+      lighting_setup:
+        'Severe lateral key, venetian-shadow banding, wet specular cuts, and controlled negative fill for noir depth retention',
+      material_texture:
+        'Rough matte paper-like grain, light drizzle particulate, damp sheen, and low-gloss textile surfaces',
+      render_quality:
+        'Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic restraint at card scale',
+      spatial_distortion:
+        'Tight focal framing with compressed depth to heighten claustrophobic deduction mood',
+      atmosphere: 'Intriguing, solitary, tense, and cerebral',
+      key_features:
+        'Trenchcoat-like silhouette authority, central evidence-like anchor, striped shadow patterning, and crimson clue-emphasis logic',
+      creative_brief:
+        'Use Ink Noir Detective as style anchor for cerebral shadow tension: monochrome ink massing, selective crimson focal accents, and hard lateral shadow architecture should transfer without requiring detective, evidence, trenchcoat, city, or crime scene.',
     },
   },
   {
@@ -248,16 +360,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, dark-gore, sci-fi-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Gentle anime fantasy with a spirit courier.',
-      form_and_line: 'Organic linework, youthful silhouette, and companion creature.',
-      color_palette: 'Forest green, cream, and sky blue.',
-      lighting_setup: 'Soft natural morning light between trees.',
-      material_texture: 'Leaves, handcrafted leather, and sealed paper.',
-      render_quality: 'Charming illustration in a calm-adventure style.',
-      spatial_distortion: 'Path perspective with layered organic depth.',
-      atmosphere: 'Curiosidad, bondad y viaje personal.',
-      key_features: 'Letter satchel, small spirit, forest path.',
-      creative_brief: 'A mystical delivery day with a warm, familiar tone.',
+      aesthetic:
+        'Gentle pastoral-fantasy anime language with kindness-forward adventure, spirit-like charm, soft journey rhythm, and quiet magic',
+      form_and_line:
+        'Organic natural contours, mobile rounded silhouettes, satchel-and-scroll-like readability cues, and curved path lines guiding progression',
+      color_palette:
+        'Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued saturation',
+      lighting_setup:
+        'Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that preserves tranquil tone',
+      material_texture:
+        'Leaf-layer variation, hand-stitched leather texture, waxed paper-like surfaces, mossy bark grain, and soft mist diffusion',
+      render_quality:
+        'Charming high-clarity anime rendering with calm exploratory pacing, reliable subject-prop hierarchy, and cozy fantasy polish',
+      spatial_distortion:
+        'Path-led layered depth with gentle atmospheric perspective and companion-like silhouette legibility',
+      atmosphere: 'Kind, curious, hopeful, and quietly magical',
+      key_features:
+        'Courier-like iconography, spirit-companion silhouette cues, path-to-nature depth rhythm, and letter-delivery texture anchors',
+      creative_brief:
+        'Use Forest Spirit Courier as style anchor for gentle fantasy delivery: pastoral palette harmony, journey-guided composition, and spirit-companion warmth should transfer without requiring forest, courier, satchel, letter, companion creature, or delivery scene.',
     },
   },
   {
@@ -266,16 +387,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     negativePrompt: 'photoreal, comedy-chibi, lowres, watermark, text, logo',
     style: {
-      aesthetic: 'Epic anime finale with a sunset skyline.',
-      form_and_line: 'Mature protagonist silhouette and contemplative stance.',
-      color_palette: 'Twilight orange, deep blue, and soft black.',
-      lighting_setup: 'Low-sun backlight with a cinematic halo.',
-      material_texture: 'Wind through clothing, city lights, and clear sky.',
-      render_quality: 'End-of-season still—elegant and emotional.',
-      spatial_distortion: 'Wide establishing shot with figure in the foreground.',
-      atmosphere: 'Resolution, nostalgia, and an open future.',
-      key_features: 'Horizonte urbano, capa al viento, mood de despedida.',
-      creative_brief: 'Closing image with restrained emotion and iconic presence.',
+      aesthetic:
+        'End-of-season finale anime language with mature reflection, horizon-scale closure, and restrained emotional catharsis',
+      form_and_line:
+        'Foreground silhouette anchoring, wind-reactive linework, broad horizon layering, and clean negative-space framing for narrative finality',
+      color_palette:
+        'Twilight orange gradients, deep cobalt-blue distance fields, softened charcoal shadows, and sparse amber accents',
+      lighting_setup:
+        'Low-sun rear key halo, long-shadow foreground shaping, subtle rim highlights on figure edges, and controlled atmospheric glow',
+      material_texture:
+        'Wind-brushed fabric folds, distant light haze, clean evening sky gradation, and matte structural surfaces',
+      render_quality:
+        'Elegant cinematic anime still quality with high compositional discipline, emotional clarity, and poster-like finale readability',
+      spatial_distortion:
+        'Wide establishing composition with foreground-to-horizon scale contrast and stable horizon control',
+      atmosphere: 'Resolute, nostalgic, contemplative, and future-facing',
+      key_features:
+        'Backlit silhouette framing, sunset horizon stratification, wind-motion line cues, and farewell-tone color orchestration',
+      creative_brief:
+        'Use Final Episode Skyline as style anchor for reflective closure: sunset-backlit silhouette, wide horizon staging, and restrained end-episode tonality should transfer without requiring skyline, rooftop, hero-back pose, city lights, or finale scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Outdoor-camp comfort anime language emphasizing practical gear intimacy, winter-night warmth contrast, and contemplative nature companionship
-  form_and_line: Relaxed rounded contouring with utilitarian prop readability, layered blanket silhouettes, and cooking-task micro-gesture clarity
-  color_palette: Cool mountain blues and pine greens balanced by firelit oranges, wool neutrals, and muted camping-gear earthy accents
-  lighting_setup: Campfire-centered warm key with cool ambient night fill, ember micro-highlights, and gentle steam-lit edge separation
-  material_texture: Brushed camping textiles, enamel cookware sheen, wood and pine-cone roughness, thermal breath haze, and lightweight tent-fabric diffusion
+  aesthetic: Outdoor-comfort anime language emphasizing practical intimacy, cold-warm contrast, and contemplative companionship
+  form_and_line: Relaxed rounded contouring with utilitarian readability, layered comfort silhouettes, and small-task micro-gesture clarity
+  color_palette: Cool mountain blues and pine greens balanced by firelit oranges, wool neutrals, and muted earthy accents
+  lighting_setup: Warm thermal key with cool ambient fill, ember-like micro-highlights, and gentle steam-lit edge separation
+  material_texture: Brushed textiles, enamel-like sheen, rough natural grain, thermal breath haze, and lightweight fabric diffusion
   render_quality: Cozy high-clarity camp slice render with tactile gear detail, slow pacing tone, and comfort-forward atmospheric balance
-  spatial_distortion: Grounded natural-space framing with intimate foreground activity and serene background landscape depth
+  spatial_distortion: Grounded natural-space framing with intimate foreground warmth and serene background depth
   atmosphere: Serene, restorative, practical, and warmly introspective
-  key_features: Fire-and-food comfort anchors, authentic camping prop language, cold-vs-warm tonal dialogue, and quiet companionship cues
+  key_features: Thermal comfort anchors, practical-use cues, cold-vs-warm tonal dialogue, and quiet companionship cues
   creative_brief: >-
-    Preserve campfire-comfort grammar as a reusable style system: practical
-    outdoor gear intimacy, warm firelight against cool nature ambience, and
-    unhurried restorative pacing should remain consistent across subjects.
+    Use the title as a style anchor for restorative outdoor warmth. Keep
+    practical intimacy, cold-warm dialogue, and unhurried pacing without
+    requiring campfire, food, tents, or camping props.
 avoidRules:
   - realistic
   - 3d render

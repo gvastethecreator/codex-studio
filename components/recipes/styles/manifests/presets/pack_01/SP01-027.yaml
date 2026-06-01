@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Car windshield view
+  aesthetic: Mounted glass POV
   form_and_line: Wide angle
   color_palette: Digital, utilitarian
-  lighting_setup: Headlights or street
+  lighting_setup: Hard practical light
   material_texture: Windshield reflection, rain
-  render_quality: Raw, accident footage
+  render_quality: Raw incident recorder
   spatial_distortion: Motion blur
   atmosphere: Real, urgent
-  key_features: Dashboard visible
-  creative_brief: The unblinking witness behind glass, recording the ordinary poetry of asphalt and headlights. A mechanical gaze that transforms highways into quiet epics and streetlamps into constellations. The windshield becomes a lens through which the banal reveals its strange, urgent beauty.
+  key_features: Glass reflection frame
+  creative_brief: 'Mounted recorder vision behind imperfect glass: wide angle, utilitarian digital color, reflection streaks, rain smear potential, hard practical lights, and motion blur. Use dashcam urgency on any subject without requiring road, dashboard, car interior, or highway narrative.'
 avoidRules:
   - portrait
   - studio

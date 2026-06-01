@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Religious-firefighter action, glowing ember halos, rescue teams in black coats, infernal combustion, cathedral-industrial interiors, liturgical symbolism mixed with speed-line heroics
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Cathedral inferno action, with liturgical flame, ember halos, sacred urgency, and industrial heat.
+  form_and_line: Speed-line heroics, vertical nave geometry, ignition arcs, black silhouette cuts, and prayerlike motion rhythm.
+  color_palette: Ember orange, soot black, stained-glass blue, sacred gold, ash gray, and white-hot ignition points.
+  lighting_setup: Flame underlight, volumetric sacred rays, explosive backlight, and ember-bloom halos.
+  material_texture: Soot grain, charred metal, glowing ash, polished cel fire, stained-glass color bleed, and heat shimmer.
+  render_quality: Premium modern anime finish with crisp flame readability, sacred scale, and kinetic rescue urgency.
+  spatial_distortion: Vertical heat columns, speed-stretched embers, and cathedral-scale depth suggested through light.
   atmosphere: Blazing, heroic, sacred, kinetic
-  key_features: Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing
-  creative_brief: Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved.
+  key_features: Ember halos, liturgical flame, black silhouette cuts, ignition motion, sacred heat.
+  creative_brief: >-
+    Apply sacred inferno energy to any prompt: make flame feel ceremonial,
+    emergency-like, and luminous through ember halos, vertical rays, and black
+    silhouette contrast without requiring a brigade, cathedral, or rescue scene.
 avoidRules:
   - realistic
   - 3d render

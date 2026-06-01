@@ -8,14 +8,14 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
   aesthetic: Abyssal rave ecology where pressure architecture hides inside living neon reef and darkness becomes a material.
-  form_and_line: Pressure dome curves, lock-ring collars, branching reef antennae, descending cable arcs, and bubble-like habitat clusters.
+  form_and_line: Pressure-dome curves, lock-ring collars, branching reef antennae, descending cable arcs, and bubble clusters.
   color_palette: Abyss ultramarine, neon violet, electric cyan, black water, and pale mineral glow.
   lighting_setup: Pulsing bioluminescent ribs, narrow submersible beams, sonar flashes, and particulate sparkle swallowed by darkness.
   material_texture: Pressure glass, bio-resin shells, mineral-encrusted frames, wet luminous coral skins, and rubber seal bands.
   render_quality: Cinematic underwater concept with clean pressure-depth layering and no generic aquarium prettiness.
   spatial_distortion: Vertical descent composition stacks glow layers like pressure zones, making distance feel heavy and submerged.
   atmosphere: Subaquatic nightlife, alien intimacy, adaptive resilience, and beautiful claustrophobia.
-  key_features: Neon coral arrays, pressure-lock collars, sonar-lit gathering rings, black-water voids, and submersible docking scars.
+  key_features: Neon coral arrays, pressure-lock collars, sonar rings, black-water voids, and submersible-scar detailing.
   creative_brief: >-
     Preserve abyssal neon-reef grammar as a reusable style system:
     pressure-adapted luminous ecology, black-water depth layering, and

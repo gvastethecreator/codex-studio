@@ -13,15 +13,15 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Aerochrome style
-  form_and_line: Glowing foliage
-  color_palette: Pink/Red foliage, dark sky
+  form_and_line: Glowing infrared edges
+  color_palette: Pink/Red highlights, dark cyan shadows
   lighting_setup: Surreal
   material_texture: Grainy
   render_quality: Psychedelic, scientific
   spatial_distortion: False color
   atmosphere: Alien, dreamlike
-  key_features: Red trees
-  creative_brief: 'The spectrum inverted: chlorophyll blazing crimson against a sky gone indigo, as if the world were photographed through the eyes of a creature from a warmer star. Familiar landscapes become extraterrestrial elegies, the visible spectrum bending toward frequencies the waking eye was never meant to witness.'
+  key_features: False-color infrared response
+  creative_brief: 'The spectrum inverted: reflective surfaces flare pink and red, shadows cool toward indigo, and ordinary material becomes alien under infrared logic. Bend any subject toward Aerochrome false color and scientific psychedelia; no foliage, trees, sky, or landscape required.'
 avoidRules:
   - illustration
   - painting

@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Reactor spa atompunk where wellness is sanitized, circular, and powered by suspiciously perfect surplus heat.
-  form_and_line: Smooth dome shells, concentric pool rings, turbine-water spirals, capsule kiosks, and changing arcades with rounded hygiene lines.
+  aesthetic: Reactor-wellness atompunk where sanitized circular calm is powered by suspiciously perfect surplus heat.
+  form_and_line: Smooth dome shells, concentric thermal rings, turbine-water spirals, capsule modules, and rounded hygiene lines.
   color_palette: Pool aqua, clinic white, citrus yellow, chrome silver, and pale isotope green.
   lighting_setup: Diffuse dome daylight, underwater luminous bands, steam glow, and clean status lights above hydrotherapy controls.
   material_texture: Glazed tile, anti-slip stone, polished steel rails, wet enamel, translucent safety panels, and rubber pool grates.
   render_quality: Lifestyle concept with hygienic detail, coherent energy logic, and tactile wet surfaces.
-  spatial_distortion: Bowl geometry centers warm isotope rings while circulating water paths loop like a health diagram.
+  spatial_distortion: Bowl geometry centers warm isotope rings while circulation paths loop like a health diagram.
   atmosphere: Wellness, civic pride, thermal luxury, and sanitized reactor unease.
-  key_features: Thermal isotope rings, health kiosk capsules, wave-turbine displays, hydrotherapy panels, and towel-color protocol stripes.
+  key_features: Thermal isotope rings, health-capsule forms, wave-turbine displays, hydrotherapy panels, and protocol color stripes.
   creative_brief: >-
     Preserve nuclide aquatics-dome grammar as a reusable style system:
     reactor-surplus wellness aesthetics, circular hydro-civic optimization,

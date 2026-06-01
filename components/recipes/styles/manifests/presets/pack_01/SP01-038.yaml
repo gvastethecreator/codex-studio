@@ -13,22 +13,21 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Glamour lighting
-  form_and_line: Shadow under nose
+  form_and_line: Centered lower cast shadow
   color_palette: Flattering
   lighting_setup: High frontal
-  material_texture: Smooth
-  render_quality: Beauty, Paramount
+  material_texture: Smooth frontal polish
+  render_quality: Beauty-light studio polish
   spatial_distortion: None
   atmosphere: Beautiful
-  key_features: Symmetrical shadow
-  creative_brief: The architecture of glamour cast from above, a butterfly-shaped shadow settling beneath the nose like a signature of perfection. High frontal radiance that smooths and elevates, descended from old Hollywood's insistence that light should flatter before it reveals. Symmetry made luminous, beauty rendered architectural.
+  key_features: Symmetrical lower shadow
+  creative_brief: 'High frontal light creates symmetrical glamour structure: polished surfaces, controlled falloff, centered lower cast shadow, and old-Hollywood smoothness. Apply the butterfly-light signature to any subject without requiring a nose, face, makeup, or human beauty setup.'
 avoidRules:
   - side light
-  - shadow
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-038.webp
 attributes:
-  negativePrompt: side light, shadow
+  negativePrompt: side light
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

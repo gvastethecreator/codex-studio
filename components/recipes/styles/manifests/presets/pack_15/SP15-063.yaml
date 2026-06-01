@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Raypunk border bureaucracy rendered as a hostile machine of stamps, pressure locks, scanners, and dust.
-  form_and_line: Clamp-like corridors, cargo gantry teeth, octagonal lock chambers, barcode shadows, and turret-eye circles.
+  aesthetic: Raypunk border bureaucracy rendered as hostile machinery of stamps, pressure locks, scanners, and dust.
+  form_and_line: Clamp-like corridors, cargo-gantry teeth, octagonal lock frames, barcode shadows, and turret-eye circles.
   color_palette: Asteroid rust, warning yellow, vacuum black, faded stamp red, and cold viewport blue.
   lighting_setup: Flickering industrial strips, rim-lit inspection windows, and scanner bars slicing forms into legal zones.
   material_texture: Bolted armor plates, abraded hazard paint, dusted alloy, rubber seals, and over-stamped cargo labels.
   render_quality: Functional scifi concept with bold silhouettes and oppressive procedural clarity.
-  spatial_distortion: Tunnel-depth funnel toward inspection jaws, with gates narrowing like paperwork decisions.
+  spatial_distortion: Tunnel-depth funnel toward inspection jaws, with frames narrowing like paperwork decisions.
   atmosphere: Frontier law, procedural dread, and absurd cosmic administration.
-  key_features: Customs scanner arches, ray turret eyes, pneumatic stamp kiosks, confiscation cages, and permit-slot geometry.
+  key_features: Scanner arches, ray turret eyes, pneumatic stamp blocks, confiscation-grid cages, and permit-slot geometry.
   creative_brief: >-
     Push asteroid customs-gate as reusable style: make forms feel inspected,
     stamped, divided, and legally trapped, with raypunk hardware behaving like

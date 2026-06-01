@@ -13,15 +13,15 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Intimate portrait
-  form_and_line: Curves
+  form_and_line: Soft curve emphasis
   color_palette: Warm, dark, red
   lighting_setup: Moody, window
-  material_texture: Lace, sheets, skin
+  material_texture: Lace-like texture, soft fabric, warm surface
   render_quality: Sensual, private
   spatial_distortion: None
   atmosphere: Intimate, soft
-  key_features: Bed or window
-  creative_brief: Shadow drapes itself across skin like whispered permission, the space between fabric and flesh becoming its own language. Intimacy here is not revealed but protected, a sanctuary built of warm darkness and unguarded trust.
+  key_features: Protected intimacy
+  creative_brief: 'Boudoir style becomes protected intimate lighting: warm dark palette, soft curve emphasis, lace-like texture, window-shaped mood, and private shadow control. Apply sensual editorial atmosphere without requiring bed, skin, body, lingerie, or explicit content.'
 avoidRules:
   - explicit
   - harsh

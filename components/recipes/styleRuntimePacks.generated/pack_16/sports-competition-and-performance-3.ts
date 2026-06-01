@@ -5,842 +5,805 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-343',
-    name: 'Haikyuu!! - Orange-Court Jump Fever',
+    name: 'Vertical Team Rally Energy Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Volleyball momentum, spring-loaded jumps, gymnasium light, underdog team chemistry, orange court heat, libero dives and setter precision rendered with ecstatic motion clarity',
+        'Shonen deportivo de impulso vertical, cooperación táctica, sincronía de equipo y lectura de ritmo colectivo.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre roles.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Naranjas cálidos de rebote, cian competitivo, blancos energéticos y contraste cromático por rol visual.',
+      lighting_setup: 'Luz de alto rebote con backlight de impacto para siluetas aéreas legibles.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficies brillantes, malla geométrica sugerida, tela transpirable y marcas de fricción.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo premium con jerarquía clara de impulso, coordinación y eje de bloqueo abstracto.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Electric, uplifting, kinetic, team-driven',
+        'Foreshortening de salto y perspectiva de tensión que prioriza timing, recepción y respuesta colectiva.',
+      atmosphere: 'Eléctrica, optimista y cohesionada por esfuerzo colectivo.',
       key_features:
-        'Jump-serve silhouettes, net-line depth, team-call gestures, sneaker-squeak court energy, airborne spike framing',
+        'Impulso vertical, llamadas visuales de equipo, geometría de tensión, timing aéreo y energía de rally prolongado.',
       creative_brief:
-        'Gravity is a suggestion the body refuses. The court becomes a launchpad, orange light baptizes underdogs, and every jump carries the team on its back. Momentum is shared before it is earned.',
+        'Aplica una gramática reusable de energía deportiva vertical a cualquier prompt o imagen de entrada: salto, sincronía y anticipación colectiva sin imponer vóley, canchas, redes, saques ni equipos concretos.',
     },
   },
   {
     id: 'SP05-344',
-    name: 'Blue Lock - Ego Cage Striker Breakout',
+    name: 'Ego Pressure Breakout Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'High-pressure striker obsession, goalbox tunnel vision, neon field psychology, ruthless individual ambition inside a locked athletic laboratory, football treated like predator ritual',
+        'Deporte competitivo de ego extremo, presión de definición, visión táctica agresiva y ruptura individualista.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Líneas tensas de aceleración corta, torsión corporal agresiva y postura depredadora en finalización.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Azules fríos técnicos, neón ácido de presión psicológica y rojos de amenaza decisiva.',
+      lighting_setup: 'Iluminación high-contrast con foco cerrado y recorte duro sobre el sujeto.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficies sintéticas de alta fricción, geometría de jaula, textiles de alto rendimiento y sudor especular.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Sports frame de intensidad máxima con lectura instantánea de duelo interno y decisión final.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Predatory, intense, focused, manic',
+        'Túnel visual, compresión de distancia final y deformación dinámica por sprint terminal.',
+      atmosphere: 'Predatoria, obsesiva y clínicamente competitiva.',
       key_features:
-        'Goal-net perspective, striker body torque, glaring eye-line intensity, stadium-rush framing, ego-crisis close-ups',
+        'Torque corporal, mirada de presión, geometría de jaula abstracta, último instante decisivo y aura de ego.',
       creative_brief:
-        'The penalty box is a philosophy. Ambition sharpens into weaponry under stadium neons, and the goal is not a destination but a predation. The self is forged in the tunnel between hunger and net.',
+        'Aplica una gramática reusable de presión ego-breakout a cualquier prompt o imagen de entrada: jaula geométrica, mirada depredadora y decisión letal sin imponer fútbol, redes, goles ni disparos.',
     },
   },
   {
     id: 'SP05-345',
-    name: 'Slam Dunk - Hardwood Delinquent Rivalry',
+    name: 'Nineties Physical Rivalry Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        '90s gym sweat and basketball swagger, delinquent charisma redirected into team play, underdog confidence, squeaking hardwood and emotional rebounds in a brightly lit school arena',
+        'Competencia noventera de carisma físico, rivalidad directa, esfuerzo colectivo y disciplina emocional.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Anatomía atlética expresiva, arcos de esfuerzo limpios, contacto corporal físico y acting rivalry-driven.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Rojos clásicos, blancos limpios, miel cálida, azul de sombra interior y acentos dorados.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Luminaria directa con rebote cálido y sombras de media altura en clave retro.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie encerada, grano deportivo, tejido vintage y sudor de alta fricción.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo narrativo con lectura clara de posesión emocional, contacto y respuesta colectiva.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Sweaty, charismatic, competitive, hopeful',
+        'Perspectiva media con exageración moderada de salto, empuje y entrada al conflicto.',
+      atmosphere: 'Carismática, sudada, competitiva y esperanzada.',
       key_features:
-        'Basketball arc shots, gymnasium light pools, rivalry stare-downs, rebound body mechanics, court-side bench reactions',
+        'Contacto físico, miradas de duelo, trayectorias de esfuerzo, reflejos cálidos y energía de equipo reactiva.',
       creative_brief:
-        'Swagger inherited from detention halls, channeled through a basketball. The squeak of sneakers is a redemption anthem played in gymnasium echo. Charisma is a rebound that changes trajectory.',
+        'Aplica una gramática reusable de rivalidad deportiva noventera a cualquier prompt o imagen de entrada: calor físico, disciplina y duelo de miradas sin imponer basket, aro, cancha, tiro ni banca.',
     },
   },
   {
     id: 'SP05-346',
-    name: "Kuroko's Basketball - Phantom Pass Flashcourt",
+    name: 'Phantom Teamplay Speed Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'High-school basketball rendered as illusion-speed spectacle, ghost-like passing lanes, aces with impossible momentum, dramatic indoor arenas, rivalry elevated into tactical myth',
+        'Deporte táctico de velocidad ilusoria, circulación invisible, timing colectivo y ruptura de marca.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Líneas rápidas de trayectoria, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules eléctricos, negros de contraste profundo y acentos cian para telegraph de circulación.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación dramática con highlights selectivos en manos, mirada y línea de trayectoria.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie pulida reflectiva, malla geométrica sugerida, tejido técnico y trazas de movimiento estilizadas.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Acabado deportivo de alta precisión con claridad de jugada colectiva vs estrella individual.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Flashy, strategic, high-speed, competitive',
+        'Compresión espacial y estiramiento direccional en trayectorias fantasma para lectura de sorpresa.',
+      atmosphere: 'Estratégica, veloz y tácticamente deslumbrante.',
       key_features:
-        'Pass-trail cues, indoor-arena depth, player duels, impossible court angles, team-vs-star contrast',
+        'Trails fantasma, cambios bruscos de dirección, contraste teamplay vs aceplay y lectura de velocidad invisible.',
       creative_brief:
-        'The pass was already there before anyone looked. Basketball elevated to illusion, where speed wears the mask of invisibility and the court becomes a magic trick. Presence is proved by what arrives, not by what was seen.',
+        'Aplica una gramática reusable de velocidad fantasma táctica a cualquier prompt o imagen de entrada: trails invisibles, cortes súbitos y contraste equipo-individuo sin imponer basket, pelota, cancha ni duelos perimetrales.',
     },
   },
   {
     id: 'SP05-347',
-    name: 'Yowamushi Pedal - Uphill Breakaway Scream',
+    name: 'Uphill Endurance Breakaway Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cycling-road obsession, mountain switchbacks, sweat and willpower, colorful jerseys, road-race camaraderie and insanity rendered through exaggerated climb intensity',
+        'Deporte shonen de resistencia ascendente, esfuerzo mental, presión grupal y quiebre de ritmo.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de alta cadencia.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Bloques saturados de esfuerzo sobre oscuros rugosos, verdes inclinados y cielos fríos de altura.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Luz abierta de ascenso con contraluces de pendiente y flare suave de altitud.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie rugosa, fibra técnica sugerida, tejido deportivo y polvo fino de fricción.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame de resistencia premium con legibilidad de ascenso emocional, succión grupal y ruptura de ritmo.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Exhausted, triumphant, obsessive, fast',
+        'Perspectiva comprimida de pendiente y elongación de curva para dramatizar ascenso.',
+      atmosphere: 'Exhausta, obsesiva y triunfal por resistencia.',
       key_features:
-        'Bike lean angles, hill-climb perspective, peloton spacing, jersey color separation, screaming uphill face acting',
+        'Diagonales ascendentes, spacing de grupo, gestualidad de esfuerzo, velocidad acumulada y respiración extrema.',
       creative_brief:
-        'The mountain does not test your legs, it interrogates your soul. Every pedal stroke is a scream the road absorbs, every switchback a negotiation with quitting. Triumph is not arrival but refusal to unclip.',
+        'Aplica una gramática reusable de breakaway ascendente a cualquier prompt o imagen de entrada: resistencia, pendiente emocional y presión grupal sin imponer bicicletas, pelotón, rutas ni montaña literal.',
     },
   },
   {
     id: 'SP05-348',
-    name: 'Ace of Diamond - Mound Duel Summer Heat',
+    name: 'Summer Precision Duel Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Baseball-pitch precision, catcher signals, summer tournament pressure, dirt and dust, battery chemistry and bullpen urgency framed through shonen sports resolve',
+        'Deporte de precisión bajo calor estival, control de zona, duelo mental y tensión de instante decisivo.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Mecánica cinética abstracta, lectura de señales y anatomía de transferencia precisa.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules funcionales, rojizos secos de presión, blancos de marca gráfica y dorado cálido de verano.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Sol alto competitivo con rebote en polvo y contraluz duro sobre el eje de objetivo.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Polvo seco, cuero abstracto, marcas de fricción sugeridas, tela técnica y borde metálico.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame competitivo de alta nitidez con prioridad visual en señal, liberación abstracta y respuesta.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Focused, heated, disciplined, youthful',
+        'Perspectiva de objetivo con compresión dramática de distancia y foco en trayectoria.',
+      atmosphere: 'Concentrada, calurosa y disciplinadamente juvenil.',
       key_features:
-        'Pitching-form anatomy, catcher mitt focal point, diamond geometry, dugout tension, summer-stadium glare',
+        'Foco de objetivo, geometría estratégica, tensión lateral, postura contenida y calor competitivo.',
       creative_brief:
-        'Summer heat thickens the air between pitcher and catcher. Dust hangs in the sunlight like suspended judgment, and the mound is an island of absolute will. The signal is a secret the whole stadium feels.',
+        'Aplica una gramática reusable de duelo deportivo preciso a cualquier prompt o imagen de entrada: objetivo, calor y lectura mental sin imponer baseball, guantes, montículo, dugout ni inning.',
     },
   },
   {
     id: 'SP05-349',
-    name: 'Major - Generational Baseball Resolve',
+    name: 'Generational Sports Resolve Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Long-arc baseball life story, little-league dreams scaling to pro pressure, family legacy and mound determination, stadium lights and dirt rendered with emotional athletic realism',
+        'Deporte generacional de largo arco, legado competitivo, maduración personal y resolución sostenida.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Acting deportivo emocional, mecánica de esfuerzo sólida y postura de determinación.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Paleta competitiva clásica con azules profundos, blancos cálidos y acentos rojos de herencia emocional.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación nocturna amplia con foco sentimental sobre gesto, materia y decisión.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Cuero envejecido, polvo deportivo, tela en desgaste progresivo y metal de fondo.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo emotivo con lectura clara de trayectoria vital y tensión competitiva.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Resolute, nostalgic, driven, heartfelt',
+        'Perspectiva progresiva que conserva un eje de objetivo como núcleo simbólico.',
+      atmosphere: 'Resuelta, nostálgica y profundamente motivada.',
       key_features:
-        'Glove-and-ball iconography, mound posture, stadium-light depth, childhood-to-pro echoes, family-sport emotional cues',
+        'Iconografía deportiva abstracta, profundidad de trayectoria, ecos de crecimiento y herencia emocional.',
       creative_brief:
-        'A glove passed between generations carries decades of unspoken love. Stadium lights illuminate not just the diamond but the lineage of dreams that cross home plate. Legacy is a grip you inherit before you understand it.',
+        'Aplica una gramática reusable de resolución deportiva generacional a cualquier prompt o imagen de entrada: legado, madurez y arco vital sin imponer baseball, guantes, pelotas, estadios ni linajes literales.',
     },
   },
   {
     id: 'SP05-350',
-    name: 'Free! - Chlorine Splash Relay Glow',
+    name: 'Aquatic Relay Glow Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Aquatic team camaraderie, blue-tiled pool brilliance, water-surface light caustics, relay urgency, youth friendship and polished bodies rendered through warm sports-drama spectacle',
+        'Deporte acuático luminoso centrado en sincronía, técnica corporal y transición fluida.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Anatomía hidrodinámica limpia, arcos fluidos y lectura clara de cambio de ritmo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules clorados, blancos espumosos y acentos saturados para lectura de flujo direccional.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación acuática con caústicas controladas y highlights sobre láminas fluidas.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
-      render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Láminas especulares, humedad mineral, tejido elástico y gotas en suspensión.',
+      render_quality: 'Frame acuático de alta nitidez con prioridad en salida, ritmo y transición.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Refreshing, bright, emotional, competitive',
+        'Distorsión suave por refracción y perspectiva longitudinal para lectura de velocidad.',
+      atmosphere: 'Refrescante, competitiva y emocionalmente cohesionada.',
       key_features:
-        'Splash arcs, lane-line geometry, wet-hair highlights, relay handoff tension, poolside team silhouettes',
+        'Arcos de splash, geometría líquida, reflejos de cloro, tensión de relevo y siluetas aerodinámicas.',
       creative_brief:
-        'Water keeps no secrets but holds every friendship. Caustics dance on chlorine-blue tile, and the relay is a promise passed through splash and breath. Togetherness is measured in lane lines and the moment before the dive.',
+        'Aplica una gramática reusable de energía acuática sincronizada a cualquier prompt o imagen de entrada: agua, brillo y transición fluida sin imponer natación, carriles, piletas, relevos ni cuerpos poolside.',
     },
   },
   {
     id: 'SP05-351',
-    name: 'Run with the Wind - Night Campus Marathon Drift',
+    name: 'Long-Distance Night Endurance Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Distance-running discipline, night roads, campus lamps, thin winter breath, team growth through long miles and quiet suffering rendered with human-scale sports lyricism',
+        'Resistencia de fondo nocturna, pacing mental, cohesión grupal y respiración progresiva.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Siluetas de avance eficiente, postura de economía física y acting de fatiga contenida.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules nocturnos fríos, ámbar puntual y acentos discretos de cohesión grupal.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Cadencia lumínica seriada, contraste bajo nocturno y halos de respiración en frío.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie húmeda fina, textil técnico, vapor de aliento y desgaste continuo.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo introspectivo con claridad de spacing grupal, ritmo y esfuerzo acumulado.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Determined, cool, introspective, communal',
+        'Perspectiva de recorrido largo con compresión gradual de distancia y vector de avance continuo.',
+      atmosphere: 'Determinada, fría, introspectiva y comunitaria.',
       key_features:
-        'Running-form silhouettes, streetlamp rhythm, breath-in-cold-air cues, pack spacing, night-road momentum',
+        'Ritmo de luces, spacing de grupo, vapor respiratorio, continuidad de ruta abstracta y calma de esfuerzo.',
       creative_brief:
-        'A cold wind threads through campus lamps as runners carve silhouettes against the dark, each stride a meditation on endurance shared. The road becomes a quiet covenant between body and breath, distance dissolving into the rhythm of collective will.',
+        'Aplica una gramática reusable de resistencia nocturna a cualquier prompt o imagen de entrada: pacing, respiración y cohesión sin imponer running, campus, maratones, rutas ni farolas literales.',
     },
   },
   {
     id: 'SP05-352',
-    name: 'Sk8 the Infinity - Neon Ramp Brotherhood',
+    name: 'Neon Trick Flow Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic:
-        'Street-skate rivalry under tropical neon, colorful ramps, underground race bravado, friendship and adrenaline sharing one electric frame, wheels and attitude in bright motion',
-      form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+      aesthetic: 'Trick flow nocturno de estilo personal, rivalidad expresiva y neón underground.',
+      form_and_line: 'Poses elásticas de control, curvas expresivas y anatomía dinámica legible.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Neones tropicales saturados, negros rugosos y acentos cromáticos por identidad visual.',
+      lighting_setup: 'Iluminación nocturna clandestina con contraluces duros y rebote húmedo.',
+      material_texture: 'Superficie rugosa, fricción gastada, metal marcado y textil vibrante.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame cinético premium con lectura instantánea de truco abstracto, aterrizaje y velocidad.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Rebellious, fun, fast, vibrant',
+        'Foreshortening aéreo y curvatura gráfica para enfatizar altura y trayectoria.',
+      atmosphere: 'Rebelde, divertida, acelerada y extremadamente viva.',
       key_features:
-        'Board tricks midair, ramp curvature, neon-night venue cues, streetwear silhouettes, wheel-motion streaks',
+        'Curvas de truco, estelas de rueda abstractas, neón underground, estilo personal y momentum de caída.',
       creative_brief:
-        'Palm trees catch neon runoff while wheels carve rainbow arcs across illegal midnight ramps. Gravity and grudge dissolve into pure velocity, friendship painted in board-slide streaks against the tropical dark.',
+        'Aplica una gramática reusable de trick flow nocturno a cualquier prompt o imagen de entrada: neón, curvas y estilo competitivo sin imponer skate, rampas, ruedas, crew ni trucos literales.',
     },
   },
   {
     id: 'SP05-353',
-    name: 'Initial D - Mountain Drift Headlight Tension',
+    name: 'Nocturnal Drift Tension Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Touge night racing, hairpin drift choreography, headlight fog, driver concentration and machine balance rendered with asphalt obsession and midnight speed',
+        'Velocidad nocturna técnica, con deriva controlada, transferencia de peso visual y lectura de riesgo invisible.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Contornos afilados, vectores de derrape abstracto y postura de concentración máxima aplicable a cualquier sujeto.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules de noche inclinada, blanco de haz alto, naranja térmico y negros húmedos.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Cortes de luz direccionales y halos de niebla que enfatizan apex y salida de curva.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Granularidad húmeda, metal mojado, humo fino y reflejos bajos de velocidad.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
-      spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Nocturnal, tense, technical, exhilarating',
+        'Frame de performance anime con prioridad en trayectoria, adherencia visual y lectura de riesgo.',
+      spatial_distortion: 'Compresión agresiva de túnel visual y estiramiento lateral de deriva.',
+      atmosphere: 'Nocturna, tensa, técnica y adictiva.',
       key_features:
-        'Drift-angle framing, headlight beams, guardrail curves, dashboard focus, tire-smoke mountain roads',
+        'Ángulo de deriva, conos de luz, curva abstracta, foco técnico y estela de humo precisa.',
       creative_brief:
-        "Guardrails blur into silver ribbons as headlight beams cut through mountain fog and tire smoke, the road a tightening spiral of nerve and precision. Every hairpin holds a silent conversation between machine, asphalt, and the driver's unblinking focus.",
+        'Define una gramática reusable de deriva nocturna para cualquier prompt o imagen de entrada: tracción, riesgo y luz direccional sin imponer autos, montaña, faros, volantes ni carreras.',
     },
   },
   {
     id: 'SP05-354',
-    name: 'MF Ghost - Smartcar Neon Apex',
+    name: 'Telemetry Apex Precision Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Modern street-racing futurism, telemetry-thinking drivers, high-end road machines, coastal circuits and digital-age grip rendered with sleek athletic motor focus',
+        'Performance tecnificada de nueva generación, orientada a telemetría, trazada óptima y precisión fría.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Silueta limpia, gestualidad analítica y líneas de apex abstractas de alta definición.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Cian digital, grises titanio, azules costeros y acentos magenta de interfaz de rendimiento.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación nocturna con reflejos controlados y cues digitales de alta legibilidad.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
-      render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Fibra pulida, pintura metalizada, superficie lisa de velocidad y vidrio técnico.',
+      render_quality: 'Performance frame premium con claridad de datos, velocidad y control fino.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Sleek, exacting, modern, competitive',
+        'Vector de trazada óptima y compresión de distancia hacia punto de decisión.',
+      atmosphere: 'Precisa, moderna, fría y tácticamente competitiva.',
       key_features:
-        'Car-apex cornering, telemetry-like cues, coastal-road speed, precision driving posture, sleek neon reflections',
+        'Línea de apex limpia, lectura telemetry-like, reflejo frío, postura de control y tracción fina.',
       creative_brief:
-        'Data streams trace the perfect line through coastal switchbacks where carbon-fiber precision meets telemetry-driven instinct. The future of speed wears a sleek digital skin, every apex calculated yet somehow alive with human hunger.',
+        'Formula una gramática reusable de precisión telemetry-apex para cualquier prompt o imagen de entrada: datos, trazada y control fino sin imponer autos, costa, circuito, tablero ni frenada literal.',
     },
   },
   {
     id: 'SP05-355',
-    name: 'Uma Musume - Turf Sprint Idol Derby',
+    name: 'Festive Sprint Idol Energy Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Horse-girl racing pageantry, stadium cheers, ribboned athletic costumes, track dust and idol energy fused into one hyper-bright sports-performance spectacle',
+        'Sprint idolizado de energía festiva, showmanship competitivo, velocidad brillante y alegría dramática.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
-      color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Siluetas livianas, movimiento de listones/cabello y acting de rivalidad alegre.',
+      color_palette: 'Pasteles saturados de evento, verdes vivos y acentos de alto contraste.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación brillante de espectáculo con destellos de clímax veloz y rebote cálido.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Polvo deportivo, telas ornamentales ligeras, accesorios de presentación y brillo pulido.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
-      spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Sparkling, speedy, cheerful, dramatic',
+        'Performance frame hyper-bright con lectura limpia de sprint, carril abstracto y clímax.',
+      spatial_distortion: 'Estelas de velocidad y compresión hacia punto de llegada emocional.',
+      atmosphere: 'Centelleante, veloz, alegre y dramática.',
       key_features:
-        'Track-lane depth, cheering stadium read, costume-motion ribbons, finish-line rush, sports-meets-idol contrast',
+        'Profundidad de carril abstracto, energía colectiva, cintas en movimiento y rush de llegada.',
       creative_brief:
-        'Turf dust catches stadium light like scattered sequins as ribbon-trailing sprinters blur past roaring grandstands. Athletic fury dressed in idol pageantry, where the finish line is both victory and stage curtain.',
+        'Construye una gramática reusable de sprint idol festivo para cualquier prompt o imagen de entrada: velocidad, espectáculo y brillo competitivo sin imponer pista, derby, público, meta ni carrera literal.',
     },
   },
   {
     id: 'SP05-356',
-    name: 'Prince of Tennis - Baseline Special-Move Showdown',
+    name: 'Graphic Impact Duel Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tennis as superhuman duel theater, baseline standoffs, spinning serves, character-specific swagger and national-tournament pressure rendered like arena combat',
+        'Duelo deportivo estilizado, con control de línea, efecto especial abstracto y presión de torneo.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
-      color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Arcos de impacto marcados, postura de reacción precisa y acting de rivalidad frontal.',
+      color_palette: 'Azules interiores, blancos técnicos y acentos cromáticos por fuerza opuesta.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Iluminación indoor contrastada con focos en impacto gráfico y zona de respuesta.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie sintética, tensión lineal sugerida, ruido de impacto y textil de alto rendimiento.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo de alta teatralidad con claridad de punto emocional, ventaja y respuesta.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Stylized, intense, youthful, dramatic',
+        'Foreshortening de impacto y compresión de fondo para enfatizar timing de devolución.',
+      atmosphere: 'Estilizada, intensa, juvenil y dramática.',
       key_features:
-        'Racket-swing arcs, baseline geometry, serve-impact trails, rivalry face-offs, indoor-court tournament framing',
+        'Arco de impacto, geometría de línea, estela de golpe y framing de enfrentamiento frontal.',
       creative_brief:
-        'The court transforms into arena theater where serves crack like thunder and baseline geometry frames impossible rivalries. Every racket swing writes a signature across the air, youth distilled into the physics of defiance.',
+        'Define una gramática reusable de duelo deportivo teatral para cualquier prompt o imagen de entrada: trayectoria, efecto y rivalidad frontal sin imponer tennis, baseline, raquetas, pelota ni cancha.',
     },
   },
   {
     id: 'SP05-357',
-    name: 'Ping Pong the Animation - Table Spin Distortion',
+    name: 'Spin Pressure Distortion Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Table tennis pressure seen through psychological deformation, speed and identity colliding across a tiny table, rough athletic tension and emotional asymmetry made visual',
+        'Deporte psicológico de alta velocidad, enfocado en spin abstracto, anticipación y fractura perceptiva competitiva.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
-      color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Trazos nerviosos, microgesto facial bajo presión y snap de muñeca hiperlegible.',
+      color_palette: 'Verdes fríos, amarillos de alta visibilidad y sombras azul-gris de tensión.',
+      lighting_setup: 'Luz interior contenida con contrastes abruptos en zona de impacto y rostro.',
+      material_texture: 'Superficie mate, goma marcada, plano áspero y sudor granular.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo expresionista con lectura instantánea de spin, respuesta y quiebre mental.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Psychological, fast, raw, strange',
+        'Perspectiva de borde comprimido con deformación subjetiva en intercambios de ritmo extremo.',
+      atmosphere: 'Psicológica, rápida, cruda y competitivamente íntima.',
       key_features:
-        'Table-edge perspective, paddle-snap motion, facial distortion under pressure, gym-shadow intimacy, spin trajectory cues',
+        'Plano dominante, snap de muñeca, distorsión de presión y cues de trayectoria rotacional.',
       creative_brief:
-        'The table shrinks into a psychological battlefield where paddle-snap echoes warp faces and identities fracture under spin. Speed becomes a mirror — what you see across the net is never just the opponent, but yourself distorted.',
+        'Formula una gramática reusable de spin-pressure-distortion para cualquier prompt o imagen de entrada: presión mental, efecto y deformación perceptiva sin imponer mesa, paleta, pelota ni rally.',
     },
   },
   {
     id: 'SP05-358',
-    name: 'Hajime no Ippo - Corner Stool Comeback Grit',
+    name: 'Comeback Grit Impact Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Boxing gym sweat, taped fists, underdog muscle effort, ropes and bruises, comeback spirit and technical grit rendered with old-school sports-drama sincerity',
+        'Combate de superación clásica orientado a resistencia, técnica compacta y comeback físico.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Anatomía de impacto pesada, guardia compacta y acting físico de castigo acumulado.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Rojos de presión, azul acero de sombra periférica y tonos cálidos de esfuerzo extremo.',
+      lighting_setup: 'Spot duro con penumbra periférica y foco dramático en borde de presión.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Cuero castigado, bandas saturadas, tejido gastado y sudor de esfuerzo acumulado.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
-      spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Grueling, inspiring, rough, determined',
-      key_features:
-        'Boxing-ring ropes, glove-impact pose, corner-stool exhaustion, taped-hand detail, coach-fighter framing',
+        'Frame de combate deportivo con legibilidad de impacto, defensa y recuperación.',
+      spatial_distortion: 'Compresión de distancia en intercambio corto e impacto ascendente.',
+      atmosphere: 'Dura, inspiradora, áspera y obstinada.',
+      key_features: 'Límites tensos, postura de impacto, fatiga visible y recuperación obstinada.',
       creative_brief:
-        "Taped fists rest heavy on aching knees while the ring ropes hum with the crowd's distant thunder. Sweat pools on the corner stool like a sacrament of perseverance, every bruise a chapter in the gospel of rising once more.",
+        'Construye una gramática reusable de comeback grit para cualquier prompt o imagen de entrada: impacto, fatiga y recuperación sin imponer boxeo, ring, cuerdas, coach ni banquillo.',
     },
   },
   {
     id: 'SP05-359',
-    name: 'Yuri!!! on Ice - Rink Edge Performance Ache',
+    name: 'Vulnerable Performance Spin Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Figure-skating performance under arena spotlights, emotional choreography, blade-trace elegance, coach-athlete tension and public vulnerability rendered with icy grace',
-      form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Performance competitiva vulnerable, centrada en coreografía emocional, línea corporal y control de eje.',
+      form_and_line: 'Silueta elongada, transición fluida entre poses y precisión de eje curvo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Azules glaciales, plateados de foco y acentos cromáticos de vestuario escénico.',
+      lighting_setup: 'Conos de spotlight con relleno frío y reflejo especular controlado.',
+      material_texture: 'Superficie pulida con trazas finas, tela brillante y cristales fríos.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Performance frame premium con claridad de impulso, spin abstracto y cierre limpio.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Elegant, exposed, emotional, competitive',
+        'Curvatura elegante de trayectorias y profundidad escénica para lectura de programa completo.',
+      atmosphere: 'Elegante, vulnerable, emotiva y competitiva.',
       key_features:
-        'Ice-rink reflections, spin posture, spotlight cones, costume shimmer, blade-trace curves',
+        'Reflejo frío, postura de spin, shimmer de vestuario y curvas de trayectoria precisas.',
       creative_brief:
-        'Blade traces etch fragility into ice as arena spotlights carve a cathedral of exposure around a solitary spinning figure. Every arabesque holds a lifetime of doubt and devotion balanced on the edge of public gaze.',
+        'Define una gramática reusable de performance vulnerable en eje para cualquier prompt o imagen de entrada: coreografía, reflejo y precisión emocional sin imponer patinaje, pista, cuchillas ni rutina.',
     },
   },
   {
     id: 'SP05-360',
-    name: 'Chihayafuru - Tatami Card Strike Focus',
+    name: 'Poetic Reflex Focus Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Karuta competition as athletic poetry, tatami rooms, kimono sleeves, explosive card-strike speed, cultural refinement transformed into fierce competitive intensity',
+        'Competición poética de reflejo mental, memoria sonora, gesto instantáneo y disciplina elegante.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Gesto de mano ultrarrápido, postura baja disciplinada y movimiento de tela como vector de acción.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Tonos vegetales cálidos, índigo tradicional y acentos carmín de tensión competitiva.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Iluminación interior suave con foco sobre planos de memoria y contraste de concentración facial.',
+      material_texture: 'Trama vegetal, papel nítido, seda formal y madera ceremonial sugerida.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo-cultural con lectura precisa de sonido, reacción y captura mental.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Focused, elegant, disciplined, urgent',
-      key_features:
-        'Tatami geometry, hand-strike blur, kimono sleeve motion, low-room tension, concentration close-ups',
+        'Perspectiva rasante y estiramiento gestual para dramatizar velocidad de strike.',
+      atmosphere: 'Concentrada, elegante, disciplinada y urgentemente competitiva.',
+      key_features: 'Geometría baja, blur de mano, tensión silenciosa y close-up de foco mental.',
       creative_brief:
-        'Syllables hang in the tatami air for a breathless instant before a hand strikes like a heron through still water. Ancient poetry becomes athletic reflex, kimono sleeves trailing the ghost of the verse just snatched from silence.',
+        'Formula una gramática reusable de reflejo poético para cualquier prompt o imagen de entrada: memoria, gesto y silencio competitivo sin imponer karuta, tatami, cartas, sala ni poesía literal.',
     },
   },
   {
     id: 'SP05-361',
-    name: 'Baby Steps - Notebook Tennis Calculation',
+    name: 'Incremental Method Training Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Methodical tennis growth, notebooks and strategy, practice repetition, court fundamentals and self-built improvement rendered with grounded technical optimism',
-      form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Entrenamiento metódico de mejora incremental, análisis técnico, repetición y evolución medible.',
+      form_and_line: 'Mecánica depurada, pasos didácticos y acting de concentración sostenida.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Paleta sobria de práctica, verdes funcionales, blancos de guía y acentos azules de análisis.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Luz de entrenamiento uniforme con contraste moderado para lectura didáctica de gesto.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie usada, material funcional, marcas tácticas sugeridas y textil de práctica.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame técnico de entrenamiento con claridad de corrección, progreso y consistencia.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Studious, practical, steady, determined',
+        'Perspectiva funcional sin dramatización excesiva, enfocada en secuencia y repetición.',
+      atmosphere: 'Estudiosa, práctica, constante y determinada.',
       key_features:
-        'Practice-court realism, note-taking cues, swing mechanics, gradual-improvement body language, technical footwork framing',
+        'Cues de análisis, mecánica repetida, patrón de pies y lenguaje corporal de mejora progresiva.',
       creative_brief:
-        'Every swing is a hypothesis tested against felt and string, notebooks filled with the humble arithmetic of incremental mastery. The court becomes a laboratory where patience and data slowly forge instinct from raw repetition.',
+        'Define una gramática reusable de entrenamiento calculado para cualquier prompt o imagen de entrada: método, repetición y progreso medible sin imponer tennis, cuadernos, raquetas ni cancha.',
     },
   },
   {
     id: 'SP05-362',
-    name: 'Birdie Wing - Rainbow Fairway Duel',
+    name: 'Glam Precision Rivalry Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'High-stakes golf rivalry with flamboyant color, long fairway compositions, fashion-forward competitors, absurd skill confidence and underground-to-elite course drama',
+        'Rivalidad glam de alto riesgo, precisión de gesto, trayectoria imposible y duelo de identidad competitiva.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Arco de swing elegante, postura de control fino y silueta de rival claramente codificada.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Verdes premium, blancos luminosos, acentos cromáticos de rival y cielo de contraste limpio.',
+      lighting_setup: 'Luz abierta con focos dramáticos en gesto, impacto y trayectoria.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Superficie recortada de alta gama, grip detallado, tejido deportivo de lujo y metal pulido.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Sports frame de precisión vistosa con legibilidad de línea de tiro abstracta y presión de match.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Flashy, precise, playful, fierce',
+        'Profundidad larga con trazas de trayectoria y compresión selectiva de distancia al objetivo.',
+      atmosphere: 'Lujosa, precisa, lúdica y ferozmente competitiva.',
       key_features:
-        'Fairway depth lines, golf-swing silhouettes, luxury-course read, color-coded rivals, shot-trace arcs',
+        'Líneas de trayectoria, silueta de swing abstracto, trazas cromáticas y contraste de rivales codificados.',
       creative_brief:
-        'Fairways stretch like chromatic ribbons toward impossible greens where fashion-forward rivals trade shot-traces like signature moves. Golf becomes spectacle, each swing a declaration of identity painted across the luxury-course sky.',
+        'Define una gramática reusable de rivalidad glam precisa para cualquier prompt o imagen de entrada: gesto, riesgo y trayectorias cromáticas sin imponer golf, fairway, hoyos, palos ni rivales literales.',
     },
   },
   {
     id: 'SP05-363',
-    name: 'Backflip!! - Boys Rhythmic Flight Team',
+    name: 'Synchronized Aerial Team Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rhythmic gymnastics team jumps, mat spring, synchronized airborne silhouettes, school-club encouragement and body-control beauty rendered with buoyant athletic optimism',
+        'Sincronía aérea de conjunto, ritmo corporal, control muscular y confianza grupal.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Extensiones limpias de columna y piernas, arcos de salto coordinados y timing gestual colectivo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Azules y blancos limpios, acentos naranja de energía y fondos cálidos de competencia.',
+      lighting_setup: 'Luz homogénea con realce en fase aérea y sombra suave bajo la suspensión.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Rebote granular, textil elástico técnico, agarre ligero y superficie pulida.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame deportivo de alta nitidez con legibilidad de sincronía, altura y aterrizaje.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Light, synchronized, hopeful, energetic',
+        'Foreshortening vertical moderado para enfatizar suspensión grupal y alineación de figuras.',
+      atmosphere: 'Ligera, esperanzadora, sincronizada y vibrante.',
       key_features:
-        'Midair sync poses, gym-mat staging, team timing cues, body-extension elegance, school-club warmth',
+        'Poses midair en espejo, lectura de conteo, extensión corporal y calor competitivo.',
       creative_brief:
-        "Bodies arc through gymnasium air in synchronized constellations, suspended for a heartbeat between spring-mat rebound and gravity's recall. Team trust written in midair geometry where individual doubt dissolves into collective flight.",
+        'Construye una gramática reusable de vuelo sincronizado para cualquier prompt o imagen de entrada: conteo, extensión y confianza grupal sin imponer gimnasia, club escolar, equipo masculino ni rutina.',
     },
   },
   {
     id: 'SP05-364',
-    name: 'Dance Dance Danseur - Ballet Obsession Rehearsal',
+    name: 'Obsessive Line Rehearsal Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Studio mirrors, sweating rehearsal focus, male ballet intensity, footwork perfectionism and emotional exposure rendered through elegant motion and discipline',
+        'Ensayo obsesivo de línea corporal, disciplina técnica, exposición emocional y perfección frágil.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Eje corporal refinado, extensiones largas, transición de peso controlada y gesto vulnerable.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Neutros de estudio, rosas empolvados, grises cálidos y acentos de piel iluminada por esfuerzo.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Luz de sala y rebote de espejo con contraste medio para enfatizar corrección postural.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Piso desgastado, tela de ensayo transpirable, resina fina y sudor de práctica.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame performativo elegante con lectura clara de técnica, tensión muscular y vulnerabilidad.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Passionate, disciplined, elegant, vulnerable',
+        'Perspectiva de espejo múltiple con profundidad repetida que acentúa autocorrección y presión.',
+      atmosphere: 'Apasionada, disciplinada, elegante y técnicamente frágil.',
       key_features:
-        'Dance-studio mirrors, turned-out leg lines, rehearsal posture, sweat-and-light realism, emotional body extension',
+        'Multiplicación especular, líneas de extremidad, respiración de ensayo y foco corporal expresivo.',
       creative_brief:
-        'Studio mirrors multiply the lonely pursuit of perfection, each reflection a witness to the sweat and trembling discipline of the turned-out foot. Ballet becomes a private language spoken through aching muscle, elegant and merciless.',
+        'Construye una gramática reusable de obsessive-line-rehearsal donde línea anatómica, autocorrección, repetición especular y emocionalidad contenida formen identidad visual transferible sin imponer ballet, estudio, zapatillas ni ensayo literal.',
     },
   },
   {
     id: 'SP05-365',
-    name: 'Welcome to the Ballroom - Competition Floor Blaze',
+    name: 'Formal Partner Motion Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ballroom dance under hot competition lights, flowing gowns, polished shoes, partner tension, spin momentum and public judgment turned into dramatic movement theater',
+        'Movimiento formal en pareja, frame coreográfico, tracción elegante y tensión escénica abstracta.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Siluetas duales en giro, torso estructurado, líneas de guía y fluidez controlada.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Dorados cálidos, negros de contraste formal, rojos profundos y blancos de brillo de gala.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Spotlights cálidos de competición con reflejo fuerte en superficie pulida y bordes de silueta.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Satén en flujo, cuero pulido, superficie brillante y pedrería escénica fina.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
-      spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Dazzling, pressured, romantic, intense',
+        'Frame de danza premium con lectura de liderazgo-seguimiento, giro y postura.',
+      spatial_distortion: 'Barrido circular con compresión de fondo y foco en eje de pareja.',
+      atmosphere: 'Deslumbrante, tensa, romántica e intensa.',
       key_features:
-        'Dance-floor reflections, gown motion, pair silhouettes, competition-judge ambiance, spin blur',
+        'Reflejo de superficie, silueta dual, dinámica de giro y presión pública implícita.',
       creative_brief:
-        'Gowns bloom and collapse like tropical flowers under the scorching geometry of competition spotlights, every spin a negotiation between two bodies and the watching world. The floor becomes a pressure cooker where romance and rivalry share the same heated breath.',
+        'Define una gramática reusable de formal-partner-motion donde técnica de pareja, teatralidad de giro y presión pública sostengan identidad visual transferible sin imponer ballroom, pista, jurado ni rutina específica.',
     },
   },
   {
     id: 'SP05-366',
-    name: 'Kono Oto Tomare! - Koto Ensemble Resonance',
+    name: 'Traditional Ensemble Resonance Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'School performance drama around traditional strings, lacquered instruments, stage light, group harmony and personal healing rendered through poised hands and emotional ensemble spacing',
+        'Ensamble tradicional de resonancia colectiva, precisión de digitación y sinceridad performativa.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
-      color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Postura estable, gesto de mano fino y coreografía mínima de conjunto por respiración.',
+      color_palette: 'Maderas cálidas, ámbar íntimo, negro laca y acentos crema de formalidad.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Luz suave con foco frontal sobre líneas resonantes y rebote cálido de madera.',
+      material_texture: 'Laca pulida, tensión lineal visible, tela ceremonial y madera resonante.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame musical de alta delicadeza con legibilidad de ataque, dinámica y balance entre intérpretes.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Earnest, resonant, delicate, uplifting',
+        'Perspectiva de ensamble en abanico con profundidad serena y jerarquía de secciones.',
+      atmosphere: 'Sincera, resonante, delicada y elevadora.',
       key_features:
-        'Koto string detail, seated ensemble staging, lacquer gleam, hand-position focus, recital-hall warmth',
+        'Detalle lineal resonante, postura estable, brillo de laca y foco en colocación de manos.',
       creative_brief:
-        'Thirteen silk strings hum in unison across a recital-hall stage, each pluck a voice in a fragile democracy of sound. Lacquer gleams under warm spotlights as adolescent hands coax centuries-old timber into something achingly present.',
+        'Formula una gramática reusable de traditional-ensemble-resonance donde materialidad resonante, respiración grupal y lectura de gesto musical construyan identidad transferible sin imponer koto, escuela, escenario ni postura sentada fija.',
     },
   },
   {
     id: 'SP05-367',
-    name: 'Sound! Euphonium - Brass Section Sunset Practice',
+    name: 'Brass Section Tender Precision Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic:
-        'Concert-band adolescence, brass reflections, after-school rehearsal rooms, competition anxiety and friendship rendered with polished KyoAni-style emotional specificity',
+      aesthetic: 'Precisión tímbrica de conjunto, ansiedad de certamen y ternura aspiracional.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
-      color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Gestualidad respiratoria detallada, postura disciplinada y microacting de sincronía conjunta.',
+      color_palette: 'Dorados de resonancia pulida, azules sobrios y ámbar de interior sereno.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Luz de tarde con foco cálido sobre superficies reflectivas y sombras suaves.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Brillo metálico espejo, mecanismos pequeños usados, papel mate y tejido formal.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos rítmicos.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Tender, aspirational, polished, musical',
+        'Profundidad de ensamble por capas rítmicas y compresión leve hacia foco de sección.',
+      atmosphere: 'Tierna, aspiracional, pulida y competitivamente musical.',
       key_features:
-        'Brass-instrument reflections, rehearsal-room depth, embouchure hand detail, uniform subtlety, ensemble proximity',
+        'Reflejos cálidos, detalle respiratorio, proximidad de ensamble y escala íntima.',
       creative_brief:
-        'Sunset spills through rehearsal-room windows, catching the bell of a euphonium in amber as breath and brass negotiate an elusive perfect tone. After-school hours become sacred territory where adolescent hope learns to resonate in B-flat.',
+        'Construye una gramática reusable de tender-ensemble-precision donde reflejo metálico, disciplina de ensamble y sensibilidad aspiracional formen un sistema visual estable y transferible sin imponer banda escolar, instrumentos, aula, atriles ni ensayo literal.',
     },
   },
   {
     id: 'SP05-368',
-    name: 'Blue Giant - Midnight Jazz Sax Ascension',
+    name: 'Midnight Jazz Ascension Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban jazz obsession, smoky club stages, saxophone glow, relentless practice and stage eruption rendered through adult performance intensity and blue-hour city mood',
+        'Jazz nocturno visceral, improvisación ascendente, presencia solista y explosión soulful.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Silueta performativa en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Azules midnight, dorados latón, magentas de neón tenue y negros humo de sala.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Spot cálido aislado con contraluz de neblina y glow lateral sobre metal curvo.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Latón con pátina, madera oscura, humo volumétrico fino y tela de performance.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame performativo adulto con lectura de intensidad, dinámica de solo y respuesta de sala.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Driven, nocturnal, soulful, explosive',
+        'Profundidad nocturna comprimida hacia foco performativo con halo periférico difuso.',
+      atmosphere: 'Nocturna, impulsada, soulful y explosiva.',
       key_features:
-        'Saxophone shine, club-stage spotlights, smoke haze, soloist silhouette, city-night music vibe',
+        'Brillo de latón, haze nocturno, spot aislado y silueta de solo en ascenso continuo.',
       creative_brief:
-        'Smoke curls around a saxophone bell as blue-hour city light leaks through club windows, the soloist ascending note by note into a private stratosphere. Jazz becomes pilgrimage, every late-night session a station on the road to total sound.',
+        'Define una gramática reusable de midnight-jazz-ascension donde timbre de latón, atmósfera nocturna y cuerpo performativo construyan identidad transferible sin imponer saxofón, club, concierto ni solista literal.',
     },
   },
   {
     id: 'SP05-369',
-    name: 'Beck: Mongolian Chop Squad - Garage Amp Youth',
+    name: 'Raw Youth Feedback Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Band-practice sweat, garage amps, youth aspiration, guitar cables and stage nerves, scrappy music growth rendered with grounded punk sincerity',
+        'Juventud cruda de feedback emocional, crecimiento por ensayo, precariedad sonora y cohesión emergente.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Posturas imperfectas de ejecución abstracta, energía contenida, microgesto inseguro y dinámica de grupo.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Marrones crudos, rojos de señal improvisada, negros de equipo usado y acentos neón caseros.',
+      lighting_setup: 'Luz dura de práctica con sombras irregulares y contraluces improvisados.',
+      material_texture: 'Vinilo usado, metal gastado, líneas enredadas y pintura descascarada.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame crudo con legibilidad de rol grupal, precariedad sonora y progresión de ensayo.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Raw, youthful, scrappy, heartfelt',
+        'Perspectiva cerrada con capas densas de equipo abstracto y proximidad física.',
+      atmosphere: 'Cruda, joven, precaria y de corazón abierto.',
       key_features:
-        'Amp stacks, guitar posture, garage clutter, band-lineup spacing, practice-room sweat energy',
+        'Torres gráficas de sonido, postura de ejecución, clutter lineal y spacing de grupo en formación.',
       creative_brief:
-        'Distortion hums through garage walls as tangled cables and second-hand amps become the scaffolding of young ambition. Every chord is a promise made in sweat and feedback, punk sincerity echoing off concrete and dreaming of stage light.',
+        'Formula una gramática reusable de raw-youth-feedback donde precariedad, energía de ensayo y autenticidad punk articulen identidad transferible sin imponer garaje, amplificadores, banda, instrumentos ni sala de práctica.',
     },
   },
   {
     id: 'SP05-370',
-    name: 'Given - Stage Confession Indie Glow',
+    name: 'Intimate Indie Confession Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Indie-band romance under small-venue lights, emotional songwriting, guitar-and-vocal intimacy, stage confession energy and soft heartbreak in modern performance framing',
+        'Confesión indie íntima, lirismo vulnerable, calidez contenida y silencio emocional.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Gestualidad cercana, postura contenida y distancia emocional claramente legible.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
-      lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
-      render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Ámbar cálido, azul nocturno suave y acentos granate de melancolía contemporánea.',
+      lighting_setup: 'Focos pequeños con caída suave y penumbra envolvente de espacio reducido.',
+      material_texture: 'Madera mínima, metal de soporte, acabado mate y humo ligero ambiental.',
+      render_quality: 'Frame emotivo con lectura de confesión, silencio y clímax íntimo.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Intimate, aching, warm, musical',
+        'Perspectiva frontal compacta con foco íntimo y eje de respiración compartida.',
+      atmosphere: 'Íntima, doliente, cálida y acústicamente contenida.',
       key_features:
-        'Mic-stand framing, guitar close-up, small-venue spotlights, duo emotional spacing, song-performance body language',
+        'Framing íntimo, close-up táctil, spacing emocional y lenguaje corporal confesional.',
       creative_brief:
-        'A single mic stand catches the amber glow of a small-venue spotlight as unsaid words find their way through guitar strings. The stage becomes a confessional booth where melody carries the weight that silence could not bear.',
+        'Construye una gramática reusable de intimate-indie-confession donde intimidad acústica, tensión emocional y mínima puesta escénica definan una identidad visual reutilizable sin imponer escenario, micrófono, guitarra, dúo ni venue literal.',
     },
   },
   {
     id: 'SP05-372',
-    name: 'Revue Starlight - Stage Duel Spotlights',
+    name: 'Allegorical Spotlight Confrontation Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Theater girls crossing into symbolic stage combat, spotlight duels, staircase sets, costume drama and performance-as-rivalry rendered through lavish allegorical staging',
+        'Confrontación performativa alegórica, rivalidad escénica abstracta y coreografía de alto simbolismo.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Poses teatrales de confrontación, siluetas rituales y transición dramática entre niveles visuales.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Carmín escénico, azul zafiro nocturno, dorado de gala y negros de fondo operático.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
+        'Cruce de spotlights con backlight teatral y sombras recortadas en capas verticales.',
       material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Terciopelo abstracto, superficie pintada, metal utilitario y humo controlado.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame performativo de alto impacto con legibilidad de símbolo, tensión y jerarquía dramática.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Theatrical, competitive, symbolic, luminous',
+        'Arquitectura axial abstracta con capas verticales y profundidad alegórica en fuga vertical.',
+      atmosphere: 'Teatral, competitiva, simbólica y espectacularmente luminosa.',
       key_features:
-        'Stage spotlight beams, duel-choreography poses, staircase set pieces, costume-pageantry detail, allegorical theater space',
+        'Hazes de spotlight cruzado, poses de confrontación abstracta, capas verticales y pageantry ornamental.',
       creative_brief:
-        'Spotlight beams cross like blades above a staircase that climbs into allegory, costume and combat fusing into a single radiant gesture. The stage becomes a liminal arena where performance is the only truth and every duel is a poem delivered at sword-point.',
+        'Construye una gramática reusable de allegorical-spotlight-confrontation donde alegoría, coreografía de confrontación y arquitectura axial sostengan una identidad visual transferible sin imponer escenario, escaleras, espadas, teatro ni combate literal.',
     },
   },
   {
     id: 'SP05-371',
-    name: 'Nodame Cantabile - Orchestra Rehearsal Whirl',
+    name: 'Virtuoso Ensemble Whirl Style',
     category: '6. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Classical music comedy and brilliance, rehearsal halls, conductor authority, eccentric pianist chaos, sheet-music energy transformed into lively ensemble character drama',
+        'Ensamble virtuoso excéntrico, fricción creativa entre rigor, caos controlado y energía culta.',
       form_and_line:
-        'Energetic sports-and-performance anime linework, clean anatomy, dynamic motion arcs, precise gesture readability, and expressive pose control',
+        'Gestos de dirección enérgicos, acting performativo moderado y lectura clara de secciones.',
       color_palette:
-        'Vivid team colors, arena neons, polished skin highlights, bright accent uniforms, stage gels, and crisp event-driven contrast',
+        'Maderas y marfiles clásicos, negros de frac, dorados tenues y acentos escarlata de tensión cómica.',
       lighting_setup:
-        'Venue-ready spotlighting, stadium or gym bounce, dramatic event backlight, polished floor reflections, and live-performance contrast',
-      material_texture:
-        'Court varnish, turf grain, chalk dust, polished wood, instrument lacquer, rink sheen, jersey fabric, and stage-floor texture',
+        'Luz amplia con focos suaves sobre gesto directivo y foco virtuoso principal.',
+      material_texture: 'Barniz clásico, papel mate, metal de soporte y tela formal en movimiento.',
       render_quality:
-        'Premium sports-performance anime frame, motion-readable polish, live-event atmosphere, expressive anatomy, and crisp action finish',
+        'Frame sinfónico vivaz con legibilidad de jerarquía de dirección, respuesta y caos controlado.',
       spatial_distortion:
-        'Competition-ready foreshortening, venue-depth perspective, motion-path readability, dynamic athlete silhouette design, and crowd-to-stage scale cues',
-      atmosphere: 'Lively, cultured, eccentric, inspiring',
+        'Profundidad de ensamble por capas seccionales con perspectiva convergente al eje directivo.',
+      atmosphere: 'Viva, culta, excéntrica e inspiradora.',
       key_features:
-        'Orchestra seating depth, conductor gestures, piano focus, rehearsal-hall scale, comedic musical body language',
+        'Gesto de dirección, masa de secciones, foco virtuoso y fricción de ensayo colectivo.',
       creative_brief:
-        'Sheet music scatters like startled birds as eccentric genius collides with conductor discipline in the rehearsal-hall crucible. Orchestra seating becomes a geography of personality, each stand a tiny nation negotiating the border between chaos and sublime harmony.',
+        'Define una gramática reusable de virtuoso-ensemble-whirl donde geografía de secciones, autoridad gestual y excentricidad performativa generen identidad transferible sin imponer orquesta, podio, piano, atriles ni ensayo académico literal.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

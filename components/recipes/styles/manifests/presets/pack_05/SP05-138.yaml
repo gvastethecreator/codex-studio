@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Brooding urban sword-revenge thriller, enchanted blades, cold rain, yakuza underworld severity, stylish restraint before sudden violence, sleek modern occult drama
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Sword oath under neon rain, with brooding restraint, occult edge-light, revenge severity, and sudden clean violence.
+  form_and_line: Long rain diagonals, spare silhouette control, blade-like light cuts, severe eye-line geometry, and stillness-before-impact.
+  color_palette: Midnight black, neon cyan, blood red, wet asphalt blue, steel gray, and cold violet.
+  lighting_setup: Rain-split neon, narrow rim blades, low-key noir pools, and abrupt impact flashes.
+  material_texture: Wet pavement sheen, rain streaks, polished edge glints, dark cloth flats, and occult particle cuts.
+  render_quality: Sleek modern anime thriller finish with precise restraint, wet neon depth, and sharp impact readability.
+  spatial_distortion: Long-lens compression, rain-layer parallax, and sudden perspective cuts that feel oath-driven.
   atmosphere: Brooding, precise, cool, vengeful
-  key_features: Rainlit katana poses, occult blade effects, underworld interiors, severe facial acting, neon-rain contrast
-  creative_brief: Rain carries the last words of a dead oath, pooling around unsheathed steel beneath flickering Shinjuku neon. The blade cuts more than flesh — it slices through the lie that the past can be left behind. Vengeance wears a school uniform and walks through midnight with the stillness of someone who has already decided.
+  key_features: Neon rain, oathlike stillness, blade-light cuts, noir restraint, occult edge energy.
+  creative_brief: >-
+    Make any prompt feel like a restrained revenge oath: use wet neon, cold edge
+    light, precise stillness, and sudden graphic cuts without requiring a sword,
+    uniform, hidden room, or named place.
 avoidRules:
   - realistic
   - 3d render

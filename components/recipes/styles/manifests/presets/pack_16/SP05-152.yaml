@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-152
 packId: pack_16
-name: Gintama - Feudal Sci-Fi Deadpan Mayhem
+name: Anachronistic Deadpan Mayhem Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Comedia samurái sci-fi irreverente de anacronismo total, con corazón dramático escondido bajo parodia constante.
-  form_and_line: Línea digital expresiva para reacción cómica extrema, postura holgazana de antihéroe y ritmo visual de gag.
-  color_palette: Saturaciones pop de ciudad Edo-futurista, neones moderados y tierra urbana tradicional en choque continuo.
+  aesthetic: Comedia anacrónica irreverente de choque tonal total, con corazón dramático escondido bajo parodia constante.
+  form_and_line: Línea digital expresiva para reacción cómica extrema, postura holgazana arquetípica y ritmo visual de gag.
+  color_palette: Saturaciones pop, neones moderados, tierras cálidas tradicionales y acentos absurdos en choque continuo.
   lighting_setup: Iluminación flexible de comedia-acción, highlights pulidos y contraste medio para sostener cambios de tono abruptos.
-  material_texture: Madera de bokken, metal de utilería urbana, señalética híbrida y acabados limpios de producción 2000s.
+  material_texture: Materia utilitaria, metal cotidiano, señalética híbrida y acabados limpios de producción 2000s.
   render_quality: Acabado premium de parodia-action con legibilidad alta de chiste, acción y microdrama humano.
-  spatial_distortion: Escena urbana modular para setpiece episódico, con perspectivas exageradas en punchlines y duelos.
+  spatial_distortion: Composición modular para gag episódico, con perspectivas exageradas en punchlines y choques tonales.
   atmosphere: Irreverente, caótica, entrañable, astuta.
-  key_features: Mashup de props históricos-modernos, acting deadpan, heroísmo perezoso y staging de caos con timing preciso.
-  creative_brief: Diseña una gramática reusable de comedia anacrónica samurái-sci-fi para cualquier sujeto, mezclando absurdo, swagger y humanidad subyacente.
+  key_features: Mashup histórico-moderno, acting deadpan, heroísmo perezoso y staging de caos con timing preciso.
+  creative_brief: >-
+    Diseña una gramática reusable de anachronistic-deadpan-mayhem para
+    cualquier sujeto: absurdo, swagger, choque temporal y humanidad subyacente
+    sin imponer samuráis, ciudad, props históricos, armas de madera, duelos ni
+    sci-fi literal.
 avoidRules:
   - realistic
   - 3d render

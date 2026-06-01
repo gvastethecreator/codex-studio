@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Vintage slide film
   form_and_line: Sharp, archival
   color_palette: Rich reds, realistic
-  lighting_setup: Direct sun
+  lighting_setup: Clean direct light
   material_texture: Fine grain
-  render_quality: National Geographic 80s
+  render_quality: Archival documentary slide
   spatial_distortion: High contrast
   atmosphere: Historic, vivid
   key_features: Red pop
-  creative_brief: 'The archive of a mid-century afternoon, preserved in dyes that refuse to fade: reds that ache with permanence, skies that hold their breath since 1972. Every detail etched with documentary conviction, as if the world were being catalogued for the first and final time.'
+  creative_brief: 'Archival slide-film permanence: rich reds, clean direct light, crisp microdetail, and contrast that feels catalogued rather than stylized. Make any subject look preserved in durable dye layers, vivid but believable, historical without requiring skies, travel, or a mid-century scene.'
 avoidRules:
   - illustration
   - painting

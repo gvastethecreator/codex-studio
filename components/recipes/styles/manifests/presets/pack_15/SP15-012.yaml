@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Coastal resilience solarpunk with amphibious civic architecture.
-  form_and_line: Elevated walkways, buoyant districts, and branching mangrove geometry.
+  aesthetic: Coastal resilience solarpunk with amphibious civic elevation, root-network logic, and tidal reciprocity.
+  form_and_line: Elevated walkway rhythm, buoyant modular bands, and branching mangrove geometry.
   color_palette: Mangrove green, tidal blue-gray, and sun-washed timber tones.
   lighting_setup: Humid coastal daylight with reflective tidal highlights under canopies.
-  material_texture: Salt-tolerant wood, woven flood membranes, and wet root systems.
+  material_texture: Salt-tolerant wood, woven flood membranes, and wet root-like systems.
   render_quality: Production-grade environmental concept with clear adaptive-infrastructure storytelling.
-  spatial_distortion: Layered waterfront depth from root-level platforms to elevated public decks.
+  spatial_distortion: Layered waterfront-like depth from root-level patterning to elevated public deck cues.
   atmosphere: Resilient tranquility, civic ingenuity, and ecological reciprocity.
-  key_features: Amphibious neighborhoods, mangrove filtration belts, tidal mobility corridors.
+  key_features: Amphibious module motifs, mangrove filtration belts, tidal mobility corridors.
   creative_brief: >-
     Preserve mangrove lift-city grammar as a reusable style language:
     amphibious civic elevation, root-network filtration logic, and tidal
-    neighborhood continuity should remain stable across subjects.
+    continuity should remain stable across subjects without requiring a city,
+    walkways, platforms, or literal mangroves.
 avoidRules: [photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-012.webp }
 attributes:
   negativePrompt: photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

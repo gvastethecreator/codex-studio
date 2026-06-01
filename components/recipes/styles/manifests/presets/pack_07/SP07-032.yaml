@@ -12,15 +12,15 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Infraestructura metropolitana subterránea de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.
-  form_and_line: Ritmo repetitivo de crujías, convergencia longitudinal de rieles, techos híbridos y bandas de señalética estructural.
+  aesthetic: Infraestructura metropolitana de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.
+  form_and_line: Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas de señalética estructural.
   color_palette: Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone
-  lighting_setup: Fluorescencia intermitente, pools de borde de andén, glare publicitario y vacío negro de túnel como contrapunto.
-  material_texture: Baldosa astillada, acero oxidado, grasa mineral en borde de vía, humedad capilar y pavimento antideslizante gastado.
+  lighting_setup: Fluorescencia intermitente, pools de borde operativo, glare publicitario y vacío negro como contrapunto.
+  material_texture: Baldosa astillada, acero oxidado, grasa mineral, humedad capilar y pavimento antideslizante gastado.
   render_quality: Realismo documental de tránsito con microdesgaste verosímil y lectura clara de espacio público denso.
-  spatial_distortion: Motion blur train
+  spatial_distortion: Blur de tránsito y compresión longitudinal por flujo.
   atmosphere: Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.
-  key_features: Franja de seguridad de andén, wayfinding en banda, conducciones vistas, derrame de luz comercial y bocas de túnel profundas.
+  key_features: Franja de seguridad, wayfinding en banda, conducciones vistas, derrame de luz comercial y huecos profundos.
   creative_brief: >-
     Construye una gramática de metro transferible donde repetición modular,
     desgaste por tráfico y jerarquía de señalética gobiernen la composición.

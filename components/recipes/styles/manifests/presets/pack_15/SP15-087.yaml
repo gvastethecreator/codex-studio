@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Transit passage lined with giant navigational astrolabes.
-  form_and_line: Rotating brass rings, narrow corridors, and pointer arches.
+  aesthetic: Navigational clockpunk style lined with giant astrolabe logic and route-mapping brasswork.
+  form_and_line: Rotating brass rings, narrow corridor-like bands, pointer arches, and layered dial apertures.
   color_palette: Brass, slate, and pale teal.
   lighting_setup: Warm lamp pools and reflected dial highlights.
   material_texture: Burnished metal, carved stone, and oiled leather.
   render_quality: Precision-rich conceptual corridor scene.
-  spatial_distortion: Long axis perspective through layered dials.
+  spatial_distortion: Long axis perspective through layered dials and pointer shadows.
   atmosphere: Measured movement and navigational discipline.
-  key_features: Direction dials, time markers, and route brasswork.
+  key_features: Direction dials, time markers, astrolabe rings, and route brasswork.
   creative_brief: >-
     Preserve brass astrolabe-passage grammar as a reusable style system:
     navigational-instrument corridor rhythm, calibrated directional ritual,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, toy-like, cyber-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-087.webp }
 attributes:
   negativePrompt: photoreal, toy-like, cyber-slum, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-clockpunk,
+    categoryName: 2. Corepunk — Clockpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

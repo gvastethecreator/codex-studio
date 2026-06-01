@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-053
 packId: pack_05
-name: Heavy Industrial Mecha
+name: Hydraulic Mass Attrition Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Heavy armor, oil-streaked joints, battlefield sparks, visceral mechanical weight, arm-slave mecha, tactical formation movement, ammo-belt feeds, hydraulic limb action
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Gruff, warlike, gritty, mechanical
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: These machines do not fly; they lumber, groan, and bleed hydraulic fluid into mud. Every joint carries the memory of a thousand impacts, every scar on the armor tells of a battle survived. War is not elegant; it is heavy and it grinds bone to powder.
+  aesthetic: Industrial weight under attrition, hydraulic strain, scarred machinery logic, mud-heavy motion, and pressure-tested endurance.
+  form_and_line: Blocky hard-edge linework, piston-like contour rhythm, bolted silhouette mass, compressed stances, and blunt impact diagonals.
+  color_palette: Oil black, worn steel, oxidized orange, bruised olive, emergency amber, and dull blue shadow.
+  lighting_setup: Low industrial glow, welding sparks, smoky backlight, hard practical highlights, and grime-muted rim separation.
+  material_texture: Scratched plating, hydraulic grease, soot, chipped paint, rough rubber, and particulate dust over dense surfaces.
+  render_quality: Premium heavy-tech anime rendering with tactile mass, readable layered parts, and controlled grime detail.
+  spatial_distortion: Low-angle compression, heavy foreground mass, flattened depth under pressure, and recoil-like perspective drag.
+  atmosphere: Gruff, pressured, gritty, mechanical
+  key_features: Hydraulic weight cues, scarred plating language, dirty sparks, compressed stance energy, and attrition-worn mechanical rhythm.
+  creative_brief: >-
+    Apply hydraulic mass attrition as a reusable style treatment: make any
+    subject feel heavy, functional, stressed, and worn by repeated impacts while
+    staying abstract, portable, and detached from fixed machines, operators,
+    props, transport forms, or conflict settings.
 avoidRules:
   - realistic
   - 3d render

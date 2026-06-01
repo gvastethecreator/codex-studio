@@ -17,11 +17,11 @@ visualDna:
   color_palette: Natural, low contrast, flat daylight, ungraded look
   lighting_setup: Available light, practical lamps, window spill
   material_texture: Digital video, DSLR sensor, consumer camera
-  render_quality: "Real, awkward, improvised dialogue, unpolished truth"
+  render_quality: 'Real, awkward, improvised dialogue, unpolished truth'
   spatial_distortion: Out of focus, soft rack, distracted framing
-  atmosphere: Intimate, talky, relationship friction, honest discomfort
-  key_features: Handheld, naturalistic dialogue, apartment clutter
-  creative_brief: 'Nothing is hidden because nothing is staged — a window lets in whatever light the afternoon offers, and a camera observes conversations with the patience of someone who forgot it was recording. Beauty surfaces in the accidental: a pause, a glance off-camera, the clutter of a life not tidied for display.'
+  atmosphere: Intimate, awkward, honest discomfort
+  key_features: Handheld, accidental framing, available light
+  creative_brief: 'Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without requiring conversations, apartments, people, or relationship drama.'
 avoidRules:
   - polished
   - scripted

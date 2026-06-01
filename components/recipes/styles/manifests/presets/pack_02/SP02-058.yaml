@@ -19,9 +19,9 @@ visualDna:
   material_texture: Film, radiographic sheet, phosphor plate
   render_quality: Medical, scientific, diagnostic clarity, ghostly penetration
   spatial_distortion: Transparency, density mapping, interior-only view
-  atmosphere: Clinical, spooky, anatomical wonder, hidden structure
-  key_features: Inverted, skeleton visible, swallowed object, airport scan
-  creative_brief: The surface surrenders and what lies beneath becomes luminous, a cartography of interior architecture rendered in bone-white against indigo shadow. The familiar body transforms into foreign terrain, mapped by radiation rather than reflection, every hidden chamber and scaffold laid bare. There is both clinical severity and strange tenderness in this unwilling transparency.
+  atmosphere: Clinical, spooky, diagnostic, hidden structure
+  key_features: Inverted density map, translucent layers, phosphor glow, radiographic negative
+  creative_brief: 'Translate the input into radiographic imagery: surface detail drops away, density becomes tone, hidden structure glows through translucent layers, and the frame reads like a scientific negative. Avoid body-only, skeleton-only, swallowed-object, or security-scan scenes. The style should expose internal architecture whatever the subject is.'
 avoidRules:
   - surface detail
 assets:

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-284
 packId: pack_16
-name: Castle in the Sky - Floating Island Brass Adventure
+name: Airborne Wonder Adventure Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Aventura aero-mecánica de maravilla clásica, con espíritu de descubrimiento infantil y contraste entre tecnología noble y ambición militar.
-  form_and_line: Contornos claros de ingeniería retro, siluetas de vuelo dinámicas y curvas orgánicas que suavizan la mecánica de latón.
+  aesthetic: Aventura celeste clásica, con maravilla retro-mecánica, optimismo de descubrimiento y escala vertical abierta.
+  form_and_line: Contornos claros, ingeniería retro sugerida, curvas orgánicas y diagonales de elevación que vuelven expansivo cualquier sujeto.
   color_palette: Cielos cerúleos amplios, dorados envejecidos de metal, verdes de ruina suspendida y blancos de nube brillante.
   lighting_setup: Iluminación de gran altitud con contraluces solares, volumen de nubes y destellos selectivos sobre superficies metálicas.
   material_texture: Latón pulido y oxidado, piedra aérea erosionada, vegetación colgante y telas de aventura con desgaste funcional.
   render_quality: Acabado premium de aventura cinematográfica, lectura limpia de escala aérea y claridad de acción en planos abiertos.
   spatial_distortion: Perspectiva vertical expansiva con sensación de caída y ascenso continuo entre estratos de nubes.
   atmosphere: Maravillosa, valiente, libre, expedicionaria.
-  key_features: Islas flotantes, robots de latón benevolentes, dúo juvenil en tránsito aéreo y ruinas tecnológicas en altura.
-  creative_brief: Construye una gramática reusable de aventura celeste donde cualquier sujeto se lea como explorador de civilizaciones suspendidas mediante luz de altura, metales retro y composición vertical abierta.
+  key_features: Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.
+  creative_brief: >-
+    Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada:
+    asombro, escala aérea y diseño retro-mecánico sin imponer islas flotantes, robots, ruinas ni personajes exploradores.
 avoidRules:
   - realistic
   - 3d render

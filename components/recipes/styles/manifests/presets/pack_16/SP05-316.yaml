@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-316
 packId: pack_16
-name: Aura Battler Dunbine - Insect Mecha Mistrealm
+name: Biomorphic Mist Ritual Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Fantasía bélica bio-mecánica de extrañeza onírica, fusionando imaginería de insecto, caballería y tecnología ritual.
-  form_and_line: Siluetas quiméricas de mecha con línea orgánico-metálica, poses de espada heroica y contorno clásico de cel.
+  aesthetic: Fantasía biomórfica de extrañeza onírica, con tecnología ritual, niebla viva y siluetas quiméricas.
+  form_and_line: Siluetas quiméricas con línea orgánico-metálica, poses heroicas y contorno clásico de cel.
   color_palette: Verdes brumosos, violetas de crepúsculo arcano, metales opacos y acentos lumínicos etéreos.
   lighting_setup: Niebla luminosa como fuente principal, key suave de contracampo y sombras planas que conservan legibilidad retro.
-  material_texture: Quitina metálica, membranas translúcidas, roca húmeda fantástica y ruido fílmico analógico.
-  render_quality: Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de guerra irreal sostenida.
-  spatial_distortion: Profundidad de valle envuelto en bruma con distorsión ligera de escala para reforzar mundo no terrestre.
+  material_texture: Quitina metálica, membranas translúcidas, materia húmeda fantástica y ruido fílmico analógico.
+  render_quality: Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de tensión irreal sostenida.
+  spatial_distortion: Profundidad brumosa con distorsión ligera de escala para reforzar mundo no terrestre.
   atmosphere: Extraña, brumosa, heroica, ultraterrena.
-  key_features: Silueta mecha-insecto ritual, espada energética, niebla viva persistente y relieve fantástico en guerra.
-  creative_brief: Construye una gramática reusable de guerra bio-mecánica fantástica para cualquier sujeto, combinando niebla viva, siluetas quiméricas y heroísmo de espada tecnológica.
+  key_features: Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.
+  creative_brief: >-
+    Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada:
+    niebla, quimera y tecnología ritual sin imponer insectos, espadas, guerras ni mechas.
 avoidRules:
   - realistic
   - 3d render

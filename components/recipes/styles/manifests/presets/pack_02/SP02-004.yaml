@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Golden-age technicolor fantasy, Wizard of Oz style, three-strip glory, hyper-saturated dream worlds, musical spectacle, storybook transition
+  aesthetic: Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle
   form_and_line: None
   color_palette: Hyper-saturated, ruby red, emerald green, sapphire blue
   lighting_setup: High key studio, broad soft fill, painted backdrop
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Vibrant, classic, theatrical, luminous
   spatial_distortion: None
   atmosphere: Joyful, theatrical, magical spectacle, storybook wonder
-  key_features: Red is very red, yellow brick road, ruby slippers
-  creative_brief: Colors refuse to whisper — they sing, each hue pushed past realism into a realm where emerald cities gleam and ruby slippers pulse with inner light. The world is a painted diorama viewed through a lens that turns ordinary spectacle into something closer to pure feeling.
+  key_features: Dye-transfer saturation, theatrical color clarity
+  creative_brief: 'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging.'
 avoidRules:
   - faded
   - dark

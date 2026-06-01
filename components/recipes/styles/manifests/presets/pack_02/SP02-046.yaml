@@ -18,10 +18,10 @@ visualDna:
   lighting_setup: Long exposure, skylight studio, minutes-long stillness
   material_texture: Scratches, tarnish, silver plate, copper backing
   render_quality: Ghostly, ancient, mirror-reflection depth, 1840s stillness
-  spatial_distortion: Blurry eyes, sitter motion, breath ghost
-  atmosphere: Haunting, history, frozen mortality, Victorian silence
+  spatial_distortion: Long-exposure drift, breath ghost, mirrored plate depth
+  atmosphere: Haunting, history, frozen time, Victorian silence
   key_features: Vignette, brass frame, chemical bloom, tarnished edge
-  creative_brief: 'A bright ghost of a passing century fixed onto polished silver, the mirror-surface keeping what the lens borrowed. Time thickens into a held breath: long minutes of unmoving patience, stillness heavy as mercury. What gazes back is not a face but the weight of history pressed onto metal, glinting with the last light of a skylight studio.'
+  creative_brief: 'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness.'
 avoidRules:
   - color
   - paper

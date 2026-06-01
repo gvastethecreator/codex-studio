@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Magic-school world broken by deadlift absurdity, muscular deadpan, wand-logic punctured by physical-force jokes, elite academy duels with comedy undercut
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Brickwall comedy spell-brawl style, where ornate magic logic is undercut by deadpan physical certainty.
+  form_and_line: Heavy blocky impact shapes, elegant spell curls interrupted by blunt force vectors, and frozen straight-faced poses.
+  color_palette: Royal academy blue, cream parchment, muscle-shadow gray, absurd gold, hot red accents, and comic white flashes.
+  lighting_setup: Prestigious magical glow abruptly flattened by gag lighting, hard impact flashes, and theatrical contrast.
+  material_texture: Chalk dust, polished magic particles, stone block grain, even flat color, and crisp gag-smear overlays.
+  render_quality: Clean modern anime comedy-action finish with readable spell polish and blunt physical punchline clarity.
+  spatial_distortion: Straight-line force breaks ornate perspective, turning elegant space into brickwall impact geometry.
   atmosphere: Dumb, forceful, confident, hilarious
-  key_features: Spell-school props, deadpan hero stance, physical gag payoffs, absurd power contrast, academy-combat framing
-  creative_brief: A young man deadlifts his way through a world built on incantations, and every spell shatters against the immovable object of pure physical confidence. The academy prepared its wizards for counterspells and arcane nuance, never for someone who solves riddles with biceps and answers prophecies with protein. Absurdity is the most powerful magic of all.
+  key_features: Deadpan force, broken spell logic, blocky impact, ornate-to-blunt contrast, physical punchline rhythm.
+  creative_brief: >-
+    Apply absurd physical certainty to any prompt: let ornate magic cues collide
+    with blunt force, deadpan stillness, and brickwall impact without requiring
+    an institution, prop, duel, or body gag setup.
 avoidRules:
   - realistic
   - 3d render

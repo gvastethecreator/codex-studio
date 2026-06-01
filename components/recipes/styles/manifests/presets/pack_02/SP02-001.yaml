@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: 1940s crime drama
+  aesthetic: 1940s noir contrast
   form_and_line: None
   color_palette: Black and White, deep charcoal, silver highlights
   lighting_setup: Venetian blinds shadow, directional key, slatted light
   material_texture: Film grain, silver gelatin, soft halation
   render_quality: Cinematic, moody, high-contrast, shadow-rich
   spatial_distortion: None
-  atmosphere: Suspense, dark, moral ambiguity, wet asphalt
-  key_features: High contrast, hard-boiled detective, femme fatale silhouette
-  creative_brief: A single lamp cuts through venetian slats, carving zebra stripes across a rain-slick sidewalk where every puddle holds a confession. The city exhales cigarette smoke and betrayal into pools of ink-black shadow, while silver edges trace the silhouette of someone who knows too much.
+  atmosphere: Suspense, dark, moral ambiguity, shadow pressure
+  key_features: High contrast, slatted light, silver edge
+  creative_brief: 'Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key, deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood without forcing detective, city, sidewalk, cigarette, or femme fatale.'
 avoidRules:
   - color
   - bright

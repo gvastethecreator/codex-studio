@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Body-horror cartoon, exposed musculature wrapped in sagging skin, too-many-teeth grin stretching cheek to ear, veins pulsing visibly under translucent flesh, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
-  form_and_line: Hyper-detailed anatomical horror on cartoon proportions, sinew strands visible, meat-fiber linework
+  aesthetic: Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette
+  form_and_line: Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework
   color_palette: Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink
   lighting_setup: Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence
   material_texture: Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail
   render_quality: Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel
-  spatial_distortion: Jaw unhinging beyond physical limits, eyes bulging on stalks, ribcage visible through skin, flesh-puppet proportions
+  spatial_distortion: Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions
   atmosphere: Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling
-  key_features: Too-many-teeth smile, visible musculature, bulging veined eyes, meat-texture rendering, skin-stretch tension lines
-  creative_brief: The body has been turned inside out for inspection, sinew and tendon wearing the colors of a children's cartoon while performing the vocabulary of surgical theater. A grin holds too many teeth, and skin stretches translucent over landscapes of muscle that should remain interior. The image compels and repels in the same breath, an anatomy lesson from a fever dream.
+  key_features: Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color
+  creative_brief: 'Apply grotesque meat-puppet rendering to any subject: cartoon proportions collide with exposed inner textures, wet fiber detail, translucent wrapping, stretch tension, and surgical fluorescence. Avoid requiring bodies, teeth, eyes, ribs, or anatomy as subject matter. The horror should come from interior material made visible.'
 avoidRules:
   - smooth
   - clean

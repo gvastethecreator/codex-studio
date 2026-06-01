@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-111
 packId: pack_06
-name: Battle Royale Storm Arena
+name: Battle Royale Compression Colorway
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Battle-royale visual language with high-visibility color coding, stormlike pressure gradients, and streamer-era polish.
+  subject_treatment: Clarify any subject through tactical silhouette separation, loot-color accents, and strong foreground priority.
+  color_and_tone: Saturated cyan-violet perimeter glow, warm danger accents, high-key mids, and legible game-ready contrast.
+  lighting_and_shadow: Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow readability.
+  texture_and_material: Clean PBR-lite materials, compression-friendly gradients, subtle screen sharpness, and minimal grime.
+  camera_and_composition: Wide playable readability, circular pressure motifs, strong focal isolation, and HUD-safe edges.
+  atmosphere_and_mood: Urgent, competitive, kinetic mood without requiring arenas, storms, players, weapons, or vehicles.
+  rendering_and_quality: Modern live-service key-art polish, vivid but not cluttered, no UI labels or readable text.
 avoidRules:
   - watermark
   - text
+  - literal arena requirement
+  - storm wall requirement
+  - weapon requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-111.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, literal arena requirement, storm wall requirement, weapon requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

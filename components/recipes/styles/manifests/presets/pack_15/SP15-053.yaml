@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Diplomatic decopunk where hospitality is camouflage for negotiation, surveillance, and perfectly choreographed etiquette.
-  form_and_line: Chevron facade codes, tiered balcony bands, canopy shields, elevator monoliths, and reception desks like treaty altars.
+  aesthetic: Diplomatic decopunk where hospitality becomes camouflage for negotiation, surveillance, and choreographed etiquette.
+  form_and_line: Chevron facade codes, tiered bands, canopy shields, elevator-like monoliths, and treaty-altar blocks.
   color_palette: Onyx, champagne gold, deep green, mirror silver, and discreet passport red.
   lighting_setup: Warm marquee wash, corridor uplights, mirror glints at thresholds, and soft private-salon lamp pools.
   material_texture: Marble veneer, brass inlay, mirrored paneling, velvet ropes, lacquered concierge surfaces, and embossed seal paper.
   render_quality: Premium hospitality concept with exact decor hierarchy and hidden power cues.
-  spatial_distortion: Lobby depth passes through arches, screens, desk layers, and elevator banks like protocol checkpoints.
+  spatial_distortion: Lobby-like depth passes through arches, screens, layers, and vertical banks like protocol checkpoints.
   atmosphere: Polished intrigue, ceremonial hospitality, quiet surveillance, and gala-grade tension.
-  key_features: Treaty-desk silhouettes, private salon thresholds, coded elevator banks, diplomatic seal motifs, and mirrored waiting alcoves.
+  key_features: Treaty-desk silhouettes, private threshold frames, coded vertical banks, diplomatic seal motifs, and mirrored alcove forms.
   creative_brief: >-
     Preserve chevron diplomatic-hotel grammar as a reusable style system:
     polished protocol hospitality, mirrored surveillance etiquette, and

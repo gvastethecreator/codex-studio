@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-346
 packId: pack_16
-name: Kuroko's Basketball - Phantom Pass Flashcourt
+name: Phantom Teamplay Speed Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Basket táctico de velocidad ilusoria, orientado a circulación de balón invisible y ruptura de marca por timing.
-  form_and_line: Líneas rápidas de pase, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.
-  color_palette: Azules eléctricos, negros de contraste de arena y acentos cian para telegraph de circulación.
-  lighting_setup: Iluminación indoor dramática con highlights selectivos en balón, manos y línea de pase.
-  material_texture: Parquet pulido reflectivo, malla de aro definida, jersey técnico y trazas de movimiento estilizadas.
+  aesthetic: Deporte táctico de velocidad ilusoria, circulación invisible, timing colectivo y ruptura de marca.
+  form_and_line: Líneas rápidas de trayectoria, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.
+  color_palette: Azules eléctricos, negros de contraste profundo y acentos cian para telegraph de circulación.
+  lighting_setup: Iluminación dramática con highlights selectivos en manos, mirada y línea de trayectoria.
+  material_texture: Superficie pulida reflectiva, malla geométrica sugerida, tejido técnico y trazas de movimiento estilizadas.
   render_quality: Acabado deportivo de alta precisión con claridad de jugada colectiva vs estrella individual.
-  spatial_distortion: Compresión de cancha y estiramiento direccional en trayectorias de pase para lectura de sorpresa.
+  spatial_distortion: Compresión espacial y estiramiento direccional en trayectorias fantasma para lectura de sorpresa.
   atmosphere: Estratégica, veloz y tácticamente deslumbrante.
-  key_features: Trails de pase, duelos perimetrales, cambios de dirección bruscos y contraste team-play vs ace-play.
+  key_features: Trails fantasma, cambios bruscos de dirección, contraste teamplay vs aceplay y lectura de velocidad invisible.
   creative_brief: >-
-    Formula una gramática reusable de phantom-pass-basketball donde timing,
-    ocultación de intención y lectura táctica de líneas de pase sean el núcleo
-    estilístico, no una jugada concreta.
+    Aplica una gramática reusable de velocidad fantasma táctica a cualquier prompt o imagen de entrada:
+    trails invisibles, cortes súbitos y contraste equipo-individuo sin imponer basket, pelota, cancha ni duelos perimetrales.
 avoidRules:
   - realistic
   - 3d render

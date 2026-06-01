@@ -11,20 +11,22 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo',
     style: {
       aesthetic:
-        'Community biopunk night district where engineered organisms provide light, data, and care services.',
-      form_and_line: 'Bio-reactor terraces, vascular conduit arcs, and pod-like neighborhood hubs.',
+        'Community biopunk night grammar where engineered organisms provide light, data, and care as a living civic pattern.',
+      form_and_line:
+        'Bio-reactor terrace rhythm, vascular conduit arcs, and pod-like community node geometry.',
       color_palette: 'Fluorescent cyan, chlorophyll green, and deep midnight indigo.',
       lighting_setup:
         'Pulsed bioluminescent emissions with damp ground reflections and moon spill.',
       material_texture: 'Gel membranes, porous bioceramics, wet stone, and mycelial conduits.',
       render_quality:
-        'Atmospheric concept art with crisp biotech legibility and safe-path readability.',
-      spatial_distortion: 'Layered vertical district depth linked by glowing metabolic corridors.',
+        'Atmospheric biopunk concept art with crisp biotech legibility and safe-path readability.',
+      spatial_distortion:
+        'Layered vertical depth linked by glowing metabolic corridors without requiring a district.',
       atmosphere: 'Nurturing experimentation, civic trust, and living-system intelligence.',
       key_features:
-        'Gene-lit avenues, communal wetlabs, symbiotic canopy nodes, and bio-signal kiosks.',
+        'Gene-lit path motifs, communal wetlab cues, symbiotic canopy nodes, and bio-signal geometry.',
       creative_brief:
-        'A biopunk neighborhood where public biotech replaces brittle utilities and creates a visibly living urban metabolism.',
+        'Preserve biolumina night-grid grammar as a reusable style system: organism-powered civic infrastructure, metabolic corridor legibility, and trust-centered biotech should remain coherent across subjects without requiring streets, labs, kiosks, or a literal neighborhood.',
     },
   },
   {
@@ -34,20 +36,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, body-horror-gore, dystopian-abuse, militarized-lab, watermark, text, logo',
     style: {
-      aesthetic: 'Biopunk neighborhood where genomic craft and public ecology co-evolve.',
-      form_and_line: 'Organically branching labs, tendon-like bridges, and modular grow pods.',
+      aesthetic:
+        'Biopunk public-ecology grammar where genomic craft, ethical access, and adaptive growth co-evolve.',
+      form_and_line:
+        'Organically branching lab-like modules, tendon-like bridges, and modular grow-pod geometry.',
       color_palette: 'Chlorophyll green, sterile white, and bio-lilac accents.',
-      lighting_setup: 'Diffused lab daylight with pulsing specimen chamber glow.',
+      lighting_setup: 'Diffused lab-like daylight with pulsing specimen-chamber glow.',
       material_texture:
         'Wet biogel membranes, matte ceramic bioreactors, and mycelial composite walls.',
       render_quality:
         'Advanced concept art with clean scientific readability and emotional warmth.',
       spatial_distortion:
-        'Interlaced district perspective linking street clinics to elevated biofarms.',
+        'Interlaced civic-biotech perspective linking care nodes to elevated biofarm cues.',
       atmosphere: 'Experimental care, ethical tension, and hopeful adaptation.',
-      key_features: 'Community gene clinic, edible tissue greenhouses, open-source wetlab kiosks.',
+      key_features:
+        'Community gene-care motifs, edible tissue greenhouse cues, open-source wetlab geometry.',
       creative_brief:
-        'A biopunk borough where biotechnology is treated as public infrastructure instead of private power.',
+        'Preserve gene-garden borough grammar as a reusable style language: civic biotech accessibility, ethical wetlab openness, and community-scale ecological adaptation should remain stable across subjects without requiring neighborhoods, clinics, labs, or greenhouses.',
     },
   },
   {
@@ -56,17 +61,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, cyberpunk-grime, violent-neon, watermark, text, logo, rust',
     style: {
-      aesthetic: 'Public transit corridor grown from mycelial structures and bioceramic ribs.',
-      form_and_line: 'Spine-like tunnels, branching nodes, and soft archways.',
+      aesthetic:
+        'Biopunk mycelial transit language grown from living structure and bioceramic ribs.',
+      form_and_line: 'Spine-like tunnels, branching nodes, soft archways, and fungal rail lines.',
       color_palette: 'Mushroom cream, moss green, and dusk violet.',
       lighting_setup: 'Subsurface glow and soft bioluminescent pulses.',
       material_texture: 'Fungal felt, porous ceramic, and damp stone.',
       render_quality: 'Clean biotech concept with organic legibility.',
-      spatial_distortion: 'Long corridor depth with branching cellular ribs.',
+      spatial_distortion: 'Long corridor-like depth with branching cellular ribs.',
       atmosphere: 'Adaptive infrastructure, calm motion, and living-system trust.',
-      key_features: 'Mycelial rails, transit pods, and nutrient maintenance nodes.',
+      key_features:
+        'Mycelial rail motifs, pod silhouettes, nutrient maintenance nodes, and soft hyphae glow.',
       creative_brief:
-        'A biopunk transit spine where the city moves through a living fungal backbone.',
+        'Preserve mycelial transit-spine grammar as a reusable style system: fungal-structural mobility corridors, branching cellular wayfinding, and calm adaptive infrastructure should remain coherent across subjects.',
     },
   },
   {
@@ -75,17 +82,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, dystopian, harsh-neon, watermark, text, logo, grime',
     style: {
-      aesthetic: 'Open-air market sheltered by symbiotic canopy organisms.',
-      form_and_line: 'Tented bio-canopies, hanging pods, and curved vendor aisles.',
+      aesthetic: 'Symbiotic biopunk canopy style where shelter behaves like living mutualism.',
+      form_and_line: 'Tented bio-canopies, hanging pods, curved aisle bands, and soft vent petals.',
       color_palette: 'Leaf green, coral pink, and pearl white.',
       lighting_setup: 'Dappled canopy light with gentle bioglow accents.',
       material_texture: 'Living fabric, translucent membranes, and woven fiber.',
       render_quality: 'Bright civic biotech scene with highly readable stalls.',
-      spatial_distortion: 'Sweeping market aisle under layered living roofs.',
+      spatial_distortion: 'Sweeping aisle-like depth under layered living roof forms.',
       atmosphere: 'Exchange, nourishment, and mutual dependence.',
-      key_features: 'Symbiotic stalls, nutrient kiosks, and canopy vent petals.',
+      key_features:
+        'Symbiotic exchange motifs, nutrient-node shapes, canopy vent petals, and hanging pod clusters.',
       creative_brief:
-        'A biopunk marketplace where commerce is sheltered by cooperative living architecture.',
+        'Preserve symbiont market-canopy grammar as a reusable style system: cooperative bio-canopy commerce, nutrient-linked stall ecology, and mutualist public exchange should remain coherent across subjects.',
     },
   },
   {
@@ -94,17 +102,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, sterile, cyberpunk, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Public forum embedded inside a genomic garden landscape.',
-      form_and_line: 'Spiral forum seats, petal-like lab alcoves, and DNA trellis curves.',
+      aesthetic: 'Genomic biopunk forum style embedded in garden logic and public learning.',
+      form_and_line:
+        'Spiral forum bands, petal-like lab alcoves, DNA trellis curves, and pollen display arcs.',
       color_palette: 'Chlorophyll green, rose amber, and clean white.',
       lighting_setup: 'Bright diffused daylight with reflective leaf scatter.',
       material_texture: 'Living trellises, polished bio-glass, and soft soil beds.',
       render_quality: 'Elegant civic biotech concept art.',
-      spatial_distortion: 'Amphitheater depth framed by botanical layers.',
+      spatial_distortion: 'Amphitheater-like depth framed by botanical layers.',
       atmosphere: 'Debate, cultivation, and intelligent stewardship.',
-      key_features: 'Genome benches, pollen displays, and bio-learning panels.',
+      key_features:
+        'Genome bench motifs, pollen display grids, bio-learning panels, and DNA trellis shadows.',
       creative_brief:
-        'A biopunk forum where public discourse grows inside a carefully tended living garden of knowledge.',
+        'Preserve genome garden-forum grammar as a reusable style system: botanical knowledge amphitheaters, DNA-trellis civic debate framing, and cultivated stewardship intelligence should remain coherent across subjects.',
     },
   },
   {
@@ -113,16 +123,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, horror, harsh-metal, watermark, text, logo, slime-gross',
     style: {
-      aesthetic: 'Community clinic weaving neural repair through tactile living systems.',
-      form_and_line: 'Loom frames, soft treatment alcoves, and filament pathways.',
+      aesthetic: 'Neural biopunk care language weaving repair through tactile living systems.',
+      form_and_line: 'Loom frames, soft alcove pockets, filament pathways, and membrane ribbing.',
       color_palette: 'Soft cyan, eucalyptus green, and porcelain.',
       lighting_setup: 'Clean clinical glow softened by living tissue luminescence.',
       material_texture: 'Biofabric threads, gel pads, and matte ceramic.',
       render_quality: 'Gentle biotech interior with humane readability.',
-      spatial_distortion: 'Loom-centered floor plan with radial patient bays.',
+      spatial_distortion: 'Loom-centered radial plan with restorative pocket depth.',
       atmosphere: 'Care, repair, and embodied trust.',
-      key_features: 'Nerve looms, bioscan petals, and restorative membranes.',
-      creative_brief: 'A biopunk clinic where healing is woven rather than assembled.',
+      key_features:
+        'Nerve loom motifs, bioscan petals, restorative membranes, and filament pathway glow.',
+      creative_brief:
+        'Preserve nerve loom-clinic grammar as a reusable style system: loom-based restorative medicine, soft radial treatment choreography, and humane biofabric trust should remain coherent across subjects.',
     },
   },
   {
@@ -131,17 +143,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, cyberpunk, storm-chaos, watermark, text, logo, over-dark',
     style: {
-      aesthetic: 'Seaside promenade adjoining coral research labs and tidewalks.',
-      form_and_line: 'Reef terraces, promenade rails, and rounded lab domes.',
+      aesthetic:
+        'Coral biopunk research style where reef intelligence and tide instruments shape the image.',
+      form_and_line:
+        'Reef terrace bands, promenade rail strokes, rounded lab-dome forms, and coral lattice arcs.',
       color_palette: 'Coral red, aqua, and pearl gray.',
       lighting_setup: 'Sea shimmer and bright coastal diffusion.',
       material_texture: 'Calcium-like structures, glassy bio-panels, and wet stone.',
       render_quality: 'Coastal biotech concept art with graceful clarity.',
-      spatial_distortion: 'Promenade vanishing point crossing reef terraces.',
+      spatial_distortion: 'Promenade-like vanishing point crossing reef terrace rhythm.',
       atmosphere: 'Exploration, stewardship, and aquatic curiosity.',
-      key_features: 'Coral benches, tide instruments, and reef observation pods.',
+      key_features:
+        'Coral support motifs, tide instruments, reef observation pod shapes, and living research membranes.',
       creative_brief:
-        'A biopunk shoreline where marine research and public leisure share the same living promenade.',
+        'Preserve coral laboratory-promenade grammar as a reusable style system: reef-adjacent research leisure integration, coastal biocalcium tactility, and exploratory stewardship should remain coherent across subjects.',
     },
   },
   {
@@ -150,16 +165,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, aggressive-industrial, cyberpunk, watermark, text, logo, grime',
     style: {
-      aesthetic: 'Shared fabrication commons where living materials are grown in public.',
-      form_and_line: 'Worktables, organoid trays, and soft factory arches.',
+      aesthetic:
+        'Public biofoundry style where living materials are grown, shared, and visibly fabricated.',
+      form_and_line:
+        'Worktable grids, organoid trays, soft factory arches, and growth-vat repeats.',
       color_palette: 'Warm white, moss, and amber biolight.',
       lighting_setup: 'Workshop daylight and internal growth lamps.',
       material_texture: 'Bio-foam, smooth glass, and plant-fiber mesh.',
       render_quality: 'Productive civic biotech with clear process readability.',
-      spatial_distortion: 'Open plan with radial fabrication bays.',
+      spatial_distortion: 'Open-plan radial geometry with fabrication bay rhythm.',
       atmosphere: 'Collaboration, invention, and ecological pragmatism.',
-      key_features: 'Growth trays, living molds, and shared maker stations.',
-      creative_brief: 'A biopunk commons where citizens co-grow materials for their city.',
+      key_features:
+        'Growth trays, living molds, maker-station motifs, and translucent biofabrication vats.',
+      creative_brief:
+        'Preserve biofoundry commons grammar as a reusable style system: public co-growth fabrication workflows, organoid production legibility, and ecological maker pragmatism should remain coherent across subjects.',
     },
   },
   {
@@ -168,17 +187,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, militaristic, neon-gloom, watermark, text, logo, decay',
     style: {
-      aesthetic: 'City district linked by living bridges that heal and adapt over time.',
-      form_and_line: 'Spanning bio-arches, ribbed walkways, and root anchors.',
+      aesthetic: 'Adaptive biopunk bridge language where spans heal, root, and change over time.',
+      form_and_line:
+        'Spanning bio-arches, ribbed walkway bands, root anchors, and living seam curves.',
       color_palette: 'Sap green, cloud white, and soft amber.',
       lighting_setup: 'Sky daylight filtered through translucent living spans.',
       material_texture: 'Root fiber, bio-resin, and woven membrane.',
       render_quality: 'Infrastructure concept with lush organic engineering.',
-      spatial_distortion: 'Bridge grid crossing layered urban terraces.',
+      spatial_distortion: 'Bridge-grid crossing layered terrace depth.',
       atmosphere: 'Connection, resilience, and responsive infrastructure.',
-      key_features: 'Living spans, root anchors, and adaptive footpaths.',
+      key_features:
+        'Living span motifs, root anchors, adaptive path bands, and self-healing seam textures.',
       creative_brief:
-        'A biopunk district where the bridges are alive and the city’s circulation is grown rather than built.',
+        'Preserve living bridge-district grammar as a reusable style system: bio-arched circulation networks, root-anchor resilience engineering, and responsive connective urbanism should remain coherent across subjects.',
     },
   },
   {
@@ -187,17 +208,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, horror, grimdark, watermark, text, logo, over-saturation',
     style: {
-      aesthetic: 'Civic plaza using spore networks as signal, memory, and public interface.',
-      form_and_line: 'Central plaza rings, spore towers, and branching signal petals.',
+      aesthetic:
+        'Civic biopunk signal language using spore networks as memory and public interface.',
+      form_and_line:
+        'Central plaza-like rings, spore towers, branching signal petals, and mycelial broadcast lines.',
       color_palette: 'Mushroom beige, moss green, and twilight blue.',
       lighting_setup: 'Gentle bioluminescent signal pulses and reflected plaza light.',
       material_texture: 'Fungal surfaces, wet stone, and translucent growth membranes.',
       render_quality: 'Symbolic biotech cityscape with legible circulation.',
-      spatial_distortion: 'Plaza-centered circular layout with branching signal arms.',
+      spatial_distortion: 'Circular public-interface layout with branching signal arms.',
       atmosphere: 'Communication, adaptation, and communal intelligence.',
-      key_features: 'Spore beacons, memory spores, and public signal blooms.',
+      key_features:
+        'Spore beacons, memory spores, public signal blooms, and branching interface petals.',
       creative_brief:
-        'A biopunk plaza where spores carry the city’s messages like living civic infrastructure.',
+        'Preserve spore signal-plaza grammar as a reusable style system: fungal communication monuments, circular signal-civic choreography, and communal adaptive intelligence should remain coherent across subjects.',
     },
   },
   {
@@ -206,16 +230,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, horror, gore, watermark, text, logo, messy-clutter',
     style: {
-      aesthetic: 'Memory archive grown from preserved tissue patterns and soft shell structures.',
-      form_and_line: 'Pavilion ribs, archive drawers, and layered specimen shelves.',
+      aesthetic:
+        'Tissue-memory biopunk archive grown from preserved patterns and soft shell structures.',
+      form_and_line:
+        'Pavilion ribs, archive-drawer bands, layered specimen shelves, and soft shell contours.',
       color_palette: 'Pearl, muted coral, and quiet jade.',
       lighting_setup: 'Museum diffusion with internal biological glow.',
       material_texture: 'Bio-glass, preserved membranes, and smooth ceramic.',
       render_quality: 'Museum-grade biotech concept with fragile elegance.',
-      spatial_distortion: 'Pavilion shell focused on a central specimen spine.',
+      spatial_distortion: 'Pavilion-shell focus around a central specimen spine.',
       atmosphere: 'Preservation, contemplation, and scientific tenderness.',
-      key_features: 'Tissue drawers, bio-index panels, and preservation domes.',
-      creative_brief: 'A biopunk archive that treats living tissue as both record and artifact.',
+      key_features:
+        'Tissue-drawer motifs, bio-index panels, preservation domes, and translucent specimen membranes.',
+      creative_brief:
+        'Preserve tissue archive-pavilion grammar as a reusable style system: specimen-centered memory architecture, fragile bio-preservation elegance, and scientific tenderness should remain coherent across subjects.',
     },
   },
   {
@@ -224,17 +252,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, dystopian, dystopic, watermark, text, logo, cold-grit',
     style: {
-      aesthetic: 'Residential stack where chloroplast systems power light and air.',
-      form_and_line: 'Terrace stacks, leaf panels, and sun-capture fins.',
+      aesthetic:
+        'Chloroplast biopunk stack style where photosynthetic systems power light and air.',
+      form_and_line:
+        'Terrace-stack bands, leaf panels, sun-capture fins, and vertical garden ribs.',
       color_palette: 'Verdant green, cream, and honey amber.',
       lighting_setup: 'Sunlit facades with diffuse interior glow.',
       material_texture: 'Leaf-film, timber composites, and matte bioceramic.',
       render_quality: 'Warm housing concept with strong environmental readability.',
-      spatial_distortion: 'Vertical terraced stack rising like a living garden tower.',
+      spatial_distortion: 'Vertical terraced stack rising like living garden machinery.',
       atmosphere: 'Domestic comfort, ecological intelligence, and bright stability.',
-      key_features: 'Chloroplast panels, air gardens, and terrace nurseries.',
+      key_features:
+        'Chloroplast panels, air-garden motifs, terrace nurseries, and photosynthetic glow seams.',
       creative_brief:
-        'A biopunk home stack where the building behaves like a giant productive leaf.',
+        'Preserve chloroplast housing-stack grammar as a reusable style system: photosynthetic domestic envelopes, terraced air-garden comfort, and bright ecological stability should remain coherent across subjects.',
     },
   },
   {
@@ -243,16 +274,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, hospital-gore, cyberpunk, watermark, text, logo, grime',
     style: {
-      aesthetic: 'Harbor district devoted to regenerative stemcell care and logistics.',
-      form_and_line: 'Dock curves, treatment pods, and fluid container towers.',
+      aesthetic:
+        'Stemcell biopunk logistics where regenerative care feels tidal, soft, and precise.',
+      form_and_line:
+        'Dock-like curves, treatment pod forms, fluid container towers, and restorative capsule arcs.',
       color_palette: 'Seafoam, pearl white, and muted aqua.',
       lighting_setup: 'Harbor daylight with soft water bounce.',
       material_texture: 'Wet bio-panels, translucent tubes, and ceramic docks.',
       render_quality: 'Clean maritime biotech concept with calm precision.',
-      spatial_distortion: 'Dock perspective leading to regenerative intake pods.',
+      spatial_distortion: 'Dock-like perspective leading to regenerative intake pods.',
       atmosphere: 'Recovery, exchange, and compassionate infrastructure.',
-      key_features: 'Stemcell clinics, tide docks, and restorative capsules.',
-      creative_brief: 'A biopunk harbor where the port itself participates in healing and renewal.',
+      key_features:
+        'Stemcell capsule motifs, tide-line curves, restorative pods, and fluid column silhouettes.',
+      creative_brief:
+        'Preserve stemcell harbor grammar as a reusable style system: regenerative maritime logistics, dockside care infrastructure, and compassionate renewal pathways should remain coherent across subjects.',
     },
   },
   {
@@ -261,16 +296,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, gore, horror, neon, watermark, text, logo',
     style: {
-      aesthetic: 'Observatory embedded in an organ garden of living sensory structures.',
-      form_and_line: 'Dome observatory, organic petals, and ribbed growth platforms.',
+      aesthetic: 'Organ-garden biopunk observation style made of living sensory structures.',
+      form_and_line:
+        'Dome observatory forms, organic petals, ribbed growth platforms, and sensory stalk arrays.',
       color_palette: 'Soft rose, algae green, and pale ivory.',
       lighting_setup: 'Celestial moonlight mixed with internal bioglow.',
       material_texture: 'Living membranes, polished lens glass, and soft organic ribs.',
       render_quality: 'Surreal but readable biotech concept art.',
-      spatial_distortion: 'Dome-centered observatory with layered organ gardens.',
+      spatial_distortion: 'Dome-centered observation composition with layered organ-garden depth.',
       atmosphere: 'Awe, measurement, and organic wonder.',
-      key_features: 'Organ blooms, sensor domes, and growth benches.',
-      creative_brief: 'A biopunk observatory where cultivated living organs study the sky.',
+      key_features:
+        'Organ blooms, sensor domes, growth-bench motifs, and living sensory membranes.',
+      creative_brief:
+        'Preserve organ garden-observatory grammar as a reusable style system: sensory-organ astronomical instrumentation, petaled growth observatories, and organic wonder measurement should remain coherent across subjects.',
     },
   },
   {
@@ -279,17 +317,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Corepunk — Biopunk',
     negativePrompt: 'photoreal, dark-industrial, cyberpunk, watermark, text, logo, muddy',
     style: {
-      aesthetic: 'Rain-harvesting atrium with bioglass surfaces and living channels.',
-      form_and_line: 'Tall atrium shaft, catch basins, and vine-laced downspouts.',
+      aesthetic:
+        'Bioglass rain-harvest style with living channels and translucent wet architecture.',
+      form_and_line:
+        'Tall atrium-like shaft, catch basin rings, vine-laced downspouts, and water nerve lines.',
       color_palette: 'Clear aqua, moss, and sunlit white.',
       lighting_setup: 'Rain-diffused skylight and reflective wet surfaces.',
       material_texture: 'Bioglass, living fiber, and smooth stone.',
       render_quality: 'Bright infrastructure illustration with environmental clarity.',
-      spatial_distortion: 'Atrium verticality with layered water flow.',
+      spatial_distortion: 'Atrium verticality with layered water-flow depth.',
       atmosphere: 'Renewal, abundance, and climate adaptation.',
-      key_features: 'Rain catchers, bioglass walls, and water nerve channels.',
+      key_features:
+        'Rain-catcher rings, bioglass wall glow, water nerve channels, and vine-laced downspout marks.',
       creative_brief:
-        'A biopunk rain atrium where water collection is expressed as elegant living architecture.',
+        'Preserve bioglass rain-atrium grammar as a reusable style system: vertical rain-harvest choreography, reflective wet bioglass tactility, and climate-adaptive abundance should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

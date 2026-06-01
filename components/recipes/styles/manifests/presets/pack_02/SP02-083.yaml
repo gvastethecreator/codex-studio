@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Almost-human-but-wrong portrait, dead glassy eyes with no soul behind them, plastic skin stretched too tight over wrong skull shape, smile that doesn't reach the eyes, hyper-realistic skin on cartoon structure, creepy animatronic energy, Polar-Express dead-eye syndrome
+  aesthetic: Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease
   form_and_line: Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation
-  color_palette: Uncanny skin tones, slightly-off peach, corpse wax beige, mortician foundation, too-uniform blush
+  color_palette: Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth
   lighting_setup: Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere
-  material_texture: Too-smooth plastic skin, vinyl doll surface, waxy silicone, mannequin gloss
+  material_texture: Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss
   render_quality: Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection
-  spatial_distortion: Eyes fractionally too far apart, mouth placed millimeters too low, head shape meeting uncanny threshold
+  spatial_distortion: Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment
   atmosphere: Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness
-  key_features: Glassy unblinking stare, symmetrical-too-perfect faces, puppet-mouth articulation lines, plastic sheen on skin
-  creative_brief: The surface is flawless, and that is precisely the horror—each plane of the face rendered with such immaculate precision that the soul has been polished right off. Eyes hold light but not recognition, the smile performs its geometry without ever arriving at warmth. Something watches from behind the rendering, and it is not quite alive.
+  key_features: Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen
+  creative_brief: 'Apply uncanny-valley rendering to any subject: surfaces become too smooth, proportions almost correct, gradients too perfect, and expression of material feels algorithmic rather than alive. Avoid requiring portraits, eyes, smiles, or human anatomy. The discomfort should come from near-real precision that misses organic truth.'
 avoidRules:
   - comfortable
   - natural

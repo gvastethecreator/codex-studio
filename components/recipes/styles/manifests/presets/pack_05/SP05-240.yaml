@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-240
 packId: pack_05
-name: Promare - Tri-Color Fire Mecha Riot
+name: Tri-Color Ignition Protest Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Incendio geométrico anti-naturalista con mecha de rescate, rivalidad teatral y lenguaje gráfico tricolor de máxima intensidad.
-  form_and_line: Aristas diagonales agresivas, silueta de bombero-mecha icónica y composición de póster con bloques flameados.
+  aesthetic: Ignición geométrica anti-naturalista, protesta visual, rivalidad cromática, lenguaje gráfico tricolor de máxima intensidad.
+  form_and_line: Aristas diagonales agresivas, siluetas icónicas abstractas, composición de póster y bloques de calor facetado.
   color_palette: Cian intenso, magenta caliente, amarillo ácido, negro carbón y blanco de choque térmico.
-  lighting_setup: Llama plana de alto croma, backlight de incendio urbano y rims duros para separar masas en conflicto.
-  material_texture: Acabado gráfico semiplano, metal de respuesta térmica, hollín estilizado y overlays de energía lineal.
+  lighting_setup: Llama plana de alto croma, backlight térmico y rims duros para separar masas en conflicto.
+  material_texture: Acabado gráfico semiplano, material termo-reactivo, hollín estilizado y overlays de energía lineal.
   render_quality: Acción maximalista de lectura instantánea, con color-blocking extremo y control formal de caos ígneo.
   spatial_distortion: Perspectiva en diagonales violentas y compresión dramática para amplificar colisión heroica.
   atmosphere: Ardiente, rebelde y estruendosa, de protesta visual en combustión.
-  key_features: Flama tricolor, mecha angular de rescate, ciudad infernal estilizada y poses de santidad combativa.
+  key_features: Flama tricolor, geometría angular, protesta térmica, santidad combativa abstracta y caos formal legible.
   creative_brief: >-
     Define una gramática tri-fire-riot reusable donde geometría incendiaria,
-    cromática plana extrema e iconografía de rescate articulen una épica
-    contestataria, clara y transferible.
+    cromática plana extrema e iconografía de urgencia articulen épica
+    contestataria sin hardware específico, urbe, roles de emergencia,
+    transportes o incidente concreto.
 avoidRules:
   - realistic
   - 3d render

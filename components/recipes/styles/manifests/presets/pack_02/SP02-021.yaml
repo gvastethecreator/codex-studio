@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Late-90s luxury music video, Hype Williams fishbowl, shiny suits, tunnel vision, hip-hop opulence
+  aesthetic: Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss
   form_and_line: None
-  color_palette: Shiny suits, chrome, platinum, ice white, purple velvet
+  color_palette: Chrome, platinum, ice white, purple velvet
   lighting_setup: Studio tunnel, keyed spot, dramatic back silhouette
   material_texture: Fisheye lens, curved glass, spherical distortion
   render_quality: Glossy, expensive, music-video maximalism, diamond-studded
   spatial_distortion: Distorted wide angle, fishbowl warp, tunnel perspective
   atmosphere: Cool, flashy, hip-hop royalty, aspirational excess
-  key_features: Fisheye, spinning rims, slow-motion strut
-  creative_brief: The world curves into a glittering bubble where chrome catches light and bodies move through space like liquid neon. Every surface sweats excess, every angle distorts into myth, the lens itself drunk on abundance. This is the frame where swagger becomes scripture and the slow-motion strut is a prayer.
+  key_features: Fisheye warp, chrome gloss, slow-motion opulence
+  creative_brief: 'Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion, chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.'
 avoidRules:
   - boring
   - normal

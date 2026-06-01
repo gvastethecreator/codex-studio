@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, big reflective eyes, VHS grain
+  aesthetic: Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain
   form_and_line: Cel outline
   color_palette: Pastel/Neon, bubblegum pink, electric cyan, lavender, coral
   lighting_setup: Hard shadows, cel-shading contrast, dramatic underlight
   material_texture: Film grain, cel texture, painted acetate, analogue warmth
   render_quality: Retro anime, cel-painted, VHS broadcast, handcrafted depth
-  spatial_distortion: Big eyes, reflective highlight, expression exaggeration, hair volume
+  spatial_distortion: Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents
   atmosphere: Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism
-  key_features: Bloom, transformation sequence, sparkle overlay, speed lines
-  creative_brief: A schoolgirl's silhouette catches the neon spill of a city that never learned to sleep, her eyes holding oceans of longing behind a single reflective gleam. The grain of late-night broadcasts clings to every frame, a veil of static between memory and magic. Sorrow and sparkle share the same pastel gradient, inseparable as breath.
+  key_features: Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture
+  creative_brief: 'Style any subject as 90s broadcast anime: pastel-neon cel paint, hard shadow shapes, analog grain, glow bloom, and graphic motion accents. Keep franchise titles as style anchors only; do not force school scenes, city nights, transformations, or specific character tropes. The output should feel like a photographed cel from late-night TV, saturated with melancholy and electric optimism.'
 avoidRules:
   - modern digital
 assets:

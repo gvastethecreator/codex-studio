@@ -10,18 +10,73 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, gritty-realism, warlike, horror, watermark, text, logo',
     style: {
       aesthetic:
-        'Dreamy vaporpunk plaza blending nostalgic consumer architecture with climate-adaptive public space.',
-      form_and_line: 'Escalator ribbons, palm atrium grids, and mirrored geometric facades.',
+        'Dreamy vaporpunk blending nostalgic consumer architecture, humid leisure, and climate-adaptive public softness.',
+      form_and_line:
+        'Escalator-like ribbon diagonals, palm-grid rhythms, and mirrored geometric facade logic.',
       color_palette: 'Lavender pink, aqua cyan, and warm peach sunset.',
-      lighting_setup: 'Soft neon dusk with glossy reflections on polished surfaces.',
+      lighting_setup: 'Soft neon dusk with glossy reflections on polished acrylic-like surfaces.',
       material_texture: 'Frosted acrylic, terrazzo tiles, reflective chrome, and humid foliage.',
-      render_quality: 'Stylized high-fidelity scene with crisp retro-futurist silhouette control.',
-      spatial_distortion: 'Atrium depth corridor guiding toward a luminous civic fountain node.',
+      render_quality:
+        'Stylized high-fidelity vaporpunk treatment with crisp retro-futurist silhouette control.',
+      spatial_distortion: 'Mirrored depth guiding toward a luminous civic leisure node.',
       atmosphere: 'Melancholic joy, ambient leisure, and curated digital nostalgia.',
       key_features:
-        'Retro signage monoliths, mirrored pools, synthetic palms, and open social plazas.',
+        'Retro signage monoliths, mirrored pool logic, synthetic palm silhouettes, and open social spacing.',
       creative_brief:
-        'A vaporpunk commons where abandoned mall aesthetics are reclaimed as a serene climate-conscious civic interior.',
+        'Preserve sunset mall-mirage grammar as a reusable style system: retro-consumer spatial nostalgia, climate-adaptive plaza logic, and soft digital leisure mood should remain coherent across subjects without requiring a mall, fountain, signage text, palms, or a literal plaza.',
+    },
+  },
+  {
+    id: 'SP15-130',
+    name: 'Cathode Pool Reverie',
+    category: '5. Corepunk — Vaporpunk',
+    negativePrompt: 'photoreal, gritty-realism, horror, rusty-industrial, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Vaporpunk dream gloss where cathode bloom, tiled leisure geometry, and pastel humidity turn any subject into soft retro-future memory.',
+      form_and_line:
+        'Rounded monitor silhouettes, pool-tile grid echoes, chrome bevel arcs, and low-friction vaporwave spacing.',
+      color_palette:
+        'Aqua cyan, sunset peach, lavender haze, milky white, and faint magenta phosphor.',
+      lighting_setup:
+        'CRT-like bloom, underwater reflection bands, glossy dusk gradients, and soft neon edge halos.',
+      material_texture:
+        'Frosted acrylic, ceramic tile sheen, chrome trim, humid glass, VHS softness, and low-res phosphor grain.',
+      render_quality:
+        'High-polish vaporpunk finish with clean nostalgic geometry, dreamy reflection logic, and deliberate synthetic serenity.',
+      spatial_distortion:
+        'Mirrored pool-depth recursion and screen-space flattening without requiring water, malls, screens, or a room.',
+      atmosphere: 'Dreamy, synthetic, wistful, weightless, ambient.',
+      key_features:
+        'Cathode glow, tiled grid rhythm, vapor reflection bands, chrome-soft bevels, and pastel humidity.',
+      creative_brief:
+        'Preserve cathode pool reverie as a reusable style system: CRT bloom, leisure-tile rhythm, and humid pastel reflections should transform any subject without forcing a pool, screen, mall, or interior scene.',
+    },
+  },
+  {
+    id: 'SP15-131',
+    name: 'Gradient Arcade Mirage',
+    category: '5. Corepunk — Vaporpunk',
+    negativePrompt: 'photoreal, grimy-cyberpunk, medieval-fantasy, horror, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Arcade-vaporpunk mirage where gradient panels, synthetic leisure symbols, and glossy obsolete tech create playful melancholic utility.',
+      form_and_line:
+        'Memphis diagonals, arcade-button circles, mirrored monolith slabs, and rounded plastic interface geometry.',
+      color_palette: 'Hot pink, teal cyan, violet dusk, cream plastic, and chrome silver glints.',
+      lighting_setup:
+        'Soft cabinet glow, sunset-gradient backwash, glossy reflection pools, and haloed vector edges.',
+      material_texture:
+        'ABS plastic, smoked glass, rubberized buttons, laminated posters as abstract blocks, and soft CRT noise.',
+      render_quality:
+        'Crisp vaporpunk key-art polish with readable retro interface hierarchy and dreamy synthetic finish.',
+      spatial_distortion:
+        'Isometric arcade-grid compression with impossible mirror planes and flattened poster-depth layers.',
+      atmosphere: 'Playful, nostalgic, synthetic, vacant, sweetly strange.',
+      key_features:
+        'Arcade-button rhythm, gradient slab fields, smoked-glass reflections, chrome trim, and poster-like color blocks.',
+      creative_brief:
+        'Preserve gradient arcade mirage as a reusable style system: Memphis arcade geometry, obsolete interface gloss, and synthetic nostalgia should apply to any prompt without requiring an arcade, game cabinet, signage, or room.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

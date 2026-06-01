@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-161
 packId: pack_16
-name: Dragon Ball Z - Planet-Shattering Aura Duel
+name: Planetary Aura Impact Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Shonen de potencia absoluta noventera, con duelo mítico de aura y escala planetaria en clave de leyenda combativa.
-  form_and_line: Contorno muscular contundente, foreshortening agresivo y acting de grito-catarsis de alto impacto.
-  color_palette: Amarillos eléctricos de aura, azules de cielo de batalla, verdes rocosos y naranjas de choque energético.
+  aesthetic: Shonen de potencia absoluta noventera, aura mítica, escala extrema y catarsis visual de transformación.
+  form_and_line: Contorno contundente, foreshortening agresivo y acting de presión energética de alto impacto.
+  color_palette: Amarillos eléctricos de aura, azules saturados, verdes minerales y naranjas de choque energético.
   lighting_setup: Cel contrastado con rim extremo, highlights duros y separación de sombra para fuerza corporal.
-  material_texture: Roca fracturada, polvo de cráter, grano de cel clásico y fondos pintados de era dorada.
-  render_quality: Acabado premium 90s con lectura inmediata de power-up, choque físico y stakes descomunales.
+  material_texture: Partículas fracturadas, polvo luminoso, grano de cel clásico y fondos pintados de era dorada.
+  render_quality: Acabado premium 90s con lectura inmediata de power-up, presión física y stakes descomunales.
   spatial_distortion: Escala hiperexpresiva con anatomía exagerada y perspectiva cinética de impacto frontal.
   atmosphere: Explosiva, icónica, incansable y mítica.
-  key_features: Estelas de aura, terrenos devastados, perfiles de grito y coreografía de rivalidad trascendente.
-  creative_brief: Construye una gramática reusable de combate de poder desatado para cualquier sujeto, priorizando energía corporal, escala extrema y dramatismo de transformación.
+  key_features: Estelas de aura, halos de impacto, perfiles de catarsis y coreografía abstracta de rivalidad trascendente.
+  creative_brief: Construye una gramática reusable de impacto energético noventero para cualquier sujeto, priorizando aura, escala extrema y dramatismo de transformación sin imponer duelo, terreno devastado ni combate literal.
 avoidRules:
   - realistic
   - 3d render

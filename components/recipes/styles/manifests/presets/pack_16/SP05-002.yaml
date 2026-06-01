@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-002
 packId: pack_16
-name: Vintage Super Robot
+name: Vintage Mechanical Grandeur Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,20 +12,21 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heavy chrome mecha, heroic posing, bold retro machinery, rivet detailing, dramatic launch sequences, chunky mechanical joints
-  form_and_line: Chunky mecha silhouette blocking, rivet-conscious contouring, mechanical panel breaks, impact-line emphasis
+  aesthetic: Heavy chrome grandeur, heroic massing, bold retro machinery logic, rivet detailing, and triumphant analog scale.
+  form_and_line: Chunky silhouette blocking, rivet-conscious contouring, mechanical panel breaks, and impact-line emphasis.
   color_palette: Saturated super-robot primaries with steel neutrals, hot warning reds, and heroic contrast blocks
-  lighting_setup: Hard directional key with dramatic cel shadow wedges, metallic rim splits, launch-bay backlight flare
+  lighting_setup: Hard directional key with dramatic cel shadow wedges, metallic rim splits, and backlight flare.
   material_texture: Painted steel plate cues, cel-highlighted chrome edges, analog matte background treatment, scanline-era grain
-  render_quality: Classic super-robot broadcast frame quality with strong mechanical readability and era-faithful cel compositing
-  spatial_distortion: Extreme low-angle hero mecha framing, launch-vector perspective exaggeration, scale-first composition logic
+  render_quality: Classic broadcast frame quality with strong mechanical readability and era-faithful cel compositing.
+  spatial_distortion: Extreme low-angle heroic framing, launch-vector perspective exaggeration, and scale-first composition logic.
   atmosphere: Action-heavy, triumphant, intense, explosive
-  key_features: Super-robot massing grammar, riveted panel articulation, launch-sequence perspective drama, metallic cel highlight choreography
+  key_features: Monumental massing grammar, riveted panel articulation, launch-vector perspective drama, and metallic cel highlight choreography.
   creative_brief: >-
-    Preserve the super-robot tradition through heavy mechanical silhouettes,
-    high-contrast cel shading, and emotionally maximal hero framing. The style
-    should foreground machine grandeur and analog-era dynamism without
-    collapsing into generic retro anime.
+    Preserve vintage mechanical grandeur through heavy silhouette logic,
+    high-contrast cel shading, riveted articulation, and emotionally maximal
+    hero framing. Transfer this logic to any subject or input image without
+    requiring robots, vehicles, launch bays, pilots, or machinery as literal
+    content.
 avoidRules:
   - realistic
   - 3d render

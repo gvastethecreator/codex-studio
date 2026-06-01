@@ -64,6 +64,7 @@ export interface CreateStyleDefaultTargetsOptions {
   existingFiles: ReadonlySet<string>;
   force: boolean;
   categoryFilters?: ReadonlySet<string>;
+  presetFilters?: ReadonlySet<string>;
   limit?: number;
   defaultsDir: string;
   assetExtension: string;
@@ -243,6 +244,7 @@ export function createStyleDefaultTargets({
   existingFiles,
   force,
   categoryFilters = new Set(),
+  presetFilters = new Set(),
   limit = Number.POSITIVE_INFINITY,
   defaultsDir,
   assetExtension,
@@ -255,6 +257,9 @@ export function createStyleDefaultTargets({
       const destination = joinDefaultAssetPath(defaultsDir, `${preset.id}${assetExtension}`);
 
       if (categoryFilters.size > 0 && !categoryFilters.has(category)) {
+        continue;
+      }
+      if (presetFilters.size > 0 && !presetFilters.has(preset.id)) {
         continue;
       }
       if (!force && existingFiles.has(destination)) {

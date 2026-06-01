@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Arquitectura inmersiva de túnel marino, donde envolvente acrílica y columna de agua construyen espectáculo técnico.
-  form_and_line: Secciones arqueadas continuas, empuje tubular de perspectiva y capas de profundidad acuática con flujo biótico suave.
+  aesthetic: Inmersión azul técnica, donde envolvente acrílica y columna de agua construyen espectáculo óptico.
+  form_and_line: Secciones arqueadas continuas, empuje tubular de perspectiva y capas de profundidad acuática con flujo suave.
   color_palette: Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan
   lighting_setup: Redes caústicas dinámicas, dapple cenital, ambiente azul profundo y brillo de tanque de alta difusión.
-  material_texture: Juntas de acrílico grueso, piel de agua refractiva, partículas suspendidas y rugosidad de sustrato arrecifal.
+  material_texture: Acrílico grueso, piel de agua refractiva, partículas suspendidas y rugosidad de sustrato húmedo.
   render_quality: Claridad acuática alta con refracción físicamente creíble y atenuación cromática por profundidad.
-  spatial_distortion: Refraction
+  spatial_distortion: Refracción, atenuación azul y curvatura óptica controlada.
   atmosphere: Asombro silencioso, calma presurizada e inmersión azul de ritmo humano ralentizado.
-  key_features: Siluetas marinas superiores, barridos caústicos, nervios de acrílico, turbidez variable y estratos bióticos.
+  key_features: Barridos caústicos, nervios acrílicos, turbidez variable, siluetas acuáticas y estratos bióticos.
   creative_brief: >-
-    Formula una gramática de túnel-acuario transferible donde óptica, profundidad
-    y robustez de envolvente manden la escena. La biota debe aportar escala y
-    ritmo, pero la identidad nace de la arquitectura técnica acuática.
+    Formula una gramática acuática transferible donde óptica, profundidad y
+    robustez de envolvente manden. La biota puede aportar escala y ritmo, pero
+    la identidad nace del tratamiento técnico del agua.
 avoidRules:
   - dry
 assets:

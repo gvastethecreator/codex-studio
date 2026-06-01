@@ -19,9 +19,9 @@ visualDna:
   material_texture: Chemical swirls, collodion pour, edge imperfection, hand-coating
   render_quality: Handmade, fine art, alchemical process, one-of-one artifact
   spatial_distortion: Peeling emulsion, lifted edge, craquelure decay
-  atmosphere: Timeless, soul, Civil War ghost, eternal stillness
+  atmosphere: Timeless, alchemical, eternal stillness, process-haunted
   key_features: Focus falloff, petzval swirl, glass-plate negative
-  creative_brief: Alchemy performed on glass while the collodion is still wet with promise, each plate a singular artifact that can never be reproduced. The shallow plane of focus wraps its subject in a gaseous halo — the swirl of the brass lens separating the living from the eternal, the portrait from the ghost. What cracks and peels at the edge only deepens the spell.
+  creative_brief: 'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty.'
 avoidRules:
   - clean
 assets:

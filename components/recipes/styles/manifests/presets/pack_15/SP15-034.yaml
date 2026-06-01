@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Reef-circuit seapunk where party lighting, civic utilities, and living coral all pulse through one wet nervous system.
-  form_and_line: Buoyant platform cells, branching reef towers, wavy circuit paths, pontoon seams, and soft current-drawn loops.
+  aesthetic: Reef-circuit seapunk where party lighting, civic utility, and living coral pulse as one wet nervous system.
+  form_and_line: Buoyant cell clusters, branching reef towers, wavy circuit paths, pontoon seams, and current-drawn loops.
   color_palette: Turquoise voltage, hot magenta, seafoam green, wet concrete gray, and pearly coral white.
   lighting_setup: Bioluminescent reef pulses, humid sunset reflections, under-platform LEDs, and specular wet-edge flashes.
   material_texture: Iridescent polymers, coral composites, wet concrete, translucent tubing, algae film, and salt-crusted handrails.
   render_quality: Vibrant high-detail concept with nightlife color discipline and clear regenerative infrastructure.
-  spatial_distortion: Curvilinear waterline composition; platforms float like circuit nodes drifting but still connected.
+  spatial_distortion: Curvilinear waterline composition where circuit nodes drift yet stay connected.
   atmosphere: Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.
-  key_features: Reef-reactor nodes, buoyant dance/social decks, algae power pods, luminous waterlines, and coral cable junctions.
+  key_features: Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.
   creative_brief: >-
     Preserve coral circuit-marina grammar as a reusable style system:
     wet-circuit civic modules, reef-luminescent infrastructure, and tidal

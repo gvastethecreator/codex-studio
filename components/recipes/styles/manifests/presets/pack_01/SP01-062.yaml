@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Happy people working
+  aesthetic: Generic corporate stock polish
   form_and_line: Clean
   color_palette: Bright, blue tint
-  lighting_setup: Office bright
+  lighting_setup: Bright institutional soft light
   material_texture: Clean
   render_quality: Generic, safe
-  spatial_distortion: Fake smiles
+  spatial_distortion: Sanitized sameness
   atmosphere: Professional, fake
-  key_features: Handshake
-  creative_brief: 'Sanitized joy fills the frame like artificial daylight, every smile calibrated to the exact wattage of acceptability, every handshake choreographed to radiate trust without risk. Cool tints temper the warmth they pretend to project, the image operating in the narrow band where nothing offends because nothing truly registers. This is the visual Esperanto of the boardroom: universally legible, universally hollow.'
+  key_features: Safe generic optimism
+  creative_brief: 'Corporate stock polish sanitizes any subject into universally legible optimism: bright institutional light, cool-blue tint, clean surfaces, centered clarity, and riskless professional sameness. Keep generic boardroom-safe visual language without requiring workers, smiles, handshakes, or office setting.'
 avoidRules:
   - sad
   - dark

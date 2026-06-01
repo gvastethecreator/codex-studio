@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-069
 packId: pack_06
-name: Moodboard
+name: Moodboard Color Story
 category: 5. Mixed Media
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Collection of images
+  aesthetic: Moodboard color-story layout with coordinated fragments, swatches, texture samples, and provisional design logic
   form_and_line: Grid or pile
   color_palette: Coordinated palette
   lighting_setup: Flat
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Aesthetic
   key_features: Color theme
-  creative_brief: Images cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, the pins repositionable, the composition a proposition rather than a conclusion. Feeling crystallizes in the spaces between borrowed pictures.
+  creative_brief: Fragments cluster around a color story, each piece chosen not for what it depicts but for the note it strikes in a visual chord. The arrangement is temporary, repositionable, and intentionally unresolved. Feeling crystallizes through palette, rhythm, spacing, swatches, and texture samples without requiring literal photos or captions.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable captions
+  - literal photo collection
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-069.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable captions, literal photo collection
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

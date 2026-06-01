@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-303
 packId: pack_16
-name: Galaxy Express 999 - Celestial Rail Melancholy
+name: Celestial Journey Melancholy Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Balada ferroviaria cósmica de tránsito existencial, con nostalgia elegíaca y maravilla iniciática.
-  form_and_line: Línea clásica de locomotora y personajes estilizados, acting contemplativo y ritmo visual de trayecto largo.
-  color_palette: Azules noche ferroviaria, dorados de vagón antiguo, blancos de nieve estelar y sepias de recuerdo.
-  lighting_setup: Faroles de andén lechosos, compartimentos cálidos de vagón y contraluz de ventanilla sobre nieve estelar.
-  material_texture: Metal de vagón envejecido, vapor suave, madera de andén y película granulada de época.
+  aesthetic: Balada cósmica de tránsito existencial, con nostalgia elegíaca, maravilla iniciática y horizonte infinito.
+  form_and_line: Línea clásica de tránsito contemplativo, acting meditado y ritmo visual de trayecto largo.
+  color_palette: Azules de noche profunda, dorados antiguos, blancos de nieve estelar y sepias de recuerdo.
+  lighting_setup: Faroles lechosos, calidez compartimentada y contraluz sobre vacío estelar.
+  material_texture: Metal envejecido, vapor suave, madera antigua y película granulada de época.
   render_quality: Acabado premium retro-poético con legibilidad narrativa de tránsito y emoción de despedida continua.
-  spatial_distortion: Perspectiva longitudinal de vías y vagones, con profundidad astral que extiende sensación de viaje eterno.
+  spatial_distortion: Perspectiva longitudinal, con profundidad astral que extiende sensación de viaje eterno.
   atmosphere: Melancólica, maravillada, sideral, meditativa.
-  key_features: Locomotora astral frontal, estaciones-umbral, motivo de equipaje simbólico y horizonte de vías infinitas.
-  creative_brief: Diseña una gramática reusable de peregrinaje ferroviario metafísico para cualquier sujeto, fusionando liturgia de estación, melancolía de trayecto y escala cósmica íntima.
+  key_features: Horizonte infinito, umbrales de viaje, equipaje simbólico abstracto, escala cósmica íntima y soledad luminosa.
+  creative_brief: >-
+    Diseña una gramática reusable de peregrinaje metafísico para cualquier prompt o imagen de entrada:
+    viaje, despedida y escala cósmica íntima sin imponer trenes, estaciones, vías ni equipaje literal.
 avoidRules:
   - realistic
   - 3d render

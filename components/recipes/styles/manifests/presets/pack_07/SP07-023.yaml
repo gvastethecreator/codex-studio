@@ -20,11 +20,11 @@ visualDna:
   render_quality: Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle constructivo plausible.
   spatial_distortion: Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.
   atmosphere: Elegante, avanzada, ligera y matemática.
-  key_features: Vórtices de atrio, porosidad de fachada, patrones paramétricos y cañones interiores continuos.
+  key_features: Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta visible.
   creative_brief: >-
     Construye una gramática paramétrica transferible donde continuidad de
     superficie, variación algorítmica y precisión constructiva sean inseparables.
-    Debe sentirse computacional sin perder plausibilidad arquitectónica.
+    Debe sentirse computacional sin depender de un edificio específico.
 avoidRules:
   - brick
   - square

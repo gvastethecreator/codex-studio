@@ -17,11 +17,11 @@ visualDna:
   color_palette: Vibrant
   lighting_setup: AO
   material_texture: None
-  render_quality: Minecraft style
+  render_quality: Voxel-art finish with cube-unit discipline and playful AO depth
   spatial_distortion: Blocky
   atmosphere: Cute, digital
   key_features: Cubes
-  creative_brief: The world assembles from identical cubes, complexity emerging from simple repetition like a universe growing from a single cell. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. The image builds meaning from the unit, the cathedral rising from the brick.
+  creative_brief: The image assembles from identical cubes, complexity emerging from simple repetition like a system growing from a single unit. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. Meaning builds from the voxel, not from any specific game, building, or landscape.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - Minecraft branding
+  - building requirement
+  - landscape requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-052.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

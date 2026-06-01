@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-296
 packId: pack_16
-name: Metropolis - Deco Skyline Android Wonder
+name: Humanist Art Deco Retrofuture Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Retrofuturismo art-decó monumental con tensión de clase, donde asombro tecnológico clásico convive con melancolía industrial humanista.
-  form_and_line: Contorno arquitectónico robusto, geometría decó escalonada y contraste de siluetas orgánicas-humanoides frente a maquinaria masiva.
-  color_palette: Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería urbana.
-  lighting_setup: Iluminación de ciudad vertical con bruma cálida, contraluces de rascacielos y brillos controlados sobre metal.
+  aesthetic: Retrofuturismo art deco monumental con tensión social, asombro tecnológico clásico y melancolía industrial humanista.
+  form_and_line: Contorno robusto, geometría decó escalonada, curvas humanoides suaves y masa mecánica abstracta.
+  color_palette: Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería monumental.
+  lighting_setup: Iluminación vertical con bruma cálida, contraluces monumentales y brillos controlados sobre metal.
   material_texture: Acero remachado, mármol art-decó, cristal antiguo y superficies mecánicas con pátina de uso civil.
-  render_quality: Acabado premium de gran espectáculo urbano con lectura jerárquica impecable entre escala humana y escala sistémica.
-  spatial_distortion: Perspectiva ascendente de megaciudad con profundidad estratificada por clases y flujos de movilidad vertical.
+  render_quality: Acabado premium de gran espectáculo retrofuturo con lectura jerárquica impecable entre escala humana y escala sistémica.
+  spatial_distortion: Perspectiva ascendente con profundidad estratificada por capas sociales y flujos verticales.
   atmosphere: Grandiosa, nostálgica, metálica, empática.
-  key_features: Skyline decó icónico, maquinaria colosal, contraste niño-androide y composición social en capas.
-  creative_brief: Construye una gramática reusable de retrofuturo humanista para cualquier sujeto, articulando geometría decó, escala industrial y ternura tecnológica.
+  key_features: Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.
+  creative_brief: >-
+    Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada:
+    geometría decó, escala y sensibilidad tecnológica sin imponer skylines, androides, maquinaria literal ni jerarquías narrativas.
 avoidRules:
   - realistic
   - 3d render

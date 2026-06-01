@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-117
 packId: pack_06
-name: Arcade Racing Track Neon
+name: Arcade Racing Velocity Neon
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Arcade-racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability.
+  subject_treatment: Stretch any subject into velocity-forward forms with aerodynamic diagonals, luminous edges, and impact streaks.
+  color_and_tone: Hot magenta, cyan, lime, black asphalt-like neutrals, and intense specular contrast.
+  lighting_and_shadow: Neon reflections, tunnel-like light strips, streaked highlights, and long directional glow smears.
+  texture_and_material: Glossy PBR-lite surfaces, motion-line bands, bloom haze, wet reflective grain, and compressed arcade sharpness.
+  camera_and_composition: Low wide-angle velocity framing, vanishing-point pull, diagonal lane rhythm, and strong forward momentum.
+  atmosphere_and_mood: Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or city nights.
+  rendering_and_quality: High-energy arcade polish, controlled motion effects, no readable signage, no UI overlays.
 avoidRules:
   - watermark
   - text
+  - car requirement
+  - race track requirement
+  - readable signage
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-117.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, car requirement, race track requirement, readable signage
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -19,9 +19,9 @@ visualDna:
   material_texture: Fractal patterns
   render_quality: Scientific, alien
   spatial_distortion: Extreme magnification
-  atmosphere: Scientific, scary
+  atmosphere: Scientific, alien
   key_features: B&W depth
-  creative_brief: Landscapes hiding at the threshold of the invisible, where a grain of pollen becomes a planetary surface. Monochromatic terrain revealed by electrons rather than photons, texture unfolding into fractal cathedrals. The terrifying intimacy of seeing what the naked eye was never meant to witness.
+  creative_brief: 'Electron-beam realism at extreme magnification: monochrome depth, directional micro-shadowing, fractal texture, and scale ambiguity that makes any surface feel alien. Reveal subject as microscopic terrain without requiring pollen, biology, cathedral metaphors, or macro photography.'
 avoidRules:
   - color
   - macro

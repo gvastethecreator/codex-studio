@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Heroísmo grupal de magical-knights con misión de rescate, runas tecnomísticas y valentía cromática de alto brillo.
-  form_and_line: Siluetas diferenciadas de equipo, ornamentación rúnica en armadura y lectura de invocación gigante.
+  aesthetic: Heroísmo magical-knight de alto brillo, con energía cooperativa, runas tecnomísticas y valentía cromática.
+  form_and_line: Siluetas diferenciadas por color, ornamentación rúnica angular y líneas ascendentes de impulso coral.
   color_palette: Rojo rubí, azul cobalto, verde esmeralda, dorado mágico y blanco de energía invocada.
-  lighting_setup: Emisión de runa, flare de summon y key vibrante de aventura de rescate.
-  material_texture: Metal encantado, tela ceremonial, piedra de templo y superficies lumínicas de círculo mágico.
-  render_quality: Fantasy-team de acabado brillante con claridad de roles y épica juvenil cooperativa.
-  spatial_distortion: Escala dual entre equipo humano e invocaciones colosales con composición ascendente.
+  lighting_setup: Emisión rúnica, flare joya y key vibrante de aventura luminosa.
+  material_texture: Metal encantado, tela ceremonial, mineral pulido y superficies lumínicas de energía geométrica.
+  render_quality: Fantasy-team abstracto de acabado brillante, con roles cromáticos y épica juvenil cooperativa.
+  spatial_distortion: Contraste de escala sugerido, composición ascendente y expansión energética sin entidad obligatoria.
   atmosphere: Valiente, luminosa y solidaria.
-  key_features: Runas activas, summons gigantes, poses de escuadrón y colorimetría joya.
+  key_features: Runas activas, colorimetría joya, impulso ascendente, cooperación gráfica y brillo tecnomístico.
   creative_brief: >-
-    Define una gramática gem-engine-rescue reusable donde cooperación de
-    protagonistas, visualidad rúnica y contraste de escala con invocaciones
-    sostengan una épica de rescate clara y enérgica.
+    Define una gramática gem-engine-rescue reusable donde cualquier prompt
+    gane claridad heroica mediante cromas joya, runas energéticas y sensación de
+    cooperación sin fijar roles, vestuario, entidades o evento narrativo.
 avoidRules:
   - realistic
   - 3d render

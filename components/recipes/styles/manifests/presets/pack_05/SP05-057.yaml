@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-057
 packId: pack_05
-name: Sleek Post-Apoc Mecha Romance
+name: Sleek Post-Apoc Romance Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Polished suits, melancholy youth, sunset ruins, romantic apocalypse tension, klaxosaur designs, co-pilot intimacy, mecha-flower motifs, post-war loneliness
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Sleek post-apocalyptic tenderness, polished fragility, sunset loneliness, romantic pressure, and floral-tech melancholy.
+  form_and_line: Smooth aerodynamic contours, delicate hard-edge panel accents, paired silhouette tension, and vulnerable negative-space framing.
+  color_palette: Peach sunset, pale rose, white polymer, cool blue-gray, soft red accents, and muted violet shadow.
+  lighting_setup: Sunset backlight, soft specular skin, cool technical fill, warm rim glow, and quiet bloom around emotional focal points.
+  material_texture: Polished synthetic cloth, enamel shell surfaces, soft petal-like highlights, dust haze, and clean composite sheen.
+  render_quality: Premium glossy anime finish with emotional clarity, sleek surface control, and bittersweet high-detail restraint.
+  spatial_distortion: Intimate compression against broad empty space, soft horizon drag, and paired-vector composition without fixed setting.
   atmosphere: Vulnerable, sleek, bittersweet, romantic
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Two pilots share a cockpit, and the world outside has already ended. Love blooms in the pressurized silence between combat alerts, fragile as flower petals trapped in mecha joints. The sunset ruins are not an ending but a backdrop for something beginning.
+  key_features: Sleek paired silhouettes, sunset ruin color, petal-tech motifs, fragile intimacy, and polished melancholy surfaces.
+  creative_brief: >-
+    Apply sleek post-apoc romance as a reusable style treatment: make any
+    subject feel tender, engineered, lonely, and hopeful after collapse while
+    staying abstract, portable, and detached from fixed operators, equipment,
+    attire systems, decay settings, or alert scenarios.
 avoidRules:
   - realistic
   - 3d render

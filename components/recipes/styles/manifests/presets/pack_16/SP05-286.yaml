@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-286
 packId: pack_16
-name: Wolf Children - Rainy Countryside Motherhood
+name: Seasonal Intimacy Realism Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Realismo rural afectivo con núcleo maternal, integrando cotidianidad doméstica y lirismo de metamorfosis en clave estacional.
-  form_and_line: Línea suave de intimidad familiar, anatomía naturalista cálida y gestualidad de cuidado en movimiento diario.
+  aesthetic: Realismo afectivo estacional, con intimidad cotidiana, cuidado persistente y transformación suave.
+  form_and_line: Línea suave, anatomía naturalista cálida y gestualidad de cuidado aplicada al sujeto original sin forzar parentescos.
   color_palette: Verdes de montaña húmeda, marrones de madera habitada, grises lluviosos y dorados suaves de hogar encendido.
   lighting_setup: Luz meteorológica cambiante por estación, interiores cálidos de refugio y exteriores nublados con contraste bajo.
   material_texture: Tierra labrada, madera reparada, ropa cotidiana mojada por lluvia y vegetación de ciclo anual visible.
   render_quality: Acabado premium de drama humano, con foco en microemociones, ritmo doméstico y continuidad temporal de crecimiento.
   spatial_distortion: Espacialidad naturalista con composición de proximidad familiar y apertura de paisaje para respiración emocional.
   atmosphere: Tierna, laboriosa, nostálgica, protectora.
-  key_features: Casa de montaña vivida, dinámica madre e hijos, clima como narrador y transformación integrada sin espectáculo.
-  creative_brief: Crea una gramática reusable de maternidad estacional para cualquier sujeto combinando textura rural, luz climática y lenguaje corporal de cuidado persistente.
+  key_features: Luz climática, textura doméstica abstracta, transformación no espectacular, calma estacional y lenguaje corporal protector.
+  creative_brief: >-
+    Crea una gramática reusable de intimidad estacional para cualquier prompt o imagen de entrada:
+    cuidado, clima y transformación silenciosa sin imponer maternidad, casas rurales, familias ni escenas domésticas.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: DIY photocopied-punk-zine aesthetic, ransom-note-cutout-lettering, deliberately-bad-photocopier-distortion, tape-marks-holding-collage-elements, found-magazine-image recontextualized, anarchist-pamphlet energy, glue-stick-residue-and-scissor-cuts, repeated-photocopy-generation-loss, too-dark-too-contrasty Xerox texture, early-riot-grrrl-manifesto
+  aesthetic: DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss
   form_and_line: Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours
   color_palette: Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background
   lighting_setup: Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance
   material_texture: Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint
   render_quality: Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation
-  spatial_distortion: Cut-out-elements-tilted-angrily, ransom-letter-no-alignment, overlapping-collage depth, tape-holding-elements-askew
+  spatial_distortion: Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew
   atmosphere: Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance
-  key_features: Photocopier high-contrast, ransom-note lettering, cut-and-paste collage, scotch-tape marks, staple-binding, toner-grain texture, glue-stick wrinkles
-  creative_brief: Scissors and glue-stick wielded as instruments of insurrection, borrowed images stripped of their original meaning and reassembled into manifesto. Each generation of photocopy deepens the degradation, trading fidelity for urgency at one cent per page. The tape marks are not mistakes but signatures, evidence of hands refusing to wait for permission.
+  key_features: Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles
+  creative_brief: 'Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific publication content. Degradation and hand assembly should be the main visual force.'
 avoidRules:
   - digital
   - clean

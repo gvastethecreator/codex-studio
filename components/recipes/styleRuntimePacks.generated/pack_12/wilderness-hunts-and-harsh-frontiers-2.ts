@@ -9,14 +9,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, flat-light, lowres',
     style: {
-      aesthetic: 'Alien nocturnal jungle with reactive bioluminescent flora.',
-      subject_treatment: 'Tactical squad hidden among giant ferns.',
-      color_and_tone: 'Phosphorescent greens, ink blues, and lime accents.',
-      lighting_and_shadow: 'Localized organic light with softly scattering fog.',
-      texture_and_material: 'Wet bark, translucent leaves and thick mud.',
-      camera_and_composition: 'Low angle, tension diagonals, layered depth.',
-      atmosphere_and_mood: 'Stealth, danger, and biological wonder.',
-      rendering_and_quality: 'Mission concept art, high gameplay readability.',
+      aesthetic:
+        'Extraction shooter en bioma alienígena nocturno, con énfasis en rastreo, stealth y navegación orgánica hostil.',
+      subject_treatment:
+        'Escuadras de 3-4 roles con perfiles térmicos y lectura inmediata de aliado/enemigo en vegetación densa.',
+      color_and_tone:
+        'Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.',
+      lighting_and_shadow:
+        'Luz orgánica puntual + niebla volumétrica para ocultamiento parcial y ventanas de visibilidad situacional.',
+      texture_and_material:
+        'Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.',
+      camera_and_composition:
+        'Composición por capas de cobertura, líneas de visión quebradas y diagonales de emboscada.',
+      atmosphere_and_mood:
+        'Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.',
+      rendering_and_quality:
+        'Concept gameplay con claridad de encounter design, lectura de terreno y prioridades de target.',
     },
   },
   {
@@ -25,14 +33,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, snow, pastel',
     style: {
-      aesthetic: 'Infernal dungeon with active demonic foundries.',
-      subject_treatment: 'Titanic blacksmiths as zone mini-bosses.',
-      color_and_tone: 'Molten oranges, charcoal blacks and copper reflections.',
-      lighting_and_shadow: 'Lava as a key-light and smoke as a dense fill.',
-      texture_and_material: 'Slag, incandescent iron, and aged chains.',
-      camera_and_composition: 'Diagonal axis between bridges and crucibles.',
-      atmosphere_and_mood: 'Hostile, abrasive, and ritualistic.',
-      rendering_and_quality: 'Playable environment with clear landmarks.',
+      aesthetic:
+        'Dungeon-crawler infernal enfocado en navegación de riesgo térmico, crafting bélico y encuentros con mini-boss industriales.',
+      subject_treatment:
+        'Enemigos forjadores colosales y mobs de soporte, con telegraphs de ataque por calor y ritmo de martillo.',
+      color_and_tone:
+        'Naranja fundido, negro carbón y reflejos cobrizo-escoria para lectura inmediata de zonas letales.',
+      lighting_and_shadow:
+        'Lava como key dominante, humo denso de fill y pulsos de horno para timing de mecánicas.',
+      texture_and_material:
+        'Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.',
+      camera_and_composition:
+        'Eje diagonal de puentes, crisoles y plataformas seguras con landmarks de progresión claros.',
+      atmosphere_and_mood: 'Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.',
+      rendering_and_quality:
+        'Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.',
     },
   },
   {
@@ -41,14 +56,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, tropical, low-detail',
     style: {
-      aesthetic: 'Improvised arctic market in a hostile survival world.',
-      subject_treatment: 'Armed traders and hunters with thermal lanterns.',
-      color_and_tone: 'Glacial blues, warm amber, and smoke gray.',
-      lighting_and_shadow: 'Localized lantern light against dense blizzard conditions.',
-      texture_and_material: 'Scratched ice, heavy canvas, and wet wood.',
-      camera_and_composition: 'Central alley with lively side stalls.',
-      atmosphere_and_mood: 'Precarious refuge through an endless night.',
-      rendering_and_quality: 'Readable, narrative survival hub.',
+      aesthetic:
+        'Survival sandbox ártico con enclave comercial improvisado como nodo de crafting, trueque y expedición.',
+      subject_treatment:
+        'Traders, hunters y scouts armados con perfiles de clase legibles por equipo térmico.',
+      color_and_tone:
+        'Azul glaciar, ámbar cálido y gris humo para separar refugio de amenaza exterior.',
+      lighting_and_shadow:
+        'Fuentes puntuales de farol sobre blizzard denso, con contraste funcional de zonas seguras.',
+      texture_and_material:
+        'Hielo rayado, lona pesada, madera húmeda y metal congelado por uso extremo.',
+      camera_and_composition:
+        'Calle central de hub con puestos laterales, puntos de misión y salida a whiteout.',
+      atmosphere_and_mood:
+        'Refugio precario, cooperación tensa y supervivencia nocturna prolongada.',
+      rendering_and_quality:
+        'Hub visual de alta legibilidad para economía de recursos y preparación de runs.',
     },
   },
   {
@@ -57,14 +80,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
     style: {
-      aesthetic: 'Cooperative shooter in hostile planetary mines.',
-      subject_treatment: 'Heavy workers with modular tool-weapons.',
-      color_and_tone: 'Dark copper, radar green, and industrial orange.',
-      lighting_and_shadow: 'Lit helmets and zones of deep shadow.',
-      texture_and_material: 'Fractured rock, mineral dust, and rough steel.',
-      camera_and_composition: 'Descending tunnel with the objective in the distance.',
-      atmosphere_and_mood: 'Extreme labor, camaraderie, and risk.',
-      rendering_and_quality: 'Mission scene with strong objective emphasis.',
+      aesthetic:
+        'Co-op extraction shooter en minería planetaria extrema, con foco en objetivos, evacuación y supervivencia de escuadra.',
+      subject_treatment:
+        'Operarios pesados con tool-weapons modulares y roles complementarios de perforación/defensa/soporte.',
+      color_and_tone:
+        'Cobre oscuro, verde radar y naranja industrial para lectura de objetivo y estado de equipo.',
+      lighting_and_shadow:
+        'Cascos iluminados, focos de maquinaria y sombras profundas de túnel activo.',
+      texture_and_material:
+        'Roca fracturada, polvo mineral denso, acero rugoso y marcas de perforación reciente.',
+      camera_and_composition:
+        'Túnel descendente con objetivos a distancia, rutas de retorno y zonas de emboscada legibles.',
+      atmosphere_and_mood: 'Labor extrema, camaradería funcional y riesgo continuo.',
+      rendering_and_quality:
+        'Mission visual gameplay-first con claridad de objetivo, amenaza y ruta de extracción.',
     },
   },
   {
@@ -73,14 +103,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, murky-water, lowres',
     style: {
-      aesthetic: 'Colorful underwater kingdom with coral architecture.',
-      subject_treatment: 'Aquatic guardians and abyssal mounts.',
-      color_and_tone: 'Bright turquoises, coral red, and pearl white.',
-      lighting_and_shadow: 'Filtered rays and dynamic caustics.',
-      texture_and_material: 'Porous coral, nacre-like scales, and seaweed.',
-      camera_and_composition: 'Wide perspective with a terraced city layout.',
-      atmosphere_and_mood: 'Fantastical wonder and elegant danger.',
-      rendering_and_quality: 'World key visual for the main campaign.',
+      aesthetic:
+        'Action-RPG submarino de reino coralino, orientado a exploración vertical, patrullas y combate de movilidad acuática.',
+      subject_treatment:
+        'Guardianes anfibios y monturas abisales por rol (vanguardia, control, persecución).',
+      color_and_tone:
+        'Turquesa brillante, rojo coral y blanco nacarado para separar rutas seguras y zonas hostiles.',
+      lighting_and_shadow:
+        'Rayos filtrados, caústicas dinámicas y capas de profundidad para navegación tridimensional.',
+      texture_and_material:
+        'Coral poroso, escamas nacaradas, algas estructurales y arquitectura bio-mineral viva.',
+      camera_and_composition:
+        'Perspectiva amplia con ciudad aterrazada, corrientes principales y puntos de ascenso/descenso.',
+      atmosphere_and_mood: 'Maravillosa, elegante y peligrosamente impredecible.',
+      rendering_and_quality:
+        'Worldbuilding gameplay key-art con lectura clara de rutas, amenaza y jerarquía territorial.',
     },
   },
   {
@@ -89,14 +126,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, neon-city, lowres',
     style: {
-      aesthetic: 'Tactical shooter in highly vertical red canyons.',
-      subject_treatment: 'Expert marksmen with geological camouflage.',
-      color_and_tone: 'Mineral red, dry beige, and clear sky blue.',
-      lighting_and_shadow: 'Aggressive sunlight with defined shadows.',
-      texture_and_material: 'Sedimentary rock, fine dust, and rough fabric.',
-      camera_and_composition: 'Extreme depth across cliffs and bridges.',
-      atmosphere_and_mood: 'Precision, patience, and distant lethality.',
-      rendering_and_quality: 'Competitive stage with clear readability lines.',
+      aesthetic:
+        'Tactical shooter de largo alcance en cañones verticales, centrado en control de líneas y ventaja de altura.',
+      subject_treatment:
+        'Marksmen especialistas con camuflaje geológico y kits de reposicionamiento.',
+      color_and_tone:
+        'Rojo mineral, beige seco y azul limpio para separar terreno, cobertura y exposición.',
+      lighting_and_shadow:
+        'Sol agresivo con sombras definidas que marcan ventanas de disparo y tránsito.',
+      texture_and_material:
+        'Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.',
+      camera_and_composition:
+        'Profundidad extrema entre riscos y puentes, con rutas de flanqueo claramente trazadas.',
+      atmosphere_and_mood: 'Precisa, paciente y letal a distancia.',
+      rendering_and_quality:
+        'Competitive map readability-first con claridad de sightlines, sniping nests y riesgo de cruce.',
     },
   },
   {
@@ -105,14 +149,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, cityscape, low-detail',
     style: {
-      aesthetic: 'Cooperative hunt in open electric plains.',
-      subject_treatment: 'Mounted hunters facing colossal beasts.',
-      color_and_tone: 'Storm blue, lightning yellow, and dark earth.',
-      lighting_and_shadow: 'Intermittent lightning and dramatic skies.',
-      texture_and_material: 'Wet fur, armored leather, and mud.',
-      camera_and_composition: 'Large-scale framing with a dominant monster.',
-      atmosphere_and_mood: 'High-risk epic action, coordination, and reward.',
-      rendering_and_quality: 'Key art for a hunting-season campaign.',
+      aesthetic:
+        'Co-op monster-hunt en llanuras eléctricas abiertas, con énfasis en rastreo, coordinación de escuadra y ejecución por ventanas.',
+      subject_treatment:
+        'Cazadores montados y bestias colosales con lectura clara de rol, amenaza y patrón de ataque.',
+      color_and_tone:
+        'Azul tormenta, amarillo rayo y tierra oscura para codificar clima, peligro y terreno.',
+      lighting_and_shadow:
+        'Relámpagos intermitentes, cielos dramáticos y flashes de impacto para telegraph de fase.',
+      texture_and_material:
+        'Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.',
+      camera_and_composition:
+        'Escala amplia con monstruo dominante, rutas de cerco y líneas de escape visibles.',
+      atmosphere_and_mood: 'Épica, riesgosa y altamente coordinada.',
+      rendering_and_quality:
+        'Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.',
     },
   },
   {
@@ -121,14 +172,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, snow-theme, lowres',
     style: {
-      aesthetic: 'Forest stronghold in a woodland of permanent embers.',
-      subject_treatment: 'Rangers with hybrid magic-technology gear.',
-      color_and_tone: 'Ember orange, pine green, and smoke black.',
-      lighting_and_shadow: 'Warm glows between dark trunks.',
-      texture_and_material: 'Charred bark, leather, and tempered steel.',
-      camera_and_composition: 'Outpost gate as the visual anchor.',
-      atmosphere_and_mood: 'Constant vigilance and resilience.',
-      rendering_and_quality: 'Defensive hub zone with strong character.',
+      aesthetic:
+        'Frontier-defense RPG en bosque de brasas permanentes, orientado a patrulla, fortificación y caza reactiva.',
+      subject_treatment:
+        'Rangers híbridos tecno-místicos con roles de rastreo, control y defensa de perímetro.',
+      color_and_tone:
+        'Naranja brasa, verde pino y negro humo para separar refugio, amenaza y rutas.',
+      lighting_and_shadow:
+        'Brillos cálidos entre troncos oscuros para lectura de vigilancia nocturna.',
+      texture_and_material:
+        'Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.',
+      camera_and_composition:
+        'Portón del outpost como ancla, con líneas de defensa y accesos secundarios visibles.',
+      atmosphere_and_mood: 'Vigilante, resistente y tácticamente austera.',
+      rendering_and_quality:
+        'Defensive-hub gameplay-first con legibilidad de patrulla, alarma y respuesta.',
     },
   },
   {
@@ -137,14 +195,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, neon, low-detail',
     style: {
-      aesthetic: 'Siege camp in bronze marshlands.',
-      subject_treatment: 'War engineers and push units.',
-      color_and_tone: 'Mud green, old bronze, and banner red.',
-      lighting_and_shadow: 'Low fog with scattered torches.',
-      texture_and_material: 'Mud, wet wood, and metal plates.',
-      camera_and_composition: 'Trenches converging toward the fort.',
-      atmosphere_and_mood: 'Military pressure and prolonged attrition.',
-      rendering_and_quality: 'Tactical setting for a war campaign.',
+      aesthetic:
+        'Warfront attrition en marismas de bronce, orientado a avance por trincheras, desgaste y control de suministros.',
+      subject_treatment:
+        'Ingenieros de asedio y unidades de empuje con lectura de función táctica.',
+      color_and_tone:
+        'Verde barro, bronce viejo y rojo estandarte para codificar bando y presión de frente.',
+      lighting_and_shadow:
+        'Niebla baja con antorchas dispersas para visibilidad parcial y amenaza constante.',
+      texture_and_material:
+        'Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.',
+      camera_and_composition:
+        'Trincheras convergentes hacia fortín objetivo con rutas de asalto definidas.',
+      atmosphere_and_mood: 'Opresiva, militar y de desgaste prolongado.',
+      rendering_and_quality:
+        'Tactical war-campaign art con legibilidad de líneas de avance y colapso defensivo.',
     },
   },
   {
@@ -153,14 +218,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt: 'watermark, text, logo, city-neon, lowres',
     style: {
-      aesthetic: 'Colossus hunt in orchards of monumental scale.',
-      subject_treatment: 'Tactical climbers and biomechanical beasts.',
-      color_and_tone: 'Olive green, ripe-fruit red, and gray metal.',
-      lighting_and_shadow: 'Sol nublado con brillos de armadura.',
-      texture_and_material: 'Giant bark, sap, and mechanical plates.',
-      camera_and_composition: 'Extreme scale with a minimal human figure.',
-      atmosphere_and_mood: 'Awe, danger, and epic cooperation.',
-      rendering_and_quality: 'Key art de hunting season.',
+      aesthetic:
+        'Colossus-hunt cooperativo en huertos titánicos, enfocado en escalada táctica y derribo por fases.',
+      subject_treatment:
+        'Escaladores tácticos y bestias biomecánicas con lectura clara de puntos débiles.',
+      color_and_tone:
+        'Verde oliva, rojo fruta madura y gris metal para contraste orgánico-mecánico.',
+      lighting_and_shadow:
+        'Cielo nublado con brillos de armadura que señalan momentos de vulnerabilidad.',
+      texture_and_material:
+        'Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.',
+      camera_and_composition:
+        'Escala extrema con figura humana mínima para reforzar amenaza colosal.',
+      atmosphere_and_mood: 'Asombrosa, peligrosa y cooperativamente épica.',
+      rendering_and_quality:
+        'Hunting-season gameplay key-art con telegraph claro de fase, ascenso y remate.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

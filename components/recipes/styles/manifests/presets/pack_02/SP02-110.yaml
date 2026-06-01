@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, nautical nonsense colliding with fleshy realism, sea-salt weirdness, deranged reaction insert, undersea slapstick whiplash
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash
+  form_and_line: Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork
+  color_palette: Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green
+  lighting_setup: Flat happy setup light interrupted by cruel macro glare
+  material_texture: Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture
+  render_quality: Style-whiplash freeze frame, bright cartoon plus revolting macro insert
+  spatial_distortion: Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop
   atmosphere: Cheery, revolting, whiplash-funny, manic
-  key_features: Normal-to-gross style contrast, close-up flesh detail, cartoon sponge absurdity, reaction-frame jump scare, goofy undersea props
-  creative_brief: A cheerful world suddenly arrested by the camera's cruel proximity, innocence freeze-framed into a nightmare of pores and follicles. The gag lives in the whiplash between Saturday-morning brightness and the grotesque truth that the magnifying glass reveals.
+  key_features: Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash
+  creative_brief: 'Apply gross-up freeze-frame contrast to any prompt: cheerful flat cartoon setup interrupted by invasive hyper-detailed texture, pores, folds, and uncomfortable proximity. Avoid undersea props, sponge forms, faces, or fixed characters. The gag should be the sudden style jump.'
 avoidRules:
   - digital
   - HD

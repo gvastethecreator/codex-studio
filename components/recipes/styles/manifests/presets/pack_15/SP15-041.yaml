@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Consumer atompunk arcade where family joy is packaged as turbine worship, candy buttons, and spinning domestic propaganda.
-  form_and_line: Streamlined facade arcs, rounded canopy lips, turbine-medallion loops, cabinet fins, and snack capsules shaped like control pods.
+  aesthetic: Consumer atompunk play style where joy is packaged as turbine worship, candy buttons, and domestic propaganda.
+  form_and_line: Streamlined facade arcs, rounded canopy lips, turbine-medallion loops, cabinet-like fins, and capsule shapes.
   color_palette: Pool aqua, cream enamel, cherry red, chrome sparkle, and bubblegum indicator lights.
   lighting_setup: Marquee spot cones, glowing cabinet screens, candy reflection pools, and rotating turbine shadows on checker tile.
   material_texture: Chrome trim, polished plastic, checker tile, molded laminate, bright enamel buttons, and sticky soda gloss.
   render_quality: Clean retro-future interior render with legible leisure machines and slightly uncanny consumer polish.
-  spatial_distortion: Wide showroom perspective loops through repeating arcs until entertainment feels like a soft mechanical carousel.
+  spatial_distortion: Wide showroom-like perspective loops through repeating arcs until pleasure feels mechanical.
   atmosphere: Cheerful excess, family spectacle, polished futurity, and domesticated atomic anxiety.
-  key_features: Turbine carousel hubs, atom-game cabinet rows, capsule snack bars, prize-token spirals, and curved parental waiting rails.
+  key_features: Turbine carousel hubs, atom-game silhouettes, capsule modules, prize-token spirals, and curved waiting rails.
   creative_brief: >-
     Preserve turbine family-arcade grammar as a reusable style system:
     cheerful consumer turbine motifs, cabinet-light spectacle, and

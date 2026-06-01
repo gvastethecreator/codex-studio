@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Gentle forest-fantasy courier anime language with pastoral mysticism, kindness-forward adventure, and spirit-companion charm
-  form_and_line: Organic natural contours, youthful mobility silhouettes, satchel-and-scroll prop readability, and curved path lines guiding journey progression
+  aesthetic: Gentle pastoral-fantasy anime language with kindness-forward adventure, spirit-like charm, soft journey rhythm, and quiet magic
+  form_and_line: Organic natural contours, mobile rounded silhouettes, satchel-and-scroll-like readability cues, and curved path lines guiding progression
   color_palette: Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued saturation
   lighting_setup: Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that preserves tranquil tone
-  material_texture: Leaf-layer variation, hand-stitched leather satchels, wax-sealed paper surfaces, mossy bark grain, and soft mist diffusion
-  render_quality: Charming high-clarity anime rendering with calm exploratory pacing, reliable character-prop hierarchy, and cozy fantasy polish
-  spatial_distortion: Path-led layered depth with gentle atmospheric perspective and companion silhouette legibility
+  material_texture: Leaf-layer variation, hand-stitched leather texture, waxed paper-like surfaces, mossy bark grain, and soft mist diffusion
+  render_quality: Charming high-clarity anime rendering with calm exploratory pacing, reliable subject-prop hierarchy, and cozy fantasy polish
+  spatial_distortion: Path-led layered depth with gentle atmospheric perspective and companion-like silhouette legibility
   atmosphere: Kind, curious, hopeful, and quietly magical
-  key_features: Courier satchel iconography, spirit-companion silhouette cues, path-to-forest depth rhythm, and letter-delivery narrative prop anchors
+  key_features: Courier-like iconography, spirit-companion silhouette cues, path-to-nature depth rhythm, and letter-delivery texture anchors
   creative_brief: >-
-    Preserve forest-courier fantasy grammar as a reusable style system:
+    Use Forest Spirit Courier as style anchor for gentle fantasy delivery:
     pastoral palette harmony, journey-guided composition, and spirit-companion
-    warmth should remain stable across subjects.
+    warmth should transfer without requiring forest, courier, satchel, letter,
+    companion creature, or delivery scene.
 avoidRules:
   - photoreal
   - dark-gore

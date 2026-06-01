@@ -16,12 +16,12 @@ visualDna:
   form_and_line: Sharp edges
   color_palette: Cool white
   lighting_setup: Instant flash
-  material_texture: Frozen droplets
+  material_texture: Crisp frozen microdetail
   render_quality: High speed photography
   spatial_distortion: None
   atmosphere: Energetic, frozen
   key_features: Motion freeze
-  creative_brief: The violence of a millisecond arrested mid-collapse, droplets suspended like glass beads in the thunderclap of instantaneous illumination. Motion gutted and preserved in cool white precision. The secret choreographies that only lightning-fast seeing can reveal, the kinetic world dissected into a thousand frozen instants.
+  creative_brief: 'Instant flash arrests motion into cool-white precision: razor edges, frozen microdetail, high-speed clarity, and kinetic energy locked mid-transition. Use strobe grammar on any subject without requiring droplets, splash, sports, or scientific demo context.'
 avoidRules:
   - blur
   - soft

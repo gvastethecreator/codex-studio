@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, idea rejected and fished from trash, coffee-ring halo on character's head, wrinkled-grid distortion, beautiful-accident texture, trash-to-treasure aesthetic, discarded-thought recovered
+  aesthetic: Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered
   form_and_line: Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes
   color_palette: Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown
   lighting_setup: Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture
   material_texture: Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness
   render_quality: Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy
-  spatial_distortion: Characters bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion
+  spatial_distortion: Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion
   atmosphere: Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm
   key_features: Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection
-  creative_brief: An idea was born, rejected, crushed, rescued, and flattened again—its creases now co-authors of the composition. A coffee ring crowns a character who survived the wastebasket, ink pooling in fold valleys like truth settling into wounds. Imperfection is not bug but feature; the damage is the signature.
+  creative_brief: 'Apply crumpled-paper damage to any input: fold faults, ink pooling, coffee stains, torn edges, warped fibers, and recovered-sketch imperfection. Avoid requiring characters, trash scenes, or literal rejection narrative. Damage should co-author the composition through surface deformation.'
 avoidRules:
   - flat
   - clean

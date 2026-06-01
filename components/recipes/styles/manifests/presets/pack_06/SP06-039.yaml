@@ -19,9 +19,9 @@ visualDna:
   material_texture: Rice paper, dithering
   render_quality: Zine, retro, cheap
   spatial_distortion: Misregistration
-  atmosphere: Fun, indie
+  atmosphere: Fun, indie, handmade, slightly unstable
   key_features: Grainy dither
-  creative_brief: Soy-based inks layer through a drum that eats digital files and excretes zines, each color slightly offset, each pass adding grain. The dither pattern becomes texture, the misregistration becomes charm, the rice paper absorbs the neon with an appetite for the handmade. Every print smells like the indie section of a bookstore that does not exist.
+  creative_brief: Soy-based inks layer through a drum that turns digital input into imperfect physical color, each pass slightly offset, each layer adding grain. The dither pattern becomes texture, the misregistration becomes charm, the paper absorbs neon with an appetite for the handmade. Every image should feel duplicated, cheap, vivid, and intentionally unstable.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-150
 packId: pack_16
-name: Shakugan no Shana - Crimson Schoolyard Embers
+name: Crimson Threshold Embers Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Fantasía de combate sobrenatural escolar en clave early-2000s, con tensión romántica y severidad tsundere de alta combustión emocional.
-  form_and_line: Línea digital limpia y compacta, silueta pequeña pero dominante, poses de espada frontal y acting de intensidad contenida.
-  color_palette: Rojos brasa, naranjas ígneos, azules de uniforme y negros de portal oculto con saturación nítida.
-  lighting_setup: Glow de fuego sobrenatural, key de atardecer urbano y gradiente suave típico de compositing digital de época.
-  material_texture: Superficies escolares limpias, partículas de ceniza flotante y acabado cel-digital con ruido sutil.
+  aesthetic: Fantasía sobrenatural de umbral carmesí, con tensión romántica, severidad emocional y combustión contenida.
+  form_and_line: Línea digital limpia y compacta, silueta dominante, ejes frontales de confrontación y acting de intensidad contenida.
+  color_palette: Rojos brasa, naranjas ígneos, azules fríos de contraste y negros de plano oculto con saturación nítida.
+  lighting_setup: Glow de fuego sobrenatural, key crepuscular y gradiente suave típico de compositing digital de época.
+  material_texture: Superficies limpias, partículas de ceniza flotante, bordes de calor y acabado cel-digital con ruido sutil.
   render_quality: Acabado premium de acción romántica 2000s con lectura inmediata de choque mundo ordinario-mundo oculto.
-  spatial_distortion: Espacio cotidiano tensionado por overlays dimensionales y encuadre cerrado de duelo en transición crepuscular.
+  spatial_distortion: Espacio cotidiano tensionado por overlays dimensionales y encuadre cerrado de choque emocional crepuscular.
   atmosphere: Ígnea, estricta, romántica y secretamente combativa.
-  key_features: Ojos carmesí, partículas de ember, contraste uniforme-arma y superposición de plano oculto.
-  creative_brief: Diseña una gramática reusable de school-fantasy incendiaria para cualquier sujeto, combinando iconografía escolar, fuego arcano y romance de frontera dimensional.
+  key_features: Mirada carmesí, partículas de ember, silueta severa, plano oculto superpuesto y frontera dimensional.
+  creative_brief: >-
+    Diseña una gramática reusable de crimson-threshold-embers para cualquier
+    sujeto: fuego arcano, romance de frontera dimensional, severidad emocional
+    y contraste mundo visible/oculto sin imponer escuela, uniformes, espadas,
+    armas, patios ni duelos.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y destrucción urbana coreografiada con precisión quirúrgica.
+  aesthetic: Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y energía de impacto coreografiada con precisión quirúrgica.
   form_and_line: Contorno de precisión absoluta, detalle anatómico denso y control ultralimpio de líneas de acción.
   color_palette: Steel grey, explosion orange, hero red, electric cyan, soot black, flash white
-  lighting_setup: Iluminación HDR de impacto, sheen especular heroico, contraluz de explosión y relleno por escombro incandescente.
-  material_texture: Acabado pulido en piel/metal, granulado de debris, columnas de humo y rubble de microdetalle.
+  lighting_setup: Iluminación HDR de impacto, sheen especular heroico, contraluz explosivo y relleno por partículas incandescentes.
+  material_texture: Acabado pulido en piel/metal, granulado de debris, columnas de humo y microdetalle de fractura.
   render_quality: Action frame premium con claridad de lectura cinética y acabado editorial de alto brillo.
-  spatial_distortion: Extreme foreshortening, fist-to-camera compression, spectacle-first city scale, perfect action readability
+  spatial_distortion: Extreme foreshortening, focal compression, spectacle-first scale, and perfect action readability
   atmosphere: Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.
-  key_features: Anatomía chrome-like, cráteres de impacto, perspectiva city-shatter y posing de póster heroico.
+  key_features: Anatomía chrome-like, fracturas de impacto, perspectiva spectacle-shatter y posing de póster heroico.
   creative_brief: >-
     Construye una gramática hero-impact reusable donde acabado hiperdefinido,
-    foreshortening extremo y destrucción urbana legible establezcan espectáculo
-    sin sacrificar claridad compositiva.
+    foreshortening extremo y fractura de escala legible establezcan espectáculo
+    sin exigir ciudad, cráter, héroe concreto o golpe a cámara.
 avoidRules:
   - still
   - calm

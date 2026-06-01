@@ -17,11 +17,11 @@ visualDna:
   color_palette: Rich, smooth tones
   lighting_setup: Controlled
   material_texture: Zero grain
-  render_quality: Ansel Adams, fine art
+  render_quality: Fine-art view camera
   spatial_distortion: Tilt-shift potential
   atmosphere: Grand, still
   key_features: Extreme resolution
-  creative_brief: 'Monumental stillness rendered with the gravity of cathedral stone: every leaf on every distant tree, every fissure in granite, every molecule of air held accountable. The plane of focus tilts like a held breath, bending space into reverence. This is not a photograph but a covenant with the visible.'
+  creative_brief: 'Monumental stillness rendered through view-camera discipline: smooth tonal scale, huge negative detail, controlled perspective, and a focus plane that can tilt through space with deliberate authority. Give any subject large-format gravity without requiring wilderness, trees, granite, or architecture.'
 avoidRules:
   - illustration
   - painting

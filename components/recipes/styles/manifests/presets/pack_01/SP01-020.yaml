@@ -13,7 +13,7 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Damaged film stock
-  form_and_line: Soft
+  form_and_line: Soft unstable edges
   color_palette: Green/Magenta shift
   lighting_setup: Fogged
   material_texture: Heavy grain, mold
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Color cast
   atmosphere: Decay, lost memory
   key_features: Color shift
-  creative_brief: 'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static across a fading frequency. The image carries its own decay as a second subject, time visibly eating through the emulsion. A photograph that remembers its own dying, and renders that memory beautiful.'
+  creative_brief: 'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static, fogging and mold marks drifting across tone. Let decay become a second visual layer over any subject, time visibly eating through emulsion without dictating what image sits beneath.'
 avoidRules:
   - illustration
   - painting

@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Scrap-yard cyber-body resilience, motorball speed, junk and steel humanity, kinetic close-quarters violence, eyes full of ferocity and loss in a stacked metal city
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Scrap-yard velocity style, with cyber-body resilience, junk-steel humanity, kinetic ferocity, and loss under speed.
+  form_and_line: Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force geometry, and sharp hatch detail.
+  color_palette: Scrap silver, rust orange, oil black, electric teal, bruised violet, and spark white.
+  lighting_setup: Industrial underglow, specular streaks, harsh fluorescent cuts, and impact sparks that trace motion.
+  material_texture: Dented alloy, brushed steel, oily polymer, cable grain, carbon weave, and scarred composite surfaces.
+  render_quality: High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient emotional grit.
+  spatial_distortion: Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed arena framing.
   atmosphere: Raw, fast, scrapyard, determined
-  key_features: Cyber-limb detail, scrapyard verticality, speed-race framing, intimate combat poses, junk-metal textures
-  creative_brief: A cyborg girl moves through junk-steel canyons at motorball velocity, her eyes holding every tragedy the scrapyard has fed her and every fight she has fed back. Metal remembers impact — the dents, the sparks, the velocity of a body that refuses to stay broken. Resilience is the only currency that matters in a city built from what others threw away.
+  key_features: Scrap-metal texture, cyber resilience, speed compression, ferocious close motion, dented humanity.
+  creative_brief: >-
+    Apply scrap-yard velocity to any prompt through dented metal, compact impact
+    arcs, spark-lit speed, and resilient grit without requiring a cyborg,
+    race, scrapyard city, or combat setup.
 avoidRules:
   - realistic
   - 3d render

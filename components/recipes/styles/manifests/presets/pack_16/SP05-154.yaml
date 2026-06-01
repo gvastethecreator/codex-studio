@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-154
 packId: pack_16
-name: Blood+ - Military Vampire Transit
+name: Clinical Nocturne Tactics Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Thriller vampírico militar de carretera nocturna, con disciplina operativa y tragedia íntima en tensión permanente.
-  form_and_line: Trazado limpio de acción táctica, silueta escolar-armada contrastante y movimiento cortante de combate cercano.
-  color_palette: Azules hospitalarios, rojos hemáticos contenidos, grises de convoy y blancos fríos de interior estéril.
-  lighting_setup: Iluminación fluorescente de pasillo/logística, contraluces de tren nocturno y highlights de hoja metálica.
-  material_texture: Acero clínico, vidrio de transporte, textil de uniforme y superficies limpias de infraestructura militar.
+  aesthetic: Thriller nocturno clínico-táctico, con disciplina operativa, melancolía hemática y tragedia íntima contenida.
+  form_and_line: Trazado limpio de acción táctica, siluetas contrastantes y movimiento cortante de amenaza cercana.
+  color_palette: Azules hospitalarios, rojos hemáticos contenidos, grises logísticos y blancos fríos de interior estéril.
+  lighting_setup: Iluminación fluorescente logística, contraluces nocturnos y highlights finos sobre metal clínico.
+  material_texture: Acero clínico, vidrio oscuro, textil técnico y superficies limpias de infraestructura estéril.
   render_quality: Acabado premium dark-action 2000s con legibilidad de operación y peso emocional de misión secreta.
-  spatial_distortion: Composición longitudinal de tren y corredor para reforzar viaje forzado y encierro psicológico.
+  spatial_distortion: Composición longitudinal de tránsito y corredor abstracto para reforzar encierro psicológico.
   atmosphere: Desolada, disciplinada, nocturna, trágica.
-  key_features: Protagonista escolar con katana, logística militar en tránsito, iconografía hemática y frame de guerra oculta.
-  creative_brief: Diseña una gramática reusable de vampirismo militar moderno para cualquier sujeto, combinando limpieza táctica, melancolía y violencia controlada de noche.
+  key_features: Limpieza táctica, iconografía hemática, encuadre de operación oculta y amenaza cortante contenida.
+  creative_brief: >-
+    Diseña una gramática reusable de clinical-nocturne-tactics para cualquier
+    sujeto: limpieza táctica, melancolía hemática, noche controlada y violencia
+    contenida sin imponer vampiros, militares, trenes, carreteras, uniformes,
+    katanas ni protagonistas escolares.
 avoidRules:
   - realistic
   - 3d render

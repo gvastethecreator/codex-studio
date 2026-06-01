@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: House interior
+  aesthetic: Real estate HDR brightness
   form_and_line: Wide angle
   color_palette: Saturated, even
   lighting_setup: No shadows (HDR)
   material_texture: Sharp
-  render_quality: Zillow, oversaturated
+  render_quality: Listing-photo oversaturation
   spatial_distortion: Unnatural dynamic range
   atmosphere: Bright, selling
-  key_features: Windows visible
-  creative_brief: 'Every corner is bright with the insistence of a sales pitch, shadows banished so thoroughly the room forgets it ever had a night side. Color achieves unnatural saturation that makes the space look more real than real: hyper-present, hyper-available, every surface gleaming with the suppressed urgency of the transaction. The window offers a view designed to suggest that outside is merely an extension of what could be owned.'
+  key_features: Shadowless HDR visibility
+  creative_brief: 'Real estate HDR makes any subject over-available: shadows lifted away, colors pushed slightly beyond realism, wide-angle clarity, and dynamic range flattened into sales-friendly brightness. Use listing-photo hypervisibility without requiring a house, room, window, or property context.'
 avoidRules:
   - shadows
   - dark corners

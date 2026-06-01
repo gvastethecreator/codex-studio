@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Posterized traced live action, A Scanner Darkly style, wobbly reality, shifting identity, digital uncanny valley
+  aesthetic: Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley
   form_and_line: Wobbly trace
-  color_palette: Flat blocks, posterized palette, unnatural skin, comic-book reduction
+  color_palette: Flat blocks, posterized palette, unnatural local color, comic-book reduction
   lighting_setup: Realistic (traced), live-action source, practical on-set
   material_texture: Digital paint, vector fill, smooth gradient zone
   render_quality: Uncanny, dream, floating-reality disconnect, liquid edge
   spatial_distortion: Floating shapes, paint-drift, unstable outline, image swim
-  atmosphere: Surreal, trippy, identity fracture, psychological unease
+  atmosphere: Surreal, trippy, unstable, psychological unease
   key_features: Jitter, boil, line tremble, frame-to-frame instability
-  creative_brief: Edges tremble as if the drawing is still deciding where it belongs, lines swimming across a face that cannot commit to a single identity. Patches of color float unmoored from the shapes they were meant to fill, creating a second reality that drifts just out of sync with the first. Reality becomes a suggestion, whispered and half-erased.
+  creative_brief: 'Trace the input as unstable rotoscoped live action: posterized fills, wobbly vector edges, drifting color islands, and frame-boil instability. Avoid forcing faces or identity themes; any subject can become a live-action source slipping out of registration with its drawn overlay. Reality should look observed, repainted, and never fully locked to itself.'
 avoidRules:
   - smooth
   - 3d

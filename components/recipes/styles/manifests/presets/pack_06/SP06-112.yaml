@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-112
 packId: pack_06
-name: Sci Fi Shooter Weapon Icons
+name: Sci-Fi Arsenal Icon Kit
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal readability.
+  subject_treatment: Convert any subject into collectible equipment-like icons with crisp outer contours and modular tech segmentation.
+  color_and_tone: Gunmetal neutrals, cold blue emissive accents, rarity-color trims, and strong dark-to-light material ramps.
+  lighting_and_shadow: Small studio-like icon lighting, bevel highlights, contact shadow pads, and controlled emissive glows.
+  texture_and_material: Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches.
+  camera_and_composition: Centered three-quarter icon framing, transparent background, equal padding, and atlas-consistent scale.
+  atmosphere_and_mood: Tactical, collectible, high-tech mood without requiring guns, ammo, soldiers, or shooter scenes.
+  rendering_and_quality: Icon-pack friendly, sharp thumbnail readability, transparent-background safe, no labels.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - gun requirement
+  - soldier requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-112.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, gun requirement, soldier requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

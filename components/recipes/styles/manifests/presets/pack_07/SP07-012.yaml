@@ -12,27 +12,27 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Refugio rústico de masa natural, oficio manual visible y calor centrado en núcleo térmico.
+  aesthetic: Rusticidad protectora de masa natural, oficio manual visible y calor de núcleo térmico.
   form_and_line: Geometrías gruesas de madera y mampostería, ensambles robustos, proporciones compactas protectoras.
   color_palette: Umber quemado, roble ahumado, ámbar brasa, verde pino y cenizas neutras de baja saturación.
-  lighting_setup: Prioridad de hogar/chimenea, parpadeo cálido de prácticos, filtrado diurno moderado y zonas de sombra confortable.
+  lighting_setup: Prioridad de resplandor térmico, parpadeo cálido de prácticos, filtrado diurno moderado y zonas de sombra confortable.
   material_texture: Veta labrada a mano, piedra porosa, lana y piel, metal forjado patinado y acabados terrosos mates.
   render_quality: Realismo rústico auténtico con lectura de peso material y construcción duradera.
   spatial_distortion: Profundidad cerrada estable con compresión íntima de abrigo.
   atmosphere: Protector, terrenal, silencioso y resistente.
-  key_features: Centro térmico dominante, jerarquía de materiales pesados, carpintería artesanal y confort visual cálido.
+  key_features: Núcleo térmico dominante, jerarquía de materiales pesados, ensamble artesanal y confort visual cálido.
   creative_brief: >-
-    Preserva una gramática rústica transferible basada en masa, fuego y oficio.
-    El estilo debe comunicar protección climática y permanencia material en
-    cualquier programa interior, sin quedar atado a una cabaña específica.
+    Preserva una gramática rústica transferible basada en masa, calor y oficio.
+    El estilo debe comunicar protección climática y permanencia material sin
+    quedar atado a una cabaña específica.
 avoidRules:
-  - city
+  - synthetic
   - modern
   - cold
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-012.webp
 attributes:
-  negativePrompt: city, modern, cold
+  negativePrompt: synthetic, modern, cold
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

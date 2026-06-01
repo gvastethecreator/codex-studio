@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-025
 packId: pack_05
-name: Thunder Gauntlet Charge
+name: Upward Thunder Momentum Style
 category: 3. Action
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Shonen action of unleashed electrical power.
-  form_and_line: Powerful contour and forward forward posture.
+  aesthetic: Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent.
+  form_and_line: Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded silhouette rhythm.
   color_palette: Electric blue, intense white, and deep black.
-  lighting_setup: Surrounding electricity with a vibrant halo.
-  material_texture: "Sparks, smoke and metal gauntlets."
-  render_quality: Offensive transformation key frame.
-  spatial_distortion: Aggressive frontal perspective.
-  atmosphere: Fierce determination and upward momentum.
-  key_features: "Loaded fist, branched rays, firm gaze."
-  creative_brief: Electric onslaught of protagonist in strong vertical composition.
+  lighting_setup: Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.
+  material_texture: Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.
+  render_quality: Overload key frame with crisp electric hierarchy and high-impact contour clarity.
+  spatial_distortion: Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame pressure.
+  atmosphere: Fierce, ascending, charged, determined.
+  key_features: Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette force.
+  creative_brief: >
+    Apply upward thunder momentum to any subject: vertical force, branched blue
+    light, intense white cores, vapor haze, and decisive silhouette pressure
+    should define the style without fixed body parts, equipment, lead roles,
+    strike choreography, or metamorphosis premise.
 avoidRules:
   - photoreal
   - dull-palette

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-024
 packId: pack_05
-name: Arena Combo Finisher
+name: Monumental Impact Burst Style
 category: 3. Action
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Tournament anime with a devastating finishing combo.
-  form_and_line: "Hard strokes, athletic anatomy and controlled FX."
-  color_palette: "Crimson, gold and charcoal red."
-  lighting_setup: Stadium light with punctual burst.
-  material_texture: Cracked floor and impact energy.
-  render_quality: Fight climax illustration.
-  spatial_distortion: Low camera to magnify the protagonist.
-  atmosphere: Explosive triumph and competitive drama.
-  key_features: "Final blow, rubble, public out of focus."
-  creative_brief: Exact moment of the finisher with monumental presence.
+  aesthetic: Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity.
+  form_and_line: Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression lines.
+  color_palette: Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.
+  lighting_setup: Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.
+  material_texture: Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave grain.
+  render_quality: Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.
+  spatial_distortion: Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective pull.
+  atmosphere: Explosive, triumphant, competitive, dramatic.
+  key_features: Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame readability.
+  creative_brief: >
+    Render any subject as a decisive impact crescendo: low-angle scale,
+    crimson-gold burst light, controlled shock texture, and heavy contour rhythm
+    should create final-frame drama without venues, spectators, named roles,
+    signature moves, or required debris.
 avoidRules:
   - photoreal
   - static

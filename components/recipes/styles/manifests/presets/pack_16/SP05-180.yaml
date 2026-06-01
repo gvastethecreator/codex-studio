@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-180
 packId: pack_16
-name: Gunsmith Cats - Chicago Garage Firefight
+name: Precision Action Cel Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Acción criminal urbana noventera con persecución automotriz, precisión balística y protagonismo femenino decidido.
-  form_and_line: Línea limpia y rápida, posing táctica confiada y composición de chase en calle industrial.
-  color_palette: Azules noche de ciudad, acero cromado, negros de cuero y naranjas de luz vial.
-  lighting_setup: Contraste de farola urbana, reflejos de carrocería y highlights duros en metal de armas.
-  material_texture: Grasa de taller, caucho, cuero, cromado y grano de thriller policial clásico.
-  render_quality: Acabado premium 90s con legibilidad técnica de armamento, mecánica y persecución cinética.
-  spatial_distortion: Espacios de garage-calle-autopista para ritmo continuo de huida, derrape y confrontación.
+  aesthetic: Estilo cel anime noventero de acción técnica, tensión cinética abstracta y confianza gráfica afilada.
+  form_and_line: Línea limpia y rápida, siluetas decididas, diagonales de velocidad y encuadres compactos de lectura inmediata.
+  color_palette: Azules nocturnos, acero cromado, negros densos, piel cálida y acentos naranjas de luz dura.
+  lighting_setup: Contraste de farola estilizada, brillos duros sobre bordes metálicos y sombras recortadas de thriller.
+  material_texture: Acetato satinado, metal pulido, cuero gráfico, grano analógico y superficies mecánicas sugeridas sin literalidad.
+  render_quality: Acabado premium 90s con precisión de contorno, energía cinética y detalle técnico subordinado al sujeto original.
+  spatial_distortion: Perspectiva comprimida, motion streaks controlados y planos tensos que vuelven dinámico cualquier motivo.
   atmosphere: Afilada, acelerada, segura, peligrosa.
-  key_features: Muscle cars, detalle mecánico-armamentístico, silueta de chaqueta y staging de caza metropolitana.
-  creative_brief: Define una gramática reusable de crimen automotor estilizado para cualquier sujeto, mezclando precisión técnica, actitud callejera y dinamismo de persecución.
+  key_features: Cel shading limpio, reflejos cromados, tensión operativa abstracta, posing confiado y ritmo visual de aceleración.
+  creative_brief: >-
+    Aplica una gramática reusable de acción técnica noventera a cualquier prompt o imagen de entrada:
+    precisión gráfica, actitud afilada y dinamismo cinético sin imponer vehículos, armas, garajes ni persecuciones.
 avoidRules:
   - realistic
   - 3d render

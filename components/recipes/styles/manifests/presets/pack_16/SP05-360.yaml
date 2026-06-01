@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-360
 packId: pack_16
-name: Chihayafuru - Tatami Card Strike Focus
+name: Poetic Reflex Focus Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Karuta competitivo de poesía atlética, orientado a reflejo de lectura, memoria sonora y golpe instantáneo.
-  form_and_line: Gesto de mano ultrarrápido, postura baja disciplinada y movimiento de manga como vector de acción.
-  color_palette: Tonos de tatami cálido, índigo tradicional y acentos carmín de tensión competitiva.
-  lighting_setup: Iluminación interior suave con foco sobre cartas y contraste de concentración facial.
-  material_texture: Trama de tatami, papel de carta nítido, seda de kimono y madera de sala ceremonial.
-  render_quality: Frame deportivo-cultural con lectura precisa de sílaba, reacción y captura de carta.
-  spatial_distortion: Perspectiva rasante de suelo y estiramiento de mano para dramatizar velocidad de strike.
+  aesthetic: Competición poética de reflejo mental, memoria sonora, gesto instantáneo y disciplina elegante.
+  form_and_line: Gesto de mano ultrarrápido, postura baja disciplinada y movimiento de tela como vector de acción.
+  color_palette: Tonos vegetales cálidos, índigo tradicional y acentos carmín de tensión competitiva.
+  lighting_setup: Iluminación interior suave con foco sobre planos de memoria y contraste de concentración facial.
+  material_texture: Trama vegetal, papel nítido, seda formal y madera ceremonial sugerida.
+  render_quality: Frame deportivo-cultural con lectura precisa de sonido, reacción y captura mental.
+  spatial_distortion: Perspectiva rasante y estiramiento gestual para dramatizar velocidad de strike.
   atmosphere: Concentrada, elegante, disciplinada y urgentemente competitiva.
-  key_features: Geometría de tatami, blur de mano, tensión de sala baja y close-up de foco mental.
+  key_features: Geometría baja, blur de mano, tensión silenciosa y close-up de foco mental.
   creative_brief: >-
-    Formula una gramática reusable de tatami-card-strike donde cultura,
-    velocidad de reacción y legibilidad de gesto conviertan la competencia en
-    sistema visual transferible.
+    Formula una gramática reusable de reflejo poético para cualquier prompt o imagen de entrada:
+    memoria, gesto y silencio competitivo sin imponer karuta, tatami, cartas, sala ni poesía literal.
 avoidRules:
   - realistic
   - 3d render

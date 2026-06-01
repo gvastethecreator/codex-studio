@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Lunar agriculture district built as concentric habitat rings.
-  form_and_line: Crescent terraces, circular hydro loops, and slim bridges.
-  color_palette: Pearl gray, mint, and pale cyan.
-  lighting_setup: Earthshine ambience and bioluminescent crop strips.
-  material_texture: Regolith concrete, translucent films, and algae tubes.
-  render_quality: Clean high-detail eco-future concept.
-  spatial_distortion: Ring composition pulling eye to central biosphere.
-  atmosphere: Cooperative abundance and gentle futurism.
-  key_features: Hydro rings, seed libraries, and moon compost vaults.
+  aesthetic: Abstract lunarpunk bio-orbital style using crescent repetition, closed-loop ecology, and gentle regenerative order.
+  form_and_line: Crescent bands, circular hydro loops, filament connectors, seed-like nodes, and soft orbital contour lines.
+  color_palette: Pearl regolith gray, mint chlorophyll, pale cyan water, moon-white film, and seed-library amber.
+  lighting_setup: Earthshine ambience, bioluminescent strip accents, cool membrane glow, and small amber maintenance points.
+  material_texture: Powdery regolith finish, translucent film layers, algae-tube gloss, damp organic softness, and matte composite edges.
+  render_quality: Clean high-detail eco-future render with readable closed-loop systems and soft lunar restraint.
+  spatial_distortion: Ring and crescent composition spirals attention through cycles rather than fixed scenery.
+  atmosphere: Cooperative abundance, gentle futurism, closed-loop patience, and lunar care.
+  key_features: Crescent crop-like bands, mint-cyan bio loops, seed-node motifs, translucent membranes, and orbital composition flow.
   creative_brief: >-
-    Preserve crescent agro-rings grammar as a reusable style system:
-    concentric hydro-agriculture urbanism, cooperative biosphere logistics,
-    and gentle lunar abundance should remain coherent across subjects.
+    Apply crescent agro-rings as an abstract style treatment: transform any
+    subject through lunar bio-cycles, crescent geometry, algae-light accents,
+    and regenerative closed-loop softness.
 avoidRules: [photoreal, militarized-base, cyber-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-073.webp }
 attributes:
   negativePrompt: photoreal, militarized-base, cyber-grime, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

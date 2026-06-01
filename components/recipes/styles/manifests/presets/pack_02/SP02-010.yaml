@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: 70s studio martial arts cinema, Shaw Brothers spectacle, flying kicks, palace sets, acrobatic precision
+  aesthetic: 70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision
   form_and_line: None
   color_palette: Saturated primaries, golden palace, deep red banners
   lighting_setup: Studio set, flat broad key, painted backdrop
-  material_texture: Film grain, silk robes, wooden staff, stone courtyard
+  material_texture: Film grain, silk sheen, lacquered prop texture, painted set surface
   render_quality: Choreographed, acrobatic, wire-fu precision, rhythmic combat
   spatial_distortion: Snap zoom, crash zoom, dramatic push-in
-  atmosphere: Action, classic, honor-bound conflict, martial discipline
-  key_features: Wide shot, long take fight, weapon showcase
-  creative_brief: Bodies become calligraphy, each kick and parry tracing invisible brushstrokes across painted palace halls. Beneath silk banners the color of dried blood, combat unfolds as ceremony — rhythm and restraint giving way to sudden, breathtaking flight.
+  atmosphere: Action, classic, rhythmic discipline
+  key_features: Wide staging, crash zoom, choreographic rhythm
+  creative_brief: 'Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light, saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep martial-cinema energy without forcing fighters, palace sets, weapons, or combat.'
 avoidRules:
   - modern action
 assets:

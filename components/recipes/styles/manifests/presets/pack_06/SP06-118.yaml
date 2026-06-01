@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-118
 packId: pack_06
-name: RPG Item Pack Pixel Icons
+name: RPG Pixel Inventory Icon System
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: RPG pixel-inventory icon language with collectible clarity, tiny material storytelling, and consistent atlas rhythm.
+  subject_treatment: Turn any subject into an inventory-ready icon with compact silhouette, clear rarity cue, and readable function.
+  color_and_tone: Earthy base ramps, jewel accent colors, metal/leather/potion-like swatch logic, and strong outline contrast.
+  lighting_and_shadow: Top-left icon lighting, tiny rim glints, soft contact shadow, and controlled highlight pixels.
+  texture_and_material: Hand-placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided.
+  camera_and_composition: Centered transparent-background icon framing, equal padding, stable scale, and consistent three-quarter tilt.
+  atmosphere_and_mood: Lootable, tactile, game-ready mood without requiring weapons, potions, bags, or item sets.
+  rendering_and_quality: Icon-sheet friendly, crisp low-res finish, no text, no background scene, no interpolation blur.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - weapon requirement
+  - potion requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-118.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, weapon requirement, potion requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

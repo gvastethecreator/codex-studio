@@ -13,22 +13,22 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Submerged subject
-  form_and_line: Floating hair/cloth
+  form_and_line: Weightless drifting contours
   color_palette: Cyan, Blue cast
   lighting_setup: Caustics (light rays)
-  material_texture: Bubbles, refraction
+  material_texture: Bubbles, caustics, refraction
   render_quality: Dreamy, weightless
   spatial_distortion: Refraction distortion
   atmosphere: Silent, deep
   key_features: Blue tint
-  creative_brief: Gravity unlearns itself beneath the surface, where fabric dances in slow currents and light arrives fractured into drifting nets of radiant blue lace. Everything softens, blue-shifted, rendered dreamlike by the liquid medium that bends vision as much as it bends light. Sound becomes impossible in this suspended cathedral of silence, where breath holds itself in abeyance.
+  creative_brief: Submerged optics transform any subject through blue cast, caustic rays, bubble texture, softened contrast, refraction distortion, and weightless contour drift. The style is underwater light physics, not mandatory hair, fabric, land/sea setting, or swimmer staging.
 avoidRules:
-  - dry
-  - land
+  - dry studio light
+  - harsh land lighting
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-055.webp
 attributes:
-  negativePrompt: dry, land
+  negativePrompt: dry studio light, harsh land lighting
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -9,16 +9,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Art-deco luxury fused with industrial power and metropolitan ceremony.',
-      form_and_line: 'Chevron ribs, stepped vaults, and streamlined elevator cores.',
+      aesthetic: 'Art-deco luxury fused with industrial power and ceremonial ambition.',
+      form_and_line:
+        'Chevron ribs, stepped vault silhouettes, streamlined cores, and fan geometry.',
       color_palette: 'Black lacquer, brass gold, and emerald accents.',
-      lighting_setup: 'Chandelier shafts and uplighting along geometric relief walls.',
-      material_texture: 'Polished brass, marble, velvet insets, and etched glass.',
+      lighting_setup: 'Chandelier-like shafts and uplighting across geometric relief planes.',
+      material_texture: 'Polished brass, marble veining, velvet insets, and etched glass.',
       render_quality: 'Opulent concept visualization with precise ornamental geometry.',
-      spatial_distortion: 'Grand central atrium perspective with layered balconies and depth.',
+      spatial_distortion: 'Vertical ceremonial depth with layered stepped planes.',
       atmosphere: 'Sophisticated ambition, urbane spectacle, and controlled excess.',
-      key_features: 'Deco turbine murals, golden clockwork lifts, and grand civic dais.',
-      creative_brief: 'A decopunk power hall where elegance is engineered as public propaganda.',
+      key_features:
+        'Deco turbine motifs, gilded dynamo rings, emerald inlays, and black-lacquer contrast.',
+      creative_brief:
+        'Preserve gilded dynamo-atrium grammar as a reusable style language: geometric art-deco monumentality, luxury-industrial symbolism, and staged civic spectacle should remain stable across any subject.',
     },
   },
   {
@@ -28,18 +31,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, medieval-ornament, pastoral-rural, post-apocalypse, watermark, text, logo',
     style: {
-      aesthetic:
-        'Nocturnal decopunk avenue where nightlife, radio culture, and machine glamour mix.',
-      form_and_line: 'Streamline facades, marquee arcs, and repeated geometric cornices.',
+      aesthetic: 'Nocturnal decopunk rhythm where jazz-age glamour meets machine polish.',
+      form_and_line:
+        'Streamline arcs, marquee-like bands, repeated cornice geometry, and syncopated curves.',
       color_palette: 'Midnight navy, amber marquee light, and chrome blue reflections.',
-      lighting_setup: 'Theater marquees and street neon outlining façades with rhythmic contrast.',
-      material_texture:
-        'Gloss enamel signage, polished metal trims, lacquered wood, and rain-slick asphalt.',
+      lighting_setup: 'Amber rim pools and blue chrome reflections with rhythmic high contrast.',
+      material_texture: 'Gloss enamel, polished metal trims, lacquered wood, and rain-slick sheen.',
       render_quality: 'Cinematic cityscape concept with high legibility and mood depth.',
-      spatial_distortion: 'Diagonal boulevard view emphasizing speed and social flow.',
+      spatial_distortion: 'Diagonal syncopated perspective emphasizing speed, rhythm, and flow.',
       atmosphere: 'Electric elegance, urban music pulse, and curated decadence.',
-      key_features: 'Jazz clubs, radio towers, deco taxis, and mirrored canopies.',
-      creative_brief: 'A decopunk nightlife district that runs on style, voltage, and live brass.',
+      key_features:
+        'Blank marquee arcs, radio-wave linework, mirrored canopies, and chrome-blue edgework.',
+      creative_brief:
+        'Preserve chrome jazz-boulevard grammar as a reusable style system: nocturnal deco-streamline rhythms, music-pulse nightlife choreography, and reflective urban glamour should remain coherent across any subject.',
     },
   },
   {
@@ -49,16 +53,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo',
     style: {
-      aesthetic: 'Private decopunk club where political deals happen behind velvet and steel.',
-      form_and_line: 'Curved bar islands, fan-pattern ceilings, and turbine-like wall insets.',
+      aesthetic: 'Intimate decopunk intrigue rendered through velvet, brass, and turbine geometry.',
+      form_and_line:
+        'Curved islands, fan-pattern arcs, turbine insets, and nested alcove silhouettes.',
       color_palette: 'Burgundy velvet, onyx black, and antique gold.',
-      lighting_setup: 'Low-key spot pools and brass sconces shaping intimate corners.',
+      lighting_setup: 'Low-key spot pools and brass glints shaping controlled pockets of secrecy.',
       material_texture: 'Velvet upholstery, embossed leather, polished brass, and smoked mirrors.',
       render_quality: 'Premium interior concept art with tactile richness and dramatic depth.',
-      spatial_distortion: 'Layered lounge composition with nested alcoves and secret passages.',
+      spatial_distortion: 'Layered close-range composition with nested private-depth pockets.',
       atmosphere: 'Confidential intrigue, aristocratic modernity, and hushed momentum.',
-      key_features: 'Hidden speaking booths, deco fan lamps, and turbine stage centerpiece.',
-      creative_brief: 'A decopunk salon where influence is traded as carefully as rare machinery.',
+      key_features:
+        'Smoked mirror seams, fan-lamp halos, turbine reliefs, and velvet shadow gradients.',
+      creative_brief:
+        'Preserve velvet turbine-salon grammar as a reusable style language: intimate deco intrigue interiors, turbine-motif opulence, and confidential social choreography should remain stable across any subject.',
     },
   },
   {
@@ -67,16 +74,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, rustic, cyber-neon-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Financial skybridge district in opulent machine-age style.',
-      form_and_line: 'Stepped towers, chevron braces, and arched connectors.',
-      color_palette: 'Black lacquer, brass, and jade.',
-      lighting_setup: 'Evening marquee bands and art-deco uplights.',
-      material_texture: 'Polished stone, gilded trim, and smoked glass.',
-      render_quality: 'Luxurious urban concept with geometric clarity.',
-      spatial_distortion: 'Elevated perspective across bridge network.',
-      atmosphere: 'Ambition, secrecy, and metropolitan glamour.',
-      key_features: 'Currency halls, deco skybridges, and turbine lobbies.',
-      creative_brief: 'A decopunk exchange quarter where wealth circulates through architecture.',
+      aesthetic:
+        'Decopunk finance as aerial circulation, where wealth moves like hidden weather made of brass and jade.',
+      form_and_line:
+        'Stepped tower logic, chevron brace stacks, arched connectors, ledger-band facades, and vault-threshold frames.',
+      color_palette:
+        'Black lacquer, aged brass, deep jade, smoke glass gray, and small currency-green glints.',
+      lighting_setup:
+        'Evening marquee bands, deco uplights, brass edge glow, and jade reflections caught in smoked glass.',
+      material_texture:
+        'Polished stone, gilded trim, smoked glass, lacquer panels, jade inlay, and fingerless vault-door metal.',
+      render_quality:
+        'Luxurious urban concept with strict geometric clarity and readable financial circulation.',
+      spatial_distortion:
+        'Elevated interlock perspective turns vertical wealth channels into a controlled maze.',
+      atmosphere: 'Ambition, secrecy, metropolitan glamour, and elegant predation.',
+      key_features:
+        'Currency-threshold motifs, deco rib spans, turbine lobby forms, vault-threshold marks, and chevron transaction lanes.',
+      creative_brief:
+        'Preserve deco skybridge-exchange grammar as a reusable style system: elevated financial circulation, lacquer-and-brass wealth coding, and geometric metropolitan predation should remain coherent across subjects.',
     },
   },
   {
@@ -85,16 +101,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, medieval, cyberpunk-grit, watermark, text, logo',
     style: {
-      aesthetic: 'Grand entertainment boulevard blending film culture and power aesthetics.',
-      form_and_line: 'Marquee facades, fan motifs, and layered promenades.',
-      color_palette: 'Midnight blue, amber gold, and ruby accents.',
-      lighting_setup: 'Theater marquees and reflective wet pavement glow.',
-      material_texture: 'Brass rails, velvet banners, and enamel signage.',
-      render_quality: 'Cinematic city concept with strong nighttime mood.',
-      spatial_distortion: 'Long boulevard axis with repeating façades.',
-      atmosphere: 'Stylish spectacle and social ritual.',
-      key_features: 'Cinema palaces, radio kiosks, and lit deco towers.',
-      creative_brief: 'A decopunk avenue where culture industries project civic identity.',
+      aesthetic:
+        'Decopunk cinema ritual where brass, velvet, and mass attention become a projection machine.',
+      form_and_line:
+        'Marquee facade stacks, fan-ray canopies, layered bands, vertical tower reveals, and blank poster-window grids.',
+      color_palette:
+        'Midnight blue, amber gold, ruby accents, black stone, and soft champagne bulb halos.',
+      lighting_setup:
+        'Theater marquee glow, wet-ground reflections, amber rim lights, ruby sign pulses, and poster vitrine highlights.',
+      material_texture:
+        'Brass rails, velvet banners, enamel signage, black stone, polished poster glass, and rain-slick curb edges.',
+      render_quality:
+        'Cinematic city concept with strong night mood, readable spectacle hierarchy, and tactile entertainment surfaces.',
+      spatial_distortion:
+        'Long axis perspective repeats facade rhythms, bulbs, and vertical beats like frames in a film strip.',
+      atmosphere:
+        'Stylish spectacle, civic glamour, social ritual, and the machinery of attention.',
+      key_features:
+        'Cinema-palace silhouettes, radio-form details, lit deco towers, fan-shaped canopies, and glowing blank vitrines.',
+      creative_brief:
+        'Preserve brass cinema-esplanade grammar as a reusable style system: marquee-ritual nightlife choreography, brass-and-velvet spectacle, and wet nocturnal projection culture should remain coherent across subjects.',
     },
   },
   {
@@ -103,16 +129,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, grunge, medieval-rustic, watermark, text, logo',
     style: {
-      aesthetic: 'Monumental transit hub as an art-deco civic cathedral.',
-      form_and_line: 'Circular concourse, ribbed vaults, and ticket balcony rings.',
-      color_palette: 'Ivory, brass, and emerald accents.',
-      lighting_setup: 'Diffused skylight and perimeter chandelier bands.',
-      material_texture: 'Marble floors, brass grilles, and etched glass.',
-      render_quality: 'Architectural concept with precise circulation logic.',
-      spatial_distortion: 'Central rotunda focus with radial exits.',
-      atmosphere: 'Ordered movement and ceremonial modernity.',
-      key_features: 'Deco timetable clock, turbine escalators, and grand ticket hall.',
-      creative_brief: 'A decopunk station where mobility is framed as elegant public theater.',
+      aesthetic:
+        'Decopunk transit liturgy where clocks, route logic, and crowd flow become gilded civic pattern.',
+      form_and_line:
+        'Circular concourse mandalas, ribbed vault fans, balcony rings, radial spokes, and turbine-spiral motion.',
+      color_palette:
+        'Warm ivory, aged brass, emerald glass, black timetable ink, and polished floor cream.',
+      lighting_setup:
+        'Diffused skylight, perimeter chandelier halos, brass reflections on marble arcs, and clock-face glow.',
+      material_texture:
+        'Marble floors, brass grilles, etched glass, enamel clocks, ribbed stone trim, and worn ticket leather.',
+      render_quality:
+        'Architectural concept with precise circulation logic, ceremonial scale, and readable public choreography.',
+      spatial_distortion:
+        'Rotunda focus pulls forms through radial exits like planets around a timetable sun.',
+      atmosphere:
+        'Ordered movement, ceremonial modernity, civic patience, and cathedral-like transit awe.',
+      key_features:
+        'Deco timetable suns, turbine spirals, grand ticket arches, emerald route markers, and balcony-ring geometry.',
+      creative_brief:
+        'Preserve gilded transit-rotunda grammar as a reusable style system: ticketed radial circulation, ceremonial public timing, and brass civic order should remain coherent across subjects.',
     },
   },
   {
@@ -121,16 +157,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, minimalist, cyber-noise, watermark, text, logo',
     style: {
-      aesthetic: 'National broadcast studio with theatrical deco gravitas.',
-      form_and_line: 'Acoustic fan walls, stage arcs, and signal tower spine.',
-      color_palette: 'Burgundy, brass, and charcoal.',
-      lighting_setup: 'Stage spotlights and warm perimeter sconces.',
-      material_texture: 'Velvet drape, lacquer wood, and mic chrome.',
-      render_quality: 'Interior concept with rich tonal staging.',
-      spatial_distortion: 'Stage-centric composition with layered audience boxes.',
-      atmosphere: 'Authority performance and glamorous control.',
-      key_features: 'Live orchestra pit, announcer dais, and signal meter walls.',
-      creative_brief: 'A decopunk media hall where voice becomes architecture.',
+      aesthetic:
+        'Velvet authority system where voice is not sound but architecture, signal, ritual, and soft propaganda.',
+      form_and_line:
+        'Acoustic fan ribs, signal-spine towers, stage-like arcs, waveform grille patterns, and speaker-box stacks.',
+      color_palette:
+        'Deep burgundy, tarnished brass, charcoal felt, microphone chrome, and warm vacuum-tube amber.',
+      lighting_setup:
+        'Stage spot cones, perimeter sconces, glowing signal meters, and chrome pinlights on microphone heads.',
+      material_texture:
+        'Velvet drape, lacquer wood, mic chrome, acoustic felt, perforated brass, and warm tube glass.',
+      render_quality:
+        'Interior concept with rich tonal staging, readable broadcast hardware, and theatrical command of attention.',
+      spatial_distortion:
+        'Composition compresses toward a broadcast axis while fan walls radiate signal outward.',
+      atmosphere:
+        'Glamorous control, official intimacy, signal authority, and performance discipline.',
+      key_features:
+        'Sculptural microphone motifs, waveform walls, broadcast dais geometry, orchestra-pit arcs, glowing meters, and brass grilles.',
+      creative_brief:
+        'Preserve velvet broadcast-hall grammar as a reusable style system: staged voice authority, burgundy acoustic softness, and chrome signal ritual should remain coherent across subjects.',
     },
   },
   {
@@ -139,16 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, rustic, cyberpunk-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Elite diplomatic hotel where protocol meets machine-age luxury.',
-      form_and_line: 'Chevron façades, tiered balconies, and formal entrance canopies.',
-      color_palette: 'Onyx, champagne gold, and deep green.',
-      lighting_setup: 'Warm marquee wash and corridor uplights.',
-      material_texture: 'Marble veneers, brass inlays, and mirrored panels.',
-      render_quality: 'Premium hospitality concept with precise decor hierarchy.',
-      spatial_distortion: 'Lobby depth perspective through repeated arches.',
-      atmosphere: 'Polished intrigue and ceremonial hospitality.',
-      key_features: 'Grand concierge desk, private salons, and coded elevator banks.',
-      creative_brief: 'A decopunk hotel designed to host negotiations disguised as galas.',
+      aesthetic:
+        'Diplomatic decopunk where hospitality becomes camouflage for negotiation, surveillance, and choreographed etiquette.',
+      form_and_line:
+        'Chevron facade codes, tiered bands, canopy shields, elevator-like monoliths, and treaty-altar blocks.',
+      color_palette: 'Onyx, champagne gold, deep green, mirror silver, and discreet passport red.',
+      lighting_setup:
+        'Warm marquee wash, corridor uplights, mirror glints at thresholds, and soft private-salon lamp pools.',
+      material_texture:
+        'Marble veneer, brass inlay, mirrored paneling, velvet ropes, lacquered concierge surfaces, and embossed seal paper.',
+      render_quality:
+        'Premium hospitality concept with exact decor hierarchy and hidden power cues.',
+      spatial_distortion:
+        'Lobby-like depth passes through arches, screens, layers, and vertical banks like protocol checkpoints.',
+      atmosphere:
+        'Polished intrigue, ceremonial hospitality, quiet surveillance, and gala-grade tension.',
+      key_features:
+        'Treaty-desk silhouettes, private threshold frames, coded vertical banks, diplomatic seal motifs, and mirrored alcove forms.',
+      creative_brief:
+        'Preserve chevron diplomatic-hotel grammar as a reusable style system: polished protocol hospitality, mirrored surveillance etiquette, and rank-coded negotiation surfaces should remain coherent across subjects.',
     },
   },
   {
@@ -157,16 +212,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, cyber-neon, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Nautical-themed social club for machine-age elites and inventors.',
-      form_and_line: 'Porthole motifs, curved staircases, and fan ceiling ribs.',
-      color_palette: 'Navy, brass, and ivory.',
-      lighting_setup: 'Low ambient sconces and focused table pools.',
-      material_texture: 'Polished teak, brass trim, and leather seating.',
-      render_quality: 'Intimate interior concept with rich material contrast.',
-      spatial_distortion: 'Curved lounge plan guiding eye to central bar.',
-      atmosphere: 'Confidential luxury and engineered nostalgia.',
-      key_features: 'Brass bar, sonar murals, and private cigar booths.',
-      creative_brief: 'A decopunk club where naval mythology becomes social currency.',
+      aesthetic:
+        'Submarine-club decopunk where nautical pressure, elite secrecy, and amber light compress into sealed glamour.',
+      form_and_line:
+        'Porthole constellations, curved rail marks, fan ribs, pressure-hull arcs, and booth-like capsules.',
+      color_palette:
+        'Naval midnight, aged brass, ivory enamel, cigar brown, and faint sonar green.',
+      lighting_setup:
+        'Low sconces, focused table pools, brass porthole halos, and muted green instrument glows.',
+      material_texture:
+        'Polished teak, brass trim, leather seating, smoked glass, enamel navigation plaques, and condensation on portholes.',
+      render_quality:
+        'Intimate interior concept with rich material contrast and compressed social geography.',
+      spatial_distortion:
+        'Curved pressure-hull composition wraps the viewer with hidden pocket depth.',
+      atmosphere:
+        'Confidential luxury, engineered nostalgia, submerged paranoia, and old-money warmth.',
+      key_features:
+        'Brass ribbing, sonar mural rings, capsule pockets, nautical gauges, porthole mirrors, and hidden hatch seams.',
+      creative_brief:
+        'Preserve deco submarine-club grammar as a reusable style system: sealed porthole rhythm, teak-brass pressure intimacy, and confidential nautical luxury should remain coherent across subjects.',
     },
   },
   {
@@ -175,16 +240,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, rustic-farm, cyber-grunge, watermark, text, logo',
     style: {
-      aesthetic: 'Indoor urban garden merging luxury ecology and deco engineering.',
-      form_and_line: 'Geometric planters, vaulted glass, and stepped promenades.',
-      color_palette: 'Emerald, brass, and cream.',
-      lighting_setup: 'Filtered daylight and uplighted fountain nodes.',
-      material_texture: 'Brass lattice, marble, and humid glass panes.',
-      render_quality: 'High-fidelity lifestyle concept with botanical detail.',
-      spatial_distortion: 'Atrium depth with layered balcony rings.',
-      atmosphere: 'Refined calm and curated abundance.',
-      key_features: 'Geometric fountain, greenhouse balconies, and brass pergolas.',
-      creative_brief: 'A decopunk sanctuary where ecology is framed as metropolitan luxury.',
+      aesthetic:
+        'Botanical decopunk where nature is staged, polished, humid, and ruled by brass geometry.',
+      form_and_line:
+        'Geometric planter blocks, vaulted glass ribs, stepped terrace bands, balcony rings, and clipped leaf silhouettes.',
+      color_palette: 'Emerald, brass, cream, wet leaf black-green, and fountain white.',
+      lighting_setup:
+        'Filtered daylight, uplighted fountain nodes, humid sparkle on brass lattice, and soft green bounce from dense leaves.',
+      material_texture:
+        'Brass lattice, marble, humid glass panes, waxy leaves, polished fountain stone, and condensation beads.',
+      render_quality:
+        'High-fidelity lifestyle concept with botanical density constrained by clear deco structure.',
+      spatial_distortion:
+        'Atrium-like depth rises through balcony rings, fountain axes, clipped plant geometry, and greenhouse sightlines.',
+      atmosphere: 'Refined calm, curated abundance, luxury ecology, and controlled indoor weather.',
+      key_features:
+        'Geometric fountain motifs, brass pergola lines, greenhouse rings, clipped ornamental planting, and misting-nozzle patterns.',
+      creative_brief:
+        'Preserve brass garden-atrium grammar as a reusable style system: curated humid botany, geometric horticultural discipline, and brass-marble luxury ecology should remain coherent across subjects.',
     },
   },
   {
@@ -193,16 +266,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, gritty-cyber, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Elegant terminal for luxury airliners and diplomatic arrivals.',
-      form_and_line: 'Wing-like canopies, tower fins, and runway symmetry.',
-      color_palette: 'Sky gray, brass, and cream white.',
-      lighting_setup: 'Golden-hour runway glints and terminal sconces.',
-      material_texture: 'Riveted metal, polished stone, and enamel signs.',
-      render_quality: 'Expansive transport concept with period detail.',
-      spatial_distortion: 'Runway vanishing lines under monumental terminal.',
-      atmosphere: 'Prestige travel and geopolitical theater.',
-      key_features: 'Deco control tower, ceremonial ramps, and monogrammed lounges.',
-      creative_brief: 'A decopunk airport where mobility is staged as aristocratic performance.',
+      aesthetic:
+        'Decopunk flight ceremony where arrival becomes fins, monograms, and golden-hour authority.',
+      form_and_line:
+        'Wing-canopy sweeps, control-tower fins, runway-like symmetry, ceremonial diagonals, and streamlined window bands.',
+      color_palette: 'Sky gray, brass, cream white, leather brown, and lacquered insignia red.',
+      lighting_setup:
+        'Golden-hour runway glints, terminal sconces, aircraft-edge highlights, and long shadows from finned hangars.',
+      material_texture:
+        'Riveted metal, polished stone, enamel signs, leather luggage, brushed controls, and oiled tarmac sheen.',
+      render_quality:
+        'Expansive transport concept with period detail, arrival choreography, and clean diplomatic staging.',
+      spatial_distortion:
+        'Runway-like vanishing lines and diagonals turn arrival into a staged procession under monumental fins.',
+      atmosphere:
+        'Prestige travel, geopolitical theater, aristocratic mobility, and wind-polished anticipation.',
+      key_features:
+        'Deco control-fin motifs, ceremonial ramp marks, monogrammed bands, finned door shapes, and polished luggage-line rhythms.',
+      creative_brief:
+        'Preserve art deco airfield grammar as a reusable style system: streamlined arrival ceremony, fin-and-ramp prestige staging, and monogrammed aviation authority should remain coherent across subjects.',
     },
   },
   {
@@ -211,16 +293,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, cartoon, cyber-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Secretive ballroom used for encoded diplomacy and covert alliances.',
-      form_and_line: 'Faceted dance floor, mirrored pillars, and hidden balcony lanes.',
-      color_palette: 'Plum, gold, and onyx.',
-      lighting_setup: 'Crystal chandelier pools and low perimeter glow.',
-      material_texture: 'Velvet drapes, lacquer wood, and mirrored brass.',
-      render_quality: 'Dramatic interior concept with narrative tension.',
-      spatial_distortion: 'Spiral composition around central dance medallion.',
-      atmosphere: 'Glamour, paranoia, and coded social choreography.',
-      key_features: 'Cipher floor inlays, secret doors, and orchestra dais.',
-      creative_brief: 'A decopunk ballroom where every dance figure doubles as a message.',
+      aesthetic:
+        'Decopunk cipher glamour where dance patterns, mirrors, and parquet inlays act as social encryption.',
+      form_and_line:
+        'Faceted floor planes, mirrored pillar arrays, hidden balcony lanes, cipher spirals, and chandelier geometry like decoding wheels.',
+      color_palette:
+        'Plum, gold, onyx, mirror silver, and a thin line of blood-red wax seal color.',
+      lighting_setup:
+        'Crystal chandelier pools, low perimeter glow, fragmented reflections, and gold glints along cipher inlays.',
+      material_texture:
+        'Velvet drapes, lacquer wood, mirrored brass, polished parquet, engraved cipher metal, and wax-sealed invitations.',
+      render_quality:
+        'Dramatic interior concept with narrative tension, precise decorative hierarchy, and readable secret pathways.',
+      spatial_distortion:
+        'Spiral composition turns motion, balcony sightlines, and hidden seams into a coded circulation diagram.',
+      atmosphere: 'Glamour, paranoia, covert diplomacy, and choreography as encryption.',
+      key_features:
+        'Cipher inlays, concealed door seams, orchestra-dais arcs, mirrored surveillance angles, and wax-seal motifs.',
+      creative_brief:
+        'Preserve cipher ballroom-annex grammar as a reusable style system: mirrored social encryption, ornamental code choreography, and dangerous diplomatic elegance should remain coherent across subjects.',
     },
   },
   {
@@ -229,16 +320,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, minimalist, cyberpunk-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Monumental record tower preserving corporate-civic memory in style.',
-      form_and_line: 'Vertical fins, archive stacks, and geometric reading halls.',
-      color_palette: 'Brass gold, charcoal, and parchment beige.',
-      lighting_setup: 'Vertical slit lights and reading desk luminance.',
-      material_texture: 'Brass mesh, stone shelving, and leather-bound files.',
-      render_quality: 'Detailed institutional concept with precise hierarchy.',
-      spatial_distortion: 'Upward tower perspective emphasizing authority.',
-      atmosphere: 'Bureaucratic majesty and controlled permanence.',
-      key_features: 'Pneumatic file tubes, index rotunda, and clockwork elevators.',
-      creative_brief: 'A decopunk archive where data architecture is literal architecture.',
+      aesthetic:
+        'Bureaucratic decopunk monument where memory becomes vertical machinery, gold indexing, and controlled access.',
+      form_and_line:
+        'Vertical fin stacks, archive-grid shelves, reading-hall rings, pneumatic tube diagonals, and filing-spine shafts.',
+      color_palette:
+        'Brass gold, charcoal, parchment beige, dust brown, and red index-tab accents.',
+      lighting_setup:
+        'Vertical slit lights, desk luminance, brass-mesh glints, and warm shafts inside catalog towers.',
+      material_texture:
+        'Brass mesh, stone shelving, leather files, parchment labels, clockwork lift rails, and dusty glass catalog drawers.',
+      render_quality:
+        'Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.',
+      spatial_distortion:
+        'Upward vertical perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.',
+      atmosphere:
+        'Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.',
+      key_features:
+        'Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.',
+      creative_brief:
+        'Preserve goldline archives-tower grammar as a reusable style system: vertical filing monumentality, indexed access control, and brass bureaucratic machinery should remain coherent across subjects.',
     },
   },
   {
@@ -247,16 +348,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, comedic, cyberpunk-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Judicial plaza where formal power is mirrored in rigid geometry.',
-      form_and_line: 'Symmetric courts, reflective walls, and stepped forecourts.',
-      color_palette: 'Stone white, brass, and deep teal.',
-      lighting_setup: 'Midday glare with shadow grids from colonnades.',
-      material_texture: 'Polished stone, mirrored steel, and engraved brass plates.',
-      render_quality: 'High-clarity urban concept with strong focal order.',
-      spatial_distortion: 'Axis-based perspective terminating at tribunal doors.',
-      atmosphere: 'Authority, scrutiny, and polished intimidation.',
-      key_features: 'Mirror colonnades, legal obelisks, and ceremonial stairs.',
-      creative_brief: 'A decopunk legal square designed to make power feel inevitable.',
+      aesthetic:
+        'Judicial decopunk where symmetry acts like surveillance and polished reflection makes judgment feel already decided.',
+      form_and_line:
+        'Symmetric court axes, mirror-wall planes, stepped forecourt logic, legal obelisk alignments, and tribunal chevrons.',
+      color_palette: 'Stone white, brass, deep teal, mirror silver, and black shadow lines.',
+      lighting_setup:
+        'Midday glare, colonnade shadow grids, hard mirror reflections, and brass plate highlights at eye level.',
+      material_texture:
+        'Polished stone, mirrored steel, engraved brass, teal enamel seals, crisp stair edges, and cold door glass.',
+      render_quality:
+        'High-clarity urban concept with severe focal order and institutional sharpness.',
+      spatial_distortion:
+        'Axis perspective terminates at formal thresholds while mirror planes duplicate scrutiny on both sides.',
+      atmosphere: 'Authority, scrutiny, polished intimidation, and ceremonial inevitability.',
+      key_features:
+        'Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stair motifs, and engraved verdict plates.',
+      creative_brief:
+        'Preserve mirrorline court-plaza grammar as a reusable style system: severe judicial symmetry, reflective scrutiny pressure, and polished civic intimidation should remain coherent across subjects.',
     },
   },
   {
@@ -265,16 +374,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Corepunk — Decopunk',
     negativePrompt: 'photoreal, medieval, cyber-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Astronomical institute wrapped in art-deco precision and civic pride.',
-      form_and_line: 'Stepped dome base, radial instrument galleries, and finned towers.',
-      color_palette: 'Midnight navy, brass, and ivory.',
-      lighting_setup: 'Night sky contrast with subtle observatory perimeter glow.',
-      material_texture: 'Polished brass mechanisms, stone decks, and frosted glass.',
-      render_quality: 'Elegant scientific concept with balanced detail density.',
-      spatial_distortion: 'Dome-up perspective emphasizing celestial alignment.',
-      atmosphere: 'Intellectual grandeur and cosmic ambition.',
-      key_features: 'Rotating dome slit, star chart hall, and brass telescope arrays.',
-      creative_brief: 'A decopunk observatory where science is framed as urban pageantry.',
+      aesthetic:
+        'Celestial decopunk where astronomy becomes civic pageantry, brass mechanism, and disciplined night.',
+      form_and_line:
+        'Stepped dome bases, radial instrument galleries, finned crowns, telescope axes, and star-chart fan geometries.',
+      color_palette:
+        'Midnight navy, polished brass, ivory stone, frosted glass blue, and tiny constellation white.',
+      lighting_setup:
+        'Night-sky contrast, subtle perimeter glow, brass ring highlights, and controlled star-chart illumination.',
+      material_texture:
+        'Polished brass mechanisms, stone decks, frosted glass, enamel star charts, dark seams, and oiled gear teeth.',
+      render_quality:
+        'Elegant scientific concept with balanced detail density, clear instruments, and ceremonial skyline presence.',
+      spatial_distortion:
+        'Dome-up perspective aligns stepped ascent, instrument axes, and celestial geometry into civic ambition.',
+      atmosphere:
+        'Intellectual grandeur, cosmic ambition, disciplined darkness, and public wonder.',
+      key_features:
+        'Rotating dome slits, brass telescope arrays, star-chart bands, finned observation motifs, and constellation inlays.',
+      creative_brief:
+        'Preserve zenith deco-observatory grammar as a reusable style system: celestial brass instrumentation, ceremonial scientific pageantry, and controlled midnight precision should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

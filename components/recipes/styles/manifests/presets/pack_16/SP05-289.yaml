@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-289
 packId: pack_16
-name: Angel's Egg - Cathedral Water Ruin Silence
+name: Ascetic Gothic Silence Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Alegoría gótica de silencio apocalíptico, con monumentalidad sacra vaciada y simbolismo ambiguo de contemplación extrema.
-  form_and_line: Línea fina y ascética, figuras alargadas casi litúrgicas y contornos de ruina monumental con ritmo arquitectónico severo.
+  aesthetic: Alegoría gótica de silencio apocalíptico, monumentalidad vaciada y simbolismo ambiguo de contemplación extrema.
+  form_and_line: Línea fina y ascética, proporciones alargadas, ritmo severo y espacios negativos tratados como materia espiritual.
   color_palette: Azul petróleo profundo, grises de piedra mojada, marfiles apagados y negros acuosos de profundidad incierta.
   lighting_setup: Iluminación baja y difusa con reflejos acuáticos fríos, focos puntuales de vidriera rota y sombras de gran masa.
   material_texture: Piedra erosionada, superficies inundadas espejadas, madera antigua saturada y pátina ritual de abandono.
   render_quality: Acabado premium de contemplación lenta, detalle textural sobrio y jerarquía simbólica por vacío compositivo.
-  spatial_distortion: Escala catedralicia sobredimensionada con perspectiva reverencial que reduce lo humano a signo frágil.
+  spatial_distortion: Escala reverencial sobredimensionada con perspectiva contemplativa que reduce lo humano a signo frágil.
   atmosphere: Sacra, muda, onírica, doliente.
-  key_features: Ruina monumental inundada, símbolo ovoide ambiguo, siluetas elongadas y composición devocional de vacío.
-  creative_brief: Diseña un lenguaje reusable de misticismo en ruina donde cualquier sujeto quede absorbido por silencio arquitectónico, agua oscura y simbología no resuelta.
+  key_features: Vacío devocional, agua oscura sugerida, símbolos no resueltos, siluetas elongadas y quietud extrema.
+  creative_brief: >-
+    Diseña un lenguaje reusable de misticismo ascético para cualquier prompt o imagen de entrada:
+    silencio, vacío y símbolo ambiguo sin imponer catedrales, ruinas inundadas, huevos ni figuras litúrgicas concretas.
 
 avoidRules:
   - realistic

@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Shy-school-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional revelation
-  form_and_line: Fine soft contouring, blush-reactive facial micro-acting, cautious body-language spacing, and clean school-uniform silhouette readability
-  color_palette: Light classroom creams, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle saturation
-  lighting_setup: Clear daytime window key, soft corridor bounce, minimal dramatic contrast, and subtle bloom to support fragile emotional beats
-  material_texture: Crisp school-fabric textures, paper-and-desk prop simplicity, and airy low-noise backgrounds that keep focus on expression
+  aesthetic: Shy-romance shojo language with social-anxiety thaw, daylight sincerity, and small-gesture emotional revelation
+  form_and_line: Fine soft contouring, blush-reactive micro-acting, cautious spacing, and clean silhouette readability
+  color_palette: Light cream fields, tender pink blush accents, pale sky blues, and warm daylight neutrals with gentle saturation
+  lighting_setup: Clear daytime window key, soft bounce, minimal dramatic contrast, and subtle bloom to support fragile emotional beats
+  material_texture: Crisp textile softness, paper-matte simplicity, and airy low-noise backgrounds that keep focus on expression and distance
   render_quality: Gentle high-clarity romance render with sincerity-first readability, subtle emotional gradients, and unforced softness
-  spatial_distortion: Natural hallway/classroom framing with mild romantic stylization and respectful interpersonal distance cues
+  spatial_distortion: Respectful proximity framing with mild romantic stylization and interpersonal distance cues
   atmosphere: Shy, bright, hopeful, soft
-  key_features: Hallway proximity, blush-heavy face acting, classroom sunlight, friendship-circle warmth, delicate confession framing
+  key_features: Near-but-not-touching proximity, blush-heavy acting, daylight warmth, friendship-circle softness, delicate confession framing
   creative_brief: >-
     Preserve shy-hallway-bloom grammar as a reusable style system:
-    daylight-soft school framing, blush-led micro-expression acting, and
+    daylight-soft proximity framing, blush-led micro-expression acting, and
     sincerity-over-spectacle romance pacing should remain consistent across
     subjects.
 avoidRules:

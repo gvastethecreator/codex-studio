@@ -18,13 +18,13 @@ visualDna:
   lighting_setup: Spotlight conceptual duro, estallidos rojo-alarma y glare de material no finalizado.
   material_texture: Smudge de grafito, grano de fotocopia, pliegues de papel, bleed de marcador y líneas borradas de construcción.
   render_quality: Sketch-frame de emergencia con lectura táctica alta y energía preproducción apocalíptica.
-  spatial_distortion: Storyboard panel shifts, missile-angle perspective, rough dramatic framing, note-margin compression
+  spatial_distortion: Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin compression
   atmosphere: Urgente, ansiosa y esquelética, al borde de colapso planificado.
   key_features: Paneles de storyboard, flechas de emergencia, notación técnica, ansiedad monocroma y framing explosivo.
   creative_brief: >-
     Define una gramática emergency-board reusable donde trazo incompleto,
-    anotación visible y tensión de preproducción se conviertan en identidad,
-    priorizando intención sobre acabado pulido.
+    anotación visible y tensión de preproducción se conviertan en identidad sin
+    exigir misil, desastre, mecha, cabina o panel narrativo específico.
 avoidRules:
   - still
   - calm

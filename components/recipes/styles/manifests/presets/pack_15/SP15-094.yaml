@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Public arcade driven by oversized timewheel mechanics.
-  form_and_line: Wheel arches, arcade portals, and dial kiosks.
+  aesthetic: Public clockpunk spectacle driven by oversized timewheel mechanics.
+  form_and_line: Wheel arches, arcade-portal repeats, dial-kiosk shapes, and carnival gear loops.
   color_palette: Copper, cream, and forest green.
   lighting_setup: Warm arcade lights and reflected dial faces.
   material_texture: Enamel plates, brass, and varnished timber.
   render_quality: Playful yet refined concept art.
-  spatial_distortion: Rotational composition around the giant wheel.
+  spatial_distortion: Rotational composition around giant wheel logic.
   atmosphere: Social motion and measured delight.
-  key_features: Timewheel rides, ticket counters, and gear carnival stalls.
+  key_features: Timewheel motifs, ticket-counter blocks, gear carnival shapes, and brass spoke halos.
   creative_brief: >-
     Preserve timewheel arcade grammar as a reusable style system:
     rotational public amusement engineering, dial-and-ticket ritual rhythm,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-094.webp }
 attributes:
   negativePrompt: photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-clockpunk,
+    categoryName: 2. Corepunk — Clockpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

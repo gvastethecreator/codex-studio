@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-015
 packId: pack_16
-name: Philosophical Cyber Ops
+name: Philosophical Cyber-Ops Vertigo Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Dense cybernetic cities, tactical squads, philosophical tech-noir mood, tachikoma robots, network visualizations, government intrigue, hyper-connectivity
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
+  aesthetic: Cerebral cyber-ops noir with tactical precision, hyperconnected paranoia, and philosophical machine-age vertigo.
+  form_and_line: Crisp 90s anime linework, technical contour discipline, modular blocking, interface-like overlays, and measured motion cuts.
+  color_palette: Cold cyan, signal green, gunmetal blue, pale skin light, amber warning accents, and dense charcoal shadows.
+  lighting_setup: Hard cel contrast mixed with monitor glow, scanning rim highlights, data-layer bloom, and sterile institutional key light.
+  material_texture: Painted environmental grain, glass reflections, matte tactical fabric, brushed alloy, CRT noise, and cel overlay texture.
+  render_quality: Golden-era cyber anime frame polish with sharp cel definition, clean tech readability, and moody color discipline.
+  spatial_distortion: Layered grid depth, surveillance-angle cropping, neural-network overlays, and compressed tactical sightlines.
   atmosphere: Thoughtful, moody, paranoid, cerebral
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Tachikoma shells gleam with childlike curiosity against labyrinths of government intrigue and hyper-connected city grids that pulse like a neural network questioning its own sentience. Every frame balances tactical precision with philosophical vertigo, the crisp 90s line work drawing clean boundaries around ideas that refuse to stay contained.
+  key_features: Interface ghosts, tactical stillness, network-grid depth, reflective tech surfaces, and human doubt inside clean geometry.
+  creative_brief: >-
+    Build a reusable philosophical-cyber-ops vertigo grammar for any subject or
+    input image: tactical clarity, network paranoia, glass-and-metal
+    reflection, cerebral noir, and 90s cel tech precision without imposing
+    cities, squads, robots, government intrigue, grids, or specific ops scenes.
 avoidRules:
   - realistic
   - 3d render

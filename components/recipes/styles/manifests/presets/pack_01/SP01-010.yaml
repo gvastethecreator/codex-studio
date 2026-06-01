@@ -13,14 +13,17 @@ tags:
   - lighting-techniques
 visualDna:
   aesthetic: Low key moody portraiture, dark and dramatic photography
-  subject_treatment: Features partially hidden in deep shadow, strong emphasis on form and shape
+  subject_treatment: Primary details partially hidden in deep shadow, strong emphasis on form and shape
   color_and_tone: Deep blacks, rich dark tones, minimal color saturation, pure black background
   lighting_and_shadow: Single source rim light or side light, harsh shadows, high contrast chiaroscuro
-  texture_and_material: Shadow noise, highlighted textures on the lit side of the subject
+  texture_and_material: Shadow noise, highlighted textures on the lit edge of the subject
   camera_and_composition: Obscured features, tight framing, focus on the interplay of light and dark
   atmosphere_and_mood: Mysterious, intense, serious, cinematic, brooding
   rendering_and_quality: Dramatic fine art photography, deep rich blacks, high resolution
-  creative_brief: Darkness is not absence but presence—a living texture that swallows and reveals in equal measure. The subject emerges from shadow like a secret half-told, their form carved by a single, decisive light source. Every illuminated edge becomes a statement, every shadow a pause in an unfinished narrative. The image breathes with the tension between concealment and revelation.
+  creative_brief: >-
+    Apply low-key portrait lighting to any subject: deep black field, single
+    decisive rim or side light, carved edge texture, and conceal/reveal tension
+    without requiring a human face.
 avoidRules:
   - bright
   - white

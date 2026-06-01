@@ -12,15 +12,18 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Artistic double exposure photography, portrait blended seamlessly with nature or cityscapes
-  subject_treatment: Ghostly overlay of forms, subject's silhouette filled with secondary imagery
+  aesthetic: Artistic double exposure photography, primary form blended seamlessly with secondary imagery
+  subject_treatment: Ghostly overlay of forms, silhouette or shape filled with secondary exposure texture
   color_and_tone: Dreamy and mixed color palette, ethereal tones, low contrast blending
   lighting_and_shadow: High key lighting base, complex overlapping shadows and highlights
-  texture_and_material: Multiple exposure textures, blending of skin and environmental textures (e.g., trees, buildings)
+  texture_and_material: Multiple exposure textures, blended surface and environmental pattern layers
   camera_and_composition: Surreal blending of two distinct perspectives, creative masking
   atmosphere_and_mood: Dreamy, conceptual, surreal, poetic, melancholic
   rendering_and_quality: Fine art photography, seamless blending, highly detailed
-  creative_brief: One world bleeding through another, a forest growing inside a profile, city towers rising from the architecture of a jawline, the boundary between interior and exterior dissolved into a single luminous membrane. Memory and matter occupy the same ghostly register, the mind's landscape rendered visible across skin and bone. Consciousness made transparent, two perspectives fused into a poetic confession where what lies within finally surfaces.
+  creative_brief: >-
+    Apply double-exposure portrait logic to any subject: ghosted silhouette,
+    secondary imagery inside the primary form, high-key overlap, soft masking,
+    and poetic transparency without requiring forest, city, face, or body.
 avoidRules:
   - illustration
   - painting

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-119
 packId: pack_06
-name: Cozy Farm Sim Seasonal Pack
+name: Cozy Sim Seasonal Palette
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,28 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand-crafted charm.
+  subject_treatment: Make any subject feel small, friendly, useful, and collectible through rounded forms and soft edge priorities.
+  color_and_tone: Four-season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low-stress contrast.
+  lighting_and_shadow: Soft ambient daylight, tiny contact shadows, seasonal color washes, and almost no harsh drama.
+  texture_and_material: Gentle pixel grain, quilt-like pattern accents, soft organic noise, and tactile handmade detail.
+  camera_and_composition: Isometric or icon-atlas framing with tidy spacing, cozy negative space, and clear modular grouping.
+  atmosphere_and_mood: Calm, domestic, nurturing mood without requiring farms, crops, animals, houses, or seasonal scenery.
+  rendering_and_quality: Clean cozy-game polish, crisp but soft-edged pixels, no visual clutter, no readable labels.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - farm requirement
+  - crop requirement
+  - animal requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-119.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, farm requirement, crop requirement, animal requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +51,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-073
 packId: pack_16
-name: Howl's Moving Castle – Ghibli Wandering Clockwork Castle
+name: Wandering Clockwork Hearth Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía steampunk romántica de fortaleza errante, con ingeniería encantada y ternura doméstica itinerante.
+  aesthetic: Fantasía steampunk romántica, ingeniería encantada y ternura doméstica itinerante.
   form_and_line: Línea fluida de cuento adulto, gesto elegante y diseño mecánico-mágico de alta legibilidad.
   color_palette: Cobre envejecido, crema cálido, turquesa de cielo abierto y rojos de hogar encendido.
-  lighting_setup: Contraste suave de interior caldera y exterior ventoso, con glow de fuego vivo y sol de pradera.
-  material_texture: Latón remachado, yeso doméstico, textiles usados y fondos pintados con pátina artesanal.
+  lighting_setup: Contraste suave entre calor íntimo y exterior ventoso, con glow ígneo y sol pastoral.
+  material_texture: Latón remachado, yeso vivido, textiles usados y fondos pintados con pátina artesanal.
   render_quality: Acabado fílmico premium que combina grandiosidad móvil y proximidad emocional íntima.
-  spatial_distortion: Macro-silueta de castillo caminante y micro-espacios habitados para dualidad épica-hogar.
+  spatial_distortion: Macro-silueta móvil y micro-espacios habitados para dualidad épica-hogar.
   atmosphere: Encantada, nómada, romántica, caprichosa.
-  key_features: Mecánica poética visible, núcleo ígneo carismático y tensión entre guerra exterior y refugio interior.
-  creative_brief: Construye una gramática reusable de steampunk afectivo errante para cualquier sujeto, equilibrando escala fantástica, artesanía mecánica y calor de pertenencia.
+  key_features: Mecánica poética visible, núcleo ígneo carismático y tensión entre amenaza exterior y refugio interior.
+  creative_brief: Construye una gramática reusable de steampunk afectivo errante para cualquier sujeto, equilibrando escala fantástica, artesanía mecánica y calor de pertenencia sin imponer castillos, hogares, calderas ni praderas literales.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Lo-fi rhythm-action style blending sword kinetics with streetwise groove, improvised cool, and beat-synced visual pacing
-  form_and_line: Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked pose transitions, and improvised gesture cadence
+  aesthetic: Lo-fi rhythm-action style blending cutting kinetics with streetwise groove, improvised cool, and beat-synced visual pacing
+  form_and_line: Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked transitions, and improvised gesture cadence
   color_palette: Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon pulse notes
   lighting_setup: Low-sun directional wash, rhythmic shadow slicing, warm haze overlays, and beat-accent highlight pops
   material_texture: Film-grain and scratch patina, matte cel surfaces, slight urban grit overlays, and analog-mix visual warmth
   render_quality: Early-digital anime polish with lo-fi texture seasoning and rhythm-first action readability
   spatial_distortion: Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth
   atmosphere: Cool, laid-back, kinetic, improvisational, stylish
-  key_features: Rhythm-cut action grammar, lo-fi texture stack, swagger-forward posing, street-meets-sword visual cadence
+  key_features: Rhythm-cut action grammar, lo-fi texture stack, swagger-forward motion, analog groove visual cadence
   creative_brief: >-
     Define this preset by rhythm-synced action language and lo-fi swagger:
-    sword motion should feel musically improvised, with texture and pacing as
-    the transferable identity rather than a specific historical road scene.
+    motion should feel musically improvised, with texture and pacing as the
+    transferable identity rather than a literal action-travel setup.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: 90s OVA-inspired retro-mecha language blending analog broadcast nostalgia, angular industrial heroism, and cel-era cinematic staging
-  form_and_line: Sharp mechanical contouring, segmented armor panel logic, cockpit-forward readability, and robust silhouette framing for era-authentic mecha presence
+  aesthetic: 90s OVA-inspired retro-machine language blending analog broadcast nostalgia, angular industrial heroism, and cel-era cinematic staging
+  form_and_line: Sharp mechanical contouring, segmented panel logic, enclosed focal framing, and robust silhouette framing for era-authentic machine presence
   color_palette: Petrol blue base, signal red accents, warm off-white highlights, graphite metal neutrals, and subtle CRT-era chroma bias
-  lighting_setup: Hard hangar directional keys, analog lens-flare streaks, practical warning-light accents, and constrained shadow blocks echoing cel-era compositing
+  lighting_setup: Hard industrial directional keys, analog lens-flare streaks, practical warning-light accents, and constrained shadow blocks echoing cel-era compositing
   material_texture: VHS grain overlays, mild horizontal scanline artifacts, painted cel-surface feel, worn industrial metal edges, and lightly noisy analog gradation
   render_quality: High-fidelity retro-anime frame quality with period-authentic artifact simulation and modern readability control
-  spatial_distortion: Heroic telephoto-compressed action staging with strong foreground mecha dominance and layered support-depth cues
+  spatial_distortion: Heroic telephoto-compressed action staging with strong machine-form dominance and layered support-depth cues
   atmosphere: Nostalgic, mechanical, dramatic, and mission-ready
-  key_features: OVA-era mecha silhouette authority, analog artifact signature, maintenance-crew scale contrast, and hard-lit hangar launch context
+  key_features: OVA-era mechanical silhouette authority, analog artifact signature, scale contrast, and hard-lit industrial context
   creative_brief: >-
-    Preserve retro-mecha VHS grammar as a reusable style system: angular
-    cel-era machine design, analog signal artifacts, and hard industrial
-    lighting drama should remain consistent across subjects.
+    Use Retro Mecha VHS Grain as style anchor for analog industrial drama:
+    angular cel-era machine design, signal artifacts, and hard directional
+    lighting should transfer without requiring a mecha, cockpit, hangar,
+    crew-scale marker, or launch context.
 avoidRules:
   - photoreal
   - ultra-clean-digital

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-070
 packId: pack_06
-name: Vision Board
+name: Pinned Planning Board
 category: 5. Mixed Media
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Corkboard with pins
+  aesthetic: Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional composition
   form_and_line: Pins, string
   color_palette: Varied
   lighting_setup: Room light
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Hopeful, messy
   key_features: Pinned items
-  creative_brief: Cork accepts the pin with a soft crunch, each punctured image a wish made physical on a board of intentions. String connects the connected, red yarn mapping relationships between clippings like a conspiracy theorist's dream board. The arrangement grows organically, a garden of aspiration pinned to vertical space.
+  creative_brief: Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or readable goals.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - conspiracy board
+  - readable goals
+  - clipping requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-070.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, conspiracy board, readable goals, clipping requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-372
 packId: pack_16
-name: Revue Starlight - Stage Duel Spotlights
+name: Allegorical Spotlight Confrontation Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Stage-duel performativo alegórico, centrado en rivalidad escénica y combate coreografiado de alto simbolismo.
-  form_and_line: Poses teatrales de confrontación, silueta de espada-escena y transición dramática entre niveles de set.
+  aesthetic: Confrontación performativa alegórica, rivalidad escénica abstracta y coreografía de alto simbolismo.
+  form_and_line: Poses teatrales de confrontación, siluetas rituales y transición dramática entre niveles visuales.
   color_palette: Carmín escénico, azul zafiro nocturno, dorado de gala y negros de fondo operático.
-  lighting_setup: Cruce de spotlights con backlight teatral y sombras recortadas de escalinata.
-  material_texture: Terciopelo de vestuario, madera pintada de escenografía, metal utilería y humo de escena controlado.
-  render_quality: Frame performativo de alto impacto con legibilidad de duelo, símbolo y jerarquía dramática.
-  spatial_distortion: Arquitectura axial de teatro con capas de escalera y profundidad alegórica en fuga vertical.
+  lighting_setup: Cruce de spotlights con backlight teatral y sombras recortadas en capas verticales.
+  material_texture: Terciopelo abstracto, superficie pintada, metal utilitario y humo controlado.
+  render_quality: Frame performativo de alto impacto con legibilidad de símbolo, tensión y jerarquía dramática.
+  spatial_distortion: Arquitectura axial abstracta con capas verticales y profundidad alegórica en fuga vertical.
   atmosphere: Teatral, competitiva, simbólica y espectacularmente luminosa.
-  key_features: Hazes de spotlight cruzado, poses de duelo, set de escalera y pageantry de vestuario.
+  key_features: Hazes de spotlight cruzado, poses de confrontación abstracta, capas verticales y pageantry ornamental.
   creative_brief: >-
-    Construye una gramática reusable de revue-stage-duel donde alegoría,
-    coreografía de confrontación y arquitectura teatral sostengan una identidad
-    visual transferible sin escena fija.
+    Construye una gramática reusable de allegorical-spotlight-confrontation donde
+    alegoría, coreografía de confrontación y arquitectura axial sostengan una
+    identidad visual transferible sin imponer escenario, escaleras, espadas,
+    teatro ni combate literal.
 avoidRules:
   - realistic
   - 3d render

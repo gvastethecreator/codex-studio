@@ -12,34 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el encuadre urbano.
+  aesthetic: Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el encuadre.
   form_and_line: Contorno medido, detalle facial naturalista y marcas expresivas mínimas de alta intención dramática.
   color_palette: Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent
-  lighting_setup: Fluorescencia de oficina, ventana lluviosa y sombras prácticas tipo interrogatorio en baja saturación.
-  material_texture: Tejido de traje, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.
+  lighting_setup: Fluorescencia práctica, luz lluviosa y sombras tipo interrogatorio en baja saturación.
+  material_texture: Tejido sobrio, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.
   render_quality: Dramaturgia de close-up sobrio con legibilidad psicológica y tensión procedural sostenida.
-  spatial_distortion: Natural adult proportions, camera-close tension framing, realistic perspective, stillness-driven composition
+  spatial_distortion: Natural adult proportions, camera-close tension framing, realistic perspective, and stillness-driven composition
   atmosphere: Tensa, humana y terrenal, con inquietud ética persistente.
-  key_features: Sutileza facial adulta, fondos urbanos de procedimiento, close-ups bajo presión y suspense por casi inmovilidad.
+  key_features: Sutileza facial adulta, fondos procedurales, close-ups bajo presión y suspense por casi inmovilidad.
   creative_brief: >-
-    Construye una gramática reusable de adult-suspense donde el conflicto viva
-    en microgesto, espacio cotidiano y carga moral implícita. Debe evitar
-    espectacularidad y sostener tensión por observación.
+    Construye una gramática reusable de adult-suspense donde conflicto viva en
+    microgesto, espacio cotidiano y carga moral implícita, sin exigir oficina,
+    expediente, humo, ciudad, detective o close-up humano.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - action spectacle
+  - bright comedy palette
+  - cute chibi design
+  - glossy fantasy armor
+  - neon cyberpunk glow
+  - melodramatic speed lines
+  - plastic 3d render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-339.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

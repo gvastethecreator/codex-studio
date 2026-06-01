@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-310
 packId: pack_16
-name: Crusher Joe - Orange Suit Space Pulp
+name: Competent Space Pulp Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -13,15 +13,17 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: Pulp espacial profesionalista, con ética de oficio, aventura resolutiva y optimismo técnico ochentero.
-  form_and_line: Contorno robusto de uniforme técnico, acting de equipo competente y staging funcional orientado a misión-rescate.
-  color_palette: Naranjas de traje piloto, azules de hangar, grises industriales y blancos de señal operativa.
-  lighting_setup: Iluminación de bahía de mantenimiento con key frontal claro, sombras planas técnicas y acentos de baliza.
-  material_texture: Metal de hangar, paneles de servicio, tejido técnico de vuelo y desgaste mecánico de uso intensivo.
-  render_quality: Acabado premium retro-pulp con foco en claridad de procedimientos, jerarquía de equipo y acción resolutiva.
-  spatial_distortion: Hangar de gran volumen con líneas de rampa y boca de nave para enfatizar flujo operativo.
+  form_and_line: Contorno robusto de diseño técnico, acting competente y staging funcional orientado a resolución práctica.
+  color_palette: Naranjas operativos, azules técnicos, grises industriales y blancos de señal funcional.
+  lighting_setup: Iluminación de mantenimiento con key frontal claro, sombras planas técnicas y acentos de baliza.
+  material_texture: Metal usado, paneles de servicio, tejido técnico y desgaste mecánico de uso intensivo.
+  render_quality: Acabado premium retro-pulp con foco en claridad procedimental, jerarquía funcional y acción resolutiva.
+  spatial_distortion: Gran volumen operativo con líneas guía y flujo direccional para enfatizar competencia técnica.
   atmosphere: Pulp, aventurera, competente, luminosa.
-  key_features: Traje naranja icónico, hangar operativo, tripulación de oficio y composición de rescate profesional.
-  creative_brief: Crea una gramática reusable de aventura espacial de equipo técnico para cualquier sujeto, priorizando claridad procedimental, color-identidad de uniforme y heroísmo de trabajo competente.
+  key_features: Color-identidad fuerte, claridad procedimental, hardware funcional sugerido, oficio competente y aventura directa.
+  creative_brief: >-
+    Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada:
+    oficio, claridad técnica y heroísmo práctico sin imponer trajes, hangares, tripulaciones ni rescates.
 avoidRules:
   - realistic
   - 3d render

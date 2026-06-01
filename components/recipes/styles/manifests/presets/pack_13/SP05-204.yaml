@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame
-  form_and_line: Flowing canal-curve composition lines, delicate gondola profile contours, and serene conversational pose language
+  aesthetic: Healing reverie anime language with watercolor reflection softness, slow kindness, beautiful emptiness, and drift through every frame
+  form_and_line: Flowing curve composition lines, delicate profile contours, and serene conversational pose language
   color_palette: Aqua canals, sun-bleached stucco creams, seafoam greens, soft terracotta accents, and pearl daylight haze
-  lighting_setup: High-key maritime diffusion, water-bounce highlights, and slow golden-hour wash across facades
-  material_texture: Rippled water reflections, weathered plaster walls, varnished wood gondola surfaces, linen uniforms, and stone bridge wear
+  lighting_setup: High-key maritime diffusion, water-bounce highlights, and slow golden-hour wash across pale surfaces
+  material_texture: Rippled reflection softness, weathered plaster, varnished wood warmth, linen texture, and worn stone cues
   render_quality: Healing-aqua rendering with meditative pacing, airy depth, and watercolor-soft tonal transitions
-  spatial_distortion: Gentle reflection warping and canal-depth drift for floating calm
+  spatial_distortion: Gentle reflection warping and depth drift for floating calm
   atmosphere: Healing, airy, serene, luminous
-  key_features: Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas
+  key_features: Aqua reflections, drifting silhouettes, water-breeze softness, empty-space kindness, and peaceful panoramic breathing room
   creative_brief: >-
-    Preserve canal-breeze healing grammar as a reusable style language:
-    water-reflection softness, serene maritime architecture, and conversational
-    emotional pacing should remain stable across subjects.
+    Use the title as a style anchor for canal-breeze healing. Preserve
+    reflection softness, airy kindness, and slow conversational pacing without
+    requiring canals, gondolas, uniforms, or city panoramas.
 avoidRules:
   - realistic
   - 3d render

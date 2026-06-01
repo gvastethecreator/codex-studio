@@ -18,10 +18,10 @@ visualDna:
   lighting_setup: Painted light, brush-rendered glow, canvas-luminosity
   material_texture: Thick impasto, palette-knife ridges, bristle strokes, layered scumble
   render_quality: Masterpiece, moving art, frame-by-frame painting, gallery-grade
-  spatial_distortion: Swirling, van Gogh sky, brush current, paint-flow drift
+  spatial_distortion: Swirling brush current, paint-flow drift, animated impasto displacement
   atmosphere: Artistic, emotional, painterly devotion, melancholic beauty
   key_features: Brush direction, visible stroke, canvas weave, palette texture
-  creative_brief: Canvas breathes as each brushstroke lands heavier than the last, ridges of paint catching light like frozen waves in a violet sea. Sky churns in spirals borrowed from restless sleep while wheat fields bow under the pressure of pure color. A single frame took a week to build — and you can feel every hour still alive in the texture.
+  creative_brief: 'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical scene quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes.'
 avoidRules:
   - digital
   - sharp

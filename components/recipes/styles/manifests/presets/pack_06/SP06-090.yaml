@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Three-dimensional pixel blocks, voxel-art characters, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel world, Minecraft-meets-sprite-sheet, colorful block-built characters, isometric cube-grid construction, toy-block 3D pixel art
+  aesthetic: Three-dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel construction, Minecraft and sprite-sheet logic as block anchors, isometric cube-grid composition, toy-block 3D pixel art
   form_and_line: Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries, straight-angle everything
   color_palette: Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular color scheme
   lighting_setup: Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs, directional sun on block-grid
   material_texture: Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material, grid-seam texture
   render_quality: Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering
   spatial_distortion: Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape limitation
-  atmosphere: Playful, constructive, toy-block creativity, digital-Lego spirit, colorful-three-dimensional-pixel joy
+  atmosphere: Playful, constructive, modular, toy-block creative, colorful-three-dimensional-pixel joy
   key_features: Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, per-cube flat coloring
-  creative_brief: The world measured in cubes, curves approximated by stepping blocks, the smooth world rejected in favor of the constructible. Every cube face catches light at a different angle, ambient occlusion darkening the joints where blocks meet, giving mass to the modular. The image is a toy that became a universe, LEGO brick logic scaled to infinity.
+  creative_brief: Any prompt is rebuilt from cubes. Curves become stepped approximations, surfaces become stacked modules, and ambient occlusion in block seams gives mass to a style that values constructible form over smooth illusion.
 avoidRules:
   - smooth
   - organic
@@ -50,4 +50,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

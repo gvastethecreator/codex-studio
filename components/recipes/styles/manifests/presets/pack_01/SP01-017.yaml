@@ -13,15 +13,15 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Toy camera film
-  form_and_line: Blurry edges
+  form_and_line: Soft warped edges
   color_palette: Cross-processed, saturated
   lighting_setup: Vignette
   material_texture: Light leaks
-  render_quality: Lo-fi, experimental
+  render_quality: Lo-fi analog experiment
   spatial_distortion: Heavy vignette
   atmosphere: Fun, unpredictable
   key_features: Tunnel vision
-  creative_brief: A plastic eye drunk on stray photons, letting color run where it shouldn't and shadow pool at the perimeter like spilled ink. The frame circles inward toward whatever caught the light's attention, unconcerned with sharpness or dignity. Joy over precision, serendipity over control.
+  creative_brief: 'A plastic lens drunk on stray photons: cross-processed saturation, light leaks, smeared corners, heavy vignette, and color running where precision would normally hold it back. Turn any subject into a lo-fi analog accident, playful without requiring a specific place or event.'
 avoidRules:
   - illustration
   - painting
@@ -30,8 +30,6 @@ avoidRules:
   - cartoon
   - anime
   - sketch
-  - blurry
-  - noisy
   - low resolution
   - watermark
   - text
@@ -41,7 +39,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-017.webp
 attributes:
-  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

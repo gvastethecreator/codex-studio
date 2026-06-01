@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Exaggerated political caricature, oversized jowls and fists, tiny bodies under giant scowling heads, newspaper editorial venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty
+  aesthetic: Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty
   form_and_line: Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch
   color_palette: Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow
   lighting_setup: Harsh side-light carving shadows into exaggerated features, unflattering key
   material_texture: Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts
   render_quality: Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement
-  spatial_distortion: Giant heads atop tiny suited bodies, fists expanded to melon size, jowls dragging to collarbone
+  spatial_distortion: Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion
   atmosphere: Biting, cynical, merciless observation, righteous mockery
-  key_features: Pointed political symbols, exaggerated real-world traits, crosshatched fury, text balloon with cutting caption
-  creative_brief: The pen is a scalpel here, carving recognition into exaggeration with strokes that land like verdicts. Hatched shadows dig trenches across inflated features while cheap ink bleeds the truth into pulp. Every line is an argument, every distortion a revealed secret about the subject they hoped you would not notice.
+  key_features: Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions
+  creative_brief: 'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text.'
 avoidRules:
   - flattering
   - beautiful

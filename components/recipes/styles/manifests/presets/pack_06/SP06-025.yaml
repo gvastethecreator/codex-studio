@@ -12,12 +12,12 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: Architectural drafting
+  aesthetic: Technical drafting with measured line hierarchy and schematic restraint
   form_and_line: Uniform line weight
   color_palette: Black on white
   lighting_setup: None
   material_texture: Vellum, smooth
-  render_quality: Blueprint, schematic
+  render_quality: Blueprint-like schematic clarity without requiring buildings or plans
   spatial_distortion: Geometric
   atmosphere: Precise, technical
   key_features: Clean lines
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

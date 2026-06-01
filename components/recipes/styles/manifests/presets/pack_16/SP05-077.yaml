@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-077
 packId: pack_16
-name: Perfect Blue – Satoshi Kon Mirror Identity Thriller
+name: Mirror Identity Collapse Thriller Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Thriller identitario urbano de paranoia íntima, con performance pública y disociación reflejada.
+  aesthetic: Thriller identitario de paranoia íntima, performance pública y disociación reflejada.
   form_and_line: Línea sobria y tensa, acting microexpresivo y composición de encierro psicológico.
-  color_palette: Neón frío, piel desaturada, rojos de alarma y grises de apartamento vigilado.
+  color_palette: Neón frío, piel desaturada, rojos de alarma y grises de vigilancia íntima.
   lighting_setup: Iluminación clínica nocturna, reflejos espejados agresivos y zonas de sombra de amenaza latente.
-  material_texture: Cristal, pantalla CRT, maquillaje escénico y superficies domésticas de realismo inquietante.
+  material_texture: Cristal, pantalla CRT, maquillaje escénico y superficies cotidianas de realismo inquietante.
   render_quality: Acabado fílmico de precisión psicológica con montaje de ambigüedad controlada.
   spatial_distortion: Interiores comprimidos y capas de reflejo para sensación de yo fragmentado y mirada externa invasiva.
   atmosphere: Tensa, desorientadora, paranoica, gélida.
-  key_features: Motivo de espejo duplicado, cámara-vigilancia implícita y tensión entre personaje público y privado.
-  creative_brief: Define una gramática reusable de thriller de identidad fracturada para cualquier sujeto, combinando intimidad hostil, vigilancia perceptiva y colapso del autorretrato.
+  key_features: Motivo de espejo duplicado, vigilancia implícita y tensión entre persona pública y privada.
+  creative_brief: Define una gramática reusable de thriller de identidad fracturada para cualquier sujeto, combinando intimidad hostil, vigilancia perceptiva y colapso del autorretrato sin imponer apartamentos, idols, escenarios ni cámaras literales.
 avoidRules:
   - realistic
   - 3d render

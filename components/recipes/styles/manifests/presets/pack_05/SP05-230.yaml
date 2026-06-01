@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Endless concrete megastructure, tiny humans against impossible architecture, terminal-gun severity, industrial silence, machine civilization outliving meaning
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Megastructure terminal silence, with endless concrete scale, industrial emptiness, and machine civilization beyond meaning.
+  form_and_line: Brutal hard-edge geometry, tiny scale markers, recursive corridor lines, terminal void shapes, and severe panel discipline.
+  color_palette: Concrete gray, abyss black, terminal green, cold white, rust shadow, and faint warning red.
+  lighting_setup: Sparse industrial glow, distant strip lights, hard underlighting, and huge shadow masses.
+  material_texture: Raw concrete, oxidized metal, dust film, scratched panels, cable scars, and cold digital grain.
+  render_quality: High-detail sci-fi anime finish with monumental clarity, machine silence, and oppressive architectural precision.
+  spatial_distortion: Abyssal vanishing points, recursive scale, and impossible depth that dwarfs any subject.
   atmosphere: Monumental, empty, lethal, alienated
-  key_features: Megastructure scale, terminal-gun silhouettes, tiny-human framing, concrete abysses, machine-hall emptiness
-  creative_brief: Concrete that outgrew its makers, corridors that forgot purpose, a lone figure so small against architecture that gods would envy. The megastructure breathes silence into lungs of rusted steel. Scale is the only remaining language, and it speaks in abyssal tones.
+  key_features: Recursive architecture, concrete void, terminal scale, tiny markers, industrial silence.
+  creative_brief: >-
+    Give any prompt terminal megastructure silence: use impossible scale,
+    concrete recursion, tiny markers, and sparse machine light without requiring
+    weapons, corridors, lone figures, or a specific facility.
 avoidRules:
   - realistic
   - 3d render

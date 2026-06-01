@@ -13,18 +13,18 @@ tags:
   - landscape-and-gardens
 visualDna:
   aesthetic: Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica calmada.
-  form_and_line: Módulos lineales de jardineras, mobiliario bajo horizontal, pergolado ligero y hardscape ortogonal suavizado.
+  form_and_line: Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal suavizado.
   color_palette: Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights
   lighting_setup: Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.
-  material_texture: Deck de madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y jardineras de zinc cepillado.
+  material_texture: Madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y zinc cepillado.
   render_quality: Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.
   spatial_distortion: Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence
   atmosphere: Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.
   key_features: Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste verde-hardscape.
   creative_brief: >-
-    Preserva una gramática rooftop transferible basada en ritmo de plantación,
+    Preserva una gramática elevada transferible basada en ritmo de plantación,
     materialidad sobria de lujo y calma atmosférica. Debe mantener identidad
-    sin depender de ubicación o skyline específicos.
+    sin depender de ubicación, altura o skyline específicos.
 avoidRules:
   - ground level
 assets:

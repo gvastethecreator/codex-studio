@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Movie design visualization
+  aesthetic: Entertainment concept-art visualization with mood-first design and production-readable focal hierarchy
   form_and_line: Painterly
   color_palette: Mood lighting
   lighting_setup: Cinematic
   material_texture: Photobash
-  render_quality: AAA Game
+  render_quality: AAA concept-art finish without locking to games, movies, worlds, or products
   spatial_distortion: None
   atmosphere: Epic, storytelling
   key_features: Focal point detail
-  creative_brief: Mood precedes detail, atmosphere driving form rather than following it, the image designed to sell a world before a product. Photobash fragments meet painterly strokes in a hybrid language spoken in pre-production meetings. The image proposes rather than concludes, a question asked in cinematic light.
+  creative_brief: Mood precedes detail, atmosphere driving form rather than following it, the image designed to test a visual direction before final production. Photobash fragments meet painterly strokes in a hybrid language of readable possibility. The image proposes rather than concludes, using cinematic light to make any subject feel designed and production-ready.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - product pitch
+  - fixed worldbuilding scene
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-053.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

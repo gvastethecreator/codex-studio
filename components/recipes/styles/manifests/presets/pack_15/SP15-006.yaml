@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Ceremonial agro-future gathering focused on seed stewardship and intergenerational exchange.
-  form_and_line: Circular assembly choreography, suspended seed banners, and archive-centric focal geometry.
+  aesthetic: Ceremonial agro-future focused on seed stewardship, biodiversity memory, and intergenerational exchange as visual ritual.
+  form_and_line: Circular assembly choreography, suspended seed-banner motifs, and archive-centric focal geometry.
   color_palette: Pollinator yellow, germination green, and clay-coral warmth.
-  lighting_setup: Golden-hour festival light with soft lantern accents around archive stations.
-  material_texture: Linen pennants, seed capsules, polished timber kiosks, and woven biofiber mats.
-  render_quality: Dense-but-readable event concept art with strong crowd and signage hierarchy.
-  spatial_distortion: Ringed plaza perspective orbiting a transparent seed-vault pavilion.
+  lighting_setup: Golden-hour ceremonial light with soft lantern accents around archive-like focal points.
+  material_texture: Linen pennants, seed capsules, polished timber nodes, and woven biofiber mats.
+  render_quality: Dense-but-readable ceremonial solarpunk concept art with strong motif hierarchy.
+  spatial_distortion: Ringed perspective orbiting a transparent archive-like core without requiring a festival scene.
   atmosphere: Collective gratitude, practical hope, and celebratory responsibility.
-  key_features: Seed swap counters, stewardship oath wall, crop lineage displays, and communal planting table.
+  key_features: Seed-swap patterning, stewardship glyph walls, crop-lineage display logic, and communal planting-table rhythm.
   creative_brief: >-
     Preserve seed-vault festival grammar as a reusable style language:
     circular stewardship choreography, archive-centered civic ceremony, and
-    biodiversity literacy cues should remain stable across subjects.
+    biodiversity literacy cues should remain stable across subjects without
+    requiring crowds, banners, kiosks, tables, or a literal vault.
 avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
 attributes:
   negativePrompt: photoreal, bleak, techno-cold, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

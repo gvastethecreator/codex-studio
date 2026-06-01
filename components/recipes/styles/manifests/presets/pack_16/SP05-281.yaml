@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-281
 packId: pack_16
-name: Millennium Actress - Cinema-Memory Snowfall
+name: Temporal Memory Cinema Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Cine-memoria romántica de alto prestigio donde la identidad se construye por capas temporales superpuestas y transiciones emocionales entre épocas.
-  form_and_line: Contorno elegante con variación fina de grosor, siluetas actorales limpias y raccord gestual pensado para montaje continuo entre periodos.
+  aesthetic: Cine-memoria romántico de alto prestigio, construido con capas temporales, anhelo visual y montaje emocional.
+  form_and_line: Contorno elegante con variación fina de grosor, siluetas actorales limpias y raccord gestual entre estados del mismo sujeto.
   color_palette: Neutros de película envejecida, blancos de nieve luminosa, carmín de vestuario clásico y azules nocturnos de recuerdo persistente.
   lighting_setup: Luz de estudio suavizada con rebote frío exterior, halos leves sobre partículas de nieve y separación delicada de primer plano y fondo.
   material_texture: Tejidos de época con caída densa, celuloide sugerido por grano fino, superficies de set pintado y humedad invernal atmosférica.
   render_quality: Acabado fílmico premium con énfasis en continuidad de montaje, foco emocional estable y lectura inmediata de silueta protagonista.
   spatial_distortion: Espacio semi-naturalista con disolvencias visuales entre planos temporales para producir sensación de recuerdo en movimiento.
   atmosphere: Nostálgica, luminosa, melancólica, devota del recuerdo.
-  key_features: Transiciones de vestuario entre eras, nieve como conector temporal, encuadres de persecución emocional y composición de memoria en capas.
-  creative_brief: Construye una gramática reusable de cine-memoria donde cualquier sujeto parezca atravesar décadas en un solo plano, usando nieve, vestuario cambiante y continuidad de anhelo como motores visuales.
+  key_features: Montaje temporal, capas de recuerdo, cambios sutiles de textura visual, anhelo sostenido y composición de memoria superpuesta.
+  creative_brief: >-
+    Aplica una gramática reusable de cine-memoria a cualquier prompt o imagen de entrada:
+    múltiples tiempos emocionales en una sola imagen, transiciones suaves y nostalgia activa sin imponer épocas, nieve ni vestuario narrativo.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Breaking news
-  form_and_line: Chyron overlay
-  color_palette: Studio Blue, anchor navy, red accent, white desk
+  aesthetic: Broadcast-news urgency
+  form_and_line: Lower-third graphic bands
+  color_palette: Studio blue, navy, red accent, clean white
   lighting_setup: Flat studio, even key, hair light separation
   material_texture: HD Video, crisp digital, broadcast sharpness
   render_quality: Live, urgent, breaking-news tension, satellite delay
   spatial_distortion: Ticker tape, scrolling crawl, side panel
-  atmosphere: Serious, info, authoritative urgency, global anxiety
-  key_features: Lower third, desk logo, anchor duo
-  creative_brief: The screen becomes a window onto a world holding its breath, where information races ahead of understanding. Cool blue light bathes the bearer of tidings, their composure a dam against the flood of what must be told. Every graphic, every ticker, pulls the eye toward the edge of the unfolding.
+  atmosphere: Serious, informational, authoritative urgency
+  key_features: Lower-third bars, ticker rhythm, studio sharpness
+  creative_brief: 'News broadcast style frames any subject as urgent information: cool blue studio light, crisp HD video, red accent graphics, lower-third-like bands, crawl rhythm, and authoritative flatness. Keep live-news tension without requiring anchors, desks, logos, or readable text.'
 avoidRules:
   - movie
 assets:

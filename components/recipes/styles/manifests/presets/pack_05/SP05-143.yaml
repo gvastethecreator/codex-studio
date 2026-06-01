@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Urban electrical espionage, masked contractors, cold neon rain, conspiratorial apartment blocks, emotion-suppressed assassin cool, after-midnight tech noir
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  aesthetic: Contract killer night-rain style, with cold electrical espionage, suppressed emotion, and after-midnight tech noir.
+  form_and_line: Smooth early-digital contours, electric thread arcs, masked negative spaces, and restrained body-language geometry.
+  color_palette: Rain blue, black glass, cold cyan, sodium amber, pale mask white, and desaturated violet.
+  lighting_setup: Neon rain streaks, windowlike reflections, controlled rim glow, and cold underlit secrecy.
+  material_texture: Wet glass sheen, rain grain, matte fabric flats, electric particle threads, and clean digital cel polish.
+  render_quality: Early-2000s tech-noir anime finish with smooth compositing, lonely restraint, and crisp electric detail.
+  spatial_distortion: Narrow depth lanes, surveillance-like framing, and rain-layer parallax that compresses emotion.
   atmosphere: Cold, secretive, sleek, lonely
-  key_features: Electric effect threads, masked silhouettes, rainlit city alleys, covert-operatives framing, controlled facial acting
-  creative_brief: Neon bleeds down the window of a safehouse where nobody feels safe, and a contractor checks the time with a face emptied of everything except the cost of the next mission. Every power subtracts a piece of self, and the balance sheet is written in cold rain. The city at 3 AM is just another mask, and everyone wears it well.
+  key_features: Electric threads, rain noir, masked emptiness, emotional suppression, covert stillness.
+  creative_brief: >-
+    Give any prompt night-rain espionage: use cold reflection, electric thread
+    accents, masked negative space, and suppressed emotion without requiring a
+    fixed urban location, operative role, or mission setup.
 avoidRules:
   - realistic
   - 3d render

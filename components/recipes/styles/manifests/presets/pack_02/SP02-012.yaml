@@ -20,8 +20,8 @@ visualDna:
   render_quality: Quirky, precise, diorama-perfect, miniature precision
   spatial_distortion: Center frame, locked-down composition, 90-degree pans
   atmosphere: Whimsical, deadpan, storybook melancholy, curated nostalgia
-  key_features: Symmetry, cross-section sets, handwritten typography
-  creative_brief: The world organizes itself into perfect halves, each side a mirror that whispers its own quiet joke. Colors arrive powdered and soft as confectioner's sugar, while every object sits exactly where melancholy placed it — in a diorama of longing dressed as whimsy.
+  key_features: Symmetry, diorama precision, label-like spacing
+  creative_brief: 'Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette, flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson grammar without forcing cross-section sets, typography, or quirky characters.'
 avoidRules:
   - asymmetrical
   - messy

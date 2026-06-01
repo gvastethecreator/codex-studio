@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Bride and Groom
+  aesthetic: Airy ceremony editorial
   form_and_line: Soft romantic
   color_palette: White, pastel, airy
   lighting_setup: Backlit sun
-  material_texture: Lace, flowers
+  material_texture: Lace-like softness, floral color hints
   render_quality: Romantic, expensive
   spatial_distortion: None
-  atmosphere: Love, happy
-  key_features: Veil
-  creative_brief: Sunlight bends through lace and promise, the backlit veil dissolving the boundary between the seen and the felt. Love renders here not as sentiment but as light's architecture, a quiet monument to all that cannot be spoken.
+  atmosphere: Romantic, luminous
+  key_features: Veil-like backlight
+  creative_brief: 'Wedding photography becomes airy ceremonial light: pastel whites, lace-like texture, floral softness, backlit glow, and expensive romantic restraint. Apply vow-day luminosity to any subject without requiring bride, groom, veil, flowers, couple, or event.'
 avoidRules:
   - sad
   - dark

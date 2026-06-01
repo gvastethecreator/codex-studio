@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-308
 packId: pack_16
-name: City Hunter - Glass-Tower Neon Gunplay
+name: Eighties Neon Precision Noir Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Noir urbano ochentero de pistolero privado, con cinismo seductor, comedia insolente y peligro de contrato.
-  form_and_line: Contorno firme de figura en traje, acting de pose confiada y encuadres dinámicos de persecución calle-cielo.
+  aesthetic: Noir ochentero seductor, con cinismo brillante, comedia insolente y peligro preciso.
+  form_and_line: Contorno firme, acting de pose confiada y encuadres dinámicos de tensión vertical.
   color_palette: Azules nocturnos de cristal, morados neón, grises acero y acentos rojos de peligro instantáneo.
-  lighting_setup: Neón de rascacielo reflejado en cristal, key cortante de calle y sombras planas de thriller televisivo.
-  material_texture: Vidrio de rascacielos, asfalto brillante, gabardina o traje texturado y metal de arma estilizado.
-  render_quality: Acabado premium retro-noir con lectura clara de acción, punchline visual y elegancia de detective urbano.
-  spatial_distortion: Profundidad de canyon urbano con verticalidad exagerada y lente de acción para ritmo de chase.
+  lighting_setup: Neón alto reflejado en cristal, key cortante y sombras planas de thriller televisivo.
+  material_texture: Vidrio nocturno, superficie brillante, tailoring texturado y metal pulido estilizado.
+  render_quality: Acabado premium retro-noir con lectura clara de acción, punchline visual y elegancia precisa.
+  spatial_distortion: Profundidad vertical exagerada y lente de acción para ritmo de amenaza.
   atmosphere: Suave, neón, irónica, peligrosa.
-  key_features: Skyline nocturno, postura detective-armada, moda 80s marcada y contraste entre chiste y violencia precisa.
-  creative_brief: Construye una gramática reusable de detective-noir de altura para cualquier sujeto, mezclando verticalidad metropolitana, ironía de mercenario y violencia precisa de escena corta.
+  key_features: Neón nocturno, verticalidad abstracta, moda 80s sugerida, ironía visual y contraste entre humor y amenaza.
+  creative_brief: >-
+    Construye una gramática reusable de noir ochentero de precisión para cualquier prompt o imagen de entrada:
+    neón, cinismo y precisión tensa sin imponer skylines, armas, detectives ni violencia literal.
 avoidRules:
   - realistic
   - 3d render

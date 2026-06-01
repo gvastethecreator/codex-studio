@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Night-school mystery, lace uniforms, moonlit corridors, forbidden longing, black-lake reflections, mahogany furniture, rose-garden secrets, candlelit libraries
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Velvet gothic shojo romance built from nocturnal longing, lace-like delicacy, moonlit secrecy, forbidden elegance, and melancholy ornament
+  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and gothic vertical accenting
+  color_palette: Deep velvet blacks, moonlit silvers, wine-red accents, pearl skin glow, faded rose tones, and muted violet shadows
+  lighting_setup: Soft bloom, moon-rim light, candle-warm accent points, diffuse romantic glow, and luminous halation inside dark value fields
+  material_texture: Velvet softness, lace textures, silk sheen, mahogany-like polish, petal softness, and chiffon translucency
+  render_quality: Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, corridor-like depth compression as optional mood, fashion elegance, and romantic silhouette styling
   atmosphere: Gothic, yearning, mysterious, melancholic
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Moonlight threads through lace curtains as the forbidden blooms in mahogany-trimmed silence, black-lake waters holding centuries of whispered secrets beneath rose-garden shadows. A nocturne of yearning drawn in velvet and silver — gothic romance where every candlelit corridor leads deeper into the heart's beautiful darkness.
+  key_features: Nocturnal longing, velvet-lace materiality, moon-silver contrast, gothic romantic restraint, expressive eye detail
+  creative_brief: >-
+    Use the gothic academy title as a style anchor for nocturnal shojo longing:
+    velvet darkness, lace delicacy, and forbidden romantic pressure should
+    transfer without requiring school, corridors, lake, furniture, gardens, or
+    libraries.
 avoidRules:
   - realistic
   - 3d render

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-359
 packId: pack_16
-name: Yuri!!! on Ice - Rink Edge Performance Ache
+name: Vulnerable Performance Spin Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Patinaje artístico competitivo centrado en coreografía emocional, línea corporal y control de eje en spin.
-  form_and_line: Silueta elongada, transición fluida entre poses y precisión de filo sobre hielo.
+  aesthetic: Performance competitiva vulnerable, centrada en coreografía emocional, línea corporal y control de eje.
+  form_and_line: Silueta elongada, transición fluida entre poses y precisión de eje curvo.
   color_palette: Azules glaciales, plateados de foco y acentos cromáticos de vestuario escénico.
-  lighting_setup: Conos de spotlight sobre pista con relleno frío y reflejo especular controlado.
-  material_texture: Hielo pulido con trazas de cuchilla, tela brillante de traje y cristales de escarcha fina.
-  render_quality: Performance frame premium con claridad de salto, spin y aterrizaje limpio.
-  spatial_distortion: Curvatura elegante de trayectorias y profundidad de rink para lectura de programa completo.
+  lighting_setup: Conos de spotlight con relleno frío y reflejo especular controlado.
+  material_texture: Superficie pulida con trazas finas, tela brillante y cristales fríos.
+  render_quality: Performance frame premium con claridad de impulso, spin abstracto y cierre limpio.
+  spatial_distortion: Curvatura elegante de trayectorias y profundidad escénica para lectura de programa completo.
   atmosphere: Elegante, vulnerable, emotiva y competitiva.
-  key_features: Reflejo de pista, postura de spin, shimmer de vestuario y curvas de cuchilla precisas.
+  key_features: Reflejo frío, postura de spin, shimmer de vestuario y curvas de trayectoria precisas.
   creative_brief: >-
-    Define una gramática reusable de rink-performance donde coreografía,
-    expresividad y legibilidad técnica de patinaje funcionen más allá de una
-    rutina específica.
+    Define una gramática reusable de performance vulnerable en eje para cualquier prompt o imagen de entrada:
+    coreografía, reflejo y precisión emocional sin imponer patinaje, pista, cuchillas ni rutina.
 avoidRules:
   - realistic
   - 3d render

@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
 visualDna:
-  aesthetic: Civic atrium stacked around a solar chimney and public garden core.
-  form_and_line: Vertical terraces, open void, and sunlit ramps.
+  aesthetic: Civic solarpunk verticality stacked around solar chimney logic and public garden light.
+  form_and_line: Vertical terraces, open voids, sunlit ramp bands, and chimney-core geometry.
   color_palette: Pale green, sandstone, and sky gold.
   lighting_setup: Top-lit atrium with diffuse bounces and daylight shafts.
   material_texture: Glazed brick, timber, and translucent solar film.
   render_quality: Monumental but welcoming public architecture.
-  spatial_distortion: Vertical central void pulling the city upward.
+  spatial_distortion: Vertical central void pulling forms upward through light and garden layers.
   atmosphere: Public trust, climatic comfort, and collective aspiration.
-  key_features: Solar chimney, civic ramps, and shared atrium gardens.
+  key_features: Solar chimney motifs, civic ramp bands, shared garden layers, and warm updraft light.
   creative_brief: >-
     Preserve sunstack civic-atrium grammar as a reusable style system:
     vertically layered public climate architecture, solar-chimney energy
@@ -24,4 +24,13 @@ avoidRules: [photoreal, cyberpunk, hard-industrial, watermark, text, logo, night
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-102.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

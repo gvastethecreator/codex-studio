@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-063
 packId: pack_05
-name: Hellsing Ultimate – Crimson Gothic Hunt
+name: Crimson Gothic Authority Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Black coats, violent cathedral halls, glowing eyes, aristocratic menace, alucard guns, vampire-nazi showdown, battle-of-london, crimson coat
+  aesthetic: Aristocratic menace, crimson authority fields, black ceremonial contrast, gothic pressure geometry, predatory elegance, sanctified violence as abstraction
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Velvet-black ink mass, oxidized crimson glaze, polished dark enamel, aged paper grain, hard-edged stain texture, smoky drybrush
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Heraldic vertical framing, severe silhouette hierarchy, crimson-black power asymmetry, ritualized negative space, blade-sharp contour rhythm
   atmosphere: Violent, regal, gothic, relentless
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: Blood runs in rivulets down cathedral aisles as a vampire in service to protestant vengeance hunts through the night. The crimson coat is not a garment but a declaration that monsters can be leashed by monsters. Gothic arches frame slaughter like stained glass frames scripture.
+  creative_brief: >
+    Convert any subject into a regal gothic pressure image built from crimson
+    authority, black ceremonial voids, and hard-edged shadow hierarchy. Keep the
+    menace formal, graphic, and transferable instead of tied to fixed costumes,
+    factions, interiors, weapons, or pursuit scenes.
 avoidRules:
   - realistic
   - 3d render

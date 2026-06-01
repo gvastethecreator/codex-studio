@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Dungeon-raid power fantasy, violet-black shadow summons, rank-up intensity, Korean portal action polish, monarch aura spectacle, solitary ascent into overwhelming force
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Shadow monarch raid ascension, with violet-black dominance, solitary power growth, sleek aura spectacle, and rank-up intensity.
+  form_and_line: Tall silhouette authority, shadow-swarm edges, vertical ascent vectors, sharp aura crowns, and layered power contours.
+  color_palette: Void black, royal violet, electric blue, silver edge light, deep indigo, and cold white rank glints.
+  lighting_setup: Bottomless shadow glow, violet lightning rims, portal-like depth bloom, and hard silhouette backlight.
+  material_texture: Smoky shadow grain, glossy black aura, metallic trim glints, particle shards, and polished digital contrast.
+  render_quality: Sleek modern anime polish with overwhelming force, clean aura readability, and solitary scale.
+  spatial_distortion: Upward pressure, shadow-depth multiplication, and perspective that makes power feel exponential.
   atmosphere: Dominant, sleek, ominous, ascendant
-  key_features: Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing
-  creative_brief: Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone.
+  key_features: Violet aura crown, shadow multiplication, solitary ascent, rank-glow hierarchy, overwhelming calm.
+  creative_brief: >-
+    Make any prompt feel like solitary power ascending: multiply shadow depth,
+    add violet hierarchy, and compress space around a dominant center without
+    requiring a fixed challenge space, entity, ruler figure, or transition scene.
 avoidRules:
   - realistic
   - 3d render

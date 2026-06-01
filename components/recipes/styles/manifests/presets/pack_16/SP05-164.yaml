@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-164
 packId: pack_16
-name: Ghost in the Shell - Wet-City Tactical Consciousness
+name: Wet Techno-Noir Consciousness Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Ciber-noir táctico de lluvia perpetua, con vigilancia estatal, sigilo óptico y dilema filosófico de identidad.
-  form_and_line: Línea 90s precisa y austera, blocking militar limpio y close-ups analíticos de tensión cognitiva.
-  color_palette: Cian neón húmedo, grafito urbano, ámbar de interfaz y reflejos metálicos fríos.
-  lighting_setup: Nocturno high-contrast con especular en asfalto mojado, rim quirúrgico y sombras de corredor vigilado.
+  aesthetic: Techno-noir húmedo, precisión táctica austera y dilema filosófico de identidad disuelta.
+  form_and_line: Línea 90s precisa y sobria, blocking geométrico limpio y close-ups analíticos de tensión cognitiva.
+  color_palette: Cian neón húmedo, grafito nocturno, ámbar de interfaz y reflejos metálicos fríos.
+  lighting_setup: Nocturno high-contrast con especulares húmedos, rim quirúrgico y sombras vigilantes de lectura clínica.
   material_texture: Vidrio lluvioso, acero cepillado, polímero táctico y grano fílmico sobrio de thriller tecnológico.
   render_quality: Acabado premium noventero con lectura cristalina de acción táctica y subtexto existencial.
-  spatial_distortion: Profundidad de megaciudad y pasillo institucional, composición de infiltración y duelo filosófico.
+  spatial_distortion: Profundidad estratificada, corredores abstractos de información y composición de vigilancia filosófica.
   atmosphere: Clínica, filosófica, táctica y nocturna.
-  key_features: Reflejo urbano mojado, interfaces discretas, silueta cibernética y framing de vigilancia omnipresente.
-  creative_brief: Construye una gramática reusable de techno-noir identitario para cualquier sujeto, equilibrando precisión operativa, melancolía urbana y cuestionamiento del yo.
+  key_features: Reflejo húmedo, interfaces discretas, siluetas cibernéticas, vigilancia omnipresente y vacío existencial.
+  creative_brief: Construye una gramática reusable de techno-noir identitario para cualquier sujeto, equilibrando precisión operativa, melancolía húmeda y cuestionamiento del yo sin imponer megaciudad, policía, infiltración ni pasillos concretos.
 avoidRules:
   - realistic
   - 3d render

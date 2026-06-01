@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Civic mobility solarpunk where transit choreography is the social backbone.
-  form_and_line: Continuous ribbon tracks, modular station canopies, and pedestrian-first circulation arcs.
+  aesthetic: Civic mobility solarpunk where ribbon continuity, gardened flow, and public trust become the visual backbone.
+  form_and_line: Continuous ribbon trajectories, modular canopy-like arcs, and pedestrian-first circulation curves.
   color_palette: Mint chlorophyll, sunlit limestone white, and saffron transit highlights.
-  lighting_setup: Clear noon exposure with reflective bounce under vegetated viaducts.
+  lighting_setup: Clear noon exposure with reflective bounce under vegetated shade bands.
   material_texture: Satin bio-composite panels, laminated glass fins, and dense hanging foliage mats.
-  render_quality: Production-ready environmental concept with strong wayfinding legibility.
-  spatial_distortion: S-curve rail perspective that links foreground station life to distant garden districts.
+  render_quality: Production-ready solarpunk concept with strong wayfinding legibility.
+  spatial_distortion: S-curve continuity linking foreground detail to distant gardened depth without requiring trains or stations.
   atmosphere: Efficient calm, civic trust, and everyday delight in shared infrastructure.
-  key_features: Quiet glide trains, pollinator bridges, open ticketless platforms, shade-rich promenades.
+  key_features: Quiet glide rhythm, pollinator-span motifs, open spacing, shade-rich promenade flow.
   creative_brief: >-
     Preserve wind-garden monorail grammar as a reusable style language:
-    ribbon-transit continuity, station-as-garden typology, and pedestrian-first
-    civic flow should remain stable across subjects.
+    ribbon-transit continuity, gardened canopy typology, and pedestrian-first
+    civic flow should remain stable across subjects without requiring rails,
+    trains, stations, or districts.
 avoidRules: [photoreal, cyberpunk-grime, warlike, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-002.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-grime, warlike, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

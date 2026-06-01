@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Private decopunk club where political deals happen behind velvet and steel.
-  form_and_line: Curved bar islands, fan-pattern ceilings, and turbine-like wall insets.
+  aesthetic: Intimate decopunk intrigue rendered through velvet, brass, and turbine geometry.
+  form_and_line: Curved islands, fan-pattern arcs, turbine insets, and nested alcove silhouettes.
   color_palette: Burgundy velvet, onyx black, and antique gold.
-  lighting_setup: Low-key spot pools and brass sconces shaping intimate corners.
+  lighting_setup: Low-key spot pools and brass glints shaping controlled pockets of secrecy.
   material_texture: Velvet upholstery, embossed leather, polished brass, and smoked mirrors.
   render_quality: Premium interior concept art with tactile richness and dramatic depth.
-  spatial_distortion: Layered lounge composition with nested alcoves and secret passages.
+  spatial_distortion: Layered close-range composition with nested private-depth pockets.
   atmosphere: Confidential intrigue, aristocratic modernity, and hushed momentum.
-  key_features: Hidden speaking booths, deco fan lamps, and turbine stage centerpiece.
+  key_features: Smoked mirror seams, fan-lamp halos, turbine reliefs, and velvet shadow gradients.
   creative_brief: >-
     Preserve velvet turbine-salon grammar as a reusable style language:
     intimate deco intrigue interiors, turbine-motif opulence, and confidential
-    social choreography should remain stable across subjects.
-avoidRules: [photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo]
+    social choreography should remain stable across any subject.
+avoidRules:
+  [photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-024.webp }
 attributes:
   negativePrompt: photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

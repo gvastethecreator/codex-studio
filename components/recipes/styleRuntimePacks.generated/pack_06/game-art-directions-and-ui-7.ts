@@ -5,23 +5,27 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-101',
-    name: 'JRPG Pixel Town',
+    name: 'JRPG Pixel Diorama Grammar',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc crowd requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Compact JRPG pixel-art diorama language with nostalgic 16-bit readability and toy-like spatial charm.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Translate any subject into small modular clusters, readable silhouettes, stepped edge logic, and charm-first simplification.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Warm limited ramps, soft dusk accents, separated roof-light/shadow bands, and selective jewel-color highlights.',
+      lighting_and_shadow:
+        'Stable top-left pixel lighting with blocky cast shadows and simple ambient occlusion under forms.',
+      texture_and_material:
+        'Hand-placed dithering, tiny tile noise, one-pixel highlight ticks, and restrained pattern repetition.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Locked isometric or three-quarter diorama framing with stacked depth layers and tidy grid rhythm.',
+      atmosphere_and_mood:
+        'Adventurous, cozy, exploratory mood without requiring towns, buildings, roads, or NPCs.',
+      rendering_and_quality:
+        'Crisp pixel scale, no interpolation blur, clean sprite readability, and consistent palette discipline.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -31,23 +35,27 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-102',
-    name: 'Roguelike Dungeon Tileset',
+    name: 'Roguelike Tile Glyph System',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement, monster requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Roguelike tile grammar built from stark glyph silhouettes, grid logic, and harsh tactical readability.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Reduce any subject into symbolic tile chunks, clear collision edges, and instantly parsed icon-like forms.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Low-count palette with black gutters, sickly accent colors, and high-contrast value separation.',
+      lighting_and_shadow:
+        'Minimal light logic, mostly value-coded planes, with tiny glow accents reserved for interaction points.',
+      texture_and_material:
+        'Chunky pixel pits, chipped edges, procedural speckle, and repeat-safe surface motifs.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Strict orthographic top-down or angled tile view with modular alignment and no cinematic depth.',
+      atmosphere_and_mood:
+        'Tense, procedural, survival-focused mood without requiring dungeons, corridors, traps, or monsters.',
+      rendering_and_quality:
+        'Seamless-tile friendly edges, crisp pixel boundaries, readable at thumbnail scale.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -57,23 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-103',
-    name: 'Metroidvania Cavern Biome',
+    name: 'Metroidvania Parallax Gloom',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, literal cavern requirement, platform requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Layered Metroidvania side-scroll style with readable silhouettes against moody parallax depth.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Shape any subject into bold side-view forms, negative-space cutouts, and traversal-readable contours.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Deep cool shadows, muted midtones, rare toxic accents, and strong foreground/background value splits.',
+      lighting_and_shadow:
+        'Rim-biased side lighting with luminous pockets, heavy occlusion, and atmosphere-separated planes.',
+      texture_and_material:
+        'Pixel clusters, mossy noise, mineral-like speckle, and subtle animated-glow implications without fixed scenery.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Wide side-on composition, layered planes, strong platform-read silhouette rhythm, and stable sprite scale.',
+      atmosphere_and_mood:
+        'Lonely, exploratory, mysterious tone without requiring caverns, platforms, doors, or creatures.',
+      rendering_and_quality:
+        'Pixel-perfect edges, parallax-ready depth separation, no painterly blur, no overdetail.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -83,55 +95,77 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-104',
-    name: 'Cyberpunk HUD Interface',
+    name: 'Cyberpunk Diegetic HUD Glow',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, readable interface copy, literal city scene, weapon requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Cyberpunk game-interface overlay style with luminous diegetic panels, scanline grime, and tactical data density.',
+      subject_treatment:
+        'Wrap any subject in translucent interface strata, segmented targeting brackets, and modular status geometry.',
+      color_and_tone:
+        'Cyan-magenta warning palette, black glass fields, acid-green micro accents, and clipped neon contrast.',
+      lighting_and_shadow:
+        'Screen-glow lighting, edge bloom, reflected UI color, and dark underlayers for readable overlays.',
+      texture_and_material:
+        'CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze.',
+      camera_and_composition:
+        'Layered HUD composition with safe margins, asymmetric grids, and focal brackets instead of fixed screens.',
+      atmosphere_and_mood:
+        'Paranoid, high-tech, compressed signal energy without requiring cities, hackers, weapons, or readable text.',
+      rendering_and_quality:
+        'Sharp vector-like UI edges, no legible copy, controlled bloom, and clean hierarchy at small size.',
     },
   },
   {
     id: 'SP06-105',
-    name: 'Retro Fighting Game Portrait',
+    name: 'Retro Fighting Game Select Screen',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, human-only portrait, arena requirement, readable character name',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        '90s arcade fighting-game select-screen treatment with bold pixel paint, impact gradients, and competitive energy.',
+      subject_treatment:
+        'Render any subject as a high-contrast selectable emblem with exaggerated contour strength and badge-like presence.',
+      color_and_tone:
+        'Saturated arcade ramps, electric rim colors, hot shadows, and posterized flesh/object tones without realism.',
+      lighting_and_shadow:
+        'Dramatic top/rim lighting with hard cel-shadow cuts and glossy screen flare accents.',
+      texture_and_material:
+        'Pixel-painted brush clusters, low-res dithering, chunky anti-aliasing, and arcade monitor softness.',
+      camera_and_composition:
+        'Tight icon/portrait framing, diagonal energy slashes, layered selection panels, and strong center lock.',
+      atmosphere_and_mood:
+        'Competitive, loud, characterful mood without requiring human fighters, faces, arenas, or UI text.',
+      rendering_and_quality:
+        'Crisp retro-game polish, stable silhouette, no modern photoreal shading, no readable labels.',
     },
   },
   {
     id: 'SP06-106',
-    name: 'Isometric Strategy Terrain',
+    name: 'Isometric Strategy Tile Language',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, literal terrain requirement, army requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Isometric strategy-game tile style with clean tactical geometry, beveled readability, and board-game clarity.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Convert any subject into modular isometric masses, readable footprint shapes, and turn-based visual hierarchy.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Controlled terrain-like ramps, faction-ready accent bands, and clear value channels for walkable vs blocked areas.',
+      lighting_and_shadow:
+        'Consistent upper-left light, short cast shadows, contact darkening, and bevel highlights on every tile edge.',
+      texture_and_material:
+        'Low-noise pixel texture, small material swatches, edge seams, and repeatable detail density.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        '2:1 isometric grid, stable scale, locked diagonals, and composable tile boundaries.',
+      atmosphere_and_mood:
+        'Strategic, ordered, readable mood without requiring terrain, armies, bases, or maps.',
+      rendering_and_quality:
+        'Tile-atlas friendly finish, crisp edges, no perspective camera drift, no blurry scaling.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -141,71 +175,102 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-107',
-    name: 'MOBA Splash Art Heroic',
+    name: 'MOBA Splash Rendering',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, literal battle scene, weapon requirement, human champion requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Premium MOBA splash-art rendering with heroic readability, sculpted form language, and ability-color drama.',
+      subject_treatment:
+        'Elevate any subject into a readable champion-like focal form with exaggerated silhouette logic and clear role cues.',
+      color_and_tone:
+        'Rich complementary palette, one dominant ability hue, cinematic darks, and polished high-saturation accents.',
+      lighting_and_shadow:
+        'Multi-source rim lighting, spell-like bloom accents, deep shadow carving, and luminous focal gradients.',
+      texture_and_material:
+        'Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal surfaces.',
+      camera_and_composition:
+        'Diagonal splash composition, low-to-mid heroic angle, large shape hierarchy, and strong poster crop.',
+      atmosphere_and_mood:
+        'Epic, competitive, high-skill fantasy without requiring heroes, battles, weapons, or arenas.',
+      rendering_and_quality:
+        'Finished key-art quality, crisp focal detail, controlled atmospheric depth, no UI or title text.',
     },
   },
   {
     id: 'SP06-108',
-    name: 'Visual Novel Neon Classroom',
+    name: 'Visual Novel Neon Backdrop Wash',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, literal classroom requirement, student requirement, dialogue box',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Visual-novel backdrop style with neon emotional grading, clean anime paint, and interactive-scene clarity.',
+      subject_treatment:
+        'Present any subject as a polished story-backdrop element with simplified planes and readable mood coding.',
+      color_and_tone:
+        'Violet-blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI legibility.',
+      lighting_and_shadow:
+        'Soft environmental glow, colored rim edges, broad shadow pools, and late-evening luminous haze.',
+      texture_and_material:
+        'Smooth anime-style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup.',
+      camera_and_composition:
+        'Symmetrical or slightly off-center VN framing with open dialogue-safe negative space and shallow depth cues.',
+      atmosphere_and_mood:
+        'Melancholic, intimate, story-charged mood without requiring classrooms, students, desks, or dialogue boxes.',
+      rendering_and_quality:
+        'Clean background-art finish, no readable text, no UI chrome, enough detail for repeated viewing.',
     },
   },
   {
     id: 'SP06-109',
-    name: 'Soulslike Dark Citadel',
+    name: 'Soulslike Tarnished Atmosphere',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, literal citadel requirement, boss requirement, armor requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Soulslike dark-fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry.',
+      subject_treatment:
+        'Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual scale.',
+      color_and_tone:
+        'Ash-gray, old gold, bruised umber, corpse-green accents, and desaturated highlights over deep blacks.',
+      lighting_and_shadow:
+        'Thin holy backlight, torch-warm pin glows, huge soft shadow masses, and mist-diffused silhouettes.',
+      texture_and_material:
+        'Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language.',
+      camera_and_composition:
+        'Low, patient framing with monumental empty space, vertical pressure, and slow-burn focal hierarchy.',
+      atmosphere_and_mood:
+        'Decayed, sacred, hostile mood without requiring castles, bosses, armor, weapons, or ruins.',
+      rendering_and_quality:
+        'Painterly AAA concept finish, restrained detail outside focal areas, no UI or readable text.',
     },
   },
   {
     id: 'SP06-110',
-    name: 'Chibi Platformer Character Sheet',
+    name: 'Chibi Platformer Sprite Bounce',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, human character requirement, platform requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Chibi platformer sprite style with squashy silhouette rhythm, toy-like proportions, and instant read at small scale.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Adapt any subject into cute compact forms with oversized key shapes, soft corner logic, and bouncy pose arcs.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Bright candy palette, simple shadow ramps, cheerful accent colors, and clean separation from transparent ground.',
+      lighting_and_shadow:
+        'Small consistent highlight caps, soft under-shadows, and minimal volume modeling for animation stability.',
+      texture_and_material:
+        'Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Centered orthographic sprite-sheet framing with stable scale, predictable pivot, and side/three-quarter clarity.',
+      atmosphere_and_mood:
+        'Playful, agile, readable mood without requiring characters, platforms, costumes, or background scenes.',
+      rendering_and_quality:
+        'Animation-sheet friendly, crisp edges, transparent-background safe, no motion blur, no text.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -215,39 +280,52 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-111',
-    name: 'Battle Royale Storm Arena',
+    name: 'Battle Royale Compression Colorway',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, literal arena requirement, storm wall requirement, weapon requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Battle-royale visual language with high-visibility color coding, stormlike pressure gradients, and streamer-era polish.',
+      subject_treatment:
+        'Clarify any subject through tactical silhouette separation, loot-color accents, and strong foreground priority.',
+      color_and_tone:
+        'Saturated cyan-violet perimeter glow, warm danger accents, high-key mids, and legible game-ready contrast.',
+      lighting_and_shadow:
+        'Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow readability.',
+      texture_and_material:
+        'Clean PBR-lite materials, compression-friendly gradients, subtle screen sharpness, and minimal grime.',
+      camera_and_composition:
+        'Wide playable readability, circular pressure motifs, strong focal isolation, and HUD-safe edges.',
+      atmosphere_and_mood:
+        'Urgent, competitive, kinetic mood without requiring arenas, storms, players, weapons, or vehicles.',
+      rendering_and_quality:
+        'Modern live-service key-art polish, vivid but not cluttered, no UI labels or readable text.',
     },
   },
   {
     id: 'SP06-112',
-    name: 'Sci Fi Shooter Weapon Icons',
+    name: 'Sci-Fi Arsenal Icon Kit',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, gun requirement, soldier requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal readability.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Convert any subject into collectible equipment-like icons with crisp outer contours and modular tech segmentation.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Gunmetal neutrals, cold blue emissive accents, rarity-color trims, and strong dark-to-light material ramps.',
+      lighting_and_shadow:
+        'Small studio-like icon lighting, bevel highlights, contact shadow pads, and controlled emissive glows.',
+      texture_and_material:
+        'Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Centered three-quarter icon framing, transparent background, equal padding, and atlas-consistent scale.',
+      atmosphere_and_mood:
+        'Tactical, collectible, high-tech mood without requiring guns, ammo, soldiers, or shooter scenes.',
+      rendering_and_quality:
+        'Icon-pack friendly, sharp thumbnail readability, transparent-background safe, no labels.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -257,103 +335,149 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-113',
-    name: 'Fantasy MMO World Map',
+    name: 'Fantasy MMO Parchment Interface',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, readable map labels, literal world map requirement, castle requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Fantasy MMO parchment-interface style with ornamental cartography logic, aged UI material, and quest-screen clarity.',
+      subject_treatment:
+        'Recast any subject into symbolic maplike marks, route-like linework, framed medallions, and collectible lore texture.',
+      color_and_tone:
+        'Sepia parchment base, ink-brown contours, muted jewel accents, red wax-like highlights, and soft vignette aging.',
+      lighting_and_shadow:
+        'Flat document lighting with subtle edge shadows, embossed ornament glints, and low-contrast aged stains.',
+      texture_and_material:
+        'Fibrous paper grain, burned borders, stamped motifs, hand-inked line jitter, and softened fold marks.',
+      camera_and_composition:
+        'Top-down UI/document composition with decorative framing, open readable zones, and no required geography.',
+      atmosphere_and_mood:
+        'Adventurous, archival, questlike mood without requiring maps, continents, castles, compass roses, or text.',
+      rendering_and_quality:
+        'Clean game-UI asset finish, no readable labels, strong ornament hierarchy, thumbnail-safe.',
     },
   },
   {
     id: 'SP06-114',
-    name: 'Anime Gacha Card Frame',
+    name: 'Anime Gacha Foil Frame',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt: 'watermark, text, readable stats, character requirement, weapon requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Anime gacha-card visual style with iridescent foil borders, rarity glow, and polished collectible spectacle.',
+      subject_treatment:
+        'Stage any subject as a premium collectible centerpiece with clean anime contours and rarity-coded emphasis.',
+      color_and_tone:
+        'Pastel jewel gradients, gold/opal foil accents, prismatic highlights, and high-key magical contrast.',
+      lighting_and_shadow:
+        'Sparkle bloom, rim halos, layered glow bursts, and glossy card-surface reflections.',
+      texture_and_material:
+        'Holographic foil grain, embossed frame detail, soft star particles, and smooth digital anime finish.',
+      camera_and_composition:
+        'Vertical card-like framing, ornate border hierarchy, central focus window, and balanced negative space.',
+      atmosphere_and_mood:
+        'Desirable, premium, celebratory mood without requiring characters, card text, stats, weapons, or mascots.',
+      rendering_and_quality:
+        'Clean collectible asset polish, no readable typography, no cluttered UI, controlled sparkle density.',
     },
   },
   {
     id: 'SP06-115',
-    name: 'Horror Survival Safe Room',
+    name: 'Survival Horror Save-Room Lighting',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt: 'watermark, text, literal room requirement, monster requirement, gore',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Survival-horror save-room style with static-camera dread, low-resource warmth, and PS2-era atmospheric grime.',
+      subject_treatment:
+        'Make any subject feel temporarily protected yet unsafe through restrained staging and fragile focal calm.',
+      color_and_tone:
+        'Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low values.',
+      lighting_and_shadow:
+        'Weak lamp pools, vignetted corners, deep occlusion, and suspenseful off-frame darkness.',
+      texture_and_material:
+        'Low-poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise.',
+      camera_and_composition:
+        'Fixed-camera composition, slightly awkward perspective, negative-space tension, and deliberate stillness.',
+      atmosphere_and_mood:
+        'Claustrophobic, quiet, uneasy mood without requiring rooms, typewriters, doors, monsters, or gore.',
+      rendering_and_quality:
+        'Retro survival-horror finish, controlled darkness, readable focal area, no UI or readable text.',
     },
   },
   {
     id: 'SP06-116',
-    name: 'Stealth Game Night City Rooftops',
+    name: 'Stealth Game Shadow Readability',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt:
+      'watermark, text, literal rooftop requirement, guard requirement, weapon requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Stealth-game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition.',
+      subject_treatment:
+        'Break any subject into concealment-ready silhouettes, light-safe edges, and readable exposure states.',
+      color_and_tone:
+        'Blue-black shadows, sodium or cyan guard-light accents, desaturated mids, and sharp visibility contrast.',
+      lighting_and_shadow:
+        'Hard pools of detection light, broad occluding darkness, rim hints, and value-coded safe/danger zones.',
+      texture_and_material:
+        'Damp concrete-like roughness, soft bloom in lit areas, subtle grain, and minimal shiny distractions.',
+      camera_and_composition:
+        'Oblique surveillance framing, strong occluder shapes, path-like negative space, and clear stealth lanes.',
+      atmosphere_and_mood:
+        'Suspenseful, quiet, covert mood without requiring rooftops, cities, guards, weapons, or night exteriors.',
+      rendering_and_quality:
+        'Game-readable lighting design, clean silhouette hierarchy, no UI markers or readable text.',
     },
   },
   {
     id: 'SP06-117',
-    name: 'Arcade Racing Track Neon',
+    name: 'Arcade Racing Velocity Neon',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt: 'watermark, text, car requirement, race track requirement, readable signage',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Arcade-racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability.',
+      subject_treatment:
+        'Stretch any subject into velocity-forward forms with aerodynamic diagonals, luminous edges, and impact streaks.',
+      color_and_tone:
+        'Hot magenta, cyan, lime, black asphalt-like neutrals, and intense specular contrast.',
+      lighting_and_shadow:
+        'Neon reflections, tunnel-like light strips, streaked highlights, and long directional glow smears.',
+      texture_and_material:
+        'Glossy PBR-lite surfaces, motion-line bands, bloom haze, wet reflective grain, and compressed arcade sharpness.',
+      camera_and_composition:
+        'Low wide-angle velocity framing, vanishing-point pull, diagonal lane rhythm, and strong forward momentum.',
+      atmosphere_and_mood:
+        'Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or city nights.',
+      rendering_and_quality:
+        'High-energy arcade polish, controlled motion effects, no readable signage, no UI overlays.',
     },
   },
   {
     id: 'SP06-118',
-    name: 'RPG Item Pack Pixel Icons',
+    name: 'RPG Pixel Inventory Icon System',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, weapon requirement, potion requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'RPG pixel-inventory icon language with collectible clarity, tiny material storytelling, and consistent atlas rhythm.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Turn any subject into an inventory-ready icon with compact silhouette, clear rarity cue, and readable function.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Earthy base ramps, jewel accent colors, metal/leather/potion-like swatch logic, and strong outline contrast.',
+      lighting_and_shadow:
+        'Top-left icon lighting, tiny rim glints, soft contact shadow, and controlled highlight pixels.',
+      texture_and_material:
+        'Hand-placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Centered transparent-background icon framing, equal padding, stable scale, and consistent three-quarter tilt.',
+      atmosphere_and_mood:
+        'Lootable, tactile, game-ready mood without requiring weapons, potions, bags, or item sets.',
+      rendering_and_quality:
+        'Icon-sheet friendly, crisp low-res finish, no text, no background scene, no interpolation blur.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -363,23 +487,27 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-119',
-    name: 'Cozy Farm Sim Seasonal Pack',
+    name: 'Cozy Sim Seasonal Palette',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, background scene, farm requirement, crop requirement, animal requirement, watermark, text',
     style: {
       aesthetic:
-        'Sprite-ready game art with clear silhouette language and readable shape hierarchy.',
+        'Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand-crafted charm.',
       subject_treatment:
-        'Consistent proportions across frames, strong pose readability, clean action arcs.',
+        'Make any subject feel small, friendly, useful, and collectible through rounded forms and soft edge priorities.',
       color_and_tone:
-        'Limited palette with separated shadow, midtone, highlight, and accent ramps.',
-      lighting_and_shadow: 'Simple directional lighting that stays stable across animation frames.',
-      texture_and_material: 'Controlled pixel/noise detail that does not shimmer between frames.',
+        'Four-season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low-stress contrast.',
+      lighting_and_shadow:
+        'Soft ambient daylight, tiny contact shadows, seasonal color washes, and almost no harsh drama.',
+      texture_and_material:
+        'Gentle pixel grain, quilt-like pattern accents, soft organic noise, and tactile handmade detail.',
       camera_and_composition:
-        'Orthographic side or three-quarter view, centered subject, stable scale.',
-      atmosphere_and_mood: 'Expressive game feel without scene clutter or background dependency.',
-      rendering_and_quality: 'Animation-sheet friendly, crisp edges, no motion blur, no text.',
+        'Isometric or icon-atlas framing with tidy spacing, cozy negative space, and clear modular grouping.',
+      atmosphere_and_mood:
+        'Calm, domestic, nurturing mood without requiring farms, crops, animals, houses, or seasonal scenery.',
+      rendering_and_quality:
+        'Clean cozy-game polish, crisp but soft-edged pixels, no visual clutter, no readable labels.',
     },
     layout: {
       preferredFrameCount: 8,
@@ -389,18 +517,26 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-120',
-    name: 'Boss Encounter Cinematic Key Art',
+    name: 'Boss Encounter Key Art Tension',
     category: '7. Game Art Directions & UI',
-    negativePrompt: 'watermark, text',
+    negativePrompt: 'watermark, text, monster requirement, combat scene, weapon requirement',
     style: {
-      aesthetic: 'Overall visual style direction in one precise sentence.',
-      subject_treatment: 'How the subject is shaped, posed, rendered, or stylized.',
-      color_and_tone: 'Palette, contrast, grading, and tonal range.',
-      lighting_and_shadow: 'Light source, direction, softness, shadow behavior.',
-      texture_and_material: 'Surface detail, material feel, grain, fabric, skin, ink, pixels.',
-      camera_and_composition: 'Lens, framing, perspective, crop, depth of field, layout.',
-      atmosphere_and_mood: 'Emotional tone, scene energy, ambient quality.',
-      rendering_and_quality: 'Output polish, fidelity, medium-specific finish.',
+      aesthetic:
+        'Boss-encounter key-art style with asymmetrical scale tension, ominous focal pressure, and cinematic game polish.',
+      subject_treatment:
+        'Cast any subject as a dramatic threat or challenge through exaggerated scale contrast and dominant silhouette mass.',
+      color_and_tone:
+        'Deep cinematic shadows, one menacing accent hue, hot edge highlights, and severe value separation.',
+      lighting_and_shadow:
+        'Backlit menace, rim-fire accents, volumetric haze, and large shadow shapes pressing into focal space.',
+      texture_and_material:
+        'Polished concept-art brushwork, scratched material detail, smoke particles, and sharpened focal textures.',
+      camera_and_composition:
+        'Low-angle or compressed wide key-art crop, huge negative-space pressure, diagonal confrontation rhythm.',
+      atmosphere_and_mood:
+        'Climactic, dangerous, awe-heavy mood without requiring monsters, combat, weapons, arenas, or heroes.',
+      rendering_and_quality:
+        'Finished cinematic key-art quality, readable thumbnail silhouette, no UI, no logo, no readable text.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

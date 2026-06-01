@@ -12,15 +12,18 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Editorial environmental portraiture, subject in their natural workspace or habitat
-  subject_treatment: Subject integrated with surroundings, sharp details across the frame, storytelling composition
+  aesthetic: Editorial environmental-portrait grammar, subject integrated with meaningful context
+  subject_treatment: Primary subject integrated with surroundings, sharp details across the frame, storytelling composition
   color_and_tone: Natural and balanced color palette, rich environmental tones, true-to-life colors
   lighting_and_shadow: Mixed ambient lighting with subtle flash fill, balanced exposure between subject and background
-  texture_and_material: Sharp details on contextual props, realistic textures of the environment
+  texture_and_material: Sharp contextual detail, realistic textures, material clues that support narrative
   camera_and_composition: Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing
   atmosphere_and_mood: Informative, personal, narrative-driven, authentic
   rendering_and_quality: Editorial magazine quality, high resolution, crisp details
-  creative_brief: A room that finishes the sentence a face begins, tools and bookshelves and window light conspiring to reveal the unseen architecture of a life. Every surface becomes a clue, every shadow a collaborator in the slow unfolding of identity rendered visible through its native habitat. The space exhales its occupant, the workshop or kitchen or studio becoming a second portrait, more honest than any studio backdrop could ever be.
+  creative_brief: >-
+    Apply environmental portrait logic to any subject: contextual clues,
+    balanced subject-background exposure, narrative texture, and editorial
+    realism without forcing a workspace, room, props, or human sitter.
 avoidRules:
   - illustration
   - painting

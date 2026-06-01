@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-026
 packId: pack_16
-name: Ronin Temple Standoff
+name: Pre-Impact Ritual Stillness Style
 category: 4. Samurais & Medieval
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Prestige samurai minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.
-  form_and_line: Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around weapon-bearing limbs to amplify intent.
+  aesthetic: Prestige martial minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.
+  form_and_line: Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around poised limbs to amplify intent.
   color_palette: Slate mineral neutrals, lacquer crimson accents, and indigo night tones with sparse warm punctuation.
-  lighting_setup: Raking lateral key with low lantern bounce, keeping facial planes half-obscured and blade edges selectively highlighted.
-  material_texture: Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished steel micro-glints.
+  lighting_setup: Raking lateral key with low warm bounce, keeping facial planes half-obscured and edge highlights selective.
+  material_texture: Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished micro-glints.
   render_quality: High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.
-  spatial_distortion: Axial temple perspective with compressed midground, creating a pressure chamber effect around opposing vectors.
+  spatial_distortion: Axial threshold perspective with compressed midground, creating a pressure chamber effect around opposing vectors.
   atmosphere: Ceremonial tension, disciplined breath control, and the sensation that motion is being withheld by code.
-  key_features: Static-ready stance geometry, controlled sleeve and haori wind cues, ritual threshold asymmetry, and line-of-sight dominance.
-  creative_brief: Build a reusable pre-duel grammar for any subject by prioritizing poised silhouettes, selective steel highlights, and compositional stillness that feels seconds away from release.
+  key_features: Static-ready stance geometry, controlled fabric wind cues, ritual threshold asymmetry, and line-of-sight dominance.
+  creative_brief: >-
+    Build a reusable pre-impact ritual stillness grammar for any subject:
+    poised silhouettes, selective metallic highlights, disciplined negative
+    space, and withheld motion without imposing ronin, temples, weapons,
+    samurai, duels, haori, or shrine thresholds.
 avoidRules:
   - photoreal
   - modern-firearms

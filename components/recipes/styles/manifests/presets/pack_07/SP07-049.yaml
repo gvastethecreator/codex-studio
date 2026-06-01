@@ -16,11 +16,11 @@ visualDna:
   form_and_line: Corredores de fairway en cinta, parábolas de bunker, microondas de green y visuales dirigidas por routing.
   color_palette: Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow
   lighting_setup: Neblina de mañana, ángulo bajo sobre fairway, brillo de rocío y dramatismo de sombra en bunker.
-  material_texture: Césped corto de corte preciso, arena rastrillada, agua lisa de hazard y señalética de bandera de alta visibilidad.
+  material_texture: Césped corto de corte preciso, arena rastrillada, agua lisa de hazard y señalética de alta visibilidad.
   render_quality: Visualización tournament-grade con lectura de mantenimiento y estrategia de juego a distancia.
   spatial_distortion: None
   atmosphere: Calma controlada, concentración competitiva y exclusividad curada.
-  key_features: Franjas de siega, bunkers de borde nítido, focos de pin y coreografía de hazards desde tee a green.
+  key_features: Franjas de siega, bunkers de borde nítido, focos de objetivo y coreografía de hazards.
   creative_brief: >-
     Define una gramática golf transferible por gradiente de turf, hazards
     estratégicos y legibilidad de ruta de juego. Debe comunicar precisión de

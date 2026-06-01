@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Glossy sci-fi reboot spectacle, Star Trek reboot energy, blinding anamorphic, JJ Abrams lens-flare overload
+  aesthetic: Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload
   form_and_line: Horizontal lines
   color_palette: Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white
   lighting_setup: Blinding, overexposed key, intentional flare-induction
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Sci-fi, action, summer-blockbuster spectacle, visual overload
   spatial_distortion: Washed out, flare-bleached, contrast-erased bloom
   atmosphere: Future, bright, optimistic spectacle, epic scale
-  key_features: Horizontal flare, anamorphic streak, JJ Abrams blue-line bloom
-  creative_brief: The frame itself bleeds light, overwhelmed by a horizontal scripture of cyan and white that streaks across the lens like a signature of wonder. Contrast surrenders to bloom; detail gives way to dazzle. This is cinema as awe, where the camera itself becomes the most expressive character in the scene.
+  key_features: Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout
+  creative_brief: 'Use anamorphic overflare as the style driver: horizontal cyan-white streaks, blown highlights, lens-element reflections, bloom washout, and glossy blockbuster dazzle. Avoid requiring starships, space, crews, or sci-fi props. The camera artifacts should become the spectacle.'
 avoidRules:
   - matte
 assets:

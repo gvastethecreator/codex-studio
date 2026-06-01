@@ -18,13 +18,13 @@ visualDna:
   lighting_setup: Contraste fuerte por fuego, underglow geométrico y rims nítidos que recortan siluetas agresivas.
   material_texture: Superficie cel limpia, bordes de hollín, gradientes de llama estilizada y textil negro mate.
   render_quality: Acción estilizada de lectura icónica con diseño de forma dominante sobre detalle realista.
-  spatial_distortion: Angular anatomy, sharp perspective cuts, grin-led facial geometry, icon-heavy pose language
+  spatial_distortion: Angular anatomy, sharp perspective cuts, grin-led focal geometry, and icon-heavy pose language
   atmosphere: Incendiaria, insolente y lúdicamente siniestra.
-  key_features: Motivo triangular persistente, rostros grin-centric, geometría de fuego y silueta street-goth limpia.
+  key_features: Motivo triangular persistente, grin-centric geometry, fuego angular y silueta street-goth limpia.
   creative_brief: >-
     Define una gramática reusable de triangle-grin donde fuego angular,
     expresividad dentada y contraste gráfico sostengan identidad agresiva sin
-    depender de un personaje específico.
+    depender de rostro, personaje, uniforme o combate específico.
 avoidRules:
   - still
   - calm

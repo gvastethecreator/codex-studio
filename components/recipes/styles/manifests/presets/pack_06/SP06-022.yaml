@@ -17,11 +17,11 @@ visualDna:
   color_palette: Bold, unblended
   lighting_setup: Flat
   material_texture: Sticky wax, sgraffito
-  render_quality: Childlike, expressive
+  render_quality: Direct, tactile, expressive
   spatial_distortion: Rough shapes
   atmosphere: Playful, bold
   key_features: Chunky texture
-  creative_brief: Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves a chunky residue like crayon on sidewalk, boldness substituting for precision. The image celebrates the hand that does not apologize for its grip.
+  creative_brief: Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves chunky residue, pressure ridges, and scraped interruptions that make process visible. The image celebrates a hand that does not apologize for force, friction, or imperfect coverage.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

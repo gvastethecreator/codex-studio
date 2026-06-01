@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk city, perpetual night, towering megastructures, synth underscore
+  aesthetic: Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore
   form_and_line: None
   color_palette: Neon Blue/Pink + Smoke, electric magenta, toxic green
   lighting_setup: Low key + Neon, volumetric haze, wet reflections
-  material_texture: Anamorphic lens flare, rain-slicked surfaces, brushed metal
+  material_texture: Anamorphic lens flare, wet reflective surfaces, brushed metal
   render_quality: Atmospheric, practical FX, miniatures, matte painting
   spatial_distortion: None
   atmosphere: Dystopian, cool, synthetic, nocturnal
-  key_features: Smoke, towering ads, spinner vehicle
-  creative_brief: Perpetual midnight breathes through towering corporate monoliths, their surfaces alive with flickering advertisements for futures that never arrived. Light bleeds magenta and cyan through synthetic fog, pooling on wet asphalt like the afterimage of a dream half-remembered.
+  key_features: Smoke, neon haze, wet reflections
+  creative_brief: '80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar without forcing megacity, ads, vehicles, or corporate monoliths.'
 avoidRules:
   - modern cgi
 assets:

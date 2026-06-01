@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-167
 packId: pack_16
-name: Outlaw Star - Engine-Trail Treasure Chase
+name: Engine-Trail Outlaw Adventure Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Aventura espacial pulp de cazarrecompensas y tesoro, con bravado outlaw y optimismo cósmico áspero.
-  form_and_line: Línea 90s de acción nítida, pose de tripulación descarada y lectura mecánica de maniobra naval.
-  color_palette: Azules profundos de vacío, naranjas de estela, metales cálidos de hangar y neón de puerto.
-  lighting_setup: Contraste dinámico de cabina y exterior estelar con highlights de propulsión y reflejo de casco.
-  material_texture: Chapa usada, paneles de nave, textiles utilitarios y grano analógico de space-western anime.
-  render_quality: Acabado premium noventero con ritmo de persecución y claridad de set-piece orbital.
-  spatial_distortion: Composición de ruta interestelar con encuadre de dogfight, abordaje y escape improvisado.
-  atmosphere: Aventurera, chulesca, estelar y callejera.
-  key_features: Siluetas de nave distintivas, estelas largas, ropa outlaw y mapas de ruta cósmica.
-  creative_brief: Define una gramática reusable de aventura espacial buscatesoros para cualquier sujeto, priorizando libertad, riesgo y espíritu de tripulación.
+  aesthetic: Aventura pulp de estela cinética, bravado outlaw, optimismo cósmico áspero y riesgo improvisado.
+  form_and_line: Línea 90s de acción nítida, pose descarada, lectura mecánica abstracta y maniobra en diagonal.
+  color_palette: Azules profundos, naranjas de estela, metales cálidos usados y neón periférico abstracto.
+  lighting_setup: Contraste dinámico entre sombra técnica y exterior luminoso, highlights de propulsión y reflejo duro.
+  material_texture: Chapa usada, paneles técnicos, textiles utilitarios y grano analógico de space-western anime.
+  render_quality: Acabado premium noventero con ritmo de escape y claridad de impulso cinético.
+  spatial_distortion: Composición de trayectoria extrema con diagonales de escape, abordaje abstracto y maniobra improvisada.
+  atmosphere: Aventurera, chulesca, estelar y peligrosa.
+  key_features: Estelas largas, actitud outlaw, mapas de trayectoria abstractos y optimismo de escape peligroso.
+  creative_brief: >-
+    Define una gramática reusable de engine-trail-outlaw-adventure para
+    cualquier sujeto, priorizando libertad, riesgo, estela cinética y espíritu
+    de alianza improvisada sin imponer naves, hangares, cazarrecompensas, tesoros,
+    dogfights, mapas ni puertos.
 avoidRules:
   - realistic
   - 3d render

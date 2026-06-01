@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Submarine-club decopunk where nautical pressure, elite secrecy, and warm alcohol light compress into one sealed room.
-  form_and_line: Porthole constellations, curved stair rails, fan ceiling ribs, pressure-hull arcs, and booth capsules tucked into walls.
+  aesthetic: Submarine-club decopunk where nautical pressure, elite secrecy, and amber light compress into sealed glamour.
+  form_and_line: Porthole constellations, curved rail marks, fan ribs, pressure-hull arcs, and booth-like capsules.
   color_palette: Naval midnight, aged brass, ivory enamel, cigar brown, and faint sonar green.
   lighting_setup: Low sconces, focused table pools, brass porthole halos, and muted green instrument glows.
   material_texture: Polished teak, brass trim, leather seating, smoked glass, enamel navigation plaques, and condensation on portholes.
   render_quality: Intimate interior concept with rich material contrast and compressed social geography.
-  spatial_distortion: Curved lounge plan wraps the viewer like a pressure hull, hiding booths behind bar arcs and stair turns.
+  spatial_distortion: Curved pressure-hull composition wraps the viewer with hidden pocket depth.
   atmosphere: Confidential luxury, engineered nostalgia, submerged paranoia, and old-money warmth.
-  key_features: Brass bar ribs, sonar mural rings, booth capsules, nautical gauges, porthole mirrors, and hidden service hatches.
+  key_features: Brass ribbing, sonar mural rings, capsule pockets, nautical gauges, porthole mirrors, and hidden hatch seams.
   creative_brief: >-
     Preserve deco submarine-club grammar as a reusable style system:
     sealed porthole rhythm, teak-brass pressure intimacy, and confidential

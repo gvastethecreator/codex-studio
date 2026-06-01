@@ -14,32 +14,29 @@ tags:
 visualDna:
   aesthetic: Naturalismo humano silencioso centrado en microgesto cotidiano, peso corporal creíble y ternura observacional anti-espectáculo.
   form_and_line: Contorno natural discreto, estilización mínima y claridad en gesto funcional de vida diaria.
-  color_palette: Soft beige, denim blue, skin-warm peach, kitchen white, rainy grey, muted green
-  lighting_setup: Luz de ventana natural, rebote interior moderado, suavidad nublada y prácticos domésticos de escala humana.
-  material_texture: Algodón usado, superficies de cocina vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.
+  color_palette: Soft beige, denim blue, skin-warm peach, lived-in white, rainy grey, muted green
+  lighting_setup: Luz natural suave, rebote interior moderado, suavidad nublada y prácticos de escala humana.
+  material_texture: Algodón usado, superficies vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.
   render_quality: Realismo animado íntimo con temporalidad pausada y lectura fina de comportamiento humano.
-  spatial_distortion: Believable anatomy, restrained perspective, human-scale room depth, natural gait and gesture
+  spatial_distortion: Believable anatomy, restrained perspective, human-scale depth, natural gait and gesture
   atmosphere: Íntima, modesta y arraigada, con gravedad emocional cotidiana.
-  key_features: Body language observada, interiores habitados, peso postural natural y timing gestual realista.
+  key_features: Body language observada, espacios habitados, peso postural natural y timing gestual realista.
   creative_brief: >-
     Construye una gramática quiet-human reusable donde microgesto, iluminación
-    doméstica y materialidad vivida transmitan emoción sin subrayado ni
-    espectacularidad externa.
+    natural y materialidad vivida transmitan emoción sin exigir cocina,
+    interior doméstico, vidrio lluvioso o escena humana específica.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - exaggerated action pose
+  - glossy fantasy effects
+  - chibi simplification
+  - neon spectacle
+  - cinematic explosions
+  - idealized glamour anatomy
+  - plastic 3d render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-333.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

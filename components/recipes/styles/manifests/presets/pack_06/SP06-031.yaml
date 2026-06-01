@@ -17,11 +17,11 @@ visualDna:
   color_palette: Black ink, cream paper
   lighting_setup: Linear shading
   material_texture: Plate tone, embossed paper
-  render_quality: Rembrandt, detailed
+  render_quality: Old-master intaglio detail with plate-pressure tactility
   spatial_distortion: None
   atmosphere: Antique, classic
   key_features: Plate mark
-  creative_brief: Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Each print carries the ghost of the artist breathing over the acid bath.
+  creative_brief: Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Every line should feel bitten, fuzzy, pressured, and impossible to mistake for clean digital ink.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

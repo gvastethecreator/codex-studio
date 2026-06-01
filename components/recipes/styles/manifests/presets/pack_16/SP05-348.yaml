@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-348
 packId: pack_16
-name: Ace of Diamond - Mound Duel Summer Heat
+name: Summer Precision Duel Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Béisbol de torneo escolar centrado en batería pitcher-catcher, control de zona y tensión de inning decisivo.
-  form_and_line: Mecánica de lanzamiento detallada, lectura de señas y anatomía de transferencia cinética precisa.
-  color_palette: Azules de uniforme, tierra rojiza de diamante, blancos de cal y dorado cálido de verano.
-  lighting_setup: Sol alto de estadio con rebote en polvo y contraluz de tribuna sobre montículo.
-  material_texture: Arcilla seca, cuero de guante, costura de pelota, tela técnica y metálico de dugout.
-  render_quality: Sports frame de alta nitidez con prioridad visual en señal, release y recepción.
-  spatial_distortion: Perspectiva pitcher-to-plate con compresión dramática de distancia y foco en trayectoria.
+  aesthetic: Deporte de precisión bajo calor estival, control de zona, duelo mental y tensión de instante decisivo.
+  form_and_line: Mecánica cinética abstracta, lectura de señales y anatomía de transferencia precisa.
+  color_palette: Azules funcionales, rojizos secos de presión, blancos de marca gráfica y dorado cálido de verano.
+  lighting_setup: Sol alto competitivo con rebote en polvo y contraluz duro sobre el eje de objetivo.
+  material_texture: Polvo seco, cuero abstracto, marcas de fricción sugeridas, tela técnica y borde metálico.
+  render_quality: Frame competitivo de alta nitidez con prioridad visual en señal, liberación abstracta y respuesta.
+  spatial_distortion: Perspectiva de objetivo con compresión dramática de distancia y foco en trayectoria.
   atmosphere: Concentrada, calurosa y disciplinadamente juvenil.
-  key_features: Foco en mitt receptor, geometría de diamante, tensión de banca y postura de montículo.
+  key_features: Foco de objetivo, geometría estratégica, tensión lateral, postura contenida y calor competitivo.
   creative_brief: >-
-    Construye una gramática reusable de mound-duel-baseball donde diálogo
-    pitcher-catcher, presión de torneo y materialidad de diamante sostengan
-    identidad visual sin atarse a una jugada única.
+    Aplica una gramática reusable de duelo deportivo preciso a cualquier prompt o imagen de entrada:
+    objetivo, calor y lectura mental sin imponer baseball, guantes, montículo, dugout ni inning.
 avoidRules:
   - realistic
   - 3d render

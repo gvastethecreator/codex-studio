@@ -18,10 +18,10 @@ visualDna:
   lighting_setup: Screen blend, additive exposure, in-camera double-strike
   material_texture: Complex, layered transparency, film-sandwich density
   render_quality: Artsy, dream, visual poetry, memory-merge
-  spatial_distortion: Overlap, face-in-landscape, figure-in-figure
-  atmosphere: Surreal, memory, dual identity, fleeting connection
-  key_features: Two subjects, silhouette-within-silhouette, nature-portrait fusion
-  creative_brief: Two realities share one frame, bleeding into each other like memories overlapping in a half-remembered dream. A face becomes a forest, a silhouette becomes a mountain range—identities dissolve boundaries, and the image becomes a palimpsest of presence, each layer whispering through the one beneath it.
+  spatial_distortion: Overlap, layer nesting, translucent registration drift
+  atmosphere: Surreal, memory, dual exposure, fleeting connection
+  key_features: Layer blend, silhouette mask, translucent density, exposure sandwich
+  creative_brief: 'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface.'
 avoidRules:
   - single image
 assets:

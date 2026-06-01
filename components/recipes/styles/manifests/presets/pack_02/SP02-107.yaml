@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Lonely farmhouse horror cartoon, pink dog panic, grotesque villains in empty landscapes, Midwestern doom silence, haunted domesticity, uncanny CGI inserts, fear made cute and shrill
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Moonlit rural isolation, dusty lamp glow, sudden horror spotlights, red-alert interior panic lighting
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill
+  form_and_line: Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing
+  color_palette: Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow
+  lighting_setup: Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting
+  material_texture: Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture
+  render_quality: Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread
+  spatial_distortion: Negative-space expansion, tiny form against vast field, sudden insert scale shock
   atmosphere: Terrified, lonely, surreal, absurd
-  key_features: Isolated farmhouse staging, screaming reaction poses, uncanny intruders, pastel panic, dead-field emptiness
-  creative_brief: The field stretches to every horizon under a sky that offers no witness, pink fur the only soft thing trembling between dead rows of corn and an approaching shape that should not exist. Home is where the horror nests, but love keeps you tethered to the floorboards even as the walls begin to breathe. Silence is the scariest sound in the country, broken only by the whimper of a creature too brave to run.
+  key_features: Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition
+  creative_brief: 'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure.'
 avoidRules:
   - digital
   - HD

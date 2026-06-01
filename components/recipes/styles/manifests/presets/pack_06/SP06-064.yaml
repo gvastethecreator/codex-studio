@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: None
   atmosphere: Mysterious, collection
   key_features: Shadow box
-  creative_brief: Found objects arranged in a box become diorama, become theater, become universe in miniature. Rust dialogues with plastic, wood with glass, the found speaking to the made across material boundaries. The image is a collection that became a composition, taxonomy elevated to poetics.
+  creative_brief: Found-material logic becomes spatial composition, with rust dialoguing with plastic, wood with glass, and the found speaking to the made across material boundaries. Shadow, depth, and object scale create a sculptural collage grammar without requiring boxes, dioramas, or literal collections. Taxonomy turns into poetics through placement.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - shadow box requirement
+  - literal collection
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-064.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

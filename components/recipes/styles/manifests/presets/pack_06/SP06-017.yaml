@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Gestural
   atmosphere: Dark, intense
   key_features: Smudged texture
-  creative_brief: Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from chaos like a figure stepping out of smoke. The drawing lives in the tension between accident and intention.
+  creative_brief: Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from pressure, subtraction, and haze. The drawing lives in the tension between accident and intention.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

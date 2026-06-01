@@ -19,9 +19,9 @@ visualDna:
   material_texture: Fine grain, dye-cloud smooth, archival stability
   render_quality: Vivid, nostalgic, mid-century optimism, slide-projector glow
   spatial_distortion: None
-  atmosphere: Sunny, classic, road-trip freedom, post-war Americana
-  key_features: Deep blacks, red pop, car tailfin, roadside motel
-  creative_brief: Sunlight thickened to syrup, poured across chrome bumpers and endless highway. Colors assert themselves with the confidence of a decade that believed in tomorrow — reds that ache, blues that stretch to the horizon, golds that hum with promise. Each frame is a postcard from an America still writing its own mythology, projected through a carousel clicking forward into the warm dark.
+  atmosphere: Sunny, classic, optimistic, slide-projector memory
+  key_features: Deep blacks, red pop, golden highlights, fine grain, projected slide glow
+  creative_brief: 'Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways, motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently mid-century.'
 avoidRules:
   - faded
   - digital

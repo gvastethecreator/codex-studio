@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-026
 packId: pack_16
-name: Masked Rebellion Mecha
+name: Operatic Rebellion Strategy Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,21 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Theatrical poses, insurgent iconography, elegant mecha conflict, high drama, knightmare frames, dominating royal costumes, tactical command rooms
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  aesthetic: Operatic rebellion strategy with theatrical command, aristocratic severity, masked intent, and elegant political tension.
+  form_and_line: Smooth vector-like anime strokes, crisp contour clarity, cape-like silhouette geometry, chessboard blocking, and declarative pose design.
+  color_palette: Imperial crimson, polished black, royal violet, cold white, gold trim accents, and saturated early-HD emergency glow.
+  lighting_setup: Polished gradient highlights, spotlight-like command keys, crimson rim light, and clean fill for graphic hierarchy.
+  material_texture: Smooth digital cel polish, lacquered black surfaces, ceremonial cloth sheen, tactical glass glow, and subtle composite grain.
+  render_quality: Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama readability.
+  spatial_distortion: Strategic overhead cues, theatrical diagonals, throne-like negative space, and compressed command-board perspective.
   atmosphere: Grand, strategic, dramatic, political
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: Masked revolutionaries command the chessboard of empire beneath vaulted ceilings and tactical glow-lines. Armored silhouettes carve drama from shadow and resolve, each frame a manifesto of elegant defiance rendered in early-digital cel paint. Knightmare frames catch the crimson of a sunset that has seen too much, and still the rebellion burns.
+  key_features: Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant defiance.
+  creative_brief: >-
+    Build a reusable operatic-rebellion strategy grammar for any subject or
+    input image: command posture, aristocratic tension, crimson-black graphic
+    hierarchy, masked intent, and early-digital political drama without
+    imposing mecha, royal costumes, command rooms, revolutionaries, masks, or
+    empire scenes.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Traveling princess energy, historical fantasy clothing, scenic horizons, heartfelt loyalty, red-hair heroine, shoujo sparkle eyes, countryside travelogue, mythical war backdrop
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Crimson quest romance built from brave shojo adventure, loyal warmth, wind-swept emotion, noble resolve, and jewel-toned historical-fantasy elegance
+  form_and_line: Delicate romance linework, flowing contour arcs, heroic-yet-soft posture, fine eyelash detail, and wind-guided directional rhythm
+  color_palette: Crimson accents, rose warmth, pearl luminosity, soft sky fields, jewel greens, and gentle gold highlights
+  lighting_setup: Soft bloom, clear rim light, luminous horizon glow, butterfly portrait softness, and gentle adventure-key illumination
+  material_texture: Airy fabrics, silk sheen, delicate trim textures, chiffon translucency, brushed leather notes, and soft metallic ornament
+  render_quality: Luminous romance-adventure frame with ethereal bloom, soft-focus beauty, heroic clarity, and dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, sweeping wind vectors, horizon-scale emotional breadth, and romantic silhouette styling
   atmosphere: Adventurous, romantic, sweeping, brave
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Crimson hair streams across wind-swept horizons as a princess-turned-warrior gathers loyal souls beneath ancient skies, shoujo sparkle eyes reflecting not just love but the fire of a kingdom awaiting its dawn. Every countryside vista is a page in a travelogue of courage, and every arrow is hope made trajectory.
+  key_features: Brave shojo resolve, crimson accent identity, loyalty warmth, wind-swept romance, expressive eye detail
+  creative_brief: >-
+    Use the crimson quest title as a style anchor for romantic adventure:
+    wind, resolve, loyalty, and jewel-toned shojo grandeur should apply freely
+    without requiring a princess, heroine, countryside travelogue, war backdrop,
+    or specific hair color.
 avoidRules:
   - realistic
   - 3d render

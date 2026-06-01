@@ -9,14 +9,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, sci-fi-ui, flat-colors',
     style: {
-      aesthetic: 'Theatrical court intrigue with dark baroque aesthetics.',
-      subject_treatment: 'Masked murderers among nobles and curtains.',
-      color_and_tone: 'Burgundy, velvet black, and aged gold.',
-      lighting_and_shadow: 'Dramatic lamps with strong scenic contrast.',
-      texture_and_material: 'Silk, polished marble and decorated steel.',
-      camera_and_composition: 'Frontal composition in narrative-tableau style.',
-      atmosphere_and_mood: 'Lethal elegance and social paranoia.',
-      rendering_and_quality: 'Visual key of factions and plot.',
+      aesthetic:
+        'Immersive-sim de asesinato cortesano con barroco oscuro, infiltración social y manipulación de facciones.',
+      subject_treatment:
+        'Roles de stealth/disguise/assassin con lectura por máscara, postura y vestuario de clase.',
+      color_and_tone:
+        'Burdeos, negro terciopelo y oro envejecido para codificar estatus y amenaza.',
+      lighting_and_shadow:
+        'Lámparas dramáticas con alto contraste para rutas de ocultamiento y ventanas de ejecución.',
+      texture_and_material:
+        'Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.',
+      camera_and_composition:
+        'Tableau frontal con capas de foreground para line-of-sight y rutas silenciosas.',
+      atmosphere_and_mood: 'Elegancia letal, paranoia social y tensión ritualizada.',
+      rendering_and_quality:
+        'Faction key-art orientado a sandbox sistémico, lectura de sospecha y agencia del jugador.',
     },
   },
   {
@@ -25,14 +32,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, cheerful-light, clean-surfaces',
     style: {
-      aesthetic: 'Postindustrial horror in abandoned underground network.',
-      subject_treatment: 'Mutated creatures emerging from rusted train cars.',
-      color_and_tone: 'Toxic greens, black shadows, and signal red.',
-      lighting_and_shadow: 'Flickering tubes and halos of humidity.',
-      texture_and_material: 'Rust, mold, wet concrete, and exposed wires.',
-      camera_and_composition: 'Narrow hallway with threat in depth.',
-      atmosphere_and_mood: 'Discomfort, confinement, and constant alertness.',
-      rendering_and_quality: 'Survival scene with focus on environmental tension.',
+      aesthetic:
+        'Survival-horror postindustrial de metro abandonado, con loops de recursos, stealth y encounters de proximidad.',
+      subject_treatment:
+        'Mutantes por clase de amenaza y lectura de comportamiento (lurker/rusher/brute) en espacios cerrados.',
+      color_and_tone:
+        'Verde tóxico, negro húmedo y rojo señal para navegación de riesgo y objetivos de escape.',
+      lighting_and_shadow:
+        'Fluorescentes inestables, parches oscuros y halos de humedad que alteran visibilidad.',
+      texture_and_material:
+        'Óxido, moho, hormigón mojado, cableado expuesto y residuos orgánicos intrusivos.',
+      camera_and_composition:
+        'Pasillos estrechos con profundidad amenazante y rutas secundarias de evasión.',
+      atmosphere_and_mood: 'Opresiva, incómoda y paranoica.',
+      rendering_and_quality:
+        'Horror gameplay con tensión ambiental sostenida y telemetría visual de peligro.',
     },
   },
   {
@@ -41,14 +55,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, static, flat-light',
     style: {
-      aesthetic: 'Arcade adventure in a mechanical temple of ancient traps.',
-      subject_treatment: 'Fast explorer with lightweight relic-hunter gear.',
-      color_and_tone: 'Ancient sand, jade, and alert red.',
-      lighting_and_shadow: 'Sun rays slicing through geometric cuts.',
-      texture_and_material: 'Carved stone, wood, and oxidized metal.',
-      camera_and_composition: 'Escape-oriented perspective with extreme depth.',
-      atmosphere_and_mood: 'Urgency, quick reflexes, and constant risk.',
-      rendering_and_quality: 'High-readability endless-runner environment.',
+      aesthetic:
+        'Runner-adventure de trampas mecánicas con loop de reflejos, timing y memorización de patrones.',
+      subject_treatment:
+        'Explorer ligero con kit relic-hunter y señales claras de vulnerabilidad/ventana de acción.',
+      color_and_tone:
+        'Arena ancestral, jade funcional y rojo alerta para telegraph de peligro inmediato.',
+      lighting_and_shadow:
+        'Rayos solares recortados y contraste direccional para anticipar obstáculos secuenciados.',
+      texture_and_material:
+        'Piedra tallada, madera estructural y metal oxidado de mecanismos activos.',
+      camera_and_composition:
+        'Perspectiva de fuga con profundidad extrema, lanes y puntos de salto inequívocos.',
+      atmosphere_and_mood: 'Urgente, rítmica y punitiva, de riesgo constante.',
+      rendering_and_quality:
+        'Entorno endless-runner gameplay-first con lectura instantánea de hazards y ritmo.',
     },
   },
   {
@@ -57,14 +78,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, clean-theme, low-contrast',
     style: {
-      aesthetic: 'Cursed amusement park with colorful grotesque aesthetics.',
-      subject_treatment: 'Clown bosses and lethal attraction automatons.',
-      color_and_tone: 'Dirty yellow, carmine red, and spectral violet.',
-      lighting_and_shadow: 'Flickering fair lights and theatrical fog.',
-      texture_and_material: 'Peeling paint, old canvas, and oxidized metal.',
-      camera_and_composition: 'Tent entrance as the danger focal point.',
-      atmosphere_and_mood: 'Playful unease and unpredictable chaos.',
-      rendering_and_quality: 'Boss-rush stage with strong identity.',
+      aesthetic:
+        'Horror-action de parque maldito con diseño de encounter arena, telegraphs engañosos y progresión por zonas corruptas.',
+      subject_treatment:
+        'Arquetipos ringmaster monstruoso, atracciones fallidas hostiles y simbología mascot-fear como señal de mecánica.',
+      color_and_tone:
+        'Amarillos nicotina, carmín coagulado, violeta amoratado y blanco sodio intermitente para inestabilidad emocional.',
+      lighting_and_shadow:
+        'Parpadeo errático de marquesina, estrobos prácticos y sombras profundas en bordes de circulación.',
+      texture_and_material:
+        'Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.',
+      camera_and_composition:
+        'Entradas en choke-point con revelación escalonada de amenazas y funnels de presión.',
+      atmosphere_and_mood: 'Macabra, burlona y crecientemente impredecible.',
+      rendering_and_quality:
+        'Encounter key-art de alto impacto con legibilidad de fases de boss y hazards ambientales grotescos.',
     },
   },
   {
@@ -73,14 +101,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, daylight, flat',
     style: {
-      aesthetic: 'Night raid on a castle covered in magical thorns.',
-      subject_treatment: 'Raid team with clearly differentiated roles.',
-      color_and_tone: 'Moon blue, dark green, and ritual red.',
-      lighting_and_shadow: 'Sparse torches and silver mist.',
-      texture_and_material: 'Wet stone, vines, and old iron.',
-      camera_and_composition: 'High walls with a clear entry point.',
-      atmosphere_and_mood: 'Calculated risk and collective bravery.',
-      rendering_and_quality: 'Dungeon-raid opening scene.',
+      aesthetic:
+        'Dungeon-raid nocturno en fortaleza de espinas arcanas, orientado a asalto coordinado y progresión por capas defensivas.',
+      subject_treatment:
+        'Equipo de incursión con roles explícitos de brecha, soporte, control y eliminación prioritaria.',
+      color_and_tone:
+        'Azul lunar, verde oscuro y rojo ritual para lectura de ruta, trampa y objetivo.',
+      lighting_and_shadow:
+        'Antorchas escasas, niebla plateada y sombras profundas para windows de entrada.',
+      texture_and_material:
+        'Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.',
+      camera_and_composition:
+        'Murallas altas con punto de entrada claro y rutas secundarias de infiltración.',
+      atmosphere_and_mood: 'Calculada, valiente y tensa en cooperación.',
+      rendering_and_quality:
+        'Raid-opening gameplay art con claridad de acceso, amenaza y priorización táctica.',
     },
   },
   {
@@ -89,14 +124,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, tropical, lowres',
     style: {
-      aesthetic: 'Arctic horror at an isolated signal station.',
-      subject_treatment: 'Armed technicians against unknown entities.',
-      color_and_tone: 'Gray white, emergency red, and metallic blue.',
-      lighting_and_shadow: 'Rotating beacon and omnipresent darkness.',
-      texture_and_material: 'Packed snow, cold steel, and frost.',
-      camera_and_composition: 'Central tower in an extremely empty landscape.',
-      atmosphere_and_mood: 'Isolation, panic, and resilience.',
-      rendering_and_quality: 'Survival visual with strong identity.',
+      aesthetic:
+        'Survival-horror polar en estación de señal aislada, centrado en reparación de sistemas y defensa de perímetro.',
+      subject_treatment:
+        'Técnicos armados vs entidades desconocidas, con lectura de rol por herramienta y protocolo.',
+      color_and_tone:
+        'Blanco grisáceo, rojo emergencia y azul metálico para jerarquía de estado crítico.',
+      lighting_and_shadow:
+        'Baliza rotatoria, penumbra dominante y ventanas de visibilidad intermitente.',
+      texture_and_material:
+        'Nieve compacta, acero helado, escarcha y cableado expuesto por clima extremo.',
+      camera_and_composition:
+        'Torre central en vacío hostil con rutas de acceso y puntos de fallo identificables.',
+      atmosphere_and_mood: 'Aislada, paranoica y resistente.',
+      rendering_and_quality:
+        'Survival gameplay visual con identidad fuerte y telemetría clara de riesgo operativo.',
     },
   },
   {
@@ -105,14 +147,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, rainy-city, low-detail',
     style: {
-      aesthetic: 'Futuristic western featuring a train heist in a copper canyon.',
-      subject_treatment: 'Jetpack bandits and railway guards.',
-      color_and_tone: 'Bright copper, sky blue, and charcoal black.',
-      lighting_and_shadow: 'Harsh sun with backlit dust.',
-      texture_and_material: 'Aged wood, riveted steel, and dry earth.',
-      camera_and_composition: 'Tren en diagonal con foco en abordaje.',
-      atmosphere_and_mood: 'Explosive action and narrative tension.',
-      rendering_and_quality: 'Cinematic mission keyframe.',
+      aesthetic:
+        'Heist-western futurista sobre tren en cañón cobrizo, centrado en abordaje, saqueo y escape en movimiento.',
+      subject_treatment:
+        'Bandidos con jetpack y guardias ferroviarios por rol (defensa, persecución, corte de ruta).',
+      color_and_tone:
+        'Cobre brillante, azul cielo y negro carbón para lectura de facción y estado de alerta.',
+      lighting_and_shadow: 'Sol duro con polvo a contraluz para enfatizar velocidad y exposición.',
+      texture_and_material: 'Madera envejecida, acero remachado, tierra seca y humo de propulsión.',
+      camera_and_composition:
+        'Tren diagonal con puntos de salto, ventanas de abordaje y rutas de repliegue.',
+      atmosphere_and_mood: 'Explosiva, audaz y narrativamente tensa.',
+      rendering_and_quality:
+        'Mission key-art gameplay-first con claridad de objetivo, botín y extracción.',
     },
   },
   {
@@ -121,14 +168,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, modern-cars, low-detail',
     style: {
-      aesthetic: 'Sky piracy over a harbor of rusted towers.',
-      subject_treatment: 'Rival crews with energy sails.',
-      color_and_tone: 'Patina green, copper, and deep blue.',
-      lighting_and_shadow: 'Golden sunlight between torn clouds.',
-      texture_and_material: 'Naval wood, brass, and taut canvas.',
-      camera_and_composition: 'Layered aerial confrontation.',
-      atmosphere_and_mood: 'Adventure, greed, and spectacular chaos.',
-      rendering_and_quality: 'Pirate-faction splash art.',
+      aesthetic:
+        'Sky-piracy aeronaval en puerto verdigris, enfocada en abordaje aéreo, dominio de carriles y botín oportunista.',
+      subject_treatment:
+        'Facciones pirata diferenciadas por velamen, silueta de tripulación y firma de nave.',
+      color_and_tone:
+        'Verde pátina, cobre marrón, azul tormenta y destellos de latón para contraste de facción.',
+      lighting_and_shadow:
+        'Claros rotos entre nubes, rim light de casco y niebla volumétrica por altura.',
+      texture_and_material:
+        'Madera alquitranada, latón corroído, lona tensionada y planchas remachadas salinizadas.',
+      camera_and_composition:
+        'Escena diagonal de combate aéreo con capas por altitud y trayectorias cruzadas legibles.',
+      atmosphere_and_mood: 'Agressiva, codiciosa y espectacularmente tormentosa.',
+      rendering_and_quality:
+        'Faction splash gameplay-first con lectura nítida de abordaje, flagship priority y escala aérea.',
     },
   },
   {
@@ -137,14 +191,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, cheerful, lowres',
     style: {
-      aesthetic: 'Psychological horror on a subsea rail line.',
-      subject_treatment: 'Trapped passengers and invisible entities.',
-      color_and_tone: 'Abyss blue, black, and emergency red.',
-      lighting_and_shadow: 'Violent flickers and deep darkness.',
-      texture_and_material: 'Wet metal, fogged glass, and salt.',
-      camera_and_composition: 'Narrow carriage with deep-frame tension.',
-      atmosphere_and_mood: 'Claustrophobia, paranoia, and desperation.',
-      rendering_and_quality: 'Survival scene with high emotional impact.',
+      aesthetic:
+        'Transit-survival horror abisal en infraestructura colapsada, con foco en encierro, fallo sistémico y amenaza no visible.',
+      subject_treatment:
+        'Civiles vulnerables y grupos de supervivientes fragmentados con lectura clara de vulnerabilidad.',
+      color_and_tone:
+        'Azules de profundidad, negros de apagón, rojos de emergencia y neutros desaturados bajo pánico.',
+      lighting_and_shadow:
+        'Parpadeo de emergencia, estrobos duros y recesos de baja visibilidad para tensión escalonada.',
+      texture_and_material:
+        'Acero salinizado, vidrio con condensación, fijaciones corroídas y suelo húmedo continuo.',
+      camera_and_composition:
+        'Sightlines cerradas de vagón con choke-points, oclusiones frontales y fuga ansiosa de profundidad.',
+      atmosphere_and_mood: 'Claustrofóbica, paranoica y de urgencia extrema.',
+      rendering_and_quality:
+        'Survival-horror gameplay art con control fino de tensión y lectura ambiental del miedo.',
     },
   },
   {
@@ -153,14 +214,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt: 'watermark, text, logo, fantasy-castle, low-detail',
     style: {
-      aesthetic: 'Conflict over radio towers in electric dunes.',
-      subject_treatment: 'Mobile squads and signal operators.',
-      color_and_tone: 'Light sand, static blue, and charcoal black.',
-      lighting_and_shadow: 'Electrical flashes and harsh sunlight.',
-      texture_and_material: 'Corroded antennas, canvas, and fine sand.',
-      camera_and_composition: 'Torres como objetivos dominantes.',
-      atmosphere_and_mood: 'Information warfare and survival.',
-      rendering_and_quality: 'Dynamic objective-mode artwork.',
+      aesthetic:
+        'Objective-warfare en dunas electrificadas, centrado en captura/interferencia de torres de señal.',
+      subject_treatment:
+        'Escuadras móviles y operadores de radio con roles de hack, defensa y sabotaje.',
+      color_and_tone:
+        'Arena clara, azul estático y negro carbón para lectura de control territorial.',
+      lighting_and_shadow:
+        'Destellos eléctricos y sol severo para telegraph de ventanas operativas.',
+      texture_and_material:
+        'Antenas corroídas, lona técnica, arena fina y cableado expuesto por tormenta.',
+      camera_and_composition:
+        'Torres como objetivos dominantes con rutas de aproximación y zonas contestadas.',
+      atmosphere_and_mood: 'Estratégica, hostil y de supervivencia informacional.',
+      rendering_and_quality:
+        'Dynamic objective-mode gameplay art con legibilidad de control de señal y prioridad táctica.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

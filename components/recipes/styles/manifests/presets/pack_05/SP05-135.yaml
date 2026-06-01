@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Conceptual powers with slapstick brutality, unlucky chain reactions, immortal body damage, poppy modern action comic energy, romance hidden inside kinetic chaos
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Rule-breaker curse impact, with conceptual power logic, slapstick brutality, unlucky chain reactions, and romantic chaos.
+  form_and_line: Cause-effect arrows, broken-body exaggeration, pop-symbol impact marks, rebound arcs, and offbeat timing panels.
+  color_palette: Poppy red, curse black, lucky green inverted into hazard, bright yellow impact, pink warmth, and clean cyan contrast.
+  lighting_setup: Sudden chain-reaction flashes, comic impact bursts, warm romance glints, and brutal hard-shadow beats.
+  material_texture: Comic symbol overlays, polished cel impact, fractured texture marks, grit bursts, and clean pop gradients.
+  render_quality: Modern anime action finish with conceptual readability, offbeat brutality, and playful emotional contrast.
+  spatial_distortion: Domino-like causality, rebound compression, and unlucky vectors that redirect the whole frame.
   atmosphere: Chaotic, playful, brutal, offbeat
-  key_features: Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats
-  creative_brief: Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently.
+  key_features: Rule-logic symbols, unlucky vectors, slapstick brutality, chain reactions, romance-under-chaos warmth.
+  creative_brief: >-
+    Make any prompt behave like a broken rule system: visualize causality,
+    unlucky rebound, comic brutality, and warmth under chaos without requiring
+    body horror, named powers, relationships, or set-piece destruction.
 avoidRules:
   - realistic
   - 3d render

@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-084
+packId: pack_01
+name: Cosmetic Gloss Still Life
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Beauty-product gloss ad
+  form_and_line: Smooth curves and liquid highlights
+  color_palette: Cream, blush, translucent color accents
+  lighting_setup: Large softbox glow with glossy kickers
+  material_texture: Creamy surface, gel sheen, glassy reflection
+  render_quality: Premium beauty campaign
+  spatial_distortion: Gentle macro depth
+  atmosphere: Clean, sensorial, polished
+  key_features: Gloss highlight ribbons
+  creative_brief: 'Cosmetic still-life lighting gives any subject a sensorial beauty-ad treatment: creamy palette, soft glow, glossy highlight ribbons, translucent accents, and pristine surface control. It should feel tactile and premium without requiring makeup, bottles, skin, cream, or bathroom staging.'
+avoidRules:
+  - dirty
+  - harsh contrast
+  - gritty texture
+  - clutter
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-084.webp
+attributes:
+  negativePrompt: dirty, harsh contrast, gritty texture, clutter, watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

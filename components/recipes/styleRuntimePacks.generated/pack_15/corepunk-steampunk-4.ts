@@ -10,20 +10,76 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, grimdark-war, neon-cyber, low-detail, watermark, text, logo',
     style: {
       aesthetic:
-        'Neo-victorian steampunk port where civic logistics run on elegant pressure systems.',
-      form_and_line: 'Riveted arches, dirigible masts, and articulated crane silhouettes.',
+        'Neo-victorian steampunk where civic logistics run on elegant pressure systems, brass optimism, and artisanal machinery.',
+      form_and_line:
+        'Riveted arch rhythm, aether-mast verticals, and articulated crane-like silhouettes as compositional grammar.',
       color_palette: 'Aged brass, coal umber, and oxidized teal.',
       lighting_setup: 'Golden industrial dusk with furnace glow and vapor beams.',
       material_texture:
         'Hammered copper, varnished oak, oil-stained canvas, and steam-condensed steel.',
       render_quality:
-        'Premium narrative concept with clear machinery readability and cinematic density.',
+        'Premium steampunk concept with clear machinery readability and cinematic density.',
       spatial_distortion:
-        'Layered drydock perspective converging toward an elevated command gantry.',
+        'Layered drydock-like perspective converging toward an elevated pressure-control focal point.',
       atmosphere: 'Industrious wonder, mechanical pride, and measured optimism.',
-      key_features: 'Aether cranes, pressure gauges, civic airships, and cooperative dock crews.',
+      key_features:
+        'Aether-crane motifs, pressure gauges, civic airship cues, and cooperative labor rhythm.',
       creative_brief:
-        'A steampunk harbor where municipal transport and heavy craft feel artisanal rather than militarized.',
+        'Preserve brass aether-dockyard grammar as a reusable style language: pressure-era civic logistics, riveted artisanal machinery, and cooperative labor rhythm should remain stable across subjects without requiring a port, airships, crews, cranes, or a literal dockyard.',
+    },
+  },
+  {
+    id: 'SP15-128',
+    name: 'Steam Herbarium Optics',
+    category: '4. Corepunk — Steampunk',
+    negativePrompt: 'photoreal, neon-cyber, plastic-minimal, war-machine, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Botanical steampunk precision where brass optics, living specimens, and pressure-era classification systems make nature feel engineered but cherished.',
+      form_and_line:
+        'Lens-ring halos, pressed-leaf silhouettes, articulated brass armatures, and specimen-grid composition with elegant Victorian restraint.',
+      color_palette:
+        'Aged brass, fern green, tobacco umber, ivory paper, and tiny ruby calibration accents.',
+      lighting_setup:
+        'Warm lamplight through glass lenses, green-filtered caustics, and precise rim highlights on polished instrument edges.',
+      material_texture:
+        'Patinated brass, etched glass, vellum fibers, dried botanical veins, lacquered walnut, and condensation beads.',
+      render_quality:
+        'High-detail steampunk naturalist finish with readable mechanical microstructure and delicate organic tactility.',
+      spatial_distortion:
+        'Magnification-layer depth where circular lenses repeat across scale without requiring a laboratory, observatory, or specimen table.',
+      atmosphere: 'Curious, scholarly, warm, exacting, alive.',
+      key_features:
+        'Brass lens halos, herbarium vein patterning, pressure-gauge filigree, vellum labels as abstract marks, and living-machine tenderness.',
+      creative_brief:
+        'Preserve steam herbarium optics as a reusable style system: botanical classification, brass magnification, and delicate pressure-era instrument logic should transform any subject without requiring plants, lab props, or a literal observatory.',
+    },
+  },
+  {
+    id: 'SP15-129',
+    name: 'Pressure Lace Automata',
+    category: '4. Corepunk — Steampunk',
+    negativePrompt: 'photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Delicate steampunk automata grammar where lace, porcelain, clock springs, and pneumatic grace create refined mechanical tenderness.',
+      form_and_line:
+        'Lace-like filigree contours, porcelain-smooth curve breaks, exposed spring arcs, and symmetrical pressure-valve ornament.',
+      color_palette:
+        'Porcelain cream, oxidized rose brass, tea-stain beige, soot-violet shadow, and pearl highlight notes.',
+      lighting_setup:
+        'Diffuse parlor warmth, pinpoint brass glints, soft porcelain bounce, and low steam haze around mechanical joints.',
+      material_texture:
+        'Crochet lace relief, porcelain glaze, fine brass teeth, velvet dust, oiled hinge seams, and cloudy glass gauges.',
+      render_quality:
+        'Ornamental steampunk polish with fragile material contrast, precise mechanism readability, and quiet emotional elegance.',
+      spatial_distortion:
+        'Cabinet-of-curiosities compression with nested filigree layers and symmetrical mechanical depth.',
+      atmosphere: 'Fragile, ornate, haunted, graceful, intimate.',
+      key_features:
+        'Lace valve geometry, porcelain-mechanism contrast, spring-loop halos, pressure dial motifs, and soft steam veils.',
+      creative_brief:
+        'Preserve pressure lace automata as a reusable style system: refined pneumatic ornament, porcelain softness, and lace-like brass mechanics should apply to any subject without requiring dolls, salons, servants, or machines.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

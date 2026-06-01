@@ -12,20 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Photorealistic anime linework, world-weary faces with crow's feet and pores, documentary-film frame energy, urban grit and lived-in decay, salaryman exhaustion, cigarette-burn realism, Naoki Urasawa character depth, grounded adult drama, zero glamour
-  form_and_line: Dense photo-study contouring, stubble strokes, nasolabial fold attention, clothing wrinkle obsession, no idealization
-  color_palette: Concrete grey, fluorescent-tube green cast, aged-skin ochre, cigarette-smoke white, steel-blue office, overcast desaturation
-  lighting_setup: Harsh practical fluorescents, overcast window light, unflattering overhead office, nighttime street sodium vapor
-  material_texture: Pilled sweater fabric, unshaven skin grain, coffee-stain realism, concrete aggregate surface, scuffed shoe leather
+  aesthetic: Photorealistic anime linework with documentary-frame gravity, lived-in wear, adult-drama restraint, labor marks, and zero glamour
+  form_and_line: Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy, and no idealized pose language
+  color_palette: Concrete gray, fluorescent green cast, aged-skin ochre, smoke-white haze, steel-blue shadows, and overcast desaturation
+  lighting_setup: Harsh practical fluorescents, overcast window softness, unflattering overhead light, and sodium-vapor night accents
+  material_texture: Pilled fabric, skin grain, stain realism, concrete aggregate, scuffed leather, and worn everyday material tactility
   render_quality: Gritty documentary-anime still, hyper-realist rendering, adult-drama production polish, no gloss no glamour
-  spatial_distortion: Realistic human proportions, middle-aged body types, grounded camera angles, no hero poses
+  spatial_distortion: Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic exaggeration
   atmosphere: Weary, grounded, melancholic realism, adult resignation, quiet desperation
-  key_features: Facial pores and wrinkles, stubble rendering, tired-eye bags, clothing fabric detail, cigarette smoke trails
+  key_features: Facial pores and wrinkles, tired-eye weight, clothing fabric detail, worn surfaces, practical-light harshness
   creative_brief: >-
     Preserve gritty realist seinen grammar as a reusable style system:
     unflattering practical lighting, age-and-labor facial detail fidelity, and
     grounded adult-drama material realism should remain consistent across
-    subjects.
+    subjects without requiring salarymen, offices, cigarettes, or urban decay.
 avoidRules:
   - cute
   - kawaii

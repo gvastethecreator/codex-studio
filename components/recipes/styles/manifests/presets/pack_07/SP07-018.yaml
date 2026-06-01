@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Farmhouse contemporáneo de refinamiento rural, calidez familiar y nostalgia blanca controlada.
-  form_and_line: Muros shiplap, cubiertas a dos aguas, detalles X-brace, estantería abierta y líneas apron-front.
+  aesthetic: Farmhouse contemporáneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.
+  form_and_line: Listones horizontales, diagonales brace, geometría utilitaria abierta y líneas apron-front suavizadas.
   color_palette: Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.
-  lighting_setup: Mañana luminosa aireada, pendentes sobredimensionados y luminarias tipo granero de tono cálido.
+  lighting_setup: Mañana luminosa aireada, pendentes sobredimensionados y prácticos utilitarios de tono cálido.
   material_texture: Madera envejecida, lino lavado, pintura tiza, algodón rayado, fibras trenzadas y metal galvanizado.
   render_quality: Editorial farmhouse limpio con legibilidad doméstica y calidez cotidiana consistente.
-  spatial_distortion: Escala estable y amplitud moderada por luz distribuida y geometría de cubierta visible.
+  spatial_distortion: Escala estable y amplitud moderada por luz distribuida y geometría utilitaria visible.
   atmosphere: Acogedor, amable, comunitario y familiar.
-  key_features: Puertas corredizas de granero, fregadero farmhouse, estantería abierta, beadboard y objetos utilitarios visibles.
+  key_features: Listón blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como ornamento.
   creative_brief: >-
     Define una gramática farmhouse transferible sustentada por madera envejecida,
-    blanco cálido y detalle rural funcional. La escena debe comunicar vida
-    doméstica real sin depender de clichés narrativos televisivos.
+    blanco cálido y detalle rural funcional. El estilo debe comunicar uso real
+    sin depender de clichés narrativos televisivos.
 avoidRules:
   - modern
   - sleek

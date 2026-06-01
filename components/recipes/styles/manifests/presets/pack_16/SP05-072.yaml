@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-072
 packId: pack_16
-name: Princess Mononoke – Ghibli Forest Spirits Epic
+name: Eco-Mythic Conflict Epic Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Epopeya eco-mítica de bosque ancestral, con conflicto civilizatorio y espiritualidad feroz de la naturaleza.
-  form_and_line: Línea robusta y noble, anatomía heroica contenida y composición de choque entre bestialidad y armadura.
-  color_palette: Verdes profundos, tierra húmeda, negros de hierro y blancos fantasmales de espíritu del bosque.
-  lighting_setup: Luz filtrada de dosel con rayos dramáticos, niebla de valle y contrastes de incendio industrial.
-  material_texture: Corteza viva, piel de bestia, metal forjado y barro bélico sobre fondo pictórico orgánico.
+  aesthetic: Epopeya eco-mítica ancestral, conflicto civilizatorio y espiritualidad feroz de materia viva.
+  form_and_line: Línea robusta y noble, anatomía heroica contenida y composición de choque entre organicidad y hierro.
+  color_palette: Verdes profundos, tierra húmeda, negros de hierro y blancos fantasmales de espíritu natural.
+  lighting_setup: Luz filtrada con rayos dramáticos, niebla profunda y contrastes de incendio industrial.
+  material_texture: Corteza viva, piel rugosa, metal forjado y barro bélico sobre fondo pictórico orgánico.
   render_quality: Producción cinematográfica de alta gravedad moral, con lectura clara de escala natural y tragedia humana.
-  spatial_distortion: Grandes claros y gargantas boscosas para enfatizar guerra de mundo viejo vs mundo mecánico.
+  spatial_distortion: Grandes vacíos orgánicos y gargantas de escala para enfatizar mundo viejo vs mundo mecánico.
   atmosphere: Majestuosa, elemental, primal, sobrecogedora.
-  key_features: Iconografía de guardián natural, tensión bosque-industria y narrativa visual de pacto roto.
-  creative_brief: Diseña una gramática reusable de conflicto eco-épico para cualquier sujeto, fusionando misticismo natural, violencia histórica y peso de decisión moral.
+  key_features: Iconografía de guardián natural, tensión organicidad-industria y narrativa visual de pacto roto.
+  creative_brief: Diseña una gramática reusable de conflicto eco-épico para cualquier sujeto, fusionando misticismo natural, violencia histórica y peso de decisión moral sin imponer bosques, bestias, armaduras ni guerra literal.
 avoidRules:
   - realistic
   - 3d render

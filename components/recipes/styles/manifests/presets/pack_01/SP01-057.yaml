@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Designed room
+  aesthetic: Interior-design editorial
   form_and_line: Wide angle
   color_palette: Balanced palette
   lighting_setup: Mixed window/interior
-  material_texture: Fabric, wood
-  render_quality: Real estate, cozy
+  material_texture: Tactile decor materials
+  render_quality: Design-magazine polish
   spatial_distortion: None
   atmosphere: Welcoming, expensive
   key_features: Clean layout
-  creative_brief: Space that wraps around the inhabitant like a well-tailored garment, where every textile whispers tactility and every sight-line resolves into intentional composition. Window glow and lamp warmth negotiate boundaries on oak and linen, neither conquering, both collaborating. The room does not ask to be looked at; it asks to be imagined into occupation, a stage awaiting the quiet rituals of living.
+  creative_brief: 'Interior-design photography turns any subject into curated space logic: wide but controlled composition, balanced palette, mixed window/practical light, tactile material hierarchy, and clean layout. Keep magazine warmth without requiring a room, furniture, oak, linen, or real estate staging.'
 avoidRules:
   - clutter
   - dark

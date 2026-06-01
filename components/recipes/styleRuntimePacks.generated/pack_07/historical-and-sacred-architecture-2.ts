@@ -10,20 +10,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, asymmetry',
     style: {
       aesthetic:
-        'Government building/Museum, temple-front authority, Enlightenment reason, civic monument',
-      form_and_line: 'Columns, pediments, triangular tympanum, stepped plinths, axial vistas',
-      color_palette: 'White Marble, Stone, Portland limestone, Gilded bronze, Cool Grey shadow',
+        'Neoclásico institucional de autoridad cívica, orden axial y monumentalidad racional.',
+      form_and_line:
+        'Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría estricta.',
+      color_palette:
+        'Mármol blanco, caliza clara, piedra fría y bronce dorado con sombras gris azuladas.',
       lighting_setup:
-        'Sunlight and shadow, column-cast stripes, portico shade, floodlit night drama',
+        'Sol lateral que estría columnas, sombras porticadas profundas y acentos nocturnos monumentales.',
       material_texture:
-        'Smooth stone, chiseled marble, polished granite, cast plaster, verdigris copper',
+        'Piedra lisa, mármol cincelado, granito pulido, yeso colado y cobre con verdín.',
       render_quality:
-        'Grand, symmetrical, order, eternal authority, democratic dignity, timeless proportion',
-      spatial_distortion: 'None',
-      atmosphere: 'Serious, powerful, timeless, institutionally calm, Athenian echo, civic pride',
-      key_features: 'Columns, triangular pediment, domed rotunda, grand staircase, axial symmetry',
+        'Monumental clásico de proporción rigurosa y legibilidad institucional permanente.',
+      spatial_distortion: 'Perspectiva axial neutra con jerarquía frontal y escala ceremonial.',
+      atmosphere: 'Seria, estable, cívica y atemporal.',
+      key_features:
+        'Orden columnario, frontón canónico, basamento escalonado, masa cívica y composición perfectamente simétrica.',
       creative_brief:
-        'Columns march in disciplined procession toward a pediment that crowns reason triumphant over chaos. Stone carries the echo of senates and symposiums, every fluted shaft a vote for order over impulse. The structure does not persuade, it declares, wearing its authority in marble and proportion.',
+        'Define una gramática neoclásica transferible por proporción, eje y orden tectónico. La autoridad debe emerger de la composición y la masa pétrea, evitando retórica narrativa o escenográfica.',
     },
   },
   {
@@ -33,24 +36,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, bright, simple',
     style: {
       aesthetic:
-        'Gothic revival style with sacred verticality, ornamental stone drama, and reverential shadowed grandeur',
+        'Revival gótico de verticalidad devocional, dramatismo pétreo y solemnidad de luz filtrada.',
       form_and_line:
-        'Pointed-arch grammar, ribbed vault structure, tracery intricacy, buttress rhythm, and spire-led upward composition',
+        'Ojivas, nervaduras, tracería compleja, contrafuertes rítmicos y remates ascendentes como lógica gráfica vertical.',
       color_palette:
-        'Weathered stone grays with stained-jewel chroma bursts, deep crimson-blue shadows, and muted burnished metallic notes',
+        'Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal apagado.',
       lighting_setup:
-        'Low-key candle and moon shafts, stained-glass projection color pools, and high-contrast devotional shadow layering',
+        'Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta reverencia.',
       material_texture:
-        'Carved limestone erosion detail, aged oak relief, cold iron patina, dusted masonry surfaces, tarnished brass accents',
+        'Caliza tallada, roble envejecido, hierro frío patinado, polvo mineral y latón oscurecido.',
       render_quality:
-        'Monumental historic visualization with high ornamental fidelity and atmospheric sacred-darkness precision',
+        'Visualización histórico-monumental con fidelidad ornamental y atmósfera sacra precisa.',
       spatial_distortion:
-        'Vertical elongation emphasis with vaulted depth pull to intensify reverential upward focus',
-      atmosphere: 'Solemn, dramatic, ancient, sacred, awe-struck',
+        'Énfasis en elongación vertical, profundidad reverencial y tracción ascendente sin exigir nave o templo literal.',
+      atmosphere: 'Solemne, ancestral, reverencial y dramática.',
       key_features:
-        'Vertical-devotional composition, pointed-arch language, stained-light dramaturgy, carved stone ornament hierarchy',
+        'Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta densidad.',
       creative_brief:
-        'Preserve this preset through vertical sacred geometry and stained-light contrast logic; Gothic reverence should be conveyed by material and form grammar rather than haunted-narrative tropes.',
+        'Mantén una gramática gótica transferible donde verticalidad, piedra tallada y luz de vitral construyan reverencia espacial. Debe funcionar sin caer en clichés narrativos de horror o ruina escénica.',
     },
   },
   {
@@ -59,21 +62,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical And Sacred Architecture',
     negativePrompt: 'daylight, calm',
     style: {
-      aesthetic: 'Vegas gambling hall, pleasure labyrinth, windowless empire, sensory-trap palace',
+      aesthetic:
+        'Hipercomercio de juego sensorial, diseñado para atención continua y permanencia prolongada.',
       form_and_line:
-        'Busy patterns, carpet maze, machine rows, mirrored columns, endless grid of chance',
+        'Densidad ortogonal de módulos brillantes, patrón no direccional, espejos estratégicos y circulación deliberadamente ambigua.',
       color_palette: 'Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple',
       lighting_setup:
-        'Dark with bright spots, ceiling wash, slot-machine glow, chandelier bling, ambient overstimulation',
-      material_texture: 'Carpet, plastic, vinyl seating, mirrored ceiling, chrome trim, felt table',
+        'Base oscura con hotspots seriados, wash de techo, destellos decorativos y sobreestimulación luminosa controlada.',
+      material_texture:
+        'Patrón saturado, carcasas moldeadas, cromo usado, laminados brillantes y paño denso.',
       render_quality:
-        "Overstimulating, tacky, sensory-saturation, gambler's cathedral, neon-excess",
+        'Realismo de estímulo alto con jerarquía lumínica comercial y acabado nocturno de gran densidad.',
       spatial_distortion: 'None',
-      atmosphere: 'Greed, excitement, fake, disoriented, timeless, chance-buzzed numbness',
+      atmosphere: 'Activación continua, desorientación temporal y confort-presión de consumo.',
       key_features:
-        'No clocks, no windows, slot machines, busy carpet, mirrored ceiling, cocktail waitress',
+        'Envolvente sin tiempo, glow bajo, clusters de premio, supresión de wayfinding y profundidad espejada.',
       creative_brief:
-        'Carpet patterns swirl in deliberate confusion, designed to keep eyes on the floor and minds off the exits. Slot machines blink their seductive arithmetic, chrome and neon building a temple where hope is the currency and time the sacrifice. The room has no clocks, no windows, no mercy, only another roll.',
+        'Define una gramática de casino transferible donde patrón, brillo y reflejo secuestren la atención de forma estratégica. Debe sentirse táctico y comercial, nunca caricatura festiva.',
     },
   },
   {
@@ -83,23 +88,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'messy, organic',
     style: {
       aesthetic:
-        'Data center aisles, computational cathedral, silicon temple, digital infrastructure, cold aisles of data',
+        'Infraestructura crítica de datos orientada a continuidad operativa y lógica machine-first.',
       form_and_line:
-        'Perspective lines, rack-grid infinity, cable-management channels, perforated door rhythm, raised floor grid',
+        'Series modulares, corredores térmicos rígidos, bandejas ortogonales y repetición de panel perforado funcional.',
       color_palette:
         'Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal',
       lighting_setup:
-        'Artificial cool, rack-integrated glow, service-aisle strip, status-LED constellation, cold-corridor containment',
+        'Luz fría artificial continua, glow de rack, tiras de servicio y constelaciones LED de estado con contención térmica visible.',
       material_texture:
-        'Metal, plastic, perforated steel, fiber optic, Kevlar cable jacket, heatsink fin',
+        'Acero pintado en polvo, fibra trenzada, malla perforada, superficie técnica gomada y polvo de admisión.',
       render_quality:
-        'High tech, loud fan, data-sovereign, server-farm precision, digital fortress',
+        'Realismo facility-grade con alta densidad informativa y legibilidad de sistema bajo iluminación técnica.',
       spatial_distortion: 'None',
-      atmosphere: 'Cold, data, power, humming, computational, always-on vigilance',
+      atmosphere: 'Urgencia controlada, vigilancia infraestructural y ocupación humana mínima.',
       key_features:
-        'Blinking lights, server racks, cold aisle, cable management, raised floor, cooling fans',
+        'Clúster LED de estado, contención térmica, pistas de flujo, patch fields etiquetados y repetición redundante.',
       creative_brief:
-        'Blue LEDs blink their staccato trust across cold aisles, each rack a vault storing the world in zeros and ones. Cooling fans hum their eternal mantra against heat death, the data center a monastery of computation. Light here serves machines not eyes, every blink a prayer to uptime.',
+        'Construye una gramática data-grid transferible donde continuidad, redundancia y control térmico gobiernen cada decisión visual. Debe verse contemporánea y crítica, no sci-fi genérica.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

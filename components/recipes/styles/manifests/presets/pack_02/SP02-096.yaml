@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Punk-rock skateboard deck art, melting-skull monster graphics, dripping-slime typography, crossed-bones and flaming-wheels, Thrasher-magazine energy, 80s-powell-peralta-screaming-hand, bold-rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss
+  aesthetic: Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss
   form_and_line: Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges
   color_palette: Neon green slime, blood red, toxic-waste yellow, black-void background, radioactive purple, white-bone contrast, screenprint-overprint cyan
   lighting_setup: Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth
   material_texture: Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint
   render_quality: Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery
-  spatial_distortion: Graphic centered on deck shape, wheel-cutout shapes interrupting design, nose-and-tail-kick distortion zone
+  spatial_distortion: Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone
   atmosphere: Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity
-  key_features: Bold-black outlines, slime-drips, skull-motif graphics, screenprint texture, deck-shape composition, neon-green slime accents
-  creative_brief: Gloss sealed over maple grain, monsters arrested mid-howl across seven plies of defiance, their fluorescent fluids dripping toward the grip tape. Every graphic dares the world to look closer, louder, angrier, a canvas that scrapes concrete and wears its battle scars proudly. The deck is both proclamation and weapon, announcing allegiance before wheels ever touch pavement.
+  key_features: Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain
+  creative_brief: 'Turn any input into skateboard-deck screenprint energy: centered graphic impact, thick black outlines, neon slime accents, maple veneer texture, glossy varnish, and rebellious iconography. Avoid requiring skulls, monsters, wheels, typography, or crossed bones. The deck format and print texture should carry the attitude.'
 avoidRules:
   - soft
   - gentle

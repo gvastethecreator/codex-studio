@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Temporary market unfolding only during lunar eclipses.
-  form_and_line: Folding canopy petals, circular stalls, and signal masts.
-  color_palette: Plum, cyan, and pearl gray.
-  lighting_setup: Eclipse halo and lantern webbing.
-  material_texture: Flexible membranes, modular carts, and polished composite floors.
-  render_quality: Event-driven concept with vivid scene choreography.
-  spatial_distortion: Radial market geometry around eclipse beacon.
-  atmosphere: Celebration, mystery, and timed scarcity.
-  key_features: Eclipse stalls, phase clocks, and barter domes.
+  aesthetic: Abstract eclipse-market style where temporary forms bloom, fold, and glow only under rare timed shadow.
+  form_and_line: Folding petal geometry, circular pod shapes, signal mast lines, phase-clock rings, and radial exchange lanes.
+  color_palette: Eclipse plum, charged cyan, pearl gray, lantern amber, and shadow violet.
+  lighting_setup: Eclipse halo, lantern webbing, cyan edge lights, and timed beacon pulses around dark centers.
+  material_texture: Flexible membrane sheen, modular composite surfaces, folded fabric seams, polished floors, and powdery lunar dust marks.
+  render_quality: Event-driven render with vivid choreography, readable temporary assembly, and strong phase symbolism.
+  spatial_distortion: Radial composition opens like timed petals around a shadowed celestial center.
+  atmosphere: Celebration, mystery, timed scarcity, and communal anticipation.
+  key_features: Folding canopy petals, phase-clock motifs, cyan-lantern webs, plum shadow centers, and radial temporary geometry.
   creative_brief: >-
-    Preserve eclipse market-canopy grammar as a reusable style system:
-    phase-timed temporary commerce, folding radial canopy choreography, and
-    celebratory scarcity mystique should remain coherent across subjects.
+    Apply eclipse market-canopy as an abstract style treatment: make any
+    subject feel temporary, phase-timed, petal-folded, lantern-lit, and alive
+    under rare shadow.
 avoidRules: [photoreal, cyberpunk-nightclub, medieval, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-080.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-nightclub, medieval, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

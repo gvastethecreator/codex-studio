@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Cosmic roadside noir where motel signage behaves like a navigational constellation and every surface promises escape.
-  form_and_line: Tailfin rooflines, comet-shaped sign pylons, crescent awnings, capsule doors, and road stripes that bend like orbital paths.
+  aesthetic: Cosmic roadside noir where signage behaves like navigational constellation and every surface promises escape.
+  form_and_line: Tailfin rooflines, comet-shaped pylons, crescent awnings, capsule-door shapes, and stripes bending like orbital paths.
   color_palette: Oxidized teal, motel magenta, warm cream, asphalt black, and pale rocket-smoke blue.
   lighting_setup: Twilight neon bloom, rocket-trail backlight, room-number halos, and sodium puddle reflections.
   material_texture: Flaking painted metal, ribbed vinyl, glossy rain asphalt, plastic star charts, and cracked ceramic diner tile.
   render_quality: Stylized pulp environment art with graphic sign hierarchy and strong silhouettes.
-  spatial_distortion: Roadside one-point perspective warped into a comet tail, pulling eye through signs, rooms, and fuel islands.
+  spatial_distortion: Roadside one-point perspective warped into a comet tail through blank signs and orbital stripes.
   atmosphere: Cheap glamour, fugitive sleep, cosmic wanderlust, and mission-board temptation.
-  key_features: Comet motel signs, fuel-diner counters, mission bulletin walls, tailfin shadows, and room keys shaped like coordinates.
+  key_features: Comet sign shapes, fuel-diner color bands, mission-bulletin panels, tailfin shadows, and coordinate-key motifs.
   creative_brief: >-
     Push comet motel-strip as a reusable style: turn any subject into a
     roadside constellation of neon promises, transient pilots, coded room

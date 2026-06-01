@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Severe black uniforms, palace-scale combat, spiritual warfare, white-black contrast, calligraphic attack names, aristocratic villain drama, divine war-pageantry
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Royal black blade opera, with severe monochrome authority, spiritual pageantry, aristocratic drama, and explosive calligraphy.
+  form_and_line: Long black silhouette sweeps, blade-like negative cuts, calligraphic effect strokes, regal posture, and palace-scale verticals.
+  color_palette: Royal black, marble white, cold blue, blood red, antique gold, and violet spiritual accents.
+  lighting_setup: Divine backlight, hard rim partitioning, opera-stage spotlight, and explosive white-black contrast.
+  material_texture: Ink-black cloth sheen, polished marble light, spiritual particle dust, metallic edge glints, and clean HDR bloom.
+  render_quality: Premium modern anime finish with ceremonial severity, high contrast, and operatic spiritual spectacle.
+  spatial_distortion: Monumental vertical compression, sweeping cloaklike motion, and reality-cut planes that enlarge the frame.
   atmosphere: Regal, severe, explosive, mythic
-  key_features: Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics
-  creative_brief: Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence.
+  key_features: Monochrome severity, calligraphic power, regal verticality, spiritual opera, blade-like contrast.
+  creative_brief: >-
+    Make any prompt feel like royal spiritual opera: use black-white severity,
+    calligraphic energy, and monumental verticals without requiring uniforms,
+    palaces, weapons, named attacks, or literal war pageantry.
 avoidRules:
   - realistic
   - 3d render

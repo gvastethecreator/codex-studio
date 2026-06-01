@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-027
 packId: pack_16
-name: Crimson Clan Battlefield
+name: Crimson Formation Momentum Style
 category: 4. Samurais & Medieval
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Grand-strategy war anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.
-  form_and_line: Broad armored silhouettes, banner arcs that map faction flow, and spearline repetition used as directional rhythm.
-  color_palette: Dominant clan crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.
+  aesthetic: Grand-strategy anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.
+  form_and_line: Broad massed silhouettes, banner-like arcs that map faction flow, and repeated line cadence used as directional rhythm.
+  color_palette: Dominant crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.
   lighting_setup: Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command focal points.
-  material_texture: Battle-scored lamellar steel, mud-caked greaves, frayed standards, and humid particulate air.
+  material_texture: Battle-scored metal, mud-caked lower planes, frayed fabric standards, and humid particulate air.
   render_quality: Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.
-  spatial_distortion: Multi-plane battlefield depth using atmospheric compression and diagonal advance vectors for collective force direction.
+  spatial_distortion: Multi-plane conflict depth using atmospheric compression and diagonal advance vectors for collective force direction.
   atmosphere: Inevitable collision, inherited duty, and banner-locked resolve under doctrine.
-  key_features: Rank geometry, signal standards, cavalry or infantry wave cadence, and collision-ready front interfaces.
-  creative_brief: Create a transferable clan-war grammar that can style any subject through formation-driven composition, heraldic color dominance, and disciplined large-scale motion cues.
+  key_features: Rank geometry, signal standards, wave cadence, and collision-ready front interfaces.
+  creative_brief: >-
+    Create a transferable crimson formation momentum grammar for any subject:
+    formation-driven composition, heraldic color dominance, disciplined
+    large-scale motion, and command-layer hierarchy without imposing clans,
+    armies, battlefields, cavalry, infantry, weapons, or war scenes.
 avoidRules:
   - photoreal
   - cartoon-goofy

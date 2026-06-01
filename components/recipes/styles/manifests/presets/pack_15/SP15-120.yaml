@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Submerged pier garden where drift tides cultivate luminous flora.
-  form_and_line: Pier pilings, hanging gardens, and drifting root bundles.
+  aesthetic: Submerged drift-garden seapunk where tides cultivate luminous flora below structure.
+  form_and_line: Pier-piling silhouettes, hanging garden forms, drifting root bundles, and tide-fed bloom arcs.
   color_palette: Aquamarine, coral, and dusk violet.
   lighting_setup: Underwater bloom light with surface shimmer.
   material_texture: Wet timber, coral lattice, and translucent roots.
   render_quality: Atmospheric undersea concept with botanical detail.
-  spatial_distortion: Downward peek under the pier into layered drift gardens.
+  spatial_distortion: Downward peek into layered drift-garden depth.
   atmosphere: Slow growth, tide patience, and luminous ecology.
-  key_features: Drift roots, subpier planters, and tide-fed blooms.
+  key_features: Drift roots, subpier planter motifs, tide-fed blooms, and suspended luminous flora.
   creative_brief: >-
     Preserve drift garden-subpier grammar as a reusable style system:
     substructure hanging ecologies, tide-fed luminous root layering, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, oil-slick, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-120.webp }
 attributes:
   negativePrompt: photoreal, oil-slick, industrial, watermark, text, logo, murky
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

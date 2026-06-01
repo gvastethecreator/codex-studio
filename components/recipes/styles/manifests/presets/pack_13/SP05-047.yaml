@@ -12,16 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Soft blushes, distance-closing glances, clean school-day romance, airy pacing, cherry blossom season, classroom proximity, ribbon ties, stairwell confessions
-  form_and_line: Delicate romance-anime linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail
-  color_palette: Pastels, florals, elegant jewel accents, rose-tinted warmth, soft pearl luminosity
-  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, luminous halation
-  material_texture: Airy fabrics, ribbons, soft motifs, silk sheen, delicate lace textures, chiffon translucency
-  render_quality: Luminous romance-anime frame, ethereal bloom rendering, soft-focus beauty, dreamy chromatic softness
-  spatial_distortion: Graceful elongated proportions, fashion figure elegance, ethereal limb extension, romantic silhouette styling
+  aesthetic: Airy first-love tenderness built from soft blushes, distance-closing glances, innocent hesitation, springlike pacing, and emotional near-miss clarity
+  form_and_line: Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and breath-held gesture arcs
+  color_palette: Pale pinks, soft florals, pearl luminosity, clean cream fields, and barely-there green-blue freshness
+  lighting_setup: Soft bloom, gentle rim light, butterfly portrait lighting, diffuse romantic glow, and luminous halation around hesitant emotion
+  material_texture: Airy fabrics, ribbon-like motion cues, soft paper grain, silk sheen, delicate lace texture, and chiffon translucency
+  render_quality: Luminous romance-anime frame with ethereal bloom, soft-focus beauty, clean expression readability, and dreamy chromatic softness
+  spatial_distortion: Graceful elongated proportions, shallow emotional depth, suspended-time spacing, and romantic silhouette styling
   atmosphere: Gentle, hopeful, innocent, sweet
-  key_features: Emotion-forward facial acting, expressive eye detail, tender micro-expressions, heartfelt gesture language
-  creative_brief: Cherry blossoms fall at the exact speed of a quickening heartbeat as two desks drift closer across an endless spring semester, ribbon ties fluttering in corridor breezes heavy with unspoken confession. Every stolen glance is a tiny universe of hope rendered in the softest pastel — first love as the gentlest possible apocalypse.
+  key_features: Blush-soft emotional timing, tender micro-expressions, hesitant proximity, pastel restraint, heartfelt gesture language
+  creative_brief: >-
+    Keep the first-love title as a style anchor for soft romantic hesitation:
+    blush-light, suspended pacing, and gentle near-contact should stay readable
+    without requiring school, classroom, cherry blossoms, stairwells, or
+    confession scenes.
 avoidRules:
   - realistic
   - 3d render

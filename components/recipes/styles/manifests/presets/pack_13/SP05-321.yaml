@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Ethereal Amano-like fantasy, elongated bodies dissolving into decorative ink wisps, celestial melancholy, gilded voids, feather-light detail with dream-goth elegance
+  aesthetic: Ethereal Amano-like fantasy where elongated forms dissolve into decorative ink wisps, celestial melancholy, gilded voids, and feather-light dream-goth elegance
   form_and_line: Hair-thin ornamental contour, calligraphic tapering, decorative filigree line drift
   color_palette: Ivory, antique gold, moon-silver, dried rose, abyssal indigo, pale orchid haze
   lighting_setup: Moonlit haze, diffuse heavenly glow, soft metallic gleam, spectral backlighting
   material_texture: Airbrush mist, metallic leaf suggestion, silk translucency, ink feathering, velvety emptiness
   render_quality: Ethereal fine-art anime rendering with ornamental void composition and spectral detail discipline
-  spatial_distortion: Weightless elongation, draped limbs, gravity-light hair flow, cathedral-thin silhouettes
+  spatial_distortion: Weightless elongation, draped form flow, gravity-light contour drift, and cathedral-thin silhouettes
   atmosphere: Ethereal, baroque, sorrowful, celestial
-  key_features: Elongated figures, decorative ink wisps, gilded accents, void-rich composition, feathered costume detail
+  key_features: Elongated silhouettes, decorative ink wisps, gilded accents, void-rich composition, feathered ornamental detail
   creative_brief: >-
-    Preserve ether-wisp gothic fantasy grammar as a reusable style system:
+    Use Yoshitaka Amano title as style anchor for ether-wisp fantasy:
     calligraphic elongation, gilded-void ornament, and melancholic celestial
-    elegance should remain coherent across subjects.
+    elegance should transfer without requiring bodies, costumes, wings, or
+    gothic fantasy characters.
 avoidRules:
   - photorealism
   - heavy 3d shading

@@ -12,15 +12,15 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Futurismo industrial neo-victoriano de metrópolis a vapor y maquinaria urbana especulativa.
-  form_and_line: Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos para tráfico de dirigibles.
+  aesthetic: Futurismo industrial neo-victoriano de vapor, latón y maquinaria especulativa.
+  form_and_line: Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos de tránsito aéreo.
   color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
-  lighting_setup: Gaslight ámbar, glow callejero difuso en smog, chispas mecánicas y ventilación de vapor visible.
+  lighting_setup: Gaslight ámbar, glow difuso en smog, chispas mecánicas y ventilación de vapor visible.
   material_texture: Metal y ladrillo, cobre remachado, panel de madera, cuero y depósito de hollín en superficie.
-  render_quality: Ciudad steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.
+  render_quality: Steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.
   spatial_distortion: None
   atmosphere: Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.
-  key_features: Ritmo de venteo, conducciones de latón, fachadas clockwork, nodos de caldera y señales de tráfico aéreo.
+  key_features: Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de tránsito aéreo.
   creative_brief: >-
     Define una gramática steampunk transferible por infraestructura de vapor,
     articulación en latón y forma neo-victoriana. Debe ser densa e inventiva

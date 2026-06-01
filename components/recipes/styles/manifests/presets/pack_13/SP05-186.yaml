@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Height-gap romcom shojo language with Osaka banter energy, embarrassment-forward timing, and heartfelt youth-couple momentum
-  form_and_line: Elastic comedic facial acting lines, contrasting tall-short body-language framing, lively conversational gesture contours, and clean school-street silhouette rhythm
-  color_palette: Bright youthful pastels with warmer peach accents, playful urban school tones, and selective pop-color highlights for comedic beats
+  aesthetic: Height-gap romcom shojo language with banter energy, embarrassment-forward timing, and heartfelt momentum expressed through scale-contrast comedy
+  form_and_line: Elastic comedic acting lines, contrasting scale-language framing, lively conversational gesture contours, and clean silhouette rhythm
+  color_palette: Bright youthful pastels with warmer peach accents, playful urban tones, and selective pop-color highlights for comedic beats
   lighting_setup: Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight accents timed to reaction moments
-  material_texture: Casual schoolwear textiles, city-street prop simplicity, and low-noise backgrounds that keep timing and expressions in focus
+  material_texture: Casual textile softness, simple matte surface cues, and low-noise backgrounds that keep timing and expression in focus
   render_quality: High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced comedy-romance polish
-  spatial_distortion: Comedic composition exploiting height contrast and interpersonal distance changes without sacrificing emotional readability
+  spatial_distortion: Comedic composition exploiting scale contrast and interpersonal distance changes without sacrificing emotional readability
   atmosphere: Funny, sweet, loud, sincere
-  key_features: Height-contrast compositions, comic reaction faces, school-date props, banter body language, bright urban youth color
+  key_features: Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft timing
   creative_brief: >-
     Preserve height-gap comedy-romance grammar as a reusable style system:
-    banter-driven reaction timing, height-contrast staging, and loud-to-tender
+    banter-driven reaction timing, scale-contrast staging, and loud-to-tender
     emotional pivots should remain consistent across subjects.
 avoidRules:
   - realistic

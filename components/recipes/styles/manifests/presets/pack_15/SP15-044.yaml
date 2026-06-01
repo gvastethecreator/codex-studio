@@ -8,14 +8,14 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
   aesthetic: Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying politeness.
-  form_and_line: Monumental slab planes, recessed vitrines, corridor axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.
+  form_and_line: Monumental slab planes, recessed evidence frames, corridor-like axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.
   color_palette: Slate, brushed brass, archival ivory, faded warning orange, and cold exhibit glass blue.
   lighting_setup: Museum wash light, precise exhibit spots, brass label glints, and low shadow bands under heavy concrete.
   material_texture: Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room fragments.
   render_quality: Documentary concept scene with controlled hierarchy, no melodrama, and clear evidence staging.
-  spatial_distortion: Processional path forces subjects through chambers, vitrines, confession walls, and policy diagrams.
+  spatial_distortion: Processional depth forces subjects through evidence frames, confession walls, and policy diagrams.
   atmosphere: Civic introspection, cautionary optimism, historical weight, and quiet institutional shame.
-  key_features: Reactor cross-section exhibits, policy mural slabs, oral-history booths, preserved switches, and brass date markers.
+  key_features: Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date markers.
   creative_brief: >-
     Preserve civic fallout-museum grammar as a reusable style system:
     restrained evidentiary staging, archival slab-and-glass severity, and

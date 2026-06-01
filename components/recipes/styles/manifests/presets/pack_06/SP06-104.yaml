@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-104
 packId: pack_06
-name: Cyberpunk HUD Interface
+name: Cyberpunk Diegetic HUD Glow
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Cyberpunk game-interface overlay style with luminous diegetic panels, scanline grime, and tactical data density.
+  subject_treatment: Wrap any subject in translucent interface strata, segmented targeting brackets, and modular status geometry.
+  color_and_tone: Cyan-magenta warning palette, black glass fields, acid-green micro accents, and clipped neon contrast.
+  lighting_and_shadow: Screen-glow lighting, edge bloom, reflected UI color, and dark underlayers for readable overlays.
+  texture_and_material: CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze.
+  camera_and_composition: Layered HUD composition with safe margins, asymmetric grids, and focal brackets instead of fixed screens.
+  atmosphere_and_mood: Paranoid, high-tech, compressed signal energy without requiring cities, hackers, weapons, or readable text.
+  rendering_and_quality: Sharp vector-like UI edges, no legible copy, controlled bloom, and clean hierarchy at small size.
 avoidRules:
   - watermark
   - text
+  - readable interface copy
+  - literal city scene
+  - weapon requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-104.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, readable interface copy, literal city scene, weapon requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

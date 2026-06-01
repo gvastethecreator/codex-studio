@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Supervivencia austera en fortaleza interestelar, con disciplina militar y biotecnología defensiva de último recurso.
-  form_and_line: Estructura modular cerrada, corredores ortogonales, mecha de perfil sobrio y bloque volumétrico de nave-seed.
+  aesthetic: Supervivencia austera en vacío-fortaleza, con disciplina sistémica y biotecnología defensiva de último recurso.
+  form_and_line: Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de hábitat.
   color_palette: Gris grafito, verde tenue de sistemas vitales, blanco clínico y negro cósmico profundo.
   lighting_setup: Iluminación funcional de habitáculo, franjas frías de emergencia y contraluz de vacío exterior.
   material_texture: Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y superficies de uso continuo.
   render_quality: Sci-fi de precisión sobria con foco en escala interior y sensación de ecosistema cerrado.
-  spatial_distortion: Profundidad longitudinal de nave-hábitat y contraste radical entre interior denso y exterior infinito.
+  spatial_distortion: Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior infinito.
   atmosphere: Ascética, aislada y resiliente, con tensión de extinción permanente.
-  key_features: Ciudad-nave, uniformidad operativa, launch decks, vacío estelar y ritual de supervivencia cotidiana.
+  key_features: Hábitat cerrado, uniformidad operativa, vacío estelar, biotecnología defensiva y ritual de supervivencia cotidiana.
   creative_brief: >-
     Define una gramática vacuum-fortress reusable donde arquitectura de
     hábitat cerrado, disciplina de supervivencia y escala cósmica inhóspita
-    sostengan identidad coherente.
+    sostengan identidad coherente sin exigir nave, deck o ciudad literal.
 avoidRules:
   - realistic
   - 3d render

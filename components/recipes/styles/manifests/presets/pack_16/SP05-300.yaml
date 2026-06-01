@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-300
 packId: pack_16
-name: Promare - Chromatic Firestorm Hero Theater
+name: Hypergraphic Chromatic Action Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Espectáculo heroico hipergráfico de rescate mecha, con anti-naturalismo cromático y teatralidad de rivalidad en clave de póster vivo.
+  aesthetic: Espectáculo heroico hipergráfico, con anti-naturalismo cromático, energía geométrica y teatralidad de póster vivo.
   form_and_line: Contorno duro y dinámico, geometría angular dominante y siluetas de acción que privilegian impacto inmediato sobre detalle realista.
   color_palette: Bloques intensos en cian, magenta, naranja fuego y amarillos eléctricos con negros limpios de separación gráfica.
   lighting_setup: Iluminación extrema de incendio estilizado, contraluces violentos y flashes de alto contraste para clímax continuo.
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Acabado premium de acción maximalista con legibilidad de coreografía de rescate y jerarquía clara de héroe-antihéroe.
   spatial_distortion: Perspectiva de gran angular heroica con deformación cinética orientada a velocidad, choque y espectáculo.
   atmosphere: Incandescente, teatral, gráfica, triunfal.
-  key_features: Llamas triangulares, unidades de rescate mecha, color blocking extremo y staging de rivalidad operática.
-  creative_brief: Construye una gramática reusable de acción cromática mecha para cualquier sujeto, usando fuego geométrico, composición de póster y energía de rescate como eje visual.
+  key_features: Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.
+  creative_brief: >-
+    Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada:
+    geometría, saturación y heroísmo abstracto sin imponer fuego, rescate, mechas ni rivalidades narrativas.
 avoidRules:
   - realistic
   - 3d render

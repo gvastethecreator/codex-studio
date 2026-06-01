@@ -12,7 +12,7 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Varnished paper on object
+  aesthetic: Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth
   form_and_line: Torn edges
   color_palette: Faded, yellowed
   lighting_setup: Glossy varnish
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Surface wrap
   atmosphere: Antique, homey
   key_features: Varnish shine
-  creative_brief: Layers of paper sealed under glossy varnish, edges softened by age, images surrendering their context to a new surface. The crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. Every decoupage is a palimpsest, the old becoming ground for the new.
+  creative_brief: Layers of paper seal under glossy varnish, edges softened by age, fragments surrendering their context to a new surface. Crackle glaze maps time in fissures, a network of years spreading across the image like a second composition. The style works as palimpsest, with old paper, varnish, and surface wrap becoming the subject.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - decorative object requirement
+  - readable printed motif
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-063.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, decorative object requirement, readable printed motif
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

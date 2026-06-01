@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-349
 packId: pack_16
-name: Major - Generational Baseball Resolve
+name: Generational Sports Resolve Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Baseball generacional de largo arco, orientado a legado deportivo y maduración competitiva entre etapas.
-  form_and_line: Acting deportivo emocional, mecánica de lanzamiento sólida y postura de montículo de determinación.
-  color_palette: Paleta de estadio clásica con azules profundos, blancos cálidos y acentos rojos de herencia competitiva.
-  lighting_setup: Iluminación de estadio nocturno con foco sentimental en guante, pelota y rostro del lanzador.
-  material_texture: Cuero envejecido de guante, polvo de diamante, tela uniforme en desgaste progresivo y metal de graderío.
-  render_quality: Frame deportivo emotivo con lectura clara de trayectoria vital y tensión de juego.
-  spatial_distortion: Perspectiva progresiva de diamante que conserva eje pitcher-home como núcleo simbólico.
+  aesthetic: Deporte generacional de largo arco, legado competitivo, maduración personal y resolución sostenida.
+  form_and_line: Acting deportivo emocional, mecánica de esfuerzo sólida y postura de determinación.
+  color_palette: Paleta competitiva clásica con azules profundos, blancos cálidos y acentos rojos de herencia emocional.
+  lighting_setup: Iluminación nocturna amplia con foco sentimental sobre gesto, materia y decisión.
+  material_texture: Cuero envejecido, polvo deportivo, tela en desgaste progresivo y metal de fondo.
+  render_quality: Frame deportivo emotivo con lectura clara de trayectoria vital y tensión competitiva.
+  spatial_distortion: Perspectiva progresiva que conserva un eje de objetivo como núcleo simbólico.
   atmosphere: Resuelta, nostálgica y profundamente motivada.
-  key_features: Iconografía guante-pelota, profundidad de estadio, ecos de crecimiento y herencia deportiva intergeneracional.
+  key_features: Iconografía deportiva abstracta, profundidad de trayectoria, ecos de crecimiento y herencia emocional.
   creative_brief: >-
-    Define una gramática reusable de generational-baseball donde legado,
-    crecimiento competitivo y simbolismo de batería deportiva funcionen como
-    sistema visual transferible.
+    Aplica una gramática reusable de resolución deportiva generacional a cualquier prompt o imagen de entrada:
+    legado, madurez y arco vital sin imponer baseball, guantes, pelotas, estadios ni linajes literales.
 avoidRules:
   - realistic
   - 3d render

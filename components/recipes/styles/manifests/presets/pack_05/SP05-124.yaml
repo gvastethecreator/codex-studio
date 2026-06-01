@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Hyper-competitive striker psychology, neon pitch intensity, feral ego close-ups, goalbox warfare, cutthroat sports animation, ballistic shot framing, tactical hunger made visual
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Predator-ego sports assault, with hyper-competitive psychology, lock-on intensity, and tactical hunger made visible.
+  form_and_line: Feral close-up geometry, field-line abstractions, ballistic vectors, sharp eye-line cuts, and pressure-zone framing.
+  color_palette: Electric blue, predator green, hot magenta, stadium black, white linework, and acid yellow target accents.
+  lighting_setup: Neon rim aggression, spotlight isolation, pulse flashes, and high-contrast tunnel vision.
+  material_texture: Synthetic turf texture, sweat gloss, digital speed overlays, crisp cel impact, and chromatic motion haze.
+  render_quality: Premium sports-anime polish with psychological clarity, speed precision, and manic competitive focus.
+  spatial_distortion: Tunnel-vision compression, target-lock perspective, and velocity lines that make desire feel tactical.
   atmosphere: Predatory, focused, manic, competitive
-  key_features: Soccer-ball velocity, eye-line intensity, predator metaphors, field-line perspective, lock-on shot framing
-  creative_brief: The goalbox narrows to a single retinal instant — predator eyes locking onto the ball with the hunger of a striker who has decided that scoring is the only acceptable form of existence. Neon pitch markings blur into velocity trails, the field becoming a cage where ego is the only muscle that matters. Every frame is a shot already taken, already scored, already inevitable.
+  key_features: Lock-on framing, ego aura, field-line abstraction, ballistic intent, predatory focus.
+  creative_brief: >-
+    Turn any prompt into a competitive ego diagram: use target-lock framing,
+    neon pressure lines, feral focus, and ballistic intent without requiring a
+    sport object, field, goal, or match scene.
 avoidRules:
   - realistic
   - 3d render

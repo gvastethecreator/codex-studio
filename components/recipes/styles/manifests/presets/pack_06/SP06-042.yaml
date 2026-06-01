@@ -12,7 +12,7 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Vintage newspaper photo
+  aesthetic: Vintage halftone newsprint reproduction
   form_and_line: Dot pattern
   color_palette: Black dots on newsprint
   lighting_setup: Flat
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Pixelated by dots
   atmosphere: Vintage, gritty
   key_features: Visible dots
-  creative_brief: The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs the ink greedily, the cheap paper already yellowing toward oblivion. Every halftone carries the urgency of yesterday's headline, information racing toward irrelevance.
+  creative_brief: The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs ink greedily, cheap paper already yellowing toward oblivion. The style should feel mass-reproduced, urgent, and degraded without requiring headlines, captions, or newspaper layout.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable headline
+  - newspaper layout requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-042.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

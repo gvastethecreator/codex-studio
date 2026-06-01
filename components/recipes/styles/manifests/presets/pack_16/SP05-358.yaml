@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-358
 packId: pack_16
-name: Hajime no Ippo - Corner Stool Comeback Grit
+name: Comeback Grit Impact Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Boxeo de superación clásica orientado a resistencia, técnica de guardia y comeback por rounds.
-  form_and_line: Anatomía de golpeo pesada, guardia compacta y acting físico de castigo acumulado.
-  color_palette: Rojos de esquina, azul acero de sombra de ring y tonos piel cálidos de esfuerzo extremo.
-  lighting_setup: Spot duro de ring con penumbra periférica y foco dramático en cuerda/esquina.
-  material_texture: Cuero de guante castigado, vendas saturadas, lona gastada y sudor de gimnasio viejo.
+  aesthetic: Combate de superación clásica orientado a resistencia, técnica compacta y comeback físico.
+  form_and_line: Anatomía de impacto pesada, guardia compacta y acting físico de castigo acumulado.
+  color_palette: Rojos de presión, azul acero de sombra periférica y tonos cálidos de esfuerzo extremo.
+  lighting_setup: Spot duro con penumbra periférica y foco dramático en borde de presión.
+  material_texture: Cuero castigado, bandas saturadas, tejido gastado y sudor de esfuerzo acumulado.
   render_quality: Frame de combate deportivo con legibilidad de impacto, defensa y recuperación.
-  spatial_distortion: Perspectiva de cuerdas con compresión de distancia en intercambio corto y uppercut.
+  spatial_distortion: Compresión de distancia en intercambio corto e impacto ascendente.
   atmosphere: Dura, inspiradora, áspera y obstinada.
-  key_features: Cuerdas tensas, postura de impacto, fatiga en banquillo y dúo coach-boxeador.
+  key_features: Límites tensos, postura de impacto, fatiga visible y recuperación obstinada.
   creative_brief: >-
-    Construye una gramática reusable de comeback-boxing donde fisicidad de
-    round, disciplina técnica y estética de gym clásico sostengan una identidad
-    transferible.
+    Construye una gramática reusable de comeback grit para cualquier prompt o imagen de entrada:
+    impacto, fatiga y recuperación sin imponer boxeo, ring, cuerdas, coach ni banquillo.
 avoidRules:
   - realistic
   - 3d render

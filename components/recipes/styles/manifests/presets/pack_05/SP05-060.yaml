@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-060
 packId: pack_05
-name: Orbital Rival Mecha
+name: Orbital Rivalry Frame Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Orbit-to-surface warfare, elegant super-mech contrast, dueling command philosophies, orbital-frame designs, trans-atmospheric drops, metatron ore, earth-vs-mars politics
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Orbital rivalry, elegant technical contrast, high-altitude political pressure, gravity defiance, and crystalline strategic grandeur.
+  form_and_line: Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced opposing silhouettes, and calm tactical posing.
+  color_palette: Deep orbital blue, white crystalline glow, magenta ion accents, cool alloy gray, and black-violet vacuum shadows.
+  lighting_setup: High-altitude rim light, ion glow, hard specular glints, black-field contrast, and luminous descent streaks.
+  material_texture: Polished alloy, crystalline energy seams, heat bloom, smooth armor-like surfaces, and faint atmospheric haze.
+  render_quality: Premium orbital anime finish with elegant surface control, strategic readability, and luminous high-scale polish.
+  spatial_distortion: Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector composition across large scale.
   atmosphere: Grand, competitive, epic, political
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Planets duel through proxy machines, each orbital frame a philosophical argument sheathed in alloy. Mars and Earth exchange not words but trans-atmospheric fire that burns like diplomacy failed. Gravity becomes a weapon wielded by titans who never touch the ground.
+  key_features: Orbital arcs, crystalline seams, elegant rivalry symmetry, high-altitude glow, and strategic negative-space tension.
+  creative_brief: >-
+    Apply orbital rivalry frame as a reusable style treatment: make any subject
+    feel elevated, strategic, graceful, and politically charged while staying
+    abstract, portable, and detached from fixed celestial bodies, hardware,
+    operators, alliances, or combat narratives.
 avoidRules:
   - realistic
   - 3d render

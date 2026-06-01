@@ -12,7 +12,7 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Car commercial
+  aesthetic: Automotive commercial polish
   form_and_line: Sleek curves
   color_palette: Metallic paint
   lighting_setup: Studio sweep or motion blur
@@ -20,15 +20,15 @@ visualDna:
   render_quality: Top Gear, expensive
   spatial_distortion: Motion blur wheels
   atmosphere: Fast, powerful
-  key_features: Car isolated
-  creative_brief: Sleek metal tears through stillness, motion blur bleeding into geometry as horsepower becomes sculpture. The machine is not driven but summoned into existence, every reflection a promise of velocity barely contained.
+  key_features: Reflective speed isolation
+  creative_brief: 'Automotive photography gives any subject a sleek performance read: glossy reflections, metallic color behavior, studio sweep or lateral motion blur, sculpted curves, and expensive speed isolation. Use car-commercial polish without requiring cars, wheels, roads, or vehicle action.'
 avoidRules:
   - dirty
-  - stationary
+  - dull
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-066.webp
 attributes:
-  negativePrompt: dirty, stationary
+  negativePrompt: dirty, dull
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

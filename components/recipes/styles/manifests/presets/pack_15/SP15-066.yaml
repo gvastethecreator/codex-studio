@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Civic infrastructure style where public transit looks fast enough to be dangerous and organized enough to trust.
-  form_and_line: Elevated plasma rails, exposed conduit spines, cantilever decks, transfer pod sockets, and mission-terminal fins.
+  aesthetic: Civic raypunk infrastructure where motion looks dangerous enough to thrill and organized enough to trust.
+  form_and_line: Elevated plasma lines, exposed conduit spines, cantilever slices, transfer-pod sockets, and terminal fins.
   color_palette: Electric cyan, ignition orange, brushed steel, signal white, and heat-stained violet.
   lighting_setup: Plasma streaks along rails, pulsing station strips, safety beacons, and underdeck cyan spill.
   material_texture: Composite decking, thick conduit glass, anti-slip metal, ceramic insulators, and heat-warning decals.
   render_quality: Infrastructure-focused concept rendering with clear service routes and strong kinetic rhythm.
-  spatial_distortion: Parallel rail vanishing lines create launch-vector perspective through hubs, pods, and signage.
+  spatial_distortion: Parallel vanishing lines create launch-vector perspective through hubs, pods, and blank signage.
   atmosphere: Speed, civic momentum, controlled danger, and commuter adrenaline.
-  key_features: Open plasma rails, transfer pod sockets, mission terminals, service catwalks, and safety icon clusters.
+  key_features: Open plasma rails, transfer-pod sockets, mission-fin silhouettes, service-line strokes, and safety icon clusters.
   creative_brief: >-
     Push plasma rail-commons as reusable style: treat movement as public
     electricity, with exposed energy channels, disciplined transfer geometry,

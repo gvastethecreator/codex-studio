@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-151
 packId: pack_16
-name: The Melancholy of Haruhi Suzumiya - SOS Club Reality Bending
+name: Pop Reality Bend Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Slice-of-life escolar con anomalía cosmológica latente, donde comedia de club y metafísica inestable conviven en el mismo plano.
-  form_and_line: Trazado digital pulcro de ensemble juvenil, acting excéntrico de líder central y staging de comedia con quiebre súbito.
-  color_palette: Amarillos de aula, azules vivos de uniforme, acentos primarios pop y destellos extraños de ruptura dimensional.
-  lighting_setup: Luz de tarde escolar brillante con gradientes suaves y micro-anomalías lumínicas que sugieren realidad maleable.
-  material_texture: Utilería de clubroom abarrotada, superficies limpias de era digital y ruido leve de broadcast 2000s.
-  render_quality: Acabado premium meta-escolar con legibilidad alta del tono híbrido entre cotidianeidad y amenaza cósmica.
-  spatial_distortion: Espacio de aula estable con microdesplazamientos perceptivos cuando emerge la capa de distorsión narrativa.
+  aesthetic: Comedia pop cotidiana con anomalía cosmológica latente, donde energía juvenil y metafísica inestable conviven.
+  form_and_line: Trazado digital pulcro, acting excéntrico central, ensemble reactivo y staging de comedia con quiebre súbito.
+  color_palette: Amarillos cálidos, azules vivos, acentos primarios pop y destellos extraños de ruptura dimensional.
+  lighting_setup: Luz de tarde brillante con gradientes suaves y micro-anomalías lumínicas que sugieren realidad maleable.
+  material_texture: Detalle cotidiano abarrotado, superficies limpias de era digital y ruido leve de broadcast 2000s.
+  render_quality: Acabado premium meta-pop con legibilidad alta del tono híbrido entre cotidianeidad y amenaza cósmica.
+  spatial_distortion: Espacio cotidiano estable con microdesplazamientos perceptivos cuando emerge la capa de distorsión narrativa.
   atmosphere: Lúdica, inquietante, brillante, meta.
-  key_features: Clubroom caótico, líder carismática dominante, ensemble reactivo y señales de reality bend en fondo.
-  creative_brief: Crea una gramática reusable de comedia escolar cosmológica para cualquier sujeto, equilibrando energía adolescente y ruptura de realidad de bajo umbral.
+  key_features: Caos pop controlado, figura carismática dominante, ensemble reactivo y señales sutiles de reality bend.
+  creative_brief: >-
+    Crea una gramática reusable de pop-reality-bend para cualquier sujeto:
+    cotidianeidad brillante, energía excéntrica, ruptura cosmológica de bajo
+    umbral y comedia meta sin imponer aula, clubroom, escuela, uniformes ni
+    grupo juvenil fijo.
 avoidRules:
   - realistic
   - 3d render

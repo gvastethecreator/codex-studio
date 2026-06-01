@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-071
 packId: pack_16
-name: Spirited Away – Ghibli Bathhouse Reverie Fantasy
+name: Warm Liminal Reverie Fantasy Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía termal liminal con calidez artesanal, humor espiritual y extrañeza amable de cuento iniciático.
+  aesthetic: Fantasía liminal cálida con artesanía viva, humor espiritual y extrañeza amable de cuento iniciático.
   form_and_line: Línea de largometraje orgánica, acting expresivo de curiosidad valiente y siluetas de criatura no amenazante.
   color_palette: Ocres cálidos de interior, rojos lacados, verdes musgo suaves y dorados de luz húmeda.
-  lighting_setup: Vapor volumétrico con glow ámbar, faroles difusos y contraste blando de pasillo encantado.
+  lighting_setup: Vapor volumétrico con glow ámbar, puntos de luz difusos y contraste blando de umbral encantado.
   material_texture: Madera barnizada, cerámica húmeda, papel tradicional y fondos pintados con densidad artesanal.
   render_quality: Acabado cinematográfico premium con microgesto emocional y atmósfera envolvente continua.
-  spatial_distortion: Arquitectura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.
+  spatial_distortion: Estructura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.
   atmosphere: Asombrada, mágica, íntima, onírica.
-  key_features: Espacios rituales vivos, criaturas de diseño entrañable y narrativa visual de descubrimiento ético.
-  creative_brief: Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional.
+  key_features: Rituales cotidianos vivos, formas entrañables y narrativa visual de descubrimiento ético.
+  creative_brief: Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional sin imponer bathhouses, criaturas, pasillos ni arquitectura concreta.
 avoidRules:
   - realistic
   - 3d render

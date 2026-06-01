@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Warship command deck beneath aurora-like nebula fields.
-  form_and_line: Command tiers, viewport arcs, and tactical bridges.
-  color_palette: Navy, magenta, and electric cyan.
-  lighting_setup: Instrument glow and strobing alert channels.
-  material_texture: Brushed steel, glass screens, and ribbed flooring.
-  render_quality: Action command concept with clear focus zones.
-  spatial_distortion: Viewport-driven depth into star battle.
-  atmosphere: Tactical urgency and heroic pressure.
-  key_features: Ray cannons, command dais, and alert pylons.
+  aesthetic: Abstract aurora-tactical raypunk render style with heroic pressure, alert-spectrum color, and decisive command hierarchy.
+  form_and_line: Tiered focal bands, panoramic arc framing, tactical rib lines, alert-channel stripes, and vector-like aim diagonals.
+  color_palette: Battle navy, aurora magenta, electric cyan, emergency red, and brushed steel gray.
+  lighting_setup: Instrument-style glow, strobing edge channels, aurora wash gradients, and hard rimlights on primary silhouettes.
+  material_texture: Brushed metal grain, curved glass sheen, ribbed rubber shadows, enamel signal marks, and worn control-surface detail.
+  render_quality: High-clarity action render with strong focus zones, crisp silhouettes, and controlled raypunk saturation.
+  spatial_distortion: Viewport-like depth and stacked foreground tiers compress the image toward urgent decisions.
+  atmosphere: Tactical urgency, heroic pressure, disciplined motion, and electric dread.
+  key_features: Aurora alert gradients, command-tier composition, cyan-magenta focus bands, hard tactical diagonals, and signal-stripe overlays.
   creative_brief: >-
-    Preserve aurora battle-deck grammar as a reusable style system:
-    heroic command-tier staging, alert-spectrum instrumentation, and
-    viewport-driven tactical urgency should remain coherent across subjects.
+    Apply aurora battle-deck as an abstract style treatment: transform any
+    subject into a decisive raypunk action image through aurora alert color,
+    command-tier framing, and tactical focus hierarchy.
 avoidRules: [photoreal, medieval, cyberpunk-slum, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-071.webp }
 attributes:
   negativePrompt: photoreal, medieval, cyberpunk-slum, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

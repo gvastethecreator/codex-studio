@@ -12,34 +12,30 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Folklore yokai de desfile nocturno con extrañeza documental, humor seco y familiaridad inquietante.
+  aesthetic: Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad inquietante.
   form_and_line: Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta lavada.
   color_palette: Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan
   lighting_setup: Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.
   material_texture: Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.
   render_quality: Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.
-  spatial_distortion: Odd spirit anatomy, procession depth, deadpan human-scale contrast, uncanny silhouette spacing
+  spatial_distortion: Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette spacing
   atmosphere: Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.
-  key_features: Siluetas de parada yokai, fondo campestre nocturno, glow de linterna y staging pseudo-documental.
+  key_features: Siluetas yokai-like, nocturnidad terrosa, glow de linterna y staging pseudo-documental.
   creative_brief: >-
     Define una gramática yokai-parade transferible basada en trazo de tinta,
-    nocturnidad rural y catalogación deadpan de espíritus grotescos sin caer
-    en terror explícito ni caricatura vacía.
+    nocturnidad terrosa y catalogación deadpan de lo grotesco sin exigir yokai,
+    desfile, campo, linterna, humano testigo ni escena narrativa fija.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - glossy digital polish
+  - photoreal creature rendering
+  - clean modern fantasy UI
+  - neon sci-fi palette
+  - cute mascot simplification
+  - empty flat background
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

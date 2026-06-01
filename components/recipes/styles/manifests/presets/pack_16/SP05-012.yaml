@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-012
 packId: pack_16
-name: Sparkling Magical Team
+name: Sparkling Magical Chorus Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Magical-team transformacional con glamour lunar, heroísmo pastel y simbolismo ornamental de esperanza colectiva.
-  form_and_line: Línea 90s fina y elegante, silueta coreográfica de escuadrón y transición de vestuario ritual.
+  aesthetic: Transformación mágica coral con glamour lunar, heroísmo pastel y simbolismo ornamental de esperanza colectiva.
+  form_and_line: Línea 90s fina y elegante, silueta coreográfica coral y transición ornamental ritual.
   color_palette: Rosas perlados, lilas lunares, celestes suaves y dorados delicados de emblema mágico.
   lighting_setup: Halo etéreo de transformación, brillo satinado y contraste limpio de combate luminoso.
-  material_texture: Satén de traje mágico, cristal de accesorio, partículas de glitter y grano cel de fantasía optimista.
+  material_texture: Satén mágico abstracto, cristal ornamental, partículas de glitter y grano cel de fantasía optimista.
   render_quality: Acabado dorado noventero con legibilidad perfecta de metamorfosis, unión y victoria emotiva.
-  spatial_distortion: Espacio ceremonial abierto para secuencia de presentación, vuelo y cierre en formación.
+  spatial_distortion: Espacio ceremonial abierto para presentación, vuelo gráfico y cierre coral en formación.
   atmosphere: Romántica, empoderadora, grácil, radiante.
-  key_features: Motivo creciente, cintas en espiral, composición de equipo y iconografía mística de emblema.
-  creative_brief: Construye una gramática reusable de transformación mágica coral para cualquier sujeto, equilibrando elegancia ornamental, cohesión de equipo y luz esperanzadora.
+  key_features: Motivo creciente, cintas en espiral, composición coral e iconografía mística de emblema.
+  creative_brief: >-
+    Construye una gramática reusable de sparkling-magical-chorus para cualquier
+    sujeto, equilibrando elegancia ornamental, cohesión visual y luz
+    esperanzadora sin imponer equipos, trajes, escuadrones, accesorios,
+    transformación literal ni combate luminoso.
 avoidRules:
   - realistic
   - 3d render

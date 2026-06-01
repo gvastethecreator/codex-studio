@@ -10,20 +10,77 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo',
     style: {
-      aesthetic: 'Post-war dieselpunk rebuilt as cooperative freight and repair urbanism.',
-      form_and_line: 'Heavy chassis geometry, elevated fuel viaducts, and robust workshop framing.',
+      aesthetic:
+        'Post-war dieselpunk rebuilt as cooperative freight logic, repair culture, and practical reconstruction grit.',
+      form_and_line:
+        'Heavy chassis geometry, elevated fuel-line vectors, and robust workshop-like framing.',
       color_palette: 'Oxide red, soot gray, and signal amber.',
       lighting_setup: 'Smoky afternoon backlight with hard industrial highlights.',
       material_texture:
         'Riveted steel, grease-dark rubber, weathered concrete, and canvas utility tarps.',
       render_quality:
-        'Rugged cinematic concept art with strong mass readability and mechanical detail.',
-      spatial_distortion: 'Convoy-lane depth perspective ending at a civic repair hangar.',
+        'Rugged cinematic dieselpunk concept art with strong mass readability and mechanical detail.',
+      spatial_distortion: 'Convoy-lane depth perspective ending at a civic repair focal mass.',
       atmosphere: 'Gritty solidarity, practical endurance, and collective reconstruction.',
       key_features:
-        'Diesel haulers, communal machine shops, fuel reclamation towers, and worker canteens.',
+        'Diesel-hauler motifs, communal machine-shop rhythm, fuel reclamation towers, and worker-solidarity cues.',
       creative_brief:
-        'A dieselpunk district where heavy infrastructure is repurposed for mutual aid logistics and public resilience.',
+        'Preserve iron convoy-commons grammar as a reusable style system: heavy repair urbanism, reclaimed fuel logistics, and worker-solidarity infrastructure should remain coherent across subjects without requiring trucks, hangars, canteens, workers, or a literal convoy.',
+    },
+  },
+  {
+    id: 'SP15-134',
+    name: 'Sootline Aerostat Relief',
+    category: '7. Corepunk — Dieselpunk',
+    negativePrompt:
+      'photoreal, neon-cyber, pristine-utopia, magical-fantasy, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Humanitarian dieselpunk where heavy lift, sootline weathering, and rebuilt logistics feel rugged but compassionate.',
+      form_and_line:
+        'Blunt hull curves, cable-braced diagonals, crate-stack rectangles, and heavy shadow masses with clear signal markings.',
+      color_palette:
+        'Soot gray, rescue amber, canvas khaki, oxide red, and pale smoke-blue distance.',
+      lighting_setup:
+        'Smoky backlight, hard industrial rims, searchlamp wedges, and warm relief-lamp pools.',
+      material_texture:
+        'Riveted steel, oilcloth canvas, chipped signal paint, rubberized hoses, soot dust, and worn pulley cables.',
+      render_quality:
+        'Rugged dieselpunk key art with strong mass readability, weathered utility detail, and practical emotional warmth.',
+      spatial_distortion:
+        'Heavy-lift diagonal depth and compressed logistics layers without requiring airships, crates, workers, or a battlefield.',
+      atmosphere: 'Burdened, resilient, compassionate, smoky, operational.',
+      key_features:
+        'Aerostat hull rhythm, relief-signal amber, cable-brace geometry, sootline weathering, and repaired utility surfaces.',
+      creative_brief:
+        'Preserve sootline aerostat relief as a reusable style system: heavy lift, repaired logistics, and warm diesel-era endurance should transform any subject without forcing airships, convoys, disaster scenes, or crews.',
+    },
+  },
+  {
+    id: 'SP15-135',
+    name: 'Signal Amber Field Repair',
+    category: '7. Corepunk — Dieselpunk',
+    negativePrompt: 'photoreal, neon-cyber, luxury-clean, magical-fantasy, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Field-repair dieselpunk where modular patches, signal amber lamps, and grease-dark pragmatism make endurance visible.',
+      form_and_line:
+        'Patch-plate rectangles, wrench-arc diagonals, hose loops, rivet rows, and robust load-bearing silhouettes.',
+      color_palette:
+        'Signal amber, army olive, soot black, worn steel, canvas tan, and chipped cream markings.',
+      lighting_setup:
+        'Low sun through smoke haze, portable lamp pools, hard rim glints on metal edges, and warm repair sparks.',
+      material_texture:
+        'Grease-dark steel, canvas tape, weld beads, cracked rubber, sandblasted paint, and oily handprint smears.',
+      render_quality:
+        'Tactile dieselpunk finish with readable repair logic, rugged mass hierarchy, and controlled utilitarian clutter.',
+      spatial_distortion:
+        'Compressed maintenance-depth layers and diagonal tool-flow without requiring vehicles, mechanics, garages, or war.',
+      atmosphere: 'Practical, gritty, stubborn, warm, resourceful.',
+      key_features:
+        'Patch-plate logic, amber repair lamps, hose-loop rhythm, rivet rows, weld scars, and grease-marked material history.',
+      creative_brief:
+        'Preserve signal amber field repair as a reusable style system: patched endurance, diesel utility, and warm maintenance light should apply to any subject without requiring vehicles, workshops, weapons, or mechanics.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

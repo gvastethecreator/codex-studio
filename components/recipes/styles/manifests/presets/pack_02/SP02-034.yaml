@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Moody miniature stop-motion fantasy, Coraline style, handcrafted dread, wool sweaters, button eyes
+  aesthetic: Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation
   form_and_line: None
   color_palette: Texture rich, muted jewel, deep violet, moss green, rust orange
   lighting_setup: Miniature studio, practical dollhouse, keyed drama, soft fill
-  material_texture: Fabric, 3D print, wool knit, silicone skin, real hair
+  material_texture: Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture
   render_quality: Tactile, creepy, frame-by-frame labor, physical imperfection
-  spatial_distortion: Replacement face, expression swap, incremental sculpt
-  atmosphere: Dark, handmade, gothic whimsy, craft horror
-  key_features: Imperfection, fingerprint texture, miniature prop detail
-  creative_brief: Needle marks in woolly sweaters catch the amber glow of a dollhouse lamp, each fiber a testament to hands that labored in miniature. A corridor stretches too far into violet shadow, where button eyes gleam with borrowed life. Something waits in the space between frames — patient, handcrafted, and not quite friendly.
+  spatial_distortion: Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
+  atmosphere: Dark, handmade, gothic whimsy, craft unease
+  key_features: Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection
+  creative_brief: 'Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material flaws.'
 avoidRules:
   - smooth 3d
 assets:

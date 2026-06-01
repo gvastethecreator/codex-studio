@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-007
 packId: pack_16
-name: Wasteland Martial Legend
+name: Wasteland Impact Legend Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Épica marcial postapocalíptica de impacto físico extremo, con iconografía de supervivencia y ferocidad ritual.
+  aesthetic: Épica de supervivencia brutal, impacto físico extremo, ferocidad ritual y dureza post-colapso.
   form_and_line: Línea gruesa y cortante, anatomía hipertensa y puesta de golpe frontal con lectura brutal inmediata.
   color_palette: Ocres abrasados, negros pesados, rojos secos y acentos hueso de paisaje devastado.
   lighting_setup: Sol alto implacable y sombras densas, con destellos duros sobre sudor, metal y cuero gastado.
   material_texture: Cuero curtido, polvo volcánico, cicatriz visible y grano áspero de cinta analógica violenta.
   render_quality: Acabado retro de alto contraste corporal, privilegiando contundencia, daño y resiliencia.
-  spatial_distortion: Horizonte árido abierto con encuadres de colisión directa y escala de duelo primitivo.
+  spatial_distortion: Horizonte árido abstracto con encuadres de colisión directa y escala de choque primitivo.
   atmosphere: Brutal, icónica, tensa, visceral.
-  key_features: Siluetas masivas, gesto de superviviente, iconografía wasteland y coreografía de impacto sin ornamento.
-  creative_brief: Construye una gramática reusable de combate de supervivencia en desierto colapsado para cualquier sujeto, enfocada en peso físico, dureza material y catarsis de choque.
+  key_features: Siluetas masivas, gesto de supervivencia, dureza wasteland y coreografía de impacto sin ornamento.
+  creative_brief: >-
+    Construye una gramática reusable de wasteland-impact-legend para cualquier
+    sujeto, enfocada en peso físico, dureza material y catarsis de choque sin
+    imponer desiertos, duelos, guerreros, cuero, cicatrices ni combate literal.
 avoidRules:
   - realistic
   - 3d render

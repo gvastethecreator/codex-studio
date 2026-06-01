@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Shimmering magical-girl glamour with fashion-magazine grace, moon-prism romance, jeweled poses, diary-heart tenderness and celestial femininity
-  form_and_line: Clean beauty-line contours, glossy eyelash emphasis, accessory-forward inking
+  aesthetic: Shimmering moon-prism glamour with fashion-magazine grace, diary-heart tenderness, celestial romance, and polished transformation energy
+  form_and_line: Clean beauty-line contours, glossy eyelash emphasis, accessory-like inking, and ribbon-sweep composition
   color_palette: Blush pink, moon white, navy velvet, gold sparkle, peach pearl, lavender gleam
   lighting_setup: Soft star-filter bloom, moonlit key light, cosmetic glow with sparkle flares
-  material_texture: Glossy lips, satin ribbons, enamel brooch detail, pearl-shine skin highlights
+  material_texture: Glossy cosmetic highlights, satin ribbon sheen, enamel-like ornament detail, and pearl-shine glow
   render_quality: Romantic magical-girl rendering with polished fashion-beauty framing and sparkle-disciplined clarity
-  spatial_distortion: Waist-length hair arcs, elongated eyes, floating ribbons, graceful transformation posture
+  spatial_distortion: Long flowing arcs, elongated eye-like focal shapes, floating ribbons, and graceful transformation posture cues
   atmosphere: Romantic, sparkling, feminine, dreamy
-  key_features: Moon motifs, gem brooches, fashion poses, ribbon motion, starry romance framing
+  key_features: Moon motifs, gem-like emblems, fashion-pose rhythm, ribbon motion, starry romance framing
   creative_brief: >-
-    Preserve moon-prism glamour grammar as a reusable style system:
-    transformation-fashion elegance, ribbon-and-brooch sparkle language, and
-    tender celestial romance should remain coherent across subjects.
+    Use Naoko Takeuchi title as style anchor for moon-prism glamour:
+    transformation-fashion elegance, ribbon sparkle, emblem light, and tender
+    celestial romance should transfer without requiring magical girls, brooches,
+    pose callouts, or fixed moon iconography.
 avoidRules:
   - gritty realism
   - desaturated palettes

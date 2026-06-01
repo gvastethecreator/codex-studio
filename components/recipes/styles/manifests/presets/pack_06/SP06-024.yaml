@@ -17,11 +17,11 @@ visualDna:
   color_palette: Red, Brown, Black, White
   lighting_setup: Classical study
   material_texture: Textured paper
-  render_quality: Life drawing, academic
+  render_quality: Academic study finish with warm material restraint
   spatial_distortion: None
   atmosphere: Warm, classical
   key_features: Earth tones
-  creative_brief: Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeology, colors dug from the ground and pressed into service capturing human form. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.
+  creative_brief: Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeological, colors dug from the ground and pressed into disciplined value structure. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

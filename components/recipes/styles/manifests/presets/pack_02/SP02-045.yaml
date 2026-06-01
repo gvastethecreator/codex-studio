@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: 16-bit RPG
+  aesthetic: 16-bit pixel animation
   form_and_line: Pixel outline
   color_palette: Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor
   lighting_setup: Dithered, checkerboard blend, 50% pattern, sprite highlight
   material_texture: Pixel grid, visible aliasing, blocky charm, scanline overlay
   render_quality: Retro game, sprite-sheet precision, tile-map aesthetic
   spatial_distortion: Sprite squash, 8-direction limitation, walk-cycle snap
-  atmosphere: Nostalgic, game, 16-bit adventure, sword-and-sorcery
-  key_features: Grid lock, pixel-perfect, HUD overlay, dialogue box
-  creative_brief: A hero freezes in quarter-step stride, sixteen colors carrying the weight of an entire kingdom across a grid-locked horizon. Each pixel is a decision, each dither pattern a negotiation between memory and constraint. The phosphor glow lingers like a half-remembered dream played on a CRT in the back of a childhood bedroom.
+  atmosphere: Nostalgic, game, 16-bit constraint, handcrafted sprite logic
+  key_features: Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor
+  creative_brief: 'Convert any subject into 16-bit pixel animation grammar: visible grid, indexed palette, crisp aliasing, dithered shade ramps, tile-like structure, and CRT phosphor glow. Do not add HUDs, dialogue boxes, heroes, kingdoms, or genre scenes unless already requested. Each pixel should feel deliberately placed under hardware-era constraints.'
 avoidRules:
   - vector
   - smooth

@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-128
+packId: pack_02
+name: Emergency Broadcast Signal Break
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual
+  form_and_line: Horizontal bands, test-pattern blocks, centered warning geometry, scanline fracture, hard rectangular cuts
+  color_palette: SMPTE color bars, alert red, black void, phosphor white, dirty cyan, warning yellow
+  lighting_setup: Self-emissive CRT glow, blown white bars, high contrast signal clipping
+  material_texture: CRT scanlines, analog snow, sync tear, tape dropout, phosphor bloom
+  render_quality: Harsh, alarming, graphic, signal-native
+  spatial_distortion: Horizontal roll, tracking tear, image displacement, broadcast interruption layering
+  atmosphere: Urgent, uncanny, official, hostile
+  key_features: Color bars, scanline tear, signal snow, hard warning blocks, no readable text
+  creative_brief: 'Render any prompt as emergency broadcast interruption: color bars, warning-block geometry, CRT glow, scanline tear, analog snow, and clipped high-contrast signal. Avoid readable messages, official seals, real alerts, or literal TV sets. The style should feel like the image is being overridden by broadcast infrastructure.'
+avoidRules:
+  - soft film
+  - friendly graphics
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-128.webp
+attributes:
+  negativePrompt: soft film, friendly graphics
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-157
 packId: pack_16
-name: Air Gear - Neon Street-Skate Battle
+name: Vertical Speed Rebellion Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Cultura speed-tech urbana de pandilla aérea, con rebeldía juvenil y libertad vertical como identidad central.
-  form_and_line: Línea dinámica de parkour sobre ruedas, diagonales de impulso y siluetas aerodinámicas de alta energía.
-  color_palette: Cianes eléctricos, naranjas de fricción, morados urbanos y negros de asfalto nocturno.
-  lighting_setup: Iluminación de ciudad en movimiento con brillos de velocidad, gradiente digital pulido y rim en salto.
-  material_texture: Concreto de azotea, metal de rail, goma de ruedas motorizadas y grano leve de era HD temprana.
+  aesthetic: Cultura speed-tech de rebeldía vertical, con libertad cinética, crew-energy y conquista de altura.
+  form_and_line: Línea dinámica de impulso aéreo, diagonales extremas y siluetas aerodinámicas de alta energía.
+  color_palette: Cianes eléctricos, naranjas de fricción, morados sintéticos y negros rugosos nocturnos.
+  lighting_setup: Iluminación en movimiento con brillos de velocidad, gradiente digital pulido y rim en salto.
+  material_texture: Superficie rugosa, metal marcado, goma técnica abstracta y grano leve de era HD temprana.
   render_quality: Acabado premium action-2000s con legibilidad cinética, pose aérea y cultura de crew bien diferenciada.
-  spatial_distortion: Perspectiva de vértigo vertical con elongación de trayectoria y compresión de skyline.
+  spatial_distortion: Perspectiva de vértigo vertical con elongación de trayectoria y compresión de altura.
   atmosphere: Rápida, rebelde, vistosa, ingrávida.
-  key_features: Siluetas skate motorizadas, rooftops encadenados, moda gang-tech y estelas de viento urbano.
-  creative_brief: Construye una gramática reusable de velocidad aérea urbana para cualquier sujeto, mezclando estilo de crew, trayectoria extrema y sensación de conquista vertical.
+  key_features: Siluetas aerodinámicas, estelas de viento, moda tech-rebelde y trayectoria extrema.
+  creative_brief: >-
+    Construye una gramática reusable de vertical-speed-rebellion para cualquier
+    sujeto, mezclando estilo de crew, trayectoria extrema y conquista vertical
+    sin imponer skates, rooftops, pandillas, ciudad, rails ni ruedas.
 avoidRules:
   - realistic
   - 3d render

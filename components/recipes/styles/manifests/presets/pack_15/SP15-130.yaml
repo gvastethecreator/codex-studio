@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP15-130
+packId: pack_15
+name: Cathode Pool Reverie
+category: 5. Corepunk — Vaporpunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, vaporpunk]
+visualDna:
+  aesthetic: Vaporpunk dream gloss where cathode bloom, tiled leisure geometry, and pastel humidity turn any subject into soft retro-future memory.
+  form_and_line: Rounded monitor silhouettes, pool-tile grid echoes, chrome bevel arcs, and low-friction vaporwave spacing.
+  color_palette: Aqua cyan, sunset peach, lavender haze, milky white, and faint magenta phosphor.
+  lighting_setup: CRT-like bloom, underwater reflection bands, glossy dusk gradients, and soft neon edge halos.
+  material_texture: Frosted acrylic, ceramic tile sheen, chrome trim, humid glass, VHS softness, and low-res phosphor grain.
+  render_quality: High-polish vaporpunk finish with clean nostalgic geometry, dreamy reflection logic, and deliberate synthetic serenity.
+  spatial_distortion: Mirrored pool-depth recursion and screen-space flattening without requiring water, malls, screens, or a room.
+  atmosphere: Dreamy, synthetic, wistful, weightless, ambient.
+  key_features: Cathode glow, tiled grid rhythm, vapor reflection bands, chrome-soft bevels, and pastel humidity.
+  creative_brief: >-
+    Preserve cathode pool reverie as a reusable style system: CRT bloom,
+    leisure-tile rhythm, and humid pastel reflections should transform any
+    subject without forcing a pool, screen, mall, or interior scene.
+avoidRules: [photoreal, gritty-realism, horror, rusty-industrial, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-130.webp }
+attributes:
+  negativePrompt: photoreal, gritty-realism, horror, rusty-industrial, watermark, text, logo
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-vaporpunk,
+    categoryName: 5. Corepunk — Vaporpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, vaporpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

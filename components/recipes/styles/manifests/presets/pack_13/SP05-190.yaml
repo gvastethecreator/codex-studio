@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Clean-reunion shojo grammar with emotional guardedness, polished school minimalism, and tension carried by near-silent interpersonal spacing
-  form_and_line: Crisp uniform silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering, and pause-heavy pose language
+  aesthetic: Clean-reunion shojo grammar with emotional guardedness, polished minimalism, and tension carried by near-silent interpersonal spacing
+  form_and_line: Crisp silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering, and pause-heavy pose language
   color_palette: Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and low-saturation spring greens
-  lighting_setup: Cloud-soft ambient fill, corridor window side-light, subtle reflective floor bounce, and low-bloom highlight restraint
-  material_texture: Pressed cotton uniform planes, matte classroom surfaces, smooth notebook-paper cues, and minimally glossy hair sheen
+  lighting_setup: Cloud-soft ambient fill, window-like side-light, subtle reflective bounce, and low-bloom highlight restraint
+  material_texture: Pressed cotton planes, matte neutral surfaces, smooth paper cues, and minimally glossy hair sheen
   render_quality: Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic polish
-  spatial_distortion: Emotional-distance compression through corridor depth and over-shoulder perspective narrowing
+  spatial_distortion: Emotional-distance compression through depth narrowing and over-shoulder perspective pressure
   atmosphere: Pensive, attractive, hesitant, tender
-  key_features: Clean school styling, reunion glances, cool-guy silhouette contrast, airy campus spaces, heart-stopping close-ups
+  key_features: Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart-stopping close-ups
   creative_brief: >-
     Preserve clean-uniform reunion grammar as a reusable style system:
-    minimal school-space composition, quiet emotional distance cues, and
+    minimal negative-space composition, quiet emotional distance cues, and
     polished restrained linework should remain consistent across subjects.
 avoidRules:
   - realistic

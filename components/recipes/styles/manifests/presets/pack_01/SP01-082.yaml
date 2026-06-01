@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-082
+packId: pack_01
+name: Seamless Packshot
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Catalog packshot clarity
+  form_and_line: Centered object geometry
+  color_palette: Neutral whites and controlled greys
+  lighting_setup: Shadowless softbox sweep
+  material_texture: Clean true surface
+  render_quality: Retail catalog precision
+  spatial_distortion: Corrected perspective
+  atmosphere: Objective, premium, frictionless
+  key_features: Seamless background
+  creative_brief: 'Packshot photography reduces any subject to clean commercial certainty: seamless sweep background, centered geometry, softbox evenness, corrected perspective, honest texture, and zero narrative clutter. Useful for making prompts read as sellable objects without forcing a specific product type.'
+avoidRules:
+  - clutter
+  - dramatic shadow
+  - lifestyle scene
+  - watermark
+  - text
+  - signature
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-082.webp
+attributes:
+  negativePrompt: clutter, dramatic shadow, lifestyle scene, watermark, text, signature
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

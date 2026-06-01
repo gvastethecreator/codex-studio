@@ -13,19 +13,20 @@ tags:
   - anime
   - slice-of-life
 visualDna:
-  aesthetic: Summer-festival slice-of-life anime language with yukata elegance, communal night warmth, and nostalgic romantic undercurrent
-  form_and_line: Soft flowing garment contours, gesture-led pair/group interactions, stall-and-lantern rhythm lines, and gentle crowd silhouette layering
+  aesthetic: Lantern-summer slice-of-life anime language with flowing elegance, communal night warmth, and nostalgic romantic undercurrent
+  form_and_line: Soft flowing garment contours, gesture-led interaction rhythm, lantern-like cadence lines, and gentle layered silhouettes
   color_palette: Lantern amber-orange, deep indigo night fields, muted rose accents, and warm skin-light highlights balanced by cool shadows
-  lighting_setup: Warm lantern practical clusters, low-key night ambient fill, distant fireworks edge glints, and soft bokeh separation behind characters
-  material_texture: Light cotton-yukata weave, washi lantern diffusion, lacquered wooden stall surfaces, and humid summer-air haze
+  lighting_setup: Warm lantern practical clusters, low-key night ambient fill, distant sparkle edge glints, and soft bokeh separation
+  material_texture: Light cotton weave, washi lantern diffusion, lacquered wood surfaces, and humid summer-air haze
   render_quality: Emotion-rich festival anime rendering with clear focal hierarchy, balanced crowd context, and polished readability
-  spatial_distortion: Mid-depth street perspective with layered lantern depth cues and stable character readability in foreground
+  spatial_distortion: Mid-depth perspective with layered lantern depth cues and stable subject readability in foreground
   atmosphere: Nostalgic, joyful, tender, and gently wistful
-  key_features: Lantern-string cadence, yukata silhouette motifs, distant firework shimmer accents, and shared-gesture emotional anchors
+  key_features: Lantern-string cadence, flowing silhouette motifs, distant shimmer accents, and shared-gesture emotional anchors
   creative_brief: >-
-    Preserve summer-festival grammar as a reusable style system: warm lantern
-    practicals, indigo-night contrast, and interpersonal gesture-centered
-    staging should remain consistent across subjects.
+    Use Festival Lantern Summer as style anchor for nostalgic night warmth:
+    lantern practicals, indigo-night contrast, and gesture-centered tenderness
+    should transfer without requiring festival stalls, yukata, fireworks,
+    street, crowd, or summer-date scene.
 avoidRules:
   - photoreal
   - bleak-horror

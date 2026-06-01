@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Shouting primary-color lunacy, absurd sibling slapstick, huge feet and tiny torsos, anti-subtle cartoon vulgarity, hallway chaos, exaggerated rubbery ugliness, jagged gross comedy
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy
+  form_and_line: Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact
+  color_palette: Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white
+  lighting_setup: Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure
+  material_texture: Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface
+  render_quality: Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression
+  spatial_distortion: Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses
   atmosphere: Loud, shameless, unruly, ridiculous
-  key_features: Primary-color saturation, giant feet, screaming mouths, surreal hallway staging, chaotic sibling energy
-  creative_brief: A fever dream rendered in poster paint and cheap newsprint, where every scream rattles the panel borders and limbs stretch beyond anatomy's permission. The frame vibrates with sibling warfare conducted at volumes meant for stadiums, and dignity has been ejected from the room entirely.
+  key_features: Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing
+  creative_brief: 'Apply loud primary derangement to any input: saturated primaries, rubbery ugliness, jagged comic bursts, scale mismatch, and zero-subtlety slapstick. Avoid siblings, hallways, mouths, limbs, or specific characters. The image should feel shouted into existence.'
 avoidRules:
   - digital
   - HD

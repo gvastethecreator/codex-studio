@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-116
 packId: pack_06
-name: Stealth Game Night City Rooftops
+name: Stealth Game Shadow Readability
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Stealth-game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition.
+  subject_treatment: Break any subject into concealment-ready silhouettes, light-safe edges, and readable exposure states.
+  color_and_tone: Blue-black shadows, sodium or cyan guard-light accents, desaturated mids, and sharp visibility contrast.
+  lighting_and_shadow: Hard pools of detection light, broad occluding darkness, rim hints, and value-coded safe/danger zones.
+  texture_and_material: Damp concrete-like roughness, soft bloom in lit areas, subtle grain, and minimal shiny distractions.
+  camera_and_composition: Oblique surveillance framing, strong occluder shapes, path-like negative space, and clear stealth lanes.
+  atmosphere_and_mood: Suspenseful, quiet, covert mood without requiring rooftops, cities, guards, weapons, or night exteriors.
+  rendering_and_quality: Game-readable lighting design, clean silhouette hierarchy, no UI markers or readable text.
 avoidRules:
   - watermark
   - text
+  - literal rooftop requirement
+  - guard requirement
+  - weapon requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-116.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, literal rooftop requirement, guard requirement, weapon requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

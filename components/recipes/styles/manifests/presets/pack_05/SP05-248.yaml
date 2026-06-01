@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Cocina de supervivencia fantástica, donde la exploración de dungeon se transforma en gastronomía ecológica aplicada.
-  form_and_line: Gestualidad culinaria en combate, utensilios protagonistas y composición de mesa improvisada sobre ruina pétrea.
-  color_palette: Dorado de caldo, rojo especia, verde hierba de caverna, gris piedra y azul tenue de fuego mágico.
-  lighting_setup: Fuego de cocina en cueva, luz cálida de hornilla portátil y rebote tenue en paredes húmedas.
-  material_texture: Hierro fundido, superficies de corte, piedra rugosa, tejido aventurero manchado y brillo de grasa.
+  aesthetic: Gastronomía fantástica funcional, ecología aplicada, humor práctico y apetito técnico como dirección visual.
+  form_and_line: Gestualidad culinaria abstracta, ritmo de preparación, composición circular comunitaria y lectura clara de proceso.
+  color_palette: Dorado de caldo, rojo especia, verde hierba, gris piedra y azul tenue de fuego mágico.
+  lighting_setup: Luz cálida de cocción, rebote bajo y brillo funcional sobre superficies húmedas.
+  material_texture: Hierro fundido, superficies trabajadas, piedra rugosa, tejido manchado y brillo de grasa.
   render_quality: Fantasía culinaria de alto detalle funcional con equilibrio entre humor, peligro y apetito.
-  spatial_distortion: Espacio de cocina-campamento comprimido dentro de sala de dungeon de gran escala.
+  spatial_distortion: Compresión de preparación, escala funcional, círculo de colaboración y profundidad cálida de oficio.
   atmosphere: Curiosa, nutritiva y aventurera, con alegría práctica.
-  key_features: Ollas y cuchillos, ingredientes monstruo, estación de cocción de campaña y party hambrienta colaborativa.
+  key_features: Calor culinario, proceso visible, ecología fantástica, grasa brillante y colaboración nutritiva.
   creative_brief: >-
     Construye una gramática stove-top-dungeon reusable donde lógica culinaria,
-    ecología de monstruos y camaradería de campo conviertan la exploración en
-    acto técnico y comunitario.
+    ecología fantástica y camaradería práctica conviertan cualquier sujeto en
+    acto técnico/comunitario sin forzar arquitectura subterránea, criaturas,
+    herramientas, superficie de comida o grupo fijo.
 avoidRules:
   - realistic
   - 3d render

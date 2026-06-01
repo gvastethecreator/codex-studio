@@ -12,34 +12,30 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Romanticismo espacial retrofuturista de melancolía noble, con distancia cósmica y heroísmo resignado.
-  form_and_line: Contorno elegante retro, proporciones faciales alargadas, linework fino en capas y maquinaria ferroviaria estelar.
+  aesthetic: Romanticismo retrofuturista de melancolía noble, distancia cósmica y heroísmo resignado.
+  form_and_line: Contorno elegante retro, proporciones alargadas, linework fino en capas y maquinaria estelar sugerida.
   color_palette: Deep navy, brass gold, wine red, vacuum black, starlight white, engine blue
-  lighting_setup: Contraluz de campo estelar, glow de consola latón y framing de silueta en puente de mando sombrío.
-  material_texture: Cielo pintado profundo, paneles metálicos gastados, caída de capa aterciopelada y suavidad cel-era.
+  lighting_setup: Contraluz de campo estelar, glow de latón técnico y framing de silueta en penumbra solemne.
+  material_texture: Cielo pintado profundo, paneles metálicos gastados, caída textil aterciopelada y suavidad cel-era.
   render_quality: Space-opera de alta legibilidad con escala infinita y dramatismo de horizonte prolongado.
-  spatial_distortion: Tall melancholy figures, long horizon lines, deep star-distance perspective, theatrical cape flow
+  spatial_distortion: Tall melancholy forms, long horizon lines, deep star-distance perspective, and theatrical fabric flow
   atmosphere: Solitaria, romántica y cósmica, con nobleza de despedida interminable.
-  key_features: Imaginería de star-track, siluetas en capa, control rooms retro y framing de distancia luctuosa.
+  key_features: Imaginería de star-track, siluetas retro, metal noble envejecido y framing de distancia luctuosa.
   creative_brief: >-
-    Define una gramática de cosmic-melancholy transferible con silueta
-    retrofuturista, iconografía ferroviaria estelar y escala emocional de
-    lejanía persistente.
+    Define una gramática cosmic-melancholy transferible con silueta
+    retrofuturista, señales de viaje estelar y escala emocional de lejanía
+    persistente, sin exigir tren, puente de mando, capa o personaje heroico.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - photoreal spaceship realism
+  - hard sci-fi UI clutter
+  - comedic chibi tone
+  - bright candy palette
+  - grounded contemporary streetwear
+  - shallow space scale
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-328.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: photoreal spaceship realism, hard sci-fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

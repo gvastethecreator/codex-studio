@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Espiritualidad paladín de tono sobrio, con mentoría funeraria, templo antiguo y heroísmo devocional sin cinismo.
-  form_and_line: Postura de voto y peregrinaje, armadura clásica al amanecer y siluetas guardianas de solemnidad sepulcral.
+  aesthetic: Espiritualidad sobria, mentoría ritual, heroísmo devocional sin cinismo y solemnidad ética de alto fantasy.
+  form_and_line: Postura de voto, líneas de peregrinaje abstractas, siluetas protectoras y verticalidad de juramento.
   color_palette: Oro alba, azul oración, gris piedra ancestral, blanco juramento y verde de santuario antiguo.
-  lighting_setup: Amanecer litúrgico, shafts en nave de templo y halo moderado sobre armadura y símbolos sagrados.
-  material_texture: Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo de capilla olvidada.
+  lighting_setup: Amanecer litúrgico, shafts verticales y halo moderado sobre símbolos sagrados.
+  material_texture: Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo antiguo.
   render_quality: Fantasía devocional de gran claridad ética, con equilibrio entre épica y contemplación religiosa.
-  spatial_distortion: Profundidad de nave-templo y horizonte de peregrinaje, con eje vertical de trascendencia.
+  spatial_distortion: Profundidad sagrada, horizonte de tránsito interior y eje vertical de trascendencia.
   atmosphere: Solemne, esperanzada y piadosa, de camino interior y exterior.
-  key_features: Guardianes no-muertos, arquitectura de templo, juramentos visualizados y composiciones de ruta paladina.
+  key_features: Juramento visualizado, oro alba, piedra sagrada, tránsito moral y heroísmo contemplativo.
   creative_brief: >-
     Construye una gramática quiet-paladin reusable donde rito, deber y
-    monumentalidad sagrada expresen aprendizaje moral y aventura contemplativa
-    sin perder impulso heroico.
+    monumentalidad sagrada expresen aprendizaje moral sin forzar edificio
+    ritual, protectores, armamento, ruta, rol literal o aventura concreta.
 avoidRules:
   - realistic
   - 3d render

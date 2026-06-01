@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Ghostly
   atmosphere: Ethereal, dark
   key_features: Smoke patterns
-  creative_brief: Flame licks the underside of paper, depositing soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. The carbon traces are ghostly, gradations of grey that seem to hover above the surface. The image is a collaboration with combustion, a record of the fire that almost was.
+  creative_brief: Flame deposits soot in patterns determined by airflow and chance, the image drawn by smoke rather than hand. Carbon traces create ghostly gradations that seem to hover above the surface. The style is soft, dangerous, residue-based, and never reliant on literal fire imagery.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,11 @@ avoidRules:
   - signature
   - frame
   - border
+  - visible flame requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-076.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, visible flame requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +56,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

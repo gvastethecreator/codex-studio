@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Heroic classic-shonen cel language anchored in late-90s/2000s TV anime readability, optimistic adventure tonality, and emblematic character-first staging
-  form_and_line: Medium-weight contour hierarchy, clear exterior silhouette lines, selective interior simplification, and pose-forward anatomy designed for instant card-legibility
+  aesthetic: Classic heroic-shonen cel language anchored in late-90s/2000s TV anime readability, optimistic adventure tonality, and emblematic subject-first clarity
+  form_and_line: Medium-weight contour hierarchy, clear exterior silhouette lines, selective interior simplification, and pose-forward shape design for instant card legibility
   color_palette: Warm primaries, sunrise oranges, sky blues, clean skin midtones, and restrained complementary accents for high emotional clarity
   lighting_setup: Front-biased key with gentle warm rim, binary cel shadow stepping, and limited specular highlights to preserve traditional cel discipline
   material_texture: Light cel grain simulation, painted-background softness, controlled flat-fill transitions, and low-noise anime finish
   render_quality: Broadcast-grade cel anime polish with crisp line stability, stable color blocking, and premium key-visual readability at small sizes
-  spatial_distortion: Moderate dynamic lensing with silhouette-priority composition and minimal background competition
+  spatial_distortion: Moderate dynamic lensing with silhouette-priority composition and minimal context competition
   atmosphere: Uplifting, determined, adventurous, and emotionally forward
-  key_features: Hero silhouette dominance, expressive eye-line focus, two-step cel shading logic, warm dawn tonal bias, and iconic pose readability
+  key_features: Heroic silhouette dominance, expressive focal line, two-step cel shading logic, warm dawn tonal bias, and iconic pose readability
   creative_brief: >-
-    Keep the preset anchored in classic heroic-shonen grammar: strong
-    silhouette-led posing, disciplined cel-shadow layering, and optimistic warm
-    color momentum should remain consistent across subjects.
+    Use Cel Heroic Dawn as style anchor for optimistic classic-shonen energy:
+    silhouette-led composition, disciplined cel-shadow layering, and warm dawn
+    color momentum should transfer without requiring a hero archetype,
+    adventure scene, or fixed character pose.
 avoidRules:
   - photoreal
   - western-comic

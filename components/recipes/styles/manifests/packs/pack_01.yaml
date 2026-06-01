@@ -92,6 +92,12 @@ categories:
     name: 5. Commercial And Product
     presetRefs:
       - pack_01/SP01-050.yaml
+      - pack_01/SP01-082.yaml
+      - pack_01/SP01-083.yaml
+      - pack_01/SP01-084.yaml
+      - pack_01/SP01-085.yaml
+      - pack_01/SP01-086.yaml
+      - pack_01/SP01-087.yaml
   - id: nature-and-wildlife
     name: 6. Nature And Wildlife
     presetRefs:
@@ -177,6 +183,12 @@ presetRefs:
   - pack_01/SP01-046.yaml
   - pack_01/SP01-075.yaml
   - pack_01/SP01-050.yaml
+  - pack_01/SP01-082.yaml
+  - pack_01/SP01-083.yaml
+  - pack_01/SP01-084.yaml
+  - pack_01/SP01-085.yaml
+  - pack_01/SP01-086.yaml
+  - pack_01/SP01-087.yaml
   - pack_01/SP01-049.yaml
   - pack_01/SP01-053.yaml
   - pack_01/SP01-047.yaml

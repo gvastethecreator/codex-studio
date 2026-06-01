@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-320
 packId: pack_16
-name: Space Adventure Cobra - Red Jacket Laser Rogue
+name: Charismatic Space Rogue Pulp Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Pulp espacial canalla de carisma seductor, con humor insolente y peligro cool en clave noir retrofuturista.
-  form_and_line: Silueta rogue confiada, postura relajada de duelo y contorno cel limpio con staging pulp de viñeta dinámica.
-  color_palette: Dominante rojo-jacket, púrpuras de club interestelar, ámbar ahumado y azules acero de corredor espacial.
-  lighting_setup: Iluminación lounge-noir, bordes de láser, charcos de luz baja y rim estelar de fondo cosmopolita.
+  aesthetic: Pulp espacial canalla de carisma seductor, humor insolente y peligro cool en clave noir retrofuturista.
+  form_and_line: Silueta rogue confiada, postura relajada de tensión y contorno cel limpio con staging pulp de viñeta dinámica.
+  color_palette: Rojo dominante, púrpuras interestelares, ámbar ahumado y azules acero.
+  lighting_setup: Iluminación lounge-noir, bordes de energía, charcos de luz baja y rim estelar cosmopolita.
   material_texture: Brillo de vestuario retro, humo difuso de ambiente, superficies sci-fi cepilladas y grano compositivo analógico.
   render_quality: Acabado premium pulp-80s con legibilidad total del protagonista y atmósfera de peligro juguetón.
-  spatial_distortion: Encuadre centrado en carisma con perspectiva de pasillo y dinámica one-vs-many de alta confianza.
+  spatial_distortion: Encuadre centrado en carisma con profundidad comprimida y dinámica one-vs-many de alta confianza.
   atmosphere: Desfachatada, cósmica, juguetona, peligrosa.
-  key_features: Icono chaqueta roja, motivo brazo-láser, ambiente club-planetario y gramática de bribón galáctico.
-  creative_brief: Construye una gramática reusable de rogue pulp espacial para cualquier sujeto, equilibrando seducción, ironía y amenaza en encuadre elegante de anti-héroe carismático.
+  key_features: Rojo acento, silueta relajada, amenaza elegante, ironía visual y lujo retrofuturista sugerido.
+  creative_brief: >-
+    Construye una gramática reusable de rogue pulp espacial para cualquier prompt o imagen de entrada:
+    seducción, ironía y amenaza elegante sin imponer chaquetas, láseres, clubes ni anti-héroes concretos.
 avoidRules:
   - realistic
   - 3d render

@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Maritime harbor guided by monumental timekeeping towers.
-  form_and_line: Clock towers, crane arms, and tidal gates.
+  aesthetic: Maritime clockpunk rhythm guided by monumental timekeeping and tidal mechanics.
+  form_and_line: Clock-tower silhouettes, crane-arm arcs, tidal gate geometry, and pendulum masts.
   color_palette: Sea blue, brass, and storm gray.
   lighting_setup: Dawn reflection and beacon lamp rows.
   material_texture: Weathered wood, riveted brass, and stone quays.
   render_quality: Strong worldbuilding with maritime clarity.
-  spatial_distortion: Harbor depth leading to a central time tower.
+  spatial_distortion: Harbor-like depth leading to a central timekeeping axis.
   atmosphere: Order, signal discipline, and civic tide control.
-  key_features: Tide clocks, signal cranes, and quay pendulums.
+  key_features: Tide clocks, signal-crane motifs, quay pendulums, and brass waterline markers.
   creative_brief: >-
     Preserve timekeeper harbor grammar as a reusable style system:
     maritime schedule governance, tidal signal control machinery, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, neon-dystopia, industrial-rust, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-088.webp }
 attributes:
   negativePrompt: photoreal, neon-dystopia, industrial-rust, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-clockpunk,
+    categoryName: 2. Corepunk — Clockpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

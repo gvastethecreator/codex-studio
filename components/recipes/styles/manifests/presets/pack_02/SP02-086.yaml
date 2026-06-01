@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Deformed yet adorable monster, lumpy asymmetrical body, mismatched googly eyes, crooked fang-toothed grin, three strands of hair on a potato head, so-ugly-it's-precious charm, beloved garbage creature, Ghibli soot-sprite meets Ren & Stimpy
+  aesthetic: Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor
   form_and_line: Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes
   color_palette: Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights
   lighting_setup: Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds
-  material_texture: Bumpy toad skin, lumpy wool sweater texture, crusty dried-mud surface, scab-like patches
+  material_texture: Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches
   render_quality: Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm
-  spatial_distortion: Eye levels drastically different heights, limbs of varying lengths, head consuming two-thirds of body mass
-  atmosphere: Affectionate disgust, heartwarming grotesquerie, you're-hideous-and-I-love-you
-  key_features: Mismatched eye sizes and heights, single snaggle tooth, three random hair strands, potato-shaped body
-  creative_brief: A lump of contradictions has sprouted mismatched eyes and a lopsided grin, its very wrongness the source of its charm. Every bump and asymmetry becomes a credential, a certificate of authenticity in a world of polished perfection. You want to look away, but your heart has already signed the adoption papers.
+  spatial_distortion: Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic
+  atmosphere: Affectionate disgust, heartwarming grotesquerie, lovable wrongness
+  key_features: Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow
+  creative_brief: 'Make any subject ugly-cute through lumpy asymmetry, mismatched scale, awkward silhouette, candy-sick color, and forgiving soft glow. Avoid requiring monsters, eyes, teeth, hair, animals, or bodies. Charm should come from deliberate wrongness made affectionate.'
 avoidRules:
   - beautiful
   - handsome

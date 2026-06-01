@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Game Boy Advance tactical grid, Advance Wars battle-map clarity, bright clean military sprites, Fire Emblem portrait elegance, isometric battlefields, tiny tanks and infantry on squared terrain, colorful commander portraits, handheld-strategy precision
-  form_and_line: Crisp small-sprite pixel art, unit-icon clarity, grid-cell division lines, portrait-window framing, clean readable silhouettes
-  color_palette: Bright tactical readability, blue-sea green-land clear contrast, red-enemy blue-ally coding, colorful commander portrait saturation, sunlit battlefield tone
+  aesthetic: Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors, bright clean icon-sprite logic, isometric or top-down squared composition, handheld-strategy precision
+  form_and_line: Crisp small-sprite pixel art, unit-icon clarity for any subject, grid-cell division lines, portrait-window framing, clean readable silhouettes
+  color_palette: Bright tactical readability, blue-green clear contrast, red-blue role coding, saturated portrait accents, sunlit handheld tone
   lighting_setup: Flat even illumination for gameplay clarity, no atmospheric lighting, readability-first approach, sun-baked tile brightness
   material_texture: Pixel-grid precision, crisp small-sprite definition, GBA screen color gamut, handheld-LCD rendering limits
-  render_quality: GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable-war precision
-  spatial_distortion: Grid-based tactical space, isometric or top-down tile perspectives, unit-placement precision, fog-of-war reveal mechanic
-  atmosphere: Strategic, bright, readable, turn-based calm, tactical satisfaction, portable focus
-  key_features: Tactical grid overlay, isometric tile terrain, bright readable sprite units, commander portrait windows, turn-based UI elements
-  creative_brief: Bright blue sea meets green land on a grid that means war, every tile a tactical possibility, every unit a commitment to position. Readability governs color — red enemies, blue allies, no ambiguity in the language of pixels designed to be read at speed. The image is a board game that learned to animate, a map that contains multitudes of tiny soldiers waiting for orders.
+  render_quality: GBA tactical-game screen, handheld-strategy aesthetic, bright-readable pixel art, portable precision
+  spatial_distortion: Grid-based tactical space, isometric or top-down tile perspectives, placement precision, fog-of-war style reveal when useful
+  atmosphere: Strategic, bright, readable, turn-based calm, portable focus
+  key_features: Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn-based UI elements without readable text
+  creative_brief: Readability rules every pixel. Any prompt becomes a tactical display of clean roles, square positions, saturated status colors and handheld UI windows, where composition feels like a board state rather than a scene.
 avoidRules:
   - realistic
   - 3d
@@ -50,4 +50,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

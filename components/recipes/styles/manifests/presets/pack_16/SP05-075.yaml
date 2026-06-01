@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-075
 packId: pack_16
-name: Weathering With You – Shinkai Rainlight City Romance
+name: Rainlight Threshold Romance Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Romance meteorológico urbano con lluvia persistente, espiritualidad íntima y decisión afectiva contra lo inevitable.
-  form_and_line: Línea elegante de drama contemporáneo, acting de vulnerabilidad activa y puesta minimal de azotea-ciudad.
+  aesthetic: Romance meteorológico con lluvia persistente, espiritualidad íntima y decisión afectiva contra lo inevitable.
+  form_and_line: Línea elegante de drama contemporáneo, acting de vulnerabilidad activa y composición minimal de umbral vertical.
   color_palette: Grises azulados de tormenta, cian húmedo, ámbar de claro solar y blancos de nube rota.
-  lighting_setup: Lluvia en contraluz con rayos selectivos, reflejo acuoso en asfalto y halos de tregua lumínica.
-  material_texture: Cristal mojado, concreto urbano, tela empapada y neblina fina de precipitación continua.
+  lighting_setup: Lluvia en contraluz con rayos selectivos, reflejo acuoso y halos de tregua lumínica.
+  material_texture: Cristal mojado, superficie mineral húmeda, tela empapada y neblina fina de precipitación continua.
   render_quality: Acabado premium de clima narrativo con gran sensibilidad de luz cambiante y gesto íntimo.
-  spatial_distortion: Espacio vertical de ciudad inundable, con foco en puntos altos de refugio emocional.
+  spatial_distortion: Espacio vertical inundable, con foco en puntos altos de refugio emocional.
   atmosphere: Húmeda, tierna, tormentosa, esperanzada.
-  key_features: Dinámica lluvia-sol, urbanidad íntima, símbolo de plegaria climática y tensión entre sacrificio y deseo.
-  creative_brief: Diseña una gramática reusable de melodrama pluvial urbano para cualquier sujeto, equilibrando clima emocional, intimidad juvenil y destellos de redención luminosa.
+  key_features: Dinámica lluvia-sol, intimidad húmeda, símbolo de plegaria climática y tensión entre sacrificio y deseo.
+  creative_brief: Diseña una gramática reusable de melodrama pluvial para cualquier sujeto, equilibrando clima emocional, intimidad y destellos de redención luminosa sin imponer ciudad, azotea, asfalto ni plegarias literales.
 avoidRules:
   - realistic
   - 3d render

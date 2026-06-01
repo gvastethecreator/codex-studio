@@ -16,12 +16,12 @@ visualDna:
   form_and_line: Hard shadow outlines
   color_palette: High contrast, saturated
   lighting_setup: Frontal, harsh
-  material_texture: Shiny skin
+  material_texture: Specular flash sheen
   render_quality: Paparazzi, fashion
   spatial_distortion: Flat depth
   atmosphere: Raw, exposed
   key_features: Drop shadow
-  creative_brief: The unapologetic glare that leaves nowhere to hide, every pore and sheen interrogated by merciless frontal light. Hard shadows carve silhouettes into the nearest wall like instant crime-scene evidence. The aesthetics of exposure itself, where glamour and intrusion become indistinguishable.
+  creative_brief: 'Direct on-camera flash makes any subject brutally present: hard frontal glare, crisp drop shadow, flattened depth, saturated color, and specular sheen with nowhere to hide. Use paparazzi-fashion exposure as style, not as a requirement for people or walls.'
 avoidRules:
   - soft
   - natural

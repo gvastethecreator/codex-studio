@@ -17,9 +17,9 @@ visualDna:
   color_palette: Masking tape, duct tape
   lighting_setup: Flat
   material_texture: Tape layers
-  render_quality: Street art, installation
+  render_quality: Tape-strip construction with installation-like precision but no required wall or street context
   spatial_distortion: Geometric
-  atmosphere: Urban, temporary
+  atmosphere: Temporary, geometric, improvised
   key_features: Tape strips
   creative_brief: Adhesive strips become line, become form, become image, the tape refusing to be merely functional, demanding aesthetic recognition. The lines are straight because tape cannot curve, the image bound by the geometry of its medium. Each strip catches light differently, matte against gloss, creating dimension from adhesive.
 avoidRules:
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - wall requirement
+  - street context
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-072.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wall requirement, street context
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

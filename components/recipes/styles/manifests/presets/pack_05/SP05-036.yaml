@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Tragic war-anime style with institutional gravity, elegiac pacing, and large-scale mechanized conflict weight
-  form_and_line: Severe silhouette hierarchy, disciplined military shape language, blast-line punctuation, and mournful still-frame counterbeats
+  aesthetic: Tragic conflict-anime style with institutional gravity, elegiac pacing, and large-scale mechanized weight
+  form_and_line: Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful still-frame counterbeats
   color_palette: Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights
-  lighting_setup: Diffused battlefield overcast with intermittent blast flashes, long shadow veils, and documentary-like contrast restraint
-  material_texture: Sooted metal surfaces, churned earth particulate, worn fabric grain, static noise overlays for archival-war tone
-  render_quality: Cinematic war-drama polish focused on emotional gravity, scale coherence, and restrained effect realism
-  spatial_distortion: Wide conflict planes with pressure-depth layering and occasional compression for claustrophobic strategic burden
+  lighting_setup: Diffused overcast with intermittent rupture flashes, long shadow veils, and documentary-like contrast restraint
+  material_texture: Sooted metal surfaces, churned particulate, worn fabric grain, static noise overlays for archival tragedy tone
+  render_quality: Cinematic tragedy-drama polish focused on emotional gravity, scale coherence, and restrained effect realism
+  spatial_distortion: Wide pressure planes with depth layering and occasional compression for claustrophobic strategic burden
   atmosphere: Somber, catastrophic, heavy, mournful, relentless
-  key_features: Militarized silhouette order, elegiac blast rhythm, archival tragedy tonality, institutional conflict visual grammar
+  key_features: Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure grammar
   creative_brief: >-
-    Preserve this preset as a war elegy language: desaturated conflict weight,
+    Preserve this preset as an elegy language: desaturated conflict weight,
     institutional silhouette discipline, and grief-forward pacing should define
-    it beyond any specific battlefront.
+    it beyond any specific tactical setup.
 avoidRules:
   - realistic
   - 3d render

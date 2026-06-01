@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: Nostalgic atomic-age boulevard of diners, motels, and launch-view terraces.
-  form_and_line: Starburst signs, tapered pylons, and low-slung aerodynamic roofs.
+  aesthetic: Nostalgic atomic-age consumer futurism with launch-night sparkle.
+  form_and_line: Starburst panels, tapered pylons, tailfin curves, and low-slung aerodynamic bands.
   color_palette: Bubblegum pink, cyan, and brushed chrome.
-  lighting_setup: Twilight neon strips mixed with sodium streetlights and rocket flare reflections.
-  material_texture: Vinyl booths, polished chrome trims, terrazzo sidewalks, and ribbed glass.
+  lighting_setup: Twilight neon strips mixed with sodium amber and rocket-flare reflections.
+  material_texture: Vinyl sheen, polished chrome trim, terrazzo flecks, and ribbed glass.
   render_quality: Stylized environmental art with vibrant era-authentic detailing.
-  spatial_distortion: Long roadside perspective with repeating signs and receding tailfins.
+  spatial_distortion: Long receding rhythm of blank sign shapes, tailfins, and chrome repeats.
   atmosphere: Cheerful futurism, consumer ritual, and launch-night anticipation.
-  key_features: Rocket-view diner rooftops, atom logos, and retro-future service stations.
+  key_features: Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.
   creative_brief: >-
     Preserve orbit diner-strip grammar as a reusable style system:
     roadside atomic-age signage rhythm, consumer-nightlife futurism, and
-    launch-culture anticipation should remain coherent across subjects.
+    launch-culture anticipation should remain coherent across any subject.
 avoidRules: [photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-021.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-atompunk, categoryName: 8. Corepunk — Atompunk, tags: [solarpunk-dreamscapes-vault, corepunk, atompunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-atompunk,
+    categoryName: 8. Corepunk — Atompunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

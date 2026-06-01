@@ -13,7 +13,7 @@ tags:
   - residential-interiors
 visualDna:
   aesthetic: Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva editorial.
-  form_and_line: Grandes paños de vidrio continuo, losas flotantes, planos largos y mobiliario bajo curado por jerarquía de vacío.
+  form_and_line: Paños continuos, losas flotantes, planos largos y siluetas bajas curadas por jerarquía de vacío.
   color_palette: Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea neutra.
   lighting_setup: Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga visual.
   material_texture: Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta calidad.
@@ -23,8 +23,8 @@ visualDna:
   key_features: Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle constructivo invisible.
   creative_brief: >-
     Define una gramática de lujo transferible por proporción, detalle oculto,
-    material noble y control lumínico. Evita la postal de penthouse: el valor
-    debe emerger del sistema espacial, no de la vista o el contexto externo.
+    material noble y control lumínico. Evita la postal aspiracional: el valor
+    debe emerger del sistema visual, no de vista, altura o contexto externo.
 avoidRules:
   - basement
   - dark

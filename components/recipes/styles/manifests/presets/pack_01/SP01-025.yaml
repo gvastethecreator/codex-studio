@@ -20,8 +20,8 @@ visualDna:
   render_quality: Gritty, crime
   spatial_distortion: Wide angle distortion
   atmosphere: Creepy, voyeuristic
-  key_features: Timestamp overlay
-  creative_brief: 'A machine watching without intention, its gaze degraded by compression and time: scanlines slicing through bodies, pixels collapsing into blocky approximations of guilt or innocence. The timestamp burns in the corner like a bureaucratic scar. Every frame is a question asked without curiosity, answered without witness.'
+  key_features: Surveillance UI burn-in
+  creative_brief: 'A machine watching without intention: low-resolution compression, scanlines, wide-angle distortion, security-camera contrast, and timestamp-like UI burn-in marks. Any subject becomes evidence under indifferent surveillance; no bodies, crime scene, hallway, or literal witness narrative required.'
 avoidRules:
   - hd
   - 4k

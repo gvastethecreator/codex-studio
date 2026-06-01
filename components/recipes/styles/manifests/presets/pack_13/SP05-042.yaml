@@ -13,18 +13,18 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: Symbolist theatrical-shojo style with surreal stage architecture, ritual confrontation, and allegorical romantic tension
-  form_and_line: Elegant duel silhouette control, rose-motif framing arcs, long-limb choreographic posing, and delicate dramatic contour precision
+  form_and_line: Elegant opposition silhouette control, rose-motif framing arcs, long-limb choreographic posing, and delicate dramatic contour precision
   color_palette: Rose-jewel spectrum with pearl neutrals, velvet shadow violets, and selective gilded symbolic accents
   lighting_setup: Stage-like spotlight halos, soft theatrical haze, romantic rim glow, and symbolic contrast emphasis on central figures
   material_texture: Velvet-and-silk softness, rose-petal particulate overlays, painted stage-depth gradients, and luminous cel patina
   render_quality: High-poetry shojo rendering with surreal compositional elegance and emotionally symbolic frame design
   spatial_distortion: Dream-stage perspective lifts with impossible architectural layering and allegorical depth choreography
   atmosphere: Theatrical, surreal, charged, introspective, ceremonial
-  key_features: Symbolic duel framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography
+  key_features: Symbolic opposition framing, rose iconography grammar, stage-space surrealism, ritual emotional choreography
   creative_brief: >-
     Define this preset through allegorical stage language: symbolic rose motifs,
-    ceremonial confrontation poses, and surreal architecture should carry the
-    emotional logic beyond any singular duel scenario.
+    ceremonial opposition poses, and surreal architecture should carry the
+    emotional logic beyond any singular confrontation scenario.
 avoidRules:
   - realistic
   - 3d render

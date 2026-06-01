@@ -15,14 +15,14 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Photography & Realism',
     description:
       'A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.',
-    presetCount: 81,
+    presetCount: 87,
   },
   {
     id: 'pack_02',
     name: 'Cinematic & Media',
     description:
-      'A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
-    presetCount: 120,
+      'A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
+    presetCount: 128,
   },
   {
     id: 'pack_03',
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Solarpunk Dreamscapes Vault',
     description:
       'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
-    presetCount: 127,
+    presetCount: 137,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-304
 packId: pack_16
-name: Rose of Versailles - Baroque Uniform Revolt
+name: Baroque Insurgent Melodrama Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Tragedia barroca pre-revolucionaria, con glamour cortesano quebrado y política sentimental de alto voltaje.
-  form_and_line: Línea ornamental y estilizada, posturas de retrato de corte y gestualidad trágica de alta teatralidad histórica.
-  color_palette: Marfiles empolvados, azules reales, rojos de rosa heráldica y dorados envejecidos de palacio.
-  lighting_setup: Luz palaciega lateral con sombras planas nobles, halos suaves sobre uniformes y contraste ceremonial.
-  material_texture: Brocado ceremonial, encaje rígido, mármol palaciego y pátina aristocrática al borde del derrumbe.
+  aesthetic: Tragedia barroca insurgente, con glamour cortesano quebrado, sentimentalismo político y alto voltaje ornamental.
+  form_and_line: Línea ornamental y estilizada, posturas de retrato ceremonial y gestualidad trágica de alta teatralidad histórica.
+  color_palette: Marfiles empolvados, azules reales, rojos de rosa heráldica y dorados envejecidos.
+  lighting_setup: Luz lateral ceremonial con sombras planas nobles, halos suaves sobre ornamento y contraste de protocolo.
+  material_texture: Brocado ceremonial, encaje rígido, piedra pulida y pátina ornamental al borde del derrumbe.
   render_quality: Acabado premium retro-histórico con lectura de emblema visual y tensión dramática de destino.
-  spatial_distortion: Composición de salón profundo con eje de retrato frontal y presión de multitud histórica en segundo plano.
+  spatial_distortion: Composición profunda con eje de retrato frontal y presión histórica abstracta en segundo plano.
   atmosphere: Regia, trágica, histórica, apasionada.
-  key_features: Uniforme de guardia nobiliaria, escalinata versallesca, heráldica floral y mirada trágica de retrato oficial.
-  creative_brief: Define una gramática reusable de melodrama barroco insurgente para cualquier sujeto, combinando protocolo aristocrático, sensualidad pictórica y fractura histórica inminente.
+  key_features: Ornamento floral, protocolo visual, retrato trágico, sensualidad pictórica y sensación de fractura histórica.
+  creative_brief: >-
+    Define una gramática reusable de melodrama barroco insurgente para cualquier prompt o imagen de entrada:
+    protocolo, ornamento y tensión política sin imponer uniformes, palacios, escalinatas ni aristocracia literal.
 avoidRules:
   - realistic
   - 3d render

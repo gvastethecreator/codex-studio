@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: High-impact sports-anime climax language with competitive intensity, kinetic framing, and emotionally charged athletic heroism
-  form_and_line: Velocity-biased line bursts, dynamic foreshortening, anatomically clean action poses, and trajectory arcs guiding focal impact
-  color_palette: Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral court/stadium balancing tones
-  lighting_setup: Stadium overhead arrays, hard specular sweat highlights, motion-accent rim lighting, and selective contrast peaks at action focal zones
-  material_texture: Polished sport-surface reflections, moisture sheen on skin, breathable technical fabric detail, and chalk/rubber micro-particulate cues
+  aesthetic: High-impact competitive anime climax language with kinetic framing, performance pressure, and emotionally charged momentum
+  form_and_line: Velocity-biased line bursts, dynamic foreshortening, clean action geometry, and trajectory arcs guiding focal impact
+  color_palette: Electric blue core, bright white contrast anchors, energetic orange highlights, and neutral surface tones
+  lighting_setup: Arena-like overhead arrays, hard specular highlights, motion-accent rim lighting, and selective contrast peaks at action focal zones
+  material_texture: Polished surface reflections, moisture sheen, breathable fabric-like detail, and chalk/rubber micro-particulate cues
   render_quality: Broadcast-ready action frame quality with crisp motion readability, controlled detail density, and premium key-moment clarity
   spatial_distortion: Perspective compression with directional motion tunneling to intensify speed and impact perception
   atmosphere: Driven, explosive, cathartic, and performance-maximized
-  key_features: Freeze-frame kinetic apex, expressive competitive gaze, speed-line hierarchy, stadium-light contrast gating, and action-vector composition
+  key_features: Freeze-frame kinetic apex, competitive focal intensity, speed-line hierarchy, arena-light contrast gating, and action-vector composition
   creative_brief: >-
-    Preserve sports-climax grammar as a reusable style system: speed-vector
-    composition, high-contrast athletic lighting, and emotion-forward action
-    readability should stay consistent across subjects.
+    Use Sports Climax Arena as style anchor for peak-performance impact:
+    speed-vector composition, high-contrast athletic lighting, and action
+    readability should transfer without requiring a stadium, court, athlete, or
+    specific sport.
 avoidRules:
   - photoreal
   - muddy-motion

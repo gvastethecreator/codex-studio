@@ -7,21 +7,29 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Quiet lunar knowledge district with vertical archival spires.
-  form_and_line: Slender towers, radial reading courts, and bridge lattices.
-  color_palette: Soft lilac, ivory, and slate.
-  lighting_setup: Low lumen interiors and skylight moonwash.
-  material_texture: Ceramic composites, fabric baffles, and glass lamina.
-  render_quality: Elegant concept art with contemplative spacing.
-  spatial_distortion: Upward composition emphasizing stacked archives.
-  atmosphere: Reflection, study, and collective memory.
-  key_features: Archive spires, moon codex halls, and silent atriums.
+  aesthetic: Abstract moonshade archive style with vertical hush, low-lumen knowledge, and acoustically softened geometry.
+  form_and_line: Slender vertical stacks, radial quiet zones, bridge-like lattices, codex-slot ribs, and reed-thin silhouettes.
+  color_palette: Soft lilac, ivory ceramic, slate shadow, moonwash blue, and pale bookmark gold.
+  lighting_setup: Low-lumen pools, skylight moonwash, faint lamina glow, and restrained edge highlights.
+  material_texture: Ceramic composite matte, fabric acoustic softness, layered glass lamina, powder-coated rail detail, and page-like panels.
+  render_quality: Elegant contemplative render with spacious negative areas, vertical structure, and clear silence cues.
+  spatial_distortion: Upward composition and stacked transparency create a quiet sense of stored memory.
+  atmosphere: Reflection, study, collective memory, and acoustic hush.
+  key_features: Vertical archive rhythm, lilac moonwash, fabric-baffle softness, glass-lamina layering, and pale bookmark accents.
   creative_brief: >-
-    Preserve moonshade library-spires grammar as a reusable style system:
-    contemplative vertical archives, low-lumen knowledge architecture, and
-    civic memory infrastructure should remain coherent across subjects.
+    Apply moonshade library-spires as an abstract style treatment: make any
+    image feel hushed, vertical, indexed, moonlit, and protected from noise.
 avoidRules: [photoreal, cyberpunk-noise, military-tech, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-074.webp }
 attributes:
   negativePrompt: photoreal, cyberpunk-noise, military-tech, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

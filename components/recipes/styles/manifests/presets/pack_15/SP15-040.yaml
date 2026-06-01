@@ -8,14 +8,14 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
   aesthetic: Atomic carnival propaganda where family fun, policy messaging, and reactor demos share one glossy smile.
-  form_and_line: Pavilion circles, expo arch loops, kinetic signage towers, carousel radial flow, and atom-orbit ride silhouettes.
+  form_and_line: Pavilion circles, expo arch loops, kinetic blank-sign towers, carousel radial flow, and atom-orbit silhouettes.
   color_palette: Candy mint, coral, polished aluminum, butter yellow, and small red slogan accents.
   lighting_setup: Warm fair bulbs, controlled reactor-demo glow, sunset chrome reflections, and blinking atom marquee patterns.
   material_texture: Painted metal frames, vinyl banner sheen, gloss enamel kiosks, molded plastic edges, and polished aluminum rails.
   render_quality: Playful yet sophisticated environment concept with clear spectacle hierarchy and intentional propaganda polish.
-  spatial_distortion: Radial circulation spins subjects through demo zones, rides, kiosks, and future-home displays.
+  spatial_distortion: Radial circulation spins subjects through demo-like zones, orbit motifs, and future-home display logic.
   atmosphere: Festive optimism, civic persuasion, spectacle, and charming unease.
-  key_features: Reactor-demo domes, isotope ride motifs, future-home pavilion shapes, neon atom signage, and slogan ribbon arcs.
+  key_features: Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon arcs.
   creative_brief: >-
     Preserve fission fairgrounds grammar as a reusable style system:
     circular expo choreography, cheerful atomic salesmanship, and glossy civic

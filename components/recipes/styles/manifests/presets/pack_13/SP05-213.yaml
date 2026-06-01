@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Restaurant shift banter, aprons and order pads, ensemble workplace chemistry, low-stakes service chaos, after-school job warmth with punchy interactions
-  form_and_line: Service-counter blocking lines, apron and tray silhouette clarity, and fast ensemble reaction timing cues
-  color_palette: Diner cream tones, uniform blacks and whites, menu reds, warm kitchen ambers, and stainless highlights
-  lighting_setup: Bright restaurant practicals, kitchen pass-through glow, and evening customer-floor warmth
-  material_texture: Apron cloth, laminated menus, ceramic dish sheen, countertop laminate, and fryer-kitchen metallics
-  render_quality: Workplace-comedy rendering with rhythm-first scene readability and upbeat service realism
-  spatial_distortion: Quick-cut staging compression to support banter-driven comedic pace
+  aesthetic: Working!! title anchor translated into workplace-shift banter, ensemble chemistry, low-stakes service chaos, and punchy cooperative warmth
+  form_and_line: Clear blocking lines, uniform-like silhouette contrast, fast ensemble reaction timing cues, and choreographed handoff rhythm
+  color_palette: Diner cream warmth, black-and-white anchors, menu-red accents, amber practical glow, and stainless highlight notes
+  lighting_setup: Bright practical illumination, warm pass-through glow, evening interior comfort, and clean comic reaction spotlighting
+  material_texture: Apron-cloth softness, laminated sheen, ceramic gloss, countertop smoothness, and practical metal highlights as optional texture cues
+  render_quality: Workplace-comedy rendering with rhythm-first readability, upbeat service realism, and ensemble timing clarity
+  spatial_distortion: Quick-cut staging compression and reaction-scale pops used to support banter-driven comedic pace
   atmosphere: Cheery, busy, ensemble-driven, comfy
-  key_features: Restaurant props, work-uniform silhouettes, coworker chemistry staging, service-counter compositions, comedic order-taking beats
+  key_features: Service-work choreography, uniform-like silhouettes, coworker chemistry staging, practical warmth, comedic timing beats
   creative_brief: >-
-    Preserve family-restaurant shift grammar as a reusable style language:
-    service-floor choreography, ensemble banter timing, and low-stakes workplace
-    warmth should remain stable across subjects.
+    Use Working!! as a style anchor for shift-comedy rhythm: ensemble banter,
+    practical workplace warmth, and service-like choreography should remain
+    readable without forcing a restaurant, counter, tray, apron, or order scene.
 avoidRules:
   - realistic
   - 3d render

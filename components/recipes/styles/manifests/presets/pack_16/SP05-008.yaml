@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-008
 packId: pack_16
-name: Neon Detective Action
+name: Neon Procedural Irony Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Policial urbano retro con filo cómico, sastrería impecable y tensión de investigación nocturna.
-  form_and_line: Trazo cel preciso de detective-action, acting seco y blocking de equipo en ciudad vertical.
-  color_palette: Cobalto nocturno, neón rosa-controlado, ámbar de interior y grafito metropolitano.
-  lighting_setup: Contraste de vidriera y calle, reflejos en ventanal y key dirigida para lectura de pista.
-  material_texture: Tejido de traje, metal de arma vintage, vidrio lluvioso y grano cinematográfico pulcro.
-  render_quality: Acabado broadcast 80s con equilibrio entre carisma procedural y ritmo de persecución.
-  spatial_distortion: Profundidad de avenida y azotea, con encuadres de vigilancia, emboscada y resolución rápida.
-  atmosphere: Elegante, callejera, afilada, magnética.
-  key_features: Siluetas de traje, neón de expediente nocturno, acción compacta y humor de dupla investigadora.
-  creative_brief: Diseña una gramática reusable de detective-action retro para cualquier sujeto, combinando sofisticación urbana, dinamismo táctico y timing irónico.
+  aesthetic: Procedural retro con filo cómico, elegancia precisa y tensión nocturna de deducción.
+  form_and_line: Trazo cel preciso, acting seco y blocking táctico con ritmo irónico.
+  color_palette: Cobalto nocturno, neón rosa-controlado, ámbar contenido y grafito frío.
+  lighting_setup: Contraste de vidrio y sombra, reflejos húmedos y key dirigida para lectura de indicio visual.
+  material_texture: Tejido elegante, metal vintage abstracto, vidrio lluvioso y grano cinematográfico pulcro.
+  render_quality: Acabado broadcast 80s con equilibrio entre carisma procedural y ritmo de resolución.
+  spatial_distortion: Profundidad oblicua con encuadres de vigilancia, giro táctico y resolución rápida.
+  atmosphere: Elegante, afilada, irónica, magnética.
+  key_features: Siluetas elegantes, neón de expediente abstracto, acción compacta y humor procedural seco.
+  creative_brief: >-
+    Diseña una gramática reusable de neon-procedural-irony para cualquier
+    sujeto, combinando sofisticación táctica, deducción visual y timing irónico
+    sin imponer policías, detectives, calles, armas, trajes, ventanas ni
+    persecuciones.
 avoidRules:
   - realistic
   - 3d render

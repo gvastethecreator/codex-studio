@@ -8,14 +8,14 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
   aesthetic: Bureaucratic decopunk monument where memory becomes vertical machinery, gold indexing, and controlled access.
-  form_and_line: Vertical fin stacks, archive shelf grids, reading-hall rings, pneumatic tube diagonals, and elevator shafts like filing spines.
+  form_and_line: Vertical fin stacks, archive-grid shelves, reading-hall rings, pneumatic tube diagonals, and filing-spine shafts.
   color_palette: Brass gold, charcoal, parchment beige, dust brown, and red index-tab accents.
   lighting_setup: Vertical slit lights, desk luminance, brass-mesh glints, and warm shafts inside catalog towers.
   material_texture: Brass mesh, stone shelving, leather files, parchment labels, clockwork lift rails, and dusty glass catalog drawers.
   render_quality: Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.
-  spatial_distortion: Upward tower perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
+  spatial_distortion: Upward vertical perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
   atmosphere: Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.
-  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevators, goldline catalog tabs, and locked reading desks.
+  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.
   creative_brief: >-
     Preserve goldline archives-tower grammar as a reusable style system:
     vertical filing monumentality, indexed access control, and brass

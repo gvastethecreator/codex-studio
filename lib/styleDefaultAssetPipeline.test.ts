@@ -109,6 +109,29 @@ describe('styleDefaultAssetPipeline', () => {
     ]);
   });
 
+  it('filters preset-card targets by preset id even when force regeneration is enabled', () => {
+    const secondPreset = {
+      ...pack.presets[0],
+      id: 'SP99-002',
+      name: 'Skipped Style',
+    };
+    const packWithTwoPresets = {
+      ...pack,
+      presets: [pack.presets[0], secondPreset],
+    };
+
+    const targets = createStyleDefaultTargets({
+      packs: [packWithTwoPresets],
+      existingFiles: new Set(),
+      force: true,
+      presetFilters: new Set(['SP99-002']),
+      defaultsDir: 'assets/recipes/styles/defaults',
+      assetExtension: '.webp',
+    });
+
+    expect(targets.map((target) => target.preset.id)).toEqual(['SP99-002']);
+  });
+
   it('creates failure evidence with preset identity preserved', () => {
     expect(
       createStyleDefaultFailureEntry({

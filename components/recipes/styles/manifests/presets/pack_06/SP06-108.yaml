@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-108
 packId: pack_06
-name: Visual Novel Neon Classroom
+name: Visual Novel Neon Backdrop Wash
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Visual-novel backdrop style with neon emotional grading, clean anime paint, and interactive-scene clarity.
+  subject_treatment: Present any subject as a polished story-backdrop element with simplified planes and readable mood coding.
+  color_and_tone: Violet-blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI legibility.
+  lighting_and_shadow: Soft environmental glow, colored rim edges, broad shadow pools, and late-evening luminous haze.
+  texture_and_material: Smooth anime-style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup.
+  camera_and_composition: Symmetrical or slightly off-center VN framing with open dialogue-safe negative space and shallow depth cues.
+  atmosphere_and_mood: Melancholic, intimate, story-charged mood without requiring classrooms, students, desks, or dialogue boxes.
+  rendering_and_quality: Clean background-art finish, no readable text, no UI chrome, enough detail for repeated viewing.
 avoidRules:
   - watermark
   - text
+  - literal classroom requirement
+  - student requirement
+  - dialogue box
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-108.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, literal classroom requirement, student requirement, dialogue box
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

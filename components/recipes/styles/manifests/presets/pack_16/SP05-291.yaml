@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-291
 packId: pack_16
-name: A Silent Voice - Riverside Apology Light
+name: Delicate Reconciliation Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Drama íntimo de reparación emocional en entorno escolar-contemporáneo, centrado en vulnerabilidad, escucha y dignidad relacional.
+  aesthetic: Drama íntimo de reparación emocional, centrado en vulnerabilidad, escucha y dignidad relacional.
   form_and_line: Línea delicada de microgesto, énfasis en manos, hombros y mirada baja, con contornos limpios que priorizan lectura afectiva sobre acción.
-  color_palette: Azules de río calmado, beiges urbanos suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.
+  color_palette: Azules calmados, beiges suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.
   lighting_setup: Luz natural de tarde nublada con difusión amable, contraste bajo y brillos discretos que favorecen intimidad conversacional.
-  material_texture: Hormigón de puente húmedo, telas escolares cotidianas, barandas metálicas gastadas y reflejos acuosos serenos.
+  material_texture: Hormigón húmedo, telas cotidianas, metal gastado y reflejos acuosos serenos.
   render_quality: Acabado premium de realismo sensible con foco en expresión corporal mínima y continuidad emocional entre planos.
   spatial_distortion: Espacialidad naturalista abierta con distancia interpersonal modulada como métrica visual de confianza y perdón.
   atmosphere: Tierno, arrepentido, respirable, humano.
-  key_features: Composición de dos cuerpos en reconciliación, manos como núcleo semántico, ribera urbana y silencios visuales elocuentes.
-  creative_brief: Construye una gramática reusable de reconciliación humana para cualquier sujeto usando microgesto, luz suave y espacio interpersonal como lenguaje principal.
+  key_features: Microgesto, manos como énfasis opcional, luz suave, distancia afectiva y silencio visual elocuente.
+  creative_brief: >-
+    Construye una gramática reusable de reconciliación humana para cualquier prompt o imagen de entrada:
+    microgesto, escucha y fragilidad sin imponer escuelas, riberas, parejas de personajes ni escenas de disculpa.
 avoidRules:
   - realistic
   - 3d render

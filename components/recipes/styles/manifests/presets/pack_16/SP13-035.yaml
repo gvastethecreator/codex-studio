@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-035
 packId: pack_16
-name: Oni Mask Ritual Night
+name: Demonic Ritual Mask Geometry Style
 category: 5. Horror
 version: 1
 supportedTasks:
@@ -14,15 +14,19 @@ tags:
   - horror
 visualDna:
   aesthetic: Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and symbolic intimidation.
-  form_and_line: Hard mask silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.
+  form_and_line: Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.
   color_palette: Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.
-  lighting_setup: Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and hand-sign focality.
+  lighting_setup: Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.
   material_texture: Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.
   render_quality: High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.
   spatial_distortion: Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.
   atmosphere: Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.
-  key_features: Dominant oni visage language, candle or ember ring systems, talisman clusters, and invocation-hand choreography through heat shimmer.
-  creative_brief: Create a reusable oni-ritual horror grammar by prioritizing radial ritual geometry, fire-ring contrast, and symbolic mask dominance across any subject.
+  key_features: Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography through heat shimmer.
+  creative_brief: >-
+    Create a reusable demonic-ritual-mask-geometry grammar for any subject:
+    radial ritual geometry, fire-ring contrast, symbolic mask dominance, and
+    taboo ceremonial pressure without imposing oni, masks, shrines, candles,
+    talismans, hand signs, or night rituals.
 avoidRules:
   - photoreal
   - cute-style

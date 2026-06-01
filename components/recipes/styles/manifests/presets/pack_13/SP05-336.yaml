@@ -16,15 +16,15 @@ visualDna:
   form_and_line: Contorno afilado tipo cuchilla, contraste grueso-fino de tinta y tallado de silueta en bloques violentos.
   color_palette: Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet
   lighting_setup: Spot de alto contraste, rim duro, glare de neón nocturno y masas de sombra en cuña.
-  material_texture: Brillo de pintura automotriz, guiños de caucho, grano screenprint y acabado de cartel pulido.
+  material_texture: Brillo lacquered, guiños de caucho, grano screenprint y acabado de cartel pulido.
   render_quality: Acción hiperdinámica con lectura instantánea de movimiento y composición de afiche cinético.
   spatial_distortion: Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing
   atmosphere: Agresiva, estridente y elegante, impulsada por urgencia de carrera.
-  key_features: Anatomía razorline, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.
+  key_features: Razorline anatomy, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.
   creative_brief: >-
     Define una gramática reusable de razor-velocity basada en silueta cortante,
-    contrastes gráficos severos y sensación de desplazamiento imposible. Debe
-    priorizar impacto visual inmediato sobre naturalismo.
+    contrastes gráficos severos y desplazamiento imposible, sin exigir carrera,
+    auto, carretera, piloto ni póster de vehículo.
 avoidRules:
   - still
   - calm

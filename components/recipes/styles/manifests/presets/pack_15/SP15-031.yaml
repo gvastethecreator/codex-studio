@@ -8,18 +8,19 @@ supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
 visualDna:
   aesthetic: Stonepunk sacred machinery where gravity, labor chants, and basalt mass feel like technology older than language.
-  form_and_line: Cyclopean arch jaws, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes that dwarf figures.
+  form_and_line: Cyclopean arch-jaw rhythm, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes.
   color_palette: Basalt charcoal, copper-oxide green, ember orange, ash beige, and blackened handprint marks.
   lighting_setup: Hearth-core glow buried inside stone teeth, hard skylight shafts, and sparks catching dust around rotating mass.
   material_texture: Chiseled basalt, rope-burn fibers, hammered copper seams, packed clay, soot-polished wear, and carved tally grooves.
-  render_quality: Heavy tactile concept art where every mechanism reads as buildable, brutal, and devotional.
+  render_quality: Heavy tactile stonepunk concept art where every mechanism reads as buildable, brutal, and devotional.
   spatial_distortion: Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.
   atmosphere: Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.
-  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work bays, ember pits, and carved maintenance prayers.
+  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.
   creative_brief: >-
     Preserve basalt gear-sanctuary grammar as a reusable style system:
     weight-driven mechanics, rope-and-ember labor rituals, and sacred stone
-    machinery logic should remain coherent across subjects.
+    machinery logic should remain coherent across subjects without requiring a
+    sanctuary, figures, work bays, or a literal ritual site.
 avoidRules: [photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-031.webp }
 attributes:

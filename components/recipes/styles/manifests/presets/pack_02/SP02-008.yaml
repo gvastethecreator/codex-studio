@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Improvised panic-horror footage, Blair Witch style, shaking handheld dread, forest panic, raw survival terror
+  aesthetic: Improvised panic-horror footage, shaking handheld dread, raw survival terror
   form_and_line: None
   color_palette: Low light digital, crushed blacks, sickly green tint
   lighting_setup: Flashlight only, single beam cone, terrified sweep
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Shaky, amateur, disorienting, raw panic-cam
   spatial_distortion: Motion blur, smear, headlamp judder
   atmosphere: Terrifying, real, primal fear, unseen threat
-  key_features: Timestamp, running footsteps, heavy breathing
-  creative_brief: The frame trembles with the rhythm of a racing pulse, a single flashlight beam carving frantic arcs through absolute darkness. Digital noise clots into shapes that the eye insists are trees — or something standing among them — before the sensor crushes everything back into sickly green oblivion.
+  key_features: Flashlight cone, timestamp-like burn-in, panic-cam smear
+  creative_brief: 'Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw survival texture without forcing forest, footsteps, breathing, or unseen monster.'
 avoidRules:
   - steady
   - cinematic

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-271
 packId: pack_05
-name: Heavenly Delusion - Concrete Wilderness Mystery
+name: Sun-Reclaimed Concrete Mystery Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Abandoned institutions reclaimed by light and weeds, youth crossing a broken modern world, strange creatures, low-key banter hiding existential dislocation
+  aesthetic: Sun-reclaimed concrete mystery, institutional remnants softened by growth, existential dislocation, low-key unease beneath bright quiet
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Sun-bleached concrete, weed-soft edge texture, flaked paint, warm dust, cracked institutional surfaces, dry moss grain
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Open-horizon uncertainty, institutional grid decay, sunlit emptiness, broken-modern scale contrast, quiet pathlike depth
   atmosphere: Mysterious, sun-bleached, uneasy, searching
-  key_features: Ruined modern campuses, weed-overgrown concrete, youth duo framing, creature-threat hints, road-mystery compositions
-  creative_brief: Sunlight reclaims concrete cathedrals where a dead civilization once promised tomorrow, weeds cracking through institutional floors as two youths walk toward a horizon that offers only questions. The quiet terror lives in not knowing whether paradise was prison or protection, low-key banter hiding an existential dislocation as vast as the ruins themselves.
+  key_features: Sun-bleached concrete, growth-over-grid texture, existential quiet, mystery through absence, broken-modern softness
+  creative_brief: >
+    Give any prompt a bright post-institutional mystery treatment: sunlight,
+    concrete, plant-softened decay, and unresolved emptiness should imply lost
+    systems without fixed institutions, roles, threats, travel paths, or
+    world lore.
 avoidRules:
   - realistic
   - 3d render

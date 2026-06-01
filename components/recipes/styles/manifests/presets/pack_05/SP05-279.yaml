@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-279
 packId: pack_05
-name: Jin-Roh - Red-Eyed Armor and Smoke
+name: Red-Optic Security Noir Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Alternate-history paramilitary noir, wolf-brigade armor, smoke-filled ruins, political dread and buried tenderness inside oppressive urban security machinery
+  aesthetic: Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside oppressive system machinery
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet concrete-neutral grit
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space, oppressive security geometry
   atmosphere: Oppressive, political, smoky, tragic
-  key_features: Red goggle glow, armored silhouettes, riot-ruin backdrops, political-security staging, smoke-dense composition
-  creative_brief: Beneath the iron wolf mask tenderness withers inside a machine designed to erase it, red optics scanning ruins for threats that may be internal. Smoke does not obscure but reveals the architecture of a society that feeds on its own fear. Every armored silhouette carries the weight of a choice already made and a heart already broken.
+  key_features: Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness
+  creative_brief: >
+    Apply red-optic security noir to any subject: smoke, heavy dark surfaces,
+    red glass points, and political weight should suggest oppressive systems
+    without fixed attire systems, brigades, ruins, concealment props, factions,
+    or security scenes.
 avoidRules:
   - realistic
   - 3d render

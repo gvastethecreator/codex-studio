@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-318
 packId: pack_16
-name: Devilman 1972 - Psychedelic Devil Cry
+name: Psychedelic Demonic Horror Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Acabado premium de shock-retro deliberadamente abrasivo, con legibilidad emocional asentada en confrontación visual.
   spatial_distortion: Warping de body horror y encuadre desorientado impulsado por dolor de transformación.
   atmosphere: Pánico, psicodelia, tragedia, primalidad.
-  key_features: Lenguaje de agonía metamórfica, simbolismo apocalíptico y brutalidad cromática de broadcast antiguo.
-  creative_brief: Construye una gramática reusable de horror demónico expresionista para cualquier sujeto, evitando pulido complaciente y priorizando impacto visceral trágico.
+  key_features: Agonía metamórfica, simbolismo apocalíptico, brutalidad cromática, grano de broadcast antiguo e impacto visceral.
+  creative_brief: >-
+    Construye una gramática reusable de horror demónico expresionista para cualquier prompt o imagen de entrada:
+    transformación, crudeza y tragedia cromática sin imponer demonios literales ni escenas de violencia concreta.
 avoidRules:
   - realistic
   - 3d render

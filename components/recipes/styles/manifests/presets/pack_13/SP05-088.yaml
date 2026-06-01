@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Domestic-fantasy comedy anime language where mythic creature scale collides with apartment-life routines and affectionate household chaos
-  form_and_line: Soft home-life contours mixed with occasional creature-feature exaggeration, expressive domestic blocking, and ensemble interaction readability
-  color_palette: Warm interior creams and woods, pastel household tones, vivid creature-accent hues, and selective magical-color pops
-  lighting_setup: Cozy apartment practicals, daylight kitchen fill, warm evening lamp pools, and brief magical spill highlights during fantasy beats
-  material_texture: Lived-in domestic surfaces, kitchenware gloss, textile softness, plus subtle non-human texture accents integrated into home context
-  render_quality: Heartwarming comedy render with balanced domestic detail and fantasy interruptions, keeping character readability and humor timing intact
-  spatial_distortion: Primarily grounded apartment-space perspective with mild stylized warps during comedic or magical escalation
+  aesthetic: Everyday-fantasy comedy anime language where mythic scale collides with affectionate routine order and cozy-chaos warmth
+  form_and_line: Soft comfort contours mixed with occasional creature-feature exaggeration, expressive blocking, and ensemble interaction readability
+  color_palette: Warm cream and wood tones, pastel comfort hues, vivid creature-accent colors, and selective magical-color pops
+  lighting_setup: Cozy practicals, daylight fill, warm evening pools, and brief magical spill highlights during fantasy beats
+  material_texture: Lived-in comfort surfaces, gentle gloss, textile softness, plus subtle non-human texture accents integrated into cozy context
+  render_quality: Heartwarming comedy render with balanced routine detail and fantasy interruptions, keeping character readability and humor timing intact
+  spatial_distortion: Primarily grounded comfort-space perspective with mild stylized warps during comedic or magical escalation
   atmosphere: Whimsical, lively, affectionate, and comfort-chaotic
-  key_features: Domestic-prop plus creature contrast, home-scale fantasy beats, ensemble warmth dynamics, and cozy-chaos composition rhythm
+  key_features: Everyday-scale contrast, creature-adjacent cues, ensemble warmth dynamics, and cozy-chaos composition rhythm
   creative_brief: >-
-    Preserve domestic-fantasy-chaos grammar as a reusable style system:
-    ordinary home routines, affectionate creature contrast, and comedic magical
-    interruptions should remain consistent across subjects.
+    Use the title as a style anchor for everyday fantasy chaos. Keep affectionate
+    scale contrast, cozy magical interruption, and ensemble warmth without
+    requiring apartment, kitchen, specific creature, or household props.
 avoidRules:
   - realistic
   - 3d render

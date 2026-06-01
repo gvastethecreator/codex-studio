@@ -17,11 +17,11 @@ visualDna:
   color_palette: Red, Black, Blue ink
   lighting_setup: Flat
   material_texture: Ink pad, paper grain
-  render_quality: Rough, bureaucratic
+  render_quality: Rough mechanical impression with hand-pressure variance
   spatial_distortion: Incomplete impression
-  atmosphere: Official, rough
-  key_features: Stamp border
-  creative_brief: Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The image carries the charm of bureaucracy, the poetry of forms stamped RECEIVED. Each pressing records the pressure of the hand, the slight wobble that proves humanity.
+  atmosphere: Official, rough, repetitive
+  key_features: Incomplete impression
+  creative_brief: Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The style carries the pressure, wobble, and broken ink of mechanical repetition made human by imperfection. Each pressing records touch, alignment error, and ink-pad fatigue without needing readable labels.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,11 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable stamp text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-041.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable stamp text
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +56,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

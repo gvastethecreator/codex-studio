@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Geometric
   atmosphere: Clean, sharp
   key_features: Triangular mesh
-  creative_brief: Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries a gradient, thousands of tiny skies stitched into a single face. The geometry is the art, the subject merely the occasion for its arrangement.
+  creative_brief: Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries its own tonal decision, tiny planes stitched into a unified structure. Geometry is the art; the subject is only the occasion for angular arrangement.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,11 @@ avoidRules:
   - signature
   - frame
   - border
+  - face requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-058.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +56,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

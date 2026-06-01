@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-085
+packId: pack_01
+name: Tech Hardware Hero
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Premium tech launch image
+  form_and_line: Minimal hero silhouette
+  color_palette: Graphite, cool white, electric accent
+  lighting_setup: Dark sweep with precise rim lights
+  material_texture: Matte anodized surface, glass edge, clean bevel
+  render_quality: Apple-style keynote polish
+  spatial_distortion: Long-lens product compression
+  atmosphere: Intelligent, minimal, engineered
+  key_features: Precision rim outline
+  creative_brief: 'Tech hardware hero lighting makes any subject feel engineered: dark sweep, graphite palette, exact rim outline, matte/glass material response, and keynote-level minimalism. It should communicate precision and launch-day desire without requiring electronics, screens, devices, or UI.'
+avoidRules:
+  - messy cables
+  - dust
+  - scratches
+  - warm clutter
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-085.webp
+attributes:
+  negativePrompt: messy cables, dust, scratches, warm clutter, watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

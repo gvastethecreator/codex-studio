@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-125
+packId: pack_02
+name: Weather Radar Doppler Graphic
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: Doppler weather broadcast graphic, storm-cell color fields, radar sweep, meteorological overlay abstraction, emergency color mapping
+  form_and_line: Contour bands, radar arcs, gridded map-like fields, translucent overlay blocks, no readable labels
+  color_palette: Radar green, storm yellow, alert red, violet core, map grey, broadcast blue
+  lighting_setup: Self-lit screen glow, studio monitor luminance, emissive overlay hierarchy
+  material_texture: Pixelated radar noise, compression blocks, translucent graphic layers, scanline shimmer
+  render_quality: Informational, synthetic, urgent, screen-native weather visual
+  spatial_distortion: Top-down map flattening, radar sweep curvature, overlay layer stacking
+  atmosphere: Alert, analytical, atmospheric, system-driven
+  key_features: Radar sweep, storm-cell blobs, contour bands, broadcast grid, no readable labels
+  creative_brief: 'Map the input through weather-radar broadcast design: storm-color blobs, contour bands, radar arcs, gridded overlays, screen glow, and compression artifacts. Avoid literal maps, meteorologists, cities, labels, or readable warnings as requirements. The result should feel like form translated into Doppler data.'
+avoidRules:
+  - photoreal weather
+  - natural color
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-125.webp
+attributes:
+  negativePrompt: photoreal weather, natural color
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

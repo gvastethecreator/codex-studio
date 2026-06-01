@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-311
 packId: pack_16
-name: Future Boy Conan - Rust Island Sky Hope
+name: Rusted Eco Hope Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Aventura ecológica postcolapso de espíritu juvenil, donde ruina tecnológica y naturaleza costera conviven en clave de esperanza activa.
+  aesthetic: Aventura ecológica postcolapso de espíritu luminoso, donde ruina tecnológica y rebrote natural conviven con esperanza activa.
   form_and_line: Contorno cel robusto con acting atlético, siluetas de salto y escalada, y gesto corporal optimista de exploración.
   color_palette: Turquesas oceánicos, óxidos rojizos, verdes de rebrote y blancos solares de cielo abierto.
   lighting_setup: Sol marítimo frontal de alto contraste, sombras cel cortas y rim ventoso para reforzar impulso acrobático.
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Acabado premium retro-aventura con lectura clara de movimiento, geografía insular y pulso ambiental optimista.
   spatial_distortion: Perspectiva amplia de acantilado e isla con verticalidad juguetona para enfatizar agilidad del protagonista.
   atmosphere: Esperanzadora, energética, marina, aventurera.
-  key_features: Silueta juvenil en salto, infraestructura corroída costera, oleaje luminoso y lectura de rebrote ecosistémico.
-  creative_brief: Define una gramática reusable de aventura insular resiliente para cualquier sujeto, combinando óxido marítimo, velocidad corporal y esperanza ecológica activa.
+  key_features: Óxido luminoso, rebrote ecológico, energía corporal, cielo abierto y lectura optimista de mundo dañado.
+  creative_brief: >-
+    Define una gramática reusable de aventura ecológica resiliente para cualquier prompt o imagen de entrada:
+    óxido, aire abierto y esperanza activa sin imponer islas, costas, saltos juveniles ni infraestructura específica.
 avoidRules:
   - realistic
   - 3d render

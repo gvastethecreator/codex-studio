@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-109
 packId: pack_06
-name: Soulslike Dark Citadel
+name: Soulslike Tarnished Atmosphere
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Soulslike dark-fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry.
+  subject_treatment: Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual scale.
+  color_and_tone: Ash-gray, old gold, bruised umber, corpse-green accents, and desaturated highlights over deep blacks.
+  lighting_and_shadow: Thin holy backlight, torch-warm pin glows, huge soft shadow masses, and mist-diffused silhouettes.
+  texture_and_material: Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language.
+  camera_and_composition: Low, patient framing with monumental empty space, vertical pressure, and slow-burn focal hierarchy.
+  atmosphere_and_mood: Decayed, sacred, hostile mood without requiring castles, bosses, armor, weapons, or ruins.
+  rendering_and_quality: Painterly AAA concept finish, restrained detail outside focal areas, no UI or readable text.
 avoidRules:
   - watermark
   - text
+  - literal citadel requirement
+  - boss requirement
+  - armor requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-109.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, literal citadel requirement, boss requirement, armor requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-033
 packId: pack_16
-name: Flesh Puppet Theater
+name: Grotesque Marionette Spotlight Style
 category: 5. Horror
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Grotesque performance-horror language where theatrical elegance is corrupted by puppet-like anatomy and staged cruelty.
-  form_and_line: Twitchy contour cadence, marionette-joint segmentation, and curtain-driven framing lines that trap the focal subject.
+  aesthetic: Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and staged cruelty.
+  form_and_line: Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.
   color_palette: Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.
-  lighting_setup: Isolated stage spotlight with aggressive falloff, leaving wings and rafters in predatory darkness.
-  material_texture: Splintered stage timber, dust-saturated velvet, cracked lacquered props, and dry residue buildup.
+  lighting_setup: Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.
+  material_texture: Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.
   render_quality: Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.
-  spatial_distortion: Proscenium compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.
-  atmosphere: Stage-bound claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
-  key_features: Puppet morphology cues, torn drapery vectors, empty seats as black void patterning, and central fixation points.
-  creative_brief: Define a reusable puppet-theater horror grammar by merging corrupted stage aesthetics, anatomical stylization, and spotlight-isolation composition.
+  spatial_distortion: Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.
+  atmosphere: Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
+  key_features: Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.
+  creative_brief: >-
+    Define a reusable grotesque-marionette-spotlight grammar for any subject:
+    corrupted theatrical elegance, anatomical stylization, spotlight isolation,
+    and pinned-plane pressure without imposing theaters, stages, puppets,
+    seats, props, or audiences.
 avoidRules:
   - photoreal
   - slapstick

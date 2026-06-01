@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Band on stage
-  form_and_line: Silhouettes in fog
+  aesthetic: Concert-stage lighting
+  form_and_line: Silhouettes in beam fog
   color_palette: Stage lights (Red/Blue)
   lighting_setup: Beams, spots
-  material_texture: Fog, sweat, grain
-  render_quality: Rock n roll, loud
+  material_texture: Fog, heat sheen, grain
+  render_quality: Loud live-event realism
   spatial_distortion: None
   atmosphere: Energetic, loud
-  key_features: Crowd hands
-  creative_brief: Light becomes weapon and worship simultaneously, blades of crimson and cobalt slicing through manufactured fog while silhouettes command the stage like hierophants of noise. Sweat catches the beam, grain catches the darkness, and the invisible wall of sound becomes almost visible in the held breath between guitar chords. The crowd's reaching hands form a congregation of ecstasy beyond the spotlight's edge.
+  key_features: Beam-and-fog energy
+  creative_brief: Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.
 avoidRules:
   - quiet
   - bright

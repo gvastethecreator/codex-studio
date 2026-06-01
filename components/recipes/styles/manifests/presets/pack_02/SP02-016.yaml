@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Scrappy analog space opera, Star Wars A New Hope, used-future rebellion, practical model magic
+  aesthetic: Scrappy analog space opera, used-future adventure, practical model magic
   form_and_line: None
   color_palette: Used future, worn ochre, grey panel, rebel olive, droid beige
-  lighting_setup: Studio, practical spacecraft, cockpit glow
+  lighting_setup: Studio practicals, cockpit-like glow, optical composite light
   material_texture: Model kitbash, plastic parts, weathered metal, found-object greeble
   render_quality: Practical FX, optical composite, matte painting, miniature magic
   spatial_distortion: None
-  atmosphere: Adventure, dirty, swashbuckling rebellion, cantina grit
-  key_features: Greebles, astromech, hyperspace streak
-  creative_brief: Starships built from salvaged dreams drift through a galaxy where every hull plate tells a story of hardship and hope. The camera lingers on grease-stained panels and jury-rigged consoles, finding heroism in the worn edges of rebellion. Let each frame feel like a matte painting come alive, where wonder is born from scrap metal and starlight.
+  atmosphere: Adventure, dirty, swashbuckling, handmade wonder
+  key_features: Greebles, optical composite, worn future
+  creative_brief: '70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels, optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.'
 avoidRules:
   - cgi
 assets:

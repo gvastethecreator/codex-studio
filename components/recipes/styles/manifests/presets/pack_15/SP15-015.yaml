@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, vaporpunk]
 visualDna:
-  aesthetic: Dreamy vaporpunk plaza blending nostalgic consumer architecture with climate-adaptive public space.
-  form_and_line: Escalator ribbons, palm atrium grids, and mirrored geometric facades.
+  aesthetic: Dreamy vaporpunk blending nostalgic consumer architecture, humid leisure, and climate-adaptive public softness.
+  form_and_line: Escalator-like ribbon diagonals, palm-grid rhythms, and mirrored geometric facade logic.
   color_palette: Lavender pink, aqua cyan, and warm peach sunset.
-  lighting_setup: Soft neon dusk with glossy reflections on polished surfaces.
+  lighting_setup: Soft neon dusk with glossy reflections on polished acrylic-like surfaces.
   material_texture: Frosted acrylic, terrazzo tiles, reflective chrome, and humid foliage.
-  render_quality: Stylized high-fidelity scene with crisp retro-futurist silhouette control.
-  spatial_distortion: Atrium depth corridor guiding toward a luminous civic fountain node.
+  render_quality: Stylized high-fidelity vaporpunk treatment with crisp retro-futurist silhouette control.
+  spatial_distortion: Mirrored depth guiding toward a luminous civic leisure node.
   atmosphere: Melancholic joy, ambient leisure, and curated digital nostalgia.
-  key_features: Retro signage monoliths, mirrored pools, synthetic palms, and open social plazas.
+  key_features: Retro signage monoliths, mirrored pool logic, synthetic palm silhouettes, and open social spacing.
   creative_brief: >-
     Preserve sunset mall-mirage grammar as a reusable style system:
-    retro-consumer spatial nostalgia, climate-adaptive indoor plaza logic, and
-    soft digital leisure mood should remain coherent across subjects.
+    retro-consumer spatial nostalgia, climate-adaptive plaza logic, and
+    soft digital leisure mood should remain coherent across subjects without
+    requiring a mall, fountain, signage text, palms, or a literal plaza.
 avoidRules: [photoreal, gritty-realism, warlike, horror, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-015.webp }
 attributes:
   negativePrompt: photoreal, gritty-realism, warlike, horror, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-vaporpunk, categoryName: 5. Corepunk — Vaporpunk, tags: [solarpunk-dreamscapes-vault, corepunk, vaporpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-vaporpunk,
+    categoryName: 5. Corepunk — Vaporpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, vaporpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

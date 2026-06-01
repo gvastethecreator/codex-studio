@@ -16,12 +16,12 @@ visualDna:
   form_and_line: Soft glow
   color_palette: Neon Blue, Green
   lighting_setup: Self-illuminated
-  material_texture: Water, skin
-  render_quality: Avatar, underwater
+  material_texture: Organic phosphor glow
+  render_quality: Photoreal self-illumination
   spatial_distortion: None
   atmosphere: Magical, alien
   key_features: Dark background
-  creative_brief: Life that generates its own radiance from within, the deep-sea grammar of glow against absolute darkness. Organisms writing their presence in photons, neon-bright signals suspended in liquid void. A world where light is not cast but born, where every creature carries its own constellation beneath its skin.
+  creative_brief: 'Organic-looking light appears born from within the subject: blue-green phosphor glow, dark-background separation, soft emissive edges, and alien biological rhythm. Keep bioluminescent self-illumination without requiring water, skin, creatures, Avatar, or underwater scenes.'
 avoidRules:
   - sun
   - day

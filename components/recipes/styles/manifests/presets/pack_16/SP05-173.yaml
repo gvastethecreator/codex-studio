@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-173
 packId: pack_16
-name: Trigun - Desert Gun-Saint Melancholy
+name: Dust-Warm Pacifist Melancholy Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Space-western desértico con héroe bufón trágico, iconografía de revólver y compasión en paisaje abrasado.
-  form_and_line: Línea 90s energética, acting de comedia defensiva y quiebres dramáticos de gran densidad emocional.
-  color_palette: Arenas doradas, cielos azul seco, rojo icónico dominante y marrones de pueblo frontera.
-  lighting_setup: Sol duro de desierto con sombras amplias, rim cálido y dramatismo crepuscular en duelo.
-  material_texture: Madera gastada de saloon, polvo suspendido, cuero de viaje y grano cinematográfico seco.
-  render_quality: Acabado premium noventero con transición fluida entre slapstick, balística y duelo moral.
-  spatial_distortion: Horizontes enormes, pueblo comprimido y encuadre de pistolero para soledad épica.
-  atmosphere: Bufonesca, solitaria, polvorienta, compasiva.
-  key_features: Silueta de abrigo rojo, staging de western sci-fi, contraste tono cómico-serio y cielo monumental.
-  creative_brief: Construye una gramática reusable de forajido humanista en frontera árida para cualquier sujeto, mezclando humor, duelo ético y melancolía de largo alcance.
+  aesthetic: Cel anime 90s de melancolía humanista, humor defensivo y heroísmo pacifista bajo luz abrasada.
+  form_and_line: Línea energética y elástica, siluetas largas, gestos cómicos que se quiebran en pausa dramática y contornos de gran soledad.
+  color_palette: Ocres dorados, azul seco, rojo acento dominante, marrones quemados y sombras violeta apagadas.
+  lighting_setup: Luz dura de mediodía, rim cálido, contraluces crepusculares y sombras amplias que agrandan la distancia emocional.
+  material_texture: Grano seco de cel clásico, polvo atmosférico, superficies gastadas, cuero estilizado y ruido cinematográfico cálido.
+  render_quality: Acabado premium noventero que alterna slapstick, tensión ética y lirismo de largo alcance sin exigir props específicos.
+  spatial_distortion: Horizontes enormes y encuadres comprimidos que convierten cualquier sujeto en figura solitaria ante una decisión moral.
+  atmosphere: Bufonesca, compasiva, errante, melancólica.
+  key_features: Rojo protagonista, polvo dorado, acting cómico-serio, líneas de distancia épica y contraste entre ternura y peligro.
+  creative_brief: >-
+    Aplica este preset como tratamiento abstracto de anime 90s: cualquier
+    prompt debe ganar calidez polvorienta, humanidad contradictoria, humor
+    frágil y melancolía ética sin quedar atado a una escena western.
 avoidRules:
   - realistic
   - 3d render

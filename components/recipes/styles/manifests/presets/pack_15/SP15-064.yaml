@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Ritualized raypunk violence where honor contracts become visible electrical geometry around a central impact void.
-  form_and_line: Concentric duel pits, shield-pylon teeth, tiered crowd bands, plasma banner arcs, and split-second ray trajectories.
+  aesthetic: Ritualized raypunk conflict where honor contracts become visible electrical geometry around impact voids.
+  form_and_line: Concentric impact rings, shield-pylon teeth, tiered bands, plasma banner arcs, and split-second ray trajectories.
   color_palette: Plasma blue, contract crimson, black gunmetal, white-hot arc cores, and scorched violet shadows.
   lighting_setup: Overhead spot arrays, burst-frame arc discharge, shield shimmer halos, and rimlight from charged weapons.
   material_texture: Reinforced steel ribs, scorched concrete rings, translucent energy shields, burnt banner cloth, and etched contract plaques.
   render_quality: Action keyframe concept with theatrical readability and kinetic silhouettes.
-  spatial_distortion: Arena depth collapses toward duel core, with circular crowd tiers bending around the electric conflict.
+  spatial_distortion: Arena-like depth collapses toward electric conflict while circular bands bend around the core.
   atmosphere: Public danger, performative valor, betting tension, and ceremonial menace.
-  key_features: Duel-ring glyphs, crowd-tier shadow bands, shield pylons, plasma banners, and contract boards burned into walls.
+  key_features: Duel-ring glyphs, tier shadow bands, shield pylons, plasma banners, and contract-board burn marks.
   creative_brief: >-
     Push nova duel-colosseum as reusable style: every subject should feel
     caught inside ceremonial electrical judgment, with honor, audience pressure,

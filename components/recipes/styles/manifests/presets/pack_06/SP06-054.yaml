@@ -12,7 +12,7 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: 3D parallel projection
+  aesthetic: Isometric digital-art projection with equalized depth, toy-scale clarity, and no vanishing point
   form_and_line: Parallel lines
   color_palette: Vibrant
   lighting_setup: Studio
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: No perspective
   atmosphere: Organized, toy-like
   key_features: 30 degree angle
-  creative_brief: Parallel lines never converge, perspective abandoned for a god's-eye geometry where every tile receives equal attention. The world tilts thirty degrees, revealing itself as a diorama, a playset awaiting the hand. Distance is measured in grid cells, not vanishing points, infinitude implied by the edges that never meet.
+  creative_brief: Parallel lines never converge, perspective abandoned for a geometry where every plane receives equal attention. The subject tilts thirty degrees, revealing itself as a diorama-like construction with clean dimensional logic. Distance is measured in grid cells and stacked planes, not vanishing points or literal worlds.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - world map requirement
+  - playset requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-054.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

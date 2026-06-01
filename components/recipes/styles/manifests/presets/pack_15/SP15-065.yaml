@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Paranoid exploration style where observation equipment looks half scientific instrument, half cliffside warning shrine.
-  form_and_line: Clustered glass domes, needle scanning spires, ridge catwalks, radar petal shapes, and horizon-measuring cables.
+  aesthetic: Paranoid exploration style where observation equipment looks half scientific instrument, half warning shrine.
+  form_and_line: Clustered glass domes, needle scanning spires, ridge-like catwalk strokes, radar petal shapes, and horizon-measuring cables.
   color_palette: Nebula night blue, aged amber, signal white, oxidized red, and cold moon gray.
   lighting_setup: Telescope lens glow, cold moon edge light, blinking emergency beacons, and amber map-table pools.
   material_texture: Painted alloy shells, scratched glass domes, cable mesh, wind-battered enamel, and taped paper star charts.
   render_quality: Atmospheric exploration concept with tactical readability and poetic unease.
   spatial_distortion: Ridge-to-sky composition where horizon lines stretch like threat vectors through instruments.
   atmosphere: Curiosity, strategic vigilance, lonely weather, and discovery under siege.
-  key_features: Radar dish petals, chart-room windows, emergency beacon stacks, ridge catwalk silhouettes, and nebula route scars.
+  key_features: Radar dish petals, chart-window grids, emergency beacon stacks, ridge-line silhouettes, and nebula route scars.
   creative_brief: >-
     Push pulp observatory-ridge as reusable style: make any subject feel like
     it watches a beautiful threat, with instruments, horizon pressure, and

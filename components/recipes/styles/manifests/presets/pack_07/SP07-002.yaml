@@ -20,12 +20,12 @@ visualDna:
   render_quality: Acabado industrial-chic con legibilidad tectónica y balance entre crudeza material y curaduría editorial.
   spatial_distortion: Profundidad longitudinal marcada por repetición estructural; sin deformación expresiva, sí compresión por capas técnicas.
   atmosphere: Productivo, robusto, creativo y adulto; tensión entre taller y vivienda premium.
-  key_features: Vigas y uniones expuestas, instalaciones visibles, cerramientos de gran formato, escalas loft y objetos utilitarios en primer plano.
+  key_features: Estructura expuesta, uniones francas, capas técnicas visibles, escala productiva y pátina utilitaria como lenguaje, no como set.
   creative_brief: >-
     Conserva la identidad loft mediante una lógica estructura-instalación
     explícita: lo técnico debe dominar la composición y la pátina contar uso
-    real. La transferencia debe funcionar en cualquier programa interior sin
-    perder la tensión entre crudeza y refinamiento.
+    real. La transferencia debe funcionar sobre cualquier sujeto sin perder la
+    tensión entre crudeza y refinamiento.
 avoidRules:
   - cozy
   - soft

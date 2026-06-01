@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: Paper cutout profile
+  aesthetic: Paper-cut silhouette grammar with total shape reliance and zero interior modeling
   form_and_line: Outline only
   color_palette: Solid Black on White
   lighting_setup: Backlit
   material_texture: Paper edge
-  render_quality: Victorian, simple
+  render_quality: Stark cut-paper finish with crisp contour judgment
   spatial_distortion: No internal details
   atmosphere: Graphic, stark
   key_features: Solid shape
-  creative_brief: Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The profile tells the story that the face, with all its features, could not. Absence becomes eloquence when what is omitted outweighs what remains.
+  creative_brief: Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The contour must do all expressive work, turning omission into the primary design tool. Absence becomes eloquence when what is removed outweighs what remains.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

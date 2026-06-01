@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Chrome reflection
   atmosphere: Nostalgic, cool
   key_features: Sunset gradient
-  creative_brief: Neon gridlines stretch toward an infinite horizon that glows purple-pink, a synthesized sunset that never existed but everyone remembers. Chrome surfaces reflect a future that peaked in 1985 and has been echoing ever since. The image moves even when still, driven by a beat you can almost hear beneath the scanlines.
+  creative_brief: Neon gridlines, chrome gradients, magenta-cyan bloom, and scanline haze create a remembered future that never existed. Reflective bands and synthetic color make the image move even when still, driven by a beat implied through rhythm and glow. The style should not require sunsets, roads, cars, horizons, or specific retro props.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - sunset requirement
+  - road requirement
+  - car requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-056.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

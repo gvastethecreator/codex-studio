@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Paramilitary city-state futurism, armored exosuits, clean arcologies, bio-political tactical drama, machine precision meeting postwar human fragility
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Tactical arcology assault, with clean futurism, bio-political severity, machine precision, and fragile postwar control.
+  form_and_line: Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor perspective, and severe panel discipline.
+  color_palette: Ceramic white, tactical gray, cold cyan, muted olive, warning red, and polished black.
+  lighting_setup: Clinical overhead glow, hard tactical rims, glass reflection planes, and cold specular control.
+  material_texture: Ceramic armor sheen, brushed composite, glassy architecture, carbon weave, sterile floor reflection, and synthetic dust.
+  render_quality: High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic scale.
+  spatial_distortion: Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without fixed squad staging.
   atmosphere: Tactical, polished, civic, severe
-  key_features: Arcology scale, exosuit detail, tactical squad formations, clean future architecture, hard-surface action framing
-  creative_brief: Clean arcology lines fracture under the weight of tactical deployment, exosuits gleaming with the cold sheen of a future that traded disorder for control and got neither. Every corridor is a negotiation between utopian architecture and the violence required to protect it. Peace wears ceramic armor and carries a rifle it hopes not to use.
+  key_features: Clean tactical grids, ceramic hard surfaces, bio-political tension, severe civic control, polished assault geometry.
+  creative_brief: >-
+    Apply tactical arcology severity to any prompt through sterile grids,
+    ceramic surfaces, cold reflections, and controlled pressure without
+    requiring wearable hardware, squads, corridors, weapons, or a city-state setting.
 avoidRules:
   - realistic
   - 3d render

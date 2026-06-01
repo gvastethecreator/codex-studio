@@ -867,11 +867,23 @@ const limitArg = argValue('limit');
 const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
 const packFilter = argValue('pack');
 const categoryFilterArg = argValue('category');
+const presetFilterArg = argValue('preset');
 const categoryFilters = new Set(
   (categoryFilterArg
     ? categoryFilterArg.includes('|')
       ? categoryFilterArg.split('|')
       : [categoryFilterArg]
+    : []
+  ).flatMap((value) => {
+    const trimmed = value.trim();
+    return trimmed ? [trimmed] : [];
+  }),
+);
+const presetFilters = new Set(
+  (presetFilterArg
+    ? presetFilterArg.includes('|')
+      ? presetFilterArg.split('|')
+      : [presetFilterArg]
     : []
   ).flatMap((value) => {
     const trimmed = value.trim();
@@ -913,6 +925,12 @@ for (const pack of packs) {
     const category = sanitizeCategory(preset.category);
     const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
 
+    if (presetFilters.size > 0 && !presetFilters.has(preset.id)) {
+      existingDefaultFiles.add(destination);
+      skipped += 1;
+      continue;
+    }
+
     if (categoryFilters.size > 0 && !categoryFilters.has(category)) {
       continue;
     }
@@ -930,6 +948,7 @@ targetPresets.push(
     existingFiles: existingDefaultFiles,
     force,
     categoryFilters,
+    presetFilters,
     limit,
     defaultsDir,
     assetExtension: RECIPE_ASSET_EXTENSION,

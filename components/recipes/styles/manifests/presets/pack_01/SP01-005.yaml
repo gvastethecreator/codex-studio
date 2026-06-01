@@ -13,14 +13,17 @@ tags:
   - film-and-analog-process
 visualDna:
   aesthetic: Cinematic movie still close-up, dramatic film photography
-  subject_treatment: Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background
+  subject_treatment: Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus background
   color_and_tone: Cinematic color grading, teal and orange split toning, rich cinematic contrast
   lighting_and_shadow: Dramatic Rembrandt lighting, strong directional light, deep shadows
-  texture_and_material: Cinematic film grain, detailed skin texture, anamorphic lens flares
+  texture_and_material: Cinematic film grain, detailed surface texture, anamorphic lens flares
   camera_and_composition: Shot on anamorphic lens, beautiful bokeh background, tight emotional framing
   atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
   rendering_and_quality: 4K cinematic render, filmic look, high production value
-  creative_brief: The frame feels lifted from a film you almost remember—a moment of suspended breath where emotion hangs visible in the air. Colors split like twilight, warm and cool battling across skin and shadow. The lens draws you into an intimate distance, close enough to see the story in an eye, yet the world beyond dissolves into painterly abstraction. This is the visual language of cinema at its most visceral.
+  creative_brief: >-
+    Apply cinematic close-up language to any subject: shallow focus, anamorphic
+    flares, teal-orange tension, tight emotional framing, and film-still drama
+    without requiring eyes or a human close-up.
 avoidRules:
   - illustration
   - painting

@@ -20,11 +20,11 @@ visualDna:
   render_quality: Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.
   spatial_distortion: Sensación de masas en tensión y volúmenes en suspensión controlada.
   atmosphere: Austera, colectiva, disciplinada y mecánico-utópica.
-  key_features: Cantiléveres tensos, pilotis, puentes de conexión, planos rojos de comando y estructura explícita.
+  key_features: Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y estructura explícita.
   creative_brief: >-
     Define una gramática constructivista transferible donde la forma opere como
     manifiesto: conflicto geométrico, estructura sin ocultamiento y color
-    político mínimo pero incisivo. Debe leerse como arquitectura-programa.
+    político mínimo pero incisivo. Debe leerse como sistema-programa.
 avoidRules:
   - ornate
   - capitalist

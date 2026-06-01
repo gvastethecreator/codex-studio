@@ -12,34 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Teatralidad alegórica de alta ceremonia, donde conflicto emocional se codifica en iconos, rosas y arquitectura ritual.
-  form_and_line: Contorno elegante simbólico, precisión de vestuario ceremonial y ornamento lineal con flourishes operáticos.
+  aesthetic: Teatralidad alegórica de alta ceremonia, donde conflicto emocional se codifica en iconos, rosas, simetría ritual y cambios de escala.
+  form_and_line: Contorno elegante simbólico, precisión ceremonial y ornamento lineal con flourishes operáticos.
   color_palette: Rose crimson, cathedral violet, candle gold, ivory, shadow navy, ceremonial black
   lighting_setup: Spot de escenario, contraluz ritual, glow simbólico teñido y oscuridad de telón dramático.
-  material_texture: Terciopelo de cortina, pétalo suave, mármol satinado de arena y velo de humo de vela.
+  material_texture: Terciopelo de cortina, pétalo suave, mármol satinado y velo de humo de vela.
   render_quality: Composición alegórica de alta legibilidad semiótica con densidad escénica controlada.
-  spatial_distortion: Ceremonial symmetry, impossible stage transitions, allegorical scale changes, posed ritual spacing
+  spatial_distortion: Ceremonial symmetry, impossible stage transitions, allegorical scale changes, and posed ritual spacing
   atmosphere: Simbólica, intoxicante e inestable, con intensidad ritual adolescente.
-  key_features: Altares de rosas, simbolismo ferroviario, arenas rituales y utilería emocional codificada.
+  key_features: Rosas simbólicas, tránsito alegórico, espacio ritual abstracto y utilería emocional codificada.
   creative_brief: >-
     Define una gramática rose-altar reusable donde ceremonia teatral,
     iconografía recurrente y staging simbólico sustituyan realismo literal,
-    preservando conflicto emocional como sistema visual.
+    sin exigir altar, tren, arena, duelo, uniforme o set teatral concreto.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - literal realism
+  - casual slice of life
+  - unstyled modern room
+  - flat documentary light
+  - generic fantasy battle
+  - low-symbolism composition
+  - random prop clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-332.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low-symbolism composition, random prop clutter
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

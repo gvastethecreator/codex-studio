@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Soft-surreal classroom comedy language blending mundane school routine with dreamlike absurd intrusions delivered in gentle deadpan tone
+  aesthetic: Soft-surreal deadpan comedy language blending mundane routine with dreamlike absurd intrusions delivered gently
   form_and_line: Simple friendly contouring with occasional subtle deformation cues, low-intensity reaction acting, and composition designed for conversational weirdness
-  color_palette: Quiet pastels, warm classroom neutrals, mint and beige supports, and mild surreal accent hues introduced sparingly
-  lighting_setup: Calm daytime school ambient with even soft fill, minimal dramatic contrast, and slight atmospheric lift during surreal beats
-  material_texture: Everyday classroom textures kept lightweight, with simple prop fidelity and low-noise backgrounds supporting character humor
+  color_palette: Quiet pastels, warm neutral bases, mint and beige supports, and mild surreal accent hues introduced sparingly
+  lighting_setup: Calm daytime ambient with even soft fill, minimal dramatic contrast, and slight atmospheric lift during surreal beats
+  material_texture: Everyday lightweight textures, simple detail fidelity, and low-noise backgrounds supporting character humor
   render_quality: Gentle surreal-slice render emphasizing timing, expression nuance, and understated oddity without heavy visual aggression
-  spatial_distortion: Mostly stable classroom perspective with light dreamlike bending at gag-critical moments
+  spatial_distortion: Mostly stable perspective with light dreamlike bending at gag-critical moments
   atmosphere: Sweet, dreamy, odd, and quietly funny
-  key_features: Low-key surreal inserts, deadpan reaction rhythm, school-life baseline continuity, and softly uncanny visual punctuation
+  key_features: Low-key surreal inserts, deadpan reaction rhythm, everyday baseline continuity, and softly uncanny visual punctuation
   creative_brief: >-
-    Preserve soft-surreal classroom grammar as a reusable style system:
-    calm everyday baseline, subtle absurd intrusions, and gentle deadpan
-    expression timing should remain consistent across subjects.
+    Use the title as a style anchor for soft-surreal deadpan. Keep calm baseline,
+    subtle absurd intrusion, and gentle expression timing without requiring
+    classroom, school, or fixed gag props.
 avoidRules:
   - realistic
   - 3d render

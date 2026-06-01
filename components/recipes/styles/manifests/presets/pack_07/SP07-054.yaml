@@ -27,11 +27,11 @@ visualDna:
     estructuralmente comprimida, no meramente sucia o caótica.
 avoidRules:
   - clean
-  - wide streets
+  - wide empty space
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-054.webp
 attributes:
-  negativePrompt: clean, wide streets
+  negativePrompt: clean, wide empty space
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

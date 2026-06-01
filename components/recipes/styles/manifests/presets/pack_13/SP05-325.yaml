@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Rough urban adolescence, scratchy linework, concrete poetry, drifting bikes and rooftops, holy and ugly city textures fused into emotional sketch energy
-  form_and_line: Scratchy uneven contour, dry-ink scribble, architectural scrawl
+  aesthetic: Rough concrete-poetry adolescence, scratchy linework, sacred-ugly texture, restless drift, and emotional sketch energy
+  form_and_line: Scratchy uneven contour, dry-ink scribble, architectural scrawl, and unstable proportion rhythm
   color_palette: Cement grey, faded blue, rust orange, dirty cream, bruised purple, asphalt black
-  lighting_setup: Hazy urban daylight, sodium-vapor night bleed, flat overcast concrete gloom
+  lighting_setup: Hazy daylight, sodium-vapor night bleed, and flat overcast concrete gloom
   material_texture: Dry-brush grit, photocopy grain, rough wall scrape, cracked paint, pencil scuff
   render_quality: Gritty sketch-urban rendering with rough poetic abstraction and tactile city-line immediacy
-  spatial_distortion: Loose body proportions, tilted urban perspective, sketched motion drift, uneven head-to-limb relationships
+  spatial_distortion: Loose proportion logic, tilted perspective, sketched motion drift, and uneven scale relationships
   atmosphere: Restless, rough, spiritual, urban
-  key_features: Scratchy concrete textures, rooftop silhouettes, adolescent motion, rough city iconography, sacred-urban weirdness
+  key_features: Scratchy concrete textures, tilted silhouettes, adolescent motion, rough civic iconography, sacred-ugly weirdness
   creative_brief: >-
-    Preserve scratchy urban-drift grammar as a reusable style system:
+    Use Taiyo Matsumoto title as style anchor for scratchy urban drift:
     dry-ink roughness, concrete-poetry composition, and adolescent restless
-    city energy should remain coherent across subjects.
+    energy should transfer without requiring bikes, rooftops, city streets, or
+    youth characters.
 avoidRules:
   - clean glossy polish
   - perfect symmetry

@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Classic RPG Maker top-down tile world, chibi two-head-tall sprites, cute 16x16 tile forests, tiny treasure chests, innkeeper NPC behind counter, nostalgic indie-RPG charm, Yume Nikki dreamscape simplicity, Ib horror-cute dissonance
-  form_and_line: Small-pixel sprite outlines, tile-grid construction, chunky square tiles, simple sprite animation frames, grid-locked everything
-  color_palette: Cute saturated tiles, bright green grass, blue water tiles, brown village roofs, character-specific palette swaps, RTP default charm
+  aesthetic: Classic RPG Maker top-down tile grammar, chibi-scale abstraction when subjects appear, 16x16 modular tiles, nostalgic indie-RPG charm, Yume Nikki dream simplicity and Ib horror-cute dissonance as tone anchors
+  form_and_line: Small-pixel outlines, tile-grid construction, chunky square modules, simple animation-frame logic, grid-locked everything
+  color_palette: Cute saturated tiles, clear terrain-like color coding, compact RTP-inspired palette, palette swaps for subject separation
   lighting_setup: Flat ambient tile lighting, occasional window-yellow glow tiles, no dynamic lighting, pre-baked atmosphere
   material_texture: Tile-repetition grids, sprite-pixel squareness, grid-aligned collision edges, chunky-block construction feel
-  render_quality: RPG Maker game screen, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth
-  spatial_distortion: Top-down orthographic grid, tile-based movement snapping, screen-transition fade, flat-isometric hybrid worldview
-  atmosphere: Cozy, nostalgic, do-it-yourself creativity, small-town adventure warmth, indie-game soul
-  key_features: Grid-based tile world, chibi two-head-tall sprites, top-down orthographic perspective, tile-repetition patterns, dialogue-box overlay
-  creative_brief: Chibi sprites navigate a tile-based world where every tree, every chest, every innkeeper stands on an invisible grid of possibility. The orthographic camera never tilts, never zooms, content to observe a miniature universe from its fixed divine perspective. The image feels like a world built in an afternoon by someone who believed in the stories they were telling.
+  render_quality: RPG Maker screen grammar, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth
+  spatial_distortion: Top-down orthographic grid, tile-based snapping, screen-transition fade, flat-isometric hybrid worldview
+  atmosphere: Cozy, nostalgic, do-it-yourself creativity, miniature, indie-game soul
+  key_features: Grid-based tile composition, chibi-scale simplification, top-down orthographic perspective, tile-repetition patterns, optional dialogue-box overlay without readable text
+  creative_brief: Any subject is rebuilt from small square modules as if authored inside a humble RPG tool. The camera stays orthographic, scale stays miniature, repetition becomes texture and the whole image feels handmade inside a fixed tile grid.
 avoidRules:
   - realistic
   - 3d
@@ -49,4 +49,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

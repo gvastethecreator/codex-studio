@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-264
 packId: pack_05
-name: Elfen Lied - Pink-Haired Laboratory Rupture
+name: Clinical Innocence Rupture Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Laboratory escape horror, innocence colliding with telekinetic dismemberment, rain-slick trauma, songlike sadness under clinical violence and broken memory
+  aesthetic: Clinical innocence rupture, soft color against sterile brutality, invisible-force trauma, broken memory, songlike sadness under sharp white space
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Clinical white matte, rain-slick sheen, soft pastel wash, sharp red staining, fractured glass texture, sterile tile grain
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Invisible-force displacement, fragile center framing, white-space rupture, close emotional compression, sharp offscreen threat vectors
   atmosphere: Sad, violent, clinical, exposed
-  key_features: Laboratory corridors, blood-on-white contrast, horned profile silhouette, rain-sad close-ups, invisible-attack framing
-  creative_brief: Pink hair washes over clinical white like the gentlest color dreaming of violence, a laboratory escape painting corridors in the red of everything the scientists should have left alone. The horned girl walks through rain-slick ruin carrying a sadness too vast for her small body, dangerous beyond measure and lonelier still.
+  key_features: Blood-on-white contrast, pastel fragility, clinical emptiness, invisible-force framing, memory-fracture sadness
+  creative_brief: >
+    Render any subject through soft innocence breaking against sterile violence:
+    pale negative space, pastel warmth, sharp crimson interruption, and invisible
+    pressure should carry the style without fixed facilities, escape scenes,
+    character traits, or scientific backstory.
 avoidRules:
   - realistic
   - 3d render

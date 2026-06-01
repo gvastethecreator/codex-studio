@@ -20,8 +20,8 @@ visualDna:
   render_quality: Muted, floating, weightless suspension, soundless depth
   spatial_distortion: Warped, refractive bend, swim-goggle perspective
   atmosphere: Calm, deep, abyssal peace, submerged solitude
-  key_features: Caustics, light-net, bubbles, floating hair
-  creative_brief: Breath held, weight surrendered, the world dissolves into ribbons of filtered sun dancing across skin and scale. Shapes waver and bloom through a liquid lens, every edge softened by the patience of depth. Silence here is not empty but full, a cathedral of blue where light arrives as a visitor, not a resident.
+  key_features: Caustics, light-net projection, suspended particles, refractive wobble
+  creative_brief: 'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean scenes. The image should feel filtered through depth and fluid refraction.'
 avoidRules:
   - dry
 assets:

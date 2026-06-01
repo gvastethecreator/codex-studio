@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-292
 packId: pack_16
-name: Inu-Oh - Heike Punk Stage Vision
+name: Historical Glam Punk Performance Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Teatro musical histórico-punk con energía de resurrección escénica, donde tradición narrativa y performance glam se fusionan sin nostalgia conservadora.
-  form_and_line: Trazos elásticos y angulares para corporalidad performativa, siluetas exageradas de escenario y pose dramática de alta visibilidad.
-  color_palette: Rojos de telón, púrpuras eléctricos, negros de escenario y dorados antiguos reactivados como acentos de linaje.
-  lighting_setup: Contraluces de concierto, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.
-  material_texture: Tejidos históricos reinterpretados con brillo de show, madera de tarima, cuerdas de instrumento y humo de performance.
+  aesthetic: Teatro musical histórico-punk, con tradición remezclada, glam radical y energía de resurrección escénica.
+  form_and_line: Trazos elásticos y angulares, corporalidad performativa, siluetas exageradas y pose dramática de alta visibilidad.
+  color_palette: Rojos ceremoniales, púrpuras eléctricos, negros performativos y dorados antiguos reactivados como acentos de linaje.
+  lighting_setup: Contraluces performativos, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.
+  material_texture: Tejidos históricos reinterpretados con brillo de show, madera pulida, tensión lineal y humo de performance.
   render_quality: Acabado premium de ópera-rock animada con foco en impacto gestual, lectura coral y ritmo visual musical.
-  spatial_distortion: Espacio escénico expansivo con perspectiva de público y compresión frontal en momentos de explosión performativa.
+  spatial_distortion: Espacio performativo expansivo con perspectiva coral y compresión frontal en momentos de explosión rítmica.
   atmosphere: Extático, rebelde, ceremonial, liberador.
-  key_features: Fusión vestuario histórico-glam, iconografía musical central, cuerpos transformados en manifiesto escénico y audiencia en trance.
-  creative_brief: Diseña una gramática reusable de teatro-punk histórico para cualquier sujeto, usando pose musical extrema, luz de concierto y ornamentación de linaje resignificada.
+  key_features: Ornamento histórico remezclado, luz performativa, manifiesto corporal, ritmo musical visual y exceso teatral controlado.
+  creative_brief: >-
+    Diseña una gramática reusable de teatro punk histórico para cualquier prompt o imagen de entrada:
+    performance, ornamento y energía glam sin imponer escenarios, instrumentos, audiencias ni vestuario literal.
 avoidRules:
   - realistic
   - 3d render

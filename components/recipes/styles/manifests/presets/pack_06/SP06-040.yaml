@@ -17,11 +17,11 @@ visualDna:
   color_palette: Prussian Blue and White
   lighting_setup: Inverted (negative)
   material_texture: Watercolor paper
-  render_quality: Botanical, architectural
+  render_quality: Scientific photogram clarity without requiring plants, plans, or buildings
   spatial_distortion: Silhouette only
   atmosphere: Blue, scientific
   key_features: Blue monochrome
-  creative_brief: Iron salts sensitize paper to ultraviolet light, turning Prussian blue where the sun touched and leaving white where objects cast their shadows. The image is a photogram, a direct impression of light blocked by matter, science indistinguishable from art. Every cyanotype is a collaboration with the weather on the day it was made.
+  creative_brief: Iron salts sensitize paper to ultraviolet light, turning Prussian blue where exposure reaches and leaving white where matter interrupts it. The image is a photogram logic, a direct impression of blocked light, science indistinguishable from art. The style should feel exposed, rinsed, monochrome, and materially tied to light.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - botanical requirement
+  - architecture requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-040.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, botanical requirement, architecture requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

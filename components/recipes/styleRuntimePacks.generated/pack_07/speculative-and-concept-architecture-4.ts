@@ -9,22 +9,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speculative And Concept Architecture',
     negativePrompt: 'brick, square',
     style: {
-      aesthetic: 'Zaha Hadid fluid parametric futurism, flowing space, gravity defiance',
+      aesthetic:
+        'Parametricismo fluido de lógica algorítmica, continuidad topológica y espacialidad casi líquida.',
       form_and_line:
-        'Flowing curves, continuous surface, seamless skin, morphing volumes, ribbon-like transitions',
-      color_palette: 'White, Glass, Cool Grey gradient, Liquid Silver, Soft Ice Blue',
+        'Curvas continuas, superficies sin junta visible, volúmenes morfogenéticos y transiciones tipo cinta.',
+      color_palette:
+        'Blanco técnico, gris frío gradual, plata líquida y azul hielo en señal lumínica.',
       lighting_setup:
-        'Soft ambient, continuous glow lines, inner-illuminated volume, edge-highlighting',
+        'Ambiente suave continuo, líneas de glow embebidas, iluminación de borde y núcleos de volumen activos.',
       material_texture:
-        'Seamless material, fiberglass composite, poured concrete shell, GRP panels, tensile membrane',
+        'Compuestos lisos, hormigón de piel continua, panelería GRP y membranas tensadas de alta precisión.',
       render_quality:
-        'Futuristic, organic, math, algorithmic elegance, digital-to-physical, insect-chitin precision',
-      spatial_distortion: 'Fluid form',
-      atmosphere: 'Elegant, advanced, flow, weightless, computational, liquid-space serenity',
+        'Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle constructivo plausible.',
+      spatial_distortion:
+        'Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.',
+      atmosphere: 'Elegante, avanzada, ligera y matemática.',
       key_features:
-        'Voronoi pattern, fluid continuous surfaces, atrium vortex, organic facade pores, flowing interior canyons',
+        'Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta visible.',
       creative_brief:
-        'Surfaces flow like liquid thought, walls melting into floors into ceilings without the interruption of a corner. Algorithm whispers to material, computation dreaming itself into concrete and glass. The building behaves like an organism frozen mid-metamorphosis, caught between animal and architecture.',
+        'Construye una gramática paramétrica transferible donde continuidad de superficie, variación algorítmica y precisión constructiva sean inseparables. Debe sentirse computacional sin depender de un edificio específico.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

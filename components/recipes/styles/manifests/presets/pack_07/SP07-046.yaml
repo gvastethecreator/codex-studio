@@ -13,25 +13,25 @@ tags:
   - residential-interiors
 visualDna:
   aesthetic: Paisaje-hospitalidad tropical de lujo sereno, con agua y horizonte como eje compositivo principal.
-  form_and_line: Datum de infinity edge, plataformas someras de lounge, contrapunto vertical de palmeras y capas terraza-agua.
+  form_and_line: Datum de infinity edge, plataformas someras, verticales tropicales y capas de terraza-agua.
   color_palette: Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal
   lighting_setup: Sol intenso diurno, brillo subacuático controlado, ámbar nocturno de antorcha y shimmer de atardecer sobre lámina.
-  material_texture: Agua reflectante, piedra térmica, revestimiento de piscina, deck de teca y textil exterior de sombra.
+  material_texture: Agua reflectante, piedra térmica, revestimiento húmedo, teca exterior y textil de sombra.
   render_quality: Visualización hospitality premium con lujo creíble y control físico de reflejo acuático.
   spatial_distortion: None
   atmosphere: Indulgencia de ritmo lento, serenidad cálida y escape curado.
-  key_features: Línea knife-edge, chaises sumergidas, módulos cabana, acentos de fuego y marco vegetal tropical.
+  key_features: Línea knife-edge, planos someros, módulos de sombra, acentos de fuego y marco vegetal tropical.
   creative_brief: >-
     Construye una gramática de resort transferible donde relación agua-horizonte,
     sombra vegetal y materialidad exterior cálida definan exclusividad relajada.
     Debe funcionar sin marca ni destino específico.
 avoidRules:
   - cold
-  - city
+  - cold concrete
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-046.webp
 attributes:
-  negativePrompt: cold, city
+  negativePrompt: cold, cold concrete
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

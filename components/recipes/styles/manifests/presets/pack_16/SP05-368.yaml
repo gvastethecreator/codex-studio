@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-368
 packId: pack_16
-name: Blue Giant - Midnight Jazz Sax Ascension
+name: Midnight Jazz Ascension Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Jazz urbano de club nocturno, centrado en improvisación visceral y presencia escénica solista.
-  form_and_line: Silueta de saxofonista en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.
+  aesthetic: Jazz nocturno visceral, improvisación ascendente, presencia solista y explosión soulful.
+  form_and_line: Silueta performativa en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.
   color_palette: Azules midnight, dorados latón, magentas de neón tenue y negros humo de sala.
-  lighting_setup: Spot cálido de club con contraluz de neblina y glow lateral sobre campana del saxo.
-  material_texture: Latón con pátina, madera de tarima, humo volumétrico fino y tela oscura de escenario.
+  lighting_setup: Spot cálido aislado con contraluz de neblina y glow lateral sobre metal curvo.
+  material_texture: Latón con pátina, madera oscura, humo volumétrico fino y tela de performance.
   render_quality: Frame performativo adulto con lectura de intensidad, dinámica de solo y respuesta de sala.
-  spatial_distortion: Profundidad de club comprimida hacia solista con halo de audiencia periférica difusa.
+  spatial_distortion: Profundidad nocturna comprimida hacia foco performativo con halo periférico difuso.
   atmosphere: Nocturna, impulsada, soulful y explosiva.
-  key_features: Brillo de sax, haze de club, spot aislado y silueta de solo en ascenso continuo.
+  key_features: Brillo de latón, haze nocturno, spot aislado y silueta de solo en ascenso continuo.
   creative_brief: >-
     Define una gramática reusable de midnight-jazz-ascension donde timbre de
-    latón, atmósfera de club y cuerpo performativo construyan identidad más
-    allá de un concierto particular.
+    latón, atmósfera nocturna y cuerpo performativo construyan identidad
+    transferible sin imponer saxofón, club, concierto ni solista literal.
 avoidRules:
   - realistic
   - 3d render

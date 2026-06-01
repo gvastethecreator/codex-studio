@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-305
 packId: pack_16
-name: Urusei Yatsura - Neon Oni Rom-Com
+name: Neon Sci-Fi Slapstick Rom-Com Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Sitcom sci-fi ochentera de caos afectivo, con choque doméstico-alien y erotismo caricaturesco de alto voltaje.
+  aesthetic: Sitcom sci-fi ochentera de caos afectivo, color fluorescente, slapstick corporal y fricción sentimental episódica.
   form_and_line: Contorno grueso caricaturesco, acting facial exagerado y timing visual de gag físico instantáneo.
   color_palette: Neones rosas y turquesa, amarillos eléctricos, azules nocturnos saturados y acentos pastel de sitcom.
-  lighting_setup: Luz frontal de set televisivo con neón de calle filtrado, contraste bajo y acentos de gag instantáneo.
-  material_texture: Tatami cotidiano, señalética fluorescente, utilería sci-fi ligera y grano retro de emisión.
+  lighting_setup: Luz frontal televisiva con neón filtrado, contraste bajo y acentos de gag instantáneo.
+  material_texture: Superficie doméstica plana, señalética fluorescente, utilería sci-fi ligera y grano retro de emisión.
   render_quality: Acabado premium retro-pop con claridad de broma, ritmo de caos y legibilidad de ensemble romántico.
   spatial_distortion: Espacio elástico de comedia con deformaciones leves para golpes visuales y persecuciones domésticas.
   atmosphere: Hiperactiva, coqueta, neón, traviesa.
-  key_features: Motivo oni de contraste, apartamento hiperactivo, gadget alien absurdo y persecución romántica de timing corto.
-  creative_brief: Construye una gramática reusable de rom-com sci-fi histriónica para cualquier sujeto, priorizando color fluorescente, slapstick corporal y fricción sentimental episódica.
+  key_features: Color fluorescente, timing corto, expresiones exageradas, gadgets absurdos sugeridos y fricción romántica caricaturesca.
+  creative_brief: >-
+    Construye una gramática reusable de rom-com sci-fi histriónica para cualquier prompt o imagen de entrada:
+    neón, slapstick y caos afectivo sin imponer aliens, apartamentos, persecuciones ni iconografía oni.
 avoidRules:
   - realistic
   - 3d render

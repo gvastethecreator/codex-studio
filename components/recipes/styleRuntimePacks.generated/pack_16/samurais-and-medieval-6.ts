@@ -5,92 +5,139 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-026',
-    name: 'Ronin Temple Standoff',
+    name: 'Pre-Impact Ritual Stillness Style',
     category: '4. Samurais & Medieval',
     negativePrompt: 'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Classic samurai anime set in a mountain temple.',
-      form_and_line: 'Elegant linework, ceremonial stance, and precise katana handling.',
-      color_palette: 'Stone gray, lacquered red, and midnight blue.',
-      lighting_setup: 'Cool side lighting with warm lantern accents.',
-      material_texture: 'Aged wood, wet stone, and polished steel.',
-      render_quality: 'Restrained, narrative-focused illustration.',
-      spatial_distortion: 'Corridor depth with centered dramatic tension.',
-      atmosphere: 'Honor, tense calm, and an imminent duel.',
-      key_features: 'Torii gate, unsheathed katana, wind in the haori.',
-      creative_brief: 'Capture the silent instant before the duel, charged with intent.',
+      aesthetic:
+        'Prestige martial minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.',
+      form_and_line:
+        'Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around poised limbs to amplify intent.',
+      color_palette:
+        'Slate mineral neutrals, lacquer crimson accents, and indigo night tones with sparse warm punctuation.',
+      lighting_setup:
+        'Raking lateral key with low warm bounce, keeping facial planes half-obscured and edge highlights selective.',
+      material_texture:
+        'Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished micro-glints.',
+      render_quality:
+        'High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.',
+      spatial_distortion:
+        'Axial threshold perspective with compressed midground, creating a pressure chamber effect around opposing vectors.',
+      atmosphere:
+        'Ceremonial tension, disciplined breath control, and the sensation that motion is being withheld by code.',
+      key_features:
+        'Static-ready stance geometry, controlled fabric wind cues, ritual threshold asymmetry, and line-of-sight dominance.',
+      creative_brief:
+        'Build a reusable pre-impact ritual stillness grammar for any subject: poised silhouettes, selective metallic highlights, disciplined negative space, and withheld motion without imposing ronin, temples, weapons, samurai, duels, haori, or shrine thresholds.',
     },
   },
   {
     id: 'SP13-027',
-    name: 'Crimson Clan Battlefield',
+    name: 'Crimson Formation Momentum Style',
     category: '4. Samurais & Medieval',
     negativePrompt: 'photoreal, cartoon-goofy, modern-city, watermark, text, logo',
     style: {
-      aesthetic: 'Epic-scale samurai clan warfare.',
-      form_and_line: 'Armored silhouettes, banners, and stylized spear lines.',
-      color_palette: 'Crimson, charcoal black, and aged gold.',
-      lighting_setup: 'War-dawn lighting with illuminated mist.',
-      material_texture: 'Scratched steel, mud, and banner cloth.',
-      render_quality: 'Highly readable, war-focused anime panorama.',
-      spatial_distortion: 'Open battlefield layered with troop depth.',
-      atmosphere: 'Martial honor and collective destiny.',
-      key_features: 'Clan standard, leading general, front-line collision.',
-      creative_brief: 'A pre-charge battlefield moment with strong historical-anime gravitas.',
+      aesthetic:
+        'Grand-strategy anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.',
+      form_and_line:
+        'Broad massed silhouettes, banner-like arcs that map faction flow, and repeated line cadence used as directional rhythm.',
+      color_palette:
+        'Dominant crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.',
+      lighting_setup:
+        'Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command focal points.',
+      material_texture:
+        'Battle-scored metal, mud-caked lower planes, frayed fabric standards, and humid particulate air.',
+      render_quality:
+        'Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.',
+      spatial_distortion:
+        'Multi-plane conflict depth using atmospheric compression and diagonal advance vectors for collective force direction.',
+      atmosphere: 'Inevitable collision, inherited duty, and banner-locked resolve under doctrine.',
+      key_features:
+        'Rank geometry, signal standards, wave cadence, and collision-ready front interfaces.',
+      creative_brief:
+        'Create a transferable crimson formation momentum grammar for any subject: formation-driven composition, heraldic color dominance, disciplined large-scale motion, and command-layer hierarchy without imposing clans, armies, battlefields, cavalry, infantry, weapons, or war scenes.',
     },
   },
   {
     id: 'SP13-028',
-    name: 'Medieval Knight Oath',
+    name: 'Sacred Heraldic Vow Style',
     category: '4. Samurais & Medieval',
     negativePrompt: 'photoreal, sci-fi-ui, casual-modern, watermark, text, logo',
     style: {
-      aesthetic: 'Medieval anime knight in a solemn oath scene.',
-      form_and_line: 'Ornate armor and a lineage-marked cloak.',
-      color_palette: 'Silver, royal blue, and warm amber.',
-      lighting_setup: 'Stained-glass light with cathedral shadows.',
-      material_texture: 'Polished steel, carved stone, and heavy fabric.',
-      render_quality: 'Premium-finish heroic illustration.',
-      spatial_distortion: 'Ceremonial vertical composition.',
-      atmosphere: 'Nobility, duty, and sacrifice.',
-      key_features: 'Sword grounded tip-down, heraldic shield, halo-like light.',
-      creative_brief: 'A solemn, iconic knightly oath captured in a single frame.',
+      aesthetic:
+        'Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than spectacle.',
+      form_and_line:
+        'Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage coding.',
+      color_palette:
+        'Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.',
+      lighting_setup:
+        'Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and fabric planes.',
+      material_texture:
+        'Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.',
+      render_quality:
+        'Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.',
+      spatial_distortion:
+        'Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.',
+      atmosphere: 'Reverence, obligation, and intergenerational burden accepted in silence.',
+      key_features:
+        'Oath-anchor posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.',
+      creative_brief:
+        'Define a reusable sacred-heraldic-vow style for any subject: heraldry, sacred vertical framing, solemn material response, and devotional stillness without imposing knights, weapons, chapels, armor, helmets, banners, or medieval ceremony as literal content.',
     },
   },
   {
     id: 'SP13-029',
-    name: 'Castle Siege Emberstorm',
+    name: 'Ember Breach Pressure Style',
     category: '4. Samurais & Medieval',
     negativePrompt: 'photoreal, modern-tech, colorful-cute, watermark, text, logo',
     style: {
-      aesthetic: 'Medieval anime siege with fire and catapults.',
-      form_and_line: 'Robust contours, armored troops, and fortified architecture.',
-      color_palette: 'Ember orange, stone gray, and smoke black.',
-      lighting_setup: 'Nightfire as the dominant light source.',
-      material_texture: 'Masonry, charred wood, and worn metal.',
-      render_quality: 'Wide, readable war-scene illustration.',
-      spatial_distortion: 'Diagonal battlefield view across walls and troop lines.',
-      atmosphere: 'Controlled chaos and heroic resistance.',
-      key_features: 'Breached wall, projectiles in flight, captain leading the line.',
-      creative_brief: 'Capture the breaking point of a siege with epic anime energy.',
+      aesthetic:
+        'Breach-pressure anime where structural failure, flame logic, and defensive choreography define the visual identity.',
+      form_and_line:
+        'Heavy structural silhouettes, fracture-oriented lines, and arc vectors used as compositional pressure.',
+      color_palette:
+        'Ember orange peaks, smoke black masses, calcified stone grays, and sparse signal-red command accents.',
+      lighting_setup:
+        'Fire-dominant nocturnal contrast with intermittent blast flares that reveal tactical layers in pulses.',
+      material_texture:
+        'Cracked stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.',
+      render_quality:
+        'Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat pressure.',
+      spatial_distortion:
+        'Oblique structural perspective that exaggerates breach depth and converging pressure channels.',
+      atmosphere:
+        'Controlled collapse, disciplined resistance, and escalating heat-driven urgency.',
+      key_features:
+        'Breach seams, arc trajectories, pressure points, and command silhouettes amid ember drift.',
+      creative_brief:
+        'Establish a transferable ember-breach-pressure grammar for any subject: fracture geometry, fire-lit pulse lighting, layered conflict readability, and controlled collapse without imposing castles, sieges, walls, projectiles, defenders, shield-lines, or engines.',
     },
   },
   {
     id: 'SP13-030',
-    name: 'Blademonk Moon Courtyard',
+    name: 'Moonlit Ascetic Discipline Style',
     category: '4. Samurais & Medieval',
     negativePrompt: 'photoreal, bright-daylight, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Warrior monk anime in a moonlit courtyard.',
-      form_and_line: 'Fine lines, zen posture, and a long traditional weapon.',
-      color_palette: 'Lunar blue, silver, and deep green.',
-      lighting_setup: 'Moonlight with paper-lantern accents.',
-      material_texture: 'Smooth stone, bamboo, and ritual textiles.',
-      render_quality: 'Contemplative frame of spiritual combat readiness.',
-      spatial_distortion: 'Courtyard symmetry with calm depth.',
-      atmosphere: 'Discipline, calm, and inner power.',
-      key_features: 'Raked gravel circle, full moon, concentrated gesture.',
-      creative_brief: 'Night training that blends serenity with latent threat.',
+      aesthetic:
+        'Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual discipline.',
+      form_and_line:
+        'Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained directional line cues.',
+      color_palette:
+        'Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.',
+      lighting_setup:
+        'Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow structure.',
+      material_texture:
+        'Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.',
+      render_quality:
+        'High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.',
+      spatial_distortion:
+        'Symmetric framing with gentle depth compression that turns space into a concentration mandala.',
+      atmosphere: 'Discipline, inward stillness, and ritual force contained before release.',
+      key_features:
+        'Circular discipline marks, deliberate stance transitions, moon-axis alignment, and measured quiet.',
+      creative_brief:
+        'Build a reusable moonlit ascetic discipline grammar for any subject: meditative symmetry, restrained line economy, circular motion cues, and moonlit discipline without imposing monks, blades, temples, courtyards, arenas, training marks, or martial scenes.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

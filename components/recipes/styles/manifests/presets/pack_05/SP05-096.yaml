@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Candy-neon fantasy grids, game logic theatrics, saturated competition, surreal confidence, disboard world rules, chess-piece territory, Shiro-Sora siblings, chibi-art shifts
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Strategic, dazzling, hyper, confident
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: Neon grids burn under a sky that never heard of moderation — color saturation pushed past the point of physics, game-board geometries bleeding into reality's floor plan. Strategy is spectacle; the chess piece lands and the world blooms in response. Reject the possible in favor of the dazzling, the excessive, the mathematically impossible made visually undeniable.
+  aesthetic: Hyper-saturated strategy fantasy, with candy-neon logic, theatrical confidence, impossible geometry, and gameboard reality.
+  form_and_line: Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical gesture rhythm.
+  color_palette: Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue.
+  lighting_setup: Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberately excessive bloom.
+  material_texture: Glossy cel polish, glassy game surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays.
+  render_quality: Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence.
+  spatial_distortion: Boardlike planes, impossible perspective folds, floating rule geometry, and controlled chibi-scale elasticity.
+  atmosphere: Strategic, dazzling, hyper, confident.
+  key_features: Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater, impossible polish.
+  creative_brief: >-
+    Convert any prompt into a dazzling strategy space: color should exceed
+    physics, geometry should imply rules, and every surface should feel like a
+    confident move without requiring literal game props, cast, or scene.
 avoidRules:
   - realistic
   - 3d render

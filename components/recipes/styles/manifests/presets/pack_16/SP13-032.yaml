@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-032
 packId: pack_16
-name: Crimson Moon Apparition
+name: Crimson Celestial Omen Style
 category: 5. Horror
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Folkloric celestial horror where lunar omen iconography dominates scale, silhouette, and emotional tonality.
+  aesthetic: Folkloric celestial horror where omen iconography dominates scale, silhouette, and emotional tonality.
   form_and_line: Thin spectral contours, elongated drapery vectors, and stark silhouette cutouts against high-contrast sky masses.
   color_palette: Saturated blood-crimson sky field, void-black landforms, chalk-ash highlights, and desaturated bone undertones.
-  lighting_setup: Strong backlit moon core with fog-driven edge bloom, keeping subjects semi-occluded and symbol-first.
+  lighting_setup: Strong backlit celestial core with fog-driven edge bloom, keeping subjects semi-occluded and symbol-first.
   material_texture: Vapor-heavy mist layers, brittle branch textures, weathered cloth translucency, and powder-dry ground surfaces.
   render_quality: High-impact mythic readability with deliberate shape economy and controlled atmospheric granulation.
   spatial_distortion: Vast negative-space composition where scale disproportion makes figures appear cosmically overruled.
   atmosphere: Omen fatalism, ancestral unease, and sacred fear under an indifferent sky.
-  key_features: Lunar disc dominance, suspended or hovering silhouettes, windless stillness, and barren horizon separators.
-  creative_brief: Build a transferable crimson-omen horror style by privileging giant celestial contrast, sparse silhouettes, and fatalistic scale-imbalance composition.
+  key_features: Celestial disc dominance, suspended silhouettes, windless stillness, and barren horizon separators.
+  creative_brief: >-
+    Build a transferable crimson-celestial-omen horror style for any subject:
+    giant celestial contrast, sparse silhouettes, fatalistic scale imbalance,
+    and symbol-first dread without imposing moons, apparitions, branches,
+    barren landforms, or hovering figures.
 avoidRules:
   - photoreal
   - cute-style

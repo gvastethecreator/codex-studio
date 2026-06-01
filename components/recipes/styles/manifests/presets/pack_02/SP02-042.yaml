@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Folded paper world
+  aesthetic: Folded paper animation
   form_and_line: Fold lines
   color_palette: Origami paper, washi tones, muted coral, indigo, rice white
   lighting_setup: Soft studio, gentle fill, paper-diffuse bounce
   material_texture: Paper grain, fold crease, fibrous edge, handmade pulp
   render_quality: Delicate, craft, handmade patience, precision folding
-  spatial_distortion: Low poly (paper), geometric faceting, folded terrain
-  atmosphere: Cute, handmade, storybook craft, gentle wonder
-  key_features: Folds, crease shadow, paper thickness, origami creature
-  creative_brief: Mountains crease into existence fold by deliberate fold, each ridge carrying the memory of the hand that pressed it flat. Light pools softly in the valley of every crease, revealing the fibrous soul of washi and rice paper. A whole world lifts off the tabletop, delicate enough to crush, brave enough to stand.
+  spatial_distortion: Low poly (paper), geometric faceting, crease-driven planes
+  atmosphere: Handmade, precise, storybook craft, gentle wonder
+  key_features: Folds, crease shadow, paper thickness, fibrous edge, handmade pulp
+  creative_brief: 'Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges, and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and careful craft.'
 avoidRules:
   - drawn
   - 3d

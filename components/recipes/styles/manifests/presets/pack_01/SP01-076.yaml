@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Crime scene evidence
-  form_and_line: Clinical, ruler scale
+  aesthetic: Forensic evidence documentation
+  form_and_line: Clinical scale logic
   color_palette: Neutral, flash
   lighting_setup: Flat flash
   material_texture: Detail focus
   render_quality: Objective, cold
   spatial_distortion: None
   atmosphere: Unsettling, factual
-  key_features: Evidence marker
-  creative_brief: Truth rendered in the merciless equality of flash, every surface stripped of mystery and poured into evidence. The camera becomes not an artist but a witness, its testimony inscribed in clinical flatness that refuses interpretation yet demands accounting.
+  key_features: Evidence-like markers
+  creative_brief: Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime scene, blood, ruler, or investigation props.
 avoidRules:
   - artistic
   - emotional

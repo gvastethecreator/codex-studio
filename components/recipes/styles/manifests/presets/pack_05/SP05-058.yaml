@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-058
 packId: pack_05
-name: Spider-Mech War Drama
+name: Remote Conflict Grief Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Military walkers, cold command screens, trench-like emotions, modern war grief, spider-tank locomotion, comms headset grit, child-soldier trauma, armored ballistics
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
-  atmosphere: Tragic, disciplined, somber, militaristic
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Legs of steel carry children toward graves they are too young to understand. Command screens glow cold blue on faces that should still be watching cartoons. The spider-tank walks not on ground but on the fragile membrane between innocence and annihilation.
+  aesthetic: Remote conflict grief, cold command logic, adolescent vulnerability under systems pressure, and disciplined tragedy.
+  form_and_line: Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained faces, and precise formation spacing.
+  color_palette: Ash gray, military olive, cold screen blue, muted rust, black graphite, and restrained red warning accents.
+  lighting_setup: Cold monitor glow, smoke-softened daylight, minimal rim light, command-screen blue wash, and low-contrast grief shadows.
+  material_texture: Matte plating, fabric grit, dusty optics, chipped edge paint, worn interface glass, and dry particulate haze.
+  render_quality: Premium tactical anime rendering with sober clarity, controlled detail density, and emotional restraint under pressure.
+  spatial_distortion: Remote-control framing, compressed command depth, map-like overlays, and emotional distance between subject layers.
+  atmosphere: Tragic, disciplined, somber, remote
+  key_features: Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained emotional damage.
+  creative_brief: >-
+    Apply remote conflict grief as a reusable style treatment: make any subject
+    feel controlled from afar, disciplined, young, and emotionally burdened while
+    staying abstract, portable, and detached from fixed transport forms, roles,
+    rooms, props, or conflict scenes.
 avoidRules:
   - realistic
   - 3d render
