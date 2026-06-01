@@ -12,34 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Aventura industrial-humanista con ensamble coral, ingeniería práctica y emocionalidad familiar entre humor y duelo.
-  form_and_line: Contorno limpio y seguro, balance rostro-máquina y linework expresivo funcional.
+  aesthetic: Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar entre humor y duelo.
+  form_and_line: Contorno limpio y seguro, balance entre rostro y máquina, y linework expresivo funcional.
   color_palette: Steel blue, workwear brown, ember orange, cream, engine red, soot grey
-  lighting_setup: Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible en acción.
-  material_texture: Grasa mecánica, telas de trabajo, madera de taller, metal empolvado y cuero marcado por uso.
+  lighting_setup: Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible.
+  material_texture: Grasa mecánica, telas de trabajo, madera usada, metal empolvado y cuero marcado por uso.
   render_quality: Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.
-  spatial_distortion: Strong readable anatomy, ensemble-balanced composition, practical action depth, robust physical posing
+  spatial_distortion: Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical posing
   atmosphere: Cálida y fuerte, con pragmatismo emocional de equipo.
-  key_features: Detalle mecánico legible, química de ensamble, gestos family-coded y oscilación tonal humor-duelo.
+  key_features: Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.
   creative_brief: >-
     Construye una gramática reusable de mechanical-warmth donde oficio técnico,
-    vínculo humano y puesta en escena de grupo funcionen como un mismo motor
-    visual.
+    vínculo humano y coralidad funcionen como motor visual sin exigir taller,
+    grupo, familia, prótesis, vehículo o escena de acción.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - sterile machine render
+  - cold villainous armor
+  - glossy sci-fi UI
+  - isolated product shot
+  - flat generic workshop
+  - weak mechanical detail
+  - cynical grimdark tone
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-341.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

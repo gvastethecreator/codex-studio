@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Vignette
   atmosphere: Memory, retro
   key_features: Square crop
-  creative_brief: A recollection still damp from the chemistry, edges darkening toward a frame within a frame. Colors retreat into themselves, leaving behind the ghost of a moment too fleeting to name. The flash caught what the eye forgot, and now it waits in a shoebox, stubbornly present.
+  creative_brief: 'A recollection still damp from instant chemistry: square crop, milky color shift, flash falloff, vignetted edges, and uneven chemical spread marks. Any subject becomes an object of immediate memory, casual and imperfect, without needing party faces or domestic nostalgia.'
 avoidRules:
   - illustration
   - painting

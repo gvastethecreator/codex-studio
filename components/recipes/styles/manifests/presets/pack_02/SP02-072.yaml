@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Period drama
+  aesthetic: Candlelit pre-electric warmth
   form_and_line: None
   color_palette: Warm Orange, amber flame, honey glow, deep umber falloff
   lighting_setup: Flickering low, single-candle key, flame dance, warm underlight
   material_texture: Soft shadows, gentle roll-off, intimate darkness
-  render_quality: Intimate, old, pre-electric warmth, historical authenticity
+  render_quality: Intimate, old, pre-electric warmth, flame-source authenticity
   spatial_distortion: None
-  atmosphere: Romantic, secret, whispered conspiracy, flickering intimacy
-  key_features: Bottom up light, flame flicker, glowing hand, wax drip
-  creative_brief: A single flame becomes the axis of a world, its tremulous orange breath pushing back a darkness that seems alive and watching. Faces lean into the glow from below, shadows climbing upward like ivy, and every flicker writes a new chapter of intimacy across the room.
+  atmosphere: Romantic, secret, flickering intimacy, warm darkness
+  key_features: Low warm key, flame flicker, amber falloff, moving shadow edge
+  creative_brief: 'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting.'
 avoidRules:
   - electric light
 assets:

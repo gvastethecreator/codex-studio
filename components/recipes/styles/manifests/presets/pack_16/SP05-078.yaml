@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-078
 packId: pack_16
-name: Akira – Katsuhiro Otomo Light-Trail Mega-City
+name: Otomo Light-Trail Collapse Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Cyber-apocalipsis megalopolitano de precisión mecánica, violencia juvenil y catástrofe psíquica en escalada.
-  form_and_line: Línea ultra-densa de ingeniería urbana, movimiento vehicular feroz y anatomía al borde de mutación.
+  aesthetic: Cyber-apocalipsis de precisión mecánica, violencia juvenil abstracta y catástrofe psíquica en escalada.
+  form_and_line: Línea ultra-densa de ingeniería, movimiento cinético feroz y anatomía al borde de mutación.
   color_palette: Rojos de alarma, violetas nocturnos, cian eléctrico y negros profundos de infraestructura colapsada.
   lighting_setup: Neón agresivo, luces de emergencia intermitentes y contraste duro de distopía industrial.
-  material_texture: Metal remachado, asfalto caliente, concreto fracturado y grano de cel hiperdetallado.
+  material_texture: Metal remachado, superficie caliente, concreto fracturado y grano de cel hiperdetallado.
   render_quality: Acabado de largometraje técnico de altísima energía con legibilidad de caos sistémico.
-  spatial_distortion: Escala de megaurbe con capas de autopista, estadio y vacío institucional para sensación de implosión.
+  spatial_distortion: Escala macro con capas infraestructurales y vacío institucional para sensación de implosión.
   atmosphere: Monumental, eléctrica, apocalíptica, cinética.
-  key_features: Estela lumínica icónica, ingeniería urbana obsesiva y tensión entre tecnología cívica y ruptura biológica.
-  creative_brief: Diseña una gramática reusable de colapso cyber-urbano extremo para cualquier sujeto, priorizando densidad mecánica, aceleración social y horror de transformación.
+  key_features: Estela lumínica icónica, ingeniería obsesiva y tensión entre tecnología cívica y ruptura biológica.
+  creative_brief: Diseña una gramática reusable de colapso cyber-mecánico extremo para cualquier sujeto, priorizando densidad, aceleración social y horror de transformación sin imponer megaciudad, vehículos, autopistas ni estadios.
 avoidRules:
   - realistic
   - 3d render

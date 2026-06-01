@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-121
+packId: pack_02
+name: Analog Sitcom Multicam
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: 90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth
+  form_and_line: Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition
+  color_palette: Warm tungsten beige, set-paint teal, faded sofa red, carpet brown, broadcast-safe primaries
+  lighting_setup: Three-wall studio wash, even overhead fill, practical lamp accents, no noir contrast
+  material_texture: BetaSP softness, mild chroma bleed, interlaced tape edge, set-fabric texture
+  render_quality: Soft TV comedy polish, multicam readability, low-depth broadcast clarity
+  spatial_distortion: Slight telephoto compression, stage-front perspective, camera-switch composition
+  atmosphere: Cozy, artificial, rehearsed, broadly comic
+  key_features: Studio wash, tape softness, interlace, stage blocking, laugh-track pause spacing
+  creative_brief: 'Apply analog multicam sitcom grammar to any prompt: broad readable staging, warm studio wash, tape-soft edges, mild chroma bleed, and camera-switch composition. Avoid requiring apartments, sofas, actors, or specific sitcom props. The image should feel built for broadcast timing and audience visibility.'
+avoidRules:
+  - cinematic noir
+  - handheld realism
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-121.webp
+attributes:
+  negativePrompt: cinematic noir, handheld realism
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

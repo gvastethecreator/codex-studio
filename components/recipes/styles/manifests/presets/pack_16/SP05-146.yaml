@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-146
 packId: pack_16
-name: Black Butler - Velvet Servant Gothic
+name: Velvet Covenant Gothic Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Gothic aristocrático ceremonial con amenaza contenida, lujo doméstico y teatralidad de pacto oculto.
-  form_and_line: Silueta de mayordomo impecable, línea decorativa de interior y acting de protocolo frío y exacto.
-  color_palette: Negros ébano, burdeos profundos, ámbar de vela y plateados especulares de servicio.
-  lighting_setup: Piscinas de luz candlelit, gradiente low-key de mansión y destello metálico de cubertería ritual.
-  material_texture: Terciopelo, madera lacada, plata pulida y pliegue textil nítido con acabado digital sobrio.
-  render_quality: Refinamiento premium 2000s con alta legibilidad de vestuario y atmósfera de opulencia sin exceso.
-  spatial_distortion: Composición de cámara-salón con distancia amo-servidor y verticalidad elegante de escena teatral.
+  aesthetic: Gótico aristocrático ceremonial con amenaza contenida, lujo oscuro y teatralidad de pacto oculto.
+  form_and_line: Silueta impecable, línea decorativa precisa y acting de protocolo frío y exacto.
+  color_palette: Negros ébano, burdeos profundos, ámbar de vela y plateados especulares de ceremonia.
+  lighting_setup: Piscinas de luz candlelit, gradiente low-key de opulencia y destello metálico ritual.
+  material_texture: Terciopelo, laca oscura, plata pulida y pliegue textil nítido con acabado digital sobrio.
+  render_quality: Refinamiento premium 2000s con alta legibilidad de silueta y atmósfera de opulencia sin exceso.
+  spatial_distortion: Composición ceremonial con distancia jerárquica y verticalidad elegante de teatro abstracto.
   atmosphere: Elegante, siniestra, controlada, decadente.
-  key_features: Gramática tailcoat y encaje, interiores góticos iluminados a vela y utilería de servicio ritual impecable.
-  creative_brief: Construye una gramática reusable de amenaza aristocrática gótica para cualquier sujeto, manteniendo precisión ceremonial y opulencia oscura.
+  key_features: Gramática de terciopelo y encaje, luz de vela gótica, metal ritual y precisión ceremonial impecable.
+  creative_brief: Construye una gramática reusable de amenaza aristocrática gótica para cualquier sujeto, manteniendo precisión ceremonial y opulencia oscura sin imponer mansiones, sirvientes, cubertería ni pactos literales.
 avoidRules:
   - realistic
   - 3d render

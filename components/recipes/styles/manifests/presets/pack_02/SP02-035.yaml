@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Elastic golden-age studio cartoon, Bugs Bunny physics, painted backgrounds, anvil comedy
+  aesthetic: Elastic golden-age studio cartoon, Chuck Jones timing, painted backgrounds, graphic slapstick energy
   form_and_line: Thick black
   color_palette: Flat, primary pop, canary yellow, ACME red, sky cel blue
   lighting_setup: None, flat cel color, no shading, graphic clarity
   material_texture: Cel, painted acetate, glossy finish, gouache background
   render_quality: Zany, fast, breakneck timing, held-smear blur
   spatial_distortion: Extreme squash/stretch, full-body deformation, eye-pop take
-  atmosphere: Funny, violent, anarchic slapstick, coyote resilience
-  key_features: Abstract background, painted backdrop, pencil-test energy
-  creative_brief: Gravity is merely a suggestion here, revoked at will by coyotes, rabbits, and the architecture that betrays them. Paint liberates itself from realism, splashing across backgrounds in bold, graphic defiance. The only law is the gag — and the gag must always, gloriously, detonate.
+  atmosphere: Funny, anarchic, elastic, gag-driven
+  key_features: Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette
+  creative_brief: 'Apply golden-age cartoon grammar to any input: flat cel color, thick confident outline, held-smear motion, exaggerated squash-stretch, and painted backdrops simplified for comic impact. Do not require specific props, creatures, or set pieces; the value is timing, deformation, and graphic clarity. Reality should bend toward the gag through shape, pose, and rhythm.'
 avoidRules:
   - realistic
 assets:

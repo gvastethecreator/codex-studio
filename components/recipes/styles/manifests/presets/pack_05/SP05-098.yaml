@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Friendly creatures, city-building optimism, polished fantasy diversity, bright world design, rimuru-slime form, tempest-nation founding, goblin-village evolution, monster-diplomacy
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Upbeat, communal, optimistic, vibrant
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: A gelatinous creature builds a civilization in the space between monster and diplomat, between dungeon-born and nation-founder. Brightness is the aesthetic of optimism — every new alliance painted in sun-washed color, every village upgrade a brushstroke of collective hope. Make the world feel like it's constantly becoming, always under construction, forever improving.
+  aesthetic: Monster-nation bright fantasy, with diplomatic optimism, polished diversity, cooperative growth, and sun-washed worldbuilding.
+  form_and_line: Rounded approachable contours, clean fantasy trims, civic pattern rhythm, soft power silhouettes, and modular growth shapes.
+  color_palette: Slime blue, spring green, warm gold, soft stone gray, sky cyan, and celebratory banner reds.
+  lighting_setup: Friendly daylight, optimistic rim glow, sparkling civic highlights, and gentle magical bounce.
+  material_texture: Glossy gel accents, clean timber grain, polished stone, cloth banners, soft particles, and bright settlement polish.
+  render_quality: Upbeat fantasy anime finish with high readability, communal detail, and constantly improving world texture.
+  spatial_distortion: Expanding modular composition, cooperative scale layering, and open civic depth without fixed architecture.
+  atmosphere: Upbeat, communal, optimistic, vibrant.
+  key_features: Cooperative brightness, civic fantasy polish, friendly diversity, growth motifs, diplomatic warmth.
+  creative_brief: >-
+    Make any prompt feel like optimistic fantasy nation-building: emphasize
+    cooperative brightness, rounded friendliness, and constructive growth
+    without requiring a specific species, settlement, alliance, or ruler.
 avoidRules:
   - realistic
   - 3d render

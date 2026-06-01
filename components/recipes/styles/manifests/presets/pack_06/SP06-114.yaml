@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-114
 packId: pack_06
-name: Anime Gacha Card Frame
+name: Anime Gacha Foil Frame
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Anime gacha-card visual style with iridescent foil borders, rarity glow, and polished collectible spectacle.
+  subject_treatment: Stage any subject as a premium collectible centerpiece with clean anime contours and rarity-coded emphasis.
+  color_and_tone: Pastel jewel gradients, gold/opal foil accents, prismatic highlights, and high-key magical contrast.
+  lighting_and_shadow: Sparkle bloom, rim halos, layered glow bursts, and glossy card-surface reflections.
+  texture_and_material: Holographic foil grain, embossed frame detail, soft star particles, and smooth digital anime finish.
+  camera_and_composition: Vertical card-like framing, ornate border hierarchy, central focus window, and balanced negative space.
+  atmosphere_and_mood: Desirable, premium, celebratory mood without requiring characters, card text, stats, weapons, or mascots.
+  rendering_and_quality: Clean collectible asset polish, no readable typography, no cluttered UI, controlled sparkle density.
 avoidRules:
   - watermark
   - text
+  - readable stats
+  - character requirement
+  - weapon requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-114.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, readable stats, character requirement, weapon requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

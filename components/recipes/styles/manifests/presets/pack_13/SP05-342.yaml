@@ -12,34 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Realismo urbano pulido quebrado por memoria, performance e identidad inestable entre reflejos y pantallas.
+  aesthetic: Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos, pantallas y cortes perceptivos.
   form_and_line: Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.
-  color_palette: Cool steel, skin peach, screen blue, lipstick crimson, hallway beige, shadow plum
-  lighting_setup: Iluminación práctica reflectiva, spill de monitor, spot de camerino y sombras de suspense de superficie limpia.
-  material_texture: Reflexos en vidrio, brillo cosmético, barniz de pasillo y glow de escaneo electrónico.
+  color_palette: Cool steel, skin peach, screen blue, lipstick crimson, neutral beige, shadow plum
+  lighting_setup: Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de superficie limpia.
+  material_texture: Reflejos en vidrio, brillo cosmético, barniz pulido y glow de escaneo electrónico.
   render_quality: Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas perceptivas.
-  spatial_distortion: Reality-slip match cuts, reflection-depth confusion, poised adult anatomy, cinematic frame logic with subtle breakage
+  spatial_distortion: Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic frame logic with subtle breakage
   atmosphere: Inquietante y sofisticada, de tensión mental bajo control aparente.
-  key_features: Espejos, pantallas, espacios adultos urbanos y transiciones de reality-slip en continuidad ilusoria.
+  key_features: Espejos, pantallas, espacios adultos pulidos y transiciones de reality-slip en continuidad ilusoria.
   creative_brief: >-
     Define una gramática reusable de mirror-reality-slip donde reflejo, corte
-    perceptivo y espacio urbano pulido construyan fractura identitaria sin
-    necesidad de horror explícito.
+    perceptivo y espacio pulido construyan fractura identitaria sin exigir
+    hallway, ciudad, pantalla, espejo literal o protagonista humano.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - blunt horror gore
+  - chaotic dream collage
+  - flat sitcom framing
+  - cartoon chibi acting
+  - muddy low-detail realism
+  - fantasy ornament clutter
+  - obvious literal symbolism
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-342.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

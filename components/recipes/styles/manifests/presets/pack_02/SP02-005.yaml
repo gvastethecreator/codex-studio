@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Jump-cut nouvelle vague street cinema, Godard film energy, Paris streets, natural light rebellion, existential cool
+  aesthetic: Jump-cut nouvelle vague cinema, Godard film energy, natural light rebellion, existential cool
   form_and_line: None
   color_palette: Black and White high contrast, gritty grey, silver halide
   lighting_setup: Natural light, available window, street-level ambience
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Handheld, raw, unpolished vérité, rebellious imperfection
   spatial_distortion: Jump cut feel, temporal rupture, axis-breaking edit
   atmosphere: Cool, intellectual, existential, restless
-  key_features: Natural, location shooting, cigarette smoke
-  creative_brief: The camera shrugs off polish and wanders Paris streets like a restless flâneur, capturing glances that last a beat too long and silences that say more than dialogue. Light spills through apartment windows as if it too is merely passing through, uninvited but welcome.
+  key_features: Natural light, handheld rupture, location immediacy
+  creative_brief: 'French New Wave style rejects polish through handheld framing, available light, 16mm grain, jump-cut rupture, and casual location immediacy. Apply rebellious cinematic looseness to any subject without requiring Paris, street scenes, cigarettes, apartments, or dialogue.'
 avoidRules:
   - studio lighting
   - stable

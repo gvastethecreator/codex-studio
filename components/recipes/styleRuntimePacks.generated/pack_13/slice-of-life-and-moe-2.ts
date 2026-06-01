@@ -11,24 +11,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Kyoto Animation moe, soft lighting, detailed instruments, squishy faces, school-club music warmth, soft instruments, gentle comedy, comforting youthfulness, afternoon-tea band, cake-and-practice, Les Paul guitar, Sakuragaoka High',
+        'KyoAni-inspired cozy moe language centered on post-effort warmth, soft ensemble intimacy, and affectionate daily-life rhythm',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Rounded soft contours with subtle facial elasticity, clean low-noise line weight, and composition tuned to shared attention rather than fixed props',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Creamy beiges, warm butter yellows, mint-soft accents, tea-toned browns, and low-saturation pastel support hues',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Late-afternoon warmth, ambient practical fill, diffuse bounce softness, and low-contrast highlight rolloff',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Polished wood warmth, soft cloth folds, ceramic matte-gloss contrast, and lived-in surface wear kept gentle',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Comfort-forward slice-of-life anime rendering with polished softness, stable expression readability, and premium cozy tonal control',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Relaxed, cheerful, warmhearted, cozy',
+        'Compact intimate framing with mild cute-proportion stylization and balanced shared-focus staging',
+      atmosphere: 'Warm, friendly, relaxed, and musically affectionate',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Gentle expression rhythm, warm shared-focus cues, tea-toned domesticity, and relaxed ensemble familiarity',
       creative_brief:
-        'Afternoon light pools on a music-room floor where tea has gone cold and a guitar string still hums with unfinished melody. Friendship is the real instrument here, tuned to the frequency of shared laughter and clumsy chord progressions. Wrap the frame in the warmth of a sunlit nap you never want to wake from.',
+        'Use the title as a style anchor for cozy ensemble moe. Transfer the warmth, soft polish, and friendship-driven micro-acting to any subject without requiring instruments, clubrooms, uniforms, or practice scenes.',
     },
   },
   {
@@ -39,24 +39,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Shopping-street community coziness, mochi-shop sweetness, cheerful signage, festival intimacy, Kyoto warmth, low-stakes affection and local routine charm',
+        'Community-coziness anime language with confectionery softness, cheerful local rhythm, festival intimacy, and low-stakes affection',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Rounded silhouette clusters, signage-friendly contour rhythm, and ensemble blocking tuned for neighborhood familiarity',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Mochi-cream whites, warm cedar browns, festival reds, mint paper signage accents, and evening amber shoplight',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Lantern-like strings, warm tungsten spill, and soft overcast daylight transitions across local rhythm',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Powdery matte softness, wooden grain, woven fabric, paper fibers, and polished display highlights',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Community-market slice rendering with cozy commerce detail and festive readability',
+      spatial_distortion: 'Corridor-like depth curvature emphasizing intimate local scale',
       atmosphere: 'Cheerful, neighborhood-soft, tasty, warm',
       key_features:
-        'Shopping-street props, food-stall detail, community ensemble staging, festival banners, cozy storefront lighting',
+        'Community ensemble staging, food-craft texture cues, festive paper accents, cozy warm lighting, and local routine charm',
       creative_brief:
-        'A shopping arcade hums with the rhythm of familiar faces and freshly steamed mochi. Festival bunting catches the breeze above a storefront where every transaction is a small act of belonging. The street holds its warmth like a shared secret, passed between neighbors who need no words.',
+        'Use the title as a style anchor for mochi-street warmth. Transfer local community rhythm, food-craft softness, and festive intimacy to any subject without requiring market streets, storefronts, or food stalls.',
     },
   },
   {
@@ -67,24 +66,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'DIY school-club softness, tactile wood and cloth, earnest beginner craftsmanship, warm afternoons, friendship built one handmade object at a time',
+        'DIY softness where tactile material process, earnest beginner imperfection, warm afternoons, and friendship build through making',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Tool-and-material contour clarity, handmade imperfection cues, and cheerful workshop-like gesture arcs',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Sanded wood beiges, glue-white highlights, cloth pastels, soft mint accents, and amber afternoon window tones',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Side daylight, dust-mote backlight, and gentle practical fill on making surfaces',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Sawdust particulate, unfinished timber grain, fabric scraps, adhesive sheen, and hand-painted craft surfaces',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Craft-club rendering with tactile object fidelity, beginner warmth, and process-over-polish readability',
+      spatial_distortion: 'Process-focused framing that magnifies handmade object presence',
       atmosphere: 'Crafty, sweet, tactile, optimistic',
       key_features:
-        'Tools and craft materials, workshop sunlight, beginner-made textures, friend-group posing, handmade object focus',
+        'Craft-material clarity, warm process light, beginner-made textures, collaborative posing, and handmade focus',
       creative_brief:
-        'Sawdust drifts like slow confetti through the clubroom window-light, settling on half-finished shelves and the shoulders of friends who measure twice and laugh three times. Wood remembers every splinter, cloth holds every crooked stitch, and the thing you build with your own hands carries the warmth of everyone who helped hold it steady.',
+        'Use the title as a style anchor for handmade craft glow. Preserve tactile material process, visible making, and collaborative optimism without requiring school club, workshop, tools, or specific objects.',
     },
   },
   {
@@ -95,24 +93,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Outdoor cooking, layered blankets, serene landscapes, practical cozy details, camping-gear accuracy, Mount Fuji views, curry-noodle scenes, pine-cone fire starters',
+        'Outdoor-comfort anime language emphasizing practical intimacy, cold-warm contrast, and contemplative companionship',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Relaxed rounded contouring with utilitarian readability, layered comfort silhouettes, and small-task micro-gesture clarity',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Cool mountain blues and pine greens balanced by firelit oranges, wool neutrals, and muted earthy accents',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Warm thermal key with cool ambient fill, ember-like micro-highlights, and gentle steam-lit edge separation',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Brushed textiles, enamel-like sheen, rough natural grain, thermal breath haze, and lightweight fabric diffusion',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Cozy high-clarity camp slice render with tactile gear detail, slow pacing tone, and comfort-forward atmospheric balance',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Peaceful, cozy, comforting, serene',
+        'Grounded natural-space framing with intimate foreground warmth and serene background depth',
+      atmosphere: 'Serene, restorative, practical, and warmly introspective',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Thermal comfort anchors, practical-use cues, cold-vs-warm tonal dialogue, and quiet companionship cues',
       creative_brief:
-        'A campfire is a small sun you can sit beside — its warmth rewrites the cold geometry of a mountain night into the soft algebra of comfort. Steam rises from a cup of curry noodles while Fuji watches silently, ancient and indifferent to human scale. Build the image like a blanket fort: layers of warmth, pockets of quiet, stitching of gentle light.',
+        'Use the title as a style anchor for restorative outdoor warmth. Keep practical intimacy, cold-warm dialogue, and unhurried pacing without requiring campfire, food, tents, or camping props.',
     },
   },
   {
@@ -123,24 +121,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Production-desk realism, scooters and keyframes, team stress turned camaraderie, office coffee and deadline boards, professional slice-of-life with hopeful momentum',
+        'Production-workday slice language where task density, team stress, camaraderie, and professional hope create momentum',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Workflow-clutter compositional rhythm, storyboard-like panel geometry accents, and ensemble body-language clarity',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Fluorescent office neutrals, sticky-note yellows, monitor blues, coffee browns, and commuter-scooter accent reds',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Mixed fluorescent top-light, cool screen glow spill, late-night lamp pools, and gray overtime ambience',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Paper stacks, tablet plastics, corkboard fibers, condensation details, and worn work-surface texture',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Workplace-production rendering with high task-readability and energetic team-chaos coherence',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Deadline-pressure framing through tight depth stacking and motion-led workflow cuts',
       atmosphere: 'Busy, collaborative, stressed, upbeat',
       key_features:
-        'Desk clutter, storyboards, production checklists, team ensemble acting, studio fluorescent warmth',
+        'Production-density clutter, storyboard geometry, checklist logic, team ensemble acting, and fluorescent workday warmth',
       creative_brief:
-        'Deadline boards glow fluorescent in a studio where caffeine and keyframes share the same desk. Five women chase the anime dream through spreadsheets and storyboards, discovering that the real production is the friendship assembled frame by frame. Art is not just what hangs on the screen — it is who you make it with.',
+        'Use the title as a style anchor for production workday cheer. Keep density, collaborative hustle, and hopeful professional camaraderie without requiring studios, scooters, desks, coffee, or keyframes.',
     },
   },
   {
@@ -151,24 +149,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Minimal school life transformed by a small motorbike, practical details, roadside sunlight, emotional expansion through ordinary movement and solitude',
+        'Super Cub title anchor translated into practical quietude, utilitarian independence, small-scale emotional expansion, and ordinary movement rendered with spare confidence',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Practical contour precision, restrained gesture linework, compact mechanical rhythm, and open-air compositional simplicity that can wrap any subject',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Matte black anchors, cold morning blues, subdued neutral fields, rubber-gray shadows, and occasional warm sunset accents',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Clear daylight restraint, overcast commuting softness, sparse golden-hour rim light, and low-drama highlights on functional surfaces',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Matte metal, rubber grain, worn vinyl, asphalt-like grit, weathered utility surfaces, and wind-pressed fabric cues',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Minimal mechanical-slice rendering with quiet freedom tone, functional fidelity, and calm emotional restraint',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Long-perspective taper and open negative space used as a freedom cue, not as a required road scene',
       atmosphere: 'Minimal, freeing, quiet, clean',
       key_features:
-        'Motorbike detail, roadside composition, practical school clothing, open-air framing, subtle emotional acting',
+        'Utilitarian silhouette discipline, sparse open-air framing, practical material detail, low-voice emotional expansion, subtle acting',
       creative_brief:
-        'A secondhand Honda carries a girl into the silence beyond town, where asphalt becomes meditation and engine drone replaces every word she never had. The world opens not with a roar but with the click of a kickstand and the decision to go somewhere, anywhere, alone and unafraid.',
+        'Use Super Cub as a style anchor for functional quietude: practical mechanical texture, spare open framing, and low-voice liberation should remain readable without requiring a bike, road, rider, or school setup.',
     },
   },
   {
@@ -179,24 +177,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fishing-by-the-river domestic healing, inherited hobbies, pastel water surfaces, practical tackle detail, soft family reconstruction through outdoor routine',
+        'Slow Loop title anchor translated into reflective hobby-healing, inherited routine, pastel calm, practical intimacy, and soft family reconstruction',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Gentle flow-line composition, loop-and-thread contour precision, close relational spacing, and careful hand-activity softness',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Water pastel blues, grassy greens, neutral outdoorwear tones, lure-bright accent sparks, and evening amber warmth',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Reflective daylight fill, cloud-soft sky diffusion, small practical highlights, and low-contrast warmth around shared routines',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Nylon-line sheen, cork-like grain, damp stone matte, layered knit clothing, and packed-lunch surface softness',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Pastoral-healing rendering with practical hobby fidelity, calm relational warmth, and quiet restorative pacing',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Gentle depth easing and looped visual paths used to support reflection, not to mandate water or fishing scenes',
       atmosphere: 'Pastoral, healing, quiet, tender',
       key_features:
-        'Fishing gear, riverside backdrops, sibling closeness, reflective water light, practical outdoor textures',
+        'Reflective hobby rhythm, practical line motifs, inherited-routine intimacy, soft outdoor textures, calm relational spacing',
       creative_brief:
-        'Two hands on one fishing rod, the line arcing into water that holds both fish and the memory of a father who taught them how to cast. The river does not rush — it waits, like grief, like healing, like a sister learning to fill the silence with fly-tying and small inherited rituals. Every catch is also a release.',
+        'Use Slow Loop as a style anchor for practical healing through routine: reflective calm, inherited hobby intimacy, and line-loop visual motifs should transfer without requiring fishing gear, riverside backdrops, or siblings.',
     },
   },
   {
@@ -207,24 +205,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cold-weather camping coziness, puffy jackets, enamel mugs, practical gear, quiet friendship through warm food and starry nights, tactile outdoor comfort',
+        'Laid-Back Camp title anchor translated into cold-weather coziness, practical comfort, quiet friendship, tactile warmth, and restorative outdoor calm',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Practical silhouette clarity, bundled contour shapes, circular warmth-flow composition, and compact comfort against open cold space',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Winter blues, pine greens, stove-orange warmth, canvas neutrals, and star-night indigos',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Warm practical key-light, cold ambient fill, lantern-like accent points, and crisp dawn diffusion',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Nylon weave, quilted padding, enamel gloss, worn metal, frosted ground detail, and insulated fabric softness',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Cozy cold-weather rendering with practical fidelity, restorative social calm, and tactile comfort emphasis',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Circular framing compression that concentrates shared warmth without forcing camp gear or flame as subject matter',
       atmosphere: 'Cozy, crisp, friendly, restorative',
       key_features:
-        'Camp gear realism, stove warmth, starry-night campsites, bundled silhouettes, food-and-flame intimacy',
+        'Cold-warm contrast, practical comfort textures, bundled silhouettes, shared warmth pockets, crisp restorative atmosphere',
       creative_brief:
-        'A camp stove throws orange light against the winter dark, warming hands and ramen and the quiet joy of being exactly where you chose to be. Puffy jackets and enamel mugs become the material poetry of outdoor solitude, each piece of gear a vote for comfort over convenience. The stars do not need to be shared — but it helps.',
+        'Use Laid-Back Camp as a style anchor for cold-warm comfort: practical texture, bundled softness, and quiet friendship warmth should transfer without requiring a campsite, stove, tent, food, or flame scene.',
     },
   },
   {
@@ -235,24 +233,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Student creativity exploding into rough production fantasies, sketchbook engines, hand-built worlds, clubroom zeal, imagination visualized with practical design obsession',
+        'Eizouken title anchor translated into rough production imagination, hand-built world logic, design obsession, and practical creativity exploding into motion',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Rough concept-line dynamism, annotated sketch overlays, mechanical doodle contour density, and high-energy design blocking',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Pencil graphite neutrals, marker accent reds and yellows, craft-paper tans, and occasional neon idea highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Harsh fluorescent practicality plus fantasy-cutaway spot accents to separate imagination layers',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Draft paper fibers, taped model surfaces, marker bleed edges, cardboard mockup tactility, and scuffed utility-floor grit',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Hyper-creative preproduction rendering with raw ideation texture and kinetic invention readability',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Imagination-over-reality perspective shifts with abrupt scale jumps, sketch-space expansion, and schematic cutaway logic',
       atmosphere: 'Inventive, spirited, nerdy, kinetic',
       key_features:
-        'Sketch overlays, invention poses, clubroom clutter, production imagination sequences, rough-draft visual energy',
+        'Sketch overlays, invention poses, production-imagination layers, annotated build energy, rough-draft visual momentum',
       creative_brief:
-        'A sketch transforms mid-page from doodle to world — dams burst, cities fly, and three girls in a flooded clubroom invent visual language from scratch paper and obsession. Imagination here has mass and velocity, rough storyboards carrying the weight of entire universes. The best special effect is the spark in an animator eye.',
+        'Use Keep Your Hands Off Eizouken! as a style anchor for rough ideation: annotation overlays, build-from-scratch energy, and concept-art momentum should remain coherent without requiring students, clubrooms, or sketchbook props.',
     },
   },
   {
@@ -263,24 +261,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ordinary classrooms detonated by absurd punchlines, elastic reactions, crisp timing, deer-vs-principal wrestling, robot-girl Nano, explosion-cut reaction, go-soccer rule',
+        'Nichijou-like absurd comedy language where mundane calm snaps into explosive surreal punchline energy and elastic reaction theatrics',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Fast-switch line elasticity, sudden exaggeration bursts, readable gag-staging silhouettes, and timing-aware pose breakpoints for comedic snap',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Bright daily-life pastels with occasional high-saturation gag spikes, neutral soft bases, and contrast pops to emphasize punchline beats',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Flat-readable daily lighting baseline with abrupt highlight emphasis at gag apex frames and minimal cinematic shadow complexity',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Simplified everyday textures kept secondary to expression motion, with selective detail boosts only where timing needs focus',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'High-clarity comedic anime rendering optimized for timing readability, reaction elasticity, and absurd-to-normal tonal pivots',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Absurd, bright, hilarious, energetic',
+        'Controlled reality warps and perspective exaggerations used rhythmically to land comedic escalation without losing subject legibility',
+      atmosphere: 'Chaotic, witty, absurd, and hyper-energetic',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Elastic reaction faces, deadpan-to-explosive timing contrast, ordinary-to-absurd pivots, and visual punchline clarity',
       creative_brief:
-        'The mundane is a thin membrane stretched over a universe of glorious nonsense — a deer wrestles a principal, a robot girl orders coffee, a soccer ball becomes existential crisis. Elastic faces stretch reality to its breaking point before snapping back with impeccable comic timing. Calm surfaces conceal the absurd hurricane always one frame away.',
+        'Use the title as a style anchor for absurd timing. Keep sudden elasticity spikes, deadpan contrast, and punchline clarity, but let any subject carry the comedy without requiring school or classroom setup.',
     },
   },
   {
@@ -291,24 +289,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pop-culture banter, flat-color rooms, seated comedy rhythm, easygoing social energy, chocolate-corner, anime reference gags, blue-hair Konata, seasonal festival episodes',
+        'Otaku-chat slice anime language with laid-back conversational comedy, flat-color comfort calm, and social micro-rhythm focus',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Relaxed everyday contouring, stable conversational composition, expression-over-action line prioritization, and low-drama gesture pacing',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Gentle indoor pastels, beige and cream neutrals, mint accents, snack-toned warm highlights, and balanced low-contrast skin hues',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Soft ambient fill, mild daylight wash, minimal dramatic shadowing, and steady tonal consistency for dialogue-led moments',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Simple flat surfaces, soft textile cues, low-noise small details, and unobtrusive environmental support',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Dialogue-forward anime rendering with crisp facial readability, consistent low-key polish, and comfortable episodic pacing tone',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Casual, nerdy, laid-back, witty',
+        'Stable conversational framing with mild cute stylization and clear line-of-sight readability',
+      atmosphere: 'Casual, nerdy, witty, and comfortable',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Conversation-circle composition, tiny banter anchors, expression-timing subtlety, and relaxed social energy continuity',
       creative_brief:
-        'Conversation drifts like afternoon clouds across a classroom table, bouncing from chocolate snacks to mecha anime to the existential weight of which end of the cornet to eat first. Nothing happens and everything happens in the sacred rhythm of friends killing time together. The frame breathes easy, unhurried, content.',
+        'Use the title as a style anchor for otaku-chat slice rhythm. Prioritize dialogue-first staging, low-contrast calm, and personality micro-acting without requiring seated groups, snacks, classrooms, or living rooms.',
     },
   },
   {
@@ -319,24 +317,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cheerful school life cracking open into weird cosmology, bright performance energy, SOS-brigade clubroom, god-complex narrator, bunny-suit publicity, closed-space entities',
+        'Slice-of-life sci-fi whimsy where ordinary warmth coexists with latent cosmic instability and playful meta-chaos',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Everyday anime line softness punctuated by occasional uncanny geometry accents, energetic silhouette spikes, and ensemble reaction framing',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Warm scholastic pastels, beige-neutral fields, ribbon-like accent colors, and selective uncanny cool highlights for reality-slippage cues',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Cozy ambient baseline with intermittent anomalous glow accents and subtle contrast lifts during uncanny beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Familiar paper, textile, and everyday textures with lightly abstracted atmospheric overlays for cosmic-adjacent moments',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Hybrid slice-of-life plus uncanny-sci-fi anime rendering with stable character readability and controlled tonal pivots between normal and strange',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Playful, uncanny, chaotic, meta',
+        'Mostly grounded perspective with occasional mild non-euclidean hinting to suggest adjacent closed-space oddity',
+      atmosphere: 'Playful, odd, meta-aware, and unpredictably charged',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Social staging, chaos cues, ordinary-to-cosmic contrast, and uncanny interruption rhythms',
       creative_brief:
-        "Ordinary school corridors bend into corridors of cosmic significance when a single girl's boredom can rewrite the fabric of reality. Bright-eyed chaos wears a ribbon and a smile, daring the universe to keep up. Make the extraordinary feel casually adjacent, like you might trip over a closed space on the way to lunch.",
+        'Use the title as a style anchor for whimsy-cosmos contrast. Keep ordinary slice-of-life warmth, sudden uncanny inflections, and ensemble reaction dynamics without requiring school, clubroom, or fixed props.',
     },
   },
   {
@@ -347,24 +345,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Slow countryside pacing, bright skies, tiny daily rituals, broad silence and warmth, rural-school one-room, countryside buses, ren-chon cuteness, cicada-summer sound',
+        'Rural-slow-life anime language with spacious pastoral quietude, nostalgic stillness, and micro-ritual everyday tenderness',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Gentle low-tension contouring, simplified childlike gesture silhouettes, open negative-space framing, and minimal dramatic pose pressure',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Sunlit summer greens, sky-soft blues, straw and earth beiges, warm wood tones, and mild pastel accents with low contrast',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Broad afternoon daylight wash, cicada-hour warmth, soft fill, and subtle ambient haze to emphasize still-air calm',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Weathered timber, dusty matte surfaces, grasslike movement cues, and light cotton softness',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Pastoral slice render with serene clarity, restrained detail cadence, and strong atmosphere-over-action prioritization',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Rural, calming, idyllic, nostalgic',
+        'Wide breathing compositions with gentle depth layering and abundant quiet-space around characters',
+      atmosphere: 'Idyllic, calm, nostalgic, and quietly playful',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Spacious stillness cues, seasonal ambient texture, tiny daily-action anchors, and low-pressure intimacy markers',
       creative_brief:
-        "Time flows at the speed of a countryside bus schedule — slow enough to count each cicada pulse, slow enough to notice the way sunlight moves across a single-floor schoolhouse. Smallness is not insignificance but intimacy; a child's handprints on a window are the day's only monument. Paint the air thick with the hush of summer afternoon.",
+        'Use the title as a style anchor for rural quietude. Preserve spacious pastoral breathing room, summer daylight softness, and tiny ritual focus without requiring school, road, bus stop, or fixed countryside scene.',
     },
   },
   {
@@ -375,24 +373,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Oversized eyes, glowing memories, tender tragedy, sentimental domestic framing, Key visual-novel style, dango-daikazoku, cherry-blossom path, starfish carving',
+        'Soft-eyed melodramatic anime language with visual-novel sentimentality, memory emphasis, and bittersweet emotional resonance',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Rounded tender contours, large eye-emotion focus, gentle hand-gesture acting, and close relational framing with minimal kinetic aggression',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Warm cream and peach neutrals, cherry-blossom pink accents, soft dusk violets, and muted nostalgia-washed highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Diffuse memory-like glow, soft practical warmth, gentle backlight halos, and low-contrast shadow treatment for emotional softness',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Soft textiles, polished warm traces, delicate floral particulate overlays, and slightly hazed atmosphere suggestive of recollection',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Tearful high-clarity drama render with refined softness, expressive close-up fidelity, and cohesive sentimental grading',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Emotional, nostalgic, tearful, tender',
+        'Intimate close-to-medium framing with shallow depth and mild dreamy softness around emotional focal points',
+      atmosphere: 'Tender, nostalgic, sorrowful, and affectionate',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Soft-focus emotional closeups, memory-coded lighting, nostalgia cues, and blossom-like ephemeral accent motifs',
       creative_brief:
-        'Tears are stored behind enormous eyes like reservoirs behind glass — every glance is a memory waiting to spill, every cherry blossom a promise already falling. Domestic spaces become shrines to the people who made them warm, and light behaves like a gentle ghost of the happiness that once lived here. Let sorrow and sweetness share the same soft-focus frame.',
+        'Use the title as a style anchor for soft-eyed melodrama. Preserve memory-washed lighting, emotion-first framing, and bittersweet tenderness without requiring domestic props or fixed romance scene.',
     },
   },
   {
@@ -403,24 +401,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Quiet school mysteries, careful eye animation, old clubrooms, books and tea, low-drama deduction made beautiful through light and stillness, curiosity carrying the frame',
+        'Quiet mystery anime language where low-drama deduction becomes beautiful through light, stillness, and curiosity carrying the frame',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Deliberate observational line economy, eye-acting emphasis, and tidy contour hierarchy that supports deduction readability',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Tea amber, worn-paper cream, polished wood browns, uniform navy, and late-afternoon honey highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Afternoon slat light, amber pockets, and soft suspended dust-glow in still tonal fields',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Matte dark surfaces, bookcloth wear, ceramic glaze, varnished grain, and aged patina cues',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Refined quiet-mystery rendering with disciplined stillness and high prop-legibility balance',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Subtle viewpoint tightening around clue-like focal points and gaze vectors',
       atmosphere: 'Curious, refined, calm, observant',
       key_features:
-        'Clubroom detail, tea-and-book props, attentive facial acting, sunlit dust motes, restrained mystery framing',
+        'Attentive facial acting, sunlit dust motes, clue-forward focus, tea-amber warmth, and restrained mystery framing',
       creative_brief:
-        'Dust motes drift through sunlit clubroom air, each particle a clue too small to name. A cup of tea cools beside an unopened book, and the stillness itself becomes the mystery worth solving. Curiosity does not shout here — it glows like late afternoon through classroom windows, patient and exact.',
+        'Use the title as a style anchor for tea-light mystery. Keep observational stillness, clue-forward focus, and warm intellectual ambience without requiring classroom, clubroom, books, or tea props.',
     },
   },
   {
@@ -431,24 +429,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Neo-Venezia gondola calm, watercolor water reflections, healing-company warmth, slow conversational days, beautiful emptiness and kindness drifting through every frame',
+        'Healing reverie anime language with watercolor reflection softness, slow kindness, beautiful emptiness, and drift through every frame',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Flowing curve composition lines, delicate profile contours, and serene conversational pose language',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Aqua canals, sun-bleached stucco creams, seafoam greens, soft terracotta accents, and pearl daylight haze',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'High-key maritime diffusion, water-bounce highlights, and slow golden-hour wash across pale surfaces',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Rippled reflection softness, weathered plaster, varnished wood warmth, linen texture, and worn stone cues',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Healing-aqua rendering with meditative pacing, airy depth, and watercolor-soft tonal transitions',
+      spatial_distortion: 'Gentle reflection warping and depth drift for floating calm',
       atmosphere: 'Healing, airy, serene, luminous',
       key_features:
-        'Canal reflections, gondola silhouettes, white uniforms, water-breeze softness, peaceful city panoramas',
+        'Aqua reflections, drifting silhouettes, water-breeze softness, empty-space kindness, and peaceful panoramic breathing room',
       creative_brief:
-        'Water holds the city in a mirror that never quite settles, gondola wakes dissolving into the quiet of an aquamarine afternoon. Strangers become guests, then friends, then the reason the canal breeze feels like music. Healing moves at the speed of oars through still water — slow, rhythmic, irreversible.',
+        'Use the title as a style anchor for canal-breeze healing. Preserve reflection softness, airy kindness, and slow conversational pacing without requiring canals, gondolas, uniforms, or city panoramas.',
     },
   },
   {
@@ -459,24 +456,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Remote-island humor, calligraphy ink, lively kids, ocean wind and self-reinvention, fish-market energy, broad comedy softened by natural summer beauty',
+        'Summer reinvention anime language where brushlike expression, broad comedy, ocean-wind freshness, and craft identity soften each other',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Expressive brush-gesture motifs, broad comedic body language, and breezy open contour spacing',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Cerulean summer sky, sea salt whites, island greenery, ink-black calligraphy accents, and sun-warmed ochres',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'High summer daylight, sea-reflected highlights, cool shade contrast, and warm evening glows',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Brush-bristle ink density, paper absorbency, weathered wood, cotton softness, and rough handmade surfaces',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Warm comedic-healing rendering with lively island rhythm and craft-identity clarity',
+      spatial_distortion: 'Wind-driven framing looseness with gesture-led motion emphasis',
       atmosphere: 'Refreshing, funny, breezy, heartfelt',
       key_features:
-        'Calligraphy tools, seaside village backdrops, energetic kids, summer sky expanses, fish-and-field props',
+        'Brush-and-ink expressiveness, breezy open spacing, summer sky expanses, broad comic timing, and heartfelt reset energy',
       creative_brief:
-        'Ink splashes across fresh paper as a city-wrecked calligrapher discovers that art lives in the chaos of children and the salt of the sea. Fish-market laughter and cicada drone become brushstrokes of a summer that rewrites identity one imperfect character at a time. The island teaches what Tokyo never could — looseness is mastery.',
+        'Use the title as a style anchor for island-calligraphy summer. Keep brush-and-ink energy, breezy comedy, and self-reinvention tone without requiring island village, kids, fish market, or calligraphy tools.',
     },
   },
   {
@@ -487,24 +483,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gentle domestic routine, childcare sincerity, small apartments, school lunches, emotional growth through quiet responsibility and ordinary care',
+        'Gentle everyday tenderness where care, responsibility, and emotional growth emerge through small ordinary gestures',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Soft caregiving-gesture contour emphasis, routine-detail readability, and grounded everyday pose language',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Tatami beige, gentle cream whites, muted pastel clothing tones, and warm morning kitchen ambers',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Early soft daylight, overhead diffusion, and evening lamp warmth in care routines',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Cotton softness, worn lived-in surfaces, small utility plastics, cloth wraps, and paper textures',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Intimate domestic slice rendering with calm emotional clarity and routine-detail fidelity',
+      spatial_distortion: 'Close framing compression that reinforces caregiving intimacy',
       atmosphere: 'Tender, domestic, patient, soft',
       key_features:
-        'Household routine props, lunchbox detail, caregiving gestures, neighborhood paths, parent-child framing',
+        'Routine-detail anchors, caregiving gestures, close relational framing, patient pauses, and small acts of responsibility',
       creative_brief:
-        'Small hands reach for a lunchbox as morning light traces the quiet architecture of unexpected parenthood. Every grocery run and bedtime story becomes a monument to choosing care over convenience. Tenderness lives in the ordinary — the bento arranged just so, the shoes lined up at the door, the silence after a question that needs no answer.',
+        'Use the title as a style anchor for everyday care. Preserve caregiving gesture focus and emotional sincerity without requiring apartments, lunches, school items, or parent-child scene.',
     },
   },
   {
@@ -515,24 +510,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dessert-cafe moe softness, tiny uniforms, foam art and lace trims, decorative interiors, sugar-sweet pacing, plush friendliness and cozy customer-service charm',
+        'Sugar-cotton moe softness with lace-like delicacy, dessert-display neatness, plush friendliness, and cozy hospitality charm',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Tiny silhouette language, decorative contour neatness, and soft comedic service-gesture readability',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Whipped-cream whites, pastel strawberry pinks, mint accents, caramel browns, and warm interior golds',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Pendant-like warm pools, pastry-glow softness, and gentle diffusion for plush ambience',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Lace trim weave, ceramic glaze, foam microtexture, polished wood warmth, and confectionery gloss details',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Sugar-cozy moe rendering with high decorative legibility and inviting hospitality tone',
+      spatial_distortion: 'Compact framing to heighten tiny-world charm',
       atmosphere: 'Sugary, tiny, cute, soothing',
       key_features:
-        'Cafe counters, lace uniform detail, desserts and teacups, plush texture cues, decorative interior symmetry',
+        'Lace detail, dessert-like softness, plush texture cues, decorative symmetry, and compact hospitality rhythm',
       creative_brief:
-        'Latte foam blooms into a rabbit silhouette atop a cup too pretty to disturb. Lace aprons and sugar-dusted counters frame a world where sweetness is not indulgence but atmosphere — the gravity that keeps everyone orbiting the same cozy counter. Every order arrives with a side of irreplaceable small-talk.',
+        'Use the title as a style anchor for cafe-sugar cotton. Keep dessert-display softness, lace charm, and compact hospitality rhythm without requiring cafe, counters, uniforms, desserts, or teacups.',
     },
   },
   {
@@ -543,24 +537,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'School social-anxiety comedy with immaculate classrooms, chalkboard confession atmosphere, idealized modern student beauty filtered through nervous silence and cute exaggeration',
+        'Komi title anchor translated into polished social-anxiety comedy, pristine beauty, nervous silence, cute exaggeration, and tidy emotional pressure',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Clean beauty-contour discipline, micro-expression emphasis, polite negative-space framing, and graphic pause panels around social friction',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Polished whites, navy anchors, soft blush accents, dark green-black contrast fields, and warm skin highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Bright clear fill, reflective tidy surfaces, focused contrast for confession-like tension, and gentle blush-lit reaction beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Chalk-dust softness, pressed fabric planes, smooth paper fibers, dry marker traces, and immaculate surface polish',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Polished social-jitter comedy rendering with high expression readability, tidy clarity, and elegant cute exaggeration',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Anxiety-point-of-view tightening around expressions and empty graphic space rather than fixed classroom geography',
       atmosphere: 'Shy, polished, funny, affectionate',
       key_features:
-        'Classroom orderliness, chalkboard motifs, awkward body language, social-jitter reaction beats, beauty-and-comedy contrast',
+        'Pristine orderliness, chalk-dust graphic motifs, awkward body language, social-jitter reaction beats, beauty-and-comedy contrast',
       creative_brief:
-        'A chalkboard becomes confessional, carrying the words a trembling hand cannot speak aloud. Silence stretches into something almost visible — a fourth wall between the girl who wants one hundred friends and the classroom that feels like a stage she never auditioned for. Every glance is a negotiation with courage.',
+        "Use Komi Can't Communicate as a style anchor for immaculate social-jitter comedy: polished beauty cues, silent pressure, and chalk-dust graphic restraint should survive without requiring a classroom or chalkboard scene.",
     },
   },
   {
@@ -571,24 +565,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Restaurant shift banter, aprons and order pads, ensemble workplace chemistry, low-stakes service chaos, after-school job warmth with punchy interactions',
+        'Working!! title anchor translated into workplace-shift banter, ensemble chemistry, low-stakes service chaos, and punchy cooperative warmth',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Clear blocking lines, uniform-like silhouette contrast, fast ensemble reaction timing cues, and choreographed handoff rhythm',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Diner cream warmth, black-and-white anchors, menu-red accents, amber practical glow, and stainless highlight notes',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Bright practical illumination, warm pass-through glow, evening interior comfort, and clean comic reaction spotlighting',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Apron-cloth softness, laminated sheen, ceramic gloss, countertop smoothness, and practical metal highlights as optional texture cues',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Workplace-comedy rendering with rhythm-first readability, upbeat service realism, and ensemble timing clarity',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Quick-cut staging compression and reaction-scale pops used to support banter-driven comedic pace',
       atmosphere: 'Cheery, busy, ensemble-driven, comfy',
       key_features:
-        'Restaurant props, work-uniform silhouettes, coworker chemistry staging, service-counter compositions, comedic order-taking beats',
+        'Service-work choreography, uniform-like silhouettes, coworker chemistry staging, practical warmth, comedic timing beats',
       creative_brief:
-        'Order bells ring counterpoint to kitchen chaos as aprons and inside jokes crisscross the dining floor. Nobody here is saving the world — they are saving table four from the wrong dressing and each other from bad days. Service with a smile, but the smile is real, and so is the family that clocked in together.',
+        'Use Working!! as a style anchor for shift-comedy rhythm: ensemble banter, practical workplace warmth, and service-like choreography should remain readable without forcing a restaurant, counter, tray, apron, or order scene.',
     },
   },
   {
@@ -599,24 +593,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'High-school lethargy rendered as ambient art, soft wind, benches, low-energy friendship, sleepy body language and beautiful nothingness',
+        'Tanaka-kun title anchor translated into ambient lethargy, soft wind, low-energy friendship, sleepy elegance, and beautiful nothingness',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Relaxed low-energy silhouettes, minimal expression lines, slow contour drift, and breezy negative-space composition control',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Pale sky blues, soft grays, neutral cloth fields, gentle spring greens, and light cream highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Diffuse midday softness, sleepy ambient fill, soft side light, and low-contrast illumination that lets pauses breathe',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Light fabric drape, paper-like matte surfaces, soft wind-ruffled hair texture, and faint worn-surface tactility',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Lethargic-comfort rendering with calm comedic timing, airy minimalism, and deliberate low-exertion beauty',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Time-dilation framing that stretches quiet pauses and ambient stillness across any subject or setting',
       atmosphere: 'Sleepy, gentle, airy, easygoing',
       key_features:
-        'Reclined poses, breeze effects, bench-and-classroom staging, minimal exertion comedy, soft ambient light',
+        'Low-energy posture, breeze effects, wide negative space, minimal exertion comedy, soft ambient light',
       creative_brief:
-        'A boy listless as a curtain in summer breeze becomes the still center around which friendship orbits without demand. Benches and classroom corners transform into temples of beautiful inertia — places where doing nothing together counts as everything. Slowness is not a flaw here; it is the aesthetic.',
+        'Use Tanaka-kun as a style anchor for breeze-drift lethargy: low-energy friendship, pause-centric timing, and beautiful everyday inertia should stay intact without requiring school, benches, classroom, or fixed recline scenes.',
     },
   },
   {
@@ -627,24 +621,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mountain-hiking schoolgirls, crisp air, trail snacks, gradual confidence building, summit panoramas, outdoor hobby warmth rendered with encouraging sincerity',
+        'Yama no Susume title anchor translated into crisp effort, supportive friendship, incremental confidence, airy clarity, and uplifting outdoor-hobby sincerity',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Upward route-like composition lines, practical silhouette clarity, encouragement-driven gesture readability, and breathable spacing',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'High-altitude blues, pine greens, sunlit ochres, neutral gear-like tones, and rosy effort highlights',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Clear daylight, ridge-edge rim lighting, cool shadow fills, and bright reveal lighting for progress beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Technical fabric layers, nylon-strap tactility, rocky grit, tree-bark texture, and breathable knit cues as optional surface language',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Outdoor-hobby rendering with clean scenic readability, uplifting progression tone, and sincere confidence-building warmth',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Elevation-gain perspective expansion used as emotional progress, not as a required mountain or summit view',
       atmosphere: 'Fresh, supportive, scenic, uplifting',
       key_features:
-        'Hiking gear, trail compositions, summit vistas, friendship encouragement gestures, bright mountain skies',
+        'Upward effort rhythm, supportive gestures, airy scenic clarity, practical texture cues, bright confidence-building reveals',
       creative_brief:
-        'Trail switchbacks become a metaphor for growth — each turn revealing a wider sky, each step a small summit shared between friends who started the climb unsure. Granola bars taste better at altitude, and the peak is less a destination than a photograph waiting to prove you were brave together.',
+        'Use Yama no Susume as a style anchor for supportive ascent: crisp air, practical texture, and incremental confidence should transfer without requiring mountains, hiking gear, trails, summit vistas, or schoolgirls.',
     },
   },
   {
@@ -655,24 +649,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ordinary boys turning hallways and riverbanks into dead-serious nonsense stages, sketch-comedy timing, school-blazer awkwardness, underplayed absurdity',
+        'Daily Lives title anchor translated into dead-serious nonsense, sketch-comedy timing, mundane-stage absurdity, awkward underplaying, and loose ensemble rhythm',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Deadpan-comedy contour economy, exaggerated reaction silhouette beats, and banal-stage composition that can wrap any prompt',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Neutral grays, navy anchors, faded concrete tones, casual green notes, and occasional comedic accent pops',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Flat everyday daylight, casual afternoon fill, and low-drama illumination supporting timing-first gags',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Wool-like cloth texture, desk-edge scuffs, grass-and-dirt matte notes, and everyday prop finishes as optional comedic tactility',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Ensemble deadpan rendering with timing clarity, awkward-boy body language, and low-stakes absurdist rhythm',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Momentary gag exaggeration through reaction-scale pops within otherwise normal perspective',
       atmosphere: 'Goofy, deadpan, schoolyard, loose',
       key_features:
-        'Blazer silhouettes, hallway conversation staging, low-budget absurdist posing, riverbank comedy scenes, ensemble rhythm',
+        'Deadpan commitment, low-budget absurdist posing, mundane-stage framing, reaction-scale pops, ensemble rhythm',
       creative_brief:
-        'A school blazer becomes a cape, a hallway becomes a battlefield, and three friends treat absurdity with the solemnity of a national crisis. The joke is never the punchline — it is the commitment, the deadpan delivery, the way teenage boys alchemize boredom into theater with only each other as audience. Nothing matters, so everything does.',
+        'Use Daily Lives of High School Boys as a style anchor for mundane absurdist theater: deadpan commitment and ensemble timing should survive without requiring boys, hallways, riverbanks, blazers, or school staging.',
     },
   },
   {
@@ -683,24 +677,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting',
+        'Sketchbook Full Colors title anchor translated into quiet observational calm, watercolor-soft afternoons, tiny noticing, and nearly plotless comfort',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Gentle sketchbook contours, drifting motion-trace cues, observational still-life balance, and soft curiosity-led spacing',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Watercolor creams, dusty pastel fields, warm amber afternoon tones, muted foliage greens, and soft ink accents',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Slow afternoon sidelight, soft ambient bleed, and diffuse cloud-filtered illumination with minimal dramatic pressure',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Watercolor wash grain, notebook paper tooth, stucco-like wear, wooden patina, and soft-fiber tactility',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Meditative observational rendering with minimal plot pressure and high comfort readability',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Light vignette-like focus drift to prioritize quiet noticing over dramatic depth',
       atmosphere: 'Drifting, soft, observant, comforting',
       key_features:
-        'Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness',
+        'Observational stillness, watercolor softness, tiny detail noticing, warm afternoon drift, gentle curiosity',
       creative_brief:
-        'A stray cat leads the art club through an afternoon of barely-there narrative, each encounter a watercolor vignette of small-town stillness. Observation becomes the highest form of participation — watching, sketching, letting the world unfold at the speed of a cat stretching in sun. Plot dissolves into presence.',
+        'Use Sketchbook Full Colors as a style anchor for observational watercolor calm: tiny noticing, gentle curiosity, and minimal narrative comfort should transfer without requiring art club, cats, town backdrops, or sketchbook props.',
     },
   },
   {
@@ -711,24 +705,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Household comedy colliding with mythic creatures, bright domestic mayhem, affectionate humor, maid-dragon Tohru, tail-cooking gags, Kanna-chan cuteness, portal-to-another-world',
+        'Everyday-fantasy comedy anime language where mythic scale collides with affectionate routine order and cozy-chaos warmth',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Soft comfort contours mixed with occasional creature-feature exaggeration, expressive blocking, and ensemble interaction readability',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Warm cream and wood tones, pastel comfort hues, vivid creature-accent colors, and selective magical-color pops',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Cozy practicals, daylight fill, warm evening pools, and brief magical spill highlights during fantasy beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Lived-in comfort surfaces, gentle gloss, textile softness, plus subtle non-human texture accents integrated into cozy context',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Heartwarming comedy render with balanced routine detail and fantasy interruptions, keeping character readability and humor timing intact',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Whimsical, bustling, heartwarming, chaotic',
+        'Primarily grounded comfort-space perspective with mild stylized warps during comedic or magical escalation',
+      atmosphere: 'Whimsical, lively, affectionate, and comfort-chaotic',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Everyday-scale contrast, creature-adjacent cues, ensemble warmth dynamics, and cozy-chaos composition rhythm',
       creative_brief:
-        "A dragon in an apron is the universe's best joke and also its most sincere — mythic power folded into domestic devotion, tail used for cooking, portal to another world opening behind the laundry. The apartment is too small for this much love and entirely large enough to hold it all. Make chaos feel like home.",
+        'Use the title as a style anchor for everyday fantasy chaos. Keep affectionate scale contrast, cozy magical interruption, and ensemble warmth without requiring apartment, kitchen, specific creature, or household props.',
     },
   },
   {
@@ -739,24 +733,22 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Art-student dorm life, warm sketchbook textures, soft geometric rooms, little daily rituals, low-pressure humor, cozy abstraction in everyday school life',
+        'Sunshine-scribble slice language with warm sketchbook texture, soft geometry, little rituals, low-pressure humor, and cozy abstraction',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Sketchbook-first contouring, simplified geometric blocking, and playful art-supply-like silhouette motifs',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
-      lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Warm paper creams, soft coral and mint accents, gentle graphite grays, and sunwashed dorm yellows',
+      lighting_setup: 'Late-afternoon sunlight, warm lamp pockets, and low-contrast ambient wrap',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Pencil grain, paper stacks, soft fabric surfaces, tape edges, and tabletop wear',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Relaxed art-dorm rendering with abstracted comfort geometry and handmade sketch warmth',
+      spatial_distortion: 'Mild geometric flattening that supports cozy visual abstraction',
       atmosphere: 'Sunny, crafty, relaxed, cute',
       key_features:
-        'Sketchbook props, dorm-room geometry, art-supplies clutter, soft comedic staging, warm pastel room light',
+        'Sketchbook tactility, soft geometric composition, art-supply clutter logic, soft comedic staging, and warm pastel light',
       creative_brief:
-        'A dorm room tilts into abstraction as sunlight reorganizes the geometry of easels and half-eaten snacks. Sketchbooks multiply like warm weeds, each page a small rebellion against precision. Creation here is not grand — it is the soft scratch of pencil on paper while a friend hums across the room.',
+        'Use the title as a style anchor for art-dorm sunshine. Keep sketchbook tactility, soft geometry, and low-pressure creative ritual tone without requiring dorm rooms, school life, or art supplies.',
     },
   },
   {
@@ -767,24 +759,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Social panic visualized through mixed-media bursts, guitar-club awkwardness, comic breakdowns, closet-rock scenes, pixel-art meltdowns, kessoku-band formation, live-house venues',
+        'Anxiety-comedy music language where mundane softness collides with stylized panic-breakdown insertions and sudden cathartic release',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Soft everyday contours punctuated by abrupt exaggeration modes, collapse-face elasticity, and stabilized release silhouettes',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Base warm pastels with occasional high-saturation anxiety spikes, glitch-tone accents, and hard contrast bursts',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Calm ambient baseline transitioning to hard key accents and stylized flash overlays during emotional overload beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Everyday soft textures with mixed-media interruption cues (halftone/glitch/pixel artifacts) used as expressive overlays',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Hybrid slice-comedy render with controlled mode-switching between awkward stillness and high-energy stage intensity while preserving readability',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Awkward, hilarious, anxious, relatable',
+        'Contextual distortion toggles from grounded social framing to expressive panic-warps and back to stable cathartic composition',
+      atmosphere: 'Anxious, funny, vulnerable, and musically liberating',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Mode-switch visual language, panic-to-release contrast, glitch overlays, and socially awkward micro-acting clarity',
       creative_brief:
-        "Social anxiety explodes into pixel-art shrapnel and manga-panel disintegration — a girl dissolves into dust because someone said hello. The stage becomes a lifeline, guitar strings the only language that doesn't betray. Let the frame shape-shift between awkward silence and the transcendent roar of a power chord.",
+        'Use the title as a style anchor for anxiety-glitch comedy. Transfer grounded softness, meltdown insertions, and cathartic release to any subject without requiring band gear, school, or stage.',
     },
   },
   {
@@ -795,24 +787,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Casual school comedy drifting into low-key surreal beats, gentle weirdness, simple shapes, Osaka daydreams, Chiyo-chan pigtails, Yukari-sensei chaos, penguin Chiyo',
+        'Soft-surreal deadpan comedy language blending mundane routine with dreamlike absurd intrusions delivered gently',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Simple friendly contouring with occasional subtle deformation cues, low-intensity reaction acting, and composition designed for conversational weirdness',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Quiet pastels, warm neutral bases, mint and beige supports, and mild surreal accent hues introduced sparingly',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Calm daytime ambient with even soft fill, minimal dramatic contrast, and slight atmospheric lift during surreal beats',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Everyday lightweight textures, simple detail fidelity, and low-noise backgrounds supporting character humor',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
+        'Gentle surreal-slice render emphasizing timing, expression nuance, and understated oddity without heavy visual aggression',
       spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
-      atmosphere: 'Quietly bizarre, sweet, dreamy, gentle',
+        'Mostly stable perspective with light dreamlike bending at gag-critical moments',
+      atmosphere: 'Sweet, dreamy, odd, and quietly funny',
       key_features:
-        'Everyday charm, personality, quiet moment beauty, character-first storytelling, relatable warmth',
+        'Low-key surreal inserts, deadpan reaction rhythm, everyday baseline continuity, and softly uncanny visual punctuation',
       creative_brief:
-        "The classroom bends gently at the corners, reality slightly warped by the gravitational pull of a daydream about nothing in particular. A penguin costume, a floating pigtail, a teacher's existential meltdown — all rendered in the quiet pastel palette of a mind wandering pleasantly off-course. Sweet surrealism that never raises its voice.",
+        'Use the title as a style anchor for soft-surreal deadpan. Keep calm baseline, subtle absurd intrusion, and gentle expression timing without requiring classroom, school, or fixed gag props.',
     },
   },
   {
@@ -823,24 +815,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity',
+        'Youth-expedition glow where friendship turns into forward motion, bright horizon energy, and ordinary sincerity becoming adventure',
       form_and_line:
-        'Soft everyday-anime linework, rounded gentle strokes, thin uniform ink weight, approachable contour softness',
+        'Expedition-energy silhouette language, practical contour emphasis, and momentum-forward pose readability',
       color_palette:
-        'Friendly pastels, warm neutrals, creamy beige tones, minty soft accents, butter-yellow warmth',
+        'Polar whites, sky cyan gradients, uniform navy anchors, orange determination accents, and sunlit skin warmth',
       lighting_setup:
-        'Cozy interior glow, gentle daylight, warm incandescent ambience, window-bounce fill, soft overhead diffusion',
+        'Crisp travel-day daylight, high-albedo horizon bounce, and warm pre-departure practical glow',
       material_texture:
-        'Lived-in props, fabrics, simple backgrounds, cotton weave, tatami mat grain, classroom wear-and-tear',
+        'Nylon-like utility, insulated fabrics, paper fibers, frost-kissed surfaces, and transit-scuffed detail',
       render_quality:
-        'Warm slice-of-life anime frame, comfort-food rendering, gentle chromatic softness, inviting visual tone',
-      spatial_distortion:
-        'Cute expressive proportions, chibi-adjacent stylization, compact scene composition, cozy spatial intimacy',
+        'Inspirational youth-expedition rendering with clean atmospheric breadth and emotional propulsion clarity',
+      spatial_distortion: 'Horizon-expansion perspective that amplifies collective forward motion',
       atmosphere: 'Hopeful, brave, bright, uplifting',
       key_features:
-        'Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages',
+        'Sky-heavy framing, friendship ensemble, determination close-ups, practical readiness cues, and horizon expansion',
       creative_brief:
-        'Four silhouettes against an impossibly white horizon, their school skirts still creased from yesterday classroom. The map they unfold is less geography than permission — a dare written in longitude and the geometry of friendship. Every frame trembles with the velocity of a dream that refuses to stay hypothetical.',
+        'Use the title as a style anchor for youth-expedition glow. Keep sky-heavy optimism, friendship-driven momentum, and practical readiness without requiring uniforms, maps, gear piles, or travel-prep scenes.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

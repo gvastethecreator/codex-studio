@@ -18,13 +18,13 @@ visualDna:
   lighting_setup: Pools cálidos de lámpara, colgantes de época, luz de tarde filtrada y contraste suave de hospitalidad social.
   material_texture: Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.
   render_quality: Editorial retro contemporáneo con nostalgia controlada, claridad de mobiliario y composición funcional elegante.
-  spatial_distortion: Proporción estable con énfasis en lectura de piezas; profundidad por ritmo de mobiliario, no por teatralidad.
+  spatial_distortion: Proporción estable con énfasis en lectura de piezas; profundidad por ritmo modular, no por teatralidad.
   atmosphere: Acogedor, conversacional, curado y optimista sin exceso decorativo.
-  key_features: Aparadores flotantes, asientos orgánicos bajos, luminarias icónicas, textiles cálidos y gramática tapered constante.
+  key_features: Silueta baja, soporte cónico, calidez nogal-teca, acentos atómicos y equilibrio entre función legible y curva suave.
   creative_brief: >-
     Mantén una gramática mid-century transferible: proporción baja, silueta
     icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse
-    social y refinado en cualquier escena, sin caer en pastiche vintage.
+    social y refinado sobre cualquier input, sin caer en pastiche vintage.
 avoidRules:
   - antique
   - victorian

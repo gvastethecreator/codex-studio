@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, food that looks delicious, soaring flight
+  aesthetic: Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness
   form_and_line: Delicate
-  color_palette: Natural, lush green, sky blue, cherry blossom pink, earth brown
+  color_palette: Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown
   lighting_setup: Dappled sunlight, leaf-filtered glow, golden late-afternoon
   material_texture: Watercolor background, soft wash, pencil underdraw, cel overlay
-  render_quality: Luminous, lovingly observed, detailed stillness, wind-through-grass
+  render_quality: Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth
   spatial_distortion: None
-  atmosphere: Nostalgic, peaceful, childhood summer, bittersweet wonder
-  key_features: Clouds, flying sequence, bento detail, train through countryside
-  creative_brief: Wind combs through meadow grass while a child pauses mid-step, caught between the world she knows and the one she senses stirring beneath. Shadows soften at the edges as if reluctant to darken anything worth remembering. A bowl of steaming rice, a train gliding past sunflower fields — the sacred hides in the ordinary, waiting to be noticed.
+  atmosphere: Nostalgic, peaceful, bittersweet wonder, human-scale awe
+  key_features: Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail
+  creative_brief: 'Translate the input into painterly animation grammar: leaf-filtered light, watercolor atmosphere, delicate pencil structure, and a sense that ordinary surfaces carry quiet spirit. Avoid requiring specific places, foods, vehicles, or characters; the style should breathe through texture, patience, and subtle environmental softness. Every subject should feel observed with care before it is stylized.'
 avoidRules:
   - ugly
   - dark

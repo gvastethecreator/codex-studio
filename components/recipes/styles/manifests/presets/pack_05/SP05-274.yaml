@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-274
 packId: pack_05
-name: Erased - Winter Apartment Suspicion
+name: Winter Guilt Suspicion Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Snowy town melancholy, narrow apartment halls, child-endangerment dread, ordinary domestic spaces haunted by time and guilt, subdued thriller pacing
+  aesthetic: Winter guilt suspicion, domestic quiet under threat, time-haunted melancholy, protective dread, ordinary softness sharpened by memory
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Snow-muted grain, worn domestic matte, cold glass haze, soft fabric texture, pale wall scuffs, breath-fog light
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Narrow memory compression, small-scale contrast, winter hush spacing, guilt-heavy close-ups, time-echo visual rhythm
   atmosphere: Wintry, tense, protective, melancholic
-  key_features: Snow-town streets, apartment corridors, child-perspective contrast, subdued body language, guilt-heavy close-ups
-  creative_brief: Snow buries evidence but not memory in a town where narrow apartment corridors stretch into the past itself, a man granted the impossible chance to rewrite the childhood tragedy that has haunted every winter since. Ordinary domestic spaces become crime scenes of the heart, where a child's trust is the most dangerous currency and the killer wears the face of the neighborhood.
+  key_features: Winter hush, guilt-heavy close-ups, domestic threat softness, memory echo, protective melancholy
+  creative_brief: >
+    Give any prompt a subdued winter-thriller treatment: pale cold light,
+    domestic softness, memory echoes, and protective tension should create dread
+    without fixed settlements, homes, age roles, culprits, evidence, or time
+    mechanics.
 avoidRules:
   - realistic
   - 3d render

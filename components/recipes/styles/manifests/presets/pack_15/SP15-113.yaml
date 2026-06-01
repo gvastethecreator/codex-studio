@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
 visualDna:
-  aesthetic: Harbor district devoted to regenerative stemcell care and logistics.
-  form_and_line: Dock curves, treatment pods, and fluid container towers.
+  aesthetic: Stemcell biopunk logistics where regenerative care feels tidal, soft, and precise.
+  form_and_line: Dock-like curves, treatment pod forms, fluid container towers, and restorative capsule arcs.
   color_palette: Seafoam, pearl white, and muted aqua.
   lighting_setup: Harbor daylight with soft water bounce.
   material_texture: Wet bio-panels, translucent tubes, and ceramic docks.
   render_quality: Clean maritime biotech concept with calm precision.
-  spatial_distortion: Dock perspective leading to regenerative intake pods.
+  spatial_distortion: Dock-like perspective leading to regenerative intake pods.
   atmosphere: Recovery, exchange, and compassionate infrastructure.
-  key_features: Stemcell clinics, tide docks, and restorative capsules.
+  key_features: Stemcell capsule motifs, tide-line curves, restorative pods, and fluid column silhouettes.
   creative_brief: >-
     Preserve stemcell harbor grammar as a reusable style system:
     regenerative maritime logistics, dockside care infrastructure, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, hospital-gore, cyberpunk, watermark, text, logo, grime]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-113.webp }
 attributes:
   negativePrompt: photoreal, hospital-gore, cyberpunk, watermark, text, logo, grime
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-biopunk,
+    categoryName: 3. Corepunk — Biopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, biopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

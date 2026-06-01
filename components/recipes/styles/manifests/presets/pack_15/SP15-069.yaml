@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Rocket-age devotional style where engines, vows, and navigation icons merge into sacred launch preparation.
-  form_and_line: Rocket-arch nave profiles, altar-bay nozzles, prayer hangar ribs, star-icon triptychs, and capsule reliquary shapes.
+  aesthetic: Rocket-age devotional style where engines, vows, and navigation icons merge into sacred preparation.
+  form_and_line: Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary forms.
   color_palette: Mission white, worn brass, cosmic blue, candle amber, and scorched launch gray.
   lighting_setup: Narrow altar spot, hatchway rimlight, blue engine glow, and small votive reflections on polished metal.
   material_texture: Painted steel, cloth mission banners, worn floor plating, heat-scarred brass, and paper blessing tags.
   render_quality: Symbolic scene with strong silhouette hierarchy and tactile ritual objects.
-  spatial_distortion: Aisle perspective into launch altar, with rocket geometry replacing religious architecture.
+  spatial_distortion: Aisle-like perspective toward nozzle halos, with rocket geometry replacing religious architecture.
   atmosphere: Faith, fear, mission resolve, and quiet mechanical tenderness.
-  key_features: Engine-blessing rigs, star icon panels, vow capsules, launch candles, and prayer-tool racks.
+  key_features: Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.
   creative_brief: >-
     Push rocket chapel-outpost as reusable style: any subject should feel
     sanctified by launch risk, with engine geometry, fragile vows, and cosmic

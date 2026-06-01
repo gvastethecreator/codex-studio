@@ -11,836 +11,828 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Early television anime, large eyes, simple shapes, brave retro energy, round facial structure, limited shadow tones, earnest storytelling charm',
+        'Early television anime with large-eye era cues, simple shapes, brave retro energy, limited shadow tones, and earnest storytelling charm',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Rounded iconic form language, thick confident contouring, simplified in-between-friendly geometry, hand-inked cel cadence',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Sun-warmed primaries, milk-soft skin midtones, subdued sky blues, faded analog broadcast chroma',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Broadcast-era key-fill simplicity, stepped cel shadow bands, restrained rim accents, low dynamic-range highlights',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Acetate cel edge shimmer, painted matte backgrounds, mild registration jitter, analog scan grain',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Late-70s to early-80s TV anime fidelity with clean silhouette priority and era-authentic compositing softness',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
+        'Child-safe proportion push, focal emphasis for bravery beats, limited-perspective staging for readability',
       atmosphere: 'Nostalgic, optimistic, daring, spirited',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Earnest iconic silhouette language, warm cel-era optimism, emblematic posing rhythm, hand-painted scenic restraint',
       creative_brief:
-        'Hand-painted cels hum with the voltage of Saturday-morning courage, where oversized eyes hold entire galaxies of determination against simple but iconic backdrops. Bold contour lines carve heroic silhouettes from warm, fading primaries, each frame a love letter to an era when television dared children to believe they could change the world.',
+        'Early TV-anime optimism should read immediately through bold contour clarity, emotionally direct posing, and warm analog cel color logic. Keep compositions clean, uplifting, and iconic, with craftsmanship rooted in hand-painted backgrounds and pre-digital broadcast constraints.',
     },
   },
   {
     id: 'SP05-311',
-    name: 'Future Boy Conan - Rust Island Sky Hope',
+    name: 'Rusted Eco Hope Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Post-collapse island adventure, boyish athleticism, rusted relics and blue oceans, early-Miyazaki environmental hope and motion-rich sincerity',
+        'Aventura ecológica postcolapso de espíritu luminoso, donde ruina tecnológica y rebrote natural conviven con esperanza activa.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno cel robusto con acting atlético, siluetas de salto y escalada, y gesto corporal optimista de exploración.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Turquesas oceánicos, óxidos rojizos, verdes de rebrote y blancos solares de cielo abierto.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Sol marítimo frontal de alto contraste, sombras cel cortas y rim ventoso para reforzar impulso acrobático.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Chapa oxidada, concreto salinizado, roca costera y vegetación resiliente sobre infraestructura antigua.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-aventura con lectura clara de movimiento, geografía insular y pulso ambiental optimista.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Hopeful, athletic, breezy, adventurous',
+        'Perspectiva amplia de acantilado e isla con verticalidad juguetona para enfatizar agilidad del protagonista.',
+      atmosphere: 'Esperanzadora, energética, marina, aventurera.',
       key_features:
-        'Island-and-ocean vistas, rust relics, boy-hero movement, environmental adventure cues, sky-bright optimism',
+        'Óxido luminoso, rebrote ecológico, energía corporal, cielo abierto y lectura optimista de mundo dañado.',
       creative_brief:
-        'Rusted towers rise from turquoise water where a boy bare feet find purchase on the spine of a broken world. Wind whips through wild hair carrying salt and the scent of seeds, of things that grow where nothing should. Hope in this palette is not a concept but a color—bright sky pushing through rust brown.',
+        'Define una gramática reusable de aventura ecológica resiliente para cualquier prompt o imagen de entrada: óxido, aire abierto y esperanza activa sin imponer islas, costas, saltos juveniles ni infraestructura específica.',
     },
   },
   {
     id: 'SP05-003',
-    name: 'Jazzy Heist Rogue',
+    name: 'Jazzy Rogue Heist Rhythm Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Slim silhouettes, sly expressions, urban caper cool, sketchy finesse, noir shading, trench coat styling, night-city glow',
+        'Picardía retro-jazz elegante, humor seco, glamour nocturno abstracto y tensión de engaño sofisticado.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Trazo cel vintage afilado, gestualidad pícara y coreografía de timing musical sin acción fija.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Carbón nocturno, ámbar de farola, turquesa tenue y acentos crema de cartel antiguo.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Noir suave con contraluz recortado, reflejo húmedo y key focal en gesto de engaño.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Superficie mojada, tela textil elegante, cromado reflectante y grano telecine de caper setentero.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado broadcast 80s de alto carácter, lectura clara de astucia, ritmo y puesta en escena.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Jazzy, playful, mischievous, suave',
+        'Perspectiva oblicua con encuadres de fuga, contrapicado de estilo y compresión de escape.',
+      atmosphere: 'Jazzy, juguetona, traviesa, sofisticada.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Silueta estilizada, ritmo de montaje heist, luces recortadas y acting de doble intención.',
       creative_brief:
-        'Cigarette smoke curls through Venetian blinds in a city that never sleeps, as lanky silhouettes trade stolen glances across rain-slicked cobblestones. The line work dances with bebop rhythm—sharp suit lapels, sly half-smiles, and the delicious tension of a con about to spring.',
+        'Diseña una gramática reusable de jazzy-rogue-heist-rhythm para cualquier sujeto, priorizando elegancia táctica, ironía visual y swing nocturno sin imponer robos, calles, callejones, gabardinas, vitrinas ni dúos investigadores.',
     },
   },
   {
     id: 'SP05-004',
-    name: 'Melancholy Space Corsair',
+    name: 'Melancholy Astral Opera Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tall figures, sweeping capes, lonely starfields, romantic space adventure, operatic scale, cosmic loneliness, vast ship corridors',
+        'Ópera astral romántica, heroicidad melancólica, nobleza crepuscular y escala monumental.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea cel clásica de figura elevada, drapeado amplio, acting contenido de añoranza y nobleza.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Índigos profundos, oro envejecido, rojo vino ceremonial y grises siderales desaturados.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Claroscuro estelar con key lateral dramática, halos de vacío y rim tenue sobre capa en movimiento.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Metal envejecido, terciopelo ceremonial, vidrio oscuro y grano analógico elegante.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Producción retro premium con lectura épica-lírica y composición de gran aliento visual.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Melancholic, heroic, yearning, grand',
+        'Grandes vacíos y ejes largos para enfatizar soledad heroica y destino itinerante.',
+      atmosphere: 'Melancólica, heroica, anhelante, grandiosa.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Drapeado icónico, silueta noble, escala axial y horizonte abstracto como contrapeso emocional.',
       creative_brief:
-        'A solitary cape billows against the infinite void, hand-painted stars flickering like distant memories as a romantic wanderer drifts between worlds no longer home. Operatic scale collides with intimate sorrow—vast ship corridors framing a single figure, the ache of cosmic loneliness rendered in warm gouache and sweeping perspective.',
+        'Construye una gramática reusable de melancholy-astral-opera para cualquier sujeto, equilibrando majestuosidad operática, soledad noble y escala crepuscular sin imponer corsarios, naves, uniformes, puentes, ventanales ni horizontes estelares literales.',
     },
   },
   {
     id: 'SP05-008',
-    name: 'Neon Detective Action',
+    name: 'Neon Procedural Irony Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban cool, sharp tailoring, neon skyline tension, action-comedy rhythm, tailored suits, cityscape windows, retro firearm styling',
-      form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
-      color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Procedural retro con filo cómico, elegancia precisa y tensión nocturna de deducción.',
+      form_and_line: 'Trazo cel preciso, acting seco y blocking táctico con ritmo irónico.',
+      color_palette: 'Cobalto nocturno, neón rosa-controlado, ámbar contenido y grafito frío.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Contraste de vidrio y sombra, reflejos húmedos y key dirigida para lectura de indicio visual.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Tejido elegante, metal vintage abstracto, vidrio lluvioso y grano cinematográfico pulcro.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado broadcast 80s con equilibrio entre carisma procedural y ritmo de resolución.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Slick, streetwise, sharp, charismatic',
+        'Profundidad oblicua con encuadres de vigilancia, giro táctico y resolución rápida.',
+      atmosphere: 'Elegante, afilada, irónica, magnética.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Siluetas elegantes, neón de expediente abstracto, acción compacta y humor procedural seco.',
       creative_brief:
-        'Tailored suits cut through the neon-drenched night as a sharp-eyed detective stalks skyline-window corridors where every reflection hides a clue. The rhythm bounces between deadpan comedy and gun-barrel intensity, bold linework wrapping each character in the effortless cool of a city that raised them.',
+        'Diseña una gramática reusable de neon-procedural-irony para cualquier sujeto, combinando sofisticación táctica, deducción visual y timing irónico sin imponer policías, detectives, calles, armas, trajes, ventanas ni persecuciones.',
     },
   },
   {
     id: 'SP05-009',
-    name: 'Hyper-Detailed Neo-City',
+    name: 'Hyper-Dense Cyber-Retro Infrastructure Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dense futuristic cityscapes, motorcycles, kinetic motion, cyber unrest, neon billboards, highway overpasses, crowd riots, tech clutter',
+        'Infraestructura cyber-retro hiperdensa, fricción social, velocidad mecánica y saturación sistémica.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea detallista y nerviosa, estructura protagonista y dinámica de desplazamiento a máxima inercia.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Violeta eléctrico, verde neón, concreto gris-azul y rojos de señal disruptiva.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Brillo de señal superpuesto, flare industrial y sombras recortadas por capas elevadas.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Superficies calientes, chapa abstracta, señalética luminosa y suciedad tecnológica acumulada.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado retro de alta complejidad visual con lectura clara de caos estructurado.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Electric, rebellious, anarchic, charged',
+        'Capas infraestructurales superpuestas para sensación de presión sistémica constante.',
+      atmosphere: 'Eléctrica, rebelde, convulsa, adrenalínica.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Horizonte saturado de ingeniería, movilidad agresiva, densidad señalética y pulso de revuelta.',
       creative_brief:
-        'Motorcycles scream through canyons of hand-painted signage and riot-scarred overpasses, a cyberpunk revolution rendered in obsessive architectural density that makes every frame feel like a city that actually breathes. Motion lines fracture the chaos into pure kinetic electricity, the air itself vibrating with rebellion.',
+        'Construye una gramática reusable de hyper-dense-cyber-retro-infrastructure para cualquier sujeto, priorizando densidad arquitectónica, energía social y movimiento continuo sin imponer ciudad literal, calles, torres, vías, pasarelas ni cartelería concreta.',
     },
   },
   {
     id: 'SP05-010',
-    name: 'Adventure Martial Comedy',
+    name: 'Round Adventure Slapstick Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Round forms, playful action, whimsical journeys, bright comic timing, chubby character shapes, bouncing movement, cartoon dust clouds',
+        'Aventura cómica de formas redondas, inocencia física, slapstick amable y energía itinerante.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Trazo cel elástico y expresivo, timing de gag corporal y silueta cartoon de lectura instantánea.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Amarillos soleados, verdes vivos, naranjas suaves y azules limpios de viaje clásico.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
-      material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Iluminación abierta de aventura diurna, sombra simple y acentos brillantes de humor físico.',
+      material_texture: 'Polvo caricaturesco, tela simple, piedra ligera y grano retro optimista.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado broadcast cálido con énfasis en claridad cómica y ternura de movimiento.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Adventurous, joyful, comedic, light-hearted',
+        'Espacio expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.',
+      atmosphere: 'Aventurera, alegre, juguetona, entrañable.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Proporción redondeada, energía de troupe, beat de broma visual y choque amistoso.',
       creative_brief:
-        "Bouncy round forms tumble through whimsical landscapes trailing cartoon dust clouds, every chubby-fisted punch landing with the percussive joy of a child's imagination unleashed. The line work stays loose and playful, warm primaries wrapping earnest adventurers in the unshakeable optimism of classic gag-timing.",
+        'Define una gramática reusable de round-adventure-slapstick para cualquier sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de gag físico sin imponer artes marciales, viajes, troupe, combate ni mundo expansivo literal.',
     },
   },
   {
     id: 'SP05-301',
-    name: 'Space Battleship Yamato - Bridge of Last Hope',
+    name: 'Analog Space Opera Command Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heroic bridge-deck drama, blue space oceans, giant battleship gravitas, analog control panels, humanity-faces-extinction sincerity and noble formation flying',
+        'Ópera espacial clásica, con liturgia de mando analógico, solemnidad colectiva y supervivencia civilizatoria.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno grueso de ingeniería, siluetas jerarquizadas y acting decidido de mando clásico setentero.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de interfaz.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Iluminación de alarma táctica con pools rojos intermitentes, key de interfaz y sombra cel de alta urgencia.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Paneles analógicos, metal pintado, fósforo de monitor y grano de telecine vintage.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional coral.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Noble, urgent, cosmic, patriotic',
+        'Perspectiva forzada y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.',
+      atmosphere: 'Noble, urgente, cósmica, sacrificial.',
       key_features:
-        'Battleship silhouettes, bridge-console layouts, star-ocean backdrops, formation-fleet compositions, noble crew acting',
+        'Paneles analógicos, jerarquía compositiva, alerta solemne, escala interestelar sugerida y heroísmo coral.',
       creative_brief:
-        'Humanity whispers against the infinite black in this bridge-deck opera where analog consoles pulse with the weight of extinction. Scale shrinks flesh and stretches spirit until a single warship becomes the last cathedral of hope. Every frame holds both the cold geometry of stars and the warm tremor of a hand on the helm.',
+        'Construye una gramática reusable de mando espacial analógico para cualquier prompt o imagen de entrada: tensión, ceremonia técnica y escala épica sin imponer puentes de nave, consolas, cascos ni tripulaciones.',
     },
   },
   {
     id: 'SP05-302',
-    name: 'Captain Harlock - Cape in the Star Wind',
+    name: 'Melancholic Space Corsair Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romantic outlaw in deep space, skull insignia, lonely heroic piracy, cape whipping against starfields, melancholic rebellion at operatic scale',
+        'Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y soledad heroica.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Silueta de capa dominante, línea heroica elongada y contornos limpios de icono outlaw de alto contraste.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Negros terciopelo, azules de abismo estelar, rojos vino de emblema y blancos fríos de insignia.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Contraluz estelar dramático con rim fuerte sobre capa y rostro, sombras planas de fuerte identidad gráfica.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Tejido pesado en movimiento, superficies de casco oscurecidas y señalética pirata de acabado clásico.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Terminación premium retro-operática con foco en presencia de figura única y aura de leyenda errante.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Romantic, lonely, rebellious, cosmic',
+        'Contraste de primerísimo monumental contra vacío astral negativo para acentuar aislamiento soberano.',
+      atmosphere: 'Romántica, solitaria, rebelde, cósmica.',
       key_features:
-        'Cape silhouette, skull insignia, starfield loneliness, bridge-deck poses, outlaw idealism framing',
+        'Silueta imperial, vacío compositivo, viento estelar abstracto, emblemas oscuros y código moral insumiso.',
       creative_brief:
-        'A lone silhouette cuts through the galaxy indifference, cape dragging across constellations like a brushstroke of defiance. The skull emblem becomes not a threat but a promise—that even in the void, someone remembers how to feel. Romance here is a blade drawn against loneliness itself.',
+        'Crea una gramática reusable de leyenda corsaria melancólica para cualquier prompt o imagen de entrada: elegancia fúnebre, vacío y disidencia sin imponer capas, calaveras, capitanes ni naves.',
     },
   },
   {
     id: 'SP05-303',
-    name: 'Galaxy Express 999 - Celestial Rail Melancholy',
+    name: 'Celestial Journey Melancholy Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Railway slicing through the cosmos, immortal sorrow, station-platform nostalgia, child traveler wonder mixed with elegiac infinite travel',
+        'Balada cósmica de tránsito existencial, con nostalgia elegíaca, maravilla iniciática y horizonte infinito.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea clásica de tránsito contemplativo, acting meditado y ritmo visual de trayecto largo.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
-      lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Azules de noche profunda, dorados antiguos, blancos de nieve estelar y sepias de recuerdo.',
+      lighting_setup: 'Faroles lechosos, calidez compartimentada y contraluz sobre vacío estelar.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Metal envejecido, vapor suave, madera antigua y película granulada de época.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-poético con legibilidad narrativa de tránsito y emoción de despedida continua.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Melancholic, wondrous, star-bound, poetic',
+        'Perspectiva longitudinal, con profundidad astral que extiende sensación de viaje eterno.',
+      atmosphere: 'Melancólica, maravillada, sideral, meditativa.',
       key_features:
-        'Cosmic train imagery, station platforms, traveler duo staging, star-snow ambience, long-journey symbolism',
+        'Horizonte infinito, umbrales de viaje, equipaje simbólico abstracto, escala cósmica íntima y soledad luminosa.',
       creative_brief:
-        'Steam and starlight entwine as a locomotive threads the needle between planets and grief. Platform after platform, the journey gathers silence like snow on a window, each stop a question the stars refuse to answer. This is travel as meditation, where departure is forever and arrival is a ghost.',
+        'Diseña una gramática reusable de peregrinaje metafísico para cualquier prompt o imagen de entrada: viaje, despedida y escala cósmica íntima sin imponer trenes, estaciones, vías ni equipaje literal.',
     },
   },
   {
     id: 'SP05-304',
-    name: 'Rose of Versailles - Baroque Uniform Revolt',
+    name: 'Baroque Insurgent Melodrama Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Baroque court portraiture, officer uniforms, revolutionary romance, powdered elegance cracking under history, roses and tears moving through palace light',
+        'Tragedia barroca insurgente, con glamour cortesano quebrado, sentimentalismo político y alto voltaje ornamental.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea ornamental y estilizada, posturas de retrato ceremonial y gestualidad trágica de alta teatralidad histórica.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Marfiles empolvados, azules reales, rojos de rosa heráldica y dorados envejecidos.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz lateral ceremonial con sombras planas nobles, halos suaves sobre ornamento y contraste de protocolo.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Brocado ceremonial, encaje rígido, piedra pulida y pátina ornamental al borde del derrumbe.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-histórico con lectura de emblema visual y tensión dramática de destino.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Regal, tragic, historical, dramatic',
+        'Composición profunda con eje de retrato frontal y presión histórica abstracta en segundo plano.',
+      atmosphere: 'Regia, trágica, histórica, apasionada.',
       key_features:
-        'Baroque interiors, uniform detail, rose symbolism, court portrait poses, revolutionary tension',
+        'Ornamento floral, protocolo visual, retrato trágico, sensualidad pictórica y sensación de fractura histórica.',
       creative_brief:
-        'Powdered wigs crack under the strain of revolution while rose petals fall like torn pages from history ledger. Satin and sword share the same trembling light in halls where etiquette masks fury. Beauty here is the final dignity before the guillotine shadow.',
+        'Define una gramática reusable de melodrama barroco insurgente para cualquier prompt o imagen de entrada: protocolo, ornamento y tensión política sin imponer uniformes, palacios, escalinatas ni aristocracia literal.',
     },
   },
   {
     id: 'SP05-305',
-    name: 'Urusei Yatsura - Neon Oni Rom-Com',
+    name: 'Neon Sci-Fi Slapstick Rom-Com Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        '80s TV color punch, alien-schoolgirl chaos, domestic slapstick, fluorescent city nights, sci-fi flirtation and loud romantic nonsense',
+        'Sitcom sci-fi ochentera de caos afectivo, color fluorescente, slapstick corporal y fricción sentimental episódica.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno grueso caricaturesco, acting facial exagerado y timing visual de gag físico instantáneo.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Neones rosas y turquesa, amarillos eléctricos, azules nocturnos saturados y acentos pastel de sitcom.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz frontal televisiva con neón filtrado, contraste bajo y acentos de gag instantáneo.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Superficie doméstica plana, señalética fluorescente, utilería sci-fi ligera y grano retro de emisión.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-pop con claridad de broma, ritmo de caos y legibilidad de ensemble romántico.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Hyper, flirty, neon, mischievous',
+        'Espacio elástico de comedia con deformaciones leves para golpes visuales y persecuciones domésticas.',
+      atmosphere: 'Hiperactiva, coqueta, neón, traviesa.',
       key_features:
-        'Oni-horn silhouette, neon-night streets, domestic-comedy staging, alien-tech gags, loud expression acting',
+        'Color fluorescente, timing corto, expresiones exageradas, gadgets absurdos sugeridos y fricción romántica caricaturesca.',
       creative_brief:
-        'Neon pink splashes against domestic tatami as an alien girl rewrites the rules of gravity and affection one flying mallet at a time. The city hums in fluorescent frequencies while love stumbles through doors it was never meant to open. Chaos becomes a love language spoken in lightning bolts and instant noodles.',
+        'Construye una gramática reusable de rom-com sci-fi histriónica para cualquier prompt o imagen de entrada: neón, slapstick y caos afectivo sin imponer aliens, apartamentos, persecuciones ni iconografía oni.',
     },
   },
   {
     id: 'SP05-306',
-    name: 'Maison Ikkoku - Boarding House Sunset',
+    name: 'Adult Domestic Warmth Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Adult rom-com tenderness, boarding-house clutter, sunset laundry, long-term yearning and everyday comedy rendered with mature retro softness',
+        'Comedia romántica adulta de convivencia lenta, erosión cotidiana y ternura de segunda oportunidad.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea suave de convivencia, actuación sutil de proximidad y composición íntima con humor de fricción diaria.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Ámbares de atardecer, marrones de madera vivida, verdes apagados y rojos discretos de intimidad.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz dorada de fin de tarde con sombras planas tranquilas y contraste bajo que favorece ternura acumulativa.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Superficies gastadas, telas colgadas, muebles usados y grano cálido de serie televisiva clásica.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-doméstico con énfasis en microdrama emocional y timing cómico cotidiano.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Warm, wistful, domestic, patient',
+        'Corredores estrechos y espacios conectados que intensifican roce emocional continuo.',
+      atmosphere: 'Cálida, nostálgica, doméstica, paciente.',
       key_features:
-        'Boarding-house props, sunset balconies, mature-romance close-ups, everyday clutter, retro domestic calm',
+        'Clutter habitable, luz de atardecer, microgesto afectivo, desgaste entrañable y humor cotidiano suave.',
       creative_brief:
-        'Afternoon light pools like honey across cluttered hallways where longing has steeped for seasons. A boarding house becomes a universe of unspoken words, each creaking floorboard a metronome of patience. Maturity in love is the courage to wait while the sunset does its slow and certain work.',
+        'Crea una gramática reusable de intimidad doméstica adulta para cualquier prompt o imagen de entrada: rutina, calidez y tiempo vivido sin imponer pensiones, balcones, vecinos ni romance explícito.',
     },
   },
   {
     id: 'SP05-307',
-    name: 'Touch - Baseball Summer Nostalgia',
+    name: 'Summer Sports Melodrama Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Summer baseball and adolescent longing, school uniforms and batting cages, warm retro youth melancholy, sports and romance sharing one humid frame',
+        'Melodrama deportivo de verano tardío, con rivalidad, duelo íntimo y crecimiento nostálgico.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea atlética limpia, gesto contenido y composición que alterna acción física y pausa emocional.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Verdes soleados, naranjas de atardecer, blancos limpios y azules deslavados de verano tardío.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Sol bajo cálido con contraluces amplios y sombras planas que sostienen melancolía ligera.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Polvo seco, cuero cálido, tela funcional y grano fílmico de recuerdo deportivo.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado retro-atlético premium con lectura táctica de esfuerzo y subtexto romántico en respiraciones largas.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Nostalgic, warm, athletic, wistful',
+        'Perspectiva abierta con compresión selectiva en momentos de mirada y decisión sentimental.',
+      atmosphere: 'Nostálgica, cálida, atlética, melancólica.',
       key_features:
-        'Baseball gear, sunset field staging, summer uniforms, emotional sports framing, youth-love distance',
+        'Luz estival, presión competitiva, pausa antes del esfuerzo, deseo contenido y crescendo emocional.',
       creative_brief:
-        'Summer heat bends the air above the diamond as youth measures distance in stolen glances and bat-crack echoes. The uniform clings to skin that still remembers the cool of morning and the burn of hope. Between innings, between words, between what is and what could be, the game continues.',
+        'Diseña una gramática reusable de deporte sentimental juvenil para cualquier prompt o imagen de entrada: verano, competencia y maduración sin imponer baseball, diamantes, marcadores, dugouts ni adolescentes.',
     },
   },
   {
     id: 'SP05-308',
-    name: 'City Hunter - Glass-Tower Neon Gunplay',
+    name: 'Eighties Neon Precision Noir Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        '80s action-comedy private-eye swagger, skyscraper nights, shoulder pads and handguns, comic pervert bravado punctured by crisp urban action cool',
+        'Noir ochentero seductor, con cinismo brillante, comedia insolente y peligro preciso.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno firme, acting de pose confiada y encuadres dinámicos de tensión vertical.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Azules nocturnos de cristal, morados neón, grises acero y acentos rojos de peligro instantáneo.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Neón alto reflejado en cristal, key cortante y sombras planas de thriller televisivo.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Vidrio nocturno, superficie brillante, tailoring texturado y metal pulido estilizado.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
-      spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Suave, neon, funny, dangerous',
+        'Acabado premium retro-noir con lectura clara de acción, punchline visual y elegancia precisa.',
+      spatial_distortion: 'Profundidad vertical exagerada y lente de acción para ritmo de amenaza.',
+      atmosphere: 'Suave, neón, irónica, peligrosa.',
       key_features:
-        'Skyscraper-night backdrops, detective handgun poses, 80s fashion detail, urban chase framing, slick-comedy contrast',
+        'Neón nocturno, verticalidad abstracta, moda 80s sugerida, ironía visual y contraste entre humor y amenaza.',
       creative_brief:
-        'Glass towers mirror the moon while a suited silhouette adjusts his cufflinks with lethal precision. Danger wears cologne in this city where bullets have better manners than lovers. Every trigger pull is a punchline, and every punchline leaves a bruise shaped like longing.',
+        'Construye una gramática reusable de noir ochentero de precisión para cualquier prompt o imagen de entrada: neón, cinismo y precisión tensa sin imponer skylines, armas, detectives ni violencia literal.',
     },
   },
   {
     id: 'SP05-309',
-    name: 'Dirty Pair - Trouble Consultant Laser Glam',
+    name: 'Explosive Space Glam Action Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bright sci-fi fashion, disaster-prone heroines, white corridors and pink explosions, glamorous chaos in one of the most colorful 80s space-action registers',
+        'Space-action glam hiperpop, con elegancia táctica, croma explosivo y caos coreografiado.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Siluetas fashion dinámicas, contorno cel contundente y lenguaje de pose dual coordinada en clave de impacto.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Blancos clínicos de corredor, rosas explosivos, cianes láser y acentos amarillos de advertencia pop.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz interior brillante de sci-fi retro con flashes de energía y sombras planas para legibilidad de acción veloz.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Corredor sci-fi pulido, textil técnico brillante, residuos de disparo láser y grano analógico televisivo.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-glam con claridad de dúo protagonista y balance entre espectacularidad y control.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Flashy, mischievous, poppy, explosive',
+        'Corredores de fuga y combate con perspectiva lineal acelerada para subrayar velocidad y destrucción elegante.',
+      atmosphere: 'Flashy, traviesa, pop, explosiva.',
       key_features:
-        'Sci-fi fashion silhouettes, white-corridor staging, laser effects, duo dynamic posing, glam-chaos color balance',
+        'Moda sci-fi abstracta, láseres de color, sincronía táctica sugerida, croma explosivo y composición de caos limpio.',
       creative_brief:
-        'White corridors explode into pink confetti as two women armed with fashion and firepower redefine collateral beauty. Glamour is the shockwave, style the afterimage, and competence the thing that keeps them standing when the ceiling comes down. Trouble is not something they find—it is something they accessorize.',
+        'Diseña una gramática reusable de acción glam espacial para cualquier prompt o imagen de entrada: moda, energía táctica y color explosivo sin imponer dúos, pasillos, misiones ni protagonistas concretos.',
     },
   },
   {
     id: 'SP05-310',
-    name: 'Crusher Joe - Orange Suit Space Pulp',
+    name: 'Competent Space Pulp Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Working-space-adventurer bravado, orange pilot suits, ship hangars, pulpy rescue jobs, professional competence and 80s optimism under hard cel color',
+        'Pulp espacial profesionalista, con ética de oficio, aventura resolutiva y optimismo técnico ochentero.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno robusto de diseño técnico, acting competente y staging funcional orientado a resolución práctica.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Naranjas operativos, azules técnicos, grises industriales y blancos de señal funcional.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Iluminación de mantenimiento con key frontal claro, sombras planas técnicas y acentos de baliza.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Metal usado, paneles de servicio, tejido técnico y desgaste mecánico de uso intensivo.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-pulp con foco en claridad procedimental, jerarquía funcional y acción resolutiva.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Pulp, adventurous, capable, bright',
+        'Gran volumen operativo con líneas guía y flujo direccional para enfatizar competencia técnica.',
+      atmosphere: 'Pulp, aventurera, competente, luminosa.',
       key_features:
-        'Pilot-suit color pop, hangar interiors, rescue-job framing, working-spacecrew staging, 80s cel boldness',
+        'Color-identidad fuerte, claridad procedimental, hardware funcional sugerido, oficio competente y aventura directa.',
       creative_brief:
-        'Orange suit against vacuum black, a declaration that work can be heroic and heroes can clock in. Hangar bays smell of ozone and optimism, the kind that survives planetary storms and corporate fine print. Competence is its own aesthetic when the galaxy needs a rescue and professionalism is the only superpower.',
+        'Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada: oficio, claridad técnica y heroísmo práctico sin imponer trajes, hangares, tripulaciones ni rescates.',
     },
   },
   {
     id: 'SP05-312',
-    name: "Cat's Eye - Gallery Heist Red Leotard",
+    name: 'Elegant Eighties Heist Glam Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Art-thief sisters, red leotards, museum-night spotlights, cat burglar poise, romance and heist glamour rendered with 80s urban polish',
+        'Heist glam nocturno de alta elegancia, con sofisticación ochentera, precisión coreográfica y tensión de infiltración.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
-      color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Línea estilizada de figura felina, poses de infiltración milimétrica y coreografía silenciosa táctica.',
+      color_palette: 'Rojos icónicos, negros cerrados, dorados de lujo y blancos de spotlight.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Conos de luz de seguridad, sombras planas marcadas y brillos reflectivos para tensión furtiva.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Piedra pulida, vidrio reflectivo, cuero técnico y grano analógico de serie nocturna retro.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium de thriller elegante con legibilidad de movimiento furtivo y glamour controlado.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Sly, elegant, nocturnal, glamorous',
+        'Espacio abstracto con perspectiva profunda y capas de vigilancia que tensionan el vector de salida.',
+      atmosphere: 'Astuta, elegante, nocturna, glamurosa.',
       key_features:
-        'Museum heist props, red-leotard silhouettes, spotlight cones, trio-sister staging, cat-burglar grace',
+        'Rojo acento, lujo reflejado, ballet criminal abstracto, siluetas elegantes y precisión estratégica.',
       creative_brief:
-        'Three silhouettes dissolve into museum shadow, red leotards the only confession against the dark. Glass cases hold centuries but the real treasure moves on silent feet across polished marble. Theft here is a ballet where the curtain rises on romance and falls on escape.',
+        'Construye una gramática reusable de heist glam para cualquier prompt o imagen de entrada: elegancia, reflejos y tensión furtiva sin imponer tríos, ladronas, museos, vitrinas ni leotardos.',
     },
   },
   {
     id: 'SP05-313',
-    name: 'Saint Seiya - Constellation Armor Clash',
+    name: 'Zodiac Cosmic Heroism Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mythic armor, zodiac temples, heroic friendship, constellation power flares, divine punches and young blood screaming beneath marble skies',
+        'Épica zodiacal juvenil, con fraternidad heroica, brillo ritual y dramatismo cósmico declarativo.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contornos brillantes, anatomía heroica elongada y poses de impacto frontal con energía ritual sagrada.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Azules celestes, dorados astrales, blancos marmóreos y rojos de voluntad combativa.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Flares de constelación sobre clave dura de cel, sombras planas dramáticas y rim luminoso en bordes ornamentales.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Brillo ceremonial pulido, piedra mítica abstracta, partículas de impacto y grano analógico retro.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-shonen con lectura instantánea de equipo, poder astral y escalada de intensidad.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Mythic, earnest, celestial, fierce',
+        'Perspectiva monumental ascendente para amplificar sacrificio, impacto y destino estelar.',
+      atmosphere: 'Mítica, vehemente, celeste, sacrificial.',
       key_features:
-        'Armor silhouettes, constellation effects, temple staircases, team-friendship posing, marble-sky epic scale',
+        'Iconografía estelar, brillo ritual, estelas cósmicas, pose declarativa y emoción combativa juvenil.',
       creative_brief:
-        'Marble cracked by divine pressure as bronze-clad fists tear through the boundary between myth and boy. Constellations lean closer, hungry to witness what young blood sounds like when it believes. Every armor piece carries the weight of a star and the fragility of a friendship.',
+        'Diseña una gramática reusable de heroísmo zodiacal para cualquier prompt o imagen de entrada: cosmos, brillo y juramento visual sin imponer armaduras, templos, escalinatas ni combates literales.',
     },
   },
   {
     id: 'SP05-317',
-    name: 'Megazone 23 - Arcade Highway Revelation',
+    name: 'Arcade Techno-Rebellion Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bike speed, arcade neon, hidden-city truth, youth rebellion under simulated skies, glossy urban 80s tech mythmaking',
+        'Retrofuturo rebelde de OVA ochentera, con neón sintético, velocidad gráfica y paranoia de sistema encubierto.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
-      color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Trazado afilado de señalética, diagonales cinéticas y silueta rebelde como eje de identidad visual.',
+      color_palette: 'Cianes y magentas arcade, violetas sintéticos de twilight y negros húmedos.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Derrame de neón nocturno, parpadeo de cartelería abstracta y contraste cel duro con backfill de sodio.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Brillo de lluvia sobre superficie oscura, borde de bloom CRT y grano analógico de video-era.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium OVA retro-tech con claridad de velocidad y atmósfera de inquietud sistémica.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Sleek, rebellious, nocturnal, revelatory',
+        'Perspectiva de avance forzado con compresión profunda para enfatizar fuga y revelación.',
+      atmosphere: 'Elegante, rebelde, nocturna, revelatoria.',
       key_features:
-        'Arcade glow, motorcycle motion, hidden-system hints, urban highways, youth-rebellion silhouettes',
+        'Overlays de arcade, neón sintético, velocidad lateral, vigilancia abstracta y revelación de verdad oculta.',
       creative_brief:
-        'Motorcycle exhaust bleeds into arcade phosphor as a generation discovers that the sky above the city is just a screen, a lie painted by power. Speed becomes revelation, each gear-shift peeling back another layer of simulation until truth blossoms like neon on wet asphalt. Rebellion has never looked this glossy.',
+        'Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada: arcade, velocidad y paranoia sin imponer motos, carreteras, skylines ni riders.',
     },
   },
   {
     id: 'SP05-320',
-    name: 'Space Adventure Cobra - Red Jacket Laser Rogue',
+    name: 'Charismatic Space Rogue Pulp Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Easygoing cosmic rogue swagger, laser arm, nightclub planets, flirtation and danger with a perpetual grin, pulp-space cool rendered in cel-era shine',
+        'Pulp espacial canalla de carisma seductor, humor insolente y peligro cool en clave noir retrofuturista.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
-      color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Silueta rogue confiada, postura relajada de tensión y contorno cel limpio con staging pulp de viñeta dinámica.',
+      color_palette: 'Rojo dominante, púrpuras interestelares, ámbar ahumado y azules acero.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Iluminación lounge-noir, bordes de energía, charcos de luz baja y rim estelar cosmopolita.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Brillo de vestuario retro, humo difuso de ambiente, superficies sci-fi cepilladas y grano compositivo analógico.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium pulp-80s con legibilidad total del protagonista y atmósfera de peligro juguetón.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Cocky, cosmic, playful, dangerous',
+        'Encuadre centrado en carisma con profundidad comprimida y dinámica one-vs-many de alta confianza.',
+      atmosphere: 'Desfachatada, cósmica, juguetona, peligrosa.',
       key_features:
-        'Red-jacket silhouette, laser-arm iconography, nightclub planet backdrops, rogue body language, pulp-space framing',
+        'Rojo acento, silueta relajada, amenaza elegante, ironía visual y lujo retrofuturista sugerido.',
       creative_brief:
-        'A grin cuts through cigar smoke and starlight as a man with a laser arm proves that cool cannot be learned, only worn. Every planet is a nightclub, every corridor a flirtation, every gun barrel a conversation starter. The cosmos is just a casino and this rogue is the house, and the house always wins with style.',
+        'Construye una gramática reusable de rogue pulp espacial para cualquier prompt o imagen de entrada: seducción, ironía y amenaza elegante sin imponer chaquetas, láseres, clubes ni anti-héroes concretos.',
     },
   },
   {
     id: 'SP05-315',
-    name: 'Zeta Gundam - Colony Flashpoint Tragedy',
+    name: 'Angular Institutional Tragedy Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sharper-edged war mecha, colony politics, cockpit grief, military uniforms under harsher 80s sci-fi lighting, youth crushed by factional conflict',
+        'Tragedia política áspera, donde juventud, geometría coercitiva e institución opresiva chocan.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Contorno angular severo, siluetas rígidas y actuación contenida de trauma bajo presión institucional.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Grises industriales, azules fríos de interfaz, rojos de alerta táctica y blancos desaturados.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz dura de control institucional, sombras cel planas tajantes y destellos de interfaz en rostros tensos.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Aleación pesada, vidrio fracturable, paneles tácticos y ruido analógico de señal en crisis.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-institucional con lectura estratégica clara y peso emocional de decisión irreversible.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Tense, militarized, tragic, angular',
+        'Profundidad comprimida y escala opresiva para reforzar claustrofobia política.',
+      atmosphere: 'Tensa, institucional, trágica, cortante.',
       key_features:
-        'Cockpit and colony imagery, war-uniform silhouettes, sharper mecha forms, political tension framing, pilot trauma close-ups',
+        'Geometría angular, luz de conflicto, códigos abstractos de poder, crisis psicológica y masa opresiva.',
       creative_brief:
-        'Colony glass fractures in slow motion while cockpit screens paint a teenager face in the colors of impossible choices. Metal sharpens into ideology and grief comes in angular shadows that no mobile suit can shield. War in this register tastes like static and smells like someone else future burning.',
+        'Diseña una gramática reusable de tragedia institucional angular para cualquier prompt o imagen de entrada: aristas, trauma y poder opresivo sin imponer colonias, cabinas, pilotos, facciones ni máquinas concretas.',
     },
   },
   {
     id: 'SP05-002',
-    name: 'Vintage Super Robot',
+    name: 'Vintage Mechanical Grandeur Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heavy chrome mecha, heroic posing, bold retro machinery, rivet detailing, dramatic launch sequences, chunky mechanical joints',
+        'Heavy chrome grandeur, heroic massing, bold retro machinery logic, rivet detailing, and triumphant analog scale.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Chunky silhouette blocking, rivet-conscious contouring, mechanical panel breaks, and impact-line emphasis.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Saturated super-robot primaries with steel neutrals, hot warning reds, and heroic contrast blocks',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Hard directional key with dramatic cel shadow wedges, metallic rim splits, and backlight flare.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Painted steel plate cues, cel-highlighted chrome edges, analog matte background treatment, scanline-era grain',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Classic broadcast frame quality with strong mechanical readability and era-faithful cel compositing.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
+        'Extreme low-angle heroic framing, launch-vector perspective exaggeration, and scale-first composition logic.',
       atmosphere: 'Action-heavy, triumphant, intense, explosive',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Monumental massing grammar, riveted panel articulation, launch-vector perspective drama, and metallic cel highlight choreography.',
       creative_brief:
-        "Towering chrome titans erupt from launch bays in thunderous perspective, each rivet and piston drawn with the obsessive reverence of an artist who believes machines have souls. Cel shadows carve dramatic weight into chunky mechanical joints while the pilot's battle cry tears through painted skies streaked with film grain and glory.",
+        'Preserve vintage mechanical grandeur through heavy silhouette logic, high-contrast cel shading, riveted articulation, and emotionally maximal hero framing. Transfer this logic to any subject or input image without requiring robots, vehicles, launch bays, pilots, or machinery as literal content.',
     },
   },
   {
     id: 'SP05-005',
-    name: 'Grounded War Mecha',
+    name: 'Grounded Tactical Machinery Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Military mecha realism, dusty battlefields, sober sci-fi drama, tank treads, tactical maps, weary soldier faces',
+        'Maquinaria táctica terrenal, doctrina funcional, fatiga de campaña y sobriedad operacional.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea técnica robusta, panelado legible y acting de tensión logística continua.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Olivas apagados, tierra polvorienta, acero mate y rojos mínimos de señal de riesgo.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz dura de campo abierto, sombras secas de blindaje y reflejos discretos en metal funcional.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Superficie rayada, barro compactado, lona técnica y grano viejo de crónica operacional.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado retro de precisión mecánica con claridad documental de hardware y cadena funcional.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Serious, war-torn, grim, resolute',
+        'Profundidad por capas tácticas con bloqueos, cobertura abstracta y avance pesado.',
+      atmosphere: 'Seria, devastada, áspera, resiliente.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Masa funcional, mapa táctico implícito, desgaste prolongado y peso logístico visible.',
       creative_brief:
-        'Dust chokes the battlefield as weary soldiers huddle beneath the shadow of walking tanks scarred by a hundred campaigns, every panel line and tread link etched with documentary precision. This is not heroic fantasy but the grim arithmetic of war, rendered in muted retro tones where survival itself is victory.',
+        'Define una gramática reusable de grounded-tactical-machinery para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico sin imponer mechas, vehículos, frentes de guerra, escuadras, mapas ni campo de batalla.',
     },
   },
   {
     id: 'SP05-006',
-    name: 'Idol Mecha Epic',
+    name: 'Pop Transformable Aerial Spectacle Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Idol glamour mixed with transformable aircraft and bright theatrical staging, stage lights, microphone stands, flight decks, concert energy',
+        'Espectáculo pop transformable de alto brillo, teatralidad aérea y emoción de clímax performático.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Trazo cel dinámico con coreografía de ascenso y transición performance-heroísmo.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Magentas de show, cian eléctrico, blanco perlado y acentos metálicos cromados.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Spotlights glam combinados con flare técnico, rim brillante y gradiente futurista.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Lentejuela textil, pintura técnica brillante, panel translúcido y grano cálido broadcast.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y tecnología.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Romantic, spectacular, dazzling, hopeful',
+        'Espacio elevado y ascendente conectado por encuadres de transformación y vuelo gráfico.',
+      atmosphere: 'Radiante, emotiva, espectacular, eufórica.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Silueta pop distintiva, transformación técnica, iluminación de show y gestualidad de clímax.',
       creative_brief:
-        'Stage lights melt into afterburner trails as pop-idol glamour and transformable fighter craft share the same kaleidoscopic spotlight. Sequins and vernier thrusters catch the key light together, a dizzying marriage of concert spectacle and aerial ballet that dares the frame to contain its own radiance.',
+        'Diseña una gramática reusable de pop-transformable-aerial-spectacle para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo sin imponer idols, mechas, escenarios, conciertos, cockpits, aeronaves ni combate.',
     },
   },
   {
     id: 'SP05-314',
-    name: 'Gunbuster - Tears Before Warp Launch',
+    name: 'Monumental Formation Sacrifice Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Training montage emotion, giant launch gantries, hot-blooded schoolgirls and cosmic stakes, tears and determination rendered in thick retro spectacle',
+        'Drama de entrenamiento y sacrificio extremo, con vulnerabilidad emotiva, escala cósmica y determinación formativa.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea cel de alto contraste, close-ups emocionales intensos y siluetas monumentales frente a fragilidad humana.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Azules nocturnos de base, blancos técnicos, rojos de alarma y naranjas de impulso terminal.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Luz industrial con destellos de energía, sombras planas rígidas y backlight de cuenta regresiva emocional.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Masa técnica pesada, paneles funcionales, superficies de esfuerzo y grano televisivo ochentero.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-dramático con énfasis en escala, cuerpo vulnerable y crescendo emocional de partida.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Earnest, grand, tearful, heroic',
+        'Perspectiva vertical extrema que magnifica madurez forzada y salto irreversible.',
+      atmosphere: 'Sincera, grandiosa, llorosa, heroica.',
       key_features:
-        'Launch-gantry scale, mecha training posture, crying determination close-ups, retro-cosmic effects, school-to-war contrast',
+        'Escala colosal, lágrimas de determinación, infraestructura abstracta, salto irreversible y emoción formativa.',
       creative_brief:
-        'Gantry lights drip like tears down the face of a machine too large for any sky. A girl fist trembles not with fear but with the terrifying fullness of purpose while warp engines hum the anthem of leaving everything behind. The mecha stands not as weapon but as cathedral to the cost of growing up.',
+        'Crea una gramática reusable de heroísmo formativo monumental para cualquier prompt o imagen de entrada: entrenamiento, sacrificio y escala cósmica sin imponer academias, plataformas, motores, pilotos ni lanzamientos.',
     },
   },
   {
     id: 'SP05-316',
-    name: 'Aura Battler Dunbine - Insect Mecha Mistrealm',
+    name: 'Biomorphic Mist Ritual Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasy-mecha hybrid with insect armor, misty otherworld terrain, sword-bearing machines, 80s dreamlike war fantasy suspended in glowing fog',
+        'Fantasía biomórfica de extrañeza onírica, con tecnología ritual, niebla viva y siluetas quiméricas.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Siluetas quiméricas con línea orgánico-metálica, poses heroicas y contorno clásico de cel.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Verdes brumosos, violetas de crepúsculo arcano, metales opacos y acentos lumínicos etéreos.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Niebla luminosa como fuente principal, key suave de contracampo y sombras planas que conservan legibilidad retro.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Quitina metálica, membranas translúcidas, materia húmeda fantástica y ruido fílmico analógico.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de tensión irreal sostenida.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Strange, misty, heroic, otherworldly',
+        'Profundidad brumosa con distorsión ligera de escala para reforzar mundo no terrestre.',
+      atmosphere: 'Extraña, brumosa, heroica, ultraterrena.',
       key_features:
-        'Insect-mecha silhouettes, mist realms, sword poses, fantasy-war backdrops, luminous fog atmosphere',
+        'Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.',
       creative_brief:
-        'Chitinous steel beats translucent wings in mist so thick it becomes a character, a shroud that remembers ancient wars. Fantasy bleeds into circuitry and the sword becomes a question neither magic nor machine can answer alone. The air itself glows with the residue of impossible allegiances.',
+        'Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada: niebla, quimera y tecnología ritual sin imponer insectos, espadas, guerras ni mechas.',
     },
   },
   {
     id: 'SP05-318',
-    name: 'Devilman 1972 - Psychedelic Devil Cry',
+    name: 'Psychedelic Demonic Horror Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Raw 70s demonic transformation, wild color flashes, anguished screaming, biblical panic and old-TV violence rendered with unhinged retro intensity',
+        'Horror demónico setentero de violencia expresionista, con transformación corporal cruda y tragedia sin filtro.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Deformación anatómica agresiva, trazo quebrado de metamorfosis y energía de tinta frenética.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Rojos hemáticos ácidos, amarillos tóxicos, violetas infernales y blancos de pánico estroboscópico.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Estallidos de contraste, subluces de horror y sombras cel inestables con artefacto de señal analógica.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Pintura cel rugosa, sangrado croma de TV antigua y fondos deteriorados de pincel duro.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium de shock-retro deliberadamente abrasivo, con legibilidad emocional asentada en confrontación visual.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Panic-struck, psychedelic, tragic, primal',
+        'Warping de body horror y encuadre desorientado impulsado por dolor de transformación.',
+      atmosphere: 'Pánico, psicodelia, tragedia, primalidad.',
       key_features:
-        'Demonic transformation poses, old-TV color harshness, screaming faces, biblical-horror iconography, raw retro violence',
+        'Agonía metamórfica, simbolismo apocalíptico, brutalidad cromática, grano de broadcast antiguo e impacto visceral.',
       creative_brief:
-        'Colors fracture into screams as a human face remembers what lives beneath the skin. The TV signal distorts, unable to contain the voltage of one soul tearing itself in half. This is not horror for entertainment—this is horror as honesty, the frame shaking with the weight of what we hide inside.',
+        'Construye una gramática reusable de horror demónico expresionista para cualquier prompt o imagen de entrada: transformación, crudeza y tragedia cromática sin imponer demonios literales ni escenas de violencia concreta.',
     },
   },
   {
     id: 'SP05-007',
-    name: 'Wasteland Martial Legend',
+    name: 'Wasteland Impact Legend Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hyper-masculine wasteland action, thick shadows, severe physiques, bulging muscles, post-apocalyptic leather, dramatic blood splatter',
+        'Épica de supervivencia brutal, impacto físico extremo, ferocidad ritual y dureza post-colapso.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Línea gruesa y cortante, anatomía hipertensa y puesta de golpe frontal con lectura brutal inmediata.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Ocres abrasados, negros pesados, rojos secos y acentos hueso de paisaje devastado.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Sol alto implacable y sombras densas, con destellos duros sobre sudor, metal y cuero gastado.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Cuero curtido, polvo volcánico, cicatriz visible y grano áspero de cinta analógica violenta.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado retro de alto contraste corporal, privilegiando contundencia, daño y resiliencia.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Brutal, iconic, intense, visceral',
+        'Horizonte árido abstracto con encuadres de colisión directa y escala de choque primitivo.',
+      atmosphere: 'Brutal, icónica, tensa, visceral.',
       key_features:
-        'Hand-painted background energy, nostalgic visual warmth, expressive character posing, iconic era style',
+        'Siluetas masivas, gesto de supervivencia, dureza wasteland y coreografía de impacto sin ornamento.',
       creative_brief:
-        'Bulging anatomy tears through leather and shadow in a post-apocalyptic arena where blood sprays in dramatic arcs across hand-painted wasteland skies. Every muscle fiber strains against thick cel contours, each blow a thunderclap of hyper-masculine fury etched into the very grain of the analogue frame.',
+        'Construye una gramática reusable de wasteland-impact-legend para cualquier sujeto, enfocada en peso físico, dureza material y catarsis de choque sin imponer desiertos, duelos, guerreros, cuero, cicatrices ni combate literal.',
     },
   },
   {
     id: 'SP05-319',
-    name: 'Super Dimension Fortress Macross - Carrier Deck Pop Destiny',
+    name: 'Strategic Pop Duality Style',
     category: '11. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Carrier-deck mecha operations mixed with pop-idol fate, city-inside-ship scale, missiles and melodies sharing one dramatic retro-future frame',
+        'Ópera pop de dualidad estratégica y espectáculo emocional, donde tensión técnica y melodrama cromático coexisten.',
       form_and_line:
-        'Cel-era anime linework, bold contour strokes, vintage cel shading technique, hand-drawn frame precision',
+        'Doble registro de línea, rigidez operacional y fluidez performativa de espectáculo.',
       color_palette:
-        'Warm retro primaries, soft cel tones, muted saturation, faded film-stock hues',
+        'Grises tácticos, rojos de alerta, azules estelares y pasteles pop de contrapeso emocional.',
       lighting_setup:
-        'Simple cel shadows, bold key light, flat directional shading, rim highlights',
+        'Haze técnico combinado con spot escénico, glow de interfaz y contraluces cósmicos de gran dramatismo.',
       material_texture:
-        'Painted backgrounds, cel-texture edges, gouache matte finish, vintage grain texture',
+        'Placas pintadas, marcas operativas, superficies de show y shimmer de borde cel analógico.',
       render_quality:
-        'Vintage broadcast-quality anime frame, analogue film grain, classic 80s telecine look, warm filmic softness',
+        'Acabado premium retro-futuro con balance nítido entre lectura táctica y catarsis pop escénica.',
       spatial_distortion:
-        'Retro anime proportions, elongated figures, dramatic forced perspective, classic character staging',
-      atmosphere: 'Romantic, strategic, pop-infused, starry',
+        'Escala macro contrapuesta a encuadre íntimo performativo para tensión entre estrategia y canción.',
+      atmosphere: 'Romántica, estratégica, pop, sideral.',
       key_features:
-        'Carrier-deck staging, idol symbolism, city-inside-ship backdrops, missile salvos, retro-future military glam',
+        'Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.',
       creative_brief:
-        'A pop melody drifts across a carrier deck where love and missile trajectories share the same radar screen. Inside the ship, a city dreams in miniature while outside, vacuum waits like an unwritten verse. Fate here is both a combat formation and a chorus, sung in harmony with destruction.',
+        'Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada: estrategia, espectáculo y romance gráfico sin imponer carrier decks, idols, ciudades nave, mechas ni operaciones militares.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

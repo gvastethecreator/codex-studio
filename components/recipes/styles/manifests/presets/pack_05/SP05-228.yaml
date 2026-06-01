@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Post-collapse robot mortality, pale ruin vistas, lonely black-and-white heroism, existential combat against entropy, dust and silence as atmosphere
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: White wasteland robot elegy, with pale entropy, lonely heroism, post-collapse silence, and machine mortality.
+  form_and_line: Elegant mechanical curves, sparse black-white silhouettes, long empty contours, and slow mythic action lines.
+  color_palette: Chalk white, ash gray, dead black, pale blue, rust whisper orange, and faint gold memory.
+  lighting_setup: Bleached overcast, soft rim isolation, dust diffusion, and almost-shadowless elegiac light.
+  material_texture: Powder dust, worn enamel, chipped metal, dry polymer, wind-erased grain, and soft cel haze.
+  render_quality: High-detail sci-fi anime finish with restrained ruin texture, pale clarity, and mythic loneliness.
+  spatial_distortion: Empty horizon expansion, small-figure isolation, and entropy-soft depth without fixed wasteland staging.
   atmosphere: Elegiac, pale, lonely, mythic
-  key_features: Pale wasteland backdrops, elegant robot forms, collapse-era ruins, lonely hero framing, entropy motifs
-  creative_brief: A white silence stretches across the end of all things, where robots learn to grieve before they learn to die. Elegance survives the ruins, a lonely figure in black against the pale ghost of civilization. The last beauty is a machine that understands loss.
+  key_features: Pale entropy, elegant machinery, lonely contrast, dust silence, machine elegy.
+  creative_brief: >-
+    Make any prompt feel like a pale machine elegy: use white silence, worn
+    enamel, dust haze, and lonely contrast without requiring robots, ruins,
+    wastelands, or combat against entropy.
 avoidRules:
   - realistic
   - 3d render

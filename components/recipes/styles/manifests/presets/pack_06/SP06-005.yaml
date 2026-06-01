@@ -17,9 +17,9 @@ visualDna:
   color_palette: Bright, pure pigments, gold leaf
   lighting_setup: Soft, internal glow
   material_texture: Wood panel, smooth gesso
-  render_quality: Historical, religious art
-  spatial_distortion: Stiff poses
-  atmosphere: Sacred, ancient
+  render_quality: Historical panel-painting discipline with devotional precision but no mandatory subject
+  spatial_distortion: Flattened icon-plane depth, deliberate frontality, and fine linear modeling
+  atmosphere: Reverent, ancient, luminous through craft rather than narrative content
   key_features: Fine linear brushwork
   creative_brief: Egg yolk binds pigment into luminous permanence, a medium that predates oil and outlasts empires. Fine cross-hatching builds form from patience, each translucent layer glowing from within like stained glass. The image feels sacred not through subject but through the discipline of its making.
 avoidRules:
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

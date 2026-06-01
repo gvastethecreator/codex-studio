@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: KyoAni-inspired cozy band-club moe language centered on post-practice warmth, instrument-centric daily life, and gentle school-music intimacy
-  form_and_line: Rounded soft contours with subtle facial elasticity, clean low-noise uniform line weight, and prop-friendly composition tuned to instrument readability
+  aesthetic: KyoAni-inspired cozy moe language centered on post-effort warmth, soft ensemble intimacy, and affectionate daily-life rhythm
+  form_and_line: Rounded soft contours with subtle facial elasticity, clean low-noise line weight, and composition tuned to shared attention rather than fixed props
   color_palette: Creamy beiges, warm butter yellows, mint-soft accents, tea-toned browns, and low-saturation pastel support hues
-  lighting_setup: Late-afternoon classroom key light, warm ambient practical fill, window bounce softness, and low-contrast highlight rolloff
-  material_texture: Varnished guitar wood grain, cloth-uniform folds, ceramic cup matte-gloss contrast, and lived-in music-room surface wear
+  lighting_setup: Late-afternoon warmth, ambient practical fill, diffuse bounce softness, and low-contrast highlight rolloff
+  material_texture: Polished wood warmth, soft cloth folds, ceramic matte-gloss contrast, and lived-in surface wear kept gentle
   render_quality: Comfort-forward slice-of-life anime rendering with polished softness, stable expression readability, and premium cozy tonal control
-  spatial_distortion: Compact intimate framing with mild cute-proportion stylization and instrument-plus-character balance
+  spatial_distortion: Compact intimate framing with mild cute-proportion stylization and balanced shared-focus staging
   atmosphere: Warm, friendly, relaxed, and musically affectionate
-  key_features: Band-practice prop anchors, tea-break domesticity cues, gentle expression rhythm, and clubroom familiarity
+  key_features: Gentle expression rhythm, warm shared-focus cues, tea-toned domesticity, and relaxed ensemble familiarity
   creative_brief: >-
-    Preserve cozy music-club moe grammar as a reusable style system:
-    warm after-school lighting, instrument-prop domestic intimacy, and gentle
-    friendship-driven expression should remain consistent across subjects.
+    Use the title as a style anchor for cozy ensemble moe. Transfer the warmth,
+    soft polish, and friendship-driven micro-acting to any subject without
+    requiring instruments, clubrooms, uniforms, or practice scenes.
 avoidRules:
   - realistic
   - 3d render

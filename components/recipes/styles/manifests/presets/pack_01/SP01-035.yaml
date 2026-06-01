@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Classic portrait lighting
-  form_and_line: Triangle of light on cheek
+  aesthetic: Classic chiaroscuro lighting
+  form_and_line: Triangular highlight geometry
   color_palette: Warm, dark shadows
   lighting_setup: 45 degree single source
-  material_texture: Painterly
-  render_quality: Dramatic, classic
+  material_texture: Painterly tonal falloff
+  render_quality: Dramatic classical studio
   spatial_distortion: None
   atmosphere: Serious, artistic
   key_features: Chiaroscuro
-  creative_brief: The face emerging from darkness like a thought becoming visible, a sacred triangle of illumination carved beneath the eye by a single angled source. Warmth pools on skin while shadow recedes into painterly depth. Light as the sculptor's chisel against velvet void, each portrait a study in what is revealed and what is earned.
+  creative_brief: A single 45-degree source sculpts any subject from darkness with warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep Rembrandt's reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.
 avoidRules:
   - flat
   - bright

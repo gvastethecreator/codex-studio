@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Middle-school psychic awkwardness exploding into paint-like energy storms, emotional overload meter, sketchy sincerity, abstract telekinetic outbursts, humility versus apocalypse
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Psychic paint-surge meltdown, with awkward sincerity, emotional overload, rough sketch artifacts, and abstract energy storms.
+  form_and_line: Wobbly sketch contours, sudden paint-smear bursts, simple honest face grammar, elastic psychic rings, and hand-drawn rupture.
+  color_palette: Acid rainbow bursts, soft neutral calm fields, hot magenta, electric cyan, yellow-white overload, and raw pencil gray.
+  lighting_setup: Aura bloom surges, exposure jumps, emotional flash peaks, and calm flat light before rupture.
+  material_texture: Paint smear, crayon edge noise, sketch grain, cel polish breaks, paperlike halftone, and raw energy streaks.
+  render_quality: Experimental modern anime finish preserving rough expressive artifacts inside high-energy action clarity.
+  spatial_distortion: Emotion-driven warping, paint-like psychic expansion, and frame pressure that bends around inner state.
   atmosphere: Earnest, explosive, weird, cathartic
-  key_features: Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos
-  creative_brief: Emotion crosses an invisible threshold and the world becomes a paint storm howling with every color the psyche can manufacture. A boy with a bowl cut holds back the apocalypse with nothing but honesty and trembling hands. The universe listens when feeling overflows, and it screams back in abstract.
+  key_features: Paint-surge energy, sincere simplicity, overload threshold, rough marks, abstract catharsis.
+  creative_brief: >-
+    Make any prompt express inner overflow: let rough sketch marks break into
+    paintlike psychic color, with sincerity and catharsis driving the frame
+    instead of a fixed character, institution, or catastrophe premise.
 avoidRules:
   - realistic
   - 3d render

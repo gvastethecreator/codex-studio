@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-122
+packId: pack_02
+name: Local News Chroma Key Package
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: Local news broadcast package, chroma-key compositing, urgent graphic polish, studio-blue authority, lower-third geometry without readable text
+  form_and_line: Rectangular broadcast frames, hard graphic boxes, safe-area composition, anchor-desk symmetry abstracted into layout
+  color_palette: Broadcast blue, alert red, white headline blocks, chrome grey, saturated weather green
+  lighting_setup: Clean studio key, glossy set reflections, green-screen spill edge, high-fill news clarity
+  material_texture: Digital key edges, compressed overlay graphics, studio acrylic sheen, video sharpening halos
+  render_quality: Local TV clean, mildly dated, graphic-heavy, authority-by-template
+  spatial_distortion: Layered compositing planes, background replacement depth, boxed inset framing
+  atmosphere: Urgent, official, polished, slightly synthetic
+  key_features: Chroma halo, lower-third bars, inset rectangles, glossy blue package, no readable text
+  creative_brief: 'Use local-news package design as style: clean studio light, blue-red broadcast graphics, lower-third bars, inset rectangles, chroma-key edge halos, and compressed video sharpness. Avoid requiring anchors, desks, maps, headlines, or readable text. The input should feel composited into urgent TV grammar.'
+avoidRules:
+  - cinematic grain
+  - handwritten text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-122.webp
+attributes:
+  negativePrompt: cinematic grain, handwritten text
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

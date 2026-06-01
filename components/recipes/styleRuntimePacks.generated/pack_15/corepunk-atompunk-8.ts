@@ -10,18 +10,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo',
     style: {
-      aesthetic: 'Retro-futurist civic center where atomic optimism meets controlled dread.',
-      form_and_line: 'Boomerang canopies, orbit motifs, and radial plaza geometry.',
+      aesthetic: 'Retro-atomic graphic language where optimism carries visible scientific risk.',
+      form_and_line:
+        'Boomerang silhouettes, orbit rings, radial burst geometry, and safety-icon curves.',
       color_palette: 'Mint teal, uranium chartreuse, and chrome silver.',
-      lighting_setup: 'Glowing reactor signage and hard noon sunlight on polished surfaces.',
-      material_texture: 'Enamel panels, brushed aluminum, terrazzo, and illuminated glass brick.',
+      lighting_setup: 'Irradiated sign glow and hard noon reflections on polished surfaces.',
+      material_texture:
+        'Enamel panels, brushed aluminum, terrazzo speckle, and luminous glass brick.',
       render_quality: 'Crisp concept art with poster-like readability and worldbuilding detail.',
-      spatial_distortion: 'Symmetric central perspective emphasizing civic monumentality.',
+      spatial_distortion: 'Symmetric radial composition with controlled monument-scale depth.',
       atmosphere: 'Confident progress, latent risk, and mid-century spectacle.',
       key_features:
-        'Isotope fountain, atom sculptures, civic dome, and radiation-proof tram stops.',
+        'Atom-halo badges, isotope glyph clusters, civic-poster framing, and controlled hazard accents.',
       creative_brief:
-        'An atompunk downtown designed as a public promise that science can save everything.',
+        'Preserve neon isotope-plaza grammar as a reusable style system: retro-atomic monumentality, spectacle-driven public science cues, and latent-risk aesthetic tension should remain coherent across any subject.',
     },
   },
   {
@@ -31,17 +33,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, dystopian-bunker-only, sludge-industrial, fantasy-castle, watermark, text, logo',
     style: {
-      aesthetic: 'Elevated public walkway wrapped around ceremonial clean-energy reactors.',
-      form_and_line: 'Curved skybridges, turbine fins, and segmented viewing decks.',
+      aesthetic: 'Ceremonial clean-energy futurism with transparent reactor poetics.',
+      form_and_line: 'Curved energy-flow bands, turbine fins, and segmented orbital frames.',
       color_palette: 'Cobalt blue, reactor lime, and white ceramic.',
-      lighting_setup: 'Reactor core glow through transparent shielding with dusk sky contrast.',
+      lighting_setup: 'Reactor-core glow through transparent shielding with cool dusk contrast.',
       material_texture: 'Gloss ceramic cladding, tempered glass, and anti-radiation steel ribs.',
       render_quality: 'High-detail architectural concept with strong structural hierarchy.',
-      spatial_distortion: 'Spiraling promenade perspective orbiting a central energy core.',
+      spatial_distortion: 'Spiraling orbital perspective organized around implied energy flow.',
       atmosphere: 'Controlled exhilaration, scientific pride, and uneasy wonder.',
-      key_features: 'Transparent reactor chamber, educational kiosks, and orbital cafe rings.',
+      key_features:
+        'Transparent shield layers, reactor-lime halos, turbine ribs, and public-science diagram clarity.',
       creative_brief:
-        'A people-first atompunk boulevard where energy infrastructure is a civic landmark.',
+        'Preserve reactor-promenade grammar as a reusable style language: orbiting clean-energy structure, transparent educational readability, and controlled scientific wonder should remain stable across any subject.',
     },
   },
   {
@@ -50,19 +53,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo',
     style: {
-      aesthetic: 'Nostalgic atomic-age boulevard of diners, motels, and launch-view terraces.',
-      form_and_line: 'Starburst signs, tapered pylons, and low-slung aerodynamic roofs.',
+      aesthetic: 'Nostalgic atomic-age consumer futurism with launch-night sparkle.',
+      form_and_line:
+        'Starburst panels, tapered pylons, tailfin curves, and low-slung aerodynamic bands.',
       color_palette: 'Bubblegum pink, cyan, and brushed chrome.',
-      lighting_setup:
-        'Twilight neon strips mixed with sodium streetlights and rocket flare reflections.',
-      material_texture:
-        'Vinyl booths, polished chrome trims, terrazzo sidewalks, and ribbed glass.',
+      lighting_setup: 'Twilight neon strips mixed with sodium amber and rocket-flare reflections.',
+      material_texture: 'Vinyl sheen, polished chrome trim, terrazzo flecks, and ribbed glass.',
       render_quality: 'Stylized environmental art with vibrant era-authentic detailing.',
-      spatial_distortion: 'Long roadside perspective with repeating signs and receding tailfins.',
+      spatial_distortion:
+        'Long receding rhythm of blank sign shapes, tailfins, and chrome repeats.',
       atmosphere: 'Cheerful futurism, consumer ritual, and launch-night anticipation.',
-      key_features: 'Rocket-view diner rooftops, atom logos, and retro-future service stations.',
+      key_features: 'Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.',
       creative_brief:
-        'A roadside atompunk strip where everyday nightlife watches the sky for ignition trails.',
+        'Preserve orbit diner-strip grammar as a reusable style system: roadside atomic-age signage rhythm, consumer-nightlife futurism, and launch-culture anticipation should remain coherent across any subject.',
     },
   },
   {
@@ -71,17 +74,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, post-apocalypse-rust, medieval, gore, watermark, text, logo',
     style: {
-      aesthetic: 'Civic-agro atompunk neighborhood where reactor heat powers greenhouse towers.',
-      form_and_line: 'Rounded reactor domes, orchard terraces, and tubular skywalks.',
-      color_palette: 'Pistachio mint, cream white, and chrome.',
-      lighting_setup: 'Soft midday glare and core glow bleeding through vent fins.',
-      material_texture: 'Enamel steel, glass blocks, and irrigated concrete planters.',
-      render_quality: 'Clear concept render with strong city-systems readability.',
-      spatial_distortion: 'Multi-tier district perspective anchored by a central reactor orchard.',
-      atmosphere: 'Productive optimism, engineered abundance, and latent atomic anxiety.',
-      key_features: 'Reactor-heated greenhouses, isotope tram loops, and orchard plazas.',
+      aesthetic:
+        'Atomic abundance style where organic growth looks laboratory-calibrated and reactor warmth masquerades as sunshine.',
+      form_and_line:
+        'Rounded reactor domes, terrace-grid logic, tubular loop paths, vent-fin ribs, and irrigation arcs drawn like circuit diagrams.',
+      color_palette:
+        'Pistachio mint, cream white, chrome, chlorophyll green, and faint reactor amber.',
+      lighting_setup:
+        'Soft midday glare, contained core glow through vent fins, greenhouse diffusion, and chrome glints on irrigation controls.',
+      material_texture:
+        'Enamel steel, glass blocks, irrigated concrete, sterile planter lips, chrome trim, and wet leaf gloss.',
+      render_quality:
+        'Clear concept render where food systems, heat loops, and civic optimism remain visually legible.',
+      spatial_distortion:
+        'Multi-tier perspective follows heat circulation through grids, loops, vents, and growth patterns.',
+      atmosphere:
+        'Engineered abundance, productive optimism, hygienic utopia, and faint atomic unease.',
+      key_features:
+        'Reactor-greenhouse halos, isotope loop marks, calibrated irrigation panels, growth-grid geometry, and heat-transfer vents.',
       creative_brief:
-        'An atompunk district where food sovereignty is treated as infrastructure design.',
+        'Preserve atomic orchard-district grammar as a reusable style system: reactor-assisted agricultural order, polished mid-century civic control, and uncanny abundance cues should remain coherent across subjects.',
     },
   },
   {
@@ -90,17 +102,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, cyberpunk-grime, fantasy-castles, horror, watermark, text, logo',
     style: {
-      aesthetic: 'Public energy command hall staged as a theatrical democratic spectacle.',
-      form_and_line: 'Concentric control decks, radial consoles, and elevated auditoriums.',
-      color_palette: 'Turquoise, ivory, and hazard yellow accents.',
-      lighting_setup: 'Console underglow and dramatic top-down spotlight rings.',
-      material_texture: 'Bakelite panels, brushed alloy rails, and acoustic felt walls.',
-      render_quality: 'Retro-futurist interior concept with high legibility.',
-      spatial_distortion: 'Circular depth pull toward the core command dais.',
-      atmosphere: 'Institutional confidence, civic surveillance, and performative transparency.',
-      key_features: 'Energy voting board, reactor model globe, and mission gallery.',
+      aesthetic:
+        'Civic control as theater, where every gauge feels performative and every audience sightline implies surveillance.',
+      form_and_line:
+        'Concentric bands, radial console ribs, spotlight rings, auditorium curves, and circular instrumentation constellations.',
+      color_palette:
+        'Turquoise authority, ivory enamel, hazard yellow, bakelite brown, and red indicator pinpricks.',
+      lighting_setup:
+        'Console underglow, top-down spotlight rings, luminous voting boards, and instrument-face glow on polished rails.',
+      material_texture:
+        'Bakelite panels, brushed alloy rails, acoustic felt, polished floor insets, enamel labels, and finger-worn switches.',
+      render_quality:
+        'Retro-futurist interior concept with stage blocking, readable controls, and institutional precision.',
+      spatial_distortion:
+        'Circular depth pulls toward a luminous civic core while tiers become part of the machine.',
+      atmosphere:
+        'Institutional confidence, performative transparency, civic surveillance, and rehearsed consent.',
+      key_features:
+        'Voting-board geometry, reactor globe motifs, radial command marks, mission-gallery bands, and public-facing gauge clusters.',
       creative_brief:
-        'A theatrical command room where power policy is literally staged in the round.',
+        'Preserve radial control-theater grammar as a reusable style system: concentric instrumentation staging, audience-power surveillance overlap, and polished institutional performance should remain coherent across subjects.',
     },
   },
   {
@@ -109,16 +130,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo',
     style: {
-      aesthetic: 'Mid-century learning complex teaching atomic science as civic literacy.',
-      form_and_line: 'Sawtooth roofs, long corridors, and atom-emblem courtyards.',
-      color_palette: 'Sky cyan, lemon cream, and steel gray.',
-      lighting_setup: 'Classroom daylight plus glowing educational reactor exhibits.',
-      material_texture: 'Linoleum floors, ceramic tile walls, and anodized handrails.',
-      render_quality: 'Bright illustrative concept with educational set-dressing detail.',
-      spatial_distortion: 'Campus axis perspective connecting labs and open quads.',
-      atmosphere: 'Curious optimism, disciplined learning, and future-facing ambition.',
-      key_features: 'Demo reactor lab, isotope greenhouse class, and atom mural plaza.',
-      creative_brief: 'An atompunk school where kids learn physics as a shared civic language.',
+      aesthetic:
+        'Atomic pedagogy style where cheerful diagrams explain a future nobody fully understands yet.',
+      form_and_line:
+        'Sawtooth rhythms, corridor-like bands, atom-emblem fields, lab-grid repetition, and oversized instructional arrows.',
+      color_palette: 'Sky cyan, lemon cream, steel gray, chalk white, and tiny reactor-glow green.',
+      lighting_setup:
+        'Clean classroom daylight, contained exhibit glow, glass-case reflections, and bright diagram-wall bounce.',
+      material_texture:
+        'Linoleum, ceramic tile, anodized rails, chalk dust, laminated posters, and polished classroom instruments.',
+      render_quality:
+        'Bright illustrative concept with dense educational cues but clear child-scale readability.',
+      spatial_distortion:
+        'Axis perspective links bands, diagrams, grids, and demonstration cues like a textbook spread.',
+      atmosphere:
+        'Curious optimism, disciplined learning, soft propaganda, and future-facing ambition.',
+      key_features:
+        'Demo-reactor silhouettes, atom mural geometry, isotope growth cues, diagram panels, and lab safety color bands.',
+      creative_brief:
+        'Preserve isotope school-campus grammar as a reusable style system: diagrammatic pedagogy, bright civic science graphics, and future-facing classroom optimism should remain coherent across subjects.',
     },
   },
   {
@@ -127,17 +157,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, grimdark, medieval, cyber-slums, watermark, text, logo',
     style: {
-      aesthetic: 'Traveling expo celebrating peaceful atomic innovations and civic futures.',
-      form_and_line: 'Pavilion circles, expo arches, and kinetic signage towers.',
-      color_palette: 'Candy mint, coral, and polished aluminum.',
-      lighting_setup: 'Sunset fair lights and reactor-demo glow.',
-      material_texture: 'Painted metal frames, vinyl banners, and gloss enamel kiosks.',
-      render_quality: 'Playful yet sophisticated environment concept.',
-      spatial_distortion: 'Fairground radial layout with carousel-like flow.',
-      atmosphere: 'Festive optimism, propaganda charm, and spectacle.',
-      key_features: 'Reactor demo dome, isotope rides, and future-home pavilions.',
+      aesthetic:
+        'Atomic carnival propaganda where family fun, policy messaging, and reactor demos share one glossy smile.',
+      form_and_line:
+        'Pavilion circles, expo arch loops, kinetic blank-sign towers, carousel radial flow, and atom-orbit silhouettes.',
+      color_palette:
+        'Candy mint, coral, polished aluminum, butter yellow, and small red slogan accents.',
+      lighting_setup:
+        'Warm fair bulbs, controlled reactor-demo glow, sunset chrome reflections, and blinking atom marquee patterns.',
+      material_texture:
+        'Painted metal frames, vinyl banner sheen, gloss enamel kiosks, molded plastic edges, and polished aluminum rails.',
+      render_quality:
+        'Playful yet sophisticated environment concept with clear spectacle hierarchy and intentional propaganda polish.',
+      spatial_distortion:
+        'Radial circulation spins subjects through demo-like zones, orbit motifs, and future-home display logic.',
+      atmosphere: 'Festive optimism, civic persuasion, spectacle, and charming unease.',
+      key_features:
+        'Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon arcs.',
       creative_brief:
-        'A pop-up atompunk fair where policy and entertainment merge under neon atoms.',
+        'Preserve fission fairgrounds grammar as a reusable style system: circular expo choreography, cheerful atomic salesmanship, and glossy civic spectacle with latent unease should remain coherent across subjects.',
     },
   },
   {
@@ -147,17 +185,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, bleak-industrial, fantasy-medieval, blood-gore, watermark, text, logo',
     style: {
-      aesthetic: 'Consumer atompunk leisure complex centered on turbine aesthetics and optimism.',
-      form_and_line: 'Streamlined facades, curved canopies, and spinning emblem motifs.',
-      color_palette: 'Aqua, cream, and cherry red accents.',
-      lighting_setup: 'Indoor marquee spots and luminous machine displays.',
-      material_texture: 'Chrome trim, polished plastic, and checker tile floors.',
-      render_quality: 'Clean retro-future interior render with strong composition.',
-      spatial_distortion: 'Wide central hall perspective with repeating storefront arcs.',
-      atmosphere: 'Family spectacle, polished futurity, and cheerful excess.',
-      key_features: 'Turbine carousel, atom game cabinets, and snack capsule bars.',
+      aesthetic:
+        'Consumer atompunk play style where joy is packaged as turbine worship, candy buttons, and domestic propaganda.',
+      form_and_line:
+        'Streamlined facade arcs, rounded canopy lips, turbine-medallion loops, cabinet-like fins, and capsule shapes.',
+      color_palette:
+        'Pool aqua, cream enamel, cherry red, chrome sparkle, and bubblegum indicator lights.',
+      lighting_setup:
+        'Marquee spot cones, glowing cabinet screens, candy reflection pools, and rotating turbine shadows on checker tile.',
+      material_texture:
+        'Chrome trim, polished plastic, checker tile, molded laminate, bright enamel buttons, and sticky soda gloss.',
+      render_quality:
+        'Clean retro-future interior render with legible leisure machines and slightly uncanny consumer polish.',
+      spatial_distortion:
+        'Wide showroom-like perspective loops through repeating arcs until pleasure feels mechanical.',
+      atmosphere:
+        'Cheerful excess, family spectacle, polished futurity, and domesticated atomic anxiety.',
+      key_features:
+        'Turbine carousel hubs, atom-game silhouettes, capsule modules, prize-token spirals, and curved waiting rails.',
       creative_brief:
-        'A leisure arcade where atompunk consumer culture feels both charming and uncanny.',
+        'Preserve turbine family-arcade grammar as a reusable style system: cheerful consumer turbine motifs, cabinet-light spectacle, and family-coded atomic leisure should remain coherent across subjects.',
     },
   },
   {
@@ -168,17 +215,24 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo',
     style: {
       aesthetic:
-        'Elevated skyline promenades suspended by helium architecture and atom-era engineering.',
-      form_and_line: 'Cantilever decks, observation pylons, and buoyant pod stations.',
-      color_palette: 'Powder blue, white metal, and citrus accents.',
-      lighting_setup: 'High-altitude sunlight with anti-glare deck strips.',
-      material_texture: 'Lightweight alloys, translucent membranes, and anti-slip polymers.',
-      render_quality: 'Architectural concept visualization with airy scale.',
-      spatial_distortion: 'Dramatic high-angle perspective over layered decks.',
-      atmosphere: 'Lightness, thrill, and infrastructural wonder.',
-      key_features: 'Helium lift towers, cloud gardens, and reactor-fed sky trams.',
+        'Buoyant civic atompunk where architecture looks held up by optimism, helium math, and beautifully visible tension.',
+      form_and_line:
+        'Cantilever slices, pylon spines, helium-pod bellies, tensioned membrane curves, and hairline suspension cables.',
+      color_palette:
+        'Powder blue, white metal, citrus yellow, cloud gray, and tiny red altitude markers.',
+      lighting_setup:
+        'High-altitude sunlight, anti-glare deck strips, cloud bounce under platforms, and sharp cable highlights.',
+      material_texture:
+        'Lightweight alloy skins, translucent membranes, anti-slip polymers, sealed rivet seams, and sun-warmed rubber joints.',
+      render_quality:
+        'Architectural visualization with airy scale, crisp suspension logic, and no generic floating-city blur.',
+      spatial_distortion: 'High-angle perspective opens negative space below every floating edge.',
+      atmosphere:
+        'Lightness, vertigo, civic wonder, and absolute trust in optimistic infrastructure.',
+      key_features:
+        'Helium lift forms, cloud-garden pods, reactor-fed linework, floating lips, and tension-gauge panels.',
       creative_brief:
-        'An atompunk skyline where public space floats above traditional street constraints.',
+        'Preserve helium skyline-decks grammar as a reusable style system: visible buoyancy engineering, cable-tension legibility, and airy civic-optimist vertigo should remain coherent across subjects.',
     },
   },
   {
@@ -187,16 +241,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, dystopian-bunker, medieval, grunge-horror, watermark, text, logo',
     style: {
-      aesthetic: 'Ceremonial venue where atomic-age design frames communal rites and celebrations.',
-      form_and_line: 'Spiral aisle ramps, atom-shaped canopy ribs, and circular altars.',
-      color_palette: 'Pearl white, pastel mint, and warm brass.',
-      lighting_setup: 'Soft ceremony uplight and reactor core ambient shimmer.',
-      material_texture: 'Gloss ceramic surfaces, satin drapes, and polished alloy rails.',
-      render_quality: 'Romantic retro-future concept with fine material definition.',
-      spatial_distortion: 'Center-focused composition drawing eye to ceremony platform.',
-      atmosphere: 'Tender futurism, social ritual, and engineered elegance.',
-      key_features: 'Isotope ring pavilion, atom floral arches, and radiant dance floor.',
-      creative_brief: 'An atompunk ceremonial hall that turns civic optimism into shared intimacy.',
+      aesthetic:
+        'Isotopic romance style where reactor halos and civic optimism become soft ceremonial machinery.',
+      form_and_line:
+        'Spiral approach lines, atom-canopy ribs, isotope ring frames, circular focal platforms, and floral orbits.',
+      color_palette:
+        'Pearl white, pastel mint, warm brass, blush radiation pink, and soft glass green.',
+      lighting_setup:
+        'Ceremony uplight, diffused reactor shimmer through satin, brass glints, and haloed floor reflections.',
+      material_texture:
+        'Gloss ceramic, satin drapes, polished alloy rails, pearl enamel, translucent floral plastics, and etched vow plates.',
+      render_quality:
+        'Romantic retro-future concept with fine material definition and precise ceremonial focus.',
+      spatial_distortion:
+        'Ring symmetry and spiral approach lines make intimacy feel engineered and gently radiant.',
+      atmosphere:
+        'Tender futurism, social ritual, engineered elegance, and unnervingly perfect optimism.',
+      key_features:
+        'Isotope ring arches, atom floral canopies, radiant circles, brass rail curves, and reactor-blessing lamp motifs.',
+      creative_brief:
+        'Preserve reactor wedding-pavilion grammar as a reusable style system: ceremonial isotope-ring intimacy, satin-science elegance, and polished brass ritual cues should remain coherent across subjects.',
     },
   },
   {
@@ -205,17 +269,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo',
     style: {
-      aesthetic: 'Reflective institution curating atomic promises, failures, and public memory.',
-      form_and_line: 'Monumental slabs, recessed galleries, and didactic corridor axes.',
-      color_palette: 'Slate, brass, and archival ivory.',
-      lighting_setup: 'Museum wash lighting with dramatic exhibit spot accents.',
-      material_texture: 'Board-formed concrete, brushed brass plaques, and archival glass.',
-      render_quality: 'Serious concept scene with documentary precision.',
-      spatial_distortion: 'Processional interior path leading through thematic chambers.',
-      atmosphere: 'Civic introspection, cautionary optimism, and historical weight.',
-      key_features: 'Reactor cross-sections, policy murals, and oral history booths.',
+      aesthetic:
+        'Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying politeness.',
+      form_and_line:
+        'Monumental slab planes, recessed evidence frames, corridor-like axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.',
+      color_palette:
+        'Slate, brushed brass, archival ivory, faded warning orange, and cold exhibit glass blue.',
+      lighting_setup:
+        'Museum wash light, precise exhibit spots, brass label glints, and low shadow bands under heavy concrete.',
+      material_texture:
+        'Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room fragments.',
+      render_quality:
+        'Documentary concept scene with controlled hierarchy, no melodrama, and clear evidence staging.',
+      spatial_distortion:
+        'Processional depth forces subjects through evidence frames, confession walls, and policy diagrams.',
+      atmosphere:
+        'Civic introspection, cautionary optimism, historical weight, and quiet institutional shame.',
+      key_features:
+        'Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date markers.',
       creative_brief:
-        'A public atompunk museum where memory design prevents repeating old mistakes.',
+        'Preserve civic fallout-museum grammar as a reusable style system: restrained evidentiary staging, archival slab-and-glass severity, and polite institutional guilt should remain coherent across subjects.',
     },
   },
   {
@@ -224,17 +297,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, dystopian-chaos, medieval, body-horror, watermark, text, logo',
     style: {
-      aesthetic: 'High-speed atomic-era terminal linking continental megaregions.',
-      form_and_line: 'Sweeping platforms, radial timetable walls, and sleek train noses.',
-      color_palette: 'Teal, cream, and graphite.',
-      lighting_setup: 'Concourse skylight plus platform strip illumination.',
-      material_texture: 'Brushed steel, terrazzo flooring, and glazed enamel signage.',
-      render_quality: 'Grand transit concept with clear movement logic.',
-      spatial_distortion: 'Strong vanishing lines along parallel platforms.',
-      atmosphere: 'Momentum, precision, and hopeful mobility.',
-      key_features: 'Isotope express trains, civic map wall, and panoramic waiting lounges.',
+      aesthetic:
+        'National-mobility atompunk where speed feels like a civic promise sharpened into an aerodynamic instrument.',
+      form_and_line:
+        'Sweeping platform bands, radial timetable suns, sleek nose cones, graphite seams, and queue lanes like circuit traces.',
+      color_palette:
+        'Teal enamel, cream tile, graphite rail, chrome flash, and red departure ticks.',
+      lighting_setup:
+        'Concourse skylight wash, platform strip illumination, polished edge highlights, and departure-board pulses.',
+      material_texture:
+        'Brushed steel, terrazzo, glazed enamel signage, rubber thresholds, glass timetable covers, and worn ticket brass.',
+      render_quality:
+        'Grand transit concept with exact movement logic, readable boarding choreography, and heroic civic scale.',
+      spatial_distortion:
+        'Parallel seams, ceiling ribs, queue lanes, and nose-cone shapes converge into one national-speed vector.',
+      atmosphere: 'Momentum, precision, hopeful mobility, and bureaucratic elegance.',
+      key_features:
+        'Isotope express silhouettes, radial map-like walls, panoramic bands, boarding tick marks, and enamel route seals.',
       creative_brief:
-        'An atompunk station where national identity is expressed through transit design.',
+        'Preserve atomic rail-concourse grammar as a reusable style system: aerodynamic civic mobility, radial transit graphics, and enamel platform choreography should remain coherent across subjects.',
     },
   },
   {
@@ -243,17 +324,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, horror, cyberpunk-grime, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Public aquatic complex using reactor byproduct heat for leisure and therapy.',
-      form_and_line: 'Dome shell, concentric pools, and streamlined changing arcades.',
-      color_palette: 'Aqua, white, and citrus yellow details.',
-      lighting_setup: 'Diffuse dome daylight and underwater luminescent bands.',
-      material_texture: 'Glazed tile, anti-slip stone, and polished steel rails.',
-      render_quality: 'Lifestyle concept with high environmental coherence.',
-      spatial_distortion: 'Bowl geometry centering on warm isotope pool core.',
-      atmosphere: 'Wellness, civic pride, and subtle engineered spectacle.',
-      key_features: 'Thermal isotope pools, health kiosks, and wave turbine displays.',
+      aesthetic:
+        'Reactor-wellness atompunk where sanitized circular calm is powered by suspiciously perfect surplus heat.',
+      form_and_line:
+        'Smooth dome shells, concentric thermal rings, turbine-water spirals, capsule modules, and rounded hygiene lines.',
+      color_palette:
+        'Pool aqua, clinic white, citrus yellow, chrome silver, and pale isotope green.',
+      lighting_setup:
+        'Diffuse dome daylight, underwater luminous bands, steam glow, and clean status lights above hydrotherapy controls.',
+      material_texture:
+        'Glazed tile, anti-slip stone, polished steel rails, wet enamel, translucent safety panels, and rubber pool grates.',
+      render_quality:
+        'Lifestyle concept with hygienic detail, coherent energy logic, and tactile wet surfaces.',
+      spatial_distortion:
+        'Bowl geometry centers warm isotope rings while circulation paths loop like a health diagram.',
+      atmosphere: 'Wellness, civic pride, thermal luxury, and sanitized reactor unease.',
+      key_features:
+        'Thermal isotope rings, health-capsule forms, wave-turbine displays, hydrotherapy panels, and protocol color stripes.',
       creative_brief:
-        'An atompunk bathhouse where energy abundance is transformed into daily wellbeing.',
+        'Preserve nuclide aquatics-dome grammar as a reusable style system: reactor-surplus wellness aesthetics, circular hydro-civic optimization, and sanitized thermal luxury cues should remain coherent across subjects.',
     },
   },
   {
@@ -262,16 +351,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Corepunk — Atompunk',
     negativePrompt: 'photoreal, dystopian-riot, medieval, grim-horror, watermark, text, logo',
     style: {
-      aesthetic: 'Ceremonial boulevard for annual technology parades and civic rituals.',
-      form_and_line: 'Long avenue axis, reviewing stands, and atom-obelisk nodes.',
-      color_palette: 'Cerulean, white, and celebratory red accents.',
-      lighting_setup: 'Day parade sunlight with reflective metallic glints.',
-      material_texture: 'Polished concrete, painted steel, and glossy parade vehicles.',
-      render_quality: 'Epic wide scene with clear crowd and architecture segmentation.',
-      spatial_distortion: 'Processional depth perspective amplifying scale.',
-      atmosphere: 'National pride, theatrical governance, and curated futurity.',
-      key_features: 'Atom obelisks, marching turbines, and civic tech floats.',
-      creative_brief: 'An atompunk avenue where public rituals celebrate engineering as identity.',
+      aesthetic:
+        'Atomic parade propaganda where governance moves as synchronized machinery and public joy is technologized.',
+      form_and_line:
+        'Processional axes, tier bands, atom obelisks, synchronized silhouettes, banner grids, and marching turbine arcs.',
+      color_palette:
+        'Cerulean, parade white, celebratory red, polished aluminum, and tiny brass insignia.',
+      lighting_setup:
+        'Hard day-parade sunlight, metallic float glints, banner-shadow rhythm, and white highlights on polished concrete.',
+      material_texture:
+        'Polished concrete, painted steel, glossy shells, fabric pennants, enamel insignia, and confetti caught in vents.',
+      render_quality:
+        'Epic wide concept with clear crowd segmentation, vehicle hierarchy, and ceremonial readability.',
+      spatial_distortion:
+        'Processional depth magnifies scale through repeated obelisks, flags, and engineered lanes.',
+      atmosphere:
+        'National pride, theatrical governance, curated futurity, and rehearsed mass enthusiasm.',
+      key_features:
+        'Atom obelisks, marching turbine marks, civic-tech float shapes, pennant shadows, and synchronized route markings.',
+      creative_brief:
+        'Preserve reactor parade-avenue grammar as a reusable style system: synchronized civic-tech procession, flag-shadow spectacle rhythm, and polished mass enthusiasm with unease should remain coherent across subjects.',
     },
   },
   {
@@ -281,17 +380,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bright-daylook, medieval, cyberpunk-noise, watermark, text, logo',
     style: {
       aesthetic:
-        'Public stargazing complex powered by compact isotope batteries and civic science programs.',
-      form_and_line: 'Rotating domes, cantilever decks, and disciplined radial instrument bays.',
-      color_palette: 'Deep navy, mint glow, and steel white.',
-      lighting_setup: 'Controlled low-light environment with telescope ring luminance.',
-      material_texture: 'Matte metal shells, anti-reflective glass, and insulated deck panels.',
-      render_quality: 'Precision concept with scientific and poetic balance.',
-      spatial_distortion: 'Elevated dome composition framing the night sky horizon.',
-      atmosphere: 'Wonder, contemplation, and collective curiosity.',
+        'Quiet isotope astronomy where compact power keeps night sacred, instruments precise, and civic curiosity almost devotional.',
+      form_and_line:
+        'Rotating dome shells, cantilever plates, radial instrument bays, telescope-ring halos, and star-chart coordinate lines.',
+      color_palette:
+        'Deep navy, mint isotope glow, steel white, matte black, and faint amber notation marks.',
+      lighting_setup:
+        'Low-light discipline, telescope ring luminance, mint battery glows, and soft horizon spill kept below stargazing threshold.',
+      material_texture:
+        'Matte metal shells, anti-reflective glass, insulated deck panels, rubberized grips, and enamel star-chart plates.',
+      render_quality:
+        'Precision concept balancing poetic darkness, instrument legibility, and quiet scientific drama.',
+      spatial_distortion:
+        'Elevated dome-like composition aligns horizon, aperture, and instrument axis into a contemplative vector.',
+      atmosphere: 'Wonder, collective curiosity, night restraint, and compact-power reverence.',
       key_features:
-        'Isotope-powered telescopes, astronomy classroom pods, and night observation terraces.',
-      creative_brief: 'An atompunk observatory where civic education meets cosmic imagination.',
+        'Isotope telescope rings, astronomy pod modules, aperture lips, calibrated star charts, and low-glow warning tags.',
+      creative_brief:
+        'Preserve isotope night-observatory grammar as a reusable style system: dark precision instrumentation, soft mint isotope power cues, and disciplined civic stargazing wonder should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

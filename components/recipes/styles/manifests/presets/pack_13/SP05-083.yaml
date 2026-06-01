@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Otaku-chat slice anime language with laid-back conversational comedy, flat-color domestic calm, and social micro-rhythm focus
-  form_and_line: Relaxed everyday contouring, seated-group composition stability, expression-over-action line prioritization, and low-drama gesture pacing
+  aesthetic: Otaku-chat slice anime language with laid-back conversational comedy, flat-color comfort calm, and social micro-rhythm focus
+  form_and_line: Relaxed everyday contouring, stable conversational composition, expression-over-action line prioritization, and low-drama gesture pacing
   color_palette: Gentle indoor pastels, beige and cream neutrals, mint accents, snack-toned warm highlights, and balanced low-contrast skin hues
-  lighting_setup: Soft ambient classroom/living-room fill, mild window daylight, minimal dramatic shadowing, and steady tonal consistency for dialogue scenes
-  material_texture: Simple flat-surface interiors, soft textile cues, low-noise tabletop props, and unobtrusive environmental detail support
+  lighting_setup: Soft ambient fill, mild daylight wash, minimal dramatic shadowing, and steady tonal consistency for dialogue-led moments
+  material_texture: Simple flat surfaces, soft textile cues, low-noise small details, and unobtrusive environmental support
   render_quality: Dialogue-forward anime rendering with crisp facial readability, consistent low-key polish, and comfortable episodic pacing tone
-  spatial_distortion: Stable seated conversational framing with mild cute stylization and clear multi-character line-of-sight readability
+  spatial_distortion: Stable conversational framing with mild cute stylization and clear line-of-sight readability
   atmosphere: Casual, nerdy, witty, and comfortable
-  key_features: Conversation-circle composition, snack/prop banter anchors, expression-timing subtlety, and relaxed social energy continuity
+  key_features: Conversation-circle composition, tiny banter anchors, expression-timing subtlety, and relaxed social energy continuity
   creative_brief: >-
-    Preserve otaku-chat slice grammar as a reusable style system:
-    dialogue-first staging, soft low-contrast interiors, and personality-driven
-    conversational micro-acting should remain consistent across subjects.
+    Use the title as a style anchor for otaku-chat slice rhythm. Prioritize
+    dialogue-first staging, low-contrast calm, and personality micro-acting
+    without requiring seated groups, snacks, classrooms, or living rooms.
 avoidRules:
   - realistic
   - 3d render

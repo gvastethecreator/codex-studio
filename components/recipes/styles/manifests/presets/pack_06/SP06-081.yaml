@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, chunky pixel characters, pea-soup display, Nintendo handheld nostalgia, 1989 portable gaming, sprites as blocky silhouettes of heroism
-  form_and_line: Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, sprite boundary boxing, no sub-pixel rendering
+  aesthetic: Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, pea-soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky dot-matrix silhouettes
+  form_and_line: Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, hard silhouette boxing, no sub-pixel rendering, any input compressed into readable tile masses
   color_palette: Four-shade green gradient, pea-soup olive, sickly lime, bile yellow highlight, shadow-moss dark, no other colors exist
   lighting_setup: Self-illuminated LCD screen, reflective green phosphor glow, pocket-light on plastic screen
   material_texture: LCD pixel grid gap, dusty plastic screen overlay, passive-matrix ghost trail, screen-burn memory
   render_quality: Game Boy screen capture, retro handheld nostalgia, 8-bit portable aesthetic, chunky-pixel charm
   spatial_distortion: Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display
-  atmosphere: Nostalgic, portable, childhood road-trip, under-the-covers gaming, battery-life anxiety
-  key_features: Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot-matrix
-  creative_brief: Four shades of green constitute the entire universe, every hero, every villain, every world reduced to pea-soup gradients on a dot-matrix LCD. The screen glows with its own faint light, a portable sun under blankets after bedtime. The image exists in the moment before batteries die, a pocket-sized epic rendered visible by four simple voltages.
+  atmosphere: Portable, nostalgic, constrained, quiet, low-power, memory-fragile
+  key_features: Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen-bezel framing, monochrome dot-matrix abstraction
+  creative_brief: Four green voltages become an entire image language. Any subject collapses into pea-soup values, tile boundaries, LCD gaps and ghost trails, as if visual memory had to fit inside a pocket device with fading batteries.
 avoidRules:
   - color
   - hd
@@ -50,4 +50,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

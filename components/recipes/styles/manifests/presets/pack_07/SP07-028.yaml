@@ -12,20 +12,20 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Torre bioclimática de envolvente viva, donde paisaje y edificio operan como un único sistema metabólico urbano.
-  form_and_line: Retícula ortogonal base con protrusiones vegetales irregulares, bandas de jardineras en voladizo y terrazas estratificadas.
+  aesthetic: Bioclimatismo de envolvente viva, donde vegetación, estructura y clima operan como un único sistema metabólico.
+  form_and_line: Retícula base con protrusiones vegetales irregulares, bandas verdes en voladizo y capas estratificadas.
   color_palette: Verdes estacionales, madera natural, reflejos de cielo, marrones de sustrato y floraciones puntuales.
   lighting_setup: Sol natural filtrado por copa vegetal, dapple dinámico y sombras estacionales por ángulo de incidencia.
   material_texture: Hoja, corteza, madera, bambú, tierra compactada y áridos reciclados con lectura ecológica tangible.
   render_quality: Visualización eco-arquitectónica de alto detalle con lógica de mantenimiento, riego y desempeño climático verosímil.
   spatial_distortion: Sensación de sobrecrecimiento controlado, con profundidad por capas de vegetación funcional.
   atmosphere: Regenerativa, respirable, cívica y optimista a largo plazo.
-  key_features: Jardineras profundas, corredores verdes, riego visible, bordes para biodiversidad y sombreamiento evapotranspirativo.
+  key_features: Capas verdes profundas, corredores vivos, riego visible, bordes para biodiversidad y sombreamiento evapotranspirativo.
   creative_brief: >-
-    Formula una gramática de torre-jardín transferible en la que vegetación,
+    Formula una gramática verde transferible en la que vegetación,
     estructura y clima sean inseparables. La estética debe mostrar desempeño
     técnico real (sombra, drenaje, inercia, mantenimiento) además de densidad
-    orgánica, aplicable a múltiples programas.
+    orgánica, aplicable a cualquier input.
 avoidRules:
   - concrete
   - industrial

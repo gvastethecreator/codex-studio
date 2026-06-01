@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Monumental raypunk plaza where science institutions mimic sacred architecture.
-  form_and_line: Pointed rocket arches, ribbed vault tubes, and cruciform launch aisles.
+  aesthetic: Monumental raypunk sacred-science design without literal worship staging.
+  form_and_line: Pointed rocket arches, ribbed tube vaults, cruciform vectors, and mission-mosaic grids.
   color_palette: Ivory white, plasma blue, and brass orange.
   lighting_setup: Volumetric skylight beams intersecting reactor lumen fixtures.
   material_texture: Ceramic composites, ribbed steel, etched glass, and polished stone.
   render_quality: Grand-scale environment concept with balanced symbolism and function.
-  spatial_distortion: Cathedral-like longitudinal depth ending in a launch altar.
+  spatial_distortion: Longitudinal sacred-tech depth with processional vector symmetry.
   atmosphere: Triumphal curiosity, solemn innovation, and civic mythmaking.
-  key_features: Rocket reliquaries, mission mosaics, and ion-organ balconies.
+  key_features: Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.
   creative_brief: >-
     Preserve rocket cathedral-arcade grammar as a reusable style language:
     sacred-science monumental planning, longitudinal launch choreography, and
-    civic mythmaking cues should remain stable across subjects.
+    civic mythmaking cues should remain stable across any subject.
 avoidRules: [photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-026.webp }
 attributes:
   negativePrompt: photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-raypunk, categoryName: 10. Corepunk — Raypunk, tags: [solarpunk-dreamscapes-vault, corepunk, raypunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-raypunk,
+    categoryName: 10. Corepunk — Raypunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, raypunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

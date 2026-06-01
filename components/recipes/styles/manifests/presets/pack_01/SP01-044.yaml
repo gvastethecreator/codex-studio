@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Image projected on face
+  aesthetic: Projected image lighting
   form_and_line: Pattern overlay
-  color_palette: Mixed light/skin
+  color_palette: Mixed projected color
   lighting_setup: Patterned source
   material_texture: Pixel grid (optional)
   render_quality: Artistic, music video
-  spatial_distortion: Face distortion by light
+  spatial_distortion: Surface distortion by light
   atmosphere: Conceptual, trippy
   key_features: Light pattern
-  creative_brief: Identity overlaid with borrowed imagery, skin becoming screen where inner visions project outward in patterns of light. The collision of two realities on a single surface, one organic and one synthetic, negotiating territory across the geography of a face. A conceptual double exposure where what is cast upon us becomes indistinguishable from what we are.
+  creative_brief: 'A projected source turns any surface into a temporary screen: pattern overlay, pixel-grid texture, mixed color, and light warped by form. Treat projection as conceptual photographic lighting without requiring faces, skin, identity narrative, or music-video staging.'
 avoidRules:
   - clean light
 assets:

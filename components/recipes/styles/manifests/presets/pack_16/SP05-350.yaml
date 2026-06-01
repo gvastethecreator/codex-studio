@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-350
 packId: pack_16
-name: Free! - Chlorine Splash Relay Glow
+name: Aquatic Relay Glow Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Natación de relevos centrada en sincronía de equipo, técnica de salida y transición de testigo.
-  form_and_line: Anatomía hidrodinámica limpia, arcos de brazada fluidos y lectura clara de cambio en pared.
-  color_palette: Azules de piscina clorada, blancos de espuma y acentos de escuadra saturados para lane clarity.
-  lighting_setup: Iluminación interior acuática con caústicas controladas y highlights sobre superficie de agua.
-  material_texture: Agua en lámina especular, baldosa húmeda, tejido elástico de competición y gotas en suspensión.
-  render_quality: Sports frame acuático de alta nitidez con prioridad en salida, ritmo y relevo.
-  spatial_distortion: Distorsión suave por refracción y perspectiva longitudinal de carriles para lectura de velocidad.
+  aesthetic: Deporte acuático luminoso centrado en sincronía, técnica corporal y transición fluida.
+  form_and_line: Anatomía hidrodinámica limpia, arcos fluidos y lectura clara de cambio de ritmo.
+  color_palette: Azules clorados, blancos espumosos y acentos saturados para lectura de flujo direccional.
+  lighting_setup: Iluminación acuática con caústicas controladas y highlights sobre láminas fluidas.
+  material_texture: Láminas especulares, humedad mineral, tejido elástico y gotas en suspensión.
+  render_quality: Frame acuático de alta nitidez con prioridad en salida, ritmo y transición.
+  spatial_distortion: Distorsión suave por refracción y perspectiva longitudinal para lectura de velocidad.
   atmosphere: Refrescante, competitiva y emocionalmente cohesionada.
-  key_features: Splash arcs definidos, geometría de lane-line, handoff de relevo y siluetas poolside.
+  key_features: Arcos de splash, geometría líquida, reflejos de cloro, tensión de relevo y siluetas aerodinámicas.
   creative_brief: >-
-    Formula una gramática reusable de relay-swim donde caústicas, ritmo de
-    carril y transición de relevo sostengan identidad transferible, no una
-    escena cerrada.
+    Aplica una gramática reusable de energía acuática sincronizada a cualquier prompt o imagen de entrada:
+    agua, brillo y transición fluida sin imponer natación, carriles, piletas, relevos ni cuerpos poolside.
 avoidRules:
   - realistic
   - 3d render

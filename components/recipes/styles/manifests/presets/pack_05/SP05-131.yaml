@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Modern school-delinquent action, alleyway wind shear, gang jackets, city-protector swagger, bruised knuckles and neon convenience stores, rooftop loyalty clashes
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Delinquent protector rush style, with streetwind swagger, bruised loyalty, sharp youth motion, and neon grit.
+  form_and_line: Wind-shear diagonals, loose jacketlike silhouette rhythm, knuckle-close impact arcs, and confident stance geometry.
+  color_palette: Streetlight amber, bruised purple, asphalt gray, neon green, hot sign red, and midnight blue.
+  lighting_setup: Flickering urban rim light, low practical glow, fast backlight streaks, and hard contrast around impact beats.
+  material_texture: Scuffed fabric, skin bruise tones, pavement grit, sign-glow bloom, and polished modern cel edges.
+  render_quality: Premium modern action anime finish with clean speed, grounded swagger, and readable loyalty tension.
+  spatial_distortion: Alleylike compression, wind-pushed depth, and foreshortened rush lines without fixed architecture.
   atmosphere: Rowdy, loyal, kinetic, swaggering
-  key_features: Jacket silhouettes, urban rooftop staging, knuckle-first action, streetlight color pops, team loyalty poses
-  creative_brief: Wind cuts through the alley where loyalty is the only currency that matters and knuckles meet jawbone under the flicker of a neon convenience-store sign. The street crowns its protectors in bruised fists and oversized jackets, swagger earned one rooftop standoff at a time. Brotherhood is a fist bump and the wind that follows it.
+  key_features: Streetwind motion, bruised loyalty, neon grit, protector swagger, close-impact rhythm.
+  creative_brief: >-
+    Give any prompt delinquent protector energy through wind-shear lines,
+    bruised color, neon grit, and loyalty-charged impact timing without fixing
+    the style to an institution, faction, or fixed setting.
 avoidRules:
   - realistic
   - 3d render

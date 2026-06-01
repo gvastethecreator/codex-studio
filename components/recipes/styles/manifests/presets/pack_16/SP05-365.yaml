@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-365
 packId: pack_16
-name: Welcome to the Ballroom - Competition Floor Blaze
+name: Formal Partner Motion Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ballroom competitivo de pareja, orientado a frame coreográfico, tracción de piso y duelo escénico.
-  form_and_line: Línea de pareja tensa, giro de cadera coordinado y extensión de brazos de alta precisión.
-  color_palette: Dorados de salón, negros de contraste formal, rojos profundos y blancos de brillo de gala.
-  lighting_setup: Spotlights cálidos de competición con reflejo fuerte en piso encerado y bordes de silueta.
-  material_texture: Satén de vestido en flujo, cuero de zapato pulido, parquet brillante y pedrería escénica fina.
+  aesthetic: Movimiento formal en pareja, frame coreográfico, tracción elegante y tensión escénica abstracta.
+  form_and_line: Siluetas duales en giro, torso estructurado, líneas de guía y fluidez controlada.
+  color_palette: Dorados cálidos, negros de contraste formal, rojos profundos y blancos de brillo de gala.
+  lighting_setup: Spotlights cálidos de competición con reflejo fuerte en superficie pulida y bordes de silueta.
+  material_texture: Satén en flujo, cuero pulido, superficie brillante y pedrería escénica fina.
   render_quality: Frame de danza premium con lectura de liderazgo-seguimiento, giro y postura.
-  spatial_distortion: Barrido circular de spin con compresión de fondo y foco en eje de pareja.
+  spatial_distortion: Barrido circular con compresión de fondo y foco en eje de pareja.
   atmosphere: Deslumbrante, tensa, romántica e intensa.
-  key_features: Reflejo de dance-floor, silueta dual, dinámica de giro y presencia de jurado implícito.
+  key_features: Reflejo de superficie, silueta dual, dinámica de giro y presión pública implícita.
   creative_brief: >-
-    Define una gramática reusable de competition-ballroom donde técnica de
+    Define una gramática reusable de formal-partner-motion donde técnica de
     pareja, teatralidad de giro y presión pública sostengan identidad visual
-    más allá de una rutina específica.
+    transferible sin imponer ballroom, pista, jurado ni rutina específica.
 avoidRules:
   - realistic
   - 3d render

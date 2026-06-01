@@ -12,14 +12,15 @@ visualDna:
   color_palette: Sandstone beige, slate blue, iron rust, sun-bleached rope tan, and oxidized route-paint green.
   lighting_setup: Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving weights.
   material_texture: Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide grooves.
-  render_quality: Expansive infrastructure concept with every route, lift, and exchange point legible at civic scale.
+  render_quality: Expansive stonepunk infrastructure concept with every route, lift, and exchange point legible at civic scale.
   spatial_distortion: Horizon compression stretches routes into monumental lines, making distance feel engineered by public effort.
   atmosphere: Slow momentum, civic pragmatism, trade ritual, and old-world futurity.
-  key_features: Counterweight lift towers, stone sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.
+  key_features: Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.
   creative_brief: >-
     Preserve megalith transit-spine grammar as a reusable style system:
     carved-route logistics, public counterweight mobility, and geological
-    movement scale should remain coherent across subjects.
+    movement scale should remain coherent across subjects without requiring a
+    road, trade gate, towers, sleds, or literal transit.
 avoidRules:
   [photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-032.webp }

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-055
 packId: pack_05
-name: Gothic Tech Existentialism
+name: Gothic Tech Existential Dread Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Dark cyber ruins, cathedral-industrial design, elegant dread, philosophical chill, gargoyle mecha, subterranean layers, bio-organic horror, existential stillness
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Gothic techno-dread, sacred industrial stillness, bio-synthetic unease, philosophical coldness, and elegant decay.
+  form_and_line: Severe hard-edge linework, ribbed verticals, grotesque silhouette pressure, fine hatchwork, and solemn contour spacing.
+  color_palette: Blackened teal, oxidized violet, dim cyan, bone ivory, cold steel, and rare acidic highlights.
+  lighting_setup: Subterranean low glow, chapel-like shafts abstracted into geometry, rim-lit machinery, and negative-fill dread.
+  material_texture: Damp metal, bio-organic membrane hints, worn stone-like surfaces, black lacquer, and corroded polymer.
+  render_quality: Premium gothic-cyber anime finish with refined dread, precise surface hierarchy, and quiet high-detail menace.
+  spatial_distortion: Vertical compression, sacred-scale symmetry, deep axial recession, and hollow negative space around the subject.
   atmosphere: Brooding, cerebral, existential, haunting
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Cathedrals of rust and silicon rise where gods once lived, now inhabited by questions without answers. Machinery dreams of organics and flesh envies the permanence of steel. In the hollow between circuits and soul, dread blooms like a black flower.
+  key_features: Sacred-industrial geometry, bio-tech unease, black-metal sheen, hollow vertical space, and restrained existential menace.
+  creative_brief: >-
+    Apply gothic tech existential dread as a reusable style treatment: make any
+    subject feel ritualized, hollow, elegant, and bio-synthetic while staying
+    abstract, portable, and detached from fixed architecture, figures, places,
+    or horror set pieces.
 avoidRules:
   - realistic
   - 3d render

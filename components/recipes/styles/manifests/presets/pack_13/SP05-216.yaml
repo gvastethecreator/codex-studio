@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Cold-weather camping coziness, puffy jackets, enamel mugs, practical gear, quiet friendship through warm food and starry nights, tactile outdoor comfort
-  form_and_line: Practical camp-gear silhouette clarity, bundled-clothing contour shapes, and fire-circle composition flow
-  color_palette: Winter blues, pine greens, stove-orange warmth, tent-canvas neutrals, and star-night indigos
-  lighting_setup: Campfire key-light, cold ambient night fill, lantern practical accents, and crisp dawn campsite diffusion
-  material_texture: Nylon tent weave, quilted jackets, enamel mug gloss, metal cookset wear, and frosted ground detail
-  render_quality: Cozy winter-camp rendering with practical outdoor fidelity and restorative social calm
-  spatial_distortion: Circular campsite framing compression emphasizing shared warmth in open cold space
+  aesthetic: Laid-Back Camp title anchor translated into cold-weather coziness, practical comfort, quiet friendship, tactile warmth, and restorative outdoor calm
+  form_and_line: Practical silhouette clarity, bundled contour shapes, circular warmth-flow composition, and compact comfort against open cold space
+  color_palette: Winter blues, pine greens, stove-orange warmth, canvas neutrals, and star-night indigos
+  lighting_setup: Warm practical key-light, cold ambient fill, lantern-like accent points, and crisp dawn diffusion
+  material_texture: Nylon weave, quilted padding, enamel gloss, worn metal, frosted ground detail, and insulated fabric softness
+  render_quality: Cozy cold-weather rendering with practical fidelity, restorative social calm, and tactile comfort emphasis
+  spatial_distortion: Circular framing compression that concentrates shared warmth without forcing camp gear or flame as subject matter
   atmosphere: Cozy, crisp, friendly, restorative
-  key_features: Camp gear realism, stove warmth, starry-night campsites, bundled silhouettes, food-and-flame intimacy
+  key_features: Cold-warm contrast, practical comfort textures, bundled silhouettes, shared warmth pockets, crisp restorative atmosphere
   creative_brief: >-
-    Preserve winter-camp stove grammar as a reusable style language:
-    practical gear realism, cold-versus-warm lighting contrast, and quiet
-    friendship comfort should remain stable across subjects.
+    Use Laid-Back Camp as a style anchor for cold-warm comfort: practical
+    texture, bundled softness, and quiet friendship warmth should transfer
+    without requiring a campsite, stove, tent, food, or flame scene.
 avoidRules:
   - realistic
   - 3d render

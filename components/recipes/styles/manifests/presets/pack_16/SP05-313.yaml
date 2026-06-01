@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-313
 packId: pack_16
-name: Saint Seiya - Constellation Armor Clash
+name: Zodiac Cosmic Heroism Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Épica zodiacal juvenil de combate mítico, con fraternidad heroica y dramatismo cósmico de gran declaratoria emocional.
-  form_and_line: Contornos brillantes de armadura, anatomía heroica elongada y poses de impacto frontal con energía de torneo sagrado.
+  aesthetic: Épica zodiacal juvenil, con fraternidad heroica, brillo ritual y dramatismo cósmico declarativo.
+  form_and_line: Contornos brillantes, anatomía heroica elongada y poses de impacto frontal con energía ritual sagrada.
   color_palette: Azules celestes, dorados astrales, blancos marmóreos y rojos de voluntad combativa.
-  lighting_setup: Flares de constelación sobre clave dura de cel, sombras planas de duelo y rim luminoso en bordes de armadura.
-  material_texture: Metal pulido ceremonial, piedra de templo, polvo de combate y grano analógico retro.
+  lighting_setup: Flares de constelación sobre clave dura de cel, sombras planas dramáticas y rim luminoso en bordes ornamentales.
+  material_texture: Brillo ceremonial pulido, piedra mítica abstracta, partículas de impacto y grano analógico retro.
   render_quality: Acabado premium retro-shonen con lectura instantánea de equipo, poder astral y escalada de intensidad.
-  spatial_distortion: Perspectiva monumental de escalinata y cielo abierto para amplificar sacrificio, golpe y destino estelar.
+  spatial_distortion: Perspectiva monumental ascendente para amplificar sacrificio, impacto y destino estelar.
   atmosphere: Mítica, vehemente, celeste, sacrificial.
-  key_features: Armaduras zodiacales brillantes, escalinata-templo axial, estelas cósmicas y juramento de camaradería combativa.
-  creative_brief: Diseña una gramática reusable de heroísmo zodiacal para cualquier sujeto, fusionando iconografía estelar, armadura ritual y emoción combativa juvenil.
+  key_features: Iconografía estelar, brillo ritual, estelas cósmicas, pose declarativa y emoción combativa juvenil.
+  creative_brief: >-
+    Diseña una gramática reusable de heroísmo zodiacal para cualquier prompt o imagen de entrada:
+    cosmos, brillo y juramento visual sin imponer armaduras, templos, escalinatas ni combates literales.
 avoidRules:
   - realistic
   - 3d render

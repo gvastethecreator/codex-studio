@@ -12,22 +12,22 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Premium nature documentary, BBC Earth, wild kingdom, intimate wildlife, global spectacle
+  aesthetic: Premium nature documentary, BBC Earth-style patience, global spectacle
   form_and_line: None
   color_palette: Natural, vibrant, savannah gold, ocean teal, rainforest emerald
   lighting_setup: Golden hour, magic-hour rim, dappled canopy, underwater shaft
-  material_texture: Ultra HD, 8K texture, feather detail, fur strand
-  spatial_distortion: Slow motion, wing-beat freeze, droplet suspension
-  atmosphere: Majestic, wild, patient reverence, untamed spectacle
-  key_features: Telephoto, animal portrait, migration panorama
-  creative_brief: The camera becomes invisible, a ghost that earns the trust of fang and feather through silence and patience. Light bends around fur and scale with a clarity that borders on the sacred, each frame a cathedral window onto a world that predates and outlasts us. Here, slow motion is not an effect but a form of reverence.
+  material_texture: Ultra HD, 8K natural texture, fine surface detail
+  spatial_distortion: Slow motion, motion freeze, droplet suspension
+  atmosphere: Majestic, patient reverence, untamed spectacle
+  key_features: Telephoto reverence, slow-motion clarity, natural spectacle
+  creative_brief: 'Nature documentary style gives any subject patient reverence: golden rim light, telephoto intimacy, ultra-HD texture, slow-motion clarity, natural vibrant color, and invisible-camera restraint. Keep BBC Earth grandeur without requiring wildlife, migration, fur, feathers, humans absent, or city exclusion.'
 avoidRules:
-  - human
-  - city
+  - cheap studio
+  - artificial set
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-030.webp
 attributes:
-  negativePrompt: human, city
+  negativePrompt: cheap studio, artificial set
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

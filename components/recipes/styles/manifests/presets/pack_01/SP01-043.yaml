@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Influencer lighting
-  form_and_line: Halo in eyes
+  aesthetic: Circular frontal lighting
+  form_and_line: Ring catchlight geometry
   color_palette: Even, bright
   lighting_setup: Frontal circle
-  material_texture: Smooth skin
-  render_quality: YouTube, makeup tutorial
-  spatial_distortion: Flat features
+  material_texture: Smooth even surface
+  render_quality: Clean creator-studio realism
+  spatial_distortion: Flat frontal depth
   atmosphere: Modern, clean
-  key_features: Eye catchlight
-  creative_brief: The circular halo that erases shadow from the digital self, a distinctive ring-shaped catchlight signaling our era's particular vocabulary of visibility. Evenness deployed as aesthetic, every plane of the face receiving identical attention. The characteristic glow of an age where everyone is perpetually camera-ready, shadows banished by geometry.
+  key_features: Ring catchlight
+  creative_brief: Circular frontal light erases harsh shadow and leaves a signature ring reflection wherever surfaces can catch it. Use creator-studio evenness, flat frontal depth, and polished visibility on any subject without requiring eyes, faces, makeup, or influencer context.
 avoidRules:
   - shadows
 assets:

@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Mountain-hiking schoolgirls, crisp air, trail snacks, gradual confidence building, summit panoramas, outdoor hobby warmth rendered with encouraging sincerity
-  form_and_line: Trail-route composition lines, backpack silhouette clarity, and encouragement-driven gesture readability
-  color_palette: High-altitude blues, pine greens, sunlit path ochres, neutral hiking gear tones, and rosy effort highlights
-  lighting_setup: Clear mountain daylight, ridge-edge rim lighting, and cool valley shadow fills with summit brightness
-  material_texture: Technical fabric layers, nylon pack straps, rocky trail grit, tree-bark detail, and breathable knit accessories
-  render_quality: Outdoor-hobby rendering with clean scenic readability and uplifting progression tone
-  spatial_distortion: Elevation-gain perspective expansion toward panoramic summit reveals
+  aesthetic: Yama no Susume title anchor translated into crisp effort, supportive friendship, incremental confidence, airy clarity, and uplifting outdoor-hobby sincerity
+  form_and_line: Upward route-like composition lines, practical silhouette clarity, encouragement-driven gesture readability, and breathable spacing
+  color_palette: High-altitude blues, pine greens, sunlit ochres, neutral gear-like tones, and rosy effort highlights
+  lighting_setup: Clear daylight, ridge-edge rim lighting, cool shadow fills, and bright reveal lighting for progress beats
+  material_texture: Technical fabric layers, nylon-strap tactility, rocky grit, tree-bark texture, and breathable knit cues as optional surface language
+  render_quality: Outdoor-hobby rendering with clean scenic readability, uplifting progression tone, and sincere confidence-building warmth
+  spatial_distortion: Elevation-gain perspective expansion used as emotional progress, not as a required mountain or summit view
   atmosphere: Fresh, supportive, scenic, uplifting
-  key_features: Hiking gear, trail compositions, summit vistas, friendship encouragement gestures, bright mountain skies
+  key_features: Upward effort rhythm, supportive gestures, airy scenic clarity, practical texture cues, bright confidence-building reveals
   creative_brief: >-
-    Preserve summit-friendship grammar as a reusable style language: hiking
-    gear practicality, expansive mountain atmosphere, and incremental
-    confidence growth should remain stable across subjects.
+    Use Yama no Susume as a style anchor for supportive ascent: crisp air,
+    practical texture, and incremental confidence should transfer without
+    requiring mountains, hiking gear, trails, summit vistas, or schoolgirls.
 avoidRules:
   - realistic
   - 3d render

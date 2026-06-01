@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, raypunk]
 visualDna:
-  aesthetic: Raypunk resurrection style where wreckage is treated like raw myth and every repair bay becomes an outlaw altar.
+  aesthetic: Raypunk resurrection style where wreckage becomes raw myth and repair geometry becomes outlaw ritual.
   form_and_line: Debris totems, crane-arm silhouettes, retrofit pit rings, cable-bundle roots, and half-rebuilt hull profiles.
   color_palette: Rust orange, cobalt worklight, tar black, welding white, and chipped mission-patch color.
   lighting_setup: Arc-welding sparks, floodlight cones, backlit dust, and cobalt glows under raised wreck sections.
   material_texture: Scored metal, cable bundles, burnt paint, patched hull cloth, greasy tool foam, and cratered ceramic plating.
   render_quality: Gritty pulp concept with rich prop detail and clear salvage hierarchy.
-  spatial_distortion: Dense layered depth built from stacked wreck silhouettes, repair pits, and crane diagonals.
+  spatial_distortion: Dense layered depth built from stacked wreck silhouettes, retrofit pits, and crane diagonals.
   atmosphere: Ingenuity under pressure, outlaw pragmatism, second chances, and mechanical stubbornness.
-  key_features: Salvage crane claws, part bazaar trays, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.
+  key_features: Salvage crane claws, parts-tray grids, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.
   creative_brief: >-
     Push comet salvage-yard as reusable style: make subjects feel rebuilt from
     heroic wreckage, with repair scars, crane diagonals, and outlaw invention

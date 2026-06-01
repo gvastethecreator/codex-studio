@@ -12,23 +12,22 @@ tags:
   - photography-and-realism
   - nature-and-wildlife
 visualDna:
-  aesthetic: Epic nature vista
+  aesthetic: Zone System fine-art realism
   form_and_line: Sharp f/64 focus
   color_palette: Black and White Zone System
   lighting_setup: Dramatic sun/cloud
-  material_texture: Rock, cloud detail
+  material_texture: Tonal microdetail
   render_quality: Masterpiece, sharp
   spatial_distortion: None
   atmosphere: Grand, timeless
-  key_features: High contrast sky
-  creative_brief: The earth exhales in silver, every ridge and fissure etched by light that crossed a hundred million miles to be received by stone. Scale overwhelms the eye yet each crevice holds perfect clarity, as though the mountain demanded to be seen not as mass but as mosaic of shadow and luminous precision. Time stands still at the aperture.
+  key_features: High contrast tonal zones
+  creative_brief: "Ansel Adams' discipline becomes transferable tone design: f/64 sharpness, silver-black Zone System contrast, deep microdetail, and monumental stillness across the full value range. Apply fine-art landscape rigor to any subject without requiring mountains, rocks, clouds, wilderness, or sky."
 avoidRules:
   - color
-  - city
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-047.webp
 attributes:
-  negativePrompt: color, city
+  negativePrompt: color
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

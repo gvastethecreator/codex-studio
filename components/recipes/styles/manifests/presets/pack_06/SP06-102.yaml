@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-102
 packId: pack_06
-name: Roguelike Dungeon Tileset
+name: Roguelike Tile Glyph System
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Roguelike tile grammar built from stark glyph silhouettes, grid logic, and harsh tactical readability.
+  subject_treatment: Reduce any subject into symbolic tile chunks, clear collision edges, and instantly parsed icon-like forms.
+  color_and_tone: Low-count palette with black gutters, sickly accent colors, and high-contrast value separation.
+  lighting_and_shadow: Minimal light logic, mostly value-coded planes, with tiny glow accents reserved for interaction points.
+  texture_and_material: Chunky pixel pits, chipped edges, procedural speckle, and repeat-safe surface motifs.
+  camera_and_composition: Strict orthographic top-down or angled tile view with modular alignment and no cinematic depth.
+  atmosphere_and_mood: Tense, procedural, survival-focused mood without requiring dungeons, corridors, traps, or monsters.
+  rendering_and_quality: Seamless-tile friendly edges, crisp pixel boundaries, readable at thumbnail scale.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - literal dungeon requirement
+  - monster requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-102.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement, monster requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

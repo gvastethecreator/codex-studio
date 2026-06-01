@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Militarismo trágico de juventud desechable, con mechas arácnidos y austeridad de frente polvoriento.
-  form_and_line: Geometría baja y artrópoda, patas articuladas funcionales y composición táctica de horizonte horizontal.
+  aesthetic: Militarismo trágico de juventud desechable, con geometría drónica y austeridad de frente polvoriento.
+  form_and_line: Geometría baja y artrópoda abstracta, articulación funcional y composición táctica de horizonte horizontal.
   color_palette: Arena desaturada, acero pálido, óxido mate y señales de interfaz en rojo de alerta contenido.
   lighting_setup: Cielo lechoso de guerra, contraluces de polvo en suspensión y pantallas tácticas como fuente secundaria.
   material_texture: Blindaje erosionado, abrasión eólica, barro seco, arañazos de campo y polímero envejecido.
-  render_quality: Realismo anime táctico con énfasis en desgaste operacional y lectura de escuadra.
+  render_quality: Realismo anime táctico con énfasis en desgaste operacional y lectura de sistema.
   spatial_distortion: Perspectiva terrestre comprimida con telemetría superpuesta y sensación de distancia sin salida.
   atmosphere: Sombría, ventosa y fatalista, de duelo militar silencioso.
-  key_features: Unidades spider-mech, overlays de mando, llanura de polvo, ruina bélica y lenguaje de pérdida colectiva.
+  key_features: Hardware drónico, overlays de mando, polvo abrasivo, ruina operacional y lenguaje de pérdida colectiva.
   creative_brief: >-
     Construye una gramática dustfront-drone reusable donde hardware arácnido,
     paisaje abrasivo y emoción de baja frecuencia expresen deshumanización
-    sistémica sin caer en épica glorificada.
+    sistémica sin requerir unidad, frente o batalla concreta.
 avoidRules:
   - realistic
   - 3d render

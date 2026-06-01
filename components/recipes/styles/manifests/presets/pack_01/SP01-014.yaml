@@ -19,9 +19,9 @@ visualDna:
   material_texture: Medium grain
   render_quality: Cinematic, moody
   spatial_distortion: Red halation glow
-  atmosphere: Night, urban
+  atmosphere: Nocturnal, moody
   key_features: Red halos
-  creative_brief: The city after midnight exhales through tungsten breath, streetlights bleeding crimson coronas into cooling air. Every source of illumination becomes a wound in the darkness, tender and electric. A solitary frame suspended in the long exposure between loneliness and belonging.
+  creative_brief: Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets.
 avoidRules:
   - illustration
   - painting

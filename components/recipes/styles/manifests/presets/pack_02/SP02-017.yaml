@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Cozy multi-camera apartment set, Friends/Seinfeld warmth, laugh-track comfort, 90s New York vibe
+  aesthetic: Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe
   form_and_line: None
-  color_palette: Bright, flat, warm beige wall, purple door, cream sofa
+  color_palette: Bright flat warmth, beige, cream, soft accent color
   lighting_setup: Multi-camera lighting, broad even wash, audience-ready spill
   material_texture: Videotape, SD broadcast, soft analog edges
   render_quality: Studio audience feel, live-tap energy, punch-line timing
   spatial_distortion: None
-  atmosphere: Comfort, funny, hangout warmth, nostalgic security
-  key_features: 3-wall set, central sofa, kitchen doorway
-  creative_brief: Warm light spills across familiar furniture like an old friend settling into a favorite chair. Every corner of the room holds the echo of laughter, the walls saturated with decades of shared jokes and knowing glances. The frame itself becomes a hug, wrapping the viewer in the amber glow of belonging.
+  atmosphere: Comfort, funny, nostalgic security
+  key_features: Multi-camera wash, 3-wall-set clarity, sitcom warmth
+  creative_brief: '90s sitcom style wraps any subject in broad multi-camera comfort: flat warm light, SD videotape softness, audience-ready exposure, beige/cream palette, and punch-line timing. Keep familiar hangout warmth without requiring apartments, sofas, kitchens, New York, or cast members.'
 avoidRules:
   - cinematic
   - dark

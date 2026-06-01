@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Suburban cul-de-sac scam energy, boiling outlines, stretched faces, loud adolescent nonsense, sticky summer heat, impossible jawbreaker obsession, scam-blueprint slapstick, Canadian tween chaos
+  aesthetic: Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos
   form_and_line: Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble
   color_palette: Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  lighting_setup: Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination
+  material_texture: Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil
+  render_quality: Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick
+  spatial_distortion: Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse
   atmosphere: Hyper, sweaty, scammy, loud
-  key_features: Boiling line art, stretched jaw shapes, sticky suburban props, scam gadgets, exaggerated reaction takes
-  creative_brief: The outline trembles as if the drawing itself can barely contain its own voltage, suburban sidewalks baking under a sun that has witnessed every scheme fail by sunset and rise again by morning. Candy becomes currency and chaos the native tongue, each plan more elaborate and doomed than the last. Summer stretches infinite when the only adult supervision is the heat mirage shimmering off the cul-de-sac asphalt.
+  key_features: Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes
+  creative_brief: 'Use boiling-line scam-cartoon grammar on any prompt: vibrating contours, stretched forms, sticky summer palette, frantic diagram energy, and exaggerated reaction timing. Avoid suburban streets, candy, gadgets, characters, or fixed schemes. The style should feel like a plan vibrating apart before it begins.'
 avoidRules:
   - digital
   - HD

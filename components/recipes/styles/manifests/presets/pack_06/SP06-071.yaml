@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-071
 packId: pack_06
-name: Mosaic (Paper)
+name: Torn Paper Mosaic
 category: 5. Mixed Media
 version: 1
 supportedTasks:
@@ -17,11 +17,11 @@ visualDna:
   color_palette: Magazine scraps
   lighting_setup: Flat
   material_texture: Paper fibers
-  render_quality: Craft, school
+  render_quality: Craft mosaic finish with distance-read coherence and fiber-edge tactility
   spatial_distortion: Pixelated by scraps
   atmosphere: Creative, recycled
   key_features: Torn bits
-  creative_brief: Magazine pages torn into confetti reassemble into image at distance, the fragments finding coherence only when the eye surrenders detail. Each scrap carries its own color, its own typography, its own advertisement, the aggregate becoming more than the archive. The image is a mosaic of meanings, each tessera a story that does not belong to the whole.
+  creative_brief: Torn paper fragments reassemble into image at distance, coherence appearing only when the eye surrenders detail. Each scrap carries its own color, fiber edge, and print residue, but no readable typography or ad content should dominate. The image is a mosaic of material decisions, each tessera partly belonging and partly refusing.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable typography
+  - advertisement requirement
+  - school craft mood
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-071.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable typography, advertisement requirement, school craft mood
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

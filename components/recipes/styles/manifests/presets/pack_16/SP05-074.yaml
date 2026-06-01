@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-074
 packId: pack_16
-name: Your Name – Makoto Shinkai Skyglow Longing Drama
+name: Skyglow Longing Drama Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Melodrama celeste hiper-luminoso con romanticismo adolescente, memoria fragmentada y monumentalidad atmosférica.
+  aesthetic: Melodrama celeste hiper-luminoso con anhelo íntimo, memoria fragmentada y monumentalidad atmosférica.
   form_and_line: Línea pulida de feature moderno, acting íntimo y composición de horizonte como eje emocional.
   color_palette: Azules profundos de crepúsculo, magentas de cielo tardío, naranjas de atardecer y cian cristalino.
   lighting_setup: Flare óptico controlado, contraluz de hora mágica y gradientes de cielo de alta saturación sentimental.
-  material_texture: Superficies urbanas limpias, aire húmedo translúcido y microdetalle ambiental de realismo pictórico.
+  material_texture: Superficies limpias, aire húmedo translúcido y microdetalle ambiental de realismo pictórico.
   render_quality: Acabado cinematográfico brillante con foco en luz narrativa y emoción suspendida en paisaje.
-  spatial_distortion: Escala dual ciudad-pueblo con cortes espaciales que refuerzan distancia afectiva y encuentro improbable.
+  spatial_distortion: Escala dual entre proximidad y lejanía, con cortes espaciales que refuerzan distancia afectiva.
   atmosphere: Romántica, luminosa, nostálgica, doliente.
-  key_features: Cielo protagonista, motivo de hilo/memoria y contraste entre cotidianidad juvenil y evento cósmico.
-  creative_brief: Define una gramática reusable de romance cósmico-lumínico para cualquier sujeto, priorizando cielo expresivo, anhelo temporal y delicadeza emocional.
+  key_features: Cielo protagonista, motivo de hilo/memoria y contraste entre cotidianidad íntima y evento cósmico.
+  creative_brief: Define una gramática reusable de romance cósmico-lumínico para cualquier sujeto, priorizando cielo expresivo, anhelo temporal y delicadeza emocional sin imponer ciudad, pueblo, adolescentes ni cometas literales.
 avoidRules:
   - realistic
   - 3d render

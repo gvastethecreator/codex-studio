@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-309
 packId: pack_16
-name: Dirty Pair - Trouble Consultant Laser Glam
+name: Explosive Space Glam Action Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Space-action glam de dupla hiperpop, con elegancia de misión y destrucción colateral coreografiada.
+  aesthetic: Space-action glam hiperpop, con elegancia táctica, croma explosivo y caos coreografiado.
   form_and_line: Siluetas fashion dinámicas, contorno cel contundente y lenguaje de pose dual coordinada en clave de impacto.
   color_palette: Blancos clínicos de corredor, rosas explosivos, cianes láser y acentos amarillos de advertencia pop.
   lighting_setup: Luz interior brillante de sci-fi retro con flashes de energía y sombras planas para legibilidad de acción veloz.
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Acabado premium retro-glam con claridad de dúo protagonista y balance entre espectacularidad y control.
   spatial_distortion: Corredores de fuga y combate con perspectiva lineal acelerada para subrayar velocidad y destrucción elegante.
   atmosphere: Flashy, traviesa, pop, explosiva.
-  key_features: Dúo heroico glam, pasillos blancos de misión, efectos láser coloridos y composición de caos coreografiado.
-  creative_brief: Diseña una gramática reusable de acción-glam en dupla para cualquier sujeto, fusionando moda sci-fi, croma explosivo y sincronía táctica entre dos protagonistas.
+  key_features: Moda sci-fi abstracta, láseres de color, sincronía táctica sugerida, croma explosivo y composición de caos limpio.
+  creative_brief: >-
+    Diseña una gramática reusable de acción glam espacial para cualquier prompt o imagen de entrada:
+    moda, energía táctica y color explosivo sin imponer dúos, pasillos, misiones ni protagonistas concretos.
 avoidRules:
   - realistic
   - 3d render

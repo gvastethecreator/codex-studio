@@ -20,12 +20,12 @@ visualDna:
   render_quality: Visualización editorial ultra-clean con énfasis en proporción, borde, alineación y disciplina de vacío.
   spatial_distortion: Perspectiva neutra y estable, con profundidad construida por capas tonales suaves en lugar de dramatización angular.
   atmosphere: Serenidad curada, control acústico implícito, claridad mental, y sensación de lujo por contención.
-  key_features: Mobiliario integrado, almacenaje invisible, carpinterías enrasadas, escaleras o plataformas suspendidas y continuidad suelo-muro.
+  key_features: Vacío activo, alineación invisible, planos enrasados, módulos suspendidos y continuidad material sin lectura de escena obligatoria.
   creative_brief: >-
     Preserva una gramática minimalista transferible basada en sustracción
-    extrema, continuidad constructiva y jerarquía por vacío. Cualquier sujeto
-    debe leerse como parte de un sistema de planos silenciosos, luz uniforme y
-    detalle oculto de alta precisión.
+    extrema, continuidad constructiva y jerarquía por vacío. Cualquier input
+    debe absorberse en planos silenciosos, luz uniforme y detalle oculto de
+    alta precisión sin quedar atado a arquitectura literal.
 avoidRules:
   - clutter
   - ornate

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-282
 packId: pack_16
-name: Tokyo Godfathers - Christmas Alley Grace
+name: Social Humanist Warmth Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Humanismo urbano navideño que mezcla comedia de supervivencia y ternura social en escenarios densos de callejón metropolitano.
-  form_and_line: Línea expresiva de ensemble, gestualidad corporal desprolija pero cálida y staging coral para transmitir vínculo improvisado.
-  color_palette: Neones festivos de tienda, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.
-  lighting_setup: Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad callejera.
-  material_texture: Asfalto mojado, cartón gastado, telas superpuestas de invierno y señalética urbana con desgaste cotidiano.
-  render_quality: Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental de barrio vivido.
-  spatial_distortion: Perspectiva urbana comprimida con capas de objetos y peatones que envuelven al trío sin perder foco relacional.
+  aesthetic: Humanismo cálido con comedia amarga, textura social y ternura resistente.
+  form_and_line: Línea expresiva de ensemble, gestualidad corporal imperfecta pero cálida y staging coral adaptable a cualquier motivo.
+  color_palette: Neones festivos, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.
+  lighting_setup: Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad.
+  material_texture: Superficie mojada, cartón gastado, telas superpuestas de invierno y señalética con desgaste cotidiano.
+  render_quality: Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental vivido.
+  spatial_distortion: Perspectiva comprimida con capas de objetos y presencias que envuelven el foco relacional.
   atmosphere: Caótica, compasiva, festiva, redentora.
-  key_features: Trío protagonista en bloque, clutter urbano navideño, refugios improvisados, humor corporal y microgestos de cuidado mutuo.
-  creative_brief: Define un estilo reusable de gracia urbana invernal para cualquier sujeto combinando neón navideño, textura de precariedad y composición coral centrada en vínculo humano.
+  key_features: Composición coral, microgestos de cuidado, humor corporal, textura social sugerida y contraste entre dureza visual y compasión.
+  creative_brief: >-
+    Define un estilo reusable de gracia humanista para cualquier prompt o imagen de entrada:
+    calor emocional, imperfección expresiva y vínculo social sin imponer callejones, navidad, refugios ni grupos protagonistas.
 avoidRules:
   - realistic
   - 3d render

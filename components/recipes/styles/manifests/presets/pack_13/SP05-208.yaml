@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: DIY school-club softness, tactile wood and cloth, earnest beginner craftsmanship, warm afternoons, friendship built one handmade object at a time
-  form_and_line: Tool-and-material contour clarity, beginner-handmade imperfection cues, and cheerful workshop gesture arcs
+  aesthetic: DIY softness where tactile material process, earnest beginner imperfection, warm afternoons, and friendship build through making
+  form_and_line: Tool-and-material contour clarity, handmade imperfection cues, and cheerful workshop-like gesture arcs
   color_palette: Sanded wood beiges, glue-white highlights, cloth pastels, soft mint accents, and amber afternoon window tones
-  lighting_setup: Workshop-side daylight, dust-mote backlight, and gentle practical lamp fill on workbenches
+  lighting_setup: Side daylight, dust-mote backlight, and gentle practical fill on making surfaces
   material_texture: Sawdust particulate, unfinished timber grain, fabric scraps, adhesive sheen, and hand-painted craft surfaces
   render_quality: Craft-club rendering with tactile object fidelity, beginner warmth, and process-over-polish readability
-  spatial_distortion: Workbench-focused framing that magnifies handmade object presence
+  spatial_distortion: Process-focused framing that magnifies handmade object presence
   atmosphere: Crafty, sweet, tactile, optimistic
-  key_features: Tools and craft materials, workshop sunlight, beginner-made textures, friend-group posing, handmade object focus
+  key_features: Craft-material clarity, warm process light, beginner-made textures, collaborative posing, and handmade focus
   creative_brief: >-
-    Preserve handmade craft-club grammar as a reusable style system:
-    tactile workshop materials, process-visible object making, and friendly
-    collaborative optimism should remain coherent across subjects.
+    Use the title as a style anchor for handmade craft glow. Preserve tactile
+    material process, visible making, and collaborative optimism without
+    requiring school club, workshop, tools, or specific objects.
 avoidRules:
   - realistic
   - 3d render

@@ -13,15 +13,15 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: Magazine spread
-  form_and_line: Dynamic pose
+  form_and_line: Dynamic editorial geometry
   color_palette: Color graded, trendy
   lighting_setup: Creative studio
-  material_texture: Fabric detail
+  material_texture: Fabriclike surface detail
   render_quality: Vogue, high end
   spatial_distortion: Elongated limbs
   atmosphere: Cool, expensive
-  key_features: Clothes focus
-  creative_brief: Fabric becomes architecture on the body, each fold and drape sculpted by light that knows exactly which surfaces deserve worship and which should retreat into shadow. The pose defies gravity and convention alike, a single frozen gesture that telegraphs an entire season of wanting in a glance. Color grading tastes like nostalgia for a future that has not yet arrived.
+  key_features: Styling-first focus
+  creative_brief: 'Fashion editorial treats any subject as a styled spread: dynamic geometry, sculpted fabriclike texture, expensive color grade, and surfaces chosen for desire rather than description. Keep Vogue-level drama without requiring clothes, bodies, runway poses, or a human model.'
 avoidRules:
   - boring
   - plain

@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Slack-off office cartoon with flat digital color, awkward little guys, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan workplace nonsense, casually cursed side characters, adult-swim anti-spectacle simplicity
+  aesthetic: Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity
   form_and_line: Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents
   color_palette: Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan
   lighting_setup: Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill
-  material_texture: Simple digital fills, lightly dirty edges, cheap office carpet texture, flat wall paint, low-fuss line art
+  material_texture: Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art
   render_quality: Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish
-  spatial_distortion: Stubby limb proportions, tiny torsos, off-model expressions, abrupt perspective jumps for punchlines
+  spatial_distortion: Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines
   atmosphere: Awkward, deadpan, bizarre, mildly cursed
-  key_features: Simple oddball silhouettes, blank stares, mundane office props, anti-climactic gag framing, uncomfortable pauses made visual
-  creative_brief: The fluorescent hum of a dying office illuminates creatures who stopped asking why sometime last Thursday, their flatness a philosophy and a shield against the absurdity of showing up again tomorrow. Nothing resolves, nothing escalates, nothing happens beautifully. And yet the clock keeps ticking and everyone keeps smiling, because what else is there to do?
+  key_features: Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness
+  creative_brief: 'Apply flat weird-comedy design to any prompt: sour pastels, simple contours, mundane staging, anti-climactic composition, and awkward pauses made visible. Avoid required offices, workplaces, side characters, or specific props. The style should feel funny because it refuses spectacle.'
 avoidRules:
   - epic
   - slick

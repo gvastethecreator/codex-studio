@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Civic balcony ring where residents gather for shared earthrise rituals.
-  form_and_line: Arc balconies, tiered seats, and radial amphitheater geometry.
-  color_palette: Indigo, pearl, and soft gold.
-  lighting_setup: Earthrise rimlight and low lantern arrays.
-  material_texture: Smooth stone composites, textile banners, and glass railings.
-  render_quality: Poetic architectural concept with high emotional clarity.
-  spatial_distortion: Panoramic arc framing cosmic horizon.
-  atmosphere: Reverence, community, and perspective.
-  key_features: Earthrise seats, story circles, and phase lanterns.
+  aesthetic: Abstract earthrise perspective style with shared horizon framing, reverent rimlight, and communal scale humility.
+  form_and_line: Wide arc bands, tiered seating-like contours, radial amphitheater curves, phase-lantern dots, and horizon-framing rails.
+  color_palette: Deep indigo, pearl white, soft gold, earthrise blue, and textile shadow violet.
+  lighting_setup: Earthrise-like rimlight, low lantern arrays, horizon glow, and soft gold along transparent edges.
+  material_texture: Smooth stone composite, textile softness, glass rail sheen, woven surface detail, and polished lantern shells.
+  render_quality: Poetic render with emotional clarity, clean horizon discipline, and precise communal sightline design.
+  spatial_distortion: Panoramic arc framing creates shared perspective and smallness without prescribing a balcony scene.
+  atmosphere: Reverence, community, humility, and planetary perspective.
+  key_features: Horizon arcs, earthrise blue rimlight, phase-lantern dots, textile-shadow warmth, and pearl-gold communal framing.
   creative_brief: >-
-    Preserve earthrise commons-balcony grammar as a reusable style system:
-    panoramic communal rituals, amphitheater civic intimacy, and
-    cosmological perspective practice should remain coherent across subjects.
+    Apply earthrise commons-balcony as an abstract style treatment: make any
+    subject feel gathered, humbled, rimlit, and oriented toward a shared
+    horizon.
 avoidRules: [photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-077.webp }
 attributes:
   negativePrompt: photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

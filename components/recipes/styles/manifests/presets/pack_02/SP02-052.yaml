@@ -14,14 +14,14 @@ tags:
 visualDna:
   aesthetic: Toy camera (Holga)
   form_and_line: None
-  color_palette: Cross processed, color-shifted, purple sky, green skin, unpredictable palette
+  color_palette: Cross processed, color-shifted, purple drift, green cast, unpredictable palette
   lighting_setup: Leak, light-struck frame, accidental exposure, red window
   material_texture: Plastic lens blur, toy-optics softness, zone focus mush
   render_quality: Artsy, weird, lo-fi aesthetic, happy accident
   spatial_distortion: Vignette blur, edge falloff, tunnel softness
   atmosphere: Experimental, fun, rule-breaking, analog play
   key_features: Light leaks, sprocket holes, film rebate, double-exposure ghost
-  creative_brief: 'The camera surrenders control and the image rewards the gamble: skies veer violet, skin drifts green, and light leaks in through uninvited doors. Perfection was never the point — the artifact is the art. Every frame is a collaboration between intention and accident, where sprocket holes and chemical ghosts become the signature, and the mistake is the only thing worth keeping.'
+  creative_brief: 'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition.'
 avoidRules:
   - correct color
 assets:

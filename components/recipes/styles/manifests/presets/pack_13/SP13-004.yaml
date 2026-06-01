@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Industrial mecha-launch anime language with monumental machine presence, maintenance-bay realism, and pre-deployment tension
-  form_and_line: Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and infrastructural hangar line grids supporting scale cues
+  aesthetic: Industrial ignition anime language with monumental machine pressure, maintenance-bay realism as texture, and pre-deployment tension
+  form_and_line: Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and infrastructural line grids supporting scale cues
   color_palette: Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds
-  lighting_setup: High-bay spotlight beams, hard metallic rim accents, intermittent maintenance sparks, and low ambient fill for mass emphasis
-  material_texture: Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint edges, and matte industrial flooring
-  render_quality: High-detail mecha key-visual rendering with disciplined mechanical readability, layered depth hierarchy, and production-grade anime polish
-  spatial_distortion: Wide-angle hangar depth exaggeration with controlled perspective convergence to reinforce machine scale
+  lighting_setup: High-bay spotlight beams, hard metallic rim accents, intermittent spark accents, and low ambient fill for mass emphasis
+  material_texture: Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint edges, and matte industrial surfaces
+  render_quality: High-detail mechanical key-visual rendering with disciplined readability, layered depth hierarchy, and production-grade anime polish
+  spatial_distortion: Wide-angle industrial depth exaggeration with controlled perspective convergence to reinforce scale
   atmosphere: Pressurized, anticipatory, technical, and power-laden
-  key_features: Monument-scale mecha silhouette, articulated panel logic, maintenance scaffolding context, launch-readiness lighting cues, and operator-scale contrast markers
+  key_features: Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context, launch-readiness lighting cues, and scale contrast markers
   creative_brief: >-
-    Preserve mecha-hangar style as a reusable grammar: heavy mechanical
-    line-dense construction, industrial lighting tension, and scale-through-
-    infrastructure contrast should remain consistent across subjects.
+    Use Mecha Hangar Ignition as style anchor for industrial scale drama:
+    heavy mechanical construction, hard technical light, and infrastructure-like
+    contrast should transfer without requiring a robot, hangar, operator, or
+    launch scene.
 avoidRules:
   - photoreal
   - toy-like

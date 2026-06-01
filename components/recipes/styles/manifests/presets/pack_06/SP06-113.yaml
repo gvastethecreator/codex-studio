@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-113
 packId: pack_06
-name: Fantasy MMO World Map
+name: Fantasy MMO Parchment Interface
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Fantasy MMO parchment-interface style with ornamental cartography logic, aged UI material, and quest-screen clarity.
+  subject_treatment: Recast any subject into symbolic maplike marks, route-like linework, framed medallions, and collectible lore texture.
+  color_and_tone: Sepia parchment base, ink-brown contours, muted jewel accents, red wax-like highlights, and soft vignette aging.
+  lighting_and_shadow: Flat document lighting with subtle edge shadows, embossed ornament glints, and low-contrast aged stains.
+  texture_and_material: Fibrous paper grain, burned borders, stamped motifs, hand-inked line jitter, and softened fold marks.
+  camera_and_composition: Top-down UI/document composition with decorative framing, open readable zones, and no required geography.
+  atmosphere_and_mood: Adventurous, archival, questlike mood without requiring maps, continents, castles, compass roses, or text.
+  rendering_and_quality: Clean game-UI asset finish, no readable labels, strong ornament hierarchy, thumbnail-safe.
 avoidRules:
   - watermark
   - text
+  - readable map labels
+  - literal world map requirement
+  - castle requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-113.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, readable map labels, literal world map requirement, castle requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

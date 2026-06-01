@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Decopunk airfield ceremony where flight is a diplomatic entrance, all fins, ramps, monograms, and golden-hour authority.
-  form_and_line: Wing-canopy sweeps, control-tower fins, runway symmetry, ceremonial ramp diagonals, and streamlined lounge windows.
+  aesthetic: Decopunk flight ceremony where arrival becomes fins, monograms, and golden-hour authority.
+  form_and_line: Wing-canopy sweeps, control-tower fins, runway-like symmetry, ceremonial diagonals, and streamlined window bands.
   color_palette: Sky gray, brass, cream white, leather brown, and lacquered insignia red.
   lighting_setup: Golden-hour runway glints, terminal sconces, aircraft-edge highlights, and long shadows from finned hangars.
   material_texture: Riveted metal, polished stone, enamel signs, leather luggage, brushed controls, and oiled tarmac sheen.
   render_quality: Expansive transport concept with period detail, arrival choreography, and clean diplomatic staging.
-  spatial_distortion: Runway vanishing lines and ramp diagonals turn arrival into a staged procession under monumental fins.
+  spatial_distortion: Runway-like vanishing lines and diagonals turn arrival into a staged procession under monumental fins.
   atmosphere: Prestige travel, geopolitical theater, aristocratic mobility, and wind-polished anticipation.
-  key_features: Deco control towers, ceremonial ramp marks, monogrammed lounges, finned hangar doors, and polished luggage trains.
+  key_features: Deco control-fin motifs, ceremonial ramp marks, monogrammed bands, finned door shapes, and polished luggage-line rhythms.
   creative_brief: >-
     Preserve art deco airfield grammar as a reusable style system:
     streamlined arrival ceremony, fin-and-ramp prestige staging, and

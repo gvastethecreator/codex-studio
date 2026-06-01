@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Existential biomecha anime language with red-alert militarism, sacred-apocalypse iconography, and fragile adolescent interiority under procedural command pressure
-  form_and_line: Sharp 90s mechanical contour discipline, angular cockpit framing grids, restrained character acting lines, and punctuated impact-stroke accents
+  aesthetic: Existential biomecha anime language with red-alert procedural pressure, sacred-apocalypse iconography, and fragile interiority expressed through oppressive systems design
+  form_and_line: Sharp 90s mechanical contour discipline, angular diagnostic grid framing, restrained emotion-line pressure, and punctuated impact-stroke accents
   color_palette: Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated skin tones under control-room light
-  lighting_setup: Emergency UI strobing, hard cockpit practicals, cross-blast overexposure flashes, and severe shadow partitions that heighten psychological confinement
+  lighting_setup: Emergency UI strobing, hard diagnostic practicals, cross-blast overexposure flashes, and severe shadow partitions that heighten psychological confinement
   material_texture: Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and painted-background decay tonality
   render_quality: Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading, and symbolic action clarity
-  spatial_distortion: Claustrophobic interior compression punctuated by sudden scale ruptures during apocalyptic events and cross-shaped detonation framing
-  atmosphere: Apocalyptic, interior, anxious, sacred
-  key_features: Red alert overlays, cockpit claustrophobia, cross-shaped blasts, command-room grids, lonely child pilot framing
+  spatial_distortion: Claustrophobic frame compression punctuated by sudden scale ruptures and cross-shaped symbolic blast framing
+  atmosphere: Apocalyptic, anxious, sacred, confined
+  key_features: Red alert overlays, pressure-grid claustrophobia, cross-shaped blasts, procedural interface geometry, isolated focal framing
   creative_brief: >-
     Preserve red-alert psychological-biomecha grammar as a reusable style
     system: emergency-interface tension, sacred-apocalypse symbol bursts, and
-    cockpit-scale adolescent isolation should remain consistent across subjects.
+    oppressive diagnostic isolation should remain consistent across subjects.
 avoidRules:
   - realistic
   - 3d render

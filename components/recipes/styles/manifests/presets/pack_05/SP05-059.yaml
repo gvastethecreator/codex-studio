@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-059
 packId: pack_05
-name: Tactical Network Cybercrime
+name: Tactical Network Procedure Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Network warfare, modular drones, tactical overlays, grounded procedural cyber action, stand-alone-complex hacking, laughing-man logo, think-tank neural links, optical camouflage
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Procedural cyber cognition, network pressure, modular tactical overlays, identity uncertainty, and calm investigative momentum.
+  form_and_line: Clean technical linework, modular contour blocks, thin overlay vectors, precise facial restraint, and grounded cyber-anime silhouettes.
+  color_palette: Blue-gray steel, muted teal, signal green, amber interface points, black glass, and pale skin-warm accents.
+  lighting_setup: Monitor wash, soft urban-noir glow, optical shimmer, low practical highlights, and controlled specular edge light.
+  material_texture: Interface glass, matte polymer, subtle rain sheen, brushed technical surfaces, and ghosted transparent overlays.
+  render_quality: Premium procedural cyber-anime finish with cool-headed readability, interface discipline, and high-detail restraint.
+  spatial_distortion: Network-layer parallax, transparent overlay depth, surveillance compression, and modular data planes around subject forms.
   atmosphere: Tactical, cool-headed, procedural, cerebral
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: The battlefield is invisible, made of packets and protocols, yet its casualties are real. Hackers weave through firewalls like ghosts through walls, leaving only a laughing-man logo behind. In the network, identity is the first casualty and truth the last.
+  key_features: Tactical overlays, optical transparency, modular data planes, identity-fracture calm, and procedural cyber-noir clarity.
+  creative_brief: >-
+    Apply tactical network procedure as a reusable style treatment: make any
+    subject feel analyzed, networked, partially hidden, and intellectually
+    tense while staying abstract, portable, and detached from fixed operators,
+    brands, devices, institutions, rooms, or casework scenes.
 avoidRules:
   - realistic
   - 3d render

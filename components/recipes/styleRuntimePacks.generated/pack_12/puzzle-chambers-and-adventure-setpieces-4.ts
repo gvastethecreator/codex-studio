@@ -9,14 +9,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, modern-ui, plastic-look',
     style: {
-      aesthetic: 'Aerial steampunk with armed airships and floating towers.',
-      subject_treatment: 'Corsair captains in bronze and leather suits.',
-      color_and_tone: 'Coppers, storm blues, and aged cream.',
-      lighting_and_shadow: 'Afternoon light passing through steam and boiler smoke.',
-      texture_and_material: 'Rivets, oiled gears, and varnished wood.',
-      camera_and_composition: 'Triangular composition with a dominant flagship.',
-      atmosphere_and_mood: 'Epic adventure, risk, and imperial ambition.',
-      rendering_and_quality: 'Premium splash art with world narrative.',
+      aesthetic:
+        'Action-adventure steampunk aéreo con foco en traversal vertical, combate de abordaje y exploración de nodos flotantes.',
+      subject_treatment:
+        'Clases corsair/engineer/pilot identificables por equipamiento y lenguaje de animación mecánica.',
+      color_and_tone:
+        'Cobre viejo, azul tormenta y crema envejecido para codificar tecnología victoriana-fantástica.',
+      lighting_and_shadow:
+        'Luz oblicua entre vapor de caldera, con silhouettes de casco y lectura de altura/plataformas.',
+      texture_and_material:
+        'Remaches, latón aceitado, madera barnizada y lona de dirigible con desgaste funcional.',
+      camera_and_composition:
+        'Triangulación de objetivos (nave, torre, ruta) para indicar flow de misión y puntos de interés.',
+      atmosphere_and_mood:
+        'Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.',
+      rendering_and_quality:
+        'Splash art premium orientado a gameplay loops de vuelo, abordaje y puzzle de navegación.',
     },
   },
   {
@@ -25,14 +33,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, anti-aliased-blur, noisy',
     style: {
-      aesthetic: 'Cozy pixel-art for social adventure hub.',
-      subject_treatment: 'Charismatic NPCs with clear and animatable silhouettes.',
-      color_and_tone: 'Warm palette of wood, copper and candles.',
-      lighting_and_shadow: 'Soft interior lighting with gentle contrast.',
-      texture_and_material: 'Clean pixel clusters and controlled noise.',
-      camera_and_composition: 'Side view of room with points of interest.',
-      atmosphere_and_mood: 'Cozy, friendly and full of secrets.',
-      rendering_and_quality: 'Tileable background with excellent readability.',
+      aesthetic:
+        'Pixel-RPG hub social de 16-bit, centrado en loops de quest, comercio y descanso narrativo.',
+      subject_treatment:
+        'NPCs por arquetipo (quest giver, vendor, lore) con silueta de tile y animación idle/readable.',
+      color_and_tone: 'Madera cálida, cobre, velas y acentos de UI diegética para POIs.',
+      lighting_and_shadow:
+        'Iluminación interior suave en banding de píxel, con contraste suficiente para navegación.',
+      texture_and_material:
+        'Clusters limpios, dithering controlado y tiles modulares sin ruido ambiguo.',
+      camera_and_composition:
+        'Side-view de hub con circulación clara entre menú, tienda, crafting y salida de mapa.',
+      atmosphere_and_mood: 'Acogedora, social y curiosa, con sensación de progreso seguro.',
+      rendering_and_quality:
+        'Pixel pipeline de alta legibilidad con tileset reusable y jerarquía visual por interacción.',
     },
   },
   {
@@ -41,14 +55,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, clutter, low-contrast',
     style: {
-      aesthetic: 'Puzzle chamber in a lunar monolith of ancient technology.',
-      subject_treatment: 'Lone explorer interacting with moving runes.',
-      color_and_tone: 'Ash gray, soft blue, and spectral white.',
-      lighting_and_shadow: 'Central halo with soft geometric shadows.',
-      texture_and_material: 'Smooth basalt, lunar dust, and opaque crystal.',
-      camera_and_composition: 'Symmetric composition oriented around mechanics.',
-      atmosphere_and_mood: 'Contemplation, ingenuity, and mystery.',
-      rendering_and_quality: 'Puzzle space with functional clarity.',
+      aesthetic:
+        'Puzzle-chamber lunar de tecnología ancestral con mecánicas de rotación, sincronía y energía diferida.',
+      subject_treatment:
+        'Explorador solitario con feedback visual claro sobre interacción de runas móviles.',
+      color_and_tone:
+        'Gris ceniza, azul tenue y blanco espectral para lectura de estado activo/inactivo.',
+      lighting_and_shadow:
+        'Halo central con sombras geométricas suaves que revelan alineaciones correctas.',
+      texture_and_material:
+        'Basalto pulido, polvo lunar, cristal opaco y juntas de mecanismo antiguo.',
+      camera_and_composition:
+        'Simetría funcional orientada a mecánicas, con foco en nodos de resolución.',
+      atmosphere_and_mood: 'Contemplativa, ingeniosa y enigmática.',
+      rendering_and_quality:
+        'Puzzle-space clarity-first con telegraph nítido de reglas, progreso y solución.',
     },
   },
   {
@@ -57,14 +78,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, grimdark, photoreal-grain',
     style: {
-      aesthetic: 'Colorful fantasy in a giant-mushroom biome.',
-      subject_treatment: 'Agile explorers and friendly borderline creatures.',
-      color_and_tone: 'Organic magenta, mint green, and warm cream.',
-      lighting_and_shadow: 'Soft light filtered through giant mushroom caps.',
-      texture_and_material: 'Spongy surfaces, moss, and living wood.',
-      camera_and_composition: 'Curved path with playful verticality.',
-      atmosphere_and_mood: 'Wonder, adventure, and light humor.',
-      rendering_and_quality: 'Platformer world with strong identity.',
+      aesthetic:
+        'Platformer-exploration whimsical en bioma de hongos gigantes, con énfasis en salto, momentum y rutas secretas.',
+      subject_treatment:
+        'Exploradores ágiles y criaturas liminales amistosas con lectura clara de interacción/no amenaza.',
+      color_and_tone:
+        'Magenta orgánico, verde menta y crema cálido para navegación amable por bioma.',
+      lighting_and_shadow:
+        'Luz suave filtrada por sombreros gigantes, con contraste moderado para lectura de plataformas.',
+      texture_and_material:
+        'Superficies esponjosas, musgo vivo, madera orgánica y setas con propiedades de rebote.',
+      camera_and_composition:
+        'Camino curvo con verticalidad lúdica, checkpoints visuales y reward loops.',
+      atmosphere_and_mood: 'Maravillosa, aventurera y con humor ligero.',
+      rendering_and_quality:
+        'Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.',
     },
   },
   {
@@ -73,14 +101,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, bland-ui, low-detail',
     style: {
-      aesthetic: 'Arcane marketplace for a roguelike card game.',
-      subject_treatment: 'Mystical merchants and animated artifacts.',
-      color_and_tone: 'Sapphire blue, copper, and rich purple.',
-      lighting_and_shadow: 'Magical lanterns with pulsing glow.',
-      texture_and_material: 'Scrolls, carved wood, and gems.',
-      camera_and_composition: 'Fan-shaped stands with a central focal point.',
-      atmosphere_and_mood: 'Curiosity, strategy, and calculated risk.',
-      rendering_and_quality: 'Highly readable run-selection hub.',
+      aesthetic:
+        'Deckbuilder-roguelike hub arcano orientado a draft, compra de reliquias y preparación de run.',
+      subject_treatment:
+        'Comerciantes místicos y artefactos animados con lectura de rareza y función.',
+      color_and_tone: 'Azul zafiro, cobre y púrpura intenso para jerarquía de recompensa/riesgo.',
+      lighting_and_shadow:
+        'Faroles mágicos pulsantes que marcan oferta activa y eventos especiales.',
+      texture_and_material: 'Pergaminos, madera tallada, gemas facetadas y vitrinas rituales.',
+      camera_and_composition:
+        'Stands en abanico con foco central para navegación clara entre opciones.',
+      atmosphere_and_mood: 'Curiosa, estratégica y de riesgo calculado.',
+      rendering_and_quality:
+        'Run-selection hub gameplay-first con claridad de rutas de build y economía.',
     },
   },
   {
@@ -89,14 +122,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
     style: {
-      aesthetic: 'Acoustic cavern where sound opens pathways.',
-      subject_treatment: 'Explorer with resonant instrument-technology.',
-      color_and_tone: 'Dark blue, mineral green, and amber light.',
-      lighting_and_shadow: 'Luminous echoes based on activated frequency.',
-      texture_and_material: 'Resonant crystal, wet rock, and fine metal.',
-      camera_and_composition: 'Chambers connected by curved tunnels.',
-      atmosphere_and_mood: 'Musical mystery and discovery.',
-      rendering_and_quality: 'Puzzle design with clear visual clues.',
+      aesthetic:
+        'Sound-puzzle cavern con progresión por frecuencia, resonancia y desbloqueo acústico de rutas.',
+      subject_treatment:
+        'Explorador con instrumento-tecnología resonante y feedback visual de tono/armonía.',
+      color_and_tone: 'Azul oscuro, verde mineral y ámbar para mapear estados acústicos activos.',
+      lighting_and_shadow:
+        'Ecos luminosos dependientes de frecuencia que revelan caminos y mecanismos.',
+      texture_and_material: 'Cristal resonante, roca húmeda, metal fino y membranas vibrantes.',
+      camera_and_composition:
+        'Cámaras conectadas por túneles curvos con nodos de prueba sonoro claramente marcados.',
+      atmosphere_and_mood: 'Musical, misteriosa y de descubrimiento progresivo.',
+      rendering_and_quality:
+        'Puzzle design clarity-first con pistas visuales robustas y ritmo de resolución.',
     },
   },
   {
@@ -105,14 +143,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, tropical, low-detail',
     style: {
-      aesthetic: 'Motorized raid cutting through ruined cathedrals.',
-      subject_treatment: 'Armored riders and support drones.',
-      color_and_tone: 'Dust beige, rust red, and steel blue.',
-      lighting_and_shadow: 'Sunlight filtered through collapsed arches.',
-      texture_and_material: 'Eroded stone, rubber, and metal.',
-      camera_and_composition: 'Racing route with clear visual checkpoints.',
-      atmosphere_and_mood: 'Speed, noise, and territorial conquest.',
-      rendering_and_quality: 'Seasonal event visual for an action racer.',
+      aesthetic:
+        'Raid-racer motorizado entre catedrales en ruina, centrado en conquista de ruta y objetivos intermedios.',
+      subject_treatment:
+        'Riders blindados y drones de soporte con lectura clara de función ofensiva/logística.',
+      color_and_tone:
+        'Beige polvo, rojo óxido y azul acero para separar terreno, riesgo y checkpoints.',
+      lighting_and_shadow:
+        'Luz filtrada por arcos colapsados que marca ventanas de tracción y salto.',
+      texture_and_material:
+        'Piedra erosionada, caucho de alto desgaste, metal reforzado y escombro activo.',
+      camera_and_composition:
+        'Ruta de carrera con checkpoints visuales inequívocos, atajos y zonas de choque.',
+      atmosphere_and_mood: 'Ruidosa, veloz y de conquista territorial.',
+      rendering_and_quality:
+        'Seasonal action-racer gameplay art con legibilidad robusta de pacing y control de tramo.',
     },
   },
   {
@@ -121,14 +166,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, medieval-castle, low-detail',
     style: {
-      aesthetic: 'Clandestine card duel in a prismatic alley.',
-      subject_treatment: 'Urban duelists with holographic avatars.',
-      color_and_tone: 'Deep purple, cyan, and neon yellow.',
-      lighting_and_shadow: 'Focused lighting from fractured signs.',
-      texture_and_material: 'Wet asphalt, glass, and light metal.',
-      camera_and_composition: 'Central table with crowd in a semicircle.',
-      atmosphere_and_mood: 'Mental tension, high stakes, and style.',
-      rendering_and_quality: 'Urban tactical PvP scene.',
+      aesthetic:
+        'Card-duel clandestino urbano, orientado a mindgame, lectura de mano y presión psicológica competitiva.',
+      subject_treatment:
+        'Duelistas callejeros con avatares holográficos y estilos de mazo distinguibles.',
+      color_and_tone:
+        'Púrpura profundo, cian y amarillo neon para separar jugadores, efectos y estado crítico.',
+      lighting_and_shadow:
+        'Señalética fracturada como key light focal para mesa y zonas de público.',
+      texture_and_material:
+        'Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.',
+      camera_and_composition:
+        'Mesa central con semicírculo de espectadores y focos en ventanas de jugada.',
+      atmosphere_and_mood: 'Tensa, estilizada y de apuestas altas.',
+      rendering_and_quality:
+        'Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.',
     },
   },
   {
@@ -137,14 +189,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, clean-futuristic, lowres',
     style: {
-      aesthetic: 'Escape from a living quarry guarded by basilisks.',
-      subject_treatment: 'Expert prisoners improvising tools.',
-      color_and_tone: 'Limestone, toxic green, and rust red.',
-      lighting_and_shadow: 'Partial light between cranes and dust.',
-      texture_and_material: 'Cut rock, chains, and dry mud.',
-      camera_and_composition: 'Ruta de fuga en zigzag ascendente.',
-      atmosphere_and_mood: 'Strategic panic and determination.',
-      rendering_and_quality: 'Mission setting with intense pacing.',
+      aesthetic:
+        'Escape-setpiece en cantera hostil, centrado en traversal vertical, gestión de riesgo y persecución de basilisco.',
+      subject_treatment:
+        'Especialistas de supervivencia improvisada con lectura de recursos escasos y prioridad de escape.',
+      color_and_tone:
+        'Blanco caliza, verde venenoso, óxido marrón y tierras desaturadas para señal de peligro.',
+      lighting_and_shadow:
+        'Lucernarios rotos, sombras de grúa y niebla particulada con bolsillos luminosos de amenaza.',
+      texture_and_material:
+        'Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.',
+      camera_and_composition:
+        'Topología zigzag ascendente con capas de riesgo y chokepoints legibles.',
+      atmosphere_and_mood: 'Pánica, ingeniosa y de estrés ascendente.',
+      rendering_and_quality:
+        'Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.',
     },
   },
   {
@@ -153,14 +212,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt: 'watermark, text, logo, comedic-style, lowres',
     style: {
-      aesthetic: 'Final throne room during a total eclipse.',
-      subject_treatment: 'Supreme antagonist and hero in final confrontation.',
-      color_and_tone: 'Eclipse black, carmine red, and cold silver.',
-      lighting_and_shadow: 'Halo of light behind the central figure.',
-      texture_and_material: 'Polished stone, dark metal, and fine smoke.',
-      camera_and_composition: 'Frontal composition at narrative climax.',
-      atmosphere_and_mood: 'Destiny, peak tension, and epic closure.',
-      rendering_and_quality: 'Final key art for the main campaign.',
+      aesthetic:
+        'Final-boss confrontation de trono eclipsado, centrada en duelo axial, fases y colapso de soberanía.',
+      subject_treatment:
+        'Silueta autoritaria de jefe final versus héroe retador con jerarquía visual duel-centric.',
+      color_and_tone:
+        'Negro umbra, carmín sangre, borde plata lunar y neutros imperiales desaturados.',
+      lighting_and_shadow:
+        'Halo coronográfico a contraluz, carve dramático de silueta y humo bajo difusivo.',
+      texture_and_material:
+        'Basalto pulido espejo, aleaciones ceremoniales oscuras, ceniza fina y ornamento imperial desgastado.',
+      camera_and_composition:
+        'Arquitectura frontal de clímax con dominio axial del trono y carril de duelo claro.',
+      atmosphere_and_mood: 'Fatalista, resuelta y catastróficamente épica.',
+      rendering_and_quality:
+        'Campaign-finale gameplay key-art con legibilidad decisiva de fase, distancia y cierre narrativo.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

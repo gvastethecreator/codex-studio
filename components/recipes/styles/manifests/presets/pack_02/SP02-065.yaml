@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Light shafts
   form_and_line: None
   color_palette: Dusty White, warm cream beam, cool shadow, golden particulate
-  lighting_setup: Beams through dust, volumetric shaft, window-cathedral light
+  lighting_setup: Beams through dust, volumetric shaft, aperture-cut light
   material_texture: Atmospheric, particulate haze, floating dust motes
-  render_quality: Epic, divine, heavenly visitation, cathedral awe
+  render_quality: Epic, luminous, volumetric, revelation-grade atmosphere
   spatial_distortion: None
-  atmosphere: Holy, forest, sacred stillness, revelation moment
-  key_features: Beams, visible light rays, dust dance
-  creative_brief: Light becomes architecture when it streams through unseen apertures, carving luminous columns through dust-thickened air. These are the shafts where the sacred touches the mundane—rays that do not simply illuminate but announce, turning empty space into a cathedral of suspended particles.
+  atmosphere: Sacred, still, suspended, revelation moment
+  key_features: Visible beams, dust motes, shaft geometry, particulate haze
+  creative_brief: 'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material.'
 avoidRules:
   - clear air
 assets:

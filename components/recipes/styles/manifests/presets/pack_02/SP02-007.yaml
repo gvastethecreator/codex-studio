@@ -19,16 +19,17 @@ visualDna:
   material_texture: Flicker, dust, gate weave, silver emulsion
   render_quality: Fast motion feel, 18fps projection, flickering speed
   spatial_distortion: Vignette, rounded frame edge, iris close
-  atmosphere: Expressive, old, melodramatic gesture, haunted silence
-  key_features: Intertitle card, title cards, exaggerated performance
-  creative_brief: Ghosts flicker at eighteen frames per second, their gestures magnified into a language more articulate than speech. Amber-toned stillness hums with a frequency just below hearing, where title cards punctuate the silence like notes in a score composed entirely of longing.
+  atmosphere: Expressive, old, melodramatic, haunted silence
+  key_features: Flicker, vignette, iris-era framing
+  creative_brief: 'Silent film style gives any subject amber monochrome age: 18fps flicker, dust, gate weave, orthochromatic flatness, vignette, rounded frame edges, and melodramatic gesture implied by composition. Keep title-card-era rhythm without requiring people, text cards, or performance.'
 avoidRules:
   - sound
   - color
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-007.webp
 attributes:
-  negativePrompt: sound, color
+  negativePrompt: sound, color, readable text
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

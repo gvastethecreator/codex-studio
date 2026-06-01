@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Pluvial-ritual solarpunk where civic acoustics and rain harvesting co-design public life.
-  form_and_line: Tiered chorus groupings, channeling roof geometries, and rhythmic cable spans between blocks.
+  aesthetic: Pluvial-ritual solarpunk where civic acoustics and rain harvesting become a calm public visual rhythm.
+  form_and_line: Tiered chorus-like groupings, channeling roof geometries, and rhythmic cable spans.
   color_palette: Storm blue, oxidized copper, and rain-saturated leaf green.
   lighting_setup: Silver overcast with specular puddle highlights and translucent canopy glow.
-  material_texture: Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutters.
+  material_texture: Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutter cues.
   render_quality: Poetic production concept art balancing lyrical mood with infrastructural clarity.
-  spatial_distortion: Stepped roof-chain perspective descending toward a central cistern amphitheater.
+  spatial_distortion: Stepped catchment-chain perspective descending toward a central cistern-like focal basin.
   atmosphere: Collective tenderness, climatic intelligence, and calm ceremonial focus.
-  key_features: Resonant cistern bowls, rooftop choir tiers, rainfall channels, and participatory water meters.
+  key_features: Resonant cistern bowls, choir-tier rhythm, rainfall channels, and participatory water-meter motifs.
   creative_brief: >-
     Preserve rooftop rain-choir grammar as a reusable style language:
     pluvial acoustic civic rituals, visible catchment systems, and collective
-    climate literacy should remain stable across subjects.
+    climate literacy should remain stable across subjects without requiring
+    rooftops, singers, blocks, or a literal choir.
 avoidRules: [photoreal, dystopian-smog, aggressive-action, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-008.webp }
 attributes:
   negativePrompt: photoreal, dystopian-smog, aggressive-action, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

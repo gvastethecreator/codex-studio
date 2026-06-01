@@ -1,0 +1,36 @@
+schemaVersion: 1
+id: SP15-129
+packId: pack_15
+name: Pressure Lace Automata
+category: 4. Corepunk — Steampunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, steampunk]
+visualDna:
+  aesthetic: Delicate steampunk automata grammar where lace, porcelain, clock springs, and pneumatic grace create refined mechanical tenderness.
+  form_and_line: Lace-like filigree contours, porcelain-smooth curve breaks, exposed spring arcs, and symmetrical pressure-valve ornament.
+  color_palette: Porcelain cream, oxidized rose brass, tea-stain beige, soot-violet shadow, and pearl highlight notes.
+  lighting_setup: Diffuse parlor warmth, pinpoint brass glints, soft porcelain bounce, and low steam haze around mechanical joints.
+  material_texture: Crochet lace relief, porcelain glaze, fine brass teeth, velvet dust, oiled hinge seams, and cloudy glass gauges.
+  render_quality: Ornamental steampunk polish with fragile material contrast, precise mechanism readability, and quiet emotional elegance.
+  spatial_distortion: Cabinet-of-curiosities compression with nested filigree layers and symmetrical mechanical depth.
+  atmosphere: Fragile, ornate, haunted, graceful, intimate.
+  key_features: Lace valve geometry, porcelain-mechanism contrast, spring-loop halos, pressure dial motifs, and soft steam veils.
+  creative_brief: >-
+    Preserve pressure lace automata as a reusable style system: refined
+    pneumatic ornament, porcelain softness, and lace-like brass mechanics should
+    apply to any subject without requiring dolls, salons, servants, or machines.
+avoidRules: [photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-129.webp }
+attributes:
+  negativePrompt: photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-steampunk,
+    categoryName: 4. Corepunk — Steampunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, steampunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

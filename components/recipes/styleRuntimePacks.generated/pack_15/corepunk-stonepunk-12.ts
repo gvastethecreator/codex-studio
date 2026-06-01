@@ -10,17 +10,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo',
     style: {
-      aesthetic: 'Proto-industrial sanctuary where megalith engineering drives communal survival.',
-      form_and_line: 'Cyclopean arches, carved gear motifs, and gravity-fed terraces.',
-      color_palette: 'Basalt charcoal, copper oxide green, and fire ember orange.',
-      lighting_setup: 'Hearthlight cores and skylight shafts across rough-cut stone planes.',
-      material_texture: 'Chiseled basalt, rope pulleys, hammered copper, and packed clay.',
-      render_quality: 'Heavy tactile concept art with robust structural clarity.',
-      spatial_distortion: 'Layered vertical fortress view anchored by a central gear temple.',
-      atmosphere: 'Ancient ingenuity, ritual labor, and elemental endurance.',
-      key_features: 'Stone gear arrays, aqueduct lifts, and monolith workshop cloisters.',
+      aesthetic:
+        'Stonepunk sacred machinery where gravity, labor chants, and basalt mass feel like technology older than language.',
+      form_and_line:
+        'Cyclopean arch-jaw rhythm, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes.',
+      color_palette:
+        'Basalt charcoal, copper-oxide green, ember orange, ash beige, and blackened handprint marks.',
+      lighting_setup:
+        'Hearth-core glow buried inside stone teeth, hard skylight shafts, and sparks catching dust around rotating mass.',
+      material_texture:
+        'Chiseled basalt, rope-burn fibers, hammered copper seams, packed clay, soot-polished wear, and carved tally grooves.',
+      render_quality:
+        'Heavy tactile stonepunk concept art where every mechanism reads as buildable, brutal, and devotional.',
+      spatial_distortion:
+        'Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.',
+      atmosphere:
+        'Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.',
+      key_features:
+        'Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.',
       creative_brief:
-        'A stonepunk citadel proving complex machinery can emerge from primal materials.',
+        'Preserve basalt gear-sanctuary grammar as a reusable style system: weight-driven mechanics, rope-and-ember labor rituals, and sacred stone machinery logic should remain coherent across subjects without requiring a sanctuary, figures, work bays, or a literal ritual site.',
     },
   },
   {
@@ -31,17 +40,24 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo',
     style: {
       aesthetic:
-        'Continental trade artery built from colossal stone tracks and kinetic sled systems.',
-      form_and_line: 'Parallel carved lanes, pillar forests, and weighted counterbalance towers.',
-      color_palette: 'Sandstone beige, slate blue, and iron rust.',
-      lighting_setup: 'Harsh directional sunlight and torch tunnels at transit nodes.',
-      material_texture: 'Weathered stone blocks, braided cable ropes, and bone-polished sliders.',
-      render_quality: 'Expansive concept panorama with readable infrastructure logic.',
-      spatial_distortion: 'Long horizon perspective stressing infrastructure scale and distance.',
-      atmosphere: 'Industrious motion, civic pragmatism, and old-world futurity.',
-      key_features: 'Counterweight elevators, stone sled trains, and trade gate bastions.',
+        'Megalith logistics style where travel feels carved into geology, slow as a glacier, and impossible to privatize.',
+      form_and_line:
+        'Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut like fossils.',
+      color_palette:
+        'Sandstone beige, slate blue, iron rust, sun-bleached rope tan, and oxidized route-paint green.',
+      lighting_setup:
+        'Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving weights.',
+      material_texture:
+        'Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide grooves.',
+      render_quality:
+        'Expansive stonepunk infrastructure concept with every route, lift, and exchange point legible at civic scale.',
+      spatial_distortion:
+        'Horizon compression stretches routes into monumental lines, making distance feel engineered by public effort.',
+      atmosphere: 'Slow momentum, civic pragmatism, trade ritual, and old-world futurity.',
+      key_features:
+        'Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.',
       creative_brief:
-        'A stonepunk mobility network that transforms mountain empires into connected economies.',
+        'Preserve megalith transit-spine grammar as a reusable style system: carved-route logistics, public counterweight mobility, and geological movement scale should remain coherent across subjects without requiring a road, trade gate, towers, sleds, or literal transit.',
     },
   },
   {
@@ -52,17 +68,77 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo',
     style: {
       aesthetic:
-        'Bustling workshop bazaar where friction engines and artisan mechanics dominate daily life.',
-      form_and_line: 'Dense market alleys, pulley canopies, and stepped workshop fronts.',
-      color_palette: 'Clay red, smoke gray, and amber firelight.',
-      lighting_setup: 'Torch strings and forge sparks under shaded textile awnings.',
-      material_texture: 'Flint components, braided hemp, raw timber stalls, and blackened bronze.',
-      render_quality: 'Character-rich environment concept with strong material readability.',
-      spatial_distortion: 'Compressed street perspective emphasizing crowded machine commerce.',
-      atmosphere: 'Noisy invention, communal trade, and practical improvisation.',
-      key_features: 'Spark-wheel stalls, mobile anvils, barter counters, and pit-forge kiosks.',
+        'Friction-age maker style where invention feels public, loud, dangerous, and half-bartered before sparks cool.',
+      form_and_line:
+        'Sawtooth stall-front rhythm, pulley-canopy slashes, stepped trade-shelf geometry, spark-wheel circles, and squat workbench blocks.',
+      color_palette: 'Clay red, smoke gray, amber firelight, hemp tan, and blackened bronze green.',
+      lighting_setup:
+        'Torch strings under sagging awnings, forge sparks on faces, and hot rimlight from open friction wheels.',
+      material_texture:
+        'Flint teeth, braided hemp, raw timber, blackened bronze, cracked clay counters, and powdery stone dust.',
+      render_quality:
+        'Character-rich stonepunk concept art with tactile tools, readable commerce, and controlled clutter.',
+      spatial_distortion:
+        'Compressed bazaar-like depth turns repair surfaces, barter trays, and test rigs into a single noisy machine.',
+      atmosphere: 'Immediate invention, public risk, communal trade, and practical improvisation.',
+      key_features:
+        'Spark-wheel modules, portable-anvil motifs, pit-forge mouths, barter-token marks, hemp pulley loops, and half-tested mechanisms.',
       creative_brief:
-        'A stonepunk market where every invention is assembled in public and tested immediately.',
+        'Preserve flint engine-market grammar as a reusable style system: public improvisational fabrication, flint-and-hemp tool tactility, and visible test-repair marks should remain coherent across subjects without requiring stalls, markets, benches, tokens, or literal makers.',
+    },
+  },
+  {
+    id: 'SP15-136',
+    name: 'Obsidian Water Clock',
+    category: '12. Corepunk — Stonepunk',
+    negativePrompt: 'photoreal, neon-city, plastic-modern, cute-cartoon, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Stonepunk hydraulic timekeeping where carved obsidian, falling water, and shadow calibration make primitive engineering feel sacred and exact.',
+      form_and_line:
+        'Stepped clepsydra channels, obsidian blade silhouettes, notch-mark arcs, and circular basin geometry.',
+      color_palette:
+        'Obsidian black, mineral teal, wet slate blue, chalk incision white, and ember reflection orange.',
+      lighting_setup:
+        'Shafted skylight over glossy black stone, water-caustic flicker, and ember-side bounce on carved marks.',
+      material_texture:
+        'Polished obsidian, wet limestone, mineral deposits, rope fiber, clay sealant, and chiseled calibration grooves.',
+      render_quality:
+        'Heavy tactile stonepunk finish with clear hydraulic logic, ritual precision, and low-tech engineering credibility.',
+      spatial_distortion:
+        'Vertical water-step depth and circular timing recursion without requiring a temple, clock, pool, or operators.',
+      atmosphere: 'Ancient, exact, wet, solemn, intelligent.',
+      key_features:
+        'Obsidian channel geometry, carved calibration marks, falling-water rhythm, basin circles, and mineral-stain history.',
+      creative_brief:
+        'Preserve obsidian water clock as a reusable style system: hydraulic timing, polished black stone, and ritual calibration marks should transform any subject without forcing clocks, temples, waterworks, or figures.',
+    },
+  },
+  {
+    id: 'SP15-137',
+    name: 'Bone Lime Signal Cairn',
+    category: '12. Corepunk — Stonepunk',
+    negativePrompt: 'photoreal, cyber-neon, glossy-sci-fi, modern-asphalt, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Stonepunk communication grammar where cairn stacks, lime pigment, bone toggles, and wind-borne signal logic create pre-electric networks.',
+      form_and_line:
+        'Stacked cairn silhouettes, semaphore diagonals, knotted cord paths, incised glyph bands, and wind-vane triangles.',
+      color_palette:
+        'Bone white, limewash chalk, weathered granite, ochre cord, charcoal shadow, and dry grass gold.',
+      lighting_setup:
+        'Hard low sun, high-contrast stone edges, wind-dust haze, and small ember or mirror glints.',
+      material_texture:
+        'Lime pigment dust, polished bone toggles, granite chips, braided grass cord, soot marks, and scratched signal glyphs.',
+      render_quality:
+        'Primitive network concept finish with readable signal hierarchy, tactile stone construction, and windswept material honesty.',
+      spatial_distortion:
+        'Ridge-line repetition and signal-chain depth without requiring towers, messengers, flags, or a landscape scene.',
+      atmosphere: 'Windswept, alert, communal, ancient, pragmatic.',
+      key_features:
+        'Cairn-stack rhythm, bone toggle markers, lime glyph bands, cord path diagrams, and semaphore-like diagonals.',
+      creative_brief:
+        'Preserve bone lime signal cairn as a reusable style system: pre-electric communication, chalk-bone marking, and windswept stone network rhythm should apply to any subject without requiring cairns, flags, people, or a literal ridge.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

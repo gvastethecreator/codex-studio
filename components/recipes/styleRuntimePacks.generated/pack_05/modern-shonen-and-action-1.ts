@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar',
       creative_brief:
-        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond school or arena narratives.',
+        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond any institution or arena narrative.',
     },
   },
   {
@@ -39,24 +39,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Magic-school world broken by deadlift absurdity, muscular deadpan, wand-logic punctured by physical-force jokes, elite academy duels with comedy undercut',
+        'Brickwall comedy spell-brawl style, where ornate magic logic is undercut by deadpan physical certainty.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Heavy blocky impact shapes, elegant spell curls interrupted by blunt force vectors, and frozen straight-faced poses.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Royal academy blue, cream parchment, muscle-shadow gray, absurd gold, hot red accents, and comic white flashes.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Prestigious magical glow abruptly flattened by gag lighting, hard impact flashes, and theatrical contrast.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Chalk dust, polished magic particles, stone block grain, even flat color, and crisp gag-smear overlays.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Clean modern anime comedy-action finish with readable spell polish and blunt physical punchline clarity.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Straight-line force breaks ornate perspective, turning elegant space into brickwall impact geometry.',
       atmosphere: 'Dumb, forceful, confident, hilarious',
       key_features:
-        'Spell-school props, deadpan hero stance, physical gag payoffs, absurd power contrast, academy-combat framing',
+        'Deadpan force, broken spell logic, blocky impact, ornate-to-blunt contrast, physical punchline rhythm.',
       creative_brief:
-        'A young man deadlifts his way through a world built on incantations, and every spell shatters against the immovable object of pure physical confidence. The academy prepared its wizards for counterspells and arcane nuance, never for someone who solves riddles with biceps and answers prophecies with protein. Absurdity is the most powerful magic of all.',
+        'Apply absurd physical certainty to any prompt: let ornate magic cues collide with blunt force, deadpan stillness, and brickwall impact without requiring an institution, prop, duel, or body gag setup.',
     },
   },
   {
@@ -67,24 +67,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Everyday storefront life colliding with impossibly clean assassin choreography, suburban product aisles turned combat lanes, calm professionalism amid absurd action',
+        'Convenience-store assassin sprint style, with everyday calm, immaculate choreography, and absurd professional velocity.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Clean stunt vectors, mundane-grid composition, economical pose language, productlike pattern rhythm, and dead-calm cuts.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Fluorescent white, snack-package red, mint green, muted tan, steel gray, and sudden action yellow.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Flat retail brightness pierced by kinetic rim streaks, hard practical glow, and clean comedy-action highlights.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Glossy packaging color, tile shine, polished metal glints, soft cloth flats, and crisp motion overlays.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with immaculate stunt clarity, mundane detail, and surprise velocity.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Everyday grids become action lanes, with precise perspective snaps and calm negative space.',
       atmosphere: 'Cool, funny, efficient, surprising',
       key_features:
-        'Retail-space combat staging, impossible stunt clarity, dead-calm expressions, product-clutter motion lines, hitman pose economy',
+        'Mundane-action contrast, clean stunt lanes, dead-calm efficiency, retail-bright palette, hidden velocity.',
       creative_brief:
-        'Calm hands arrange instant noodles on a shelf while a silenced pistol rests beside the register, retired violence humming beneath suburbia. The convenience store is a stage and reformed assassins are the most dangerous actors, finding rhythm in the mundane. Peace tastes like discount snacks and barely contained velocity.',
+        'Turn any prompt into mundane precision action: keep surfaces ordinary, lighting flat, and motion impossibly clean, without requiring a store, product display, weapon, profession, or suburban scene.',
     },
   },
   {
@@ -97,7 +97,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural pressure fields',
       form_and_line:
-        'Razor contour discipline, sigil-like motion arcs, hand-gesture emphasis, silhouette cuts that privilege threat readability',
+        'Razor contour discipline, sigil-like motion arcs, pressure-point emphasis, silhouette cuts that privilege threat readability',
       color_palette:
         'Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot highlights',
       lighting_setup:
@@ -123,24 +123,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Vertical-survival action style defined by scale terror, aerial trajectory tension, and militarized desperation rhythm',
+        'Vertical-survival action style defined by scale terror, trajectory tension, and desperate acceleration rhythm',
       form_and_line:
-        'Cable-vector diagonals, hook-point geometry, hard angular pose silhouettes, sharp momentum lines for vertical traversal',
+        'Tether-like diagonals, anchor-point geometry, hard angular silhouettes, sharp momentum lines for vertical pressure',
       color_palette:
-        'Dusty militarized neutrals with emergency flares of red-orange, cold steel tones, and smoke-dark value structure',
+        'Dusty survival neutrals with emergency red-orange flares, cold steel tones, and smoke-dark value structure',
       lighting_setup:
         'Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and panic-intensity contrast spikes',
       material_texture:
-        'Cable tension sheen, weathered harness materials, masonry debris grain, smoke and grit overlays with high kinetic readability',
+        'Tension-line sheen, weathered technical fibers, mineral debris grain, smoke and grit overlays with high kinetic readability',
       render_quality:
         'High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first compositional clarity',
       spatial_distortion:
         'Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril',
       atmosphere: 'Desperate, relentless, hunted, grim, adrenaline-heavy',
       key_features:
-        'Aerial trajectory grammar, scale-shock framing, cable-mechanics readability, siege-pressure visual cadence',
+        'Aerial trajectory grammar, scale-shock framing, tension-mechanics readability, pressure visual cadence',
       creative_brief:
-        'The identity should come from vertical-mobility tension and overwhelming scale contrast: cable-driven motion logic and depth-drop fear must remain central regardless of setting specifics.',
+        'The identity should come from vertical-mobility tension and overwhelming scale contrast: tethered motion logic and depth-drop fear must remain central without requiring a specific survival setting.',
     },
   },
   {
@@ -151,24 +151,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tragic war-anime style with institutional gravity, elegiac pacing, and large-scale mechanized conflict weight',
+        'Tragic conflict-anime style with institutional gravity, elegiac pacing, and large-scale mechanized weight',
       form_and_line:
-        'Severe silhouette hierarchy, disciplined military shape language, blast-line punctuation, and mournful still-frame counterbeats',
+        'Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful still-frame counterbeats',
       color_palette:
         'Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights',
       lighting_setup:
-        'Diffused battlefield overcast with intermittent blast flashes, long shadow veils, and documentary-like contrast restraint',
+        'Diffused overcast with intermittent rupture flashes, long shadow veils, and documentary-like contrast restraint',
       material_texture:
-        'Sooted metal surfaces, churned earth particulate, worn fabric grain, static noise overlays for archival-war tone',
+        'Sooted metal surfaces, churned particulate, worn fabric grain, static noise overlays for archival tragedy tone',
       render_quality:
-        'Cinematic war-drama polish focused on emotional gravity, scale coherence, and restrained effect realism',
+        'Cinematic tragedy-drama polish focused on emotional gravity, scale coherence, and restrained effect realism',
       spatial_distortion:
-        'Wide conflict planes with pressure-depth layering and occasional compression for claustrophobic strategic burden',
+        'Wide pressure planes with depth layering and occasional compression for claustrophobic strategic burden',
       atmosphere: 'Somber, catastrophic, heavy, mournful, relentless',
       key_features:
-        'Militarized silhouette order, elegiac blast rhythm, archival tragedy tonality, institutional conflict visual grammar',
+        'Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure grammar',
       creative_brief:
-        'Preserve this preset as a war elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific battlefront.',
+        'Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific tactical setup.',
     },
   },
   {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Strategic-adventure shonen style with systems-driven combat readability, curiosity-forward world energy, and tactical clarity',
+        'Strategic-adventure shonen style with systems-driven readability, curiosity-forward energy, and tactical clarity',
       form_and_line:
         'Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography that foregrounds planning',
       color_palette:
@@ -189,14 +189,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Clean modern anime surface polish, legible effect overlays, map-like compositional textures, low-grit digital finish',
       render_quality:
-        'Premium strategy-action anime rendering that prioritizes intelligible combat logic and world-discovery freshness',
+        'Premium strategy-action anime rendering that prioritizes intelligible logic and discovery freshness',
       spatial_distortion:
         'Dynamic depth with navigational clarity, emphasizing positional intelligence over chaotic motion blur',
       atmosphere: 'Curious, competitive, analytical, adventurous, high-spirited',
       key_features:
-        'System-logic action grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing',
+        'System-logic grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing',
       creative_brief:
-        'Keep the preset centered on strategic legibility and discovery energy: combat should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references.',
+        'Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references.',
     },
   },
   {
@@ -207,24 +207,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Taisho-era demon hunting, patterned haori silhouettes, lantern-lit sword arcs, breathing-technique slash trails, family-memory tenderness meeting high-contrast violence, wood-and-snow atmosphere',
+        'Lantern bloodline sword ballet style, with patterned tenderness, breathlike elemental arcs, and elegant tragedy.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Razor-clean contours, ribboned motion trails, patterned shape blocks, ceremonial pauses, and breath-synced flow lines.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Lantern amber, winter blue, blood crimson, charcoal black, snow white, and vivid elemental accent tones.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Warm lantern glow against cold mist, precise rim cuts, soft memory bloom, and explosive arc highlights.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Woven pattern grain, ink-wash mist, polished cel edges, snowlike particles, and luminous breath trails.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime action polish with ornamental clarity, emotional pauses, and fluid arc readability.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Curved slash-space, breath-expanded depth, and choreographic foreshortening that frames motion as dance.',
       atmosphere: 'Heroic, tragic, elegant, intense',
       key_features:
-        'Katana arc readability, patterned costumes, lantern-and-mist staging, emotional combat pauses, ceremonial blade poses',
+        'Breathlike arcs, patterned emotion, lantern warmth, winter contrast, choreographic violence.',
       creative_brief:
-        'A katana arc cuts through lantern mist, the blade-trail lingering like a breath exhaled into winter air. Patterned haori billow through Taisho-era twilight, each fold holding family memory as tightly as the grip on a Nichirin sword. Combat here is choreography — a dance between inherited grief and the elegant violence of release.',
+        'Apply elegant tragic action to any prompt through breathlike luminous arcs, patterned emotion, lantern warmth, and ceremonial motion pauses; keep the style free from fixed hunter, era, costume, or blade requirements.',
     },
   },
   {
@@ -235,24 +235,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hyper-competitive striker psychology, neon pitch intensity, feral ego close-ups, goalbox warfare, cutthroat sports animation, ballistic shot framing, tactical hunger made visual',
+        'Predator-ego sports assault, with hyper-competitive psychology, lock-on intensity, and tactical hunger made visible.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Feral close-up geometry, field-line abstractions, ballistic vectors, sharp eye-line cuts, and pressure-zone framing.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Electric blue, predator green, hot magenta, stadium black, white linework, and acid yellow target accents.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Neon rim aggression, spotlight isolation, pulse flashes, and high-contrast tunnel vision.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Synthetic turf texture, sweat gloss, digital speed overlays, crisp cel impact, and chromatic motion haze.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium sports-anime polish with psychological clarity, speed precision, and manic competitive focus.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Tunnel-vision compression, target-lock perspective, and velocity lines that make desire feel tactical.',
       atmosphere: 'Predatory, focused, manic, competitive',
       key_features:
-        'Soccer-ball velocity, eye-line intensity, predator metaphors, field-line perspective, lock-on shot framing',
+        'Lock-on framing, ego aura, field-line abstraction, ballistic intent, predatory focus.',
       creative_brief:
-        'The goalbox narrows to a single retinal instant — predator eyes locking onto the ball with the hunger of a striker who has decided that scoring is the only acceptable form of existence. Neon pitch markings blur into velocity trails, the field becoming a cage where ego is the only muscle that matters. Every frame is a shot already taken, already scored, already inevitable.',
+        'Turn any prompt into a competitive ego diagram: use target-lock framing, neon pressure lines, feral focus, and ballistic intent without requiring a sport object, field, goal, or match scene.',
     },
   },
   {
@@ -263,24 +263,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Severe black uniforms, palace-scale combat, spiritual warfare, white-black contrast, calligraphic attack names, aristocratic villain drama, divine war-pageantry',
+        'Royal black blade opera, with severe monochrome authority, spiritual pageantry, aristocratic drama, and explosive calligraphy.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Long black silhouette sweeps, blade-like negative cuts, calligraphic effect strokes, regal posture, and palace-scale verticals.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Royal black, marble white, cold blue, blood red, antique gold, and violet spiritual accents.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Divine backlight, hard rim partitioning, opera-stage spotlight, and explosive white-black contrast.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Ink-black cloth sheen, polished marble light, spiritual particle dust, metallic edge glints, and clean HDR bloom.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with ceremonial severity, high contrast, and operatic spiritual spectacle.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Monumental vertical compression, sweeping cloaklike motion, and reality-cut planes that enlarge the frame.',
       atmosphere: 'Regal, severe, explosive, mythic',
       key_features:
-        'Black robe silhouettes, palace verticality, spiritual attack effects, dramatic cloak movement, sword-name theatrics',
+        'Monochrome severity, calligraphic power, regal verticality, spiritual opera, blade-like contrast.',
       creative_brief:
-        'Black robes sweep across marble floors like ink bleeding into holy water, and every thunderclap is a name spoken too loudly. Combat here is not battle but liturgy, each blade swing a prayer to oblivion delivered with regal precision. The sky answers steel with steel, and silence with silence.',
+        'Make any prompt feel like royal spiritual opera: use black-white severity, calligraphic energy, and monumental verticals without requiring uniforms, palaces, weapons, named attacks, or literal war pageantry.',
     },
   },
   {
@@ -291,24 +291,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Modern school-delinquent action, alleyway wind shear, gang jackets, city-protector swagger, bruised knuckles and neon convenience stores, rooftop loyalty clashes',
+        'Delinquent protector rush style, with streetwind swagger, bruised loyalty, sharp youth motion, and neon grit.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Wind-shear diagonals, loose jacketlike silhouette rhythm, knuckle-close impact arcs, and confident stance geometry.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Streetlight amber, bruised purple, asphalt gray, neon green, hot sign red, and midnight blue.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Flickering urban rim light, low practical glow, fast backlight streaks, and hard contrast around impact beats.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Scuffed fabric, skin bruise tones, pavement grit, sign-glow bloom, and polished modern cel edges.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern action anime finish with clean speed, grounded swagger, and readable loyalty tension.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Alleylike compression, wind-pushed depth, and foreshortened rush lines without fixed architecture.',
       atmosphere: 'Rowdy, loyal, kinetic, swaggering',
       key_features:
-        'Jacket silhouettes, urban rooftop staging, knuckle-first action, streetlight color pops, team loyalty poses',
+        'Streetwind motion, bruised loyalty, neon grit, protector swagger, close-impact rhythm.',
       creative_brief:
-        'Wind cuts through the alley where loyalty is the only currency that matters and knuckles meet jawbone under the flicker of a neon convenience-store sign. The street crowns its protectors in bruised fists and oversized jackets, swagger earned one rooftop standoff at a time. Brotherhood is a fist bump and the wind that follows it.',
+        'Give any prompt delinquent protector energy through wind-shear lines, bruised color, neon grit, and loyalty-charged impact timing without fixing the style to an institution, faction, or fixed setting.',
     },
   },
   {
@@ -319,24 +319,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Conceptual powers with slapstick brutality, unlucky chain reactions, immortal body damage, poppy modern action comic energy, romance hidden inside kinetic chaos',
+        'Rule-breaker curse impact, with conceptual power logic, slapstick brutality, unlucky chain reactions, and romantic chaos.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Cause-effect arrows, broken-body exaggeration, pop-symbol impact marks, rebound arcs, and offbeat timing panels.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Poppy red, curse black, lucky green inverted into hazard, bright yellow impact, pink warmth, and clean cyan contrast.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Sudden chain-reaction flashes, comic impact bursts, warm romance glints, and brutal hard-shadow beats.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Comic symbol overlays, polished cel impact, fractured texture marks, grit bursts, and clean pop gradients.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Modern anime action finish with conceptual readability, offbeat brutality, and playful emotional contrast.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Domino-like causality, rebound compression, and unlucky vectors that redirect the whole frame.',
       atmosphere: 'Chaotic, playful, brutal, offbeat',
       key_features:
-        'Rule-based action motifs, body-damage exaggeration, bright effect symbols, momentum-heavy posing, comic impact beats',
+        'Rule-logic symbols, unlucky vectors, slapstick brutality, chain reactions, romance-under-chaos warmth.',
       creative_brief:
-        'Bad luck is a weapon the universe never meant to hand over, and every missed step triggers a chain reaction that reads like divine slapstick. Bodies break in sequences so comic they loop back to profound, while romance flickers beneath the rubble. Chaos is not the enemy here — it is the only language love speaks fluently.',
+        'Make any prompt behave like a broken rule system: visualize causality, unlucky rebound, comic brutality, and warmth under chaos without requiring body horror, named powers, relationships, or set-piece destruction.',
     },
   },
   {
@@ -347,24 +347,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Anti-magic underdog drive, squad-based spell warfare, medieval-black-bull energy, book-based spellcasting, ragged ambition versus noble polish',
+        'Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus noble polish.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like energy bursts.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Aura shockwaves push perspective outward, while squad spacing creates forward pressure.',
       atmosphere: 'Determined, loud, magical, scrappy',
       key_features:
-        'Grimoire staging, team squad silhouettes, anti-magic aura contrast, loud rivalry poses, magical battleground debris',
+        'Page-glow force, thunder squad rhythm, ragged ambition, anti-magic contrast, loud underdog aura.',
       creative_brief:
-        'A grimoire opens and ambition spills out louder than any incantation, raw willpower forged into a blade that cuts through destiny. The squad stands together in rags that read like banners, shouting defiance at polished towers that never believed them worthy. Magic bends not to birthright but to the volume of a heart refusing to stay silent.',
+        'Apply loud underdog magic to any prompt through page-glow geometry, thunder diagonals, ragged texture, and defiant aura pressure without requiring specific props, teams, vertical power symbols, conflict sites, or hierarchy scenes.',
     },
   },
   {
@@ -375,24 +375,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Brooding urban sword-revenge thriller, enchanted blades, cold rain, yakuza underworld severity, stylish restraint before sudden violence, sleek modern occult drama',
+        'Sword oath under neon rain, with brooding restraint, occult edge-light, revenge severity, and sudden clean violence.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Long rain diagonals, spare silhouette control, blade-like light cuts, severe eye-line geometry, and stillness-before-impact.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Midnight black, neon cyan, blood red, wet asphalt blue, steel gray, and cold violet.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Rain-split neon, narrow rim blades, low-key noir pools, and abrupt impact flashes.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Wet pavement sheen, rain streaks, polished edge glints, dark cloth flats, and occult particle cuts.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Sleek modern anime thriller finish with precise restraint, wet neon depth, and sharp impact readability.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Long-lens compression, rain-layer parallax, and sudden perspective cuts that feel oath-driven.',
       atmosphere: 'Brooding, precise, cool, vengeful',
       key_features:
-        'Rainlit katana poses, occult blade effects, underworld interiors, severe facial acting, neon-rain contrast',
+        'Neon rain, oathlike stillness, blade-light cuts, noir restraint, occult edge energy.',
       creative_brief:
-        'Rain carries the last words of a dead oath, pooling around unsheathed steel beneath flickering Shinjuku neon. The blade cuts more than flesh — it slices through the lie that the past can be left behind. Vengeance wears a school uniform and walks through midnight with the stillness of someone who has already decided.',
+        'Make any prompt feel like a restrained revenge oath: use wet neon, cold edge light, precise stillness, and sudden graphic cuts without requiring a sword, uniform, hidden room, or named place.',
     },
   },
   {
@@ -403,24 +403,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Wall-top military survival, giant flesh threat, vertical maneuver gear, humanity under siege, dust-cloud dread, desperate tactical sacrifice, city-scale terror',
+        'Wall rupture desperation, with colossal scale terror, militarized pressure, dust-cloud dread, and tactical sacrifice.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Tether-vector diagonals, severe regimented silhouettes, rupture cracks, falling-depth lines, and panic-sharp contours.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Dust brown, blood red, bone beige, regiment green, smoke gray, and cold sky blue.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Breached daylight shafts, dust-filtered backlight, hard emergency rims, and tragic silhouette contrast.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Cracked stone grain, cable sheen, smoke dust, worn fabric, and harsh cel shadow texture.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern survival-anime finish with scale clarity, grim motion mechanics, and tragedy-heavy detail.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Vertical drops, looming mass pressure, walllike compression, and depth that makes distance frightening.',
       atmosphere: 'Desperate, colossal, militarized, tragic',
       key_features:
-        'Extreme scale contrast, maneuver-gear lines, breached-wall debris, regiment silhouettes, panic-charged perspective',
+        'Colossal scale, rupture dust, vertical terror, regimented desperation, tethered motion.',
       creative_brief:
-        'Walls are not protection but the silhouette of the cage humanity drew around itself, and soldiers swing on wires through dust that tastes like old terror. Each flight between rooftops is a gamble that the next landing point still exists. Scale tips cruelly — the giant is always larger than hope and the fall always longer than courage.',
+        'Apply desperate scale pressure to any prompt: use vertical drops, dust rupture, regimented silhouettes, and looming mass contrast without requiring fortifications, troops, traversal equipment, rooftops, or fixed enemies.',
     },
   },
   {
@@ -431,24 +431,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Measured spellcasting from a long-lived mage, soft post-journey melancholy interrupted by precise magical violence, understated action framed by emotional memory and sky-rich stillness',
+        'Ancient calm spell impact, with long memory, precise violence, sky-rich stillness, and understated magical authority.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Minimal gesture geometry, clean spell circles, soft contour restraint, sudden precise impact lines, and calm spacing.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Pale sky blue, soft gold, pearl white, sage green, memory violet, and focused arcane cyan.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Quiet sky glow, precise spell bloom, slow rim light, and sudden clean impact flash.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Soft cloth grain, translucent mana particles, watercolor sky gradients, fine paperlike cel texture, and polished magic edges.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with restrained emotion, clean magical precision, and spacious compositional calm.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Wide stillness compressed by exact spell geometry, with impact appearing already decided.',
       atmosphere: 'Calm, precise, wistful, powerful',
       key_features:
-        'Controlled spell geometry, quiet face acting, sky-heavy backgrounds, measured combat spacing, memory-laden stillness',
+        'Controlled spell geometry, memory light, quiet impact, sky-rich calm, precise authority.',
       creative_brief:
-        'A thousand years of memory compress into a single gesture, and a spell blooms like morning through the hands of someone who has outlived every companion. Violence is not loud here — it is quiet, precise, and already finished before the enemy understands it began. The sky watches with the patience of an elf who has seen empires rise and crumble like cloud formations.',
+        'Give any prompt ancient calm impact: use spacious stillness, soft memory light, and exact spell geometry so power feels quiet and finished without requiring a caster, opponent, companion memory, or combat scene.',
     },
   },
   {
@@ -487,24 +487,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Prestige-action animation colliding with bored overpowered comedy, monster-of-the-week destruction, caped simplicity, city-smashing impact clarity, sincerity and satire sharing the same frame',
+        'Prestige hero impact satire, with blockbuster destruction grammar, bored overpowered calm, and sincerity cut by absurdity.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Hyper-clean impact silhouettes, deadpan flat zones, explosive contour bursts, simple reaction shapes, and punchline timing lines.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Catastrophe orange, hero yellow, blank beige, concrete gray, electric blue, and crisp white impact flashes.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Blockbuster blast illumination, calm portrait lighting, hard rim clarity, and comic contrast between scale and reaction.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Crisp debris particles, polished effect shards, clean cel fields, low-noise surfaces, and theatrical smoke gradients.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Top-tier modern anime action polish deliberately interrupted by anti-dramatic stillness.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Extreme impact foreshortening alternating with static flat framing for comedic dissonance.',
       atmosphere: 'Deadpan, explosive, absurd, triumphant',
       key_features:
-        'Huge impact craters, cape silhouette, serious-monster design, anticlimactic hero expression, blockbuster destruction staging',
+        'Overkill impact, deadpan calm, blockbuster polish, flat reaction zones, satire-through-contrast.',
       creative_brief:
-        'A hero stands in the crater where a city block used to be, expression blanker than the devastation around him. Destruction is rendered with blockbuster reverence while the face at its epicenter refuses the drama. The sublime joke is that sincerity and spectacle have become indistinguishable.',
+        'Apply prestige impact satire to any prompt: render spectacle with maximum craft, then undercut it through flat reaction space and deadpan composition without requiring a hero, monster, cape, city, or crater scene.',
     },
   },
   {
@@ -515,24 +515,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dungeon-raid power fantasy, violet-black shadow summons, rank-up intensity, Korean portal action polish, monarch aura spectacle, solitary ascent into overwhelming force',
+        'Shadow monarch raid ascension, with violet-black dominance, solitary power growth, sleek aura spectacle, and rank-up intensity.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Tall silhouette authority, shadow-swarm edges, vertical ascent vectors, sharp aura crowns, and layered power contours.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Void black, royal violet, electric blue, silver edge light, deep indigo, and cold white rank glints.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Bottomless shadow glow, violet lightning rims, portal-like depth bloom, and hard silhouette backlight.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Smoky shadow grain, glossy black aura, metallic trim glints, particle shards, and polished digital contrast.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Sleek modern anime polish with overwhelming force, clean aura readability, and solitary scale.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Upward pressure, shadow-depth multiplication, and perspective that makes power feel exponential.',
       atmosphere: 'Dominant, sleek, ominous, ascendant',
       key_features:
-        'Shadow-army silhouettes, violet aura bloom, dungeon architecture, rank-up visual cues, overpowered hero framing',
+        'Violet aura crown, shadow multiplication, solitary ascent, rank-glow hierarchy, overwhelming calm.',
       creative_brief:
-        'Shadows kneel before a lone figure ascending through the dungeon gate, violet lightning threading the silhouette of a monarch who was once nobody. Power accretes like a gathering storm, each rank a new strata of loneliness. Solitude is the tax the throne collects from those who reach it alone.',
+        'Make any prompt feel like solitary power ascending: multiply shadow depth, add violet hierarchy, and compress space around a dominant center without requiring a fixed challenge space, entity, ruler figure, or transition scene.',
     },
   },
   {
@@ -543,24 +543,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mythic-duel spectacle style with ceremonial weapon iconography, noble dramatic scale, and reality-layer rupture effects',
+        'Mythic spectacle style with ceremonial iconography, noble dramatic scale, and reality-layer rupture effects',
       form_and_line:
-        'Heroic duel silhouettes, weapon-field repetition patterns, calligraphic strike vectors, and emblematic stance framing',
+        'Heroic silhouette opposition, repeated luminous motifs, calligraphic strike vectors, and emblematic stance framing',
       color_palette:
         'Regal gold-crimson contrasts over deep navy-charcoal grounds, with luminous arc accents and ceremonial highlight bands',
       lighting_setup:
-        'Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and duel-focus spotlight behavior',
+        'Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and operatic spotlight behavior',
       material_texture:
-        'Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature weapons',
+        'Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature motifs',
       render_quality:
         'Grand-scale fantasy-action rendering with high symbolic clarity and premium spectacle polish',
       spatial_distortion:
-        'Reality-fold perspective pulls and horizon warping around weapon manifestations to emphasize mythic magnitude',
+        'Reality-fold perspective pulls and horizon warping around repeated symbolic manifestations to emphasize mythic magnitude',
       atmosphere: 'Grandiose, operatic, solemn, epic, fated',
       key_features:
-        'Weapon-field iconography, ceremonial duel staging, reality-layer rupture cues, regal color authority',
+        'Symbol-field iconography, ceremonial opposition, reality-layer rupture cues, regal color authority',
       creative_brief:
-        'Preserve identity through mythic weapon symbolism and ceremonial duel framing; reality-warp spectacle should support an operatic visual grammar beyond specific lore references.',
+        'Preserve identity through mythic symbolism and ceremonial opposition; reality-warp spectacle should support an operatic visual grammar beyond specific lore references or combat setups.',
     },
   },
   {
@@ -571,24 +571,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Religious-firefighter action, glowing ember halos, rescue teams in black coats, infernal combustion, cathedral-industrial interiors, liturgical symbolism mixed with speed-line heroics',
+        'Cathedral inferno action, with liturgical flame, ember halos, sacred urgency, and industrial heat.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Speed-line heroics, vertical nave geometry, ignition arcs, black silhouette cuts, and prayerlike motion rhythm.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Ember orange, soot black, stained-glass blue, sacred gold, ash gray, and white-hot ignition points.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Flame underlight, volumetric sacred rays, explosive backlight, and ember-bloom halos.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Soot grain, charred metal, glowing ash, polished cel fire, stained-glass color bleed, and heat shimmer.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with crisp flame readability, sacred scale, and kinetic rescue urgency.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Vertical heat columns, speed-stretched embers, and cathedral-scale depth suggested through light.',
       atmosphere: 'Blazing, heroic, sacred, kinetic',
       key_features:
-        'Flame trails, brigade uniforms, ember particles, cathedral scale, ignition-focused action posing',
+        'Ember halos, liturgical flame, black silhouette cuts, ignition motion, sacred heat.',
       creative_brief:
-        'Fire prayers rise through cathedral naves where brigade coats cut black silhouettes against altar flames. Embers drift upward like inverted benedictions, the sacred and the combustible fused into a single liturgical emergency. Salvation here wears turnout gear and moves at ignition speed — faith propelled through inferno by the sole conviction that something burning can still be saved.',
+        'Apply sacred inferno energy to any prompt: make flame feel ceremonial, emergency-like, and luminous through ember halos, vertical rays, and black silhouette contrast without requiring a brigade, cathedral, or rescue scene.',
     },
   },
   {
@@ -599,24 +599,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Municipal anti-kaiju action, armored cleanup crews, giant-monster tissue aftermath, urban defense operations, public-infrastructure heroics, monster-sized perspective shifts',
+        'Civic monster response style, with public-infrastructure heroics, colossal scale, procedural action, and resilient order.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Technical contour discipline, response-grid layouts, oversized scale markers, angular suitlike silhouettes, and impact arrows.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Emergency orange, municipal blue, concrete gray, bio-lime accents, steel black, and clean white signage blocks.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Disaster-scene glare, operational floodlights, smoke-filtered backlight, and clear hazard-color hierarchy.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Concrete dust, rubberized armor sheen, bio-organic gloss, utility metal, smoke grit, and signage-flat overlays.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with procedural clarity, colossal impact readability, and civic-response texture.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Monster-scale perspective shifts, infrastructure-depth compression, and huge-negative-space pressure.',
       atmosphere: 'Explosive, civic, resilient, colossal',
       key_features:
-        'Scale contrast with city blocks, defense-suit silhouettes, kaiju debris, team-response formations, oversized impact framing',
+        'Civic hazard palette, colossal scale markers, procedural heroism, response-grid composition, bio-industrial grit.',
       creative_brief:
-        'A kaiju corpse sprawls across city blocks like a fallen skyscraper, and amidst the tissue steam, armored cleanup crews move with the grim efficiency of public servants who have seen too many Tuesdays end this way. Monster-scale destruction meets municipal-scale response — garbage trucks hauling away pieces of nightmare alongside ordinary debris. The heroism here wears a defense-suit helmet and fills out overtime forms.',
+        'Make any prompt feel like a public response to impossible scale: combine hazard-color clarity, procedural grids, infrastructure texture, and huge perspective pressure without requiring a literal monster, team, city, or cleanup scene.',
     },
   },
   {
@@ -627,24 +627,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Occult comedy collision, ghost-speed punch-ups, alien weirdness, teen-romance bickering, turbo-charged nonsense, supernatural street fights with irreverent energy',
+        'Paranormal turbo romance brawl, with occult comedy collision, weird speed, irreverent warmth, and cosmic nonsense.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Turbo smear lines, elastic reaction contours, collision-panel rhythm, paranormal glyph bursts, and romantic recoil beats.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Hot pink, ghostly teal, alien lime, blacklight violet, comic yellow, and warm blush orange.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Flash-frame impacts, uncanny underglow, neon paranormal rim light, and sudden romantic softness after chaos.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Static grain, ectoplasmic glow, stickerlike graphic overlays, polished cel speed effects, and rough comedy smears.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium weird-action anime finish with high-speed clarity, absurd timing, and expressive romance friction.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Turbo perspective snaps, supernatural squash-stretch, and colliding scale shifts that keep the frame unstable.',
       atmosphere: 'Wild, funny, romantic, unhinged',
       key_features:
-        'Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language',
+        'Occult comedy, turbo impact, weird romance recoil, paranormal color clash, reaction-shot elasticity.',
       creative_brief:
-        'Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter.',
+        'Push any prompt into turbo paranormal comedy: clash impossible energies, speed-line absurdity, and romantic recoil in the same frame without requiring teenagers, aliens, ghosts, streets, or a brawl setup.',
     },
   },
   {
@@ -655,24 +655,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Executioner blades in hallucinogenic paradise, floral horror, island monstrosities, sacred violence, Edo-period criminal fatalism colliding with impossible botanical terror',
+        'Poison-garden executioner style, with floral horror, sacred violence, hallucinogenic beauty, and fatalistic calm.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Sharp ceremonial contours, petal-like cut geometry, toxic tendril arcs, restrained posture, and lethal negative space.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Poison magenta, lotus pink, jade green, black ink, bone cream, and arterial red accents.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Lush overbright bloom, poisonous rim color, soft sacred haze, and sudden lethal shadow cuts.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Petal translucency, wet ink, pollen dust, lacquered edge glints, organic gloss, and botanical grain.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Premium modern anime finish with lethal elegance, botanical density, and beautiful-horror readability.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Paradise-like compression, floral overgrowth framing, and depth that feels seductive but fatal.',
       atmosphere: 'Lethal, lush, mystical, brutal',
       key_features:
-        'Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops',
+        'Floral lethality, poison bloom, sacred violence, fatalistic stillness, beautiful-horror contrast.',
       creative_brief:
-        'Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil.',
+        'Render any prompt as poisonous paradise: beauty should feel lethal through petal geometry, sacred haze, toxic color, and fatal calm without requiring executioners, islands, monsters, blades, or criminal setup.',
     },
   },
   {
@@ -711,24 +711,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Middle-school psychic awkwardness exploding into paint-like energy storms, emotional overload meter, sketchy sincerity, abstract telekinetic outbursts, humility versus apocalypse',
+        'Psychic paint-surge meltdown, with awkward sincerity, emotional overload, rough sketch artifacts, and abstract energy storms.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Wobbly sketch contours, sudden paint-smear bursts, simple honest face grammar, elastic psychic rings, and hand-drawn rupture.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Acid rainbow bursts, soft neutral calm fields, hot magenta, electric cyan, yellow-white overload, and raw pencil gray.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Aura bloom surges, exposure jumps, emotional flash peaks, and calm flat light before rupture.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Paint smear, crayon edge noise, sketch grain, cel polish breaks, paperlike halftone, and raw energy streaks.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Experimental modern anime finish preserving rough expressive artifacts inside high-energy action clarity.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Emotion-driven warping, paint-like psychic expansion, and frame pressure that bends around inner state.',
       atmosphere: 'Earnest, explosive, weird, cathartic',
       key_features:
-        'Paint-surge psychic effects, simple sincere faces, emotion-meter tension, abstract motion bursts, telekinetic debris halos',
+        'Paint-surge energy, sincere simplicity, overload threshold, rough marks, abstract catharsis.',
       creative_brief:
-        'Emotion crosses an invisible threshold and the world becomes a paint storm howling with every color the psyche can manufacture. A boy with a bowl cut holds back the apocalypse with nothing but honesty and trembling hands. The universe listens when feeling overflows, and it screams back in abstract.',
+        'Make any prompt express inner overflow: let rough sketch marks break into paintlike psychic color, with sincerity and catharsis driving the frame instead of a fixed character, institution, or catastrophe premise.',
     },
   },
   {
@@ -739,24 +739,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Primal wilderness civilization-building fused with competitive action energy, bright invention montages, chemistry-as-power spectacle, survival optimism and tactical intelligence',
+        'Science kingdom action blueprint, with invention optimism, tactical intelligence, bright diagrams, and survival-to-civilization energy.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Blueprint overlays, clean schematic arrows, confident expression beats, toolpath-like lines, and construction rhythm.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Blueprint cyan, mineral green, warm sunlight yellow, chalk white, earth brown, and invention spark orange.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Clear daylight, diagram glow, discovery flashes, and optimistic rim light around practical breakthroughs.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Chalk marks, paper diagrams, rough natural grain, glass glints, mineral dust, and handmade device polish.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Bright modern anime finish with readable invention logic, strategic clarity, and optimistic action pacing.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Process-step composition, diagrammatic depth, and assembly-like motion that makes knowledge kinetic.',
       atmosphere: 'Inventive, bold, optimistic, strategic',
       key_features:
-        'Blueprint overlays, primitive-to-modern tool contrast, science symbols, bright expression acting, invention triumph moments',
+        'Blueprint logic, invention spark, practical optimism, science symbols, constructive momentum.',
       creative_brief:
-        'A boy counts the seconds until civilization returns, using chemistry as his war drum and ingenuity as his compass. Stone-age horizons crack open under the pressure of relentless optimism, each invention a love letter to the future almost lost. The wilderness does not know it is being rebuilt until the first lightbulb flickers on.',
+        'Render any prompt as clever invention in motion: use blueprint overlays, practical materials, bright discovery light, and tactical clarity without requiring wilderness, devices, science props, or rebuilding scenes.',
     },
   },
   {
@@ -767,24 +767,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ornamental blade-fantasy action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish',
+        'Ornamental fantasy-action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish',
       form_and_line:
-        'Curved sword-arc trajectories, decorative yet sharp contour control, fluid strike ribbons, and posture-led heroic silhouette grammar',
+        'Curved arc trajectories, decorative yet sharp contour control, fluid motion ribbons, and posture-led heroic silhouette grammar',
       color_palette:
         'Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric cool-warm transitions',
       lighting_setup:
-        'Moonlit high-contrast accents, controlled bloom around slash arcs, and dramatic rim isolation for ceremonial action beats',
+        'Moonlit high-contrast accents, controlled bloom around motion arcs, and dramatic rim isolation for ceremonial action beats',
       material_texture:
-        'Fine textile pattern hints, polished steel glint behavior, painterly effect overlays, and low-noise digital cel finish',
+        'Fine textile pattern hints, polished glint behavior, painterly effect overlays, and low-noise digital cel finish',
       render_quality:
         'Premium stylized action rendering that balances ornamental detail with crisp combat readability',
       spatial_distortion:
-        'Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around weapon arcs',
+        'Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around luminous arcs',
       atmosphere: 'Heroic, graceful, luminous, solemn, resolute',
       key_features:
-        'Calligraphic slash language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging',
+        'Calligraphic motion language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging',
       creative_brief:
-        'Keep this preset rooted in decorative blade choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues.',
+        'Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues or fixed subject matter.',
     },
   },
   {
@@ -823,24 +823,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban grime, devil-contract desperation, splattered apartment-block carnage, greasy youth burnout, industrial gore comedy, ridiculous violence played with deadpan panic, civic-collapse devil hunting',
+        'Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous violence.',
       form_and_line:
-        'Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking',
+        'Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic timing.',
       color_palette:
-        'Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops',
+        'Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.',
       lighting_setup:
-        'High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination',
+        'Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.',
       material_texture:
-        'Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish',
+        'Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate haze.',
       render_quality:
-        'Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition',
+        'Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.',
       spatial_distortion:
-        'Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening',
+        'Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.',
       atmosphere: 'Chaotic, filthy, feral, desperate',
       key_features:
-        'Industrial splatter, jagged power silhouettes, exhausted youth body language, grim city clutter, violent comic timing',
+        'Industrial splatter, burnout posture, grime haze, deadpan shock, contract-panic energy.',
       creative_brief:
-        "Blood dries on concrete and nobody stops to clean it — the filth of devil hunting is not aesthetic but environmental, the air itself greasy with exhaust and bad decisions. Violence arrives with deadpan inevitability, bodies ragdolling through apartment-block corridors as if physics gave up. The horror laughs at itself, and that hollow cackle is the soundtrack of youth spent paying someone else's debts.",
+        'Make any prompt feel grimy, desperate, and absurdly violent through grease texture, hard fluorescent glare, jagged impact rhythm, and deadpan panic without locking it to a specific hunter job or city scene.',
     },
   },
   {
@@ -861,14 +861,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Matte paper-like surfaces, subtle analog grain, polished low-noise cel layers, restrained reflective cues',
       render_quality:
-        'High-discipline early-digital anime finish optimized for suspense readability and symbolic object prominence',
+        'High-discipline early-digital anime finish optimized for suspense readability and symbolic hierarchy',
       spatial_distortion:
         'Compressed psychological space with strategic negative voids and perspective restraint to amplify mental pressure',
       atmosphere: 'Calculating, oppressive, cold, analytical, ominous',
       key_features:
-        'Chiaroscuro intellect, symbolic prop hierarchy, stillness-driven menace, contrast-led narrative tension',
+        'Chiaroscuro intellect, symbolic hierarchy, stillness-driven menace, contrast-led narrative tension',
       creative_brief:
-        'Build identity through psychological contrast logic—severe light partition, symbolic object emphasis, and compositional restraint—so the preset reads as cerebral suspense across any subject matter.',
+        'Build identity through psychological contrast logic—severe light partition, symbolic hierarchy, and compositional restraint—so the preset reads as cerebral suspense across any subject matter without requiring a fixed clue.',
     },
   },
   {
@@ -879,24 +879,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles',
+        'Jazz railcrime ensemble, with nonlinear pulp cool, amber chaos, immortal momentum, and syncopated danger.',
       form_and_line:
-        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+        'Clean early-digital contours, ensemble overlap rhythm, jazz-cut diagonals, pulp silhouette snaps, and syncopated framing.',
       color_palette:
-        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+        'Amber whiskey, rail black, brass gold, blood red, sepia cream, and smoky blue.',
       lighting_setup:
-        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+        'Warm barlike glow, sharp carriage-shadow stripes, theatrical rim highlights, and syncopated flash accents.',
       material_texture:
-        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+        'Varnished wood warmth, brass glints, smoke grain, paper pulp texture, and smooth digital-cel polish.',
       render_quality:
-        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+        'Early-2000s anime pulp finish with ensemble clarity, amber danger, and rhythmic nonlinear energy.',
       spatial_distortion:
-        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+        'Compartmental depth, overlapping timelines, and jazz-timed angle changes without fixed train staging.',
       atmosphere: 'Riotous, jazzy, dangerous, charismatic',
       key_features:
-        'Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language',
+        'Jazz timing, amber pulp light, ensemble chaos, brass warmth, nonlinear danger.',
       creative_brief:
-        'A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood.',
+        'Give any prompt jazz-pulp crime energy through syncopated cuts, amber glow, ensemble overlap, and brass-shadow contrast without requiring trains, criminal roles, barrooms, period fashion, or violence set pieces.',
     },
   },
   {
@@ -907,9 +907,9 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Youth-shonen velocity style with disciplined martial iconography, optimistic momentum arcs, and early-digital action clarity',
+        'Youth-shonen velocity style with disciplined kinetic iconography, optimistic momentum arcs, and early-digital action clarity',
       form_and_line:
-        'Clean directional inking, compact contour economy, speed-line vectors, emblematic prop silhouettes, readable pose architecture',
+        'Clean directional inking, compact contour economy, speed-line vectors, emblematic silhouette rhythm, readable motion architecture',
       color_palette:
         'Saturated primaries with warm earth underlay, energetic accent spikes, high-contrast cel blocks, restrained shadow neutrals',
       lighting_setup:
@@ -922,9 +922,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Forward-leaning perspective thrust, elastic action staging, and trajectory-oriented framing for kinetic storytelling',
       atmosphere: 'Driven, hopeful, kinetic, focused, resilient',
       key_features:
-        'Martial motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting',
+        'Kinetic motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting',
       creative_brief:
-        'Preserve a youthful combat grammar through motion-vector linework, emblematic silhouette cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale.',
+        'Preserve a youthful combat grammar through motion-vector linework, emblematic shape cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale or accessory.',
     },
   },
   {
@@ -935,11 +935,11 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban-supernatural blade style with monochrome dominance, high-fashion severity, and spiritual pressure visualized as controlled aura geometry',
+        'Urban-supernatural severity style with monochrome dominance, high-fashion restraint, and spiritual pressure as controlled aura geometry',
       form_and_line:
-        'Long weapon-led diagonals, razor contour precision, severe silhouette blocking, mask-like facial simplification, ink-clean negative-space cuts',
+        'Long razor diagonals, contour precision, severe silhouette blocking, mask-like simplification, ink-clean negative-space cuts',
       color_palette:
-        'Black-white core with selective cyan-violet spectral accents, silver steel mids, and sparse high-intensity contrast nodes',
+        'Black-white core with selective cyan-violet spectral accents, silver mids, and sparse high-intensity contrast nodes',
       lighting_setup:
         'Hard-edged rim illumination, selective underglow, concentrated aura bloom pockets, and dramatic shadow partitioning',
       material_texture:
@@ -950,9 +950,9 @@ export const GENERATED_STYLE_PRESETS = [
         'High-angle slash trajectories with compressed depth lanes and silhouette-priority framing for impact authority',
       atmosphere: 'Severe, iconic, charged, controlled, intimidating',
       key_features:
-        'Monochrome supremacy, blade-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction',
+        'Monochrome supremacy, razor-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction',
       creative_brief:
-        'Anchor this preset in monochrome sword-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene.',
+        'Anchor this preset in monochrome edge-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene or character setup.',
     },
   },
   {
@@ -963,7 +963,7 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Elastic-adventure shonen style with exaggerated expression physics, optimistic maritime energy, and carnival-scale freedom tone',
+        'Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and carnival-scale freedom tone',
       form_and_line:
         'Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing',
       color_palette:
@@ -980,7 +980,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing',
       creative_brief:
-        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific pirate or lore motifs.',
+        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific faction, ship, sea, or lore motifs.',
     },
   },
   {
@@ -991,9 +991,9 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Lo-fi rhythm-action style blending sword kinetics with streetwise groove, improvised cool, and beat-synced visual pacing',
+        'Lo-fi rhythm-action style blending cutting kinetics with streetwise groove, improvised cool, and beat-synced visual pacing',
       form_and_line:
-        'Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked pose transitions, and improvised gesture cadence',
+        'Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked transitions, and improvised gesture cadence',
       color_palette:
         'Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon pulse notes',
       lighting_setup:
@@ -1006,9 +1006,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth',
       atmosphere: 'Cool, laid-back, kinetic, improvisational, stylish',
       key_features:
-        'Rhythm-cut action grammar, lo-fi texture stack, swagger-forward posing, street-meets-sword visual cadence',
+        'Rhythm-cut action grammar, lo-fi texture stack, swagger-forward motion, analog groove visual cadence',
       creative_brief:
-        'Define this preset by rhythm-synced action language and lo-fi swagger: sword motion should feel musically improvised, with texture and pacing as the transferable identity rather than a specific historical road scene.',
+        'Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically improvised, with texture and pacing as the transferable identity rather than a literal action-travel setup.',
     },
   },
   {
@@ -1036,7 +1036,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing',
       creative_brief:
-        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene.',
+        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene, cast, or location.',
     },
   },
   {
@@ -1047,24 +1047,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir',
+        'South Seas gun-runner grit, with humid noir, lawless heat, hardboiled cool, and gunmetal danger.',
       form_and_line:
-        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+        'Clean early-digital contours, hardboiled silhouette blocks, recoil diagonals, smoke curls, and sharp stance economy.',
       color_palette:
-        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+        'Gunmetal gray, tropical teal, rust orange, cigarette ember red, salt haze white, and oily black.',
       lighting_setup:
-        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+        'Hot practical glare, humid rim bloom, low noir shadows, and polished early-digital highlight bands.',
       material_texture:
-        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+        'Salt haze, brushed metal, sweat sheen, worn fabric, smoke grain, and smooth cel-noir surfaces.',
       render_quality:
-        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+        'Early-2000s digital-cel action finish with crisp grit, worldly heat, and clean danger readability.',
       spatial_distortion:
-        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+        'Low-angle threat framing, lateral escape vectors, and humid depth compression without fixed docks or vehicles.',
       atmosphere: 'Gruff, hot, dangerous, worldly',
       key_features:
-        'Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions',
+        'Humid noir, gunmetal palette, smoke tension, lawless heat, hardboiled early-digital grit.',
       creative_brief:
-        'Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water.',
+        'Apply tropical noir pressure to any prompt through humid glare, gunmetal texture, smoke rhythm, and lawless cool without requiring a port, dock, vehicle, smoking prop, or criminal scene.',
     },
   },
   {
@@ -1075,24 +1075,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban electrical espionage, masked contractors, cold neon rain, conspiratorial apartment blocks, emotion-suppressed assassin cool, after-midnight tech noir',
+        'Contract killer night-rain style, with cold electrical espionage, suppressed emotion, and after-midnight tech noir.',
       form_and_line:
-        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+        'Smooth early-digital contours, electric thread arcs, masked negative spaces, and restrained body-language geometry.',
       color_palette:
-        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+        'Rain blue, black glass, cold cyan, sodium amber, pale mask white, and desaturated violet.',
       lighting_setup:
-        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+        'Neon rain streaks, windowlike reflections, controlled rim glow, and cold underlit secrecy.',
       material_texture:
-        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+        'Wet glass sheen, rain grain, matte fabric flats, electric particle threads, and clean digital cel polish.',
       render_quality:
-        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+        'Early-2000s tech-noir anime finish with smooth compositing, lonely restraint, and crisp electric detail.',
       spatial_distortion:
-        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+        'Narrow depth lanes, surveillance-like framing, and rain-layer parallax that compresses emotion.',
       atmosphere: 'Cold, secretive, sleek, lonely',
       key_features:
-        'Electric effect threads, masked silhouettes, rainlit city alleys, covert-operatives framing, controlled facial acting',
+        'Electric threads, rain noir, masked emptiness, emotional suppression, covert stillness.',
       creative_brief:
-        'Neon bleeds down the window of a safehouse where nobody feels safe, and a contractor checks the time with a face emptied of everything except the cost of the next mission. Every power subtracts a piece of self, and the balance sheet is written in cold rain. The city at 3 AM is just another mask, and everyone wears it well.',
+        'Give any prompt night-rain espionage: use cold reflection, electric thread accents, masked negative space, and suppressed emotion without requiring a fixed urban location, operative role, or mission setup.',
     },
   },
   {
@@ -1103,24 +1103,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Edo roadtrip remixed with hip-hop attitude, loose sword swagger, vinyl-scratch pacing, dusty sunlight, anachronistic cool threaded through wandering samurai adventure',
+        'Lo-fi Edo swagger, with hip-hop timing, dusty sun, anachronistic cool, and loose kinetic rhythm.',
       form_and_line:
-        'Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity',
+        'Clean early-digital strokes, swing-beat diagonals, relaxed contour attitude, scratch-cut transitions, and offbeat pose timing.',
       color_palette:
-        'Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range',
+        'Dust gold, faded indigo, warm brown, muted teal, sunbaked cream, and vinyl black.',
       lighting_setup:
-        'Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow',
+        'Low sun wash, soft rim glow, analog warm haze, and beat-accent highlight pops.',
       material_texture:
-        'Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain',
+        'Film grain, paper dust, worn cloth flats, vinyl scratch overlays, and smooth cel compositing.',
       render_quality:
-        'Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending',
+        'Early-2000s digital-cel finish with lo-fi warmth, crisp readability, and rhythm-first action style.',
       spatial_distortion:
-        'Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses',
+        'Beat-driven framing shifts, relaxed perspective snaps, and sample-loop motion cadence.',
       atmosphere: 'Loose, stylish, sunbaked, rebellious',
       key_features:
-        'Streetwise sword poses, lo-fi travel scenery, rhythm-first action timing, relaxed body language, dusty road compositions',
+        'Lo-fi grain, hip-hop timing, dusty sunlight, relaxed swagger, anachronistic rhythm.',
       creative_brief:
-        'Two swords and a record scratch walk through Edo like they invented the future and forgot to tell anyone. Dust rises from sandals that have traveled nowhere and everywhere, each step a beat in a wandering rhythm. The road is just a long sample loop waiting for the next cut.',
+        'Apply lo-fi historical swagger to any prompt through vinyl-scratch pacing, dusty warmth, relaxed motion, and offbeat cuts without requiring swords, road travel, period setting, costume detail, or specific wanderers.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Action camera POV
   form_and_line: Fisheye distortion
   color_palette: Vibrant, sharp
-  lighting_setup: Outdoor, harsh
+  lighting_setup: Harsh available light
   material_texture: Digital sharpening
-  render_quality: Action sports, vlog
+  render_quality: Action-camera realism
   spatial_distortion: Curved horizon
   atmosphere: Active, immersive
   key_features: Wide FOV
-  creative_brief: The horizon bends around the edges of experience, pulling the viewer inside the velocity of the moment. Every frame trembles with unspent kinetic energy, the wide embrace of the lens swallowing foreground and distance into a single breathless continuum. You are not observing the action; you are inside it.
+  creative_brief: 'The lens bends space around experience: ultra-wide FOV, curved horizons, digital sharpening, hard available light, and foreground exaggeration pulling viewer close. Apply immersive action-camera POV to any subject, even still objects, without requiring sports, travel, or outdoor action.'
 avoidRules:
   - illustration
   - painting

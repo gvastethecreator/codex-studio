@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Abstracted
   atmosphere: Rough, organic
   key_features: Heavy texture
-  creative_brief: Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as topography itself. The plate becomes a landscape, valleys holding ink while peaks print white, relief as image generator. The print carries the memory of every material sacrificed to its creation.
+  creative_brief: Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as raised terrain. Valleys hold ink while peaks print light, relief becoming the image generator. The print carries the memory of every material sacrificed to its creation without requiring literal landscape or collage objects.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - literal landscape
+  - recognizable found objects
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-045.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal landscape, recognizable found objects
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

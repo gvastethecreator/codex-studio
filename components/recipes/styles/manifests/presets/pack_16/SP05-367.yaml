@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-367
 packId: pack_16
-name: Sound! Euphonium - Brass Section Sunset Practice
+name: Brass Section Tender Precision Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Banda escolar de concierto orientada a precisión de sección, color tímbrico y ansiedad de certamen.
-  form_and_line: Gestualidad de embocadura detallada, postura de atril disciplinada y microacting de respiración conjunta.
-  color_palette: Dorados de metal pulido, azules de uniforme sobrio y atardecer ámbar de sala de ensayo.
-  lighting_setup: Luz de tarde de aula con foco cálido sobre campanas y sombras suaves de atriles.
-  material_texture: Latón espejo, llaves metálicas usadas, papel de partitura mate y tejido formal del uniforme.
-  render_quality: Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos instrumentales.
-  spatial_distortion: Profundidad de ensamble por filas de atril y compresión leve hacia solista de sección.
+  aesthetic: Precisión tímbrica de conjunto, ansiedad de certamen y ternura aspiracional.
+  form_and_line: Gestualidad respiratoria detallada, postura disciplinada y microacting de sincronía conjunta.
+  color_palette: Dorados de resonancia pulida, azules sobrios y ámbar de interior sereno.
+  lighting_setup: Luz de tarde con foco cálido sobre superficies reflectivas y sombras suaves.
+  material_texture: Brillo metálico espejo, mecanismos pequeños usados, papel mate y tejido formal.
+  render_quality: Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos rítmicos.
+  spatial_distortion: Profundidad de ensamble por capas rítmicas y compresión leve hacia foco de sección.
   atmosphere: Tierna, aspiracional, pulida y competitivamente musical.
-  key_features: Reflejos de brass, detalle de embocadura, proximidad de ensamble y escala de sala de ensayo.
+  key_features: Reflejos cálidos, detalle respiratorio, proximidad de ensamble y escala íntima.
   creative_brief: >-
-    Construye una gramática reusable de brass-section-practice donde
-    materialidad del metal, disciplina de ensamble y sensibilidad adolescente
-    formen un sistema visual estable y transferible.
+    Construye una gramática reusable de tender-ensemble-precision donde
+    reflejo metálico, disciplina de ensamble y sensibilidad aspiracional
+    formen un sistema visual estable y transferible sin imponer banda escolar,
+    instrumentos, aula, atriles ni ensayo literal.
 avoidRules:
   - realistic
   - 3d render

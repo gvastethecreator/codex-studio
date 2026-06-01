@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-237
 packId: pack_05
-name: Gunbuster - Training Hangar to Galaxy Sacrifice
+name: Monumental Launch Sacrifice Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Heroísmo mecha clásico de sangre caliente que escala de entrenamiento técnico a sacrificio cósmico.
-  form_and_line: Silueta robusta de super-robot, diagonales de lanzamiento y gestualidad enfática de determinación juvenil.
-  color_palette: Azul hangar, rojo heroico, blanco de explosión estelar, negro espacial y amarillo de energía núcleo.
-  lighting_setup: Fluorescente de base militar, flare de ignición y bañado estelar en escenas de escala astronómica.
-  material_texture: Carcasa metálica marcada, juntas mecánicas visibles, humo térmico y brillo energético de alto contraste.
-  render_quality: Super robot anime con claridad emocional, expansión de escala y dramatismo de sacrificio final.
-  spatial_distortion: Transición de escala deportiva a cósmica con foreshortening heroico y verticalidad monumental.
+  aesthetic: Heroísmo clásico de sangre caliente, disciplina técnica, lanzamiento monumental, sacrificio luminoso y escala emocional creciente.
+  form_and_line: Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad monumental y contornos de determinación.
+  color_palette: Azul técnico, rojo heroico, blanco de flare estelar, negro profundo y amarillo de núcleo energético.
+  lighting_setup: Fluorescente técnico, flare de ignición y bañado estelar de escala astronómica.
+  material_texture: Carcasa marcada, juntas técnicas visibles, humo térmico y brillo energético de alto contraste.
+  render_quality: Anime épico clásico con claridad emocional, expansión de escala y dramatismo de entrega final.
+  spatial_distortion: Transición de escala íntima a cósmica con foreshortening heroico y verticalidad monumental.
   atmosphere: Triunfante, emotiva y colosal, de épica sincera.
-  key_features: Hangar de entrenamiento, launches masivos, iconografía de sacrificio y encuadres de grito heroico.
+  key_features: Diagonales de lanzamiento, núcleo luminoso, verticalidad colosal, emoción directa e iconografía de sacrificio abstracta.
   creative_brief: >-
-    Construye una gramática galaxy-sacrifice reusable donde disciplina de
-    formación, energía de despegue y expansión astronómica converjan en una
-    épica emocional directa y legible.
+    Construye una gramática launch-sacrifice reusable donde disciplina,
+    ignición, verticalidad y expansión astronómica converjan en épica emocional
+    directa sin infraestructura fija, entrenamiento literal, operadores,
+    hardware concreto o cierre narrativo obligatorio.
 avoidRules:
   - realistic
   - 3d render

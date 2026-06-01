@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-347
 packId: pack_16
-name: Yowamushi Pedal - Uphill Breakaway Scream
+name: Uphill Endurance Breakaway Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ciclismo de montaña shonen orientado a escalada extrema, resistencia mental y dinámica de pelotón.
-  form_and_line: Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de pedaleo de alta cadencia.
-  color_palette: Colores de escuadra saturados sobre asfalto oscuro, verdes de ladera y cielos fríos de altura.
-  lighting_setup: Luz abierta de carretera con contraluces de pendiente y flare suave de altitud.
-  material_texture: Asfalto rugoso, fibra de cuadro ligero, tejido técnico de jersey y polvo fino en neumático.
-  render_quality: Frame de ruta premium con legibilidad de escalada, drafting y ruptura de pelotón.
-  spatial_distortion: Perspectiva de switchback con compresión de pendiente y elongación de curva para dramatizar ascenso.
+  aesthetic: Deporte shonen de resistencia ascendente, esfuerzo mental, presión grupal y quiebre de ritmo.
+  form_and_line: Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de alta cadencia.
+  color_palette: Bloques saturados de esfuerzo sobre oscuros rugosos, verdes inclinados y cielos fríos de altura.
+  lighting_setup: Luz abierta de ascenso con contraluces de pendiente y flare suave de altitud.
+  material_texture: Superficie rugosa, fibra técnica sugerida, tejido deportivo y polvo fino de fricción.
+  render_quality: Frame de resistencia premium con legibilidad de ascenso emocional, succión grupal y ruptura de ritmo.
+  spatial_distortion: Perspectiva comprimida de pendiente y elongación de curva para dramatizar ascenso.
   atmosphere: Exhausta, obsesiva y triunfal por resistencia.
-  key_features: Ángulos de bici agresivos, spacing de pelotón, gestualidad de esfuerzo y topología de puerto ascendente.
+  key_features: Diagonales ascendentes, spacing de grupo, gestualidad de esfuerzo, velocidad acumulada y respiración extrema.
   creative_brief: >-
-    Define una gramática reusable de uphill-breakaway donde pendiente,
-    resistencia y lectura de pelotón estructuren la identidad visual sin quedar
-    fijados a un momento narrativo.
+    Aplica una gramática reusable de breakaway ascendente a cualquier prompt o imagen de entrada:
+    resistencia, pendiente emocional y presión grupal sin imponer bicicletas, pelotón, rutas ni montaña literal.
 avoidRules:
   - realistic
   - 3d render

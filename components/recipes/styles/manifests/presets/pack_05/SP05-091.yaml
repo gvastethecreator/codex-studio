@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Floating interface magic, sword-forward exploration, game-like fantasy vistas, digital heroism, Aincrad floating castle, health-bar UI motifs, dual-wielding Kirito, floor-boss raids
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Adventurous, virtual, epic, romantic
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: A floating castle made of code and longing, where sword skill menus hover like constellations and every floor is a new sky to conquer. Digital heroism wears the face of a boy who just wanted to log out but found a reason to stay. Make the virtual feel visceral — interface elements as natural as breath, combat as intimate as conversation.
+  aesthetic: Glowing VR fantasy, with interface-light magic, virtual romance, polished heroism, and visceral digital immersion.
+  form_and_line: Clean fantasy contours, translucent HUD arcs, thin luminous trim, modular edge highlights, and readable action silhouettes.
+  color_palette: Sky sapphire, interface cyan, warm amber courage, emerald status glow, white bloom, and deep virtual blue.
+  lighting_setup: Diegetic UI glow, atmospheric depth haze, soft rim auras, and crystalline light planes.
+  material_texture: Glassy overlays, polished cel surfaces, pixel-fine particles, synthetic fabric sheen, and luminous edge bloom.
+  render_quality: Expansive digital-fantasy anime polish with high clarity, clean compositing, and romantic virtual scale.
+  spatial_distortion: Layered interface depth, suspended panels, and horizon expansion that makes space feel software-shaped.
+  atmosphere: Adventurous, virtual, epic, romantic.
+  key_features: Interface constellations, virtual glow, clean adventure polish, synthetic depth, emotional immersion.
+  creative_brief: >-
+    Make any prompt feel like fantasy translated through a beautiful virtual
+    system: UI light should behave like atmosphere, digital edges should feel
+    tactile, and heroic scale should come from immersion rather than fixed game
+    locations or named characters.
 avoidRules:
   - realistic
   - 3d render

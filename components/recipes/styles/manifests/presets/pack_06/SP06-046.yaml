@@ -12,15 +12,15 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Standard digital illustration
-  form_and_line: Clean, refined
-  color_palette: RGB, vibrant
-  lighting_setup: Studio
-  material_texture: Smooth
-  render_quality: ArtStation, professional
+  aesthetic: Polished digital illustration with layer-built control, clean brush economy, and modern concept-render clarity
+  form_and_line: Refined silhouette edges, selective painterly marks, and clean shape transitions
+  color_palette: RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation
+  lighting_setup: Studio-like key/fill/rim logic tuned for clean digital readability
+  material_texture: Smooth brush blending with selective texture overlays and pressure-sensitive edge detail
+  render_quality: Professional digital painting polish without platform-specific tropes
   spatial_distortion: None
   atmosphere: Polished
-  key_features: Digital look
+  key_features: Layered polish, crisp focal rendering, editable-feeling control
   creative_brief: Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.
 avoidRules:
   - photo
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

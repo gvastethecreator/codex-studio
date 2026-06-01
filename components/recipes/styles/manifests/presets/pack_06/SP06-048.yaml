@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-048
 packId: pack_06
-name: Matte Painting
+name: Matte Painting Extension
 category: 4. Digital Art
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Photorealistic environment extension
+  aesthetic: Matte-painting extension style with seamless photobash integration and atmospheric scale logic
   form_and_line: Invisible
   color_palette: Cinematic, atmospheric
   lighting_setup: Natural, consistent
   material_texture: Photo textures
-  render_quality: Movie background
+  render_quality: Cinematic background/extension finish without requiring landscapes, skies, or architecture
   spatial_distortion: None
-  atmosphere: Epic, vast
+  atmosphere: Expansive, coherent, cinematic
   key_features: Seamless blend
-  creative_brief: Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless vastness. Cinematic light unifies what was never together, a world assembled from fragments that conspire to feel whole. The image convinces not through realism but through atmospheric coherence, light as the great unifier.
+  creative_brief: Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless atmosphere. Cinematic light unifies fragments that were never together, making scale, depth, and continuity feel inevitable. The image convinces through coherence, not through requiring environments, skies, architecture, or vistas.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - landscape requirement
+  - architecture requirement
+  - sky requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-048.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

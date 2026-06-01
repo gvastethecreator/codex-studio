@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-029
 packId: pack_16
-name: Castle Siege Emberstorm
+name: Ember Breach Pressure Style
 category: 4. Samurais & Medieval
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Breach-pressure siege anime where structural failure, flame logic, and defensive choreography define the visual identity.
-  form_and_line: Heavy fortification silhouettes, fracture-oriented masonry lines, and projectile arcs used as compositional vectors.
+  aesthetic: Breach-pressure anime where structural failure, flame logic, and defensive choreography define the visual identity.
+  form_and_line: Heavy structural silhouettes, fracture-oriented lines, and arc vectors used as compositional pressure.
   color_palette: Ember orange peaks, smoke black masses, calcified stone grays, and sparse signal-red command accents.
   lighting_setup: Fire-dominant nocturnal contrast with intermittent blast flares that reveal tactical layers in pulses.
-  material_texture: Cracked battlement stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.
-  render_quality: Epic widescreen readability with strong event hierarchy between breach zone, defender line, and siege engines.
-  spatial_distortion: Oblique wall traversal perspective that exaggerates breach depth and converging offensive channels.
+  material_texture: Cracked stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.
+  render_quality: Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat pressure.
+  spatial_distortion: Oblique structural perspective that exaggerates breach depth and converging pressure channels.
   atmosphere: Controlled collapse, disciplined resistance, and escalating heat-driven urgency.
-  key_features: Breach seams, volley trajectories, shield-wall pressure points, and command silhouettes amid ember drift.
-  creative_brief: Establish a transferable siege-break grammar for any theme by centering fracture geometry, fire-lit pulse lighting, and multi-layer conflict readability.
+  key_features: Breach seams, arc trajectories, pressure points, and command silhouettes amid ember drift.
+  creative_brief: >-
+    Establish a transferable ember-breach-pressure grammar for any subject:
+    fracture geometry, fire-lit pulse lighting, layered conflict readability,
+    and controlled collapse without imposing castles, sieges, walls, projectiles,
+    defenders, shield-lines, or engines.
 avoidRules:
   - photoreal
   - modern-tech

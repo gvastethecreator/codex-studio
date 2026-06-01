@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Construction mechs, police procedure, Tokyo infrastructure realism, everyday bureaucracy around giant robots, practical engineering detail and low-key civic humor
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Municipal mecha procedure, with practical engineering, civic bureaucracy, low-key humor, and grounded machine detail.
+  form_and_line: Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry, and civic layout grids.
+  color_palette: Utility white, municipal blue, hazard orange, wet asphalt gray, paperwork beige, and hydraulic steel.
+  lighting_setup: Overcast practical light, fluorescent bay glow, wet-surface reflections, and low-drama operational highlights.
+  material_texture: Brushed metal, rubber seals, rain sheen, concrete grain, paperwork flatness, and oily mechanical joints.
+  render_quality: High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic realism.
+  spatial_distortion: Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed city or cockpit views.
   atmosphere: Procedural, grounded, urban, practical
-  key_features: Construction-mech detail, police command vehicles, urban infrastructure backdrops, practical control panels, civic-response staging
-  creative_brief: Giant robots clock in for their shift, patrolling Tokyo flood barriers and construction sites with the bureaucracy of any municipal department. The future is not glamorous — it is paperwork, maintenance schedules, and a labor mech that needs its hydraulics checked before the next typhoon. Heroism wears a hard hat and fills out incident reports.
+  key_features: Civic machinery, maintenance realism, procedural grids, paperwork humor, practical engineering.
+  creative_brief: >-
+    Make any prompt feel like grounded civic sci-fi: emphasize maintenance
+    logic, utility color, procedural diagrams, and bureaucratic calm without
+    requiring specific machines, police, named cities, command vehicles, or patrols.
 avoidRules:
   - realistic
   - 3d render

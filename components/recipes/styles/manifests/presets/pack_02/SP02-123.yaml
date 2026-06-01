@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-123
+packId: pack_02
+name: Public Access Cable Crawl
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: Public-access cable channel, cheap community bulletin graphics, VHS routing noise, amateur studio sincerity, crawl bands without readable text
+  form_and_line: Boxy title-safe layout, simple centered shapes, chunky crawl strips, misaligned overlay geometry
+  color_palette: Cable blue, magenta key color, off-white crawl band, washed yellow, VHS black
+  lighting_setup: Fluorescent community-studio wash, underpowered practicals, hot camcorder highlights
+  material_texture: VHS tracking noise, character-generator aliasing, tape blur, analog snow, scanline shimmer
+  render_quality: Low-budget, sincere, awkward, community-TV artifact
+  spatial_distortion: Title-safe margins, slightly skewed overlays, overscan cropping, analog edge warp
+  atmosphere: Homemade, local, earnest, oddly hypnotic
+  key_features: Crawl bands, title-safe framing, VHS noise, aliasing, overscan, no readable text
+  creative_brief: 'Render any prompt as public-access cable: cheap title-safe layout, crawl-band shapes, VHS tracking noise, analog snow, overscan crop, and sincere low-budget staging. Avoid readable announcements, specific community events, hosts, or studio scenes. The style should feel routed through a worn municipal cable feed.'
+avoidRules:
+  - high production value
+  - crisp typography
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-123.webp
+attributes:
+  negativePrompt: high production value, crisp typography
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Cooperative moon district focused on artisan fabrication and communal care.
-  form_and_line: Dome clusters, radial market rings, and vertical greenhouse shafts.
+  aesthetic: Cooperative lunarpunk craft language focused on care, fabrication, and soft infrastructure.
+  form_and_line: Dome clusters, radial commons rings, vertical greenhouse shafts, and hand-built modular seams.
   color_palette: Frost white, pale cyan, and soft coral accents.
   lighting_setup: Diffused dome glow and reflected rimlight from regolith plains.
   material_texture: Crystalline composites, woven habitat textiles, and matte ceramic panels.
   render_quality: Refined concept style with readable social micro-scenes.
-  spatial_distortion: Curved plaza perspective emphasizing communal center gravity.
+  spatial_distortion: Curved communal-center perspective with gentle radial gravity.
   atmosphere: Mutual aid, creative craft, and patient technological optimism.
-  key_features: Shared fab labs, moon bazaar stalls, and low-gravity amphitheater gardens.
+  key_features: Woven habitat texture, fab-grid patterning, coral care accents, and crystalline seam highlights.
   creative_brief: >-
     Preserve selenite commons grammar as a reusable style system:
-    cooperative dome urbanism, craft-forward mutual-aid infrastructure, and
-    patient moon-district optimism should remain coherent across subjects.
+    cooperative dome cues, craft-forward mutual-aid infrastructure, and patient
+    moon-district optimism should remain coherent across any subject.
 avoidRules: [photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-029.webp }
 attributes:
   negativePrompt: photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-312
 packId: pack_16
-name: Cat's Eye - Gallery Heist Red Leotard
+name: Elegant Eighties Heist Glam Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heist glam nocturno de alta elegancia, con sofisticación urbana ochentera y dinámica de sororidad estratégica.
-  form_and_line: Línea estilizada de figura felina, poses de infiltración milimétrica y coreografía de trío en silencio táctico.
-  color_palette: Rojos icónicos de vestuario, negros de galería cerrada, dorados de obra clásica y blancos de spotlight.
-  lighting_setup: Conos de luz de seguridad, sombras planas marcadas y brillos de vitrina para tensión de robo silencioso.
-  material_texture: Mármol pulido, vidrio museístico, cuero técnico y grano analógico de serie nocturna retro.
+  aesthetic: Heist glam nocturno de alta elegancia, con sofisticación ochentera, precisión coreográfica y tensión de infiltración.
+  form_and_line: Línea estilizada de figura felina, poses de infiltración milimétrica y coreografía silenciosa táctica.
+  color_palette: Rojos icónicos, negros cerrados, dorados de lujo y blancos de spotlight.
+  lighting_setup: Conos de luz de seguridad, sombras planas marcadas y brillos reflectivos para tensión furtiva.
+  material_texture: Piedra pulida, vidrio reflectivo, cuero técnico y grano analógico de serie nocturna retro.
   render_quality: Acabado premium de thriller elegante con legibilidad de movimiento furtivo y glamour controlado.
-  spatial_distortion: Espacio interior de museo con perspectiva de pasillo y capas de vigilancia que tensionan la ruta de escape.
+  spatial_distortion: Espacio abstracto con perspectiva profunda y capas de vigilancia que tensionan el vector de salida.
   atmosphere: Astuta, elegante, nocturna, glamurosa.
-  key_features: Trío de ladronas coordinado, iconografía rojo-leotardo, vitrinas iluminadas y gramática de ballet criminal.
-  creative_brief: Construye una gramática reusable de heist glam para cualquier sujeto, combinando precisión de trío, lujo museístico y tensión de infiltración nocturna.
+  key_features: Rojo acento, lujo reflejado, ballet criminal abstracto, siluetas elegantes y precisión estratégica.
+  creative_brief: >-
+    Construye una gramática reusable de heist glam para cualquier prompt o imagen de entrada:
+    elegancia, reflejos y tensión furtiva sin imponer tríos, ladronas, museos, vitrinas ni leotardos.
 avoidRules:
   - realistic
   - 3d render

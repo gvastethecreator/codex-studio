@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Aventura de fantasía caravanera con imaginería de bazar, magia joya y tensión entre amistad itinerante e imperio.
-  form_and_line: Ornamento arabesco dinámico, silueta de caravana y torres-laberinto verticales con lectura de ruta épica.
-  color_palette: Ámbar desértico, turquesa brillante, rojo granate, verde esmeralda y azul noche de mercado.
-  lighting_setup: Sol cálido de arena, luces de mercado colgante y destellos mágicos facetados tipo gema.
-  material_texture: Tejidos bordados, latón trabajado, piedra caliza, polvo de viaje y cristal encantado.
+  aesthetic: Aventura ornamental cálida, magia joya, tensión comercio-autoridad y fantasía móvil como saturación decorativa.
+  form_and_line: Ornamento arabesco dinámico, verticales laberínticas abstractas, curvas itinerantes y lectura épica por capas.
+  color_palette: Ámbar cálido, turquesa brillante, rojo granate, verde esmeralda y azul noche ornamental.
+  lighting_setup: Sol cálido, luces colgantes abstractas y destellos mágicos facetados tipo gema.
+  material_texture: Tejidos bordados, latón trabajado, piedra caliza, polvo cálido y cristal encantado.
   render_quality: Fantasía saturada de aventura móvil con riqueza decorativa y claridad narrativa de expedición.
-  spatial_distortion: Profundidad por avenida de bazar y horizonte de dunas, con verticalidad de dungeon monumental.
+  spatial_distortion: Profundidad por capas ornamentales, verticalidad laberíntica, diagonales de viaje y escala fabulística.
   atmosphere: Colorida, expansiva y enérgica, de descubrimiento continuo.
-  key_features: Bazar vivo, caravanas, torres-laberinto, magia gema y conflicto comercio-autoridad.
+  key_features: Arabescos dinámicos, gemas facetadas, ámbar-turquesa, verticalidad laberíntica y tensión comercio-autoridad.
   creative_brief: >-
-    Construye una gramática labyrinth-caravan reusable donde densidad de mercado,
-    cromática cálida y aventura de ruta articulen un mundo de fábula comercial
-    y política.
+    Construye una gramática labyrinth-caravan reusable donde ornamentación,
+    cromática cálida y magia gema articulen fábula comercial y política sin
+    exigir locación, transporte, ruta, bioma o arquitectura narrativa específica.
 avoidRules:
   - realistic
   - 3d render

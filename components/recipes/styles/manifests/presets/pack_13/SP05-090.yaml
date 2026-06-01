@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Soft-eyed melodramatic anime language with visual-novel sentimentality, domestic-memory emphasis, and bittersweet emotional resonance
+  aesthetic: Soft-eyed melodramatic anime language with visual-novel sentimentality, memory emphasis, and bittersweet emotional resonance
   form_and_line: Rounded tender contours, large eye-emotion focus, gentle hand-gesture acting, and close relational framing with minimal kinetic aggression
   color_palette: Warm cream and peach neutrals, cherry-blossom pink accents, soft dusk violets, and muted nostalgia-washed highlights
-  lighting_setup: Diffuse memory-like glow, soft interior practical warmth, gentle backlight halos, and low-contrast shadow treatment for emotional softness
-  material_texture: Home textiles, polished wood traces, delicate floral particulate overlays, and slightly hazed atmosphere suggestive of recollection
+  lighting_setup: Diffuse memory-like glow, soft practical warmth, gentle backlight halos, and low-contrast shadow treatment for emotional softness
+  material_texture: Soft textiles, polished warm traces, delicate floral particulate overlays, and slightly hazed atmosphere suggestive of recollection
   render_quality: Tearful high-clarity drama render with refined softness, expressive close-up fidelity, and cohesive sentimental grading
   spatial_distortion: Intimate close-to-medium framing with shallow depth and mild dreamy softness around emotional focal points
   atmosphere: Tender, nostalgic, sorrowful, and affectionate
-  key_features: Soft-focus emotional closeups, memory-coded lighting, domestic nostalgia props, and blossom-like ephemeral accent motifs
+  key_features: Soft-focus emotional closeups, memory-coded lighting, nostalgia cues, and blossom-like ephemeral accent motifs
   creative_brief: >-
-    Preserve soft-eyed melodrama grammar as a reusable style system:
-    memory-washed lighting, intimate emotion-first framing, and bittersweet
-    domestic tenderness should remain consistent across subjects.
+    Use the title as a style anchor for soft-eyed melodrama. Preserve
+    memory-washed lighting, emotion-first framing, and bittersweet tenderness
+    without requiring domestic props or fixed romance scene.
 avoidRules:
   - realistic
   - 3d render

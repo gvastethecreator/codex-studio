@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
 visualDna:
-  aesthetic: Observatory embedded in an organ garden of living sensory structures.
-  form_and_line: Dome observatory, organic petals, and ribbed growth platforms.
+  aesthetic: Organ-garden biopunk observation style made of living sensory structures.
+  form_and_line: Dome observatory forms, organic petals, ribbed growth platforms, and sensory stalk arrays.
   color_palette: Soft rose, algae green, and pale ivory.
   lighting_setup: Celestial moonlight mixed with internal bioglow.
   material_texture: Living membranes, polished lens glass, and soft organic ribs.
   render_quality: Surreal but readable biotech concept art.
-  spatial_distortion: Dome-centered observatory with layered organ gardens.
+  spatial_distortion: Dome-centered observation composition with layered organ-garden depth.
   atmosphere: Awe, measurement, and organic wonder.
-  key_features: Organ blooms, sensor domes, and growth benches.
+  key_features: Organ blooms, sensor domes, growth-bench motifs, and living sensory membranes.
   creative_brief: >-
     Preserve organ garden-observatory grammar as a reusable style system:
     sensory-organ astronomical instrumentation, petaled growth observatories,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, gore, horror, neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-114.webp }
 attributes:
   negativePrompt: photoreal, gore, horror, neon, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-biopunk,
+    categoryName: 3. Corepunk — Biopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, biopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

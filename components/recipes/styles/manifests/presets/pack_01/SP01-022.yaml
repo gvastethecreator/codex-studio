@@ -17,11 +17,11 @@ visualDna:
   color_palette: High contrast, cheap flash
   lighting_setup: Direct flash
   material_texture: Grainy
-  render_quality: Party photo, candid
+  render_quality: Casual flash snapshot
   spatial_distortion: Chromatic aberration
   atmosphere: Fun, cheap
   key_features: Flash falloff
-  creative_brief: 'The frame that cost three dollars and captured a thousand-dollar night: flash bleaching faces into polar proximity, corners softening into the blur of a room barely remembered. Chromatic fringe rings each highlight like a cheap halo. Evidence that the best photographs were never about the glass they passed through.'
+  creative_brief: 'Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable camera, immediate and unpolished, without forcing faces, rooms, or party context.'
 avoidRules:
   - illustration
   - painting

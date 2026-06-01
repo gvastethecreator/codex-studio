@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-056
 packId: pack_05
-name: Geometric Neon Rescue
+name: Geometric Ignition Rescue Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Sharp geometry, flat-shaded flames, pastel neon chaos, heroic emergency response, triangle-mouth fire trucks, rescue-burning souls, mechanical spirit ignition, angular hero posing
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Heroic ignition through sharp geometry, flat-shaded flame language, pastel-neon urgency, and clean angular optimism.
+  form_and_line: Triangular contour rhythm, blocky urgent silhouettes, explosive straight vectors, hard graphic cuts, and heroic angular posing.
+  color_palette: Hot magenta, cyan flame edges, lemon yellow, coral orange, black graphic anchors, and clean white highlights.
+  lighting_setup: Flat flame glow, hard cel highlights, color-block rim light, geometric bloom, and crisp emergency-heat contrast.
+  material_texture: Smooth enamel, clean graphic smoke, matte panels, stylized heat shimmer, and polished high-chroma surfaces.
+  render_quality: Premium hypergraphic anime finish with perfect shape readability, bright vector energy, and controlled chaos.
+  spatial_distortion: Triangle-led perspective, explosive foreshortening, angular depth slices, and speed-grid compression around action.
   atmosphere: Hyper, triumphant, chaotic, spirited
-  key_features: Machinery-first worldbuilding, tech-obsessed environmental design, interface overlay aesthetics, gear-porn visual language
-  creative_brief: Triangles catch fire and rectangles scream toward danger with impossible courage. A fire truck made of perfect angles cuts through chaos like a theorem proving itself against entropy. Heroism here is geometric, clean-lined, and painted in the palette of a fever dream.
+  key_features: Triangular heat shapes, urgent momentum, pastel-neon heat, heroic geometry, and clean chaotic color blocking.
+  creative_brief: >-
+    Apply geometric ignition rescue as a reusable style treatment: make any
+    subject feel urgent, brave, hot, and shape-driven while staying abstract,
+    portable, and detached from fixed responders, transport forms, locations, or
+    literal emergency events.
 avoidRules:
   - realistic
   - 3d render

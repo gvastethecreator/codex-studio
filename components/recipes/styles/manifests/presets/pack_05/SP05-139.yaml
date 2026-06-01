@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Wall-top military survival, giant flesh threat, vertical maneuver gear, humanity under siege, dust-cloud dread, desperate tactical sacrifice, city-scale terror
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Wall rupture desperation, with colossal scale terror, militarized pressure, dust-cloud dread, and tactical sacrifice.
+  form_and_line: Tether-vector diagonals, severe regimented silhouettes, rupture cracks, falling-depth lines, and panic-sharp contours.
+  color_palette: Dust brown, blood red, bone beige, regiment green, smoke gray, and cold sky blue.
+  lighting_setup: Breached daylight shafts, dust-filtered backlight, hard emergency rims, and tragic silhouette contrast.
+  material_texture: Cracked stone grain, cable sheen, smoke dust, worn fabric, and harsh cel shadow texture.
+  render_quality: Premium modern survival-anime finish with scale clarity, grim motion mechanics, and tragedy-heavy detail.
+  spatial_distortion: Vertical drops, looming mass pressure, walllike compression, and depth that makes distance frightening.
   atmosphere: Desperate, colossal, militarized, tragic
-  key_features: Extreme scale contrast, maneuver-gear lines, breached-wall debris, regiment silhouettes, panic-charged perspective
-  creative_brief: Walls are not protection but the silhouette of the cage humanity drew around itself, and soldiers swing on wires through dust that tastes like old terror. Each flight between rooftops is a gamble that the next landing point still exists. Scale tips cruelly — the giant is always larger than hope and the fall always longer than courage.
+  key_features: Colossal scale, rupture dust, vertical terror, regimented desperation, tethered motion.
+  creative_brief: >-
+    Apply desperate scale pressure to any prompt: use vertical drops, dust
+    rupture, regimented silhouettes, and looming mass contrast without requiring
+    fortifications, troops, traversal equipment, rooftops, or fixed enemies.
 avoidRules:
   - realistic
   - 3d render

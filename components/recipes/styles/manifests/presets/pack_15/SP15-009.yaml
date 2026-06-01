@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Arid-region solarpunk oasis built around elegant desalination ecology.
-  form_and_line: Terraced basins, thin solar sails, and adaptive shade ribs.
+  aesthetic: Arid-region solarpunk built around elegant water-production, shade adaptation, and oasis-like resilience.
+  form_and_line: Terraced basin rhythm, thin solar-sail planes, and adaptive shade ribs.
   color_palette: Sand gold, jade irrigation green, and clear cobalt accents.
   lighting_setup: High desert sun softened by textile canopies and mist diffusion.
   material_texture: Mineral concrete, woven shade membranes, and wet salt crystals.
   render_quality: High-fidelity environmental concept art with clean engineering readability.
-  spatial_distortion: Cascading basin perspective from intake towers toward community gardens.
+  spatial_distortion: Cascading basin perspective from intake-like verticals toward productive oasis depth.
   atmosphere: Resource intelligence, relief, and hopeful climatic resilience.
-  key_features: Desal towers, brine-art channels, productive oasis terraces.
+  key_features: Desalination-tower motifs, brine-art channels, productive oasis-terrace rhythm.
   creative_brief: >-
     Preserve desert-bloom desalinatory grammar as a reusable style system:
     arid water-production elegance, shade-adaptive public infrastructure, and
-    oasis-scale resilience cues should remain coherent across subjects.
+    oasis-scale resilience cues should remain coherent across subjects without
+    requiring desert, towers, gardens, or a literal desalinatory.
 avoidRules: [photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-009.webp }
 attributes:
   negativePrompt: photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

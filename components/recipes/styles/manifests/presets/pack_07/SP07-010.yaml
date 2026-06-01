@@ -20,10 +20,10 @@ visualDna:
   render_quality: Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta legibilidad.
   spatial_distortion: Continuidad axial suave, sin quiebres abruptos, con percepción de flotación funcional.
   atmosphere: Controlada, avanzada, serena y ligeramente clínica.
-  key_features: Geometría cornerless, iluminación sistémica integrada, mobiliario fusión-carcasa y señalética mínima reactiva.
+  key_features: Geometría cornerless, iluminación sistémica integrada, fusión carcasa-interfaz y señalética mínima reactiva.
   creative_brief: >-
     Formula una gramática futurista transferible donde continuidad de carcasa,
-    luz adaptativa y ergonomía post-fricción sean innegociables. Cada sujeto
+    luz adaptativa y ergonomía post-fricción sean innegociables. Cada input
     debe integrarse como extensión del sistema, no como objeto insertado.
 avoidRules:
   - old

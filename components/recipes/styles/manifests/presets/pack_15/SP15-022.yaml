@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Art-deco luxury fused with industrial power and metropolitan ceremony.
-  form_and_line: Chevron ribs, stepped vaults, and streamlined elevator cores.
+  aesthetic: Art-deco luxury fused with industrial power and ceremonial ambition.
+  form_and_line: Chevron ribs, stepped vault silhouettes, streamlined cores, and fan geometry.
   color_palette: Black lacquer, brass gold, and emerald accents.
-  lighting_setup: Chandelier shafts and uplighting along geometric relief walls.
-  material_texture: Polished brass, marble, velvet insets, and etched glass.
+  lighting_setup: Chandelier-like shafts and uplighting across geometric relief planes.
+  material_texture: Polished brass, marble veining, velvet insets, and etched glass.
   render_quality: Opulent concept visualization with precise ornamental geometry.
-  spatial_distortion: Grand central atrium perspective with layered balconies and depth.
+  spatial_distortion: Vertical ceremonial depth with layered stepped planes.
   atmosphere: Sophisticated ambition, urbane spectacle, and controlled excess.
-  key_features: Deco turbine murals, golden clockwork lifts, and grand civic dais.
+  key_features: Deco turbine motifs, gilded dynamo rings, emerald inlays, and black-lacquer contrast.
   creative_brief: >-
     Preserve gilded dynamo-atrium grammar as a reusable style language:
     geometric art-deco monumentality, luxury-industrial symbolism, and staged
-    civic spectacle should remain stable across subjects.
+    civic spectacle should remain stable across any subject.
 avoidRules: [photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-022.webp }
 attributes:
   negativePrompt: photoreal, minimal-scandi, rustic-farm, neon-chaos, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-decopunk, categoryName: 9. Corepunk — Decopunk, tags: [solarpunk-dreamscapes-vault, corepunk, decopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-decopunk,
+    categoryName: 9. Corepunk — Decopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, decopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

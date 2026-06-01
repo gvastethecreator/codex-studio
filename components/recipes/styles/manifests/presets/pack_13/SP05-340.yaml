@@ -12,34 +12,31 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Retrato beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.
-  form_and_line: Contorno rico en pestaña, precisión facial refinada y suavidad lineal orientada a pose de alta clase.
+  aesthetic: Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.
+  form_and_line: Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta clase.
   color_palette: Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach
   lighting_setup: Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.
   material_texture: Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.
   render_quality: Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.
-  spatial_distortion: Beauty-first portrait proportions, swan-neck posing, luxuriant hair framing, noble silhouette emphasis
+  spatial_distortion: Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette emphasis
   atmosphere: Aterciopelada, madura y dramática, de confesión íntima ceremonial.
-  key_features: Retrato lash-heavy, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.
+  key_features: Lash-heavy focal design, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.
   creative_brief: >-
-    Define una gramática reusable de velvet-elegance donde retrato, textura
-    lujosa y tensión romántica sofisticada articulen identidad sin caer en
-    mera decoración superficial.
+    Define una gramática reusable de velvet-elegance donde textura lujosa,
+    presencia refinada y tensión romántica sofisticada articulen identidad sin
+    exigir retrato humano, swan-neck pose, cortinaje o close-up.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - crude action pose
+  - rough sketch dirt
+  - flat office lighting
+  - low-glam casual realism
+  - neon glitch clutter
+  - comic chibi proportions
+  - plastic 3d render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

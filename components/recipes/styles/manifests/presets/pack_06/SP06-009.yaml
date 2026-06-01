@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Monet style impressionism
   form_and_line: Short, broken brushstrokes
   color_palette: Vibrant, unblended optical mixing
-  lighting_setup: Natural outdoor light
+  lighting_setup: Perceptual light built from broken color, luminous edges, and warm-cool vibration
   material_texture: Thick paint dabs
-  render_quality: Artistic, plein air
+  render_quality: Optical impressionist finish with loose local detail and high color vibration
   spatial_distortion: Loss of detail
   atmosphere: Light, airy, fleeting
   key_features: Dabbed paint texture
-  creative_brief: Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving cathedrals and water lilies into shimmering dabs of pure sensation. The air itself feels painted, thick with the pollen of a specific afternoon.
+  creative_brief: Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving hard boundaries into shimmering dabs of pure sensation. The image feels painted from perception rather than description, all atmosphere and optical afterimage.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

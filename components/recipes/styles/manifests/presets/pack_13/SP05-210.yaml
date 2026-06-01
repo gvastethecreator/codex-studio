@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Art-student dorm life, warm sketchbook textures, soft geometric rooms, little daily rituals, low-pressure humor, cozy abstraction in everyday school life
-  form_and_line: Sketchbook-first contouring, simplified geometric room blocking, and playful art-supply silhouette motifs
+  aesthetic: Sunshine-scribble slice language with warm sketchbook texture, soft geometry, little rituals, low-pressure humor, and cozy abstraction
+  form_and_line: Sketchbook-first contouring, simplified geometric blocking, and playful art-supply-like silhouette motifs
   color_palette: Warm paper creams, soft coral and mint accents, gentle graphite grays, and sunwashed dorm yellows
-  lighting_setup: Late-afternoon dorm sunlight, warm desk-lamp pockets, and low-contrast ambient interior wrap
-  material_texture: Pencil grain, paper stacks, fabric futon surfaces, poster tape edges, and tabletop art-supply wear
+  lighting_setup: Late-afternoon sunlight, warm lamp pockets, and low-contrast ambient wrap
+  material_texture: Pencil grain, paper stacks, soft fabric surfaces, tape edges, and tabletop wear
   render_quality: Relaxed art-dorm rendering with abstracted comfort geometry and handmade sketch warmth
   spatial_distortion: Mild geometric flattening that supports cozy visual abstraction
   atmosphere: Sunny, crafty, relaxed, cute
-  key_features: Sketchbook props, dorm-room geometry, art-supplies clutter, soft comedic staging, warm pastel room light
+  key_features: Sketchbook tactility, soft geometric composition, art-supply clutter logic, soft comedic staging, and warm pastel light
   creative_brief: >-
-    Preserve art-dorm sunshine grammar as a reusable style system: sketchbook
-    tactility, soft geometric interiors, and low-pressure creative ritual tone
-    should remain coherent across subjects.
+    Use the title as a style anchor for art-dorm sunshine. Keep sketchbook
+    tactility, soft geometry, and low-pressure creative ritual tone without
+    requiring dorm rooms, school life, or art supplies.
 avoidRules:
   - realistic
   - 3d render

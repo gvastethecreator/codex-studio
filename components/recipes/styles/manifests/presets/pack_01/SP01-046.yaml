@@ -12,7 +12,7 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Urban candid moment
+  aesthetic: Documentary candid moment
   form_and_line: Messy composition
   color_palette: High contrast B&W or gritty color
   lighting_setup: Natural
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Cartier-Bresson, decisive moment
   spatial_distortion: Motion blur
   atmosphere: Real, fleeting
-  key_features: Urban context
-  creative_brief: A breath caught in the city's restless lungs, where shadow carves meaning from pavement and a passing glance becomes permanent. Grain and grit testify not to flaw but to witness, the frame stealing a truth the world was too hurried to notice. The ordinary transforms into elegy at the exact instant it stops moving.
+  key_features: Decisive moment tension
+  creative_brief: 'Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light, grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography immediacy without requiring city, pavement, passerby, or urban context.'
 avoidRules:
   - posed
   - studio

@@ -9,14 +9,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, cartoon, flat',
     style: {
-      aesthetic: 'Dark fantasy in a living library of forbidden magic.',
-      subject_treatment: 'Colossal grimoire summoned as an antagonistic entity.',
-      color_and_tone: 'Violets, aged golds, and ink black.',
-      lighting_and_shadow: 'Runic circles illuminating suspended dust.',
-      texture_and_material: 'Cracked parchment, wet marble and ancient metal.',
-      camera_and_composition: 'Circular arena in three-quarter view with a central pedestal.',
-      atmosphere_and_mood: 'Mystery, solemnity, and supernatural danger.',
-      rendering_and_quality: 'Encounter concept with clear visual hierarchy.',
+      aesthetic:
+        'Boss-arena dark fantasy para action RPG, con lenguaje arcano sistémico y telemetría de mecánicas por símbolo.',
+      subject_treatment:
+        'Entidad grimorio como boss-phase controller y avatar conjurado con weak points visuales explícitos.',
+      color_and_tone:
+        'Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.',
+      lighting_and_shadow:
+        'Círculos rúnicos como UI diegética, iluminación por patrón de ataque y sombras de lectura circular.',
+      texture_and_material:
+        'Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.',
+      camera_and_composition:
+        'Arena radial con centro mecánico, perímetro de evasión y lanes para posicionamiento de party.',
+      atmosphere_and_mood: 'Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.',
+      rendering_and_quality:
+        'Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.',
     },
   },
   {
@@ -25,14 +32,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, urban-neon, lowres',
     style: {
-      aesthetic: 'Mystical sanctuary in resonant quartz desert.',
-      subject_treatment: 'Guardians with prismatic weapons and long capes.',
-      color_and_tone: 'Rose sand, amethyst, and solar white.',
-      lighting_and_shadow: 'Harsh sun with multicolor refractions.',
-      texture_and_material: 'Faceted crystals, fine dust, and carved stone.',
-      camera_and_composition: 'Wide-angle framing with a ceremonial stairway.',
-      atmosphere_and_mood: 'Sacred, silent, and expectant.',
-      rendering_and_quality: 'Environmental art for a premium zone.',
+      aesthetic:
+        'Action-adventure místico de santuario desértico con énfasis en puzzle lumínico y orientación geométrica.',
+      subject_treatment:
+        'Guardian archetypes y player silhouettes diferenciadas por interacción con prismas/runas.',
+      color_and_tone: 'Arena rosada, amatista, blanco solar y acentos espectrales por refracción.',
+      lighting_and_shadow:
+        'Sol duro con rebotes policromáticos usados como mecánica de progresión visual.',
+      texture_and_material:
+        'Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.',
+      camera_and_composition:
+        'Gran angular con escalera ceremonial y líneas guía hacia nodos puzzle.',
+      atmosphere_and_mood: 'Sagrada, silenciosa y analítica, de descubrimiento ritual.',
+      rendering_and_quality:
+        'Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.',
     },
   },
   {
@@ -41,14 +54,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, clean-modern, flat-light',
     style: {
-      aesthetic: 'Ancient ruins fused with colossal technology.',
-      subject_treatment: 'Inactive mechanical colossi as living architecture.',
-      color_and_tone: 'Beige stone, green patina and blue core.',
-      lighting_and_shadow: 'Zenithal rays between cracks and suspended dust.',
-      texture_and_material: 'Basalt, embedded circuits, and dry moss.',
-      camera_and_composition: 'Monumental scale with a minimal human figure.',
-      atmosphere_and_mood: 'Reverence, mystery, and lost grandeur.',
-      rendering_and_quality: 'Matte concept for discovery area.',
+      aesthetic:
+        'Metroidvania tecno-arcano de ruina monumental con foco en exploración, gating y activación de sistemas ancestrales.',
+      subject_treatment:
+        'Colosos mecánicos como arquitectura interactiva por estados (dormant/active/hostile).',
+      color_and_tone:
+        'Piedra beige, pátina verde y núcleos azules para señalizar función tecnológica latente.',
+      lighting_and_shadow:
+        'Rayos cenitales y polvo volumétrico para guiar descubrimiento de paths secretos.',
+      texture_and_material:
+        'Basalto, circuitería incrustada, musgo seco y juntas mecánicas erosionadas.',
+      camera_and_composition:
+        'Escala monumental con anclas humanas mínimas para reforzar lectura de progreso espacial.',
+      atmosphere_and_mood: 'Reverente, misteriosa y arqueotecnológica.',
+      rendering_and_quality:
+        'Matte gameplay concept con landmarks de navegación y jerarquía de interacción ambiental.',
     },
   },
   {
@@ -57,14 +77,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, empty-scene, low-detail',
     style: {
-      aesthetic: 'Fantasy star harbor with a faction-driven economy.',
-      subject_treatment: 'Armed merchants, organic ships, and escort guards.',
-      color_and_tone: 'Solar gold, space purple, and deep blue.',
-      lighting_and_shadow: 'Cosmic backlight and dock beacons.',
-      texture_and_material: 'Nacre-like hulls, burnished metal, and ceremonial fabrics.',
-      camera_and_composition: 'Panoramic view with multiple narrative focal points.',
-      atmosphere_and_mood: 'Fragile diplomacy, ambition, and latent danger.',
-      rendering_and_quality: 'Chapter-cover style with robust worldbuilding.',
+      aesthetic:
+        'Space-trade RPG de puertos estelares con economía faccional, diplomacia armada y logística interestelar.',
+      subject_treatment:
+        'Clases mercantiles/escolta con identidad visual de corporación, sindicato o casa comercial.',
+      color_and_tone:
+        'Oro solar, púrpura espacial y azul profundo para marcar riqueza, neutralidad y conflicto.',
+      lighting_and_shadow:
+        'Contraluz cósmico, balizas de muelle y focos de inspección de carga por zona.',
+      texture_and_material:
+        'Cascos nacarados, metal bruñido, textiles ceremoniales y superficies de carga modular.',
+      camera_and_composition:
+        'Panorámica de hub con rutas de tránsito, puntos de negociación y áreas de disputa visibles.',
+      atmosphere_and_mood: 'Ambiciosa, diplomática y volátil.',
+      rendering_and_quality:
+        'Worldbuilding key art orientado a sistemas de comercio, reputación y control de rutas.',
     },
   },
   {
@@ -73,14 +100,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, grunge, chaotic-fx',
     style: {
-      aesthetic: 'Duel arena in a monastery suspended among clouds.',
-      subject_treatment: 'Disciplined duelists with ritual weapons.',
-      color_and_tone: 'Stone white, sky blue, and restrained gold.',
-      lighting_and_shadow: 'Clean natural light with minimal shadows.',
-      texture_and_material: 'Polished marble, lacquered wood, and ceremonial cloth.',
-      camera_and_composition: 'Central symmetry emphasizing balance.',
-      atmosphere_and_mood: 'Tense serenity and competitive honor.',
-      rendering_and_quality: 'Elegant, readable PvP stage.',
+      aesthetic:
+        'Duel-fighter ceremonial en monasterio celeste, centrado en spacing, timing y neutral game.',
+      subject_treatment:
+        'Duelistas disciplinados con armas rituales y perfiles de alcance claramente diferenciados.',
+      color_and_tone:
+        'Blanco pétreo, azul cielo y oro sobrio para claridad de escenario y foco en combatientes.',
+      lighting_and_shadow:
+        'Luz natural limpia con sombra contenida para preservar lectura de animación frame a frame.',
+      texture_and_material:
+        'Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.',
+      camera_and_composition:
+        'Simetría central de arena con límites claros, zonas de presión y reset neutral.',
+      atmosphere_and_mood: 'Serena, tensa y honorable.',
+      rendering_and_quality:
+        'PvP stage elegante con legibilidad de hitbox, distancia y estados de ventaja.',
     },
   },
   {
@@ -89,14 +123,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
     style: {
-      aesthetic: 'Elegant infiltration in a palace of illusory mirrors.',
-      subject_treatment: 'Spies in ceremonial attire with discreet gadgets.',
-      color_and_tone: 'Soft gold, night blue, and royal purple.',
-      lighting_and_shadow: 'Refracted chandeliers across multiple planes.',
-      texture_and_material: 'Crystal, silk, marble, and polished metal.',
-      camera_and_composition: 'Mirrored corridors with hidden routes.',
-      atmosphere_and_mood: 'Glamour, deception, and social tension.',
-      rendering_and_quality: 'Highly sophisticated stealth scene.',
+      aesthetic:
+        'Social-stealth de gala en palacio ilusorio, orientado a engaño, acceso por estatus y fuga limpia.',
+      subject_treatment:
+        'Espías ceremoniales con gadgets discretos y lectura de identidad por etiqueta/facción.',
+      color_and_tone:
+        'Oro suave, azul nocturno y púrpura real para codificar zonas de prestigio y riesgo.',
+      lighting_and_shadow:
+        'Candelabros refractados en múltiples planos para crear coberturas y falsos positivos visuales.',
+      texture_and_material:
+        'Cristal facetado, seda de alto rango, mármol pulido y metal de ornamento funcional.',
+      camera_and_composition:
+        'Corredores espejados con rutas ocultas, nodos de vigilancia y puntos de extracción.',
+      atmosphere_and_mood: 'Glamorosa, engañosa y socialmente tensa.',
+      rendering_and_quality:
+        'Stealth-playground de alta sofisticación con legibilidad de patrullas, cobertura y acceso.',
     },
   },
   {
@@ -105,14 +146,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, sci-fi-neon, lowres',
     style: {
-      aesthetic: 'Mystical swamp with ritual combat circles.',
-      subject_treatment: 'Clan witches and summoned spirits.',
-      color_and_tone: 'Dark green, amber, and misty violet.',
-      lighting_and_shadow: 'Magical luminescence in dense fog.',
-      texture_and_material: 'Murky water, roots, and wet stone.',
-      camera_and_composition: 'Circular clearings connected by walkways.',
-      atmosphere_and_mood: 'Sorcery, danger, and theatrical flair.',
-      rendering_and_quality: 'Fantasy stage for tactical combat.',
+      aesthetic:
+        'Tactical-fantasy de coven en pantano ritual, orientado a zonas de control, invocación y deny de terreno.',
+      subject_treatment:
+        'Brujas de clan y espíritus invocados con silueta clara por escuela mágica.',
+      color_and_tone:
+        'Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.',
+      lighting_and_shadow:
+        'Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.',
+      texture_and_material: 'Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.',
+      camera_and_composition:
+        'Claros circulares conectados por pasarelas con choke-points tácticos.',
+      atmosphere_and_mood: 'Arcana, peligrosa y teatralmente agresiva.',
+      rendering_and_quality:
+        'Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.',
     },
   },
   {
@@ -121,14 +168,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, combat-chaos, murky',
     style: {
-      aesthetic: 'Palatial gardens for rotation-and-light puzzles.',
-      subject_treatment: 'Living architecture functioning as a level mechanism.',
-      color_and_tone: 'Jade green, orchid pink, and light marble.',
-      lighting_and_shadow: 'Sunlight guided by moving mirrors.',
-      texture_and_material: 'Petals, polished stone, and fine bronze.',
-      camera_and_composition: 'Geometric paths with clear visual goals.',
-      atmosphere_and_mood: 'Serene beauty and intellectual challenge.',
-      rendering_and_quality: 'Highly readable puzzle environment.',
+      aesthetic:
+        'Puzzle-garden palaciego de luz y rotación, orientado a cadenas de activación y lectura espacial fina.',
+      subject_treatment: 'Arquitectura viva como mecanismo de nivel con feedback claro por estado.',
+      color_and_tone:
+        'Verde jade, rosa orquídea y mármol claro para navegación serena y foco mecánico.',
+      lighting_and_shadow:
+        'Luz solar redirigida por espejos móviles para progresión y desbloqueo de rutas.',
+      texture_and_material:
+        'Pétalos, piedra pulida, bronce fino y superficies reflectantes calibrables.',
+      camera_and_composition:
+        'Trazado geométrico con metas visuales explícitas y nodos puzzle encadenados.',
+      atmosphere_and_mood: 'Serena, refinada y cognitivamente desafiante.',
+      rendering_and_quality:
+        'Puzzle environment clarity-first con pistas visuales robustas y mínima ambigüedad.',
     },
   },
   {
@@ -137,14 +190,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, snow, lowres',
     style: {
-      aesthetic: 'Jade shrine on the edge of an active volcano.',
-      subject_treatment: 'Warrior pilgrims and stone guardians.',
-      color_and_tone: 'Jade green, lava black, and fiery orange.',
-      lighting_and_shadow: 'Magma glow and dense smoke.',
-      texture_and_material: 'Vitrified stone, ritual gold, and ash.',
-      camera_and_composition: 'Ascending path toward the upper temple.',
-      atmosphere_and_mood: 'Devotion, danger, and transcendence.',
-      rendering_and_quality: 'Memorable endgame-zone visual.',
+      aesthetic:
+        'Endgame shrine-run volcánico místico, orientado a ascenso por fases, hazard térmico y combate ritual.',
+      subject_treatment:
+        'Peregrinos guerreros y guardianes pétreos con lectura clara de arquetipo y amenaza.',
+      color_and_tone: 'Verde jade, negro lava y naranja ígneo para jerarquía de riesgo/progreso.',
+      lighting_and_shadow:
+        'Glow de magma con humo denso para telegraph de zonas de daño y ventanas seguras.',
+      texture_and_material: 'Piedra vitrificada, oro ritual, ceniza suspendida y grietas activas.',
+      camera_and_composition:
+        'Ruta ascendente hacia templo superior con checkpoints visuales y cuellos de botella.',
+      atmosphere_and_mood: 'Devocional, peligrosa y trascendente.',
+      rendering_and_quality:
+        'Endgame-zone gameplay art con legibilidad alta de ruta, fase y prioridad táctica.',
     },
   },
   {
@@ -153,14 +211,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt: 'watermark, text, logo, daytime, clutter',
     style: {
-      aesthetic: 'Spiritual archery trials in a nighttime shrine.',
-      subject_treatment: 'Mystical archers with energy arrows.',
-      color_and_tone: 'Moon blue, silver, and soft violet.',
-      lighting_and_shadow: 'Moonlight and paper lanterns.',
-      texture_and_material: 'Polished wood, wet stone, and silk.',
-      camera_and_composition: 'Firing alley with ritual targets.',
-      atmosphere_and_mood: 'Focus, calm, and precision.',
-      rendering_and_quality: 'Challenge stage with impeccable readability.',
+      aesthetic:
+        'Precision-trial de arquería mística en santuario nocturno, orientado a timing, trayectoria y control respiratorio.',
+      subject_treatment:
+        'Arqueros espirituales con flechas de energía y lectura clara de estilo técnico.',
+      color_and_tone: 'Azul lunar, plata y violeta tenue para concentración visual sin ruido.',
+      lighting_and_shadow:
+        'Luz de luna y faroles de papel para contrastes suaves y foco de objetivo.',
+      texture_and_material: 'Madera pulida, piedra húmeda, seda ritual y marcas de práctica.',
+      camera_and_composition:
+        'Calle de tiro con dianas rituales por distancia y dificultad progresiva.',
+      atmosphere_and_mood: 'Concentrada, calmada y extremadamente precisa.',
+      rendering_and_quality:
+        'Challenge-stage gameplay art con legibilidad impecable de trayectoria, impacto y scoring.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Mythic-duel spectacle style with ceremonial weapon iconography, noble dramatic scale, and reality-layer rupture effects
-  form_and_line: Heroic duel silhouettes, weapon-field repetition patterns, calligraphic strike vectors, and emblematic stance framing
+  aesthetic: Mythic spectacle style with ceremonial iconography, noble dramatic scale, and reality-layer rupture effects
+  form_and_line: Heroic silhouette opposition, repeated luminous motifs, calligraphic strike vectors, and emblematic stance framing
   color_palette: Regal gold-crimson contrasts over deep navy-charcoal grounds, with luminous arc accents and ceremonial highlight bands
-  lighting_setup: Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and duel-focus spotlight behavior
-  material_texture: Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature weapons
+  lighting_setup: Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and operatic spotlight behavior
+  material_texture: Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature motifs
   render_quality: Grand-scale fantasy-action rendering with high symbolic clarity and premium spectacle polish
-  spatial_distortion: Reality-fold perspective pulls and horizon warping around weapon manifestations to emphasize mythic magnitude
+  spatial_distortion: Reality-fold perspective pulls and horizon warping around repeated symbolic manifestations to emphasize mythic magnitude
   atmosphere: Grandiose, operatic, solemn, epic, fated
-  key_features: Weapon-field iconography, ceremonial duel staging, reality-layer rupture cues, regal color authority
+  key_features: Symbol-field iconography, ceremonial opposition, reality-layer rupture cues, regal color authority
   creative_brief: >-
-    Preserve identity through mythic weapon symbolism and ceremonial duel
-    framing; reality-warp spectacle should support an operatic visual grammar
-    beyond specific lore references.
+    Preserve identity through mythic symbolism and ceremonial opposition;
+    reality-warp spectacle should support an operatic visual grammar beyond
+    specific lore references or combat setups.
 avoidRules:
   - realistic
   - 3d render

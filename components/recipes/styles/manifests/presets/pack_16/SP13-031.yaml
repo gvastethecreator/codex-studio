@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-031
 packId: pack_16
-name: Haunted School Corridor
+name: Institutional Liminal Dread Style
 category: 5. Horror
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Institutional liminal horror centered on everyday spaces becoming psychologically unstable through subtle visual dissonance.
-  form_and_line: Slightly misregistered contours, straight architectural lines that warp near the vanishing point, and peripheral figure suggestions.
+  aesthetic: Institutional liminal horror centered on everyday order becoming psychologically unstable through subtle visual dissonance.
+  form_and_line: Slightly misregistered contours, straight bureaucratic lines that warp near the vanishing point, and peripheral figure suggestions.
   color_palette: Fluorescent sick-green, chalk gray, nicotine beige, and restrained coagulated-red warning accents.
   lighting_setup: Intermittent overhead flicker pattern with alternating dead zones that create uncertain visibility cadence.
-  material_texture: Damp paint bloom, worn vinyl flooring sheen, stained acoustic panels, and particulate haze.
+  material_texture: Damp paint bloom, worn synthetic sheen, stained panel surfaces, and particulate haze.
   render_quality: Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.
-  spatial_distortion: Corridor tunnel perspective stretched beyond comfort, with micro-tilt and depth drag near terminal doors.
+  spatial_distortion: Tunnel-like institutional perspective stretched beyond comfort, with micro-tilt and depth drag near thresholds.
   atmosphere: Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.
-  key_features: Repeating lockers or doors, uncertain reflections, failed flicker intervals, and threshold interruptions.
-  creative_brief: Create a reusable school-liminal horror grammar for any subject by combining bureaucratic geometry, flicker rhythm, and barely-perceived distortions.
+  key_features: Repeating institutional modules, uncertain reflections, failed flicker intervals, and threshold interruptions.
+  creative_brief: >-
+    Create a reusable institutional-liminal-dread grammar for any subject:
+    bureaucratic geometry, flicker rhythm, barely perceived distortions, and
+    social emptiness without imposing schools, corridors, lockers, doors,
+    classrooms, or specific buildings.
 avoidRules:
   - photoreal
   - comedy

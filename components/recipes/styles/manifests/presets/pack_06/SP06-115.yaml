@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-115
 packId: pack_06
-name: Horror Survival Safe Room
+name: Survival Horror Save-Room Lighting
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,21 +12,24 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Overall visual style direction in one precise sentence.
-  subject_treatment: How the subject is shaped, posed, rendered, or stylized.
-  color_and_tone: Palette, contrast, grading, and tonal range.
-  lighting_and_shadow: Light source, direction, softness, shadow behavior.
-  texture_and_material: Surface detail, material feel, grain, fabric, skin, ink, pixels.
-  camera_and_composition: Lens, framing, perspective, crop, depth of field, layout.
-  atmosphere_and_mood: Emotional tone, scene energy, ambient quality.
-  rendering_and_quality: Output polish, fidelity, medium-specific finish.
+  aesthetic: Survival-horror save-room style with static-camera dread, low-resource warmth, and PS2-era atmospheric grime.
+  subject_treatment: Make any subject feel temporarily protected yet unsafe through restrained staging and fragile focal calm.
+  color_and_tone: Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low values.
+  lighting_and_shadow: Weak lamp pools, vignetted corners, deep occlusion, and suspenseful off-frame darkness.
+  texture_and_material: Low-poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise.
+  camera_and_composition: Fixed-camera composition, slightly awkward perspective, negative-space tension, and deliberate stillness.
+  atmosphere_and_mood: Claustrophobic, quiet, uneasy mood without requiring rooms, typewriters, doors, monsters, or gore.
+  rendering_and_quality: Retro survival-horror finish, controlled darkness, readable focal area, no UI or readable text.
 avoidRules:
   - watermark
   - text
+  - literal room requirement
+  - monster requirement
+  - gore
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-115.webp
 attributes:
-  negativePrompt: watermark, text
+  negativePrompt: watermark, text, literal room requirement, monster requirement, gore
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -40,4 +43,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

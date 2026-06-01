@@ -10,23 +10,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ornate, cluttered',
     style: {
       aesthetic:
-        'Functional modernist room, form follows function, workshop aesthetic, design-for-all',
+        'Modernismo Bauhaus funcional, claridad industrial y belleza derivada de función explícita.',
       form_and_line:
-        'Geometric shapes, pure circle and square, tubular arcs, flat planes intersect, grid logic',
+        'Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de lectura didáctica.',
       color_palette:
-        'Primary colors + Black/White, Clean Red, Canary Yellow, Cobalt Blue, Warm Grey',
+        'Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso jerárquico.',
       lighting_setup:
-        'Even, functional, task-focused spots, floating globe pendants, industrial-grade clarity',
+        'Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización superflua.',
       material_texture:
-        'Steel, glass, leather, bent plywood, canvas webbing, linoleum, chrome plate',
+        'Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linóleo de acabado honesto.',
       render_quality:
-        'Design classic, rational, German-modern clarity, timeless efficiency, honest construction',
-      spatial_distortion: 'None',
-      atmosphere: 'Smart, artistic, clean, workshop-fresh, purpose-driven, intellectual calm',
+        'Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual atemporal.',
+      spatial_distortion:
+        'Neutralidad geométrica con énfasis en orden proporcional e interacción de formas básicas.',
+      atmosphere: 'Intelectual, limpio, pragmático y optimista.',
       key_features:
-        'Tubular steel, primary color accents, cantilever chairs, isometric clarity, interlocking forms',
+        'Cantilever visual, acentos cromáticos controlados, estructura visible y gramática geométrica elemental.',
       creative_brief:
-        'Primary colors assert themselves against white space with the confidence of manifestos made visible. Steel arcs through air with industrial grace, every tube and plane answering to function alone. Beauty emerges not from decoration but from the honesty of things being exactly what they are.',
+        'Formula una gramática Bauhaus transferible donde función, estructura y geometría primaria ordenen todo el lenguaje visual. El estilo debe comunicar claridad productiva sin recurrir a ornamento narrativo.',
     },
   },
   {
@@ -36,24 +37,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, cold, metal, plastic',
     style: {
       aesthetic:
-        'Scandinavian hygge interior style emphasizing thermal comfort minimalism, soft domestic intimacy, and restorative calm',
+        'Higiene visual nórdica orientada al confort térmico, intimidad suave y bienestar cotidiano sin ruido formal.',
       form_and_line:
-        'Low-profile furniture rhythm, rounded edge gentleness, textile-heavy layering, and uncluttered ergonomic composition',
+        'Volúmenes bajos, cantos redondeados, capas textiles continuas y ergonomía despejada de circulación limpia.',
       color_palette:
-        'Soft whites and creams with pale timber tones, muted sage-rose accents, and low-contrast warmth harmonics',
+        'Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento.',
       lighting_setup:
-        'Candle-practical glow networks, diffuse window softness, warm pendants, and evening comfort luminance balance',
+        'Difusión suave, red de prácticos cálidos, puntos de baja intensidad y balance nocturno envolvente.',
       material_texture:
-        'Knit wool tactility, sheepskin softness, matte ceramics, oiled light wood grain, and brushed natural-fiber surfaces',
+        'Lana tejida, piel suave, cerámica mate, lino cepillado y madera de veta discreta.',
       render_quality:
-        'Clean Nordic editorial finish with cozy readability, restrained detailing, and comfort-first visual hierarchy',
+        'Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmósfera doméstica coherente.',
       spatial_distortion:
-        'Neutral spatial behavior with intimacy built through layered soft materials rather than geometric exaggeration',
-      atmosphere: 'Comforting, quiet, warm, restorative, safe',
+        'Neutralidad geométrica; profundidad construida por superposición blanda de textiles y luminancia cálida.',
+      atmosphere: 'Refugio, calma, seguridad y calidez continua de escala humana.',
       key_features:
-        'Thermal-comfort light logic, soft textile dominance, pale timber calm, uncluttered hygge composition',
+        'Escala baja, capas textiles, madera pálida, iluminación cálida distribuida y ausencia de estridencia visual.',
       creative_brief:
-        'Keep identity centered on comfort architecture: soft luminance, natural textile tactility, and low-contrast Nordic restraint should remain transferable beyond winter-home narratives.',
+        'Asegura transferencia hygge mediante una tríada constante: luz blanda, tactilidad natural y contraste bajo. El estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier narrativa estacional.',
     },
   },
   {
@@ -62,21 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'modern, sleek, metal',
     style: {
-      aesthetic: 'Modern barn interior, rural refinement, whitewashed nostalgia, homestead grace',
+      aesthetic:
+        'Farmhouse contemporáneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.',
       form_and_line:
-        'Shiplap walls, gabled ceilings, apron-front lines, open shelving, X-brace details',
-      color_palette: 'White, Cream, Wood, Galvanized Silver, Soft Linen, Black Iron accent',
-      lighting_setup: 'Bright airy, oversized pendants, gooseneck barn lights, morning window wash',
+        'Listones horizontales, diagonales brace, geometría utilitaria abierta y líneas apron-front suavizadas.',
+      color_palette:
+        'Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.',
+      lighting_setup:
+        'Mañana luminosa aireada, pendentes sobredimensionados y prácticos utilitarios de tono cálido.',
       material_texture:
-        'Distressed wood, linen, chalk-painted furniture, cotton ticking, woven baskets, galvanized metal',
-      render_quality: 'Magnolia farmhouse editorial, family, clean, Chip & Joanna warmth',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Welcoming, soft, home, gathered-around-table, Sunday-morning peace, real-family living',
+        'Madera envejecida, lino lavado, pintura tiza, algodón rayado, fibras trenzadas y metal galvanizado.',
+      render_quality:
+        'Editorial farmhouse limpio con legibilidad doméstica y calidez cotidiana consistente.',
+      spatial_distortion:
+        'Escala estable y amplitud moderada por luz distribuida y geometría utilitaria visible.',
+      atmosphere: 'Acogedor, amable, comunitario y familiar.',
       key_features:
-        'Sliding barn door, shiplap accent wall, farmhouse sink, open shelving, beadboard ceiling',
+        'Listón blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como ornamento.',
       creative_brief:
-        'Shiplap stretches toward vaulted ceilings like Sunday hymns made visible, whitewashed nostalgia bright with fresh coffee light. Distressed surfaces tell gentle lies about age, every scuff a purchased memory. The space wraps around family like a quilt, each rough beam a promise that imperfect things hold together.',
+        'Define una gramática farmhouse transferible sustentada por madera envejecida, blanco cálido y detalle rural funcional. El estilo debe comunicar uso real sin depender de clichés narrativos televisivos.',
     },
   },
   {
@@ -86,24 +91,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cozy, soft, carpet, wallpaper',
     style: {
       aesthetic:
-        'Industrial adaptive-reuse style centered on structural honesty, patinated utility, and refined rawness',
+        'Reutilización industrial sofisticada, con infraestructura expuesta como ornamento principal y pátina funcional controlada.',
       form_and_line:
-        'Exposed load-bearing geometry, truss and conduit rhythm, riveted junction articulation, long-span volumetric framing',
+        'Tramas estructurales repetitivas, cerchas visibles, canalizaciones ortográficas y secuencias de pórticos de gran luz.',
       color_palette:
-        'Brick oxides, concrete neutrals, graphite metals, oxidized copper notes, muted amber warmth',
+        'Óxidos de ladrillo, neutros cementicios, grafito metálico, cobre envejecido y ámbar cálido de apoyo.',
       lighting_setup:
-        'High-aperture daylight shafts with warm practical pools, shadow zoning, and contrast-led volumetric depth',
+        'Entradas cenitales o laterales profundas, contraste medio-alto, zonas de penumbra técnica y prácticos cálidos puntuales.',
       material_texture:
-        'Board-formed concrete, rough masonry grain, weathered steel oxidation, reclaimed timber wear, matte leather accents',
+        'Hormigón encofrado, mampostería rugosa, acero oxidado estabilizado, madera recuperada y cuero mate desgastado.',
       render_quality:
-        'High-fidelity industrial-chic finish balancing grit legibility with editorial polish and material truthfulness',
+        'Acabado industrial-chic con legibilidad tectónica y balance entre crudeza material y curaduría editorial.',
       spatial_distortion:
-        'Perspective stability with scale-forward depth, emphasizing structural rhythm over decorative clutter',
-      atmosphere: 'Grounded, utilitarian, creative, mature, atmospheric',
+        'Profundidad longitudinal marcada por repetición estructural; sin deformación expresiva, sí compresión por capas técnicas.',
+      atmosphere:
+        'Productivo, robusto, creativo y adulto; tensión entre taller y vivienda premium.',
       key_features:
-        'Structure-as-ornament language, patina hierarchy, utility-driven composition, adaptive-reuse material choreography',
+        'Estructura expuesta, uniones francas, capas técnicas visibles, escala productiva y pátina utilitaria como lenguaje, no como set.',
       creative_brief:
-        'Preserve identity through exposed structural systems and patinated material contrast, treating utility elements as primary visual grammar independent of any specific loft narrative.',
+        'Conserva la identidad loft mediante una lógica estructura-instalación explícita: lo técnico debe dominar la composición y la pátina contar uso real. La transferencia debe funcionar sobre cualquier sujeto sin perder la tensión entre crudeza y refinamiento.',
     },
   },
   {
@@ -113,24 +119,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimalist, empty, sterile',
     style: {
       aesthetic:
-        'Bohemian-eclectic style defined by collected layering, botanical softness, and artisanal global texture interplay',
+        'Eclecticismo bohemio de acumulación curada, con densidad táctil, color viajado y ritmo orgánico como estructura visual principal.',
       form_and_line:
-        'Organic asymmetry, draped textile cascades, rounded handcrafted silhouettes, vegetal flow lines, intentionally uneven composition balance',
+        'Asimetría orgánica, cascadas textiles, perfiles artesanales redondeados y composiciones intencionalmente no axiales.',
       color_palette:
-        'Warm earth foundations with turquoise-indigo accents, spice pigments, terracotta anchors, and patterned chroma punctuation',
+        'Base tierra cálida con turquesa/índigo, especias cromáticas, terracota y punctuaciones de patrón saturado.',
       lighting_setup:
-        'Filtered natural dappling with low-intensity ambient practicals, lantern diffusion, and soft shadow overlap',
+        'Luz natural moteada, prácticos bajos tipo farol, difusión cálida y solapamiento suave de sombras.',
       material_texture:
-        'Woven natural fibers, hand-knotted rugs, macramé cords, raw linen folds, carved wood micro-relief, leaf translucency',
+        'Fibras tejidas, alfombras anudadas, macramé, lino crudo, tallas en madera y hojas semitranslúcidas.',
       render_quality:
-        'Richly layered boho editorial finish with tactile density, controlled visual clutter, and cohesive material harmony',
+        'Editorial boho de alta densidad material con clutter controlado y armonía entre piezas heterogéneas.',
       spatial_distortion:
-        'Gentle organic depth drift driven by plants and textiles, avoiding rigid axial symmetry',
-      atmosphere: 'Free-spirited, warm, lived-in, creative, worldly',
+        'Profundidad orgánica por capas irregulares, solapes textiles y asimetría intencional; sin rigidez geométrica.',
+      atmosphere: 'Libre, habitado, cálido, viajero y creativo, con riqueza sensorial continua.',
       key_features:
-        'Layered artifact curation, botanical-textile rhythm, asymmetrical comfort composition, handcrafted surface diversity',
+        'Artesanía acumulada, mezcla de patrones, pulsos orgánicos, textiles superpuestos y baja simetría.',
       creative_brief:
-        'Build the preset around layered artisan materials and botanical flow, keeping eclectic curation and tactile warmth as transferable style anchors rather than a fixed traveler-room vignette.',
+        'Establece una gramática bohemia transferible basada en acumulación artesanal, ritmo orgánico-textil y abundancia asimétrica. Debe sentirse vivido y curado, nunca caótico ni dependiente de una escena puntual.',
     },
   },
   {
@@ -140,24 +146,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'empty, white, minimal',
     style: {
       aesthetic:
-        'Pattern on pattern room, controlled chaos, collected gallery, riotous personality',
+        'Maximalismo curatorial de alta saturación, donde superposición y colección son gramática base.',
       form_and_line:
-        'Complex layers, framed overload, busy skirting, curio-shelf density, textile-on-textile',
+        'Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de superficies.',
       color_palette:
-        'Saturated jewel tones, Emerald, Sapphire, Ruby, Amethyst, Peacock Teal, Coral',
+        'Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias controladas.',
       lighting_setup:
-        'Warm lamps everywhere, picture lights, chandelier glitter, sconce pools, dimmer-warm glow',
+        'Red cálida de lámparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.',
       material_texture:
-        'Velvet, wallpaper, rugs, chintz, embroidered silk, gilt frame, cloisonné, book spines',
+        'Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro visible.',
       render_quality:
-        'Eclectic, busy, rich, more-is-more, layered opulence, collected over generations',
-      spatial_distortion: 'None',
-      atmosphere:
-        'Exciting, personal, loud, intoxicating, treasure-gallery, unapologetic abundance',
+        'Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de jerarquía.',
+      spatial_distortion:
+        'Profundidad estable con compresión visual por saturación de objetos y patrones.',
+      atmosphere: 'Efervescente, personal, exuberante y deliberadamente excesiva.',
       key_features:
-        'No empty space, gallery walls floor to ceiling, layered rugs, pattern mixing, objet collections',
+        'Campo galería saturado, mezcla agresiva de patrón, capas textiles y acumulación curatorial.',
       creative_brief:
-        'Pattern collides with pattern in joyful anarchy, every surface a shout against the tyranny of restraint. Collections spill across surfaces like civilizations compressed into objects, each shelf a small museum of personal obsession. The room vibrates at the frequency of too-much, and refuses to apologize.',
+        'Construye una gramática maximalista transferible basada en saturación cromática, densidad curatorial y superposición textil. Debe mantenerse la legibilidad curatorial sin caer en ruido visual indiscriminado.',
     },
   },
   {
@@ -167,21 +173,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'straight lines',
     style: {
       aesthetic:
-        '1900s organic room, Belle Epoque bloom, nature-as-structure, total-art Gesamtkunstwerk',
+        'Art Nouveau orgánico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
       form_and_line:
-        'Whiplash curves, tendril stair rails, floral doorframes, sinuous glass, flowing wrought iron',
-      color_palette: 'Sage, Gold, Wood, Peacock Blue, Lilac, Amber glass, Moss green',
+        'Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.',
+      color_palette: 'Salvia, dorado, azul pavo real, lila, ámbar vítreo y verdes musgo.',
       lighting_setup:
-        'Stained glass light, Tiffany-lamp warmth, lotus-petal sconces, insect-wing glow',
+        'Luz filtrada por vitral, lámparas cálidas tipo Tiffany, apliques pétalo y brillo irisado suave.',
       material_texture:
-        'Carved wood, glass, wrought iron, iridescent favrile glass, patinated bronze, floral marquetry',
-      render_quality: 'Horta decorative flowing turn-of-century, whiplash beauty',
-      spatial_distortion: 'Melting shapes',
-      atmosphere: 'Romantic, nature, soft, enchanted, organic rhythm, floral intoxication',
+        'Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marquetería floral.',
+      render_quality:
+        'Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.',
+      spatial_distortion:
+        'Ligera fluidez morfológica para enfatizar continuidad orgánica sobre rigidez geométrica.',
+      atmosphere: 'Romántica, envolvente, botánica y artesanal.',
       key_features:
-        'Curved wood, floral motifs everywhere, tendril staircase, stained glass skylight, organic lamp forms',
+        'Motivos florales estructurales, curvas tendril, vidrio cromático activo y luminancia orgánica.',
       creative_brief:
-        'Wrought iron grows like vines up the stairwell, tendrils of metal blooming into lamp shades and door handles. Every surface curves away from geometry, the room a garden that learned to speak architecture. Light passes through iris-colored glass, falling on wood carved into the shape of wind.',
+        'Conserva una gramática Art Nouveau transferible donde línea orgánica, ornamento botánico y material artesanal formen un sistema continuo. Debe leerse como estructura viva, no como simple decoración floral aplicada.',
     },
   },
   {
@@ -191,24 +199,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'antique, victorian, industrial',
     style: {
       aesthetic:
-        'Mid-century modern interior style with atomic optimism, sculptural domesticity, and restrained retro sophistication',
+        'Modernismo doméstico de mitad de siglo con optimismo atómico, sofisticación sobria y presencia escultórica habitable.',
       form_and_line:
-        'Organic modern curves, tapered structural elements, floating cabinetry lines, and iconically balanced furniture silhouettes',
+        'Curvas orgánicas contenidas, patas cónicas, volúmenes bajos, módulos horizontales y siluetas icónicas equilibradas.',
       color_palette:
-        'Teak-walnut browns with mustard-olive accents, burnt orange punctuation, and warm neutral support fields',
+        'Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para cohesión.',
       lighting_setup:
-        'Warm ambient lamp pools, period pendant glow, filtered afternoon daylight, and low-contrast hospitality warmth',
+        'Pools cálidos de lámpara, colgantes de época, luz de tarde filtrada y contraste suave de hospitalidad social.',
       material_texture:
-        'Veneered wood grain clarity, tweed and wool tactility, molded plywood smoothness, and light metal detailing',
+        'Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.',
       render_quality:
-        'Editorial retro-modern visualization with clean compositional discipline and materially rich but controlled nostalgia',
+        'Editorial retro contemporáneo con nostalgia controlada, claridad de mobiliario y composición funcional elegante.',
       spatial_distortion:
-        'Stable proportions with gentle curvature emphasis to preserve sculptural furniture readability',
-      atmosphere: 'Warm, stylish, nostalgic, social, composed',
+        'Proporción estable con énfasis en lectura de piezas; profundidad por ritmo modular, no por teatralidad.',
+      atmosphere: 'Acogedor, conversacional, curado y optimista sin exceso decorativo.',
       key_features:
-        'Atomic-modern silhouette language, wood-textile harmony, tapered geometry cadence, retro editorial balance',
+        'Silueta baja, soporte cónico, calidez nogal-teca, acentos atómicos y equilibrio entre función legible y curva suave.',
       creative_brief:
-        'Preserve this preset through iconic mid-century proportion logic and warm material choreography, keeping atomic-era optimism as a transferable mood rather than a fixed period scene.',
+        'Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input, sin caer en pastiche vintage.',
     },
   },
   {
@@ -218,21 +226,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, beige',
     style: {
       aesthetic:
-        '80s postmodern room, Italian radical design, Sottsass irreverence, anti-taste manifesto',
+        'Postmodernismo Memphis radical, lúdico e irreverente, orientado al choque visual deliberado.',
       form_and_line:
-        'Squiggles and triangles, totemic shelves, asymmetrical bookcases, confetti geometry, playful offsets',
+        'Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos provocativos.',
       color_palette:
-        'Pastel + Black/White pattern, Bubblegum Pink, Teal, Traffic Yellow, Vivid Orange',
+        'Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja vivo.',
       lighting_setup:
-        'Bright studio, neon accents, colored bulb glow, gallery-track spots, plastic-filtered light',
-      material_texture: 'Laminate, plastic, terrazzo chip, printed Formica, glossy enamel, rubber',
-      render_quality: 'Playful, weird, retro, radical-postmodern, joyous clash, ironic surface',
-      spatial_distortion: 'Asymmetry',
-      atmosphere: 'Fun, chaotic, art, rebellious, child-like, design manifesto energy',
+        'Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto contraste.',
+      material_texture:
+        'Formica impresa, plástico brillante, esmalte, goma y terrazo en escala juguetona.',
+      render_quality:
+        'Clash postmoderno legible, irónico y energético sin perder estructura formal.',
+      spatial_distortion:
+        'Asimetría intencional con jerarquía por color y geometría de alto impacto.',
+      atmosphere: 'Rebelde, festiva, anti-solemnidad y manifiesto de diseño.',
       key_features:
-        'Bacterial pattern, asymmetrical shelving, squiggle mirror, color-blocked surfaces, totemic plinths',
+        'Patrones bacterianos, squiggles reflectivos, módulos descentrados, bloques cromáticos y formas totemizadas.',
       creative_brief:
-        'Squiggles disrupt the tyranny of the straight line, color blocking declares war on beige conformity. Shelves tilt at impossible angles like the whole room just discovered it has a sense of humor. Design becomes manifesto, every laminate surface a joke told at the expense of seriousness.',
+        'Define una gramática Memphis transferible donde asimetría, patrón gráfico y color confrontativo sean reglas estructurales. Debe conservar ironía y energía manifiesto sin caer en caricatura decorativa superficial.',
     },
   },
   {
@@ -241,19 +252,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'clutter, ornate, pattern, dark',
     style: {
-      aesthetic: 'Clean white open space, airy volume, sculptural emptiness, light as material',
+      aesthetic:
+        'Minimalismo arquitectónico de alta precisión, donde la ausencia programática y la continuidad material construyen lujo silencioso.',
       form_and_line:
-        'Straight horizontal lines, floating planes, silent geometry, invisible junctions',
-      color_palette: 'White, Warm Beige, Cool Grey, Muted Sand, Pale Oak',
+        'Planos ortogonales largos, encuentros sin marco, espesores ocultos, ejes de circulación limpios y piezas flotantes de bajo perfil.',
+      color_palette:
+        'Blanco mineral, marfil cálido, gris piedra frío, arena pálida y roble desaturado como único acento térmico.',
       lighting_setup:
-        'Soft diffuse daylight, shadowless ambient, luminous ceiling, hidden cove glow',
-      material_texture: 'Smooth plaster, matte paint, honed stone, micro-cement, tactile stucco',
-      render_quality: 'Architectural Digest design-editorial clean, aspirational perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Calm, spacious, expensive, meditative, weightless, curated stillness',
-      key_features: 'Empty space, hidden storage, frameless glazing, floating staircase',
+        'Luz diurna difusa de gran apertura, rebotes uniformes sin hotspots, cove lighting perimetral oculto y sombras extremadamente blandas.',
+      material_texture:
+        'Yeso fino continuo, microcemento mate, piedra apomazada de poro cerrado y madera cepillada casi sin veta visible.',
+      render_quality:
+        'Visualización editorial ultra-clean con énfasis en proporción, borde, alineación y disciplina de vacío.',
+      spatial_distortion:
+        'Perspectiva neutra y estable, con profundidad construida por capas tonales suaves en lugar de dramatización angular.',
+      atmosphere:
+        'Serenidad curada, control acústico implícito, claridad mental, y sensación de lujo por contención.',
+      key_features:
+        'Vacío activo, alineación invisible, planos enrasados, módulos suspendidos y continuidad material sin lectura de escena obligatoria.',
       creative_brief:
-        'Silence acquires geometry, absence becoming presence through the discipline of subtraction. Light pools and recedes across seamless planes, each surface a meditation on what was removed. The frame exhales stillness, every void as intentional as the forms that define it.',
+        'Preserva una gramática minimalista transferible basada en sustracción extrema, continuidad constructiva y jerarquía por vacío. Cualquier input debe absorberse en planos silenciosos, luz uniforme y detalle oculto de alta precisión sin quedar atado a arquitectura literal.',
     },
   },
   {
@@ -263,24 +281,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern',
     style: {
       aesthetic:
-        'Tudor-revival residential style with half-timber heritage expression, romantic asymmetry, and hearth-centered historic warmth',
+        'Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico protector.',
       form_and_line:
-        'Exposed timber grid overlays, steep gable silhouettes, irregular ridge rhythm, leaded-diamond fenestration, and chimney vertical anchors',
+        'Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería plomada romboidal.',
       color_palette:
-        'Dark stained wood against limewash whites, terracotta earth notes, moss-lichen greens, and warm ochre weathering tones',
+        'Madera oscura sobre cal blanquecina, tierras terracota, verdes musgo y ocre envejecido.',
       lighting_setup:
-        'Soft overcast daylight with warm interior hearth glow, leaded-window diffusion, and gentle evening candle accents',
+        'Cielo difuso, brillo cálido interior de hogar y filtrado suave por vidrios emplomados.',
       material_texture:
-        'Aged timber grain, lime plaster chalkiness, handmade brick variation, leaded glass facets, and weathered roof textures',
-      render_quality:
-        'Heritage-rich visualization balancing storybook softness with authentic historical construction detail',
+        'Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina climática.',
+      render_quality: 'Patrimonio doméstico de detalle constructivo sólido y atmósfera de arraigo.',
       spatial_distortion:
-        'Mild picturesque irregularity in beam and ridge alignment to reinforce handcrafted pre-modern character',
-      atmosphere: 'Rooted, warm, nostalgic, protective, intimate',
+        'Irregularidad pintoresca leve en cumbreras y entramados para reforzar artesanía premoderna.',
+      atmosphere: 'Íntima, protectora, nostálgica y terrenal.',
       key_features:
-        'Half-timber façade grammar, steep gable profile, leaded window rhythm, chimney-hearth vertical identity',
+        'Half-timber contrastado, gable pronunciado, vidrio emplomado y núcleo térmico de hogar.',
       creative_brief:
-        'Keep this preset defined by timber-lime contrast, picturesque asymmetry, and hearth-driven warmth, preserving Tudor revival language beyond any specific cottage narrative.',
+        'Conserva una gramática Tudor transferible basada en contraste madera-cal, asimetría pintoresca y calor de hogar. Debe transmitir continuidad histórica sin quedar reducida a una postal de cottage.',
     },
   },
   {
@@ -290,24 +307,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'box, symmetrical',
     style: {
       aesthetic:
-        'Deconstructivist architectural style focused on controlled instability, anti-orthogonal form language, and sculptural kinetic tension',
+        'Deconstructivismo de inestabilidad controlada, tensión escultórica y rechazo deliberado de la ortogonalidad.',
       form_and_line:
-        'Folded planes, fractured mass intersections, torsion-like profiles, displaced axes, and non-linear envelope continuity',
+        'Planos plegados, intersecciones fracturadas, ejes desplazados y envolvente no lineal en conflicto ordenado.',
       color_palette:
-        'Brushed titanium and steel neutrals with warm mineral countertones, mirrored sky reflections, and restrained metallic highlights',
+        'Titanio/ acero cepillado, minerales cálidos secundarios y reflejos especulares contenidos.',
       lighting_setup:
-        'Sharp angular shadow cuts, reflective glint choreography, and dynamic sun-tracking contrast across faceted surfaces',
+        'Cortes de sombra angulares, destellos especulares y contraste dinámico sobre facetas múltiples.',
       material_texture:
-        'Metal cladding seams, zinc-titanium panel grain, glass specular fracture, and high-precision structural skin detailing',
+        'Piel metálica segmentada, panelería zinc-titanio, vidrio de alto brillo y detalle de junta de precisión.',
       render_quality:
-        'High-end sculptural architecture visualization with fluid mass readability and disciplined anti-symmetry coherence',
+        'Visualización escultórica de alta gama con anti-simetría legible y coherencia tectónica.',
       spatial_distortion:
-        'Intentional geometric dislocation with twisting volumetric vectors and collapsing-perspective cues',
-      atmosphere: 'Disorienting, cerebral, energetic, provocative, audacious',
+        'Dislocación geométrica intencional con vectores de torsión y perspectiva en tensión.',
+      atmosphere: 'Cerebral, provocadora, energética y desestabilizante.',
       key_features:
-        'Anti-right-angle composition, folded metallic envelope, displaced volume grammar, kinetic mass choreography',
+        'Composición anti-ángulo recto, pliegues dominantes, volúmenes desplazados y coreografía de masa cinética.',
       creative_brief:
-        'Keep this preset anchored in deconstructive geometry logic: fractured axes, folded metallic skins, and controlled spatial disorientation should define the style independent of any specific landmark reference.',
+        'Establece una gramática deconstructiva transferible: conflicto geométrico controlado, piel metálica plegada y desorientación espacial calculada. Debe sostener identidad formal sin depender de arquitectos o hitos concretos.',
     },
   },
   {
@@ -317,24 +334,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'decoration, roof tiles',
     style: {
       aesthetic:
-        'Bauhaus modernist style with machine-age rationalism, functional clarity, and disciplined anti-ornamental expression',
+        'Bauhaus arquitectónico de racionalismo industrial, antiornamento y legibilidad funcional explícita.',
       form_and_line:
-        'Cubic massing, ribbon windows, planar asymmetry, flat-roof horizontals, and exposed structural legibility',
+        'Masas cúbicas, bandas lineales, cubiertas planas, asimetría planificada y estructura clara.',
       color_palette:
-        'White-black-gray base with steel-blue neutrals and sparse signal-color accents for functional hierarchy',
+        'Base blanco-negro-gris con acentos puntuales de color-señal de baja frecuencia.',
       lighting_setup:
-        'Even daylight distribution, low-drama shadows, strip-window rhythm, and clarity-first luminance balance',
+        'Distribución diurna homogénea, sombras sobrias y ritmos lineales sin teatralización.',
       material_texture:
-        'Mineral render matte, steel-frame precision, glass plane clarity, linoleum tactility, and tubular metal detailing',
-      render_quality:
-        'Crisp modernist visualization prioritizing proportion discipline, material truth, and graphic compositional order',
-      spatial_distortion:
-        'Geometric stability with orthogonal rigor and asymmetry handled through measured mass relationships',
-      atmosphere: 'Rational, calm, precise, progressive, utilitarian',
+        'Revoque mineral mate, acero preciso, vidrio plano, linóleo y detalles metálicos tubulares.',
+      render_quality: 'Modernismo nítido de orden gráfico y verdad material.',
+      spatial_distortion: 'Estabilidad ortogonal con equilibrio de masas y asimetría medida.',
+      atmosphere: 'Precisa, progresiva, utilitaria y calmada.',
       key_features:
-        'Function-first composition, ribbon glazing language, flat-roof planar order, restrained signal accents',
+        'Composición función-primero, bandas horizontales, planos limpios y señalética cromática mínima.',
       creative_brief:
-        'Preserve identity through functional hierarchy and geometric discipline: anti-ornamental clarity, structural legibility, and measured asymmetry are the transferable core of this preset.',
+        'Conserva una gramática Bauhaus transferible donde función, masa y estructura ordenen cada decisión visual. La asimetría debe ser racional y medible, nunca expresiva por capricho formal.',
     },
   },
   {
@@ -344,24 +359,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'old, dirty, square corners',
     style: {
       aesthetic:
-        'Neo-futurist habitat style with seamless ergonomics, ambient intelligence, and high-purity spatial minimalism',
+        'Hábitat neo-futurista de fricción cero, ergonomía continua e inteligencia ambiental integrada.',
       form_and_line:
-        'Continuous shell geometry, cornerless flow transitions, integrated interface planes, and biomorphic module repetition',
+        'Shells continuas sin esquina, transiciones fluidas, planos interfaz embebidos y repetición biomórfica modular.',
       color_palette:
-        'Clinical white foundations with cool cyan-blue light channels, holographic silver mids, and sparse magenta signal accents',
+        'Blanco clínico, cian/azul frío lumínico, plata holográfica y magenta puntual de señalización.',
       lighting_setup:
-        'Embedded indirect luminance, adaptive ambient gradients, responsive zone highlights, and soft panel-based glow architecture',
+        'Luminancia indirecta integrada, gradientes adaptativos por zona y glow controlado en paneles activos.',
       material_texture:
-        'Composite smart surfaces, matte-gloss polymer contrast, low-friction glass skins, touch-reactive interface finishes',
+        'Polímeros smart mate-brillo, vidrio de baja fricción, superficies táctiles reactivas y uniones invisibles.',
       render_quality:
-        'Ultra-clean futuristic interior rendering with precision surfacing, controlled bloom, and sterile-detail clarity',
+        'Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta legibilidad.',
       spatial_distortion:
-        'Smooth axial continuity with no abrupt depth breaks, reinforcing weightless circulation and frictionless occupancy',
-      atmosphere: 'Sterile, serene, advanced, controlled, weightless',
+        'Continuidad axial suave, sin quiebres abruptos, con percepción de flotación funcional.',
+      atmosphere: 'Controlada, avanzada, serena y ligeramente clínica.',
       key_features:
-        'Seamless shell language, integrated interface lighting, adaptive ambient systems, cornerless ergonomic flow',
+        'Geometría cornerless, iluminación sistémica integrada, fusión carcasa-interfaz y señalética mínima reactiva.',
       creative_brief:
-        'Preserve identity through seamless volumetric continuity and intelligent ambient lighting behavior; the style should communicate post-friction futurity regardless of specific room program.',
+        'Formula una gramática futurista transferible donde continuidad de carcasa, luz adaptativa y ergonomía post-fricción sean innegociables. Cada input debe integrarse como extensión del sistema, no como objeto insertado.',
     },
   },
   {
@@ -371,24 +386,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square, boring',
     style: {
       aesthetic:
-        'Googie retro-futurist style with atomic-age optimism, velocity-driven geometry, and exuberant commercial-modern spectacle',
+        'Retrofuturismo Googie de optimismo atómico, velocidad visual y espectáculo comercial modernista.',
       form_and_line:
-        'Upswept cantilevers, boomerang vectors, starburst motifs, flying-V canopies, and angular glazing rhythms',
+        'Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos angulares dinámicos.',
       color_palette:
-        'Neon-bright primaries with chrome neutrals, turquoise-red anchors, buttery yellow highlights, and atomic orange punches',
+        'Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con naranja atómico.',
       lighting_setup:
-        'High-signage neon glow, backlit plastic diffusion, marquee-like edge lighting, and animated luminance sequencing',
+        'Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia luminosa.',
       material_texture:
-        'Polished chrome, terrazzo sparkle, Formica gloss, painted stucco grain, and crisp glazed surface reflections',
+        'Cromo pulido, terrazo brillante, Formica esmaltada, estuco pintado y reflejos duros de vidrio.',
       render_quality:
-        'High-energy mid-century retro-future rendering with kitsch precision and polished optimism-forward finish',
+        'Retro-futuro de media centuria con energía kitsch precisa y acabado optimista de alto contraste.',
       spatial_distortion:
-        'Directional boomerang skew and upswept perspective emphasis to imply constant forward motion',
-      atmosphere: 'Playful, optimistic, fast, theatrical, nostalgic',
+        'Sesgo direccional y perspectiva levantada para sugerir movimiento continuo.',
+      atmosphere: 'Lúdica, veloz, nostálgica y espectacular.',
       key_features:
-        'Velocity geometry language, neon-chrome contrast, starburst ornament grammar, exuberant cantilever choreography',
+        'Motivos starburst, geometría de impulso, neón-cromo dominante y coreografía de voladizos.',
       creative_brief:
-        'Keep the preset identifiable through atomic-age velocity forms and neon-chrome exuberance; prioritize optimistic retro-future geometry over any fixed roadside venue narrative.',
+        'Define una gramática Googie transferible donde velocidad geométrica, exuberancia neón-cromo y optimismo atómico sean constantes visuales. Debe funcionar sin depender de la narrativa de un diner o carretera concreta.',
     },
   },
   {
@@ -398,24 +413,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'delicate, painted, wood, glass',
     style: {
       aesthetic:
-        'Brutalist monumental style with unapologetic mass, structural frankness, and civic-institutional gravity',
+        'Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica sin concesiones decorativas.',
       form_and_line:
-        'Monolithic block stacking, deep recess cuts, cantilever slabs, hard orthogonal silhouettes, and shadow-carved edges',
+        'Apilamientos monolíticos, vacíos profundos, cantiléveres pesados, ortogonalidad dura y cantos tallados por sombra.',
       color_palette:
-        'Concrete gray spectrum with charcoal and slate anchors, damp ash variation, and low-chroma mineral depth',
+        'Gama de grises minerales, carbón y pizarra, con variaciones húmedas de ceniza de baja saturación.',
       lighting_setup:
-        'Hard-angle sunlight, deep shadow wells, high-contrast façade articulation, and recess-emphasizing directional light',
+        'Sol direccional severo, pozos de sombra profundos, contraste alto y lectura volumétrica por recesos.',
       material_texture:
-        'Board-formed concrete imprint, tie-hole cadence, exposed aggregate roughness, and weathered mineral patina',
+        'Marca de encofrado visible, poro de árido expuesto, junta estructural franca y pátina mineral envejecida.',
       render_quality:
-        'Monumental architectural rendering emphasizing material mass, tectonic clarity, and disciplined sculptural austerity',
+        'Render tectónico de alta fidelidad material, con prioridad de masa, proporción y lectura estructural.',
       spatial_distortion:
-        'Stable monumental perspective with mass-dominant depth compression and proportionally heavy visual balance',
-      atmosphere: 'Stoic, severe, powerful, enduring, contemplative',
+        'Perspectiva monumental estable, compresión de profundidad por peso volumétrico y jerarquía de bloque.',
+      atmosphere: 'Austero, contundente, contemplativo y duradero.',
       key_features:
-        'Monolithic concrete hierarchy, boardmark rhythm, deep-recess shadow logic, tectonic cantilever expression',
+        'Hormigón crudo protagonista, huecos sombreados, planos pesados superpuestos y cantiléveres expresivos.',
       creative_brief:
-        'Define this preset through material mass and shadow tectonics: raw concrete imprint language, monolithic composition, and institutional permanence are the transferable identity.',
+        'Construye una gramática brutalista transferible donde la masa y la sombra definan el carácter. La estructura debe leerse sin maquillaje y sostener una sensación de permanencia institucional en cualquier tipología.',
     },
   },
   {
@@ -425,24 +440,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimal, rustic, plain',
     style: {
       aesthetic:
-        'Art Deco glamour style with geometric opulence, metallic luxury contrast, and high-society theatrical polish',
+        'Glamour deco de alta densidad geométrica, lujo metálico y teatralidad axial controlada.',
       form_and_line:
-        'Stepped ziggurat profiles, chevron rhythms, sunburst motifs, and symmetrical ornament hierarchies with strong axial control',
+        'Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de lectura frontal.',
       color_palette:
-        'Black-gold dominance with emerald and deep navy enrichments, ivory balancing planes, and chrome highlight accents',
+        'Dominante negro-dorado con esmeralda y azul noche, balanceado por marfil y reflejos cromados.',
       lighting_setup:
-        'Dramatic uplight architecture, mirrored bounce play, sconce-and-chandelier glow layering, and marquee-like brilliance nodes',
+        'Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y nodos tipo marquee.',
       material_texture:
-        'Polished brass sheen, marble veining, velvet softness, lacquer depth, etched-glass detailing, and chrome inlay precision',
+        'Latón pulido, mármol veteado, terciopelo profundo, lacas brillantes y vidrio grabado.',
       render_quality:
-        'Luxe deco visualization with crisp ornamental readability and cinematic night-glamour finish',
+        'Acabado deco cinematográfico con precisión ornamental y contraste de lujo legible.',
       spatial_distortion:
-        'Structured symmetry with vertical accent pulls to reinforce grandeur and formal theatrical presence',
-      atmosphere: 'Opulent, glamorous, dramatic, celebratory, nocturnal',
+        'Simetría estructurada con tirón vertical para enfatizar monumentalidad ceremonial.',
+      atmosphere: 'Opulento, nocturno, ceremonial y escénico.',
       key_features:
-        'Geometric ornament grammar, metallic-luxury contrast, stepped silhouette architecture, mirror-light amplification',
+        'Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y focos teatrales.',
       creative_brief:
-        'Preserve Art Deco identity through geometric ornament hierarchy and metallic-material drama, keeping the style transferable beyond party or speakeasy storytelling.',
+        'Mantén una gramática art déco transferible basada en jerarquía geométrica, contraste metálico y composición axial escénica. La ornamentación debe ser sistema visual, no decoración anecdótica de contexto.',
     },
   },
   {
@@ -452,22 +467,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'concrete, industrial',
     style: {
       aesthetic:
-        'Vertical forest building, living architecture, Bosco Verticale, breathing tower, planted habitat',
+        'Bioclimatismo de envolvente viva, donde vegetación, estructura y clima operan como un único sistema metabólico.',
       form_and_line:
-        'Organic + Grid, staggered planters, stepped terraces, living balconies, vegetated fins',
-      color_palette: 'Green plants, Wood, Sky reflection, Soil Brown, Seasonal Blossom color',
+        'Retícula base con protrusiones vegetales irregulares, bandas verdes en voladizo y capas estratificadas.',
+      color_palette:
+        'Verdes estacionales, madera natural, reflejos de cielo, marrones de sustrato y floraciones puntuales.',
       lighting_setup:
-        'Natural sun, leaf-filtered dapple, photosynthesis glow, seasonal-angle shadow',
+        'Sol natural filtrado por copa vegetal, dapple dinámico y sombras estacionales por ángulo de incidencia.',
       material_texture:
-        'Leaves, timber, living bark, bamboo cladding, rammed earth, recycled aggregate',
+        'Hoja, corteza, madera, bambú, tierra compactada y áridos reciclados con lectura ecológica tangible.',
       render_quality:
-        'Eco-friendly, alive, biophilic wellness, carbon-negative beauty, nature-reclaimed',
-      spatial_distortion: 'Overgrown',
-      atmosphere: 'Healthy, future, fresh, oxygen-rich, symbiotic, planet-healing optimism',
+        'Visualización eco-arquitectónica de alto detalle con lógica de mantenimiento, riego y desempeño climático verosímil.',
+      spatial_distortion:
+        'Sensación de sobrecrecimiento controlado, con profundidad por capas de vegetación funcional.',
+      atmosphere: 'Regenerativa, respirable, cívica y optimista a largo plazo.',
       key_features:
-        'Trees on balcony, green walls, integrated planters, solar shading, rainwater harvesting, biodiversity habitat',
+        'Capas verdes profundas, corredores vivos, riego visible, bordes para biodiversidad y sombreamiento evapotranspirativo.',
       creative_brief:
-        'Trees emerge from balconies like the forest is reclaiming its territory one floor at a time. Glass reflects green, a tower that breathes, filtering city air through a million leaves. The building stands as a treaty between vertical ambition and horizontal ecology, each terrace a peace offering to the biosphere.',
+        'Formula una gramática verde transferible en la que vegetación, estructura y clima sean inseparables. La estética debe mostrar desempeño técnico real (sombra, drenaje, inercia, mantenimiento) además de densidad orgánica, aplicable a cualquier input.',
     },
   },
   {
@@ -477,22 +494,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ornate, capitalist',
     style: {
       aesthetic:
-        'Geometric concrete block, revolutionary architecture, communal machine, socialist monument',
+        'Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.',
       form_and_line:
-        'Bold diagonals, intersecting cylinders, floating cantilevers, pilotis grid, dynamic tension',
+        'Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y conectores suspendidos.',
       color_palette:
-        'Grey, Red accents, Raw Concrete, Faded Ochre, Industrial Black, Propaganda Crimson',
-      lighting_setup: 'Overcast, low-angle drama, stark shadow projection, factory-window rhythm',
-      material_texture: 'Concrete, rough-cast render, steel frame, glass-block, bolted plate',
+        'Gris crudo, negro industrial, ocre desvaído y rojo propaganda como acento estratégico.',
+      lighting_setup:
+        'Cielo cubierto, dramatismo de ángulo bajo, sombras duras proyectadas y ritmo de hueco fabril.',
+      material_texture:
+        'Hormigón bruto, revoque áspero, acero estructural, bloque de vidrio y placas atornilladas.',
       render_quality:
-        'Utopian, stark, heavy, revolutionary monument, collectivist scale, heroic industry',
-      spatial_distortion: 'Floating masses',
-      atmosphere:
-        'Serious, collective, revolutionary, communal purpose, factory-hall echo, historic weight',
+        'Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.',
+      spatial_distortion: 'Sensación de masas en tensión y volúmenes en suspensión controlada.',
+      atmosphere: 'Austera, colectiva, disciplinada y mecánico-utópica.',
       key_features:
-        'Cylinder/Cube, floating volumes, exposed structure, sky-bridge walkways, bold red accents',
+        'Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y estructura explícita.',
       creative_brief:
-        'Cylinders and cubes crash into each other like ideas at a revolutionary committee meeting. Red accents cut through grey like a banner through Soviet sky, color as declaration. The building stands as a manifesto in concrete, promising collective futures that never arrived, still waiting.',
+        'Define una gramática constructivista transferible donde la forma opere como manifiesto: conflicto geométrico, estructura sin ocultamiento y color político mínimo pero incisivo. Debe leerse como sistema-programa.',
     },
   },
   {
@@ -502,22 +520,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain, grey',
     style: {
       aesthetic:
-        'San Francisco house, candy-colored heritage, architectural confection, gingerbread fantasy',
+        'Revival victoriano cromático de ornamento pintado, identidad barrial y detalle carpintero exuberante.',
       form_and_line:
-        'Gingerbread trim, spindle work, fish-scale shingles, bay windows, gable ornament, tall narrow',
-      color_palette: 'Pastel Blue/Pink/Yellow, Lavender, Mint Green, Cream trim, Dusty Rose',
+        'Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad estrecha.',
+      color_palette:
+        'Pasteles complejos (azul/rosa/amarillo), lavanda, menta y molduras crema con rosa polvoso.',
       lighting_setup:
-        'Sunny day, San Francisco fog-diffused, golden-hour facade glow, painted-lady sparkle',
+        'Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.',
       material_texture:
-        'Wood siding, painted redwood, scroll-sawn ornament, turned spindles, bracketed eaves',
+        'Siding de madera, pintura multicapa, calados finos, aleros con ménsulas y tejuela decorativa.',
       render_quality:
-        'Charming, detailed, dollhouse, postcard-perfect, neighborhood jewel, color-pop delight',
-      spatial_distortion: 'None',
-      atmosphere: 'Happy, nostalgic, cute, cheerful, preserved-history, whimsical pride',
+        'Detalle residencial histórico de alta legibilidad ornamental con alegría cromática controlada.',
+      spatial_distortion:
+        'Perspectiva estable centrada en jerarquía de ornamentación y capas cromáticas verticales.',
+      atmosphere: 'Nostálgica, festiva, cívica y orgullosamente preservada.',
       key_features:
-        'Turret, gingerbread trim, three-color paint scheme, bay windows, fish-scale shingles',
+        'Esquemas tricromos, salientes facetados, tejuela fish-scale y carpintería recortada de alta densidad.',
       creative_brief:
-        'Gingerbread trim frills against fog like lace on a widow, every spindle and fish-scale shingle a small act of joy against grey skies. Pastel paint schemes announce the house before you see it, a chromatic argument that homes should sing. The painted lady stands dressed for a party that never ends, San Francisco her eternal ballroom.',
+        'Mantén una gramática Painted Lady transferible por ornamentación de madera, cromática pastel estratificada y composición vertical doméstica. La identidad debe sostenerse por lenguaje constructivo, no por postal turística.',
     },
   },
   {
@@ -527,24 +547,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clutter, western, plastic',
     style: {
       aesthetic:
-        'Japanese zen-wabi interior style with disciplined emptiness, seasonal restraint, and contemplative material quietude',
+        'Zen doméstico de contención extrema, vacío disciplinado y materialidad natural silenciosa.',
       form_and_line:
-        'Modular tatami grid logic, shoji and fusuma linear cadence, alcove focal minimalism, and low horizon furniture profiles',
+        'Retícula modular baja, líneas horizontales contenidas, paneles translúcidos y focos asimétricos de vacío.',
       color_palette:
-        'Rice-paper whites, bamboo and cedar warms, tatami greens, sumi-charcoal accents, and muted indigo depth notes',
+        'Blanco papel de arroz, madera clara cálida, verde tatami, carbón sumi e índigo apagado.',
       lighting_setup:
-        'Shoji-filtered daylight diffusion, lantern-soft ambient pools, alcove emphasis lighting, and seasonal shadow subtlety',
+        'Difusión filtrada por paneles, pools cálidos de baja intensidad y sombras estacionales de transición lenta.',
       material_texture:
-        'Tatami fiber weave, raw wood grain, hand-troweled clay matte, paper translucency, and silk-soft accent surfaces',
+        'Fibra vegetal visible, veta de madera cruda, arcilla mate alisada a mano y translucidez de papel.',
       render_quality:
-        'Refined minimalist rendering with high material calm, balanced negative space, and meditative visual precision',
+        'Render minimal refinado con equilibrio de espacio negativo y precisión contemplativa.',
       spatial_distortion:
-        'Neutral geometric proportioning with depth expressed through layered screens and controlled emptiness',
-      atmosphere: 'Meditative, serene, disciplined, reverent, still',
+        'Geometría neutra; profundidad por capas de pantalla y vacíos secuenciados.',
+      atmosphere: 'Serene, reverente, lenta y enfocada.',
       key_features:
-        'Modular calm composition, shoji-tatami grammar, seasonal light subtlety, wabi material restraint',
+        'Retícula baja, filtros translúcidos, focos sobrios, materiales orgánicos desnudos y ritmo contenido.',
       creative_brief:
-        'Keep this preset defined by disciplined emptiness and modular natural material rhythm; meditative screen-filtered light and restrained focal gestures should drive style transferability.',
+        'Define el preset como una gramática de calma modular: retícula, filtro de luz y vacío intencional. La transferencia debe sostener quietud material y precisión ritual sin depender de escenas tradicionales específicas.',
     },
   },
   {
@@ -554,22 +574,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sharp edges, wood',
     style: {
       aesthetic:
-        'Desert mud house, earthen sanctuary, pueblo revival, timeless Southwest, hand-shaped dwelling',
+        'Vernáculo adobe de masa térmica, domesticidad desértica y expresión manual de arraigo territorial.',
       form_and_line:
-        'Rounded corners, stepped massing, thick-wall masses, parapet silhouettes, organic contours',
-      color_palette: 'Terracotta, Sand, Warm Ochre, Sage brush, Deep Cinnamon, Sunbaked Clay',
+        'Muros gruesos monolíticos, aristas suavizadas, cubiertas escalonadas, huecos profundos y parapetos bajos.',
+      color_palette: 'Terracota, arena, ocre cálido, salvia, canela y arcilla soleada.',
       lighting_setup:
-        'Harsh desert sun, deep window-reveal shadow, nicho candle glow, kiva fireplace flicker',
+        'Sol desértico duro, sombras profundas en vanos, glow de nichos y parpadeo de hogar tipo kiva.',
       material_texture:
-        'Mud plaster, hand-troweled adobe, vigas wood, saltillo tile, rough-hewn lintels',
+        'Revoco de tierra encalada, fibra vegetal visible, huella de llana manual, vigas expuestas y teja de barro usada.',
       render_quality:
-        'Natural, earthy, solid, timeless-pueblo, sun-baked authenticity, ancestral craft',
-      spatial_distortion: 'Handmade walls',
-      atmosphere: 'Warm, dry, grounded, ancient-land, pueblo-silent, earth-connected peace',
+        'Honestidad material de alto realismo climático con imperfección artesanal plausible.',
+      spatial_distortion:
+        'Ondulación leve de muros por manufactura manual, manteniendo estabilidad tectónica.',
+      atmosphere: 'Cobijo térmico, calma árida y continuidad ancestral.',
       key_features:
-        'Wood beams (vigas), rounded edges, kiva fireplace, nicho alcoves, bancos, ladder access',
+        'Huecos profundos, masa excavada, nichos térmicos, geometría de hogar kiva y aristas manuales suavizadas.',
       creative_brief:
-        'Hands shaped these walls, each undulation a fingerprint of the maker pressed into mud and time. Vigas stretch across ceilings like ribs of earth made visible, holding centuries of desert silence above. The dwelling emerges from the ground as if it grew there, earthen architecture remembering its origin in soil.',
+        'Mantén una gramática adobe transferible centrada en inercia térmica, hueco profundo y acabado manual visible. Debe comunicar adaptación climática y arraigo constructivo, no exotismo escénico.',
     },
   },
   {
@@ -578,23 +599,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'clean, sunny',
     style: {
-      aesthetic: 'NYC/London grime-worn metropolitan underground, tile echo, commuter solitude',
+      aesthetic:
+        'Infraestructura metropolitana de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.',
       form_and_line:
-        'Perspective tunnel, arched vault, column rhythm, vanishing track lines, signage grid',
+        'Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas de señalética estructural.',
       color_palette:
         'Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone',
       lighting_setup:
-        'Fluorescent flicker, platform-edge pools, advertising-light glare, tunnel-black void',
+        'Fluorescencia intermitente, pools de borde operativo, glare publicitario y vacío negro como contrapunto.',
       material_texture:
-        'Tile, dirt, ceramic glaze, metal rail, chewing-gum pavement, peeling paint',
+        'Baldosa astillada, acero oxidado, grasa mineral, humedad capilar y pavimento antideslizante gastado.',
       render_quality:
-        'Urban, gritty, public, transit-realism, commuter poetry, damp-platform grime',
-      spatial_distortion: 'Motion blur train',
+        'Realismo documental de tránsito con microdesgaste verosímil y lectura clara de espacio público denso.',
+      spatial_distortion: 'Blur de tránsito y compresión longitudinal por flujo.',
       atmosphere:
-        'Lonely, transit, anonymous, platform-wait, underground rhythm, metropolitan solitude',
-      key_features: 'Tiles, vaulted ceiling, platform edge, bench, signage, track tunnel',
+        'Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.',
+      key_features:
+        'Franja de seguridad, wayfinding en banda, conducciones vistas, derrame de luz comercial y huecos profundos.',
       creative_brief:
-        'Tiles hold decades of commuter breath in their grout, ceramic witness to a million hurried journeys underground. Fluorescent light flattens everything into equal grey, democracy of illumination where suits and sorrows look the same. The tunnel stretches toward vanishing point, a perspective built for waiting.',
+        'Construye una gramática de metro transferible donde repetición modular, desgaste por tráfico y jerarquía de señalética gobiernen la composición. Debe sentirse operativa y permanentemente habitada por flujo.',
     },
   },
   {
@@ -604,51 +627,50 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'basement, dark, cheap',
     style: {
       aesthetic:
-        'Ultra-luxury aerial residential style with monolithic glazing, restrained opulence, and curated minimal spatial drama',
+        'Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva editorial.',
       form_and_line:
-        'Long uninterrupted glazing lines, floating slab planes, cantilever gestures, low-profile furnishings, disciplined negative space',
+        'Paños continuos, losas flotantes, planos largos y siluetas bajas curadas por jerarquía de vacío.',
       color_palette:
-        'Warm ivory neutrals, charcoal anchors, smoky blue-greys, brushed brass accents, muted stone undertones',
+        'Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea neutra.',
       lighting_setup:
-        'Layered ambient cove light, soft practical pools, controlled reflection management, low-glare premium interior illumination',
+        'Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga visual.',
       material_texture:
-        'Book-matched marble veining, satin metal trims, full-grain leather, soft woven textiles, polished glass depth, matte lacquer panels',
+        'Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta calidad.',
       render_quality:
-        'Architectural-visualization premium finish with high material fidelity, clean staging, and luxury hospitality polish',
+        'Acabado de hospitality de lujo con fidelidad material alta y staging impecable.',
       spatial_distortion:
-        'Wide-angle restraint with elongated interior axis and balanced foreground-midground luxury object hierarchy',
-      atmosphere: 'Serene, controlled, aspirational, private, rarefied',
+        'Gran angular contenido con eje interior elongado y profundidad por piezas statement cuidadosamente espaciadas.',
+      atmosphere: 'Privado, aspiracional, sereno y altamente controlado.',
       key_features:
-        'Continuous glazing language, floating architectural planes, high-end material pairings, low-clutter composition, curated statement objects',
+        'Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle constructivo invisible.',
       creative_brief:
-        'Encode luxury through proportion, material choreography, and lighting discipline rather than landmarks; the style should remain transferable to any high-end interior program.',
+        'Define una gramática de lujo transferible por proporción, detalle oculto, material noble y control lumínico. Evita la postal aspiracional: el valor debe emerger del sistema visual, no de vista, altura o contexto externo.',
     },
   },
   {
     id: 'SP07-012',
     name: 'Rustic Cabin',
     category: '1. Residential Interiors',
-    negativePrompt: 'city, modern, cold',
+    negativePrompt: 'synthetic, modern, cold',
     style: {
       aesthetic:
-        'Rustic shelter style emphasizing heavy natural mass, handcrafted durability, and hearth-centered warmth',
+        'Rusticidad protectora de masa natural, oficio manual visible y calor de núcleo térmico.',
       form_and_line:
-        'Thick timber geometries, stacked masonry rhythm, robust joinery expression, compact protective proportions',
+        'Geometrías gruesas de madera y mampostería, ensambles robustos, proporciones compactas protectoras.',
       color_palette:
-        'Burnt umber and smoked oak base, ember ambers, pine-greens, muted ash neutrals, low-saturation warmth gradients',
+        'Umber quemado, roble ahumado, ámbar brasa, verde pino y cenizas neutras de baja saturación.',
       lighting_setup:
-        'Hearth-priority low-key glow, warm practical flicker, soft exterior daylight filtration, deep shadow comfort zones',
+        'Prioridad de resplandor térmico, parpadeo cálido de prácticos, filtrado diurno moderado y zonas de sombra confortable.',
       material_texture:
-        'Hand-hewn wood grain, rough stone porosity, wool and hide tactility, forged metal patina, matte earthen finishes',
+        'Veta labrada a mano, piedra porosa, lana y piel, metal forjado patinado y acabados terrosos mates.',
       render_quality:
-        'Authentic rustic realism with material weight clarity, thermal atmosphere, and durable craft legibility',
-      spatial_distortion:
-        'Stable enclosed depth with compressive intimacy that reinforces protective interior character',
-      atmosphere: 'Sheltering, grounded, quiet, warm, resilient',
+        'Realismo rústico auténtico con lectura de peso material y construcción duradera.',
+      spatial_distortion: 'Profundidad cerrada estable con compresión íntima de abrigo.',
+      atmosphere: 'Protector, terrenal, silencioso y resistente.',
       key_features:
-        'Hearth-centric composition, heavy natural material hierarchy, handcrafted structural expression, thermal visual comfort',
+        'Núcleo térmico dominante, jerarquía de materiales pesados, ensamble artesanal y confort visual cálido.',
       creative_brief:
-        'Keep this preset identifiable by massy natural materials and hearth-led light behavior, translating rustic protection and craft durability across different interior subjects.',
+        'Preserva una gramática rústica transferible basada en masa, calor y oficio. El estilo debe comunicar protección climática y permanencia material sin quedar atado a una cabaña específica.',
     },
   },
   {
@@ -657,25 +679,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'rain, cold, dark, grey',
     style: {
-      aesthetic:
-        'Mediterranean sun-architecture style with limewashed simplicity, thermal brightness, and breezy coastal restraint',
+      aesthetic: 'Mediterráneo solar de cal y terracota, claridad térmica y umbral ventilado.',
       form_and_line:
-        'Soft-edged stucco volumes, arch repetition, terrace layering, colonnade cadence, courtyard flow geometry',
+        'Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones de sombra abierta.',
       color_palette:
-        'Lime white fields, azure accents, terracotta earths, warm ochre mids, sea-glass greens, restrained floral magenta notes',
+        'Blanco de cal, azul mediterráneo, terracota, ocre cálido y verdes vidrio mar en acento moderado.',
       lighting_setup:
-        'High-intensity solar wash with crisp shadow cuts, reflected courtyard bounce, warm dusk practical transitions',
+        'Sol alto de contraste nítido, rebote cálido mineral y transición crepuscular con prácticos discretos.',
       material_texture:
-        'Mineral stucco grain, handmade tile variation, rough stone joints, weathered timber bleach, wrought-iron matte detail',
+        'Estuco mineral, baldosa manual, piedra junta abierta, madera blanqueada y hierro forjado mate.',
       render_quality:
-        'Clean Mediterranean realism with sun-bleached precision, airy depth, and disciplined material-light interplay',
+        'Realismo mediterráneo limpio con precisión de luz solar y lectura material aérea.',
       spatial_distortion:
-        'Open-volume perspective calm with framed axial views and layered indoor-outdoor transitions',
-      atmosphere: 'Luminous, relaxed, airy, warm, restorative',
+        'Perspectiva abierta con encuadres axiales suaves y secuencia de umbrales ventilados.',
+      atmosphere: 'Luminosa, relajada, ventilada y restaurativa.',
       key_features:
-        'Limewash-and-terracotta signature, high-sun shadow architecture, courtyard flow sequencing, coastal chroma restraint',
+        'Binomio cal-terracota, sombra arqueada, umbrales conectores y paleta costera de saturación contenida.',
       creative_brief:
-        'Encode Mediterranean identity through solar contrast behavior and limewash-terra material pairing, ensuring the style remains transferable beyond any single villa setting.',
+        'Mantén una gramática mediterránea transferible de alto sol, cal mineral y terracota estructurante. La identidad debe sostenerse por clima, material y secuencia espacial, no por una narrativa de villa puntual.',
     },
   },
   {
@@ -684,24 +705,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'wood, brick',
     style: {
-      aesthetic: 'ISS orbital station module, zero-G clutter, Velcro walls, Earth through cupola',
+      aesthetic:
+        'Utilitarismo aeroespacial operativo, donde la habitabilidad emerge de ingeniería compacta y no de decoración.',
       form_and_line:
-        'Wires, panels, equipment rack geometry, circular hatch rings, padded tunnel tubes',
+        'Retículas modulares, aperturas circulares, vectores de sujeción y grillas de acceso técnico de alta densidad.',
       color_palette:
         'White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents',
       lighting_setup:
-        'Harsh LED, panel-integrated task light, cupola-filtered Earth light, dim night-mode amber',
+        'LED técnico de alto control, focos de tarea integrados en panel, rebote frío y modo nocturno ámbar de baja fatiga.',
       material_texture:
-        'Padding, metal, velcro tape, cable bundles, control panel plastic, foil insulation',
+        'Paneles textiles técnicos ignífugos, aleación cepillada, velcro de retención, foil aislante y polímeros moldeados funcionales.',
       render_quality:
-        'Scientific, cramped, orbital-realism, functional density, engineering clutter, cosmic frontier',
-      spatial_distortion: 'Zero-G floating',
+        'Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste realista de uso continuo.',
+      spatial_distortion:
+        'Flotación funcional y orientación múltiple sugerida por grillas técnicas.',
       atmosphere:
-        'Claustrophobic, tech, weightless, frontier-isolation, science-hum, fragile habitation',
+        'Contenida y procedimental, con precisión operativa bajo fatiga y sensación de vida frágil en entorno hostil.',
       key_features:
-        'Handrails, equipment racks, round hatches, observation cupola, floating cables, soft walls',
+        'Sujeciones redundantes, módulos etiquetados, aperturas presurizadas, bolsillos utilitarios y orientación no terrestre.',
       creative_brief:
-        'Velcro strips hold notebooks mid-air, zero gravity transforming every surface into ceiling and floor simultaneously. Cables float like sleeping seaweed, blue LED constellations mapping the thin membrane between human warmth and void. Earth glows through the cupola, a blue reminder of everything left below.',
+        'Define una gramática orbital transferible basada en función explícita, retención física y legibilidad de interfaz. Cada elemento debe justificar operación, acceso o mantenimiento, evitando futurismo escenográfico limpio.',
     },
   },
   {
@@ -711,22 +734,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'digital, modern',
     style: {
       aesthetic:
-        "Stacks of books, bibliophile sanctuary, reading-room heaven, literary labyrinth, scholar's cathedral",
+        'Clasicismo bibliográfico histórico con monumentalidad silenciosa y disciplina de lectura.',
       form_and_line:
-        'Vertical spines, shelf-grid rhythm, arched alcoves, rolling ladders, barrel-vault ceiling',
+        'Crugías altas de archivo, verticales de acceso, simetría de lectura y cadencia de bóveda/alcoba.',
       color_palette:
         'Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather',
       lighting_setup:
-        "Warm lamp, banker's green glass shade, reading-table pool, high-window shaft, brass sconce",
-      material_texture: 'Paper, wood, leather, vellum, gilt tooling, waxed oak, marble bust',
+        'Lámparas cálidas focales, pantalla verde de lectura, shafts altos de luz y apliques de latón envejecido.',
+      material_texture:
+        'Cuero oxidado, papel de canto irregular, dorados gastados, roble pulido por uso y latón oscurecido.',
       render_quality:
-        'Quiet, intellectual, scholarly peace, book-scent serenity, timeless learning',
+        'Calidad museo con envejecimiento noble y profundidad de campo apta para lectura catalográfica.',
       spatial_distortion: 'None',
-      atmosphere: 'Studious, hush, absorbed, musty-sweet, inherited wisdom, reading-trance',
+      atmosphere:
+        'Contemplativa, rigurosa y reverencial, con calidez puntual sobre un fondo de silencio estructurado.',
       key_features:
-        'Books everywhere, rolling ladder, reading tables, brass lamps, vaulted ceiling, globe',
+        'Luz green-shade, clústeres catalográficos, verticales móviles, numeración de bahías y acentos cartográficos.',
       creative_brief:
-        'Books breathe their slow vanilla decay into air thick with ideas waiting to be rediscovered. Ladders slide on brass rails toward ceiling-high wisdom, every spine a door to a mind that once burned to be heard. The library holds silence not as absence but as the accumulated hush of centuries reading.',
+        'Construye una gramática bibliográfica transferible basada en ritmo de estantería, luz focal de lectura y materialidad envejecida con nobleza. Debe sostener solemnidad intelectual sin depender de un edificio concreto.',
     },
   },
   {
@@ -735,21 +760,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'minimal, bright, open',
     style: {
-      aesthetic: '19th century cluttered room, Empire excess, mourning elegance, parlour theatre',
+      aesthetic:
+        'Victoriano de herencia pesada, exceso ornamental y teatralidad histórica cerrada.',
       form_and_line:
-        'Ornate patterns everywhere, framed silhouettes, heavy draping swags, crowded picture rails',
-      color_palette: 'Dark Red, Gold, Mahogany, Plum, Bottle Green, Antique Brass',
+        'Densidad de patrón, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.',
+      color_palette:
+        'Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y latón antiguo.',
       lighting_setup:
-        'Dim gaslight, oil-lamp pools, fireplace flicker, heavy-curtained gloom, tarnished candelabra',
-      material_texture: 'Velvet, wallpaper, dust, horsehair, brocade, marble mantels, chinoiserie',
+        'Gaslight tenue, pools de lámpara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje espeso.',
+      material_texture:
+        'Terciopelo, brocado, papel estampado, mármol oscuro, maderas profundas y metal envejecido.',
       render_quality:
-        'Antique, heavy, stuffed, museum-dense, gaslit nostalgia, maximalist inheritance',
-      spatial_distortion: 'None',
-      atmosphere: 'Oppressive, historic, rich, cluttered memory, mothball, ancestral weight',
+        'Densidad museográfica de época con lectura material opulenta y atmósfera histórica cerrada.',
+      spatial_distortion:
+        'Profundidad estable saturada por acumulación decorativa en múltiples capas.',
+      atmosphere: 'Opresiva, aristocrática, nostálgica y ceremoniosa.',
       key_features:
-        'Pattern density, overstuffed furniture, floor-to-ceiling drapes, gallery wall, taxidermy',
+        'Drapería pesada, tapizados cargados, marcos acumulados, ornamentación floral y volumen overstuffed.',
       creative_brief:
-        'Velvet swallows light, brocade fighting pattern against pattern in a war of abundance. Each surface carries the weight of ancestors who confused accumulation with permanence, every object a memorial to acquisition. The air is thick with mothball and memory, rooms that stopped breathing a century ago.',
+        'Define una gramática victoriana transferible por sobrecarga ornamental, paleta profunda y luz baja ceremonial. El estilo debe expresar peso histórico y acumulación material sin depender de una narrativa literaria.',
     },
   },
   {
@@ -759,22 +788,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, dry',
     style: {
       aesthetic:
-        'Glass house with plants, botanical sanctuary, Victorian Palm House, humid Eden, fern-filled paradise',
+        'Envolvente bioclimática húmeda, donde estructura fina y masa vegetal conviven en equilibrio técnico.',
       form_and_line:
-        'Glass grid, curved glasshouse ribs, ironwork tracery, floor-to-glass, misty depth',
+        'Luces acristaladas nervadas, tracería metálica fina y estratos orgánicos por profundidad.',
       color_palette:
         'Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron',
       lighting_setup:
-        'Diffused bright, glass-filtered sun, condensation prisms, mist-softened rays',
-      material_texture: 'Glass, leaves, mist, cast iron, terracotta pots, gravel path, moist bark',
+        'Sol filtrado por vidrio, difusión húmeda, prismas por condensación y rayos suavizados por neblina interna.',
+      material_texture:
+        'Película de condensación, hierro pintado oxidado, grava húmeda, terracota eflorescente y hojas de brillo ceroso.',
       render_quality:
-        'Humid, lush, peaceful, botanical-specimen clarity, greenhouse glow, steaming-leaf vitality',
-      spatial_distortion: 'Condensation',
-      atmosphere: 'Alive, wet, calm, growing, oxygen-dense, fern-forest peace',
+        'Precisión botánica con control de atmósfera húmeda y claridad estructural operativa.',
+      spatial_distortion: 'Condensación refractiva y capas de humedad que suavizan profundidad.',
+      atmosphere: 'Cálida-húmeda, protectora y fértil, con calma de cultivo intensivo controlado.',
       key_features:
-        'Plants, iron framework, glass panels, mist hanging in air, terracotta pots, fern fronds',
+        'Gradientes de condensación, zonificación vegetal, repetición de nervios, estratificación de niebla y rutas técnicas.',
       creative_brief:
-        'Glass panels and iron ribs hold humidity like a held breath, condensation writing temporary poems on every pane. Ferns unfurl in slow motion against the architecture, green ambition meeting Victorian engineering in peaceful truce. The glasshouse dreams of rainforests while standing polite in English gardens.',
+        'Formula una gramática de conservatorio transferible basada en retícula estructural legible, humedad visible y estratificación botánica técnica. Debe leerse como sistema de cultivo, no jardín ornamental genérico.',
     },
   },
   {
@@ -784,24 +814,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, organized, day',
     style: {
       aesthetic:
-        'Cyber-clutter interior style with improvised techno-living density, salvage modularity, and nocturnal hacker ambience',
+        'Ciber-nocturnidad saturada, con densidad tecnológica improvisada y electricidad funcional.',
       form_and_line:
-        'Cable-mass diagonals, stacked display rectangles, ad-hoc rack assemblies, layered utility object silhouettes, compressed circulation paths',
+        'Diagonales de cableado, grillas técnicas apiladas, fuentes lumínicas múltiples y circulación comprimida por hardware.',
       color_palette:
-        'Deep charcoal base, toxic neon pink-blue-green accents, amber CRT pockets, cold violet shadows, fluorescent sickly fills',
+        'Carbón profundo, neones tóxicos rosa/azul/verde, bolsillos ámbar CRT y violetas fríos de sombra.',
       lighting_setup:
-        'Multi-source low-light mix from displays, strips, indicator LEDs, and localized neon spill with sharp falloff pockets',
+        'Mezcla multi-fuente de baja iluminación con displays, tiras LED, indicadores y derrames neón de caída abrupta.',
       material_texture:
-        'Scuffed metal housings, brittle plastic shells, adhesive residue layers, worn synthetic upholstery, dusted heat-sink fins',
+        'Chapa rayada, plásticos quebradizos, residuos adhesivos, tapicerías sintéticas gastadas y disipadores empolvados.',
       render_quality:
-        'High-detail lived-in cyber interior rendering with controlled chaos readability and tactile grime realism',
+        'Alta densidad de detalle con caos controlado, legibilidad técnica y suciedad creíble de uso continuo.',
       spatial_distortion:
-        'Dense near-field composition with depth blocked by stacked hardware planes and overlapping cable strata',
-      atmosphere: 'Restless, saturated, unstable, sleep-deprived, obsessive',
+        'Primer plano obstruido por estratos de tecnología, profundidad fragmentada por planos superpuestos.',
+      atmosphere: 'Insomne, hiperestimulada, obsesiva y frágilmente funcional.',
       key_features:
-        'Hardware accumulation grammar, cable entropy patterns, mixed-display luminance, scavenged modular furniture, patinated tech surfaces',
+        'Entropía de cableado, luminancia heterogénea, módulos recuperados y textura tecnológica patinada.',
       creative_brief:
-        'Express cyber-residential identity through infrastructural clutter logic, mixed-source low-light behavior, and improvised material wear, without anchoring the style to one narrative room setup.',
+        'Formula una gramática cyber transferible donde infraestructura visible, luminancia de fuentes mixtas y desgaste improvisado sean el núcleo. Debe sentirse habitada por tecnología, no decorada con tecnología.',
     },
   },
   {
@@ -811,19 +841,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dry',
     style: {
       aesthetic:
-        'Underwater glass tunnel, submerged walkway, ocean-immersed passage, blue cathedral, marine immersion',
+        'Inmersión azul técnica, donde envolvente acrílica y columna de agua construyen espectáculo óptico.',
       form_and_line:
-        'Curved glass, arched acrylic, perspective tube, floor-to-ceiling curve, flowing water line',
+        'Secciones arqueadas continuas, empuje tubular de perspectiva y capas de profundidad acuática con flujo suave.',
       color_palette:
         'Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan',
-      lighting_setup: 'Caustics, rippling light nets, overhead-dappled, blue ambient, tank-glow',
-      material_texture: 'Glass, water, acrylic, coral rock, sand bed, shimmering scale',
-      render_quality: 'Immersive, blue, aquarium-clarity, oceanic wonder, deep-blue meditation',
-      spatial_distortion: 'Refraction',
-      atmosphere: 'Wonder, deep, floating, quiet-awe, blue-weightless, other-world calm',
-      key_features: 'Fish overhead, glass tunnel, caustic light patterns, sharks, coral, stingrays',
+      lighting_setup:
+        'Redes caústicas dinámicas, dapple cenital, ambiente azul profundo y brillo de tanque de alta difusión.',
+      material_texture:
+        'Acrílico grueso, piel de agua refractiva, partículas suspendidas y rugosidad de sustrato húmedo.',
+      render_quality:
+        'Claridad acuática alta con refracción físicamente creíble y atenuación cromática por profundidad.',
+      spatial_distortion: 'Refracción, atenuación azul y curvatura óptica controlada.',
+      atmosphere:
+        'Asombro silencioso, calma presurizada e inmersión azul de ritmo humano ralentizado.',
+      key_features:
+        'Barridos caústicos, nervios acrílicos, turbidez variable, siluetas acuáticas y estratos bióticos.',
       creative_brief:
-        'Water bends light into dancing nets that sweep across the tunnel floor like living embroidery. Sharks glide overhead with the slow confidence of creatures that have never questioned their dominion. The tube becomes a lung breathing blue, every visitor a bubble of warm air moving through cold depths.',
+        'Formula una gramática acuática transferible donde óptica, profundidad y robustez de envolvente manden. La biota puede aportar escala y ritmo, pero la identidad nace del tratamiento técnico del agua.',
     },
   },
   {
@@ -833,23 +868,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'living',
     style: {
       aesthetic:
-        'Bone walls, empire of the dead, skull architecture, underground ossuary, silence of centuries',
+        'Osario subterráneo abstracto donde mortalidad ritual y módulo cálcico definen el lenguaje visual.',
       form_and_line:
-        'Skulls, stacked femur patterns, arch niches, skull-and-crossbone geometry, tunnel perspective',
+        'Patrones repetitivos de módulos óseos, arcos bajos secuenciados y axialidad comprimida.',
       color_palette: 'Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream',
       lighting_setup:
-        'Torch/Flashlight, flame-flicker on bone, LED beam, dramatic shadow-cast, warm death-glow',
+        'Fuentes cálidas puntuales de antorcha o linterna, parpadeo sobre hueso y sombras densas de bajo nivel.',
       material_texture:
-        'Bone, dirt, calcium deposit, cold stone, crumbling mortar, dry-earth scent',
+        'Calcio yesoso, porosidad cortical, juntas de mortero polvorientas y transiciones húmedas de piedra enterrada.',
       render_quality:
-        'Macabre, claustrophobic, bone-chamber realism, death-density, ancient silence',
+        'Fidelidad arqueológica de bajo nivel lumínico con microtextura funeraria legible.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Death, silence, below-ground, ossuary-reverence, chilling peace, mortal reminder',
+      atmosphere: 'Solemne, comprimida y reverencial, con quietud de tiempo profundo.',
       key_features:
-        'Skulls, stacked long bones, arched niches, low ceiling, tunnel shaft, decorative bone patterns',
+        'Hiladas cálcicas, bandas cruzadas, nichos funerarios y presión de bóveda baja.',
       creative_brief:
-        'Skulls arranged in geometric chorus, tibiae stacked like library books catalogued by the grim librarian of centuries. The walls watch with a thousand empty sockets, calcium constellations mapping the architecture of mortality. Silence down here has weight, the accumulated stillness of generations who have nothing left to say.',
+        'Define una gramática osaria transferible en la que repetición material y orden funerario estructuren el espacio. Debe transmitir reverencia histórica y lectura subterránea sin teatralidad gótica explícita.',
     },
   },
   {
@@ -859,21 +893,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground level',
     style: {
       aesthetic:
-        "House in canopy, child's secret kingdom, elevated hideaway, forest perch, arboreal adventure",
+        'Artesanía arbórea elevada, integrada a soporte vivo y condicionada por crecimiento irregular.',
       form_and_line:
-        'Wood planks, branch-cradled platforms, ladder diagonals, suspension-bridge curves, wrap-around deck',
+        'Soportes híbridos, plataformas escalonadas, diagonales de cable y vacíos de evasión orgánica.',
       color_palette: 'Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss',
       lighting_setup:
-        'Dappled sun, leaf-filtered shimmer, lantern glow, fairy-string twinkle, camping-lamp amber',
-      material_texture: 'Bark, wood, rope ladder, canvas, salvaged plank, tree-sap',
-      render_quality: 'Childhood, secret, summer-adventure, backyard-magic, freedom fantasy',
-      spatial_distortion: 'Crooked',
+        'Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos en escala íntima.',
+      material_texture:
+        'Veta de madera expuesta al clima, cuerda fibrosa, abrasión de corteza y herrajes galvanizados oxidados.',
+      render_quality:
+        'Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.',
+      spatial_distortion: 'Inclinación artesanal, torsión orgánica y apoyo asimétrico creíble.',
       atmosphere:
-        'Adventure, high, above-ground, secret-hideout, wind-in-leaves, kid-dream independence',
+        'Íntima y lúdica, con autonomía exploratoria y abrigo frente a exposición de viento.',
       key_features:
-        'Ladder, tree trunk through floor, rope swing, lanterns, wooden deck, lookout platform',
+        'Vacíos de tronco, accesos textiles, bordes mirador, pools cálidos y uniones improvisadas.',
       creative_brief:
-        'Wood planks embrace the living trunk, architecture deferring to botany with each board bent around bark. Rope bridges sway between platforms like conversations between branches, the whole structure a negotiation with gravity and growth. The treehouse holds childhood aloft, a secret kept above the reach of adult ground.',
+        'Define una gramática treehouse transferible en la que estructura y soporte vivo se negocian mutuamente. Debe combinar improvisación artesanal, seguridad básica y sensación de descubrimiento sin infantilizar la tipología.',
     },
   },
   {
@@ -883,23 +919,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, new',
     style: {
       aesthetic:
-        'Decaying hallway, institutional horror, peeling madness, sanitarium ruin, ghost of order',
+        'Ruina institucional burocrática, donde el deterioro acumulado se convierte en sistema visual principal.',
       form_and_line:
-        'Peeling paint lines, institutional symmetry, long perspective corridor, collapsed grid, sagging ceiling',
+        'Axialidad rígida interrumpida por colapsos, repetición administrativa y fallas de cielo suspendido.',
       color_palette:
         'Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream',
       lighting_setup:
-        'Shafts of light, dust-beam theater, broken-window blade, flickering emergency bulb, pitch corners',
+        'Hazes de luz quebrada, polvo en suspensión, parpadeo eléctrico residual y esquinas de oscuridad profunda.',
       material_texture:
-        'Rot, rust, debris, flaking paint, water-stained plaster, shattered glass, mold bloom',
+        'Pintura delaminada, escurridos minerales, oxidación en uniones, yeso ampollado y trazas fúngicas progresivas.',
       render_quality:
-        'Scary, ruined, texture, abandonment beauty, decay-as-art, gothic institutional',
-      spatial_distortion: 'Collapsed ceiling',
-      atmosphere: 'Horror, sad, old, forgotten, echoing, institutional trauma, peeling silence',
+        'Lectura forense del deterioro con autenticidad de edificio público abandonado.',
+      spatial_distortion:
+        'Colapso parcial, interrupciones de eje y profundidad administrativa quebrada.',
+      atmosphere: 'Inmovilidad opresiva, vacío acústico frío y memoria administrativa detenida.',
       key_features:
-        'Wheelchair, peeling paint, long hallway, broken windows, institutional signs, collapsed ceiling',
+        'Señalética deslavada, luminarias rotas, juntas abiertas, pilares de polvo y cielos parciales caídos.',
       creative_brief:
-        'Paint peels in continents, cartographies of neglect mapping themselves across institutional green walls. A wheelchair sits where it was abandoned decades ago, patient object still waiting for someone to return. Dust motes dance in light-shafts like the only living things brave enough to still inhabit this place.',
+        'Define una gramática de abandono institucional transferible en la que cada capa material evidencie décadas de fallo de mantenimiento. La tensión debe nacer de repetición arquitectónica y evidencia física, no de susto explícito.',
     },
   },
   {
@@ -909,23 +946,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'formal, concrete',
     style: {
       aesthetic:
-        'Overgrown flower beds, romantic chaos, Gertrude Jekyll border, painterly planting, bee-hum profusion',
+        'Jardín cottage de abundancia romántica, domesticidad hortícola y espontaneidad cuidadosamente compuesta.',
       form_and_line:
-        'Organic clumps, meandering paths, herbaceous mounds, self-seeded drifts, rose-arch curve',
+        'Borduras estratificadas por altura, recorridos sinuosos, masas redondeadas y acentos verticales trepadores.',
       color_palette:
         'Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose',
       lighting_setup:
-        'Soft sun, cloud-diffused English light, dappled under-tree, golden-hour petal glow',
+        'Sol suave con difusión nubosa, dapple bajo arbolado y brillo cálido de pétalo en tarde baja.',
       material_texture:
-        'Petals, leaves, rough stone path, mossy brick, bark mulch, feathery foliage',
+        'Pétalo y hoja de textura variada, ladrillo con musgo, piedra rugosa, mulch de corteza y follaje plumoso.',
       render_quality:
-        "Romantic, messy, cottage-idyll, painter's garden, informal abundance, bee-loud beauty",
+        'Riqueza botánica pictórica con estratificación estacional legible e informalidad estructurada.',
       spatial_distortion: 'None',
-      atmosphere: 'Peaceful, sweet, dreamy, rustling, scented, time-stands-still garden',
+      atmosphere: 'Íntima, suave y vivida, con abundancia vegetal acogedora.',
       key_features:
-        'Flowers, overflowing borders, rose arches, winding path, bird bath, foxgloves, lavender',
+        'Transiciones desbordadas, manchas aromáticas, floración vertical, recorridos curvos y señales para polinizadores.',
       creative_brief:
-        'Flowers crowd the path with the gentle anarchy of things that grow without permission. Lavender spills over stone edges, foxgloves standing tall like pink sentries of abandon. The garden has forgotten where it was told to stay, and in that forgetting found something more beautiful than order.',
+        'Construye una gramática cottage transferible basada en mezcla, altura y secuencia de floración. Debe parecer libre pero responder a una estructura de capas estacionales y calidez doméstica sostenida.',
     },
   },
   {
@@ -935,23 +972,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'open field',
     style: {
       aesthetic:
-        'Hedge maze, living puzzle, green architecture, secret-garden labyrinth, puzzle palace',
+        'Tipología de laberinto vegetal formal, basada en desorientación lúdica y cerramiento topiario.',
       form_and_line:
-        'Vertical walls, right-angle corridors, dead-end geometry, spiral center, boxwood-perfect edges',
+        'Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad de muros vivos altos.',
       color_palette:
         'Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue',
       lighting_setup:
-        'Shadowy paths, light-at-end glow, sun-stripe corridor, dappled-floor pattern, mysterious dead-end',
+        'Pasillos en sombra con franjas solares, remates de luz al fondo y patrón moteado sobre grava.',
       material_texture:
-        'Leaves, clipped hedge, dense foliage surface, gravel floor, mossy statue, bark-stem wall',
+        'Seto densamente podado, hoja compacta, grava de tránsito y acentos de piedra/musgo en nodos.',
       render_quality:
-        'Mysterious, geometric, puzzle-chamber, green-architecture, perspective-trick, getting-lost poetry',
+        'Geometría topiaria precisa con tensión de wayfinding y legibilidad de recorrido.',
       spatial_distortion: 'None',
-      atmosphere: 'Lost, puzzle, confused, curious, walls-closing-in, center-discovery',
+      atmosphere:
+        'Desorientación curiosa, ansiedad lúdica y progresión cerrada hacia destino incierto.',
       key_features:
-        'High walls, dead ends, gravel path, center fountain, statue focal point, clipped precision',
+        'Cerramiento vivo recortado, ritmo de nodos, textura de ruta en grava y marcador central de terminación.',
       creative_brief:
-        'Hedge walls rise green and impenetrable, each turn a question with no obvious answer. Gravel crunches underfoot like the maze itself is counting your steps, amused by your confusion. The center waits, whether fountain or folly, a secret the boxwood has promised never to reveal too quickly.',
+        'Define una gramática de laberinto transferible donde pérdida controlada y lectura geométrica convivan. La tensión debe surgir del recorrido repetitivo y la contención vegetal, no de narrativa fantástica cerrada.',
     },
   },
   {
@@ -961,48 +999,49 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'outdoor',
     style: {
       aesthetic:
-        'Victorian palm house, glass cathedral, botanical treasury, iron-and-glass jewel, tropical collection',
+        'Glasshouse histórico en hierro y vidrio con lógica de catedral botánica climáticamente controlada.',
       form_and_line:
-        'White iron frame, curved glasshouse ribs, ridge-and-furrow roof, circular staircase, tiered planting',
+        'Bóvedas acristaladas nervadas, repetición modular de hierro colado y capas verticales vegetales.',
       color_palette:
         'White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver',
       lighting_setup:
-        'Diffused, glasshouse-bright, condensation-prism, rain-on-glass, golden-hour ironwork glow',
+        'Brillo difuso de invernadero, prismas de condensación, lluvia sobre vidrio y glow cálido sobre herrería.',
       material_texture:
-        'Glass, condensation, cast iron, terracotta tile, tropical bark, giant-leaf surface',
+        'Vidrio húmedo, hierro fundido, baldosa de terracota y textura vegetal tropical de gran hoja.',
       render_quality:
-        'Scientific, humid, Kew-Gardens grandeur, botanical-collection beauty, ironwork elegance',
+        'Conservatorio museum-grade con claridad estructural y atmósfera húmeda técnicamente creíble.',
       spatial_distortion: 'None',
-      atmosphere: 'Lush, enclosed, transported, tropical-England, conservatory-hush, plant-wonder',
+      atmosphere: 'Lushness encerrada, calma húmeda de cultivo y asombro botánico curado.',
       key_features:
-        'Iron structure, curved glass roof, spiral staircase, giant ferns, orchid display, palm canopy',
+        'Bahías de celosía de hierro, vidrio prismático condensado, doseles tropicales en capas y circulación limpia.',
       creative_brief:
-        'Iron ribs curve toward glass heaven, Victorian engineering dreaming in white filigree and condensation. Giant ferns unfurl prehistoric ambition beneath a roof that taught winter to grow tropical orchids. The glasshouse stands as a lung made architecture, breathing green long after the empire that built it faded.',
+        'Construye una gramática glasshouse transferible donde precisión de herrería, crecimiento botánico denso y humedad visible coexistan en equilibrio. Prioriza ritmo estructural y jerarquía de exhibición vegetal sobre landmark.',
     },
   },
   {
     id: 'SP07-046',
     name: 'Tropical Resort Pool',
     category: '1. Residential Interiors',
-    negativePrompt: 'cold, city',
+    negativePrompt: 'cold, cold concrete',
     style: {
       aesthetic:
-        'Infinity pool, resort paradise, liquid-edge luxury, beach-club fantasy, turquoise dream',
+        'Paisaje-hospitalidad tropical de lujo sereno, con agua y horizonte como eje compositivo principal.',
       form_and_line:
-        'Water edge, vanishing horizon, Baja shelf, palm trunks vertical, curved lazy-river',
+        'Datum de infinity edge, plataformas someras, verticales tropicales y capas de terraza-agua.',
       color_palette:
         'Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal',
       lighting_setup:
-        'Bright sun, underwater glow, tiki-torch amber, fire-pit flicker, sunset-surface shimmer',
-      material_texture: 'Water, stone, pebble-sheen plaster, pool tile, teak deck, canvas awning',
-      render_quality: 'Luxury, vacation, resort-brochure, five-star paradise, pool-day perfection',
+        'Sol intenso diurno, brillo subacuático controlado, ámbar nocturno de antorcha y shimmer de atardecer sobre lámina.',
+      material_texture:
+        'Agua reflectante, piedra térmica, revestimiento húmedo, teca exterior y textil de sombra.',
+      render_quality:
+        'Visualización hospitality premium con lujo creíble y control físico de reflejo acuático.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Relaxing, expensive, sunkissed, cocktail-bliss, endless-summer, weightless-tranquility',
+      atmosphere: 'Indulgencia de ritmo lento, serenidad cálida y escape curado.',
       key_features:
-        'Palm trees, infinity edge, submerged loungers, cabana, fire bowls, turquoise water',
+        'Línea knife-edge, planos someros, módulos de sombra, acentos de fuego y marco vegetal tropical.',
       creative_brief:
-        'Water meets sky at an edge so precise it disappears, the pool becoming a second horizon liquid and still. Palm shadows stripe across limestone, afternoon distilled into geometry of leisure. The resort floats between ocean and pool deck, a thin membrane of luxury stretched across tropical heat.',
+        'Construye una gramática de resort transferible donde relación agua-horizonte, sombra vegetal y materialidad exterior cálida definan exclusividad relajada. Debe funcionar sin marca ni destino específico.',
     },
   },
   {
@@ -1011,24 +1050,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'scary realistic',
     style: {
-      aesthetic: 'Scooby Doo spooky cartoon manor, Mystery Inc. haunt, crooked fun',
+      aesthetic:
+        'Haunted-cartoon retro, con amenaza juguetona y exageración torcida de lectura inmediata.',
       form_and_line:
-        'Wonky angles, crooked windows, leaning chimney, sagging roofline, cartoon-distort timbering',
+        'Verticales inclinadas, cubiertas combadas, vanos deformados y silueta elástica con contorno gráfico claro.',
       color_palette:
-        'Purple, Green, Black, Cartoon-Orange trim, Spooky-moon White, Dark-violet shadows',
+        'Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools',
       lighting_setup:
-        'Lightning flash, cartoon-moon glow, window-silhouette yellow, dramatic-thunder strobe, bat-shadow',
+        'Keys de relámpago intermitente, contraluz lunar frío, brillos selectivos y bloques cel-shade de alto contraste.',
       material_texture:
-        'Painted, ink-line, cel-shade, flat-color, wood-siding cartoon, weathervane silhouette',
+        'Planos pintados flat, contorno entintado, gradientes limitados y motivos de madera simplificada de estilo TV.',
       render_quality:
-        'Spooky, fun, Hanna-Barbera charm, cartoon-haunt delight, flat-color perfection, nostalgic-scary',
-      spatial_distortion: 'Face in window',
-      atmosphere:
-        'Spooky, classic, cartoon-creepy, silly-scare, nostalgia, Saturday-morning thrill',
+        'Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.',
+      spatial_distortion:
+        'Deformación elástica, inclinación imposible y gestos pareidólicos sugeridos.',
+      atmosphere: 'Campy, traviesa y teatral, con suspenso amable sin violencia realista.',
       key_features:
-        'Bats, crooked shutters, lightning bolt, full moon, weathervane, creepy tree, iron gate',
+        'Perfil inclinado, relámpagos zigzag, contraluz lunar, siluetas spooky y ritmo de gate gráfico.',
       creative_brief:
-        'Crooked shutters hang at impossible angles, the whole house leaning as if trying to escape its own foundation. Lightning cracks the purple sky behind weathervanes that spin with cartoon panic. The manor is scary the way Saturday mornings were scary, all thrill and no nightmare, spooky enough to hide behind the couch but never behind your eyes.',
+        'Formula una gramática haunted-cartoon transferible donde forma torcida, contraste de tormenta y staging spooky lúdico se mantengan constantes. Debe evitar por completo el horror realista y sostener legibilidad gráfica.',
     },
   },
   {
@@ -1037,25 +1077,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'surface',
     style: {
-      aesthetic:
-        'Tunnel cross section, subterranean city, insect engineering, soil labyrinth, colony metropolis',
+      aesthetic: 'Cutaway subterráneo con red capilar y zonificación biofuncional estricta.',
       form_and_line:
-        'Tunnels, branching-chamber network, gallery-nodes, vertical shafts, fungus-garden alcoves, queen-chamber oval',
+        'Túneles capilares ramificados, cámaras nodales, conectores verticales y estratos seccionados por capas.',
       color_palette:
-        'Sand, Dirt, Amber-gel fill, Chamber-dark Brown, Ant-black silhouette, Tunneling-fresh earth',
+        'Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones',
       lighting_setup:
-        'Side light, gel-illuminated cross-section, tunnel-depth shadow, chamber-glow, observation-pane backlit',
+        'Iluminación lateral de corte, transmisión translúcida en gel y pockets de sombra controlada en profundidad.',
       material_texture:
-        'Grainy, sand-particle, soil-structure, gel-embedded clarity, tunnel-wall compact, mandible-scarred',
+        'Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.',
       render_quality:
-        'Subterranean, busy, ant-farm fascination, insect-city realism, colony-industry, cross-section beauty',
+        'Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Busy, hidden, organized-chaos, colony-purpose, underfoot-world, instinct-hive, tunnel-darkness',
+      atmosphere: 'Laboriosa, biológica y funcional, escondida bajo superficie observada.',
       key_features:
-        "Tunnels, chambers, queen's chamber, worker ants, fungus garden, brood cells, glass observation pane",
+        'Jerarquía de malla capilar, cámaras funcionales, ejes de circulación vertical y borde transparente de observación.',
       creative_brief:
-        'Tunnels branch through amber gel like a circulatory system excavated from the body of the earth. Chambers bloom at tunnel junctions, each a specialized organ of the colony: nursery, granary, throne room for the queen. The cross-section reveals a civilization that built its empire in darkness, architecture without architects, perfect in its blind purpose.',
+        'Define una gramática reusable de ant-farm cutaway donde circulación ramificada, cámaras por función y estratificación granular del suelo permanezcan consistentes entre composiciones.',
     },
   },
   {
@@ -1065,23 +1103,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth',
     style: {
       aesthetic:
-        'Tech cube, cybernetic-collective vessel, assimilation architecture, networked sentience, adaptive geometry',
+        'Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.',
       form_and_line:
-        'Pipes, conduit-bundles, alcove-grid, regeneration-niche, data-node columns, tractor-beam emitter rings',
+        'Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de servicio.',
       color_palette:
-        'Dark Grey, Green light, Cybernetic-sick Green, Cold-metal Black, Plasma-blue, Necrotic-circuit glow',
+        'Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep void-shadow undertones',
       lighting_setup:
-        'Space, interior-green ambient, alcove-spot, plasma-conduit pulse, tractor-beam green wash, deep-space void',
+        'Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de alto contraste.',
       material_texture:
-        'Greebles, cybernetic-surface detail, bio-mechanical interface, tube-bundle, armor-plate, drone-socket, regeneration gel',
+        'Placas greeble densas, interfaces biomecánicas, arneses de cable, gel translúcido y pátina conductiva desgastada.',
       render_quality:
-        'Complex, scary, Borg-collective menace, assimilation-horror, cybernetic-nightmare, hive-precision',
+        'Tecnoindustrial denso con repetición modular estricta y precisión mecánica opresiva.',
       spatial_distortion: 'None',
-      atmosphere: 'Ominous, assimilating, resistance is futile',
+      atmosphere: 'Ominosa, deshumanizada y eficiente, con invasividad tecnológica constante.',
       key_features:
-        'Cube, regeneration alcoves, conduit bundles, green plasma, drone figures, tractor beam, hive architecture',
+        'Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.',
       creative_brief:
-        'Green plasma pulses through conduit bundles like the cube itself has a circulatory system of cold light. Regeneration alcoves line the walls in infinite grid, each niche waiting for a drone that will rise and serve. The architecture hums with collective purpose, every surface a circuit, every corridor a vein, beauty eliminated in favor of function perfected into horror.',
+        'Construye una gramática reusable de cybernetic-hive donde macroforma cúbica ortogonal, infraestructura saturada de conducciones y sistemas colectivos fosforoverdes sostengan identidad consistente.',
     },
   },
   {
@@ -1091,24 +1129,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'small',
     style: {
       aesthetic:
-        'Bigger on the inside, impossible interior beyond outer shell, dimensional transcendence',
+        'Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión interior imposible.',
       form_and_line:
-        'Hexagons/Roundels, organic-coral architecture, console-pedestal, gallery-level curves, time-rotor column, infinite-arches',
+        'Eje central energético, nodo hex radial, repetición de roundels y anillos en recesión no euclidiana.',
       color_palette:
-        'Orange/Teal, Coral-amber glow, Deep-ocean Teal, Console-copper, Roundel-warm gold, Time-vortex blue',
+        'Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows',
       lighting_setup:
-        'Console glow, time-rotor pulse, roundel-indirect, gallery-level ambient, regeneration-energy gold, warm coral wash',
+        'Pulso lumínico central, spill de mando, rebote indirecto en roundels y bloom dorado controlado.',
       material_texture:
-        'Tech, organic, grown-coral surface, control-console brass, glass roundel, copper wire, gel-pack',
+        'Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y cableado trenzado.',
       render_quality:
-        'Sci-fi, chaotic, Doctor-Who wonder, impossible-dimensions, time-machine Baroque, bigger-on-the-inside magic',
-      spatial_distortion: 'Time rotor',
+        'Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.',
+      spatial_distortion:
+        'Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation',
       atmosphere:
-        'Adventure, time, wonder-awe, time-lord, infinite-explore, dimensional-impossible, home-among-stars',
+        'Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.',
       key_features:
-        'Central column, roundel walls, hexagonal console, time rotor, gallery levels, organic architecture, infinite depth',
+        'Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.',
       creative_brief:
-        'Console pedestal rises from coral-grown floor, organic architecture pulsing with the slow respiration of a machine that has outgrown machinery. Roundels line curved walls like eyes that watch every timeline simultaneously, the chamber bigger than its exterior, bigger than geometry, bigger than the concept of containment. Time itself pools in the rotor column, the room a vessel sailing on currents of causality.',
+        'Formula una gramática reusable de console-chamber "bigger-on-the-inside" donde jerarquía de energía central, ritmo mural roundel y capas orgánico- retrotech dimensionales permanezcan constantes entre sujetos.',
     },
   },
   {
@@ -1118,24 +1157,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground',
     style: {
       aesthetic:
-        'Aerostat-retrofuturist luxury architecture style with buoyant megastructure forms and serene high-altitude modernism',
+        'Retrofuturismo nuboso de gran altitud, entre lujo modernista y equilibrio aerostático sereno.',
       form_and_line:
-        'Streamlined aerodynamic curves, concentric platform geometries, slender fin-like spires, soft dome articulation',
+        'Plataformas circulares estratificadas, cubiertas aerodinámicas curvadas, aletas de aguja y anillos concéntricos suspendidos.',
       color_palette:
-        'Warm amber atmosphere, pale ivory structure tones, rosy gas-cloud gradients, brushed gold accents, cool silver highlights',
+        'Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne metallics, and cool silver edge highlights',
       lighting_setup:
-        'Diffuse horizon glow with elevated ambient wrap, soft beacon punctuations, restrained specular skyline shimmer',
+        'Ambiente difuso de horizonte, balizas suaves, backscatter cálido y bloom controlado en atmósfera de altura.',
       material_texture:
-        'Polished alloy skin, satin glass surfaces, smooth composite hulls, fine seam detailing, low-roughness deck plates',
+        'Revestimiento de aleación satinada, piel compuesta pulida, vidrio de grano bajo y costuras de precisión.',
       render_quality:
-        'Premium speculative-architecture finish with retro-future elegance, high clarity, and controlled atmospheric bloom',
+        'Arquitectura especulativa premium, legible a distancia y separada por capas atmosféricas elegantes.',
       spatial_distortion:
-        'Vertical openness with gentle curvature emphasis and depth staged through stacked floating structural tiers',
-      atmosphere: 'Majestic, quiet, elevated, orderly, aspirational',
+        'Emphasize stacked floating tier depth, long vertical voids, and gentle perspective curvature without surreal deformation',
+      atmosphere: 'Refinada, tranquila y aspiracional, con gracia tecnológica diplomática.',
       key_features:
-        'Aerostat silhouette language, dome-platform hierarchy, warm atmosphere-grade color wash, refined metallic surface treatment',
+        'Jerarquía de plataformas concéntricas, domos terminales, aproximaciones balizadas y contorno metálico prístino.',
       creative_brief:
-        'Keep the preset defined by high-altitude retrofuturist architecture grammar: buoyant forms, warm atmospheric light, and polished structural serenity should remain recognizable across different subjects.',
+        'Define una gramática cloud-metropolis transferible de tiers flotantes, atmósfera cálida de ocaso y superficies retrofuturistas pulidas, evitando dependencia de una ciudad licenciada específica.',
     },
   },
   {
@@ -1144,23 +1183,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'smooth, realistic',
     style: {
-      aesthetic: 'Lego toy brick world, ABS-plastic metropolis, snap-together skyline',
+      aesthetic:
+        'Toy brick-built con ensamblaje modular ABS, lógica stud-visible e ingeniería lúdica simplificada.',
       form_and_line:
-        'Brick seams, stud-grid geometry, modular-block stacking, stepped-pyramid, interlocking corners',
-      color_palette: 'Primary plastic, Bright Red, Yellow, Blue, Green, Black, White, Grey',
+        'Retícula ortogonal de studs, masa escalonada por bloques, trabas de esquina y transición geométrica de escala juguete.',
+      color_palette:
+        'Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing blocks, and occasional transparent-plastic highlight tones',
       lighting_setup:
-        'Glossy, plastic-surface reflection, light-pool on studs, playroom-filtered sun, specular shine',
+        'Key difusa amplia de interior, especulares plásticas nítidas y agrupaciones de highlight sobre coronas stud.',
       material_texture:
-        'Plastic studs, injection-mold surface, ABS sheen, clutch-power grip, brick-name logo, smooth-slope',
+        'Brillo ABS inyectado, tapas circulares, juntas de pieza, transiciones slope y marcas leves de moldeo.',
       render_quality:
-        'Toy, blocky, LEGO-catalog perfection, snap-together realism, brick-built charm, Danish toy beauty',
+        'Toy-architecture de lectura alta con ensamblaje preciso y abstracción de bloque no realista deliberada.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Playful, constructed, childhood-creative, instruction-following, brick-searching, imaginative-build',
+      atmosphere: 'Energética, constructiva y optimista, guiada por sistema modular.',
       key_features:
-        'Studs, brick texture, minifigure scale, interlocking bricks, modular builds, brick separator, baseplate',
+        'Campos de studs visibles, huellas alineadas a baseplate, apilado modular, seams interlock y color blocking plástico intenso.',
       creative_brief:
-        'Studs catch light on their tiny circular crowns, each brick a pixel in a world built one snap at a time. Modular walls rise in primary-color determination, the city skyline rendered in ABS plastic and childhood ambition. Instructions lie scattered nearby, already abandoned for the superior architecture of imagination.',
+        'Construye una gramática brick-built reusable con geometría modular por stud, respuesta plástica ABS brillante y color blocking consistente en cualquier sujeto.',
     },
   },
   {
@@ -1169,52 +1209,51 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'clean energy',
     style: {
-      aesthetic:
-        'Steam powered London, brass-age metropolis, Victorian science fiction, Jules Verne future, clockwork empire',
+      aesthetic: 'Futurismo industrial neo-victoriano de vapor, latón y maquinaria especulativa.',
       form_and_line:
-        'Pipes, gears, clock-face towers, dirigible-dock arches, chimney stacks, flywheel silhouettes',
+        'Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos de tránsito aéreo.',
       color_palette:
         'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
       lighting_setup:
-        'Gaslight, warm amber street-glow, gear-spark, hissing steam-vent light, amber window, smog-diffused',
+        'Gaslight ámbar, glow difuso en smog, chispas mecánicas y ventilación de vapor visible.',
       material_texture:
-        'Metal, brick, riveted copper, wood panel, leather, steam-whistle brass, soot-coat',
+        'Metal y ladrillo, cobre remachado, panel de madera, cuero y depósito de hollín en superficie.',
       render_quality:
-        'Industrial, retro, speculative-Victorian, gear-and-brass romance, steam-punk opulence',
+        'Steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.',
       spatial_distortion: 'None',
-      atmosphere:
-        "Busy, smoky, inventive, gear-turning, coal-breath, thrilling-progress, stoker's warmth",
+      atmosphere: 'Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.',
       key_features:
-        'Gears, steam vents, brass pipes, clock tower, dirigible, copper boilers, cobblestone streets',
+        'Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de tránsito aéreo.',
       creative_brief:
-        'Gears mesh with clockwork certainty while steam hisses from brass joints, the city breathing through iron lungs. Dirigibles drift between chimney stacks, leviathans of canvas and ambition navigating a sky thick with progress. Every rivet tells a story of hands that believed the future would taste of coal smoke and ingenuity.',
+        'Define una gramática steampunk transferible por infraestructura de vapor, articulación en latón y forma neo-victoriana. Debe ser densa e inventiva sin depender de ciudad o referencia literaria única.',
     },
   },
   {
     id: 'SP07-054',
     name: 'Cyberpunk Slums',
     category: '1. Residential Interiors',
-    negativePrompt: 'clean, wide streets',
+    negativePrompt: 'clean, wide empty space',
     style: {
       aesthetic:
-        'Hyper-dense techno-brutalist residential style focused on vertical compression, improvised modularity, and infrastructural overload',
+        'Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural persistente.',
       form_and_line:
-        'Repeating module stacks, cable-bundle diagonals, service-ladder zigzags, grille and shutter rhythms, fragmented light channels',
+        'Apilamiento modular repetitivo, diagonales de cableado, escaleras de servicio zigzagueantes y canales de luz fragmentados.',
       color_palette:
         'Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints',
       lighting_setup:
-        'Persistent artificial spill, flicker-prone practicals, hard occlusion pockets, wet-surface micro-reflections, narrow contrast windows',
+        'Derrame artificial continuo, prácticos inestables, oclusión dura y microreflejos húmedos de contraste estrecho.',
       material_texture:
-        'Corrugated steel fatigue, polymer grime bloom, layered paint peel, stained concrete, oxidized fastener patina, damp residue',
+        'Acero corrugado fatigado, polímero con mugre incrustada, pintura pelada en capas y hormigón manchado.',
       render_quality:
-        'High-detail architectural dystopia rendering with clutter legibility, controlled noise, and material density realism',
+        'Densidad distópica de detalle alto, clutter legible y ruido visual controlado.',
       spatial_distortion:
         'Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals',
-      atmosphere: 'Oppressive, overbuilt, unstable, electrically saturated, survivalist',
+      atmosphere:
+        'Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.',
       key_features:
-        'Modular stack logic, exposed service infrastructure, cable congestion patterns, degraded industrial surfaces, constrained circulation geometry',
+        'Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y circulación constreñida.',
       creative_brief:
-        'Preserve the style as a system of compression and infrastructural excess: the visual identity must emerge from modular density, material wear, and electric clutter rather than a specific named district.',
+        'Construye una gramática slum-cyber transferible en la que densidad modular, desgaste material y clutter eléctrico definan identidad. Debe sentirse estructuralmente comprimida, no meramente sucia o caótica.',
     },
   },
   {
@@ -1224,24 +1263,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic',
     style: {
       aesthetic:
-        'Model village, papercraft diorama, folded world, origami architecture, card-stock miniature',
+        'Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad de maqueta hecha a mano.',
       form_and_line:
-        'Cut edges, fold-score geometry, glue-tab seams, pop-up angles, diorama-depth layering',
+        'Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad baja apilada.',
       color_palette:
-        'White paper, Kraft Brown, Newsprint Grey, Colored-card stock tints, Tracing-paper Milk',
+        'Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents',
       lighting_setup:
-        'Studio soft, flat-model light, cut-shadow starkness, paper-translucency glow, tabletop spot',
+        'Key de mesa suave, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.',
       material_texture:
-        'Paper grain, card-stock tooth, fold-creases, cut-edge fiber, glue-bead, bristol surface',
+        'Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.',
       render_quality:
-        'Fragile, craft, miniature-precision, paper-sculpture art, architectural-model beauty',
+        'Miniatura artesanal de alta claridad con escala controlada y materialidad deliberadamente no fotoreal.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Quiet, delicate, handmade, still-life, cardboard-dream, patient-craft, tiny-perfection',
+      atmosphere: 'Delicada, paciente y contemplativa, con ensamblaje manual explícito.',
       key_features:
-        'Fold lines, cut edges, miniature scale, glue tabs, layered depth, pop-up elements, paper grain',
+        'Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.',
       creative_brief:
-        'Cut edges cast razor shadows, each fold a decision frozen in card stock and craft knife precision. The town rises from paper flats like a pop-up book dreaming itself three-dimensional. Glue tabs hold buildings together with the tender fragility of things made by hands that knew it would not last.',
+        'Mantén una gramática papercraft transferible donde construcción planar plegada, costuras visibles y profundidad de diorama definan identidad en múltiples sujetos.',
     },
   },
   {
@@ -1251,24 +1289,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'industrial, blocky',
     style: {
       aesthetic:
-        'Art Nouveau in nature, elven grace, valley sanctuary, waterfall palace, timeless woodland harmony',
+        'Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de alta fantasía.',
       form_and_line:
-        'Elegant curves, filigree arches, natural-branch colonnades, cascading terraces, leaf-tracery windows',
+        'Arcos filigranados, soportes derivados de ramas, estratos en cascada y curvas estructurales no ortogonales.',
       color_palette:
         'Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk',
       lighting_setup:
-        'Magical glow, elf-lantern warmth, waterfall-reflected moonlight, star-dome canopy, inner-light radiance',
+        'Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de carácter ceremonial.',
       material_texture:
-        'Carved stone, leaves, living wood, mother-of-pearl inlay, silver filigree, crystalline light',
+        'Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo cristalino.',
       render_quality:
-        'Ethereal, ancient, Tolkien-beauty, elven-crafted perfection, sacred wood, Middle-earth elegance',
+        'Alta fidelidad fantástica con integración biótica-artesanal y ornamento de lectura precisa.',
       spatial_distortion: 'None',
-      atmosphere:
-        "Magical, safe, timeless, song-filled, story-sanctuary, hidden-peace, weary-traveler's rest",
+      atmosphere: 'Refugio sacro, melancolía luminosa y continuidad atemporal.',
       key_features:
-        'Waterfalls, delicate bridges, open-air halls, elven pavilions, tree-integrated architecture, star-viewing terrace',
+        'Estratos atravesados por agua, fusión árbol-estructura, trazas finas suspendidas y orientación celeste.',
       creative_brief:
-        'Waterfalls thread through filigree arches like liquid silver poured through elven hands. Trees lean into architecture, branches becoming columns in a hall that never decided where nature ends and craft begins. The valley holds its breath in perpetual twilight, a sanctuary that appears only when the world has grown tired enough to deserve it.',
+        'Define una gramática élfica transferible basada en curvatura elegante, fusión biótica y serenidad luminosa. Debe mantener sofisticación fantástica sin quedar anclada a una localización única.',
     },
   },
   {
@@ -1278,24 +1315,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wood, light, delicate',
     style: {
       aesthetic:
-        'Underground hall, mountain kingdom, stone-deep majesty, forge-heart stronghold, ancestral deep',
+        'Monumentalidad enana de tierra profunda, calor de forja y doctrina ancestral de cantería pesada.',
       form_and_line:
-        'Geometric blocky, megalithic pillars, vaulted axe-cut ceiling, rune-engraved arch, broad axes',
+        'Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.',
       color_palette:
         'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
       lighting_setup:
-        'Lava glow, forge-fire, crystal-lamp amber, torch-bracket rhythm, subterranean orange warmth',
+        'Brillo térmico de forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja mineral.',
       material_texture:
-        'Hewn stone, chisel-marked granite, hammered gold, molten iron, vein crystal, thick leather',
+        'Granito labrado, marcas de cincel, oro martillado, hierro fundido, vetas cristalinas y cuero denso.',
       render_quality:
-        'Heavy, industrial fantasy, Khazad-dum majesty, deep-delver craftsmanship, stone-song epic',
+        'Fortaleza épica de alta fidelidad con peso material y gravedad estructural contundente.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Epic, strong, ancient-resolve, forge-breath, deep-root, clan-hall echoes, enduring pride',
-      key_features:
-        'Pillars, great hall, golden hoard, forge anvil, rune carvings, lava channel, axe-trophies',
+      atmosphere: 'Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.',
+      key_features: 'Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.',
       creative_brief:
-        'Stone pillars rise from living rock, axes still singing in the chisel marks that shaped them. Gold veins pulse through granite like the mountain itself has a circulatory system of treasure. The hall echoes with forge-hammer ghosts, every shadow cast by a fire that has burned for ten thousand years.',
+        'Construye una gramática enana transferible donde masa pétrea, luz de forja y oficio rúnico definan identidad. Debe comunicar linaje y durabilidad sin depender de un recinto licenciado concreto.',
     },
   },
   {
@@ -1305,24 +1340,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square, tall',
     style: {
       aesthetic:
-        'Round door in hill, Shire dwelling, earth-sheltered home, cozy burrow, garden-roof cottage',
+        'Domesticidad pastoral semienterrada de escala humana, con umbrales circulares y calidez artesanal cotidiana.',
       form_and_line:
-        'Round, curved tunnel, arch windows, circular symmetry, low-earth dome, winding path',
+        'Aberturas redondas dominantes, cubierta bermada baja, corredores arqueados suaves y planificación radial íntima.',
       color_palette:
-        'Green, Wood, Earth, Brass knob, Buttercream plaster, Flower-garden colors, Warm brick',
+        'Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes',
       lighting_setup:
-        'Cozy warm, hearth-glow, round-window light, candle-sconce, tunnel-lantern, afternoon-gold',
+        'Clave cálida de hogar, spill bajo de umbral, prácticos de linterna y rebote difuso de tarde.',
       material_texture:
-        'Grass, wood, clay plaster, flagstone floor, brass fixtures, wattle, herb garden',
+        'Cubierta de césped, madera cepillada a mano, revoco de cal-arcilla, piedra gastada y latón cepillado.',
       render_quality:
-        'Cozy, hidden, Tolkien-Shire charm, hobbit-hole perfection, underground-warmth, storybook comfort',
+        'Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Homey, safe, garden-sheltered, tea-ready, pipe-smoke, fireside tales, earth-embrace',
+      atmosphere: 'Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.',
       key_features:
-        'Round door, grass roof, round windows, hearth fireplace, pantry shelves, brass knob center',
+        'Umbral circular, cubierta vegetal, aperturas redondeadas y núcleo compacto de calor doméstico.',
       creative_brief:
-        'Grass roof slopes into hillside, architecture hiding its ambition beneath a blanket of wildflowers and humility. The round door opens inward with brass-center welcome, a portal into warmth that smells of fresh bread and pipe tobacco. The hill embraces its occupant like earth learning to love the creature that burrowed into it.',
+        'Define una gramática hobbit transferible de arquitectura semienterrada, umbral circular y artesanía cálida. Debe mantener intimidad pastoral y funcionalidad doméstica sin depender de protagonista o set concreto.',
     },
   },
   {
@@ -1332,22 +1366,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'metal',
     style: {
       aesthetic:
-        'Huts in redwoods, arboreal village, treetop tribe, giant-sequoia settlement, leaf-hidden community',
+        'Tribal-canopy elevado con ingeniería orgánica artesanal y vida comunal suspendida.',
       form_and_line:
-        'Rope bridges, suspension curves, platform circles, trunk-wrap rings, ladder diagonals',
-      color_palette: 'Brown, Green, Rope Tan, Bark Grey, Canopy-filtered Gold, Redwood Rust',
+        'Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles orgánicos.',
+      color_palette:
+        'Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling',
       lighting_setup:
-        'Forest filter, canopy-dappled, lantern-glow, sunset-through-leaves, campfire amber, star-through-branches',
-      material_texture: 'Wood, rope, thatch, woven vine, leather hide, log, bark',
+        'Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.',
+      material_texture:
+        'Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.',
       render_quality:
-        'Primitive, high, Star-Wars Endor charm, forest-moon authenticity, tree-village adventure',
+        'Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Tribal, nature, canopy-home, forest-guardian, wind-through-bridge, leaf-whisper, tribe-gathering',
+      atmosphere: 'Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.',
       key_features:
-        'Bridges, platform huts, rope ladders, trunk walkways, lookout platforms, thatched roofs, hanging lanterns',
+        'Cuerdas enlazadas, plataformas radiales, pasarelas ceñidas al soporte vivo y nidos de observación elevados.',
       creative_brief:
-        'Rope bridges sway between redwood giants, suspension arcs tracing the path of wind through ancient canopy. Platforms wrap around trunks like hands holding old friends, architecture that bows to botany with every beam. The village lives where light filters through a million needles, a civilization built at the altitude of birdsong.',
+        'Construye una gramática tribal-canopy transferible basada en plataformas elevadas, suspensión por cuerda y respeto estructural al árbol vivo, sin fijarse a un set concreto.',
     },
   },
   {
@@ -1357,24 +1392,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard edges',
     style: {
       aesthetic:
-        'Bouncy house, party inflatable, air-filled fun palace, childhood carnival, birthday-bounce kingdom',
+        'Inflable de juego con masa blanda presurizada, color blocking festivo y espacialidad temporal.',
       form_and_line:
-        'Seams, inflated tube curves, turret-bulge cylinders, rounded-battlement bumps, fan-hose snake',
+        'Tubos neumáticos abultados, segmentación soldada, lóbulos redondeados de torre y geometría de anclaje por manguera.',
       color_palette:
-        'Neon vinyl, Hot Pink, Electric Yellow, Safety Orange, Royal Blue inflatable, Bright Green',
+        'High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents',
       lighting_setup:
-        'Glossy, vinyl-shine reflection, sun-through-vinyl translucency, party-string lights, fan-inflated tension',
+        'Sol difuso exterior con especulares fuertes en vinilo, glow translúcido de panel y bloom suave en borde inflado.',
       material_texture:
-        'Plastic vinyl, glossy PVC, seam-weld ridge, inflatable-taut surface, bouncy-air resistance, nylon-web tie',
+        'Piel PVC glossy, crestas de soldadura térmica, membranas tensas, arrugas en carga y herrajes de blower.',
       render_quality:
-        'Soft, air filled, bounce-house joy, backyard-carnival, inflatable-castle kitsch, birthday-party centerpiece',
-      spatial_distortion: 'Bulging',
-      atmosphere:
-        'Fun, bouncy, party-excitement, air-pressure, squeaky-joy, kid-energy, temporary-amusement',
+        'Render inflable legible y juguetón con fidelidad material alta y brillo controlado de instalación temporal.',
+      spatial_distortion:
+        'Soft-volume inflation bulge and pressure-rounded edge behavior across all masses',
+      atmosphere: 'Energética, cinética y festiva, inequívocamente temporal.',
       key_features:
-        'Wrinkles, seam lines, blower fan, bright color panels, turrets, slide opening, net windows',
+        'Bastidor tubular presurizado, retícula de costura térmica, zonificación vívida, paneles mesh y nodos de inflado visibles.',
       creative_brief:
-        'Vinyl turrets bulge with air-pressure pride, seams straining against the enthusiasm trapped within. Electric yellow panels glow with the translucency of thin plastic and thick joy, the castle trembling slightly as children inside test the physics of bouncing. The blower fan hums its eternal note, the heartbeat of temporary architecture.',
+        'Construye un sistema reusable de tratamiento inflable con masa redondeada por presión, topología de costura soldada y zonificación cromática saturada consistente entre sujetos.',
     },
   },
   {
@@ -1384,24 +1419,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'inedible',
     style: {
       aesthetic:
-        'Cookie house, Christmas confection, Hansel-and-Gretel cottage, holiday bakery architecture, edible fairytale',
+        'Construcción festiva comestible con lógica de ornamento confitero y masa de cuento artesanal.',
       form_and_line:
-        'Icing piping, scalloped roof-tile cookies, gumdrop border lines, candy-cane porch columns, pretzel-log walls',
+        'Contornos de icing trazado, teja de galleta festoneada, repetición de columnas candy y marcos de pretzel redondeados.',
       color_palette:
-        'Brown, White, Candy, Gumdrop Red/Green, Icing Pink, Peppermint Swirl, Golden cookie',
+        'Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel notes, and sprinkle multicolor highlights',
       lighting_setup:
-        'Warm, oven-glow, Christmas-light twinkle, sugar-sparkle, cozy-window amber, holiday-candle',
+        'Ámbar interior cálido, destellos de cristal de azúcar, twinkle festivo suave y sombra cozy de bajo contraste.',
       material_texture:
-        'Cookie, sugar, royal icing, hard candy, pretzel, chocolate, sprinkled surface, gum paste',
+        'Grano de galleta horneada, relieve de icing, polvo azucarado cristalino, gloss candy duro y acentos de glaseado chocolate.',
       render_quality:
-        'Christmas, sweet, holiday-baking beauty, edible-architecture charm, gingerbread-perfection, festive-delicious',
+        'Confection-architecture de alto detalle con materialidad comestible legible y precisión decorativa artesanal.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Festive, yummy, holiday-joy, kitchen-warm, candy-smell, childhood-December, sweet-tradition',
+      atmosphere: 'Festiva, indulgente y acogedora, con ritual artesanal celebratorio.',
       key_features:
-        'Gumdrops, icing snow, candy cane columns, cookie roof, peppermint path, pretzel fence, sprinkle roof',
+        'Juntas definidas por icing, nodos gumdrop, ritmo de cubierta cookie, motivos peppermint lineales y microdetalle sprinkle.',
       creative_brief:
-        'Royal icing traces snow-scallops along cookie-tile rooflines, each piped ridge a small triumph of sugar over structural engineering. Gumdrops march in chromatic guard along pretzel-log walls, candy sentinels at their sweetest posts. The house glows with oven-warmth still fresh, a dwelling built to be eaten, architecture that understands its destiny is delicious demolition.',
+        'Define una gramática reusable de gingerbread donde masa comestible, linework estructural de icing y sistema ornamental candy sean invariantes de identidad entre sujetos.',
     },
   },
   {
@@ -1410,24 +1444,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'square',
     style: {
-      aesthetic: 'Smurf whimsical mushroom cottage, tiny blue village',
+      aesthetic: 'Vernáculo fúngico encantado con masa bulbosa y lógica ecológica miniatura.',
       form_and_line:
-        'Organic, stem-cylinder, cap-dome, gill-undercut, fairy-ring cluster, bulbous, soft-swell',
+        'Columnas tipo tallo, cubiertas domo-cap, intradós acanalado de láminas y transiciones orgánicas de volumen hinchado.',
       color_palette:
-        'Red cap, White stalk, Spore Brown, Moss Green, Fairy Blue, Forest-floor Amber, Toadstool-spot Cream',
+        'Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm forest-amber undertones',
       lighting_setup:
-        'Forest floor, spotted-light dapple, mushroom-glow bioluminescent, shade-cool, firefly-twinkle, under-cap shadow',
+        'Luz moteada filtrada por dosel, relleno frío de sombra y acentos bioluminiscentes sutiles en bordes bajos.',
       material_texture:
-        'Fungus, mushroom-cap skin, gill-ribs, velvet moss, spore-dust, forest loam, dewdrop',
+        'Piel fúngica mate, moteado de sombrero, costillas de lámina, manto musgoso húmedo y polvo fino de esporas.',
       render_quality:
-        'Fantasy, cute, fairy-tale fungi, Smurf-village charm, woodland-magic, storybook-enchantment',
-      spatial_distortion: 'Bulbous',
-      atmosphere:
-        'Magic, small, hidden, fairy-glade, tiny-footstep, enchanted-forest, wee-folk safe',
+        'Fantasía storybook con curvatura orgánica fiel y detalle táctil de micromaterial biológico.',
+      spatial_distortion:
+        'Cap-and-stem volumetric swelling and softened miniature-scale proportion stretching',
+      atmosphere: 'Encantada, protegida y de escala diminuta con integración ecológica total.',
       key_features:
-        'Spots, red cap, white stem, tiny round door, chimney smoke, mushroom village, moss carpet',
+        'Siluetas cap-dome, tallos estructurales, aperturas circulares, base de musgo y composición en clúster.',
       creative_brief:
-        'Red caps dome above white stalks like tiny observatories built by a civilization that worships at the altar of spore and soil. Chimney smoke curls from mushroom-crown to forest canopy, the only sign of habitation in a glade that keeps secrets. The village hides at ankle height, a world you would miss if you walked through it standing up.',
+        'Define una gramática reusable de mushroom-house donde jerarquía cap-stem, volumen fúngico bulboso y escala ecológica miniatura sostengan identidad estable entre sujetos.',
     },
   },
   {
@@ -1437,24 +1471,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'full wall',
     style: {
       aesthetic:
-        'House cross section, peek-inside home, miniature rooms exposed, four-wall transparency, voyeur-dwelling',
+        'Miniatura en corte abierto, curada por compartimentos-caja y precisión de exhibición artesanal.',
       form_and_line:
-        'Room dividers, floor-level rectangles, staircase-diagonal, furniture-silhouette grid, doll-scale proportions',
+        'Cara retirada en sección, bandas apiladas, retícula de compartimentos y diagonales de conexión compacta.',
       color_palette:
-        'Pastel, Wallpaper-print colors, Toy-furniture Wood, Miniature-carpet Beige, Doll-dress Pink',
+        'Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige bases, dusty pink highlights, and muted decorative accents',
       lighting_setup:
-        'Flat, even-room illumination, wall-mounted bead-light, room-box shadow, display brightness',
+        'Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo para lectura seccional.',
       material_texture:
-        'Miniature, dollhouse-wood, doll-fabric, tiny ceramic, paper wallpaper, plastic-toy, painted metal',
+        'Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín lacados.',
       render_quality:
-        'Cute, organized, dollhouse-precision, miniature-life, cross-section charm, play-scale perfection',
+        'Miniatura cutaway de alta claridad con legibilidad compartimento-por-compartimento y densidad decorativa balanceada.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Playful, voyeur, tiny-life, peek-through, imaginative-play, ordered-doll-world, childhood-make-believe',
+      atmosphere: 'Lúdica, íntima y ordenada, con teatralidad doméstica curada.',
       key_features:
-        'No front wall, miniature furniture, tiny staircase, room-by-room view, doll occupants, cross-section edge, tiny chandelier',
+        'Frente abierto seccionado, módulos apilados, transiciones diagonales y perímetros de corte nítidos.',
       creative_brief:
-        'Rooms stack in cross-section honesty, no front wall to hide the miniature dramas unfolding on each floor. Tiny chandeliers drip from popsicle-stick ceilings, furniture arranged for occupants the size of thumbs. The dollhouse reveals everything, a home without secrets, each room a stage waiting for small hands to begin the play.',
+        'Formula una gramática reusable de dollhouse-cutaway donde apilado seccional abierto, interiorismo miniatura y proporción toy-scale dominen el estilo sin depender del tema específico.',
     },
   },
   {
@@ -1464,24 +1497,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'planet surface',
     style: {
       aesthetic:
-        'Megastructure around sun, star-engineered shell, Kardashev-civilization monument, solar-harvest sphere, cosmic-engineering',
+        'Megaestructura estelar de escala civilizatoria con encapsulamiento luminoso y monumentalismo industrial cósmico.',
       form_and_line:
-        'Grid, panel-cell hexagons, curved-horizon lattice, inner-surface curvature, star-centered symmetry',
+        'Retículas hex-panel, costillas concéntricas, simetría radial estelar y segmentación orbital de anillos en curvatura extrema.',
       color_palette:
-        'Black silhouette against sun, Solar-flare Orange/Gold, Edge-burn White, Dark-panel Grey, Corona-blue',
+        'Near-black structural silhouettes, solar gold-orange emission, corona-white edge burn, deep panel graphite grays, and faint ionized blue fringes',
       lighting_setup:
-        'Backlit, star-brilliance edge, panel-silhouette drama, inner-surface self-illumination, cosmic-scale rim light',
+        'Contraluz estelar extremo, rim de alto contraste, bandas de autosombra en panel y bloom controlado en núcleos emisivos.',
       material_texture:
-        'Tech, ultra-structure, carbon-nanotube weave, solar-collector array, heat-sink fin, orbital-engineering metal',
+        'Compuestos metálicos densos, microtiling de colectores, aletas de disipación y costuras macro de fabricación.',
       render_quality:
-        'Cosmic, massive, megastructure awe, Dyson-imagination, star-taming civilization, scale-horror sublime',
-      spatial_distortion: 'Curved horizon',
+        'Ingeniería especulativa ultra-escala con legibilidad estructural rigurosa y contraste astrofísico cinematográfico.',
+      spatial_distortion:
+        'Extreme interior-horizon curvature and radial mega-scale perspective compression',
       atmosphere:
-        'Epic, sci-fi, civilization-scale, star-furnace, engineering-god, unfathomable-ambition, majestic-isolation',
+        'Sublime, colosal y austera, impulsada por ambición tecnológica de civilización tipo II.',
       key_features:
-        'Star inside, panel grid, curved horizon, solar collectors, hexagonal structure, silhouette against star, orbital ring',
+        'Núcleo luminoso enmarcado, campos colectores hexagonales, segmentación radial, horizonte interior curvo y silueta de alto contraste.',
       creative_brief:
-        'Hexagonal panels curve toward a horizon that bends the wrong way, enclosing a star like a cage built for fire. Silhouettes of civilization-scale engineering trace black geometries against solar brilliance, the sphere a crust wrapped around a captive sun. The structure whispers of intelligences that measure their projects in astronomical units and their patience in stellar lifetimes.',
+        'Define una gramática reusable de Dyson-megastructure con geometría radial de encapsulamiento estelar, panelización energética y legibilidad extrema de escala como invariantes.',
     },
   },
   {
@@ -1491,24 +1525,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'globe',
     style: {
       aesthetic:
-        'Halo ring, Niven megastructure, orbital-band world, habitable-ring landscape, cosmic-ribbon',
+        'Megaestructura habitable en banda orbital con ecología lineal y paisaje planificado a escala de macro-civilización.',
       form_and_line:
-        'Upward horizon, arch-in-sky curve, ribbon-land strip, edge-wall lines, sun-shadow band',
+        'Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales guiadas por curvatura.',
       color_palette:
-        'Blue, Green strip, Space Black, Ocean-band, Atmosphere-white rim, Shadow-wall Dark',
+        'Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void black backdrop, and high-altitude white haze',
       lighting_setup:
-        'Sunlight, ring-self-shadow, edge-wall glow, atmosphere-scatter blue, void-black contrast',
+        'Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en edge-walls.',
       material_texture:
-        'Atmosphere, continental land, orbital-plate metal, sea-surface, cloud-swirl, mountain-shadow',
+        'Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en contención.',
       render_quality:
-        'Vast, artificial, Niven-scale imagination, ringworld-wonder, habitable-engineering, landscape-megastructure',
-      spatial_distortion: 'Ring shape',
-      atmosphere:
-        'Awe, scale, world-builder, cosmic-horizon, engineering-sublime, infinite-land, ring-citizen perspective',
+        'Paisaje especulativo ultra-vasto con lectura rigurosa de curvatura y coherencia de ingeniería macro.',
+      spatial_distortion:
+        'Orbital-band curvature with upward horizon wrap and macro-scale perspective compression',
+      atmosphere: 'Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.',
       key_features:
-        'Sky arch, upward-curving land, edge wall, sun-shadow band, ocean strip, ring curvature, mountain-on-horizon',
+        'Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.',
       creative_brief:
-        'Landscape curves upward into sky, continents bending toward an arch that replaces horizon with the underside of the same world. Edge walls rise like mountain ranges built by hands that thought in planetary scale, holding atmosphere against the void. The ring spins its slow eternity, a world that forgot to be a sphere and became a ribbon instead.',
+        'Formula una gramática reusable de ringworld donde comportamiento de horizonte orbital curvo, estratificación biosférica en cinta y edge-wall megastructural definan identidad transversal.',
     },
   },
   {
@@ -1518,24 +1552,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'logical physics',
     style: {
       aesthetic:
-        'Impossible architecture, optical-illusion maze, M.C. Escher dream, paradoxical geometry, mental-puzzle space',
+        'Paradoja espacial escheriana, ambigüedad óptica matemática y circulación imposible.',
       form_and_line:
-        'Clean lines, stair-paradox loops, arch-reversal, floor-wall-ceiling ambiguity, isometric-impossible, endless ascent',
+        'Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en trayectorias cerradas.',
       color_palette:
-        'Greyscale, Warm paper-cream, Ink-black line, Stone-tone gradient, Shadow-cool Grey, Lithograph-sepia',
+        'Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia undertones, and cool shadow modulation bands',
       lighting_setup:
-        'Flat, lithograph-even, impossible-shadow, ambiguity-light, multiple-light-source confusion, print-studio clarity',
+        'Exposición uniforme de impresión con sombras deliberadamente conflictivas y contraste moderado para sostener la ilusión.',
       material_texture:
-        'Stone, print-paper grain, lithograph-ink, carved-stone, woodcut-line, etched-detail',
+        'Grano de papel litográfico, hatch de tinta grabada y tratamiento plano mate de piedra abstracta.',
       render_quality:
-        'Mind-bending, loop, optical-illusion genius, paradox-realized, impossible-print, brain-puzzle art',
-      spatial_distortion: 'Gravity defiance',
-      atmosphere:
-        'Confusing, infinite, wonder-perplexed, impossible-calm, mind-trapped, perspective-vertigo, delightful-bafflement',
+        'Ilusión óptica de precisión alta, coherencia geométrica estricta y topología desestabilizante pero legible.',
+      spatial_distortion:
+        'Multi-gravity inversion loops and perspective-locked paradox compression across connected planes',
+      atmosphere: 'Cerebral, elegante y desorientante, con infinitud no resuelta.',
       key_features:
-        'Stairs, impossible loops, multiple gravity, archways, courtyard paradox, ascending-descending figures, lithograph look',
+        'Circuitos multi-gravedad, transiciones imposibles de arco, loops bloqueados por perspectiva y jerarquía de línea litográfica.',
       creative_brief:
-        "Stairs climb toward destinations that exist in three conflicting gravity directions, each ascent leading somewhere the architect's sanity should have vetoed. Figures walk upside-down through archways that connect ceilings to floors, the whole scene a polite rebellion against the dictatorship of physics. The print hangs in eternal paradox, a joke told in lithograph that the brain never stops trying to find the punchline of.",
+        'Construye una gramática reusable de impossible-architecture donde bucles paradójicos, lógica lineal estable bajo gravedad contradictoria y disciplina tonal litográfica definan el sistema visual.',
     },
   },
   {
@@ -1545,24 +1579,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid wall',
     style: {
       aesthetic:
-        'Box castle, appliance-box architecture, living-room fortress, recycled-carton stronghold, blanket-city',
+        'Cartón reciclado improvisado con unión visible y fantasía manual de bajo recurso.',
       form_and_line:
-        'Tape lines, box-flap geometry, duct-tape seams, crayon-drawn details, stacked-rectangles, cut-window squares',
+        'Ortogonales de cajas apiladas, voladizos de solapa, trazas de cinta y aperturas recortadas a mano.',
       color_palette:
-        'Brown cardboard, Packing-tape Tan, Marker-Black, Crayon colors, Shipping-label White',
+        'Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft fabric neutrals',
       lighting_setup:
-        'Indoor, living-room lamp, blanket-filtered light, flashlight-fort interior, window-box glow',
+        'Base cálida interior, spill de lámpara, hotspots de linterna y rebote filtrado por manta en contraste bajo.',
       material_texture:
-        'Corrugated, kraft fiber, tape-adhesive, crayon wax, marker-ink, blanket-fabric drape',
+        'Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayón.',
       render_quality:
-        'Childhood, rough, make-believe reality, refrigerator-box magic, blanket-fort nostalgia, kid-crafted love',
+        'Realismo low-tech artesanal con imperfección de ensamblaje y tactilidad reciclada nostálgica.',
       spatial_distortion: 'Sagging',
-      atmosphere:
-        'Imaginative, cheap, pretend-kingdom, Saturday-morning, sibling-architect, proud-builder, temporary-realm',
+      atmosphere: 'Ingeniosa, cozy y temporal, orgullosamente homemade.',
       key_features:
-        'Tape, corrugated edges, duct tape, marker drawings, box flaps, blanket roof, crayon windows',
+        'Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos textiles.',
       creative_brief:
-        'Tape holds corrugated walls against the entropy of play, each seam a negotiation between structural ambition and the limits of adhesive. Crayon windows drawn with the conviction that a rectangle of blue is all any room needs of the sky. The fort stands in living-room twilight, a sovereignty declared in cardboard and defended with blanket artillery.',
+        'Define una gramática reusable de cardboard-fort basada en masa de cajas, lógica de ensamble con cinta y detalle manual low-tech, sin depender de contenido narrativo.',
     },
   },
   {
@@ -1572,23 +1605,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ocean',
     style: {
       aesthetic:
-        'Ship inside glass, impossible-in-bottle, maritime miniature, patience-craft, message-in-bottle mystery',
+        'Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.',
       form_and_line:
-        'Glass reflection, hull-curve silhouette, mast-rigging threads, bottle-neck constriction, cork-stopper circle',
-      color_palette: 'Wood, Glass, Rigging-tan, Sail-cream, Sea-blue tint, Brass, Cork-brown',
+        'Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de marco cilíndrico.',
+      color_palette:
+        'Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones',
       lighting_setup:
-        'Studio, glass-highlight streak, bottle-curve distortion-glint, display-shelf ambient, window-light catch',
+        'Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de sombra interna suave.',
       material_texture:
-        'Glass, miniature, cork, thread, wire, tissue-paper sail, tiny-metal, dust-in-bottle',
+        'Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y corcho poroso.',
       render_quality:
-        'Detailed, impossible, ship-in-bottle wonder, maritime-craft miracle, patience-art, miniature-perfection',
-      spatial_distortion: 'Distorted by glass',
-      atmosphere:
-        'Precious, trapped, still-voyage, curio-cabinet, patient-hands, impossible-journey, nautical-dream',
+        'Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.',
+      spatial_distortion:
+        'Cylindrical refraction warp and magnification compression introduced by curved bottle glass',
+      atmosphere: 'Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.',
       key_features:
-        'Glass bottle, miniature ship, cork, rigging threads, glass distortion, display stand, impossible construction',
+        'Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por curvatura y base de exhibición.',
       creative_brief:
-        "Hull and rigging captured mid-voyage through a bottleneck that denies the ship's original scale. Glass distorts the masts, the whole vessel swimming in a lens-curved miniature ocean of trapped air. The bottle holds not just a ship but the impossible patience of hands that threaded masts through necks narrower than conviction.",
+        'Construye una gramática reusable de bottle-miniature donde refracción visible del vidrio, ensamblaje restringido y densidad de microdetalle sean invariantes estilísticas.',
     },
   },
   {
@@ -1598,24 +1632,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'stone',
     style: {
       aesthetic:
-        'Beach fort, summer sculpture, tidal architecture, ephemeral citadel, shore-built kingdom',
+        'Construcción litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.',
       form_and_line:
-        'Drip towers, bucket-mold cylinders, scalloped turrets, battlement ridges, moat-trench circles',
+        'Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a erosión.',
       color_palette:
-        'Sand beige, Wet-sand Brown, Shell-white, Shore-gold, Driftwood Grey, Sea-glass fragment',
+        'Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents',
       lighting_setup:
-        'Sunlight, beach-glare, low-afternoon shadow, wave-reflected shimmer, seaside-haze',
+        'Daylight costero duro, shimmer de agua reflejada, sombras bajas de playa y microespeculares en superficie húmeda.',
       material_texture:
-        'Sand grains, wet-packed surface, shell bits, pebble, granular-drip, water-smooth',
+        'Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por desgaste.',
       render_quality:
-        'Temporary, fragile, beach-day memory, tide-fated beauty, summer-childhood art, grain-by-grain',
+        'Escultura transitoria de detalle alto con fidelidad granular y señales de colapso controlado.',
       spatial_distortion: 'Crumbling',
-      atmosphere:
-        'Summer, fun, beach-joy, tide-watch, salty-breeze, impermanent creation, bucket-and-spade',
+      atmosphere: 'Soleada, táctil y frágil, condicionada por decadencia natural inminente.',
       key_features:
-        'Grainy, drip-castle towers, moat, battlements, bucket-mold texture, seashell decoration, tide-line',
+        'Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de marea.',
       creative_brief:
-        'Drip towers rise with the organic wonkiness of sand-water slurry surrendered to gravity. Bucket-mold cylinders repeat in endless battlement, each turret a memory of the plastic pail that shaped it. The tide whispers its countdown, the castle magnificent precisely because it cannot last, architecture that borrows its beauty from impermanence.',
+        'Mantén una gramática reusable de construcción en arena húmeda donde geometría de molde, comportamiento granular y erosión visible definan el estilo en sujetos variados.',
     },
   },
   {
@@ -1625,23 +1658,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'brick, wood',
     style: {
       aesthetic:
-        'Grown crystal tower, mineral skyscraper, geodesic fantasy, geological architecture, prism spire',
+        'Megaestructura cristalina de crecimiento geológico y futurismo mineral monolítico.',
       form_and_line:
-        'Sharp facets, hexagonal columns, converging crystal points, geometric shard, pyramid cap',
+        'Apilamientos facetados verticales, haces hexagonales y convergencias prismáticas hacia ápice agudo.',
       color_palette:
         'Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash',
       lighting_setup:
-        'Internal refraction, rainbow-dispersion, inner-glow core, facet-edge brilliance, dark-crystal depth',
+        'Refracción interna intensa, dispersión espectral, núcleo autoiluminado y bordes de faceta de alto brillo.',
       material_texture:
-        'Glassy, mineral crystal, gemstone face, translucent depth, faceted surface, amethyst geode',
+        'Cristal vítreo, caras gema, profundidad translúcida y geodas de amatista de microdetalle.',
       render_quality:
-        'Alien, pure, crystalline-perfection, geode-magic, otherworldly prism, mineral-beauty',
+        'Arquitectura cristalina de alta claridad con óptica coherente y precisión mineral de escala monumental.',
       spatial_distortion: 'None',
-      atmosphere: 'Cold, magical, gemstone-elegant, ancient-growth, silent-harmonic, other-realm',
+      atmosphere: 'Quietud luminosa, asombro frío y elegancia mineral de otro mundo.',
       key_features:
-        'Translucency, crystal facets, inner glowing core, rainbow refraction, giant geode, prism spire',
+        'Planos facetados refractivos, núcleos translúcidos, silueta de aguja prismática y estratos de brillo interno.',
       creative_brief:
-        'Amethyst facets catch inner light and throw it outward in violet splinters, the tower glowing from a source that geometry itself seems to generate. Crystal columns rise from mineral seed, grown rather than built, architecture at geological speed. The spire sings at frequencies only quartz can hear, a silent music of refraction.',
+        'Construye una gramática cristalina transferible donde geometría facetada, masa translúcida y dispersión óptica sostengan la identidad. Debe conservar lógica geológica reutilizable en contextos fantasy o sci-fi.',
     },
   },
   {
@@ -1651,23 +1684,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'warm, fire',
     style: {
       aesthetic:
-        "Frozen castle, glacial fortress, winter queen's palace, crystalline ice-kingdom, permafrost monument",
+        'Palacial criomórfico de monumentalidad glacial, con elegancia invernal soberana y pureza cristalina.',
       form_and_line:
-        'Sharp ice, icicle colonnade, frozen-cascade stairs, crystal-spike spires, frost-filigree arch',
-      color_palette: 'White, Cyan, Ice Blue, Aurora Green, Deep-glacier Teal, Diamond-spark',
+        'Agujas de hielo, arbotantes facetados, columnatas de carámbano y gradación vertical congelada.',
+      color_palette:
+        'Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights',
       lighting_setup:
-        'Glittering, aurora-shimmer, ice-internal refraction, moon-on-snow, frozen-sun brilliance',
+        'Transmisión subsuperficial en hielo, wash auroral, acentos lunares de borde y rebote nítido sobre nieve compacta.',
       material_texture:
-        'Ice, snow, frost flower, hoarfrost, compacted snow-block, glacial glass, crystal rime',
+        'Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.',
       render_quality:
-        'Cold, magical, Narnia-Winter beauty, frozen-cathedral grandeur, ice-sculpture perfection',
+        'Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de escala catedralicia.',
       spatial_distortion: 'None',
-      atmosphere:
-        'Frozen, regal, winter-eternal, enchanted-cold, silent-snow, crystalline-awe, frosted-breath',
+      atmosphere: 'Soberana, austera y silenciosa, con temperatura emocional subcero.',
       key_features:
-        'Icicles, frost crystals, ice chandelier, snowdrift stairs, frozen throne, aurora-lit hall, ice bridge',
+        'Bóvedas cristalinas, cadencia de columnata helada, nodos congelados y tramos de hielo esculpido.',
       creative_brief:
-        'Icicle colonnades catch aurora light and throw it into prismatic rebellion against the monochrome of winter. Frost filigree traces arabesques across transparent walls, cold becoming architect, ice becoming cathedral. The palace stands at absolute zero of warmth and maximum of wonder, a kingdom where beauty is measured in degrees below freezing.',
+        'Define una gramática reusable de palacio de hielo donde masa facetada, óptica fría refractiva y monumentalidad regia sostengan identidad en cualquier composición.',
     },
   },
   {
@@ -1676,77 +1709,77 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'sky, dry',
     style: {
-      aesthetic: 'Atlantis/Rapture submerged lost-city grandeur, art-deco depths, leaking domes',
+      aesthetic:
+        'Deco abisal retrofuturista con presión marina y decadencia monumental reclamadas por el agua.',
       form_and_line:
-        'Domes, coral, bubble-pods, glass-tunnel arteries, cathedral spires, ring-hub geometry',
+        'Clústeres de presión, arterias vítreas, verticales deco y fracturas por filtración.',
       color_palette:
         'Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass',
       lighting_setup:
-        'Water filtered, blue-ambient abyss, bioluminescent constellation, dome-interior gold glow, emergency red',
+        'Filtro acuático azul profundo, constelaciones bioluminiscentes y contraste entre glow dorado interior y alarma roja.',
       material_texture:
-        'Wet stone, glass, copper-green patina, coral-encrust, riveted brass, leaking concrete',
+        'Piedra mojada, vidrio presurizado, pátina cobre-verde, coral incrustado y hormigón con fugas.',
       render_quality:
-        'Mysterious, deep, Rapture-dystopia, lost-civilization poetry, water-pressure beauty, abandoned majesty',
+        'Subacuático cinematográfico con detalle de presión, legibilidad deco y balance ruina-colonización biológica.',
       spatial_distortion: 'None',
-      atmosphere: 'Silent, pressure, awe-mixed-with-dread, water-weight, ghostly, decaying-utopia',
+      atmosphere: 'Asombro presurizado, melancolía abisal y grandeza silenciosa en declive.',
       key_features:
-        'Bubbles, glass domes, art deco details, leaking cracks, coral overgrowth, bathysphere docks',
+        'Motivos deco metálicos, firmas de fuga, capas de coralización y wayfinding bioluminiscente.',
       creative_brief:
-        "Art deco brass glimmers through water-dark corridors, luxury drowning in slow deterioration. Coral fingers reach through cracks in domed ceilings, the ocean patiently reclaiming what hubris built on its floor. Bioluminescence pulses in the deep like a city's last heartbeat, beautiful and terminal.",
+        'Formula una gramática underwater-deco transferible donde infraestructura elegante bajo presión y reclamación marina definan la identidad. Debe preservar tono de civilización perdida sin ciudad ficticia fija.',
     },
   },
   {
     id: 'SP07-079',
     name: 'Monolith',
     category: '1. Residential Interiors',
-    negativePrompt: 'detail',
+    negativePrompt: 'ornamentation',
     style: {
       aesthetic:
-        '2001 slab, alien artifact, absolute-geometry presence, evolution-catalyst object, cosmic-marker',
+        'Monolithic black austerity de geometría absoluta, presencia simbólica y monumentalidad cósmica mínima.',
       form_and_line:
-        'Sharp rectangle, perfect-edges, zero-feature surface, 1:4:9 proportion, impossible-vertical, crisp-corners',
+        'Proporción rectangular estricta, caras planas impecables y aristas verticales limpias sin ornamento.',
       color_palette:
-        'Matte Black, Absolute-void Black, Light-absorbing surface, Starlight-reflection edge, Moon-surface Grey',
+        'Deep matte black mass, near-void black absorption fields, faint edge silver glints, and sparse neutral lunar-gray environmental reflections',
       lighting_setup:
-        'Absorbs light, anti-reflective void, sun-alignment glow, stark-side shadow, dawn-touch edge',
+        'Iluminación direccional de alto contraste, absorción extrema, catch-light mínimo y sombra proyectada severa.',
       material_texture:
-        'Perfectly smooth, non-material surface, frictionless, impossibly-dense, alien-substance, crystalline-matte',
+        'Superficie ultrasuave y anónima, mate no granular, supresión casi total del especular y uniformidad de artefacto.',
       render_quality:
-        'Alien, minimal, Kubrick-mystery, absolute-simplicity, cosmic-enigma, evolution-precision',
+        'Minimalismo de precisión con autoridad geométrica máxima y economía tonal disciplinada.',
       spatial_distortion: 'None',
       atmosphere:
-        'Ominous, mystery, cosmic-wonder, evolutionary-pause, unknowable-intelligence, silent-revelation, transcendent-fear',
+        'Ominosa, contemplativa y trascendente, con silencio intelectualmente inquietante.',
       key_features:
-        '1:4:9 ratio, perfectly black, sharp edges, featureless surface, rectangular slab, alien presence, vertical dominance',
+        'Proporción canónica, planos negros absorbentes, perfil sin rasgos y anclaje compositivo vertical severo.',
       creative_brief:
-        'Absolute rectangle interrupts landscape with the violence of perfect geometry, a shape that does not belong to any geology humans have named. The surface drinks light without returning it, matte black absorbing every question the universe thought to ask. The slab simply is, an assertion of presence that predates language, waiting for the apes below it to touch it and learn to kill.',
+        'Define una gramática reusable de monolith basada en proporción estricta, respuesta material negra sin rasgos y monumentalidad simbólica mínima estable entre variaciones de sujeto.',
     },
   },
   {
     id: 'SP07-063',
     name: 'Necropolis',
     category: '1. Residential Interiors',
-    negativePrompt: 'life, green',
+    negativePrompt: 'life, lush vegetation',
     style: {
       aesthetic:
-        'City of dead, tomb-city, death empire, mausoleum megalopolis, soul-river architecture',
+        'Orden funerario monumental con grandeza sepulcral y civismo necromántico de escala masiva.',
       form_and_line:
-        'Sharp spires, obelisk avenues, crypt blocks, tomb-grid geometry, sarcophagus rows',
+        'Axialidad dominada por obeliscos, masas escalonadas, retículas de cripta y siluetas severas de puntas rituales.',
       color_palette:
-        'Green mist, Black stone, Bone-white marble, Faded Gold, Crypt-shadow Purple, Death-rust Red',
+        'Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields',
       lighting_setup:
-        'Eerie Green, witch-light glow, corpse-candle, moon-through-fog, underworld-ember, soul-flame',
+        'Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de cementerio.',
       material_texture:
-        'Stone, bone, crumbling masonry, weathered marble, iron gate, skull-ornament, ash',
+        'Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.',
       render_quality:
-        'Evil, dark, tomb-city epic, death-cult architecture, sepulchral grandeur, gothic-necropolis',
-      spatial_distortion: 'None',
-      atmosphere:
-        "Dread, death, eternal-silence, soul-heavy, grave-chill, mourner's-land, un-living stillness",
+        'Dark fantasy arquitectónica de alto detalle con contención tonal y lectura monumental opresiva.',
+      spatial_distortion: 'Profundidad axial procesional con compresión sepulcral controlada.',
+      atmosphere: 'Solemne, ritualista y opresiva, con silencio acústico de enclave enterrado.',
       key_features:
-        'Green fog, obelisks, sarcophagi, death runes, skull motifs, crypt entrances, tomb-pyramids',
+        'Ritmo procesional de obeliscos, criptas apiladas, wayfinding rúnico y umbrales masivos.',
       creative_brief:
-        'Obelisks cast green-tinted shadows across avenues paved with the names of the entombed. Soul-flame flickers in brass lanterns, each light a small rebellion against the empire of permanent dark. The city extends in all directions, infinite cemetery, architecture built for occupants who will never complain about the square footage.',
+        'Formula una gramática de necrópolis transferible donde jerarquía obeliscal, planificación axial de tumbas y baja luz espectral definan identidad de forma consistente entre composiciones.',
     },
   },
   {
@@ -1755,23 +1788,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Residential Interiors',
     negativePrompt: 'grounded',
     style: {
-      aesthetic: 'Castle in sky, celestial fortress, cloud realm, Laputa vision, aerial kingdom',
+      aesthetic:
+        'Romanticismo de fortaleza aérea con megastructura suspendida y soberanía en altura.',
       form_and_line:
-        'Vertical towers, floating-island massing, air-bridge spans, waterfall-fall lines, spiral spires',
+        'Clústeres de agujas verticales, estratificación de masa flotante, cortes de vacío y vectores descendentes.',
       color_palette:
         'White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above',
       lighting_setup:
-        'Bright sun, cloud-reflected brilliance, angel-ray beams, blue-sky ambient, golden-edge rim light',
+        'Sol alto, rebote en nubes, rayos volumétricos y rim dorado de borde sobre siluetas suspendidas.',
       material_texture:
-        'Stone, clouds, gossamer, crystalline spire, floating rock, wisp-vapor base',
+        'Piedra aérea, niebla de base, aristas cristalinas y roca flotante de estrato erosionado.',
       render_quality:
-        'Dreamy, impossible, Miyazaki-beauty, sky-castle wonder, unfettered imagination, weightless grandeur',
+        'Sky-architecture fantástica con profundidad atmosférica y coherencia de ingeniería imposible.',
       spatial_distortion: 'Floating rocks',
-      atmosphere: 'Magical, high, sky-kingdom, impossible-dream, wind-borne, breathtakingly free',
+      atmosphere: 'Sublime de gran altitud, calma improbable y grandeza impulsada por viento.',
       key_features:
-        'Clouds below, floating islands, waterfalls into void, air bridges, tallest spire, blue sky around',
+        'Tramos sobre vacío, nubes inferiores, undercuts flotantes, vectores aéreos y silueta dominante.',
       creative_brief:
-        'Spires pierce cloud layer like needles stitching heaven to earth with stone thread. Waterfalls drop into blue nothing, liquid abandoning its loyalty to gravity for the freedom of falling forever. The castle floats as if the ground beneath it simply forgot to be there, an architecture of refusal.',
+        'Define una gramática de castillo flotante transferible en la que masa suspendida, atmósfera de gran altitud y verticalidad icónica sostengan la identidad. Debe evitar dependencia de una fortaleza nombrada.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

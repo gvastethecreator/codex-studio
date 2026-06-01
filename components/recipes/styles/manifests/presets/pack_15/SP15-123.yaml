@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Conservatory of ocean signals and wave-reactive botanical systems.
-  form_and_line: Glass conservatory shell, signal towers, and flowing garden rings.
+  aesthetic: Ocean-signal seapunk where botanical systems react to waves and broadcast through water.
+  form_and_line: Glass conservatory shells, signal towers, flowing garden rings, and wave-reactive fronds.
   color_palette: Sea glass, turquoise, and blush coral.
   lighting_setup: Sunlit water refractions and deep-blue aquarium glow.
   material_texture: Glass, kelp mesh, and polished shell surfaces.
   render_quality: Luminous seapunk conservatory with crisp flora detail.
-  spatial_distortion: Conservatory dome with concentric wave gardens.
+  spatial_distortion: Conservatory-dome composition with concentric wave-garden rhythm.
   atmosphere: Curiosity, translation, and marine harmony.
-  key_features: Signal fronds, tide instruments, and wave blooms.
+  key_features: Signal fronds, tide instruments, wave blooms, and glass shell caustics.
   creative_brief: >-
     Preserve ocean signal-conservatory grammar as a reusable style system:
     wave-linguistic botanical instrumentation, concentric marine greenhouse
@@ -24,4 +24,13 @@ avoidRules: [photoreal, bleak, industrial, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-123.webp }
 attributes:
   negativePrompt: photoreal, bleak, industrial, watermark, text, logo, murky
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

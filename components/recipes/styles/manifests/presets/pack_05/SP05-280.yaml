@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-280
 packId: pack_05
-name: Hell Girl - Lantern Ferry Retribution
+name: Lantern Retribution Ritual Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Supernatural vengeance in midnight villages and city edges, spider lilies, dark kimono serenity, hell correspondence rendered with calm cruelty and candlelight ritual
+  aesthetic: Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence rendered as quiet ceremonial pressure
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky ritual grain
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression
   atmosphere: Cold, ritualistic, nocturnal, fatal
-  key_features: Lantern light, spider lily motifs, dark kimono silhouette, ritual-ferry imagery, calm retribution close-ups
-  creative_brief: A lantern sways on still water, its flame the only witness to vengeance delivered with the stillness of a tea ceremony. Spider lilies bloom where grudges cross the threshold, their red petals signing contracts no ink can revoke. The ferry carries not souls but the weight of choices made in midnight desperation.
+  key_features: Lantern glow, crimson floral omen, dark silk calm, ritual threshold, quiet fatal symmetry
+  creative_brief: >
+    Render any subject through quiet retribution ritual: lantern glow, crimson
+    floral accents, dark silk, still reflections, and fatal symmetry should define
+    the image without fixed settlements, attire, transport rituals, bargains,
+    or vengeance scenes.
 avoidRules:
   - realistic
   - 3d render

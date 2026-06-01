@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Monster drawn by a six-year-old, jagged teeth shaped like triangles, eyes as uneven circles stabbed with crayon, fur as chaotic orange scribbles, claws as five mismatched lines, pure childhood nightmare-art, kindergarten fridge gallery horror
+  aesthetic: Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror
   form_and_line: Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy
   color_palette: Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash
   lighting_setup: None, aggressive coloring regardless of light logic, pure expression over representation
   material_texture: Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension
   render_quality: First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul
-  spatial_distortion: Head too big for body, legs two different sizes, arms sprouting from neck, tail from forehead
+  spatial_distortion: Wrong scale, mismatched parts, impossible attachment points, no perspective
   atmosphere: Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong
-  key_features: Triangle teeth, uneven circle eyes, scribble-crayon fur texture, construction-paper background, forgot-to-color sections
-  creative_brief: Wax applied with the full weight of a small furious hand, teeth rendered as jagged triangles because triangles are the scariest shape when you are six. No perspective, no anatomy, no hesitation—just the back-pressure of an imagination too big for its motor skills. The page trembles with the authenticity of pure, unfiltered id.
+  key_features: Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps
+  creative_brief: 'Render the input as crude crayon fear: heavy wax pressure, jagged triangle symbols, uneven circles, construction-paper tooth, uncolored gaps, and no perspective. Avoid requiring monsters, teeth, eyes, fur, claws, or bodies. The style should feel like pure childhood nightmare logic applied to any subject.'
 avoidRules:
   - digital
   - smooth

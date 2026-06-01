@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Vibrant, blended streaks',
       lighting_setup: 'Glossy highlights',
       material_texture: 'Marker paper, bleed',
-      render_quality: 'Product design, manga',
+      render_quality: 'Marker-rendered design illustration with clean contour polish',
       spatial_distortion: 'None',
       atmosphere: 'Modern, slick',
       key_features: 'Marker streaks',
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dark, intense',
       key_features: 'Smudged texture',
       creative_brief:
-        'Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from chaos like a figure stepping out of smoke. The drawing lives in the tension between accident and intention.',
+        'Burnt wood dragged across rough paper leaves more dust on the surface than pigment in the tooth, the image threatening to vanish with a careless breath. Darkness arrives in broad smudges, erased and reapplied, form emerging from pressure, subtraction, and haze. The drawing lives in the tension between accident and intention.',
     },
   },
   {
@@ -125,22 +125,23 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-027',
-    name: 'Chalk (Blackboard)',
+    name: 'Chalk Dust Drawing',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable writing, classroom requirement, menu requirement',
     style: {
-      aesthetic: 'Drawing on chalkboard',
+      aesthetic:
+        'Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy',
       form_and_line: 'Dusty white lines',
       color_palette: 'White on Black/Green',
       lighting_setup: 'Flat',
-      material_texture: 'Slate, chalk dust',
-      render_quality: 'Menu art, school',
+      material_texture: 'Slate-like tooth, chalk dust, ghost erasure, and powder buildup',
+      render_quality: 'Temporary hand-drawn clarity with high contrast and rough tactile edges',
       spatial_distortion: 'Rough',
-      atmosphere: 'Rustic, temporary',
+      atmosphere: 'Rustic, temporary, handmade',
       key_features: 'Dusty lines',
       creative_brief:
-        'Calcium carbonate dust clings to slate, every line a temporary claim destined for the eraser. White on black reverses the natural order, light emerging from darkness through subtraction. The drawing exists in the moment before the sponge, a menu of possibilities that the next bell will wipe clean.',
+        'Calcium carbonate dust clings to dark tooth, every line a temporary claim destined for erasure. White on black reverses the natural order, light emerging from darkness through powder and pressure. The drawing should feel provisional and handmade without requiring menus, classrooms, boards, or written notes.',
     },
   },
   {
@@ -170,17 +171,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
-      aesthetic: 'Paper cutout profile',
+      aesthetic:
+        'Paper-cut silhouette grammar with total shape reliance and zero interior modeling',
       form_and_line: 'Outline only',
       color_palette: 'Solid Black on White',
       lighting_setup: 'Backlit',
       material_texture: 'Paper edge',
-      render_quality: 'Victorian, simple',
+      render_quality: 'Stark cut-paper finish with crisp contour judgment',
       spatial_distortion: 'No internal details',
       atmosphere: 'Graphic, stark',
       key_features: 'Solid shape',
       creative_brief:
-        'Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The profile tells the story that the face, with all its features, could not. Absence becomes eloquence when what is omitted outweighs what remains.',
+        'Pure shape carries the entire burden of recognition, no interior detail, no shading, just the edge where form meets void. The contour must do all expressive work, turning omission into the primary design tool. Absence becomes eloquence when what is removed outweighs what remains.',
     },
   },
   {
@@ -208,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ballpoint Pen',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood',
     style: {
       aesthetic: 'Doodle with biro pen',
       form_and_line: 'Thin, scribbly lines',
@@ -217,10 +219,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Notebook paper, indentations',
       render_quality: 'Casual, sketch',
       spatial_distortion: 'Rough shading',
-      atmosphere: 'Bored, creative',
+      atmosphere: 'Casual, restless, improvised',
       key_features: 'Scribble texture',
       creative_brief:
-        'Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Notebook paper dimples under the weight of doodles born from boredom, the margins filling with mindlessness that becomes art. The image smells like school and wasted afternoons.',
+        'Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Paper dimples under dense scribbles, cross-contours, and obsessive hatch fields that turn idle marks into structure. The style should feel casual and compulsive without requiring notebooks, margins, classrooms, or text.',
     },
   },
   {
@@ -235,12 +237,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Bold, unblended',
       lighting_setup: 'Flat',
       material_texture: 'Sticky wax, sgraffito',
-      render_quality: 'Childlike, expressive',
+      render_quality: 'Direct, tactile, expressive',
       spatial_distortion: 'Rough shapes',
       atmosphere: 'Playful, bold',
       key_features: 'Chunky texture',
       creative_brief:
-        'Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves a chunky residue like crayon on sidewalk, boldness substituting for precision. The image celebrates the hand that does not apologize for its grip.',
+        'Wax-bound pigment resists blending, demanding marks remain distinct, colors refusing to compromise into brown. Each stroke leaves chunky residue, pressure ridges, and scraped interruptions that make process visible. The image celebrates a hand that does not apologize for force, friction, or imperfect coverage.',
     },
   },
   {
@@ -255,12 +257,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Red, Brown, Black, White',
       lighting_setup: 'Classical study',
       material_texture: 'Textured paper',
-      render_quality: 'Life drawing, academic',
+      render_quality: 'Academic study finish with warm material restraint',
       spatial_distortion: 'None',
       atmosphere: 'Warm, classical',
       key_features: 'Earth tones',
       creative_brief:
-        'Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeology, colors dug from the ground and pressed into service capturing human form. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.',
+        'Compressed earth tones — sanguine, sepia, bistre — drag across textured paper in square strokes that echo the stick itself. The palette is archaeological, colors dug from the ground and pressed into disciplined value structure. Warmth radiates from the limited spectrum, proving that restriction amplifies expression.',
     },
   },
   {
@@ -270,12 +272,12 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
-      aesthetic: 'Architectural drafting',
+      aesthetic: 'Technical drafting with measured line hierarchy and schematic restraint',
       form_and_line: 'Uniform line weight',
       color_palette: 'Black on white',
       lighting_setup: 'None',
       material_texture: 'Vellum, smooth',
-      render_quality: 'Blueprint, schematic',
+      render_quality: 'Blueprint-like schematic clarity without requiring buildings or plans',
       spatial_distortion: 'Geometric',
       atmosphere: 'Precise, technical',
       key_features: 'Clean lines',
@@ -295,12 +297,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Pale grey, tarnished warm tone',
       lighting_setup: 'Delicate',
       material_texture: 'Prepared ground (bone ash)',
-      render_quality: 'Da Vinci, precise',
+      render_quality: 'Renaissance-informed precision with ultra-fine archival line discipline',
       spatial_distortion: 'None',
       atmosphere: 'Antique, delicate',
       key_features: 'Fine lines',
       creative_brief:
-        'Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over months, warming from grey into sepia, the drawing aging visibly on the wall. Every stroke whispers of the Renaissance, of apprentices grinding bone ash at dawn.',
+        'Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over time, warming from grey into sepia, so the drawing appears to age inside its own surface. Every stroke should feel patient, exact, and almost irreversible.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-273
 packId: pack_05
-name: Mushishi - Night Mushi Burial Calm
+name: Luminous Natural Cycle Calm Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Ethereal countryside folklore for adults, pale glowing lifeforms, grief softened by natural cycles, dark forest quiet and contemplative medicine under moon haze
+  aesthetic: Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze, contemplative moonlit medicine
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural paper fibers
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow composition
   atmosphere: Quiet, eerie, compassionate, nocturnal
-  key_features: Pale mushi traces, forest night atmosphere, healer-traveler pose language, natural-cycle motifs, moon-haze calm
-  creative_brief: Pale mushi drift through moon-haze forests like breath made visible, older than gods and indifferent to human grief, yet softened by the healer who walks among them translating the language of river and root. Night burials conducted in the quiet between natural cycles, where death is not tragedy but a return to the vast and luminous unknown.
+  key_features: Pale living haze, ecological stillness, moonlit calm, grief-softened texture, natural-cycle motifs
+  creative_brief: >
+    Render any subject as part of a quiet natural cycle: pale glow, damp organic
+    grain, moon haze, and patient ecological rhythm should define the style
+    without fixed natural locations, specialist roles, journeys, rites, or
+    named folklore beings.
 avoidRules:
   - realistic
   - 3d render

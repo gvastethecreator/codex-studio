@@ -15,13 +15,13 @@ visualDna:
   aesthetic: 1990s camcorder
   form_and_line: None
   color_palette: Color bleed, magenta shift, yellowed warmth, cyan fringe
-  lighting_setup: On-camera flash, built-in spotlight, overexposed faces
+  lighting_setup: On-camera flash, built-in spotlight, clipped highlights
   material_texture: Tracking lines, head-switching noise, tape dropout
   render_quality: Nostalgic, bad, 240p mush, magnetic degradation
   spatial_distortion: Glitch, tearing, horizontal displacement, time-base error
-  atmosphere: Memory, raw, birthday party, unguarded childhood
+  atmosphere: Memory, raw, unguarded nostalgia
   key_features: Date stamp, REC indicator, zoom wobble
-  creative_brief: Color bleeds at the edges of memory like watercolors left in the rain, magenta ghosts haunting the borders of backyard birthdays. The wobble of an unsteady hand becomes the signature of presence, proof that someone was there, loving hard enough to press record. Every dropout in the tape is a synapse firing across time.
+  creative_brief: 'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family scenes.'
 avoidRules:
   - hd
   - digital

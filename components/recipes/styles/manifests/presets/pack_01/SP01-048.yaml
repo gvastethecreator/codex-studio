@@ -16,12 +16,12 @@ visualDna:
   form_and_line: Shallow depth of field
   color_palette: Vibrant detail
   lighting_setup: Ring flash
-  material_texture: Insect eye, leaf vein
+  material_texture: Enlarged surface microtexture
   render_quality: Scientific, abstract
   spatial_distortion: Blurry background
   atmosphere: Alien, detailed
   key_features: Tiny world
-  creative_brief: A territory that lives between the blinks of giants, where a dewdrop becomes an ocean and a grain of pollen looms like architecture. Geometry so intricate it reads as sacred manuscript, written on the skin of the miniature, while everything beyond dissolves into pure painted blur. Vision trespasses here into the invisible.
+  creative_brief: 'Extreme close focus turns any subject into a miniature world: shallow depth, enlarged surface microtexture, vibrant detail, and background blur that isolates the near plane. Use macro vision without requiring insects, leaves, pollen, dewdrops, or biological content.'
 avoidRules:
   - wide angle
   - blurry subject

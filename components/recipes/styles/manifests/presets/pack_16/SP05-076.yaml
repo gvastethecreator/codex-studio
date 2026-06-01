@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-076
 packId: pack_16
-name: Paprika – Satoshi Kon Parade Dream Surrealism
+name: Cinematic Dream-Collapse Surrealism Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -18,10 +18,10 @@ visualDna:
   lighting_setup: Destellos abruptos, focos teatrales flotantes y variaciones lumínicas que rompen continuidad realista.
   material_texture: Superficie de objeto-ícono, plástico ritual, papel simbólico y grano de sueño inestable.
   render_quality: Acabado de feature experimental con ritmo de edición alucinada y claridad de motivo simbólico.
-  spatial_distortion: Espacios plegables con tránsito entre interior psíquico y escenario urbano sin corte lógico.
+  spatial_distortion: Espacios plegables con tránsito entre interior psíquico y plano externo sin corte lógico.
   atmosphere: Delirante, hipnótica, exuberante, inquietante.
-  key_features: Desfile de íconos, metamorfosis de plano, lógica de sueño y tensión entre terapia y colapso mental.
-  creative_brief: Construye una gramática reusable de surrealismo onírico cinematográfico para cualquier sujeto, priorizando transformación continua, choque simbólico y vértigo perceptivo.
+  key_features: Secuencias de íconos, metamorfosis de plano, lógica de sueño y tensión entre terapia y colapso mental.
+  creative_brief: Construye una gramática reusable de surrealismo onírico cinematográfico para cualquier sujeto, priorizando transformación continua, choque simbólico y vértigo perceptivo sin imponer desfiles, escenarios urbanos ni objetos concretos.
 avoidRules:
   - realistic
   - 3d render

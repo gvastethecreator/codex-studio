@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Dusty operatic frontier cinema, Sergio Leone style, spaghetti western epic, extreme close-up showdowns, wide barren landscapes, Morricone mood
+  aesthetic: Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood
   form_and_line: None
   color_palette: Warm, dusty yellow, sun-bleached ochre, deep brown
   lighting_setup: Harsh sun, unflinching overhead, high noon glare
-  material_texture: Techniscope grain, gritty sand, weathered leather
-  render_quality: Epic, gritty, widescreen desert, sun-baked
-  spatial_distortion: Extreme close-up, eyes-only, tension squeeze
+  material_texture: Techniscope grain, gritty dust, weathered surface
+  render_quality: Epic, gritty, widescreen, sun-baked
+  spatial_distortion: Extreme close-up compression, tension squeeze
   atmosphere: Tense, hot, dry wind, looming death
-  key_features: Wide angle, lone figure, pistol holster
-  creative_brief: The sun does not illuminate — it interrogates, bleaching bone and stone under a sky stretched thin as old leather. Eyes narrow to slits in close-quarter standoffs where the wind carries dust and the weight of an unholstered decision.
+  key_features: Wide framing, extreme close tension, dust haze
+  creative_brief: 'Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert, guns, holsters, lone riders, or frontier props.'
 avoidRules:
   - modern
   - clean

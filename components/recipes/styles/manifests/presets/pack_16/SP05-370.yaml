@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-370
 packId: pack_16
-name: Given - Stage Confession Indie Glow
+name: Intimate Indie Confession Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Indie-performance íntima de sala pequeña, centrada en confesión lírica y vulnerabilidad en escena.
-  form_and_line: Gestualidad vocal cercana, postura de guitarra contenida y distancia emocional de dúo claramente legible.
-  color_palette: Ámbar cálido de venue, azul nocturno suave y acentos granate de melancolía contemporánea.
-  lighting_setup: Spotlights pequeños con caída suave y penumbra envolvente de club reducido.
-  material_texture: Madera de escenario mínimo, metal de mic stand, acabado mate de instrumento y humo ligero ambiental.
-  render_quality: Frame musical emotivo con lectura de letra, silencio y clímax de interpretación.
-  spatial_distortion: Perspectiva frontal compacta con foco íntimo en micrófono y eje de respiración compartida.
-  atmosphere: Íntima, doliente, cálida y escénicamente musical.
-  key_features: Framing de mic stand, close-up de cuerda, spacing emocional dual y lenguaje corporal confesional.
+  aesthetic: Confesión indie íntima, lirismo vulnerable, calidez contenida y silencio emocional.
+  form_and_line: Gestualidad cercana, postura contenida y distancia emocional claramente legible.
+  color_palette: Ámbar cálido, azul nocturno suave y acentos granate de melancolía contemporánea.
+  lighting_setup: Focos pequeños con caída suave y penumbra envolvente de espacio reducido.
+  material_texture: Madera mínima, metal de soporte, acabado mate y humo ligero ambiental.
+  render_quality: Frame emotivo con lectura de confesión, silencio y clímax íntimo.
+  spatial_distortion: Perspectiva frontal compacta con foco íntimo y eje de respiración compartida.
+  atmosphere: Íntima, doliente, cálida y acústicamente contenida.
+  key_features: Framing íntimo, close-up táctil, spacing emocional y lenguaje corporal confesional.
   creative_brief: >-
-    Construye una gramática reusable de stage-confession-indie donde
+    Construye una gramática reusable de intimate-indie-confession donde
     intimidad acústica, tensión emocional y mínima puesta escénica definan una
-    identidad visual reutilizable.
+    identidad visual reutilizable sin imponer escenario, micrófono, guitarra,
+    dúo ni venue literal.
 avoidRules:
   - realistic
   - 3d render

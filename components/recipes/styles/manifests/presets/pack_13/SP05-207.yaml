@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Production-desk realism, scooters and keyframes, team stress turned camaraderie, office coffee and deadline boards, professional slice-of-life with hopeful momentum
-  form_and_line: Desk-clutter compositional line rhythm, storyboard panel geometry accents, and ensemble workflow body-language clarity
+  aesthetic: Production-workday slice language where task density, team stress, camaraderie, and professional hope create momentum
+  form_and_line: Workflow-clutter compositional rhythm, storyboard-like panel geometry accents, and ensemble body-language clarity
   color_palette: Fluorescent office neutrals, sticky-note yellows, monitor blues, coffee browns, and commuter-scooter accent reds
-  lighting_setup: Mixed office fluorescent top-light, monitor glow spill, late-night desk lamp pools, and window-gray overtime ambience
-  material_texture: Paper stacks, tablet and keyboard plastics, corkboards, coffee cup condensation, and worn office flooring
+  lighting_setup: Mixed fluorescent top-light, cool screen glow spill, late-night lamp pools, and gray overtime ambience
+  material_texture: Paper stacks, tablet plastics, corkboard fibers, condensation details, and worn work-surface texture
   render_quality: Workplace-production rendering with high task-readability and energetic team-chaos coherence
-  spatial_distortion: Deadline-pressure framing through tighter desk-depth stacking and motion-led corridor cuts
+  spatial_distortion: Deadline-pressure framing through tight depth stacking and motion-led workflow cuts
   atmosphere: Busy, collaborative, stressed, upbeat
-  key_features: Desk clutter, storyboards, production checklists, team ensemble acting, studio fluorescent warmth
+  key_features: Production-density clutter, storyboard geometry, checklist logic, team ensemble acting, and fluorescent workday warmth
   creative_brief: >-
-    Preserve anime-studio workday grammar as a reusable style language:
-    production-desk density, collaborative hustle energy, and hopeful
-    professional camaraderie should remain stable across subjects.
+    Use the title as a style anchor for production workday cheer. Keep density,
+    collaborative hustle, and hopeful professional camaraderie without requiring
+    studios, scooters, desks, coffee, or keyframes.
 avoidRules:
   - realistic
   - 3d render

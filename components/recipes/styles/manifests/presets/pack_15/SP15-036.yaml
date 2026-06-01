@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Transparent transit seapunk where commuters move inside engineered waves and infrastructure becomes an aquarium of velocity.
-  form_and_line: Tideglass cylinders, wavebreaker fins, gasket rings, modular interchange knots, and long rail ribbons bending through water.
+  aesthetic: Transparent velocity seapunk where engineered waves become an aquarium of motion.
+  form_and_line: Tideglass cylinders, wavebreaker fins, gasket rings, modular knots, and long ribbons bending through water.
   color_palette: Aqua glass, coral pink, midnight blue, stainless salt gray, and pale kelp green.
   lighting_setup: Moving caustic bands, linear LEDs, passing shadow silhouettes, and refracted station glow on wet walkways.
   material_texture: Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter grates.
   render_quality: Detailed infrastructure concept with kinetic framing and believable pressure-control logic.
-  spatial_distortion: Tube vanishing lines bend through water, interrupted by refraction, motion blur, and fishlike traffic silhouettes.
+  spatial_distortion: Tube-like vanishing lines bend through refraction, motion blur, and fishlike silhouettes.
   atmosphere: Fast coastal energy, civic fluidity, public wonder, and controlled pressure risk.
-  key_features: Tideglass corridors, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic station maps.
+  key_features: Tideglass bands, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic map-like patterns.
   creative_brief: >-
     Preserve tideglass subway grammar as a reusable style system:
     refracted transit transparency, gasketed pressure infrastructure, and

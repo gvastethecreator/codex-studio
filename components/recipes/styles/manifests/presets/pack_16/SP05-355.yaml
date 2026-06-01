@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-355
 packId: pack_16
-name: Uma Musume - Turf Sprint Idol Derby
+name: Festive Sprint Idol Energy Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Turf-sprint idolizado de energía festiva, centrado en velocidad de pista y showmanship competitivo.
-  form_and_line: Siluetas de carrera livianas, movimiento de listones/cabello y acting de rivalidad alegre.
-  color_palette: Pasteles saturados de evento, verdes de césped vivo y acentos de equipo de alto contraste.
-  lighting_setup: Iluminación de estadio brillante con destellos de final de carrera y rebote cálido de graderío.
-  material_texture: Tierra de pista, telas ornamentales ligeras, accesorios de presentación y brillo deportivo pulido.
-  render_quality: Sports-performance frame hyper-bright con lectura limpia de sprint, carril y photo-finish.
-  spatial_distortion: Perspectiva de recta final con estelas de velocidad y compresión hacia meta.
+  aesthetic: Sprint idolizado de energía festiva, showmanship competitivo, velocidad brillante y alegría dramática.
+  form_and_line: Siluetas livianas, movimiento de listones/cabello y acting de rivalidad alegre.
+  color_palette: Pasteles saturados de evento, verdes vivos y acentos de alto contraste.
+  lighting_setup: Iluminación brillante de espectáculo con destellos de clímax veloz y rebote cálido.
+  material_texture: Polvo deportivo, telas ornamentales ligeras, accesorios de presentación y brillo pulido.
+  render_quality: Performance frame hyper-bright con lectura limpia de sprint, carril abstracto y clímax.
+  spatial_distortion: Estelas de velocidad y compresión hacia punto de llegada emocional.
   atmosphere: Centelleante, veloz, alegre y dramática.
-  key_features: Profundidad de carril, energía de público, cintas en movimiento y rush de línea de meta.
+  key_features: Profundidad de carril abstracto, energía colectiva, cintas en movimiento y rush de llegada.
   creative_brief: >-
-    Construye una gramática reusable de idol-derby-sprint donde espectáculo,
-    velocidad y legibilidad de carril se integren sin depender de un photo-finish
-    específico.
+    Construye una gramática reusable de sprint idol festivo para cualquier prompt o imagen de entrada:
+    velocidad, espectáculo y brillo competitivo sin imponer pista, derby, público, meta ni carrera literal.
 avoidRules:
   - realistic
   - 3d render

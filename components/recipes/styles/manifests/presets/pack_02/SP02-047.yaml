@@ -17,11 +17,11 @@ visualDna:
   color_palette: Dark Sepia, iron grey, chocolate brown, muddy cream
   lighting_setup: Flat daylight, harsh skylight, no fill, stark contrast
   material_texture: Chemical stains, iron plate, collodion pour, hand-poured edge
-  render_quality: Rough, historic, battlefield authenticity, unvarnished truth
+  render_quality: Rough, historic, iron-plate authenticity, unvarnished truth
   spatial_distortion: None
-  atmosphere: Serious, old, stoic endurance, wartime gravity
+  atmosphere: Serious, old, stoic endurance, documentary gravity
   key_features: Black edges, iron oxidation, thumb-mark, plate wear
-  creative_brief: 'Darkened iron bears witness to what brightness once touched, a record carved not in light but in endurance. The pour of chemistry across metal leaves its signature in stains and swirling edges, every thumb-mark a scar earned in the service of permanence. These plates hold gravity: the stoic weight of faces facing an unforgiving lens, unvarnished and unblinking.'
+  creative_brief: 'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling.'
 avoidRules:
   - clean
   - white

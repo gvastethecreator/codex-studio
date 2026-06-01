@@ -19,9 +19,9 @@ visualDna:
   material_texture: Scratches, cigarette burns, torn splices, dust hair
   render_quality: Damaged film, degraded, sleazy, exploitation-grade
   spatial_distortion: Film splice, jumpy gate weave, missing frame
-  atmosphere: Trashy, violent, lurid, midnight-movie danger
+  atmosphere: Trashy, lurid, midnight-movie danger
   key_features: Dirt, cue marks, grain storm
-  creative_brief: Every frame arrives wounded — scarred by projector teeth, faded by years of neglect, bleeding magenta at the edges like a half-healed bruise. This is cinema dragged through the gutter and projected onto a peeling wall in a room where the exit sign flickers and nobody wants to leave.
+  creative_brief: 'Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices, magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.'
 avoidRules:
   - clean
   - hd

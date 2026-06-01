@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Stylized family-animation CG, Toy Story/Up warmth, emotional precision, lovable imperfection
+  aesthetic: Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection
   form_and_line: None
   color_palette: Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent
   lighting_setup: Cinematic 3D, global illumination, soft bounce, ambient occlusion
-  material_texture: Stylized realism, clay-model surface, fabric nap, plastic toy sheen
+  material_texture: Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface
   render_quality: High budget, cute, emotionally precise, technically invisible
-  spatial_distortion: Big eyes, expressive pupil, exaggerated emotion
-  atmosphere: Heartwarming, fun, tear-jerking sincerity, family adventure
-  key_features: Soft shadows, character silhouette, montage sequence
-  creative_brief: Every surface hums with an inner warmth, as though the objects themselves are glad to be seen. A toy's chipped paint speaks of years loved, a house lifted by balloons carries the weight of what was left unsaid. The light bends not toward realism but toward truth — the kind that makes you laugh and cry in the same breath.
+  spatial_distortion: Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette
+  atmosphere: Heartwarming, fun, sincere, emotionally readable
+  key_features: Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling
+  creative_brief: 'Render any prompt as high-budget family-feature CG: simplified forms, tactile materials, warm global illumination, and expressive staging that reads instantly without needing a fixed story object. Surfaces should look designed for emotional clarity rather than photoreal neutrality. Push charm through shape language, bounce light, and carefully tuned material imperfections.'
 avoidRules:
   - 2d
   - anime

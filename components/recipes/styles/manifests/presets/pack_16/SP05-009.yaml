@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-009
 packId: pack_16
-name: Hyper-Detailed Neo-City
+name: Hyper-Dense Cyber-Retro Infrastructure Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Megaciudad neo-retro hiperdensa, con fricción social, velocidad mecánica y saturación de infraestructura.
-  form_and_line: Línea detallista y nerviosa, arquitectura protagonista y dinámica de desplazamiento a máxima inercia.
-  color_palette: Violeta eléctrico, verde neón urbano, concreto gris-azul y rojos de señal disruptiva.
-  lighting_setup: Brillo de cartel superpuesto, flare industrial y sombras recortadas por viaductos elevados.
-  material_texture: Asfalto caliente, chapa urbana, señalética luminosa y suciedad tecnológica acumulada.
+  aesthetic: Infraestructura cyber-retro hiperdensa, fricción social, velocidad mecánica y saturación sistémica.
+  form_and_line: Línea detallista y nerviosa, estructura protagonista y dinámica de desplazamiento a máxima inercia.
+  color_palette: Violeta eléctrico, verde neón, concreto gris-azul y rojos de señal disruptiva.
+  lighting_setup: Brillo de señal superpuesto, flare industrial y sombras recortadas por capas elevadas.
+  material_texture: Superficies calientes, chapa abstracta, señalética luminosa y suciedad tecnológica acumulada.
   render_quality: Acabado retro de alta complejidad visual con lectura clara de caos estructurado.
-  spatial_distortion: Capas de ciudad superpuestas (vía, pasarela, torre) para sensación de presión metropolitana constante.
+  spatial_distortion: Capas infraestructurales superpuestas para sensación de presión sistémica constante.
   atmosphere: Eléctrica, rebelde, convulsa, adrenalínica.
-  key_features: Horizonte saturado de ingeniería, movilidad agresiva, densidad de cartelería y pulso de revuelta cívica.
-  creative_brief: Construye una gramática reusable de urbanismo cyber-retro extremo para cualquier sujeto, priorizando densidad arquitectónica, energía social y movimiento continuo.
+  key_features: Horizonte saturado de ingeniería, movilidad agresiva, densidad señalética y pulso de revuelta.
+  creative_brief: >-
+    Construye una gramática reusable de hyper-dense-cyber-retro-infrastructure para
+    cualquier sujeto, priorizando densidad arquitectónica, energía social y
+    movimiento continuo sin imponer ciudad literal, calles, torres, vías,
+    pasarelas ni cartelería concreta.
 avoidRules:
   - realistic
   - 3d render

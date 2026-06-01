@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-288
 packId: pack_16
-name: The Girl Who Leapt Through Time - Summer Rooftop Rewind
+name: Elastic Summer Time Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Juventud veraniega con elasticidad temporal ligera, combinando comedia de error cotidiano y melancolía de decisiones irreversibles.
-  form_and_line: Trazos ágiles para movimiento de salto, expresividad facial espontánea y siluetas escolares limpias de alta legibilidad.
-  color_palette: Azules de cielo brillante, blancos de nube cálida, verdes suburbanos suaves y acentos rosados de emoción adolescente.
-  lighting_setup: Sol de tarde alto con rebotes claros en azoteas, sombras suaves y brillo atmosférico de verano en expansión.
-  material_texture: Concreto de techo escolar, barandas metálicas calientes al sol, telas ligeras de uniforme y aire húmedo estival.
+  aesthetic: Juventud luminosa con elasticidad temporal ligera, energía de error cotidiano y melancolía de decisión irreversible.
+  form_and_line: Trazos ágiles, expresividad espontánea, diagonales de impulso y siluetas limpias de alta legibilidad.
+  color_palette: Azules brillantes, blancos cálidos, verdes suaves de cotidianidad abierta y acentos rosados de impulso emocional.
+  lighting_setup: Sol de tarde alto con rebotes claros, sombras suaves y brillo atmosférico de verano en expansión.
+  material_texture: Superficies cálidas al sol, metal liviano, telas ligeras y aire húmedo estival sin anclar locación.
   render_quality: Acabado cinematográfico fresco con prioridad en ritmo corporal, timing visual y lectura clara de loop temporal.
   spatial_distortion: Perspectiva naturalista con elongación dinámica en saltos y microdeformación de trayectoria para sugerir rewind temporal.
   atmosphere: Lúdica, nostálgica, aérea, impulsiva.
-  key_features: Azoteas como plataforma, nubes protagonistas, gestualidad de salto, iconografía temporal sutil y ensemble juvenil.
-  creative_brief: Crea una gramática reusable de verano temporal para cualquier sujeto usando luz de tarde, composición de salto y tensión entre juego y arrepentimiento.
+  key_features: Luz de tarde, impulso corporal, repetición temporal sutil, aire de verano abstracto y tensión entre juego y arrepentimiento.
+  creative_brief: >-
+    Crea una gramática reusable de tiempo elástico veraniego para cualquier prompt o imagen de entrada:
+    ligereza, impulso y arrepentimiento suave sin imponer azoteas, escuelas, saltos literales ni grupos juveniles.
 
 avoidRules:
   - realistic

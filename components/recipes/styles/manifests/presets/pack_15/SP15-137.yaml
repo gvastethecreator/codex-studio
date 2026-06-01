@@ -1,0 +1,37 @@
+schemaVersion: 1
+id: SP15-137
+packId: pack_15
+name: Bone Lime Signal Cairn
+category: 12. Corepunk — Stonepunk
+version: 1
+supportedTasks: [image_generate, image_edit, style_preset_card]
+tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+visualDna:
+  aesthetic: Stonepunk communication grammar where cairn stacks, lime pigment, bone toggles, and wind-borne signal logic create pre-electric networks.
+  form_and_line: Stacked cairn silhouettes, semaphore diagonals, knotted cord paths, incised glyph bands, and wind-vane triangles.
+  color_palette: Bone white, limewash chalk, weathered granite, ochre cord, charcoal shadow, and dry grass gold.
+  lighting_setup: Hard low sun, high-contrast stone edges, wind-dust haze, and small ember or mirror glints.
+  material_texture: Lime pigment dust, polished bone toggles, granite chips, braided grass cord, soot marks, and scratched signal glyphs.
+  render_quality: Primitive network concept finish with readable signal hierarchy, tactile stone construction, and windswept material honesty.
+  spatial_distortion: Ridge-line repetition and signal-chain depth without requiring towers, messengers, flags, or a landscape scene.
+  atmosphere: Windswept, alert, communal, ancient, pragmatic.
+  key_features: Cairn-stack rhythm, bone toggle markers, lime glyph bands, cord path diagrams, and semaphore-like diagonals.
+  creative_brief: >-
+    Preserve bone lime signal cairn as a reusable style system: pre-electric
+    communication, chalk-bone marking, and windswept stone network rhythm
+    should apply to any subject without requiring cairns, flags, people, or a
+    literal ridge.
+avoidRules: [photoreal, cyber-neon, glossy-sci-fi, modern-asphalt, watermark, text, logo]
+assets: { defaultImage: /assets/recipes/styles/defaults/SP15-137.webp }
+attributes:
+  negativePrompt: photoreal, cyber-neon, glossy-sci-fi, modern-asphalt, watermark, text, logo
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-stonepunk,
+    categoryName: 12. Corepunk — Stonepunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

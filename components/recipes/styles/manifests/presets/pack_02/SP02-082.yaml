@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Childlike notebook scribble, wonky circles for heads, stick-thin limbs ending in mittens, deliberately bad proportions, joyful incompetence, crayon-on-kitchen-wall energy
+  aesthetic: Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy
   form_and_line: Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure
   color_palette: Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright
   lighting_setup: No lighting logic, flat fills with zero shading, rejecting dimension
   material_texture: Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side
   render_quality: Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece
-  spatial_distortion: Heads too big for stick bodies, hands drawn as five-ray sunbursts, no perspective whatsoever
+  spatial_distortion: Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic
   atmosphere: Innocent, joyful chaos, giggling anarchy, pure creative abandon
-  key_features: Triangle roofs, spiral sun in corner, flowers as lollipop sticks, smiley-face everything
-  creative_brief: A hand that has not yet learned shame drags wax across paper with the full conviction of kindergarten genius. Circles wobble, colors trespass their borders, and every sun wears a smile because no one told it not to. The work hums with the frequency of pure making, before taste learned to say no.
+  key_features: Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout
+  creative_brief: 'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art scene.'
 avoidRules:
   - realistic
   - proportional

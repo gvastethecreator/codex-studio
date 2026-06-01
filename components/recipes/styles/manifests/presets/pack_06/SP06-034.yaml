@@ -17,7 +17,7 @@ visualDna:
   color_palette: Soft blacks, greys
   lighting_setup: Soft
   material_texture: Limestone grain
-  render_quality: Toulouse-Lautrec, poster
+  render_quality: Stone-print poster softness with faithfully transferred crayon grain
   spatial_distortion: None
   atmosphere: Artistic, soft
   key_features: Grainy texture
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -12,7 +12,7 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Fortificación doméstica improvisada en cartón reciclado con unión visible y fantasía manual de bajo recurso.
+  aesthetic: Cartón reciclado improvisado con unión visible y fantasía manual de bajo recurso.
   form_and_line: Ortogonales de cajas apiladas, voladizos de solapa, trazas de cinta y aperturas recortadas a mano.
   color_palette: Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft fabric neutrals
   lighting_setup: Base cálida interior, spill de lámpara, hotspots de linterna y rebote filtrado por manta en contraste bajo.
@@ -20,11 +20,11 @@ visualDna:
   render_quality: Realismo low-tech artesanal con imperfección de ensamblaje y tactilidad reciclada nostálgica.
   spatial_distortion: Sagging
   atmosphere: Ingeniosa, cozy y temporal, orgullosamente homemade.
-  key_features: Canto corrugado expuesto, juntas reforzadas con cinta, cubiertas de solapa, ornamento a marcador y cierres blandos textiles.
+  key_features: Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos textiles.
   creative_brief: >-
     Define una gramática reusable de cardboard-fort basada en masa de cajas,
-    lógica de ensamble con cinta y detalle manual infantil, sin depender del
-    contenido narrativo de escena.
+    lógica de ensamble con cinta y detalle manual low-tech, sin depender de
+    contenido narrativo.
 avoidRules:
   - solid wall
 assets:

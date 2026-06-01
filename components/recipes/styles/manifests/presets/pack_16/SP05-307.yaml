@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-307
 packId: pack_16
-name: Touch - Baseball Summer Nostalgia
+name: Summer Sports Melodrama Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Melodrama deportivo adolescente de verano tardío, donde rivalidad, duelo íntimo y crecimiento conviven en clave nostálgica.
-  form_and_line: Línea deportiva limpia, gesto juvenil contenido y composición de campo que alterna acción atlética y pausa emocional.
-  color_palette: Verdes de diamante soleado, naranjas de atardecer, blancos de uniforme y azules deslavados de verano tardío.
-  lighting_setup: Sol bajo cálido con contraluces de estadio escolar y sombras planas que sostienen melancolía ligera.
-  material_texture: Tierra de infield, cuero de guante, tela de uniforme y grano fílmico de recuerdo deportivo.
-  render_quality: Acabado retro-atlético premium con lectura táctica de partido y subtexto romántico en respiraciones largas.
-  spatial_distortion: Perspectiva de campo abierta con compresión selectiva en momentos de mirada y decisión sentimental.
+  aesthetic: Melodrama deportivo de verano tardío, con rivalidad, duelo íntimo y crecimiento nostálgico.
+  form_and_line: Línea atlética limpia, gesto contenido y composición que alterna acción física y pausa emocional.
+  color_palette: Verdes soleados, naranjas de atardecer, blancos limpios y azules deslavados de verano tardío.
+  lighting_setup: Sol bajo cálido con contraluces amplios y sombras planas que sostienen melancolía ligera.
+  material_texture: Polvo seco, cuero cálido, tela funcional y grano fílmico de recuerdo deportivo.
+  render_quality: Acabado retro-atlético premium con lectura táctica de esfuerzo y subtexto romántico en respiraciones largas.
+  spatial_distortion: Perspectiva abierta con compresión selectiva en momentos de mirada y decisión sentimental.
   atmosphere: Nostálgica, cálida, atlética, melancólica.
-  key_features: Diamante soleado, marcador narrativo, miradas desde dugout y crescendo emocional inning a inning.
-  creative_brief: Diseña una gramática reusable de deporte sentimental juvenil para cualquier sujeto, combinando luz estival, presión competitiva y deseo contenido de maduración.
+  key_features: Luz estival, presión competitiva, pausa antes del esfuerzo, deseo contenido y crescendo emocional.
+  creative_brief: >-
+    Diseña una gramática reusable de deporte sentimental juvenil para cualquier prompt o imagen de entrada:
+    verano, competencia y maduración sin imponer baseball, diamantes, marcadores, dugouts ni adolescentes.
 avoidRules:
   - realistic
   - 3d render

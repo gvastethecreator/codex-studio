@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Urban grime, devil-contract desperation, splattered apartment-block carnage, greasy youth burnout, industrial gore comedy, ridiculous violence played with deadpan panic, civic-collapse devil hunting
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous violence.
+  form_and_line: Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic timing.
+  color_palette: Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.
+  lighting_setup: Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.
+  material_texture: Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate haze.
+  render_quality: Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.
+  spatial_distortion: Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.
   atmosphere: Chaotic, filthy, feral, desperate
-  key_features: Industrial splatter, jagged power silhouettes, exhausted youth body language, grim city clutter, violent comic timing
-  creative_brief: Blood dries on concrete and nobody stops to clean it — the filth of devil hunting is not aesthetic but environmental, the air itself greasy with exhaust and bad decisions. Violence arrives with deadpan inevitability, bodies ragdolling through apartment-block corridors as if physics gave up. The horror laughs at itself, and that hollow cackle is the soundtrack of youth spent paying someone else's debts.
+  key_features: Industrial splatter, burnout posture, grime haze, deadpan shock, contract-panic energy.
+  creative_brief: >-
+    Make any prompt feel grimy, desperate, and absurdly violent through grease
+    texture, hard fluorescent glare, jagged impact rhythm, and deadpan panic
+    without locking it to a specific hunter job or city scene.
 avoidRules:
   - realistic
   - 3d render

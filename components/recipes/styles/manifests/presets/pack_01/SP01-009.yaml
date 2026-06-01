@@ -13,14 +13,17 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: High key studio portraiture, bright and airy photography
-  subject_treatment: Low contrast edges, soft features, minimal shadows on the face
-  color_and_tone: Predominantly white and pastel tones, light skin tones, pure white background
+  subject_treatment: Low contrast edges, soft features, minimal shadow on primary forms
+  color_and_tone: Predominantly white and pastel tones, pale material tones, pure white background
   lighting_and_shadow: Overexposed wrap-around lighting, multiple softboxes, shadowless environment
-  texture_and_material: Soft and airy textures, smooth skin, bright fabrics
+  texture_and_material: Soft airy textures, smooth surfaces, bright fabrics or pale materials
   camera_and_composition: Blown out highlights in the background, clean and minimal framing
   atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
   rendering_and_quality: Commercial beauty standard, crisp but soft, high resolution
-  creative_brief: Light becomes the subject itself, dissolving boundaries between figure and space in a luminous embrace. The image feels like a breath held at the peak of happiness—weightless, glowing, untouched by shadow. Skin becomes porcelain, fabric becomes cloud, and the entire frame radiates with an inner warmth that suggests both innocence and transcendence.
+  creative_brief: >-
+    Apply high-key portrait lighting to any subject: white wraparound exposure,
+    pastel softness, clean minimal framing, near-shadowless form, and airy
+    optimism without requiring skin or figure.
 avoidRules:
   - dark
   - shadows

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-079
 packId: pack_16
-name: Redline – Hyperkinetic Cosmic Racing
+name: Hyperkinetic Cosmic Velocity Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Carrera cósmica hipercinética dibujada a pulso, con exceso cromático y culto absoluto a la velocidad.
+  aesthetic: Velocidad cósmica hipercinética dibujada a pulso, con exceso cromático y culto absoluto al impulso.
   form_and_line: Trazo brutal de inercia extrema, líneas de fuga violentas y siluetas aerodinámicas de alto contraste.
   color_palette: Primarios incendiarios, magentas eléctricos, negros densos y acentos neón de nitro en combustión.
-  lighting_setup: Flashes de motor, contraluces duros y estallidos lumínicos que enfatizan aceleración sin reposo.
-  material_texture: Carrocería vibrante, goma abrasada, humo dibujado y grano entintado de energía analógica.
-  render_quality: Acabado de espectáculo mecánico maximalista con claridad de velocidad y sobrecarga sensorial.
-  spatial_distortion: Perspectiva túnel y curvatura extrema de pista para sensación de riesgo constante.
+  lighting_setup: Flashes de propulsión, contraluces duros y estallidos lumínicos que enfatizan aceleración sin reposo.
+  material_texture: Superficie vibrante, fricción abrasada, humo dibujado y grano entintado de energía analógica.
+  render_quality: Acabado de espectáculo maximalista con claridad de velocidad y sobrecarga sensorial.
+  spatial_distortion: Perspectiva túnel y curvatura extrema del espacio para sensación de riesgo constante.
   atmosphere: Adrenalínica, eufórica, vertiginosa, explosiva.
-  key_features: Motion-lines dominantes, perfiles de racers excéntricos y dramatización gráfica de boost y derrape.
-  creative_brief: Construye una gramática reusable de competición cósmica hiperveloz para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax de pista imposible.
+  key_features: Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.
+  creative_brief: Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible sin imponer carreras, vehículos, pilotos ni pistas.
 avoidRules:
   - realistic
   - 3d render

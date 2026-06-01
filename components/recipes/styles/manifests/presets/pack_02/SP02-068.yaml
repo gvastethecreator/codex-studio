@@ -14,14 +14,14 @@ tags:
 visualDna:
   aesthetic: Blurry lights
   form_and_line: None
-  color_palette: Soft blobs, warm amber orbs, cool cyan discs, pastel circles
-  lighting_setup: Defocused points, out-of-focus lights, holiday-string glow
+  color_palette: Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles
+  lighting_setup: Defocused points, out-of-focus speculars, aperture-projected glow
   material_texture: Creamy blur, cat's-eye shape, soap-bubble edge
   render_quality: Dreamy, abstract, lens-artist blur, optical softness
-  spatial_distortion: Circles, aperture shape projection, specular disc
-  atmosphere: Soft, night, magical blur, romantic haze
-  key_features: Shallow DOF, background abstraction, light orbs
-  creative_brief: The world recedes into a vocabulary of circles—soft amber planets and cyan moons floating in a sea of optical tenderness. Focus narrows to a single truth while everything else dissolves into creamy abstraction, the background becoming a lullaby of light that frames rather than distracts.
+  spatial_distortion: Circles, aperture shape projection, specular discs, cat-eye edges
+  atmosphere: Soft, optical, intimate, romantic haze
+  key_features: Shallow DOF, background abstraction, specular discs, creamy falloff
+  creative_brief: 'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night scenes. Bokeh should support the input by simplifying everything outside the focal plane.'
 avoidRules:
   - deep focus
 assets:

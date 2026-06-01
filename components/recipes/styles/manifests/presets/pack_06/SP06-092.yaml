@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Commodore-64-pixel-art, broad-fat-pixels in 320x200 or 160x200 multi-color mode, that-unmistakable-C64-brown-and-grey-palette, SID-chip-music-visual-counterpart, Last-Ninja-isometric-adventure, Impossible-Mission-platform-elegance, European-computer-game-look, wide-pixel-aspect-ratio-stretching, 16-colors-of-genius-constraint
-  form_and_line: Fat-pixel-8x8 character-blocks, multi-color-sprite-overlay, 320x200-chunky-resolution, wide-pixel-aspect stretching, hardware-sprite-multiplexing barriers visible
+  aesthetic: Commodore-64-pixel-art, broad-fat-pixels in 320x200 or 160x200 multi-color mode, unmistakable C64 brown-and-grey palette, SID-chip music as visual rhythm, Last Ninja and Impossible Mission as computer-art anchors, European-computer-game look, wide-pixel-aspect-ratio stretching, 16-colors-of-genius-constraint
+  form_and_line: Fat-pixel 8x8 character blocks, multi-color overlay logic, 320x200 chunky resolution, wide-pixel-aspect stretching, hardware multiplexing barriers visible
   color_palette: C64-classic-16 — brown, dark-grey, light-grey, orange, cyan, purple, green, blue, yellow, white, black, red, all slightly-muted-80s-computer-spectrum
   lighting_setup: Flat-pixel-fill-lighting, no-gradients, dither-pattern-value-transitions, color-per-8x8-cell-limitation, raster-interrupt-split effects
   material_texture: Character-block-grid, hardware-sprite-resolution-limit, dither-pattern-noise, CRT-composite-video-artifacting, SID-audio-hum-visual-counterpart
   render_quality: Commodore-64-pixel aesthetic, 8-bit-home-computer-beauty, European-80s-game-art, fat-pixel-warmth, 16-color-mastery
   spatial_distortion: Multi-color-character-block-grid, wide-pixel-aspect-ratio, 160x200-resolution-proportions, raster-scanline-line-rendering, PAL/NTSC-letterbox
   atmosphere: 80s-computer-club nostalgia, bedroom-coding-wonder, cassette-loading-patience, SID-chip-soundtrack-memory, European-home-computer-warmth
-  key_features: C64-16-color-palette, fat-multi-color-pixels, character-block-grid-artifacts, wide-pixel-aspect, dither-pattern-shading, CRT-composite-blur, raster-split-effects
-  creative_brief: Fat pixels in sixteen colors — that unmistakable C64 brown, the grey, the cyan — wide as they are tall on PAL displays that stretched horizontally what the chip intended square. Each 8x8 character cell holds a color choice, the image built from the same grid that held text. The aesthetic is the European bedroom at 3am, the glow of a CRT reflecting on a teenager's glasses, the sound of a datasette loading a world one byte at a time.
+  key_features: C64 16-color palette, fat multi-color pixels, character-block-grid artifacts, wide-pixel aspect, dither-pattern shading, CRT-composite blur, raster-split effects
+  creative_brief: Any prompt is forced through sixteen muted colors and wide character-cell pixels. The image feels built from the same grid that held text, with dithered value shifts, composite blur and raster splits turning limitation into warmth.
 avoidRules:
   - smooth
   - modern
@@ -51,4 +51,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

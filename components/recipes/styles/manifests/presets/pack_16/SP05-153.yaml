@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-153
 packId: pack_16
-name: D.Gray-man - Exorcist Cathedral Machinery
+name: Techno-Gothic Exorcism Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Gótico exorcista tecno-sacral, con juventud marcada por maldición y liturgia bélica en paisajes de catedral sombría.
-  form_and_line: Línea digital fina con silueta de abrigo exorcista, gesto melancólico y lenguaje de arma sacramental.
-  color_palette: Azules fríos de nave, granates de vitral, marfiles sagrados y negros de condena mecánica.
-  lighting_setup: Luz filtrada de vitrales, rim tenue sobre insignias y sombras graduales de interior sacro-industrial.
-  material_texture: Piedra gótica, metal de maquinaria maldita, tela pesada de uniforme y pátina de polvo eclesial.
+  aesthetic: Gótico tecno-sacral, con juventud maldita, liturgia de presión abstracta y solemnidad mecánica sombría.
+  form_and_line: Línea digital fina con silueta pesada, gesto melancólico y lenguaje de fuerza sacramental.
+  color_palette: Azules fríos de penumbra, granates vitrales, marfiles sagrados y negros de condena mecánica.
+  lighting_setup: Luz filtrada tipo vitral, rim tenue sobre insignias abstractas y sombras graduales sacro-industriales.
+  material_texture: Piedra gótica, metal maldito, tela pesada, polvo eclesial y pátina mecánica.
   render_quality: Acabado premium dark-2000s con equilibrio entre combate ritual y dolor juvenil persistente.
-  spatial_distortion: Profundidad de nave catedralicia con compresión de corredor para enfatizar carga espiritual y amenaza.
+  spatial_distortion: Profundidad sacra comprimida con fuga vertical para enfatizar carga espiritual y amenaza.
   atmosphere: Lúgubre, sagrada, maldita, decidida.
-  key_features: Abrigo exorcista, iconografía de inocencia-armada, marcas de maldición y profundidad de templo.
-  creative_brief: Construye una gramática reusable de exorcismo tecno-gótico para cualquier sujeto, mezclando solemnidad religiosa, ingeniería maldita y determinación juvenil.
+  key_features: Iconografía sacra tecnificada, marcas de maldición, silueta pesada y profundidad ritual.
+  creative_brief: >-
+    Construye una gramática reusable de techno-gothic-exorcism para cualquier
+    sujeto: solemnidad religiosa, ingeniería maldita, dolor juvenil y contraste
+    sacro-industrial sin imponer catedrales, templos, abrigos, armas,
+    uniformes ni exorcistas literales.
 avoidRules:
   - realistic
   - 3d render

@@ -1,0 +1,44 @@
+schemaVersion: 1
+id: SP02-126
+packId: pack_02
+name: Late Night Infomercial Gloss
+category: 3. Broadcast And Tv Look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - broadcast-and-tv-look
+visualDna:
+  aesthetic: Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text
+  form_and_line: Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit composition
+  color_palette: Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange
+  lighting_setup: Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow
+  material_texture: Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface
+  render_quality: Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity
+  spatial_distortion: Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop
+  atmosphere: Urgent, salesy, artificial, enthusiastic
+  key_features: Split layout, callout shapes, hard gloss, overlit demo, no readable text
+  creative_brief: 'Use late-night infomercial gloss as treatment: overlit demo clarity, split-screen comparison, hard plastic shine, callout shapes, saturated bargain colors, and camcorder sharpness. Avoid specific products, presenters, phone numbers, or readable sales copy. The style should make any subject feel aggressively demonstrated.'
+avoidRules:
+  - subtle lighting
+  - tasteful minimalism
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-126.webp
+attributes:
+  negativePrompt: subtle lighting, tasteful minimalism
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: broadcast-and-tv-look
+  categoryName: 3. Broadcast And Tv Look
+  tags:
+    - cinematic-and-media
+    - broadcast-and-tv-look
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

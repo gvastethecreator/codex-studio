@@ -9,14 +9,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, static-scene, muddy-colors',
     style: {
-      aesthetic: 'Futuristic racing in vertical city with holographic posters.',
-      subject_treatment: 'Stylized anti-gravity single-seaters built for extreme speed.',
-      color_and_tone: 'Electric blue, violet and high energy white.',
-      lighting_and_shadow: 'Sweeping neons and dynamic light trails.',
-      texture_and_material: 'Carbon fiber, smart glass and wet asphalt.',
-      camera_and_composition: 'Closed curve plane with motion framing.',
-      atmosphere_and_mood: 'Adrenaline, competition, and urban spectacle.',
-      rendering_and_quality: 'High-impact in-game marketing shot.',
+      aesthetic:
+        'Arcade racer futurista de alta velocidad con verticalidad urbana, readability de pista y feedback visual instantáneo.',
+      subject_treatment:
+        'Chasis anti-gravedad por clase (grip/boost/agile) con perfiles de handling distinguibles.',
+      color_and_tone:
+        'Azul eléctrico y violeta dominante, con blanco energético para boost-state y timing windows.',
+      lighting_and_shadow:
+        'Neón barrido, trails vectoriales y destellos de checkpoint para ritmo competitivo.',
+      texture_and_material:
+        'Fibra de carbono, vidrio inteligente, asfaltos húmedos y señalética holográfica funcional.',
+      camera_and_composition:
+        'Curvas cerradas con frame de velocidad, apex legible y capas de obstáculo por carril.',
+      atmosphere_and_mood: 'Adrenalina limpia, espectáculo competitivo y precisión de conducción.',
+      rendering_and_quality:
+        'Marketing key art gameplay-driven con claridad de trayectoria, boost economy y lectura de rival.',
     },
   },
   {
@@ -25,14 +32,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, static-pose, lowres',
     style: {
-      aesthetic: 'Extreme arcade sport on mobile volcanic platforms.',
-      subject_treatment: 'Futuristic riders with thermal reactive equipment.',
-      color_and_tone: 'Magma red, basalt black, and cyan from diegetic UI elements.',
-      lighting_and_shadow: 'Nether lava glow and stadium spotlights.',
-      texture_and_material: 'Vitrified rock, anodized metal, and dense smoke.',
-      camera_and_composition: 'Wide plane with route lines.',
-      atmosphere_and_mood: 'Vertigo, spectacle, and high rhythm.',
-      rendering_and_quality: 'Promotional art for competitive mode.',
+      aesthetic:
+        'Arcade sport extremo de alta velocidad sobre plataformas dinámicas con hazards térmicos reactivos.',
+      subject_treatment:
+        'Riders por arquetipo (speed/control/trick) con equipamiento termo-reactivo visible.',
+      color_and_tone:
+        'Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.',
+      lighting_and_shadow:
+        'Glow de lava + focos arena para alternar visibilidad de ruta y zonas de castigo.',
+      texture_and_material:
+        'Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.',
+      camera_and_composition:
+        'Plano amplio con líneas de circuito, jumps y bifurcaciones competitivas legibles.',
+      atmosphere_and_mood: 'Vertiginosa, espectacular y frenética.',
+      rendering_and_quality:
+        'Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.',
     },
   },
   {
@@ -41,14 +55,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, muddy, lowres',
     style: {
-      aesthetic: 'Drift competition in ceremonial-tech desert kingdoms.',
-      subject_treatment: 'Noble pilots with light armor and heraldic helmets.',
-      color_and_tone: 'Golden sand, turquoise, and crimson red.',
-      lighting_and_shadow: 'Low sun with illuminated dust trails.',
-      texture_and_material: 'Leather, burnished steel, and eroded stone.',
-      camera_and_composition: 'Open curve with the drift as the focal action.',
-      atmosphere_and_mood: 'Elegant rivalry and visceral speed.',
-      rendering_and_quality: 'Seasonal competitive-event artwork.',
+      aesthetic:
+        'Racing-arcade ceremonial en desierto hostil, centrado en velocidad sostenida, control de derrape y rivalidad por escuderías.',
+      subject_treatment:
+        'Pilotos como siluetas de facción con armadura ligera y señalética visual por rol de carrera.',
+      color_and_tone:
+        'Ocres abrasados, turquesa oxidado, ámbar térmico y rojo disciplinado para lectura por equipo.',
+      lighting_and_shadow:
+        'Luz rasante de tarde, sombras largas y polvo a contraluz para reforzar percepción de velocidad.',
+      texture_and_material:
+        'Compuestos erosionados por arena, aleaciones bruñidas y desgaste mecánico por fricción constante.',
+      camera_and_composition:
+        'Curva de apex con líneas de trayectoria, rutas de adelantamiento y capas de profundidad competitiva.',
+      atmosphere_and_mood: 'Rivalidad ritual, intensidad técnica y presión climática permanente.',
+      rendering_and_quality:
+        'Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.',
     },
   },
   {
@@ -57,14 +78,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, clutter, noisy-palette',
     style: {
-      aesthetic: 'Strategic battlefield inspired by an astral board.',
-      subject_treatment: 'Archetypal units with strict visual hierarchy.',
-      color_and_tone: 'Deep indigo, silver, and turquoise accents.',
-      lighting_and_shadow: 'Uniform cosmic glow with skill focal highlights.',
-      texture_and_material: 'Stellar marble, liquid energy, and fine metal.',
-      camera_and_composition: 'Soft top-down view for systemic readability.',
-      atmosphere_and_mood: 'Tactical calm and cerebral anticipation.',
-      rendering_and_quality: 'Arte de reglas claras para strategy game.',
+      aesthetic:
+        'Auto-battler táctico astral inspirado en tablero, centrado en economía de unidades, sinergias y posicionamiento previo.',
+      subject_treatment:
+        'Unidades arquetípicas con jerarquía visual estricta por rol (frontline, burst, support, control).',
+      color_and_tone:
+        'Índigo profundo, plata y acentos turquesa para codificar rareza, estado y alineación.',
+      lighting_and_shadow:
+        'Brillo cósmico uniforme con highlights focales para ultimates y activaciones clave.',
+      texture_and_material:
+        'Mármol estelar, energía fluida y metal fino de interfaz arcano-tecnológica.',
+      camera_and_composition:
+        'Top-down suave con cuadrícula implícita y espacios limpios para lectura sistémica.',
+      atmosphere_and_mood: 'Calma cerebral, cálculo estratégico y anticipación táctica.',
+      rendering_and_quality:
+        'Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.',
     },
   },
   {
@@ -73,14 +101,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, static, muddy-colors',
     style: {
-      aesthetic: 'Supernatural rhythm game in a haunted theater.',
-      subject_treatment: 'Spectral performers synchronized to visual beats.',
-      color_and_tone: 'Deep purple, aged gold, and spectral cyan.',
-      lighting_and_shadow: 'Theatrical spotlights and pulsing luminous fog.',
-      texture_and_material: 'Varnished wood, velvet, and fine smoke.',
-      camera_and_composition: 'Front-stage framing with choreographed layers.',
-      atmosphere_and_mood: 'Musical drama and performance tension.',
-      rendering_and_quality: 'Highly clear hit-timing visual design.',
+      aesthetic:
+        'Rhythm-battle gótico de arena escénica, centrado en timing estricto, patrones musicales y lectura de carriles.',
+      subject_treatment:
+        'Performers fantasmales como anclas de compás, coreografía por silueta y gestualidad beat-synced.',
+      color_and_tone:
+        'Púrpura real, dorado gastado, cian espectral y sombras burdeos para contraste temporal dramático.',
+      lighting_and_shadow:
+        'Conos de spotlight programados, bloom pulsado y sombras sincronizadas al tempo.',
+      texture_and_material:
+        'Madera lacada desgastada, terciopelo comprimido, latón oxidado y niebla particulada.',
+      camera_and_composition:
+        'Framing de proscenio con capas de escenario, hotspots de tempo y lanes claramente visibles.',
+      atmosphere_and_mood: 'Teatral, urgente y ceremonialmente competitiva.',
+      rendering_and_quality:
+        'Key-art competitivo de rhythm-game con cues visuales precisas de timing, combo y fase.',
     },
   },
   {
@@ -89,14 +124,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, modern-guns, lowres',
     style: {
-      aesthetic: 'Champion trial in a coliseum of living obsidian.',
-      subject_treatment: 'Heroic gladiators with rune-forged armor.',
-      color_and_tone: 'Volcanic black, inner red, and muted gold.',
-      lighting_and_shadow: 'Glowing fissures and ritual spotlights.',
-      texture_and_material: 'Glassy stone, forged metal, and sand.',
-      camera_and_composition: 'Circular arena centered on the duelists.',
-      atmosphere_and_mood: 'Brutal honor and ancestral spectacle.',
-      rendering_and_quality: 'Key art de boss challenge.',
+      aesthetic:
+        'Arena-combat ritual en coliseo de obsidiana viva, orientado a duelos por fases y lectura de patrón.',
+      subject_treatment:
+        'Gladiadores heroicos con armadura rúnica, perfiles de alcance y tempo claramente diferenciados.',
+      color_and_tone:
+        'Negro volcánico, rojo interno y oro apagado para jerarquía de amenaza y estatus.',
+      lighting_and_shadow:
+        'Fisuras incandescentes y focos rituales que marcan zonas de castigo y apertura.',
+      texture_and_material:
+        'Piedra vítrea, metal forjado, arena abrasiva y grietas activas por energía.',
+      camera_and_composition:
+        'Arena circular con foco en duelistas, límites de ring y hazards periféricos.',
+      atmosphere_and_mood: 'Brutal, honorable y ancestralmente espectacular.',
+      rendering_and_quality:
+        'Boss-trial key-art gameplay-first con cues nítidas de fase, telegraph y oportunidad.',
     },
   },
   {
@@ -105,14 +147,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, muddy-palette, low-detail',
     style: {
-      aesthetic: 'Esports arena for drafting prismatic heroes.',
-      subject_treatment: 'Characters with highly differentiated silhouettes.',
-      color_and_tone: 'Controlled multicolor palette over a neutral background.',
-      lighting_and_shadow: 'Stage spotlights and LED panels.',
-      texture_and_material: 'Clean armor, crystal, and energy.',
-      camera_and_composition: 'Frontal reveal-style presentation.',
-      atmosphere_and_mood: 'Competition, hype, and visual precision.',
-      rendering_and_quality: 'Promotional material for the draft phase.',
+      aesthetic:
+        'Hero-draft arena de esports, centrada en selección estratégica, counterpicks y lectura instantánea de roster.',
+      subject_treatment:
+        'Héroes de silueta altamente diferenciada por clase, función y amenaza temprana.',
+      color_and_tone:
+        'Multicolor controlado sobre base neutra para evitar ruido y preservar claridad competitiva.',
+      lighting_and_shadow: 'Spotlights escénicos y paneles LED que refuerzan turnos de pick/ban.',
+      texture_and_material:
+        'Armaduras limpias, cristal de energía y materiales de escenario broadcast-ready.',
+      camera_and_composition:
+        'Presentación frontal de reveal con jerarquía de picks y foco en composición de equipo.',
+      atmosphere_and_mood: 'Competitiva, hypeada y visualmente precisa.',
+      rendering_and_quality:
+        'Draft-phase promotional art con legibilidad superior de roles, counters y narrativa competitiva.',
     },
   },
   {
@@ -121,14 +169,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, rainy-city, lowres',
     style: {
-      aesthetic: 'Relic race among obelisks in an ancient desert.',
-      subject_treatment: 'Archaeologist racers with lightweight vehicles.',
-      color_and_tone: 'Amber sand, turquoise, and clay red.',
-      lighting_and_shadow: 'Intense sun with volumetric dust.',
-      texture_and_material: 'Eroded stone, leather, and bronze.',
-      camera_and_composition: 'Serpentine route with monumental landmarks.',
-      atmosphere_and_mood: 'Fierce competition and historical mystery.',
-      rendering_and_quality: 'Seasonal event for an adventure game.',
+      aesthetic:
+        'Racing-event arqueológico en desierto de obeliscos, enfocado en velocidad, relic pickup y navegación por landmarks.',
+      subject_treatment:
+        'Corredores-arqueólogos con vehículos ligeros y utilidades de exploración competitiva.',
+      color_and_tone:
+        'Arena ámbar, turquesa y rojo arcilla para diferenciación de ruta y objetivo.',
+      lighting_and_shadow:
+        'Sol intenso con polvo volumétrico para lectura dramática de trayectorias.',
+      texture_and_material: 'Piedra erosionada, cuero técnico, bronce antiguo y sedimento móvil.',
+      camera_and_composition: 'Ruta serpenteante con hitos monumentales y atajos de alto riesgo.',
+      atmosphere_and_mood: 'Competitiva, feroz y cargada de misterio histórico.',
+      rendering_and_quality:
+        'Seasonal-race gameplay art con claridad de checkpoints, reliquias y pacing.',
     },
   },
   {
@@ -137,14 +190,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, grunge, low-detail',
     style: {
-      aesthetic: 'Royal duel hall beneath a crystal dome.',
-      subject_treatment: 'Champions with stylized ceremonial armor.',
-      color_and_tone: 'Pearl white, sapphire blue, and soft gold.',
-      lighting_and_shadow: 'Elegant, clean overhead illumination.',
-      texture_and_material: 'Carved crystal, silk, and marble.',
-      camera_and_composition: 'Frontal symmetry for 1v1 combat.',
-      atmosphere_and_mood: 'Nobility, rivalry, and precision.',
-      rendering_and_quality: 'Competitive stage with premium identity.',
+      aesthetic:
+        'Duel-arena real bajo cúpula cristalina, orientada a 1v1 técnico de spacing, feints y castigo preciso.',
+      subject_treatment:
+        'Campeones con armadura ceremonial estilizada y lectura de estilo de combate.',
+      color_and_tone:
+        'Blanco perla, azul zafiro y oro suave para máxima claridad en enfrentamiento directo.',
+      lighting_and_shadow:
+        'Iluminación cenital limpia para preservar lectura frame-by-frame de animación.',
+      texture_and_material:
+        'Cristal tallado, seda de gala, mármol pulido y detalles de desgaste controlado.',
+      camera_and_composition: 'Simetría frontal con límites de arena y zonas neutrales claras.',
+      atmosphere_and_mood: 'Noble, rival y extremadamente precisa.',
+      rendering_and_quality:
+        'Competitive stage gameplay-first con legibilidad impecable de alcance, timing y ventaja.',
     },
   },
   {
@@ -153,14 +212,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt: 'watermark, text, logo, gritty-horror, lowres',
     style: {
-      aesthetic: 'Lightweight mecha sport in industrial docks.',
-      subject_treatment: 'Regional teams with strong visual identity.',
-      color_and_tone: 'Cobalt blue, sport orange, and steel gray.',
-      lighting_and_shadow: 'Stadium lights with marine haze.',
-      texture_and_material: 'Painted metal, rubber, and wet surfaces.',
-      camera_and_composition: 'Central court with compact stands.',
-      atmosphere_and_mood: 'Festive rivalry and competitive rhythm.',
-      rendering_and_quality: 'League art for a sports game mode.',
+      aesthetic:
+        'Mechball league portuaria de alta energía, centrada en objetivo central, rotaciones rápidas y juego de equipo.',
+      subject_treatment:
+        'Mechs-atleta ligeros codificados por equipo con silueta y rol táctico inequívocos.',
+      color_and_tone:
+        'Cobalto dominante, naranja de competencia y neutros acero con reflejo marino frío.',
+      lighting_and_shadow:
+        'Focos de estadio, niebla suave y reflejos especulares en piso húmedo para lectura de jugada.',
+      texture_and_material:
+        'Aleación recubierta, polímero marcado por impacto, piso deportivo gomado y hormigón de muelle.',
+      camera_and_composition:
+        'Arena-bowl con objetivo central, profundidad de graderío y lanes tácticos visibles.',
+      atmosphere_and_mood: 'Rival, cinética y de adrenalina sostenida.',
+      rendering_and_quality:
+        'Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

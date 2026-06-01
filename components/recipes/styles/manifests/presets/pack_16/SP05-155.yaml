@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-155
 packId: pack_16
-name: The Familiar of Zero - Tsundere Magic Academy
+name: Noble Arcane Romcom Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Comedia romántica de academia mágica aristocrática, con energía tsundere y espectáculo de duelo encantado.
-  form_and_line: Línea digital brillante, acting exagerado de conflicto afectivo y poses de varita de alto dramatismo cómico.
-  color_palette: Rosas nobles, azules de uniforme, dorados de castillo y blancos de hechizo de gran saturación.
-  lighting_setup: Luz de salón mágico pulida, destellos de conjuro y gradientes suaves de producción 2000s.
-  material_texture: Piedra de academia, ornamento aristocrático, textiles de uniforme y brillo limpio de compositing digital.
-  render_quality: Acabado premium romcom-fantasy con legibilidad de gag romántico y duelo ceremonial.
-  spatial_distortion: Espacio de campus nobiliario con teatralidad de pasillo y arena de magia para choques relacionales.
+  aesthetic: Romcom arcana aristocrática, con energía tsundere, nobleza lúdica y espectáculo mágico de conflicto afectivo.
+  form_and_line: Línea digital brillante, acting exagerado de conflicto afectivo y poses gestuales de alto dramatismo cómico.
+  color_palette: Rosas nobles, azules limpios, dorados ornamentales y blancos mágicos de gran saturación.
+  lighting_setup: Luz mágica pulida, destellos de conjuro y gradientes suaves de producción 2000s.
+  material_texture: Piedra pulida, ornamento aristocrático, textiles refinados y brillo limpio de compositing digital.
+  render_quality: Acabado premium romcom-fantasy con legibilidad de gag romántico y fricción ceremonial.
+  spatial_distortion: Espacio nobiliario abstracto con teatralidad ornamental y campo emocional para choques relacionales.
   atmosphere: Cómica, mágica, caprichosa, romántica.
-  key_features: Uniforme de academia, motivo familiar invocado, duelos de varita y expresividad tsundere central.
-  creative_brief: Construye una gramática reusable de academia mágica tsundere para cualquier sujeto, equilibrando nobleza lúdica, hechicería pop y romance conflictivo.
+  key_features: Ornamento noble, invocación pop, choque romántico, gestualidad tsundere y brillo arcano limpio.
+  creative_brief: >-
+    Construye una gramática reusable de noble-arcane-romcom para cualquier
+    sujeto: nobleza lúdica, hechicería pop, romance conflictivo y gag emocional
+    sin imponer academias, uniformes, castillos, familiares invocados, varitas
+    ni duelos.
 avoidRules:
   - realistic
   - 3d render

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-263
 packId: pack_05
-name: Gantz - Black-Sphere Execution Room
+name: Black Signal Nihilism Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Late-night urban death game, latex-black suits, green target lasers, nihilistic violence, apartment grit and afterlife machinery rendered with cynical precision
+  aesthetic: Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy void objects, survival logic as graphic design
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass, synthetic dust
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy black focal gravity
   atmosphere: Cruel, flashy, nihilistic, electric
-  key_features: Black-suit silhouettes, target-laser accents, death-room geometry, urban-night grime, ruthless body-language
-  creative_brief: A black sphere hums in an anonymous Tokyo apartment and suddenly death is a game with green laser rules and latex-black uniforms, resurrection just another menu option. Nihilism glows fluorescent in the urban night, where survival costs more than dying and the scoreboard tracks souls, not points.
+  key_features: Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless body-language abstraction
+  creative_brief: >
+    Treat any subject as if it is being processed by a cruel fluorescent system:
+    glossy black anchors, green signal marks, synthetic grit, and rule-like
+    overlays create nihilistic pressure without fixed settings, attire systems,
+    play structures, locations, or scorekeeping props.
 avoidRules:
   - realistic
   - 3d render

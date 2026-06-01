@@ -5,92 +5,141 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-031',
-    name: 'Haunted School Corridor',
+    name: 'Institutional Liminal Dread Style',
     category: '5. Horror',
     negativePrompt: 'photoreal, comedy, bright-pastel, watermark, text, logo',
     style: {
-      aesthetic: 'School-horror anime with psychological tension.',
-      form_and_line: 'Subtly broken contours and implied figures.',
-      color_palette: 'Sickly green, pale gray, and muted red.',
-      lighting_setup: 'Flickering fluorescent light with long shadows.',
-      material_texture: 'Damp walls, aged tiles, and suspended dust.',
-      render_quality: 'High-clarity atmospheric horror illustration.',
-      spatial_distortion: 'Deep corridor with oppressive vanishing depth.',
-      atmosphere: 'Anxiety, isolation, and invisible threat.',
-      key_features: 'Half-open door, distant silhouette, ambiguous reflection.',
-      creative_brief: 'An apparently empty hallway that radiates imminent danger.',
+      aesthetic:
+        'Institutional liminal horror centered on everyday order becoming psychologically unstable through subtle visual dissonance.',
+      form_and_line:
+        'Slightly misregistered contours, straight bureaucratic lines that warp near the vanishing point, and peripheral figure suggestions.',
+      color_palette:
+        'Fluorescent sick-green, chalk gray, nicotine beige, and restrained coagulated-red warning accents.',
+      lighting_setup:
+        'Intermittent overhead flicker pattern with alternating dead zones that create uncertain visibility cadence.',
+      material_texture:
+        'Damp paint bloom, worn synthetic sheen, stained panel surfaces, and particulate haze.',
+      render_quality:
+        'Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.',
+      spatial_distortion:
+        'Tunnel-like institutional perspective stretched beyond comfort, with micro-tilt and depth drag near thresholds.',
+      atmosphere:
+        'Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.',
+      key_features:
+        'Repeating institutional modules, uncertain reflections, failed flicker intervals, and threshold interruptions.',
+      creative_brief:
+        'Create a reusable institutional-liminal-dread grammar for any subject: bureaucratic geometry, flicker rhythm, barely perceived distortions, and social emptiness without imposing schools, corridors, lockers, doors, classrooms, or specific buildings.',
     },
   },
   {
     id: 'SP13-032',
-    name: 'Crimson Moon Apparition',
+    name: 'Crimson Celestial Omen Style',
     category: '5. Horror',
     negativePrompt: 'photoreal, cute-style, vivid-rainbow, watermark, text, logo',
     style: {
-      aesthetic: 'Supernatural anime apparition under a crimson moon.',
-      form_and_line: 'Ethereal silhouettes with minimal unsettling detail.',
-      color_palette: 'Blood red, deep black, and ashen white.',
-      lighting_setup: 'Moon backlight with dense fog.',
-      material_texture: 'Mist, dry branches, and spectral fabric.',
-      render_quality: 'Terror-focused frame with clear focal hierarchy.',
-      spatial_distortion: 'Open composition with ominous scale.',
-      atmosphere: 'Fatalism, mystery, and ancestral dread.',
-      key_features: 'Oversized moon, suspended figure, desolate surroundings.',
-      creative_brief: 'A supernatural-horror image with immediate, powerful readability.',
+      aesthetic:
+        'Folkloric celestial horror where omen iconography dominates scale, silhouette, and emotional tonality.',
+      form_and_line:
+        'Thin spectral contours, elongated drapery vectors, and stark silhouette cutouts against high-contrast sky masses.',
+      color_palette:
+        'Saturated blood-crimson sky field, void-black landforms, chalk-ash highlights, and desaturated bone undertones.',
+      lighting_setup:
+        'Strong backlit celestial core with fog-driven edge bloom, keeping subjects semi-occluded and symbol-first.',
+      material_texture:
+        'Vapor-heavy mist layers, brittle branch textures, weathered cloth translucency, and powder-dry ground surfaces.',
+      render_quality:
+        'High-impact mythic readability with deliberate shape economy and controlled atmospheric granulation.',
+      spatial_distortion:
+        'Vast negative-space composition where scale disproportion makes figures appear cosmically overruled.',
+      atmosphere: 'Omen fatalism, ancestral unease, and sacred fear under an indifferent sky.',
+      key_features:
+        'Celestial disc dominance, suspended silhouettes, windless stillness, and barren horizon separators.',
+      creative_brief:
+        'Build a transferable crimson-celestial-omen horror style for any subject: giant celestial contrast, sparse silhouettes, fatalistic scale imbalance, and symbol-first dread without imposing moons, apparitions, branches, barren landforms, or hovering figures.',
     },
   },
   {
     id: 'SP13-033',
-    name: 'Flesh Puppet Theater',
+    name: 'Grotesque Marionette Spotlight Style',
     category: '5. Horror',
     negativePrompt: 'photoreal, slapstick, cheerful-colors, watermark, text, logo',
     style: {
-      aesthetic: 'Grotesque anime horror in an abandoned theater.',
-      form_and_line: 'Nervous strokes and stylized anatomical distortion.',
-      color_palette: 'Dark burgundy, dirty ivory, and ink black.',
-      lighting_setup: 'Dim central spotlight with theatrical shadows.',
-      material_texture: 'Aged wood, torn velvet, and dense dust.',
-      render_quality: 'Disturbing yet readable horror illustration.',
-      spatial_distortion: 'Frontal stage framing with compressed depth.',
-      atmosphere: 'Unease, strangeness, and implied body horror.',
-      key_features: 'Ominous puppet, ripped curtain, empty stare.',
-      creative_brief: 'Sinister stage scene with sustained visual tension.',
+      aesthetic:
+        'Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and staged cruelty.',
+      form_and_line:
+        'Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.',
+      color_palette:
+        'Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.',
+      lighting_setup:
+        'Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.',
+      material_texture:
+        'Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.',
+      render_quality:
+        'Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.',
+      spatial_distortion:
+        'Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.',
+      atmosphere:
+        'Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.',
+      key_features:
+        'Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.',
+      creative_brief:
+        'Define a reusable grotesque-marionette-spotlight grammar for any subject: corrupted theatrical elegance, anatomical stylization, spotlight isolation, and pinned-plane pressure without imposing theaters, stages, puppets, seats, props, or audiences.',
     },
   },
   {
     id: 'SP13-034',
-    name: 'Deep Well Whisper',
+    name: 'Deep Void Whisper Style',
     category: '5. Horror',
     negativePrompt: 'photoreal, daylight-bright, action-shonen, watermark, text, logo',
     style: {
-      aesthetic: 'Rural Japanese-inspired horror centered on a cursed well.',
-      form_and_line: 'Somber fine linework with implied presence.',
-      color_palette: 'Cold blue, wet black, and fog gray.',
-      lighting_setup: 'Diffused moonlight and damp shadows.',
-      material_texture: 'Wet stone, mud, and weathered wood.',
-      render_quality: 'Atmospheric image with sustained dread.',
-      spatial_distortion: 'Open framing anchored by the central well.',
-      atmosphere: 'Oppressive silence and invisible threat.',
-      key_features: 'Ancient well, broken rope, low-lying mist.',
-      creative_brief: 'Minimalist horror where a central void creates relentless tension.',
+      aesthetic:
+        'Void-centered horror built on subtraction, silence, and the oppressive pull of a central absence.',
+      form_and_line:
+        'Sparse somber linework, low-detail peripheral elements, and circular anchoring forms that repeatedly return attention to the void.',
+      color_palette:
+        'Cold indigo wash, peat-black moisture zones, mineral gray fog, and faint desaturated cyan reflections.',
+      lighting_setup:
+        'Diffuse nocturnal top-light with weak ground bounce, preserving deep occlusion around cavity edges.',
+      material_texture:
+        'Water-dark stone porosity, saturated soil clumps, frayed fiber cues, and mist-laden air density.',
+      render_quality:
+        'Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.',
+      spatial_distortion:
+        'Open negative-space layout with gravitational pull toward the central cavity and suppressed horizon cues.',
+      atmosphere:
+        'Listening-state tension, desolation, and the conviction that something waits below perception.',
+      key_features:
+        'Circular void anchors, moisture halos, decayed functional traces, and thin low-lying fog sheets in void-first framing.',
+      creative_brief:
+        'Build a transferable deep-void-whisper horror style for any subject: minimal geometry, moisture-rich materials, compositional gravity, and an unseen center without imposing wells, rural settings, ropes, cavities, objects, or specific landscapes.',
     },
   },
   {
     id: 'SP13-035',
-    name: 'Oni Mask Ritual Night',
+    name: 'Demonic Ritual Mask Geometry Style',
     category: '5. Horror',
     negativePrompt: 'photoreal, cute-style, bright-daylight, watermark, text, logo',
     style: {
-      aesthetic: 'Oni ritual anime with folkloric horror intensity.',
-      form_and_line: 'Hard contours, ritual ornamentation, and a dominant silhouette.',
-      color_palette: 'Dark red, ash black, and aged gold.',
-      lighting_setup: 'Low ritual firelight with dancing shadows.',
-      material_texture: 'Lacquered mask, charred wood, and airborne ash.',
-      render_quality: 'Highly defined folkloric-horror illustration.',
-      spatial_distortion: 'Circular composition for a nocturnal ceremony.',
-      atmosphere: 'Ritual threat, mysticism, and primal danger.',
-      key_features: 'Oni mask, ring of candles, invoking gesture.',
-      creative_brief: 'Intense summoning scene with dark, high-impact visual language.',
+      aesthetic:
+        'Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and symbolic intimidation.',
+      form_and_line:
+        'Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.',
+      color_palette:
+        'Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.',
+      lighting_setup:
+        'Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.',
+      material_texture:
+        'Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.',
+      render_quality:
+        'High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.',
+      spatial_distortion:
+        'Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.',
+      atmosphere:
+        'Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.',
+      key_features:
+        'Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography through heat shimmer.',
+      creative_brief:
+        'Create a reusable demonic-ritual-mask-geometry grammar for any subject: radial ritual geometry, fire-ring contrast, symbolic mask dominance, and taboo ceremonial pressure without imposing oni, masks, shrines, candles, talismans, hand signs, or night rituals.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

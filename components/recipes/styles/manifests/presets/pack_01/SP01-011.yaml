@@ -14,14 +14,14 @@ tags:
 visualDna:
   aesthetic: Warm analog film look
   form_and_line: Soft but sharp
-  color_palette: Great skin tones, pastel highlights
+  color_palette: Warm neutrals, pastel highlights
   lighting_setup: Natural, forgiving
   material_texture: Fine grain
   render_quality: Professional film
   spatial_distortion: None
   atmosphere: Nostalgic, warm
   key_features: Yellow/Red bias
-  creative_brief: Sunlight folded into emulsion, surrendering its harshness for a tender amber embrace. Skin remembers itself through this palette, rendered not as surface but as the warmth beneath. A world seen through honeyed memory, where every tone earns its place in quiet, unhurried conversation.
+  creative_brief: Sunlight folded into emulsion, surrendering harsh edges for a tender amber embrace. Colors breathe through warm neutrals, gentle saturation, pastel highlight rolloff, and fine analog grain. Any subject should feel photographed through honeyed memory, intimate without forcing a human face or scene.
 avoidRules:
   - illustration
   - painting

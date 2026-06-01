@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-083
+packId: pack_01
+name: Luxury Macro Gleam
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Luxury macro advertising
+  form_and_line: Tight sculptural detail
+  color_palette: Deep black, champagne highlights, jewel accents
+  lighting_setup: Razor strip lights and controlled sparkle
+  material_texture: Polished reflective microdetail
+  render_quality: High-end jewelry campaign
+  spatial_distortion: Macro compression
+  atmosphere: Precious, rare, quiet
+  key_features: Specular edge gleam
+  creative_brief: 'Luxury macro turns any subject into precious detail: tight framing, deep negative space, razor strip highlights, polished microtexture, and small controlled sparkle. It should imply rarity and high value without requiring jewelry, gemstones, watches, or metal objects.'
+avoidRules:
+  - flat light
+  - cheap plastic
+  - clutter
+  - overexposed
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-083.webp
+attributes:
+  negativePrompt: flat light, cheap plastic, clutter, overexposed, watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

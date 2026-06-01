@@ -14,14 +14,14 @@ tags:
 visualDna:
   aesthetic: Sunset light
   form_and_line: None
-  color_palette: Warm Gold/Orange, honey amber, peach skin, copper rim
-  lighting_setup: Low angle sun, golden backlight, hazy horizon
+  color_palette: Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth
+  lighting_setup: Low angle sun, golden backlight, hazy atmospheric edge
   material_texture: Soft, creamy diffusion, atmospheric haze
   render_quality: Beautiful, romantic, magic-hour glow, cinematic warmth
-  spatial_distortion: Long shadows, stretched silhouette, golden flooring
+  spatial_distortion: Long shadows, stretched silhouettes, low-angle projection
   atmosphere: Warm, happy, fleeting beauty, end-of-day peace
-  key_features: Rim light, lens flare burst, dew-sparkle
-  creative_brief: The last honeyed rays of a sinking sun drag long shadows across the earth, bathing every surface in amber and peach. It is the color of nostalgia made visible—a fleeting warmth that transforms the ordinary into the unforgettable, suspending the world in that brief threshold where day exhales into dusk.
+  key_features: Rim light, lens flare burst, amber haze, elongated shadow geometry
+  creative_brief: 'Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes, skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.'
 avoidRules:
   - blue
   - cold

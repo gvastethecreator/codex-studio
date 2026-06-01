@@ -16,12 +16,12 @@ visualDna:
   form_and_line: None
   color_palette: Dark with white edge, black core, silver perimeter, hair-light gold
   lighting_setup: Backlight, rim-only separation, edge-defining key
-  material_texture: Silhouette detail, edge texture, hair halo
+  material_texture: Silhouette detail, edge texture, haloed perimeter
   render_quality: Dramatic, separation, subject-pop, depth-carving
   spatial_distortion: None
-  atmosphere: Heroic, mystery, defined presence, emerging-from-shadow
+  atmosphere: Heroic, mystery, defined presence, emerging from shadow
   key_features: Halo, glowing outline, edge definition
-  creative_brief: A figure stands at the threshold of visibility, sculpted not by what is lit but by what is denied light. Every contour hums with a silver thread of revelation, the darkness behind the subject doing the heavy work of presence. This is portraiture by subtraction, where the most important details live in the sliver between seen and unseen.
+  creative_brief: 'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow.'
 avoidRules:
   - flat
 assets:

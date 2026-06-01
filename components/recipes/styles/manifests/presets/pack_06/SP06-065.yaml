@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-065
 packId: pack_06
-name: Scrapbook
+name: Scrapbook Layer Grammar
 category: 5. Mixed Media
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Memory book page
+  aesthetic: Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm
   form_and_line: Tape, stickers
   color_palette: Pastel, vintage
   lighting_setup: Flat lay
-  material_texture: Paper, photos, handwriting
+  material_texture: Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture
   render_quality: Personal, cute
   spatial_distortion: Layered
   atmosphere: Nostalgic, sweet
   key_features: Page layout
-  creative_brief: Ephemera arranged on a page — ticket stubs, pressed flowers, handwritten notes — each item a bookmark in the narrative of a life. Washi tape holds down memories like butterfly specimens, the composition a curated accident of affection. The page smells like a drawer that has not been opened since the person who filled it was young.
+  creative_brief: Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color, and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows create a curated accident of affection. Keep nostalgia material and compositional, without requiring tickets, flowers, handwriting, people, or readable notes.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable handwriting
+  - ticket requirement
+  - flower requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-065.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

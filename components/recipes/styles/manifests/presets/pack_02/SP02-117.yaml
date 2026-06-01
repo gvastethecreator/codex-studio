@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Photocollage black-and-white cutout nightmare, flat heads pasted onto crude bodies, anti-beauty schoolyard sarcasm, collage ugliness weaponized, handmade digital freakout
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
+  aesthetic: Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout
+  form_and_line: Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment
+  color_palette: Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent
+  lighting_setup: Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows
   material_texture: Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  render_quality: Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up
+  spatial_distortion: Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic
   atmosphere: Snarky, janky, hostile, unforgettable
-  key_features: Photo-cutout faces, mismatched body collage, xerox textures, anti-pretty black-and-white contrast, hostile schoolyard energy
-  creative_brief: Found faces stare from stolen photographs, grafted onto bodies that reject them, the resulting collision radiating the menace of a school yearbook weaponized. Scissors and glue become instruments of revenge, assembling a world where nothing fits together and that is precisely the point.
+  key_features: Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges
+  creative_brief: 'Apply photo-cutout menace to any subject: xerox grain, mismatched photographic fragments, crude drawn bodies or forms, harsh black-and-white contrast, and visible cut edges. Avoid faces, schoolyards, yearbooks, or revenge narratives as requirements. Nothing should fit cleanly together.'
 avoidRules:
   - digital
   - HD

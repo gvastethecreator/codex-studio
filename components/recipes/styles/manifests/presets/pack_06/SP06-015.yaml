@@ -19,9 +19,9 @@ visualDna:
   material_texture: Velvet fabric fuzz
   render_quality: Kitsch, retro
   spatial_distortion: Soft focus
-  atmosphere: Tacky, fun, night
+  atmosphere: Kitsch, sincere, nocturnal, theatrical
   key_features: Black background dominance
-  creative_brief: Neon colors float above infinite blackness like deep-sea creatures signaling in the abyss, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary.
+  creative_brief: Neon colors hover above infinite blackness, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary, turning any subject into glowing icon against tactile dark.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Multi-level transit exchange built into a crater basin.
-  form_and_line: Circular platforms, rope elevators, and glide lanes.
-  color_palette: Moon gray, aqua, and amber accents.
-  lighting_setup: Path beacons and reflected basin light.
-  material_texture: Composite decking, tension cables, and dust-treated glass.
-  render_quality: Functional worldbuilding concept with motion clarity.
-  spatial_distortion: Bowl-shaped depth around central interchange.
-  atmosphere: Calm mobility and civic coordination.
-  key_features: Shuttle docks, low-g lifts, and basin concourses.
+  aesthetic: Abstract low-gravity mobility style with basin depth, soft circular routing, and amber civic wayfinding.
+  form_and_line: Circular platform bands, rope-tension drops, glide-lane ribbons, basin arcs, and crescent docking-like lips.
+  color_palette: Moon gray, basin aqua, lantern amber, dust white, and low-g signal blue.
+  lighting_setup: Path beacons, reflected basin light, amber node glows, and soft under-surface illumination.
+  material_texture: Composite deck finish, tension cable lines, dust-treated glass, flexible grip surfaces, and powder-soft edges.
+  render_quality: Functional clean render with calm motion clarity and low-gravity accessibility cues.
+  spatial_distortion: Bowl-depth composition wraps movement around a center without forcing a specific transit scene.
+  atmosphere: Calm mobility, civic coordination, low-gravity patience, and shared timing.
+  key_features: Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.
   creative_brief: >-
-    Preserve tidal crater transit-hub grammar as a reusable style system:
-    bowl-topography interchange logic, low-gravity accessibility choreography,
-    and calm civic mobility rhythm should remain coherent across subjects.
+    Apply tidal crater transit-hub as an abstract style treatment: guide any
+    subject with bowl geometry, low-gravity curves, rope tension, and soft
+    amber movement cues.
 avoidRules: [photoreal, dystopian-chaos, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-075.webp }
 attributes:
   negativePrompt: photoreal, dystopian-chaos, cyber-neon, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-027
 packId: pack_16
-name: Spiral Overdrive Mecha
+name: Spiral Overdrive Bravado Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Hot-blooded mecha bravado, drill motifs, impossible scale, shout-driven momentum, galaxy-level throwdowns, spiral power, shades-wearing heroes, core drills
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  aesthetic: Hot-blooded spiral bravado with impossible scale, upward momentum, heroic exaggeration, and belief-as-motion intensity.
+  form_and_line: Smooth vector-like anime strokes, crisp contour clarity, spiral gesture arcs, explosive foreshortening, and shout-driven silhouette expansion.
+  color_palette: Fiery orange, solar yellow, electric blue, hot magenta, pure white impact cores, and deep cosmic blacks.
+  lighting_setup: Polished gradient highlights, radial burst keys, rim glow on expanding forms, and clean fill for maximum hype readability.
+  material_texture: Smooth digital cel polish, energy-ring gradients, glossy heroic surfaces, speed-line noise, and subtle composite grain.
+  render_quality: Early-2000s digital anime production frame with clean rendering, smooth color blending, and maximal impact hierarchy.
+  spatial_distortion: Spiral-scale warping, upward vanishing points, impossible compression of distance, and oversized impact framing.
   atmosphere: Hype, unstoppable, passionate, transcendent
-  key_features: Energetic action readability, clear visual hierarchy, impact-focused choreography, youth energy
-  creative_brief: A drill spirals through the cosmos, piercing the ceiling of belief itself with shout-driven velocity. Galaxy-scale mecha silhouette against impossible light, every frame trembling with the energy of a universe that refuses to say 'impossible.' Speed lines become scripture, and the drill is the prayer.
+  key_features: Spiral vectors, radial impact cores, upward scale escalation, declarative heroic pose logic, and clean hype readability.
+  creative_brief: >-
+    Build a reusable spiral-overdrive bravado grammar for any subject or input
+    image: upward force, radial impact, impossible scale, saturated heroic
+    energy, and early-digital shonen clarity without imposing mecha, drills,
+    galaxies, sunglasses, throwdowns, or specific heroes.
 avoidRules:
   - realistic
   - 3d render

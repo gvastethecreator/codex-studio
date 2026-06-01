@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
 visualDna:
-  aesthetic: National mobility atompunk where trains look like civic promises sharpened into aerodynamic instruments.
-  form_and_line: Sweeping platform bands, radial timetable suns, sleek train noses, graphite rail seams, and queue lanes like circuit traces.
+  aesthetic: National-mobility atompunk where speed feels like a civic promise sharpened into an aerodynamic instrument.
+  form_and_line: Sweeping platform bands, radial timetable suns, sleek nose cones, graphite seams, and queue lanes like circuit traces.
   color_palette: Teal enamel, cream tile, graphite rail, chrome flash, and red departure ticks.
   lighting_setup: Concourse skylight wash, platform strip illumination, polished edge highlights, and departure-board pulses.
   material_texture: Brushed steel, terrazzo, glazed enamel signage, rubber thresholds, glass timetable covers, and worn ticket brass.
   render_quality: Grand transit concept with exact movement logic, readable boarding choreography, and heroic civic scale.
-  spatial_distortion: Parallel rails, ceiling ribs, queue lanes, and train noses converge into a single national-speed vector.
+  spatial_distortion: Parallel seams, ceiling ribs, queue lanes, and nose-cone shapes converge into one national-speed vector.
   atmosphere: Momentum, precision, hopeful mobility, and bureaucratic elegance.
-  key_features: Isotope express silhouettes, radial map walls, panoramic lounge bands, boarding tick marks, and enamel route seals.
+  key_features: Isotope express silhouettes, radial map-like walls, panoramic bands, boarding tick marks, and enamel route seals.
   creative_brief: >-
     Preserve atomic rail-concourse grammar as a reusable style system:
     aerodynamic civic mobility, radial transit graphics, and enamel platform

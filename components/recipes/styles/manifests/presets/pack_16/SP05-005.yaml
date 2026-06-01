@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-005
 packId: pack_16
-name: Grounded War Mecha
+name: Grounded Tactical Machinery Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Mecha bélico realista de frente terrestre, con doctrina militar, fatiga de campaña y sobriedad táctica.
-  form_and_line: Línea técnica robusta, panelado legible y acting de escuadra en tensión operacional continua.
+  aesthetic: Maquinaria táctica terrenal, doctrina funcional, fatiga de campaña y sobriedad operacional.
+  form_and_line: Línea técnica robusta, panelado legible y acting de tensión logística continua.
   color_palette: Olivas apagados, tierra polvorienta, acero mate y rojos mínimos de señal de riesgo.
   lighting_setup: Luz dura de campo abierto, sombras secas de blindaje y reflejos discretos en metal funcional.
-  material_texture: Chasis rayado, barro compactado, lona de vehículo y grano viejo de crónica de guerra.
-  render_quality: Acabado retro de precisión mecánica con claridad documental de hardware y cadena de mando.
-  spatial_distortion: Profundidad de llanura de combate con bloqueos de columna, cobertura y avance por capas.
+  material_texture: Superficie rayada, barro compactado, lona técnica y grano viejo de crónica operacional.
+  render_quality: Acabado retro de precisión mecánica con claridad documental de hardware y cadena funcional.
+  spatial_distortion: Profundidad por capas tácticas con bloqueos, cobertura abstracta y avance pesado.
   atmosphere: Seria, devastada, áspera, resiliente.
-  key_features: Silueta de mecha de línea de frente, mapa táctico implícito y desgaste visible de campaña prolongada.
-  creative_brief: Define una gramática reusable de mecha militar terrenal para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico.
+  key_features: Masa funcional, mapa táctico implícito, desgaste prolongado y peso logístico visible.
+  creative_brief: >-
+    Define una gramática reusable de grounded-tactical-machinery para cualquier
+    sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso
+    logístico sin imponer mechas, vehículos, frentes de guerra, escuadras,
+    mapas ni campo de batalla.
 avoidRules:
   - realistic
   - 3d render

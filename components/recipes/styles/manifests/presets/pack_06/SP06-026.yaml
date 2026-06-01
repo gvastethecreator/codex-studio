@@ -17,7 +17,7 @@ visualDna:
   color_palette: Vibrant, blended streaks
   lighting_setup: Glossy highlights
   material_texture: Marker paper, bleed
-  render_quality: Product design, manga
+  render_quality: Marker-rendered design illustration with clean contour polish
   spatial_distortion: None
   atmosphere: Modern, slick
   key_features: Marker streaks
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

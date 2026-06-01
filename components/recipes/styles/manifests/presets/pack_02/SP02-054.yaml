@@ -14,20 +14,20 @@ tags:
 visualDna:
   aesthetic: False color IR
   form_and_line: None
-  color_palette: Pink/Red foliage, magenta vegetation, cyan sky, white chlorophyll
+  color_palette: False-color magenta, coral red, cyan shadow, white infrared response, spectral pink
   lighting_setup: Surreal, invisible-spectrum, infrared reflectance
   material_texture: Grainy, false-color emulsion, IR-sensitive layer
   render_quality: Psychedelic, weird, alien biosphere, dreamscape
   spatial_distortion: None
-  atmosphere: Alien, dream, Mars-on-Earth, infrared hallucination
-  key_features: Red trees, cotton-candy forest, white grass
-  creative_brief: The world reimagined through frequencies the eye was never meant to see, as if the planet were photographed on emulsion exposed to a different star. Verdant canopies erupt into fields of coral and magenta, skies deepen into alien cyan, and the familiar landscape becomes a biosphere from a parallel earth. Reality bends toward hallucination without ever breaking its own strange coherence.
+  atmosphere: Alien, dream, invisible-spectrum hallucination
+  key_features: False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom
+  creative_brief: 'Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination.'
 avoidRules:
-  - green grass
+  - natural color
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-054.webp
 attributes:
-  negativePrompt: green grass
+  negativePrompt: natural color
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

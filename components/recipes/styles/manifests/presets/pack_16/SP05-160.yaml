@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-160
 packId: pack_16
-name: Ouran High School Host Club - Rose-Backdrop Elite Comedy
+name: Rose Elite Comedy Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Satira de élite escolar en clave reverse-harem cómica, con exceso floral y teatralidad autorreferencial.
+  aesthetic: Sátira de élite teatral, exceso floral, glamour paródico y comedia romántica autorreferencial.
   form_and_line: Línea digital elegante, poses simétricas de ensemble y acting de príncipe-parodia con timing de sketch.
-  color_palette: Rosas de pétalo, dorados de salón, marfiles de uniforme de élite y acentos pastel brillantes.
-  lighting_setup: Iluminación alta y pulida de interior noble con sparkles selectivos y gradiente suave de comedia romántica.
-  material_texture: Ornamento académico, telas refinadas y acabado digital limpio con brillo controlado de fantasía social.
+  color_palette: Rosas de pétalo, dorados ornamentales, marfiles pulidos y acentos pastel brillantes.
+  lighting_setup: Iluminación alta y pulida con sparkles selectivos y gradiente suave de comedia romántica.
+  material_texture: Ornamento noble, telas refinadas y acabado digital limpio con brillo controlado de fantasía social.
   render_quality: Producción premium 2000s con lectura clara de sátira de clase y encanto escénico.
-  spatial_distortion: Escena de salón-principal con profundidad teatral y encuadre de host club centrado en performance.
+  spatial_distortion: Profundidad teatral con encuadre coral centrado en gesto performativo y parodia social.
   atmosphere: Juguetona, pulida, satírica, exuberante.
-  key_features: Pétalos y sparkle, uniformes principescos, interiores opulentos y composición coral de anfitriones en clave paródica.
-  creative_brief: Diseña una gramática reusable de comedia de élite teatral para cualquier sujeto, equilibrando glamour absurdo, crítica social y calidez romántica.
+  key_features: Pétalos y sparkle, gesto principesco parodiado, opulencia abstracta y composición coral exuberante.
+  creative_brief: >-
+    Diseña una gramática reusable de rose-elite-comedy para cualquier sujeto,
+    equilibrando glamour absurdo, crítica social, exceso floral y calidez
+    romántica sin imponer escuela, host club, uniformes, interiores opulentos ni
+    harem literal.
 avoidRules:
   - realistic
   - 3d render

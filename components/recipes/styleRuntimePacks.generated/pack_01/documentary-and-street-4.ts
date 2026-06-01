@@ -10,21 +10,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
-      aesthetic:
-        'Authentic candid street photography, photojournalistic portraiture, unposed and natural',
+      aesthetic: 'Authentic candid documentary photography, unposed street-derived realism',
       subject_treatment:
-        'Natural depth of field, subject isolated from busy background, spontaneous expression',
+        'Natural depth of field, primary subject isolated from busy context, spontaneous moment quality',
       color_and_tone:
         'Urban color palette, natural daylight tones, slightly desaturated, realistic contrast',
       lighting_and_shadow: 'Available natural light, dynamic shadows, mixed lighting environments',
       texture_and_material:
-        'Subtle digital noise or film grain, realistic clothing textures, environmental grit',
+        'Subtle digital noise or film grain, realistic surface textures, environmental grit',
       camera_and_composition:
         'Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing',
       atmosphere_and_mood: 'Real, fleeting, documentary, slice-of-life, energetic',
       rendering_and_quality: 'High quality documentary photography, authentic, unretouched look',
       creative_brief:
-        'A stolen glance across an intersection, the city breathing through its inhabitants, the sidewalk transformed into a theater of unscripted moments. Available light catches a stranger mid-thought, the frame holding its breath as asphalt grain and fleeting honesty conspire. Documentary truth rendered through the lens of someone who forgot the camera was there, the urban pulse beating in every unposed frame.',
+        'Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion, urban grit, and unposed immediacy without requiring a person, sidewalk, or city scene.',
     },
   },
   {
@@ -33,7 +32,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Documentary And Street',
     negativePrompt: 'posed, studio',
     style: {
-      aesthetic: 'Urban candid moment',
+      aesthetic: 'Documentary candid moment',
       form_and_line: 'Messy composition',
       color_palette: 'High contrast B&W or gritty color',
       lighting_setup: 'Natural',
@@ -41,28 +40,28 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Cartier-Bresson, decisive moment',
       spatial_distortion: 'Motion blur',
       atmosphere: 'Real, fleeting',
-      key_features: 'Urban context',
+      key_features: 'Decisive moment tension',
       creative_brief:
-        "A breath caught in the city's restless lungs, where shadow carves meaning from pavement and a passing glance becomes permanent. Grain and grit testify not to flaw but to witness, the frame stealing a truth the world was too hurried to notice. The ordinary transforms into elegy at the exact instant it stops moving.",
+        'Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light, grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography immediacy without requiring city, pavement, passerby, or urban context.',
     },
   },
   {
     id: 'SP01-075',
     name: 'Urbex (Urban Exploration)',
     category: '4. Documentary And Street',
-    negativePrompt: 'clean, new, people',
+    negativePrompt: 'clean, new',
     style: {
-      aesthetic: 'Abandoned building interior',
-      form_and_line: 'Decay, peeling paint',
+      aesthetic: 'Urbex decay documentary',
+      form_and_line: 'Decay, peeling layers',
       color_palette: 'Desaturated, rust',
       lighting_setup: 'Shafts of light',
       material_texture: 'Dust, debris',
       render_quality: 'Gritty, haunting',
       spatial_distortion: 'None',
       atmosphere: 'Lonely, post-apocalyptic',
-      key_features: 'Ruins',
+      key_features: 'Ruin texture',
       creative_brief:
-        'Dust holds its vigil in abandoned rooms where plaster peels like pages turning backward through decades of silence. Decay becomes the last living tenant, rust the slow ink rewriting what was once inhabited into what is now remembered.',
+        'Urbex style turns any subject into evidence of abandonment: desaturated rust palette, peeling layers, dust, debris texture, lonely light shafts, and haunting documentary grit. Keep ruin atmosphere without requiring buildings, rooms, plaster, or post-apocalyptic scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

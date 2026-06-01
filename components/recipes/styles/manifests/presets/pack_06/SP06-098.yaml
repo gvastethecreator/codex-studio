@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: PC-Engine-TurboGrafx-16-aesthetic, compact-Japanese-sprite-magic, bright-vibrant-482-color-palette, Bonk-PC-Genjin-headbutt-caveman-charm, Castlevania-Rondo-of-Blood-richness, Hudson-Soft-API-developer-bee-logo-soul, HuCard-thin-credit-card-cartridges, CD-ROM2-Red-Book-audio-RPG-golden-age, NEC-console-that-could-have-been-great
-  form_and_line: Compact-but-vibrant-pixel-sprites, 16-bit-sprite-hardware-in-8-bit-CPU-body, 320x256-or-256x240-resolution, CD-ROM-data-loaded-into-sprite-RAM
-  color_palette: 512-color-total, 482-displayable, PC-Engine-vibrant-bright, Bonk-orange-brown-caveman, Castlevania-gothic-red-purple, Dracula-X-CD-red-book-audio-visual-counterpart, Hudson-bee-yellow
+  aesthetic: PC-Engine-TurboGrafx-16 aesthetic, compact Japanese sprite magic, bright vibrant 482-color palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin-cartridge identity, CD-ROM2 Red Book audio richness, NEC what-could-have-been glow
+  form_and_line: Compact but vibrant pixel forms, 16-bit sprite hardware in 8-bit CPU body, 320x256 or 256x240 resolution, CD-ROM data-loaded richness
+  color_palette: 512-color total, 482 displayable, PC-Engine vibrant brightness, orange-brown accents, gothic red-purple accents, Red Book audio as color richness, Hudson-bee yellow
   lighting_setup: Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex, parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering
-  material_texture: HuCard-thin-cartridge-texture, CD-ROM2-loading-screen, pixel-sprite-compactness, 8-bit-CPU-16-bit-graphics-schizophrenia, PC-Engine-LT-portable-LCD
+  material_texture: HuCard-thin-cartridge texture, CD-ROM2 loading-screen feel, compact pixel texture, 8-bit CPU with 16-bit graphics contradiction, PC-Engine LT portable LCD
   render_quality: PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG- golden-era-rendering
-  spatial_distortion: 320x256-Japanese-resolution, CD-ROM-loaded-backgrounds-ceiling, vertical-oriented-Japanese-shmups, handheld-LT-LCD-screen, compact-sprite-proportions
-  atmosphere: Japanese-console-wonder, NEC-technical-ingenuity, Hudson-Soft- creativity, CD-ROM-RPG- golden-age, what-could-have-been nostalgia
-  key_features: Bright-482-color-palette, HuCard-cartridge, CD-ROM2-loaded-art, PC-Engine-compact-sprite-design, Bonk-PC-Genjin-style, 16-bit-graphics-in-8-bit-system, Japanese-console-charm
-  creative_brief: An 8-bit CPU drives 16-bit graphics through elegant Japanese engineering, compact sprites achieving what bigger machines managed with more silicon. HuCard cartridges thinner than credit cards contain entire worlds, the CD-ROM add-on loading backgrounds too beautiful for the era. The image carries the what-if of NEC's ambition, a console that nearly changed everything, preserved now in the amber of pixel art that still glows.
+  spatial_distortion: 320x256 Japanese resolution, CD-ROM loaded background richness, vertical-scroll composition when useful, handheld-LT-LCD screen feel, compact proportions
+  atmosphere: Japanese-console wonder, NEC-technical ingenuity, Hudson-Soft creativity, CD-ROM golden-age glow, what-could-have-been nostalgia
+  key_features: Bright 482-color palette, HuCard cartridge identity, CD-ROM2 loaded-art richness, compact sprite design, 16-bit graphics in 8-bit system, Japanese-console charm
+  creative_brief: Any prompt gets compact Japanese console polish, brighter than its CPU should allow. HuCard restraint and CD-ROM richness coexist, producing dense color, tiny confident forms and a glowing alternate-history console mood.
 avoidRules:
   - western
   - dark
@@ -51,4 +51,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

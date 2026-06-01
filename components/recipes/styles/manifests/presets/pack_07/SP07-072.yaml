@@ -13,17 +13,17 @@ tags:
   - residential-interiors
 visualDna:
   aesthetic: Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.
-  form_and_line: Silueta elongada de botella, cuello restrictivo, mástiles comprimidos y red fina de aparejos en marco cilíndrico.
+  form_and_line: Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de marco cilíndrico.
   color_palette: Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones
   lighting_setup: Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de sombra interna suave.
-  material_texture: Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo en rigging, papel de vela plegado y corcho poroso.
+  material_texture: Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y corcho poroso.
   render_quality: Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.
   spatial_distortion: Cylindrical refraction warp and magnification compression introduced by curved bottle glass
   atmosphere: Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.
-  key_features: Ilusión de inserción por cuello, malla fina de aparejos, sellado de corcho, magnificación por curvatura y base de exhibición.
+  key_features: Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por curvatura y base de exhibición.
   creative_brief: >-
     Construye una gramática reusable de bottle-miniature donde refracción
-    visible del vidrio, ensamblaje restringido y densidad de aparejo fina sean
+    visible del vidrio, ensamblaje restringido y densidad de microdetalle sean
     invariantes estilísticas.
 avoidRules:
   - ocean

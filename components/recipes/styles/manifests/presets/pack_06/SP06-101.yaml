@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-101
 packId: pack_06
-name: JRPG Pixel Town
+name: JRPG Pixel Diorama Grammar
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Compact JRPG pixel-art diorama language with nostalgic 16-bit readability and toy-like spatial charm.
+  subject_treatment: Translate any subject into small modular clusters, readable silhouettes, stepped edge logic, and charm-first simplification.
+  color_and_tone: Warm limited ramps, soft dusk accents, separated roof-light/shadow bands, and selective jewel-color highlights.
+  lighting_and_shadow: Stable top-left pixel lighting with blocky cast shadows and simple ambient occlusion under forms.
+  texture_and_material: Hand-placed dithering, tiny tile noise, one-pixel highlight ticks, and restrained pattern repetition.
+  camera_and_composition: Locked isometric or three-quarter diorama framing with stacked depth layers and tidy grid rhythm.
+  atmosphere_and_mood: Adventurous, cozy, exploratory mood without requiring towns, buildings, roads, or NPCs.
+  rendering_and_quality: Crisp pixel scale, no interpolation blur, clean sprite readability, and consistent palette discipline.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - literal town requirement
+  - npc crowd requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-101.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc crowd requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

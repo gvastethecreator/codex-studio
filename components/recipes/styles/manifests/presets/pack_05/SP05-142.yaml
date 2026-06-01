@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Tropical criminal port cities, cigarettes and speedboats, hard-bitten mercenary action, gunmetal humidity, profanity-laced underworld cool, lawless modern noir
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  aesthetic: South Seas gun-runner grit, with humid noir, lawless heat, hardboiled cool, and gunmetal danger.
+  form_and_line: Clean early-digital contours, hardboiled silhouette blocks, recoil diagonals, smoke curls, and sharp stance economy.
+  color_palette: Gunmetal gray, tropical teal, rust orange, cigarette ember red, salt haze white, and oily black.
+  lighting_setup: Hot practical glare, humid rim bloom, low noir shadows, and polished early-digital highlight bands.
+  material_texture: Salt haze, brushed metal, sweat sheen, worn fabric, smoke grain, and smooth cel-noir surfaces.
+  render_quality: Early-2000s digital-cel action finish with crisp grit, worldly heat, and clean danger readability.
+  spatial_distortion: Low-angle threat framing, lateral escape vectors, and humid depth compression without fixed docks or vehicles.
   atmosphere: Gruff, hot, dangerous, worldly
-  key_features: Gun-action framing, tropical industrial docks, criminal fashion silhouettes, speedboat spray, hardboiled expressions
-  creative_brief: Salt air mixes with cordite while a cigarette glows at the edge of the dock, the ember the only honest light in a port city built on lies. No one here is innocent, but some are more interesting than others, and the sea does not judge — it just swallows the evidence. Every speedboat departure is a question mark trailing across the water.
+  key_features: Humid noir, gunmetal palette, smoke tension, lawless heat, hardboiled early-digital grit.
+  creative_brief: >-
+    Apply tropical noir pressure to any prompt through humid glare, gunmetal
+    texture, smoke rhythm, and lawless cool without requiring a port, dock,
+    vehicle, smoking prop, or criminal scene.
 avoidRules:
   - realistic
   - 3d render

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-295
 packId: pack_16
-name: Liz and the Blue Bird - Oboe Hallway Distance
+name: Quiet Musical Distance Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Cámara musical intimista de precisión emocional, enfocada en distancia afectiva y resonancia de amistad en clave de cámara de concierto.
-  form_and_line: Trazo fino y reservado, coreografía de microgestos y siluetas delicadas que priorizan pausa, respiración y timing entre personajes.
-  color_palette: Marfiles pálidos, azules deslavados, grises de pasillo silencioso y dorados suaves de madera instrumental.
+  aesthetic: Cámara musical intimista de precisión emocional, enfocada en distancia afectiva, pausa y resonancia silenciosa.
+  form_and_line: Trazo fino y reservado, microgestos delicados, respiración visual y timing compositivo entre presencia y ausencia.
+  color_palette: Marfiles pálidos, azules deslavados, grises silenciosos y dorados suaves de resonancia acústica.
   lighting_setup: Luz interior filtrada de baja intensidad con sombras blandas que sostienen vulnerabilidad sin dramatismo excesivo.
-  material_texture: Barniz de instrumento, suelos encerados escolares, telas ligeras de uniforme y aire suspendido de sala de ensayo.
+  material_texture: Barniz cálido, superficies enceradas, telas ligeras y aire suspendido con sensación acústica contenida.
   render_quality: Acabado premium de alta sutileza, lectura de proximidad emocional y refinamiento acústico traducido a imagen.
-  spatial_distortion: Espacio longitudinal de pasillo usado como métrica de distancia vincular, con profundidad limpia y mínima distorsión.
+  spatial_distortion: Profundidad longitudinal usada como métrica de distancia vincular, con limpieza compositiva y mínima distorsión.
   atmosphere: Frágil, musical, contenida, punzante.
-  key_features: Detalle de oboe y flauta, separación corporal medida, gestualidad mínima y composición de silencio compartido.
-  creative_brief: Define una gramática reusable de intimidad musical para cualquier sujeto, usando microgesto, luz pálida y distancia espacial como partitura emocional.
+  key_features: Distancia espacial, gestualidad mínima, luz pálida, ritmo de cámara y composición de silencio compartido.
+  creative_brief: >-
+    Define una gramática reusable de intimidad musical para cualquier prompt o imagen de entrada:
+    pausa, aire y distancia emocional sin imponer instrumentos, pasillos, escuelas ni dúos de personajes.
 avoidRules:
   - realistic
   - 3d render

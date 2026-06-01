@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-269
 packId: pack_05
-name: Akagi - Smoke-Filled Mahjong Predator
+name: Smoke-Filled Calculation Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Night-long mahjong duels as psychological warfare, cigarette smoke, heavy shadows, old men unraveling around a supernatural prodigy, menace in still hands and eyes
+  aesthetic: Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction, heavy-lidded shadow tension, ritualized risk
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow, stale enclosed atmosphere
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure compression
   atmosphere: Predatory, smoky, cerebral, merciless
-  key_features: Mahjong-table compositions, smoke haze, old-man tension faces, hard shadow light, still-hand suspense
-  creative_brief: Cigarette smoke curls around mahjong tiles like a promise of ruin as a boy born at the table reads old men's souls through the language of discarded hands. Stillness itself becomes a weapon in this smoke-filled theater, where the predator waits behind heavy-lidded eyes and every tile laid down is a confession.
+  key_features: Smoke haze, stillness suspense, hard shadow light, calculation pressure, predatory close framing
+  creative_brief: >
+    Render any subject as a cerebral duel of patience and risk: smoke layers,
+    hard shadows, still gestures, and ritual spacing should create predatory
+    calculation without fixed play structures, surfaces, props, ages, or
+    competition scenes.
 avoidRules:
   - realistic
   - 3d render

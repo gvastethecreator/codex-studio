@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-145
 packId: pack_16
-name: Eureka Seven - Sky-Surf Youth Mecha Romance
+name: Sky-Surf Romantic Momentum Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Mecha aéreo romántico de juventud contracultural, con sensación de vuelo libre y melancolía luminosa.
-  form_and_line: Contornos fluidos aerodinámicos, siluetas de rider y mecha con curvas de surf y cinética de arco.
+  aesthetic: Romanticismo aéreo contracultural, sensación de lift libre y melancolía luminosa de horizonte abierto.
+  form_and_line: Contornos fluidos aerodinámicos, curvas de deslizamiento y cinética de arco sin fijar vehículo ni piloto.
   color_palette: Cianes de cielo abierto, magentas de atardecer, neones de tabla y gradientes de alta saturación optimista.
   lighting_setup: Backlight dorado de horizonte, relleno por nube reflectante y streaks de rim para velocidad en altura.
-  material_texture: Superficies semibrillo de board, compositing digital pulido y volumen nuboso suave de alto recorrido.
+  material_texture: Superficies semibrillo, compositing digital pulido, halos de vapor y volumen nuboso suave de alto recorrido.
   render_quality: Calidad premium mid-2000s con lectura aérea clara y control emocional vibrante.
-  spatial_distortion: Perspectiva de vuelo diagonal, profundidad de océano de nubes y framing liviano de gravedad reducida.
+  spatial_distortion: Perspectiva diagonal ascendente, profundidad atmosférica y framing liviano de gravedad reducida.
   atmosphere: Aérea, romántica, juvenil y liberadora.
-  key_features: Coreografía de air-surf mecha, skyline de nubes, códigos de subcultura y dinámica de impulso continuo.
-  creative_brief: Define una gramática reusable de mecha romance aéreo para cualquier sujeto, priorizando lift, momentum y anhelo sobre combate terrestre.
+  key_features: Trazas de aire, gradientes de altura, códigos de subcultura, siluetas en suspensión y dinámica de impulso continuo.
+  creative_brief: Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo sin imponer mechas, tablas, riders ni cielo literal.
 avoidRules:
   - realistic
   - 3d render

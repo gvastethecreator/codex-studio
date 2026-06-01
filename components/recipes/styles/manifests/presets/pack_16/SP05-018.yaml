@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-018
 packId: pack_16
-name: Desert Space Gunslinger
+name: Dusty Space-Western Absurdity Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Dusty sci-fi westerns, oversized weapons, elastic expressions, desert horizons, spent shell casings, arm-guns, dusty saloons, heat haze
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Chaotic, lonely, reckless, wild
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Oversized arm-guns kick against sand-scorched horizons as elastic expressions stretch from deadpan cool to manic fury in a single panel, spent shell casings pinging across dusty saloon floors. The sci-fi western mashup embraces its own absurdity with the reckless confidence of a gunslinger who stopped counting bullets long ago.
+  aesthetic: Dusty space-western absurdity, reckless comedy-action contrast, sunburnt loneliness, and elastic cool-to-chaos expression.
+  form_and_line: Crisp 90s cel contours, exaggerated gesture snaps, long coat-like silhouette rhythms, and slapstick-to-danger timing lines.
+  color_palette: Sun-bleached ochres, turquoise sky accents, hot red impact pops, faded mauves, and scorched black cel shadows.
+  lighting_setup: Harsh high-noon cel contrast, heat-haze bloom, hard rim light, and dry highlight separation on metal or fabric.
+  material_texture: Painted dust grain, worn leather-like surfaces, scratched metal glints, sanded matte color, and cel overlay texture.
+  render_quality: Golden-era anime frame polish with sharp cel definition, warm grading, and readable absurd-action silhouette design.
+  spatial_distortion: Heat-warped horizon pressure, extreme foreshortening, comedic snap framing, and empty-space loneliness.
+  atmosphere: Chaotic, lonely, reckless, wild.
+  key_features: Dust haze, oversized attitude, elastic expression contrast, dry kinetic impact, and absurd danger rendered with sincerity.
+  creative_brief: >-
+    Build a reusable dusty-space-western absurdity grammar for any subject or
+    input image: heat, dry texture, elastic cool-to-chaos acting, lonely
+    negative space, and reckless 90s cel impact without imposing deserts,
+    guns, saloons, shell casings, arm-weapons, or specific horizons.
 avoidRules:
   - realistic
   - 3d render

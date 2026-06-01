@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Text based image
-  form_and_line: Characters
+  aesthetic: ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic
+  form_and_line: Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands
   color_palette: Monochrome green/black
   lighting_setup: Density based
   material_texture: Text grid
   render_quality: Retro, hacker
   spatial_distortion: Low res
   atmosphere: Tech, code
-  key_features: Text only
-  creative_brief: Characters from the ASCII set assemble into image through density and contrast, the letter functioning as pixel, the keyboard as palette. The image exists simultaneously as text and picture, readable in two dimensions, meaningful in two languages. Every keystroke builds form from the alphabet's limited geometry.
+  key_features: Glyph density image, monospaced grid, terminal glow
+  creative_brief: Characters from the ASCII set assemble into image through density and contrast, each glyph functioning as a pixel-value decision. The image exists as symbol field and picture at once, but it should avoid readable words, captions, signatures, or logos. Every keystroke builds form from limited geometry and terminal-era constraint.
 avoidRules:
   - photo
   - realistic
@@ -34,14 +34,14 @@ avoidRules:
   - ugly
   - bad anatomy
   - watermark
-  - text
+  - readable words
   - signature
   - frame
   - border
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-060.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, readable words, signature, frame, border
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

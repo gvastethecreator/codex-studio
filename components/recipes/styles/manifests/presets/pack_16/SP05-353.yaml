@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-353
 packId: pack_16
-name: Initial D - Mountain Drift Headlight Tension
+name: Nocturnal Drift Tension Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Touge-racing nocturno centrado en drift técnico, control de transferencia de peso y lectura de curva ciega.
-  form_and_line: Contornos de vehículo afilados, vectores de derrape y postura de conducción de concentración máxima.
-  color_palette: Azules de noche montañosa, blanco de faro alto, naranja de freno térmico y negros de asfalto húmedo.
-  lighting_setup: Cortes de luz por faros direccionales y halos de niebla que enfatizan apex y salida de curva.
-  material_texture: Asfalto granular, guardarraíl metálico mojado, humo de neumático fino y cabina con reflejo bajo.
-  render_quality: Frame de motorsport anime con prioridad en trayectoria, adherencia y lectura de riesgo.
-  spatial_distortion: Perspectiva de hairpin con compresión agresiva del túnel vial y estiramiento lateral del drift.
+  aesthetic: Velocidad nocturna técnica, con deriva controlada, transferencia de peso visual y lectura de riesgo invisible.
+  form_and_line: Contornos afilados, vectores de derrape abstracto y postura de concentración máxima aplicable a cualquier sujeto.
+  color_palette: Azules de noche inclinada, blanco de haz alto, naranja térmico y negros húmedos.
+  lighting_setup: Cortes de luz direccionales y halos de niebla que enfatizan apex y salida de curva.
+  material_texture: Granularidad húmeda, metal mojado, humo fino y reflejos bajos de velocidad.
+  render_quality: Frame de performance anime con prioridad en trayectoria, adherencia visual y lectura de riesgo.
+  spatial_distortion: Compresión agresiva de túnel visual y estiramiento lateral de deriva.
   atmosphere: Nocturna, tensa, técnica y adictiva.
-  key_features: Ángulo de derrape, conos de faro, curva cerrada, foco de volante y estela de humo quirúrgica.
+  key_features: Ángulo de deriva, conos de luz, curva abstracta, foco técnico y estela de humo precisa.
   creative_brief: >-
-    Define una gramática reusable de mountain-drift donde lectura de curva,
-    comportamiento de tracción y tensión nocturna estructuren identidad sin
-    depender de una carrera concreta.
+    Define una gramática reusable de deriva nocturna para cualquier prompt o imagen de entrada:
+    tracción, riesgo y luz direccional sin imponer autos, montaña, faros, volantes ni carreras.
 avoidRules:
   - realistic
   - 3d render

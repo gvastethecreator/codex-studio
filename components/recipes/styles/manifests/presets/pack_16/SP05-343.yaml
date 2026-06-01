@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-343
 packId: pack_16
-name: Haikyuu!! - Orange-Court Jump Fever
+name: Vertical Team Rally Energy Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Vóley shonen de impulso vertical y cooperación táctica, con énfasis en sincronía de equipo y lectura de rotación.
-  form_and_line: Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre setter, spiker y libero.
-  color_palette: Naranjas de parquet cálido, cian de acento competitivo, blancos energéticos y contraste uniforme por escuadra.
-  lighting_setup: Luz de gimnasio de alto rebote con backlight de remate para siluetas aéreas legibles.
-  material_texture: Barniz brillante de cancha, malla de red nítida, tela deportiva transpirable y marcas de fricción en suela.
-  render_quality: Frame deportivo premium con jerarquía clara de balón, rematador y eje de bloqueo.
-  spatial_distortion: Foreshortening de salto y perspectiva de red que prioriza timing de recepción, colocación y spike.
+  aesthetic: Shonen deportivo de impulso vertical, cooperación táctica, sincronía de equipo y lectura de ritmo colectivo.
+  form_and_line: Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre roles.
+  color_palette: Naranjas cálidos de rebote, cian competitivo, blancos energéticos y contraste cromático por rol visual.
+  lighting_setup: Luz de alto rebote con backlight de impacto para siluetas aéreas legibles.
+  material_texture: Superficies brillantes, malla geométrica sugerida, tela transpirable y marcas de fricción.
+  render_quality: Frame deportivo premium con jerarquía clara de impulso, coordinación y eje de bloqueo abstracto.
+  spatial_distortion: Foreshortening de salto y perspectiva de tensión que prioriza timing, recepción y respuesta colectiva.
   atmosphere: Eléctrica, optimista y cohesionada por esfuerzo colectivo.
-  key_features: Silueta de saque en suspensión, geometría de red dominante, llamadas de equipo y energía de rally prolongado.
+  key_features: Impulso vertical, llamadas visuales de equipo, geometría de tensión, timing aéreo y energía de rally prolongado.
   creative_brief: >-
-    Formula una gramática reusable de volleyball-momentum donde salto,
-    sincronía de rotación y lectura de red definan identidad visual sostenida
-    sin depender de una jugada puntual.
+    Aplica una gramática reusable de energía deportiva vertical a cualquier prompt o imagen de entrada:
+    salto, sincronía y anticipación colectiva sin imponer vóley, canchas, redes, saques ni equipos concretos.
 avoidRules:
   - realistic
   - 3d render

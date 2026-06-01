@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-147
 packId: pack_16
-name: Toradora! - Winter Romance Tsundere Collision
+name: Winter Friction Romance Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Romcom escolar invernal de fricción emocional, con ternura escondida bajo choque verbal y torpeza juvenil.
+  aesthetic: Romcom invernal de fricción emocional, ternura escondida, tensión reactiva y vulnerabilidad cálida.
   form_and_line: Línea digital compacta, acting reactivo intenso y siluetas cercanas para conflicto afectivo continuo.
-  color_palette: Azules fríos de calle, naranjas cálidos de interior, rojos suaves de rubor emocional y grises de invierno.
-  lighting_setup: Contraste entre farola nocturna fría y luz doméstica cálida, con gradientes suaves de cercanía íntima.
-  material_texture: Tejido de uniforme, superficies de apartamento vivido y acabado limpio early-HD con ruido sutil.
+  color_palette: Azules fríos, naranjas cálidos, rojos suaves de rubor emocional y grises de invierno.
+  lighting_setup: Contraste entre luz fría exteriorizada y calidez íntima, con gradientes suaves de cercanía emocional.
+  material_texture: Texturas textiles suaves, superficies cotidianas simplificadas y acabado limpio early-HD con ruido sutil.
   render_quality: Producción premium 2000s con excelente lectura de timing cómico y desgarro sentimental.
-  spatial_distortion: Espacios escolares y domésticos comprimidos para enfatizar proximidad, choque y reconciliación.
+  spatial_distortion: Composición comprimida para enfatizar proximidad, choque, pausa incómoda y reconciliación.
   atmosphere: Combativa, dulce, invernal, honesta.
-  key_features: Dúo tsundere en tensión, luminaria de invierno, clutter íntimo y acting de distancia que se acorta.
-  creative_brief: Diseña una gramática reusable de romance de invierno conflictivo para cualquier sujeto, equilibrando humor cortante, fricción de carácter y calidez emocional.
+  key_features: Microgestos de tensión, luminaria invernal, clutter emocional abstracto y acting de distancia que se acorta.
+  creative_brief: Diseña una gramática reusable de romance invernal conflictivo para cualquier sujeto, equilibrando humor cortante, fricción de carácter y calidez emocional sin imponer escuela, apartamento, uniformes ni pareja fija.
 avoidRules:
   - realistic
   - 3d render

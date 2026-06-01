@@ -12,15 +12,18 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Authentic candid street photography, photojournalistic portraiture, unposed and natural
-  subject_treatment: Natural depth of field, subject isolated from busy background, spontaneous expression
+  aesthetic: Authentic candid documentary photography, unposed street-derived realism
+  subject_treatment: Natural depth of field, primary subject isolated from busy context, spontaneous moment quality
   color_and_tone: Urban color palette, natural daylight tones, slightly desaturated, realistic contrast
   lighting_and_shadow: Available natural light, dynamic shadows, mixed lighting environments
-  texture_and_material: Subtle digital noise or film grain, realistic clothing textures, environmental grit
+  texture_and_material: Subtle digital noise or film grain, realistic surface textures, environmental grit
   camera_and_composition: Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing
   atmosphere_and_mood: Real, fleeting, documentary, slice-of-life, energetic
   rendering_and_quality: High quality documentary photography, authentic, unretouched look
-  creative_brief: A stolen glance across an intersection, the city breathing through its inhabitants, the sidewalk transformed into a theater of unscripted moments. Available light catches a stranger mid-thought, the frame holding its breath as asphalt grain and fleeting honesty conspire. Documentary truth rendered through the lens of someone who forgot the camera was there, the urban pulse beating in every unposed frame.
+  creative_brief: >-
+    Apply candid street-documentary behavior to any subject: available light,
+    quick framing, imperfect motion, urban grit, and unposed immediacy without
+    requiring a person, sidewalk, or city scene.
 avoidRules:
   - illustration
   - painting

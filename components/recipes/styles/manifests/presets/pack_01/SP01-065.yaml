@@ -12,23 +12,23 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Cute dog/cat portrait
+  aesthetic: Playful companion portrait
   form_and_line: Eye level
   color_palette: Bright, happy
   lighting_setup: Soft
-  material_texture: Fur
-  render_quality: Cute, studio
-  spatial_distortion: Wide angle nose (boop)
+  material_texture: Soft tactile detail
+  render_quality: Cute studio warmth
+  spatial_distortion: Wide-angle near-plane exaggeration
   atmosphere: Playful, sweet
-  key_features: Looking at camera
-  creative_brief: A face met at the same plane, pupil to pupil, where wide-angle curiosity approaches first and the eyes behind it hold an intelligence older than domestication. Soft light nestles into fur like comfort into memory, the frame built entirely around the presence of a creature who does not perform but simply is. Joy arrives unarmed, asking only to be returned in kind.
+  key_features: Eye-level warmth
+  creative_brief: 'Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject without requiring dog, cat, fur, creature, or camera gaze.'
 avoidRules:
   - scary
-  - wild
+  - menacing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-065.webp
 attributes:
-  negativePrompt: scary, wild
+  negativePrompt: scary, menacing
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

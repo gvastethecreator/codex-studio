@@ -13,15 +13,15 @@ tags:
   - nature-and-wildlife
 visualDna:
   aesthetic: Top-down view
-  form_and_line: Geometric landscape
+  form_and_line: Top-down geometry
   color_palette: Saturated
   lighting_setup: Flat (noon) or long shadows
   material_texture: Sharp digital
-  render_quality: DJI, travel
+  render_quality: Drone survey realism
   spatial_distortion: Flattened perspective
   atmosphere: Epic, overview
   key_features: Bird's eye view
-  creative_brief: 'The earth abstracted into pattern: rivers become veins, roads become sutures, fields become brushstrokes on a canvas too large for any gallery. Shadows stretch long as sundials from a god''s-eye vantage, flattening the world into pure geometry. Scale collapses into design, the familiar made alien through altitude.'
+  creative_brief: 'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required.'
 avoidRules:
   - illustration
   - painting

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-179
 packId: pack_16
-name: Slam Dunk - Hardwood Rivalry Portrait
+name: Warm Rivalry Portrait Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Drama deportivo noventero de baloncesto con crecimiento colectivo, rivalidad frontal y carisma underdog.
-  form_and_line: Línea enérgica de cancha, acting competitivo legible y anatomía atlética de impulso continuo.
-  color_palette: Maderas cálidas de parquet, rojos/azules de uniforme y blancos intensos de luz de gimnasio.
-  lighting_setup: Iluminación de pabellón con contraste limpio, reflejo en piso pulido y rim de esfuerzo físico.
-  material_texture: Parquet encerado, tela deportiva sudada, balón gastado y grano clásico de anime de partido.
-  render_quality: Acabado premium 90s con claridad táctica de jugada, emoción coral y ritmo de remontada.
-  spatial_distortion: Perspectiva de media cancha y aro para enfatizar salto, pase y choque de rivalidades.
+  aesthetic: Cel anime 90s deportivo de rivalidad frontal, energía juvenil, esfuerzo sudado y carisma underdog.
+  form_and_line: Línea atlética, acting competitivo legible, diagonales de impulso, anatomía en tensión y gestos de remontada.
+  color_palette: Miel cálida, rojos y azules limpios, blanco intenso, sombra de esfuerzo y naranja acento de energía.
+  lighting_setup: Luz limpia de alto rebote, reflejos cálidos, rim de esfuerzo físico y contraste claro sobre gestos.
+  material_texture: Superficie encerada abstracta, tela sudada, grano clásico de anime deportivo y brillo de movimiento rápido.
+  render_quality: Acabado premium 90s con claridad táctica, emoción coral y ritmo de superación sin fijar deporte específico.
+  spatial_distortion: Perspectiva dinámica de acción media, líneas de velocidad y encuadres bajos para enfatizar salto, choque o avance.
   atmosphere: Competitiva, sudada, esperanzadora, magnética.
-  key_features: Arcos de tiro, foco en duelo cara a cara, química de equipo y gesto de superación barrial.
-  creative_brief: Construye una gramática reusable de épica de baloncesto juvenil para cualquier sujeto, equilibrando intensidad de partido, vínculo de equipo y narrativa de segunda oportunidad.
+  key_features: Diagonales deportivas, reflejos cálidos, gestos de esfuerzo, química de equipo, encuadre de rivalidad y ritmo de remontada.
+  creative_brief: >-
+    Aplica este preset como tratamiento abstracto de anime deportivo 90s:
+    cualquier prompt debe ganar intensidad competitiva, vínculo grupal, energía
+    de remontada y fisicalidad clara sin forzar baloncesto ni cancha.
 avoidRules:
   - realistic
   - 3d render

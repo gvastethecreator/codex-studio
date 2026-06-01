@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Glamour portrait
+  aesthetic: High-front glamour lighting
   form_and_line: None
-  color_palette: Flattering, porcelain skin, peach glow, pearl highlight
-  lighting_setup: High front key, overhead beauty dish, butterfly shadow under nose
-  material_texture: Smooth skin, retouched surface, soft diffusion
+  color_palette: Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones
+  lighting_setup: High front key, overhead beauty dish, central downward shadow cue
+  material_texture: Smooth diffusion, retouched surface, soft highlight gradients
   render_quality: Beauty, studio, magazine-cover polish, glamour perfection
   spatial_distortion: None
   atmosphere: Beautiful, clean, aspirational elegance, fashion confidence
-  key_features: Nose shadow, catchlight, cheekbone highlight, clavicle glow
-  creative_brief: Light pours downward like a benediction, lifting cheekbones into pearl and sculpting a delicate shadow beneath the nose that anchors the entire composition. The skin glows from within—not lit but luminous, as if the subject were made of something finer than mere flesh.
+  key_features: Beauty-dish catchlight, centered top key, soft frontal fill, pearl highlight
+  creative_brief: 'Use butterfly lighting as a polished beauty-light grammar: high frontal key, centered catchlight, soft fill, pearl highlights, and minimal harsh side shadow. Avoid making the preset depend on faces, skin, cheekbones, or fashion subjects. Any input should become clean, flattering, and studio-elegant.'
 avoidRules:
   - harsh shadows
 assets:

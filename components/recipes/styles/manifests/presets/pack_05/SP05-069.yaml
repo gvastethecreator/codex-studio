@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-069
 packId: pack_05
-name: Goblin Slayer – Dungeon Exterminator Grit
+name: Procedural Low-Fantasy Grit Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Dirty armor, tactical cave-light, merciless combat efficiency, low-fantasy severity, helmet-never-removed hero, guild hall strategizing, goblin nest caves, dice-roll tension
+  aesthetic: Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency as composition, dice-like tension without literal gameplay
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth abrasion, dry blood-brown staining
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette economy, procedural threat spacing
   atmosphere: Tactical, grim, relentless, procedural
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: One man wages an infinite war against the small and cruel, his face forever hidden behind steel that has seen too much. Dungeon corridors become kill-zones mapped by torchlight and trauma. There is no glory in this crusade, only the grim arithmetic of bodies erased from the equation.
+  creative_brief: >
+    Treat any subject as harsh practical fantasy rendered through procedure,
+    restraint, and problem-solving grit. Use narrow light, dirty metal texture,
+    smoky shadow, and economical silhouettes while keeping all figures, props,
+    locations, enemies, and game-signifiers non-specific.
 avoidRules:
   - realistic
   - 3d render

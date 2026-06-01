@@ -12,12 +12,12 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Photoshop composite
+  aesthetic: Digital collage composite with layer logic, surreal scale play, and clean cut-screen edges
   form_and_line: Clean cuts
   color_palette: Vibrant, surreal
   lighting_setup: Digital
   material_texture: Screen
-  render_quality: Modern art, vaporwave
+  render_quality: Modern screen-native collage polish without requiring vaporwave props or platform UI
   spatial_distortion: Scale play
   atmosphere: Surreal, fun
   key_features: Digital edges
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - software UI
+  - vaporwave prop requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-075.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, software UI, vaporwave prop requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

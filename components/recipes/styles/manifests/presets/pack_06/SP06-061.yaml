@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-061
 packId: pack_06
-name: Collage (Analog)
+name: Analog Cut-Paper Collage
 category: 5. Mixed Media
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Cut and paste magazine
+  aesthetic: Analog cut-paper collage with visible seams, mismatched print sources, and deliberate fragment tension
   form_and_line: Scissor cuts
-  color_palette: Vintage print
+  color_palette: Vintage print fragments, mismatched ink ages, and clashing CMYK residues
   lighting_setup: Inconsistent
   material_texture: Paper, glue
   render_quality: Dada, punk
   spatial_distortion: Disjointed
   atmosphere: Chaotic, surreal
   key_features: Cutout edges
-  creative_brief: Scissor cuts interrupt the seamless world of the magazine, reassembling fragments into a reality that the original photographs never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, the gap between the fragments generating more truth than the fragments themselves.
+  creative_brief: Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - readable magazine text
+  - specific source photo requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-061.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

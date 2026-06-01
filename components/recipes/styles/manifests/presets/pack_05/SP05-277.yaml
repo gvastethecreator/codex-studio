@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-277
 packId: pack_05
-name: Boogiepop Phantom - Rusted Neon Adolescent Dread
+name: Rusted Neon Adolescent Dread Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Urban legend melancholy, industrial corridors, broken youth interiority, violet night, fractured chronology, faint supernatural presence threading through damaged city life
+  aesthetic: Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint unreality threading through ordinary damage
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn wall texture
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition, memory-broken framing
   atmosphere: Melancholic, fragmented, nocturnal, ghostly
-  key_features: Industrial school-city spaces, violet night tones, urban legend hints, fragmented framing, interior dread expressions
-  creative_brief: Adolescence bends under violet streetlight where ghost stories are not told but transmitted through the static between human connections. Industrial corridors become the architecture of forgetting, and every hallway leads deeper into the interiority of what a city cannot remember. The supernatural does not intrude but seeps through hairline cracks in the everyday.
+  key_features: Violet night tones, rusted neon bleed, fragmented framing, interior dread, static-haunted melancholy
+  creative_brief: >
+    Give any prompt a rusted-neon psychological treatment: violet haze, analog
+    static, fractured time, and damaged interiority should define the style
+    without fixed institutions, passageways, myths, public spaces, urban scale, or haunting
+    setup.
 avoidRules:
   - realistic
   - 3d render

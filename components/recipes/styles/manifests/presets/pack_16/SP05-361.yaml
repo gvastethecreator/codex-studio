@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-361
 packId: pack_16
-name: Baby Steps - Notebook Tennis Calculation
+name: Incremental Method Training Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Tennis metódico de mejora incremental, centrado en análisis técnico, repetición y evolución medible.
-  form_and_line: Mecánica de swing depurada, footwork educativo y acting de concentración sostenida.
-  color_palette: Paleta sobria de práctica, verdes de cancha, blancos de línea y acentos azules de estudio.
+  aesthetic: Entrenamiento metódico de mejora incremental, análisis técnico, repetición y evolución medible.
+  form_and_line: Mecánica depurada, pasos didácticos y acting de concentración sostenida.
+  color_palette: Paleta sobria de práctica, verdes funcionales, blancos de guía y acentos azules de análisis.
   lighting_setup: Luz de entrenamiento uniforme con contraste moderado para lectura didáctica de gesto.
-  material_texture: Superficie de cancha usada, cuerda de raqueta funcional, cuaderno táctico y textil de práctica.
+  material_texture: Superficie usada, material funcional, marcas tácticas sugeridas y textil de práctica.
   render_quality: Frame técnico de entrenamiento con claridad de corrección, progreso y consistencia.
-  spatial_distortion: Perspectiva funcional de práctica sin dramatización excesiva, enfocada en secuencia y repetición.
+  spatial_distortion: Perspectiva funcional sin dramatización excesiva, enfocada en secuencia y repetición.
   atmosphere: Estudiosa, práctica, constante y determinada.
-  key_features: Cues de toma de notas, mecánica de swing, patrón de pies y lenguaje corporal de mejora progresiva.
+  key_features: Cues de análisis, mecánica repetida, patrón de pies y lenguaje corporal de mejora progresiva.
   creative_brief: >-
-    Define una gramática reusable de notebook-tennis donde método,
-    repetición y lectura de técnica conviertan la progresión deportiva en
-    identidad visual estable.
+    Define una gramática reusable de entrenamiento calculado para cualquier prompt o imagen de entrada:
+    método, repetición y progreso medible sin imponer tennis, cuadernos, raquetas ni cancha.
 avoidRules:
   - realistic
   - 3d render

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-287
 packId: pack_16
-name: Belle - Virtual Cathedral Pop Opera
+name: Digital Pop Opera Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía digital operática de gran escala donde identidad virtual, performance musical y arquitectura de datos se funden en una sola experiencia emocional.
-  form_and_line: Siluetas elegantes de avatar, curvas ornamentales de escenario y linework limpio para coreografías de voz y movimiento.
-  color_palette: Magentas y cianes luminosos, blancos perla de concierto, violetas profundos y gradientes iridiscentes de entorno virtual.
-  lighting_setup: Iluminación de show sinfónico con haces volumétricos, contraluces de escenario y acentos pulsantes sincronizados al clímax vocal.
-  material_texture: Superficies translúcidas tipo interfaz, metal pulido de pasarela digital y partículas de luz como materia escénica.
+  aesthetic: Fantasía digital operática de gran escala, con identidad luminosa, ornamento de datos y emoción pop monumental.
+  form_and_line: Siluetas elegantes, curvas ornamentales, linework limpio y coreografía visual de luz aplicada a cualquier motivo.
+  color_palette: Magentas y cianes luminosos, blancos perla, violetas profundos y gradientes iridiscentes de entorno virtual.
+  lighting_setup: Iluminación sinfónica con haces volumétricos, contraluces monumentales y acentos pulsantes sincronizados al clímax vocal.
+  material_texture: Superficies translúcidas tipo interfaz, metal pulido digital y partículas de luz como materia performativa.
   render_quality: Acabado premium de pop-opera virtual con nitidez de ícono, profundidad de espectáculo y jerarquía emocional contundente.
-  spatial_distortion: Arquitectura expansiva no literal con escalas catedralicias y perspectiva ascendente que enfatiza trascendencia performativa.
+  spatial_distortion: Espacialidad expansiva no literal con escala reverencial y perspectiva ascendente que enfatiza trascendencia performativa.
   atmosphere: Grandiosa, catártica, conectiva, esperanzadora.
-  key_features: Geometría de catedral virtual, staging musical monumental, avatar central de alta elegancia y pulsos visuales de comunidad online.
-  creative_brief: Define un estilo reusable de ópera digital donde cualquier sujeto pueda volverse evento emotivo masivo mediante luz escénica, escala arquitectónica virtual y diseño de identidad luminosa.
+  key_features: Escala digital monumental, pulsos de luz, ornamento virtual, identidad radiante y teatralidad pop sin espacio fijo.
+  creative_brief: >-
+    Define un estilo reusable de ópera digital para cualquier prompt o imagen de entrada:
+    luz escénica, identidad luminosa y grandeza emocional sin imponer catedrales virtuales, avatares, conciertos ni multitudes.
 
 avoidRules:
   - realistic

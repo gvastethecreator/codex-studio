@@ -9,14 +9,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, oversaturated, low-detail',
     style: {
-      aesthetic: 'Mechanized post-apocalypse on dunes and highway remains.',
-      subject_treatment: 'Heavy-load mechs escorting armored vehicles.',
-      color_and_tone: 'Burnt ochres, oxidized iron, and bleached skies.',
-      lighting_and_shadow: 'Severe overhead sun with short shadows and bright dust.',
-      texture_and_material: 'Corroded sheet metal, torn canvas and abrasive sand.',
-      camera_and_composition: 'Side-scrolling panoramic framing with tactical readability.',
-      atmosphere_and_mood: 'Relentless march, extreme heat, and survival.',
-      rendering_and_quality: 'Faction illustration with stylized realism.',
+      aesthetic:
+        'Vehicular combat sandbox postapocalíptico con logística de convoy y combate de largo alcance en terreno abierto.',
+      subject_treatment:
+        'Unidades pesadas, escolta híbrida y clases de vehículo/mech diferenciadas por silueta funcional.',
+      color_and_tone:
+        'Ocre quemado, hierro oxidado y cielo de desecación extrema con contraste táctico mínimo.',
+      lighting_and_shadow:
+        'Sol cenital duro, polvo suspendido y scintillation térmica para sensación de calor operativo.',
+      texture_and_material:
+        'Metal corroído, lonas reparadas, caucho degradado y abrasión granular persistente.',
+      camera_and_composition:
+        'Panorámica lateral de ruta con lectura de lanes, flank routes y amenazas de horizonte.',
+      atmosphere_and_mood:
+        'Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.',
+      rendering_and_quality:
+        'Estilo faction-keyart con realismo estilizado y claridad de sistemas de movilidad/combate.',
     },
   },
   {
@@ -25,14 +33,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, warm-sunlight, lowres',
     style: {
-      aesthetic: 'Industrial science fiction in an emergency lunar base.',
-      subject_treatment: 'Technical personnel and marines responding to hull breach.',
-      color_and_tone: 'Cold whites, alarm reds and graphite shadows.',
-      lighting_and_shadow: 'Strobe beacons and hard panel light.',
-      texture_and_material: 'Brushed titanium, ice, technical rubber, and condensation.',
-      camera_and_composition: 'Corridor in long perspective with central vanishing point.',
-      atmosphere_and_mood: 'Urgency, claustrophobia, and operational heroism.',
-      rendering_and_quality: 'Level background with production quality.',
+      aesthetic:
+        'Sci-fi survival/maintenance en base lunar, centrado en crisis de sistemas, sellado de módulos y respuesta cooperativa.',
+      subject_treatment:
+        'Roles de engineer/medic/security con iconografía de herramienta y estados de emergencia legibles.',
+      color_and_tone:
+        'Blanco clínico frío, rojo alarma y sombras grafito para jerarquía de riesgo.',
+      lighting_and_shadow:
+        'Strobes de emergencia, paneles duros y zonas oscuras de fallo energético.',
+      texture_and_material:
+        'Titanio cepillado, escarcha interior, juntas de caucho técnico y condensación por despresurización.',
+      camera_and_composition:
+        'Corredor de fuga con puntos de cierre de compuerta y objetivos de reparación por etapas.',
+      atmosphere_and_mood: 'Claustrofobia operativa, urgencia técnica y heroísmo de contingencia.',
+      rendering_and_quality:
+        'Background de nivel con estándares de readability para hazards, rutas y objetivos de interacción.',
     },
   },
   {
@@ -41,14 +56,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, dry-environment, low-detail',
     style: {
-      aesthetic: 'Underwater thriller in fractured scientific complex.',
-      subject_treatment: 'Tactical divers and rescue drones in evacuation.',
-      color_and_tone: 'Deep turquoise, emergency red and blued steel.',
-      lighting_and_shadow: 'Broken caustics and intermittent alarms.',
-      texture_and_material: 'Cracked glass, biofilm, and wet panels.',
-      camera_and_composition: 'Central walkway with gap in the background.',
-      atmosphere_and_mood: 'Countdown anxiety under pressure.',
-      rendering_and_quality: 'Campaign scene with lens focal points.',
+      aesthetic:
+        'Survival sci-fi submarino orientado a reparación, contención y extracción bajo presión estructural.',
+      subject_treatment:
+        'Roles de diver/engineer/drone-support legibles por silueta y toolset funcional.',
+      color_and_tone:
+        'Turquesa profundo, rojo alarma y acero azulado para jerarquía de riesgo ambiental.',
+      lighting_and_shadow:
+        'Caústicas rotas, flashes de emergencia y zonas de visibilidad intermitente por fallo de energía.',
+      texture_and_material:
+        'Cristal fisurado, biofilm, juntas húmedas y panelado industrial saturado por agua.',
+      camera_and_composition:
+        'Pasarela central con rutas de evacuación, nodos de reparación y hazards de ruptura.',
+      atmosphere_and_mood:
+        'Ansiedad de cuenta regresiva, claustrofobia acuática y disciplina operativa.',
+      rendering_and_quality:
+        'Estilo campaign-gameplay con lectura clara de objetivos, rutas y estados de sistema.',
     },
   },
   {
@@ -57,14 +80,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, chaotic-ui, low-contrast',
     style: {
-      aesthetic: 'Tower defense in electric bastion on cliffs.',
-      subject_treatment: 'Arcanotechnological towers with interchangeable modules.',
-      color_and_tone: 'Storm blues, silver, and orange pulses.',
-      lighting_and_shadow: 'Frequent lightning strikes and impact flashes.',
-      texture_and_material: 'Carved stone, conductive copper, and lit runes.',
-      camera_and_composition: 'Clear isometric view for enemy routes.',
-      atmosphere_and_mood: 'Tense strategy and territorial control.',
-      rendering_and_quality: 'Gameplay visual with emphasis on readability.',
+      aesthetic:
+        'Tower-defense arcanotecnológico de bastión de tormenta con énfasis en control de rutas y sinergias modulares.',
+      subject_treatment:
+        'Torres intercambiables por función (slow/burst/chain/support) con silueta y FX diferenciables.',
+      color_and_tone:
+        'Azul tormenta, plata y pulsos naranja para telegraphear estados de carga/descarga.',
+      lighting_and_shadow:
+        'Rayos frecuentes, flashes de impacto y contraste dirigido para leer oleadas.',
+      texture_and_material:
+        'Piedra tallada, cobre conductor, runas activas y superficies quemadas por descarga.',
+      camera_and_composition:
+        'Isométrica limpia con rutas enemigas, nodos de torre y áreas de upgrade claras.',
+      atmosphere_and_mood: 'Estratégica, tensa y metódica.',
+      rendering_and_quality:
+        'Gameplay-first visual con readability de pathing, timing y economía de defensa.',
     },
   },
   {
@@ -73,14 +103,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, grimdark, noisy',
     style: {
-      aesthetic: 'Colony simulation in a botanical orbital ring.',
-      subject_treatment: 'Ecological engineers and autonomous agricultural drones.',
-      color_and_tone: 'Vivid greens, clinical white, and space blue.',
-      lighting_and_shadow: 'Diffused dome light with soft reflections.',
-      texture_and_material: 'Solar panels, curved glass, and damp leaves.',
-      camera_and_composition: 'Vista modular por sectores conectados.',
-      atmosphere_and_mood: 'Technical optimism and sustainable growth.',
-      rendering_and_quality: 'UI-friendly para city builder complejo.',
+      aesthetic:
+        'Colony-builder orbital biofílico orientado a balance entre producción, sostenibilidad y expansión modular.',
+      subject_treatment:
+        'Ingenieros ecológicos y drones agrícolas por función (siembra, mantenimiento, transporte).',
+      color_and_tone:
+        'Verdes vivos, blanco clínico y azul espacial para lectura de salud sistémica.',
+      lighting_and_shadow:
+        'Luz difusa de domo con reflejos suaves que facilitan lectura de overlays estratégicos.',
+      texture_and_material:
+        'Paneles solares, vidrio curvo, sustrato húmedo y estructura compuesta de alta eficiencia.',
+      camera_and_composition:
+        'Vista sectorial conectada con nodos de logística, energía y cultivo claramente jerarquizados.',
+      atmosphere_and_mood:
+        'Optimismo técnico, crecimiento metódico y gestión de riesgo controlada.',
+      rendering_and_quality:
+        'Visual city-builder UI-friendly con claridad de cadenas productivas y estados de colonia.',
     },
   },
   {
@@ -89,14 +127,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, grimdark, overfog',
     style: {
-      aesthetic: 'Futuristic rural defense in automated orchards.',
-      subject_treatment: 'Armed agricultural drones and engineer farmers.',
-      color_and_tone: 'Vibrant greens, industrial orange, and solar white.',
-      lighting_and_shadow: 'Warm afternoon light with active sensor highlights.',
-      texture_and_material: 'Waxy fruit, enameled metal, and damp soil.',
-      camera_and_composition: 'Crop corridors functioning as defensive lanes.',
-      atmosphere_and_mood: 'Rural ingenuity and community resilience.',
-      rendering_and_quality: 'Fresh, original tower-defense scene.',
+      aesthetic:
+        'Tower-defense rural sci-fi en huertos automatizados, orientado a defensa por carriles vivos y gestión de recursos.',
+      subject_treatment:
+        'Drones agrícolas armados e ingenieros-campesinos con roles de soporte, control y daño.',
+      color_and_tone:
+        'Verdes vibrantes, naranja industrial y blanco solar para distinguir producción y combate.',
+      lighting_and_shadow:
+        'Tarde cálida con highlights de sensores y señalización activa de torres.',
+      texture_and_material:
+        'Fruta cerosa, metal esmaltado, tierra húmeda y tubería de riego inteligente.',
+      camera_and_composition:
+        'Corredores de cultivo como lanes defensivos con choke-points y nodos de upgrade.',
+      atmosphere_and_mood: 'Ingenio comunitario, urgencia agrícola y resistencia cooperativa.',
+      rendering_and_quality:
+        'Tower-defense visual fresco con legibilidad alta de oleadas, rango y estado estructural.',
     },
   },
   {
@@ -105,14 +150,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, fantasy-castle, muddy',
     style: {
-      aesthetic: 'Quantum laboratory fractured by a dimensional rupture.',
-      subject_treatment: 'Combat scientists and contained anomalies.',
-      color_and_tone: 'Clinical white, rift violet, and ice blue.',
-      lighting_and_shadow: 'Pulsos intermitentes de portal abierto.',
-      texture_and_material: 'Armored glass, cables, and broken holography.',
-      camera_and_composition: 'Central core with containment rings.',
-      atmosphere_and_mood: 'Science at the limit and controlled chaos.',
-      rendering_and_quality: 'AAA critical-incident scene.',
+      aesthetic:
+        'Sci-fi incident-response en laboratorio cuántico, centrado en contención, sellado y gestión de anomalías.',
+      subject_treatment:
+        'Científicos de combate y entidades contenidas por nivel de riesgo claramente codificado.',
+      color_and_tone:
+        'Blanco clínico, violeta de fisura y azul hielo para lectura de estado de contención.',
+      lighting_and_shadow:
+        'Pulsos intermitentes de portal con parpadeo de emergencia en áreas críticas.',
+      texture_and_material:
+        'Vidrio blindado, cableado expuesto, holografía rota y módulos de confinamiento.',
+      camera_and_composition:
+        'Núcleo central con anillos de contención y rutas de intervención por sector.',
+      atmosphere_and_mood: 'Tensa, científica y caótica bajo protocolo.',
+      rendering_and_quality:
+        'Critical-incident gameplay art con claridad de niveles de amenaza, ruta y objetivo.',
     },
   },
   {
@@ -121,14 +173,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
     style: {
-      aesthetic: 'Hunt for wild mechs in a metallic forest.',
-      subject_treatment: 'Trackers wielding electromagnetic bows.',
-      color_and_tone: 'Oxide green, copper, and electric blue.',
-      lighting_and_shadow: 'Backlight filtered through steel leaves.',
-      texture_and_material: 'Alloy trunks, organic cabling, and mud.',
-      camera_and_composition: 'Stalking shot with prey in the background.',
-      atmosphere_and_mood: 'Stealth, tension, and precision.',
-      rendering_and_quality: 'Eco-hunting gameplay concept.',
+      aesthetic:
+        'Mech-hunt táctico en bosque metálico vivo, centrado en rastreo de firmas, sigilo y captura selectiva.',
+      subject_treatment: 'Trackers con arcos electromagnéticos y roles de scout, trampa y remate.',
+      color_and_tone:
+        'Verde óxido, cobre y azul eléctrico para señalizar biomasa sintética y actividad mecánica.',
+      lighting_and_shadow:
+        'Contraluz filtrado por follaje de acero con zonas de ocultamiento táctico.',
+      texture_and_material:
+        'Troncado de aleación, cableado orgánico, barro conductor y depósitos de limadura.',
+      camera_and_composition:
+        'Encuadre de acecho con presa al fondo y rutas de rodeo claramente legibles.',
+      atmosphere_and_mood: 'Silenciosa, precisa y de tensión incremental.',
+      rendering_and_quality:
+        'Hunting gameplay concept con claridad de firma objetivo, cobertura y ventana de ataque.',
     },
   },
   {
@@ -137,14 +195,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, neon-city, noisy',
     style: {
-      aesthetic: 'Nomadic camp following solar rail lines.',
-      subject_treatment: 'Traveling clans with recycled technology.',
-      color_and_tone: 'Solar yellow, rust red, and dusty blue.',
-      lighting_and_shadow: 'Warm afternoon light with photovoltaic glints.',
-      texture_and_material: 'Canvas, panels, and repaired wood.',
-      camera_and_composition: 'Semicircular camp layout beside the tracks.',
-      atmosphere_and_mood: 'Mobile community and hard-earned hope.',
-      rendering_and_quality: 'Faction visual for an open-world RPG.',
+      aesthetic:
+        'Open-world nomad-sci-fi de campamentos móviles sobre riel solar, enfocado en logística, ruta y supervivencia comunitaria.',
+      subject_treatment:
+        'Clanes viajeros con tecnología recuperada y diferenciación visual por oficio itinerante.',
+      color_and_tone:
+        'Amarillo solar, rojo óxido y azul polvoriento para mapear energía, desgaste y horizonte.',
+      lighting_and_shadow:
+        'Tarde cálida con destellos fotovoltaicos que marcan nodos de recarga y actividad.',
+      texture_and_material:
+        'Lona resistente, paneles reparados, madera recompuesta y metal reciclado.',
+      camera_and_composition:
+        'Campamento semicircular junto a vías con zonas de comercio, taller y guardia.',
+      atmosphere_and_mood: 'Esperanzada, austera y resiliente.',
+      rendering_and_quality:
+        'Faction-worldbuilding gameplay art con lectura de circulación, abastecimiento y seguridad.',
     },
   },
   {
@@ -153,14 +218,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt: 'watermark, text, logo, underwater, lowres',
     style: {
-      aesthetic: 'Aerial shipyard where draconic mounts are outfitted.',
-      subject_treatment: 'Winged mechanics and elite riders.',
-      color_and_tone: 'Sky blue, steel, and burnished gold.',
-      lighting_and_shadow: 'Open daylight with localized forge smoke.',
-      texture_and_material: 'Scales, rivets, and reinforced leather.',
-      camera_and_composition: 'Elevated platform overlooking the void.',
-      atmosphere_and_mood: 'Epic preparation and wartime anticipation.',
-      rendering_and_quality: 'Premium faction visual.',
+      aesthetic:
+        'Skyforge prep-hub de monturas dracónicas, enfocado en loadout, mantenimiento y salida a campaña aérea.',
+      subject_treatment:
+        'Mecánicos alados y riders élite con lectura clara de rol técnico/combatiente.',
+      color_and_tone: 'Azul cielo, acero y oro bruñido para jerarquía de facción y rango.',
+      lighting_and_shadow:
+        'Luz abierta de altura con humo de forja localizado en zonas de trabajo.',
+      texture_and_material:
+        'Escamas tratadas, remaches aeronáuticos, cuero reforzado y herrajes térmicos.',
+      camera_and_composition:
+        'Plataforma elevada sobre vacío con líneas de tráfico aéreo y puntos de despliegue.',
+      atmosphere_and_mood: 'Épica, preparatoria y de anticipación bélica.',
+      rendering_and_quality:
+        'Premium faction gameplay art con claridad de logística, equipamiento y salida táctica.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

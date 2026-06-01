@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Quiet school mysteries, careful eye animation, old clubrooms, books and tea, low-drama deduction made beautiful through light and stillness, curiosity carrying the frame
-  form_and_line: Deliberate observational line economy, eye-acting emphasis, and tidy prop contours that support deduction readability
+  aesthetic: Quiet mystery anime language where low-drama deduction becomes beautiful through light, stillness, and curiosity carrying the frame
+  form_and_line: Deliberate observational line economy, eye-acting emphasis, and tidy contour hierarchy that supports deduction readability
   color_palette: Tea amber, worn-paper cream, polished wood browns, uniform navy, and late-afternoon honey highlights
-  lighting_setup: Window-slat afternoon light, desk-lamp amber pockets, and soft suspended dust-glow in still interiors
-  material_texture: Chalkboard matte, bookcloth wear, ceramic teacup glaze, varnished desk grain, and old-clubroom patina
+  lighting_setup: Afternoon slat light, amber pockets, and soft suspended dust-glow in still tonal fields
+  material_texture: Matte dark surfaces, bookcloth wear, ceramic glaze, varnished grain, and aged patina cues
   render_quality: Refined quiet-mystery rendering with disciplined stillness and high prop-legibility balance
-  spatial_distortion: Subtle viewpoint tightening around clue objects and gaze vectors
+  spatial_distortion: Subtle viewpoint tightening around clue-like focal points and gaze vectors
   atmosphere: Curious, refined, calm, observant
-  key_features: Clubroom detail, tea-and-book props, attentive facial acting, sunlit dust motes, restrained mystery framing
+  key_features: Attentive facial acting, sunlit dust motes, clue-forward focus, tea-amber warmth, and restrained mystery framing
   creative_brief: >-
-    Preserve tea-light classroom mystery grammar as a reusable style system:
-    observational stillness, clue-forward object staging, and warm-intellectual
-    ambience should remain coherent across subjects.
+    Use the title as a style anchor for tea-light mystery. Keep observational
+    stillness, clue-forward focus, and warm intellectual ambience without
+    requiring classroom, clubroom, books, or tea props.
 avoidRules:
   - realistic
   - 3d render

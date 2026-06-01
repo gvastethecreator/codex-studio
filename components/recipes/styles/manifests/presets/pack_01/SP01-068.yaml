@@ -12,23 +12,23 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Sleeping baby
-  form_and_line: Curled up
+  aesthetic: Newborn studio softness
+  form_and_line: Curled gentle forms
   color_palette: Cream, beige, soft
   lighting_setup: Window light
-  material_texture: Knitted blanket, skin
-  render_quality: Anne Geddes, peaceful
+  material_texture: Knitted softness, delicate surface
+  render_quality: Peaceful studio tenderness
   spatial_distortion: None
   atmosphere: Tiny, fragile
-  key_features: Sleeping
-  creative_brief: A universe folded into the curl of tiny fingers, breath so shallow it barely disturbs the air around it. Knitted warmth cradles the impossible weight of newness, each frame a held breath that knows it will one day exhale.
+  key_features: Resting tenderness
+  creative_brief: 'Newborn photography translates into ultra-soft cream/beige tenderness: window light, knitted texture, curled gentle forms, shallow quiet, and fragile scale cues. Keep peaceful studio delicacy without requiring babies, fingers, sleeping, blankets, or Anne Geddes staging.'
 avoidRules:
-  - awake
-  - crying
+  - harsh
+  - chaotic
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-068.webp
 attributes:
-  negativePrompt: awake, crying
+  negativePrompt: harsh, chaotic
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

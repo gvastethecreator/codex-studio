@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Sega-Genesis-Mega-Drive-16-bit aesthetic, heavy-dithering-for-transparency-fake, 64-colors-simultaneous-on-screen, crunchy-FM-synth-soundtrack-visual-equivalent, Sonic-spiky-pixel-design, Streets-of-Rage-palette-grit, 9-bit-color-depth-9-bit-attitude, Genesis-does-what-Nintendon''t philosophy, blast-processing-images
-  form_and_line: Chunky-16-bit-sprites, heavy-dither-pattern-edges, 320x224-resolution, sprite-scaling-hardware, two-layer-parallax-backgrounds
-  color_palette: 512-color-total-palette, 64-on-screen, heavy-dither-to-fake-more, Genesis-signature-dark-gritty, Electric-blue-Sonic, Streets-of-Rage-orange-sunset, golden-cartridge-bronze
+  aesthetic: Sega-Genesis-Mega-Drive 16-bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on screen, crunchy FM-synth soundtrack as visual rhythm, Sonic and Streets of Rage as palette-energy anchors, 9-bit-color-depth attitude, blast-processing image logic
+  form_and_line: Chunky 16-bit sprite logic, heavy dither-pattern edges, 320x224 resolution, sprite-scaling hardware feel, two-layer parallax composition
+  color_palette: 512-color total palette, 64-on-screen, heavy dither to fake more, Genesis-signature dark grit, electric blue accents, orange sunset accents, bronze cartridge warmth
   lighting_setup: Dither-pattern-as-lighting-gradient, highlight-shadow-mode-palette-swap, palette-cycling-for-glow, per-tile-palette-limitation-workaround
   material_texture: Dither-pattern-grid-texture, Genesis-composite-video-blur, cartridge-connector-blinking-artifacts, CRAM-dot-crawl, scanline-overlay, checkerboard-transparency-dither
   render_quality: Sega-Genesis-dither aesthetic, blast-processing-beauty, 16-bit-attitude-rendering, crunchy-pixel-charm, checkerboard-transparency-magic
   spatial_distortion: 320x224-Genesis-resolution, two-layer-parallax-depth, sprite-scaling-horizontal-line, vertical-border-overscan, PAL-letterbox
-  atmosphere: 90s-console-war-attitude, arcade-at-home energy, blast-processing-teenage excitement, FM-synth-funk, Sonic-speed-swagger
-  key_features: Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video-artifacts, checkerboard-transparency, two-layer-parallax, Sonic-spiky-pixel-design, FM-synth- crunchy-visual
-  creative_brief: Dithering is not a compromise but a signature — checkerboard patterns standing in for transparency, for gradients, for atmospheric depth in a machine limited to 64 colors on screen. Spiky blue hedgehogs race across parallax backgrounds, the FM synth of the visual world translating into crunchy pixel attitude. The image does what Nintendon't — it dithers with pride, blast-processing beauty one checkerboard at a time.
+  atmosphere: 90s-console-war-attitude, arcade-at-home energy, blast-processing excitement, FM-synth-funk, aggressive parallax swagger
+  key_features: Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video artifacts, checkerboard transparency, two-layer parallax, spiky pixel contour energy, FM-synth crunchy visual
+  creative_brief: Dithering becomes signature, not compromise. Any subject gains checkerboard transparency, crunchy palette grit, parallax layers and FM-synth edge energy, all pushed through a machine that makes limitation look loud.
 avoidRules:
   - smooth
   - gradient
@@ -51,4 +51,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

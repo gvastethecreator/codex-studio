@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Remote-island humor, calligraphy ink, lively kids, ocean wind and self-reinvention, fish-market energy, broad comedy softened by natural summer beauty
-  form_and_line: Expressive brush-gesture motifs, broad comedic body language, and breezy island-space contour openness
+  aesthetic: Summer reinvention anime language where brushlike expression, broad comedy, ocean-wind freshness, and craft identity soften each other
+  form_and_line: Expressive brush-gesture motifs, broad comedic body language, and breezy open contour spacing
   color_palette: Cerulean summer sky, sea salt whites, island greenery, ink-black calligraphy accents, and sun-warmed ochres
-  lighting_setup: High summer daylight, sea-reflected highlights, and interior tatami shade contrast with warm evening glows
-  material_texture: Brush-bristle ink density, rice-paper absorbency, weathered wood houses, cotton casualwear, and market-crate roughness
+  lighting_setup: High summer daylight, sea-reflected highlights, cool shade contrast, and warm evening glows
+  material_texture: Brush-bristle ink density, paper absorbency, weathered wood, cotton softness, and rough handmade surfaces
   render_quality: Warm comedic-healing rendering with lively island rhythm and craft-identity clarity
   spatial_distortion: Wind-driven framing looseness with gesture-led motion emphasis
   atmosphere: Refreshing, funny, breezy, heartfelt
-  key_features: Calligraphy tools, seaside village backdrops, energetic kids, summer sky expanses, fish-and-field props
+  key_features: Brush-and-ink expressiveness, breezy open spacing, summer sky expanses, broad comic timing, and heartfelt reset energy
   creative_brief: >-
-    Preserve island-calligraphy summer grammar as a reusable style system:
-    brush-and-ink expressiveness, seaside domestic comedy, and breezy
-    self-reinvention tone should remain coherent across subjects.
+    Use the title as a style anchor for island-calligraphy summer. Keep
+    brush-and-ink energy, breezy comedy, and self-reinvention tone without
+    requiring island village, kids, fish market, or calligraphy tools.
 avoidRules:
   - realistic
   - 3d render

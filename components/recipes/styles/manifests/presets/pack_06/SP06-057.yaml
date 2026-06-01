@@ -12,8 +12,8 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Blended images
-  form_and_line: Silhouette
+  aesthetic: Double-exposure compositing with nested imagery, transparent overlap, and poetic contour masking
+  form_and_line: Silhouette or mask-driven overlays with soft edge blending and exposure fusion
   color_palette: Mixed palettes
   lighting_setup: Contrast
   material_texture: Mixed
@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Image inside shape
   atmosphere: Dreamy
   key_features: Silhouette container
-  creative_brief: Two realities occupy the same frame, one visible through the silhouette of the other, interior and exterior collapsing into a single exposure. The image holds contradiction as composition, a forest growing inside a profile, mountains where thoughts should be. Meaning emerges from the overlap, the space between the negatives.
+  creative_brief: Two visual systems occupy the same frame, one visible through the contours or tonal mask of the other. Interior and exterior logic collapse into one exposure, holding contradiction as composition rather than narrative. Meaning emerges from overlap, transparency, and negative space without requiring faces, forests, mountains, or human profiles.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - face profile requirement
+  - forest requirement
+  - mountain requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-057.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

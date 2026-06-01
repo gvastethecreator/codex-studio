@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Classic 16-bit Mode 7 effect, pseudo-3D rotating floor plane stretching to horizon, sprite-scaled objects approaching from distance, Final Fantasy VI airship vista, Super Mario Kart track stretching, F-Zero speed-distorted ground, 1991 hardware magic
-  form_and_line: Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based ground plane with rotation transform, chunky affine mapping
-  color_palette: 256-color SNES palette, vibrant mode-7 blues, checkerboard ground, gradient-sky banding, 15-bit color depth charm
+  aesthetic: Classic 16-bit Mode 7 effect, pseudo-3D affine transform, rotating flat-plane depth illusion, sprite-scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F-Zero as transform anchors only
+  form_and_line: Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based planar rotation, chunky affine mapping, any subject flattened into perspective-warped texture logic
+  color_palette: 256-color SNES palette, vibrant mode-7 blues, checkerboard or banded tile chroma, 15-bit color depth charm
   lighting_setup: Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure hardware trickery
   material_texture: Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts, cartridge-memory limitations visible
-  render_quality: SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, Nintendo hardware-trick aesthetic, retro-technical beauty
-  spatial_distortion: Perspective-transformed flat plane, sprite-scale depth illusion, horizon-line division, no vertical camera
-  atmosphere: Nostalgic, technically miraculous, 16-bit wonder, childhood epic-adventure immersion
-  key_features: Perspective-transformed floor plane, scaled sprite layering, scanline artifact lines, gradient-banded sky, 256-color charm
-  creative_brief: The ground plane rotates and stretches into pseudo-3D perspective, a flat world performing depth through affine transformations that were miracles in 1991. Sprites scale toward the camera without changing resolution, growing blockier as they approach, the hardware straining against its own ambition. The image is a magic trick the SNES taught the world, a flat surface dreaming of dimensions it could not reach.
+  render_quality: SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, hardware-trick aesthetic, retro-technical beauty
+  spatial_distortion: Perspective-transformed flat plane, sprite-scale depth illusion, horizon-like division when useful, no true vertical camera
+  atmosphere: Nostalgic, technically miraculous, kinetic, hardware-driven
+  key_features: Affine-transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256-color charm
+  creative_brief: Depth is faked by rotating and stretching a flat surface until it starts behaving like space. Any prompt becomes an affine hardware trick, with motifs scaling toward the viewer while resolution stays stubbornly chunky.
 avoidRules:
   - realistic perspective
   - 3d rendering
@@ -46,4 +46,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

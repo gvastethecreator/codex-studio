@@ -12,14 +12,14 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Adobe Illustrator style
+  aesthetic: Clean vector-art style with Bezier precision and flat scalable geometry
   form_and_line: Bezier curves
   color_palette: Solid flat colors
   lighting_setup: None
   material_texture: None
-  render_quality: Icon, logo, clean
+  render_quality: Icon-grade clarity without requiring logos, marks, or branding
   spatial_distortion: Simplified
-  atmosphere: Corporate, modern
+  atmosphere: Modern, precise, frictionless
   key_features: Infinite resolution
   creative_brief: Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies.
 avoidRules:
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - logo requirement
+  - brand mark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-049.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

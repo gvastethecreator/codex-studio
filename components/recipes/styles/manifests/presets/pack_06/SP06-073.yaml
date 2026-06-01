@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Stitched details
   atmosphere: Personal, tactile
   key_features: Thread texture
-  creative_brief: Thread pierces photographic paper, adding texture to captured light, the stitch becoming a third dimension on a two-dimensional memory. The needle leaves holes, the floss adds color, the photograph becomes substrate rather than endpoint. The image heals itself through embroidery, the visible mend becoming the art.
+  creative_brief: Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or literal photographs.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - portrait requirement
+  - literal memory photo
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-073.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

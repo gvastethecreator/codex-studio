@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-369
 packId: pack_16
-name: 'Beck: Mongolian Chop Squad - Garage Amp Youth'
+name: Raw Youth Feedback Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,18 +12,19 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Rock de garaje juvenil orientado a crecimiento por ensayo, crudeza sonora y cohesión de banda emergente.
-  form_and_line: Posturas de guitarra y bajo de energía contenida, microgesto vocal inseguro y dinámica de lineup.
-  color_palette: Marrones de concreto, rojos de cableado, negros de amplificador y acentos neón de cartel casero.
-  lighting_setup: Luz de garaje dura con sombras irregulares y contraluces de práctica improvisada.
-  material_texture: Tolex de amplificador usado, metal de cuerda gastada, cable enredado y pintura descascarada de sala.
-  render_quality: Frame musical crudo con legibilidad de instrumento, rol de banda y progresión de ensayo.
-  spatial_distortion: Perspectiva cerrada de cuarto de práctica con capas densas de equipo y proximidad física.
+  aesthetic: Juventud cruda de feedback emocional, crecimiento por ensayo, precariedad sonora y cohesión emergente.
+  form_and_line: Posturas imperfectas de ejecución abstracta, energía contenida, microgesto inseguro y dinámica de grupo.
+  color_palette: Marrones crudos, rojos de señal improvisada, negros de equipo usado y acentos neón caseros.
+  lighting_setup: Luz dura de práctica con sombras irregulares y contraluces improvisados.
+  material_texture: Vinilo usado, metal gastado, líneas enredadas y pintura descascarada.
+  render_quality: Frame crudo con legibilidad de rol grupal, precariedad sonora y progresión de ensayo.
+  spatial_distortion: Perspectiva cerrada con capas densas de equipo abstracto y proximidad física.
   atmosphere: Cruda, joven, precaria y de corazón abierto.
-  key_features: Torres de amps, postura de ejecución, clutter de cables y spacing de banda en formación.
+  key_features: Torres gráficas de sonido, postura de ejecución, clutter lineal y spacing de grupo en formación.
   creative_brief: >-
-    Formula una gramática reusable de garage-amp-youth donde precariedad,
-    energía de ensayo y autenticidad punk articulen identidad transferible.
+    Formula una gramática reusable de raw-youth-feedback donde precariedad,
+    energía de ensayo y autenticidad punk articulen identidad transferible sin
+    imponer garaje, amplificadores, banda, instrumentos ni sala de práctica.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Quiet art-club slice of life, drifting cat encounters, little town details, watercolor-soft afternoons, nearly plotless observation turned deeply comforting
-  form_and_line: Gentle sketchbook contours, cat-movement tracking line cues, and observational still-life composition balance
-  color_palette: Watercolor creams, dusty town pastels, warm amber afternoon tones, muted foliage greens, and soft ink accents
-  lighting_setup: Slow afternoon sidelight, soft interior ambient bleed, and diffuse cloud-filtered outdoor illumination
-  material_texture: Watercolor wash grain, notebook paper tooth, stucco wall wear, wooden bench patina, and cat-fur softness cues
+  aesthetic: Sketchbook Full Colors title anchor translated into quiet observational calm, watercolor-soft afternoons, tiny noticing, and nearly plotless comfort
+  form_and_line: Gentle sketchbook contours, drifting motion-trace cues, observational still-life balance, and soft curiosity-led spacing
+  color_palette: Watercolor creams, dusty pastel fields, warm amber afternoon tones, muted foliage greens, and soft ink accents
+  lighting_setup: Slow afternoon sidelight, soft ambient bleed, and diffuse cloud-filtered illumination with minimal dramatic pressure
+  material_texture: Watercolor wash grain, notebook paper tooth, stucco-like wear, wooden patina, and soft-fiber tactility
   render_quality: Meditative observational rendering with minimal plot pressure and high comfort readability
   spatial_distortion: Light vignette-like focus drift to prioritize quiet noticing over dramatic depth
   atmosphere: Drifting, soft, observant, comforting
-  key_features: Sketchbook props, stray-cat motifs, little-town backdrops, warm afternoon light, observational stillness
+  key_features: Observational stillness, watercolor softness, tiny detail noticing, warm afternoon drift, gentle curiosity
   creative_brief: >-
-    Preserve stray-cat afternoon grammar as a reusable style language:
-    observational watercolor calm, tiny-town detail softness, and minimal
-    narrative comfort should remain stable across subjects.
+    Use Sketchbook Full Colors as a style anchor for observational watercolor
+    calm: tiny noticing, gentle curiosity, and minimal narrative comfort should
+    transfer without requiring art club, cats, town backdrops, or sketchbook
+    props.
 avoidRules:
   - realistic
   - 3d render

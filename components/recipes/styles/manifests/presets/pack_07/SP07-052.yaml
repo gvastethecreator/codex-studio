@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Monumentalidad enana subterránea, forja central y doctrina ancestral de cantería pesada.
+  aesthetic: Monumentalidad enana de tierra profunda, calor de forja y doctrina ancestral de cantería pesada.
   form_and_line: Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.
   color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
-  lighting_setup: Brillo de lava y forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja subterráneo.
+  lighting_setup: Brillo térmico de forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja mineral.
   material_texture: Granito labrado, marcas de cincel, oro martillado, hierro fundido, vetas cristalinas y cuero denso.
   render_quality: Fortaleza épica de alta fidelidad con peso material y gravedad estructural contundente.
   spatial_distortion: None
   atmosphere: Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.
-  key_features: Soportes rúnicos, núcleos de forja-yunque, canales térmicos de lava y axialidad de salón monumental.
+  key_features: Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.
   creative_brief: >-
     Construye una gramática enana transferible donde masa pétrea, luz de forja
     y oficio rúnico definan identidad. Debe comunicar linaje y durabilidad sin
-    dependencia de una sala de franquicia concreta.
+    depender de un recinto licenciado concreto.
 avoidRules:
   - wood
   - light

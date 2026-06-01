@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-362
 packId: pack_16
-name: Birdie Wing - Rainbow Fairway Duel
+name: Glam Precision Rivalry Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Golf-rivalry de alto riesgo con estilización glam, centrada en precisión de swing y duelo de identidad competitiva.
+  aesthetic: Rivalidad glam de alto riesgo, precisión de gesto, trayectoria imposible y duelo de identidad competitiva.
   form_and_line: Arco de swing elegante, postura de control fino y silueta de rival claramente codificada.
-  color_palette: Verdes de fairway premium, blancos luminosos, acentos cromáticos de rival y cielo de contraste limpio.
-  lighting_setup: Luz abierta de campo con focos dramáticos en tee, impacto y vuelo de bola.
-  material_texture: Césped recortado de alta gama, guante y grip detallados, tejido deportivo de lujo y metal de palo pulido.
-  render_quality: Sports frame de precisión vistosa con legibilidad de línea de tiro y presión de match.
-  spatial_distortion: Profundidad larga de fairway con trazas de bola y compresión selectiva de distancia al green.
+  color_palette: Verdes premium, blancos luminosos, acentos cromáticos de rival y cielo de contraste limpio.
+  lighting_setup: Luz abierta con focos dramáticos en gesto, impacto y trayectoria.
+  material_texture: Superficie recortada de alta gama, grip detallado, tejido deportivo de lujo y metal pulido.
+  render_quality: Sports frame de precisión vistosa con legibilidad de línea de tiro abstracta y presión de match.
+  spatial_distortion: Profundidad larga con trazas de trayectoria y compresión selectiva de distancia al objetivo.
   atmosphere: Lujosa, precisa, lúdica y ferozmente competitiva.
-  key_features: Líneas de fairway, silueta de swing, trazas de tiro y contraste de rivales codificados.
+  key_features: Líneas de trayectoria, silueta de swing abstracto, trazas cromáticas y contraste de rivales codificados.
   creative_brief: >-
-    Construye una gramática reusable de fairway-duel donde precisión de golpe,
-    lectura de trayectoria y teatralidad competitiva sostengan estilo sin
-    encerrar el preset en una escena puntual.
+    Define una gramática reusable de rivalidad glam precisa para cualquier prompt o imagen de entrada:
+    gesto, riesgo y trayectorias cromáticas sin imponer golf, fairway, hoyos, palos ni rivales literales.
 avoidRules:
   - realistic
   - 3d render

@@ -19,9 +19,9 @@ visualDna:
   material_texture: Vector smooth, anti-aliased edge, Flash player crisp
   render_quality: Internet, crude, preload-bar aesthetic, tween-driven motion
   spatial_distortion: Tweening, linear interpolation, shape morph, motion guide
-  atmosphere: Nostalgic, simple, dial-up rebellion, forum culture, sprite humor
-  key_features: Symbol reuse, stick figure, loading screen, play button
-  creative_brief: Shapes sweep across the canvas with the velocity of a dial-up connection finally completing, each tween a small rebellion against expensive production. Lime green and hot pink collide in vector fields where stick figures inherit kingdoms and loading bars double as title cards. It smells like computer lab, sounds like a modem handshake, and feels like freedom.
+  atmosphere: Nostalgic, simple, dial-up rebellion, forum culture
+  key_features: Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges
+  creative_brief: 'Translate the prompt into early web-vector animation: Flash symbols, reusable shapes, hard anti-aliased contours, radial gradient fills, and linear tween motion. Avoid UI controls, loading screens, stick figures, or readable text. The style should feel like compressed 2000s internet motion design: cheap, bright, rebellious, and vector-crisp.'
 avoidRules:
   - textured
   - soft

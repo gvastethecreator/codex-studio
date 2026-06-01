@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, decopunk]
 visualDna:
-  aesthetic: Decopunk finance as aerial circulation, where wealth moves through bridges like a hidden weather system of brass and jade.
-  form_and_line: Stepped towers, chevron brace stacks, arched connectors, ledger-band facades, and suspended vault-threshold frames.
+  aesthetic: Decopunk finance as aerial circulation, where wealth moves like hidden weather made of brass and jade.
+  form_and_line: Stepped tower logic, chevron brace stacks, arched connectors, ledger-band facades, and vault-threshold frames.
   color_palette: Black lacquer, aged brass, deep jade, smoke glass gray, and small currency-green glints.
   lighting_setup: Evening marquee bands, deco uplights, brass edge glow, and jade reflections caught in smoked glass.
   material_texture: Polished stone, gilded trim, smoked glass, lacquer panels, jade inlay, and fingerless vault-door metal.
   render_quality: Luxurious urban concept with strict geometric clarity and readable financial circulation.
-  spatial_distortion: Elevated bridge perspective interlocks atria, towers, and vertical wealth channels into a controlled maze.
+  spatial_distortion: Elevated interlock perspective turns vertical wealth channels into a controlled maze.
   atmosphere: Ambition, secrecy, metropolitan glamour, and elegant predation.
-  key_features: Currency hall thresholds, deco skybridge ribs, turbine lobby forms, vault portals, and chevron transaction lanes.
+  key_features: Currency-threshold motifs, deco rib spans, turbine lobby forms, vault-threshold marks, and chevron transaction lanes.
   creative_brief: >-
     Preserve deco skybridge-exchange grammar as a reusable style system:
     elevated financial circulation, lacquer-and-brass wealth coding, and

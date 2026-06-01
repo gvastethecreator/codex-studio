@@ -12,7 +12,7 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Elastic-adventure shonen style with exaggerated expression physics, optimistic maritime energy, and carnival-scale freedom tone
+  aesthetic: Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and carnival-scale freedom tone
   form_and_line: Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing
   color_palette: Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control
   lighting_setup: Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability
@@ -24,7 +24,7 @@ visualDna:
   creative_brief: >-
     Keep identity anchored in elastic expressive physics and bright exploratory
     momentum; the style should communicate boundless adventure energy without
-    relying on specific pirate or lore motifs.
+    relying on specific faction, ship, sea, or lore motifs.
 avoidRules:
   - realistic
   - 3d render

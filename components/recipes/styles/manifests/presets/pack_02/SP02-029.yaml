@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Food prep
+  aesthetic: Cooking-show appetite lighting
   form_and_line: None
   color_palette: Warm, appetizing, golden crust, fresh herb green, tomato red
   lighting_setup: Bright kitchen, soft overhead, product-key, steam halo
-  material_texture: Macro food, glistening oil, crumb detail, sauce drip
+  material_texture: Glistening surface, steam halo, crumb-like microdetail
   render_quality: Clean, delicious, mouth-watering, magazine-ready
   spatial_distortion: None
   atmosphere: Hungry, happy, cozy instruction, sizzle anticipation
-  key_features: Overhead shot, wooden board, fresh garnish, tasting spoon
-  creative_brief: Close enough to taste the steam rising from a golden crust, the lens worships at the altar of the cutting board. Oil catches light like liquid glass, herbs scatter like green constellations across wooden grain. Hunger is not a feeling here but a visual frequency tuned to the sizzle of transformation.
+  key_features: Overhead demo angle, warm macro texture, steam halo
+  creative_brief: 'Cooking-show style makes any subject appetizing and instructive: bright kitchen-like light, overhead demo angle, warm color, steam halo, gloss, macro texture, and clean magazine-ready polish. Keep food-TV sensory clarity without requiring food, cutting boards, garnish, spoons, or kitchen set.'
 avoidRules:
   - messy
 assets:

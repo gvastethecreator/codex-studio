@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Interview chair
+  aesthetic: Reality TV confessional interview
   form_and_line: None
   color_palette: Saturated, pumped skin tones, jewel accent, matte shadow
-  lighting_setup: Ring light, catchlight halo, soft face wrap
-  material_texture: HD Video, sharp digital, retouched skin
+  lighting_setup: Ring light, catchlight halo, soft frontal wrap
+  material_texture: HD video, sharp digital, retouched surface
   render_quality: Produced, fake, manufactured drama, confessional intimacy
   spatial_distortion: Green screen back, chroma-key spill, composited backdrop
-  atmosphere: Gossip, drama, backstabbing tears, producer manipulation
-  key_features: Eye contact, direct-to-camera, tearful close-up
-  creative_brief: The subject sits alone yet performs for millions, a single tear catching the engineered gleam of the ring light. Behind them, nowhere dissolves into anywhere, a void that becomes whatever the story demands. Intimacy is manufactured here, but the trembling lip never lies.
+  atmosphere: Manufactured drama, direct intimacy
+  key_features: Direct-to-camera framing, ring catchlight, composited backdrop
+  creative_brief: 'Reality TV confessional style makes any subject overproduced and intimate: ring-light halo, saturated skinlike tones, chroma-key spill, direct-to-camera framing, and manufactured emotional closeness. Keep confessional drama without requiring chair, person, tears, or gossip plot.'
 avoidRules:
   - scripted
 assets:

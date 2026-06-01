@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: High-altitude agrarian solarpunk focused on food sovereignty and shared stewardship.
-  form_and_line: Stepped cultivation bands, cooperative work clusters, and gently spiraled circulation paths.
+  aesthetic: High-altitude agrarian solarpunk focused on food sovereignty, shared stewardship, and optimistic stepped abundance.
+  form_and_line: Stepped cultivation-band rhythm, cooperative cluster geometry, and gently spiraled circulation paths as compositional logic.
   color_palette: Canopy leaf green, sun-cream limestone, and clear irrigation blue.
   lighting_setup: Early sun wash with soft atmospheric haze and controlled terrace highlights.
-  material_texture: Laminated timber, hydrated soil beds, translucent greenhouse membranes, and woven shade cloth.
-  render_quality: Production-grade environment concept balancing atmospheric softness with operational readability.
-  spatial_distortion: Ascending terrace perspective that reveals crop zoning, access routes, and communal nodes.
+  material_texture: Laminated timber warmth, hydrated soil texture, translucent membrane glow, and woven shade-cloth tactility.
+  render_quality: Production-grade solarpunk finish balancing atmospheric softness with operational readability.
+  spatial_distortion: Ascending terrace-like perspective that reveals zoning, access rhythm, and cooperative nodes without requiring a farm scene.
   atmosphere: Productive calm, collective pride, and grounded optimism.
-  key_features: Tiered agro-cells, gravity-fed water channels, seedling cooperatives, and shared harvest platforms.
+  key_features: Tiered agro-cell patterning, gravity-fed water logic, seedling-scale repetition, and shared-harvest rhythm.
   creative_brief: >-
     Preserve terraced sky-harvest grammar as a reusable style system: stepped
-    agro-ecology zoning, gravity-fed civic logistics, and cooperative daily
-    stewardship should remain consistent across subjects.
+    agro-ecology zoning, gravity-fed civic logistics, and cooperative
+    stewardship cues should remain consistent across subjects without requiring
+    crops, terraces, workers, or a literal harvest.
 avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
 attributes:
   negativePrompt: photoreal, dystopian, dirty-pollution, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

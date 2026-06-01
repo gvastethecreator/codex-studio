@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-278
 packId: pack_05
-name: Land of the Lustrous - Mineral-Loneliness Combat
+name: Mineral Loneliness Fracture Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Gem-bodied fragility, open coasts, moonlit attackers, philosophical isolation, sharp beauty and bodily fracture in a stripped-down otherworldly ecosystem
+  aesthetic: Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture, stripped-down luminous ecosystem abstraction
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte voids
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void spacing
   atmosphere: Crystalline, lonely, austere, luminous
-  key_features: Gem-body refractions, coastal emptiness, moonlit threat silhouettes, clean open compositions, fracture motifs
-  creative_brief: Crystal bodies shatter into questions neither gem nor flesh can answer, scattered across an open coast that holds no comfort. Moonlight does not illuminate but exposes, revealing every fracture line as a philosophical wound. Loneliness takes material form in a world too beautiful to survive intact.
+  key_features: Mineral refraction, clean emptiness, fracture motifs, luminous isolation, philosophical fragility
+  creative_brief: >
+    Render any subject as beautiful material loneliness: crystalline refraction,
+    clean emptiness, fracture lines, and pale light should communicate fragility
+    without fixed anatomy, shores, aggressors, taxonomy, or action scenes.
 avoidRules:
   - realistic
   - 3d render

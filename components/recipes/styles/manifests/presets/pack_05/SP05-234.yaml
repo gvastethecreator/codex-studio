@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Apocalipsis militar de desgaste total, con trajes tácticos y guerra de aniquilación contra masa aliena impersonal.
-  form_and_line: Silueta de exotraje vectorial, composición de comando en capas y masa enemiga tratada como volumen estadístico.
+  aesthetic: Apocalipsis táctico de desgaste total, con interfaz de aniquilación y amenaza impersonal de masa estadística.
+  form_and_line: Silueta vectorial dura, composición de comando en capas y masa hostil tratada como volumen estadístico.
   color_palette: Acero opaco, rojo de alarma, humo gris, naranja de detonación y verde instrumental de HUD.
-  lighting_setup: Parpadeo de alertas, backlight de incendio urbano y luminancia electrónica de centro de mando.
-  material_texture: Armadura golpeada, concreto fracturado, residuos térmicos y lluvia sobre superficies bélicas.
-  render_quality: Campo de batalla sci-fi con claridad operativa, presión visual alta y escala de colapso civilizatorio.
+  lighting_setup: Parpadeo de alertas, backlight de crisis y luminancia electrónica de mando.
+  material_texture: Superficie golpeada, concreto fracturado, residuos térmicos y lluvia sobre materiales bélicos.
+  render_quality: Sci-fi táctico con claridad operativa, presión visual alta y escala de colapso civilizatorio.
   spatial_distortion: Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo crítico.
   atmosphere: Desesperada, militarizada y sacrificial, de urgencia sostenida.
-  key_features: Tactical suits, overlays de control, enjambre alienígena, ciudad arrasada y salidas de emergencia.
+  key_features: Overlays de control, amenaza masiva, desgaste urbano, alarmas críticas y geometría de evacuación.
   creative_brief: >-
     Formula una gramática extinction-war reusable donde interfaz táctica,
     desgaste urbano y amenaza masiva no antropomórfica definan el estilo con
-    rigor de comando y tragedia operacional.
+    rigor de comando sin exigir traje, ciudad, enemigo o batalla literal.
 avoidRules:
   - realistic
   - 3d render

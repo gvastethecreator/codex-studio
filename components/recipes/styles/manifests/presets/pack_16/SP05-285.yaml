@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-285
 packId: pack_16
-name: Nausicaa - Toxic Jungle Wind Prophecy
+name: Eco-Prophetic Wind Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Epopeya eco-profética postcolapso donde lo tóxico se resignifica como proceso de purificación y reconciliación planetaria.
-  form_and_line: Siluetas aerodinámicas de planeo, curvas orgánicas para megafauna insectoide y trazo firme en capas de viento.
+  aesthetic: Epopeya eco-profética donde lo contaminado se vuelve sagrado, vivo y capaz de reconciliación.
+  form_and_line: Siluetas aerodinámicas, curvas orgánicas, trazo firme y capas de viento que envuelven el motivo sin cambiar su identidad.
   color_palette: Ocres contaminados, turquesas velados, dorados de polvo esporal y azules de cielo quebrado por neblina tóxica.
   lighting_setup: Luz ventosa de alto contraste con rayos filtrados por esporas, generando profundidad y pulso espiritual ambiental.
   material_texture: Superficies bio-minerales, membranas orgánicas iridiscentes, telas de vuelo erosionadas y terreno sedimentado.
   render_quality: Calidad fílmica premium con prioridad en escala ecológica, legibilidad aérea y dramatismo ambiental sostenido.
   spatial_distortion: Horizonte amplio con compresión atmosférica y flujos diagonales que guían la mirada como corrientes de viento.
   atmosphere: Profética, compasiva, eólica, reverente.
-  key_features: Perfil de planeador, ecosistema tóxico vivo, insectos colosales no monstruosos y gestualidad de empatía activa.
-  creative_brief: Define un estilo reusable de mito ecológico donde cualquier sujeto dialogue con un mundo herido mediante viento, esporas luminosas y composición de reconciliación entre humano y biosfera.
+  key_features: Viento visible, esporas luminosas, biología abstracta, escala ecológica y empatía visual frente a materia amenazante.
+  creative_brief: >-
+    Define un estilo reusable de mito ecológico para cualquier prompt o imagen de entrada:
+    viento, partículas vivas y reconciliación planetaria sin imponer junglas tóxicas, planeadores, insectos gigantes ni profecías narrativas.
 avoidRules:
   - realistic
   - 3d render

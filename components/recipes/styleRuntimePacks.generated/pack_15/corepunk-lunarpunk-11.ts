@@ -11,19 +11,20 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo',
     style: {
       aesthetic:
-        'Gentle lunar eco-settlement built around reflective water gardens and low gravity poetics.',
-      form_and_line: 'Crescent terraces, circular hydro pools, and slim arching walkways.',
+        'Gentle lunarpunk ecology made of reflective water, pearl strata, and low-gravity calm.',
+      form_and_line:
+        'Crescent strata, circular hydro rings, slim arching lines, and drifting particle paths.',
       color_palette: 'Pearl white, muted lilac, and moonlit aqua.',
       lighting_setup: 'Soft earthshine and bioluminescent pool rims with minimal harsh contrast.',
       material_texture:
         'Sintered regolith concrete, translucent membranes, and polished ice channels.',
       render_quality: 'Serene high-end concept art with elegant compositional balance.',
-      spatial_distortion:
-        'Layered bowl-topography perspective with drifting low-gravity particles.',
+      spatial_distortion: 'Layered bowl-like depth with drifting low-gravity particles.',
       atmosphere: 'Quiet futurism, contemplative community, and ritual calm.',
-      key_features: 'Lunar gardens, gravity-light bridges, and phase-calendar lantern towers.',
+      key_features:
+        'Moonwater reflections, crescent terrace bands, phase-lantern dots, and aqua biolume rims.',
       creative_brief:
-        'A lunarpunk hamlet where civic life follows tides, phases, and shared stewardship.',
+        'Preserve moonwater terraces grammar as a reusable style language: low-gravity reflective ecology, crescent civic planning, and ritual lunar calm should remain stable across any subject.',
     },
   },
   {
@@ -33,17 +34,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Cooperative moon district focused on artisan fabrication and communal care.',
-      form_and_line: 'Dome clusters, radial market rings, and vertical greenhouse shafts.',
+      aesthetic:
+        'Cooperative lunarpunk craft language focused on care, fabrication, and soft infrastructure.',
+      form_and_line:
+        'Dome clusters, radial commons rings, vertical greenhouse shafts, and hand-built modular seams.',
       color_palette: 'Frost white, pale cyan, and soft coral accents.',
       lighting_setup: 'Diffused dome glow and reflected rimlight from regolith plains.',
       material_texture: 'Crystalline composites, woven habitat textiles, and matte ceramic panels.',
       render_quality: 'Refined concept style with readable social micro-scenes.',
-      spatial_distortion: 'Curved plaza perspective emphasizing communal center gravity.',
+      spatial_distortion: 'Curved communal-center perspective with gentle radial gravity.',
       atmosphere: 'Mutual aid, creative craft, and patient technological optimism.',
-      key_features: 'Shared fab labs, moon bazaar stalls, and low-gravity amphitheater gardens.',
+      key_features:
+        'Woven habitat texture, fab-grid patterning, coral care accents, and crystalline seam highlights.',
       creative_brief:
-        'A lunarpunk commons where scarcity is answered through design and solidarity.',
+        'Preserve selenite commons grammar as a reusable style system: cooperative dome cues, craft-forward mutual-aid infrastructure, and patient moon-district optimism should remain coherent across any subject.',
     },
   },
   {
@@ -53,17 +57,21 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, brutalist-war-base, cyberpunk-chaos, body-horror, watermark, text, logo',
     style: {
-      aesthetic: 'Crater-edge village harmonizing habitat design with tidal energy rituals.',
-      form_and_line: 'Curved retaining walls, rope-suspended paths, and crescent wind collectors.',
+      aesthetic:
+        'Resourceful lunarpunk rhythm built from crater-bowl forms and tidal energy ritual.',
+      form_and_line:
+        'Curved retaining bands, rope-suspended paths, crescent collectors, and looped cistern lines.',
       color_palette: 'Slate gray, moon mint, and warm lantern amber.',
       lighting_setup: 'Long twilight gradients with kinetic lantern arrays tracing paths.',
       material_texture: 'Basalt aggregate, tensile fabric roofs, and translucent algae tubes.',
       render_quality: 'Detailed matte concept with strong environmental storytelling.',
-      spatial_distortion: 'Bowl-crater depth framing clustered dwellings around a central pond.',
+      spatial_distortion:
+        'Bowl-crater depth with clustered circular rhythm and soft horizon compression.',
       atmosphere: 'Resourceful tenderness, lunar rhythm, and communal resilience.',
-      key_features: 'Tidal converters, crater cisterns, and moon festival courtyards.',
+      key_features:
+        'Tidal-converter glyphs, crater cistern rings, amber lantern trails, and algae-tube glow.',
       creative_brief:
-        'A lunarpunk settlement where each home participates in the moon’s energy cycle.',
+        'Preserve tidal crater-hamlet grammar as a reusable style language: crater-bowl communal planning, lunar energy-cycle participation, and resilient tenderness should remain stable across any subject.',
     },
   },
   {
@@ -72,16 +80,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, militarized-base, cyber-grime, watermark, text, logo',
     style: {
-      aesthetic: 'Lunar agriculture district built as concentric habitat rings.',
-      form_and_line: 'Crescent terraces, circular hydro loops, and slim bridges.',
-      color_palette: 'Pearl gray, mint, and pale cyan.',
-      lighting_setup: 'Earthshine ambience and bioluminescent crop strips.',
-      material_texture: 'Regolith concrete, translucent films, and algae tubes.',
-      render_quality: 'Clean high-detail eco-future concept.',
-      spatial_distortion: 'Ring composition pulling eye to central biosphere.',
-      atmosphere: 'Cooperative abundance and gentle futurism.',
-      key_features: 'Hydro rings, seed libraries, and moon compost vaults.',
-      creative_brief: 'A lunarpunk farm city where food systems are visibly communal.',
+      aesthetic:
+        'Abstract lunarpunk bio-orbital style using crescent repetition, closed-loop ecology, and gentle regenerative order.',
+      form_and_line:
+        'Crescent bands, circular hydro loops, filament connectors, seed-like nodes, and soft orbital contour lines.',
+      color_palette:
+        'Pearl regolith gray, mint chlorophyll, pale cyan water, moon-white film, and seed-library amber.',
+      lighting_setup:
+        'Earthshine ambience, bioluminescent strip accents, cool membrane glow, and small amber maintenance points.',
+      material_texture:
+        'Powdery regolith finish, translucent film layers, algae-tube gloss, damp organic softness, and matte composite edges.',
+      render_quality:
+        'Clean high-detail eco-future render with readable closed-loop systems and soft lunar restraint.',
+      spatial_distortion:
+        'Ring and crescent composition spirals attention through cycles rather than fixed scenery.',
+      atmosphere: 'Cooperative abundance, gentle futurism, closed-loop patience, and lunar care.',
+      key_features:
+        'Crescent crop-like bands, mint-cyan bio loops, seed-node motifs, translucent membranes, and orbital composition flow.',
+      creative_brief:
+        'Apply crescent agro-rings as an abstract style treatment: transform any subject through lunar bio-cycles, crescent geometry, algae-light accents, and regenerative closed-loop softness.',
     },
   },
   {
@@ -90,16 +107,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, cyberpunk-noise, military-tech, watermark, text, logo',
     style: {
-      aesthetic: 'Quiet lunar knowledge district with vertical archival spires.',
-      form_and_line: 'Slender towers, radial reading courts, and bridge lattices.',
-      color_palette: 'Soft lilac, ivory, and slate.',
-      lighting_setup: 'Low lumen interiors and skylight moonwash.',
-      material_texture: 'Ceramic composites, fabric baffles, and glass lamina.',
-      render_quality: 'Elegant concept art with contemplative spacing.',
-      spatial_distortion: 'Upward composition emphasizing stacked archives.',
-      atmosphere: 'Reflection, study, and collective memory.',
-      key_features: 'Archive spires, moon codex halls, and silent atriums.',
-      creative_brief: 'A lunarpunk library where civic memory is treated as infrastructure.',
+      aesthetic:
+        'Abstract moonshade archive style with vertical hush, low-lumen knowledge, and acoustically softened geometry.',
+      form_and_line:
+        'Slender vertical stacks, radial quiet zones, bridge-like lattices, codex-slot ribs, and reed-thin silhouettes.',
+      color_palette:
+        'Soft lilac, ivory ceramic, slate shadow, moonwash blue, and pale bookmark gold.',
+      lighting_setup:
+        'Low-lumen pools, skylight moonwash, faint lamina glow, and restrained edge highlights.',
+      material_texture:
+        'Ceramic composite matte, fabric acoustic softness, layered glass lamina, powder-coated rail detail, and page-like panels.',
+      render_quality:
+        'Elegant contemplative render with spacious negative areas, vertical structure, and clear silence cues.',
+      spatial_distortion:
+        'Upward composition and stacked transparency create a quiet sense of stored memory.',
+      atmosphere: 'Reflection, study, collective memory, and acoustic hush.',
+      key_features:
+        'Vertical archive rhythm, lilac moonwash, fabric-baffle softness, glass-lamina layering, and pale bookmark accents.',
+      creative_brief:
+        'Apply moonshade library-spires as an abstract style treatment: make any image feel hushed, vertical, indexed, moonlit, and protected from noise.',
     },
   },
   {
@@ -108,16 +134,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, dystopian-chaos, cyber-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Multi-level transit exchange built into a crater basin.',
-      form_and_line: 'Circular platforms, rope elevators, and glide lanes.',
-      color_palette: 'Moon gray, aqua, and amber accents.',
-      lighting_setup: 'Path beacons and reflected basin light.',
-      material_texture: 'Composite decking, tension cables, and dust-treated glass.',
-      render_quality: 'Functional worldbuilding concept with motion clarity.',
-      spatial_distortion: 'Bowl-shaped depth around central interchange.',
-      atmosphere: 'Calm mobility and civic coordination.',
-      key_features: 'Shuttle docks, low-g lifts, and basin concourses.',
-      creative_brief: 'A lunarpunk node where mobility is designed for accessibility and rhythm.',
+      aesthetic:
+        'Abstract low-gravity mobility style with basin depth, soft circular routing, and amber civic wayfinding.',
+      form_and_line:
+        'Circular platform bands, rope-tension drops, glide-lane ribbons, basin arcs, and crescent docking-like lips.',
+      color_palette: 'Moon gray, basin aqua, lantern amber, dust white, and low-g signal blue.',
+      lighting_setup:
+        'Path beacons, reflected basin light, amber node glows, and soft under-surface illumination.',
+      material_texture:
+        'Composite deck finish, tension cable lines, dust-treated glass, flexible grip surfaces, and powder-soft edges.',
+      render_quality:
+        'Functional clean render with calm motion clarity and low-gravity accessibility cues.',
+      spatial_distortion:
+        'Bowl-depth composition wraps movement around a center without forcing a specific transit scene.',
+      atmosphere: 'Calm mobility, civic coordination, low-gravity patience, and shared timing.',
+      key_features:
+        'Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.',
+      creative_brief:
+        'Apply tidal crater transit-hub as an abstract style treatment: guide any subject with bowl geometry, low-gravity curves, rope tension, and soft amber movement cues.',
     },
   },
   {
@@ -126,16 +160,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, sterile-corporate, cyber-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Cooperative maker quarter focused on lunar craft and repair culture.',
-      form_and_line: 'Modular workshops, open courts, and hanging service rails.',
-      color_palette: 'Chalk white, mint green, and warm copper.',
-      lighting_setup: 'Workshop strip lights and soft skylight bleed.',
-      material_texture: 'Printed ceramics, woven insulation, and polished metals.',
-      render_quality: 'Detailed artisanal future concept.',
-      spatial_distortion: 'Dense block composition with visible micro-scenes.',
-      atmosphere: 'Hands-on solidarity and practical creativity.',
-      key_features: 'Open fab benches, repair kiosks, and shared tool depots.',
-      creative_brief: 'A lunarpunk district where repair is celebrated as civic art.',
+      aesthetic:
+        'Abstract lunar maker style with visible repair logic, modular patchwork, warm copper accents, and cooperative hand-built texture.',
+      form_and_line:
+        'Modular bay grids, open-court spacing, hanging rail lines, tool-loop arcs, and patchwork panel rhythms.',
+      color_palette:
+        'Chalk white, mint green, warm copper, regolith beige, and small safety-orange tags.',
+      lighting_setup:
+        'Workshop strip light, pale skylight bleed, copper task glow, and small diagnostic highlights.',
+      material_texture:
+        'Printed ceramic grain, woven insulation, polished repair metal, patched membrane softness, and powdery edge wear.',
+      render_quality:
+        'Detailed artisanal future render with readable hand-built construction and no sterile corporate polish.',
+      spatial_distortion:
+        'Dense layered composition creates many small repair/readymade moments without requiring a specific workshop scene.',
+      atmosphere:
+        'Hands-on solidarity, practical creativity, repair pride, and lunar neighborhood warmth.',
+      key_features:
+        'Patchwork modules, copper task-light accents, tool-loop motifs, woven insulation textures, and mint-white maker graphics.',
+      creative_brief:
+        'Apply selenite artisan-block as an abstract style treatment: make any subject feel patched, repaired, shared, ceramic, copper-lit, and hand-built.',
     },
   },
   {
@@ -144,16 +188,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo',
     style: {
-      aesthetic: 'Civic balcony ring where residents gather for shared earthrise rituals.',
-      form_and_line: 'Arc balconies, tiered seats, and radial amphitheater geometry.',
-      color_palette: 'Indigo, pearl, and soft gold.',
-      lighting_setup: 'Earthrise rimlight and low lantern arrays.',
-      material_texture: 'Smooth stone composites, textile banners, and glass railings.',
-      render_quality: 'Poetic architectural concept with high emotional clarity.',
-      spatial_distortion: 'Panoramic arc framing cosmic horizon.',
-      atmosphere: 'Reverence, community, and perspective.',
-      key_features: 'Earthrise seats, story circles, and phase lanterns.',
-      creative_brief: 'A lunarpunk plaza where cosmology is a daily social practice.',
+      aesthetic:
+        'Abstract earthrise perspective style with shared horizon framing, reverent rimlight, and communal scale humility.',
+      form_and_line:
+        'Wide arc bands, tiered seating-like contours, radial amphitheater curves, phase-lantern dots, and horizon-framing rails.',
+      color_palette:
+        'Deep indigo, pearl white, soft gold, earthrise blue, and textile shadow violet.',
+      lighting_setup:
+        'Earthrise-like rimlight, low lantern arrays, horizon glow, and soft gold along transparent edges.',
+      material_texture:
+        'Smooth stone composite, textile softness, glass rail sheen, woven surface detail, and polished lantern shells.',
+      render_quality:
+        'Poetic render with emotional clarity, clean horizon discipline, and precise communal sightline design.',
+      spatial_distortion:
+        'Panoramic arc framing creates shared perspective and smallness without prescribing a balcony scene.',
+      atmosphere: 'Reverence, community, humility, and planetary perspective.',
+      key_features:
+        'Horizon arcs, earthrise blue rimlight, phase-lantern dots, textile-shadow warmth, and pearl-gold communal framing.',
+      creative_brief:
+        'Apply earthrise commons-balcony as an abstract style treatment: make any subject feel gathered, humbled, rimlit, and oriented toward a shared horizon.',
     },
   },
   {
@@ -162,16 +215,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, horror, cyber-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Acoustic sanctuary using crater resonance for communal rites.',
-      form_and_line: 'Concentric steps, sound fins, and suspended choir bridges.',
-      color_palette: 'Pale lavender, silver, and charcoal.',
-      lighting_setup: 'Gentle uplight and reflected crater glow.',
-      material_texture: 'Resonant ceramics, tension wires, and moon dust patina.',
-      render_quality: 'Atmospheric concept focused on sonic architecture.',
-      spatial_distortion: 'Spiral descent into resonant core.',
-      atmosphere: 'Serenity, resonance, and ritual repair.',
-      key_features: 'Echo dishes, choir platforms, and tone altars.',
-      creative_brief: 'A lunarpunk temple where healing is achieved through shared sound.',
+      aesthetic:
+        'Abstract resonant lunarpunk style where silence, sound waves, and pale ritual geometry soften the image.',
+      form_and_line:
+        'Concentric rings, sound-fin blades, suspended linework, echo-dish curves, and spiral tone paths.',
+      color_palette:
+        'Pale lavender, brushed silver, charcoal dust, moonlit white, and faint harmonic blue.',
+      lighting_setup:
+        'Gentle uplight, reflected lunar glow, thin edge lights, and soft highlights on ceramic resonant forms.',
+      material_texture:
+        'Resonant ceramic matte, tension-wire gleam, moon-dust patina, felt acoustic softness, and polished tone-stone surfaces.',
+      render_quality:
+        'Atmospheric render focused on visible acoustic form, quiet spacing, and ritual calm.',
+      spatial_distortion:
+        'Spiral descent and concentric rhythm make depth feel audible and softened.',
+      atmosphere: 'Serenity, resonance, ritual repair, and communal breath.',
+      key_features:
+        'Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.',
+      creative_brief:
+        'Apply crater choir-sanctuary as an abstract style treatment: make any subject feel tuned, suspended, echoed, and ritually softened by visible sound geometry.',
     },
   },
   {
@@ -180,16 +242,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, dystopian-lab, cyber-grime, watermark, text, logo',
     style: {
-      aesthetic: 'Health district integrating hydrotherapy, biolab care, and community governance.',
-      form_and_line: 'Arcaded clinics, basin courtyards, and modular healing pods.',
-      color_palette: 'Aqua, white, and rose beige.',
-      lighting_setup: 'Diffused health lighting and reflective water highlights.',
-      material_texture: 'Sterile ceramics, algae glass, and soft textiles.',
-      render_quality: 'Human-centered concept with clear service zoning.',
-      spatial_distortion: 'Courtyard-centric plan with layered treatment wings.',
-      atmosphere: 'Care, trust, and shared resilience.',
-      key_features: 'Moonwater basins, med pods, and public health kiosks.',
-      creative_brief: 'A lunarpunk clinic where medicine is embedded in daily public space.',
+      aesthetic:
+        'Abstract moonwater care style with transparent softness, public-health clarity, and calm hydrothermic trust.',
+      form_and_line:
+        'Arcade-like ribs, basin curves, pod ovals, kiosk-like rectangles, and water-channel thresholds.',
+      color_palette:
+        'Moonwater aqua, clinic white, rose beige, algae-glass green, and soft textile gray.',
+      lighting_setup:
+        'Diffused health light, reflective water highlights, gentle status glows, and calm wayfinding beacons.',
+      material_texture:
+        'Sterile ceramic matte, algae-glass transparency, soft textile panels, non-slip stone texture, and privacy membrane haze.',
+      render_quality:
+        'Human-centered clean render with clear service zoning, approachable surfaces, and civic transparency.',
+      spatial_distortion:
+        'Courtyard-like layering around water channels makes care access visible without forcing a clinic scene.',
+      atmosphere: 'Care, trust, shared resilience, public dignity, and clean lunar humidity.',
+      key_features:
+        'Aqua basin curves, pod ovals, transparent green partitions, rose-beige softness, and public-care wayfinding.',
+      creative_brief:
+        'Apply moonwater clinic-arcade as an abstract style treatment: make any subject feel cared for, transparent, water-cooled, softly clinical, and publicly trustworthy.',
     },
   },
   {
@@ -198,16 +269,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, cyberpunk-nightclub, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Temporary market unfolding only during lunar eclipses.',
-      form_and_line: 'Folding canopy petals, circular stalls, and signal masts.',
-      color_palette: 'Plum, cyan, and pearl gray.',
-      lighting_setup: 'Eclipse halo and lantern webbing.',
-      material_texture: 'Flexible membranes, modular carts, and polished composite floors.',
-      render_quality: 'Event-driven concept with vivid scene choreography.',
-      spatial_distortion: 'Radial market geometry around eclipse beacon.',
-      atmosphere: 'Celebration, mystery, and timed scarcity.',
-      key_features: 'Eclipse stalls, phase clocks, and barter domes.',
-      creative_brief: 'A lunarpunk bazaar where commerce follows celestial timing.',
+      aesthetic:
+        'Abstract eclipse-market style where temporary forms bloom, fold, and glow only under rare timed shadow.',
+      form_and_line:
+        'Folding petal geometry, circular pod shapes, signal mast lines, phase-clock rings, and radial exchange lanes.',
+      color_palette: 'Eclipse plum, charged cyan, pearl gray, lantern amber, and shadow violet.',
+      lighting_setup:
+        'Eclipse halo, lantern webbing, cyan edge lights, and timed beacon pulses around dark centers.',
+      material_texture:
+        'Flexible membrane sheen, modular composite surfaces, folded fabric seams, polished floors, and powdery lunar dust marks.',
+      render_quality:
+        'Event-driven render with vivid choreography, readable temporary assembly, and strong phase symbolism.',
+      spatial_distortion:
+        'Radial composition opens like timed petals around a shadowed celestial center.',
+      atmosphere: 'Celebration, mystery, timed scarcity, and communal anticipation.',
+      key_features:
+        'Folding canopy petals, phase-clock motifs, cyan-lantern webs, plum shadow centers, and radial temporary geometry.',
+      creative_brief:
+        'Apply eclipse market-canopy as an abstract style treatment: make any subject feel temporary, phase-timed, petal-folded, lantern-lit, and alive under rare shadow.',
     },
   },
   {
@@ -216,16 +295,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, dystopian-medlab, cyber-grit, watermark, text, logo',
     style: {
-      aesthetic: 'Public bath network using mineral filtration and thermal loops.',
-      form_and_line: 'Basin terraces, filter towers, and curved walk ramps.',
+      aesthetic:
+        'Mineral lunarpunk wellness language using silver filtration, thermal loops, and soft communal calm.',
+      form_and_line:
+        'Basin-like terraces, filter-column silhouettes, curved ramp bands, and pearl regolith contours.',
       color_palette: 'Silver, mint, and warm sand.',
       lighting_setup: 'Steam diffusion and low ambient strips.',
       material_texture: 'Mineral stone, matte ceramics, and woven privacy screens.',
       render_quality: 'Spa-infrastructure concept with strong material clarity.',
-      spatial_distortion: 'Cascading basin sequence to central thermal core.',
+      spatial_distortion:
+        'Cascading sequence toward a soft thermal core without requiring a bath facility.',
       atmosphere: 'Restoration and social calm.',
-      key_features: 'Thermal baths, filter columns, and communal changing arcs.',
-      creative_brief: 'A lunarpunk wellness district where hygiene is civic ritual.',
+      key_features:
+        'Silver thermal rings, filter columns, regolith mineral shimmer, and communal arc motifs.',
+      creative_brief:
+        'Preserve silver regolith-baths grammar as a reusable style system: cascading thermal infrastructure, mineral-filtration social wellness, and restorative civic calm should remain coherent across subjects.',
     },
   },
   {
@@ -234,16 +318,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, military-bunker, cyberpunk-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Redundant seed archive tethered between lunar and orbital habitats.',
-      form_and_line: 'Vault cylinders, transfer bridges, and secure ring corridors.',
+      aesthetic:
+        'Lunarpunk preservation language where seeds, redundancy, and orbital care become sacred logistics.',
+      form_and_line:
+        'Vault-cylinder echoes, transfer-ring arcs, secure corridor bands, and seed-grid capsules.',
       color_palette: 'Frost white, olive green, and graphite.',
       lighting_setup: 'Controlled vault glow and transit beacon strips.',
       material_texture: 'Cryo casings, metal ribs, and insulated polymer shells.',
       render_quality: 'Precision infrastructure concept with ecological emphasis.',
-      spatial_distortion: 'Linear vault depth crossing into docking lock.',
+      spatial_distortion:
+        'Linear protected depth crossing through rings, locks, and capsule repeats.',
       atmosphere: 'Stewardship, caution, and long-term planning.',
-      key_features: 'Seed chambers, cryo lifts, and biosecurity checkpoints.',
-      creative_brief: 'A lunarpunk archive securing biodiversity as a shared future asset.',
+      key_features:
+        'Seed capsule grids, cryo-ring glow, biosecurity seals, and lunar archive hush.',
+      creative_brief:
+        'Preserve orbital seed-vault annex grammar as a reusable style system: redundant biodiversity stewardship, cryogenic continuity logistics, and long-horizon ecological caution should remain coherent across subjects.',
     },
   },
   {
@@ -252,16 +341,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, dystopian-surveillance, cyber-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Civic timing tower synchronizing services with lunar phase cycles.',
-      form_and_line: 'Vertical clock fins, ring balconies, and signal arrays.',
+      aesthetic: 'Civic lunarpunk timing language synchronized to lunar phase cycles.',
+      form_and_line:
+        'Vertical clock fins, ring halos, phase-array marks, and signal mast geometry.',
       color_palette: 'Moon blue, white, and brass accents.',
       lighting_setup: 'Time-signal pulses and nighttime perimeter glow.',
       material_texture: 'Ceramic cladding, brushed alloy, and glass panels.',
       render_quality: 'Iconic city landmark concept with clean readability.',
-      spatial_distortion: 'Upward city composition around central tower axis.',
+      spatial_distortion: 'Upward axial composition around phase-clock geometry.',
       atmosphere: 'Order, trust, and rhythmic public life.',
-      key_features: 'Phase beacon, civic clocks, and scheduling terraces.',
-      creative_brief: 'A lunarpunk beacon that turns celestial rhythm into social infrastructure.',
+      key_features:
+        'Phase beacons, civic clock rings, scheduling terraces as abstract bands, and lunar signal arrays.',
+      creative_brief:
+        'Preserve phasewatch civic-tower grammar as a reusable style system: lunar-cycle synchronization architecture, trusted public timing signals, and rhythmic civic order should remain coherent across subjects.',
     },
   },
   {
@@ -270,17 +362,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '11. Corepunk — Lunarpunk',
     negativePrompt: 'photoreal, militarized-weapons, cyber-grunge, watermark, text, logo',
     style: {
-      aesthetic: 'Low-noise propulsion nursery where next-gen engines are grown and tested.',
-      form_and_line: 'Engine cradles, circular test pits, and acoustic shell walls.',
+      aesthetic:
+        'Low-noise propulsion nursery where engines feel grown, protected, and carefully tuned.',
+      form_and_line:
+        'Engine-cradle curves, circular test rings, acoustic shell walls, and quiet thrust petals.',
       color_palette: 'Cool gray, teal, and soft amber.',
       lighting_setup: 'Controlled lab light and subtle status halos.',
       material_texture: 'Acoustic ceramics, test composites, and insulated paneling.',
       render_quality: 'Advanced R&D concept with serene technical tone.',
-      spatial_distortion: 'Nested lab rings converging on a central test core.',
+      spatial_distortion: 'Nested calibration rings converging on a quiet test core.',
       atmosphere: 'Precision, care, and optimistic experimentation.',
-      key_features: 'Quiet engine pods, calibration decks, and communal design bays.',
+      key_features:
+        'Quiet engine pods, calibration rings, acoustic shell ribs, and communal design markings.',
       creative_brief:
-        'A lunarpunk lab where propulsion progress is measured by harmony, not noise.',
+        'Preserve cradle of quiet-engines grammar as a reusable style system: low-noise propulsion experimentation, nested acoustic lab geometry, and care-centered technical optimism should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

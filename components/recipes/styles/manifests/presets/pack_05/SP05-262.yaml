@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-262
 packId: pack_05
-name: Monster - Hospital Corridor Suspicion
+name: Moral Suspicion Realism Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: European hospital realism, moral dread, quiet pursuit of a smiling void, small details loaded with danger, adult faces and sterile rooms carrying unbearable tension
+  aesthetic: Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion carried by ordinary surfaces
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained skin-tone warmth, cold wall texture
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle moral compression
   atmosphere: Paranoid, humane, cold, intelligent
-  key_features: Hospital corridors, realistic adult expressions, quiet pursuit framing, European interiors, suspicion in stillness
-  creative_brief: A hospital corridor stretches into moral abyss, the monster wearing a human smile and leaving no fingerprints on the sterile walls he passes. Small details carry unbearable weight in this European quiet, where the greatest horror is not a creature hiding under the bed but a man standing in plain daylight, empty-eyed and unknowable.
+  key_features: Suspicion in stillness, sterile quiet, adult-anime restraint, small-detail menace, cold humane realism
+  creative_brief: >
+    Give any prompt a quiet moral-thriller treatment where ordinary details feel
+    dangerous. Use sterile matte light, restrained expressions, weighted negative
+    space, and realistic tension while avoiding fixed institutions, locations,
+    named roles, or pursuit-story structure.
 avoidRules:
   - realistic
   - 3d render

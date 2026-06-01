@@ -8,10 +8,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rumiko Takahashi - Elastic Rom-Com Combat',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static poses, heavy cinematic blur',
     style: {
       aesthetic:
-        'Cheerful romantic-comedy combat with instantly readable silhouettes, slapstick martial chaos, lovable chaos of affection and argument rendered with buoyant cartoon clarity',
+        'Cheerful romantic-comedy elasticity with instantly readable silhouettes, slapstick chaos, affection-argument rhythm, and buoyant cartoon clarity',
       form_and_line:
         'Clean efficient contour, lively expression marks, simple comedic exaggeration',
       color_palette: 'Candy red, sky blue, warm peach, clean black, sunny yellow, pond green',
@@ -19,14 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Flat cel paint feel, clean paper grain, hair-shine pops, simple clothing folds',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Clean retro rom-com action rendering with readable slapstick timing and buoyant character-comedy impact',
       spatial_distortion:
-        'Elastic slapstick body movement, giant reaction heads, instant pose readability',
+        'Elastic slapstick deformation, giant reaction-scale shifts, and instant pose readability',
       atmosphere: 'Playful, combative, charming, lively',
       key_features:
-        'Comic motion smears, expressive yelling faces, slapstick object hits, readable silhouette humor, flirt-fight energy',
+        'Comic motion smears, expressive reaction faces, slapstick impact beats, readable silhouette humor, flirt-fight energy',
       creative_brief:
-        'Fists fly through the kitchen while romance ricochets off the ceiling in the same breath that declares eternal love and eternal war. Silhouettes stretch into comedic enormity and snap back with the precision of a well-placed punchline. Here, the heart and the fist share a single pulse, and both arrive on time.',
+        'Use Rumiko Takahashi title as style anchor for elastic rom-com chaos: clear silhouette slapstick, flirt-fight timing, and bright cartoon energy should transfer without requiring martial combat, object hits, couple argument, or specific character acting.',
     },
   },
   {
@@ -34,27 +34,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Naoko Takeuchi - Moon-Prism Glamour Frame',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting',
     style: {
       aesthetic:
-        'Shimmering magical-girl glamour with fashion-magazine grace, moon-prism romance, jeweled poses, diary-heart tenderness and celestial femininity',
+        'Shimmering moon-prism glamour with fashion-magazine grace, diary-heart tenderness, celestial romance, and polished transformation energy',
       form_and_line:
-        'Clean beauty-line contours, glossy eyelash emphasis, accessory-forward inking',
+        'Clean beauty-line contours, glossy eyelash emphasis, accessory-like inking, and ribbon-sweep composition',
       color_palette:
         'Blush pink, moon white, navy velvet, gold sparkle, peach pearl, lavender gleam',
       lighting_setup:
         'Soft star-filter bloom, moonlit key light, cosmetic glow with sparkle flares',
       material_texture:
-        'Glossy lips, satin ribbons, enamel brooch detail, pearl-shine skin highlights',
+        'Glossy cosmetic highlights, satin ribbon sheen, enamel-like ornament detail, and pearl-shine glow',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Romantic magical-girl rendering with polished fashion-beauty framing and sparkle-disciplined clarity',
       spatial_distortion:
-        'Waist-length hair arcs, elongated eyes, floating ribbons, graceful transformation posture',
+        'Long flowing arcs, elongated eye-like focal shapes, floating ribbons, and graceful transformation posture cues',
       atmosphere: 'Romantic, sparkling, feminine, dreamy',
       key_features:
-        'Moon motifs, gem brooches, fashion poses, ribbon motion, starry romance framing',
+        'Moon motifs, gem-like emblems, fashion-pose rhythm, ribbon motion, starry romance framing',
       creative_brief:
-        'Moonlight crystallizes into jewelry as a transformation sequence pauses at the height of its arc, every ribbon frozen in the moment before falling. Sparkle is not decoration but language, a glittering grammar of hope spoken through brooches and bows. Tenderness becomes iridescent, catching light and throwing it back as promise.',
+        'Use Naoko Takeuchi title as style anchor for moon-prism glamour: transformation-fashion elegance, ribbon sparkle, emblem light, and tender celestial romance should transfer without requiring magical girls, brooches, pose callouts, or fixed moon iconography.',
     },
   },
   {
@@ -65,23 +65,24 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Hyper-finished modern hero illustration, chrome musculature, destructive perspective, city-cleaving punch clarity, lavish draftsmanship aimed at maximum spectacle',
-      form_and_line: 'Precision contour, anatomy-rich detailing, ultra-clean action line control',
+        'Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y energía de impacto coreografiada con precisión quirúrgica.',
+      form_and_line:
+        'Contorno de precisión absoluta, detalle anatómico denso y control ultralimpio de líneas de acción.',
       color_palette:
         'Steel grey, explosion orange, hero red, electric cyan, soot black, flash white',
       lighting_setup:
-        'HDR impact lighting, specular hero sheen, explosion backlight, debris-lit action',
+        'Iluminación HDR de impacto, sheen especular heroico, contraluz explosivo y relleno por partículas incandescentes.',
       material_texture:
-        'Polished metal and skin finish, debris granularity, smoke plumes, high-detail rubble',
+        'Acabado pulido en piel/metal, granulado de debris, columnas de humo y microdetalle de fractura.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Action frame premium con claridad de lectura cinética y acabado editorial de alto brillo.',
       spatial_distortion:
-        'Extreme foreshortening, fist-to-camera compression, spectacle-first city scale, perfect action readability',
-      atmosphere: 'Polished, explosive, metallic, triumphant',
+        'Extreme foreshortening, focal compression, spectacle-first scale, and perfect action readability',
+      atmosphere: 'Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.',
       key_features:
-        'Chrome-like anatomy finish, giant impact craters, city-shatter perspective, lavish detail density, poster-hero posing',
+        'Anatomía chrome-like, fracturas de impacto, perspectiva spectacle-shatter y posing de póster heroico.',
       creative_brief:
-        'Perfection weaponized. Every muscle rendered, every impact crater mapped, the body becomes a chrome-plated argument for maximum spectacle. Nothing is left to chance, nothing is left unpolished.',
+        'Construye una gramática hero-impact reusable donde acabado hiperdefinido, foreshortening extremo y fractura de escala legible establezcan espectáculo sin exigir ciudad, cráter, héroe concreto o golpe a cámara.',
     },
   },
   {
@@ -92,24 +93,24 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Raw production-board intensity, monochrome urgency, missiles and tears, technical notes hiding beneath emotional catastrophe, anxious linework driving apocalyptic planning',
+        'Urgencia de storyboard en crudo, monocromo ansioso y catástrofe emocional codificada en anotaciones de producción.',
       form_and_line:
-        'Raw pencil contour, notation-heavy marks, urgent hatch emphasis, production-sketch looseness',
+        'Contorno de lápiz nervioso, marcas técnicas densas, hatch urgente y soltura de boceto operacional.',
       color_palette:
         'Pencil grey, warning red, photocopy black, paper white, rust sepia, alarm orange',
       lighting_setup:
-        'Harsh conceptual spotlighting, emergency-red accent bursts, no-finish production glare',
+        'Spotlight conceptual duro, estallidos rojo-alarma y glare de material no finalizado.',
       material_texture:
-        'Pencil smudge, copier grain, paper crease, marker annotation bleed, erased construction lines',
+        'Smudge de grafito, grano de fotocopia, pliegues de papel, bleed de marcador y líneas borradas de construcción.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Sketch-frame de emergencia con lectura táctica alta y energía preproducción apocalíptica.',
       spatial_distortion:
-        'Storyboard panel shifts, missile-angle perspective, rough dramatic framing, note-margin compression',
-      atmosphere: 'Urgent, anxious, skeletal, apocalyptic',
+        'Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin compression',
+      atmosphere: 'Urgente, ansiosa y esquelética, al borde de colapso planificado.',
       key_features:
-        'Storyboard panels, emergency arrows, technical notations, monochrome anxiety, explosive conceptual framing',
+        'Paneles de storyboard, flechas de emergencia, notación técnica, ansiedad monocroma y framing explosivo.',
       creative_brief:
-        'The apocalypse begins as a scribble in the margin. Pencil lines tremble with urgency, notations bleed through the page, and the end of the world is drafted between production meetings. Intention precedes finish.',
+        'Define una gramática emergency-board reusable donde trazo incompleto, anotación visible y tensión de preproducción se conviertan en identidad sin exigir misil, desastre, mecha, cabina o panel narrativo específico.',
     },
   },
   {
@@ -117,26 +118,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Naoki Urasawa - Adult Suspense Close-Up',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render',
     style: {
       aesthetic:
-        'Grounded mature faces, urban suspense, tiny emotional shifts under huge moral pressure, procedural detail and old fears quietly filling the frame',
-      form_and_line: 'Measured contour, realistic feature detail, restrained expression marks',
+        'Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el encuadre.',
+      form_and_line:
+        'Contorno medido, detalle facial naturalista y marcas expresivas mínimas de alta intención dramática.',
       color_palette:
         'Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent',
       lighting_setup:
-        'Fluorescent office realism, rainy-day window light, interrogation-level practical shadows',
+        'Fluorescencia práctica, luz lluviosa y sombras tipo interrogatorio en baja saturación.',
       material_texture:
-        'Suit fabric, office paper, cigarette smoke haze, rain-specked glass, lived-in walls',
+        'Tejido sobrio, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Dramaturgia de close-up sobrio con legibilidad psicológica y tensión procedural sostenida.',
       spatial_distortion:
-        'Natural adult proportions, camera-close tension framing, realistic perspective, stillness-driven composition',
-      atmosphere: 'Tense, grounded, adult, humane',
+        'Natural adult proportions, camera-close tension framing, realistic perspective, and stillness-driven composition',
+      atmosphere: 'Tensa, humana y terrenal, con inquietud ética persistente.',
       key_features:
-        'Adult facial subtlety, urban procedural backdrops, moral-pressure close-ups, grounded body language, suspense in stillness',
+        'Sutileza facial adulta, fondos procedurales, close-ups bajo presión y suspense por casi inmovilidad.',
       creative_brief:
-        'A face can flinch louder than a gunshot. Suspense lives in the micro-movement, the unspoken, the fluorescent hum of a room where someone has stopped lying. Adulthood is the pressure you cannot see.',
+        'Construye una gramática reusable de adult-suspense donde conflicto viva en microgesto, espacio cotidiano y carga moral implícita, sin exigir oficina, expediente, humo, ciudad, detective o close-up humano.',
     },
   },
   {
@@ -144,27 +146,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Satoshi Kon - Mirror Hallway Reality Slip',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism',
     style: {
       aesthetic:
-        'Modern realism destabilized by performance and memory, mirrors and media screens leaking into one another, polished adult surfaces hiding identity fractures',
+        'Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos, pantallas y cortes perceptivos.',
       form_and_line:
-        'Refined realistic contour, performance-ready facial detail, subtle disorientation in framing lines',
+        'Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.',
       color_palette:
-        'Cool steel, skin peach, screen blue, lipstick crimson, hallway beige, shadow plum',
+        'Cool steel, skin peach, screen blue, lipstick crimson, neutral beige, shadow plum',
       lighting_setup:
-        'Reflective practical lighting, TV-screen spill, dressing-room spotlights, polished suspense shadows',
+        'Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de superficie limpia.',
       material_texture:
-        'Glass reflections, makeup sheen, hallway varnish, media-screen scan glow, urban polish',
+        'Reflejos en vidrio, brillo cosmético, barniz pulido y glow de escaneo electrónico.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas perceptivas.',
       spatial_distortion:
-        'Reality-slip match cuts, reflection-depth confusion, poised adult anatomy, cinematic frame logic with subtle breakage',
-      atmosphere: 'Unsettling, polished, psychological, cinematic',
+        'Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic frame logic with subtle breakage',
+      atmosphere: 'Inquietante y sofisticada, de tensión mental bajo control aparente.',
       key_features:
-        'Mirrors, media screens, adult urban spaces, reality-slip transitions, polished suspense framing',
+        'Espejos, pantallas, espacios adultos pulidos y transiciones de reality-slip en continuidad ilusoria.',
       creative_brief:
-        'The mirror does not reflect you, it remembers someone else. Reality slips between frames, identity fractures across screens, and the hallway leads to a version of yourself you never agreed to become. Sanity is a surface tension.',
+        'Define una gramática reusable de mirror-reality-slip donde reflejo, corte perceptivo y espacio pulido construyan fractura identitaria sin exigir hallway, ciudad, pantalla, espejo literal o protagonista humano.',
     },
   },
   {
@@ -172,26 +174,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiroyuki Okiura - Quiet Human Naturalism',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render',
     style: {
       aesthetic:
-        'Subtle body language, lived-in domestic motion, gentle realism within animation, believable weight, quiet humanity and observational tenderness over spectacle',
-      form_and_line: 'Subtle natural contour, minimal stylization, motion-observation line clarity',
+        'Naturalismo humano silencioso centrado en microgesto cotidiano, peso corporal creíble y ternura observacional anti-espectáculo.',
+      form_and_line:
+        'Contorno natural discreto, estilización mínima y claridad en gesto funcional de vida diaria.',
       color_palette:
-        'Soft beige, denim blue, skin-warm peach, kitchen white, rainy grey, muted green',
+        'Soft beige, denim blue, skin-warm peach, lived-in white, rainy grey, muted green',
       lighting_setup:
-        'Natural window light, restrained interior bounce, overcast softness, human-scale practical lamps',
+        'Luz natural suave, rebote interior moderado, suavidad nublada y prácticos de escala humana.',
       material_texture:
-        'Cotton shirts, kitchen surfaces, floor scuffs, skin warmth, rainy-window diffusion',
+        'Algodón usado, superficies vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Realismo animado íntimo con temporalidad pausada y lectura fina de comportamiento humano.',
       spatial_distortion:
-        'Believable anatomy, restrained perspective, human-scale room depth, natural gait and gesture',
-      atmosphere: 'Human, modest, grounded, intimate',
+        'Believable anatomy, restrained perspective, human-scale depth, natural gait and gesture',
+      atmosphere: 'Íntima, modesta y arraigada, con gravedad emocional cotidiana.',
       key_features:
-        'Observed body language, lived-in apartments, natural posture weight, realistic gesture timing, domestic emotional subtlety',
+        'Body language observada, espacios habitados, peso postural natural y timing gestual realista.',
       creative_brief:
-        'The ordinary is sacred. A shoulder shifts, a hand pauses on a doorknob, and meaning arrives without announcement in the quiet gravity of everyday motion. Spectacle is absent because it was never invited.',
+        'Construye una gramática quiet-human reusable donde microgesto, iluminación natural y materialidad vivida transmitan emoción sin exigir cocina, interior doméstico, vidrio lluvioso o escena humana específica.',
     },
   },
   {
@@ -199,25 +202,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Haruko Ichikawa - Mineral Void Serenity',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense crowd staging, opaque plastic surfaces',
     style: {
       aesthetic:
-        'Luminous gem-like bodies suspended in open emptiness, sparse worldbuilding, fragile identity in crystalline stillness, minimalist melancholy and reflective translucency',
-      form_and_line: 'Minimal precise contour, gem-edge line clarity, low-density expressive marks',
+        'Minimalismo mineral introspectivo con translucidez gema suspendida en vacío contemplativo.',
+      form_and_line:
+        'Contorno mínimo preciso, arista cristalina limpia y marcas expresivas de baja densidad.',
       color_palette: 'Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue',
       lighting_setup:
-        'Clean refractive light, edge glow, vast ambient openness, crystalline sparkle without clutter',
+        'Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido escénico.',
       material_texture:
-        'Polished mineral translucency, sea-wind smoothness, glasslike skin, sparse matte ground',
+        'Translucidez mineral pulida, suavidad de erosión marina, superficie vítrea y terreno mate mínimo.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Claridad contemplativa de alto control, con espacio negativo dominante y detalle selectivo.',
       spatial_distortion:
-        'Slim fragile anatomy, open-space isolation, clean silhouette spacing, low-clutter monumental emptiness',
-      atmosphere: 'Sparse, crystalline, introspective, luminous',
+        'Slim fragile proportion logic, open-space isolation, clean silhouette spacing, and low-clutter monumental emptiness',
+      atmosphere: 'Esparsa, luminosa e introspectiva, sostenida por fragilidad cristalina.',
       key_features:
-        'Gem-body translucency, open void composition, sparse landscape, fragile posture language, reflective surfaces',
+        'Translucidez gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.',
       creative_brief:
-        'Bodies as geodes hollowed to translucence. Identity floats in mineral suspension, fragile and crystalline, waiting for light to prove it still exists. Emptiness is not absence but the condition for clarity.',
+        'Construye una gramática mineral-void reusable donde translucidez, espacio negativo y melancolía minimal definan identidad sin exigir cuerpos gema, terreno vacío, figuras frágiles o paisaje literal.',
     },
   },
   {
@@ -225,26 +229,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone',
     style: {
       aesthetic:
-        'Expressive ensemble action with engineering literacy, practical machinery, dirt and family, humor and grief interlocked through generous draftsmanship and industrial empathy',
+        'Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar entre humor y duelo.',
       form_and_line:
-        'Confident clean contour, machine-and-face detail balance, expressive practical linework',
+        'Contorno limpio y seguro, balance entre rostro y máquina, y linework expresivo funcional.',
       color_palette: 'Steel blue, workwear brown, ember orange, cream, engine red, soot grey',
       lighting_setup:
-        'Workshop practicals, sunset action glow, warm-and-cool industrial contrast, emotionally readable highlights',
+        'Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible.',
       material_texture:
-        'Machine grease, cloth uniforms, workshop wood, dusted metal, scuffed leather',
+        'Grasa mecánica, telas de trabajo, madera usada, metal empolvado y cuero marcado por uso.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.',
       spatial_distortion:
-        'Strong readable anatomy, ensemble-balanced composition, practical action depth, robust physical posing',
-      atmosphere: 'Warm, strong, practical, emotional',
+        'Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical posing',
+      atmosphere: 'Cálida y fuerte, con pragmatismo emocional de equipo.',
       key_features:
-        'Mechanical detail, ensemble chemistry, family-coded gestures, practical costumes, humor-to-grief tonal flexibility',
+        'Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.',
       creative_brief:
-        'Gears turn on love. Machines inherit the warmth of the hands that build them, and family is measured in spanner wrenches and shared silence. Industry and intimacy are two names for the same engine.',
+        'Construye una gramática reusable de mechanical-warmth donde oficio técnico, vínculo humano y coralidad funcionen como motor visual sin exigir taller, grupo, familia, prótesis, vehículo o escena de acción.',
     },
   },
   {
@@ -252,26 +256,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Leiji Matsumoto - Endless Star-Track Melancholy',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'photoreal spaceship realism, hard sci-fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale',
     style: {
       aesthetic:
-        'Long-nosed space-romantic melancholy, star trains and capes, distant ideals, cosmic loneliness conveyed through elegant retro-futurist silhouettes and infinite distance',
+        'Romanticismo retrofuturista de melancolía noble, distancia cósmica y heroísmo resignado.',
       form_and_line:
-        'Elegant retro contour, long facial proportions, fine cape and machine linework',
+        'Contorno elegante retro, proporciones alargadas, linework fino en capas y maquinaria estelar sugerida.',
       color_palette: 'Deep navy, brass gold, wine red, vacuum black, starlight white, engine blue',
       lighting_setup:
-        'Starfield backlight, brass console glow, melancholy bridge lighting, cosmic silhouette framing',
+        'Contraluz de campo estelar, glow de latón técnico y framing de silueta en penumbra solemne.',
       material_texture:
-        'Painted starfields, brass panel wear, velvet cape drape, cel-era cosmic softness',
+        'Cielo pintado profundo, paneles metálicos gastados, caída textil aterciopelada y suavidad cel-era.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Space-opera de alta legibilidad con escala infinita y dramatismo de horizonte prolongado.',
       spatial_distortion:
-        'Tall melancholy figures, long horizon lines, deep star-distance perspective, theatrical cape flow',
-      atmosphere: 'Lonely, romantic, cosmic, noble',
+        'Tall melancholy forms, long horizon lines, deep star-distance perspective, and theatrical fabric flow',
+      atmosphere: 'Solitaria, romántica y cósmica, con nobleza de despedida interminable.',
       key_features:
-        'Star-track imagery, caped silhouettes, endless-horizon framing, retro-future control rooms, mournful distance',
+        'Imaginería de star-track, siluetas retro, metal noble envejecido y framing de distancia luctuosa.',
       creative_brief:
-        'Infinity has a silhouette. Stars become station platforms, capes billow against the vacuum, and every departure is a small death measured in light-years of longing. Nobility is not armor but acceptance of the distance.',
+        'Define una gramática cosmic-melancholy transferible con silueta retrofuturista, señales de viaje estelar y escala emocional de lejanía persistente, sin exigir tren, puente de mando, capa o personaje heroico.',
     },
   },
   {
@@ -282,25 +286,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Maximum-impact shonen battle, speed-lines tearing through every frame, impact-crater explosions, motion-blur afterimages, power-up aura distortions, shattered-panel manga energy, Dragon Ball combat clarity, One Piece impact scale, Jujutsu Kaisen fluidity, Mob Psycho paint-splash explosiveness',
+        'Maximum-impact shonen action style with speed-line overload, impact-burst energy, motion-blur afterimages, aura distortions, shattered-panel manga force, and paint-splash explosiveness',
       form_and_line:
         'Dense speed-line forests, impact-burst radial lines, action-smear tracers, after-image ghost contours, velocity-deformation edges',
       color_palette:
-        'Battle-aura electric blue, impact-flash white, energy-blast yellow-to-white gradient, crater-smoke grey, motion-trail cyan, destruction orange',
+        'Aura electric blue, impact-flash white, energy-blast yellow-to-white gradient, smoke grey, motion-trail cyan, destruction orange',
       lighting_setup:
         'Explosive backlighting, power-up emission glow, impact-flash overexposure, dynamic key-shifting mid-frame',
       material_texture:
         'Kinetic-smear surface, speed-line density mapping, particle-burst scattering, dust-cloud volumetric texture',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Peak-action anime frame, high-intensity animation showcase, shonen-sakuga excellence, impact-maximum rendering',
       spatial_distortion:
-        'Foreshortened extreme perspectives, fist-to-camera depth compression, ground-shatter crater deformation, afterimage ghost trails',
+        'Extreme foreshortening, focal-depth compression, impact deformation, and afterimage ghost trails',
       atmosphere:
-        'Electric, explosive, adrenaline-maximum, battle-fever intensity, unstoppable momentum',
+        'Electric, explosive, adrenaline-maximum, impact-fever intensity, unstoppable momentum',
       key_features:
-        'Speed-line forests, impact-burst radial marks, afterimage trails, power-up aura distortion, ground-shatter cracks',
+        'Speed-line forests, impact-burst radial marks, afterimage trails, aura distortion, kinetic fracture shapes',
       creative_brief:
-        'The frame cannot contain what it holds — speed lines erupt outward like the page itself is screaming, impact bursts radiating from the point where fist meets impossibility. Motion becomes a character more vivid than any figure, a forest of kinetic marks through which bodies blur at the limit of what animation can capture.',
+        'Preserve action-line intensity grammar as a reusable style system: speed-line density architecture, impact-burst focal choreography, and kinetic deformation readability should remain consistent across subjects.',
     },
   },
   {
@@ -311,23 +315,24 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Poster-hot speed, brutal shadows, graphic car or fist momentum, razor-sliced anatomy, neon pulp adrenaline, every frame built like a racing poster explosion',
-      form_and_line: 'Razor contour, thick-thin poster ink, aggressive silhouette carving',
+        'Estética pulp de velocidad extrema construida como póster de impacto, con agresividad gráfica y adrenalina neon-noir.',
+      form_and_line:
+        'Contorno afilado tipo cuchilla, contraste grueso-fino de tinta y tallado de silueta en bloques violentos.',
       color_palette:
         'Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet',
       lighting_setup:
-        'Poster-contrast spotlighting, hard rim edges, race-night neon glare, shadow blocks',
+        'Spot de alto contraste, rim duro, glare de neón nocturno y masas de sombra en cuña.',
       material_texture:
-        'Gloss paint, tire-rubber hints, screenprint boldness, polished poster surfaces',
+        'Brillo lacquered, guiños de caucho, grano screenprint y acabado de cartel pulido.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Acción hiperdinámica con lectura instantánea de movimiento y composición de afiche cinético.',
       spatial_distortion:
         'Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing',
-      atmosphere: 'Aggressive, sleek, adrenalized, loud',
+      atmosphere: 'Agresiva, estridente y elegante, impulsada por urgencia de carrera.',
       key_features:
-        'Razorline anatomy, heavy shadow wedges, poster-speed motion, neon pulp attitude, impossible velocity cues',
+        'Razorline anatomy, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.',
       creative_brief:
-        'Speed carved into the frame with a blade. Shadows fall like guillotines, chrome gleams with criminal intent, and stillness is not an option but a defeat. Every line is a velocity vector.',
+        'Define una gramática reusable de razor-velocity basada en silueta cortante, contrastes gráficos severos y desplazamiento imposible, sin exigir carrera, auto, carretera, piloto ni póster de vehículo.',
     },
   },
   {
@@ -335,27 +340,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'CLAMP - Celestial Limb Elongation',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking',
     style: {
       aesthetic:
-        'Elegant CLAMP-inspired supernatural poise, impossibly long limbs, ornate costume geometry, moonlit glamour, emotional restraint inside luminous fantasy fashion',
+        'Elegant CLAMP-inspired supernatural poise with impossible verticality, ornate geometry, moonlit glamour, and emotionally restrained luminous fashion logic',
       form_and_line:
-        'Refined tapered contour, ornamental costume linework, graceful eyelash intricacy',
+        'Refined tapered contour, ornamental linework, graceful eyelash intricacy, and cathedral-tall silhouette construction',
       color_palette:
         'Pearl white, amethyst, midnight blue, rose quartz, icy silver, celestial lavender',
       lighting_setup:
         'Soft moon-rim illumination, jewel-like specular accents, staged dramatic glow',
       material_texture:
-        'Silk sheen, gem sparkle, lace filigree, polished hair ribbons, glossy eye highlights',
+        'Silk sheen, gem sparkle, lace filigree, polished ribbon-like accents, and glossy highlight points',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'High-elegance fashion-fantasy rendering with precise silhouette hierarchy and jewel-toned compositional clarity',
       spatial_distortion:
-        'Fashion-figure proportions, cathedral-tall silhouettes, elegant hand and neck extension',
+        'Fashion-figure proportions, cathedral-tall silhouettes, and elegant extension of hands, necks, objects, or ornamental forms',
       atmosphere: 'Elegant, lunar, poised, dramatic',
       key_features:
-        'Extremely long limbs, ornate costume geometry, moonlit framing, jewel accessories, poised emotional distance',
+        'Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional distance',
       creative_brief:
-        'Limbs extend beyond natural law, reaching toward a moon that seems to have been waiting for exactly this proportion of grace. Ornamental geometry clings to silhouettes carved from cathedral glass and unspoken longing. Elegance here is not ornament but architecture—the bone structure of a dream refusing to be small.',
+        'Use CLAMP title as style anchor for celestial elongation: cathedral-tall silhouettes, ornamental geometry, and moonlit emotional poise should transfer without requiring human limbs, costumes, accessories, or a specific fantasy figure.',
     },
   },
   {
@@ -363,26 +368,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kunihiko Ikuhara - Rose-Altar Allegory',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low-symbolism composition, random prop clutter',
     style: {
       aesthetic:
-        'Theatrical symbolic staging, roses, trains, ritual arenas, emotional conflict expressed through icon systems rather than realism, operatic adolescent psyche rendered as ceremony',
+        'Teatralidad alegórica de alta ceremonia, donde conflicto emocional se codifica en iconos, rosas, simetría ritual y cambios de escala.',
       form_and_line:
-        'Elegant symbolic contour, ceremonial costume precision, flourish-heavy ornament lines',
+        'Contorno elegante simbólico, precisión ceremonial y ornamento lineal con flourishes operáticos.',
       color_palette:
         'Rose crimson, cathedral violet, candle gold, ivory, shadow navy, ceremonial black',
       lighting_setup:
-        'Stage spotlighting, ritual backlight, stained-symbol glow, theatrical curtain darkness',
-      material_texture: 'Velvet drape, rose-petal softness, marble stage sheen, candle smoke haze',
+        'Spot de escenario, contraluz ritual, glow simbólico teñido y oscuridad de telón dramático.',
+      material_texture:
+        'Terciopelo de cortina, pétalo suave, mármol satinado y velo de humo de vela.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Composición alegórica de alta legibilidad semiótica con densidad escénica controlada.',
       spatial_distortion:
-        'Ceremonial symmetry, impossible stage transitions, allegorical scale changes, posed ritual spacing',
-      atmosphere: 'Symbolic, theatrical, intoxicating, unstable',
+        'Ceremonial symmetry, impossible stage transitions, allegorical scale changes, and posed ritual spacing',
+      atmosphere: 'Simbólica, intoxicante e inestable, con intensidad ritual adolescente.',
       key_features:
-        'Rose altars, train symbolism, ritual arenas, icon-heavy staging, emotionally coded props',
+        'Rosas simbólicas, tránsito alegórico, espacio ritual abstracto y utilería emocional codificada.',
       creative_brief:
-        'Architecture of the soul built from roses and railway tracks. Emotions become props, rituals replace plot, and adolescence is performed as an opera no one in the audience can hear. Symbols are the only honest language.',
+        'Define una gramática rose-altar reusable donde ceremonia teatral, iconografía recurrente y staging simbólico sustituyan realismo literal, sin exigir altar, tren, arena, duelo, uniforme o set teatral concreto.',
     },
   },
   {
@@ -393,24 +399,24 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Playful fantasy machines and explosive magic rendered with impossibly confident draftsmanship, joyous motion, arcane hardware, bright celebration of animation skill itself',
+        'Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del dibujo celebran movimiento.',
       form_and_line:
-        'Exceptionally confident contour, machinery-rich detailing, energetic arc-based line motion',
+        'Contorno seguro y enérgico, detalle técnico abundante y arcos de movimiento con timing jubiloso.',
       color_palette:
         'Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple',
       lighting_setup:
-        'Festival-night bursts, magical spark showers, crisp directional highlights, celebratory rim light',
+        'Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos direccionales.',
       material_texture:
-        'Metal fittings, parchment and leather, spark particles, polished animation-finish surfaces',
+        'Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado pulcro.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso controlado.',
       spatial_distortion:
         'Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition',
-      atmosphere: 'Joyful, intricate, explosive, playful',
+      atmosphere: 'Lúdica, compleja y expansiva, con energía de celebración artesanal.',
       key_features:
-        'Complex fantasy machinery, fireworks-like magic, joyous motion arcs, confident draftsmanship, celebratory action design',
+        'Hardware fantástico complejo, magia tipo fuegos artificiales, arcos de acción festivos y draftsmanship protagonista.',
       creative_brief:
-        'Fireworks are arguments for joy. Machinery blooms into magic, arcs of motion spell out celebration, and every gear turns toward wonder. Draftsmanship itself becomes the subject, confident enough to play.',
+        'Construye una gramática reusable de firework-fantasy donde precisión técnica, hardware mágico y dinamismo celebratorio se integren sin exigir maquinaria, festival nocturno, fuegos artificiales, mago o aventura concreta.',
     },
   },
   {
@@ -421,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
       '3d, realistic, photo, smooth gradient, western, digital shading, soft shadows, modern, CGI',
     style: {
       aesthetic:
-        'Hokusai-meets-anime fusion, woodblock-print characters with bokashi-gradient backgrounds, flat decorative color-fields like Edo-period prints, crashing Great-Wave energy in hair and fabric, Hiroshige-rain-streaks across battle scenes, ukiyo-e theatricality applied to shonen action, floating-world visual language translated to animation',
+        'Ukiyo-e and anime fusion with bokashi gradients, flat decorative color fields, wave-like motion energy, rain-streak cadence, and floating-world theatricality',
       form_and_line:
         'Woodblock-carved contour lines, variable-width sumi-style edges, deliberate simplification of form, decorative-print line quality',
       color_palette:
@@ -435,11 +441,11 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion:
         'Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes, no western vanishing-point',
       atmosphere:
-        "Timeless, decorative, nature's-power, floating-world poetry, traditional-meets-modern elegance",
+        'Timeless, decorative, nature-power, floating-world poetry, traditional-meets-modern elegance',
       key_features:
-        'Woodblock-line quality, bokashi-gradient skies, flat-decorative color fields, Great-Wave motif echoes, Hiroshige-rain streaks, rice-paper texture',
+        'Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm echoes, rain-streak cadence, rice-paper texture',
       creative_brief:
-        'The Great Wave curls through hair and fabric alike, sumi-black lines carved with the pressure of centuries into washi surfaces. Color blocks itself flat against the picture plane, refusing western illusion for Edo-period conviction. What emerges is animation remembering its oldest ancestor — the floating world reborn in cel and pigment.',
+        'Preserve ukiyo-e woodblock anime grammar as a reusable style system: carved-line contour behavior, flat decorative color-field depth, and washi-print texture logic should remain consistent across subjects without requiring battle scenes, landscapes, skies, or specific print motifs.',
     },
   },
   {
@@ -447,25 +453,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Osamu Dezaki - Postcard Memory Freeze',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal emotion, generic modern polish',
     style: {
       aesthetic:
-        'Dramatic freeze-frame postcard shot, glowing highlights, emotional overstatement, roses and stars suspended in time, classic melodrama distilled into one burning still',
-      form_and_line: 'Crisp classic contour, glamour-highlight accents, melodrama-weighted inking',
+        'Melodrama clásico de postcard-memory, con congelado emocional y glamour luminoso de alto voltaje romántico.',
+      form_and_line:
+        'Contorno clásico nítido, inking dramático cargado y acentos de brillo tipo estallido sentimental.',
       color_palette: 'Sepia gold, crimson rose, cream white, royal blue, amber light, filmic mauve',
       lighting_setup:
-        'Spotlit emotional key, highlight flares, freeze-frame glare, theatrical backlight',
+        'Key teatral en spot, flares en highlight, glare de congelado y contraluz de escenario melodramático.',
       material_texture:
-        'Filmic grain, cel highlight bloom, airbrushed glow, paper postcard softness',
+        'Grano fílmico suave, bloom cel, brillo aerografiado y tactilidad de papel postal.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Frame icónico de memoria dramática con composición concentrada y claridad de gesto emocional.',
       spatial_distortion:
-        'Heroic freeze poses, diagonally framed bodies, symbolic overlay space, concentrated emotional composition',
-      atmosphere: 'Melodramatic, nostalgic, luminous, intense',
+        'Iconic freeze composition, diagonal framing, symbolic overlay space, and concentrated emotional scale shifts',
+      atmosphere: 'Nostálgica, intensa y luminosa, suspendida en un instante absoluto.',
       key_features:
-        'Postcard freeze frame, dramatic highlight lines, symbolic floral overlays, emotional stare-downs, retro melodrama staging',
+        'Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y confrontación emocional.',
       creative_brief:
-        'Time stops but emotion accelerates. A single crystalline moment holds all the weight of melodrama, glowing like a postcard remembered too intensely. Roses and stars are frozen witnesses to a feeling that will not fade.',
+        'Construye una gramática postcard-freeze reusable donde el tiempo se detiene pero la emoción escala: brillo glam, símbolos florales y encuadre de melodrama deben sostener identidad sin escena fija.',
     },
   },
   {
@@ -473,25 +480,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Akio Sugino - Velvet Lash Elegance',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render',
     style: {
       aesthetic:
-        'Classic beauty-anime portraiture, velvet eyelashes, painterly glamour, aristocratic poise, mature romantic intensity and old-school sophistication in every pose',
-      form_and_line: 'Lash-rich contour, elegant facial precision, glamour-focused line softness',
+        'Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.',
+      form_and_line:
+        'Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta clase.',
       color_palette: 'Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach',
       lighting_setup:
-        'Beauty-portrait spotlighting, soft velvet shadow, glamour rim light, painterly cheek glow',
+        'Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.',
       material_texture:
-        'Velvet drape, glossy hair sheen, satin costume detail, old-cel portrait softness',
+        'Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.',
       spatial_distortion:
-        'Beauty-first portrait proportions, swan-neck posing, luxuriant hair framing, noble silhouette emphasis',
-      atmosphere: 'Velvety, elegant, mature, dramatic',
+        'Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette emphasis',
+      atmosphere: 'Aterciopelada, madura y dramática, de confesión íntima ceremonial.',
       key_features:
-        'Lash-heavy portraits, aristocratic pose language, glamour close-ups, old-school beauty rendering, velvet mood',
+        'Lash-heavy focal design, lenguaje postural aristocrático, close-up glam y mood de belleza clásica.',
       creative_brief:
-        'Eyelashes cast shadows that hold entire romances. Glamour is not decoration but the architecture of longing, painted in velvet and held breath. Every portrait is a confession dressed for a ballroom.',
+        'Define una gramática reusable de velvet-elegance donde textura lujosa, presencia refinada y tensión romántica sofisticada articulen identidad sin exigir retrato humano, swan-neck pose, cortinaje o close-up.',
     },
   },
   {
@@ -499,25 +507,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Taiyo Matsumoto - Scratchy Urban Drift',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy ornament overuse',
     style: {
       aesthetic:
-        'Rough urban adolescence, scratchy linework, concrete poetry, drifting bikes and rooftops, holy and ugly city textures fused into emotional sketch energy',
-      form_and_line: 'Scratchy uneven contour, dry-ink scribble, architectural scrawl',
+        'Rough concrete-poetry adolescence, scratchy linework, sacred-ugly texture, restless drift, and emotional sketch energy',
+      form_and_line:
+        'Scratchy uneven contour, dry-ink scribble, architectural scrawl, and unstable proportion rhythm',
       color_palette:
         'Cement grey, faded blue, rust orange, dirty cream, bruised purple, asphalt black',
-      lighting_setup: 'Hazy urban daylight, sodium-vapor night bleed, flat overcast concrete gloom',
+      lighting_setup: 'Hazy daylight, sodium-vapor night bleed, and flat overcast concrete gloom',
       material_texture:
         'Dry-brush grit, photocopy grain, rough wall scrape, cracked paint, pencil scuff',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Gritty sketch-urban rendering with rough poetic abstraction and tactile city-line immediacy',
       spatial_distortion:
-        'Loose body proportions, tilted urban perspective, sketched motion drift, uneven head-to-limb relationships',
+        'Loose proportion logic, tilted perspective, sketched motion drift, and uneven scale relationships',
       atmosphere: 'Restless, rough, spiritual, urban',
       key_features:
-        'Scratchy concrete textures, rooftop silhouettes, adolescent motion, rough city iconography, sacred-urban weirdness',
+        'Scratchy concrete textures, tilted silhouettes, adolescent motion, rough civic iconography, sacred-ugly weirdness',
       creative_brief:
-        'Concrete breathes through scratched lines as a bicycle carves meaning into the city rough skin. Rooftops become confessionals, alleyways become temples, and every scuff mark on the pavement is a prayer written in scuffed shoe rubber. The holy and the ugly share a cigarette on a fire escape, and the line between them was never drawn.',
+        'Use Taiyo Matsumoto title as style anchor for scratchy urban drift: dry-ink roughness, concrete-poetry composition, and adolescent restless energy should transfer without requiring bikes, rooftops, city streets, or youth characters.',
     },
   },
   {
@@ -556,25 +565,25 @@ export const GENERATED_STYLE_PRESETS = [
       'flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple',
     style: {
       aesthetic:
-        'Anime rendered as gothic-cathedral stained-glass window, figures segmented by black-lead-came lines, jewel-toned-translucent color-fields, backlit-by-sunlight-streaming-through effect, rose-window-circular-composition-framing, medieval-manuscript illumination energy, saints-and-angels-iconography applied to anime archetypes, Notre-Dame-rose-window-rose-meets-shojo-sparkle',
+        'Stained-glass anime treatment with black lead-came segmentation, jewel-toned translucent fields, sacred backlight, rosette geometry, and illuminated-manuscript ornament',
       form_and_line:
-        'Thick-black-lead-came-segmentation lines, Gothic-arch-framing, geometric-rosette-divisions, hieratic-scale-proportions, decorative-border-filigree',
+        'Thick black lead-came segmentation, gothic-arch rhythm, geometric rosette divisions, hieratic scale shifts, and decorative border filigree',
       color_palette:
         'Sapphire-blue, ruby-red, emerald-green, amethyst-purple, gold-yellow, translucent-jewel-spectrum, cathedral-gloom-dark-edges, sun-through-color-glow',
       lighting_setup:
-        'Backlit-translucent-glow, sunlight-streaming-through-colored-glass, interior-cathedral-dimness-contrast, divine-light-ray-god-rays',
+        'Backlit translucent glow, colored-glass light transmission, dim-value contrast, and divine ray-like illumination',
       material_texture:
         'Textured-stained-glass surface, lead-came-metallic-joints, glass-bubble-imperfections, hand-blown-variation, stone-tracery-framing',
       render_quality:
         'Stained-glass-anime-fusion, cathedral-window-beauty, translucent-color-rendering, sacred-art-aesthetic, jewel-toned-divine-light',
       spatial_distortion:
-        'Segmented-by-lead-lines, rose-window-circular-framing, Gothic-arch-vertical-emphasis, flat-icon-perspective, hieratic-scale-size-means-importance',
+        'Lead-line segmentation, circular rosette framing, gothic vertical emphasis, flat-icon perspective, and hieratic scale logic',
       atmosphere:
-        'Sacred, awe-inspiring, divine-light, cathedral-hush, medieval-reverence-meets-anime-emotion, transcendent-beauty',
+        'Sacred, awe-inspiring, divine-light, hushed, medieval-reverence-meets-anime-emotion, transcendent-beauty',
       key_features:
-        'Black-lead-came-segmentation, jewel-toned-translucent-colors, backlit-by-sunlight-glow, Gothic-arch-framing, rose-window-circular-composition, glass-imperfection-texture',
+        'Black lead-came segmentation, jewel-toned translucent colors, backlit glow, gothic-arch rhythm, rosette composition, glass-imperfection texture',
       creative_brief:
-        'Sunlight passes through sapphire faces and ruby hands, casting sacred geometry across stone floors that hold centuries of silence. Each figure is divided by black lead into jeweled panels that belong to a rose window more than a frame of animation. The divine here is not depicted but transmitted — light itself becoming the storyteller through colored glass.',
+        'Preserve stained-glass cathedral anime grammar as a reusable style system: lead-came segmentation, jewel-translucent backlight transmission, and gothic rosette framing should remain consistent across subjects without requiring a cathedral, saints, angels, or literal window scene.',
     },
   },
   {
@@ -585,23 +594,23 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Morphing anatomy and ecstatic motion, dance-like action, color bursts, reality bending under pure expressive velocity, anti-stiff animation freedom made visual',
+        'Expresionismo cinético de anatomía elástica, donde la realidad se pliega al gesto y la velocidad emocional gobierna la imagen.',
       form_and_line:
-        'Elastic contour, rough brush taper, unstable shape language, rhythm-led line motion',
+        'Contorno gomoso, taper de brocha nerviosa, siluetas inestables y curvas de movimiento tipo danza explosiva.',
       color_palette: 'Acid cyan, burnt orange, grape purple, hot pink, black ink, fever yellow',
       lighting_setup:
-        'Graphic color-flash lighting, abrupt stage-like shifts, expression-over-realism illumination',
+        'Flashes cromáticos abruptos, cambios de key violentos y prioridad expresiva sobre realismo fotométrico.',
       material_texture:
-        'Paint-smear energy, rough digital brush, poster-flat color blocks, animation-boil traces',
+        'Mancha pictórica energética, pincel digital áspero, bloques flat de póster y boil de animación visible.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Frame de sakuga hiperactivo con legibilidad de impacto y caos controlado por ritmo.',
       spatial_distortion:
         'Constant anatomical morphing, melting perspective, dance-curve poses, explosive timing shapes',
-      atmosphere: 'Elastic, ecstatic, surreal, alive',
+      atmosphere: 'Elástica, extática y febril, siempre al borde de romper la forma.',
       key_features:
-        'Morphing anatomy, dance-motion arcs, wild color bursts, anti-model dynamism, velocity-first staging',
+        'Morphing anatómico continuo, arcos bailados, bursts de color ácido y staging velocity-first anti-model.',
       creative_brief:
-        'Animation in revolt against the frozen frame. Bodies liquefy into gesture, color detonates at the point of impact, and the line between ecstasy and chaos vanishes in a smear of velocity. Rigidity is the only crime here.',
+        'Define una gramática de rubber-reality transferible donde anatomía mutable, color detonante y timing gestual extremo sustituyan rigidez por energía. Debe sentirse en rebelión permanente contra el frame congelado.',
     },
   },
   {
@@ -612,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy',
     style: {
       aesthetic:
-        'Pure-ink-wash fighting scene, single-brushstroke capturing entire combat arc, characters suggested by gestural-sumi marks, black-ink-explosions where strikes land, negative-space-as-impact-zones, zen-calligraphy-meets-shonen-battle, brushstroke-drag-texture becoming speed-lines, bamboo-brush-mastery, Musashi-philosophy-in-ink, sword-cut-as-ink-splash',
+        'Sumi-e action treatment where single brushstrokes imply force arcs, black-ink bursts mark impact, negative space carries tension, and calligraphy becomes motion',
       form_and_line:
         'Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at stroke-end, wet-ink-pooling at stroke-start, economy-of-line philosophy',
       color_palette:
@@ -622,15 +631,15 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Rice-paper-fiber-absorption, ink-bleed-feathering, dry-brush-splinter-texture, sumi-stick-grind-grain, bamboo-brush-hair-texture, paper-buckling-from-moisture',
       render_quality:
-        'Sumi-e-brushstroke-anime, zen-combat-aesthetic, ink-wash-masterpiece, single-breath-rendering, calligraphic-fighting-essence',
+        'Sumi-e brushstroke anime, zen action aesthetic, ink-wash mastery, single-breath rendering, and calligraphic force essence',
       spatial_distortion:
-        'Ink-splash-suggesting-impact-zones, negative-space-as-form, brushstroke-gesture-as-anatomy, no-filled-forms, economy-of-space',
+        'Ink splash suggests impact zones, negative space becomes form, brushstroke gesture replaces anatomy, no filled forms, economy of space',
       atmosphere:
-        "Zen-discipline, explosive-silence, one-strike-certainty, ink-grind-meditation, master's-quiet-confidence",
+        'Zen discipline, explosive silence, one-stroke certainty, ink-grind meditation, quiet confidence',
       key_features:
         'Sumi-ink-monochrome, single-brushstroke-gestures, dry-brush-splinter-edges, ink-pool-wetness, rice-paper-texture, negative-space-as-light, vermillion-seal-stamp',
       creative_brief:
-        'A single brushstroke carries the entire arc of a sword — from stillness through violence back to silence — in one unbroken gesture of suspended ink. The negative space between strikes holds more weight than the marks themselves, white paper vibrating with implied motion. Combat distilled to calligraphy: the battle exists as much in what was withheld as what was laid down.',
+        'Preserve sumi-e brushstroke combat grammar as a reusable style system: pressure-variable calligraphic stroke anatomy, negative-space impact logic, and monochrome ink-value composition should remain consistent across subjects without requiring a fight scene, sword cut, warrior, or literal combat event.',
     },
   },
   {
@@ -641,24 +650,24 @@ export const GENERATED_STYLE_PRESETS = [
       'busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist',
     style: {
       aesthetic:
-        'Sparse economical animation, generous negative space, single-line character expressions, backgrounds reduced to color atmospheres, Makoto Shinkai skies stripped to essence, quiet indie-game cutscene, intentional emptiness, every line earned',
+        'Sparse economical anime minimalism, generous negative space, single-line expression logic, color-atmosphere fields, quiet indie pacing, and intentional emptiness',
       form_and_line:
         'Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer strokes more impact',
       color_palette:
         'Single-hue atmospheres, sky-gradient minimalism, off-white expanses, one accent color per scene, monochrome restraint',
       lighting_setup:
-        'Soft overcast diffusion, single-source window light, crepuscular quiet rays, ambient emptiness',
+        'Soft overcast diffusion, single-source quiet light, crepuscular rays, and ambient emptiness',
       material_texture:
         'Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any',
       render_quality:
         'Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction',
       spatial_distortion:
-        'Characters small in vast empty spaces, loneliness-accentuating framing, negative-space compositions',
+        'Subject scale can shrink against vast empty fields, with loneliness-accenting framing and negative-space composition',
       atmosphere: 'Quiet, introspective, profoundly lonely, meditative stillness, held breath',
       key_features:
-        'Negative space dominance, minimalist line count, single-color atmospheres, tiny figures in big emptiness, intentional silence',
+        'Negative space dominance, minimalist line count, single-color atmospheres, scale humility, intentional silence',
       creative_brief:
-        'A single figure stands in an ocean of negative space, the weight of silence pressing outward from the frame. Every line is a decision, every empty expanse a held breath waiting for the courage to exhale. The loneliness here is not emptiness but fullness — a solitude that teaches the eye to treasure what little it is given.',
+        'Preserve minimalist-indie-quiet grammar as a reusable style system: negative-space dominance, sparse line economy, and low-saturation contemplative atmospheres should remain consistent across subjects.',
     },
   },
   {
@@ -669,25 +678,24 @@ export const GENERATED_STYLE_PRESETS = [
       'clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls',
     style: {
       aesthetic:
-        'Anime characters emerging from urban-graffiti murals, spray-paint-hair-texture, wall-brick-backgrounds with tags and throw-ups, wildstyle-lettering-interacting-with-figures, street-art-meets-animation-cell, concrete-texture-canvas, drips-running-through-character-designs, half-tag-half-character hybrid energy, Samurai-Champloo-graffiti-opening energy',
+        'Graffiti-anime fusion with spray-paint texture, wildstyle rhythm, rough-surface tactility, drip energy, overspray halos, and rebellious mural-motion',
       form_and_line:
         'Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines, fat-cap-thick-to-skinny-cap-thin transitions, overspray-soft-halos',
       color_palette:
         'Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange, buff-paint-coverup-beige, chrome-silver-highlights, throw-up-fill-colors',
       lighting_setup:
-        'Outdoor-wall-sunlight, shadow-from-building-overhang, streetlamp-sodium-warmth, concrete-texture-light-catching',
+        'Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light catching',
       material_texture:
         'Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain, buff-paint-roller-texture, rust-stain-mineral-deposits, drip-trail-gloss',
       render_quality:
-        'Street-art-anime fusion, graffiti-mural energy, urban-wall authenticity, spray-paint-and-cell hybrid, vandalism-as-beauty philosophy',
+        'Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell hybrid, vandalism-as-beauty philosophy',
       spatial_distortion:
-        'Characters-sprawling-across-brick-courses, tags-wrapping-around-anatomy, wall-texture-integrated-into-design, large-scale-mural-proportions',
-      atmosphere:
-        'Urban, rebellious, street-authentic, outlaw-creative, midnight-painting-session, city-breathing-art',
+        'Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture integrates into design without fixed background dependence',
+      atmosphere: 'Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing',
       key_features:
-        'Brick-wall-texture-background, spray-paint-drips, stencil-edge-sharpness, graffiti-tag-integration, overspray-halos, concrete-grain-surface',
+        'Spray-paint drips, stencil-edge sharpness, graffiti-tag integration, overspray halos, concrete-grain surface, mural-scale shape language',
       creative_brief:
-        "The wall breathes through layers of buff paint and wildstyle tags, characters pushing through brick courses like weeds through concrete. Spray-can halos soften every edge while drips run deliberately through features, half-painted and half-alive. This is the city's skin given motion — vandalism refined into visual scripture.",
+        'Preserve graffiti-wall anime grammar as a reusable style system: spray-drip contour behavior, wall-texture integration, and wildstyle-tag compositional interaction should remain consistent across subjects without requiring a literal wall, tags as readable text, or urban background scene.',
     },
   },
   {
@@ -715,7 +723,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Powder halos, smudge ghosts, broken-stroke cadence, erasure memory layers, substrate grain response, fragile contour rhythm',
       creative_brief:
-        'The preset should read as a chalk medium language first: transient marks, residue, and erasure memory define identity, allowing any subject to inherit an intentionally impermanent handcrafted anime finish.',
+        'Preserve chalkboard-sketch anime grammar as a reusable style system: powder-residue mark behavior, erasure-memory layering, and fragile hand-drawn slate contrast should remain consistent across subjects.',
     },
   },
   {
@@ -725,24 +733,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round',
     style: {
       aesthetic:
-        "Photorealistic anime linework, world-weary faces with crow's feet and pores, documentary-film frame energy, urban grit and lived-in decay, salaryman exhaustion, cigarette-burn realism, Naoki Urasawa character depth, grounded adult drama, zero glamour",
+        'Photorealistic anime linework with documentary-frame gravity, lived-in wear, adult-drama restraint, labor marks, and zero glamour',
       form_and_line:
-        'Dense photo-study contouring, stubble strokes, nasolabial fold attention, clothing wrinkle obsession, no idealization',
+        'Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy, and no idealized pose language',
       color_palette:
-        'Concrete grey, fluorescent-tube green cast, aged-skin ochre, cigarette-smoke white, steel-blue office, overcast desaturation',
+        'Concrete gray, fluorescent green cast, aged-skin ochre, smoke-white haze, steel-blue shadows, and overcast desaturation',
       lighting_setup:
-        'Harsh practical fluorescents, overcast window light, unflattering overhead office, nighttime street sodium vapor',
+        'Harsh practical fluorescents, overcast window softness, unflattering overhead light, and sodium-vapor night accents',
       material_texture:
-        'Pilled sweater fabric, unshaven skin grain, coffee-stain realism, concrete aggregate surface, scuffed shoe leather',
+        'Pilled fabric, skin grain, stain realism, concrete aggregate, scuffed leather, and worn everyday material tactility',
       render_quality:
         'Gritty documentary-anime still, hyper-realist rendering, adult-drama production polish, no gloss no glamour',
       spatial_distortion:
-        'Realistic human proportions, middle-aged body types, grounded camera angles, no hero poses',
+        'Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic exaggeration',
       atmosphere: 'Weary, grounded, melancholic realism, adult resignation, quiet desperation',
       key_features:
-        'Facial pores and wrinkles, stubble rendering, tired-eye bags, clothing fabric detail, cigarette smoke trails',
+        'Facial pores and wrinkles, tired-eye weight, clothing fabric detail, worn surfaces, practical-light harshness',
       creative_brief:
-        'Every wrinkle tells a story the character stopped telling years ago. The fluorescent lights of a late-night office expose not just skin but the accumulated weight of ordinary survival. Beauty here is an honest reckoning with what time does to faces that never expected to be looked at.',
+        'Preserve gritty realist seinen grammar as a reusable style system: unflattering practical lighting, age-and-labor facial detail fidelity, and grounded adult-drama material realism should remain consistent across subjects without requiring salarymen, offices, cigarettes, or urban decay.',
     },
   },
   {
@@ -750,10 +758,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Yoshitaka Amano - Ether-Wisp Gothic Fantasy',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern streetwear styling',
     style: {
       aesthetic:
-        'Ethereal Amano-like fantasy, elongated bodies dissolving into decorative ink wisps, celestial melancholy, gilded voids, feather-light detail with dream-goth elegance',
+        'Ethereal Amano-like fantasy where elongated forms dissolve into decorative ink wisps, celestial melancholy, gilded voids, and feather-light dream-goth elegance',
       form_and_line:
         'Hair-thin ornamental contour, calligraphic tapering, decorative filigree line drift',
       color_palette:
@@ -763,14 +771,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Airbrush mist, metallic leaf suggestion, silk translucency, ink feathering, velvety emptiness',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Ethereal fine-art anime rendering with ornamental void composition and spectral detail discipline',
       spatial_distortion:
-        'Weightless elongation, draped limbs, gravity-light hair flow, cathedral-thin silhouettes',
+        'Weightless elongation, draped form flow, gravity-light contour drift, and cathedral-thin silhouettes',
       atmosphere: 'Ethereal, baroque, sorrowful, celestial',
       key_features:
-        'Elongated figures, decorative ink wisps, gilded accents, void-rich composition, feathered costume detail',
+        'Elongated silhouettes, decorative ink wisps, gilded accents, void-rich composition, feathered ornamental detail',
       creative_brief:
-        'Bodies stretch like ink dropped into still water, limbs becoming calligraphy that writes elegies across gilded voids. Gold flakes settle on eyelids while moonlight dissolves the boundary between figure and atmosphere, between presence and memory. Every image is a séance where beauty wears the thinnest veil.',
+        'Use Yoshitaka Amano title as style anchor for ether-wisp fantasy: calligraphic elongation, gilded-void ornament, and melancholic celestial elegance should transfer without requiring bodies, costumes, wings, or gothic fantasy characters.',
     },
   },
   {
@@ -781,25 +789,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear, ordinary',
     style: {
       aesthetic:
-        "Impossible dreamscape anime, floating staircases leading to inverted cities, doors opening to underwater skies, school corridors stretching to infinity, Satoshi Kon reality-blend, Masaaki Yuasa dream-physics, Paprika parade logic, Angel's Egg symbolism, characters walking on walls and ceilings",
+        'Impossible dream-logic anime with reality-blend montage, symbolic object shifts, inverted spatial intuition, parade-like subconscious rhythm, and liminal mystery',
       form_and_line:
-        'Shifting inconsistent outlines, figure-ground ambiguity, morphing-object contours, one-line-becoming-another transitions',
+        'Shifting inconsistent outlines, figure-ground ambiguity, morphing-object contours, and one-line-becoming-another transitions',
       color_palette:
         'Surreal twilight gradients, impossible sky colors, memory-desaturated pastels, dream-symbol gold, deep-sleep indigo, astral-projection lavender',
       lighting_setup:
         'Light from impossible sources, objects self-illuminating without cast shadows, contradictory shadow directions, glow without origin',
       material_texture:
-        'Cloud-solid hybrids, liquid-mirror surfaces, fabric-becoming-water transitions, memory-film grain overlay, dream-veil softness',
+        'Cloud-solid hybrids, liquid-mirror surfaces, material-state transitions, memory-film grain overlay, and dream-veil softness',
       render_quality:
         'Surrealist anime dream-frame, experimental-animation beauty, psychological-symbolism rendering, impossible-image poetry',
       spatial_distortion:
-        'Infinite-regression corridors, impossible-object architecture, scale-shifting between frames, non-Euclidean dream geography',
+        'Infinite-regression depth, impossible object architecture, scale-shifting between frames, and non-Euclidean dream geography',
       atmosphere:
         'Disorienting, hypnotic, profound, symbolic, between-worlds liminality, sleeping-mind poetry',
       key_features:
         'Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops',
       creative_brief:
-        'A staircase climbs toward a sky that was underwater a moment ago, and none of this contradicts itself. The architecture of sleep obeys only the logic of association — corridors stretching past vanishing points into memory, doors opening onto the wrong childhood. This is the image as dream, the dream as architecture, the architecture as feeling made spatial.',
+        'Preserve surreal dream-logic grammar as a reusable style system: impossible spatial transitions, contradictory light logic, and symbolic non-Euclidean composition should remain consistent across subjects without requiring corridors, cities, doors, parades, or wall-walking figures.',
     },
   },
   {
@@ -810,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
       'hard, sharp, dark, gritty, realistic, adult, serious, edgy, horror, violent, cynical',
     style: {
       aesthetic:
-        "Gentle watercolor-anime hybrid, illuminated-manuscript borders, floating flower petals on every frame, soft-focus dream sequences, shoujo fantasy at its most tender, children's-book warmth with anime expressiveness, Sugar Sugar Rune sweetness, Cardcaptor Sakura sparkle",
+        'Gentle watercolor-anime hybrid with illuminated-manuscript ornament, floating floral softness, dream-sequence bloom, tender shojo fantasy, and storybook warmth',
       form_and_line:
         'Delicate hair-thin ink, scrollwork ornamental contours, lace-pattern borders, heart-motif motion lines',
       color_palette:
@@ -822,12 +830,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         "Fairy-tale anime frame, children's-book elegance, shoujo-sparkle rendering, picture-book warmth",
       spatial_distortion:
-        'Floral-frame compositions, magical-girl transformation-space backgrounds, floating decorative elements',
+        'Floral-frame composition, transformation-like abstract backdrops, floating decorative elements, and soft storybook depth',
       atmosphere: 'Enchanting, gentle, sweet-natured, storybook magic, pure-hearted wonder',
       key_features:
-        'Floating flower petals, sparkle-dust particles, lace-pattern borders, ribbon-framing devices, magical-transformation glow',
+        'Floating floral particles, sparkle dust, lace-pattern borders, ribbon-like framing devices, transformation-glow softness',
       creative_brief:
-        'Petals drift through every frame like punctuation marks in a sentence written in sugar-spun thread and gold-foil light. The world is constructed from lullabies and lace borders, each character a wish given gentle outline and pastel breath. This is the visual language of believing in magic before anyone tells you to stop.',
+        'Preserve fairy-tale storybook-soft grammar as a reusable style system: pastel-lace ornament framing, gentle diffused glow hierarchy, and tender shoujo-fantasy softness should remain consistent across subjects.',
     },
   },
   {
@@ -838,9 +846,9 @@ export const GENERATED_STYLE_PRESETS = [
       'organic, round, soft, flowing, natural, irregular, curved, messy, sketchy, unplanned',
     style: {
       aesthetic:
-        'Art-deco anime fusion, characters built from geometric planes, hair as angular fans, eyes as faceted jewels, posterized color separation, theatrical stage-design composition, Rose of Versailles elegance meets geometric abstraction, Utena theatricality',
+        'Art-deco anime fusion with geometric planes, faceted beauty, posterized color separation, theatrical composition, and shojo-classic elegance sharpened into abstraction',
       form_and_line:
-        'Precise geometric contour, ruler-straight ink lines, compass-circle precision, angular facet construction',
+        'Precise geometric contour, ruler-straight ink lines, compass-circle precision, angular facet construction, and ornamental symmetry',
       color_palette:
         'Gold leaf, lapis lazuli blue, ruby red, emerald facet green, black enamel, geometric color-blocking, jewel-tone exclusivity',
       lighting_setup:
@@ -848,14 +856,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Metallic gold inlay, stained-glass segmentation, enamel gloss, faceted crystal surface, polished stone',
       render_quality:
-        'Deco-styled anime frame, theatrical-stage rendering, geometric-abstraction beauty, crystalline visual precision',
+        'Deco-styled anime frame, theatrical rendering, geometric-abstraction beauty, and crystalline visual precision',
       spatial_distortion:
-        'Characters composed of faceted planes, hair as geometric fan-shapes, faces as jewel-cut surfaces',
+        'Subjects become faceted planes, angular fan-shapes, jewel-cut surfaces, and stylized depth layers',
       atmosphere: 'Grand, theatrical, elegant severity, crystalline beauty, staged perfection',
       key_features:
-        'Geometric hair fans, faceted-jewel eyes, ruler-straight lines, stained-glass color separation, stage-set compositions',
+        'Geometric fan shapes, faceted-jewel focal points, ruler-straight lines, stained-glass color separation, staged symmetry',
       creative_brief:
-        'Characters are carved from gemstone rather than drawn, their hair fanning outward in geometric rays of lapis and gold. Stage light catches every faceted plane, transforming faces into crystalline architecture. The aesthetic is a cathedral built from character design, each figure a stained-glass window in human form.',
+        'Preserve deco-geometric anime grammar as a reusable style system: faceted planar construction, jewel-tone staged lighting, and ruler-precise contour discipline should remain consistent across subjects.',
     },
   },
   {
@@ -863,23 +871,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shigeru Mizuki - Yokai Night Parade Ink',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
+      'glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background',
     style: {
       aesthetic:
-        'Folkloric yokai procession with documentary oddness, soft rural night, grotesque spirits treated with deadpan familiarity, brush-ink humor and ghostly taxonomy',
-      form_and_line: 'Brushy folklore contour, blunt creature detailing, ink-wash edge diffusion',
+        'Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad inquietante.',
+      form_and_line:
+        'Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta lavada.',
       color_palette: 'Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan',
-      lighting_setup: 'Lantern-and-moon dual lighting, ink-dark negative space, rural-night haze',
-      material_texture: 'Brush-ink bleeds, washi paper tooth, damp earth texture, mossy wood grain',
+      lighting_setup:
+        'Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.',
+      material_texture:
+        'Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.',
       spatial_distortion:
-        'Odd spirit anatomy, procession depth, deadpan human-scale contrast, uncanny silhouette spacing',
-      atmosphere: 'Folkloric, eerie, amused, nocturnal',
+        'Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette spacing',
+      atmosphere: 'Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.',
       key_features:
-        'Yokai parade silhouettes, rural-night backdrops, brush-ink humor, lantern glow, documentary-spirit staging',
+        'Siluetas yokai-like, nocturnidad terrosa, glow de linterna y staging pseudo-documental.',
       creative_brief:
-        'The supernatural walks past you on a country road and no one blinks. Spirits are catalogued with the same deadpan care as mushrooms, each one a footnote in the encyclopedia of the dark. Lantern light agrees to keep their secrets.',
+        'Define una gramática yokai-parade transferible basada en trazo de tinta, nocturnidad terrosa y catalogación deadpan de lo grotesco sin exigir yokai, desfile, campo, linterna, humano testigo ni escena narrativa fija.',
     },
   },
   {
@@ -889,9 +900,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, digital, clean, 3d, glossy, polished, sharp, solid, opaque, uniform',
     style: {
       aesthetic:
-        'Anime characters constructed from fabric-scraps and embroidery, yarn-hair as multi-colored thread bundles, button-eyes sewn onto cloth faces, patchwork-kimono-fabric-patterns, visible-stitching-contours around every shape, quilted-world-texture, needlepoint-detail on costume embroidery, rag-doll-proportions with anime expressiveness, Coraline-button-eye-meets-kimono-fabric',
+        'Textile-patchwork anime treatment built from fabric scraps, embroidery detail, visible stitched contours, quilted surfaces, and handmade soft imperfection',
       form_and_line:
-        'Stitching-trail-contours replacing ink lines, thread-thickness-varying-by-stitch, embroidery-hoop-circular-framing, raw-fabric-edge-fraying',
+        'Stitching-trail contours replacing ink lines, thread thickness varying by stitch, embroidery-hoop circular framing, raw fabric-edge fraying',
       color_palette:
         'Indigo-dyed-cotton, sashiko-white-stitching, vintage-kimono-silk-patterns, yarn-skein-rainbow, wooden-button-brown, linen-natural-ecru, patchwork-scrap-variety',
       lighting_setup:
@@ -901,13 +912,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Textile-art-anime fusion, sewing-craft-beauty, quilted-animation-aesthetic, thread-and-fabric-rendering, handmade-softness',
       spatial_distortion:
-        'Patchwork-seam-divisions, embroidery-hoop-composition-framing, stuffed-doll-proportions, fabric-gather-pleats',
-      atmosphere:
-        "Cozy, handmade, craft-circle-warmth, grandparent's-sewing-room, slow-craft-meditation, tactile-comfort",
+        'Patchwork seam divisions, embroidery-hoop composition framing, soft stuffed-volume proportion shifts, and fabric-gather pleats',
+      atmosphere: 'Cozy, handmade, craft-circle warmth, slow-craft meditation, tactile comfort',
       key_features:
-        'Stitching-trail-contours, yarn-bundle-hair, button-eyes, fabric-patchwork-seams, embroidery-hoop-framing, frayed-fabric-edges, sashiko-stitching-patterns',
+        'Stitching-trail contours, yarn-bundle texture, fabric-patchwork seams, embroidery-hoop framing, frayed fabric edges, sashiko-like patterns',
       creative_brief:
-        "Every seam is visible, every edge frayed with the softness of fabric that has known hands. Thread replaces ink, stitching contours where outlines once ruled, sashiko patterns running through kimono folds like inherited memory made textile. This world was sewn together one evening at a time, the needle's rhythm still audible in every assembled silhouette.",
+        'Preserve threadbare patchwork anime grammar as a reusable style system: stitch-trail contour substitution, fabric-weave material hierarchy, and handcrafted seam composition should remain consistent across subjects without requiring dolls, button eyes, kimono patterns, or sewing-room scenes.',
     },
   },
   {
@@ -918,22 +928,24 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Classic manga-horror panic, striped shock, screaming children, spiraling dread, black-white psychic sickness rendered with high-contrast theatrical terror',
-      form_and_line: 'Jagged horror contour, heavy black fills, shrill stress-line density',
+        'Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica corrosiva.',
+      form_and_line:
+        'Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del foco.',
       color_palette:
         'Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet',
-      lighting_setup: 'Harsh spotlight horror, deep negative shadows, overexposed panic faces',
+      lighting_setup:
+        'Spotlight hostil, negativos profundos y sobreexposición de formas en estado de shock.',
       material_texture:
-        'Ink-rich blacks, scratchy screentone feel, paper tooth, rough horror shading',
+        'Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla impresa.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.',
       spatial_distortion:
-        'Wide screaming mouths, bulging eyes, warped hallway depth, panic-twisted posture',
-      atmosphere: 'Hysterical, uncanny, retro, terrifying',
+        'Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and panic-twisted posture',
+      atmosphere: 'Histérica, uncanny y retro, con amenaza infantil deformada.',
       key_features:
-        'Screaming faces, spiral motifs, striped fear patterns, child-horror contrast, high-contrast black-white logic',
+        'Expresión de grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.',
       creative_brief:
-        'Fear is a spiral that tightens with every glance. Black and white scream louder than color ever could, and childhood innocence curdles into nightmare geometry. The panel is a trap door and you are already falling.',
+        'Construye una gramática spiral-horror reusable donde geometría de pánico, contraste blanco-negro feroz y expresividad desbordada marquen identidad sin exigir rostro humano, hallway, víctima o escena de persecución.',
     },
   },
   {
@@ -944,22 +956,23 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Angular grin-heavy character design, triangle-driven flames, graphic teeth and attitude, gothic streetwear and combustion making a clean aggressive icon system',
-      form_and_line: 'Clean hard contour, graphic angle emphasis, grin-and-flame shape discipline',
+        'Diseño iconográfico angular de grin maligno, fuego geométrico y actitud callejera gótica de combustión estilizada.',
+      form_and_line:
+        'Contorno duro limpio, dominio de diagonales y disciplina formal en triángulos, dientes y flamas.',
       color_palette: 'Carbon black, fire orange, bone white, acid lime, charcoal grey, ember red',
       lighting_setup:
-        'High-contrast firelight, geometric flame underglow, sharp silhouette rim accents',
+        'Contraste fuerte por fuego, underglow geométrico y rims nítidos que recortan siluetas agresivas.',
       material_texture:
-        'Clean cel surfaces, soot edges, stylized flame gradients, matte-black fabric',
+        'Superficie cel limpia, bordes de hollín, gradientes de llama estilizada y textil negro mate.',
       render_quality:
-        'Peak-action anime frame, battle-animation showcase, shonen-sakuga excellence, impact-maximum rendering',
+        'Acción estilizada de lectura icónica con diseño de forma dominante sobre detalle realista.',
       spatial_distortion:
-        'Angular anatomy, sharp perspective cuts, grin-led facial geometry, icon-heavy pose language',
-      atmosphere: 'Cool, angular, incendiary, mischievous',
+        'Angular anatomy, sharp perspective cuts, grin-led focal geometry, and icon-heavy pose language',
+      atmosphere: 'Incendiaria, insolente y lúdicamente siniestra.',
       key_features:
-        'Triangle motifs, grin-focused faces, fire geometry, graphic streetwear, clean aggressive silhouettes',
+        'Motivo triangular persistente, grin-centric geometry, fuego angular y silueta street-goth limpia.',
       creative_brief:
-        'Geometry with a grin. Flames obey triangular logic, teeth become design systems, and mischief transmits through clean hard angles. Attitude is not applied but engineered into the skeleton of every character.',
+        'Define una gramática reusable de triangle-grin donde fuego angular, expresividad dentada y contraste gráfico sostengan identidad agresiva sin depender de rostro, personaje, uniforme o combate específico.',
     },
   },
   {
@@ -988,7 +1001,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Pencil underdrawing visible, smudge marks, peg-bar registration holes, rough construction lines, colored pencil fill',
       creative_brief:
-        'The hand that drew this is still present in every smudge, every construction line left unerased, every wobble that refused to become perfect. This is animation before it learned to lie — raw graphite on paper, the smell of a studio floor, the sound of a pencil scratching toward the next frame.',
+        'Preserve textured hand-drawn rough grammar as a reusable style system: visible underdrawing, paper-tooth graphite behavior, and imperfect human line variance should remain consistent across subjects.',
     },
   },
   {
@@ -999,7 +1012,7 @@ export const GENERATED_STYLE_PRESETS = [
       'hard outlines, cel shading, flat colors, rigid, static, geometric, stiff, low detail, simple',
     style: {
       aesthetic:
-        'Watercolor-bleeding anime, ink-wash fluidity, dissolving linework into color pools, Studio 4°C experimental energy, backgrounds painted as impressionist landscapes, characters existing as pigment suggestions, movement captured through paint splashes, Yuasa-esque liquid reality',
+        'Watercolor-bleeding anime with ink-wash fluidity, dissolving linework, experimental art-film energy, and subjects reduced into pigment suggestions',
       form_and_line:
         'Loose dissolving ink contours, wet-into-wet bleeding edges, sumi-e gesture lines, variable wash pressure, disappearing outlines',
       color_palette:
@@ -1009,14 +1022,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Wet rice-paper buckling, ink bleeding into surrounding fibers, watercolor bloom halos, salt-texture crystals',
       render_quality:
-        'Experimental art-anime frame, painterly moving canvas, ink-and-wash cinema, anti-commercial beauty',
+        'Experimental art-anime frame, painterly moving canvas, ink-and-wash cinema, and noncommercial handmade beauty',
       spatial_distortion:
-        'Figures dissolving at edges into abstract color fields, backgrounds bleeding into foreground, no hard spatial boundaries',
+        'Edges dissolve into abstract color fields, foreground and background bleed together, no hard spatial boundaries',
       atmosphere: 'Meditative, ephemeral, dreamlike transience, ink-stone poetry',
       key_features:
         'Watercolor blooms, disappearing linework, ink-pool negative space, pigment granulation, wet-paper texture',
       creative_brief:
-        'Pigment breathes across wet paper, characters dissolving at their edges into pools of memory and suggestion. The image refuses to hold still, bleeding from form into feeling, from ink into atmosphere. What remains is not a drawing but the ghost of one — already fading, already beautiful.',
+        'Preserve fluid painterly anime grammar as a reusable style system: wet-into-wet edge dissolution, ink-wash gesture hierarchy, and porous paper-driven pigment behavior should remain consistent across subjects without forcing landscape or character composition.',
     },
   },
   {
@@ -1027,7 +1040,7 @@ export const GENERATED_STYLE_PRESETS = [
       'warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured',
     style: {
       aesthetic:
-        'Frozen-crystalline-anime, characters as living ice-sculptures, faceted-glass-surface-rendering, internal-light-refraction-splitting-into-rainbow, diamond-gem-cut-proportions-on-human-figures, frozen-in-motion poses, sub-zero-beauty, Ice-Queen-archetype taken to geometric extreme, Land-of-the-Lustrous-Houseki-no-Kuni gem-people energy',
+        'Frozen-crystalline anime treatment with faceted glass surfaces, internal light refraction, gem-cut proportion logic, frozen motion, and sub-zero elegance',
       form_and_line:
         'Faceted-crystal contours, sharp-geometric-edge-lines, no organic curves, prism-cut-surface-faceting, hexagonal-ice-crystal symmetry',
       color_palette:
@@ -1039,13 +1052,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Crystalline-ice-anime aesthetic, gem-cut-beauty, frozen-refractive-rendering, arctic-elegance, geometric-ice-sculpture-animation',
       spatial_distortion:
-        'Faceted-gem-cut body proportions, hexagonal-symmetry, prism-split-light-spatial-rainbows, ice-shard-fragmentation-composition',
+        'Faceted gem-cut proportion shifts, hexagonal symmetry, prism-split spatial rainbows, and shard-fragment composition',
       atmosphere:
-        'Frozen, pristine, otherworldly-cold, crystal-temple-silence, geometric-perfection-awe, winter-solitude-beauty',
+        'Frozen, pristine, otherworldly-cold, geometric-perfection awe, winter-solitude beauty',
       key_features:
         'Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting, ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures',
       creative_brief:
-        'Light enters the figure and fractures — prismatic rainbows spilling from hexagonal planes where flesh once curved soft and warm. Each character is a geometry of frozen time, refractive surfaces catching interior light that has no earthly source. The cold here is not absence but presence, a perfection too structured to be merely winter.',
+        'Preserve ice-crystal refractive anime grammar as a reusable style system: faceted prism anatomy, internal refraction hierarchy, and sub-zero geometric material logic should remain consistent across subjects without requiring ice people, monarch archetypes, or literal sculpture poses.',
     },
   },
   {
@@ -1056,25 +1069,25 @@ export const GENERATED_STYLE_PRESETS = [
       'cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful',
     style: {
       aesthetic:
-        'Extreme body-horror anime, exposed viscera rendered with biological accuracy, crimson-black palette, anatomical detail obsession, ero-guro tradition, Shintaro Kago manga excess, medical-textbook meets nightmare, beautiful gore, Junji Ito spiral contamination',
+        'Extreme body-horror anime transformed into clinical anatomical abstraction, crimson-black dread, biological pattern obsession, and transgressive nightmare beauty',
       form_and_line:
-        'Hyper-precise anatomical linework, muscle-fiber stippling, vein-network crosshatching, bone-texture rendering, obsessive biological detail',
+        'Hyper-precise anatomical linework, fiber-like stippling, vein-network crosshatching, bone-like texture rendering, and obsessive biological detail',
       color_palette:
         'Fresh-blood crimson, viscera pink, bone-bleach white, bruise-spectrum purple-to-black, bile yellow-green, iron-oxide rust, surgical steel blue',
       lighting_setup:
         'Clinical operating-theater light, harsh single-source casting deep shadows into wounds, wet-glint highlights on exposed tissue',
       material_texture:
-        'Wet muscle striation, exposed bone porosity, coagulating blood surface, membrane translucency, organ-gleam wetness',
+        'Wet striation, porous bone-like surfaces, coagulated red gloss, membrane translucency, and organic gleam',
       render_quality:
-        'Medical-textbook horror anime, anatomically-precise gore, beautiful-disgusting rendering, nightmare-poetry visual',
+        'Medical-textbook horror anime, anatomically precise abstraction, beautiful-disgusting rendering, and nightmare-poetry visual',
       spatial_distortion:
-        'Body cavities opening impossibly, anatomical diagrams overlaid on living figures, spiral distortion consuming space',
+        'Anatomy opens into impossible diagram-space, biological schematics overlay subjects, spiral distortion consumes depth',
       atmosphere:
         'Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare',
       key_features:
-        'Exposed musculature, arterial spray detail, bone-texture rendering, biological-precision gore, spiral contamination motifs',
+        'Anatomical pattern density, red-black clinical dread, bone-texture rendering, biological-precision abstraction, spiral contamination motifs',
       creative_brief:
-        'The body becomes a landscape of terrible revelation, muscle fiber rendered with the reverence of a medical engraving and the nightmare of a fever dream. What should remain hidden unfurls in wet crimson detail, spiraling outward in geometries of beautiful contamination. The horror is not in the gore but in how carefully each fiber has been mapped.',
+        'Preserve visceral-horror anime grammar as a reusable style system: clinical-detail rendering discipline, transgressive anatomical abstraction, and high-contrast dread composition should remain consistent across subjects.',
     },
   },
   {
@@ -1085,25 +1098,24 @@ export const GENERATED_STYLE_PRESETS = [
       'colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft',
     style: {
       aesthetic:
-        'Green-phosphor-night-vision-goggle footage, combat-scene viewed through military-NVG-overlay, ghostly-green-monochrome, lens-flare-from-distant-explosion-overexposing-tube, body-cam-HUD-elements-in-corners, infrared-laser-sight-dancing-dots, tactical-grid-overlay, grainy-image-intensifier-noise, battlefield-seen-through-technology, Ghost-in-the-Shell-SAC-tactical-cam energy',
+        'Green-phosphor sensor footage with ghostly monochrome, HUD corner elements, tactical grid overlays, image-intensifier noise, and technology-mediated vulnerability',
       form_and_line:
-        'Phosphor-scan-line-contours, image-intensifier-grain-defining-edges, HUD-overlay-line-elements, targeting-reticle-crosshairs',
+        'Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements, and reticle-like alignment marks',
       color_palette:
         'Phosphor-green-monochrome, black-level-crushed-shadows, overexposed-bloom-white, NVG-emerald-tube-tint, no-other-colors-at-all',
       lighting_setup:
-        'Infrared-illuminator-beam, moon-ambient-amplified, explosion-flash-bloom-overexposing-sensor, distant-firelight-registering-as-white-hot',
+        'Infrared illuminator beam, amplified moon-ambient, sensor-overload bloom, and distant hot-source registration as white',
       material_texture:
         'Image-intensifier-scintillation-noise, phosphor-screen-grain, CMOS-night-sensor-artifacts, lens-tube-vignette, dust-on-optic-specks',
       render_quality:
         'Night-vision-footage aesthetic, tactical-body-cam realism, military-surveillance-grain, green-phosphor-beauty, ghost-through-technology vision',
       spatial_distortion:
-        'Fisheye-NVG-lens-distortion, HUD-elements-composited, body-cam-head-motion-blur, targeting-reticle-center',
-      atmosphere:
-        'Tactical, tense, nocturnal-war, predator-stalking, high-tech-vulnerability, ghostly-green-paranoia',
+        'Fisheye lens distortion, HUD elements composited over subject space, body-cam-like motion blur, reticle-centered framing',
+      atmosphere: 'Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia',
       key_features:
-        'Green-phosphor-monochrome, image-intensifier-grain, HUD-tactical-overlay, targeting-reticle, NVG-lens-vignette, infrared-laser-dots, body-cam-framing',
+        'Green-phosphor monochrome, image-intensifier grain, HUD overlay, reticle alignment, lens vignette, infrared points, body-cam framing',
       creative_brief:
-        "The world flattens into phosphor-green truth — bodies reduced to thermal ghosts drifting through an intensifier tube's grainy field of regard. HUD crosshairs float over the scene like digital prayers, every mote of sensor noise a witness to the invisible spectrum. Seeing here is an act of technology, not nature, and the feed cannot be trusted to show what matters.",
+        'Preserve night-vision tactical-footage grammar as a reusable style system: phosphor monochrome sensor response, HUD-overlay compositing, and intensifier-grain perception should remain consistent across subjects without requiring military combat, battlefield, explosions, or weapons.',
     },
   },
   {
@@ -1111,28 +1123,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thermal-Heat-Signature Vision',
     category: '12. Anime Style Spectrum',
     negativePrompt:
-      'cool, blue, dark, muted, smooth gradient, natural color, realistic skin, normal lighting, visible detail',
+      'muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight palette, non-sensor rendering',
     style: {
       aesthetic:
-        'Predator-vision-thermal-camera anime, characters rendered as heat-maps, faces glowing white-hot-to-red-to-cool-blue-gradient, thermal-crosshairs-tracking-targets, Predator-trilogy-HUD-tactical-overlay, body-heat-leaking-through-walls, cold-blooded-things-disappearing-into-background-blue, fever-hot-rage-shown-as-white-core, temperature-emotional-correlation',
+        'Thermal-camera anime treatment where subjects become heat maps, emotion and intensity register as false-color temperature, and sensor overlays replace natural sight',
       form_and_line:
-        'Heat-gradient-contours replacing drawn lines, no-ink-edges-just-temperature-boundaries, thermal-isotherm-banding, HUD-overlay-targeting-lines',
+        'Heat-gradient contours replacing drawn lines, no ink edges, temperature boundaries, thermal isotherm banding, and HUD-overlay alignment lines',
       color_palette:
         'White-hot-core, yellow-very-hot, red-hot, magenta-warm, purple-cooling, cyan-cold, deep-blue-coldest, black-absolute-zero, ironbow-false-color-spectrum, rainbow-thermal-palette',
       lighting_setup:
-        'Emissive-heat-only illumination, no external-light-sources, self-radiating-body-warmth, hot-objects-glowing-against-cold-background',
+        'Emissive-heat-only illumination, no external light sources, self-radiating warmth, and hot forms glowing against cold fields',
       material_texture:
         'Thermal-sensor-noise-grain, microbolometer-pixel-artifacts, digital-readout-overlay, emissivity-difference-texture, heat-bloom-halo',
       render_quality:
-        'Thermal-camera-vision anime, Predator-HUD-aesthetic, heat-signature-beauty, infrared-warfare-rendering, false-color-body-heat-art',
+        'Thermal-camera anime, heat-signature beauty, infrared sensor rendering, and false-color body-heat abstraction',
       spatial_distortion:
-        'Thermal-crosshairs-targeting, heat-plume-distortion, body-heat-translucency-through-thin-walls, cold-receding-hot-advancing-depth',
+        'Thermal reticle alignment, heat-plume distortion, temperature translucency, and cold-receding hot-advancing depth',
       atmosphere:
-        'Tactical, predatory, invisible-spectrum, alien-senses, seen-beyond-human-vision, heat-of-battle-literal, technological-bloodlust',
+        'Tactical, predatory, invisible-spectrum, beyond-human vision, technological bloodlust',
       key_features:
-        'White-hot-to-blue-cold-gradient, ironbow-false-color-spectrum, thermal-crosshairs-HUD, heat-bloom-halo, no-ink-edges, emissive-heat-only-lighting, Predator-trilogy-tactical-overlay',
+        'White-hot to blue-cold gradients, ironbow false-color spectrum, thermal HUD marks, heat-bloom halos, no ink edges, emissive-only lighting',
       creative_brief:
-        "Rage registers as white-hot core, fear as cooling blue, the body's emotional truth mapped across the ironbow spectrum where no face remains recognizable. The thermal crosshair tracks heat like a predator reading prey through walls, every bloom of infrared halo a confession the subject cannot control. Vision itself becomes weaponized — to be seen is to be targeted.",
+        'Preserve thermal-signature anime grammar as a reusable style system: false-color heat-band mapping, emissive-only scene logic, and HUD-tracked sensor perception should remain consistent across subjects without relying on Predator IP, target-hunting scenes, walls, or tactical combat setup.',
     },
   },
   {
@@ -1143,24 +1155,24 @@ export const GENERATED_STYLE_PRESETS = [
       'muted, subtle, soft, vintage, film grain, dark, moody, restrained, traditional, quiet',
     style: {
       aesthetic:
-        'Internet-age saturated excess, glitch-effect overlays, VHS color-bleed corruption, vaporwave anime avatar, TikTok filter maximalism, chromatic aberration on every edge, holographic sparkles, song-cover-art energy, vocaloid pop-concert color explosion',
+        'Internet-age saturated excess, glitch-effect overlays, color-bleed corruption, avatar-pop maximalism, chromatic aberration, holographic sparkle, and song-cover energy',
       form_and_line:
         'Sharp digital vector outlines, occasional scanline breakage, datamosh distortion zones, pixel-sorted edge artifacts',
       color_palette:
         '#FF00FF magenta, #00FFFF cyan, toxic-slime green, electric lavender, candy-flip spectrum, RGB-split borders, eye-searing saturation',
       lighting_setup:
-        'Ring-light selfie glow, neon tube accent, bounce-reflected magenta, screen-glow on face, club-strobe rhythm',
+        'Ring-light glow, neon-tube accents, bounce-reflected magenta, screen glow, and club-strobe rhythm',
       material_texture:
         'Holographic foil shimmer, plastic-LCD screen diffusion, glitter-dust particle overlay, glossy phone-screen reflection',
       render_quality:
-        'Hyper-digital anime frame, TikTok-filter aesthetic, internet-native visual language, saturated-beyond-natural rendering',
+        'Hyper-digital anime frame, filter-maximalist aesthetic, internet-native visual language, saturated-beyond-natural rendering',
       spatial_distortion:
         'Glitch-displaced body parts, RGB-channel-offset doubling, screen-wrap distortion, fish-eye music-video lens',
       atmosphere: 'Euphoric, overstimulated, terminally-online joy, digital-nativity celebration',
       key_features:
-        'Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture visual references, digital glitch artifacts',
+        'Chromatic aberration edges, RGB channel split, holographic overlay, internet-culture signal language, digital glitch artifacts',
       creative_brief:
-        'The screen drinks itself, pixels bleeding into one another in a RGB-split sacrament of digital excess. Every edge fractures into chromatic rainbows, every surface holographic foil catching the ring-light glow of infinite scroll. This is the aesthetic of being too online to feel anything but sublime.',
+        'Preserve neon-hyperpop grammar as a reusable style system: RGB-split edge behavior, high-saturation digital glow stacking, and holographic glitch overlays should remain consistent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

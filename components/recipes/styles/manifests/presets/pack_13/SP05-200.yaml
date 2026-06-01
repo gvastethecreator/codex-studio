@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Contemporary shojo realism, umbrellas, rain-soaked school romance, tentative self-worth, modern intimacy and apology under sodium streetlights
-  form_and_line: Naturalistic modern-shojo contouring, umbrella-canopy framing arcs, hesitant hand-gesture emphasis, and close-distance posture cues
+  aesthetic: Contemporary shojo realism, rain-canopy intimacy, tentative self-worth, modern vulnerability, and apology under sodium streetlights
+  form_and_line: Naturalistic modern-shojo contouring, canopy-like framing arcs, hesitant hand-gesture emphasis, and close-distance posture cues
   color_palette: Sodium amber highlights, wet asphalt blue-grays, uniform charcoal, muted skin warmth, and rain-reflection silvers
-  lighting_setup: Streetlamp halo pools, rainy backscatter glow, storefront practical spill, and low-contrast nocturnal fill
-  material_texture: Rain-beaded umbrella nylon, damp cotton uniforms, pavement gloss reflections, and fogged acrylic signage surfaces
+  lighting_setup: Streetlamp halo pools, rainy backscatter glow, practical spill, and low-contrast nocturnal fill
+  material_texture: Rain-beaded nylon sheen, damp cotton softness, pavement gloss reflections, and fogged acrylic surface cues
   render_quality: Intimate rainy-romance rendering with grounded urban realism and emotionally readable micro-acting
-  spatial_distortion: Condensed shared-umbrella framing compression to emphasize vulnerability proximity
+  spatial_distortion: Condensed shared-canopy framing compression to emphasize vulnerability proximity
   atmosphere: Rainy, vulnerable, sincere, modern
-  key_features: Umbrella framing, rain reflections, urban school-route scenery, hesitant touch language, confession-heavy close-ups
+  key_features: Canopy framing, rain reflections, sodium-lit intimacy, hesitant touch language, confession-heavy close-ups
   creative_brief: >-
     Preserve rainy-umbrella confession grammar as a reusable style language:
-    sodium-lit wet urban surfaces, hesitant intimate blocking, and modern
+    sodium-lit wet surfaces, hesitant intimate blocking, and modern
     vulnerability pacing should remain consistent across subjects.
 avoidRules:
   - realistic

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-010
 packId: pack_16
-name: Adventure Martial Comedy
+name: Round Adventure Slapstick Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Aventura marcial cómica de formas redondas, con inocencia física, slapstick amable y energía itinerante.
+  aesthetic: Aventura cómica de formas redondas, inocencia física, slapstick amable y energía itinerante.
   form_and_line: Trazo cel elástico y expresivo, timing de gag corporal y silueta cartoon de lectura instantánea.
   color_palette: Amarillos soleados, verdes vivos, naranjas suaves y azules limpios de viaje clásico.
   lighting_setup: Iluminación abierta de aventura diurna, sombra simple y acentos brillantes de humor físico.
-  material_texture: Polvo caricaturesco, tela simple de viaje, piedra ligera y grano retro optimista.
+  material_texture: Polvo caricaturesco, tela simple, piedra ligera y grano retro optimista.
   render_quality: Acabado broadcast cálido con énfasis en claridad cómica y ternura de movimiento.
-  spatial_distortion: Mundo expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.
+  spatial_distortion: Espacio expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.
   atmosphere: Aventurera, alegre, juguetona, entrañable.
-  key_features: Proporción redondeada, energía de troupe viajera, beat de broma visual y combate de tono amistoso.
-  creative_brief: Define una gramática reusable de aventura marcial humorística para cualquier sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de gag físico.
+  key_features: Proporción redondeada, energía de troupe, beat de broma visual y choque amistoso.
+  creative_brief: >-
+    Define una gramática reusable de round-adventure-slapstick para cualquier
+    sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de
+    gag físico sin imponer artes marciales, viajes, troupe, combate ni mundo
+    expansivo literal.
 avoidRules:
   - realistic
   - 3d render

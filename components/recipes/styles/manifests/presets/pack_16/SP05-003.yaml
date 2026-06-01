@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-003
 packId: pack_16
-name: Jazzy Heist Rogue
+name: Jazzy Rogue Heist Rhythm Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heist retro-jazz de picardía elegante, con silueta delgada, humor seco y glamour urbano nocturno.
-  form_and_line: Trazo cel vintage afilado, gestualidad pícara y staging de robo con coreografía de timing musical.
+  aesthetic: Picardía retro-jazz elegante, humor seco, glamour nocturno abstracto y tensión de engaño sofisticado.
+  form_and_line: Trazo cel vintage afilado, gestualidad pícara y coreografía de timing musical sin acción fija.
   color_palette: Carbón nocturno, ámbar de farola, turquesa tenue y acentos crema de cartel antiguo.
-  lighting_setup: Noir suave con contraluz de persiana, reflejo húmedo de calle y key focal en gesto de engaño.
-  material_texture: Asfalto mojado, gabardina textil, cromado de vitrina y grano telecine de caper setentero.
+  lighting_setup: Noir suave con contraluz recortado, reflejo húmedo y key focal en gesto de engaño.
+  material_texture: Superficie mojada, tela textil elegante, cromado reflectante y grano telecine de caper setentero.
   render_quality: Acabado broadcast 80s de alto carácter, lectura clara de astucia, ritmo y puesta en escena.
-  spatial_distortion: Perspectiva urbana oblicua con encuadres de fuga, contrapicado de estilo y compresión de callejón.
+  spatial_distortion: Perspectiva oblicua con encuadres de fuga, contrapicado de estilo y compresión de escape.
   atmosphere: Jazzy, juguetona, traviesa, sofisticada.
-  key_features: Siluetas de abrigo largo, ritmo de montaje tipo atraco, luces urbanas y acting de doble intención.
-  creative_brief: Diseña una gramática reusable de heist urbano con swing retro para cualquier sujeto, priorizando elegancia táctica, ironía visual y ritmo nocturno.
+  key_features: Silueta estilizada, ritmo de montaje heist, luces recortadas y acting de doble intención.
+  creative_brief: >-
+    Diseña una gramática reusable de jazzy-rogue-heist-rhythm para cualquier
+    sujeto, priorizando elegancia táctica, ironía visual y swing nocturno sin
+    imponer robos, calles, callejones, gabardinas, vitrinas ni dúos
+    investigadores.
 avoidRules:
   - realistic
   - 3d render

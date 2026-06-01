@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Gentle domestic routine, childcare sincerity, small apartments, school lunches, emotional growth through quiet responsibility and ordinary care
-  form_and_line: Soft parental-gesture contour emphasis, lunchbox-and-household prop readability, and grounded everyday pose language
+  aesthetic: Gentle everyday tenderness where care, responsibility, and emotional growth emerge through small ordinary gestures
+  form_and_line: Soft caregiving-gesture contour emphasis, routine-detail readability, and grounded everyday pose language
   color_palette: Tatami beige, gentle cream whites, muted pastel clothing tones, and warm morning kitchen ambers
-  lighting_setup: Early domestic window light, soft overhead apartment diffusion, and evening lamp warmth in care routines
-  material_texture: Cotton homewear, worn apartment surfaces, lunchbox plastics and cloth wraps, and notebook-paper school textures
+  lighting_setup: Early soft daylight, overhead diffusion, and evening lamp warmth in care routines
+  material_texture: Cotton softness, worn lived-in surfaces, small utility plastics, cloth wraps, and paper textures
   render_quality: Intimate domestic slice rendering with calm emotional clarity and routine-detail fidelity
-  spatial_distortion: Close-room framing compression that reinforces caregiving intimacy
+  spatial_distortion: Close framing compression that reinforces caregiving intimacy
   atmosphere: Tender, domestic, patient, soft
-  key_features: Household routine props, lunchbox detail, caregiving gestures, neighborhood paths, parent-child framing
+  key_features: Routine-detail anchors, caregiving gestures, close relational framing, patient pauses, and small acts of responsibility
   creative_brief: >-
-    Preserve single-parent tenderness grammar as a reusable style system:
-    domestic-routine staging, caregiving gesture focus, and everyday emotional
-    sincerity should remain coherent across subjects.
+    Use the title as a style anchor for everyday care. Preserve caregiving
+    gesture focus and emotional sincerity without requiring apartments,
+    lunches, school items, or parent-child scene.
 avoidRules:
   - realistic
   - 3d render

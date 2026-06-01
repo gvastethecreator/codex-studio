@@ -10,19 +10,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo',
     style: {
-      aesthetic: 'Marine-tech harbor where ocean ecology and rave-coded engineering coexist.',
-      form_and_line: 'Floating docks, modular reef towers, and wavy circuit-like pathways.',
-      color_palette: 'Turquoise, magenta, and seafoam green.',
-      lighting_setup: 'Bioluminescent reef glow and humid sunset reflections on wet decks.',
+      aesthetic:
+        'Reef-circuit seapunk where party lighting, civic utility, and living coral pulse as one wet nervous system.',
+      form_and_line:
+        'Buoyant cell clusters, branching reef towers, wavy circuit paths, pontoon seams, and current-drawn loops.',
+      color_palette:
+        'Turquoise voltage, hot magenta, seafoam green, wet concrete gray, and pearly coral white.',
+      lighting_setup:
+        'Bioluminescent reef pulses, humid sunset reflections, under-platform LEDs, and specular wet-edge flashes.',
       material_texture:
-        'Iridescent polymers, coral composites, wet concrete, and translucent tubing.',
-      render_quality: 'Vibrant high-detail concept with strong nightlife and infrastructure cues.',
+        'Iridescent polymers, coral composites, wet concrete, translucent tubing, algae film, and salt-crusted handrails.',
+      render_quality:
+        'Vibrant high-detail concept with nightlife color discipline and clear regenerative infrastructure.',
       spatial_distortion:
-        'Curvilinear marina composition guiding eye through layered floating platforms.',
-      atmosphere: 'Playful futurity, tidal rhythm, and communal experimentation.',
-      key_features: 'Reef reactors, floating dance piers, and algae-powered transit pods.',
+        'Curvilinear waterline composition where circuit nodes drift yet stay connected.',
+      atmosphere:
+        'Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.',
+      key_features:
+        'Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.',
       creative_brief:
-        'A seapunk marina where public life literally floats on regenerative ocean systems.',
+        'Preserve coral circuit-marina grammar as a reusable style system: wet-circuit civic modules, reef-luminescent infrastructure, and tidal nightlife ecology should remain coherent across subjects.',
     },
   },
   {
@@ -32,18 +39,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, dry-desert-elements, medieval-castle, bland-neutral, watermark, text, logo',
     style: {
-      aesthetic: 'Deep-sea settlement lit by engineered reefs and synthwave ocean rituals.',
-      form_and_line: 'Dome habitats, pressure-lock corridors, and branching reef antennas.',
-      color_palette: 'Deep ultramarine, neon violet, and electric cyan.',
-      lighting_setup: 'Pulsing bioluminescence and submersible beam cones cutting the dark.',
-      material_texture: 'Pressure glass, bio-resin shells, and mineral-encrusted support frames.',
-      render_quality: 'Cinematic underwater concept with clear depth layering.',
+      aesthetic:
+        'Abyssal rave ecology where pressure architecture hides inside living neon reef and darkness becomes a material.',
+      form_and_line:
+        'Pressure-dome curves, lock-ring collars, branching reef antennae, descending cable arcs, and bubble clusters.',
+      color_palette:
+        'Abyss ultramarine, neon violet, electric cyan, black water, and pale mineral glow.',
+      lighting_setup:
+        'Pulsing bioluminescent ribs, narrow submersible beams, sonar flashes, and particulate sparkle swallowed by darkness.',
+      material_texture:
+        'Pressure glass, bio-resin shells, mineral-encrusted frames, wet luminous coral skins, and rubber seal bands.',
+      render_quality:
+        'Cinematic underwater concept with clean pressure-depth layering and no generic aquarium prettiness.',
       spatial_distortion:
-        'Vertical descent composition from surface rigs to abyssal habitat rings.',
-      atmosphere: 'Immersive mystery, subaquatic nightlife, and adaptive resilience.',
-      key_features: 'Neon coral arrays, sub docks, and sonar-lit gathering plazas.',
+        'Vertical descent composition stacks glow layers like pressure zones, making distance feel heavy and submerged.',
+      atmosphere:
+        'Subaquatic nightlife, alien intimacy, adaptive resilience, and beautiful claustrophobia.',
+      key_features:
+        'Neon coral arrays, pressure-lock collars, sonar rings, black-water voids, and submersible-scar detailing.',
       creative_brief:
-        'A seapunk abyss city where culture and infrastructure evolve with living reefs.',
+        'Preserve abyssal neon-reef grammar as a reusable style system: pressure-adapted luminous ecology, black-water depth layering, and submerged resilience cues should remain coherent across subjects.',
     },
   },
   {
@@ -52,18 +67,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo',
     style: {
-      aesthetic: 'Coastal megacity transit line running through transparent tidal tunnels.',
+      aesthetic:
+        'Transparent velocity seapunk where engineered waves become an aquarium of motion.',
       form_and_line:
-        'Cylindrical glass tubes, wavebreaker stations, and modular ferry interchanges.',
-      color_palette: 'Aqua glass, coral pink, and midnight blue.',
-      lighting_setup: 'Refraction caustics and station LEDs creating moving light bands.',
-      material_texture: 'Reinforced tideglass, anti-salt alloys, and damp composite walkways.',
-      render_quality: 'Detailed infrastructure concept with strong kinetic framing.',
-      spatial_distortion: 'Long tunnel vanishing lines with fish silhouettes and passing trains.',
-      atmosphere: 'Fast coastal energy, aquatic wonder, and civic fluidity.',
-      key_features: 'Tideglass train tubes, reef transfer hubs, and kelp-powered station vents.',
+        'Tideglass cylinders, wavebreaker fins, gasket rings, modular knots, and long ribbons bending through water.',
+      color_palette:
+        'Aqua glass, coral pink, midnight blue, stainless salt gray, and pale kelp green.',
+      lighting_setup:
+        'Moving caustic bands, linear LEDs, passing shadow silhouettes, and refracted station glow on wet walkways.',
+      material_texture:
+        'Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter grates.',
+      render_quality:
+        'Detailed infrastructure concept with kinetic framing and believable pressure-control logic.',
+      spatial_distortion:
+        'Tube-like vanishing lines bend through refraction, motion blur, and fishlike silhouettes.',
+      atmosphere:
+        'Fast coastal energy, civic fluidity, public wonder, and controlled pressure risk.',
+      key_features:
+        'Tideglass bands, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic map-like patterns.',
       creative_brief:
-        'A seapunk metro where commuting itself becomes an underwater public spectacle.',
+        'Preserve tideglass subway grammar as a reusable style system: refracted transit transparency, gasketed pressure infrastructure, and coastal public-speed choreography should remain coherent across subjects.',
     },
   },
   {
@@ -72,16 +95,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, diesel, grim, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Floating causeway lit by neon-tinted tide instrumentation and reef tech.',
-      form_and_line: 'Sinuous dock lines, floating pylons, and wave-signal rails.',
+      aesthetic: 'Tidal neon seapunk language lit by tide instrumentation and reef tech.',
+      form_and_line:
+        'Sinuous dock-like lines, floating pylons, wave-signal rails, and neon tide bands.',
       color_palette: 'Electric cyan, ultraviolet, and foam white.',
       lighting_setup: 'Night tides with glowing signage and reflected water bloom.',
       material_texture: 'Translucent polymer, salt-wet metal, and coral composite.',
       render_quality: 'Energetic seapunk concept art with clean pathway readability.',
-      spatial_distortion: 'Curving causeway through layered marine platforms.',
+      spatial_distortion: 'Curving causeway-like depth through layered marine bands.',
       atmosphere: 'Motion, nightlife, and tidal futurity.',
-      key_features: 'Tide beacons, floating rail links, and reef-lit edges.',
-      creative_brief: 'A seapunk causeway where the ocean becomes a neon civic corridor.',
+      key_features:
+        'Tide beacons, floating rail-link motifs, reef-lit edges, and neon current marks.',
+      creative_brief:
+        'Preserve tidal neon-causeway grammar as a reusable style system: sinuous floating circulation, tide-instrument nightlife glow, and marine civic motion should remain coherent across subjects.',
     },
   },
   {
@@ -90,16 +116,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, bleak, rust, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Harbor where reef structures act as a resonant choir and civic acoustic shell.',
-      form_and_line: 'Curved reef amphitheater, dock arcs, and shell-like acoustic ribs.',
+      aesthetic: 'Reef-choir seapunk where coral structures act as resonant civic acoustic shells.',
+      form_and_line:
+        'Curved reef amphitheater bands, dock-like arcs, shell acoustic ribs, and signal-fin silhouettes.',
       color_palette: 'Aqua, opal pink, and sea-glass green.',
       lighting_setup: 'Bioluminescent glow with bright coastal reflections.',
       material_texture: 'Shell composite, translucent fins, and slick stone.',
       render_quality: 'Lush marine concept with acoustic architecture cues.',
-      spatial_distortion: 'Amphitheater curve around a harbor inlet.',
+      spatial_distortion: 'Amphitheater curve around an inlet-like acoustic void.',
       atmosphere: 'Communal celebration, tidal resonance, and playful immersion.',
-      key_features: 'Reef choir shells, harbor steps, and signal fins.',
-      creative_brief: 'A seapunk harbor where the reef itself amplifies song and civic life.',
+      key_features:
+        'Reef choir shells, tidal step motifs, signal fins, and resonant coral ribbing.',
+      creative_brief:
+        'Preserve reef choir-harbor grammar as a reusable style system: acoustic reef amphitheater geometry, luminous communal tidal rituals, and playful civic resonance should remain coherent across subjects.',
     },
   },
   {
@@ -108,17 +137,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, grimdark, industrial, watermark, text, logo, foggy',
     style: {
-      aesthetic: 'Boardwalk arcade wrapped in kelp forests and shimmering game modules.',
-      form_and_line: 'Pier rails, arcade pavilions, and swaying kelp strands.',
+      aesthetic: 'Kelp arcade seapunk where play modules shimmer inside swaying marine growth.',
+      form_and_line:
+        'Pier-rail strokes, arcade pavilion shapes, swaying kelp strands, and wave-game curves.',
       color_palette: 'Neon teal, lime, and bubblegum coral.',
       lighting_setup: 'Sunset neon mixed with underwater glow.',
       material_texture: 'Wet decking, translucent plastic, and kelp fiber.',
       render_quality: 'Bright concept art with arcade clarity.',
-      spatial_distortion: 'Pier perspective extending into underwater columns.',
+      spatial_distortion: 'Pier-like perspective extending into underwater column rhythm.',
       atmosphere: 'Fun, drift, and coastal exuberance.',
-      key_features: 'Kelp cabinets, boardwalk lanterns, and wave game pods.',
+      key_features:
+        'Kelp cabinet motifs, boardwalk lantern marks, wave-game pods, and submerged arcade glow.',
       creative_brief:
-        'A seapunk boardwalk where the arcade floats half in the sea and half in light.',
+        'Preserve kelp arcade-boardwalk grammar as a reusable style system: pierline leisure circuitry, swaying kelp interface ornament, and sunset-neon coastal exuberance should remain coherent across subjects.',
     },
   },
   {
@@ -127,17 +158,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, heavy-industrial, rust, watermark, text, logo, sludge',
     style: {
-      aesthetic: 'District organized by pearl-like water current chambers and tidal walkways.',
-      form_and_line: 'Rounded courtyards, current channels, and pearl domes.',
+      aesthetic:
+        'Pearl-current seapunk organized by water chambers, tidal flow, and soft civic opalescence.',
+      form_and_line:
+        'Rounded courtyard-like loops, current channels, pearl domes, and tide bridge arcs.',
       color_palette: 'Pearl white, turquoise, and seafoam.',
       lighting_setup: 'Clear aquamarine daylight and soft water caustics.',
       material_texture: 'Mother-of-pearl panels, polished shells, and slick stone.',
       render_quality: 'Clean marine urban concept with elegant circulation.',
-      spatial_distortion: 'Flow-based district plan bending around current loops.',
+      spatial_distortion: 'Flow-based plan bending around current loops and pearl chamber repeats.',
       atmosphere: 'Ease, flow, and refined maritime living.',
-      key_features: 'Current chambers, pearl plazas, and tide bridges.',
+      key_features:
+        'Current chamber motifs, pearl plaza loops, tide bridge arcs, and opalescent water seams.',
       creative_brief:
-        'A seapunk district designed around moving water as the city’s main organizing force.',
+        'Preserve pearl current-district grammar as a reusable style system: flow-organized maritime urbanism, pearl-chamber circulation logic, and refined aquatic ease should remain coherent across subjects.',
     },
   },
   {
@@ -146,17 +180,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, oil-slick, industrial, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Submerged pier garden where drift tides cultivate luminous flora.',
-      form_and_line: 'Pier pilings, hanging gardens, and drifting root bundles.',
+      aesthetic:
+        'Submerged drift-garden seapunk where tides cultivate luminous flora below structure.',
+      form_and_line:
+        'Pier-piling silhouettes, hanging garden forms, drifting root bundles, and tide-fed bloom arcs.',
       color_palette: 'Aquamarine, coral, and dusk violet.',
       lighting_setup: 'Underwater bloom light with surface shimmer.',
       material_texture: 'Wet timber, coral lattice, and translucent roots.',
       render_quality: 'Atmospheric undersea concept with botanical detail.',
-      spatial_distortion: 'Downward peek under the pier into layered drift gardens.',
+      spatial_distortion: 'Downward peek into layered drift-garden depth.',
       atmosphere: 'Slow growth, tide patience, and luminous ecology.',
-      key_features: 'Drift roots, subpier planters, and tide-fed blooms.',
+      key_features:
+        'Drift roots, subpier planter motifs, tide-fed blooms, and suspended luminous flora.',
       creative_brief:
-        'A seapunk underpier garden where the sea cultivates its own hanging ecosystem.',
+        'Preserve drift garden-subpier grammar as a reusable style system: substructure hanging ecologies, tide-fed luminous root layering, and patient submerged growth should remain coherent across subjects.',
     },
   },
   {
@@ -165,17 +202,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, dystopia, harsh-dark, watermark, text, logo, muddy',
     style: {
-      aesthetic: 'Night quarter lit by tide lanterns and floating route markers.',
-      form_and_line: 'Lantern strings, quay paths, and floating buoys.',
+      aesthetic:
+        'Tide-lantern seapunk night style lit by floating route markers and wet reflections.',
+      form_and_line: 'Lantern strings, quay-like paths, floating buoys, and water corridor curves.',
       color_palette: 'Moonlit blue, hot pink, and silver.',
       lighting_setup: 'Lantern glow over rippling water and wet decking.',
       material_texture: 'Glass lanterns, painted metal, and salt-worn wood.',
       render_quality: 'Vibrant night city concept with clear navigation cues.',
-      spatial_distortion: 'Meandering path through illuminated water corridors.',
+      spatial_distortion: 'Meandering path through illuminated water-corridor depth.',
       atmosphere: 'Night stroll, orientation, and civic sparkle.',
-      key_features: 'Tide lanterns, buoy markers, and wet promenade steps.',
+      key_features: 'Tide lanterns, buoy markers, wet step motifs, and floating route glows.',
       creative_brief:
-        'A seapunk quarter where lanterns float with the tide and guide every shoreline turn.',
+        'Preserve tide lantern-quarter grammar as a reusable style system: tidal wayfinding luminance, meandering waterfront promenade guidance, and nocturnal civic sparkle should remain coherent across subjects.',
     },
   },
   {
@@ -184,16 +222,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, rust, diesel, watermark, text, logo, sludge',
     style: {
-      aesthetic: 'Dockyard where waves are shaped through elegant marine fabrication.',
-      form_and_line: 'Work dock arms, wave-shaping fins, and modular platforms.',
+      aesthetic: 'Waveforge seapunk where waves are shaped through elegant marine fabrication.',
+      form_and_line:
+        'Work-dock arms, wave-shaping fins, modular platform bands, and forged current curves.',
       color_palette: 'Teal, chrome, and coral.',
       lighting_setup: 'Bright sea light with reflective wet steel.',
       material_texture: 'Marine-grade metal, translucent fins, and sea-slick stone.',
       render_quality: 'Technical seapunk infrastructure with playful polish.',
-      spatial_distortion: 'Industrial dock geometry softened by wave curves.',
+      spatial_distortion: 'Industrial dock-like geometry softened by wave curves.',
       atmosphere: 'Making, flow, and oceanic adaptation.',
-      key_features: 'Wave fins, fabrication cradles, and harbor hands.',
-      creative_brief: 'A seapunk dockyard where marine mechanics and wavecraft are one practice.',
+      key_features: 'Wave fins, fabrication cradles, marine-hand motifs, and shaped current seams.',
+      creative_brief:
+        'Preserve waveforge dockyard grammar as a reusable style system: wave-shaped fabrication infrastructure, polished marine work rhythms, and adaptive oceanic making should remain coherent across subjects.',
     },
   },
   {
@@ -202,17 +242,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, bleak, industrial, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Conservatory of ocean signals and wave-reactive botanical systems.',
-      form_and_line: 'Glass conservatory shell, signal towers, and flowing garden rings.',
+      aesthetic:
+        'Ocean-signal seapunk where botanical systems react to waves and broadcast through water.',
+      form_and_line:
+        'Glass conservatory shells, signal towers, flowing garden rings, and wave-reactive fronds.',
       color_palette: 'Sea glass, turquoise, and blush coral.',
       lighting_setup: 'Sunlit water refractions and deep-blue aquarium glow.',
       material_texture: 'Glass, kelp mesh, and polished shell surfaces.',
       render_quality: 'Luminous seapunk conservatory with crisp flora detail.',
-      spatial_distortion: 'Conservatory dome with concentric wave gardens.',
+      spatial_distortion: 'Conservatory-dome composition with concentric wave-garden rhythm.',
       atmosphere: 'Curiosity, translation, and marine harmony.',
-      key_features: 'Signal fronds, tide instruments, and wave blooms.',
+      key_features: 'Signal fronds, tide instruments, wave blooms, and glass shell caustics.',
       creative_brief:
-        'A seapunk conservatory where the ocean’s signals are grown into living botanical language.',
+        'Preserve ocean signal-conservatory grammar as a reusable style system: wave-linguistic botanical instrumentation, concentric marine greenhouse systems, and luminous translational harmony should remain coherent across subjects.',
     },
   },
   {
@@ -221,17 +263,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, stormy, industrial-rust, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Relay station floating in a calm lagoon with signal rings and buoy antennas.',
-      form_and_line: 'Circular relay disks, buoy stacks, and floating dock spokes.',
+      aesthetic:
+        'Lagoon relay seapunk with calm mirror water, signal rings, and buoy antenna logic.',
+      form_and_line:
+        'Circular relay disks, buoy stacks, floating spoke bands, and mirror-water channels.',
       color_palette: 'Lagoon blue, neon mint, and pearl.',
       lighting_setup: 'Twilight glow with mirrored lagoon reflections.',
       material_texture: 'Floating polymers, water glass, and brushed aluminum.',
       render_quality: 'Sleek coastal infrastructure with readable signal logic.',
-      spatial_distortion: 'Centered relay hub with radiating lagoon spokes.',
+      spatial_distortion: 'Centered relay hub with radiating lagoon-like spokes.',
       atmosphere: 'Connection, distance translation, and quiet power.',
-      key_features: 'Relay disks, buoy antennas, and mirror-water channels.',
+      key_features: 'Relay disks, buoy antennas, mirror-water channels, and calm signal rings.',
       creative_brief:
-        'A seapunk relay station where the lagoon itself carries and repeats the signal.',
+        'Preserve lagoon relay-station grammar as a reusable style system: circular waterborne signal infrastructure, buoy-antenna relay choreography, and quiet connective power should remain coherent across subjects.',
     },
   },
   {
@@ -240,17 +284,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, dingy, industrial, watermark, text, logo, clutter',
     style: {
-      aesthetic: 'Metro pier where shell forms act as transit kiosks and weather shells.',
-      form_and_line: 'Pier spine, shell kiosks, and modular transit bays.',
+      aesthetic:
+        'Shell-metro seapunk where protective shell forms act as transit and weather language.',
+      form_and_line:
+        'Pier-spine geometry, shell kiosk shapes, modular transit bays, and wave shelter arcs.',
       color_palette: 'Opal, aquamarine, and violet.',
       lighting_setup: 'Sunset reflections and interior shell glow.',
       material_texture: 'Shell laminate, wet decking, and soft polymer.',
       render_quality: 'Playful urban seascape with transit legibility.',
-      spatial_distortion: 'Long pier perspective with repeating shell stations.',
+      spatial_distortion: 'Long waterline perspective with repeating shell modules.',
       atmosphere: 'Travel, lightness, and seaside civic life.',
-      key_features: 'Shell metro stalls, pier rails, and wave shelters.',
+      key_features:
+        'Shell metro forms, waterline rail marks, wave shelters, and repeating modular bay rhythm.',
       creative_brief:
-        'A seapunk metro pier where every station feels like a shell found on the tide line.',
+        'Preserve shell metro-pier grammar as a reusable style system: tide-line shell transit modules, repeating pierline station rhythm, and lightweight seaside mobility should remain coherent across subjects.',
     },
   },
   {
@@ -259,16 +306,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, harsh-industrial, sewage, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Courtyard enclosed by bubble reefs and soft marine domes.',
-      form_and_line: 'Rounded courtyard walls, bubble clusters, and reef arches.',
+      aesthetic: 'Bubble-reef seapunk where soft marine domes enclose gentle communal space.',
+      form_and_line:
+        'Rounded courtyard-like walls, bubble clusters, reef arches, and shell bench curves.',
       color_palette: 'Bubblegum coral, aqua, and white foam.',
       lighting_setup: 'Bright diffused daylight with underwater bubble glints.',
       material_texture: 'Coral aggregate, translucent resin, and wet stone.',
       render_quality: 'Cheerful coastal concept with crisp courtyard geometry.',
-      spatial_distortion: 'Courtyard inward pull framed by reefs and bubbles.',
+      spatial_distortion: 'Inward pull framed by reefs, bubbles, and soft marine domes.',
       atmosphere: 'Playfulness, calm, and close-knit aquatic community.',
-      key_features: 'Bubble reefs, courtyard rings, and shell benches.',
-      creative_brief: 'A seapunk courtyard where bubbles and coral build a sheltered public room.',
+      key_features: 'Bubble reefs, courtyard-ring motifs, shell benches, and soft reef arch glow.',
+      creative_brief:
+        'Preserve bubble reef-courtyard grammar as a reusable style system: inward coral-resin enclosure geometry, buoyant micro-community intimacy, and playful aquatic shelter should remain coherent across subjects.',
     },
   },
   {
@@ -277,17 +326,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '13. Corepunk — Seapunk',
     negativePrompt: 'photoreal, dark, militarized, watermark, text, logo, murky',
     style: {
-      aesthetic: 'Floating forum platform for public debate on tidal civic systems.',
-      form_and_line: 'Platform rings, saltlight poles, and layered water steps.',
+      aesthetic:
+        'Saltlight seapunk forum style for public tidal systems and reflective civic ritual.',
+      form_and_line:
+        'Platform rings, saltlight poles, layered water steps, and radiating dock spokes.',
       color_palette: 'Seafoam, pale gold, and blue-black.',
       lighting_setup: 'Saltlit dusk with luminous waterline edges.',
       material_texture: 'Salted metal, polished shell, and translucent deck panels.',
       render_quality: 'Clear civic seascape with forum structure.',
-      spatial_distortion: 'Forum circle over water with radiating dock spokes.',
+      spatial_distortion: 'Forum-circle geometry over water with radiating dock-like spokes.',
       atmosphere: 'Dialogue, openness, and buoyant civic exchange.',
-      key_features: 'Saltlight poles, debate rings, and floating steps.',
+      key_features:
+        'Saltlight poles, debate-ring motifs, floating step bands, and tidal civic glow.',
       creative_brief:
-        'A seapunk public forum where civic conversation happens above the tide on a glowing floating platform.',
+        'Preserve saltlight forum-platform grammar as a reusable style system: floating deliberative civic rings, dusk saltlight debate staging, and buoyant democratic openness should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

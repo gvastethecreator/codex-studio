@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-158
 packId: pack_16
-name: Mushi-Shi - Whispering Forest Healing
+name: Ecological Whisper Healing Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Fantasía naturalista contemplativa de medicina folklórica, con sobrenatural ecológico de baja estridencia y ritmo de caminata.
-  form_and_line: Línea serena y precisa, postura de viajero observador y gestualidad mínima orientada a diagnóstico silencioso.
-  color_palette: Verdes musgo, marfiles pálidos, grises de niebla y marrones orgánicos de sendero húmedo.
-  lighting_setup: Luz difusa de bosque con gradientes suaves y halos leves sobre trazas espirituales casi invisibles.
-  material_texture: Corteza húmeda, tela de viaje gastada, cajas de remedio de madera y atmósfera de rocío permanente.
+  aesthetic: Fantasía naturalista contemplativa de sanación folklórica, con sobrenatural ecológico de baja estridencia y ritmo perceptivo lento.
+  form_and_line: Línea serena y precisa, gestualidad mínima, pausas diagnósticas y contornos que parecen escuchar el entorno.
+  color_palette: Verdes musgo, marfiles pálidos, grises de niebla y marrones orgánicos de humedad mineral.
+  lighting_setup: Luz difusa con gradientes suaves y halos leves sobre trazas espirituales casi invisibles.
+  material_texture: Materia húmeda, fibra natural gastada, pigmento orgánico y atmósfera de rocío permanente.
   render_quality: Acabado premium contemplativo 2000s con claridad poética y detalle ambiental calmado.
-  spatial_distortion: Espacio profundo de bosque-villa sin exageración, privilegiando percepción lenta y distancia meditativa.
+  spatial_distortion: Profundidad calma sin exageración, privilegiando percepción lenta, capas orgánicas y distancia meditativa.
   atmosphere: Silenciosa, mística, terapéutica, solitaria.
-  key_features: Huellas espirituales tenues, viajero herbolario, aldeas brumosas y composición de curación paciente.
-  creative_brief: Diseña una gramática reusable de sanación sobrenatural ecológica para cualquier sujeto, usando luz blanda, materia orgánica y narrativa de observación tranquila.
+  key_features: Huellas espirituales tenues, materia orgánica sensible, niebla suave y composición de curación paciente.
+  creative_brief: Diseña una gramática reusable de sanación sobrenatural ecológica para cualquier sujeto, usando luz blanda, materia orgánica y observación tranquila sin imponer bosques, aldeas, viajeros ni remedios físicos.
 avoidRules:
   - realistic
   - 3d render

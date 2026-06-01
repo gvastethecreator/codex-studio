@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Deliberately ugly caricature, bulbous distorted noses, comically oversized heads, warty textures, hideous charm, flesh stretched beyond recognition, adult-swim grotesque, John Kricfalusi energy
-  form_and_line: Wobbly uneven contours, spasming line weight, broken anatomy, scratchy re-draw marks, elastic limb logic
+  aesthetic: Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy
+  form_and_line: Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic
   color_palette: Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth
   lighting_setup: Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare
-  material_texture: Bumpy skin, visible pores exaggerated, wart dimples, greasy sheen, splotchy surface
+  material_texture: Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture
   render_quality: Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation
-  spatial_distortion: Inflated heads on pin bodies, mismatched eye sizes, teeth bursting from lips, impossible spinal curves
+  spatial_distortion: Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress
   atmosphere: Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest
-  key_features: Asymmetric eyes, bulbous nose center-stage, neck veins bulging, excessive chin folds
-  creative_brief: Every feature rebels against proportion, anatomy buckling under the weight of its own comic insistence. Flesh stretches, pores bloom, and noses colonize the frame with gleeful disregard for politeness. The result is a pageant of the repulsive that somehow loops back around to magnetic, a funhouse mirror that you cannot stop staring into.
+  key_features: Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy
+  creative_brief: 'Push any subject through grotesque caricature logic: proportions rebel, surfaces become bumpy and splotchy, contours wobble, and unflattering exaggeration becomes the main design force. Avoid requiring faces, noses, teeth, or bodies. The style should feel repulsive, funny, and magnetically overdrawn.'
 avoidRules:
   - realistic
   - photorealistic
@@ -31,12 +31,12 @@ avoidRules:
   - smooth
   - clean lines
   - polished
-  - normal faces
+  - normal proportions
   - subtle
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-081.webp
 attributes:
-  negativePrompt: realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal faces, subtle
+  negativePrompt: realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal proportions, subtle
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

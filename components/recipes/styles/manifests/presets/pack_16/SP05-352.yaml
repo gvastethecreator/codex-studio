@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-352
 packId: pack_16
-name: Sk8 the Infinity - Neon Ramp Brotherhood
+name: Neon Trick Flow Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Skate competitivo underground de noche, centrado en trick flow, estilo personal y rivalidad de circuito.
-  form_and_line: Poses elásticas de board control, curvas de rampa expresivas y anatomía street-dynamic legible.
-  color_palette: Neones tropicales saturados, negros de asfalto y acentos cromáticos por crew.
-  lighting_setup: Iluminación nocturna de venue ilegal con contraluces duros y rebote de piso húmedo.
-  material_texture: Asfalto rugoso, grip tape gastado, metal de rampa marcado y textil streetwear vibrante.
-  render_quality: Frame de skate premium con lectura instantánea de truco, aterrizaje y velocidad.
-  spatial_distortion: Foreshortening aéreo y curvatura de half-pipe para enfatizar altura y trayectoria.
+  aesthetic: Trick flow nocturno de estilo personal, rivalidad expresiva y neón underground.
+  form_and_line: Poses elásticas de control, curvas expresivas y anatomía dinámica legible.
+  color_palette: Neones tropicales saturados, negros rugosos y acentos cromáticos por identidad visual.
+  lighting_setup: Iluminación nocturna clandestina con contraluces duros y rebote húmedo.
+  material_texture: Superficie rugosa, fricción gastada, metal marcado y textil vibrante.
+  render_quality: Frame cinético premium con lectura instantánea de truco abstracto, aterrizaje y velocidad.
+  spatial_distortion: Foreshortening aéreo y curvatura gráfica para enfatizar altura y trayectoria.
   atmosphere: Rebelde, divertida, acelerada y extremadamente viva.
-  key_features: Trucos midair, geometría de rampa, estelas de rueda y silueta street de crew.
+  key_features: Curvas de truco, estelas de rueda abstractas, neón underground, estilo personal y momentum de caída.
   creative_brief: >-
-    Define una gramática reusable de neon-ramp-skate donde trick flow,
-    identidad de crew y lectura de trayectoria prioricen jugabilidad visual por
-    encima de anécdotas de escena.
+    Aplica una gramática reusable de trick flow nocturno a cualquier prompt o imagen de entrada:
+    neón, curvas y estilo competitivo sin imponer skate, rampas, ruedas, crew ni trucos literales.
 avoidRules:
   - realistic
   - 3d render

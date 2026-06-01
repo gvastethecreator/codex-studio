@@ -12,15 +12,18 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: High-fashion beauty portraiture, glamorous and luxurious magazine cover style
-  subject_treatment: Idealized features, soft focus on skin while keeping eyes and lips tack-sharp
-  color_and_tone: Vibrant makeup colors, saturated and rich tones, high-end color grading
+  aesthetic: High-fashion glamour photography, luxurious magazine-cover polish
+  subject_treatment: Idealized primary forms, soft cosmetic smoothing, selective tack-sharp accents
+  color_and_tone: Vibrant accent colors, saturated rich tones, high-end color grading
   lighting_and_shadow: Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows
-  texture_and_material: Flawless smooth skin, glossy lips, shimmering makeup, luxurious fabric textures
+  texture_and_material: Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or material textures
   camera_and_composition: Close-up beauty crop, flattering angles, undistorted perspective
   atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
   rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
-  creative_brief: Light bends flatteringly around bone structure, skin dissolving into porcelain while eyes retain their mineral sharpness, every highlight polished to a diamond's precision. The frame becomes a jewel box where fabric whispers wealth and luminance pools like liquid gold across the surface. Manufactured perfection as visual language, glamour distilled into the architecture of a cheekbone and the gloss of a parted lip.
+  creative_brief: >-
+    Apply glamour-shot polish to any subject: beauty-dish softness, luxury
+    texture, jewel-box highlights, saturated editorial color, and manufactured
+    perfection without requiring facial anatomy.
 avoidRules:
   - illustration
   - painting

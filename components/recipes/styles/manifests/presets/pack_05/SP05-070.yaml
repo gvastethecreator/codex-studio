@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Masaaki Yuasa style, fluid distortion, elastic metamorphosis, neon colors, psychedelic horror, club-color horror, youthful collapse, dancefloor apocalypse, Sabbath party climax, demonic possession, track-runner despair
-  form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
-  render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
-  atmosphere: Psychedelic, tragic, devastating, neon-drenched
-  key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: Bodies liquefy and reform on the dancefloor as demons pour through the cracks in human desire. Neon bleeds across skin that no longer obeys the laws of anatomy, stretching toward ecstasy and annihilation simultaneously. The apocalypse arrives not with a bang but with a bass drop that shatters every heart in the club.
+  aesthetic: Fluid psychedelic tragedy, with elastic deformation, neon collapse, raw youth panic, and ecstatic horror color.
+  form_and_line: Liquefied contours, rubbery distortion, broken silhouette rhythm, smear-heavy transitions, and unstable expressive anatomy.
+  color_palette: Acid magenta, toxic cyan, bruised violet, hot red, blacklight blue, and dirty flesh neutrals.
+  lighting_setup: Club-neon bleed, strobing color fields, overexposed emotional peaks, and hard underlight for panic surges.
+  material_texture: Wet ink smear, digital grain, oily bloom, rough cel edges, and visceral color mixing without literal gore dependence.
+  render_quality: Experimental anime finish with controlled chaos, readable deformation, and high-emotion psychedelic motion.
+  spatial_distortion: Bodies, space, and perspective stretch together as emotion overload bends the frame.
+  atmosphere: Psychedelic, tragic, devastating, neon-drenched.
+  key_features: Elastic metamorphosis, neon tragedy, blacklight horror, raw deformation, ecstatic collapse.
+  creative_brief: >-
+    Apply neon tragic metamorphosis as a transferable visual treatment:
+    dissolve stable form, push color into blacklight panic, and make any prompt
+    feel emotionally overloaded without requiring a fixed horror event or
+    location.
 avoidRules:
   - realistic
   - 3d render

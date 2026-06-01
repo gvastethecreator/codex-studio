@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Half face in shadow
+  aesthetic: Half-lit split contrast
   form_and_line: Sharp transition
   color_palette: High contrast
   lighting_setup: 90 degree side light
-  material_texture: Drama
-  render_quality: Villain, dramatic
+  material_texture: Hard lateral contrast
+  render_quality: Dramatic side-light realism
   spatial_distortion: Hidden side
   atmosphere: Conflict, mystery
   key_features: Half dark
-  creative_brief: The razor-thin meridian where revelation meets concealment, a face bisected by a blade of lateral light. One half declares itself while the other retreats into permanent midnight. Dual natures etched in high contrast, the unspoken hemisphere that keeps its secrets locked in darkness.
+  creative_brief: A 90-degree side light divides any subject into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.
 avoidRules:
   - flat
   - fill light

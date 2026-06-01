@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-166
 packId: pack_16
-name: Rurouni Kenshin - Meiji Blade Redemption
+name: Redemption Restraint Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Drama histórico Meiji de espada redentora, entre disciplina marcial, culpa persistente y sensibilidad romántica.
-  form_and_line: Línea noventera elegante, lectura clara de kenjutsu y acting contenido de conflicto moral.
-  color_palette: Rosas de sakura, ocres de calle Meiji, azules de crepúsculo y grises de acero templado.
-  lighting_setup: Contraste suave de época con atardecer cálido, interiores de dojo y brillo preciso en hoja.
-  material_texture: Madera pulida, tela de kimono, piedra urbana y grano clásico de drama de periodo.
-  render_quality: Acabado premium 90s con balance entre duelo refinado, calma itinerante y peso ético.
-  spatial_distortion: Composición de calle y patio dojo para enfrentamientos sobrios y pausas introspectivas.
+  aesthetic: Drama de redención contenida, disciplina marcial abstracta, culpa persistente y sensibilidad romántica.
+  form_and_line: Línea noventera elegante, lectura clara de postura disciplinada y acting contenido de conflicto moral.
+  color_palette: Rosas suaves, ocres de época, azules de crepúsculo y grises de acero templado.
+  lighting_setup: Contraste suave de época con atardecer cálido, sombra interior calma y brillo metálico preciso.
+  material_texture: Madera pulida, tela tradicional, piedra gastada y grano clásico de drama de periodo.
+  render_quality: Acabado premium 90s con balance entre tensión refinada, calma itinerante y peso ético.
+  spatial_distortion: Composición sobria con pausas introspectivas, eje de confrontación moral y amplio silencio negativo.
   atmosphere: Reflexiva, noble, contenida, feroz.
-  key_features: Silueta de espadachín errante, gestualidad de no-matar, sakura episódica y memoria de batalla.
-  creative_brief: Diseña una gramática reusable de redención samurái para cualquier sujeto, fusionando honor disciplinado, pasado oscuro y ternura de nueva era Meiji.
+  key_features: Silueta errante abstracta, gesto de no-daño, memoria de batalla y ternura disciplinada.
+  creative_brief: >-
+    Diseña una gramática reusable de redemption-restraint para cualquier
+    sujeto, fusionando honor disciplinado, pasado oscuro y ternura de nueva era
+    sin imponer samuráis, espadas, calles Meiji, dojos, kimonos ni duelos.
 avoidRules:
   - realistic
   - 3d render

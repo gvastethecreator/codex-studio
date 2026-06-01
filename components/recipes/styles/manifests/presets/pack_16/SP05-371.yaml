@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-371
 packId: pack_16
-name: Nodame Cantabile - Orchestra Rehearsal Whirl
+name: Virtuoso Ensemble Whirl Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Orquesta de ensayo académico con fricción creativa entre rigor de dirección y caos virtuoso.
-  form_and_line: Gestos de batuta enérgicos, acting instrumental caricatural moderado y lectura clara de secciones.
+  aesthetic: Ensamble virtuoso excéntrico, fricción creativa entre rigor, caos controlado y energía culta.
+  form_and_line: Gestos de dirección enérgicos, acting performativo moderado y lectura clara de secciones.
   color_palette: Maderas y marfiles clásicos, negros de frac, dorados tenues y acentos escarlata de tensión cómica.
-  lighting_setup: Luz de sala de ensayo amplia con focos suaves sobre director y teclado principal.
-  material_texture: Barniz de instrumento clásico, papel de partitura, atriles metálicos y tela formal en movimiento.
+  lighting_setup: Luz amplia con focos suaves sobre gesto directivo y foco virtuoso principal.
+  material_texture: Barniz clásico, papel mate, metal de soporte y tela formal en movimiento.
   render_quality: Frame sinfónico vivaz con legibilidad de jerarquía de dirección, respuesta y caos controlado.
-  spatial_distortion: Profundidad de orquesta por capas de atril con perspectiva convergente al podio.
+  spatial_distortion: Profundidad de ensamble por capas seccionales con perspectiva convergente al eje directivo.
   atmosphere: Viva, culta, excéntrica e inspiradora.
-  key_features: Gesto de director, masa de secciones, foco de piano y fricción de ensayo colectivo.
+  key_features: Gesto de dirección, masa de secciones, foco virtuoso y fricción de ensayo colectivo.
   creative_brief: >-
-    Define una gramática reusable de orchestra-rehearsal-whirl donde geografía
-    de secciones, autoridad de podio y excentricidad performativa generen
-    identidad transferible.
+    Define una gramática reusable de virtuoso-ensemble-whirl donde geografía
+    de secciones, autoridad gestual y excentricidad performativa generen
+    identidad transferible sin imponer orquesta, podio, piano, atriles ni
+    ensayo académico literal.
 avoidRules:
   - realistic
   - 3d render

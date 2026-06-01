@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Night quarter lit by tide lanterns and floating route markers.
-  form_and_line: Lantern strings, quay paths, and floating buoys.
+  aesthetic: Tide-lantern seapunk night style lit by floating route markers and wet reflections.
+  form_and_line: Lantern strings, quay-like paths, floating buoys, and water corridor curves.
   color_palette: Moonlit blue, hot pink, and silver.
   lighting_setup: Lantern glow over rippling water and wet decking.
   material_texture: Glass lanterns, painted metal, and salt-worn wood.
   render_quality: Vibrant night city concept with clear navigation cues.
-  spatial_distortion: Meandering path through illuminated water corridors.
+  spatial_distortion: Meandering path through illuminated water-corridor depth.
   atmosphere: Night stroll, orientation, and civic sparkle.
-  key_features: Tide lanterns, buoy markers, and wet promenade steps.
+  key_features: Tide lanterns, buoy markers, wet step motifs, and floating route glows.
   creative_brief: >-
     Preserve tide lantern-quarter grammar as a reusable style system:
     tidal wayfinding luminance, meandering waterfront promenade guidance, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, dystopia, harsh-dark, watermark, text, logo, muddy]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-121.webp }
 attributes:
   negativePrompt: photoreal, dystopia, harsh-dark, watermark, text, logo, muddy
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

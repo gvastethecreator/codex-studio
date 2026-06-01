@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Isekai mercantil lunar de tono deadpan, donde poder abrumador convive con economía práctica y diplomacia local.
-  form_and_line: Silueta sobria de viajero, staging de negociación en ruta y contraste entre calma expresiva y fuerza implícita.
+  aesthetic: Isekai mercantil lunar de tono deadpan, donde poder abrumador se expresa como calma práctica y diplomacia seca.
+  form_and_line: Formas sobrias, ritmo negociador, gestos contenidos y contraste entre escala implícita y lectura cotidiana.
   color_palette: Plata de luna, azul medianoche, verde comercio, ocre de camino y violeta tenue de aura contenida.
-  lighting_setup: Nocturnidad limpia, highlights de fogón y acentos suaves sobre puestos, mapas y mercancía.
-  material_texture: Madera de carreta, cuero de mercader, moneda metálica, tela de puesto y polvo de sendero.
-  render_quality: Fantasía de viaje transaccional con detalle de worldbuilding económico y poder subrayado por contención.
-  spatial_distortion: Espacio de ruta abierta con microescenas de intercambio y focalización en figura central serena.
+  lighting_setup: Nocturnidad limpia, highlights cálidos bajos y acentos suaves que dejan el poder en reserva.
+  material_texture: Madera seca, cuero sobrio, metal de intercambio, tela mate y polvo mineral en clave abstracta.
+  render_quality: Fantasía transaccional con detalle económico, humor seco y poder subrayado por contención.
+  spatial_distortion: Espacio amplio sugerido, microjerarquías de intercambio y foco tranquilo sin escena fija.
   atmosphere: Desapegada, práctica y confiada.
-  key_features: Road-market, comunidad demi-humana, postura overpowered serena y utilería comercial.
+  key_features: Luz lunar mercantil, calma overpowered, diplomacia práctica, economía visual y aura violeta contenida.
   creative_brief: >-
-    Define una gramática moonlit-merchant reusable donde comercio itinerante,
-    convivencia multi-especie y poder desproporcionado de baja exhibición se
-    articulen con tono tranquilo.
+    Define una gramática moonlit-merchant reusable donde cualquier prompt se
+    vuelva práctico, lunar y diplomático mediante economía visual, humor seco y
+    poder contenido sin depender de escena transaccional o utilería literal.
 avoidRules:
   - realistic
   - 3d render

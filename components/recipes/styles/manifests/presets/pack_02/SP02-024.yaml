@@ -20,8 +20,8 @@ visualDna:
   render_quality: Amateur, weird, Wayne's World cable-access, dead air
   spatial_distortion: Chroma key fail, blue fringe, transparent hair halo
   atmosphere: Surreal, awkward, uncanny local, midnight broadcast
-  key_features: Bad keying, folding chair, community bulletin
-  creative_brief: Fluorescent light drains the humanity from faces while bad chroma keying opens portals to nowhere. The air thrums with the frequency of the uncanny, a signal carried on the backs of forgotten UHF channels. Somewhere between the folding chair and the community bulletin lies the sublime absurdity of a midnight broadcast no one programmed and everyone discovered.
+  key_features: Bad keying, UHF noise, local-TV awkwardness
+  creative_brief: 'Public access TV makes any subject locally uncanny: bad white balance, green cast, ceiling-tube shadows, RF interference, chroma-key failure, blue fringe, and amateur dead-air timing. Keep midnight cable weirdness without requiring faces, folding chairs, bulletins, or studio guests.'
 avoidRules:
   - professional
 assets:

@@ -14,14 +14,14 @@ tags:
 visualDna:
   aesthetic: Backlit subject
   form_and_line: None
-  color_palette: Black foreground, vibrant background sky, orange sunset, stark contrast
+  color_palette: Black foreground, luminous background field, orange or blue gradient, stark contrast
   lighting_setup: Strong backlight, no fill, rim-only separation
   material_texture: Contrast, edge crispness, opaque block
   render_quality: Graphic, bold, high-contrast drama, shape-first
   spatial_distortion: None
-  atmosphere: Mystery, drama, anonymous figure, narrative suspense
-  key_features: No fill light, recognizable outline, dramatic sky
-  creative_brief: The figure surrenders its features to become pure form—a cut-out pressed against the furnace of the sky. What is lost in detail is gained in presence; the anonymous shape speaks louder than any face could, carrying all the weight of narrative in its darkened contour against a world on fire.
+  atmosphere: Mystery, drama, anonymous form, graphic suspense
+  key_features: No fill light, recognizable outline, backlit separation, shape-first read
+  creative_brief: 'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail.'
 avoidRules:
   - detail in shadow
 assets:

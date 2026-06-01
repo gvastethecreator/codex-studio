@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Healing-domestic shojo language with zodiac-motif tenderness, school-home emotional continuity, and trauma-softened interpersonal warmth
-  form_and_line: Gentle expressive contouring, kind-eyed closeup prioritization, restrained gesture acting, and soft profile transitions for emotional safety cues
-  color_palette: Warm creams, peach and rose softs, tea-brown domestic neutrals, light spring greens, and muted comforting pastels
-  lighting_setup: Window-soft domestic key light, kitchen-ambient warmth, low-contrast bloom, and mild halation around emotional focal faces
-  material_texture: Cotton homewear softness, ceramic-kitchen matte sheen, tatami/wood domestic grain, and subtle seasonal particulate overlays
-  render_quality: Emotion-first shojo render with comforting softness, high empathy readability, and stable scene intimacy over spectacle
-  spatial_distortion: Intimate room-scale framing with mild romantic stylization and closeness-preserving depth control
+  aesthetic: Healing shojo language with zodiac-motif tenderness, emotional continuity, and trauma-softened warmth expressed through gentle symbolic atmosphere
+  form_and_line: Gentle expressive contouring, kind-eyed focal prioritization, restrained gesture acting, and soft profile transitions for emotional safety cues
+  color_palette: Warm creams, peach and rose softs, tea-brown neutrals, light spring greens, and muted comforting pastels
+  lighting_setup: Window-soft key light, ambient warmth, low-contrast bloom, and mild halation around emotional focal areas
+  material_texture: Cotton-soft surfaces, matte ceramic-like softness, warm wood-grain cues, and subtle seasonal particulate overlays
+  render_quality: Emotion-first shojo render with comforting softness, high empathy readability, and stable intimacy over spectacle
+  spatial_distortion: Close-scale framing with mild romantic stylization and closeness-preserving depth control
   atmosphere: Tender, healing, sorrowful, warm
-  key_features: Domestic interiors, kind close-ups, zodiac motifs, school-day softness, emotionally loaded embraces
+  key_features: Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry
   creative_brief: >-
     Preserve zodiac-warmth-and-grief grammar as a reusable style system:
-    domestic compassion lighting, soft emotional closeups, and symbolic zodiac
+    compassionate warm lighting, soft emotional closeups, and symbolic zodiac
     tenderness should remain consistent across subjects.
 avoidRules:
   - realistic

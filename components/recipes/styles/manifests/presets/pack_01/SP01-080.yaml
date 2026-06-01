@@ -13,15 +13,15 @@ tags:
   - portrait-and-studio
 visualDna:
   aesthetic: ID photo
-  form_and_line: Face forward
+  form_and_line: Front-facing centered geometry
   color_palette: White background
   lighting_setup: Flat, shadowless
   material_texture: None
   render_quality: Bureaucratic, boring
-  spatial_distortion: Neutral expression
+  spatial_distortion: Neutral administrative flattening
   atmosphere: Official, deadpan
   key_features: White background
-  creative_brief: The self stripped to its administrative minimum, features flattened into data by shadowless light that erases biography. Identity here is not expression but certification, the face reduced to a credential that proves existence without proving humanity.
+  creative_brief: 'Passport-photo style strips any subject to administrative minimum: white background, centered front-facing geometry, flat shadowless light, neutral expression logic, and bureaucratic deadpan. Apply ID-photo certification without requiring human face, features, or biography.'
 avoidRules:
   - smiling
   - artistic

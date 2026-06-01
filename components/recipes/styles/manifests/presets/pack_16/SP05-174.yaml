@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-174
 packId: pack_16
-name: Berserk 1997 - Iron Guts Medieval Ruin
+name: Iron Ruin Tragedy Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Fantasía medieval oscura de trauma y acero, con brutalidad mercenaria y destino trágico irreversible.
-  form_and_line: Línea 90s pesada y agresiva, anatomía marcada por cicatriz y coreografía de espada colosal.
-  color_palette: Negros ceniza, óxidos de sangre seca, grises de piedra rota y rojos apagados de herida antigua.
-  lighting_setup: Iluminación sombría de tormenta, highlights metálicos duros y sombra opresiva de ruina.
-  material_texture: Hierro rugoso, lodo de campo de batalla, mampostería quebrada y grano fílmico áspero.
-  render_quality: Acabado premium noventero con densidad dramática extrema y legibilidad de violencia trágica.
-  spatial_distortion: Escala monumental de ruina y espada para sensación de carga física y fatalidad histórica.
+  aesthetic: Cel anime 90s de tragedia pesada, masa de hierro, sombra fúnebre y supervivencia emocional extrema.
+  form_and_line: Línea gruesa y agresiva, anatomía angulosa, contornos cargados de peso, diagonales brutales y poses de resistencia física.
+  color_palette: Negro ceniza, gris hierro, óxido oscuro, rojo herida apagado y marrón barro profundo.
+  lighting_setup: Tormenta baja, highlights metálicos duros, contraluces mínimos y sombra opresiva que aplasta el encuadre.
+  material_texture: Hierro rugoso, barro seco, piel marcada, piedra quebrada abstracta y grano fílmico áspero.
+  render_quality: Acabado premium noventero con densidad dramática extrema, peso material claro y violencia sugerida por composición.
+  spatial_distortion: Escala monumental y diagonales sobredimensionadas hacen que cualquier sujeto parezca cargar una fatalidad física.
   atmosphere: Brutal, fúnebre, condenada, implacable.
-  key_features: Silueta de hoja gigantesca, castillos derruidos, barro bélico y acting de dolor irreparable.
-  creative_brief: Define una gramática reusable de épica oscura de supervivencia para cualquier sujeto, priorizando peso material, trauma persistente y tragedia medieval.
+  key_features: Silueta pesada, grano áspero, sombra de trauma, masa metálica, rojos apagados y gesto de dolor contenido.
+  creative_brief: >-
+    Aplica este preset como tratamiento abstracto de anime oscuro 90s:
+    cualquier prompt debe ganar peso, fatalidad, textura áspera y tragedia
+    corporal sin exigir espada, castillo ni escena medieval.
 avoidRules:
   - realistic
   - 3d render

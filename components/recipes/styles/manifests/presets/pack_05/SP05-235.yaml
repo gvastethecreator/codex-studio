@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Rebellión pop-cyber ochentera de superficie brillante, entre autopistas nocturnas, cultura idol y simulación encubierta.
-  form_and_line: Diseño aerodinámico de moto, silueta juvenil estilizada y geometría urbana de cartelería holográfica.
+  aesthetic: Rebellión pop-cyber ochentera de superficie brillante, con glamour nocturno, cultura mediática y simulación encubierta.
+  form_and_line: Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería holográfica.
   color_palette: Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub futurista.
-  lighting_setup: Reflejos húmedos de avenida, signage holográfico pulsante y highlights de vitrina nocturna.
+  lighting_setup: Reflejos húmedos, signage holográfico pulsante y highlights de vitrina nocturna.
   material_texture: Cuero brillante, plástico translúcido, cromo pulido, lluvia fina y granulado retro de pantalla.
   render_quality: Retrofuturo anime de acabado glossy con energía urbana y legibilidad de diseño pop.
-  spatial_distortion: Profundidad de corredor vial con fuga alta velocidad y capas de publicidad simulada.
+  spatial_distortion: Profundidad de corredor luminoso con fuga alta velocidad y capas de publicidad simulada.
   atmosphere: Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.
-  key_features: Motocicleta icónica, idol holográfica, noche de autopista, moda cyber retro y pistas de ciudad simulada.
+  key_features: Glamour pop-cyber, holografía mediática, fuga nocturna, moda retro y señales de realidad simulada.
   creative_brief: >-
     Construye una gramática highway-pop-cyber reusable donde brillo urbano,
-    iconografía motera e ilusión mediática convivan en tensión entre libertad
-    juvenil y control sintético.
+    velocidad glossy e ilusión mediática convivan en tensión entre libertad
+    juvenil y control sintético sin exigir vehículo, idol o autopista literal.
 avoidRules:
   - realistic
   - 3d render

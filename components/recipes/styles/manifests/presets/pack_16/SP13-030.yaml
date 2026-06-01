@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP13-030
 packId: pack_16
-name: Blademonk Moon Courtyard
+name: Moonlit Ascetic Discipline Style
 category: 4. Samurais & Medieval
 version: 1
 supportedTasks:
@@ -13,16 +13,20 @@ tags:
   - anime
   - samurai-medieval
 visualDna:
-  aesthetic: Ascetic martial contemplative style combining monastic serenity with latent kinetic potential, tuned for spiritual-discipline imagery.
-  form_and_line: Fine calligraphic contours, circular stance geometries, and weapon trajectories implied through restrained directional line cues.
+  aesthetic: Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual discipline.
+  form_and_line: Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained directional line cues.
   color_palette: Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.
   lighting_setup: Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow structure.
-  material_texture: Raked gravel matte, cool temple stone, fibrous bamboo, and plain ritual cloth with minimal ornament.
+  material_texture: Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.
   render_quality: High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.
-  spatial_distortion: Symmetric courtyard framing with gentle depth compression that turns the arena into a concentration mandala.
+  spatial_distortion: Symmetric framing with gentle depth compression that turns space into a concentration mandala.
   atmosphere: Discipline, inward stillness, and ritual force contained before release.
-  key_features: Circular training marks, deliberate stance transitions, moon-axis alignment, and measured environmental quiet.
-  creative_brief: Build a reusable blademonk grammar that styles any subject through meditative symmetry, restrained line economy, and moonlit discipline cues.
+  key_features: Circular discipline marks, deliberate stance transitions, moon-axis alignment, and measured quiet.
+  creative_brief: >-
+    Build a reusable moonlit ascetic discipline grammar for any subject:
+    meditative symmetry, restrained line economy, circular motion cues, and
+    moonlit discipline without imposing monks, blades, temples, courtyards,
+    arenas, training marks, or martial scenes.
 avoidRules:
   - photoreal
   - bright-daylight

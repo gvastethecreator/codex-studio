@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Green-phosphor-night-vision-goggle footage, combat-scene viewed through military-NVG-overlay, ghostly-green-monochrome, lens-flare-from-distant-explosion-overexposing-tube, body-cam-HUD-elements-in-corners, infrared-laser-sight-dancing-dots, tactical-grid-overlay, grainy-image-intensifier-noise, battlefield-seen-through-technology, Ghost-in-the-Shell-SAC-tactical-cam energy
-  form_and_line: Phosphor-scan-line-contours, image-intensifier-grain-defining-edges, HUD-overlay-line-elements, targeting-reticle-crosshairs
+  aesthetic: Green-phosphor sensor footage with ghostly monochrome, HUD corner elements, tactical grid overlays, image-intensifier noise, and technology-mediated vulnerability
+  form_and_line: Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements, and reticle-like alignment marks
   color_palette: Phosphor-green-monochrome, black-level-crushed-shadows, overexposed-bloom-white, NVG-emerald-tube-tint, no-other-colors-at-all
-  lighting_setup: Infrared-illuminator-beam, moon-ambient-amplified, explosion-flash-bloom-overexposing-sensor, distant-firelight-registering-as-white-hot
+  lighting_setup: Infrared illuminator beam, amplified moon-ambient, sensor-overload bloom, and distant hot-source registration as white
   material_texture: Image-intensifier-scintillation-noise, phosphor-screen-grain, CMOS-night-sensor-artifacts, lens-tube-vignette, dust-on-optic-specks
   render_quality: Night-vision-footage aesthetic, tactical-body-cam realism, military-surveillance-grain, green-phosphor-beauty, ghost-through-technology vision
-  spatial_distortion: Fisheye-NVG-lens-distortion, HUD-elements-composited, body-cam-head-motion-blur, targeting-reticle-center
-  atmosphere: Tactical, tense, nocturnal-war, predator-stalking, high-tech-vulnerability, ghostly-green-paranoia
-  key_features: Green-phosphor-monochrome, image-intensifier-grain, HUD-tactical-overlay, targeting-reticle, NVG-lens-vignette, infrared-laser-dots, body-cam-framing
+  spatial_distortion: Fisheye lens distortion, HUD elements composited over subject space, body-cam-like motion blur, reticle-centered framing
+  atmosphere: Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia
+  key_features: Green-phosphor monochrome, image-intensifier grain, HUD overlay, reticle alignment, lens vignette, infrared points, body-cam framing
   creative_brief: >-
     Preserve night-vision tactical-footage grammar as a reusable style system:
     phosphor monochrome sensor response, HUD-overlay compositing, and
-    intensifier-grain perception should remain consistent across subjects.
+    intensifier-grain perception should remain consistent across subjects
+    without requiring military combat, battlefield, explosions, or weapons.
 avoidRules:
   - colorful
   - bright

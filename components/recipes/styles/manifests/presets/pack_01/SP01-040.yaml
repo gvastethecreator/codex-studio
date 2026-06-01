@@ -17,11 +17,11 @@ visualDna:
   color_palette: Hazy
   lighting_setup: Backlit shafts
   material_texture: Dust motes
-  render_quality: Epic, religious
+  render_quality: Epic volumetric realism
   spatial_distortion: None
-  atmosphere: Holy, atmospheric
+  atmosphere: Atmospheric, monumental
   key_features: Light shafts
-  creative_brief: Light made tangible as it descends through suspended atmosphere, invisible particles catching revelation and transforming empty air into architecture. Shafts that carve cathedrals from mist, dust motes drifting like slow-motion constellations through columns of radiance. The divine rendered visible not through substance but through the medium of diffusion itself.
+  creative_brief: Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious scene.
 avoidRules:
   - clear air
 assets:

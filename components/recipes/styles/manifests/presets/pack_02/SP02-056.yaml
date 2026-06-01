@@ -19,8 +19,8 @@ visualDna:
   material_texture: Jpeg artifacts, compression blocks, color banding
   render_quality: Low res, nostalgic, 2MP chunky, digital infancy
   spatial_distortion: Pixelation, stair-step edge, aliasing jaggies
-  atmosphere: Y2K, candid, AIM-era, early Facebook album
-  key_features: Date stamp, 640x480, silver camera body
+  atmosphere: Y2K, candid, early-upload memory, digital infancy
+  key_features: Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow
   creative_brief: The pixel blocks and chromatic noise of a technology still learning to see, where every jagged edge and compression smear carries the urgency of its era. Images fold into artifact-laden rectangles — the magenta fringe, the noisy shadow, the blocky contour — as if each megabyte were precious and every upload a declaration. This is not the past seen through nostalgia but the past seen through its own honest, limited eyes.
 avoidRules:
   - film grain

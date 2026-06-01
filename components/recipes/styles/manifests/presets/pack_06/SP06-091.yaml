@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids-style-wireframe, Tempest-tunnel-perspective, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic
+  aesthetic: Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen, single-color-vector-drawing, Asteroids and Tempest as wireframe anchors, analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color, no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic
   form_and_line: Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces, transparency-through-wireframe, line-brightness-peaking-at-stroke-centers
   color_palette: Phosphor-white-on-void-black, Vectrex-screen-overlay blue or green or red transparent-plastic-gel, single-color-per-display, no-gradients-pure-beam
   lighting_setup: Self-illuminated-phosphor-glow, brighter-at-line-intersections, beam-persistence-afterglow, CRT-screen-curvature-reflective-light
   material_texture: CRT-phosphor-glow-bloom, vector-display-line-artifact, transparent-plastic-screen-overlay-scratches, electron-beam-persistence-trail, analog-vector-drift-wobble
   render_quality: Vectrex-vector-display aesthetic, analog-CRT-beam-beauty, wireframe-only-rendering, 1982-vector-console nostalgia
-  spatial_distortion: Vector-wireframe-perspective, infinite-black-void-space, rotating-wireframe-objects, CRT-screen-curvature, plastic-overlay-frame
-  atmosphere: Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul
+  spatial_distortion: Vector-wireframe-perspective, infinite-black-void-space, rotating-coordinate structures, CRT-screen-curvature, plastic-overlay-frame
+  atmosphere: Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul, abstract screen ritual
   key_features: Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom, plastic-screen-overlay-framing, single-color-display, line-intersection brightening, electron-beam-persistence
-  creative_brief: Pure white phosphor lines float on glass-black void, the electron beam tracing geometry with analog precision, no pixels, no grid, just voltage translated into light. A colored plastic overlay tints the monochrome into blue or red, a gel between the cathode ray and the eye. The image is light in its most elemental form — a single color, a single beam, a single continuous line that never stops moving.
+  creative_brief: Pure white phosphor lines float on glass-black void, tracing any subject as a continuous vector signal. Plastic overlay gels tint the monochrome beam, turning abstraction into a screen ritual made from one color, one beam and no filled surface.
 avoidRules:
   - raster
   - pixel
@@ -52,4 +52,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

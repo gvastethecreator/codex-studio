@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Hokusai-meets-anime fusion, woodblock-print characters with bokashi-gradient backgrounds, flat decorative color-fields like Edo-period prints, crashing Great-Wave energy in hair and fabric, Hiroshige-rain-streaks across battle scenes, ukiyo-e theatricality applied to shonen action, floating-world visual language translated to animation
+  aesthetic: Ukiyo-e and anime fusion with bokashi gradients, flat decorative color fields, wave-like motion energy, rain-streak cadence, and floating-world theatricality
   form_and_line: Woodblock-carved contour lines, variable-width sumi-style edges, deliberate simplification of form, decorative-print line quality
   color_palette: Indigo, vermillion, ochre, pine-green, sumi-black, bokashi-fade gradients, flat-decorative color blocking, Edo-period limited palette
   lighting_setup: Flat-decorative Japanese woodblock lighting, no cast shadows, bokashi-gradient atmosphere, color-block depth separation
   material_texture: Wood-grain printing texture, rice-paper absorption, pigment-saturated washi, carved-block edge impression, hand-burnished surface
   render_quality: Ukiyo-e-woodblock anime fusion, Hokusai-style dynamism, Japanese-printmaking-beauty, decorative-flat-rendering mastery
   spatial_distortion: Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes, no western vanishing-point
-  atmosphere: Timeless, decorative, nature's-power, floating-world poetry, traditional-meets-modern elegance
-  key_features: Woodblock-line quality, bokashi-gradient skies, flat-decorative color fields, Great-Wave motif echoes, Hiroshige-rain streaks, rice-paper texture
+  atmosphere: Timeless, decorative, nature-power, floating-world poetry, traditional-meets-modern elegance
+  key_features: Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm echoes, rain-streak cadence, rice-paper texture
   creative_brief: >-
     Preserve ukiyo-e woodblock anime grammar as a reusable style system:
     carved-line contour behavior, flat decorative color-field depth, and
-    washi-print texture logic should remain consistent across subjects.
+    washi-print texture logic should remain consistent across subjects without
+    requiring battle scenes, landscapes, skies, or specific print motifs.
 avoidRules:
   - 3d
   - realistic

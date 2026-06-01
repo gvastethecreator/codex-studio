@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Rough-animation flipbook page, sequential gesture frames showing motion arc, stick-figure-jumping-progression, page-corner-numbers counting frames, onion-skin-ghosts of previous and next poses, timing-chart-notation in margins, animation-desk peg-bar holes, rough-breakdown-between-keyframes, pure-motion-study energy, Glen-Keane-rough-animation-philosophy, line-boiling texture from hand-drawn frame-by-frame
+  aesthetic: Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame
   form_and_line: Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping
   color_palette: Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff background
   lighting_setup: Animation-desk backlight transmitting through paper layers, peg-bar registration shadow, no rendered lighting
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul
   spatial_distortion: Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes
   atmosphere: Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study
-  key_features: Sequential-drawing-progression, animation-arc-lines, timing-charts-in-margins, onion-skin-ghost-overlays, peg-bar-registration-holes, blue-pencil-construction-lines, rough-boiling-line-texture
-  creative_brief: Ghosts of the next pose live inside the current one, motion traced through space one sheet at a time, the thinking visible on every surface. Blue foundations peek through graphite exploration, marks of correction and conviction sharing the same page. A private conversation between an artist and the illusion of movement, thumbed into life at twenty-four frames per second.
+  key_features: Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture
+  creative_brief: 'Translate any prompt into rough flipbook animation study: sequential marks, onion-skin ghosts, blue construction lines, graphite corrections, peg-bar holes, and visible motion arcs. Avoid stick-figure jumps, readable frame numbers, or final cleaned animation. The image should expose animation thinking before cleanup.'
 avoidRules:
   - finished
   - polished

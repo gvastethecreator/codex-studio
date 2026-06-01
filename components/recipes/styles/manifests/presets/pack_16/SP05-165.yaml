@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-165
 packId: pack_16
-name: Yu Yu Hakusho - Spirit Tournament Heat
+name: Spirit Pressure Rivalry Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,16 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Torneo espiritual noventero con rivalidad intensa, honor callejero y energía sobrenatural de alto voltaje.
-  form_and_line: Línea 90s firme y expresiva, acting facial combativo y coreografía de puños con momentum limpio.
+  aesthetic: Presión espiritual noventera con rivalidad intensa, bravura juvenil y energía sobrenatural de alto voltaje.
+  form_and_line: Línea 90s firme y expresiva, acting facial combativo y momentum corporal limpio.
   color_palette: Azules eléctricos, naranjas de impacto, verdes oscuros de inframundo y acentos púrpura místicos.
-  lighting_setup: Cel contrastado con flashes de técnica espiritual, rim de arena y sombras de duelo frontal.
-  material_texture: Superficie de estadio, polvo de combate, telas urbanas y grano analógico de acción clásica.
-  render_quality: Acabado premium de torneo sobrenatural con legibilidad perfecta de técnica, rivalidad y emoción.
-  spatial_distortion: Escena de ring expansivo con encuadres de stare-down, rush ofensivo y cierre heroico.
+  lighting_setup: Cel contrastado con flashes de técnica espiritual, rims calientes y sombras de confrontación frontal.
+  material_texture: Polvo energético, telas tensas, marcas gráficas de impacto y grano analógico de acción clásica.
+  render_quality: Acabado premium sobrenatural con legibilidad perfecta de técnica, rivalidad y emoción.
+  spatial_distortion: Encuadres de stare-down, rush ofensivo abstracto y cierre heroico sin fijar ring ni arena.
   atmosphere: Ardiente, competitiva, cool, sincera.
-  key_features: Arena marcada, estallidos de energía, postura delinquent y símbolos de inframundo marcial en crescendo.
-  creative_brief: Define una gramática reusable de combate espiritual de torneo para cualquier sujeto, mezclando bravura juvenil, lealtad y mística de superación.
+  key_features: Estallidos de energía, postura delinquent, marcas de presión espiritual y símbolos místicos en crescendo.
+  creative_brief: Define una gramática reusable de rivalidad espiritual para cualquier sujeto, mezclando bravura juvenil, lealtad y mística de superación sin imponer torneo, ring, arena ni combate literal.
 avoidRules:
   - realistic
   - 3d render

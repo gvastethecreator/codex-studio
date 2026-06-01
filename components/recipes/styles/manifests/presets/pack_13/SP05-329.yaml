@@ -13,18 +13,18 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica corrosiva.
-  form_and_line: Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del rostro.
+  form_and_line: Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del foco.
   color_palette: Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet
-  lighting_setup: Spotlight hostil, negativos profundos y sobreexposición de facciones en estado de shock.
+  lighting_setup: Spotlight hostil, negativos profundos y sobreexposición de formas en estado de shock.
   material_texture: Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla impresa.
   render_quality: Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.
-  spatial_distortion: Wide screaming mouths, bulging eyes, warped hallway depth, panic-twisted posture
+  spatial_distortion: Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and panic-twisted posture
   atmosphere: Histérica, uncanny y retro, con amenaza infantil deformada.
-  key_features: Rostros al grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.
+  key_features: Expresión de grito, motivos espirales, patrones de miedo estriado y lógica B/N extrema.
   creative_brief: >-
     Construye una gramática spiral-horror reusable donde geometría de pánico,
-    contraste blanco-negro feroz y expresividad facial desbordada marquen la
-    identidad en cualquier sujeto.
+    contraste blanco-negro feroz y expresividad desbordada marquen identidad
+    sin exigir rostro humano, hallway, víctima o escena de persecución.
 avoidRules:
   - still
   - calm

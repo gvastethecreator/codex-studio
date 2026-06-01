@@ -20,7 +20,7 @@ visualDna:
   render_quality: Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter
   spatial_distortion: Chromatic aberration, misregistration, color fringe, RGB split
   atmosphere: Energetic, modern, comic-panel momentum, multiverse chaos
-  key_features: Low framerate feel, onomatopoeia text, thought bubble, motion lines
+  key_features: Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines
   creative_brief: Color channels split at the edges like a misprinted page caught mid-press, releasing phantom reds and cyans into the frame. Halftone constellations swarm across three-dimensional form, reminding the eye that everything here was once ink on pulp. Motion stutters purposefully, as if each panel demands its own heartbeat before yielding to the next.
 avoidRules:
   - smooth 3d

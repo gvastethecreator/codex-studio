@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía de utilidad cotidiana donde el valor reside en habilidades manuales, logística y apoyo de equipo.
-  form_and_line: Composición funcional de herramientas, gesto de trabajo y lectura clara de roles de soporte no heroicos.
+  aesthetic: Fantasía de utilidad cotidiana, donde oficio, logística y soporte práctico reemplazan el espectáculo heroico.
+  form_and_line: Composición funcional, gestos de precisión, módulos pequeños y lectura clara de competencia manual.
   color_palette: Marrón herramienta, acero gris, naranja lámpara, verde cuerda y beige de piedra utilitaria.
-  lighting_setup: Iluminación de pasillo de dungeon con focos portátiles y acentos cálidos de campamento técnico.
-  material_texture: Cuerdas, cerraduras, metal de caja de herramientas, cuero de cinturón y polvo de obra subterránea.
-  render_quality: Slice-of-adventure con detalle operativo y encanto de competencia práctica en primer plano.
-  spatial_distortion: Escala humana de mantenimiento en espacios peligrosos, con foco en interacción herramienta-entorno.
+  lighting_setup: Focos cálidos portátiles, sombras técnicas y acentos de trabajo que guían la mirada por función.
+  material_texture: Fibra trenzada, metal opaco, cuero utilitario, polvo mineral y marcas de uso cuidadoso.
+  render_quality: Slice-of-adventure operativo, con encanto de competencia práctica y detalle táctil legible.
+  spatial_distortion: Escala humana de mantenimiento, proximidad funcional y tensión pequeña resuelta con método.
   atmosphere: Modesta, cálida y confiable.
-  key_features: Toolbox visible, soporte de party, resolución práctica y microgestos de oficio.
+  key_features: Precisión artesanal, soporte logístico, microgestos de oficio, calidez técnica y humildad competente.
   creative_brief: >-
-    Construye una gramática toolbox-quest reusable donde competencia manual,
-    logística de dungeon y empatía de equipo reemplacen el espectáculo por
-    eficacia narrativa.
+    Construye una gramática toolbox-quest reusable donde cualquier prompt gane
+    oficio, cuidado técnico y eficacia narrativa sin exigir utilería, grupo,
+    locación peligrosa o situación de reparación literal.
 avoidRules:
   - realistic
   - 3d render

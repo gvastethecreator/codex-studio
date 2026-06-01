@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-345
 packId: pack_16
-name: Slam Dunk - Hardwood Delinquent Rivalry
+name: Nineties Physical Rivalry Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Baloncesto escolar noventero de carisma callejero reconducido a juego colectivo y disciplina de equipo.
-  form_and_line: Anatomía atlética expresiva, arcos de tiro limpios, rebote corporal físico y acting rivalidad-driven.
-  color_palette: Rojos y blancos de uniforme clásico, madera miel, azul de sombra de gimnasio y acentos dorados cálidos.
-  lighting_setup: Luminaria escolar directa con rebote en parquet y sombras de media altura en clave retro.
-  material_texture: Madera encerada, balón granulado, tejido de jersey vintage y sudor de partido de alta fricción.
-  render_quality: Frame deportivo narrativo con lectura clara de posesión, rebote y contraataque.
-  spatial_distortion: Perspectiva de cancha media con exageración moderada de salto y penetración al aro.
+  aesthetic: Competencia noventera de carisma físico, rivalidad directa, esfuerzo colectivo y disciplina emocional.
+  form_and_line: Anatomía atlética expresiva, arcos de esfuerzo limpios, contacto corporal físico y acting rivalry-driven.
+  color_palette: Rojos clásicos, blancos limpios, miel cálida, azul de sombra interior y acentos dorados.
+  lighting_setup: Luminaria directa con rebote cálido y sombras de media altura en clave retro.
+  material_texture: Superficie encerada, grano deportivo, tejido vintage y sudor de alta fricción.
+  render_quality: Frame deportivo narrativo con lectura clara de posesión emocional, contacto y respuesta colectiva.
+  spatial_distortion: Perspectiva media con exageración moderada de salto, empuje y entrada al conflicto.
   atmosphere: Carismática, sudada, competitiva y esperanzada.
-  key_features: Trayectorias de tiro en arco, contacto de rebote, miradas de duelo y banca reactiva.
+  key_features: Contacto físico, miradas de duelo, trayectorias de esfuerzo, reflejos cálidos y energía de equipo reactiva.
   creative_brief: >-
-    Construye una gramática reusable de hardwood-rivalry donde energía escolar,
-    fisicidad de rebote y carisma de equipo mantengan identidad visual sin
-    quedar atados a una escena narrativa específica.
+    Aplica una gramática reusable de rivalidad deportiva noventera a cualquier prompt o imagen de entrada:
+    calor físico, disciplina y duelo de miradas sin imponer basket, aro, cancha, tiro ni banca.
 avoidRules:
   - realistic
   - 3d render

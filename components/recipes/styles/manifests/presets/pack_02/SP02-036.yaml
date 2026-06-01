@@ -12,7 +12,7 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: 1930s monochrome bounce-cartoon, Mickey/Betty Boop era, rubber-hose limbs, pie-cut eyes, cuphead energy
+  aesthetic: 1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm
   form_and_line: Thick, bouncy
   color_palette: Black and White, charcoal fill, cream paper, no grey
   lighting_setup: None, flat monochrome, stark graphic contrast
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Retro, bouncy, surreal rubber-band motion, hypnotic loop
   spatial_distortion: Noodle limbs, rubber-hose arms, boneless contortion
   atmosphere: Happy, weird, vaudeville rhythm, early-talkie energy
-  key_features: Pie eyes, white gloves, bouncing ball sync, surreal transformation
-  creative_brief: Figures bounce through a monochrome dream whose logic was written by jazz and vaudeville. Limbs spiral like party streamers, eyes blink in quarter-note rhythm, and the world reshapes itself to accommodate the next absurd twist. It is not animation — it is incantation, summoning joy from pure graphite.
+  key_features: Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic
+  creative_brief: 'Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours, noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props. The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible motion.'
 avoidRules:
   - color
   - modern

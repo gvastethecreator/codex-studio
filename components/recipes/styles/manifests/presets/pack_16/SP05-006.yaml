@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-006
 packId: pack_16
-name: Idol Mecha Epic
+name: Pop Transformable Aerial Spectacle Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Fusión idol-mecha de espectáculo aéreo, con teatralidad pop y tecnología transformable de alto brillo.
-  form_and_line: Trazo cel dinámico con coreografía de escenario y vuelo, enfatizando transición performance-combate.
+  aesthetic: Espectáculo pop transformable de alto brillo, teatralidad aérea y emoción de clímax performático.
+  form_and_line: Trazo cel dinámico con coreografía de ascenso y transición performance-heroísmo.
   color_palette: Magentas de show, cian eléctrico, blanco perlado y acentos metálicos cromados.
-  lighting_setup: Spotlights de concierto combinados con flare de toberas, rim brillante y gradiente glam futurista.
-  material_texture: Lentejuela textil, pintura aeronáutica, panel translúcido de cockpit y grano cálido broadcast.
-  render_quality: Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y máquina.
-  spatial_distortion: Escenario elevado y cielo operativo conectados por encuadres de ascenso y transformación.
+  lighting_setup: Spotlights glam combinados con flare técnico, rim brillante y gradiente futurista.
+  material_texture: Lentejuela textil, pintura técnica brillante, panel translúcido y grano cálido broadcast.
+  render_quality: Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y tecnología.
+  spatial_distortion: Espacio elevado y ascendente conectado por encuadres de transformación y vuelo gráfico.
   atmosphere: Radiante, emotiva, espectacular, eufórica.
-  key_features: Silueta idol distintiva, mecha transformable, iluminación de concierto y gestualidad de clímax performático.
-  creative_brief: Diseña una gramática reusable de pop-aeronáutica transformable para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo.
+  key_features: Silueta pop distintiva, transformación técnica, iluminación de show y gestualidad de clímax.
+  creative_brief: >-
+    Diseña una gramática reusable de pop-transformable-aerial-spectacle para
+    cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción
+    de directo sin imponer idols, mechas, escenarios, conciertos, cockpits,
+    aeronaves ni combate.
 avoidRules:
   - realistic
   - 3d render

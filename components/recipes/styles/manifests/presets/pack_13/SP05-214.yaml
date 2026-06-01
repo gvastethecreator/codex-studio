@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: High-school lethargy rendered as ambient art, soft wind, benches, low-energy friendship, sleepy body language and beautiful nothingness
-  form_and_line: Relaxed low-energy pose silhouettes, minimal expression lines, and breezy negative-space composition control
-  color_palette: Pale sky blues, soft grays, uniform neutrals, gentle spring greens, and light cream highlights
-  lighting_setup: Diffuse midday overcast, sleepy classroom ambient fill, and soft bench-side outdoor light
-  material_texture: Light fabric drape, bench paint wear, paper notebook surfaces, and soft wind-ruffled hair texture
-  render_quality: Lethargic-comfort rendering with calm comedic timing and airy minimalism
-  spatial_distortion: Time-dilation framing that stretches quiet pauses and ambient stillness
+  aesthetic: Tanaka-kun title anchor translated into ambient lethargy, soft wind, low-energy friendship, sleepy elegance, and beautiful nothingness
+  form_and_line: Relaxed low-energy silhouettes, minimal expression lines, slow contour drift, and breezy negative-space composition control
+  color_palette: Pale sky blues, soft grays, neutral cloth fields, gentle spring greens, and light cream highlights
+  lighting_setup: Diffuse midday softness, sleepy ambient fill, soft side light, and low-contrast illumination that lets pauses breathe
+  material_texture: Light fabric drape, paper-like matte surfaces, soft wind-ruffled hair texture, and faint worn-surface tactility
+  render_quality: Lethargic-comfort rendering with calm comedic timing, airy minimalism, and deliberate low-exertion beauty
+  spatial_distortion: Time-dilation framing that stretches quiet pauses and ambient stillness across any subject or setting
   atmosphere: Sleepy, gentle, airy, easygoing
-  key_features: Reclined poses, breeze effects, bench-and-classroom staging, minimal exertion comedy, soft ambient light
+  key_features: Low-energy posture, breeze effects, wide negative space, minimal exertion comedy, soft ambient light
   creative_brief: >-
-    Preserve breeze-drift lethargy grammar as a reusable style system:
-    low-energy friendship staging, airy pause-centric timing, and beautiful
-    everyday inertia should remain coherent across subjects.
+    Use Tanaka-kun as a style anchor for breeze-drift lethargy: low-energy
+    friendship, pause-centric timing, and beautiful everyday inertia should stay
+    intact without requiring school, benches, classroom, or fixed recline scenes.
 avoidRules:
   - realistic
   - 3d render

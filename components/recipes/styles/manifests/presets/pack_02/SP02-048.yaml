@@ -19,9 +19,9 @@ visualDna:
   material_texture: Potato starch grain, dyed starch, random RGB mosaic
   render_quality: Impressionist photo, pointillism, painterly light capture
   spatial_distortion: None
-  atmosphere: Dreamy, vintage, Belle Époque warmth, garden idyll
+  atmosphere: Dreamy, vintage, Belle Epoque warmth, first-color wonder
   key_features: Grainy color, starch-speckle, luminous pastels
-  creative_brief: A garden remembered through honeyed glass, where color arrives not in smooth ribbons but in tiny scattered grains like pollen suspended in a sunbeam. The world through this lens feels half-recalled — a waking dream filtered through dyed starch and diffuse window glow. Every frame carries the quiet astonishment of seeing the familiar rendered in lavender and rose for the very first time.
+  creative_brief: 'Reinterpret the input as early Autochrome color: dyed starch mosaic, stippled pastel grain, diffuse daylight, and a delicate impressionist veil over photographic form. Avoid requiring gardens, flowers, or period subjects. Every color should arrive through tiny scattered grains, as if the familiar world were being seen in color for the first time.'
 avoidRules:
   - sharp
   - digital color

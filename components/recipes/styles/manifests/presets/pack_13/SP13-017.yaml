@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Ink-driven anime noir detective language with psychological austerity, urban midnight isolation, and clue-centric narrative tension
-  form_and_line: Hard-edged contour blocks, bold black massing, angular coat silhouettes, and graphic shadow slicing inspired by crime-poster composition
+  aesthetic: Ink-driven anime noir language with psychological austerity, midnight isolation, and clue-like focal tension
+  form_and_line: Hard-edged contour blocks, bold black massing, angular coat-like silhouettes, and graphic shadow slicing inspired by crime-poster composition
   color_palette: Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or emotional stress points
-  lighting_setup: Severe lateral key, venetian-shadow banding, wet-street specular cuts, and controlled negative fill for noir depth retention
-  material_texture: Rough matte paper-like grain, light drizzle particulate, damp pavement sheen, and low-gloss textile surfaces
+  lighting_setup: Severe lateral key, venetian-shadow banding, wet specular cuts, and controlled negative fill for noir depth retention
+  material_texture: Rough matte paper-like grain, light drizzle particulate, damp sheen, and low-gloss textile surfaces
   render_quality: Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic restraint at card scale
   spatial_distortion: Tight focal framing with compressed depth to heighten claustrophobic deduction mood
   atmosphere: Intriguing, solitary, tense, and cerebral
-  key_features: Trenchcoat silhouette authority, central evidence anchor, striped shadow patterning, and crimson clue-emphasis logic
+  key_features: Trenchcoat-like silhouette authority, central evidence-like anchor, striped shadow patterning, and crimson clue-emphasis logic
   creative_brief: >-
-    Preserve detective-noir anime grammar as a reusable style system:
+    Use Ink Noir Detective as style anchor for cerebral shadow tension:
     monochrome ink massing, selective crimson focal accents, and hard lateral
-    shadow architecture should remain consistent across subjects.
+    shadow architecture should transfer without requiring detective, evidence,
+    trenchcoat, city, or crime scene.
 avoidRules:
   - photoreal
   - colorful-rainbow

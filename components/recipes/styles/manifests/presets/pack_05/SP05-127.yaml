@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Executioner blades in hallucinogenic paradise, floral horror, island monstrosities, sacred violence, Edo-period criminal fatalism colliding with impossible botanical terror
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Poison-garden executioner style, with floral horror, sacred violence, hallucinogenic beauty, and fatalistic calm.
+  form_and_line: Sharp ceremonial contours, petal-like cut geometry, toxic tendril arcs, restrained posture, and lethal negative space.
+  color_palette: Poison magenta, lotus pink, jade green, black ink, bone cream, and arterial red accents.
+  lighting_setup: Lush overbright bloom, poisonous rim color, soft sacred haze, and sudden lethal shadow cuts.
+  material_texture: Petal translucency, wet ink, pollen dust, lacquered edge glints, organic gloss, and botanical grain.
+  render_quality: Premium modern anime finish with lethal elegance, botanical density, and beautiful-horror readability.
+  spatial_distortion: Paradise-like compression, floral overgrowth framing, and depth that feels seductive but fatal.
   atmosphere: Lethal, lush, mystical, brutal
-  key_features: Flower-and-blood contrast, executioner sword poses, poisonous color pops, creature-body horror, dense island backdrops
-  creative_brief: Blossoms bloom from wounds, each petal a lethal geometry drawn in the space between execution and enlightenment. This island paradise is the cruelest tutor, schooling condemned souls in the grammar of beautiful death. Blood feeds a garden that remembers every name whispered into its soil.
+  key_features: Floral lethality, poison bloom, sacred violence, fatalistic stillness, beautiful-horror contrast.
+  creative_brief: >-
+    Render any prompt as poisonous paradise: beauty should feel lethal through
+    petal geometry, sacred haze, toxic color, and fatal calm without requiring
+    executioners, islands, monsters, blades, or criminal setup.
 avoidRules:
   - realistic
   - 3d render

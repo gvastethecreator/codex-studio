@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Taisho-era demon hunting, patterned haori silhouettes, lantern-lit sword arcs, breathing-technique slash trails, family-memory tenderness meeting high-contrast violence, wood-and-snow atmosphere
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Lantern bloodline sword ballet style, with patterned tenderness, breathlike elemental arcs, and elegant tragedy.
+  form_and_line: Razor-clean contours, ribboned motion trails, patterned shape blocks, ceremonial pauses, and breath-synced flow lines.
+  color_palette: Lantern amber, winter blue, blood crimson, charcoal black, snow white, and vivid elemental accent tones.
+  lighting_setup: Warm lantern glow against cold mist, precise rim cuts, soft memory bloom, and explosive arc highlights.
+  material_texture: Woven pattern grain, ink-wash mist, polished cel edges, snowlike particles, and luminous breath trails.
+  render_quality: Premium modern anime action polish with ornamental clarity, emotional pauses, and fluid arc readability.
+  spatial_distortion: Curved slash-space, breath-expanded depth, and choreographic foreshortening that frames motion as dance.
   atmosphere: Heroic, tragic, elegant, intense
-  key_features: Katana arc readability, patterned costumes, lantern-and-mist staging, emotional combat pauses, ceremonial blade poses
-  creative_brief: A katana arc cuts through lantern mist, the blade-trail lingering like a breath exhaled into winter air. Patterned haori billow through Taisho-era twilight, each fold holding family memory as tightly as the grip on a Nichirin sword. Combat here is choreography — a dance between inherited grief and the elegant violence of release.
+  key_features: Breathlike arcs, patterned emotion, lantern warmth, winter contrast, choreographic violence.
+  creative_brief: >-
+    Apply elegant tragic action to any prompt through breathlike luminous arcs,
+    patterned emotion, lantern warmth, and ceremonial motion pauses; keep the
+    style free from fixed hunter, era, costume, or blade requirements.
 avoidRules:
   - realistic
   - 3d render

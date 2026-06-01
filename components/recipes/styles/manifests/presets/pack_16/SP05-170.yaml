@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-170
 packId: pack_16
-name: Cardcaptor Sakura - Storybook Seal Magic
+name: Storybook Seal Magic Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Magical-girl noventero de ternura luminosa, con diseño ornamental, sellos elegantes y crecimiento emocional amable.
+  aesthetic: Magical-girl noventero de ternura luminosa, diseño ornamental, sellos elegantes y crecimiento emocional amable.
   form_and_line: Línea limpia y delicada, acting inocente determinado y staging de transformación con detalle artesanal.
-  color_palette: Rosas pastel, dorados suaves, celestes claros y verdes de tarde urbana acogedora.
-  lighting_setup: Glow cálido de atardecer y magia blanda, con highlights perlados en accesorios místicos.
-  material_texture: Telas de vestuario detallado, papel de carta mágica, superficies escolares hogareñas y grano suave.
+  color_palette: Rosas pastel, dorados suaves, celestes claros y verdes de tarde acogedora.
+  lighting_setup: Glow cálido de atardecer y magia blanda, con highlights perlados en ornamento místico.
+  material_texture: Telas detalladas, papel simbólico, superficies suaves y grano analógico delicado.
   render_quality: Acabado premium 90s con legibilidad impecable de encanto, ritual y cotidianidad protectora.
-  spatial_distortion: Escala íntima de barrio y aula, con aperturas fantásticas para aparición de sello y vuelo.
+  spatial_distortion: Escala íntima y protectora con aperturas fantásticas para sello, giro y vuelo visual.
   atmosphere: Dulce, mágica, brillante, reconfortante.
-  key_features: Motivos de círculo-sello, llaves ornamentales, cambio de vestuario y coreografía aérea de cartas.
-  creative_brief: Diseña una gramática reusable de magia cotidiana compasiva para cualquier sujeto, equilibrando delicadeza visual, aventura juvenil y esperanza serena sostenida.
+  key_features: Motivos de círculo-sello, ornamento arcano abstracto, transformación suave y coreografía aérea.
+  creative_brief: >-
+    Diseña una gramática reusable de storybook-seal-magic para cualquier
+    sujeto, equilibrando delicadeza visual, aventura juvenil y esperanza serena
+    sin imponer cartas, llaves, escuela, barrio, vestuario específico ni
+    rituales literales.
 avoidRules:
   - realistic
   - 3d render

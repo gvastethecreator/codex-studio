@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Mouth-breathing teen delinquent caricature, couch-slouch nihilism, ugly suburban interiors, cheap music-video culture, stupid-laugh deadbrain energy, acne-age contempt, pencil-neck stupidity
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity
+  form_and_line: Jagged slack contours, pencil-neck angles, ugly profile-like construction, slow posture sag
+  color_palette: Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red
+  lighting_setup: Flat cathode glow, low-rent room ambience, no glamour, tired exposure
+  material_texture: Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge
+  render_quality: Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire
+  spatial_distortion: Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic
   atmosphere: Idiotic, lazy, mean, vacant
-  key_features: Overbites, slouched posture, deadbeat living room clutter, ugly teen profile shapes, cheap-TV ambience
-  creative_brief: Gravity pulls harder on these bodies, flattening spines into upholstery, erasing ambition from posture one potato-chip episode at a time. The room exhales stale boredom while profiles cut jagged against the cathode-ray glow of a world they will never join.
+  key_features: Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture
+  creative_brief: 'Use dumb slouch caricature as visual grammar: sagging posture logic, jagged profiles, cheap-TV glow, ugly low-rent color, and vacant timing. Avoid couches, teens, interiors, overbites, or specific bodies as requirements. The style should make boredom look physically heavy.'
 avoidRules:
   - digital
   - HD

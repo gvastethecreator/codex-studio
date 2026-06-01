@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-236
 packId: pack_05
-name: VOTOMS - Scopedog Trench Attrition
+name: Compact Attrition Hardware Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Realismo militar utilitario de desgaste extremo, con mecha tratado como hardware desechable de trinchera.
-  form_and_line: Volúmenes compactos de blindado, óptica visor monocular y panelado funcional sin heroización formal.
+  aesthetic: Realismo utilitario de desgaste extremo, hardware compacto tratado como material desechable, presión logística, anti-glamour industrial.
+  form_and_line: Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones bajas y ausencia de heroización formal.
   color_palette: Verde oliva sucio, marrón barro, gris acero oxidado y rojo de testigo operativo mínimo.
-  lighting_setup: Cielo plomizo, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.
+  lighting_setup: Luz plomiza, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.
   material_texture: Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción mecánica.
-  render_quality: Mecánica bélica de alta credibilidad con peso físico, suciedad persistente y enfoque anti-glamour.
-  spatial_distortion: Perspectiva de campo bajo con compresión de trinchera y visibilidad táctica limitada.
-  atmosphere: Ruda, agotada y pragmática, de guerra sin épica.
-  key_features: Visor scope, chasis utilitario, barro y herrumbre, staging de trincheras y lenguaje de supervivencia táctica.
+  render_quality: Mecánica utilitaria de alta credibilidad con peso físico, suciedad persistente y enfoque anti-glamour.
+  spatial_distortion: Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en primer plano.
+  atmosphere: Ruda, agotada y pragmática, sin épica.
+  key_features: Chasis utilitario abstracto, barro y herrumbre, lectura funcional, supervivencia material, compactación pesada.
   creative_brief: >-
-    Define una gramática scopedog-attrition reusable donde masa compacta,
-    materialidad de desgaste y puesta en escena logística expresen conflicto
-    prolongado sin espectacularización heroica.
+    Define una gramática compact-attrition reusable donde masa baja,
+    materialidad de desgaste y presión logística expresen supervivencia
+    prolongada sin transportes concretos, facciones, zanjas tácticas, conflicto
+    literal o espectacularización heroica.
 avoidRules:
   - realistic
   - 3d render

@@ -18,28 +18,25 @@ visualDna:
   lighting_setup: Key teatral en spot, flares en highlight, glare de congelado y contraluz de escenario melodramático.
   material_texture: Grano fílmico suave, bloom cel, brillo aerografiado y tactilidad de papel postal.
   render_quality: Frame icónico de memoria dramática con composición concentrada y claridad de gesto emocional.
-  spatial_distortion: Heroic freeze poses, diagonally framed bodies, symbolic overlay space, concentrated emotional composition
+  spatial_distortion: Iconic freeze composition, diagonal framing, symbolic overlay space, and concentrated emotional scale shifts
   atmosphere: Nostálgica, intensa y luminosa, suspendida en un instante absoluto.
-  key_features: Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y stare-down emocional.
+  key_features: Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y confrontación emocional.
   creative_brief: >-
     Construye una gramática postcard-freeze reusable donde el tiempo se detiene
     pero la emoción escala: brillo glam, símbolos florales y encuadre de
     melodrama deben sostener identidad sin escena fija.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
+  - casual snapshot
+  - low-drama realism
+  - flat documentary lighting
+  - cluttered background
+  - muddy color
+  - weak focal emotion
+  - generic modern polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
-  negativePrompt: still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement
+  negativePrompt: casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal emotion, generic modern polish
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

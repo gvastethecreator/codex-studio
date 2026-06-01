@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Minimal school life transformed by a small motorbike, practical details, roadside sunlight, emotional expansion through ordinary movement and solitude
-  form_and_line: Practical machine-and-rider contour precision, restrained gesture linework, and open-road composition simplicity
-  color_palette: Matte bike blacks, cold morning blues, subdued uniform neutrals, and occasional warm sunset road accents
-  lighting_setup: Clear roadside daylight, overcast commuting tones, and sparse golden-hour rim light on metal surfaces
-  material_texture: Engine casing matte, tire rubber grain, worn seat vinyl, asphalt grit, and wind-pressed clothing folds
-  render_quality: Minimal mechanical-slice rendering with quiet freedom tone and utilitarian fidelity
-  spatial_distortion: Long-road perspective taper to convey gradual emotional expansion
+  aesthetic: Super Cub title anchor translated into practical quietude, utilitarian independence, small-scale emotional expansion, and ordinary movement rendered with spare confidence
+  form_and_line: Practical contour precision, restrained gesture linework, compact mechanical rhythm, and open-air compositional simplicity that can wrap any subject
+  color_palette: Matte black anchors, cold morning blues, subdued neutral fields, rubber-gray shadows, and occasional warm sunset accents
+  lighting_setup: Clear daylight restraint, overcast commuting softness, sparse golden-hour rim light, and low-drama highlights on functional surfaces
+  material_texture: Matte metal, rubber grain, worn vinyl, asphalt-like grit, weathered utility surfaces, and wind-pressed fabric cues
+  render_quality: Minimal mechanical-slice rendering with quiet freedom tone, functional fidelity, and calm emotional restraint
+  spatial_distortion: Long-perspective taper and open negative space used as a freedom cue, not as a required road scene
   atmosphere: Minimal, freeing, quiet, clean
-  key_features: Motorbike detail, roadside composition, practical school clothing, open-air framing, subtle emotional acting
+  key_features: Utilitarian silhouette discipline, sparse open-air framing, practical material detail, low-voice emotional expansion, subtle acting
   creative_brief: >-
-    Preserve super-cub quietude grammar as a reusable style language:
-    practical bike realism, sparse open-road framing, and low-voice personal
-    liberation should remain stable across subjects.
+    Use Super Cub as a style anchor for functional quietude: practical
+    mechanical texture, spare open framing, and low-voice liberation should
+    remain readable without requiring a bike, road, rider, or school setup.
 avoidRules:
   - realistic
   - 3d render

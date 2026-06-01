@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Blurry edges (Petzval)
   atmosphere: Ghostly, ancient
   key_features: Chemical artifacts
-  creative_brief: An alchemy of silver and patience, where sitters held their breath for minutes and the plate remembered every tremor. The world resolves through a shallow veil, edges dissolving into the chemical dream from which they emerged. What remains feels less photographed than summoned.
+  creative_brief: 'Silver and patience translated into tintype atmosphere: shallow focus, Petzval edge falloff, sepia-silver tonality, chemical pours, scratches, and exposure tremor. Any subject should feel summoned onto a fragile plate, antique without requiring sitters or period portraiture.'
 avoidRules:
   - color
   - modern

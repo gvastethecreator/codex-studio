@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Cyberpunk city lighting
+  aesthetic: Neon noir lighting
   form_and_line: Rim lights
   color_palette: Pink and Teal
   lighting_setup: Colored practical lights
-  material_texture: Wet pavement reflection
+  material_texture: Wet reflective sheen
   render_quality: Cinematic, stylized
   spatial_distortion: None
   atmosphere: Cool, futuristic
   key_features: Dual color light
-  creative_brief: Rain-slicked asphalt mirrors two competing futures in dueling pink and cyan, a city that breathes synthesized light through its veins. Every surface glistens with the afterimage of neon, darkness deployed not as absence but as the canvas upon which electricity paints. The chrome-and-shadow vocabulary of tomorrow's late-night solitude.
+  creative_brief: Pink and cyan practical lights cut across darkness, turning any reflective surface into noir electricity. Wet sheen, rim highlights, and saturated color separation create a cinematic future-night mood without requiring streets, city, chrome props, or rain-slick pavement.
 avoidRules:
   - daylight
   - sun

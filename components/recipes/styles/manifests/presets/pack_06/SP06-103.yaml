@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP06-103
 packId: pack_06
-name: Metroidvania Cavern Biome
+name: Metroidvania Parallax Gloom
 category: 7. Game Art Directions & UI
 version: 1
 supportedTasks:
@@ -12,25 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Sprite-ready game art with clear silhouette language and readable shape hierarchy.
-  subject_treatment: Consistent proportions across frames, strong pose readability, clean action arcs.
-  color_and_tone: Limited palette with separated shadow, midtone, highlight, and accent ramps.
-  lighting_and_shadow: Simple directional lighting that stays stable across animation frames.
-  texture_and_material: Controlled pixel/noise detail that does not shimmer between frames.
-  camera_and_composition: Orthographic side or three-quarter view, centered subject, stable scale.
-  atmosphere_and_mood: Expressive game feel without scene clutter or background dependency.
-  rendering_and_quality: Animation-sheet friendly, crisp edges, no motion blur, no text.
+  aesthetic: Layered Metroidvania side-scroll style with readable silhouettes against moody parallax depth.
+  subject_treatment: Shape any subject into bold side-view forms, negative-space cutouts, and traversal-readable contours.
+  color_and_tone: Deep cool shadows, muted midtones, rare toxic accents, and strong foreground/background value splits.
+  lighting_and_shadow: Rim-biased side lighting with luminous pockets, heavy occlusion, and atmosphere-separated planes.
+  texture_and_material: Pixel clusters, mossy noise, mineral-like speckle, and subtle animated-glow implications without fixed scenery.
+  camera_and_composition: Wide side-on composition, layered planes, strong platform-read silhouette rhythm, and stable sprite scale.
+  atmosphere_and_mood: Lonely, exploratory, mysterious tone without requiring caverns, platforms, doors, or creatures.
+  rendering_and_quality: Pixel-perfect edges, parallax-ready depth separation, no painterly blur, no overdetail.
 avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
   - background scene
+  - literal cavern requirement
+  - platform requirement
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-103.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, literal cavern requirement, platform requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2
@@ -48,4 +50,3 @@ taxonomy:
     - image_generate
     - style_preset_card
   hasDefaultImage: true
-

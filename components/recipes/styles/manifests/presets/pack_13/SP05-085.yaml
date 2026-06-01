@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Anxiety-comedy band anime language where mundane school-music realism collides with stylized panic-breakdown insertions and sudden performance catharsis
-  form_and_line: Soft everyday contours punctuated by abrupt exaggeration modes, collapse-face elasticity, and stage-performance silhouette stabilization
-  color_palette: Base warm school pastels with occasional high-saturation anxiety spikes, glitch-tone accents, and concert-light contrast bursts
-  lighting_setup: Calm clubroom ambient baseline transitioning to hard live-house key accents and stylized flash overlays during emotional overload beats
-  material_texture: Everyday instrument and classroom textures with mixed-media interruption cues (halftone/glitch/pixel artifacts) used as expressive overlays
+  aesthetic: Anxiety-comedy music language where mundane softness collides with stylized panic-breakdown insertions and sudden cathartic release
+  form_and_line: Soft everyday contours punctuated by abrupt exaggeration modes, collapse-face elasticity, and stabilized release silhouettes
+  color_palette: Base warm pastels with occasional high-saturation anxiety spikes, glitch-tone accents, and hard contrast bursts
+  lighting_setup: Calm ambient baseline transitioning to hard key accents and stylized flash overlays during emotional overload beats
+  material_texture: Everyday soft textures with mixed-media interruption cues (halftone/glitch/pixel artifacts) used as expressive overlays
   render_quality: Hybrid slice-comedy render with controlled mode-switching between awkward stillness and high-energy stage intensity while preserving readability
-  spatial_distortion: Contextual distortion toggles, from grounded social framing to expressive panic-warps and back to stable musical-performance composition
+  spatial_distortion: Contextual distortion toggles from grounded social framing to expressive panic-warps and back to stable cathartic composition
   atmosphere: Anxious, funny, vulnerable, and musically liberating
-  key_features: Mode-switch visual language, panic-to-performance contrast, guitar-centric emotional anchor, and socially awkward micro-acting clarity
+  key_features: Mode-switch visual language, panic-to-release contrast, glitch overlays, and socially awkward micro-acting clarity
   creative_brief: >-
-    Preserve anxiety-glitch band grammar as a reusable style system: grounded
-    daily-life baseline, stylized meltdown insertions, and cathartic stage
-    release should remain consistent across subjects.
+    Use the title as a style anchor for anxiety-glitch comedy. Transfer
+    grounded softness, meltdown insertions, and cathartic release to any
+    subject without requiring band gear, school, or stage.
 avoidRules:
   - realistic
   - 3d render

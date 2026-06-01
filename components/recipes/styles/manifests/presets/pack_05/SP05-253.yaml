@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Elegancia de healing-fantasy adulta, con competencia profesional, laboratorio herbal y cortesía palaciega contenida.
-  form_and_line: Silueta serena de especialista, trazo limpio de gesto técnico y diseño de vestuario cortesano funcional.
-  color_palette: Verde botánico, marfil clínico, dorado tenue de corte y azul pastel de calma mágica.
-  lighting_setup: Luz suave de invernadero, reflejo en frascos de herbario y bloom curativo de baja agresividad.
-  material_texture: Vidrio de laboratorio, papel de fórmula, seda formal y plantas medicinales detalladas.
-  render_quality: Fantasía terapéutica de alta pulcritud con foco en proceso, cuidado y autoridad tranquila.
-  spatial_distortion: Espacio de trabajo ordenado y jerarquía visual por estaciones de preparación alquímica.
+  aesthetic: Healing-fantasy adulta, con pulcritud profesional, serenidad botánica y refinamiento institucional.
+  form_and_line: Trazo limpio, contornos serenos, gestos medidos y ornamentación funcional de cuidado experto.
+  color_palette: Verde botánico, marfil clínico, dorado tenue y azul pastel de calma mágica.
+  lighting_setup: Luz difusa de invernadero abstracto, reflejos suaves y bloom curativo de baja agresividad.
+  material_texture: Vidrio translúcido, papel fino, seda sobria, fibras vegetales y superficies cuidadosamente preparadas.
+  render_quality: Fantasía terapéutica de alta pulcritud, con autoridad tranquila y claridad de proceso visual.
+  spatial_distortion: Orden compositivo por capas, respiración limpia y jerarquías suaves de preparación y cuidado.
   atmosphere: Calmada, luminosa y competente.
-  key_features: Herbario, frascos de cura, protocolo de corte y postura profesional de protagonista.
+  key_features: Verde sanador, brillo clínico suave, cortesía formal, detalle botánico y compostura adulta.
   creative_brief: >-
-    Define una gramática herbarium-court reusable donde sanación botánica,
-    compostura adulta y refinamiento institucional conviertan la magia en
-    práctica experta, no en espectáculo.
+    Define una gramática herbarium-court reusable donde cualquier prompt se
+    refine mediante calma botánica, pulcritud curativa y luz institucional sin
+    obligar una escena profesional, palaciega o medicinal literal.
 avoidRules:
   - realistic
   - 3d render

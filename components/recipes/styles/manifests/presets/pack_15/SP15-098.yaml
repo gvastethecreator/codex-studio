@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
 visualDna:
-  aesthetic: Cathedral annex where gears are presented as sacred infrastructure.
-  form_and_line: Vaulted nave, cog rose window, and gear chapels.
+  aesthetic: Sacred clockpunk infrastructure where gears read as devotional machinery.
+  form_and_line: Vaulted nave geometry, cog rose windows, gear chapel forms, and processional brass ribs.
   color_palette: Ivory, bronze, and deep sapphire.
   lighting_setup: Stained-glass sunlight and lantern pools.
   material_texture: Carved stone, brass fittings, and polished wood.
   render_quality: Monumental sacred-mechanical concept.
-  spatial_distortion: Nave depth toward central gear altar.
+  spatial_distortion: Nave-like depth toward a central gear altar axis.
   atmosphere: Reverence, precision, and ceremonial awe.
-  key_features: Gear altar, time reliquaries, and clock choir stalls.
+  key_features: Gear altar motifs, time reliquary shapes, clock choir bands, and sacred brass cog halos.
   creative_brief: >-
     Preserve cog cathedral-annex grammar as a reusable style system:
     sacred-mechanical monumentality, gear-liturgical symbolism, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, whimsical, cyberpunk-noise, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-098.webp }
 attributes:
   negativePrompt: photoreal, whimsical, cyberpunk-noise, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-clockpunk, categoryName: 2. Corepunk — Clockpunk, tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-clockpunk,
+    categoryName: 2. Corepunk — Clockpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

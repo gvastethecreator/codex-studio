@@ -12,17 +12,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Cinematic movie still close-up, dramatic film photography',
       subject_treatment:
-        'Extremely shallow depth of field, sharp focus on the eyes, soft out-of-focus background',
+        'Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus background',
       color_and_tone:
         'Cinematic color grading, teal and orange split toning, rich cinematic contrast',
       lighting_and_shadow: 'Dramatic Rembrandt lighting, strong directional light, deep shadows',
-      texture_and_material: 'Cinematic film grain, detailed skin texture, anamorphic lens flares',
+      texture_and_material:
+        'Cinematic film grain, detailed surface texture, anamorphic lens flares',
       camera_and_composition:
         'Shot on anamorphic lens, beautiful bokeh background, tight emotional framing',
       atmosphere_and_mood: 'Emotional, dramatic, intense, narrative, moody',
       rendering_and_quality: '4K cinematic render, filmic look, high production value',
       creative_brief:
-        'The frame feels lifted from a film you almost remember—a moment of suspended breath where emotion hangs visible in the air. Colors split like twilight, warm and cool battling across skin and shadow. The lens draws you into an intimate distance, close enough to see the story in an eye, yet the world beyond dissolves into painterly abstraction. This is the visual language of cinema at its most visceral.',
+        'Apply cinematic close-up language to any subject: shallow focus, anamorphic flares, teal-orange tension, tight emotional framing, and film-still drama without requiring eyes or a human close-up.',
     },
   },
   {
@@ -39,10 +40,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Medium grain',
       render_quality: 'Cinematic, moody',
       spatial_distortion: 'Red halation glow',
-      atmosphere: 'Night, urban',
+      atmosphere: 'Nocturnal, moody',
       key_features: 'Red halos',
       creative_brief:
-        'The city after midnight exhales through tungsten breath, streetlights bleeding crimson coronas into cooling air. Every source of illumination becomes a wound in the darkness, tender and electric. A solitary frame suspended in the long exposure between loneliness and belonging.',
+        'Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets.',
     },
   },
   {
@@ -56,12 +57,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Greyscale',
       lighting_setup: 'Versatile',
       material_texture: 'Visible grain',
-      render_quality: 'Journalism, street',
+      render_quality: 'Documentary film',
       spatial_distortion: 'None',
       atmosphere: 'Classic, gritty',
       key_features: 'Monochrome',
       creative_brief:
-        "Stripped of chroma's distraction, the frame reduces to its skeleton: light wrestling shadow across the street, a stranger's hands, the geometry of waiting. Grain carries the newsprint urgency of a moment that refuses polish. Truth in silver, nothing hidden, nothing softened.",
+        "Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5 contrast on any subject; no street, stranger, or human detail required.",
     },
   },
   {
@@ -74,14 +75,14 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Vintage slide film',
       form_and_line: 'Sharp, archival',
       color_palette: 'Rich reds, realistic',
-      lighting_setup: 'Direct sun',
+      lighting_setup: 'Clean direct light',
       material_texture: 'Fine grain',
-      render_quality: 'National Geographic 80s',
+      render_quality: 'Archival documentary slide',
       spatial_distortion: 'High contrast',
       atmosphere: 'Historic, vivid',
       key_features: 'Red pop',
       creative_brief:
-        'The archive of a mid-century afternoon, preserved in dyes that refuse to fade: reds that ache with permanence, skies that hold their breath since 1972. Every detail etched with documentary conviction, as if the world were being catalogued for the first and final time.',
+        'Archival slide-film permanence: rich reds, clean direct light, crisp microdetail, and contrast that feels catalogued rather than stylized. Make any subject look preserved in durable dye layers, vivid but believable, historical without requiring skies, travel, or a mid-century scene.',
     },
   },
   {
@@ -93,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Warm analog film look',
       form_and_line: 'Soft but sharp',
-      color_palette: 'Great skin tones, pastel highlights',
+      color_palette: 'Warm neutrals, pastel highlights',
       lighting_setup: 'Natural, forgiving',
       material_texture: 'Fine grain',
       render_quality: 'Professional film',
@@ -101,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, warm',
       key_features: 'Yellow/Red bias',
       creative_brief:
-        'Sunlight folded into emulsion, surrendering its harshness for a tender amber embrace. Skin remembers itself through this palette, rendered not as surface but as the warmth beneath. A world seen through honeyed memory, where every tone earns its place in quiet, unhurried conversation.',
+        'Sunlight folded into emulsion, surrendering harsh edges for a tender amber embrace. Colors breathe through warm neutrals, gentle saturation, pastel highlight rolloff, and fine analog grain. Any subject should feel photographed through honeyed memory, intimate without forcing a human face or scene.',
     },
   },
   {
@@ -111,17 +112,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
-      aesthetic: 'High saturation landscape film',
+      aesthetic: 'High saturation slide film',
       form_and_line: 'High contrast',
       color_palette: 'Vivid Green, Blue, Red',
       lighting_setup: 'Daylight',
       material_texture: 'Very fine grain',
-      render_quality: 'Nature photography',
+      render_quality: 'Fine-grain slide realism',
       spatial_distortion: 'Crushed blacks',
       atmosphere: 'Vibrant, punchy',
       key_features: 'Magenta bias',
       creative_brief:
-        'Nature translated into its own boldest dialect, where green becomes greener than memory and sky deepens toward violet truth. The world sharpens into crystalline conviction, shadows collapsing into pure statement. This is landscape as exclamation, not description.',
+        "Reality translated into its boldest slide-film dialect: greens, blues, and reds pushed toward jewel intensity, blacks compressed into decisive graphic weight, edges cut with crystalline confidence. Apply Velvia's saturated conviction to any subject, not only landscape or nature.",
     },
   },
   {
@@ -141,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Memory, retro',
       key_features: 'Square crop',
       creative_brief:
-        'A recollection still damp from the chemistry, edges darkening toward a frame within a frame. Colors retreat into themselves, leaving behind the ghost of a moment too fleeting to name. The flash caught what the eye forgot, and now it waits in a shoebox, stubbornly present.',
+        'A recollection still damp from instant chemistry: square crop, milky color shift, flash falloff, vignetted edges, and uneven chemical spread marks. Any subject becomes an object of immediate memory, casual and imperfect, without needing party faces or domestic nostalgia.',
     },
   },
   {
@@ -149,19 +150,19 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lomo LC-A',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
+      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Toy camera film',
-      form_and_line: 'Blurry edges',
+      form_and_line: 'Soft warped edges',
       color_palette: 'Cross-processed, saturated',
       lighting_setup: 'Vignette',
       material_texture: 'Light leaks',
-      render_quality: 'Lo-fi, experimental',
+      render_quality: 'Lo-fi analog experiment',
       spatial_distortion: 'Heavy vignette',
       atmosphere: 'Fun, unpredictable',
       key_features: 'Tunnel vision',
       creative_brief:
-        "A plastic eye drunk on stray photons, letting color run where it shouldn't and shadow pool at the perimeter like spilled ink. The frame circles inward toward whatever caught the light's attention, unconcerned with sharpness or dignity. Joy over precision, serendipity over control.",
+        'A plastic lens drunk on stray photons: cross-processed saturation, light leaks, smeared corners, heavy vignette, and color running where precision would normally hold it back. Turn any subject into a lo-fi analog accident, playful without requiring a specific place or event.',
     },
   },
   {
@@ -172,16 +173,16 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Aerochrome style',
-      form_and_line: 'Glowing foliage',
-      color_palette: 'Pink/Red foliage, dark sky',
+      form_and_line: 'Glowing infrared edges',
+      color_palette: 'Pink/Red highlights, dark cyan shadows',
       lighting_setup: 'Surreal',
       material_texture: 'Grainy',
       render_quality: 'Psychedelic, scientific',
       spatial_distortion: 'False color',
       atmosphere: 'Alien, dreamlike',
-      key_features: 'Red trees',
+      key_features: 'False-color infrared response',
       creative_brief:
-        'The spectrum inverted: chlorophyll blazing crimson against a sky gone indigo, as if the world were photographed through the eyes of a creature from a warmer star. Familiar landscapes become extraterrestrial elegies, the visible spectrum bending toward frequencies the waking eye was never meant to witness.',
+        'The spectrum inverted: reflective surfaces flare pink and red, shadows cool toward indigo, and ordinary material becomes alien under infrared logic. Bend any subject toward Aerochrome false color and scientific psychedelia; no foliage, trees, sky, or landscape required.',
     },
   },
   {
@@ -192,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Damaged film stock',
-      form_and_line: 'Soft',
+      form_and_line: 'Soft unstable edges',
       color_palette: 'Green/Magenta shift',
       lighting_setup: 'Fogged',
       material_texture: 'Heavy grain, mold',
@@ -201,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Decay, lost memory',
       key_features: 'Color shift',
       creative_brief:
-        'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static across a fading frequency. The image carries its own decay as a second subject, time visibly eating through the emulsion. A photograph that remembers its own dying, and renders that memory beautiful.',
+        'Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static, fogging and mold marks drifting across tone. Let decay become a second visual layer over any subject, time visibly eating through emulsion without dictating what image sits beneath.',
     },
   },
   {
@@ -210,17 +211,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Film And Analog Process',
     negativePrompt: 'quiet, bright',
     style: {
-      aesthetic: 'Band on stage',
-      form_and_line: 'Silhouettes in fog',
+      aesthetic: 'Concert-stage lighting',
+      form_and_line: 'Silhouettes in beam fog',
       color_palette: 'Stage lights (Red/Blue)',
       lighting_setup: 'Beams, spots',
-      material_texture: 'Fog, sweat, grain',
-      render_quality: 'Rock n roll, loud',
+      material_texture: 'Fog, heat sheen, grain',
+      render_quality: 'Loud live-event realism',
       spatial_distortion: 'None',
       atmosphere: 'Energetic, loud',
-      key_features: 'Crowd hands',
+      key_features: 'Beam-and-fog energy',
       creative_brief:
-        "Light becomes weapon and worship simultaneously, blades of crimson and cobalt slicing through manufactured fog while silhouettes command the stage like hierophants of noise. Sweat catches the beam, grain catches the darkness, and the invisible wall of sound becomes almost visible in the held breath between guitar chords. The crowd's reaching hands form a congregation of ecstasy beyond the spotlight's edge.",
+        'Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.',
     },
   },
   {
@@ -235,12 +236,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Rich, smooth tones',
       lighting_setup: 'Controlled',
       material_texture: 'Zero grain',
-      render_quality: 'Ansel Adams, fine art',
+      render_quality: 'Fine-art view camera',
       spatial_distortion: 'Tilt-shift potential',
       atmosphere: 'Grand, still',
       key_features: 'Extreme resolution',
       creative_brief:
-        'Monumental stillness rendered with the gravity of cathedral stone: every leaf on every distant tree, every fissure in granite, every molecule of air held accountable. The plane of focus tilts like a held breath, bending space into reverence. This is not a photograph but a covenant with the visible.',
+        'Monumental stillness rendered through view-camera discipline: smooth tonal scale, huge negative detail, controlled perspective, and a focus plane that can tilt through space with deliberate authority. Give any subject large-format gravity without requiring wilderness, trees, granite, or architecture.',
     },
   },
   {
@@ -256,10 +257,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Fractal patterns',
       render_quality: 'Scientific, alien',
       spatial_distortion: 'Extreme magnification',
-      atmosphere: 'Scientific, scary',
+      atmosphere: 'Scientific, alien',
       key_features: 'B&W depth',
       creative_brief:
-        'Landscapes hiding at the threshold of the invisible, where a grain of pollen becomes a planetary surface. Monochromatic terrain revealed by electrons rather than photons, texture unfolding into fractal cathedrals. The terrifying intimacy of seeing what the naked eye was never meant to witness.',
+        'Electron-beam realism at extreme magnification: monochrome depth, directional micro-shadowing, fractal texture, and scale ambiguity that makes any surface feel alien. Reveal subject as microscopic terrain without requiring pollen, biology, cathedral metaphors, or macro photography.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

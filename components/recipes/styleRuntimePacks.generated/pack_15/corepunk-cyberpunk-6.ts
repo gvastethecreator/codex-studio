@@ -11,19 +11,76 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, empty-streets, military-oppression, fantasy-medieval, watermark, text, logo',
     style: {
       aesthetic:
-        'Civic cyberpunk with encrypted neighborhood infrastructure and humane street-scale systems.',
-      form_and_line: 'Cable lattices, modular kiosks, and dense vertical sign rhythm.',
+        'Civic cyberpunk with encrypted neighborhood infrastructure, humane data autonomy, and wet-night cooperative resilience.',
+      form_and_line:
+        'Cable lattice overlays, modular kiosk-like blocks, and dense vertical signal rhythm.',
       color_palette: 'Electric blue, magenta pulse, and asphalt charcoal.',
-      lighting_setup: 'Wet-night neon with selective AR overlay glow.',
+      lighting_setup: 'Wet-night neon with selective AR-overlay glow.',
       material_texture:
         'Carbon composites, rain-slick concrete, translucent OLED screens, and braided fiber conduits.',
-      render_quality: 'High-contrast concept key art with precise wayfinding and edge clarity.',
-      spatial_distortion: 'Narrow alley canyon perspective pulling into a secure community node.',
+      render_quality: 'High-contrast cyberpunk key art with precise wayfinding and edge clarity.',
+      spatial_distortion: 'Narrow canyon perspective pulling into a secure community-data node.',
       atmosphere: 'Alert intelligence, cooperative resilience, and controlled nocturnal energy.',
       key_features:
-        'Mesh routers, encrypted market stalls, cooperative security drones, and coded mural walls.',
+        'Mesh-router motifs, encrypted micro-market geometry, cooperative sensor cues, and coded mural-wall patterning.',
       creative_brief:
-        'A cyberpunk alley where surveillance is community-owned and data systems protect local autonomy.',
+        'Preserve meshlight alley-protocol grammar as a reusable style language: encrypted street-scale infrastructure, cooperative data autonomy, and wet-night wayfinding clarity should remain stable across subjects without requiring alleys, kiosks, drones, stalls, or readable signage.',
+    },
+  },
+  {
+    id: 'SP15-132',
+    name: 'Cooperative Firewall Bloom',
+    category: '6. Corepunk — Cyberpunk',
+    negativePrompt:
+      'photoreal, military-oppression, empty-corporate, medieval-fantasy, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Civic cyberpunk where encryption appears as blooming public infrastructure instead of corporate oppression.',
+      form_and_line:
+        'Firewall petal lattices, encrypted node clusters, braided fiber arcs, and dense modular shield geometry.',
+      color_palette:
+        'Electric cyan, civic mint, magenta pulse, matte charcoal, and warm amber trust accents.',
+      lighting_setup:
+        'Wet-night neon filtered through translucent data petals, edge-lit fiber halos, and gentle AR safety glows.',
+      material_texture:
+        'Translucent OLED membranes, braided fiber conduits, rain-slick carbon, soft rubber seals, and etched cooperative glyphs.',
+      render_quality:
+        'High-contrast cyberpunk polish with precise edge clarity, humane interface readability, and dense but calm data layering.',
+      spatial_distortion:
+        'Protective mesh depth wraps around the subject like a public shield without requiring streets, screens, or security devices.',
+      atmosphere: 'Alert, protective, luminous, cooperative, tactical.',
+      key_features:
+        'Blooming firewall lattices, fiber-braid arcs, encrypted node constellations, rain-neon reflections, and civic interface warmth.',
+      creative_brief:
+        'Preserve cooperative firewall bloom as a reusable style system: encryption, public safety, and neon data-flower geometry should transform any subject without requiring hackers, drones, cities, or literal screens.',
+    },
+  },
+  {
+    id: 'SP15-133',
+    name: 'Rain Kernel Alleyglass',
+    category: '6. Corepunk — Cyberpunk',
+    negativePrompt:
+      'photoreal, sunny-pastoral, militarized, fantasy-medieval, watermark, text, logo',
+    style: {
+      aesthetic:
+        'Intimate cyberpunk glass-and-rain grammar where microcomputing, wet reflections, and transparent circuitry create humane nocturnal density.',
+      form_and_line:
+        'Thin circuit filaments, glass shard panels, rain-streak verticals, and kernel-like glowing node clusters.',
+      color_palette:
+        'Deep black glass, electric blue, magenta violet, rain silver, and small warm repair-light amber.',
+      lighting_setup:
+        'Narrow neon strips, reflected puddle glow, translucent glass bloom, and tiny diode constellations.',
+      material_texture:
+        'Wet safety glass, transparent PCB traces, carbon weave, rubber gasket edges, and condensation grain.',
+      render_quality:
+        'Dense cyberpunk close-detail finish with tactile rain readability, transparent circuitry, and controlled nocturnal contrast.',
+      spatial_distortion:
+        'Alleyglass compression through stacked translucent planes without requiring an alley, building, person, or device.',
+      atmosphere: 'Quiet, encrypted, damp, humane, watchful.',
+      key_features:
+        'Rain-streak circuitry, transparent kernel nodes, glass-plane layering, diode constellations, and warm repair-light accents.',
+      creative_brief:
+        'Preserve rain kernel alleyglass as a reusable style system: wet transparent circuitry, micro-node glow, and layered nocturnal reflections should apply to any subject without requiring a city alley, gadgets, or readable UI text.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

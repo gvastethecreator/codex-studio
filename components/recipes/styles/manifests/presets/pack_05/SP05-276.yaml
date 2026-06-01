@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-276
 packId: pack_05
-name: Shigurui - Sun-Bleached Sword Cruelty
+name: Sun-Bleached Cruel Discipline Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Merciless feudal duel realism, heat and blood, rank hierarchy, mutilated bodies, severe silence before violence, beauty stripped down to cruelty and discipline
+  aesthetic: Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence before irreversible motion
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut skin shadow
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop, disciplined diagonal tension
   atmosphere: Brutal, austere, scorching, merciless
-  key_features: Sun-bleached harshness, duel posture rigor, body-wound detail, class-hierarchy props, unbearable stillness
-  creative_brief: The sun does not illuminate here but interrogates every wound and silence between sword strokes. Bodies become territory and blades become law in a world where beauty is measured by how cleanly a life is severed. Each frame holds the unbearable weight of the moment just before blood becomes memory.
+  key_features: Sun-bleached harshness, pre-motion rigor, woundlike detail, hierarchy pressure, unbearable stillness
+  creative_brief: >
+    Render any subject under merciless heat and discipline: bleached light,
+    dry staining, taut silence, and hierarchical spacing should make beauty feel
+    cruel without fixed eras, duels, blades, ranks, or body-horror staging.
 avoidRules:
   - realistic
   - 3d render

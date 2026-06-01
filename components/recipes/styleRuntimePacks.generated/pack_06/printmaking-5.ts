@@ -15,12 +15,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Black ink, cream paper',
       lighting_setup: 'Linear shading',
       material_texture: 'Plate tone, embossed paper',
-      render_quality: 'Rembrandt, detailed',
+      render_quality: 'Old-master intaglio detail with plate-pressure tactility',
       spatial_distortion: 'None',
       atmosphere: 'Antique, classic',
       key_features: 'Plate mark',
       creative_brief:
-        'Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Each print carries the ghost of the artist breathing over the acid bath.',
+        'Acid bites copper where the needle exposed it, ink settling into wounds carved by chemistry. The plate transfers its memory under pressure, embossing paper with more than pigment — with the topography of a process both violent and delicate. Every line should feel bitten, fuzzy, pressured, and impossible to mistake for clean digital ink.',
     },
   },
   {
@@ -115,12 +115,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Greyscale, sepia',
       lighting_setup: 'Soft gradients',
       material_texture: 'Rosin dust, granular',
-      render_quality: 'Goya, atmospheric',
+      render_quality: 'Atmospheric tonal etching with granular dark-field control',
       spatial_distortion: 'None',
       atmosphere: 'Dark, moody',
       key_features: 'Granular tone',
       creative_brief:
-        "Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The image breathes atmosphere, Goya's sleep of reason producing monsters in halftone.",
+        'Rosin dust fused to metal creates a granular field that holds ink in countless tiny reservoirs, building tone from texture. Darkness accumulates through acid exposure, stop-out varnish protecting what must remain light. The style breathes atmosphere through particulate shadow rather than outlines, turning mood into a printed chemical field.',
     },
   },
   {
@@ -148,39 +148,41 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rubber Stamp',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable stamp text',
     style: {
       aesthetic: 'Hand stamped image',
       form_and_line: 'Broken, uneven ink',
       color_palette: 'Red, Black, Blue ink',
       lighting_setup: 'Flat',
       material_texture: 'Ink pad, paper grain',
-      render_quality: 'Rough, bureaucratic',
+      render_quality: 'Rough mechanical impression with hand-pressure variance',
       spatial_distortion: 'Incomplete impression',
-      atmosphere: 'Official, rough',
-      key_features: 'Stamp border',
+      atmosphere: 'Official, rough, repetitive',
+      key_features: 'Incomplete impression',
       creative_brief:
-        'Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The image carries the charm of bureaucracy, the poetry of forms stamped RECEIVED. Each pressing records the pressure of the hand, the slight wobble that proves humanity.',
+        'Rubber meets inkpad meets paper in a decisive press, the impression never quite complete, edges starving for pigment. The style carries the pressure, wobble, and broken ink of mechanical repetition made human by imperfection. Each pressing records touch, alignment error, and ink-pad fatigue without needing readable labels.',
     },
   },
   {
     id: 'SP06-043',
-    name: 'Engraving (Banknote)',
+    name: 'Security Engraving',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, currency requirement, readable denomination, portrait requirement',
     style: {
-      aesthetic: 'Money or certificate art',
+      aesthetic:
+        'Security engraving style with guilloche precision and anti-counterfeit line density',
       form_and_line: 'Precise parallel lines',
       color_palette: 'Green, Grey, Monochrome',
       lighting_setup: 'Linear shading',
       material_texture: 'Cotton paper',
-      render_quality: 'Official, detailed',
+      render_quality:
+        'Official high-detail engraving without requiring currency, certificates, seals, or portraits',
       spatial_distortion: 'None',
       atmosphere: 'Serious, valuable',
       key_features: 'Guilloche patterns',
       creative_brief:
-        "Parallel lines of impossible fineness weave into guilloche patterns that defy counterfeiting, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust engraved into cotton paper. Every banknote is a miniature museum of the engraver's art, value printed in precision.",
+        'Parallel lines of impossible fineness weave into guilloche patterns that defy casual reproduction, geometry elevated to security. The plate holds detail beyond the resolution of the naked eye, trust implied through precision and repetition. Value comes from line discipline, not from currency, portraits, seals, or readable denominations.',
     },
   },
   {
@@ -217,10 +219,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Rice paper, dithering',
       render_quality: 'Zine, retro, cheap',
       spatial_distortion: 'Misregistration',
-      atmosphere: 'Fun, indie',
+      atmosphere: 'Fun, indie, handmade, slightly unstable',
       key_features: 'Grainy dither',
       creative_brief:
-        'Soy-based inks layer through a drum that eats digital files and excretes zines, each color slightly offset, each pass adding grain. The dither pattern becomes texture, the misregistration becomes charm, the rice paper absorbs the neon with an appetite for the handmade. Every print smells like the indie section of a bookstore that does not exist.',
+        'Soy-based inks layer through a drum that turns digital input into imperfect physical color, each pass slightly offset, each layer adding grain. The dither pattern becomes texture, the misregistration becomes charm, the paper absorbs neon with an appetite for the handmade. Every image should feel duplicated, cheap, vivid, and intentionally unstable.',
     },
   },
   {
@@ -228,9 +230,9 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Halftone (Newspaper)',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout requirement',
     style: {
-      aesthetic: 'Vintage newspaper photo',
+      aesthetic: 'Vintage halftone newsprint reproduction',
       form_and_line: 'Dot pattern',
       color_palette: 'Black dots on newsprint',
       lighting_setup: 'Flat',
@@ -240,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Vintage, gritty',
       key_features: 'Visible dots',
       creative_brief:
-        "The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs the ink greedily, the cheap paper already yellowing toward oblivion. Every halftone carries the urgency of yesterday's headline, information racing toward irrelevance.",
+        'The image dissolves into dots at close range, a matrix of black circles that achieve grey through spacing, not dilution. Newsprint absorbs ink greedily, cheap paper already yellowing toward oblivion. The style should feel mass-reproduced, urgent, and degraded without requiring headlines, captions, or newspaper layout.',
     },
   },
   {
@@ -248,19 +250,19 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyanotype',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, botanical requirement, architecture requirement',
     style: {
       aesthetic: 'Sun print blueprint',
       form_and_line: 'White silhouettes',
       color_palette: 'Prussian Blue and White',
       lighting_setup: 'Inverted (negative)',
       material_texture: 'Watercolor paper',
-      render_quality: 'Botanical, architectural',
+      render_quality: 'Scientific photogram clarity without requiring plants, plans, or buildings',
       spatial_distortion: 'Silhouette only',
       atmosphere: 'Blue, scientific',
       key_features: 'Blue monochrome',
       creative_brief:
-        'Iron salts sensitize paper to ultraviolet light, turning Prussian blue where the sun touched and leaving white where objects cast their shadows. The image is a photogram, a direct impression of light blocked by matter, science indistinguishable from art. Every cyanotype is a collaboration with the weather on the day it was made.',
+        'Iron salts sensitize paper to ultraviolet light, turning Prussian blue where exposure reaches and leaving white where matter interrupts it. The image is a photogram logic, a direct impression of blocked light, science indistinguishable from art. The style should feel exposed, rinsed, monochrome, and materially tied to light.',
     },
   },
   {
@@ -275,7 +277,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Soft blacks, greys',
       lighting_setup: 'Soft',
       material_texture: 'Limestone grain',
-      render_quality: 'Toulouse-Lautrec, poster',
+      render_quality: 'Stone-print poster softness with faithfully transferred crayon grain',
       spatial_distortion: 'None',
       atmosphere: 'Artistic, soft',
       key_features: 'Grainy texture',
@@ -288,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Collagraph',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal landscape, recognizable found objects',
     style: {
       aesthetic: 'Textured collage print',
       form_and_line: 'Embossed textures',
@@ -300,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Rough, organic',
       key_features: 'Heavy texture',
       creative_brief:
-        'Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as topography itself. The plate becomes a landscape, valleys holding ink while peaks print white, relief as image generator. The print carries the memory of every material sacrificed to its creation.',
+        'Found materials — sand, glue, fabric, cardboard — assembled into a printing surface as textured as raised terrain. Valleys hold ink while peaks print light, relief becoming the image generator. The print carries the memory of every material sacrificed to its creation without requiring literal landscape or collage objects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Classic portrait
+  aesthetic: Classic chiaroscuro portrait-light system
   form_and_line: None
-  color_palette: Warm skin, dark bg, umber shadow, golden highlight, deep void
+  color_palette: Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth
   lighting_setup: Chiaroscuro triangle, 45-degree key, single-source drama
   material_texture: Painterly light, oil-paint falloff, velvet darkness
   render_quality: Dramatic, classic, old-master gravitas, portrait dignity
   spatial_distortion: None
-  atmosphere: Serious, art, introspective stillness, Dutch-master soul
-  key_features: Triangle on cheek, one-lit-eye, dark-side mystery
-  creative_brief: A single source carves presence from void, one half of the face emerging from darkness like a thought surfacing into consciousness. The triangle of light on the cheek becomes a signature—an economy of illumination where shadow does as much storytelling as the flame that breaks it.
+  atmosphere: Serious, artful, introspective stillness, old-master gravity
+  key_features: Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff
+  creative_brief: 'Use Rembrandt lighting as compositional chiaroscuro: one controlled key source, warm highlight, umber falloff, and a small triangular reveal where form turns from shadow. Do not require faces or portraits; apply the light logic to any subject. Shadow should carry as much structure as illumination.'
 avoidRules:
   - flat
   - bright

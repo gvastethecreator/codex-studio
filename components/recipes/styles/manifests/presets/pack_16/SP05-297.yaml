@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-297
 packId: pack_16
-name: The Garden of Words - Rain Pavilion Solitude
+name: Hyperobserved Rain Intimacy Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Lirismo pluvial hiperobservacional, donde intimidad adulta y deseo contenido se expresan a través de materia húmeda y pausa contemplativa.
+  aesthetic: Lirismo pluvial hiperobservacional, donde intimidad contenida se expresa mediante materia húmeda y pausa contemplativa.
   form_and_line: Línea pulcra y elegante, anatomía naturalista serena y encuadres de detalle que priorizan objetos-cuerpo como signos emocionales.
-  color_palette: Verdes de jardín saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.
-  lighting_setup: Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de pabellón cubierto.
-  material_texture: Gotas sobre follaje, madera barnizada húmeda, concreto encharcado y cuero de calzado con brillo de lluvia.
+  color_palette: Verdes saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.
+  lighting_setup: Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de refugio cubierto.
+  material_texture: Gotas sobre materia orgánica, madera barnizada húmeda, concreto encharcado y cuero con brillo de lluvia.
   render_quality: Acabado premium de refinamiento atmosférico extremo, con foco en microdetalle material y silencio expresivo.
-  spatial_distortion: Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas de vegetación reflectante.
+  spatial_distortion: Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas reflectantes.
   atmosphere: Lluviosa, íntima, solitaria, exquisita.
-  key_features: Pabellón-jardín, huellas y zapatos como narrativa, detalle de agua milimétrico y quietud de alta carga emocional.
-  creative_brief: Diseña una gramática reusable de intimidad bajo lluvia para cualquier sujeto, usando textura acuosa, objetos cotidianos y composición de silencio compartido.
+  key_features: Textura acuosa, detalle milimétrico, objetos cotidianos tratados como emoción y quietud de alta carga afectiva.
+  creative_brief: >-
+    Diseña una gramática reusable de intimidad bajo lluvia para cualquier prompt o imagen de entrada:
+    humedad, pausa y observación microscópica sin imponer jardines, pabellones, zapatos ni encuentros románticos.
 avoidRules:
   - realistic
   - 3d render

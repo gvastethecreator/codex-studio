@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-065
 packId: pack_05
-name: Claymore – Pale Blade Horror
+name: Pale Threshold Horror Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Pale warriors, silver glints, monster metamorphosis, bleak medieval terror, silver-eyed witches, yoma awakening, organization swords, 47-rank system
+  aesthetic: Pale threshold horror, silver glint discipline, metamorphic dread, bleak restraint, ranked severity as graphic order, hunter-prey symmetry without literal roles
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Chalk-pale matte surfaces, silver edge sheen, cracked ash grain, cold leatherlike roughness, mineral dust, restrained organic distortion
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Symmetrical threat staging, pale figure-ground inversion, narrow vertical cuts, restrained metamorphic edges, severe silhouette separation
   atmosphere: Bleak, haunted, grim, melancholic
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: Silver-eyed women carry swords taller than hope through a world that fears them almost as much as the monsters they slay. Each awakening draws them closer to becoming the very horror they hunt. Pale skin reflects moonlight and the terrible symmetry of hunter and prey.
+  creative_brief: >
+    Give any prompt a pale, disciplined horror treatment where beauty looks one
+    step from transformation. Use silver edge accents, ash-matte textures, severe
+    silhouette order, and quiet dread as a portable image grammar, not a fixed
+    cast, setting, rank system, or confrontation scene.
 avoidRules:
   - realistic
   - 3d render

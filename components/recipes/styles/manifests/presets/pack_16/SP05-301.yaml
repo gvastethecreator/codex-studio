@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-301
 packId: pack_16
-name: Space Battleship Yamato - Bridge of Last Hope
+name: Analog Space Opera Command Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Ópera espacial militar de convoy interestelar, con liturgia de puente y épica de supervivencia civilizatoria.
-  form_and_line: Contorno grueso de ingeniería naval, siluetas de tripulación jerarquizadas y acting decidido de mando clásico setentero.
-  color_palette: Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de consola.
-  lighting_setup: Iluminación de alarma táctica con pools rojos intermitentes, key de consola y sombra cel de alta urgencia.
-  material_texture: Paneles analógicos, metal naval pintado, monitores de fósforo y grano de telecine vintage.
-  render_quality: Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional de capitán-tripulación.
-  spatial_distortion: Perspectiva forzada de puente y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.
+  aesthetic: Ópera espacial clásica, con liturgia de mando analógico, solemnidad colectiva y supervivencia civilizatoria.
+  form_and_line: Contorno grueso de ingeniería, siluetas jerarquizadas y acting decidido de mando clásico setentero.
+  color_palette: Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de interfaz.
+  lighting_setup: Iluminación de alarma táctica con pools rojos intermitentes, key de interfaz y sombra cel de alta urgencia.
+  material_texture: Paneles analógicos, metal pintado, fósforo de monitor y grano de telecine vintage.
+  render_quality: Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional coral.
+  spatial_distortion: Perspectiva forzada y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.
   atmosphere: Noble, urgente, cósmica, sacrificial.
-  key_features: Geometría de puente por rangos, consola analógica saturada, casco insignia volumétrico y coreografía de mando coral.
-  creative_brief: Construye una gramática reusable de mando naval interestelar para cualquier sujeto, priorizando ritual de puente, tensión de alerta y heroísmo de tripulación sincronizada.
+  key_features: Paneles analógicos, jerarquía compositiva, alerta solemne, escala interestelar sugerida y heroísmo coral.
+  creative_brief: >-
+    Construye una gramática reusable de mando espacial analógico para cualquier prompt o imagen de entrada:
+    tensión, ceremonia técnica y escala épica sin imponer puentes de nave, consolas, cascos ni tripulaciones.
 avoidRules:
   - realistic
   - 3d render

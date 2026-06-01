@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-159
 packId: pack_16
-name: Nana - Black-Lipstick Apartment Punk
+name: Black-Lipstick Melodrama Punk Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Drama rock urbano adulto de cohabitación emocional, con estilismo punk-feminino y vulnerabilidad nocturna en interiores compactos.
-  form_and_line: Línea limpia de retrato íntimo, siluetas fashion de banda y close-up expresivo cargado de fricción afectiva.
-  color_palette: Negros carbón, burdeos de labial, luces ámbar de apartamento y grises azulados de tren nocturno.
-  lighting_setup: Luz de interior tenue, highlights de club y reflejos urbanos de ventana para tono melancólico sofisticado.
-  material_texture: Tela de moda rock, superficies de departamento vivido, humo de cigarrillo y grano digital de época.
+  aesthetic: Melodrama rock adulto, estilismo punk-femenino, vulnerabilidad nocturna y fricción afectiva sofisticada.
+  form_and_line: Línea limpia de retrato íntimo, siluetas fashion, close-up expresivo y tensión corporal contenida.
+  color_palette: Negros carbón, burdeos de labial, ámbar íntimo y grises azulados de noche emocional.
+  lighting_setup: Luz tenue, highlights de performance y reflejos suaves para tono melancólico sofisticado.
+  material_texture: Tela de moda rock, superficies vividas, humo fino y grano digital de época.
   render_quality: Acabado premium drama-2000s con foco en química interpersonal, estilo performativo y herida emocional latente.
-  spatial_distortion: Espacio íntimo de apartamento con compresión de convivencia y aperturas urbanas de escape visual.
+  spatial_distortion: Espacio íntimo comprimido con tensión de convivencia y aperturas de escape visual.
   atmosphere: Estilizada, doliente, adulta, íntima.
-  key_features: Iconografía de banda y moda, contraste labial oscuro, clutter romántico urbano y primeros planos de tensión.
-  creative_brief: Construye una gramática reusable de melodrama rock metropolitano para cualquier sujeto, combinando estética de escena, convivencia frágil y nocturnidad emocional.
+  key_features: Iconografía de moda rock, contraste labial oscuro, clutter romántico y primeros planos de tensión.
+  creative_brief: >-
+    Construye una gramática reusable de black-lipstick-melodrama-punk para
+    cualquier sujeto, combinando estética punk, convivencia frágil y
+    nocturnidad emocional sin imponer apartamentos, bandas, trenes, clubs,
+    cigarrillos ni ciudad literal.
 avoidRules:
   - realistic
   - 3d render

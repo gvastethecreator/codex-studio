@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Shield-forward battle logic, betrayed hero resilience, layered parties, medieval grit, legendary-weapon heroes, demi-human slaves, rage-shield curse, wave-of-calamity
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Determined, defensive, resilient, betrayed
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: The shield is not a weapon but a statement — defense as defiance, survival as victory, refusal to fall as the only combat move that matters. Grit textures every surface; the kingdom's betrayal left fingerprints on every stone. Build the image like a wall that learned to walk forward.
+  aesthetic: Defensive underdog fantasy, with resilience, grit, layered mistrust, protective geometry, and forward-moving defiance.
+  form_and_line: Broad blocking shapes, guarded silhouettes, nested arcs, scarred contour weight, and stance-like compositional stability.
+  color_palette: Burnished bronze, storm blue, mud brown, ember red, wounded violet, and hard steel highlights.
+  lighting_setup: Low defensive glow, side-lit grit, hard edge rims, and ember accents that make endurance visible.
+  material_texture: Scratched metal, rough cloth, cracked stone grain, soot glaze, and protective magic particles.
+  render_quality: Gritty fantasy anime polish with tactile defense logic, emotional resilience, and clear silhouette weight.
+  spatial_distortion: Forward pressure against heavy opposition, layered barriers, and compressed depth that makes survival active.
+  atmosphere: Determined, defensive, resilient, betrayed.
+  key_features: Protective geometry, underdog grit, barrier layering, resilient glow, distrust-to-defiance tension.
+  creative_brief: >-
+    Render any prompt as defense becoming motion: use barrier geometry, scarred
+    material texture, and hard-earned glow so resilience reads visually without
+    requiring a literal defensive artifact, group, kingdom, curse, or disaster.
 avoidRules:
   - realistic
   - 3d render

@@ -13,18 +13,18 @@ tags:
   - landscape-and-gardens
 visualDna:
   aesthetic: Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.
-  form_and_line: Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de bancos/bordes.
+  form_and_line: Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de borde.
   color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
   lighting_setup: Luz difusa de tarde con rebote urbano suave y caída progresiva sobre superficies lineales.
   material_texture: Hormigón crudo, corten oxidado, acero cepillado, grava fina, gramíneas al viento e inserciones de madera envejecida.
   render_quality: Nivel concurso de paisaje con legibilidad de reutilización y sucesión vegetal creíble.
   spatial_distortion: Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility
   atmosphere: Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.
-  key_features: Linealidad ferroviaria, bordes estratificados, interfaces asiento-muro y mezclas de plantación para polinizadores.
+  key_features: Linealidad infraestructural, bordes estratificados, interfaces de pausa y mezclas de plantación para polinizadores.
   creative_brief: >-
     Formula una gramática de corredor postindustrial transferible donde la
     retícula dura siga legible mientras la ecología la reprograma. Debe
-    funcionar en parques lineales, infraestructuras elevadas y bordes reciclados.
+    funcionar como estilo de borde reciclado, no como cita de un sitio concreto.
 avoidRules:
   - wild forest
 assets:

@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía artesanal de imprenta emergente, con fragilidad corporal y obsesión por el libro como tecnología transformadora.
-  form_and_line: Escala pequeña protagonista, detalle de taller manual y lenguaje visual centrado en oficio, proceso y paciencia.
+  aesthetic: Fantasía artesanal de conocimiento emergente, fragilidad íntima, obsesión material por el libro y tecnología transformadora.
+  form_and_line: Escala pequeña, detalle manual, lenguaje visual centrado en oficio, proceso, paciencia y acumulación de pasos.
   color_palette: Sepia pergamino, azul tinta, marrón madera, crema papel y rojo cera de sello.
-  lighting_setup: Luz de ventana de scriptoria, lámpara de mesa cálida y contraste suave de interiores de taller.
-  material_texture: Vellum, pulpa de papel, madera de prensa, metal tipográfico y manchas de tinta en tela.
+  lighting_setup: Luz suave de lectura, lámpara cálida y contraste bajo de espacio artesanal.
+  material_texture: Vellum, pulpa de papel, madera prensada, metal tipográfico y manchas de tinta en tela.
   render_quality: Narrativa íntima de craft medieval con precisión material y foco en innovación cotidiana.
-  spatial_distortion: Escala doméstica concentrada, composición por mesa de trabajo y profundidad de guild artesanal.
+  spatial_distortion: Escala concentrada, composición por proceso manual y profundidad de oficio paciente.
   atmosphere: Estudiosa, tierna y obstinada, con fervor por la lectura.
-  key_features: Herramientas de imprenta, tinta y papel, interiores de taller y contraste entre cuerpo frágil y voluntad férrea.
+  key_features: Tinta y papel, materialidad de libro, proceso artesanal, voluntad férrea y progreso silencioso.
   creative_brief: >-
     Define una gramática printing-devotion reusable donde materialidad del libro,
-    labor artesanal y progreso silencioso conviertan la alfabetización en motor
-    dramático visual.
+    labor artesanal y progreso silencioso conviertan cualquier sujeto en motor
+    visual de conocimiento, sin espacio de trabajo fijo, herramientas concretas,
+    organización artesanal o fragilidad corporal obligatoria.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía cortesana de mandato celeste, con exilio iniciático, simbolismo bestial y densidad político-espiritual.
-  form_and_line: Silueta ceremonial oriental, pliegues de túnica imperial y arquitectura de sala del trono con eje de autoridad.
-  color_palette: Verde jade, rojo cinabrio, dorado imperial, negro tinta y azul niebla de montañas sagradas.
-  lighting_setup: Luz solemne de corte, contraluz de salón ritual y brillos selectivos sobre insignias de legitimidad.
-  material_texture: Seda pesada, laca ceremonial, piedra de palacio, ornamento broncíneo y talismanes de bestia mensajera.
+  aesthetic: Fantasía cortesana de mandato celeste, legitimidad ritual, exilio interior y densidad político-espiritual como presión visual.
+  form_and_line: Siluetas ceremoniales, pliegues autoritarios, ejes verticales de poder, ornamento sobrio y contorno de destino impuesto.
+  color_palette: Verde jade, rojo cinabrio, dorado imperial, negro tinta y azul niebla ceremonial.
+  lighting_setup: Luz solemne de autoridad, contraluz ritual y brillos selectivos sobre símbolos de legitimidad.
+  material_texture: Seda pesada, laca ceremonial, piedra pulida, ornamento broncíneo y talismanes abstractos.
   render_quality: Drama de alta fantasía político-mítica con lectura jerárquica clara y peso ceremonial.
-  spatial_distortion: Verticalidad de poder en interiores y contraste con horizontalidad de camino de exilio.
+  spatial_distortion: Verticalidad de poder, horizontalidad de tránsito interior, simetría protocolar y distancia jerárquica.
   atmosphere: Regia, fatal y reflexiva, atravesada por destino y deber.
-  key_features: Túnica imperial, emisarios bestiales, trono monumental y dualidad entre corte y peregrinaje.
+  key_features: Protocolo ritual, jade y cinabrio, legitimidad visual, distancia jerárquica y transformación de exilio en autoridad.
   creative_brief: >-
-    Construye una gramática imperial-destiny reusable donde protocolo cortesano,
-    imaginería mandática y transformación del exilio en soberanía definan la
-    identidad visual.
+    Construye una gramática imperial-destiny reusable donde protocolo, mandato,
+    jade/cinabrio, simetría y distancia jerárquica transformen cualquier sujeto
+    en drama de autoridad, sin exigir institución, objeto, rol o tránsito
+    narrativo específico.
 avoidRules:
   - realistic
   - 3d render

@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: School-life sci-fi whimsy language where ordinary clubroom routines coexist with latent cosmic instability and playful meta-chaos
-  form_and_line: Everyday anime line softness punctuated by occasional uncanny geometry accents, energetic lead-character silhouette spikes, and ensemble reaction framing
-  color_palette: Warm scholastic pastels, beige-neutral interiors, ribbon-like accent colors, and selective uncanny cool highlights for reality-slippage cues
-  lighting_setup: Baseline cozy school ambient lighting with intermittent anomalous glow accents and subtle contrast lifts during uncanny beats
-  material_texture: Familiar classroom-club props, paper and textile everyday textures, and lightly abstracted atmospheric overlays for cosmic-adjacent moments
+  aesthetic: Slice-of-life sci-fi whimsy where ordinary warmth coexists with latent cosmic instability and playful meta-chaos
+  form_and_line: Everyday anime line softness punctuated by occasional uncanny geometry accents, energetic silhouette spikes, and ensemble reaction framing
+  color_palette: Warm scholastic pastels, beige-neutral fields, ribbon-like accent colors, and selective uncanny cool highlights for reality-slippage cues
+  lighting_setup: Cozy ambient baseline with intermittent anomalous glow accents and subtle contrast lifts during uncanny beats
+  material_texture: Familiar paper, textile, and everyday textures with lightly abstracted atmospheric overlays for cosmic-adjacent moments
   render_quality: Hybrid slice-of-life plus uncanny-sci-fi anime rendering with stable character readability and controlled tonal pivots between normal and strange
-  spatial_distortion: Mostly grounded school-space perspective with occasional mild non-euclidean hinting to suggest adjacent "closed-space" oddity
+  spatial_distortion: Mostly grounded perspective with occasional mild non-euclidean hinting to suggest adjacent closed-space oddity
   atmosphere: Playful, odd, meta-aware, and unpredictably charged
-  key_features: Clubroom social staging, leader-centric chaos cues, ordinary-prop-to-cosmic contrast, and uncanny interruption rhythms
+  key_features: Social staging, chaos cues, ordinary-to-cosmic contrast, and uncanny interruption rhythms
   creative_brief: >-
-    Preserve school-whimsy-cosmos grammar as a reusable style system: ordinary
-    slice-of-life baseline, sudden uncanny inflections, and ensemble reaction
-    dynamics should remain consistent across subjects.
+    Use the title as a style anchor for whimsy-cosmos contrast. Keep ordinary
+    slice-of-life warmth, sudden uncanny inflections, and ensemble reaction
+    dynamics without requiring school, clubroom, or fixed props.
 avoidRules:
   - realistic
   - 3d render

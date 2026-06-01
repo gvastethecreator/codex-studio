@@ -12,15 +12,18 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: High-end professional studio headshot photography, corporate portraiture, clean and polished look
-  subject_treatment: Tack-sharp focus on the eyes and facial features, precise edge definition, natural proportions
-  color_and_tone: True-to-life neutral skin tones, balanced color grading, subtle gradients, solid seamless grey background
-  lighting_and_shadow: Studio strobe lighting, softbox illumination, classic butterfly lighting pattern, flattering catchlights in the eyes
-  texture_and_material: Hyper-realistic skin texture, visible pores, fine hair details, crisp fabric textures
+  aesthetic: High-end professional studio headshot lighting grammar, clean corporate polish, controlled realism
+  subject_treatment: Tack-sharp focal plane on primary details, precise edge definition, natural proportions
+  color_and_tone: True-to-life neutral material tones, balanced color grading, subtle gradients, solid seamless grey background
+  lighting_and_shadow: Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled specular highlights
+  texture_and_material: Hyper-realistic surface texture, fine micro-detail, crisp fabric or material definition
   camera_and_composition: Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, centered composition
   atmosphere_and_mood: Professional, confident, approachable, clean, formal
   rendering_and_quality: 8k resolution, commercial photography standard, flawless retouching, photorealistic
-  creative_brief: The portrait radiates quiet authority and approachability, as if captured in the brief moment between expressions where authenticity lives. Light wraps the subject with deliberate precision, sculpting form while preserving the subtle imperfections that make a face unforgettable. Every texture tells a story—the weave of fabric, the grain of skin, the sparkle in an eye that holds the viewer's gaze.
+  creative_brief: >-
+    Apply polished studio-headshot discipline to any subject: neutral seamless
+    backdrop, precise softbox sculpting, realistic surface detail, centered
+    authority, and clean commercial retouching without requiring a human face.
 avoidRules:
   - illustration
   - painting

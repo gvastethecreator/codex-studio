@@ -9,17 +9,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Slice of Life / School / Music',
     negativePrompt: 'photoreal, gritty, horror, watermark, text, logo',
     style: {
-      aesthetic: 'Delicate shojo style with springtime romanticism.',
-      form_and_line: 'Elegant fine linework, expressive eyes, and soft gestures.',
-      color_palette: 'Rosa pastel, crema, lavanda y verde menta.',
-      lighting_setup: 'Luz difusa de tarde, brillos suaves en cabello.',
-      material_texture: 'Fine paper, airborne petals, and lightweight fabrics.',
-      render_quality: 'Ethereal anime illustration with a polished finish.',
-      spatial_distortion: 'Light depth focused on facial emotion.',
-      atmosphere: 'Tenderness, nostalgia, and emotional calm.',
-      key_features: 'Petals, emotional gaze, romantic palette.',
+      aesthetic:
+        'Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical sensitivity',
+      form_and_line:
+        'Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing',
+      color_palette:
+        'Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony',
+      lighting_setup:
+        'Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features',
+      material_texture:
+        'Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish',
+      render_quality:
+        'Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading',
+      spatial_distortion:
+        'Shallow depth emphasis around expression or detail focal planes with restrained context recession',
+      atmosphere: 'Tender, nostalgic, romantic, calm, and introspective',
+      key_features:
+        'Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition',
       creative_brief:
-        'An intimate spring scene with shojo sensitivity and clean vertical composition.',
+        'Use Soft Shojo Spring as style anchor for gentle romantic clarity: delicate line weight, pastel tonality, and expression-centered composition should transfer without requiring school, romance plot, blossoms, or character close-up.',
     },
   },
   {
@@ -28,16 +36,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Slice of Life / School / Music',
     negativePrompt: 'photoreal, action-chaos, neon-heavy, watermark, text, logo',
     style: {
-      aesthetic: 'Melancholic slice-of-life on a rainy day.',
-      form_and_line: 'Soft strokes, natural anatomy, and everyday acting.',
-      color_palette: 'Gray blues, warm beige, and damp green.',
-      lighting_setup: 'Luz nublada con reflejos de ventana.',
-      material_texture: 'Agua en cristal, tejidos blandos y muebles simples.',
-      render_quality: 'Intimate, cinematic anime frame.',
-      spatial_distortion: 'Close medium framing for emotional connection.',
-      atmosphere: 'Stillness, introspection, and domestic warmth.',
-      key_features: 'Gota en vidrio, gesto sutil, narrativa de cotidiano.',
-      creative_brief: 'A small, human moment that conveys emotion without grandiosity.',
+      aesthetic:
+        'Intimate slice-of-life anime language with rainy-day melancholy, grounded everyday realism, and restrained emotional dramaturgy',
+      form_and_line:
+        'Soft contour cadence, naturalistic anatomy simplification, subtle gesture-driven acting lines, and low-noise framing hierarchy',
+      color_palette:
+        'Clouded blue-grays, damp green undertones, warm beige interior neutrals, and muted skin tones with low-saturation harmony',
+      lighting_setup:
+        'Overcast ambient key, window reflection accents, diffuse interior fill, and gentle value rolloff for calm tonal continuity',
+      material_texture:
+        'Raindrop diffusion, soft knit and cotton fabrics, matte wood-like planes, and low-gloss everyday surfaces',
+      render_quality:
+        'Cinematic everyday anime finish with emotional subtlety, high readability, and controlled detail density',
+      spatial_distortion:
+        'Medium-close compositional intimacy with shallow depth emphasis and minimal perspective exaggeration',
+      atmosphere: 'Quiet, reflective, tender, and human-scale',
+      key_features:
+        'Rain-laced glazing cues, understated micro-expression, everyday prop simplicity, and soft tonal transitions',
+      creative_brief:
+        'Use Rainy Slice of Life as style anchor for quiet melancholy: subdued overcast palette, intimate framing, and gesture-led emotion should transfer without requiring domestic interiors, windows, furniture, or a human drama scene.',
     },
   },
   {
@@ -46,16 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Slice of Life / School / Music',
     negativePrompt: 'photoreal, gritty-horror, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Emotional anime idol backstage before the show.',
-      form_and_line: 'Soft features, stage wardrobe, and sincere acting.',
-      color_palette: 'Night blue, muted pink, and warm gold.',
-      lighting_setup: 'Luz de camerino con bokeh de escenario al fondo.',
-      material_texture: 'Tela brillante, espejo y maquillaje sutil.',
-      render_quality: 'Polished illustration with emotional weight.',
-      spatial_distortion: 'Intimate medium shot with shallow depth.',
-      atmosphere: 'Vulnerability, aspiration, and determination.',
-      key_features: 'Microphone, pre-stage gaze, rain outside.',
-      creative_brief: 'A delicate, memorable human moment just before the performance.',
+      aesthetic:
+        'Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and rain-tinted nocturnal sensitivity',
+      form_and_line:
+        'Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and close-framing silhouette clarity',
+      color_palette:
+        'Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin midtones',
+      lighting_setup:
+        'Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge tones',
+      material_texture:
+        'Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and metallic hardware accents',
+      render_quality:
+        'Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility',
+      spatial_distortion:
+        'Intimate medium framing with shallow focus falloff and performance context kept intentionally soft',
+      atmosphere: 'Vulnerable, aspirational, focused, and quietly determined',
+      key_features:
+        'Backstage-like light rhythm, pre-stage expression anchor, readiness cues, and rain-muted contrast',
+      creative_brief:
+        'Use Rainy Idol Backstage as style anchor for quiet pre-performance tension: warm practicals, intimate expression-led framing, and rain-cooled polish should transfer without requiring an idol, mirror room, microphone, wardrobe, or literal backstage.',
     },
   },
   {
@@ -64,16 +90,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Slice of Life / School / Music',
     negativePrompt: 'photoreal, horror, dark-gritty, watermark, text, logo',
     style: {
-      aesthetic: 'Light anime comedy in a dessert cafe.',
-      form_and_line: 'Friendly linework, exaggerated expressions, and clear visual timing.',
-      color_palette: 'Cream, strawberry, honey, and soft mint.',
-      lighting_setup: 'Warm interior lighting with a cozy atmosphere.',
-      material_texture: 'Light wood, glossy tableware, and whipped cream.',
-      render_quality: 'Frame anime colorido y limpio para tono feel-good.',
-      spatial_distortion: 'Clear frontal composition of table and characters.',
-      atmosphere: 'Warmth, humor, and everyday tenderness.',
-      key_features: 'Hero dessert, comedic gestures, kind energy.',
-      creative_brief: 'An adorable, fun scene that works as a visual breather.',
+      aesthetic:
+        'Feel-good confection-comedy anime language with warm slice-of-life softness, sweet color charm, and everyday social tenderness',
+      form_and_line:
+        'Friendly rounded line cadence, timing-aware expression exaggeration, tabletop-like staging rhythm, and readable conversational gesture arcs',
+      color_palette:
+        'Cream neutrals, strawberry pink accents, honey gold warmth, mint-soft highlights, and gentle wood-tone grounding',
+      lighting_setup:
+        'Cozy practical glow, diffuse warm fill, soft tabletop-like reflections, and low-contrast value shaping for comfort tone',
+      material_texture:
+        'Light-grain wood, glossy ceramic sheen, whipped-cream softness, syrup highlights, and subtle pastry-crumb detail',
+      render_quality:
+        'Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject hierarchy',
+      spatial_distortion:
+        'Stable frontal composition with mild depth layering to keep interaction and sweet focal clarity',
+      atmosphere: 'Cheerful, comforting, playful, and kind-hearted',
+      key_features:
+        'Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm',
+      creative_brief:
+        'Use Dessert Cafe Comedy as style anchor for sweet social warmth: confection palette, expression-led timing, and cozy practical glow should transfer without requiring a cafe, dessert centerpiece, tableware, or interior scene.',
     },
   },
   {
@@ -82,16 +117,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Slice of Life / School / Music',
     negativePrompt: 'photoreal, bleak-horror, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Summery anime set at a nighttime festival.',
-      form_and_line: 'Soft strokes, stylized yukata silhouettes, and everyday acting.',
-      color_palette: 'Lantern orange, night blue, and muted pink.',
-      lighting_setup: 'Warm lanterns against a soft dark background.',
-      material_texture: 'Light fabric, wooden stalls, and lantern paper.',
-      render_quality: 'Colorful emotional scene with high clarity.',
-      spatial_distortion: 'Medium shot with festive street depth.',
-      atmosphere: 'Nostalgic joy and subtle romance.',
-      key_features: 'Lanterns, fireworks in the distance, shared gesture.',
-      creative_brief: 'A festival moment that blends warmth with gentle melancholy.',
+      aesthetic:
+        'Lantern-summer slice-of-life anime language with flowing elegance, communal night warmth, and nostalgic romantic undercurrent',
+      form_and_line:
+        'Soft flowing garment contours, gesture-led interaction rhythm, lantern-like cadence lines, and gentle layered silhouettes',
+      color_palette:
+        'Lantern amber-orange, deep indigo night fields, muted rose accents, and warm skin-light highlights balanced by cool shadows',
+      lighting_setup:
+        'Warm lantern practical clusters, low-key night ambient fill, distant sparkle edge glints, and soft bokeh separation',
+      material_texture:
+        'Light cotton weave, washi lantern diffusion, lacquered wood surfaces, and humid summer-air haze',
+      render_quality:
+        'Emotion-rich festival anime rendering with clear focal hierarchy, balanced crowd context, and polished readability',
+      spatial_distortion:
+        'Mid-depth perspective with layered lantern depth cues and stable subject readability in foreground',
+      atmosphere: 'Nostalgic, joyful, tender, and gently wistful',
+      key_features:
+        'Lantern-string cadence, flowing silhouette motifs, distant shimmer accents, and shared-gesture emotional anchors',
+      creative_brief:
+        'Use Festival Lantern Summer as style anchor for nostalgic night warmth: lantern practicals, indigo-night contrast, and gesture-centered tenderness should transfer without requiring festival stalls, yukata, fireworks, street, crowd, or summer-date scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

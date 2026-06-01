@@ -21,7 +21,7 @@ visualDna:
   spatial_distortion: Impossible scale
   atmosphere: Dreamlike
   key_features: Realistic blend
-  creative_brief: Photos blend at the pixel level, one world flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning — a teacup holds an ocean, a face contains a city — the impossible presented with the banality of a passport photo. The image disturbs through plausibility, not fantasy.
+  creative_brief: Image fragments blend at the pixel level, one visual plane flowing into another through gradients of transparency, the join so seamless it becomes uncanny. Scale shifts without warning, impossible relationships presented with banal compositing confidence. The image disturbs through plausibility, not fantasy, without requiring faces, cities, objects, or passport-photo framing.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,13 @@ avoidRules:
   - signature
   - frame
   - border
+  - face requirement
+  - city requirement
+  - object gag requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-062.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +58,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

@@ -17,7 +17,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_02',
     name: 'Cinematic & Media',
     description:
-      'A collection of 80+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
+      'A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
     presets: categoryPresets.flat(),
   };
 }

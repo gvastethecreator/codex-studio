@@ -15,16 +15,16 @@ visualDna:
   aesthetic: Domesticidad pastoral semienterrada de escala humana, con umbrales circulares y calidez artesanal cotidiana.
   form_and_line: Aberturas redondas dominantes, cubierta bermada baja, corredores arqueados suaves y planificación radial íntima.
   color_palette: Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes
-  lighting_setup: Clave cálida de hogar, spill bajo de ventana, prácticos de linterna y rebote difuso de tarde.
+  lighting_setup: Clave cálida de hogar, spill bajo de umbral, prácticos de linterna y rebote difuso de tarde.
   material_texture: Cubierta de césped, madera cepillada a mano, revoco de cal-arcilla, piedra gastada y latón cepillado.
   render_quality: Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.
   spatial_distortion: None
   atmosphere: Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.
-  key_features: Puerta circular con herraje central, línea de cubierta vegetal, ventanas redondeadas y núcleo compacto de hogar-cocina.
+  key_features: Umbral circular, cubierta vegetal, aperturas redondeadas y núcleo compacto de calor doméstico.
   creative_brief: >-
     Define una gramática hobbit transferible de arquitectura semienterrada,
     umbral circular y artesanía cálida. Debe mantener intimidad pastoral y
-    funcionalidad doméstica sin depender de personaje o escena concreta.
+    funcionalidad doméstica sin depender de protagonista o set concreto.
 avoidRules:
   - square
   - tall

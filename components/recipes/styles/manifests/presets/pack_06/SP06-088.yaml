@@ -12,16 +12,16 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: PlayStation 1 aesthetic, vertex-warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering-haze distance fog, Silent Hill grain-and-gloom, Metal Gear Solid low-poly intensity, no z-buffer precision, 1995 3D in all its unstable glory
+  aesthetic: PlayStation 1 aesthetic, vertex-warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering-haze distance fog, Silent Hill grain-and-gloom and Metal Gear Solid low-poly intensity as tone anchors, no z-buffer precision, 1995 3D instability
   form_and_line: Low-poly triangulated mesh, wobbling vertices on camera move, no sub-pixel precision, chunky model contours, affine-mapped edges
   color_palette: 16-bit color depth banding, dither-pattern gradients, PSX texture-page compression colors, distance-fog greying, CRT-emulated chroma bleed
   lighting_setup: Per-vertex gouraud shading, no per-pixel lights, dither-stepped shadow transitions, distance-fog atmosphere, no realtime shadows
   material_texture: Unfiltered nearest-neighbor textures, polygon-warp texture swim, dithering gradient noise, affine-distorted texels, scanline artifact overlay
   render_quality: PlayStation 1 aesthetic, 32-bit console 3D, retro-CGI wobble poetry, beautiful instability
   spatial_distortion: Jitter-vertex polygon warping, z-fighting flicker, affine-perspective distortion, distance-fog depth compression
-  atmosphere: Eerie, nostalgic, technological-limitation beauty, 90s-3D uncanny poetry, CRT-warmth glow
+  atmosphere: Eerie, nostalgic, technological-limitation beauty, 90s-3D uncanny poetry, CRT-warmth glow, abstract low-poly unease
   key_features: Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance-fog atmosphere, z-fighting flicker
-  creative_brief: 'Polygons wobble and swim as the camera moves, vertices jittering in a dance of mathematical imprecision that somehow feels more alive than perfection. Textures warp across triangular faces, affine mapping stretching pixels in ways they were never meant to stretch. The image trembles with the beauty of a machine trying its absolute hardest and not quite succeeding, which is to say: with the beauty of effort made visible.'
+  creative_brief: 'Polygons wobble and swim, vertices jittering with mathematical imprecision. Any subject is reduced to unstable low-poly planes, warped texels, dithered fog and z-fighting flicker, making technical failure feel like visual personality.'
 avoidRules:
   - stable
   - clean
@@ -50,4 +50,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

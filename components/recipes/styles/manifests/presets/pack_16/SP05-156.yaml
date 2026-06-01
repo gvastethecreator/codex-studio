@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-156
 packId: pack_16
-name: Higurashi - Cicada Village Breakdown
+name: Summer Loop Paranoia Style
 category: 2. 2000s Classics
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Horror rural de bucle veraniego, con fachada moe quebrada por paranoia comunitaria y colapso de confianza.
+  aesthetic: Horror estival de bucle cerrado, con fachada moe quebrada por paranoia íntima y colapso de confianza.
   form_and_line: Trazado cute limpio con ruptura facial extrema en crisis, alternando inocencia visual y violencia psicológica.
-  color_palette: Verdes de aldea estival, rojos de alarma, amarillos de tarde densa y sombras violetas de fiebre.
+  color_palette: Verdes estivales, rojos de alarma, amarillos de tarde densa y sombras violetas de fiebre.
   lighting_setup: Luz solar opresiva de verano con transiciones abruptas a contraste ansioso en momentos de breakdown.
-  material_texture: Madera de santuario, tierra de pueblo, telas festivas y limpieza digital que potencia el quiebre tonal.
+  material_texture: Madera cálida, tierra húmeda, telas festivas abstractas y limpieza digital que potencia el quiebre tonal.
   render_quality: Acabado premium horror-2000s con alto contraste cute-to-terror y claridad de escalada paranoica.
-  spatial_distortion: Espacio aldeano cerrado con repetición de rutas, encuadre de bucle y presión del entorno sobre personajes.
+  spatial_distortion: Espacio cerrado con repetición de recorridos, encuadre de bucle y presión del entorno sobre figuras.
   atmosphere: Pastoril, paranoica, febril, aterradora.
-  key_features: Máscaras de festival, cigarras como pulso sonoro visual, expresiones de quiebre y staging santuario-casa.
-  creative_brief: Diseña una gramática reusable de horror estival en bucle para cualquier sujeto, combinando estética tierna, repetición ritual y terror de sospecha íntima.
+  key_features: Pulso sonoro visual, expresiones de quiebre, repetición ritual y contraste cute-to-terror.
+  creative_brief: >-
+    Diseña una gramática reusable de summer-loop-paranoia para cualquier
+    sujeto, combinando estética tierna, calor opresivo, repetición ritual y
+    terror de sospecha íntima sin imponer aldeas, santuarios, máscaras,
+    cigarras, casas ni festivales.
 avoidRules:
   - realistic
   - 3d render

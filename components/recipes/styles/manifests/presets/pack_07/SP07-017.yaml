@@ -20,10 +20,10 @@ visualDna:
   render_quality: Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de jerarquía.
   spatial_distortion: Profundidad estable con compresión visual por saturación de objetos y patrones.
   atmosphere: Efervescente, personal, exuberante y deliberadamente excesiva.
-  key_features: Muros galería piso-techo, mezcla agresiva de patrón, capas textiles y colecciones de objetos.
+  key_features: Campo galería saturado, mezcla agresiva de patrón, capas textiles y acumulación curatorial.
   creative_brief: >-
     Construye una gramática maximalista transferible basada en saturación
-    cromática, densidad objetual y superposición textil. Debe mantenerse la
+    cromática, densidad curatorial y superposición textil. Debe mantenerse la
     legibilidad curatorial sin caer en ruido visual indiscriminado.
 avoidRules:
   - empty

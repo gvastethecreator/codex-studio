@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-270
 packId: pack_05
-name: Dororo - Demon Road Severance
+name: Cursed Severance Compassion Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Body-part quest under cursed skies, muddy villages, war-torn feudal roads, child thief companionship, brutal folk-horror with emotional tenderness at its center
+  aesthetic: Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal loss rendered with humane warmth
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson staining
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag, compassionate close compression
   atmosphere: Bleak, raw, compassionate, cursed
-  key_features: Prosthetic-limb motifs, demon silhouettes, war-torn village backdrops, child-and-warrior contrast, cursed-road framing
-  creative_brief: A body reassembled one demon at a time, prosthetic limbs carving through cursed skies toward a wholeness that may never come, the child thief at his side the only mirror in which humanity reflects. War-torn villages and folk-horror landscapes soften at the edges where compassion refuses to surrender to the darkness.
+  key_features: Severance motifs, cursed sky pressure, mud-worn tenderness, folk-horror grit, compassion against brutality
+  creative_brief: >
+    Render any subject as damaged wholeness struggling toward tenderness:
+    muddy texture, cursed negative space, folk-horror silhouettes, and warm
+    humane accents should carry the look without fixed anatomy, companions,
+    travel spaces, settlements, adversaries, or quest structure.
 avoidRules:
   - realistic
   - 3d render

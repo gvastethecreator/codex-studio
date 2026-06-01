@@ -11,22 +11,22 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic:
-        'High-end professional studio headshot photography, corporate portraiture, clean and polished look',
+        'High-end professional studio headshot lighting grammar, clean corporate polish, controlled realism',
       subject_treatment:
-        'Tack-sharp focus on the eyes and facial features, precise edge definition, natural proportions',
+        'Tack-sharp focal plane on primary details, precise edge definition, natural proportions',
       color_and_tone:
-        'True-to-life neutral skin tones, balanced color grading, subtle gradients, solid seamless grey background',
+        'True-to-life neutral material tones, balanced color grading, subtle gradients, solid seamless grey background',
       lighting_and_shadow:
-        'Studio strobe lighting, softbox illumination, classic butterfly lighting pattern, flattering catchlights in the eyes',
+        'Studio strobe lighting, softbox illumination, classic butterfly-light pattern, controlled specular highlights',
       texture_and_material:
-        'Hyper-realistic skin texture, visible pores, fine hair details, crisp fabric textures',
+        'Hyper-realistic surface texture, fine micro-detail, crisp fabric or material definition',
       camera_and_composition:
         'Shot on 85mm or 105mm portrait lens, flat field of view, undistorted perspective, centered composition',
       atmosphere_and_mood: 'Professional, confident, approachable, clean, formal',
       rendering_and_quality:
         '8k resolution, commercial photography standard, flawless retouching, photorealistic',
       creative_brief:
-        "The portrait radiates quiet authority and approachability, as if captured in the brief moment between expressions where authenticity lives. Light wraps the subject with deliberate precision, sculpting form while preserving the subtle imperfections that make a face unforgettable. Every texture tells a story—the weave of fabric, the grain of skin, the sparkle in an eye that holds the viewer's gaze.",
+        'Apply polished studio-headshot discipline to any subject: neutral seamless backdrop, precise softbox sculpting, realistic surface detail, centered authority, and clean commercial retouching without requiring a human face.',
     },
   },
   {
@@ -36,17 +36,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, shadows, black',
     style: {
       aesthetic: 'High key studio portraiture, bright and airy photography',
-      subject_treatment: 'Low contrast edges, soft features, minimal shadows on the face',
+      subject_treatment: 'Low contrast edges, soft features, minimal shadow on primary forms',
       color_and_tone:
-        'Predominantly white and pastel tones, light skin tones, pure white background',
+        'Predominantly white and pastel tones, pale material tones, pure white background',
       lighting_and_shadow:
         'Overexposed wrap-around lighting, multiple softboxes, shadowless environment',
-      texture_and_material: 'Soft and airy textures, smooth skin, bright fabrics',
+      texture_and_material: 'Soft airy textures, smooth surfaces, bright fabrics or pale materials',
       camera_and_composition: 'Blown out highlights in the background, clean and minimal framing',
       atmosphere_and_mood: 'Happy, pure, clean, optimistic, ethereal',
       rendering_and_quality: 'Commercial beauty standard, crisp but soft, high resolution',
       creative_brief:
-        'Light becomes the subject itself, dissolving boundaries between figure and space in a luminous embrace. The image feels like a breath held at the peak of happiness—weightless, glowing, untouched by shadow. Skin becomes porcelain, fabric becomes cloud, and the entire frame radiates with an inner warmth that suggests both innocence and transcendence.',
+        'Apply high-key portrait lighting to any subject: white wraparound exposure, pastel softness, clean minimal framing, near-shadowless form, and airy optimism without requiring skin or figure.',
     },
   },
   {
@@ -57,21 +57,21 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic:
-        'Editorial environmental portraiture, subject in their natural workspace or habitat',
+        'Editorial environmental-portrait grammar, subject integrated with meaningful context',
       subject_treatment:
-        'Subject integrated with surroundings, sharp details across the frame, storytelling composition',
+        'Primary subject integrated with surroundings, sharp details across the frame, storytelling composition',
       color_and_tone:
         'Natural and balanced color palette, rich environmental tones, true-to-life colors',
       lighting_and_shadow:
         'Mixed ambient lighting with subtle flash fill, balanced exposure between subject and background',
       texture_and_material:
-        'Sharp details on contextual props, realistic textures of the environment',
+        'Sharp contextual detail, realistic textures, material clues that support narrative',
       camera_and_composition:
         'Wide-angle lens (24mm or 35mm), deep depth of field, contextual framing',
       atmosphere_and_mood: 'Informative, personal, narrative-driven, authentic',
       rendering_and_quality: 'Editorial magazine quality, high resolution, crisp details',
       creative_brief:
-        'A room that finishes the sentence a face begins, tools and bookshelves and window light conspiring to reveal the unseen architecture of a life. Every surface becomes a clue, every shadow a collaborator in the slow unfolding of identity rendered visible through its native habitat. The space exhales its occupant, the workshop or kitchen or studio becoming a second portrait, more honest than any studio backdrop could ever be.',
+        'Apply environmental portrait logic to any subject: contextual clues, balanced subject-background exposure, narrative texture, and editorial realism without forcing a workspace, room, props, or human sitter.',
     },
   },
   {
@@ -81,20 +81,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
-      aesthetic: 'High-fashion beauty portraiture, glamorous and luxurious magazine cover style',
+      aesthetic: 'High-fashion glamour photography, luxurious magazine-cover polish',
       subject_treatment:
-        'Idealized features, soft focus on skin while keeping eyes and lips tack-sharp',
-      color_and_tone: 'Vibrant makeup colors, saturated and rich tones, high-end color grading',
+        'Idealized primary forms, soft cosmetic smoothing, selective tack-sharp accents',
+      color_and_tone: 'Vibrant accent colors, saturated rich tones, high-end color grading',
       lighting_and_shadow:
         'Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows',
       texture_and_material:
-        'Flawless smooth skin, glossy lips, shimmering makeup, luxurious fabric textures',
+        'Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or material textures',
       camera_and_composition: 'Close-up beauty crop, flattering angles, undistorted perspective',
       atmosphere_and_mood: 'Beautiful, expensive, alluring, polished, high-end',
       rendering_and_quality:
         'Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic',
       creative_brief:
-        "Light bends flatteringly around bone structure, skin dissolving into porcelain while eyes retain their mineral sharpness, every highlight polished to a diamond's precision. The frame becomes a jewel box where fabric whispers wealth and luminance pools like liquid gold across the surface. Manufactured perfection as visual language, glamour distilled into the architecture of a cheekbone and the gloss of a parted lip.",
+        'Apply glamour-shot polish to any subject: beauty-dish softness, luxury texture, jewel-box highlights, saturated editorial color, and manufactured perfection without requiring facial anatomy.',
     },
   },
   {
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Smartphone front-facing camera selfie, social media aesthetic, casual and spontaneous',
       subject_treatment:
-        'Wide-angle facial distortion (slightly enlarged nose/eyes), arm extended out of frame',
+        'Wide-angle near-camera distortion, informal proximity, primary forms slightly exaggerated by lens distance',
       color_and_tone: 'Smartphone image processing, vibrant colors, slightly over-sharpened',
       lighting_and_shadow: 'Flat front-facing light, screen glow, or harsh direct sunlight',
       texture_and_material: 'Digital smoothing algorithms, slight digital noise in shadows',
@@ -115,7 +115,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood: 'Fun, personal, candid, relatable, modern',
       rendering_and_quality: 'Social media quality, realistic smartphone photo look',
       creative_brief:
-        'The arm extends, the lens warps, and intimacy arrives through that familiar distortion born from holding a screen at reading distance, features elongated into the vernacular of the era. Digital alchemy smooths and sharpens in the same breath, screen glow filling shadows with the democratic light of every front-facing camera. Casualness performed as the highest art, the self-portrait stripped of ceremony yet loaded with the immediacy of now.',
+        'Apply selfie-camera vernacular to any subject: close wide-angle distortion, screen-glow flattening, smartphone sharpening, casual framing, and instant social-media immediacy without requiring a face or extended arm.',
     },
   },
   {
@@ -125,20 +125,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'illustration, painting, 3d render, cartoon, anime, watermark, text, signature, flash photography, harsh shadows, overexposed',
     style: {
-      aesthetic: 'Editorial fashion portrait, soft natural light, lifestyle feel',
+      aesthetic: 'Soft editorial window light, natural lifestyle feel',
       subject_treatment:
-        'Gentle focus on eyes, smooth skin texture retention, natural hair rendering',
+        'Gentle focal priority, retained natural texture, relaxed surface rendering',
       color_and_tone:
         'Subdued earth tones, gentle color harmony, slight warm cast from window light',
       lighting_and_shadow:
         'Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth',
-      texture_and_material: 'True fabric weave, subtle skin texture, natural environment bokeh',
+      texture_and_material: 'True fabric weave, subtle natural texture, environment bokeh',
       camera_and_composition:
-        '85mm portrait lens, f/2.0, eye-level, subject off-center right, rule-of-thirds',
+        '85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds',
       atmosphere_and_mood: 'Quiet confidence, editorial intimacy, relaxed morning light',
       rendering_and_quality: 'Photorealistic, 8k, fine lens optics, natural chromatic aberration',
       creative_brief:
-        'Morning claims the room through glass, light draping itself across fabric and skin with the tenderness of a confession that needs no answer. Editorial distance dissolves into the intimacy of a half-held breath, quiet confidence radiating from the space between shutter and soul.',
+        'Soft window editorial applies relaxed morning light to any subject: warm side glow, ambient fill, retained natural texture, shallow bokeh, and quiet rule-of-thirds intimacy. Preserve fashion-lifestyle softness without requiring eyes, skin, hair, room, or human portrait.',
     },
   },
   {
@@ -152,12 +152,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Warm Gold, Orange, Red',
       lighting_setup: 'Directional, soft',
       material_texture: 'Glowing atmosphere',
-      render_quality: 'Romantic, travel',
+      render_quality: 'Warm editorial realism',
       spatial_distortion: 'Lens flare',
       atmosphere: 'Warm, happy',
       key_features: 'Warm cast',
       creative_brief:
-        'That fleeting threshold where the day inhales before surrendering to night, everything touched by honeyed radiance. Shadows stretch long and languid as if reaching toward the departing sun. The world suspended in amber, a warmth so tangible it feels like memory distilled into light.',
+        'Low-angle warm light turns any subject into amber atmosphere: long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not sunset scenery; it is honeyed temporal warmth applied as photographic light behavior.',
     },
   },
   {
@@ -183,19 +183,19 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP01-038',
     name: 'Butterfly Lighting',
     category: '1. Portrait And Studio',
-    negativePrompt: 'side light, shadow',
+    negativePrompt: 'side light',
     style: {
       aesthetic: 'Glamour lighting',
-      form_and_line: 'Shadow under nose',
+      form_and_line: 'Centered lower cast shadow',
       color_palette: 'Flattering',
       lighting_setup: 'High frontal',
-      material_texture: 'Smooth',
-      render_quality: 'Beauty, Paramount',
+      material_texture: 'Smooth frontal polish',
+      render_quality: 'Beauty-light studio polish',
       spatial_distortion: 'None',
       atmosphere: 'Beautiful',
-      key_features: 'Symmetrical shadow',
+      key_features: 'Symmetrical lower shadow',
       creative_brief:
-        "The architecture of glamour cast from above, a butterfly-shaped shadow settling beneath the nose like a signature of perfection. High frontal radiance that smooths and elevates, descended from old Hollywood's insistence that light should flatter before it reveals. Symmetry made luminous, beauty rendered architectural.",
+        'High frontal light creates symmetrical glamour structure: polished surfaces, controlled falloff, centered lower cast shadow, and old-Hollywood smoothness. Apply the butterfly-light signature to any subject without requiring a nose, face, makeup, or human beauty setup.',
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Romantic, secret',
       key_features: 'Warm glow',
       creative_brief:
-        'The trembling circumference of a single flame holding back the ancient dark, warmth that predates electricity speaking in amber and umber. Shadows flicker and breathe, alive with the rhythm of combustion. Intimacy borrowed from a time when night meant fire and every face was lit by something burning.',
+        'Low warm flame light shapes any subject through amber point-source glow, flickering softness, black falloff, and umber shadow breathing at the edge of visibility. The style is pre-electric intimacy, not mandatory faces, rooms, candles, or historical scene dressing.',
     },
   },
   {
@@ -228,12 +228,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Hazy',
       lighting_setup: 'Backlit shafts',
       material_texture: 'Dust motes',
-      render_quality: 'Epic, religious',
+      render_quality: 'Epic volumetric realism',
       spatial_distortion: 'None',
-      atmosphere: 'Holy, atmospheric',
+      atmosphere: 'Atmospheric, monumental',
       key_features: 'Light shafts',
       creative_brief:
-        'Light made tangible as it descends through suspended atmosphere, invisible particles catching revelation and transforming empty air into architecture. Shafts that carve cathedrals from mist, dust motes drifting like slow-motion constellations through columns of radiance. The divine rendered visible not through substance but through the medium of diffusion itself.',
+        'Backlight becomes visible architecture through fog, dust, and suspended atmosphere. Use volumetric shafts, drifting motes, and monumental diffusion to transform any subject with tangible light; avoid turning the preset into a literal cathedral or religious scene.',
     },
   },
   {
@@ -246,60 +246,60 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Soft glow',
       color_palette: 'Neon Blue, Green',
       lighting_setup: 'Self-illuminated',
-      material_texture: 'Water, skin',
-      render_quality: 'Avatar, underwater',
+      material_texture: 'Organic phosphor glow',
+      render_quality: 'Photoreal self-illumination',
       spatial_distortion: 'None',
       atmosphere: 'Magical, alien',
       key_features: 'Dark background',
       creative_brief:
-        'Life that generates its own radiance from within, the deep-sea grammar of glow against absolute darkness. Organisms writing their presence in photons, neon-bright signals suspended in liquid void. A world where light is not cast but born, where every creature carries its own constellation beneath its skin.',
+        'Organic-looking light appears born from within the subject: blue-green phosphor glow, dark-background separation, soft emissive edges, and alien biological rhythm. Keep bioluminescent self-illumination without requiring water, skin, creatures, Avatar, or underwater scenes.',
     },
   },
   {
     id: 'SP01-056',
     name: 'Architecture (Modern)',
     category: '1. Portrait And Studio',
-    negativePrompt: 'people, messy',
+    negativePrompt: 'messy',
     style: {
-      aesthetic: 'Building facade',
+      aesthetic: 'Modern architectural photography',
       form_and_line: 'Geometric lines',
       color_palette: 'Glass, Steel, Concrete',
       lighting_setup: 'Sunlight and shadow',
-      material_texture: 'Smooth materials',
+      material_texture: 'Glass, steel, concrete response',
       render_quality: 'ArchDaily, clean',
       spatial_distortion: 'Perspective correction',
       atmosphere: 'Imposing, structured',
       key_features: 'Vertical lines',
       creative_brief:
-        'Geometry climbs toward a sky it cannot reach, every vertical line a declaration of ambition, every grid of glass a mirror that swallows the heavens and returns them as abstraction. Shadow carves the facade into a canvas of sharp light and deep void, the building posing as its own blueprint. No presence disturbs the dialogue between line and surface.',
+        'Modern architecture style imposes corrected perspective, vertical discipline, clean geometry, glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity to any subject without forcing a facade, building, sky, or empty urban scene.',
     },
   },
   {
     id: 'SP01-065',
     name: 'Pet Photography',
     category: '1. Portrait And Studio',
-    negativePrompt: 'scary, wild',
+    negativePrompt: 'scary, menacing',
     style: {
-      aesthetic: 'Cute dog/cat portrait',
+      aesthetic: 'Playful companion portrait',
       form_and_line: 'Eye level',
       color_palette: 'Bright, happy',
       lighting_setup: 'Soft',
-      material_texture: 'Fur',
-      render_quality: 'Cute, studio',
-      spatial_distortion: 'Wide angle nose (boop)',
+      material_texture: 'Soft tactile detail',
+      render_quality: 'Cute studio warmth',
+      spatial_distortion: 'Wide-angle near-plane exaggeration',
       atmosphere: 'Playful, sweet',
-      key_features: 'Looking at camera',
+      key_features: 'Eye-level warmth',
       creative_brief:
-        'A face met at the same plane, pupil to pupil, where wide-angle curiosity approaches first and the eyes behind it hold an intelligence older than domestication. Soft light nestles into fur like comfort into memory, the frame built entirely around the presence of a creature who does not perform but simply is. Joy arrives unarmed, asking only to be returned in kind.',
+        'Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject without requiring dog, cat, fur, creature, or camera gaze.',
     },
   },
   {
     id: 'SP01-066',
     name: 'Automotive Photography',
     category: '1. Portrait And Studio',
-    negativePrompt: 'dirty, stationary',
+    negativePrompt: 'dirty, dull',
     style: {
-      aesthetic: 'Car commercial',
+      aesthetic: 'Automotive commercial polish',
       form_and_line: 'Sleek curves',
       color_palette: 'Metallic paint',
       lighting_setup: 'Studio sweep or motion blur',
@@ -307,9 +307,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Top Gear, expensive',
       spatial_distortion: 'Motion blur wheels',
       atmosphere: 'Fast, powerful',
-      key_features: 'Car isolated',
+      key_features: 'Reflective speed isolation',
       creative_brief:
-        'Sleek metal tears through stillness, motion blur bleeding into geometry as horsepower becomes sculpture. The machine is not driven but summoned into existence, every reflection a promise of velocity barely contained.',
+        'Automotive photography gives any subject a sleek performance read: glossy reflections, metallic color behavior, studio sweep or lateral motion blur, sculpted curves, and expensive speed isolation. Use car-commercial polish without requiring cars, wheels, roads, or vehicle action.',
     },
   },
   {
@@ -319,16 +319,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'explicit, harsh',
     style: {
       aesthetic: 'Intimate portrait',
-      form_and_line: 'Curves',
+      form_and_line: 'Soft curve emphasis',
       color_palette: 'Warm, dark, red',
       lighting_setup: 'Moody, window',
-      material_texture: 'Lace, sheets, skin',
+      material_texture: 'Lace-like texture, soft fabric, warm surface',
       render_quality: 'Sensual, private',
       spatial_distortion: 'None',
       atmosphere: 'Intimate, soft',
-      key_features: 'Bed or window',
+      key_features: 'Protected intimacy',
       creative_brief:
-        'Shadow drapes itself across skin like whispered permission, the space between fabric and flesh becoming its own language. Intimacy here is not revealed but protected, a sanctuary built of warm darkness and unguarded trust.',
+        'Boudoir style becomes protected intimate lighting: warm dark palette, soft curve emphasis, lace-like texture, window-shaped mood, and private shadow control. Apply sensual editorial atmosphere without requiring bed, skin, body, lingerie, or explicit content.',
     },
   },
   {
@@ -337,17 +337,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'clutter, dark',
     style: {
-      aesthetic: 'Designed room',
+      aesthetic: 'Interior-design editorial',
       form_and_line: 'Wide angle',
       color_palette: 'Balanced palette',
       lighting_setup: 'Mixed window/interior',
-      material_texture: 'Fabric, wood',
-      render_quality: 'Real estate, cozy',
+      material_texture: 'Tactile decor materials',
+      render_quality: 'Design-magazine polish',
       spatial_distortion: 'None',
       atmosphere: 'Welcoming, expensive',
       key_features: 'Clean layout',
       creative_brief:
-        'Space that wraps around the inhabitant like a well-tailored garment, where every textile whispers tactility and every sight-line resolves into intentional composition. Window glow and lamp warmth negotiate boundaries on oak and linen, neither conquering, both collaborating. The room does not ask to be looked at; it asks to be imagined into occupation, a stage awaiting the quiet rituals of living.',
+        'Interior-design photography turns any subject into curated space logic: wide but controlled composition, balanced palette, mixed window/practical light, tactile material hierarchy, and clean layout. Keep magazine warmth without requiring a room, furniture, oak, linen, or real estate staging.',
     },
   },
   {
@@ -357,16 +357,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, plain',
     style: {
       aesthetic: 'Magazine spread',
-      form_and_line: 'Dynamic pose',
+      form_and_line: 'Dynamic editorial geometry',
       color_palette: 'Color graded, trendy',
       lighting_setup: 'Creative studio',
-      material_texture: 'Fabric detail',
+      material_texture: 'Fabriclike surface detail',
       render_quality: 'Vogue, high end',
       spatial_distortion: 'Elongated limbs',
       atmosphere: 'Cool, expensive',
-      key_features: 'Clothes focus',
+      key_features: 'Styling-first focus',
       creative_brief:
-        'Fabric becomes architecture on the body, each fold and drape sculpted by light that knows exactly which surfaces deserve worship and which should retreat into shadow. The pose defies gravity and convention alike, a single frozen gesture that telegraphs an entire season of wanting in a glance. Color grading tastes like nostalgia for a future that has not yet arrived.',
+        'Fashion editorial treats any subject as a styled spread: dynamic geometry, sculpted fabriclike texture, expensive color grade, and surfaces chosen for desire rather than description. Keep Vogue-level drama without requiring clothes, bodies, runway poses, or a human model.',
     },
   },
   {
@@ -375,17 +375,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'posed, happy',
     style: {
-      aesthetic: 'Conflict zone photo',
-      form_and_line: 'Chaos',
+      aesthetic: 'Harsh witness documentary',
+      form_and_line: 'Chaotic factual framing',
       color_palette: 'Desaturated, dusty',
       lighting_setup: 'Harsh sun',
-      material_texture: 'Dirt, smoke, grain',
+      material_texture: 'Dust, smoke, grain',
       render_quality: 'Raw, emotional',
       spatial_distortion: 'None',
-      atmosphere: 'Tragic, intense',
+      atmosphere: 'Unflinching, intense',
       key_features: 'Realism',
       creative_brief:
-        'Dust hangs in the frame like suspended grief, sunlight stripped to its bone-white harshness while smoke scribbles erasure across the sky. The image does not editorialize: it witnesses with a flat, unflinching gaze that refuses to prettify the weight of what a single instant can carry. Grain and desaturation are not style choices but the visual syntax of testimony.',
+        'Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring battlefield, tragedy, weapons, sky, or conflict-zone narrative.',
     },
   },
   {
@@ -394,17 +394,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'shadows, dark corners',
     style: {
-      aesthetic: 'House interior',
+      aesthetic: 'Real estate HDR brightness',
       form_and_line: 'Wide angle',
       color_palette: 'Saturated, even',
       lighting_setup: 'No shadows (HDR)',
       material_texture: 'Sharp',
-      render_quality: 'Zillow, oversaturated',
+      render_quality: 'Listing-photo oversaturation',
       spatial_distortion: 'Unnatural dynamic range',
       atmosphere: 'Bright, selling',
-      key_features: 'Windows visible',
+      key_features: 'Shadowless HDR visibility',
       creative_brief:
-        'Every corner is bright with the insistence of a sales pitch, shadows banished so thoroughly the room forgets it ever had a night side. Color achieves unnatural saturation that makes the space look more real than real: hyper-present, hyper-available, every surface gleaming with the suppressed urgency of the transaction. The window offers a view designed to suggest that outside is merely an extension of what could be owned.',
+        'Real estate HDR makes any subject over-available: shadows lifted away, colors pushed slightly beyond realism, wide-angle clarity, and dynamic range flattened into sales-friendly brightness. Use listing-photo hypervisibility without requiring a house, room, window, or property context.',
     },
   },
   {
@@ -432,17 +432,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'cool, candid',
     style: {
-      aesthetic: 'Awkward yearbook photo',
-      form_and_line: 'Stiff pose',
+      aesthetic: 'Awkward yearbook studio',
+      form_and_line: 'Stiff centered composition',
       color_palette: 'Blue mottled background',
       lighting_setup: 'Flat studio',
-      material_texture: 'Bad hair day',
+      material_texture: 'Cheesy studio texture',
       render_quality: 'Nostalgic, cheesy',
-      spatial_distortion: 'Forced smile',
+      spatial_distortion: 'Forced frontal stiffness',
       atmosphere: 'Awkward, funny',
       key_features: 'Laser background',
       creative_brief:
-        'The laser-etched backdrop burns its pattern into memory as deeply as the awkward smile etched on the face of adolescence. Here is the archive of becoming, every forced grin a time capsule of the person who would later look back and laugh.',
+        'School-portrait style makes any subject awkwardly official: flat studio light, stiff centered pose, blue mottled or laser backdrop, nostalgic cheese, and forced composure. Keep yearbook discomfort without requiring students, smiles, faces, or adolescence.',
     },
   },
   {
@@ -451,17 +451,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'static, slow',
     style: {
-      aesthetic: 'High speed athlete',
-      form_and_line: 'Frozen muscle',
-      color_palette: 'Vibrant jersey colors',
-      lighting_setup: 'Stadium floodlights',
-      material_texture: 'Sweat, dirt',
-      render_quality: 'Sports Illustrated, sharp',
+      aesthetic: 'High-speed action capture',
+      form_and_line: 'Frozen force geometry',
+      color_palette: 'Vibrant competition color',
+      lighting_setup: 'Hard arena-style light',
+      material_texture: 'Impact texture, dust, sheen',
+      render_quality: 'Sports-editorial sharpness',
       spatial_distortion: 'Motion blur background',
       atmosphere: 'Intense, fast',
       key_features: 'Action freeze',
       creative_brief:
-        'The body hangs mid-flight, every sinew suspended at the apex of force, while the roar of the crowd bleaches into a luminous blur that testifies to velocity by what it erases. Sweat catches floodlight like scattered diamonds, the geometry of effort rendered as sculpture in the split second before gravity reclaims its due. The image is a held breath at the edge of impact.',
+        'High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background, hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring athletes, jerseys, stadiums, crowds, or bodies.',
     },
   },
   {
@@ -470,36 +470,36 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'sad, dark',
     style: {
-      aesthetic: 'Bride and Groom',
+      aesthetic: 'Airy ceremony editorial',
       form_and_line: 'Soft romantic',
       color_palette: 'White, pastel, airy',
       lighting_setup: 'Backlit sun',
-      material_texture: 'Lace, flowers',
+      material_texture: 'Lace-like softness, floral color hints',
       render_quality: 'Romantic, expensive',
       spatial_distortion: 'None',
-      atmosphere: 'Love, happy',
-      key_features: 'Veil',
+      atmosphere: 'Romantic, luminous',
+      key_features: 'Veil-like backlight',
       creative_brief:
-        "Sunlight bends through lace and promise, the backlit veil dissolving the boundary between the seen and the felt. Love renders here not as sentiment but as light's architecture, a quiet monument to all that cannot be spoken.",
+        'Wedding photography becomes airy ceremonial light: pastel whites, lace-like texture, floral softness, backlit glow, and expensive romantic restraint. Apply vow-day luminosity to any subject without requiring bride, groom, veil, flowers, couple, or event.',
     },
   },
   {
     id: 'SP01-068',
     name: 'Newborn Photography',
     category: '1. Portrait And Studio',
-    negativePrompt: 'awake, crying',
+    negativePrompt: 'harsh, chaotic',
     style: {
-      aesthetic: 'Sleeping baby',
-      form_and_line: 'Curled up',
+      aesthetic: 'Newborn studio softness',
+      form_and_line: 'Curled gentle forms',
       color_palette: 'Cream, beige, soft',
       lighting_setup: 'Window light',
-      material_texture: 'Knitted blanket, skin',
-      render_quality: 'Anne Geddes, peaceful',
+      material_texture: 'Knitted softness, delicate surface',
+      render_quality: 'Peaceful studio tenderness',
       spatial_distortion: 'None',
       atmosphere: 'Tiny, fragile',
-      key_features: 'Sleeping',
+      key_features: 'Resting tenderness',
       creative_brief:
-        'A universe folded into the curl of tiny fingers, breath so shallow it barely disturbs the air around it. Knitted warmth cradles the impossible weight of newness, each frame a held breath that knows it will one day exhale.',
+        'Newborn photography translates into ultra-soft cream/beige tenderness: window light, knitted texture, curled gentle forms, shallow quiet, and fragile scale cues. Keep peaceful studio delicacy without requiring babies, fingers, sleeping, blankets, or Anne Geddes staging.',
     },
   },
   {
@@ -508,17 +508,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'tourist trap, selfie',
     style: {
-      aesthetic: 'Exotic location',
-      form_and_line: 'Wide vista',
+      aesthetic: 'Travel-editorial wanderlust',
+      form_and_line: 'Inviting wide composition',
       color_palette: 'Vibrant, inviting',
       lighting_setup: 'Golden hour',
-      material_texture: 'Local culture details',
-      render_quality: 'Condé Nast, wanderlust',
+      material_texture: 'Localized tactile detail',
+      render_quality: 'Travel-magazine polish',
       spatial_distortion: 'None',
       atmosphere: 'Adventurous, beautiful',
-      key_features: 'Landmark',
+      key_features: 'Arrival energy',
       creative_brief:
-        'The world cracks open at golden hour, light pooling like honey across foreign stone and distant shore. Every frame is an arrival, the eye a traveler who has finally found the place it never knew it was searching for.',
+        'Travel photography turns any subject into an inviting arrival: warm golden light, wide composition, vibrant palette, tactile local detail, and polished wanderlust framing. Keep Condé Nast escapism without requiring landmarks, foreign places, shorelines, or tourist narrative.',
     },
   },
   {
@@ -527,17 +527,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'sad, dark, weird',
     style: {
-      aesthetic: 'Happy people working',
+      aesthetic: 'Generic corporate stock polish',
       form_and_line: 'Clean',
       color_palette: 'Bright, blue tint',
-      lighting_setup: 'Office bright',
+      lighting_setup: 'Bright institutional soft light',
       material_texture: 'Clean',
       render_quality: 'Generic, safe',
-      spatial_distortion: 'Fake smiles',
+      spatial_distortion: 'Sanitized sameness',
       atmosphere: 'Professional, fake',
-      key_features: 'Handshake',
+      key_features: 'Safe generic optimism',
       creative_brief:
-        'Sanitized joy fills the frame like artificial daylight, every smile calibrated to the exact wattage of acceptability, every handshake choreographed to radiate trust without risk. Cool tints temper the warmth they pretend to project, the image operating in the narrow band where nothing offends because nothing truly registers. This is the visual Esperanto of the boardroom: universally legible, universally hollow.',
+        'Corporate stock polish sanitizes any subject into universally legible optimism: bright institutional light, cool-blue tint, clean surfaces, centered clarity, and riskless professional sameness. Keep generic boardroom-safe visual language without requiring workers, smiles, handshakes, or office setting.',
     },
   },
   {
@@ -546,17 +546,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'perspective, messy',
     style: {
-      aesthetic: 'Objects arranged on table',
+      aesthetic: 'Top-down arranged composition',
       form_and_line: 'Grid organization',
       color_palette: 'Coordinated palette',
       lighting_setup: 'Top down soft',
-      material_texture: 'Table surface',
+      material_texture: 'Clean surface texture',
       render_quality: 'Instagram, organized',
       spatial_distortion: 'None',
       atmosphere: 'Satisfying, clean',
       key_features: '90 degree angle',
       creative_brief:
-        'Order imposed upon chaos with the geometry of desire, objects placed as if the tabletop were a page and composition its only grammar. Satisfaction lives in the perpendicular, in the grid that holds beauty still long enough to be admired.',
+        'Flat-lay photography imposes top-down order on any subject: perpendicular camera, grid organization, coordinated palette, soft overhead light, and satisfying negative spacing. Treat the frame like a designed page without requiring objects on a table.',
     },
   },
   {
@@ -584,17 +584,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'sharp everywhere',
     style: {
-      aesthetic: 'City looks like toys',
+      aesthetic: 'Miniature tilt-shift effect',
       form_and_line: 'Blur top and bottom',
       color_palette: 'Saturated',
       lighting_setup: 'Daylight',
-      material_texture: 'Plastic look',
-      render_quality: 'Toy world, cute',
+      material_texture: 'Toylike surface crispness',
+      render_quality: 'Miniature diorama realism',
       spatial_distortion: 'Selective focus plane',
       atmosphere: 'Tiny, cute',
       key_features: 'Miniature effect',
       creative_brief:
-        'The colossal shrinks into a dollhouse diorama, entire cities reduced to the logic of a playset where blurring edges create their own physics. Wonder arrives not from what is shown but from the impossible tenderness of scale inverted.',
+        'Tilt-shift miniature style shrinks any subject into diorama logic: saturated daylight, selective focus band, blurred top and bottom, and toy-like clarity at the focal plane. Use scale inversion without requiring cities, buildings, or playset scenery.',
     },
   },
   {
@@ -604,35 +604,35 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smiling, artistic',
     style: {
       aesthetic: 'ID photo',
-      form_and_line: 'Face forward',
+      form_and_line: 'Front-facing centered geometry',
       color_palette: 'White background',
       lighting_setup: 'Flat, shadowless',
       material_texture: 'None',
       render_quality: 'Bureaucratic, boring',
-      spatial_distortion: 'Neutral expression',
+      spatial_distortion: 'Neutral administrative flattening',
       atmosphere: 'Official, deadpan',
       key_features: 'White background',
       creative_brief:
-        'The self stripped to its administrative minimum, features flattened into data by shadowless light that erases biography. Identity here is not expression but certification, the face reduced to a credential that proves existence without proving humanity.',
+        'Passport-photo style strips any subject to administrative minimum: white background, centered front-facing geometry, flat shadowless light, neutral expression logic, and bureaucratic deadpan. Apply ID-photo certification without requiring human face, features, or biography.',
     },
   },
   {
     id: 'SP01-055',
     name: 'Underwater',
     category: '1. Portrait And Studio',
-    negativePrompt: 'dry, land',
+    negativePrompt: 'dry studio light, harsh land lighting',
     style: {
       aesthetic: 'Submerged subject',
-      form_and_line: 'Floating hair/cloth',
+      form_and_line: 'Weightless drifting contours',
       color_palette: 'Cyan, Blue cast',
       lighting_setup: 'Caustics (light rays)',
-      material_texture: 'Bubbles, refraction',
+      material_texture: 'Bubbles, caustics, refraction',
       render_quality: 'Dreamy, weightless',
       spatial_distortion: 'Refraction distortion',
       atmosphere: 'Silent, deep',
       key_features: 'Blue tint',
       creative_brief:
-        'Gravity unlearns itself beneath the surface, where fabric dances in slow currents and light arrives fractured into drifting nets of radiant blue lace. Everything softens, blue-shifted, rendered dreamlike by the liquid medium that bends vision as much as it bends light. Sound becomes impossible in this suspended cathedral of silence, where breath holds itself in abeyance.',
+        'Submerged optics transform any subject through blue cast, caustic rays, bubble texture, softened contrast, refraction distortion, and weightless contour drift. The style is underwater light physics, not mandatory hair, fabric, land/sea setting, or swimmer staging.',
     },
   },
   {
@@ -641,36 +641,36 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'happy, posed',
     style: {
-      aesthetic: 'Police booking photo',
+      aesthetic: 'Booking-documentation photo',
       form_and_line: 'Height chart',
       color_palette: 'Grey, flat',
       lighting_setup: 'Flat',
-      material_texture: 'Rough skin',
-      render_quality: 'Criminal, raw',
-      spatial_distortion: 'Dead eyes',
+      material_texture: 'Rough factual surface',
+      render_quality: 'Raw institutional record',
+      spatial_distortion: 'Deadpan frontal flattening',
       atmosphere: 'Serious, trouble',
       key_features: 'Height lines',
       creative_brief:
-        'Height lines measure what no ruler can touch, the flat light interrogating skin and bone until identity becomes mere case file. The gaze holds neither guilt nor innocence, only the unblinking fact of being seen by a system that has already made up its mind.',
+        'Mugshot style reduces any subject to institutional record: grey flat light, frontal deadpan composition, height-line grid, rough surface clarity, and zero glamour. Keep booking-photo severity without requiring person, face, skin, guilt, or police narrative.',
     },
   },
   {
     id: 'SP01-077',
     name: 'Medical Photography',
     category: '1. Portrait And Studio',
-    negativePrompt: 'artistic, shadow',
+    negativePrompt: 'artistic, moody shadow',
     style: {
-      aesthetic: 'Surgery or anatomy',
-      form_and_line: 'Clean, gross',
-      color_palette: 'Red, Blue scrubs',
+      aesthetic: 'Clinical medical documentation',
+      form_and_line: 'Clean hyper-detailed framing',
+      color_palette: 'Sterile red-blue accents',
       lighting_setup: 'Bright surgical light',
-      material_texture: 'Flesh, metal',
+      material_texture: 'Sterile surface, metal, medical sheen',
       render_quality: 'Clinical, sharp',
       spatial_distortion: 'None',
       atmosphere: 'Sterile, intense',
       key_features: 'Clean background',
       creative_brief:
-        'The body laid bare under surgical light, flesh and metal converging at the boundary between catastrophe and repair. Sterility sharpens into its own aesthetic, the hyperreal revealing what only proximity to the wound can teach.',
+        'Medical photography applies bright surgical clarity, sterile color accents, sharp close detail, and unemotional documentation to any subject. Keep clinical intensity without requiring anatomy, surgery, flesh, wounds, scrubs, or medical procedure.',
     },
   },
   {
@@ -679,17 +679,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Portrait And Studio',
     negativePrompt: 'portrait, studio',
     style: {
-      aesthetic: 'Car windshield view',
+      aesthetic: 'Mounted glass POV',
       form_and_line: 'Wide angle',
       color_palette: 'Digital, utilitarian',
-      lighting_setup: 'Headlights or street',
+      lighting_setup: 'Hard practical light',
       material_texture: 'Windshield reflection, rain',
-      render_quality: 'Raw, accident footage',
+      render_quality: 'Raw incident recorder',
       spatial_distortion: 'Motion blur',
       atmosphere: 'Real, urgent',
-      key_features: 'Dashboard visible',
+      key_features: 'Glass reflection frame',
       creative_brief:
-        'The unblinking witness behind glass, recording the ordinary poetry of asphalt and headlights. A mechanical gaze that transforms highways into quiet epics and streetlamps into constellations. The windshield becomes a lens through which the banal reveals its strange, urgent beauty.',
+        'Mounted recorder vision behind imperfect glass: wide angle, utilitarian digital color, reflection streaks, rain smear potential, hard practical lights, and motion blur. Use dashcam urgency on any subject without requiring road, dashboard, car interior, or highway narrative.',
     },
   },
   {
@@ -706,9 +706,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Gritty, crime',
       spatial_distortion: 'Wide angle distortion',
       atmosphere: 'Creepy, voyeuristic',
-      key_features: 'Timestamp overlay',
+      key_features: 'Surveillance UI burn-in',
       creative_brief:
-        'A machine watching without intention, its gaze degraded by compression and time: scanlines slicing through bodies, pixels collapsing into blocky approximations of guilt or innocence. The timestamp burns in the corner like a bureaucratic scar. Every frame is a question asked without curiosity, answered without witness.',
+        'A machine watching without intention: low-resolution compression, scanlines, wide-angle distortion, security-camera contrast, and timestamp-like UI burn-in marks. Any subject becomes evidence under indifferent surveillance; no bodies, crime scene, hallway, or literal witness narrative required.',
     },
   },
   {
@@ -718,16 +718,16 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'earth, ground',
     style: {
       aesthetic: 'Deep space astrophotography',
-      form_and_line: 'Nebula clouds',
+      form_and_line: 'Luminous diffuse structures',
       color_palette: 'False color (NASA palette)',
-      lighting_setup: 'Star glow',
-      material_texture: 'Gas, dust, stars',
-      render_quality: 'Cosmic, epic',
+      lighting_setup: 'Emissive deep-field glow',
+      material_texture: 'Ionized haze, dustlike speckle',
+      render_quality: 'Space-telescope false color',
       spatial_distortion: 'None',
       atmosphere: 'Awe-inspiring, vast',
-      key_features: 'Star field',
+      key_features: 'Deep-field false color',
       creative_brief:
-        'Stellar nurseries rendered in colors no human retina has ever registered, false-chromatic hymns to distance and scale. Nebula veils draping across light-years, gas and dust sculpted by gravity into forms that feel simultaneously sacred and scientific. The cosmos photographed not as it appears but as it truly is.',
+        'Space-telescope processing applied as visual grammar: false-color spectral mapping, luminous haze, deep-field speckle, vast black separation, and emissive detail emerging from darkness. Let any subject read through Hubble-like cosmic scale without requiring literal nebulae, stars, or outer space.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

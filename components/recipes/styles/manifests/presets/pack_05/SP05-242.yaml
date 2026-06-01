@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-242
 packId: pack_05
-name: Grimgar - Smoke and Mud Underdog Party
+name: Smoke-Mud Vulnerability Style
 category: 8. Isekai & High Fantasy
 version: 1
 supportedTasks:
@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía de bajo nivel marcada por precariedad, duelo íntimo y supervivencia de escuadra sin épica grandilocuente.
-  form_and_line: Siluetas contenidas, postura defensiva, distancia emocional entre miembros y lectura de movimiento cauteloso.
+  aesthetic: Fantasía precaria marcada por vulnerabilidad, duelo íntimo, colaboración temblorosa y supervivencia sin épica grandilocuente.
+  form_and_line: Siluetas contenidas, postura defensiva, distancia emocional visible y lectura de movimiento cauteloso.
   color_palette: Marrón humo, gris barro, verde apagado, naranja tenue de fogata y azul noche húmeda.
-  lighting_setup: Fuego débil de campamento, niebla baja, sombras largas y luz ambiental fría de bosque hostil.
+  lighting_setup: Luz débil y cálida, niebla baja, sombras largas y ambiente frío hostil.
   material_texture: Cuero remendado, tela mojada, metal sin pulir, barro adherido y desgaste acumulado en equipo improvisado.
   render_quality: Realismo anime sobrio con foco en vulnerabilidad corporal y narrativa de pérdidas pequeñas.
-  spatial_distortion: Escala humana reducida, encuadres cerrados de grupo y profundidad incierta por niebla y maleza.
+  spatial_distortion: Escala humana reducida, encuadres cerrados y profundidad incierta por niebla y textura vegetal abstracta.
   atmosphere: Frágil, humilde y sincera, con miedo persistente y lealtad emergente.
-  key_features: Fogata mínima, armadura parchada, senderos lodados y formación insegura de party novata.
+  key_features: Luz mínima, protección parchada, barro, formación insegura y vulnerabilidad corporal.
   creative_brief: >-
     Construye una gramática smoke-and-mud reusable donde materialidad precaria,
-    luz pobre y colaboración temblorosa expresen crecimiento desde la
-    vulnerabilidad.
+    luz pobre y colaboración temblorosa expresen crecimiento sin grupo fijo,
+    asentamiento temporal, entorno natural fijo, rutas, roles de equipo o situación
+    narrativa obligatoria.
 avoidRules:
   - realistic
   - 3d render

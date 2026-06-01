@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasy itinerante de comfort-food, con economía de ruta, cocina de campamento y abundancia de baja tensión.
-  form_and_line: Composición centrada en olla y mesa improvisada, siluetas amables de viaje y gesto culinario doméstico.
-  color_palette: Dorado caldo, marrón pan, verde campo, azul cielo abierto y crema de vajilla rústica.
-  lighting_setup: Fuego de campamento cálido, luz crepuscular amable y vapor iluminado como acento narrativo.
-  material_texture: Hierro de cacerola, madera de carreta, tela de alforja, especias visibles y superficies gastronómicas brillantes.
-  render_quality: Slice-of-life fantástico con detalle comestible y legibilidad de convivencia en ruta.
-  spatial_distortion: Escala de carretera y campamento, con foco íntimo en la estación de cocina móvil.
-  atmosphere: Cálida, relajada y hambrienta, de viaje sin urgencia trágica.
-  key_features: Olla protagonista, familiar glotón, packs de mercader y nubes de vapor apetecible.
+  aesthetic: Fantasy comfort-food itinerante, con calidez práctica, abundancia amable y economía visual de baja tensión.
+  form_and_line: Curvas suaves, agrupación hospitalaria, ritmos redondeados y lectura doméstica aplicada a cualquier sujeto.
+  color_palette: Dorado caldo, marrón pan, verde campo, azul cielo abierto y crema rústica.
+  lighting_setup: Calor bajo envolvente, luz crepuscular amable y vapor luminoso como velo atmosférico.
+  material_texture: Esmalte gastado, madera cálida, tela viajera, brillo gastronómico y grano especiado sin prop obligatorio.
+  render_quality: Slice-of-life fantástico con detalle sensorial, bordes suaves y apetito cromático transferible.
+  spatial_distortion: Escala íntima y acogedora, con foco cercano y profundidad tranquila de pausa compartida.
+  atmosphere: Cálida, relajada y generosa, sin urgencia trágica.
+  key_features: Vapor apetecible, superficies sabrosas, hospitalidad de viaje, abundancia práctica y calma nutricional.
   creative_brief: >-
-    Construye una gramática merchant-road-stew reusable donde cocina práctica,
-    hospitalidad de viaje y abundancia cotidiana sostengan una aventura amable
-    centrada en el acto de compartir comida.
+    Construye una gramática merchant-road-stew reusable donde cualquier prompt
+    reciba calidez comestible, brillo de hospitalidad y textura de abundancia
+    cotidiana sin anclar la composición a una escena culinaria o viajera fija.
 avoidRules:
   - realistic
   - 3d render

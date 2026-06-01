@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Domed-city despair, android personhood crisis, black fashion silhouettes, abandoned modernism, philosophical cyber-goth severity under rain and concrete
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Mausoleum city dread, with cyber-goth severity, abandoned modernism, personhood anxiety, and concrete rain.
+  form_and_line: Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical stillness.
+  color_palette: Concrete gray, rain black, cold cyan, corpse white, muted violet, and faint sodium amber.
+  lighting_setup: Funereal top light, wet reflections, distant industrial glow, and minimal rim cuts against oppressive shadow.
+  material_texture: Rain-dark concrete, matte black fabric, oxidized metal, glass streaks, and low-grain digital polish.
+  render_quality: High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise silence.
+  spatial_distortion: Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel trapped.
   atmosphere: Bleak, cerebral, cool, funereal
-  key_features: Black fashion silhouettes, brutalist city spaces, android detail, rain-darkened concrete, philosophical stillness
-  creative_brief: A procession through concrete cathedrals where android souls weigh heavier than human breath. Every shadow carries a question unasked, every raindrop mirrors a fragment of self lost to the machine. Render the beautiful dread of consciousness waking inside a body that was never meant to dream.
+  key_features: Cyber-goth stillness, concrete rain, personhood dread, black silhouette severity, abandoned modernism.
+  creative_brief: >-
+    Make any prompt feel like philosophical cyber-goth dread: use concrete
+    emptiness, rain-dark reflection, black silhouettes, and cold self-awareness
+    without requiring androids, domes, city spaces, or narrative procession.
 avoidRules:
   - realistic
   - 3d render

@@ -9,88 +9,125 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Action',
     negativePrompt: 'photoreal, static-pose, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Urban anime action with high-impact chase.',
-      form_and_line: 'Kinetic lines, aggressive silhouettes and flexible anatomy.',
+      aesthetic: 'High-impact anime action with compressed urgency and forward-rush pressure.',
+      form_and_line:
+        'Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.',
       color_palette: 'Dark blue, energy red and contrast white.',
-      lighting_setup: 'Explosion flash with dynamic rim.',
-      material_texture: 'Asphalt grit, dust plumes, and stylized sparks.',
+      lighting_setup: 'Flash-burst lighting with dynamic rim and hard motion accents.',
+      material_texture:
+        'Grit overlays, dust plumes, and stylized sparks without fixed urban surface.',
       render_quality: 'Sharp combat keyframe with instant readability.',
       spatial_distortion: 'Forced perspective that amplifies speed.',
       atmosphere: 'Urgency, adrenaline, and imminent danger.',
-      key_features: 'Motion lines, extreme leap, compressed background.',
-      creative_brief: 'Hero in acrobatic sprint between alleys with maximum visual energy.',
+      key_features: 'Motion lines, extreme rush angle, compressed background, impact flash.',
+      creative_brief:
+        'Apply alley-rush energy as a transferable action treatment: any subject should feel accelerated, compressed, and impact-ready without requiring a fixed hero, location, chase, or acrobatic sprint.',
     },
   },
   {
     id: 'SP13-022',
-    name: 'Skyblade Midair Clash',
+    name: 'Vertigo Energy Cross Style',
     category: '3. Action',
     negativePrompt: 'photoreal, calm-composition, blur-only, watermark, text, logo',
     style: {
-      aesthetic: 'Anime aerial duel with energy sword.',
-      form_and_line: 'Firm contours, extreme poses and impact line.',
+      aesthetic:
+        'Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force.',
+      form_and_line:
+        'Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic silhouettes.',
       color_palette: 'Cyan, fire orange, and deep black.',
-      lighting_setup: 'Sky backlight with shock flare.',
-      material_texture: 'Fractured energy, fabric in wind and particles.',
-      render_quality: 'Maximum clarity combat illustration.',
-      spatial_distortion: 'Wide-angle framing with vertiginous height.',
-      atmosphere: 'Epic clash and heroic tension.',
-      key_features: 'Crossing of swords, dramatic sky, luminous trail.',
-      creative_brief: 'Two rivals collide in mid-air in a climactic frame.',
+      lighting_setup:
+        'High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.',
+      material_texture:
+        'Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface polish.',
+      render_quality:
+        'Maximum clarity action illustration with strong silhouette readability and crisp energy separation.',
+      spatial_distortion:
+        'Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.',
+      atmosphere: 'Epic, elevated, kinetic, tense.',
+      key_features:
+        'Crossing energy vectors, vertigo framing, luminous trails, high backlight, clean impact readability.',
+      creative_brief:
+        'Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth, and crossing luminous trails should create aerial intensity without fixed characters, props, environment, or confrontation premise.\n',
     },
   },
   {
     id: 'SP13-023',
-    name: 'Railgun Rooftop Strike',
+    name: 'Neon Vector Discharge Style',
     category: '3. Action',
     negativePrompt: 'photoreal, medieval-only, washed-colors, watermark, text, logo',
     style: {
-      aesthetic: 'Sci-fi anime action on night rooftops.',
-      form_and_line: 'Sharp line and stylized tactical design.',
-      color_palette: 'Violet, neon blue and steel gray.',
-      lighting_setup: 'Railgun shot as main light.',
-      material_texture: 'Urban metal, rain and electric smoke.',
-      render_quality: 'Impact frame with clean focus.',
-      spatial_distortion: 'Urban depth with a strong diagonal vanishing point.',
-      atmosphere: 'Tactical tension and technological power.',
-      key_features: 'Energy weapon, skyline, dramatic backlight.',
-      creative_brief: 'Decisive shot from the roof in a powerful diagonal composition.',
+      aesthetic:
+        'Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum.',
+      form_and_line:
+        'Sharp technical linework, long discharge vectors, stylized tactical angles, precise edge discipline, and clean silhouette logic.',
+      color_palette:
+        'Violet, neon blue, graphite gray, cold white cores, and restrained magenta accents.',
+      lighting_setup:
+        'Electric discharge as main key, hard rim contrast, wet specular bounce, and blue-violet backflare.',
+      material_texture:
+        'Wet graphite sheen, electric smoke, cold polymer, brushed metal grain, and vapor-lit particles.',
+      render_quality:
+        'Clean focused impact frame with high technical readability and crisp luminous hierarchy.',
+      spatial_distortion:
+        'Strong diagonal vanishing point, vector-led depth, compressed technical planes, and fast electric parallax.',
+      atmosphere: 'Tactical, charged, precise, technological.',
+      key_features:
+        'Electric discharge vectors, violet-blue backlight, wet specular surfaces, diagonal technical depth, clean impact focus.',
+      creative_brief:
+        'Apply neon vector discharge to any subject: hard electric keys, violet-blue diagonals, wet graphite texture, and precise tactical linework should define the style without fixed vantage points, horizons, firearms, shots, or urban settings.\n',
     },
   },
   {
     id: 'SP13-024',
-    name: 'Arena Combo Finisher',
+    name: 'Monumental Impact Burst Style',
     category: '3. Action',
     negativePrompt: 'photoreal, static, over-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Tournament anime with a devastating finishing combo.',
-      form_and_line: 'Hard strokes, athletic anatomy and controlled FX.',
-      color_palette: 'Crimson, gold and charcoal red.',
-      lighting_setup: 'Stadium light with punctual burst.',
-      material_texture: 'Cracked floor and impact energy.',
-      render_quality: 'Fight climax illustration.',
-      spatial_distortion: 'Low camera to magnify the protagonist.',
-      atmosphere: 'Explosive triumph and competitive drama.',
-      key_features: 'Final blow, rubble, public out of focus.',
-      creative_brief: 'Exact moment of the finisher with monumental presence.',
+      aesthetic:
+        'Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity.',
+      form_and_line:
+        'Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression lines.',
+      color_palette:
+        'Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.',
+      lighting_setup:
+        'Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.',
+      material_texture:
+        'Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave grain.',
+      render_quality:
+        'Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.',
+      spatial_distortion:
+        'Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective pull.',
+      atmosphere: 'Explosive, triumphant, competitive, dramatic.',
+      key_features:
+        'Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame readability.',
+      creative_brief:
+        'Render any subject as a decisive impact crescendo: low-angle scale, crimson-gold burst light, controlled shock texture, and heavy contour rhythm should create final-frame drama without venues, spectators, named roles, signature moves, or required debris.\n',
     },
   },
   {
     id: 'SP13-025',
-    name: 'Thunder Gauntlet Charge',
+    name: 'Upward Thunder Momentum Style',
     category: '3. Action',
     negativePrompt: 'photoreal, dull-palette, calm-scene, watermark, text, logo',
     style: {
-      aesthetic: 'Shonen action of unleashed electrical power.',
-      form_and_line: 'Powerful contour and forward forward posture.',
+      aesthetic:
+        'Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent.',
+      form_and_line:
+        'Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded silhouette rhythm.',
       color_palette: 'Electric blue, intense white, and deep black.',
-      lighting_setup: 'Surrounding electricity with a vibrant halo.',
-      material_texture: 'Sparks, smoke and metal gauntlets.',
-      render_quality: 'Offensive transformation key frame.',
-      spatial_distortion: 'Aggressive frontal perspective.',
-      atmosphere: 'Fierce determination and upward momentum.',
-      key_features: 'Loaded fist, branched rays, firm gaze.',
-      creative_brief: 'Electric onslaught of protagonist in strong vertical composition.',
+      lighting_setup:
+        'Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.',
+      material_texture:
+        'Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.',
+      render_quality:
+        'Overload key frame with crisp electric hierarchy and high-impact contour clarity.',
+      spatial_distortion:
+        'Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame pressure.',
+      atmosphere: 'Fierce, ascending, charged, determined.',
+      key_features:
+        'Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette force.',
+      creative_brief:
+        'Apply upward thunder momentum to any subject: vertical force, branched blue light, intense white cores, vapor haze, and decisive silhouette pressure should define the style without fixed body parts, equipment, lead roles, strike choreography, or metamorphosis premise.\n',
     },
   },
 ] as unknown as StyleRuntimePreset[];

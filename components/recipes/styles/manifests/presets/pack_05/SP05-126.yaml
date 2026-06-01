@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Occult comedy collision, ghost-speed punch-ups, alien weirdness, teen-romance bickering, turbo-charged nonsense, supernatural street fights with irreverent energy
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Paranormal turbo romance brawl, with occult comedy collision, weird speed, irreverent warmth, and cosmic nonsense.
+  form_and_line: Turbo smear lines, elastic reaction contours, collision-panel rhythm, paranormal glyph bursts, and romantic recoil beats.
+  color_palette: Hot pink, ghostly teal, alien lime, blacklight violet, comic yellow, and warm blush orange.
+  lighting_setup: Flash-frame impacts, uncanny underglow, neon paranormal rim light, and sudden romantic softness after chaos.
+  material_texture: Static grain, ectoplasmic glow, stickerlike graphic overlays, polished cel speed effects, and rough comedy smears.
+  render_quality: Premium weird-action anime finish with high-speed clarity, absurd timing, and expressive romance friction.
+  spatial_distortion: Turbo perspective snaps, supernatural squash-stretch, and colliding scale shifts that keep the frame unstable.
   atmosphere: Wild, funny, romantic, unhinged
-  key_features: Occult iconography, speed-burst framing, weird-creature silhouettes, high-energy reaction shots, teen-banter body language
-  creative_brief: Two teenagers argue over convenience-store snacks while a ghost and an alien crash through the same window at escape velocity. The frame crackles with the friction of irreverent youth colliding against cosmic nonsense, each punch line drawn at the speed of a skipped heartbeat. Romance hides in the recoil, blooming in the split-second between impact and laughter.
+  key_features: Occult comedy, turbo impact, weird romance recoil, paranormal color clash, reaction-shot elasticity.
+  creative_brief: >-
+    Push any prompt into turbo paranormal comedy: clash impossible energies,
+    speed-line absurdity, and romantic recoil in the same frame without
+    requiring teenagers, aliens, ghosts, streets, or a brawl setup.
 avoidRules:
   - realistic
   - 3d render

@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Underground cybernetic nihilism, rusted corridors, amputated bodies rebuilt with dead purpose, subterranean violence and social decay pressed into hard shadow
-  form_and_line: Hard-edged anime linework, precise machinery, mechanical hatch strokes, panel-line detailing, rigid geometric contours
-  color_palette: Neon accents, metal greys, electric color pops, cyber-synthwave hues, acidic cyan-magenta contrast
-  lighting_setup: Industrial glow, digital reflections, fluorescent tube lighting, harsh underlighting, wet-surface specularity
-  material_texture: Mechanical detail, rain sheen, synthetic surfaces, brushed metal grain, carbon-fiber weave, glossy polymer
-  render_quality: High-detail sci-fi anime frame, precision mechanical rendering, specular highlight richness, cold techno-finish
-  spatial_distortion: Sharp perspective, technical silhouettes, wireframe grid vanishing points, cockpit POV framing
+  aesthetic: Rust wire descent, with cybernetic nihilism, social decay, hard shadow, and dead-purpose machinery.
+  form_and_line: Rigid amputated geometry, rust-wire diagonals, severe low silhouettes, tunnel-like compression, and brutal panel cuts.
+  color_palette: Rust brown, dead black, sickly green, old fluorescent white, bloodless gray, and oxidized orange.
+  lighting_setup: Failing tube light, harsh underlighting, narrow glow seams, and deep oppressive shadow blocks.
+  material_texture: Rust streaks, cable abrasion, scarred metal, damp concrete, oxidized fasteners, and oily reflective film.
+  render_quality: Mature sci-fi anime finish with abrasive grime, mechanical fidelity, and oppressive compositing.
+  spatial_distortion: Downward compression, subterranean depth, and claustrophobic perspective breaks.
   atmosphere: Nihilistic, rusted, oppressive, cold
-  key_features: Subterranean urban decay, prosthetic-limb emphasis, rust-streak textures, brutalist tunnel depth, exhausted body language
-  creative_brief: Descend into rusted underworlds where flesh and wire have made an uneasy peace, and the only light comes from failing fluorescent tubes. The body is architecture now—rebuilt, betrayed, still bleeding. Compose despair like a cathedral, each wound a stained-glass window.
+  key_features: Rust-wire texture, cybernetic decay, oppressive descent, failing light, hard-shadow nihilism.
+  creative_brief: >-
+    Apply rust-wire descent to any prompt through oxidized texture, failing
+    fluorescent light, cable abrasion, and downward pressure without requiring
+    prosthetics, corridors, underground spaces, or body-damage scenes.
 avoidRules:
   - realistic
   - 3d render

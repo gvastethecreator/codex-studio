@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-319
 packId: pack_16
-name: Super Dimension Fortress Macross - Carrier Deck Pop Destiny
+name: Strategic Pop Duality Style
 category: 11. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Ópera mecha-pop de dualidad militar y espectáculo idol, donde estrategia bélica y melodrama romántico coexisten.
-  form_and_line: Doble registro de línea, rigidez operacional de hangar y fluidez performativa de escenario musical.
-  color_palette: Grises de cubierta táctica, rojos de alerta misil, azules estelares y pasteles idol de contrapeso emocional.
-  lighting_setup: Hazes de hangar combinados con spot de concierto, glow de cabina y contraluces cósmicos de gran dramatismo.
-  material_texture: Placas de casco pintadas, marcas de pista, superficies de show y shimmer de borde cel analógico.
+  aesthetic: Ópera pop de dualidad estratégica y espectáculo emocional, donde tensión técnica y melodrama cromático coexisten.
+  form_and_line: Doble registro de línea, rigidez operacional y fluidez performativa de espectáculo.
+  color_palette: Grises tácticos, rojos de alerta, azules estelares y pasteles pop de contrapeso emocional.
+  lighting_setup: Haze técnico combinado con spot escénico, glow de interfaz y contraluces cósmicos de gran dramatismo.
+  material_texture: Placas pintadas, marcas operativas, superficies de show y shimmer de borde cel analógico.
   render_quality: Acabado premium retro-futuro con balance nítido entre lectura táctica y catarsis pop escénica.
-  spatial_distortion: Escala macro de flota contrapuesta a encuadre íntimo de performer para tensión entre guerra y canción.
+  spatial_distortion: Escala macro contrapuesta a encuadre íntimo performativo para tensión entre estrategia y canción.
   atmosphere: Romántica, estratégica, pop, sideral.
-  key_features: Gramática de carrier deck, motivo idol central, escala ciudad-en-nave y contraste militar-musical explícito.
-  creative_brief: Diseña una gramática reusable de mecha-pop dual para cualquier sujeto, integrando operación militar, performance idol y melodrama estratégico en un sistema visual unificado.
+  key_features: Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.
+  creative_brief: >-
+    Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada:
+    estrategia, espectáculo y romance gráfico sin imponer carrier decks, idols, ciudades nave, mechas ni operaciones militares.
 avoidRules:
   - realistic
   - 3d render

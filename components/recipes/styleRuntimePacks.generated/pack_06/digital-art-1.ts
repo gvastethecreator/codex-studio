@@ -10,37 +10,43 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
     style: {
-      aesthetic: 'Standard digital illustration',
-      form_and_line: 'Clean, refined',
-      color_palette: 'RGB, vibrant',
-      lighting_setup: 'Studio',
-      material_texture: 'Smooth',
-      render_quality: 'ArtStation, professional',
+      aesthetic:
+        'Polished digital illustration with layer-built control, clean brush economy, and modern concept-render clarity',
+      form_and_line:
+        'Refined silhouette edges, selective painterly marks, and clean shape transitions',
+      color_palette:
+        'RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation',
+      lighting_setup: 'Studio-like key/fill/rim logic tuned for clean digital readability',
+      material_texture:
+        'Smooth brush blending with selective texture overlays and pressure-sensitive edge detail',
+      render_quality: 'Professional digital painting polish without platform-specific tropes',
       spatial_distortion: 'None',
       atmosphere: 'Polished',
-      key_features: 'Digital look',
+      key_features: 'Layered polish, crisp focal rendering, editable-feeling control',
       creative_brief:
         'Undo exists. Layers float in infinite adjustability, colors sampled from a spectrum beyond physical pigment, every stroke revisable. The tablet records pressure into opacity, a simulation of paint that knows no drying time. The image achieves polish through iteration, a perfection that only the weightless can sustain.',
     },
   },
   {
     id: 'SP06-048',
-    name: 'Matte Painting',
+    name: 'Matte Painting Extension',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement',
     style: {
-      aesthetic: 'Photorealistic environment extension',
+      aesthetic:
+        'Matte-painting extension style with seamless photobash integration and atmospheric scale logic',
       form_and_line: 'Invisible',
       color_palette: 'Cinematic, atmospheric',
       lighting_setup: 'Natural, consistent',
       material_texture: 'Photo textures',
-      render_quality: 'Movie background',
+      render_quality:
+        'Cinematic background/extension finish without requiring landscapes, skies, or architecture',
       spatial_distortion: 'None',
-      atmosphere: 'Epic, vast',
+      atmosphere: 'Expansive, coherent, cinematic',
       key_features: 'Seamless blend',
       creative_brief:
-        'Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless vastness. Cinematic light unifies what was never together, a world assembled from fragments that conspire to feel whole. The image convinces not through realism but through atmospheric coherence, light as the great unifier.',
+        'Photo textures merge with painted extension, the boundary between captured and constructed dissolving into seamless atmosphere. Cinematic light unifies fragments that were never together, making scale, depth, and continuity feel inevitable. The image convinces through coherence, not through requiring environments, skies, architecture, or vistas.',
     },
   },
   {
@@ -48,19 +54,21 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Concept Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene',
     style: {
-      aesthetic: 'Movie design visualization',
+      aesthetic:
+        'Entertainment concept-art visualization with mood-first design and production-readable focal hierarchy',
       form_and_line: 'Painterly',
       color_palette: 'Mood lighting',
       lighting_setup: 'Cinematic',
       material_texture: 'Photobash',
-      render_quality: 'AAA Game',
+      render_quality:
+        'AAA concept-art finish without locking to games, movies, worlds, or products',
       spatial_distortion: 'None',
       atmosphere: 'Epic, storytelling',
       key_features: 'Focal point detail',
       creative_brief:
-        'Mood precedes detail, atmosphere driving form rather than following it, the image designed to sell a world before a product. Photobash fragments meet painterly strokes in a hybrid language spoken in pre-production meetings. The image proposes rather than concludes, a question asked in cinematic light.',
+        'Mood precedes detail, atmosphere driving form rather than following it, the image designed to test a visual direction before final production. Photobash fragments meet painterly strokes in a hybrid language of readable possibility. The image proposes rather than concludes, using cinematic light to make any subject feel designed and production-ready.',
     },
   },
   {
@@ -108,9 +116,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Isometric',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement',
     style: {
-      aesthetic: '3D parallel projection',
+      aesthetic:
+        'Isometric digital-art projection with equalized depth, toy-scale clarity, and no vanishing point',
       form_and_line: 'Parallel lines',
       color_palette: 'Vibrant',
       lighting_setup: 'Studio',
@@ -120,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Organized, toy-like',
       key_features: '30 degree angle',
       creative_brief:
-        "Parallel lines never converge, perspective abandoned for a god's-eye geometry where every tile receives equal attention. The world tilts thirty degrees, revealing itself as a diorama, a playset awaiting the hand. Distance is measured in grid cells, not vanishing points, infinitude implied by the edges that never meet.",
+        'Parallel lines never converge, perspective abandoned for a geometry where every plane receives equal attention. The subject tilts thirty degrees, revealing itself as a diorama-like construction with clean dimensional logic. Distance is measured in grid cells and stacked planes, not vanishing points or literal worlds.',
     },
   },
   {
@@ -128,10 +137,12 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Double Exposure',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain requirement',
     style: {
-      aesthetic: 'Blended images',
-      form_and_line: 'Silhouette',
+      aesthetic:
+        'Double-exposure compositing with nested imagery, transparent overlap, and poetic contour masking',
+      form_and_line:
+        'Silhouette or mask-driven overlays with soft edge blending and exposure fusion',
       color_palette: 'Mixed palettes',
       lighting_setup: 'Contrast',
       material_texture: 'Mixed',
@@ -140,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy',
       key_features: 'Silhouette container',
       creative_brief:
-        'Two realities occupy the same frame, one visible through the silhouette of the other, interior and exterior collapsing into a single exposure. The image holds contradiction as composition, a forest growing inside a profile, mountains where thoughts should be. Meaning emerges from the overlap, the space between the negatives.',
+        'Two visual systems occupy the same frame, one visible through the contours or tonal mask of the other. Interior and exterior logic collapse into one exposure, holding contradiction as composition rather than narrative. Meaning emerges from overlap, transparency, and negative space without requiring faces, forests, mountains, or human profiles.',
     },
   },
   {
@@ -168,19 +179,20 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Art (16-bit)',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge reference',
     style: {
-      aesthetic: 'SNES game sprite',
+      aesthetic: '16-bit pixel-art style with deliberate grid economy and palette-ramp readability',
       form_and_line: 'Pixel perfect',
       color_palette: 'Limited palette',
       lighting_setup: 'Dithered',
       material_texture: 'Pixel grid',
-      render_quality: 'Retro game',
+      render_quality:
+        'Retro game-art finish without requiring sprites, characters, cartridges, or UI',
       spatial_distortion: 'Blocky',
       atmosphere: 'Nostalgic',
       key_features: 'Grid alignment',
       creative_brief:
-        'Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Sprites snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. The image carries the weight of every cartridge ever blown into, every save file ever lost.',
+        'Every pixel earns its place through limitation, the 16-bit palette a gauntlet that only intentional color survives. Forms snap to grid with the conviction of a world built from discrete units, continuous reality rejected in favor of the quantized. Nostalgia should come from palette, dithering, tile rhythm, and crisp scale, not from game props.',
     },
   },
   {
@@ -188,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Synthwave',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement',
     style: {
       aesthetic: '80s retro-futurism',
       form_and_line: 'Grid lines',
@@ -200,7 +212,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Nostalgic, cool',
       key_features: 'Sunset gradient',
       creative_brief:
-        'Neon gridlines stretch toward an infinite horizon that glows purple-pink, a synthesized sunset that never existed but everyone remembers. Chrome surfaces reflect a future that peaked in 1985 and has been echoing ever since. The image moves even when still, driven by a beat you can almost hear beneath the scanlines.',
+        'Neon gridlines, chrome gradients, magenta-cyan bloom, and scanline haze create a remembered future that never existed. Reflective bands and synthetic color make the image move even when still, driven by a beat implied through rhythm and glow. The style should not require sunsets, roads, cars, horizons, or specific retro props.',
     },
   },
   {
@@ -208,19 +220,21 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'ASCII Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, readable words, signature, frame, border',
     style: {
-      aesthetic: 'Text based image',
-      form_and_line: 'Characters',
+      aesthetic:
+        'ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic',
+      form_and_line:
+        'Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands',
       color_palette: 'Monochrome green/black',
       lighting_setup: 'Density based',
       material_texture: 'Text grid',
       render_quality: 'Retro, hacker',
       spatial_distortion: 'Low res',
       atmosphere: 'Tech, code',
-      key_features: 'Text only',
+      key_features: 'Glyph density image, monospaced grid, terminal glow',
       creative_brief:
-        "Characters from the ASCII set assemble into image through density and contrast, the letter functioning as pixel, the keyboard as palette. The image exists simultaneously as text and picture, readable in two dimensions, meaningful in two languages. Every keystroke builds form from the alphabet's limited geometry.",
+        'Characters from the ASCII set assemble into image through density and contrast, each glyph functioning as a pixel-value decision. The image exists as symbol field and picture at once, but it should avoid readable words, captions, signatures, or logos. Every keystroke builds form from limited geometry and terminal-era constraint.',
     },
   },
   {
@@ -248,16 +262,16 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vector Art (Flat)',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark',
     style: {
-      aesthetic: 'Adobe Illustrator style',
+      aesthetic: 'Clean vector-art style with Bezier precision and flat scalable geometry',
       form_and_line: 'Bezier curves',
       color_palette: 'Solid flat colors',
       lighting_setup: 'None',
       material_texture: 'None',
-      render_quality: 'Icon, logo, clean',
+      render_quality: 'Icon-grade clarity without requiring logos, marks, or branding',
       spatial_distortion: 'Simplified',
-      atmosphere: 'Corporate, modern',
+      atmosphere: 'Modern, precise, frictionless',
       key_features: 'Infinite resolution',
       creative_brief:
         'Bezier curves describe the edge with mathematical precision, every path deliberate, every anchor point placed with intent. Color fills the enclosed space without variation, flat planes declaring their allegiance to geometry over texture. The image scales infinitely, resolution a concept that no longer applies.',
@@ -268,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polygon Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement',
     style: {
       aesthetic: '2D geometric triangulation',
       form_and_line: 'Triangles',
@@ -280,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Clean, sharp',
       key_features: 'Triangular mesh',
       creative_brief:
-        'Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries a gradient, thousands of tiny skies stitched into a single face. The geometry is the art, the subject merely the occasion for its arrangement.',
+        'Triangles tessellate into recognition, the image emerging from a web of flat polygons like a low-resolution memory of form. Each facet carries its own tonal decision, tiny planes stitched into a unified structure. Geometry is the art; the subject is only the occasion for angular arrangement.',
     },
   },
   {
@@ -288,19 +302,19 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Voxel Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement',
     style: {
       aesthetic: '3D cubes',
       form_and_line: 'Cubes',
       color_palette: 'Vibrant',
       lighting_setup: 'AO',
       material_texture: 'None',
-      render_quality: 'Minecraft style',
+      render_quality: 'Voxel-art finish with cube-unit discipline and playful AO depth',
       spatial_distortion: 'Blocky',
       atmosphere: 'Cute, digital',
       key_features: 'Cubes',
       creative_brief:
-        'The world assembles from identical cubes, complexity emerging from simple repetition like a universe growing from a single cell. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. The image builds meaning from the unit, the cathedral rising from the brick.',
+        'The image assembles from identical cubes, complexity emerging from simple repetition like a system growing from a single unit. Shadows pool in the crevices between blocks, ambient occlusion describing form through darkness at the joints. Meaning builds from the voxel, not from any specific game, building, or landscape.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

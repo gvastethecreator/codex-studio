@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-011
 packId: pack_16
-name: Aura Battle Shonen
+name: Generational Aura Clash Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Shonen de aura y rivalidad absoluta, con dramatismo noventero de combate iniciático y leyenda juvenil.
+  aesthetic: Shonen de aura y rivalidad absoluta, dramatismo noventero de confrontación iniciática y leyenda juvenil.
   form_and_line: Línea angulosa de alta tensión, anatomía cinética y puesta en pose de desafío frontal.
   color_palette: Amarillo energía, azul eléctrico, rojo rival y negro profundo de impacto cel clásico.
   lighting_setup: Contraste duro con flare de aura, rim agresivo y sombra marcada para potencia corporal.
-  material_texture: Fondo pintado de explosión abstracta, polvo de choque y grano fílmico de torneo épico.
+  material_texture: Fondo pintado de explosión abstracta, polvo de choque y grano fílmico de catarsis épica.
   render_quality: Acabado 90s premium con lectura cristalina de power-up, choque ideológico y catarsis física.
-  spatial_distortion: Perspectiva forzada, speed lines y compresión de distancia para aumentar urgencia del duelo.
+  spatial_distortion: Perspectiva forzada, speed lines y compresión de distancia para aumentar urgencia de confrontación.
   atmosphere: Épica, explosiva, feroz, legendaria.
-  key_features: Stare-down icónico, aura visible, coreografía de rivalidad y silueta heroica de alto contraste.
-  creative_brief: Diseña una gramática reusable de batalla de aura generacional para cualquier sujeto, priorizando intensidad emocional, escalada de poder y energía de confrontación.
+  key_features: Stare-down icónico, aura visible, rivalidad abstracta y silueta heroica de alto contraste.
+  creative_brief: >-
+    Diseña una gramática reusable de generational-aura-clash para cualquier
+    sujeto, priorizando intensidad emocional, escalada de poder y energía de
+    confrontación sin imponer batallas, torneos, duelos, rivales concretos ni
+    coreografía de combate.
 avoidRules:
   - realistic
   - 3d render

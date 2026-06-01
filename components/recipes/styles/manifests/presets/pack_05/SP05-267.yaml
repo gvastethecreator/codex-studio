@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-267
 packId: pack_05
-name: Blade of the Immortal - Ink-Slashed Revenge
+name: Blood-Ink Severance Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Wounded immortal samurai, blood-ink brush ferocity, revenge road under harsh weather, period grime and severe blade choreography rendered with punishing detail
+  aesthetic: Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing brush detail, endurance as visual abrasion
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks, weather-scoured grit
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather compression
   atmosphere: Vengeful, weathered, severe, bloody
-  key_features: Ink-heavy slash marks, period grime, scarred body detail, sword-road compositions, revenge-focused stares
-  creative_brief: Ink cuts like steel across the page, each slash a step on the revenge road where a body that will not die drags a soul that already has. Period grime and punishing detail render every wound sacred, the brushwork itself bleeding into the story of a samurai whose immortality is the cruelest curse of all.
+  key_features: Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure stillness
+  creative_brief: >
+    Render any subject with blood-ink severity: brush cuts, weathered grime,
+    scarred texture, and punishing detail should make the composition feel
+    irreversible without fixed period roles, travel narratives, props, or
+    revenge plot beats.
 avoidRules:
   - realistic
   - 3d render

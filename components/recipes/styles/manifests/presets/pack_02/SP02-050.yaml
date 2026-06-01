@@ -15,13 +15,13 @@ visualDna:
   aesthetic: Instant film
   form_and_line: None
   color_palette: Green/Blue cast, cool shift, muted pastel, cream border
-  lighting_setup: Flash, direct pop, over-lit faces, redeye bounce
+  lighting_setup: Flash, direct pop, close-range glare, redeye bounce
   material_texture: Soft focus, plastic lens, diffusion, chemical developer
   render_quality: Personal, memory, snapshot intimacy, instant nostalgia
   spatial_distortion: Chemical leak, developer smear, edge imperfection
-  atmosphere: Nostalgic, fun, scrapbook moment, party memory
-  key_features: White border, sharpie caption, square format, dated corner
-  creative_brief: A pocket-sized reliquary of the recent past, where the image materializes from chemical fog like a secret developing in plain sight. The white border frames not just a picture but the ritual of watching a moment become tangible — held in hands still warm from the flash, passed around the room before the color has fully settled. Impermanence made artifact, fading even as it arrives.
+  atmosphere: Nostalgic, fun, tactile memory, scrapbook intimacy
+  key_features: White border, square format, chemical fog, developer smear, soft plastic-lens focus
+  creative_brief: 'Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already requested. The ritual of instant development should be visible in the image chemistry itself.'
 avoidRules:
   - sharp
   - hd

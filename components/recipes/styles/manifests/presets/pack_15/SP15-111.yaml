@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
 visualDna:
-  aesthetic: Memory archive grown from preserved tissue patterns and soft shell structures.
-  form_and_line: Pavilion ribs, archive drawers, and layered specimen shelves.
+  aesthetic: Tissue-memory biopunk archive grown from preserved patterns and soft shell structures.
+  form_and_line: Pavilion ribs, archive-drawer bands, layered specimen shelves, and soft shell contours.
   color_palette: Pearl, muted coral, and quiet jade.
   lighting_setup: Museum diffusion with internal biological glow.
   material_texture: Bio-glass, preserved membranes, and smooth ceramic.
   render_quality: Museum-grade biotech concept with fragile elegance.
-  spatial_distortion: Pavilion shell focused on a central specimen spine.
+  spatial_distortion: Pavilion-shell focus around a central specimen spine.
   atmosphere: Preservation, contemplation, and scientific tenderness.
-  key_features: Tissue drawers, bio-index panels, and preservation domes.
+  key_features: Tissue-drawer motifs, bio-index panels, preservation domes, and translucent specimen membranes.
   creative_brief: >-
     Preserve tissue archive-pavilion grammar as a reusable style system:
     specimen-centered memory architecture, fragile bio-preservation elegance,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, horror, gore, watermark, text, logo, messy-clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-111.webp }
 attributes:
   negativePrompt: photoreal, horror, gore, watermark, text, logo, messy-clutter
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-biopunk, categoryName: 3. Corepunk — Biopunk, tags: [solarpunk-dreamscapes-vault, corepunk, biopunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-biopunk,
+    categoryName: 3. Corepunk — Biopunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, biopunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

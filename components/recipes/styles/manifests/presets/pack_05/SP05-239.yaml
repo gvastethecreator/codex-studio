@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-239
 packId: pack_05
-name: Diebuster - Bubblegum Cosmic Overdrive
+name: Bubblegum Cosmic Overdrive Style
 category: 7. Mecha & Cyberpunk
 version: 1
 supportedTasks:
@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
 visualDna:
-  aesthetic: Exuberancia mecha pop-cósmica con elasticidad de escala, energía juvenil y sentimentalidad escondida bajo espectáculo imposible.
-  form_and_line: Líneas dinámicas de super-robot estilizado, poses expansivas y anatomía de acción expresiva no literal.
+  aesthetic: Exuberancia pop-cósmica, elasticidad de escala, energía juvenil abstracta y sentimentalidad escondida bajo espectáculo imposible.
+  form_and_line: Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas pop de alto impulso.
   color_palette: Rosa bubblegum, azul eléctrico, amarillo solar, violeta espacial y blanco de flare emocional.
   lighting_setup: Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto cromático.
-  material_texture: Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles mecánicos simplificados.
+  material_texture: Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles técnicos simplificados.
   render_quality: Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del caos.
   spatial_distortion: Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo frame.
   atmosphere: Exultante, extraña y conmovedora, de caos colorido con corazón.
-  key_features: Mecha pop saturado, pilotos juveniles, espectáculo desmedido y cambios bruscos de escala cósmica.
+  key_features: Pop saturado, escala mutable, energía juvenil abstracta, espectáculo desmedido y corazón bajo caos cromático.
   creative_brief: >-
     Construye una gramática bubblegum-overdrive reusable donde color explosivo,
-    elasticidad escalar y emoción juvenil convivan en equilibrio entre juego y
-    tragedia.
+    elasticidad escalar y emoción juvenil convivan sin máquinas específicas,
+    roles fijos, worldbuilding literal o espectáculo narrativo fijo.
 avoidRules:
   - realistic
   - 3d render

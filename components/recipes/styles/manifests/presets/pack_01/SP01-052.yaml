@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: High speed athlete
-  form_and_line: Frozen muscle
-  color_palette: Vibrant jersey colors
-  lighting_setup: Stadium floodlights
-  material_texture: Sweat, dirt
-  render_quality: Sports Illustrated, sharp
+  aesthetic: High-speed action capture
+  form_and_line: Frozen force geometry
+  color_palette: Vibrant competition color
+  lighting_setup: Hard arena-style light
+  material_texture: Impact texture, dust, sheen
+  render_quality: Sports-editorial sharpness
   spatial_distortion: Motion blur background
   atmosphere: Intense, fast
   key_features: Action freeze
-  creative_brief: The body hangs mid-flight, every sinew suspended at the apex of force, while the roar of the crowd bleaches into a luminous blur that testifies to velocity by what it erases. Sweat catches floodlight like scattered diamonds, the geometry of effort rendered as sculpture in the split second before gravity reclaims its due. The image is a held breath at the edge of impact.
+  creative_brief: 'High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background, hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring athletes, jerseys, stadiums, crowds, or bodies.'
 avoidRules:
   - static
   - slow

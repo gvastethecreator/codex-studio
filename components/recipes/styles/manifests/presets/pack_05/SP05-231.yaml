@@ -13,18 +13,18 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: Ópera mecha metafísica con imaginería coral, simbolismo sonoro y melancolía ritual en escala de ciudad-santuario.
-  form_and_line: Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas de armadura.
+  form_and_line: Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas ceremoniales.
   color_palette: Azul abisal y cobalto litúrgico con acentos coral rojo, blanco sacramental y negro de vacío acuoso.
   lighting_setup: Halo ceremonial azul, contraluces de barrera urbana y destellos resonantes sincronizados al motivo musical.
   material_texture: Carcasa nacarada, estrías coralinas, metal húmedo, pátina salina y superficies de energía translúcida.
   render_quality: Alta definición simbólica con legibilidad de iconografía sacra y dramatismo de escala operática.
   spatial_distortion: Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno visual.
-  atmosphere: Sagrada, enigmática y doliente, como himno de guerra en cámara lenta.
-  key_features: Mecha coral, sangre azul alienígena, motivos musicales geométricos y combate tratado como liturgia.
+  atmosphere: Sagrada, enigmática y doliente, como himno visual en cámara lenta.
+  key_features: Coral biomecánico, azul alienígena, motivos musicales geométricos y liturgia de escala.
   creative_brief: >-
     Define una gramática mecha-liturgy reusable donde biotectónica coral,
     resonancia musical y monumentalidad sacra articulen la identidad sin
-    depender de una escena puntual.
+    depender de una escena, combate o entidad mecánica puntual.
 avoidRules:
   - realistic
   - 3d render

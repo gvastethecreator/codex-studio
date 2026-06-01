@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Measured spellcasting from a long-lived mage, soft post-journey melancholy interrupted by precise magical violence, understated action framed by emotional memory and sky-rich stillness
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Ancient calm spell impact, with long memory, precise violence, sky-rich stillness, and understated magical authority.
+  form_and_line: Minimal gesture geometry, clean spell circles, soft contour restraint, sudden precise impact lines, and calm spacing.
+  color_palette: Pale sky blue, soft gold, pearl white, sage green, memory violet, and focused arcane cyan.
+  lighting_setup: Quiet sky glow, precise spell bloom, slow rim light, and sudden clean impact flash.
+  material_texture: Soft cloth grain, translucent mana particles, watercolor sky gradients, fine paperlike cel texture, and polished magic edges.
+  render_quality: Premium modern anime finish with restrained emotion, clean magical precision, and spacious compositional calm.
+  spatial_distortion: Wide stillness compressed by exact spell geometry, with impact appearing already decided.
   atmosphere: Calm, precise, wistful, powerful
-  key_features: Controlled spell geometry, quiet face acting, sky-heavy backgrounds, measured combat spacing, memory-laden stillness
-  creative_brief: A thousand years of memory compress into a single gesture, and a spell blooms like morning through the hands of someone who has outlived every companion. Violence is not loud here — it is quiet, precise, and already finished before the enemy understands it began. The sky watches with the patience of an elf who has seen empires rise and crumble like cloud formations.
+  key_features: Controlled spell geometry, memory light, quiet impact, sky-rich calm, precise authority.
+  creative_brief: >-
+    Give any prompt ancient calm impact: use spacious stillness, soft memory
+    light, and exact spell geometry so power feels quiet and finished without
+    requiring a caster, opponent, companion memory, or combat scene.
 avoidRules:
   - realistic
   - 3d render

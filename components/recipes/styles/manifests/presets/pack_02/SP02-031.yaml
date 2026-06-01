@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy tale
+  aesthetic: Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish
   form_and_line: Hand inked
-  color_palette: Technicolor paint, jewel tones, forest green, royal purple, sunset orange
+  color_palette: Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent
   lighting_setup: Multiplane camera, dimensional depth, parallax lighting
   material_texture: Cel paint, hand-inked acetate, watercolor background wash
   render_quality: Masterpiece, fluid, full-animation, in-between perfection
   spatial_distortion: Squash and stretch, elastic weight, cartoon physics
-  atmosphere: Magical, classic, storybook sincerity, woodland enchantment
-  key_features: Painted background, animal sidekick, princess silhouette
-  creative_brief: Forest light falls in painted layers as deer and songbird share a clearing older than memory. Every leaf glows from within, brushed by hand onto acetate sheets that breathe with the labor of devotion. A princess steps through the glade not as character but as covenant — the promise that beauty, carefully drawn, can hold back the dark.
+  atmosphere: Magical, classic, storybook sincerity, ceremonial wonder
+  key_features: Multiplane depth, inked contour, painted background layers, luminous cel separation
+  creative_brief: 'Treat any subject as a golden-age hand-inked feature cell: elegant silhouette, jewel-toned paint, dimensional multiplane stacking, and watercolor depth behind clean acetate forms. Beauty comes from disciplined line, luminous paint, and staged theatrical clarity rather than fixed fairy-tale content. Every element should feel brushed, inked, layered, and lit by classic studio craft.'
 avoidRules:
   - 3d
   - digital

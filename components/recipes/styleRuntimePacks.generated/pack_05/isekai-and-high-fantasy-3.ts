@@ -11,24 +11,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Quiet post-heroic travel, long-lived memory, serene fields, gentle spellcraft, elf time-perception, hero-party flashbacks, funeral-start journey, demon-king aftermath',
+        'Afterquest melancholy fantasy, with quiet post-heroic light, long memory, restrained spellcraft, and time-softened grief.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Gentle contours, delicate trim, small gesture emphasis, wide breathing spaces, and low-conflict silhouette rhythm.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Pale sky blue, sage green, soft wheat gold, faded violet, pearl white, and warm memory amber.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Diffuse morning light, slow rim glow, transparent magical motes, and subtle shifts that make time visible.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Soft cloth grain, weathered parchment, grasslike brush texture, translucent particles, and watercolor-like cel softness.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Serene fantasy anime finish with high restraint, lyrical clarity, and emotional negative space.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Reflective, serene, melancholic, timeless',
+        'Open horizontal breathing room, postcard stillness, and time-depth layering through light rather than action.',
+      atmosphere: 'Reflective, serene, melancholic, timeless.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Post-heroic quiet, memory light, soft horizon, gentle spellcraft, gratitude-through-distance.',
       creative_brief:
-        "An elf walks the same road her hero party once walked, now alone, now decades later, now beginning to understand what mortal time actually means. The fields haven't changed but the light has shifted imperceptibly, the way grief shifts from wound to weather. Frame each scene as a postcard from a journey whose destination is gratitude for the going.",
+        'Give any prompt afterquest melancholy: let light carry memory, let space breathe, and let magic feel almost incidental, avoiding fixed roads, groups, rituals, landscapes, or aftermath scenes.',
     },
   },
   {
@@ -39,24 +39,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Shield-forward battle logic, betrayed hero resilience, layered parties, medieval grit, legendary-weapon heroes, demi-human slaves, rage-shield curse, wave-of-calamity',
+        'Defensive underdog fantasy, with resilience, grit, layered mistrust, protective geometry, and forward-moving defiance.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Broad blocking shapes, guarded silhouettes, nested arcs, scarred contour weight, and stance-like compositional stability.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Burnished bronze, storm blue, mud brown, ember red, wounded violet, and hard steel highlights.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Low defensive glow, side-lit grit, hard edge rims, and ember accents that make endurance visible.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Scratched metal, rough cloth, cracked stone grain, soot glaze, and protective magic particles.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Gritty fantasy anime polish with tactile defense logic, emotional resilience, and clear silhouette weight.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Determined, defensive, resilient, betrayed',
+        'Forward pressure against heavy opposition, layered barriers, and compressed depth that makes survival active.',
+      atmosphere: 'Determined, defensive, resilient, betrayed.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Protective geometry, underdog grit, barrier layering, resilient glow, distrust-to-defiance tension.',
       creative_brief:
-        "The shield is not a weapon but a statement — defense as defiance, survival as victory, refusal to fall as the only combat move that matters. Grit textures every surface; the kingdom's betrayal left fingerprints on every stone. Build the image like a wall that learned to walk forward.",
+        'Render any prompt as defense becoming motion: use barrier geometry, scarred material texture, and hard-earned glow so resilience reads visually without requiring a literal defensive artifact, group, kingdom, curse, or disaster.',
     },
   },
   {
@@ -67,24 +67,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dungeon delving as culinary craft, cast-iron pans over campfire, monster ingredients, practical fantasy ecology, hungry camaraderie and dangerous kitchens in stone ruins',
+        'Gastronomía fantástica funcional, ecología aplicada, humor práctico y apetito técnico como dirección visual.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Gestualidad culinaria abstracta, ritmo de preparación, composición circular comunitaria y lectura clara de proceso.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Dorado de caldo, rojo especia, verde hierba, gris piedra y azul tenue de fuego mágico.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz cálida de cocción, rebote bajo y brillo funcional sobre superficies húmedas.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Hierro fundido, superficies trabajadas, piedra rugosa, tejido manchado y brillo de grasa.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía culinaria de alto detalle funcional con equilibrio entre humor, peligro y apetito.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Hearty, curious, practical, fun',
+        'Compresión de preparación, escala funcional, círculo de colaboración y profundidad cálida de oficio.',
+      atmosphere: 'Curiosa, nutritiva y aventurera, con alegría práctica.',
       key_features:
-        'Cooking tools, dungeon stones, monster-ingredient motifs, hungry party expressions, practical ecology detail',
+        'Calor culinario, proceso visible, ecología fantástica, grasa brillante y colaboración nutritiva.',
       creative_brief:
-        'Cast-iron pans hiss over dungeon campfires while monster anatomy becomes recipe notation and survival becomes cuisine. A party eats their way through ecology, curiosity seasoning every bite. The dungeon is not just threat but pantry, laboratory, communal table.',
+        'Construye una gramática stove-top-dungeon reusable donde lógica culinaria, ecología fantástica y camaradería práctica conviertan cualquier sujeto en acto técnico/comunitario sin forzar arquitectura subterránea, criaturas, herramientas, superficie de comida o grupo fijo.',
     },
   },
   {
@@ -95,24 +95,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Traveling fantasy comfort food, merchant roads, giant familiar appetite, practical camp cookware, low-stakes abundance and wandering culinary coziness',
+        'Fantasy comfort-food itinerante, con calidez práctica, abundancia amable y economía visual de baja tensión.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Curvas suaves, agrupación hospitalaria, ritmos redondeados y lectura doméstica aplicada a cualquier sujeto.',
+      color_palette: 'Dorado caldo, marrón pan, verde campo, azul cielo abierto y crema rústica.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Calor bajo envolvente, luz crepuscular amable y vapor luminoso como velo atmosférico.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Esmalte gastado, madera cálida, tela viajera, brillo gastronómico y grano especiado sin prop obligatorio.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Slice-of-life fantástico con detalle sensorial, bordes suaves y apetito cromático transferible.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Relaxed, tasty, itinerant, warm',
+        'Escala íntima y acogedora, con foco cercano y profundidad tranquila de pausa compartida.',
+      atmosphere: 'Cálida, relajada y generosa, sin urgencia trágica.',
       key_features:
-        'Cookpot focus, road-camp compositions, familiar-animal scale contrast, merchant packs, food-steam detail',
+        'Vapor apetecible, superficies sabrosas, hospitalidad de viaje, abundancia práctica y calma nutricional.',
       creative_brief:
-        "A stewpot bubbling on a merchant road transforms hunger into communion, the giant familiar's appetite a measure of how far from home this new world feels. Low-stakes abundance radiates from every campfire frame, where the greatest quest is simply feeding those who walk beside you.",
+        'Construye una gramática merchant-road-stew reusable donde cualquier prompt reciba calidez comestible, brillo de hospitalidad y textura de abundancia cotidiana sin anclar la composición a una escena culinaria o viajera fija.',
     },
   },
   {
@@ -123,24 +122,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Offbeat overpowered merchant fantasy, moonlit roads, demi-human communities, deadpan social detachment, practical trade and absurd strength sharing the same calm frame',
+        'Isekai mercantil lunar de tono deadpan, donde poder abrumador se expresa como calma práctica y diplomacia seca.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Formas sobrias, ritmo negociador, gestos contenidos y contraste entre escala implícita y lectura cotidiana.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Plata de luna, azul medianoche, verde comercio, ocre de camino y violeta tenue de aura contenida.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Nocturnidad limpia, highlights cálidos bajos y acentos suaves que dejan el poder en reserva.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Madera seca, cuero sobrio, metal de intercambio, tela mate y polvo mineral en clave abstracta.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía transaccional con detalle económico, humor seco y poder subrayado por contención.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Detached, moonlit, practical, powerful',
+        'Espacio amplio sugerido, microjerarquías de intercambio y foco tranquilo sin escena fija.',
+      atmosphere: 'Desapegada, práctica y confiada.',
       key_features:
-        'Merchant-road props, moonlit travel staging, overpowered calm posing, demi-human ensemble, trade-driven worldbuilding',
+        'Luz lunar mercantil, calma overpowered, diplomacia práctica, economía visual y aura violeta contenida.',
       creative_brief:
-        'Moonlight silver-plates the merchant road where a deadpan wanderer walks with world-breaking strength tucked behind an unassuming smile. Demi-human communities gather in the glow of practical trade, their unlikely protector moving through the night like a secret the moon already knows.',
+        'Define una gramática moonlit-merchant reusable donde cualquier prompt se vuelva práctico, lunar y diplomático mediante economía visual, humor seco y poder contenido sin depender de escena transaccional o utilería literal.',
     },
   },
   {
@@ -151,24 +150,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mundane practical skills becoming precious in fantasy, rope and lockpick utility, modest party bonds, dungeon logistics with empathy and comic warmth',
+        'Fantasía de utilidad cotidiana, donde oficio, logística y soporte práctico reemplazan el espectáculo heroico.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Composición funcional, gestos de precisión, módulos pequeños y lectura clara de competencia manual.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Marrón herramienta, acero gris, naranja lámpara, verde cuerda y beige de piedra utilitaria.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Focos cálidos portátiles, sombras técnicas y acentos de trabajo que guían la mirada por función.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Fibra trenzada, metal opaco, cuero utilitario, polvo mineral y marcas de uso cuidadoso.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Slice-of-adventure operativo, con encanto de competencia práctica y detalle táctil legible.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Practical, warm, modest, dependable',
+        'Escala humana de mantenimiento, proximidad funcional y tensión pequeña resuelta con método.',
+      atmosphere: 'Modesta, cálida y confiable.',
       key_features:
-        'Toolbox motifs, support-role staging, dungeon logistics, practical problem-solving poses, everyday-competence charm',
+        'Precisión artesanal, soporte logístico, microgestos de oficio, calidez técnica y humildad competente.',
       creative_brief:
-        'A toolbox opens in a dungeon corridor and suddenly lockpicks are holier than relics, rope more precious than prophecy. The modest handyman walks behind the heroes, solving what swords cannot, his quiet competence the real magic in a world that fetishizes flash.',
+        'Construye una gramática toolbox-quest reusable donde cualquier prompt gane oficio, cuidado técnico y eficacia narrativa sin exigir utilería, grupo, locación peligrosa o situación de reparación literal.',
     },
   },
   {
@@ -179,24 +178,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Child-king underdog fantasy, soft storybook lines, giant emotional sincerity, fairy-tale castles and bodily vulnerability transformed into heroic grace',
+        'Cuento vulnerable de coraje moral, con ternura gráfica, simplicidad fábula y dignidad emocional.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Trazo storybook suave, proporciones amables, espacios amplios y contraste afectivo de escala.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Celeste claro, amarillo mantequilla, rojo corona, verde prado y gris piedra amable.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz de cuento diurna, halos cálidos de inocencia y sombras blandas de drama emocional.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Papel ilustrado, pigmento mate, tejido ligero, piedra simple y madera amable en clave no literal.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Narrativa visual emotiva de alta claridad gestual con estilo de fábula moderna.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Innocent, moving, brave, storybook',
+        'Monumentalidad suave, figura vulnerable por escala relativa y aire narrativo de página abierta.',
+      atmosphere: 'Inocente, valiente y conmovedora.',
       key_features:
-        'Storybook castle forms, tiny-hero scale contrast, crown motifs, emotional gesture clarity, fairy-tale silhouettes',
+        'Ternura storybook, corona como motivo gráfico, escala afectiva, inocencia cromática y coraje visible.',
       creative_brief:
-        'A crown too large for a small head sits steady on courage that fills the space where strength could not reach. Storybook lines draw castles with the tenderness of bedtime illustrations, a tiny king moving through fairy-tale halls where vulnerability is not weakness but the highest form of bravery.',
+        'Define una gramática storybook-crown reusable donde cualquier prompt se vuelva tierno, monumental y moralmente valiente mediante escala afectiva, línea simple y color de fábula sin fijar institución, rango o ceremonia.',
     },
   },
   {
@@ -207,24 +206,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bright fantasy party with desserts, polished town squares, cute teamwork, soft comedy, banquet abundance and colorful adventure rendered with candy-clean appeal',
+        'Fantasía pastel de convivencia alegre, con banquet como ancla sensorial, comedia suave y luz de celebración.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Siluetas cute limpias, agrupación amable, curvas dulces y composición horizontal de abundancia compartida.',
+      color_palette: 'Rosa crema, azul caramelo, melocotón, verde menta y dorado postre.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz alta festiva, rebote cálido y acentos brillantes que convierten bordes y ornamentos en dulzor visual.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Glaseado, pan suave, cerámica brillante, tela colorida y superficies pulidas sin locación obligatoria.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Acabado candy-clean con legibilidad de ensemble y tono celebratorio continuo.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Cheerful, tasty, friendly, polished',
+        'Densidad amable, profundidad de convivencia y ritmo horizontal que deja respirar cada forma.',
+      atmosphere: 'Alegre, acogedora y deliciosa.',
       key_features:
-        'Banquet spreads, polished town plazas, cute party staging, candy-fantasy color, soft comedic expressions',
+        'Colorimetría de postre, abundancia pastel, comedia suave, brillo candy-clean y camaradería luminosa.',
       creative_brief:
-        'Every quest ends at a banquet table where dessert outranks treasure and polished town squares host the real victory: friendship served in candy-clean pastels. The party that fights together feasts together, their camaraderie the sweetest loot in a world painted with the colors of shared joy.',
+        'Construye una gramática banquet-quest-pastel reusable donde cualquier prompt gane alegría compartida, dulzor cromático y acabado candy-clean sin exigir reunión, locación pública o escena culinaria fija.',
     },
   },
   {
@@ -235,24 +233,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Floating interface magic, sword-forward exploration, game-like fantasy vistas, digital heroism, Aincrad floating castle, health-bar UI motifs, dual-wielding Kirito, floor-boss raids',
+        'Glowing VR fantasy, with interface-light magic, virtual romance, polished heroism, and visceral digital immersion.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Clean fantasy contours, translucent HUD arcs, thin luminous trim, modular edge highlights, and readable action silhouettes.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Sky sapphire, interface cyan, warm amber courage, emerald status glow, white bloom, and deep virtual blue.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Diegetic UI glow, atmospheric depth haze, soft rim auras, and crystalline light planes.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Glassy overlays, polished cel surfaces, pixel-fine particles, synthetic fabric sheen, and luminous edge bloom.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Expansive digital-fantasy anime polish with high clarity, clean compositing, and romantic virtual scale.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, virtual, epic, romantic',
+        'Layered interface depth, suspended panels, and horizon expansion that makes space feel software-shaped.',
+      atmosphere: 'Adventurous, virtual, epic, romantic.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Interface constellations, virtual glow, clean adventure polish, synthetic depth, emotional immersion.',
       creative_brief:
-        'A floating castle made of code and longing, where sword skill menus hover like constellations and every floor is a new sky to conquer. Digital heroism wears the face of a boy who just wanted to log out but found a reason to stay. Make the virtual feel visceral — interface elements as natural as breath, combat as intimate as conversation.',
+        'Make any prompt feel like fantasy translated through a beautiful virtual system: UI light should behave like atmosphere, digital edges should feel tactile, and heroic scale should come from immersion rather than fixed game locations or named characters.',
     },
   },
   {
@@ -263,24 +261,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Repeating fate, ornate fantasy streets, emotional collapse, dread beneath beauty, return-by-death loop, silver-haired Emilia, witch-cult mansion, white-whale battle',
+        'Reset-loop dark fantasy, with ornate beauty under dread, emotional collapse, and recursive fate pressure.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Elegant fantasy contouring interrupted by spiral repeats, stress-fracture accents, and tightening visual rhythms.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Beautiful surface glow with dread below it, cold rim halos, looping highlight echoes, and suffocating low contrast.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'High-polish fantasy anime with psychological tension, delicate detail, and controlled emotional breakdown.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Anxious, tragic, harrowing, relentless',
+        'Spiral compression, deja-vu repetition, and ornamental depth that seems to close inward.',
+      atmosphere: 'Anxious, tragic, harrowing, relentless.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Recursive fate, beauty-as-pressure, spiral dread, fragile hope, ornate emotional collapse.',
       creative_brief:
-        "Fate rewinds while the horror stays fresh — a cobblestone street in the witch's hour holds the echo of every death that already happened and hasn't happened yet. Ornate beauty is the wallpaper over a room where hope keeps bleeding out. The loop tightens; make the viewer feel the vertigo of standing at the center of a spiral.",
+        'Treat any prompt as trapped inside beautiful repetition: use spiral composition, delicate ornament, cold glow, and emotional pressure to imply a reset-loop without literal locations, antagonists, set pieces, or named characters.',
     },
   },
   {
@@ -291,24 +289,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Grand travel fantasy, layered magic systems, rich cultures, road-journey curiosity, reincarnation-baby start, demon-continent journey, Roxy-master mage, mana-catastrophe',
+        'Wandering mage chronicle style, with patient world texture, learned magic, natural wonder, and mature travel curiosity.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Soft fantasy linework, practical ornament, maplike flow lines, layered detail zones, and calm exploratory rhythm.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Weathered sky blue, warm ochre, moss green, parchment cream, mineral violet, and soft mana glow.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Long-horizon daylight, warm ambient bounce, gentle spell glows, and atmospheric depth that feels lived-in.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Parchment grain, woven cloth, weathered leather, mineral dust, soft magic particles, and hand-painted terrain color.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Expansive but intimate fantasy anime polish with rich cultural texture and curiosity-first clarity.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Curious, expansive, wondrous, immersive',
+        'Maplike expansion, slow parallax depth, and open composition that rewards looking around.',
+      atmosphere: 'Curious, expansive, wondrous, immersive.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Learned magic, lived-in texture, journey-as-growth, soft horizon depth, world curiosity.',
       creative_brief:
-        "A continent unfolds beneath walking feet — every horizon is a question, every village a lesson, every spell a muscle earned through failure and stubborn wonder. Magic isn't spectacle; it's geography, as natural and varied as the terrain it flows through. Paint the journey like a map that redraws itself with each step.",
+        'Render any subject as part of a patient magical chronicle: magic should feel studied and geographic, surfaces should look traveled, and wonder should come from accumulated detail rather than a canonical itinerary or event.',
     },
   },
   {
@@ -319,24 +317,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dysfunctional adventuring party, ridiculous spells, bright town chaos, parody energy, aqua-goddess uselessness, explosion-obsession daily, steal-panties skill, succubus dreams',
+        'Party-quest comedy style, with bright parody fantasy, theatrical incompetence, overblown magic timing, and joyful failure.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Bouncy contours, exaggerated reaction shapes, clean fantasy trims, comedic pose beats, and elastic timing accents.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm tavern-amber notes.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast for punchline timing.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Polished cel surfaces, fluffy effect puffs, glossy magical sparks, soft cloth color, and bright comedic overlays.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Clean comedy-fantasy anime finish with expressive timing, readable silhouettes, and charming controlled chaos.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Comedic, chaotic, irreverent, satirical',
+        'Small perspective exaggerations, reaction zooms, and anticlimax framing that undercuts epic scale.',
+      atmosphere: 'Comedic, chaotic, irreverent, satirical.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Parody brightness, elastic failure, gag-timed magic, cheerful disorder, anticlimax composition.',
       creative_brief:
-        'Divine power trips over its own feet while a wizard collapses from casting exactly one spell — the epic quest is a train wreck, and every car is beautiful. Bright colors mock the seriousness of fantasy convention; the guild hall is a comedy club where the punchlines have hit points. Let the chaos feel joyfully, relentlessly inept.',
+        'Apply fantasy parody as a visual treatment: make any prompt bright, theatrical, and joyfully inept through gag timing, saturated clarity, and anticlimax composition without requiring a fixed group, place, or gag scene.',
     },
   },
   {
@@ -347,24 +345,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Friendly creatures, city-building optimism, polished fantasy diversity, bright world design, rimuru-slime form, tempest-nation founding, goblin-village evolution, monster-diplomacy',
+        'Monster-nation bright fantasy, with diplomatic optimism, polished diversity, cooperative growth, and sun-washed worldbuilding.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Rounded approachable contours, clean fantasy trims, civic pattern rhythm, soft power silhouettes, and modular growth shapes.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Slime blue, spring green, warm gold, soft stone gray, sky cyan, and celebratory banner reds.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Friendly daylight, optimistic rim glow, sparkling civic highlights, and gentle magical bounce.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Glossy gel accents, clean timber grain, polished stone, cloth banners, soft particles, and bright settlement polish.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Upbeat fantasy anime finish with high readability, communal detail, and constantly improving world texture.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Upbeat, communal, optimistic, vibrant',
+        'Expanding modular composition, cooperative scale layering, and open civic depth without fixed architecture.',
+      atmosphere: 'Upbeat, communal, optimistic, vibrant.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Cooperative brightness, civic fantasy polish, friendly diversity, growth motifs, diplomatic warmth.',
       creative_brief:
-        "A gelatinous creature builds a civilization in the space between monster and diplomat, between dungeon-born and nation-founder. Brightness is the aesthetic of optimism — every new alliance painted in sun-washed color, every village upgrade a brushstroke of collective hope. Make the world feel like it's constantly becoming, always under construction, forever improving.",
+        'Make any prompt feel like optimistic fantasy nation-building: emphasize cooperative brightness, rounded friendliness, and constructive growth without requiring a specific species, settlement, alliance, or ruler.',
     },
   },
   {
@@ -375,108 +373,107 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Underground labyrinth quests, glowing crystals, lively guild culture, mythic ascent, bell-cranel growth, dungeon-floor levels, hestia-knife gift, familia-faction politics',
+        'Dungeon-lantern adventure style, with luminous aspiration, layered depth, mythic growth, and warm light against unknown dark.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Upward-leading contours, lanternlike glow halos, tiered depth bands, clean fantasy detail, and heroic small-scale emphasis.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Lantern gold, crystal blue, deep cavern teal, warm leather brown, divine white, and hopeful rose accents.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Portable warm glow, crystalline bounce, darkness-to-light gradients, and vertical rays that imply ascent.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Faceted crystal shimmer, rough mineral grain, worn cloth, soft leather, and luminous dust.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Luminous fantasy anime polish with aspirational clarity, readable depth, and gentle mythic sparkle.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, luminous, mythic, aspirational',
+        'Layered descent-as-ascent geometry, vertical pull, and darkness shaped by warm focal light.',
+      atmosphere: 'Adventurous, luminous, mythic, aspirational.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Lantern warmth, crystal depth, aspirational darkness, vertical growth, mythic smallness.',
       creative_brief:
-        'Lantern light carves stories into dungeon walls — every crystal glow reveals another layer of the labyrinth, another rung on the ladder toward the divine. Guild halls hum with the mythology of ordinary adventurers betting everything on one more floor. Make the underground feel like ascension, darkness as the raw material of legend.',
+        'Make any prompt feel like light earning its way upward: use warm focal glow, mineral sparkle, and layered darkness to imply aspiration without requiring a fixed underground location, faction system, or specific artifact.',
     },
   },
   {
     id: 'SP05-241',
-    name: 'Log Horizon - Strategy Guild City',
+    name: 'Systemic Cooperation Grid Style',
     category: '8. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'MMO civilization after the log-in, guild politics, plaza meetings, tactical worldbuilding, glass-and-stone fantasy city life organized around systems and cooperation',
+        'Fantasía sistémica de cooperación visible, política social abstracta, administración luminosa y mundo legible como infraestructura cultural.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Retículas ordenadas, siluetas funcionales claras, linework táctico de interfaz diegética y composición coral modular.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Azul acero urbano, verde esmeralda administrativo, ámbar cálido de taberna y acentos cian de UI arcana.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz administrativa clara, tungsteno suave y superposición luminosa de ventanas de sistema.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Piedra pulida, madera tabular, pergamino abstracto, metal de emblema y tela funcional.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía de alta legibilidad estratégica, con composición coral y claridad de roles visuales.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Strategic, communal, thoughtful, adventurous',
+        'Escala comunitaria horizontal, jerarquía visual por módulos y profundidad orientada a mapa social.',
+      atmosphere: 'Comunal, analítica y esperanzada, de sistema que aprende a autogobernarse.',
       key_features:
-        'Guild emblems, city-plaza staging, party-role clarity, system-overlay hints, collaborative ensemble framing',
+        'Emblemas abstractos, nodos de negociación, pizarras de sistema y staging colaborativo modular.',
       creative_brief:
-        'A glass-and-stone city reorganizes around guild emblems and plaza diplomacy, where the game became the world and strategy became survival. Cooperation is architecture, knowledge is infrastructure. The after-login civilization builds itself one meeting, one contract, one shared meal at a time.',
+        'Define una gramática cooperation-grid reusable donde infraestructura social, estética de sistema y cooperación visible articulen identidad sin instituciones nombradas, nodos cívicos fijos, tableros de misión, escuadras o urbe concreta.',
     },
   },
   {
     id: 'SP05-242',
-    name: 'Grimgar - Smoke and Mud Underdog Party',
+    name: 'Smoke-Mud Vulnerability Style',
     category: '8. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Low-level adventurers in a damp fantasy world, debt and fear, smoky campfires, hesitant teamwork, grounded monster hunting and fragile grief',
+        'Fantasía precaria marcada por vulnerabilidad, duelo íntimo, colaboración temblorosa y supervivencia sin épica grandilocuente.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Siluetas contenidas, postura defensiva, distancia emocional visible y lectura de movimiento cauteloso.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Marrón humo, gris barro, verde apagado, naranja tenue de fogata y azul noche húmeda.',
+      lighting_setup: 'Luz débil y cálida, niebla baja, sombras largas y ambiente frío hostil.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Cuero remendado, tela mojada, metal sin pulir, barro adherido y desgaste acumulado en equipo improvisado.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Realismo anime sobrio con foco en vulnerabilidad corporal y narrativa de pérdidas pequeñas.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Humble, smoky, vulnerable, earnest',
+        'Escala humana reducida, encuadres cerrados y profundidad incierta por niebla y textura vegetal abstracta.',
+      atmosphere: 'Frágil, humilde y sincera, con miedo persistente y lealtad emergente.',
       key_features:
-        'Campfire staging, patched equipment, fearful party spacing, muddy paths, low-level survival details',
+        'Luz mínima, protección parchada, barro, formación insegura y vulnerabilidad corporal.',
       creative_brief:
-        'Smoke curls from a campfire too small to chase the fear away, and patched armor tells stories no epic would remember. A party of underdogs kills one goblin and grieves like it was a king. Fantasy has a smell here—damp wool, iron, hesitation.',
+        'Construye una gramática smoke-and-mud reusable donde materialidad precaria, luz pobre y colaboración temblorosa expresen crecimiento sin grupo fijo, asentamiento temporal, entorno natural fijo, rutas, roles de equipo o situación narrativa obligatoria.',
     },
   },
   {
     id: 'SP05-243',
-    name: 'Record of Lodoss War - OVA Quest Tapestry',
+    name: 'Classic OVA Quest Tapestry Style',
     category: '8. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Classic OVA fantasy grandeur, shining armor, party-lined adventure posters, elves and dragons under painterly skies, pure tabletop fantasy sincerity',
+        'Grandilocuencia OVA de fantasy clásico, sinceridad tabletop, nobleza heroica y aventura coral como composición atemporal.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Contorno elegante tradicional, ornamento clásico visible, composición frontal tipo tapiz y jerarquía coral.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Zafiro profundo, oro heráldico, rojo estandarte, marfil de pergamino y verde épico.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Fondo pictórico luminoso, key cálido de amanecer abstracto y rim heroico en superficies pulidas.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Malla decorativa, textiles bordados, piedra antigua, cuero noble y escamas ornamentales.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Acabado clásico de fantasía ilustrada con lectura mítica y belleza de cuadro aventurero.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Noble, mythic, classic, adventurous',
+        'Escala heroica tradicional, profundidad amplia y staging de formación coral.',
+      atmosphere: 'Mítica, noble y aspiracional, con pureza de aventura antigua.',
       key_features:
-        'Party-quest formations, painterly fantasy skies, shining armor, dragon-scale worldbuilding, OVA-era grandeur',
+        'Formación coral, brillo noble, fondos pintados, tapiz épico y códigos visuales de aventura clásica.',
       creative_brief:
-        'Shining armor catches the light of a painterly sky as party-line adventurers stride through tapestry-born quests. Every elf, every dragon, every clanking paladin is rendered with the sincerity of a D&D session believed in completely. The OVA era never stopped dreaming in jewel tones.',
+        'Define una gramática OVA-quest reusable donde ornamento clásico, composición coral y romanticismo aventurero conserven épica sincera sin grupo fijo, protección obligatoria, paisaje concreto, campaña o misión narrativa.',
     },
   },
   {
@@ -487,24 +484,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'East Asian court-fantasy worldbuilding, beast envoys, throne-room mandate, wandering exile becoming sovereign, dense political mythology and spiritual weight',
+        'Fantasía cortesana de mandato celeste, legitimidad ritual, exilio interior y densidad político-espiritual como presión visual.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Siluetas ceremoniales, pliegues autoritarios, ejes verticales de poder, ornamento sobrio y contorno de destino impuesto.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Verde jade, rojo cinabrio, dorado imperial, negro tinta y azul niebla ceremonial.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz solemne de autoridad, contraluz ritual y brillos selectivos sobre símbolos de legitimidad.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Seda pesada, laca ceremonial, piedra pulida, ornamento broncíneo y talismanes abstractos.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Drama de alta fantasía político-mítica con lectura jerárquica clara y peso ceremonial.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Regal, mythic, searching, fated',
+        'Verticalidad de poder, horizontalidad de tránsito interior, simetría protocolar y distancia jerárquica.',
+      atmosphere: 'Regia, fatal y reflexiva, atravesada por destino y deber.',
       key_features:
-        'Imperial robes, beast envoy motifs, throne-room scale, wandering-road contrast, mythology-rich props',
+        'Protocolo ritual, jade y cinabrio, legitimidad visual, distancia jerárquica y transformación de exilio en autoridad.',
       creative_brief:
-        'Imperial robes trail across throne-room stone while beast envoys whisper mandates from a heaven that chose an exile for a crown. Sovereignty is not seized but survived—a wandering road that ends in duty. The spiritual weight of a kingdom presses through silk and silence.',
+        'Construye una gramática imperial-destiny reusable donde protocolo, mandato, jade/cinabrio, simetría y distancia jerárquica transformen cualquier sujeto en drama de autoridad, sin exigir institución, objeto, rol o tránsito narrativo específico.',
     },
   },
   {
@@ -515,24 +512,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Prophetic romance, knight armor, giant dragon mechs, red skies and courtly longing, 90s fantasy-shojo hybridity with wind-swept pageantry',
+        'Profecía romántica ventosa, fatalismo adivinatorio, melancolía carmín y contraste entre curva shōjo y geometría épica.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Curvas emocionales, diagonales de viento, ornamento arcano, contrapunto angular y poses teatrales de destino.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Carmín crepuscular, azul viento, dorado arcano, plata fría y violeta profético.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Backlight ventoso, glow místico facetado y key dramático de tensión sentimental.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Tela batida por viento, metal pulido abstracto, piedra ceremonial, brillo adivinatorio y humo atmosférico.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía romántica de alto dramatismo con fusión legible de épica mecha y sensibilidad shōjo.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Windswept, romantic, mystical, heroic',
+        'Profundidad por corrientes de viento, diagonales de destino, tensión entre curvas suaves y masas angulares.',
+      atmosphere: 'Ventosa, mística y apasionada, con tensión entre amor y guerra.',
       key_features:
-        'Tarot symbolism, wind-swept capes, knight-mecha contrast, red-sky horizons, courtly emotional poses',
+        'Simbolismo adivinatorio, ráfagas diagonales, contraste shōjo-angular, plata arcana y mirada predestinada.',
       creative_brief:
-        'Red skies meet wind-swept capes and a dragon mech kneels before a girl who holds the tarot deck of fate. Prophetic romance rides the jet stream between shojo heartbreak and shonen valor. Every frame is a card turned, every glance a destiny unfolding.',
+        'Define una gramática windblown-prophecy reusable donde romance fatalista, iconografía adivinatoria, viento y contraste angular construyan épica emotiva transferible, sin fijar rol, artefacto, conflicto o vínculo narrativo específico.',
     },
   },
   {
@@ -543,24 +540,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Arabian Nights adventure with bright jewel magic, bustling bazaars, dungeon towers, friendship and empire intrigue rendered through warm fantasy color',
+        'Aventura ornamental cálida, magia joya, tensión comercio-autoridad y fantasía móvil como saturación decorativa.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Ornamento arabesco dinámico, verticales laberínticas abstractas, curvas itinerantes y lectura épica por capas.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Ámbar cálido, turquesa brillante, rojo granate, verde esmeralda y azul noche ornamental.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Sol cálido, luces colgantes abstractas y destellos mágicos facetados tipo gema.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Tejidos bordados, latón trabajado, piedra caliza, polvo cálido y cristal encantado.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía saturada de aventura móvil con riqueza decorativa y claridad narrativa de expedición.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Colorful, adventurous, magical, expansive',
+        'Profundidad por capas ornamentales, verticalidad laberíntica, diagonales de viaje y escala fabulística.',
+      atmosphere: 'Colorida, expansiva y enérgica, de descubrimiento continuo.',
       key_features:
-        'Bazaar detail, jewel magic, dungeon towers, caravan silhouettes, empire-versus-friendship staging',
+        'Arabescos dinámicos, gemas facetadas, ámbar-turquesa, verticalidad laberíntica y tensión comercio-autoridad.',
       creative_brief:
-        'Bazaar spices and jewel magic swirl through labyrinth-carved kingdoms where friendship dares to challenge empire. Caravan silhouettes cut across golden horizons; every dungeon conquered is a conversation between courage and greed. Arabian Nights meets shonen fire in warm, saturated adventure.',
+        'Construye una gramática labyrinth-caravan reusable donde ornamentación, cromática cálida y magia gema articulen fábula comercial y política sin exigir locación, transporte, ruta, bioma o arquitectura narrativa específica.',
     },
   },
   {
@@ -571,24 +568,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Frailty and obsession in a medieval city, books as holy technology, artisan workshops, ink-stained determination, domestic fantasy transformed by literacy and craft',
+        'Fantasía artesanal de conocimiento emergente, fragilidad íntima, obsesión material por el libro y tecnología transformadora.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Escala pequeña, detalle manual, lenguaje visual centrado en oficio, proceso, paciencia y acumulación de pasos.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Sepia pergamino, azul tinta, marrón madera, crema papel y rojo cera de sello.',
+      lighting_setup: 'Luz suave de lectura, lámpara cálida y contraste bajo de espacio artesanal.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Vellum, pulpa de papel, madera prensada, metal tipográfico y manchas de tinta en tela.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Narrativa íntima de craft medieval con precisión material y foco en innovación cotidiana.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Studious, tender, artisanal, determined',
+        'Escala concentrada, composición por proceso manual y profundidad de oficio paciente.',
+      atmosphere: 'Estudiosa, tierna y obstinada, con fervor por la lectura.',
       key_features:
-        'Paper-and-ink props, workshop interiors, small protagonist contrast, guild-craft details, devotion to books made visual',
+        'Tinta y papel, materialidad de libro, proceso artesanal, voluntad férrea y progreso silencioso.',
       creative_brief:
-        'Ink-stained fingers press paper into being as literacy becomes the strangest magic a medieval city has ever witnessed. A frail girl bends an entire economy toward the holy technology of books. Devotion smells of vellum, ink, and the stubborn refusal to die before finishing the next page.',
+        'Define una gramática printing-devotion reusable donde materialidad del libro, labor artesanal y progreso silencioso conviertan cualquier sujeto en motor visual de conocimiento, sin espacio de trabajo fijo, herramientas concretas, organización artesanal o fragilidad corporal obligatoria.',
     },
   },
   {
@@ -599,24 +595,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Solemn undead guardians, quiet vows, old temples, righteous adventure without irony, dawn-lit armor and spiritual apprenticeship in a lonely fantasy world',
+        'Espiritualidad sobria, mentoría ritual, heroísmo devocional sin cinismo y solemnidad ética de alto fantasy.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Postura de voto, líneas de peregrinaje abstractas, siluetas protectoras y verticalidad de juramento.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Oro alba, azul oración, gris piedra ancestral, blanco juramento y verde de santuario antiguo.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Amanecer litúrgico, shafts verticales y halo moderado sobre símbolos sagrados.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo antiguo.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía devocional de gran claridad ética, con equilibrio entre épica y contemplación religiosa.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Solemn, devout, hopeful, old-world',
+        'Profundidad sagrada, horizonte de tránsito interior y eje vertical de trascendencia.',
+      atmosphere: 'Solemne, esperanzada y piadosa, de camino interior y exterior.',
       key_features:
-        'Temple stonework, guardian silhouettes, dawn-lit armor, vow-centered posing, pilgrimage-road compositions',
+        'Juramento visualizado, oro alba, piedra sagrada, tránsito moral y heroísmo contemplativo.',
       creative_brief:
-        'Dawn light catches armor in an old temple where undead guardians teach the living how to swear oaths that outlast death. Righteousness has no irony here—just stone walls, quiet vows, and a paladin walking toward a horizon that believes in him. Faith is a pilgrimage taken alone but never unaccompanied.',
+        'Construye una gramática quiet-paladin reusable donde rito, deber y monumentalidad sagrada expresen aprendizaje moral sin forzar edificio ritual, protectores, armamento, ruta, rol literal o aventura concreta.',
     },
   },
   {
@@ -627,24 +623,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Adult heroine competence, herbal labs, court politeness, soothing green magic, restrained romance and workplace fantasy healing rendered with poised elegance',
+        'Healing-fantasy adulta, con pulcritud profesional, serenidad botánica y refinamiento institucional.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Trazo limpio, contornos serenos, gestos medidos y ornamentación funcional de cuidado experto.',
+      color_palette: 'Verde botánico, marfil clínico, dorado tenue y azul pastel de calma mágica.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz difusa de invernadero abstracto, reflejos suaves y bloom curativo de baja agresividad.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Vidrio translúcido, papel fino, seda sobria, fibras vegetales y superficies cuidadosamente preparadas.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía terapéutica de alta pulcritud, con autoridad tranquila y claridad de proceso visual.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Calm, capable, luminous, graceful',
+        'Orden compositivo por capas, respiración limpia y jerarquías suaves de preparación y cuidado.',
+      atmosphere: 'Calmada, luminosa y competente.',
       key_features:
-        'Herbal-lab props, court costume detail, gentle magic bloom, composed heroine posture, workplace-fantasy warmth',
+        'Verde sanador, brillo clínico suave, cortesía formal, detalle botánico y compostura adulta.',
       creative_brief:
-        "Green magic rises from herbarium vials like answered prayer, the saint's power resting not in spectacle but in the quiet confidence of a woman who knows her worth. Courtly restraint frames every gesture, proving that the most potent sorcery wears a composed smile and steady hands.",
+        'Define una gramática herbarium-court reusable donde cualquier prompt se refine mediante calma botánica, pulcritud curativa y luz institucional sin obligar una escena profesional, palaciega o medicinal literal.',
     },
   },
   {
@@ -655,24 +650,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Book-portal romance fantasy, celestial symbols, guardian warriors, earnest devotion, soft 90s magical drama and travel-heavy emotional stakes',
+        'Melodrama romántico celestial, con destino brillante, ornamento astral y sensibilidad noventera luminosa.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
-      color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Contorno suave emocional, símbolos astrales recurrentes y composición guiada por vínculos afectivos.',
+      color_palette: 'Rosa cósmico, azul estrella, oro constelar, blanco papel y violeta destino.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Halos celestes, bloom difuso y luz dramática que sugiere tránsito emocional más que lugar fijo.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Blanco fibroso, tejido ritual abstracto, ornamento metálico fino y partículas de constelación.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía de romance épico con claridad sentimental, brillo editorial y aventura por capítulos.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Fated, romantic, bright, dramatic',
+        'Pliegues dimensionales, marcos luminosos no literales y profundidad de tránsito afectivo.',
+      atmosphere: 'Predestinada, brillante y emotiva.',
       key_features:
-        'Celestial motifs, guardian ensemble, portal iconography, travel-costume detail, soft dramatic glances',
+        'Simbología astral, devoción cromática, brillo de destino, melodrama limpio y ornamento constelar.',
       creative_brief:
-        'A book opens and the world tilts sideways, ink becoming sky and stars rearranging into warriors sworn by celestial oath. Romance blooms in the space between pages, where earnest devotion outshines any constellation and the journey home is measured in heartbeats, not miles.',
+        'Construye una gramática celestial-portal reusable donde cualquier prompt se vuelva romántico, astral y predestinado mediante halos, constelaciones y melodrama gráfico sin fijar composición de tránsito o elenco narrativo.',
     },
   },
   {
@@ -683,24 +677,23 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rescue fantasy with armor, giant summons, rune-powered machinery, candy-bright courage and mystical quest framing for a heroic team of girls',
+        'Heroísmo magical-knight de alto brillo, con energía cooperativa, runas tecnomísticas y valentía cromática.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Siluetas diferenciadas por color, ornamentación rúnica angular y líneas ascendentes de impulso coral.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
-      lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Rojo rubí, azul cobalto, verde esmeralda, dorado mágico y blanco de energía invocada.',
+      lighting_setup: 'Emisión rúnica, flare joya y key vibrante de aventura luminosa.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Metal encantado, tela ceremonial, mineral pulido y superficies lumínicas de energía geométrica.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasy-team abstracto de acabado brillante, con roles cromáticos y épica juvenil cooperativa.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Brave, bright, enchanted, team-driven',
+        'Contraste de escala sugerido, composición ascendente y expansión energética sin entidad obligatoria.',
+      atmosphere: 'Valiente, luminosa y solidaria.',
       key_features:
-        'Rune magic, armor accents, giant summon silhouettes, quest-team posing, jewel-bright backgrounds',
+        'Runas activas, colorimetría joya, impulso ascendente, cooperación gráfica y brillo tecnomístico.',
       creative_brief:
-        'Three girls become knights become legends, their armor blooming from rune-light like petals from enchanted ore. Giant summons cast shadows across jewel-bright worlds where the rescue mission is also a becoming, courage reforged with every step toward the one who must be saved.',
+        'Define una gramática gem-engine-rescue reusable donde cualquier prompt gane claridad heroica mediante cromas joya, runas energéticas y sensación de cooperación sin fijar roles, vestuario, entidades o evento narrativo.',
     },
   },
   {
@@ -711,24 +704,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Candy-neon fantasy grids, game logic theatrics, saturated competition, surreal confidence, disboard world rules, chess-piece territory, Shiro-Sora siblings, chibi-art shifts',
+        'Hyper-saturated strategy fantasy, with candy-neon logic, theatrical confidence, impossible geometry, and gameboard reality.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical gesture rhythm.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberately excessive bloom.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Glossy cel polish, glassy game surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Strategic, dazzling, hyper, confident',
+        'Boardlike planes, impossible perspective folds, floating rule geometry, and controlled chibi-scale elasticity.',
+      atmosphere: 'Strategic, dazzling, hyper, confident.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater, impossible polish.',
       creative_brief:
-        "Neon grids burn under a sky that never heard of moderation — color saturation pushed past the point of physics, game-board geometries bleeding into reality's floor plan. Strategy is spectacle; the chess piece lands and the world blooms in response. Reject the possible in favor of the dazzling, the excessive, the mathematically impossible made visually undeniable.",
+        'Convert any prompt into a dazzling strategy space: color should exceed physics, geometry should imply rules, and every surface should feel like a confident move without requiring literal game props, cast, or scene.',
     },
   },
   {
@@ -739,24 +732,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Military bureaucracy and high-altitude spell warfare, trench maps and gemstone computation, ruthless child officer commanding impossible destruction in a pseudo-European war',
+        'Doctrina arcana austero-imperial, con cálculo frío, jerarquía visual y tensión estratégica abstracta.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Geometría de mando, vectores diagonales, anillos técnicos y siluetas comprimidas por disciplina visual.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Gris acero, rojo mandato, azul glaciar, negro tinta de expediente y ámbar cristalino de cálculo.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Contraluz estratificado, brillos fríos de precisión y destellos duros colocados como marcas de decisión.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Paño mate, cuero oscuro, metal bruñido, papel cartográfico abstracto y cristal facetado de energía contenida.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Anime táctico de alta precisión, con orden visual severo y poder expresado por control compositivo.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Severe, tactical, aerial, merciless',
+        'Verticalidad opresiva, compresión jerárquica y diagonales de presión que organizan cualquier sujeto.',
+      atmosphere: 'Severa, calculadora e implacable.',
       key_features:
-        'Aerial magic circles, military map props, child-officer contrast, war-cloud skies, tactical command poses',
+        'Vectores arcanos, burocracia visual, precisión geométrica, disciplina cromática y presión vertical.',
       creative_brief:
-        'Cold calculus meets divine incantation at ten thousand feet, where a child-officer computes destruction through gemstone logic and aerial sigils. The contradiction lives in every frame: innocence wielding annihilation, bureaucracy dressed in magical radiance, war-clouds parting for the geometry of absolute command.',
+        'Define una gramática aerial-war-doctrine reusable donde cualquier prompt se vuelva severo, jerárquico y táctico mediante geometría fría, luz de cálculo y sensación de poder administrado.',
     },
   },
   {
@@ -767,24 +760,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Skeletal regality, giant tomb halls, dread authority, ornate villain fantasy, Nazarick tomb guardians, Ainz-ooal-gown guild, death-knight armies, world-item relics',
+        'Bone-throne dark dominion, with ornate villain regality, cathedral dread, absolute hierarchy, and frozen authority.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Massive vertical symmetry, baroque contour density, crownlike negative space, severe silhouettes, and ceremonial stillness.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Bone ivory, royal black, grave violet, antique gold, cold emerald, and deep crimson authority.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Low underglow, throne-like backlight, cathedral shadow shafts, and hard rim halos around dominant forms.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Carved bone texture, polished black stone, heavy velvet darkness, tarnished gold, and cold magical dust.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Grand dark-fantasy anime polish with ornate detail, oppressive scale, and absolute compositional control.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Dominant, sinister, grandiose, foreboding',
+        'Monumental centrality, vertical dread, and symmetrical pressure that makes any subject feel enthroned.',
+      atmosphere: 'Dominant, sinister, grandiose, foreboding.',
       key_features:
-        'Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum',
+        'Skeletal regality, cathedral shadow, imperial stillness, ornate dread, absolute hierarchy.',
       creative_brief:
-        'A throne made of bone and absolute solitude, deep inside a tomb the size of a nation, where loyalty is absolute and humanity is a memory long archived. Ornate darkness drapes every corridor — the architecture of dread refined into cathedral precision. Reign from the stillness at the center of an empire where the dead outnumber the living by design.',
+        'Render any prompt with dark dominion authority: use bone-ivory contrast, baroque symmetry, cold magical dust, and oppressive stillness without requiring a literal seat of power, faction, army, or named ruler.',
     },
   },
   {
@@ -795,24 +788,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'English-cottage occult romance, horned mage mystery, fairy folklore, moss and bone, tea and terror coexisting in lush magical domesticity',
+        'Romance ocultista doméstico, ternura ritual, extrañeza feérica, hueso/musgo como materialidad y misterio afectivo.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Contorno delicado de cuento gótico, curvas botánicas, siluetas extrañas abstractas y detalle íntimo de rito cotidiano.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Verde musgo, crema té, marrón madera húmeda, negro hueso y dorado tenue de lámpara.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Luz de atardecer filtrada, velas bajas y brillos mágicos discretos de escala íntima.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Piedra húmeda, madera antigua, porcelana, pergamino arcano y fibras vegetales vivas.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Fantasía íntima de alta atmósfera con microdetalle doméstico y pulsación sobrenatural sutil.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Enchanted, lonely, mossy, intimate',
+        'Acogimiento comprimido, profundidad íntima, escala humana y foco suave sobre ritualidad cotidiana.',
+      atmosphere: 'Encantada, melancólica y cálida, con inquietud amorosa latente.',
       key_features:
-        'Cottage interiors, fairy-folk props, horned mage silhouette, moss textures, magical domestic ritual',
+        'Talismán óseo abstracto, musgo, luz cálida, botánica ritual, folklore feérico y delicadeza gótica.',
       creative_brief:
-        'A thorn-hedged cottage breathes with fairies, bone charms, and the quiet terror of being loved by something ancient and horned. Tea steeps beside occult tomes; domestic magic grows in moss between stones. Enchantment is not spectacle but the creak of a floorboard at dusk.',
+        'Define una gramática thorn-cottage reusable donde domesticidad ritual, naturaleza encantada y misterio afectivo convivan con libertad de sujeto, sin exigir vivienda, interior, rol mágico, pasaje o rito literal.',
     },
   },
   {
@@ -823,24 +816,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        "Schoolgirl through the bone-eater's well, beads and claws, demon-laden forests, sacred arrows, romance and bickering on a feudal road beneath red skies",
+        'Fantasía folclórica de umbral temporal, con romance combativo, nostalgia espiritual y tensión mítica.',
       form_and_line:
-        'Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour',
+        'Contrastes de época abstractos, cortes dinámicos, gestos de persecución y bordes espirituales filosos.',
       color_palette:
-        'Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness',
+        'Rojo crepuscular, verde musgo profundo, púrpura espiritual, marfil de talismán y azul nostalgia.',
       lighting_setup:
-        'Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras',
+        'Atardecer rojizo, destellos purificadores y sombras espirituales con contraste de memoria.',
       material_texture:
-        'Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain',
+        'Fibra ritual, papel talismán, metal desgastado, tierra pigmentada y aura particulada.',
       render_quality:
-        'Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish',
+        'Aventura fantástica de largo aliento con equilibrio entre acción, comedia de fricción y melancolía.',
       spatial_distortion:
-        'Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition',
-      atmosphere: 'Adventurous, combative, nostalgic, mythic',
+        'Profundidad episódica, pliegues de tiempo y umbrales sugeridos sin locación obligatoria.',
+      atmosphere: 'Nostálgica, combativa y mítica.',
       key_features:
-        'Shrine-well iconography, demon forest backdrops, sacred-arrow poses, clawed silhouette, traveling-party dynamics',
+        'Rojo espiritual, talismán gráfico, nostalgia temporal, fricción romántica y energía folclórica.',
       creative_brief:
-        "The bone-eater's well gapes between centuries like a wound that refuses to close, a schoolgirl falling through time into a world of claw and fang and sacred arrow. Demon-laden forests rustle with nostalgia and danger in equal measure, where love and bickering share the same feudal road beneath red-tinged skies.",
+        'Construye una gramática shrine-well-feudal reusable donde cualquier prompt reciba folklore temporal, tensión romántica y aura purificadora sin exigir locación, amenaza, arma, grupo o episodio de aventura literal.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

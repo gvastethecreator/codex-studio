@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-354
 packId: pack_16
-name: MF Ghost - Smartcar Neon Apex
+name: Telemetry Apex Precision Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Street-racing tecnificado de nueva generación, orientado a telemetría, trazada óptima y precisión de frenada.
-  form_and_line: Silueta automotriz limpia, gestualidad de piloto analítica y líneas de apex de alta definición.
+  aesthetic: Performance tecnificada de nueva generación, orientada a telemetría, trazada óptima y precisión fría.
+  form_and_line: Silueta limpia, gestualidad analítica y líneas de apex abstractas de alta definición.
   color_palette: Cian digital, grises titanio, azules costeros y acentos magenta de interfaz de rendimiento.
-  lighting_setup: Iluminación costera nocturna con reflejos controlados y cues de tablero de alta legibilidad.
-  material_texture: Fibra de carbono pulida, pintura metalizada, asfalto liso de circuito abierto y vidrio de cabina técnico.
-  render_quality: Motor-performance frame premium con claridad de datos, velocidad y control fino.
-  spatial_distortion: Perspectiva de curva rápida con vector de trazada y compresión de distancia a punto de frenada.
+  lighting_setup: Iluminación nocturna con reflejos controlados y cues digitales de alta legibilidad.
+  material_texture: Fibra pulida, pintura metalizada, superficie lisa de velocidad y vidrio técnico.
+  render_quality: Performance frame premium con claridad de datos, velocidad y control fino.
+  spatial_distortion: Vector de trazada óptima y compresión de distancia hacia punto de decisión.
   atmosphere: Precisa, moderna, fría y tácticamente competitiva.
-  key_features: Línea de apex limpia, lectura telemetry-like, reflejo de costa, postura de control y tracción fina.
+  key_features: Línea de apex limpia, lectura telemetry-like, reflejo frío, postura de control y tracción fina.
   creative_brief: >-
-    Formula una gramática reusable de smart-apex-racing donde telemetría,
-    trazada y estética digital de rendimiento definan identidad visual
-    transferible.
+    Formula una gramática reusable de precisión telemetry-apex para cualquier prompt o imagen de entrada:
+    datos, trazada y control fino sin imponer autos, costa, circuito, tablero ni frenada literal.
 avoidRules:
   - realistic
   - 3d render

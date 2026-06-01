@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Live game
-  form_and_line: Score overlay
-  color_palette: Saturated turf, vivid green, team-color accents, sky blue
+  aesthetic: Live sports broadcast
+  form_and_line: Scorebug graphic structure
+  color_palette: Saturated field green, team-color accents, sky blue
   lighting_setup: Stadium lights, multi-source flood, uniform exposure
-  material_texture: HD Slow mo, Phantom camera crisp, droplet-perfect
-  render_quality: Telephoto, action, field-level compression, athlete isolation
+  material_texture: HD slow-motion crispness, droplet-perfect detail
+  render_quality: Telephoto action, field-level compression, subject isolation
   spatial_distortion: None
   atmosphere: Exciting, live, roaring crowd, championship tension
-  key_features: Scoreboard, replay wipe, telestrator circle
-  creative_brief: The roar of thousands condenses into a single frame, a frozen heartbeat torn from the chest of the game. Grass glows with impossible green under the cathedral of stadium light, every droplet of sweat a jewel in slow motion. The scoreline hovers like a verdict waiting to be overturned.
+  key_features: Scorebug feel, replay wipe, telestrator circle
+  creative_brief: 'Sports broadcast style gives any subject live-game energy: saturated field color, stadium-like floodlight, telephoto compression, replay-wipe graphics, scorebug structure, and slow-motion crispness. Keep championship tension without requiring athletes, grass, crowd, scoreboards, or teams.'
 avoidRules:
   - movie
 assets:

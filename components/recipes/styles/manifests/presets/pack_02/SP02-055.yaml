@@ -19,9 +19,9 @@ visualDna:
   material_texture: Paper fiber, watercolor paper, pulp grain
   render_quality: Blueprint, art, scientific aesthetic, photogram precision
   spatial_distortion: None
-  atmosphere: Calm, blue, botanical serenity, Victorian catalog
-  key_features: Monochrome, fern silhouette, botanical specimen
-  creative_brief: Sunlight paints in a single wavelength, turning the organic into a negative of itself across watercolor paper soaked in iron and light. Leaf veins and fern fronds become architecture rendered in fathomless blue, as methodical as a specimen drawer, as luminous as the ocean floor. The catalog of living things becomes a quiet cathedral of cyan.
+  atmosphere: Calm, blue, scientific, contemplative
+  key_features: Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash
+  creative_brief: 'Convert any input into cyanotype contact-print language: Prussian blue and paper white, UV exposure softness, watercolor paper fiber, contact shadows, and blueprint-like negative space. Avoid forcing botanical specimens or catalog scenes. The style should feel methodical, quiet, and handmade by sunlight.'
 avoidRules:
   - color
 assets:

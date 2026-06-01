@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Grounded modern-shojo intimacy grammar built on night-walk quietness, trust-increment pacing, and low-key emotional realism
+  aesthetic: Grounded modern-shojo intimacy grammar built on night quietness, trust-increment pacing, and low-key emotional realism
   form_and_line: Natural posture silhouettes, proximity-aware shoulder and hand line emphasis, soft facial contour economy, and conversational gesture readability
   color_palette: Sodium-amber streetlight tones, navy night shadows, muted denim and charcoal fashion neutrals, and warm skin highlights
-  lighting_setup: Streetlamp pool lighting, intermittent storefront reflections, cool ambient night fill, and gentle practical rim halos
-  material_texture: Cotton and knit casual-wear textures, asphalt moisture sheen, subtle phone-screen glow bounce, and soft hair movement detail
+  lighting_setup: Streetlamp-like pool lighting, intermittent practical reflections, cool ambient night fill, and gentle rim halos
+  material_texture: Cotton and knit casual-wear textures, moisture sheen, subtle screen-glow bounce, and soft hair movement detail
   render_quality: Intimate contemporary-shojo rendering with realistic tenderness pacing and uncluttered emotional focus
-  spatial_distortion: Night-street depth taper with close-proximity framing compression
+  spatial_distortion: Night-depth taper with close-proximity framing compression
   atmosphere: Intimate, cautious, warm, vulnerable
-  key_features: Night-walk lighting, modern casual outfits, protective gesture language, realistic school-date spaces, trust-building eye contact
+  key_features: Night-pool lighting, modern casual softness, protective gesture language, realistic intimate spacing, trust-building eye contact
   creative_brief: >-
     Preserve night-walk intimacy grammar as a reusable style language:
-    practical urban lighting pools, trust-building proximity cues, and simple
+    practical night lighting pools, trust-building proximity cues, and simple
     modern styling should remain coherent across subject changes.
 avoidRules:
   - realistic

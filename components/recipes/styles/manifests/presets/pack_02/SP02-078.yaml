@@ -19,9 +19,9 @@ visualDna:
   material_texture: Glowing lines, light-tube smoothness, LED ribbon
   render_quality: Creative, night, long-exposure artistry, motion-sculpture
   spatial_distortion: None
-  atmosphere: Magic, art, drawing-with-light, nocturnal play
+  atmosphere: Magic, art, drawing-with-light, nocturnal abstraction
   key_features: Trails, light ribbon, calligraphic light, motion-blur glow
-  creative_brief: Motion becomes monument when the shutter stays open to the dance of illuminated gesture. Ribbons of pure chroma carve calligraphy into the void, each trail a frozen heartbeat of movement. Darkness is the stage, not the absence, and every streak of neon is a signature written in the negative space of night.
+  creative_brief: 'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time.'
 avoidRules:
   - static light
 assets:

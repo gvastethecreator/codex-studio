@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Dreamy, soft, nostalgic',
       key_features: 'Watery texture',
       creative_brief:
-        'Pigment bleeds into water and paper becomes sky, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The result breathes with the humidity of the moment it was made, never fully dry, always becoming.',
+        'Pigment bleeds into water and paper becomes light, edges dissolving where intention meets surrender. Translucency builds depth by subtraction, each wash a whispered layer that refuses to shout. The style breathes with the humidity of the moment it was made, never fully dry, always becoming.',
     },
   },
   {
@@ -115,9 +115,11 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Bright, pure pigments, gold leaf',
       lighting_setup: 'Soft, internal glow',
       material_texture: 'Wood panel, smooth gesso',
-      render_quality: 'Historical, religious art',
-      spatial_distortion: 'Stiff poses',
-      atmosphere: 'Sacred, ancient',
+      render_quality:
+        'Historical panel-painting discipline with devotional precision but no mandatory subject',
+      spatial_distortion:
+        'Flattened icon-plane depth, deliberate frontality, and fine linear modeling',
+      atmosphere: 'Reverent, ancient, luminous through craft rather than narrative content',
       key_features: 'Fine linear brushwork',
       creative_brief:
         'Egg yolk binds pigment into luminous permanence, a medium that predates oil and outlasts empires. Fine cross-hatching builds form from patience, each translucent layer glowing from within like stained glass. The image feels sacred not through subject but through the discipline of its making.',
@@ -173,14 +175,16 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Monet style impressionism',
       form_and_line: 'Short, broken brushstrokes',
       color_palette: 'Vibrant, unblended optical mixing',
-      lighting_setup: 'Natural outdoor light',
+      lighting_setup:
+        'Perceptual light built from broken color, luminous edges, and warm-cool vibration',
       material_texture: 'Thick paint dabs',
-      render_quality: 'Artistic, plein air',
+      render_quality:
+        'Optical impressionist finish with loose local detail and high color vibration',
       spatial_distortion: 'Loss of detail',
       atmosphere: 'Light, airy, fleeting',
       key_features: 'Dabbed paint texture',
       creative_brief:
-        'Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving cathedrals and water lilies into shimmering dabs of pure sensation. The air itself feels painted, thick with the pollen of a specific afternoon.',
+        'Broken color vibrates at the edge of perception, demanding the eye complete what the brush merely suggested. Light becomes the true subject, dissolving hard boundaries into shimmering dabs of pure sensation. The image feels painted from perception rather than description, all atmosphere and optical afterimage.',
     },
   },
   {
@@ -225,22 +229,25 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-012',
-    name: 'Spray Paint (Graffiti)',
+    name: 'Spray Paint (Aerosol)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable tag, city wall requirement',
     style: {
-      aesthetic: 'Street art mural',
+      aesthetic:
+        'Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy',
       form_and_line: 'Soft spray edges, drips',
       color_palette: 'Neon, vibrant, aerosol',
-      lighting_setup: 'Outdoor city light',
-      material_texture: 'Concrete wall, paint drips',
-      render_quality: 'Urban, gritty',
+      lighting_setup: 'Flat graphic light with sprayed edge bloom and high-contrast color hits',
+      material_texture:
+        'Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain',
+      render_quality:
+        'Raw, high-impact, wall-scale paint language without requiring a wall or city scene',
       spatial_distortion: 'Stylized forms',
-      atmosphere: 'Rebellious, cool',
+      atmosphere: 'Urgent, improvised, graphic',
       key_features: 'Spray texture',
       creative_brief:
-        'Aerosol mist settles on concrete like breath on cold glass, edges bleeding beyond the stencil into atmospheric drift. The wall speaks in drips and overspray, a dialect of the street that galleries can only translate. Every mark carries the risk of interruption, the urgency of the unsanctioned.',
+        'Aerosol mist feathers beyond every edge, creating halos that feel fast, public, and impossible to fully control. Stencil logic, drips, and layered color clouds turn any subject into a graphic act of pressure and release. The mark should feel immediate and risky without requiring walls, streets, tags, or readable lettering.',
     },
   },
   {
@@ -260,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Peaceful, meditative',
       key_features: 'Brush pressure variation',
       creative_brief:
-        'A single brushstroke carries the mountain, the bamboo, the wind — nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.',
+        'A single brushstroke carries structure, rhythm, and breath with nothing added that can be removed. Black ink on white rice paper becomes a universe of greys through water alone, each wash a meditation on pressure and release. The void between marks speaks louder than the marks themselves.',
     },
   },
   {
@@ -275,12 +282,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Chrome, neon, sunset',
       lighting_setup: 'Hyper-real, glossy',
       material_texture: 'Smooth, grainless',
-      render_quality: 'Sci-fi cover, van art',
+      render_quality: 'Retrofuturist commercial airbrush polish with chrome-smooth gradients',
       spatial_distortion: 'Idealized forms',
       atmosphere: 'Retro, slick',
       key_features: 'Smooth gradients',
       creative_brief:
-        'Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under a synthesized sunset. The image glows with the impossible perfection of a future that never arrived, trapped forever in 1987. Highlights gleam with the sheen of an era that believed friction could be eliminated.',
+        'Layers of atomized pigment build without a single brush mark, gradients smooth as polished chrome under synthetic color. The image glows with the impossible perfection of a future that never arrived, all friction erased into vapor-soft transitions. Highlights gleam with retro-commercial confidence and frictionless fantasy.',
     },
   },
   {
@@ -297,10 +304,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Velvet fabric fuzz',
       render_quality: 'Kitsch, retro',
       spatial_distortion: 'Soft focus',
-      atmosphere: 'Tacky, fun, night',
+      atmosphere: 'Kitsch, sincere, nocturnal, theatrical',
       key_features: 'Black background dominance',
       creative_brief:
-        'Neon colors float above infinite blackness like deep-sea creatures signaling in the abyss, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary.',
+        'Neon colors hover above infinite blackness, each hue intensified by the void that surrounds it. The velvet pile swallows light while the paint refuses to, creating impossible luminance. Kitsch transcends irony into a sincerity so pure it becomes visionary, turning any subject into glowing icon against tactile dark.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

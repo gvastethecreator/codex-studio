@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-017
 packId: pack_16
-name: Wandering Swordsman Drama
+name: Wandering Atonement Cel Drama Style
 category: 3. 90s Golden Era
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Historical swordsman emotion, wind-swept robes, explosive duels, tender aftermath, cherry blossom drifts, reverse-blade sword, bloodless vs bloody contrast
-  form_and_line: Crisp 90s anime linework, defined contours, dynamic action strokes, expressive inking
-  color_palette: Pastel-neon contrast, bold accent tones, vivid saturation, high-impact color pop
-  lighting_setup: High-contrast cel lighting, dramatic rim light, stark shadow separation, intense highlights
-  material_texture: Layered painted backgrounds, filmic grain, watercolor depth, cel overlay texture
-  render_quality: High quality 90s anime frame, golden era production polish, sharp cel definition, rich color grading
-  spatial_distortion: Expressive anime anatomy, exaggerated proportions, dynamic foreshortening, kinetic pose design
-  atmosphere: Noble, reflective, sorrowful, poetic
-  key_features: Cinematic cel-era drama, emotional action choreography, iconic silhouette design, bold visual storytelling
-  creative_brief: Cherry blossoms drift through the aftermath of a duel that never needed to happen, a reverse-blade sword catching the same gentle light that bathes the wanderer's unreadable expression. Wind-swept robes speak of endless roads and the unbearable weight of a vow to never kill again, the 90s cel poetry of silent grief.
+  aesthetic: 90s atonement drama style with wind-cut melancholy, restrained violence memory, and noble emotional restraint.
+  form_and_line: Crisp cel-era contour, long drape rhythms, quiet posture tension, controlled action arcs, and expressive ink accents.
+  color_palette: Washed sakura pinks, dusk blues, muted earth tones, soft ivory light, and restrained crimson memory accents.
+  lighting_setup: Gentle rim light, high-contrast cel shadow, breeze-carried highlights, and poetic backlight on quiet silhouettes.
+  material_texture: Layered watercolor backgrounds, fabric grain, brushed metal glints, blossom-like particulate, and cel overlay texture.
+  render_quality: Golden-era anime frame polish with sharp cel definition, lyrical color grading, and strong emotional readability.
+  spatial_distortion: Long-depth staging, wind-swept negative space, diagonal pause before motion, and intimate aftermath framing.
+  atmosphere: Noble, reflective, sorrowful, poetic.
+  key_features: Wind rhythm, vow-like restraint, soft particulate drift, iconic solitary silhouette, and grief held in clean linework.
+  creative_brief: >-
+    Build a reusable wandering-atonement cel drama for any subject or input
+    image: poetic restraint, wind-shaped motion, noble sorrow, and 90s cel
+    emotional action without imposing swordsmen, duels, roads, robes, cherry
+    blossoms, or historical settings.
 avoidRules:
   - realistic
   - 3d render

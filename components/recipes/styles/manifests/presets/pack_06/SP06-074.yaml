@@ -17,11 +17,11 @@ visualDna:
   color_palette: Photo + Paint
   lighting_setup: Mixed
   material_texture: Paint texture
-  render_quality: Gerhard Richter, expressive
+  render_quality: Expressive overpainted-print finish with smeared opacity and obscured detail
   spatial_distortion: Obscured details
   atmosphere: Abstracted reality
   key_features: Smeared paint
-  creative_brief: Thick acrylic strokes drag across the photographic surface, obscuring and revealing in the same gesture, the paint both veil and window. The brush moves with the confidence of an artist who knows the photo is already complete, already safe, and can therefore be risked. The image lives in the friction between captured truth and applied gesture.
+  creative_brief: Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture, paint acting as both veil and window. The brush risks the base layer through smear, opacity, and interruption. The image lives in friction between printed certainty and applied gesture, without requiring photographic realism.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - literal photo requirement
+  - portrait requirement
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-074.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

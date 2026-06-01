@@ -10,23 +10,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, dystopian, dirty-pollution, watermark, text, logo',
     style: {
       aesthetic:
-        'High-altitude agrarian solarpunk focused on food sovereignty and shared stewardship.',
+        'High-altitude agrarian solarpunk focused on food sovereignty, shared stewardship, and optimistic stepped abundance.',
       form_and_line:
-        'Stepped cultivation bands, cooperative work clusters, and gently spiraled circulation paths.',
+        'Stepped cultivation-band rhythm, cooperative cluster geometry, and gently spiraled circulation paths as compositional logic.',
       color_palette: 'Canopy leaf green, sun-cream limestone, and clear irrigation blue.',
       lighting_setup:
         'Early sun wash with soft atmospheric haze and controlled terrace highlights.',
       material_texture:
-        'Laminated timber, hydrated soil beds, translucent greenhouse membranes, and woven shade cloth.',
+        'Laminated timber warmth, hydrated soil texture, translucent membrane glow, and woven shade-cloth tactility.',
       render_quality:
-        'Production-grade environment concept balancing atmospheric softness with operational readability.',
+        'Production-grade solarpunk finish balancing atmospheric softness with operational readability.',
       spatial_distortion:
-        'Ascending terrace perspective that reveals crop zoning, access routes, and communal nodes.',
+        'Ascending terrace-like perspective that reveals zoning, access rhythm, and cooperative nodes without requiring a farm scene.',
       atmosphere: 'Productive calm, collective pride, and grounded optimism.',
       key_features:
-        'Tiered agro-cells, gravity-fed water channels, seedling cooperatives, and shared harvest platforms.',
+        'Tiered agro-cell patterning, gravity-fed water logic, seedling-scale repetition, and shared-harvest rhythm.',
       creative_brief:
-        'A mountainside food district where cultivation, logistics, and community life interlock into a visibly resilient daily system.',
+        'Preserve terraced sky-harvest grammar as a reusable style system: stepped agro-ecology zoning, gravity-fed civic logistics, and cooperative stewardship cues should remain consistent across subjects without requiring crops, terraces, workers, or a literal harvest.',
     },
   },
   {
@@ -35,21 +35,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, cyberpunk-grime, warlike, watermark, text, logo',
     style: {
-      aesthetic: 'Civic mobility solarpunk where transit choreography is the social backbone.',
+      aesthetic:
+        'Civic mobility solarpunk where ribbon continuity, gardened flow, and public trust become the visual backbone.',
       form_and_line:
-        'Continuous ribbon tracks, modular station canopies, and pedestrian-first circulation arcs.',
+        'Continuous ribbon trajectories, modular canopy-like arcs, and pedestrian-first circulation curves.',
       color_palette: 'Mint chlorophyll, sunlit limestone white, and saffron transit highlights.',
-      lighting_setup: 'Clear noon exposure with reflective bounce under vegetated viaducts.',
+      lighting_setup: 'Clear noon exposure with reflective bounce under vegetated shade bands.',
       material_texture:
         'Satin bio-composite panels, laminated glass fins, and dense hanging foliage mats.',
-      render_quality: 'Production-ready environmental concept with strong wayfinding legibility.',
+      render_quality: 'Production-ready solarpunk concept with strong wayfinding legibility.',
       spatial_distortion:
-        'S-curve rail perspective that links foreground station life to distant garden districts.',
+        'S-curve continuity linking foreground detail to distant gardened depth without requiring trains or stations.',
       atmosphere: 'Efficient calm, civic trust, and everyday delight in shared infrastructure.',
       key_features:
-        'Quiet glide trains, pollinator bridges, open ticketless platforms, shade-rich promenades.',
+        'Quiet glide rhythm, pollinator-span motifs, open spacing, shade-rich promenade flow.',
       creative_brief:
-        'A post-car transit corridor where stations operate as neighborhood gardens and movement feels frictionless, inclusive, and joyful.',
+        'Preserve wind-garden monorail grammar as a reusable style language: ribbon-transit continuity, gardened canopy typology, and pedestrian-first civic flow should remain stable across subjects without requiring rails, trains, stations, or districts.',
     },
   },
   {
@@ -58,17 +59,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo',
     style: {
-      aesthetic: 'Amphibious solarpunk logistics hub where tides power civic exchange.',
-      form_and_line: 'Branched piers, floating docks, and articulated bio-structural ribs.',
+      aesthetic:
+        'Amphibious solarpunk exchange where tidal rhythm, porous biology, and civic logistics fuse into one material language.',
+      form_and_line:
+        'Branched pier-like vectors, floating modular bands, and articulated bio-structural ribs.',
       color_palette: 'Tidal cyan, seafoam green, and sun-bleached limestone.',
-      lighting_setup: 'Late-afternoon maritime light with reflective water bounce.',
+      lighting_setup: 'Late-afternoon maritime light with reflective water-bounce logic.',
       material_texture: 'Algae-composite hulls, porous bioceramic, and wet rope fibers.',
-      render_quality: 'Crisp production-ready concept art with clear transport readability.',
-      spatial_distortion: 'Multi-level harbor depth guiding eye from quay to floating market core.',
+      render_quality:
+        'Crisp production-ready solarpunk concept art with clear exchange readability.',
+      spatial_distortion:
+        'Multi-level harbor-like depth guiding the eye through modular exchange layers without requiring a port.',
       atmosphere: 'Cooperative momentum, ocean stewardship, and optimistic trade energy.',
-      key_features: 'Tidal turbines, floating exchange decks, amphibious cargo micro-transit.',
+      key_features:
+        'Tidal turbine motifs, floating exchange decks, amphibious micro-transit patterning.',
       creative_brief:
-        'A living coastal bioport where community commerce, ferry movement, and renewable tidal systems merge seamlessly.',
+        'Preserve tidal-bioport exchange grammar as a reusable style system: amphibious logistics layering, renewable tidal mechanics, and cooperative exchange flow should remain coherent across subjects without requiring docks, markets, boats, cargo, or a literal harbor.',
     },
   },
   {
@@ -78,21 +84,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, dystopian-rust, dark-horror, watermark, text, logo',
     style: {
       aesthetic:
-        'Cloudbelt solarpunk habitat where atmospheric water capture drives orchard urbanism.',
+        'Cloudbelt solarpunk where atmospheric water capture, orchard softness, and elevated communal adaptation drive the style.',
       form_and_line:
-        'Lightweight mist towers, braided footbridges, and canopy-layered dwelling modules.',
+        'Lightweight mist-tower verticals, braided bridge-like links, and canopy-layered modular forms.',
       color_palette: 'Sage vapor green, pearl fog gray, and muted apricot bloom.',
       lighting_setup: 'Diffused dawn humidity with soft backscatter through condensate nets.',
       material_texture:
-        'Micro-mesh catchers, oiled light timber, ceramic cistern skins, and dewy fruit wax.',
-      render_quality: 'Premium atmospheric concept art with clear infrastructure storytelling.',
+        'Micro-mesh catchers, oiled light timber, ceramic cistern skins, and dewy fruit-wax highlights.',
+      render_quality:
+        'Premium atmospheric solarpunk concept art with clear climate-adaptation storytelling.',
       spatial_distortion:
-        'Diagonal bridge network perspective traversing staggered orchard terraces.',
+        'Diagonal elevated-network perspective traversing staggered orchard-like depth.',
       atmosphere: 'Quiet fertility, climatic intelligence, and gentle communal rhythm.',
       key_features:
-        'Condensation towers, drip-fed orchard lanes, suspended homes, and visible storage cisterns.',
+        'Condensation-tower motifs, drip-fed orchard rhythm, suspended module silhouettes, and visible storage-cistern cues.',
       creative_brief:
-        'A fog-dependent hillside settlement that transforms airborne moisture into food, shade, and neighborhood life.',
+        'Preserve fog-orchard habitat grammar as a reusable style language: atmospheric water-capture infrastructure, orchard-soft layering, and cloudbelt adaptation cues should remain stable across subjects without requiring homes, footbridges, towers, or an orchard scene.',
     },
   },
   {
@@ -102,21 +109,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, militarized, dirty-chaos, watermark, text, logo',
     style: {
       aesthetic:
-        'Hydrological solarpunk commons where storage, cooling, and gathering are one system.',
+        'Hydrological solarpunk commons where storage, cooling, and gathering merge as one calm civic pattern.',
       form_and_line:
-        'Concentric reservoir rings, stepped seating edges, and radial circulation paths.',
+        'Concentric reservoir-like rings, stepped edge rhythms, and radial circulation paths.',
       color_palette: 'Solar sand, aquifer blue, and herbaceous soft green.',
       lighting_setup: 'High-angle sun with mirrored highlights and cool under-canopy shade pools.',
       material_texture:
         'Porous pale stone, evaporative ceramic fins, brushed alloy rails, and laminar water films.',
-      render_quality: 'Editorial-grade civic concept art with clean public-space readability.',
+      render_quality:
+        'Editorial-grade civic solarpunk concept art with clean public-system readability.',
       spatial_distortion:
-        'Amphitheater-like basin depth emphasizing a multifunctional water-energy core.',
+        'Amphitheater-like basin depth emphasizing a multifunctional water-energy core without requiring a plaza.',
       atmosphere: 'Collective comfort, thermal relief, and visible ecological stewardship.',
       key_features:
-        'Thermal battery basins, refill kiosks, mist pergolas, and everyday mixed-age occupancy.',
+        'Thermal battery basins, refill-node motifs, mist-pergola rhythm, and mixed-use civic occupancy cues.',
       creative_brief:
-        'A neighborhood plaza that openly displays water management and passive cooling as beautiful public infrastructure rather than hidden utilities.',
+        'Preserve sun-reservoir commons grammar as a reusable style system: concentric hydro-civic planning, thermal-relief architecture, and public stewardship visibility should remain coherent across subjects without requiring basins, kiosks, crowds, or a literal commons.',
     },
   },
   {
@@ -126,22 +134,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bleak, techno-cold, watermark, text, logo',
     style: {
       aesthetic:
-        'Ceremonial agro-future gathering focused on seed stewardship and intergenerational exchange.',
+        'Ceremonial agro-future focused on seed stewardship, biodiversity memory, and intergenerational exchange as visual ritual.',
       form_and_line:
-        'Circular assembly choreography, suspended seed banners, and archive-centric focal geometry.',
+        'Circular assembly choreography, suspended seed-banner motifs, and archive-centric focal geometry.',
       color_palette: 'Pollinator yellow, germination green, and clay-coral warmth.',
       lighting_setup:
-        'Golden-hour festival light with soft lantern accents around archive stations.',
+        'Golden-hour ceremonial light with soft lantern accents around archive-like focal points.',
       material_texture:
-        'Linen pennants, seed capsules, polished timber kiosks, and woven biofiber mats.',
+        'Linen pennants, seed capsules, polished timber nodes, and woven biofiber mats.',
       render_quality:
-        'Dense-but-readable event concept art with strong crowd and signage hierarchy.',
-      spatial_distortion: 'Ringed plaza perspective orbiting a transparent seed-vault pavilion.',
+        'Dense-but-readable ceremonial solarpunk concept art with strong motif hierarchy.',
+      spatial_distortion:
+        'Ringed perspective orbiting a transparent archive-like core without requiring a festival scene.',
       atmosphere: 'Collective gratitude, practical hope, and celebratory responsibility.',
       key_features:
-        'Seed swap counters, stewardship oath wall, crop lineage displays, and communal planting table.',
+        'Seed-swap patterning, stewardship glyph walls, crop-lineage display logic, and communal planting-table rhythm.',
       creative_brief:
-        'A civic seed festival where joy, governance, and biodiversity literacy merge into a single public ritual.',
+        'Preserve seed-vault festival grammar as a reusable style language: circular stewardship choreography, archive-centered civic ceremony, and biodiversity literacy cues should remain stable across subjects without requiring crowds, banners, kiosks, tables, or a literal vault.',
     },
   },
   {
@@ -150,16 +159,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, sterile-corporate, dark-gloomy, watermark, text, logo',
     style: {
-      aesthetic: 'Healthcare center integrated into an urban vertical meadow.',
-      form_and_line: 'Friendly architecture, accessible routes, and soft curves.',
-      color_palette: 'Warm white, meadow green, and clear blue.',
-      lighting_setup: 'Abundant natural light filtered through gardens.',
-      material_texture: 'Soft glass, medicinal vegetation, and hygienic wood.',
-      render_quality: 'Futuristic wellness visual with real human warmth.',
-      spatial_distortion: 'Open section of a high-rise garden building.',
+      aesthetic:
+        'Therapeutic solarpunk integrated into vertical meadow softness, care logic, and warm clinical trust.',
+      form_and_line:
+        'Layered therapeutic terrace rhythm, universal-access circulation loops, and soft curve-led wayfinding geometry.',
+      color_palette: 'Clinical warm white, meadow chlorophyll greens, and calm sky-cyan accents.',
+      lighting_setup: 'Broad daylight filtered through medicinal canopy strata with gentle bounce.',
+      material_texture:
+        'Diffuse low-iron glass, therapeutic plant foliage, hygienic timber laminates, and matte bioceramic railings.',
+      render_quality:
+        'Production-grade wellness concept balancing care clarity with emotionally reassuring spatial warmth.',
+      spatial_distortion:
+        'Vertical sectional reveal linking treatment-like layers, recovery-garden cues, and restorative circulation terraces.',
       atmosphere: 'Care, calm, and technological trust without coldness.',
-      key_features: 'Green facade, therapeutic terrace, serene circulation.',
-      creative_brief: 'A future clinic that heals through how it feels to inhabit it.',
+      key_features: 'Green facade logic, therapeutic terrace rhythm, serene circulation.',
+      creative_brief:
+        'Preserve vertical-meadow clinic grammar as a reusable style system: therapeutic biophilic layering, accessible healing circulation, and human-centered calm should remain coherent across subjects without requiring a clinic, patients, floors, or a building facade.',
     },
   },
   {
@@ -169,23 +184,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, dystopian-smog, aggressive-action, watermark, text, logo',
     style: {
       aesthetic:
-        'Pluvial-ritual solarpunk where civic acoustics and rain harvesting co-design public life.',
+        'Pluvial-ritual solarpunk where civic acoustics and rain harvesting become a calm public visual rhythm.',
       form_and_line:
-        'Tiered chorus groupings, channeling roof geometries, and rhythmic cable spans between blocks.',
+        'Tiered chorus-like groupings, channeling roof geometries, and rhythmic cable spans.',
       color_palette: 'Storm blue, oxidized copper, and rain-saturated leaf green.',
       lighting_setup:
         'Silver overcast with specular puddle highlights and translucent canopy glow.',
       material_texture:
-        'Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutters.',
+        'Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutter cues.',
       render_quality:
         'Poetic production concept art balancing lyrical mood with infrastructural clarity.',
       spatial_distortion:
-        'Stepped roof-chain perspective descending toward a central cistern amphitheater.',
+        'Stepped catchment-chain perspective descending toward a central cistern-like focal basin.',
       atmosphere: 'Collective tenderness, climatic intelligence, and calm ceremonial focus.',
       key_features:
-        'Resonant cistern bowls, rooftop choir tiers, rainfall channels, and participatory water meters.',
+        'Resonant cistern bowls, choir-tier rhythm, rainfall channels, and participatory water-meter motifs.',
       creative_brief:
-        'A rain event transformed into civic music, where each rooftop both sings and stores water for the neighborhood.',
+        'Preserve rooftop rain-choir grammar as a reusable style language: pluvial acoustic civic rituals, visible catchment systems, and collective climate literacy should remain stable across subjects without requiring rooftops, singers, blocks, or a literal choir.',
     },
   },
   {
@@ -195,18 +210,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo',
     style: {
-      aesthetic: 'Arid-region solarpunk oasis built around elegant desalination ecology.',
-      form_and_line: 'Terraced basins, thin solar sails, and adaptive shade ribs.',
+      aesthetic:
+        'Arid-region solarpunk built around elegant water-production, shade adaptation, and oasis-like resilience.',
+      form_and_line: 'Terraced basin rhythm, thin solar-sail planes, and adaptive shade ribs.',
       color_palette: 'Sand gold, jade irrigation green, and clear cobalt accents.',
       lighting_setup: 'High desert sun softened by textile canopies and mist diffusion.',
       material_texture: 'Mineral concrete, woven shade membranes, and wet salt crystals.',
       render_quality: 'High-fidelity environmental concept art with clean engineering readability.',
       spatial_distortion:
-        'Cascading basin perspective from intake towers toward community gardens.',
+        'Cascading basin perspective from intake-like verticals toward productive oasis depth.',
       atmosphere: 'Resource intelligence, relief, and hopeful climatic resilience.',
-      key_features: 'Desal towers, brine-art channels, productive oasis terraces.',
+      key_features:
+        'Desalination-tower motifs, brine-art channels, productive oasis-terrace rhythm.',
       creative_brief:
-        'A desert civic landscape where water production is visible, beautiful, and integrated into daily life.',
+        'Preserve desert-bloom desalinatory grammar as a reusable style system: arid water-production elegance, shade-adaptive public infrastructure, and oasis-scale resilience cues should remain coherent across subjects without requiring desert, towers, gardens, or a literal desalinatory.',
     },
   },
   {
@@ -216,20 +233,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, apocalyptic-flood, militarized-seawall, dirty-smog, watermark, text, logo',
     style: {
-      aesthetic: 'Coastal resilience solarpunk with amphibious civic architecture.',
-      form_and_line: 'Elevated walkways, buoyant districts, and branching mangrove geometry.',
+      aesthetic:
+        'Coastal resilience solarpunk with amphibious civic elevation, root-network logic, and tidal reciprocity.',
+      form_and_line:
+        'Elevated walkway rhythm, buoyant modular bands, and branching mangrove geometry.',
       color_palette: 'Mangrove green, tidal blue-gray, and sun-washed timber tones.',
       lighting_setup: 'Humid coastal daylight with reflective tidal highlights under canopies.',
-      material_texture: 'Salt-tolerant wood, woven flood membranes, and wet root systems.',
+      material_texture: 'Salt-tolerant wood, woven flood membranes, and wet root-like systems.',
       render_quality:
         'Production-grade environmental concept with clear adaptive-infrastructure storytelling.',
       spatial_distortion:
-        'Layered waterfront depth from root-level platforms to elevated public decks.',
+        'Layered waterfront-like depth from root-level patterning to elevated public deck cues.',
       atmosphere: 'Resilient tranquility, civic ingenuity, and ecological reciprocity.',
       key_features:
-        'Amphibious neighborhoods, mangrove filtration belts, tidal mobility corridors.',
+        'Amphibious module motifs, mangrove filtration belts, tidal mobility corridors.',
       creative_brief:
-        'A thriving coastal city that rises with tides and treats mangroves as core urban infrastructure.',
+        'Preserve mangrove lift-city grammar as a reusable style language: amphibious civic elevation, root-network filtration logic, and tidal continuity should remain stable across subjects without requiring a city, walkways, platforms, or literal mangroves.',
     },
   },
   {
@@ -238,21 +257,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo',
     style: {
-      aesthetic: 'Educational solarpunk campus where climate literacy is embedded in architecture.',
-      form_and_line: 'Spiral learning ramps, open-air classrooms, and layered canopy rings.',
+      aesthetic:
+        'Educational solarpunk where climate literacy is embedded in visible systems, spiral movement, and canopy warmth.',
+      form_and_line:
+        'Spiral learning-ramp rhythm, open-air classroom-like voids, and layered canopy rings.',
       color_palette: 'Fern green, chalk white, and warm sunlight amber.',
       lighting_setup: 'Soft midday daylight filtered through translucent bioplastic sunshades.',
       material_texture:
         'Cross-laminated timber, recycled composite railings, cork flooring, and living vine screens.',
       render_quality:
-        'Clean editorial concept scene with strong human scale and pedagogical clarity.',
+        'Clean editorial solarpunk concept with strong scale and pedagogical clarity.',
       spatial_distortion:
-        'Ascending spiral perspective linking ground labs to elevated garden observatories.',
+        'Ascending spiral perspective linking ground-level inquiry cues to elevated garden-observatory motifs.',
       atmosphere: 'Curious optimism, civic care, and intergenerational collaboration.',
       key_features:
-        'Outdoor seminar terraces, energy dashboards, seed libraries, and maker-learning nodes.',
+        'Outdoor seminar-terrace rhythm, energy dashboard motifs, seed-library cues, and maker-learning nodes.',
       creative_brief:
-        'A public learning hub where children and adults study ecology through the very systems that power and cool the building.',
+        'Preserve canopy learning-spiral grammar as a reusable style system: pedagogical ramp architecture, visible climate dashboards, and intergenerational eco-learning should remain coherent across subjects without requiring a campus, classrooms, students, or observatories.',
     },
   },
   {
@@ -261,17 +282,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, dystopian, heavy-neon, watermark, text, logo, grime',
     style: {
-      aesthetic: 'Elevated tram terminal woven through a living canopy district.',
-      form_and_line: 'Curving transit beams, vine trellises, and airy platform arcs.',
+      aesthetic: 'Solarpunk canopy transit language woven through living green structure.',
+      form_and_line:
+        'Curving transit beams, vine trellises, airy platform arcs, and solar wayfinding bands.',
       color_palette: 'Leaf green, sunlit cream, and warm terracotta.',
       lighting_setup: 'Filtered daylight through layered canopy leaves.',
       material_texture: 'Bamboo-laminate, glass, woven fiber, and brushed steel.',
       render_quality: 'Optimistic city concept with crisp infrastructure detail.',
-      spatial_distortion: 'Broad transit perspective leading through green frames.',
+      spatial_distortion:
+        'Broad transit-like perspective leading through green frames and curved beams.',
       atmosphere: 'Mobility, civic care, and breathable urban optimism.',
-      key_features: 'Tram platforms, canopy bridges, and solar wayfinding panels.',
+      key_features:
+        'Transit-platform motifs, canopy span arcs, solar wayfinding panels, and leaf-filtered frames.',
       creative_brief:
-        'A solarpunk transit node where mobility is shaded, quiet, and beautifully integrated with nature.',
+        'Preserve canopy tram-exchange grammar as a reusable style system: biophilic mobility integration, breathable elevated transit frames, and shaded civic calm should remain coherent across subjects.',
     },
   },
   {
@@ -280,17 +304,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, sterile-minimal, cyberpunk, watermark, text, logo, cold-light',
     style: {
-      aesthetic: 'Tiered rooftop market with abundant edible gardens.',
-      form_and_line: 'Terraced roofs, market awnings, and planter ledges.',
+      aesthetic:
+        'Abundant solarpunk rooftop economy expressed through food, shade, and rainwater craft.',
+      form_and_line:
+        'Terraced roof bands, market-awning shapes, planter ledges, and rain-channel lines.',
       color_palette: 'Herb green, coral clay, and bright sky blue.',
       lighting_setup: 'Golden afternoon sun with soft fabric shade.',
       material_texture: 'Recycled timber, ceramic planters, and woven shade cloth.',
       render_quality: 'Community-centered future scene with lively detail.',
-      spatial_distortion: 'Layered rooftop perspective climbing into the skyline.',
+      spatial_distortion:
+        'Layered rooftop-like perspective climbing through terraces and garden bands.',
       atmosphere: 'Social warmth, abundance, and neighborhood exchange.',
-      key_features: 'Rooftop stalls, herb beds, and rainwater channels.',
+      key_features:
+        'Stall-canopy motifs, herb-bed textures, rainwater channels, and edible garden color blocks.',
       creative_brief:
-        'A solarpunk neighborhood market that turns every roof into shared productive land.',
+        'Preserve roofgarden market-terraces grammar as a reusable style system: layered edible urbanism, rooftop exchange conviviality, and productive-neighborhood abundance should remain coherent across subjects.',
     },
   },
   {
@@ -299,16 +327,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, grit, industrial-smoke, watermark, text, logo, gloom',
     style: {
-      aesthetic: 'Riverside repair district where tools, teaching, and ecology overlap.',
-      form_and_line: 'Water terraces, communal benches, and repair pavilions.',
+      aesthetic: 'Solarpunk repair culture where tools, teaching, water, and ecology overlap.',
+      form_and_line:
+        'Water terrace bands, communal bench shapes, repair-pavilion arcs, and riverbend curves.',
       color_palette: 'River teal, soft ochre, and fresh white.',
       lighting_setup: 'Reflected water light and open-air workshop glow.',
       material_texture: 'Rammed earth, recycled aluminum, and woven reeds.',
       render_quality: 'Highly legible civic concept art.',
-      spatial_distortion: 'Curving river edge creating a generous communal composition.',
+      spatial_distortion: 'Curving river-edge composition creating generous communal flow.',
       atmosphere: 'Repair culture, stewardship, and shared skill-building.',
-      key_features: 'Tool libraries, river steps, and public worktables.',
-      creative_brief: 'A solarpunk commons where maintenance is social, visible, and elegant.',
+      key_features:
+        'Tool-library grids, river-step bands, public worktable motifs, and repair commons markings.',
+      creative_brief:
+        'Preserve riverbend repair-commons grammar as a reusable style system: riverside maintenance pedagogy, open civic tool-sharing culture, and elegant stewardship pragmatism should remain coherent across subjects.',
     },
   },
   {
@@ -317,17 +348,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Corepunk — Solarpunk',
     negativePrompt: 'photoreal, cyberpunk, hard-industrial, watermark, text, logo, nightscape',
     style: {
-      aesthetic: 'Civic atrium stacked around a solar chimney and public garden core.',
-      form_and_line: 'Vertical terraces, open void, and sunlit ramps.',
+      aesthetic:
+        'Civic solarpunk verticality stacked around solar chimney logic and public garden light.',
+      form_and_line: 'Vertical terraces, open voids, sunlit ramp bands, and chimney-core geometry.',
       color_palette: 'Pale green, sandstone, and sky gold.',
       lighting_setup: 'Top-lit atrium with diffuse bounces and daylight shafts.',
       material_texture: 'Glazed brick, timber, and translucent solar film.',
       render_quality: 'Monumental but welcoming public architecture.',
-      spatial_distortion: 'Vertical central void pulling the city upward.',
+      spatial_distortion:
+        'Vertical central void pulling forms upward through light and garden layers.',
       atmosphere: 'Public trust, climatic comfort, and collective aspiration.',
-      key_features: 'Solar chimney, civic ramps, and shared atrium gardens.',
+      key_features:
+        'Solar chimney motifs, civic ramp bands, shared garden layers, and warm updraft light.',
       creative_brief:
-        'A solarpunk civic heart where energy, climate, and public life are harmonized in one bright atrium.',
+        'Preserve sunstack civic-atrium grammar as a reusable style system: vertically layered public climate architecture, solar-chimney energy symbolism, and bright civic trust should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

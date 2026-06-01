@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - nature-and-wildlife
 visualDna:
-  aesthetic: Animal in nature
+  aesthetic: Patient telephoto field realism
   form_and_line: Telephoto compression
-  color_palette: Natural camouflage
+  color_palette: Natural muted field color
   lighting_setup: Golden hour
-  material_texture: Fur, feather detail
-  render_quality: Nat Geo, wild
+  material_texture: Fine natural surface detail
+  render_quality: Nat Geo field sharpness
   spatial_distortion: None
-  atmosphere: Wild, patient
+  atmosphere: Patient, observant
   key_features: Blurred background
-  creative_brief: A gaze from the other side of species, captured in that molten hour when the sun paints fur and feather in honeyed tones and the forest recedes into a soft cathedral of indistinct green. The creature seems unaware of its own magnificence, simply present, simply true, the patience of the observer rewarded with a moment that feels less taken than received. Distance collapses into intimacy without intrusion.
+  creative_brief: 'Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo look to any subject without forcing animals, forest, fur, feathers, or nature scenery.'
 avoidRules:
   - zoo
   - cage

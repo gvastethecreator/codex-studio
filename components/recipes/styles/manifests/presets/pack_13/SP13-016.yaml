@@ -12,19 +12,20 @@ tags:
   - anime-character-and-lifestyle
   - anime
 visualDna:
-  aesthetic: Arcane battle-mage anime language with elemental storm authority, ritual-combat iconography, and high-impact fantasy dynamism
-  form_and_line: Commanding caster silhouette, cape-driven motion vectors, rune-circle geometry anchors, and upward gesture lines emphasizing spell-release force
+  aesthetic: Arcane stormcast anime language with elemental authority, ritual-combat iconography, and high-impact fantasy dynamism
+  form_and_line: Commanding silhouette, cape-like motion vectors, rune-circle geometry anchors, and upward gesture lines emphasizing energy-release force
   color_palette: Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver highlights for energy separation
-  lighting_setup: Spell-emission as dominant key source, secondary rune-floor uplight, high-contrast rim flashes, and particulate glow falloff control
+  lighting_setup: Spell-like emission as dominant key source, secondary rune uplight, high-contrast rim flashes, and particulate glow falloff control
   material_texture: Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous rune-inscription edges
-  render_quality: Premium combat-anime rendering with sharp spell readability, disciplined effects layering, and strong pose-to-energy coherence
-  spatial_distortion: Low-angle upward perspective with radial energy wrap and controlled environment warping around the cast focal point
+  render_quality: Premium combat-anime rendering with sharp energy readability, disciplined effects layering, and strong pose-to-energy coherence
+  spatial_distortion: Low-angle upward perspective with radial energy wrap and controlled context warping around focal point
   atmosphere: Urgent, powerful, grand, and arcane-charged
-  key_features: Central magic-circle architecture, lightning discharge hierarchy, dominant caster stance, and rune-particle system choreography
+  key_features: Central magic-circle architecture, lightning discharge hierarchy, dominant stance geometry, and rune-particle choreography
   creative_brief: >-
-    Keep battle-mage stormcast grammar as a reusable style system: rune-anchored
-    spell geometry, electric-violet energy hierarchy, and low-angle arcane
-    dominance should remain consistent across subjects.
+    Use Battle Mage Stormcast as style anchor for arcane impact:
+    rune-anchored geometry, electric-violet energy hierarchy, and low-angle
+    dominance should transfer without requiring a mage, spell duel, cape,
+    floor circle, or battle event.
 avoidRules:
   - photoreal
   - low-contrast

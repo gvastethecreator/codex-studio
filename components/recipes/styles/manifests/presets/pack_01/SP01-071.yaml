@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Objects arranged on table
+  aesthetic: Top-down arranged composition
   form_and_line: Grid organization
   color_palette: Coordinated palette
   lighting_setup: Top down soft
-  material_texture: Table surface
+  material_texture: Clean surface texture
   render_quality: Instagram, organized
   spatial_distortion: None
   atmosphere: Satisfying, clean
   key_features: 90 degree angle
-  creative_brief: Order imposed upon chaos with the geometry of desire, objects placed as if the tabletop were a page and composition its only grammar. Satisfaction lives in the perpendicular, in the grid that holds beauty still long enough to be admired.
+  creative_brief: 'Flat-lay photography imposes top-down order on any subject: perpendicular camera, grid organization, coordinated palette, soft overhead light, and satisfying negative spacing. Treat the frame like a designed page without requiring objects on a table.'
 avoidRules:
   - perspective
   - messy

@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - residential-interiors
 visualDna:
-  aesthetic: Asentamiento tribal arbóreo de vida comunal elevada con ingeniería orgánica artesanal en copa forestal.
-  form_and_line: Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles de dosel.
+  aesthetic: Tribal-canopy elevado con ingeniería orgánica artesanal y vida comunal suspendida.
+  form_and_line: Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles orgánicos.
   color_palette: Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling
   lighting_setup: Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.
   material_texture: Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.
   render_quality: Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.
   spatial_distortion: None
   atmosphere: Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.
-  key_features: Puentes de cuerda enlazados, plataformas radiales, pasarelas ceñidas al tronco y nidos de observación elevados.
+  key_features: Cuerdas enlazadas, plataformas radiales, pasarelas ceñidas al soporte vivo y nidos de observación elevados.
   creative_brief: >-
     Construye una gramática tribal-canopy transferible basada en plataformas
     elevadas, suspensión por cuerda y respeto estructural al árbol vivo, sin
-    fijarse a una escena concreta.
+    fijarse a un set concreto.
 avoidRules:
   - metal
 assets:

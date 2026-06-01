@@ -11,18 +11,18 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Low key moody portraiture, dark and dramatic photography',
       subject_treatment:
-        'Features partially hidden in deep shadow, strong emphasis on form and shape',
+        'Primary details partially hidden in deep shadow, strong emphasis on form and shape',
       color_and_tone:
         'Deep blacks, rich dark tones, minimal color saturation, pure black background',
       lighting_and_shadow:
         'Single source rim light or side light, harsh shadows, high contrast chiaroscuro',
-      texture_and_material: 'Shadow noise, highlighted textures on the lit side of the subject',
+      texture_and_material: 'Shadow noise, highlighted textures on the lit edge of the subject',
       camera_and_composition:
         'Obscured features, tight framing, focus on the interplay of light and dark',
       atmosphere_and_mood: 'Mysterious, intense, serious, cinematic, brooding',
       rendering_and_quality: 'Dramatic fine art photography, deep rich blacks, high resolution',
       creative_brief:
-        'Darkness is not absence but presence—a living texture that swallows and reveals in equal measure. The subject emerges from shadow like a secret half-told, their form carved by a single, decisive light source. Every illuminated edge becomes a statement, every shadow a pause in an unfinished narrative. The image breathes with the tension between concealment and revelation.',
+        'Apply low-key portrait lighting to any subject: deep black field, single decisive rim or side light, carved edge texture, and conceal/reveal tension without requiring a human face.',
     },
   },
   {
@@ -33,18 +33,17 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic: 'Dramatic silhouette photography, dark outline against a bright background',
-      subject_treatment:
-        'Sharp profile edge, completely obscured facial details, focus on shape and form',
+      subject_treatment: 'Sharp contour edge, obscured internal detail, focus on shape and form',
       color_and_tone:
-        'Pure black subject, vibrant or bright background colors, extreme high contrast',
+        'Pure black primary form, vibrant or bright background colors, extreme high contrast',
       lighting_and_shadow:
         'Strong backlighting, no front fill light, blown-out background highlights',
-      texture_and_material: 'No texture on the subject, smooth background gradients',
+      texture_and_material: 'No interior texture on the primary form, smooth background gradients',
       camera_and_composition: 'Graphic composition, strong negative space, clear outline',
       atmosphere_and_mood: 'Mysterious, dramatic, anonymous, artistic, epic',
       rendering_and_quality: 'High quality artistic photography, crisp edges',
       creative_brief:
-        'Form stripped to its barest contour, a figure consumed by darkness standing sentinel against a sky on fire, identity withheld so that shape alone carries the full weight of presence. All that remains is the edge, the razor-thin outline where self meets light, mystery held entirely in the curve of a shoulder or the angle of a jaw. The anonymous becomes the monumental, absence speaking louder than any detail ever could.',
+        'Apply silhouette-portrait lighting to any subject: black graphic contour, strong backlight, stripped internal texture, high contrast, and monumental negative space without requiring a human profile.',
     },
   },
   {
@@ -55,18 +54,18 @@ export const GENERATED_STYLE_PRESETS = [
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
       aesthetic:
-        'Artistic double exposure photography, portrait blended seamlessly with nature or cityscapes',
+        'Artistic double exposure photography, primary form blended seamlessly with secondary imagery',
       subject_treatment:
-        "Ghostly overlay of forms, subject's silhouette filled with secondary imagery",
+        'Ghostly overlay of forms, silhouette or shape filled with secondary exposure texture',
       color_and_tone: 'Dreamy and mixed color palette, ethereal tones, low contrast blending',
       lighting_and_shadow: 'High key lighting base, complex overlapping shadows and highlights',
       texture_and_material:
-        'Multiple exposure textures, blending of skin and environmental textures (e.g., trees, buildings)',
+        'Multiple exposure textures, blended surface and environmental pattern layers',
       camera_and_composition: 'Surreal blending of two distinct perspectives, creative masking',
       atmosphere_and_mood: 'Dreamy, conceptual, surreal, poetic, melancholic',
       rendering_and_quality: 'Fine art photography, seamless blending, highly detailed',
       creative_brief:
-        "One world bleeding through another, a forest growing inside a profile, city towers rising from the architecture of a jawline, the boundary between interior and exterior dissolved into a single luminous membrane. Memory and matter occupy the same ghostly register, the mind's landscape rendered visible across skin and bone. Consciousness made transparent, two perspectives fused into a poetic confession where what lies within finally surfaces.",
+        'Apply double-exposure portrait logic to any subject: ghosted silhouette, secondary imagery inside the primary form, high-key overlap, soft masking, and poetic transparency without requiring forest, city, face, or body.',
     },
   },
   {
@@ -75,17 +74,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'flat, bright',
     style: {
-      aesthetic: 'Classic portrait lighting',
-      form_and_line: 'Triangle of light on cheek',
+      aesthetic: 'Classic chiaroscuro lighting',
+      form_and_line: 'Triangular highlight geometry',
       color_palette: 'Warm, dark shadows',
       lighting_setup: '45 degree single source',
-      material_texture: 'Painterly',
-      render_quality: 'Dramatic, classic',
+      material_texture: 'Painterly tonal falloff',
+      render_quality: 'Dramatic classical studio',
       spatial_distortion: 'None',
       atmosphere: 'Serious, artistic',
       key_features: 'Chiaroscuro',
       creative_brief:
-        "The face emerging from darkness like a thought becoming visible, a sacred triangle of illumination carved beneath the eye by a single angled source. Warmth pools on skin while shadow recedes into painterly depth. Light as the sculptor's chisel against velvet void, each portrait a study in what is revealed and what is earned.",
+        "A single 45-degree source sculpts any subject from darkness with warm tonal falloff, triangular highlight logic, and painterly chiaroscuro depth. Keep Rembrandt's reveal/conceal geometry while freeing it from portrait faces, cheeks, or skin.",
     },
   },
   {
@@ -94,17 +93,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'shadows',
     style: {
-      aesthetic: 'Influencer lighting',
-      form_and_line: 'Halo in eyes',
+      aesthetic: 'Circular frontal lighting',
+      form_and_line: 'Ring catchlight geometry',
       color_palette: 'Even, bright',
       lighting_setup: 'Frontal circle',
-      material_texture: 'Smooth skin',
-      render_quality: 'YouTube, makeup tutorial',
-      spatial_distortion: 'Flat features',
+      material_texture: 'Smooth even surface',
+      render_quality: 'Clean creator-studio realism',
+      spatial_distortion: 'Flat frontal depth',
       atmosphere: 'Modern, clean',
-      key_features: 'Eye catchlight',
+      key_features: 'Ring catchlight',
       creative_brief:
-        "The circular halo that erases shadow from the digital self, a distinctive ring-shaped catchlight signaling our era's particular vocabulary of visibility. Evenness deployed as aesthetic, every plane of the face receiving identical attention. The characteristic glow of an age where everyone is perpetually camera-ready, shadows banished by geometry.",
+        'Circular frontal light erases harsh shadow and leaves a signature ring reflection wherever surfaces can catch it. Use creator-studio evenness, flat frontal depth, and polished visibility on any subject without requiring eyes, faces, makeup, or influencer context.',
     },
   },
   {
@@ -117,13 +116,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Hard shadow outlines',
       color_palette: 'High contrast, saturated',
       lighting_setup: 'Frontal, harsh',
-      material_texture: 'Shiny skin',
+      material_texture: 'Specular flash sheen',
       render_quality: 'Paparazzi, fashion',
       spatial_distortion: 'Flat depth',
       atmosphere: 'Raw, exposed',
       key_features: 'Drop shadow',
       creative_brief:
-        'The unapologetic glare that leaves nowhere to hide, every pore and sheen interrogated by merciless frontal light. Hard shadows carve silhouettes into the nearest wall like instant crime-scene evidence. The aesthetics of exposure itself, where glamour and intrusion become indistinguishable.',
+        'Direct on-camera flash makes any subject brutally present: hard frontal glare, crisp drop shadow, flattened depth, saturated color, and specular sheen with nowhere to hide. Use paparazzi-fashion exposure as style, not as a requirement for people or walls.',
     },
   },
   {
@@ -132,17 +131,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'clean light',
     style: {
-      aesthetic: 'Image projected on face',
+      aesthetic: 'Projected image lighting',
       form_and_line: 'Pattern overlay',
-      color_palette: 'Mixed light/skin',
+      color_palette: 'Mixed projected color',
       lighting_setup: 'Patterned source',
       material_texture: 'Pixel grid (optional)',
       render_quality: 'Artistic, music video',
-      spatial_distortion: 'Face distortion by light',
+      spatial_distortion: 'Surface distortion by light',
       atmosphere: 'Conceptual, trippy',
       key_features: 'Light pattern',
       creative_brief:
-        'Identity overlaid with borrowed imagery, skin becoming screen where inner visions project outward in patterns of light. The collision of two realities on a single surface, one organic and one synthetic, negotiating territory across the geography of a face. A conceptual double exposure where what is cast upon us becomes indistinguishable from what we are.',
+        'A projected source turns any surface into a temporary screen: pattern overlay, pixel-grid texture, mixed color, and light warped by form. Treat projection as conceptual photographic lighting without requiring faces, skin, identity narrative, or music-video staging.',
     },
   },
   {
@@ -151,17 +150,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'daylight, sun',
     style: {
-      aesthetic: 'Cyberpunk city lighting',
+      aesthetic: 'Neon noir lighting',
       form_and_line: 'Rim lights',
       color_palette: 'Pink and Teal',
       lighting_setup: 'Colored practical lights',
-      material_texture: 'Wet pavement reflection',
+      material_texture: 'Wet reflective sheen',
       render_quality: 'Cinematic, stylized',
       spatial_distortion: 'None',
       atmosphere: 'Cool, futuristic',
       key_features: 'Dual color light',
       creative_brief:
-        "Rain-slicked asphalt mirrors two competing futures in dueling pink and cyan, a city that breathes synthesized light through its veins. Every surface glistens with the afterimage of neon, darkness deployed not as absence but as the canvas upon which electricity paints. The chrome-and-shadow vocabulary of tomorrow's late-night solitude.",
+        'Pink and cyan practical lights cut across darkness, turning any reflective surface into noir electricity. Wet sheen, rim highlights, and saturated color separation create a cinematic future-night mood without requiring streets, city, chrome props, or rain-slick pavement.',
     },
   },
   {
@@ -170,17 +169,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'flat, fill light',
     style: {
-      aesthetic: 'Half face in shadow',
+      aesthetic: 'Half-lit split contrast',
       form_and_line: 'Sharp transition',
       color_palette: 'High contrast',
       lighting_setup: '90 degree side light',
-      material_texture: 'Drama',
-      render_quality: 'Villain, dramatic',
+      material_texture: 'Hard lateral contrast',
+      render_quality: 'Dramatic side-light realism',
       spatial_distortion: 'Hidden side',
       atmosphere: 'Conflict, mystery',
       key_features: 'Half dark',
       creative_brief:
-        'The razor-thin meridian where revelation meets concealment, a face bisected by a blade of lateral light. One half declares itself while the other retreats into permanent midnight. Dual natures etched in high contrast, the unspoken hemisphere that keeps its secrets locked in darkness.',
+        'A 90-degree side light divides any subject into declared and hidden halves. Use a sharp meridian of contrast, one side exposed and one side falling into black, to create tension without requiring a face, villain, or character narrative.',
     },
   },
   {
@@ -212,13 +211,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Sharp edges',
       color_palette: 'Cool white',
       lighting_setup: 'Instant flash',
-      material_texture: 'Frozen droplets',
+      material_texture: 'Crisp frozen microdetail',
       render_quality: 'High speed photography',
       spatial_distortion: 'None',
       atmosphere: 'Energetic, frozen',
       key_features: 'Motion freeze',
       creative_brief:
-        'The violence of a millisecond arrested mid-collapse, droplets suspended like glass beads in the thunderclap of instantaneous illumination. Motion gutted and preserved in cool white precision. The secret choreographies that only lightning-fast seeing can reveal, the kinetic world dissected into a thousand frozen instants.',
+        'Instant flash arrests motion into cool-white precision: razor edges, frozen microdetail, high-speed clarity, and kinetic energy locked mid-transition. Use strobe grammar on any subject without requiring droplets, splash, sports, or scientific demo context.',
     },
   },
   {
@@ -256,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Ghostly, ancient',
       key_features: 'Chemical artifacts',
       creative_brief:
-        'An alchemy of silver and patience, where sitters held their breath for minutes and the plate remembered every tremor. The world resolves through a shallow veil, edges dissolving into the chemical dream from which they emerged. What remains feels less photographed than summoned.',
+        'Silver and patience translated into tintype atmosphere: shallow focus, Petzval edge falloff, sepia-silver tonality, chemical pours, scratches, and exposure tremor. Any subject should feel summoned onto a fragile plate, antique without requiring sitters or period portraiture.',
     },
   },
   {
@@ -265,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'posed, studio',
     style: {
-      aesthetic: 'Telephoto street shot',
+      aesthetic: 'Intrusive telephoto flash',
       form_and_line: 'Subject isolated',
       color_palette: 'Flash washed',
       lighting_setup: 'Direct flash at night',
@@ -273,9 +272,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Tabloid, intrusive',
       spatial_distortion: 'Motion blur',
       atmosphere: 'Urgent, chaotic',
-      key_features: 'Subject surprised',
+      key_features: 'Startled flash isolation',
       creative_brief:
-        "A frame stolen from behind distance and darkness, the flash a sudden surgical glare that isolates its subject like a specimen pinned in borrowed light. Grain textures every surface with urgency, the photographer invisible but felt as violation, the image's truth lodged in its trespass. Motion smears at the edges as if the scene itself tried to flee the moment of capture.",
+        'Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without requiring street, celebrity, human surprise, or chase narrative.',
     },
   },
   {
@@ -284,36 +283,36 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'artistic, emotional',
     style: {
-      aesthetic: 'Crime scene evidence',
-      form_and_line: 'Clinical, ruler scale',
+      aesthetic: 'Forensic evidence documentation',
+      form_and_line: 'Clinical scale logic',
       color_palette: 'Neutral, flash',
       lighting_setup: 'Flat flash',
       material_texture: 'Detail focus',
       render_quality: 'Objective, cold',
       spatial_distortion: 'None',
       atmosphere: 'Unsettling, factual',
-      key_features: 'Evidence marker',
+      key_features: 'Evidence-like markers',
       creative_brief:
-        'Truth rendered in the merciless equality of flash, every surface stripped of mystery and poured into evidence. The camera becomes not an artist but a witness, its testimony inscribed in clinical flatness that refuses interpretation yet demands accounting.',
+        'Forensic photography documents any subject with flat flash, neutral color, clinical scale logic, cold detail focus, and evidence-like markers. The camera behaves as factual witness without requiring crime scene, blood, ruler, or investigation props.',
     },
   },
   {
     id: 'SP01-073',
     name: 'Long Exposure (Water)',
     category: '2. Lighting Techniques',
-    negativePrompt: 'frozen water, sharp waves',
+    negativePrompt: 'frozen motion, jagged flow',
     style: {
-      aesthetic: 'Silky waterfall or sea',
-      form_and_line: 'Smooth water, sharp rocks',
+      aesthetic: 'Long-exposure motion smoothing',
+      form_and_line: 'Silky motion, sharp anchors',
       color_palette: 'Cool blues, grey',
       lighting_setup: 'Overcast',
-      material_texture: 'Mist, rock',
-      render_quality: 'Fine art landscape',
-      spatial_distortion: 'Motion blur water',
+      material_texture: 'Mistlike blur, stable texture',
+      render_quality: 'Fine-art long exposure',
+      spatial_distortion: 'Motion-smoothed flow',
       atmosphere: 'Calm, ethereal',
-      key_features: 'Silky water',
+      key_features: 'Silky temporal flow',
       creative_brief:
-        "Water forgets its own urgency, stretched into silk by time's patient hand, rock standing immutable as witness. The world slows until motion itself becomes a kind of stillness, ethereal and unreachable.",
+        'Long exposure turns moving elements into silk while stable forms stay sharp. Apply cool fine-art calm, mistlike blur, and temporal smoothing to any subject without requiring waterfalls, sea, rocks, waves, or landscape.',
     },
   },
   {
@@ -322,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Lighting Techniques',
     negativePrompt: 'day, clouds',
     style: {
-      aesthetic: 'Milky Way landscape',
+      aesthetic: 'Long-exposure night-sky imaging',
       form_and_line: 'Star trails (optional)',
       color_palette: 'Deep Blue, Purple, White stars',
       lighting_setup: 'Starlight',
@@ -330,9 +329,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Long exposure, epic',
       spatial_distortion: 'None',
       atmosphere: 'Cosmic, silent',
-      key_features: 'Night sky',
+      key_features: 'Cosmic exposure texture',
       creative_brief:
-        'The galaxy tilts itself into view across a terrestrial horizon, dust lanes painted in indigo and violet by the accumulated light of a billion burning suns. A lone silhouette anchors the foreground so the eye understands it is both standing on earth and staring into eternity simultaneously. Time stretches into trails that map the architecture of our slow celestial spin.',
+        'Long-exposure astrophotography maps faint light into deep blue, violet, and white speckle, with optional star-trail motion and sensor noise treated as cosmic texture. Let any subject inherit night-sky scale and slow exposure without requiring Milky Way, horizon, silhouette, or landscape.',
     },
   },
   {
@@ -345,13 +344,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'Shallow depth of field',
       color_palette: 'Vibrant detail',
       lighting_setup: 'Ring flash',
-      material_texture: 'Insect eye, leaf vein',
+      material_texture: 'Enlarged surface microtexture',
       render_quality: 'Scientific, abstract',
       spatial_distortion: 'Blurry background',
       atmosphere: 'Alien, detailed',
       key_features: 'Tiny world',
       creative_brief:
-        'A territory that lives between the blinks of giants, where a dewdrop becomes an ocean and a grain of pollen looms like architecture. Geometry so intricate it reads as sacred manuscript, written on the skin of the miniature, while everything beyond dissolves into pure painted blur. Vision trespasses here into the invisible.',
+        'Extreme close focus turns any subject into a miniature world: shallow depth, enlarged surface microtexture, vibrant detail, and background blur that isolates the near plane. Use macro vision without requiring insects, leaves, pollen, dewdrops, or biological content.',
     },
   },
   {
@@ -366,12 +365,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'High contrast, cheap flash',
       lighting_setup: 'Direct flash',
       material_texture: 'Grainy',
-      render_quality: 'Party photo, candid',
+      render_quality: 'Casual flash snapshot',
       spatial_distortion: 'Chromatic aberration',
       atmosphere: 'Fun, cheap',
       key_features: 'Flash falloff',
       creative_brief:
-        'The frame that cost three dollars and captured a thousand-dollar night: flash bleaching faces into polar proximity, corners softening into the blur of a room barely remembered. Chromatic fringe rings each highlight like a cheap halo. Evidence that the best photographs were never about the glass they passed through.',
+        'Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable camera, immediate and unpolished, without forcing faces, rooms, or party context.',
     },
   },
   {

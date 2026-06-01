@@ -1,0 +1,48 @@
+schemaVersion: 1
+id: SP01-086
+packId: pack_01
+name: Cold Condensation Commercial
+category: 5. Commercial And Product
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - commercial-and-product
+visualDna:
+  aesthetic: Refreshment advertising chill
+  form_and_line: Crisp hero shape with droplets
+  color_palette: Cold cyan, clean whites, saturated accent color
+  lighting_setup: Backlit frost glow and hard rim sparkle
+  material_texture: Condensation beads, cold haze, slick surface
+  render_quality: Beverage-ad freshness
+  spatial_distortion: Slight heroic low angle
+  atmosphere: Fresh, cold, energetic
+  key_features: Condensation sparkle
+  creative_brief: 'Cold commercial style adds refreshment cues to any subject: cyan chill, condensation beads, frost haze, rim sparkle, saturated accent color, and a crisp heroic silhouette. It should signal cold freshness without requiring cans, bottles, drinks, ice, or splash props.'
+avoidRules:
+  - warm palette
+  - dry surface
+  - dull lighting
+  - dirty
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP01-086.webp
+attributes:
+  negativePrompt: warm palette, dry surface, dull lighting, dirty, watermark, text
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
+  tags:
+    - photography-and-realism
+    - commercial-and-product
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

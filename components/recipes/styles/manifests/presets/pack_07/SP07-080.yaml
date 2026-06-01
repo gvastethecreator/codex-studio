@@ -13,17 +13,17 @@ tags:
   - residential-interiors
 visualDna:
   aesthetic: Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión interior imposible.
-  form_and_line: Eje central de rotor temporal, consola hex radial, repetición de roundels y anillos de galería en recesión no euclidiana.
+  form_and_line: Eje central energético, nodo hex radial, repetición de roundels y anillos en recesión no euclidiana.
   color_palette: Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows
-  lighting_setup: Pulso lumínico del rotor, spill de consola, rebote indirecto en roundels y bloom dorado controlado de regeneración.
+  lighting_setup: Pulso lumínico central, spill de mando, rebote indirecto en roundels y bloom dorado controlado.
   material_texture: Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y cableado trenzado.
   render_quality: Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.
   spatial_distortion: Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation
   atmosphere: Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.
-  key_features: Columna central de rotor, nodo de mando hex radial, muro roundel repetitivo y circulación de galería multinivel.
+  key_features: Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.
   creative_brief: >-
     Formula una gramática reusable de console-chamber "bigger-on-the-inside"
-    donde jerarquía de rotor central, ritmo mural roundel y capas orgánico-
+    donde jerarquía de energía central, ritmo mural roundel y capas orgánico-
     retrotech dimensionales permanezcan constantes entre sujetos.
 avoidRules:
   - small

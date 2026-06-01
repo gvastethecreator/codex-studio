@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Product demo
+  aesthetic: Infomercial product-demo energy
   form_and_line: None
-  color_palette: Bright, cheap, primary yellow, sale red, beige kitchen
+  color_palette: Bright cheap primaries, sale red, primary yellow
   lighting_setup: Flat, even wash, product spotlight, over-lit
   material_texture: Video, SD sheen, low-budget smoothness
   render_quality: Sales, cheesy, excited-host energy, demonstration pace
   spatial_distortion: Before/After split, split-screen comparison, arrow overlay
-  atmosphere: Enthusiastic, fake, paid-actor sincerity, limited-time urgency
-  key_features: Call now, phone number crawl, money-back guarantee
-  creative_brief: Everything gleams with the desperate shine of a deal that cannot last, colors pushed to the edge of broadcast safety. The host's smile holds steady against a tide of split-screen comparisons and floating price tags. Here, before-and-after is not a promise but a magic trick performed in the harsh light of 3 AM.
+  atmosphere: Enthusiastic, fake, limited-time urgency
+  key_features: Split-screen comparison, price-tag rhythm, demo spotlight
+  creative_brief: 'Infomercial style sells any subject with over-lit sincerity: cheap bright primaries, product spotlight, SD sheen, split-screen comparison logic, arrow-overlay rhythm, and frantic 3 AM urgency. Keep sales-demo energy without requiring host, phone number, kitchen, or readable promo text.'
 avoidRules:
   - cinematic
 assets:

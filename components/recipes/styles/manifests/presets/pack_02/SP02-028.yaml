@@ -20,8 +20,8 @@ visualDna:
   render_quality: Edgy, fast, rapid-fire montage, music-video relentlessness
   spatial_distortion: Morphing, image warp, video feedback, liquid dissolve
   atmosphere: Rebellious, cool, anti-establishment, mosh-pit energy
-  key_features: Fast cuts, graffiti text, band logo, fisheye crowd
-  creative_brief: The negative is scratched raw, frames colliding like bodies in a pit where feedback loops birth new color spectrums. Neon cuts through the bleach-bypassed darkness, a signal from the underground hijacking the broadcast. Every cut is a manifesto, every dissolve a small riot against the clean and the safe.
+  key_features: Fast-cut feel, scribble overlays, feedback warp
+  creative_brief: 'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh scenes.'
 avoidRules:
   - clean
 assets:

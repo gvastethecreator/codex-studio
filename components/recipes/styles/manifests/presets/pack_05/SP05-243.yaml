@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-243
 packId: pack_05
-name: Record of Lodoss War - OVA Quest Tapestry
+name: Classic OVA Quest Tapestry Style
 category: 8. Isekai & High Fantasy
 version: 1
 supportedTasks:
@@ -12,19 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Grandilocuencia OVA de fantasy clásico, con sinceridad tabletop y nobleza heroica de aventura coral.
-  form_and_line: Contorno elegante tradicional, ornamento medieval visible y composición de party frontal tipo póster de campaña.
-  color_palette: Zafiro profundo, oro heráldico, rojo estandarte, marfil de pergamino y verde bosque épico.
-  lighting_setup: Cielo pictórico luminoso, key cálido de amanecer de quest y rim heroico en armadura pulida.
-  material_texture: Cota de malla brillante, estandartes bordados, piedra antigua, cuero noble y escamas dracónicas decorativas.
+  aesthetic: Grandilocuencia OVA de fantasy clásico, sinceridad tabletop, nobleza heroica y aventura coral como composición atemporal.
+  form_and_line: Contorno elegante tradicional, ornamento clásico visible, composición frontal tipo tapiz y jerarquía coral.
+  color_palette: Zafiro profundo, oro heráldico, rojo estandarte, marfil de pergamino y verde épico.
+  lighting_setup: Fondo pictórico luminoso, key cálido de amanecer abstracto y rim heroico en superficies pulidas.
+  material_texture: Malla decorativa, textiles bordados, piedra antigua, cuero noble y escamas ornamentales.
   render_quality: Acabado clásico de fantasía ilustrada con lectura mítica y belleza de cuadro aventurero.
-  spatial_distortion: Escala heroica tradicional, profundidad de paisaje amplio y staging de formación de grupo.
+  spatial_distortion: Escala heroica tradicional, profundidad amplia y staging de formación coral.
   atmosphere: Mítica, noble y aspiracional, con pureza de aventura antigua.
-  key_features: Formación de party, armadura reluciente, cielos pintados y códigos visuales de campaña épica.
+  key_features: Formación coral, brillo noble, fondos pintados, tapiz épico y códigos visuales de aventura clásica.
   creative_brief: >-
-    Define una gramática OVA-quest reusable donde iconografía medieval clásica,
-    composición de grupo y romanticismo aventurero conserven una épica sincera
-    y atemporal.
+    Define una gramática OVA-quest reusable donde ornamento clásico, composición
+    coral y romanticismo aventurero conserven épica sincera sin grupo fijo,
+    protección obligatoria, paisaje concreto, campaña o misión narrativa.
 avoidRules:
   - realistic
   - 3d render

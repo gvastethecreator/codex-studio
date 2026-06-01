@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-268
 packId: pack_05
-name: Kaiji - Neon Despair Gambling Pit
+name: Neon Despair Pressure Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Underground gambling hell, fluorescent sweat, jagged noses, impossible tension over money and survival, adult ruin made graphic and ugly
+  aesthetic: Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension, ruin made graphic and unflattering
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain, stale air haze
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk geometry, collapse-edge framing
   atmosphere: Desperate, electric, ugly, suspenseful
-  key_features: Gambling props, sweat-heavy close-ups, underground fluorescent rooms, sharp anxious silhouettes, brink-of-collapse facial acting
-  creative_brief: Fluorescent light interrogates men reduced to gambling chips in an underground hell where every bead of sweat is a mortgage on a life already forfeit to the table. Jagged features contort under impossible tension, ugliness made luminous by the cruel honesty of desperation and the electric hum of ruin.
+  key_features: Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion, brink-of-collapse acting
+  creative_brief: >
+    Treat any prompt as a pressure chamber of debt, shame, and impossible stakes:
+    fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty
+    should define the look without fixed surfaces, play structures, settings,
+    currency props, or named competition.
 avoidRules:
   - realistic
   - 3d render

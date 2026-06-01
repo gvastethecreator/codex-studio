@@ -7,21 +7,30 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
 visualDna:
-  aesthetic: Acoustic sanctuary using crater resonance for communal rites.
-  form_and_line: Concentric steps, sound fins, and suspended choir bridges.
-  color_palette: Pale lavender, silver, and charcoal.
-  lighting_setup: Gentle uplight and reflected crater glow.
-  material_texture: Resonant ceramics, tension wires, and moon dust patina.
-  render_quality: Atmospheric concept focused on sonic architecture.
-  spatial_distortion: Spiral descent into resonant core.
-  atmosphere: Serenity, resonance, and ritual repair.
-  key_features: Echo dishes, choir platforms, and tone altars.
+  aesthetic: Abstract resonant lunarpunk style where silence, sound waves, and pale ritual geometry soften the image.
+  form_and_line: Concentric rings, sound-fin blades, suspended linework, echo-dish curves, and spiral tone paths.
+  color_palette: Pale lavender, brushed silver, charcoal dust, moonlit white, and faint harmonic blue.
+  lighting_setup: Gentle uplight, reflected lunar glow, thin edge lights, and soft highlights on ceramic resonant forms.
+  material_texture: Resonant ceramic matte, tension-wire gleam, moon-dust patina, felt acoustic softness, and polished tone-stone surfaces.
+  render_quality: Atmospheric render focused on visible acoustic form, quiet spacing, and ritual calm.
+  spatial_distortion: Spiral descent and concentric rhythm make depth feel audible and softened.
+  atmosphere: Serenity, resonance, ritual repair, and communal breath.
+  key_features: Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.
   creative_brief: >-
-    Preserve crater choir-sanctuary grammar as a reusable style system:
-    concentric sonic architecture, resonant ritual healing, and
-    serenity-through-acoustics should remain coherent across subjects.
+    Apply crater choir-sanctuary as an abstract style treatment: make any
+    subject feel tuned, suspended, echoed, and ritually softened by visible
+    sound geometry.
 avoidRules: [photoreal, horror, cyber-neon, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-078.webp }
 attributes:
   negativePrompt: photoreal, horror, cyber-neon, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-lunarpunk, categoryName: 11. Corepunk — Lunarpunk, tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-lunarpunk,
+    categoryName: 11. Corepunk — Lunarpunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

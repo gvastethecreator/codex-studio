@@ -17,11 +17,11 @@ visualDna:
   color_palette: Warm Gold, Orange, Red
   lighting_setup: Directional, soft
   material_texture: Glowing atmosphere
-  render_quality: Romantic, travel
+  render_quality: Warm editorial realism
   spatial_distortion: Lens flare
   atmosphere: Warm, happy
   key_features: Warm cast
-  creative_brief: That fleeting threshold where the day inhales before surrendering to night, everything touched by honeyed radiance. Shadows stretch long and languid as if reaching toward the departing sun. The world suspended in amber, a warmth so tangible it feels like memory distilled into light.
+  creative_brief: 'Low-angle warm light turns any subject into amber atmosphere: long shadows, soft directional falloff, orange-red color cast, and occasional flare. The effect is not sunset scenery; it is honeyed temporal warmth applied as photographic light behavior.'
 avoidRules:
   - blue
   - cold

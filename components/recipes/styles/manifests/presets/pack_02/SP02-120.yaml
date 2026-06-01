@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Middle-school-desk doodle pushed into a full freakout scene, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed characters born from notebook margins
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms
+  form_and_line: Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching
+  color_palette: Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple
+  lighting_setup: Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability
+  material_texture: Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite
+  render_quality: Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion
+  spatial_distortion: Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding
   atmosphere: Rebellious, messy, hyperactive, juvenile
-  key_features: Permanent-marker texture, desk-doodle iconography, notebook margin monsters, vandal-energy linework, adolescent chaos
-  creative_brief: Notebook margins erupt into full-scale insurrection, the doodles that were supposed to stay small now colonizing the entire page with sharp-scented fury. Every figure vibrates with the energy of detention-bound creation — art made under the desk while the lesson drones on.
+  key_features: Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos
+  creative_brief: 'Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious marks.'
 avoidRules:
   - digital
   - HD

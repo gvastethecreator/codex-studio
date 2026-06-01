@@ -17,11 +17,11 @@ visualDna:
   color_palette: Pale grey, tarnished warm tone
   lighting_setup: Delicate
   material_texture: Prepared ground (bone ash)
-  render_quality: Da Vinci, precise
+  render_quality: Renaissance-informed precision with ultra-fine archival line discipline
   spatial_distortion: None
   atmosphere: Antique, delicate
   key_features: Fine lines
-  creative_brief: Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over months, warming from grey into sepia, the drawing aging visibly on the wall. Every stroke whispers of the Renaissance, of apprentices grinding bone ash at dawn.
+  creative_brief: Silver wire dragged across prepared ground leaves a mark so fine it seems etched by thought rather than metal. The line tarnishes over time, warming from grey into sepia, so the drawing appears to age inside its own surface. Every stroke should feel patient, exact, and almost irreversible.
 avoidRules:
   - photo
   - realistic
@@ -55,4 +55,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

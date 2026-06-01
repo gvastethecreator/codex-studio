@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Underground labyrinth quests, glowing crystals, lively guild culture, mythic ascent, bell-cranel growth, dungeon-floor levels, hestia-knife gift, familia-faction politics
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Adventurous, luminous, mythic, aspirational
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: Lantern light carves stories into dungeon walls — every crystal glow reveals another layer of the labyrinth, another rung on the ladder toward the divine. Guild halls hum with the mythology of ordinary adventurers betting everything on one more floor. Make the underground feel like ascension, darkness as the raw material of legend.
+  aesthetic: Dungeon-lantern adventure style, with luminous aspiration, layered depth, mythic growth, and warm light against unknown dark.
+  form_and_line: Upward-leading contours, lanternlike glow halos, tiered depth bands, clean fantasy detail, and heroic small-scale emphasis.
+  color_palette: Lantern gold, crystal blue, deep cavern teal, warm leather brown, divine white, and hopeful rose accents.
+  lighting_setup: Portable warm glow, crystalline bounce, darkness-to-light gradients, and vertical rays that imply ascent.
+  material_texture: Faceted crystal shimmer, rough mineral grain, worn cloth, soft leather, and luminous dust.
+  render_quality: Luminous fantasy anime polish with aspirational clarity, readable depth, and gentle mythic sparkle.
+  spatial_distortion: Layered descent-as-ascent geometry, vertical pull, and darkness shaped by warm focal light.
+  atmosphere: Adventurous, luminous, mythic, aspirational.
+  key_features: Lantern warmth, crystal depth, aspirational darkness, vertical growth, mythic smallness.
+  creative_brief: >-
+    Make any prompt feel like light earning its way upward: use warm focal glow,
+    mineral sparkle, and layered darkness to imply aspiration without requiring
+    a fixed underground location, faction system, or specific artifact.
 avoidRules:
   - realistic
   - 3d render

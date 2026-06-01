@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Teen friendship turned expedition dream, bright skies, travel prep, school uniforms becoming adventure gear, emotional propulsion through ordinary sincerity
-  form_and_line: Expedition-energy silhouette language, map-and-gear contour emphasis, and momentum-forward pose readability
+  aesthetic: Youth-expedition glow where friendship turns into forward motion, bright horizon energy, and ordinary sincerity becoming adventure
+  form_and_line: Expedition-energy silhouette language, practical contour emphasis, and momentum-forward pose readability
   color_palette: Polar whites, sky cyan gradients, uniform navy anchors, orange determination accents, and sunlit skin warmth
-  lighting_setup: Crisp travel-day daylight, high-albedo horizon bounce, and pre-departure interior practical warmth
-  material_texture: Nylon travel gear, insulated fabrics, map paper fibers, frost-kissed surfaces, and transit-scuffed luggage detail
+  lighting_setup: Crisp travel-day daylight, high-albedo horizon bounce, and warm pre-departure practical glow
+  material_texture: Nylon-like utility, insulated fabrics, paper fibers, frost-kissed surfaces, and transit-scuffed detail
   render_quality: Inspirational youth-expedition rendering with clean atmospheric breadth and emotional propulsion clarity
   spatial_distortion: Horizon-expansion perspective that amplifies collective forward motion
   atmosphere: Hopeful, brave, bright, uplifting
-  key_features: Travel gear, sky-heavy framing, friendship ensemble, determination close-ups, journey-prep montages
+  key_features: Sky-heavy framing, friendship ensemble, determination close-ups, practical readiness cues, and horizon expansion
   creative_brief: >-
-    Preserve youth-expedition glow grammar as a reusable style system:
-    sky-heavy optimism, friendship-driven momentum, and practical travel motifs
-    should stay coherent across different subjects.
+    Use the title as a style anchor for youth-expedition glow. Keep sky-heavy
+    optimism, friendship-driven momentum, and practical readiness without
+    requiring uniforms, maps, gear piles, or travel-prep scenes.
 avoidRules:
   - realistic
   - 3d render

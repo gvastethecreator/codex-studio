@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-064
 packId: pack_05
-name: Vinland Saga – Northern Historical Epic
+name: Wind-Scoured Redemption Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Wind-scoured coasts, grounded combat, emotional revenge, vast historical realism, viking longboats, farmstead redemption, duel-at-dawn, nordic fjords
+  aesthetic: Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance, moral weight, sparse horizon pressure
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth scuffing, subdued iron patina
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow diagonal weather flow
   atmosphere: Stoic, epic, historical, meditative
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: The sea carves fjords with the same patience it takes to forge a warrior. Revenge is a blade carried across oceans, its weight growing heavier with every wave. One day the sword is laid down not in defeat but in the discovery that peace requires more courage than war.
+  creative_brief: >
+    Render any subject with weathered restraint and moral afterweight: muted earths,
+    cold light, dry abrasion, and open negative space that feels earned rather than
+    empty. Keep the treatment portable, without historical cast, fixed geography,
+    props, or narrative confrontation.
 avoidRules:
   - realistic
   - 3d render

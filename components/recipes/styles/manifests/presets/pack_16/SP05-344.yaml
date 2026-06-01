@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-344
 packId: pack_16
-name: Blue Lock - Ego Cage Striker Breakout
+name: Ego Pressure Breakout Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Fútbol competitivo de mentalidad striker-centric, orientado a presión de definición y dominio de área.
+  aesthetic: Deporte competitivo de ego extremo, presión de definición, visión táctica agresiva y ruptura individualista.
   form_and_line: Líneas tensas de aceleración corta, torsión corporal agresiva y postura depredadora en finalización.
-  color_palette: Azules fríos de campo técnico, neón ácido de presión psicológica y rojos de amenaza en zona de gol.
-  lighting_setup: Iluminación de estadio high-contrast con foco en caja y recorte duro sobre atacante.
-  material_texture: Césped sintético de alta fricción, red de portería marcada, textiles de alto rendimiento y sudor especular.
-  render_quality: Sports frame de intensidad máxima con lectura instantánea de duelo delantero-portero.
-  spatial_distortion: Túnel visual hacia arco, compresión de distancia final y deformación dinámica por sprint terminal.
+  color_palette: Azules fríos técnicos, neón ácido de presión psicológica y rojos de amenaza decisiva.
+  lighting_setup: Iluminación high-contrast con foco cerrado y recorte duro sobre el sujeto.
+  material_texture: Superficies sintéticas de alta fricción, geometría de jaula, textiles de alto rendimiento y sudor especular.
+  render_quality: Sports frame de intensidad máxima con lectura instantánea de duelo interno y decisión final.
+  spatial_distortion: Túnel visual, compresión de distancia final y deformación dinámica por sprint terminal.
   atmosphere: Predatoria, obsesiva y clínicamente competitiva.
-  key_features: Perspectiva de red frontal, torque de disparo, mirada de presión y framing de último toque letal.
+  key_features: Torque corporal, mirada de presión, geometría de jaula abstracta, último instante decisivo y aura de ego.
   creative_brief: >-
-    Define una gramática reusable de striker-obsession donde presión de área,
-    lectura de portería y agresividad de finalización construyan identidad
-    visual transferible entre sujetos.
+    Aplica una gramática reusable de presión ego-breakout a cualquier prompt o imagen de entrada:
+    jaula geométrica, mirada depredadora y decisión letal sin imponer fútbol, redes, goles ni disparos.
 avoidRules:
   - realistic
   - 3d render

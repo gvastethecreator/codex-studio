@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-067
 packId: pack_05
-name: Made in Abyss – Lush Abyssal Wonder-Horror
+name: Lush Abyssal Toll Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Cute adventurers against impossible depths, bioluminescent mystery, dread beneath beauty, cave-raiders, white-whistle relics, nanachi companion, curse-of-the-abyss layers
+  aesthetic: Lush wonder hiding irreversible cost, bioluminescent mystery, depth-layered dread, delicate beauty under pressure, reliclike detail as visual lure
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Bioluminescent bloom, damp mineral grain, soft organic translucency, antique relic patina, mossy velvet matte, pressure-worn edges
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Layered vertical depth cues, scale uncertainty, beautiful foreground lure, ominous compression, circular pull composition
   atmosphere: Wondrous, terrifying, abyssal, enchanting
   key_features: Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language
-  creative_brief: Descent is a covenant with the unknown, each layer deeper extracting a toll more precious than the last. Bioluminescent flora lights the way down, but beauty here is a lure, not a gift. The abyss does not hate its explorers; it simply transforms them into something that can no longer return.
+  creative_brief: >
+    Recast any subject with beautiful depth that feels costly to enter: luminous
+    blooms, damp mineral texture, layered compression, and wonder turning quietly
+    unsafe. Keep the image portable, with no fixed explorers, lore systems,
+    travel premise, or literal worldbuilding requirement.
 avoidRules:
   - realistic
   - 3d render

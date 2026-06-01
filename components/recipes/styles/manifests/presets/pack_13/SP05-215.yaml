@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Fishing-by-the-river domestic healing, inherited hobbies, pastel water surfaces, practical tackle detail, soft family reconstruction through outdoor routine
-  form_and_line: Riverbank compositional flow lines, tackle-and-rod contour precision, and sibling proximity gesture softness
-  color_palette: Water pastel blues, grassy greens, neutral outdoorwear tones, fly-lure accents, and evening amber warmth
-  lighting_setup: Riverside daylight reflection fill, cloud-soft sky diffusion, and camp-cook practical highlights near water
-  material_texture: Nylon line sheen, rod cork grain, damp river stones, layered knit clothing, and lunch-kit surfaces
-  render_quality: Pastoral-healing rendering with practical hobby fidelity and calm relational warmth
-  spatial_distortion: Gentle river-depth perspective easing to support restorative pacing
+  aesthetic: Slow Loop title anchor translated into reflective hobby-healing, inherited routine, pastel calm, practical intimacy, and soft family reconstruction
+  form_and_line: Gentle flow-line composition, loop-and-thread contour precision, close relational spacing, and careful hand-activity softness
+  color_palette: Water pastel blues, grassy greens, neutral outdoorwear tones, lure-bright accent sparks, and evening amber warmth
+  lighting_setup: Reflective daylight fill, cloud-soft sky diffusion, small practical highlights, and low-contrast warmth around shared routines
+  material_texture: Nylon-line sheen, cork-like grain, damp stone matte, layered knit clothing, and packed-lunch surface softness
+  render_quality: Pastoral-healing rendering with practical hobby fidelity, calm relational warmth, and quiet restorative pacing
+  spatial_distortion: Gentle depth easing and looped visual paths used to support reflection, not to mandate water or fishing scenes
   atmosphere: Pastoral, healing, quiet, tender
-  key_features: Fishing gear, riverside backdrops, sibling closeness, reflective water light, practical outdoor textures
+  key_features: Reflective hobby rhythm, practical line motifs, inherited-routine intimacy, soft outdoor textures, calm relational spacing
   creative_brief: >-
-    Preserve riverside-fishing sisters grammar as a reusable style language:
-    practical tackle realism, reflective water calm, and inherited-hobby healing
-    intimacy should remain stable across subjects.
+    Use Slow Loop as a style anchor for practical healing through routine:
+    reflective calm, inherited hobby intimacy, and line-loop visual motifs should
+    transfer without requiring fishing gear, riverside backdrops, or siblings.
 avoidRules:
   - realistic
   - 3d render

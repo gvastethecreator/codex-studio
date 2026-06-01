@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-290
 packId: pack_16
-name: Jin-Roh - Riot Smoke Tragedy Frame
+name: Paramilitary Melancholy Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -12,16 +12,18 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Tragedia político-militar de seguridad estatal, con iconografía paramilitar pesada y humanidad reprimida bajo doctrina de control.
-  form_and_line: Siluetas blindadas macizas, contornos rígidos de equipo táctico y encuadres cerrados que enfatizan alienación del cuerpo.
-  color_palette: Grises carbón industriales, rojos ópticos de amenaza, marrones de humo urbano y desaturados fríos de crisis prolongada.
-  lighting_setup: Contraluces de incendio y faros tácticos, neblina densa de disturbio y highlights selectivos en visores y metal.
-  material_texture: Armadura mate con abrasión, concreto urbano ennegrecido, humo particulado y telas técnicas de uso operativo.
+  aesthetic: Tragedia político-militar abstracta, con peso doctrinal, humanidad reprimida y amenaza institucional.
+  form_and_line: Siluetas macizas, contornos rígidos, encuadres cerrados y geometría opresiva que puede aplicarse a cualquier sujeto.
+  color_palette: Grises carbón industriales, rojos ópticos de amenaza, marrones de humo y desaturados fríos de crisis prolongada.
+  lighting_setup: Contraluces de incendio, haces tácticos, neblina densa de crisis y highlights selectivos en visores y metal.
+  material_texture: Blindaje mate con abrasión, concreto ennegrecido, humo particulado y telas técnicas de uso operativo.
   render_quality: Acabado cinematográfico severo con lectura táctica impecable, detalle industrial y dramatismo psicológico contenido.
-  spatial_distortion: Perspectiva urbana comprimida por barricadas y humo, con profundidad fragmentada que sugiere cerco institucional.
+  spatial_distortion: Perspectiva comprimida por masas opresivas y humo, con profundidad fragmentada que sugiere cerco institucional.
   atmosphere: Opresiva, trágica, disciplinaria, crepuscular.
-  key_features: Visores rojos, masa blindada, calle en humo, tensión de proximidad emocional y signos de conflicto civil.
-  creative_brief: Construye una gramática reusable de melancolía paramilitar para cualquier sujeto, combinando ópticas rojas, densidad de humo y composición de deber contra conciencia.
+  key_features: Ópticas rojas abstractas, humo denso, masa visual pesada, cercanía emocional y conflicto entre deber y conciencia.
+  creative_brief: >-
+    Construye una gramática reusable de melancolía paramilitar para cualquier prompt o imagen de entrada:
+    control, humo y peso moral sin imponer blindajes, calles de disturbio, armas ni fuerzas específicas.
 avoidRules:
   - realistic
   - 3d render

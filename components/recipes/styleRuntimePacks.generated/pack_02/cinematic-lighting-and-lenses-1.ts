@@ -11,14 +11,14 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Modern action movie',
       form_and_line: 'None',
-      color_palette: 'Teal shadows, Orange skin, complementary grade, cyan bias',
+      color_palette: 'Teal shadows, orange highlights, complementary grade, cyan bias',
       lighting_setup: 'High contrast, backlit rim, dramatic underlight',
       material_texture: 'Digital clean, noise-free, slick compositing',
       spatial_distortion: 'Lens flare, anamorphic streak, specular bloom',
       atmosphere: 'Intense, cinematic, bombastic spectacle, summer tentpole',
-      key_features: 'Color grade, slow-motion hero walk, debris rain',
+      key_features: 'Teal-orange grade, rim light, spectacle bloom',
       creative_brief:
-        "Coolness pools in every shadow while warmth clings to skin like a second sun, the two temperatures locked in an embrace that defines the modern epic. Debris hangs suspended in amber light, and the hero's silhouette carves itself against a sky on fire.",
+        'Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights, slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.',
     },
   },
   {
@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'studio lighting, stable',
     style: {
       aesthetic:
-        'Jump-cut nouvelle vague street cinema, Godard film energy, Paris streets, natural light rebellion, existential cool',
+        'Jump-cut nouvelle vague cinema, Godard film energy, natural light rebellion, existential cool',
       form_and_line: 'None',
       color_palette: 'Black and White high contrast, gritty grey, silver halide',
       lighting_setup: 'Natural light, available window, street-level ambience',
@@ -36,9 +36,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Handheld, raw, unpolished vérité, rebellious imperfection',
       spatial_distortion: 'Jump cut feel, temporal rupture, axis-breaking edit',
       atmosphere: 'Cool, intellectual, existential, restless',
-      key_features: 'Natural, location shooting, cigarette smoke',
+      key_features: 'Natural light, handheld rupture, location immediacy',
       creative_brief:
-        'The camera shrugs off polish and wanders Paris streets like a restless flâneur, capturing glances that last a beat too long and silences that say more than dialogue. Light spills through apartment windows as if it too is merely passing through, uninvited but welcome.',
+        'French New Wave style rejects polish through handheld framing, available light, 16mm grain, jump-cut rupture, and casual location immediacy. Apply rebellious cinematic looseness to any subject without requiring Paris, street scenes, cigarettes, apartments, or dialogue.',
     },
   },
   {
@@ -47,8 +47,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'steady, cinematic',
     style: {
-      aesthetic:
-        'Improvised panic-horror footage, Blair Witch style, shaking handheld dread, forest panic, raw survival terror',
+      aesthetic: 'Improvised panic-horror footage, shaking handheld dread, raw survival terror',
       form_and_line: 'None',
       color_palette: 'Low light digital, crushed blacks, sickly green tint',
       lighting_setup: 'Flashlight only, single beam cone, terrified sweep',
@@ -56,9 +55,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Shaky, amateur, disorienting, raw panic-cam',
       spatial_distortion: 'Motion blur, smear, headlamp judder',
       atmosphere: 'Terrifying, real, primal fear, unseen threat',
-      key_features: 'Timestamp, running footsteps, heavy breathing',
+      key_features: 'Flashlight cone, timestamp-like burn-in, panic-cam smear',
       creative_brief:
-        'The frame trembles with the rhythm of a racing pulse, a single flashlight beam carving frantic arcs through absolute darkness. Digital noise clots into shapes that the eye insists are trees — or something standing among them — before the sensor crushes everything back into sickly green oblivion.',
+        'Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw survival texture without forcing forest, footsteps, breathing, or unseen monster.',
     },
   },
   {
@@ -67,18 +66,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'modern action',
     style: {
-      aesthetic:
-        '70s studio martial arts cinema, Shaw Brothers spectacle, flying kicks, palace sets, acrobatic precision',
+      aesthetic: '70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision',
       form_and_line: 'None',
       color_palette: 'Saturated primaries, golden palace, deep red banners',
       lighting_setup: 'Studio set, flat broad key, painted backdrop',
-      material_texture: 'Film grain, silk robes, wooden staff, stone courtyard',
+      material_texture: 'Film grain, silk sheen, lacquered prop texture, painted set surface',
       render_quality: 'Choreographed, acrobatic, wire-fu precision, rhythmic combat',
       spatial_distortion: 'Snap zoom, crash zoom, dramatic push-in',
-      atmosphere: 'Action, classic, honor-bound conflict, martial discipline',
-      key_features: 'Wide shot, long take fight, weapon showcase',
+      atmosphere: 'Action, classic, rhythmic discipline',
+      key_features: 'Wide staging, crash zoom, choreographic rhythm',
       creative_brief:
-        'Bodies become calligraphy, each kick and parry tracing invisible brushstrokes across painted palace halls. Beneath silk banners the color of dried blood, combat unfolds as ceremony — rhythm and restraint giving way to sudden, breathtaking flight.',
+        'Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light, saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep martial-cinema energy without forcing fighters, palace sets, weapons, or combat.',
     },
   },
   {
@@ -88,17 +86,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cgi, realistic',
     style: {
       aesthetic:
-        'Black-and-white suitmation monster spectacle, Godzilla 1954, miniature city destruction, lumbering scale terror',
+        'Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror',
       form_and_line: 'None',
       color_palette: 'B&W or Eastmancolor, muted desaturated, faded film stock',
       lighting_setup: 'Miniature set, forced perspective, matte backdrop light',
-      material_texture: 'Rubber suit, latex monster, toy tank, balsa wood buildings',
+      material_texture: 'Rubber suit texture, latex sheen, toy-scale practical material',
       render_quality: 'Tokusatsu, scale model, practical destruction, charming artifice',
       spatial_distortion: 'Stiff movement, lumbering gait, wire-work float',
-      atmosphere: 'Epic, destruction, national panic, citizen evacuation',
-      key_features: 'Low angle, smashed power lines, fleeing crowds',
+      atmosphere: 'Epic, handmade, scale panic',
+      key_features: 'Low angle, miniature scale, charming artifice',
       creative_brief:
-        'Towering motion lurches across miniature cityscapes where balsa-wood skyscrapers collapse with the theatrical conviction of a stage set meeting its fate. There is profound sincerity in the artifice — rubber and latex convinced, frame by frame, of their own terrifying weight.',
+        'Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective, miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice. Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.',
     },
   },
   {
@@ -108,17 +106,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, clean',
     style: {
       aesthetic:
-        'Dusty operatic frontier cinema, Sergio Leone style, spaghetti western epic, extreme close-up showdowns, wide barren landscapes, Morricone mood',
+        'Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood',
       form_and_line: 'None',
       color_palette: 'Warm, dusty yellow, sun-bleached ochre, deep brown',
       lighting_setup: 'Harsh sun, unflinching overhead, high noon glare',
-      material_texture: 'Techniscope grain, gritty sand, weathered leather',
-      render_quality: 'Epic, gritty, widescreen desert, sun-baked',
-      spatial_distortion: 'Extreme close-up, eyes-only, tension squeeze',
+      material_texture: 'Techniscope grain, gritty dust, weathered surface',
+      render_quality: 'Epic, gritty, widescreen, sun-baked',
+      spatial_distortion: 'Extreme close-up compression, tension squeeze',
       atmosphere: 'Tense, hot, dry wind, looming death',
-      key_features: 'Wide angle, lone figure, pistol holster',
+      key_features: 'Wide framing, extreme close tension, dust haze',
       creative_brief:
-        'The sun does not illuminate — it interrogates, bleaching bone and stone under a sky stretched thin as old leather. Eyes narrow to slits in close-quarter standoffs where the wind carries dust and the weight of an unholstered decision.',
+        'Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert, guns, holsters, lone riders, or frontier props.',
     },
   },
   {
@@ -131,13 +129,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'None',
       color_palette: 'Deep Red, Blue, Green gels, saturated primaries, blood crimson',
       lighting_setup: 'Unnatural colored light, gel-drenched, theatrical splash',
-      material_texture: 'Film grain, leather gloves, polished blade',
-      render_quality: 'Stylish, bloody, baroque violence, operatic death',
-      spatial_distortion: 'Black gloves, POV killer, obscured face',
-      atmosphere: 'Mystery, stylish, psychosexual dread, hallucinatory',
-      key_features: 'Color gels, gloved hand, ornate weapon',
+      material_texture: 'Film grain, polished surfaces, leatherlike shadow',
+      render_quality: 'Stylish, baroque, operatic color dread',
+      spatial_distortion: 'POV unease, obscured geometry',
+      atmosphere: 'Mystery, stylish, hallucinatory dread',
+      key_features: 'Color gels, polished threat, baroque shadow',
       creative_brief:
-        'Light itself becomes the weapon — crimson bleeding across velvet, cobalt slicing through darkness, emerald pooling on polished steel. Each frame is a crime scene staged as a painting, where the gloved hand belongs as much to the canvas as to the killer.',
+        'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime scenes.',
     },
   },
   {
@@ -146,18 +144,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'cgi',
     style: {
-      aesthetic:
-        'Scrappy analog space opera, Star Wars A New Hope, used-future rebellion, practical model magic',
+      aesthetic: 'Scrappy analog space opera, used-future adventure, practical model magic',
       form_and_line: 'None',
       color_palette: 'Used future, worn ochre, grey panel, rebel olive, droid beige',
-      lighting_setup: 'Studio, practical spacecraft, cockpit glow',
+      lighting_setup: 'Studio practicals, cockpit-like glow, optical composite light',
       material_texture: 'Model kitbash, plastic parts, weathered metal, found-object greeble',
       render_quality: 'Practical FX, optical composite, matte painting, miniature magic',
       spatial_distortion: 'None',
-      atmosphere: 'Adventure, dirty, swashbuckling rebellion, cantina grit',
-      key_features: 'Greebles, astromech, hyperspace streak',
+      atmosphere: 'Adventure, dirty, swashbuckling, handmade wonder',
+      key_features: 'Greebles, optical composite, worn future',
       creative_brief:
-        'Starships built from salvaged dreams drift through a galaxy where every hull plate tells a story of hardship and hope. The camera lingers on grease-stained panels and jury-rigged consoles, finding heroism in the worn edges of rebellion. Let each frame feel like a matte painting come alive, where wonder is born from scrap metal and starlight.',
+        '70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels, optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.',
     },
   },
   {
@@ -166,24 +163,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'color, bright, happy',
     style: {
-      aesthetic: '1940s crime drama',
+      aesthetic: '1940s noir contrast',
       form_and_line: 'None',
       color_palette: 'Black and White, deep charcoal, silver highlights',
       lighting_setup: 'Venetian blinds shadow, directional key, slatted light',
       material_texture: 'Film grain, silver gelatin, soft halation',
       render_quality: 'Cinematic, moody, high-contrast, shadow-rich',
       spatial_distortion: 'None',
-      atmosphere: 'Suspense, dark, moral ambiguity, wet asphalt',
-      key_features: 'High contrast, hard-boiled detective, femme fatale silhouette',
+      atmosphere: 'Suspense, dark, moral ambiguity, shadow pressure',
+      key_features: 'High contrast, slatted light, silver edge',
       creative_brief:
-        'A single lamp cuts through venetian slats, carving zebra stripes across a rain-slick sidewalk where every puddle holds a confession. The city exhales cigarette smoke and betrayal into pools of ink-black shadow, while silver edges trace the silhouette of someone who knows too much.',
+        'Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key, deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood without forcing detective, city, sidewalk, cigarette, or femme fatale.',
     },
   },
   {
     id: 'SP02-007',
     name: 'Silent Film',
     category: '1. Cinematic Lighting And Lenses',
-    negativePrompt: 'sound, color',
+    negativePrompt: 'sound, color, readable text',
     style: {
       aesthetic: '1920s cinema',
       form_and_line: 'None',
@@ -192,10 +189,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Flicker, dust, gate weave, silver emulsion',
       render_quality: 'Fast motion feel, 18fps projection, flickering speed',
       spatial_distortion: 'Vignette, rounded frame edge, iris close',
-      atmosphere: 'Expressive, old, melodramatic gesture, haunted silence',
-      key_features: 'Intertitle card, title cards, exaggerated performance',
+      atmosphere: 'Expressive, old, melodramatic, haunted silence',
+      key_features: 'Flicker, vignette, iris-era framing',
       creative_brief:
-        'Ghosts flicker at eighteen frames per second, their gestures magnified into a language more articulate than speech. Amber-toned stillness hums with a frequency just below hearing, where title cards punctuate the silence like notes in a score composed entirely of longing.',
+        'Silent film style gives any subject amber monochrome age: 18fps flicker, dust, gate weave, orthochromatic flatness, vignette, rounded frame edges, and melodramatic gesture implied by composition. Keep title-card-era rhythm without requiring people, text cards, or performance.',
     },
   },
   {
@@ -211,10 +208,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Digital video, DSLR sensor, consumer camera',
       render_quality: 'Real, awkward, improvised dialogue, unpolished truth',
       spatial_distortion: 'Out of focus, soft rack, distracted framing',
-      atmosphere: 'Intimate, talky, relationship friction, honest discomfort',
-      key_features: 'Handheld, naturalistic dialogue, apartment clutter',
+      atmosphere: 'Intimate, awkward, honest discomfort',
+      key_features: 'Handheld, accidental framing, available light',
       creative_brief:
-        'Nothing is hidden because nothing is staged — a window lets in whatever light the afternoon offers, and a camera observes conversations with the patience of someone who forgot it was recording. Beauty surfaces in the accidental: a pause, a glance off-camera, the clutter of a life not tidied for display.',
+        'Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without requiring conversations, apartments, people, or relationship drama.',
     },
   },
   {
@@ -231,9 +228,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Quirky, precise, diorama-perfect, miniature precision',
       spatial_distortion: 'Center frame, locked-down composition, 90-degree pans',
       atmosphere: 'Whimsical, deadpan, storybook melancholy, curated nostalgia',
-      key_features: 'Symmetry, cross-section sets, handwritten typography',
+      key_features: 'Symmetry, diorama precision, label-like spacing',
       creative_brief:
-        "The world organizes itself into perfect halves, each side a mirror that whispers its own quiet joke. Colors arrive powdered and soft as confectioner's sugar, while every object sits exactly where melancholy placed it — in a diorama of longing dressed as whimsy.",
+        'Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette, flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson grammar without forcing cross-section sets, typography, or quirky characters.',
     },
   },
   {
@@ -243,17 +240,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern cgi',
     style: {
       aesthetic:
-        'Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk city, perpetual night, towering megastructures, synth underscore',
+        'Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore',
       form_and_line: 'None',
       color_palette: 'Neon Blue/Pink + Smoke, electric magenta, toxic green',
       lighting_setup: 'Low key + Neon, volumetric haze, wet reflections',
-      material_texture: 'Anamorphic lens flare, rain-slicked surfaces, brushed metal',
+      material_texture: 'Anamorphic lens flare, wet reflective surfaces, brushed metal',
       render_quality: 'Atmospheric, practical FX, miniatures, matte painting',
       spatial_distortion: 'None',
       atmosphere: 'Dystopian, cool, synthetic, nocturnal',
-      key_features: 'Smoke, towering ads, spinner vehicle',
+      key_features: 'Smoke, neon haze, wet reflections',
       creative_brief:
-        'Perpetual midnight breathes through towering corporate monoliths, their surfaces alive with flickering advertisements for futures that never arrived. Light bleeds magenta and cyan through synthetic fog, pooling on wet asphalt like the afterimage of a dream half-remembered.',
+        '80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar without forcing megacity, ads, vehicles, or corporate monoliths.',
     },
   },
   {
@@ -263,17 +260,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern digital',
     style: {
       aesthetic:
-        'Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread, urban sprawl, brain-hack paranoia',
+        'Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread',
       form_and_line: 'Cel shaded',
       color_palette: 'Green tint, dark, sickly CRT glow, deep shadow cyan',
-      lighting_setup: 'City glow, neon signage bounce, underlit monitor',
+      lighting_setup: 'Neon bounce, CRT underlight, low-key cyber glow',
       material_texture: 'Cel grain, painted acetate, hand-drawn texture',
       render_quality: 'Detailed, philosophical, intricate background, mood-drenched',
-      spatial_distortion: 'Wires, cable tangles, data tendrils',
+      spatial_distortion: 'Cablelike tangles, data-tendril abstraction',
       atmosphere: 'Tech, moody, conspiratorial, rain-slick isolation',
-      key_features: 'Bloom, cybernetic implant, low-light cityscape',
+      key_features: 'Cathode bloom, cel grain, techno-organic density',
       creative_brief:
-        'Shadows pool in cel-painted depths where green cathode glow seeps through the cracks of a networked metropolis. Each frame is dense with hand-drawn dread — cables snaking like exposed nerves, rain streaking down acetate windows, and a question hanging in the air about where the machine ends and the mind begins.',
+        '90s cyberpunk anime style renders any subject in cel-painted tech dread: green CRT glow, cyan shadow, acetate grain, dense linework, cablelike abstraction, bloom, and rain-slick isolation. Keep Ghost in the Shell philosophy as mood without forcing cityscape, implants, rain windows, or brain-hack props.',
     },
   },
   {
@@ -283,7 +280,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'faded, dark',
     style: {
       aesthetic:
-        'Golden-age technicolor fantasy, Wizard of Oz style, three-strip glory, hyper-saturated dream worlds, musical spectacle, storybook transition',
+        'Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle',
       form_and_line: 'None',
       color_palette: 'Hyper-saturated, ruby red, emerald green, sapphire blue',
       lighting_setup: 'High key studio, broad soft fill, painted backdrop',
@@ -291,9 +288,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Vibrant, classic, theatrical, luminous',
       spatial_distortion: 'None',
       atmosphere: 'Joyful, theatrical, magical spectacle, storybook wonder',
-      key_features: 'Red is very red, yellow brick road, ruby slippers',
+      key_features: 'Dye-transfer saturation, theatrical color clarity',
       creative_brief:
-        'Colors refuse to whisper — they sing, each hue pushed past realism into a realm where emerald cities gleam and ruby slippers pulse with inner light. The world is a painted diorama viewed through a lens that turns ordinary spectacle into something closer to pure feeling.',
+        'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging.',
     },
   },
   {
@@ -309,10 +306,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Scratches, cigarette burns, torn splices, dust hair',
       render_quality: 'Damaged film, degraded, sleazy, exploitation-grade',
       spatial_distortion: 'Film splice, jumpy gate weave, missing frame',
-      atmosphere: 'Trashy, violent, lurid, midnight-movie danger',
+      atmosphere: 'Trashy, lurid, midnight-movie danger',
       key_features: 'Dirt, cue marks, grain storm',
       creative_brief:
-        'Every frame arrives wounded — scarred by projector teeth, faded by years of neglect, bleeding magenta at the edges like a half-healed bruise. This is cinema dragged through the gutter and projected onto a peeling wall in a room where the exit sign flickers and nobody wants to leave.',
+        'Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices, magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.',
     },
   },
   {
@@ -328,10 +325,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: '60fps video (Soap effect), hyper-smooth motion, interlaced',
       render_quality: 'Dreamy, cheap, high-frame-rate unreality, studio artifice',
       spatial_distortion: 'Soft glow, diffusion filter haze, vaseline smear',
-      atmosphere: 'Dramatic, romance, cliffhanger stare, scandalous pause',
-      key_features: 'Vaseline lens, melodramatic zoom, doorway entrance',
+      atmosphere: 'Dramatic, romantic, suspended melodrama',
+      key_features: 'Diffusion haze, melodramatic zoom, high-frame-rate gloss',
       creative_brief:
-        'A world seen through a veil of perfume and longing, where every glance across the room carries the weight of unspoken betrayal. Surfaces glow with an almost liquid softness, reality dissolved into yearning and spite. Time hangs suspended in the space between a revelation and the commercial break.',
+        'Soap opera style dissolves any subject into high-key melodrama: pastel wash, pearl glow, backlit halo, vaseline-lens diffusion, hyper-smooth video motion, and a suspended cliffhanger pause. Keep daytime-TV unreality without requiring romance, doorways, faces, or scandal.',
     },
   },
   {
@@ -340,18 +337,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'cinematic, dark',
     style: {
-      aesthetic:
-        'Cozy multi-camera apartment set, Friends/Seinfeld warmth, laugh-track comfort, 90s New York vibe',
+      aesthetic: 'Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe',
       form_and_line: 'None',
-      color_palette: 'Bright, flat, warm beige wall, purple door, cream sofa',
+      color_palette: 'Bright flat warmth, beige, cream, soft accent color',
       lighting_setup: 'Multi-camera lighting, broad even wash, audience-ready spill',
       material_texture: 'Videotape, SD broadcast, soft analog edges',
       render_quality: 'Studio audience feel, live-tap energy, punch-line timing',
       spatial_distortion: 'None',
-      atmosphere: 'Comfort, funny, hangout warmth, nostalgic security',
-      key_features: '3-wall set, central sofa, kitchen doorway',
+      atmosphere: 'Comfort, funny, nostalgic security',
+      key_features: 'Multi-camera wash, 3-wall-set clarity, sitcom warmth',
       creative_brief:
-        'Warm light spills across familiar furniture like an old friend settling into a favorite chair. Every corner of the room holds the echo of laughter, the walls saturated with decades of shared jokes and knowing glances. The frame itself becomes a hug, wrapping the viewer in the amber glow of belonging.',
+        '90s sitcom style wraps any subject in broad multi-camera comfort: flat warm light, SD videotape softness, audience-ready exposure, beige/cream palette, and punch-line timing. Keep familiar hangout warmth without requiring apartments, sofas, kitchens, New York, or cast members.',
     },
   },
   {
@@ -360,17 +356,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'movie',
     style: {
-      aesthetic: 'Breaking news',
-      form_and_line: 'Chyron overlay',
-      color_palette: 'Studio Blue, anchor navy, red accent, white desk',
+      aesthetic: 'Broadcast-news urgency',
+      form_and_line: 'Lower-third graphic bands',
+      color_palette: 'Studio blue, navy, red accent, clean white',
       lighting_setup: 'Flat studio, even key, hair light separation',
       material_texture: 'HD Video, crisp digital, broadcast sharpness',
       render_quality: 'Live, urgent, breaking-news tension, satellite delay',
       spatial_distortion: 'Ticker tape, scrolling crawl, side panel',
-      atmosphere: 'Serious, info, authoritative urgency, global anxiety',
-      key_features: 'Lower third, desk logo, anchor duo',
+      atmosphere: 'Serious, informational, authoritative urgency',
+      key_features: 'Lower-third bars, ticker rhythm, studio sharpness',
       creative_brief:
-        'The screen becomes a window onto a world holding its breath, where information races ahead of understanding. Cool blue light bathes the bearer of tidings, their composure a dam against the flood of what must be told. Every graphic, every ticker, pulls the eye toward the edge of the unfolding.',
+        'News broadcast style frames any subject as urgent information: cool blue studio light, crisp HD video, red accent graphics, lower-third-like bands, crawl rhythm, and authoritative flatness. Keep live-news tension without requiring anchors, desks, logos, or readable text.',
     },
   },
   {
@@ -380,17 +376,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, normal',
     style: {
       aesthetic:
-        'Late-90s luxury music video, Hype Williams fishbowl, shiny suits, tunnel vision, hip-hop opulence',
+        'Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss',
       form_and_line: 'None',
-      color_palette: 'Shiny suits, chrome, platinum, ice white, purple velvet',
+      color_palette: 'Chrome, platinum, ice white, purple velvet',
       lighting_setup: 'Studio tunnel, keyed spot, dramatic back silhouette',
       material_texture: 'Fisheye lens, curved glass, spherical distortion',
       render_quality: 'Glossy, expensive, music-video maximalism, diamond-studded',
       spatial_distortion: 'Distorted wide angle, fishbowl warp, tunnel perspective',
       atmosphere: 'Cool, flashy, hip-hop royalty, aspirational excess',
-      key_features: 'Fisheye, spinning rims, slow-motion strut',
+      key_features: 'Fisheye warp, chrome gloss, slow-motion opulence',
       creative_brief:
-        'The world curves into a glittering bubble where chrome catches light and bodies move through space like liquid neon. Every surface sweats excess, every angle distorts into myth, the lens itself drunk on abundance. This is the frame where swagger becomes scripture and the slow-motion strut is a prayer.',
+        'Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion, chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.',
     },
   },
   {
@@ -399,36 +395,35 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'movie',
     style: {
-      aesthetic: 'Live game',
-      form_and_line: 'Score overlay',
-      color_palette: 'Saturated turf, vivid green, team-color accents, sky blue',
+      aesthetic: 'Live sports broadcast',
+      form_and_line: 'Scorebug graphic structure',
+      color_palette: 'Saturated field green, team-color accents, sky blue',
       lighting_setup: 'Stadium lights, multi-source flood, uniform exposure',
-      material_texture: 'HD Slow mo, Phantom camera crisp, droplet-perfect',
-      render_quality: 'Telephoto, action, field-level compression, athlete isolation',
+      material_texture: 'HD slow-motion crispness, droplet-perfect detail',
+      render_quality: 'Telephoto action, field-level compression, subject isolation',
       spatial_distortion: 'None',
       atmosphere: 'Exciting, live, roaring crowd, championship tension',
-      key_features: 'Scoreboard, replay wipe, telestrator circle',
+      key_features: 'Scorebug feel, replay wipe, telestrator circle',
       creative_brief:
-        'The roar of thousands condenses into a single frame, a frozen heartbeat torn from the chest of the game. Grass glows with impossible green under the cathedral of stadium light, every droplet of sweat a jewel in slow motion. The scoreline hovers like a verdict waiting to be overturned.',
+        'Sports broadcast style gives any subject live-game energy: saturated field color, stadium-like floodlight, telephoto compression, replay-wipe graphics, scorebug structure, and slow-motion crispness. Keep championship tension without requiring athletes, grass, crowd, scoreboards, or teams.',
     },
   },
   {
     id: 'SP02-030',
     name: 'Nature Documentary',
     category: '1. Cinematic Lighting And Lenses',
-    negativePrompt: 'human, city',
+    negativePrompt: 'cheap studio, artificial set',
     style: {
-      aesthetic:
-        'Premium nature documentary, BBC Earth, wild kingdom, intimate wildlife, global spectacle',
+      aesthetic: 'Premium nature documentary, BBC Earth-style patience, global spectacle',
       form_and_line: 'None',
       color_palette: 'Natural, vibrant, savannah gold, ocean teal, rainforest emerald',
       lighting_setup: 'Golden hour, magic-hour rim, dappled canopy, underwater shaft',
-      material_texture: 'Ultra HD, 8K texture, feather detail, fur strand',
-      spatial_distortion: 'Slow motion, wing-beat freeze, droplet suspension',
-      atmosphere: 'Majestic, wild, patient reverence, untamed spectacle',
-      key_features: 'Telephoto, animal portrait, migration panorama',
+      material_texture: 'Ultra HD, 8K natural texture, fine surface detail',
+      spatial_distortion: 'Slow motion, motion freeze, droplet suspension',
+      atmosphere: 'Majestic, patient reverence, untamed spectacle',
+      key_features: 'Telephoto reverence, slow-motion clarity, natural spectacle',
       creative_brief:
-        'The camera becomes invisible, a ghost that earns the trust of fang and feather through silence and patience. Light bends around fur and scale with a clarity that borders on the sacred, each frame a cathedral window onto a world that predates and outlasts us. Here, slow motion is not an effect but a form of reverence.',
+        'Nature documentary style gives any subject patient reverence: golden rim light, telephoto intimacy, ultra-HD texture, slow-motion clarity, natural vibrant color, and invisible-camera restraint. Keep BBC Earth grandeur without requiring wildlife, migration, fur, feathers, humans absent, or city exclusion.',
     },
   },
   {
@@ -445,9 +440,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Edgy, fast, rapid-fire montage, music-video relentlessness',
       spatial_distortion: 'Morphing, image warp, video feedback, liquid dissolve',
       atmosphere: 'Rebellious, cool, anti-establishment, mosh-pit energy',
-      key_features: 'Fast cuts, graffiti text, band logo, fisheye crowd',
+      key_features: 'Fast-cut feel, scribble overlays, feedback warp',
       creative_brief:
-        'The negative is scratched raw, frames colliding like bodies in a pit where feedback loops birth new color spectrums. Neon cuts through the bleach-bypassed darkness, a signal from the underground hijacking the broadcast. Every cut is a manifesto, every dissolve a small riot against the clean and the safe.',
+        'MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative video rebellion without requiring bands, crowd, logos, graffiti text, or mosh scenes.',
     },
   },
   {
@@ -456,17 +451,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'scripted',
     style: {
-      aesthetic: 'Interview chair',
+      aesthetic: 'Reality TV confessional interview',
       form_and_line: 'None',
       color_palette: 'Saturated, pumped skin tones, jewel accent, matte shadow',
-      lighting_setup: 'Ring light, catchlight halo, soft face wrap',
-      material_texture: 'HD Video, sharp digital, retouched skin',
+      lighting_setup: 'Ring light, catchlight halo, soft frontal wrap',
+      material_texture: 'HD video, sharp digital, retouched surface',
       render_quality: 'Produced, fake, manufactured drama, confessional intimacy',
       spatial_distortion: 'Green screen back, chroma-key spill, composited backdrop',
-      atmosphere: 'Gossip, drama, backstabbing tears, producer manipulation',
-      key_features: 'Eye contact, direct-to-camera, tearful close-up',
+      atmosphere: 'Manufactured drama, direct intimacy',
+      key_features: 'Direct-to-camera framing, ring catchlight, composited backdrop',
       creative_brief:
-        'The subject sits alone yet performs for millions, a single tear catching the engineered gleam of the ring light. Behind them, nowhere dissolves into anywhere, a void that becomes whatever the story demands. Intimacy is manufactured here, but the trembling lip never lies.',
+        'Reality TV confessional style makes any subject overproduced and intimate: ring-light halo, saturated skinlike tones, chroma-key spill, direct-to-camera framing, and manufactured emotional closeness. Keep confessional drama without requiring chair, person, tears, or gossip plot.',
     },
   },
   {
@@ -483,9 +478,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Low res, grainy, surveillance-grade, compressed blockiness',
       spatial_distortion: 'Wide angle distortion, convex warp, overhead mount',
       atmosphere: 'Creepy, voyeur, institutional coldness, anonymous watching',
-      key_features: 'Timestamp, camera ID overlay, motion detection box',
+      key_features: 'Timestamp-like overlay, camera ID marks, motion-box geometry',
       creative_brief:
-        'A fixed gaze watches without blinking, reducing the world to a grainy theater of light and shadow where every figure is a suspect. The timestamp ticks forward without mercy, recording hours no one was meant to see. Truth, in these frames, is neither kind nor curated.',
+        'CCTV media style fixes any subject under anonymous surveillance: black-and-white compression, convex wide-angle warp, scanlines, pixel smear, hot whites, and timestamp-like UI marks. Keep security-cam coldness without forcing people, suspects, crime, or literal readable overlays.',
     },
   },
   {
@@ -494,17 +489,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'messy',
     style: {
-      aesthetic: 'Food prep',
+      aesthetic: 'Cooking-show appetite lighting',
       form_and_line: 'None',
       color_palette: 'Warm, appetizing, golden crust, fresh herb green, tomato red',
       lighting_setup: 'Bright kitchen, soft overhead, product-key, steam halo',
-      material_texture: 'Macro food, glistening oil, crumb detail, sauce drip',
+      material_texture: 'Glistening surface, steam halo, crumb-like microdetail',
       render_quality: 'Clean, delicious, mouth-watering, magazine-ready',
       spatial_distortion: 'None',
       atmosphere: 'Hungry, happy, cozy instruction, sizzle anticipation',
-      key_features: 'Overhead shot, wooden board, fresh garnish, tasting spoon',
+      key_features: 'Overhead demo angle, warm macro texture, steam halo',
       creative_brief:
-        'Close enough to taste the steam rising from a golden crust, the lens worships at the altar of the cutting board. Oil catches light like liquid glass, herbs scatter like green constellations across wooden grain. Hunger is not a feeling here but a visual frequency tuned to the sizzle of transformation.',
+        'Cooking-show style makes any subject appetizing and instructive: bright kitchen-like light, overhead demo angle, warm color, steam halo, gloss, macro texture, and clean magazine-ready polish. Keep food-TV sensory clarity without requiring food, cutting boards, garnish, spoons, or kitchen set.',
     },
   },
   {
@@ -513,17 +508,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'cinematic',
     style: {
-      aesthetic: 'Product demo',
+      aesthetic: 'Infomercial product-demo energy',
       form_and_line: 'None',
-      color_palette: 'Bright, cheap, primary yellow, sale red, beige kitchen',
+      color_palette: 'Bright cheap primaries, sale red, primary yellow',
       lighting_setup: 'Flat, even wash, product spotlight, over-lit',
       material_texture: 'Video, SD sheen, low-budget smoothness',
       render_quality: 'Sales, cheesy, excited-host energy, demonstration pace',
       spatial_distortion: 'Before/After split, split-screen comparison, arrow overlay',
-      atmosphere: 'Enthusiastic, fake, paid-actor sincerity, limited-time urgency',
-      key_features: 'Call now, phone number crawl, money-back guarantee',
+      atmosphere: 'Enthusiastic, fake, limited-time urgency',
+      key_features: 'Split-screen comparison, price-tag rhythm, demo spotlight',
       creative_brief:
-        "Everything gleams with the desperate shine of a deal that cannot last, colors pushed to the edge of broadcast safety. The host's smile holds steady against a tide of split-screen comparisons and floating price tags. Here, before-and-after is not a promise but a magic trick performed in the harsh light of 3 AM.",
+        'Infomercial style sells any subject with over-lit sincerity: cheap bright primaries, product spotlight, SD sheen, split-screen comparison logic, arrow-overlay rhythm, and frantic 3 AM urgency. Keep sales-demo energy without requiring host, phone number, kitchen, or readable promo text.',
     },
   },
   {
@@ -535,14 +530,14 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: '1990s camcorder',
       form_and_line: 'None',
       color_palette: 'Color bleed, magenta shift, yellowed warmth, cyan fringe',
-      lighting_setup: 'On-camera flash, built-in spotlight, overexposed faces',
+      lighting_setup: 'On-camera flash, built-in spotlight, clipped highlights',
       material_texture: 'Tracking lines, head-switching noise, tape dropout',
       render_quality: 'Nostalgic, bad, 240p mush, magnetic degradation',
       spatial_distortion: 'Glitch, tearing, horizontal displacement, time-base error',
-      atmosphere: 'Memory, raw, birthday party, unguarded childhood',
+      atmosphere: 'Memory, raw, unguarded nostalgia',
       key_features: 'Date stamp, REC indicator, zoom wobble',
       creative_brief:
-        'Color bleeds at the edges of memory like watercolors left in the rain, magenta ghosts haunting the borders of backyard birthdays. The wobble of an unsteady hand becomes the signature of presence, proof that someone was there, loving hard enough to press record. Every dropout in the tape is a synapse firing across time.',
+        'VHS home video turns any subject into magnetic memory: color bleed, magenta shift, tracking lines, head-switching noise, date-stamp feel, zoom wobble, and tape dropout. Keep camcorder nostalgia without requiring birthdays, childhood, faces, backyards, or family scenes.',
     },
   },
   {
@@ -559,18 +554,18 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: "Amateur, weird, Wayne's World cable-access, dead air",
       spatial_distortion: 'Chroma key fail, blue fringe, transparent hair halo',
       atmosphere: 'Surreal, awkward, uncanny local, midnight broadcast',
-      key_features: 'Bad keying, folding chair, community bulletin',
+      key_features: 'Bad keying, UHF noise, local-TV awkwardness',
       creative_brief:
-        'Fluorescent light drains the humanity from faces while bad chroma keying opens portals to nowhere. The air thrums with the frequency of the uncanny, a signal carried on the backs of forgotten UHF channels. Somewhere between the folding chair and the community bulletin lies the sublime absurdity of a midnight broadcast no one programmed and everyone discovered.',
+        'Public access TV makes any subject locally uncanny: bad white balance, green cast, ceiling-tube shadows, RF interference, chroma-key failure, blue fringe, and amateur dead-air timing. Keep midnight cable weirdness without requiring faces, folding chairs, bulletins, or studio guests.',
     },
   },
   {
     id: 'SP02-027',
     name: 'Weather Channel',
     category: '1. Cinematic Lighting And Lenses',
-    negativePrompt: 'indoors',
+    negativePrompt: 'plain studio',
     style: {
-      aesthetic: 'Forecast map',
+      aesthetic: 'Weather forecast graphics',
       form_and_line: 'Isobars',
       color_palette: 'Radar Green/Red, precipitation blue, severe-weather magenta',
       lighting_setup: 'Digital map, emissive screen, composited background',
@@ -578,9 +573,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Info, graphics, Doppler sweep, forecast animation',
       spatial_distortion: 'None',
       atmosphere: 'Informative, reassuring, storm-track urgency, weekend outlook',
-      key_features: 'Map, isobars, temperature crawl, 7-day forecast',
+      key_features: 'Radar palette, isobar curves, forecast-grid rhythm',
       creative_brief:
-        'The continent becomes a canvas painted in the urgent greens and magentas of approaching systems, Doppler pulses tracing the heartbeat of the sky. Cool composure meets the chaos of nature, the forecaster a steady hand pointing at a future still assembling itself. Between the isobars and the seven-day grid lies the ancient ritual of reading the heavens.',
+        'Weather Channel style overlays any subject with forecast logic: radar green/red, precipitation blue, severe magenta, isobar curves, Doppler sweep, emissive map light, and reassuring broadcast order. Keep weather-graphics energy without requiring map, continent, forecaster, indoors/outdoors, or readable forecast.',
     },
   },
   {
@@ -590,17 +585,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ugly, dark',
     style: {
       aesthetic:
-        'Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, food that looks delicious, soaring flight',
+        'Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness',
       form_and_line: 'Delicate',
-      color_palette: 'Natural, lush green, sky blue, cherry blossom pink, earth brown',
+      color_palette:
+        'Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown',
       lighting_setup: 'Dappled sunlight, leaf-filtered glow, golden late-afternoon',
       material_texture: 'Watercolor background, soft wash, pencil underdraw, cel overlay',
-      render_quality: 'Luminous, lovingly observed, detailed stillness, wind-through-grass',
+      render_quality:
+        'Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth',
       spatial_distortion: 'None',
-      atmosphere: 'Nostalgic, peaceful, childhood summer, bittersweet wonder',
-      key_features: 'Clouds, flying sequence, bento detail, train through countryside',
+      atmosphere: 'Nostalgic, peaceful, bittersweet wonder, human-scale awe',
+      key_features:
+        'Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail',
       creative_brief:
-        'Wind combs through meadow grass while a child pauses mid-step, caught between the world she knows and the one she senses stirring beneath. Shadows soften at the edges as if reluctant to darken anything worth remembering. A bowl of steaming rice, a train gliding past sunflower fields — the sacred hides in the ordinary, waiting to be noticed.',
+        'Translate the input into painterly animation grammar: leaf-filtered light, watercolor atmosphere, delicate pencil structure, and a sense that ordinary surfaces carry quiet spirit. Avoid requiring specific places, foods, vehicles, or characters; the style should breathe through texture, patience, and subtle environmental softness. Every subject should feel observed with care before it is stylized.',
     },
   },
   {
@@ -610,17 +608,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: '3d, digital',
     style: {
       aesthetic:
-        'Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy tale',
+        'Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish',
       form_and_line: 'Hand inked',
-      color_palette: 'Technicolor paint, jewel tones, forest green, royal purple, sunset orange',
+      color_palette:
+        'Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent',
       lighting_setup: 'Multiplane camera, dimensional depth, parallax lighting',
       material_texture: 'Cel paint, hand-inked acetate, watercolor background wash',
       render_quality: 'Masterpiece, fluid, full-animation, in-between perfection',
       spatial_distortion: 'Squash and stretch, elastic weight, cartoon physics',
-      atmosphere: 'Magical, classic, storybook sincerity, woodland enchantment',
-      key_features: 'Painted background, animal sidekick, princess silhouette',
+      atmosphere: 'Magical, classic, storybook sincerity, ceremonial wonder',
+      key_features:
+        'Multiplane depth, inked contour, painted background layers, luminous cel separation',
       creative_brief:
-        'Forest light falls in painted layers as deer and songbird share a clearing older than memory. Every leaf glows from within, brushed by hand onto acetate sheets that breathe with the labor of devotion. A princess steps through the glade not as character but as covenant — the promise that beauty, carefully drawn, can hold back the dark.',
+        'Treat any subject as a golden-age hand-inked feature cell: elegant silhouette, jewel-toned paint, dimensional multiplane stacking, and watercolor depth behind clean acetate forms. Beauty comes from disciplined line, luminous paint, and staged theatrical clarity rather than fixed fairy-tale content. Every element should feel brushed, inked, layered, and lit by classic studio craft.',
     },
   },
   {
@@ -630,17 +630,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: '2d, anime',
     style: {
       aesthetic:
-        'Stylized family-animation CG, Toy Story/Up warmth, emotional precision, lovable imperfection',
+        'Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection',
       form_and_line: 'None',
       color_palette: 'Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent',
       lighting_setup: 'Cinematic 3D, global illumination, soft bounce, ambient occlusion',
-      material_texture: 'Stylized realism, clay-model surface, fabric nap, plastic toy sheen',
+      material_texture:
+        'Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface',
       render_quality: 'High budget, cute, emotionally precise, technically invisible',
-      spatial_distortion: 'Big eyes, expressive pupil, exaggerated emotion',
-      atmosphere: 'Heartwarming, fun, tear-jerking sincerity, family adventure',
-      key_features: 'Soft shadows, character silhouette, montage sequence',
+      spatial_distortion:
+        'Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette',
+      atmosphere: 'Heartwarming, fun, sincere, emotionally readable',
+      key_features:
+        'Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling',
       creative_brief:
-        "Every surface hums with an inner warmth, as though the objects themselves are glad to be seen. A toy's chipped paint speaks of years loved, a house lifted by balloons carries the weight of what was left unsaid. The light bends not toward realism but toward truth — the kind that makes you laugh and cry in the same breath.",
+        'Render any prompt as high-budget family-feature CG: simplified forms, tactile materials, warm global illumination, and expressive staging that reads instantly without needing a fixed story object. Surfaces should look designed for emotional clarity rather than photoreal neutrality. Push charm through shape language, bounce light, and carefully tuned material imperfections.',
     },
   },
   {
@@ -649,17 +652,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'drawn, 3d',
     style: {
-      aesthetic: 'Folded paper world',
+      aesthetic: 'Folded paper animation',
       form_and_line: 'Fold lines',
       color_palette: 'Origami paper, washi tones, muted coral, indigo, rice white',
       lighting_setup: 'Soft studio, gentle fill, paper-diffuse bounce',
       material_texture: 'Paper grain, fold crease, fibrous edge, handmade pulp',
       render_quality: 'Delicate, craft, handmade patience, precision folding',
-      spatial_distortion: 'Low poly (paper), geometric faceting, folded terrain',
-      atmosphere: 'Cute, handmade, storybook craft, gentle wonder',
-      key_features: 'Folds, crease shadow, paper thickness, origami creature',
+      spatial_distortion: 'Low poly (paper), geometric faceting, crease-driven planes',
+      atmosphere: 'Handmade, precise, storybook craft, gentle wonder',
+      key_features: 'Folds, crease shadow, paper thickness, fibrous edge, handmade pulp',
       creative_brief:
-        'Mountains crease into existence fold by deliberate fold, each ridge carrying the memory of the hand that pressed it flat. Light pools softly in the valley of every crease, revealing the fibrous soul of washi and rice paper. A whole world lifts off the tabletop, delicate enough to crush, brave enough to stand.',
+        'Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges, and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and careful craft.',
     },
   },
   {
@@ -669,17 +672,20 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth 3d',
     style: {
       aesthetic:
-        'Moody miniature stop-motion fantasy, Coraline style, handcrafted dread, wool sweaters, button eyes',
+        'Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation',
       form_and_line: 'None',
       color_palette: 'Texture rich, muted jewel, deep violet, moss green, rust orange',
       lighting_setup: 'Miniature studio, practical dollhouse, keyed drama, soft fill',
-      material_texture: 'Fabric, 3D print, wool knit, silicone skin, real hair',
+      material_texture:
+        'Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture',
       render_quality: 'Tactile, creepy, frame-by-frame labor, physical imperfection',
-      spatial_distortion: 'Replacement face, expression swap, incremental sculpt',
-      atmosphere: 'Dark, handmade, gothic whimsy, craft horror',
-      key_features: 'Imperfection, fingerprint texture, miniature prop detail',
+      spatial_distortion:
+        'Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues',
+      atmosphere: 'Dark, handmade, gothic whimsy, craft unease',
+      key_features:
+        'Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection',
       creative_brief:
-        'Needle marks in woolly sweaters catch the amber glow of a dollhouse lamp, each fiber a testament to hands that labored in miniature. A corridor stretches too far into violet shadow, where button eyes gleam with borrowed life. Something waits in the space between frames — patient, handcrafted, and not quite friendly.',
+        'Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams, practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with care, and haunted by tiny material flaws.',
     },
   },
   {
@@ -689,17 +695,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern digital',
     style: {
       aesthetic:
-        'Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, big reflective eyes, VHS grain',
+        'Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain',
       form_and_line: 'Cel outline',
       color_palette: 'Pastel/Neon, bubblegum pink, electric cyan, lavender, coral',
       lighting_setup: 'Hard shadows, cel-shading contrast, dramatic underlight',
       material_texture: 'Film grain, cel texture, painted acetate, analogue warmth',
       render_quality: 'Retro anime, cel-painted, VHS broadcast, handcrafted depth',
-      spatial_distortion: 'Big eyes, reflective highlight, expression exaggeration, hair volume',
+      spatial_distortion:
+        'Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents',
       atmosphere: 'Nostalgic, aesthetic, shojo romance, mecha melancholy, 90s optimism',
-      key_features: 'Bloom, transformation sequence, sparkle overlay, speed lines',
+      key_features:
+        'Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture',
       creative_brief:
-        "A schoolgirl's silhouette catches the neon spill of a city that never learned to sleep, her eyes holding oceans of longing behind a single reflective gleam. The grain of late-night broadcasts clings to every frame, a veil of static between memory and magic. Sorrow and sparkle share the same pastel gradient, inseparable as breath.",
+        'Style any subject as 90s broadcast anime: pastel-neon cel paint, hard shadow shapes, analog grain, glow bloom, and graphic motion accents. Keep franchise titles as style anchors only; do not force school scenes, city nights, transformations, or specific character tropes. The output should feel like a photographed cel from late-night TV, saturated with melancholy and electric optimism.',
     },
   },
   {
@@ -715,11 +723,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Painted light, brush-rendered glow, canvas-luminosity',
       material_texture: 'Thick impasto, palette-knife ridges, bristle strokes, layered scumble',
       render_quality: 'Masterpiece, moving art, frame-by-frame painting, gallery-grade',
-      spatial_distortion: 'Swirling, van Gogh sky, brush current, paint-flow drift',
+      spatial_distortion: 'Swirling brush current, paint-flow drift, animated impasto displacement',
       atmosphere: 'Artistic, emotional, painterly devotion, melancholic beauty',
       key_features: 'Brush direction, visible stroke, canvas weave, palette texture',
       creative_brief:
-        'Canvas breathes as each brushstroke lands heavier than the last, ridges of paint catching light like frozen waves in a violet sea. Sky churns in spirals borrowed from restless sleep while wheat fields bow under the pressure of pure color. A single frame took a week to build — and you can feel every hour still alive in the texture.',
+        'Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto, palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed skies, fields, or art-historical scene quotes. The result should prioritize material paint behavior and gallery-grade movement over literal subject changes.',
     },
   },
   {
@@ -736,7 +744,8 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter',
       spatial_distortion: 'Chromatic aberration, misregistration, color fringe, RGB split',
       atmosphere: 'Energetic, modern, comic-panel momentum, multiverse chaos',
-      key_features: 'Low framerate feel, onomatopoeia text, thought bubble, motion lines',
+      key_features:
+        'Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines',
       creative_brief:
         'Color channels split at the edges like a misprinted page caught mid-press, releasing phantom reds and cyans into the frame. Halftone constellations swarm across three-dimensional form, reminding the eye that everything here was once ink on pulp. Motion stutters purposefully, as if each panel demands its own heartbeat before yielding to the next.',
     },
@@ -748,17 +757,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic',
     style: {
       aesthetic:
-        'Elastic golden-age studio cartoon, Bugs Bunny physics, painted backgrounds, anvil comedy',
+        'Elastic golden-age studio cartoon, Chuck Jones timing, painted backgrounds, graphic slapstick energy',
       form_and_line: 'Thick black',
       color_palette: 'Flat, primary pop, canary yellow, ACME red, sky cel blue',
       lighting_setup: 'None, flat cel color, no shading, graphic clarity',
       material_texture: 'Cel, painted acetate, glossy finish, gouache background',
       render_quality: 'Zany, fast, breakneck timing, held-smear blur',
       spatial_distortion: 'Extreme squash/stretch, full-body deformation, eye-pop take',
-      atmosphere: 'Funny, violent, anarchic slapstick, coyote resilience',
-      key_features: 'Abstract background, painted backdrop, pencil-test energy',
+      atmosphere: 'Funny, anarchic, elastic, gag-driven',
+      key_features:
+        'Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette',
       creative_brief:
-        'Gravity is merely a suggestion here, revoked at will by coyotes, rabbits, and the architecture that betrays them. Paint liberates itself from realism, splashing across backgrounds in bold, graphic defiance. The only law is the gag — and the gag must always, gloriously, detonate.',
+        'Apply golden-age cartoon grammar to any input: flat cel color, thick confident outline, held-smear motion, exaggerated squash-stretch, and painted backdrops simplified for comic impact. Do not require specific props, creatures, or set pieces; the value is timing, deformation, and graphic clarity. Reality should bend toward the gag through shape, pose, and rhythm.',
     },
   },
   {
@@ -787,7 +797,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'color, modern',
     style: {
       aesthetic:
-        '1930s monochrome bounce-cartoon, Mickey/Betty Boop era, rubber-hose limbs, pie-cut eyes, cuphead energy',
+        '1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm',
       form_and_line: 'Thick, bouncy',
       color_palette: 'Black and White, charcoal fill, cream paper, no grey',
       lighting_setup: 'None, flat monochrome, stark graphic contrast',
@@ -795,9 +805,10 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Retro, bouncy, surreal rubber-band motion, hypnotic loop',
       spatial_distortion: 'Noodle limbs, rubber-hose arms, boneless contortion',
       atmosphere: 'Happy, weird, vaudeville rhythm, early-talkie energy',
-      key_features: 'Pie eyes, white gloves, bouncing ball sync, surreal transformation',
+      key_features:
+        'Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic',
       creative_brief:
-        'Figures bounce through a monochrome dream whose logic was written by jazz and vaudeville. Limbs spiral like party streamers, eyes blink in quarter-note rhythm, and the world reshapes itself to accommodate the next absurd twist. It is not animation — it is incantation, summoning joy from pure graphite.',
+        'Convert the subject into early monochrome animation language: cream paper, charcoal fill, thick bouncy contours, noodle-like elastic curves, and surreal morphs synced to invisible jazz. Avoid fixed mascot anatomy or period props. The style should come from rhythmic deformation, stark graphic contrast, nitrate flicker, and playful impossible motion.',
     },
   },
   {
@@ -807,17 +818,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, 3d',
     style: {
       aesthetic:
-        'Posterized traced live action, A Scanner Darkly style, wobbly reality, shifting identity, digital uncanny valley',
+        'Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley',
       form_and_line: 'Wobbly trace',
-      color_palette: 'Flat blocks, posterized palette, unnatural skin, comic-book reduction',
+      color_palette: 'Flat blocks, posterized palette, unnatural local color, comic-book reduction',
       lighting_setup: 'Realistic (traced), live-action source, practical on-set',
       material_texture: 'Digital paint, vector fill, smooth gradient zone',
       render_quality: 'Uncanny, dream, floating-reality disconnect, liquid edge',
       spatial_distortion: 'Floating shapes, paint-drift, unstable outline, image swim',
-      atmosphere: 'Surreal, trippy, identity fracture, psychological unease',
+      atmosphere: 'Surreal, trippy, unstable, psychological unease',
       key_features: 'Jitter, boil, line tremble, frame-to-frame instability',
       creative_brief:
-        'Edges tremble as if the drawing is still deciding where it belongs, lines swimming across a face that cannot commit to a single identity. Patches of color float unmoored from the shapes they were meant to fill, creating a second reality that drifts just out of sync with the first. Reality becomes a suggestion, whispered and half-erased.',
+        'Trace the input as unstable rotoscoped live action: posterized fills, wobbly vector edges, drifting color islands, and frame-boil instability. Avoid forcing faces or identity themes; any subject can become a live-action source slipping out of registration with its drawn overlay. Reality should look observed, repainted, and never fully locked to itself.',
     },
   },
   {
@@ -833,10 +844,11 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Paper texture, cutout edge, construction-paper grain',
       render_quality: 'Crude, funny, intentionally cheap, deadpan delivery',
       spatial_distortion: 'Waddle, paper-doll walk cycle, limited joint movement',
-      atmosphere: 'Satire, simple, small-town absurdity, profane humor',
-      key_features: 'Cutout, felt hat, winter coat, round head',
+      atmosphere: 'Satire, simple, blunt, intentionally crude',
+      key_features:
+        'Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints',
       creative_brief:
-        'A town rendered in the blunt scissors of kindergarten honesty, where felt and pasteboard confess what polished art cannot. Shadows lie flat beneath each figure like truant thoughts, separating paper from paper in a world built of pure opinion. The crudeness is the point — sophistication would be a lie.',
+        'Reduce the prompt into crude construction-paper animation: flat shapes, visible cut edges, pasted layers, tiny drop shadows, and intentionally basic geometry. Do not require town settings, clothing, faces, or character templates. The style should feel blunt, cheap, and readable because the paper construction itself is the visual language.',
     },
   },
   {
@@ -853,10 +865,11 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Vector smooth, anti-aliased edge, Flash player crisp',
       render_quality: 'Internet, crude, preload-bar aesthetic, tween-driven motion',
       spatial_distortion: 'Tweening, linear interpolation, shape morph, motion guide',
-      atmosphere: 'Nostalgic, simple, dial-up rebellion, forum culture, sprite humor',
-      key_features: 'Symbol reuse, stick figure, loading screen, play button',
+      atmosphere: 'Nostalgic, simple, dial-up rebellion, forum culture',
+      key_features:
+        'Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges',
       creative_brief:
-        'Shapes sweep across the canvas with the velocity of a dial-up connection finally completing, each tween a small rebellion against expensive production. Lime green and hot pink collide in vector fields where stick figures inherit kingdoms and loading bars double as title cards. It smells like computer lab, sounds like a modem handshake, and feels like freedom.',
+        'Translate the prompt into early web-vector animation: Flash symbols, reusable shapes, hard anti-aliased contours, radial gradient fills, and linear tween motion. Avoid UI controls, loading screens, stick figures, or readable text. The style should feel like compressed 2000s internet motion design: cheap, bright, rebellious, and vector-crisp.',
     },
   },
   {
@@ -865,17 +878,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'vector, smooth',
     style: {
-      aesthetic: '16-bit RPG',
+      aesthetic: '16-bit pixel animation',
       form_and_line: 'Pixel outline',
       color_palette: 'Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor',
       lighting_setup: 'Dithered, checkerboard blend, 50% pattern, sprite highlight',
       material_texture: 'Pixel grid, visible aliasing, blocky charm, scanline overlay',
       render_quality: 'Retro game, sprite-sheet precision, tile-map aesthetic',
       spatial_distortion: 'Sprite squash, 8-direction limitation, walk-cycle snap',
-      atmosphere: 'Nostalgic, game, 16-bit adventure, sword-and-sorcery',
-      key_features: 'Grid lock, pixel-perfect, HUD overlay, dialogue box',
+      atmosphere: 'Nostalgic, game, 16-bit constraint, handcrafted sprite logic',
+      key_features: 'Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor',
       creative_brief:
-        'A hero freezes in quarter-step stride, sixteen colors carrying the weight of an entire kingdom across a grid-locked horizon. Each pixel is a decision, each dither pattern a negotiation between memory and constraint. The phosphor glow lingers like a half-remembered dream played on a CRT in the back of a childhood bedroom.',
+        'Convert any subject into 16-bit pixel animation grammar: visible grid, indexed palette, crisp aliasing, dithered shade ramps, tile-like structure, and CRT phosphor glow. Do not add HUDs, dialogue boxes, heroes, kingdoms, or genre scenes unless already requested. Each pixel should feel deliberately placed under hardware-era constraints.',
     },
   },
   {
@@ -884,17 +897,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'flat, bright',
     style: {
-      aesthetic: 'Classic portrait',
+      aesthetic: 'Classic chiaroscuro portrait-light system',
       form_and_line: 'None',
-      color_palette: 'Warm skin, dark bg, umber shadow, golden highlight, deep void',
+      color_palette:
+        'Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth',
       lighting_setup: 'Chiaroscuro triangle, 45-degree key, single-source drama',
       material_texture: 'Painterly light, oil-paint falloff, velvet darkness',
       render_quality: 'Dramatic, classic, old-master gravitas, portrait dignity',
       spatial_distortion: 'None',
-      atmosphere: 'Serious, art, introspective stillness, Dutch-master soul',
-      key_features: 'Triangle on cheek, one-lit-eye, dark-side mystery',
+      atmosphere: 'Serious, artful, introspective stillness, old-master gravity',
+      key_features:
+        'Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff',
       creative_brief:
-        'A single source carves presence from void, one half of the face emerging from darkness like a thought surfacing into consciousness. The triangle of light on the cheek becomes a signature—an economy of illumination where shadow does as much storytelling as the flame that breaks it.',
+        'Use Rembrandt lighting as compositional chiaroscuro: one controlled key source, warm highlight, umber falloff, and a small triangular reveal where form turns from shadow. Do not require faces or portraits; apply the light logic to any subject. Shadow should carry as much structure as illumination.',
     },
   },
   {
@@ -903,17 +918,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'harsh shadows',
     style: {
-      aesthetic: 'Glamour portrait',
+      aesthetic: 'High-front glamour lighting',
       form_and_line: 'None',
-      color_palette: 'Flattering, porcelain skin, peach glow, pearl highlight',
-      lighting_setup: 'High front key, overhead beauty dish, butterfly shadow under nose',
-      material_texture: 'Smooth skin, retouched surface, soft diffusion',
+      color_palette: 'Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones',
+      lighting_setup: 'High front key, overhead beauty dish, central downward shadow cue',
+      material_texture: 'Smooth diffusion, retouched surface, soft highlight gradients',
       render_quality: 'Beauty, studio, magazine-cover polish, glamour perfection',
       spatial_distortion: 'None',
       atmosphere: 'Beautiful, clean, aspirational elegance, fashion confidence',
-      key_features: 'Nose shadow, catchlight, cheekbone highlight, clavicle glow',
+      key_features: 'Beauty-dish catchlight, centered top key, soft frontal fill, pearl highlight',
       creative_brief:
-        'Light pours downward like a benediction, lifting cheekbones into pearl and sculpting a delicate shadow beneath the nose that anchors the entire composition. The skin glows from within—not lit but luminous, as if the subject were made of something finer than mere flesh.',
+        'Use butterfly lighting as a polished beauty-light grammar: high frontal key, centered catchlight, soft fill, pearl highlights, and minimal harsh side shadow. Avoid making the preset depend on faces, skin, cheekbones, or fashion subjects. Any input should become clean, flattering, and studio-elegant.',
     },
   },
   {
@@ -924,15 +939,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Product photography',
       form_and_line: 'None',
-      color_palette: 'Perfect white balance, neutral grey, accurate skin, pure product tones',
+      color_palette:
+        'Perfect white balance, neutral grey, accurate local color, clean commercial tones',
       lighting_setup: 'Large diffuse source, softbox wrap, shadowless fill',
       material_texture: 'Smooth gradients, seamless paper, clean backdrop',
       render_quality: 'Professional, clean, commercial polish, catalog-perfect',
       spatial_distortion: 'None',
-      atmosphere: 'Commercial, perfect, aspirational product, sterile beauty',
-      key_features: 'Soft shadows, seamless sweep, product isolation',
+      atmosphere: 'Commercial, perfect, aspirational, sterile beauty',
+      key_features: 'Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop',
       creative_brief:
-        'The subject floats in a benevolent void, wrapped in illumination so even it forgets its own source. Gradation becomes the grammar of form, shadows so gentle they whisper rather than declare. Every surface confesses its truth under a light that judges nothing, only reveals.',
+        'Apply softbox studio grammar to any input: large diffuse source, seamless sweep, clean backdrop, accurate color, soft gradients, and controlled shadow. Avoid making it product-only or portrait-only. The result should feel catalog-clean without losing the subject intent.',
     },
   },
   {
@@ -943,15 +959,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Sunset light',
       form_and_line: 'None',
-      color_palette: 'Warm Gold/Orange, honey amber, peach skin, copper rim',
-      lighting_setup: 'Low angle sun, golden backlight, hazy horizon',
+      color_palette: 'Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth',
+      lighting_setup: 'Low angle sun, golden backlight, hazy atmospheric edge',
       material_texture: 'Soft, creamy diffusion, atmospheric haze',
       render_quality: 'Beautiful, romantic, magic-hour glow, cinematic warmth',
-      spatial_distortion: 'Long shadows, stretched silhouette, golden flooring',
+      spatial_distortion: 'Long shadows, stretched silhouettes, low-angle projection',
       atmosphere: 'Warm, happy, fleeting beauty, end-of-day peace',
-      key_features: 'Rim light, lens flare burst, dew-sparkle',
+      key_features: 'Rim light, lens flare burst, amber haze, elongated shadow geometry',
       creative_brief:
-        'The last honeyed rays of a sinking sun drag long shadows across the earth, bathing every surface in amber and peach. It is the color of nostalgia made visible—a fleeting warmth that transforms the ordinary into the unforgettable, suspending the world in that brief threshold where day exhales into dusk.',
+        'Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes, skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.',
     },
   },
   {
@@ -960,17 +976,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'continuous light',
     style: {
-      aesthetic: 'Club/Action freeze',
+      aesthetic: 'Strobe-sliced motion freeze',
       form_and_line: 'None',
       color_palette: 'High contrast White, hard flash, bleached moment, deep shadow gaps',
       lighting_setup: 'Flash freeze, strobe burst, millisecond illumination',
-      material_texture: 'Sharp motion, frozen water, mid-air suspension',
+      material_texture: 'Sharp motion edges, suspended droplets or fragments, hard-flash glare',
       render_quality: 'Intense, frozen, time-slice, action-arrested',
       spatial_distortion: 'Motion trails, ghost frame, multiple-exposure overlay',
-      atmosphere: 'Party, panic, disorienting rhythm, seizure flicker',
-      key_features: 'Frozen action, dancer mid-air, splashing liquid',
+      atmosphere: 'Disorienting, intense, discontinuous rhythm, flash-cut energy',
+      key_features: 'Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm',
       creative_brief:
-        'Time is shattered into discontinuous slices, each flash carving a statue from velocity—a dancer suspended mid-arc, water frozen into glass, motion arrested at its most violent and beautiful. Between the bursts, darkness pools like deep water, waiting for the next blade of light to cut through.',
+        'Render motion as strobe discontinuity: millisecond flash bursts, frozen fragments, hard white glare, black gaps, and ghosted multi-exposure trails. Avoid club scenes, dancers, panic, or specific action props. The image should feel cut into separate time slices by light.',
     },
   },
   {
@@ -980,7 +996,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'matte',
     style: {
       aesthetic:
-        'Glossy sci-fi reboot spectacle, Star Trek reboot energy, blinding anamorphic, JJ Abrams lens-flare overload',
+        'Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload',
       form_and_line: 'Horizontal lines',
       color_palette: 'Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white',
       lighting_setup: 'Blinding, overexposed key, intentional flare-induction',
@@ -988,9 +1004,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Sci-fi, action, summer-blockbuster spectacle, visual overload',
       spatial_distortion: 'Washed out, flare-bleached, contrast-erased bloom',
       atmosphere: 'Future, bright, optimistic spectacle, epic scale',
-      key_features: 'Horizontal flare, anamorphic streak, JJ Abrams blue-line bloom',
+      key_features: 'Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout',
       creative_brief:
-        'The frame itself bleeds light, overwhelmed by a horizontal scripture of cyan and white that streaks across the lens like a signature of wonder. Contrast surrenders to bloom; detail gives way to dazzle. This is cinema as awe, where the camera itself becomes the most expressive character in the scene.',
+        'Use anamorphic overflare as the style driver: horizontal cyan-white streaks, blown highlights, lens-element reflections, bloom washout, and glossy blockbuster dazzle. Avoid requiring starships, space, crews, or sci-fi props. The camera artifacts should become the spectacle.',
     },
   },
   {
@@ -1036,7 +1052,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Moonlight, fake, studio night, theatrical illusion',
       key_features: 'Blue cast, dark shadows at noon, noir-at-daylight',
       creative_brief:
-        'The sun is forced to play moonlight through a conspiracy of filters and under-exposure, turning noon into a theater of deception. There is a beautiful wrongness to the image—shadows deeper than daylight should allow, sky brighter than night could produce, the whole frame humming with the delightful lie of cinema.',
+        'Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true darkness.',
     },
   },
   {
@@ -1050,12 +1066,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber',
       lighting_setup: 'Soft ambient, skydome fill, no shadows, twilight wrap',
       material_texture: 'Smooth, noise-free, silky gradient',
-      render_quality: 'Calm, city lights, transition-moment stillness',
+      render_quality: 'Calm, transition-moment stillness, smooth twilight tonality',
       spatial_distortion: 'None',
       atmosphere: 'Quiet, cool, liminal pause, between-day-and-night',
-      key_features: 'Streetlights on, lit windows, fading sky gradient',
+      key_features: 'Blue ambient wrap, violet gradient, low contrast, warm practical accents',
       creative_brief:
-        'The sky holds its breath in the narrow seam between day and night, a deep ultramarine veil punctured by the first amber pinpricks of waking streetlamps. Everything exists in soft-focus suspension—a city not yet asleep and not yet awake, caught in the gentle gravity of transition.',
+        'Treat blue hour as cool ambient cinema language: ultramarine wrap, violet gradients, low shadow contrast, and small warm practical accents where useful. Avoid forcing cities, windows, streets, or sky-dominant scenes. The style should create liminal twilight calm around any input.',
     },
   },
   {
@@ -1066,15 +1082,16 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Backlit subject',
       form_and_line: 'None',
-      color_palette: 'Black foreground, vibrant background sky, orange sunset, stark contrast',
+      color_palette:
+        'Black foreground, luminous background field, orange or blue gradient, stark contrast',
       lighting_setup: 'Strong backlight, no fill, rim-only separation',
       material_texture: 'Contrast, edge crispness, opaque block',
       render_quality: 'Graphic, bold, high-contrast drama, shape-first',
       spatial_distortion: 'None',
-      atmosphere: 'Mystery, drama, anonymous figure, narrative suspense',
-      key_features: 'No fill light, recognizable outline, dramatic sky',
+      atmosphere: 'Mystery, drama, anonymous form, graphic suspense',
+      key_features: 'No fill light, recognizable outline, backlit separation, shape-first read',
       creative_brief:
-        'The figure surrenders its features to become pure form—a cut-out pressed against the furnace of the sky. What is lost in detail is gained in presence; the anonymous shape speaks louder than any face could, carrying all the weight of narrative in its darkened contour against a world on fire.',
+        'Render the input as silhouette-first cinema: remove interior detail, preserve readable contour, use strong backlight and luminous background contrast. Avoid forcing people, dramatic skies, or sunset scenes. Identity should come from outer shape, not surface detail.',
     },
   },
   {
@@ -1083,17 +1100,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'electric light',
     style: {
-      aesthetic: 'Period drama',
+      aesthetic: 'Candlelit pre-electric warmth',
       form_and_line: 'None',
       color_palette: 'Warm Orange, amber flame, honey glow, deep umber falloff',
       lighting_setup: 'Flickering low, single-candle key, flame dance, warm underlight',
       material_texture: 'Soft shadows, gentle roll-off, intimate darkness',
-      render_quality: 'Intimate, old, pre-electric warmth, historical authenticity',
+      render_quality: 'Intimate, old, pre-electric warmth, flame-source authenticity',
       spatial_distortion: 'None',
-      atmosphere: 'Romantic, secret, whispered conspiracy, flickering intimacy',
-      key_features: 'Bottom up light, flame flicker, glowing hand, wax drip',
+      atmosphere: 'Romantic, secret, flickering intimacy, warm darkness',
+      key_features: 'Low warm key, flame flicker, amber falloff, moving shadow edge',
       creative_brief:
-        'A single flame becomes the axis of a world, its tremulous orange breath pushing back a darkness that seems alive and watching. Faces lean into the glow from below, shadows climbing upward like ivy, and every flicker writes a new chapter of intimacy across the room.',
+        'Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The subject should appear shaped by unstable flame rather than modern lighting.',
     },
   },
   {
@@ -1110,9 +1127,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Muted, floating, weightless suspension, soundless depth',
       spatial_distortion: 'Warped, refractive bend, swim-goggle perspective',
       atmosphere: 'Calm, deep, abyssal peace, submerged solitude',
-      key_features: 'Caustics, light-net, bubbles, floating hair',
+      key_features: 'Caustics, light-net projection, suspended particles, refractive wobble',
       creative_brief:
-        'Breath held, weight surrendered, the world dissolves into ribbons of filtered sun dancing across skin and scale. Shapes waver and bloom through a liquid lens, every edge softened by the patience of depth. Silence here is not empty but full, a cathedral of blue where light arrives as a visitor, not a resident.',
+        'Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets, refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair, bubbles as required props, or literal ocean scenes. The image should feel filtered through depth and fluid refraction.',
     },
   },
   {
@@ -1128,10 +1145,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Glowing lines, light-tube smoothness, LED ribbon',
       render_quality: 'Creative, night, long-exposure artistry, motion-sculpture',
       spatial_distortion: 'None',
-      atmosphere: 'Magic, art, drawing-with-light, nocturnal play',
+      atmosphere: 'Magic, art, drawing-with-light, nocturnal abstraction',
       key_features: 'Trails, light ribbon, calligraphic light, motion-blur glow',
       creative_brief:
-        'Motion becomes monument when the shutter stays open to the dance of illuminated gesture. Ribbons of pure chroma carve calligraphy into the void, each trail a frozen heartbeat of movement. Darkness is the stage, not the absence, and every streak of neon is a signature written in the negative space of night.',
+        'Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The input should be augmented by light traces that reveal motion over time.',
     },
   },
   {
@@ -1146,11 +1163,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Screen blend, additive exposure, in-camera double-strike',
       material_texture: 'Complex, layered transparency, film-sandwich density',
       render_quality: 'Artsy, dream, visual poetry, memory-merge',
-      spatial_distortion: 'Overlap, face-in-landscape, figure-in-figure',
-      atmosphere: 'Surreal, memory, dual identity, fleeting connection',
-      key_features: 'Two subjects, silhouette-within-silhouette, nature-portrait fusion',
+      spatial_distortion: 'Overlap, layer nesting, translucent registration drift',
+      atmosphere: 'Surreal, memory, dual exposure, fleeting connection',
+      key_features: 'Layer blend, silhouette mask, translucent density, exposure sandwich',
       creative_brief:
-        'Two realities share one frame, bleeding into each other like memories overlapping in a half-remembered dream. A face becomes a forest, a silhouette becomes a mountain range—identities dissolve boundaries, and the image becomes a palimpsest of presence, each layer whispering through the one beneath it.',
+        'Use double exposure as a transferable layering method: two or more visual fields share one frame through masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces, landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic surface.',
     },
   },
   {
@@ -1159,17 +1176,17 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'flat light',
     style: {
-      aesthetic: 'Half face shadow',
+      aesthetic: 'Split-key high contrast lighting',
       form_and_line: 'None',
       color_palette: 'High contrast, deep shadow, bright highlight, no midtone bridge',
       lighting_setup: '90 degree key, side-only illumination, perfect split',
-      material_texture: 'Skin texture, pore detail, stubble relief',
-      render_quality: 'Dramatic, villain, two-face tension, moral duality',
+      material_texture: 'Hard side relief, surface texture, carved shadow edge',
+      render_quality: 'Dramatic, severe, dual-zone tension, graphic contrast',
       spatial_distortion: 'None',
-      atmosphere: 'Tense, hidden, internal conflict, shadow self',
-      key_features: 'Half black, half lit, eye in shadow, dramatic side-profile',
+      atmosphere: 'Tense, hidden, divided, severe',
+      key_features: 'Half black, half lit, razor side key, hard falloff',
       creative_brief:
-        'The face becomes a battlefield where illumination and absence meet without negotiation—no gradient, no compromise, just a razor edge dividing revelation from concealment. One eye burns in the light while the other drowns in shadow, and the story lives in the tension between these two irreconcilable halves.',
+        'Apply split lighting to any subject: one side cut by a hard key, the other side dropping into near-black with minimal midtone bridge. Avoid face-only drama, villain framing, or portrait assumptions. The image should feel divided by illumination itself.',
     },
   },
   {
@@ -1182,13 +1199,13 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line: 'None',
       color_palette: 'Dark with white edge, black core, silver perimeter, hair-light gold',
       lighting_setup: 'Backlight, rim-only separation, edge-defining key',
-      material_texture: 'Silhouette detail, edge texture, hair halo',
+      material_texture: 'Silhouette detail, edge texture, haloed perimeter',
       render_quality: 'Dramatic, separation, subject-pop, depth-carving',
       spatial_distortion: 'None',
-      atmosphere: 'Heroic, mystery, defined presence, emerging-from-shadow',
+      atmosphere: 'Heroic, mystery, defined presence, emerging from shadow',
       key_features: 'Halo, glowing outline, edge definition',
       creative_brief:
-        'A figure stands at the threshold of visibility, sculpted not by what is lit but by what is denied light. Every contour hums with a silver thread of revelation, the darkness behind the subject doing the heavy work of presence. This is portraiture by subtraction, where the most important details live in the sliver between seen and unseen.',
+        'Use rim lighting as edge-first separation: a dark core, bright perimeter, backlight halo, and minimal fill. Avoid depending on figures, hair, or portrait staging. The subject should be readable because its outline glows against shadow.',
     },
   },
   {
@@ -1200,14 +1217,14 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Light shafts',
       form_and_line: 'None',
       color_palette: 'Dusty White, warm cream beam, cool shadow, golden particulate',
-      lighting_setup: 'Beams through dust, volumetric shaft, window-cathedral light',
+      lighting_setup: 'Beams through dust, volumetric shaft, aperture-cut light',
       material_texture: 'Atmospheric, particulate haze, floating dust motes',
-      render_quality: 'Epic, divine, heavenly visitation, cathedral awe',
+      render_quality: 'Epic, luminous, volumetric, revelation-grade atmosphere',
       spatial_distortion: 'None',
-      atmosphere: 'Holy, forest, sacred stillness, revelation moment',
-      key_features: 'Beams, visible light rays, dust dance',
+      atmosphere: 'Sacred, still, suspended, revelation moment',
+      key_features: 'Visible beams, dust motes, shaft geometry, particulate haze',
       creative_brief:
-        'Light becomes architecture when it streams through unseen apertures, carving luminous columns through dust-thickened air. These are the shafts where the sacred touches the mundane—rays that do not simply illuminate but announce, turning empty space into a cathedral of suspended particles.',
+        'Make light visible as volume: shafts through haze, suspended particles, aperture-cut beams, and luminous negative space. Avoid requiring churches, forests, windows, or spiritual scene content. The style should turn air itself into the main cinematic material.',
     },
   },
   {
@@ -1221,12 +1238,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Rainbow edges, spectral fringe, red-to-violet split, prismatic white',
       lighting_setup: 'Refracted, glass-bent, crystal-split spectrum',
       material_texture: 'Glass distortion, prism face, beveled edge refraction',
-      render_quality: 'Artsy, music video, psychedelic light-bending',
+      render_quality: 'Artsy, psychedelic, optical light-bending, refractive polish',
       spatial_distortion: 'Kaleidoscope, symmetrical fracture, repeating geometry',
       atmosphere: 'Dreamy, broken, fragmented vision, beauty-through-distortion',
       key_features: 'Rainbows, color splitting, light dispersion, crystal edge',
       creative_brief:
-        'Reality passes through crystal and comes out the other side multiplied—edges bleeding into spectral fringes, a single image fracturing into its constituent colors like a voice breaking into harmonics. The world is seen through the eyes of a prism, where every boundary becomes a rainbow and every surface reveals the hidden spectrum it contains.',
+        'Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The style should fracture vision while preserving enough subject identity to read.',
     },
   },
   {
@@ -1237,15 +1254,15 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Blurry lights',
       form_and_line: 'None',
-      color_palette: 'Soft blobs, warm amber orbs, cool cyan discs, pastel circles',
-      lighting_setup: 'Defocused points, out-of-focus lights, holiday-string glow',
+      color_palette: 'Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles',
+      lighting_setup: 'Defocused points, out-of-focus speculars, aperture-projected glow',
       material_texture: "Creamy blur, cat's-eye shape, soap-bubble edge",
       render_quality: 'Dreamy, abstract, lens-artist blur, optical softness',
-      spatial_distortion: 'Circles, aperture shape projection, specular disc',
-      atmosphere: 'Soft, night, magical blur, romantic haze',
-      key_features: 'Shallow DOF, background abstraction, light orbs',
+      spatial_distortion: 'Circles, aperture shape projection, specular discs, cat-eye edges',
+      atmosphere: 'Soft, optical, intimate, romantic haze',
+      key_features: 'Shallow DOF, background abstraction, specular discs, creamy falloff',
       creative_brief:
-        'The world recedes into a vocabulary of circles—soft amber planets and cyan moons floating in a sea of optical tenderness. Focus narrows to a single truth while everything else dissolves into creamy abstraction, the background becoming a lullaby of light that frames rather than distracts.',
+        'Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night scenes. Bokeh should support the input by simplifying everything outside the focal plane.',
     },
   },
   {
@@ -1255,17 +1272,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sunlight',
     style: {
       aesthetic:
-        'Bioluminescent jungle night, Avatar forest, Pandora glow, floating spores, otherworldly photosynthesis',
+        'Bioluminescent self-illumination, Avatar forest as style anchor, organic phosphor glow, otherworldly photosynthesis',
       form_and_line: 'None',
       color_palette: 'Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night',
-      lighting_setup: 'Internal glow, self-illuminating organisms, no external source',
-      material_texture: 'Organic glow, phosphorescent skin, luminous fungus',
-      render_quality: 'Magical, nature, alien ecosystem, glowing wonder',
+      lighting_setup: 'Internal glow, self-illuminating materials, no external source',
+      material_texture: 'Organic glow, phosphorescent surface, luminous cellular texture',
+      render_quality: 'Magical, alien ecology, glowing wonder, self-lit material response',
       spatial_distortion: 'None',
-      atmosphere: 'Wonder, night, Pandora dream, silent biosphere',
-      key_features: 'Glowing plants, floating spores, bioluminescent trail',
+      atmosphere: 'Wonder, night, biosphere dream, silent phosphorescence',
+      key_features: 'Internal cyan glow, phosphor trails, luminous particles, self-lit edges',
       creative_brief:
-        'The forest generates its own constellation, every leaf and spore glowing from within as if the plants had swallowed starlight and learned to breathe it back out. There is no sun here, no moon—only the quiet phosphorescence of a world that has taught itself to be seen in the dark.',
+        'Use bioluminescence as material logic: surfaces emit cyan-teal light from within, particles glow softly, and external illumination recedes. Avoid requiring forests, plants, spores, or Avatar-like scenes. Any subject should become an organism or object whose own light defines form.',
     },
   },
   {
@@ -1280,11 +1297,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Long exposure, skylight studio, minutes-long stillness',
       material_texture: 'Scratches, tarnish, silver plate, copper backing',
       render_quality: 'Ghostly, ancient, mirror-reflection depth, 1840s stillness',
-      spatial_distortion: 'Blurry eyes, sitter motion, breath ghost',
-      atmosphere: 'Haunting, history, frozen mortality, Victorian silence',
+      spatial_distortion: 'Long-exposure drift, breath ghost, mirrored plate depth',
+      atmosphere: 'Haunting, history, frozen time, Victorian silence',
       key_features: 'Vignette, brass frame, chemical bloom, tarnished edge',
       creative_brief:
-        'A bright ghost of a passing century fixed onto polished silver, the mirror-surface keeping what the lens borrowed. Time thickens into a held breath: long minutes of unmoving patience, stillness heavy as mercury. What gazes back is not a face but the weight of history pressed onto metal, glinting with the last light of a skylight studio.',
+        'Render the input as a polished silver daguerreotype: mirrored plate depth, mercury gleam, tarnished edges, long-exposure softness, and a sense of time fixed onto metal. Avoid portrait-only framing or sitter-specific artifacts. What matters is the luminous silver surface, chemical bloom, and heavy 1840s stillness.',
     },
   },
   {
@@ -1300,10 +1317,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Fine grain, dye-cloud smooth, archival stability',
       render_quality: 'Vivid, nostalgic, mid-century optimism, slide-projector glow',
       spatial_distortion: 'None',
-      atmosphere: 'Sunny, classic, road-trip freedom, post-war Americana',
-      key_features: 'Deep blacks, red pop, car tailfin, roadside motel',
+      atmosphere: 'Sunny, classic, optimistic, slide-projector memory',
+      key_features: 'Deep blacks, red pop, golden highlights, fine grain, projected slide glow',
       creative_brief:
-        'Sunlight thickened to syrup, poured across chrome bumpers and endless highway. Colors assert themselves with the confidence of a decade that believed in tomorrow — reds that ache, blues that stretch to the horizon, golds that hum with promise. Each frame is a postcard from an America still writing its own mythology, projected through a carousel clicking forward into the warm dark.',
+        'Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways, motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently mid-century.',
     },
   },
   {
@@ -1317,12 +1334,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Dark Sepia, iron grey, chocolate brown, muddy cream',
       lighting_setup: 'Flat daylight, harsh skylight, no fill, stark contrast',
       material_texture: 'Chemical stains, iron plate, collodion pour, hand-poured edge',
-      render_quality: 'Rough, historic, battlefield authenticity, unvarnished truth',
+      render_quality: 'Rough, historic, iron-plate authenticity, unvarnished truth',
       spatial_distortion: 'None',
-      atmosphere: 'Serious, old, stoic endurance, wartime gravity',
+      atmosphere: 'Serious, old, stoic endurance, documentary gravity',
       key_features: 'Black edges, iron oxidation, thumb-mark, plate wear',
       creative_brief:
-        'Darkened iron bears witness to what brightness once touched, a record carved not in light but in endurance. The pour of chemistry across metal leaves its signature in stains and swirling edges, every thumb-mark a scar earned in the service of permanence. These plates hold gravity: the stoic weight of faces facing an unforgiving lens, unvarnished and unblinking.',
+        'Treat the prompt as a rough tintype artifact: dark iron plate, muddy sepia contrast, collodion stains, blackened edges, thumb-marks, and unpolished daylight severity. Avoid forcing wartime content or portrait faces. The image should feel carried through time on metal, scarred by process and handling.',
     },
   },
   {
@@ -1334,14 +1351,15 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Instant film',
       form_and_line: 'None',
       color_palette: 'Green/Blue cast, cool shift, muted pastel, cream border',
-      lighting_setup: 'Flash, direct pop, over-lit faces, redeye bounce',
+      lighting_setup: 'Flash, direct pop, close-range glare, redeye bounce',
       material_texture: 'Soft focus, plastic lens, diffusion, chemical developer',
       render_quality: 'Personal, memory, snapshot intimacy, instant nostalgia',
       spatial_distortion: 'Chemical leak, developer smear, edge imperfection',
-      atmosphere: 'Nostalgic, fun, scrapbook moment, party memory',
-      key_features: 'White border, sharpie caption, square format, dated corner',
+      atmosphere: 'Nostalgic, fun, tactile memory, scrapbook intimacy',
+      key_features:
+        'White border, square format, chemical fog, developer smear, soft plastic-lens focus',
       creative_brief:
-        'A pocket-sized reliquary of the recent past, where the image materializes from chemical fog like a secret developing in plain sight. The white border frames not just a picture but the ritual of watching a moment become tangible — held in hands still warm from the flash, passed around the room before the color has fully settled. Impermanence made artifact, fading even as it arrives.',
+        'Make the prompt an instant-film artifact: square crop, thick white border, chemical fog, developer smear, muted cool cast, and soft plastic-lens intimacy. Avoid readable captions, dates, faces, or party scenes unless already requested. The ritual of instant development should be visible in the image chemistry itself.',
     },
   },
   {
@@ -1350,17 +1368,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt: 'professional lighting',
     style: {
-      aesthetic: 'Party photo',
+      aesthetic: 'Disposable 90s snapshot',
       form_and_line: 'None',
-      color_palette: 'High contrast, punchy saturation, blown-out skin, muddy shadow',
+      color_palette:
+        'High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color',
       lighting_setup: 'Harsh flash, direct frontal, overexposed 3-feet-away',
       material_texture: 'Grainy 400 ISO, plastic-lens softness, color fringe',
-      render_quality: 'Candid, fun, unposed spontaneity, party chaos',
-      spatial_distortion: 'Red eye, pupil reflection, demon-eye flash',
-      atmosphere: 'Party, memory, 90s sleepover, disposable youth',
-      key_features: 'Vignette, flash hotspot, crooked horizon, group selfie',
+      render_quality: 'Candid, unposed, cheap-lens spontaneity, one-roll urgency',
+      spatial_distortion: 'Flash reflection, red-edge glare, plastic lens warp',
+      atmosphere: 'Memory, casual, 90s, disposable immediacy',
+      key_features:
+        'Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain',
       creative_brief:
-        'Grainy illumination freezes chaos mid-cascade, the frame tilted and the horizon forgotten. These are images made without permission, stolen from the blur of youth — flash-blasted faces, crooked grins, the hot white center of a sleepover that refuses to end. Each shot carries the urgency of the disposable: proof that this night happened, before the roll winds out and the light seals shut.',
+        'Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows, cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies, or faces. The style should feel accidental, immediate, and physically limited by a single-use camera.',
     },
   },
   {
@@ -1376,8 +1396,9 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Jpeg artifacts, compression blocks, color banding',
       render_quality: 'Low res, nostalgic, 2MP chunky, digital infancy',
       spatial_distortion: 'Pixelation, stair-step edge, aliasing jaggies',
-      atmosphere: 'Y2K, candid, AIM-era, early Facebook album',
-      key_features: 'Date stamp, 640x480, silver camera body',
+      atmosphere: 'Y2K, candid, early-upload memory, digital infancy',
+      key_features:
+        'Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow',
       creative_brief:
         'The pixel blocks and chromatic noise of a technology still learning to see, where every jagged edge and compression smear carries the urgency of its era. Images fold into artifact-laden rectangles — the magenta fringe, the noisy shadow, the blocky contour — as if each megabyte were precious and every upload a declaration. This is not the past seen through nostalgia but the past seen through its own honest, limited eyes.',
     },
@@ -1396,7 +1417,7 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Dreamy, infinite DOF, everything-in-focus, timeless blur',
       spatial_distortion: 'Vignette, circular edge, keyhole darkening',
       atmosphere: 'Ethereal, time, solargraph, patient observation',
-      key_features: 'Blur, no lens, oatmeal-tin camera, light-leak drama',
+      key_features: 'Blur, no lens, circular vignette, time-smear, light-leak edge',
       creative_brief:
         'Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye.',
     },
@@ -1412,12 +1433,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Phosphor Green, monochrome green, bright-green highlight, black-green shadow',
       lighting_setup: 'Grainy gain, image intensifier, amplified starlight',
       material_texture: 'Scintillation noise, electron cascade, static snow',
-      render_quality: 'Military, spy, low-light clarity, ghost-proxy war',
+      render_quality: 'Low-light clarity, intensifier artifacts, amplified-starlight detail',
       spatial_distortion: 'Bloom, tube flare, halo around bright sources',
-      atmosphere: 'Stealth, hidden, nocturnal ops, predator unseen',
-      key_features: 'Green, tube whine, IR illuminator beam',
+      atmosphere: 'Hidden, nocturnal, phosphor eerie, low-light uncanny',
+      key_features: 'Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom',
       creative_brief:
-        'Darkness transformed into a luminous green theater where every stray photon is amplified into a cascade of eerie clarity. The world seen through this phosphor screen belongs to sentinels and night-hunters — those who navigate by starlight intensified, where halos bloom around bright sources and static snow dances at the edge of perception. What hides in shadow is made visible, but never fully known.',
+        'Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation scenes. Darkness should become visible through sensor artifacts rather than natural color.',
     },
   },
   {
@@ -1433,10 +1454,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Potato starch grain, dyed starch, random RGB mosaic',
       render_quality: 'Impressionist photo, pointillism, painterly light capture',
       spatial_distortion: 'None',
-      atmosphere: 'Dreamy, vintage, Belle Époque warmth, garden idyll',
+      atmosphere: 'Dreamy, vintage, Belle Epoque warmth, first-color wonder',
       key_features: 'Grainy color, starch-speckle, luminous pastels',
       creative_brief:
-        'A garden remembered through honeyed glass, where color arrives not in smooth ribbons but in tiny scattered grains like pollen suspended in a sunbeam. The world through this lens feels half-recalled — a waking dream filtered through dyed starch and diffuse window glow. Every frame carries the quiet astonishment of seeing the familiar rendered in lavender and rose for the very first time.',
+        'Reinterpret the input as early Autochrome color: dyed starch mosaic, stippled pastel grain, diffuse daylight, and a delicate impressionist veil over photographic form. Avoid requiring gardens, flowers, or period subjects. Every color should arrive through tiny scattered grains, as if the familiar world were being seen in color for the first time.',
     },
   },
   {
@@ -1452,10 +1473,10 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Chemical swirls, collodion pour, edge imperfection, hand-coating',
       render_quality: 'Handmade, fine art, alchemical process, one-of-one artifact',
       spatial_distortion: 'Peeling emulsion, lifted edge, craquelure decay',
-      atmosphere: 'Timeless, soul, Civil War ghost, eternal stillness',
+      atmosphere: 'Timeless, alchemical, eternal stillness, process-haunted',
       key_features: 'Focus falloff, petzval swirl, glass-plate negative',
       creative_brief:
-        'Alchemy performed on glass while the collodion is still wet with promise, each plate a singular artifact that can never be reproduced. The shallow plane of focus wraps its subject in a gaseous halo — the swirl of the brass lens separating the living from the eternal, the portrait from the ghost. What cracks and peels at the edge only deepens the spell.',
+        'Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay into handmade beauty.',
     },
   },
   {
@@ -1467,7 +1488,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic: 'Toy camera (Holga)',
       form_and_line: 'None',
       color_palette:
-        'Cross processed, color-shifted, purple sky, green skin, unpredictable palette',
+        'Cross processed, color-shifted, purple drift, green cast, unpredictable palette',
       lighting_setup: 'Leak, light-struck frame, accidental exposure, red window',
       material_texture: 'Plastic lens blur, toy-optics softness, zone focus mush',
       render_quality: 'Artsy, weird, lo-fi aesthetic, happy accident',
@@ -1475,7 +1496,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Experimental, fun, rule-breaking, analog play',
       key_features: 'Light leaks, sprocket holes, film rebate, double-exposure ghost',
       creative_brief:
-        'The camera surrenders control and the image rewards the gamble: skies veer violet, skin drifts green, and light leaks in through uninvited doors. Perfection was never the point — the artifact is the art. Every frame is a collaboration between intention and accident, where sprocket holes and chemical ghosts become the signature, and the mistake is the only thing worth keeping.',
+        'Let the prompt surrender to toy-camera accidents: cross-processed color, plastic-lens blur, vignetting, edge falloff, light leaks, sprocket traces, and double-exposure ghosts. Avoid subject-specific color rules or portrait assumptions. Perfection is removed; the artifact, leak, and mistake become the composition.',
     },
   },
   {
@@ -1491,29 +1512,32 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Paper fiber, watercolor paper, pulp grain',
       render_quality: 'Blueprint, art, scientific aesthetic, photogram precision',
       spatial_distortion: 'None',
-      atmosphere: 'Calm, blue, botanical serenity, Victorian catalog',
-      key_features: 'Monochrome, fern silhouette, botanical specimen',
+      atmosphere: 'Calm, blue, scientific, contemplative',
+      key_features:
+        'Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash',
       creative_brief:
-        'Sunlight paints in a single wavelength, turning the organic into a negative of itself across watercolor paper soaked in iron and light. Leaf veins and fern fronds become architecture rendered in fathomless blue, as methodical as a specimen drawer, as luminous as the ocean floor. The catalog of living things becomes a quiet cathedral of cyan.',
+        'Convert any input into cyanotype contact-print language: Prussian blue and paper white, UV exposure softness, watercolor paper fiber, contact shadows, and blueprint-like negative space. Avoid forcing botanical specimens or catalog scenes. The style should feel methodical, quiet, and handmade by sunlight.',
     },
   },
   {
     id: 'SP02-054',
     name: 'Infrared Film (Aerochrome)',
     category: '1. Cinematic Lighting And Lenses',
-    negativePrompt: 'green grass',
+    negativePrompt: 'natural color',
     style: {
       aesthetic: 'False color IR',
       form_and_line: 'None',
-      color_palette: 'Pink/Red foliage, magenta vegetation, cyan sky, white chlorophyll',
+      color_palette:
+        'False-color magenta, coral red, cyan shadow, white infrared response, spectral pink',
       lighting_setup: 'Surreal, invisible-spectrum, infrared reflectance',
       material_texture: 'Grainy, false-color emulsion, IR-sensitive layer',
       render_quality: 'Psychedelic, weird, alien biosphere, dreamscape',
       spatial_distortion: 'None',
-      atmosphere: 'Alien, dream, Mars-on-Earth, infrared hallucination',
-      key_features: 'Red trees, cotton-candy forest, white grass',
+      atmosphere: 'Alien, dream, invisible-spectrum hallucination',
+      key_features:
+        'False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom',
       creative_brief:
-        'The world reimagined through frequencies the eye was never meant to see, as if the planet were photographed on emulsion exposed to a different star. Verdant canopies erupt into fields of coral and magenta, skies deepen into alien cyan, and the familiar landscape becomes a biosphere from a parallel earth. Reality bends toward hallucination without ever breaking its own strange coherence.',
+        'Map the prompt through Aerochrome-style infrared response: invisible wavelengths become magenta, coral, cyan, and ghostly white according to material reflectance. Avoid requiring vegetation, forests, grass, or landscapes. The subject should remain recognizable while its color logic shifts into a coherent false-spectrum hallucination.',
     },
   },
   {
@@ -1527,12 +1551,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette: 'Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold',
       lighting_setup: 'Emissive heat, self-illumination, temperature glow',
       material_texture: 'Digital, sensor noise, microbolometer grid',
-      render_quality: 'Military, predator, FLIR aesthetic, heat-signature tracking',
+      render_quality: 'FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity',
       spatial_distortion: 'None',
-      atmosphere: 'Tech, hunting, surveillance, predator-vision',
-      key_features: 'Hot is white, cold is black, body-glow silhouette',
+      atmosphere: 'Tech, analytical, sensor-vision, invisible-energy',
+      key_features:
+        'White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom',
       creative_brief:
-        'Temperature becomes palette and the world reorganizes itself around warmth. Cool surfaces recede into violet shadow while hidden heat blooms brilliant as a beacon, the visual logic of something that hunts by signature rather than sight. The gradient from cold to burning core traces a language older than light, where every living thing announces itself in fire.',
+        'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form.',
     },
   },
   {
@@ -1548,10 +1573,11 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture: 'Film, radiographic sheet, phosphor plate',
       render_quality: 'Medical, scientific, diagnostic clarity, ghostly penetration',
       spatial_distortion: 'Transparency, density mapping, interior-only view',
-      atmosphere: 'Clinical, spooky, anatomical wonder, hidden structure',
-      key_features: 'Inverted, skeleton visible, swallowed object, airport scan',
+      atmosphere: 'Clinical, spooky, diagnostic, hidden structure',
+      key_features:
+        'Inverted density map, translucent layers, phosphor glow, radiographic negative',
       creative_brief:
-        'The surface surrenders and what lies beneath becomes luminous, a cartography of interior architecture rendered in bone-white against indigo shadow. The familiar body transforms into foreign terrain, mapped by radiation rather than reflection, every hidden chamber and scaffold laid bare. There is both clinical severity and strange tenderness in this unwilling transparency.',
+        'Translate the input into radiographic imagery: surface detail drops away, density becomes tone, hidden structure glows through translucent layers, and the frame reads like a scientific negative. Avoid body-only, skeleton-only, swallowed-object, or security-scan scenes. The style should expose internal architecture whatever the subject is.',
     },
   },
   {
@@ -1562,7 +1588,7 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Classic four-panel newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield-lazy-humor energy, Calvin-and-Hobbes-imagination jumps, Peanuts-philosophical-simplicity, cheap-newsprint-ink smell almost visible',
+        'Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible',
       form_and_line:
         'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
       color_palette:
@@ -1574,13 +1600,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Panel-grid division, balloon-like negative space, repeating simplified background, model-sheet consistency',
       atmosphere:
         'Cozy, familiar, breakfast-table comfort, gentle-humor warmth, daily-ritual companionship',
       key_features:
-        'Four-panel grid, Ben-Day dot coloring, speech balloons, repeating backgrounds, simple consistent character models, newsprint paper tone',
+        'Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating backgrounds, consistent model logic, newsprint paper tone',
       creative_brief:
-        'Morning light filtered through cheap pulp, four rectangles holding a universe of gentle punchlines arranged in daily ritual. Ink that stains fingertips carries the rhythm of companionship, familiar faces returning panel by panel. A breakfast-table confidant printed in borrowed colors on paper that knows its own disposability.',
+        'Apply Sunday-funnies print grammar to any input: panel rhythm, simple ink outlines, Ben-Day dots, newsprint tooth, off-register CMYK, and readable gag composition without actual readable text. Avoid forcing recurring characters or fixed four-panel narrative. The style should feel syndicated, disposable, and familiar.',
     },
   },
   {
@@ -1591,24 +1617,22 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, nautical nonsense colliding with fleshy realism, sea-salt weirdness, deranged reaction insert, undersea slapstick whiplash',
+        'Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green',
+      lighting_setup: 'Flat happy setup light interrupted by cruel macro glare',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture',
+      render_quality: 'Style-whiplash freeze frame, bright cartoon plus revolting macro insert',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop',
       atmosphere: 'Cheery, revolting, whiplash-funny, manic',
       key_features:
-        'Normal-to-gross style contrast, close-up flesh detail, cartoon sponge absurdity, reaction-frame jump scare, goofy undersea props',
+        'Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash',
       creative_brief:
-        "A cheerful world suddenly arrested by the camera's cruel proximity, innocence freeze-framed into a nightmare of pores and follicles. The gag lives in the whiplash between Saturday-morning brightness and the grotesque truth that the magnifying glass reveals.",
+        'Apply gross-up freeze-frame contrast to any prompt: cheerful flat cartoon setup interrupted by invasive hyper-detailed texture, pores, folds, and uncomfortable proximity. Avoid undersea props, sponge forms, faces, or fixed characters. The gag should be the sudden style jump.',
     },
   },
   {
@@ -1619,24 +1643,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Mouth-breathing teen delinquent caricature, couch-slouch nihilism, ugly suburban interiors, cheap music-video culture, stupid-laugh deadbrain energy, acne-age contempt, pencil-neck stupidity',
+        'Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Jagged slack contours, pencil-neck angles, ugly profile-like construction, slow posture sag',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red',
+      lighting_setup: 'Flat cathode glow, low-rent room ambience, no glamour, tired exposure',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic',
       atmosphere: 'Idiotic, lazy, mean, vacant',
       key_features:
-        'Overbites, slouched posture, deadbeat living room clutter, ugly teen profile shapes, cheap-TV ambience',
+        'Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture',
       creative_brief:
-        'Gravity pulls harder on these bodies, flattening spines into upholstery, erasing ambition from posture one potato-chip episode at a time. The room exhales stale boredom while profiles cut jagged against the cathode-ray glow of a world they will never join.',
+        'Use dumb slouch caricature as visual grammar: sagging posture logic, jagged profiles, cheap-TV glow, ugly low-rent color, and vacant timing. Avoid couches, teens, interiors, overbites, or specific bodies as requirements. The style should make boredom look physically heavy.',
     },
   },
   {
@@ -1647,24 +1670,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Dry anti-charisma office cartoon, dead-eyed cubicles, regional mediocrity, bad polo shirts, paperwork emptiness, satirical nobody energy, American beige despair made funny',
+        'Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black',
+      lighting_setup: 'Fluorescent flatness, shadowless workplace exposure, dull overhead wash',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Dry Mike Judge satire, underplayed adult animation, beige observational comedy',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing',
       atmosphere: 'Bored, dry, defeated, observant',
       key_features:
-        'Cubicle geometry, blank stares, underwhelming body language, office clutter, anti-glamour caricature',
+        'Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature',
       creative_brief:
-        "Fluorescent tubes hum over cubicles where dreams go to beige, each face a study in voluntary surrender to the photocopier's rhythm. The comedy is the absence of comedy — bodies arranged in geometries of resignation, finding absurdity in the unchanging angle of a necktie.",
+        'Apply Mike Judge office-boredom sketch language to any subject: dry linework, beige despair, anti-charisma staging, underwhelming shapes, and fluorescent flatness. Avoid cubicles, paperwork, faces, ties, or offices as mandatory content. Comedy should come from resignation, not spectacle.',
     },
   },
   {
@@ -1675,24 +1697,22 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Mutant suburbia satire, malformed family silhouettes, environmental rot, class divide cartoon cruelty, trailer-park grotesquerie, deformity normalized into domestic routine, poisoned world whimsy',
+        'Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink',
+      lighting_setup: 'Flat polluted ambience, sour daylight, no glamour, environmental haze',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture',
+      render_quality: 'Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity',
       atmosphere: 'Bleak, satirical, mutated, weirdly cozy',
       key_features:
-        'Malformed suburban family, toxic backdrop details, trashy domesticity, odd body asymmetries, resigned humor',
+        'Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor',
       creative_brief:
-        "Domestic warmth curdles under smokestack shadows, where family portraits reveal the landscape's slow revenge on human form. Love persists in the half-melted smile, the lopsided embrace — tenderness surviving inside bodies the world tried to dispose of.",
+        'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy.',
     },
   },
   {
@@ -1703,24 +1723,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Notebook-color suburbia, adolescent embarrassment, gentle daydream logic, simple flat backgrounds, internal monologue cartooning, childhood worry in soft marker color',
+        'Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat backgrounds, internal monologue cartooning, soft marker color',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream',
+      lighting_setup: 'Flat friendly TV light, daydream glow inserts, low-contrast comfort',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Notebook-paper tooth, marker softness, light scan grain, softened cel fill',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space',
       atmosphere: 'Nervous, sweet, relatable, wistful',
       key_features:
-        'Notebook-like color fields, awkward kid posture, diary-energy framing, suburban school props, daydream insert logic',
+        'Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness',
       creative_brief:
-        'The interior monologue drifts through neighborhoods drawn in the colors of spiral-bound covers, where every social stumble ripples across the page like a stone in pond water. Fantasy sequences bloom from the margins, temporary escapes from the terrifying arithmetic of peer approval.',
+        'Apply notebook anxiety cartooning to any prompt: soft marker fields, flat backgrounds, diary-like framing, gentle daydream inserts, and awkward internal-monologue rhythm. Avoid schools, neighborhoods, kids, props, or social scenes as requirements. The style should feel wistful and nervous.',
     },
   },
   {
@@ -1731,24 +1750,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Photocollage black-and-white cutout nightmare, flat heads pasted onto crude bodies, anti-beauty schoolyard sarcasm, collage ugliness weaponized, handmade digital freakout',
+        'Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent',
+      lighting_setup: 'Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows',
       material_texture:
         'Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic',
       atmosphere: 'Snarky, janky, hostile, unforgettable',
       key_features:
-        'Photo-cutout faces, mismatched body collage, xerox textures, anti-pretty black-and-white contrast, hostile schoolyard energy',
+        'Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges',
       creative_brief:
-        'Found faces stare from stolen photographs, grafted onto bodies that reject them, the resulting collision radiating the menace of a school yearbook weaponized. Scissors and glue become instruments of revenge, assembling a world where nothing fits together and that is precisely the point.',
+        'Apply photo-cutout menace to any subject: xerox grain, mismatched photographic fragments, crude drawn bodies or forms, harsh black-and-white contrast, and visible cut edges. Avoid faces, schoolyards, yearbooks, or revenge narratives as requirements. Nothing should fit cleanly together.',
     },
   },
   {
@@ -1759,24 +1777,22 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Trash-kid trading-card grossness, swelling zits, goo drips, prank-card exaggeration, gleeful disgustingness, playground disgust collectible energy, ugly gags rendered for maximum recoil',
+        'Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Bold trading-card outline, gross sticker contours, crash-zoom impact marks, swollen defect shapes',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black',
+      lighting_setup: 'Flat collectible-card lighting, hard highlight on goo, no atmospheric depth',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture',
+      render_quality: 'Gross collectible caricature, prank-card recoil, loud trading-card finish',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration',
       atmosphere: 'Gross, gleeful, juvenile, loud',
       key_features:
-        'Exploding goo details, prank-card composition, gross kid caricature, crash-zoom reaction framing, sticky body horror',
+        'Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic',
       creative_brief:
-        'The trading card becomes a window into a playground underworld where every bodily function gets its close-up and revulsion loops back around to delight. The frame lurches forward with the violence of a zoom lens discovering something it wishes it had not.',
+        'Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects, loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required content. Revulsion should loop back into collectible comedy.',
     },
   },
   {
@@ -1787,7 +1803,7 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle movement',
     style: {
       aesthetic:
-        '1930s rubber-hose cartoon pushed to mania, limbs like overcooked spaghetti, pupils detaching from eyes, feet expanding to piano size mid-stride, bodies folding into accordion shapes, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode',
+        '1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode',
       form_and_line:
         'Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes',
       color_palette:
@@ -1799,12 +1815,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward',
       spatial_distortion:
-        'Arms knotting like balloon animals, torso compressing into hockey puck, legs extending infinite staircases, pupils orbiting head',
+        'Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents',
       atmosphere: 'Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed',
       key_features:
-        'Rubber-hose limbs with no joints, pie-cut eyes separating, torso accordion compression, object-head hammer impact',
+        'Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears',
       creative_brief:
-        'Physics has fled the room, leaving limbs to knot and stretch like taffy in a hurricane. Pupils pinball across faces, torsos compress into accordions, and the laws of mass and momentum have been revoked by executive decree of chaos. Every frame screams with the velocity of a golden-age cartoon overdosed on its own elastic joy.',
+        'Turn any subject into manic rubber-hose kinetics: no-joint elastic curves, accordion compression, impact smears, pie-cut graphic accents, and fast old-reel flicker. Avoid requiring limbs, pupils, bodies, or object-head gags. Physics should feel revoked through motion language and deformation.',
     },
   },
   {
@@ -1815,24 +1831,22 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Single-body two-headed creature absurdity, opposite temperaments locked in one sausage body, suburban hijinks, long-body contortions, impossible shared anatomy, simple but deeply strange sitcom creature design',
+        'Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Clean elastic outlines, long-contour continuity, simple sitcom construction, soft squash curves',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        '90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents',
+      lighting_setup: 'Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Smooth cel fill, analog TV softness, light scan grain, simple painted surface',
+      render_quality: 'Simple strange sitcom cartoon, elastic absurdity, readable long-form design',
       spatial_distortion:
-        'Sausage-body contortions, impossible shared spine bends, mirrored emotional poses at both ends, accordion-body compression',
+        'Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression',
       atmosphere: 'Goofy, elastic, odd-couple, playful',
       key_features:
-        'Shared-body anatomy, impossible body bends, head-to-tail personality contrast, suburban prop gags, elastic long-form silhouettes',
+        'Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression',
       creative_brief:
-        "Anatomy becomes a punchline as two souls share one impossible spine, stretching across suburban lawns like taffy pulled by competing appetites. The creature's silhouette writes calligraphy of domestic friction — a single body negotiating separate hungers with elastic grace.",
+        'Use shared-body elastic design as abstraction: one stretched form contains two opposing visual states, bending impossibly with sitcom simplicity and elastic compression. Avoid cats, dogs, creatures, lawns, props, or anatomy as requirements. The style should be long, contradictory, and playful.',
     },
   },
   {
@@ -1843,7 +1857,7 @@ export const GENERATED_STYLE_PRESETS = [
       'epic, slick, cinematic, beautiful, painterly, photorealistic, cute mascot polish, superhero rendering',
     style: {
       aesthetic:
-        'Slack-off office cartoon with flat digital color, awkward little guys, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan workplace nonsense, casually cursed side characters, adult-swim anti-spectacle simplicity',
+        'Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity',
       form_and_line:
         'Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents',
       color_palette:
@@ -1851,16 +1865,16 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill',
       material_texture:
-        'Simple digital fills, lightly dirty edges, cheap office carpet texture, flat wall paint, low-fuss line art',
+        'Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art',
       render_quality:
         'Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish',
       spatial_distortion:
-        'Stubby limb proportions, tiny torsos, off-model expressions, abrupt perspective jumps for punchlines',
+        'Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines',
       atmosphere: 'Awkward, deadpan, bizarre, mildly cursed',
       key_features:
-        'Simple oddball silhouettes, blank stares, mundane office props, anti-climactic gag framing, uncomfortable pauses made visual',
+        'Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness',
       creative_brief:
-        'The fluorescent hum of a dying office illuminates creatures who stopped asking why sometime last Thursday, their flatness a philosophy and a shield against the absurdity of showing up again tomorrow. Nothing resolves, nothing escalates, nothing happens beautifully. And yet the clock keeps ticking and everyone keeps smiling, because what else is there to do?',
+        'Apply flat weird-comedy design to any prompt: sour pastels, simple contours, mundane staging, anti-climactic composition, and awkward pauses made visible. Avoid required offices, workplaces, side characters, or specific props. The style should feel funny because it refuses spectacle.',
     },
   },
   {
@@ -1871,24 +1885,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Toddlers seeing the world as wobbly adventure, chunky baby heads, domestic danger made epic, scribbly suburban interiors, nervous hand-drawn innocence, diaper-age imagination logic, toy-scale heroism',
+        'Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color',
       lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
-      material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness',
+      material_texture: 'TV cel softness, dry marker edge, paper-like fill, softened scan texture',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        '90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry',
       atmosphere: 'Curious, rambunctious, innocent, chaotic',
       key_features:
-        'Toddler-scale perspective, chunky outlines, toy clutter everywhere, domestic spaces made huge, crayon-ish uncertainty',
+        'Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color',
       creative_brief:
-        'The coffee table is a mountain and the hallway an uncharted continent, everything looming impossibly large when your eyes barely clear the carpet fibers. Adventure wears a diaper and has never heard the word impossible, its geography redrawn with every crawling expedition across the living room floor. The ordinary home becomes epic wilderness when viewed from three feet tall.',
+        'Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky outlines, soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys, children, or specific props as requirements. The style should make scale feel emotionally huge.',
     },
   },
   {
@@ -1899,24 +1912,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Neurotic suburban absurdism, anxious little wallaby energy, weird consumerist interiors, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, surreal errands becoming nightmares',
+        'Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green',
       lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Flat sitcom illumination, fluorescent discomfort, no heroic contrast, ambient suburban wash',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime',
+      render_quality: '90s suburban satire cartoon, neurotic mundanity, soft-color discomfort',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration',
       atmosphere: 'Neurotic, suburban, goofy, overstimulated',
       key_features:
-        'Domestic clutter, weird brand-like props, noodle-limbed panic poses, surreal suburban backdrops, satirical mundanity',
+        'Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic',
       creative_brief:
-        'Pastel wallpaper hums with quiet menace while the toaster might actually be forming opinions, every appliance a potential antagonist in the theater of domestic unease. The checkout line stretches into existential crisis, mundane errands blooming into surreal ordeal. Comfort is the disguise that horror wears to the suburbs, and it always remembers to pay the water bill on time.',
+        'Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb scenes. The tone should be goofy dread under soft colors.',
     },
   },
   {
@@ -1927,24 +1939,24 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Shouting primary-color lunacy, absurd sibling slapstick, huge feet and tiny torsos, anti-subtle cartoon vulgarity, hallway chaos, exaggerated rubbery ugliness, jagged gross comedy',
+        'Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white',
       lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses',
       atmosphere: 'Loud, shameless, unruly, ridiculous',
       key_features:
-        'Primary-color saturation, giant feet, screaming mouths, surreal hallway staging, chaotic sibling energy',
+        'Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing',
       creative_brief:
-        "A fever dream rendered in poster paint and cheap newsprint, where every scream rattles the panel borders and limbs stretch beyond anatomy's permission. The frame vibrates with sibling warfare conducted at volumes meant for stadiums, and dignity has been ejected from the room entirely.",
+        'Apply loud primary derangement to any input: saturated primaries, rubbery ugliness, jagged comic bursts, scale mismatch, and zero-subtlety slapstick. Avoid siblings, hallways, mouths, limbs, or specific characters. The image should feel shouted into existence.',
     },
   },
   {
@@ -1954,7 +1966,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flattering, beautiful, respectful, dignified, subtle, elegant, polished',
     style: {
       aesthetic:
-        'Exaggerated political caricature, oversized jowls and fists, tiny bodies under giant scowling heads, newspaper editorial venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty',
+        'Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty',
       form_and_line:
         'Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch',
       color_palette:
@@ -1966,12 +1978,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement',
       spatial_distortion:
-        'Giant heads atop tiny suited bodies, fists expanded to melon size, jowls dragging to collarbone',
+        'Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion',
       atmosphere: 'Biting, cynical, merciless observation, righteous mockery',
       key_features:
-        'Pointed political symbols, exaggerated real-world traits, crosshatched fury, text balloon with cutting caption',
+        'Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions',
       creative_brief:
-        'The pen is a scalpel here, carving recognition into exaggeration with strokes that land like verdicts. Hatched shadows dig trenches across inflated features while cheap ink bleeds the truth into pulp. Every line is an argument, every distortion a revealed secret about the subject they hoped you would not notice.',
+        'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text.',
     },
   },
   {
@@ -1982,24 +1994,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Loose vibrating linework, therapist-office stand-up confessional, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis',
+        'Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis',
       form_and_line:
         'Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Muted therapy-room beige, dusty teal, pencil grey, soft salmon, washed blue, off-white',
+      lighting_setup: 'Flat low-key TV lighting, soft no-drama fill, minimal ambience',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Squigglevision adult animation, understated comedy, loose conversational minimalism',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Contours vibrating in place, small shape drift, low-action framing, anxious line boil',
       atmosphere: 'Talky, neurotic, understated, wry',
       key_features:
-        'Constant line jitter, simple office staging, conversational framing, minimal backgrounds, anxious contour vibration',
+        'Constant line jitter, simple staging, conversational framing, minimal backgrounds, anxious contour vibration',
       creative_brief:
-        'Every outline hums with the tremor of a held breath, lines refusing to settle as if the act of being seen provokes perpetual vibration. The couch confessional becomes a diagram of unease, where truth slips out between the jittering contours.',
+        'Apply squigglevision therapy-doodle logic to any prompt: vibrating contours, minimal backgrounds, talky framing, gentle neurosis, and deliberately low-action composition. Avoid offices, couches, therapists, or stand-up scenes. The style should look like every line is quietly anxious.',
     },
   },
   {
@@ -2010,24 +2021,24 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Middle-school-desk doodle pushed into a full freakout scene, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed characters born from notebook margins',
+        'Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple',
       lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding',
       atmosphere: 'Rebellious, messy, hyperactive, juvenile',
       key_features:
-        'Permanent-marker texture, desk-doodle iconography, notebook margin monsters, vandal-energy linework, adolescent chaos',
+        'Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos',
       creative_brief:
-        'Notebook margins erupt into full-scale insurrection, the doodles that were supposed to stay small now colonizing the entire page with sharp-scented fury. Every figure vibrates with the energy of detention-bound creation — art made under the desk while the lesson drones on.',
+        'Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious marks.',
     },
   },
   {
@@ -2038,25 +2049,24 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich',
     style: {
       aesthetic:
-        'Dry-erase marker on whiteboard, conference-room meeting doodles, stick-figure presentations with arrows everywhere, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, Venn-diagram jokes, SWOT-analysis-gone-wrong energy',
+        'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity',
       form_and_line:
         'Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition',
       color_palette:
         'Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails',
-      lighting_setup:
-        'Harsh office fluorescent overhead, glossy board reflection, shadow of the person drawing cast on board',
+      lighting_setup: 'Harsh fluorescent overhead, glossy board reflection, shallow surface glare',
       material_texture:
         'Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection',
       render_quality:
         'Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor',
       spatial_distortion:
-        'Stick figures with comically oversized heads, arrows looping in impossible circles, text squeezed into board corners',
+        'Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
       atmosphere:
         'Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling',
       key_features:
-        'Dry-erase marker strokes, eraser ghost trails, stick figures everywhere, flowchart arrows, Venn-diagram joke circles, glossy board reflection',
+        'Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text',
       creative_brief:
-        'A glossy surface bears the archaeology of a meeting that lost its way—stick figures wage war with arrows, Venn diagrams collapse into absurdity, and the ghost of a previous idea lingers beneath an incomplete erasure. The fluorescent hum overhead witnesses this small rebellion, creativity blooming in the cracks of corporate obligation.',
+        'Translate any prompt into whiteboard doodle language: squeaky marker strokes, eraser ghosts, diagram arrows, glossy glare, color-coded marks, and half-erased residue. Avoid required meeting rooms, stick figures, readable text, or specific business diagrams. The surface should feel temporary, improvised, and slightly absurd.',
     },
   },
   {
@@ -2067,7 +2077,7 @@ export const GENERATED_STYLE_PRESETS = [
       'beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished',
     style: {
       aesthetic:
-        "Deformed yet adorable monster, lumpy asymmetrical body, mismatched googly eyes, crooked fang-toothed grin, three strands of hair on a potato head, so-ugly-it's-precious charm, beloved garbage creature, Ghibli soot-sprite meets Ren & Stimpy",
+        'Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor',
       form_and_line:
         'Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes',
       color_palette:
@@ -2075,16 +2085,16 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds',
       material_texture:
-        'Bumpy toad skin, lumpy wool sweater texture, crusty dried-mud surface, scab-like patches',
+        'Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches',
       render_quality:
         'Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm',
       spatial_distortion:
-        'Eye levels drastically different heights, limbs of varying lengths, head consuming two-thirds of body mass',
-      atmosphere: "Affectionate disgust, heartwarming grotesquerie, you're-hideous-and-I-love-you",
+        'Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic',
+      atmosphere: 'Affectionate disgust, heartwarming grotesquerie, lovable wrongness',
       key_features:
-        'Mismatched eye sizes and heights, single snaggle tooth, three random hair strands, potato-shaped body',
+        'Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow',
       creative_brief:
-        'A lump of contradictions has sprouted mismatched eyes and a lopsided grin, its very wrongness the source of its charm. Every bump and asymmetry becomes a credential, a certificate of authenticity in a world of polished perfection. You want to look away, but your heart has already signed the adoption papers.',
+        'Make any subject ugly-cute through lumpy asymmetry, mismatched scale, awkward silhouette, candy-sick color, and forgiving soft glow. Avoid requiring monsters, eyes, teeth, hair, animals, or bodies. Charm should come from deliberate wrongness made affectionate.',
     },
   },
   {
@@ -2095,7 +2105,7 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art',
     style: {
       aesthetic:
-        "Five-year-old's family drawing, stick-figure mom with triangle dress, dad as tallest line with glasses-circles, siblings in descending height order, giant yellow sun with rays in top corner, house as square-with-triangle-roof, flowers as lollipop-circles on green-line stems, ground as single green stripe across bottom, sky as blue stripe across top, pure childhood-art vocabulary",
+        'Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary',
       form_and_line:
         'Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness',
       color_palette:
@@ -2107,13 +2117,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul',
       spatial_distortion:
-        'Ground-line at page bottom, sky-stripe at page top, family in height-order line, house bigger than people, sun sized like pizza',
+        'Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols',
       atmosphere:
         'Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence',
       key_features:
-        'Triangle-dress mom, stick-figure family, corner-sun with rays, square-triangle house, lollipop flowers, ground-line-sky-stripe',
+        'Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe',
       creative_brief:
-        'The sun lives in the corner of the page and love occupies every other inch, shapes wobbling with the certainty of a hand that has never learned to doubt itself. Hierarchies of height and dress tell the story of belonging, each figure placed with devotional care. A truth too pure for correction, rendered in the language of refrigerator galleries everywhere.',
+        'Convert any prompt into kindergarten drawing vocabulary: heavy crayon pressure, simple symbolic geometry, importance-based scale, sky and ground stripes, and confident mistakes. Avoid forcing family members, houses, flowers, or people. The style should feel proudly naive and refrigerator-gallery sincere.',
     },
   },
   {
@@ -2124,7 +2134,7 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, proportional, detailed, clean lines, smooth shading, serious, polished, refined',
     style: {
       aesthetic:
-        'Childlike notebook scribble, wonky circles for heads, stick-thin limbs ending in mittens, deliberately bad proportions, joyful incompetence, crayon-on-kitchen-wall energy',
+        'Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy',
       form_and_line:
         'Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure',
       color_palette:
@@ -2135,12 +2145,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece',
       spatial_distortion:
-        'Heads too big for stick bodies, hands drawn as five-ray sunbursts, no perspective whatsoever',
+        'Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic',
       atmosphere: 'Innocent, joyful chaos, giggling anarchy, pure creative abandon',
       key_features:
-        'Triangle roofs, spiral sun in corner, flowers as lollipop sticks, smiley-face everything',
+        'Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout',
       creative_brief:
-        'A hand that has not yet learned shame drags wax across paper with the full conviction of kindergarten genius. Circles wobble, colors trespass their borders, and every sun wears a smile because no one told it not to. The work hums with the frequency of pure making, before taste learned to say no.',
+        'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art scene.',
     },
   },
   {
@@ -2151,24 +2161,24 @@ export const GENERATED_STYLE_PRESETS = [
       'subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty',
     style: {
       aesthetic:
-        'Hyper-detailed gross close-up reaction frame, stretched gums, trembling lips, oversized pores, saliva-string disgust, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy',
+        'Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy',
       form_and_line:
         'Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging',
       color_palette:
         'Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin',
       lighting_setup:
-        'Harsh proximity lighting, bright skin sheen on noses and gums, overexposed forehead glare, ugly reaction-frame illumination',
+        'Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination',
       material_texture:
-        'Pore-heavy skin, lip-crack detail, greasy cheek shine, dried-saliva gloss, wobbling paint texture',
+        'Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture',
       render_quality:
         'Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose',
       spatial_distortion:
-        'Face crushing into lens space, gums bulging beyond teeth, nose swelling forward, eyes drifting on different axes',
+        'Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure',
       atmosphere: 'Disgusted, frantic, hilarious, deeply unflattering',
       key_features:
-        'Extreme close-up face distortion, swollen gums, pore-level texture, trembling lip folds, cartoon spit strings',
+        'Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings',
       creative_brief:
-        'Every pore catalogued with painterly devotion, every wet surface held under the light until discomfort becomes its own kind of spectacle. The face invades the frame until there is no frame, only membrane and capillary and the comedy of absolute revulsion. Beauty redefined as the courage to linger on what polite vision has trained itself to skip past.',
+        'Use gross-up close-up language on any subject: invasive framing, pore-level detail, wet sheen, swollen folds, wobbling contours, and painterly revulsion. Avoid requiring faces, gums, lips, noses, or anatomy. Comedy should come from excessive proximity and unflattering texture.',
     },
   },
   {
@@ -2179,7 +2189,7 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, smooth, polished, professional, proportional, realistic, refined, clean, adult',
     style: {
       aesthetic:
-        'Monster drawn by a six-year-old, jagged teeth shaped like triangles, eyes as uneven circles stabbed with crayon, fur as chaotic orange scribbles, claws as five mismatched lines, pure childhood nightmare-art, kindergarten fridge gallery horror',
+        'Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror',
       form_and_line:
         'Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy',
       color_palette:
@@ -2191,12 +2201,12 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul',
       spatial_distortion:
-        'Head too big for body, legs two different sizes, arms sprouting from neck, tail from forehead',
+        'Wrong scale, mismatched parts, impossible attachment points, no perspective',
       atmosphere: 'Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong',
       key_features:
-        'Triangle teeth, uneven circle eyes, scribble-crayon fur texture, construction-paper background, forgot-to-color sections',
+        'Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps',
       creative_brief:
-        'Wax applied with the full weight of a small furious hand, teeth rendered as jagged triangles because triangles are the scariest shape when you are six. No perspective, no anatomy, no hesitation—just the back-pressure of an imagination too big for its motor skills. The page trembles with the authenticity of pure, unfiltered id.',
+        'Render the input as crude crayon fear: heavy wax pressure, jagged triangle symbols, uneven circles, construction-paper tooth, uncolored gaps, and no perspective. Avoid requiring monsters, teeth, eyes, fur, claws, or bodies. The style should feel like pure childhood nightmare logic applied to any subject.',
     },
   },
   {
@@ -2207,7 +2217,7 @@ export const GENERATED_STYLE_PRESETS = [
       'professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome',
     style: {
       aesthetic:
-        "Corporate mascot that should never have been approved, dead-soulless-eyes with corporate-smile stretched too wide, unsettling hybrid of human-and-product, clip-art-from-hell energy, Duolingo-owl-menace turned up to eleven, fast-food-mascot abandoned in storage unit, insurance-gecko's-evil-twin, unblinking-happiness that registers as threat",
+        'Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat',
       form_and_line:
         'Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme',
       color_palette:
@@ -2215,17 +2225,17 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere',
       material_texture:
-        'Glossy plastic-vector surface, mascot-costume-foam texture, cheap-fleece fabric, hollow-soul emptiness',
+        'Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness',
       render_quality:
         'Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake',
       spatial_distortion:
-        'Giant-head-too-small-body mascot proportions, hands permanently in thumbs-up, costume-seam-zipper visible',
+        'Overscaled friendly proportions, frozen approval pose, visible seam logic',
       atmosphere:
         'Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection',
       key_features:
-        'Dead glossy eyes, too-wide corporate smile, thumbs-up frozen pose, mascot-costume seams, plastic-vector perfection, soulless brand energy',
+        'Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy',
       creative_brief:
-        'Happiness engineered to specification, its shine too perfect and its gaze too steady, a grin that forgot what warmth feels like somewhere between the brand guidelines and the focus group. The seams of the costume show at the neckline, hinting at the hollow interior where approval was supposed to live. Something designed to charm that instead teaches the grammar of unease.',
+        'Apply rejected-mascot unease to any subject: over-friendly shapes, too-perfect vector symmetry, glossy plastic surfaces, costume seam hints, and engineered cheer that reads as threat. Avoid requiring specific brands, eyes, smiles, thumbs-up poses, or mascot bodies. The horror should come from inappropriate marketing polish.',
     },
   },
   {
@@ -2236,24 +2246,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Suburban cul-de-sac scam energy, boiling outlines, stretched faces, loud adolescent nonsense, sticky summer heat, impossible jawbreaker obsession, scam-blueprint slapstick, Canadian tween chaos',
+        'Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos',
       form_and_line:
         'Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble',
       color_palette:
         'Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey',
       lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil',
+      render_quality: 'Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse',
       atmosphere: 'Hyper, sweaty, scammy, loud',
       key_features:
-        'Boiling line art, stretched jaw shapes, sticky suburban props, scam gadgets, exaggerated reaction takes',
+        'Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes',
       creative_brief:
-        'The outline trembles as if the drawing itself can barely contain its own voltage, suburban sidewalks baking under a sun that has witnessed every scheme fail by sunset and rise again by morning. Candy becomes currency and chaos the native tongue, each plan more elaborate and doomed than the last. Summer stretches infinite when the only adult supervision is the heat mirage shimmering off the cul-de-sac asphalt.',
+        'Use boiling-line scam-cartoon grammar on any prompt: vibrating contours, stretched forms, sticky summer palette, frantic diagram energy, and exaggerated reaction timing. Avoid suburban streets, candy, gadgets, characters, or fixed schemes. The style should feel like a plan vibrating apart before it begins.',
     },
   },
   {
@@ -2264,24 +2273,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Lonely farmhouse horror cartoon, pink dog panic, grotesque villains in empty landscapes, Midwestern doom silence, haunted domesticity, uncanny CGI inserts, fear made cute and shrill',
+        'Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow',
       lighting_setup:
-        'Moonlit rural isolation, dusty lamp glow, sudden horror spotlights, red-alert interior panic lighting',
+        'Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
-      render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture',
+      render_quality: 'Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Negative-space expansion, tiny form against vast field, sudden insert scale shock',
       atmosphere: 'Terrified, lonely, surreal, absurd',
       key_features:
-        'Isolated farmhouse staging, screaming reaction poses, uncanny intruders, pastel panic, dead-field emptiness',
+        'Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition',
       creative_brief:
-        'The field stretches to every horizon under a sky that offers no witness, pink fur the only soft thing trembling between dead rows of corn and an approaching shape that should not exist. Home is where the horror nests, but love keeps you tethered to the floorboards even as the walls begin to breathe. Silence is the scariest sound in the country, broken only by the whimper of a creature too brave to run.',
+        'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure.',
     },
   },
   {
@@ -2292,7 +2300,7 @@ export const GENERATED_STYLE_PRESETS = [
       'flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges',
     style: {
       aesthetic:
-        "Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, idea rejected and fished from trash, coffee-ring halo on character's head, wrinkled-grid distortion, beautiful-accident texture, trash-to-treasure aesthetic, discarded-thought recovered",
+        'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered',
       form_and_line:
         'Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes',
       color_palette:
@@ -2304,13 +2312,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy',
       spatial_distortion:
-        'Characters bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
+        'Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
       atmosphere:
         'Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm',
       key_features:
         'Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection',
       creative_brief:
-        'An idea was born, rejected, crushed, rescued, and flattened again—its creases now co-authors of the composition. A coffee ring crowns a character who survived the wastebasket, ink pooling in fold valleys like truth settling into wounds. Imperfection is not bug but feature; the damage is the signature.',
+        'Apply crumpled-paper damage to any input: fold faults, ink pooling, coffee stains, torn edges, warped fibers, and recovered-sketch imperfection. Avoid requiring characters, trash scenes, or literal rejection narrative. Damage should co-author the composition through surface deformation.',
     },
   },
   {
@@ -2320,24 +2328,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'comfortable, natural, warm, wholesome, expressive, emotionally readable',
     style: {
       aesthetic:
-        "Almost-human-but-wrong portrait, dead glassy eyes with no soul behind them, plastic skin stretched too tight over wrong skull shape, smile that doesn't reach the eyes, hyper-realistic skin on cartoon structure, creepy animatronic energy, Polar-Express dead-eye syndrome",
+        'Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease',
       form_and_line:
         'Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation',
       color_palette:
-        'Uncanny skin tones, slightly-off peach, corpse wax beige, mortician foundation, too-uniform blush',
+        'Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth',
       lighting_setup: 'Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere',
       material_texture:
-        'Too-smooth plastic skin, vinyl doll surface, waxy silicone, mannequin gloss',
+        'Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss',
       render_quality:
         'Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection',
       spatial_distortion:
-        'Eyes fractionally too far apart, mouth placed millimeters too low, head shape meeting uncanny threshold',
+        'Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment',
       atmosphere:
         'Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness',
       key_features:
-        'Glassy unblinking stare, symmetrical-too-perfect faces, puppet-mouth articulation lines, plastic sheen on skin',
+        'Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen',
       creative_brief:
-        'The surface is flawless, and that is precisely the horror—each plane of the face rendered with such immaculate precision that the soul has been polished right off. Eyes hold light but not recognition, the smile performs its geometry without ever arriving at warmth. Something watches from behind the rendering, and it is not quite alive.',
+        'Apply uncanny-valley rendering to any subject: surfaces become too smooth, proportions almost correct, gradients too perfect, and expression of material feels algorithmic rather than alive. Avoid requiring portraits, eyes, smiles, or human anatomy. The discomfort should come from near-real precision that misses organic truth.',
     },
   },
   {
@@ -2347,9 +2355,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'soft, gentle, calm, rounded, cute, peaceful, subtle, quiet, reserved, polite',
     style: {
       aesthetic:
-        'Aggressively angular character design, everything composed of sharp triangles and jagged edges, permanent scowl carved into face, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy',
+        'Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy',
       form_and_line:
-        'Razor-sharp angular contours, triangular composition everywhere, spiked hair drawn as caltrops, jagged motion lines, aggressive hatch shading',
+        'Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading',
       color_palette:
         'Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum',
       lighting_setup:
@@ -2359,13 +2367,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto',
       spatial_distortion:
-        'Characters as walking collections of triangles, hair as impossible razor fans, limbs narrowing to needle points',
+        'Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions',
       atmosphere:
         'Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage',
       key_features:
-        'Triangular everything, permanent angry eyebrows, spiked-hair crowns, jagged speech bubbles, crosshatched shadows, no curves allowed',
+        'Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed',
       creative_brief:
-        'Every contour resolves into a point, every junction into a blade—the geometry of defiance rendered in high-contrast fury. Curves have been banned by decree; only angles may speak in this vocabulary of adolescent rebellion. The page crackles with the voltage of someone who has decided that softness is the enemy and sharpness is the only honest shape.',
+        'Make any subject aggressively angular: contours resolve into points, silhouettes become blade-like, hatch shadows bite into form, and the palette stays black-heavy with toxic accents. Avoid requiring characters, faces, hair, speech bubbles, or teen-scene props. Sharpness itself should be the attitude.',
     },
   },
   {
@@ -2376,7 +2384,7 @@ export const GENERATED_STYLE_PRESETS = [
       'finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight, tweened',
     style: {
       aesthetic:
-        'Rough-animation flipbook page, sequential gesture frames showing motion arc, stick-figure-jumping-progression, page-corner-numbers counting frames, onion-skin-ghosts of previous and next poses, timing-chart-notation in margins, animation-desk peg-bar holes, rough-breakdown-between-keyframes, pure-motion-study energy, Glen-Keane-rough-animation-philosophy, line-boiling texture from hand-drawn frame-by-frame',
+        'Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame',
       form_and_line:
         'Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping',
       color_palette:
@@ -2392,9 +2400,9 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         "Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study",
       key_features:
-        'Sequential-drawing-progression, animation-arc-lines, timing-charts-in-margins, onion-skin-ghost-overlays, peg-bar-registration-holes, blue-pencil-construction-lines, rough-boiling-line-texture',
+        'Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture',
       creative_brief:
-        'Ghosts of the next pose live inside the current one, motion traced through space one sheet at a time, the thinking visible on every surface. Blue foundations peek through graphite exploration, marks of correction and conviction sharing the same page. A private conversation between an artist and the illusion of movement, thumbed into life at twenty-four frames per second.',
+        'Translate any prompt into rough flipbook animation study: sequential marks, onion-skin ghosts, blue construction lines, graphite corrections, peg-bar holes, and visible motion arcs. Avoid stick-figure jumps, readable frame numbers, or final cleaned animation. The image should expose animation thinking before cleanup.',
     },
   },
   {
@@ -2405,7 +2413,7 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate',
     style: {
       aesthetic:
-        'DIY photocopied-punk-zine aesthetic, ransom-note-cutout-lettering, deliberately-bad-photocopier-distortion, tape-marks-holding-collage-elements, found-magazine-image recontextualized, anarchist-pamphlet energy, glue-stick-residue-and-scissor-cuts, repeated-photocopy-generation-loss, too-dark-too-contrasty Xerox texture, early-riot-grrrl-manifesto',
+        'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss',
       form_and_line:
         'Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours',
       color_palette:
@@ -2417,13 +2425,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation',
       spatial_distortion:
-        'Cut-out-elements-tilted-angrily, ransom-letter-no-alignment, overlapping-collage depth, tape-holding-elements-askew',
+        'Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
       atmosphere:
         'Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance',
       key_features:
-        'Photocopier high-contrast, ransom-note lettering, cut-and-paste collage, scotch-tape marks, staple-binding, toner-grain texture, glue-stick wrinkles',
+        'Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles',
       creative_brief:
-        'Scissors and glue-stick wielded as instruments of insurrection, borrowed images stripped of their original meaning and reassembled into manifesto. Each generation of photocopy deepens the degradation, trading fidelity for urgency at one cent per page. The tape marks are not mistakes but signatures, evidence of hands refusing to wait for permission.',
+        'Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific publication content. Degradation and hand assembly should be the main visual force.',
     },
   },
   {
@@ -2434,7 +2442,7 @@ export const GENERATED_STYLE_PRESETS = [
       'soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature',
     style: {
       aesthetic:
-        'Punk-rock skateboard deck art, melting-skull monster graphics, dripping-slime typography, crossed-bones and flaming-wheels, Thrasher-magazine energy, 80s-powell-peralta-screaming-hand, bold-rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss',
+        'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss',
       form_and_line:
         'Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges',
       color_palette:
@@ -2446,13 +2454,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery',
       spatial_distortion:
-        'Graphic centered on deck shape, wheel-cutout shapes interrupting design, nose-and-tail-kick distortion zone',
+        'Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
       atmosphere:
         'Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity',
       key_features:
-        'Bold-black outlines, slime-drips, skull-motif graphics, screenprint texture, deck-shape composition, neon-green slime accents',
+        'Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain',
       creative_brief:
-        'Gloss sealed over maple grain, monsters arrested mid-howl across seven plies of defiance, their fluorescent fluids dripping toward the grip tape. Every graphic dares the world to look closer, louder, angrier, a canvas that scrapes concrete and wears its battle scars proudly. The deck is both proclamation and weapon, announcing allegiance before wheels ever touch pavement.',
+        'Turn any input into skateboard-deck screenprint energy: centered graphic impact, thick black outlines, neon slime accents, maple veneer texture, glossy varnish, and rebellious iconography. Avoid requiring skulls, monsters, wheels, typography, or crossed bones. The deck format and print texture should carry the attitude.',
     },
   },
   {
@@ -2463,24 +2471,23 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Badly drawn gross summer monster from a public-pool nightmare, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor',
+        'Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor',
       form_and_line:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents',
       color_palette:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
-      lighting_setup:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black',
+      lighting_setup: 'Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure',
       material_texture:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain',
       render_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering',
       spatial_distortion:
-        'Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency',
+        'Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale',
       atmosphere: 'Sticky, goofy, gross, summer-feral',
       key_features:
-        'Slime drips, cheap pool props, off-model monster anatomy, gross summer palette, kid-gag nastiness',
+        'Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness',
       creative_brief:
-        'Summer heat thickens into something sentient, rising from chlorinated water wearing a slick coat of its own secretions. The creature slouches toward the diving board with the confident ugliness of something drawn by a ten-year-old who absolutely meant every crooked line.',
+        'Apply public-pool mucus doodle flavor to any prompt: chlorine green slime, sticky heat palette, cheap summer texture, crooked marker forms, and childish gross humor. Avoid pools, monsters, diving boards, creatures, or specific props as requirements. The style should feel sweaty, slimy, and badly drawn on purpose.',
     },
   },
   {
@@ -2491,7 +2498,7 @@ export const GENERATED_STYLE_PRESETS = [
       'modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary',
     style: {
       aesthetic:
-        "Paleolithic cave-wall art, ochre-pigment hand stencils, rudimentary animal figures with too-many-legs, stick-figure hunters with spears, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, humanity's first cartoonists, thirty-thousand-year-old doodle energy",
+        'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy',
       form_and_line:
         'Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes',
       color_palette:
@@ -2503,13 +2510,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         "Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity",
       spatial_distortion:
-        'Animals with impossible leg counts, headless hunters, overlapping-time narrative on same wall, no ground-line suspension',
+        'Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
       atmosphere:
         "Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence",
       key_features:
-        'Hand-stencil negative prints, ochre-red animal outlines, charcoal-stick roughness, limestone rock texture, torchlight flicker, no ground plane',
+        'Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane',
       creative_brief:
-        'Raw ochre pressed into limestone by firelight, a gallery of silhouettes and stencils breathing beneath the earth. Each mark carries the weight of a world before language, stories told through the flicker of flame on mineral-crusted rock. The wall remembers what hands once declared upon it, exhalations of wonder trapped in pigment and stone.',
+        'Render any input as Paleolithic wall language: ochre pigment, charcoal marks, rough limestone, torch flicker, stencil silhouettes, and overlapping symbolic time. Avoid requiring animals, hunters, spears, or literal cave narratives. The style should feel ancient, mineral, and pre-perspective.',
     },
   },
   {
@@ -2520,24 +2527,24 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
     style: {
       aesthetic:
-        'Nickelodeon monster-school grossness, eyeballs on weird stalks, toenail grime, urban sewer slime, childlike monster rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute body horror for kids',
+        '90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids',
       form_and_line:
         'Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour',
       color_palette:
         'Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow',
       lighting_setup:
-        'Sewer-grate shafts, dank green underlight, junkyard reflected glare, moist tunnel shadows',
+        'Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets',
       material_texture:
-        'Sludge, pitted skin, peeling grime, sneaker-scuff dirt, wet brick, trash-bag shine',
+        'Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine',
       render_quality:
         '90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity',
       spatial_distortion:
-        'Limbs of mismatched length, eyes stacked in impossible ways, torso shapes collapsing into blobs',
+        'Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry',
       atmosphere: 'Rowdy, gross, mischievous, lovable',
       key_features:
-        'Asymmetric monster anatomy, sewer grime, rubbery claws, weird eye placement, urban sludge detail',
+        'Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail',
       creative_brief:
-        'Grate-light filters through murky water, illuminating a classroom where asymmetry is not error but curriculum, bodies assembled with glorious disregard for any blueprint. Lovable things bloom in the dark wet places beneath the city, their lumpy forms a rebuke to anyone who thought charm required symmetry. The sewer exhales and its children answer with gleeful disorder.',
+        'Use 90s gross-kids cartoon logic on any input: lumpy asymmetry, slime greens, junk textures, pitted surfaces, grate-light, and playful ugliness. Avoid monster-school scenes, sewer locations, claws, eyes, or bodies as requirements. Charm should come from gross texture and rebellious shape.',
     },
   },
   {
@@ -2547,9 +2554,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle',
     style: {
       aesthetic:
-        'Body-horror cartoon, exposed musculature wrapped in sagging skin, too-many-teeth grin stretching cheek to ear, veins pulsing visibly under translucent flesh, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette',
+        'Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette',
       form_and_line:
-        'Hyper-detailed anatomical horror on cartoon proportions, sinew strands visible, meat-fiber linework',
+        'Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework',
       color_palette:
         'Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink',
       lighting_setup:
@@ -2559,13 +2566,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel',
       spatial_distortion:
-        'Jaw unhinging beyond physical limits, eyes bulging on stalks, ribcage visible through skin, flesh-puppet proportions',
+        'Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions',
       atmosphere:
         "Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling",
       key_features:
-        'Too-many-teeth smile, visible musculature, bulging veined eyes, meat-texture rendering, skin-stretch tension lines',
+        'Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color',
       creative_brief:
-        "The body has been turned inside out for inspection, sinew and tendon wearing the colors of a children's cartoon while performing the vocabulary of surgical theater. A grin holds too many teeth, and skin stretches translucent over landscapes of muscle that should remain interior. The image compels and repels in the same breath, an anatomy lesson from a fever dream.",
+        'Apply grotesque meat-puppet rendering to any subject: cartoon proportions collide with exposed inner textures, wet fiber detail, translucent wrapping, stretch tension, and surgical fluorescence. Avoid requiring bodies, teeth, eyes, ribs, or anatomy as subject matter. The horror should come from interior material made visible.',
     },
   },
   {
@@ -2573,28 +2580,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grotesque Exaggeration Cartoon',
     category: '1. Cinematic Lighting And Lenses',
     negativePrompt:
-      'realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal faces, subtle',
+      'realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal proportions, subtle',
     style: {
       aesthetic:
-        'Deliberately ugly caricature, bulbous distorted noses, comically oversized heads, warty textures, hideous charm, flesh stretched beyond recognition, adult-swim grotesque, John Kricfalusi energy',
+        'Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy',
       form_and_line:
-        'Wobbly uneven contours, spasming line weight, broken anatomy, scratchy re-draw marks, elastic limb logic',
+        'Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic',
       color_palette:
         'Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth',
       lighting_setup:
         'Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare',
       material_texture:
-        'Bumpy skin, visible pores exaggerated, wart dimples, greasy sheen, splotchy surface',
+        'Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture',
       render_quality:
         'Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation',
       spatial_distortion:
-        'Inflated heads on pin bodies, mismatched eye sizes, teeth bursting from lips, impossible spinal curves',
+        'Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress',
       atmosphere:
         'Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest',
       key_features:
-        'Asymmetric eyes, bulbous nose center-stage, neck veins bulging, excessive chin folds',
+        'Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy',
       creative_brief:
-        'Every feature rebels against proportion, anatomy buckling under the weight of its own comic insistence. Flesh stretches, pores bloom, and noses colonize the frame with gleeful disregard for politeness. The result is a pageant of the repulsive that somehow loops back around to magnetic, a funhouse mirror that you cannot stop staring into.',
+        'Push any subject through grotesque caricature logic: proportions rebel, surfaces become bumpy and splotchy, contours wobble, and unflattering exaggeration becomes the main design force. Avoid requiring faces, noses, teeth, or bodies. The style should feel repulsive, funny, and magnetically overdrawn.',
     },
   },
   {
@@ -2605,25 +2612,24 @@ export const GENERATED_STYLE_PRESETS = [
       'digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined',
     style: {
       aesthetic:
-        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching world-changing invention, coffee-mug-ring framing the concept, beer-condensation warping the paper, desperate late-night inspiration captured on whatever surface available, startup-origin-story artifact, Archimedes-eureka-bathtub energy but in a dive bar',
+        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available',
       form_and_line:
         'Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations',
       color_palette:
         'Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint',
-      lighting_setup:
-        'Dim-bar ambient, single-overhead-bulb spotlight, phone-flashlight emergency illumination, candle-flicker warmth',
+      lighting_setup: 'Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff',
       material_texture:
         'Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness',
       render_quality:
         'Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness',
       spatial_distortion:
-        'Drawing wrapping around napkin folds, idea-arrows pointing off-edge, text-squeezing as space runs out, quarter-napkin sketch',
+        'Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
       atmosphere:
         'Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation',
       key_features:
-        'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, bar-ambient-lighting, scratchy-ink skips',
+        'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text',
       creative_brief:
-        'Epiphany caught on the cheapest surface available, an idea bleeding through thin fibers while condensation from a forgotten glass warps the edges of tomorrow. A ring of coffee frames the future, the path of the pen stuttering where conviction outpaced ink. The napkin carries more weight than any polished proposal, its very fragility proof that the thought could not wait for better paper.',
+        'Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal eureka scenes. The surface should feel urgent and improvised.',
     },
   },
   {
@@ -2633,7 +2639,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'sharp, clean, precise, solid, rigid, structured, geometric, hard edges',
     style: {
       aesthetic:
-        'Features melting like hot wax, eyes sliding down cheekbones, nose drooping into mouth, Salvador Dali meets Tex Avery, fever-dream facial collapse, reality losing structural integrity, psychedelic cartoon meltdown',
+        'Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown',
       form_and_line:
         'Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure',
       color_palette:
@@ -2641,16 +2647,16 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting illumination',
       material_texture:
-        'Molten wax surface, glossy drip trails, skin behaving like taffy, stretching viscoelastic flesh',
+        'Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow',
       render_quality:
         'Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic',
       spatial_distortion:
-        'Entire face cascading downward, ears migrating to jawline, forehead pooling into eyebrows, temporal distortion',
+        'Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion',
       atmosphere: 'Disorienting, hypnotic, deeply weird, mescaline cartoon',
       key_features:
-        'Vertical drip lines, pooled chin flesh, runny mascara eyes, Salvador Dali clock-face energy',
+        'Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour',
       creative_brief:
-        'Gravity has turned traitor, pulling familiar landmarks of the face into slow-motion cascade. Bones forget their job; skin decides to travel south. The image holds a moment of collapse stretched into permanence, as if consciousness itself were liquefying under the heat of some unseen psychedelic lamp.',
+        'Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips stretch structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses, bodies, or anatomy. The subject should look like reality is losing viscosity.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

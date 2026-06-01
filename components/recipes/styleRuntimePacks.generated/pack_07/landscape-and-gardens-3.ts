@@ -10,25 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wild forest',
     style: {
       aesthetic:
-        'Post-industrial ecological promenade style blending infrastructural linearity with softened native planting systems',
+        'Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.',
       form_and_line:
-        'Longitudinal circulation bands, alternating hardscape-softscape strips, bench-block rhythm, articulated edge transitions',
+        'Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de borde.',
       color_palette:
         'Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys',
       lighting_setup:
-        'Diffuse late-day illumination with mild reflected fill and gentle luminance falloff across linear surfaces',
+        'Luz difusa de tarde con rebote urbano suave y caída progresiva sobre superficies lineales.',
       material_texture:
-        'Raw concrete grain, corten oxidation bloom, brushed steel edges, gravel fines, wind-responsive grasses, weathered timber inserts',
+        'Hormigón crudo, corten oxidado, acero cepillado, grava fina, gramíneas al viento e inserciones de madera envejecida.',
       render_quality:
-        'Editorial-grade landscape architecture rendering with emphasis on material authenticity and ecological layering',
+        'Nivel concurso de paisaje con legibilidad de reutilización y sucesión vegetal creíble.',
       spatial_distortion:
         'Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility',
       atmosphere:
-        'Civic, restorative, adaptive, contemporary, breathable, infrastructural yet humane',
+        'Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.',
       key_features:
-        'Linear planting rails, modular seating planes, reclaimed-industrial texture palette, public-use readability, ecological succession cues',
+        'Linealidad infraestructural, bordes estratificados, interfaces de pausa y mezclas de plantación para polinizadores.',
       creative_brief:
-        'Express adaptive-reuse landscape language as the core style: disciplined linear geometry, reclaimed materials, and ecological planting structure must define the preset independent of a specific city or landmark.',
+        'Formula una gramática de corredor postindustrial transferible donde la retícula dura siga legible mientras la ecología la reprograma. Debe funcionar como estilo de borde reciclado, no como cita de un sitio concreto.',
     },
   },
   {
@@ -37,23 +37,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Landscape And Gardens',
     negativePrompt: 'wild, messy',
     style: {
-      aesthetic: 'Versailles grand formal palace garden, geometric power, royal symmetry',
+      aesthetic:
+        'Clasicismo paisajístico formal donde la geometría vegetal expresa poder, protocolo y orden territorial.',
       form_and_line:
-        'Symmetry, patterns, axial vistas, parterre embroidery, reflecting-canal lines, avenue perspectives',
+        'Eje central dominante, parterres espejados, allées perspectivos y jerarquía de focos por lámina de agua.',
       color_palette:
         'Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone',
       lighting_setup:
-        'Flat sun, axial-light drama, fountain-sparkle, golden-hour hedge wash, statue-silhouette',
+        'Sol plano de lectura planimétrica, dramatismo axial por sombras largas y destellos en nodos ceremoniales.',
       material_texture:
-        'Manicured hedge, clipped boxwood, raked gravel, fountain stone, lead statue, grass parterre',
+        'Setos recortados milimétricos, grava rastrillada, piedra de fuente y césped de patrón controlado.',
       render_quality:
-        'Controlled, royal, ordered-nature, Le Notre geometry, garden-as-architecture, courtly perfection',
+        'Precisión de proyecto de paisaje con profundidad ceremonial y legibilidad topiaria estricta.',
       spatial_distortion: 'None',
-      atmosphere: "Order, grand, absolute, orchestrated nature, king's gaze, tamed creation",
+      atmosphere: 'Ceremonial, monumental y disciplinada, con autoridad visual intencional.',
       key_features:
-        'Topiary, reflecting pool, parterre de broderie, axial vista, fountain, statue, orangery',
+        'Parterres bordados, planos de seto, reflejos axiales, nodos ceremoniales y puntos de control visual lejano.',
       creative_brief:
-        'Boxwood bends to geometry, nature disciplined into parterre embroidery that reads like green scripture from above. Reflecting pools double the sky, water turned to mirror that makes architecture believe it has a twin. The garden follows orders, every axis a line drawn by a king who mistook control for beauty.',
+        'Define una gramática de jardín formal transferible donde eje, simetría y precisión topiaria manden la composición. Debe funcionar como arquitectura horizontal con lectura clara tanto en planta como en perspectiva.',
     },
   },
   {
@@ -63,20 +64,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plants, water',
     style: {
       aesthetic:
-        'Raked gravel, karesansui poetry, dry-landscape meditation, stone-island sea, temple stillness',
+        'Karesansui de abstracción seca, contemplación material y economía extrema de gesto.',
       form_and_line:
-        'Rake lines (circles), ripple patterns, island-composition, horizontal-plane geometry, moss-mound accents',
+        'Ondas rastrilladas de alta intención, planos vacíos dominantes y agrupaciones pétreas asimétricas de equilibrio tenso.',
       color_palette: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
       lighting_setup:
-        'Shadows in grooves, low-angle raking light, temple-eave shade, early-morning crisp',
-      material_texture: 'Gravel, stone, crisp sand, weathered granite, velvet moss, crushed quartz',
+        'Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.',
+      material_texture:
+        'Arena/grava fina, granito meteorizado, cuarzo triturado y musgo puntual de grano aterciopelado.',
       render_quality:
-        'Meditative, dry, contemplative-minimal, mind-clearing, sand-grain perfection',
+        'Minimalismo hiperlimpio con precisión granular y silencio compositivo disciplinado.',
       spatial_distortion: 'None',
-      atmosphere: 'Calm, focus, emptied-mind, stone-presence, raked-order, timeless sitting',
-      key_features: 'Rocks, raked gravel, ripple patterns, moss islands, boundary wall, no water',
+      atmosphere: 'Quietud enfocada, orden ritual y suspensión temporal.',
+      key_features:
+        'Campos de rastrillado, anclajes pétreos, masas de musgo selectivas y contención perimetral estricta.',
       creative_brief:
-        'Gravel raked into concentric ripples, stone islands floating on a sea of sand that has never known water. Each groove a moment of attention crystallized, the rake a brush that paints with absence and pattern. The garden asks nothing but that you sit, and in sitting, empty into its stillness.',
+        'Define una gramática zen seca transferible donde el vacío, el rastrillado y la posición pétrea sean lenguaje estructural. Debe evitar iconografía zen superficial y sostener intención espacial máxima con pocos elementos.',
     },
   },
   {
@@ -86,23 +89,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'weeds, forest',
     style: {
       aesthetic:
-        'Manicured lawn, designed landscape, green cathedral, Augusta perfection, sculpted fairway',
+        'Formalismo de campo de golf de alto mantenimiento, donde topografía y estrategia deportiva se codifican en el terreno.',
       form_and_line:
-        'Rolling hills, bunker-sweep curves, tee-box rectangles, green-contour undulations, fairway ribbons',
+        'Corredores de fairway en cinta, parábolas de bunker, microondas de green y visuales dirigidas por routing.',
       color_palette:
         'Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow',
       lighting_setup:
-        'Morning mist, low-angle fairway light, golden-hour green glow, dew-sparkle, shadow-bunker drama',
+        'Neblina de mañana, ángulo bajo sobre fairway, brillo de rocío y dramatismo de sombra en bunker.',
       material_texture:
-        'Short grass, crisp turf, sand, water surface, flagstick, raked-bunker pattern',
+        'Césped corto de corte preciso, arena rastrillada, agua lisa de hazard y señalética de alta visibilidad.',
       render_quality:
-        'Artificial nature, rich, landscape-design perfection, tournament-ready, man-versus-nature beauty',
+        'Visualización tournament-grade con lectura de mantenimiento y estrategia de juego a distancia.',
       spatial_distortion: 'None',
-      atmosphere: 'Quiet, sport, exclusive, morning-fresh, focused-walk, manicured nature',
+      atmosphere: 'Calma controlada, concentración competitiva y exclusividad curada.',
       key_features:
-        'Sand trap, manicured green, pin flag, water hazard, fairway mow lines, white bunker edge',
+        'Franjas de siega, bunkers de borde nítido, focos de objetivo y coreografía de hazards.',
       creative_brief:
-        'Fairways sweep in manicured curves, grass cropped to precision that nature would never choose for itself. Sand traps carve bright wounds into green, hazards arranged like sculpture in a gallery for the sport of kings. Morning mist clings to water hazards, the landscape holding its breath before the first tee shot.',
+        'Define una gramática golf transferible por gradiente de turf, hazards estratégicos y legibilidad de ruta de juego. Debe comunicar precisión de mantenimiento y óptica competitiva sin referencia a club concreto.',
     },
   },
   {
@@ -111,22 +114,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Landscape And Gardens',
     negativePrompt: 'lawn, wet',
     style: {
-      aesthetic: 'Cactus garden, arid sculpture, spiny landscape, survival beauty, textural desert',
+      aesthetic: 'Paisaje xerófito de austeridad escultórica y desempeño hídrico explícito.',
       form_and_line:
-        'Spikes, rosette geometry, vertical accent-columns, mounded clusters, gravel sweeps',
+        'Contraste de formas roseta/columnar, swales de grava, canales secos y masas agrupadas de bajo mantenimiento.',
       color_palette:
         'Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit',
       lighting_setup:
-        'Hard sun, heat-shimmer, sunset-glow on spines, backlit-agave drama, starfield night',
+        'Sol duro con shimmer térmico, contraluz de espinas y glow cálido de última hora.',
       material_texture:
-        'Rocks, succulents, decomposed granite, spiny skin, waxy cuticle, rusted steel edge',
-      render_quality: 'Sustainable, dry, arid-beauty, water-wise texture, desert-garden art',
+        'Piedra árida, suculenta cerosa, granito descompuesto, espina rígida y borde metálico oxidado.',
+      render_quality:
+        'Realismo climático resiliente con morfología botánica precisa y lógica water-wise verificable.',
       spatial_distortion: 'None',
-      atmosphere: 'Hot, resilient, sun-forged, silent-survival, ancient-patience, desert-truth',
+      atmosphere:
+        'Calma endurecida por sol, sobriedad resiliente y elegancia de baja demanda hídrica.',
       key_features:
-        'Succulents, agave rosettes, dry riverbed, golden barrel cacti, rusted steel, gravel mulch',
+        'Rosetas focales, mulch mineral, dry creek routing, cadencia xerófita y bandas de acero oxidado.',
       creative_brief:
-        'Agave blades catch late sun like green jewels sharpened by drought into weapon and sculpture simultaneously. Golden barrel cacti huddle in geological patience, each spine a tiny monument to survival without apology. The garden celebrates what thrives on neglect, beauty that asks for nothing but to be left alone.',
+        'Define una gramática xeriscape transferible donde selección vegetal, drenaje y escorrentía sean legibles como sistema. Debe transmitir belleza austera y táctica climática, no estética turística de desierto.',
     },
   },
   {
@@ -136,24 +141,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground level',
     style: {
       aesthetic:
-        'Elevated biophilic-modern terrace style with calm geometric planting composition and hospitality-grade outdoor minimalism',
+        'Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica calmada.',
       form_and_line:
-        'Linear planter modules, low horizontal furniture massing, thin-frame pergola rhythm, softened orthogonal hardscape',
+        'Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal suavizado.',
       color_palette:
         'Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights',
       lighting_setup:
-        'Warm twilight gradient with soft practical point-lights and controlled low-contrast edge definition',
+        'Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.',
       material_texture:
-        'Oiled hardwood decking, matte powder-coated metal, coarse aggregate gravel, woven exterior textile, brushed zinc planters',
+        'Madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y zinc cepillado.',
       render_quality:
-        'Premium landscape-architecture visualization finish with clean hierarchy, restrained bloom, and tactile material legibility',
+        'Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.',
       spatial_distortion:
         'Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence',
-      atmosphere: 'Quiet, restorative, refined, breathable, contemplative, design-forward',
+      atmosphere: 'Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.',
       key_features:
-        'Modular planting bands, warm deck planes, integrated ambient lighting, low-profile lounge geometry, material contrast between greenery and hardscape',
+        'Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste verde-hardscape.',
       creative_brief:
-        'Keep the preset anchored in biophilic terrace language: structured planting rhythm, restrained luxury materials, and atmospheric calm should carry the identity without depending on any specific location narrative.',
+        'Preserva una gramática elevada transferible basada en ritmo de plantación, materialidad sobria de lujo y calma atmosférica. Debe mantener identidad sin depender de ubicación, altura o skyline específicos.',
     },
   },
   {
@@ -162,24 +167,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Landscape And Gardens',
     negativePrompt: 'scary, realistic',
     style: {
-      aesthetic:
-        'Edible architecture, confectionery city, sugar-frosted fantasy, dessert landscape, gumdrop wonderland',
+      aesthetic: 'Fantasía confitera de surrealismo comestible y modularidad de azúcar.',
       form_and_line:
-        'Rounded soft, lollipop colonnades, icing-scallop trim, gumdrop spires, chocolate-bar block',
+        'Masas redondeadas blandas, columnas candy repetitivas y bandas ornamentales de glaseado.',
       color_palette:
         'Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black',
       lighting_setup:
-        'Soft sugar glow, candy-store warm, frosting-sparkle, gumdrop-translucent, sugar-crystal shimmer',
+        'Glow cálido de confitería, brillos de frosting, translucidez gumdrop y destellos de cristal de azúcar.',
       material_texture:
-        'Frosting, cake, hard candy shell, marshmallow, wafer, spun-sugar web, chocolate drip',
+        'Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hilos de azúcar estirada.',
       render_quality:
-        'Cute, delicious, Willy-Wonka dream, sugar-rush beauty, confectionery perfection, edible fantasy',
+        'Fantasía estilizada de saturación alta con coherencia lúdica de material comestible.',
       spatial_distortion: 'Melting',
-      atmosphere: 'Sweet, fun, candy-store joy, whimsical, sugar-high delight, childhood wonder',
+      atmosphere: 'Exceso lúdico, surrealismo alegre y escapismo hiper-dulce.',
       key_features:
-        'Sprinkles, gumdrop path, icing trim, candy-cane columns, chocolate river, lollipop trees, gingerbread walls',
+        'Planos de icing, marcadores gumdrop, acentos sprinkle y motivos estructurales candy-cane.',
       creative_brief:
-        'Gumdrop spires dissolve slightly at their peaks, architecture built from the chemistry of sweetness and the physics of whimsy. Icing traces scalloped promises across gingerbread walls, every surface a temptation that would ruin dinner. The kingdom stands in eternal afternoon, a place where dentists fear to tread and children dream of citizenship.',
+        'Define una gramática candy transferible con materialidad comestible, contraste cromático de azúcar y modularidad juguetona. Debe mantener identidad inequívoca sin fijarse en un cuento o reino concreto.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

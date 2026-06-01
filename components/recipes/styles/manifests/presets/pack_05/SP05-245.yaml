@@ -12,19 +12,20 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Híbrido shōjo-mecha de profecía romántica, con caballería, fatalismo de tarot y melancolía de cielo rojo.
-  form_and_line: Curva emocional en vestuario y cabello, contraste con mecha dracónico angular y pose caballeresca teatral.
-  color_palette: Carmín crepuscular, azul viento, dorado arcano, plata de armadura y violeta profético.
-  lighting_setup: Backlight ventoso de horizonte rojo, glow místico de carta y key dramático de duelo sentimental.
-  material_texture: Capa batida por viento, metal caballeresco, piedra de corte, brillo de tarot y humo de campo bélico.
+  aesthetic: Profecía romántica ventosa, fatalismo adivinatorio, melancolía carmín y contraste entre curva shōjo y geometría épica.
+  form_and_line: Curvas emocionales, diagonales de viento, ornamento arcano, contrapunto angular y poses teatrales de destino.
+  color_palette: Carmín crepuscular, azul viento, dorado arcano, plata fría y violeta profético.
+  lighting_setup: Backlight ventoso, glow místico facetado y key dramático de tensión sentimental.
+  material_texture: Tela batida por viento, metal pulido abstracto, piedra ceremonial, brillo adivinatorio y humo atmosférico.
   render_quality: Fantasía romántica de alto dramatismo con fusión legible de épica mecha y sensibilidad shōjo.
-  spatial_distortion: Profundidad por corrientes de viento y énfasis en diagonales de destino entre personaje y máquina.
+  spatial_distortion: Profundidad por corrientes de viento, diagonales de destino, tensión entre curvas suaves y masas angulares.
   atmosphere: Ventosa, mística y apasionada, con tensión entre amor y guerra.
-  key_features: Simbolismo de tarot, capa en ráfaga, knight-mecha dracónico y encuadre de mirada predestinada.
+  key_features: Simbolismo adivinatorio, ráfagas diagonales, contraste shōjo-angular, plata arcana y mirada predestinada.
   creative_brief: >-
     Define una gramática windblown-prophecy reusable donde romance fatalista,
-    iconografía adivinatoria y caballería mecha construyan una épica emotiva y
-    transferible.
+    iconografía adivinatoria, viento y contraste angular construyan épica emotiva
+    transferible, sin fijar rol, artefacto, conflicto o vínculo narrativo
+    específico.
 avoidRules:
   - realistic
   - 3d render

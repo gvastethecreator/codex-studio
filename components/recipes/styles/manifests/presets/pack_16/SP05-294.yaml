@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-294
 packId: pack_16
-name: Mind Game - Psychedelic Escape Sprint
+name: Mutating Psychedelic Style
 category: 10. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -20,8 +20,10 @@ visualDna:
   render_quality: Acabado premium de caos controlado, con claridad de ritmo interno pese a la ruptura constante de lenguaje visual.
   spatial_distortion: Espacio elástico con deformaciones súbitas, cámaras imposibles y continuidad quebrada orientada a vértigo liberador.
   atmosphere: Liberadora, delirante, brillante, cinética.
-  key_features: Estallidos mixed-media, transiciones violentas, corporalidad en fuga y semántica de renacimiento por velocidad.
-  creative_brief: Construye una gramática reusable de mutación psicodélica para cualquier sujeto, combinando colisión de estilos, distorsión espacial y energía de escape continuo.
+  key_features: Estallidos mixed-media, transiciones violentas, distorsión corporal, colisión de registros y renacimiento por cambio de forma.
+  creative_brief: >-
+    Construye una gramática reusable de mutación psicodélica para cualquier prompt o imagen de entrada:
+    choque de estilos, distorsión espacial y reinvención gráfica sin imponer fugas, persecuciones ni escena narrativa.
 avoidRules:
   - realistic
   - 3d render

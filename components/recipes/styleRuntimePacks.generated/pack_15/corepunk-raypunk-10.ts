@@ -9,17 +9,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, hard-cyberpunk-grime, medieval, horror-gore, watermark, text, logo',
     style: {
-      aesthetic: 'Pulp adventure launch port for raygun expeditions and cosmic cartography.',
-      form_and_line: 'Rocket gantries, parabola antennas, and streamlined hangar fins.',
+      aesthetic: 'Pulp raypunk expedition style with cosmic-cartography bravado.',
+      form_and_line:
+        'Rocket-vector silhouettes, parabola antennas, finned contours, and outbound arrows.',
       color_palette: 'Atomic orange, sky cyan, and gunmetal gray.',
-      lighting_setup: 'Harsh directional sun with hot edge highlights from energy pylons.',
-      material_texture: 'Riveted hulls, painted alloy, polymer domes, and rubberized deck plating.',
+      lighting_setup: 'Harsh directional sun with hot edge highlights and charged cyan accents.',
+      material_texture:
+        'Riveted alloy, painted enamel, polymer translucency, and rubberized plating.',
       render_quality: 'Dynamic pulp-sci-fi concept art with clear action staging.',
-      spatial_distortion: 'Wide-angle terminal framing emphasizing outbound vectors and scale.',
+      spatial_distortion: 'Wide-angle vector framing emphasizing departure, scale, and momentum.',
       atmosphere: 'Adventurous bravado, serial-era wonder, and imminent launch energy.',
-      key_features: 'Raycraft docks, expedition banners, ion towers, and mission kiosks.',
+      key_features:
+        'Raycraft silhouettes, expedition-stripe bands, ion-tower linework, and blank mission plaques.',
       creative_brief:
-        'A raypunk departure hub where every gate promises a different strange planet.',
+        'Preserve photon safari-port grammar as a reusable style system: pulp expedition graphics, outbound vector staging, and optimistic serial-era adventure energy should remain coherent across any subject.',
     },
   },
   {
@@ -29,16 +32,19 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo',
     style: {
-      aesthetic: 'Monumental raypunk plaza where science institutions mimic sacred architecture.',
-      form_and_line: 'Pointed rocket arches, ribbed vault tubes, and cruciform launch aisles.',
+      aesthetic: 'Monumental raypunk sacred-science design without literal worship staging.',
+      form_and_line:
+        'Pointed rocket arches, ribbed tube vaults, cruciform vectors, and mission-mosaic grids.',
       color_palette: 'Ivory white, plasma blue, and brass orange.',
       lighting_setup: 'Volumetric skylight beams intersecting reactor lumen fixtures.',
       material_texture: 'Ceramic composites, ribbed steel, etched glass, and polished stone.',
       render_quality: 'Grand-scale environment concept with balanced symbolism and function.',
-      spatial_distortion: 'Cathedral-like longitudinal depth ending in a launch altar.',
+      spatial_distortion: 'Longitudinal sacred-tech depth with processional vector symmetry.',
       atmosphere: 'Triumphal curiosity, solemn innovation, and civic mythmaking.',
-      key_features: 'Rocket reliquaries, mission mosaics, and ion-organ balconies.',
-      creative_brief: 'A raypunk cathedral where space travel is practiced as civic liturgy.',
+      key_features:
+        'Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.',
+      creative_brief:
+        'Preserve rocket cathedral-arcade grammar as a reusable style language: sacred-science monumental planning, longitudinal launch choreography, and civic mythmaking cues should remain stable across any subject.',
     },
   },
   {
@@ -48,18 +54,21 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, post-apoc-rubble-only, medieval-castles, horror-gore, watermark, text, logo',
     style: {
-      aesthetic: 'Frontier settlement linked by levitating ion rail above alien canyons.',
-      form_and_line: 'Elevated tracks, suspended stations, and aerodynamic transit pods.',
+      aesthetic:
+        'Raypunk frontier transit language built from suspended motion and expedition grit.',
+      form_and_line:
+        'Elevated vector tracks, suspension arcs, aerodynamic pods, and beacon-like strokes.',
       color_palette: 'Desert peach, electric cyan, and graphite black.',
       lighting_setup: 'High desert sun with ion-trail glow and long shadow ribbons.',
       material_texture:
         'Dust-coated alloy, translucent canopy polymers, and rugged composite decks.',
       render_quality: 'Action-oriented worldbuilding concept with strong travel narratives.',
-      spatial_distortion: 'Sweeping track perspective disappearing into layered mesas.',
+      spatial_distortion: 'Sweeping vanishing vectors with layered horizon depth.',
       atmosphere: 'Exploratory momentum, frontier resilience, and optimistic engineering.',
-      key_features: 'Ion monorail, cliffside depots, expedition cargo rigs, and signal beacons.',
+      key_features:
+        'Ion-trail ribbons, suspended rail motifs, expedition hazard stripes, and cyan signal beacons.',
       creative_brief:
-        'A raypunk transit backbone that turns remote badlands into connected futures.',
+        'Preserve ion frontier-monorail grammar as a reusable style system: elevated frontier transit cues, canyon-scale vector depth, and exploratory engineering optimism should remain coherent across any subject.',
     },
   },
   {
@@ -68,16 +77,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, cyberpunk-grime, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Interplanetary bazaar inside a raycraft service hangar.',
-      form_and_line: 'Arched hangars, cargo lanes, and antenna ribs.',
-      color_palette: 'Orange, cyan, and steel gray.',
-      lighting_setup: 'Harsh skylight and ion strip accents.',
-      material_texture: 'Riveted metal, polymer crates, and fuel-stained deck.',
-      render_quality: 'Dynamic pulp-scifi concept.',
-      spatial_distortion: 'Deep hangar vanishing lines.',
-      atmosphere: 'Hustle, risk, and frontier commerce.',
-      key_features: 'Raygun stalls, cargo skiffs, and launch gantries.',
-      creative_brief: 'A raypunk marketplace where exploration hardware is everyday currency.',
+      aesthetic:
+        'Raypunk barter chaos where alien hardware, hand-painted codes, and launch rituals collide in overloaded visual language.',
+      form_and_line:
+        'Cathedral-like arches, diagonal cargo lanes, antenna-rib canopies, raygun display forks, and stacked skiff silhouettes.',
+      color_palette: 'Safety orange, ion cyan, oil-silver steel, and small magenta permit stamps.',
+      lighting_setup:
+        'Brutal roof slits, cyan ion strips under tables, and hot orange hazard pools around active engines.',
+      material_texture:
+        'Riveted hull metal, translucent polymer crates, fuel-stained deck paint, chipped enamel tags, and greasy cable braids.',
+      render_quality:
+        'Dense pulp-scifi production concept with readable stall logic, no empty generic sci-fi space.',
+      spatial_distortion:
+        'Deep compressed perspective crowded by booth-like clutter, suspended nets, and gantry shadows.',
+      atmosphere: 'Improvised trade, launch anxiety, black-market optimism, and frontier noise.',
+      key_features:
+        'Raygun fork motifs, skiff-repair altar shapes, cargo-lane glyphs, gantry silhouettes, and hand-numbered token marks.',
+      creative_brief:
+        'Push ray bazaar-hangar as a reusable visual system: every subject should feel priced, repaired, bartered, and almost ready to launch, with commerce graphics fused directly into spacecraft service hardware.',
     },
   },
   {
@@ -86,16 +103,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, gritty-cyber, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Neon retro roadside for pilots and bounty crews.',
-      form_and_line: 'Tailfin motels, sign pylons, and curved awnings.',
-      color_palette: 'Teal, magenta, and cream.',
-      lighting_setup: 'Twilight neon and rocket trail backlight.',
-      material_texture: 'Painted metal, vinyl, and asphalt gloss.',
-      render_quality: 'Stylized pulp environment art.',
-      spatial_distortion: 'Long roadside perspective.',
-      atmosphere: 'Wanderlust, hustle, and cosmic nightlife.',
-      key_features: 'Comet signage, fuel diners, and mission bulletin walls.',
-      creative_brief: 'A raypunk roadside where every room hosts a different star map.',
+      aesthetic:
+        'Cosmic roadside noir where signage behaves like navigational constellation and every surface promises escape.',
+      form_and_line:
+        'Tailfin rooflines, comet-shaped pylons, crescent awnings, capsule-door shapes, and stripes bending like orbital paths.',
+      color_palette:
+        'Oxidized teal, motel magenta, warm cream, asphalt black, and pale rocket-smoke blue.',
+      lighting_setup:
+        'Twilight neon bloom, rocket-trail backlight, room-number halos, and sodium puddle reflections.',
+      material_texture:
+        'Flaking painted metal, ribbed vinyl, glossy rain asphalt, plastic star charts, and cracked ceramic diner tile.',
+      render_quality:
+        'Stylized pulp environment art with graphic sign hierarchy and strong silhouettes.',
+      spatial_distortion:
+        'Roadside one-point perspective warped into a comet tail through blank signs and orbital stripes.',
+      atmosphere: 'Cheap glamour, fugitive sleep, cosmic wanderlust, and mission-board temptation.',
+      key_features:
+        'Comet sign shapes, fuel-diner color bands, mission-bulletin panels, tailfin shadows, and coordinate-key motifs.',
+      creative_brief:
+        'Push comet motel-strip as a reusable style: turn any subject into a roadside constellation of neon promises, transient pilots, coded room numbers, and orbital escape lines.',
     },
   },
   {
@@ -104,16 +130,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, cyberpunk-neon-city, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Bureaucratic outpost carved into a trade asteroid.',
-      form_and_line: 'Pressure corridors, cargo gantries, and lock chambers.',
-      color_palette: 'Rust, warning yellow, and vacuum black.',
-      lighting_setup: 'Industrial strips and viewport rim glow.',
-      material_texture: 'Bolted plates, hazard paint, and dusted alloy.',
-      render_quality: 'Functional scifi concept with bold silhouettes.',
-      spatial_distortion: 'Tunnel depth toward inspection bay.',
-      atmosphere: 'Procedural tension and frontier law.',
-      key_features: 'Customs scanners, ray turrets, and stamp kiosks.',
-      creative_brief: 'A raypunk checkpoint where paperwork can be deadlier than blasters.',
+      aesthetic:
+        'Raypunk border bureaucracy rendered as hostile machinery of stamps, pressure locks, scanners, and dust.',
+      form_and_line:
+        'Clamp-like corridors, cargo-gantry teeth, octagonal lock frames, barcode shadows, and turret-eye circles.',
+      color_palette:
+        'Asteroid rust, warning yellow, vacuum black, faded stamp red, and cold viewport blue.',
+      lighting_setup:
+        'Flickering industrial strips, rim-lit inspection windows, and scanner bars slicing forms into legal zones.',
+      material_texture:
+        'Bolted armor plates, abraded hazard paint, dusted alloy, rubber seals, and over-stamped cargo labels.',
+      render_quality:
+        'Functional scifi concept with bold silhouettes and oppressive procedural clarity.',
+      spatial_distortion:
+        'Tunnel-depth funnel toward inspection jaws, with frames narrowing like paperwork decisions.',
+      atmosphere: 'Frontier law, procedural dread, and absurd cosmic administration.',
+      key_features:
+        'Scanner arches, ray turret eyes, pneumatic stamp blocks, confiscation-grid cages, and permit-slot geometry.',
+      creative_brief:
+        'Push asteroid customs-gate as reusable style: make forms feel inspected, stamped, divided, and legally trapped, with raypunk hardware behaving like bureaucratic predators.',
     },
   },
   {
@@ -122,16 +157,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval-fantasy, cyberpunk-slums, watermark, text, logo',
     style: {
-      aesthetic: 'Public arena for ray duels and honor contracts.',
-      form_and_line: 'Circular pit, shield pylons, and tiered stands.',
-      color_palette: 'Plasma blue, crimson, and gunmetal.',
-      lighting_setup: 'Spot arrays and arc discharge bursts.',
-      material_texture: 'Reinforced steel, scorched concrete, and energy shields.',
-      render_quality: 'Action keyframe concept.',
-      spatial_distortion: 'Arena depth centered on duel core.',
-      atmosphere: 'Spectacle, danger, and performative valor.',
-      key_features: 'Duel ring, crowd tiers, and plasma banners.',
-      creative_brief: 'A raypunk colosseum where contracts are settled in visible lightning.',
+      aesthetic:
+        'Ritualized raypunk conflict where honor contracts become visible electrical geometry around impact voids.',
+      form_and_line:
+        'Concentric impact rings, shield-pylon teeth, tiered bands, plasma banner arcs, and split-second ray trajectories.',
+      color_palette:
+        'Plasma blue, contract crimson, black gunmetal, white-hot arc cores, and scorched violet shadows.',
+      lighting_setup:
+        'Overhead spot arrays, burst-frame arc discharge, shield shimmer halos, and rimlight from charged weapons.',
+      material_texture:
+        'Reinforced steel ribs, scorched concrete rings, translucent energy shields, burnt banner cloth, and etched contract plaques.',
+      render_quality:
+        'Action keyframe concept with theatrical readability and kinetic silhouettes.',
+      spatial_distortion:
+        'Arena-like depth collapses toward electric conflict while circular bands bend around the core.',
+      atmosphere: 'Public danger, performative valor, betting tension, and ceremonial menace.',
+      key_features:
+        'Duel-ring glyphs, tier shadow bands, shield pylons, plasma banners, and contract-board burn marks.',
+      creative_brief:
+        'Push nova duel-colosseum as reusable style: every subject should feel caught inside ceremonial electrical judgment, with honor, audience pressure, and ray trajectories shaping composition.',
     },
   },
   {
@@ -140,16 +184,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, cyberpunk-noise, medieval, watermark, text, logo',
     style: {
-      aesthetic: 'Cliff observatory scanning hostile nebula routes.',
-      form_and_line: 'Dome clusters, scanning spires, and ridge catwalks.',
-      color_palette: 'Night blue, amber, and white.',
-      lighting_setup: 'Telescope glow and cold moon edge light.',
-      material_texture: 'Painted alloy, glass domes, and cable mesh.',
-      render_quality: 'Atmospheric exploration concept.',
-      spatial_distortion: 'Ridge-to-sky composition with deep horizon.',
-      atmosphere: 'Curiosity and strategic vigilance.',
-      key_features: 'Radar dishes, chart rooms, and emergency beacons.',
-      creative_brief: 'A raypunk lookout where discovery and defense are the same task.',
+      aesthetic:
+        'Paranoid exploration style where observation equipment looks half scientific instrument, half warning shrine.',
+      form_and_line:
+        'Clustered glass domes, needle scanning spires, ridge-like catwalk strokes, radar petal shapes, and horizon-measuring cables.',
+      color_palette:
+        'Nebula night blue, aged amber, signal white, oxidized red, and cold moon gray.',
+      lighting_setup:
+        'Telescope lens glow, cold moon edge light, blinking emergency beacons, and amber map-table pools.',
+      material_texture:
+        'Painted alloy shells, scratched glass domes, cable mesh, wind-battered enamel, and taped paper star charts.',
+      render_quality:
+        'Atmospheric exploration concept with tactical readability and poetic unease.',
+      spatial_distortion:
+        'Ridge-to-sky composition where horizon lines stretch like threat vectors through instruments.',
+      atmosphere: 'Curiosity, strategic vigilance, lonely weather, and discovery under siege.',
+      key_features:
+        'Radar dish petals, chart-window grids, emergency beacon stacks, ridge-line silhouettes, and nebula route scars.',
+      creative_brief:
+        'Push pulp observatory-ridge as reusable style: make any subject feel like it watches a beautiful threat, with instruments, horizon pressure, and defensive curiosity driving the image.',
     },
   },
   {
@@ -158,16 +211,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval, cyber-grunge, watermark, text, logo',
     style: {
-      aesthetic: 'Public transport nexus powered by open plasma conduits.',
-      form_and_line: 'Elevated rails, transfer hubs, and cantilever decks.',
-      color_palette: 'Electric cyan, orange, and steel.',
-      lighting_setup: 'Rail plasma streaks and station strip lights.',
-      material_texture: 'Composite decks, conduit glass, and anti-slip metals.',
-      render_quality: 'Infrastructure-focused concept rendering.',
-      spatial_distortion: 'Parallel rail vanishing lines.',
-      atmosphere: 'Speed, risk, and civic momentum.',
-      key_features: 'Plasma rails, transfer pods, and mission terminals.',
-      creative_brief: 'A raypunk metro where commuting feels like piloting a starship.',
+      aesthetic:
+        'Civic raypunk infrastructure where motion looks dangerous enough to thrill and organized enough to trust.',
+      form_and_line:
+        'Elevated plasma lines, exposed conduit spines, cantilever slices, transfer-pod sockets, and terminal fins.',
+      color_palette:
+        'Electric cyan, ignition orange, brushed steel, signal white, and heat-stained violet.',
+      lighting_setup:
+        'Plasma streaks along rails, pulsing station strips, safety beacons, and underdeck cyan spill.',
+      material_texture:
+        'Composite decking, thick conduit glass, anti-slip metal, ceramic insulators, and heat-warning decals.',
+      render_quality:
+        'Infrastructure-focused concept rendering with clear service routes and strong kinetic rhythm.',
+      spatial_distortion:
+        'Parallel vanishing lines create launch-vector perspective through hubs, pods, and blank signage.',
+      atmosphere: 'Speed, civic momentum, controlled danger, and commuter adrenaline.',
+      key_features:
+        'Open plasma rails, transfer-pod sockets, mission-fin silhouettes, service-line strokes, and safety icon clusters.',
+      creative_brief:
+        'Push plasma rail-commons as reusable style: treat movement as public electricity, with exposed energy channels, disciplined transfer geometry, and everyday travel framed like starship launch prep.',
     },
   },
   {
@@ -176,16 +238,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, cyberpunk-city, fantasy-castle, watermark, text, logo',
     style: {
-      aesthetic: 'Frontier scrapyard rebuilding broken explorers into new ships.',
-      form_and_line: 'Debris stacks, crane arms, and repair bays.',
-      color_palette: 'Rust orange, cobalt, and black.',
-      lighting_setup: 'Arc welding sparks and floodlight cones.',
-      material_texture: 'Scored metal, cable bundles, and burnt paint.',
-      render_quality: 'Gritty pulp concept with rich prop detail.',
-      spatial_distortion: 'Dense layered junkyard depth.',
-      atmosphere: 'Ingenuity under pressure and outlaw pragmatism.',
-      key_features: 'Salvage cranes, part bazaars, and retrofit pits.',
-      creative_brief: 'A raypunk yard where every wreck becomes a second launch.',
+      aesthetic:
+        'Raypunk resurrection style where wreckage becomes raw myth and repair geometry becomes outlaw ritual.',
+      form_and_line:
+        'Debris totems, crane-arm silhouettes, retrofit pit rings, cable-bundle roots, and half-rebuilt hull profiles.',
+      color_palette:
+        'Rust orange, cobalt worklight, tar black, welding white, and chipped mission-patch color.',
+      lighting_setup:
+        'Arc-welding sparks, floodlight cones, backlit dust, and cobalt glows under raised wreck sections.',
+      material_texture:
+        'Scored metal, cable bundles, burnt paint, patched hull cloth, greasy tool foam, and cratered ceramic plating.',
+      render_quality: 'Gritty pulp concept with rich prop detail and clear salvage hierarchy.',
+      spatial_distortion:
+        'Dense layered depth built from stacked wreck silhouettes, retrofit pits, and crane diagonals.',
+      atmosphere:
+        'Ingenuity under pressure, outlaw pragmatism, second chances, and mechanical stubbornness.',
+      key_features:
+        'Salvage crane claws, parts-tray grids, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.',
+      creative_brief:
+        'Push comet salvage-yard as reusable style: make subjects feel rebuilt from heroic wreckage, with repair scars, crane diagonals, and outlaw invention carrying emotional weight.',
     },
   },
   {
@@ -194,16 +265,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval, cyberpunk-grime, watermark, text, logo',
     style: {
-      aesthetic: 'Elegant boarding terminal for long-range ray cruisers.',
-      form_and_line: 'Curved lounges, docking tubes, and gate pylons.',
-      color_palette: 'Violet, cyan, and pearl white.',
-      lighting_setup: 'Soft terminal glow and nebula backlight through glass.',
-      material_texture: 'Gloss composites, polished rails, and transparent membranes.',
-      render_quality: 'Premium transit concept scene.',
-      spatial_distortion: 'Gate depth toward anchored cruisers.',
-      atmosphere: 'Anticipation and interstellar sophistication.',
-      key_features: 'Boarding bridges, mission lounges, and launch boards.',
-      creative_brief: 'A raypunk terminal where departure feels like entering myth.',
+      aesthetic:
+        'Luxurious departure myth where threshold design points toward impossible distance.',
+      form_and_line:
+        'Crescent lounge arcs, translucent tube bands, gate-pylon crowns, pearl ribs, and cruiser silhouettes staged like idols.',
+      color_palette:
+        'Nebula violet, ion cyan, pearl white, soft chrome, and tiny rose status lights.',
+      lighting_setup:
+        'Soft terminal glow, nebula backlight through glass, under-seat cyan halos, and pearl rimlight on gate crowns.',
+      material_texture:
+        'Gloss composites, polished rails, transparent membranes, padded travel leather, and frosted itinerary glass.',
+      render_quality:
+        'Premium transit concept scene with elegant pacing and strong threshold design.',
+      spatial_distortion:
+        'Gate-depth perspective leading through arcs, tubes, and glass toward mythic departure silhouettes.',
+      atmosphere: 'Anticipation, interstellar sophistication, quiet anxiety, and expensive wonder.',
+      key_features:
+        'Departure crescents, mission alcoves, launch constellations, tube membranes, and cruiser-idol views.',
+      creative_brief:
+        'Push nebula boarding-lounge as reusable style: turn any subject into a polished threshold between comfort and cosmic risk, with pearl curves, translucent gates, and departure myth.',
     },
   },
   {
@@ -212,16 +292,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, comedy, cyberpunk-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Frontier chapel where pilots bless engines before launch.',
-      form_and_line: 'Rocket-arch nave, altar bay, and prayer hangars.',
-      color_palette: 'White, brass, and cosmic blue.',
-      lighting_setup: 'Altar spot and hatchway rimlight.',
-      material_texture: 'Painted steel, cloth banners, and worn floor plating.',
-      render_quality: 'Symbolic scene with strong silhouette hierarchy.',
-      spatial_distortion: 'Aisle perspective into launch altar.',
-      atmosphere: 'Faith, fear, and mission resolve.',
-      key_features: 'Engine blessings, star icons, and vow capsules.',
-      creative_brief: 'A raypunk chapel where devotion is measured in launch trajectories.',
+      aesthetic:
+        'Rocket-age devotional style where engines, vows, and navigation icons merge into sacred preparation.',
+      form_and_line:
+        'Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary forms.',
+      color_palette:
+        'Mission white, worn brass, cosmic blue, candle amber, and scorched launch gray.',
+      lighting_setup:
+        'Narrow altar spot, hatchway rimlight, blue engine glow, and small votive reflections on polished metal.',
+      material_texture:
+        'Painted steel, cloth mission banners, worn floor plating, heat-scarred brass, and paper blessing tags.',
+      render_quality: 'Symbolic scene with strong silhouette hierarchy and tactile ritual objects.',
+      spatial_distortion:
+        'Aisle-like perspective toward nozzle halos, with rocket geometry replacing religious architecture.',
+      atmosphere: 'Faith, fear, mission resolve, and quiet mechanical tenderness.',
+      key_features:
+        'Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.',
+      creative_brief:
+        'Push rocket chapel-outpost as reusable style: any subject should feel sanctified by launch risk, with engine geometry, fragile vows, and cosmic iconography fused into one ritual aesthetic.',
     },
   },
   {
@@ -230,16 +318,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval, cyberpunk-noir, watermark, text, logo',
     style: {
-      aesthetic: 'High-volume orbital post office linking remote colonies.',
-      form_and_line: 'Sorting belts, capsule chutes, and docking loops.',
-      color_palette: 'Tangerine, gray, and cyan.',
-      lighting_setup: 'Workbay strips and status beacon flashes.',
-      material_texture: 'Cargo polymers, metal mesh, and stencil paint.',
-      render_quality: 'Functional worldbuilding concept.',
-      spatial_distortion: 'Layered conveyor depth through sorting hall.',
-      atmosphere: 'Kinetic order and everyday cosmic logistics.',
-      key_features: 'Mail rockets, capsule racks, and route holograph boards.',
-      creative_brief: 'A raypunk depot where postal reliability keeps the frontier alive.',
+      aesthetic:
+        'Orbital postal machinery treated like cheerful mechanical circulation for distant communities.',
+      form_and_line:
+        'Sorting-belt arteries, capsule chute veins, docking-loop organs, route-board grids, and stamped rocket silhouettes.',
+      color_palette:
+        'Tangerine mail paint, graphite gray, ion cyan, paper white, and red priority-strip accents.',
+      lighting_setup:
+        'Workbay strip rhythm, status beacon flashes, scanner-line sweeps, and cyan glow inside capsule chutes.',
+      material_texture:
+        'Cargo polymers, metal mesh, stencil paint, paper label edges, worn rubber belts, and scuffed capsule shells.',
+      render_quality:
+        'Functional worldbuilding concept with high logistical readability and playful graphic coding.',
+      spatial_distortion:
+        'Layered conveyor depth that moves like circulation through belts, racks, and docking loops.',
+      atmosphere:
+        'Kinetic order, everyday cosmic logistics, civic trust, and absurdly heroic reliability.',
+      key_features:
+        'Mail-rocket silhouettes, capsule rack grids, route holograph boards, stamp-color lanes, and priority chute clusters.',
+      creative_brief:
+        'Push orbit postal-depot as reusable style: make subjects feel sorted, routed, stamped, and kept alive by bright orbital logistics, with mail graphics acting as both decoration and system diagram.',
     },
   },
   {
@@ -248,16 +346,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval, cyberpunk-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Warship command deck beneath aurora-like nebula fields.',
-      form_and_line: 'Command tiers, viewport arcs, and tactical bridges.',
-      color_palette: 'Navy, magenta, and electric cyan.',
-      lighting_setup: 'Instrument glow and strobing alert channels.',
-      material_texture: 'Brushed steel, glass screens, and ribbed flooring.',
-      render_quality: 'Action command concept with clear focus zones.',
-      spatial_distortion: 'Viewport-driven depth into star battle.',
-      atmosphere: 'Tactical urgency and heroic pressure.',
-      key_features: 'Ray cannons, command dais, and alert pylons.',
-      creative_brief: 'A raypunk flagship deck where split-second choices decide constellations.',
+      aesthetic:
+        'Abstract aurora-tactical raypunk render style with heroic pressure, alert-spectrum color, and decisive command hierarchy.',
+      form_and_line:
+        'Tiered focal bands, panoramic arc framing, tactical rib lines, alert-channel stripes, and vector-like aim diagonals.',
+      color_palette:
+        'Battle navy, aurora magenta, electric cyan, emergency red, and brushed steel gray.',
+      lighting_setup:
+        'Instrument-style glow, strobing edge channels, aurora wash gradients, and hard rimlights on primary silhouettes.',
+      material_texture:
+        'Brushed metal grain, curved glass sheen, ribbed rubber shadows, enamel signal marks, and worn control-surface detail.',
+      render_quality:
+        'High-clarity action render with strong focus zones, crisp silhouettes, and controlled raypunk saturation.',
+      spatial_distortion:
+        'Viewport-like depth and stacked foreground tiers compress the image toward urgent decisions.',
+      atmosphere: 'Tactical urgency, heroic pressure, disciplined motion, and electric dread.',
+      key_features:
+        'Aurora alert gradients, command-tier composition, cyan-magenta focus bands, hard tactical diagonals, and signal-stripe overlays.',
+      creative_brief:
+        'Apply aurora battle-deck as an abstract style treatment: transform any subject into a decisive raypunk action image through aurora alert color, command-tier framing, and tactical focus hierarchy.',
     },
   },
   {
@@ -266,16 +373,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Corepunk — Raypunk',
     negativePrompt: 'photoreal, medieval, cyberpunk-dystopia, watermark, text, logo',
     style: {
-      aesthetic: 'Elite pilot academy dedicated to raycraft tactics and exploration ethics.',
-      form_and_line: 'Training domes, launch catapults, and lecture atriums.',
-      color_palette: 'White, blue, and orange accents.',
-      lighting_setup: 'Daylight with runway strip glows.',
-      material_texture: 'Composite shells, painted lanes, and alloy rails.',
-      render_quality: 'Clean institutional concept with aspirational tone.',
-      spatial_distortion: 'Campus perspective linking training zones.',
-      atmosphere: 'Discipline, ambition, and heroic futurism.',
-      key_features: 'Simulator pods, cadet parade deck, and star-map hall.',
-      creative_brief: 'A raypunk school where courage is trained as a technical skill.',
+      aesthetic:
+        'Clean aspirational raypunk training style with institutional polish, launch-readiness rhythm, and optimistic discipline.',
+      form_and_line:
+        'Dome-like curves, launch-lane stripes, lecture-diagram arcs, simulator-like ovals, and precise alignment marks.',
+      color_palette:
+        'Cadet white, academy blue, launch orange, polished alloy, and tiny rank-stripe red.',
+      lighting_setup:
+        'Clean daylight, runway-like strip glows, screen halos, and crisp engineered shadows.',
+      material_texture:
+        'Composite shell finish, painted lane graphics, polished alloy rails, rubberized touchpoints, and laminated diagram surfaces.',
+      render_quality:
+        'Clean institutional render with aspirational tone, readable design order, and precise graphic staging.',
+      spatial_distortion:
+        'Perspective organizes the image into training lanes, diagram zones, and disciplined progression paths.',
+      atmosphere: 'Discipline, ambition, heroic futurism, and carefully managed risk.',
+      key_features:
+        'Launch-lane graphics, academy-white surfaces, blue-orange instruction accents, diagrammatic overlays, and ranked alignment rhythm.',
+      creative_brief:
+        'Apply zenith ray-academy as an abstract style treatment: make any subject feel trained, ranked, diagrammed, and launch-ready through clean raypunk institutional graphics.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

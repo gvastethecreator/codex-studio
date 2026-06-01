@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Skeletal regality, giant tomb halls, dread authority, ornate villain fantasy, Nazarick tomb guardians, Ainz-ooal-gown guild, death-knight armies, world-item relics
-  form_and_line: Fantasy anime linework, ornate costume detail, decorative trim strokes, layered armor inking, scrollwork contour
-  color_palette: Magical jewel tones, sky blues, warm adventure accents, enchanted emerald-amber range, sapphire depth richness
-  lighting_setup: Adventure-ready glow, atmospheric depth, magical emanation lighting, sunbeam shafts, ethereal rim auras
-  material_texture: Cloaks, armor, stone, magic particles, luminous props, chainmail sheen, enchanted ore glint, weathered leather grain
-  render_quality: Expansive fantasy anime frame, epic-scope rendering, heroic visual polish, richly detailed finish
-  spatial_distortion: Heroic proportions, dynamic staging, sweeping landscape depth, monumental scale framing, quest-ready composition
-  atmosphere: Dominant, sinister, grandiose, foreboding
-  key_features: Worldbuilding, quest energy, immersive environment storytelling, legendary scale design, adventure momentum
-  creative_brief: A throne made of bone and absolute solitude, deep inside a tomb the size of a nation, where loyalty is absolute and humanity is a memory long archived. Ornate darkness drapes every corridor — the architecture of dread refined into cathedral precision. Reign from the stillness at the center of an empire where the dead outnumber the living by design.
+  aesthetic: Bone-throne dark dominion, with ornate villain regality, cathedral dread, absolute hierarchy, and frozen authority.
+  form_and_line: Massive vertical symmetry, baroque contour density, crownlike negative space, severe silhouettes, and ceremonial stillness.
+  color_palette: Bone ivory, royal black, grave violet, antique gold, cold emerald, and deep crimson authority.
+  lighting_setup: Low underglow, throne-like backlight, cathedral shadow shafts, and hard rim halos around dominant forms.
+  material_texture: Carved bone texture, polished black stone, heavy velvet darkness, tarnished gold, and cold magical dust.
+  render_quality: Grand dark-fantasy anime polish with ornate detail, oppressive scale, and absolute compositional control.
+  spatial_distortion: Monumental centrality, vertical dread, and symmetrical pressure that makes any subject feel enthroned.
+  atmosphere: Dominant, sinister, grandiose, foreboding.
+  key_features: Skeletal regality, cathedral shadow, imperial stillness, ornate dread, absolute hierarchy.
+  creative_brief: >-
+    Render any prompt with dark dominion authority: use bone-ivory contrast,
+    baroque symmetry, cold magical dust, and oppressive stillness without
+    requiring a literal seat of power, faction, army, or named ruler.
 avoidRules:
   - realistic
   - 3d render

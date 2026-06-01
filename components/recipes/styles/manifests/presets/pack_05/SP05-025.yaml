@@ -17,14 +17,14 @@ visualDna:
   color_palette: Near-monochrome neutrals, selective crimson warning accents, cold amber paper tones, deep black shadow architecture
   lighting_setup: Hard chiaroscuro segmentation, surgical highlight placement, constrained ambient lift, and intentional darkness as compositional mass
   material_texture: Matte paper-like surfaces, subtle analog grain, polished low-noise cel layers, restrained reflective cues
-  render_quality: High-discipline early-digital anime finish optimized for suspense readability and symbolic object prominence
+  render_quality: High-discipline early-digital anime finish optimized for suspense readability and symbolic hierarchy
   spatial_distortion: Compressed psychological space with strategic negative voids and perspective restraint to amplify mental pressure
   atmosphere: Calculating, oppressive, cold, analytical, ominous
-  key_features: Chiaroscuro intellect, symbolic prop hierarchy, stillness-driven menace, contrast-led narrative tension
+  key_features: Chiaroscuro intellect, symbolic hierarchy, stillness-driven menace, contrast-led narrative tension
   creative_brief: >-
     Build identity through psychological contrast logic—severe light partition,
-    symbolic object emphasis, and compositional restraint—so the preset reads
-    as cerebral suspense across any subject matter.
+    symbolic hierarchy, and compositional restraint—so the preset reads as
+    cerebral suspense across any subject matter without requiring a fixed clue.
 avoidRules:
   - realistic
   - 3d render

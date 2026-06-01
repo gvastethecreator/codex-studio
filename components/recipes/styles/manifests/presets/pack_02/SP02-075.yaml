@@ -17,11 +17,11 @@ visualDna:
   color_palette: Rainbow edges, spectral fringe, red-to-violet split, prismatic white
   lighting_setup: Refracted, glass-bent, crystal-split spectrum
   material_texture: Glass distortion, prism face, beveled edge refraction
-  render_quality: Artsy, music video, psychedelic light-bending
+  render_quality: Artsy, psychedelic, optical light-bending, refractive polish
   spatial_distortion: Kaleidoscope, symmetrical fracture, repeating geometry
   atmosphere: Dreamy, broken, fragmented vision, beauty-through-distortion
   key_features: Rainbows, color splitting, light dispersion, crystal edge
-  creative_brief: Reality passes through crystal and comes out the other side multiplied—edges bleeding into spectral fringes, a single image fracturing into its constituent colors like a voice breaking into harmonics. The world is seen through the eyes of a prism, where every boundary becomes a rainbow and every surface reveals the hidden spectrum it contains.
+  creative_brief: 'Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The style should fracture vision while preserving enough subject identity to read.'
 avoidRules:
   - clean lens
 assets:

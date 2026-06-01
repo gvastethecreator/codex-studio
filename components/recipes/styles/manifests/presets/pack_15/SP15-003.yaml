@@ -7,21 +7,31 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
 visualDna:
-  aesthetic: Amphibious solarpunk logistics hub where tides power civic exchange.
-  form_and_line: Branched piers, floating docks, and articulated bio-structural ribs.
+  aesthetic: Amphibious solarpunk exchange where tidal rhythm, porous biology, and civic logistics fuse into one material language.
+  form_and_line: Branched pier-like vectors, floating modular bands, and articulated bio-structural ribs.
   color_palette: Tidal cyan, seafoam green, and sun-bleached limestone.
-  lighting_setup: Late-afternoon maritime light with reflective water bounce.
+  lighting_setup: Late-afternoon maritime light with reflective water-bounce logic.
   material_texture: Algae-composite hulls, porous bioceramic, and wet rope fibers.
-  render_quality: Crisp production-ready concept art with clear transport readability.
-  spatial_distortion: Multi-level harbor depth guiding eye from quay to floating market core.
+  render_quality: Crisp production-ready solarpunk concept art with clear exchange readability.
+  spatial_distortion: Multi-level harbor-like depth guiding the eye through modular exchange layers without requiring a port.
   atmosphere: Cooperative momentum, ocean stewardship, and optimistic trade energy.
-  key_features: Tidal turbines, floating exchange decks, amphibious cargo micro-transit.
+  key_features: Tidal turbine motifs, floating exchange decks, amphibious micro-transit patterning.
   creative_brief: >-
     Preserve tidal-bioport exchange grammar as a reusable style system:
     amphibious logistics layering, renewable tidal mechanics, and cooperative
-    harbor commerce should remain coherent across subjects.
+    exchange flow should remain coherent across subjects without requiring
+    docks, markets, boats, cargo, or a literal harbor.
 avoidRules: [photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-003.webp }
 attributes:
   negativePrompt: photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-solarpunk, categoryName: 1. Corepunk — Solarpunk, tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-solarpunk,
+    categoryName: 1. Corepunk — Solarpunk,
+    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

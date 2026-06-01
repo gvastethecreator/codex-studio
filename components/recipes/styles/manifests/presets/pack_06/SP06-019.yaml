@@ -19,9 +19,9 @@ visualDna:
   material_texture: Notebook paper, indentations
   render_quality: Casual, sketch
   spatial_distortion: Rough shading
-  atmosphere: Bored, creative
+  atmosphere: Casual, restless, improvised
   key_features: Scribble texture
-  creative_brief: Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Notebook paper dimples under the weight of doodles born from boredom, the margins filling with mindlessness that becomes art. The image smells like school and wasted afternoons.
+  creative_brief: Cheap ballpoint ink pools at the start of every stroke, then starves into scratchy thinness, leaving a record of pressure in blue. Paper dimples under dense scribbles, cross-contours, and obsessive hatch fields that turn idle marks into structure. The style should feel casual and compulsive without requiring notebooks, margins, classrooms, or text.
 avoidRules:
   - photo
   - realistic
@@ -38,10 +38,12 @@ avoidRules:
   - signature
   - frame
   - border
+  - notebook requirement
+  - classroom mood
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-019.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border
+  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -55,4 +57,3 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-

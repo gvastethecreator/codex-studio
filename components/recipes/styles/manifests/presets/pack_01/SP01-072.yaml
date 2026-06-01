@@ -12,16 +12,16 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: City looks like toys
+  aesthetic: Miniature tilt-shift effect
   form_and_line: Blur top and bottom
   color_palette: Saturated
   lighting_setup: Daylight
-  material_texture: Plastic look
-  render_quality: Toy world, cute
+  material_texture: Toylike surface crispness
+  render_quality: Miniature diorama realism
   spatial_distortion: Selective focus plane
   atmosphere: Tiny, cute
   key_features: Miniature effect
-  creative_brief: The colossal shrinks into a dollhouse diorama, entire cities reduced to the logic of a playset where blurring edges create their own physics. Wonder arrives not from what is shown but from the impossible tenderness of scale inverted.
+  creative_brief: 'Tilt-shift miniature style shrinks any subject into diorama logic: saturated daylight, selective focus band, blurred top and bottom, and toy-like clarity at the focal plane. Use scale inversion without requiring cities, buildings, or playset scenery.'
 avoidRules:
   - sharp everywhere
 assets:

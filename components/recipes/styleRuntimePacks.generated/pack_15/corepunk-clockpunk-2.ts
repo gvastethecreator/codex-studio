@@ -11,19 +11,21 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo',
     style: {
       aesthetic:
-        'Civic clockpunk workshop district driven by precision mechanics and artisanal automation.',
-      form_and_line: 'Gear-ring colonnades, pendulum-guided axes, and radial bench choreography.',
+        'Civic clockpunk driven by precision mechanics, artisanal automation, and communal repair culture.',
+      form_and_line:
+        'Gear-ring colonnade rhythm, pendulum-guided axes, and radial bench-like choreography.',
       color_palette: 'Polished brass, terracotta clay, and oxidized teal accents.',
-      lighting_setup: 'Skylight shafts with warm lamp pools over escapement worktables.',
+      lighting_setup: 'Skylight shafts with warm lamp pools over escapement-like work surfaces.',
       material_texture:
-        'Brushed bronze gears, hardwood benches, enamel dials, and oil-darkened leather.',
+        'Brushed bronze gears, hardwood warmth, enamel dials, and oil-darkened leather.',
       render_quality: 'High-detail editorial concept art with precise mechanical readability.',
-      spatial_distortion: 'Courtyard flywheel perspective radiating into timepiece micro-ateliers.',
+      spatial_distortion:
+        'Flywheel perspective radiating into timepiece micro-atelier depth without requiring a courtyard.',
       atmosphere: 'Patient mastery, communal ingenuity, and elegant mechanical rhythm.',
       key_features:
-        'Public gear libraries, escapement stations, cooperative chronometer forge, and clock-tower canopy.',
+        'Public gear-library motifs, escapement nodework, cooperative chronometer-forge rhythm, and canopy clockwork cues.',
       creative_brief:
-        'A neighborhood fabrication courtyard where repair culture is organized through visible clockwork systems and shared precision craft.',
+        'Preserve circular maker-courtyard grammar as a reusable style language: radial precision-work choreography, visible clockwork governance, and communal repair culture should remain stable across subjects without requiring a workshop, courtyard, benches, or clock tower.',
     },
   },
   {
@@ -32,16 +34,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, cyberpunk, industrial-grunge, watermark, text, logo',
     style: {
-      aesthetic: 'Ornate conservatory where timekeeping and horticulture merge.',
-      form_and_line: 'Brass ribs, gear daisies, and clockface skylights.',
+      aesthetic:
+        'Ornate clockpunk horticulture where timekeeping and growth merge into gilded mechanism.',
+      form_and_line: 'Brass ribs, gear daisies, clockface halos, and greenhouse-like curvature.',
       color_palette: 'Brass gold, emerald, and cream.',
       lighting_setup: 'Sunlight filtered through clockwork glass.',
       material_texture: 'Filigree metal, cut glass, and polished wood.',
       render_quality: 'Delicate conceptual illustration with rich decorative detail.',
-      spatial_distortion: 'Circular greenhouse rings around central timer tower.',
+      spatial_distortion: 'Circular growth rings around a timer-axis focal point.',
       atmosphere: 'Patient elegance and mechanical gentleness.',
-      key_features: 'Clock vines, pendulum sprinklers, and time-wound orchards.',
-      creative_brief: 'A clockpunk greenhouse where plants and mechanisms grow together.',
+      key_features:
+        'Clock vines, pendulum sprinkler motifs, gear-petal blooms, and time-wound growth patterns.',
+      creative_brief:
+        'Preserve gilded gear-conservatory grammar as a reusable style system: ornamental horological botany, brass filigree growth mechanics, and patient eco-temporal elegance should remain coherent across subjects.',
     },
   },
   {
@@ -50,16 +55,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Ballroom ruled by pendulum logic and courtly mechanics.',
-      form_and_line: 'Sweeping staircases, hanging weights, and gear chandeliers.',
+      aesthetic:
+        'Courtly clockpunk elegance ruled by pendulum logic and polished mechanical etiquette.',
+      form_and_line:
+        'Sweeping stair-like curves, hanging weights, gear chandeliers, and waltz spiral geometry.',
       color_palette: 'Champagne gold, burgundy, and midnight blue.',
       lighting_setup: 'Crystal chandeliers and reflected metal glints.',
       material_texture: 'Velvet, brass, marble, and smoked glass.',
       render_quality: 'Luxurious interior concept with strong symmetry.',
-      spatial_distortion: 'Rotational composition around a central dance clock.',
+      spatial_distortion: 'Rotational composition around a central timekeeping axis.',
       atmosphere: 'Ceremonial motion and elegant precision.',
-      key_features: 'Pendulum columns, timer balconies, and waltz automata.',
-      creative_brief: 'A clockpunk ballroom where every dance step is mechanically coordinated.',
+      key_features:
+        'Pendulum columns, timer-balcony bands, waltz automata silhouettes, and brass etiquette markers.',
+      creative_brief:
+        'Preserve pendulum court-ballroom grammar as a reusable style system: ceremonial kinetic symmetry, pendulum-governed choreography, and luxurious mechanical etiquette should remain coherent across subjects.',
     },
   },
   {
@@ -68,17 +77,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, toy-like, cyber-slum, watermark, text, logo',
     style: {
-      aesthetic: 'Transit passage lined with giant navigational astrolabes.',
-      form_and_line: 'Rotating brass rings, narrow corridors, and pointer arches.',
+      aesthetic:
+        'Navigational clockpunk style lined with giant astrolabe logic and route-mapping brasswork.',
+      form_and_line:
+        'Rotating brass rings, narrow corridor-like bands, pointer arches, and layered dial apertures.',
       color_palette: 'Brass, slate, and pale teal.',
       lighting_setup: 'Warm lamp pools and reflected dial highlights.',
       material_texture: 'Burnished metal, carved stone, and oiled leather.',
       render_quality: 'Precision-rich conceptual corridor scene.',
-      spatial_distortion: 'Long axis perspective through layered dials.',
+      spatial_distortion: 'Long axis perspective through layered dials and pointer shadows.',
       atmosphere: 'Measured movement and navigational discipline.',
-      key_features: 'Direction dials, time markers, and route brasswork.',
+      key_features: 'Direction dials, time markers, astrolabe rings, and route brasswork.',
       creative_brief:
-        'A clockpunk transit hall where travel is calibrated by instrument-grade ritual.',
+        'Preserve brass astrolabe-passage grammar as a reusable style system: navigational-instrument corridor rhythm, calibrated directional ritual, and measured transit discipline should remain coherent across subjects.',
     },
   },
   {
@@ -87,16 +98,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, neon-dystopia, industrial-rust, watermark, text, logo',
     style: {
-      aesthetic: 'Maritime harbor guided by monumental timekeeping towers.',
-      form_and_line: 'Clock towers, crane arms, and tidal gates.',
+      aesthetic: 'Maritime clockpunk rhythm guided by monumental timekeeping and tidal mechanics.',
+      form_and_line:
+        'Clock-tower silhouettes, crane-arm arcs, tidal gate geometry, and pendulum masts.',
       color_palette: 'Sea blue, brass, and storm gray.',
       lighting_setup: 'Dawn reflection and beacon lamp rows.',
       material_texture: 'Weathered wood, riveted brass, and stone quays.',
       render_quality: 'Strong worldbuilding with maritime clarity.',
-      spatial_distortion: 'Harbor depth leading to a central time tower.',
+      spatial_distortion: 'Harbor-like depth leading to a central timekeeping axis.',
       atmosphere: 'Order, signal discipline, and civic tide control.',
-      key_features: 'Tide clocks, signal cranes, and quay pendulums.',
-      creative_brief: 'A clockpunk port where schedules regulate waves as much as ships.',
+      key_features:
+        'Tide clocks, signal-crane motifs, quay pendulums, and brass waterline markers.',
+      creative_brief:
+        'Preserve timekeeper harbor grammar as a reusable style system: maritime schedule governance, tidal signal control machinery, and beacon-led civic coordination should remain coherent across subjects.',
     },
   },
   {
@@ -105,16 +119,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, messy-industrial, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Dense artisan workshop street dedicated to precision watchcraft.',
-      form_and_line: 'Narrow shopfronts, gear awnings, and window displays.',
+      aesthetic:
+        'Dense artisan clockpunk precision where watchcraft becomes a compressed texture system.',
+      form_and_line:
+        'Narrow shopfront-like bands, gear awnings, display-grid windows, and pocketwatch curves.',
       color_palette: 'Walnut, brass, and deep green.',
       lighting_setup: 'Warm shop lamps and reflected glass sparkle.',
       material_texture: 'Polished brass, timber, leather, and felt pads.',
       render_quality: 'Detail-rich street concept with tiny mechanical cues.',
-      spatial_distortion: 'Tight alley perspective with repeating façades.',
+      spatial_distortion:
+        'Tight alley-like perspective with repeating facade bands and tool-grid depth.',
       atmosphere: 'Craft pride, quiet focus, and intimate scale.',
-      key_features: 'Watchmaker benches, tool clocks, and repair kiosks.',
-      creative_brief: 'A clockpunk artisan row where time is repaired one mechanism at a time.',
+      key_features:
+        'Watchmaker tool grids, tool-clock motifs, repair-node silhouettes, and pocketwatch filigree.',
+      creative_brief:
+        'Preserve pocketwatch workshop-row grammar as a reusable style system: intimate micro-mechanics craftsmanship, dense storefront repair culture, and quiet precision pride should remain coherent across subjects.',
     },
   },
   {
@@ -123,16 +142,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, dystopian, cyber-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Civic governance hall calibrated by sundials and brass meters.',
-      form_and_line: 'Stepped terraces, dial columns, and central noon marker.',
+      aesthetic:
+        'Civic clockpunk governance calibrated by sundials, brass meters, and noon-axis authority.',
+      form_and_line:
+        'Stepped terraces, dial columns, central noon markers, and bureaucratic gear symmetry.',
       color_palette: 'Stone ivory, brass, and sky blue.',
       lighting_setup: 'Direct solar shafts with clock-shadow precision.',
       material_texture: 'Carved limestone, gilded bronze, and linen drape.',
       render_quality: 'Formal public architecture with symbolic clarity.',
-      spatial_distortion: 'Axial symmetry toward governance dais.',
+      spatial_distortion: 'Axial symmetry toward a governance-like timekeeping focal point.',
       atmosphere: 'Deliberation, accountability, and measured power.',
-      key_features: 'Sundial court, vote levers, and council meters.',
-      creative_brief: 'A clockpunk government that literally aligns policy with daylight.',
+      key_features:
+        'Sundial court geometry, vote-lever motifs, council meters, and brass noon lines.',
+      creative_brief:
+        'Preserve sundial government-steps grammar as a reusable style system: solar-calibrated civic authority, axial deliberative architecture, and measured public accountability should remain coherent across subjects.',
     },
   },
   {
@@ -141,16 +164,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, silly-cartoon, cyberpunk-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Performance house where music is driven by visible gear systems.',
-      form_and_line: 'Orchestra pit, gear balconies, and fan-shaped stage proscenium.',
+      aesthetic:
+        'Gearsong clockpunk where music is driven by visible mechanisms and tempo machinery.',
+      form_and_line:
+        'Orchestra-pit arcs, gear-balcony bands, fan-shaped proscenium geometry, and tempo-wheel repeats.',
       color_palette: 'Burgundy, brass, and black.',
       lighting_setup: 'Stage spotlights and chandelier shimmer.',
       material_texture: 'Velvet curtains, brass instruments, and polished wood.',
       render_quality: 'Theatrical concept with dramatic focus control.',
-      spatial_distortion: 'Stage-front perspective into layered orchestra tiers.',
+      spatial_distortion: 'Stage-front-like perspective into layered rhythm tiers.',
       atmosphere: 'Celebratory precision and musical elegance.',
-      key_features: 'Gear organs, tempo wheels, and clockwork stage rigs.',
-      creative_brief: 'A clockpunk theater where timing is literally the main instrument.',
+      key_features:
+        'Gear organs, tempo wheels, clockwork rig silhouettes, and brass acoustic fins.',
+      creative_brief:
+        'Preserve gearsong theater grammar as a reusable style system: orchestral timing machinery, proscenium gear dramaturgy, and celebratory mechanical musicality should remain coherent across subjects.',
     },
   },
   {
@@ -159,16 +186,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, futuristic-minimal, cyber-grime, watermark, text, logo',
     style: {
-      aesthetic: 'Hilltop observatory with brass telescopes and clock lathes.',
-      form_and_line: 'Ringed steps, instrument booms, and rotating domes.',
+      aesthetic:
+        'Brass astronomical clockpunk where telescopes and lathes share one precise ritual.',
+      form_and_line:
+        'Ringed step bands, instrument booms, rotating dome forms, and clock-lathe arcs.',
       color_palette: 'Brass, midnight blue, and ivory.',
       lighting_setup: 'Clear night sky and internal dial glow.',
       material_texture: 'Bronze metal, stone steps, and glass domes.',
       render_quality: 'Scientific concept art with delicate machinery detail.',
-      spatial_distortion: 'Stepped upward composition toward dome center.',
+      spatial_distortion: 'Stepped upward composition toward a dome-center instrument axis.',
       atmosphere: 'Curiosity, patience, and astronomical order.',
-      key_features: 'Dial telescopes, time maps, and stargear platforms.',
-      creative_brief: 'A clockpunk observatory where precision mechanics meet sky study.',
+      key_features:
+        'Dial telescopes, time-map grids, stargear platforms, and brass calibration marks.',
+      creative_brief:
+        'Preserve brass observatory-steps grammar as a reusable style system: stepped astronomical instrumentation, dial-driven sky analysis, and patient celestial order should remain coherent across subjects.',
     },
   },
   {
@@ -177,16 +208,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, cartoonish, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Navigable canal system controlled by ornate lock mechanisms.',
-      form_and_line: 'Water gates, gear housings, and lock platforms.',
+      aesthetic:
+        'Clockpunk water-control language ruled by ornate lock mechanisms and measured flow.',
+      form_and_line:
+        'Water-gate silhouettes, gear housings, lock-platform bands, and brass sluice arcs.',
       color_palette: 'Teal water, brass, and stone gray.',
       lighting_setup: 'Reflected water shimmer and warm lock lamps.',
       material_texture: 'Weathered brass, wet stone, and timber lock arms.',
       render_quality: 'Infrastructure concept with strong water motion cues.',
-      spatial_distortion: 'Waterway depth with alternating lock chambers.',
+      spatial_distortion: 'Waterway-like depth with alternating lock-chamber rhythm.',
       atmosphere: 'Measured flow and engineered adaptability.',
-      key_features: 'Canal locks, gear sluices, and maintenance docks.',
-      creative_brief: 'A clockpunk waterway where flow is controlled with ceremonial precision.',
+      key_features:
+        'Canal-lock motifs, gear sluices, maintenance dock marks, and calibrated waterlines.',
+      creative_brief:
+        'Preserve brass canal-locks grammar as a reusable style system: hydraulic timing governance, alternating sluice choreography, and ceremonial flow precision should remain coherent across subjects.',
     },
   },
   {
@@ -195,16 +230,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, grim-industrial, cyberpunk-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Public arcade driven by oversized timewheel mechanics.',
-      form_and_line: 'Wheel arches, arcade portals, and dial kiosks.',
+      aesthetic: 'Public clockpunk spectacle driven by oversized timewheel mechanics.',
+      form_and_line:
+        'Wheel arches, arcade-portal repeats, dial-kiosk shapes, and carnival gear loops.',
       color_palette: 'Copper, cream, and forest green.',
       lighting_setup: 'Warm arcade lights and reflected dial faces.',
       material_texture: 'Enamel plates, brass, and varnished timber.',
       render_quality: 'Playful yet refined concept art.',
-      spatial_distortion: 'Rotational composition around the giant wheel.',
+      spatial_distortion: 'Rotational composition around giant wheel logic.',
       atmosphere: 'Social motion and measured delight.',
-      key_features: 'Timewheel rides, ticket counters, and gear carnival stalls.',
-      creative_brief: 'A clockpunk fairground where amusement is engineered as a precision ritual.',
+      key_features:
+        'Timewheel motifs, ticket-counter blocks, gear carnival shapes, and brass spoke halos.',
+      creative_brief:
+        'Preserve timewheel arcade grammar as a reusable style system: rotational public amusement engineering, dial-and-ticket ritual rhythm, and measured social delight should remain coherent across subjects.',
     },
   },
   {
@@ -213,17 +251,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, cyberpunk, ruin-punk, watermark, text, logo',
     style: {
-      aesthetic: 'Residential terrace where every balcony includes a personal timing atelier.',
-      form_and_line: 'Staggered balconies, pocket-watch railings, and stair loops.',
+      aesthetic:
+        'Domestic clockpunk terrace language where personal timekeeping becomes architecture.',
+      form_and_line:
+        'Staggered balcony bands, pocket-watch rail curves, stair loops, and atelier-window grids.',
       color_palette: 'Honey wood, brass, and pale blue.',
       lighting_setup: 'Late afternoon light and warm window glows.',
       material_texture: 'Painted plaster, brass hardware, and woven awnings.',
       render_quality: 'Domestic future concept with meticulous detail.',
-      spatial_distortion: 'Terraced slope perspective with nested home fronts.',
+      spatial_distortion: 'Terraced slope perspective with nested domestic-front rhythms.',
       atmosphere: 'Domestic care and mechanical intimacy.',
-      key_features: 'Balcony clocks, repair benches, and window chimes.',
+      key_features:
+        'Balcony clock motifs, repair-bench grids, window chimes, and pocketwatch rail patterns.',
       creative_brief:
-        'A clockpunk neighborhood where household life is tuned with craft precision.',
+        "Preserve clockmaker's terrace grammar as a reusable style system: domestic horological craft intimacy, staggered balcony atelier patterns, and tuned household precision should remain coherent across subjects.",
     },
   },
   {
@@ -232,16 +273,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, toyish, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Educational institute teaching engineering through tactile clock systems.',
-      form_and_line: 'Lecture wings, gear murals, and timing towers.',
+      aesthetic: 'Educational clockpunk style teaching engineering through tactile clock systems.',
+      form_and_line:
+        'Lecture-wing bands, gear murals, timing-tower forms, and hands-on mechanism diagrams.',
       color_palette: 'Ivory, brass, and schoolhouse green.',
       lighting_setup: 'Clean daylight and model-room spotlights.',
       material_texture: 'Chalkboards, brass models, and polished desks.',
       render_quality: 'Warm institutional concept with educational clarity.',
-      spatial_distortion: 'Campus composition centered on a clock tower.',
+      spatial_distortion:
+        'Learning-axis composition centered on clock geometry and mechanism diagrams.',
       atmosphere: 'Curiosity, discipline, and apprenticeship pride.',
-      key_features: 'Gear classrooms, demonstration clocks, and maintenance labs.',
-      creative_brief: 'A clockpunk school where learning is literally hands-on mechanics.',
+      key_features:
+        'Gear lesson motifs, demonstration clocks, maintenance grids, and brass lesson panels.',
+      creative_brief:
+        'Preserve gearwork schoolhouse grammar as a reusable style system: tactile apprenticeship pedagogy, model-driven institutional clarity, and disciplined curiosity culture should remain coherent across subjects.',
     },
   },
   {
@@ -250,16 +295,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, cyberpunk, dystopian-rust, watermark, text, logo',
     style: {
-      aesthetic: 'Railway signal station with elaborate brass semaphore systems.',
-      form_and_line: 'Signal mast forest, platform edges, and gear towers.',
+      aesthetic: 'Clockpunk signal language built from elaborate brass semaphore systems.',
+      form_and_line:
+        'Signal mast forests, platform-edge bands, gear towers, and route-lever diagonals.',
       color_palette: 'Brick red, brass, and smoke blue.',
       lighting_setup: 'Signal lamps and overcast platform glow.',
       material_texture: 'Riveted steel, polished brass, and soot-stained stone.',
       render_quality: 'Transport concept with strong directional cues.',
-      spatial_distortion: 'Track-side perspective toward signal tower.',
+      spatial_distortion: 'Track-side-like perspective toward a signal tower axis.',
       atmosphere: 'Coordination, urgency, and precise movement.',
-      key_features: 'Semaphore arms, signal clocks, and route levers.',
-      creative_brief: 'A clockpunk rail node where timing discipline shapes the whole city.',
+      key_features: 'Semaphore arms, signal clocks, route levers, and brass rail-time markers.',
+      creative_brief:
+        'Preserve gilded railway signal-house grammar as a reusable style system: semaphore-forest coordination, route-lever timing authority, and platform urgency discipline should remain coherent across subjects.',
     },
   },
   {
@@ -268,16 +315,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Corepunk — Clockpunk',
     negativePrompt: 'photoreal, whimsical, cyberpunk-noise, watermark, text, logo',
     style: {
-      aesthetic: 'Cathedral annex where gears are presented as sacred infrastructure.',
-      form_and_line: 'Vaulted nave, cog rose window, and gear chapels.',
+      aesthetic: 'Sacred clockpunk infrastructure where gears read as devotional machinery.',
+      form_and_line:
+        'Vaulted nave geometry, cog rose windows, gear chapel forms, and processional brass ribs.',
       color_palette: 'Ivory, bronze, and deep sapphire.',
       lighting_setup: 'Stained-glass sunlight and lantern pools.',
       material_texture: 'Carved stone, brass fittings, and polished wood.',
       render_quality: 'Monumental sacred-mechanical concept.',
-      spatial_distortion: 'Nave depth toward central gear altar.',
+      spatial_distortion: 'Nave-like depth toward a central gear altar axis.',
       atmosphere: 'Reverence, precision, and ceremonial awe.',
-      key_features: 'Gear altar, time reliquaries, and clock choir stalls.',
-      creative_brief: 'A clockpunk cathedral where faith and engineering are the same liturgy.',
+      key_features:
+        'Gear altar motifs, time reliquary shapes, clock choir bands, and sacred brass cog halos.',
+      creative_brief:
+        'Preserve cog cathedral-annex grammar as a reusable style system: sacred-mechanical monumentality, gear-liturgical symbolism, and ceremonial engineering reverence should remain coherent across subjects.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

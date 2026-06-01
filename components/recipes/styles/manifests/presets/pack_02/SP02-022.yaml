@@ -20,8 +20,8 @@ visualDna:
   render_quality: Low res, grainy, surveillance-grade, compressed blockiness
   spatial_distortion: Wide angle distortion, convex warp, overhead mount
   atmosphere: Creepy, voyeur, institutional coldness, anonymous watching
-  key_features: Timestamp, camera ID overlay, motion detection box
-  creative_brief: A fixed gaze watches without blinking, reducing the world to a grainy theater of light and shadow where every figure is a suspect. The timestamp ticks forward without mercy, recording hours no one was meant to see. Truth, in these frames, is neither kind nor curated.
+  key_features: Timestamp-like overlay, camera ID marks, motion-box geometry
+  creative_brief: 'CCTV media style fixes any subject under anonymous surveillance: black-and-white compression, convex wide-angle warp, scanlines, pixel smear, hot whites, and timestamp-like UI marks. Keep security-cam coldness without forcing people, suspects, crime, or literal readable overlays.'
 avoidRules:
   - color
   - hd

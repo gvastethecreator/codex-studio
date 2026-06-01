@@ -61,18 +61,26 @@ categories:
     name: 4. Corepunk — Steampunk
     presetRefs:
       - pack_15/SP15-014.yaml
+      - pack_15/SP15-128.yaml
+      - pack_15/SP15-129.yaml
   - id: corepunk-vaporpunk
     name: 5. Corepunk — Vaporpunk
     presetRefs:
       - pack_15/SP15-015.yaml
+      - pack_15/SP15-130.yaml
+      - pack_15/SP15-131.yaml
   - id: corepunk-cyberpunk
     name: 6. Corepunk — Cyberpunk
     presetRefs:
       - pack_15/SP15-016.yaml
+      - pack_15/SP15-132.yaml
+      - pack_15/SP15-133.yaml
   - id: corepunk-dieselpunk
     name: 7. Corepunk — Dieselpunk
     presetRefs:
       - pack_15/SP15-017.yaml
+      - pack_15/SP15-134.yaml
+      - pack_15/SP15-135.yaml
   - id: corepunk-atompunk
     name: 8. Corepunk — Atompunk
     presetRefs:
@@ -151,6 +159,8 @@ categories:
       - pack_15/SP15-031.yaml
       - pack_15/SP15-032.yaml
       - pack_15/SP15-033.yaml
+      - pack_15/SP15-136.yaml
+      - pack_15/SP15-137.yaml
   - id: corepunk-seapunk
     name: 13. Corepunk — Seapunk
     presetRefs:
@@ -297,3 +307,13 @@ presetRefs:
   - pack_15/SP15-125.yaml
   - pack_15/SP15-126.yaml
   - pack_15/SP15-127.yaml
+  - pack_15/SP15-128.yaml
+  - pack_15/SP15-129.yaml
+  - pack_15/SP15-130.yaml
+  - pack_15/SP15-131.yaml
+  - pack_15/SP15-132.yaml
+  - pack_15/SP15-133.yaml
+  - pack_15/SP15-134.yaml
+  - pack_15/SP15-135.yaml
+  - pack_15/SP15-136.yaml
+  - pack_15/SP15-137.yaml

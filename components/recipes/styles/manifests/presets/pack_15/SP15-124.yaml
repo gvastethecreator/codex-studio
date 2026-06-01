@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Relay station floating in a calm lagoon with signal rings and buoy antennas.
-  form_and_line: Circular relay disks, buoy stacks, and floating dock spokes.
+  aesthetic: Lagoon relay seapunk with calm mirror water, signal rings, and buoy antenna logic.
+  form_and_line: Circular relay disks, buoy stacks, floating spoke bands, and mirror-water channels.
   color_palette: Lagoon blue, neon mint, and pearl.
   lighting_setup: Twilight glow with mirrored lagoon reflections.
   material_texture: Floating polymers, water glass, and brushed aluminum.
   render_quality: Sleek coastal infrastructure with readable signal logic.
-  spatial_distortion: Centered relay hub with radiating lagoon spokes.
+  spatial_distortion: Centered relay hub with radiating lagoon-like spokes.
   atmosphere: Connection, distance translation, and quiet power.
-  key_features: Relay disks, buoy antennas, and mirror-water channels.
+  key_features: Relay disks, buoy antennas, mirror-water channels, and calm signal rings.
   creative_brief: >-
     Preserve lagoon relay-station grammar as a reusable style system:
     circular waterborne signal infrastructure, buoy-antenna relay choreography,
@@ -24,4 +24,13 @@ avoidRules: [photoreal, stormy, industrial-rust, watermark, text, logo, murky]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-124.webp }
 attributes:
   negativePrompt: photoreal, stormy, industrial-rust, watermark, text, logo, murky
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

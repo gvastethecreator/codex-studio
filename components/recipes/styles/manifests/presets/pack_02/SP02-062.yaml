@@ -17,11 +17,11 @@ visualDna:
   color_palette: Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber
   lighting_setup: Soft ambient, skydome fill, no shadows, twilight wrap
   material_texture: Smooth, noise-free, silky gradient
-  render_quality: Calm, city lights, transition-moment stillness
+  render_quality: Calm, transition-moment stillness, smooth twilight tonality
   spatial_distortion: None
   atmosphere: Quiet, cool, liminal pause, between-day-and-night
-  key_features: Streetlights on, lit windows, fading sky gradient
-  creative_brief: The sky holds its breath in the narrow seam between day and night, a deep ultramarine veil punctured by the first amber pinpricks of waking streetlamps. Everything exists in soft-focus suspension—a city not yet asleep and not yet awake, caught in the gentle gravity of transition.
+  key_features: Blue ambient wrap, violet gradient, low contrast, warm practical accents
+  creative_brief: 'Treat blue hour as cool ambient cinema language: ultramarine wrap, violet gradients, low shadow contrast, and small warm practical accents where useful. Avoid forcing cities, windows, streets, or sky-dominant scenes. The style should create liminal twilight calm around any input.'
 avoidRules:
   - orange
   - sun

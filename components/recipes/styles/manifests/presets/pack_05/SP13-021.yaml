@@ -13,16 +13,19 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: Urban anime action with high-impact chase.
-  form_and_line: "Kinetic lines, aggressive silhouettes and flexible anatomy."
-  color_palette: "Dark blue, energy red and contrast white."
-  lighting_setup: Explosion flash with dynamic rim.
-  material_texture: Asphalt grit, dust plumes, and stylized sparks.
+  aesthetic: High-impact anime action with compressed urgency and forward-rush pressure.
+  form_and_line: 'Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.'
+  color_palette: 'Dark blue, energy red and contrast white.'
+  lighting_setup: Flash-burst lighting with dynamic rim and hard motion accents.
+  material_texture: Grit overlays, dust plumes, and stylized sparks without fixed urban surface.
   render_quality: Sharp combat keyframe with instant readability.
   spatial_distortion: Forced perspective that amplifies speed.
   atmosphere: Urgency, adrenaline, and imminent danger.
-  key_features: Motion lines, extreme leap, compressed background.
-  creative_brief: Hero in acrobatic sprint between alleys with maximum visual energy.
+  key_features: Motion lines, extreme rush angle, compressed background, impact flash.
+  creative_brief: >-
+    Apply alley-rush energy as a transferable action treatment: any subject
+    should feel accelerated, compressed, and impact-ready without requiring a
+    fixed hero, location, chase, or acrobatic sprint.
 avoidRules:
   - photoreal
   - static-pose

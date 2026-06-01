@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-356
 packId: pack_16
-name: Prince of Tennis - Baseline Special-Move Showdown
+name: Graphic Impact Duel Style
 category: 6. Sports, Competition & Performance
 version: 1
 supportedTasks:
@@ -12,19 +12,18 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Tennis de duelo estilizado orientado a baseline control, saque de efecto y presión de torneo.
-  form_and_line: Arcos de swing marcados, postura de split-step precisa y acting de rivalidad frontal.
-  color_palette: Azules de indoor-court, blancos técnicos y acentos cromáticos por jugador para lectura de matchup.
-  lighting_setup: Iluminación indoor contrastada con focos en impacto de raqueta y zona de bote.
-  material_texture: Superficie acrílica de cancha, cuerda de raqueta tensa, pelota con fuzz visible y textil de alto rendimiento.
-  render_quality: Frame deportivo de alta teatralidad con claridad de punto, ventaja y respuesta.
-  spatial_distortion: Foreshortening en servicio y compresión de fondo de pista para enfatizar timing de devolución.
+  aesthetic: Duelo deportivo estilizado, con control de línea, efecto especial abstracto y presión de torneo.
+  form_and_line: Arcos de impacto marcados, postura de reacción precisa y acting de rivalidad frontal.
+  color_palette: Azules interiores, blancos técnicos y acentos cromáticos por fuerza opuesta.
+  lighting_setup: Iluminación indoor contrastada con focos en impacto gráfico y zona de respuesta.
+  material_texture: Superficie sintética, tensión lineal sugerida, ruido de impacto y textil de alto rendimiento.
+  render_quality: Frame deportivo de alta teatralidad con claridad de punto emocional, ventaja y respuesta.
+  spatial_distortion: Foreshortening de impacto y compresión de fondo para enfatizar timing de devolución.
   atmosphere: Estilizada, intensa, juvenil y dramática.
-  key_features: Arco de saque, geometría de baseline, estela de golpe y framing de enfrentamiento frontal.
+  key_features: Arco de impacto, geometría de línea, estela de golpe y framing de enfrentamiento frontal.
   creative_brief: >-
-    Define una gramática reusable de baseline-showdown donde duelismo,
-    trayectoria de bola y teatralidad de torneo sostengan una identidad
-    transferible.
+    Define una gramática reusable de duelo deportivo teatral para cualquier prompt o imagen de entrada:
+    trayectoria, efecto y rivalidad frontal sin imponer tennis, baseline, raquetas, pelota ni cancha.
 avoidRules:
   - realistic
   - 3d render

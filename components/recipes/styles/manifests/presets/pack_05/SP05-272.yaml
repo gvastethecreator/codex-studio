@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-272
 packId: pack_05
-name: Pluto - Robot Mourning Detective Noir
+name: Machine Mourning Noir Style
 category: 9. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
@@ -12,16 +12,20 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Robot rights and murder investigation rendered with mature gravity, rain-dark cities, grieving machines, quiet luxury interiors and forensic dread
+  aesthetic: Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through polished restraint and ethical weight
   form_and_line: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
   color_palette: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting
-  material_texture: Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen
+  lighting_setup: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+  material_texture: Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric shadow
   render_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  spatial_distortion: Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast
+  spatial_distortion: Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained investigative pacing
   atmosphere: Somber, investigative, humane, futuristic
-  key_features: Detective framing, rainlit urban luxury, adult-robot expressions, mourning atmosphere, forensic scene composition
-  creative_brief: A machine capable of grief investigates the death of machines in rain-dark cities where the question of a soul is answered not in courts but in tears, noir shadows falling equally on metal and flesh. Quiet luxury interiors frame forensic dread, grieving robots mourning their own with a humanity that outpaces the humans who built them.
+  key_features: Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure
+  creative_brief: >
+    Apply machine mourning noir to any subject: polished rain reflections,
+    forensic stillness, soft metal, and humane restraint should create grief
+    without fixed roles, synthetic beings, urban locations, interiors, or case
+    scenes.
 avoidRules:
   - realistic
   - 3d render

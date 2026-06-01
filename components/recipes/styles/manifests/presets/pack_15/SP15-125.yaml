@@ -7,15 +7,15 @@ version: 1
 supportedTasks: [image_generate, image_edit, style_preset_card]
 tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
 visualDna:
-  aesthetic: Metro pier where shell forms act as transit kiosks and weather shells.
-  form_and_line: Pier spine, shell kiosks, and modular transit bays.
+  aesthetic: Shell-metro seapunk where protective shell forms act as transit and weather language.
+  form_and_line: Pier-spine geometry, shell kiosk shapes, modular transit bays, and wave shelter arcs.
   color_palette: Opal, aquamarine, and violet.
   lighting_setup: Sunset reflections and interior shell glow.
   material_texture: Shell laminate, wet decking, and soft polymer.
   render_quality: Playful urban seascape with transit legibility.
-  spatial_distortion: Long pier perspective with repeating shell stations.
+  spatial_distortion: Long waterline perspective with repeating shell modules.
   atmosphere: Travel, lightness, and seaside civic life.
-  key_features: Shell metro stalls, pier rails, and wave shelters.
+  key_features: Shell metro forms, waterline rail marks, wave shelters, and repeating modular bay rhythm.
   creative_brief: >-
     Preserve shell metro-pier grammar as a reusable style system:
     tide-line shell transit modules, repeating pierline station rhythm, and
@@ -24,4 +24,13 @@ avoidRules: [photoreal, dingy, industrial, watermark, text, logo, clutter]
 assets: { defaultImage: /assets/recipes/styles/defaults/SP15-125.webp }
 attributes:
   negativePrompt: photoreal, dingy, industrial, watermark, text, logo, clutter
-taxonomy: { packId: pack_15, packName: Solarpunk Dreamscapes Vault, categoryId: corepunk-seapunk, categoryName: 13. Corepunk — Seapunk, tags: [solarpunk-dreamscapes-vault, corepunk, seapunk], supportedTasks: [image_generate, image_edit, style_preset_card], hasDefaultImage: false }
+taxonomy:
+  {
+    packId: pack_15,
+    packName: Solarpunk Dreamscapes Vault,
+    categoryId: corepunk-seapunk,
+    categoryName: 13. Corepunk — Seapunk,
+    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
+    supportedTasks: [image_generate, image_edit, style_preset_card],
+    hasDefaultImage: false,
+  }

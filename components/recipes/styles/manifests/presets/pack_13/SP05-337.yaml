@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Fantasía tecnomágica festiva donde maquinaria arcana y hechicería explosiva celebran el virtuosismo del dibujo.
-  form_and_line: Contorno seguro y enérgico, detalle mecánico abundante y arcos de movimiento con timing jubiloso.
+  aesthetic: Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del dibujo celebran movimiento.
+  form_and_line: Contorno seguro y enérgico, detalle técnico abundante y arcos de movimiento con timing jubiloso.
   color_palette: Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple
-  lighting_setup: Burst lumínico de noche festival, lluvia de chispas mágicas y rim de celebración con acentos direccionales.
+  lighting_setup: Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos direccionales.
   material_texture: Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado pulcro.
   render_quality: Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso controlado.
   spatial_distortion: Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition
   atmosphere: Lúdica, compleja y expansiva, con energía de celebración artesanal.
-  key_features: Maquinaria fantástica compleja, magia tipo fuegos artificiales, arcos de acción festivos y draftsmanship protagonista.
+  key_features: Hardware fantástico complejo, magia tipo fuegos artificiales, arcos de acción festivos y draftsmanship protagonista.
   creative_brief: >-
     Construye una gramática reusable de firework-fantasy donde precisión técnica,
-    hardware mágico y dinamismo celebratorio se integren sin perder claridad
-    compositiva ni identidad de aventura luminosa.
+    hardware mágico y dinamismo celebratorio se integren sin exigir maquinaria,
+    festival nocturno, fuegos artificiales, mago o aventura concreta.
 avoidRules:
   - still
   - calm

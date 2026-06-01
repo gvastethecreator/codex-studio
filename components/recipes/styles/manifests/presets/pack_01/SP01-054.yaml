@@ -12,7 +12,7 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Milky Way landscape
+  aesthetic: Long-exposure night-sky imaging
   form_and_line: Star trails (optional)
   color_palette: Deep Blue, Purple, White stars
   lighting_setup: Starlight
@@ -20,8 +20,8 @@ visualDna:
   render_quality: Long exposure, epic
   spatial_distortion: None
   atmosphere: Cosmic, silent
-  key_features: Night sky
-  creative_brief: The galaxy tilts itself into view across a terrestrial horizon, dust lanes painted in indigo and violet by the accumulated light of a billion burning suns. A lone silhouette anchors the foreground so the eye understands it is both standing on earth and staring into eternity simultaneously. Time stretches into trails that map the architecture of our slow celestial spin.
+  key_features: Cosmic exposure texture
+  creative_brief: Long-exposure astrophotography maps faint light into deep blue, violet, and white speckle, with optional star-trail motion and sensor noise treated as cosmic texture. Let any subject inherit night-sky scale and slow exposure without requiring Milky Way, horizon, silhouette, or landscape.
 avoidRules:
   - day
   - clouds

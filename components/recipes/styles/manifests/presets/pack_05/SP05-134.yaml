@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Everyday storefront life colliding with impossibly clean assassin choreography, suburban product aisles turned combat lanes, calm professionalism amid absurd action
-  form_and_line: Modern action anime linework, razor-sharp contours, high-speed action strokes, digital precision inking
-  color_palette: Bold contrast, vivid energy accents, neon-infused hues, saturated spectrum pops
-  lighting_setup: High-impact cinematic lighting, volumetric god rays, explosive backlighting, dramatic rim illumination
-  material_texture: Detailed effects, crisp modern backgrounds, particle-rich surfaces, polished digital finish
-  render_quality: Premium modern anime frame, HDR-grade rendering, post-processing bloom, razor-sharp definition
-  spatial_distortion: Extreme motion-ready proportions, deep vanishing-point perspective, wide-angle lens feel, accelerated foreshortening
+  aesthetic: Convenience-store assassin sprint style, with everyday calm, immaculate choreography, and absurd professional velocity.
+  form_and_line: Clean stunt vectors, mundane-grid composition, economical pose language, productlike pattern rhythm, and dead-calm cuts.
+  color_palette: Fluorescent white, snack-package red, mint green, muted tan, steel gray, and sudden action yellow.
+  lighting_setup: Flat retail brightness pierced by kinetic rim streaks, hard practical glow, and clean comedy-action highlights.
+  material_texture: Glossy packaging color, tile shine, polished metal glints, soft cloth flats, and crisp motion overlays.
+  render_quality: Premium modern anime finish with immaculate stunt clarity, mundane detail, and surprise velocity.
+  spatial_distortion: Everyday grids become action lanes, with precise perspective snaps and calm negative space.
   atmosphere: Cool, funny, efficient, surprising
-  key_features: Retail-space combat staging, impossible stunt clarity, dead-calm expressions, product-clutter motion lines, hitman pose economy
-  creative_brief: Calm hands arrange instant noodles on a shelf while a silenced pistol rests beside the register, retired violence humming beneath suburbia. The convenience store is a stage and reformed assassins are the most dangerous actors, finding rhythm in the mundane. Peace tastes like discount snacks and barely contained velocity.
+  key_features: Mundane-action contrast, clean stunt lanes, dead-calm efficiency, retail-bright palette, hidden velocity.
+  creative_brief: >-
+    Turn any prompt into mundane precision action: keep surfaces ordinary,
+    lighting flat, and motion impossibly clean, without requiring a store,
+    product display, weapon, profession, or suburban scene.
 avoidRules:
   - realistic
   - 3d render

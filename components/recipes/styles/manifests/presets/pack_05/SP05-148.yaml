@@ -12,16 +12,19 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Prohibition-era train violence, immortal gangsters, jazz-age ensemble chaos, amber barrooms, nonlinear pulp cool, smiling criminals and bloody miracles
-  form_and_line: Clean early-digital anime linework, smooth vector-like strokes, digital ink precision, crisp contour clarity
-  color_palette: Saturated digital-cel colors, vibrant screen tones, punchy primaries, early HD chroma range
-  lighting_setup: Polished anime highlights, soft gradient shading, balanced key/fill, subtle rim glow
-  material_texture: Clean backgrounds, early-digital polish, smooth matte surfaces, subtle noise grain
-  render_quality: Early-2000s anime production frame, digital cel composite, clean rendering, smooth color blending
-  spatial_distortion: Dynamic shonen proportions, bold perspective angles, action-ready framing, stretched energy poses
+  aesthetic: Jazz railcrime ensemble, with nonlinear pulp cool, amber chaos, immortal momentum, and syncopated danger.
+  form_and_line: Clean early-digital contours, ensemble overlap rhythm, jazz-cut diagonals, pulp silhouette snaps, and syncopated framing.
+  color_palette: Amber whiskey, rail black, brass gold, blood red, sepia cream, and smoky blue.
+  lighting_setup: Warm barlike glow, sharp carriage-shadow stripes, theatrical rim highlights, and syncopated flash accents.
+  material_texture: Varnished wood warmth, brass glints, smoke grain, paper pulp texture, and smooth digital-cel polish.
+  render_quality: Early-2000s anime pulp finish with ensemble clarity, amber danger, and rhythmic nonlinear energy.
+  spatial_distortion: Compartmental depth, overlapping timelines, and jazz-timed angle changes without fixed train staging.
   atmosphere: Riotous, jazzy, dangerous, charismatic
-  key_features: Train-car action, 1930s fashion, ensemble staging, amber bar lighting, pulp-crime body language
-  creative_brief: A train car becomes a ballroom for bullets and immortals who forgot how to die, jazz keeping time while bodies hit the floor and get back up grinning. Amber light pools in whiskey glasses while nonlinear chaos writes its own pulp scripture. The 1930s never ended — it just learned to smile through the blood.
+  key_features: Jazz timing, amber pulp light, ensemble chaos, brass warmth, nonlinear danger.
+  creative_brief: >-
+    Give any prompt jazz-pulp crime energy through syncopated cuts, amber glow,
+    ensemble overlap, and brass-shadow contrast without requiring trains,
+    criminal roles, barrooms, period fashion, or violence set pieces.
 avoidRules:
   - realistic
   - 3d render

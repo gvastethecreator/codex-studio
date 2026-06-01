@@ -12,16 +12,16 @@ tags:
   - cinematic-and-media
   - cinematic-lighting-and-lenses
 visualDna:
-  aesthetic: Mutant suburbia satire, malformed family silhouettes, environmental rot, class divide cartoon cruelty, trailer-park grotesquerie, deformity normalized into domestic routine, poisoned world whimsy
-  form_and_line: Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks
-  color_palette: CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe
-  lighting_setup: Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness
-  material_texture: Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness
-  render_quality: Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth
-  spatial_distortion: Panel-grid division, speech-balloon space negotiation, repeating-simplified-background, character-turnaround consistency
+  aesthetic: Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy
+  form_and_line: Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks
+  color_palette: Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink
+  lighting_setup: Flat polluted ambience, sour daylight, no glamour, environmental haze
+  material_texture: Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture
+  render_quality: Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth
+  spatial_distortion: Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity
   atmosphere: Bleak, satirical, mutated, weirdly cozy
-  key_features: Malformed suburban family, toxic backdrop details, trashy domesticity, odd body asymmetries, resigned humor
-  creative_brief: Domestic warmth curdles under smokestack shadows, where family portraits reveal the landscape's slow revenge on human form. Love persists in the half-melted smile, the lopsided embrace — tenderness surviving inside bodies the world tried to dispose of.
+  key_features: Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor
+  creative_brief: 'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy.'
 avoidRules:
   - digital
   - HD

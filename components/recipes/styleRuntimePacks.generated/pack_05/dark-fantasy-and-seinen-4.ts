@@ -5,814 +5,814 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-278',
-    name: 'Land of the Lustrous - Mineral-Loneliness Combat',
+    name: 'Mineral Loneliness Fracture Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gem-bodied fragility, open coasts, moonlit attackers, philosophical isolation, sharp beauty and bodily fracture in a stripped-down otherworldly ecosystem',
+        'Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture, stripped-down luminous ecosystem abstraction',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte voids',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void spacing',
       atmosphere: 'Crystalline, lonely, austere, luminous',
       key_features:
-        'Gem-body refractions, coastal emptiness, moonlit threat silhouettes, clean open compositions, fracture motifs',
+        'Mineral refraction, clean emptiness, fracture motifs, luminous isolation, philosophical fragility',
       creative_brief:
-        'Crystal bodies shatter into questions neither gem nor flesh can answer, scattered across an open coast that holds no comfort. Moonlight does not illuminate but exposes, revealing every fracture line as a philosophical wound. Loneliness takes material form in a world too beautiful to survive intact.',
+        'Render any subject as beautiful material loneliness: crystalline refraction, clean emptiness, fracture lines, and pale light should communicate fragility without fixed anatomy, shores, aggressors, taxonomy, or action scenes.\n',
     },
   },
   {
     id: 'SP05-261',
-    name: 'Berserk - Black Swordsman Eclipse Scar',
+    name: 'Eclipse Scar Weight Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Trauma-forged wanderer, sacrificial horror memories, black plate and colossal steel, bleak medieval landscapes, violence as burden and destiny under eclipse-dark skies',
+        'Eclipse-black burden, scar-mapped tragedy, sacrificial memory pressure, colossal emotional weight, doomed silhouette mass, fate rendered as ink density',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Scarred ink grain, blackened patina, abraded hide texture, cracked mineral matte, dried crimson staining, gritty midtone dust',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Severe silhouette compression, oppressive scale contrast, low-gravity emotional mass, eclipse-like void framing, slow diagonal drag',
       atmosphere: 'Savage, doomed, furious, haunted',
       key_features:
-        'Massive sword scale, eclipse imagery, scar-heavy faces, black armor silhouette, medieval ruin backdrops',
+        'Eclipse void fields, scar-density hatching, black mass silhouettes, sacrificial symbol pressure, grief-heavy negative space',
       creative_brief:
-        'A slab of iron too large to be called a sword drags behind a man whose rage is the only monument to those he could not save, eclipse-dark skies pressing down on black plate like a memory made weather. Every scar maps a sacrifice, every step forward is a funeral procession the wanderer conducts alone.',
+        'Render any subject as a monument to endured weight: dense hatching, black voids, bruised reds, scar-like texture, and slow compositional drag should communicate doomed persistence without relying on fixed figures, props, places, or narrative set pieces.\n',
     },
   },
   {
     id: 'SP05-262',
-    name: 'Monster - Hospital Corridor Suspicion',
+    name: 'Moral Suspicion Realism Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'European hospital realism, moral dread, quiet pursuit of a smiling void, small details loaded with danger, adult faces and sterile rooms carrying unbearable tension',
+        'Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion carried by ordinary surfaces',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained skin-tone warmth, cold wall texture',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle moral compression',
       atmosphere: 'Paranoid, humane, cold, intelligent',
       key_features:
-        'Hospital corridors, realistic adult expressions, quiet pursuit framing, European interiors, suspicion in stillness',
+        'Suspicion in stillness, sterile quiet, adult-anime restraint, small-detail menace, cold humane realism',
       creative_brief:
-        'A hospital corridor stretches into moral abyss, the monster wearing a human smile and leaving no fingerprints on the sterile walls he passes. Small details carry unbearable weight in this European quiet, where the greatest horror is not a creature hiding under the bed but a man standing in plain daylight, empty-eyed and unknowable.',
+        'Give any prompt a quiet moral-thriller treatment where ordinary details feel dangerous. Use sterile matte light, restrained expressions, weighted negative space, and realistic tension while avoiding fixed institutions, locations, named roles, or pursuit-story structure.\n',
     },
   },
   {
     id: 'SP05-263',
-    name: 'Gantz - Black-Sphere Execution Room',
+    name: 'Black Signal Nihilism Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Late-night urban death game, latex-black suits, green target lasers, nihilistic violence, apartment grit and afterlife machinery rendered with cynical precision',
+        'Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy void objects, survival logic as graphic design',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass, synthetic dust',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy black focal gravity',
       atmosphere: 'Cruel, flashy, nihilistic, electric',
       key_features:
-        'Black-suit silhouettes, target-laser accents, death-room geometry, urban-night grime, ruthless body-language',
+        'Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless body-language abstraction',
       creative_brief:
-        'A black sphere hums in an anonymous Tokyo apartment and suddenly death is a game with green laser rules and latex-black uniforms, resurrection just another menu option. Nihilism glows fluorescent in the urban night, where survival costs more than dying and the scoreboard tracks souls, not points.',
+        'Treat any subject as if it is being processed by a cruel fluorescent system: glossy black anchors, green signal marks, synthetic grit, and rule-like overlays create nihilistic pressure without fixed settings, attire systems, play structures, locations, or scorekeeping props.\n',
     },
   },
   {
     id: 'SP05-264',
-    name: 'Elfen Lied - Pink-Haired Laboratory Rupture',
+    name: 'Clinical Innocence Rupture Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Laboratory escape horror, innocence colliding with telekinetic dismemberment, rain-slick trauma, songlike sadness under clinical violence and broken memory',
+        'Clinical innocence rupture, soft color against sterile brutality, invisible-force trauma, broken memory, songlike sadness under sharp white space',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Clinical white matte, rain-slick sheen, soft pastel wash, sharp red staining, fractured glass texture, sterile tile grain',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Invisible-force displacement, fragile center framing, white-space rupture, close emotional compression, sharp offscreen threat vectors',
       atmosphere: 'Sad, violent, clinical, exposed',
       key_features:
-        'Laboratory corridors, blood-on-white contrast, horned profile silhouette, rain-sad close-ups, invisible-attack framing',
+        'Blood-on-white contrast, pastel fragility, clinical emptiness, invisible-force framing, memory-fracture sadness',
       creative_brief:
-        'Pink hair washes over clinical white like the gentlest color dreaming of violence, a laboratory escape painting corridors in the red of everything the scientists should have left alone. The horned girl walks through rain-slick ruin carrying a sadness too vast for her small body, dangerous beyond measure and lonelier still.',
+        'Render any subject through soft innocence breaking against sterile violence: pale negative space, pastel warmth, sharp crimson interruption, and invisible pressure should carry the style without fixed facilities, escape scenes, character traits, or scientific backstory.\n',
     },
   },
   {
     id: 'SP05-265',
-    name: 'Vampire Hunter D: Bloodlust - Baroque Wasteland Chase',
+    name: 'Rose-Black Baroque Decadence Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Baroque vampire castles, post-apocalyptic moonlight, impossibly elegant hunter silhouette, gothic machinery, rose-black romance and predatory splendor in motion',
+        'Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant ruin pressure, ornamental darkness in motion',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty metallic trim',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal drift, decayed grandeur scale',
       atmosphere: 'Elegant, predatory, moonlit, decadent',
       key_features:
-        'Hunter silhouette, gothic carriage and castle props, moonlit wasteland, aristocratic monster design, baroque frame detail',
+        'Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent gothic machinery',
       creative_brief:
-        'Gothic spires pierce post-apocalyptic skies where the hunter rides, half-creature himself, impossibly elegant in silhouette against baroque ruin and vampire moonlight. Bloodlust rendered beautiful by aristocratic stillness, the chase a rose-black romance between predator and predator, each recognizing the monster in the other.',
+        'Give any prompt a decadent rose-black baroque treatment: ornamental frames, moonlit lacquer, predatory elegance, and ruined luxury should define the image without fixed architecture, roles, transport forms, lore taxonomy, or pursuit structure.\n',
     },
   },
   {
     id: 'SP05-266',
-    name: 'Ajin - Black-Particle Pursuit',
+    name: 'Black Particle Fugitive Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Modern fugitive thriller with immortal black entities, clinical modern spaces, matte-black supernatural forms, tactical government chase and identity terror',
+        'Black-particle fugitive tension, matte spectral forms, clinical modern pressure, identity terror, institutional pursuit rendered as abstract system stress',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Matte black particulate haze, clinical glass, smooth concrete-gray grain, cold polymer, smoke-dust edges, dry spectral residue',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Particle-coalesced silhouettes, pursuit-vector compression, clinical open space, identity-split doubling, black form echo trails',
       atmosphere: 'Hunted, modern, sharp, remorseless',
       key_features:
-        'Black-particle beings, fugitive staging, modern architecture, tactical pursuit framing, clinical dread',
+        'Matte particle echoes, clinical dread, fugitive-vector compression, black spectral pressure, identity-fracture tension',
       creative_brief:
-        'Black particles coalesce into faceless hunters across antiseptic government corridors, immortality reduced to a tactical asset in a world that dissects what it cannot understand. The fugitive runs through modern glass and steel, pursued by the thing he cannot die from and the institutions that will never stop studying why.',
+        'Apply a black-particle thriller treatment to any subject: matte spectral residue, clinical surfaces, pursuit-vector pressure, and fractured identity should drive the image without fixed agencies, passageways, abilities, beings, or pursuit scenarios.\n',
     },
   },
   {
     id: 'SP05-267',
-    name: 'Blade of the Immortal - Ink-Slashed Revenge',
+    name: 'Blood-Ink Severance Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Wounded immortal samurai, blood-ink brush ferocity, revenge road under harsh weather, period grime and severe blade choreography rendered with punishing detail',
+        'Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing brush detail, endurance as visual abrasion',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks, weather-scoured grit',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather compression',
       atmosphere: 'Vengeful, weathered, severe, bloody',
       key_features:
-        'Ink-heavy slash marks, period grime, scarred body detail, sword-road compositions, revenge-focused stares',
+        'Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure stillness',
       creative_brief:
-        'Ink cuts like steel across the page, each slash a step on the revenge road where a body that will not die drags a soul that already has. Period grime and punishing detail render every wound sacred, the brushwork itself bleeding into the story of a samurai whose immortality is the cruelest curse of all.',
+        'Render any subject with blood-ink severity: brush cuts, weathered grime, scarred texture, and punishing detail should make the composition feel irreversible without fixed period roles, travel narratives, props, or revenge plot beats.\n',
     },
   },
   {
     id: 'SP05-268',
-    name: 'Kaiji - Neon Despair Gambling Pit',
+    name: 'Neon Despair Pressure Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Underground gambling hell, fluorescent sweat, jagged noses, impossible tension over money and survival, adult ruin made graphic and ugly',
+        'Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension, ruin made graphic and unflattering',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain, stale air haze',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk geometry, collapse-edge framing',
       atmosphere: 'Desperate, electric, ugly, suspenseful',
       key_features:
-        'Gambling props, sweat-heavy close-ups, underground fluorescent rooms, sharp anxious silhouettes, brink-of-collapse facial acting',
+        'Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion, brink-of-collapse acting',
       creative_brief:
-        'Fluorescent light interrogates men reduced to gambling chips in an underground hell where every bead of sweat is a mortgage on a life already forfeit to the table. Jagged features contort under impossible tension, ugliness made luminous by the cruel honesty of desperation and the electric hum of ruin.',
+        'Treat any prompt as a pressure chamber of debt, shame, and impossible stakes: fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty should define the look without fixed surfaces, play structures, settings, currency props, or named competition.\n',
     },
   },
   {
     id: 'SP05-269',
-    name: 'Akagi - Smoke-Filled Mahjong Predator',
+    name: 'Smoke-Filled Calculation Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Night-long mahjong duels as psychological warfare, cigarette smoke, heavy shadows, old men unraveling around a supernatural prodigy, menace in still hands and eyes',
+        'Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction, heavy-lidded shadow tension, ritualized risk',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow, stale enclosed atmosphere',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure compression',
       atmosphere: 'Predatory, smoky, cerebral, merciless',
       key_features:
-        'Mahjong-table compositions, smoke haze, old-man tension faces, hard shadow light, still-hand suspense',
+        'Smoke haze, stillness suspense, hard shadow light, calculation pressure, predatory close framing',
       creative_brief:
-        "Cigarette smoke curls around mahjong tiles like a promise of ruin as a boy born at the table reads old men's souls through the language of discarded hands. Stillness itself becomes a weapon in this smoke-filled theater, where the predator waits behind heavy-lidded eyes and every tile laid down is a confession.",
+        'Render any subject as a cerebral duel of patience and risk: smoke layers, hard shadows, still gestures, and ritual spacing should create predatory calculation without fixed play structures, surfaces, props, ages, or competition scenes.\n',
     },
   },
   {
     id: 'SP05-270',
-    name: 'Dororo - Demon Road Severance',
+    name: 'Cursed Severance Compassion Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Body-part quest under cursed skies, muddy villages, war-torn feudal roads, child thief companionship, brutal folk-horror with emotional tenderness at its center',
+        'Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal loss rendered with humane warmth',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson staining',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag, compassionate close compression',
       atmosphere: 'Bleak, raw, compassionate, cursed',
       key_features:
-        'Prosthetic-limb motifs, demon silhouettes, war-torn village backdrops, child-and-warrior contrast, cursed-road framing',
+        'Severance motifs, cursed sky pressure, mud-worn tenderness, folk-horror grit, compassion against brutality',
       creative_brief:
-        'A body reassembled one demon at a time, prosthetic limbs carving through cursed skies toward a wholeness that may never come, the child thief at his side the only mirror in which humanity reflects. War-torn villages and folk-horror landscapes soften at the edges where compassion refuses to surrender to the darkness.',
+        'Render any subject as damaged wholeness struggling toward tenderness: muddy texture, cursed negative space, folk-horror silhouettes, and warm humane accents should carry the look without fixed anatomy, companions, travel spaces, settlements, adversaries, or quest structure.\n',
     },
   },
   {
     id: 'SP05-271',
-    name: 'Heavenly Delusion - Concrete Wilderness Mystery',
+    name: 'Sun-Reclaimed Concrete Mystery Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Abandoned institutions reclaimed by light and weeds, youth crossing a broken modern world, strange creatures, low-key banter hiding existential dislocation',
+        'Sun-reclaimed concrete mystery, institutional remnants softened by growth, existential dislocation, low-key unease beneath bright quiet',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Sun-bleached concrete, weed-soft edge texture, flaked paint, warm dust, cracked institutional surfaces, dry moss grain',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Open-horizon uncertainty, institutional grid decay, sunlit emptiness, broken-modern scale contrast, quiet pathlike depth',
       atmosphere: 'Mysterious, sun-bleached, uneasy, searching',
       key_features:
-        'Ruined modern campuses, weed-overgrown concrete, youth duo framing, creature-threat hints, road-mystery compositions',
+        'Sun-bleached concrete, growth-over-grid texture, existential quiet, mystery through absence, broken-modern softness',
       creative_brief:
-        'Sunlight reclaims concrete cathedrals where a dead civilization once promised tomorrow, weeds cracking through institutional floors as two youths walk toward a horizon that offers only questions. The quiet terror lives in not knowing whether paradise was prison or protection, low-key banter hiding an existential dislocation as vast as the ruins themselves.',
+        'Give any prompt a bright post-institutional mystery treatment: sunlight, concrete, plant-softened decay, and unresolved emptiness should imply lost systems without fixed institutions, roles, threats, travel paths, or world lore.\n',
     },
   },
   {
     id: 'SP05-272',
-    name: 'Pluto - Robot Mourning Detective Noir',
+    name: 'Machine Mourning Noir Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Robot rights and murder investigation rendered with mature gravity, rain-dark cities, grieving machines, quiet luxury interiors and forensic dread',
+        'Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through polished restraint and ethical weight',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric shadow',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained investigative pacing',
       atmosphere: 'Somber, investigative, humane, futuristic',
       key_features:
-        'Detective framing, rainlit urban luxury, adult-robot expressions, mourning atmosphere, forensic scene composition',
+        'Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure',
       creative_brief:
-        'A machine capable of grief investigates the death of machines in rain-dark cities where the question of a soul is answered not in courts but in tears, noir shadows falling equally on metal and flesh. Quiet luxury interiors frame forensic dread, grieving robots mourning their own with a humanity that outpaces the humans who built them.',
+        'Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or case scenes.\n',
     },
   },
   {
     id: 'SP05-273',
-    name: 'Mushishi - Night Mushi Burial Calm',
+    name: 'Luminous Natural Cycle Calm Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ethereal countryside folklore for adults, pale glowing lifeforms, grief softened by natural cycles, dark forest quiet and contemplative medicine under moon haze',
+        'Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze, contemplative moonlit medicine',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural paper fibers',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow composition',
       atmosphere: 'Quiet, eerie, compassionate, nocturnal',
       key_features:
-        'Pale mushi traces, forest night atmosphere, healer-traveler pose language, natural-cycle motifs, moon-haze calm',
+        'Pale living haze, ecological stillness, moonlit calm, grief-softened texture, natural-cycle motifs',
       creative_brief:
-        'Pale mushi drift through moon-haze forests like breath made visible, older than gods and indifferent to human grief, yet softened by the healer who walks among them translating the language of river and root. Night burials conducted in the quiet between natural cycles, where death is not tragedy but a return to the vast and luminous unknown.',
+        'Render any subject as part of a quiet natural cycle: pale glow, damp organic grain, moon haze, and patient ecological rhythm should define the style without fixed natural locations, specialist roles, journeys, rites, or named folklore beings.\n',
     },
   },
   {
     id: 'SP05-274',
-    name: 'Erased - Winter Apartment Suspicion',
+    name: 'Winter Guilt Suspicion Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Snowy town melancholy, narrow apartment halls, child-endangerment dread, ordinary domestic spaces haunted by time and guilt, subdued thriller pacing',
+        'Winter guilt suspicion, domestic quiet under threat, time-haunted melancholy, protective dread, ordinary softness sharpened by memory',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Snow-muted grain, worn domestic matte, cold glass haze, soft fabric texture, pale wall scuffs, breath-fog light',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Narrow memory compression, small-scale contrast, winter hush spacing, guilt-heavy close-ups, time-echo visual rhythm',
       atmosphere: 'Wintry, tense, protective, melancholic',
       key_features:
-        'Snow-town streets, apartment corridors, child-perspective contrast, subdued body language, guilt-heavy close-ups',
+        'Winter hush, guilt-heavy close-ups, domestic threat softness, memory echo, protective melancholy',
       creative_brief:
-        "Snow buries evidence but not memory in a town where narrow apartment corridors stretch into the past itself, a man granted the impossible chance to rewrite the childhood tragedy that has haunted every winter since. Ordinary domestic spaces become crime scenes of the heart, where a child's trust is the most dangerous currency and the killer wears the face of the neighborhood.",
+        'Give any prompt a subdued winter-thriller treatment: pale cold light, domestic softness, memory echoes, and protective tension should create dread without fixed settlements, homes, age roles, culprits, evidence, or time mechanics.\n',
     },
   },
   {
     id: 'SP05-276',
-    name: 'Shigurui - Sun-Bleached Sword Cruelty',
+    name: 'Sun-Bleached Cruel Discipline Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Merciless feudal duel realism, heat and blood, rank hierarchy, mutilated bodies, severe silence before violence, beauty stripped down to cruelty and discipline',
+        'Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence before irreversible motion',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut skin shadow',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop, disciplined diagonal tension',
       atmosphere: 'Brutal, austere, scorching, merciless',
       key_features:
-        'Sun-bleached harshness, duel posture rigor, body-wound detail, class-hierarchy props, unbearable stillness',
+        'Sun-bleached harshness, pre-motion rigor, woundlike detail, hierarchy pressure, unbearable stillness',
       creative_brief:
-        'The sun does not illuminate here but interrogates every wound and silence between sword strokes. Bodies become territory and blades become law in a world where beauty is measured by how cleanly a life is severed. Each frame holds the unbearable weight of the moment just before blood becomes memory.',
+        'Render any subject under merciless heat and discipline: bleached light, dry staining, taut silence, and hierarchical spacing should make beauty feel cruel without fixed eras, duels, blades, ranks, or body-horror staging.\n',
     },
   },
   {
     id: 'SP05-277',
-    name: 'Boogiepop Phantom - Rusted Neon Adolescent Dread',
+    name: 'Rusted Neon Adolescent Dread Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban legend melancholy, industrial corridors, broken youth interiority, violet night, fractured chronology, faint supernatural presence threading through damaged city life',
+        'Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint unreality threading through ordinary damage',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn wall texture',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition, memory-broken framing',
       atmosphere: 'Melancholic, fragmented, nocturnal, ghostly',
       key_features:
-        'Industrial school-city spaces, violet night tones, urban legend hints, fragmented framing, interior dread expressions',
+        'Violet night tones, rusted neon bleed, fragmented framing, interior dread, static-haunted melancholy',
       creative_brief:
-        'Adolescence bends under violet streetlight where ghost stories are not told but transmitted through the static between human connections. Industrial corridors become the architecture of forgetting, and every hallway leads deeper into the interiority of what a city cannot remember. The supernatural does not intrude but seeps through hairline cracks in the everyday.',
+        'Give any prompt a rusted-neon psychological treatment: violet haze, analog static, fractured time, and damaged interiority should define the style without fixed institutions, passageways, myths, public spaces, urban scale, or haunting setup.\n',
     },
   },
   {
     id: 'SP05-279',
-    name: 'Jin-Roh - Red-Eyed Armor and Smoke',
+    name: 'Red-Optic Security Noir Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Alternate-history paramilitary noir, wolf-brigade armor, smoke-filled ruins, political dread and buried tenderness inside oppressive urban security machinery',
+        'Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside oppressive system machinery',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet concrete-neutral grit',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space, oppressive security geometry',
       atmosphere: 'Oppressive, political, smoky, tragic',
       key_features:
-        'Red goggle glow, armored silhouettes, riot-ruin backdrops, political-security staging, smoke-dense composition',
+        'Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness',
       creative_brief:
-        'Beneath the iron wolf mask tenderness withers inside a machine designed to erase it, red optics scanning ruins for threats that may be internal. Smoke does not obscure but reveals the architecture of a society that feeds on its own fear. Every armored silhouette carries the weight of a choice already made and a heart already broken.',
+        'Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props, factions, or security scenes.\n',
     },
   },
   {
     id: 'SP05-280',
-    name: 'Hell Girl - Lantern Ferry Retribution',
+    name: 'Lantern Retribution Ritual Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Supernatural vengeance in midnight villages and city edges, spider lilies, dark kimono serenity, hell correspondence rendered with calm cruelty and candlelight ritual',
+        'Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence rendered as quiet ceremonial pressure',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky ritual grain',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression',
       atmosphere: 'Cold, ritualistic, nocturnal, fatal',
       key_features:
-        'Lantern light, spider lily motifs, dark kimono silhouette, ritual-ferry imagery, calm retribution close-ups',
+        'Lantern glow, crimson floral omen, dark silk calm, ritual threshold, quiet fatal symmetry',
       creative_brief:
-        'A lantern sways on still water, its flame the only witness to vengeance delivered with the stillness of a tea ceremony. Spider lilies bloom where grudges cross the threshold, their red petals signing contracts no ink can revoke. The ferry carries not souls but the weight of choices made in midnight desperation.',
+        'Render any subject through quiet retribution ritual: lantern glow, crimson floral accents, dark silk, still reflections, and fatal symmetry should define the image without fixed settlements, attire, transport rituals, bargains, or vengeance scenes.\n',
     },
   },
   {
     id: 'SP05-275',
-    name: 'Paranoia Agent - Bat-Wielding Civic Breakdown',
+    name: 'Civic Rumor Breakdown Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban rumor panic, distorted ordinary citizens, media anxiety, dream-logic intrusion into modern neighborhoods, social collapse rendered through expression and pressure',
+        'Civic rumor panic, media anxiety, dream-logic intrusion, expression-driven social collapse, ordinary surfaces warped by collective pressure',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Broadcast static grain, printed-paper clutter, cheap plastic sheen, urban-neutral scuffing, distorted skin tones, fluorescent haze',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Dream-crack perspective, rumor-wave repetition, civic pressure compression, warped familiar proportions, media-noise layering',
       atmosphere: 'Claustrophobic, surreal, civic, unstable',
       key_features:
-        'Urban-anxiety iconography, distorted civilians, media clutter, rumor-driven framing, dream-crack visual cues',
+        'Rumor-driven framing, media clutter, dream-crack cues, distorted ordinary expression, civic pressure waves',
       creative_brief:
-        'A city dreams its own attacker into existence, the baseball bat swinging through collective wish fulfillment as everyday citizens crack open to reveal the monsters they have been feeding with whispers. Dream-logic seeps through modern neighborhoods like a gas leak, media anxiety distorting familiar faces until the neighbor next door becomes the horror everyone secretly wanted.',
+        'Treat any subject as a civic rumor becoming visual pressure: broadcast static, warped expressions, repeated motifs, and dream cracks should create breakdown without fixed aggressors, props, districts, civic roles, or literal media scenes.\n',
     },
   },
   {
     id: 'SP05-066',
-    name: 'Parasyte – Body-Horror Parasite Thriller',
+    name: 'Invasive Anatomy Thriller Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Urban body-horror mutations, clean modern settings, flesh-meets-strategy dread, migi hand-fighter, high-school host body, flesh-blade combat, societal paranoia',
+        'Invasive anatomy logic, clean surfaces corrupted by organic strategy, selfhood fracture, clinical paranoia, flesh geometry as intelligent design',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Clean matte planes, wet organic seams, sliced membrane gloss, tense skinlike translucency, surgical shadow grain, cool neutral surfaces',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Asymmetric anatomy echoes, splitting contours, invasive edge growth, clinical open space, threat emerging from familiar proportions',
       atmosphere: 'Tense, invasive, paranoid, horrifying',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'A hand becomes a thinking creature and the boundary between self and invader dissolves like sugar in hot tea. High school hallways host philosophical debates fought with flesh-blades and existential terror. Humanity is not a birthright but a negotiation between the thing you were and the thing sharing your body.',
+        'Apply a clean-but-invasive thriller treatment to any subject: familiar forms split into intelligent organic geometry, cool neutrals buckle under crimson stress, and the image feels strategically infected. Keep the language abstract, with no fixed body part, location, role, weapon, or action premise.\n',
     },
   },
   {
     id: 'SP05-069',
-    name: 'Goblin Slayer – Dungeon Exterminator Grit',
+    name: 'Procedural Low-Fantasy Grit Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dirty armor, tactical cave-light, merciless combat efficiency, low-fantasy severity, helmet-never-removed hero, guild hall strategizing, goblin nest caves, dice-roll tension',
+        'Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency as composition, dice-like tension without literal gameplay',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth abrasion, dry blood-brown staining',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette economy, procedural threat spacing',
       atmosphere: 'Tactical, grim, relentless, procedural',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'One man wages an infinite war against the small and cruel, his face forever hidden behind steel that has seen too much. Dungeon corridors become kill-zones mapped by torchlight and trauma. There is no glory in this crusade, only the grim arithmetic of bodies erased from the equation.',
+        'Treat any subject as harsh practical fantasy rendered through procedure, restraint, and problem-solving grit. Use narrow light, dirty metal texture, smoky shadow, and economical silhouettes while keeping all figures, props, locations, enemies, and game-signifiers non-specific.\n',
     },
   },
   {
     id: 'SP05-061',
-    name: 'Crosshatched Doom Fantasy',
+    name: 'Crosshatched Doom Weight Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Massive swords, doomed medieval horror, thick shadow hatching, merciless scale, brand-of-sacrifice mark, behelit eggs, eclipse horror, god-hand silhouettes',
+        'Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic, oppressive scale fields, cursed ornamental geometry',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents, abraded parchment roughness',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing, gravity-heavy composition',
       atmosphere: 'Brutal, tragic, despairing, epic',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Every line is a wound and every shadow is a prophecy of blood. Swords too heavy for any mortal swing cleave through fate itself, leaving wounds that bleed across dimensions. The eclipse does not hide horror; it reveals what the sun was too afraid to illuminate.',
+        'Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching, sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.\n',
     },
   },
   {
     id: 'SP05-062',
-    name: 'Tokyo Ghoul – Urban Monstrous Hunger',
+    name: 'Crimson Hunger Metamorphosis Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'City-night predation, glowing red eyes (kakugan), vibrant kagune, predator eyes, fleshy weaponization, alienated identity, urban dark fantasy, dark cityscapes, centipede kagune, ghoul masks, coffee-shop refuge',
+        'Crimson hunger tension, alienated identity split, predatory color flares, fleshy ribbon abstraction, mask-like concealment, appetite rendered as graphic pressure',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Damp ink grain, membrane gloss, scratched matte surfaces, bruised translucency, red wet-edge accents, worn urban-neutral grit',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Identity-split framing, asymmetrical flare shapes, close pressure cropping, predatory negative space, invasive contour echoes',
       atmosphere: 'Tormented, hungry, alienated, violent',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Hunger wears a human face until the mask slips and the kakugan ignites red in the dark. Flesh blooms into weapons of terrible beauty, crimson tendrils unfurling like a flower that feeds on sorrow. The coffee shop is sanctuary, but the city outside knows only appetite.',
+        'Treat any input as a study in appetite, concealment, and identity fracture. Push crimson flares through desaturated shadows, membrane-like gloss, and invasive ribbon silhouettes while keeping the style abstract, transferable, and free of fixed locations, named effects, or literal pursuit setups.\n',
     },
   },
   {
     id: 'SP05-063',
-    name: 'Hellsing Ultimate – Crimson Gothic Hunt',
+    name: 'Crimson Gothic Authority Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Black coats, violent cathedral halls, glowing eyes, aristocratic menace, alucard guns, vampire-nazi showdown, battle-of-london, crimson coat',
+        'Aristocratic menace, crimson authority fields, black ceremonial contrast, gothic pressure geometry, predatory elegance, sanctified violence as abstraction',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Velvet-black ink mass, oxidized crimson glaze, polished dark enamel, aged paper grain, hard-edged stain texture, smoky drybrush',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Heraldic vertical framing, severe silhouette hierarchy, crimson-black power asymmetry, ritualized negative space, blade-sharp contour rhythm',
       atmosphere: 'Violent, regal, gothic, relentless',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Blood runs in rivulets down cathedral aisles as a vampire in service to protestant vengeance hunts through the night. The crimson coat is not a garment but a declaration that monsters can be leashed by monsters. Gothic arches frame slaughter like stained glass frames scripture.',
+        'Convert any subject into a regal gothic pressure image built from crimson authority, black ceremonial voids, and hard-edged shadow hierarchy. Keep the menace formal, graphic, and transferable instead of tied to fixed costumes, factions, interiors, weapons, or pursuit scenes.\n',
     },
   },
   {
     id: 'SP05-064',
-    name: 'Vinland Saga – Northern Historical Epic',
+    name: 'Wind-Scoured Redemption Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Wind-scoured coasts, grounded combat, emotional revenge, vast historical realism, viking longboats, farmstead redemption, duel-at-dawn, nordic fjords',
+        'Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance, moral weight, sparse horizon pressure',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth scuffing, subdued iron patina',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow diagonal weather flow',
       atmosphere: 'Stoic, epic, historical, meditative',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'The sea carves fjords with the same patience it takes to forge a warrior. Revenge is a blade carried across oceans, its weight growing heavier with every wave. One day the sword is laid down not in defeat but in the discovery that peace requires more courage than war.',
+        'Render any subject with weathered restraint and moral afterweight: muted earths, cold light, dry abrasion, and open negative space that feels earned rather than empty. Keep the treatment portable, without historical cast, fixed geography, props, or narrative confrontation.\n',
     },
   },
   {
     id: 'SP05-065',
-    name: 'Claymore – Pale Blade Horror',
+    name: 'Pale Threshold Horror Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pale warriors, silver glints, monster metamorphosis, bleak medieval terror, silver-eyed witches, yoma awakening, organization swords, 47-rank system',
+        'Pale threshold horror, silver glint discipline, metamorphic dread, bleak restraint, ranked severity as graphic order, hunter-prey symmetry without literal roles',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Chalk-pale matte surfaces, silver edge sheen, cracked ash grain, cold leatherlike roughness, mineral dust, restrained organic distortion',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Symmetrical threat staging, pale figure-ground inversion, narrow vertical cuts, restrained metamorphic edges, severe silhouette separation',
       atmosphere: 'Bleak, haunted, grim, melancholic',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Silver-eyed women carry swords taller than hope through a world that fears them almost as much as the monsters they slay. Each awakening draws them closer to becoming the very horror they hunt. Pale skin reflects moonlight and the terrible symmetry of hunter and prey.',
+        'Give any prompt a pale, disciplined horror treatment where beauty looks one step from transformation. Use silver edge accents, ash-matte textures, severe silhouette order, and quiet dread as a portable image grammar, not a fixed cast, setting, rank system, or confrontation scene.\n',
     },
   },
   {
     id: 'SP05-067',
-    name: 'Made in Abyss – Lush Abyssal Wonder-Horror',
+    name: 'Lush Abyssal Toll Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cute adventurers against impossible depths, bioluminescent mystery, dread beneath beauty, cave-raiders, white-whistle relics, nanachi companion, curse-of-the-abyss layers',
+        'Lush wonder hiding irreversible cost, bioluminescent mystery, depth-layered dread, delicate beauty under pressure, reliclike detail as visual lure',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Bioluminescent bloom, damp mineral grain, soft organic translucency, antique relic patina, mossy velvet matte, pressure-worn edges',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Layered vertical depth cues, scale uncertainty, beautiful foreground lure, ominous compression, circular pull composition',
       atmosphere: 'Wondrous, terrifying, abyssal, enchanting',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'Descent is a covenant with the unknown, each layer deeper extracting a toll more precious than the last. Bioluminescent flora lights the way down, but beauty here is a lure, not a gift. The abyss does not hate its explorers; it simply transforms them into something that can no longer return.',
+        'Recast any subject with beautiful depth that feels costly to enter: luminous blooms, damp mineral texture, layered compression, and wonder turning quietly unsafe. Keep the image portable, with no fixed explorers, lore systems, travel premise, or literal worldbuilding requirement.\n',
     },
   },
   {
     id: 'SP05-068',
-    name: 'Dorohedoro – Industrial Masked Chaos',
+    name: 'Grimy Sorcery Collision Style',
     category: '9. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Grimy alleys, masks, bizarre sorcery, anarchic humor, heavy surface filth, lizard-head protagonist, mushroom magic, door-portal frames, smoke-choked city',
+        'Grimy sorcery collision, anarchic humor in texture, industrial filth, masked ambiguity as shape language, portal-like framing, absurd menace without literal cast',
       form_and_line:
         'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
       color_palette:
         'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Tar grime, industrial soot, scraped enamel, greasy ink buildup, oxidized dust, warped organic stains, smoke-softened edges',
       render_quality:
         'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
+        'Colliding frames, smoke-bent edges, masklike silhouettes, portal-crop interruptions, chaotic but readable density, offbeat scale jolts',
       atmosphere: 'Bizarre, dangerous, grimy, anarchic',
       key_features:
         'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
       creative_brief:
-        'A lizard-headed man cooks gyoza in a city where sorcerers use doorways as portals and mushrooms are weapons of mass destruction. Smoke from industry and magic chokes the same alley, and everyone wears a mask hiding something stranger than a face. Chaos here is not a crisis but a lifestyle, seasoned with dark laughter.',
+        'Push any prompt into filthy, funny, dangerous collision: soot, warped frames, occult-industrial stains, and masklike ambiguity create absurd menace as a transferable style, not a fixed place, character, prop system, or action setup.\n',
     },
   },
   {
@@ -823,24 +823,24 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Masaaki Yuasa style, fluid distortion, elastic metamorphosis, neon colors, psychedelic horror, club-color horror, youthful collapse, dancefloor apocalypse, Sabbath party climax, demonic possession, track-runner despair',
+        'Fluid psychedelic tragedy, with elastic deformation, neon collapse, raw youth panic, and ecstatic horror color.',
       form_and_line:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Liquefied contours, rubbery distortion, broken silhouette rhythm, smear-heavy transitions, and unstable expressive anatomy.',
       color_palette:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Acid magenta, toxic cyan, bruised violet, hot red, blacklight blue, and dirty flesh neutrals.',
       lighting_setup:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, cavernous underlighting',
+        'Club-neon bleed, strobing color fields, overexposed emotional peaks, and hard underlight for panic surges.',
       material_texture:
-        'Ruin stone, worn leather, grime, organic detail, rust patina, cracked masonry, viscera sheen',
+        'Wet ink smear, digital grain, oily bloom, rough cel edges, and visceral color mixing without literal gore dependence.',
       render_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Experimental anime finish with controlled chaos, readable deformation, and high-emotion psychedelic motion.',
       spatial_distortion:
-        'Grounded anatomy, severe silhouettes, realistic mass distribution, oppressive scale contrast',
-      atmosphere: 'Psychedelic, tragic, devastating, neon-drenched',
+        'Bodies, space, and perspective stretch together as emotion overload bends the frame.',
+      atmosphere: 'Psychedelic, tragic, devastating, neon-drenched.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Elastic metamorphosis, neon tragedy, blacklight horror, raw deformation, ecstatic collapse.',
       creative_brief:
-        'Bodies liquefy and reform on the dancefloor as demons pour through the cracks in human desire. Neon bleeds across skin that no longer obeys the laws of anatomy, stretching toward ecstasy and annihilation simultaneously. The apocalypse arrives not with a bang but with a bass drop that shatters every heart in the club.',
+        'Apply neon tragic metamorphosis as a transferable visual treatment: dissolve stable form, push color into blacklight panic, and make any prompt feel emotionally overloaded without requiring a fixed horror event or location.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

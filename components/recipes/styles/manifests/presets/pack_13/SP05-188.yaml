@@ -12,18 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Elite-campus melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded romance tension
-  form_and_line: Sharp posture-contrast silhouettes, staircase-axis confrontation blocking, disciplined facial micro-expression linework, and uniform-tailored contour control
-  color_palette: Ivory and academy navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and crimson social-pressure highlights
-  lighting_setup: Overcast prestige-campus diffusion, reflective rain sheen, corridor backlight separation, and dramatic stairwell contrast pockets
-  material_texture: Premium school uniform textiles, polished stone railings, umbrella and leather accessory gloss, and wet pavement reflective layering
+  aesthetic: Elite-status melodrama grammar with social-hierarchy staging, glossy emotional collision, and status-coded romance tension
+  form_and_line: Sharp posture-contrast silhouettes, vertical-axis confrontation blocking, disciplined facial micro-expression linework, and tailored contour control
+  color_palette: Ivory and navy bases, luxury black accents, restrained gold signifiers, rain-slick slate neutrals, and crimson social-pressure highlights
+  lighting_setup: Overcast prestige diffusion, reflective rain sheen, backlight separation, and dramatic vertical contrast pockets
+  material_texture: Premium tailored textiles, polished stone-like surfaces, leather accessory gloss, and wet reflective layering
   render_quality: High-polish shojo melodrama rendering with social-rank readability, clean fashion fidelity, and emotionally charged framing clarity
-  spatial_distortion: Vertical-status perspective exaggeration through stair and balcony vantage compression
+  spatial_distortion: Vertical-status perspective exaggeration through rank-coded vantage compression
   atmosphere: Tumultuous, glamorous, bruising, addictive
-  key_features: Elite school props, social hierarchy staging, staircase confrontations, polished uniform detail, rain-soaked dramatic beats
+  key_features: Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain-soaked dramatic beats
   creative_brief: >-
     Preserve elite-campus melodrama grammar as a reusable style system:
-    hierarchy-coded fashion contrast, staircase confrontation staging, and
+    hierarchy-coded fashion contrast, vertical confrontation staging, and
     polished emotional tension should remain consistent across subjects.
 avoidRules:
   - realistic

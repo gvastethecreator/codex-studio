@@ -12,19 +12,19 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: Ordinary boys turning hallways and riverbanks into dead-serious nonsense stages, sketch-comedy timing, school-blazer awkwardness, underplayed absurdity
-  form_and_line: Deadpan-comedy contour economy, exaggerated reaction silhouette beats, and banal-setting stage composition
-  color_palette: Neutral school grays, blazer navy, riverbank greens, sun-faded concrete, and occasional comedic accent pops
-  lighting_setup: Flat classroom daylight, casual outdoor afternoon fill, and low-drama illumination supporting timing-first gags
-  material_texture: Blazer wool texture, desk-edge scuffs, riverbank grass and dirt, and everyday prop matte finishes
+  aesthetic: Daily Lives title anchor translated into dead-serious nonsense, sketch-comedy timing, mundane-stage absurdity, awkward underplaying, and loose ensemble rhythm
+  form_and_line: Deadpan-comedy contour economy, exaggerated reaction silhouette beats, and banal-stage composition that can wrap any prompt
+  color_palette: Neutral grays, navy anchors, faded concrete tones, casual green notes, and occasional comedic accent pops
+  lighting_setup: Flat everyday daylight, casual afternoon fill, and low-drama illumination supporting timing-first gags
+  material_texture: Wool-like cloth texture, desk-edge scuffs, grass-and-dirt matte notes, and everyday prop finishes as optional comedic tactility
   render_quality: Ensemble deadpan rendering with timing clarity, awkward-boy body language, and low-stakes absurdist rhythm
   spatial_distortion: Momentary gag exaggeration through reaction-scale pops within otherwise normal perspective
   atmosphere: Goofy, deadpan, schoolyard, loose
-  key_features: Blazer silhouettes, hallway conversation staging, low-budget absurdist posing, riverbank comedy scenes, ensemble rhythm
+  key_features: Deadpan commitment, low-budget absurdist posing, mundane-stage framing, reaction-scale pops, ensemble rhythm
   creative_brief: >-
-    Preserve hallway-idiot-theater grammar as a reusable style system:
-    deadpan comedic commitment, mundane-space stagecraft, and ensemble
-    adolescent absurdity should remain coherent across subjects.
+    Use Daily Lives of High School Boys as a style anchor for mundane absurdist
+    theater: deadpan commitment and ensemble timing should survive without
+    requiring boys, hallways, riverbanks, blazers, or school staging.
 avoidRules:
   - realistic
   - 3d render
