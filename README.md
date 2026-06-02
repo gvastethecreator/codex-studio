@@ -32,11 +32,7 @@ Codex Studio is an open-source image creation environment built for fast local i
 
 ### Studio workspace
 
-![Codex Studio workspace screenshot](./docs/assets/screenshots/studio-view.png)
-
-### Recipes view
-
-![Codex Studio recipes view screenshot](./docs/assets/screenshots/recipes-view.png)
+![Codex Studio workspace screenshot](./docs/assets/screenshots/studio-view.webp)
 
 ## Why this project
 

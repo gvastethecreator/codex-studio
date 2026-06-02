@@ -1,0 +1,59 @@
+# Line-ending policy
+#
+# All text files are stored as LF in the repo and on disk. This is
+# enforced via the `eol=lf` attribute and prevents the Windows
+# autocrlf "phantom-modified" state (files flagged as modified even
+# though the bytes are identical).
+#
+# Binary files are marked explicitly below so git does not run
+# text-detection or line-ending filters on them.
+
+* text=auto eol=lf
+
+# Image / media binaries
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.7z binary
+*.rar binary
+
+# Audio / video
+*.mp3 binary
+*.mp4 binary
+*.wav binary
+*.ogg binary
+*.mov binary
+*.avi binary
+*.webm binary
+*.flac binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Native binaries / credentials
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.node binary
+*.bin binary
+*.key binary
+*.pem binary
+*.crt binary
+
+# SVG is XML and diffs better as text
+*.svg text
