@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import React from 'react';
 import App from './App';
 
-if (import.meta.env.DEV && import.meta.env.VITE_ENABLE_REACT_SCAN !== 'false') {
+if (import.meta.env.DEV && import.meta.env.VITE_ENABLE_REACT_SCAN === 'true') {
   void import('react-scan').then(({ scan }) => {
     scan({ enabled: true });
   });
