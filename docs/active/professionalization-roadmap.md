@@ -1,10 +1,10 @@
-# Hoja de ruta de profesionalización de Codex Studio
+# Codex Studio Professionalization Roadmap
 
-## Objetivo
+## Objective
 
 Turn Codex Studio into a more professional local-first image studio while preserving its Codex-first product center. The work should reduce token waste, clarify provider boundaries, improve UI command flow, make configuration editable, and make recipes and style presets easier for people and agents to maintain.
 
-## Orden de ejecución
+## Execution order
 
 1. **Guía de agentes y proyecto**
    - Add or update `AGENTS.md`, `SKILLS.md`, and architecture docs.

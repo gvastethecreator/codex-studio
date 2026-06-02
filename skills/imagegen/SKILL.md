@@ -5,6 +5,8 @@ description: 'Generate or edit raster images when the task benefits from AI-crea
 
 # Image Generation Skill
 
+> **Attribution:** This skill is a derivation of the OpenAI Codex CLI system image-generation skill that ships at `~/.codex/skills/.system/imagegen/` in the upstream Codex CLI. Upstream is distributed under the Apache License, Version 2.0; the full license text is preserved verbatim at `skills/imagegen/LICENSE.txt` (the `Copyright [yyyy] [name of copyright owner]` line is the unmodified Apache 2.0 template and refers to the upstream copyright holder, not the Codex Studio project). See `THIRD_PARTY_LICENSES.md` at the repo root for the consolidated third-party license index.
+
 Generates or edits images for the current project (for example website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, or infographics).
 
 ## Top-level modes and rules

@@ -1,25 +1,27 @@
 # Style Preset Card Regeneration Backlog
 
-## Criterio
+> **Note:** This file is a per-preset regeneration log. The intro below and most section headings are translated; per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the regeneration waves settle. Per-preset rows themselves are file paths and need no translation.
 
-Las default cards de presets se generan como `.webp` en `assets/recipes/styles/defaults/`.
-`scripts/generate-style-defaults.ts` construye el prompt desde el pack, la categoría, el `name`, el `visualDna`, el `negativePrompt` y variantes determinísticas por hash.
+## Criterion
 
-El prompt exacto usado para una card no queda versionado junto al asset. Los manifests `assets/recipes/styles/defaults/manifest-<pack>.json` guardan `presetId`, `presetName`, `jobId`, modelo, modo y timestamp, pero no el prompt completo.
+Preset default cards are generated as `.webp` in `assets/recipes/styles/defaults/`.
+`scripts/generate-style-defaults.ts` builds the prompt from the pack, the category, the `name`, the `visualDna`, the `negativePrompt`, and hash-based deterministic variants.
 
-Regla operativa:
+The exact prompt used for a card is not versioned alongside the asset. The `assets/recipes/styles/defaults/manifest-<pack>.json` manifests store `presetId`, `presetName`, `jobId`, model, mode, and timestamp, but not the full prompt.
 
-- Si cambia `name`, `visualDna`, `avoidRules` o `attributes.negativePrompt`, la card existente se considera obsoleta.
-- Todo preset modificado debe anotarse aquí con estado `needs-regeneration`.
-- Al regenerar, reemplazar `assets/recipes/styles/defaults/<PRESET_ID>.webp` y actualizar el checkpoint `manifest-<pack>.json`.
-- No cerrar una tanda visual como final si quedan cards obsoletas sin anotación.
+Operating rule:
 
-## Pendiente de regeneración
+- If `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt` change, the existing card is considered obsolete.
+- Every modified preset must be annotated here with `needs-regeneration` state.
+- When regenerating, replace `assets/recipes/styles/defaults/<PRESET_ID>.webp` and update the `manifest-<pack>.json` checkpoint.
+- Do not close a visual batch as final if any obsolete cards remain un-annotated.
 
-Estado: `needs-regeneration`
-Motivo común: se reescribió el preset desde escena/props concretos hacia estilo abstracto aplicable a cualquier prompt o imagen de entrada.
+## Pending regeneration
 
-Nota de criterio: títulos, IPs o nombres de obra pueden mantenerse si funcionan como ancla estilística. La card debe regenerarse igual cuando cambia el manifest, pero el problema no es la IP en sí; el problema es que `visualDna` o `creative_brief` fuercen composición, personaje, locación, prop o evento específico.
+State: `needs-regeneration`
+Common reason: the preset was rewritten from a concrete scene/props into an abstract style applicable to any input prompt or image.
+
+Criterion note: titles, IP names, or work names may stay as a stylistic anchor. The card must still be regenerated when the manifest changes, but the issue is not the IP itself; the issue is when `visualDna` or `creative_brief` force a specific composition, character, location, prop, or event.
 
 ### pack_01
 

@@ -1,8 +1,8 @@
-# Próximas tareas de agentes para Codex Studio
+# Next agent tasks for Codex Studio
 
 Repo: `D:\DEV\codex-studio`
 
-Estado: pausado por usuario para otro agente. No marcar el objetivo activo como completado. El proyecto mejoró, pero todavía no está en estado final de release profesional.
+State: paused by the user for another agent. Do not mark the active goal as completed. The project improved, but it is not yet in a final professional-release state.
 
 Update 2026-05-26: **Style Preset Authoring Tooling** and **Browser-Verified Styles Performance Gate** are completed in this branch. Unless the user asks to iterate on scaffold/gate UX, resume from **Live Recipe Prompt Quality Evaluation**.
 
@@ -12,21 +12,21 @@ Update 2026-05-30: pipeline follow-up work is split into three ready-to-pick doc
 - `docs/active/pipeline-image-quality-plan.md`: improve output quality with structured visual specs, reference roles, prompt tightening, quality presets, and live review evidence.
 - `docs/active/pipeline-queue-reliability-plan.md`: harden queue submission with task-spec validation, reference preflight, provider preflight, normalized errors, and dry-run smoke coverage.
 
-## Protocolo de reanudación
+## Resumption protocol
 
 1. Read `AGENTS.md`, `CONTEXT.md`, `docs/ARCHITECTURE.md`, latest relevant `docs/adr/*.md`, `docs/active/professionalization-roadmap.md`, `docs/active/professionalization-handoff.md`, `docs/TECHNICAL_DEBT.md`, and `SKILLS.md`.
-2. Use PowerShell without profile (`login:false` / `-NoProfile`) because local profile/oh-my-posh previously caused hangs/noise.
-3. Preserve dirty worktree. Many files are intentionally modified. Do not revert unrelated changes.
+2. Use PowerShell without profile (`login:false` / `-NoProfile`) because the local profile/oh-my-posh previously caused hangs/noise.
+3. Preserve the dirty worktree. Many files are intentionally modified. Do not revert unrelated changes.
 4. Pick one vertical slice. Add focused tests/guards where useful.
-5. Validate with focused `bun run test -- <files>` and `bun run check -- <files>`, then relevant domain gate and `bun run build`.
+5. Validate with focused `bun run test -- <files>` and `bun run check -- <files>`, then the relevant domain gate and `bun run build`.
 
-## Último slice verificado
+## Last verified slice
 
 Latest focused work fixed and verified:
 
 - Added `styles:scaffold`, a non-destructive CLI for new granular presets. It dry-runs by default, requires `--write` to mutate, scaffolds from repo-local image/sprite/texture templates, accepts category id or exact category name, updates both pack-level and category `presetRefs`, and supports optional `--default-image`.
 - Updated `SKILLS.md` and `docs/STYLE_PRESET_AUTHORING.md` to document the scaffold-first flow.
-- Style/recipe queue now snapshots attachments before clearing composer, so user can enqueue one image-guided style job and attach more images without reloading.
+- Style/recipe queue now snapshots attachments before clearing the composer, so users can enqueue one image-guided style job and attach more images without reloading.
 - Backend task assets include queued attachments.
 - Task summary exposes total timing, queue wait, provider turn, asset import, token usage, and prompt estimate.
 - Recent Results panel is compact with internal scroll.
@@ -50,9 +50,9 @@ bun run check -- hooks/useStudioGenerationActions.ts hooks/useStudioGenerationAc
 bun run build
 ```
 
-## Tareas pendientes de mayor prioridad
+## Top-priority pending tasks
 
-### 1. Tooling de authoring para Style Presets
+### 1. Style Preset authoring tooling
 
 Problem: presets are now granular, but authoring still requires manual YAML creation plus pack/category ref edits.
 
@@ -62,7 +62,7 @@ Tasks:
 - Default to dry-run; require `--write` for mutation.
 - Inputs: `--preset=<ID>`, `--pack=<pack_id>`, `--category=<category id or exact name>`, `--name=<Name>`, `--template=style|sprite|texture`, optional `--default-image=<path>`.
 - Output: create `components/recipes/styles/manifests/presets/<pack>/<PRESET_ID>.yaml`.
-- Update both pack-level `presetRefs` and selected category `presetRefs`.
+- Update both pack-level `presetRefs` and the selected category `presetRefs`.
 - Refuse overwrite/duplicate refs.
 - Emit next steps: add default image, run preset validation, regenerate runtime.
 - Add tests for planning/ref generation/duplicate refusal without touching real manifests.
@@ -85,7 +85,7 @@ bun run styles:templates:verify
 bun run styles:source:verify
 ```
 
-### 2. Gate de rendimiento de Styles verificado en navegador (completado en esta rama)
+### 2. Browser-verified Styles performance gate (completed in this branch)
 
 Completed:
 
@@ -112,7 +112,7 @@ bun run styles:browser:verify -- --url=http://localhost:3001/#recipe-styles
 bun run build
 ```
 
-### 3. Evaluación en vivo de calidad de prompts de Recipe
+### 3. Live Recipe prompt-quality evaluation
 
 Problem: compact Recipe Provider Directives save tokens, and the repo now has a dedicated live-comparison harness, but representative Codex evidence still needs to be collected.
 
@@ -120,10 +120,10 @@ Tasks:
 
 - Use `recipes:evaluate` reports to choose representative recipe cases.
 - Use `recipes:evaluate:live` dry-run output to confirm the exact legacy/directives cases and prompt deltas you want to review.
-- Run `recipes:evaluate:live -- --execute` for representative legacy vs directive comparisons when the local Codex session is ready.
-- Fill the generated Markdown review template; keep output quality notes as job/catalog refs plus reviewer notes, without storing secrets or large generated assets in repo.
+- Run `recipes:evaluate:live -- --execute` for representative legacy-vs-directive comparisons when the local Codex session is ready.
+- Fill the generated Markdown review template; keep output quality notes as job/catalog refs plus reviewer notes, without storing secrets or large generated assets in the repo.
 - Do not remove legacy Recipe Context from stored job metadata until quality evidence is good.
-- Keep denoise workaround intact: `Apply a heavy strong denoise to the resulting image.`
+- Keep the denoise workaround intact: `Apply a heavy strong denoise to the resulting image.`
 
 Useful files:
 
@@ -141,9 +141,9 @@ bun run recipes:evaluate:live -- --recipe=styles --out=logs/recipe-prompt-qualit
 bun run providers:verify
 ```
 
-### 4. Cierre de UI catalog-first
+### 4. Catalog-first UI closeout
 
-Problem: Catalog Entries are durable truth, but legacy Visual Batch compatibility still exists.
+Problem: Catalog Entries are the durable truth, but legacy Visual Batch compatibility still exists.
 
 Tasks:
 
@@ -151,7 +151,7 @@ Tasks:
 - Move remaining grid/export flows to direct Catalog Entry read models.
 - Keep Visual Batch only at explicit import/export/recovery compatibility edges until it can be deleted.
 - Add/extend guards if `GenerationBatch` or `useLegacyVisualBatches()` spreads again.
-- Document final removal plan for ADR-0013 follow-up.
+- Document the final removal plan for the ADR-0013 follow-up.
 
 Useful files:
 
@@ -171,14 +171,14 @@ bun run test -- contexts/legacyVisualBatchReducer.test.ts lib/localGenerationVis
 bun run build
 ```
 
-### 5. UX de Settings y External Output
+### 5. Settings and External Output UX
 
-Problem: settings/output-source backend exists, but UX still needs polish for professional file workflows.
+Problem: settings/output-source backend exists, but the UX still needs polish for professional file workflows.
 
 Tasks:
 
 - Improve registered External Output Source file selection and import UX.
-- Preserve rule: registration is not import.
+- Preserve the rule: registration is not import.
 - Add better empty/loading/error states for source scanning.
 - Add clearer output folder preview based on date/provider/model/recipe options.
 - Make filename template validation visible before saving.
@@ -200,14 +200,14 @@ bun run check -- components/StudioSettingsModal.tsx hooks/useStudioSettings.ts s
 bun run build
 ```
 
-### 6. Cierre de Command Center
+### 6. Command Center closeout
 
-Problem: top toolbar is the Command Center, but final command/menu polish remains.
+Problem: the top toolbar is the Command Center, but final command/menu polish remains.
 
 Tasks:
 
-- Audit all global status/provider/usage/settings/library controls and ensure they live in toolbar or toolbar-opened Demand-Mounted Surfaces.
-- Keep toolbar compact; deeper settings belong in modal.
+- Audit all global status/provider/usage/settings/library controls and ensure they live in the toolbar or in toolbar-opened Demand-Mounted Surfaces.
+- Keep the toolbar compact; deeper settings belong in a modal.
 - Verify runtime status, provider, queue count, recent previews, and usage fit at desktop and narrow widths.
 - Add focused rendered tests if possible.
 
@@ -227,13 +227,13 @@ bun run check -- components/HeaderToolbar.tsx components/ui/TopToolbar.tsx hooks
 bun run build
 ```
 
-### 7. Inyección de dependencias en backend
+### 7. Backend dependency injection
 
-Problem: logger seam exists, but DB/worker/lifecycle still rely on singletons/global modules in places.
+Problem: the logger seam exists, but DB/worker/lifecycle still rely on singletons/global modules in places.
 
 Tasks:
 
-- Extend app factory dependencies for catalog store, worker controller, logger, app-server lifecycle where practical.
+- Extend app factory dependencies for catalog store, worker controller, logger, and app-server lifecycle where practical.
 - Keep route handlers thin.
 - Preserve Provider Boundary import guards.
 - Add isolated backend tests around injected dependencies.
@@ -254,9 +254,9 @@ bun run test -- apps/local-server/src/appFactory.test.ts apps/local-server/src/w
 bun run build
 ```
 
-## Tareas pendientes de prioridad media
+## Medium-priority pending tasks
 
-### 8. Recipe Modules For New Asset Types
+### 8. Recipe modules for new asset types
 
 Current examples exist for `sprite_sheet` and `texture_generate`, but they are `example_only`.
 
@@ -273,39 +273,39 @@ bun run recipes:examples:verify
 bun run recipes:verify
 ```
 
-### 9. Frontend Logging Adapter
+### 9. Frontend logging adapter
 
 Problem: direct `console.*` usage remains scattered.
 
 Tasks:
 
-- Add frontend logging adapter with levels.
+- Add a frontend logging adapter with levels.
 - Keep debug/activity surfaces Demand-Mounted.
 - Avoid leaking Provider Secrets or local paths in user-visible logs.
 
-### 10. Studio Runtime Naming Cleanup
+### 10. Studio Runtime naming cleanup
 
 Problem: docs distinguish Studio Runtime and Studio Readiness, but code naming can still confuse adapter vs orchestrator.
 
 Tasks:
 
-- Decide whether `useStudioRuntime` should be renamed or documented as orchestration layer.
-- Keep `services/studioRuntime.ts` as static runtime resolution adapter unless ADR changes it.
+- Decide whether `useStudioRuntime` should be renamed or documented as the orchestration layer.
+- Keep `services/studioRuntime.ts` as the static runtime resolution adapter unless an ADR changes it.
 
-### 11. UI Test Coverage
+### 11. UI test coverage
 
 Tasks:
 
 - Add focused tests for `Toolbar`, `QueuePanel` rendered compact results, `StudioPage`, and `useLocalStudioSync`.
 - Prefer pure helper extraction when full DOM tests are too heavy.
 
-### 12. Release Artifact Audit
+### 12. Release artifact audit
 
 Tasks:
 
-- Re-run final scan before release candidate.
+- Re-run the final scan before release candidate.
 - Ensure no generated images, SQLite DBs, transcripts, logs, prompts, `.env.local`, or local output folders are committed.
-- Confirm only intended versioned default cards in `webp` remain.
+- Confirm only intended versioned default cards in `.webp` remain.
 
 Useful commands:
 
@@ -314,24 +314,24 @@ git status --short
 git ls-files
 ```
 
-## Skills sugeridas
+## Suggested skills
 
-- `caveman`: keep communication brief, user prefers this mode.
+- `caveman`: keep communication brief; the user prefers this mode.
 - `handoff`: for future pause/resume docs.
 - `improve-codebase-architecture`: for provider/catalog/DI slices.
 - `diagnose`: for runtime bugs, UI regressions, or Windows tooling failures.
 - `playwright`: for browser validation/perf screenshots if adding browser gates.
 - `openai-docs`: only when changing Codex official integration semantics.
 
-## No hacer
+## Do not
 
 - Do not mark the active goal complete.
 - Do not collapse Codex-first product semantics into a generic provider router.
 - Do not store Provider Secret values in SQLite, logs, transcripts, screenshots, or docs.
 - Do not reintroduce monolithic legacy style pack YAML.
-- Do not delete/move Studio Library data unless user explicitly asks.
-- Do not run broad formatting over entire dirty tree casually.
+- Do not delete/move Studio Library data unless the user explicitly asks.
+- Do not run broad formatting over the entire dirty tree casually.
 
-## Siguiente primer slice recomendado
+## Recommended next first slice
 
 Start with **Browser-Verified Styles Performance Gate**. The static/render-plan checks already exist and manual browser verification was proven, but the reusable release-gate script is still missing.

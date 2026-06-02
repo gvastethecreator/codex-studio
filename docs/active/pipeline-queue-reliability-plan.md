@@ -1,40 +1,40 @@
-# Plan: cola confiable y fallos tempranos
+# Plan: reliable queue and early failures
 
-Este documento deja una tarea lista para agente: hacer que imagenes y jobs entren a cola con contratos validos, fallen temprano cuando algo esta mal, y produzcan errores accionables. La cola no debe descubrir errores caros dentro del provider si puede detectarlos antes.
+This document leaves a task ready for an agent: make images and jobs enter the queue with valid contracts, fail early when something is wrong, and produce actionable errors. The queue must not discover expensive errors inside the provider if it can detect them beforehand.
 
-## Resultado esperado
+## Expected outcome
 
-Antes de crear o ejecutar un Persistent Job, el sistema valida `Generation Task Spec`, referencias, provider, readiness y batch/spec ids. Errores como `invalid batchid`, imagen rota, provider no configurado o referencia sin path deben aparecer como mensajes normalizados y con causa clara.
+Before creating or executing a Persistent Job, the system validates the `Generation Task Spec`, references, provider, readiness, and batch/spec ids. Errors like `invalid batchid`, broken image, unconfigured provider, or pathless reference must surface as normalized messages with a clear cause.
 
 ## Quick path
 
-1. Agregar validator puro para `Generation Task Spec`.
-2. Agregar preflight de assets/references antes de cola.
-3. Normalizar errores de queue/backend/provider.
-4. Exponer diagnostics seguros en job details.
-5. Probar con casos invalidos y smoke local `dry_run`.
+1. Add a pure validator for `Generation Task Spec`.
+2. Add an assets/references preflight before queue.
+3. Normalize queue/backend/provider errors.
+4. Expose safe diagnostics in job details.
+5. Test with invalid cases and a local `dry_run` smoke.
 
 ## Scope
 
-Incluye:
+Includes:
 
 - `Local Generation Run`.
-- `useQueueManager` y queue state machine.
+- `useQueueManager` and the queue state machine.
 - Backend job creation and worker preflight.
 - Reference persistence/hydration.
 - Provider preflight.
 - Error normalization.
 
-No incluye:
+Excludes:
 
-- Borrar Studio Library data.
-- Cambiar Catalog Entry como fuente durable.
-- Ejecutar providers externos sin preflight real.
-- Guardar imagenes inline en logs/transcripts.
+- Deleting Studio Library data.
+- Changing Catalog Entry as the durable source.
+- Executing external providers without real preflight.
+- Storing inline images in logs/transcripts.
 
-## Archivos probables
+## Likely files
 
-| Area             | Archivos                                                                                 |
+| Area             | Files                                                                                    |
 | ---------------- | ---------------------------------------------------------------------------------------- |
 | Frontend queue   | `hooks/useQueueManager.ts`, `lib/queueStateMachine.ts`, `hooks/useGenerationPipeline.ts` |
 | Local runner     | `services/localGenerationRun.ts`, `services/localGenerationRun.test.ts`                  |
@@ -47,15 +47,15 @@ No incluye:
 
 ## Contracts to enforce
 
-| Contract | Rule                                                                                        |
-| -------- | ------------------------------------------------------------------------------------------- |
-| Batch id | Local batch ids use `batch-*`; never raw timestamp-only ids.                                |
-| Spec id  | Generation Task Specs use stable `spec-*` ids.                                              |
-| Provider | Must exist, support task, and pass preflight before execution.                              |
-| Task     | Provider-independent task name; no provider names inside task.                              |
-| Assets   | Inline data must be persisted/hydrated to localPath or accepted sourceUrl before execution. |
-| Catalog  | Completed job writes Local Asset and Catalog Entry.                                         |
-| Errors   | User sees normalized cause, not provider stack noise.                                       |
+| Contract | Rule                                                                                            |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| Batch id | Local batch ids use `batch-*`; never raw timestamp-only ids.                                    |
+| Spec id  | Generation Task Specs use stable `spec-*` ids.                                                  |
+| Provider | Must exist, support the task, and pass preflight before execution.                              |
+| Task     | Provider-independent task name; no provider names inside the task.                              |
+| Assets   | Inline data must be persisted/hydrated to `localPath` or accepted `sourceUrl` before execution. |
+| Catalog  | Completed job writes a Local Asset and a Catalog Entry.                                         |
+| Errors   | User sees a normalized cause, not provider stack noise.                                         |
 
 ## Work packages
 
@@ -63,16 +63,16 @@ No incluye:
 
 Tasks:
 
-- Create pure validator near shared/provider boundary.
+- Create a pure validator near the shared/provider boundary.
 - Validate:
   - `id` exists and matches expected prefix/shape;
-  - `task` is known provider-independent task;
+  - `task` is a known provider-independent task;
   - `providerId` exists;
   - `metadata.batchId` exists for local queued generation;
-  - recipe metadata is present when recipe id exists;
+  - recipe metadata is present when a recipe id exists;
   - assets have valid role/name/source fields;
-  - no inline image bytes reach provider compiled payload unless explicitly allowed.
-- Return structured result:
+  - no inline image bytes reach the provider compiled payload unless explicitly allowed.
+- Return a structured result:
   - `ok`;
   - `code`;
   - `message`;
@@ -95,16 +95,16 @@ Tasks:
   - provider selected;
   - generated `batch-*` id;
   - generated `spec-*` id.
-- In queue manager, snapshot attachments before clearing composer.
+- In the queue manager, snapshot attachments before clearing the composer.
 - Ensure edit mode keeps `input` and `mask` assets while text-to-image uses references.
-- Add test for queueing image-guided job then changing composer attachments.
+- Add a test for queueing an image-guided job then changing composer attachments.
 - Done: Browser Queue jobs persist in IndexedDB across refresh. Browser-only `processing` jobs resume as `pending`; jobs already linked to backend are not re-executed and point users to Backend Session Jobs.
 
 Acceptance:
 
-- UI queue item owns immutable generation snapshot.
-- User changes after enqueue cannot corrupt running job.
-- Refreshing browser does not drop pending Browser Queue jobs or duplicate already-created backend jobs.
+- UI queue item owns an immutable generation snapshot.
+- User changes after enqueue cannot corrupt a running job.
+- Refreshing the browser does not drop pending Browser Queue jobs or duplicate already-created backend jobs.
 
 ### 3. Backend reference preflight
 
@@ -115,15 +115,15 @@ Tasks:
   - supported mime;
   - filename safe;
   - decoded size under limit;
-  - localPath exists when provided;
-  - sourceUrl accepted only for providers that support it.
+  - `localPath` exists when provided;
+  - `sourceUrl` accepted only for providers that support it.
 - Hydrate inline references to `localPath` before provider execution.
-- Strip inline bytes after hydration from job source spec where safe.
+- Strip inline bytes after hydration from the job source spec where safe.
 - Add tests for:
   - broken dataUrl;
   - unsupported mime;
-  - missing localPath;
-  - valid dataUrl persisted to references folder.
+  - missing `localPath`;
+  - valid dataUrl persisted to the references folder.
 
 Acceptance:
 
@@ -139,8 +139,8 @@ Tasks:
   - executable only when runtime requirements pass;
   - task supported;
   - asset roles supported.
-- Use existing `/api/providers/preflight` contract where possible.
-- External providers should fail with clear config action:
+- Use the existing `/api/providers/preflight` contract where possible.
+- External providers should fail with a clear config action:
   - missing Provider Secret source;
   - missing local endpoint;
   - missing Comfy workflow template;
@@ -148,7 +148,7 @@ Tasks:
 
 Acceptance:
 
-- Planned/unconfigured providers fail before expensive turn/network call.
+- Planned/unconfigured providers fail before an expensive turn/network call.
 
 ### 5. Error normalization
 
@@ -174,8 +174,8 @@ Tasks:
 
 Acceptance:
 
-- User can fix issue without reading logs.
-- Logs still enough for developer diagnosis.
+- User can fix the issue without reading logs.
+- Logs are still enough for developer diagnosis.
 
 ### 6. Job detail diagnostics
 
@@ -185,11 +185,11 @@ Tasks:
   - validation status;
   - provider preflight status;
   - reference count by role;
-  - hydrated localPath count;
+  - hydrated `localPath` count;
   - compiled input size/hash;
   - catalog write status.
-- Add UI display only in Demand-Mounted Surface or job details, not always-on toolbar.
-- Keep Command Center concise.
+- Add UI display only in a Demand-Mounted Surface or job details, not in the always-on toolbar.
+- Keep the Command Center concise.
 
 Acceptance:
 
@@ -200,19 +200,19 @@ Acceptance:
 
 Tasks:
 
-- Add script or test helper that creates `dry_run` jobs for:
+- Add a script or test helper that creates `dry_run` jobs for:
   - text-only generation;
   - image reference generation;
   - image edit with input;
   - invalid dataUrl;
   - invalid batch id.
-- Use tiny generated dataUrl in tests.
-- Do not write generated images to repo.
-- If smoke writes Studio Library entries, document that it is local state and not committed.
+- Use a tiny generated dataUrl in tests.
+- Do not write generated images to the repo.
+- If the smoke writes Studio Library entries, document that it is local state and not committed.
 
 Acceptance:
 
-- Queue/reference/catalog path can be verified without spending Codex image turns.
+- The queue/reference/catalog path can be verified without spending Codex image turns.
 
 ## Validation
 
@@ -263,12 +263,12 @@ Use only when backend is running and no paid provider call is intended:
 
 ## Risks
 
-| Risk                                                | Mitigation                                                                                  |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Validation duplicated frontend/backend              | Put pure shared validator in shared or backend-safe module; call from both where practical. |
-| Too-strict validation blocks valid provider feature | Validator returns provider-specific capability checks, not universal bans.                  |
-| Logs leak paths/assets                              | Keep safeDetails small; raw details backend-only and redacted.                              |
-| Dry-run smoke mutates local Studio Library          | Document local state, never commit outputs, do not delete without explicit user request.    |
+| Risk                                                | Mitigation                                                                                      |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Validation duplicated frontend/backend              | Put a pure shared validator in shared or a backend-safe module; call from both where practical. |
+| Too-strict validation blocks valid provider feature | Validator returns provider-specific capability checks, not universal bans.                      |
+| Logs leak paths/assets                              | Keep `safeDetails` small; raw details backend-only and redacted.                                |
+| Dry-run smoke mutates local Studio Library          | Document local state, never commit outputs, do not delete without explicit user request.        |
 
 ## Done checklist
 

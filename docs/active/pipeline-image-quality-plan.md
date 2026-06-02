@@ -1,39 +1,39 @@
-# Plan: pipeline con mejor calidad de imagen
+# Plan: pipeline with better image quality
 
-Este documento deja una tarea lista para agente: mejorar calidad visual sin inflar prompts ni romper Provider Boundary. La mejora debe venir de specs mas estructurados, referencias con roles claros, evaluacion viva y presets de calidad por tipo de salida.
+This document leaves a task ready for an agent: improve visual quality without inflating prompts or breaking the Provider Boundary. The improvement must come from more structured specs, references with clear roles, live evaluation, and per-output-type quality presets.
 
-## Resultado esperado
+## Expected outcome
 
-Cada generacion debe expresar mejor intencion visual: sujeto, composicion, estilo, luz, restricciones, negative/avoid y referencias. Providers deben recibir un input compacto pero especifico. Catalog debe conservar evidencia suficiente para comparar calidad sin guardar assets grandes en repo.
+Every generation must express visual intent better: subject, composition, style, lighting, constraints, negative/avoid, and references. Providers must receive a compact but specific input. The Catalog must keep enough evidence to compare quality without storing large assets in the repo.
 
 ## Quick path
 
-1. Elegir 5-8 casos representativos de recetas.
-2. Definir estructura de calidad en `Generation Task Spec`.
-3. Compilar prompt final desde campos estructurados.
-4. Ejecutar comparaciones legacy/directives con `recipes:evaluate:live`.
-5. Guardar resultados como job/catalog refs y notas de reviewer.
+1. Pick 5-8 representative recipe cases.
+2. Define the quality structure in `Generation Task Spec`.
+3. Compile the final prompt from the structured fields.
+4. Run legacy/directives comparisons with `recipes:evaluate:live`.
+5. Store results as job/catalog refs and reviewer notes.
 
 ## Scope
 
-Incluye:
+Includes:
 
-- Estructura provider-independent para calidad visual.
-- Roles de referencia.
-- Prompt tightening seguro.
-- Presets de calidad por tipo de Generation Task.
-- Evaluacion viva con Codex cuando la Local Codex Session este lista.
+- Provider-independent structure for visual quality.
+- Reference roles.
+- Safe prompt tightening.
+- Per-Generation-Task quality presets.
+- Live evaluation with Codex once the Local Codex Session is ready.
 
-No incluye:
+Excludes:
 
-- Cambiar modelos por defecto sin evidencia.
-- Meter instrucciones de calidad dentro de React surfaces.
-- Guardar imagenes generadas en repo.
-- Cambiar Provider Secrets o endpoints.
+- Switching default models without evidence.
+- Putting quality instructions inside React surfaces.
+- Storing generated images in the repo.
+- Changing Provider Secrets or endpoints.
 
-## Archivos probables
+## Likely files
 
-| Area                 | Archivos                                                                                                |
+| Area                 | Files                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------- |
 | Recipe specs         | `lib/recipeModules.ts`, `lib/recipeContextBuilders/*`, `lib/recipeModuleExamples.ts`                    |
 | Prompt helpers       | `lib/recipePromptFragments*`, `lib/generationVariation.ts`, `lib/studioGenerationRequest.ts`            |
@@ -79,12 +79,12 @@ Tasks:
   - expected visual outcome;
   - common failure modes;
   - required reference roles;
-  - quality notes reviewer should score.
-- Store plan in repo-local Markdown, not generated images.
+  - quality notes the reviewer should score.
+- Store the plan in repo-local Markdown, not generated images.
 
 Acceptance:
 
-- Another agent can run same cases and judge output consistently.
+- Another agent can run the same cases and judge output consistently.
 
 ### 2. Structured quality fields in Generation Task Spec
 
@@ -93,13 +93,13 @@ Tasks:
 - Inspect current shared types for Generation Task Spec.
 - Add minimal quality structure only where it improves compiler decisions.
 - Prefer typed metadata or params over prompt-only strings.
-- Keep `CONTEXT.md` glossary-only. Update architecture docs if shape changes.
+- Keep `CONTEXT.md` glossary-only. Update architecture docs if the shape changes.
 - Add tests proving existing recipes still build valid specs.
 
 Acceptance:
 
 - Spec remains provider-independent.
-- UI does not become prompt compiler.
+- UI does not become a prompt compiler.
 
 ### 3. Reference role contract
 
@@ -134,14 +134,14 @@ Acceptance:
 
 Tasks:
 
-- Create pure helper that composes final prompt from structured fields.
+- Create a pure helper that composes the final prompt from structured fields.
 - It should:
   - remove duplicated instructions;
-  - keep user exact wording where it carries product behavior;
+  - keep user-exact wording where it carries product behavior;
   - order content consistently;
   - keep avoid/negative constraints visible;
   - avoid adding unsupported claims.
-- Do not call an LLM for tightening in core path unless a future ADR approves it.
+- Do not call an LLM for tightening in the core path unless a future ADR approves it.
 - Add fixtures for contradictory inputs and long recipe context.
 
 Acceptance:
@@ -153,7 +153,7 @@ Acceptance:
 
 Tasks:
 
-- Define small set of quality preset ids:
+- Define a small set of quality preset ids:
   - `image_general`;
   - `image_edit`;
   - `style_reference`;
@@ -164,8 +164,8 @@ Tasks:
   - output expectations;
   - common negative rules;
   - reference priorities;
-  - provider hints if provider supports them.
-- Keep provider-specific options in provider config/input, not generic task names.
+  - provider hints if the provider supports them.
+- Keep provider-specific options in provider config/input, not in generic task names.
 
 Acceptance:
 
@@ -175,26 +175,26 @@ Acceptance:
 
 Tasks:
 
-- Run dry plan first:
+- Run a dry plan first:
 
 ```bash
 bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality
 ```
 
-- When Local Codex Session ready, execute representative cases:
+- When the Local Codex Session is ready, execute representative cases:
 
 ```bash
 bun run recipes:evaluate:live -- --recipe=<id> --execute --out=logs/recipe-prompt-quality
 ```
 
-- Fill generated Markdown review templates.
+- Fill the generated Markdown review templates.
 - Store only:
   - job ids;
   - catalog entry ids;
   - transcript paths;
   - reviewer notes;
   - prompt size metrics.
-- Do not store generated images in repo.
+- Do not store generated images in the repo.
 
 Acceptance:
 
@@ -254,12 +254,12 @@ Review dimensions:
 
 ## Risks
 
-| Risk                                       | Mitigation                                                                  |
-| ------------------------------------------ | --------------------------------------------------------------------------- |
-| Better prompt shape costs more tokens      | Use structured fields plus compact compiler, measure both quality and size. |
-| Generic quality presets make outputs samey | Keep presets task-specific and allow recipe override.                       |
-| Reference roles unsupported by provider    | Provider compiler must fail clearly or degrade explicitly.                  |
-| Live evaluation burns tokens               | Use dry-run first, then small representative execute set.                   |
+| Risk                                       | Mitigation                                                                    |
+| ------------------------------------------ | ----------------------------------------------------------------------------- |
+| Better prompt shape costs more tokens      | Use structured fields plus a compact compiler; measure both quality and size. |
+| Generic quality presets make outputs samey | Keep presets task-specific and allow recipe override.                         |
+| Reference roles unsupported by provider    | Provider compiler must fail clearly or degrade explicitly.                    |
+| Live evaluation burns tokens               | Use dry-run first, then a small representative execute set.                   |
 
 ## Done checklist
 

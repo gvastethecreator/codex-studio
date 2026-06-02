@@ -1,39 +1,39 @@
-# Plan: pipeline con menos tokens
+# Plan: pipeline with fewer tokens
 
-Este documento deja una tarea lista para agente: reducir tokens enviados a providers sin perder trazabilidad. El principio base es conservar el `Generation Task Spec` rico como fuente durable y enviar solo `Compiled Provider Input` compacto al momento de ejecutar.
+This document leaves a task ready for an agent: reduce the tokens sent to providers without losing traceability. The core principle is to keep the rich `Generation Task Spec` as the durable source and send only the compact `Compiled Provider Input` at execution time.
 
-## Resultado esperado
+## Expected outcome
 
-El pipeline debe poder demostrar, por provider y por receta, cuanto pesa el spec durable, cuanto pesa el input compilado, que instrucciones estables quedaron fuera del prompt por job, y que no se serializan imagenes inline, Provider Secrets ni datos locales sensibles.
+The pipeline must be able to demonstrate, per provider and per recipe, how heavy the durable spec is, how heavy the compiled input is, which stable instructions were kept out of the per-job prompt, and that no inline images, Provider Secrets, or sensitive local data are serialized.
 
 ## Quick path
 
-1. Medir estado actual con `providers:audit` y `recipes:evaluate`.
-2. Separar instrucciones estables en `Provider Session Contract`.
-3. Compactar `Compiled Provider Input` por provider.
-4. Probar calidad con comparaciones legacy/directives antes de borrar metadata vieja.
-5. Cerrar con `providers:verify`, `recipes:verify`, tests enfocados y build.
+1. Measure the current state with `providers:audit` and `recipes:evaluate`.
+2. Move stable instructions into the `Provider Session Contract`.
+3. Compact the `Compiled Provider Input` per provider.
+4. Test quality with legacy/directives comparisons before deleting old metadata.
+5. Close with `providers:verify`, `recipes:verify`, focused tests, and build.
 
 ## Scope
 
-Incluye:
+Includes:
 
-- Codex como provider primario.
-- External providers ya concretos: Google, fal.ai, ComfyUI.
+- Codex as the primary provider.
+- Concrete external providers: Google, fal.ai, ComfyUI.
 - Recipe Provider Directives.
-- Prompt final enviado al provider.
-- Metricas de tamano, estimacion de tokens y omision de boilerplate estable.
+- Final prompt sent to the provider.
+- Size metrics, token estimation, and stable-boilerplate omission.
 
-No incluye:
+Excludes:
 
-- Cambiar identidad de recetas.
-- Borrar legacy Recipe Context de metadata durable antes de evidencia viva.
-- Reducir detalle creativo necesario solo para ahorrar tokens.
-- Guardar Provider Secrets, endpoints o imagenes inline en logs/transcripts/docs.
+- Changing recipe identity.
+- Deleting legacy Recipe Context from durable metadata before live evidence.
+- Reducing necessary creative detail just to save tokens.
+- Storing Provider Secrets, endpoints, or inline images in logs/transcripts/docs.
 
-## Archivos probables
+## Likely files
 
-| Area               | Archivos                                                                                                            |
+| Area               | Files                                                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | Provider compilers | `apps/local-server/src/providers/*Compiler*.ts`, `apps/local-server/src/providers/providerInputCompilerRegistry.ts` |
 | Codex contract     | `apps/local-server/src/codex/imagegenContract.ts`, `apps/local-server/src/providers/codexProvider.ts`               |
@@ -44,11 +44,11 @@ No incluye:
 
 ## Work packages
 
-### 1. Baseline real
+### 1. Real baseline
 
 Tasks:
 
-- Run `bun run providers:audit -- --no-external-fixtures` for current Codex path.
+- Run `bun run providers:audit -- --no-external-fixtures` for the current Codex path.
 - Run `bun run recipes:evaluate -- --dry-run --out=logs/recipe-prompt-quality`.
 - Capture per recipe:
   - `Generation Task Spec` char count.
@@ -56,12 +56,12 @@ Tasks:
   - prompt estimate.
   - directive-vs-legacy delta.
   - repeated boilerplate lines.
-- Identify top 5 highest-cost recipes or presets.
+- Identify the top 5 highest-cost recipes or presets.
 - Do not commit generated logs unless repo policy already allows that exact artifact.
 
 Acceptance:
 
-- Agent can name which recipes waste most prompt budget.
+- Agent can name which recipes waste the most prompt budget.
 - No optimization starts from guesswork.
 
 ### 2. Provider Session Contract hardening
@@ -75,9 +75,9 @@ Tasks:
   - safety around paths/secrets;
   - artifact import expectations;
   - no repeated recipe-specific creative prose.
-- Move repeated stable prompt fragments out of per-job compiled input.
-- Ensure Codex persistent thread/developer instructions reuse same contract.
-- Add or update test proving compiled Codex input omits stable boilerplate while still references session contract.
+- Move repeated stable prompt fragments out of the per-job compiled input.
+- Ensure the Codex persistent thread/developer instructions reuse the same contract.
+- Add or update a test proving the compiled Codex input omits stable boilerplate while still referencing the session contract.
 
 Acceptance:
 
@@ -88,11 +88,11 @@ Acceptance:
 
 Tasks:
 
-- For each concrete provider compiler, verify compiled input contains:
+- For each concrete provider compiler, verify the compiled input contains:
   - provider id;
   - task;
   - compact prompt or provider fields;
-  - localPath/sourceUrl asset refs only;
+  - `localPath`/`sourceUrl` asset refs only;
   - provider options needed for execution;
   - no inline image bytes;
   - no Provider Secret values;
@@ -108,7 +108,7 @@ Tasks:
 
 Acceptance:
 
-- Provider compilers stay behind Provider Boundary.
+- Provider compilers stay behind the Provider Boundary.
 - Audit proves compactness and leak safety.
 
 ### 4. Batch-level context sharing
@@ -116,7 +116,7 @@ Acceptance:
 Tasks:
 
 - Inspect `services/localGenerationRun.ts` and backend job creation.
-- Identify data repeated per item in same batch:
+- Identify data repeated per item in the same batch:
   - stable recipe metadata;
   - provider selection;
   - shared prompt base;
@@ -126,7 +126,7 @@ Tasks:
 - Keep one `batch-*` id and one compact per-job variation delta.
 - Preserve per-job `spec-*` id for traceability.
 - Avoid changing Catalog Entry grouping semantics without ADR/update.
-- Add focused test for `batchCount > 1` proving shared context does not mutate variation prompts.
+- Add a focused test for `batchCount > 1` proving shared context does not mutate variation prompts.
 
 Acceptance:
 
@@ -176,16 +176,16 @@ bun run check
 bun run build
 ```
 
-If full gates fail from unrelated existing repo state, report exact command, failing files, and why touched scope is still verified.
+If full gates fail from unrelated existing repo state, report the exact command, failing files, and why touched scope is still verified.
 
 ## Risks
 
 | Risk                                   | Mitigation                                                                                          |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Quality drops after compacting prompts | Run `recipes:evaluate:live -- --execute` for representative recipes before removing legacy context. |
-| Traceability lost                      | Store rich `Generation Task Spec`; send compact `Compiled Provider Input`.                          |
+| Traceability lost                      | Store the rich `Generation Task Spec`; send a compact `Compiled Provider Input`.                    |
 | Secret leak in compiled/debug payload  | Add tests for Provider Secret redaction and inline-data absence.                                    |
-| Provider-specific quality regression   | Keep provider compilers specialized behind shared boundary.                                         |
+| Provider-specific quality regression   | Keep provider compilers specialized behind the shared boundary.                                     |
 
 ## Done checklist
 

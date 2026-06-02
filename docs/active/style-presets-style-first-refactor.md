@@ -1,28 +1,30 @@
 # Style Presets Style-First Refactor (Phase 1)
 
-Este refactor corrige presets que describían escenas específicas en lugar de estilos reutilizables. El objetivo es que cada preset funcione como **gramática visual abstracta** (transferible entre sujetos) y no como micro-narrativa fija.
+> **Note:** This file is a chronological refactor log. The intro, quick path, key decisions, and IP/title note below are translated. Per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the refactor waves settle. Per-preset rows are mostly file paths and need no translation.
+
+This refactor fixes presets that described specific scenes instead of reusable styles. The goal is for every preset to act as an **abstract visual grammar** (transferable across subjects) and not as a fixed micro-narrative.
 
 ## Quick path
 
-1. Editar presets 1-a-1 (sin generación masiva) y reescribir `visualDna` en modo style-first.
-2. Validar manifiestos por pack y luego validación completa de estilos.
-3. Continuar por tandas priorizando packs/categorías con mayor drift de escena.
+1. Edit presets one by one (no mass generation) and rewrite `visualDna` in style-first mode.
+2. Validate manifests per pack, then run full style validation.
+3. Continue in waves, prioritizing packs/categories with the highest scene drift.
 
-## Decisiones clave
+## Key decisions
 
-| Tema                   | Decisión                                                                                                           |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Identidad de preset    | La identidad vive en trazo, paleta, iluminación, materialidad, composición y acabado; no en lugar/acción concreta. |
-| Referencias de autor   | Si el preset es explícitamente de autor/escuela, se conserva el nombre del autor como ancla estilística.           |
-| Campo `creative_brief` | Debe explicar lógica visual y transferibilidad del estilo, no contar una escena cerrada.                           |
-| Refactor               | Manual 1-a-1 en presets críticos para evitar clones de keywords y plantillas narrativas.                           |
-| Calidad                | Mantener diferenciación entre presets vecinos de una misma categoría.                                              |
-| IP/título              | IPs, títulos y nombres de obra pueden mantenerse como ancla estilística; sólo se cambian si fuerzan escena/props.  |
+| Topic                  | Decision                                                                                                       |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Preset identity        | Identity lives in line, palette, lighting, materiality, composition, and finish; not in concrete place/action. |
+| Author references      | If the preset is explicitly of an author/school, the author name is kept as a stylistic anchor.                |
+| `creative_brief` field | Must explain the visual logic and transferability of the style, not tell a closed scene.                       |
+| Refactor approach      | Manual one-by-one on critical presets to avoid keyword clones and narrative templates.                         |
+| Quality                | Keep differentiation between neighbor presets in the same category.                                            |
+| IP/title               | IP names, titles, and work names may stay as a stylistic anchor; they only change when they force scene/props. |
 
-Nota: algunas entradas históricas de esta bitácora dicen “retirar IP/nombres”.
-Desde esta corrección, esa frase debe leerse como “retirar la IP como requisito
-visual obligatorio cuando bloquea la libertad del preset”, no como regla general
-de borrar títulos.
+Note: some historical entries in this log say "remove IP/names".
+From this correction onward, that sentence should be read as "remove the IP as a
+mandatory visual requirement when it blocks the preset's freedom", not as a
+general rule for deleting titles.
 
 ## Implementación completada (Phase 1)
 
