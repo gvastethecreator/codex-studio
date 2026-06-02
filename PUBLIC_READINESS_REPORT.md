@@ -21,7 +21,7 @@ This pass landed in **two commits** on top of the prior tip:
 
 Plus a **full-history rewrite** that:
 
-- Replaced every occurrence of the literal string `cristian` with `user` across every commit blob.
+- Replaced every occurrence of the previous personal Windows username with the literal `user` across every commit blob.
 - Removed all 15 `assets/recipes/styles/defaults/failures-pack_*.json` files from every commit they ever appeared in.
 
 A safety bundle of the pre-rewrite repo state was created at `C:\Users\<your-user>\AppData\Local\Temp\opencode\codex-studio-prerewrite-backup.bundle` (about 619 MB). It can restore the original history with `git clone <bundle> codex-studio-restored` if you ever need to undo this work.
@@ -35,7 +35,7 @@ A safety bundle of the pre-rewrite repo state was created at `C:\Users\<your-use
 - `M  SECURITY.md` — translated to English
 - `M  PUBLIC_READINESS_REPORT.md` — this file
 - `M  README.md`, `ROADMAP.md`, plus ~40 other files — formatter pass via `bun run check:fix`; pure whitespace, no semantic changes
-- `M  apps/local-server/src/codex/turnInput.test.ts` — replaced `C:/Users/cristian/...` with `/home/test-user/...` (3 sites)
+- `M  apps/local-server/src/codex/turnInput.test.ts` — replaced personal Windows path `C:/Users/<old-username>/...` with `/home/test-user/...` (3 sites)
 - `M  lib/jobInspectorFormatter.test.ts` — added `quality: null` to 4 `GenerationTaskSpec` fixtures (the field is now required by the schema)
 - `M  lib/studioJobRetry.test.ts` — added `quality: null` to 1 `GenerationTaskSpec` fixture
 
@@ -67,13 +67,13 @@ Personal-data-leaking runtime telemetry (also purged from history):
   - test-fixture placeholder strings such as `'secret-google-key'`, `'secret-google-value'`, `FAL_API_KEY_SHOULD_NOT_LEAK`, `SECRET_INLINE_IMAGE` — these are sentinels used to prove that secrets do **not** leak into provider payloads
 - Pattern scans for real key shapes (`sk-...`, `ghp_...`, `AKIA...`, Slack `xox[abp]-...`) returned no matches
 - No personal emails in tracked content
-- Personal local username `cristian` no longer appears in any tracked source or any commit blob
+- Personal local username no longer appears in any tracked source or any commit blob
 
 ### Git history
 
 - The pre-rewrite history was searched for additions of `.env`, `.env.local`, `*.sqlite`, `*.pem`, `*.key`, `*.crt`: none ever committed
 - Pattern scan for real OpenAI keys (`sk-[A-Za-z0-9]{20,}`) and `OPENAI_API_KEY = sk-...` returned no matches across all branches
-- After `git filter-repo`: searching the entire object database for `cristian` returns zero hits
+- After `git filter-repo`: searching the entire object database for the previous personal username returns zero hits
 - After `git filter-repo`: the 15 `failures-pack_*.json` paths no longer exist in any commit on any branch
 
 ### Assets needing rights review
@@ -89,7 +89,7 @@ What the rewrite did exactly:
 
 - Used `git filter-repo` v2.47.0 (installed locally via `pip install --user git-filter-repo`).
 - `--invert-paths --path-glob 'assets/recipes/styles/defaults/failures-pack_*.json'` removed those files from every blob in history.
-- `--replace-text` mapped the literal `cristian` → `user` everywhere in remaining blob contents.
+- `--replace-text` mapped the previous personal username literal to `user` everywhere in remaining blob contents.
 - The `origin` remote was removed as a safety measure by filter-repo, then re-added locally.
 
 What it did NOT do:
