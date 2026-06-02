@@ -18,14 +18,7 @@ type PackConfig = {
 
 const rootDir = process.cwd();
 const packsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'manifests', 'packs');
-const presetRoot = path.join(
-  rootDir,
-  'components',
-  'recipes',
-  'styles',
-  'manifests',
-  'presets',
-);
+const presetRoot = path.join(rootDir, 'components', 'recipes', 'styles', 'manifests', 'presets');
 
 function isObject(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
@@ -112,7 +105,10 @@ const PACK_CONFIGS: PackConfig[] = [
       {
         id: 'subcultures',
         name: '2. Subcultures',
-        presetRefs: explicitRefs('pack_08', [2, 4, 7, 8, 14, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]),
+        presetRefs: explicitRefs(
+          'pack_08',
+          [2, 4, 7, 8, 14, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+        ),
       },
       {
         id: 'historical-and-fantasy',
@@ -122,12 +118,21 @@ const PACK_CONFIGS: PackConfig[] = [
       {
         id: 'fantasy-sci-fi-costume',
         name: '4. Fantasy Sci-Fi Costume',
-        presetRefs: explicitRefs('pack_08', [6, 9, 13, 15, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 65, 78, 79, 80]),
+        presetRefs: explicitRefs(
+          'pack_08',
+          [6, 9, 13, 15, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 65, 78, 79, 80],
+        ),
       },
       {
         id: 'fabric-and-texture-focus',
         name: '5. Fabric & Texture Focus',
-        presetRefs: explicitRefs('pack_08', [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]),
+        presetRefs: explicitRefs(
+          'pack_08',
+          [
+            51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 66, 67, 68, 69, 70, 71, 72, 73,
+            74, 75, 76, 77,
+          ],
+        ),
       },
     ],
   },
@@ -221,14 +226,13 @@ async function rewritePack(config: PackConfig) {
   const pack = yaml.load(await readFile(packManifestPath, 'utf8'));
   if (!isObject(pack)) throw new Error(`${config.packId} manifest is not an object`);
 
-  const presetRefs = Array.isArray(pack.presetRefs)
-    ? (pack.presetRefs as string[])
-    : [];
+  const presetRefs = Array.isArray(pack.presetRefs) ? (pack.presetRefs as string[]) : [];
   const expected = new Set(presetRefs);
   const categoryRefs = config.categories.flatMap((category) => category.presetRefs);
   const seen = new Set<string>();
   for (const refPath of categoryRefs) {
-    if (seen.has(refPath)) throw new Error(`${config.packId} duplicate ref in categories: ${refPath}`);
+    if (seen.has(refPath))
+      throw new Error(`${config.packId} duplicate ref in categories: ${refPath}`);
     seen.add(refPath);
   }
   if (seen.size !== expected.size) {
@@ -286,7 +290,9 @@ async function rewritePack(config: PackConfig) {
     await writeFile(presetPath, dumpYaml(nextPreset), 'utf8');
   }
 
-  console.log(`[${config.packId}] rewrote ${presetRefs.length} presets across ${config.categories.length} categories`);
+  console.log(
+    `[${config.packId}] rewrote ${presetRefs.length} presets across ${config.categories.length} categories`,
+  );
 }
 
 async function renamePack05VisionaryBucket() {

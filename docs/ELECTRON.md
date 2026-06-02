@@ -29,11 +29,11 @@ La complejidad no es abrir una ventana Electron: es empaquetar correctamente el 
 
 ## Estrategia por fases
 
-| Fase | Objetivo |
-|------|----------|
-| 1 | Renderer preparado (seam runtime estable) |
-| 2 | Adaptador desktop mínimo (`main` + `preload`) |
-| 3 | Empaquetado serio (Bun embebido o runtime alternativo) |
+| Fase | Objetivo                                               |
+| ---- | ------------------------------------------------------ |
+| 1    | Renderer preparado (seam runtime estable)              |
+| 2    | Adaptador desktop mínimo (`main` + `preload`)          |
+| 3    | Empaquetado serio (Bun embebido o runtime alternativo) |
 
 ## Decisión práctica actual
 

@@ -134,10 +134,9 @@ export function createStyleBrowserRenderPlan({
   processedData,
   showAllStyleCategories,
 }: CreateStyleBrowserRenderPlanInput): StyleBrowserRenderPlan {
-  const styleGroupEntries = (Object.entries(processedData.groups) as [
-    string,
-    StyleRuntimePreset[],
-  ][]).sort(([firstCategory], [secondCategory]) =>
+  const styleGroupEntries = (
+    Object.entries(processedData.groups) as [string, StyleRuntimePreset[]][]
+  ).sort(([firstCategory], [secondCategory]) =>
     compareStyleCategoryNames(firstCategory, secondCategory),
   );
   const visibleStyleGroupEntries = showAllStyleCategories

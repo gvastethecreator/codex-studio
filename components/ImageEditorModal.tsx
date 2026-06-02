@@ -93,10 +93,11 @@ function ImageEditorControlsPanel({
           onClick={onGenerate}
           disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
           className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
-                    ${isGenerating
-              ? 'bg-accent-500/10 text-accent-500/40'
-              : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
-            } disabled:opacity-20 disabled:pointer-events-none`}
+                    ${
+                      isGenerating
+                        ? 'bg-accent-500/10 text-accent-500/40'
+                        : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
+                    } disabled:opacity-20 disabled:pointer-events-none`}
         >
           {isGenerating ? (
             <div className="size-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
@@ -219,7 +220,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       x,
       y,
       (brushSize * (canvasRef.current!.width / canvasRef.current!.getBoundingClientRect().width)) /
-      2,
+        2,
       0,
       Math.PI * 2,
     );

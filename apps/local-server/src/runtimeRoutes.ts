@@ -1,11 +1,11 @@
-import { spawnSync } from "node:child_process";
-import { Hono } from "hono";
-import type { AppServerEnsureReason } from "../../../packages/shared/src";
-import type { getSettings } from "./config";
-import type { resolveCodexInvocation } from "./codexExecutable";
-import type { getAppServerDiagnostics } from "./codex/processSupervisor";
-import type { inspectLibrary } from "./library";
-import type { WorkerStatus } from "./worker";
+import { spawnSync } from 'node:child_process';
+import { Hono } from 'hono';
+import type { AppServerEnsureReason } from '../../../packages/shared/src';
+import type { getSettings } from './config';
+import type { resolveCodexInvocation } from './codexExecutable';
+import type { getAppServerDiagnostics } from './codex/processSupervisor';
+import type { inspectLibrary } from './library';
+import type { WorkerStatus } from './worker';
 
 interface RuntimeRoutesDependencies {
   readSettings: () => ReturnType<typeof getSettings>;
@@ -35,15 +35,15 @@ export function createRuntimeRoutes({
   const routes = new Hono();
 
   const bunVersion =
-    typeof globalThis === "object" && "Bun" in globalThis
+    typeof globalThis === 'object' && 'Bun' in globalThis
       ? ((globalThis as { Bun?: { version?: string } }).Bun?.version ?? null)
       : null;
 
-  routes.get("/health", (c) => {
+  routes.get('/health', (c) => {
     const settings = readSettings();
     const library = inspectLibrary();
-    const [command, ...args] = resolveCodexInvocation(["--version"]);
-    const codex = spawnSync(command, args, { encoding: "utf8" });
+    const [command, ...args] = resolveCodexInvocation(['--version']);
+    const codex = spawnSync(command, args, { encoding: 'utf8' });
     const codexAvailable = codex.status === 0;
     const appServerDiagnostics = readAppServerDiagnostics();
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
@@ -75,7 +75,7 @@ export function createRuntimeRoutes({
       codexCli: {
         available: codexAvailable,
         version: codexAvailable ? codex.stdout.trim() : null,
-        command: [command, ...args].join(" "),
+        command: [command, ...args].join(' '),
       },
       appServer: {
         running: appServerRunning,
@@ -83,7 +83,7 @@ export function createRuntimeRoutes({
         pid: appServerDiagnostics.pid,
         lastExitCode: appServerDiagnostics.lastExitCode,
         lastExitAt: appServerDiagnostics.lastExitAt,
-        lastInvocation: appServerDiagnostics.lastInvocation?.join(" ") ?? null,
+        lastInvocation: appServerDiagnostics.lastInvocation?.join(' ') ?? null,
         lastStartAt: appServerDiagnostics.lastStartAt,
         lastStartError: appServerDiagnostics.lastStartError,
         lastEnsureAt: appServerDiagnostics.lastEnsureAt,
@@ -98,8 +98,8 @@ export function createRuntimeRoutes({
     });
   });
 
-  routes.post("/app-server/start", (c) => {
-    ensureAppServer("user");
+  routes.post('/app-server/start', (c) => {
+    ensureAppServer('user');
     const diagnostics = readAppServerDiagnostics();
     return c.json({
       running: isAppServerRunning(),
@@ -109,7 +109,7 @@ export function createRuntimeRoutes({
     });
   });
 
-  routes.get("/bootstrap-config", (c) => c.json(readSettings()));
+  routes.get('/bootstrap-config', (c) => c.json(readSettings()));
 
   return routes;
 }

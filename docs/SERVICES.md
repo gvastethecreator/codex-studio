@@ -55,12 +55,12 @@ Persistencia SQLite para settings, jobs, catálogo, librerías y logs.
 
 ## Decisiones de integración
 
-| Tema | Decisión |
-|------|----------|
-| Fuente durable | SQLite + Image Catalog |
-| Eventos en vivo | SSE compartido (`/api/events`) |
+| Tema                 | Decisión                                |
+| -------------------- | --------------------------------------- |
+| Fuente durable       | SQLite + Image Catalog                  |
+| Eventos en vivo      | SSE compartido (`/api/events`)          |
 | Modelo visual legacy | `GenerationBatch[]` sólo compatibilidad |
-| Runtime principal | Codex vía `codex app-server` |
+| Runtime principal    | Codex vía `codex app-server`            |
 
 ## Próximo paso
 

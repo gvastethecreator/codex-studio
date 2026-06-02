@@ -51,22 +51,22 @@ Codex Studio is an open-source image creation environment built for fast local i
 
 Codex Studio starts with a strong image-generation core and a clear path to broader workflow support.
 
-| Scope | Current status | Direction |
-|------|----------------|-----------|
-| Image generation/editing | Production-ready locally | Continue hardening and quality improvements |
-| Workflow model | Codex-first runtime | Add more workflow types over time |
-| Provider boundary | Adapter-based | Expand provider compatibility without UI rewrites |
-| Studio UX | Unified queue + review surfaces | Keep one coherent UX across workflow families |
+| Scope                    | Current status                  | Direction                                         |
+| ------------------------ | ------------------------------- | ------------------------------------------------- |
+| Image generation/editing | Production-ready locally        | Continue hardening and quality improvements       |
+| Workflow model           | Codex-first runtime             | Add more workflow types over time                 |
+| Provider boundary        | Adapter-based                   | Expand provider compatibility without UI rewrites |
+| Studio UX                | Unified queue + review surfaces | Keep one coherent UX across workflow families     |
 
 ## Open-source launch positioning
 
 Codex Studio is being prepared as an open-source platform for image-first creation that can evolve into a multi-workflow studio runtime.
 
-| Pillar | What this means in practice |
-|------|------------------------------|
-| Image-first excellence | Prioritize quality, speed, and reliability for image generation/editing |
-| Workflow extensibility | Introduce new workflow families without fragmenting UX |
-| Local-first reliability | Keep durable history, assets, and logs under your control |
+| Pillar                            | What this means in practice                                              |
+| --------------------------------- | ------------------------------------------------------------------------ |
+| Image-first excellence            | Prioritize quality, speed, and reliability for image generation/editing  |
+| Workflow extensibility            | Introduce new workflow families without fragmenting UX                   |
+| Local-first reliability           | Keep durable history, assets, and logs under your control                |
 | Contributor-friendly architecture | Clear boundaries, shared contracts, and docs that reduce onboarding time |
 
 ## How it works
@@ -127,13 +127,13 @@ bun run validate:full
 
 ## Core technical decisions
 
-| Topic | Decision |
-|------|----------|
-| Durable source of truth | `SQLite + Image Catalog` |
-| Compatibility visual cache | `GenerationBatch[]` in IndexedDB (compatibility-only) |
-| Live events | `GET /api/events` (SSE) |
-| Canonical local session endpoint | `/api/codex/session` |
-| Product philosophy | Codex-first, local-first, library-backed |
+| Topic                            | Decision                                              |
+| -------------------------------- | ----------------------------------------------------- |
+| Durable source of truth          | `SQLite + Image Catalog`                              |
+| Compatibility visual cache       | `GenerationBatch[]` in IndexedDB (compatibility-only) |
+| Live events                      | `GET /api/events` (SSE)                               |
+| Canonical local session endpoint | `/api/codex/session`                                  |
+| Product philosophy               | Codex-first, local-first, library-backed              |
 
 ## Repository layout
 

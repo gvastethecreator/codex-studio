@@ -123,7 +123,9 @@ async function main() {
     await writeFile(presetPath, dumpYaml(nextPreset), 'utf8');
   }
 
-  console.log(`[pack_05] rewrote ${presetRefs.length} presets across ${categories.length} categories`);
+  console.log(
+    `[pack_05] rewrote ${presetRefs.length} presets across ${categories.length} categories`,
+  );
 }
 
 await main();

@@ -1,15 +1,15 @@
-import { statSync } from "node:fs";
-import path from "node:path";
-import type { registerCatalogImage } from "./catalog";
-import type { addAsset, addJobEvent, getJob, updateJobStatus } from "./db";
-import type { publishEvent } from "./events";
-import type { toPublicAssetUrl } from "./library";
-import type { log } from "./logger";
-import type { embedMetadata } from "./metadataEmbedder";
-import type { parsePromptTransport } from "../../../packages/shared/src/promptTransport";
-import type { Job } from "../../../packages/shared/src/types";
-import type { resolveJobExecutionOptions } from "./codex/executionOptions";
-import type { resolveJobCatalogContext } from "./workerCatalogContext";
+import { statSync } from 'node:fs';
+import path from 'node:path';
+import type { registerCatalogImage } from './catalog';
+import type { addAsset, addJobEvent, getJob, updateJobStatus } from './db';
+import type { publishEvent } from './events';
+import type { toPublicAssetUrl } from './library';
+import type { log } from './logger';
+import type { embedMetadata } from './metadataEmbedder';
+import type { parsePromptTransport } from '../../../packages/shared/src/promptTransport';
+import type { Job } from '../../../packages/shared/src/types';
+import type { resolveJobExecutionOptions } from './codex/executionOptions';
+import type { resolveJobCatalogContext } from './workerCatalogContext';
 
 interface WorkerAssetFinalizerDependencies {
   registerCatalogImage: typeof registerCatalogImage;
@@ -115,29 +115,29 @@ export function createWorkerAssetFinalizer({
         recipe: parsedPrompt.recipeId,
         batchId: catalogContext.batchId ?? job.id,
         generatedAt: new Date().toISOString(),
-        studioVersion: "0.0.0",
+        studioVersion: '0.0.0',
         libraryId: catalogImage.libraryId,
         catalogId: catalogImage.id,
       }).catch((error) => {
         logger(
-          "warn",
-          "metadata",
+          'warn',
+          'metadata',
           `Metadata embed failed: ${error instanceof Error ? error.message : String(error)}`,
           job.id,
         );
       });
     }
 
-    addJobEvent(job.id, "asset.created", `${options.logPrefix} asset imported.`, {
+    addJobEvent(job.id, 'asset.created', `${options.logPrefix} asset imported.`, {
       assetId: asset.id,
     });
-    publishEvent("asset.created", asset);
-    publishEvent("catalog.created", catalogImage);
-    updateJobStatus(job.id, "completed");
-    publishEvent("job.completed", getJob(job.id));
+    publishEvent('asset.created', asset);
+    publishEvent('catalog.created', catalogImage);
+    updateJobStatus(job.id, 'completed');
+    publishEvent('job.completed', getJob(job.id));
     logger(
-      "info",
-      "worker",
+      'info',
+      'worker',
       `${options.logPrefix} job completed. Asset: ${path.basename(asset.filePath)}`,
       job.id,
     );

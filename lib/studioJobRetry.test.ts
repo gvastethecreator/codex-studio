@@ -28,6 +28,7 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
             strength: 0.35,
           },
         ],
+        quality: null,
         output: {
           count: 1,
           aspectRatio: '1:1',

@@ -42,7 +42,11 @@ interface PackCoverage {
 }
 
 function argValue(name: string) {
-  return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=').slice(1).join('=');
+  return process.argv
+    .find((arg) => arg.startsWith(`--${name}=`))
+    ?.split('=')
+    .slice(1)
+    .join('=');
 }
 
 function parseThreshold() {
@@ -171,7 +175,10 @@ async function loadQualityRows(rootDir: string) {
         'camera_and_composition',
         'spatial_distortion',
       ]),
-      atmosphereAndMood: getVisualDnaValue(manifest.visualDna, ['atmosphere_and_mood', 'atmosphere']),
+      atmosphereAndMood: getVisualDnaValue(manifest.visualDna, [
+        'atmosphere_and_mood',
+        'atmosphere',
+      ]),
     });
   }
   return rows;
@@ -220,9 +227,7 @@ function createRedundancyPairs(rows: PresetQualityRow[], threshold: number) {
 
         const sameCategory = left.category === right.category;
         const crossCategoryMatch =
-          score >= Math.max(0.92, threshold + 0.08) &&
-          aestheticScore >= 0.7 &&
-          nameScore >= 0.28;
+          score >= Math.max(0.92, threshold + 0.08) && aestheticScore >= 0.7 && nameScore >= 0.28;
 
         const isStrongMatch =
           score >= threshold &&

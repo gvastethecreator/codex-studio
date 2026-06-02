@@ -1,11 +1,11 @@
-import { existsSync, mkdirSync, renameSync } from "node:fs";
-import path from "node:path";
-import { buildOutputAssetRelativePath } from "./outputOrganization";
-import type { Job } from "../../../packages/shared/src/types";
-import type { resolveJobExecutionOptions } from "./codex/executionOptions";
-import type { readEditableStudioSettings } from "./studioSettingsStore";
-import type { getSettingValue, setSettingValue } from "./db";
-import type { resolveLibraryPath } from "./library";
+import { existsSync, mkdirSync, renameSync } from 'node:fs';
+import path from 'node:path';
+import { buildOutputAssetRelativePath } from './outputOrganization';
+import type { Job } from '../../../packages/shared/src/types';
+import type { resolveJobExecutionOptions } from './codex/executionOptions';
+import type { readEditableStudioSettings } from './studioSettingsStore';
+import type { getSettingValue, setSettingValue } from './db';
+import type { resolveLibraryPath } from './library';
 
 function resolveUniquePath(filePath: string) {
   if (!existsSync(filePath)) return filePath;
@@ -19,10 +19,10 @@ function resolveUniquePath(filePath: string) {
 
 export function inferGeneratedAssetMimeType(filePath: string) {
   const ext = path.extname(filePath).toLowerCase();
-  if (ext === ".jpg" || ext === ".jpeg") return "image/jpeg";
-  if (ext === ".webp") return "image/webp";
-  if (ext === ".svg") return "image/svg+xml";
-  return "image/png";
+  if (ext === '.jpg' || ext === '.jpeg') return 'image/jpeg';
+  if (ext === '.webp') return 'image/webp';
+  if (ext === '.svg') return 'image/svg+xml';
+  return 'image/png';
 }
 
 interface CreateWorkerAssetPathingDependencies {
@@ -57,7 +57,7 @@ export function createWorkerAssetPathing({
   }
 
   function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {
-    const ext = path.extname(filePath).toLowerCase() || ".png";
+    const ext = path.extname(filePath).toLowerCase() || '.png';
     const targetPath = resolveGeneratedAssetTargetPath(job, providerId, ext);
 
     if (path.resolve(filePath) === path.resolve(targetPath)) return filePath;

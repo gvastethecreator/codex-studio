@@ -1,9 +1,9 @@
-import { Hono } from "hono";
+import { Hono } from 'hono';
 import type {
   CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
-} from "../../../packages/shared/src";
+} from '../../../packages/shared/src';
 
 interface CodexRoutesDependencies {
   readCodexModelCatalog: () => Promise<CodexModelCatalogResponse>;
@@ -18,11 +18,11 @@ export function createCodexRoutes({
 }: CodexRoutesDependencies) {
   const routes = new Hono();
 
-  routes.get("/models", async (c) => c.json(await readCodexModelCatalog()));
+  routes.get('/models', async (c) => c.json(await readCodexModelCatalog()));
 
-  routes.get("/session", async (c) => c.json(await readLocalCodexSession()));
+  routes.get('/session', async (c) => c.json(await readLocalCodexSession()));
 
-  routes.get("/account", async (c) => c.json(await readCodexAccountStatus()));
+  routes.get('/account', async (c) => c.json(await readCodexAccountStatus()));
 
   return routes;
 }

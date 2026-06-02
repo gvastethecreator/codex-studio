@@ -22,13 +22,13 @@ Codex Studio ya está alineado en pilares clave:
 
 ## Fases
 
-| Fase | Objetivo | Resultado esperado |
-|------|----------|--------------------|
-| 0 | Estabilizar shell actual | Navegación y estados globales más claros |
-| 1 | Cerrar transición catalog-first | UI alineada con SQLite/Image Catalog |
-| 2 | Mejorar operabilidad | Fallos comunes con diagnóstico accionable |
-| 3 | Setup y portabilidad | Instalación más simple en Win/macOS/Linux |
-| 4 | Release candidate OSS | Repo listo para exposición pública |
+| Fase | Objetivo                        | Resultado esperado                        |
+| ---- | ------------------------------- | ----------------------------------------- |
+| 0    | Estabilizar shell actual        | Navegación y estados globales más claros  |
+| 1    | Cerrar transición catalog-first | UI alineada con SQLite/Image Catalog      |
+| 2    | Mejorar operabilidad            | Fallos comunes con diagnóstico accionable |
+| 3    | Setup y portabilidad            | Instalación más simple en Win/macOS/Linux |
+| 4    | Release candidate OSS           | Repo listo para exposición pública        |
 
 ## Prioridades cercanas
 

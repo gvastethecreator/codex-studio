@@ -210,13 +210,7 @@ export function useWorkspaceStrip({
         addToast('Workspace removed from the active Studio', 'info');
       });
     },
-    [
-      addToast,
-      clearWorkspace,
-      deleteWorkspace,
-      onRequestDeleteWorkspace,
-      workspacesWithThumbs,
-    ],
+    [addToast, clearWorkspace, deleteWorkspace, onRequestDeleteWorkspace, workspacesWithThumbs],
   );
 
   const handleRenameWorkspace = useCallback(

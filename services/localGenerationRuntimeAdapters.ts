@@ -1,6 +1,6 @@
 function createAbortError() {
-  const error = new Error("Operation cancelled by user");
-  error.name = "AbortError";
+  const error = new Error('Operation cancelled by user');
+  error.name = 'AbortError';
   return error;
 }
 
@@ -21,17 +21,17 @@ export function waitForGenerationDelay(durationMs: number, signal?: AbortSignal)
 
   return new Promise<void>((resolve, reject) => {
     const timeout = window.setTimeout(() => {
-      signal.removeEventListener("abort", handleAbort);
+      signal.removeEventListener('abort', handleAbort);
       resolve();
     }, durationMs);
 
     const handleAbort = () => {
       window.clearTimeout(timeout);
-      signal.removeEventListener("abort", handleAbort);
+      signal.removeEventListener('abort', handleAbort);
       reject(createAbortError());
     };
 
-    signal.addEventListener("abort", handleAbort, { once: true });
+    signal.addEventListener('abort', handleAbort, { once: true });
   });
 }
 
@@ -40,16 +40,16 @@ export function waitForGenerationDelay(durationMs: number, signal?: AbortSignal)
  * generation backend.
  */
 export async function toGenerationDataUrl(src: string) {
-  if (src.startsWith("data:")) return src;
+  if (src.startsWith('data:')) return src;
   const response = await fetch(src);
   if (!response.ok) throw new Error(`Unable to read input image: ${response.status}`);
   const blob = await response.blob();
   return new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
-    reader.onerror = () => reject(new Error("Unable to encode input image"));
+    reader.onerror = () => reject(new Error('Unable to encode input image'));
     reader.onload = () => {
-      if (typeof reader.result !== "string") {
-        reject(new Error("Unable to encode input image as a data URL"));
+      if (typeof reader.result !== 'string') {
+        reject(new Error('Unable to encode input image as a data URL'));
         return;
       }
 
@@ -60,5 +60,5 @@ export async function toGenerationDataUrl(src: string) {
 }
 
 export function isGenerationCancellationError(error: unknown) {
-  return error instanceof Error && (error.name === "AbortError" || /cancel/i.test(error.message));
+  return error instanceof Error && (error.name === 'AbortError' || /cancel/i.test(error.message));
 }

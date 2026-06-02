@@ -95,7 +95,6 @@ export async function loadStylePackManifests(
   return manifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
 }
 
-
 export async function loadStylePresetManifests(
   manifestsDir = stylePresetManifestsDir,
   options: StyleManifestScanOptions = {},

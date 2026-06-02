@@ -173,7 +173,6 @@ export const RightSystemPanel: React.FC<RightSystemPanelProps> = React.memo(
                 />
               </div>
             </button>
-
           </div>
 
           <div className="h-px w-full bg-white/5" />

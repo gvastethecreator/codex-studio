@@ -164,6 +164,7 @@ describe('buildJobInspectorDetailModel', () => {
               strength: 0.35,
             },
           ],
+          quality: null,
           output: {
             count: 1,
             aspectRatio: '1:1',
@@ -218,6 +219,7 @@ describe('buildJobInspectorDetailModel', () => {
               strength: 0.5,
             },
           ],
+          quality: null,
           output: {
             count: 1,
             aspectRatio: '1:1',
@@ -272,6 +274,7 @@ describe('buildJobInspectorDetailModel', () => {
               strength: 0.55,
             },
           ],
+          quality: null,
           output: {
             count: 1,
             aspectRatio: '1:1',
@@ -468,6 +471,7 @@ describe('buildJobInspectorDetailModel', () => {
               strength: 1,
             },
           ],
+          quality: null,
           output: {
             count: 1,
             aspectRatio: '1:1',

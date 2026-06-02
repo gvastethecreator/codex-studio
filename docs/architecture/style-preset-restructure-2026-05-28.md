@@ -140,8 +140,8 @@ Migration rule:
 - done: category ids normalized to `kebab-case` across active pack manifests.
 - done: `pack_12` normalized to `Video Game Originals Vault` with taxonomy/tag updates.
 - done: anime family split implemented as real 3-pack topology:
-   - `pack_05` -> `Anime Battle & Worlds`
-   - `pack_16` -> `Anime Classics & Prestige`
-   - `pack_13` -> `Anime Character & Lifestyle`
+  - `pack_05` -> `Anime Battle & Worlds`
+  - `pack_16` -> `Anime Classics & Prestige`
+  - `pack_13` -> `Anime Character & Lifestyle`
 - done: style graph/taxonomy validation passes via `styles:validate`.
 - note: `styles:verify` currently fails in this environment at `styles:render:verify` (`import.meta.glob is not a function` under Bun runtime), outside taxonomy graph correctness.

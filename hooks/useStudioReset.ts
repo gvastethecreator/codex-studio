@@ -3,10 +3,7 @@ import { resetStudioData as requestStudioResetData } from '../services/localStud
 import { clearAll as clearAllIndexedDb } from '../utils/idb';
 import { startViewTransition } from '../utils/transitionUtils';
 
-const DEFAULT_RESET_LOCAL_STORAGE_KEYS = [
-  'generation-config',
-  'user-wallet-balance',
-] as const;
+const DEFAULT_RESET_LOCAL_STORAGE_KEYS = ['generation-config', 'user-wallet-balance'] as const;
 
 interface UseStudioResetProps {
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;

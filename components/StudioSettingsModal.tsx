@@ -73,12 +73,12 @@ const OUTPUT_SUBFOLDER_PRESETS: {
   label: string;
   value: StudioOutputSubfolderToken[];
 }[] = [
-    { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
-    { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
-    { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
-    { label: 'Recipe / Date', value: ['recipe', 'date'] },
-    { label: 'No Subfolders', value: [] },
-  ];
+  { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
+  { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
+  { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
+  { label: 'Recipe / Date', value: ['recipe', 'date'] },
+  { label: 'No Subfolders', value: [] },
+];
 
 function encodeSubfolderTokens(value: StudioOutputSubfolderToken[]) {
   return value.join('/');
@@ -598,8 +598,8 @@ function SettingsOutputSourcesPanel({
         ))}
 
         {outputSources &&
-          outputSources.registry.sources.length === 0 &&
-          outputSourceCandidates.length === 0 ? (
+        outputSources.registry.sources.length === 0 &&
+        outputSourceCandidates.length === 0 ? (
           <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
             No external output sources detected.
           </div>

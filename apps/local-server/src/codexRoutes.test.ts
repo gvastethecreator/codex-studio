@@ -1,22 +1,22 @@
-import { describe, expect, it, vi } from "vite-plus/test";
-import { createCodexRoutes } from "./codexRoutes";
+import { describe, expect, it, vi } from 'vite-plus/test';
+import { createCodexRoutes } from './codexRoutes';
 
-describe("codexRoutes", () => {
-  it("returns model catalog snapshot", async () => {
+describe('codexRoutes', () => {
+  it('returns model catalog snapshot', async () => {
     const readCodexModelCatalog = vi.fn(async () => ({
       models: [],
       authMode: null,
       planType: null,
       recommendedDefaultModel: null,
-      source: "fallback" as const,
-      fetchedAt: "2026-05-29T00:00:00.000Z",
+      source: 'fallback' as const,
+      fetchedAt: '2026-05-29T00:00:00.000Z',
       error: null,
     }));
     const readLocalCodexSession = vi.fn(async () => {
-      throw new Error("readLocalCodexSession should not be called");
+      throw new Error('readLocalCodexSession should not be called');
     });
     const readCodexAccountStatus = vi.fn(async () => {
-      throw new Error("readCodexAccountStatus should not be called");
+      throw new Error('readCodexAccountStatus should not be called');
     });
 
     const routes = createCodexRoutes({
@@ -25,7 +25,7 @@ describe("codexRoutes", () => {
       readCodexAccountStatus,
     });
 
-    const response = await routes.request("/models");
+    const response = await routes.request('/models');
     expect(response.status).toBe(200);
 
     const payload = (await response.json()) as { models?: unknown[] };
@@ -33,16 +33,16 @@ describe("codexRoutes", () => {
     expect(readCodexModelCatalog).toHaveBeenCalledTimes(1);
   });
 
-  it("returns codex session and compatibility account snapshots", async () => {
+  it('returns codex session and compatibility account snapshots', async () => {
     const sessionPayload = {
-      authMode: "chatgpt" as const,
-      planType: "plus",
+      authMode: 'chatgpt' as const,
+      planType: 'plus',
       usage: null,
-      source: "app-server" as const,
-      fetchedAt: "2026-05-29T00:00:00.000Z",
+      source: 'app-server' as const,
+      fetchedAt: '2026-05-29T00:00:00.000Z',
       error: null,
-      authLabel: "ChatGPT login",
-      state: "ready" as const,
+      authLabel: 'ChatGPT login',
+      state: 'ready' as const,
       reason: null,
       isChatgptLogin: true,
       isSupportedAuthMode: true,
@@ -50,12 +50,12 @@ describe("codexRoutes", () => {
     };
 
     const readCodexModelCatalog = vi.fn(async () => {
-      throw new Error("readCodexModelCatalog should not be called");
+      throw new Error('readCodexModelCatalog should not be called');
     });
     const readLocalCodexSession = vi.fn(async () => sessionPayload);
     const readCodexAccountStatus = vi.fn(async () => ({
       ...sessionPayload,
-      source: "fallback" as const,
+      source: 'fallback' as const,
     }));
 
     const routes = createCodexRoutes({
@@ -64,14 +64,14 @@ describe("codexRoutes", () => {
       readCodexAccountStatus,
     });
 
-    const sessionResponse = await routes.request("/session");
+    const sessionResponse = await routes.request('/session');
     expect(sessionResponse.status).toBe(200);
     await expect(sessionResponse.json()).resolves.toEqual(sessionPayload);
 
-    const accountResponse = await routes.request("/account");
+    const accountResponse = await routes.request('/account');
     expect(accountResponse.status).toBe(200);
     await expect(accountResponse.json()).resolves.toEqual(
-      expect.objectContaining({ source: "fallback" }),
+      expect.objectContaining({ source: 'fallback' }),
     );
 
     expect(readLocalCodexSession).toHaveBeenCalledTimes(1);

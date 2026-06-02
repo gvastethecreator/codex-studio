@@ -11,11 +11,11 @@ describe('globalReducer', () => {
 
     const next = globalReducer(initial, {
       type: 'HYDRATE_STATE',
-        state: {
-          logs: undefined,
-          workspaces: undefined,
-        },
-      });
+      state: {
+        logs: undefined,
+        workspaces: undefined,
+      },
+    });
 
     expect(next.logs).toEqual(initial.logs);
     expect(next.workspaces).toEqual(initial.workspaces);
