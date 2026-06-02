@@ -1,15 +1,15 @@
-# Guía de contribución para Codex Studio
+# Contributing to Codex Studio
 
-Gracias por ayudar a convertir este repo en un proyecto open-source más robusto, claro e instalable.
+Thanks for helping turn this repo into a more robust, clearer, and installable open-source project.
 
-## Ruta rápida para contribuir
+## Quick path to contribute
 
-1. Lee `README.md` y `ROADMAP.md`.
-2. Levanta el entorno local con `bun run studio:init` + `bun run dev`.
-3. Haz un cambio pequeño, validable y con contexto.
-4. Corre checks mínimos antes del PR.
+1. Read `README.md` and `ROADMAP.md`.
+2. Bring up the local environment with `bun run studio:init` + `bun run dev`.
+3. Make a small, verifiable change with context.
+4. Run the minimum checks before opening a PR.
 
-## Setup recomendado
+## Recommended setup
 
 ```bash
 bun install
@@ -17,20 +17,20 @@ bun run studio:init
 bun run dev
 ```
 
-Opcional por separado:
+Optional, run servers separately:
 
 ```bash
 bun run dev:server
 bun run dev:ui
 ```
 
-## Requisitos
+## Requirements
 
-- Bun disponible en PATH.
-- Codex CLI instalado y autenticado localmente.
-- No depender de API keys para el flujo principal.
+- Bun available on `PATH`.
+- Codex CLI installed and authenticated locally.
+- No dependency on API keys for the main flow.
 
-## Checklist antes de abrir PR
+## Checklist before opening a PR
 
 ```bash
 bun run fmt:check
@@ -40,37 +40,37 @@ bun run test
 bun run build
 ```
 
-## Convenciones importantes
+## Important conventions
 
-- No commitear assets generados, logs, DBs SQLite ni contenido local de librería.
-- No commitear `.env.local` ni secretos reales.
-- Mantener experiencia local-first funcional sin `OPENAI_API_KEY`.
-- Documentar variables nuevas y scripts públicos en `README.md`.
-- Si cambias decisiones estructurales, deja rastro en `docs/adr/`.
+- Do not commit generated assets, logs, SQLite DBs, or local library content.
+- Do not commit `.env.local` or real secrets.
+- Keep the local-first experience working without `OPENAI_API_KEY`.
+- Document new variables and public scripts in `README.md`.
+- If you change structural decisions, leave a trace in `docs/adr/`.
 
-## Cómo reportar bugs útiles
+## How to file useful bug reports
 
-Incluye:
+Include:
 
-- SO
-- versión de Bun (`bun --version`)
-- versión de Codex (`codex --version`)
-- comando ejecutado
-- resultado esperado vs real
-- logs relevantes (`logs/tooling/` o logs de Studio Library)
+- operating system
+- Bun version (`bun --version`)
+- Codex version (`codex --version`)
+- command executed
+- expected vs actual result
+- relevant logs (`logs/tooling/` or Studio Library logs)
 
-## Qué aportes tienen más impacto hoy
+## Contributions with the most impact today
 
-- onboarding y mensajes de error
-- compatibilidad Windows/macOS/Linux
-- trazabilidad de jobs y assets
-- documentación pública
-- claridad de copy/UX en la UI
+- onboarding and error messages
+- Windows/macOS/Linux compatibility
+- job and asset traceability
+- public documentation
+- copy/UX clarity in the UI
 
-## Estilo de contribución
+## Contribution style
 
-Preferimos cambios pequeños, explicables y fáciles de verificar. Menos heroicidad; más claridad.
+We prefer small, explainable changes that are easy to verify. Less heroics, more clarity.
 
-## Código de conducta
+## Code of conduct
 
-Este proyecto sigue [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md).
+This project follows [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md).

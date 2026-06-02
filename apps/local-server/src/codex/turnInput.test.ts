@@ -22,8 +22,9 @@ describe('codex turn input', () => {
       ],
     });
 
+    const imagegenSkillPath = '/home/test-user/.codex/skills/.system/imagegen/SKILL.md';
     const input = buildCodexImagegenTurnInput({
-      imagegenSkillPath: 'C:/Users/user/.codex/skills/.system/imagegen/SKILL.md',
+      imagegenSkillPath,
       fallbackPrompt: sourceSpec.prompt,
       compiledInput: compileCodexImagegenInput({
         id: 'job-refs',
@@ -38,7 +39,7 @@ describe('codex turn input', () => {
       {
         type: 'skill',
         name: 'imagegen',
-        path: 'C:/Users/user/.codex/skills/.system/imagegen/SKILL.md',
+        path: imagegenSkillPath,
       },
       {
         type: 'localImage',
@@ -55,7 +56,7 @@ describe('codex turn input', () => {
 
   it('keeps the artifact denoise instruction in fallback turns', () => {
     const input = buildCodexImagegenTurnInput({
-      imagegenSkillPath: 'C:/Users/user/.codex/skills/.system/imagegen/SKILL.md',
+      imagegenSkillPath: '/home/test-user/.codex/skills/.system/imagegen/SKILL.md',
       fallbackPrompt: 'small brass key',
     });
 

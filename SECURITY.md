@@ -1,24 +1,24 @@
-# Política de seguridad
+# Security policy
 
-## Versiones soportadas
+## Supported versions
 
-Codex Studio está en etapa de preview open-source. Los fixes de seguridad se aplican sobre la rama principal mientras no existan releases estables.
+Codex Studio is in an open-source preview stage. Security fixes are applied on the main branch as long as no stable releases exist.
 
-## Reporte de vulnerabilidades
+## Reporting vulnerabilities
 
-No abras issues públicos para vulnerabilidades que involucren archivos locales, credenciales, Provider Secrets o exposición de assets.
+Do not open public issues for vulnerabilities that involve local files, credentials, Provider Secrets, or asset exposure.
 
-Reporta por canal privado del mantenedor e incluye:
+Report privately through the maintainer's private channel and include:
 
-- commit o versión afectada
-- sistema operativo
-- pasos para reproducir
-- impacto esperado/observado
-- logs saneados (sin secretos)
+- affected commit or version
+- operating system
+- steps to reproduce
+- expected vs observed impact
+- sanitized logs (no secrets)
 
-## Notas de seguridad local-first
+## Local-first security notes
 
-- Los secretos de proveedor deben permanecer fuera de Studio Settings persistidos en SQLite.
-- Nunca commitees `.env.local`, bases SQLite, logs, transcripts ni carpetas de librería local.
-- Trata las rutas de Studio Library como datos controlados por usuario.
-- Evita operaciones destructivas sobre rutas arbitrarias: registra/importa External Output Sources primero.
+- Provider Secrets must stay outside Studio Settings persisted in SQLite.
+- Never commit `.env.local`, SQLite databases, logs, transcripts, or local library folders.
+- Treat Studio Library paths as user-controlled data.
+- Avoid destructive operations on arbitrary paths: register or import External Output Sources first.

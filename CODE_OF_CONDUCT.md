@@ -1,27 +1,27 @@
-# Código de conducta
+# Code of conduct
 
-## Nuestro compromiso
+## Our commitment
 
-Nos comprometemos a que participar en Codex Studio sea una experiencia respetuosa, inclusiva y libre de acoso para todas las personas.
+We are committed to making participation in Codex Studio a respectful, inclusive, and harassment-free experience for everyone.
 
-## Comportamiento esperado
+## Expected behavior
 
-- Trato respetuoso y constructivo.
-- Asumir buena intención, aceptando feedback cuando el impacto no coincide con la intención.
-- Mantener foco en el proyecto y en quienes lo usan.
-- Priorizar reportes claros, ejemplos reproducibles y propuestas concretas.
+- Respectful and constructive interaction.
+- Assume good intent and accept feedback when impact does not match intent.
+- Keep the focus on the project and the people who use it.
+- Prioritize clear reports, reproducible examples, and concrete proposals.
 
-## Comportamiento no aceptable
+## Unacceptable behavior
 
-- Acoso, amenazas, insultos o lenguaje discriminatorio.
-- Contenido sexualizado en espacios del proyecto.
-- Publicación de información privada sin permiso explícito.
-- Interrupción sostenida de issues, PRs, discusiones o revisiones.
+- Harassment, threats, insults, or discriminatory language.
+- Sexualized content in project spaces.
+- Publishing private information without explicit permission.
+- Sustained disruption of issues, PRs, discussions, or reviews.
 
-## Aplicación
+## Enforcement
 
-El equipo mantenedor puede moderar comentarios, cerrar issues, bloquear usuarios o tomar otras acciones razonables cuando se incumpla este código.
+The maintainer team may moderate comments, close issues, block users, or take other reasonable actions when this code is violated.
 
-Si necesitas reportar un problema, usa el canal privado indicado por la persona o equipo propietario del repositorio.
+To report an issue, use the private channel indicated by the person or team that owns the repository.
 
-Este código está adaptado de Contributor Covenant v2.1.
+This code is adapted from Contributor Covenant v2.1.

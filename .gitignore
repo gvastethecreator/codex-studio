@@ -1,18 +1,27 @@
 # Logs
 logs
 *.log
-.tmp
-.tmp-*
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
-*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Temp / scratch
+.tmp
+.tmp-*
+.tmp_*
+tmp_*
+tmp/
+$null
+*.tsbuildinfo
+
+# Local DB / WAL
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Dependencies / build / coverage
 node_modules
 dist
 dist-ssr
@@ -20,20 +29,54 @@ dist-ssr
 coverage
 output/
 outputs/
-tmp/
 generated/
+apps/studio-ui/dist
+
+# Local artifacts / scratch outputs
+artifacts/
+!artifacts/.gitkeep
+
+# Project-specific generated style data
+components/recipes/styles/defaults/.locks/
+components/recipes/styleRuntimeData.generated.check.*.tmp.ts
+components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
+components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
+
+# Failure telemetry from past runs (do not commit)
+assets/recipes/styles/defaults/failures-pack_*.json
+
+# Env / secrets
 .env
 .env.local
 .env.*
 !.env.example
 *.local
-apps/studio-ui/dist
-components/recipes/styles/defaults/.locks/
-components/recipes/styleRuntimeData.generated.check.*.tmp.ts
-components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
-components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
+*.pem
+*.key
+*.crt
+
+# Tool reports (allow the canonical config only)
 react-doctor-*.json
 !react-doctor.config.json
+
+# Third-party agent / IDE workspace dirs (local-only)
+.agents/
+!.agents/skills/
+.claude/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.kilocode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.react-doctor/
+!.react-doctor/false-positives.md
+.vite-hooks/
+!.vite-hooks/pre-commit
 
 # Editor directories and files
 .vscode/*
