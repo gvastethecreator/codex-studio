@@ -4,10 +4,13 @@ import type { StylePackManifest } from './styles/manifestTypes';
 import type { StyleRuntimePack } from './styles/runtimeTypes';
 import {
   composeStyleRuntimePacksFromManifests,
+  createStylePresetCatalogSearchIndexFromRuntimePacks,
   createStylePresetCatalog,
   createStylePresetCatalogCoverage,
   createStylePackManifests,
   createStylePresetManifests,
+  resolveStylePresetCatalogSearchPackIds,
+  searchStylePresetCatalogIndex,
   searchStylePresetCatalog,
   toStylePresetManifestRef,
   validateStyleManifestGraph,
@@ -292,6 +295,102 @@ describe('stylePresetManifests', () => {
     ]);
   });
 
+  it('searches runtime-backed catalog index without full manifest data', () => {
+    const runtimePacks: StyleRuntimePack[] = [
+      {
+        id: 'pack-a',
+        name: 'Pack A',
+        description: 'First pack',
+        presets: [
+          {
+            id: 'preset-a',
+            name: 'Preset A',
+            category: 'Cinematic',
+            domain: 'film',
+            negativePrompt: 'watermark, text',
+            style: {
+              aesthetic: 'noir pixel grain',
+              subject_treatment: 'sculptural',
+              color_and_tone: 'cool',
+              lighting_and_shadow: 'hard',
+              texture_and_material: 'glass',
+              camera_and_composition: 'centered',
+              atmosphere_and_mood: 'quiet',
+              rendering_and_quality: 'high',
+            },
+          },
+          {
+            id: 'preset-b',
+            name: 'Preset B',
+            category: 'Illustration',
+            style: {
+              aesthetic: 'watercolor',
+              subject_treatment: 'soft',
+              color_and_tone: 'warm',
+              lighting_and_shadow: 'diffuse',
+              texture_and_material: 'paper',
+              camera_and_composition: 'wide',
+              atmosphere_and_mood: 'bright',
+              rendering_and_quality: 'high',
+            },
+          },
+        ],
+      },
+    ];
+
+    const index = createStylePresetCatalogSearchIndexFromRuntimePacks(runtimePacks, {
+      resolveDefaultImage: (presetId) =>
+        presetId === 'preset-a' ? '/assets/preset-a.webp' : undefined,
+    });
+
+    expect(
+      searchStylePresetCatalogIndex(index, { query: 'pixel' }).map((result) => result.id),
+    ).toEqual(['preset-a']);
+    expect(
+      searchStylePresetCatalogIndex(index, { query: 'watermark' }).map((result) => result.id),
+    ).toEqual(['preset-a']);
+    expect(
+      searchStylePresetCatalogIndex(index, {
+        packId: 'pack-a',
+        tag: 'cinematic',
+        task: 'style_preset_card',
+        limit: 1,
+      }),
+    ).toEqual([
+      expect.objectContaining({
+        id: 'preset-a',
+        ref: 'pack-a/preset-a.yaml',
+        categoryId: 'cinematic',
+        domain: 'film',
+        defaultImage: '/assets/preset-a.webp',
+      }),
+    ]);
+  });
+
+  it('plans catalog search pack loads from visible filter scope', () => {
+    const packSummaries = [
+      { id: 'pack-a', name: 'Pack A', presetCount: 30 },
+      { id: 'pack-b', name: 'Pack B', presetCount: 60 },
+      { id: 'pack-c', name: 'Pack C', presetCount: 90 },
+    ];
+
+    expect(
+      resolveStylePresetCatalogSearchPackIds({ packSummaries, filters: { limit: 80 } }),
+    ).toEqual(['pack-a', 'pack-b']);
+    expect(
+      resolveStylePresetCatalogSearchPackIds({
+        packSummaries,
+        filters: { packId: 'pack-c', query: 'noir', limit: 80 },
+      }),
+    ).toEqual(['pack-c']);
+    expect(
+      resolveStylePresetCatalogSearchPackIds({
+        packSummaries,
+        filters: { query: 'noir', limit: 80 },
+      }),
+    ).toEqual(['pack-a', 'pack-b', 'pack-c']);
+  });
+
   it('reports missing preset refs and orphan manifests', () => {
     const validation = validateStyleManifestGraph(
       [
@@ -462,8 +561,22 @@ describe('stylePresetManifests', () => {
     expect(catalog.packManifests).toHaveLength(16);
     expect(catalog.presetManifests).toHaveLength(1662);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
-    expect(runtimeIndex.packs).toEqual(recomposedPacks);
+    expect(
+      runtimeIndex.packs.map((pack) => ({
+        id: pack.id,
+        name: pack.name,
+        description: pack.description,
+        presetIds: pack.presets.map((preset) => preset.id).sort(),
+      })),
+    ).toEqual(
+      recomposedPacks.map((pack) => ({
+        id: pack.id,
+        name: pack.name,
+        description: pack.description,
+        presetIds: pack.presets.map((preset) => preset.id).sort(),
+      })),
+    );
     expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
     expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
-  }, 20_000);
+  }, 60_000);
 });

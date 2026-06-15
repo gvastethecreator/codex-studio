@@ -75,6 +75,35 @@ export interface StylePresetCatalogSearchResult {
   defaultImage?: string;
 }
 
+export interface StylePresetCatalogSearchPackSummary {
+  id: string;
+  name: string;
+  presetCount: number;
+}
+
+export interface StylePresetCatalogSearchIndexPack {
+  id: string;
+  name: string;
+  presetCount: number;
+}
+
+export interface StylePresetCatalogSearchIndexEntry extends StylePresetCatalogSearchResult {
+  searchableText: string;
+}
+
+export interface StylePresetCatalogSearchIndex {
+  packs: StylePresetCatalogSearchIndexPack[];
+  presets: StylePresetCatalogSearchIndexEntry[];
+  totalPresetCount: number;
+}
+
+export interface StylePresetCatalogSearchPackPlanInput {
+  packSummaries: readonly StylePresetCatalogSearchPackSummary[];
+  filters?: StylePresetCatalogSearchFilters;
+}
+
+const DEFAULT_STYLE_PRESET_SUPPORTED_TASKS = ['image_generate', 'image_edit', 'style_preset_card'];
+
 function normalizeCategory(category?: string) {
   return category?.trim() || 'General';
 }
@@ -103,6 +132,22 @@ function parseAvoidRules(negativePrompt?: string) {
     const trimmed = rule.trim();
     return trimmed ? [trimmed] : [];
   });
+}
+
+function createRuntimePresetSearchTags({
+  pack,
+  preset,
+  categoryName,
+}: {
+  pack: StyleRuntimePack;
+  preset: StyleRuntimePreset;
+  categoryName: string;
+}) {
+  return [
+    slugify(pack.name),
+    slugify(categoryName),
+    preset.domain ? slugify(preset.domain) : null,
+  ].filter((tag): tag is string => Boolean(tag));
 }
 
 function isNonEmptyString(value: unknown) {
@@ -645,4 +690,115 @@ export function searchStylePresetCatalog(
   }
 
   return results;
+}
+
+export function createStylePresetCatalogSearchIndexFromRuntimePacks(
+  packs: StyleRuntimePack[],
+  options: { resolveDefaultImage?: (presetId: string) => string | null | undefined } = {},
+): StylePresetCatalogSearchIndex {
+  return {
+    packs: packs.map((pack) => ({
+      id: pack.id,
+      name: pack.name,
+      presetCount: pack.presets.length,
+    })),
+    presets: packs.flatMap((pack) =>
+      pack.presets.map((preset): StylePresetCatalogSearchIndexEntry => {
+        const categoryName = normalizeCategory(preset.category);
+        const categoryId = slugify(categoryName);
+        const tags = createRuntimePresetSearchTags({ pack, preset, categoryName });
+        const supportedTasks = DEFAULT_STYLE_PRESET_SUPPORTED_TASKS;
+        const avoidRules = parseAvoidRules(preset.negativePrompt);
+        const searchableText = [
+          preset.id,
+          preset.name,
+          categoryName,
+          preset.domain,
+          pack.id,
+          pack.name,
+          categoryId,
+          ...tags,
+          ...avoidRules,
+          ...Object.values(preset.style).map((value) => String(value)),
+        ]
+          .filter((value): value is string => Boolean(value))
+          .join(' ')
+          .toLowerCase();
+        const defaultImage = options.resolveDefaultImage?.(preset.id);
+
+        return {
+          id: preset.id,
+          name: preset.name,
+          ref: toStylePresetManifestRef(pack.id, preset.id),
+          packId: pack.id,
+          packName: pack.name,
+          categoryId,
+          categoryName,
+          ...(preset.domain ? { domain: preset.domain } : {}),
+          tags,
+          supportedTasks,
+          ...(defaultImage ? { defaultImage } : {}),
+          searchableText,
+        };
+      }),
+    ),
+    totalPresetCount: packs.reduce((total, pack) => total + pack.presets.length, 0),
+  };
+}
+
+export function searchStylePresetCatalogIndex(
+  index: StylePresetCatalogSearchIndex,
+  filters: StylePresetCatalogSearchFilters = {},
+): StylePresetCatalogSearchResult[] {
+  const query = normalizeSearchText(filters.query);
+  const packId = normalizeSearchText(filters.packId);
+  const categoryId = normalizeSearchText(filters.categoryId);
+  const categoryName = normalizeSearchText(filters.categoryName);
+  const domain = normalizeSearchText(filters.domain);
+  const tag = normalizeSearchText(filters.tag);
+  const task = normalizeSearchText(filters.task);
+  const limit = filters.limit && filters.limit > 0 ? filters.limit : undefined;
+  const results: StylePresetCatalogSearchResult[] = [];
+
+  for (const entry of index.presets) {
+    const tags = new Set(entry.tags.map((value) => value.toLowerCase()));
+    const supportedTasks = new Set(entry.supportedTasks.map((value) => value.toLowerCase()));
+
+    if (query && !entry.searchableText.includes(query)) continue;
+    if (packId && normalizeSearchText(entry.packId) !== packId) continue;
+    if (categoryId && normalizeSearchText(entry.categoryId) !== categoryId) continue;
+    if (categoryName && !includesText(entry.categoryName, categoryName)) continue;
+    if (domain && !includesText(entry.domain, domain)) continue;
+    if (tag && !tags.has(tag)) continue;
+    if (task && !supportedTasks.has(task)) continue;
+
+    const { searchableText: _searchableText, ...result } = entry;
+    results.push(result);
+
+    if (limit && results.length >= limit) break;
+  }
+
+  return results;
+}
+
+export function resolveStylePresetCatalogSearchPackIds({
+  packSummaries,
+  filters = {},
+}: StylePresetCatalogSearchPackPlanInput) {
+  const packId = filters.packId?.trim();
+  if (packId) return packSummaries.some((pack) => pack.id === packId) ? [packId] : [];
+
+  const needsGlobalSearch = Boolean(filters.query?.trim() || filters.task?.trim());
+  if (needsGlobalSearch) return packSummaries.map((pack) => pack.id);
+
+  const limit = filters.limit && filters.limit > 0 ? filters.limit : 80;
+  const packIds: string[] = [];
+  let plannedPresets = 0;
+  for (const pack of packSummaries) {
+    packIds.push(pack.id);
+    plannedPresets += pack.presetCount;
+    if (plannedPresets >= limit) break;
+  }
+
+  return packIds;
 }

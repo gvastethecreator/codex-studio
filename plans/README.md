@@ -12,15 +12,15 @@ until the catalog coordination plans at the end.
 
 ## Execution order and status
 
-| Plan | Title                                                  | Priority | Effort | Depends on          | Status                                           |
-| ---- | ------------------------------------------------------ | -------- | ------ | ------------------- | ------------------------------------------------ |
-| 001  | Bound style preset preview preloading to visible cards | P1       | M      | none                | TODO                                             |
-| 002  | Make viewport transitions compositor-only              | P1       | S      | none                | TODO                                             |
-| 003  | Expand style render budget coverage for broad searches | P1       | S      | 001                 | TODO                                             |
-| 004  | Pause passive diagnostics when the app is hidden       | P2       | M      | none                | TODO                                             |
-| 005  | Move GSAP compatibility off the startup path           | P2       | L      | 002                 | TODO                                             |
-| 006  | Split style catalog data before raising its budget     | P3       | M      | catalog-agent-clear | TODO - deferred until catalog-pack work is clear |
-| 007  | Make style catalog search load incrementally           | P3       | L      | 006                 | TODO - deferred until catalog-pack work is clear |
+| Plan | Title                                                  | Priority | Effort | Depends on          | Status                     |
+| ---- | ------------------------------------------------------ | -------- | ------ | ------------------- | -------------------------- |
+| 001  | Bound style preset preview preloading to visible cards | P1       | M      | none                | DONE - verified 2026-06-15 |
+| 002  | Make viewport transitions compositor-only              | P1       | S      | none                | DONE - verified 2026-06-15 |
+| 003  | Expand style render budget coverage for broad searches | P1       | S      | 001                 | DONE - verified 2026-06-15 |
+| 004  | Pause passive diagnostics when the app is hidden       | P2       | M      | none                | DONE - verified 2026-06-15 |
+| 005  | Move GSAP compatibility off the startup path           | P2       | L      | 002                 | DONE - verified 2026-06-15 |
+| 006  | Split style catalog data before raising its budget     | P3       | M      | catalog-agent-clear | DONE - verified 2026-06-15 |
+| 007  | Make style catalog search load incrementally           | P3       | L      | 006                 | DONE - verified 2026-06-15 |
 
 Status values: TODO | IN PROGRESS | DONE | BLOCKED (with one-line reason) |
 REJECTED (with one-line rationale).

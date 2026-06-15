@@ -38,13 +38,33 @@ describe('UI demand surface audit', () => {
       'components/shell/StudioViewport.tsx',
       "import { StudioPage } from '../StudioPage';",
     );
+    await writeRepoFile(
+      rootDir,
+      'components/Toolbar.tsx',
+      "import { MotionDiv } from 'motion/react';",
+    );
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/StylePresetCatalogSearchSurface.tsx',
+      "void import('./stylePresetCatalogData').then(({ loadStylePresetCatalog }) => loadStylePresetCatalog());",
+    );
+    await writeRepoFile(rootDir, 'lib/gsapMotion.tsx', "import gsap from 'gsap';");
+    await writeRepoFile(
+      rootDir,
+      'components/studio/StudioOperationsRail.tsx',
+      "import { QueuePanel } from '../QueuePanel';",
+    );
 
     const report = await createUiDemandSurfaceAuditReport(rootDir);
 
     expect(report.violations.map((violation) => violation.ruleId)).toEqual([
       'prod-entry-no-static-react-scan',
       'camera-no-static-three',
+      'catalog-search-no-full-catalog-open-load',
       'viewport-no-static-route-pages',
+      'motion-compat-no-static-gsap',
+      'startup-toolbar-no-static-motion',
+      'operations-rail-no-static-queue-panel',
     ]);
   });
 });

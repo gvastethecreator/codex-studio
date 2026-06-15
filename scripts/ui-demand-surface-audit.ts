@@ -48,6 +48,12 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
     message: 'Catalog data glob must load after the user opens catalog search.',
   },
   {
+    id: 'catalog-search-no-full-catalog-open-load',
+    filePath: 'components/recipes/StylePresetCatalogSearchSurface.tsx',
+    forbidden: ["import('./stylePresetCatalogData')"],
+    message: 'Catalog search should use incremental search index, not full YAML catalog on open.',
+  },
+  {
     id: 'catalog-data-no-static-yaml-parser',
     filePath: 'components/recipes/stylePresetCatalogData.ts',
     forbidden: ["import yaml from 'js-yaml'", 'from "js-yaml"'],
@@ -65,6 +71,45 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
       'import { RecipePage } from "../RecipePage"',
     ],
     message: 'Studio route pages must stay lazy-loaded from the viewport shell.',
+  },
+  {
+    id: 'motion-compat-no-static-gsap',
+    filePath: 'lib/gsapMotion.tsx',
+    forbidden: [
+      "import gsap from 'gsap'",
+      'import gsap from "gsap"',
+      "from '@gsap/react'",
+      'from "@gsap/react"',
+    ],
+    message: 'The motion compatibility layer must demand-load GSAP instead of bundling it.',
+  },
+  {
+    id: 'startup-toolbar-no-static-motion',
+    filePath: 'components/Toolbar.tsx',
+    forbidden: ["from 'motion/react'", 'from "motion/react"'],
+    message: 'Toolbar must not pull the GSAP-backed motion compatibility layer into startup.',
+  },
+  {
+    id: 'startup-viewport-no-static-motion',
+    filePath: 'components/shell/StudioViewport.tsx',
+    forbidden: ["from 'motion/react'", 'from "motion/react"'],
+    message: 'Viewport shell must use lightweight route transitions on startup.',
+  },
+  {
+    id: 'startup-operations-rail-no-static-motion',
+    filePath: 'components/studio/StudioOperationsRail.tsx',
+    forbidden: ["from 'motion/react'", 'from "motion/react"'],
+    message:
+      'Operations rail must not pull the GSAP-backed motion compatibility layer into startup.',
+  },
+  {
+    id: 'operations-rail-no-static-queue-panel',
+    filePath: 'components/studio/StudioOperationsRail.tsx',
+    forbidden: [
+      "import { QueuePanel } from '../QueuePanel'",
+      'import { QueuePanel } from "../QueuePanel"',
+    ],
+    message: 'QueuePanel should stay demand-loaded until the queue rail opens.',
   },
 ];
 

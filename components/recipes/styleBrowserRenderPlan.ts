@@ -47,6 +47,18 @@ export interface StyleBrowserRenderMeasurement {
   hiddenPresetCards: number;
 }
 
+export interface StylePresetPreviewSourceState {
+  exampleImageSrc?: string | null;
+}
+
+export interface CollectStylePresetPreviewSourcesInput {
+  processedData: StyleBrowserProcessedData;
+  renderPlan: StyleBrowserRenderPlan;
+  visualStateByPresetId: ReadonlyMap<string, StylePresetPreviewSourceState>;
+  expandedStyleGroups?: ReadonlySet<string>;
+  eagerSectionLimit?: number;
+}
+
 function parseCategoryOrder(categoryName: string): number | null {
   const match = categoryName.trim().match(/^(\d+)[.)\s-]/);
   if (!match) return null;
@@ -211,4 +223,40 @@ export function measureStyleBrowserRenderPlan({
     hiddenCategorySections: renderPlan.hiddenStyleGroupEntries.length,
     hiddenPresetCards: renderPlan.hiddenStylePresetCount,
   };
+}
+
+export function collectStylePresetPreviewSources({
+  processedData,
+  renderPlan,
+  visualStateByPresetId,
+  expandedStyleGroups = new Set<string>(),
+  eagerSectionLimit = STYLE_BROWSER_EAGER_SECTION_LIMIT,
+}: CollectStylePresetPreviewSourcesInput): string[] {
+  const sources = new Set<string>();
+  const hasFavoritesSection = processedData.favorites.length > 0;
+  const categoryEagerBudget = Math.max(0, eagerSectionLimit - (hasFavoritesSection ? 1 : 0));
+
+  const addPresetSources = (presets: StyleRuntimePreset[], expanded: boolean) => {
+    for (const preset of getVisibleStylePresets(
+      presets,
+      expanded,
+      STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    )) {
+      const source = visualStateByPresetId.get(preset.id)?.exampleImageSrc;
+      if (source) sources.add(source);
+    }
+  };
+
+  if (hasFavoritesSection) {
+    addPresetSources(processedData.favorites, expandedStyleGroups.has('favorites'));
+  }
+
+  for (const [category, presets] of renderPlan.visibleStyleGroupEntries.slice(
+    0,
+    categoryEagerBudget,
+  )) {
+    addPresetSources(presets, expandedStyleGroups.has(category));
+  }
+
+  return [...sources];
 }

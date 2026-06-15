@@ -51,14 +51,7 @@ export async function loadStylePresetIndex(): Promise<{
   presetById: Map<string, StyleRuntimePreset>;
   presetPackIdById: Map<string, string>;
 }> {
-  const [{ loadStylePresetCatalog }, { composeStyleRuntimePacksFromManifests }] = await Promise.all(
-    [import('./stylePresetCatalogData'), import('./stylePresetManifests')],
-  );
-  const catalog = await loadStylePresetCatalog();
-  const packs = composeStyleRuntimePacksFromManifests(
-    catalog.packManifests,
-    catalog.presetManifests,
-  );
+  const packs = await loadGeneratedStyleRuntimePacks();
 
   return {
     packs,

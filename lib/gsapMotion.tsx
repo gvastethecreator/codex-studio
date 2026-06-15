@@ -1,6 +1,8 @@
 import React, {
   createContext,
   use,
+  useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useCallback,
@@ -9,10 +11,6 @@ import React, {
   type ReactNode,
   type Ref,
 } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP);
 
 type MotionValue = number | string;
 
@@ -62,6 +60,17 @@ type PresenceConfig = {
 type MotionRenderableState = false | string | MotionState | undefined;
 
 type MotionTag = 'div' | 'button';
+type GsapTween = { kill?: () => void };
+type GsapContext = { revert?: () => void };
+type GsapLike = {
+  set: (target: Element, vars: Record<string, unknown>) => void;
+  to: (target: Element, vars: Record<string, unknown>) => GsapTween;
+  context?: (callback: () => void, scope?: Element | null) => GsapContext;
+};
+
+let gsapLoader: Promise<GsapLike> | null = null;
+
+const useIsomorphicLayoutEffect = typeof document === 'undefined' ? useEffect : useLayoutEffect;
 
 const defaultPresenceConfig: PresenceConfig = {
   initial: true,
@@ -69,6 +78,14 @@ const defaultPresenceConfig: PresenceConfig = {
 };
 
 const PresenceConfigContext = createContext<PresenceConfig>(defaultPresenceConfig);
+
+function loadGsap() {
+  gsapLoader ??= import('./motionRuntime').then((module) => {
+    return module.default as GsapLike;
+  });
+
+  return gsapLoader;
+}
 
 /**
  * Mirror a forwarded ref into both callback refs and mutable ref objects.
@@ -215,47 +232,61 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
       },
       [forwardedRef],
     );
+    const initialStateKey = JSON.stringify(initialState);
+    const animateStateKey = JSON.stringify(animateState);
+    const mergedTransitionKey = JSON.stringify(mergedTransition);
 
-    useGSAP(
-      () => {
+    useIsomorphicLayoutEffect(() => {
+      let isCancelled = false;
+      let tween: GsapTween | undefined;
+      let context: GsapContext | undefined;
+
+      void loadGsap().then((gsap) => {
         const element = elementRef.current;
-        if (!element || !animateState) return;
+        if (isCancelled || !element || !animateState) return;
 
-        const shouldSkipInitial = !hasAnimatedRef.current && presenceConfig.initial === false;
-        const startValues = shouldSkipInitial ? animateState.values : initialState?.values;
+        const runAnimation = () => {
+          const shouldSkipInitial = !hasAnimatedRef.current && presenceConfig.initial === false;
+          const startValues = shouldSkipInitial ? animateState.values : initialState?.values;
 
-        if (startValues) {
-          gsap.set(element, startValues);
-        }
+          if (startValues) {
+            gsap.set(element, startValues as Record<string, unknown>);
+          }
 
-        if (!shouldSkipInitial || hasAnimatedRef.current) {
-          gsap.to(element, {
-            ...animateState.values,
-            duration: mergedTransition.duration,
-            delay: mergedTransition.delay,
-            ease: mergedTransition.ease,
-            overwrite: 'auto',
-            onComplete: onAnimationComplete,
-          });
-        }
+          if (!shouldSkipInitial || hasAnimatedRef.current) {
+            tween = gsap.to(element, {
+              ...(animateState.values as Record<string, unknown>),
+              duration: mergedTransition.duration,
+              delay: mergedTransition.delay,
+              ease: mergedTransition.ease,
+              overwrite: 'auto',
+              onComplete: onAnimationComplete,
+            });
+          }
 
-        if (shouldSkipInitial) {
-          onAnimationComplete?.();
-        }
+          if (shouldSkipInitial) {
+            onAnimationComplete?.();
+          }
 
-        hasAnimatedRef.current = true;
-      },
-      {
-        scope: elementRef,
-        dependencies: [
-          JSON.stringify(initialState),
-          JSON.stringify(animateState),
-          JSON.stringify(mergedTransition),
-          presenceConfig.initial,
-        ],
-        revertOnUpdate: true,
-      },
-    );
+          hasAnimatedRef.current = true;
+        };
+
+        context = gsap.context ? gsap.context(runAnimation, element) : undefined;
+        if (!context) runAnimation();
+      });
+
+      return () => {
+        isCancelled = true;
+        context?.revert?.();
+        tween?.kill?.();
+      };
+    }, [
+      initialStateKey,
+      animateStateKey,
+      mergedTransitionKey,
+      presenceConfig.initial,
+      onAnimationComplete,
+    ]);
 
     if (tagName === 'button') {
       return (

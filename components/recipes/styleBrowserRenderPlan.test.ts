@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 import {
+  collectStylePresetPreviewSources,
   createStyleBrowserProcessedData,
   createStyleBrowserRenderPlan,
   measureStyleBrowserRenderPlan,
@@ -142,5 +143,107 @@ describe('styleBrowserRenderPlan', () => {
       '3. Third',
       '10. Last',
     ]);
+  });
+
+  it('collects preview preload sources only from eager planned cards', () => {
+    const presets = [
+      ...Array.from({ length: 20 }, (_, index) => preset(`a-${index}`, 'A')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`b-${index}`, 'B')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`c-${index}`, 'C')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`d-${index}`, 'D')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`e-${index}`, 'E')),
+    ];
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    });
+    const renderPlan = createStyleBrowserRenderPlan({
+      processedData,
+      showAllStyleCategories: false,
+    });
+    const visualStateByPresetId = new Map(
+      presets.map((item) => [item.id, { exampleImageSrc: `/preview/${item.id}.webp` }]),
+    );
+
+    expect(
+      collectStylePresetPreviewSources({
+        processedData,
+        renderPlan,
+        visualStateByPresetId,
+      }),
+    ).toHaveLength(32);
+  });
+
+  it('de-duplicates preview preload sources', () => {
+    const presets = [preset('a-1', 'A'), preset('a-2', 'A'), preset('b-1', 'B')];
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    });
+    const renderPlan = createStyleBrowserRenderPlan({
+      processedData,
+      showAllStyleCategories: false,
+    });
+    const visualStateByPresetId = new Map([
+      ['a-1', { exampleImageSrc: '/preview/shared.webp' }],
+      ['a-2', { exampleImageSrc: '/preview/shared.webp' }],
+      ['b-1', { exampleImageSrc: '/preview/b-1.webp' }],
+    ]);
+
+    expect(
+      collectStylePresetPreviewSources({
+        processedData,
+        renderPlan,
+        visualStateByPresetId,
+      }),
+    ).toEqual(['/preview/shared.webp', '/preview/b-1.webp']);
+  });
+
+  it('keeps expanded preload sources bounded to eager visible groups', () => {
+    const presets = [
+      ...Array.from({ length: 20 }, (_, index) => preset(`a-${index}`, 'A')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`b-${index}`, 'B')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`c-${index}`, 'C')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`d-${index}`, 'D')),
+      ...Array.from({ length: 20 }, (_, index) => preset(`e-${index}`, 'E')),
+    ];
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    });
+    const renderPlan = createStyleBrowserRenderPlan({
+      processedData,
+      showAllStyleCategories: true,
+    });
+    const visualStateByPresetId = new Map(
+      presets.map((item) => [item.id, { exampleImageSrc: `/preview/${item.id}.webp` }]),
+    );
+
+    expect(
+      collectStylePresetPreviewSources({
+        processedData,
+        renderPlan,
+        visualStateByPresetId,
+        expandedStyleGroups: new Set(['A', 'B', 'C', 'D', 'E']),
+      }),
+    ).toHaveLength(40);
   });
 });

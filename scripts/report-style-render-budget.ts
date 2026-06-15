@@ -30,10 +30,28 @@ const MAX_EAGER_PRESET_CARDS = STYLE_BROWSER_EAGER_SECTION_LIMIT * STYLE_GROUP_I
 
 const SEARCH_SCENARIOS = [
   {
+    name: 'pack_01_boudoir_narrow',
     packId: 'pack_01',
     query: 'boudoir',
     maxRenderedPresetCards: STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    maxEagerPresetCards: MAX_EAGER_PRESET_CARDS,
     minMatchedPresetCards: 1,
+  },
+  {
+    name: 'pack_02_all_presets',
+    packId: 'pack_02',
+    query: '',
+    maxRenderedPresetCards: MAX_INITIAL_RENDERED_PRESET_CARDS,
+    maxEagerPresetCards: MAX_EAGER_PRESET_CARDS,
+    minMatchedPresetCards: 100,
+  },
+  {
+    name: 'pack_16_all_presets',
+    packId: 'pack_16',
+    query: '',
+    maxRenderedPresetCards: MAX_INITIAL_RENDERED_PRESET_CARDS,
+    maxEagerPresetCards: MAX_EAGER_PRESET_CARDS,
+    minMatchedPresetCards: 100,
   },
 ] as const;
 
@@ -70,6 +88,7 @@ interface StyleRenderPackBudget {
 }
 
 interface StyleSearchScenarioBudget {
+  name: string;
   packId: string;
   query: string;
   matchedPresetCards: number;
@@ -78,6 +97,7 @@ interface StyleSearchScenarioBudget {
   initialRenderedCategories: number;
   initialRenderedPresetCards: number;
   maxRenderedPresetCards: number;
+  maxEagerPresetCards: number;
   minMatchedPresetCards: number;
 }
 
@@ -158,14 +178,18 @@ function searchPresets(pack: StyleRuntimePack, query: string) {
 }
 
 function createSearchScenarioBudget({
+  name,
   pack,
   query,
   maxRenderedPresetCards,
+  maxEagerPresetCards,
   minMatchedPresetCards,
 }: {
+  name: string;
   pack: StyleRuntimePack;
   query: string;
   maxRenderedPresetCards: number;
+  maxEagerPresetCards: number;
   minMatchedPresetCards: number;
 }): StyleSearchScenarioBudget {
   const filteredPack = {
@@ -184,6 +208,7 @@ function createSearchScenarioBudget({
   );
 
   return {
+    name,
     packId: pack.id,
     query,
     matchedPresetCards: filteredPack.presets.length,
@@ -192,6 +217,7 @@ function createSearchScenarioBudget({
     initialRenderedCategories: initialCategoryEntries.length,
     initialRenderedPresetCards,
     maxRenderedPresetCards,
+    maxEagerPresetCards,
     minMatchedPresetCards,
   };
 }
@@ -357,12 +383,17 @@ export async function createStyleRenderBudgetReport({
       const errors: string[] = [];
       if (scenario.matchedPresetCards < scenario.minMatchedPresetCards) {
         errors.push(
-          `${scenario.packId} search "${scenario.query}" matches ${scenario.matchedPresetCards} < ${scenario.minMatchedPresetCards}`,
+          `${scenario.name} ${scenario.packId} search ${JSON.stringify(scenario.query)} matches ${scenario.matchedPresetCards} < ${scenario.minMatchedPresetCards}`,
         );
       }
       if (scenario.initialRenderedPresetCards > scenario.maxRenderedPresetCards) {
         errors.push(
-          `${scenario.packId} search "${scenario.query}" initial cards ${scenario.initialRenderedPresetCards} > ${scenario.maxRenderedPresetCards}`,
+          `${scenario.name} ${scenario.packId} search ${JSON.stringify(scenario.query)} initial cards ${scenario.initialRenderedPresetCards} > ${scenario.maxRenderedPresetCards} matched=${scenario.matchedPresetCards}`,
+        );
+      }
+      if (scenario.eagerPresetCards > scenario.maxEagerPresetCards) {
+        errors.push(
+          `${scenario.name} ${scenario.packId} search ${JSON.stringify(scenario.query)} eager cards ${scenario.eagerPresetCards} > ${scenario.maxEagerPresetCards} matched=${scenario.matchedPresetCards}`,
         );
       }
       return errors;
@@ -399,7 +430,7 @@ if (import.meta.main) {
     }
     for (const scenario of report.searchScenarios) {
       console.log(
-        `[styles:render] search pack=${scenario.packId} query=${JSON.stringify(scenario.query)} matches=${scenario.matchedPresetCards} initialCards=${scenario.initialRenderedPresetCards}`,
+        `[styles:render] search name=${scenario.name} pack=${scenario.packId} query=${JSON.stringify(scenario.query)} matches=${scenario.matchedPresetCards} eagerCards=${scenario.eagerPresetCards} initialCards=${scenario.initialRenderedPresetCards}`,
       );
     }
   }

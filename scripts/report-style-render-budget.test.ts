@@ -40,15 +40,38 @@ describe('style render budget report', () => {
     expect(
       Math.max(...report.packs.map((pack) => pack.largestExpandedCategoryPresetCards)),
     ).toBeLessThanOrEqual(report.expandedGroupRenderLimit);
-    expect(report.searchScenarios).toEqual([
-      expect.objectContaining({
-        packId: 'pack_01',
-        query: 'boudoir',
-        matchedPresetCards: 1,
-        eagerPresetCards: 1,
-        plannedPresetCards: 1,
-        initialRenderedPresetCards: 1,
-      }),
-    ]);
+    expect(report.searchScenarios).toHaveLength(3);
+    expect(report.searchScenarios).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          name: 'pack_01_boudoir_narrow',
+          packId: 'pack_01',
+          query: 'boudoir',
+          matchedPresetCards: 1,
+          eagerPresetCards: 1,
+          plannedPresetCards: 1,
+          initialRenderedPresetCards: 1,
+        }),
+        expect.objectContaining({
+          name: 'pack_02_all_presets',
+          packId: 'pack_02',
+          query: '',
+          matchedPresetCards: expect.any(Number),
+        }),
+        expect.objectContaining({
+          name: 'pack_16_all_presets',
+          packId: 'pack_16',
+          query: '',
+          matchedPresetCards: expect.any(Number),
+        }),
+      ]),
+    );
+    for (const scenario of report.searchScenarios) {
+      expect(scenario.matchedPresetCards).toBeGreaterThanOrEqual(scenario.minMatchedPresetCards);
+      expect(scenario.initialRenderedPresetCards).toBeLessThanOrEqual(
+        scenario.maxRenderedPresetCards,
+      );
+      expect(scenario.eagerPresetCards).toBeLessThanOrEqual(scenario.maxEagerPresetCards);
+    }
   }, 20_000);
 });

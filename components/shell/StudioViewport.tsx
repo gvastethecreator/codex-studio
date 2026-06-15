@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import { AnimatePresence, MotionDiv, type Variants } from 'motion/react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../lib/buildStudioPageController';
@@ -16,40 +15,26 @@ const StudioPage = React.lazy(() =>
   import('../StudioPage').then((module) => ({ default: module.StudioPage })),
 );
 
-const viewVariants: Variants = {
-  enter: (direction: number) => ({
-    x: direction > 0 ? '100%' : '-100%',
-    opacity: 0,
-    scale: 0.98,
-    filter: 'blur(4px)',
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-    scale: 1,
-    filter: 'blur(0px)',
-    transition: {
-      x: { type: 'spring' as const, stiffness: 260, damping: 26 },
-      opacity: { duration: 0.3 },
-      scale: { duration: 0.4 },
-      filter: { duration: 0.4 },
-    },
-  },
-  exit: (direction: number) => ({
-    zIndex: 0,
-    x: direction < 0 ? '50%' : '-50%',
-    opacity: 0,
-    scale: 0.98,
-    filter: 'blur(4px)',
-    transition: {
-      x: { type: 'spring' as const, stiffness: 260, damping: 26 },
-      opacity: { duration: 0.3 },
-      scale: { duration: 0.4 },
-      filter: { duration: 0.4 },
-    },
-  }),
-};
+const VIEWPORT_SURFACE_BASE_CLASS = 'absolute inset-0 w-full h-full overflow-hidden';
+
+export function resolveStudioViewportRouteKey(
+  routeView: AppPageView,
+  activeRecipe: RecipeId | null,
+) {
+  if (routeView === 'recipe' && activeRecipe) return `recipe-${activeRecipe}`;
+  if (routeView === 'studio') return 'studio';
+  return 'recipes-list';
+}
+
+export function isRecipesViewVisible(routeView: AppPageView) {
+  return ['recipes', 'default'].includes(routeView);
+}
+
+export function getStudioViewportTransitionClassName(direction: number) {
+  const slideClass =
+    direction > 0 ? 'slide-in-from-right-3' : direction < 0 ? 'slide-in-from-left-3' : 'zoom-in-95';
+  return `animate-in fade-in-0 ${slideClass} duration-200`;
+}
 
 interface StudioViewportProps {
   routeView: AppPageView;
@@ -68,47 +53,24 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
   studioPageController,
   onSelectRecipe,
 }) => {
+  const routeKey = resolveStudioViewportRouteKey(routeView, activeRecipe);
+  const transitionClassName = getStudioViewportTransitionClassName(direction);
+  const surfaceClassName =
+    routeKey === 'studio'
+      ? `${VIEWPORT_SURFACE_BASE_CLASS} flex flex-row ${transitionClassName}`
+      : `${VIEWPORT_SURFACE_BASE_CLASS} ${transitionClassName}`;
+
   return (
     <Suspense fallback={null}>
-      <AnimatePresence mode="popLayout" custom={direction} initial={false}>
+      <div key={routeKey} className={surfaceClassName}>
         {routeView === 'recipe' && activeRecipe ? (
-          <MotionDiv
-            key={`recipe-${activeRecipe}`}
-            custom={direction}
-            variants={viewVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            className="absolute inset-0 w-full h-full overflow-hidden"
-          >
-            <RecipePage activeRecipe={activeRecipe} {...recipePageProps} />
-          </MotionDiv>
+          <RecipePage activeRecipe={activeRecipe} {...recipePageProps} />
         ) : routeView === 'studio' ? (
-          <MotionDiv
-            key="studio"
-            custom={direction}
-            variants={viewVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            className="absolute inset-0 w-full h-full flex flex-row overflow-hidden"
-          >
-            <StudioPage controller={studioPageController} />
-          </MotionDiv>
+          <StudioPage controller={studioPageController} />
         ) : (
-          <MotionDiv
-            key="recipes-list"
-            custom={direction}
-            variants={viewVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            className="absolute inset-0 w-full h-full overflow-hidden"
-          >
-            <RecipesView onSelectRecipe={onSelectRecipe} />
-          </MotionDiv>
+          <RecipesView onSelectRecipe={onSelectRecipe} />
         )}
-      </AnimatePresence>
+      </div>
     </Suspense>
   );
 };

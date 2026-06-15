@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { buildStudioDiagnosticsSnapshot } from '../lib/studioDiagnostics';
 import type { HealthResponse, LocalCodexSessionResponse } from '../packages/shared/src';
 import { getLocalCodexSession, getStudioHealth } from '../services/localStudioService';
+import { createStudioDiagnosticsRefreshPolicy } from './studioDiagnosticsRefreshPolicy';
 
 interface UseStudioDiagnosticsOptions {
   initialHealth?: HealthResponse | null;
@@ -78,12 +79,13 @@ export function useStudioDiagnostics({
   useEffect(() => {
     void refreshDiagnostics();
 
-    const interval = window.setInterval(() => {
-      void refreshDiagnostics();
-    }, refreshIntervalMs);
+    const refreshPolicy = createStudioDiagnosticsRefreshPolicy({
+      refreshDiagnostics,
+      refreshIntervalMs,
+    });
 
     return () => {
-      window.clearInterval(interval);
+      refreshPolicy.dispose();
     };
   }, [refreshDiagnostics, refreshIntervalMs]);
 

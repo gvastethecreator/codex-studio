@@ -9,10 +9,15 @@ import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
 
 import {
-  searchStylePresetCatalog,
-  type StylePresetCatalog,
+  resolveStylePresetCatalogSearchPackIds,
+  searchStylePresetCatalogIndex,
+  type StylePresetCatalogSearchIndex,
   type StylePresetCatalogSearchResult,
 } from './stylePresetManifests';
+import {
+  STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
+  loadStylePresetCatalogSearchIndex,
+} from './stylePresetCatalogSearchData';
 
 interface StylePresetCatalogSearchSurfaceProps {
   onClose: () => void;
@@ -34,41 +39,60 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   onSelectPreset,
   onApplyPreset,
 }) => {
-  const [catalog, setCatalog] = useState<StylePresetCatalog | null>(null);
+  const [searchIndex, setSearchIndex] = useState<StylePresetCatalogSearchIndex | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
 
+  const filters = useMemo(
+    () => ({
+      query,
+      packId: packId || undefined,
+      task: task || undefined,
+      limit: 80,
+    }),
+    [packId, query, task],
+  );
+  const packIdsToLoad = useMemo(
+    () =>
+      resolveStylePresetCatalogSearchPackIds({
+        packSummaries: STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
+        filters,
+      }),
+    [filters],
+  );
+  const packIdsToLoadKey = packIdsToLoad.join('|');
+  const totalPresetCount = STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES.reduce(
+    (total, pack) => total + pack.presetCount,
+    0,
+  );
+
   useEffect(() => {
     let cancelled = false;
-    void import('./stylePresetCatalogData')
-      .then(({ loadStylePresetCatalog }) => loadStylePresetCatalog())
-      .then((loaded) => {
-        if (!cancelled) setCatalog(loaded);
-      });
+    setIsLoading(true);
+    setSearchIndex(null);
+    void loadStylePresetCatalogSearchIndex(packIdsToLoad).then((loaded) => {
+      if (!cancelled) {
+        setSearchIndex(loaded);
+        setIsLoading(false);
+      }
+    });
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [packIdsToLoad, packIdsToLoadKey]);
 
   const results = useMemo(
-    () =>
-      catalog
-        ? searchStylePresetCatalog(catalog, {
-            query,
-            packId: packId || undefined,
-            task: task || undefined,
-            limit: 80,
-          })
-        : [],
-    [catalog, packId, query, task],
+    () => (searchIndex ? searchStylePresetCatalogIndex(searchIndex, filters) : []),
+    [filters, searchIndex],
   );
 
   return (
     <div
       data-style-catalog-root
-      data-style-catalog-state={catalog ? 'ready' : 'loading'}
-      data-style-catalog-results-count={catalog ? results.length : -1}
+      data-style-catalog-state={searchIndex ? 'ready' : isLoading ? 'loading' : 'empty'}
+      data-style-catalog-results-count={searchIndex ? results.length : -1}
       className="absolute inset-0 z-40 flex flex-col bg-black/86 backdrop-blur-xl"
     >
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-white/10 px-6">
@@ -80,9 +104,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">
               Style Catalog
             </h3>
-            {catalog ? (
+            {searchIndex ? (
               <p className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest text-zinc-500">
-                {catalog.presets.length} presets / {catalog.packs.length} packs
+                {searchIndex.totalPresetCount} loaded / {totalPresetCount} presets
               </p>
             ) : (
               <div className="mt-1 flex items-center gap-1.5 text-zinc-500">
@@ -129,9 +153,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           aria-label="Filter style catalog by pack"
         >
           <option value="">All Packs</option>
-          {catalog?.packs.map((pack) => (
-            <option key={pack.manifest.id} value={pack.manifest.id}>
-              {pack.manifest.name}
+          {STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES.map((pack) => (
+            <option key={pack.id} value={pack.id}>
+              {pack.name}
             </option>
           ))}
         </select>
@@ -155,7 +179,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-6 py-5 custom-scrollbar">
-        {!catalog ? (
+        {!searchIndex ? (
           <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600">
             <LoaderCircle size={32} className="animate-spin opacity-25" />
             <span className="text-xs font-black uppercase tracking-widest">Loading catalog…</span>

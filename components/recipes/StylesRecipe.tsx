@@ -46,6 +46,7 @@ import { FloatingTooltip } from '../ui/FloatingTooltip';
 import Slider from '../ui/Slider';
 import { RecipeLayout } from './RecipeLayout';
 import {
+  collectStylePresetPreviewSources,
   createStyleBrowserProcessedData,
   createStyleBrowserRenderPlan,
 } from './styleBrowserRenderPlan';
@@ -1233,21 +1234,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     loadedStylePacksById,
   ]);
 
-  useEffect(() => {
-    const sources = new Set<string>();
-    // react-doctor-disable-next-line react-doctor/no-pass-data-to-parent
-    // react-doctor-disable-next-line react-doctor/no-pass-live-state-to-parent
-    for (const state of presetVisualStateById.values()) {
-      if (state.exampleImageSrc) sources.add(state.exampleImageSrc);
-    }
-
-    sources.forEach((src) => {
-      const img = new Image();
-      img.decoding = 'async';
-      img.src = src;
-    });
-  }, [presetVisualStateById]);
-
   const filterKey = `${currentPackId}|${searchQuery}|${sortOrder}|${showFavoritesOnly}`;
   const prevFilterKeyRef = useRef(filterKey);
   if (prevFilterKeyRef.current !== filterKey) {
@@ -1293,6 +1279,24 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   );
   const { visibleStyleGroupEntries, hiddenStyleGroupEntries, hiddenStylePresetCount } =
     styleRenderPlan;
+
+  const stylePreviewPreloadSources = useMemo(
+    () =>
+      collectStylePresetPreviewSources({
+        processedData,
+        renderPlan: styleRenderPlan,
+        visualStateByPresetId: presetVisualStateById,
+      }),
+    [processedData, presetVisualStateById, styleRenderPlan],
+  );
+
+  useEffect(() => {
+    stylePreviewPreloadSources.forEach((src) => {
+      const img = new Image();
+      img.decoding = 'async';
+      img.src = src;
+    });
+  }, [stylePreviewPreloadSources]);
 
   const handleApplyStyle = async (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
     setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));

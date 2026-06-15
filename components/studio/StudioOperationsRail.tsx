@@ -1,11 +1,13 @@
 import React from 'react';
-import { AnimatePresence, MotionDiv } from 'motion/react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
 import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
 import type { Job as StudioJob } from '../../packages/shared/src';
 import type { QueueJob } from '../../types';
-import { QueuePanel } from '../QueuePanel';
+
+const QueuePanel = React.lazy(() =>
+  import('../QueuePanel').then((module) => ({ default: module.QueuePanel })),
+);
 
 export interface StudioOperationsRailProps {
   isModalOpen: boolean;
@@ -50,32 +52,30 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
     return null;
   }
 
+  if (!isQueueOpen) {
+    return null;
+  }
+
   return (
-    <AnimatePresence initial={false}>
-      {isQueueOpen ? (
-        <MotionDiv
-          initial={{ width: 0, opacity: 0 }}
-          animate={{ width: 320, opacity: 1 }}
-          exit={{ width: 0, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 320, damping: 32 }}
-          className="flex h-full shrink-0 overflow-hidden"
-        >
-          <QueuePanel
-            jobs={jobs}
-            results={queueResults}
-            serverJobs={studioJobs}
-            selectedJobId={selectedStudioJobId}
-            onRetry={retry}
-            onRetryServerJob={retryPersistentJob}
-            onCancel={cancelJob}
-            onCancelServerJob={cancelPersistentJob}
-            onRemove={removeJob}
-            onClearCompleted={clearCompleted}
-            onInspectJob={onInspectJob}
-            isResting={isResting}
-          />
-        </MotionDiv>
-      ) : null}
-    </AnimatePresence>
+    <div className="flex h-full shrink-0 overflow-hidden animate-in fade-in-0 slide-in-from-right-3 duration-200">
+      <React.Suspense
+        fallback={<div className="h-full w-80 border-l border-white/10 bg-black/40" />}
+      >
+        <QueuePanel
+          jobs={jobs}
+          results={queueResults}
+          serverJobs={studioJobs}
+          selectedJobId={selectedStudioJobId}
+          onRetry={retry}
+          onRetryServerJob={retryPersistentJob}
+          onCancel={cancelJob}
+          onCancelServerJob={cancelPersistentJob}
+          onRemove={removeJob}
+          onClearCompleted={clearCompleted}
+          onInspectJob={onInspectJob}
+          isResting={isResting}
+        />
+      </React.Suspense>
+    </div>
   );
 };
