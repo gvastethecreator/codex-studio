@@ -50,8 +50,9 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const [copiedPrompt, setCopiedPrompt] = useState(false);
     const timeoutRef = useRef<number | null>(null);
     const primaryImageSrc = image.thumbnail || image.src;
-    const [imageSrc, setImageSrc] = useState(primaryImageSrc);
-    const [imageLoadFailed, setImageLoadFailed] = useState(false);
+    const [failedSrc, setFailedSrc] = useState<string | null>(null);
+    const imageSrc = primaryImageSrc;
+    const imageLoadFailed = failedSrc === primaryImageSrc;
 
     React.useEffect(() => {
       const timeout = timeoutRef.current;
@@ -62,17 +63,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       };
     }, []);
 
-    React.useEffect(() => {
-      setImageSrc(primaryImageSrc);
-      setImageLoadFailed(false);
-    }, [primaryImageSrc]);
-
     const handleImageError = () => {
-      if (imageSrc !== image.src) {
-        setImageSrc(image.src);
-        return;
-      }
-      setImageLoadFailed(true);
+      setFailedSrc(primaryImageSrc);
     };
 
     const handleSelectClick = (e: React.MouseEvent) => {
@@ -112,6 +104,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
       `}
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 420px' }}
       >
         <button
           type="button"

@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: 90s raver styling, PLUR euphoria, sunrise-set transcendence
-  form_and_line: Baggy pants, phat-pant flare, crop-top crop, bucket-hat circumference, platform-sole stomp
+  aesthetic: 90s ravewear exuberance, PLUR-coded color pressure, after-hours synthetic uplift
+  form_and_line: Overscaled volume, phat-pant flare, modular strap punctuation, bucket-hat arc, platform-sole stomp rhythm
   color_palette: Neon, Reflective, hi-vis yellow, electric cyan, safety-orange, silver-reflective, blacklight-reactive
   lighting_setup: Blacklight, UV-reactive glow, strobe-pulse fragmentation, fog-machine haze, colored-laser grid
   material_texture: PVC plastic, faux fur, mesh, reflective 3M, nylon parachute, fuzzy knit
   render_quality: Energetic, loud, rave-flyer saturation, peak-time euphoria
   spatial_distortion: None
-  atmosphere: Party, happy, bass-unity, 4AM transcendence, collective-euphoria glow
-  key_features: Kandi bracelets, pacifier, bucket hat, phat pants, neon hair extensions
+  atmosphere: Euphoric, communal, synthetic, bass-driven glow, after-hours uplift
+  key_features: Kandi-bead logic, bucket-hat arc, phat-pant volume, reflective trim, neon-extension accents
   creative_brief: >-
-    Push the input through 90s rave style: UV-reactive color, reflective 3M,
-    phat-pant volume, PVC, faux fur, kandi beads, bucket-hat cues and
-    strobe-fragmented light. Keep PLUR euphoria without requiring a warehouse,
-    dance floor, pacifier, crowd or party scene.
+    Push the input through 90s ravewear grammar: UV-reactive color, reflective
+    3M, phat-pant volume, PVC, faux fur, kandi-bead logic, bucket-hat cues and
+    strobe-fragmented light. Keep PLUR uplift as styling pressure only; do not
+    require a body, warehouse, dance floor, pacifier, crowd or literal party
+    scene.
 avoidRules:
   - boring
   - grey

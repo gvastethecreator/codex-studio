@@ -22,10 +22,10 @@ visualDna:
   atmosphere: Honorable, fierce, impermanence, pre-dawn stillness, unblinking discipline
   key_features: Kabuto helmet, maedate crest, mempo mask cues, silk odoshi lacing, sashimono geometry
   creative_brief: >-
-    Translate the input into samurai armor language: lacquered plates, silk
-    odoshi lacing, kabuto crest, mempo severity, sode shoulders and disciplined
-    red-black-gold craft. Preserve warrior identity cues without requiring
-    bamboo forest, castle interior, katana duel or fixed human face.
+    Translate any input into samurai armor language: lacquered plates, silk odoshi lacing, kabuto
+    crest, mempo severity, sode shoulders and disciplined red-black-gold craft. Preserve warrior
+    identity cues without requiring bamboo forests, castle interiors, katana duels or fixed human
+    faces.
 avoidRules:
   - european armor
 assets:

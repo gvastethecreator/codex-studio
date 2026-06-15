@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Ring symmetry and spiral approach lines make intimacy feel engineered and gently radiant.
   atmosphere: Tender futurism, social ritual, engineered elegance, and unnervingly perfect optimism.
   key_features: Isotope ring arches, atom floral canopies, radiant circles, brass rail curves, and reactor-blessing lamp motifs.
-  creative_brief: >-
-    Make the input ceremonially radiant: isotope ring arches, satin-science surfaces, pearl enamel, blush reactor halos,
-    and brass vow-rail curves should turn utility into ritual. Wedding or pavilion cues may appear, but the style is
-    engineered tenderness with unnervingly perfect optimism. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Make the input ceremonially radiant: isotope ring arches, satin-science surfaces, pearl enamel, blush reactor halos, and brass vow-rail curves should turn utility into ritual. Wedding or pavilion cues may appear, but the style is engineered tenderness with unnervingly perfect optimism. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dystopian-bunker
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

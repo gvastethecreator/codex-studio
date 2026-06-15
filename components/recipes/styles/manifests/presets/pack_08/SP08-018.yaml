@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-018
 packId: pack_08
-name: K-Pop Idol
+name: Pop-Performance Tailoring
 category: 1. Contemporary Fashion
 version: 1
 supportedTasks:
@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Music video outfit, comeback-stage spectacle, fan-chant energy
-  form_and_line: Sharp, layered, cropped jacket, high-waist trouser, asymmetric hem, fitted silhouette
+  aesthetic: Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision
+  form_and_line: Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm
   color_palette: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
   lighting_setup: Studio-bright beauty light, color-shifting gels, high-key rim sparkle
   material_texture: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
-  render_quality: Perfect, trendy, coordinated, music-show polish, fan-cam ready, synchronized precision
+  render_quality: Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity
   spatial_distortion: None
   atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy
   key_features: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings
   creative_brief: >-
-    Rebuild the input with K-pop comeback polish: cropped jackets, asymmetric
-    hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact
-    coordination. Preserve idol-performance charisma without requiring a face,
-    group choreography, music-show set or fandom crowd.
+    Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones,
+    pastel-neon color and exact coordination. Preserve synchronized charisma and fan-energy charge as finish only, not
+    as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.
 avoidRules:
   - boring
   - dark

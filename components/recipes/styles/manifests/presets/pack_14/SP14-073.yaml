@@ -4,8 +4,14 @@ packId: pack_14
 name: Wolf Oath Momentum
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Wolf oath momentum where blood pact, regiment rhythm, and fated war pressure align.
   form_and_line: Processional path cues, pillar cadence, and ridge watchpoints.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Determination and fated momentum.
   key_features: Wolf standards, oath steles, war drums.
   creative_brief: Recast the input through wolf oath momentum, renewing blood pacts before conflict without requiring a marchway.
-avoidRules: [photoreal, playful, neon-cyber, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-073.webp }
+avoidRules:
+  - photoreal
+  - playful
+  - neon-cyber
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-073.webp
 attributes:
   negativePrompt: photoreal, playful, neon-cyber, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_14
 name: Jade Cenote Echo Reading
 category: 9. Mythic — Mesoamerican Suns
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - mesoamerican-myth
 visualDna:
   aesthetic: Jade cenote echo reading where sacred water mirrors celestial cycles and ancestral memory.
   form_and_line: Circular sinkhole cue terraces, suspended bridge lines, and carved niche sanctuaries.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Reverent quiet, ancestral memory, and liquid mystery.
   key_features: Cenote altar cues, offering steps, serpent glyph walls, echo chamber traces.
   creative_brief: Apply jade cenote echo reading to the input, making reflection feel like message from old suns without requiring a chamber.
-avoidRules: [photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-031.webp }
+avoidRules:
+  - photoreal
+  - goofy-comic
+  - neon-ui
+  - modern-diving-gear
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-031.webp
 attributes:
   negativePrompt: photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-mesoamerican-suns,
-    categoryName: 9. Mythic — Mesoamerican Suns,
-    tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-mesoamerican-suns
+  categoryName: 9. Mythic — Mesoamerican Suns
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - mesoamerican-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

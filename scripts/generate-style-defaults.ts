@@ -23,6 +23,7 @@ import {
   loadPacks,
   repoRelative,
   request,
+  sanitizeStylePromptName,
   sanitizeCategory,
   styleCategoryImageKey,
   valueOf,
@@ -603,7 +604,12 @@ function familyVariant(map: Record<string, string[]>, family: string, seed: stri
   return source[Math.abs(hashString(seed)) % source.length];
 }
 
-function buildStylePrompt(pack: StyleRuntimePack, preset: StyleRuntimePreset, attempt: number) {
+function buildStylePrompt(
+  pack: StyleRuntimePack,
+  preset: StyleRuntimePreset,
+  attempt: number,
+  sessionSuffix?: string,
+) {
   const category = sanitizeCategory(preset.category);
   const negative = preset.negativePrompt ? `\n\nAvoid:\n${preset.negativePrompt}` : '';
   const allowsBooks = /book|library|textbook|comic book|storybook/i.test(
@@ -613,19 +619,23 @@ function buildStylePrompt(pack: StyleRuntimePack, preset: StyleRuntimePreset, at
     ? ''
     : ' Avoid books, bookshelves, libraries, reading rooms, archives, stacked volumes, compass props, map symbols, notebook props, generic plants, and other stock desk clutter.';
   const variantSeed = `${pack.id}:${preset.id}:${preset.name}:${attempt}`;
+  const sessionKey = sessionSuffix
+    ? `${sanitizeStylePromptName(pack.name)} ${sessionSuffix}`
+    : undefined;
   const family = broadPromptFamily(pack, category);
   const isGuroPreset = preset.id === 'SP05-107';
   const isAmanoPreset = preset.id === 'SP05-321';
+  const safePromptName = sanitizeStylePromptName(preset.name);
   const targetStyleLabel = isGuroPreset
     ? 'UNSETTLING HORROR ANIME'
     : isAmanoPreset
       ? 'ETHER-WISP GOTHIC FANTASY ANIME'
-      : preset.name.toUpperCase();
+      : safePromptName.toUpperCase();
   const recognitionLabel = isGuroPreset
     ? 'an unsettling horror anime style-card'
     : isAmanoPreset
       ? 'an ether-wisp gothic fantasy anime style-card'
-      : `"${preset.name}"`;
+      : `"${safePromptName}"`;
   const styleAesthetic = isGuroPreset
     ? 'Unsettling body-horror anime with distorted anatomy, organic corruption, eerie clinical unease, shadowed biological forms, surreal nightmare tension, and implied transformation rather than explicit gore'
     : isAmanoPreset
@@ -681,7 +691,7 @@ function buildStylePrompt(pack: StyleRuntimePack, preset: StyleRuntimePreset, at
 TARGET STYLE: ${targetStyleLabel}
 PACK: ${pack.name}
 CATEGORY: ${category}
-MODE: text-to-image
+${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
 ${categoryBasePrompt(pack, category, `${variantSeed}:anchor`)}
@@ -859,15 +869,83 @@ async function saveFailures(packId: string, failures: unknown[]) {
   await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
 }
 
+function isFailureEntry(
+  value: unknown,
+): value is { presetId: string; category?: string; failedAt?: string } {
+  if (!value || typeof value !== 'object') return false;
+  const record = value as Record<string, unknown>;
+  return typeof record.presetId === 'string';
+}
+
+function collectLatestFailedPresetIds(
+  failuresByPack: ReadonlyMap<string, unknown[]>,
+  options: {
+    packFilter?: string;
+    categoryFilters: ReadonlySet<string>;
+    presetFilters: ReadonlySet<string>;
+    limit: number;
+  },
+) {
+  const latestByPresetId = new Map<string, { presetId: string; failedAt: string; order: number }>();
+  let order = 0;
+
+  for (const [packId, failures] of failuresByPack) {
+    if (options.packFilter && packId !== options.packFilter) continue;
+
+    for (const failure of failures) {
+      if (!isFailureEntry(failure)) continue;
+      if (
+        options.categoryFilters.size > 0 &&
+        !options.categoryFilters.has(sanitizeCategory(failure.category))
+      ) {
+        continue;
+      }
+      if (options.presetFilters.size > 0 && !options.presetFilters.has(failure.presetId)) {
+        continue;
+      }
+
+      const failedAt = typeof failure.failedAt === 'string' ? failure.failedAt : '';
+      const current = latestByPresetId.get(failure.presetId);
+      const next = {
+        presetId: failure.presetId,
+        failedAt,
+        order,
+      };
+      order += 1;
+      if (
+        !current ||
+        failedAt > current.failedAt ||
+        (failedAt === current.failedAt && next.order > current.order)
+      ) {
+        latestByPresetId.set(failure.presetId, next);
+      }
+    }
+  }
+
+  const ordered = Array.from(latestByPresetId.values())
+    .sort((a, b) => {
+      if (a.failedAt === b.failedAt) return b.order - a.order;
+      return b.failedAt.localeCompare(a.failedAt);
+    })
+    .slice(0, options.limit)
+    .map((entry) => entry.presetId);
+
+  return new Set(ordered);
+}
+
 function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
 }
 
 const limitArg = argValue('limit');
 const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
+const failureLimitArg = argValue('failure-limit');
+const failureLimit = failureLimitArg ? Number(failureLimitArg) : Number.POSITIVE_INFINITY;
 const packFilter = argValue('pack');
+const sessionSuffix = argValue('session-suffix');
 const categoryFilterArg = argValue('category');
 const presetFilterArg = argValue('preset');
+const retryFailures = process.argv.includes('--retry-failures');
 const categoryFilters = new Set(
   (categoryFilterArg
     ? categoryFilterArg.includes('|')
@@ -919,13 +997,31 @@ for (const pack of packs) {
   failuresByPack.set(pack.id, await loadFailures(pack.id));
 }
 
+const resolvedPresetFilters = retryFailures
+  ? collectLatestFailedPresetIds(failuresByPack, {
+      packFilter,
+      categoryFilters,
+      presetFilters,
+      limit: failureLimit,
+    })
+  : presetFilters;
+const effectiveForce = force || retryFailures;
+
+if (retryFailures) {
+  console.log(
+    `[retry-failures] selected=${resolvedPresetFilters.size} pack=${packFilter || 'all'} limit=${
+      Number.isFinite(failureLimit) ? failureLimit : 'all'
+    }`,
+  );
+}
+
 const existingDefaultFiles = new Set<string>();
 for (const pack of packs) {
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
     const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
 
-    if (presetFilters.size > 0 && !presetFilters.has(preset.id)) {
+    if (resolvedPresetFilters.size > 0 && !resolvedPresetFilters.has(preset.id)) {
       existingDefaultFiles.add(destination);
       skipped += 1;
       continue;
@@ -935,7 +1031,7 @@ for (const pack of packs) {
       continue;
     }
 
-    if (!force && (await exists(destination))) {
+    if (!effectiveForce && (await exists(destination))) {
       existingDefaultFiles.add(destination);
       skipped += 1;
     }
@@ -946,9 +1042,9 @@ targetPresets.push(
   ...createStyleDefaultTargets({
     packs,
     existingFiles: existingDefaultFiles,
-    force,
+    force: effectiveForce,
     categoryFilters,
-    presetFilters,
+    presetFilters: resolvedPresetFilters,
     limit,
     defaultsDir,
     assetExtension: RECIPE_ASSET_EXTENSION,
@@ -976,7 +1072,7 @@ async function processPreset(target: PendingPreset) {
         body: JSON.stringify(
           createStyleDefaultJobRequest({
             projectId,
-            prompt: buildStylePrompt(pack, preset, attempt),
+            prompt: buildStylePrompt(pack, preset, attempt, sessionSuffix),
           }),
         ),
       });

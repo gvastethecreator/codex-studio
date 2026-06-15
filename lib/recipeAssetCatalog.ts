@@ -1,4 +1,5 @@
 import type { RecipeId } from '../types';
+import { GENERATED_STYLE_DEFAULT_IMAGES } from './styleDefaultImages.generated';
 import { isStyleDefaultImageStale } from './staleStyleDefaultImages.generated';
 import { buildPackFallbackCatalog } from './stylePresetVisuals';
 
@@ -9,12 +10,6 @@ const recipeCardImageFiles = import.meta.glob('../assets/recipes/cards/*.webp', 
 }) as Record<string, unknown>;
 
 const styleCategoryImageFiles = import.meta.glob('../assets/recipes/styles/category-bases/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-}) as Record<string, unknown>;
-
-const styleDefaultImageFiles = import.meta.glob('../assets/recipes/styles/defaults/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -53,14 +48,14 @@ const recipeCardCatalogByRecipeId = Object.entries(recipeCardCatalog).reduce<
 
 export const RECIPE_CARD_IMAGES = recipeCardCatalogByRecipeId;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
-export const STYLE_DEFAULT_IMAGES = buildUrlCatalog(styleDefaultImageFiles);
+export const STYLE_DEFAULT_IMAGES = GENERATED_STYLE_DEFAULT_IMAGES;
 export const STYLE_AVAILABLE_DEFAULT_IMAGES = Object.fromEntries(
   Object.entries(STYLE_DEFAULT_IMAGES).filter(([presetId]) => !isStyleDefaultImageStale(presetId)),
 );
 export const STYLE_PACK_FALLBACK_IMAGES = buildPackFallbackCatalog(STYLE_AVAILABLE_DEFAULT_IMAGES);
 
 export function resolveStyleDefaultImage(presetId: string) {
-  return isStyleDefaultImageStale(presetId) ? undefined : STYLE_DEFAULT_IMAGES[presetId];
+  return STYLE_DEFAULT_IMAGES[presetId];
 }
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {

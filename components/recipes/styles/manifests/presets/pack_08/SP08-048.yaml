@@ -19,16 +19,15 @@ visualDna:
   material_texture: >-
     Blood-crusted fabric, dirt-embedded denim, duct-tape patches, torn flannel, sweat-soaked cotton, leather holster
     wear
-  render_quality: Horror, survival, walker-apocalypse realism, exhaustion-verité
+  render_quality: Horror, survival, walker-apocalypse realism, exhaustion-verite
   spatial_distortion: Wounds
   atmosphere: Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread
   key_features: Backpack, fingerless gloves, duct-tape patches, bite-protection layers, relic accessory cues
   creative_brief: >-
-    Turn the input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear, mud, dried crimson
-    stains, bite-protection wraps and exhausted layering. It may imply zombie danger, but should not require a weapon,
-    sheriff hat, forest, abandoned building or survivor portrait. Apply this fashion/costume grammar over any input:
-    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
-    body, portrait, runway, room, prop, role, or fixed character scene.
+    Turn any input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear,
+    mud, dried crimson stains, bite-protection wraps and exhausted layering. It may imply zombie
+    danger, but should not require a weapon, sheriff hat, forest, abandoned building or survivor
+    portrait.
 avoidRules:
   - clean
 assets:

@@ -4,8 +4,14 @@ packId: pack_15
 name: Gilded Railway Signal House
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Clockpunk signal language built from elaborate brass semaphore systems.
   form_and_line: Signal mast forests, platform-edge bands, gear towers, and route-lever diagonals.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Track-side-like perspective toward a signal tower axis.
   atmosphere: Coordination, urgency, and precise movement.
   key_features: Semaphore arms, signal clocks, route levers, and brass rail-time markers.
-  creative_brief: >-
-    Signal the input with gilded railway urgency: brick-red planes, brass
-    semaphore arms, route-lever diagonals, smoke-blue platform glow, and rail-time
-    markers make any subject feel coordinated, urgent, and precisely routed.
-avoidRules: [photoreal, cyberpunk, dystopian-rust, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-097.webp }
+  creative_brief: 'Signal the input with gilded railway urgency: brick-red planes, brass semaphore arms, route-lever diagonals, smoke-blue platform glow, and rail-time markers make any subject feel coordinated, urgent, and precisely routed.'
+avoidRules:
+  - photoreal
+  - cyberpunk
+  - dystopian-rust
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-097.webp
 attributes:
   negativePrompt: photoreal, cyberpunk, dystopian-rust, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

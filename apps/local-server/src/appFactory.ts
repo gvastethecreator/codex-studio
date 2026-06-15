@@ -1,6 +1,5 @@
 import { randomUUID } from 'node:crypto';
 import { Hono } from 'hono';
-import { cors } from 'hono/cors';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { resolveCodexInvocation } from './codexExecutable';
 import { createCatalogCommands } from './catalogCommands';
@@ -37,7 +36,7 @@ import {
   type ProcessedReference,
   ReferenceProcessingError,
 } from './referenceManager';
-import { createWorkspaceRoutes } from './workspaceRoutes';
+import { createWorkspaceRoutes, type WorkspaceRoutesDependencies } from './workspaceRoutes';
 import { resetStudioData } from './reset';
 import {
   buildLibraryAssetHeaders,
@@ -50,7 +49,7 @@ import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
 import { createCodexRoutes } from './codexRoutes';
-import { createLibrariesRoutes } from './librariesRoutes';
+import { createLibrariesRoutes, type LibrariesRoutesDependencies } from './librariesRoutes';
 import { createProjectRoutes } from './projectRoutes';
 import { createJobRoutes } from './jobRoutes';
 import { createAssetLogRoutes } from './assetLogRoutes';
@@ -58,6 +57,7 @@ import { createRuntimeRoutes } from './runtimeRoutes';
 import { createStudioControlRoutes } from './studioControlRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
+import { createLocalApiSecurityMiddleware } from './localApiSecurity';
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
@@ -81,6 +81,9 @@ export interface CreateStudioAppOptions {
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
+    allowedOrigins?: string[];
+    libraryRoutes?: Partial<LibrariesRoutesDependencies>;
+    workspaceRoutes?: Partial<WorkspaceRoutesDependencies>;
     catalogStore?: StudioCatalogStore;
     dbStore?: StudioDbStore;
     settingsStorage?: StudioSettingsStorage;
@@ -126,7 +129,10 @@ export async function createStudioApp(
     publishEvent,
   });
 
-  app.use('*', cors());
+  app.use(
+    '*',
+    createLocalApiSecurityMiddleware({ allowedOrigins: options.dependencies?.allowedOrigins }),
+  );
 
   app.route(
     '/api',
@@ -166,6 +172,7 @@ export async function createStudioApp(
       readSettings: () => readEditableStudioSettings(settingsStorage),
       readConfig: getSettings,
       registerCatalogImage: (...args) => catalogStore.registerCatalogImage(...args),
+      ensureThumbnailVariant,
       publishEvent,
     }),
   );
@@ -250,16 +257,15 @@ export async function createStudioApp(
     }),
   );
 
-  app.route(
-    '/api/libraries',
-    createLibrariesRoutes({
-      listLibraries,
-      registerLibrary,
-      setDefaultLibrary,
-      removeLibrary,
-      publishEvent,
-    }),
-  );
+  const libraryRouteDependencies: LibrariesRoutesDependencies = {
+    listLibraries,
+    registerLibrary,
+    setDefaultLibrary,
+    removeLibrary,
+    publishEvent,
+    ...options.dependencies?.libraryRoutes,
+  };
+  app.route('/api/libraries', createLibrariesRoutes(libraryRouteDependencies));
 
   app.route(
     '/api/catalog',
@@ -270,7 +276,7 @@ export async function createStudioApp(
     }),
   );
 
-  app.route('/api/workspaces', createWorkspaceRoutes());
+  app.route('/api/workspaces', createWorkspaceRoutes(options.dependencies?.workspaceRoutes));
 
   app.route(
     '/api',

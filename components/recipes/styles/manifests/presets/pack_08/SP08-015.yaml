@@ -12,21 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: High quality cosplay construction, character-faithful transformation, anime-costume spectacle
-  form_and_line: Silhouette-matched precision, exaggerated anime proportions, prop-scale geometry
+  aesthetic: Convention-grade costume craft, stylized transformation energy, anime-adjacent fabrication spectacle
+  form_and_line: Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry
   color_palette: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
   lighting_setup: Studio craft lighting, three-point rig, colored gel accents, anime-style rim
   material_texture: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
-  render_quality: Fan art, detailed, fun, craftsmanship pride, competition-grade finish
-  spatial_distortion: Big props
-  atmosphere: Playful, character, fake, joyful transformation, fandom devotion, handmade spectacle
-  key_features: Wig texture, styled fiber sheen, armor seam lines, prop replica detail
+  render_quality: Detailed, playful, craftsmanship-forward, competition-grade finish
+  spatial_distortion: None
+  atmosphere: Playful, fabricated, convention-floor pride, handmade spectacle
+  key_features: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing
   creative_brief: >-
-    Convert the input into cosplay craft language: styled synthetic fiber,
-    EVA/Worbla armor seams, thermoplastic props, holographic spandex and
-    silhouette-matched anime exaggeration. Preserve character-faithful cues
-    without forcing a convention hall, named character, replica pose or photo
-    booth scene.
+    Translate the input into polished cosplay craft language: styled synthetic
+    fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic
+    stretch surfaces and exaggerated convention-build clarity. Keep fandom
+    transformation as fabrication energy, not as a named character, replica
+    pose, portrait body or convention-hall scene.
 avoidRules:
   - realistic clothes
   - dull

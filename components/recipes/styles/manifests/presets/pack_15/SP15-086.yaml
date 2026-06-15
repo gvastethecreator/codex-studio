@@ -4,8 +4,14 @@ packId: pack_15
 name: Pendulum Court Ballroom
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Courtly clockpunk elegance ruled by pendulum logic and polished mechanical etiquette.
   form_and_line: Sweeping stair-like curves, hanging weights, gear chandeliers, and waltz spiral geometry.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Rotational composition around a central timekeeping axis.
   atmosphere: Ceremonial motion and elegant precision.
   key_features: Pendulum columns, timer-balcony bands, waltz automata silhouettes, and brass etiquette markers.
-  creative_brief: >-
-    Choreograph the input with pendulum court etiquette: champagne brass arcs,
-    burgundy velvet shadows, hanging weight rhythms, waltz spirals, and gear
-    chandelier glints make any subject feel ceremonial, kinetic, and precise.
-avoidRules: [photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-086.webp }
+  creative_brief: 'Choreograph the input with pendulum court etiquette: champagne brass arcs, burgundy velvet shadows, hanging weight rhythms, waltz spirals, and gear chandelier glints make any subject feel ceremonial, kinetic, and precise.'
+avoidRules:
+  - photoreal
+  - brutal-industrial
+  - cyberpunk-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-086.webp
 attributes:
   negativePrompt: photoreal, brutal-industrial, cyberpunk-noise, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

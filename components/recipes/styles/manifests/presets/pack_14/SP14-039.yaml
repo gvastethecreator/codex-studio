@@ -4,8 +4,14 @@ packId: pack_14
 name: Hundred Mask Ritual Function
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Hundred-mask ritual function where identities dissolve into sacred role and petition.
   form_and_line: Processional axis cues, mask columns, and banner rhythms.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Collective trance, secrecy, and sacred order.
   key_features: Mask bearers, petition scrolls, drum-ritual cadence.
   creative_brief: Recast the input through hundred-mask ritual function, letting identity dissolve into sacred role without requiring a parade.
-avoidRules: [photoreal, festival-pop, neon-club, modern-vehicles, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-039.webp }
+avoidRules:
+  - photoreal
+  - festival-pop
+  - neon-club
+  - modern-vehicles
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-039.webp
 attributes:
   negativePrompt: photoreal, festival-pop, neon-club, modern-vehicles, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

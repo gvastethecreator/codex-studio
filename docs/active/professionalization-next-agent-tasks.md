@@ -229,11 +229,17 @@ bun run build
 
 ### 7. Backend dependency injection
 
-Problem: the logger seam exists, but DB/worker/lifecycle still rely on singletons/global modules in places.
+Problem: the logger seam exists and app factory now has more route-level seams, but DB/worker/lifecycle still rely on singletons/global modules in places.
+
+Current status:
+
+- Done: `createStudioApp` accepts injected catalog store, DB store, worker, logger, app-server lifecycle, library routes, and workspace routes.
+- Done: composition tests cover injected library/workspace route listing, codex failure paths, app-server lifecycle, catalog commands, project routes, and worker cancel behavior.
+- Remaining: deeper data functions still default to singleton-backed modules behind those route seams, so continue extracting only where it simplifies isolated tests or removes route-handler coupling.
 
 Tasks:
 
-- Extend app factory dependencies for catalog store, worker controller, logger, and app-server lifecycle where practical.
+- Extend remaining backend dependencies only where practical.
 - Keep route handlers thin.
 - Preserve Provider Boundary import guards.
 - Add isolated backend tests around injected dependencies.

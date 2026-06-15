@@ -4,8 +4,14 @@ packId: pack_15
 name: Pearl Current District
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Pearl-current seapunk organized by water chambers, tidal flow, and soft civic opalescence.
   form_and_line: Rounded courtyard-like loops, current channels, pearl domes, and tide bridge arcs.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Flow-based plan bending around current loops and pearl chamber repeats.
   atmosphere: Ease, flow, and refined maritime living.
   key_features: Current chamber motifs, pearl plaza loops, tide bridge arcs, and opalescent water seams.
-  creative_brief: >-
-    Pearl-route the input through aquatic ease: white opalescent loops, turquoise
-    current channels, seafoam bridge arcs, shell-panel sheen, and caustic water
-    seams make any subject feel flowing, refined, and maritime.
-avoidRules: [photoreal, heavy-industrial, rust, watermark, text, logo, sludge]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-119.webp }
+  creative_brief: 'Pearl-route the input through aquatic ease: white opalescent loops, turquoise current channels, seafoam bridge arcs, shell-panel sheen, and caustic water seams make any subject feel flowing, refined, and maritime.'
+avoidRules:
+  - photoreal
+  - heavy-industrial
+  - rust
+  - watermark
+  - text
+  - logo
+  - sludge
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-119.webp
 attributes:
   negativePrompt: photoreal, heavy-industrial, rust, watermark, text, logo, sludge
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: 1970s London Punk, King's Road insurrection, DIY anarchy boutique
+  aesthetic: 1970s punk insurrection, DIY anarchy boutique, anti-polish refusal
   form_and_line: Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans
   color_palette: Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome
   lighting_setup: Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe
   material_texture: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, union jack patches
-  render_quality: Vivienne Westwood punk-boutique, rebellious, safety-pin haute couture, SEX boutique rawness
+  render_quality: Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish
   spatial_distortion: Mohawk hair
   atmosphere: Angry, loud, chaotic, confrontational snarl, three-chord fury, DIY refusal
   key_features: DIY aesthetic, hand-scrawled slogans, padlock necklace, torn fishnets
   creative_brief: >-
-    Push the input through punk refusal: torn tartan, painted leather,
-    safety-pin punctuation, gaffer tape repairs, slogans, studs and asymmetry.
-    The result should feel damaged by design and politically loud without
-    requiring a club, crime scene, specific body, mohawk or performance setting.
+    Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs,
+    slogans, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a
+    club, crime scene, body-first rebel read, mohawk or performance setting.
 avoidRules:
   - clean
   - expensive

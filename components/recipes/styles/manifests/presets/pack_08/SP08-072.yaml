@@ -12,21 +12,21 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion
-  form_and_line: Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background
-  color_palette: Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas
-  lighting_setup: Studio-softbox evenness, healed-ink saturation, low rim definition
-  material_texture: Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork
-  render_quality: Artistic, permanent, irezumi-master precision, living-canvas dedication
+  aesthetic: Dense tattoo-surface mapping, ceremonial ink devotion, graphic body-art translated into transferable pattern logic
+  form_and_line: Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic
+  color_palette: Tebori indigo, iron black, oxidized red, aged yellow, moss green accent, parchment-neutral ground
+  lighting_setup: Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read
+  material_texture: Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth
+  render_quality: Artistic, deliberate, irezumi-grade precision, surface-mapping discipline
   spatial_distortion: None
-  atmosphere: Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride
-  key_features: Ink coverage, irezumi waves, wind bars, healed-settle depth, sleeve-to-field connection
+  atmosphere: Committed, ritualized, graphic, surface-history gravity
+  key_features: Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection
   creative_brief: >-
-    Tattoo the input with living-canvas logic: tebori indigo, black linework,
-    old-school accents, irezumi waves, wind bars, stippled shading and healed-ink
-    depth. Preserve skin/ink devotion when relevant, but allow non-human inputs
-    to receive tattoo-like surface mapping without requiring a chest, body suit
-    portrait or tattoo-parlor scene.
+    Recast the input through tattoo-surface mapping: tebori indigo, iron-black
+    linework, old-school accent notes, irezumi waves, wind bars, stippled
+    shading and healed-ink depth should behave like transferable graphic
+    coverage. Keep skin devotion optional; do not require a torso, nude body,
+    chest panel, tattoo-parlor scene or portrait setup.
 avoidRules:
   - clean skin
 assets:

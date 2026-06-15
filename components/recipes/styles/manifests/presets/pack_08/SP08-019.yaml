@@ -12,21 +12,19 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Office wear, boardroom presence, corporate-modern uniformity
+  aesthetic: Professional daywear, boardroom calm, corporate-modern uniformity
   form_and_line: Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column
   color_palette: Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey
   lighting_setup: Window-filtered daylight, soft professional overhead, lobby-neutral glow
   material_texture: Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit
-  render_quality: Professional, safe, competent polish, LinkedIn-headshot ready
+  render_quality: Professional competent polish, low-risk clarity, workplace-ready finish
   spatial_distortion: None
   atmosphere: Professional calm, deadline focus, competent neutrality, low-risk polish
   key_features: Blazer, structured shoulder, pointed-toe pump, leather portfolio bag
   creative_brief: >-
-    Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured
-    shoulders and soft neutral whites. Keep office authority as tone, not as a conference room, LinkedIn headshot,
-    portfolio-bag scene or corporate character. Apply this fashion/costume grammar over any input: preserve textile
-    behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait,
-    runway, room, prop, role, or fixed character scene.
+    Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry,
+    structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference room,
+    headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.
 avoidRules:
   - t-shirt
   - shorts

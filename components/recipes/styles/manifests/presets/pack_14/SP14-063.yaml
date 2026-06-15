@@ -4,8 +4,14 @@ packId: pack_14
 name: Ancestor Drum Relay
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Ancestor drum relay where sound carries warning, blessing, and intergenerational memory.
   form_and_line: Causeway segment cues, drum towers, and signal gates.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Motion, duty, and intergenerational memory.
   key_features: Relay drums, signal braziers, messenger-plaza cues.
   creative_brief: Apply ancestor drum relay to the input, making rhythm and signal carry memory without requiring a road.
-avoidRules: [photoreal, goofy, modern-road, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-063.webp }
+avoidRules:
+  - photoreal
+  - goofy
+  - modern-road
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-063.webp
 attributes:
   negativePrompt: photoreal, goofy, modern-road, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

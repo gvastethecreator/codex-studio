@@ -4,8 +4,14 @@ packId: pack_15
 name: Gilded Gear Conservatory
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Ornate clockpunk horticulture where timekeeping and growth merge into gilded mechanism.
   form_and_line: Brass ribs, gear daisies, clockface halos, and greenhouse-like curvature.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Circular growth rings around a timer-axis focal point.
   atmosphere: Patient elegance and mechanical gentleness.
   key_features: Clock vines, pendulum sprinkler motifs, gear-petal blooms, and time-wound growth patterns.
-  creative_brief: >-
-    Wind the input into gilded horological botany: brass ribs, gear-petal blooms,
-    emerald clock vines, pendulum sprinkler marks, and filtered clockwork glass
-    make any subject feel patiently grown by mechanism.
-avoidRules: [photoreal, cyberpunk, industrial-grunge, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-085.webp }
+  creative_brief: 'Wind the input into gilded horological botany: brass ribs, gear-petal blooms, emerald clock vines, pendulum sprinkler marks, and filtered clockwork glass make any subject feel patiently grown by mechanism.'
+avoidRules:
+  - photoreal
+  - cyberpunk
+  - industrial-grunge
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-085.webp
 attributes:
   negativePrompt: photoreal, cyberpunk, industrial-grunge, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

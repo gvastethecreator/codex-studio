@@ -4,8 +4,13 @@ packId: pack_14
 name: Frostbound Reliquary Endurance
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Glacial pilgrimage noir with austere sacred logistics and relic-protection discipline.
   form_and_line: Protected-relic silhouettes, wind-cut banner rhythms, armored container cues, and elongated horizon bands.
@@ -16,22 +21,29 @@ visualDna:
   spatial_distortion: Wide depth cues with repeated protected-object silhouettes fading into blizzard haze.
   atmosphere: Endurance, solemn duty, and quiet eschatological urgency.
   key_features: Armored reliquary cues, wind-bent banners, frozen marker stones, lantern halos, and glacial duty.
-  creative_brief: >-
-    Freeze the input into frostbound reliquary endurance: silver ice, midnight
-    blue depth, ember lantern points, armored sacred-object cues, and wind-bent
-    banner rhythm should imply pilgrimage discipline without requiring caravans,
-    wagons, travelers, or a winter landscape.
-avoidRules: [photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-012.webp }
+  creative_brief: 'Freeze the input into frostbound reliquary endurance: silver ice, midnight blue depth, ember lantern points, armored sacred-object cues, and wind-bent banner rhythm should imply pilgrimage discipline without requiring caravans, wagons, travelers, or a winter landscape.'
+avoidRules:
+  - photoreal
+  - tropical-vibes
+  - bright-comedy
+  - modern-traffic
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-012.webp
 attributes:
   negativePrompt: photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

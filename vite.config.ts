@@ -5,6 +5,7 @@ import { defineConfig, lazyPlugins } from 'vite-plus';
 const rootDir = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
+  base: './',
   server: {
     port: 17222,
     host: 'localhost',

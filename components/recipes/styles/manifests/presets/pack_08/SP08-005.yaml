@@ -13,19 +13,18 @@ tags:
   - contemporary-fashion
 visualDna:
   aesthetic: Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status
-  form_and_line: Tight fitting, ergonomic, compressive sculpt, racerback lines, high-waist compression
+  form_and_line: Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams
   color_palette: Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal
   lighting_setup: Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights
   material_texture: Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib
-  render_quality: Nike/Lululemon performance-luxury activewear, fit-tech, always-ready, motion-capture sharpness
+  render_quality: Performance-luxury activewear finish, fit-tech precision, always-ready sharpness
   spatial_distortion: None
   atmosphere: Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination
   key_features: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs
   creative_brief: >-
-    Translate the input into engineered activewear language: compressive knit,
-    reflective trims, seamless ribbing, ergonomic panel lines and motion-ready
-    tension. Preserve the wellness-as-performance aura without forcing a gym,
-    street, workout pose or exposed anatomy.
+    Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing,
+    ergonomic panel lines and motion-ready tension. Preserve the wellness-performance aura without forcing gym context,
+    workout pose, second-skin body read or exposed anatomy.
 avoidRules:
   - dress
   - jeans

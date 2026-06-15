@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { pathToFileURL } = require('node:url');
-const { app, BrowserWindow, shell } = require('electron');
+const { app, BrowserWindow, shell, session } = require('electron');
 
 const rendererUrl = process.env.STUDIO_ELECTRON_RENDERER_URL;
 const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:17223';
@@ -76,7 +76,19 @@ function createMainWindow() {
   return mainWindow;
 }
 
-void app.whenReady().then(() => {
+async function clearRendererCaches() {
+  const activeSession = session.defaultSession;
+  if (!activeSession) return;
+
+  await activeSession.clearCache();
+  await activeSession.clearStorageData({
+    storages: ['cachestorage', 'serviceworkers'],
+  });
+  console.log('[electron] cleared renderer cache before load');
+}
+
+void app.whenReady().then(async () => {
+  await clearRendererCaches();
   createMainWindow();
 
   app.on('activate', () => {

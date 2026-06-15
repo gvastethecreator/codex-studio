@@ -12,29 +12,29 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Parametricismo fluido de lógica algorítmica, continuidad topológica y espacialidad casi líquida.
+  aesthetic: Parametricismo fluido de logica algoritmica, continuidad topologica y espacialidad casi liquida.
   form_and_line: >-
-    Curvas continuas, superficies sin junta visible, volúmenes morfogenéticos y transiciones tipo
+    Curvas continuas, superficies sin junta visible, volumenes morfogeneticos y transiciones tipo
     cinta.
-  color_palette: Blanco técnico, gris frío gradual, plata líquida y azul hielo en señal lumínica.
+  color_palette: Blanco tecnico, gris frio gradual, plata liquida y azul hielo en senal luminica.
   lighting_setup: >-
-    Ambiente suave continuo, líneas de glow embebidas, iluminación de borde y núcleos de volumen
+    Ambiente suave continuo, lineas de glow embebidas, iluminacion de borde y nucleos de volumen
     activos.
   material_texture: >-
-    Compuestos lisos, hormigón de piel continua, panelería GRP y membranas tensadas de alta
-    precisión.
+    Compuestos lisos, hormigon de piel continua, paneleria GRP y membranas tensadas de alta
+    precision.
   render_quality: >-
-    Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle
+    Futurista de precision computacional, con lectura limpia de geometria compleja y detalle
     constructivo plausible.
   spatial_distortion: Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.
-  atmosphere: Elegante, avanzada, ligera y matemática.
+  atmosphere: Elegante, avanzada, ligera y matematica.
   key_features: >-
-    Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta
+    Vertices continuos, porosidad algoritmica, patrones parametricos y canales formales sin junta
     visible.
   creative_brief: >-
-    Construye una gramática paramétrica transferible donde continuidad de superficie, variación
-    algorítmica y precisión constructiva sean inseparables. Debe sentirse computacional sin depender
-    de un edificio específico.
+    Convierte cualquier input en una gramatica parametrica donde continuidad de superficie, variacion
+    algoritmica y precision constructiva operen como un solo sistema. Debe sentirse computacional y
+    morfogenetico sin depender de un edificio heroico concreto.
 avoidRules:
   - brick
   - square

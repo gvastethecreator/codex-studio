@@ -4,8 +4,13 @@ packId: pack_14
 name: Veiled Grimoire Secrecy
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Forbidden grimoire secrecy filtered through veils, coded margins, and intimate noir mystery.
   form_and_line: Layered curtains, semicircle sightlines, and hidden book-stand cues.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Curiosity, privacy, and sealed knowledge.
   key_features: Veiled shelf cues, coded margins, ritual reading surfaces.
   creative_brief: Reframe the input through veiled grimoire secrecy, using forbidden-book cues and gauze layers without requiring a salon or readable text.
-avoidRules: [photoreal, action-chaos, neon, watermark, text, logo, messy]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-112.webp }
+avoidRules:
+  - photoreal
+  - action-chaos
+  - neon
+  - watermark
+  - text
+  - logo
+  - messy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-112.webp
 attributes:
   negativePrompt: photoreal, action-chaos, neon, watermark, text, logo, messy
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

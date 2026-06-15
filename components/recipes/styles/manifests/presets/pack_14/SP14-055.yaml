@@ -4,8 +4,14 @@ packId: pack_14
 name: Hoplite Dawn Discipline
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Hoplite dawn discipline where martial routine and sacred duty become one visual order.
   form_and_line: Grid barrack cues, shield walls, and drill-yard symmetry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Stoic resolve and communal duty.
   key_features: Shield racks, spear drill cues, oath pyre corners.
   creative_brief: Recast the input through hoplite dawn discipline, making preparation feel sacred without requiring barracks.
-avoidRules: [photoreal, slapstick, neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-055.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-055.webp
 attributes:
   negativePrompt: photoreal, slapstick, neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

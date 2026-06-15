@@ -3,8 +3,6 @@ import {
   loadGeneratedStyleRuntimePack,
   loadGeneratedStyleRuntimePacks,
 } from './styleRuntimeData.generated';
-import { loadStylePresetCatalog } from './stylePresetCatalogData';
-import { composeStyleRuntimePacksFromManifests } from './stylePresetManifests';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 
 const STYLE_VISUAL_DNA_KEYS = [
@@ -53,6 +51,9 @@ export async function loadStylePresetIndex(): Promise<{
   presetById: Map<string, StyleRuntimePreset>;
   presetPackIdById: Map<string, string>;
 }> {
+  const [{ loadStylePresetCatalog }, { composeStyleRuntimePacksFromManifests }] = await Promise.all(
+    [import('./stylePresetCatalogData'), import('./stylePresetManifests')],
+  );
   const catalog = await loadStylePresetCatalog();
   const packs = composeStyleRuntimePacksFromManifests(
     catalog.packManifests,
@@ -72,4 +73,3 @@ export async function loadStylePresetIndex(): Promise<{
 
 export * from './styles/manifestTypes';
 export * from './styles/runtimeTypes';
-export * from './stylePresetManifests';

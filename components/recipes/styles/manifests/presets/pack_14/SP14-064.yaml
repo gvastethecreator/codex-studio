@@ -4,8 +4,14 @@ packId: pack_14
 name: Spirit Elephant Stewardship
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Elephant guardian stewardship expressed through patience, protection, and ancestral force.
   form_and_line: Massive pylon cues, tusk arches, and processional stair rhythms.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Protection, patience, and ancestral force.
   key_features: Tusk arch cues, guardian masks, oath threshold.
   creative_brief: Reinterpret the input through spirit-elephant stewardship, making strength read as protection without requiring a gate.
-avoidRules: [photoreal, cartoon, cyber-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-064.webp }
+avoidRules:
+  - photoreal
+  - cartoon
+  - cyber-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-064.webp
 attributes:
   negativePrompt: photoreal, cartoon, cyber-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

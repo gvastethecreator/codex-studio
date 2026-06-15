@@ -4,8 +4,14 @@ packId: pack_15
 name: Timekeeper Harbor
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Maritime clockpunk rhythm guided by monumental timekeeping and tidal mechanics.
   form_and_line: Clock-tower silhouettes, crane-arm arcs, tidal gate geometry, and pendulum masts.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Harbor-like depth leading to a central timekeeping axis.
   atmosphere: Order, signal discipline, and civic tide control.
   key_features: Tide clocks, signal-crane motifs, quay pendulums, and brass waterline markers.
-  creative_brief: >-
-    Tide-lock the input into maritime clockpunk order: brass waterline markers,
-    pendulum masts, crane-arm arcs, sea-blue timing bands, and beacon rows make
-    any subject feel governed by signals, tides, and civic schedule.
-avoidRules: [photoreal, neon-dystopia, industrial-rust, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-088.webp }
+  creative_brief: 'Tide-lock the input into maritime clockpunk order: brass waterline markers, pendulum masts, crane-arm arcs, sea-blue timing bands, and beacon rows make any subject feel governed by signals, tides, and civic schedule.'
+avoidRules:
+  - photoreal
+  - neon-dystopia
+  - industrial-rust
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-088.webp
 attributes:
   negativePrompt: photoreal, neon-dystopia, industrial-rust, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

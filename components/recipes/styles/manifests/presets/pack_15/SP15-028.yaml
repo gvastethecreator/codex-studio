@@ -4,8 +4,14 @@ packId: pack_15
 name: Moonwater Terraces
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Gentle lunarpunk ecology made of reflective water, pearl strata, and low-gravity calm.
   form_and_line: Crescent strata, circular hydro rings, slim arching lines, and drifting particle paths.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Layered bowl-like depth with drifting low-gravity particles.
   atmosphere: Quiet futurism, contemplative community, and ritual calm.
   key_features: Moonwater reflections, crescent terrace bands, phase-lantern dots, and aqua biolume rims.
-  creative_brief: >-
-    Cool the input into reflective lunar ecology: crescent strata, pearl-white
-    regolith, moonlit aqua rims, drifting particles, and low-gravity water
-    bands. Terraces or pools may support the anchor, but the transferable style
-    is ritual calm, soft phase light, and civic reflection.
-avoidRules: [photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-028.webp }
+  creative_brief: 'Cool the input into reflective lunar ecology: crescent strata, pearl-white regolith, moonlit aqua rims, drifting particles, and low-gravity water bands. Terraces or pools may support the anchor, but the transferable style is ritual calm, soft phase light, and civic reflection.'
+avoidRules:
+  - photoreal
+  - militarized-moon-base
+  - grim-industrial
+  - neon-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-028.webp
 attributes:
   negativePrompt: photoreal, militarized-moon-base, grim-industrial, neon-noise, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

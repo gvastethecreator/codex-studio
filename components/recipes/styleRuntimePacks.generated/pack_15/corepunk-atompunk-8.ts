@@ -352,7 +352,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, dystopian-riot, medieval, grim-horror, watermark, text, logo',
     style: {
       aesthetic:
-        'Atomic parade propaganda where governance moves as synchronized machinery and public joy is technologized.',
+        'Atomic ceremonial civic spectacle where synchronized machinery and public pageantry feel polished, disciplined, and theatrical.',
       form_and_line:
         'Processional axes, tier bands, atom obelisks, synchronized silhouettes, banner grids, and marching turbine arcs.',
       color_palette:
@@ -362,15 +362,15 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Polished concrete, painted steel, glossy shells, fabric pennants, enamel insignia, and confetti caught in vents.',
       render_quality:
-        'Epic wide concept with clear crowd segmentation, vehicle hierarchy, and ceremonial readability.',
+        'Grand atompunk concept with clear ceremonial hierarchy, polished infrastructure, and readable procession logic.',
       spatial_distortion:
         'Processional depth magnifies scale through repeated obelisks, flags, and engineered lanes.',
       atmosphere:
-        'National pride, theatrical governance, curated futurity, and rehearsed mass enthusiasm.',
+        'Ceremonial optimism, engineered pageantry, polished futurity, and disciplined collective motion.',
       key_features:
-        'Atom obelisks, marching turbine marks, civic-tech float shapes, pennant shadows, and synchronized route markings.',
+        'Atom obelisks, turbine insignia, ceremonial float curves, pennant shadows, and synchronized route markings.',
       creative_brief:
-        'March the input through atomic civic spectacle: atom obelisks, parade-white glare, turbine float curves, synchronized route marks, and pennant shadows should technologize joy. Parade or avenue cues may appear, but the style is rehearsed mass enthusiasm with polished unease. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
+        'March the input through atomic civic pageantry: atom obelisks, parade-white glare, turbine float curves, synchronized route marks, and pennant shadows should feel ceremonial, polished, and slightly uncanny. Parade or avenue cues may appear, but the style is disciplined public spectacle rather than a fixed rally or political scene. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.',
     },
   },
   {

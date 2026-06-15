@@ -4,8 +4,13 @@ packId: pack_14
 name: Blackwater Totem Memory
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Ancestral totem language marked by blackwater reflections and ritual memory.
   form_and_line: Vertical stacked forms, carved notches, and horizontal reflection bands.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Ancestor memory, passage, and river-bound ritual.
   key_features: Totem pillars, blackwater sheen, carved ancestral marks.
   creative_brief: Translate any input into blackwater totem memory, using carved vertical signs, oxidized-copper scars, reflection bands, and ink-dark flow. Keep ancestor-memory weight without forcing totems, riverbanks, landscapes, carved figures, or ritual sites.
-avoidRules: [photoreal, neon, pop-art, watermark, text, logo, cute]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-101.webp }
+avoidRules:
+  - photoreal
+  - neon
+  - pop-art
+  - watermark
+  - text
+  - logo
+  - cute
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-101.webp
 attributes:
   negativePrompt: photoreal, neon, pop-art, watermark, text, logo, cute
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

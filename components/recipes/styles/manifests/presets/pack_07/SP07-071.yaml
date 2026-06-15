@@ -12,23 +12,22 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Vernáculo fúngico encantado con masa bulbosa y lógica ecológica miniatura.
-  form_and_line: Columnas tipo tallo, cubiertas domo-cap, intradós acanalado de láminas y transiciones orgánicas de volumen hinchado.
+  aesthetic: Vernaculo fungico encantado con masa bulbosa y logica ecologica miniatura, portable mas alla del bosque de cuento.
+  form_and_line: Columnas tipo tallo, cubiertas domo-cap, intrados acanalado de laminas y transiciones organicas de volumen hinchado.
   color_palette: >-
     Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm
-    forest-amber undertones
-  lighting_setup: Luz moteada filtrada por dosel, relleno frío de sombra y acentos bioluminiscentes sutiles en bordes bajos.
-  material_texture: Piel fúngica mate, moteado de sombrero, costillas de lámina, manto musgoso húmedo y polvo fino de esporas.
-  render_quality: Fantasía storybook con curvatura orgánica fiel y detalle táctil de micromaterial biológico.
-  spatial_distortion: Cap-and-stem volumetric swelling and softened miniature-scale proportion stretching
-  atmosphere: Encantada, protegida y de escala diminuta con integración ecológica total.
-  key_features: Siluetas cap-dome, tallos estructurales, aperturas circulares, base de musgo y composición en clúster.
+    understory amber
+  lighting_setup: Luz filtrada moteada, relleno frio de sombra y acentos bioluminiscentes sutiles en bordes y cavidades bajas.
+  material_texture: Piel fungica mate, moteado de sombrero, costillas de lamina, manto musgoso humedo y polvo fino de esporas.
+  render_quality: Fantasia storybook con curvatura organica fiel y detalle tactil de micromaterial biologico.
+  spatial_distortion: Cap-and-stem volumetric swelling with softened miniature proportion drift
+  atmosphere: Encantada, protegida y diminuta, como un ecosistema construido desde crecimiento biologico.
+  key_features: Siluetas cap-dome, tallos estructurales, aperturas circulares, bases humedas y jerarquia de cluster biologico.
   creative_brief: >-
-    Usa morfología fúngica como estilo: jerarquía cap-stem, piel moteada, láminas acanaladas, musgo húmedo y escala
-    miniatura ecológica. El sujeto puede variar; la lógica biológica y bulbosa debe mandar. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Usa morfologia fungica como estilo: jerarquia cap-stem, piel moteada, laminas acanaladas, musgo humedo y escala
+    miniatura ecologica. El sujeto puede variar; la logica biologica y bulbosa debe mandar sin exigir suelo de bosque,
+    anillo de setas, cottage fae o cluster narrativo fijo. Conserva jerarquia cap-stem, microescala humeda y tactilidad
+    biologica sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - square
 assets:

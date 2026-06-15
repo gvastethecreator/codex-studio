@@ -4,8 +4,13 @@ packId: pack_15
 name: Terraced Sky Harvest
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: High-altitude agrarian solarpunk focused on food sovereignty, shared stewardship, and optimistic stepped abundance.
   form_and_line: Stepped cultivation-band rhythm, cooperative cluster geometry, and gently spiraled circulation paths as compositional logic.
@@ -16,22 +21,28 @@ visualDna:
   spatial_distortion: Ascending terrace-like perspective that reveals zoning, access rhythm, and cooperative nodes without requiring a farm scene.
   atmosphere: Productive calm, collective pride, and grounded optimism.
   key_features: Tiered agro-cell patterning, gravity-fed water logic, seedling-scale repetition, and shared-harvest rhythm.
-  creative_brief: >-
-    Treat any input as a living food-sovereignty diagram: tier it into
-    harvest-bands, cistern veins, seedling repetition, and cooperative access
-    paths. Crops, terraces, workers, or harvest rituals may appear when useful,
-    but the core style is stepped abundance and gravity-fed stewardship.
-avoidRules: [photoreal, dystopian, dirty-pollution, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-001.webp }
+  creative_brief: 'Treat any input as a living food-sovereignty diagram: tier it into harvest-bands, cistern veins, seedling repetition, and cooperative access paths. Crops, terraces, workers, or harvest rituals may appear when useful, but the core style is stepped abundance and gravity-fed stewardship.'
+avoidRules:
+  - photoreal
+  - dystopian
+  - dirty-pollution
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-001.webp
 attributes:
   negativePrompt: photoreal, dystopian, dirty-pollution, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

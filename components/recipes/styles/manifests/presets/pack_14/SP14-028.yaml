@@ -4,8 +4,14 @@ packId: pack_14
 name: Valkyrie Ice Weighing
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Valkyrie ice weighing where chosen souls pass through glacial sky and martial grace.
   form_and_line: Arcing bridge cues, winged standards, and blade-like vertical accents.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Heroic melancholy, martial grace, and imminent transcendence.
   key_features: Valkyrie rider cues, soul lanterns, storm ravens, sword-rune balustrades.
   creative_brief: Transform the input through valkyrie ice weighing, where destiny is judged by warriors of the afterlife without requiring a causeway.
-avoidRules: [photoreal, modern-aircraft, comedic, neon-city, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-028.webp }
+avoidRules:
+  - photoreal
+  - modern-aircraft
+  - comedic
+  - neon-city
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-028.webp
 attributes:
   negativePrompt: photoreal, modern-aircraft, comedic, neon-city, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

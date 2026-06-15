@@ -4,8 +4,14 @@ packId: pack_14
 name: Anansi Moon Fate Weave
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Trickster mythology as elegant nocturnal tapestry-work of fate, wit, and bargain.
   form_and_line: Suspended thread cues, radial loom structures, and mask-like knot motifs.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Clever tension, playful danger, and whispered transformation.
   key_features: Cosmic loom cues, trickster glyphs, suspended market silhouettes, story-knot archives.
   creative_brief: Transform any input through Anansi moon fate-weave, where every contour can become a clever bargain with destiny. Keep trickster intelligence, suspended thread logic, lunar indigo, knot motifs, and tapestry-depth without requiring spiders, markets, looms, masks, or a literal myth scene.
-avoidRules: [photoreal, slapstick, modern-signage, cyber-ui, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-023.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - modern-signage
+  - cyber-ui
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-023.webp
 attributes:
   negativePrompt: photoreal, slapstick, modern-signage, cyber-ui, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

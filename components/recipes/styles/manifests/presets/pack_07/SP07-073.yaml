@@ -12,8 +12,8 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Cutaway subterráneo con red capilar y zonificación biofuncional estricta.
-  form_and_line: Túneles capilares ramificados, cámaras nodales, conectores verticales y estratos seccionados por capas.
+  aesthetic: Sección subterránea biofuncional con red capilar y zonificación interna estricta.
+  form_and_line: Ramificaciones capilares, cámaras nodales, conectores verticales y estratos seccionados por capas.
   color_palette: >-
     Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly
     turned earth tones
@@ -21,14 +21,13 @@ visualDna:
   material_texture: Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.
   render_quality: Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.
   spatial_distortion: None
-  atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie observada.
-  key_features: Jerarquía de malla capilar, cámaras funcionales, ejes de circulación vertical y borde transparente de observación.
+  atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie inferida.
+  key_features: Jerarquía capilar, cámaras funcionales, ejes de circulación vertical y lectura estratificada de sección.
   creative_brief: >-
-    Representa cualquier sistema como corte biofuncional subterráneo: túneles capilares, cámaras nodales, estratos
-    granulares y lectura lateral de observación. La función interna importa más que insectos o superficie literal. Apply
-    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cámaras nodales,
+    estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero,
+    vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional
+    interna sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - surface
 assets:

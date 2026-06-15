@@ -105,14 +105,26 @@ describe('style authoring source audit', () => {
       'components/recipes/styleRuntimePacks.generated/pack_01.check.123.tmp.ts',
       'export const temp = true;',
     );
+    await writeRepoFile(
+      rootDir,
+      'lib/staleStyleDefaultImages.generated.check.123.tmp.ts',
+      'export const temp = true;',
+    );
+    await writeRepoFile(
+      rootDir,
+      'lib/styleDefaultImages.generated.check.123.tmp.ts',
+      'export const temp = true;',
+    );
 
     const report = await createStyleAuthoringSourceAuditReport(rootDir);
 
     expect(report.usages).toEqual([]);
     expect(report.violations).toEqual([]);
-    expect(report.generatedTempFiles).toEqual([
+    expect([...report.generatedTempFiles].sort()).toEqual([
       'components/recipes/styleRuntimeData.generated.check.123.tmp.ts',
       'components/recipes/styleRuntimePacks.generated/pack_01.check.123.tmp.ts',
+      'lib/staleStyleDefaultImages.generated.check.123.tmp.ts',
+      'lib/styleDefaultImages.generated.check.123.tmp.ts',
     ]);
     expect(report.retiredLegacyPackFiles).toEqual([]);
     expect(report.legacyMigrationPackFiles).toEqual([]);

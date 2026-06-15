@@ -13,7 +13,7 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: Partially invisible, refraction-mirage wonder, stealth-magic concealment
-  form_and_line: Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended-garment shape
+  form_and_line: Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape
   color_palette: Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones
   lighting_setup: Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge
   material_texture: Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo
@@ -22,10 +22,10 @@ visualDna:
   atmosphere: Hidden, magic, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry
   key_features: Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam
   creative_brief: >-
-    Apply invisibility-cloak optics to the input: refractive edge distortion,
-    background-matching transparency, glass-blue seams, chromatic fringe and
-    adaptive-camo shimmer. Preserve the disappearing-presence effect without
-    forcing a body, hand reveal, wizard cloak scene or specific environment.
+    Apply invisibility-cloak optics to any input: refractive edge distortion, background-matching
+    transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the
+    disappearing-presence effect without forcing a body, hand reveal, wizard-cloak scene, garment wearer
+    or specific environment.
 avoidRules:
   - visible
 assets:

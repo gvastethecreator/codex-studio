@@ -12,21 +12,19 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Bohemian festival styling, flower-crown freedom, golden-hour bohemia, fringe-and-lace reverie
-  form_and_line: Flowing layers, fringe, tiered maxi dress, bell-sleeve drama, off-shoulder ease
+  aesthetic: Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie
+  form_and_line: Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease
   color_palette: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
   lighting_setup: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
   material_texture: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
-  render_quality: Free People bohemian editorial, hippie, summer, festival romance, sun-drenched nostalgia
+  render_quality: Craft-led bohemian editorial, weathered softness, sun-drenched naturalism
   spatial_distortion: None
   atmosphere: Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease
   key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
   creative_brief: >-
-    Render the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn suede, eyelet
-    cotton and sun-bleached florals. Keep the golden, handmade, wind-touched feeling while avoiding a fixed desert
-    festival, crowd, stage or barefoot travel scene. Apply this fashion/costume grammar over any input: preserve textile
-    behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait,
-    runway, room, prop, role, or fixed character scene.
+    Filter the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn suede, eyelet
+    cotton and sun-bleached florals. Keep the golden handmade drift and wind-touched ease as styling pressure only, not
+    as a fixed desert festival, crowd, stage, barefoot traveler or prescribed body setup.
 avoidRules:
   - suit
   - strict

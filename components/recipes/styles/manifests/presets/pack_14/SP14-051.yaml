@@ -4,8 +4,14 @@ packId: pack_14
 name: Laurel Academy Governance
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Laurel academy governance where philosophy, prophecy, and leadership discipline shape the input.
   form_and_line: Courtyard cloister cues, lecture tiers, and battlement edges.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Intellectual rigor and political gravity.
   key_features: Debate rotunda cues, omen observatory marks, laurel archive rhythms.
   creative_brief: Apply laurel academy governance to the input, teaching authority as mythic responsibility without requiring a citadel.
-avoidRules: [photoreal, cartoon, neon-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-051.webp }
+avoidRules:
+  - photoreal
+  - cartoon
+  - neon-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-051.webp
 attributes:
   negativePrompt: photoreal, cartoon, neon-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_15
 name: Genome Garden Forum
 category: 3. Corepunk — Biopunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, biopunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - biopunk
 visualDna:
   aesthetic: Genomic biopunk forum style embedded in garden logic and public learning.
   form_and_line: Spiral forum bands, petal-like lab alcoves, DNA trellis curves, and pollen display arcs.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Amphitheater-like depth framed by botanical layers.
   atmosphere: Debate, cultivation, and intelligent stewardship.
   key_features: Genome bench motifs, pollen display grids, bio-learning panels, and DNA trellis shadows.
-  creative_brief: >-
-    Debate the input inside genome garden logic: chlorophyll spiral bands,
-    rose-amber pollen grids, DNA trellis shadows, petal lab alcoves, and
-    clean-white bio-learning panels make any subject feel cultivated and civic.
-avoidRules: [photoreal, sterile, cyberpunk, watermark, text, logo, flat-light]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-105.webp }
+  creative_brief: 'Debate the input inside genome garden logic: chlorophyll spiral bands, rose-amber pollen grids, DNA trellis shadows, petal lab alcoves, and clean-white bio-learning panels make any subject feel cultivated and civic.'
+avoidRules:
+  - photoreal
+  - sterile
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+  - flat-light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-105.webp
 attributes:
   negativePrompt: photoreal, sterile, cyberpunk, watermark, text, logo, flat-light
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-biopunk,
-    categoryName: 3. Corepunk — Biopunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, biopunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-biopunk
+  categoryName: 3. Corepunk — Biopunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - biopunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

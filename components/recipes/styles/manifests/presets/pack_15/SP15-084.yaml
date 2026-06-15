@@ -4,8 +4,14 @@ packId: pack_15
 name: Cradle of Quiet Engines
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Low-noise propulsion nursery where engines feel grown, protected, and carefully tuned.
   form_and_line: Engine-cradle curves, circular test rings, acoustic shell walls, and quiet thrust petals.
@@ -16,22 +22,29 @@ visualDna:
   spatial_distortion: Nested calibration rings converging on a quiet test core.
   atmosphere: Precision, care, and optimistic experimentation.
   key_features: Quiet engine pods, calibration rings, acoustic shell ribs, and communal design markings.
-  creative_brief: >-
-    Grow the input around quiet propulsion care: acoustic ceramic shells,
-    teal calibration rings, insulated cradle curves, soft amber status halos,
-    and thrust-petal motifs make any subject feel tuned, protected, and
-    experimentally alive.
-avoidRules: [photoreal, militarized-weapons, cyber-grunge, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-084.webp }
+  creative_brief: 'Grow the input around quiet propulsion care: acoustic ceramic shells, teal calibration rings, insulated cradle curves, soft amber status halos, and thrust-petal motifs make any subject feel tuned, protected, and experimentally alive.'
+avoidRules:
+  - photoreal
+  - militarized-weapons
+  - cyber-grunge
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-084.webp
 attributes:
   negativePrompt: photoreal, militarized-weapons, cyber-grunge, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

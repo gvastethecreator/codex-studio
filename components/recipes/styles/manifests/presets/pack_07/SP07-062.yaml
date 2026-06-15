@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Tribal-canopy elevado con ingeniería orgánica artesanal y vida comunal suspendida.
-  form_and_line: Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles orgánicos.
+  aesthetic: Vernáculo de canopy elevado, con ingeniería orgánica artesanal y vida comunal suspendida.
+  form_and_line: Hubs circulares, catenarias de cuerda, anillos de amarre y circulación vertical por niveles orgánicos.
   color_palette: Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling
   lighting_setup: Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.
   material_texture: Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.
   render_quality: Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.
   spatial_distortion: None
   atmosphere: Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.
-  key_features: Cuerdas enlazadas, plataformas radiales, pasarelas ceñidas al soporte vivo y nidos de observación elevados.
+  key_features: Cuerdas enlazadas, plataformas radiales, pasarelas suspendidas y puntos elevados de observación.
   creative_brief: >-
     Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz
-    filtrada por dosel y materiales vivos. Debe expresar ingeniería comunal elevada sin tribu, planeta o set específico.
-    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    filtrada por dosel y materiales vivos. Debe expresar ingenieria comunal elevada sin tribu literal, pueblo arboreo
+    fijo, planeta selvatico ni set especifico. Mantiene material vivo, tension suspendida, escala vertical y ritmo de
+    amarre sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - metal
 assets:

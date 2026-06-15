@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.
-  form_and_line: Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de borde.
+  aesthetic: Ecologia postindustrial de borde reutilizado, donde memoria infraestructural y vegetacion urbana coexisten como una sola gramatica de superficie.
+  form_and_line: Estratos lineales de borde, alternancia hardscape-softscape y modulos repetidos de retencion, pausa y filtrado.
   color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
-  lighting_setup: Luz difusa de tarde con rebote urbano suave y caída progresiva sobre superficies lineales.
-  material_texture: Hormigón crudo, corten oxidado, acero cepillado, grava fina, gramíneas al viento e inserciones de madera envejecida.
-  render_quality: Nivel concurso de paisaje con legibilidad de reutilización y sucesión vegetal creíble.
-  spatial_distortion: Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility
-  atmosphere: Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.
-  key_features: Linealidad infraestructural, bordes estratificados, interfaces de pausa y mezclas de plantación para polinizadores.
+  lighting_setup: Luz urbana difusa con rebote mineral suave y caida progresiva sobre planos, franjas y vacios reutilizados.
+  material_texture: Hormigon crudo, corten oxidado, acero cepillado, grava fina, gramaneas al viento e inserciones de madera envejecida.
+  render_quality: Nivel concurso de paisaje con legibilidad de reutilizacion y sucesion vegetal creible.
+  spatial_distortion: Layered edge compression, depth through repeating field modules, strong threshold legibility without a required promenade axis
+  atmosphere: Respiro civico contemporaneo, permeable y con patina de infraestructura heredada en transicion ecologica.
+  key_features: Linealidad infraestructural, bordes estratificados, umbrales de retencion y mezclas de plantacion resiliente para polinizadores.
   creative_brief: >-
-    Cualquier composicion queda reprogramada como borde reciclado: infraestructura lineal, corten, hormigon heredado y
-    plantacion resiliente. La ecologia debe colonizar la reticula sin borrar su pasado industrial. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Reprograma cualquier composicion como ecologia de borde reutilizado: corten, hormigon heredado, grava, madera
+    envejecida y plantacion resiliente colonizando una reticula previa. Debe sentirse civic-reclaimed y modular, no
+    como sendero heroico, parque lineal obligatorio o paseo con procession fija. Conserva borde reutilizado, estratos
+    civicos, plantacion resiliente y ritmo modular sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - wild forest
 assets:

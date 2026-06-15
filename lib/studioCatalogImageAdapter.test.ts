@@ -3,6 +3,7 @@ import type { CatalogImage } from '../packages/shared/src';
 import {
   materializeCatalogEntryImage,
   materializeCatalogEntryImageWithConfig,
+  resolveCatalogEntryPreviewUrl,
   resolveCatalogEntryBatchId,
 } from './studioCatalogImageAdapter';
 
@@ -44,7 +45,7 @@ describe('studioCatalogImageAdapter', () => {
     expect(image).toEqual(
       expect.objectContaining({
         id: 'image-1',
-        src: 'http://localhost:17223/library/outputs/image-1.png',
+        src: 'http://127.0.0.1:17223/library/outputs/image-1.png',
         batchId: 'batch-1',
         isFavorite: true,
       }),
@@ -55,8 +56,25 @@ describe('studioCatalogImageAdapter', () => {
     const image = materializeCatalogEntryImage(catalogImage({ thumbnailUrl: null }));
 
     expect(image.thumbnail).toBe(
-      'http://localhost:17223/library/outputs/image-1.png?variant=thumb&max=512',
+      'http://127.0.0.1:17223/library/outputs/image-1.png?variant=thumb&max=512',
     );
+  });
+
+  it('materializes a bounded modal preview separate from the original file', () => {
+    const entry = catalogImage({
+      publicUrl: '/library/outputs/large-original.png',
+      thumbnailUrl: '/library/outputs/thumbnails/large-original.webp',
+    });
+    const image = materializeCatalogEntryImage(entry);
+
+    expect(image.src).toBe('http://127.0.0.1:17223/library/outputs/large-original.png');
+    expect(image.thumbnail).toBe(
+      'http://127.0.0.1:17223/library/outputs/thumbnails/large-original.webp',
+    );
+    expect(image.preview).toBe(
+      'http://127.0.0.1:17223/library/outputs/large-original.png?variant=thumb&max=1024',
+    );
+    expect(resolveCatalogEntryPreviewUrl(entry)).toBe(image.preview);
   });
 
   it('falls back to a stable compatibility batch id when the catalog entry has no batch id', () => {
@@ -87,7 +105,7 @@ describe('studioCatalogImageAdapter', () => {
     expect(image).toEqual(
       expect.objectContaining({
         id: 'catalog-image',
-        src: 'http://localhost:17223/library/outputs/catalog-image.png',
+        src: 'http://127.0.0.1:17223/library/outputs/catalog-image.png',
         config: expect.objectContaining({
           prompt: 'Stored prompt',
           model: 'codex-imagegen',

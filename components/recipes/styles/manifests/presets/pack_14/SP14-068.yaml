@@ -4,8 +4,14 @@ packId: pack_14
 name: Ancestor Fire Deliberation
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Ancestor fire deliberation where law, memory, and collective accountability meet.
   form_and_line: Circular deliberation rings, stepped accountability bands, ember channels, and ancestral witness marks.
@@ -16,22 +22,29 @@ visualDna:
   spatial_distortion: Circular focus around a central ancestral flame or equivalent ember core.
   atmosphere: Debate, memory, and collective accountability.
   key_features: Council-staff cues, ember parliament rhythm, ancestry mural marks, bronze memory light, and collective accountability.
-  creative_brief: >-
-    Deliberate the input through ancestor fire law: ebony fields, bronze marks,
-    ember cores, circular accountability bands, and ancestral witness symbols
-    should make any subject feel judged by memory without requiring parliament,
-    council, seated figures, fire pit, or literal debate.
-avoidRules: [photoreal, goofy, neon-sci-fi, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-068.webp }
+  creative_brief: 'Deliberate the input through ancestor fire law: ebony fields, bronze marks, ember cores, circular accountability bands, and ancestral witness symbols should make any subject feel judged by memory without requiring parliament, council, seated figures, fire pit, or literal debate.'
+avoidRules:
+  - photoreal
+  - goofy
+  - neon-sci-fi
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-068.webp
 attributes:
   negativePrompt: photoreal, goofy, neon-sci-fi, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -23,6 +23,759 @@ Common reason: the preset was rewritten from a concrete scene/props into an abst
 
 Criterion note: titles, IP names, or work names may stay as a stylistic anchor. The card must still be regenerated when the manifest changes, but the issue is not the IP itself; the issue is when `visualDna` or `creative_brief` force a specific composition, character, location, prop, or event.
 
+## Current verification - 2026-06-09
+
+- Real coverage rechecked with:
+  - `bun run styles:validate -- --pack=pack_14 --coverage`
+  - `bun run styles:validate -- --pack=pack_15 --coverage`
+- Current repo state:
+  - `pack_14`: `defaultImages=123/123`, `missingDefaultImages=0`
+  - `pack_15`: `defaultImages=137/137`, `missingDefaultImages=0`
+- Runtime stale check:
+  - `lib/staleStyleDefaultImages.generated.ts` no longer lists any `SP14-*` or `SP15-*` ids.
+- Historical failure ledgers still exist:
+  - `assets/recipes/styles/defaults/failures-pack_14.json`
+  - `assets/recipes/styles/defaults/failures-pack_15.json`
+- Interpretation rule:
+  - those failure ledgers are historical retry evidence only; they do not currently mean missing or stale cards if coverage is `100%` and stale ids are absent from the generated runtime list.
+- Practical priority shift after this checkpoint:
+  - visual debt is no longer centered on `pack_14` / `pack_15`;
+  - remaining missing default-image coverage now sits in `pack_01` (`81/87`) and `pack_02` (`120/128`).
+
+## Current verification - 2026-06-12
+
+- Real coverage rechecked with:
+  - `bun run styles:validate -- --pack=pack_01 --coverage`
+  - `bun run styles:validate -- --pack=pack_02 --coverage`
+- Current repo state:
+  - `pack_01`: `defaultImages=87/87`, `availableDefaultImages=6/87`, `staleDefaultImages=81`, `missingDefaultImages=0`
+  - `pack_02`: `defaultImages=128/128`, `availableDefaultImages=8/128`, `staleDefaultImages=120`, `missingDefaultImages=0`
+- Exact missing manifests today:
+  - `pack_01`: none remaining after `missing_p01_b` and `missing_p01_c`
+  - `pack_02`: none remaining after `missing_p02_d`
+- Distinction rule for next visual round:
+  - `defaultImages` only means a `.webp` file exists on disk;
+  - `availableDefaultImages` means the card is not listed in `lib/staleStyleDefaultImages.generated.ts` and can be treated as visually current;
+  - `staleDefaultImages` means the UI can still show an image, but it is a known placeholder/obsolete/default card that must be regenerated.
+- Practical implication:
+  - `pack_01` and `pack_02` have no missing files now, but most of their visible card images are still stale/generic and should remain in the regeneration queue.
+- Runtime note from the same checkpoint:
+  - current source and `dist` both resolve real preset-level defaults before any pack fallback;
+  - if the UI still shows repeated old cards after a rebuild, treat Electron renderer cache as a real suspect, not only asset absence;
+  - `electron/main.cjs` now clears renderer cache and cache-storage on startup so fresh `dist` card assets are not masked by stale local renderer state.
+- Additional live renderer finding from the same date:
+  - the source renderer previously used `import.meta.glob('../assets/recipes/styles/defaults/*.webp', { eager: true })` directly for preset defaults.
+  - when new `.webp` files were generated while the dev renderer was already running, that glob-backed module could keep missing the new IDs and the UI fell back to repeated pack preview/default imagery.
+  - `scripts/generate-style-runtime-data.ts` now emits `lib/styleDefaultImages.generated.ts` with explicit `?url` imports for every real `SPxx-xxx.webp` file on disk.
+  - `lib/recipeAssetCatalog.ts` now consumes that generated catalog, so each image wave only needs `bun run styles:runtime` to refresh the source dependency graph instead of relying on a full renderer restart.
+  - verified with `bun run styles:runtime`, `bun run styles:runtime:check`, `bun run check`, and `bun run build:ui`.
+- Additional runtime finding from the same date:
+  - `preview:electron` opens `dist/index.html` through `file://`.
+  - the UI build was still emitting root-relative asset URLs (`/assets/...`) in `dist/index.html` and the compiled JS asset catalog.
+  - under `file://`, those root-relative paths do not resolve against `dist/`; they point outside the packaged renderer root and can leave cards/scripts/styles unresolved even when the asset catalog itself is correct.
+  - `vite.config.ts` now uses `base: './'`, and a fresh `bun run build:ui` verified `dist/index.html` emits `./assets/...` relative paths.
+  - practical implication: for local Electron preview, missing/repeated cards were not only a stale-vs-missing preset issue; build URL strategy itself was a real renderer-level cause.
+- Additional UX mitigation from the same checkpoint:
+  - when a preset card lacks an exact preset default and the UI falls back to category/pack preview imagery, the Styles grid and catalog search now label that surface as `Preview`.
+  - practical implication: repeated fallback art should no longer read as if a real preset-specific default card exists; visual debt remains visible while missing/stale presets are still pending regeneration.
+
+## Current verification - 2026-06-12 (pack_14 / pack_15 recheck)
+
+- Real coverage rechecked with:
+  - `bun run styles:validate -- --pack=pack_14 --coverage`
+  - `bun run styles:validate -- --pack=pack_15 --coverage`
+- Physical asset recheck:
+  - `assets/recipes/styles/defaults/` currently contains `123/123` `SP14-*` files and `137/137` `SP15-*` files.
+- Runtime stale recheck:
+  - `lib/staleStyleDefaultImages.generated.ts` currently contains `0` `SP14-*` ids and `0` `SP15-*` ids.
+- Interpretation:
+  - `pack_14` and `pack_15` remain closed in real missing/stale operational terms;
+  - current visual debt should not spend more cycles there unless a fresh semantic rewrite lands on specific IDs.
+- Priority consequence:
+  - active visual queue now splits into:
+    - real missing defaults in `pack_01` / `pack_02`;
+    - stale-by-semantic-change defaults in `pack_08` after the recent audit miniwaves.
+
+### Suggested next visual batches
+
+Run the missing defaults first, in small `2x2` waves:
+
+All missing-default waves for `pack_01` and `pack_02` are now generated.
+
+Operational note:
+
+- do not mix these missing ids with stale-but-present retries in the same session;
+- after each successful miniwave, verify the new `.webp` files plus `manifest-pack_01.json` / `manifest-pack_02.json` checkpoints before moving to stale cleanup.
+
+### Visual missing defaults - 2026-06-12 - `pack_01` ola missing_p01_a
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-082|SP01-083" --parallel=2 --session-suffix=missing_p01_a --force`
+- Result:
+  - `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- New files:
+  - `assets/recipes/styles/defaults/SP01-082.webp` (`341650` bytes)
+  - `assets/recipes/styles/defaults/SP01-083.webp` (`219606` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_01.json` now includes `SP01-082` / `Seamless Packshot` and `SP01-083` / `Luxury Macro Gleam`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_01 --coverage`
+  - `pack_01 defaultImages=83/87 missingDefaultImages=4`
+  - remaining real missing ids: `SP01-084`, `SP01-085`, `SP01-086`, `SP01-087`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+- Runtime visibility follow-up:
+  - `SP01-082` and `SP01-083` were removed from the active stale/default table after their files and manifest/YAML links were verified;
+  - `bun run styles:runtime` refreshed `lib/staleStyleDefaultImages.generated.ts`;
+  - `rg "SP01-082|SP01-083" lib/staleStyleDefaultImages.generated.ts` now returns no matches, while `SP01-084..087` remain as real missing default-card debt;
+  - dev UI may still need a Vite/Electron restart to discover newly added `.webp` files because card assets are loaded through `import.meta.glob`.
+
+### Visual missing defaults - 2026-06-12 - `pack_01` ola missing_p01_b
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-084|SP01-085" --parallel=2 --session-suffix=missing_p01_b --force`
+- Result:
+  - `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- New files:
+  - `assets/recipes/styles/defaults/SP01-084.webp` (`88368` bytes)
+  - `assets/recipes/styles/defaults/SP01-085.webp` (`98586` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_01.json` now includes `SP01-084` / `Cosmetic Gloss Still Life` and `SP01-085` / `Tech Hardware Hero`.
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual missing defaults - 2026-06-12 - `pack_01` ola missing_p01_c
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-086|SP01-087" --parallel=2 --session-suffix=missing_p01_c --force`
+- Result:
+  - `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- New files:
+  - `assets/recipes/styles/defaults/SP01-086.webp` (`351016` bytes)
+  - `assets/recipes/styles/defaults/SP01-087.webp` (`254834` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_01.json` now includes `SP01-086` / `Cold Condensation Commercial` and `SP01-087` / `E-Commerce White Sweep`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_01 --coverage`
+  - `pack_01 defaultImages=87/87 missingDefaultImages=0`
+- Runtime visibility follow-up:
+  - `SP01-084..087` were removed from the active stale/default table after files and manifest/YAML links were verified;
+  - regenerate runtime before UI verification so `lib/staleStyleDefaultImages.generated.ts` no longer flags these cards stale.
+
+### Visual missing defaults - 2026-06-12 - `pack_02` ola missing_p02_a
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-121|SP02-122" --parallel=2 --session-suffix=missing_p02_a --force`
+- Result:
+  - `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- New files:
+  - `assets/recipes/styles/defaults/SP02-121.webp` (`238930` bytes)
+  - `assets/recipes/styles/defaults/SP02-122.webp` (`142656` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_02.json` now includes `SP02-121` / `Analog Sitcom Multicam` and `SP02-122` / `Local News Chroma Key Package`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_02 --coverage`
+  - `pack_02 defaultImages=122/128 missingDefaultImages=6`
+  - remaining real missing ids: `SP02-123`, `SP02-124`, `SP02-125`, `SP02-126`, `SP02-127`, `SP02-128`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual missing defaults - 2026-06-12 - `pack_02` ola missing_p02_b
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-123|SP02-124" --parallel=2 --session-suffix=missing_p02_b --force`
+- Result:
+  - `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- New files:
+  - `assets/recipes/styles/defaults/SP02-123.webp` (`183728` bytes)
+  - `assets/recipes/styles/defaults/SP02-124.webp` (`340684` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_02.json` now includes `SP02-123` / `Public Access Cable Crawl` and `SP02-124` / `VHS Sports Replay Broadcast`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_02 --coverage`
+  - `pack_02 defaultImages=124/128 missingDefaultImages=4`
+  - remaining real missing ids: `SP02-125`, `SP02-126`, `SP02-127`, `SP02-128`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual missing defaults - 2026-06-12 - `pack_02` ola missing_p02_c
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-125|SP02-126" --parallel=2 --session-suffix=missing_p02_c --force`
+- Result:
+  - `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- New files:
+  - `assets/recipes/styles/defaults/SP02-125.webp` (`327462` bytes)
+  - `assets/recipes/styles/defaults/SP02-126.webp` (`301686` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_02.json` now includes `SP02-125` / `Weather Radar Doppler Graphic` and `SP02-126` / `Late Night Infomercial Gloss`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_02 --coverage`
+  - `pack_02 defaultImages=126/128 missingDefaultImages=2`
+  - remaining real missing ids: `SP02-127`, `SP02-128`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual missing defaults - 2026-06-12 - `pack_02` ola missing_p02_d
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-127|SP02-128" --parallel=2 --session-suffix=missing_p02_d --force`
+- Result:
+  - `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- New files:
+  - `assets/recipes/styles/defaults/SP02-127.webp` (`164568` bytes)
+  - `assets/recipes/styles/defaults/SP02-128.webp` (`349524` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_02.json` now includes `SP02-127` / `Interlaced Music Video Glow` and `SP02-128` / `Emergency Broadcast Signal Break`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_02 --coverage`
+  - `pack_02 defaultImages=128/128 missingDefaultImages=0`
+  - no real missing default ids remain in `pack_02`.
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_a
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-011|SP08-015" --parallel=2 --session-suffix=stale_p08_a --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-011.webp` (`259044` bytes)
+  - `assets/recipes/styles/defaults/SP08-015.webp` (`380498` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-011` / `Vintage 1950s` and `SP08-015` / `Cosplay Anime`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_b
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-020|SP08-072" --parallel=2 --session-suffix=stale_p08_b --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-020.webp` (`390796` bytes)
+  - `assets/recipes/styles/defaults/SP08-072.webp` (`397278` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-020` / `Red Carpet Gown` and `SP08-072` / `Tattoo Skin`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_c
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-030|SP08-034" --parallel=2 --session-suffix=stale_p08_c --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-030.webp` (`325384` bytes)
+  - `assets/recipes/styles/defaults/SP08-034.webp` (`348536` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-030` / `Raver (90s)` and `SP08-034` / `Roman Gladiator`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_d
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-063|SP08-070" --parallel=2 --session-suffix=stale_p08_d --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-063.webp` (`359110` bytes)
+  - `assets/recipes/styles/defaults/SP08-070.webp` (`422860` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-063` / `Feathers` and `SP08-070` / `Fire Dress`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_e
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-057|SP08-064" --parallel=2 --session-suffix=stale_p08_e --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-057.webp` (`348674` bytes)
+  - `assets/recipes/styles/defaults/SP08-064.webp` (`545788` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-057` / `Tweed Suit` and `SP08-064` / `Burlap/Rags`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_f
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-066|SP08-071" --parallel=2 --session-suffix=stale_p08_f --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-066.webp` (`221566` bytes)
+  - `assets/recipes/styles/defaults/SP08-071.webp` (`267360` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-066` / `Origami Paper` and `SP08-071` / `Porcelain Doll`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_g
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-062|SP08-068" --parallel=2 --session-suffix=stale_p08_g --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-062.webp` (`247766` bytes)
+  - `assets/recipes/styles/defaults/SP08-068.webp` (`281822` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-062` / `Leather Armor` and `SP08-068` / `Smoke Dress`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_h
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-069|SP08-074" --parallel=2 --session-suffix=stale_p08_h --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-069.webp` (`315716` bytes)
+  - `assets/recipes/styles/defaults/SP08-074.webp` (`281424` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-069` / `Water Dress` and `SP08-074` / `Bandage/Mummy`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_i
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-065|SP08-067" --parallel=2 --session-suffix=stale_p08_i --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-065.webp` (`277706` bytes)
+  - `assets/recipes/styles/defaults/SP08-067.webp` (`388986` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-065` / `Neon Light Suit` and `SP08-067` / `Bubble Wrap`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_j
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-077|SP08-078" --parallel=2 --session-suffix=stale_p08_j --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-077.webp` (`261528` bytes)
+  - `assets/recipes/styles/defaults/SP08-078.webp` (`270562` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-077` / `Stone Statue` and `SP08-078` / `Hologram`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_k
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-001|SP08-002" --parallel=2 --session-suffix=stale_p08_k --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-001.webp` (`217028` bytes)
+  - `assets/recipes/styles/defaults/SP08-002.webp` (`185244` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-001` / `Haute Couture` and `SP08-002` / `Streetwear Hypebeast`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_l
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-003|SP08-004" --parallel=2 --session-suffix=stale_p08_l --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-003.webp` (`144934` bytes)
+  - `assets/recipes/styles/defaults/SP08-004.webp` (`396210` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-003` / `Minimalist Chic` and `SP08-004` / `Boho Festival`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_m
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-005|SP08-006" --parallel=2 --session-suffix=stale_p08_m --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-005.webp` (`171034` bytes)
+  - `assets/recipes/styles/defaults/SP08-006.webp` (`151696` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-005` / `Athleisure Sport` and `SP08-006` / `Cyberpunk Techwear`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_n
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-007|SP08-008" --parallel=2 --session-suffix=stale_p08_n --force`
+- Result:
+  - shell command timed out after `604028ms`, but post-timeout verification showed the app-server healthy, `activeWorkerCount=0`, and both target files refreshed on disk.
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-007.webp` (`183208` bytes)
+  - `assets/recipes/styles/defaults/SP08-008.webp` (`379822` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-007` / `Goth Darkwave` and `SP08-008` / `Punk Rock`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_o
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-009|SP08-010" --parallel=2 --session-suffix=stale_p08_o --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-009.webp` (`372496` bytes)
+  - `assets/recipes/styles/defaults/SP08-010.webp` (`250934` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-009` / `Steampunk Inventor` and `SP08-010` / `Preppy Ivy League`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_p
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-012|SP08-013" --parallel=2 --session-suffix=stale_p08_p --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-012.webp` (`400156` bytes)
+  - `assets/recipes/styles/defaults/SP08-013.webp` (`334314` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-012` / `Renaissance Royal` and `SP08-013` / `Ethereal Fantasy`.
+- Coverage after wave:
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_q
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-014|SP08-016" --parallel=2 --session-suffix=stale_p08_q --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-014.webp` (`279696` bytes)
+  - `assets/recipes/styles/defaults/SP08-016.webp` (`287222` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-014` / `Military Surplus` and `SP08-016` / `Normcore`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_r
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-017|SP08-018" --parallel=2 --session-suffix=stale_p08_r --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-017.webp` (`158660` bytes)
+  - `assets/recipes/styles/defaults/SP08-018.webp` (`279102` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-017` / `Tech-Industry Uniform` and `SP08-018` / `Pop-Performance Tailoring`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_s
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-019|SP08-021" --parallel=2 --session-suffix=stale_p08_s --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-019.webp` (`329110` bytes)
+  - `assets/recipes/styles/defaults/SP08-021.webp` (`328810` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-019` / `Business Casual` and `SP08-021` / `Pastel Goth`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_t
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-022|SP08-023" --parallel=2 --session-suffix=stale_p08_t --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-022.webp` (`229100` bytes)
+  - `assets/recipes/styles/defaults/SP08-023.webp` (`367944` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-022` / `Grunge (90s)` and `SP08-023` / `Lolita Fashion`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_u
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-024|SP08-025" --parallel=2 --session-suffix=stale_p08_u --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-024.webp` (`365848` bytes)
+  - `assets/recipes/styles/defaults/SP08-025.webp` (`400278` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-024` / `Rockabilly` and `SP08-025` / `Hippie (60s)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_v
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-026|SP08-027" --parallel=2 --session-suffix=stale_p08_v --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-026.webp` (`317812` bytes)
+  - `assets/recipes/styles/defaults/SP08-027.webp` (`232076` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-026` / `Biker Gang` and `SP08-027` / `Skater Style`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=51/80 staleDefaultImages=29 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_w
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-028|SP08-029" --parallel=2 --session-suffix=stale_p08_w --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-028.webp` (`325456` bytes)
+  - `assets/recipes/styles/defaults/SP08-029.webp` (`327126` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-028` / `Cottagecore` and `SP08-029` / `Dark Academia`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=53/80 staleDefaultImages=27 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_x
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-031|SP08-032" --parallel=2 --session-suffix=stale_p08_x --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-031.webp` (`367342` bytes)
+  - `assets/recipes/styles/defaults/SP08-032.webp` (`245336` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-031` / `Roaring 20s (Flapper)` and `SP08-032` / `Victorian Mourning`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=55/80 staleDefaultImages=25 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_y
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-033|SP08-035" --parallel=2 --session-suffix=stale_p08_y --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-033.webp` (`431838` bytes)
+  - `assets/recipes/styles/defaults/SP08-035.webp` (`375530` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-033` / `Ancient Egyptian` and `SP08-035` / `Samurai Armor`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=57/80 staleDefaultImages=23 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_z
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-038|SP08-039" --parallel=2 --session-suffix=stale_p08_z --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-038.webp` (`348324` bytes)
+  - `assets/recipes/styles/defaults/SP08-039.webp` (`412692` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-038` / `Disco (70s)` and `SP08-039` / `French Revolution`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=59/80 staleDefaultImages=21 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_aa
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-040|SP08-042" --parallel=2 --session-suffix=stale_p08_aa --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-040.webp` (`332804` bytes)
+  - `assets/recipes/styles/defaults/SP08-042.webp` (`417270` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-040` / `Space Suit (Retro)` and `SP08-042` / `Post-Apocalyptic Scavenger`.
+- Coverage after wave:
+  - `bun run styles:runtime:check`
+  - `bun run styles:validate -- --pack=pack_08 --coverage`
+  - `pack_08 defaultImages=80/80 availableDefaultImages=61/80 staleDefaultImages=19 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+## Semantic refresh - 2026-06-11
+
+- `pack_08` recibió una miniola semántica adicional en:
+  - `SP08-011`
+  - `SP08-015`
+  - `SP08-020`
+  - `SP08-072`
+- Motivo operativo:
+  - esos cuatro manifests seguían demasiado atados a cuerpo, celebridad/evento, personaje replicado o torso/superficie humana obligatoria.
+- Efecto sobre backlog visual:
+  - sus cards quedan otra vez en prioridad de regeneración dentro de `pack_08`, incluso si el pack ya tiene cobertura `defaultImages=80/80`, porque el cambio actual es de semántica visual y no de presencia/ausencia de asset.
+
+- Segunda miniola del mismo día en `pack_08`:
+  - `SP08-030`
+  - `SP08-034`
+  - `SP08-063`
+  - `SP08-070`
+- Motivo operativo:
+  - seguían demasiado pegados a escena/evento literal, performer body o referencia IP/ritual demasiado frontal.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_08`.
+
+- Tercera miniola del mismo día en `pack_08`:
+  - `SP08-057`
+  - `SP08-064`
+  - `SP08-066`
+  - `SP08-071`
+- Motivo operativo:
+  - todavía cargaban demasiado rol literal, garment-body demasiado específico o materialidad narrada como objeto/figura fija.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_08`.
+
+- Cuarta miniola del mismo día en `pack_08`:
+  - `SP08-062`
+  - `SP08-068`
+  - `SP08-069`
+  - `SP08-074`
+- Motivo operativo:
+  - seguían demasiado pegados a cuerpo, criatura, escena elemental o setup de horror literal.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_08`.
+
+- Quinta miniola del mismo día en `pack_08`:
+  - `SP08-065`
+  - `SP08-067`
+  - `SP08-077`
+  - `SP08-078`
+- Motivo operativo:
+  - todavía retenían wearer/body logic, estatua humana fija o proyección figurativa demasiado frontal para una gramática realmente transferible.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_08`.
+
+- Sexta miniola del mismo día en `pack_08`:
+  - `SP08-075`
+  - `SP08-076`
+  - `SP08-079`
+  - `SP08-080`
+- Motivo operativo:
+  - todavía retenían body-conforming logic, wearer implication o figura humana residual dentro de materiales de concealment, gilding o sombra.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_08`.
+
+- Miniola adicional de verificación fina en `pack_07`:
+  - `SP07-041`
+  - `SP07-052`
+  - `SP07-067`
+  - `SP07-080`
+- Motivo operativo:
+  - seguían cargando heroicidad implicita, anchor racial demasiado cerrado o escena espacial/paisajistica todavía demasiado concreta.
+- Efecto:
+  - esas 4 cards también quedan re-priorizadas para regeneración visual dentro de `pack_07`.
+
 ### pack_01
 
 | Preset   | Manifest                                                            | Default card                                   |
@@ -108,12 +861,6 @@ Criterion note: titles, IP names, or work names may stay as a stylistic anchor. 
 | SP01-079 | `components/recipes/styles/manifests/presets/pack_01/SP01-079.yaml` | `assets/recipes/styles/defaults/SP01-079.webp` |
 | SP01-080 | `components/recipes/styles/manifests/presets/pack_01/SP01-080.yaml` | `assets/recipes/styles/defaults/SP01-080.webp` |
 | SP01-081 | `components/recipes/styles/manifests/presets/pack_01/SP01-081.yaml` | `assets/recipes/styles/defaults/SP01-081.webp` |
-| SP01-082 | `components/recipes/styles/manifests/presets/pack_01/SP01-082.yaml` | `assets/recipes/styles/defaults/SP01-082.webp` |
-| SP01-083 | `components/recipes/styles/manifests/presets/pack_01/SP01-083.yaml` | `assets/recipes/styles/defaults/SP01-083.webp` |
-| SP01-084 | `components/recipes/styles/manifests/presets/pack_01/SP01-084.yaml` | `assets/recipes/styles/defaults/SP01-084.webp` |
-| SP01-085 | `components/recipes/styles/manifests/presets/pack_01/SP01-085.yaml` | `assets/recipes/styles/defaults/SP01-085.webp` |
-| SP01-086 | `components/recipes/styles/manifests/presets/pack_01/SP01-086.yaml` | `assets/recipes/styles/defaults/SP01-086.webp` |
-| SP01-087 | `components/recipes/styles/manifests/presets/pack_01/SP01-087.yaml` | `assets/recipes/styles/defaults/SP01-087.webp` |
 
 ### pack_02
 
@@ -239,14 +986,6 @@ Criterion note: titles, IP names, or work names may stay as a stylistic anchor. 
 | SP02-118 | `components/recipes/styles/manifests/presets/pack_02/SP02-118.yaml` | `assets/recipes/styles/defaults/SP02-118.webp` |
 | SP02-119 | `components/recipes/styles/manifests/presets/pack_02/SP02-119.yaml` | `assets/recipes/styles/defaults/SP02-119.webp` |
 | SP02-120 | `components/recipes/styles/manifests/presets/pack_02/SP02-120.yaml` | `assets/recipes/styles/defaults/SP02-120.webp` |
-| SP02-121 | `components/recipes/styles/manifests/presets/pack_02/SP02-121.yaml` | `assets/recipes/styles/defaults/SP02-121.webp` |
-| SP02-122 | `components/recipes/styles/manifests/presets/pack_02/SP02-122.yaml` | `assets/recipes/styles/defaults/SP02-122.webp` |
-| SP02-123 | `components/recipes/styles/manifests/presets/pack_02/SP02-123.yaml` | `assets/recipes/styles/defaults/SP02-123.webp` |
-| SP02-124 | `components/recipes/styles/manifests/presets/pack_02/SP02-124.yaml` | `assets/recipes/styles/defaults/SP02-124.webp` |
-| SP02-125 | `components/recipes/styles/manifests/presets/pack_02/SP02-125.yaml` | `assets/recipes/styles/defaults/SP02-125.webp` |
-| SP02-126 | `components/recipes/styles/manifests/presets/pack_02/SP02-126.yaml` | `assets/recipes/styles/defaults/SP02-126.webp` |
-| SP02-127 | `components/recipes/styles/manifests/presets/pack_02/SP02-127.yaml` | `assets/recipes/styles/defaults/SP02-127.webp` |
-| SP02-128 | `components/recipes/styles/manifests/presets/pack_02/SP02-128.yaml` | `assets/recipes/styles/defaults/SP02-128.webp` |
 
 ### pack_03
 
@@ -790,151 +1529,13 @@ Criterion note: titles, IP names, or work names may stay as a stylistic anchor. 
 
 ### pack_08
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP08-001 | `components/recipes/styles/manifests/presets/pack_08/SP08-001.yaml` | `assets/recipes/styles/defaults/SP08-001.webp` |
-| SP08-002 | `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml` | `assets/recipes/styles/defaults/SP08-002.webp` |
-| SP08-003 | `components/recipes/styles/manifests/presets/pack_08/SP08-003.yaml` | `assets/recipes/styles/defaults/SP08-003.webp` |
-| SP08-004 | `components/recipes/styles/manifests/presets/pack_08/SP08-004.yaml` | `assets/recipes/styles/defaults/SP08-004.webp` |
-| SP08-005 | `components/recipes/styles/manifests/presets/pack_08/SP08-005.yaml` | `assets/recipes/styles/defaults/SP08-005.webp` |
-| SP08-006 | `components/recipes/styles/manifests/presets/pack_08/SP08-006.yaml` | `assets/recipes/styles/defaults/SP08-006.webp` |
-| SP08-007 | `components/recipes/styles/manifests/presets/pack_08/SP08-007.yaml` | `assets/recipes/styles/defaults/SP08-007.webp` |
-| SP08-008 | `components/recipes/styles/manifests/presets/pack_08/SP08-008.yaml` | `assets/recipes/styles/defaults/SP08-008.webp` |
-| SP08-009 | `components/recipes/styles/manifests/presets/pack_08/SP08-009.yaml` | `assets/recipes/styles/defaults/SP08-009.webp` |
-| SP08-010 | `components/recipes/styles/manifests/presets/pack_08/SP08-010.yaml` | `assets/recipes/styles/defaults/SP08-010.webp` |
-| SP08-011 | `components/recipes/styles/manifests/presets/pack_08/SP08-011.yaml` | `assets/recipes/styles/defaults/SP08-011.webp` |
-| SP08-012 | `components/recipes/styles/manifests/presets/pack_08/SP08-012.yaml` | `assets/recipes/styles/defaults/SP08-012.webp` |
-| SP08-013 | `components/recipes/styles/manifests/presets/pack_08/SP08-013.yaml` | `assets/recipes/styles/defaults/SP08-013.webp` |
-| SP08-014 | `components/recipes/styles/manifests/presets/pack_08/SP08-014.yaml` | `assets/recipes/styles/defaults/SP08-014.webp` |
-| SP08-015 | `components/recipes/styles/manifests/presets/pack_08/SP08-015.yaml` | `assets/recipes/styles/defaults/SP08-015.webp` |
-| SP08-016 | `components/recipes/styles/manifests/presets/pack_08/SP08-016.yaml` | `assets/recipes/styles/defaults/SP08-016.webp` |
-| SP08-017 | `components/recipes/styles/manifests/presets/pack_08/SP08-017.yaml` | `assets/recipes/styles/defaults/SP08-017.webp` |
-| SP08-018 | `components/recipes/styles/manifests/presets/pack_08/SP08-018.yaml` | `assets/recipes/styles/defaults/SP08-018.webp` |
-| SP08-019 | `components/recipes/styles/manifests/presets/pack_08/SP08-019.yaml` | `assets/recipes/styles/defaults/SP08-019.webp` |
-| SP08-020 | `components/recipes/styles/manifests/presets/pack_08/SP08-020.yaml` | `assets/recipes/styles/defaults/SP08-020.webp` |
-| SP08-021 | `components/recipes/styles/manifests/presets/pack_08/SP08-021.yaml` | `assets/recipes/styles/defaults/SP08-021.webp` |
-| SP08-022 | `components/recipes/styles/manifests/presets/pack_08/SP08-022.yaml` | `assets/recipes/styles/defaults/SP08-022.webp` |
-| SP08-023 | `components/recipes/styles/manifests/presets/pack_08/SP08-023.yaml` | `assets/recipes/styles/defaults/SP08-023.webp` |
-| SP08-024 | `components/recipes/styles/manifests/presets/pack_08/SP08-024.yaml` | `assets/recipes/styles/defaults/SP08-024.webp` |
-| SP08-025 | `components/recipes/styles/manifests/presets/pack_08/SP08-025.yaml` | `assets/recipes/styles/defaults/SP08-025.webp` |
-| SP08-026 | `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml` | `assets/recipes/styles/defaults/SP08-026.webp` |
-| SP08-027 | `components/recipes/styles/manifests/presets/pack_08/SP08-027.yaml` | `assets/recipes/styles/defaults/SP08-027.webp` |
-| SP08-028 | `components/recipes/styles/manifests/presets/pack_08/SP08-028.yaml` | `assets/recipes/styles/defaults/SP08-028.webp` |
-| SP08-029 | `components/recipes/styles/manifests/presets/pack_08/SP08-029.yaml` | `assets/recipes/styles/defaults/SP08-029.webp` |
-| SP08-030 | `components/recipes/styles/manifests/presets/pack_08/SP08-030.yaml` | `assets/recipes/styles/defaults/SP08-030.webp` |
-| SP08-031 | `components/recipes/styles/manifests/presets/pack_08/SP08-031.yaml` | `assets/recipes/styles/defaults/SP08-031.webp` |
-| SP08-032 | `components/recipes/styles/manifests/presets/pack_08/SP08-032.yaml` | `assets/recipes/styles/defaults/SP08-032.webp` |
-| SP08-033 | `components/recipes/styles/manifests/presets/pack_08/SP08-033.yaml` | `assets/recipes/styles/defaults/SP08-033.webp` |
-| SP08-034 | `components/recipes/styles/manifests/presets/pack_08/SP08-034.yaml` | `assets/recipes/styles/defaults/SP08-034.webp` |
-| SP08-035 | `components/recipes/styles/manifests/presets/pack_08/SP08-035.yaml` | `assets/recipes/styles/defaults/SP08-035.webp` |
-| SP08-036 | `components/recipes/styles/manifests/presets/pack_08/SP08-036.yaml` | `assets/recipes/styles/defaults/SP08-036.webp` |
-| SP08-037 | `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml` | `assets/recipes/styles/defaults/SP08-037.webp` |
-| SP08-038 | `components/recipes/styles/manifests/presets/pack_08/SP08-038.yaml` | `assets/recipes/styles/defaults/SP08-038.webp` |
-| SP08-039 | `components/recipes/styles/manifests/presets/pack_08/SP08-039.yaml` | `assets/recipes/styles/defaults/SP08-039.webp` |
-| SP08-040 | `components/recipes/styles/manifests/presets/pack_08/SP08-040.yaml` | `assets/recipes/styles/defaults/SP08-040.webp` |
-| SP08-041 | `components/recipes/styles/manifests/presets/pack_08/SP08-041.yaml` | `assets/recipes/styles/defaults/SP08-041.webp` |
-| SP08-042 | `components/recipes/styles/manifests/presets/pack_08/SP08-042.yaml` | `assets/recipes/styles/defaults/SP08-042.webp` |
-| SP08-043 | `components/recipes/styles/manifests/presets/pack_08/SP08-043.yaml` | `assets/recipes/styles/defaults/SP08-043.webp` |
-| SP08-044 | `components/recipes/styles/manifests/presets/pack_08/SP08-044.yaml` | `assets/recipes/styles/defaults/SP08-044.webp` |
-| SP08-045 | `components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml` | `assets/recipes/styles/defaults/SP08-045.webp` |
-| SP08-046 | `components/recipes/styles/manifests/presets/pack_08/SP08-046.yaml` | `assets/recipes/styles/defaults/SP08-046.webp` |
-| SP08-047 | `components/recipes/styles/manifests/presets/pack_08/SP08-047.yaml` | `assets/recipes/styles/defaults/SP08-047.webp` |
-| SP08-048 | `components/recipes/styles/manifests/presets/pack_08/SP08-048.yaml` | `assets/recipes/styles/defaults/SP08-048.webp` |
-| SP08-049 | `components/recipes/styles/manifests/presets/pack_08/SP08-049.yaml` | `assets/recipes/styles/defaults/SP08-049.webp` |
-| SP08-050 | `components/recipes/styles/manifests/presets/pack_08/SP08-050.yaml` | `assets/recipes/styles/defaults/SP08-050.webp` |
-| SP08-051 | `components/recipes/styles/manifests/presets/pack_08/SP08-051.yaml` | `assets/recipes/styles/defaults/SP08-051.webp` |
-| SP08-052 | `components/recipes/styles/manifests/presets/pack_08/SP08-052.yaml` | `assets/recipes/styles/defaults/SP08-052.webp` |
-| SP08-053 | `components/recipes/styles/manifests/presets/pack_08/SP08-053.yaml` | `assets/recipes/styles/defaults/SP08-053.webp` |
-| SP08-054 | `components/recipes/styles/manifests/presets/pack_08/SP08-054.yaml` | `assets/recipes/styles/defaults/SP08-054.webp` |
-| SP08-055 | `components/recipes/styles/manifests/presets/pack_08/SP08-055.yaml` | `assets/recipes/styles/defaults/SP08-055.webp` |
-| SP08-056 | `components/recipes/styles/manifests/presets/pack_08/SP08-056.yaml` | `assets/recipes/styles/defaults/SP08-056.webp` |
-| SP08-057 | `components/recipes/styles/manifests/presets/pack_08/SP08-057.yaml` | `assets/recipes/styles/defaults/SP08-057.webp` |
-| SP08-058 | `components/recipes/styles/manifests/presets/pack_08/SP08-058.yaml` | `assets/recipes/styles/defaults/SP08-058.webp` |
-| SP08-059 | `components/recipes/styles/manifests/presets/pack_08/SP08-059.yaml` | `assets/recipes/styles/defaults/SP08-059.webp` |
-| SP08-060 | `components/recipes/styles/manifests/presets/pack_08/SP08-060.yaml` | `assets/recipes/styles/defaults/SP08-060.webp` |
-| SP08-061 | `components/recipes/styles/manifests/presets/pack_08/SP08-061.yaml` | `assets/recipes/styles/defaults/SP08-061.webp` |
-| SP08-062 | `components/recipes/styles/manifests/presets/pack_08/SP08-062.yaml` | `assets/recipes/styles/defaults/SP08-062.webp` |
-| SP08-063 | `components/recipes/styles/manifests/presets/pack_08/SP08-063.yaml` | `assets/recipes/styles/defaults/SP08-063.webp` |
-| SP08-064 | `components/recipes/styles/manifests/presets/pack_08/SP08-064.yaml` | `assets/recipes/styles/defaults/SP08-064.webp` |
-| SP08-065 | `components/recipes/styles/manifests/presets/pack_08/SP08-065.yaml` | `assets/recipes/styles/defaults/SP08-065.webp` |
-| SP08-066 | `components/recipes/styles/manifests/presets/pack_08/SP08-066.yaml` | `assets/recipes/styles/defaults/SP08-066.webp` |
-| SP08-067 | `components/recipes/styles/manifests/presets/pack_08/SP08-067.yaml` | `assets/recipes/styles/defaults/SP08-067.webp` |
-| SP08-068 | `components/recipes/styles/manifests/presets/pack_08/SP08-068.yaml` | `assets/recipes/styles/defaults/SP08-068.webp` |
-| SP08-069 | `components/recipes/styles/manifests/presets/pack_08/SP08-069.yaml` | `assets/recipes/styles/defaults/SP08-069.webp` |
-| SP08-070 | `components/recipes/styles/manifests/presets/pack_08/SP08-070.yaml` | `assets/recipes/styles/defaults/SP08-070.webp` |
-| SP08-071 | `components/recipes/styles/manifests/presets/pack_08/SP08-071.yaml` | `assets/recipes/styles/defaults/SP08-071.webp` |
-| SP08-072 | `components/recipes/styles/manifests/presets/pack_08/SP08-072.yaml` | `assets/recipes/styles/defaults/SP08-072.webp` |
-| SP08-073 | `components/recipes/styles/manifests/presets/pack_08/SP08-073.yaml` | `assets/recipes/styles/defaults/SP08-073.webp` |
-| SP08-074 | `components/recipes/styles/manifests/presets/pack_08/SP08-074.yaml` | `assets/recipes/styles/defaults/SP08-074.webp` |
-| SP08-075 | `components/recipes/styles/manifests/presets/pack_08/SP08-075.yaml` | `assets/recipes/styles/defaults/SP08-075.webp` |
-| SP08-076 | `components/recipes/styles/manifests/presets/pack_08/SP08-076.yaml` | `assets/recipes/styles/defaults/SP08-076.webp` |
-| SP08-077 | `components/recipes/styles/manifests/presets/pack_08/SP08-077.yaml` | `assets/recipes/styles/defaults/SP08-077.webp` |
-| SP08-078 | `components/recipes/styles/manifests/presets/pack_08/SP08-078.yaml` | `assets/recipes/styles/defaults/SP08-078.webp` |
-| SP08-079 | `components/recipes/styles/manifests/presets/pack_08/SP08-079.yaml` | `assets/recipes/styles/defaults/SP08-079.webp` |
-| SP08-080 | `components/recipes/styles/manifests/presets/pack_08/SP08-080.yaml` | `assets/recipes/styles/defaults/SP08-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_09
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP09-001 | `components/recipes/styles/manifests/presets/pack_09/SP09-001.yaml` | `assets/recipes/styles/defaults/SP09-001.webp` |
-| SP09-002 | `components/recipes/styles/manifests/presets/pack_09/SP09-002.yaml` | `assets/recipes/styles/defaults/SP09-002.webp` |
-| SP09-003 | `components/recipes/styles/manifests/presets/pack_09/SP09-003.yaml` | `assets/recipes/styles/defaults/SP09-003.webp` |
-| SP09-004 | `components/recipes/styles/manifests/presets/pack_09/SP09-004.yaml` | `assets/recipes/styles/defaults/SP09-004.webp` |
-| SP09-005 | `components/recipes/styles/manifests/presets/pack_09/SP09-005.yaml` | `assets/recipes/styles/defaults/SP09-005.webp` |
-| SP09-006 | `components/recipes/styles/manifests/presets/pack_09/SP09-006.yaml` | `assets/recipes/styles/defaults/SP09-006.webp` |
-| SP09-007 | `components/recipes/styles/manifests/presets/pack_09/SP09-007.yaml` | `assets/recipes/styles/defaults/SP09-007.webp` |
-| SP09-008 | `components/recipes/styles/manifests/presets/pack_09/SP09-008.yaml` | `assets/recipes/styles/defaults/SP09-008.webp` |
-| SP09-009 | `components/recipes/styles/manifests/presets/pack_09/SP09-009.yaml` | `assets/recipes/styles/defaults/SP09-009.webp` |
-| SP09-010 | `components/recipes/styles/manifests/presets/pack_09/SP09-010.yaml` | `assets/recipes/styles/defaults/SP09-010.webp` |
-| SP09-011 | `components/recipes/styles/manifests/presets/pack_09/SP09-011.yaml` | `assets/recipes/styles/defaults/SP09-011.webp` |
-| SP09-012 | `components/recipes/styles/manifests/presets/pack_09/SP09-012.yaml` | `assets/recipes/styles/defaults/SP09-012.webp` |
-| SP09-013 | `components/recipes/styles/manifests/presets/pack_09/SP09-013.yaml` | `assets/recipes/styles/defaults/SP09-013.webp` |
-| SP09-014 | `components/recipes/styles/manifests/presets/pack_09/SP09-014.yaml` | `assets/recipes/styles/defaults/SP09-014.webp` |
-| SP09-015 | `components/recipes/styles/manifests/presets/pack_09/SP09-015.yaml` | `assets/recipes/styles/defaults/SP09-015.webp` |
-| SP09-016 | `components/recipes/styles/manifests/presets/pack_09/SP09-016.yaml` | `assets/recipes/styles/defaults/SP09-016.webp` |
-| SP09-017 | `components/recipes/styles/manifests/presets/pack_09/SP09-017.yaml` | `assets/recipes/styles/defaults/SP09-017.webp` |
-| SP09-018 | `components/recipes/styles/manifests/presets/pack_09/SP09-018.yaml` | `assets/recipes/styles/defaults/SP09-018.webp` |
-| SP09-019 | `components/recipes/styles/manifests/presets/pack_09/SP09-019.yaml` | `assets/recipes/styles/defaults/SP09-019.webp` |
-| SP09-020 | `components/recipes/styles/manifests/presets/pack_09/SP09-020.yaml` | `assets/recipes/styles/defaults/SP09-020.webp` |
-| SP09-021 | `components/recipes/styles/manifests/presets/pack_09/SP09-021.yaml` | `assets/recipes/styles/defaults/SP09-021.webp` |
-| SP09-022 | `components/recipes/styles/manifests/presets/pack_09/SP09-022.yaml` | `assets/recipes/styles/defaults/SP09-022.webp` |
-| SP09-023 | `components/recipes/styles/manifests/presets/pack_09/SP09-023.yaml` | `assets/recipes/styles/defaults/SP09-023.webp` |
-| SP09-024 | `components/recipes/styles/manifests/presets/pack_09/SP09-024.yaml` | `assets/recipes/styles/defaults/SP09-024.webp` |
-| SP09-025 | `components/recipes/styles/manifests/presets/pack_09/SP09-025.yaml` | `assets/recipes/styles/defaults/SP09-025.webp` |
-| SP09-026 | `components/recipes/styles/manifests/presets/pack_09/SP09-026.yaml` | `assets/recipes/styles/defaults/SP09-026.webp` |
-| SP09-027 | `components/recipes/styles/manifests/presets/pack_09/SP09-027.yaml` | `assets/recipes/styles/defaults/SP09-027.webp` |
-| SP09-028 | `components/recipes/styles/manifests/presets/pack_09/SP09-028.yaml` | `assets/recipes/styles/defaults/SP09-028.webp` |
-| SP09-029 | `components/recipes/styles/manifests/presets/pack_09/SP09-029.yaml` | `assets/recipes/styles/defaults/SP09-029.webp` |
-| SP09-030 | `components/recipes/styles/manifests/presets/pack_09/SP09-030.yaml` | `assets/recipes/styles/defaults/SP09-030.webp` |
-| SP09-031 | `components/recipes/styles/manifests/presets/pack_09/SP09-031.yaml` | `assets/recipes/styles/defaults/SP09-031.webp` |
-| SP09-032 | `components/recipes/styles/manifests/presets/pack_09/SP09-032.yaml` | `assets/recipes/styles/defaults/SP09-032.webp` |
-| SP09-033 | `components/recipes/styles/manifests/presets/pack_09/SP09-033.yaml` | `assets/recipes/styles/defaults/SP09-033.webp` |
-| SP09-034 | `components/recipes/styles/manifests/presets/pack_09/SP09-034.yaml` | `assets/recipes/styles/defaults/SP09-034.webp` |
-| SP09-035 | `components/recipes/styles/manifests/presets/pack_09/SP09-035.yaml` | `assets/recipes/styles/defaults/SP09-035.webp` |
-| SP09-036 | `components/recipes/styles/manifests/presets/pack_09/SP09-036.yaml` | `assets/recipes/styles/defaults/SP09-036.webp` |
-| SP09-037 | `components/recipes/styles/manifests/presets/pack_09/SP09-037.yaml` | `assets/recipes/styles/defaults/SP09-037.webp` |
-| SP09-038 | `components/recipes/styles/manifests/presets/pack_09/SP09-038.yaml` | `assets/recipes/styles/defaults/SP09-038.webp` |
-| SP09-039 | `components/recipes/styles/manifests/presets/pack_09/SP09-039.yaml` | `assets/recipes/styles/defaults/SP09-039.webp` |
-| SP09-040 | `components/recipes/styles/manifests/presets/pack_09/SP09-040.yaml` | `assets/recipes/styles/defaults/SP09-040.webp` |
-| SP09-041 | `components/recipes/styles/manifests/presets/pack_09/SP09-041.yaml` | `assets/recipes/styles/defaults/SP09-041.webp` |
-| SP09-042 | `components/recipes/styles/manifests/presets/pack_09/SP09-042.yaml` | `assets/recipes/styles/defaults/SP09-042.webp` |
-| SP09-043 | `components/recipes/styles/manifests/presets/pack_09/SP09-043.yaml` | `assets/recipes/styles/defaults/SP09-043.webp` |
-| SP09-044 | `components/recipes/styles/manifests/presets/pack_09/SP09-044.yaml` | `assets/recipes/styles/defaults/SP09-044.webp` |
-| SP09-045 | `components/recipes/styles/manifests/presets/pack_09/SP09-045.yaml` | `assets/recipes/styles/defaults/SP09-045.webp` |
-| SP09-046 | `components/recipes/styles/manifests/presets/pack_09/SP09-046.yaml` | `assets/recipes/styles/defaults/SP09-046.webp` |
-| SP09-047 | `components/recipes/styles/manifests/presets/pack_09/SP09-047.yaml` | `assets/recipes/styles/defaults/SP09-047.webp` |
-| SP09-048 | `components/recipes/styles/manifests/presets/pack_09/SP09-048.yaml` | `assets/recipes/styles/defaults/SP09-048.webp` |
-| SP09-049 | `components/recipes/styles/manifests/presets/pack_09/SP09-049.yaml` | `assets/recipes/styles/defaults/SP09-049.webp` |
-| SP09-050 | `components/recipes/styles/manifests/presets/pack_09/SP09-050.yaml` | `assets/recipes/styles/defaults/SP09-050.webp` |
-| SP09-051 | `components/recipes/styles/manifests/presets/pack_09/SP09-051.yaml` | `assets/recipes/styles/defaults/SP09-051.webp` |
-| SP09-052 | `components/recipes/styles/manifests/presets/pack_09/SP09-052.yaml` | `assets/recipes/styles/defaults/SP09-052.webp` |
-| SP09-053 | `components/recipes/styles/manifests/presets/pack_09/SP09-053.yaml` | `assets/recipes/styles/defaults/SP09-053.webp` |
-| SP09-054 | `components/recipes/styles/manifests/presets/pack_09/SP09-054.yaml` | `assets/recipes/styles/defaults/SP09-054.webp` |
-| SP09-055 | `components/recipes/styles/manifests/presets/pack_09/SP09-055.yaml` | `assets/recipes/styles/defaults/SP09-055.webp` |
-| SP09-056 | `components/recipes/styles/manifests/presets/pack_09/SP09-056.yaml` | `assets/recipes/styles/defaults/SP09-056.webp` |
-| SP09-057 | `components/recipes/styles/manifests/presets/pack_09/SP09-057.yaml` | `assets/recipes/styles/defaults/SP09-057.webp` |
-| SP09-058 | `components/recipes/styles/manifests/presets/pack_09/SP09-058.yaml` | `assets/recipes/styles/defaults/SP09-058.webp` |
 | SP09-059 | `components/recipes/styles/manifests/presets/pack_09/SP09-059.yaml` | `assets/recipes/styles/defaults/SP09-059.webp` |
 | SP09-060 | `components/recipes/styles/manifests/presets/pack_09/SP09-060.yaml` | `assets/recipes/styles/defaults/SP09-060.webp` |
 | SP09-061 | `components/recipes/styles/manifests/presets/pack_09/SP09-061.yaml` | `assets/recipes/styles/defaults/SP09-061.webp` |
@@ -1352,273 +1953,200 @@ Criterion note: titles, IP names, or work names may stay as a stylistic anchor. 
 
 ### pack_14
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP14-001 | `components/recipes/styles/manifests/presets/pack_14/SP14-001.yaml` | `assets/recipes/styles/defaults/SP14-001.webp` |
-| SP14-002 | `components/recipes/styles/manifests/presets/pack_14/SP14-002.yaml` | `assets/recipes/styles/defaults/SP14-002.webp` |
-| SP14-003 | `components/recipes/styles/manifests/presets/pack_14/SP14-003.yaml` | `assets/recipes/styles/defaults/SP14-003.webp` |
-| SP14-004 | `components/recipes/styles/manifests/presets/pack_14/SP14-004.yaml` | `assets/recipes/styles/defaults/SP14-004.webp` |
-| SP14-005 | `components/recipes/styles/manifests/presets/pack_14/SP14-005.yaml` | `assets/recipes/styles/defaults/SP14-005.webp` |
-| SP14-006 | `components/recipes/styles/manifests/presets/pack_14/SP14-006.yaml` | `assets/recipes/styles/defaults/SP14-006.webp` |
-| SP14-007 | `components/recipes/styles/manifests/presets/pack_14/SP14-007.yaml` | `assets/recipes/styles/defaults/SP14-007.webp` |
-| SP14-008 | `components/recipes/styles/manifests/presets/pack_14/SP14-008.yaml` | `assets/recipes/styles/defaults/SP14-008.webp` |
-| SP14-009 | `components/recipes/styles/manifests/presets/pack_14/SP14-009.yaml` | `assets/recipes/styles/defaults/SP14-009.webp` |
-| SP14-010 | `components/recipes/styles/manifests/presets/pack_14/SP14-010.yaml` | `assets/recipes/styles/defaults/SP14-010.webp` |
-| SP14-011 | `components/recipes/styles/manifests/presets/pack_14/SP14-011.yaml` | `assets/recipes/styles/defaults/SP14-011.webp` |
-| SP14-012 | `components/recipes/styles/manifests/presets/pack_14/SP14-012.yaml` | `assets/recipes/styles/defaults/SP14-012.webp` |
-| SP14-013 | `components/recipes/styles/manifests/presets/pack_14/SP14-013.yaml` | `assets/recipes/styles/defaults/SP14-013.webp` |
-| SP14-014 | `components/recipes/styles/manifests/presets/pack_14/SP14-014.yaml` | `assets/recipes/styles/defaults/SP14-014.webp` |
-| SP14-015 | `components/recipes/styles/manifests/presets/pack_14/SP14-015.yaml` | `assets/recipes/styles/defaults/SP14-015.webp` |
-| SP14-016 | `components/recipes/styles/manifests/presets/pack_14/SP14-016.yaml` | `assets/recipes/styles/defaults/SP14-016.webp` |
-| SP14-017 | `components/recipes/styles/manifests/presets/pack_14/SP14-017.yaml` | `assets/recipes/styles/defaults/SP14-017.webp` |
-| SP14-018 | `components/recipes/styles/manifests/presets/pack_14/SP14-018.yaml` | `assets/recipes/styles/defaults/SP14-018.webp` |
-| SP14-019 | `components/recipes/styles/manifests/presets/pack_14/SP14-019.yaml` | `assets/recipes/styles/defaults/SP14-019.webp` |
-| SP14-020 | `components/recipes/styles/manifests/presets/pack_14/SP14-020.yaml` | `assets/recipes/styles/defaults/SP14-020.webp` |
-| SP14-021 | `components/recipes/styles/manifests/presets/pack_14/SP14-021.yaml` | `assets/recipes/styles/defaults/SP14-021.webp` |
-| SP14-022 | `components/recipes/styles/manifests/presets/pack_14/SP14-022.yaml` | `assets/recipes/styles/defaults/SP14-022.webp` |
-| SP14-023 | `components/recipes/styles/manifests/presets/pack_14/SP14-023.yaml` | `assets/recipes/styles/defaults/SP14-023.webp` |
-| SP14-024 | `components/recipes/styles/manifests/presets/pack_14/SP14-024.yaml` | `assets/recipes/styles/defaults/SP14-024.webp` |
-| SP14-025 | `components/recipes/styles/manifests/presets/pack_14/SP14-025.yaml` | `assets/recipes/styles/defaults/SP14-025.webp` |
-| SP14-026 | `components/recipes/styles/manifests/presets/pack_14/SP14-026.yaml` | `assets/recipes/styles/defaults/SP14-026.webp` |
-| SP14-027 | `components/recipes/styles/manifests/presets/pack_14/SP14-027.yaml` | `assets/recipes/styles/defaults/SP14-027.webp` |
-| SP14-028 | `components/recipes/styles/manifests/presets/pack_14/SP14-028.yaml` | `assets/recipes/styles/defaults/SP14-028.webp` |
-| SP14-029 | `components/recipes/styles/manifests/presets/pack_14/SP14-029.yaml` | `assets/recipes/styles/defaults/SP14-029.webp` |
-| SP14-030 | `components/recipes/styles/manifests/presets/pack_14/SP14-030.yaml` | `assets/recipes/styles/defaults/SP14-030.webp` |
-| SP14-031 | `components/recipes/styles/manifests/presets/pack_14/SP14-031.yaml` | `assets/recipes/styles/defaults/SP14-031.webp` |
-| SP14-032 | `components/recipes/styles/manifests/presets/pack_14/SP14-032.yaml` | `assets/recipes/styles/defaults/SP14-032.webp` |
-| SP14-033 | `components/recipes/styles/manifests/presets/pack_14/SP14-033.yaml` | `assets/recipes/styles/defaults/SP14-033.webp` |
-| SP14-034 | `components/recipes/styles/manifests/presets/pack_14/SP14-034.yaml` | `assets/recipes/styles/defaults/SP14-034.webp` |
-| SP14-035 | `components/recipes/styles/manifests/presets/pack_14/SP14-035.yaml` | `assets/recipes/styles/defaults/SP14-035.webp` |
-| SP14-036 | `components/recipes/styles/manifests/presets/pack_14/SP14-036.yaml` | `assets/recipes/styles/defaults/SP14-036.webp` |
-| SP14-037 | `components/recipes/styles/manifests/presets/pack_14/SP14-037.yaml` | `assets/recipes/styles/defaults/SP14-037.webp` |
-| SP14-038 | `components/recipes/styles/manifests/presets/pack_14/SP14-038.yaml` | `assets/recipes/styles/defaults/SP14-038.webp` |
-| SP14-039 | `components/recipes/styles/manifests/presets/pack_14/SP14-039.yaml` | `assets/recipes/styles/defaults/SP14-039.webp` |
-| SP14-040 | `components/recipes/styles/manifests/presets/pack_14/SP14-040.yaml` | `assets/recipes/styles/defaults/SP14-040.webp` |
-| SP14-041 | `components/recipes/styles/manifests/presets/pack_14/SP14-041.yaml` | `assets/recipes/styles/defaults/SP14-041.webp` |
-| SP14-042 | `components/recipes/styles/manifests/presets/pack_14/SP14-042.yaml` | `assets/recipes/styles/defaults/SP14-042.webp` |
-| SP14-043 | `components/recipes/styles/manifests/presets/pack_14/SP14-043.yaml` | `assets/recipes/styles/defaults/SP14-043.webp` |
-| SP14-044 | `components/recipes/styles/manifests/presets/pack_14/SP14-044.yaml` | `assets/recipes/styles/defaults/SP14-044.webp` |
-| SP14-045 | `components/recipes/styles/manifests/presets/pack_14/SP14-045.yaml` | `assets/recipes/styles/defaults/SP14-045.webp` |
-| SP14-046 | `components/recipes/styles/manifests/presets/pack_14/SP14-046.yaml` | `assets/recipes/styles/defaults/SP14-046.webp` |
-| SP14-047 | `components/recipes/styles/manifests/presets/pack_14/SP14-047.yaml` | `assets/recipes/styles/defaults/SP14-047.webp` |
-| SP14-048 | `components/recipes/styles/manifests/presets/pack_14/SP14-048.yaml` | `assets/recipes/styles/defaults/SP14-048.webp` |
-| SP14-049 | `components/recipes/styles/manifests/presets/pack_14/SP14-049.yaml` | `assets/recipes/styles/defaults/SP14-049.webp` |
-| SP14-050 | `components/recipes/styles/manifests/presets/pack_14/SP14-050.yaml` | `assets/recipes/styles/defaults/SP14-050.webp` |
-| SP14-051 | `components/recipes/styles/manifests/presets/pack_14/SP14-051.yaml` | `assets/recipes/styles/defaults/SP14-051.webp` |
-| SP14-052 | `components/recipes/styles/manifests/presets/pack_14/SP14-052.yaml` | `assets/recipes/styles/defaults/SP14-052.webp` |
-| SP14-053 | `components/recipes/styles/manifests/presets/pack_14/SP14-053.yaml` | `assets/recipes/styles/defaults/SP14-053.webp` |
-| SP14-054 | `components/recipes/styles/manifests/presets/pack_14/SP14-054.yaml` | `assets/recipes/styles/defaults/SP14-054.webp` |
-| SP14-055 | `components/recipes/styles/manifests/presets/pack_14/SP14-055.yaml` | `assets/recipes/styles/defaults/SP14-055.webp` |
-| SP14-056 | `components/recipes/styles/manifests/presets/pack_14/SP14-056.yaml` | `assets/recipes/styles/defaults/SP14-056.webp` |
-| SP14-057 | `components/recipes/styles/manifests/presets/pack_14/SP14-057.yaml` | `assets/recipes/styles/defaults/SP14-057.webp` |
-| SP14-058 | `components/recipes/styles/manifests/presets/pack_14/SP14-058.yaml` | `assets/recipes/styles/defaults/SP14-058.webp` |
-| SP14-059 | `components/recipes/styles/manifests/presets/pack_14/SP14-059.yaml` | `assets/recipes/styles/defaults/SP14-059.webp` |
-| SP14-060 | `components/recipes/styles/manifests/presets/pack_14/SP14-060.yaml` | `assets/recipes/styles/defaults/SP14-060.webp` |
-| SP14-061 | `components/recipes/styles/manifests/presets/pack_14/SP14-061.yaml` | `assets/recipes/styles/defaults/SP14-061.webp` |
-| SP14-062 | `components/recipes/styles/manifests/presets/pack_14/SP14-062.yaml` | `assets/recipes/styles/defaults/SP14-062.webp` |
-| SP14-063 | `components/recipes/styles/manifests/presets/pack_14/SP14-063.yaml` | `assets/recipes/styles/defaults/SP14-063.webp` |
-| SP14-064 | `components/recipes/styles/manifests/presets/pack_14/SP14-064.yaml` | `assets/recipes/styles/defaults/SP14-064.webp` |
-| SP14-065 | `components/recipes/styles/manifests/presets/pack_14/SP14-065.yaml` | `assets/recipes/styles/defaults/SP14-065.webp` |
-| SP14-066 | `components/recipes/styles/manifests/presets/pack_14/SP14-066.yaml` | `assets/recipes/styles/defaults/SP14-066.webp` |
-| SP14-067 | `components/recipes/styles/manifests/presets/pack_14/SP14-067.yaml` | `assets/recipes/styles/defaults/SP14-067.webp` |
-| SP14-068 | `components/recipes/styles/manifests/presets/pack_14/SP14-068.yaml` | `assets/recipes/styles/defaults/SP14-068.webp` |
-| SP14-069 | `components/recipes/styles/manifests/presets/pack_14/SP14-069.yaml` | `assets/recipes/styles/defaults/SP14-069.webp` |
-| SP14-070 | `components/recipes/styles/manifests/presets/pack_14/SP14-070.yaml` | `assets/recipes/styles/defaults/SP14-070.webp` |
-| SP14-071 | `components/recipes/styles/manifests/presets/pack_14/SP14-071.yaml` | `assets/recipes/styles/defaults/SP14-071.webp` |
-| SP14-072 | `components/recipes/styles/manifests/presets/pack_14/SP14-072.yaml` | `assets/recipes/styles/defaults/SP14-072.webp` |
-| SP14-073 | `components/recipes/styles/manifests/presets/pack_14/SP14-073.yaml` | `assets/recipes/styles/defaults/SP14-073.webp` |
-| SP14-074 | `components/recipes/styles/manifests/presets/pack_14/SP14-074.yaml` | `assets/recipes/styles/defaults/SP14-074.webp` |
-| SP14-075 | `components/recipes/styles/manifests/presets/pack_14/SP14-075.yaml` | `assets/recipes/styles/defaults/SP14-075.webp` |
-| SP14-076 | `components/recipes/styles/manifests/presets/pack_14/SP14-076.yaml` | `assets/recipes/styles/defaults/SP14-076.webp` |
-| SP14-077 | `components/recipes/styles/manifests/presets/pack_14/SP14-077.yaml` | `assets/recipes/styles/defaults/SP14-077.webp` |
-| SP14-078 | `components/recipes/styles/manifests/presets/pack_14/SP14-078.yaml` | `assets/recipes/styles/defaults/SP14-078.webp` |
-| SP14-079 | `components/recipes/styles/manifests/presets/pack_14/SP14-079.yaml` | `assets/recipes/styles/defaults/SP14-079.webp` |
-| SP14-080 | `components/recipes/styles/manifests/presets/pack_14/SP14-080.yaml` | `assets/recipes/styles/defaults/SP14-080.webp` |
-| SP14-081 | `components/recipes/styles/manifests/presets/pack_14/SP14-081.yaml` | `assets/recipes/styles/defaults/SP14-081.webp` |
-| SP14-082 | `components/recipes/styles/manifests/presets/pack_14/SP14-082.yaml` | `assets/recipes/styles/defaults/SP14-082.webp` |
-| SP14-083 | `components/recipes/styles/manifests/presets/pack_14/SP14-083.yaml` | `assets/recipes/styles/defaults/SP14-083.webp` |
-| SP14-084 | `components/recipes/styles/manifests/presets/pack_14/SP14-084.yaml` | `assets/recipes/styles/defaults/SP14-084.webp` |
-| SP14-085 | `components/recipes/styles/manifests/presets/pack_14/SP14-085.yaml` | `assets/recipes/styles/defaults/SP14-085.webp` |
-| SP14-086 | `components/recipes/styles/manifests/presets/pack_14/SP14-086.yaml` | `assets/recipes/styles/defaults/SP14-086.webp` |
-| SP14-087 | `components/recipes/styles/manifests/presets/pack_14/SP14-087.yaml` | `assets/recipes/styles/defaults/SP14-087.webp` |
-| SP14-088 | `components/recipes/styles/manifests/presets/pack_14/SP14-088.yaml` | `assets/recipes/styles/defaults/SP14-088.webp` |
-| SP14-089 | `components/recipes/styles/manifests/presets/pack_14/SP14-089.yaml` | `assets/recipes/styles/defaults/SP14-089.webp` |
-| SP14-090 | `components/recipes/styles/manifests/presets/pack_14/SP14-090.yaml` | `assets/recipes/styles/defaults/SP14-090.webp` |
-| SP14-091 | `components/recipes/styles/manifests/presets/pack_14/SP14-091.yaml` | `assets/recipes/styles/defaults/SP14-091.webp` |
-| SP14-092 | `components/recipes/styles/manifests/presets/pack_14/SP14-092.yaml` | `assets/recipes/styles/defaults/SP14-092.webp` |
-| SP14-093 | `components/recipes/styles/manifests/presets/pack_14/SP14-093.yaml` | `assets/recipes/styles/defaults/SP14-093.webp` |
-| SP14-094 | `components/recipes/styles/manifests/presets/pack_14/SP14-094.yaml` | `assets/recipes/styles/defaults/SP14-094.webp` |
-| SP14-095 | `components/recipes/styles/manifests/presets/pack_14/SP14-095.yaml` | `assets/recipes/styles/defaults/SP14-095.webp` |
-| SP14-096 | `components/recipes/styles/manifests/presets/pack_14/SP14-096.yaml` | `assets/recipes/styles/defaults/SP14-096.webp` |
-| SP14-097 | `components/recipes/styles/manifests/presets/pack_14/SP14-097.yaml` | `assets/recipes/styles/defaults/SP14-097.webp` |
-| SP14-098 | `components/recipes/styles/manifests/presets/pack_14/SP14-098.yaml` | `assets/recipes/styles/defaults/SP14-098.webp` |
-| SP14-099 | `components/recipes/styles/manifests/presets/pack_14/SP14-099.yaml` | `assets/recipes/styles/defaults/SP14-099.webp` |
-| SP14-100 | `components/recipes/styles/manifests/presets/pack_14/SP14-100.yaml` | `assets/recipes/styles/defaults/SP14-100.webp` |
-| SP14-101 | `components/recipes/styles/manifests/presets/pack_14/SP14-101.yaml` | `assets/recipes/styles/defaults/SP14-101.webp` |
-| SP14-102 | `components/recipes/styles/manifests/presets/pack_14/SP14-102.yaml` | `assets/recipes/styles/defaults/SP14-102.webp` |
-| SP14-103 | `components/recipes/styles/manifests/presets/pack_14/SP14-103.yaml` | `assets/recipes/styles/defaults/SP14-103.webp` |
-| SP14-104 | `components/recipes/styles/manifests/presets/pack_14/SP14-104.yaml` | `assets/recipes/styles/defaults/SP14-104.webp` |
-| SP14-105 | `components/recipes/styles/manifests/presets/pack_14/SP14-105.yaml` | `assets/recipes/styles/defaults/SP14-105.webp` |
-| SP14-106 | `components/recipes/styles/manifests/presets/pack_14/SP14-106.yaml` | `assets/recipes/styles/defaults/SP14-106.webp` |
-| SP14-107 | `components/recipes/styles/manifests/presets/pack_14/SP14-107.yaml` | `assets/recipes/styles/defaults/SP14-107.webp` |
-| SP14-108 | `components/recipes/styles/manifests/presets/pack_14/SP14-108.yaml` | `assets/recipes/styles/defaults/SP14-108.webp` |
-| SP14-109 | `components/recipes/styles/manifests/presets/pack_14/SP14-109.yaml` | `assets/recipes/styles/defaults/SP14-109.webp` |
-| SP14-110 | `components/recipes/styles/manifests/presets/pack_14/SP14-110.yaml` | `assets/recipes/styles/defaults/SP14-110.webp` |
-| SP14-111 | `components/recipes/styles/manifests/presets/pack_14/SP14-111.yaml` | `assets/recipes/styles/defaults/SP14-111.webp` |
-| SP14-112 | `components/recipes/styles/manifests/presets/pack_14/SP14-112.yaml` | `assets/recipes/styles/defaults/SP14-112.webp` |
-| SP14-113 | `components/recipes/styles/manifests/presets/pack_14/SP14-113.yaml` | `assets/recipes/styles/defaults/SP14-113.webp` |
-| SP14-114 | `components/recipes/styles/manifests/presets/pack_14/SP14-114.yaml` | `assets/recipes/styles/defaults/SP14-114.webp` |
-| SP14-115 | `components/recipes/styles/manifests/presets/pack_14/SP14-115.yaml` | `assets/recipes/styles/defaults/SP14-115.webp` |
-| SP14-116 | `components/recipes/styles/manifests/presets/pack_14/SP14-116.yaml` | `assets/recipes/styles/defaults/SP14-116.webp` |
-| SP14-117 | `components/recipes/styles/manifests/presets/pack_14/SP14-117.yaml` | `assets/recipes/styles/defaults/SP14-117.webp` |
-| SP14-118 | `components/recipes/styles/manifests/presets/pack_14/SP14-118.yaml` | `assets/recipes/styles/defaults/SP14-118.webp` |
-| SP14-119 | `components/recipes/styles/manifests/presets/pack_14/SP14-119.yaml` | `assets/recipes/styles/defaults/SP14-119.webp` |
-| SP14-120 | `components/recipes/styles/manifests/presets/pack_14/SP14-120.yaml` | `assets/recipes/styles/defaults/SP14-120.webp` |
-| SP14-121 | `components/recipes/styles/manifests/presets/pack_14/SP14-121.yaml` | `assets/recipes/styles/defaults/SP14-121.webp` |
-| SP14-122 | `components/recipes/styles/manifests/presets/pack_14/SP14-122.yaml` | `assets/recipes/styles/defaults/SP14-122.webp` |
-| SP14-123 | `components/recipes/styles/manifests/presets/pack_14/SP14-123.yaml` | `assets/recipes/styles/defaults/SP14-123.webp` |
+Audit note 2026-06-07:
+
+- `123/123` manifests siguen con `assets.defaultImage` apuntando a `SP14-xxx.webp`, pero `hasDefaultImage: false` en toda la taxonomy.
+- Existen solo `8` assets legacy en disco (`SP14-001..008`) y los `8` quedaron stale frente a los nombres/manifests actuales del checkpoint `manifest-pack_14.json`.
+- Conteo operativo para la siguiente ronda: `stale_existing=8`, `missing=115`.
+- Ejemplos de drift confirmado: `SP14-001` (`Cathedral Eclipse Procession` -> `Eclipse Reliquary Processional`), `SP14-008` (`Funeral Rose Cavalier` -> `Funeral Rose Psychopomp`).
+
+Regeneration note 2026-06-08:
+
+- `SP14-001` a `SP14-008` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- `SP14-003..008` se cerraron recuperando PNGs reales desde transcript/cache de Codex luego de que el worker hubiera completado jobs que el CLI habia marcado como timeout local.
+- Estado real en repo tras esta tanda: `regenerated_current=8`, `stale_existing=0`, `missing=115`.
+- Regla operativa validada: no contar un job `completed` del worker como cerrado hasta ver `.webp` actualizado en repo y checkpoint nuevo en `manifest-pack_14.json`.
+
+Regeneration note 2026-06-08 (ola 2):
+
+- `SP14-009` a `SP14-012` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- `SP14-010` requirio un retry por `status needs_review`, pero la segunda pasada materializo normal sin recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=12`, `stale_existing=0`, `missing=111`.
+- Coverage real verificado despues de backfill + validate secuencial: `pack_14 defaultImages=12/123`.
+
+Regeneration note 2026-06-08 (ola 3):
+
+- `SP14-013` a `SP14-016` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- `SP14-016` fallo primero con `status needs_review` en tres intentos seguidos; se destrabo con un ajuste minimo en el manifest (`sacrificial` -> `ceremonial`, `sacrifice` -> `offering rite`) y luego materializo tras dos retries y un tercer intento exitoso.
+- Estado real en repo tras esta tanda: `regenerated_current=16`, `stale_existing=0`, `missing=107`.
+- Coverage real verificado despues de backfill + validate secuencial: `pack_14 defaultImages=16/123`.
+
+Regeneration note 2026-06-08 (ola 4):
+
+- `SP14-017` a `SP14-020` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Esta tanda salio limpia: `4/4` materializados sin retries especiales ni recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=20`, `stale_existing=0`, `missing=103`.
+- Coverage real verificado despues de backfill + validate: `pack_14 defaultImages=20/123`.
+
+Regeneration note 2026-06-08 (ola 5):
+
+- `SP14-021` a `SP14-024` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Esta tanda tambien salio limpia: `4/4` materializados sin retries especiales ni recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=24`, `stale_existing=0`, `missing=99`.
+- Coverage real verificado despues de backfill + validate: `pack_14 defaultImages=24/123`.
+
+Regeneration note 2026-06-08 (ola 6):
+
+- `SP14-025` a `SP14-028` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Esta tanda tambien salio limpia: `4/4` materializados sin retries especiales ni recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=28`, `stale_existing=0`, `missing=95`.
+- Coverage real verificado despues de backfill + validate: `pack_14 defaultImages=28/123`.
+
+Regeneration note 2026-06-08 (ola 7):
+
+- `SP14-029` a `SP14-032` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Esta tanda tambien salio limpia: `4/4` materializados sin retries especiales ni recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=32`, `stale_existing=0`, `missing=91`.
+- Coverage real verificado despues de backfill + validate: `pack_14 defaultImages=32/123`.
+
+Regeneration note 2026-06-08 (ola 8):
+
+- `SP14-033` a `SP14-036` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Esta tanda tambien salio limpia: `4/4` materializados sin retries especiales ni recovery manual.
+- Estado real en repo tras esta tanda: `regenerated_current=36`, `stale_existing=0`, `missing=87`.
+- Coverage real verificado despues de backfill + validate: `pack_14 defaultImages=36/123`.
+
+Pending rows cleared 2026-06-08:
+
+- `SP14-114..123` ya quedaron materializados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+- Estado real final de `pack_14`: `regenerated_current=123`, `stale_existing=0`, `missing=0`.
+- Coverage real final verificado: `pack_14 defaultImages=123/123`.
 
 ### pack_15
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP15-001 | `components/recipes/styles/manifests/presets/pack_15/SP15-001.yaml` | `assets/recipes/styles/defaults/SP15-001.webp` |
-| SP15-002 | `components/recipes/styles/manifests/presets/pack_15/SP15-002.yaml` | `assets/recipes/styles/defaults/SP15-002.webp` |
-| SP15-003 | `components/recipes/styles/manifests/presets/pack_15/SP15-003.yaml` | `assets/recipes/styles/defaults/SP15-003.webp` |
-| SP15-004 | `components/recipes/styles/manifests/presets/pack_15/SP15-004.yaml` | `assets/recipes/styles/defaults/SP15-004.webp` |
-| SP15-005 | `components/recipes/styles/manifests/presets/pack_15/SP15-005.yaml` | `assets/recipes/styles/defaults/SP15-005.webp` |
-| SP15-006 | `components/recipes/styles/manifests/presets/pack_15/SP15-006.yaml` | `assets/recipes/styles/defaults/SP15-006.webp` |
-| SP15-007 | `components/recipes/styles/manifests/presets/pack_15/SP15-007.yaml` | `assets/recipes/styles/defaults/SP15-007.webp` |
-| SP15-008 | `components/recipes/styles/manifests/presets/pack_15/SP15-008.yaml` | `assets/recipes/styles/defaults/SP15-008.webp` |
-| SP15-009 | `components/recipes/styles/manifests/presets/pack_15/SP15-009.yaml` | `assets/recipes/styles/defaults/SP15-009.webp` |
-| SP15-010 | `components/recipes/styles/manifests/presets/pack_15/SP15-010.yaml` | `assets/recipes/styles/defaults/SP15-010.webp` |
-| SP15-011 | `components/recipes/styles/manifests/presets/pack_15/SP15-011.yaml` | `assets/recipes/styles/defaults/SP15-011.webp` |
-| SP15-012 | `components/recipes/styles/manifests/presets/pack_15/SP15-012.yaml` | `assets/recipes/styles/defaults/SP15-012.webp` |
-| SP15-013 | `components/recipes/styles/manifests/presets/pack_15/SP15-013.yaml` | `assets/recipes/styles/defaults/SP15-013.webp` |
-| SP15-014 | `components/recipes/styles/manifests/presets/pack_15/SP15-014.yaml` | `assets/recipes/styles/defaults/SP15-014.webp` |
-| SP15-015 | `components/recipes/styles/manifests/presets/pack_15/SP15-015.yaml` | `assets/recipes/styles/defaults/SP15-015.webp` |
-| SP15-016 | `components/recipes/styles/manifests/presets/pack_15/SP15-016.yaml` | `assets/recipes/styles/defaults/SP15-016.webp` |
-| SP15-017 | `components/recipes/styles/manifests/presets/pack_15/SP15-017.yaml` | `assets/recipes/styles/defaults/SP15-017.webp` |
-| SP15-018 | `components/recipes/styles/manifests/presets/pack_15/SP15-018.yaml` | `assets/recipes/styles/defaults/SP15-018.webp` |
-| SP15-019 | `components/recipes/styles/manifests/presets/pack_15/SP15-019.yaml` | `assets/recipes/styles/defaults/SP15-019.webp` |
-| SP15-020 | `components/recipes/styles/manifests/presets/pack_15/SP15-020.yaml` | `assets/recipes/styles/defaults/SP15-020.webp` |
-| SP15-021 | `components/recipes/styles/manifests/presets/pack_15/SP15-021.yaml` | `assets/recipes/styles/defaults/SP15-021.webp` |
-| SP15-022 | `components/recipes/styles/manifests/presets/pack_15/SP15-022.yaml` | `assets/recipes/styles/defaults/SP15-022.webp` |
-| SP15-023 | `components/recipes/styles/manifests/presets/pack_15/SP15-023.yaml` | `assets/recipes/styles/defaults/SP15-023.webp` |
-| SP15-024 | `components/recipes/styles/manifests/presets/pack_15/SP15-024.yaml` | `assets/recipes/styles/defaults/SP15-024.webp` |
-| SP15-025 | `components/recipes/styles/manifests/presets/pack_15/SP15-025.yaml` | `assets/recipes/styles/defaults/SP15-025.webp` |
-| SP15-026 | `components/recipes/styles/manifests/presets/pack_15/SP15-026.yaml` | `assets/recipes/styles/defaults/SP15-026.webp` |
-| SP15-027 | `components/recipes/styles/manifests/presets/pack_15/SP15-027.yaml` | `assets/recipes/styles/defaults/SP15-027.webp` |
-| SP15-028 | `components/recipes/styles/manifests/presets/pack_15/SP15-028.yaml` | `assets/recipes/styles/defaults/SP15-028.webp` |
-| SP15-029 | `components/recipes/styles/manifests/presets/pack_15/SP15-029.yaml` | `assets/recipes/styles/defaults/SP15-029.webp` |
-| SP15-030 | `components/recipes/styles/manifests/presets/pack_15/SP15-030.yaml` | `assets/recipes/styles/defaults/SP15-030.webp` |
-| SP15-031 | `components/recipes/styles/manifests/presets/pack_15/SP15-031.yaml` | `assets/recipes/styles/defaults/SP15-031.webp` |
-| SP15-032 | `components/recipes/styles/manifests/presets/pack_15/SP15-032.yaml` | `assets/recipes/styles/defaults/SP15-032.webp` |
-| SP15-033 | `components/recipes/styles/manifests/presets/pack_15/SP15-033.yaml` | `assets/recipes/styles/defaults/SP15-033.webp` |
-| SP15-034 | `components/recipes/styles/manifests/presets/pack_15/SP15-034.yaml` | `assets/recipes/styles/defaults/SP15-034.webp` |
-| SP15-035 | `components/recipes/styles/manifests/presets/pack_15/SP15-035.yaml` | `assets/recipes/styles/defaults/SP15-035.webp` |
-| SP15-036 | `components/recipes/styles/manifests/presets/pack_15/SP15-036.yaml` | `assets/recipes/styles/defaults/SP15-036.webp` |
-| SP15-037 | `components/recipes/styles/manifests/presets/pack_15/SP15-037.yaml` | `assets/recipes/styles/defaults/SP15-037.webp` |
-| SP15-038 | `components/recipes/styles/manifests/presets/pack_15/SP15-038.yaml` | `assets/recipes/styles/defaults/SP15-038.webp` |
-| SP15-039 | `components/recipes/styles/manifests/presets/pack_15/SP15-039.yaml` | `assets/recipes/styles/defaults/SP15-039.webp` |
-| SP15-040 | `components/recipes/styles/manifests/presets/pack_15/SP15-040.yaml` | `assets/recipes/styles/defaults/SP15-040.webp` |
-| SP15-041 | `components/recipes/styles/manifests/presets/pack_15/SP15-041.yaml` | `assets/recipes/styles/defaults/SP15-041.webp` |
-| SP15-042 | `components/recipes/styles/manifests/presets/pack_15/SP15-042.yaml` | `assets/recipes/styles/defaults/SP15-042.webp` |
-| SP15-043 | `components/recipes/styles/manifests/presets/pack_15/SP15-043.yaml` | `assets/recipes/styles/defaults/SP15-043.webp` |
-| SP15-044 | `components/recipes/styles/manifests/presets/pack_15/SP15-044.yaml` | `assets/recipes/styles/defaults/SP15-044.webp` |
-| SP15-045 | `components/recipes/styles/manifests/presets/pack_15/SP15-045.yaml` | `assets/recipes/styles/defaults/SP15-045.webp` |
-| SP15-046 | `components/recipes/styles/manifests/presets/pack_15/SP15-046.yaml` | `assets/recipes/styles/defaults/SP15-046.webp` |
-| SP15-047 | `components/recipes/styles/manifests/presets/pack_15/SP15-047.yaml` | `assets/recipes/styles/defaults/SP15-047.webp` |
-| SP15-048 | `components/recipes/styles/manifests/presets/pack_15/SP15-048.yaml` | `assets/recipes/styles/defaults/SP15-048.webp` |
-| SP15-049 | `components/recipes/styles/manifests/presets/pack_15/SP15-049.yaml` | `assets/recipes/styles/defaults/SP15-049.webp` |
-| SP15-050 | `components/recipes/styles/manifests/presets/pack_15/SP15-050.yaml` | `assets/recipes/styles/defaults/SP15-050.webp` |
-| SP15-051 | `components/recipes/styles/manifests/presets/pack_15/SP15-051.yaml` | `assets/recipes/styles/defaults/SP15-051.webp` |
-| SP15-052 | `components/recipes/styles/manifests/presets/pack_15/SP15-052.yaml` | `assets/recipes/styles/defaults/SP15-052.webp` |
-| SP15-053 | `components/recipes/styles/manifests/presets/pack_15/SP15-053.yaml` | `assets/recipes/styles/defaults/SP15-053.webp` |
-| SP15-054 | `components/recipes/styles/manifests/presets/pack_15/SP15-054.yaml` | `assets/recipes/styles/defaults/SP15-054.webp` |
-| SP15-055 | `components/recipes/styles/manifests/presets/pack_15/SP15-055.yaml` | `assets/recipes/styles/defaults/SP15-055.webp` |
-| SP15-056 | `components/recipes/styles/manifests/presets/pack_15/SP15-056.yaml` | `assets/recipes/styles/defaults/SP15-056.webp` |
-| SP15-057 | `components/recipes/styles/manifests/presets/pack_15/SP15-057.yaml` | `assets/recipes/styles/defaults/SP15-057.webp` |
-| SP15-058 | `components/recipes/styles/manifests/presets/pack_15/SP15-058.yaml` | `assets/recipes/styles/defaults/SP15-058.webp` |
-| SP15-059 | `components/recipes/styles/manifests/presets/pack_15/SP15-059.yaml` | `assets/recipes/styles/defaults/SP15-059.webp` |
-| SP15-060 | `components/recipes/styles/manifests/presets/pack_15/SP15-060.yaml` | `assets/recipes/styles/defaults/SP15-060.webp` |
-| SP15-061 | `components/recipes/styles/manifests/presets/pack_15/SP15-061.yaml` | `assets/recipes/styles/defaults/SP15-061.webp` |
-| SP15-062 | `components/recipes/styles/manifests/presets/pack_15/SP15-062.yaml` | `assets/recipes/styles/defaults/SP15-062.webp` |
-| SP15-063 | `components/recipes/styles/manifests/presets/pack_15/SP15-063.yaml` | `assets/recipes/styles/defaults/SP15-063.webp` |
-| SP15-064 | `components/recipes/styles/manifests/presets/pack_15/SP15-064.yaml` | `assets/recipes/styles/defaults/SP15-064.webp` |
-| SP15-065 | `components/recipes/styles/manifests/presets/pack_15/SP15-065.yaml` | `assets/recipes/styles/defaults/SP15-065.webp` |
-| SP15-066 | `components/recipes/styles/manifests/presets/pack_15/SP15-066.yaml` | `assets/recipes/styles/defaults/SP15-066.webp` |
-| SP15-067 | `components/recipes/styles/manifests/presets/pack_15/SP15-067.yaml` | `assets/recipes/styles/defaults/SP15-067.webp` |
-| SP15-068 | `components/recipes/styles/manifests/presets/pack_15/SP15-068.yaml` | `assets/recipes/styles/defaults/SP15-068.webp` |
-| SP15-069 | `components/recipes/styles/manifests/presets/pack_15/SP15-069.yaml` | `assets/recipes/styles/defaults/SP15-069.webp` |
-| SP15-070 | `components/recipes/styles/manifests/presets/pack_15/SP15-070.yaml` | `assets/recipes/styles/defaults/SP15-070.webp` |
-| SP15-071 | `components/recipes/styles/manifests/presets/pack_15/SP15-071.yaml` | `assets/recipes/styles/defaults/SP15-071.webp` |
-| SP15-072 | `components/recipes/styles/manifests/presets/pack_15/SP15-072.yaml` | `assets/recipes/styles/defaults/SP15-072.webp` |
-| SP15-073 | `components/recipes/styles/manifests/presets/pack_15/SP15-073.yaml` | `assets/recipes/styles/defaults/SP15-073.webp` |
-| SP15-074 | `components/recipes/styles/manifests/presets/pack_15/SP15-074.yaml` | `assets/recipes/styles/defaults/SP15-074.webp` |
-| SP15-075 | `components/recipes/styles/manifests/presets/pack_15/SP15-075.yaml` | `assets/recipes/styles/defaults/SP15-075.webp` |
-| SP15-076 | `components/recipes/styles/manifests/presets/pack_15/SP15-076.yaml` | `assets/recipes/styles/defaults/SP15-076.webp` |
-| SP15-077 | `components/recipes/styles/manifests/presets/pack_15/SP15-077.yaml` | `assets/recipes/styles/defaults/SP15-077.webp` |
-| SP15-078 | `components/recipes/styles/manifests/presets/pack_15/SP15-078.yaml` | `assets/recipes/styles/defaults/SP15-078.webp` |
-| SP15-079 | `components/recipes/styles/manifests/presets/pack_15/SP15-079.yaml` | `assets/recipes/styles/defaults/SP15-079.webp` |
-| SP15-080 | `components/recipes/styles/manifests/presets/pack_15/SP15-080.yaml` | `assets/recipes/styles/defaults/SP15-080.webp` |
-| SP15-081 | `components/recipes/styles/manifests/presets/pack_15/SP15-081.yaml` | `assets/recipes/styles/defaults/SP15-081.webp` |
-| SP15-082 | `components/recipes/styles/manifests/presets/pack_15/SP15-082.yaml` | `assets/recipes/styles/defaults/SP15-082.webp` |
-| SP15-083 | `components/recipes/styles/manifests/presets/pack_15/SP15-083.yaml` | `assets/recipes/styles/defaults/SP15-083.webp` |
-| SP15-084 | `components/recipes/styles/manifests/presets/pack_15/SP15-084.yaml` | `assets/recipes/styles/defaults/SP15-084.webp` |
-| SP15-085 | `components/recipes/styles/manifests/presets/pack_15/SP15-085.yaml` | `assets/recipes/styles/defaults/SP15-085.webp` |
-| SP15-086 | `components/recipes/styles/manifests/presets/pack_15/SP15-086.yaml` | `assets/recipes/styles/defaults/SP15-086.webp` |
-| SP15-087 | `components/recipes/styles/manifests/presets/pack_15/SP15-087.yaml` | `assets/recipes/styles/defaults/SP15-087.webp` |
-| SP15-088 | `components/recipes/styles/manifests/presets/pack_15/SP15-088.yaml` | `assets/recipes/styles/defaults/SP15-088.webp` |
-| SP15-089 | `components/recipes/styles/manifests/presets/pack_15/SP15-089.yaml` | `assets/recipes/styles/defaults/SP15-089.webp` |
-| SP15-090 | `components/recipes/styles/manifests/presets/pack_15/SP15-090.yaml` | `assets/recipes/styles/defaults/SP15-090.webp` |
-| SP15-091 | `components/recipes/styles/manifests/presets/pack_15/SP15-091.yaml` | `assets/recipes/styles/defaults/SP15-091.webp` |
-| SP15-092 | `components/recipes/styles/manifests/presets/pack_15/SP15-092.yaml` | `assets/recipes/styles/defaults/SP15-092.webp` |
-| SP15-093 | `components/recipes/styles/manifests/presets/pack_15/SP15-093.yaml` | `assets/recipes/styles/defaults/SP15-093.webp` |
-| SP15-094 | `components/recipes/styles/manifests/presets/pack_15/SP15-094.yaml` | `assets/recipes/styles/defaults/SP15-094.webp` |
-| SP15-095 | `components/recipes/styles/manifests/presets/pack_15/SP15-095.yaml` | `assets/recipes/styles/defaults/SP15-095.webp` |
-| SP15-096 | `components/recipes/styles/manifests/presets/pack_15/SP15-096.yaml` | `assets/recipes/styles/defaults/SP15-096.webp` |
-| SP15-097 | `components/recipes/styles/manifests/presets/pack_15/SP15-097.yaml` | `assets/recipes/styles/defaults/SP15-097.webp` |
-| SP15-098 | `components/recipes/styles/manifests/presets/pack_15/SP15-098.yaml` | `assets/recipes/styles/defaults/SP15-098.webp` |
-| SP15-099 | `components/recipes/styles/manifests/presets/pack_15/SP15-099.yaml` | `assets/recipes/styles/defaults/SP15-099.webp` |
-| SP15-100 | `components/recipes/styles/manifests/presets/pack_15/SP15-100.yaml` | `assets/recipes/styles/defaults/SP15-100.webp` |
-| SP15-101 | `components/recipes/styles/manifests/presets/pack_15/SP15-101.yaml` | `assets/recipes/styles/defaults/SP15-101.webp` |
-| SP15-102 | `components/recipes/styles/manifests/presets/pack_15/SP15-102.yaml` | `assets/recipes/styles/defaults/SP15-102.webp` |
-| SP15-103 | `components/recipes/styles/manifests/presets/pack_15/SP15-103.yaml` | `assets/recipes/styles/defaults/SP15-103.webp` |
-| SP15-104 | `components/recipes/styles/manifests/presets/pack_15/SP15-104.yaml` | `assets/recipes/styles/defaults/SP15-104.webp` |
-| SP15-105 | `components/recipes/styles/manifests/presets/pack_15/SP15-105.yaml` | `assets/recipes/styles/defaults/SP15-105.webp` |
-| SP15-106 | `components/recipes/styles/manifests/presets/pack_15/SP15-106.yaml` | `assets/recipes/styles/defaults/SP15-106.webp` |
-| SP15-107 | `components/recipes/styles/manifests/presets/pack_15/SP15-107.yaml` | `assets/recipes/styles/defaults/SP15-107.webp` |
-| SP15-108 | `components/recipes/styles/manifests/presets/pack_15/SP15-108.yaml` | `assets/recipes/styles/defaults/SP15-108.webp` |
-| SP15-109 | `components/recipes/styles/manifests/presets/pack_15/SP15-109.yaml` | `assets/recipes/styles/defaults/SP15-109.webp` |
-| SP15-110 | `components/recipes/styles/manifests/presets/pack_15/SP15-110.yaml` | `assets/recipes/styles/defaults/SP15-110.webp` |
-| SP15-111 | `components/recipes/styles/manifests/presets/pack_15/SP15-111.yaml` | `assets/recipes/styles/defaults/SP15-111.webp` |
-| SP15-112 | `components/recipes/styles/manifests/presets/pack_15/SP15-112.yaml` | `assets/recipes/styles/defaults/SP15-112.webp` |
-| SP15-113 | `components/recipes/styles/manifests/presets/pack_15/SP15-113.yaml` | `assets/recipes/styles/defaults/SP15-113.webp` |
-| SP15-114 | `components/recipes/styles/manifests/presets/pack_15/SP15-114.yaml` | `assets/recipes/styles/defaults/SP15-114.webp` |
-| SP15-115 | `components/recipes/styles/manifests/presets/pack_15/SP15-115.yaml` | `assets/recipes/styles/defaults/SP15-115.webp` |
-| SP15-116 | `components/recipes/styles/manifests/presets/pack_15/SP15-116.yaml` | `assets/recipes/styles/defaults/SP15-116.webp` |
-| SP15-117 | `components/recipes/styles/manifests/presets/pack_15/SP15-117.yaml` | `assets/recipes/styles/defaults/SP15-117.webp` |
-| SP15-118 | `components/recipes/styles/manifests/presets/pack_15/SP15-118.yaml` | `assets/recipes/styles/defaults/SP15-118.webp` |
-| SP15-119 | `components/recipes/styles/manifests/presets/pack_15/SP15-119.yaml` | `assets/recipes/styles/defaults/SP15-119.webp` |
-| SP15-120 | `components/recipes/styles/manifests/presets/pack_15/SP15-120.yaml` | `assets/recipes/styles/defaults/SP15-120.webp` |
-| SP15-121 | `components/recipes/styles/manifests/presets/pack_15/SP15-121.yaml` | `assets/recipes/styles/defaults/SP15-121.webp` |
-| SP15-122 | `components/recipes/styles/manifests/presets/pack_15/SP15-122.yaml` | `assets/recipes/styles/defaults/SP15-122.webp` |
-| SP15-123 | `components/recipes/styles/manifests/presets/pack_15/SP15-123.yaml` | `assets/recipes/styles/defaults/SP15-123.webp` |
-| SP15-124 | `components/recipes/styles/manifests/presets/pack_15/SP15-124.yaml` | `assets/recipes/styles/defaults/SP15-124.webp` |
-| SP15-125 | `components/recipes/styles/manifests/presets/pack_15/SP15-125.yaml` | `assets/recipes/styles/defaults/SP15-125.webp` |
-| SP15-126 | `components/recipes/styles/manifests/presets/pack_15/SP15-126.yaml` | `assets/recipes/styles/defaults/SP15-126.webp` |
-| SP15-127 | `components/recipes/styles/manifests/presets/pack_15/SP15-127.yaml` | `assets/recipes/styles/defaults/SP15-127.webp` |
-| SP15-128 | `components/recipes/styles/manifests/presets/pack_15/SP15-128.yaml` | `assets/recipes/styles/defaults/SP15-128.webp` |
-| SP15-129 | `components/recipes/styles/manifests/presets/pack_15/SP15-129.yaml` | `assets/recipes/styles/defaults/SP15-129.webp` |
-| SP15-130 | `components/recipes/styles/manifests/presets/pack_15/SP15-130.yaml` | `assets/recipes/styles/defaults/SP15-130.webp` |
-| SP15-131 | `components/recipes/styles/manifests/presets/pack_15/SP15-131.yaml` | `assets/recipes/styles/defaults/SP15-131.webp` |
-| SP15-132 | `components/recipes/styles/manifests/presets/pack_15/SP15-132.yaml` | `assets/recipes/styles/defaults/SP15-132.webp` |
-| SP15-133 | `components/recipes/styles/manifests/presets/pack_15/SP15-133.yaml` | `assets/recipes/styles/defaults/SP15-133.webp` |
-| SP15-134 | `components/recipes/styles/manifests/presets/pack_15/SP15-134.yaml` | `assets/recipes/styles/defaults/SP15-134.webp` |
-| SP15-135 | `components/recipes/styles/manifests/presets/pack_15/SP15-135.yaml` | `assets/recipes/styles/defaults/SP15-135.webp` |
-| SP15-136 | `components/recipes/styles/manifests/presets/pack_15/SP15-136.yaml` | `assets/recipes/styles/defaults/SP15-136.webp` |
-| SP15-137 | `components/recipes/styles/manifests/presets/pack_15/SP15-137.yaml` | `assets/recipes/styles/defaults/SP15-137.webp` |
+Audit note 2026-06-07:
+
+- `137/137` manifests siguen con `assets.defaultImage` apuntando a `SP15-xxx.webp`, pero `hasDefaultImage: false` en toda la taxonomy.
+- Existen solo `8` assets legacy en disco (`SP15-001..008`) y siguen fuera de materializacion publicada; `SP15-003` tiene drift confirmado contra el checkpoint `manifest-pack_15.json`.
+- Los otros `7` assets legacy deben tratarse como `requires-regeneration` para no asumir vigencia visual sin republicacion/materializacion.
+- Conteo operativo para la siguiente ronda: `legacy_existing_requires_regen=8`, `missing=129`.
+- Ejemplo de drift confirmado: `SP15-003` (`Coral Transit Canopy` -> `Tidal Bioport Exchange`).
+
+Regeneration note 2026-06-08 (ola 1):
+
+- `SP15-001..008` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Bloque `legacy` cerrado: `legacy_existing_requires_regen=0`.
+- `SP15-009..012` ya quedaron materializados tambien.
+- Estado real tras esta ronda: `regenerated_current=12`, `stale_existing=0`, `missing=125`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=12/137`.
+- Hallazgo operativo: estrategia secuencial `1x1` fue estable para las `12` cards; no hubo zombies ni cancelaciones manuales.
+
+Regeneration note 2026-06-08 (ola 2):
+
+- `SP15-013..020` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=20`, `stale_existing=0`, `missing=117`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=20/137`.
+- Hallazgo operativo: estrategia secuencial `1x1` siguio estable en `8/8`; sin `running` zombies, sin `socket closed`, sin cancelaciones manuales.
+
+Regeneration note 2026-06-08 (ola 3):
+
+- `SP15-021..028` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=28`, `stale_existing=0`, `missing=109`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=28/137`.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` siguio estable en `7/8` al primer intento.
+  - `SP15-026` pego timeout de espera en CLI y dejo job `running` sin progreso visible; se cancelo y rerun aislado inmediato si cerro bien.
+  - no hubo `socket closed`; el caso se comporto como cuelgue puntual del job, no caida general del transporte.
+
+Regeneration note 2026-06-08 (ola 4):
+
+- `SP15-029..036` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=36`, `stale_existing=0`, `missing=101`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=36/137`.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` volvio a salir estable en `8/8`.
+  - no hubo `running` zombies, ni `socket closed`, ni cancelaciones manuales en esta tanda.
+
+Regeneration note 2026-06-08 (ola 5):
+
+- `SP15-037..044` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=44`, `stale_existing=0`, `missing=93`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=44/137`.
+- Hallazgo operativo:
+  - el loop inicial `SP15-037..044` agoto la ventana de la herramienta, pero `SP15-037..042` igual terminaron materializados en background y con checkpoint real.
+  - `SP15-043` y `SP15-044` se cerraron luego sin drama en rerun aislado `1x1`.
+  - no hubo `socket closed`, ni `running` zombies, ni cancelaciones manuales en esta tanda.
+
+Regeneration note 2026-06-08 (ola 6):
+
+- `SP15-045..052` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=52`, `stale_existing=0`, `missing=85`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=52/137`.
+- Hallazgo operativo:
+  - `SP15-045` y `SP15-046` cerraron via worker en background despues de que el primer loop agotara ventana.
+  - `SP15-047` quedo trabado y luego fallo con `Codex app-server socket closed`; se destrabo al suavizar wording en `components/recipes/styles/manifests/presets/pack_15/SP15-047.yaml` y rerun `1x1`.
+  - `SP15-048` cerro limpia en rerun aislado.
+  - `SP15-049..052` cerraron limpias en dos tandas cortas `1x1`.
+
+Regeneration note 2026-06-08 (ola 7):
+
+- `SP15-053..060` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=60`, `stale_existing=0`, `missing=77`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=60/137`.
+- Hallazgo operativo:
+  - `SP15-053..055` habian quedado materializadas antes del sync documental.
+  - `SP15-056` primero se trabo por `Codex app-server socket closed`, luego por reuse de thread muerto `019ea8c3-64f7-7881-86d6-b54cc0dc29ab`.
+  - reiniciar `local-server` vacio el pool en memoria; despues de levantar `app-server` de nuevo, `SP15-056` cerro limpia al primer rerun.
+  - `SP15-057..060` cerraron limpias en secuencial `1x1` tras ese reset.
+
+Regeneration note 2026-06-08 (ola 8):
+
+- `SP15-061..068` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=68`, `stale_existing=0`, `missing=69`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=68/137`.
+- Hallazgo operativo:
+  - `SP15-061..068` cerraron `8/8` en secuencial `1x1`, sin retries, `socket closed`, ni jobs zombie.
+  - el reset previo de `local-server` dejo el pool de sesiones estable tambien para el bloque raypunk.
+
+Regeneration note 2026-06-08 (ola 9):
+
+- `SP15-069..076` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=76`, `stale_existing=0`, `missing=61`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=76/137`.
+- Hallazgo operativo:
+  - `SP15-069..075` cerraron limpias en secuencial `1x1`.
+  - el loop largo agoto ventana justo durante `SP15-076`.
+  - `SP15-076` aparecio `completed` en API pero sin `.webp` ni checkpoint en repo; rerun aislado `1x1` la cerro de verdad.
+
+Regeneration note 2026-06-08 (ola 10):
+
+- `SP15-077..084` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=84`, `stale_existing=0`, `missing=53`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=84/137`.
+- Hallazgo operativo:
+  - primera prueba `2x2` real del frente.
+  - `SP15-077..084` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falso verde de checkpoint.
+  - `2x2` fue sensiblemente mas rapido que `1x1`, sin perder trazabilidad en esta ola.
+
+Regeneration note 2026-06-08 (ola 11):
+
+- `SP15-085..092` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=92`, `stale_existing=0`, `missing=45`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=92/137`.
+- Hallazgo operativo:
+  - segunda prueba `2x2` real del frente.
+  - `SP15-085..092` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falsos verdes.
+  - `2x2` sigue siendo el mejor punto medio actual entre velocidad y trazabilidad.
+
+Regeneration note 2026-06-09 (ola 12):
+
+- `SP15-093..100` ya quedaron regenerados y checkpointed en `assets/recipes/styles/defaults/manifest-pack_15.json`.
+- Estado real tras esta ronda: `regenerated_current=100`, `stale_existing=0`, `missing=37`.
+- Coverage real esperado tras backfill + validate: `pack_15 defaultImages=100/137`.
+- Hallazgo operativo:
+  - tercera prueba `2x2` real del frente.
+  - `SP15-093..100` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falsos verdes.
+  - `2x2` se sostiene estable tambien al cruzar de clockpunk a solarpunk dentro del mismo pack.
 
 ### pack_16
 
@@ -1828,3 +2356,1400 @@ bun run styles:validate -- --pack=pack_15
 bun run styles:validate -- --pack=pack_16
 bun run styles:verify
 ```
+
+## Estado parcial 2026-06-08 - `pack_14`
+
+Corte operativo tras nueve microtandas sobre `pack_14`:
+
+- Default cards materializadas en repo:
+  - `SP14-001..040`
+- Coverage real verificado:
+  - `pack_14 defaultImages=40/123`
+  - `pack_14 missingDefaultImages=83`
+- Hallazgo de visibilidad:
+  - las cards ya existen en `assets/recipes/styles/defaults/` y en `manifest-pack_14.json`.
+  - si no se ven en la UI activa, el sospechoso principal es el catalogo estatico de `lib/recipeAssetCatalog.ts` construido con `import.meta.glob(..., { eager: true })`, que puede no refrescar archivos nuevos sin reinicio del frontend.
+
+Actualizacion tras ola 10:
+
+- Default cards materializadas en repo:
+  - `SP14-001..044`
+- Coverage real verificado:
+  - `pack_14 defaultImages=44/123`
+  - `pack_14 missingDefaultImages=79`
+- Hallazgo operativo:
+  - en esta tanda `scripts/generate-style-defaults.ts` supero timeout del CLI, pero el worker siguio en background y completo `SP14-041..044`.
+  - criterio de cierre se mantuvo igual: no contar cerrado hasta ver `.webp` nuevo en repo y checkpoint nuevo en `manifest-pack_14.json`.
+
+Actualizacion tras ola 11:
+
+- Default cards materializadas en repo:
+  - `SP14-001..048`
+- Coverage real verificado:
+  - `pack_14 defaultImages=48/123`
+  - `pack_14 missingDefaultImages=75`
+- Hallazgo operativo:
+  - de nuevo `scripts/generate-style-defaults.ts` supero timeout del CLI, pero el worker siguio en background y completo `SP14-045..048`.
+  - criterio de cierre se mantuvo igual: no contar cerrado hasta ver `.webp` nuevo en repo y checkpoint nuevo en `manifest-pack_14.json`.
+
+Actualizacion tras ola 12:
+
+- Default cards materializadas en repo:
+  - `SP14-001..052`
+- Coverage real verificado:
+  - `pack_14 defaultImages=52/123`
+  - `pack_14 missingDefaultImages=71`
+- Regla nueva aplicada desde esta tanda:
+  - `scripts/style-default-utils.ts` ahora agrega al final del prompt una directiva global de denoise y control de microdetalle para futuras generaciones.
+- Hallazgo operativo:
+  - lote inicial `SP14-049..052` supero timeout del CLI; `SP14-049..051` cerraron por worker en background y `SP14-052` se completo en rerun fino.
+  - criterio de cierre se mantuvo igual: no contar cerrado hasta ver `.webp` nuevo en repo y checkpoint nuevo en `manifest-pack_14.json`.
+
+Actualizacion tras ola 13:
+
+- Default cards materializadas en repo:
+  - `SP14-001..056`
+- Coverage real verificado:
+  - `pack_14 defaultImages=56/123`
+  - `pack_14 missingDefaultImages=67`
+- Hallazgo operativo:
+  - aun con timeout mas largo, lote inicial `SP14-053..056` supero ventana del CLI.
+  - `SP14-053..055` cerraron por worker en background y `SP14-056` completo dentro de la espera corta posterior.
+  - criterio de cierre se mantuvo igual: no contar cerrado hasta ver `.webp` nuevo en repo y checkpoint nuevo en `manifest-pack_14.json`.
+
+Actualizacion tras ola 14:
+
+- Default cards materializadas en repo:
+  - `SP14-001..060`
+- Coverage real verificado:
+  - `pack_14 defaultImages=60/123`
+  - `pack_14 missingDefaultImages=63`
+- Hallazgo operativo:
+  - con timeout mas largo, lote `SP14-057..060` cerro completo dentro de un solo intento del CLI.
+
+Actualizacion tras ola 15:
+
+- Default cards materializadas en repo:
+  - `SP14-001..064`
+- Coverage real verificado:
+  - `pack_14 defaultImages=64/123`
+  - `pack_14 missingDefaultImages=59`
+- Hallazgo operativo:
+  - lote `SP14-061..064` cerro completo dentro de un solo intento del CLI.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 16:
+
+- Default cards materializadas en repo:
+  - `SP14-001..068`
+- Coverage real verificado:
+  - `pack_14 defaultImages=68/123`
+  - `pack_14 missingDefaultImages=55`
+- Hallazgo operativo:
+  - lote `SP14-065..068` cerro completo dentro de un solo intento del CLI.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 17:
+
+- Default cards materializadas en repo:
+  - `SP14-001..072`
+- Coverage real verificado:
+  - `pack_14 defaultImages=72/123`
+  - `pack_14 missingDefaultImages=51`
+- Hallazgo operativo:
+  - lote inicial `SP14-069..072` agoto ventana del CLI, pero `SP14-069..071` quedaron materializados en repo + checkpoint.
+  - `SP14-072` cerro con rerun fino de un solo preset.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 18:
+
+- Default cards materializadas en repo:
+  - `SP14-001..076`
+- Coverage real verificado:
+  - `pack_14 defaultImages=76/123`
+  - `pack_14 missingDefaultImages=47`
+- Hallazgo operativo:
+  - lote `SP14-073..076` cerro completo dentro de un solo intento del CLI.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 19:
+
+- Default cards materializadas en repo:
+  - `SP14-001..080`
+- Coverage real verificado:
+  - `pack_14 defaultImages=80/123`
+  - `pack_14 missingDefaultImages=43`
+- Hallazgo operativo:
+  - lote inicial `SP14-077..080` agoto ventana del CLI.
+  - `SP14-077` y `SP14-078` quedaron materializados en repo + checkpoint en esa primera pasada.
+  - `SP14-079` y `SP14-080` cerraron tambien via worker en background durante rerun fino del sublote.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 20:
+
+- Default cards materializadas en repo:
+  - `SP14-001..084`
+- Coverage real verificado:
+  - `pack_14 defaultImages=84/123`
+  - `pack_14 missingDefaultImages=39`
+- Hallazgo operativo:
+  - lote inicial `SP14-081..084` agoto ventana del CLI.
+  - `SP14-081` y `SP14-082` quedaron materializados en repo + checkpoint en esa primera pasada.
+  - `SP14-083` y `SP14-084` quedaron bloqueados por errores de worker (`Timed out waiting for Codex notification`, `Codex app-server socket closed` / `is not open`).
+  - simplificacion puntual de manifests en `SP14-083.yaml` y `SP14-084.yaml` destrabo ambas cards via rerun secuencial.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 21:
+
+- Default cards materializadas en repo:
+  - `SP14-001..088`
+- Coverage real verificado:
+  - `pack_14 defaultImages=88/123`
+  - `pack_14 missingDefaultImages=35`
+- Hallazgo operativo:
+  - estrategia secuencial funciono mejor que lote grande para esta categoria.
+  - `SP14-087` necesito retry interno (`needs_review`) pero cerro dentro del mismo comando.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 22:
+
+- Default cards materializadas en repo:
+  - `SP14-001..092`
+- Coverage real verificado:
+  - `pack_14 defaultImages=92/123`
+  - `pack_14 missingDefaultImages=31`
+- Hallazgo operativo:
+  - estrategia secuencial siguio estable para `SP14-089..092`.
+  - `SP14-090` necesito retry interno (`needs_review`) pero cerro dentro del mismo comando.
+  - `SP14-092` recibio un reroll puntual para bajar drift de interior domestico.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 23:
+
+- Default cards materializadas en repo:
+  - `SP14-001..096`
+- Coverage real verificado:
+  - `pack_14 defaultImages=96/123`
+  - `pack_14 missingDefaultImages=27`
+- Hallazgo operativo:
+  - estrategia secuencial siguio estable para `SP14-093..096`.
+  - los cuatro comandos agotaron ventana del CLI, pero cada preset termino materializado via worker en background y checkpoint real.
+  - `SP14-093` y `SP14-095` quedaron mas fuertes.
+  - `SP14-094` y `SP14-096` quedaron mas escenicos/archivo que ideal, pero operativos.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 24:
+
+- Default cards materializadas en repo:
+  - `SP14-001..100`
+- Coverage real verificado:
+  - `pack_14 defaultImages=100/123`
+  - `pack_14 missingDefaultImages=23`
+- Hallazgo operativo:
+  - estrategia secuencial siguio estable para `SP14-097..100`, pero los cuatro comandos agotaron otra vez la ventana del CLI.
+  - `SP14-098` necesito dos reruns y refuerzo fuerte anti-convergencia para salir del motivo serpentino de `SP14-097`.
+  - `SP14-100` recibio reroll puntual con refuerzo anti-invernadero, pero aun quedo mas scene-heavy de lo ideal; la card sigue usable.
+  - `SP14-097` y `SP14-098` quedaron fuertes.
+  - `SP14-099` quedo literal con linterna central, pero clara y operativa.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 25:
+
+- Default cards materializadas en repo:
+  - `SP14-001..104`
+- Coverage real verificado:
+  - `pack_14 defaultImages=104/123`
+  - `pack_14 missingDefaultImages=19`
+- Hallazgo operativo:
+  - `SP14-101` fue primer preset de esta frente que cerro completo dentro del CLI, sin timeout.
+  - `SP14-102`, `SP14-103`, y `SP14-104` volvieron a agotar ventana del CLI, pero terminaron materializadas via worker en background y checkpoint real.
+  - `SP14-101` quedo fuerte.
+  - `SP14-102` cayo a escena/estacion mas de lo ideal.
+  - `SP14-103` quedo demasiado hall/ritual-space.
+  - `SP14-104` quedo bastante mesa/estudio astronomico.
+  - las tres siguen usables, pero quedan como candidatas de pulido fino si luego hacemos pasada de cards demasiado literales.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 26:
+
+- Default cards materializadas en repo:
+  - `SP14-001..108`
+- Coverage real verificado:
+  - `pack_14 defaultImages=108/123`
+  - `pack_14 missingDefaultImages=15`
+- Hallazgo operativo:
+  - `SP14-105` volvio a agotar timeout, pero cerro con checkpoint real poco despues.
+  - `SP14-106` quedo limpio, aunque muy monumento/observatorio.
+  - `SP14-107` quedo muy objeto central con velas negras, pero dentro del frente ritual noir.
+  - `SP14-108` primero convergio demasiado con `SP14-107`; necesito refuerzo anti-convergencia en [SP14-108.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-108.yaml) y rerun.
+  - reroll de `SP14-108` la separo mejor, aunque sigue bastante invernadero/procesion literal.
+  - `SP14-105`, `SP14-106`, `SP14-107`, y `SP14-108` siguen usables; `105`, `106`, y `108` quedan en lista de posible pulido fino por scene drift alto.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras ola 27 parcial:
+
+- Default cards materializadas en repo:
+  - `SP14-001..109`
+  - `SP14-111..112`
+- Coverage real verificado:
+  - `pack_14 defaultImages=111/123`
+  - `pack_14 missingDefaultImages=12`
+- Hallazgo operativo:
+  - `SP14-109` salio primero demasiado dormitorio/domestico; reroll tras refuerzo anti-bedroom en [SP14-109.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-109.yaml) la dejo usable.
+  - `SP14-110` quedo pendiente real: varios jobs `needs_review`, sin asset ni checkpoint materializado.
+  - `SP14-111` quedo usable, aunque algo drape-studio literal.
+  - `SP14-112` quedo usable, aunque bastante puente/salon velado y scene-heavy.
+  - suffix global de denoise siguio ayudando a bajar ruido y microdetalle sucio.
+
+Actualizacion tras destrabe de `SP14-110`:
+
+- Default cards materializadas en repo:
+  - `SP14-001..112`
+- Coverage real verificado:
+  - `pack_14 defaultImages=112/123`
+  - `pack_14 missingDefaultImages=11`
+- Hallazgo operativo:
+  - `SP14-110` cerro al sanear el canal de nombre usado por `scripts/generate-style-defaults.ts`.
+  - el preset visible sigue siendo `Oath Knife Binding`, pero el prompt de imagegen ya no manda ese label crudo; uso alias seguro `Oath Seal Binding` solo para `TARGET STYLE` y `recognizable as`.
+  - evidencia real: job `2d7fe0bf-5430-416e-8a91-e995da545ea2` completo con `TARGET STYLE: OATH SEAL BINDING`, `.webp` materializado y checkpoint nuevo.
+
+Actualizacion tras ola 28 parcial:
+
+- Default cards materializadas en repo:
+  - `SP14-001..113`
+- Coverage real verificado:
+  - `pack_14 defaultImages=113/123`
+  - `pack_14 missingDefaultImages=10`
+- Hallazgo operativo:
+  - `SP14-113` cerro real: `.webp` en repo + checkpoint nuevo.
+  - `SP14-114` y `SP14-115` no cerraron: ambos jobs quedaron congelados en `running` sin actualizar y hubo que cancelarlos.
+  - `SP14-116` termino materializada en background despues de esa ronda; la deuda real restante paso a `SP14-114`, `SP14-115`, y `SP14-117..123`.
+  - nuevo hallazgo de pipeline: `SP14-114` y `SP14-117` repiten patron de job `running` sin transcript util, sin asset en repo, y con `websocket receive error ... os error 10054` en `.studio/logs/app-server.log`; no es un `needs_review` clasico sino un cuelgue de transporte.
+
+Actualizacion tras cierre total de `pack_14`:
+
+- Default cards materializadas en repo:
+  - `SP14-001..123`
+- Coverage real verificado:
+  - `pack_14 defaultImages=123/123`
+  - `pack_14 missingDefaultImages=0`
+- Hallazgo operativo:
+  - reiniciar `local-server` con el fix nuevo de timeouts/recovery destrabo el frente.
+  - `SP14-114`, `SP14-115`, `SP14-117`, `SP14-119`, `SP14-120`, `SP14-121`, `SP14-122`, y `SP14-123` cerraron bien en secuencial pura.
+  - `SP14-118` cerro dentro de una microtanda, pero `SP14-119` y `SP14-120` dejaron evidencia util del fix:
+    - job `7f810784-fb80-43e5-8f9c-4bf5911e81dd` termino `failed` con `Timed out waiting for Codex notification`.
+    - job `1865c585-0ab9-4d8c-8eae-0a210181dbea` termino `failed` con `Codex app-server socket closed`.
+  - conclusion operativa: microbatch todavia puede degradar transporte; secuencial `1x1` si fue estable para cierre fino.
+
+Actualizacion tras ola 13 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..108`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=108/137`
+  - `pack_15 missingDefaultImages=29`
+- Hallazgo operativo:
+  - `2x2` sigue acelerando el frente, pero no todos los presets solarpunk responden en la misma ventana de shell.
+  - en el primer intento de la ola, `SP15-103`, `SP15-106`, `SP15-107`, y `SP15-108` agotaron timeout del wrapper; confirmacion material mostro que solo `SP15-105` habia quedado real.
+  - rerun con timeout largo y caida selectiva a `1x1` destrabo los lentos sin tocar app-server ni worker.
+  - conclusion parcial del frente `pack_15`: `2x2` sigue siendo estrategia base, pero cada microtanda necesita verificacion dura de `.webp` + manifest antes de contarla como cerrada.
+
+Actualizacion tras ola 14 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..116`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=116/137`
+  - `pack_15 missingDefaultImages=21`
+- Hallazgo operativo:
+  - `SP15-109..112` cerraron real con verificacion `.webp` + manifest; `SP15-110` necesito fallback `1x1` por timeout de shell.
+  - `SP15-113..116` cerraron con una sola invocacion batch: `--preset='SP15-113|SP15-114|SP15-115|SP15-116' --parallel=2`.
+  - resultado batch: `generated=4 attempted=4 failed=0`; este camino reduce relanzamientos, salida de terminal y tokens sin bajar control de calidad.
+  - nueva estrategia base: batch interno de 4 presets con `--parallel=2`, verificacion agregada de `.webp` + manifest, y fallback `1x1` solo para IDs realmente faltantes.
+
+Actualizacion tras ola 15 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..120`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=120/137`
+  - `pack_15 missingDefaultImages=17`
+- Hallazgo operativo:
+  - `SP15-117..120` cerraron con una sola invocacion batch: `--preset='SP15-117|SP15-118|SP15-119|SP15-120' --parallel=2`.
+  - resultado batch: `generated=4 attempted=4 failed=0`.
+  - segunda tanda consecutiva donde el batch interno de 4 presets mantuvo control de calidad y redujo overhead de comandos.
+
+Actualizacion tras ola 16 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..124`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=124/137`
+  - `pack_15 missingDefaultImages=13`
+- Hallazgo operativo:
+  - `SP15-121..124` cerraron con una sola invocacion batch: `--preset='SP15-121|SP15-122|SP15-123|SP15-124' --parallel=2`.
+  - resultado batch: `generated=4 attempted=4 failed=0`.
+  - tercera tanda consecutiva donde batch interno de 4 presets redujo overhead sin perder verificacion material.
+
+Actualizacion tras ola 17 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..128`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=128/137`
+  - `pack_15 missingDefaultImages=9`
+- Hallazgo operativo:
+  - `SP15-125..128` cerraron con una sola invocacion batch: `--preset='SP15-125|SP15-126|SP15-127|SP15-128' --parallel=2`.
+  - resultado batch: `generated=4 attempted=4 failed=0`.
+  - cuarta tanda consecutiva estable con batch interno de 4 presets.
+
+Actualizacion tras ola 18 de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..132`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=132/137`
+  - `pack_15 missingDefaultImages=5`
+- Hallazgo operativo:
+  - `SP15-129..132` cerraron con una sola invocacion batch: `--preset='SP15-129|SP15-130|SP15-131|SP15-132' --parallel=2`.
+  - resultado batch: `generated=4 attempted=4 failed=0`.
+  - quinta tanda consecutiva estable con batch interno de 4 presets.
+
+Actualizacion tras cierre total de `pack_15`:
+
+- Default cards materializadas en repo:
+  - `SP15-001..137`
+- Coverage real esperada antes de validate formal:
+  - `pack_15 defaultImages=137/137`
+  - `pack_15 missingDefaultImages=0`
+- Hallazgo operativo:
+  - `SP15-133..137` cerraron con una sola invocacion batch: `--preset='SP15-133|SP15-134|SP15-135|SP15-136|SP15-137' --parallel=2`.
+  - resultado batch: `generated=5 attempted=5 failed=0`.
+  - `pack_15` queda visualmente completo; ya no quedan filas stale/missing de este pack en la tabla activa.
+
+Actualizacion semantica 2026-06-09 sobre `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-036`
+  - `SP08-037`
+  - `SP08-045`
+  - `SP08-050`
+- Estado operativo:
+  - no se agregan filas nuevas porque esos IDs ya estaban marcados para regeneracion.
+  - estas 4 cards conviene priorizarlas dentro del frente `pack_08` porque cambiaron campos con impacto visual real:
+    `aesthetic`, `form_and_line`, `key_features`, `creative_brief`, y en `SP08-050` tambien `negativePrompt`.
+  - `SP08-050` ademas requirio un suavizado posterior de anchors IP/disenador para evitar `needs_review` repetido en la cola visual.
+
+Actualizacion visual 2026-06-09 sobre `pack_08`:
+
+- Default cards materializadas en repo:
+  - `SP08-036`
+  - `SP08-037`
+  - `SP08-045`
+  - `SP08-050`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_08.json` para esos 4 IDs.
+- Limpieza de backlog:
+  - se removieron sus filas activas de la tabla `pack_08`, por lo que tambien dejan de figurar en `lib/staleStyleDefaultImages.generated.ts` tras refrescar runtime.
+- Hallazgo operativo:
+  - batch `2x2` funciono bien para `SP08-036`, `SP08-037` y `SP08-045`.
+  - `SP08-050` cayo varias veces en `needs_review`; se destrabo al suavizar anchors IP/disenador y rerun `1x1`.
+  - en la siguiente miniola, `SP08-049` repitio el mismo patron de `needs_review`; se suavizo desde `mermaid/siren body` hacia `pelagic fantasy couture` antes del rerun aislado.
+  - luego se hizo refactor mas fuerte: rename interno a `Pelagic Tail Couture` y limpieza de cues de cabello/cuerpo, para que la cola visual no arranque desde un sujeto humano implicito.
+  - aun con ese rename y rerun `1x1`, `SP08-049` siguio devolviendo `needs_review`; queda como residual aislado del pack.
+  - una tanda posterior `SP08-046|SP08-047|SP08-051|SP08-056` cayo completa (`0/4`) con mezcla de `needs_review`, timeout y `socket closed`; antes de relanzar, se hizo suavizado semantico adicional de esos cuatro manifests.
+  - luego hubo un refuerzo extra sobre materiales: `SP08-051` paso a `High-Gloss Polymer` y `SP08-056` a `Liquid Satin Drape`, para quitar lectura fetish/slip-dress demasiado literal antes de una proxima cola.
+  - tras ese refuerzo, `SP08-051|SP08-056` dejaron de caer en `needs_review` y pasaron a fallar por runtime puro (`Timed out waiting for Codex notification` / `Codex app-server socket closed`). `SP08-051` tambien fallo igual en rerun `1x1`, sin materializacion en background.
+  - una microola posterior `SP08-052|SP08-053|SP08-054|SP08-055` tambien quedo sin materializacion real; el wrapper agoto ventana y la evidencia de `.webp` + manifest confirmo que los 4 seguian viejos. Fallos visibles del batch: `SP08-052` por `Timed out waiting for Codex notification` y `SP08-053` por `Codex app-server socket closed`.
+  - se agrego selector operativo `--retry-failures --failure-limit=<n>` en `scripts/generate-style-defaults.ts` para relanzar solo residuales reales sin rearmar listas manuales.
+  - tambien se endurecio runtime en repo para invalidar hilos persistidos ante `Timed out waiting for Codex notification` y `Codex app-server socket closed`, y se agrego `--session-suffix=<tag>` para abrir miniolas con `SESSION:` fresco.
+  - prueba live posterior: `--retry-failures --failure-limit=2 --parallel=2 --session-suffix=retry_clean_a` siguio en `0/2` sobre `SP08-053|SP08-056`.
+  - evidencia extra: el backend vivo en `http://127.0.0.1:17223` siguio actualizando la clave persistida `fashion_costume` en `D:\AI-Studio-Library\.studio\state\imagegen-session-registry.json`, sin registrar `fashion_costume_retry_clean_a`; queda indicado que la instancia local activa no habia recargado todavia el hardening nuevo del repo.
+
+Actualizacion UI 2026-06-09 sobre cards visibles:
+
+- Hallazgo raiz:
+  - `components/recipes/StylesRecipe.tsx` ocultaba por completo la miniatura cuando `defaultImageStale=true`.
+  - `lib/recipeAssetCatalog.ts` ademas devolvia `undefined` para cualquier `default` stale, por lo que la grilla caia al mismo `category base` repetido aunque el `.webp` real existiera en `assets/recipes/styles/defaults/`.
+- Fix aplicado:
+  - la UI ahora sigue renderizando el `defaultImage` stale con badge `Stale` y affordance de regeneracion.
+  - `resolveStyleDefaultImage()` vuelve a exponer el asset real aunque figure stale; el estado stale queda solo como marca visual, no como bloqueo de render.
+- Verificacion live en `http://localhost:17222/#recipe-styles`:
+  - barrido `pack_01..pack_16` sobre cards visibles iniciales.
+  - resultado: `0` cards visibles usando `category-bases/`, `0` cards visibles sin `<img>`, todas usando `defaults/`.
+  - packs `01..13` y `16` quedaron visibles con badge `Stale`; `pack_14` y `pack_15` ya muestran defaults reales sin badge stale en el tramo visible.
+- Riesgo residual:
+  - esta verificacion cubre la grilla visible inicial por pack, no el universo completo de presets expandido.
+  - el frente separado de backend local sigue inestable cuando `http://localhost:17223` devuelve HTML/no JSON; no rompe esta recuperacion de cards, pero conviene sanearlo antes de la siguiente ola fuerte de regeneracion.
+
+Actualizacion semantica 2026-06-09 sobre `pack_08` residual visual:
+
+- Precision pass aplicado a:
+  - `SP08-046`
+  - `SP08-047`
+  - `SP08-049`
+  - `SP08-051`
+  - `SP08-052`
+  - `SP08-053`
+  - `SP08-054`
+  - `SP08-055`
+  - `SP08-056`
+- Motivo:
+  - eran los presets con mas mezcla restante de body-first wording, escena implicita o brief redundante dentro del bloque que siguio fallando por `needs_review` y runtime.
+- Estado operativo:
+  - no se agregan filas nuevas: los IDs ya estaban en frente visual activo.
+  - antes de una nueva cola de regeneracion conviene usar esta miniola como base semantica estable y relanzar solo una vez saneado el backend local que esta respondiendo HTML/no JSON en `:17223`.
+  - validacion semantica posterior:
+    - `bun run styles:validate -- --pack=pack_08` -> verde.
+    - `bun run styles:quality:audit` -> verde.
+    - `bun run styles:runtime` + `bun run styles:runtime:check` -> verdes tras refrescar runtime packs de `pack_08`.
+
+Actualizacion runtime 2026-06-09 sobre backend local:
+
+- Hallazgo raiz:
+  - `localhost:17223` podia caer sobre un listener IPv6 ajeno al backend real y devolver HTML de Vite.
+  - `127.0.0.1:17223` seguia devolviendo el backend correcto.
+- Fix en repo:
+  - runtime web y scripts locales pasan a normalizar `localhost` -> `127.0.0.1` para el API base.
+  - `init` tambien deja `VITE_STUDIO_API_BASE` nuevo en `127.0.0.1`.
+- Impacto:
+  - este saneamiento no regenera cards por si solo, pero elimina una fuente real de falsos `backend unavailable` y de parseo HTML/JSON antes de la siguiente ola visual de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual fino `pack_07` / `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP07-044`
+  - `SP07-049`
+  - `SP08-041`
+  - `SP08-073`
+- Motivo:
+  - seguian reteniendo alguno de estos locks finos:
+    promenade/procession axis demasiado fijo,
+    sport-field routing demasiado literal,
+    host-body obligatorio para augmentacion,
+    o piel desnuda demasiado central para pigment couture.
+- Estado operativo:
+  - no se agregan filas nuevas porque los cuatro IDs ya estaban dentro del frente visual activo de ambos packs;
+  - estos cuatro defaults deben tratarse otra vez como obsoletos por cambio semantico, aunque el archivo `.webp` siga existiendo en coverage.
+
+Actualizacion semantica 2026-06-12 sobre residual material `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-055`
+  - `SP07-058`
+  - `SP07-068`
+  - `SP07-071`
+- Motivo:
+  - seguian reteniendo alguno de estos locks finos:
+    candy-kingdom o dessert-scene demasiado implicita,
+    spire apex demasiado obligatorio,
+    floor/interior craft demasiado narrativo,
+    o forest-floor / fairy-cluster demasiado fijo para la morfologia fungica.
+- Estado operativo:
+  - no se agregan filas nuevas porque los cuatro IDs ya estaban dentro del frente visual activo de `pack_07`;
+  - sus defaults actuales deben tratarse otra vez como obsoletos por cambio semantico.
+
+Actualizacion semantica 2026-06-12 sobre residual espacial temprano `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-004`
+  - `SP07-008`
+  - `SP07-034`
+  - `SP07-038`
+- Motivo:
+  - seguian reteniendo alguno de estos locks finos:
+    domestic-room demasiado fijo,
+    zen-room o temple-space demasiado implicito,
+    bureaucracy-hall demasiado literal,
+    o burial-corridor/catacomb passage demasiado cerrado.
+- Estado operativo:
+  - no se agregan filas nuevas porque los cuatro IDs ya estaban dentro del frente visual activo de `pack_07`;
+  - sus defaults actuales deben tratarse otra vez como obsoletos por cambio semantico.
+
+Actualizacion semantica 2026-06-12 sobre residual fino adicional `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-040`
+  - `SP07-043`
+  - `SP07-060`
+  - `SP07-073`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    tree-support o shelter demasiado fijo,
+    zen-garden/templo contemplativo demasiado literal,
+    haunted-house/Halloween scene demasiado frontal,
+    o ant-farm/insect-cutaway demasiado cerrado.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07`.
+
+Actualizacion semantica 2026-06-12 sobre residual estructural adicional `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-057`
+  - `SP07-063`
+  - `SP07-064`
+  - `SP07-069`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    steam-city / transit-aerial demasiado frontal,
+    cementerio-obelisco / cripta demasiado literal,
+    sky-terminal / floating-city demasiado fija,
+    o playform inflable demasiado iconica.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07`.
+
+Actualizacion semantica 2026-06-12 sobre residual iconico adicional `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-059`
+  - `SP07-061`
+  - `SP07-062`
+  - `SP07-065`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    hobbit-home o madriguera pastoral demasiado frontal,
+    ice-palace / catedral helada demasiado literal,
+    tree-village tribal demasiado fijo,
+    o city-diorama / maqueta urbana demasiado cerrada.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07`.
+
+Actualizacion semantica 2026-06-12 sobre residual escenico/IP `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-004`
+  - `SP08-018`
+  - `SP08-031`
+  - `SP08-043`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    festival desierto/crowd demasiado fijo,
+    idol-stage/group choreography demasiado frontal,
+    speakeasy-party con props demasiado obligatoria,
+    o royal space-opera demasiado pegada a IP concreta.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual wearable adicional `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-009`
+  - `SP08-023`
+  - `SP08-058`
+  - `SP08-061`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    inventor/aviator persona demasiado fija,
+    lolita-girl / doll sweetness demasiado frontal,
+    disco-dress bodycon / countdown-party demasiado obligatoria,
+    o bridal-veil / chapel tableau demasiado literal.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual comercial/identitario `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-002`
+  - `SP08-007`
+  - `SP08-013`
+  - `SP08-019`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    branding / queue / resale-culture demasiado frontal,
+    goth character / crypt-body demasiado cerrado,
+    named elven realm / princess-body demasiado fijo,
+    u office-headshot / executive persona demasiado obligatoria.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual editorial/persona `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-003`
+  - `SP08-012`
+  - `SP08-017`
+  - `SP08-024`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    showroom/zen-room quiet luxury demasiado sugerido,
+    Tudor/Holbein portrait logic demasiado frontal,
+    founder/uniform startup persona demasiado nombrada,
+    o greaser-pinup/tattoo rebel demasiado obligatoria.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual staging/material `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-001`
+  - `SP08-005`
+  - `SP08-022`
+  - `SP08-028`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    runway/fashion-week apex demasiado frontal,
+    activewear-body / gym pose demasiado fuerte,
+    slacker-bedroom / Seattle grunge demasiado sugerido,
+    o basket-bread-cottage prop kit demasiado fijo.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual rol/franquicia `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-006`
+  - `SP08-014`
+  - `SP08-032`
+  - `SP08-078`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    firma techwear/autoral demasiado frontal,
+    soldier persona / combate demasiado directo,
+    widow portrait ritual demasiado fijo,
+    o holograma space-opera demasiado pegado a franquicia.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre residual lore social `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-008`
+  - `SP08-010`
+  - `SP08-025`
+  - `SP08-026`
+- Motivo operativo:
+  - seguian reteniendo alguno de estos locks finos:
+    punk boutique / mohawk-body demasiado frontal,
+    prep wealth / country-club tableau demasiado sugerido,
+    hippie commune / gathering demasiado fija,
+    o biker outlaw persona demasiado obligatoria.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`.
+
+Actualizacion semantica 2026-06-12 sobre cleanup de brief formulaico `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-004`
+  - `SP07-008`
+  - `SP07-038`
+  - `SP07-040`
+- Motivo operativo:
+  - los cuatro seguian cargando el mismo boilerplate residual `Apply this spatial/worldbuilding grammar over any input`
+    al final del `creative_brief`, aun despues de la limpieza semantica anterior.
+- Efecto:
+  - esas 4 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07`.
+
+Actualizacion semantica 2026-06-12 sobre cierre de boilerplate residual `pack_07`:
+
+- Precision pass aplicado a:
+  - `SP07-043`
+  - `SP07-055`
+  - `SP07-058`
+  - `SP07-060`
+  - `SP07-061`
+  - `SP07-062`
+  - `SP07-068`
+  - `SP07-071`
+  - `SP07-073`
+- Motivo operativo:
+  - estos nueve presets ya tenian anchors refinados, pero seguian cargando la coletilla formulaica
+    `Apply this spatial/worldbuilding grammar over any input` dentro de `creative_brief`.
+  - se reemplazo por cierres directos, especificos por preset, manteniendo materialidad, escala, ritmo y atmosfera sin escena obligatoria.
+- Efecto:
+  - esas 9 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07`.
+
+Actualizacion semantica 2026-06-12 sobre subject-lock en nombres visibles `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP08-017`
+  - `SP08-018`
+- Motivo operativo:
+  - `Tech CEO` y `K-Pop Idol` ya tenian briefs mas portables, pero el nombre visible seguia forzando persona/sujeto.
+  - se renombraron a `Tech-Industry Uniform` y `Pop-Performance Tailoring`.
+- Efecto:
+  - esas 2 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_08`;
+  - `manifest-pack_08.json` puede conservar nombres viejos hasta que se regenere cada default card.
+
+Actualizacion semantica 2026-06-12 sobre cierre ampliado de boilerplate residual `pack_07` / `pack_08`:
+
+- Precision pass aplicado a:
+  - `SP07-034`
+  - `SP07-044`
+  - `SP07-049`
+  - `SP07-052`
+  - `SP07-059`
+  - `SP07-065`
+  - `SP07-067`
+  - `SP07-069`
+  - `SP07-077`
+  - `SP07-078`
+  - `SP07-080`
+  - `SP08-073`
+- Motivo operativo:
+  - quedaban variantes de boilerplate partidas por saltos de linea o por la formula `fashion/costume grammar`.
+  - se reemplazaron por cierres especificos por preset, sin escena, cuerpo, edificio, set o personaje obligatorio.
+- Efecto:
+  - esas 12 cards tambien quedan re-priorizadas para regeneracion visual dentro de `pack_07` / `pack_08`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_ab
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-043|SP08-046" --parallel=2 --session-suffix=stale_p08_ab --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-043.webp` (`452440` bytes)
+  - `assets/recipes/styles/defaults/SP08-046.webp` (`246536` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-043` / `Space Opera Royal` and `SP08-046` / `Mech Pilot Suit`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=63/80 staleDefaultImages=17 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_ac
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-047|SP08-049" --parallel=2 --session-suffix=stale_p08_ac --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-047.webp` (`163932` bytes)
+  - `assets/recipes/styles/defaults/SP08-049.webp` (`311448` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-047` / `Vampire Lord` and `SP08-049` / `Pelagic Tail Couture`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=65/80 staleDefaultImages=15 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_ad
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-051|SP08-052" --parallel=2 --session-suffix=stale_p08_ad --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-051.webp` (`173104` bytes)
+  - `assets/recipes/styles/defaults/SP08-052.webp` (`401014` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-051` / `High-Gloss Polymer` and `SP08-052` / `Denim on Denim`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=67/80 staleDefaultImages=13 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_ae
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-053|SP08-054" --parallel=2 --session-suffix=stale_p08_ae --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-053.webp` (`368324` bytes)
+  - `assets/recipes/styles/defaults/SP08-054.webp` (`597278` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-053` / `Fur Coat` and `SP08-054` / `Chainmail`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=69/80 staleDefaultImages=11 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_af
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-055|SP08-056" --parallel=2 --session-suffix=stale_p08_af --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-055.webp` (`267368` bytes)
+  - `assets/recipes/styles/defaults/SP08-056.webp` (`204266` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-055` / `Knitted Wool` and `SP08-056` / `Liquid Satin Drape`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=71/80 staleDefaultImages=9 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-12 - `pack_08` ola stale_p08_ag
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-058|SP08-059" --parallel=2 --session-suffix=stale_p08_ag --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-058.webp` (`473738` bytes)
+  - `assets/recipes/styles/defaults/SP08-059.webp` (`229032` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-058` / `Sequins` and `SP08-059` / `Transparent Plastic`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=73/80 staleDefaultImages=7 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_08` ola stale_p08_ah
+
+- Command:
+  - first attempt hit `ConnectionRefused` on `http://127.0.0.1:17223/api/health`; local server was restarted with `bun run dev:server`.
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-060|SP08-061" --parallel=2 --session-suffix=stale_p08_ah --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-060.webp` (`218104` bytes)
+  - `assets/recipes/styles/defaults/SP08-061.webp` (`455822` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-060` / `Velvet` and `SP08-061` / `Lace`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=75/80 staleDefaultImages=5 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_08` ola stale_p08_ai
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-073|SP08-075" --parallel=2 --session-suffix=stale_p08_ai --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-073.webp` (`347180` bytes)
+  - `assets/recipes/styles/defaults/SP08-075.webp` (`510388` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-073` / `Body Paint` and `SP08-075` / `Gold Leaf`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=77/80 staleDefaultImages=3 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_08` ola stale_p08_aj
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-076|SP08-079" --parallel=2 --session-suffix=stale_p08_aj --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-076.webp` (`374976` bytes)
+  - `assets/recipes/styles/defaults/SP08-079.webp` (`259670` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-076` / `Slime/Goo` and `SP08-079` / `Invisibility Cloak`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=79/80 staleDefaultImages=1 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_08` ola stale_p08_ak
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_08 --preset=SP08-080 --parallel=1 --session-suffix=stale_p08_ak --force`
+- Result:
+  - `generated=1 attempted=1 skipped=79 failed=0 packs=pack_08`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP08-080.webp` (`147198` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_08.json` now refreshes `SP08-080` / `Shadow Form`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_a
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-001|SP09-002" --parallel=2 --session-suffix=stale_p09_a --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-001.webp` (`278854` bytes)
+  - `assets/recipes/styles/defaults/SP09-002.webp` (`222168` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-001` / `Oak Wood (Raw)` and `SP09-002` / `Mahogany (Polished)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=2/80 staleDefaultImages=78 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_b
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-003|SP09-004" --parallel=2 --session-suffix=stale_p09_b --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-003.webp` (`281906` bytes)
+  - `assets/recipes/styles/defaults/SP09-004.webp` (`297452` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-003` / `Birch Bark` and `SP09-004` / `Granite (Polished)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=4/80 staleDefaultImages=76 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_c
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-005|SP09-006" --parallel=2 --session-suffix=stale_p09_c --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-005.webp` (`482830` bytes)
+  - `assets/recipes/styles/defaults/SP09-006.webp` (`183120` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-005` / `Sandstone (Rough)` and `SP09-006` / `Marble (Carrara)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=6/80 staleDefaultImages=74 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_d
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-007|SP09-008" --parallel=2 --session-suffix=stale_p09_d --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-007.webp` (`259178` bytes)
+  - `assets/recipes/styles/defaults/SP09-008.webp` (`376106` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-007` / `Slate (Split)` and `SP09-008` / `Mossy Rock`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=8/80 staleDefaultImages=72 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_e
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-009|SP09-010" --parallel=2 --session-suffix=stale_p09_e --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-009.webp` (`174698` bytes)
+  - `assets/recipes/styles/defaults/SP09-010.webp` (`247228` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-009` / `River Stones` and `SP09-010` / `Obsidian`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=10/80 staleDefaultImages=70 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_f
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-011|SP09-012" --parallel=2 --session-suffix=stale_p09_f --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-011.webp` (`338286` bytes)
+  - `assets/recipes/styles/defaults/SP09-012.webp` (`270324` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-011` / `Wolf Fur` and `SP09-012` / `Snake Scales`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=12/80 staleDefaultImages=68 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_g
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-013|SP09-014" --parallel=2 --session-suffix=stale_p09_g --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-013.webp` (`312112` bytes)
+  - `assets/recipes/styles/defaults/SP09-014.webp` (`308680` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-013` / `Bird Feathers` and `SP09-014` / `Coral Reef`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=14/80 staleDefaultImages=66 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_h
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-015|SP09-016" --parallel=2 --session-suffix=stale_p09_h --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-015.webp` (`297664` bytes)
+  - `assets/recipes/styles/defaults/SP09-016.webp` (`434778` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-015` / `Honeycomb Wax` and `SP09-016` / `Glacier Ice`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=16/80 staleDefaultImages=64 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_i
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-017|SP09-018" --parallel=2 --session-suffix=stale_p09_i --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-017.webp` (`205340` bytes)
+  - `assets/recipes/styles/defaults/SP09-018.webp` (`244374` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-017` / `Brushed Aluminum` and `SP09-018` / `Rusty Iron`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=18/80 staleDefaultImages=62 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_j
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-019|SP09-020" --parallel=2 --session-suffix=stale_p09_j --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-019.webp` (`481600` bytes)
+  - `assets/recipes/styles/defaults/SP09-020.webp` (`346650` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-019` / `Gold Leaf` and `SP09-020` / `Copper Patina`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=20/80 staleDefaultImages=60 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_k
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-021|SP09-022" --parallel=2 --session-suffix=stale_p09_k --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-021.webp` (`323232` bytes)
+  - `assets/recipes/styles/defaults/SP09-022.webp` (`282572` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-021` / `Carbon Fiber (Forged)` and `SP09-022` / `Concrete (Raw)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=22/80 staleDefaultImages=58 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_l
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-023|SP09-024" --parallel=2 --session-suffix=stale_p09_l --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-023.webp` (`503760` bytes)
+  - `assets/recipes/styles/defaults/SP09-024.webp` (`328926` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-023` / `Brick Wall (Aged)` and `SP09-024` / `Asphalt (Wet)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=24/80 staleDefaultImages=56 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_m
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-025|SP09-026" --parallel=2 --session-suffix=stale_p09_m --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-025.webp` (`304768` bytes)
+  - `assets/recipes/styles/defaults/SP09-026.webp` (`144330` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-025` / `Porcelain (Cracked)` and `SP09-026` / `Plastic (Injection Molded)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=26/80 staleDefaultImages=54 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_n
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-027|SP09-028" --parallel=2 --session-suffix=stale_p09_n --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-027.webp` (`310232` bytes)
+  - `assets/recipes/styles/defaults/SP09-028.webp` (`206872` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-027` / `Rubber (Tire)` and `SP09-028` / `Glass (Shattered)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=28/80 staleDefaultImages=52 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_o
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-029|SP09-030" --parallel=2 --session-suffix=stale_p09_o --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-029.webp` (`151338` bytes)
+  - `assets/recipes/styles/defaults/SP09-030.webp` (`386408` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-029` / `Velvet Fabric` and `SP09-030` / `Burlap Sack`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=30/80 staleDefaultImages=50 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_p
+
+- Commands:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-031|SP09-032" --parallel=2 --session-suffix=stale_p09_p --force`
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-031" --parallel=1 --session-suffix=stale_p09_p_repair --force`
+- Result:
+  - both generation commands hit the local tool timeout, but the files and manifest entries materialized and were verified after the timeout.
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-031.webp` (`200262` bytes)
+  - `assets/recipes/styles/defaults/SP09-032.webp` (`296490` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-031` / `Latex (Shiny)` and `SP09-032` / `Cardboard`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=32/80 staleDefaultImages=48 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_q
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-033|SP09-034" --parallel=2 --session-suffix=stale_p09_q --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-033.webp` (`391794` bytes)
+  - `assets/recipes/styles/defaults/SP09-034.webp` (`336362` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-033` / `Peeling Paint` and `SP09-034` / `Mold & Mildew`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=34/80 staleDefaultImages=46 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_r
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-035|SP09-036" --parallel=2 --session-suffix=stale_p09_r --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-035.webp` (`202784` bytes)
+  - `assets/recipes/styles/defaults/SP09-036.webp` (`418596` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-035` / `Burnt Wood (Shou Sugi Ban)` and `SP09-036` / `Water Damage`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=36/80 staleDefaultImages=44 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_s
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-037|SP09-038" --parallel=2 --session-suffix=stale_p09_s --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-037.webp` (`286066` bytes)
+  - `assets/recipes/styles/defaults/SP09-038.webp` (`254738` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-037` / `Scratched Metal` and `SP09-038` / `Dusty Surface`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=38/80 staleDefaultImages=42 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_t
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-039|SP09-040" --parallel=2 --session-suffix=stale_p09_t --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-039.webp` (`364468` bytes)
+  - `assets/recipes/styles/defaults/SP09-040.webp` (`411048` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-039` / `Frozen/Frosted` and `SP09-040` / `Oil Stains`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=40/80 staleDefaultImages=40 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_u
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-041|SP09-042" --parallel=2 --session-suffix=stale_p09_u --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-041.webp` (`415306` bytes)
+  - `assets/recipes/styles/defaults/SP09-042.webp` (`435062` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-041` / `Sandpaper` and `SP09-042` / `Bubble Wrap`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=42/80 staleDefaultImages=38 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_v
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-043|SP09-044" --parallel=2 --session-suffix=stale_p09_v --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-043.webp` (`285788` bytes)
+  - `assets/recipes/styles/defaults/SP09-044.webp` (`199324` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-043` / `Slime/Goo` and `SP09-044` / `Sponge (Sea)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=44/80 staleDefaultImages=36 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_w
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-045|SP09-046" --parallel=2 --session-suffix=stale_p09_w --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-045.webp` (`312142` bytes)
+  - `assets/recipes/styles/defaults/SP09-046.webp` (`296000` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-045` / `Felt Fabric` and `SP09-046` / `Sequins`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=46/80 staleDefaultImages=34 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_x
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-047|SP09-048" --parallel=2 --session-suffix=stale_p09_x --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-047.webp` (`282766` bytes)
+  - `assets/recipes/styles/defaults/SP09-048.webp` (`314732` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-047` / `Fur (Synthetic)` and `SP09-048` / `Cork Board`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=48/80 staleDefaultImages=32 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_y
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-049|SP09-050" --parallel=2 --session-suffix=stale_p09_y --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-049.webp` (`339704` bytes)
+  - `assets/recipes/styles/defaults/SP09-050.webp` (`535418` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-049` / `Velcro` and `SP09-050` / `Chalk (Dry)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=50/80 staleDefaultImages=30 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_z
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-051|SP09-052" --parallel=2 --session-suffix=stale_p09_z --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-051.webp` (`508350` bytes)
+  - `assets/recipes/styles/defaults/SP09-052.webp` (`308432` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-051` / `Fire & Magma` and `SP09-052` / `Electricity/Lightning`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=52/80 staleDefaultImages=28 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_aa
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-053|SP09-054" --parallel=2 --session-suffix=stale_p09_aa --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-053.webp` (`112766` bytes)
+  - `assets/recipes/styles/defaults/SP09-054.webp` (`370414` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-053` / `Smoke/Fog` and `SP09-054` / `Water Splash`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=54/80 staleDefaultImages=26 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_ab
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-055|SP09-056" --parallel=2 --session-suffix=stale_p09_ab --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-055.webp` (`399012` bytes)
+  - `assets/recipes/styles/defaults/SP09-056.webp` (`300538` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-055` / `Crystal/Gemstone` and `SP09-056` / `Plasma/Energy`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=56/80 staleDefaultImages=24 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_ac
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-057|SP09-058" --parallel=2 --session-suffix=stale_p09_ac --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-057.webp` (`380414` bytes)
+  - `assets/recipes/styles/defaults/SP09-058.webp` (`333932` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-057` / `Oil on Water` and `SP09-058` / `Sparks`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.

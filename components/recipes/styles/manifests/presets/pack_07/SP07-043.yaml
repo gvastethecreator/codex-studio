@@ -12,22 +12,21 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Karesansui de abstracción seca, contemplación material y economía extrema de gesto.
+  aesthetic: Abstracción mineral seca, contemplación material y economía extrema de gesto.
   form_and_line: >-
-    Ondas rastrilladas de alta intención, planos vacíos dominantes y agrupaciones pétreas asimétricas de equilibrio
-    tenso.
+    Ondas rastrilladas de alta intención, planos vacíos dominantes y anclajes minerales asimétricos de equilibrio tenso.
   color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
   lighting_setup: Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.
   material_texture: Arena/grava fina, granito meteorizado, cuarzo triturado y musgo puntual de grano aterciopelado.
   render_quality: Minimalismo hiperlimpio con precisión granular y silencio compositivo disciplinado.
   spatial_distortion: None
   atmosphere: Quietud enfocada, orden ritual y suspensión temporal.
-  key_features: Campos de rastrillado, anclajes pétreos, masas de musgo selectivas y contención perimetral estricta.
+  key_features: Campos de rastrillado, anclajes minerales, masas selectivas de materia viva y contención austera.
   creative_brief: >-
-    El estilo reduce cualquier tema a vacío activo, grava rastrillada y anclajes petreos en tension. Pocos elementos
-    deben hacer mucho trabajo espacial, evitando decoracion zen superficial. Apply this spatial/worldbuilding grammar
-    over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction
-    rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.
+    El estilo reduce cualquier tema a vacío activo, superficie rastrillada y anclajes minerales en tensión. Pocos
+    elementos deben hacer mucho trabajo espacial, evitando jardin zen literal, templo contemplativo o decoracion spa.
+    La regla portable es materia mineral seca, ritmo rastrillado, escala contenida y silencio compositivo; no exige
+    edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - plants
   - water

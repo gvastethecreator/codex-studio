@@ -49,7 +49,7 @@ function normalizeSessionToken(value: string | null) {
     .replace(/^_+|_+$/g, '');
 }
 
-function extractPromptField(prompt: string, field: 'PACK' | 'CATEGORY') {
+function extractPromptField(prompt: string, field: 'PACK' | 'CATEGORY' | 'SESSION') {
   const match = prompt.match(new RegExp(`^${field}:\\s*(.+)$`, 'im'));
   return match?.[1]?.trim() ?? null;
 }
@@ -111,6 +111,8 @@ export function createSessionPool({
   }
 
   function getSessionKey(prompt: string) {
+    const explicitSession = normalizeSessionToken(extractPromptField(prompt, 'SESSION'));
+    if (explicitSession && explicitSession !== 'unknown') return explicitSession;
     const pack = normalizeSessionToken(extractPromptField(prompt, 'PACK'));
     return pack || 'unknown_pack';
   }

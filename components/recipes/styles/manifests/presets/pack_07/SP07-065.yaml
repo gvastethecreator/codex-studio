@@ -12,8 +12,8 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad de maqueta hecha a mano.
-  form_and_line: Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad baja apilada.
+  aesthetic: Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad manual portable.
+  form_and_line: Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad apilada.
   color_palette: >-
     Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency,
     and muted pigment accents
@@ -25,10 +25,9 @@ visualDna:
   key_features: Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.
   creative_brief: >-
     Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina,
-    sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano, no escena urbana obligatoria.
-    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano sin depender de ciudad miniatura,
+    calle de maqueta, vitrina museistica o escena urbana obligatoria. Conserva pliegue, pestanas, fibra visible,
+    escala de maqueta y sombra por capas sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - realistic
 assets:

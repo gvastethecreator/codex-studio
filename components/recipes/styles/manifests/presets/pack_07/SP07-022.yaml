@@ -12,22 +12,23 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Neoclásico institucional de autoridad cívica, orden axial y monumentalidad racional.
+  aesthetic: Neoclasico institucional de autoridad civica, orden axial y monumentalidad racional.
   form_and_line: >-
-    Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría
+    Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetria
     estricta.
-  color_palette: Mármol blanco, caliza clara, piedra fría y bronce dorado con sombras gris azuladas.
-  lighting_setup: Sol lateral que estría columnas, sombras porticadas profundas y acentos nocturnos monumentales.
-  material_texture: Piedra lisa, mármol cincelado, granito pulido, yeso colado y cobre con verdín.
-  render_quality: Monumental clásico de proporción rigurosa y legibilidad institucional permanente.
-  spatial_distortion: Perspectiva axial neutra con jerarquía frontal y escala ceremonial.
-  atmosphere: Seria, estable, cívica y atemporal.
+  color_palette: Marmol blanco, caliza clara, piedra fria y bronce dorado con sombras gris azuladas.
+  lighting_setup: Sol lateral que estria columnas, sombras porticadas profundas y acentos nocturnos monumentales.
+  material_texture: Piedra lisa, marmol cincelado, granito pulido, yeso colado y cobre con verdin.
+  render_quality: Monumental clasico de proporcion rigurosa y legibilidad institucional permanente.
+  spatial_distortion: Perspectiva axial neutra con jerarquia frontal y escala ceremonial.
+  atmosphere: Seria, estable, civica y atemporal.
   key_features: >-
-    Orden columnario, frontón canónico, basamento escalonado, masa cívica y composición
-    perfectamente simétrica.
+    Orden columnario, fronton canonico, basamento escalonado, masa civica y composicion
+    perfectamente simetrica.
   creative_brief: >-
-    Define una gramática neoclásica transferible por proporción, eje y orden tectónico. La autoridad
-    debe emerger de la composición y la masa pétrea, evitando retórica narrativa o escenográfica.
+    Convierte cualquier input en una gramatica neoclasica de eje, proporcion y masa petrea
+    disciplinada. La autoridad debe surgir del orden tectonico y la claridad ceremonial, no de un
+    capitolio, tribunal o fachada especifica.
 avoidRules:
   - modern
   - asymmetry

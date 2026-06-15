@@ -4,8 +4,14 @@ packId: pack_14
 name: Night Meridian State Secret
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, cosmology]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - cosmology
 visualDna:
   aesthetic: Night meridian secrecy with anomaly records, obsessive study, and scholarly noir dread.
   form_and_line: Vertical stack cues, narrow galleries, and rotating index-bridge rhythms.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Obsessive study and quiet dread.
   key_features: Meridian ledgers, index clockwork, sealed prophecy-vault cues.
   creative_brief: Translate the input through night-meridian state secrecy, treating cosmic anomaly as classified evidence without requiring an archive tower.
-avoidRules: [photoreal, playful, neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-094.webp }
+avoidRules:
+  - photoreal
+  - playful
+  - neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-094.webp
 attributes:
   negativePrompt: photoreal, playful, neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic, cosmology],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - cosmology
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

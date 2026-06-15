@@ -4,8 +4,14 @@ packId: pack_15
 name: Pressure Lace Automata
 category: 4. Corepunk — Steampunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, steampunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - steampunk
 visualDna:
   aesthetic: Delicate steampunk automata grammar where lace, porcelain, clock springs, and pneumatic grace create refined mechanical tenderness.
   form_and_line: Lace-like filigree contours, porcelain-smooth curve breaks, exposed spring arcs, and symmetrical pressure-valve ornament.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Cabinet-of-curiosities compression with nested filigree layers and symmetrical mechanical depth.
   atmosphere: Fragile, ornate, haunted, graceful, intimate.
   key_features: Lace valve geometry, porcelain-mechanism contrast, spring-loop halos, pressure dial motifs, and soft steam veils.
-  creative_brief: >-
-    Ornament the input with pressure lace automata: porcelain softness, rose-brass
-    valve filigree, spring-loop halos, cloudy gauges, and steam-veiled hinge
-    seams apply refined pneumatic tenderness without requiring dolls, salons,
-    servants, or literal machines.
-avoidRules: [photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-129.webp }
+  creative_brief: 'Ornament the input with pressure lace automata: porcelain softness, rose-brass valve filigree, spring-loop halos, cloudy gauges, and steam-veiled hinge seams apply refined pneumatic tenderness without requiring dolls, salons, servants, or literal machines.'
+avoidRules:
+  - photoreal
+  - hard-sci-fi
+  - neon-cyber
+  - brutalist-clean
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-129.webp
 attributes:
   negativePrompt: photoreal, hard-sci-fi, neon-cyber, brutalist-clean, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-steampunk,
-    categoryName: 4. Corepunk — Steampunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, steampunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-steampunk
+  categoryName: 4. Corepunk — Steampunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - steampunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

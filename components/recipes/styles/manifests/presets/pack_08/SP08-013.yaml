@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Elven or fairy couture, Rivendell ethereality, woodland-realm grace
+  aesthetic: Elven-fairy couture, moonlit ethereality, woodland grace
   form_and_line: Flowing, windblown, gossamer waterfall silhouette, bishop-sleeve billow, empire-line rise
   color_palette: White, Silver, Pale Blue, moonstone, starlight silver, celadon mist, pearl essence
   lighting_setup: Glowing, backlight, god-ray shafts, moonbeam dapple, faerie-light sparkle
   material_texture: Silk chiffon, gossamer organza, liquid satin charmeuse, silver lamé thread, dew-beaded tulle
-  render_quality: Lord of the Rings epic fantasy, magical, elven grace, Middle-earth majesty, artisan-fantasy caliber
+  render_quality: Epic fantasy polish, elven grace, artisan-fantasy caliber
   spatial_distortion: Floating fabric
   atmosphere: Magical, soft, dreamlike, ancient enchantment, starlit serenity, undying-lands longing
   key_features: Translucency, flowing sleeves, circlet or brooch cues, silver-thread constellation detail
   creative_brief: >-
-    Apply elven ethereality to the input through gossamer translucency,
-    moonstone thread, floating sleeves and a palette of pearl, celadon and pale
-    blue. Keep circlet or brooch cues when useful, but avoid locking the image
-    to a forest realm, harp-lit figure or fixed fantasy gown scene.
+    Apply elven ethereality to the input through gossamer translucency, moonstone thread, floating sleeves and a palette
+    of pearl, celadon and pale blue. Keep circlet or brooch cues when useful, but avoid locking the image to named
+    fantasy realms, harp-lit figures, woodland princess bodies or fixed gown tableaux.
 avoidRules:
   - heavy
   - dark

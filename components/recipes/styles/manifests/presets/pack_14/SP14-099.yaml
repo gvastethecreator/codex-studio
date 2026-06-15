@@ -4,8 +4,13 @@ packId: pack_14
 name: Underworld Lantern Threshold
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Mythic underworld guidance expressed through lantern glow, mourning, and threshold crossing.
   form_and_line: Lantern-core geometry, veil silhouettes, and descending rhythm cues.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Guidance, mourning, and crossing thresholds.
   key_features: Underworld lantern, threshold veil, amber falloff.
   creative_brief: Use underworld-lantern logic as the visual engine for any input, turning darkness into a navigable threshold through amber falloff, veil silhouettes, smoke edges, and mourning-metal detail without requiring lantern props, tunnels, stairs, guides, or passage setups.
-avoidRules: [photoreal, cute, vaporwave, watermark, text, logo, busy-background]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-099.webp }
+avoidRules:
+  - photoreal
+  - cute
+  - vaporwave
+  - watermark
+  - text
+  - logo
+  - busy-background
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-099.webp
 attributes:
   negativePrompt: photoreal, cute, vaporwave, watermark, text, logo, busy-background
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

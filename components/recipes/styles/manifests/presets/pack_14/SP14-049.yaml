@@ -4,8 +4,14 @@ packId: pack_14
 name: Chariot Sun Transit
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Divine chariot transit where sunrise, radial force, and horse frieze rhythm carry the image.
   form_and_line: Arched portal cues, radial paving, and horse frieze lines.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Triumph, destiny, and ritual spectacle.
   key_features: Solar arch cues, bronze quadriga, prayer causeway rhythm.
   creative_brief: Convert the input through chariot sun transit, as if dawn reenacts divine transport of light without requiring a gate.
-avoidRules: [photoreal, dark-cyber, goofy, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-049.webp }
+avoidRules:
+  - photoreal
+  - dark-cyber
+  - goofy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-049.webp
 attributes:
   negativePrompt: photoreal, dark-cyber, goofy, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

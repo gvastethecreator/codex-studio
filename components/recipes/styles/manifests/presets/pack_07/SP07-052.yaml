@@ -23,10 +23,9 @@ visualDna:
   key_features: Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.
   creative_brief: >-
     Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal
-    martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza generica. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza enana o set heroico generico.
+    Conserva peso megalitico, calor mineral, escala de carga y solemnidad ancestral sin exigir edificio, paisaje, set,
+    criatura ni escena fija.
 avoidRules:
   - wood
   - light

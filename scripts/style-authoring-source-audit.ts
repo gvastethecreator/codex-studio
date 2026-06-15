@@ -98,7 +98,9 @@ function isGeneratedTempFile(repoPath: string) {
   return (
     (repoPath.startsWith('components/recipes/styleRuntimeData.generated.check.') ||
       (repoPath.startsWith('components/recipes/styleRuntimePacks.generated/') &&
-        repoPath.includes('.check.'))) &&
+        repoPath.includes('.check.')) ||
+      repoPath.startsWith('lib/staleStyleDefaultImages.generated.check.') ||
+      repoPath.startsWith('lib/styleDefaultImages.generated.check.')) &&
     repoPath.endsWith('.tmp.ts')
   );
 }

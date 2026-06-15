@@ -144,21 +144,24 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP14-098',
     name: 'Ash-Crown Residue Authority',
     category: '1. Mythic — Symbolism',
-    negativePrompt: 'photoreal, playful, candy-color, watermark, text, logo, glossy',
+    negativePrompt:
+      'photoreal, playful, candy-color, watermark, text, logo, glossy, serpent, snake, braided loops, symmetric totem, sword, hanging plant, window alcove',
     style: {
       aesthetic:
         'Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.',
       form_and_line:
-        'Brittle crown silhouettes, shrine-like framing cues, and ash cascade rhythms.',
+        'Brittle crown silhouettes, collapsed diadem arcs, and asymmetrical ash cascade rhythms with no braided loops, serpent coils, or central totem symmetry.',
       color_palette: 'Charcoal, muted silver, and antique ivory.',
       lighting_setup: 'Narrow halo beam from above.',
       material_texture: 'Charred wood, cracked enamel, dusty glass, and powdery soot.',
       render_quality: 'Cinematic symbolic still life.',
-      spatial_distortion: 'Tight iconic depth with layered relic framing, not a required cabinet.',
+      spatial_distortion:
+        'Tight iconic depth with offset fragment layers and drifting residue, not a required cabinet or shrine axis.',
       atmosphere: 'Loss, legitimacy, and solemn afterimage.',
-      key_features: 'Ash crown, residue halos, memorial dust.',
+      key_features:
+        'Ash crown, residue halos, memorial dust, collapsed diadem fragments, offset crown shards.',
       creative_brief:
-        'Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring crowns, shrines, relic cabinets, rulers, or literal objects.',
+        'Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use offset crown shards, brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring serpents, braided loops, shrine windows, relic cabinets, rulers, swords, or literal objects.',
     },
   },
   {
@@ -186,7 +189,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP14-100',
     name: 'Broken Halo Regrowth',
     category: '1. Mythic — Symbolism',
-    negativePrompt: 'photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition',
+    negativePrompt:
+      'photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition, greenhouse, conservatory, garden path, potted plants',
     style: {
       aesthetic: 'Fractured sanctity expressed through broken halo geometry and quiet regrowth.',
       form_and_line: 'Circular ruin motifs, climbing organic lines, and petal-like debris.',
@@ -199,7 +203,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Recovery, sanctity, and wounded beauty.',
       key_features: 'Broken halo, revival growth, wounded sanctity.',
       creative_brief:
-        'Recast the input through broken-halo regrowth, with fractured divinity and organic renewal continuing through it.',
+        'Recast the input through broken-halo regrowth, with fractured divinity and organic renewal continuing through it without requiring a greenhouse, conservatory, garden path, potted plants, or literal overgrown chapel scene.',
     },
   },
   {

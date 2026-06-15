@@ -11,6 +11,7 @@ import type { StudioSettingsStorage } from './studioSettingsStore';
 import type { registerCatalogImage } from './catalog';
 import type { publishEvent } from './events';
 import type { getSettings } from './config';
+import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
 import type { EditableStudioSettings } from '../../../packages/shared/src';
 
 interface OutputSourceRoutesDependencies {
@@ -19,6 +20,7 @@ interface OutputSourceRoutesDependencies {
   readConfig: typeof getSettings;
   registerCatalogImage: typeof registerCatalogImage;
   publishEvent: typeof publishEvent;
+  ensureThumbnailVariant?: typeof ensureThumbnailVariantDefault;
 }
 
 const RegisterOutputSourceBoundarySchema = Schema.Struct({
@@ -86,6 +88,7 @@ export function createOutputSourceRoutes({
   readConfig,
   registerCatalogImage,
   publishEvent,
+  ensureThumbnailVariant = ensureThumbnailVariantDefault,
 }: OutputSourceRoutesDependencies) {
   const routes = new Hono();
 
@@ -179,7 +182,7 @@ export function createOutputSourceRoutes({
       );
     }
 
-    const result = importExternalOutputSourceFiles({
+    const result = await importExternalOutputSourceFiles({
       storage: settingsStorage,
       sourceId: c.req.param('id'),
       libraryDir: readConfig().libraryDir,
@@ -189,6 +192,7 @@ export function createOutputSourceRoutes({
         workspaceId?: string | null;
       },
       registerCatalogImage,
+      ensureThumbnailVariant,
     });
     if (!result.ok) return c.json({ error: result.reason }, 400);
     publishEvent('output-source.imported', result.result);

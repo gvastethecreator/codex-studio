@@ -22,11 +22,10 @@ visualDna:
   atmosphere: Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus
   key_features: Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe
   creative_brief: >-
-    Give the input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay,
-    spell-light rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset
-    should not require a tower, library, sanctum or spellcasting scene. Apply this fashion/costume grammar over any
-    input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a
-    required body, portrait, runway, room, prop, role, or fixed character scene.
+    Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery,
+    moonstone inlay, spell-light rim and silver constellations. Staff, hat or spellbook cues may
+    appear when useful, but the preset should not require towers, libraries, sanctums or
+    spellcasting scenes.
 avoidRules:
   - pants
   - modern

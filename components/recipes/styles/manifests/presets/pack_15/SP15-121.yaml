@@ -4,8 +4,14 @@ packId: pack_15
 name: Tide Lantern Quarter
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Tide-lantern seapunk night style lit by floating route markers and wet reflections.
   form_and_line: Lantern strings, quay-like paths, floating buoys, and water corridor curves.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Meandering path through illuminated water-corridor depth.
   atmosphere: Night stroll, orientation, and civic sparkle.
   key_features: Tide lanterns, buoy markers, wet step motifs, and floating route glows.
-  creative_brief: >-
-    Guide the input by tide lantern sparkle: moonlit-blue water paths, hot-pink
-    route glows, silver buoy markers, glass lantern strings, and wet reflection
-    curves make any subject feel nocturnal, oriented, and civic.
-avoidRules: [photoreal, dystopia, harsh-dark, watermark, text, logo, muddy]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-121.webp }
+  creative_brief: 'Guide the input by tide lantern sparkle: moonlit-blue water paths, hot-pink route glows, silver buoy markers, glass lantern strings, and wet reflection curves make any subject feel nocturnal, oriented, and civic.'
+avoidRules:
+  - photoreal
+  - dystopia
+  - harsh-dark
+  - watermark
+  - text
+  - logo
+  - muddy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-121.webp
 attributes:
   negativePrompt: photoreal, dystopia, harsh-dark, watermark, text, logo, muddy
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

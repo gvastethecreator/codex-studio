@@ -14,26 +14,15 @@ tags:
   - atompunk
 visualDna:
   aesthetic: Atomic abundance style where organic growth looks laboratory-calibrated and reactor warmth masquerades as sunshine.
-  form_and_line: >-
-    Rounded reactor domes, terrace-grid logic, tubular loop paths, vent-fin ribs, and irrigation arcs drawn like circuit
-    diagrams.
+  form_and_line: Rounded reactor domes, terrace-grid logic, tubular loop paths, vent-fin ribs, and irrigation arcs drawn like circuit diagrams.
   color_palette: Pistachio mint, cream white, chrome, chlorophyll green, and faint reactor amber.
-  lighting_setup: >-
-    Soft midday glare, contained core glow through vent fins, greenhouse diffusion, and chrome glints on irrigation
-    controls.
+  lighting_setup: Soft midday glare, contained core glow through vent fins, greenhouse diffusion, and chrome glints on irrigation controls.
   material_texture: Enamel steel, glass blocks, irrigated concrete, sterile planter lips, chrome trim, and wet leaf gloss.
   render_quality: Clear concept render where food systems, heat loops, and civic optimism remain visually legible.
   spatial_distortion: Multi-tier perspective follows heat circulation through grids, loops, vents, and growth patterns.
   atmosphere: Engineered abundance, productive optimism, hygienic utopia, and faint atomic unease.
-  key_features: >-
-    Reactor-greenhouse halos, isotope loop marks, calibrated irrigation panels, growth-grid geometry, and heat-transfer
-    vents.
-  creative_brief: >-
-    Calibrate the input as reactor-grown abundance: pistachio enamel, chrome irrigation loops, greenhouse diffusion,
-    isotope heat marks, and wet leaf gloss should feel both sunny and engineered. Orchards or districts can appear, but
-    the style is hygienic utopia with faint atomic unease. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  key_features: Reactor-greenhouse halos, isotope loop marks, calibrated irrigation panels, growth-grid geometry, and heat-transfer vents.
+  creative_brief: 'Calibrate the input as reactor-grown abundance: pistachio enamel, chrome irrigation loops, greenhouse diffusion, isotope heat marks, and wet leaf gloss should feel both sunny and engineered. Orchards or districts can appear, but the style is hygienic utopia with faint atomic unease. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - post-apocalypse-rust
@@ -59,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Artesanía arbórea elevada, integrada a soporte vivo y condicionada por crecimiento irregular.
-  form_and_line: Soportes híbridos, plataformas escalonadas, diagonales de cable y vacíos de evasión orgánica.
+  aesthetic: Artesanía arbórea elevada, ensamblada contra crecimiento vivo y gobernada por adaptación orgánica.
+  form_and_line: Soportes híbridos, plataformas moduladas, diagonales tensadas y vacíos de evasión orgánica.
   color_palette: Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss
   lighting_setup: Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos en escala íntima.
   material_texture: Veta de madera expuesta al clima, cuerda fibrosa, abrasión de corteza y herrajes galvanizados oxidados.
   render_quality: Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.
   spatial_distortion: Inclinación artesanal, torsión orgánica y apoyo asimétrico creíble.
-  atmosphere: Íntima y lúdica, con autonomía exploratoria y abrigo frente a exposición de viento.
-  key_features: Vacíos de tronco, accesos textiles, bordes mirador, pools cálidos y uniones improvisadas.
+  atmosphere: Íntima y adaptativa, con autonomía exploratoria y abrigo ligero frente a exposición ambiental.
+  key_features: Encuentros con soporte vivo, accesos ligeros, bordes suspendidos, pools cálidos y uniones improvisadas.
   creative_brief: >-
-    El estilo negocia cualquier forma contra soporte vivo: plataformas escalonadas, cuerda, madera expuesta y diagonales
-    de seguridad improvisada. Debe sentirse artesanal y elevado sin volverse infantil ni postal de aventura. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    El estilo negocia cualquier forma contra soporte vivo mediante ensamblaje elevado, cuerda, madera expuesta y
+    tensiones improvisadas. Debe sentirse artesanal y suspendido sin exigir treehouse, refugio infantil, tronco heroico
+    ni postal de aventura. Conserva logica material, escala ligera y ritmo estructural adaptativo sin fijar tipologia,
+    paisaje, franquicia, criatura ni escena cerrada.
 avoidRules:
   - ground level
 assets:

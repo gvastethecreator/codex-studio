@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Wild West frontier costume, gunslinger mythology, tumbleweed-silence drama
-  form_and_line: Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle
+  aesthetic: Frontier workwear myth, dust-worn practicality, high-noon Americana tension
+  form_and_line: Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm, strap-and-yoke structure
   color_palette: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
   lighting_setup: High-noon glare, merciless desert sun, amber practical warmth, campfire flicker
   material_texture: Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel
-  render_quality: Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty
+  render_quality: Iconic, rugged, Leone-widescreen grit, frontier-photograph clarity
   spatial_distortion: None
   atmosphere: Tough, lonely, high-noon tension, frontier solitude, whiskey-bottle weariness
-  key_features: Stetson cues, gun-belt or holster motif, spurred boots, bandana, tin-star detail
+  key_features: Stetson-brim cues, holster-strap motif, spurred-boot hardware, bandana folds, tin-star detail
   creative_brief: >-
-    Give the input frontier costume logic: oilskin leather, duster sweep,
-    tobacco tan, denim, bandana triangles, Stetson brim and spur-metal glints.
-    Keep gunslinger myth without requiring saloon, street standoff, weapon draw,
-    desert figure or cowboy portrait.
+    Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim,
+    bandana triangles, Stetson brim and spur-metal glints. Keep the gunslinger myth as a style
+    anchor without requiring saloons, street standoffs, weapon draws, desert figures or cowboy portraits.
 avoidRules:
   - city
   - clean

@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Luxury fur, old-Hollywood opulence, cold-climate extravagance
-  form_and_line: Soft edges, voluminous-sleeve bulk, shawl-collar wrap, floor-length column, muff-hand enclosure
+  aesthetic: Luxury fur opulence, winter-glamour extravagance, tactile grandeur
+  form_and_line: Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette
   color_palette: Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white
   lighting_setup: Soft diffused glamour light, fur-halo rim, warm amber bounce
   material_texture: Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard
   render_quality: Expensive, soft, fur-atelier luxury, tactile-lavish perfection
   spatial_distortion: None
   atmosphere: Rich, warm, tactile opulence, champagne-evening ease, first-class decadence
-  key_features: Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep
+  key_features: Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation
   creative_brief: >-
-    Add fur-coat opulence to the input: guard-hair sheen, dense underwool,
-    sable or chinchilla tonal shifts, shawl-collar volume and soft halo rim
-    light. Keep luxury warmth without requiring shoulders, aristocrat body,
-    fireside interior or old-Hollywood scene.
+    Add fur opulence to the input: guard-hair sheen, dense underwool, sable or
+    chinchilla tonal shifts, halo volume and soft glamour rim light. Keep
+    luxury warmth without requiring shoulders, aristocratic body language,
+    fireside interiors or old-Hollywood staging.
 avoidRules:
   - smooth
 assets:

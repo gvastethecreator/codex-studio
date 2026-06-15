@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Megaestructura cristalina de crecimiento geológico y futurismo mineral monolítico.
-  form_and_line: Apilamientos facetados verticales, haces hexagonales y convergencias prismáticas hacia ápice agudo.
-  color_palette: Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash
-  lighting_setup: Refracción interna intensa, dispersión espectral, núcleo autoiluminado y bordes de faceta de alto brillo.
-  material_texture: Cristal vítreo, caras gema, profundidad translúcida y geodas de amatista de microdetalle.
-  render_quality: Arquitectura cristalina de alta claridad con óptica coherente y precisión mineral de escala monumental.
-  spatial_distortion: None
-  atmosphere: Quietud luminosa, asombro frío y elegancia mineral de otro mundo.
-  key_features: Planos facetados refractivos, núcleos translúcidos, silueta de aguja prismática y estratos de brillo interno.
+  aesthetic: Megaestructura cristalina de crecimiento geologico y futurismo mineral monolitico, portable a cualquier masa o sistema.
+  form_and_line: Apilamientos facetados, haces hexagonales, placas gema y convergencias prismatica multiples sin depender de una sola aguja heroica.
+  color_palette: Purple-blue-white, amethyst, sapphire, diamond spark, deep crystal violet, iridescent flash
+  lighting_setup: Refraccion interna intensa, dispersion espectral, nucleos autoiluminados y bordes facetados de alto brillo.
+  material_texture: Cristal vitreo, caras gema, profundidad translucida y mineralizacion de microdetalle con optica coherente.
+  render_quality: Arquitectura cristalina de alta claridad con precision mineral monumental y control fisico de luz interna.
+  spatial_distortion: Faceted stacking and refractive scale drift without a mandatory spire apex
+  atmosphere: Quietud luminosa, asombro frio y elegancia mineral de otro mundo.
+  key_features: Planos refractivos, nucleos translucidos, estratos de brillo interno y jerarquia prismatica en capas.
   creative_brief: >-
-    Haz que el estilo nazca de óptica mineral: masa facetada, crecimiento cristalino, refracción interna y color
-    espectral disciplinado. Funciona sobre arquitectura, objeto, personaje o paisaje sin obligar una aguja única. Apply
-    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    Haz que el estilo nazca de optica mineral: masa facetada, crecimiento cristalino, refraccion interna y color
+    espectral disciplinado. Debe poder envolver arquitectura, objeto, personaje o paisaje sin exigir torre-aguja unica,
+    templo gema o skyline de monolitos identicos. Conserva logica mineral, escala prismatica, ritmo facetado y atmosfera
+    fria sin depender de edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - brick
   - wood

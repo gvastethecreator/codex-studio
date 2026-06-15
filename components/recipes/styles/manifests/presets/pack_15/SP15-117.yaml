@@ -4,8 +4,14 @@ packId: pack_15
 name: Reef Choir Harbor
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Reef-choir seapunk where coral structures act as resonant civic acoustic shells.
   form_and_line: Curved reef amphitheater bands, dock-like arcs, shell acoustic ribs, and signal-fin silhouettes.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Amphitheater curve around an inlet-like acoustic void.
   atmosphere: Communal celebration, tidal resonance, and playful immersion.
   key_features: Reef choir shells, tidal step motifs, signal fins, and resonant coral ribbing.
-  creative_brief: >-
-    Resonate the input as reef choir architecture: aqua amphitheater bands,
-    opal-pink shell ribs, sea-glass fins, tidal step motifs, and bioluminescent
-    acoustic glow make any subject feel communal and sonically alive.
-avoidRules: [photoreal, bleak, rust, watermark, text, logo, murky]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-117.webp }
+  creative_brief: 'Resonate the input as reef choir architecture: aqua amphitheater bands, opal-pink shell ribs, sea-glass fins, tidal step motifs, and bioluminescent acoustic glow make any subject feel communal and sonically alive.'
+avoidRules:
+  - photoreal
+  - bleak
+  - rust
+  - watermark
+  - text
+  - logo
+  - murky
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-117.webp
 attributes:
   negativePrompt: photoreal, bleak, rust, watermark, text, logo, murky
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

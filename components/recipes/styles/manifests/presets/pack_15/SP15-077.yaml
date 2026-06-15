@@ -4,8 +4,14 @@ packId: pack_15
 name: Earthrise Commons Balcony
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Abstract earthrise perspective style with shared horizon framing, reverent rimlight, and communal scale humility.
   form_and_line: Wide arc bands, tiered seating-like contours, radial amphitheater curves, phase-lantern dots, and horizon-framing rails.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Panoramic arc framing creates shared perspective and smallness without prescribing a balcony scene.
   atmosphere: Reverence, community, humility, and planetary perspective.
   key_features: Horizon arcs, earthrise blue rimlight, phase-lantern dots, textile-shadow warmth, and pearl-gold communal framing.
-  creative_brief: >-
-    Reframe the input under earthrise humility: wide indigo horizon arcs, pearl
-    communal rails, phase-lantern dots, gold rimlight, and textile-shadow warmth
-    make any subject feel gathered around planetary perspective.
-avoidRules: [photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-077.webp }
+  creative_brief: 'Reframe the input under earthrise humility: wide indigo horizon arcs, pearl communal rails, phase-lantern dots, gold rimlight, and textile-shadow warmth make any subject feel gathered around planetary perspective.'
+avoidRules:
+  - photoreal
+  - militarized-tone
+  - cyberpunk-grit
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-077.webp
 attributes:
   negativePrompt: photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

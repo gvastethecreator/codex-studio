@@ -4,8 +4,13 @@ packId: pack_14
 name: Obsidian Mask Stagecraft
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Ritual performance noir translated into masked symbolism and controlled theatrical menace.
   form_and_line: Mask-like silhouettes, proscenium cues, and choreographed diagonals that can wrap any subject.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Fatal spectacle, sacred drama, and poised emotional tension.
   key_features: Ceremonial mask cues, fractured proscenium shapes, ritual choreography marks.
   creative_brief: Recast the input as an immaculate noir rite, using obsidian masks and stagecraft as symbolic style cues rather than a fixed theatre setup.
-avoidRules: [photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-011.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - daylight-realism
+  - flat-light
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-011.webp
 attributes:
   negativePrompt: photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

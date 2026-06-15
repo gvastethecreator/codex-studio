@@ -4,8 +4,14 @@ packId: pack_15
 name: Sootline Aerostat Relief
 category: 7. Corepunk — Dieselpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - dieselpunk
 visualDna:
   aesthetic: Humanitarian dieselpunk where heavy lift, sootline weathering, and rebuilt logistics feel rugged but compassionate.
   form_and_line: Blunt hull curves, cable-braced diagonals, crate-stack rectangles, and heavy shadow masses with clear signal markings.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Heavy-lift diagonal depth and compressed logistics layers without requiring airships, crates, workers, or a battlefield.
   atmosphere: Burdened, resilient, compassionate, smoky, operational.
   key_features: Aerostat hull rhythm, relief-signal amber, cable-brace geometry, sootline weathering, and repaired utility surfaces.
-  creative_brief: >-
-    Load the input with sootline relief endurance: blunt hull rhythm, cable-brace
-    diagonals, rescue-amber lamps, canvas khaki weathering, and repaired
-    diesel-era logistics transform any subject without forcing airships, convoys,
-    disaster scenes, or crews.
-avoidRules: [photoreal, neon-cyber, pristine-utopia, magical-fantasy, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-134.webp }
+  creative_brief: 'Load the input with sootline relief endurance: blunt hull rhythm, cable-brace diagonals, rescue-amber lamps, canvas khaki weathering, and repaired diesel-era logistics transform any subject without forcing airships, convoys, disaster scenes, or crews.'
+avoidRules:
+  - photoreal
+  - neon-cyber
+  - pristine-utopia
+  - magical-fantasy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-134.webp
 attributes:
   negativePrompt: photoreal, neon-cyber, pristine-utopia, magical-fantasy, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-dieselpunk,
-    categoryName: 7. Corepunk — Dieselpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-dieselpunk
+  categoryName: 7. Corepunk — Dieselpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - dieselpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

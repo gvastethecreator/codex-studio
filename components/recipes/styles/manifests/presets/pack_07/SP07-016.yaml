@@ -12,29 +12,29 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Modernismo Bauhaus funcional, claridad industrial y belleza derivada de función explícita.
+  aesthetic: Modernismo Bauhaus funcional, claridad industrial y belleza derivada de funcion explicita.
   form_and_line: >-
-    Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de
-    lectura didáctica.
+    Interseccion de circulo/cuadrado, reticula racional, tubulares metalicos y planos limpios de
+    lectura didactica.
   color_palette: >-
-    Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso
-    jerárquico.
+    Blanco/negro estructural, grises calidos y acentos primarios (rojo, amarillo, azul) de uso
+    jerarquico.
   lighting_setup: >-
-    Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización
+    Iluminacion uniforme de tarea, spots funcionales y pendentes simples sin dramatizacion
     superflua.
-  material_texture: Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linóleo de acabado honesto.
+  material_texture: Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linoleo de acabado honesto.
   render_quality: >-
-    Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual
+    Precision racionalista con prioridad constructiva, composicion pedagogica y eficiencia visual
     atemporal.
-  spatial_distortion: Neutralidad geométrica con énfasis en orden proporcional e interacción de formas básicas.
-  atmosphere: Intelectual, limpio, pragmático y optimista.
+  spatial_distortion: Neutralidad geometrica con enfasis en orden proporcional e interaccion de formas basicas.
+  atmosphere: Intelectual, limpio, pragmatico y optimista.
   key_features: >-
-    Cantilever visual, acentos cromáticos controlados, estructura visible y gramática geométrica
+    Cantilever visual, acentos cromaticos controlados, estructura visible y gramatica geometrica
     elemental.
   creative_brief: >-
-    Formula una gramática Bauhaus transferible donde función, estructura y geometría primaria
-    ordenen todo el lenguaje visual. El estilo debe comunicar claridad productiva sin recurrir a
-    ornamento narrativo.
+    Convierte cualquier input en un sistema Bauhaus donde funcion, estructura visible y geometria
+    primaria gobiernen cada decision visual. Debe sentirse pedagogico, productivo y construido, sin
+    depender de un interior ejemplar ni de ornamento anecdotico.
 avoidRules:
   - ornate
   - cluttered

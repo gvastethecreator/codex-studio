@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Dress made of water, liquid-sculpture illusion, elemental-body transformation
-  form_and_line: Splashes, cascade-fall drape, droplet-spray volume, surface-tension curve, sheet-flow silhouette, rippling-hem line
+  aesthetic: Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation
+  form_and_line: Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines
   color_palette: Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white
   lighting_setup: Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce
   material_texture: Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature
   render_quality: Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry
   spatial_distortion: Flowing
-  atmosphere: Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique
+  atmosphere: Pure, fluid, serene, refractive, elemental, dissolving
   key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
   creative_brief: >-
-    Make the input liquid-garment: sheet-flow drape, surface tension, arrested
+    Make the input liquid-couture: sheet-flow drape, surface tension, arrested
     droplets, meniscus edges, caustic light and transparent aquamarine volume.
-    Keep elemental transformation without requiring torso, waterfall, gown,
-    water-nymph or underwater scene.
+    Keep elemental transformation as fluid behavior only; do not require a
+    torso, waterfall, gown, water nymph or underwater scene.
 avoidRules:
   - dry
 assets:

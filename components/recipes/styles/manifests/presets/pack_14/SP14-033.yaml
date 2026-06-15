@@ -4,8 +4,14 @@ packId: pack_14
 name: Paper Lantern Exorcism Protocol
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Paper-lantern exorcism protocol with folk wards, shrine noir, and ritual urgency.
   form_and_line: Narrow lane cues, stacked eaves, and talisman grids over sliding-door shapes.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Tense vigilance, ritual urgency, and whispering folklore.
   key_features: Exorcist ward tags, fox masks, spirit bait altar cues.
   creative_brief: Reinterpret the input through paper-lantern exorcism protocol, using wards and purification cues without requiring an alley.
-avoidRules: [photoreal, cartoon-cute, cyberpunk-neon, modern-signage, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-033.webp }
+avoidRules:
+  - photoreal
+  - cartoon-cute
+  - cyberpunk-neon
+  - modern-signage
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-033.webp
 attributes:
   negativePrompt: photoreal, cartoon-cute, cyberpunk-neon, modern-signage, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

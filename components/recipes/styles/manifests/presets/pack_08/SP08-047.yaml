@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Dracula style, Carpathian aristocracy, immortal-danger elegance
-  form_and_line: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, ring-adorned fingers
+  aesthetic: Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace
+  form_and_line: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents
   color_palette: Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white
-  lighting_setup: Moonlight silver rim, candelabra flicker, fog-diffused ambiance, stained-glass dimness
+  lighting_setup: Moonlight silver rim, candelabra flicker, fog-diffused ambiance, cathedral-shadow dimness
   material_texture: Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
-  render_quality: Gothic, scary, Stoker-novel atmosphere, Hammer-horror elegance
+  render_quality: Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance
   spatial_distortion: None
   atmosphere: Evil, elegant, ancient-hunger menace, moonlit-seduction danger, aristocratic dread
-  key_features: Opera cape, high collar, medallion, signet ring, crimson lining
+  key_features: Opera cape, high collar, medallion, heraldic signet, crimson lining
   creative_brief: >-
-    Style the input as vampire aristocratic costume: black velvet cape, crimson
-    silk lining, high collar, cravat precision, onyx signet and moonlit silver
-    edge. Keep immortal menace and old-world elegance without requiring a castle,
-    specific face, widow's peak or literal Dracula portrait.
+    Style the input through vampire-aristocratic costume grammar: black velvet
+    cape, crimson silk lining, high collar, cravat precision, onyx heraldic
+    accents and moonlit silver edging. Keep immortal menace and old-world
+    elegance without requiring a castle, fangs, widow's peak, portrait bust or
+    a named vampire scene.
 avoidRules:
   - modern
   - messy

@@ -12,23 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Monochrome sci-fi hologram, rebel-transmission shimmer, long-distance signal urgency
-  form_and_line: Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent-body silhouette, projection-cone taper
-  color_palette: Blue monochrome, R2-D2-cyan, hologram-azure, transmission-static white, fade-to-transparent edge, flicker-blue
+  aesthetic: Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency
+  form_and_line: Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper
+  color_palette: Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue
   lighting_setup: Self-lit, emissive-blue glow, projection-cone light, dark-room contrast, flicker-instability pulse
   material_texture: >-
     Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain,
     chromatic-fringe
-  render_quality: Sci-fi, glitchy, stolen-plans urgency, long-time-ago transmission
+  render_quality: Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer
   spatial_distortion: Transparent
-  atmosphere: Tech, message, desperate-plea intimacy, rebel-hope transmission, distant-signal nostalgia
-  key_features: Scanlines, blue monochrome, flicker instability, transparent body, projection base
+  atmosphere: Tech, message, urgent intimacy, distant-signal nostalgia, fragile transmission hope
+  key_features: Scanlines, blue monochrome, flicker instability, transparent contour, projection-field falloff
   creative_brief: >-
     Render the input as unstable holographic transmission: blue monochrome, scanlines, projection grain, transparency
-    fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but must not require Star
-    Wars staging, a projection base, dark room or pleading character. Apply this fashion/costume grammar over any input:
-    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
-    body, portrait, runway, room, prop, role, or fixed character scene.
+    fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but must not require named
+    space-opera staging, a projection base, dark room, pleading character or body-first apparition.
 avoidRules:
   - solid
 assets:

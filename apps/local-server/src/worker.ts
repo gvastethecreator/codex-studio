@@ -13,6 +13,7 @@ import {
 } from './db';
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
+import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
 import { log } from './logger';
 import { createCodexTurn } from './codex/turn';
 import type { CodexTurn } from './codex/turn';
@@ -69,6 +70,7 @@ export interface CreateWorkerControllerDependencies {
   readEditableStudioSettings?: typeof readEditableStudioSettings;
   resolveJobCatalogContext?: typeof resolveJobCatalogContext;
   resolveWorkerRuntimeTarget?: typeof resolveWorkerRuntimeTarget;
+  ensureThumbnailVariant?: typeof ensureThumbnailVariantDefault;
 }
 
 function createAbortError() {
@@ -146,6 +148,7 @@ export function createWorkerController({
   readEditableStudioSettings: readEditableStudioSettingsFn = readEditableStudioSettings,
   resolveJobCatalogContext: resolveJobCatalogContextFn = resolveJobCatalogContext,
   resolveWorkerRuntimeTarget: resolveWorkerRuntimeTargetFn = resolveWorkerRuntimeTarget,
+  ensureThumbnailVariant: ensureThumbnailVariantFn = ensureThumbnailVariantDefault,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
@@ -255,6 +258,7 @@ export function createWorkerController({
     resolveCatalogGenerationConfig: buildCatalogGenerationConfigFromJob,
     organizeGeneratedAssetPath: assetPathing.organizeGeneratedAssetPath,
     inferGeneratedAssetMimeType,
+    ensureThumbnailVariant: ensureThumbnailVariantFn,
   });
 
   async function runDryJob(job: Job, signal?: AbortSignal) {
@@ -267,11 +271,24 @@ export function createWorkerController({
     const filePath = assetPathing.resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
     mkdirSync(path.dirname(filePath), { recursive: true });
     writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
+    let thumbnailPath: string | null = null;
+
+    try {
+      thumbnailPath = await ensureThumbnailVariantFn(filePath);
+    } catch (error) {
+      logger(
+        'warn',
+        'thumbnail',
+        `Thumbnail generation failed: ${error instanceof Error ? error.message : String(error)}`,
+        job.id,
+      );
+    }
+
     const asset = addAssetFn({
       projectId: job.projectId,
       jobId: job.id,
       filePath,
-      thumbnailPath: null,
+      thumbnailPath,
       publicUrl: toPublicAssetUrlFn(filePath),
       prompt: job.finalPromptUsed,
       width: 1200,

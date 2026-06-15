@@ -24,7 +24,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness',
       key_features: 'Gold usekh collar, kohl-line cues, uraeus or crown detail, pleated kalasiris',
       creative_brief:
-        'Render the input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without requiring a pharaoh/queen, temple, desert pose, crook/flail or human eyes.',
+        'Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without requiring a pharaoh, queen, temple, desert pose, crook/flail or human eyes.',
     },
   },
   {
@@ -33,21 +33,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'city, clean',
     style: {
-      aesthetic: 'Wild West frontier costume, gunslinger mythology, tumbleweed-silence drama',
+      aesthetic: 'Frontier workwear myth, dust-worn practicality, high-noon Americana tension',
       form_and_line:
-        'Dusty coat, duster-length sweep, waistcoat taper, boot-cut trouser, bandana-neck triangle',
+        'Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm, strap-and-yoke structure',
       color_palette: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
       lighting_setup:
         'High-noon glare, merciless desert sun, amber practical warmth, campfire flicker',
       material_texture:
         'Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel',
-      render_quality: 'Iconic, rugged, Leone-widescreen grit, frontier-photograph honesty',
+      render_quality: 'Iconic, rugged, Leone-widescreen grit, frontier-photograph clarity',
       spatial_distortion: 'None',
       atmosphere: 'Tough, lonely, high-noon tension, frontier solitude, whiskey-bottle weariness',
       key_features:
-        'Stetson cues, gun-belt or holster motif, spurred boots, bandana, tin-star detail',
+        'Stetson-brim cues, holster-strap motif, spurred-boot hardware, bandana folds, tin-star detail',
       creative_brief:
-        'Give the input frontier costume logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, Stetson brim and spur-metal glints. Keep gunslinger myth without requiring saloon, street standoff, weapon draw, desert figure or cowboy portrait.',
+        'Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, Stetson brim and spur-metal glints. Keep the gunslinger myth as a style anchor without requiring saloons, street standoffs, weapon draws, desert figures or cowboy portraits.',
     },
   },
   {
@@ -70,7 +70,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Kabuto helmet, maedate crest, mempo mask cues, silk odoshi lacing, sashimono geometry',
       creative_brief:
-        'Translate the input into samurai armor language: lacquered plates, silk odoshi lacing, kabuto crest, mempo severity, sode shoulders and disciplined red-black-gold craft. Preserve warrior identity cues without requiring bamboo forest, castle interior, katana duel or fixed human face.',
+        'Translate any input into samurai armor language: lacquered plates, silk odoshi lacing, kabuto crest, mempo severity, sode shoulders and disciplined red-black-gold craft. Preserve warrior identity cues without requiring bamboo forests, castle interiors, katana duels or fixed human faces.',
     },
   },
   {
@@ -79,19 +79,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'modern, simple, cheap',
     style: {
-      aesthetic: '16th century court dress, Tudor majesty, Holbein-portrait splendor',
+      aesthetic: '16th century court regalia, Tudor-adjacent majesty, painted-court splendor',
       form_and_line:
         'Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture',
       color_palette: 'Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white',
       lighting_setup: 'Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold',
       material_texture:
         'Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul',
-      render_quality: 'Historical, museum, painting, Holbein-precise realism, courtly gravitas',
+      render_quality: 'Historical museum-grade finish, painted-court realism, formal gravitas',
       spatial_distortion: 'Stiff posture',
       atmosphere: 'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
       key_features: 'Ornate details, neck ruff, jeweled bodice, French hood, chain of office',
       creative_brief:
-        'Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep Holbein/Tudor authority as style anchor without forcing a face, portrait pose, candlelit hall or specific monarch.',
+        'Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style anchor without forcing Holbein citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.',
     },
   },
   {
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'color, happy',
     style: {
-      aesthetic: 'Widow weeds, Victorian grief ritual, gaslit-sorrow pageantry',
+      aesthetic: 'Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry',
       form_and_line:
         'Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure',
       color_palette:
@@ -108,13 +108,13 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Gloomy overcast grey, candle-flicker dimness, rain-streaked softness',
       material_texture:
         'Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture',
-      render_quality: 'Sad, formal, funereal stillness, grief-portrait gravity',
+      render_quality: 'Formal funereal stillness, ritual gravity, mourning-grade finish',
       spatial_distortion: 'None',
       atmosphere:
         'Somber, gothic, ritual sorrow, drawn-curtain isolation, eternal-mourning silence',
-      key_features: "Black veil, jet brooch, widow's cap, black-bordered handkerchief",
+      key_features: 'Black veil, jet brooch, mourning-cap cues, black-bordered textile accents',
       creative_brief:
-        'Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling, widow-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without requiring a widow, face, window, graveyard or portrait setup.',
+        'Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling, mourning-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without requiring a widow persona, face, window tableau, graveyard or portrait setup.',
     },
   },
   {
@@ -123,23 +123,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'modern, pants, messy',
     style: {
-      aesthetic: '1950s vintage dress styling, soda-fountain sweetness, Eisenhower-era femininity',
+      aesthetic:
+        '1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar',
       form_and_line:
-        'Cinched waist, full skirt, circle-skirt volume, petticoat layers, sweetheart neckline',
+        'Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry',
       color_palette:
         'Polka dots, pastel pink/blue, cherry red, mint green, buttercup yellow, gingham check',
       lighting_setup:
         'Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth',
       material_texture:
         'Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim',
-      render_quality: 'Retro, pin-up, cute, Kodachrome nostalgia, malt-shop charm',
-      spatial_distortion: 'Hourglass figure',
-      atmosphere:
-        'Nostalgic, fun, feminine, jukebox innocence, sock-hop excitement, cherry-cola sweetness',
+      render_quality: 'Retro, polished, Kodachrome nostalgia, lacquered presentation charm',
+      spatial_distortion: 'None',
+      atmosphere: 'Nostalgic, buoyant, orderly, jukebox-bright sweetness, social optimism',
       key_features:
-        'Cat-eye cues, victory-roll volume, polka-dot headband, crinoline or petticoat structure',
+        'Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic',
       creative_brief:
-        'Dress the input in 1950s vintage codes: cinched waist, circle-skirt volume, petticoat lift, polka dots, gingham, cherry red and glossy Technicolor sweetness. Keep lipstick or victory-roll cues when useful, but do not require a housewife, diner, sock hop or human pin-up pose. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Rebuild the input through 1950s presentation grammar: circle-volume arcs, petticoat lift, gingham and polka-dot punctuation, cherry-red accents and glossy Technicolor neatness. Keep soda-fountain optimism as mood only; do not require a body, pin-up figure, diner, sock hop, housewife role or literal retro vignette.',
     },
   },
   {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'long dress, modern',
     style: {
-      aesthetic: 'Jazz age fashion, speakeasy decadence, Gatsby-era splendor',
+      aesthetic: 'Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor',
       form_and_line:
         'Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation',
       color_palette: 'Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum',
@@ -156,13 +156,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Chandelier sparkle, feathered-lamp glow, champagne-bubble ambience, soft smoky gleam',
       material_texture:
         'Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon',
-      render_quality: 'Fun, vintage, speakeasy glamour, Fitzgerald-era elegance',
+      render_quality: 'Vintage eveningwear polish, speakeasy glamour, Deco-era elegance',
       spatial_distortion: 'None',
       atmosphere: 'Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill',
       key_features:
-        'Bobbed hair, cloche hat, long cigarette holder, T-strap heels, feather headband',
+        'Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents',
       creative_brief:
-        'Give the input flapper-era glamour: dropped waist, beaded fringe, scalloped hems, sequined net, cloche cues, ostrich trim and Art Deco champagne-black geometry. Keep speakeasy thrill as texture, not as a party, dancer, cigarette holder or Gatsby-ball scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Give the input flapper-era glamour: dropped waists, beaded fringe, scalloped hems, sequined net, cloche cues, ostrich trim and Art Deco champagne-black geometry. Keep speakeasy thrill and jazz-age exuberance as surface energy only, not as a party, dancer, cigarette-holder prop, portrait body or Gatsby-ball scene.',
     },
   },
   {
@@ -171,19 +171,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'clean, suit',
     style: {
-      aesthetic: 'Roman gladiator armor, blood-and-sand spectacle, Colosseum-era defiance',
+      aesthetic: 'Roman arena-forged regalia, martial pageantry, bronze-and-oxblood defiance',
       form_and_line:
-        'Armor articulation, segmentata-plate rhythm, balteus-waist cinch, greave-taper, subligaculum base',
-      color_palette: 'Bronze, Red, Skin, iron-grey, oxblood, sun-bronzed flesh, leather-brown',
+        'Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence',
+      color_palette: 'Bronze, red, iron-grey, oxblood, dusted tan, leather-brown',
       lighting_setup: 'Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light',
       material_texture:
-        'Bronze plate, oiled leather straps, sweat-sheen skin, iron chainmail, sand-grit coating, linen pteruges',
-      render_quality: 'Tough, historical, arena-dust authenticity, Maximus grit',
+        'Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges',
+      render_quality: 'Tough, historical, arena-dust authenticity, ceremonial grit',
       spatial_distortion: 'None',
-      atmosphere: 'Brave, crowd-roar intensity, mortal-peril tension, gladiator-honor gravity',
-      key_features: 'Helmet, galea with crest, gladius, rectangular scutum, armored manica',
+      atmosphere: 'Martial, pressurized, ceremonial, defiant, mortal-peril gravity',
+      key_features:
+        'Galea crest cues, scutum geometry, armored manica, pteruges rhythm, bronze articulation',
       creative_brief:
-        'Give the input gladiator construction: bronze plate articulation, oiled leather straps, galea crest, greaves, linen pteruges and sand-grit patina. Keep Colosseum pressure as atmosphere without requiring arena combat, muscular torso, face, weapon pose or crowd.',
+        'Give the input Roman arena regalia: bronze articulation, oiled leather straps, galea-crest cues, greave taper, linen pteruges and sand-grit patina. Keep martial pressure as material atmosphere only; do not require a torso, face, arena combat, weapon pose, crowd or literal gladiator body.',
     },
   },
   {
@@ -200,13 +201,13 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze',
       material_texture:
-        'Polyester crepe, liquid satin, gold lamé, Qiana nylon, crushed velvet, patent leather',
+        'Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather',
       render_quality: 'Fun, dance, Studio 54 electricity, Bee-Gees swagger',
       spatial_distortion: 'None',
       atmosphere: 'Groovy, energetic, mirror-ball transcendence, Saturday-night immortality',
       key_features: 'Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair',
       creative_brief:
-        'Style the input as 70s disco: polyester sheen, wide lapels, flared pants, platform soles, gold medallion cues, burnt orange and mirror-ball sparkle. Keep dancefloor euphoria without requiring a dancer, chest hair, club, Studio 54 reference or dancefloor sanctuary.',
+        'Style any input as 70s disco: polyester sheen, wide lapels, flared pants, platform soles, gold medallion cues, burnt orange and mirror-ball sparkle. Keep dancefloor euphoria without requiring a dancer, club, Studio 54 reference or literal dancefloor sanctuary.',
     },
   },
   {
@@ -239,20 +240,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'clean, shiny',
     style: {
-      aesthetic: 'Viking warrior garb, fjord-borne fury, shield-wall legend',
+      aesthetic:
+        'Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture',
       form_and_line:
-        'Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather',
+        'Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather',
       color_palette: 'Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber',
       lighting_setup: 'Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights',
       material_texture:
         'Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle',
-      render_quality: 'Rugged, dirty, saga-page authenticity, shield-wall grit',
+      render_quality: 'Rugged, weathered, saga-page authenticity, north-sea grit',
       spatial_distortion: 'None',
       atmosphere: 'Tough, cold, sea-spray resolve, saga warmth, raven-flight omen',
       key_features:
-        'Thor-hammer pendant cues, round-shield motif, fur mantle, braid or rune detail',
+        'Thor-hammer cues, round-shield geometry, fur mantle edge, knotwork or rune detail',
       creative_brief:
-        'Wrap the input in Norse warrior materiality: wolf fur, riveted chainmail, coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber warmth. Keep saga brutality without requiring beard, longship, shield wall, axe, tattooed chest or specific raider body.',
+        'Wrap any input in Norse seafaring materiality: wolf fur, riveted chainmail, coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber warmth. Keep saga hardness as a stylistic anchor without requiring beards, longships, shield walls, axes, tattooed torsos or a raider body.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

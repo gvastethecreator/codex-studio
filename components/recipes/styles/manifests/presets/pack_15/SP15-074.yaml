@@ -17,19 +17,12 @@ visualDna:
   form_and_line: Slender vertical stacks, radial quiet zones, bridge-like lattices, codex-slot ribs, and reed-thin silhouettes.
   color_palette: Soft lilac, ivory ceramic, slate shadow, moonwash blue, and pale bookmark gold.
   lighting_setup: Low-lumen pools, skylight moonwash, faint lamina glow, and restrained edge highlights.
-  material_texture: >-
-    Ceramic composite matte, fabric acoustic softness, layered glass lamina, powder-coated rail detail, and page-like
-    panels.
+  material_texture: Ceramic composite matte, fabric acoustic softness, layered glass lamina, powder-coated rail detail, and page-like panels.
   render_quality: Elegant contemplative render with spacious negative areas, vertical structure, and clear silence cues.
   spatial_distortion: Upward composition and stacked transparency create a quiet sense of stored memory.
   atmosphere: Reflection, study, collective memory, and acoustic hush.
   key_features: Vertical archive rhythm, lilac moonwash, fabric-baffle softness, glass-lamina layering, and pale bookmark accents.
-  creative_brief: >-
-    Index the input in moonshade quiet: stretch it into lilac vertical stacks, codex-slot ribs, glass-lamina layers,
-    fabric acoustic baffles, and pale bookmark glints so the image feels stored, moonlit, and protected from noise.
-    Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system,
-    infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup,
-    faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Index the input in moonshade quiet: stretch it into lilac vertical stacks, codex-slot ribs, glass-lamina layers, fabric acoustic baffles, and pale bookmark glints so the image feels stored, moonlit, and protected from noise. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - cyberpunk-noise
@@ -54,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

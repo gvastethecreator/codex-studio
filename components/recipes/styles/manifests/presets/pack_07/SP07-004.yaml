@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Higiene visual nórdica orientada al confort térmico, intimidad suave y bienestar cotidiano sin ruido formal.
-  form_and_line: Volúmenes bajos, cantos redondeados, capas textiles continuas y ergonomía despejada de circulación limpia.
-  color_palette: Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento.
-  lighting_setup: Difusión suave, red de prácticos cálidos, puntos de baja intensidad y balance nocturno envolvente.
-  material_texture: Lana tejida, piel suave, cerámica mate, lino cepillado y madera de veta discreta.
-  render_quality: Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmósfera doméstica coherente.
-  spatial_distortion: Neutralidad geométrica; profundidad construida por superposición blanda de textiles y luminancia cálida.
+  aesthetic: Confort nordico de bajo contraste, intimidad termica y bienestar cotidiano traducidos a una gramatica material portable.
+  form_and_line: Volumenes bajos, cantos redondeados, capas textiles continuas y respiracion despejada sin requerir living domestico fijo.
+  color_palette: Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento
+  lighting_setup: Difusion suave, red de practicos calidos, puntos de baja intensidad y balance envolvente de refugio.
+  material_texture: Lana tejida, piel suave, ceramica mate, lino cepillado y madera de veta discreta.
+  render_quality: Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmosfera acogedora coherente.
+  spatial_distortion: Neutralidad geometrica; profundidad construida por superposicion blanda de textiles y luminancia calida.
   atmosphere: Refugio, calma, seguridad y calidez continua de escala humana.
-  key_features: Escala baja, capas textiles, madera pálida, iluminación cálida distribuida y ausencia de estridencia visual.
+  key_features: Escala baja, capas textiles, madera palida, iluminacion calida distribuida y ausencia de estridencia visual.
   creative_brief: >-
-    Asegura transferencia hygge mediante una tríada constante: luz blanda, tactilidad natural y contraste bajo. El
-    estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier narrativa estacional. Apply
-    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    Asegura transferencia hygge mediante una triada constante: luz blanda, tactilidad natural y contraste bajo. El
+    estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier habitacion, temporada o escena
+    domestica concreta. Conserva logica material, escala baja y ritmo arquitectonico sereno sin fijar tipologia,
+    paisaje, franquicia, criatura ni escena cerrada.
 avoidRules:
   - dark
   - cold

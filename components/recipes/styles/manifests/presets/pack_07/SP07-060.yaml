@@ -12,8 +12,8 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Haunted-cartoon retro, con amenaza juguetona y exageración torcida de lectura inmediata.
-  form_and_line: Verticales inclinadas, cubiertas combadas, vanos deformados y silueta elástica con contorno gráfico claro.
+  aesthetic: Deformación retro de cartoon macabro, con amenaza juguetona y exageración torcida de lectura inmediata.
+  form_and_line: Verticales inclinadas, masas combadas, vacíos deformados y silueta elástica con contorno gráfico claro.
   color_palette: >-
     Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep
     indigo shadow pools
@@ -22,13 +22,12 @@ visualDna:
   render_quality: Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.
   spatial_distortion: Deformación elástica, inclinación imposible y gestos pareidólicos sugeridos.
   atmosphere: Campy, traviesa y teatral, con suspenso amable sin violencia realista.
-  key_features: Perfil inclinado, relámpagos zigzag, contraluz lunar, siluetas spooky y ritmo de gate gráfico.
+  key_features: Perfil inclinado, acentos zigzag, contraluz frío, siluetas spooky y ritmo de gate gráfico.
   creative_brief: >-
     Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica
-    y contraste de tormenta. Debe funcionar como estilo de render, no como obligación de mostrar una casa embrujada.
-    Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    y contraste de tormenta. Debe funcionar como estilo de render y masa torcida, no como obligacion de mostrar mansion
+    embrujada, tormenta nocturna o set de Halloween literal. Mantiene deformacion elastica, ritmo grafico y atmosfera
+    spooky ludica sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - scary realistic
 assets:

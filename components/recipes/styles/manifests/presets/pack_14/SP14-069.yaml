@@ -4,8 +4,14 @@ packId: pack_14
 name: Frost Jarl Authority
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Frost jarl authority ruled by oaths, shield law, and permanent winter severity.
   form_and_line: Timber hall cues, shield walls, and rune gate symmetry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Severity, honor, and winter authority.
   key_features: Jarl throne cues, rune banners, wolf brazier courts.
   creative_brief: Reinterpret the input through frost jarl authority, where law is spoken above blizzard winds without requiring a fortress.
-avoidRules: [photoreal, cartoon, neon-cyber, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-069.webp }
+avoidRules:
+  - photoreal
+  - cartoon
+  - neon-cyber
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-069.webp
 attributes:
   negativePrompt: photoreal, cartoon, neon-cyber, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_14
 name: Hyena Moon Border Wit
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Hyena moon border wit where trickster-night spirits mix fear, humor, and resilience.
   form_and_line: Thorn fence cues, moon shrines, and winding track lines.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Watchfulness and cunning resilience.
   key_features: Trickster totems, night sentry drums, moon wards.
   creative_brief: Recast the input through hyena moon border wit, balancing cunning resilience and protective folklore without requiring a settlement edge.
-avoidRules: [photoreal, slapstick, sci-fi-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-065.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - sci-fi-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-065.webp
 attributes:
   negativePrompt: photoreal, slapstick, sci-fi-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

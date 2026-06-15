@@ -22,10 +22,9 @@ visualDna:
   atmosphere: Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension
   key_features: Glasses, wire-rim frames, worn-leather satchel, fountain pen
   creative_brief: >-
-    Apply dark-academia codes to the input: tweed, corduroy, cable-knit wool,
-    oxblood leather, horn buttons, elbow patches and paper-cream contrast. Keep
-    secret-history tension without requiring a university, library table,
-    fountain pen, satchel or student figure.
+    Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn
+    buttons, elbow patches and paper-cream contrast. Keep secret-history tension without requiring a
+    university, library table, fountain pen, satchel or student figure.
 avoidRules:
   - bright
   - sport

@@ -4,8 +4,14 @@ packId: pack_14
 name: Rain-Wet Yokai Bargain
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Rain-wet yokai bargain language where spirits and humans barter under strict symbolic codes.
   form_and_line: Covered stall cues, hanging charms, and zigzag wet-lane rhythms.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Suspicion, curiosity, and fragile coexistence.
   key_features: Spirit vendor masks, warded stall cues, rain talisman ribbons.
   creative_brief: Recast the input through rain-wet yokai bargain, where every exchange feels symbolically priced without requiring a market.
-avoidRules: [photoreal, goofy-comedy, fluorescent-cyber, modern-brands, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-035.webp }
+avoidRules:
+  - photoreal
+  - goofy-comedy
+  - fluorescent-cyber
+  - modern-brands
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-035.webp
 attributes:
   negativePrompt: photoreal, goofy-comedy, fluorescent-cyber, modern-brands, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

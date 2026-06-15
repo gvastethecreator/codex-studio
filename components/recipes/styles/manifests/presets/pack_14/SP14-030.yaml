@@ -4,8 +4,14 @@ packId: pack_14
 name: Feathered Eclipse Continuity
 category: 9. Mythic — Mesoamerican Suns
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - mesoamerican-myth
 visualDna:
   aesthetic: Feathered eclipse continuity where celestial shadow becomes divine recalibration.
   form_and_line: Stepped pyramid cues, serpent balustrades, and rhythmic processional plaza geometry.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Cosmic urgency, civic ritual, and awe under celestial shadow.
   key_features: Feathered serpent motifs, eclipse disk, ritual stairway cues, abstract codex wall panels.
   creative_brief: Recast the input through feathered eclipse continuity, negotiating survival through celestial recalibration without requiring a causeway.
-avoidRules: [photoreal, caricature, futuristic-neon, steampunk-gears, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-030.webp }
+avoidRules:
+  - photoreal
+  - caricature
+  - futuristic-neon
+  - steampunk-gears
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-030.webp
 attributes:
   negativePrompt: photoreal, caricature, futuristic-neon, steampunk-gears, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-mesoamerican-suns,
-    categoryName: 9. Mythic — Mesoamerican Suns,
-    tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-mesoamerican-suns
+  categoryName: 9. Mythic — Mesoamerican Suns
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - mesoamerican-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

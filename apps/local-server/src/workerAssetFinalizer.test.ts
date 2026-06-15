@@ -38,7 +38,7 @@ describe('workerAssetFinalizer', () => {
       projectId: 'project-1',
       jobId: 'job-finalizer-1',
       filePath: organizedPath,
-      thumbnailPath: null,
+      thumbnailPath: `${organizedPath}.thumb.webp`,
       publicUrl: '/library/outputs/final.png',
       prompt: 'prompt',
       width: null,
@@ -51,9 +51,9 @@ describe('workerAssetFinalizer', () => {
       id: 'catalog-1',
       libraryId: 'library-1',
       filePath: organizedPath,
-      thumbnailPath: null,
+      thumbnailPath: `${organizedPath}.thumb.webp`,
       publicUrl: '/library/outputs/final.png',
-      thumbnailUrl: null,
+      thumbnailUrl: '/library/outputs/final.thumb.webp',
       prompt: 'prompt',
       negativePrompt: null,
       aspectRatio: null,
@@ -118,6 +118,7 @@ describe('workerAssetFinalizer', () => {
       })),
       organizeGeneratedAssetPath: vi.fn(() => organizedPath),
       inferGeneratedAssetMimeType: vi.fn(() => 'image/png'),
+      ensureThumbnailVariant: vi.fn(async () => `${organizedPath}.thumb.webp`),
     });
 
     try {
@@ -138,7 +139,14 @@ describe('workerAssetFinalizer', () => {
       expect(addAsset).toHaveBeenCalledWith(
         expect.objectContaining({
           filePath: organizedPath,
+          thumbnailPath: `${organizedPath}.thumb.webp`,
           publicUrl: '/library/outputs/final.png',
+        }),
+      );
+      expect(registerCatalogImage).toHaveBeenCalledWith(
+        expect.objectContaining({
+          filePath: organizedPath,
+          thumbnailPath: `${organizedPath}.thumb.webp`,
         }),
       );
       expect(updateJobStatus).toHaveBeenCalledWith('job-finalizer-1', 'completed');

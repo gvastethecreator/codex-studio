@@ -4,8 +4,14 @@ packId: pack_15
 name: Rain Kernel Alleyglass
 category: 6. Corepunk — Cyberpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, cyberpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - cyberpunk
 visualDna:
   aesthetic: Intimate cyberpunk glass-and-rain grammar where microcomputing, wet reflections, and transparent circuitry create humane nocturnal density.
   form_and_line: Thin circuit filaments, glass shard panels, rain-streak verticals, and kernel-like glowing node clusters.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Alleyglass compression through stacked translucent planes without requiring an alley, building, person, or device.
   atmosphere: Quiet, encrypted, damp, humane, watchful.
   key_features: Rain-streak circuitry, transparent kernel nodes, glass-plane layering, diode constellations, and warm repair-light accents.
-  creative_brief: >-
-    Compress the input into rain kernel alleyglass: wet transparent circuitry,
-    black-glass layers, electric-blue micro nodes, magenta diode constellations,
-    and warm repair-light accents apply without requiring a city alley, gadgets,
-    or readable UI text.
-avoidRules: [photoreal, sunny-pastoral, militarized, fantasy-medieval, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-133.webp }
+  creative_brief: 'Compress the input into rain kernel alleyglass: wet transparent circuitry, black-glass layers, electric-blue micro nodes, magenta diode constellations, and warm repair-light accents apply without requiring a city alley, gadgets, or readable UI text.'
+avoidRules:
+  - photoreal
+  - sunny-pastoral
+  - militarized
+  - fantasy-medieval
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-133.webp
 attributes:
   negativePrompt: photoreal, sunny-pastoral, militarized, fantasy-medieval, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-cyberpunk,
-    categoryName: 6. Corepunk — Cyberpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, cyberpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-cyberpunk
+  categoryName: 6. Corepunk — Cyberpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - cyberpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

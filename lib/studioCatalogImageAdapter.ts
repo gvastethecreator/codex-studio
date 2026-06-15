@@ -4,6 +4,7 @@ import { toStudioAssetUrl } from '../services/localStudioService';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 
 export const GRID_THUMBNAIL_MAX_EDGE = 512;
+export const MODAL_PREVIEW_MAX_EDGE = 1024;
 
 export interface MaterializeCatalogEntryImageOptions {
   batchId?: string;
@@ -28,6 +29,13 @@ export function resolveCatalogEntryThumbnailUrl(
     : toStudioAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge });
 }
 
+export function resolveCatalogEntryPreviewUrl(
+  entry: Pick<CatalogImage, 'publicUrl'>,
+  maxEdge = MODAL_PREVIEW_MAX_EDGE,
+) {
+  return toStudioAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge });
+}
+
 export function materializeCatalogEntryImage(
   entry: CatalogImage,
   options: MaterializeCatalogEntryImageOptions = {},
@@ -39,6 +47,7 @@ export function materializeCatalogEntryImage(
     id: entry.id,
     src: toStudioAssetUrl(entry.publicUrl),
     thumbnail: options.thumbnail ?? resolveCatalogEntryThumbnailUrl(entry),
+    preview: resolveCatalogEntryPreviewUrl(entry),
     batchId,
     createdAt,
     isFavorite: entry.isFavorite,

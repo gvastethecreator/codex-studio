@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Longitudinal sacred-tech depth with processional vector symmetry.
   atmosphere: Triumphal curiosity, solemn innovation, and civic mythmaking.
   key_features: Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.
-  creative_brief: >-
-    Give the input sacred-science scale: rocket arches, plasma-blue ribs, mission-mosaic grids, ivory ceramic light, and
-    processional launch symmetry. Cathedral or arcade cues may appear, but the style is civic mythmaking through
-    monumental function, not worship staging. Apply this corepunk genre grammar over any input: preserve the faction
-    mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required
-    city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Give the input sacred-science scale: rocket arches, plasma-blue ribs, mission-mosaic grids, ivory ceramic light, and processional launch symmetry. Cathedral or arcade cues may appear, but the style is civic mythmaking through monumental function, not worship staging. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dystopian-decay
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

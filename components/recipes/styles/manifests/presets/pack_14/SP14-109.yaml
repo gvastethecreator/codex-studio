@@ -4,8 +4,13 @@ packId: pack_14
 name: Blackwater Confessional Reflection
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Confessional noir translated through blackwater reflections, secrecy, and ritual cleansing.
   form_and_line: Narrow vertical screen forms, water reflection bands, and arch-slit cues.
@@ -16,18 +21,29 @@ visualDna:
   spatial_distortion: Repeated screen rhythm over a submerged void feeling, usable on subjects or objects.
   atmosphere: Admission, secrecy, and ritual cleansing.
   key_features: Confessional screens, blackwater basin cues, whisper-grille textures.
-  creative_brief: Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, or religious props.
-avoidRules: [photoreal, cute, pastel, watermark, text, logo, daytime]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-109.webp }
+  creative_brief: Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, bedrooms, beds, domestic interiors, or religious props.
+avoidRules:
+  - photoreal
+  - cute
+  - pastel
+  - watermark
+  - text
+  - logo
+  - daytime
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-109.webp
 attributes:
-  negativePrompt: photoreal, cute, pastel, watermark, text, logo, daytime
+  negativePrompt: photoreal, cute, pastel, watermark, text, logo, daytime, bedroom, bed, sofa, domestic interior, side table
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

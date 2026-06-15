@@ -31,10 +31,8 @@ visualDna:
   key_features: Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.
   creative_brief: >-
     Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de
-    borde y macro-perspectiva. La identidad viene de continuidad anular y planificación biosférica. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    borde y macro-perspectiva. La identidad viene de continuidad anular y planificacion biosferica. Conserva curvatura
+    orbital, ecologia lineal, escala macro y horizonte ascendente sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - globe
 assets:

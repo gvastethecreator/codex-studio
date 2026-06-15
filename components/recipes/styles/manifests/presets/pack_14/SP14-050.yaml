@@ -4,8 +4,14 @@ packId: pack_14
 name: River Styx Passage Toll
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Underworld passage toll language enforcing solemn rites, coin debt, and fatal bureaucracy.
   form_and_line: Fort-wall cues, mooring stairs, and toll altar symmetry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Fatal bureaucracy and solemn inevitability.
   key_features: Ferryman dock cues, coin basins, oath obelisks.
   creative_brief: Recast any input through River Styx passage toll, where every form feels weighed against the cost of crossing. Use fatal bureaucracy, coin-worn bronze, fog falloff, toll symmetry, and wet-stone gravity without requiring ferrymen, docks, rivers, boats, coins, or an underworld scene.
-avoidRules: [photoreal, comedy, bright-pop, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-050.webp }
+avoidRules:
+  - photoreal
+  - comedy
+  - bright-pop
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-050.webp
 attributes:
   negativePrompt: photoreal, comedy, bright-pop, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

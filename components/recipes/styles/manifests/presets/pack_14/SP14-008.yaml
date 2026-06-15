@@ -4,8 +4,14 @@ packId: pack_14
 name: Funeral Rose Psychopomp
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, psychopomp-legend]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - psychopomp-legend
 visualDna:
   aesthetic: Mythic psychopomp legend translated into solemn chivalric funerary grace.
   form_and_line: Processional profile rhythm, soul-guiding blade-like diagonals, heraldic floral drapery, and threshold arcs.
@@ -16,22 +22,29 @@ visualDna:
   spatial_distortion: Threshold-axis perspective leading toward symbolic passage without requiring a necropolis or mausoleum.
   atmosphere: Sacred mourning, oath-bound honor, and tender fatality.
   key_features: Soulward rose trails, vigil-cavalier cues, boundary-gate silhouettes, funerary silver, and ceremonial mourning standards.
-  creative_brief: >-
-    Escort the input through funeral rose psychopomp grace: withered crimson,
-    velvet black, silver threshold light, rose-trail arcs, and chivalric mourning
-    silhouettes should make any subject feel duty-bound and tenderly fatal
-    without requiring a rider, dead soul, cemetery, gate, or funeral procession.
-avoidRules: [photoreal, cartoon-comedy, bright-summer, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-008.webp }
+  creative_brief: 'Escort the input through funeral rose psychopomp grace: withered crimson, velvet black, silver threshold light, rose-trail arcs, and chivalric mourning silhouettes should make any subject feel duty-bound and tenderly fatal without requiring a rider, dead soul, cemetery, gate, or funeral procession.'
+avoidRules:
+  - photoreal
+  - cartoon-comedy
+  - bright-summer
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-008.webp
 attributes:
   negativePrompt: photoreal, cartoon-comedy, bright-summer, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic, psychopomp-legend],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - psychopomp-legend
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

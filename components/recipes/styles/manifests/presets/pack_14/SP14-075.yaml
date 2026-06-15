@@ -4,8 +4,14 @@ packId: pack_14
 name: Raven Signal Intelligence
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Raven signal intelligence where bird flight, war messages, and state secrets converge.
   form_and_line: Signal tower cues, perched standards, and stone map-court geometry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Surveillance, strategy, and mythic intelligence.
   key_features: Raven roost towers, map stones, signal fires.
   creative_brief: Reinterpret the input through raven signal intelligence, letting birds carry hidden strategic meaning without requiring a plateau.
-avoidRules: [photoreal, cute-style, cyberpunk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-075.webp }
+avoidRules:
+  - photoreal
+  - cute-style
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-075.webp
 attributes:
   negativePrompt: photoreal, cute-style, cyberpunk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

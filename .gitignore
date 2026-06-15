@@ -41,6 +41,8 @@ components/recipes/styles/defaults/.locks/
 components/recipes/styleRuntimeData.generated.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
+lib/staleStyleDefaultImages.generated.check.*.tmp.ts
+lib/styleDefaultImages.generated.check.*.tmp.ts
 
 # Failure telemetry from past runs (do not commit)
 assets/recipes/styles/defaults/failures-pack_*.json

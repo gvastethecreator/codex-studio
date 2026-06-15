@@ -4,8 +4,13 @@ packId: pack_15
 name: Sun Reservoir Commons
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: Hydrological solarpunk commons where storage, cooling, and gathering merge as one calm civic pattern.
   form_and_line: Concentric reservoir-like rings, stepped edge rhythms, and radial circulation paths.
@@ -16,22 +21,28 @@ visualDna:
   spatial_distortion: Amphitheater-like basin depth emphasizing a multifunctional water-energy core without requiring a plaza.
   atmosphere: Collective comfort, thermal relief, and visible ecological stewardship.
   key_features: Thermal battery basins, refill-node motifs, mist-pergola rhythm, and mixed-use civic occupancy cues.
-  creative_brief: >-
-    Recast the input as a cooling civic hydrology object: concentric aquifer
-    rings, mist-pergola shadows, pale porous stone, and blue thermal relief
-    highlights. Basins, kiosks, crowds, or commons may support the read, but the
-    style should travel as calm water governance and sun-tempered geometry.
-avoidRules: [photoreal, militarized, dirty-chaos, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-005.webp }
+  creative_brief: 'Recast the input as a cooling civic hydrology object: concentric aquifer rings, mist-pergola shadows, pale porous stone, and blue thermal relief highlights. Basins, kiosks, crowds, or commons may support the read, but the style should travel as calm water governance and sun-tempered geometry.'
+avoidRules:
+  - photoreal
+  - militarized
+  - dirty-chaos
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-005.webp
 attributes:
   negativePrompt: photoreal, militarized, dirty-chaos, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

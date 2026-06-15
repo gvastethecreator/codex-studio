@@ -4,8 +4,14 @@ packId: pack_14
 name: Bronze Smoke Oracle Fragment
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Delphic divination austerity with bronze smoke, aristocratic protocol, and prophetic unease.
   form_and_line: Circular tripod-dais cues, ascending amphitheater steps, and laurel-pattern friezes.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Ambiguous revelation, sacred protocol, and political dread.
   key_features: Tripod oracle cues, smoke vents, supplicant terraces, laurel votive marks.
   creative_brief: Reinterpret the input through bronze-smoke oracle fragments, making truth arrive broken through ritual smoke without requiring a sanctuary.
-avoidRules: [photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-020.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - candy-colors
+  - cyberpunk-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-020.webp
 attributes:
   negativePrompt: photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

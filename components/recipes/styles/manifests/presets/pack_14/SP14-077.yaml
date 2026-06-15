@@ -4,8 +4,14 @@ packId: pack_14
 name: Glacier Thing Deliberation
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Glacier Thing deliberation where governance happens under mortal weather and cold law.
   form_and_line: Circular bench cues, speaker stone, and herald poles.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Deliberation, conflict, and communal accountability.
   key_features: Lawspeaker mound, clan banners, oath ring.
   creative_brief: Recast the input through glacier Thing deliberation, turning governance into cold public oath without requiring a parliament.
-avoidRules: [photoreal, cartoon, cyberpunk-city, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-077.webp }
+avoidRules:
+  - photoreal
+  - cartoon
+  - cyberpunk-city
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-077.webp
 attributes:
   negativePrompt: photoreal, cartoon, cyberpunk-city, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

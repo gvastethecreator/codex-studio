@@ -4,8 +4,14 @@ packId: pack_14
 name: Lion Rain Sovereignty
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Lion-guarded rain sovereignty where weather negotiation becomes governance.
   form_and_line: Lion-standard silhouettes, rain-channel lines, banner-post rhythm, and sovereign vertical pressure.
@@ -16,22 +22,29 @@ visualDna:
   spatial_distortion: Frontal authority perspective with deep ceremonial tiers without requiring a throne.
   atmosphere: Authority, supplication, and climatic suspense.
   key_features: Lion standards, rain basins, praise-drum rhythm, ocher authority fields, and storm-gold suspense.
-  creative_brief: >-
-    Sovereign the input through lion rain negotiation: ocher mass, storm-gray
-    sky pressure, gold authority glints, rain-channel geometry, and lion-standard
-    cues should make weather feel governed without requiring a throne, ruler,
-    palace, drum circle, or ritual assembly.
-avoidRules: [photoreal, cartoon, neon-city, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-058.webp }
+  creative_brief: 'Sovereign the input through lion rain negotiation: ocher mass, storm-gray sky pressure, gold authority glints, rain-channel geometry, and lion-standard cues should make weather feel governed without requiring a throne, ruler, palace, drum circle, or ritual assembly.'
+avoidRules:
+  - photoreal
+  - cartoon
+  - neon-city
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-058.webp
 attributes:
   negativePrompt: photoreal, cartoon, neon-city, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

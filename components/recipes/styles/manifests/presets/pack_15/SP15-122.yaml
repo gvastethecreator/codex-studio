@@ -4,8 +4,14 @@ packId: pack_15
 name: Waveforge Dockyard
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Waveforge seapunk where waves are shaped through elegant marine fabrication.
   form_and_line: Work-dock arms, wave-shaping fins, modular platform bands, and forged current curves.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Industrial dock-like geometry softened by wave curves.
   atmosphere: Making, flow, and oceanic adaptation.
   key_features: Wave fins, fabrication cradles, marine-hand motifs, and shaped current seams.
-  creative_brief: >-
-    Forge the input through shaped current craft: teal wave fins, chrome wet
-    steel, coral fabrication cradles, modular dock bands, and sea-slick stone
-    make any subject feel made by adaptive ocean machinery.
-avoidRules: [photoreal, rust, diesel, watermark, text, logo, sludge]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-122.webp }
+  creative_brief: 'Forge the input through shaped current craft: teal wave fins, chrome wet steel, coral fabrication cradles, modular dock bands, and sea-slick stone make any subject feel made by adaptive ocean machinery.'
+avoidRules:
+  - photoreal
+  - rust
+  - diesel
+  - watermark
+  - text
+  - logo
+  - sludge
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-122.webp
 attributes:
   negativePrompt: photoreal, rust, diesel, watermark, text, logo, sludge
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

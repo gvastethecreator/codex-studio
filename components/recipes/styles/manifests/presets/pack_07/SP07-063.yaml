@@ -12,27 +12,27 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Orden funerario monumental con grandeza sepulcral y civismo necromántico de escala masiva.
+  aesthetic: Monumentalidad ceremonial sepulcral con gravedad ritual y civismo mineral de escala masiva.
   form_and_line: >-
-    Axialidad dominada por obeliscos, masas escalonadas, retículas de cripta y siluetas severas de
-    puntas rituales.
+    Axialidad severa, masas escalonadas, cÃ¡maras selladas, retÃ­culas lapÃ­deas y acentos verticales
+    de rito contenido.
   color_palette: >-
     Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and
     bruised violet shadow fields
   lighting_setup: >-
-    Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de
-    cementerio.
+    Glow bajo mineral, difusiÃ³n lunar pÃ¡lida, faroles espectrales contenidos y niebla volumÃ©trica
+    de enclave sellado.
   material_texture: >-
-    Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios
+    SillerÃ­a erosionada, mÃ¡rmol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios
     tallados.
-  render_quality: Dark fantasy arquitectónica de alto detalle con contención tonal y lectura monumental opresiva.
-  spatial_distortion: Profundidad axial procesional con compresión sepulcral controlada.
-  atmosphere: Solemne, ritualista y opresiva, con silencio acústico de enclave enterrado.
-  key_features: Ritmo procesional de obeliscos, criptas apiladas, wayfinding rúnico y umbrales masivos.
+  render_quality: Dark fantasy arquitectÃ³nica de alto detalle con contenciÃ³n tonal y lectura monumental opresiva.
+  spatial_distortion: Profundidad axial procesional con compresiÃ³n sepulcral controlada.
+  atmosphere: Solemne, ritualista y opresiva, con silencio acÃºstico de recinto contenido.
+  key_features: Ritmo procesional, cÃ¡maras selladas, wayfinding rÃºnico y umbrales masivos.
   creative_brief: >-
-    Lleva cualquier input a civismo funerario monumental: axialidad procesional, piedra severa, baja
-    luz espectral, bronce oxidado y jerarquías de cripta. Evita cementerio literal como requisito;
-    sostén solemnidad arquitectónica.
+    Lleva cualquier input a monumentalidad ceremonial sepulcral: axialidad procesional, piedra
+    severa, baja luz espectral, bronce oxidado y jerarquÃ­as de recinto sellado. Evita cementerio,
+    obelisco o cripta literal como requisito; sostÃ©n solemnidad arquitectÃ³nica portable.
 avoidRules:
   - life
   - lush vegetation

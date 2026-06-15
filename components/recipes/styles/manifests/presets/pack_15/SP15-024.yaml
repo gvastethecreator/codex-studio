@@ -22,13 +22,7 @@ visualDna:
   spatial_distortion: Layered close-range composition with nested private-depth pockets.
   atmosphere: Confidential intrigue, aristocratic modernity, and hushed momentum.
   key_features: Smoked mirror seams, fan-lamp halos, turbine reliefs, and velvet shadow gradients.
-  creative_brief: >-
-    Compress the input into confidential decopunk opulence: burgundy velvet shadows, smoked mirror seams, turbine
-    reliefs, brass fan halos, and nested secrecy pockets. Salons and interiors may appear as anchors, but the style
-    should transfer as tactile intrigue and controlled private momentum. Apply this corepunk genre grammar over any
-    input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color
-    tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Compress the input into confidential decopunk opulence: burgundy velvet shadows, smoked mirror seams, turbine reliefs, brass fan halos, and nested secrecy pockets. Salons and interiors may appear as anchors, but the style should transfer as tactile intrigue and controlled private momentum. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - minimalist-office
@@ -54,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

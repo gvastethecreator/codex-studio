@@ -4,10 +4,16 @@ packId: pack_14
 name: Obsidian Ballcourt Solar Oath
 category: 9. Mythic — Mesoamerican Suns
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - mesoamerican-myth
 visualDna:
-  aesthetic: Obsidian ballcourt solar oath where contest, sacrifice, and cosmic order intersect.
+  aesthetic: Obsidian ballcourt solar oath where contest, ceremonial offering, and cosmic order intersect.
   form_and_line: Sloped stone wall cues, ring markers, and strict bilateral field geometry.
   color_palette: Obsidian black, dusty ochre, and ceremonial turquoise.
   lighting_setup: Low golden dusk with brazier flares at cardinal stations.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Competitive solemnity, civic spectacle, and metaphysical stakes.
   key_features: Ballcourt rings, priestly terrace cues, war banners, eclipse stele.
   creative_brief: Reinterpret the input through obsidian ballcourt solar oath, where victory reads as alignment with solar destiny without requiring a court.
-avoidRules: [photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-032.webp }
+avoidRules:
+  - photoreal
+  - comedic-sports
+  - modern-stadium-tech
+  - neon-city
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-032.webp
 attributes:
   negativePrompt: photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-mesoamerican-suns,
-    categoryName: 9. Mythic — Mesoamerican Suns,
-    tags: [mythic-noir-curated-vault, mythic, mesoamerican-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-mesoamerican-suns
+  categoryName: 9. Mythic — Mesoamerican Suns
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - mesoamerican-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

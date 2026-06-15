@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Ceremonial flame couture, Capitol excess, girl-on-fire reference, controlled-combustion spectacle
-  form_and_line: Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train
+  aesthetic: Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle
+  form_and_line: Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic
   color_palette: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
   lighting_setup: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
   material_texture: Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile
-  render_quality: Dangerous, hot, Cinna-design spectacle, Capitol-television perfection
-  spatial_distortion: Burning
-  atmosphere: Powerful, magic, revolutionary-symbol awe, controlled-combustion beauty
-  key_features: Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect
+  render_quality: Dangerous, hot, prestige-spectacle finish, broadcast-polish combustion
+  spatial_distortion: None
+  atmosphere: Powerful, incandescent, ceremonial, controlled-combustion awe
+  key_features: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges
   creative_brief: >-
     Ignite the input with flame-couture behavior: ember trails, heat shimmer,
-    cape-like combustion, synthetic flame fibers, gold-white cores and smoke
-    haze. Keep Girl-on-Fire/Capitol spectacle as style anchor without requiring
-    tribute parade, arena entrance, hemline body or battle narrative.
+    combustion-plume sweep, synthetic flame fibers, gold-white cores and smoke
+    haze. Keep televised ceremonial spectacle as style pressure only; do not
+    require a body hemline, parade entrance, arena narrative or explicit IP
+    reenactment.
 avoidRules:
   - cold
 assets:

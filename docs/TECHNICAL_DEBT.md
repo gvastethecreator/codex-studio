@@ -75,6 +75,7 @@ Recent delta:
 
 - `useStudioSettings` removed the flat compatibility interface and now exposes only domain seams (`settingsDomain`, `providerDomain`, `outputSourcesDomain`) for shell callers.
 - `createStudioApp` composition tests now also cover codex failure-path behavior and app-server runtime dependency wiring.
+- `createStudioApp` now accepts library/workspace route dependency overrides; workspace routes no longer require singleton functions at route construction, and composition tests cover injected library/workspace lists.
 
 ## Prioridad media
 

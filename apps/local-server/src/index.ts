@@ -8,14 +8,16 @@ export { createStudioApp } from './appFactory';
 if (import.meta.main) {
   const studio = await createStudioApp();
   const port = getSettings().serverPort;
+  const hostname = '127.0.0.1';
 
   log(
     'info',
     'server',
-    `Local server starting on http://localhost:${port}. Library: ${studio.config.libraryDir}`,
+    `Local server starting on http://${hostname}:${port}. Library: ${studio.config.libraryDir}`,
   );
 
   Bun.serve({
+    hostname,
     port,
     fetch(req, server) {
       if (new URL(req.url).pathname === '/api/events') {
@@ -26,7 +28,7 @@ if (import.meta.main) {
     },
   });
 
-  console.log(`Codex Studio local-server listening on http://localhost:${port}`);
+  console.log(`Codex Studio local-server listening on http://${hostname}:${port}`);
 
   const recoverableJobs = listRecoverableJobs();
   for (const job of recoverableJobs) {

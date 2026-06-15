@@ -4,8 +4,14 @@ packId: pack_14
 name: Eclipse Meridian Verdict
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, cosmology]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - cosmology
 visualDna:
   aesthetic: Eclipse-meridian verdict language with judicial dread and cosmic inevitability.
   form_and_line: Meridian spine, stepped tribunal cues, and celestial arcs.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Judicial dread and cosmic inevitability.
   key_features: Meridian obelisk, shadow dial, omen-choir pit cues.
   creative_brief: Transform the input through eclipse-meridian verdict geometry, making celestial alignment feel legally binding without requiring a chamber.
-avoidRules: [photoreal, comedic, neon-future, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-082.webp }
+avoidRules:
+  - photoreal
+  - comedic
+  - neon-future
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-082.webp
 attributes:
   negativePrompt: photoreal, comedic, neon-future, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic, cosmology],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - cosmology
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

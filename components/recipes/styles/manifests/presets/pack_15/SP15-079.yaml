@@ -4,8 +4,14 @@ packId: pack_15
 name: Moonwater Clinic Arcade
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Abstract moonwater care style with transparent softness, public-health clarity, and calm hydrothermic trust.
   form_and_line: Arcade-like ribs, basin curves, pod ovals, kiosk-like rectangles, and water-channel thresholds.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Courtyard-like layering around water channels makes care access visible without forcing a clinic scene.
   atmosphere: Care, trust, shared resilience, public dignity, and clean lunar humidity.
   key_features: Aqua basin curves, pod ovals, transparent green partitions, rose-beige softness, and public-care wayfinding.
-  creative_brief: >-
-    Care for the input through moonwater public health design: aqua basin curves,
-    rose-beige softness, algae-glass partitions, pod ovals, and clean civic
-    beacons make any subject feel transparent, water-cooled, and trustworthy.
-avoidRules: [photoreal, dystopian-lab, cyber-grime, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-079.webp }
+  creative_brief: 'Care for the input through moonwater public health design: aqua basin curves, rose-beige softness, algae-glass partitions, pod ovals, and clean civic beacons make any subject feel transparent, water-cooled, and trustworthy.'
+avoidRules:
+  - photoreal
+  - dystopian-lab
+  - cyber-grime
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-079.webp
 attributes:
   negativePrompt: photoreal, dystopian-lab, cyber-grime, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

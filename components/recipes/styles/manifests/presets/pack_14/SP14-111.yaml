@@ -4,8 +4,13 @@ packId: pack_14
 name: Ash Choir Absence
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Silent choir absence expressed through ash traces, tall arch cues, and echoing negative space.
   form_and_line: Tall arch rhythms, ash streaks, and layered alcove silhouettes.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Absence, prayer, and echoing memory.
   key_features: Ash drifts, choir-stall traces, sealed-door silhouettes.
   creative_brief: Render the input through ash choir absence, leaving the feeling of vanished voices and ritual architecture without requiring a foyer.
-avoidRules: [photoreal, busy-patterns, daylight, watermark, text, logo, cute]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-111.webp }
+avoidRules:
+  - photoreal
+  - busy-patterns
+  - daylight
+  - watermark
+  - text
+  - logo
+  - cute
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-111.webp
 attributes:
   negativePrompt: photoreal, busy-patterns, daylight, watermark, text, logo, cute
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

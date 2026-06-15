@@ -4,8 +4,13 @@ packId: pack_15
 name: Tidal Bioport Exchange
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: Amphibious solarpunk exchange where tidal rhythm, porous biology, and civic logistics fuse into one material language.
   form_and_line: Branched pier-like vectors, floating modular bands, and articulated bio-structural ribs.
@@ -16,22 +21,29 @@ visualDna:
   spatial_distortion: Multi-level harbor-like depth guiding the eye through modular exchange layers without requiring a port.
   atmosphere: Cooperative momentum, ocean stewardship, and optimistic trade energy.
   key_features: Tidal turbine motifs, floating exchange decks, amphibious micro-transit patterning.
-  creative_brief: >-
-    Give the input amphibious civic metabolism: wet bioceramic ribs,
-    tide-powered modular layers, floating exchange bands, and seafoam logistics
-    marks. Docks, boats, cargo, or harbor cues can appear as style anchors, but
-    the transferable language is porous exchange and tidal motion.
-avoidRules: [photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-003.webp }
+  creative_brief: 'Give the input amphibious civic metabolism: wet bioceramic ribs, tide-powered modular layers, floating exchange bands, and seafoam logistics marks. Docks, boats, cargo, or harbor cues can appear as style anchors, but the transferable language is porous exchange and tidal motion.'
+avoidRules:
+  - photoreal
+  - industrial-smog
+  - bleak-gray
+  - warlike-port
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-003.webp
 attributes:
   negativePrompt: photoreal, industrial-smog, bleak-gray, warlike-port, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

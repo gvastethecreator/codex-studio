@@ -4,8 +4,14 @@ packId: pack_14
 name: Willow Fox Oath Arbitration
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Willow fox oath arbitration where lies alter shadow and fox spirits judge deception.
   form_and_line: Courtyard-rectangle cues, willow curtains, and raised tribunal platform.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Elegant menace, legal mysticism, and quiet negotiation.
   key_features: Fox judge masks, oath stones, incense testimony braziers.
   creative_brief: Transform the input through willow fox oath arbitration, where deception visibly changes shadow without requiring a court.
-avoidRules: [photoreal, goofy-style, cyberpunk-neon, modern-courtroom, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-042.webp }
+avoidRules:
+  - photoreal
+  - goofy-style
+  - cyberpunk-neon
+  - modern-courtroom
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-042.webp
 attributes:
   negativePrompt: photoreal, goofy-style, cyberpunk-neon, modern-courtroom, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -22,10 +22,9 @@ visualDna:
   atmosphere: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
   key_features: Gold usekh collar, kohl-line cues, uraeus or crown detail, pleated kalasiris
   creative_brief: >-
-    Render the input through Ancient Egyptian regalia: pleated linen, usekh
-    collar spread, faience beads, lapis, turquoise, electrum and kohl-like line
-    precision. Keep pharaonic divinity without requiring a pharaoh/queen,
-    temple, desert pose, crook/flail or human eyes.
+    Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience
+    beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without
+    requiring a pharaoh, queen, temple, desert pose, crook/flail or human eyes.
 avoidRules:
   - pants
   - modern

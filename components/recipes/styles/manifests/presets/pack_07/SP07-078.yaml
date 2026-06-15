@@ -29,10 +29,8 @@ visualDna:
   key_features: Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.
   creative_brief: >-
     Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería
-    recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar facción, personaje o nave. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar faccion, personaje o nave. Conserva modularidad
+    hive, conducciones densas, fosforescencia verde y utilidad colectiva sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - smooth
 assets:

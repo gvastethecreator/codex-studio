@@ -21,16 +21,8 @@ visualDna:
   render_quality: Expansive transport concept with period detail, arrival choreography, and clean diplomatic staging.
   spatial_distortion: Runway-like vanishing lines and diagonals turn arrival into a staged procession under monumental fins.
   atmosphere: Prestige travel, geopolitical theater, aristocratic mobility, and wind-polished anticipation.
-  key_features: >-
-    Deco control-fin motifs, ceremonial ramp marks, monogrammed bands, finned door shapes, and polished luggage-line
-    rhythms.
-  creative_brief: >-
-    Stage the input as prestige arrival: wing-canopy sweeps, finned authority, brass runway glints, leather travel
-    marks, and monogrammed red accents should turn motion into ceremony. Airfields or aircraft cues may appear, but the
-    style is aristocratic mobility and wind-polished anticipation. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  key_features: Deco control-fin motifs, ceremonial ramp marks, monogrammed bands, finned door shapes, and polished luggage-line rhythms.
+  creative_brief: 'Stage the input as prestige arrival: wing-canopy sweeps, finned authority, brass runway glints, leather travel marks, and monogrammed red accents should turn motion into ceremony. Airfields or aircraft cues may appear, but the style is aristocratic mobility and wind-polished anticipation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - gritty-cyber
@@ -55,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

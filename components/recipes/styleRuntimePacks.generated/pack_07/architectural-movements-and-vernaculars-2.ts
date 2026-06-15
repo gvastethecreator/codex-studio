@@ -118,23 +118,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, asymmetry',
     style: {
       aesthetic:
-        'Neoclásico institucional de autoridad cívica, orden axial y monumentalidad racional.',
+        'Neoclasico institucional de autoridad civica, orden axial y monumentalidad racional.',
       form_and_line:
-        'Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetría estricta.',
+        'Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetria estricta.',
       color_palette:
-        'Mármol blanco, caliza clara, piedra fría y bronce dorado con sombras gris azuladas.',
+        'Marmol blanco, caliza clara, piedra fria y bronce dorado con sombras gris azuladas.',
       lighting_setup:
-        'Sol lateral que estría columnas, sombras porticadas profundas y acentos nocturnos monumentales.',
+        'Sol lateral que estria columnas, sombras porticadas profundas y acentos nocturnos monumentales.',
       material_texture:
-        'Piedra lisa, mármol cincelado, granito pulido, yeso colado y cobre con verdín.',
+        'Piedra lisa, marmol cincelado, granito pulido, yeso colado y cobre con verdin.',
       render_quality:
-        'Monumental clásico de proporción rigurosa y legibilidad institucional permanente.',
-      spatial_distortion: 'Perspectiva axial neutra con jerarquía frontal y escala ceremonial.',
-      atmosphere: 'Seria, estable, cívica y atemporal.',
+        'Monumental clasico de proporcion rigurosa y legibilidad institucional permanente.',
+      spatial_distortion: 'Perspectiva axial neutra con jerarquia frontal y escala ceremonial.',
+      atmosphere: 'Seria, estable, civica y atemporal.',
       key_features:
-        'Orden columnario, frontón canónico, basamento escalonado, masa cívica y composición perfectamente simétrica.',
+        'Orden columnario, fronton canonico, basamento escalonado, masa civica y composicion perfectamente simetrica.',
       creative_brief:
-        'Define una gramática neoclásica transferible por proporción, eje y orden tectónico. La autoridad debe emerger de la composición y la masa pétrea, evitando retórica narrativa o escenográfica.',
+        'Convierte cualquier input en una gramatica neoclasica de eje, proporcion y masa petrea disciplinada. La autoridad debe surgir del orden tectonico y la claridad ceremonial, no de un capitolio, tribunal o fachada especifica.',
     },
   },
   {
@@ -144,24 +144,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'brick, square',
     style: {
       aesthetic:
-        'Parametricismo fluido de lógica algorítmica, continuidad topológica y espacialidad casi líquida.',
+        'Parametricismo fluido de logica algoritmica, continuidad topologica y espacialidad casi liquida.',
       form_and_line:
-        'Curvas continuas, superficies sin junta visible, volúmenes morfogenéticos y transiciones tipo cinta.',
+        'Curvas continuas, superficies sin junta visible, volumenes morfogeneticos y transiciones tipo cinta.',
       color_palette:
-        'Blanco técnico, gris frío gradual, plata líquida y azul hielo en señal lumínica.',
+        'Blanco tecnico, gris frio gradual, plata liquida y azul hielo en senal luminica.',
       lighting_setup:
-        'Ambiente suave continuo, líneas de glow embebidas, iluminación de borde y núcleos de volumen activos.',
+        'Ambiente suave continuo, lineas de glow embebidas, iluminacion de borde y nucleos de volumen activos.',
       material_texture:
-        'Compuestos lisos, hormigón de piel continua, panelería GRP y membranas tensadas de alta precisión.',
+        'Compuestos lisos, hormigon de piel continua, paneleria GRP y membranas tensadas de alta precision.',
       render_quality:
-        'Futurista de precisión computacional, con lectura limpia de geometría compleja y detalle constructivo plausible.',
+        'Futurista de precision computacional, con lectura limpia de geometria compleja y detalle constructivo plausible.',
       spatial_distortion:
         'Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.',
-      atmosphere: 'Elegante, avanzada, ligera y matemática.',
+      atmosphere: 'Elegante, avanzada, ligera y matematica.',
       key_features:
-        'Vórtices continuos, porosidad algorítmica, patrones paramétricos y canales formales sin junta visible.',
+        'Vertices continuos, porosidad algoritmica, patrones parametricos y canales formales sin junta visible.',
       creative_brief:
-        'Construye una gramática paramétrica transferible donde continuidad de superficie, variación algorítmica y precisión constructiva sean inseparables. Debe sentirse computacional sin depender de un edificio específico.',
+        'Convierte cualquier input en una gramatica parametrica donde continuidad de superficie, variacion algoritmica y precision constructiva operen como un solo sistema. Debe sentirse computacional y morfogenetico sin depender de un edificio heroico concreto.',
     },
   },
   {
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain, grey',
     style: {
       aesthetic:
-        'Revival victoriano cromático de ornamento pintado, identidad barrial y detalle carpintero exuberante.',
+        'Revival victoriano cromatico de ornamento pintado, identidad barrial y detalle carpintero exuberante.',
       form_and_line:
         'Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad estrecha.',
       color_palette:
@@ -179,16 +179,16 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.',
       material_texture:
-        'Siding de madera, pintura multicapa, calados finos, aleros con ménsulas y tejuela decorativa.',
+        'Siding de madera, pintura multicapa, calados finos, aleros con mensulas y tejuela decorativa.',
       render_quality:
-        'Detalle residencial histórico de alta legibilidad ornamental con alegría cromática controlada.',
+        'Detalle residencial historico de alta legibilidad ornamental con alegria cromatica controlada.',
       spatial_distortion:
-        'Perspectiva estable centrada en jerarquía de ornamentación y capas cromáticas verticales.',
-      atmosphere: 'Nostálgica, festiva, cívica y orgullosamente preservada.',
+        'Perspectiva estable centrada en jerarquia de ornamentacion y capas cromaticas verticales.',
+      atmosphere: 'Nostalgica, festiva, civica y orgullosamente preservada.',
       key_features:
-        'Esquemas tricromos, salientes facetados, tejuela fish-scale y carpintería recortada de alta densidad.',
+        'Esquemas tricromos, salientes facetados, tejuela fish-scale y carpinteria recortada de alta densidad.',
       creative_brief:
-        'Mantén una gramática Painted Lady transferible por ornamentación de madera, cromática pastel estratificada y composición vertical doméstica. La identidad debe sostenerse por lenguaje constructivo, no por postal turística.',
+        'Convierte cualquier input en una gramatica Painted Lady de molduras recortadas, color pastel estratificado y verticalidad carpintera festiva. La identidad debe sostenerse por lenguaje constructivo y alegria cromatica, no por postal victoriana ni por una calle preservada concreta.',
     },
   },
   {

@@ -4,8 +4,14 @@ packId: pack_15
 name: Crater Choir Sanctuary
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Abstract resonant lunarpunk style where silence, sound waves, and pale ritual geometry soften the image.
   form_and_line: Concentric rings, sound-fin blades, suspended linework, echo-dish curves, and spiral tone paths.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Spiral descent and concentric rhythm make depth feel audible and softened.
   atmosphere: Serenity, resonance, ritual repair, and communal breath.
   key_features: Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.
-  creative_brief: >-
-    Tune the input into crater resonance: lavender-silver harmonic rings,
-    suspended wire lines, echo-dish curves, acoustic fins, and spiral tone paths
-    visibly soften any subject with ritual sound geometry.
-avoidRules: [photoreal, horror, cyber-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-078.webp }
+  creative_brief: 'Tune the input into crater resonance: lavender-silver harmonic rings, suspended wire lines, echo-dish curves, acoustic fins, and spiral tone paths visibly soften any subject with ritual sound geometry.'
+avoidRules:
+  - photoreal
+  - horror
+  - cyber-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-078.webp
 attributes:
   negativePrompt: photoreal, horror, cyber-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Living doll, uncanny-valley porcelain, toy-cabinet nightmare
-  form_and_line: Cracks (optional), ball-joint articulation, bisque-head proportion, glass-eye stare, hinged-limb segmentation
-  color_palette: Pale White, Pink, bisque, rose-blush, glass-blue iris, crackle-gold, doll-flesh cream
+  aesthetic: Uncanny porcelain artifice, bisque fragility, toy-cabinet tension translated into surface grammar
+  form_and_line: Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes, hinged articulation logic
+  color_palette: Pale white, pink, bisque, rose blush, glass blue, crackle gold, porcelain cream
   lighting_setup: Glossy porcelain highlights, display-spot precision, soft window daylight, toy-room dimness
   material_texture: Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi
-  render_quality: Creepy, perfect, dollmaker-artisan precision, cabinet-photograph stillness
-  spatial_distortion: Joints
-  atmosphere: Uncanny, stiff, porcelain-fragility tension, glass-stare mystery
-  key_features: Glossy bisque, glass-eye cues, ball joints, painted blush, crackle-kintsugi detail
+  render_quality: Precise, uncanny, dollmaker-artisan finish, lacquered stillness
+  spatial_distortion: None
+  atmosphere: Uncanny, delicate, stiff, porcelain-fragility tension
+  key_features: Glossy bisque, glassy focal cues, articulation seams, painted blush, crackle-kintsugi detail
   creative_brief: >-
-    Porcelain-doll the input with bisque glaze, ball-joint segmentation,
-    painted blush, glass-eye shine, mohair-like softness and crackle-kintsugi
-    seams. Keep uncanny toy-cabinet tension without requiring a living doll,
-    display cabinet, face stare or posed limbs.
+    Recast the input with porcelain-artifice grammar: bisque glaze,
+    articulation seams, painted blush, glassy focal shine, mohair-like softness
+    and crackle-kintsugi detail. Keep uncanny toy-cabinet tension as finish
+    only; do not require a living doll body, display cabinet, face stare or
+    posed limbs.
 avoidRules:
   - skin
 assets:

@@ -4,8 +4,14 @@ packId: pack_14
 name: Moon Carp Vow Crossing
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Moon carp vow crossing where river spirits test sincerity through calm transformation.
   form_and_line: Arched span cues, prayer posts, and river-axis symmetry.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Quiet devotion, omen-reading, and transformational calm.
   key_features: Spirit carp wakes, bridge talismans, vow lantern flotillas.
   creative_brief: Apply moon-carp vow crossing to the input, testing sincerity through reflected water without requiring a bridge.
-avoidRules: [photoreal, comic-style, cyber-neon, modern-city, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-037.webp }
+avoidRules:
+  - photoreal
+  - comic-style
+  - cyber-neon
+  - modern-city
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-037.webp
 attributes:
   negativePrompt: photoreal, comic-style, cyber-neon, modern-city, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

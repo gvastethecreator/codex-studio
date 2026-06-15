@@ -4,8 +4,13 @@ packId: pack_14
 name: Twin Gods Tidal Duality
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Mirrored twin-deity duality shaped by tides, protection, rivalry, and seasonal balance.
   form_and_line: Paired tower cues, tidal gate shapes, and mirrored causeway geometry.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Brotherhood, rivalry, and seasonal protection.
   key_features: Twin altar cues, tide gates, mirrored deity silhouettes.
   creative_brief: Reframe any input through twin-gods tidal duality, balancing protection and rivalry. Use mirrored halves, sea-teal gates, copper fittings, tide-threshold symmetry, and paired-force tension without locking the image to harbors, gods, towers, causeways, or deity figures.
-avoidRules: [photoreal, bland, cyberpunk, watermark, text, logo, flat-light]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-120.webp }
+avoidRules:
+  - photoreal
+  - bland
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+  - flat-light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-120.webp
 attributes:
   negativePrompt: photoreal, bland, cyberpunk, watermark, text, logo, flat-light
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

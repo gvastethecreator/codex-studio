@@ -12,21 +12,20 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Comic book hero, four-color idealism, panel-breaking dynamism
-  form_and_line: Muscle-sculpt silhouette, cape-sweep drama, boot-cut taper, emblem-centered geometry
+  aesthetic: Four-color superhero costume language, emblematic idealism, panel-breaking dynamism
+  form_and_line: Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm, bold seam blocking
   color_palette: Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white
   lighting_setup: Rim light, heroic edge-highlight, two-source dramatic, comic-ink contrast
   material_texture: Matte spandex, dimensional-print muscle shading, vinyl cape, rubber sole, metallic accents
   render_quality: Heroic, bold, splash-page energy, Kirby-esque power
-  spatial_distortion: Muscles
-  atmosphere: Strong, brave, truth-and-justice clarity, splash-page dynamism, unwavering resolve
-  key_features: Logo on chest, cape, utility belt, domino mask, heroic boots
+  spatial_distortion: Iconic silhouette exaggeration
+  atmosphere: Bold, brave, civic-myth clarity, splash-page dynamism, unwavering resolve
+  key_features: Emblem panel, cape, utility belt, domino-mask cues, heroic-boot finish
   creative_brief: >-
-    Recast the input in superhero costume language: matte spandex, emblem-first chest geometry, cape sweep, utility
-    belt, heroic boots and four-color ink contrast. Preserve aspirational anatomy cues when useful, but do not force a
-    human hero, action pose, city rescue or fixed comic panel. Apply this fashion/costume grammar over any input:
-    preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required
-    body, portrait, runway, room, prop, role, or fixed character scene.
+    Recast any input in superhero costume language: matte spandex, emblem-first panel geometry, cape
+    sweep, utility belt logic, heroic boot finish and four-color ink contrast. Preserve iconic
+    optimism and silhouette clarity without forcing a human hero, bodybuilder anatomy, action pose,
+    city rescue or fixed comic panel.
 avoidRules:
   - loose clothes
 assets:

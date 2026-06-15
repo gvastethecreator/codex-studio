@@ -4,8 +4,13 @@ packId: pack_14
 name: Serpent Knot Renewal Glyph
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Interwoven serpent iconography as a renewal glyph with vigilant mythic noir energy.
   form_and_line: Braided curves, looping arches, and spiral geometry that can coil around any subject.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Transformation, vigilance, and sacred continuity.
   key_features: Serpent knot, renewal loops, scale-like surfaces.
   creative_brief: Convert the input into a serpent-knot renewal emblem, keeping the serpentine identity while avoiding a fixed chapel or altar setup.
-avoidRules: [photoreal, cute, sci-fi, watermark, text, logo, overexposed]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-097.webp }
+avoidRules:
+  - photoreal
+  - cute
+  - sci-fi
+  - watermark
+  - text
+  - logo
+  - overexposed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-097.webp
 attributes:
   negativePrompt: photoreal, cute, sci-fi, watermark, text, logo, overexposed
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

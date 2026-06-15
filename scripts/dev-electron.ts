@@ -8,7 +8,7 @@ import {
 } from './electron-utils';
 
 const rendererUrl = process.env.STUDIO_ELECTRON_RENDERER_URL || 'http://localhost:17222';
-const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://localhost:17223';
+const apiBase = process.env.STUDIO_ELECTRON_API_BASE || 'http://127.0.0.1:17223';
 
 const processes = [] as ReturnType<typeof spawnManagedProcess>[];
 

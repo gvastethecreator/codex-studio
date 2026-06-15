@@ -17,20 +17,12 @@ visualDna:
   form_and_line: Concentric impact rings, shield-pylon teeth, tiered bands, plasma banner arcs, and split-second ray trajectories.
   color_palette: Plasma blue, contract crimson, black gunmetal, white-hot arc cores, and scorched violet shadows.
   lighting_setup: Overhead spot arrays, burst-frame arc discharge, shield shimmer halos, and rimlight from charged weapons.
-  material_texture: >-
-    Reinforced steel ribs, scorched concrete rings, translucent energy shields, burnt banner cloth, and etched contract
-    plaques.
+  material_texture: Reinforced steel ribs, scorched concrete rings, translucent energy shields, burnt banner cloth, and etched contract plaques.
   render_quality: Action keyframe concept with theatrical readability and kinetic silhouettes.
   spatial_distortion: Arena-like depth collapses toward electric conflict while circular bands bend around the core.
   atmosphere: Public danger, performative valor, betting tension, and ceremonial menace.
   key_features: Duel-ring glyphs, tier shadow bands, shield pylons, plasma banners, and contract-board burn marks.
-  creative_brief: >-
-    Charge the input with ceremonial electrical judgment: contract-crimson marks, plasma trajectories, shield-pylon
-    teeth, impact rings, and burnt honor plaques should bend composition around conflict. Colosseum, duel, or audience
-    cues can appear, but the style is ritualized raypunk consequence. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Charge the input with ceremonial electrical judgment: contract-crimson marks, plasma trajectories, shield-pylon teeth, impact rings, and burnt honor plaques should bend composition around conflict. Colosseum, duel, or audience cues can appear, but the style is ritualized raypunk consequence. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - medieval-fantasy
@@ -55,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_14
 name: Lunar Salt Divination
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, cosmology]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - cosmology
 visualDna:
   aesthetic: Lunar salt divination with monastic discipline, crystalline omens, and moon-tide vigilance.
   form_and_line: Cloister grid cues, salt-pan bands, and observatory tower silhouettes.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Monastic discipline and astral vigilance.
   key_features: Salt omens, lunar stills, prayer-terrace cues.
   creative_brief: Recast the input through lunar salt divination, where weather and spirit readings crystallize without requiring a monastery.
-avoidRules: [photoreal, comic, neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-087.webp }
+avoidRules:
+  - photoreal
+  - comic
+  - neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-087.webp
 attributes:
   negativePrompt: photoreal, comic, neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic, cosmology],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - cosmology
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

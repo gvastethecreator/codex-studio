@@ -17,21 +17,12 @@ visualDna:
   form_and_line: Crescent bands, circular hydro loops, filament connectors, seed-like nodes, and soft orbital contour lines.
   color_palette: Pearl regolith gray, mint chlorophyll, pale cyan water, moon-white film, and seed-library amber.
   lighting_setup: Earthshine ambience, bioluminescent strip accents, cool membrane glow, and small amber maintenance points.
-  material_texture: >-
-    Powdery regolith finish, translucent film layers, algae-tube gloss, damp organic softness, and matte composite
-    edges.
+  material_texture: Powdery regolith finish, translucent film layers, algae-tube gloss, damp organic softness, and matte composite edges.
   render_quality: Clean high-detail eco-future render with readable closed-loop systems and soft lunar restraint.
   spatial_distortion: Ring and crescent composition spirals attention through cycles rather than fixed scenery.
   atmosphere: Cooperative abundance, gentle futurism, closed-loop patience, and lunar care.
-  key_features: >-
-    Crescent crop-like bands, mint-cyan bio loops, seed-node motifs, translucent membranes, and orbital composition
-    flow.
-  creative_brief: >-
-    Cycle the input through crescent lunarpunk ecology: wrap forms in pearl regolith rings, mint algae loops,
-    translucent membranes, seed-node accents, and soft closed-loop geometry that suggests regenerative lunar
-    agriculture. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting
-    system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character
-    lineup, faction scene, readable signage, or fixed set-piece.
+  key_features: Crescent crop-like bands, mint-cyan bio loops, seed-node motifs, translucent membranes, and orbital composition flow.
+  creative_brief: 'Cycle the input through crescent lunarpunk ecology: wrap forms in pearl regolith rings, mint algae loops, translucent membranes, seed-node accents, and soft closed-loop geometry that suggests regenerative lunar agriculture. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - militarized-base
@@ -56,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

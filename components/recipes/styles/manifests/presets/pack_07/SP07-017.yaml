@@ -12,27 +12,27 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Maximalismo curatorial de alta saturación, donde superposición y colección son gramática base.
+  aesthetic: Maximalismo curatorial de alta saturacion, donde superposicion y coleccion son gramatica base.
   form_and_line: >-
-    Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de
+    Capas sucesivas de patron, marcos densos, textiles sobre textiles y ocupacion casi total de
     superficies.
   color_palette: >-
-    Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias
+    Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias
     controladas.
-  lighting_setup: Red cálida de lámparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.
+  lighting_setup: Red calida de lamparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.
   material_texture: >-
     Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro
     visible.
   render_quality: >-
-    Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de
-    jerarquía.
-  spatial_distortion: Profundidad estable con compresión visual por saturación de objetos y patrones.
+    Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de
+    jerarquia.
+  spatial_distortion: Profundidad estable con compresion visual por saturacion de objetos y patrones.
   atmosphere: Efervescente, personal, exuberante y deliberadamente excesiva.
-  key_features: Campo galería saturado, mezcla agresiva de patrón, capas textiles y acumulación curatorial.
+  key_features: Campo galeria saturado, mezcla agresiva de patron, capas textiles y acumulacion curatorial.
   creative_brief: >-
-    Construye una gramática maximalista transferible basada en saturación cromática, densidad
-    curatorial y superposición textil. Debe mantenerse la legibilidad curatorial sin caer en ruido
-    visual indiscriminado.
+    Convierte cualquier input en una composicion maximalista de saturacion cromatica, coleccion
+    curatorial y capas textiles exuberantes. Debe conservar jerarquia y criterio de display, no
+    volverse simple ruido decorativo ni depender de una sala repleta especifica.
 avoidRules:
   - empty
   - white

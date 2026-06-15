@@ -12,21 +12,19 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Classic American college style, Ivy League legacy, Nantucket summer ease
+  aesthetic: Classic American prep, Ivy legacy polish, summer-ease refinement
   form_and_line: Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll
   color_palette: Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold
   lighting_setup: Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness
   material_texture: Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan
-  render_quality: Ralph Lauren heritage prep, rich, classic, country-club ease, old-money nonchalance
+  render_quality: Heritage prep polish, classic ease, generational refinement
   spatial_distortion: None
   atmosphere: Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish
   key_features: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters
   creative_brief: >-
-    Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp
-    stripes, blazer roll, needlepoint detail, cordovan shine and crisp
-    navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere
-    only; do not require a college scene, human student or inherited-wealth
-    portrait.
+    Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail,
+    cordovan shine and crisp navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere only; do not
+    require a college scene, human student, country-club tableau or inherited-wealth portrait.
 avoidRules:
   - messy
   - ripped

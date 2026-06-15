@@ -17,16 +17,14 @@ visualDna:
   color_palette: Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire
   lighting_setup: High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze
   material_texture: Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth
-  render_quality: Vogue couture editorial, Met Gala spectacle, masterpiece, fashion-week apex, haute-couture precision
+  render_quality: Couture editorial polish, ceremonial spectacle, haute-couture precision
   spatial_distortion: Exaggerated silhouette
   atmosphere: Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise
   key_features: Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues
   creative_brief: >-
-    Treat any input as an impossible couture object where cloth behaves like
-    sculpture. Let seams, beadwork, feathers, organza and tulle exaggerate the
-    silhouette without demanding a runway walk or fixed model pose. Light should
-    carve volume with museum severity, turning the subject into wearable
-    architecture.
+    Treat the input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork, feathers,
+    organza and tulle exaggerate the silhouette without demanding runway logic, fashion-week staging or fixed model
+    pose. Light should carve volume with museum severity, turning the subject into wearable architecture.
 avoidRules:
   - ready-to-wear
   - cheap

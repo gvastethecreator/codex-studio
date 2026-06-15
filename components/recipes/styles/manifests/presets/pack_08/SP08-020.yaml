@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Oscars awards-night gown, red-carpet moment, blinding-flash elegance, step-and-repeat royalty
-  form_and_line: Flowing train, mermaid sweep, column-drape silhouette, chapel-length train, plunging neckline
+  aesthetic: Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance
+  form_and_line: Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control
   color_palette: Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald
   lighting_setup: Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression
   material_texture: Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh
-  render_quality: Glamorous, expensive, best-dressed-list caliber, diamond-season perfection
+  render_quality: Glamorous, expensive, broadcast-polish precision, diamond-season finish
   spatial_distortion: None
-  atmosphere: Celebrity, fame, awards-night electricity, telecast anticipation, career-defining glamour
-  key_features: Long train, statement jewels, strapless bodice, red-soled heels
+  atmosphere: Ceremonial, elevated, flashbulb electricity, prestige-night anticipation
+  key_features: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep
   creative_brief: >-
-    Give the input red-carpet gown drama: silk charmeuse, crystal mesh,
-    chapel-length train, strapless or column geometry, statement jewels and
-    flashbulb sparkle. Keep celebrity electricity without requiring carpet,
-    step-and-repeat, paparazzi wall or a walking figure.
+    Push the input through gala formalwear logic: silk charmeuse, crystal mesh,
+    elongated drape, train-like sweep, statement-jewel articulation and
+    flashbulb sparkle. Keep prestige-event electricity as finish only; do not
+    require a gown body, carpet, paparazzi wall, step-and-repeat or walking
+    celebrity figure.
 avoidRules:
   - casual
   - short

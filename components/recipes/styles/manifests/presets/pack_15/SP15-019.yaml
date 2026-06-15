@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Symmetric radial composition with controlled monument-scale depth.
   atmosphere: Confident progress, latent risk, and mid-century spectacle.
   key_features: Atom-halo badges, isotope glyph clusters, civic-poster framing, and controlled hazard accents.
-  creative_brief: >-
-    Make the input a mid-century atomic warning poster come alive: isotope halos, boomerang cuts, uranium-chartreuse
-    glow, enamel panels, chrome risk reflections, and radial civic spectacle. Plaza cues are optional; the style is
-    optimistic science with a visible hazard pulse. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Make the input a mid-century atomic warning poster come alive: isotope halos, boomerang cuts, uranium-chartreuse glow, enamel panels, chrome risk reflections, and radial civic spectacle. Plaza cues are optional; the style is optimistic science with a visible hazard pulse. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - post-apocalypse-rust
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

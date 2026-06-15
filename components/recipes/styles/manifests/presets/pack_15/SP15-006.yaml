@@ -4,8 +4,13 @@ packId: pack_15
 name: Seed Vault Festival
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: Ceremonial agro-future focused on seed stewardship, biodiversity memory, and intergenerational exchange as visual ritual.
   form_and_line: Circular assembly choreography, suspended seed-banner motifs, and archive-centric focal geometry.
@@ -16,22 +21,28 @@ visualDna:
   spatial_distortion: Ringed perspective orbiting a transparent archive-like core without requiring a festival scene.
   atmosphere: Collective gratitude, practical hope, and celebratory responsibility.
   key_features: Seed-swap patterning, stewardship glyph walls, crop-lineage display logic, and communal planting-table rhythm.
-  creative_brief: >-
-    Make the input feel like biodiversity memory made visible: seed-capsule
-    nodes, lineage rings, pollinator yellow accents, linen glyph surfaces, and
-    ceremonial archive light. Crowds, banners, tables, or vault structures can
-    appear as anchors, but the style is stewardship ritual, not event staging.
-avoidRules: [photoreal, bleak, techno-cold, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-006.webp }
+  creative_brief: 'Make the input feel like biodiversity memory made visible: seed-capsule nodes, lineage rings, pollinator yellow accents, linen glyph surfaces, and ceremonial archive light. Crowds, banners, tables, or vault structures can appear as anchors, but the style is stewardship ritual, not event staging.'
+avoidRules:
+  - photoreal
+  - bleak
+  - techno-cold
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-006.webp
 attributes:
   negativePrompt: photoreal, bleak, techno-cold, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

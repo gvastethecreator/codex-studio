@@ -4,8 +4,13 @@ packId: pack_14
 name: Eclipse Cipher Knowledge
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Eclipse-based cipher knowledge rendered through lunar codes and secret symbolic order.
   form_and_line: Radial divisions, cipher rings, and circular reading-table cues.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Intellect, secrecy, and cosmic patterning.
   key_features: Cipher scroll cues, eclipse disks, encoded index marks.
   creative_brief: Apply eclipse-cipher knowledge to the input, turning lunar geometry into secret language without forcing shelves or a study room.
-avoidRules: [photoreal, whimsical, neon, watermark, text, logo, clutter]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-104.webp }
+avoidRules:
+  - photoreal
+  - whimsical
+  - neon
+  - watermark
+  - text
+  - logo
+  - clutter
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-104.webp
 attributes:
   negativePrompt: photoreal, whimsical, neon, watermark, text, logo, clutter
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

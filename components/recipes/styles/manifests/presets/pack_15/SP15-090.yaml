@@ -4,8 +4,14 @@ packId: pack_15
 name: Sundial Government Steps
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Civic clockpunk governance calibrated by sundials, brass meters, and noon-axis authority.
   form_and_line: Stepped terraces, dial columns, central noon markers, and bureaucratic gear symmetry.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Axial symmetry toward a governance-like timekeeping focal point.
   atmosphere: Deliberation, accountability, and measured power.
   key_features: Sundial court geometry, vote-lever motifs, council meters, and brass noon lines.
-  creative_brief: >-
-    Measure the input through sundial governance: stone-ivory terraces, brass
-    noon lines, sky-blue solar shafts, vote-lever motifs, and axial clock-shadow
-    geometry make any subject feel accountable, deliberative, and public.
-avoidRules: [photoreal, dystopian, cyber-noise, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-090.webp }
+  creative_brief: 'Measure the input through sundial governance: stone-ivory terraces, brass noon lines, sky-blue solar shafts, vote-lever motifs, and axial clock-shadow geometry make any subject feel accountable, deliberative, and public.'
+avoidRules:
+  - photoreal
+  - dystopian
+  - cyber-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-090.webp
 attributes:
   negativePrompt: photoreal, dystopian, cyber-noise, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

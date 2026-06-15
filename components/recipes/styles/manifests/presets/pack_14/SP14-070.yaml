@@ -4,8 +4,14 @@ packId: pack_14
 name: Valkyrie Soul Departure
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Valkyrie soul departure where funeral honor and battle summons share one divine logistics.
   form_and_line: Pier-arm cues, wing standards, and high cliff ramp geometry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Heroic melancholy and divine logistics.
   key_features: Valkyrie mooring cues, lantern cranes, oath pylons.
   creative_brief: Recast the input through valkyrie soul departure, making exit feel both funeral honor and battle summons without requiring a dock.
-avoidRules: [photoreal, comedy, futuristic-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-070.webp }
+avoidRules:
+  - photoreal
+  - comedy
+  - futuristic-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-070.webp
 attributes:
   negativePrompt: photoreal, comedy, futuristic-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

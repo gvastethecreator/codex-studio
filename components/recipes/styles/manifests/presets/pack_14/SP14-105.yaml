@@ -4,8 +4,13 @@ packId: pack_14
 name: Feathered Ascent Threshold
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Rite-of-passage ascent expressed through feather emblems, thresholds, and graceful motion.
   form_and_line: Upward thrust, layered plumes, and step-like progression cues.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Transition, aspiration, and guided ascent.
   key_features: Feather motifs, ascent markers, threshold bands.
   creative_brief: Reframe the input as a feathered ascent threshold, suggesting passage between worlds while leaving subject and setting free.
-avoidRules: [photoreal, violent, toy-like, watermark, text, logo, over-sharp]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-105.webp }
+avoidRules:
+  - photoreal
+  - violent
+  - toy-like
+  - watermark
+  - text
+  - logo
+  - over-sharp
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-105.webp
 attributes:
   negativePrompt: photoreal, violent, toy-like, watermark, text, logo, over-sharp
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

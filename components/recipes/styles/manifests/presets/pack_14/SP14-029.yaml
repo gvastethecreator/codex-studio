@@ -4,8 +4,14 @@ packId: pack_14
 name: Longnight Rune Forging
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Longnight rune forging where destiny-runes are hammered into war relics and debts.
   form_and_line: Heavy anvil block cues, ribbed smoke stacks, and knotwork structural beams.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Laborious reverence, survival pride, and pre-battle stillness.
   key_features: Rune anvils, wolf-skin capes, oath blades, smoke prayer vents.
   creative_brief: Apply longnight rune forging to any input, as if each form were born with name, debt, and prophecy. Emphasize ember-lit metalcraft, smoke prayer vents, knotwork beams, cold steel-blue shadow, and rune pressure without requiring anvils, blades, workshops, wolves, or pre-battle scenes.
-avoidRules: [photoreal, playful-cartoon, flashy-neon, modern-factory-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-029.webp }
+avoidRules:
+  - photoreal
+  - playful-cartoon
+  - flashy-neon
+  - modern-factory-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-029.webp
 attributes:
   negativePrompt: photoreal, playful-cartoon, flashy-neon, modern-factory-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

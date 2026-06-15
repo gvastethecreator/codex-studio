@@ -4,8 +4,13 @@ packId: pack_14
 name: Grave Bell Astral Warning
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Astral omen noir shaped by funerary bells, star charts, and disciplined ritual warning.
   form_and_line: Vertical belfry cues, radial star-chart motifs, and pendulum-centered geometry.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Liturgical vigilance, astronomical dread, and disciplined wonder.
   key_features: Star-calibrated bell cues, omen charts, cloaked sentinel shapes, resonance-marked stone.
   creative_brief: Apply grave-bell astral warning to the input, turning celestial alignment and bell resonance into ritual dread without requiring an observatory.
-avoidRules: [photoreal, playful, bright-summer, sci-fi-clean, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-013.webp }
+avoidRules:
+  - photoreal
+  - playful
+  - bright-summer
+  - sci-fi-clean
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-013.webp
 attributes:
   negativePrompt: photoreal, playful, bright-summer, sci-fi-clean, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

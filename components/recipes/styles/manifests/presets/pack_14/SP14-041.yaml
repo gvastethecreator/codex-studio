@@ -4,8 +4,14 @@ packId: pack_14
 name: Cormorant Kami Appeasement
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Cormorant kami appeasement where labor, tide, and avian river spirits share ritual timing.
   form_and_line: Jetty row cues, lantern masts, and shrine breakwater arcs.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Tidal solemnity, labor devotion, and protective folklore.
   key_features: Spirit cormorant perches, offering dock cues, tide ward totems.
   creative_brief: Rework the input through cormorant kami appeasement, making each effort begin with river-spirit respect without requiring a harbor.
-avoidRules: [photoreal, comedic, neon-club, dieselpunk-war, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-041.webp }
+avoidRules:
+  - photoreal
+  - comedic
+  - neon-club
+  - dieselpunk-war
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-041.webp
 attributes:
   negativePrompt: photoreal, comedic, neon-club, dieselpunk-war, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

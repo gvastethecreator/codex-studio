@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, comedic-sports, modern-stadium-tech, neon-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Obsidian ballcourt solar oath where contest, sacrifice, and cosmic order intersect.',
+        'Obsidian ballcourt solar oath where contest, ceremonial offering, and cosmic order intersect.',
       form_and_line: 'Sloped stone wall cues, ring markers, and strict bilateral field geometry.',
       color_palette: 'Obsidian black, dusty ochre, and ceremonial turquoise.',
       lighting_setup: 'Low golden dusk with brazier flares at cardinal stations.',

@@ -14,9 +14,7 @@ tags:
   - decopunk
 visualDna:
   aesthetic: Decopunk cipher glamour where dance patterns, mirrors, and parquet inlays act as social encryption.
-  form_and_line: >-
-    Faceted floor planes, mirrored pillar arrays, hidden balcony lanes, cipher spirals, and chandelier geometry like
-    decoding wheels.
+  form_and_line: Faceted floor planes, mirrored pillar arrays, hidden balcony lanes, cipher spirals, and chandelier geometry like decoding wheels.
   color_palette: Plum, gold, onyx, mirror silver, and a thin line of blood-red wax seal color.
   lighting_setup: Crystal chandelier pools, low perimeter glow, fragmented reflections, and gold glints along cipher inlays.
   material_texture: Velvet drapes, lacquer wood, mirrored brass, polished parquet, engraved cipher metal, and wax-sealed invitations.
@@ -24,12 +22,7 @@ visualDna:
   spatial_distortion: Spiral composition turns motion, balcony sightlines, and hidden seams into a coded circulation diagram.
   atmosphere: Glamour, paranoia, covert diplomacy, and choreography as encryption.
   key_features: Cipher inlays, concealed door seams, orchestra-dais arcs, mirrored surveillance angles, and wax-seal motifs.
-  creative_brief: >-
-    Encode the input as social choreography: cipher inlays, mirrored pillars, plum-gold facets, wax-seal red, and
-    chandelier decoding-wheel geometry should make glamour feel dangerous. Ballrooms may appear, but the style is
-    ornament as encryption and movement as covert protocol. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Encode the input as social choreography: cipher inlays, mirrored pillars, plum-gold facets, wax-seal red, and chandelier decoding-wheel geometry should make glamour feel dangerous. Ballrooms may appear, but the style is ornament as encryption and movement as covert protocol. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - cartoon
@@ -54,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

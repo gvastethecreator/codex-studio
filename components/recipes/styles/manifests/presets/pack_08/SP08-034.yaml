@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Roman gladiator armor, blood-and-sand spectacle, Colosseum-era defiance
-  form_and_line: Armor articulation, segmentata-plate rhythm, balteus-waist cinch, greave-taper, subligaculum base
-  color_palette: Bronze, Red, Skin, iron-grey, oxblood, sun-bronzed flesh, leather-brown
+  aesthetic: Roman arena-forged regalia, martial pageantry, bronze-and-oxblood defiance
+  form_and_line: Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence
+  color_palette: Bronze, red, iron-grey, oxblood, dusted tan, leather-brown
   lighting_setup: Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light
-  material_texture: Bronze plate, oiled leather straps, sweat-sheen skin, iron chainmail, sand-grit coating, linen pteruges
-  render_quality: Tough, historical, arena-dust authenticity, Maximus grit
+  material_texture: Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges
+  render_quality: Tough, historical, arena-dust authenticity, ceremonial grit
   spatial_distortion: None
-  atmosphere: Brave, crowd-roar intensity, mortal-peril tension, gladiator-honor gravity
-  key_features: Helmet, galea with crest, gladius, rectangular scutum, armored manica
+  atmosphere: Martial, pressurized, ceremonial, defiant, mortal-peril gravity
+  key_features: Galea crest cues, scutum geometry, armored manica, pteruges rhythm, bronze articulation
   creative_brief: >-
-    Give the input gladiator construction: bronze plate articulation, oiled
-    leather straps, galea crest, greaves, linen pteruges and sand-grit patina.
-    Keep Colosseum pressure as atmosphere without requiring arena combat,
-    muscular torso, face, weapon pose or crowd.
+    Give the input Roman arena regalia: bronze articulation, oiled leather
+    straps, galea-crest cues, greave taper, linen pteruges and sand-grit
+    patina. Keep martial pressure as material atmosphere only; do not require
+    a torso, face, arena combat, weapon pose, crowd or literal gladiator
+    body.
 avoidRules:
   - clean
   - suit

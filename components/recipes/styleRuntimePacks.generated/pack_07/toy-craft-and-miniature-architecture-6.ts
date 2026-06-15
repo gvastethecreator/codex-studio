@@ -10,9 +10,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic',
     style: {
       aesthetic:
-        'Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad de maqueta hecha a mano.',
+        'Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad manual portable.',
       form_and_line:
-        'Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad baja apilada.',
+        'Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad apilada.',
       color_palette:
         'Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents',
       lighting_setup:
@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.',
       creative_brief:
-        'Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina, sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano, no escena urbana obligatoria. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina, sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano sin depender de ciudad miniatura, calle de maqueta, vitrina museistica o escena urbana obligatoria. Conserva pliegue, pestanas, fibra visible, escala de maqueta y sombra por capas sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -78,7 +78,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de marea.',
       creative_brief:
-        'Usa arena húmeda como lenguaje material: granulación compactada, bordes erosionables, goteo, molde repetido y vulnerabilidad temporal. No necesita castillo ni playa; necesita comportamiento escultórico efímero. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Usa arena húmeda como lenguaje material: granulación compactada, bordes erosionables, goteo, molde repetido y vulnerabilidad temporal. No necesita castillo ni playa; necesita comportamiento escultorico efimero sin depender de horizonte costero o arena de juguete literal. Conserva granulacion humeda, erosion, molde repetido y fragilidad mareal sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -88,23 +88,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid wall',
     style: {
       aesthetic:
-        'Cartón reciclado improvisado con unión visible y fantasía manual de bajo recurso.',
+        'Carton reciclado improvisado con union visible, invencion low-tech y fantasia manual de bajo recurso portable.',
       form_and_line:
-        'Ortogonales de cajas apiladas, voladizos de solapa, trazas de cinta y aperturas recortadas a mano.',
+        'Ortogonales apiladas, voladizos de solapa, aperturas recortadas a mano y remiendos estructurales sin cuarto infantil obligatorio.',
       color_palette:
-        'Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft fabric neutrals',
+        'Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft neutral inserts',
       lighting_setup:
-        'Base cálida interior, spill de lámpara, hotspots de linterna y rebote filtrado por manta en contraste bajo.',
+        'Calidez domestica suave, hotspots puntuales de linterna y rebote filtrado de baja tecnologia sin fijar interior narrativo unico.',
       material_texture:
-        'Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayón.',
+        'Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayon.',
       render_quality:
-        'Realismo low-tech artesanal con imperfección de ensamblaje y tactilidad reciclada nostálgica.',
-      spatial_distortion: 'Sagging',
-      atmosphere: 'Ingeniosa, cozy y temporal, orgullosamente homemade.',
+        'Realismo artesanal low-tech con imperfeccion de ensamblaje, tactilidad reciclada y lectura estructural clara.',
+      spatial_distortion: 'Sagging and patched asymmetry from improvised load paths',
+      atmosphere: 'Ingeniosa, temporal y orgullosamente homemade.',
       key_features:
-        'Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos textiles.',
+        'Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y refuerzos blandos insertados.',
       creative_brief:
-        'Aplica construcción de cartón improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes manuales y marcas de low-tech craft. Debe expresar invención material barata sin escena infantil fija. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Aplica construccion de carton improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes manuales y marcas de low-tech craft. Debe expresar invencion material barata sin escena infantil fija, fuerte sesgo de playroom ni maqueta de cuarto cerrada. Conserva corrugado, cinta, escala improvisada y logica de carga remendada sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -114,24 +114,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard edges',
     style: {
       aesthetic:
-        'Inflable de juego con masa blanda presurizada, color blocking festivo y espacialidad temporal.',
+        'Arquitectura blanda presurizada con masa neumÃ¡tica, color blocking festivo y espacialidad temporal.',
       form_and_line:
-        'Tubos neumáticos abultados, segmentación soldada, lóbulos redondeados de torre y geometría de anclaje por manguera.',
+        'Tubos neumÃ¡ticos abultados, segmentaciÃ³n soldada, lÃ³bulos redondeados modulares y geometrÃ­a de anclaje por manguera.',
       color_palette:
         'High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents',
       lighting_setup:
-        'Sol difuso exterior con especulares fuertes en vinilo, glow translúcido de panel y bloom suave en borde inflado.',
+        'Sol difuso exterior con especulares fuertes en vinilo, glow translÃºcido de panel y bloom suave en borde inflado.',
       material_texture:
-        'Piel PVC glossy, crestas de soldadura térmica, membranas tensas, arrugas en carga y herrajes de blower.',
+        'Piel PVC glossy, crestas de soldadura tÃ©rmica, membranas tensas, arrugas en carga y herrajes de blower.',
       render_quality:
-        'Render inflable legible y juguetón con fidelidad material alta y brillo controlado de instalación temporal.',
+        'Render inflable legible y juguetÃ³n con fidelidad material alta y brillo controlado de instalaciÃ³n temporal.',
       spatial_distortion:
         'Soft-volume inflation bulge and pressure-rounded edge behavior across all masses',
-      atmosphere: 'Energética, cinética y festiva, inequívocamente temporal.',
+      atmosphere: 'EnergÃ©tica, cinÃ©tica y festiva, inequÃ­vocamente temporal.',
       key_features:
-        'Bastidor tubular presurizado, retícula de costura térmica, zonificación vívida, paneles mesh y nodos de inflado visibles.',
+        'Bastidor tubular presurizado, retÃ­cula de costura tÃ©rmica, zonificaciÃ³n vÃ­vida, paneles mesh y nodos de inflado visibles.',
       creative_brief:
-        'Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presión, soldaduras térmicas, brillos glossy y color safety-pop. El estilo debe ser neumático y temporal, no castillo específico. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presiÃ³n, soldaduras tÃ©rmicas, brillos glossy y color safety-pop. El estilo debe ser neumatico y temporal, no una pieza de parque o castillo especifico. Conserva volumen presurizado, costuras termicas, brillo PVC y temporalidad ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -166,24 +166,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Toy Craft And Miniature Architecture',
     negativePrompt: 'square',
     style: {
-      aesthetic: 'Vernáculo fúngico encantado con masa bulbosa y lógica ecológica miniatura.',
+      aesthetic:
+        'Vernaculo fungico encantado con masa bulbosa y logica ecologica miniatura, portable mas alla del bosque de cuento.',
       form_and_line:
-        'Columnas tipo tallo, cubiertas domo-cap, intradós acanalado de láminas y transiciones orgánicas de volumen hinchado.',
+        'Columnas tipo tallo, cubiertas domo-cap, intrados acanalado de laminas y transiciones organicas de volumen hinchado.',
       color_palette:
-        'Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm forest-amber undertones',
+        'Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm understory amber',
       lighting_setup:
-        'Luz moteada filtrada por dosel, relleno frío de sombra y acentos bioluminiscentes sutiles en bordes bajos.',
+        'Luz filtrada moteada, relleno frio de sombra y acentos bioluminiscentes sutiles en bordes y cavidades bajas.',
       material_texture:
-        'Piel fúngica mate, moteado de sombrero, costillas de lámina, manto musgoso húmedo y polvo fino de esporas.',
+        'Piel fungica mate, moteado de sombrero, costillas de lamina, manto musgoso humedo y polvo fino de esporas.',
       render_quality:
-        'Fantasía storybook con curvatura orgánica fiel y detalle táctil de micromaterial biológico.',
+        'Fantasia storybook con curvatura organica fiel y detalle tactil de micromaterial biologico.',
       spatial_distortion:
-        'Cap-and-stem volumetric swelling and softened miniature-scale proportion stretching',
-      atmosphere: 'Encantada, protegida y de escala diminuta con integración ecológica total.',
+        'Cap-and-stem volumetric swelling with softened miniature proportion drift',
+      atmosphere:
+        'Encantada, protegida y diminuta, como un ecosistema construido desde crecimiento biologico.',
       key_features:
-        'Siluetas cap-dome, tallos estructurales, aperturas circulares, base de musgo y composición en clúster.',
+        'Siluetas cap-dome, tallos estructurales, aperturas circulares, bases humedas y jerarquia de cluster biologico.',
       creative_brief:
-        'Usa morfología fúngica como estilo: jerarquía cap-stem, piel moteada, láminas acanaladas, musgo húmedo y escala miniatura ecológica. El sujeto puede variar; la lógica biológica y bulbosa debe mandar. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Usa morfologia fungica como estilo: jerarquia cap-stem, piel moteada, laminas acanaladas, musgo humedo y escala miniatura ecologica. El sujeto puede variar; la logica biologica y bulbosa debe mandar sin exigir suelo de bosque, anillo de setas, cottage fae o cluster narrativo fijo. Conserva jerarquia cap-stem, microescala humeda y tactilidad biologica sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -219,9 +221,10 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Toy Craft And Miniature Architecture',
     negativePrompt: 'surface',
     style: {
-      aesthetic: 'Cutaway subterráneo con red capilar y zonificación biofuncional estricta.',
+      aesthetic:
+        'Sección subterránea biofuncional con red capilar y zonificación interna estricta.',
       form_and_line:
-        'Túneles capilares ramificados, cámaras nodales, conectores verticales y estratos seccionados por capas.',
+        'Ramificaciones capilares, cámaras nodales, conectores verticales y estratos seccionados por capas.',
       color_palette:
         'Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones',
       lighting_setup:
@@ -231,11 +234,11 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.',
       spatial_distortion: 'None',
-      atmosphere: 'Laboriosa, biológica y funcional, escondida bajo superficie observada.',
+      atmosphere: 'Laboriosa, biológica y funcional, escondida bajo superficie inferida.',
       key_features:
-        'Jerarquía de malla capilar, cámaras funcionales, ejes de circulación vertical y borde transparente de observación.',
+        'Jerarquía capilar, cámaras funcionales, ejes de circulación vertical y lectura estratificada de sección.',
       creative_brief:
-        'Representa cualquier sistema como corte biofuncional subterráneo: túneles capilares, cámaras nodales, estratos granulares y lectura lateral de observación. La función interna importa más que insectos o superficie literal. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cámaras nodales, estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero, vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional interna sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {

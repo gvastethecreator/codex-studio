@@ -13,19 +13,19 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Armor mesh, medieval-smithy craft, interlocked-defense beauty
-  form_and_line: Tiny rings, butted-ring grid, riveted-flat drape, hauberk-length column, coif-hood circumference
+  form_and_line: Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference
   color_palette: Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen
   lighting_setup: Ring-reflection glint, forge-fire warmth, overcast-even steel light
   material_texture: Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap
   render_quality: Detailed, heavy, forge-craft authenticity, ring-by-ring precision
   spatial_distortion: None
   atmosphere: Protective, historic, heavy craft pride, defensive patience, anvil-song weight
-  key_features: Mesh pattern, ring grid, coif hood, riveted links, mail curtain
+  key_features: Mesh pattern, ring grid, coif cues, riveted links, mail curtain
   creative_brief: >-
     Overlay the input with chainmail structure: riveted steel rings, butted
-    grids, coif or hauberk cues, oiled metal and ring-by-ring glints. Keep
-    medieval defense weight without requiring a castle, corridor, scout,
-    fortress, warrior or battle.
+    grids, coif-like cues, oiled metal and ring-by-ring glints. Keep medieval
+    defense weight without requiring a castle, fortress corridor, warrior,
+    crusader silhouette or battle scene.
 avoidRules:
   - cloth
 assets:

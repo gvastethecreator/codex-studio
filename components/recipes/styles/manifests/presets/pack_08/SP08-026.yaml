@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Motorcycle club, outlaw-brotherhood iconography, open-road defiance
+  aesthetic: Motorcycle-club iconography, outlaw utility, open-road defiance
   form_and_line: Heavy leather, cut-off vest, engineer-boot stomp, bandana-mask line
   color_palette: Black leather, Silver, denim-blue, club-patch color, chrome, grease-black
   lighting_setup: Harsh chrome-reflection highlights, bar-sign neon hints, sun-glare heat
   material_texture: Heavyweight cowhide leather, embroidered patches, metal studs, chain, dirty denim, brass zippers
-  render_quality: Tough, dangerous, asphalt-authenticity, Sons of Anarchy grittiness
+  render_quality: Tough dangerous finish, asphalt authenticity, outlaw grit
   spatial_distortion: None
   atmosphere: Intimidating, cool, road-dog defiance, exhaust-fume authority, outlaw gravity
   key_features: Leather vest, three-piece patch, engineer boots, chain wallet
   creative_brief: >-
-    Recast the input in outlaw biker codes: heavyweight cowhide, cut-off vest,
-    embroidered patches, engineer boots, chain wallet, grease black and chrome
-    glints. Keep two-wheel defiance as style pressure without requiring a gang,
-    clubhouse, road scene, motorcycle or intimidating person.
+    Recast the input in outlaw biker codes: heavyweight cowhide, cut-off vest, embroidered patches, engineer boots,
+    chain wallet, grease black and chrome glints. Keep two-wheel defiance as style pressure without requiring a gang,
+    clubhouse, road scene, literal motorcycle or intimidating persona.
 avoidRules:
   - soft
   - colorful

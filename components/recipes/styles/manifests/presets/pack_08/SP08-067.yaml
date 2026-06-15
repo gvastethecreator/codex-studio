@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Plastic fashion, pop-art materialism, bubble-texture absurdity
-  form_and_line: Circles, bubble-sphere cluster volume, inflatable-cushion silhouette, rounded-bodice geometry, air-filled dimension
+  form_and_line: Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension
   color_palette: Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white
   lighting_setup: Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead
   material_texture: Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam
@@ -24,7 +24,8 @@ visualDna:
   creative_brief: >-
     Bubble-wrap the input with translucent domes, heat-sealed grids, crinkle
     film, convex highlights and inflated cushion volume. Keep pop-art absurdity
-    without requiring bodice, dress sculpture, packaging joke or gallery object.
+    without requiring bodice shaping, dress sculpture, packaging joke, wearable
+    object or gallery plinth framing.
 avoidRules:
   - fabric
 assets:

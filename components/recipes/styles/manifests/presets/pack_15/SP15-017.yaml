@@ -22,13 +22,7 @@ visualDna:
   spatial_distortion: Convoy-lane depth perspective ending at a civic repair focal mass.
   atmosphere: Gritty solidarity, practical endurance, and collective reconstruction.
   key_features: Diesel-hauler motifs, communal machine-shop rhythm, fuel reclamation towers, and worker-solidarity cues.
-  creative_brief: >-
-    Weight the input with cooperative diesel endurance: oxide-red chassis geometry, grease-dark repair marks, amber
-    signal lamps, tarped utility surfaces, and reclaimed fuel logic. Trucks, hangars, workers, or convoys may appear,
-    but the style is solidarity through rugged maintained mass. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Weight the input with cooperative diesel endurance: oxide-red chassis geometry, grease-dark repair marks, amber signal lamps, tarped utility surfaces, and reclaimed fuel logic. Trucks, hangars, workers, or convoys may appear, but the style is solidarity through rugged maintained mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - pristine-utopia
@@ -54,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

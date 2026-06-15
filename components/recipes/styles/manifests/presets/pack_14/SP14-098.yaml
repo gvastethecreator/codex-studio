@@ -4,30 +4,46 @@ packId: pack_14
 name: Ash-Crown Residue Authority
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.
-  form_and_line: Brittle crown silhouettes, shrine-like framing cues, and ash cascade rhythms.
+  form_and_line: Brittle crown silhouettes, collapsed diadem arcs, and asymmetrical ash cascade rhythms with no braided loops, serpent coils, or central totem symmetry.
   color_palette: Charcoal, muted silver, and antique ivory.
   lighting_setup: Narrow halo beam from above.
   material_texture: Charred wood, cracked enamel, dusty glass, and powdery soot.
   render_quality: Cinematic symbolic still life.
-  spatial_distortion: Tight iconic depth with layered relic framing, not a required cabinet.
+  spatial_distortion: Tight iconic depth with offset fragment layers and drifting residue, not a required cabinet or shrine axis.
   atmosphere: Loss, legitimacy, and solemn afterimage.
-  key_features: Ash crown, residue halos, memorial dust.
-  creative_brief: Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring crowns, shrines, relic cabinets, rulers, or literal objects.
-avoidRules: [photoreal, playful, candy-color, watermark, text, logo, glossy]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-098.webp }
+  key_features: Ash crown, residue halos, memorial dust, collapsed diadem fragments, offset crown shards.
+  creative_brief: Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use offset crown shards, brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring serpents, braided loops, shrine windows, relic cabinets, rulers, swords, or literal objects.
+avoidRules:
+  - photoreal
+  - playful
+  - candy-color
+  - watermark
+  - text
+  - logo
+  - glossy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-098.webp
 attributes:
-  negativePrompt: photoreal, playful, candy-color, watermark, text, logo, glossy
+  negativePrompt: photoreal, playful, candy-color, watermark, text, logo, glossy, serpent, snake, braided loops, symmetric totem, sword, hanging plant, window alcove
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

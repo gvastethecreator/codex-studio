@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Ruina institucional burocrática, donde el deterioro acumulado se convierte en sistema visual principal.
-  form_and_line: Axialidad rígida interrumpida por colapsos, repetición administrativa y fallas de cielo suspendido.
-  color_palette: Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream
-  lighting_setup: Hazes de luz quebrada, polvo en suspensión, parpadeo eléctrico residual y esquinas de oscuridad profunda.
-  material_texture: Pintura delaminada, escurridos minerales, oxidación en uniones, yeso ampollado y trazas fúngicas progresivas.
-  render_quality: Lectura forense del deterioro con autenticidad de edificio público abandonado.
-  spatial_distortion: Colapso parcial, interrupciones de eje y profundidad administrativa quebrada.
-  atmosphere: Inmovilidad opresiva, vacío acústico frío y memoria administrativa detenida.
-  key_features: Señalética deslavada, luminarias rotas, juntas abiertas, pilares de polvo y cielos parciales caídos.
+  aesthetic: Patina institucional de deterioro burocratico, donde mantenimiento fallido y repeticion administrativa se vuelven sistema visual portable.
+  form_and_line: Axialidad rigida interrumpida por colapsos, repeticion modular de servicio y fallas en capas suspendidas sin requerir edificio publico literal.
+  color_palette: Desaturated green-grey, sickly mint, rust stain, water-damage brown, faded cream
+  lighting_setup: Hazes de luz quebrada, polvo en suspension, parpadeo electrico residual y fondos de sombra profunda.
+  material_texture: Pintura delaminada, escurridos minerales, oxidacion en uniones, yeso ampollado y trazas fungicas progresivas.
+  render_quality: Lectura forense del deterioro con autenticidad administrativa y decadencia material legible.
+  spatial_distortion: Partial collapse, axis interruption and service-depth fracture
+  atmosphere: Inmovilidad opresiva, vacio acustico frio y memoria administrativa detenida.
+  key_features: Senaletica deslavada, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.
   creative_brief: >-
-    Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, ejes administrativos rotos,
-    humedad mineral y luz residual. La tensión debe surgir de burocracia detenida, no de susto ni narrativa de
-    manicomio. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues,
-    architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type,
-    landscape, franchise set, creature, or fixed scene.
+    Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, repeticion administrativa,
+    humedad mineral y luz residual. La tension debe surgir de burocracia detenida y desgaste sistemico, no de hospital
+    embrujado, pasillo de asylum o ruina de terror demasiado literal. Conserva patina institucional, repeticion de
+    servicio, escala administrativa y luz rota sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - clean
   - new

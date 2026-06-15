@@ -152,7 +152,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Mesoamerican mythic ceremony noir shaped by cenote depth, sun-serpent cycles, and living water.',
       form_and_line:
         'Terraced glyph geometry, feathered serpent curves, and descending ritual rhythms.',
-      color_palette: 'Jade green, obsidian black, and sacrificial gold.',
+      color_palette: 'Jade green, obsidian black, and ceremonial gold.',
       lighting_setup: 'Vertical cenote shaft light with torch flicker around glyph walls.',
       material_texture:
         'Carved volcanic stone, wet limestone, quetzal plume fibers, and lacquered ritual ceramics.',
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Feather-serpent reliefs, calendar discs, ritual banner rhythm, water-mirror omens, and jade-gold cyclic light.',
       creative_brief:
-        'Cycle the input through cenote sun-serpent cosmology: jade water glow, obsidian depth, sacrificial-gold rims, feather-serpent curves, and calendar glyph geometry should make any subject feel cyclic and sacred without requiring a temple, cenote, procession, sacrifice, or literal serpent.',
+        'Cycle the input through cenote sun-serpent cosmology: jade water glow, obsidian depth, ceremonial-gold rims, feather-serpent curves, and calendar glyph geometry should make any subject feel cyclic and sacred without requiring a temple, cenote, procession, offering rite, or literal serpent.',
     },
   },
   {

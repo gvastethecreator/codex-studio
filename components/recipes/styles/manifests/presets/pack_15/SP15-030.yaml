@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Bowl-crater depth with clustered circular rhythm and soft horizon compression.
   atmosphere: Resourceful tenderness, lunar rhythm, and communal resilience.
   key_features: Tidal-converter glyphs, crater cistern rings, amber lantern trails, and algae-tube glow.
-  creative_brief: >-
-    Shape the input as resourceful lunar tidecraft: crater-bowl curves, amber lantern trails, algae-tube glow, basalt
-    aggregate, and crescent converter marks. Hamlets or crater settlements may appear, but the style is resilient
-    tenderness organized around circular energy cycles. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Shape the input as resourceful lunar tidecraft: crater-bowl curves, amber lantern trails, algae-tube glow, basalt aggregate, and crescent converter marks. Hamlets or crater settlements may appear, but the style is resilient tenderness organized around circular energy cycles. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - brutalist-war-base
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

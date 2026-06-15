@@ -12,25 +12,24 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Inflable de juego con masa blanda presurizada, color blocking festivo y espacialidad temporal.
-  form_and_line: Tubos neumáticos abultados, segmentación soldada, lóbulos redondeados de torre y geometría de anclaje por manguera.
+  aesthetic: Arquitectura blanda presurizada con masa neumÃ¡tica, color blocking festivo y espacialidad temporal.
+  form_and_line: Tubos neumÃ¡ticos abultados, segmentaciÃ³n soldada, lÃ³bulos redondeados modulares y geometrÃ­a de anclaje por manguera.
   color_palette: >-
     High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip
     accents
-  lighting_setup: Sol difuso exterior con especulares fuertes en vinilo, glow translúcido de panel y bloom suave en borde inflado.
-  material_texture: Piel PVC glossy, crestas de soldadura térmica, membranas tensas, arrugas en carga y herrajes de blower.
-  render_quality: Render inflable legible y juguetón con fidelidad material alta y brillo controlado de instalación temporal.
+  lighting_setup: Sol difuso exterior con especulares fuertes en vinilo, glow translÃºcido de panel y bloom suave en borde inflado.
+  material_texture: Piel PVC glossy, crestas de soldadura tÃ©rmica, membranas tensas, arrugas en carga y herrajes de blower.
+  render_quality: Render inflable legible y juguetÃ³n con fidelidad material alta y brillo controlado de instalaciÃ³n temporal.
   spatial_distortion: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
-  atmosphere: Energética, cinética y festiva, inequívocamente temporal.
+  atmosphere: EnergÃ©tica, cinÃ©tica y festiva, inequÃ­vocamente temporal.
   key_features: >-
-    Bastidor tubular presurizado, retícula de costura térmica, zonificación vívida, paneles mesh y nodos de inflado
+    Bastidor tubular presurizado, retÃ­cula de costura tÃ©rmica, zonificaciÃ³n vÃ­vida, paneles mesh y nodos de inflado
     visibles.
   creative_brief: >-
-    Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presión, soldaduras térmicas, brillos
-    glossy y color safety-pop. El estilo debe ser neumático y temporal, no castillo específico. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presiÃ³n, soldaduras tÃ©rmicas, brillos
+    glossy y color safety-pop. El estilo debe ser neumatico y temporal, no una pieza de parque o castillo especifico.
+    Conserva volumen presurizado, costuras termicas, brillo PVC y temporalidad ludica sin exigir edificio, paisaje, set,
+    criatura ni escena fija.
 avoidRules:
   - hard edges
 assets:

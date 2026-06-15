@@ -12,23 +12,23 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Victoriano de herencia pesada, exceso ornamental y teatralidad histórica cerrada.
-  form_and_line: Densidad de patrón, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.
-  color_palette: Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y latón antiguo.
+  aesthetic: Victoriano de herencia pesada, exceso ornamental y teatralidad historica contenida.
+  form_and_line: Densidad de patron, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.
+  color_palette: Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.
   lighting_setup: >-
-    Gaslight tenue, pools de lámpara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje
+    Gaslight tenue, pools de lampara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje
     espeso.
-  material_texture: Terciopelo, brocado, papel estampado, mármol oscuro, maderas profundas y metal envejecido.
-  render_quality: Densidad museográfica de época con lectura material opulenta y atmósfera histórica cerrada.
-  spatial_distortion: Profundidad estable saturada por acumulación decorativa en múltiples capas.
-  atmosphere: Opresiva, aristocrática, nostálgica y ceremoniosa.
+  material_texture: Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.
+  render_quality: Densidad museografica de epoca con lectura material opulenta y atmosfera historica densa.
+  spatial_distortion: Profundidad estable saturada por acumulacion decorativa en multiples capas.
+  atmosphere: Opresiva, aristocratica, nostalgica y ceremoniosa.
   key_features: >-
-    Drapería pesada, tapizados cargados, marcos acumulados, ornamentación floral y volumen
+    Draperia pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen
     overstuffed.
   creative_brief: >-
-    Define una gramática victoriana transferible por sobrecarga ornamental, paleta profunda y luz
-    baja ceremonial. El estilo debe expresar peso histórico y acumulación material sin depender de
-    una narrativa literaria.
+    Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y
+    opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas
+    profundas y luz baja ritual, no de una mansion concreta ni de una escena literaria cerrada.
 avoidRules:
   - minimal
   - bright

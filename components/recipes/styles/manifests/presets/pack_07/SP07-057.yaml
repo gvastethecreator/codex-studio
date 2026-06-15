@@ -12,21 +12,22 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Futurismo industrial neo-victoriano de vapor, latón y maquinaria especulativa.
-  form_and_line: Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos de tránsito aéreo.
+  aesthetic: GramÃ¡tica retroindustrial neo-victoriana de vapor, latÃ³n y presiÃ³n mecÃ¡nica especulativa.
+  form_and_line: Redes de tuberÃ­a remachada, ritmos de venteo vertical, nodos de engranaje y arcos estructurales de carga.
   color_palette: Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright
-  lighting_setup: Gaslight ámbar, glow difuso en smog, chispas mecánicas y ventilación de vapor visible.
-  material_texture: Metal y ladrillo, cobre remachado, panel de madera, cuero y depósito de hollín en superficie.
-  render_quality: Steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.
+  lighting_setup: Gaslight Ã¡mbar, glow difuso en smog, chispas mecÃ¡nicas y ventilaciÃ³n de vapor visible.
+  material_texture: Metal y ladrillo, cobre remachado, panel de madera, cuero y depÃ³sito de hollÃ­n en superficie.
+  render_quality: Steampunk de detalle alto con plausibilidad mecÃ¡nica y legibilidad retroindustrial.
   spatial_distortion: None
-  atmosphere: Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.
+  atmosphere: Impulso industrial, ambiciÃ³n ahumada y tensiÃ³n de progreso mecÃ¡nico ansioso.
   key_features: >-
-    Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de
-    tránsito aéreo.
+    Ritmo de venteo, conducciones de latÃ³n, superficies clockwork, nodos de caldera y jerarquÃ­as
+    de presiÃ³n visibles.
   creative_brief: >-
-    Aplica un lenguaje neo-victoriano de vapor a cualquier input: articulaciones de latón, remaches
-    funcionales, tuberías legibles, hollín material y glow gaslight. La utilidad mecánica debe
-    sentirse plausible sin necesitar una ciudad ni vehículo específico.
+    Aplica una gramÃ¡tica neo-victoriana de vapor a cualquier input: articulaciones de latÃ³n,
+    remaches funcionales, tuberÃ­as legibles, hollÃ­n material y glow gaslight. La utilidad mecÃ¡nica
+    debe sentirse plausible y jerÃ¡rquica sin requerir skyline, vehÃ­culo o sistema de trÃ¡nsito
+    especÃ­fico.
 avoidRules:
   - clean energy
 assets:

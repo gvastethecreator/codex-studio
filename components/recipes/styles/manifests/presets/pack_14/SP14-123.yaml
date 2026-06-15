@@ -4,8 +4,13 @@ packId: pack_14
 name: Ashen Hearth Guardian Warmth
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Hearth-deity guardianship expressed through ash warmth, shelter, kinship, and domestic flame.
   form_and_line: Long hearth-row cues, guardian alcove rhythms, and smoke-vent silhouettes.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Shelter, kinship, and sacred homecoming.
   key_features: Hearth altar cues, guardian masks, smoke glyphs.
   creative_brief: Recast the input through ashen hearth guardian warmth, making domestic flame feel sacred without requiring a communal hall.
-avoidRules: [photoreal, sterile, sci-fi, watermark, text, logo, cold]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-123.webp }
+avoidRules:
+  - photoreal
+  - sterile
+  - sci-fi
+  - watermark
+  - text
+  - logo
+  - cold
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-123.webp
 attributes:
   negativePrompt: photoreal, sterile, sci-fi, watermark, text, logo, cold
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

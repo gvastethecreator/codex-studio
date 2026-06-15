@@ -12,21 +12,21 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Evangelion sleek biomech pilot suit, NERV interface, sync-ratio shine, plug-depth tension
-  form_and_line: Panel lines, entry-plug contour, form-fitting compression, shoulder-interface cutout, neck-seal band
-  color_palette: Glossy White/Red, EVA-purple, NERV orange, Unit-01 violet, caution-yellow, matte-black
-  lighting_setup: LCL-amber immersion glow, display-screen backlight, entry-plug bioluminescence, sync-alert rim
+  aesthetic: Biomech pilot interfacewear, sync-signal shine, pressure-cabin tension
+  form_and_line: Panel lines, capsule-contour geometry, compression seams, interface cutouts, sealed-edge bands
+  color_palette: Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black
+  lighting_setup: Amber immersion glow, display-screen backlight, capsule bioluminescence, sync-alert rim
   material_texture: Latex, plastic, neoprene compression, interface gel, carbon-fiber panel, memory-foam inner
-  render_quality: Anime, sci-fi, cel-shaded precision, mecha-pilot intimacy
+  render_quality: Anime sci-fi precision, cel-shaded engineering polish, high-spec interfacewear
   spatial_distortion: None
-  atmosphere: Ready, tech, sync-ratio tension, AT-field silence, impact-alert urgency
-  key_features: Interface headset, A10 nerve clips, plug-suit panel lines, LCL fluid sheen
+  atmosphere: Ready, tech, sync tension, impact-alert urgency, machine-link suspense
+  key_features: Interface headset cues, neural-clip detailing, pilot-panel seams, immersion-fluid sheen
   creative_brief: >-
-    Apply mecha-pilot interface design to the input: glossy plug-suit panel
-    lines, compression seams, neck seals, A10 nerve-clip cues, LCL amber sheen
-    and biomech synchronization signals. If a character is present, the style
-    may make them feel linked to a giant machine; if not, leave clear mecha
-    interface traces without requiring cockpit, hangar, launch tube or battle.
+    Translate the input into biomech interfacewear: glossy panel lines,
+    compression-seam mapping, sealed-edge bands, neural-clip detailing, amber
+    immersion sheen and synchronization signal cues. Preserve machine-linked
+    tension without requiring a cockpit, hangar, launch tube, battle pose or a
+    human pilot body.
 avoidRules:
   - casual
 assets:

@@ -72,17 +72,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Mythic — Cosmology & Omens',
     negativePrompt: 'photoreal, cartoon, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Star-sign forge discipline where destiny is tempered to celestial cycles.',
-      form_and_line: 'Vaulted nave cues, zodiac anvils, and constellation aisle rhythms.',
+      aesthetic: 'Celestial forge discipline where destiny aligns to star-sign cycles.',
+      form_and_line: 'Orbit-ring cues, axial forge geometry, and constellation lane rhythms.',
       color_palette: 'Iron blue, brass, and cinder orange.',
       lighting_setup: 'Furnace cores and rotating skylight apertures.',
       material_texture: 'Heat-cracked stone, riveted steel, and etched brass rings.',
-      render_quality: 'High-drama craft concept with cosmic readability.',
-      spatial_distortion: 'Long nave-like perspective ending at a stellar forge core.',
+      render_quality: 'Monumental celestial craft concept with bold silhouette clarity.',
+      spatial_distortion:
+        'Long axial depth toward a stellar forge core with larger readable forms.',
       atmosphere: 'Determined ritual and astral discipline.',
-      key_features: 'Zodiac anvils, orbit hammers, omen quench-basin cues.',
+      key_features: 'Orbit rings, constellation marks, and omen basin glow.',
       creative_brief:
-        'Reinterpret any input as zodiac-tempered destiny, as if its form were hammered into alignment with star-sign cycles. Preserve orbit-ring geometry, iron-blue craft discipline, brass constellation marks, furnace apertures, and astral order without requiring anvils, zodiac symbols, naves, hammers, or forge scenes.',
+        'Reinterpret any input through zodiac-tempered destiny, preserving orbit-ring geometry, iron-blue discipline, brass constellation marks, furnace glow, and astral order without requiring anvils, naves, or forge staging.',
     },
   },
   {
@@ -92,17 +93,17 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, neon-tech, watermark, text, logo',
     style: {
       aesthetic:
-        'Planetary death mapping through orbital spirals, crypt rings, and sacred underworld geometry.',
-      form_and_line: 'Helix stair cues, crypt rings, and orbital relief walls.',
+        'Mortality mapped as planetary motion through orbital spirals and sacred underworld geometry.',
+      form_and_line: 'Spiral ring cues, descending path geometry, and orbital relief walls.',
       color_palette: 'Bone gray, deep violet, and tarnished silver.',
       lighting_setup: 'Candle constellations and shafted moonlight vents.',
       material_texture: 'Damp stone, mineral deposits, and corroded relic metal.',
-      render_quality: 'Moody underworld concept with intricate depth.',
-      spatial_distortion: 'Descending spiral composition toward a void core.',
+      render_quality: 'Moody cosmic-underworld concept with readable depth and larger forms.',
+      spatial_distortion: 'Descending spiral depth toward a dark orbital core.',
       atmosphere: 'Liminal dread and sacred curiosity.',
-      key_features: 'Planet-crypt cues, omen tablets, sepulchral star maps.',
+      key_features: 'Orbital tablets, sepulchral rings, and star-map reliefs.',
       creative_brief:
-        'Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs.',
+        'Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs or crypt staging.',
     },
   },
   {
@@ -249,7 +250,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP14-092',
     name: 'Equinox Balance Axis',
     category: '4. Mythic — Cosmology & Omens',
-    negativePrompt: 'photoreal, chaotic-neon, cartoon, watermark, text, logo',
+    negativePrompt:
+      'photoreal, chaotic-neon, cartoon, bedroom, apartment, domestic interior, bed, sofa, watermark, text, logo',
     style: {
       aesthetic:
         'Equinox balance axis with bilateral precision, sacred calibration, and liminal poise.',
@@ -262,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Poise, tension, and sacred calibration.',
       key_features: 'Equinox markers, twin altar cues, mirrored water basins.',
       creative_brief:
-        'Apply equinox balance axis to the input, making balance itself feel divine without requiring a bridge sanctuary.',
+        'Apply equinox balance axis to the input, making balance itself feel divine through bilateral precision, sacred calibration, stone-white symmetry, mirrored markers, and equinox poise without requiring a bridge sanctuary, bedroom, apartment, domestic interior, furniture vignette, or window-corner staging.',
     },
   },
   {

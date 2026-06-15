@@ -4,8 +4,14 @@ packId: pack_15
 name: Clockmaker's Terrace
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Domestic clockpunk terrace language where personal timekeeping becomes architecture.
   form_and_line: Staggered balcony bands, pocket-watch rail curves, stair loops, and atelier-window grids.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Terraced slope perspective with nested domestic-front rhythms.
   atmosphere: Domestic care and mechanical intimacy.
   key_features: Balcony clock motifs, repair-bench grids, window chimes, and pocketwatch rail patterns.
-  creative_brief: >-
-    Domesticize the input as clockmaker intimacy: honey-wood bands, brass
-    pocketwatch rails, pale-blue atelier windows, woven awning shadows, and
-    repair-bench grids make any subject feel tuned, cared for, and precise.
-avoidRules: [photoreal, cyberpunk, ruin-punk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-095.webp }
+  creative_brief: 'Domesticize the input as clockmaker intimacy: honey-wood bands, brass pocketwatch rails, pale-blue atelier windows, woven awning shadows, and repair-bench grids make any subject feel tuned, cared for, and precise.'
+avoidRules:
+  - photoreal
+  - cyberpunk
+  - ruin-punk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-095.webp
 attributes:
   negativePrompt: photoreal, cyberpunk, ruin-punk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,30 +4,46 @@ packId: pack_14
 name: Crimson Ledger Judgment
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
-  aesthetic: Judgment and vow-accounting rendered through crimson ledgers, archival order, and ritual gravitas.
-  form_and_line: Ledger-tower cues, upright file rhythms, and altar-table symmetry.
+  aesthetic: Judgment and vow-accounting rendered through crimson tally forms, sealed compartments, and ritual gravitas.
+  form_and_line: Upright compartment rhythms, stacked tally planes, and altar-table symmetry.
   color_palette: Crimson, charcoal, and antique paper.
   lighting_setup: Warm desk lamps and shadowed shelf depths.
-  material_texture: Threaded bindings, thick paper, and lacquered wood.
+  material_texture: Lacquered wood, heavy paper, sealed wax, and worn brass.
   render_quality: Scholarly noir with ritual gravitas.
-  spatial_distortion: Upward archival depth stretching into darkness without requiring a library sanctum.
+  spatial_distortion: Upward compartment depth stretching into darkness without requiring an archive room or library sanctum.
   atmosphere: Accounting, judgment, and ceremonial order.
-  key_features: Blood-red ledgers, ritual stamps, sealed-drawer shapes.
-  creative_brief: Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated archival pressure.
-avoidRules: [photoreal, pastel, cartoon, watermark, text, logo, gloss]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-114.webp }
+  key_features: Crimson tally tablets, ritual stamps, sealed-drawer shapes.
+  creative_brief: Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated tally pressure and sealed judgment compartments rather than books, libraries, or archival reading rooms.
+avoidRules:
+  - photoreal
+  - pastel
+  - cartoon
+  - watermark
+  - text
+  - logo
+  - gloss
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-114.webp
 attributes:
   negativePrompt: photoreal, pastel, cartoon, watermark, text, logo, gloss
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -63,24 +63,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, new',
     style: {
       aesthetic:
-        'Ruina institucional burocrática, donde el deterioro acumulado se convierte en sistema visual principal.',
+        'Patina institucional de deterioro burocratico, donde mantenimiento fallido y repeticion administrativa se vuelven sistema visual portable.',
       form_and_line:
-        'Axialidad rígida interrumpida por colapsos, repetición administrativa y fallas de cielo suspendido.',
+        'Axialidad rigida interrumpida por colapsos, repeticion modular de servicio y fallas en capas suspendidas sin requerir edificio publico literal.',
       color_palette:
-        'Desaturated Green/Grey, Sickly Mint, Rust stain, Water-damage Brown, Faded Cream',
+        'Desaturated green-grey, sickly mint, rust stain, water-damage brown, faded cream',
       lighting_setup:
-        'Hazes de luz quebrada, polvo en suspensión, parpadeo eléctrico residual y esquinas de oscuridad profunda.',
+        'Hazes de luz quebrada, polvo en suspension, parpadeo electrico residual y fondos de sombra profunda.',
       material_texture:
-        'Pintura delaminada, escurridos minerales, oxidación en uniones, yeso ampollado y trazas fúngicas progresivas.',
+        'Pintura delaminada, escurridos minerales, oxidacion en uniones, yeso ampollado y trazas fungicas progresivas.',
       render_quality:
-        'Lectura forense del deterioro con autenticidad de edificio público abandonado.',
-      spatial_distortion:
-        'Colapso parcial, interrupciones de eje y profundidad administrativa quebrada.',
-      atmosphere: 'Inmovilidad opresiva, vacío acústico frío y memoria administrativa detenida.',
+        'Lectura forense del deterioro con autenticidad administrativa y decadencia material legible.',
+      spatial_distortion: 'Partial collapse, axis interruption and service-depth fracture',
+      atmosphere: 'Inmovilidad opresiva, vacio acustico frio y memoria administrativa detenida.',
       key_features:
-        'Señalética deslavada, luminarias rotas, juntas abiertas, pilares de polvo y cielos parciales caídos.',
+        'Senaletica deslavada, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.',
       creative_brief:
-        'Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, ejes administrativos rotos, humedad mineral y luz residual. La tensión debe surgir de burocracia detenida, no de susto ni narrativa de manicomio. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, repeticion administrativa, humedad mineral y luz residual. La tension debe surgir de burocracia detenida y desgaste sistemico, no de hospital embrujado, pasillo de asylum o ruina de terror demasiado literal. Conserva patina institucional, repeticion de servicio, escala administrativa y luz rota sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -169,22 +168,21 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'living',
     style: {
       aesthetic:
-        'Osario subterráneo abstracto donde mortalidad ritual y módulo cálcico definen el lenguaje visual.',
+        'Lenguaje osario subterraneo abstracto, donde modulo calcico, presion enterrada y reverencia historica definen la superficie.',
       form_and_line:
-        'Patrones repetitivos de módulos óseos, arcos bajos secuenciados y axialidad comprimida.',
-      color_palette: 'Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream',
+        'Repeticion modular calcica, arcos bajos secuenciados, nichos comprimidos y bandas oseas sin exigir corredor funerario fijo.',
+      color_palette: 'Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream',
       lighting_setup:
-        'Fuentes cálidas puntuales de antorcha o linterna, parpadeo sobre hueso y sombras densas de bajo nivel.',
+        'Fuentes calidas puntuales, parpadeo bajo sobre calcio y sombras densas en profundidad comprimida.',
       material_texture:
-        'Calcio yesoso, porosidad cortical, juntas de mortero polvorientas y transiciones húmedas de piedra enterrada.',
+        'Calcio yesoso, porosidad cortical, mortero polvoriento y transiciones humedas de piedra enterrada.',
       render_quality:
-        'Fidelidad arqueológica de bajo nivel lumínico con microtextura funeraria legible.',
-      spatial_distortion: 'None',
+        'Fidelidad arqueologica de bajo nivel luminico con microtextura funeraria legible y sin horror explicito.',
+      spatial_distortion: 'Compressed subterranean pressure and repetitive calcic stacking',
       atmosphere: 'Solemne, comprimida y reverencial, con quietud de tiempo profundo.',
-      key_features:
-        'Hiladas cálcicas, bandas cruzadas, nichos funerarios y presión de bóveda baja.',
+      key_features: 'Hiladas calcicas, bandas cruzadas, nichos minerales y presion de boveda baja.',
       creative_brief:
-        'Cualquier composición se organiza por modulo calcico, presion subterranea y luz baja de reverencia historica. Repeticion, polvo y porosidad funeraria cargan el estilo sin depender de pasillos literales. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Organiza cualquier composicion por modulo calcico, presion subterranea y luz baja de reverencia historica. Repeticion, polvo y porosidad funeraria deben cargar el estilo sin depender de pasillos, catacumba literal, restos humanos exhibidos o escena ritual cerrada. Conserva logica material, escala comprimida y ritmo osario sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
     },
   },
   {
@@ -220,9 +218,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground level',
     style: {
       aesthetic:
-        'Artesanía arbórea elevada, integrada a soporte vivo y condicionada por crecimiento irregular.',
+        'Artesanía arbórea elevada, ensamblada contra crecimiento vivo y gobernada por adaptación orgánica.',
       form_and_line:
-        'Soportes híbridos, plataformas escalonadas, diagonales de cable y vacíos de evasión orgánica.',
+        'Soportes híbridos, plataformas moduladas, diagonales tensadas y vacíos de evasión orgánica.',
       color_palette: 'Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss',
       lighting_setup:
         'Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos en escala íntima.',
@@ -232,11 +230,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.',
       spatial_distortion: 'Inclinación artesanal, torsión orgánica y apoyo asimétrico creíble.',
       atmosphere:
-        'Íntima y lúdica, con autonomía exploratoria y abrigo frente a exposición de viento.',
+        'Íntima y adaptativa, con autonomía exploratoria y abrigo ligero frente a exposición ambiental.',
       key_features:
-        'Vacíos de tronco, accesos textiles, bordes mirador, pools cálidos y uniones improvisadas.',
+        'Encuentros con soporte vivo, accesos ligeros, bordes suspendidos, pools cálidos y uniones improvisadas.',
       creative_brief:
-        'El estilo negocia cualquier forma contra soporte vivo: plataformas escalonadas, cuerda, madera expuesta y diagonales de seguridad improvisada. Debe sentirse artesanal y elevado sin volverse infantil ni postal de aventura. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'El estilo negocia cualquier forma contra soporte vivo mediante ensamblaje elevado, cuerda, madera expuesta y tensiones improvisadas. Debe sentirse artesanal y suspendido sin exigir treehouse, refugio infantil, tronco heroico ni postal de aventura. Conserva logica material, escala ligera y ritmo estructural adaptativo sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

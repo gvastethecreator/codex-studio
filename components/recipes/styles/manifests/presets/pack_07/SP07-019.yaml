@@ -12,19 +12,19 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Art Nouveau orgánico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
+  aesthetic: Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
   form_and_line: Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.
-  color_palette: Salvia, dorado, azul pavo real, lila, ámbar vítreo y verdes musgo.
-  lighting_setup: Luz filtrada por vitral, lámparas cálidas tipo Tiffany, apliques pétalo y brillo irisado suave.
-  material_texture: Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marquetería floral.
+  color_palette: Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.
+  lighting_setup: Luz filtrada por vitral, lamparas calidas tipo Tiffany, apliques petalo y brillo irisado suave.
+  material_texture: Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marqueteria floral.
   render_quality: Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.
-  spatial_distortion: Ligera fluidez morfológica para enfatizar continuidad orgánica sobre rigidez geométrica.
-  atmosphere: Romántica, envolvente, botánica y artesanal.
-  key_features: Motivos florales estructurales, curvas tendril, vidrio cromático activo y luminancia orgánica.
+  spatial_distortion: Ligera fluidez morfologica para enfatizar continuidad organica sobre rigidez geometrica.
+  atmosphere: Romantica, envolvente, botanica y artesanal.
+  key_features: Motivos florales estructurales, curvas tendril, vidrio cromatico activo y luminancia organica.
   creative_brief: >-
-    Conserva una gramática Art Nouveau transferible donde línea orgánica, ornamento botánico y
-    material artesanal formen un sistema continuo. Debe leerse como estructura viva, no como simple
-    decoración floral aplicada.
+    Convierte cualquier input en una continuidad Art Nouveau de linea vegetal, material artesanal y
+    ornamento estructural fluido. Debe leerse como organismo disenado de adentro hacia afuera, no
+    como floralidad aplicada ni como una habitacion de epoca obligatoria.
 avoidRules:
   - straight lines
 assets:

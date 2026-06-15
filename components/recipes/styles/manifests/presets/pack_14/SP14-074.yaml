@@ -4,8 +4,14 @@ packId: pack_14
 name: Serpent Ash Crossing
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Serpent ash crossing where fear is bargained with before sacred transit.
   form_and_line: Rope-span arch cues, carved serpent rails, and watch shrines.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Vertigo, mythic dread, and ritual transit.
   key_features: Serpent carvings, ash braziers, toll altar cues.
   creative_brief: Apply serpent ash crossing to the input, making sacred transit feel like a bargain with fear without requiring a bridge.
-avoidRules: [photoreal, comic, modern-bridge-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-074.webp }
+avoidRules:
+  - photoreal
+  - comic
+  - modern-bridge-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-074.webp
 attributes:
   negativePrompt: photoreal, comic, modern-bridge-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

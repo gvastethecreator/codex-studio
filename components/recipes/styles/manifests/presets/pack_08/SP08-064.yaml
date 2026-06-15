@@ -12,20 +12,21 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Burlap and rag textile, medieval-field humility, honest-labor simplicity
-  form_and_line: Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease
+  aesthetic: Burlap-and-rag austerity, homespun endurance, rough-fiber humility
+  form_and_line: Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff
   color_palette: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
   lighting_setup: Flat overcast light, dim warm practical, rough-fiber revealing side light
   material_texture: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
-  render_quality: Poor, scratchy, honest-poverty texture, feudal-era authenticity
-  spatial_distortion: Holes
-  atmosphere: Humble, rough, endurance dignity, simple-life resilience
-  key_features: Fraying, rope belt, rough patches, raw hem, homespun texture
+  render_quality: Scratchy, raw, weathered-fiber authenticity, rough textile honesty
+  spatial_distortion: None
+  atmosphere: Humble, rough, enduring, resilient, materially stripped-back
+  key_features: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture
   creative_brief: >-
-    Roughen the input with burlap/rag material: jute fiber, coarse hemp,
-    homespun wool, rope-cord cinches, frayed hems, raw patches and weathered
-    oatmeal-brown tones. Keep humble endurance without requiring peasants,
-    harvest fields, cottage windows, poverty portrait or tunic body.
+    Roughen the input with burlap-rag materiality: jute fiber, coarse hemp,
+    homespun wool, rope-cinch logic, frayed edges, raw patches and weathered
+    oatmeal-brown tones. Keep humble endurance as fiber attitude only; do not
+    require peasants, harvest fields, cottage windows, poverty portrait or
+    literal tunic body.
 avoidRules:
   - silk
   - clean

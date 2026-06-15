@@ -22,10 +22,9 @@ visualDna:
   atmosphere: Chill, active, session-flow ease, board-pop rhythm, raw casualness
   key_features: Vans skate shoes, ollie-worn suede, five-panel cap, logo tee
   creative_brief: >-
-    Convert the input into skater casual: oversized tee, hoodie stack, baggy
-    denim, suede scuffs, grip-tape grit, five-panel cap cues and fisheye video
-    rawness. Keep board-pop rhythm without requiring tricks, ledges, parking
-    lots, city playgrounds or a skater body.
+    Convert any input into skater casual: oversized tee, hoodie stack, baggy denim, suede scuffs,
+    grip-tape grit, five-panel cap cues and fisheye video rawness. Keep board-pop rhythm without
+    requiring tricks, ledges, parking lots, city playgrounds or a skater body.
 avoidRules:
   - tight clothes
 assets:

@@ -22,13 +22,7 @@ visualDna:
   spatial_distortion: Mirrored depth guiding toward a luminous civic leisure node.
   atmosphere: Melancholic joy, ambient leisure, and curated digital nostalgia.
   key_features: Retro signage monoliths, mirrored pool logic, synthetic palm silhouettes, and open social spacing.
-  creative_brief: >-
-    Bathe the input in climate-adapted vaporpunk leisure: lavender acrylic reflections, aqua mirage depth, terrazzo
-    softness, synthetic palm rhythm, and sunset chrome. Malls, fountains, signage blocks, palms, or plazas are optional
-    anchors; the style is nostalgic public softness with humid glow. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Bathe the input in climate-adapted vaporpunk leisure: lavender acrylic reflections, aqua mirage depth, terrazzo softness, synthetic palm rhythm, and sunset chrome. Malls, fountains, signage blocks, palms, or plazas are optional anchors; the style is nostalgic public softness with humid glow. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - gritty-realism
@@ -54,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

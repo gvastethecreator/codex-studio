@@ -34,22 +34,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic clothes, dull',
     style: {
       aesthetic:
-        'High quality cosplay construction, character-faithful transformation, anime-costume spectacle',
+        'Convention-grade costume craft, stylized transformation energy, anime-adjacent fabrication spectacle',
       form_and_line:
-        'Silhouette-matched precision, exaggerated anime proportions, prop-scale geometry',
+        'Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry',
       color_palette:
         'Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues',
       lighting_setup:
         'Studio craft lighting, three-point rig, colored gel accents, anime-style rim',
       material_texture:
         'Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex',
-      render_quality: 'Fan art, detailed, fun, craftsmanship pride, competition-grade finish',
-      spatial_distortion: 'Big props',
-      atmosphere:
-        'Playful, character, fake, joyful transformation, fandom devotion, handmade spectacle',
-      key_features: 'Wig texture, styled fiber sheen, armor seam lines, prop replica detail',
+      render_quality: 'Detailed, playful, craftsmanship-forward, competition-grade finish',
+      spatial_distortion: 'None',
+      atmosphere: 'Playful, fabricated, convention-floor pride, handmade spectacle',
+      key_features:
+        'Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing',
       creative_brief:
-        'Convert the input into cosplay craft language: styled synthetic fiber, EVA/Worbla armor seams, thermoplastic props, holographic spandex and silhouette-matched anime exaggeration. Preserve character-faithful cues without forcing a convention hall, named character, replica pose or photo booth scene.',
+        'Translate the input into polished cosplay craft language: styled synthetic fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic stretch surfaces and exaggerated convention-build clarity. Keep fandom transformation as fabrication energy, not as a named character, replica pose, portrait body or convention-hall scene.',
     },
   },
   {
@@ -58,7 +58,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'heavy, dark, solid',
     style: {
-      aesthetic: 'Elven or fairy couture, Rivendell ethereality, woodland-realm grace',
+      aesthetic: 'Elven-fairy couture, moonlit ethereality, woodland grace',
       form_and_line:
         'Flowing, windblown, gossamer waterfall silhouette, bishop-sleeve billow, empire-line rise',
       color_palette:
@@ -66,15 +66,14 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup: 'Glowing, backlight, god-ray shafts, moonbeam dapple, faerie-light sparkle',
       material_texture:
         'Silk chiffon, gossamer organza, liquid satin charmeuse, silver lamé thread, dew-beaded tulle',
-      render_quality:
-        'Lord of the Rings epic fantasy, magical, elven grace, Middle-earth majesty, artisan-fantasy caliber',
+      render_quality: 'Epic fantasy polish, elven grace, artisan-fantasy caliber',
       spatial_distortion: 'Floating fabric',
       atmosphere:
         'Magical, soft, dreamlike, ancient enchantment, starlit serenity, undying-lands longing',
       key_features:
         'Translucency, flowing sleeves, circlet or brooch cues, silver-thread constellation detail',
       creative_brief:
-        'Apply elven ethereality to the input through gossamer translucency, moonstone thread, floating sleeves and a palette of pearl, celadon and pale blue. Keep circlet or brooch cues when useful, but avoid locking the image to a forest realm, harp-lit figure or fixed fantasy gown scene.',
+        'Apply elven ethereality to the input through gossamer translucency, moonstone thread, floating sleeves and a palette of pearl, celadon and pale blue. Keep circlet or brooch cues when useful, but avoid locking the image to named fantasy realms, harp-lit figures, woodland princess bodies or fixed gown tableaux.',
     },
   },
   {
@@ -84,22 +83,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, plastic, digital',
     style: {
       aesthetic:
-        'Victorian sci-fi costume, Jules Verne expedition cues, clockwork inventor regalia',
+        'Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia',
       form_and_line:
-        'Gears, goggles, corsets, pocket-watch chains, top-hat elongation, bustle-back volume',
+        'Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume',
       color_palette:
         'Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green',
       lighting_setup: 'Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection',
       material_texture:
         'Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal',
       render_quality:
-        'Detailed, costume, fantasy, cogs-and-corsets craftsmanship, retro-futurist opulence',
+        'Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish',
       spatial_distortion: 'Mechanical limbs (optional)',
       atmosphere:
         'Adventurous, retro, inventive, clockwork wonder, airship-era ambition, tea-and-tinker curiosity',
       key_features: 'Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt',
       creative_brief:
-        'Translate any input into steampunk costume engineering: brass constellations, tinted goggles, leather tool-belt logic, corset or waistcoat structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints optional and useful, but do not force an aviator, workshop, hangar or adventure scene.',
+        'Translate the input into steampunk engineering attire: brass constellations, tinted goggle casings, leather tool-belt logic, waistcoat-or-corset structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints optional and useful, but do not force an inventor persona, aviator body, workshop, hangar or expedition scene.',
     },
   },
   {
@@ -119,13 +118,13 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Waterproof technical fabric, Gore-Tex Pro, Dyneema composite, laser-cut nylon, bonded seam tape',
       render_quality:
-        'Acronym technical utility, dystopian, functional, Errolson Hugh silence, shadow-ops precision',
+        'Technical utility precision, dystopian functional polish, shadow-ops restraint',
       spatial_distortion: 'Optional masked or hooded identity cues',
       atmosphere:
         'Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint',
       key_features: 'Utility focus, MOLLE webbing, magnetic fidlock closures, articulated hood',
       creative_brief:
-        'Mechanize the input through cyberpunk techwear: bonded seams, Dyneema panels, harness geometry, magnetic closures, hooded or masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley, mercenary scene, weapon, surveillance camera or fixed character role. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Mechanize the input through cyberpunk techwear: bonded seams, Dyneema panels, harness geometry, magnetic closures, hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
     },
   },
   {
@@ -136,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Partially invisible, refraction-mirage wonder, stealth-magic concealment',
       form_and_line:
-        'Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended-garment shape',
+        'Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape',
       color_palette:
         'Background-match, refractive-rainbow fringe, glass-blue edge, transparency-neutral, partial-reveal tones',
       lighting_setup:
@@ -150,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam',
       creative_brief:
-        'Apply invisibility-cloak optics to the input: refractive edge distortion, background-matching transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the disappearing-presence effect without forcing a body, hand reveal, wizard cloak scene or specific environment.',
+        'Apply invisibility-cloak optics to any input: refractive edge distortion, background-matching transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the disappearing-presence effect without forcing a body, hand reveal, wizard-cloak scene, garment wearer or specific environment.',
     },
   },
   {
@@ -160,9 +159,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark',
     style: {
       aesthetic:
-        'Tron light-grid bodysuit, identity-disc glow, digital frontier, Grid-terminal icon',
+        'Tron light-grid suiting, identity-disc glow, digital frontier, Grid-terminal icon',
       form_and_line:
-        'Glowing lines, hex-circuit geometry, body-con compression, disc-mount backplate, luminescent-stripe contour',
+        'Glowing lines, hex-circuit geometry, modular panel segmentation, disc-like emitter plate, luminescent-stripe contour',
       color_palette:
         'Black + Cyan, grid-blue, identity-disc white, amber-iso, CLU-orange, deep-circuit black',
       lighting_setup:
@@ -175,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Future, tech, Grid-frontier freedom, data-stream electricity, programmatic drama',
       key_features: 'Glow, identity disc, circuit-line grid, illuminated piping, dark-helmet visor',
       creative_brief:
-        'Convert the input into neon grid suiting: cyan circuit lines, matte neoprene, electroluminescent panels, identity-disc glow and black-cyan contrast. Keep Tron-like digital frontier energy while avoiding a required body, arena, light-cycle action or floor-grid scene.',
+        'Convert the input into neon grid suiting: cyan circuit lines, matte neoprene, electroluminescent panels, emitter-disc glow and black-cyan contrast. Keep Tron-like digital frontier energy while avoiding a required bodysuit wearer, arena, light-cycle action, visor silhouette or floor-grid scene.',
     },
   },
   {
@@ -185,23 +184,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid',
     style: {
       aesthetic:
-        'Monochrome sci-fi hologram, rebel-transmission shimmer, long-distance signal urgency',
+        'Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency',
       form_and_line:
-        'Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent-body silhouette, projection-cone taper',
+        'Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper',
       color_palette:
-        'Blue monochrome, R2-D2-cyan, hologram-azure, transmission-static white, fade-to-transparent edge, flicker-blue',
+        'Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue',
       lighting_setup:
         'Self-lit, emissive-blue glow, projection-cone light, dark-room contrast, flicker-instability pulse',
       material_texture:
         'Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe',
-      render_quality: 'Sci-fi, glitchy, stolen-plans urgency, long-time-ago transmission',
+      render_quality:
+        'Sci-fi glitch precision, unstable signal urgency, transmission-grade shimmer',
       spatial_distortion: 'Transparent',
       atmosphere:
-        'Tech, message, desperate-plea intimacy, rebel-hope transmission, distant-signal nostalgia',
+        'Tech, message, urgent intimacy, distant-signal nostalgia, fragile transmission hope',
       key_features:
-        'Scanlines, blue monochrome, flicker instability, transparent body, projection base',
+        'Scanlines, blue monochrome, flicker instability, transparent contour, projection-field falloff',
       creative_brief:
-        'Render the input as unstable holographic transmission: blue monochrome, scanlines, projection grain, transparency fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but must not require Star Wars staging, a projection base, dark room or pleading character. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Render the input as unstable holographic transmission: blue monochrome, scanlines, projection grain, transparency fade, chromatic fringe and flicker-loss at the edges. It can imply a message or figure, but must not require named space-opera staging, a projection base, dark room, pleading character or body-first apparition.',
     },
   },
   {
@@ -210,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'light',
     style: {
-      aesthetic: 'Made of shadow, void-walker mystery, darkness-incarnate form',
+      aesthetic: 'Made of shadow, void-walker mystery, darkness-incarnate presence',
       form_and_line:
         'Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape',
       color_palette: 'Black, void, abyss, pitch, ink, unlit, dark-matter',
@@ -224,7 +224,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'No details, featureless void, light-absorbing depth, negative shape, silhouette-only form',
       creative_brief:
-        'Transform the input into shadow-form materiality: light-absorbing void, velvety black depth, rim-only edge, undefined silhouette and absence as surface. Keep menace optional and atmospheric; do not require a humanoid figure, evil character, realm scene or literal standing pose.',
+        'Transform the input into shadow-form materiality: light-absorbing void, velvety black depth, rim-only edge, undefined silhouette and absence as surface. Keep menace optional and atmospheric; do not require a humanoid figure, evil character, realm scene, garment wearer or literal standing pose.',
     },
   },
   {
@@ -248,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus',
       key_features: 'Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe',
       creative_brief:
-        'Give the input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay, spell-light rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset should not require a tower, library, sanctum or spellcasting scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay, spell-light rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset should not require towers, libraries, sanctums or spellcasting scenes.',
     },
   },
   {
@@ -266,14 +266,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Gritty overcast grey, dust-haze shadow, emergency-orange rim, dirty practical light',
       material_texture:
         'Blood-crusted fabric, dirt-embedded denim, duct-tape patches, torn flannel, sweat-soaked cotton, leather holster wear',
-      render_quality: 'Horror, survival, walker-apocalypse realism, exhaustion-verité',
+      render_quality: 'Horror, survival, walker-apocalypse realism, exhaustion-verite',
       spatial_distortion: 'Wounds',
       atmosphere:
         'Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread',
       key_features:
         'Backpack, fingerless gloves, duct-tape patches, bite-protection layers, relic accessory cues',
       creative_brief:
-        'Turn the input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear, mud, dried crimson stains, bite-protection wraps and exhausted layering. It may imply zombie danger, but should not require a weapon, sheriff hat, forest, abandoned building or survivor portrait. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Turn any input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear, mud, dried crimson stains, bite-protection wraps and exhausted layering. It may imply zombie danger, but should not require a weapon, sheriff hat, forest, abandoned building or survivor portrait.',
     },
   },
   {
@@ -282,22 +282,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'simple, earth',
     style: {
-      aesthetic: 'Padme Amidala operatic space-court couture, Naboo regality, senatorial authority',
+      aesthetic: 'Operatic space-court couture, sovereign nebular regality, diplomatic authority',
       form_and_line:
-        'Elaborate headpiece, issei-crown halo, gown-train sweep, corset-waist architecture, bell-sleeve drama',
+        'Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality',
       color_palette:
-        'Red, Gold, Alien, crimson, electrum, pearl, plasma-pink, Naboo-teal, midnight-velvet',
+        'Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet',
       lighting_setup: 'Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight',
       material_texture:
         'Exotic fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk',
-      render_quality: 'Regal, alien, galactic-court opulence, Coruscant-high-fashion',
-      spatial_distortion: 'Strange hair',
+      render_quality: 'Regal alien opulence, galactic-court high fashion, ceremonial precision',
+      spatial_distortion: 'Ceremonial halo exaggeration',
       atmosphere:
         'Serious, political, galactic-court gravity, doomed-romance elegance, diplomatic tension',
       key_features:
-        'Face-paint cues, issei headpiece, ceremonial gown architecture, feathered cape',
+        'Ceremonial signal-paint cues, halo headpiece logic, gown architecture, feathered cape',
       creative_brief:
-        'Turn the input into galactic-court couture: issei halo geometry, alien headpiece logic, liquid-metal thread, feather trim, ceremonial face-paint cues and diplomatic crimson-gold gravity. Keep Padme/Naboo regality as style anchor without requiring a throne room, senate chamber, twin suns or specific royal figure.',
+        'Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal thread, feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality as a portable style anchor, not as throne rooms, senate chambers, twin-sun tableaux or specific royal figures.',
     },
   },
   {
@@ -306,45 +306,46 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'loose clothes',
     style: {
-      aesthetic: 'Comic book hero, four-color idealism, panel-breaking dynamism',
+      aesthetic:
+        'Four-color superhero costume language, emblematic idealism, panel-breaking dynamism',
       form_and_line:
-        'Muscle-sculpt silhouette, cape-sweep drama, boot-cut taper, emblem-centered geometry',
+        'Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm, bold seam blocking',
       color_palette: 'Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white',
       lighting_setup: 'Rim light, heroic edge-highlight, two-source dramatic, comic-ink contrast',
       material_texture:
         'Matte spandex, dimensional-print muscle shading, vinyl cape, rubber sole, metallic accents',
       render_quality: 'Heroic, bold, splash-page energy, Kirby-esque power',
-      spatial_distortion: 'Muscles',
-      atmosphere:
-        'Strong, brave, truth-and-justice clarity, splash-page dynamism, unwavering resolve',
-      key_features: 'Logo on chest, cape, utility belt, domino mask, heroic boots',
+      spatial_distortion: 'Iconic silhouette exaggeration',
+      atmosphere: 'Bold, brave, civic-myth clarity, splash-page dynamism, unwavering resolve',
+      key_features: 'Emblem panel, cape, utility belt, domino-mask cues, heroic-boot finish',
       creative_brief:
-        'Recast the input in superhero costume language: matte spandex, emblem-first chest geometry, cape sweep, utility belt, heroic boots and four-color ink contrast. Preserve aspirational anatomy cues when useful, but do not force a human hero, action pose, city rescue or fixed comic panel. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Recast any input in superhero costume language: matte spandex, emblem-first panel geometry, cape sweep, utility belt logic, heroic boot finish and four-color ink contrast. Preserve iconic optimism and silhouette clarity without forcing a human hero, bodybuilder anatomy, action pose, city rescue or fixed comic panel.',
     },
   },
   {
     id: 'SP08-050',
     name: 'Alien Fashion',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'human clothes',
+    negativePrompt: 'ordinary casualwear',
     style: {
       aesthetic:
-        'Fifth Element bold alien runway costuming, Jean-Paul Gaultier sci-fi, interstellar-couture rebellion',
+        'Bold alien couture, late-90s sci-fi editorial energy, interstellar-couture rebellion',
       form_and_line:
-        'Strange cutouts, geometric-negative-space, body-harness wrapping, asymmetrical neckline, tab-constructed sleeves',
+        'Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves',
       color_palette:
         'Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint',
       lighting_setup:
         'Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill',
       material_texture:
         'Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC',
-      render_quality: 'Weird, futuristic, Gaultier-costume genius, space-opera runway spectacle',
+      render_quality: 'Weird, futuristic, couture precision, space-opera editorial spectacle',
       spatial_distortion: 'None',
       atmosphere:
         'Alien, fashion, zero-g couture attitude, cosmic glamour, rebellious artificiality',
-      key_features: 'Straps, body harness, cutout geometry, contrast stitching, utility ring',
+      key_features:
+        'Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring',
       creative_brief:
-        'Make the input feel designed by non-human couture logic: orange rubber, clear plastic, chrome vinyl, body-harness wrapping, strange cutouts, tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element rebellion without requiring a space terminal, alien body, lab or runway.',
+        'Make the input feel designed by non-human couture logic: orange rubber, clear plastic, chrome vinyl, structural strap lattices, strange cutouts, tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element rebellion as a late-90s sci-fi-fashion energy, without requiring a space terminal, humanoid alien body, lab or runway.',
     },
   },
   {
@@ -363,13 +364,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Desert sun, heat-shimmer distortion, dust-storm diffusion, engine-fire orange, post-blast haze',
       material_texture:
         'Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim',
-      render_quality: 'Survival, gritty, post-apocalypse vérité, guzzoline-desperation rawness',
+      render_quality: 'Survival, gritty, post-apocalypse verite, guzzoline-desperation rawness',
       spatial_distortion: 'None',
       atmosphere:
         'Desperate, tough, resource-scarcity tension, wasteland-wind solitude, witness-me ferocity',
       key_features: 'Goggles, shoulder pad, bandolier, gas-mask, improvised armor cues',
       creative_brief:
-        'Render the input as scavenged survival couture: dirty canvas, tire rubber, rusty chain, car-part armor, gauze wraps, oxidized metal and dust-choked layering. Keep Mad Max resource-scarcity ferocity without requiring a wasteland chase, weapon, survivor portrait or specific desert scene.',
+        'Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain, car-part armor, gauze wraps, oxidized metal and dust-choked layering. Keep resource-scarcity ferocity without requiring a wasteland chase, weapon, survivor portrait or specific desert scene.',
     },
   },
   {
@@ -378,21 +379,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'modern, messy',
     style: {
-      aesthetic: 'Dracula style, Carpathian aristocracy, immortal-danger elegance',
+      aesthetic: 'Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace',
       form_and_line:
-        'High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, ring-adorned fingers',
+        'High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents',
       color_palette: 'Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white',
       lighting_setup:
-        'Moonlight silver rim, candelabra flicker, fog-diffused ambiance, stained-glass dimness',
+        'Moonlight silver rim, candelabra flicker, fog-diffused ambiance, cathedral-shadow dimness',
       material_texture:
         'Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool',
-      render_quality: 'Gothic, scary, Stoker-novel atmosphere, Hammer-horror elegance',
+      render_quality: 'Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance',
       spatial_distortion: 'None',
       atmosphere:
         'Evil, elegant, ancient-hunger menace, moonlit-seduction danger, aristocratic dread',
-      key_features: 'Opera cape, high collar, medallion, signet ring, crimson lining',
+      key_features: 'Opera cape, high collar, medallion, heraldic signet, crimson lining',
       creative_brief:
-        "Style the input as vampire aristocratic costume: black velvet cape, crimson silk lining, high collar, cravat precision, onyx signet and moonlit silver edge. Keep immortal menace and old-world elegance without requiring a castle, specific face, widow's peak or literal Dracula portrait.",
+        "Style the input through vampire-aristocratic costume grammar: black velvet cape, crimson silk lining, high collar, cravat precision, onyx heraldic accents and moonlit silver edging. Keep immortal menace and old-world elegance without requiring a castle, fangs, widow's peak, portrait bust or a named vampire scene.",
     },
   },
   {
@@ -401,71 +402,73 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'casual',
     style: {
-      aesthetic:
-        'Evangelion sleek biomech pilot suit, NERV interface, sync-ratio shine, plug-depth tension',
+      aesthetic: 'Biomech pilot interfacewear, sync-signal shine, pressure-cabin tension',
       form_and_line:
-        'Panel lines, entry-plug contour, form-fitting compression, shoulder-interface cutout, neck-seal band',
-      color_palette:
-        'Glossy White/Red, EVA-purple, NERV orange, Unit-01 violet, caution-yellow, matte-black',
+        'Panel lines, capsule-contour geometry, compression seams, interface cutouts, sealed-edge bands',
+      color_palette: 'Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black',
       lighting_setup:
-        'LCL-amber immersion glow, display-screen backlight, entry-plug bioluminescence, sync-alert rim',
+        'Amber immersion glow, display-screen backlight, capsule bioluminescence, sync-alert rim',
       material_texture:
         'Latex, plastic, neoprene compression, interface gel, carbon-fiber panel, memory-foam inner',
-      render_quality: 'Anime, sci-fi, cel-shaded precision, mecha-pilot intimacy',
+      render_quality:
+        'Anime sci-fi precision, cel-shaded engineering polish, high-spec interfacewear',
       spatial_distortion: 'None',
-      atmosphere: 'Ready, tech, sync-ratio tension, AT-field silence, impact-alert urgency',
-      key_features: 'Interface headset, A10 nerve clips, plug-suit panel lines, LCL fluid sheen',
+      atmosphere: 'Ready, tech, sync tension, impact-alert urgency, machine-link suspense',
+      key_features:
+        'Interface headset cues, neural-clip detailing, pilot-panel seams, immersion-fluid sheen',
       creative_brief:
-        'Apply mecha-pilot interface design to the input: glossy plug-suit panel lines, compression seams, neck seals, A10 nerve-clip cues, LCL amber sheen and biomech synchronization signals. If a character is present, the style may make them feel linked to a giant machine; if not, leave clear mecha interface traces without requiring cockpit, hangar, launch tube or battle.',
+        'Translate the input into biomech interfacewear: glossy panel lines, compression-seam mapping, sealed-edge bands, neural-clip detailing, amber immersion sheen and synchronization signal cues. Preserve machine-linked tension without requiring a cockpit, hangar, launch tube, battle pose or a human pilot body.',
     },
   },
   {
     id: 'SP08-041',
     name: 'Cybernetic Implant',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'fully human',
+    negativePrompt: 'unmodified plain surface',
     style: {
-      aesthetic: 'Cyborg fashion, transhuman evolution, chrome-and-flesh fusion',
+      aesthetic:
+        'Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host',
       form_and_line:
-        'Metal seams on skin, implant-ridge lines, carbon-fiber contour, prosthetic-limb silhouette',
+        'Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks',
       color_palette:
-        'Skin + Chrome, titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold',
+        'Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral substrate',
       lighting_setup:
-        'Studio, ring-light reflection, cold-lab overhead, LED-indicator glow, surgical-key sharpness',
+        'Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow',
       material_texture:
-        'Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface, anodized aluminum',
-      render_quality: 'Sci-fi, body mod, Ghost-in-the-Shell precision, augment-realism clarity',
-      spatial_distortion: 'Optional visible augmentation',
+        'Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy',
+      render_quality:
+        'Sci-fi couture precision, augment-realism clarity and clinically finished surface integration',
+      spatial_distortion: 'Optional modular augmentation break or replacement logic',
       atmosphere:
-        'Transhuman, cool, augmentation-identity tension, clinical-aesthetic chill, future-body wonder',
+        'Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder',
       key_features:
-        'Metal parts, seam-line integration, exposed circuitry, bionic eye, neural port',
+        'Seam-line integration, exposed circuitry, optical sensor cues, neural ports and modular plated insertions',
       creative_brief:
-        'Mechanize the input through cybernetic augmentation: titanium seams, carbon-fiber contour, medical silicone, bionic eye cues, neural ports and bio-luminescent circuit glow. Preserve transhuman body-mod tension while allowing non-human subjects to gain implant logic instead of forcing a portrait, lab scene or full robot arm. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Mechanize any input through cybernetic augmentation grammar: titanium seams, carbon-fiber contour, medical silicone, optical-sensor cues, neural ports and bio-luminescent circuit glow. Preserve transhuman tension while allowing any subject or surface to gain implant logic instead of forcing exposed flesh, portrait framing, lab scenery or a full prosthetic limb showcase.',
     },
   },
   {
     id: 'SP08-049',
-    name: 'Mermaid Tail',
+    name: 'Pelagic Tail Couture',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'legs',
+    negativePrompt: 'dry casualwear',
     style: {
-      aesthetic: 'Fantasy mermaid, deep-ocean enchantment, shipwreck-siren allure',
+      aesthetic: 'Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence',
       form_and_line:
-        'Scales, fishtail-flare silhouette, fin-ridge undulation, bandeau-top line, hair-float weightlessness',
+        'Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm',
       color_palette:
         'Iridescent Green, teal, abalone, moonlight-pearl, aquamarine, bioluminescent-blue, coral-pink',
       lighting_setup:
-        'Underwater, caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise',
+        'Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise',
       material_texture:
-        'Iridescent scales, wet-look silicone, pearlescent finish, seaweed hair, shell texture, liquid organza',
-      render_quality: 'Magical, mythical, lagoon-dream ethereality, siren-song enchantment',
-      spatial_distortion: 'Fish tail',
+        'Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen',
+      render_quality: 'Magical, mythical, lagoon-dream ethereality, oceanic enchantment',
+      spatial_distortion: 'Optional tail-flare exaggeration',
       atmosphere: 'Beautiful, wet, deep-ocean mystery, coral-reef serenity, moon-tide magic',
       key_features:
-        'Tail or fin cues, scale texture, pearlescent shell detail, liquid organza flow',
+        'Fin cues, scale texture, pearlescent shell detail, liquid organza flow, nacre highlights',
       creative_brief:
-        'Give the input mermaid-costume transformation: iridescent scales, fin ridges, pearlescent shell detail, wet-look silicone, liquid organza and caustic turquoise light. It may convert a figure into a tail silhouette, but should not require shipwrecks, coral reef, underwater hair or a siren scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Give the input a pelagic-couture transformation: iridescent scales, fin ridges, pearlescent shell detail, wet-look silicone, liquid organza and caustic turquoise light. Let aquatic geometry stay abstract and fashion-forward; avoid requiring a mermaid body, siren portrait, coral set, underwater hair or humanoid anatomy.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

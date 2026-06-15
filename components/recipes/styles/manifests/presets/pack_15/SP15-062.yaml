@@ -14,9 +14,7 @@ tags:
   - raypunk
 visualDna:
   aesthetic: Cosmic roadside noir where signage behaves like navigational constellation and every surface promises escape.
-  form_and_line: >-
-    Tailfin rooflines, comet-shaped pylons, crescent awnings, capsule-door shapes, and stripes bending like orbital
-    paths.
+  form_and_line: Tailfin rooflines, comet-shaped pylons, crescent awnings, capsule-door shapes, and stripes bending like orbital paths.
   color_palette: Oxidized teal, motel magenta, warm cream, asphalt black, and pale rocket-smoke blue.
   lighting_setup: Twilight neon bloom, rocket-trail backlight, room-number halos, and sodium puddle reflections.
   material_texture: Flaking painted metal, ribbed vinyl, glossy rain asphalt, plastic star charts, and cracked ceramic diner tile.
@@ -24,12 +22,7 @@ visualDna:
   spatial_distortion: Roadside one-point perspective warped into a comet tail through blank signs and orbital stripes.
   atmosphere: Cheap glamour, fugitive sleep, cosmic wanderlust, and mission-board temptation.
   key_features: Comet sign shapes, fuel-diner color bands, mission-bulletin panels, tailfin shadows, and coordinate-key motifs.
-  creative_brief: >-
-    Repaint the input as cosmic roadside noir: comet pylons, orbital stripes, magenta motel glow, cracked ceramic shine,
-    and coordinate-key motifs should promise escape. Motel strips, pilots, or room-number cues are optional anchors; the
-    style is transient glamour bent into star navigation. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Repaint the input as cosmic roadside noir: comet pylons, orbital stripes, magenta motel glow, cracked ceramic shine, and coordinate-key motifs should promise escape. Motel strips, pilots, or room-number cues are optional anchors; the style is transient glamour bent into star navigation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - gritty-cyber
@@ -54,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -4,8 +4,13 @@ packId: pack_15
 name: Vertical Meadow Clinic
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - solarpunk-dreamscapes
 visualDna:
   aesthetic: Therapeutic solarpunk integrated into vertical meadow softness, care logic, and warm clinical trust.
   form_and_line: Layered therapeutic terrace rhythm, universal-access circulation loops, and soft curve-led wayfinding geometry.
@@ -16,22 +21,28 @@ visualDna:
   spatial_distortion: Vertical sectional reveal linking treatment-like layers, recovery-garden cues, and restorative circulation terraces.
   atmosphere: Care, calm, and technological trust without coldness.
   key_features: Green facade logic, therapeutic terrace rhythm, serene circulation.
-  creative_brief: >-
-    Render the input with therapeutic meadow logic: stacked chlorophyll veils,
-    warm clinical whites, accessible loop geometry, and matte bioceramic calm.
-    Clinics, patients, floors, or facades are optional; the transferable style
-    is care infrastructure softened until it feels alive.
-avoidRules: [photoreal, sterile-corporate, dark-gloomy, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-007.webp }
+  creative_brief: 'Render the input with therapeutic meadow logic: stacked chlorophyll veils, warm clinical whites, accessible loop geometry, and matte bioceramic calm. Clinics, patients, floors, or facades are optional; the transferable style is care infrastructure softened until it feels alive.'
+avoidRules:
+  - photoreal
+  - sterile-corporate
+  - dark-gloomy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-007.webp
 attributes:
   negativePrompt: photoreal, sterile-corporate, dark-gloomy, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, solarpunk-dreamscapes],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - solarpunk-dreamscapes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

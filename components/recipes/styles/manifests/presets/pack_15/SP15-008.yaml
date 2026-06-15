@@ -21,13 +21,7 @@ visualDna:
   spatial_distortion: Stepped catchment-chain perspective descending toward a central cistern-like focal basin.
   atmosphere: Collective tenderness, climatic intelligence, and calm ceremonial focus.
   key_features: Resonant cistern bowls, choir-tier rhythm, rainfall channels, and participatory water-meter motifs.
-  creative_brief: >-
-    Score the input like rain infrastructure playing music: ribbed catchment panels, resonant cistern bowls, silver
-    overcast glints, and repeating channel rhythms. Rooftops, singers, blocks, or choirs can appear as anchors, but the
-    style is acoustic water literacy and soft pluvial ceremony. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Score the input like rain infrastructure playing music: ribbed catchment panels, resonant cistern bowls, silver overcast glints, and repeating channel rhythms. Rooftops, singers, blocks, or choirs can appear as anchors, but the style is acoustic water literacy and soft pluvial ceremony. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dystopian-smog
@@ -51,4 +45,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

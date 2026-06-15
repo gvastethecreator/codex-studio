@@ -12,27 +12,26 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Cyborg fashion, transhuman evolution, chrome-and-flesh fusion
-  form_and_line: Metal seams on skin, implant-ridge lines, carbon-fiber contour, prosthetic-limb silhouette
-  color_palette: Skin + Chrome, titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold
-  lighting_setup: Studio, ring-light reflection, cold-lab overhead, LED-indicator glow, surgical-key sharpness
-  material_texture: Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface, anodized aluminum
-  render_quality: Sci-fi, body mod, Ghost-in-the-Shell precision, augment-realism clarity
-  spatial_distortion: Optional visible augmentation
-  atmosphere: Transhuman, cool, augmentation-identity tension, clinical-aesthetic chill, future-body wonder
-  key_features: Metal parts, seam-line integration, exposed circuitry, bionic eye, neural port
+  aesthetic: Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host
+  form_and_line: Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks
+  color_palette: Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral substrate
+  lighting_setup: Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow
+  material_texture: Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy
+  render_quality: Sci-fi couture precision, augment-realism clarity and clinically finished surface integration
+  spatial_distortion: Optional modular augmentation break or replacement logic
+  atmosphere: Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder
+  key_features: Seam-line integration, exposed circuitry, optical sensor cues, neural ports and modular plated insertions
   creative_brief: >-
-    Mechanize the input through cybernetic augmentation: titanium seams, carbon-fiber contour, medical silicone, bionic
-    eye cues, neural ports and bio-luminescent circuit glow. Preserve transhuman body-mod tension while allowing
-    non-human subjects to gain implant logic instead of forcing a portrait, lab scene or full robot arm. Apply this
-    fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and
-    styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.
+    Mechanize any input through cybernetic augmentation grammar: titanium seams, carbon-fiber contour, medical silicone,
+    optical-sensor cues, neural ports and bio-luminescent circuit glow. Preserve transhuman tension while allowing any
+    subject or surface to gain implant logic instead of forcing exposed flesh, portrait framing, lab scenery or a full
+    prosthetic limb showcase.
 avoidRules:
-  - fully human
+  - unmodified plain surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-041.webp
 attributes:
-  negativePrompt: fully human
+  negativePrompt: unmodified plain surface
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

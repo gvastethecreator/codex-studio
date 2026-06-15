@@ -21,12 +21,7 @@ visualDna:
   spatial_distortion: Layered waterfront-like depth from root-level patterning to elevated public deck cues.
   atmosphere: Resilient tranquility, civic ingenuity, and ecological reciprocity.
   key_features: Amphibious module motifs, mangrove filtration belts, tidal mobility corridors.
-  creative_brief: >-
-    Lift the input through amphibious root logic: branching support lines, buoyant bands, tidal blue-gray reflections,
-    and salt-tolerant woven membranes. Cities, walkways, platforms, or mangroves can reinforce the anchor, but the style
-    is adaptive elevation and reciprocal filtration. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Lift the input through amphibious root logic: branching support lines, buoyant bands, tidal blue-gray reflections, and salt-tolerant woven membranes. Cities, walkways, platforms, or mangroves can reinforce the anchor, but the style is adaptive elevation and reciprocal filtration. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - apocalyptic-flood
@@ -51,4 +46,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

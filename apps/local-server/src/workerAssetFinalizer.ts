@@ -4,6 +4,7 @@ import type { registerCatalogImage } from './catalog';
 import type { addAsset, addJobEvent, getJob, updateJobStatus } from './db';
 import type { publishEvent } from './events';
 import type { toPublicAssetUrl } from './library';
+import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
 import type { log } from './logger';
 import type { embedMetadata } from './metadataEmbedder';
 import type { parsePromptTransport } from '../../../packages/shared/src/promptTransport';
@@ -26,6 +27,7 @@ interface WorkerAssetFinalizerDependencies {
   resolveCatalogGenerationConfig: (job: Job) => Record<string, unknown>;
   organizeGeneratedAssetPath: (job: Job, filePath: string, providerId: string | null) => string;
   inferGeneratedAssetMimeType: (filePath: string) => string;
+  ensureThumbnailVariant?: typeof ensureThumbnailVariantDefault;
 }
 
 interface FinalizeWorkerAssetOptions {
@@ -48,6 +50,7 @@ export function createWorkerAssetFinalizer({
   resolveCatalogGenerationConfig,
   organizeGeneratedAssetPath,
   inferGeneratedAssetMimeType,
+  ensureThumbnailVariant = ensureThumbnailVariantDefault,
 }: WorkerAssetFinalizerDependencies) {
   async function finalizeJobAsset({
     job,
@@ -64,12 +67,24 @@ export function createWorkerAssetFinalizer({
   }) {
     const mimeType = inferGeneratedAssetMimeType(discoveredImagePath);
     const organizedImagePath = organizeGeneratedAssetPath(job, discoveredImagePath, providerId);
+    let thumbnailPath: string | null = null;
+
+    try {
+      thumbnailPath = await ensureThumbnailVariant(organizedImagePath);
+    } catch (error) {
+      logger(
+        'warn',
+        'thumbnail',
+        `Thumbnail generation failed: ${error instanceof Error ? error.message : String(error)}`,
+        job.id,
+      );
+    }
 
     const asset = addAsset({
       projectId: job.projectId,
       jobId: job.id,
       filePath: organizedImagePath,
-      thumbnailPath: null,
+      thumbnailPath,
       publicUrl: toPublicAssetUrl(organizedImagePath),
       prompt: job.finalPromptUsed,
       width: null,

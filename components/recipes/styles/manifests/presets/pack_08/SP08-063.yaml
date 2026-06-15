@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Feather couture, cabaret extravagance, stage-spectacle plumage
-  form_and_line: Soft barbs, feather-fan spread, headdress-arc corona, tail-train sweep, wing-cape silhouette
+  aesthetic: Feather couture opulence, plume-driven extravagance, ceremonial plumage drama
+  form_and_line: Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep
   color_palette: Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil
   lighting_setup: Soft spotlight drama, feather-edge translucency, warm bulb glow
   material_texture: Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle
-  render_quality: Exotic, soft, cabaret-spectacle grandeur, Moulin-Rouge opulence
+  render_quality: Luxurious, soft, plume-spectacle grandeur, couture opulence
   spatial_distortion: None
-  atmosphere: Grand, birdlike, plumage-pride majesty, feathered-flight fantasy
-  key_features: Quills, feather fan, headdress, marabou trim, iridescent barb
+  atmosphere: Grand, buoyant, ornamental, plume-pride majesty
+  key_features: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs
   creative_brief: >-
     Feather the input with couture plumage: ostrich plumes, marabou fluff,
     peacock eyes, fan spreads, headdress arcs and translucent barbs. Keep
-    cabaret spectacle without requiring a showgirl, performer breath, curtain
-    call or stage scene.
+    spectacle as ornamental pressure, not as a showgirl body, performer pose,
+    curtain call or stage scene.
 avoidRules:
   - fur
   - hair

@@ -194,7 +194,15 @@ function serializeCatalogImage(image: CatalogImage): LiveCatalogImageRef {
 
 function normalizeApiBase(apiBase?: string) {
   const trimmed = apiBase?.trim() || DEFAULT_API_BASE;
-  return trimmed.replace(/\/+$/, '');
+  try {
+    const url = new URL(trimmed);
+    if (url.hostname === 'localhost') {
+      url.hostname = '127.0.0.1';
+    }
+    return url.toString().replace(/\/+$/, '');
+  } catch {
+    return trimmed.replace(/\/+$/, '');
+  }
 }
 
 function formatDuration(durationMs: number | null | undefined) {

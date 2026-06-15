@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -16,6 +17,7 @@ import {
   type RegisterExternalOutputSourceInput,
 } from '../../../packages/shared/src/outputSources';
 import { resolveLibraryPathFromRoot } from './library';
+import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
 import type { StudioSettingsStorage } from './studioSettingsStore';
 
 export const EXTERNAL_OUTPUT_SOURCES_KEY = 'external_output_sources';
@@ -50,6 +52,7 @@ export interface ImportExternalOutputSourceFilesDependencies {
   input: ImportExternalOutputSourceInput;
   registerCatalogImage: (input: {
     filePath: string;
+    thumbnailPath?: string | null;
     prompt?: string | null;
     mimeType: string;
     fileSizeBytes?: number | null;
@@ -58,6 +61,7 @@ export interface ImportExternalOutputSourceFilesDependencies {
     generationConfig?: Record<string, unknown> | null;
   }) => CatalogImage;
   copyFile?: typeof copyFileSync;
+  ensureThumbnailVariant?: typeof ensureThumbnailVariantDefault;
   makeDir?: typeof mkdirSync;
   statPath?: typeof statSync;
   now?: string;
@@ -128,9 +132,11 @@ function isImageFile(filePath: string) {
 }
 
 function toSafeAssetFileName(sourceId: string, relativePath: string) {
+  const normalizedRelativePath = relativePath.replaceAll('\\', '/');
   const parsed = path.parse(relativePath);
   const stem = parsed.name.replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-+|-+$/g, '') || 'asset';
-  return `${sourceId}-${stem}${parsed.ext.toLowerCase()}`;
+  const pathHash = createHash('sha1').update(normalizedRelativePath).digest('hex').slice(0, 8);
+  return `${sourceId}-${stem}-${pathHash}${parsed.ext.toLowerCase()}`;
 }
 
 function resolveSourceFile(sourceRoot: string, relativePath: string) {
@@ -320,13 +326,14 @@ export function listExternalOutputSourceFiles({
   };
 }
 
-export function importExternalOutputSourceFiles({
+export async function importExternalOutputSourceFiles({
   storage,
   sourceId,
   libraryDir,
   input,
   registerCatalogImage,
   copyFile = copyFileSync,
+  ensureThumbnailVariant = ensureThumbnailVariantDefault,
   makeDir = mkdirSync,
   statPath = statSync,
   now = new Date().toISOString(),
@@ -366,8 +373,17 @@ export function importExternalOutputSourceFiles({
 
       const destination = path.join(destinationDir, toSafeAssetFileName(source.id, relativePath));
       copyFile(sourceFile, destination);
+      let thumbnailPath: string | null = null;
+
+      try {
+        thumbnailPath = await ensureThumbnailVariant(destination, { libraryDir });
+      } catch {
+        thumbnailPath = null;
+      }
+
       const image = registerCatalogImage({
         filePath: destination,
+        thumbnailPath,
         prompt: `Imported from ${source.label}: ${relativePath}`,
         mimeType: mimeForPath(destination),
         fileSizeBytes: stat.size,

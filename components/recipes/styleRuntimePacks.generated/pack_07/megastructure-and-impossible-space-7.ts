@@ -65,24 +65,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground',
     style: {
       aesthetic:
-        'Retrofuturismo nuboso de gran altitud, entre lujo modernista y equilibrio aerostático sereno.',
+        'Retrofuturismo aerostÃ¡tico de gran altitud, entre lujo modernista y equilibrio suspendido sereno.',
       form_and_line:
-        'Plataformas circulares estratificadas, cubiertas aerodinámicas curvadas, aletas de aguja y anillos concéntricos suspendidos.',
+        'Plataformas circulares estratificadas, cubiertas aerodinÃ¡micas curvadas, aletas de aguja y anillos concÃ©ntricos suspendidos.',
       color_palette:
         'Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne metallics, and cool silver edge highlights',
       lighting_setup:
-        'Ambiente difuso de horizonte, balizas suaves, backscatter cálido y bloom controlado en atmósfera de altura.',
+        'Ambiente difuso de horizonte, balizas suaves, backscatter cÃ¡lido y bloom controlado en atmÃ³sfera de altura.',
       material_texture:
-        'Revestimiento de aleación satinada, piel compuesta pulida, vidrio de grano bajo y costuras de precisión.',
+        'Revestimiento de aleaciÃ³n satinada, piel compuesta pulida, vidrio de grano bajo y costuras de precisiÃ³n.',
       render_quality:
-        'Arquitectura especulativa premium, legible a distancia y separada por capas atmosféricas elegantes.',
+        'Arquitectura especulativa premium, legible a distancia y separada por capas atmosfÃ©ricas elegantes.',
       spatial_distortion:
         'Emphasize stacked floating tier depth, long vertical voids, and gentle perspective curvature without surreal deformation',
-      atmosphere: 'Refinada, tranquila y aspiracional, con gracia tecnológica diplomática.',
+      atmosphere: 'Refinada, tranquila y aspiracional, con gracia tecnolÃ³gica diplomÃ¡tica.',
       key_features:
-        'Jerarquía de plataformas concéntricas, domos terminales, aproximaciones balizadas y contorno metálico prístino.',
+        'JerarquÃ­a de plataformas concÃ©ntricas, coronas suspendidas, balizaje perimetral suave y contorno metÃ¡lico prÃ­stino.',
       creative_brief:
-        'Define un retrofuturo aerostático transferible: tiers flotantes, superficies satinadas, atmósfera de ocaso, balizas suaves y vacío vertical elegante. Debe sugerir altura y lujo tecnológico sin depender de una ciudad licenciada.',
+        'Define un retrofuturo aerostÃ¡tico transferible: tiers flotantes, superficies satinadas, atmÃ³sfera de ocaso, balizas suaves y vacÃ­o vertical elegante. Debe sugerir altura, suspensiÃ³n y lujo tecnolÃ³gico sin depender de sky-city, terminal o ciudad licenciada.',
     },
   },
   {
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.',
       creative_brief:
-        'Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de borde y macro-perspectiva. La identidad viene de continuidad anular y planificación biosférica. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de borde y macro-perspectiva. La identidad viene de continuidad anular y planificacion biosferica. Conserva curvatura orbital, ecologia lineal, escala macro y horizonte ascendente sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.',
       creative_brief:
-        'Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar facción, personaje o nave. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar faccion, personaje o nave. Conserva modularidad hive, conducciones densas, fosforescencia verde y utilidad colectiva sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.',
       creative_brief:
-        'Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando táctil. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando tactil sin exigir cabina heroica, rotor central literal o sala de control cerrada. Conserva eje energetico, roundels, recesion dimensional y tactilidad retrotech sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

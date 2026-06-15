@@ -4,8 +4,14 @@ packId: pack_15
 name: Drift Garden Subpier
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Submerged drift-garden seapunk where tides cultivate luminous flora below structure.
   form_and_line: Pier-piling silhouettes, hanging garden forms, drifting root bundles, and tide-fed bloom arcs.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Downward peek into layered drift-garden depth.
   atmosphere: Slow growth, tide patience, and luminous ecology.
   key_features: Drift roots, subpier planter motifs, tide-fed blooms, and suspended luminous flora.
-  creative_brief: >-
-    Submerge the input under drift-garden patience: aquamarine bloom light,
-    coral lattice arcs, dusk-violet depth, hanging root bundles, and tide-fed
-    luminous flora make any subject feel slow-grown beneath structure.
-avoidRules: [photoreal, oil-slick, industrial, watermark, text, logo, murky]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-120.webp }
+  creative_brief: 'Submerge the input under drift-garden patience: aquamarine bloom light, coral lattice arcs, dusk-violet depth, hanging root bundles, and tide-fed luminous flora make any subject feel slow-grown beneath structure.'
+avoidRules:
+  - photoreal
+  - oil-slick
+  - industrial
+  - watermark
+  - text
+  - logo
+  - murky
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-120.webp
 attributes:
   negativePrompt: photoreal, oil-slick, industrial, watermark, text, logo, murky
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

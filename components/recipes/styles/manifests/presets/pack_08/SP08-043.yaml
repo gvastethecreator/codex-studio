@@ -12,21 +12,19 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Padme Amidala operatic space-court couture, Naboo regality, senatorial authority
-  form_and_line: Elaborate headpiece, issei-crown halo, gown-train sweep, corset-waist architecture, bell-sleeve drama
-  color_palette: Red, Gold, Alien, crimson, electrum, pearl, plasma-pink, Naboo-teal, midnight-velvet
+  aesthetic: Operatic space-court couture, sovereign nebular regality, diplomatic authority
+  form_and_line: Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality
+  color_palette: Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet
   lighting_setup: Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight
   material_texture: Exotic fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk
-  render_quality: Regal, alien, galactic-court opulence, Coruscant-high-fashion
-  spatial_distortion: Strange hair
+  render_quality: Regal alien opulence, galactic-court high fashion, ceremonial precision
+  spatial_distortion: Ceremonial halo exaggeration
   atmosphere: Serious, political, galactic-court gravity, doomed-romance elegance, diplomatic tension
-  key_features: Face-paint cues, issei headpiece, ceremonial gown architecture, feathered cape
+  key_features: Ceremonial signal-paint cues, halo headpiece logic, gown architecture, feathered cape
   creative_brief: >-
-    Turn the input into galactic-court couture: issei halo geometry, alien
-    headpiece logic, liquid-metal thread, feather trim, ceremonial face-paint
-    cues and diplomatic crimson-gold gravity. Keep Padme/Naboo regality as style
-    anchor without requiring a throne room, senate chamber, twin suns or specific
-    royal figure.
+    Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal thread,
+    feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality as a portable
+    style anchor, not as throne rooms, senate chambers, twin-sun tableaux or specific royal figures.
 avoidRules:
   - simple
   - earth

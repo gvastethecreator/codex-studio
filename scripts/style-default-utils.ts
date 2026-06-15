@@ -21,7 +21,8 @@ export const categoryBasesDir = path.join(recipeStylesDir, 'category-bases');
 export const defaultsDir = path.join(recipeStylesDir, 'defaults');
 export const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
-export const IMAGEGEN_DENOISE_SUFFIX = 'Apply a heavy strong denoise to the image.';
+export const IMAGEGEN_DENOISE_SUFFIX =
+  'Apply a strong denoise pass. Avoid noisy grain, oversharpening, crunchy micro-contrast, and ultra-fine detail clutter. Favor cleaner large shapes, smoother tonal transitions, controlled texture, and readable forms.';
 export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
 export const defaultCodexHome = path.join(homeDir, '.codex');
 
@@ -112,7 +113,7 @@ export async function loadPacks() {
 }
 
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
-  const apiBase = process.env.STUDIO_API_BASE || 'http://localhost:17223';
+  const apiBase = process.env.STUDIO_API_BASE || 'http://127.0.0.1:17223';
   const attempts = Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
 
   return runWithScriptRetry(
@@ -145,4 +146,34 @@ export function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {
 
 export function appendImagegenDenoiseDirective(prompt: string) {
   return `${prompt.trim()}\n\nPOST-PROCESSING:\n${IMAGEGEN_DENOISE_SUFFIX}`;
+}
+
+const STYLE_PROMPT_NAME_REPLACEMENTS: Array<[RegExp, string]> = [
+  [/\bknife\b/gi, 'seal'],
+  [/\bknives\b/gi, 'seals'],
+  [/\bdagger\b/gi, 'sigil'],
+  [/\bdaggers\b/gi, 'sigils'],
+  [/\bblade\b/gi, 'edge'],
+  [/\bblades\b/gi, 'edges'],
+  [/\bsacrifice\b/gi, 'rite'],
+  [/\bsacrificial\b/gi, 'ceremonial'],
+  [/\bblood\b/gi, 'ember'],
+];
+
+function matchReplacementCase(source: string, replacement: string) {
+  if (source.toUpperCase() === source) {
+    return replacement.toUpperCase();
+  }
+  if (source[0] && source[0] === source[0].toUpperCase()) {
+    return `${replacement[0]?.toUpperCase() || ''}${replacement.slice(1)}`;
+  }
+  return replacement;
+}
+
+export function sanitizeStylePromptName(name: string) {
+  return STYLE_PROMPT_NAME_REPLACEMENTS.reduce((value, [pattern, replacement]) => {
+    return value.replace(pattern, (match) => matchReplacementCase(match, replacement));
+  }, name)
+    .replace(/\s+/g, ' ')
+    .trim();
 }

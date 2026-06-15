@@ -4,8 +4,13 @@ packId: pack_14
 name: Serpent Oracle Lineage
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Serpent-oracle lineage rendered through coiling prophecy, guarded wisdom, and emerald noir authority.
   form_and_line: Coiling column cues, court-step bands, and sinuous canopy lines.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Prophecy, continuity, and guarded wisdom.
   key_features: Oracle dais cues, serpent pillars, sigil mosaics.
   creative_brief: Reinterpret the input as serpent-oracle lineage, letting prophecy coil through form and material without requiring a court.
-avoidRules: [photoreal, playful, candy-color, watermark, text, logo, static-pose]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-122.webp }
+avoidRules:
+  - photoreal
+  - playful
+  - candy-color
+  - watermark
+  - text
+  - logo
+  - static-pose
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-122.webp
 attributes:
   negativePrompt: photoreal, playful, candy-color, watermark, text, logo, static-pose
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

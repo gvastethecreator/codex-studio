@@ -4,8 +4,14 @@ packId: pack_14
 name: Worldroot Oathforged Prophecy
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Norse mythic forge-noir where worldroot prophecy, oath rings, and apocalyptic craft shape the input.
   form_and_line: Rune-carved anvil cues, layered fur silhouettes, and trunk-to-vault verticality.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Stoic resolve, ancestral weight, and apocalyptic preparedness.
   key_features: Rune anvils, oath rings, ravens, worldroot sap brazier cues.
   creative_brief: Convert any input through worldroot oathforged prophecy, as if names, debts, tools, bodies, or treaties were struck before the last winter. Preserve rune-forge weight, oath-ring gravity, ash-wood verticality, and apocalyptic craft without requiring weapons, ravens, world trees, warriors, or a literal forge scene.
-avoidRules: [photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-015.webp }
+avoidRules:
+  - photoreal
+  - tropical
+  - cartoon
+  - glossy-sci-fi
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-015.webp
 attributes:
   negativePrompt: photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

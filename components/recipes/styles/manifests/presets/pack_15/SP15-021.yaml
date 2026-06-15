@@ -4,8 +4,14 @@ packId: pack_15
 name: Orbit Diner Strip
 category: 8. Corepunk — Atompunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, atompunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - atompunk
 visualDna:
   aesthetic: Nostalgic atomic-age consumer futurism with launch-night sparkle.
   form_and_line: Starburst panels, tapered pylons, tailfin curves, and low-slung aerodynamic bands.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Long receding rhythm of blank sign shapes, tailfins, and chrome repeats.
   atmosphere: Cheerful futurism, consumer ritual, and launch-night anticipation.
   key_features: Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.
-  creative_brief: >-
-    Dress the input in launch-night atomic consumer sparkle: tailfin curves,
-    bubblegum-cyan chrome, blank marquee rhythm, vinyl sheen, and rocket-flare
-    reflections. Diner strips or roadside cues may appear, but the style should
-    function as cheerful orbit-age anticipation on any subject.
-avoidRules: [photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-021.webp }
+  creative_brief: 'Dress the input in launch-night atomic consumer sparkle: tailfin curves, bubblegum-cyan chrome, blank marquee rhythm, vinyl sheen, and rocket-flare reflections. Diner strips or roadside cues may appear, but the style should function as cheerful orbit-age anticipation on any subject.'
+avoidRules:
+  - photoreal
+  - cyberpunk-gloom
+  - medieval
+  - grim-horror
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-021.webp
 attributes:
   negativePrompt: photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-atompunk,
-    categoryName: 8. Corepunk — Atompunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, atompunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-atompunk
+  categoryName: 8. Corepunk — Atompunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - atompunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

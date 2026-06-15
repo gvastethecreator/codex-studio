@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: Living statue, museum-come-alive fantasy, petrified-elegance awe
-  form_and_line: Chisel marks, contrapposto-stance, sculpted-drapery fold, classical-proportion silhouette, pedestal-base stillness
+  form_and_line: Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, pedestal-like stillness
   color_palette: Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess
   lighting_setup: Gallery-spot precision, overhead directional drama, marble-subsurface scatter, pedestal-like shadow
   material_texture: Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice
@@ -23,9 +23,9 @@ visualDna:
   key_features: Marble, veining, chisel marks, sculpted drapery, pedestal cues
   creative_brief: >-
     Petrify the input into stone-statue material: Carrara grain, grey veining,
-    chisel marks, sculpted drapery folds, rigid silhouette and gallery-like spot
-    light. Keep living-statue wonder without requiring contrapposto figure,
-    museum, pedestal, body or classical portrait.
+    chisel marks, sculpted drapery folds, rigid carved contour and gallery-like
+    spot light. Keep living-statue wonder without requiring contrapposto figure,
+    museum, pedestal, body or classical portrait bust.
 avoidRules:
   - flesh
 assets:

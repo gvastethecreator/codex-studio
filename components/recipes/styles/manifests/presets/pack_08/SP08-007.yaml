@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Traditional goth style, Victorian mourning revival, darkwave elegance
+  aesthetic: Traditional goth style, mourning revival, darkwave elegance
   form_and_line: Sharp edges, spikes, fishtail hem, coffin-cut shoulders, corseted waist silhouette
   color_palette: Black on Black, jet black, raven, midnight, void-black, deep aubergine shadow
   lighting_setup: Moonlit silver rim light, candle-flicker ambiance, low-key velvet shadow
   material_texture: Velvet devore, Chantilly lace, patent leather, polished silver, pewter hardware, fishnet
-  render_quality: Dramatic, spooky, elegant, undead refinement, crypt-chic atmosphere
+  render_quality: Dramatic elegant finish, nocturnal refinement, cryptic couture atmosphere
   spatial_distortion: Corset waist
   atmosphere: Melancholic, dark, romantic, moonlit longing, eternal twilight, beautiful decay
   key_features: Black-on-black layering, silver occult jewelry, platform-boot mass, corset or lace cues
   creative_brief: >-
-    Cast the input in goth darkwave styling: black velvet depth, lace
-    transparency, patent shine, pewter hardware and occult silver accents.
-    Preserve mourning romance and beautiful decay without requiring pale skin,
-    cathedral stone, graveyard mist or a specific gothic character.
+    Cast the input in goth darkwave styling: black velvet depth, lace transparency, patent shine, pewter hardware and
+    occult silver accents. Preserve mourning romance and beautiful decay without requiring pale skin, crypt architecture,
+    graveyard mist, corseted body staging or a specific gothic character.
 avoidRules:
   - happy
   - pink

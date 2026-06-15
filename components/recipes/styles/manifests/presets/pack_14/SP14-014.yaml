@@ -4,8 +4,14 @@ packId: pack_14
 name: Aegean Titan Judgment
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Greek myth judgment noir where titanic law is pronounced through storm-lit marble and chthonic pressure.
   form_and_line: Marble authority symmetry, armored drapery silhouettes, thunderbolt sigil geometry, and titan-scale vertical pressure.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Rising judgment perspective toward a central force without requiring a tribunal.
   atmosphere: Epic authority, ancestral dread, and juridical grandeur.
   key_features: Titan-mask cues, oath tablets, storm-lashed marble, sacrificial fire accents, and oxidized-gold law.
-  creative_brief: >-
-    Judge the input through Aegean titan authority: Aegean blue-black fields,
-    cracked marble ivory, oxidized gold, lightning cuts, and chthonic underlight
-    should make form and light feel mythically sentenced without requiring a
-    court, colonnade, judge, sacrifice, or Greek tableau.
-avoidRules: [photoreal, cheerful, modern-casual, flat-light, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-014.webp }
+  creative_brief: 'Judge the input through Aegean titan authority: Aegean blue-black fields, cracked marble ivory, oxidized gold, lightning cuts, and chthonic underlight should make form and light feel mythically sentenced without requiring a court, colonnade, judge, sacrifice, or Greek tableau.'
+avoidRules:
+  - photoreal
+  - cheerful
+  - modern-casual
+  - flat-light
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-014.webp
 attributes:
   negativePrompt: photoreal, cheerful, modern-casual, flat-light, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

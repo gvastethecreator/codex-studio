@@ -4,8 +4,14 @@ packId: pack_14
 name: Palm Crown Astral Navigation
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Palm-crown astral navigation aligned to star tides, lunar timing, and ritual trade.
   form_and_line: Pier ladder cues, mast forests, and shrine watchtower silhouettes.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Trade, ritual timing, and tidal mysticism.
   key_features: Astral chart cues, palm crown shrine, omen buoy lights.
   creative_brief: Apply palm-crown astral navigation to the input, letting stellar calendars guide motion without requiring a port.
-avoidRules: [photoreal, modern-container-port, cyber-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-067.webp }
+avoidRules:
+  - photoreal
+  - modern-container-port
+  - cyber-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-067.webp
 attributes:
   negativePrompt: photoreal, modern-container-port, cyber-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

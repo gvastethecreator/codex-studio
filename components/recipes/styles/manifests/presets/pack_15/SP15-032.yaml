@@ -14,27 +14,15 @@ tags:
   - stonepunk
 visualDna:
   aesthetic: Megalith logistics style where travel feels carved into geology, slow as a glacier, and impossible to privatize.
-  form_and_line: >-
-    Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut
-    like fossils.
+  form_and_line: Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut like fossils.
   color_palette: Sandstone beige, slate blue, iron rust, sun-bleached rope tan, and oxidized route-paint green.
-  lighting_setup: >-
-    Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving
-    weights.
-  material_texture: >-
-    Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide
-    grooves.
+  lighting_setup: Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving weights.
+  material_texture: Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide grooves.
   render_quality: Expansive stonepunk infrastructure concept with every route, lift, and exchange point legible at civic scale.
   spatial_distortion: Horizon compression stretches routes into monumental lines, making distance feel engineered by public effort.
   atmosphere: Slow momentum, civic pragmatism, trade ritual, and old-world futurity.
   key_features: Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.
-  creative_brief: >-
-    Stretch the input into public geology in motion: carved route grooves, counterweight blocks, rope-shadow grids,
-    fossil-like distance marks, and stone-sled scars. Roads, trade gates, towers, or sleds can anchor the idea, but the
-    style is civic distance engineered through megalithic effort. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Stretch the input into public geology in motion: carved route grooves, counterweight blocks, rope-shadow grids, fossil-like distance marks, and stone-sled scars. Roads, trade gates, towers, or sleds can anchor the idea, but the style is civic distance engineered through megalithic effort. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - cyber-neon
@@ -60,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

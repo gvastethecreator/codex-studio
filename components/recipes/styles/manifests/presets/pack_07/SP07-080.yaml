@@ -29,10 +29,9 @@ visualDna:
   key_features: Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.
   creative_brief: >-
     Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no
-    euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando táctil. Apply
-    this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm,
-    atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set,
-    creature, or fixed scene.
+    euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando tactil sin exigir
+    cabina heroica, rotor central literal o sala de control cerrada. Conserva eje energetico, roundels, recesion
+    dimensional y tactilidad retrotech sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - small
 assets:

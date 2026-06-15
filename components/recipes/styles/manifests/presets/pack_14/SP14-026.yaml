@@ -4,8 +4,14 @@ packId: pack_14
 name: Eight Storm Kagura Motion
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Celestial kagura motion invoking storm kami through disciplined theatrical elegance.
   form_and_line: Raised stage cues, fan-like drape geometry, and braided ritual ropes.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Controlled ecstasy, divine attention, and formal danger.
   key_features: Kagura masks, storm drums, sacred mirrors, rope-bounded dance-ring cues.
   creative_brief: Transform any input through eight-storm kagura motion, where disciplined gesture opens temporary corridors to weather gods. Use fan geometry, braided rope rhythm, moon-silver spotlighting, storm-drum pressure, and silk-like motion without requiring dancers, masks, stages, shrines, or performance scenes.
-avoidRules: [photoreal, modern-concert-tech, comedic, fluorescent-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-026.webp }
+avoidRules:
+  - photoreal
+  - modern-concert-tech
+  - comedic
+  - fluorescent-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-026.webp
 attributes:
   negativePrompt: photoreal, modern-concert-tech, comedic, fluorescent-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

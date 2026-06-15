@@ -11,7 +11,14 @@ export interface StudioQueueResultPreview {
 
 interface BuildStudioQueueResultPreviewsOptions {
   limit?: number;
-  toAssetUrl?: (assetPath: string) => string;
+  thumbnailMaxEdge?: number;
+  toAssetUrl?: (
+    assetPath: string,
+    options?: {
+      variant?: 'thumb';
+      maxEdge?: number;
+    },
+  ) => string;
 }
 
 function createdAtMs(entry: Pick<CatalogImage, 'createdAt'>) {
@@ -24,14 +31,20 @@ function compareCatalogEntries(left: CatalogImage, right: CatalogImage) {
 
 export function buildStudioQueueResultPreviews(
   entries: CatalogImage[],
-  { limit = 6, toAssetUrl = (assetPath) => assetPath }: BuildStudioQueueResultPreviewsOptions = {},
+  {
+    limit = 6,
+    thumbnailMaxEdge = 96,
+    toAssetUrl = (assetPath) => assetPath,
+  }: BuildStudioQueueResultPreviewsOptions = {},
 ): StudioQueueResultPreview[] {
   return entries
     .toSorted(compareCatalogEntries)
     .slice(0, limit)
     .map((entry) => ({
       id: entry.id,
-      src: toAssetUrl(entry.thumbnailUrl || entry.publicUrl),
+      src: entry.thumbnailUrl
+        ? toAssetUrl(entry.thumbnailUrl)
+        : toAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge: thumbnailMaxEdge }),
       prompt: entry.prompt,
       jobId: entry.jobId,
       recipeId: entry.recipeId,

@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Fantasía confitera de surrealismo comestible y modularidad de azúcar.
-  form_and_line: Masas redondeadas blandas, columnas candy repetitivas y bandas ornamentales de glaseado.
-  color_palette: Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black
-  lighting_setup: Glow cálido de confitería, brillos de frosting, translucidez gumdrop y destellos de cristal de azúcar.
-  material_texture: Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hilos de azúcar estirada.
-  render_quality: Fantasía estilizada de saturación alta con coherencia lúdica de material comestible.
-  spatial_distortion: Melting
-  atmosphere: Exceso lúdico, surrealismo alegre y escapismo hiper-dulce.
-  key_features: Planos de icing, marcadores gumdrop, acentos sprinkle y motivos estructurales candy-cane.
+  aesthetic: Fantasia confitera de surrealismo comestible, donde masa, azucar y glaseado se vuelven sistema arquitectonico portable.
+  form_and_line: Masas redondeadas blandas, repeticion modular candy, bandas de icing y uniones dulces que deforman estructura sin requerir castillo o calle de cuento.
+  color_palette: Pink, pastel, candy-apple red, gumdrop green, marshmallow white, licorice black
+  lighting_setup: Glow calido de confiteria, brillos de frosting, translucidez gumdrop y destellos de cristal de azucar controlados.
+  material_texture: Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hebras de azucar estirada con tactilidad de exceso edible.
+  render_quality: Fantasia estilizada de saturacion alta con coherencia ludica de material comestible y construccion creible.
+  spatial_distortion: Melting and soft structural sag without forcing a fairy-tale skyline
+  atmosphere: Exceso ludico, surrealismo alegre y escapismo hiper-dulce convertido en materia construida.
+  key_features: Planos de icing, nodos gumdrop, acentos sprinkle y soportes candy-cane integrados como lenguaje estructural.
   creative_brief: >-
-    Todo se vuelve arquitectura de azucar: glaseado como junta, caramelo como estructura, gumdrops como nodos y pastel
-    como masa. La fantasia debe ser material y tactil, no depender de reino, cuento o escena. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Convierte cualquier sujeto o volumen en surrealismo confitero: glaseado como junta, caramelo como soporte, gumdrops
+    como nodos y pastel como masa. La fantasia debe sentirse material y tactil, no dependiente de reino, cuento, mesa
+    de postres o escena infantil fija. Mantiene logica comestible, escala de ensamblaje, ritmo candy y atmosfera ludica
+    sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - scary
   - realistic

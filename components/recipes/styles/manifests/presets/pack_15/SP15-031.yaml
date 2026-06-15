@@ -21,15 +21,8 @@ visualDna:
   render_quality: Heavy tactile stonepunk concept art where every mechanism reads as buildable, brutal, and devotional.
   spatial_distortion: Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.
   atmosphere: Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.
-  key_features: >-
-    Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved
-    maintenance-prayer marks.
-  creative_brief: >-
-    Crush the input into devotional stone machinery: basalt teeth, counterweight shafts, rope-burn fibers, ember pits,
-    and carved tally marks should make technology feel older than speech. Sanctuaries, workers, or ritual sites may
-    appear, but the style is weight, labor, and sacred mass. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.
+  creative_brief: 'Crush the input into devotional stone machinery: basalt teeth, counterweight shafts, rope-burn fibers, ember pits, and carved tally marks should make technology feel older than speech. Sanctuaries, workers, or ritual sites may appear, but the style is weight, labor, and sacred mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - high-tech-glass-only
@@ -55,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

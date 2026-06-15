@@ -51,12 +51,28 @@ for (const pack of await loadPacks()) {
 
 const done = rows.filter((row) => row.exists);
 const missing = rows.filter((row) => !row.exists);
+const focusPackIds = ['pack_08', 'pack_09', 'pack_10', 'pack_11'];
+const focusPackSummary = focusPackIds.map((packId) => {
+  const packRows = rows.filter((row) => row.packId === packId);
+  const generated = packRows.filter((row) => row.exists).length;
+  return {
+    packId,
+    packName: packRows[0]?.packName ?? packId,
+    generated,
+    total: packRows.length,
+  };
+});
 
 const lines = [
   '# Style Category Bases Audit',
   '',
   `Generated bases: ${done.length}/${rows.length}`,
   `Missing bases: ${missing.length}/${rows.length}`,
+  '',
+  'Objective slice `pack_08..pack_11`:',
+  ...focusPackSummary.map(
+    (pack) => `- ${pack.packName} (${pack.packId}): ${pack.generated}/${pack.total} generated`,
+  ),
   '',
   '## Generated',
   '',

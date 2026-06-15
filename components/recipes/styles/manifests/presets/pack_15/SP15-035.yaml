@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Vertical descent composition stacks glow layers like pressure zones, making distance feel heavy and submerged.
   atmosphere: Subaquatic nightlife, alien intimacy, adaptive resilience, and beautiful claustrophobia.
   key_features: Neon coral arrays, pressure-lock collars, sonar rings, black-water voids, and submersible-scar detailing.
-  creative_brief: >-
-    Sink the input into pressure-lit abyssal nightlife: black-water voids, sonar rings, pressure-lock collars, neon
-    coral ribs, and mineral-encrusted glow should make darkness feel structural. Reefs or submersible cues may appear,
-    but the style is resilient beauty under heavy water. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Sink the input into pressure-lit abyssal nightlife: black-water voids, sonar rings, pressure-lock collars, neon coral ribs, and mineral-encrusted glow should make darkness feel structural. Reefs or submersible cues may appear, but the style is resilient beauty under heavy water. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dry-desert-elements
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

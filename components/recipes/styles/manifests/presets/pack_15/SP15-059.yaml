@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Axis perspective terminates at formal thresholds while mirror planes duplicate scrutiny on both sides.
   atmosphere: Authority, scrutiny, polished intimidation, and ceremonial inevitability.
   key_features: Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stair motifs, and engraved verdict plates.
-  creative_brief: >-
-    Judge the input through mirrorline severity: doubled reflections, tribunal chevrons, brass verdict plates, polished
-    stone axes, and cold teal seals should make scrutiny unavoidable. Court or plaza cues may appear, but the style is
-    symmetry as surveillance and authority as reflection. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Judge the input through mirrorline severity: doubled reflections, tribunal chevrons, brass verdict plates, polished stone axes, and cold teal seals should make scrutiny unavoidable. Court or plaza cues may appear, but the style is symmetry as surveillance and authority as reflection. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - comedic
@@ -52,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

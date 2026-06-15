@@ -6,6 +6,7 @@ import type {
   StylePresetManifest,
 } from '../components/recipes/styles/manifestTypes';
 import { loadStylePackManifests, loadStylePresetManifestRecords } from './style-manifest-files';
+import { hasStyleDefaultImageFile } from './style-default-image-state';
 
 function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
@@ -45,7 +46,7 @@ function buildTaxonomy({
     ...(preset.domain ? { domain: preset.domain } : {}),
     tags: preset.tags,
     supportedTasks: preset.supportedTasks,
-    hasDefaultImage: Boolean(preset.assets.defaultImage),
+    hasDefaultImage: hasStyleDefaultImageFile(process.cwd(), preset),
   };
 }
 

@@ -4,8 +4,13 @@ packId: pack_14
 name: Clockwork Exorcism Tribunal
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Judicial occult noir fused with antique mechanical ritualism and verdict pressure.
   form_and_line: Triangular verdict staging, articulated device geometry, strict blocking, and procedural sigil alignment.
@@ -16,23 +21,29 @@ visualDna:
   spatial_distortion: Forced-perspective chamber logic emphasizing a central verdict axis without requiring a courtroom.
   atmosphere: Moral gravity, procedural dread, and controlled ceremonial violence.
   key_features: Mechanized exorcism rig cues, brass verdict devices, evidentiary relic arrays, parchment dossiers, and moral-gravity beams.
-  creative_brief: >-
-    Prosecute the input through clockwork exorcism tribunal logic: charcoal
-    verdict shadows, brass amber machinery, parchment dossiers, iron-chain
-    geometry, and procedural occult alignment should make any subject feel judged
-    and ritually constrained without requiring judges, courtroom, exorcist, rig,
-    or secret trial staging.
-avoidRules: [photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-010.webp }
+  creative_brief: 'Prosecute the input through clockwork exorcism tribunal logic: charcoal verdict shadows, brass amber machinery, parchment dossiers, iron-chain geometry, and procedural occult alignment should make any subject feel judged and ritually constrained without requiring judges, courtroom, exorcist, rig, or secret trial staging.'
+avoidRules:
+  - photoreal
+  - playful
+  - sci-fi-neon
+  - low-detail
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-010.webp
 attributes:
   negativePrompt: photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

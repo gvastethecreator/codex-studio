@@ -4,8 +4,14 @@ packId: pack_14
 name: Ashen Ragnarok Last Stand
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Ashen Ragnarok last stand prepared to buy time against the end of worlds.
   form_and_line: Bastion ring cues, spear forests, and barricade wedges.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Defiance, fatalism, and martial resolve.
   key_features: Last-stand wall cues, war horns, omen banners.
   creative_brief: Reinterpret the input through ashen Ragnarok last stand, defiant against apocalypse without requiring a fortress.
-avoidRules: [photoreal, comedy, cyberpunk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-079.webp }
+avoidRules:
+  - photoreal
+  - comedy
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-079.webp
 attributes:
   negativePrompt: photoreal, comedy, cyberpunk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

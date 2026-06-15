@@ -4,8 +4,14 @@ packId: pack_14
 name: Serpent Kami Oath Path
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Serpent-kami oath path with protective shrine cues, vertical peril, and sacred caution.
   form_and_line: Zigzag cliff stair cues, cliff torii, and coiling carved balustrades.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Awe, vertigo, and sacred caution.
   key_features: Serpent carvings, oath plaques, cliffside spirit altar cues.
   creative_brief: Reinterpret the input through serpent-kami oath path, renewing a pact with river-serpent deity without requiring a mountain trail.
-avoidRules: [photoreal, cheerful-cartoon, cyberpunk-city, modern-hiking-gear, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-038.webp }
+avoidRules:
+  - photoreal
+  - cheerful-cartoon
+  - cyberpunk-city
+  - modern-hiking-gear
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-038.webp
 attributes:
   negativePrompt: photoreal, cheerful-cartoon, cyberpunk-city, modern-hiking-gear, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

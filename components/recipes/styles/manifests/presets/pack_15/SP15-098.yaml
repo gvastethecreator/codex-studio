@@ -4,8 +4,14 @@ packId: pack_15
 name: Cog Cathedral Annex
 category: 2. Corepunk — Clockpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - clockpunk
 visualDna:
   aesthetic: Sacred clockpunk infrastructure where gears read as devotional machinery.
   form_and_line: Vaulted nave geometry, cog rose windows, gear chapel forms, and processional brass ribs.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Nave-like depth toward a central gear altar axis.
   atmosphere: Reverence, precision, and ceremonial awe.
   key_features: Gear altar motifs, time reliquary shapes, clock choir bands, and sacred brass cog halos.
-  creative_brief: >-
-    Consecrate the input as sacred clockwork: ivory vault ribs, bronze cog halos,
-    sapphire nave shadows, time-reliquary shapes, and stained-glass gear light
-    make any subject feel devotional, engineered, and monumental.
-avoidRules: [photoreal, whimsical, cyberpunk-noise, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-098.webp }
+  creative_brief: 'Consecrate the input as sacred clockwork: ivory vault ribs, bronze cog halos, sapphire nave shadows, time-reliquary shapes, and stained-glass gear light make any subject feel devotional, engineered, and monumental.'
+avoidRules:
+  - photoreal
+  - whimsical
+  - cyberpunk-noise
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-098.webp
 attributes:
   negativePrompt: photoreal, whimsical, cyberpunk-noise, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-clockpunk,
-    categoryName: 2. Corepunk — Clockpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, clockpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-clockpunk
+  categoryName: 2. Corepunk — Clockpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - clockpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

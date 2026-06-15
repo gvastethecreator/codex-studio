@@ -4,8 +4,14 @@ packId: pack_14
 name: Hungry Ghost Bell Shelter
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Hungry ghost bell shelter where sound becomes mercy for wandering spirits.
   form_and_line: Vertical bell-pagoda cues, ringed courtyard rhythms, and ritual rope lines.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Melancholy mercy, disciplined ritual, and spiritual gravity.
   key_features: Giant temple bell, spirit tablets, offering lantern corridor cues.
   creative_brief: Transform the input through hungry-ghost bell shelter, making resonance feel protective without requiring a tower.
-avoidRules: [photoreal, bright-pop, sci-fi-neon, slapstick, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-036.webp }
+avoidRules:
+  - photoreal
+  - bright-pop
+  - sci-fi-neon
+  - slapstick
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-036.webp
 attributes:
   negativePrompt: photoreal, bright-pop, sci-fi-neon, slapstick, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

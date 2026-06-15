@@ -19,15 +19,14 @@ export const GENERATED_STYLE_PRESETS = [
         'High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze',
       material_texture:
         'Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth',
-      render_quality:
-        'Vogue couture editorial, Met Gala spectacle, masterpiece, fashion-week apex, haute-couture precision',
+      render_quality: 'Couture editorial polish, ceremonial spectacle, haute-couture precision',
       spatial_distortion: 'Exaggerated silhouette',
       atmosphere:
         'Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise',
       key_features:
         'Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues',
       creative_brief:
-        'Treat any input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork, feathers, organza and tulle exaggerate the silhouette without demanding a runway walk or fixed model pose. Light should carve volume with museum severity, turning the subject into wearable architecture.',
+        'Treat the input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork, feathers, organza and tulle exaggerate the silhouette without demanding runway logic, fashion-week staging or fixed model pose. Light should carve volume with museum severity, turning the subject into wearable architecture.',
     },
   },
   {
@@ -36,22 +35,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'casual, short',
     style: {
-      aesthetic:
-        'Oscars awards-night gown, red-carpet moment, blinding-flash elegance, step-and-repeat royalty',
+      aesthetic: 'Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance',
       form_and_line:
-        'Flowing train, mermaid sweep, column-drape silhouette, chapel-length train, plunging neckline',
+        'Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control',
       color_palette: 'Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald',
       lighting_setup:
         'Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression',
       material_texture:
         'Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh',
-      render_quality: 'Glamorous, expensive, best-dressed-list caliber, diamond-season perfection',
+      render_quality: 'Glamorous, expensive, broadcast-polish precision, diamond-season finish',
       spatial_distortion: 'None',
-      atmosphere:
-        'Celebrity, fame, awards-night electricity, telecast anticipation, career-defining glamour',
-      key_features: 'Long train, statement jewels, strapless bodice, red-soled heels',
+      atmosphere: 'Ceremonial, elevated, flashbulb electricity, prestige-night anticipation',
+      key_features:
+        'Train extension, statement jewels, liquid drape, crystal articulation, formal sweep',
       creative_brief:
-        'Give the input red-carpet gown drama: silk charmeuse, crystal mesh, chapel-length train, strapless or column geometry, statement jewels and flashbulb sparkle. Keep celebrity electricity without requiring carpet, step-and-repeat, paparazzi wall or a walking figure.',
+        'Push the input through gala formalwear logic: silk charmeuse, crystal mesh, elongated drape, train-like sweep, statement-jewel articulation and flashbulb sparkle. Keep prestige-event electricity as finish only; do not require a gown body, carpet, paparazzi wall, step-and-repeat or walking celebrity figure.',
     },
   },
   {
@@ -60,19 +58,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 't-shirt, shorts',
     style: {
-      aesthetic: 'Office wear, boardroom presence, corporate-modern uniformity',
+      aesthetic: 'Professional daywear, boardroom calm, corporate-modern uniformity',
       form_and_line:
         'Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column',
       color_palette: 'Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey',
       lighting_setup: 'Window-filtered daylight, soft professional overhead, lobby-neutral glow',
       material_texture:
         'Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit',
-      render_quality: 'Professional, safe, competent polish, LinkedIn-headshot ready',
+      render_quality: 'Professional competent polish, low-risk clarity, workplace-ready finish',
       spatial_distortion: 'None',
       atmosphere: 'Professional calm, deadline focus, competent neutrality, low-risk polish',
       key_features: 'Blazer, structured shoulder, pointed-toe pump, leather portfolio bag',
       creative_brief:
-        'Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured shoulders and soft neutral whites. Keep office authority as tone, not as a conference room, LinkedIn headshot, portfolio-bag scene or corporate character. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference room, headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.',
     },
   },
   {
@@ -83,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status',
       form_and_line:
-        'Tight fitting, ergonomic, compressive sculpt, racerback lines, high-waist compression',
+        'Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams',
       color_palette:
         'Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal',
       lighting_setup:
@@ -91,22 +89,22 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib',
       render_quality:
-        'Nike/Lululemon performance-luxury activewear, fit-tech, always-ready, motion-capture sharpness',
+        'Performance-luxury activewear finish, fit-tech precision, always-ready sharpness',
       spatial_distortion: 'None',
       atmosphere:
         'Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination',
       key_features: 'Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs',
       creative_brief:
-        'Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing, ergonomic panel lines and motion-ready tension. Preserve the wellness-as-performance aura without forcing a gym, street, workout pose or exposed anatomy.',
+        'Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing, ergonomic panel lines and motion-ready tension. Preserve the wellness-performance aura without forcing gym context, workout pose, second-skin body read or exposed anatomy.',
     },
   },
   {
     id: 'SP08-017',
-    name: 'Tech CEO',
+    name: 'Tech-Industry Uniform',
     category: '1. Contemporary Fashion',
     negativePrompt: 'suit, tie',
     style: {
-      aesthetic: 'Tech-founder uniform, black turtleneck authority, product-launch minimalism',
+      aesthetic: 'Tech-industry uniform, black knit authority, product-launch minimalism',
       form_and_line:
         'Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve',
       color_palette: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
@@ -116,37 +114,37 @@ export const GENERATED_STYLE_PRESETS = [
         'Cotton t-shirt, merino turtleneck, selvedge denim, New Balance suede, brushed cashmere',
       render_quality: 'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
       spatial_distortion: 'None',
-      atmosphere:
-        'Serious, visionary, disruptive calm, controlled intensity, uniform-dressing certainty',
+      atmosphere: 'Serious, visionary calm, controlled intensity, uniform-dressing certainty',
       key_features:
         'Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding',
       creative_brief:
-        'Reduce the input to tech-founder uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote energy as polish, but avoid requiring a stage, founder portrait, glasses or specific tech persona. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Reduce the input to tech-industry uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote polish as attitude only; do not require a stage, founder portrait, round glasses, laptop, auditorium or specific startup persona.',
     },
   },
   {
     id: 'SP08-018',
-    name: 'K-Pop Idol',
+    name: 'Pop-Performance Tailoring',
     category: '1. Contemporary Fashion',
     negativePrompt: 'boring, dark',
     style: {
-      aesthetic: 'Music video outfit, comeback-stage spectacle, fan-chant energy',
+      aesthetic:
+        'Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision',
       form_and_line:
-        'Sharp, layered, cropped jacket, high-waist trouser, asymmetric hem, fitted silhouette',
+        'Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm',
       color_palette:
         'Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink',
       lighting_setup: 'Studio-bright beauty light, color-shifting gels, high-key rim sparkle',
       material_texture:
         'Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones',
       render_quality:
-        'Perfect, trendy, coordinated, music-show polish, fan-cam ready, synchronized precision',
+        'Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity',
       spatial_distortion: 'None',
       atmosphere:
         'Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy',
       key_features:
         'Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
       creative_brief:
-        'Rebuild the input with K-pop comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve idol-performance charisma without requiring a face, group choreography, music-show set or fandom crowd.',
+        'Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma and fan-energy charge as finish only, not as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.',
     },
   },
   {
@@ -155,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'pattern, logo, bright colors',
     style: {
-      aesthetic: 'Clean scandinavian fashion, soft architectural purity, wabi-sabi restraint',
+      aesthetic: 'Clean northern minimalism, soft architectural purity, wabi-sabi restraint',
       form_and_line:
         'Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision',
       color_palette: 'Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand',
@@ -163,14 +161,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow',
       material_texture:
         'Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe',
-      render_quality:
-        'COS/Jil Sander pared-back designer minimalism, expensive, quiet luxury, stealth-wealth subtlety',
+      render_quality: 'Pared-back designer minimalism, expensive calm, quiet-luxury subtlety',
       spatial_distortion: 'None',
       atmosphere:
         'Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance',
       key_features: 'Neutral palette, tonal layering, absence of hardware, invisible fastenings',
       creative_brief:
-        'Apply quiet-luxury subtraction to any subject: clean geometry, tonal layering, invisible closures, premium matte fibers and a palette held near bone, oatmeal and charcoal. The image should feel edited down to the one seam that matters, without requiring a room, wardrobe scene or human figure.',
+        'Apply quiet-luxury subtraction to the input: clean geometry, tonal layering, invisible closures, premium matte fibers and a palette held near bone, oatmeal and charcoal. The result should feel edited down to the one seam that matters, without implying showroom still life, closet editorial, zen room or human figure staging.',
     },
   },
   {
@@ -201,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Contemporary Fashion',
     negativePrompt: 'messy, ripped, dark',
     style: {
-      aesthetic: 'Classic American college style, Ivy League legacy, Nantucket summer ease',
+      aesthetic: 'Classic American prep, Ivy legacy polish, summer-ease refinement',
       form_and_line:
         'Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll',
       color_palette: 'Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold',
@@ -209,15 +206,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness',
       material_texture:
         'Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan',
-      render_quality:
-        'Ralph Lauren heritage prep, rich, classic, country-club ease, old-money nonchalance',
+      render_quality: 'Heritage prep polish, classic ease, generational refinement',
       spatial_distortion: 'None',
       atmosphere:
         'Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish',
       key_features:
         'Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
       creative_brief:
-        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere only; do not require a college scene, human student or inherited-wealth portrait.',
+        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere only; do not require a college scene, human student, country-club tableau or inherited-wealth portrait.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

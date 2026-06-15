@@ -51,7 +51,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.',
       key_features: 'Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.',
       creative_brief:
-        'Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza generica. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza enana o set heroico generico. Conserva peso megalitico, calor mineral, escala de carga y solemnidad ancestral sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -114,23 +114,25 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt: 'scary, realistic',
     style: {
-      aesthetic: 'Fantasía confitera de surrealismo comestible y modularidad de azúcar.',
+      aesthetic:
+        'Fantasia confitera de surrealismo comestible, donde masa, azucar y glaseado se vuelven sistema arquitectonico portable.',
       form_and_line:
-        'Masas redondeadas blandas, columnas candy repetitivas y bandas ornamentales de glaseado.',
+        'Masas redondeadas blandas, repeticion modular candy, bandas de icing y uniones dulces que deforman estructura sin requerir castillo o calle de cuento.',
       color_palette:
-        'Pink, Pastel, Candy-apple Red, Gumdrop Green, Marshmallow White, Licorice Black',
+        'Pink, pastel, candy-apple red, gumdrop green, marshmallow white, licorice black',
       lighting_setup:
-        'Glow cálido de confitería, brillos de frosting, translucidez gumdrop y destellos de cristal de azúcar.',
+        'Glow calido de confiteria, brillos de frosting, translucidez gumdrop y destellos de cristal de azucar controlados.',
       material_texture:
-        'Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hilos de azúcar estirada.',
+        'Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hebras de azucar estirada con tactilidad de exceso edible.',
       render_quality:
-        'Fantasía estilizada de saturación alta con coherencia lúdica de material comestible.',
-      spatial_distortion: 'Melting',
-      atmosphere: 'Exceso lúdico, surrealismo alegre y escapismo hiper-dulce.',
+        'Fantasia estilizada de saturacion alta con coherencia ludica de material comestible y construccion creible.',
+      spatial_distortion: 'Melting and soft structural sag without forcing a fairy-tale skyline',
+      atmosphere:
+        'Exceso ludico, surrealismo alegre y escapismo hiper-dulce convertido en materia construida.',
       key_features:
-        'Planos de icing, marcadores gumdrop, acentos sprinkle y motivos estructurales candy-cane.',
+        'Planos de icing, nodos gumdrop, acentos sprinkle y soportes candy-cane integrados como lenguaje estructural.',
       creative_brief:
-        'Todo se vuelve arquitectura de azucar: glaseado como junta, caramelo como estructura, gumdrops como nodos y pastel como masa. La fantasia debe ser material y tactil, no depender de reino, cuento o escena. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Convierte cualquier sujeto o volumen en surrealismo confitero: glaseado como junta, caramelo como soporte, gumdrops como nodos y pastel como masa. La fantasia debe sentirse material y tactil, no dependiente de reino, cuento, mesa de postres o escena infantil fija. Mantiene logica comestible, escala de ensamblaje, ritmo candy y atmosfera ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -165,23 +167,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt: 'clean energy',
     style: {
-      aesthetic: 'Futurismo industrial neo-victoriano de vapor, latón y maquinaria especulativa.',
+      aesthetic:
+        'GramÃ¡tica retroindustrial neo-victoriana de vapor, latÃ³n y presiÃ³n mecÃ¡nica especulativa.',
       form_and_line:
-        'Redes de engranaje/tubería, cadencia de chimeneas, hitos de reloj y arcos de tránsito aéreo.',
+        'Redes de tuberÃ­a remachada, ritmos de venteo vertical, nodos de engranaje y arcos estructurales de carga.',
       color_palette:
         'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
       lighting_setup:
-        'Gaslight ámbar, glow difuso en smog, chispas mecánicas y ventilación de vapor visible.',
+        'Gaslight Ã¡mbar, glow difuso en smog, chispas mecÃ¡nicas y ventilaciÃ³n de vapor visible.',
       material_texture:
-        'Metal y ladrillo, cobre remachado, panel de madera, cuero y depósito de hollín en superficie.',
+        'Metal y ladrillo, cobre remachado, panel de madera, cuero y depÃ³sito de hollÃ­n en superficie.',
       render_quality:
-        'Steampunk de detalle alto con plausibilidad mecánica y legibilidad retroindustrial.',
+        'Steampunk de detalle alto con plausibilidad mecÃ¡nica y legibilidad retroindustrial.',
       spatial_distortion: 'None',
-      atmosphere: 'Impulso industrial, ambición ahumada y espectáculo de progreso ansioso.',
+      atmosphere: 'Impulso industrial, ambiciÃ³n ahumada y tensiÃ³n de progreso mecÃ¡nico ansioso.',
       key_features:
-        'Ritmo de venteo, conducciones de latón, superficies clockwork, nodos de caldera y señales de tránsito aéreo.',
+        'Ritmo de venteo, conducciones de latÃ³n, superficies clockwork, nodos de caldera y jerarquÃ­as de presiÃ³n visibles.',
       creative_brief:
-        'Aplica un lenguaje neo-victoriano de vapor a cualquier input: articulaciones de latón, remaches funcionales, tuberías legibles, hollín material y glow gaslight. La utilidad mecánica debe sentirse plausible sin necesitar una ciudad ni vehículo específico.',
+        'Aplica una gramÃ¡tica neo-victoriana de vapor a cualquier input: articulaciones de latÃ³n, remaches funcionales, tuberÃ­as legibles, hollÃ­n material y glow gaslight. La utilidad mecÃ¡nica debe sentirse plausible y jerÃ¡rquica sin requerir skyline, vehÃ­culo o sistema de trÃ¡nsito especÃ­fico.',
     },
   },
   {
@@ -191,23 +194,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'brick, wood',
     style: {
       aesthetic:
-        'Megaestructura cristalina de crecimiento geológico y futurismo mineral monolítico.',
+        'Megaestructura cristalina de crecimiento geologico y futurismo mineral monolitico, portable a cualquier masa o sistema.',
       form_and_line:
-        'Apilamientos facetados verticales, haces hexagonales y convergencias prismáticas hacia ápice agudo.',
+        'Apilamientos facetados, haces hexagonales, placas gema y convergencias prismatica multiples sin depender de una sola aguja heroica.',
       color_palette:
-        'Purple/Blue/White, Amethyst, Sapphire, Diamond-spark, Deep Crystal Violet, Iridescent flash',
+        'Purple-blue-white, amethyst, sapphire, diamond spark, deep crystal violet, iridescent flash',
       lighting_setup:
-        'Refracción interna intensa, dispersión espectral, núcleo autoiluminado y bordes de faceta de alto brillo.',
+        'Refraccion interna intensa, dispersion espectral, nucleos autoiluminados y bordes facetados de alto brillo.',
       material_texture:
-        'Cristal vítreo, caras gema, profundidad translúcida y geodas de amatista de microdetalle.',
+        'Cristal vitreo, caras gema, profundidad translucida y mineralizacion de microdetalle con optica coherente.',
       render_quality:
-        'Arquitectura cristalina de alta claridad con óptica coherente y precisión mineral de escala monumental.',
-      spatial_distortion: 'None',
-      atmosphere: 'Quietud luminosa, asombro frío y elegancia mineral de otro mundo.',
+        'Arquitectura cristalina de alta claridad con precision mineral monumental y control fisico de luz interna.',
+      spatial_distortion:
+        'Faceted stacking and refractive scale drift without a mandatory spire apex',
+      atmosphere: 'Quietud luminosa, asombro frio y elegancia mineral de otro mundo.',
       key_features:
-        'Planos facetados refractivos, núcleos translúcidos, silueta de aguja prismática y estratos de brillo interno.',
+        'Planos refractivos, nucleos translucidos, estratos de brillo interno y jerarquia prismatica en capas.',
       creative_brief:
-        'Haz que el estilo nazca de óptica mineral: masa facetada, crecimiento cristalino, refracción interna y color espectral disciplinado. Funciona sobre arquitectura, objeto, personaje o paisaje sin obligar una aguja única. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Haz que el estilo nazca de optica mineral: masa facetada, crecimiento cristalino, refraccion interna y color espectral disciplinado. Debe poder envolver arquitectura, objeto, personaje o paisaje sin exigir torre-aguja unica, templo gema o skyline de monolitos identicos. Conserva logica mineral, escala prismatica, ritmo facetado y atmosfera fria sin depender de edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -217,9 +221,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square, tall',
     style: {
       aesthetic:
-        'Domesticidad pastoral semienterrada de escala humana, con umbrales circulares y calidez artesanal cotidiana.',
+        'Domesticidad pastoral semienterrada de escala humana, con umbrales redondos y calidez artesanal portable.',
       form_and_line:
-        'Aberturas redondas dominantes, cubierta bermada baja, corredores arqueados suaves y planificación radial íntima.',
+        'Aberturas redondeadas dominantes, cubierta bermada baja, corredores suaves y planificación íntima de perfil contenido.',
       color_palette:
         'Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes',
       lighting_setup:
@@ -231,9 +235,9 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.',
       key_features:
-        'Umbral circular, cubierta vegetal, aperturas redondeadas y núcleo compacto de calor doméstico.',
+        'Umbral redondeado, cubierta vegetal, masa bermada y núcleo compacto de calor doméstico.',
       creative_brief:
-        'Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales circulares, proporciones bajas, materiales cálidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y táctil sin depender de una casa concreta. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de hobbit-home, madriguera literaria, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada, calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -243,9 +247,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'scary realistic',
     style: {
       aesthetic:
-        'Haunted-cartoon retro, con amenaza juguetona y exageración torcida de lectura inmediata.',
+        'Deformación retro de cartoon macabro, con amenaza juguetona y exageración torcida de lectura inmediata.',
       form_and_line:
-        'Verticales inclinadas, cubiertas combadas, vanos deformados y silueta elástica con contorno gráfico claro.',
+        'Verticales inclinadas, masas combadas, vacíos deformados y silueta elástica con contorno gráfico claro.',
       color_palette:
         'Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools',
       lighting_setup:
@@ -258,9 +262,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Deformación elástica, inclinación imposible y gestos pareidólicos sugeridos.',
       atmosphere: 'Campy, traviesa y teatral, con suspenso amable sin violencia realista.',
       key_features:
-        'Perfil inclinado, relámpagos zigzag, contraluz lunar, siluetas spooky y ritmo de gate gráfico.',
+        'Perfil inclinado, acentos zigzag, contraluz frío, siluetas spooky y ritmo de gate gráfico.',
       creative_brief:
-        'Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica y contraste de tormenta. Debe funcionar como estilo de render, no como obligación de mostrar una casa embrujada. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica y contraste de tormenta. Debe funcionar como estilo de render y masa torcida, no como obligacion de mostrar mansion embrujada, tormenta nocturna o set de Halloween literal. Mantiene deformacion elastica, ritmo grafico y atmosfera spooky ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -270,9 +274,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'warm, fire',
     style: {
       aesthetic:
-        'Palacial criomórfico de monumentalidad glacial, con elegancia invernal soberana y pureza cristalina.',
+        'Monumentalidad criomórfica glacial, con elegancia invernal soberana y pureza cristalina.',
       form_and_line:
-        'Agujas de hielo, arbotantes facetados, columnatas de carámbano y gradación vertical congelada.',
+        'Arbotantes facetados, ritmos glaciales verticales, columnatas congeladas y jerarquías heladas de perfil limpio.',
       color_palette:
         'Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights',
       lighting_setup:
@@ -280,13 +284,14 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.',
       render_quality:
-        'Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de escala catedralicia.',
-      spatial_distortion: 'None',
+        'Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de gran escala.',
+      spatial_distortion:
+        'Vertical crystalline rise and frozen layering without a mandatory palace or cathedral silhouette',
       atmosphere: 'Soberana, austera y silenciosa, con temperatura emocional subcero.',
       key_features:
-        'Bóvedas cristalinas, cadencia de columnata helada, nodos congelados y tramos de hielo esculpido.',
+        'Bóvedas cristalinas, cadencia helada, nodos congelados y tramos de hielo esculpido.',
       creative_brief:
-        'Transforma cualquier composición con monumentalidad criomórfica: facetas de hielo, transmisión subsuperficial fría, columnatas congeladas y claridad regia. La identidad viene de óptica glacial y proporción palacial, no de un palacio literal. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Transforma cualquier composición con monumentalidad criomórfica: facetas de hielo, transmisión subsuperficial fría, ritmos congelados y claridad regia. La identidad debe venir de optica glacial y jerarquia monumental, no de un palacio de hielo, catedral invernal o salon real literal. Conserva faceta, escala, refraccion fria y atmosfera soberana sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -296,9 +301,9 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'metal',
     style: {
       aesthetic:
-        'Tribal-canopy elevado con ingeniería orgánica artesanal y vida comunal suspendida.',
+        'Vernáculo de canopy elevado, con ingeniería orgánica artesanal y vida comunal suspendida.',
       form_and_line:
-        'Hubs circulares, catenarias de cuerda, anillos abrazatroncos y circulación vertical por niveles orgánicos.',
+        'Hubs circulares, catenarias de cuerda, anillos de amarre y circulación vertical por niveles orgánicos.',
       color_palette:
         'Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling',
       lighting_setup:
@@ -310,9 +315,9 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.',
       key_features:
-        'Cuerdas enlazadas, plataformas radiales, pasarelas ceñidas al soporte vivo y nidos de observación elevados.',
+        'Cuerdas enlazadas, plataformas radiales, pasarelas suspendidas y puntos elevados de observación.',
       creative_brief:
-        'Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz filtrada por dosel y materiales vivos. Debe expresar ingeniería comunal elevada sin tribu, planeta o set específico. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz filtrada por dosel y materiales vivos. Debe expresar ingenieria comunal elevada sin tribu literal, pueblo arboreo fijo, planeta selvatico ni set especifico. Mantiene material vivo, tension suspendida, escala vertical y ritmo de amarre sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -322,23 +327,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'life, lush vegetation',
     style: {
       aesthetic:
-        'Orden funerario monumental con grandeza sepulcral y civismo necromántico de escala masiva.',
+        'Monumentalidad ceremonial sepulcral con gravedad ritual y civismo mineral de escala masiva.',
       form_and_line:
-        'Axialidad dominada por obeliscos, masas escalonadas, retículas de cripta y siluetas severas de puntas rituales.',
+        'Axialidad severa, masas escalonadas, cÃ¡maras selladas, retÃ­culas lapÃ­deas y acentos verticales de rito contenido.',
       color_palette:
         'Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields',
       lighting_setup:
-        'Glow bajo de cripta, difusión lunar pálida, acentos de farol espectral y niebla volumétrica de cementerio.',
+        'Glow bajo mineral, difusiÃ³n lunar pÃ¡lida, faroles espectrales contenidos y niebla volumÃ©trica de enclave sellado.',
       material_texture:
-        'Sillería erosionada, mármol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.',
+        'SillerÃ­a erosionada, mÃ¡rmol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.',
       render_quality:
-        'Dark fantasy arquitectónica de alto detalle con contención tonal y lectura monumental opresiva.',
-      spatial_distortion: 'Profundidad axial procesional con compresión sepulcral controlada.',
-      atmosphere: 'Solemne, ritualista y opresiva, con silencio acústico de enclave enterrado.',
-      key_features:
-        'Ritmo procesional de obeliscos, criptas apiladas, wayfinding rúnico y umbrales masivos.',
+        'Dark fantasy arquitectÃ³nica de alto detalle con contenciÃ³n tonal y lectura monumental opresiva.',
+      spatial_distortion: 'Profundidad axial procesional con compresiÃ³n sepulcral controlada.',
+      atmosphere: 'Solemne, ritualista y opresiva, con silencio acÃºstico de recinto contenido.',
+      key_features: 'Ritmo procesional, cÃ¡maras selladas, wayfinding rÃºnico y umbrales masivos.',
       creative_brief:
-        'Lleva cualquier input a civismo funerario monumental: axialidad procesional, piedra severa, baja luz espectral, bronce oxidado y jerarquías de cripta. Evita cementerio literal como requisito; sostén solemnidad arquitectónica.',
+        'Lleva cualquier input a monumentalidad ceremonial sepulcral: axialidad procesional, piedra severa, baja luz espectral, bronce oxidado y jerarquÃ­as de recinto sellado. Evita cementerio, obelisco o cripta literal como requisito; sostÃ©n solemnidad arquitectÃ³nica portable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

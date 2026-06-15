@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Palacial criomórfico de monumentalidad glacial, con elegancia invernal soberana y pureza cristalina.
-  form_and_line: Agujas de hielo, arbotantes facetados, columnatas de carámbano y gradación vertical congelada.
+  aesthetic: Monumentalidad criomórfica glacial, con elegancia invernal soberana y pureza cristalina.
+  form_and_line: Arbotantes facetados, ritmos glaciales verticales, columnatas congeladas y jerarquías heladas de perfil limpio.
   color_palette: Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights
   lighting_setup: Transmisión subsuperficial en hielo, wash auroral, acentos lunares de borde y rebote nítido sobre nieve compacta.
   material_texture: Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.
-  render_quality: Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de escala catedralicia.
-  spatial_distortion: None
+  render_quality: Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de gran escala.
+  spatial_distortion: Vertical crystalline rise and frozen layering without a mandatory palace or cathedral silhouette
   atmosphere: Soberana, austera y silenciosa, con temperatura emocional subcero.
-  key_features: Bóvedas cristalinas, cadencia de columnata helada, nodos congelados y tramos de hielo esculpido.
+  key_features: Bóvedas cristalinas, cadencia helada, nodos congelados y tramos de hielo esculpido.
   creative_brief: >-
     Transforma cualquier composición con monumentalidad criomórfica: facetas de hielo, transmisión subsuperficial fría,
-    columnatas congeladas y claridad regia. La identidad viene de óptica glacial y proporción palacial, no de un palacio
-    literal. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural
-    rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise
-    set, creature, or fixed scene.
+    ritmos congelados y claridad regia. La identidad debe venir de optica glacial y jerarquia monumental, no de un
+    palacio de hielo, catedral invernal o salon real literal. Conserva faceta, escala, refraccion fria y atmosfera
+    soberana sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - warm
   - fire

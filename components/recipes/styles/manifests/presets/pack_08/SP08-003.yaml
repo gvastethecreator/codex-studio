@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Clean scandinavian fashion, soft architectural purity, wabi-sabi restraint
+  aesthetic: Clean northern minimalism, soft architectural purity, wabi-sabi restraint
   form_and_line: Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision
   color_palette: Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand
   lighting_setup: Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow
   material_texture: Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe
-  render_quality: COS/Jil Sander pared-back designer minimalism, expensive, quiet luxury, stealth-wealth subtlety
+  render_quality: Pared-back designer minimalism, expensive calm, quiet-luxury subtlety
   spatial_distortion: None
   atmosphere: Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance
   key_features: Neutral palette, tonal layering, absence of hardware, invisible fastenings
   creative_brief: >-
-    Apply quiet-luxury subtraction to any subject: clean geometry, tonal
-    layering, invisible closures, premium matte fibers and a palette held near
-    bone, oatmeal and charcoal. The image should feel edited down to the one
-    seam that matters, without requiring a room, wardrobe scene or human figure.
+    Apply quiet-luxury subtraction to the input: clean geometry, tonal layering, invisible closures, premium matte
+    fibers and a palette held near bone, oatmeal and charcoal. The result should feel edited down to the one seam that
+    matters, without implying showroom still life, closet editorial, zen room or human figure staging.
 avoidRules:
   - pattern
   - logo

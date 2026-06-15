@@ -57,7 +57,18 @@ export interface CodexTurnDependencies {
   sleep?: (durationMs: number) => Promise<unknown>;
   maxAttempts?: number;
   retryDelayMs?: number;
+  turnStartTimeoutMs?: number;
+  turnCompletionTimeoutMs?: number;
 }
+
+const DEFAULT_CODEX_TURN_START_TIMEOUT_MS = Math.max(
+  1_000,
+  Number(process.env.CODEX_TURN_START_TIMEOUT_MS || 90_000),
+);
+const DEFAULT_CODEX_TURN_COMPLETION_TIMEOUT_MS = Math.max(
+  1_000,
+  Number(process.env.CODEX_TURN_COMPLETION_TIMEOUT_MS || 420_000),
+);
 
 function createAbortError() {
   const error = new Error('Operation cancelled by user');
@@ -100,6 +111,31 @@ async function raceWithAbort<T>(promise: Promise<T>, signal?: AbortSignal, onAbo
   });
 }
 
+function raceWithTimeout<T>(
+  promise: Promise<T>,
+  timeoutMs: number,
+  errorMessage: string,
+  onTimeout?: () => void,
+) {
+  return new Promise<T>((resolve, reject) => {
+    const timeout = setTimeout(() => {
+      onTimeout?.();
+      reject(new Error(errorMessage));
+    }, timeoutMs);
+
+    promise.then(
+      (value) => {
+        clearTimeout(timeout);
+        resolve(value);
+      },
+      (error) => {
+        clearTimeout(timeout);
+        reject(error);
+      },
+    );
+  });
+}
+
 function mimeForPath(filePath: string) {
   const ext = path.extname(filePath).toLowerCase();
   return ext === '.jpg' || ext === '.jpeg'
@@ -120,6 +156,12 @@ function extractAssistantText(notifications: JsonRpcMessage[]) {
     .join('\n');
 }
 
+function shouldInvalidatePersistedThread(message: string) {
+  return /thread.+not found|unknown thread|invalid thread|socket closed|timed out waiting for codex notification/i.test(
+    message,
+  );
+}
+
 interface ResolvedCodexTurnDependencies {
   createAssetExtractor: (jobId?: string) => AssetExtractor;
   resolveExecutionOptions: typeof resolveJobExecutionOptions;
@@ -133,6 +175,8 @@ interface ResolvedCodexTurnDependencies {
   sleep: (durationMs: number) => Promise<unknown>;
   maxAttempts: number;
   retryDelayMs: number;
+  turnStartTimeoutMs: number;
+  turnCompletionTimeoutMs: number;
 }
 
 async function runCodexImagegenTurn(
@@ -161,19 +205,24 @@ async function runCodexImagegenTurn(
     });
 
   const turn = await raceWithAbort(
-    session.client.request('turn/start', {
-      threadId: session.threadId,
-      input: buildCodexImagegenTurnInput({
-        imagegenSkillPath: dependencies.imagegenSkillPath,
-        fallbackPrompt: job.prompt,
-        compiledInput: job.compiledInput ?? null,
+    raceWithTimeout(
+      session.client.request('turn/start', {
+        threadId: session.threadId,
+        input: buildCodexImagegenTurnInput({
+          imagegenSkillPath: dependencies.imagegenSkillPath,
+          fallbackPrompt: job.prompt,
+          compiledInput: job.compiledInput ?? null,
+        }),
+        cwd: dependencies.resolveProcessCwd(),
+        approvalPolicy: 'never',
+        model: executionOptions.model,
+        effort: executionOptions.reasoningEffort,
+        serviceTier: executionOptions.serviceTier ?? undefined,
       }),
-      cwd: dependencies.resolveProcessCwd(),
-      approvalPolicy: 'never',
-      model: executionOptions.model,
-      effort: executionOptions.reasoningEffort,
-      serviceTier: executionOptions.serviceTier ?? undefined,
-    }),
+      dependencies.turnStartTimeoutMs,
+      'Timed out waiting for Codex notification (turn start)',
+      invalidateSession,
+    ),
     signal,
     invalidateSession,
   );
@@ -183,7 +232,7 @@ async function runCodexImagegenTurn(
     session.client.waitForNotification(
       (message) =>
         message.method === 'turn/completed' && (!turnId || message.params?.turn?.id === turnId),
-      600_000,
+      dependencies.turnCompletionTimeoutMs,
     ),
     signal,
     invalidateSession,
@@ -306,9 +355,7 @@ async function runImagegenJob(
           throw error;
         }
         const message = error instanceof Error ? error.message : String(error);
-        const invalidatePersistedThread = /thread.+not found|unknown thread|invalid thread/i.test(
-          message,
-        );
+        const invalidatePersistedThread = shouldInvalidatePersistedThread(message);
         dependencies.closeSession(sessionKey, { invalidatePersistedThread });
         throw error;
       }
@@ -361,6 +408,8 @@ export function createCodexTurn({
   sleep = (durationMs: number) => Bun.sleep(durationMs),
   maxAttempts = DEFAULT_CODEX_RETRY_POLICY.maxAttempts,
   retryDelayMs = DEFAULT_CODEX_RETRY_POLICY.retryDelayMs,
+  turnStartTimeoutMs = DEFAULT_CODEX_TURN_START_TIMEOUT_MS,
+  turnCompletionTimeoutMs = DEFAULT_CODEX_TURN_COMPLETION_TIMEOUT_MS,
 }: CodexTurnDependencies = {}): CodexTurn {
   const dependencies: ResolvedCodexTurnDependencies = {
     createAssetExtractor: createAssetExtractorFn,
@@ -375,6 +424,8 @@ export function createCodexTurn({
     sleep,
     maxAttempts,
     retryDelayMs,
+    turnStartTimeoutMs,
+    turnCompletionTimeoutMs,
   };
 
   return {

@@ -11,7 +11,19 @@
  * that wires readiness, diagnostics, onboarding, session verification, storage
  * recovery, and local studio sync into a single consumer API for the UI shell.
  */
-const DEFAULT_STUDIO_API_BASE = 'http://localhost:17223';
+const DEFAULT_STUDIO_API_BASE = 'http://127.0.0.1:17223';
+
+function normalizeStudioLoopback(value: string) {
+  try {
+    const url = new URL(value);
+    if (url.hostname === 'localhost') {
+      url.hostname = '127.0.0.1';
+    }
+    return url.toString();
+  } catch {
+    return value;
+  }
+}
 
 export interface StudioRuntimeCapabilities {
   desktopBridge: boolean;
@@ -45,7 +57,7 @@ function resolveApiBase({
 }: StudioRuntimeSources = {}) {
   const desktopBase = desktopBridge?.apiBase?.trim();
   const envBase = envApiBase?.trim();
-  return trimTrailingSlash(desktopBase || envBase || fallbackApiBase);
+  return trimTrailingSlash(normalizeStudioLoopback(desktopBase || envBase || fallbackApiBase));
 }
 
 export function resolveStudioRuntimeFromSources({

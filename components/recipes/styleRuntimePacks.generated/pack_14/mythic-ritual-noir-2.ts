@@ -149,10 +149,12 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP14-108',
     name: 'Blood Moon Processional Omen',
     category: '2. Mythic — Ritual Noir',
-    negativePrompt: 'photoreal, playful, bright-day, watermark, text, logo, action-pose',
+    negativePrompt:
+      'photoreal, playful, bright-day, watermark, text, logo, action-pose, candle clusters, black wax, glass corridor, reliquary tower',
     style: {
       aesthetic: 'Processional blood-moon omen language with solemn public ritual pressure.',
-      form_and_line: 'Long vertical robe cues, lantern-pole rhythms, and a lunar arc overhead.',
+      form_and_line:
+        'Long solemn verticals, lantern-pole rhythms, suspended banner lines, and a lunar arc overhead with no candle cluster centerpiece.',
       color_palette: 'Blood red, midnight indigo, and ash gray.',
       lighting_setup: 'Moonlit backlight with lantern accents.',
       material_texture: 'Wet stone sheen, ceremonial cloth, lacquered wood, and ash haze.',
@@ -160,16 +162,18 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion:
         'Receding ritual rhythm that leads visual force toward a blood moon disk.',
       atmosphere: 'Omen, obedience, and a solemn public rite.',
-      key_features: 'Processional mask cues, lantern standards, blood moon sigils.',
+      key_features:
+        'Processional mask cues, lantern standards, blood moon sigils, suspended omen banners.',
       creative_brief:
-        'Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, ash haze, solemn verticals, and obedient negative space without forcing moon disks, street marches, masks, crowds, or ritual parades.',
+        'Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, suspended omen banners, ash haze, solemn verticals, and obedient negative space without forcing candle clusters, black wax shrines, corridor reliquaries, moon disks, street marches, masks, crowds, or ritual parades.',
     },
   },
   {
     id: 'SP14-109',
     name: 'Blackwater Confessional Reflection',
     category: '2. Mythic — Ritual Noir',
-    negativePrompt: 'photoreal, cute, pastel, watermark, text, logo, daytime',
+    negativePrompt:
+      'photoreal, cute, pastel, watermark, text, logo, daytime, bedroom, bed, sofa, domestic interior, side table',
     style: {
       aesthetic:
         'Confessional noir translated through blackwater reflections, secrecy, and ritual cleansing.',
@@ -183,7 +187,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Admission, secrecy, and ritual cleansing.',
       key_features: 'Confessional screens, blackwater basin cues, whisper-grille textures.',
       creative_brief:
-        'Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, or religious props.',
+        'Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, bedrooms, beds, domestic interiors, or religious props.',
     },
   },
   {
@@ -192,18 +196,18 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cartoon, neon, watermark, text, logo, glossy',
     style: {
-      aesthetic: 'Vow-binding noir guarded by ceremonial blades, cords, and austere authority.',
-      form_and_line: 'Knife-sharp verticals, altar-edge cues, and disciplined symmetry.',
+      aesthetic: 'Vow-binding noir guarded by ceremonial seals, cords, and austere authority.',
+      form_and_line: 'Sharp verticals, rite-edge cues, and disciplined symmetry.',
       color_palette: 'Iron black, dried crimson, and bone white.',
       lighting_setup: 'Single altar beam and edge highlights on metal.',
-      material_texture: 'Forged steel, cracked stone, and stained leather.',
+      material_texture: 'Etched metal, cracked stone, and stained leather.',
       render_quality: 'Stark mythic key art with ceremonial precision.',
       spatial_distortion:
         'Frontal axis with blades framing a symbolic commitment point, not a required chapel.',
       atmosphere: 'Binding, sacrifice, and austere authority.',
-      key_features: 'Oath blades, binding cords, vow-tablet shapes.',
+      key_features: 'Oath seals, binding cords, vow-tablet shapes.',
       creative_brief:
-        'Convert any input into oath-knife binding style, where promises feel sealed by blade-lit ceremony. Keep knife-sharp verticals, cord tension, dried crimson, altar-beam contrast, and austere symmetry without requiring knives, chapels, altars, vows, or sacrifice scenes.',
+        'Convert any input into oath-knife binding style, where promises feel sealed by ceremonial emblems and cord tension. Keep sharp verticals, dried crimson, rite-beam contrast, and austere symmetry without requiring blades, chapels, altars, vows, or violent sacrifice scenes.',
     },
   },
   {
@@ -273,18 +277,18 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, pastel, cartoon, watermark, text, logo, gloss',
     style: {
       aesthetic:
-        'Judgment and vow-accounting rendered through crimson ledgers, archival order, and ritual gravitas.',
-      form_and_line: 'Ledger-tower cues, upright file rhythms, and altar-table symmetry.',
+        'Judgment and vow-accounting rendered through crimson tally forms, sealed compartments, and ritual gravitas.',
+      form_and_line: 'Upright compartment rhythms, stacked tally planes, and altar-table symmetry.',
       color_palette: 'Crimson, charcoal, and antique paper.',
       lighting_setup: 'Warm desk lamps and shadowed shelf depths.',
-      material_texture: 'Threaded bindings, thick paper, and lacquered wood.',
+      material_texture: 'Lacquered wood, heavy paper, sealed wax, and worn brass.',
       render_quality: 'Scholarly noir with ritual gravitas.',
       spatial_distortion:
-        'Upward archival depth stretching into darkness without requiring a library sanctum.',
+        'Upward compartment depth stretching into darkness without requiring an archive room or library sanctum.',
       atmosphere: 'Accounting, judgment, and ceremonial order.',
-      key_features: 'Blood-red ledgers, ritual stamps, sealed-drawer shapes.',
+      key_features: 'Crimson tally tablets, ritual stamps, sealed-drawer shapes.',
       creative_brief:
-        'Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated archival pressure.',
+        'Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated tally pressure and sealed judgment compartments rather than books, libraries, or archival reading rooms.',
     },
   },
   {
@@ -295,17 +299,17 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic:
         'Ritual investigation expressed through wax seals, ceremonial stamp grids, and procedural suspicion.',
-      form_and_line: 'Tabletop-plane cues, seal arrays, and sharp document-edge geometry.',
+      form_and_line: 'Seal-array geometry, compartment planes, and sharp docket-edge rhythms.',
       color_palette: 'Deep red wax, midnight black, and parchment beige.',
       lighting_setup: 'Tight inspection lamps with low peripheral shadow.',
-      material_texture: 'Melted wax, cardstock, brass stamp heads, and linen.',
-      render_quality: 'Micro-detail noir rendering with ritual investigation mood.',
+      material_texture: 'Melted wax, heavy card, brass stamp heads, linen, and dark lacquer.',
+      render_quality: 'Clean ritual-noir rendering with procedural suspicion mood.',
       spatial_distortion:
-        'Flattened evidence-plane perspective with towering seal stacks as visual pressure.',
+        'Flattened verdict-plane perspective with stacked seals as visual pressure.',
       atmosphere: 'Suspicion, procedure, and disciplined scrutiny.',
-      key_features: 'Wax seals, verdict stamps, confession-packet shapes.',
+      key_features: 'Wax seals, verdict stamps, sealed packet shapes.',
       creative_brief:
-        'Rework the input through wax-seal verdict logic, where stamps and seals carry judgment without requiring an investigation room.',
+        'Rework the input through wax-seal verdict logic, where stamps, seals, and docket pressure carry judgment without requiring an investigation room, reading desk, or evidence archive.',
     },
   },
   {

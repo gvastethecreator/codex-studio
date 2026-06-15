@@ -4,8 +4,14 @@ packId: pack_14
 name: Longnight Saga Doctrine
 category: 8. Mythic — Norse Sagas
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, norse-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - norse-myth
 visualDna:
   aesthetic: Longnight saga doctrine where story, strategy, and winter brotherhood merge.
   form_and_line: Beam-heavy nave cues, long table axis, and hearth symmetry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Brotherhood, tension, and ancestral voice.
   key_features: Saga carvings, feast banners, oath blade rack.
   creative_brief: Apply longnight saga doctrine to the input, making stories function as military memory without requiring a mead hall.
-avoidRules: [photoreal, kawaii, cyberpunk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-071.webp }
+avoidRules:
+  - photoreal
+  - kawaii
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-071.webp
 attributes:
   negativePrompt: photoreal, kawaii, cyberpunk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-norse-sagas,
-    categoryName: 8. Mythic — Norse Sagas,
-    tags: [mythic-noir-curated-vault, mythic, norse-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-norse-sagas
+  categoryName: 8. Mythic — Norse Sagas
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - norse-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

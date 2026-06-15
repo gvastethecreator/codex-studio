@@ -12,27 +12,27 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Postmodernismo Memphis radical, lúdico e irreverente, orientado al choque visual deliberado.
+  aesthetic: Postmodernismo Memphis radical, ludico e irreverente, orientado al choque visual deliberado.
   form_and_line: >-
-    Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos
+    Squiggles, triangulos, plintos totemicos, asimetria explicita y offsets compositivos
     provocativos.
   color_palette: >-
-    Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja
+    Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja
     vivo.
   lighting_setup: >-
-    Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto
+    Iluminacion de estudio brillante, acentos neon, bombillas cromaticas y spots expositivos de alto
     contraste.
-  material_texture: Formica impresa, plástico brillante, esmalte, goma y terrazo en escala juguetona.
-  render_quality: Clash postmoderno legible, irónico y energético sin perder estructura formal.
-  spatial_distortion: Asimetría intencional con jerarquía por color y geometría de alto impacto.
-  atmosphere: Rebelde, festiva, anti-solemnidad y manifiesto de diseño.
+  material_texture: Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.
+  render_quality: Clash postmoderno legible, ironico y energetico sin perder estructura formal.
+  spatial_distortion: Asimetria intencional con jerarquia por color y geometria de alto impacto.
+  atmosphere: Rebelde, festiva, anti-solemnidad y manifiesto de diseno.
   key_features: >-
-    Patrones bacterianos, squiggles reflectivos, módulos descentrados, bloques cromáticos y formas
+    Patrones bacterianos, squiggles reflectivos, modulos descentrados, bloques cromaticos y formas
     totemizadas.
   creative_brief: >-
-    Define una gramática Memphis transferible donde asimetría, patrón gráfico y color confrontativo
-    sean reglas estructurales. Debe conservar ironía y energía manifiesto sin caer en caricatura
-    decorativa superficial.
+    Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y
+    color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a
+    decoracion novelty ni a un living ochentoso fijo.
 avoidRules:
   - boring
   - beige

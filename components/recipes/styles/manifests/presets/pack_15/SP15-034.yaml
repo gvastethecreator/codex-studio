@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Curvilinear waterline composition where circuit nodes drift yet stay connected.
   atmosphere: Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.
   key_features: Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.
-  creative_brief: >-
-    Rewire the input as a wet reef circuit: turquoise voltage, magenta pulses, coral cable junctions, algae power beads,
-    buoyant rhythm cells, and salt-crusted wet edges. Marinas or platforms can appear as anchors; the style is tidal
-    nightlife infrastructure with a living nervous system. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Rewire the input as a wet reef circuit: turquoise voltage, magenta pulses, coral cable junctions, algae power beads, buoyant rhythm cells, and salt-crusted wet edges. Marinas or platforms can appear as anchors; the style is tidal nightlife infrastructure with a living nervous system. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - diesel-grime
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

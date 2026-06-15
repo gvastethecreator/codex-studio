@@ -47,7 +47,9 @@ const CarouselImageItem: React.FC<{
   isSliding: boolean;
   isComparing: boolean;
 }> = React.memo(({ image, transitionName, isActive, isSliding, isComparing }) => {
-  const [isLoaded, setIsLoaded] = useState(true);
+  const thumbnailSrc = image.thumbnail || image.preview || image.src;
+  const previewSrc = image.preview || thumbnailSrc;
+  const [loadedPreviewSrc, setLoadedPreviewSrc] = useState<string | null>(null);
   const [uiScale, setUiScale] = useState(1);
 
   const imgRef = useRef<HTMLImageElement>(null);
@@ -57,11 +59,31 @@ const CarouselImageItem: React.FC<{
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  // Determine which source to show (Generated vs Original Reference)
+  useEffect(() => {
+    if (previewSrc === thumbnailSrc || loadedPreviewSrc === previewSrc) return;
+
+    let isCancelled = false;
+    const previewImage = new Image();
+    previewImage.decoding = 'async';
+    previewImage.onload = () => {
+      if (!isCancelled) {
+        setLoadedPreviewSrc(previewSrc);
+      }
+    };
+    previewImage.src = previewSrc;
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [loadedPreviewSrc, previewSrc, thumbnailSrc]);
+
+  // Determine which source to show (Generated preview vs Original Reference)
   const displaySrc =
     isComparing && image.config.attachments?.[0]?.dataUrl
       ? image.config.attachments[0].dataUrl
-      : image.src;
+      : loadedPreviewSrc === previewSrc
+        ? previewSrc
+        : thumbnailSrc;
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
   const aspectRatioStyle = image.config.aspectRatio
@@ -141,17 +163,10 @@ const CarouselImageItem: React.FC<{
         startAnimation();
       }}
     >
-      {!isLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="size-12 border-2 border-accent-500/20 border-t-accent-500 rounded-full animate-spin" />
-        </div>
-      )}
-
       <img
         ref={imgRef}
         src={displaySrc}
         alt=""
-        onLoad={() => setIsLoaded(true)}
         draggable={false}
         className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_0_120px_rgba(0,0,0,1)]`}
         style={{

@@ -4,8 +4,14 @@ packId: pack_14
 name: Trireme Omen Strategy
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Trireme omen strategy where augury, naval rhythm, and divine dependence guide motion.
   form_and_line: Pier-grid cues, trireme prow shapes, and temple beacon rhythms.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Strategic suspense and divine dependence.
   key_features: Augur platform cues, omen braziers, battle prows.
   creative_brief: Apply trireme omen strategy to the input, making movement feel ritually interpreted without requiring a port.
-avoidRules: [photoreal, playful-cartoon, modern-ships, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-047.webp }
+avoidRules:
+  - photoreal
+  - playful-cartoon
+  - modern-ships
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-047.webp
 attributes:
   negativePrompt: photoreal, playful-cartoon, modern-ships, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

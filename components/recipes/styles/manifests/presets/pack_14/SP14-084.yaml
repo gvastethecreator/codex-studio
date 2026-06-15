@@ -4,30 +4,47 @@ packId: pack_14
 name: Orbital Death Spiral
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, cosmology]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - cosmology
 visualDna:
-  aesthetic: Planetary death mapping through orbital spirals, crypt rings, and sacred underworld geometry.
-  form_and_line: Helix stair cues, crypt rings, and orbital relief walls.
+  aesthetic: Mortality mapped as planetary motion through orbital spirals and sacred underworld geometry.
+  form_and_line: Spiral ring cues, descending path geometry, and orbital relief walls.
   color_palette: Bone gray, deep violet, and tarnished silver.
   lighting_setup: Candle constellations and shafted moonlight vents.
   material_texture: Damp stone, mineral deposits, and corroded relic metal.
-  render_quality: Moody underworld concept with intricate depth.
-  spatial_distortion: Descending spiral composition toward a void core.
+  render_quality: Moody cosmic-underworld concept with readable depth and larger forms.
+  spatial_distortion: Descending spiral depth toward a dark orbital core.
   atmosphere: Liminal dread and sacred curiosity.
-  key_features: Planet-crypt cues, omen tablets, sepulchral star maps.
-  creative_brief: Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs.
-avoidRules: [photoreal, cheerful, neon-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-084.webp }
+  key_features: Orbital tablets, sepulchral rings, and star-map reliefs.
+  creative_brief: Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs or crypt staging.
+avoidRules:
+  - photoreal
+  - cheerful
+  - neon-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-084.webp
 attributes:
   negativePrompt: photoreal, cheerful, neon-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic, cosmology],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - cosmology
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

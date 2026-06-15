@@ -12,33 +12,33 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Farmhouse contemporáneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.
+  aesthetic: Farmhouse contemporaneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.
   form_and_line: >-
-    Listones horizontales, diagonales brace, geometría utilitaria abierta y líneas apron-front
+    Listones horizontales, diagonales brace, geometria utilitaria abierta y lineas apron-front
     suavizadas.
   color_palette: Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.
-  lighting_setup: Mañana luminosa aireada, pendentes sobredimensionados y prácticos utilitarios de tono cálido.
+  lighting_setup: Manana luminosa aireada, pendentes sobredimensionados y practicos utilitarios de tono calido.
   material_texture: >-
-    Madera envejecida, lino lavado, pintura tiza, algodón rayado, fibras trenzadas y metal
+    Madera envejecida, lino lavado, pintura tiza, algodon rayado, fibras trenzadas y metal
     galvanizado.
-  render_quality: Editorial farmhouse limpio con legibilidad doméstica y calidez cotidiana consistente.
-  spatial_distortion: Escala estable y amplitud moderada por luz distribuida y geometría utilitaria visible.
+  render_quality: Editorial farmhouse limpio con legibilidad domestica y calidez cotidiana consistente.
+  spatial_distortion: Escala estable y amplitud moderada por luz distribuida y geometria utilitaria visible.
   atmosphere: Acogedor, amable, comunitario y familiar.
   key_features: >-
-    Listón blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como
+    Liston blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como
     ornamento.
   creative_brief: >-
-    Define una gramática farmhouse transferible sustentada por madera envejecida, blanco cálido y
-    detalle rural funcional. El estilo debe comunicar uso real sin depender de clichés narrativos
-    televisivos.
+    Convierte cualquier input en una gramatica farmhouse de blanco calido, madera envejecida,
+    utilidad visible y calma cotidiana. Debe sentirse vivido y funcional sin quedar atado a una casa
+    de campo literal ni a cliches televisivos de domesticidad escenografica.
 avoidRules:
   - modern
   - sleek
-  - metal
+  - chrome
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-018.webp
 attributes:
-  negativePrompt: modern, sleek, metal
+  negativePrompt: modern, sleek, chrome
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

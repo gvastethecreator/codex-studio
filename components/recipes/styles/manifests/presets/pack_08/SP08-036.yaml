@@ -12,20 +12,19 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Viking warrior garb, fjord-borne fury, shield-wall legend
-  form_and_line: Furs, leather, tunic-length drape, cross-body belt tension, leg-wrap binding, cloak-pin gather
+  aesthetic: Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture
+  form_and_line: Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather
   color_palette: Brown, Grey, Blue, moss, woad, rust, iron, wolf-pelt grey, amber
   lighting_setup: Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights
   material_texture: Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle
-  render_quality: Rugged, dirty, saga-page authenticity, shield-wall grit
+  render_quality: Rugged, weathered, saga-page authenticity, north-sea grit
   spatial_distortion: None
   atmosphere: Tough, cold, sea-spray resolve, saga warmth, raven-flight omen
-  key_features: Thor-hammer pendant cues, round-shield motif, fur mantle, braid or rune detail
+  key_features: Thor-hammer cues, round-shield geometry, fur mantle edge, knotwork or rune detail
   creative_brief: >-
-    Wrap the input in Norse warrior materiality: wolf fur, riveted chainmail,
-    coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber
-    warmth. Keep saga brutality without requiring beard, longship, shield wall,
-    axe, tattooed chest or specific raider body.
+    Wrap any input in Norse seafaring materiality: wolf fur, riveted chainmail, coarse wool wadmal,
+    oil-tanned leather, iron bosses, rune marks and amber warmth. Keep saga hardness as a stylistic
+    anchor without requiring beards, longships, shield walls, axes, tattooed torsos or a raider body.
 avoidRules:
   - clean
   - shiny

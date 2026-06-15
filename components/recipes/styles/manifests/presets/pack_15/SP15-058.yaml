@@ -21,15 +21,8 @@ visualDna:
   render_quality: Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.
   spatial_distortion: Upward vertical perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
   atmosphere: Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.
-  key_features: >-
-    Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk
-    geometry.
-  creative_brief: >-
-    File the input into vertical bureaucratic power: gold index tabs, pneumatic tubes, parchment labels, brass mesh, and
-    clockwork lift rails should make memory feel mechanical and controlled. Archives or towers can appear, but the style
-    is indexed permanence and access pressure. Apply this corepunk genre grammar over any input: preserve the faction
-    mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required
-    city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.
+  creative_brief: 'File the input into vertical bureaucratic power: gold index tabs, pneumatic tubes, parchment labels, brass mesh, and clockwork lift rails should make memory feel mechanical and controlled. Archives or towers can appear, but the style is indexed permanence and access pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - minimalist
@@ -54,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

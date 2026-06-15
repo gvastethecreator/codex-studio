@@ -85,12 +85,15 @@ let catalogCache: LoadedStylePresetCatalog | null = null;
 let catalogPromise: Promise<LoadedStylePresetCatalog> | null = null;
 
 function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
-  const defaultImageExists = Boolean(resolveStyleDefaultImage(preset.id));
+  const resolvedDefaultImage = resolveStyleDefaultImage(preset.id);
+  const defaultImageExists = Boolean(resolvedDefaultImage);
   return {
     ...preset,
     assets: {
       ...preset.assets,
-      ...(defaultImageExists ? {} : { defaultImage: undefined }),
+      ...(defaultImageExists
+        ? { defaultImage: resolvedDefaultImage }
+        : { defaultImage: undefined }),
     },
     taxonomy: {
       ...preset.taxonomy,

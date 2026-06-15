@@ -142,7 +142,7 @@ describe('buildWorkspacesWithThumbs', () => {
     });
 
     expect(result[0].lastImage).toBe(
-      'http://localhost:17223/library/assets/default-fallback-thumb.png?variant=thumb&max=96',
+      'http://127.0.0.1:17223/library/assets/default-fallback-thumb.png?variant=thumb&max=96',
     );
   });
 

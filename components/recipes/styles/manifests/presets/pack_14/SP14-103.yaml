@@ -4,8 +4,13 @@ packId: pack_14
 name: Salt-Bone Sigil Liturgy
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Sigil liturgy carved from salt-encrusted bone, severe and ceremonial.
   form_and_line: Repeating sigil panels, vertebra-like arcs, and ceremonial symmetry.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Severance, permanence, and ritual authority.
   key_features: Bone sigils, salt encrustation, oath-like panels.
   creative_brief: Rework the input as a salt-bone sigil liturgy, where memory is etched and preserved by salt rather than staged in a fixed hall.
-avoidRules: [photoreal, whimsical, candy colors, watermark, text, logo, blur]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-103.webp }
+avoidRules:
+  - photoreal
+  - whimsical
+  - candy colors
+  - watermark
+  - text
+  - logo
+  - blur
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-103.webp
 attributes:
   negativePrompt: photoreal, whimsical, candy colors, watermark, text, logo, blur
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

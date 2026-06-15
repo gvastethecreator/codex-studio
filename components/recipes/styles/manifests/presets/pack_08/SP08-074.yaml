@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Wrapped in bandages, tomb-risen horror, ancient-curse concealment
-  form_and_line: Wrapping lines, body-enveloping spiral, mummiform-silhouette, crossing-bandage grid, trailing-wrap end
+  aesthetic: Bandage-wrapped concealment, ancient dread, desiccated wrap grammar
+  form_and_line: Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm
   color_palette: White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow
   lighting_setup: Flat dimness, torch-flicker amber, excavation daylight, wrapped-shadow mystery
   material_texture: Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk
-  render_quality: Spooky, hurt, Universal-monster atmosphere, curse-of-the-pharaoh dread
+  render_quality: Spooky, dry, cursed-wrap texture, desiccated-linen dread
   spatial_distortion: None
-  atmosphere: Horror, hidden, ancient-awakening tension, wrapped-identity mystery
+  atmosphere: Hidden, ominous, ancient, dry, restrained-horror
   key_features: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid
   creative_brief: >-
-    Bind the input in bandage/mummy grammar: aged linen strips, crossing wraps,
-    stiffened gauze, desert dust, trailing frays and conceal/reveal gaps. Keep
-    ancient-curse dread without requiring sarcophagus, walking mummy, exposed
-    skin, wrapped face or tomb scene.
+    Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps,
+    stiffened gauze, desert dust, trailing frays and conceal-reveal gaps. Keep
+    ancient dread as texture only; do not require a sarcophagus, walking
+    mummy, exposed skin, wrapped face or tomb scene.
 avoidRules:
   - skin
 assets:

@@ -4,8 +4,14 @@ packId: pack_14
 name: Snow Shrine Boundary Seals
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Winter shrine boundary seals against spirit incursions, quiet danger, and seasonal austerity.
   form_and_line: Repeating boundary pillar cues, rope arcs, and stepped approach paths.
@@ -17,17 +23,29 @@ visualDna:
   atmosphere: Quiet danger, reverence, and seasonal austerity.
   key_features: Boundary stones, warning talismans, guardian fox statue cues.
   creative_brief: Apply snow-shrine boundary seals to the input, making winter spirits test sacred limits without requiring a shrine border.
-avoidRules: [photoreal, kawaii, urban-neon, sci-fi-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-034.webp }
+avoidRules:
+  - photoreal
+  - kawaii
+  - urban-neon
+  - sci-fi-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-034.webp
 attributes:
   negativePrompt: photoreal, kawaii, urban-neon, sci-fi-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

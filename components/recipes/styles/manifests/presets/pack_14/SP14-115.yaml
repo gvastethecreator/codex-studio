@@ -4,30 +4,46 @@ packId: pack_14
 name: Wax Seal Verdict Grid
 category: 2. Mythic — Ritual Noir
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Ritual investigation expressed through wax seals, ceremonial stamp grids, and procedural suspicion.
-  form_and_line: Tabletop-plane cues, seal arrays, and sharp document-edge geometry.
+  form_and_line: Seal-array geometry, compartment planes, and sharp docket-edge rhythms.
   color_palette: Deep red wax, midnight black, and parchment beige.
   lighting_setup: Tight inspection lamps with low peripheral shadow.
-  material_texture: Melted wax, cardstock, brass stamp heads, and linen.
-  render_quality: Micro-detail noir rendering with ritual investigation mood.
-  spatial_distortion: Flattened evidence-plane perspective with towering seal stacks as visual pressure.
+  material_texture: Melted wax, heavy card, brass stamp heads, linen, and dark lacquer.
+  render_quality: Clean ritual-noir rendering with procedural suspicion mood.
+  spatial_distortion: Flattened verdict-plane perspective with stacked seals as visual pressure.
   atmosphere: Suspicion, procedure, and disciplined scrutiny.
-  key_features: Wax seals, verdict stamps, confession-packet shapes.
-  creative_brief: Rework the input through wax-seal verdict logic, where stamps and seals carry judgment without requiring an investigation room.
-avoidRules: [photoreal, cute, neon, watermark, text, logo, empty-space]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-115.webp }
+  key_features: Wax seals, verdict stamps, sealed packet shapes.
+  creative_brief: Rework the input through wax-seal verdict logic, where stamps, seals, and docket pressure carry judgment without requiring an investigation room, reading desk, or evidence archive.
+avoidRules:
+  - photoreal
+  - cute
+  - neon
+  - watermark
+  - text
+  - logo
+  - empty-space
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-115.webp
 attributes:
   negativePrompt: photoreal, cute, neon, watermark, text, logo, empty-space
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-ritual-noir,
-    categoryName: 2. Mythic — Ritual Noir,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-ritual-noir
+  categoryName: 2. Mythic — Ritual Noir
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

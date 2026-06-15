@@ -22,10 +22,9 @@ visualDna:
   atmosphere: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
   key_features: Bat wings, bow hair clips, pentagram choker, platform creepers
   creative_brief: >-
-    Mix cute and occult on the input: lavender tulle, black lace, pastel PVC,
-    bat-wing cues, bows, chokers, platform mass and candy-corpse contrast. Keep
-    creepy-cute unease without requiring graveyards, bedroom lighting, a doll
-    pose or a specific gothic subject.
+    Mix cute and occult into any input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows,
+    chokers, platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring
+    graveyards, bedroom lighting, doll poses or a fixed gothic subject.
 avoidRules:
   - all black
 assets:

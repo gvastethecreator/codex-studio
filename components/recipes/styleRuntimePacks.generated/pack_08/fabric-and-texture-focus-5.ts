@@ -11,7 +11,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Living statue, museum-come-alive fantasy, petrified-elegance awe',
       form_and_line:
-        'Chisel marks, contrapposto-stance, sculpted-drapery fold, classical-proportion silhouette, pedestal-base stillness',
+        'Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, pedestal-like stillness',
       color_palette:
         'Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess',
       lighting_setup:
@@ -23,7 +23,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere: 'Timeless, still, sculptural-permanence awe, stone-silence eternity',
       key_features: 'Marble, veining, chisel marks, sculpted drapery, pedestal cues',
       creative_brief:
-        'Petrify the input into stone-statue material: Carrara grain, grey veining, chisel marks, sculpted drapery folds, rigid silhouette and gallery-like spot light. Keep living-statue wonder without requiring contrapposto figure, museum, pedestal, body or classical portrait.',
+        'Petrify the input into stone-statue material: Carrara grain, grey veining, chisel marks, sculpted drapery folds, rigid carved contour and gallery-like spot light. Keep living-statue wonder without requiring contrapposto figure, museum, pedestal, body or classical portrait bust.',
     },
   },
   {
@@ -32,9 +32,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'silk, suit',
     style: {
-      aesthetic: 'Canadian Tuxedo, denim-on-denim confidence, Americana-workwear cool',
+      aesthetic: 'Denim-on-denim confidence, Americana workwear cool, indigo utility polish',
       form_and_line:
-        'Stitching, trucker-jacket box, straight-leg column, western-yoke line, contrast-thread geometry',
+        'Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry',
       color_palette:
         'Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky',
       lighting_setup: 'Softbox-even texture light, denim side-light, casual daylight',
@@ -42,34 +42,35 @@ export const GENERATED_STYLE_PRESETS = [
         'Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch',
       render_quality: 'Textured, casual, heritage-workwear authenticity, Americana-denim fidelity',
       spatial_distortion: 'None',
-      atmosphere: 'Cool, blue, blue-collar pride, weekend-ease, American-classic confidence',
+      atmosphere: 'Cool, blue, blue-collar pride, weekend ease, American-classic confidence',
       key_features:
         'Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination',
       creative_brief:
-        'Convert the input into denim-on-denim craft: indigo twill, selvedge IDs, orange chainstitch, copper rivets, leather patch and coordinated blue layers. Keep workwear confidence without requiring a specific body, garage, labor story or full outfit pose.',
+        'Convert the input into denim-on-denim craft: indigo twill, selvedge IDs, orange chainstitch, copper rivets, leather patch and coordinated blue layering. Keep workwear confidence without requiring a garage, ranch, labor narrative, full outfit pose or a human model.',
     },
   },
   {
     id: 'SP08-051',
-    name: 'Latex/PVC',
+    name: 'High-Gloss Polymer',
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'matte, cotton',
     style: {
-      aesthetic: 'Fetish fashion, high-gloss domination, latex-subculture statement',
+      aesthetic: 'High-gloss polymer couture, reflective power dressing, lacquered futurism',
       form_and_line:
-        'Tight highlights, second-skin compression, corset-waist curve, opera-glove length, catsuit continuity',
+        'Tight highlights, compression seams, sculpted contour, elongated extensions, continuous glossy wrapping',
       color_palette:
         'Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux',
       lighting_setup:
         'High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen',
       material_texture:
         'Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish',
-      render_quality: 'Shiny, edgy, high-polish fetish aesthetic, studio-reflection perfection',
+      render_quality: 'Shiny, edgy, high-polish couture aesthetic, studio-reflection perfection',
       spatial_distortion: 'None',
-      atmosphere: 'Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge',
-      key_features: 'Reflections, crease-free tension, zip front, corset lacing, high-shine polish',
+      atmosphere: 'Intense, sleek, power-dressing charge, mirror-shine confidence, lacquered edge',
+      key_features:
+        'Reflections, crease-free tension, zip-line cues, seam articulation, high-shine polish',
       creative_brief:
-        'Coat the input in latex/PVC logic: seamless high-gloss reflection, tight compression, zip lines, corset lacing cues and strip-light catchlights. Preserve power-dressing intensity without requiring a body, club, fetish scene or second-skin portrait.',
+        'Coat the input in high-gloss polymer logic: seamless reflection, sculpted compression, zip-line detailing, seam articulation and strip-light catchlights. Preserve power-dressing intensity without requiring a club, fetish-coded framing, second-skin portrait or body-first silhouette.',
     },
   },
   {
@@ -78,9 +79,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'smooth',
     style: {
-      aesthetic: 'Luxury fur, old-Hollywood opulence, cold-climate extravagance',
+      aesthetic: 'Luxury fur opulence, winter-glamour extravagance, tactile grandeur',
       form_and_line:
-        'Soft edges, voluminous-sleeve bulk, shawl-collar wrap, floor-length column, muff-hand enclosure',
+        'Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette',
       color_palette:
         'Brown/White, sable, silver-fox, chinchilla grey, mink-champagne, arctic-white',
       lighting_setup: 'Soft diffused glamour light, fur-halo rim, warm amber bounce',
@@ -89,31 +90,32 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Expensive, soft, fur-atelier luxury, tactile-lavish perfection',
       spatial_distortion: 'None',
       atmosphere: 'Rich, warm, tactile opulence, champagne-evening ease, first-class decadence',
-      key_features: 'Fluff, guard-hair sheen, dense underwool, dramatic collar, full-length sweep',
+      key_features:
+        'Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation',
       creative_brief:
-        'Add fur-coat opulence to the input: guard-hair sheen, dense underwool, sable or chinchilla tonal shifts, shawl-collar volume and soft halo rim light. Keep luxury warmth without requiring shoulders, aristocrat body, fireside interior or old-Hollywood scene.',
+        'Add fur opulence to the input: guard-hair sheen, dense underwool, sable or chinchilla tonal shifts, halo volume and soft glamour rim light. Keep luxury warmth without requiring shoulders, aristocratic body language, fireside interiors or old-Hollywood staging.',
     },
   },
   {
     id: 'SP08-056',
-    name: 'Silk & Satin',
+    name: 'Liquid Satin Drape',
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'rough, matte',
     style: {
-      aesthetic: 'Slip dress, boudoir-elegance minimalism, liquid-light sensuality',
+      aesthetic: 'Silk couture minimalism, liquid-light elegance, soft-luxury sheen',
       form_and_line:
-        'Fluid drape, bias-cut column, cowl-neck waterfall, spaghetti-strap line, floor-grazing hem',
+        'Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep',
       color_palette: 'Champagne, Red, oyster, rose-quartz, midnight-navy, ivory, blush, emerald',
       lighting_setup: 'Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll',
       material_texture:
         'Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette',
-      render_quality: 'Elegant, soft, boudoir-editorial luxury, light-caught-on-fabric poetry',
+      render_quality: 'Elegant, soft, editorial luxury, light-caught-on-fabric poetry',
       spatial_distortion: 'None',
-      atmosphere: 'Sensual, expensive, champagne-bubble delicacy, liquid-fabric luxury',
+      atmosphere: 'Delicate, expensive, champagne-bubble softness, liquid-fabric luxury',
       key_features:
-        'Drape folds, bias-cut cling, cowl neck, spaghetti straps, liquid-sheen movement',
+        'Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement',
       creative_brief:
-        'Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin ripples and champagne specular highlights. Keep boudoir luxury as mood only; avoid bedroom scenes, collarbones, body cling or fixed slip-dress framing. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin ripples and champagne specular highlights. Keep intimate luxury as mood only; avoid bedroom scenes, body cling, slip-dress framing or portrait-first glamour. Preserve drape behavior, silhouette logic, trim cues and material attitude without requiring a body, runway, room, prop, role or fixed character scene.',
     },
   },
   {
@@ -144,25 +146,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-073',
     name: 'Body Paint',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'clothes',
+    negativePrompt: 'real stitched garment',
     style: {
-      aesthetic: 'Painted clothes, trompe-l-oeil illusion, skin-as-canvas transformation',
+      aesthetic:
+        "Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation",
       form_and_line:
-        'Brush strokes on skin, painted-lapel line, faux-button stroke, body-contour follow, wet-paint flow',
+        'Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment flow',
       color_palette:
-        'Vibrant, primary-bold, acrylic-bright, UV-reactive, metallic-body, matte-flat, dayglo',
+        'Vibrant primary-bold acrylics, UV-reactive brights, metallic pigment flashes, matte flats and dayglo accents',
       lighting_setup:
-        'Studio, diffused-even light, ring-flash catch, body-paint evenness, exhibition-gallery spot',
+        'Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface continuity',
       material_texture:
-        'Matte paint, body-paint film, glycerin-sheen, airbrush-gradient, brush-stroke relief, skin-oil through paint',
-      render_quality: 'Artistic, illusion, living-canvas spectacle, body-art mastery',
+        'Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding through pigment',
+      render_quality:
+        'Artistic illusion mastery, painted-couture clarity and temporary-surface finish strong enough to replace fabric',
       spatial_distortion: 'None',
       atmosphere:
-        'Creative, painted-vulnerability confidence, art-gallery hush, temporary-surface ritual',
+        'Creative, performative and experimentally dressed through pigment rather than sewn construction',
       key_features:
-        'Paint, brush strokes, trompe-l-oeil effect, painted seams, visible substrate texture',
+        "Pigment film, brush strokes, trompe-l'oeil effect, painted seams, faux trims and visible substrate texture",
       creative_brief:
-        "Paint clothing illusion onto the input: acrylic matte film, brush-stroke relief, airbrush gradients, fake seams, faux buttons and trompe-l'oeil shadows. Keep body-paint vulnerability only when the subject calls for it; otherwise treat it as temporary pigment over any surface, not a nude body scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.",
+        "Build clothing illusion through pigment: acrylic matte film, brush-stroke relief, airbrush gradients, fake seams, faux closures and trompe-l'oeil shadows. Treat the effect as temporary couture pigment over any surface or silhouette, not a nude-body setup. Preserve painted-seam logic, pigment film, faux trims and styling attitude without requiring a body, portrait, runway, room, prop, role or fixed character scene.",
     },
   },
   {
@@ -171,19 +175,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'smooth, shiny',
     style: {
-      aesthetic: 'Tweed tailoring, donnish-academia charm, country-estate weekend',
+      aesthetic: 'Tweed tailoring heritage, scholarly restraint, moss-toned country classicism',
       form_and_line:
-        'Herringbone pattern, structured-shoulder drape, notch-lapel angle, three-roll-two button stance, trouser-break hem',
+        'Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm',
       color_palette: 'Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss',
       lighting_setup: 'Rainy-window grey, study-lamp warmth, flat wool-revealing light',
       material_texture:
         'Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining',
-      render_quality: 'Classic, textured, Savile Row heritage, country-house authenticity',
+      render_quality: 'Classic, textured, heritage-tailoring precision, wool-depth authenticity',
       spatial_distortion: 'None',
-      atmosphere: 'Smart, old school, textured contemplation, donnish eccentricity',
-      key_features: 'Herringbone, elbow patches, ticket pocket, knitted tie, brogues',
+      atmosphere: 'Smart, restrained, contemplative, textured, quietly formal',
+      key_features:
+        'Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth',
       creative_brief:
-        'Tailor the input with tweed: herringbone wool, Donegal flecks, horn buttons, elbow-patch cues, three-roll-two lapel logic and moss-brown texture. Keep professor charm without requiring a study, library, armchair, person or suit portrait.',
+        'Tailor the input with tweed heritage: herringbone wool, Donegal flecks, horn-button punctuation, elbow-patch cues, three-roll-two lapel logic and moss-brown texture. Keep scholarly classicism as attitude only; do not require a person, study, library, armchair, estate weekend or literal suit portrait.',
     },
   },
   {
@@ -192,22 +197,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'clean skin',
     style: {
-      aesthetic: 'Full body suit tattoo, living-canvas autobiography, ink-and-skin devotion',
+      aesthetic:
+        'Dense tattoo-surface mapping, ceremonial ink devotion, graphic body-art translated into transferable pattern logic',
       form_and_line:
-        'Ink lines, bodysuit-coverage contour, sleeve-to-chest flow, back-piece canvas, Japanese-traditional background',
+        'Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic',
       color_palette:
-        'Blue/Black ink, tebori-indigo, iron-black, old-school red, yellow, green accent, skin-tone canvas',
-      lighting_setup: 'Studio-softbox evenness, healed-ink saturation, low rim definition',
+        'Tebori indigo, iron black, oxidized red, aged yellow, moss green accent, parchment-neutral ground',
+      lighting_setup:
+        'Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read',
       material_texture:
-        'Skin, healed-ink surface, needle-point texture, raised-line keloid, skin-sheen, stippled-shading dotwork',
-      render_quality: 'Artistic, permanent, irezumi-master precision, living-canvas dedication',
+        'Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth',
+      render_quality: 'Artistic, deliberate, irezumi-grade precision, surface-mapping discipline',
       spatial_distortion: 'None',
-      atmosphere:
-        'Edgy, committed, ink-commitment gravity, bodysuit-ritual patience, living-art pride',
+      atmosphere: 'Committed, ritualized, graphic, surface-history gravity',
       key_features:
-        'Ink coverage, irezumi waves, wind bars, healed-settle depth, sleeve-to-field connection',
+        'Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection',
       creative_brief:
-        'Tattoo the input with living-canvas logic: tebori indigo, black linework, old-school accents, irezumi waves, wind bars, stippled shading and healed-ink depth. Preserve skin/ink devotion when relevant, but allow non-human inputs to receive tattoo-like surface mapping without requiring a chest, body suit portrait or tattoo-parlor scene.',
+        'Recast the input through tattoo-surface mapping: tebori indigo, iron-black linework, old-school accent notes, irezumi waves, wind bars, stippled shading and healed-ink depth should behave like transferable graphic coverage. Keep skin devotion optional; do not require a torso, nude body, chest panel, tattoo-parlor scene or portrait setup.',
     },
   },
   {
@@ -216,20 +222,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'metal, cloth',
     style: {
-      aesthetic: 'Leather armor utility, shadow-guild anonymity, fantasy rogue practicality',
+      aesthetic: 'Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism',
       form_and_line:
-        'Straps, studs, asymmetrical-harness geometry, pauldron-shoulder square, bracer-forearm wrap, hooded-cowl depth',
+        'Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth',
       color_palette: 'Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke',
       lighting_setup:
         'Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast',
       material_texture:
         'Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel',
-      render_quality: 'Tough, flexible, D&D-manual realism, stealth-gear authenticity',
+      render_quality: 'Tough, flexible, stealth-gear authenticity, worn-hide precision',
       spatial_distortion: 'None',
-      atmosphere: 'Adventure, tough, lockpick silence, midnight-escape adrenaline, stealth utility',
-      key_features: 'Buckles, hood cues, hidden pouches, bracer wraps, asymmetrical harness',
+      atmosphere: 'Stealthy, tough, modular, nocturnal, quietly tactical',
+      key_features: 'Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness',
       creative_brief:
-        'Armor the input with stealth leather: oil-tanned hide, asymmetrical harness, brass studs, buckles, bracers, tooled panels and hidden-pouch logic. Keep rogue utility without requiring dungeon corridors, lockpicking, weapons, shadow alley or humanoid adventurer.',
+        'Armor the input with stealth leather grammar: oil-tanned hide, asymmetrical harness logic, brass studs, buckles, bracer wraps, tooled panels and hidden-pouch utility. Keep rogue pragmatism as material attitude only; do not require weapons, dungeon corridors, lockpicking, shadow alleys or humanoid adventurer body.',
     },
   },
   {
@@ -238,22 +244,22 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'skin',
     style: {
-      aesthetic: 'Wrapped in bandages, tomb-risen horror, ancient-curse concealment',
+      aesthetic: 'Bandage-wrapped concealment, ancient dread, desiccated wrap grammar',
       form_and_line:
-        'Wrapping lines, body-enveloping spiral, mummiform-silhouette, crossing-bandage grid, trailing-wrap end',
+        'Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm',
       color_palette:
         'White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow',
       lighting_setup:
         'Flat dimness, torch-flicker amber, excavation daylight, wrapped-shadow mystery',
       material_texture:
         'Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk',
-      render_quality: 'Spooky, hurt, Universal-monster atmosphere, curse-of-the-pharaoh dread',
+      render_quality: 'Spooky, dry, cursed-wrap texture, desiccated-linen dread',
       spatial_distortion: 'None',
-      atmosphere: 'Horror, hidden, ancient-awakening tension, wrapped-identity mystery',
+      atmosphere: 'Hidden, ominous, ancient, dry, restrained-horror',
       key_features:
         'Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid',
       creative_brief:
-        'Bind the input in bandage/mummy grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust, trailing frays and conceal/reveal gaps. Keep ancient-curse dread without requiring sarcophagus, walking mummy, exposed skin, wrapped face or tomb scene.',
+        'Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust, trailing frays and conceal-reveal gaps. Keep ancient dread as texture only; do not require a sarcophagus, walking mummy, exposed skin, wrapped face or tomb scene.',
     },
   },
   {
@@ -262,19 +268,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'silk, clean',
     style: {
-      aesthetic: 'Burlap and rag textile, medieval-field humility, honest-labor simplicity',
+      aesthetic: 'Burlap-and-rag austerity, homespun endurance, rough-fiber humility',
       form_and_line:
-        'Loose weave, tunic-length drape, rope-belt cinch, hood-cowl silhouette, gathered-neckline ease',
+        'Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff',
       color_palette: 'Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp',
       lighting_setup: 'Flat overcast light, dim warm practical, rough-fiber revealing side light',
       material_texture:
         'Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord',
-      render_quality: 'Poor, scratchy, honest-poverty texture, feudal-era authenticity',
-      spatial_distortion: 'Holes',
-      atmosphere: 'Humble, rough, endurance dignity, simple-life resilience',
-      key_features: 'Fraying, rope belt, rough patches, raw hem, homespun texture',
+      render_quality: 'Scratchy, raw, weathered-fiber authenticity, rough textile honesty',
+      spatial_distortion: 'None',
+      atmosphere: 'Humble, rough, enduring, resilient, materially stripped-back',
+      key_features: 'Fraying, rope-cinch logic, rough patches, raw edges, homespun texture',
       creative_brief:
-        'Roughen the input with burlap/rag material: jute fiber, coarse hemp, homespun wool, rope-cord cinches, frayed hems, raw patches and weathered oatmeal-brown tones. Keep humble endurance without requiring peasants, harvest fields, cottage windows, poverty portrait or tunic body.',
+        'Roughen the input with burlap-rag materiality: jute fiber, coarse hemp, homespun wool, rope-cinch logic, frayed edges, raw patches and weathered oatmeal-brown tones. Keep humble endurance as fiber attitude only; do not require peasants, harvest fields, cottage windows, poverty portrait or literal tunic body.',
     },
   },
   {
@@ -283,9 +289,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'solid',
     style: {
-      aesthetic: 'Lace textile detail, heirloom romance, veil-like delicacy',
+      aesthetic: 'Lace textile detail, heirloom romance, openwork delicacy',
       form_and_line:
-        'Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep',
+        'Intricate web, Alencon-pattern spread, scalloped-edge flow, illusion-boundary tracing, trailing relief',
       color_palette: 'White, Black, ivory, candlelight, champagne, jet, nude-illusion',
       lighting_setup:
         'Backlit translucency, window-light diffusion, veil-glow softness, morning-light ethereality',
@@ -293,12 +299,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs',
       render_quality: 'Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage',
       spatial_distortion: 'None',
-      atmosphere:
-        'Romantic, fragile, heirloom-promise tenderness, veil-like anticipation, hush beauty',
+      atmosphere: 'Romantic, fragile, heirloom tenderness, hush beauty',
       key_features:
         'Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail',
       creative_brief:
-        'Lace the input with openwork structure: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle ground and backlit translucency. Keep bridal heritage as mood, not as bride, cathedral train, chapel, veil lift or wedding scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic, trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or fixed character scene.',
+        'Lace the input with openwork structure: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle ground and backlit translucency. Keep heirloom and ceremonial romance as textile mood only, not as bride, chapel, veil-lift tableau, cathedral train, portrait body or wedding scene.',
     },
   },
   {
@@ -309,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Armor mesh, medieval-smithy craft, interlocked-defense beauty',
       form_and_line:
-        'Tiny rings, butted-ring grid, riveted-flat drape, hauberk-length column, coif-hood circumference',
+        'Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference',
       color_palette:
         'Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen',
       lighting_setup: 'Ring-reflection glint, forge-fire warmth, overcast-even steel light',
@@ -318,9 +323,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Detailed, heavy, forge-craft authenticity, ring-by-ring precision',
       spatial_distortion: 'None',
       atmosphere: 'Protective, historic, heavy craft pride, defensive patience, anvil-song weight',
-      key_features: 'Mesh pattern, ring grid, coif hood, riveted links, mail curtain',
+      key_features: 'Mesh pattern, ring grid, coif cues, riveted links, mail curtain',
       creative_brief:
-        'Overlay the input with chainmail structure: riveted steel rings, butted grids, coif or hauberk cues, oiled metal and ring-by-ring glints. Keep medieval defense weight without requiring a castle, corridor, scout, fortress, warrior or battle.',
+        'Overlay the input with chainmail structure: riveted steel rings, butted grids, coif-like cues, oiled metal and ring-by-ring glints. Keep medieval defense weight without requiring a castle, fortress corridor, warrior, crusader silhouette or battle scene.',
     },
   },
   {
@@ -329,9 +334,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'smooth',
     style: {
-      aesthetic: 'Chunky sweater, hygge-comfort warmth, Nordic-cabin coziness',
+      aesthetic: 'Chunky knit warmth, hygge comfort, handmade winter coziness',
       form_and_line:
-        'Cable knit pattern, oversized-sweater volume, drop-shoulder ease, ribbed-cuff taper, turtleneck cylinder',
+        'Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm',
       color_palette: 'Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory',
       lighting_setup: 'Soft overcast light, fireplace-warm amber, candle-flicker glow',
       material_texture:
@@ -339,9 +344,9 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Cozy, warm, cabin-retreat comfort, Aran-island authenticity',
       spatial_distortion: 'None',
       atmosphere: 'Comfortable, winter, wool warmth, snowed-in serenity, handmade calm',
-      key_features: 'Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck',
+      key_features: 'Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck',
       creative_brief:
-        'Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca halo, merino twist, wooden-button cues and oatmeal/charcoal warmth. Keep hygge comfort without requiring a chest, cabin, fireplace scene or sweater portrait.',
+        'Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca halo, merino twist, wooden-button cues and oatmeal/charcoal warmth. Keep hygge comfort without requiring a cabin, fireplace vignette, torso framing or sweater portrait.',
     },
   },
   {
@@ -372,22 +377,21 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'fabric',
     style: {
-      aesthetic: 'Paper dress, washi-sculpture fragility, geometric-origami couture',
+      aesthetic: 'Origami-paper couture, washi-sculpture fragility, geometric fold discipline',
       form_and_line:
-        'Sharp folds, mountain-valley crease, triangular-panel construction, accordion-pleat compression, angular-bodice geometry',
+        'Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour logic',
       color_palette:
         'White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge',
       lighting_setup:
         'Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama',
       material_texture:
         'Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge',
-      render_quality: 'Artistic, fragile, Issey-Miyake-pleat poetry, paper-sculpture wonder',
-      spatial_distortion: 'Rigid',
-      atmosphere:
-        'Creative, stiff, museum-gallery hush, delicate-construction tension, ephemeral-material poetry',
-      key_features: 'Folds, crisp crease lines, paper edges, origami geometry, tear-away reveal',
+      render_quality: 'Artistic, fragile, pleated-paper precision, sculpture-grade wonder',
+      spatial_distortion: 'None',
+      atmosphere: 'Delicate, precise, crisp, ephemeral, materially tense',
+      key_features: 'Folds, crisp crease lines, paper edges, origami geometry, tear-away logic',
       creative_brief:
-        'Fold the input into origami-paper couture: washi grain, mountain-valley creases, triangular panels, accordion pleats, crisp kraft edges and hard raking shadows. Keep paper-dress wonder without requiring bodice, crane, gallery display or standing garment.',
+        'Fold the input into origami-paper couture: washi grain, mountain-valley creases, triangular panels, accordion compression, crisp kraft edges and hard raking shadows. Keep paper-sculpture wonder without requiring a bodice, crane, gallery display or standing garment body.',
     },
   },
   {
@@ -396,9 +400,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'solid',
     style: {
-      aesthetic: 'Dress made of smoke, evanescent-form poetry, vapor-sculpture impossibility',
+      aesthetic: 'Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility',
       form_and_line:
-        'Swirling, billow-plume volume, tendril-curl silhouette, dissipating-edge softness, columnar-rising column',
+        'Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic',
       color_palette:
         'Grey, White, charcoal-wisp, pearl-haze, silver-smoke, blue-grey, ethereal-mist',
       lighting_setup:
@@ -407,12 +411,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion',
       render_quality: 'Ethereal, impossible, volumetric-light poetry, ghost-presence majesty',
       spatial_distortion: 'Dissolving',
-      atmosphere:
-        'Ghostly, magic, fading-presence melancholy, incense-ritual mystery, phantasm-elegance',
+      atmosphere: 'Ghostly, diffused, melancholic, incense-like, phantasmic',
       key_features:
         'No edges, wisp boundary, volume-without-surface, light-through-form, tendril dissolution',
       creative_brief:
-        'Turn the input into smoke-dress materiality: particulate wisps, billowing plumes, dissolving edges, volumetric shafts and layers of grey-white vapor. Keep ghostly couture without requiring a body, figure, hemline, ritual or laser-stage scene.',
+        'Turn the input into smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges, volumetric shafts and layers of grey-white vapor. Keep ghostly couture as atmospheric behavior only; do not require a body, figure, hemline, ritual, stage or laser-show scene.',
     },
   },
   {
@@ -421,22 +424,23 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'skin',
     style: {
-      aesthetic: 'Living doll, uncanny-valley porcelain, toy-cabinet nightmare',
+      aesthetic:
+        'Uncanny porcelain artifice, bisque fragility, toy-cabinet tension translated into surface grammar',
       form_and_line:
-        'Cracks (optional), ball-joint articulation, bisque-head proportion, glass-eye stare, hinged-limb segmentation',
+        'Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes, hinged articulation logic',
       color_palette:
-        'Pale White, Pink, bisque, rose-blush, glass-blue iris, crackle-gold, doll-flesh cream',
+        'Pale white, pink, bisque, rose blush, glass blue, crackle gold, porcelain cream',
       lighting_setup:
         'Glossy porcelain highlights, display-spot precision, soft window daylight, toy-room dimness',
       material_texture:
         'Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi',
-      render_quality: 'Creepy, perfect, dollmaker-artisan precision, cabinet-photograph stillness',
-      spatial_distortion: 'Joints',
-      atmosphere: 'Uncanny, stiff, porcelain-fragility tension, glass-stare mystery',
+      render_quality: 'Precise, uncanny, dollmaker-artisan finish, lacquered stillness',
+      spatial_distortion: 'None',
+      atmosphere: 'Uncanny, delicate, stiff, porcelain-fragility tension',
       key_features:
-        'Glossy bisque, glass-eye cues, ball joints, painted blush, crackle-kintsugi detail',
+        'Glossy bisque, glassy focal cues, articulation seams, painted blush, crackle-kintsugi detail',
       creative_brief:
-        'Porcelain-doll the input with bisque glaze, ball-joint segmentation, painted blush, glass-eye shine, mohair-like softness and crackle-kintsugi seams. Keep uncanny toy-cabinet tension without requiring a living doll, display cabinet, face stare or posed limbs.',
+        'Recast the input with porcelain-artifice grammar: bisque glaze, articulation seams, painted blush, glassy focal shine, mohair-like softness and crackle-kintsugi detail. Keep uncanny toy-cabinet tension as finish only; do not require a living doll body, display cabinet, face stare or posed limbs.',
     },
   },
   {
@@ -460,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form',
       creative_brief:
-        'Cover the input in slime/goo dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence. Keep containment-breach disgust without requiring shoulders, floor puddles, body beneath, lab accident or creature scene.',
+        'Cover the input in slime/goo dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence. Keep containment-breach disgust without requiring shoulder-like anatomy, floor puddles, body beneath, lab accident or creature scene.',
     },
   },
   {
@@ -469,20 +473,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'matte',
     style: {
-      aesthetic: 'Disco dress, mirror-ball fantasy, floor-filler magnetism',
+      aesthetic: 'Mirror-ball glamour, paillette exuberance, celebration magnetism',
       form_and_line:
-        'Sparkles, sequin-grid drrape, bodycon column, keyhole-back cutout, fringe-hem shake',
+        'Sparkle fields, sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement',
       color_palette: 'Silver, Gold, rose-gold, holographic, champagne, disco-ball prism, copper',
       lighting_setup: 'Glittering fragment light, colored-gel shimmer, strobe-pulse refraction',
       material_texture:
         'Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread',
-      render_quality: 'Flashy, bright, dancefloor-electric energy, mirror-ball perfection',
+      render_quality:
+        'Flashy bright material energy, mirror-ball polish, celebration-grade radiance',
       spatial_distortion: 'None',
-      atmosphere:
-        'Attention, all-eyes-on-you magnetism, floor-filler confidence, electric celebration',
+      atmosphere: 'Attention magnetism, electric celebration, high-glam confidence',
       key_features: 'Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam',
       creative_brief:
-        'Make the input sequin-reactive: paillette grids, holographic shift, bugle-bead fringe, mirror-tile sparkle and color-fragment light. Keep party magnetism without requiring a dress, dancefloor, New Year scene or watching crowd.',
+        'Make the input sequin-reactive: paillette grids, holographic shift, bugle-bead fringe, mirror-tile sparkle and color-fragment light. Keep celebration magnetism and nightlife charge as surface behavior only, not as a dress, dancefloor, countdown scene, audience or body-first disco pose.',
     },
   },
   {
@@ -491,20 +495,20 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'fur, hair',
     style: {
-      aesthetic: 'Feather couture, cabaret extravagance, stage-spectacle plumage',
+      aesthetic: 'Feather couture opulence, plume-driven extravagance, ceremonial plumage drama',
       form_and_line:
-        'Soft barbs, feather-fan spread, headdress-arc corona, tail-train sweep, wing-cape silhouette',
+        'Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep',
       color_palette:
         'Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil',
       lighting_setup: 'Soft spotlight drama, feather-edge translucency, warm bulb glow',
       material_texture:
         'Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle',
-      render_quality: 'Exotic, soft, cabaret-spectacle grandeur, Moulin-Rouge opulence',
+      render_quality: 'Luxurious, soft, plume-spectacle grandeur, couture opulence',
       spatial_distortion: 'None',
-      atmosphere: 'Grand, birdlike, plumage-pride majesty, feathered-flight fantasy',
-      key_features: 'Quills, feather fan, headdress, marabou trim, iridescent barb',
+      atmosphere: 'Grand, buoyant, ornamental, plume-pride majesty',
+      key_features: 'Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs',
       creative_brief:
-        'Feather the input with couture plumage: ostrich plumes, marabou fluff, peacock eyes, fan spreads, headdress arcs and translucent barbs. Keep cabaret spectacle without requiring a showgirl, performer breath, curtain call or stage scene.',
+        'Feather the input with couture plumage: ostrich plumes, marabou fluff, peacock eyes, fan spreads, headdress arcs and translucent barbs. Keep spectacle as ornamental pressure, not as a showgirl body, performer pose, curtain call or stage scene.',
     },
   },
   {
@@ -515,7 +519,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Plastic fashion, pop-art materialism, bubble-texture absurdity',
       form_and_line:
-        'Circles, bubble-sphere cluster volume, inflatable-cushion silhouette, rounded-bodice geometry, air-filled dimension',
+        'Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension',
       color_palette:
         'Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white',
       lighting_setup:
@@ -529,7 +533,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers',
       creative_brief:
-        'Bubble-wrap the input with translucent domes, heat-sealed grids, crinkle film, convex highlights and inflated cushion volume. Keep pop-art absurdity without requiring bodice, dress sculpture, packaging joke or gallery object.',
+        'Bubble-wrap the input with translucent domes, heat-sealed grids, crinkle film, convex highlights and inflated cushion volume. Keep pop-art absurdity without requiring bodice shaping, dress sculpture, packaging joke, wearable object or gallery plinth framing.',
     },
   },
   {
@@ -539,21 +543,22 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cold',
     style: {
       aesthetic:
-        'Ceremonial flame couture, Capitol excess, girl-on-fire reference, controlled-combustion spectacle',
+        'Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle',
       form_and_line:
-        'Flames, flicker-tongue silhouette, cape-sweep conflagration, rising-heat verticality, ember-trail train',
+        'Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic',
       color_palette:
         'Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground',
       lighting_setup:
         'Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter',
       material_texture:
         'Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile',
-      render_quality: 'Dangerous, hot, Cinna-design spectacle, Capitol-television perfection',
-      spatial_distortion: 'Burning',
-      atmosphere: 'Powerful, magic, revolutionary-symbol awe, controlled-combustion beauty',
-      key_features: 'Flames, cape ignition, ember trail, heat shimmer, synthetic flame effect',
+      render_quality: 'Dangerous, hot, prestige-spectacle finish, broadcast-polish combustion',
+      spatial_distortion: 'None',
+      atmosphere: 'Powerful, incandescent, ceremonial, controlled-combustion awe',
+      key_features:
+        'Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges',
       creative_brief:
-        'Ignite the input with flame-couture behavior: ember trails, heat shimmer, cape-like combustion, synthetic flame fibers, gold-white cores and smoke haze. Keep Girl-on-Fire/Capitol spectacle as style anchor without requiring tribute parade, arena entrance, hemline body or battle narrative.',
+        'Ignite the input with flame-couture behavior: ember trails, heat shimmer, combustion-plume sweep, synthetic flame fibers, gold-white cores and smoke haze. Keep televised ceremonial spectacle as style pressure only; do not require a body hemline, parade entrance, arena narrative or explicit IP reenactment.',
     },
   },
   {
@@ -564,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Covered in gold, gilded-divinity fantasy, living-statue opulence',
       form_and_line:
-        'Flakes, body-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap',
+        'Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap',
       color_palette:
         'Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina',
       lighting_setup:
@@ -578,7 +583,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust',
       creative_brief:
-        'Gild the input with gold-leaf behavior: overlapping foil flakes, burnished reflection, leaf seams, mica dust, white-gold or copper-patina variation and Klimt-like luxury. Keep divine opulence without requiring skin application, temple treasury, figure contour or living-statue body.',
+        'Gild the input with gold-leaf behavior: overlapping foil flakes, burnished reflection, leaf seams, mica dust, white-gold or copper-patina variation and Klimt-like luxury. Keep divine opulence without requiring skin application, temple treasury, human figure contour or living-statue body.',
     },
   },
   {
@@ -587,9 +592,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'dry',
     style: {
-      aesthetic: 'Dress made of water, liquid-sculpture illusion, elemental-body transformation',
+      aesthetic: 'Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation',
       form_and_line:
-        'Splashes, cascade-fall drape, droplet-spray volume, surface-tension curve, sheet-flow silhouette, rippling-hem line',
+        'Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines',
       color_palette:
         'Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white',
       lighting_setup:
@@ -598,12 +603,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature',
       render_quality: 'Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry',
       spatial_distortion: 'Flowing',
-      atmosphere:
-        'Pure, fantasy, ocean-spirit serenity, water-nymph magic, dissolving-identity mystique',
+      atmosphere: 'Pure, fluid, serene, refractive, elemental, dissolving',
       key_features:
         'Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines',
       creative_brief:
-        'Make the input liquid-garment: sheet-flow drape, surface tension, arrested droplets, meniscus edges, caustic light and transparent aquamarine volume. Keep elemental transformation without requiring torso, waterfall, gown, water-nymph or underwater scene.',
+        'Make the input liquid-couture: sheet-flow drape, surface tension, arrested droplets, meniscus edges, caustic light and transparent aquamarine volume. Keep elemental transformation as fluid behavior only; do not require a torso, waterfall, gown, water nymph or underwater scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

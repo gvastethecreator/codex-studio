@@ -143,4 +143,34 @@ describe('studioEventSource', () => {
 
     await expect(waiting).resolves.toMatchObject({ id: 'job-complete', status: 'completed' });
   });
+
+  it('does not miss terminal updates emitted while the initial snapshot is loading', async () => {
+    let emit: ((job: Job) => void) | null = null;
+    vi.mocked(listStudioJobs).mockImplementationOnce(async () => {
+      const emitCallback = emit;
+      if (!emitCallback) {
+        throw new Error('Expected watchJob to subscribe before loading the initial snapshot');
+      }
+      emitCallback(createJob({ id: 'job-race', status: 'completed' }));
+      return [];
+    });
+    const stream = {
+      onJobUpdate: (_jobId: string, callback: (job: Job) => void) => {
+        emit = callback;
+        return () => {
+          emit = null;
+        };
+      },
+      onAssetAdded: () => () => {},
+      onLogAdded: () => () => {},
+      onConnectionChange: () => () => {},
+      close: () => {},
+    };
+
+    await expect(watchJob(stream, 'job-race', undefined, 5000)).resolves.toMatchObject({
+      id: 'job-race',
+      status: 'completed',
+    });
+    expect(emit).toBeNull();
+  });
 });

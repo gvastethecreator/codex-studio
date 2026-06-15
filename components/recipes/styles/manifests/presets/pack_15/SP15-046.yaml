@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Bowl geometry centers warm isotope rings while circulation paths loop like a health diagram.
   atmosphere: Wellness, civic pride, thermal luxury, and sanitized reactor unease.
   key_features: Thermal isotope rings, health-capsule forms, wave-turbine displays, hydrotherapy panels, and protocol color stripes.
-  creative_brief: >-
-    Sanitize the input with reactor-wellness calm: pool-aqua rings, citrus status lights, wet enamel, glazed tile, and
-    hydrothermal loops should feel luxurious and too perfect. Aquatic domes can appear, but the style is surplus heat
-    turned into hygienic civic comfort. Apply this corepunk genre grammar over any input: preserve the faction mood,
-    material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city,
-    vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Sanitize the input with reactor-wellness calm: pool-aqua rings, citrus status lights, wet enamel, glazed tile, and hydrothermal loops should feel luxurious and too perfect. Aquatic domes can appear, but the style is surplus heat turned into hygienic civic comfort. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - horror
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

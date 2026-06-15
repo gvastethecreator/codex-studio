@@ -186,7 +186,7 @@ describe('outputSources', () => {
     ).toEqual({ ok: false, reason: 'source_unavailable' });
   });
 
-  it('imports selected files by copying into the Studio Library and registering Catalog Entries', () => {
+  it('imports selected files by copying into the Studio Library and registering Catalog Entries', async () => {
     const root = path.join(process.cwd(), 'tmp', `output-source-import-${Date.now()}`);
     const sourceDir = path.join(root, 'source');
     const libraryDir = path.join(root, 'library');
@@ -203,7 +203,7 @@ describe('outputSources', () => {
       });
       if (!registration.ok) throw new Error(registration.reason);
 
-      const result = importExternalOutputSourceFiles({
+      const result = await importExternalOutputSourceFiles({
         storage,
         sourceId: registration.source.id,
         libraryDir,
@@ -212,14 +212,17 @@ describe('outputSources', () => {
           workspaceId: 'workspace-1',
         },
         copyFile: copyFileSync,
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
         registerCatalogImage(input) {
           const image = {
             id: `catalog-${catalogImages.length + 1}`,
             libraryId: 'library-1',
             filePath: input.filePath,
-            thumbnailPath: null,
+            thumbnailPath: input.thumbnailPath ?? null,
             publicUrl: `/library/${path.basename(input.filePath)}`,
-            thumbnailUrl: null,
+            thumbnailUrl: input.thumbnailPath
+              ? `/library/${path.basename(input.thumbnailPath)}`
+              : null,
             prompt: input.prompt ?? null,
             negativePrompt: null,
             aspectRatio: null,
@@ -263,9 +266,91 @@ describe('outputSources', () => {
       expect(catalogImages[0]).toMatchObject({
         workspaceId: 'workspace-1',
         mimeType: 'image/webp',
+        thumbnailPath: expect.stringContaining('.thumb.webp'),
         tags: ['external-output-source', 'comfy', registration.source.id],
       });
       expect(catalogImages[0].filePath).toContain(path.join('outputs', 'external'));
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it('keeps same-name nested imports from overwriting each other', async () => {
+    const root = path.join(process.cwd(), 'tmp', `output-source-import-collision-${Date.now()}`);
+    const sourceDir = path.join(root, 'source');
+    const libraryDir = path.join(root, 'library');
+    const catalogImages: CatalogImage[] = [];
+    try {
+      mkdirSync(path.join(sourceDir, 'a'), { recursive: true });
+      mkdirSync(path.join(sourceDir, 'b'), { recursive: true });
+      writeFileSync(path.join(sourceDir, 'a', 'hero.webp'), 'first');
+      writeFileSync(path.join(sourceDir, 'b', 'hero.webp'), 'second');
+      const storage = createMemoryStorage();
+      const registration = registerExternalOutputSource({
+        storage,
+        libraryDir,
+        input: { label: 'Nested source', path: sourceDir, providerId: 'comfy' },
+        pathExists: () => true,
+      });
+      if (!registration.ok) throw new Error(registration.reason);
+
+      const result = await importExternalOutputSourceFiles({
+        storage,
+        sourceId: registration.source.id,
+        libraryDir,
+        input: {
+          files: ['a/hero.webp', 'b/hero.webp'],
+        },
+        copyFile: copyFileSync,
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
+        registerCatalogImage(input) {
+          const image = {
+            id: `catalog-${catalogImages.length + 1}`,
+            libraryId: 'library-1',
+            filePath: input.filePath,
+            thumbnailPath: input.thumbnailPath ?? null,
+            publicUrl: `/library/${path.basename(input.filePath)}`,
+            thumbnailUrl: input.thumbnailPath
+              ? `/library/${path.basename(input.thumbnailPath)}`
+              : null,
+            prompt: input.prompt ?? null,
+            negativePrompt: null,
+            aspectRatio: null,
+            imageSize: null,
+            width: null,
+            height: null,
+            mimeType: input.mimeType,
+            fileSizeBytes: input.fileSizeBytes ?? null,
+            jobId: null,
+            workspaceId: input.workspaceId ?? null,
+            batchId: null,
+            recipeId: null,
+            isFavorite: false,
+            isDeleted: false,
+            deletedAt: null,
+            tags: input.tags ?? [],
+            generationConfig: input.generationConfig ?? null,
+            createdAt: '2026-05-25T00:00:00.000Z',
+          } satisfies CatalogImage;
+          catalogImages.push(image);
+          return image;
+        },
+      });
+
+      expect(result).toMatchObject({
+        ok: true,
+        result: {
+          imported: [
+            { sourceFile: 'a/hero.webp', catalogId: 'catalog-1' },
+            { sourceFile: 'b/hero.webp', catalogId: 'catalog-2' },
+          ],
+          skipped: [],
+        },
+      });
+      expect(catalogImages).toHaveLength(2);
+      expect(catalogImages[0].filePath).not.toBe(catalogImages[1].filePath);
+      expect(path.basename(catalogImages[0].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
+      expect(path.basename(catalogImages[1].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

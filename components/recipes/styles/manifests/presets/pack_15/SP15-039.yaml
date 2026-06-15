@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Axis perspective links bands, diagrams, grids, and demonstration cues like a textbook spread.
   atmosphere: Curious optimism, disciplined learning, soft propaganda, and future-facing ambition.
   key_features: Demo-reactor silhouettes, atom mural geometry, isotope growth cues, diagram panels, and lab safety color bands.
-  creative_brief: >-
-    Teach the input in atomic classroom language: sawtooth diagram bands, lemon-cream science graphics, chalk dust, atom
-    emblems, and demo-reactor silhouettes should make the future feel freshly explained. Schools or campuses can appear,
-    but the style is bright pedagogy and soft propaganda. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Teach the input in atomic classroom language: sawtooth diagram bands, lemon-cream science graphics, chalk dust, atom emblems, and demo-reactor silhouettes should make the future feel freshly explained. Schools or campuses can appear, but the style is bright pedagogy and soft propaganda. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dystopian-prison
@@ -53,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

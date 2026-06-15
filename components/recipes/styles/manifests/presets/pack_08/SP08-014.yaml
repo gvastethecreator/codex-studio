@@ -12,19 +12,18 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Military surplus styling, field-readiness doctrine, combat-proven utility silhouette
-  form_and_line: Boxy, pockets, armor, MOLLE grid, plate-carrier bulk, bloused-boot taper
+  aesthetic: Military surplus styling, field-readiness doctrine, rugged utility silhouette
+  form_and_line: Boxy utility blocks, pocket density, MOLLE grid, carrier-like bulk, bloused taper
   color_palette: Olive Drab, Camo, Desert Tan, Multicam breakup, ranger green, coyote brown
   lighting_setup: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
   material_texture: Mil-spec canvas, Cordura nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric
-  render_quality: Tough, functional, field-worn authenticity, deployment-worn veracity
+  render_quality: Tough functional finish, field-worn authenticity, surplus-grade veracity
   spatial_distortion: Bulky silhouette
   atmosphere: Serious, ready, operational tension, mission focus, silent professionalism
-  key_features: Utility pockets, magazine pouches, patrol cap, combat boots, unit patch
+  key_features: Utility pockets, webbing pouches, patrol-cap cues, combat-boot logic, patch accents
   creative_brief: >-
-    Convert the input into military-surplus utility: olive drab, camo breakup,
-    MOLLE grids, plate-carrier bulk, Cordura abrasion, unit-patch accents and
-    pocket logic. Keep readiness and field wear without requiring a soldier,
+    Convert the input into military-surplus utility: olive drab, camo breakup, MOLLE grids, carrier-like bulk, Cordura
+    abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona,
     battlefield, weapon, patrol scene or combat narrative.
 avoidRules:
   - bright

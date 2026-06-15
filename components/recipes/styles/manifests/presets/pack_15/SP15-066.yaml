@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Parallel vanishing lines create launch-vector perspective through hubs, pods, and blank signage.
   atmosphere: Speed, civic momentum, controlled danger, and commuter adrenaline.
   key_features: Open plasma rails, transfer-pod sockets, mission-fin silhouettes, service-line strokes, and safety icon clusters.
-  creative_brief: >-
-    Electrify the input as trusted public speed: plasma rails, ceramic insulators, pod sockets, safety icon clusters,
-    and cyan underdeck spill should make travel feel dangerous but organized. Rail or commons cues may appear; the style
-    is everyday motion framed like launch preparation. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Electrify the input as trusted public speed: plasma rails, ceramic insulators, pod sockets, safety icon clusters, and cyan underdeck spill should make travel feel dangerous but organized. Rail or commons cues may appear; the style is everyday motion framed like launch preparation. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - medieval
@@ -52,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

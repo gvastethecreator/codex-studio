@@ -313,6 +313,40 @@ interface StylePresetCardProps {
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
 }
 
+function resolveStyleCardImageDiagnostics({
+  activeResultImage,
+  visualState,
+}: {
+  activeResultImage: GeneratedImageWithConfig | null;
+  visualState: StylePresetVisualState | undefined;
+}) {
+  if (activeResultImage) {
+    return {
+      kind: 'result',
+      src: activeResultImage.thumbnail || activeResultImage.src || null,
+    } as const;
+  }
+
+  if (visualState?.defaultImage) {
+    return {
+      kind: visualState.defaultImageStale ? 'stale-default' : 'default',
+      src: visualState.defaultImage,
+    } as const;
+  }
+
+  if (visualState?.previewImage) {
+    return {
+      kind: 'preview',
+      src: visualState.previewImage,
+    } as const;
+  }
+
+  return {
+    kind: 'empty',
+    src: null,
+  } as const;
+}
+
 interface StylePresetGroupSectionProps {
   groupKey: string;
   title: string;
@@ -368,17 +402,6 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
     e.stopPropagation();
     onCycle(direction);
   };
-
-  if (visualState?.defaultImageStale) {
-    return (
-      <button
-        type="button"
-        onClick={() => onApply(preset)}
-        className="absolute inset-0 flex size-full cursor-pointer bg-zinc-950 disabled:cursor-not-allowed"
-        aria-label={`Apply ${preset.name}`}
-      />
-    );
-  }
 
   if (activeResultImage) {
     return (
@@ -453,6 +476,12 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   }
 
   if (visualState?.defaultImage) {
+    const staleBadge = visualState.defaultImageStale ? (
+      <div className="absolute left-2 top-2 z-20 rounded-full border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
+        Stale
+      </div>
+    ) : null;
+
     return (
       <button
         type="button"
@@ -461,10 +490,26 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       >
         <img
           src={visualState.defaultImage}
-          className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02]"
+          className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02] ${
+            visualState.defaultImageStale
+              ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
+              : 'opacity-[0.96]'
+          }`}
           alt={preset.name}
         />
-        <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+        {visualState.defaultImageStale ? (
+          <>
+            <div className="absolute inset-0 bg-zinc-950/18 transition-colors group-hover:bg-zinc-950/10" />
+            {staleBadge}
+          </>
+        ) : null}
+        <div
+          className={`absolute z-20 flex gap-1 transition-opacity ${
+            visualState.defaultImageStale
+              ? 'left-2 top-11 opacity-100 group-hover:opacity-100'
+              : 'left-2 top-2 opacity-0 group-hover:opacity-100'
+          }`}
+        >
           <div className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md">
             <RefreshCw size={14} />
           </div>
@@ -486,6 +531,9 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           alt=""
         />
         <div className="absolute inset-0 bg-zinc-950/15 transition-colors group-hover:bg-zinc-950/8" />
+        <div className="absolute left-2 top-2 z-20 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+          Preview
+        </div>
         <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
           <div
             className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-zinc-950/62 ${theme.text}`}
@@ -535,6 +583,10 @@ const StylePresetCard = React.memo(
     const resultImages = visualState?.resultImages ?? EMPTY_IMAGES;
     const hasMultipleResults = resultImages.length > 1;
     const activeResultImage = resultImages[resultIndex] ?? resultImages[0] ?? null;
+    const imageDiagnostics = resolveStyleCardImageDiagnostics({
+      activeResultImage,
+      visualState,
+    });
 
     const prevResultCountRef = useRef(resultImages.length);
     if (prevResultCountRef.current !== resultImages.length) {
@@ -614,6 +666,9 @@ const StylePresetCard = React.memo(
           }}
           data-style-preset-card={preset.id}
           data-style-category={preset.category || 'General'}
+          data-style-image-kind={imageDiagnostics.kind}
+          data-style-image-src={imageDiagnostics.src ?? ''}
+          data-style-default-stale={visualState?.defaultImageStale ? 'true' : 'false'}
           className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
             active
               ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
@@ -1147,15 +1202,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         .sort((a, b) => b.createdAt - a.createdAt);
       const defaultImageStale = isStyleDefaultImageStale(preset.id);
       const defaultImage = resolveStyleDefaultImage(preset.id);
-      const packFallbackImage = STYLE_PACK_FALLBACK_IMAGES[presetPackId];
       const categoryImage = preset.category
         ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
         : undefined;
-      const previewImage = defaultImageStale
-        ? undefined
-        : categoryImage ||
-          (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
-          packFallbackImage;
+      const previewImage =
+        categoryImage || (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined);
 
       stateMap.set(preset.id, {
         presetPackName: presetPack.name,
@@ -1163,13 +1214,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         defaultImage,
         defaultImageStale,
         previewImage,
-        exampleImageSrc: defaultImageStale
-          ? null
-          : defaultImage ||
-            previewImage ||
-            resultImages[0]?.thumbnail ||
-            resultImages[0]?.src ||
-            null,
+        exampleImageSrc:
+          defaultImage ||
+          previewImage ||
+          resultImages[0]?.thumbnail ||
+          resultImages[0]?.src ||
+          null,
       });
     });
 

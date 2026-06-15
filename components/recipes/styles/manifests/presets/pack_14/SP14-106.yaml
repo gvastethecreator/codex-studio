@@ -4,8 +4,13 @@ packId: pack_14
 name: Stone Psalm Celestial Marker
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Celestial marker language carved with hymn-like stone symbols and sacred astronomy.
   form_and_line: Ringed forms, psalmic mark bands, and viewing-aperture cues.
@@ -16,22 +21,29 @@ visualDna:
   spatial_distortion: Rising concentric rings toward a celestial aperture without requiring an observatory.
   atmosphere: Contemplation, astronomy, and sacred order.
   key_features: Psalm-like carvings, celestial apertures, star-ledger marks.
-  creative_brief: >-
-    Mark the input with stone psalm astronomy: granite mass, moon-silver rings,
-    faded-blue night glow, chiseled hymn bands, and celestial aperture cues should
-    make any subject feel liturgical and star-measured without requiring an
-    observatory, monument, stairs, telescope, or sky-viewing setup.
-avoidRules: [photoreal, neon, sketchy, watermark, text, logo, flat-perspective]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-106.webp }
+  creative_brief: 'Mark the input with stone psalm astronomy: granite mass, moon-silver rings, faded-blue night glow, chiseled hymn bands, and celestial aperture cues should make any subject feel liturgical and star-measured without requiring an observatory, monument, stairs, telescope, or sky-viewing setup.'
+avoidRules:
+  - photoreal
+  - neon
+  - sketchy
+  - watermark
+  - text
+  - logo
+  - flat-perspective
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-106.webp
 attributes:
   negativePrompt: photoreal, neon, sketchy, watermark, text, logo, flat-perspective
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_14
 name: Bronze Spear Public Oath
 category: 5. Mythic — Greek Epics
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, greek-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - greek-myth
 visualDna:
   aesthetic: Heroic civic oath-duel language under divine law and martial ceremony.
   form_and_line: Semicircle tier cues, spear colonnades, and altar-axis geometry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Martial honor, ceremony, and public tension.
   key_features: Oath altar cues, spear standards, eagle banners.
   creative_brief: Transform the input through bronze-spear public oath, where verdict and combat feel inseparable without requiring an amphitheater.
-avoidRules: [photoreal, comedic, neon-sci-fi, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-045.webp }
+avoidRules:
+  - photoreal
+  - comedic
+  - neon-sci-fi
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-045.webp
 attributes:
   negativePrompt: photoreal, comedic, neon-sci-fi, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-greek-epics,
-    categoryName: 5. Mythic — Greek Epics,
-    tags: [mythic-noir-curated-vault, mythic, greek-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-greek-epics
+  categoryName: 5. Mythic — Greek Epics
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - greek-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

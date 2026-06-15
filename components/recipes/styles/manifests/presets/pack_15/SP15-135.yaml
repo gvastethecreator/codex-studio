@@ -4,8 +4,14 @@ packId: pack_15
 name: Signal Amber Field Repair
 category: 7. Corepunk — Dieselpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - dieselpunk
 visualDna:
   aesthetic: Field-repair dieselpunk where modular patches, signal amber lamps, and grease-dark pragmatism make endurance visible.
   form_and_line: Patch-plate rectangles, wrench-arc diagonals, hose loops, rivet rows, and robust load-bearing silhouettes.
@@ -16,23 +22,30 @@ visualDna:
   spatial_distortion: Compressed maintenance-depth layers, diagonal tool-flow, and optional vehicle-scale cues without requiring a garage, battlefront, or literal repair crew.
   atmosphere: Practical, gritty, stubborn, warm, resourceful.
   key_features: Patch-plate logic, amber repair lamps, hose-loop rhythm, rivet rows, weld scars, and grease-marked material history.
-  creative_brief: >-
-    Patch the input with signal amber field repair: plate rectangles, hose-loop
-    rhythm, rivet rows, weld scars, grease-dark steel, and warm maintenance lamps
-    apply diesel utility to any subject. Vehicles, tools, field mechanics, or
-    weapon-hardware silhouettes may reinforce style when useful, without fixing
-    a workshop, garage, or war scene.
-avoidRules: [photoreal, neon-cyber, luxury-clean, magical-fantasy, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-135.webp }
+  creative_brief: 'Patch the input with signal amber field repair: plate rectangles, hose-loop rhythm, rivet rows, weld scars, grease-dark steel, and warm maintenance lamps apply diesel utility to any subject. Vehicles, tools, field mechanics, or weapon-hardware silhouettes may reinforce style when useful, without fixing a workshop, garage, or war scene.'
+avoidRules:
+  - photoreal
+  - neon-cyber
+  - luxury-clean
+  - magical-fantasy
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-135.webp
 attributes:
   negativePrompt: photoreal, neon-cyber, luxury-clean, magical-fantasy, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-dieselpunk,
-    categoryName: 7. Corepunk — Dieselpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, dieselpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-dieselpunk
+  categoryName: 7. Corepunk — Dieselpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - dieselpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

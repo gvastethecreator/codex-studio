@@ -4,8 +4,14 @@ packId: pack_14
 name: Crocodile River Pact
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Crocodile river pact language guarded by spirit totems, caution, and elemental respect.
   form_and_line: River-stair cues, shrine pylons, and rope-crossing geometry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Caution, reverence, and elemental pact.
   key_features: Covenant basin cues, crocodile masks, oath posts.
   creative_brief: Apply crocodile river pact to the input, making passage feel ritually acknowledged without requiring a ford or shrine.
-avoidRules: [photoreal, slapstick, cyberpunk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-059.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-059.webp
 attributes:
   negativePrompt: photoreal, slapstick, cyberpunk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

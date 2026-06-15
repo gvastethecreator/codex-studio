@@ -12,8 +12,8 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Lace textile detail, heirloom romance, veil-like delicacy
-  form_and_line: Intricate web, Alencon-pattern spread, scalloped-edge hem, illusion-neckline line, chapel-train sweep
+  aesthetic: Lace textile detail, heirloom romance, openwork delicacy
+  form_and_line: Intricate web, Alencon-pattern spread, scalloped-edge flow, illusion-boundary tracing, trailing relief
   color_palette: White, Black, ivory, candlelight, champagne, jet, nude-illusion
   lighting_setup: Backlit translucency, window-light diffusion, veil-glow softness, morning-light ethereality
   material_texture: >-
@@ -21,14 +21,12 @@ visualDna:
     re-embroidered motifs
   render_quality: Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage
   spatial_distortion: None
-  atmosphere: Romantic, fragile, heirloom-promise tenderness, veil-like anticipation, hush beauty
+  atmosphere: Romantic, fragile, heirloom tenderness, hush beauty
   key_features: Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail
   creative_brief: >-
     Lace the input with openwork structure: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle
-    ground and backlit translucency. Keep bridal heritage as mood, not as bride, cathedral train, chapel, veil lift or
-    wedding scene. Apply this fashion/costume grammar over any input: preserve textile behavior, silhouette logic,
-    trims, material cues, and styling attitude while avoiding a required body, portrait, runway, room, prop, role, or
-    fixed character scene.
+    ground and backlit translucency. Keep heirloom and ceremonial romance as textile mood only, not as bride, chapel,
+    veil-lift tableau, cathedral train, portrait body or wedding scene.
 avoidRules:
   - solid
 assets:

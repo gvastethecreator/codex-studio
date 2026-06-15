@@ -12,7 +12,7 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Made of shadow, void-walker mystery, darkness-incarnate form
+  aesthetic: Made of shadow, void-walker mystery, darkness-incarnate presence
   form_and_line: Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape
   color_palette: Black, void, abyss, pitch, ink, unlit, dark-matter
   lighting_setup: None, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge
@@ -25,7 +25,7 @@ visualDna:
     Transform the input into shadow-form materiality: light-absorbing void,
     velvety black depth, rim-only edge, undefined silhouette and absence as
     surface. Keep menace optional and atmospheric; do not require a humanoid
-    figure, evil character, realm scene or literal standing pose.
+    figure, evil character, realm scene, garment wearer or literal standing pose.
 avoidRules:
   - light
 assets:

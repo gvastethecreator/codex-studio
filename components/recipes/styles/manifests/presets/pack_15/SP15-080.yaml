@@ -4,8 +4,14 @@ packId: pack_15
 name: Eclipse Market Canopy
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Abstract eclipse-market style where temporary forms bloom, fold, and glow only under rare timed shadow.
   form_and_line: Folding petal geometry, circular pod shapes, signal mast lines, phase-clock rings, and radial exchange lanes.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Radial composition opens like timed petals around a shadowed celestial center.
   atmosphere: Celebration, mystery, timed scarcity, and communal anticipation.
   key_features: Folding canopy petals, phase-clock motifs, cyan-lantern webs, plum shadow centers, and radial temporary geometry.
-  creative_brief: >-
-    Bloom the input under eclipse timing: folding membrane petals, plum shadow
-    centers, cyan-lantern webs, phase-clock rings, and radial exchange lanes make
-    any subject feel temporary, ceremonial, and alive under rare shadow.
-avoidRules: [photoreal, cyberpunk-nightclub, medieval, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-080.webp }
+  creative_brief: 'Bloom the input under eclipse timing: folding membrane petals, plum shadow centers, cyan-lantern webs, phase-clock rings, and radial exchange lanes make any subject feel temporary, ceremonial, and alive under rare shadow.'
+avoidRules:
+  - photoreal
+  - cyberpunk-nightclub
+  - medieval
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-080.webp
 attributes:
   negativePrompt: photoreal, cyberpunk-nightclub, medieval, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

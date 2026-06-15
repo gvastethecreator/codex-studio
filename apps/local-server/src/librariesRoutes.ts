@@ -3,7 +3,7 @@ import { Either, Schema } from 'effect';
 import type { registerLibrary, listLibraries, removeLibrary, setDefaultLibrary } from './libraries';
 import type { publishEvent } from './events';
 
-interface LibrariesRoutesDependencies {
+export interface LibrariesRoutesDependencies {
   listLibraries: typeof listLibraries;
   registerLibrary: typeof registerLibrary;
   setDefaultLibrary: typeof setDefaultLibrary;

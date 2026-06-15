@@ -101,13 +101,28 @@ export function deleteCatalogWorkspace(id: string) {
   return true;
 }
 
-export function createWorkspaceRoutes() {
+export interface WorkspaceRoutesDependencies {
+  listCatalogWorkspaces: typeof listCatalogWorkspaces;
+  getCatalogWorkspace: typeof getCatalogWorkspace;
+  createCatalogWorkspace: typeof createCatalogWorkspace;
+  updateCatalogWorkspace: typeof updateCatalogWorkspace;
+  deleteCatalogWorkspace: typeof deleteCatalogWorkspace;
+}
+
+export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDependencies> = {}) {
+  const {
+    listCatalogWorkspaces: listWorkspaces = listCatalogWorkspaces,
+    getCatalogWorkspace: readWorkspace = getCatalogWorkspace,
+    createCatalogWorkspace: createWorkspace = createCatalogWorkspace,
+    updateCatalogWorkspace: updateWorkspace = updateCatalogWorkspace,
+    deleteCatalogWorkspace: deleteWorkspace = deleteCatalogWorkspace,
+  } = dependencies;
   const routes = new Hono();
-  routes.get('/', (c) => c.json(listCatalogWorkspaces()));
+  routes.get('/', (c) => c.json(listWorkspaces()));
   routes.post('/', async (c) => {
     const body = await c.req.json().catch(() => ({}));
     return c.json(
-      createCatalogWorkspace({
+      createWorkspace({
         name: body.name || 'Untitled Workspace',
         libraryId: body.libraryId ?? body.library_id,
         filterJson: body.filterJson ?? body.filter_json ?? {},
@@ -117,12 +132,12 @@ export function createWorkspaceRoutes() {
     );
   });
   routes.get('/:id', (c) => {
-    const workspace = getCatalogWorkspace(c.req.param('id'));
+    const workspace = readWorkspace(c.req.param('id'));
     return workspace ? c.json(workspace) : c.json({ error: 'Workspace not found' }, 404);
   });
   routes.patch('/:id', async (c) => {
     const body = await c.req.json().catch(() => ({}));
-    const workspace = updateCatalogWorkspace(c.req.param('id'), {
+    const workspace = updateWorkspace(c.req.param('id'), {
       name: body.name,
       libraryId: body.libraryId ?? body.library_id,
       filterJson: body.filterJson ?? body.filter_json,
@@ -131,7 +146,7 @@ export function createWorkspaceRoutes() {
     return workspace ? c.json(workspace) : c.json({ error: 'Workspace not found' }, 404);
   });
   routes.delete('/:id', (c) => {
-    return deleteCatalogWorkspace(c.req.param('id'))
+    return deleteWorkspace(c.req.param('id'))
       ? c.json({ ok: true })
       : c.json({ error: 'Workspace not found' }, 404);
   });

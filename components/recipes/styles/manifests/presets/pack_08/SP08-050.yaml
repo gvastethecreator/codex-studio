@@ -12,26 +12,26 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Fifth Element bold alien runway costuming, Jean-Paul Gaultier sci-fi, interstellar-couture rebellion
-  form_and_line: Strange cutouts, geometric-negative-space, body-harness wrapping, asymmetrical neckline, tab-constructed sleeves
+  aesthetic: Bold alien couture, late-90s sci-fi editorial energy, interstellar-couture rebellion
+  form_and_line: Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves
   color_palette: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
   lighting_setup: Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill
   material_texture: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
-  render_quality: Weird, futuristic, Gaultier-costume genius, space-opera runway spectacle
+  render_quality: Weird, futuristic, couture precision, space-opera editorial spectacle
   spatial_distortion: None
   atmosphere: Alien, fashion, zero-g couture attitude, cosmic glamour, rebellious artificiality
-  key_features: Straps, body harness, cutout geometry, contrast stitching, utility ring
+  key_features: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring
   creative_brief: >-
     Make the input feel designed by non-human couture logic: orange rubber,
-    clear plastic, chrome vinyl, body-harness wrapping, strange cutouts,
+    clear plastic, chrome vinyl, structural strap lattices, strange cutouts,
     tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element
-    rebellion without requiring a space terminal, alien body, lab or runway.
+    rebellion as a late-90s sci-fi-fashion energy, without requiring a space terminal, humanoid alien body, lab or runway.
 avoidRules:
-  - human clothes
+  - ordinary casualwear
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-050.webp
 attributes:
-  negativePrompt: human clothes
+  negativePrompt: ordinary casualwear
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

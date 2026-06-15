@@ -12,25 +12,22 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Cartón reciclado improvisado con unión visible y fantasía manual de bajo recurso.
-  form_and_line: Ortogonales de cajas apiladas, voladizos de solapa, trazas de cinta y aperturas recortadas a mano.
+  aesthetic: Carton reciclado improvisado con union visible, invencion low-tech y fantasia manual de bajo recurso portable.
+  form_and_line: Ortogonales apiladas, voladizos de solapa, aperturas recortadas a mano y remiendos estructurales sin cuarto infantil obligatorio.
   color_palette: >-
     Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and
-    soft fabric neutrals
-  lighting_setup: Base cálida interior, spill de lámpara, hotspots de linterna y rebote filtrado por manta en contraste bajo.
-  material_texture: Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayón.
-  render_quality: Realismo low-tech artesanal con imperfección de ensamblaje y tactilidad reciclada nostálgica.
-  spatial_distortion: Sagging
-  atmosphere: Ingeniosa, cozy y temporal, orgullosamente homemade.
-  key_features: >-
-    Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y cierres blandos
-    textiles.
+    soft neutral inserts
+  lighting_setup: Calidez domestica suave, hotspots puntuales de linterna y rebote filtrado de baja tecnologia sin fijar interior narrativo unico.
+  material_texture: Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayon.
+  render_quality: Realismo artesanal low-tech con imperfeccion de ensamblaje, tactilidad reciclada y lectura estructural clara.
+  spatial_distortion: Sagging and patched asymmetry from improvised load paths
+  atmosphere: Ingeniosa, temporal y orgullosamente homemade.
+  key_features: Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y refuerzos blandos insertados.
   creative_brief: >-
-    Aplica construcción de cartón improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes
-    manuales y marcas de low-tech craft. Debe expresar invención material barata sin escena infantil fija. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Aplica construccion de carton improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes
+    manuales y marcas de low-tech craft. Debe expresar invencion material barata sin escena infantil fija, fuerte sesgo
+    de playroom ni maqueta de cuarto cerrada. Conserva corrugado, cinta, escala improvisada y logica de carga remendada
+    sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - solid wall
 assets:

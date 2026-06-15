@@ -12,21 +12,19 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Victorian sci-fi costume, Jules Verne expedition cues, clockwork inventor regalia
-  form_and_line: Gears, goggles, corsets, pocket-watch chains, top-hat elongation, bustle-back volume
+  aesthetic: Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia
+  form_and_line: Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume
   color_palette: Bronze, Brown Leather, Copper, brass patina, burnished mahogany, verdigris green
   lighting_setup: Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection
   material_texture: Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal
-  render_quality: Detailed, costume, fantasy, cogs-and-corsets craftsmanship, retro-futurist opulence
+  render_quality: Detailed retro-industrial craftsmanship, cogs-and-brass opulence, fantasy-engineered finish
   spatial_distortion: Mechanical limbs (optional)
   atmosphere: Adventurous, retro, inventive, clockwork wonder, airship-era ambition, tea-and-tinker curiosity
   key_features: Brass accessories, aviator goggles, gear-motif jewelry, leather tool belt
   creative_brief: >-
-    Translate any input into steampunk costume engineering: brass
-    constellations, tinted goggles, leather tool-belt logic, corset or waistcoat
-    structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints
-    optional and useful, but do not force an aviator, workshop, hangar or
-    adventure scene.
+    Translate the input into steampunk engineering attire: brass constellations, tinted goggle casings, leather tool-belt
+    logic, waistcoat-or-corset structure, clockwork ornament and sepia gaslight. Keep mechanical-limb hints optional and
+    useful, but do not force an inventor persona, aviator body, workshop, hangar or expedition scene.
 avoidRules:
   - modern
   - plastic

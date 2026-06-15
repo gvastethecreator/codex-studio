@@ -12,8 +12,8 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Domesticidad pastoral semienterrada de escala humana, con umbrales circulares y calidez artesanal cotidiana.
-  form_and_line: Aberturas redondas dominantes, cubierta bermada baja, corredores arqueados suaves y planificación radial íntima.
+  aesthetic: Domesticidad pastoral semienterrada de escala humana, con umbrales redondos y calidez artesanal portable.
+  form_and_line: Aberturas redondeadas dominantes, cubierta bermada baja, corredores suaves y planificación íntima de perfil contenido.
   color_palette: >-
     Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta
     accents, soft wildflower notes
@@ -22,13 +22,12 @@ visualDna:
   render_quality: Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.
   spatial_distortion: None
   atmosphere: Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.
-  key_features: Umbral circular, cubierta vegetal, aperturas redondeadas y núcleo compacto de calor doméstico.
+  key_features: Umbral redondeado, cubierta vegetal, masa bermada y núcleo compacto de calor doméstico.
   creative_brief: >-
-    Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales circulares, proporciones bajas, materiales
-    cálidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y táctil sin depender de una
-    casa concreta. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues,
-    architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type,
-    landscape, franchise set, creature, or fixed scene.
+    Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales
+    calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de
+    hobbit-home, madriguera literaria, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada,
+    calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
   - square
   - tall

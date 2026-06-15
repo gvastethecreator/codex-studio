@@ -4,8 +4,14 @@ packId: pack_14
 name: Savannah Eclipse Civic Law
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Savannah eclipse civic law where celestial events trigger collective judgment.
   form_and_line: Circular court-stone cues, shade canopies, and flag lances.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Collective tension and cosmic judgment.
   key_features: Eclipse marker obelisk, elder-seat cues, vow fires.
   creative_brief: Transform the input through savannah eclipse civic law, making eclipse alignment feel legally binding without requiring a court.
-avoidRules: [photoreal, playful, cyberpunk, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-061.webp }
+avoidRules:
+  - photoreal
+  - playful
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-061.webp
 attributes:
   negativePrompt: photoreal, playful, cyberpunk, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

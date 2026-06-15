@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Parterres bordados, planos de seto, reflejos axiales, nodos ceremoniales y puntos de control visual lejano.',
       creative_brief:
-        'Cualquier sujeto debe someterse a eje, espejo y corte vegetal milimetrico. La imagen funciona como arquitectura horizontal: protocolo, control visual lejano y topiaria precisa reemplazan espontaneidad.',
+        'Cualquier sujeto debe someterse a eje, espejo y corte vegetal milimetrico. La imagen funciona como arquitectura horizontal: protocolo, control visual lejano y topiaria precisa reemplazan espontaneidad sin exigir jardin palaciego, fuente axial o recorrido ceremonial literal.',
     },
   },
   {
@@ -61,10 +61,9 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Landscape And Garden Systems',
     negativePrompt: 'plants, water',
     style: {
-      aesthetic:
-        'Karesansui de abstracción seca, contemplación material y economía extrema de gesto.',
+      aesthetic: 'Abstracción mineral seca, contemplación material y economía extrema de gesto.',
       form_and_line:
-        'Ondas rastrilladas de alta intención, planos vacíos dominantes y agrupaciones pétreas asimétricas de equilibrio tenso.',
+        'Ondas rastrilladas de alta intención, planos vacíos dominantes y anclajes minerales asimétricos de equilibrio tenso.',
       color_palette: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
       lighting_setup:
         'Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.',
@@ -75,9 +74,9 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Quietud enfocada, orden ritual y suspensión temporal.',
       key_features:
-        'Campos de rastrillado, anclajes pétreos, masas de musgo selectivas y contención perimetral estricta.',
+        'Campos de rastrillado, anclajes minerales, masas selectivas de materia viva y contención austera.',
       creative_brief:
-        'El estilo reduce cualquier tema a vacío activo, grava rastrillada y anclajes petreos en tension. Pocos elementos deben hacer mucho trabajo espacial, evitando decoracion zen superficial. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'El estilo reduce cualquier tema a vacío activo, superficie rastrillada y anclajes minerales en tensión. Pocos elementos deben hacer mucho trabajo espacial, evitando jardin zen literal, templo contemplativo o decoracion spa. La regla portable es materia mineral seca, ritmo rastrillado, escala contenida y silencio compositivo; no exige edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -87,25 +86,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wild forest',
     style: {
       aesthetic:
-        'Paseo ecológico postindustrial que reconcilia memoria infraestructural y vegetación urbana contemporánea.',
+        'Ecologia postindustrial de borde reutilizado, donde memoria infraestructural y vegetacion urbana coexisten como una sola gramatica de superficie.',
       form_and_line:
-        'Bandas longitudinales de circulación, alternancia hardscape-softscape y ritmo modular de borde.',
+        'Estratos lineales de borde, alternancia hardscape-softscape y modulos repetidos de retencion, pausa y filtrado.',
       color_palette:
         'Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys',
       lighting_setup:
-        'Luz difusa de tarde con rebote urbano suave y caída progresiva sobre superficies lineales.',
+        'Luz urbana difusa con rebote mineral suave y caida progresiva sobre planos, franjas y vacios reutilizados.',
       material_texture:
-        'Hormigón crudo, corten oxidado, acero cepillado, grava fina, gramíneas al viento e inserciones de madera envejecida.',
+        'Hormigon crudo, corten oxidado, acero cepillado, grava fina, gramaneas al viento e inserciones de madera envejecida.',
       render_quality:
-        'Nivel concurso de paisaje con legibilidad de reutilización y sucesión vegetal creíble.',
+        'Nivel concurso de paisaje con legibilidad de reutilizacion y sucesion vegetal creible.',
       spatial_distortion:
-        'Compressed linear perspective supporting procession, depth through repeating modules, strong path legibility',
+        'Layered edge compression, depth through repeating field modules, strong threshold legibility without a required promenade axis',
       atmosphere:
-        'Respiro cívico contemporáneo, permeable y con pátina de infraestructura heredada.',
+        'Respiro civico contemporaneo, permeable y con patina de infraestructura heredada en transicion ecologica.',
       key_features:
-        'Linealidad infraestructural, bordes estratificados, interfaces de pausa y mezclas de plantación para polinizadores.',
+        'Linealidad infraestructural, bordes estratificados, umbrales de retencion y mezclas de plantacion resiliente para polinizadores.',
       creative_brief:
-        'Cualquier composicion queda reprogramada como borde reciclado: infraestructura lineal, corten, hormigon heredado y plantacion resiliente. La ecologia debe colonizar la reticula sin borrar su pasado industrial. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Reprograma cualquier composicion como ecologia de borde reutilizado: corten, hormigon heredado, grava, madera envejecida y plantacion resiliente colonizando una reticula previa. Debe sentirse civic-reclaimed y modular, no como sendero heroico, parque lineal obligatorio o paseo con procession fija. Conserva borde reutilizado, estratos civicos, plantacion resiliente y ritmo modular sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -218,26 +217,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-049',
     name: 'Tournament Turf Strategy',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'weeds, forest',
+    negativePrompt: 'weeds, unmanaged meadow',
     style: {
       aesthetic:
-        'Formalismo de campo de golf de alto mantenimiento, donde topografía y estrategia deportiva se codifican en el terreno.',
+        'Formalismo de greensward competitivo de alto mantenimiento, donde topografia, mantenimiento y toma de decisiones se codifican en el terreno.',
       form_and_line:
-        'Corredores de fairway en cinta, parábolas de bunker, microondas de green y visuales dirigidas por routing.',
+        'Franjas de siega en cinta, concavidades mineralizadas tipo bunker, mesetas cortas de precision y corredores visuales dirigidos.',
       color_palette:
-        'Vibrant Green, Sand, Sky Blue, Pinstripe Mow lines, Water-hazard Teal, Flag Yellow',
+        'Vibrant green, sand mineral, cool sky blue, striped mow contrast, water-teal accents, hazard-marker yellow',
       lighting_setup:
-        'Neblina de mañana, ángulo bajo sobre fairway, brillo de rocío y dramatismo de sombra en bunker.',
+        'Neblina de manana, angulo bajo sobre cesped de precision, brillo de rocio y dramatismo de sombra en vacios excavados.',
       material_texture:
-        'Césped corto de corte preciso, arena rastrillada, agua lisa de hazard y señalética de alta visibilidad.',
+        'Cesped corto de corte preciso, arena rastrillada, agua lisa contenida y marcadores de mantenimiento de alta visibilidad.',
       render_quality:
-        'Visualización tournament-grade con lectura de mantenimiento y estrategia de juego a distancia.',
+        'Visualizacion precision-turf con lectura de mantenimiento, seleccion de trayectorias y control de superficie a distancia.',
       spatial_distortion: 'None',
-      atmosphere: 'Calma controlada, concentración competitiva y exclusividad curada.',
+      atmosphere:
+        'Calma controlada, concentracion competitiva y obsesion curada por la superficie.',
       key_features:
-        'Franjas de siega, bunkers de borde nítido, focos de objetivo y coreografía de hazards.',
+        'Franjas de siega, recortes de arena nitidos, focos de objetivo y coreografia de riesgo superficial.',
       creative_brief:
-        'El estilo convierte superficie en estrategia: franjas de siega, curvas de bunker, rocío, hazards y ruta de juego legible. Debe sentirse mantenido con obsesion competitiva, no como paisaje verde generico. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Convierte cualquier superficie en estrategia de precision: franjas de siega, recortes minerales, rocio, agua contenida y decisiones de recorrido legibles sin exigir hoyos, banderas, jugadores o campo deportivo literal. Debe sentirse mantenido con obsesion competitiva, no como paisaje verde generico. Conserva corte de precision, riesgo superficial, escala de mantenimiento y estrategia de recorrido sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {

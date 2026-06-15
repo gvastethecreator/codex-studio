@@ -34,7 +34,7 @@ describe('resolveStudioRuntimeFromSources', () => {
     expect(runtime).toMatchObject({
       kind: 'web',
       isDesktop: false,
-      apiBase: 'http://localhost:9999',
+      apiBase: 'http://127.0.0.1:9999',
       platform: null,
     });
   });
@@ -44,7 +44,7 @@ describe('resolveStudioRuntimeFromSources', () => {
 
     expect(runtime).toMatchObject({
       kind: 'web',
-      apiBase: 'http://localhost:17223',
+      apiBase: 'http://127.0.0.1:17223',
       isDesktop: false,
     });
   });

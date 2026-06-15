@@ -4,8 +4,13 @@ packId: pack_14
 name: Mirror Oracle Refraction Archive
 category: 1. Mythic — Symbolism
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Prophetic archive language built from mirrored fragments, uncertain memory, and refracted omens.
   form_and_line: Repeating mirror arcs, catalog-like divisions, and reflective corridor rhythms.
@@ -16,22 +21,29 @@ visualDna:
   spatial_distortion: Hall-of-mirrors depth with archival order, applicable to portraits, objects, or abstract forms.
   atmosphere: Uncertainty, memory, and hidden knowledge.
   key_features: Oracle mirror shards, catalog tablets, sealed prophecy fragments.
-  creative_brief: >-
-    Reframe any input as reflective oracle archive logic: mirror shards,
-    silvering scars, catalog divisions, indigo memory, and refracted prophecy
-    should reshape the subject without requiring rooms, libraries, tablets,
-    corridors, or literal archive furniture.
-avoidRules: [photoreal, cheerful, neon, watermark, text, logo, empty-space]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-096.webp }
+  creative_brief: 'Reframe any input as reflective oracle archive logic: mirror shards, silvering scars, catalog divisions, indigo memory, and refracted prophecy should reshape the subject without requiring rooms, libraries, tablets, corridors, or literal archive furniture.'
+avoidRules:
+  - photoreal
+  - cheerful
+  - neon
+  - watermark
+  - text
+  - logo
+  - empty-space
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-096.webp
 attributes:
   negativePrompt: photoreal, cheerful, neon, watermark, text, logo, empty-space
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-symbolism,
-    categoryName: 1. Mythic — Symbolism,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-symbolism
+  categoryName: 1. Mythic — Symbolism
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -186,37 +186,54 @@ export async function watchJob(
   signal?: AbortSignal,
   timeoutMs = 240_000,
 ) {
-  const initial = (await listStudioJobs()).find((job) => job.id === jobId);
-  if (initial && isTerminalStudioJobStatus(initial.status)) {
-    if (initial.status === 'failed' || initial.status === 'cancelled') {
-      throw createJobTerminalStatusError(initial);
-    }
-    return initial;
-  }
-
   return new Promise<Job>((resolve, reject) => {
+    let settled = false;
+    let unsubscribe: Unsubscribe = () => {};
     const timeout = globalThis.setTimeout(() => {
-      cleanup();
-      reject(new JobWatchTimeoutError(jobId));
+      settle(() => reject(new JobWatchTimeoutError(jobId)));
     }, timeoutMs);
     const abort = () => {
-      cleanup();
-      reject(new JobWatchCancelledError());
+      settle(() => reject(new JobWatchCancelledError()));
     };
-    const unsubscribe = stream.onJobUpdate(jobId, (job) => {
-      if (!isTerminalStudioJobStatus(job.status)) return;
-      cleanup();
-      if (job.status === 'failed' || job.status === 'cancelled') {
-        reject(createJobTerminalStatusError(job));
-      } else {
-        resolve(job);
-      }
-    });
+
     const cleanup = () => {
       globalThis.clearTimeout(timeout);
       signal?.removeEventListener('abort', abort);
       unsubscribe();
     };
+
+    const settle = (complete: () => void) => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      complete();
+    };
+
+    const handleJob = (job: Job) => {
+      if (!isTerminalStudioJobStatus(job.status)) return;
+      if (job.status === 'failed' || job.status === 'cancelled') {
+        settle(() => reject(createJobTerminalStatusError(job)));
+      } else {
+        settle(() => resolve(job));
+      }
+    };
+
+    unsubscribe = stream.onJobUpdate(jobId, handleJob);
+    if (settled) unsubscribe();
+
     signal?.addEventListener('abort', abort);
+    if (signal?.aborted) {
+      abort();
+      return;
+    }
+
+    void listStudioJobs()
+      .then((jobs) => {
+        const initial = jobs.find((job) => job.id === jobId);
+        if (initial) handleJob(initial);
+      })
+      .catch((error) => {
+        settle(() => reject(error));
+      });
   });
 }

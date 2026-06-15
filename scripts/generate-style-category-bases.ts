@@ -161,8 +161,22 @@ ImageGen output size: 1024x1536
 Aspect ratio: 2:3 (portrait)`);
 }
 
-const limitArg = process.argv.find((arg) => arg.startsWith('--limit='));
-const limit = limitArg ? Number(limitArg.split('=')[1]) : Number.POSITIVE_INFINITY;
+function argValue(name: string) {
+  return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
+}
+
+function pipeSet(value?: string) {
+  return new Set(
+    (value ? (value.includes('|') ? value.split('|') : [value]) : [])
+      .map((item) => item.trim())
+      .filter(Boolean),
+  );
+}
+
+const limitArg = argValue('limit');
+const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
+const packFilters = pipeSet(argValue('pack'));
+const categoryFilters = pipeSet(argValue('category'));
 
 await mkdir(categoryBasesDir, { recursive: true });
 const health = await request<{ ok: boolean }>('/api/health');
@@ -170,7 +184,9 @@ if (!health.ok) throw new Error('Local studio server is not healthy.');
 
 const projects = await request<Project[]>('/api/projects');
 const projectId = projects[0]?.id;
-const packs = await loadPacks();
+const packs = (await loadPacks()).filter(
+  (pack) => packFilters.size === 0 || packFilters.has(pack.id),
+);
 const manifestByKey = new Map((await loadManifest()).map((entry) => [entry.key, entry]));
 
 let generated = 0;
@@ -181,6 +197,8 @@ for (const pack of packs) {
     new Set(pack.presets.map((preset) => sanitizeCategory(preset.category))),
   );
   for (const category of categories) {
+    if (categoryFilters.size > 0 && !categoryFilters.has(category)) continue;
+
     const key = styleCategoryImageKey(pack.id, category);
     const destination = path.join(categoryBasesDir, `${key}${RECIPE_ASSET_EXTENSION}`);
     if (await exists(destination)) {

@@ -43,6 +43,7 @@ describe('outputSourceRoutes', () => {
         registerCatalogImage: () => {
           throw new Error('registerCatalogImage should not be called in this test');
         },
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
         publishEvent,
       });
 
@@ -90,9 +91,9 @@ describe('outputSourceRoutes', () => {
           id: 'catalog-1',
           libraryId: 'library-1',
           filePath: input.filePath,
-          thumbnailPath: null,
+          thumbnailPath: input.thumbnailPath ?? null,
           publicUrl: '/library/fake',
-          thumbnailUrl: null,
+          thumbnailUrl: input.thumbnailPath ? '/library/fake.thumb.webp' : null,
           prompt: input.prompt ?? null,
           negativePrompt: null,
           aspectRatio: null,
@@ -120,6 +121,7 @@ describe('outputSourceRoutes', () => {
         readSettings: () => createDefaultEditableStudioSettings(),
         readConfig: () => ({ libraryDir }) as ReturnType<typeof import('./config').getSettings>,
         registerCatalogImage,
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
         publishEvent,
       });
 
@@ -150,6 +152,11 @@ describe('outputSourceRoutes', () => {
         expect.objectContaining({ sourceFile: 'hero.webp', catalogId: 'catalog-1' }),
       ]);
       expect(registerCatalogImage).toHaveBeenCalled();
+      expect(registerCatalogImage).toHaveBeenCalledWith(
+        expect.objectContaining({
+          thumbnailPath: expect.stringContaining('.thumb.webp'),
+        }),
+      );
       expect(publishEvent).toHaveBeenCalledWith(
         'output-source.imported',
         expect.objectContaining({
@@ -179,9 +186,9 @@ describe('outputSourceRoutes', () => {
           id: `catalog-${registerCatalogImage.mock.calls.length + 1}`,
           libraryId: 'library-1',
           filePath: input.filePath,
-          thumbnailPath: null,
+          thumbnailPath: input.thumbnailPath ?? null,
           publicUrl: '/library/fake',
-          thumbnailUrl: null,
+          thumbnailUrl: input.thumbnailPath ? '/library/fake.thumb.webp' : null,
           prompt: input.prompt ?? null,
           negativePrompt: null,
           aspectRatio: null,
@@ -209,6 +216,7 @@ describe('outputSourceRoutes', () => {
         readSettings: () => createDefaultEditableStudioSettings(),
         readConfig: () => ({ libraryDir }) as ReturnType<typeof import('./config').getSettings>,
         registerCatalogImage,
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
         publishEvent,
       });
 
@@ -271,6 +279,7 @@ describe('outputSourceRoutes', () => {
         registerCatalogImage: () => {
           throw new Error('registerCatalogImage should not be called in this test');
         },
+        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
         publishEvent,
       });
 

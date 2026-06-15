@@ -12,6 +12,36 @@
   {
     "packId": "pack_01",
     "packName": "Photography & Realism",
+    "category": "5. Commercial And Product",
+    "key": "pack_01__commercial_and_product",
+    "file": "assets/recipes/styles/category-bases/pack_01__commercial_and_product.webp",
+    "jobId": "b424e1c9-e62e-4bf1-b40d-043fb43a2bd7",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__commercial_and_product.webp",
+    "generatedAt": "2026-06-09T05:16:20.172Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "4. Documentary And Street",
+    "key": "pack_01__documentary_and_street",
+    "file": "assets/recipes/styles/category-bases/pack_01__documentary_and_street.webp",
+    "jobId": "5166f11d-00d5-4fc2-8222-ddc967f1c556",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__documentary_and_street.webp",
+    "generatedAt": "2026-06-09T05:15:20.446Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "3. Film And Analog Process",
+    "key": "pack_01__film_and_analog_process",
+    "file": "assets/recipes/styles/category-bases/pack_01__film_and_analog_process.webp",
+    "jobId": "4f31c0b8-13f2-401a-9cf0-31e58f06971d",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__film_and_analog_process.webp",
+    "generatedAt": "2026-06-09T05:14:05.452Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
     "category": "2. Film Stocks",
     "key": "pack_01__film_stocks",
     "file": "assets/recipes/styles/category-bases/pack_01__film_stocks.webp",
@@ -42,6 +72,36 @@
   {
     "packId": "pack_01",
     "packName": "Photography & Realism",
+    "category": "2. Lighting Techniques",
+    "key": "pack_01__lighting_techniques",
+    "file": "assets/recipes/styles/category-bases/pack_01__lighting_techniques.webp",
+    "jobId": "24de9e7d-f8d3-4fe5-8577-563a170e7e7e",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__lighting_techniques.webp",
+    "generatedAt": "2026-06-09T05:11:17.054Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "6. Nature And Wildlife",
+    "key": "pack_01__nature_and_wildlife",
+    "file": "assets/recipes/styles/category-bases/pack_01__nature_and_wildlife.webp",
+    "jobId": "5d215c10-1c1f-427d-9f87-8e0d73b8e7d9",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__nature_and_wildlife.webp",
+    "generatedAt": "2026-06-09T05:17:28.914Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
+    "category": "1. Portrait And Studio",
+    "key": "pack_01__portrait_and_studio",
+    "file": "assets/recipes/styles/category-bases/pack_01__portrait_and_studio.webp",
+    "jobId": "93c42562-5a7b-4215-a51e-849dfc2f7081",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_01__portrait_and_studio.webp",
+    "generatedAt": "2026-06-09T05:06:03.754Z"
+  },
+  {
+    "packId": "pack_01",
+    "packName": "Photography & Realism",
     "category": "1. Portrait Styles",
     "key": "pack_01__portrait_styles",
     "file": "assets/recipes/styles/category-bases/pack_01__portrait_styles.webp",
@@ -58,6 +118,26 @@
     "jobId": "88174362-8732-4d84-811d-4b5b27d61372",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_02__animation_styles.webp",
     "generatedAt": "2026-05-05T20:10:42.078Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "3. Broadcast And Tv Look",
+    "key": "pack_02__broadcast_and_tv_look",
+    "file": "assets/recipes/styles/category-bases/pack_02__broadcast_and_tv_look.webp",
+    "jobId": "9c12d661-c116-4b2d-8c3a-d11920e08b47",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_02__broadcast_and_tv_look.webp",
+    "generatedAt": "2026-06-09T05:20:04.910Z"
+  },
+  {
+    "packId": "pack_02",
+    "packName": "Cinematic & Media",
+    "category": "1. Cinematic Lighting And Lenses",
+    "key": "pack_02__cinematic_lighting_and_lenses",
+    "file": "assets/recipes/styles/category-bases/pack_02__cinematic_lighting_and_lenses.webp",
+    "jobId": "260c6971-8b54-4bf7-ad9b-9fa53c623032",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_02__cinematic_lighting_and_lenses.webp",
+    "generatedAt": "2026-06-09T05:18:47.779Z"
   },
   {
     "packId": "pack_02",
@@ -112,12 +192,42 @@
   {
     "packId": "pack_03",
     "packName": "3D & CGI Rendering",
+    "category": "3. Environment And Worldbuilding",
+    "key": "pack_03__environment_and_worldbuilding",
+    "file": "assets/recipes/styles/category-bases/pack_03__environment_and_worldbuilding.webp",
+    "jobId": "f9acf3d3-5653-4fa0-84ae-13371795ef88",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_03__environment_and_worldbuilding.webp",
+    "generatedAt": "2026-06-09T05:24:51.514Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "1. Hard Surface And Industrial Cgi",
+    "key": "pack_03__hard_surface_and_industrial_cgi",
+    "file": "assets/recipes/styles/category-bases/pack_03__hard_surface_and_industrial_cgi.webp",
+    "jobId": "f005ecbe-3a34-4828-a8c5-d6eb52579919",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_03__hard_surface_and_industrial_cgi.webp",
+    "generatedAt": "2026-06-09T05:22:14.282Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
     "category": "4. Lighting & Atmosphere",
     "key": "pack_03__lighting_and_atmosphere",
     "file": "assets/recipes/styles/category-bases/pack_03__lighting_and_atmosphere.webp",
     "jobId": "1655a937-de33-4deb-bf9e-83413f68f667",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_03__lighting_and_atmosphere.webp",
     "generatedAt": "2026-05-05T20:18:20.246Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "4. Lookdev And Render Pipelines",
+    "key": "pack_03__lookdev_and_render_pipelines",
+    "file": "assets/recipes/styles/category-bases/pack_03__lookdev_and_render_pipelines.webp",
+    "jobId": "d8b13515-af27-4ee9-adfc-211b92a32019",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_03__lookdev_and_render_pipelines.webp",
+    "generatedAt": "2026-06-09T05:26:09.323Z"
   },
   {
     "packId": "pack_03",
@@ -132,12 +242,32 @@
   {
     "packId": "pack_03",
     "packName": "3D & CGI Rendering",
+    "category": "2. Organic And Character Cgi",
+    "key": "pack_03__organic_and_character_cgi",
+    "file": "assets/recipes/styles/category-bases/pack_03__organic_and_character_cgi.webp",
+    "jobId": "64a7f3dc-3899-45ab-b07f-28551b702a69",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_03__organic_and_character_cgi.webp",
+    "generatedAt": "2026-06-09T05:23:35.712Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
     "category": "1. Render Engines",
     "key": "pack_03__render_engines",
     "file": "assets/recipes/styles/category-bases/pack_03__render_engines.webp",
     "jobId": "62b6b77d-69d3-4532-a38c-e39fc39d1858",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_03__render_engines.webp",
     "generatedAt": "2026-05-05T20:14:31.154Z"
+  },
+  {
+    "packId": "pack_03",
+    "packName": "3D & CGI Rendering",
+    "category": "5. Stylized 3d",
+    "key": "pack_03__stylized_3d",
+    "file": "assets/recipes/styles/category-bases/pack_03__stylized_3d.webp",
+    "jobId": "7a098015-9696-44fb-86b7-8a0770dc255c",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_03__stylized_3d.webp",
+    "generatedAt": "2026-06-09T05:27:57.479Z"
   },
   {
     "packId": "pack_04",
@@ -152,12 +282,32 @@
   {
     "packId": "pack_04",
     "packName": "Illustration & Graphic Novel",
+    "category": "3. Childrens And Educational",
+    "key": "pack_04__childrens_and_educational",
+    "file": "assets/recipes/styles/category-bases/pack_04__childrens_and_educational.webp",
+    "jobId": "b1f4d0ad-cb1f-4f84-9033-71c2ef5b45f4",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_04__childrens_and_educational.webp",
+    "generatedAt": "2026-06-09T05:32:15.963Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
     "category": "1. Comic Book Styles",
     "key": "pack_04__comic_book_styles",
     "file": "assets/recipes/styles/category-bases/pack_04__comic_book_styles.webp",
     "jobId": "89970b46-7bb5-4b6f-94d9-b00489209bd7",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_04__comic_book_styles.webp",
     "generatedAt": "2026-05-05T20:42:07.415Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "1. Comics And Graphic Novel",
+    "key": "pack_04__comics_and_graphic_novel",
+    "file": "assets/recipes/styles/category-bases/pack_04__comics_and_graphic_novel.webp",
+    "jobId": "f49f54b7-cd52-4d2a-ab52-6a450edb1c60",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_04__comics_and_graphic_novel.webp",
+    "generatedAt": "2026-06-09T05:29:29.439Z"
   },
   {
     "packId": "pack_04",
@@ -178,6 +328,16 @@
     "jobId": "87105c1f-66ba-4cb3-88ac-5c39e0ec9af0",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_04__editorial_and_poster.webp",
     "generatedAt": "2026-05-05T20:46:29.994Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "2. Editorial Illustration",
+    "key": "pack_04__editorial_illustration",
+    "file": "assets/recipes/styles/category-bases/pack_04__editorial_illustration.webp",
+    "jobId": "9174faf3-9b25-4df2-adc6-401456c3ede5",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_04__editorial_illustration.webp",
+    "generatedAt": "2026-06-09T05:30:48.719Z"
   },
   {
     "packId": "pack_04",
@@ -392,6 +552,16 @@
   {
     "packId": "pack_08",
     "packName": "Fashion & Costume",
+    "category": "5. Fabric & Texture Focus",
+    "key": "pack_08__fabric_and_texture_focus",
+    "file": "assets/recipes/styles/category-bases/pack_08__fabric_and_texture_focus.webp",
+    "jobId": "89015371-563b-4e57-ab9f-3f30c097e47a",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_08__fabric_and_texture_focus.webp",
+    "generatedAt": "2026-06-09T05:35:37.450Z"
+  },
+  {
+    "packId": "pack_08",
+    "packName": "Fashion & Costume",
     "category": "4. Fantasy/Sci-Fi Costume",
     "key": "pack_08__fantasy_sci_fi_costume",
     "file": "assets/recipes/styles/category-bases/pack_08__fantasy_sci_fi_costume.webp",
@@ -418,5 +588,155 @@
     "jobId": "0b984156-d761-49b7-b183-31ac87e8083a",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_08__subcultures.webp",
     "generatedAt": "2026-05-05T21:34:32.978Z"
+  },
+  {
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "3. Fabric And Soft Materials",
+    "key": "pack_09__fabric_and_soft_materials",
+    "file": "assets/recipes/styles/category-bases/pack_09__fabric_and_soft_materials.webp",
+    "jobId": "77259173-d1b4-48f7-a0cc-17e69b6d65a3",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_09__fabric_and_soft_materials.webp",
+    "generatedAt": "2026-06-09T05:39:44.527Z"
+  },
+  {
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "5. Fx And Procedural Materiality",
+    "key": "pack_09__fx_and_procedural_materiality",
+    "file": "assets/recipes/styles/category-bases/pack_09__fx_and_procedural_materiality.webp",
+    "jobId": "c0f552b9-5cc5-4db6-ab7e-b2e29e6e0b58",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_09__fx_and_procedural_materiality.webp",
+    "generatedAt": "2026-06-09T05:43:12.308Z"
+  },
+  {
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "1. Metals And Minerals",
+    "key": "pack_09__metals_and_minerals",
+    "file": "assets/recipes/styles/category-bases/pack_09__metals_and_minerals.webp",
+    "jobId": "3e770ab6-fcc2-4d79-b0bd-c2df43b14831",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_09__metals_and_minerals.webp",
+    "generatedAt": "2026-06-09T05:36:55.700Z"
+  },
+  {
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "2. Organic And Bio Materials",
+    "key": "pack_09__organic_and_bio_materials",
+    "file": "assets/recipes/styles/category-bases/pack_09__organic_and_bio_materials.webp",
+    "jobId": "8b93a2e4-a69a-47dc-ad8b-44852e17410d",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_09__organic_and_bio_materials.webp",
+    "generatedAt": "2026-06-09T05:38:17.613Z"
+  },
+  {
+    "packId": "pack_09",
+    "packName": "Texture & Materiality",
+    "category": "4. Surface Wear And Aging",
+    "key": "pack_09__surface_wear_and_aging",
+    "file": "assets/recipes/styles/category-bases/pack_09__surface_wear_and_aging.webp",
+    "jobId": "a0d9f1b0-031e-451c-8f20-594ff7bc64b9",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_09__surface_wear_and_aging.webp",
+    "generatedAt": "2026-06-09T05:41:39.300Z"
+  },
+  {
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "3. Digital Glitch & Noise",
+    "key": "pack_10__digital_glitch_and_noise",
+    "file": "assets/recipes/styles/category-bases/pack_10__digital_glitch_and_noise.webp",
+    "jobId": "dc878442-dcc3-4659-a32e-ac8955f605ae",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_10__digital_glitch_and_noise.webp",
+    "generatedAt": "2026-06-09T05:51:18.697Z"
+  },
+  {
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "2. Fluid & Organic",
+    "key": "pack_10__fluid_and_organic",
+    "file": "assets/recipes/styles/category-bases/pack_10__fluid_and_organic.webp",
+    "jobId": "721b6552-5bac-49d7-9d2e-f06bbe1ade3b",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_10__fluid_and_organic.webp",
+    "generatedAt": "2026-06-09T05:46:23.180Z"
+  },
+  {
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "1. Geometric Abstraction",
+    "key": "pack_10__geometric_abstraction",
+    "file": "assets/recipes/styles/category-bases/pack_10__geometric_abstraction.webp",
+    "jobId": "72eabad4-4ff6-4edf-99fd-f60e174d3e7c",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_10__geometric_abstraction.webp",
+    "generatedAt": "2026-06-09T05:44:45.148Z"
+  },
+  {
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "5. Pattern & Texture",
+    "key": "pack_10__pattern_and_texture",
+    "file": "assets/recipes/styles/category-bases/pack_10__pattern_and_texture.webp",
+    "jobId": "cfac2150-a1aa-4238-aae8-b2672f200f9c",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_10__pattern_and_texture.webp",
+    "generatedAt": "2026-06-09T05:47:55.609Z"
+  },
+  {
+    "packId": "pack_10",
+    "packName": "Abstract & Experimental",
+    "category": "4. Surrealism & Dream",
+    "key": "pack_10__surrealism_and_dream",
+    "file": "assets/recipes/styles/category-bases/pack_10__surrealism_and_dream.webp",
+    "jobId": "44f0ee6a-aa9b-4f43-805b-a569d69c4490",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_10__surrealism_and_dream.webp",
+    "generatedAt": "2026-06-09T05:49:30.292Z"
+  },
+  {
+    "packId": "pack_11",
+    "packName": "Miscellaneous & Fun",
+    "category": "2. Food And Commercial Fun",
+    "key": "pack_11__food_and_commercial_fun",
+    "file": "assets/recipes/styles/category-bases/pack_11__food_and_commercial_fun.webp",
+    "jobId": "766f80be-e2df-4bc0-8d9b-56f91af251ad",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_11__food_and_commercial_fun.webp",
+    "generatedAt": "2026-06-09T05:53:53.682Z"
+  },
+  {
+    "packId": "pack_11",
+    "packName": "Miscellaneous & Fun",
+    "category": "5. Oddities And Novelty",
+    "key": "pack_11__oddities_and_novelty",
+    "file": "assets/recipes/styles/category-bases/pack_11__oddities_and_novelty.webp",
+    "jobId": "616af4e3-41de-48d6-a68c-fddb9b89be6a",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_11__oddities_and_novelty.webp",
+    "generatedAt": "2026-06-09T05:58:48.071Z"
+  },
+  {
+    "packId": "pack_11",
+    "packName": "Miscellaneous & Fun",
+    "category": "4. Retro Pop And Kitsch",
+    "key": "pack_11__retro_pop_and_kitsch",
+    "file": "assets/recipes/styles/category-bases/pack_11__retro_pop_and_kitsch.webp",
+    "jobId": "53923c82-4826-44f4-bb2a-c827a9b54d84",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_11__retro_pop_and_kitsch.webp",
+    "generatedAt": "2026-06-09T05:56:52.918Z"
+  },
+  {
+    "packId": "pack_11",
+    "packName": "Miscellaneous & Fun",
+    "category": "3. Science And Bio Curiosities",
+    "key": "pack_11__science_and_bio_curiosities",
+    "file": "assets/recipes/styles/category-bases/pack_11__science_and_bio_curiosities.webp",
+    "jobId": "ac99b28b-56af-402a-9456-fe614a0494c2",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_11__science_and_bio_curiosities.webp",
+    "generatedAt": "2026-06-09T05:55:23.434Z"
+  },
+  {
+    "packId": "pack_11",
+    "packName": "Miscellaneous & Fun",
+    "category": "1. Toys And Miniatures",
+    "key": "pack_11__toys_and_miniatures",
+    "file": "assets/recipes/styles/category-bases/pack_11__toys_and_miniatures.webp",
+    "jobId": "1a306bad-5541-4f8e-8bd8-30fc1472e208",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_11__toys_and_miniatures.webp",
+    "generatedAt": "2026-06-09T05:52:37.328Z"
   }
 ]

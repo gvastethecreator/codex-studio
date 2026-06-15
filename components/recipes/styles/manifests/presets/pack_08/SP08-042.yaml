@@ -17,15 +17,14 @@ visualDna:
   color_palette: Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, war-boy white, desert-ochre
   lighting_setup: Desert sun, heat-shimmer distortion, dust-storm diffusion, engine-fire orange, post-blast haze
   material_texture: Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim
-  render_quality: Survival, gritty, post-apocalypse vérité, guzzoline-desperation rawness
+  render_quality: Survival, gritty, post-apocalypse verite, guzzoline-desperation rawness
   spatial_distortion: None
   atmosphere: Desperate, tough, resource-scarcity tension, wasteland-wind solitude, witness-me ferocity
   key_features: Goggles, shoulder pad, bandolier, gas-mask, improvised armor cues
   creative_brief: >-
-    Render the input as scavenged survival couture: dirty canvas, tire rubber,
-    rusty chain, car-part armor, gauze wraps, oxidized metal and dust-choked
-    layering. Keep Mad Max resource-scarcity ferocity without requiring a
-    wasteland chase, weapon, survivor portrait or specific desert scene.
+    Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain, car-part
+    armor, gauze wraps, oxidized metal and dust-choked layering. Keep resource-scarcity ferocity
+    without requiring a wasteland chase, weapon, survivor portrait or specific desert scene.
 avoidRules:
   - clean
   - new

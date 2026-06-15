@@ -4,8 +4,14 @@ packId: pack_15
 name: Tidal Neon Causeway
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Tidal neon seapunk language lit by tide instrumentation and reef tech.
   form_and_line: Sinuous dock-like lines, floating pylons, wave-signal rails, and neon tide bands.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Curving causeway-like depth through layered marine bands.
   atmosphere: Motion, nightlife, and tidal futurity.
   key_features: Tide beacons, floating rail-link motifs, reef-lit edges, and neon current marks.
-  creative_brief: >-
-    Electrify the input with tidal neon motion: cyan wave rails, ultraviolet
-    tide bands, foam-white pylons, reef-lit edges, and salt-wet reflections make
-    any subject feel sinuous, marine, and civic at night.
-avoidRules: [photoreal, diesel, grim, watermark, text, logo, murky]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-116.webp }
+  creative_brief: 'Electrify the input with tidal neon motion: cyan wave rails, ultraviolet tide bands, foam-white pylons, reef-lit edges, and salt-wet reflections make any subject feel sinuous, marine, and civic at night.'
+avoidRules:
+  - photoreal
+  - diesel
+  - grim
+  - watermark
+  - text
+  - logo
+  - murky
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-116.webp
 attributes:
   negativePrompt: photoreal, diesel, grim, watermark, text, logo, murky
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,13 @@ packId: pack_14
 name: Moon Judge Tribunal Ring
 category: 3. Mythic — Pantheons & Legends
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic-noir]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic-noir
 visualDna:
   aesthetic: Lunar judgment language with calm tribunal authority and carved verdict symbolism.
   form_and_line: Circular seat cues, crescent dais logic, and tribunal-column rhythms.
@@ -17,17 +22,28 @@ visualDna:
   atmosphere: Judgment, ritual fairness, and nocturnal authority.
   key_features: Verdict tablets, moon crest, witness-step bands.
   creative_brief: Apply moon-judge tribunal logic to the input, letting lunar calm and ringed verdict geometry carry judgment without requiring an amphitheater.
-avoidRules: [photoreal, cute, cartoon, watermark, text, logo, clutter]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-119.webp }
+avoidRules:
+  - photoreal
+  - cute
+  - cartoon
+  - watermark
+  - text
+  - logo
+  - clutter
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-119.webp
 attributes:
   negativePrompt: photoreal, cute, cartoon, watermark, text, logo, clutter
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-pantheons,
-    categoryName: 3. Mythic — Pantheons & Legends,
-    tags: [mythic-noir-curated-vault, mythic-noir],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-pantheons
+  categoryName: 3. Mythic — Pantheons & Legends
+  tags:
+    - mythic-noir-curated-vault
+    - mythic-noir
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

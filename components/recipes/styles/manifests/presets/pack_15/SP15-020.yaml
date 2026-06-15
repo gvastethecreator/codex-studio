@@ -22,13 +22,7 @@ visualDna:
   spatial_distortion: Spiraling orbital perspective organized around implied energy flow.
   atmosphere: Controlled exhilaration, scientific pride, and uneasy wonder.
   key_features: Transparent shield layers, reactor-lime halos, turbine ribs, and public-science diagram clarity.
-  creative_brief: >-
-    Orbit the input around clean-energy wonder: transparent shielding layers, reactor-lime halos, cobalt turbine ribs,
-    ceramic-white safety edges, and diagram-clear energy flow. Promenade or reactor forms may appear as anchors, but the
-    useful style is controlled exhilaration and readable power. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  creative_brief: 'Orbit the input around clean-energy wonder: transparent shielding layers, reactor-lime halos, cobalt turbine ribs, ceramic-white safety edges, and diagram-clear energy flow. Promenade or reactor forms may appear as anchors, but the useful style is controlled exhilaration and readable power. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - dystopian-bunker-only
@@ -54,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -3215,3 +3215,4106 @@ Prioridad por riesgo de drift semántico (scene-heavy):
 - [ ] Cada preset modificado queda anotado en `docs/active/style-preset-card-regeneration-backlog.md` hasta regenerar su default card.
 - [ ] Validación de manifiestos sin errores en packs tocados.
 - [ ] `styles:verify` en verde tras la tanda de cambios.
+
+## Tanda 2026-06-07 - cierre de `pack_07`
+
+Quincuagesima septima ola manual completada (9 presets adicionales, cierre de `pack_07`):
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-015.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-016.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-017.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-018.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-019.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-020.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-022.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-023.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-024.yaml`
+
+Total manual refactorizado hasta ahora: **564 presets**.
+
+- Alcance: cierre de `pack_07` con enfasis en los residuos mas domesticos o demasiado ejemplares del pack.
+- Resultado esperado: `Victorian Mansion`, `Farmhouse Chic`, `Art Nouveau Interior` y `Victorian Painted Lady` ya no dependen de mansion, casa de campo, interior de epoca o postal preservada; `Bauhaus Interior`, `Maximalist Decor`, `Memphis Design`, `Neoclassical` y `Parametric Architecture` refuerzan contrato reusable sin caer en interior modelo o fachada heroica.
+- Ajuste puntual de calidad: `SP07-018` deja de contradecirse entre `metal galvanizado` como parte del lenguaje visual y `metal` como `negativePrompt`; el rechazo pasa a `chrome`.
+- Cards: estos IDs ya estaban anotados en `docs/active/style-preset-card-regeneration-backlog.md` como `needs-regeneration`, asi que no hizo falta agregar filas nuevas.
+- Siguiente prioridad semantica: `pack_08`, con foco inicial en `Samurai Armor`, `Viking Warrior`, `Wild West Cowboy` y `Superhero Spandex` por riesgo mas alto de sujeto obligatorio.
+
+## Tanda 2026-06-07 - `pack_08` ola 1
+
+Refuerzo semantico aplicado a `Contemporary Fashion` y `Subcultures`:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-017.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-018.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-019.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-020.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-021.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-022.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-023.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-024.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-025.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-027.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-028.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-029.yaml`
+
+Total manual refactorizado hasta ahora: **577 presets**.
+
+- Alcance: se eliminaron residuos de persona fija, setpiece social o sala obligatoria en presets de moda contemporanea y subculturas. Los anchors se conservan como actitud, silueta, textil y acabado, no como escena.
+- Resultado esperado: `Tech-Industry Uniform`, `Business Casual`, `Red Carpet Gown`, `Pastel Goth`, `Grunge (90s)`, `Lolita Fashion`, `Rockabilly`, `Hippie (60s)`, `Biker Gang`, `Skater Style`, `Cottagecore` y `Dark Academia` ya pueden transformar cualquier input sin pedir fundador, oficina, alfombra, festival, estudiante o rider concreto.
+- Cards: estos IDs ya figuraban en `docs/active/style-preset-card-regeneration-backlog.md` como `needs-regeneration`; no se agregaron filas nuevas.
+- Siguiente bloque de `pack_08`: `Historical & Fantasy` y `Fantasy Sci-Fi Costume`, donde siguen los anchors mas sensibles por sujeto obligatorio (`Samurai Armor`, `Viking Warrior`, `Wild West Cowboy`, `Superhero Spandex`).
+
+## Tanda 2026-06-07 - `pack_08` ola 2
+
+Cierre semantico de `Historical & Fantasy` y `Fantasy Sci-Fi Costume`:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-033.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-079.yaml`
+
+Total manual refactorizado hasta ahora: **593 presets**.
+
+- Alcance: se quitaron residuos de sujeto, cuerpo, duelo, rescate o setpiece obligatorio en presets historicos y fantasy/sci-fi. Los anchors siguen vivos como construccion, materialidad, acabado, simbolo y atmosfera.
+- Resultado esperado: `Samurai Armor`, `Viking Warrior`, `Wild West Cowboy` y `Superhero Spandex` ya no exigen guerrero, cowboy o heroe humano fijo; `Cybernetic Implant`, `Wizard Robes`, `Zombie Survivor`, `Mermaid Tail` e `Invisibility Cloak` pueden transformar inputs no humanos o no figurativos sin perder identidad.
+- Cards: estos IDs ya figuraban en `docs/active/style-preset-card-regeneration-backlog.md` como `needs-regeneration`; no se agregaron filas nuevas.
+- Estado del frente semantico: `pack_07` y `pack_08` quedan sin presets pendientes de reauditoria documental una vez que cierre la validacion tecnica de esta ronda.
+
+## Tanda 2026-06-08 - `pack_14` sondeo visual
+
+Primera ola operativa sobre default cards de `pack_14`:
+
+- Preflight real: `scripts/generate-style-defaults.ts` no arrancaba hasta levantar `dev:server` y luego `POST /api/app-server/start`; el primer intento fallido fue `ConnectionRefused` sobre `http://localhost:17223/api/health`.
+- Regeneracion cerrada con materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-001.webp`
+  - `assets/recipes/styles/defaults/SP14-002.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` para `SP14-001` y `SP14-002`, ya con nombres actuales (`Eclipse Reliquary Processional`, `Velvet Relic Conservation Noir`).
+- Hallazgo operativo: un lote sobre `SP14-003..008` mostro que el worker puede terminar jobs despues del timeout del CLI (`timed out after 150000 ms while waiting in local studio.sqlite`). En esos casos el backend llega a `completed`, pero si el CLI corta antes, el `.webp` del repo y `manifest-pack_14.json` pueden quedar stale.
+- Recuperacion aplicada despues del sondeo: `SP14-003..008` quedaron materializados desde los PNGs reales guardados en `C:\Users\cristian\.codex\generated_images\019ea4f0-0591-71f3-8459-00c8e38ca618\`, con checkpoint actualizado a nombres actuales (`Broken Neon Saint Icon`, `Glass-Thorn Warden Botany`, `Petrified Banquet Etiquette`, `Ash-Crown Oracle Decree`, `Moonsteel Relic Infiltration`, `Funeral Rose Psychopomp`).
+- Fix de tooling en la misma ronda:
+  - `scripts/backfill-style-preset-taxonomy.ts` ahora usa existencia real de archivo para `hasDefaultImage`, no solo `assets.defaultImage`.
+  - `scripts/validate-style-preset-manifests.ts` ahora reporta coverage real por archivo existente, no coverage falso por path configurado.
+  - Nuevo test focal: `scripts/style-default-image-state.test.ts`.
+- Estado de salida de esta tanda:
+  - `pack_14` regenerado y materializado en repo: `8` presets (`SP14-001..008`)
+  - `pack_14` `stale_existing`: `0`
+  - `pack_14` todavia `missing`: `115` presets
+  - coverage real actual: `pack_14 defaultImages=8/123`, `pack_15 defaultImages=8/137`
+- Hallazgo residual de tooling corregido: el coverage real tambien destapo deuda fuera del frente prioritario (`pack_01 defaultImages=81/87`, `pack_02 defaultImages=120/128`), asi que futuras rondas no deben confiar en counts viejos generados solo por `assets.defaultImage`.
+- Backlog sincronizado en `docs/active/style-preset-card-regeneration-backlog.md` con el cierre de `SP14-001..008` y la distincion actual entre `regenerated_current` y `missing`.
+
+## Tanda 2026-06-08 - `pack_14` ola 2
+
+Segunda microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-009.webp`
+  - `assets/recipes/styles/defaults/SP14-010.webp`
+  - `assets/recipes/styles/defaults/SP14-011.webp`
+  - `assets/recipes/styles/defaults/SP14-012.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-009..012`.
+- `SP14-010` entro una vez en `status needs_review`, pero salio limpio en retry y no necesito recovery manual desde cache/transcripts.
+- Taxonomy de `pack_14` rebackfilleada despues de materializar los cuatro `.webp`.
+- Coverage real secuencial verificado:
+  - `pack_14 defaultImages=12/123`
+  - `pack_14 missingDefaultImages=111`
+- Control visual rapido de la tanda: las cuatro cards quedaron utilizables y legibles como mythic noir; no hubo que descartar ninguna por drift obvio o por fallo de materializacion.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=12`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=111`
+
+## Tanda 2026-06-08 - `pack_14` ola 3
+
+Tercera microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-013.webp`
+  - `assets/recipes/styles/defaults/SP14-014.webp`
+  - `assets/recipes/styles/defaults/SP14-015.webp`
+  - `assets/recipes/styles/defaults/SP14-016.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-013..016`.
+- `SP14-016` mostro el primer bloqueo de contenido real de esta frente: `status needs_review` persistente en tres intentos consecutivos.
+- Mitigacion aplicada sin cambiar identidad del preset:
+  - `components/recipes/styles/manifests/presets/pack_14/SP14-016.yaml`
+  - `sacrificial gold` -> `ceremonial gold`
+  - `sacrifice` -> `offering rite`
+- Despues del ajuste, `SP14-016` materializo correctamente tras dos retries y un tercer intento exitoso.
+- Coverage real secuencial verificado:
+  - `pack_14 defaultImages=16/123`
+  - `pack_14 missingDefaultImages=107`
+- Control visual rapido de la tanda: `SP14-013..016` quedaron utilizables y legibles; `SP14-014` y `SP14-015` siguen algo mas sujeto/escena-cargados que la media, pero no ameritan descarte.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=16`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=107`
+
+## Tanda 2026-06-08 - `pack_14` ola 4
+
+Cuarta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-017.webp`
+  - `assets/recipes/styles/defaults/SP14-018.webp`
+  - `assets/recipes/styles/defaults/SP14-019.webp`
+  - `assets/recipes/styles/defaults/SP14-020.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-017..020`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=20/123`
+  - `pack_14 missingDefaultImages=103`
+- Control visual rapido:
+  - `SP14-017`, `SP14-018` y `SP14-020` quedaron firmes para el frente mythic noir.
+  - `SP14-019` quedo un poco mas literal/scene-heavy que el ideal del preset, pero todavia sirve como default card operativa y no amerita reroll inmediato.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=20`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=103`
+
+## Tanda 2026-06-08 - `pack_14` ola 5
+
+Quinta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-021.webp`
+  - `assets/recipes/styles/defaults/SP14-022.webp`
+  - `assets/recipes/styles/defaults/SP14-023.webp`
+  - `assets/recipes/styles/defaults/SP14-024.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-021..024`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=24/123`
+  - `pack_14 missingDefaultImages=99`
+- Control visual rapido:
+  - `SP14-021..023` quedaron bien anclados dentro de la familia mythic noir.
+  - `SP14-024` quedo mas personaje-especifico que ideal, pero sigue siendo una default card operativa para abrir la familia `Japanese Yokai & Kami`.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=24`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=99`
+
+## Tanda 2026-06-08 - `pack_14` ola 6
+
+Sexta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-025.webp`
+  - `assets/recipes/styles/defaults/SP14-026.webp`
+  - `assets/recipes/styles/defaults/SP14-027.webp`
+  - `assets/recipes/styles/defaults/SP14-028.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-025..028`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=28/123`
+  - `pack_14 missingDefaultImages=95`
+- Control visual rapido:
+  - `SP14-026` y `SP14-027` quedaron fuertes dentro de las familias `Japanese Yokai & Kami` y `Norse Sagas`.
+  - `SP14-025` y `SP14-028` quedaron algo mas personaje-especificos de lo ideal, pero siguen siendo default cards operativas.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=28`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=95`
+
+## Tanda 2026-06-08 - `pack_14` ola 7
+
+Septima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-029.webp`
+  - `assets/recipes/styles/defaults/SP14-030.webp`
+  - `assets/recipes/styles/defaults/SP14-031.webp`
+  - `assets/recipes/styles/defaults/SP14-032.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-029..032`.
+- Mitigacion preventiva aplicada antes de generar:
+  - `components/recipes/styles/manifests/presets/pack_14/SP14-032.yaml`
+  - `contest, sacrifice, and cosmic order` -> `contest, ceremonial offering, and cosmic order`
+- Coverage real verificado:
+  - `pack_14 defaultImages=32/123`
+  - `pack_14 missingDefaultImages=91`
+- Control visual rapido:
+  - `SP14-029` quedo especialmente fuerte.
+  - `SP14-030` y `SP14-032` quedaron algo mas personaje-especificos que ideal, pero siguen siendo default cards operativas.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=32`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=91`
+
+## Tanda 2026-06-08 - `pack_14` ola 8
+
+Octava microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-033.webp`
+  - `assets/recipes/styles/defaults/SP14-034.webp`
+  - `assets/recipes/styles/defaults/SP14-035.webp`
+  - `assets/recipes/styles/defaults/SP14-036.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-033..036`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=36/123`
+  - `pack_14 missingDefaultImages=87`
+- Control visual rapido:
+  - `SP14-035` quedo como la pieza mas equilibrada del lote.
+  - `SP14-033`, `SP14-034` y `SP14-036` quedaron mas literales/escenicos que ideal, pero siguen siendo default cards operativas.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=36`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=87`
+
+## Tanda 2026-06-08 - `pack_14` ola 9
+
+Novena microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-037.webp`
+  - `assets/recipes/styles/defaults/SP14-038.webp`
+  - `assets/recipes/styles/defaults/SP14-039.webp`
+  - `assets/recipes/styles/defaults/SP14-040.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-037..040`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=40/123`
+  - `pack_14 missingDefaultImages=83`
+- Control visual rapido:
+  - `SP14-037..040` quedaron utilizables dentro de la familia mythic noir.
+- Nota operativa:
+  - si la UI sigue sin mostrarlas, el primer sospechoso es el catalogo estatico de `lib/recipeAssetCatalog.ts` via `import.meta.glob('../assets/recipes/styles/defaults/*.webp', { eager: true })`; puede requerir reinicio del frontend activo para ver archivos nuevos.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=40`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=83`
+
+## Tanda 2026-06-08 - `pack_14` ola 10
+
+Decima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-041.webp`
+  - `assets/recipes/styles/defaults/SP14-042.webp`
+  - `assets/recipes/styles/defaults/SP14-043.webp`
+  - `assets/recipes/styles/defaults/SP14-044.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-041..044`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=44/123`
+  - `pack_14 missingDefaultImages=79`
+- Control visual rapido:
+  - `SP14-041` y `SP14-044` quedaron fuertes para abrir familia.
+  - `SP14-042` y `SP14-043` quedaron algo mas personaje/escena-especificas que ideal, pero siguen siendo default cards operativas.
+- Nota operativa:
+  - `scripts/generate-style-defaults.ts` agoto timeout del CLI en esta tanda, pero worker local siguio y termino bien; cierre real se confirmo por `.webp` materializados + checkpoint nuevo.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=44`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=79`
+
+## Tanda 2026-06-08 - `pack_14` ola 11
+
+Undecima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-045.webp`
+  - `assets/recipes/styles/defaults/SP14-046.webp`
+  - `assets/recipes/styles/defaults/SP14-047.webp`
+  - `assets/recipes/styles/defaults/SP14-048.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-045..048`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=48/123`
+  - `pack_14 missingDefaultImages=75`
+- Control visual rapido:
+  - `SP14-045` y `SP14-048` quedaron fuertes.
+  - `SP14-046` quedo intensa y literal, pero usable.
+  - `SP14-047` quedo algo mas escena-especifica que ideal, pero operativa.
+- Nota operativa:
+  - igual que la tanda previa, `scripts/generate-style-defaults.ts` agoto timeout del CLI, pero worker local siguio y termino bien; cierre real se confirmo por `.webp` materializados + checkpoint nuevo.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=48`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=75`
+
+## Tanda 2026-06-08 - `pack_14` ola 12
+
+Duodecima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-049.webp`
+  - `assets/recipes/styles/defaults/SP14-050.webp`
+  - `assets/recipes/styles/defaults/SP14-051.webp`
+  - `assets/recipes/styles/defaults/SP14-052.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-049..052`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=52/123`
+  - `pack_14 missingDefaultImages=71`
+- Control visual rapido:
+  - `SP14-050` y `SP14-052` quedaron especialmente fuertes.
+  - `SP14-049` y `SP14-051` siguen mas hero-shot/figura centrada que ideal, pero operativas.
+- Regla nueva aplicada desde esta tanda:
+  - `scripts/style-default-utils.ts` ahora agrega al final del prompt una directiva global de denoise y control de microdetalle para evitar ruido, oversharpening, crunchy micro-contrast, y exceso de ultra-fine detail.
+- Nota operativa:
+  - lote inicial `SP14-049..052` tambien agoto timeout del CLI; `SP14-049..051` cerraron por worker en background y `SP14-052` se rerunneo fino en una segunda pasada.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=52`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=71`
+
+## Tanda 2026-06-08 - `pack_14` ola 13
+
+Decimotercera microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-053.webp`
+  - `assets/recipes/styles/defaults/SP14-054.webp`
+  - `assets/recipes/styles/defaults/SP14-055.webp`
+  - `assets/recipes/styles/defaults/SP14-056.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-053..056`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=56/123`
+  - `pack_14 missingDefaultImages=67`
+- Control visual rapido:
+  - `SP14-053` y `SP14-056` quedaron especialmente fuertes.
+  - `SP14-054` y `SP14-055` siguen mas figura-centradas que ideal, pero operativas.
+- Nota operativa:
+  - incluso con timeout mas largo, el lote inicial agoto la ventana del CLI. `SP14-053..055` cerraron por worker en background y `SP14-056` completo dentro de la espera corta posterior.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=56`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=67`
+
+## Tanda 2026-06-08 - `pack_14` ola 14
+
+Decimocuarta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-057.webp`
+  - `assets/recipes/styles/defaults/SP14-058.webp`
+  - `assets/recipes/styles/defaults/SP14-059.webp`
+  - `assets/recipes/styles/defaults/SP14-060.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-057..060`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=60/123`
+  - `pack_14 missingDefaultImages=63`
+- Control visual rapido:
+  - `SP14-057`, `SP14-059`, y `SP14-060` quedaron fuertes.
+  - `SP14-058` quedo mas literal/entronizado que ideal, pero operativa.
+- Nota operativa:
+  - con timeout mas largo, esta tanda si logro cerrar completa dentro de un solo intento del CLI.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=60`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=63`
+
+## Tanda 2026-06-08 - `pack_14` ola 15
+
+Decimoquinta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-061.webp`
+  - `assets/recipes/styles/defaults/SP14-062.webp`
+  - `assets/recipes/styles/defaults/SP14-063.webp`
+  - `assets/recipes/styles/defaults/SP14-064.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-061..064`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=64/123`
+  - `pack_14 missingDefaultImages=59`
+- Control visual rapido:
+  - `SP14-061`, `SP14-062`, `SP14-063`, y `SP14-064` quedaron fuertes.
+  - `SP14-061` sigue algo mas figura-centrada que ideal, pero limpia y operativa.
+- Nota operativa:
+  - con timeout alto, esta tanda tambien cerro completa dentro de un solo intento del CLI.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=64`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=59`
+
+## Tanda 2026-06-08 - `pack_14` ola 16
+
+Decimosexta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-065.webp`
+  - `assets/recipes/styles/defaults/SP14-066.webp`
+  - `assets/recipes/styles/defaults/SP14-067.webp`
+  - `assets/recipes/styles/defaults/SP14-068.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-065..068`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=68/123`
+  - `pack_14 missingDefaultImages=55`
+- Control visual rapido:
+  - `SP14-065` y `SP14-066` quedaron fuertes y limpios.
+  - `SP14-067` quedo elegante, aunque mas hero-shot de lo ideal.
+  - `SP14-068` quedo mas literal y council-heavy que ideal, pero sigue operativa como default card.
+- Nota operativa:
+  - esta tanda tambien cerro completa dentro de un solo intento del CLI.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=68`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=55`
+
+## Tanda 2026-06-08 - `pack_14` ola 17
+
+Decimoséptima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-069.webp`
+  - `assets/recipes/styles/defaults/SP14-070.webp`
+  - `assets/recipes/styles/defaults/SP14-071.webp`
+  - `assets/recipes/styles/defaults/SP14-072.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-069..072`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=72/123`
+  - `pack_14 missingDefaultImages=51`
+- Control visual rapido:
+  - `SP14-069` y `SP14-072` quedaron firmes.
+  - `SP14-070` y `SP14-071` quedaron mas narrativas y figura-cargadas que ideal, pero siguen operativas como default cards.
+- Nota operativa:
+  - lote inicial `SP14-069..072` agoto la ventana del CLI.
+  - `SP14-069..071` quedaron materializados igual; `SP14-072` requirio rerun fino y luego cerro bien.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=72`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=51`
+
+## Tanda 2026-06-08 - `pack_14` ola 18
+
+Decimoctava microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-073.webp`
+  - `assets/recipes/styles/defaults/SP14-074.webp`
+  - `assets/recipes/styles/defaults/SP14-075.webp`
+  - `assets/recipes/styles/defaults/SP14-076.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-073..076`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=76/123`
+  - `pack_14 missingDefaultImages=47`
+- Control visual rapido:
+  - `SP14-074`, `SP14-075`, y `SP14-076` quedaron fuertes.
+  - `SP14-073` quedo mas agresiva y literal que ideal, pero sigue operativa como default card.
+- Nota operativa:
+  - esta tanda cerro completa dentro de un solo intento del CLI.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=76`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=47`
+
+## Tanda 2026-06-08 - `pack_14` ola 19
+
+Decimonovena microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-077.webp`
+  - `assets/recipes/styles/defaults/SP14-078.webp`
+  - `assets/recipes/styles/defaults/SP14-079.webp`
+  - `assets/recipes/styles/defaults/SP14-080.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-077..080`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=80/123`
+  - `pack_14 missingDefaultImages=43`
+- Control visual rapido:
+  - `SP14-079` y `SP14-080` quedaron fuertes.
+  - `SP14-077` y `SP14-078` quedaron mas literales/narrativas que ideal, pero siguen operativas como default cards.
+- Nota operativa:
+  - lote inicial `SP14-077..080` agoto la ventana del CLI.
+  - `SP14-077` y `SP14-078` quedaron listos en la primera pasada.
+  - `SP14-079` y `SP14-080` cerraron via worker en background durante rerun fino del sublote.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=80`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=43`
+
+## Tanda 2026-06-08 - `pack_14` ola 20
+
+Vigesima microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-081.webp`
+  - `assets/recipes/styles/defaults/SP14-082.webp`
+  - `assets/recipes/styles/defaults/SP14-083.webp`
+  - `assets/recipes/styles/defaults/SP14-084.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-081..084`.
+- Ajustes puntuales para destrabar render:
+  - [SP14-083.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-083.yaml)
+  - [SP14-084.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-084.yaml)
+- Coverage real verificado:
+  - `pack_14 defaultImages=84/123`
+  - `pack_14 missingDefaultImages=39`
+- Control visual rapido:
+  - `SP14-081`, `SP14-082`, y `SP14-083` quedaron fuertes.
+  - `SP14-084` quedo mas literal/escenica que ideal, pero sigue operativa como default card.
+- Nota operativa:
+  - lote inicial `SP14-081..084` agoto la ventana del CLI.
+  - `SP14-081` y `SP14-082` cerraron en la primera pasada.
+  - `SP14-083` y `SP14-084` mostraron bloqueo repetido por `Timed out waiting for Codex notification` y `Codex app-server socket closed` / `is not open`.
+  - simplificar la densidad semantica de `SP14-083` y `SP14-084`, luego rerun secuencial con workers limpios, destrabo ambas.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=84`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=39`
+
+## Tanda 2026-06-08 - `pack_14` ola 21
+
+Vigesimoprimera microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-085.webp`
+  - `assets/recipes/styles/defaults/SP14-086.webp`
+  - `assets/recipes/styles/defaults/SP14-087.webp`
+  - `assets/recipes/styles/defaults/SP14-088.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-085..088`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=88/123`
+  - `pack_14 missingDefaultImages=35`
+- Control visual rapido:
+  - `SP14-085`, `SP14-086`, y `SP14-088` quedaron fuertes.
+  - `SP14-087` quedo mas literal y serena que ideal, pero sigue operativa como default card.
+- Nota operativa:
+  - pasar a generacion secuencial por preset redujo inestabilidad de `app-server` en esta categoria.
+  - `SP14-087` pidio retry interno por `needs_review`, pero cerro dentro del mismo comando.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=88`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=35`
+
+## Tanda 2026-06-08 - `pack_14` ola 22
+
+Vigesimosegunda microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-089.webp`
+  - `assets/recipes/styles/defaults/SP14-090.webp`
+  - `assets/recipes/styles/defaults/SP14-091.webp`
+  - `assets/recipes/styles/defaults/SP14-092.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-089..092`.
+- Ajuste puntual para bajar scene drift de interior:
+  - [SP14-092.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-092.yaml)
+- Coverage real verificado:
+  - `pack_14 defaultImages=92/123`
+  - `pack_14 missingDefaultImages=31`
+- Control visual rapido:
+  - `SP14-089`, `SP14-090`, y `SP14-091` quedaron fuertes.
+  - `SP14-092` mejoro tras reroll, aunque sigue algo mas interior/escenica que ideal.
+- Nota operativa:
+  - generacion secuencial por preset volvio a funcionar estable.
+  - `SP14-090` pidio retry interno por `needs_review`, pero cerro dentro del mismo comando.
+  - `SP14-092` recibio refuerzo contra drift de interior domestico antes del reroll final.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=92`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=31`
+
+## Tanda 2026-06-08 - `pack_14` ola 23
+
+Vigesimotercera microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-093.webp`
+  - `assets/recipes/styles/defaults/SP14-094.webp`
+  - `assets/recipes/styles/defaults/SP14-095.webp`
+  - `assets/recipes/styles/defaults/SP14-096.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-093..096`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=96/123`
+  - `pack_14 missingDefaultImages=27`
+- Control visual rapido:
+  - `SP14-093` y `SP14-095` quedaron fuertes y limpias.
+  - `SP14-094` y `SP14-096` quedaron mas escenicas/archivo de lo ideal, pero siguen operativas como default cards.
+- Nota operativa:
+  - la estrategia secuencial por preset siguio estable.
+  - los cuatro comandos agotaron la ventana del CLI, pero cada preset termino materializado por worker en background y quedo reflejado en checkpoint real antes de cerrarlo.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=96`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=27`
+
+## Tanda 2026-06-08 - `pack_14` ola 24
+
+Vigesimocuarta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-097.webp`
+  - `assets/recipes/styles/defaults/SP14-098.webp`
+  - `assets/recipes/styles/defaults/SP14-099.webp`
+  - `assets/recipes/styles/defaults/SP14-100.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-097..100`.
+- Ajustes puntuales para bajar convergencia y scene drift:
+  - [SP14-098.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-098.yaml)
+  - [SP14-100.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-100.yaml)
+- Coverage real verificado:
+  - `pack_14 defaultImages=100/123`
+  - `pack_14 missingDefaultImages=23`
+- Control visual rapido:
+  - `SP14-097` y `SP14-098` quedaron fuertes y diferenciadas.
+  - `SP14-099` quedo mas literal con linterna central, pero sigue operativa.
+  - `SP14-100` mejoro tras reroll, aunque todavia conserva demasiado drift de invernadero/jardin literal.
+- Nota operativa:
+  - la estrategia secuencial por preset siguio estable.
+  - los cuatro comandos agotaron la ventana del CLI, pero cada preset termino materializado por worker en background y quedo reflejado en checkpoint real antes de cerrarlo.
+  - `SP14-098` necesito dos reruns para escapar de convergencia con `SP14-097`.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=100`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=23`
+
+## Tanda 2026-06-08 - `pack_14` ola 25
+
+Vigesimoquinta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-101.webp`
+  - `assets/recipes/styles/defaults/SP14-102.webp`
+  - `assets/recipes/styles/defaults/SP14-103.webp`
+  - `assets/recipes/styles/defaults/SP14-104.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-101..104`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=104/123`
+  - `pack_14 missingDefaultImages=19`
+- Control visual rapido:
+  - `SP14-101` quedo fuerte.
+  - `SP14-102` quedo mas escena/estacion que ideal.
+  - `SP14-103` quedo bastante hall/ritual-space.
+  - `SP14-104` quedo bastante mesa/estudio astronomico.
+  - las tres siguen operativas, pero quedan como candidatas a pulido fino si luego hacemos pasada de cards demasiado literales.
+- Nota operativa:
+  - `SP14-101` cerro entero dentro del CLI, sin timeout.
+  - `SP14-102`, `SP14-103`, y `SP14-104` agotaron la ventana del CLI, pero terminaron materializadas por worker en background y quedaron reflejadas en checkpoint real antes de cerrarlo.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=104`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=19`
+
+## Tanda 2026-06-08 - `pack_14` ola 26
+
+Vigesimosexta microtanda visual cerrada sobre `pack_14`:
+
+- Regeneracion directa y materializacion completa:
+  - `assets/recipes/styles/defaults/SP14-105.webp`
+  - `assets/recipes/styles/defaults/SP14-106.webp`
+  - `assets/recipes/styles/defaults/SP14-107.webp`
+  - `assets/recipes/styles/defaults/SP14-108.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` con jobs nuevos para `SP14-105..108`.
+- Ajuste puntual para bajar convergencia:
+  - [SP14-108.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-108.yaml)
+- Coverage real verificado:
+  - `pack_14 defaultImages=108/123`
+  - `pack_14 missingDefaultImages=15`
+- Control visual rapido:
+  - `SP14-105` quedo bastante escalera/ascenso literal, pero usable.
+  - `SP14-106` quedo limpio, aunque muy monumento/observatorio.
+  - `SP14-107` quedo muy objeto central con velas negras, pero dentro del frente ritual noir.
+  - `SP14-108` mejoro tras reroll y se separo de `SP14-107`, aunque sigue bastante invernadero/procesion literal.
+- Nota operativa:
+  - todos menos `SP14-105` agotaron o rozaron la ventana del CLI y terminaron de materializarse via worker en background.
+  - `SP14-108` necesito reroll con refuerzo anti-convergencia para salir del mismo motivo base de `SP14-107`.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=108`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=15`
+
+## Tanda 2026-06-08 - `pack_14` ola 27 parcial
+
+Microtanda parcial sobre `pack_14`:
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP14-109.webp`
+  - `assets/recipes/styles/defaults/SP14-111.webp`
+  - `assets/recipes/styles/defaults/SP14-112.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` para `SP14-109`, `SP14-111`, y `SP14-112`.
+- Ajuste puntual para bajar drift domestico:
+  - [SP14-109.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_14/SP14-109.yaml)
+- Coverage real verificado:
+  - `pack_14 defaultImages=111/123`
+  - `pack_14 missingDefaultImages=12`
+- Control visual rapido:
+  - `SP14-109` mejoro tras reroll, aunque sigue algo interior limpia.
+  - `SP14-111` quedo usable, aunque algo drape-studio literal.
+  - `SP14-112` quedo usable, aunque bastante puente/salon velado y scene-heavy.
+- Bloqueo puntual:
+  - `SP14-110` no se cerro en esta ronda.
+  - evidencia: multiples jobs `needs_review` consecutivos y ningun `.webp` + checkpoint materializado.
+  - no la cuento como cerrada.
+- Nota operativa:
+  - `SP14-109` cerro dentro del CLI en reroll despues del ajuste anti-bedroom.
+  - `SP14-111` y `SP14-112` agotaron la ventana del CLI, pero terminaron materializadas via worker en background.
+  - suffix global de denoise siguio empujando cards mas limpias, con menos ruido y menos detalle ultra fino sucio.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=111`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=12`
+
+## Tanda 2026-06-08 - `pack_14` destrabe `SP14-110`
+
+Bloqueo puntual resuelto sin cambiar nombre visible del preset:
+
+- Cambios tecnicos:
+  - [style-default-utils.ts](/D:/DEV/codex-studio/scripts/style-default-utils.ts) ahora expone saneo de nombre para canal de generacion.
+  - [generate-style-defaults.ts](/D:/DEV/codex-studio/scripts/generate-style-defaults.ts) usa alias seguro en `TARGET STYLE` y `recognizable as`, sin tocar `preset.name`.
+  - test focal agregado en [style-default-utils.test.ts](/D:/DEV/codex-studio/scripts/style-default-utils.test.ts).
+- Resultado:
+  - `SP14-110` materializada en `assets/recipes/styles/defaults/SP14-110.webp`.
+  - checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json`.
+  - job de cierre: `2d7fe0bf-5430-416e-8a91-e995da545ea2`.
+  - prompt efectivo de cierre uso `TARGET STYLE: OATH SEAL BINDING`; los intentos previos con `OATH KNIFE BINDING` eran los que caian en `needs_review`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=112/123`
+  - `pack_14 missingDefaultImages=11`
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=112`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=11`
+
+## Tanda 2026-06-08 - `pack_14` ola 28 parcial
+
+Microtanda parcial siguiente:
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP14-113.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` para `SP14-113`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=113/123`
+  - `pack_14 missingDefaultImages=10`
+- Control visual rapido:
+  - `SP14-113` quedo usable y leible como `Silent Bell Warning`.
+- Bloqueo puntual:
+  - `SP14-114` y `SP14-115` no se cerraron en esta ronda.
+  - evidencia: ambos jobs quedaron congelados en `running` sin actualizar y terminaron cancelados.
+  - `SP14-116` no se materializo dentro de la ventana original, pero mas tarde aparecio materializada en background y con checkpoint nuevo.
+- Hallazgo de pipeline posterior:
+  - `SP14-114` repitio el mismo patron incluso tras reinicio de `codex app-server`: job `running`, sin `.webp`, sin checkpoint, y luego cancelacion manual.
+  - `SP14-117` mostro el mismo sintoma.
+  - evidencia tecnica real:
+    - `D:\AI-Studio-Library\.studio\logs\worker.log` registra `Codex imagegen job started` para `33db14cd-3e6a-4bd2-944a-675885ce82af`, `685a4944-1858-4b1f-a863-3898c4513457`, `8901e8e5-4c9d-4c8e-8510-41829361e79b`, y `b3463e9f-b6a8-4d84-92ce-0cf175f47d38`, pero sin `completed` ni `no image file was discovered` posterior.
+    - `D:\AI-Studio-Library\.studio\logs\app-server.log` registra `websocket receive error ... os error 10054` alrededor de esas corridas.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=114`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=9`
+
+## Tanda 2026-06-08 - `pack_14` cierre total
+
+Frente visual `pack_14` cerrado.
+
+- Cambios tecnicos que destrabaron el cierre:
+  - [turn.ts](/D:/DEV/codex-studio/apps/local-server/src/codex/turn.ts) ahora separa timeout de inicio de turno y timeout de completion, con cierre de sesion e invalidez explicita en cuelgues.
+  - [turn.test.ts](/D:/DEV/codex-studio/apps/local-server/src/codex/turn.test.ts) cubre el caso de `waitForNotification` colgado y valida que no quede zombie infinito.
+  - reinicio operativo del `local-server` para cargar ese fix antes de relanzar presets bloqueados.
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP14-114.webp`
+  - `assets/recipes/styles/defaults/SP14-115.webp`
+  - `assets/recipes/styles/defaults/SP14-117.webp`
+  - `assets/recipes/styles/defaults/SP14-118.webp`
+  - `assets/recipes/styles/defaults/SP14-119.webp`
+  - `assets/recipes/styles/defaults/SP14-120.webp`
+  - `assets/recipes/styles/defaults/SP14-121.webp`
+  - `assets/recipes/styles/defaults/SP14-122.webp`
+  - `assets/recipes/styles/defaults/SP14-123.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_14.json` para `SP14-114..123`.
+- Coverage real verificado:
+  - `pack_14 defaultImages=123/123`
+  - `pack_14 missingDefaultImages=0`
+- Control visual rapido:
+  - `SP14-114` fuerte, limpia, aunque bastante personaje-frontal.
+  - `SP14-119` limpia y leible, pero algo trono/invernadero de fantasia mas literal que ideal.
+  - `SP14-123` limpia y usable, aunque ritual-hogar bastante escenica.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo fuerte:
+  - tras el reinicio del server y fix de `turn.ts`, los jobs dejaron de quedar zombies invisibles.
+  - evidencia util del fix:
+    - `7f810784-fb80-43e5-8f9c-4bf5911e81dd` termino `failed` con `Timed out waiting for Codex notification`.
+    - `1865c585-0ab9-4d8c-8eae-0a210181dbea` termino `failed` con `Codex app-server socket closed`.
+  - eso permitio cancelar/reintentar con criterio en vez de dejar `running` eternos.
+  - conclusion operativa: para este frente, microbatch sigue fragil; rerun secuencial `1x1` si fue estable y cerro `SP14-114`, `115`, `117`, `119`, `120`, `121`, `122`, y `123`.
+- Estado acumulado del frente:
+  - `pack_14 regenerated_current=123`
+  - `pack_14 stale_existing=0`
+  - `pack_14 missing=0`
+
+## Tanda 2026-06-08 - `pack_15` ola 1
+
+Primer avance visual real sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-001.webp`
+  - `assets/recipes/styles/defaults/SP15-002.webp`
+  - `assets/recipes/styles/defaults/SP15-003.webp`
+  - `assets/recipes/styles/defaults/SP15-004.webp`
+  - `assets/recipes/styles/defaults/SP15-005.webp`
+  - `assets/recipes/styles/defaults/SP15-006.webp`
+  - `assets/recipes/styles/defaults/SP15-007.webp`
+  - `assets/recipes/styles/defaults/SP15-008.webp`
+  - `assets/recipes/styles/defaults/SP15-009.webp`
+  - `assets/recipes/styles/defaults/SP15-010.webp`
+  - `assets/recipes/styles/defaults/SP15-011.webp`
+  - `assets/recipes/styles/defaults/SP15-012.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-001..012`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=12/137`
+  - `pack_15 missingDefaultImages=125`
+- Control visual rapido:
+  - `SP15-001`, `SP15-003`, `SP15-004`, `SP15-009`, y `SP15-010` quedaron fuertes y limpias.
+  - `SP15-011` quedo mas moody/biopunk que la media del pack, pero usable.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` siguio estable en `12/12`.
+  - no hubo `running` zombies, ni `socket closed`, ni cancelaciones manuales en esta tanda.
+  - bloque `legacy` de `SP15-001..008` queda cerrado; `SP15-003` ya no arrastra drift con el checkpoint viejo.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=12`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=125`
+
+## Tanda 2026-06-08 - `pack_15` ola 2
+
+Segunda microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-013.webp`
+  - `assets/recipes/styles/defaults/SP15-014.webp`
+  - `assets/recipes/styles/defaults/SP15-015.webp`
+  - `assets/recipes/styles/defaults/SP15-016.webp`
+  - `assets/recipes/styles/defaults/SP15-017.webp`
+  - `assets/recipes/styles/defaults/SP15-018.webp`
+  - `assets/recipes/styles/defaults/SP15-019.webp`
+  - `assets/recipes/styles/defaults/SP15-020.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-013..020`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=20/137`
+  - `pack_15 missingDefaultImages=117`
+- Control visual rapido:
+  - `SP15-014`, `SP15-019`, y `SP15-020` quedaron fuertes y limpias.
+  - `SP15-016` se fue mas personaje/cyberpunk literal que ideal, pero sigue usable como default card operativa.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` siguio estable en `8/8`.
+  - no hubo `running` zombies, ni `socket closed`, ni cancelaciones manuales en esta tanda.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=20`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=117`
+
+## Tanda 2026-06-08 - `pack_15` ola 3
+
+Tercera microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-021.webp`
+  - `assets/recipes/styles/defaults/SP15-022.webp`
+  - `assets/recipes/styles/defaults/SP15-023.webp`
+  - `assets/recipes/styles/defaults/SP15-024.webp`
+  - `assets/recipes/styles/defaults/SP15-025.webp`
+  - `assets/recipes/styles/defaults/SP15-026.webp`
+  - `assets/recipes/styles/defaults/SP15-027.webp`
+  - `assets/recipes/styles/defaults/SP15-028.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-021..028`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=28/137`
+  - `pack_15 missingDefaultImages=109`
+- Control visual rapido:
+  - `SP15-022`, `SP15-026`, y `SP15-028` quedaron fuertes y limpias.
+  - `SP15-028` salio mas personaje/lunarpunk poetico que infraestructura, pero usable.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` siguio estable en `7/8` al primer intento.
+  - `SP15-026` pego timeout de espera en CLI y dejo job `running` sin progreso visible.
+  - se cancelo el job colgado y el rerun aislado inmediato si cerro bien.
+  - no aparecio `socket closed` en este caso; se comporto como cuelgue puntual del job, no como caida general del transporte.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=28`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=109`
+
+## Tanda 2026-06-08 - `pack_15` ola 4
+
+Cuarta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-029.webp`
+  - `assets/recipes/styles/defaults/SP15-030.webp`
+  - `assets/recipes/styles/defaults/SP15-031.webp`
+  - `assets/recipes/styles/defaults/SP15-032.webp`
+  - `assets/recipes/styles/defaults/SP15-033.webp`
+  - `assets/recipes/styles/defaults/SP15-034.webp`
+  - `assets/recipes/styles/defaults/SP15-035.webp`
+  - `assets/recipes/styles/defaults/SP15-036.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-029..036`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=36/137`
+  - `pack_15 missingDefaultImages=101`
+- Control visual rapido:
+  - `SP15-031`, `SP15-034`, y `SP15-036` quedaron fuertes y limpias.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - estrategia secuencial `1x1` volvio a salir estable en `8/8`.
+  - no hubo `running` zombies, `socket closed`, ni cancelaciones manuales en esta tanda.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=36`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=101`
+
+## Tanda 2026-06-08 - `pack_15` ola 5
+
+Quinta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-037.webp`
+  - `assets/recipes/styles/defaults/SP15-038.webp`
+  - `assets/recipes/styles/defaults/SP15-039.webp`
+  - `assets/recipes/styles/defaults/SP15-040.webp`
+  - `assets/recipes/styles/defaults/SP15-041.webp`
+  - `assets/recipes/styles/defaults/SP15-042.webp`
+  - `assets/recipes/styles/defaults/SP15-043.webp`
+  - `assets/recipes/styles/defaults/SP15-044.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-037..044`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=44/137`
+  - `pack_15 missingDefaultImages=93`
+- Control visual rapido:
+  - `SP15-037` limpia y usable, aunque bastante laboratorio/jardin atomico.
+  - `SP15-040` fuerte, muy feria atomica y personaje-frontal.
+  - `SP15-043` fuerte, limpia, con buen tono de ceremonia reactor pastel.
+  - `SP15-044` fuerte, limpia, con lectura de museo civico atompunk.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - loop inicial `SP15-037..044` agoto la ventana de la herramienta, pero `SP15-037..042` igual terminaron materializados en background y con checkpoint real.
+  - `SP15-043` y `SP15-044` cerraron despues en rerun aislado `1x1`, sin errores.
+  - no hubo `socket closed`, `running` zombies, ni cancelaciones manuales en esta tanda.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=44`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=93`
+
+## Tanda 2026-06-08 - `pack_15` ola 6
+
+Sexta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-045.webp`
+  - `assets/recipes/styles/defaults/SP15-046.webp`
+  - `assets/recipes/styles/defaults/SP15-047.webp`
+  - `assets/recipes/styles/defaults/SP15-048.webp`
+  - `assets/recipes/styles/defaults/SP15-049.webp`
+  - `assets/recipes/styles/defaults/SP15-050.webp`
+  - `assets/recipes/styles/defaults/SP15-051.webp`
+  - `assets/recipes/styles/defaults/SP15-052.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-045..052`.
+- Ajuste puntual para destrabar render:
+  - [SP15-047.yaml](/D:/DEV/codex-studio/components/recipes/styles/manifests/presets/pack_15/SP15-047.yaml)
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=52/137`
+  - `pack_15 missingDefaultImages=85`
+- Control visual rapido:
+  - `SP15-047` quedo fuerte y mas controlada tras suavizar wording.
+  - `SP15-048` quedo muy firme para `Isotope Night Observatory`.
+  - `SP15-050` y `SP15-052` quedaron limpias, aunque mas personaje-frontal de lo ideal.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - primer loop `SP15-045..048` agoto ventana de la herramienta.
+  - `SP15-045` y `SP15-046` igual terminaron materializadas via worker en background y con checkpoint real.
+  - `SP15-047` se trabo dos veces; la primera termino cancelada y la segunda fallo con `Codex app-server socket closed`.
+  - suavizar wording politico/cargado en `SP15-047.yaml` y rerun `1x1` la destrabo de inmediato.
+  - `SP15-048` cerro limpia en comando aislado.
+  - `SP15-049..052` cerraron limpias en dos tandas cortas `1x1`.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=52`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=85`
+
+## Tanda 2026-06-08 - `pack_15` ola 7
+
+Septima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-053.webp`
+  - `assets/recipes/styles/defaults/SP15-054.webp`
+  - `assets/recipes/styles/defaults/SP15-055.webp`
+  - `assets/recipes/styles/defaults/SP15-056.webp`
+  - `assets/recipes/styles/defaults/SP15-057.webp`
+  - `assets/recipes/styles/defaults/SP15-058.webp`
+  - `assets/recipes/styles/defaults/SP15-059.webp`
+  - `assets/recipes/styles/defaults/SP15-060.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-053..060`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=60/137`
+  - `pack_15 missingDefaultImages=77`
+- Control visual rapido:
+  - `SP15-056`, `SP15-057`, y `SP15-060` quedaron fuertes y limpias.
+  - `SP15-058` y `SP15-059` siguen mas monumento/plaza de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - `SP15-053..055` ya estaban materializadas; faltaba cerrar sync documental y runtime.
+  - `SP15-056` primero cayo por `Codex app-server socket closed`, luego por reuse de thread muerto `019ea8c3-64f7-7881-86d6-b54cc0dc29ab`.
+  - reiniciar `local-server` limpio vacio el pool de sesiones en memoria; despues de levantar `app-server` otra vez, `SP15-056` cerro al primer rerun.
+  - `SP15-057..060` cerraron limpias en secuencial `1x1` despues del reset.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=60`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=77`
+
+## Tanda 2026-06-08 - `pack_15` ola 8
+
+Octava microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-061.webp`
+  - `assets/recipes/styles/defaults/SP15-062.webp`
+  - `assets/recipes/styles/defaults/SP15-063.webp`
+  - `assets/recipes/styles/defaults/SP15-064.webp`
+  - `assets/recipes/styles/defaults/SP15-065.webp`
+  - `assets/recipes/styles/defaults/SP15-066.webp`
+  - `assets/recipes/styles/defaults/SP15-067.webp`
+  - `assets/recipes/styles/defaults/SP15-068.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-061..068`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=68/137`
+  - `pack_15 missingDefaultImages=69`
+- Control visual rapido:
+  - `SP15-061`, `SP15-063`, `SP15-065`, y `SP15-068` quedaron fuertes y limpias.
+  - `SP15-062`, `SP15-064`, `SP15-066`, y `SP15-067` siguen mas motel/coliseo/commons/salvage-lot de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - `SP15-061..068` cerraron `8/8` en secuencial `1x1`.
+  - no hubo retries, `socket closed`, `running` zombies, ni cancelaciones manuales.
+  - el reset previo de `local-server` dejo el pool de sesiones estable tambien para el bloque raypunk.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=68`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=69`
+
+## Tanda 2026-06-08 - `pack_15` ola 9
+
+Novena microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-069.webp`
+  - `assets/recipes/styles/defaults/SP15-070.webp`
+  - `assets/recipes/styles/defaults/SP15-071.webp`
+  - `assets/recipes/styles/defaults/SP15-072.webp`
+  - `assets/recipes/styles/defaults/SP15-073.webp`
+  - `assets/recipes/styles/defaults/SP15-074.webp`
+  - `assets/recipes/styles/defaults/SP15-075.webp`
+  - `assets/recipes/styles/defaults/SP15-076.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-069..076`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=76/137`
+  - `pack_15 missingDefaultImages=61`
+- Control visual rapido:
+  - `SP15-069`, `SP15-071`, `SP15-073`, y `SP15-076` quedaron fuertes y limpias.
+  - `SP15-070`, `SP15-072`, `SP15-074`, y `SP15-075` siguen mas depot/academy/library/hub de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - `SP15-069..075` cerraron limpias en secuencial `1x1`.
+  - el loop largo agoto ventana justo durante `SP15-076`.
+  - `SP15-076` aparecio `completed` en API pero sin `.webp` ni checkpoint en repo; rerun aislado `1x1` la cerro de verdad.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=76`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=61`
+
+## Tanda 2026-06-08 - `pack_15` ola 10
+
+Decima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-077.webp`
+  - `assets/recipes/styles/defaults/SP15-078.webp`
+  - `assets/recipes/styles/defaults/SP15-079.webp`
+  - `assets/recipes/styles/defaults/SP15-080.webp`
+  - `assets/recipes/styles/defaults/SP15-081.webp`
+  - `assets/recipes/styles/defaults/SP15-082.webp`
+  - `assets/recipes/styles/defaults/SP15-083.webp`
+  - `assets/recipes/styles/defaults/SP15-084.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-077..084`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=84/137`
+  - `pack_15 missingDefaultImages=53`
+- Control visual rapido:
+  - `SP15-077`, `SP15-078`, `SP15-081`, y `SP15-084` quedaron fuertes y limpias.
+  - `SP15-079`, `SP15-080`, `SP15-082`, y `SP15-083` siguen mas clinic/market/vault/tower de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - primera prueba real en `2x2` para el frente `pack_15`.
+  - `SP15-077..084` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falso verde de checkpoint.
+  - `2x2` fue sensiblemente mas rapido que `1x1`, sin perder trazabilidad en esta ola.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=84`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=53`
+
+## Tanda 2026-06-08 - `pack_15` ola 11
+
+Undecima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-085.webp`
+  - `assets/recipes/styles/defaults/SP15-086.webp`
+  - `assets/recipes/styles/defaults/SP15-087.webp`
+  - `assets/recipes/styles/defaults/SP15-088.webp`
+  - `assets/recipes/styles/defaults/SP15-089.webp`
+  - `assets/recipes/styles/defaults/SP15-090.webp`
+  - `assets/recipes/styles/defaults/SP15-091.webp`
+  - `assets/recipes/styles/defaults/SP15-092.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-085..092`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=92/137`
+  - `pack_15 missingDefaultImages=45`
+- Control visual rapido:
+  - `SP15-085`, `SP15-087`, `SP15-089`, y `SP15-091` quedaron fuertes y limpias.
+  - `SP15-086`, `SP15-088`, `SP15-090`, y `SP15-092` siguen mas ballroom/harbor/steps de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - segunda prueba real en `2x2` para el frente `pack_15`.
+  - `SP15-085..092` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falsos verdes.
+  - `2x2` sigue siendo el mejor punto medio actual entre velocidad y trazabilidad.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=92`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=45`
+
+## Tanda 2026-06-09 - `pack_15` ola 12
+
+Duodecima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-093.webp`
+  - `assets/recipes/styles/defaults/SP15-094.webp`
+  - `assets/recipes/styles/defaults/SP15-095.webp`
+  - `assets/recipes/styles/defaults/SP15-096.webp`
+  - `assets/recipes/styles/defaults/SP15-097.webp`
+  - `assets/recipes/styles/defaults/SP15-098.webp`
+  - `assets/recipes/styles/defaults/SP15-099.webp`
+  - `assets/recipes/styles/defaults/SP15-100.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-093..100`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=100/137`
+  - `pack_15 missingDefaultImages=37`
+- Control visual rapido:
+  - `SP15-093`, `SP15-095`, `SP15-097`, y `SP15-099` quedaron fuertes y limpias.
+  - `SP15-094`, `SP15-096`, `SP15-098`, y `SP15-100` siguen mas arcade/schoolhouse/cathedral/market-terrace de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - tercera prueba real en `2x2` para el frente `pack_15`.
+  - `SP15-093..100` cerraron `8/8` sin `socket closed`, sin jobs zombie, y sin falsos verdes.
+  - `2x2` se sostiene estable tambien al cruzar de clockpunk a solarpunk dentro del mismo pack.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=100`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=37`
+
+## Tanda 2026-06-09 - `pack_15` ola 13
+
+Decimotercera microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-101.webp`
+  - `assets/recipes/styles/defaults/SP15-102.webp`
+  - `assets/recipes/styles/defaults/SP15-103.webp`
+  - `assets/recipes/styles/defaults/SP15-104.webp`
+  - `assets/recipes/styles/defaults/SP15-105.webp`
+  - `assets/recipes/styles/defaults/SP15-106.webp`
+  - `assets/recipes/styles/defaults/SP15-107.webp`
+  - `assets/recipes/styles/defaults/SP15-108.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-101..108`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=108/137`
+  - `pack_15 missingDefaultImages=29`
+- Control visual rapido:
+  - `SP15-101`, `SP15-103`, `SP15-105`, y `SP15-108` quedaron fuertes y limpias.
+  - `SP15-102`, `SP15-104`, `SP15-106`, y `SP15-107` siguen mas conservatory/market/clinic/lab-promenade de lo ideal, pero operativas.
+  - el suffix global de denoise siguio funcionando bien: menos grano, menos microdetalle crujiente, mejor limpieza general.
+- Hallazgo operativo:
+  - `2x2` siguio siendo buen punto de arranque para `pack_15`, pero esta ola expuso presets mas lentos dentro del frente solarpunk.
+  - `SP15-103`, `SP15-106`, `SP15-107`, y `SP15-108` pegaron timeout del wrapper del shell antes de completar la tanda, aun con app-server sano.
+  - verificacion material intermedia evito falsos verdes: despues del primer intento solo `SP15-105` habia quedado real en repo/manifest.
+  - patron correcto para estos casos: rerun con timeout largo o caida controlada a `1x1`; `SP15-107` y `SP15-108` cerraron asi.
+  - conclusion operativa: `2x2` sigue siendo valido, pero no alcanza con mirar salida del CLI; hay que confirmar `.webp` + manifest entre microtandas cuando el shell corta por tiempo.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=108`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=29`
+
+## Tanda 2026-06-09 - `pack_15` ola 14
+
+Decimocuarta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-109.webp`
+  - `assets/recipes/styles/defaults/SP15-110.webp`
+  - `assets/recipes/styles/defaults/SP15-111.webp`
+  - `assets/recipes/styles/defaults/SP15-112.webp`
+  - `assets/recipes/styles/defaults/SP15-113.webp`
+  - `assets/recipes/styles/defaults/SP15-114.webp`
+  - `assets/recipes/styles/defaults/SP15-115.webp`
+  - `assets/recipes/styles/defaults/SP15-116.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-109..116`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=116/137`
+  - `pack_15 missingDefaultImages=21`
+- Control visual rapido:
+  - `SP15-109`, `SP15-111`, `SP15-113`, y `SP15-116` quedaron fuertes y limpias.
+  - `SP15-110`, `SP15-112`, `SP15-114`, y `SP15-115` siguen algo plaza/stack/observatory/atrium de lo ideal, pero operativas.
+  - el suffix global de denoise mantuvo buen control: menos grano, menos microdetalle crujiente, mejor lectura de forma.
+- Hallazgo operativo:
+  - `SP15-109..112` cerraron primero con mezcla de `2x2` y fallback puntual `1x1` para `SP15-110`.
+  - `SP15-113..116` probaron el camino mas eficiente: una sola invocacion con `--preset='SP15-113|SP15-114|SP15-115|SP15-116' --parallel=2`.
+  - la tanda batch interna cerro `generated=4 attempted=4 failed=0` y redujo ruido operativo frente a relanzar el script por preset.
+  - estrategia recomendada para el resto de `pack_15`: batch corto de 4 presets con `--parallel=2`, verificacion agregada de `.webp` + manifest, y fallback `1x1` solo si un ID queda pendiente real.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=116`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=21`
+
+## Tanda 2026-06-09 - `pack_15` ola 15
+
+Decimoquinta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-117.webp`
+  - `assets/recipes/styles/defaults/SP15-118.webp`
+  - `assets/recipes/styles/defaults/SP15-119.webp`
+  - `assets/recipes/styles/defaults/SP15-120.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-117..120`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=120/137`
+  - `pack_15 missingDefaultImages=17`
+- Control visual rapido:
+  - `SP15-117` y `SP15-119` quedaron fuertes y limpias.
+  - `SP15-118` y `SP15-120` siguen algo boardwalk/subpier literal de lo ideal, pero operativas.
+  - el suffix global de denoise siguio controlando bien ruido, grano y microdetalle.
+- Hallazgo operativo:
+  - segunda tanda con batch interno de 4 presets: `--preset='SP15-117|SP15-118|SP15-119|SP15-120' --parallel=2`.
+  - resultado: `generated=4 attempted=4 failed=0`.
+  - el batch tardo mas que la ola anterior, pero cerro sin falsos verdes ni fallback; el patron es eficiente y mantiene trazabilidad.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=120`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=17`
+
+## Tanda 2026-06-09 - `pack_15` ola 16
+
+Decimosexta microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-121.webp`
+  - `assets/recipes/styles/defaults/SP15-122.webp`
+  - `assets/recipes/styles/defaults/SP15-123.webp`
+  - `assets/recipes/styles/defaults/SP15-124.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-121..124`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=124/137`
+  - `pack_15 missingDefaultImages=13`
+- Control visual rapido:
+  - `SP15-121` y `SP15-123` quedaron fuertes y limpias.
+  - `SP15-122` y `SP15-124` siguen algo dockyard/relay-station literal de lo ideal, pero operativas.
+  - el suffix global de denoise mantuvo buena limpieza y redujo ruido fino.
+- Hallazgo operativo:
+  - tercera tanda consecutiva con batch interno de 4 presets: `--preset='SP15-121|SP15-122|SP15-123|SP15-124' --parallel=2`.
+  - resultado: `generated=4 attempted=4 failed=0`.
+  - el modo batch corto sigue siendo el mejor camino actual por costo operativo y trazabilidad.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=124`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=13`
+
+## Tanda 2026-06-09 - `pack_15` ola 17
+
+Decimoseptima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-125.webp`
+  - `assets/recipes/styles/defaults/SP15-126.webp`
+  - `assets/recipes/styles/defaults/SP15-127.webp`
+  - `assets/recipes/styles/defaults/SP15-128.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-125..128`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=128/137`
+  - `pack_15 missingDefaultImages=9`
+- Control visual rapido:
+  - `SP15-125` y `SP15-127` quedaron fuertes y limpias.
+  - `SP15-126` y `SP15-128` siguen algo courtyard/herbarium literal de lo ideal, pero operativas.
+  - el suffix global de denoise mantuvo buen control de grano y microdetalle.
+- Hallazgo operativo:
+  - cuarta tanda consecutiva con batch interno de 4 presets: `--preset='SP15-125|SP15-126|SP15-127|SP15-128' --parallel=2`.
+  - resultado: `generated=4 attempted=4 failed=0`.
+  - el batch corto sigue estable incluso al cruzar de seapunk a steampunk dentro de `pack_15`.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=128`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=9`
+
+## Tanda 2026-06-09 - `pack_15` ola 18
+
+Decimoctava microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-129.webp`
+  - `assets/recipes/styles/defaults/SP15-130.webp`
+  - `assets/recipes/styles/defaults/SP15-131.webp`
+  - `assets/recipes/styles/defaults/SP15-132.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-129..132`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=132/137`
+  - `pack_15 missingDefaultImages=5`
+- Control visual rapido:
+  - `SP15-129` y `SP15-132` quedaron fuertes y limpias.
+  - `SP15-130` y `SP15-131` siguen algo pool/arcade-mirage literal de lo ideal, pero operativas.
+  - el suffix global de denoise mantuvo lectura limpia y bajo microdetalle crujiente.
+- Hallazgo operativo:
+  - quinta tanda consecutiva con batch interno de 4 presets: `--preset='SP15-129|SP15-130|SP15-131|SP15-132' --parallel=2`.
+  - resultado: `generated=4 attempted=4 failed=0`.
+  - el batch corto sigue estable al cruzar steampunk, vaporpunk y cyberpunk dentro del mismo pack.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=132`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=5`
+
+## Tanda 2026-06-09 - `pack_15` cierre total
+
+Ultima microtanda visual sobre `pack_15`.
+
+- Regeneracion directa y materializacion confirmada:
+  - `assets/recipes/styles/defaults/SP15-133.webp`
+  - `assets/recipes/styles/defaults/SP15-134.webp`
+  - `assets/recipes/styles/defaults/SP15-135.webp`
+  - `assets/recipes/styles/defaults/SP15-136.webp`
+  - `assets/recipes/styles/defaults/SP15-137.webp`
+- Checkpoint confirmado en `assets/recipes/styles/defaults/manifest-pack_15.json` para `SP15-133..137`.
+- Cobertura real esperada tras backfill + validate:
+  - `pack_15 defaultImages=137/137`
+  - `pack_15 missingDefaultImages=0`
+- Control visual rapido:
+  - `SP15-133`, `SP15-136`, y `SP15-137` quedaron fuertes y limpias.
+  - `SP15-134` y `SP15-135` siguen algo aerostat/field-repair literal de lo ideal, pero operativas.
+  - el suffix global de denoise mantuvo lectura limpia y control de ruido.
+- Hallazgo operativo:
+  - batch final de 5 presets con `--preset='SP15-133|SP15-134|SP15-135|SP15-136|SP15-137' --parallel=2`.
+  - resultado: `generated=5 attempted=5 failed=0`.
+  - cierre visual completo de `pack_15`: el batch corto interno fue el camino mas eficiente y estable para el tramo final.
+- Estado acumulado del frente:
+  - `pack_15 regenerated_current=137`
+  - `pack_15 stale_existing=0`
+  - `pack_15 missing=0`
+
+## Tanda 2026-06-09 - `pack_08` microajuste de precision
+
+Microajuste semantico aplicado a 4 presets con residuo de anatomia/personaje.
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-050.yaml`
+
+Total manual refactorizado hasta ahora: **568 presets**.
+
+- Alcance: pasada corta de precision sobre `Historical & Fantasy` y `Fantasy Sci-Fi Costume`.
+- Ajustes:
+  - `SP08-036` baja dependencia de guerrero/cuerpo y refuerza materialidad nordica transferible.
+  - `SP08-037` pasa de cowboy-personaje a frontier workwear grammar con menos dependencia de figura humana.
+  - `SP08-045` baja sesgo de musculatura/heroe humano y lo reemplaza por silueta iconica + geometria de emblema.
+  - `SP08-050` reduce sesgo de body harness / `human clothes` y lo lleva a couture alienigena mas abstracta.
+- Cards: estos IDs ya seguian en `docs/active/style-preset-card-regeneration-backlog.md`; no hizo falta agregar filas nuevas.
+- Siguiente paso tecnico: `bun run styles:validate -- --pack=pack_08`, y luego `styles:quality:audit` cuando cerremos la siguiente miniola semantica o demos por estable el pack.
+
+Nota operativa de la misma tanda:
+
+- `SP08-050` quedo con `needs_review` repetido al intentar regenerar su default card.
+- Para destrabar el frente visual sin perder identidad, se removieron anchors explicitos de IP/disenador en `aesthetic` y `render_quality`, manteniendo la logica de couture alienigena transferible.
+
+Microajuste posterior dentro del mismo frente visual:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-049.yaml`
+- Motivo: el preset seguia demasiado pegado a anatomia/sirena/mermaid body para la cola visual.
+- Ajuste: se lo llevo a `pelagic fantasy couture`, con cola/aleta opcional como geometria y sin depender de cuerpo obligatorio.
+
+Refuerzo posterior de la misma correccion:
+
+- `SP08-049` cambia titulo interno de `Mermaid Tail` a `Pelagic Tail Couture`.
+- Se retiran los ultimos residuos de `underwater hair` / `seaweed hair` / lectura de cuerpo obligatorio para empujar una gramática mas portable de escama, nacar, aleta y drapeado liquido.
+
+Microajuste adicional de bloqueo visual:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-051.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-056.yaml`
+- Motivo: estos cuatro presets seguian con anchors demasiado pegados a IP, fetish coding o boudoir/body-first wording, y la cola visual devolvio `needs_review` / timeout / socket closed`.
+- Ajuste: se conservaron biomech pilot, gothic aristocracy, latex couture y silk luxury, pero con lenguaje mas portable y menos dependencia de personaje, subcultura o cuerpo obligatorio.
+
+Refuerzo puntual en materiales:
+
+- `SP08-051` cambia titulo interno de `Latex/PVC` a `High-Gloss Polymer`.
+- `SP08-056` cambia titulo interno de `Silk & Satin` a `Liquid Satin Drape`.
+- Objetivo: correr ambos presets un paso mas lejos de la lectura fetish/slip-dress literal y acercarlos a comportamiento material transferible.
+
+Actualizacion operativa de runtime dentro del mismo frente:
+
+- Se agrego `--retry-failures --failure-limit=<n>` a `scripts/generate-style-defaults.ts` para apuntar solo a residuales reales desde `failures-pack_<id>.json`.
+- Se agrego `--session-suffix=<tag>` para emitir `SESSION:` explicito en miniolas y evitar reciclado ciego de la sesion persistida del pack cuando convenga.
+- En runtime repo tambien se endurecio `apps/local-server/src/codex/turn.ts` para invalidar hilo persistido en fallos `Timed out waiting for Codex notification` y `Codex app-server socket closed`.
+- Prueba live posterior sobre `SP08-053|SP08-056` con `--session-suffix=retry_clean_a` siguio en `0/2`, y el registro vivo de `D:\AI-Studio-Library\.studio\state\imagegen-session-registry.json` siguio tocando `fashion_costume`; conclusion: el backend local activo todavia no habia recargado ese hardening nuevo al momento de la prueba.
+
+Correccion UI 2026-06-09 sobre `style preset cards`:
+
+- Hallazgo:
+  - el problema reportado de `pack_01+` no era ausencia real de assets solamente; habia supresion de render.
+  - `StylesRecipe.tsx` escondia por completo la card cuando el default estaba marcado stale.
+  - `recipeAssetCatalog.ts` ademas convertia cualquier stale en `undefined`, empujando la grilla al mismo fallback de `category base`.
+- Fix:
+  - `components/recipes/StylesRecipe.tsx`
+  - `lib/recipeAssetCatalog.ts`
+  - el `defaultImage` stale vuelve a renderizarse como card real, con badge `Stale` y estilo atenuado, sin perder affordance de regeneracion.
+- Verificacion live:
+  - check corto: `bun run check -- lib/recipeAssetCatalog.ts components/recipes/StylesRecipe.tsx`
+  - barrido Playwright en `http://localhost:17222/#recipe-styles` sobre `pack_01..pack_16`.
+  - resultado visible inicial por pack: `0` cards usando `category-bases/`, `0` cards sin imagen, y defaults reales distintos por preset.
+  - muestra confirmada en `pack_01`: `37/37` cards con `defaults/SP01-*.webp`; tras el fix pasaron de repetir `pack_01__portrait_and_studio.webp` a usar el asset propio de cada preset.
+- Riesgo residual:
+  - validacion cubre la grilla inicial visible, no cada preset expandido de todos los packs.
+- queda aparte el frente de backend local que a veces responde HTML en `http://localhost:17223`; no invalida este fix de cards, pero si puede contaminar checks de salud y colas posteriores.
+
+## Tanda 2026-06-09 - `pack_08` microajuste de desalojamiento body-first
+
+Miniola semantica enfocada en el bloque que siguio chocando con visual/runtime:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-051.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-053.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-054.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-056.yaml`
+
+Alcance:
+
+- Se preservaron anchors utiles de biomech pilot, gothic aristocracy, pelagic couture, polymer gloss, denim workwear, fur opulence, chainmail mesh, wool knit y liquid satin.
+- Se bajo carga de sujeto obligatorio, pose, torso, portrait-first framing y escenas accesorias demasiado empujadas.
+- Tambien se limpiaron residuos formulaicos en briefs, sobre todo en `SP08-056`, donde el bloque venia duplicando instruccion abstracta tipo `apply this grammar over any input`.
+
+Ajustes destacados:
+
+- `SP08-046`: menos lectura de `human pilot body`; mas `interfacewear` transferible.
+- `SP08-047`: menos gesto/rostro de retrato gotico; mas heráldica y costura aristocratica.
+- `SP08-049`: `tail-like geometry` pasa a geometria acuática abstracta, no anatomia sirena.
+- `SP08-051`: baja lectura fetish/club y refuerza `polymer couture`.
+- `SP08-052` a `SP08-055`: se retiran dependencias de ranch, labor story, shoulders, torso, cabin o warrior silhouette.
+- `SP08-056`: se compacta el brief y se baja `sensual/body cling` a mood material, no encuadre requerido.
+
+Siguiente paso tecnico inmediato:
+
+- `bun run styles:validate -- --pack=pack_08`
+- si sale verde, el residual principal del frente pasa a ser runtime/cola visual, no semantica documental obvia en estos nueve IDs.
+
+Validacion de la ronda:
+
+- `bun run styles:validate -- --pack=pack_08` -> verde.
+- `bun run styles:quality:audit` -> verde; `redundancy: none above threshold`.
+- `bun run styles:runtime:check`:
+  - primer intento: timeout del harness.
+  - raiz encontrada: `scripts/generate-style-runtime-data.ts` formateaba temp files de check mode en lotes de `1`, lo que volvia el gate demasiado lento para el volumen actual.
+  - ajuste aplicado: batching fijo de `20` archivos tambien en check mode.
+  - segundo intento: gate ya devolvio señal correcta de stale real en `pack_08/fantasy-sci-fi-costume-4.ts` y `pack_08/fabric-and-texture-focus-5.ts`.
+  - cierre tecnico: `bun run styles:runtime` y luego `bun run styles:runtime:check` ambos en verde.
+
+## Tanda 2026-06-09 - category bases `pack_08..pack_11`
+
+Frente de category bases revisado contra estado real del repo.
+
+Hallazgo:
+
+- `pack_08`, `pack_09`, `pack_10` y `pack_11` ya estaban completos en disco y en `assets/recipes/styles/category-bases/manifest.json`.
+- La deriva restante era documental: `docs/active/style-category-bases-audit.md` seguia siendo engañosa si solo se miraba el conteo global.
+
+Accion:
+
+- se actualizo `scripts/audit-style-category-bases.ts` para incluir un resumen explicito del slice objetivo `pack_08..pack_11`.
+- se regenero `docs/active/style-category-bases-audit.md` desde el estado actual del repo.
+
+Resultado verificado:
+
+- `Fashion & Costume (pack_08): 5/5 generated`
+- `Texture & Materiality (pack_09): 5/5 generated`
+- `Abstract & Experimental (pack_10): 5/5 generated`
+- `Miscellaneous & Fun (pack_11): 5/5 generated`
+- dentro de `## Missing`, ya no aparecen claves `pack_08__`, `pack_09__`, `pack_10__` ni `pack_11__`.
+
+Check de ronda:
+
+- `bun run check -- scripts/audit-style-category-bases.ts` -> verde.
+
+Riesgo residual:
+
+- el conteo global del audit doc sigue bajo (`45/99`) por faltantes o key mismatches fuera de este slice, especialmente packs legacy no prioritarios en esta tanda.
+- para el objetivo actual, el frente `pack_08..pack_11` queda documentalmente alineado con el repo.
+
+## Tanda 2026-06-09 - saneamiento loopback backend `17223`
+
+Hallazgo raiz del bloqueo visual:
+
+- `http://localhost:17223` estaba resolviendo al listener IPv6 equivocado y devolvia HTML de Vite.
+- `http://127.0.0.1:17223` seguia apuntando al backend real y devolvia JSON correcto en `/api/health`.
+- Resultado practico: overlays web, checks de readiness y tooling que dependian de `localhost:17223` podian leer un falso backend caido o parsear HTML como JSON.
+
+Fix aplicado:
+
+- `services/studioRuntime.ts`
+- `services/studioRuntime.test.ts`
+- `scripts/style-default-utils.ts`
+- `scripts/evaluate-recipe-prompts-live.ts`
+- `scripts/dev-electron.ts`
+- `scripts/preview-electron.ts`
+- `apps/local-server/src/init.ts`
+
+Cambios:
+
+- default API base pasa a `http://127.0.0.1:17223`.
+- cualquier `envApiBase` o bridge base en `localhost` se normaliza a `127.0.0.1`.
+- `.env.local` nuevo generado por init ahora usa `VITE_STUDIO_API_BASE=http://127.0.0.1:<port>`.
+
+Validacion de ronda:
+
+- `bun run check -- services/studioRuntime.ts services/studioRuntime.test.ts scripts/style-default-utils.ts scripts/evaluate-recipe-prompts-live.ts scripts/dev-electron.ts scripts/preview-electron.ts apps/local-server/src/init.ts` -> verde.
+- `bun x vp test run services/studioRuntime.test.ts` -> verde.
+- smoke check: `resolveStudioRuntimeFromSources({ envApiBase: 'http://localhost:17223/' }).apiBase` -> `http://127.0.0.1:17223`.
+- health real: `http://127.0.0.1:17223/api/health` -> `200`.
+
+Riesgo residual:
+
+- esta ronda sanea resolucion loopback y defaults, pero no mata el listener equivocado que hoy ocupa `localhost`/IPv6.
+- aun asi, el runtime y scripts del repo dejan de depender de ese listener para el flujo normal.
+
+## Tanda 2026-06-09 - verificacion visual actual y cierre operativo `pack_14` / `pack_15`
+
+Chequeo posterior al fix de cards y al saneamiento loopback:
+
+- smoke browser real sobre `http://localhost:17222/#recipe-styles`
+  - `pack_01`: `37/37` cards visibles con imagen; `37` srcs unicos en la muestra activa.
+  - catalogo lazy con query `kodachrome`: `4/4` resultados con imagen; `4` srcs unicos.
+  - conclusion: no reproduje el sintoma de "todas mantienen la misma default" en la superficie principal ni en el catalogo.
+
+Chequeo de deuda visual prioritaria:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> `pack_14 defaultImages=123/123 missingDefaultImages=0`
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> `pack_15 defaultImages=137/137 missingDefaultImages=0`
+- `lib/staleStyleDefaultImages.generated.ts` ya no contiene ids `SP14-*` ni `SP15-*`
+
+Lectura operativa:
+
+- `pack_14` y `pack_15` quedan cerrados en missing/stale operativo.
+- `assets/recipes/styles/defaults/failures-pack_14.json` y `failures-pack_15.json` quedan solo como historial de intentos fallidos previos; no contradicen el cierre actual porque coverage esta en `100%` y los ids ya no figuran como stale.
+
+Siguiente prioridad visual sugerida:
+
+- `pack_01` (`81/87`) y `pack_02` (`120/128`), que pasan a ser los unicos packs con `missingDefaultImages` en la cobertura actual.
+
+## Tanda 2026-06-11 - `pack_08` miniola de desalojamiento cuerpo-escena
+
+Nueva pasada puntual sobre residuos semanticos que seguian demasiado atados a
+anatomia, evento social o setup de personaje aunque ya estuvieran documentados
+como revisados.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-011.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-015.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-020.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-072.yaml`
+
+Alcance:
+
+- `SP08-011`: sale de `hourglass figure` y de lectura pin-up/domestic-role; queda como gramatica mid-century pop transferible.
+- `SP08-015`: baja dependencia de `character-faithful transformation`, `big props` y booth/con setup; sube construccion cosplay como lenguaje material.
+- `SP08-020`: baja dependencia de `gown body`, celebridad caminando y ritual de alfombra roja; mantiene gala formalwear como acabado visual.
+- `SP08-072`: baja sesgo de torso/cuerpo tatuado; pasa a surface mapping transferible con devocion ink optional.
+
+Lectura de riesgo:
+
+- el frente `pack_08` seguia verde en quality audit global, pero eso no probaba
+  que estos cuatro briefs estuvieran realmente libres de sujeto obligatorio.
+- esta miniola corrige drift semantico que aun podia contaminar regeneracion de
+  defaults y uso cross-subject.
+
+## Tanda 2026-06-11 - `pack_08` miniola de ancla literal residual
+
+Segunda pasada del dia sobre presets que todavia dependian demasiado de evento,
+performer-body o referencia literal aunque ya no bloquearan la validacion
+tecnica.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-063.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-070.yaml`
+
+Alcance:
+
+- `SP08-030`: ravewear sigue util, pero ahora baja dependencia de party/crowd/body y deja PLUR como presion estilistica.
+- `SP08-034`: gladiator pasa de torso/arma/arena implicita a regalia arena-forged transferible.
+- `SP08-063`: feather couture deja de empujar showgirl/stage y queda como plumage logic ornamental.
+- `SP08-070`: sale referencia IP demasiado frontal y baja dependencia de hemline/body/parade/arena.
+
+Lectura de riesgo:
+
+- esta miniola limpia anchors todavia demasiado literales dentro de `Subcultures`,
+  `Historical & Fantasy` y `Fabric & Texture Focus`.
+- `SP08-057` queda como siguiente candidato suave si queremos seguir limando
+  literalidad de academia/country-estate sin abrir una ola grande.
+
+Validacion tecnica de la ronda:
+
+- `bun run styles:validate -- --pack=pack_08` -> verde.
+- `bun run styles:quality:audit` -> verde; `redundancy: none above threshold`.
+- `bun run styles:runtime:check`:
+  - primer rerun de cierre detecto stale real en `pack_08/subcultures-1.ts`, `historical-and-fantasy-3.ts` y `fabric-and-texture-focus-5.ts`.
+  - se corrio `bun run styles:runtime`.
+  - segundo rerun expuso bug Windows/Bun: `EFAULT` al limpiar temp files `*.check.tmp.ts`.
+  - fix aplicado en `scripts/generate-style-runtime-data.ts`: cleanup de temp files ahora ignora `ENOENT`/`EFAULT` via helper seguro.
+  - `bun run check -- scripts/generate-style-runtime-data.ts` -> verde.
+- `bun run styles:runtime:check` -> verde despues del fix.
+
+## Tanda 2026-06-11 - `pack_08` miniola de literalidad suave en materiales
+
+Tercera pasada del dia sobre presets que ya no tenian bloqueo grueso de escena,
+pero seguian demasiado acoplados a outfit/rol literal o a objeto-cuerpo
+demasiado especifico.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-057.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-064.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-066.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-071.yaml`
+
+Alcance:
+
+- `SP08-057`: tweed pasa de profesor/estate weekend/suit portrait a heritage tailoring mas transferible.
+- `SP08-064`: burlap baja tunica/campesino/pobreza literal y queda como rough-fiber humility.
+- `SP08-066`: origami baja `paper dress` / `bodice` y queda como fold-discipline mas abstracta.
+- `SP08-071`: porcelain doll baja living-doll/body/face stare y queda como porcelain-artifice grammar.
+
+## Tanda 2026-06-11 - `pack_08` miniola de materialidad elemental y concealment
+
+Cuarta pasada del dia sobre presets donde la materialidad seguia demasiado
+atada a cuerpo, criatura o escena de género concreta.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-068.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-069.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-074.yaml`
+
+Alcance:
+
+- `SP08-062`: leather armor baja adventurer/dungeon/weapon body y queda como stealth leather grammar.
+- `SP08-068`: smoke dress baja hemline/stage/ritual y queda como smoke-borne materiality.
+- `SP08-069`: water dress baja torso/gown/nymph/underwater scene y queda como liquid-couture behavior.
+- `SP08-074`: bandage/mummy baja walking mummy/tomb/face wrap literal y queda como concealment-wrap grammar.
+
+## Tanda 2026-06-11 - `pack_08` miniola de materialidad portable y proyeccion no figurativa
+
+Quinta pasada del dia sobre presets que seguian demasiado pegados a wearer/body
+logic, estatua humana fija o proyeccion con figura implicita.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-065.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-078.yaml`
+
+Alcance:
+
+- `SP08-065`: Tron suit baja `bodysuit wearer` / visor silhouette y queda como grid suiting modular con emitter logic.
+- `SP08-067`: bubble wrap baja bodice/dress-object shaping y queda como inflated modular segmentation transferible.
+- `SP08-077`: stone statue baja contrapposto/pedestal/body portrait y queda como carved contour + marble behavior.
+- `SP08-078`: hologram baja transparent body / projection base y queda como signal contour + projection-field taper.
+
+Lectura de riesgo:
+
+- esta miniola no quita anchors utiles; solo desplaza los cuatro presets desde
+  figura cerrada hacia material/projection grammar reutilizable.
+- `SP08-075`, `SP08-076`, `SP08-079` y `SP08-080` quedan como siguientes
+  candidatos suaves si queremos cerrar el resto de literalidad residual del
+  bloque final.
+
+## Tanda 2026-06-11 - `pack_08` miniola de concealment, gilding y void residual
+
+Sexta pasada del dia sobre el remate del bloque final, ya sin drift duro pero
+con anatomia, wearer logic o figura implicita todavia demasiado cerca.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-080.yaml`
+
+Alcance:
+
+- `SP08-075`: gold leaf baja body-conforming / figure contour y queda como gilded surface behavior.
+- `SP08-076`: slime/goo baja shoulder/body implication y queda como viscosity grammar portable.
+- `SP08-079`: invisibility cloak baja garment wearer / reveal logic y queda como concealment-optics field.
+- `SP08-080`: shadow form baja humanoid/wearer residue y queda como darkness-presence materiality.
+
+Lectura de riesgo:
+
+- con esta miniola, el bloque `075-080` queda bastante mas cerca de material y
+  optical grammar reusable que de personaje/garment narrative.
+- siguiente mejor paso ya no parece ser este bloque sino volver a barrer
+  `pack_07` o revisar si queda algun residual puntual en `pack_08` fuera de
+  cierre.
+
+## Tanda 2026-06-12 - `pack_07` miniola de heroicidad implicita y scene residue
+
+Vuelta corta sobre `pack_07` para verificar que el supuesto cierre documental
+tambien resista lectura semantica fina en manifests reales.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-080.yaml`
+
+Alcance:
+
+- `SP07-041`: formal topiary axis baja jardin palaciego / fuente axial / recorrido ceremonial literal.
+- `SP07-052`: dwarven megalithic forge baja fortaleza enana o set heroico demasiado cerrado y queda mas portable como deep-forge masonry grammar.
+- `SP07-067`: wet-sand modeling baja playa/horizonte costero como escena implicita y queda mas centrado en erosion temporal/materialidad.
+- `SP07-080`: dimensional console retrotech baja cabina heroica / rotor central / sala de control literal y queda mas cerca de impossible-space systems grammar.
+
+Lectura de riesgo:
+
+- `pack_07` ya estaba muy avanzado; esta tanda no reabre el pack, solo confirma
+  que el cierre previo no escondia residuos finos de hero object o scene lock.
+
+## Tanda 2026-06-12 - miniola residual `pack_07` / `pack_08` sobre promenade, sport-field y body-host lock
+
+Nueva pasada corta sobre un subset residual reconstruido desde las listas
+focalizadas de reauditoria fina para `pack_07` y `pack_08`.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-073.yaml`
+
+Alcance:
+
+- `SP07-044`: baja promenade axis / procession / parque lineal demasiado fijo; queda como ecologia de borde reutilizado y reticula civic-reclaimed.
+- `SP07-049`: baja golf-course literal, hoyos/banderas/jugadores y routing deportivo obligatorio; queda como precision greensward strategy portable.
+- `SP08-041`: baja piel-hosteada, portrait framing y body-mod showcase obligatorio; queda como gramatica de augmentacion modular aplicable a cualquier sujeto o superficie.
+- `SP08-073`: baja nude-body setup y dependencia de piel como canvas principal; queda como pigment couture / trompe-l'oeil temporal sobre cualquier silueta o superficie.
+
+Lectura de riesgo:
+
+- esta miniola no cambia anchors utiles de pack ni categoria;
+- solo desplaza cuatro presets que todavia retenian scene lock o host lock mas fuerte que el resto del bloque;
+- los cuatro defaults existentes deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de candy-scene, spire apex y craft-floor lock
+
+Nueva pasada sobre cuatro residuales de `pack_07` que seguian mas literales de
+lo deseado dentro de fantasia material y miniature craft.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-068.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-071.yaml`
+
+Alcance:
+
+- `SP07-055`: baja reino/story-dessert/escena infantil fija; queda como surrealismo confitero portable por materia y ensamblaje.
+- `SP07-058`: baja aguja unica / skyline gema heroico; queda como crecimiento prismático multicapa portable a cualquier masa o sistema.
+- `SP07-068`: baja playroom/interior de carton demasiado narrativo; queda como low-tech patched construction grammar reusable.
+- `SP07-071`: baja forest-floor / fairy cluster lock; queda como morfologia fungica portable sin exigir cottage fae ni anillo de setas.
+
+Lectura de riesgo:
+
+- esta miniola sigue la misma logica de cierre fino: no purga anchors materiales;
+- solo suelta escena fija, skyline unico o suelo narrativo donde el material ya podia sostener el estilo por si mismo;
+- los cuatro defaults vigentes deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de domestic-room, bureaucracy-hall y burial-corridor lock
+
+Nueva pasada sobre cuatro residuales tempranos de `pack_07` donde la gramatica
+ya era util, pero seguia demasiado encerrada en habitacion, edificio civico o
+subterraneo literal.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-038.yaml`
+
+Alcance:
+
+- `SP07-004`: baja living-room / season / domestic scene lock; queda como gramatica hygge portable de bajo contraste y refugio termico.
+- `SP07-008`: baja tatami-room / temple / zen-room lock; queda como calma modular y vacio filtrado transferible.
+- `SP07-034`: baja public-building / asylum-corridor / haunted-bureaucracy literal; queda como deterioro administrativo sistemico portable.
+- `SP07-038`: baja catacomb-passage / ritual corridor / remains-display lock; queda como presion calcica subterranea portable sin set funerario fijo.
+
+Lectura de riesgo:
+
+- esta miniola sigue recortando scene drift fino dentro de `pack_07`;
+- los cuatro presets conservan anchor material y espacial, pero ya no dependen de una habitacion, edificio o corredor especifico para funcionar;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de tree-support, zen-garden, haunted-house y ant-farm lock
+
+Nueva pasada sobre cuatro residuales donde el lenguaje ya era util, pero seguia
+demasiado pegado a soporte arboreo heroico, jardin zen literal, mansion spooky
+o corte de hormiguero demasiado frontal.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-040.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-060.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-073.yaml`
+
+Alcance:
+
+- `SP07-040`: baja treehouse / shelter / tronco heroico demasiado fijo; queda como ensamblaje elevado contra soporte vivo reusable.
+- `SP07-043`: baja zen-garden / templo contemplativo / spa-rock-field literal; queda como abstraccion mineral rastrillada portable.
+- `SP07-060`: baja haunted-house / tormenta nocturna / Halloween-set obligatorio; queda como deformacion spooky-cartoon aplicable a cualquier masa o sistema.
+- `SP07-073`: baja ant-farm / insect colony / vitrina observacional literal; queda como seccion biofuncional subterranea portable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en cierre fino, no en reescritura gruesa;
+- los cuatro presets conservan anchor material y sistema espacial, pero ya no dependen de escena fija o sujeto implicito demasiado cerrado;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de hobbit-home, ice-palace, tree-village y city-diorama lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica seguia util, pero aun
+arrastraba imaginario demasiado cerrado de madriguera pastoral, palacio de
+hielo, aldea arborea o maqueta urbana.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-059.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-061.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-065.yaml`
+
+Alcance:
+
+- `SP07-059`: baja hobbit-home / madriguera pastoral / aldea fija; queda como domesticidad bermada de refugio lento portable.
+- `SP07-061`: baja ice-palace / catedral invernal / salon real helado; queda como monumentalidad criomorfica reusable.
+- `SP07-062`: baja tree-village / tribal set / planeta selvatico fijo; queda como vernaculo suspendido de canopy portable.
+- `SP07-065`: baja ciudad miniatura / street-diorama / maqueta urbana literal; queda como construccion papercraft portable.
+
+Lectura de riesgo:
+
+- esta miniola sigue la linea de cierre fino sobre `pack_07`;
+- los cuatro presets conservan anchor material, escala y sistema de ensamblaje, pero ya no dependen de un escenario iconico demasiado frontal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de steam-city, sepulchral-cemetery, sky-terminal e inflatable-playform lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica material seguia fuerte,
+pero aun arrastraba imaginario demasiado frontal de ciudad steampunk,
+cementerio monumental, terminal aerea suspendida o playform inflable demasiado
+iconico.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-057.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-063.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-064.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-069.yaml`
+
+Alcance:
+
+- `SP07-057`: baja steam-city / transit-aerial / skyline clockwork demasiado frontal; queda como gramatica retroindustrial de presion portable.
+- `SP07-063`: baja cemetery / obelisk / crypt corridor demasiado literal; queda como monumentalidad ceremonial sepulcral reusable.
+- `SP07-064`: baja sky-terminal / floating-city iconica demasiado fija; queda como retrofuturo aerostatico suspendido portable.
+- `SP07-069`: baja inflatable-playform / castle-piece demasiado implicito; queda como arquitectura blanda presurizada portable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en cierre fino, no en cambio de categoria ni anchor material;
+- los cuatro presets conservan construccion, materia y atmosfera, pero ya no dependen de skyline, cementerio, terminal o pieza inflable demasiado literal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de boho-scene, idol-stage, flapper-party y space-court IP lock
+
+Nueva pasada sobre cuatro residuales donde el lenguaje ya era util, pero aun
+retenia demasiado festival fijo, escenario idol, speakeasy-party con props o
+space-opera royalty demasiado pegada a IP frontal.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-018.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-043.yaml`
+
+Alcance:
+
+- `SP08-004`: baja festival-desierto/crowd/stage y quita brief formulaico; queda como boho artesanal soleado portable.
+- `SP08-018`: baja idol body/group choreography/music-show set; queda como pop-performance tailoring mas reusable.
+- `SP08-031`: baja party/dancer/cigarette-holder scene y compacta brief; queda como jazz-age Deco eveningwear portable.
+- `SP08-043`: baja dependencia IP frontal (`Padme`/`Naboo`/`Coruscant`) y la reemplaza por corte galactica ceremonial reusable.
+
+Lectura de riesgo:
+
+- esta miniola no cambia categoria ni destruye anchor comercial;
+- los cuatro presets conservan energia de subcultura, eveningwear o corte espacial, pero ya no dependen de escena fija, cuerpo obligatorio o IP demasiado frontal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de retrofuturismo-persona, lolita-figure, disco-body y bridal-scene lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica ya servia, pero aun
+retenia persona inventor/aviator demasiado fija, dulzura lolita atada a figura,
+disco-bodycon party lock o romance nupcial demasiado literal.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-009.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-023.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-061.yaml`
+
+Alcance:
+
+- `SP08-009`: baja inventor/aviator/workshop-expedition persona; queda como retrofuturismo clockwork portable.
+- `SP08-023`: baja fixed girl / doll sweetness demasiado frontal; queda como lolita couture storybook reusable.
+- `SP08-058`: baja disco-dress/bodycon/dancefloor countdown lock; queda como sequin celebration surface behavior.
+- `SP08-061`: baja bride/veil/chapel/cathedral tableau y quita brief formulaico; queda como lace heirloom romance portable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina, no en cambio de subcategoria;
+- los cuatro presets conservan anchor comercial y material, pero ya no dependen de wearer lock, body-first framing o escena ceremonial demasiado fija;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de hype-branding, goth-character, elven-realm y office-headshot lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica seguia util, pero aun
+retenia branding/drop-culture demasiado frontal, goth character demasiado
+cerrado, fantasia elfica demasiado pegada a IP/realm, u officewear todavia muy
+atado a persona corporativa/headshot.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-007.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-013.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-019.yaml`
+
+Alcance:
+
+- `SP08-002`: baja visible branding / queue / resale-scene; queda como streetwear hype portable.
+- `SP08-007`: baja crypt-architecture / pale-skin / corseted-body stage; queda como darkwave couture reusable.
+- `SP08-013`: baja `Rivendell`/named-realm y fantasy princess lock; queda como elven-fairy ethereality portable.
+- `SP08-019`: baja headshot/executive persona y scene lock de oficina; queda como business-casual competence reusable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina y conserva anclas comerciales claras;
+- los cuatro presets mantienen identidad de subcultura, fantasia o daywear, pero ya no dependen de branding frontal, personaje fijo o encuadre corporativo demasiado literal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de quiet-luxury room, Tudor-portrait, founder-uniform y greaser-pinup lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica ya funcionaba, pero aun
+retenia showroom/room quiet-luxury demasiado sugerido, pintura Tudor/Holbein
+demasiado frontal, founder-uniform nombrado en exceso, o rockabilly todavia
+demasiado atado a pinup/greaser persona.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-003.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-012.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-017.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-024.yaml`
+
+Alcance:
+
+- `SP08-003`: baja showroom/closet/zen-room quiet luxury; queda como minimalismo material portable.
+- `SP08-012`: baja `Holbein`/Tudor portrait/queen-body; queda como corte renacentista reusable.
+- `SP08-017`: baja founder-name lock y auditorium/startup persona; queda como tech-industry uniform portable.
+- `SP08-024`: baja pinup-body/greaser persona/tattoo rebel frontal; queda como rockabilly Americana reusable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina, no en recategorizacion;
+- los cuatro presets conservan identidad comercial clara, pero ya no dependen de interior implied, portrait paint logic, founder persona o rebel-body lock demasiado literal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de runway-apex, activewear-body, grunge-bedroom y cottage-prop lock
+
+Nueva pasada sobre cuatro residuales donde la gramatica ya era estable, pero aun
+retenia fashion-week/runway apex demasiado frontal, body-read atlético
+demasiado fuerte, slacker-bedroom grunge demasiado sugerido o kit pastoral de
+cottagecore demasiado prop-first.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-001.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-005.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-022.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-028.yaml`
+
+Alcance:
+
+- `SP08-001`: baja runway/fashion-week staging; queda como couture escultórica portable.
+- `SP08-005`: baja second-skin fitness-body y gym pose; queda como activewear engineered reusable.
+- `SP08-022`: baja Seattle/slacker-bedroom persona; queda como grunge material portable.
+- `SP08-028`: baja basket/bread/cottage tableau demasiado frontal; queda como pastoral textile mood reusable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina y no cambia categorias;
+- los cuatro presets mantienen anchor comercial claro, pero ya no dependen de staging de pasarela, lectura corporal atlética o prop-kit demasiado fijo;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de techwear-IP, surplus-soldier, mourning-widow y hologram-space-opera lock
+
+Nueva pasada sobre cuatro residuales donde el lenguaje ya era fuerte, pero aun
+retenia firma techwear demasiado pegada a referencia de autor/IP, surplus muy
+atado a soldado-persona, mourning demasiado pegado a widow portrait, o
+holograma demasiado frontal en space-opera staging.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-006.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-014.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-032.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-078.yaml`
+
+Alcance:
+
+- `SP08-006`: baja firma autoral/mercenary role y compacta brief; queda como cyberpunk techwear portable.
+- `SP08-014`: baja soldier persona y combate frontal; queda como surplus utility reusable.
+- `SP08-032`: baja widow portrait/window tableau; queda como mourning regalia portable.
+- `SP08-078`: baja `Star Wars` staging y apparition-body lock; queda como transmission shimmer reusable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina y no altera categorias;
+- los cuatro presets conservan anchor material y de genero, pero ya no dependen de rol fijo, retrato ritual o staging de franquicia demasiado frontal;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_08` miniola residual de punk-lore, prep-wealth, hippie-commune y biker-persona lock
+
+Nueva pasada sobre cuatro residuales donde el lenguaje seguia funcionando, pero
+todavia retenia lore subcultural demasiado frontal: punk boutique demasiado
+historizado, prep wealth demasiado tableau, hippie commune demasiado sugerida y
+biker outlaw demasiado persona-first.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-010.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-025.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml`
+
+Alcance:
+
+- `SP08-008`: baja lore boutique/hair-body lock; queda como punk refusal portable.
+- `SP08-010`: baja country-club / inherited-wealth tableau; queda como prep heritage reusable.
+- `SP08-025`: baja commune/group tableau y festival blandito; queda como 60s counterculture portable.
+- `SP08-026`: baja biker persona / literal motorcycle framing; queda como outlaw utility reusable.
+
+Lectura de riesgo:
+
+- esta miniola sigue en precision fina y no cambia categorias;
+- los cuatro presets conservan ancla comercial clara, pero ya no dependen de una microescena social o persona demasiado obligatoria;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` miniola residual de boilerplate en brief portable
+
+Nueva pasada sobre cuatro presets ya refinados semanticamente, pero que todavia
+arrastraban la misma cola formulaica en ingles (`Apply this spatial/worldbuilding
+grammar over any input`) dentro del `creative_brief`.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-040.yaml`
+
+Alcance:
+
+- `SP07-004`: quita boilerplate final y deja hygge portable en formulacion directa.
+- `SP07-008`: quita boilerplate final y deja calma zen modular mas natural.
+- `SP07-038`: quita boilerplate final y deja osario subterraneo portable sin coletilla plantilla.
+- `SP07-040`: quita boilerplate final y deja ensamblaje arboreo portable con cierre directo.
+
+Lectura de riesgo:
+
+- esta miniola no cambia anchor, categoria ni sistema espacial;
+- el objetivo fue puramente limpiar brief formulaico residual para que el cierre semantico de `pack_07` no quede contaminado por plantilla repetida;
+- sus defaults actuales deben tratarse otra vez como obsoletos hasta regenerar cards nuevas.
+
+## Tanda 2026-06-12 - `pack_07` cierre residual de boilerplate en briefs portables
+
+Segunda pasada de cleanup editorial sobre los ultimos nueve presets de `pack_07`
+que aun conservaban la coletilla `Apply this spatial/worldbuilding grammar over
+any input` en `creative_brief`.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-060.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-061.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-068.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-071.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-073.yaml`
+
+Alcance:
+
+- `SP07-043`: reemplaza formula generica por regla directa de materia mineral seca, rastrillado, escala contenida y silencio compositivo.
+- `SP07-055`: deja surrealismo confitero como logica de glaseado, soporte candy y ensamblaje ludico sin escena infantil fija.
+- `SP07-058`: deja crecimiento prismático y refraccion mineral sin skyline/templo/aguja obligatoria.
+- `SP07-060`: deja deformacion haunted-cartoon como masa grafica y atmosfera spooky ludica sin set Halloween obligatorio.
+- `SP07-061`: deja monumentalidad criomorfica por faceta, refraccion fria y escala sin palacio/catedral literal.
+- `SP07-062`: deja vernaculo suspendido por materiales vivos, tension de cuerda y amarres sin pueblo arboreo fijo.
+- `SP07-068`: deja carton improvisado por corrugado, cinta y carga remendada sin playroom o maqueta cerrada.
+- `SP07-071`: deja morfologia fungica por cap-stem, microescala humeda y tactilidad biologica sin cottage/cluster narrativo.
+- `SP07-073`: deja seccion biofuncional por capilaridad, estratos y organizacion interna sin hormiguero/vitrina literal.
+
+Lectura de riesgo:
+
+- esta miniola no cambia categoria, assets ni taxonomy;
+- `rg "Apply this spatial/worldbuilding grammar over any input" components/recipes/styles/manifests/presets/pack_07` ya no devuelve matches;
+- sus defaults actuales deben tratarse como obsoletos hasta regenerar cards nuevas, porque el `creative_brief` cambio.
+
+## Tanda 2026-06-12 - `pack_08` miniola de subject-lock en nombres visibles
+
+Pasada minima sobre dos presets ya suavizados en `visualDna`, pero cuyo `name`
+seguia forzando sujeto/persona en la superficie visible.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_08/SP08-017.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-018.yaml`
+
+Alcance:
+
+- `SP08-017`: `Tech CEO` pasa a `Tech-Industry Uniform`; conserva black knit/product-launch minimalism sin fundador obligatorio.
+- `SP08-018`: `K-Pop Idol` pasa a `Pop-Performance Tailoring`; conserva pop-comeback polish sin idol-body obligatorio.
+
+Lectura de riesgo:
+
+- esta miniola toca nombres visibles y, por criterio de card, vuelve obsoletas las defaults actuales de esos ids;
+- no cambia categoria, assets ni taxonomy;
+- el objetivo fue alinear label visible con el brief portable ya existente.
+
+## Tanda 2026-06-12 - cierre ampliado de boilerplate residual `pack_07` / `pack_08`
+
+Tercera pasada de cleanup sobre residuos que no aparecian en la busqueda exacta
+porque la frase estaba partida por saltos de linea o usaba la variante
+`fashion/costume grammar`.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-034.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-049.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-059.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-065.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-069.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-080.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-073.yaml`
+
+Alcance:
+
+- `pack_07`: reemplaza cierre boilerplate por reglas directas por preset para patina institucional, borde postindustrial, turf estrategico, forge megalitico, pastoral bermed, papercraft, wet-sand, vinyl playform, orbital habitat, cybernetic hive y consola dimensional.
+- `SP08-073`: reemplaza la plantilla `fashion/costume grammar` por cierre directo de pigment couture sin nude-body setup ni cuerpo obligatorio.
+
+Lectura de riesgo:
+
+- no cambia categoria, assets ni taxonomy;
+- `rg "Apply this|spatial/worldbuilding grammar|fashion/costume grammar|signature construction rules" components/recipes/styles/manifests/presets/pack_07 components/recipes/styles/manifests/presets/pack_08` ya no devuelve matches;
+- estos cambios de `creative_brief` vuelven obsoletas las defaults actuales de esos ids hasta regenerar cards.
+
+## Tanda 2026-06-12 - `pack_01` visual missing defaults ola `missing_p01_a`
+
+Primera ola visual `2x2` sobre defaults realmente faltantes de `pack_01`.
+
+Presets generados:
+
+- `SP01-082` / `Seamless Packshot`
+- `SP01-083` / `Luxury Macro Gleam`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-082|SP01-083" --parallel=2 --session-suffix=missing_p01_a --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP01-082.webp`
+  - `assets/recipes/styles/defaults/SP01-083.webp`
+- `bun run styles:validate -- --pack=pack_01 --coverage` -> `pack_01 defaultImages=83/87 missingDefaultImages=4`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- quedan pendientes `SP01-084..087` como missing reales de `pack_01`;
+- la generacion uso suffix global de denoise y control de microdetalle.
+
+## Tanda 2026-06-12 - `pack_01` visual missing defaults olas `missing_p01_b` y `missing_p01_c`
+
+Cierre visual de defaults realmente faltantes en `pack_01`, manteniendo cadencia `2x2`.
+
+Presets generados:
+
+- `SP01-084` / `Cosmetic Gloss Still Life`
+- `SP01-085` / `Tech Hardware Hero`
+- `SP01-086` / `Cold Condensation Commercial`
+- `SP01-087` / `E-Commerce White Sweep`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-084|SP01-085" --parallel=2 --session-suffix=missing_p01_b --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- `bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-086|SP01-087" --parallel=2 --session-suffix=missing_p01_c --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP01-084.webp`
+  - `assets/recipes/styles/defaults/SP01-085.webp`
+  - `assets/recipes/styles/defaults/SP01-086.webp`
+  - `assets/recipes/styles/defaults/SP01-087.webp`
+- `bun run styles:validate -- --pack=pack_01 --coverage` -> `pack_01 defaultImages=87/87 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- `pack_01` queda sin missing defaults;
+- se removieron `SP01-084..087` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la UI dev/Electron puede necesitar restart para que `import.meta.glob` descubra `.webp` agregados durante la sesion.
+
+## Tanda 2026-06-12 - `pack_02` visual missing defaults ola `missing_p02_a`
+
+Primera ola visual `2x2` sobre defaults realmente faltantes de `pack_02`.
+
+Presets generados:
+
+- `SP02-121` / `Analog Sitcom Multicam`
+- `SP02-122` / `Local News Chroma Key Package`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-121|SP02-122" --parallel=2 --session-suffix=missing_p02_a --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP02-121.webp`
+  - `assets/recipes/styles/defaults/SP02-122.webp`
+- `bun run styles:validate -- --pack=pack_02 --coverage` -> `pack_02 defaultImages=122/128 missingDefaultImages=6`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- quedan pendientes `SP02-123..128` como missing reales de `pack_02`;
+- se removieron `SP02-121/122` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle.
+
+## Tanda 2026-06-12 - `pack_02` visual missing defaults ola `missing_p02_b`
+
+Segunda ola visual `2x2` sobre defaults realmente faltantes de `pack_02`.
+
+Presets generados:
+
+- `SP02-123` / `Public Access Cable Crawl`
+- `SP02-124` / `VHS Sports Replay Broadcast`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-123|SP02-124" --parallel=2 --session-suffix=missing_p02_b --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP02-123.webp`
+  - `assets/recipes/styles/defaults/SP02-124.webp`
+- `bun run styles:validate -- --pack=pack_02 --coverage` -> `pack_02 defaultImages=124/128 missingDefaultImages=4`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- quedan pendientes `SP02-125..128` como missing reales de `pack_02`;
+- se removieron `SP02-123/124` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle.
+
+## Tanda 2026-06-12 - `pack_02` visual missing defaults ola `missing_p02_c`
+
+Tercera ola visual `2x2` sobre defaults realmente faltantes de `pack_02`.
+
+Presets generados:
+
+- `SP02-125` / `Weather Radar Doppler Graphic`
+- `SP02-126` / `Late Night Infomercial Gloss`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-125|SP02-126" --parallel=2 --session-suffix=missing_p02_c --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP02-125.webp`
+  - `assets/recipes/styles/defaults/SP02-126.webp`
+- `bun run styles:validate -- --pack=pack_02 --coverage` -> `pack_02 defaultImages=126/128 missingDefaultImages=2`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- quedan pendientes `SP02-127..128` como missing reales de `pack_02`;
+- se removieron `SP02-125/126` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle.
+
+## Tanda 2026-06-12 - `pack_02` visual missing defaults ola `missing_p02_d`
+
+Cierre visual de defaults realmente faltantes de `pack_02`.
+
+Presets generados:
+
+- `SP02-127` / `Interlaced Music Video Glow`
+- `SP02-128` / `Emergency Broadcast Signal Break`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-127|SP02-128" --parallel=2 --session-suffix=missing_p02_d --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos creados:
+  - `assets/recipes/styles/defaults/SP02-127.webp`
+  - `assets/recipes/styles/defaults/SP02-128.webp`
+- `bun run styles:validate -- --pack=pack_02 --coverage` -> `pack_02 defaultImages=128/128 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- `pack_02` queda sin missing defaults;
+- se removieron `SP02-127/128` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_a`
+
+Primera ola visual `2x2` sobre cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-011` / `Vintage 1950s`
+- `SP08-015` / `Cosplay Anime`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-011|SP08-015" --parallel=2 --session-suffix=stale_p08_a --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-011.webp`
+  - `assets/recipes/styles/defaults/SP08-015.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-011/015` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida dentro de la miniola prioritaria: `SP08-020|SP08-072`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_b`
+
+Cierre de la primera miniola prioritaria de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-020` / `Red Carpet Gown`
+- `SP08-072` / `Tattoo Skin`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-020|SP08-072" --parallel=2 --session-suffix=stale_p08_b --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-020.webp`
+  - `assets/recipes/styles/defaults/SP08-072.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-020/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-030|SP08-034`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_c`
+
+Segunda miniola prioritaria de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-030` / `Raver (90s)`
+- `SP08-034` / `Roman Gladiator`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-030|SP08-034" --parallel=2 --session-suffix=stale_p08_c --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-030.webp`
+  - `assets/recipes/styles/defaults/SP08-034.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-030/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-063|SP08-070`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_d`
+
+Cierre de la segunda miniola prioritaria de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-063` / `Feathers`
+- `SP08-070` / `Fire Dress`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-063|SP08-070" --parallel=2 --session-suffix=stale_p08_d --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-063.webp`
+  - `assets/recipes/styles/defaults/SP08-070.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-063/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-057|SP08-064`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_e`
+
+Cierre de la siguiente miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-057` / `Tweed Suit`
+- `SP08-064` / `Burlap/Rags`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-057|SP08-064" --parallel=2 --session-suffix=stale_p08_e --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-057.webp`
+  - `assets/recipes/styles/defaults/SP08-064.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-057/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-066|SP08-071`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_f`
+
+Cierre de la siguiente miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-066` / `Origami Paper`
+- `SP08-071` / `Porcelain Doll`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-066|SP08-071" --parallel=2 --session-suffix=stale_p08_f --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-066.webp`
+  - `assets/recipes/styles/defaults/SP08-071.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-066/071` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-062|SP08-068`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_g`
+
+Cierre de la siguiente miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-062` / `Leather Armor`
+- `SP08-068` / `Smoke Dress`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-062|SP08-068" --parallel=2 --session-suffix=stale_p08_g --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-062.webp`
+  - `assets/recipes/styles/defaults/SP08-068.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-062/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-069|SP08-074`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_h`
+
+Cierre de la siguiente miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-069` / `Water Dress`
+- `SP08-074` / `Bandage/Mummy`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-069|SP08-074" --parallel=2 --session-suffix=stale_p08_h --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-069.webp`
+  - `assets/recipes/styles/defaults/SP08-074.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-069/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-065|SP08-067`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_i`
+
+Cierre de la siguiente miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-065` / `Neon Light Suit`
+- `SP08-067` / `Bubble Wrap`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-065|SP08-067" --parallel=2 --session-suffix=stale_p08_i --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-065.webp`
+  - `assets/recipes/styles/defaults/SP08-067.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-065/067` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-077|SP08-078`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_j`
+
+Cierre de la ultima miniola 2x2 de cards stale por refresh semantico reciente de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-077` / `Stone Statue`
+- `SP08-078` / `Hologram`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-077|SP08-078" --parallel=2 --session-suffix=stale_p08_j --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-077.webp`
+  - `assets/recipes/styles/defaults/SP08-078.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proximo foco sugerido: revisar el stale runtime remanente de `pack_08` fuera de esta miniola antes de pasar a category bases.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_k`
+
+Inicio de limpieza 2x2 del stale remanente historico de `pack_08`, despues de cerrar la miniola reciente.
+
+Presets regenerados:
+
+- `SP08-001` / `Haute Couture`
+- `SP08-002` / `Streetwear Hypebeast`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-001|SP08-002" --parallel=2 --session-suffix=stale_p08_k --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-001.webp`
+  - `assets/recipes/styles/defaults/SP08-002.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-003|SP08-004`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_l`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-003` / `Minimalist Chic`
+- `SP08-004` / `Boho Festival`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-003|SP08-004" --parallel=2 --session-suffix=stale_p08_l --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-003.webp`
+  - `assets/recipes/styles/defaults/SP08-004.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-005|SP08-006`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_m`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-005` / `Athleisure Sport`
+- `SP08-006` / `Cyberpunk Techwear`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-005|SP08-006" --parallel=2 --session-suffix=stale_p08_m --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-005.webp`
+  - `assets/recipes/styles/defaults/SP08-006.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-007|SP08-008`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_n`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-007` / `Goth Darkwave`
+- `SP08-008` / `Punk Rock`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-007|SP08-008" --parallel=2 --session-suffix=stale_p08_n --force`
+- resultado: el shell expiro despues de `604028ms`; verificacion posterior mostro app-server saludable, `activeWorkerCount=0`, y ambos assets refrescados en disco.
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-007.webp`
+  - `assets/recipes/styles/defaults/SP08-008.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-009|SP08-010`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_o`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-009` / `Steampunk Inventor`
+- `SP08-010` / `Preppy Ivy League`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-009|SP08-010" --parallel=2 --session-suffix=stale_p08_o --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-009.webp`
+  - `assets/recipes/styles/defaults/SP08-010.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-012|SP08-013`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_p`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-012` / `Renaissance Royal`
+- `SP08-013` / `Ethereal Fantasy`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-012|SP08-013" --parallel=2 --session-suffix=stale_p08_p --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-012.webp`
+  - `assets/recipes/styles/defaults/SP08-013.webp`
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-012/013` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-014|SP08-016`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_q`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-014` / `Military Surplus`
+- `SP08-016` / `Normcore`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-014|SP08-016" --parallel=2 --session-suffix=stale_p08_q --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-014.webp`
+  - `assets/recipes/styles/defaults/SP08-016.webp`
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-014/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-017|SP08-018`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_r`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-017` / `Tech-Industry Uniform`
+- `SP08-018` / `Pop-Performance Tailoring`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-017|SP08-018" --parallel=2 --session-suffix=stale_p08_r --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-017.webp`
+  - `assets/recipes/styles/defaults/SP08-018.webp`
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-019|SP08-021`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_s`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-019` / `Business Casual`
+- `SP08-021` / `Pastel Goth`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-019|SP08-021" --parallel=2 --session-suffix=stale_p08_s --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-019.webp`
+  - `assets/recipes/styles/defaults/SP08-021.webp`
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-019/021` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-022|SP08-023`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_t`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-022` / `Grunge (90s)`
+- `SP08-023` / `Lolita Fashion`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-022|SP08-023" --parallel=2 --session-suffix=stale_p08_t --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-022.webp`
+  - `assets/recipes/styles/defaults/SP08-023.webp`
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-022/023` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-024|SP08-025`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_u`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-024` / `Rockabilly`
+- `SP08-025` / `Hippie (60s)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-024|SP08-025" --parallel=2 --session-suffix=stale_p08_u --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-024.webp`
+  - `assets/recipes/styles/defaults/SP08-025.webp`
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-024/025` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-026|SP08-027`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_v`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-026` / `Biker Gang`
+- `SP08-027` / `Skater Style`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-026|SP08-027" --parallel=2 --session-suffix=stale_p08_v --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-026.webp` (`317812` bytes)
+  - `assets/recipes/styles/defaults/SP08-027.webp` (`232076` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=51/80 staleDefaultImages=29 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-026/027` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-028|SP08-029`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_w`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-028` / `Cottagecore`
+- `SP08-029` / `Dark Academia`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-028|SP08-029" --parallel=2 --session-suffix=stale_p08_w --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-028.webp` (`325456` bytes)
+  - `assets/recipes/styles/defaults/SP08-029.webp` (`327126` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=53/80 staleDefaultImages=27 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-028/029` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-031|SP08-032`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_x`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-031` / `Roaring 20s (Flapper)`
+- `SP08-032` / `Victorian Mourning`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-031|SP08-032" --parallel=2 --session-suffix=stale_p08_x --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-031.webp` (`367342` bytes)
+  - `assets/recipes/styles/defaults/SP08-032.webp` (`245336` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=55/80 staleDefaultImages=25 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-033|SP08-035`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_y`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-033` / `Ancient Egyptian`
+- `SP08-035` / `Samurai Armor`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-033|SP08-035" --parallel=2 --session-suffix=stale_p08_y --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-033.webp` (`431838` bytes)
+  - `assets/recipes/styles/defaults/SP08-035.webp` (`375530` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=57/80 staleDefaultImages=23 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-033/035` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-038|SP08-039`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_z`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-038` / `Disco (70s)`
+- `SP08-039` / `French Revolution`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-038|SP08-039" --parallel=2 --session-suffix=stale_p08_z --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-038.webp` (`348324` bytes)
+  - `assets/recipes/styles/defaults/SP08-039.webp` (`412692` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=59/80 staleDefaultImages=21 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-038/039` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-040|SP08-042`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_aa`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-040` / `Space Suit (Retro)`
+- `SP08-042` / `Post-Apocalyptic Scavenger`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-040|SP08-042" --parallel=2 --session-suffix=stale_p08_aa --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-040.webp` (`332804` bytes)
+  - `assets/recipes/styles/defaults/SP08-042.webp` (`417270` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=61/80 staleDefaultImages=19 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-040/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-043|SP08-046`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_ab`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-043` / `Space Opera Royal`
+- `SP08-046` / `Mech Pilot Suit`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-043|SP08-046" --parallel=2 --session-suffix=stale_p08_ab --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-043.webp` (`452440` bytes)
+  - `assets/recipes/styles/defaults/SP08-046.webp` (`246536` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=63/80 staleDefaultImages=17 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-043/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-047|SP08-049`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_ac`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-047` / `Vampire Lord`
+- `SP08-049` / `Pelagic Tail Couture`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-047|SP08-049" --parallel=2 --session-suffix=stale_p08_ac --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-047.webp` (`163932` bytes)
+  - `assets/recipes/styles/defaults/SP08-049.webp` (`311448` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=65/80 staleDefaultImages=15 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-047/049` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-051|SP08-052`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_ad`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-051` / `High-Gloss Polymer`
+- `SP08-052` / `Denim on Denim`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-051|SP08-052" --parallel=2 --session-suffix=stale_p08_ad --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-051.webp` (`173104` bytes)
+  - `assets/recipes/styles/defaults/SP08-052.webp` (`401014` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=67/80 staleDefaultImages=13 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-053|SP08-054`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_ae`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-053` / `Fur Coat`
+- `SP08-054` / `Chainmail`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-053|SP08-054" --parallel=2 --session-suffix=stale_p08_ae --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-053.webp` (`368324` bytes)
+  - `assets/recipes/styles/defaults/SP08-054.webp` (`597278` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=69/80 staleDefaultImages=11 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-055|SP08-056`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_af`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-055` / `Knitted Wool`
+- `SP08-056` / `Liquid Satin Drape`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-055|SP08-056" --parallel=2 --session-suffix=stale_p08_af --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-055.webp` (`267368` bytes)
+  - `assets/recipes/styles/defaults/SP08-056.webp` (`204266` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=71/80 staleDefaultImages=9 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-058|SP08-059`.
+
+## Tanda 2026-06-12 - `pack_08` visual stale refresh ola `stale_p08_ag`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-058` / `Sequins`
+- `SP08-059` / `Transparent Plastic`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-058|SP08-059" --parallel=2 --session-suffix=stale_p08_ag --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-058.webp` (`473738` bytes)
+  - `assets/recipes/styles/defaults/SP08-059.webp` (`229032` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=73/80 staleDefaultImages=7 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-058/059` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-060|SP08-061`.
+
+## Tanda 2026-06-14 - `pack_08` visual stale refresh ola `stale_p08_ah`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-060` / `Velvet`
+- `SP08-061` / `Lace`
+
+Evidencia:
+
+- primer intento fallo antes de generar por backend local apagado: `ConnectionRefused` en `http://127.0.0.1:17223/api/health`;
+- se levanto `bun run dev:server` y se relanzo misma ola;
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-060|SP08-061" --parallel=2 --session-suffix=stale_p08_ah --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-060.webp` (`218104` bytes)
+  - `assets/recipes/styles/defaults/SP08-061.webp` (`455822` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=75/80 staleDefaultImages=5 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-060/061` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-073|SP08-075`.
+
+## Tanda 2026-06-14 - `pack_08` visual stale refresh ola `stale_p08_ai`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-073` / `Body Paint`
+- `SP08-075` / `Gold Leaf`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-073|SP08-075" --parallel=2 --session-suffix=stale_p08_ai --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-073.webp` (`347180` bytes)
+  - `assets/recipes/styles/defaults/SP08-075.webp` (`510388` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=77/80 staleDefaultImages=3 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-073/075` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-076|SP08-079`.
+
+## Tanda 2026-06-14 - `pack_08` visual stale refresh ola `stale_p08_aj`
+
+Continuacion de limpieza 2x2 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-076` / `Slime/Goo`
+- `SP08-079` / `Invisibility Cloak`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-076|SP08-079" --parallel=2 --session-suffix=stale_p08_aj --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-076.webp` (`374976` bytes)
+  - `assets/recipes/styles/defaults/SP08-079.webp` (`259670` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=79/80 staleDefaultImages=1 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP08-076/079` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP08-080`.
+
+## Tanda 2026-06-14 - `pack_08` visual stale refresh ola `stale_p08_ak`
+
+Cierre 1x1 del stale remanente historico de `pack_08`.
+
+Presets regenerados:
+
+- `SP08-080` / `Shadow Form`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 --preset=SP08-080 --parallel=1 --session-suffix=stale_p08_ak --force`
+- resultado: `generated=1 attempted=1 skipped=79 failed=0 packs=pack_08`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP08-080.webp` (`147198` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removio `SP08-080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `pack_08` visual stale queda cerrado: `80/80` cards disponibles, `0` stale, `0` missing.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_a`
+
+Inicio 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-001` / `Oak Wood (Raw)`
+- `SP09-002` / `Mahogany (Polished)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-001|SP09-002" --parallel=2 --session-suffix=stale_p09_a --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-001.webp` (`278854` bytes)
+  - `assets/recipes/styles/defaults/SP09-002.webp` (`222168` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=2/80 staleDefaultImages=78 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-003|SP09-004`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_b`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-003` / `Birch Bark`
+- `SP09-004` / `Granite (Polished)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-003|SP09-004" --parallel=2 --session-suffix=stale_p09_b --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-003.webp` (`281906` bytes)
+  - `assets/recipes/styles/defaults/SP09-004.webp` (`297452` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=4/80 staleDefaultImages=76 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-005|SP09-006`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_c`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-005` / `Sandstone (Rough)`
+- `SP09-006` / `Marble (Carrara)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-005|SP09-006" --parallel=2 --session-suffix=stale_p09_c --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-005.webp` (`482830` bytes)
+  - `assets/recipes/styles/defaults/SP09-006.webp` (`183120` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=6/80 staleDefaultImages=74 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-007|SP09-008`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_d`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-007` / `Slate (Split)`
+- `SP09-008` / `Mossy Rock`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-007|SP09-008" --parallel=2 --session-suffix=stale_p09_d --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-007.webp` (`259178` bytes)
+  - `assets/recipes/styles/defaults/SP09-008.webp` (`376106` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=8/80 staleDefaultImages=72 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-009|SP09-010`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_e`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-009` / `River Stones`
+- `SP09-010` / `Obsidian`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-009|SP09-010" --parallel=2 --session-suffix=stale_p09_e --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-009.webp` (`174698` bytes)
+  - `assets/recipes/styles/defaults/SP09-010.webp` (`247228` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=10/80 staleDefaultImages=70 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-011|SP09-012`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_f`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-011` / `Wolf Fur`
+- `SP09-012` / `Snake Scales`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-011|SP09-012" --parallel=2 --session-suffix=stale_p09_f --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-011.webp` (`338286` bytes)
+  - `assets/recipes/styles/defaults/SP09-012.webp` (`270324` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=12/80 staleDefaultImages=68 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-013|SP09-014`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_g`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-013` / `Bird Feathers`
+- `SP09-014` / `Coral Reef`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-013|SP09-014" --parallel=2 --session-suffix=stale_p09_g --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-013.webp` (`312112` bytes)
+  - `assets/recipes/styles/defaults/SP09-014.webp` (`308680` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=14/80 staleDefaultImages=66 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-015|SP09-016`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_h`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-015` / `Honeycomb Wax`
+- `SP09-016` / `Glacier Ice`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-015|SP09-016" --parallel=2 --session-suffix=stale_p09_h --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-015.webp` (`297664` bytes)
+  - `assets/recipes/styles/defaults/SP09-016.webp` (`434778` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=16/80 staleDefaultImages=64 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-017|SP09-018`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_i`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-017` / `Brushed Aluminum`
+- `SP09-018` / `Rusty Iron`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-017|SP09-018" --parallel=2 --session-suffix=stale_p09_i --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-017.webp` (`205340` bytes)
+  - `assets/recipes/styles/defaults/SP09-018.webp` (`244374` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=18/80 staleDefaultImages=62 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-019|SP09-020`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_j`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-019` / `Gold Leaf`
+- `SP09-020` / `Copper Patina`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-019|SP09-020" --parallel=2 --session-suffix=stale_p09_j --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-019.webp` (`481600` bytes)
+  - `assets/recipes/styles/defaults/SP09-020.webp` (`346650` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=20/80 staleDefaultImages=60 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-021|SP09-022`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_k`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-021` / `Carbon Fiber (Forged)`
+- `SP09-022` / `Concrete (Raw)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-021|SP09-022" --parallel=2 --session-suffix=stale_p09_k --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-021.webp` (`323232` bytes)
+  - `assets/recipes/styles/defaults/SP09-022.webp` (`282572` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=22/80 staleDefaultImages=58 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-023|SP09-024`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_l`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-023` / `Brick Wall (Aged)`
+- `SP09-024` / `Asphalt (Wet)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-023|SP09-024" --parallel=2 --session-suffix=stale_p09_l --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-023.webp` (`503760` bytes)
+  - `assets/recipes/styles/defaults/SP09-024.webp` (`328926` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=24/80 staleDefaultImages=56 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-025|SP09-026`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_m`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-025` / `Porcelain (Cracked)`
+- `SP09-026` / `Plastic (Injection Molded)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-025|SP09-026" --parallel=2 --session-suffix=stale_p09_m --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-025.webp` (`304768` bytes)
+  - `assets/recipes/styles/defaults/SP09-026.webp` (`144330` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=26/80 staleDefaultImages=54 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-027|SP09-028`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_n`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-027` / `Rubber (Tire)`
+- `SP09-028` / `Glass (Shattered)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-027|SP09-028" --parallel=2 --session-suffix=stale_p09_n --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-027.webp` (`310232` bytes)
+  - `assets/recipes/styles/defaults/SP09-028.webp` (`206872` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=28/80 staleDefaultImages=52 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-029|SP09-030`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_o`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-029` / `Velvet Fabric`
+- `SP09-030` / `Burlap Sack`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-029|SP09-030" --parallel=2 --session-suffix=stale_p09_o --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-029.webp` (`151338` bytes)
+  - `assets/recipes/styles/defaults/SP09-030.webp` (`386408` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=30/80 staleDefaultImages=50 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-029/030` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-031|SP09-032`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_p`
+
+Continuacion 2x2 del stale historico de `pack_09`, con repair 1x1 por timeout local.
+
+Presets regenerados:
+
+- `SP09-031` / `Latex (Shiny)`
+- `SP09-032` / `Cardboard`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-031|SP09-032" --parallel=2 --session-suffix=stale_p09_p --force`
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-031" --parallel=1 --session-suffix=stale_p09_p_repair --force`
+- resultado: ambos comandos alcanzaron el timeout local de tool, pero los archivos y entradas de manifest quedaron materializados y verificados despues del timeout.
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-031.webp` (`200262` bytes)
+  - `assets/recipes/styles/defaults/SP09-032.webp` (`296490` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=32/80 staleDefaultImages=48 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-033|SP09-034`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_q`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-033` / `Peeling Paint`
+- `SP09-034` / `Mold & Mildew`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-033|SP09-034" --parallel=2 --session-suffix=stale_p09_q --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-033.webp` (`391794` bytes)
+  - `assets/recipes/styles/defaults/SP09-034.webp` (`336362` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=34/80 staleDefaultImages=46 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-033/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-035|SP09-036`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_r`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-035` / `Burnt Wood (Shou Sugi Ban)`
+- `SP09-036` / `Water Damage`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-035|SP09-036" --parallel=2 --session-suffix=stale_p09_r --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-035.webp` (`202784` bytes)
+  - `assets/recipes/styles/defaults/SP09-036.webp` (`418596` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=36/80 staleDefaultImages=44 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-035/036` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-037|SP09-038`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_s`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-037` / `Scratched Metal`
+- `SP09-038` / `Dusty Surface`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-037|SP09-038" --parallel=2 --session-suffix=stale_p09_s --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-037.webp` (`286066` bytes)
+  - `assets/recipes/styles/defaults/SP09-038.webp` (`254738` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=38/80 staleDefaultImages=42 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-037/038` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-039|SP09-040`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_t`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-039` / `Frozen/Frosted`
+- `SP09-040` / `Oil Stains`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-039|SP09-040" --parallel=2 --session-suffix=stale_p09_t --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-039.webp` (`364468` bytes)
+  - `assets/recipes/styles/defaults/SP09-040.webp` (`411048` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=40/80 staleDefaultImages=40 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-039/040` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-041|SP09-042`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_u`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-041` / `Sandpaper`
+- `SP09-042` / `Bubble Wrap`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-041|SP09-042" --parallel=2 --session-suffix=stale_p09_u --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-041.webp` (`415306` bytes)
+  - `assets/recipes/styles/defaults/SP09-042.webp` (`435062` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=42/80 staleDefaultImages=38 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-043|SP09-044`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_v`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-043` / `Slime/Goo`
+- `SP09-044` / `Sponge (Sea)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-043|SP09-044" --parallel=2 --session-suffix=stale_p09_v --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-043.webp` (`285788` bytes)
+  - `assets/recipes/styles/defaults/SP09-044.webp` (`199324` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=44/80 staleDefaultImages=36 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-045|SP09-046`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_w`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-045` / `Felt Fabric`
+- `SP09-046` / `Sequins`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-045|SP09-046" --parallel=2 --session-suffix=stale_p09_w --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-045.webp` (`312142` bytes)
+  - `assets/recipes/styles/defaults/SP09-046.webp` (`296000` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=46/80 staleDefaultImages=34 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-047|SP09-048`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_x`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-047` / `Fur (Synthetic)`
+- `SP09-048` / `Cork Board`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-047|SP09-048" --parallel=2 --session-suffix=stale_p09_x --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-047.webp` (`282766` bytes)
+  - `assets/recipes/styles/defaults/SP09-048.webp` (`314732` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=48/80 staleDefaultImages=32 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-049|SP09-050`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_y`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-049` / `Velcro`
+- `SP09-050` / `Chalk (Dry)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-049|SP09-050" --parallel=2 --session-suffix=stale_p09_y --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-049.webp` (`339704` bytes)
+  - `assets/recipes/styles/defaults/SP09-050.webp` (`535418` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=50/80 staleDefaultImages=30 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-051|SP09-052`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_z`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-051` / `Fire & Magma`
+- `SP09-052` / `Electricity/Lightning`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-051|SP09-052" --parallel=2 --session-suffix=stale_p09_z --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-051.webp` (`508350` bytes)
+  - `assets/recipes/styles/defaults/SP09-052.webp` (`308432` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=52/80 staleDefaultImages=28 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-053|SP09-054`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_aa`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-053` / `Smoke/Fog`
+- `SP09-054` / `Water Splash`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-053|SP09-054" --parallel=2 --session-suffix=stale_p09_aa --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-053.webp` (`112766` bytes)
+  - `assets/recipes/styles/defaults/SP09-054.webp` (`370414` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=54/80 staleDefaultImages=26 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-055|SP09-056`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_ab`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-055` / `Crystal/Gemstone`
+- `SP09-056` / `Plasma/Energy`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-055|SP09-056" --parallel=2 --session-suffix=stale_p09_ab --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-055.webp` (`399012` bytes)
+  - `assets/recipes/styles/defaults/SP09-056.webp` (`300538` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=56/80 staleDefaultImages=24 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-057|SP09-058`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_ac`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-057` / `Oil on Water`
+- `SP09-058` / `Sparks`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-057|SP09-058" --parallel=2 --session-suffix=stale_p09_ac --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-057.webp` (`380414` bytes)
+  - `assets/recipes/styles/defaults/SP09-058.webp` (`333932` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-059|SP09-060`.

@@ -93,24 +93,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, cold, metal, plastic',
     style: {
       aesthetic:
-        'Higiene visual nórdica orientada al confort térmico, intimidad suave y bienestar cotidiano sin ruido formal.',
+        'Confort nordico de bajo contraste, intimidad termica y bienestar cotidiano traducidos a una gramatica material portable.',
       form_and_line:
-        'Volúmenes bajos, cantos redondeados, capas textiles continuas y ergonomía despejada de circulación limpia.',
+        'Volumenes bajos, cantos redondeados, capas textiles continuas y respiracion despejada sin requerir living domestico fijo.',
       color_palette:
-        'Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento.',
+        'Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento',
       lighting_setup:
-        'Difusión suave, red de prácticos cálidos, puntos de baja intensidad y balance nocturno envolvente.',
+        'Difusion suave, red de practicos calidos, puntos de baja intensidad y balance envolvente de refugio.',
       material_texture:
-        'Lana tejida, piel suave, cerámica mate, lino cepillado y madera de veta discreta.',
+        'Lana tejida, piel suave, ceramica mate, lino cepillado y madera de veta discreta.',
       render_quality:
-        'Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmósfera doméstica coherente.',
+        'Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmosfera acogedora coherente.',
       spatial_distortion:
-        'Neutralidad geométrica; profundidad construida por superposición blanda de textiles y luminancia cálida.',
+        'Neutralidad geometrica; profundidad construida por superposicion blanda de textiles y luminancia calida.',
       atmosphere: 'Refugio, calma, seguridad y calidez continua de escala humana.',
       key_features:
-        'Escala baja, capas textiles, madera pálida, iluminación cálida distribuida y ausencia de estridencia visual.',
+        'Escala baja, capas textiles, madera palida, iluminacion calida distribuida y ausencia de estridencia visual.',
       creative_brief:
-        'Asegura transferencia hygge mediante una tríada constante: luz blanda, tactilidad natural y contraste bajo. El estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier narrativa estacional. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Asegura transferencia hygge mediante una triada constante: luz blanda, tactilidad natural y contraste bajo. El estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier habitacion, temporada o escena domestica concreta. Conserva logica material, escala baja y ritmo arquitectonico sereno sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
     },
   },
   {
@@ -147,24 +147,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clutter, western, plastic',
     style: {
       aesthetic:
-        'Zen doméstico de contención extrema, vacío disciplinado y materialidad natural silenciosa.',
+        'Calma zen de contencion extrema, vacio disciplinado y materialidad natural silenciosa sin dependencia de interior tradicional fijo.',
       form_and_line:
-        'Retícula modular baja, líneas horizontales contenidas, paneles translúcidos y focos asimétricos de vacío.',
+        'Reticula modular baja, lineas horizontales contenidas, filtros transluidos y focos asimetricos de vacio intencional.',
       color_palette:
-        'Blanco papel de arroz, madera clara cálida, verde tatami, carbón sumi e índigo apagado.',
+        'Blanco papel de arroz, madera clara calida, verde tatami, carbon sumi e indigo apagado',
       lighting_setup:
-        'Difusión filtrada por paneles, pools cálidos de baja intensidad y sombras estacionales de transición lenta.',
+        'Difusion filtrada, pools calidos de baja intensidad y sombras de transicion lenta con control contemplativo.',
       material_texture:
         'Fibra vegetal visible, veta de madera cruda, arcilla mate alisada a mano y translucidez de papel.',
       render_quality:
-        'Render minimal refinado con equilibrio de espacio negativo y precisión contemplativa.',
+        'Minimal refinado con equilibrio de espacio negativo y precision contemplativa portable.',
       spatial_distortion:
-        'Geometría neutra; profundidad por capas de pantalla y vacíos secuenciados.',
-      atmosphere: 'Serene, reverente, lenta y enfocada.',
+        'Geometria neutra; profundidad por capas filtrantes y vacios secuenciados.',
+      atmosphere: 'Serena, reverente, lenta y enfocada.',
       key_features:
-        'Retícula baja, filtros translúcidos, focos sobrios, materiales orgánicos desnudos y ritmo contenido.',
+        'Reticula baja, filtros transluidos, focos sobrios, materiales organicos desnudos y ritmo contenido.',
       creative_brief:
-        'Define el preset como una gramática de calma modular: retícula, filtro de luz y vacío intencional. La transferencia debe sostener quietud material y precisión ritual sin depender de escenas tradicionales específicas. Apply this spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere, and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or fixed scene.',
+        'Define el preset como una gramatica de calma modular: reticula, filtro de luz y vacio intencional. La transferencia debe sostener quietud material y precision ritual sin depender de tatami-room, templo, jardin seco o escena tradicional especifica. Conserva logica material, escala contenida y ritmo espacial contemplativo sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
     },
   },
   {
@@ -280,24 +280,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimal, bright, open',
     style: {
       aesthetic:
-        'Victoriano de herencia pesada, exceso ornamental y teatralidad histórica cerrada.',
+        'Victoriano de herencia pesada, exceso ornamental y teatralidad historica contenida.',
       form_and_line:
-        'Densidad de patrón, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.',
+        'Densidad de patron, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.',
       color_palette:
-        'Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y latón antiguo.',
+        'Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.',
       lighting_setup:
-        'Gaslight tenue, pools de lámpara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje espeso.',
+        'Gaslight tenue, pools de lampara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje espeso.',
       material_texture:
-        'Terciopelo, brocado, papel estampado, mármol oscuro, maderas profundas y metal envejecido.',
+        'Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.',
       render_quality:
-        'Densidad museográfica de época con lectura material opulenta y atmósfera histórica cerrada.',
+        'Densidad museografica de epoca con lectura material opulenta y atmosfera historica densa.',
       spatial_distortion:
-        'Profundidad estable saturada por acumulación decorativa en múltiples capas.',
-      atmosphere: 'Opresiva, aristocrática, nostálgica y ceremoniosa.',
+        'Profundidad estable saturada por acumulacion decorativa en multiples capas.',
+      atmosphere: 'Opresiva, aristocratica, nostalgica y ceremoniosa.',
       key_features:
-        'Drapería pesada, tapizados cargados, marcos acumulados, ornamentación floral y volumen overstuffed.',
+        'Draperia pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen overstuffed.',
       creative_brief:
-        'Define una gramática victoriana transferible por sobrecarga ornamental, paleta profunda y luz baja ceremonial. El estilo debe expresar peso histórico y acumulación material sin depender de una narrativa literaria.',
+        'Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas profundas y luz baja ritual, no de una mansion concreta ni de una escena literaria cerrada.',
     },
   },
   {
@@ -307,24 +307,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ornate, cluttered',
     style: {
       aesthetic:
-        'Modernismo Bauhaus funcional, claridad industrial y belleza derivada de función explícita.',
+        'Modernismo Bauhaus funcional, claridad industrial y belleza derivada de funcion explicita.',
       form_and_line:
-        'Intersección de círculo/cuadrado, retícula racional, tubulares metálicos y planos limpios de lectura didáctica.',
+        'Interseccion de circulo/cuadrado, reticula racional, tubulares metalicos y planos limpios de lectura didactica.',
       color_palette:
-        'Blanco/negro estructural, grises cálidos y acentos primarios (rojo, amarillo, azul) de uso jerárquico.',
+        'Blanco/negro estructural, grises calidos y acentos primarios (rojo, amarillo, azul) de uso jerarquico.',
       lighting_setup:
-        'Iluminación uniforme de tarea, spots funcionales y pendentes simples sin dramatización superflua.',
+        'Iluminacion uniforme de tarea, spots funcionales y pendentes simples sin dramatizacion superflua.',
       material_texture:
-        'Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linóleo de acabado honesto.',
+        'Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linoleo de acabado honesto.',
       render_quality:
-        'Precisión racionalista con prioridad constructiva, composición pedagógica y eficiencia visual atemporal.',
+        'Precision racionalista con prioridad constructiva, composicion pedagogica y eficiencia visual atemporal.',
       spatial_distortion:
-        'Neutralidad geométrica con énfasis en orden proporcional e interacción de formas básicas.',
-      atmosphere: 'Intelectual, limpio, pragmático y optimista.',
+        'Neutralidad geometrica con enfasis en orden proporcional e interaccion de formas basicas.',
+      atmosphere: 'Intelectual, limpio, pragmatico y optimista.',
       key_features:
-        'Cantilever visual, acentos cromáticos controlados, estructura visible y gramática geométrica elemental.',
+        'Cantilever visual, acentos cromaticos controlados, estructura visible y gramatica geometrica elemental.',
       creative_brief:
-        'Formula una gramática Bauhaus transferible donde función, estructura y geometría primaria ordenen todo el lenguaje visual. El estilo debe comunicar claridad productiva sin recurrir a ornamento narrativo.',
+        'Convierte cualquier input en un sistema Bauhaus donde funcion, estructura visible y geometria primaria gobiernen cada decision visual. Debe sentirse pedagogico, productivo y construido, sin depender de un interior ejemplar ni de ornamento anecdotico.',
     },
   },
   {
@@ -334,51 +334,51 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'empty, white, minimal',
     style: {
       aesthetic:
-        'Maximalismo curatorial de alta saturación, donde superposición y colección son gramática base.',
+        'Maximalismo curatorial de alta saturacion, donde superposicion y coleccion son gramatica base.',
       form_and_line:
-        'Capas sucesivas de patrón, marcos densos, textiles sobre textiles y ocupación casi total de superficies.',
+        'Capas sucesivas de patron, marcos densos, textiles sobre textiles y ocupacion casi total de superficies.',
       color_palette:
-        'Joyas saturadas (esmeralda, zafiro, rubí, amatista), teal pavo y coral como disonancias controladas.',
+        'Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias controladas.',
       lighting_setup:
-        'Red cálida de lámparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.',
+        'Red calida de lamparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.',
       material_texture:
         'Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro visible.',
       render_quality:
-        'Densidad opulenta legible, caos controlado y riqueza material acumulativa sin pérdida de jerarquía.',
+        'Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de jerarquia.',
       spatial_distortion:
-        'Profundidad estable con compresión visual por saturación de objetos y patrones.',
+        'Profundidad estable con compresion visual por saturacion de objetos y patrones.',
       atmosphere: 'Efervescente, personal, exuberante y deliberadamente excesiva.',
       key_features:
-        'Campo galería saturado, mezcla agresiva de patrón, capas textiles y acumulación curatorial.',
+        'Campo galeria saturado, mezcla agresiva de patron, capas textiles y acumulacion curatorial.',
       creative_brief:
-        'Construye una gramática maximalista transferible basada en saturación cromática, densidad curatorial y superposición textil. Debe mantenerse la legibilidad curatorial sin caer en ruido visual indiscriminado.',
+        'Convierte cualquier input en una composicion maximalista de saturacion cromatica, coleccion curatorial y capas textiles exuberantes. Debe conservar jerarquia y criterio de display, no volverse simple ruido decorativo ni depender de una sala repleta especifica.',
     },
   },
   {
     id: 'SP07-018',
     name: 'Farmhouse Chic',
     category: '1. Interior Design Systems',
-    negativePrompt: 'modern, sleek, metal',
+    negativePrompt: 'modern, sleek, chrome',
     style: {
       aesthetic:
-        'Farmhouse contemporáneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.',
+        'Farmhouse contemporaneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.',
       form_and_line:
-        'Listones horizontales, diagonales brace, geometría utilitaria abierta y líneas apron-front suavizadas.',
+        'Listones horizontales, diagonales brace, geometria utilitaria abierta y lineas apron-front suavizadas.',
       color_palette:
         'Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.',
       lighting_setup:
-        'Mañana luminosa aireada, pendentes sobredimensionados y prácticos utilitarios de tono cálido.',
+        'Manana luminosa aireada, pendentes sobredimensionados y practicos utilitarios de tono calido.',
       material_texture:
-        'Madera envejecida, lino lavado, pintura tiza, algodón rayado, fibras trenzadas y metal galvanizado.',
+        'Madera envejecida, lino lavado, pintura tiza, algodon rayado, fibras trenzadas y metal galvanizado.',
       render_quality:
-        'Editorial farmhouse limpio con legibilidad doméstica y calidez cotidiana consistente.',
+        'Editorial farmhouse limpio con legibilidad domestica y calidez cotidiana consistente.',
       spatial_distortion:
-        'Escala estable y amplitud moderada por luz distribuida y geometría utilitaria visible.',
+        'Escala estable y amplitud moderada por luz distribuida y geometria utilitaria visible.',
       atmosphere: 'Acogedor, amable, comunitario y familiar.',
       key_features:
-        'Listón blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como ornamento.',
+        'Liston blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como ornamento.',
       creative_brief:
-        'Define una gramática farmhouse transferible sustentada por madera envejecida, blanco cálido y detalle rural funcional. El estilo debe comunicar uso real sin depender de clichés narrativos televisivos.',
+        'Convierte cualquier input en una gramatica farmhouse de blanco calido, madera envejecida, utilidad visible y calma cotidiana. Debe sentirse vivido y funcional sin quedar atado a una casa de campo literal ni a cliches televisivos de domesticidad escenografica.',
     },
   },
   {
@@ -388,23 +388,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'straight lines',
     style: {
       aesthetic:
-        'Art Nouveau orgánico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
+        'Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
       form_and_line:
         'Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.',
-      color_palette: 'Salvia, dorado, azul pavo real, lila, ámbar vítreo y verdes musgo.',
+      color_palette: 'Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.',
       lighting_setup:
-        'Luz filtrada por vitral, lámparas cálidas tipo Tiffany, apliques pétalo y brillo irisado suave.',
+        'Luz filtrada por vitral, lamparas calidas tipo Tiffany, apliques petalo y brillo irisado suave.',
       material_texture:
-        'Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marquetería floral.',
+        'Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marqueteria floral.',
       render_quality:
         'Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.',
       spatial_distortion:
-        'Ligera fluidez morfológica para enfatizar continuidad orgánica sobre rigidez geométrica.',
-      atmosphere: 'Romántica, envolvente, botánica y artesanal.',
+        'Ligera fluidez morfologica para enfatizar continuidad organica sobre rigidez geometrica.',
+      atmosphere: 'Romantica, envolvente, botanica y artesanal.',
       key_features:
-        'Motivos florales estructurales, curvas tendril, vidrio cromático activo y luminancia orgánica.',
+        'Motivos florales estructurales, curvas tendril, vidrio cromatico activo y luminancia organica.',
       creative_brief:
-        'Conserva una gramática Art Nouveau transferible donde línea orgánica, ornamento botánico y material artesanal formen un sistema continuo. Debe leerse como estructura viva, no como simple decoración floral aplicada.',
+        'Convierte cualquier input en una continuidad Art Nouveau de linea vegetal, material artesanal y ornamento estructural fluido. Debe leerse como organismo disenado de adentro hacia afuera, no como floralidad aplicada ni como una habitacion de epoca obligatoria.',
     },
   },
   {
@@ -414,24 +414,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, beige',
     style: {
       aesthetic:
-        'Postmodernismo Memphis radical, lúdico e irreverente, orientado al choque visual deliberado.',
+        'Postmodernismo Memphis radical, ludico e irreverente, orientado al choque visual deliberado.',
       form_and_line:
-        'Squiggles, triángulos, plintos totémicos, asimetría explícita y offsets compositivos provocativos.',
+        'Squiggles, triangulos, plintos totemicos, asimetria explicita y offsets compositivos provocativos.',
       color_palette:
-        'Pasteles saturados con blanco/negro gráfico, rosa bubblegum, teal, amarillo tráfico y naranja vivo.',
+        'Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja vivo.',
       lighting_setup:
-        'Iluminación de estudio brillante, acentos neón, bombillas cromáticas y spots expositivos de alto contraste.',
+        'Iluminacion de estudio brillante, acentos neon, bombillas cromaticas y spots expositivos de alto contraste.',
       material_texture:
-        'Formica impresa, plástico brillante, esmalte, goma y terrazo en escala juguetona.',
+        'Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.',
       render_quality:
-        'Clash postmoderno legible, irónico y energético sin perder estructura formal.',
+        'Clash postmoderno legible, ironico y energetico sin perder estructura formal.',
       spatial_distortion:
-        'Asimetría intencional con jerarquía por color y geometría de alto impacto.',
-      atmosphere: 'Rebelde, festiva, anti-solemnidad y manifiesto de diseño.',
+        'Asimetria intencional con jerarquia por color y geometria de alto impacto.',
+      atmosphere: 'Rebelde, festiva, anti-solemnidad y manifiesto de diseno.',
       key_features:
-        'Patrones bacterianos, squiggles reflectivos, módulos descentrados, bloques cromáticos y formas totemizadas.',
+        'Patrones bacterianos, squiggles reflectivos, modulos descentrados, bloques cromaticos y formas totemizadas.',
       creative_brief:
-        'Define una gramática Memphis transferible donde asimetría, patrón gráfico y color confrontativo sean reglas estructurales. Debe conservar ironía y energía manifiesto sin caer en caricatura decorativa superficial.',
+        'Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a decoracion novelty ni a un living ochentoso fijo.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

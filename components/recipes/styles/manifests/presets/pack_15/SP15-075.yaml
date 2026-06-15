@@ -4,8 +4,14 @@ packId: pack_15
 name: Tidal Crater Transit Hub
 category: 11. Corepunk — Lunarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - lunarpunk
 visualDna:
   aesthetic: Abstract low-gravity mobility style with basin depth, soft circular routing, and amber civic wayfinding.
   form_and_line: Circular platform bands, rope-tension drops, glide-lane ribbons, basin arcs, and crescent docking-like lips.
@@ -16,21 +22,29 @@ visualDna:
   spatial_distortion: Bowl-depth composition wraps movement around a center without forcing a specific transit scene.
   atmosphere: Calm mobility, civic coordination, low-gravity patience, and shared timing.
   key_features: Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.
-  creative_brief: >-
-    Route the input through low-gravity civic motion: bowl-depth arcs, glide-lane
-    ribbons, tension-cable drops, basin aqua reflections, and amber beacon nodes
-    make any subject feel timed, accessible, and crater-shaped.
-avoidRules: [photoreal, dystopian-chaos, cyber-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-075.webp }
+  creative_brief: 'Route the input through low-gravity civic motion: bowl-depth arcs, glide-lane ribbons, tension-cable drops, basin aqua reflections, and amber beacon nodes make any subject feel timed, accessible, and crater-shaped.'
+avoidRules:
+  - photoreal
+  - dystopian-chaos
+  - cyber-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-075.webp
 attributes:
   negativePrompt: photoreal, dystopian-chaos, cyber-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-lunarpunk,
-    categoryName: 11. Corepunk — Lunarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, lunarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-lunarpunk
+  categoryName: 11. Corepunk — Lunarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - lunarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -21,16 +21,8 @@ visualDna:
   render_quality: Luxurious urban concept with strict geometric clarity and readable financial circulation.
   spatial_distortion: Elevated interlock perspective turns vertical wealth channels into a controlled maze.
   atmosphere: Ambition, secrecy, metropolitan glamour, and elegant predation.
-  key_features: >-
-    Currency-threshold motifs, deco rib spans, turbine lobby forms, vault-threshold marks, and chevron transaction
-    lanes.
-  creative_brief: >-
-    Make the input circulate like hidden wealth weather: black lacquer planes, brass chevrons, jade glints, vault
-    thresholds, and elevated ledger geometry should feel elegant and predatory. Skybridges or exchanges may appear, but
-    the style is decopunk finance translated into vertical pressure. Apply this corepunk genre grammar over any input:
-    preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension
-    while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed
-    set-piece.
+  key_features: Currency-threshold motifs, deco rib spans, turbine lobby forms, vault-threshold marks, and chevron transaction lanes.
+  creative_brief: 'Make the input circulate like hidden wealth weather: black lacquer planes, brass chevrons, jade glints, vault thresholds, and elevated ledger geometry should feel elegant and predatory. Skybridges or exchanges may appear, but the style is decopunk finance translated into vertical pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - rustic
@@ -55,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

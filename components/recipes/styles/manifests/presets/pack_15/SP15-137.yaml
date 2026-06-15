@@ -4,8 +4,14 @@ packId: pack_15
 name: Bone Lime Signal Cairn
 category: 12. Corepunk — Stonepunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - stonepunk
 visualDna:
   aesthetic: Stonepunk communication grammar where cairn stacks, lime pigment, bone toggles, and wind-borne signal logic create pre-electric networks.
   form_and_line: Stacked cairn silhouettes, semaphore diagonals, knotted cord paths, incised glyph bands, and wind-vane triangles.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Ridge-line repetition and signal-chain depth without requiring towers, messengers, flags, or a landscape scene.
   atmosphere: Windswept, alert, communal, ancient, pragmatic.
   key_features: Cairn-stack rhythm, bone toggle markers, lime glyph bands, cord path diagrams, and semaphore-like diagonals.
-  creative_brief: >-
-    Signal the input through bone lime cairn logic: chalk-bone markings,
-    stacked-stone rhythm, ochre cord paths, wind-vane diagonals, and dry
-    semaphore tension apply pre-electric network energy without requiring cairns,
-    flags, people, or a literal ridge.
-avoidRules: [photoreal, cyber-neon, glossy-sci-fi, modern-asphalt, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-137.webp }
+  creative_brief: 'Signal the input through bone lime cairn logic: chalk-bone markings, stacked-stone rhythm, ochre cord paths, wind-vane diagonals, and dry semaphore tension apply pre-electric network energy without requiring cairns, flags, people, or a literal ridge.'
+avoidRules:
+  - photoreal
+  - cyber-neon
+  - glossy-sci-fi
+  - modern-asphalt
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-137.webp
 attributes:
   negativePrompt: photoreal, cyber-neon, glossy-sci-fi, modern-asphalt, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-stonepunk,
-    categoryName: 12. Corepunk — Stonepunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, stonepunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-stonepunk
+  categoryName: 12. Corepunk — Stonepunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - stonepunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

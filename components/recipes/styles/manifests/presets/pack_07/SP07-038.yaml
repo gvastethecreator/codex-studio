@@ -12,21 +12,20 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Osario subterráneo abstracto donde mortalidad ritual y módulo cálcico definen el lenguaje visual.
-  form_and_line: Patrones repetitivos de módulos óseos, arcos bajos secuenciados y axialidad comprimida.
-  color_palette: Bone White, Dirt, Sepia age, Calcium Yellow, Shadow Brown, Cartilage Cream
-  lighting_setup: Fuentes cálidas puntuales de antorcha o linterna, parpadeo sobre hueso y sombras densas de bajo nivel.
-  material_texture: Calcio yesoso, porosidad cortical, juntas de mortero polvorientas y transiciones húmedas de piedra enterrada.
-  render_quality: Fidelidad arqueológica de bajo nivel lumínico con microtextura funeraria legible.
-  spatial_distortion: None
+  aesthetic: Lenguaje osario subterraneo abstracto, donde modulo calcico, presion enterrada y reverencia historica definen la superficie.
+  form_and_line: Repeticion modular calcica, arcos bajos secuenciados, nichos comprimidos y bandas oseas sin exigir corredor funerario fijo.
+  color_palette: Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream
+  lighting_setup: Fuentes calidas puntuales, parpadeo bajo sobre calcio y sombras densas en profundidad comprimida.
+  material_texture: Calcio yesoso, porosidad cortical, mortero polvoriento y transiciones humedas de piedra enterrada.
+  render_quality: Fidelidad arqueologica de bajo nivel luminico con microtextura funeraria legible y sin horror explicito.
+  spatial_distortion: Compressed subterranean pressure and repetitive calcic stacking
   atmosphere: Solemne, comprimida y reverencial, con quietud de tiempo profundo.
-  key_features: Hiladas cálcicas, bandas cruzadas, nichos funerarios y presión de bóveda baja.
+  key_features: Hiladas calcicas, bandas cruzadas, nichos minerales y presion de boveda baja.
   creative_brief: >-
-    Cualquier composición se organiza por modulo calcico, presion subterranea y luz baja de reverencia historica.
-    Repeticion, polvo y porosidad funeraria cargan el estilo sin depender de pasillos literales. Apply this
-    spatial/worldbuilding grammar over any input: preserve material logic, scale cues, architectural rhythm, atmosphere,
-    and signature construction rules while avoiding a required building type, landscape, franchise set, creature, or
-    fixed scene.
+    Organiza cualquier composicion por modulo calcico, presion subterranea y luz baja de reverencia historica.
+    Repeticion, polvo y porosidad funeraria deben cargar el estilo sin depender de pasillos, catacumba literal, restos
+    humanos exhibidos o escena ritual cerrada. Conserva logica material, escala comprimida y ritmo osario sin fijar
+    tipologia, paisaje, franquicia, criatura ni escena cerrada.
 avoidRules:
   - living
 assets:

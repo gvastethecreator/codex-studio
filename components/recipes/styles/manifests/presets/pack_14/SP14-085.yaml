@@ -4,8 +4,14 @@ packId: pack_14
 name: Nebula Pilgrim Ascent
 category: 4. Mythic — Cosmology & Omens
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, cosmology]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - cosmology
 visualDna:
   aesthetic: Nebular pilgrimage ascent with austere hope, vow banners, and suspended star petitions.
   form_and_line: Terraced step cues, sky-shrine silhouettes, and lantern spines.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Hopeful austerity and spiritual endurance.
   key_features: Pilgrim shrine cues, star chimes, vow banners.
   creative_brief: Reframe the input through nebula pilgrim ascent, suggesting celestial petition and spiritual endurance without requiring stairs.
-avoidRules: [photoreal, slapstick, cyberpunk-neon, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-085.webp }
+avoidRules:
+  - photoreal
+  - slapstick
+  - cyberpunk-neon
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-085.webp
 attributes:
   negativePrompt: photoreal, slapstick, cyberpunk-neon, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-cosmology,
-    categoryName: 4. Mythic — Cosmology & Omens,
-    tags: [mythic-noir-curated-vault, mythic, cosmology],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-cosmology
+  categoryName: 4. Mythic — Cosmology & Omens
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - cosmology
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -17,19 +17,12 @@ visualDna:
   form_and_line: Tideglass cylinders, wavebreaker fins, gasket rings, modular knots, and long ribbons bending through water.
   color_palette: Aqua glass, coral pink, midnight blue, stainless salt gray, and pale kelp green.
   lighting_setup: Moving caustic bands, linear LEDs, passing shadow silhouettes, and refracted station glow on wet walkways.
-  material_texture: >-
-    Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter
-    grates.
+  material_texture: Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter grates.
   render_quality: Detailed infrastructure concept with kinetic framing and believable pressure-control logic.
   spatial_distortion: Tube-like vanishing lines bend through refraction, motion blur, and fishlike silhouettes.
   atmosphere: Fast coastal energy, civic fluidity, public wonder, and controlled pressure risk.
   key_features: Tideglass bands, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic map-like patterns.
-  creative_brief: >-
-    Bend the input through tideglass velocity: refracted tube lines, gasket rings, caustic bands, algae-filter grates,
-    and controlled pressure seams should imply fast public motion. Subway or station cues are optional; the style is
-    transparent coastal speed inside engineered waves. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Bend the input through tideglass velocity: refracted tube lines, gasket rings, caustic bands, algae-filter grates, and controlled pressure seams should imply fast public motion. Subway or station cues are optional; the style is transparent coastal speed inside engineered waves. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - diesel-smog
@@ -55,4 +48,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

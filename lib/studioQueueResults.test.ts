@@ -48,12 +48,17 @@ describe('buildStudioQueueResultPreviews', () => {
           createdAt: '2026-05-25T00:00:00.000Z',
         }),
       ],
-      { toAssetUrl: (assetPath) => `studio:${assetPath}` },
+      {
+        toAssetUrl: (assetPath, options) =>
+          options
+            ? `studio:${assetPath}?variant=${options.variant}&max=${options.maxEdge}`
+            : `studio:${assetPath}`,
+      },
     );
 
     expect(previews.map((preview) => preview.id)).toEqual(['newer', 'older']);
     expect(previews[0]?.src).toBe('studio:/library/thumbs/newer.webp');
-    expect(previews[1]?.src).toBe('studio:/library/assets/older.png');
+    expect(previews[1]?.src).toBe('studio:/library/assets/older.png?variant=thumb&max=96');
   });
 
   it('caps the number of queue result previews', () => {

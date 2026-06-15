@@ -12,7 +12,7 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: 50s Greaser/Pinup, hot-rod Americana, tattooed-rebel romance
+  aesthetic: 50s rockabilly Americana, hot-rod romance, rebel polish
   form_and_line: Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume
   color_palette: Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory
   lighting_setup: Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare
@@ -20,12 +20,11 @@ visualDna:
   render_quality: Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit
   spatial_distortion: Pompadour hair
   atmosphere: Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool
-  key_features: Tattoos, sailor-style ink, rolled cigarette sleeve, cuffed jeans, engineer boots
+  key_features: Sailor-style ink cues, rolled sleeve logic, cuffed jeans, engineer boots, chrome-red contrast
   creative_brief: >-
-    Apply rockabilly Americana to the input: horsehide leather, cuffed denim,
-    pomade gloss, victory-roll volume, swallow embroidery, sailor tattoo cues
-    and chrome-red contrast. Keep hot-rod swagger without requiring a diner,
-    drag race, greaser portrait or literal motorcycle/car.
+    Apply rockabilly Americana to the input: horsehide leather, cuffed denim, pomade gloss, victory-roll volume,
+    swallow embroidery, sailor-ink cues and chrome-red contrast. Keep hot-rod swagger without requiring a diner, drag
+    race, greaser portrait, pinup body, literal motorcycle/car or tattooed rebel persona.
 avoidRules:
   - modern
 assets:

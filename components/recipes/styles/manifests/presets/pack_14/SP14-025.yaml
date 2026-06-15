@@ -4,8 +4,14 @@ packId: pack_14
 name: Kappa Water Jurisprudence
 category: 7. Mythic — Japanese Yokai & Kami
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, japanese-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - japanese-myth
 visualDna:
   aesthetic: Kappa water jurisprudence where river spirits negotiate law through rain-soaked diplomacy.
   form_and_line: Stone canal grid cues, bridge arches, and magistrate pavilion rectangles.
@@ -16,22 +22,30 @@ visualDna:
   spatial_distortion: Multi-bridge perspective layering upper walkways over submerged symbolic depth.
   atmosphere: Bureaucratic tension, folkloric wit, and rain-soaked diplomacy.
   key_features: Canal-court cues, spirit offering docks, turtle-shell ledgers, omen buoys.
-  creative_brief: >-
-    Apply kappa water jurisprudence to any input: wet civic ritual, moss-jade
-    bureaucracy, bridge-like layering, ceramic seals, reed-rope tension, and
-    river-spirit wit should make the style feel negotiated by water law without
-    forcing canals, courts, yokai disputes, bridges, or turtle forms.
-avoidRules: [photoreal, comedic-goof, cyberpunk-signage, futuristic-vehicles, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-025.webp }
+  creative_brief: 'Apply kappa water jurisprudence to any input: wet civic ritual, moss-jade bureaucracy, bridge-like layering, ceramic seals, reed-rope tension, and river-spirit wit should make the style feel negotiated by water law without forcing canals, courts, yokai disputes, bridges, or turtle forms.'
+avoidRules:
+  - photoreal
+  - comedic-goof
+  - cyberpunk-signage
+  - futuristic-vehicles
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-025.webp
 attributes:
   negativePrompt: photoreal, comedic-goof, cyberpunk-signage, futuristic-vehicles, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-japanese-kami-yokai,
-    categoryName: 7. Mythic — Japanese Yokai & Kami,
-    tags: [mythic-noir-curated-vault, mythic, japanese-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-japanese-kami-yokai
+  categoryName: 7. Mythic — Japanese Yokai & Kami
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - japanese-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

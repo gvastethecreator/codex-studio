@@ -12,7 +12,7 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: 90s slouch-grunge, flannel melancholy, Seattle apathy, lo-fi dishevelment
+  aesthetic: 90s slouch-grunge, flannel melancholy, lo-fi dishevelment
   form_and_line: Loose, layered, cardigan-over-tee drape, ripped-knee baggy, beanie-slouch silhouette
   color_palette: Faded plaid, denim, olive drab, washed-out black, mustard, vintage-burgundy check
   lighting_setup: Dim overcast grey, basement-amber warmth, rainy-flat low contrast
@@ -22,10 +22,9 @@ visualDna:
   atmosphere: Angst, relaxed, quiet desperation, feedback-hum ennui, careless sincerity
   key_features: Flannel shirt, ripped jeans, cardigan, beanie, Converse sneakers
   creative_brief: >-
-    Push the input into grunge slouch: brushed flannel, distressed knits,
-    stonewashed denim, waffle thermal, canvas sneakers and deliberately poor
-    fit. Keep lo-fi melancholy without requiring Seattle, rehearsal rooms, rainy
-    sidewalks, a band reference or a human slacker.
+    Push the input into grunge slouch: brushed flannel, distressed knits, stonewashed denim, waffle thermal, canvas
+    sneakers and deliberately poor fit. Keep lo-fi melancholy without requiring Seattle, rehearsal rooms, rainy
+    sidewalks, band references, bedroom-sulk staging or a human slacker persona.
 avoidRules:
   - clean
   - ironed

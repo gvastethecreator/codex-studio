@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Tunnel-depth funnel toward inspection jaws, with frames narrowing like paperwork decisions.
   atmosphere: Frontier law, procedural dread, and absurd cosmic administration.
   key_features: Scanner arches, ray turret eyes, pneumatic stamp blocks, confiscation-grid cages, and permit-slot geometry.
-  creative_brief: >-
-    Trap the input in cosmic paperwork machinery: scanner bars, permit slots, pneumatic stamp blocks, octagonal lock
-    frames, and turret-eye circles should divide forms into legal zones. Customs gates are optional; the style is
-    frontier administration acting like a raypunk predator. Apply this corepunk genre grammar over any input: preserve
-    the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while
-    avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Trap the input in cosmic paperwork machinery: scanner bars, permit slots, pneumatic stamp blocks, octagonal lock frames, and turret-eye circles should divide forms into legal zones. Customs gates are optional; the style is frontier administration acting like a raypunk predator. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - cyberpunk-neon-city
@@ -52,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -4,8 +4,14 @@ packId: pack_15
 name: Canopy Tram Exchange
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - solarpunk
 visualDna:
   aesthetic: Solarpunk canopy transit language woven through living green structure.
   form_and_line: Curving transit beams, vine trellises, airy platform arcs, and solar wayfinding bands.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Broad transit-like perspective leading through green frames and curved beams.
   atmosphere: Mobility, civic care, and breathable urban optimism.
   key_features: Transit-platform motifs, canopy span arcs, solar wayfinding panels, and leaf-filtered frames.
-  creative_brief: >-
-    Weave the input into canopy transit calm: leaf-filtered frames, bamboo-laminate
-    beams, solar wayfinding bands, terracotta platform arcs, and brushed-steel
-    mobility ribs make any subject feel breathable, elevated, and civic.
-avoidRules: [photoreal, dystopian, heavy-neon, watermark, text, logo, grime]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-099.webp }
+  creative_brief: 'Weave the input into canopy transit calm: leaf-filtered frames, bamboo-laminate beams, solar wayfinding bands, terracotta platform arcs, and brushed-steel mobility ribs make any subject feel breathable, elevated, and civic.'
+avoidRules:
+  - photoreal
+  - dystopian
+  - heavy-neon
+  - watermark
+  - text
+  - logo
+  - grime
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-099.webp
 attributes:
   negativePrompt: photoreal, dystopian, heavy-neon, watermark, text, logo, grime
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - solarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

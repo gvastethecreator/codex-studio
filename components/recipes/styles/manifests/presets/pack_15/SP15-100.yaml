@@ -4,8 +4,14 @@ packId: pack_15
 name: Roofgarden Market Terraces
 category: 1. Corepunk — Solarpunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - solarpunk
 visualDna:
   aesthetic: Abundant solarpunk rooftop economy expressed through food, shade, and rainwater craft.
   form_and_line: Terraced roof bands, market-awning shapes, planter ledges, and rain-channel lines.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Layered rooftop-like perspective climbing through terraces and garden bands.
   atmosphere: Social warmth, abundance, and neighborhood exchange.
   key_features: Stall-canopy motifs, herb-bed textures, rainwater channels, and edible garden color blocks.
-  creative_brief: >-
-    Terrace the input into productive neighborhood abundance: herb-green ledges,
-    coral-clay awnings, bright sky-blue rain channels, ceramic planter rhythms,
-    and woven shade cloth make any subject feel edible, social, and sunlit.
-avoidRules: [photoreal, sterile-minimal, cyberpunk, watermark, text, logo, cold-light]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-100.webp }
+  creative_brief: 'Terrace the input into productive neighborhood abundance: herb-green ledges, coral-clay awnings, bright sky-blue rain channels, ceramic planter rhythms, and woven shade cloth make any subject feel edible, social, and sunlit.'
+avoidRules:
+  - photoreal
+  - sterile-minimal
+  - cyberpunk
+  - watermark
+  - text
+  - logo
+  - cold-light
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-100.webp
 attributes:
   negativePrompt: photoreal, sterile-minimal, cyberpunk, watermark, text, logo, cold-light
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-solarpunk,
-    categoryName: 1. Corepunk — Solarpunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, solarpunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-solarpunk
+  categoryName: 1. Corepunk — Solarpunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - solarpunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

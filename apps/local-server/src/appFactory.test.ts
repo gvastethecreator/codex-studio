@@ -207,6 +207,103 @@ describe('createStudioApp', () => {
     expect(logger).toHaveBeenCalledWith('info', 'api', 'Project created: Seam Project');
   });
 
+  it('allows configured local UI origins through the local API guard', async () => {
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+      },
+    });
+
+    const response = await studio.app.request('/api/projects', {
+      headers: { Origin: 'http://localhost:17222' },
+    });
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get('Access-Control-Allow-Origin')).toBe('http://localhost:17222');
+  });
+
+  it('rejects browser requests from foreign origins before mounted routes run', async () => {
+    const listProjects = vi.fn(() => []);
+    const createProject = vi.fn();
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore({
+          listProjects,
+          createProject: createProject as unknown as StudioDbStore['createProject'],
+        }),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+      },
+    });
+
+    const listResponse = await studio.app.request('/api/projects', {
+      headers: { Origin: 'https://example.test' },
+    });
+    expect(listResponse.status).toBe(403);
+    await expect(listResponse.json()).resolves.toEqual({
+      error: 'Forbidden origin',
+      code: 'forbidden_origin',
+    });
+    expect(listProjects).not.toHaveBeenCalled();
+
+    const createResponse = await studio.app.request('/api/projects', {
+      method: 'POST',
+      headers: { Origin: 'https://example.test', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: 'Blocked' }),
+    });
+    expect(createResponse.status).toBe(403);
+    expect(createProject).not.toHaveBeenCalled();
+  });
+
+  it('wires library and workspace route dependencies through the factory seam', async () => {
+    const injectedLibrary = {
+      id: 'library-injected',
+      name: 'Injected Library',
+      path: 'D:/studio/library',
+      isDefault: true,
+      createdAt: '2026-05-31T00:00:00.000Z',
+    };
+    const injectedWorkspace = {
+      id: 'workspace-injected',
+      name: 'Injected Workspace',
+      libraryId: 'library-injected',
+      filterJson: { favorite: true },
+      sortOrder: 'newest',
+      createdAt: '2026-05-31T00:00:00.000Z',
+    };
+    const listLibrariesRoute = vi.fn(() => [injectedLibrary]);
+    const listWorkspacesRoute = vi.fn(() => [injectedWorkspace]);
+
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+        libraryRoutes: {
+          listLibraries: listLibrariesRoute,
+        },
+        workspaceRoutes: {
+          listCatalogWorkspaces: listWorkspacesRoute,
+        },
+      },
+    });
+
+    const librariesResponse = await studio.app.request('/api/libraries');
+    expect(librariesResponse.status).toBe(200);
+    await expect(librariesResponse.json()).resolves.toEqual([injectedLibrary]);
+    expect(listLibrariesRoute).toHaveBeenCalledTimes(1);
+
+    const workspacesResponse = await studio.app.request('/api/workspaces');
+    expect(workspacesResponse.status).toBe(200);
+    await expect(workspacesResponse.json()).resolves.toEqual([injectedWorkspace]);
+    expect(listWorkspacesRoute).toHaveBeenCalledTimes(1);
+  });
+
   it('wires catalog command routes through the injected Catalog Entry store', async () => {
     const softDeleteCatalogImage = vi.fn((id: string) =>
       id === 'catalog-image-1'

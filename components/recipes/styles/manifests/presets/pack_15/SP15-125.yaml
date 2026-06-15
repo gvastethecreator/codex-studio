@@ -4,8 +4,14 @@ packId: pack_15
 name: Shell Metro Pier
 category: 13. Corepunk — Seapunk
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [solarpunk-dreamscapes-vault, corepunk, seapunk]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - solarpunk-dreamscapes-vault
+  - corepunk
+  - seapunk
 visualDna:
   aesthetic: Shell-metro seapunk where protective shell forms act as transit and weather language.
   form_and_line: Pier-spine geometry, shell kiosk shapes, modular transit bays, and wave shelter arcs.
@@ -16,21 +22,30 @@ visualDna:
   spatial_distortion: Long waterline perspective with repeating shell modules.
   atmosphere: Travel, lightness, and seaside civic life.
   key_features: Shell metro forms, waterline rail marks, wave shelters, and repeating modular bay rhythm.
-  creative_brief: >-
-    Transit the input through shell metro lightness: opal module repeats,
-    aquamarine waterline marks, violet sunset glow, shell-laminate kiosks, and
-    wave shelter arcs make any subject feel mobile and seaside.
-avoidRules: [photoreal, dingy, industrial, watermark, text, logo, clutter]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP15-125.webp }
+  creative_brief: 'Transit the input through shell metro lightness: opal module repeats, aquamarine waterline marks, violet sunset glow, shell-laminate kiosks, and wave shelter arcs make any subject feel mobile and seaside.'
+avoidRules:
+  - photoreal
+  - dingy
+  - industrial
+  - watermark
+  - text
+  - logo
+  - clutter
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-125.webp
 attributes:
   negativePrompt: photoreal, dingy, industrial, watermark, text, logo, clutter
 taxonomy:
-  {
-    packId: pack_15,
-    packName: Solarpunk Dreamscapes Vault,
-    categoryId: corepunk-seapunk,
-    categoryName: 13. Corepunk — Seapunk,
-    tags: [solarpunk-dreamscapes-vault, corepunk, seapunk],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_15
+  packName: Solarpunk Dreamscapes Vault
+  categoryId: corepunk-seapunk
+  categoryName: 13. Corepunk — Seapunk
+  tags:
+    - solarpunk-dreamscapes-vault
+    - corepunk
+    - seapunk
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

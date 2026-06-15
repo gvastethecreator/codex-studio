@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-051
 packId: pack_08
-name: Latex/PVC
+name: High-Gloss Polymer
 category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Fetish fashion, high-gloss domination, latex-subculture statement
-  form_and_line: Tight highlights, second-skin compression, corset-waist curve, opera-glove length, catsuit continuity
+  aesthetic: High-gloss polymer couture, reflective power dressing, lacquered futurism
+  form_and_line: Tight highlights, compression seams, sculpted contour, elongated extensions, continuous glossy wrapping
   color_palette: Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux
   lighting_setup: High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen
   material_texture: Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish
-  render_quality: Shiny, edgy, high-polish fetish aesthetic, studio-reflection perfection
+  render_quality: Shiny, edgy, high-polish couture aesthetic, studio-reflection perfection
   spatial_distortion: None
-  atmosphere: Intense, sleek, power-dressing charge, mirror-shine confidence, club-kid edge
-  key_features: Reflections, crease-free tension, zip front, corset lacing, high-shine polish
+  atmosphere: Intense, sleek, power-dressing charge, mirror-shine confidence, lacquered edge
+  key_features: Reflections, crease-free tension, zip-line cues, seam articulation, high-shine polish
   creative_brief: >-
-    Coat the input in latex/PVC logic: seamless high-gloss reflection, tight
-    compression, zip lines, corset lacing cues and strip-light catchlights.
-    Preserve power-dressing intensity without requiring a body, club, fetish
-    scene or second-skin portrait.
+    Coat the input in high-gloss polymer logic: seamless reflection, sculpted
+    compression, zip-line detailing, seam articulation and strip-light
+    catchlights. Preserve power-dressing intensity without requiring a club,
+    fetish-coded framing, second-skin portrait or body-first silhouette.
 avoidRules:
   - matte
   - cotton

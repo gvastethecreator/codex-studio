@@ -61,6 +61,7 @@ export interface GeneratedImage {
   id: string;
   src: string;
   thumbnail?: string;
+  preview?: string;
   batchId: string;
   createdAt: number;
   isFavorite?: boolean; // Added for pinning

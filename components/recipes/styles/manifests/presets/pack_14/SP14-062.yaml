@@ -4,8 +4,14 @@ packId: pack_14
 name: Calabash Sky Knowledge
 category: 6. Mythic — African Cosmologies
 version: 1
-supportedTasks: [image_generate, image_edit, style_preset_card]
-tags: [mythic-noir-curated-vault, mythic, african-myth]
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - mythic-noir-curated-vault
+  - mythic
+  - african-myth
 visualDna:
   aesthetic: Calabash sky knowledge where astronomy and myth become one ancestral craft.
   form_and_line: Dome-ring cues, star ladders, and engraved platform geometry.
@@ -17,17 +23,28 @@ visualDna:
   atmosphere: Curiosity, reverence, and ancestral science.
   key_features: Star chart marks, ritual bowls, alignment pillar cues.
   creative_brief: Recast the input through calabash sky knowledge, using bowl, star, and alignment symbols without requiring an observatory.
-avoidRules: [photoreal, cartoon, neon-tech, watermark, text, logo]
-assets: { defaultImage: /assets/recipes/styles/defaults/SP14-062.webp }
+avoidRules:
+  - photoreal
+  - cartoon
+  - neon-tech
+  - watermark
+  - text
+  - logo
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-062.webp
 attributes:
   negativePrompt: photoreal, cartoon, neon-tech, watermark, text, logo
 taxonomy:
-  {
-    packId: pack_14,
-    packName: Mythic Noir Curated Vault,
-    categoryId: mythic-african-cosmologies,
-    categoryName: 6. Mythic — African Cosmologies,
-    tags: [mythic-noir-curated-vault, mythic, african-myth],
-    supportedTasks: [image_generate, image_edit, style_preset_card],
-    hasDefaultImage: false,
-  }
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mythic-african-cosmologies
+  categoryName: 6. Mythic — African Cosmologies
+  tags:
+    - mythic-noir-curated-vault
+    - mythic
+    - african-myth
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

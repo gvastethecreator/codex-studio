@@ -14,9 +14,7 @@ tags:
   - raypunk
 visualDna:
   aesthetic: Rocket-age devotional style where engines, vows, and navigation icons merge into sacred preparation.
-  form_and_line: >-
-    Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary
-    forms.
+  form_and_line: Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary forms.
   color_palette: Mission white, worn brass, cosmic blue, candle amber, and scorched launch gray.
   lighting_setup: Narrow altar spot, hatchway rimlight, blue engine glow, and small votive reflections on polished metal.
   material_texture: Painted steel, cloth mission banners, worn floor plating, heat-scarred brass, and paper blessing tags.
@@ -24,12 +22,7 @@ visualDna:
   spatial_distortion: Aisle-like perspective toward nozzle halos, with rocket geometry replacing religious architecture.
   atmosphere: Faith, fear, mission resolve, and quiet mechanical tenderness.
   key_features: Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.
-  creative_brief: >-
-    Sanctify the input through launch risk: nozzle halos, mission-white steel, star triptychs, candle-amber engine glow,
-    and paper blessing tags should fuse machinery with vow. Chapel or outpost cues may appear, but the style is
-    devotional preparation for mechanical departure. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Sanctify the input through launch risk: nozzle halos, mission-white steel, star triptychs, candle-amber engine glow, and paper blessing tags should fuse machinery with vow. Chapel or outpost cues may appear, but the style is devotional preparation for mechanical departure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - comedy
@@ -54,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

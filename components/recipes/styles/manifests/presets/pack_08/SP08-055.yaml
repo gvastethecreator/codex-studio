@@ -12,20 +12,20 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Chunky sweater, hygge-comfort warmth, Nordic-cabin coziness
-  form_and_line: Cable knit pattern, oversized-sweater volume, drop-shoulder ease, ribbed-cuff taper, turtleneck cylinder
+  aesthetic: Chunky knit warmth, hygge comfort, handmade winter coziness
+  form_and_line: Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm
   color_palette: Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory
   lighting_setup: Soft overcast light, fireplace-warm amber, candle-flicker glow
   material_texture: Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief
   render_quality: Cozy, warm, cabin-retreat comfort, Aran-island authenticity
   spatial_distortion: None
   atmosphere: Comfortable, winter, wool warmth, snowed-in serenity, handmade calm
-  key_features: Knit loops, cable braid, ribbed hem, wooden buttons, rolled neck
+  key_features: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck
   creative_brief: >-
     Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca
     halo, merino twist, wooden-button cues and oatmeal/charcoal warmth. Keep
-    hygge comfort without requiring a chest, cabin, fireplace scene or sweater
-    portrait.
+    hygge comfort without requiring a cabin, fireplace vignette, torso framing
+    or sweater portrait.
 avoidRules:
   - smooth
 assets:

@@ -3,14 +3,10 @@ import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
-  STYLE_AVAILABLE_DEFAULT_IMAGES,
-  STYLE_PACK_FALLBACK_IMAGES,
+  STYLE_DEFAULT_IMAGES,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
-import {
-  resolveStyleCatalogResultImage,
-  resolveStylePreviewImage,
-} from '../../lib/stylePresetVisuals';
+import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
 
 import {
   searchStylePresetCatalog,
@@ -167,20 +163,16 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
             {results.map((result) => {
-              const resultImageFromDefault = resolveStyleCatalogResultImage({
-                presetId: result.id,
-                packId: result.packId,
-                defaultImages: STYLE_AVAILABLE_DEFAULT_IMAGES,
-                packFallbackImages: STYLE_PACK_FALLBACK_IMAGES,
-              });
+              const resultImageFromDefault = result.defaultImage || STYLE_DEFAULT_IMAGES[result.id];
               const categoryImage =
                 STYLE_CATEGORY_IMAGES[styleCategoryImageKey(result.packId, result.categoryName)];
               const resultImageFromPreview = resolveStylePreviewImage({
                 categoryImage,
                 categoryPreviewImage: STYLE_CATEGORY_PREVIEWS[result.categoryName],
-                packFallbackImage: STYLE_PACK_FALLBACK_IMAGES[result.packId],
               });
               const resultImage = resultImageFromDefault || resultImageFromPreview;
+              const resultImageIsPreview =
+                !resultImageFromDefault && Boolean(resultImageFromPreview);
               return (
                 <div
                   key={result.id}
@@ -190,11 +182,18 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                 >
                   <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950">
                     {resultImage ? (
-                      <img
-                        src={resultImage}
-                        alt={result.name}
-                        className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
+                      <>
+                        <img
+                          src={resultImage}
+                          alt={result.name}
+                          className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        {resultImageIsPreview ? (
+                          <div className="absolute left-2 top-2 z-10 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+                            Preview
+                          </div>
+                        ) : null}
+                      </>
                     ) : (
                       <div className="flex size-full items-center justify-center text-zinc-600">
                         <Sparkles size={18} />

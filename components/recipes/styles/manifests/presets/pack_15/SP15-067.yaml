@@ -22,12 +22,7 @@ visualDna:
   spatial_distortion: Dense layered depth built from stacked wreck silhouettes, retrofit pits, and crane diagonals.
   atmosphere: Ingenuity under pressure, outlaw pragmatism, second chances, and mechanical stubbornness.
   key_features: Salvage crane claws, parts-tray grids, retrofit pit circles, mission-patch scraps, and rebuilt nosecone shrines.
-  creative_brief: >-
-    Rebuild the input from heroic wreckage: crane diagonals, welding-white scars, mission-patch scraps, retrofit pit
-    rings, and cobalt worklight should make repair feel mythic. Salvage yards or wreck sections can anchor the style,
-    but the point is outlaw invention and second chances. Apply this corepunk genre grammar over any input: preserve the
-    faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a
-    required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.
+  creative_brief: 'Rebuild the input from heroic wreckage: crane diagonals, welding-white scars, mission-patch scraps, retrofit pit rings, and cobalt worklight should make repair feel mythic. Salvage yards or wreck sections can anchor the style, but the point is outlaw invention and second chances. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
 avoidRules:
   - photoreal
   - cyberpunk-city
@@ -52,4 +47,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
