@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { finishCarouselSlideState } from './ImageCarousel';
+import { finishCarouselSlideState } from './imageCarouselState';
 
 const idleState = {
   direction: 0,

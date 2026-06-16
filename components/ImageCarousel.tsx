@@ -20,6 +20,7 @@ import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';
 import Logo from './Logo';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
+import { finishCarouselSlideState } from '../lib/imageCarouselState';
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -36,18 +37,6 @@ interface ImageCarouselProps {
   onToggleFavorite: (id: string) => void;
   onActiveImageChange: (id: string) => void;
   transitionName?: string;
-}
-
-type CarouselState = {
-  direction: number;
-  isSliding: boolean;
-  isFullscreen: boolean;
-  copiedPrompt: boolean;
-  isComparing: boolean;
-};
-
-export function finishCarouselSlideState(state: CarouselState): CarouselState {
-  return state.isSliding ? { ...state, isSliding: false } : state;
 }
 
 const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor;

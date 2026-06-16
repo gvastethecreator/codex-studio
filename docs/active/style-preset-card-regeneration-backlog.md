@@ -780,20 +780,6 @@ Operational note:
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP01-029 | `components/recipes/styles/manifests/presets/pack_01/SP01-029.yaml` | `assets/recipes/styles/defaults/SP01-029.webp` |
-| SP01-030 | `components/recipes/styles/manifests/presets/pack_01/SP01-030.yaml` | `assets/recipes/styles/defaults/SP01-030.webp` |
-| SP01-031 | `components/recipes/styles/manifests/presets/pack_01/SP01-031.yaml` | `assets/recipes/styles/defaults/SP01-031.webp` |
-| SP01-032 | `components/recipes/styles/manifests/presets/pack_01/SP01-032.yaml` | `assets/recipes/styles/defaults/SP01-032.webp` |
-| SP01-033 | `components/recipes/styles/manifests/presets/pack_01/SP01-033.yaml` | `assets/recipes/styles/defaults/SP01-033.webp` |
-| SP01-034 | `components/recipes/styles/manifests/presets/pack_01/SP01-034.yaml` | `assets/recipes/styles/defaults/SP01-034.webp` |
-| SP01-035 | `components/recipes/styles/manifests/presets/pack_01/SP01-035.yaml` | `assets/recipes/styles/defaults/SP01-035.webp` |
-| SP01-036 | `components/recipes/styles/manifests/presets/pack_01/SP01-036.yaml` | `assets/recipes/styles/defaults/SP01-036.webp` |
-| SP01-037 | `components/recipes/styles/manifests/presets/pack_01/SP01-037.yaml` | `assets/recipes/styles/defaults/SP01-037.webp` |
-| SP01-038 | `components/recipes/styles/manifests/presets/pack_01/SP01-038.yaml` | `assets/recipes/styles/defaults/SP01-038.webp` |
-| SP01-039 | `components/recipes/styles/manifests/presets/pack_01/SP01-039.yaml` | `assets/recipes/styles/defaults/SP01-039.webp` |
-| SP01-040 | `components/recipes/styles/manifests/presets/pack_01/SP01-040.yaml` | `assets/recipes/styles/defaults/SP01-040.webp` |
-| SP01-041 | `components/recipes/styles/manifests/presets/pack_01/SP01-041.yaml` | `assets/recipes/styles/defaults/SP01-041.webp` |
-| SP01-042 | `components/recipes/styles/manifests/presets/pack_01/SP01-042.yaml` | `assets/recipes/styles/defaults/SP01-042.webp` |
 | SP01-043 | `components/recipes/styles/manifests/presets/pack_01/SP01-043.yaml` | `assets/recipes/styles/defaults/SP01-043.webp` |
 | SP01-044 | `components/recipes/styles/manifests/presets/pack_01/SP01-044.yaml` | `assets/recipes/styles/defaults/SP01-044.webp` |
 | SP01-045 | `components/recipes/styles/manifests/presets/pack_01/SP01-045.yaml` | `assets/recipes/styles/defaults/SP01-045.webp` |

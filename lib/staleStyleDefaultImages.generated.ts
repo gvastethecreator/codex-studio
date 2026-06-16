@@ -2,20 +2,6 @@
 // Edit docs/active/style-preset-card-regeneration-backlog.md, then run `bun run styles:runtime`.
 
 export const STALE_STYLE_DEFAULT_IMAGE_IDS = [
-  'SP01-029',
-  'SP01-030',
-  'SP01-031',
-  'SP01-032',
-  'SP01-033',
-  'SP01-034',
-  'SP01-035',
-  'SP01-036',
-  'SP01-037',
-  'SP01-038',
-  'SP01-039',
-  'SP01-040',
-  'SP01-041',
-  'SP01-042',
   'SP01-043',
   'SP01-044',
   'SP01-045',
