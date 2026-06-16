@@ -1,4 +1,4 @@
-import { stat } from 'node:fs/promises';
+import { copyFile, mkdir, stat } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -39,6 +39,18 @@ export function repoRelative(filePath: string) {
 
 export async function writeRepoWebpAsset(sourcePath: string, destinationPath: string) {
   const finalDestination = withRecipeAssetExtension(destinationPath);
+  const archiveRoot =
+    process.env.STYLE_DEFAULT_CARD_ARCHIVE_DIR ||
+    path.join(rootDir, '.tmp', 'style-default-card-archive');
+  const presetName = path.parse(finalDestination).name;
+  const previousStats = await stat(finalDestination).catch(() => null);
+  if (previousStats?.size) {
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const previousDir = path.join(archiveRoot, 'previous');
+    await mkdir(previousDir, { recursive: true });
+    await copyFile(finalDestination, path.join(previousDir, `${presetName}.${timestamp}.webp`));
+  }
+
   await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(finalDestination);
 
   const destinationStats = await stat(finalDestination).catch(() => null);
@@ -47,6 +59,10 @@ export async function writeRepoWebpAsset(sourcePath: string, destinationPath: st
       `WebP asset copy failed for ${path.basename(finalDestination)} from ${sourcePath}`,
     );
   }
+
+  const currentDir = path.join(archiveRoot, 'current');
+  await mkdir(currentDir, { recursive: true });
+  await copyFile(finalDestination, path.join(currentDir, `${presetName}.webp`));
 
   return finalDestination;
 }

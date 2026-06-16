@@ -2926,8 +2926,8 @@ Lineamiento aplicado desde esta tanda:
 - `components/recipes/styles/manifests/presets/pack_09/SP09-003.yaml`,
   `SP09-006`, `SP09-008`, `SP09-011`, `SP09-012`, `SP09-014`, `SP09-020`,
   `SP09-021`, `SP09-024`, `SP09-026`, `SP09-027`, `SP09-031`, `SP09-033`,
-  `SP09-053`, `SP09-055`, `SP09-057`, `SP09-061`, `SP09-063`, `SP09-064`,
-  `SP09-066`, `SP09-068`, `SP09-073` y `SP09-080`
+  `SP09-053`, `SP09-055`, `SP09-057`, `SP09-061`, `SP09-066`, `SP09-068`,
+  `SP09-073` y `SP09-080`
 - Alcance: tanda manual de `Texture & Materiality`. Se conservaron materiales
   e indicios utiles (bark, marble, moss, wolf fur, snake scales, coral, copper
   patina, forged carbon, wet asphalt, molded plastic, tire rubber, latex,
@@ -2944,9 +2944,9 @@ Lineamiento aplicado desde esta tanda:
 - Cards: `SP09-003`, `SP09-006`, `SP09-008`, `SP09-011`, `SP09-012`,
   `SP09-014`, `SP09-020`, `SP09-021`, `SP09-024`, `SP09-026`, `SP09-027`,
   `SP09-031`, `SP09-033`, `SP09-053`, `SP09-055`, `SP09-057`, `SP09-061`,
-  `SP09-063`, `SP09-064`, `SP09-066`, `SP09-068`, `SP09-073` y `SP09-080`
-  quedan anotados en `docs/active/style-preset-card-regeneration-backlog.md`
-  como `needs-regeneration` y deben renderizar espacio vacio hasta regenerar.
+  `SP09-066`, `SP09-068`, `SP09-073` y `SP09-080` quedan anotados en
+  `docs/active/style-preset-card-regeneration-backlog.md` como `needs-regeneration`
+  y deben renderizar espacio vacio hasta regenerar.
 
 - `components/recipes/styles/manifests/presets/pack_10/SP10-001.yaml` a
   `SP10-080.yaml`
@@ -7318,3 +7318,3912 @@ Lectura de riesgo:
 - se removieron `SP09-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
 - la generacion uso suffix global de denoise y control de microdetalle;
 - proxima ola sugerida: `SP09-059|SP09-060`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_ad`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-059` / `Soap Bubbles`
+- `SP09-060` / `Mercury (Liquid Metal)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-059|SP09-060" --parallel=2 --session-suffix=stale_p09_ad --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-059.webp` (`284912` bytes)
+  - `assets/recipes/styles/defaults/SP09-060.webp` (`346362` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=60/80 staleDefaultImages=20 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-061|SP09-062`.
+
+## Tanda 2026-06-14 - `pack_09` visual stale refresh ola `stale_p09_ae`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-061` / `Dry Ice Fog`
+- `SP09-062` / `Confetti`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-061|SP09-062" --parallel=2 --session-suffix=stale_p09_ae --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-061.webp` (`218284` bytes)
+  - `assets/recipes/styles/defaults/SP09-062.webp` (`394030` bytes)
+- `bun run styles:runtime:check` -> current.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=62/80 staleDefaultImages=18 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP09-063|SP09-064`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_af`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-063` / `Cobweb`
+- `SP09-064` / `Mud (Cracked)`
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-063|SP09-064" --parallel=2 --session-suffix=stale_p09_af --force`
+- resultado: wrapper timeout despues de crear jobs; las imagenes se recuperaron desde cache Codex generado para esos prompts.
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-063.webp` (`328378` bytes)
+  - `assets/recipes/styles/defaults/SP09-064.webp` (`282680` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=64/80 staleDefaultImages=16 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- app-server dejo `SP09-063` como timeout de notificacion aunque la imagen quedo en cache, y `SP09-064` completo normalmente; siguiente ola deberia sanear/restart runtime antes de generar;
+- proxima ola sugerida: `SP09-065|SP09-066`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_ag`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-065` / `Tar`
+- `SP09-066` / `Sand (Beach)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-065|SP09-066" --parallel=2 --session-suffix=stale_p09_ag --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-065.webp` (`275508` bytes)
+  - `assets/recipes/styles/defaults/SP09-066.webp` (`372098` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=66/80 staleDefaultImages=14 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-067|SP09-068`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_ah`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-067` / `Snow (Powder)`
+- `SP09-068` / `Lava Rock (Cooled)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-067|SP09-068" --parallel=2 --session-suffix=stale_p09_ah --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-067.webp` (`268646` bytes)
+  - `assets/recipes/styles/defaults/SP09-068.webp` (`309434` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=68/80 staleDefaultImages=12 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-069|SP09-070`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_ai`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-069` / `Fiberglass Insulation`
+- `SP09-070` / `Polystyrene (Styrofoam)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-069|SP09-070" --parallel=2 --session-suffix=stale_p09_ai --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-069.webp` (`466704` bytes)
+  - `assets/recipes/styles/defaults/SP09-070.webp` (`240222` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=70/80 staleDefaultImages=10 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-071|SP09-072`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_aj`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-071` / `Plywood`
+- `SP09-072` / `OSB Board`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-071|SP09-072" --parallel=2 --session-suffix=stale_p09_aj --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-071.webp` (`220514` bytes)
+  - `assets/recipes/styles/defaults/SP09-072.webp` (`470544` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-073|SP09-074`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_ak`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-073` / `Linoleum Floor`
+- `SP09-074` / `Carpet (Shag)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-073|SP09-074" --parallel=2 --session-suffix=stale_p09_ak --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-073.webp` (`312882` bytes)
+  - `assets/recipes/styles/defaults/SP09-074.webp` (`430208` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=74/80 staleDefaultImages=6 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-075|SP09-076`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_al`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-075` / `Astroturf`
+- `SP09-076` / `Chain Link Fence`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-075|SP09-076" --parallel=2 --session-suffix=stale_p09_al --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-075.webp` (`387884` bytes)
+  - `assets/recipes/styles/defaults/SP09-076.webp` (`263228` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=76/80 staleDefaultImages=4 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-077|SP09-078`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_am`
+
+Continuacion 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-077` / `Barbed Wire`
+- `SP09-078` / `Solar Panel`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-077|SP09-078" --parallel=2 --session-suffix=stale_p09_am --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-077.webp` (`282518` bytes)
+  - `assets/recipes/styles/defaults/SP09-078.webp` (`290276` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP09-079|SP09-080`.
+
+## Tanda 2026-06-15 - `pack_09` visual stale refresh ola `stale_p09_an`
+
+Cierre 2x2 del stale historico de `pack_09`.
+
+Presets regenerados:
+
+- `SP09-079` / `Mother of Pearl`
+- `SP09-080` / `Dragon Scale`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-079|SP09-080" --parallel=2 --session-suffix=stale_p09_an --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP09-079.webp` (`183082` bytes)
+  - `assets/recipes/styles/defaults/SP09-080.webp` (`355198` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_09 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP09-079/080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: pasar a `pack_10` visual stale, manteniendo tandas 2x2.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_a`
+
+Inicio 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-001` / `Cubism`
+- `SP10-002` / `Bauhaus Style`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-001|SP10-002" --parallel=2 --session-suffix=stale_p10_a --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-001.webp` (`399684` bytes)
+  - `assets/recipes/styles/defaults/SP10-002.webp` (`227350` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=2/80 staleDefaultImages=78 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-003|SP10-004`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_b`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-003` / `Constructivism`
+- `SP10-004` / `Op Art (Optical)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-003|SP10-004" --parallel=2 --session-suffix=stale_p10_b --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-003.webp` (`442062` bytes)
+  - `assets/recipes/styles/defaults/SP10-004.webp` (`219302` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=4/80 staleDefaultImages=76 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-005|SP10-006`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_c`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-005` / `Mondrian (De Stijl)`
+- `SP10-006` / `Fractal Geometry`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-005|SP10-006" --parallel=2 --session-suffix=stale_p10_c --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-005.webp` (`312176` bytes)
+  - `assets/recipes/styles/defaults/SP10-006.webp` (`206086` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=6/80 staleDefaultImages=74 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-007|SP10-008`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_d`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-007` / `Low Poly Abstract`
+- `SP10-008` / `Suprematism`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-007|SP10-008" --parallel=2 --session-suffix=stale_p10_d --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-007.webp` (`353616` bytes)
+  - `assets/recipes/styles/defaults/SP10-008.webp` (`347298` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=8/80 staleDefaultImages=72 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-009|SP10-010`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_e`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-009` / `Islamic Geometric`
+- `SP10-010` / `Voronoi Pattern`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-009|SP10-010" --parallel=2 --session-suffix=stale_p10_e --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-009.webp` (`458862` bytes)
+  - `assets/recipes/styles/defaults/SP10-010.webp` (`169244` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=10/80 staleDefaultImages=70 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-011|SP10-012`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_f`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-011` / `Alcohol Ink`
+- `SP10-012` / `Smoke Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-011|SP10-012" --parallel=2 --session-suffix=stale_p10_f --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-011.webp` (`435336` bytes)
+  - `assets/recipes/styles/defaults/SP10-012.webp` (`151492` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=12/80 staleDefaultImages=68 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-013|SP10-014`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_g`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-013` / `Oil Slick`
+- `SP10-014` / `Macro Bubble`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-013|SP10-014" --parallel=2 --session-suffix=stale_p10_g --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-013.webp` (`383284` bytes)
+  - `assets/recipes/styles/defaults/SP10-014.webp` (`253674` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=14/80 staleDefaultImages=66 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-015|SP10-016`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_h`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-015` / `Mycelium Network`
+- `SP10-016` / `Ferrofluid`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-015|SP10-016" --parallel=2 --session-suffix=stale_p10_h --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-015.webp` (`363994` bytes)
+  - `assets/recipes/styles/defaults/SP10-016.webp` (`275518` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=16/80 staleDefaultImages=64 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-017|SP10-018`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_i`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-017` / `Acrylic Pour`
+- `SP10-018` / `Reaction Diffusion`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-017|SP10-018" --parallel=2 --session-suffix=stale_p10_i --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-017.webp` (`514602` bytes)
+  - `assets/recipes/styles/defaults/SP10-018.webp` (`437724` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=18/80 staleDefaultImages=62 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-019|SP10-020`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_j`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-019` / `Cymatics (Sound)`
+- `SP10-020` / `Nebula Cloud`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-019|SP10-020" --parallel=2 --session-suffix=stale_p10_j --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-019.webp` (`447934` bytes)
+  - `assets/recipes/styles/defaults/SP10-020.webp` (`243916` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=20/80 staleDefaultImages=60 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-021|SP10-022`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_k`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-021` / `Datamosh`
+- `SP10-022` / `Pixel Sorting`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-021|SP10-022" --parallel=2 --session-suffix=stale_p10_k --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-021.webp` (`415324` bytes)
+  - `assets/recipes/styles/defaults/SP10-022.webp` (`409014` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=22/80 staleDefaultImages=58 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-023|SP10-024`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_l`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-023` / `VHS Glitch`
+- `SP10-024` / `CRT Monitor`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-023|SP10-024" --parallel=2 --session-suffix=stale_p10_l --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-023.webp` (`415734` bytes)
+  - `assets/recipes/styles/defaults/SP10-024.webp` (`334408` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=24/80 staleDefaultImages=56 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-025|SP10-026`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_m`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-025` / `ASCII Art`
+- `SP10-026` / `JPEG Artifacts`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-025|SP10-026" --parallel=2 --session-suffix=stale_p10_m --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-025.webp` (`391172` bytes)
+  - `assets/recipes/styles/defaults/SP10-026.webp` (`429836` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=26/80 staleDefaultImages=54 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-027|SP10-028`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_n`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-027` / `Chromatic Aberration`
+- `SP10-028` / `Scanography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-027|SP10-028" --parallel=2 --session-suffix=stale_p10_n --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-027.webp` (`178950` bytes)
+  - `assets/recipes/styles/defaults/SP10-028.webp` (`215662` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=28/80 staleDefaultImages=52 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-029|SP10-030`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_o`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-029` / `Halftone Pattern`
+- `SP10-030` / `Dithering (1-bit)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-029|SP10-030" --parallel=2 --session-suffix=stale_p10_o --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-029.webp` (`946092` bytes)
+  - `assets/recipes/styles/defaults/SP10-030.webp` (`510266` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=30/80 staleDefaultImages=50 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-029/030` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-031|SP10-032`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_p`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-031` / `Surrealism (Dali)`
+- `SP10-032` / `Liminal Space`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-031|SP10-032" --parallel=2 --session-suffix=stale_p10_p --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-031.webp` (`235458` bytes)
+  - `assets/recipes/styles/defaults/SP10-032.webp` (`229466` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=32/80 staleDefaultImages=48 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-033|SP10-034`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_q`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-033` / `Psychedelic Art`
+- `SP10-034` / `Dreamcore`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-033|SP10-034" --parallel=2 --session-suffix=stale_p10_q --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-033.webp` (`600546` bytes)
+  - `assets/recipes/styles/defaults/SP10-034.webp` (`178436` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=34/80 staleDefaultImages=46 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-033/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-035|SP10-036`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_r`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-035` / `Magical Realism`
+- `SP10-036` / `Double Exposure`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-035|SP10-036" --parallel=2 --session-suffix=stale_p10_r --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-035.webp` (`198128` bytes)
+  - `assets/recipes/styles/defaults/SP10-036.webp` (`201376` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=36/80 staleDefaultImages=44 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-035/036` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-037|SP10-038`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_s`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-037` / `Escher Style`
+- `SP10-038` / `Vaporwave`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-037|SP10-038" --parallel=2 --session-suffix=stale_p10_s --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-037.webp` (`673144` bytes)
+  - `assets/recipes/styles/defaults/SP10-038.webp` (`426778` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=38/80 staleDefaultImages=42 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-037/038` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-039|SP10-040`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_t`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-039` / `Biomechanical (Giger)`
+- `SP10-040` / `Collage Surrealism`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-039|SP10-040" --parallel=2 --session-suffix=stale_p10_t --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-039.webp` (`315524` bytes)
+  - `assets/recipes/styles/defaults/SP10-040.webp` (`266796` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=40/80 staleDefaultImages=40 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-039/040` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-041|SP10-042`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_u`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-041` / `Metaphysical Art`
+- `SP10-042` / `Lowbrow (Pop Surrealism)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-041|SP10-042" --parallel=2 --session-suffix=stale_p10_u --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-041.webp` (`138516` bytes)
+  - `assets/recipes/styles/defaults/SP10-042.webp` (`259480` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=42/80 staleDefaultImages=38 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-043|SP10-044`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_v`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-043` / `Dark Fantasy`
+- `SP10-044` / `Solarpunk`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-043|SP10-044" --parallel=2 --session-suffix=stale_p10_v --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-043.webp` (`254980` bytes)
+  - `assets/recipes/styles/defaults/SP10-044.webp` (`322540` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=44/80 staleDefaultImages=36 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-045|SP10-046`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_w`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-045` / `Weirdcore`
+- `SP10-046` / `Paisley Pattern`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-045|SP10-046" --parallel=2 --session-suffix=stale_p10_w --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-045.webp` (`198370` bytes)
+  - `assets/recipes/styles/defaults/SP10-046.webp` (`623802` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=46/80 staleDefaultImages=34 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-047|SP10-048`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_x`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-047` / `Damask Pattern`
+- `SP10-048` / `Terrazzo`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-047|SP10-048" --parallel=2 --session-suffix=stale_p10_x --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-047.webp` (`503332` bytes)
+  - `assets/recipes/styles/defaults/SP10-048.webp` (`444186` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=48/80 staleDefaultImages=32 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-049|SP10-050`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_y`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-049` / `Houndstooth`
+- `SP10-050` / `Tartan (Plaid)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-049|SP10-050" --parallel=2 --session-suffix=stale_p10_y --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-049.webp` (`458826` bytes)
+  - `assets/recipes/styles/defaults/SP10-050.webp` (`405554` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=50/80 staleDefaultImages=30 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-051|SP10-052`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_z`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-051` / `Polka Dot`
+- `SP10-052` / `Camouflage`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-051|SP10-052" --parallel=2 --session-suffix=stale_p10_z --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-051.webp` (`495916` bytes)
+  - `assets/recipes/styles/defaults/SP10-052.webp` (`406500` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=52/80 staleDefaultImages=28 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-053|SP10-054`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_aa`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-053` / `Tie Dye`
+- `SP10-054` / `Marble Texture`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-053|SP10-054" --parallel=2 --session-suffix=stale_p10_aa --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-053.webp` (`343632` bytes)
+  - `assets/recipes/styles/defaults/SP10-054.webp` (`175136` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=54/80 staleDefaultImages=26 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-055|SP10-056`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ab`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-055` / `Wood Grain`
+- `SP10-056` / `Carbon Fiber`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-055|SP10-056" --parallel=2 --session-suffix=stale_p10_ab --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-055.webp` (`407086` bytes)
+  - `assets/recipes/styles/defaults/SP10-056.webp` (`282164` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=56/80 staleDefaultImages=24 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-057|SP10-058`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ac`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-057` / `Knitted Texture`
+- `SP10-058` / `Denim Texture`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-057|SP10-058" --parallel=2 --session-suffix=stale_p10_ac --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-057.webp` (`448534` bytes)
+  - `assets/recipes/styles/defaults/SP10-058.webp` (`366592` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-059|SP10-060`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ad`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-059` / `Leather Texture`
+- `SP10-060` / `Glitter Texture`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-059|SP10-060" --parallel=2 --session-suffix=stale_p10_ad --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-059.webp` (`416514` bytes)
+  - `assets/recipes/styles/defaults/SP10-060.webp` (`679876` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=60/80 staleDefaultImages=20 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-061|SP10-062`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ae`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-061` / `Rust Texture`
+- `SP10-062` / `Holographic Foil`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-061|SP10-062" --parallel=2 --session-suffix=stale_p10_ae --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-061.webp` (`250696` bytes)
+  - `assets/recipes/styles/defaults/SP10-062.webp` (`397980` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=62/80 staleDefaultImages=18 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-063|SP10-064`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_af`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-063` / `Chainmail`
+- `SP10-064` / `Snake Skin`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-063|SP10-064" --parallel=2 --session-suffix=stale_p10_af --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-063.webp` (`342574` bytes)
+  - `assets/recipes/styles/defaults/SP10-064.webp` (`350344` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=64/80 staleDefaultImages=16 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-065|SP10-066`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ag`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-065` / `Basket Weave`
+- `SP10-066` / `Honeycomb`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-065|SP10-066" --parallel=2 --session-suffix=stale_p10_ag --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-065.webp` (`477644` bytes)
+  - `assets/recipes/styles/defaults/SP10-066.webp` (`220210` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=66/80 staleDefaultImages=14 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-067|SP10-068`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ah`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-067` / `Circuit Board`
+- `SP10-068` / `Topographic Map`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-067|SP10-068" --parallel=2 --session-suffix=stale_p10_ah --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-067.webp` (`462252` bytes)
+  - `assets/recipes/styles/defaults/SP10-068.webp` (`436760` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=68/80 staleDefaultImages=12 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-069|SP10-070`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ai`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-069` / `QR Code Style`
+- `SP10-070` / `Azulejo Tile`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-069|SP10-070" --parallel=2 --session-suffix=stale_p10_ai --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-069.webp` (`196252` bytes)
+  - `assets/recipes/styles/defaults/SP10-070.webp` (`586224` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=70/80 staleDefaultImages=10 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-071|SP10-072`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_aj`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-071` / `Kintsugi`
+- `SP10-072` / `Pointillism (Seurat)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-071|SP10-072" --parallel=2 --session-suffix=stale_p10_aj --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-071.webp` (`396262` bytes)
+  - `assets/recipes/styles/defaults/SP10-072.webp` (`882060` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-073|SP10-074`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_ak`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-073` / `Mosaic (Tile)`
+- `SP10-074` / `Stained Glass`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-073|SP10-074" --parallel=2 --session-suffix=stale_p10_ak --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-073.webp` (`379216` bytes)
+  - `assets/recipes/styles/defaults/SP10-074.webp` (`325290` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=74/80 staleDefaultImages=6 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-075|SP10-076`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_al`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-075` / `Cross Stitch`
+- `SP10-076` / `Blueprint`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-075|SP10-076" --parallel=2 --session-suffix=stale_p10_al --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-075.webp` (`757918` bytes)
+  - `assets/recipes/styles/defaults/SP10-076.webp` (`587076` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=76/80 staleDefaultImages=4 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-077|SP10-078`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_am`
+
+Continuacion 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-077` / `Chalkboard Art`
+- `SP10-078` / `Neon Light Lines`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-077|SP10-078" --parallel=2 --session-suffix=stale_p10_am --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-077.webp` (`418944` bytes)
+  - `assets/recipes/styles/defaults/SP10-078.webp` (`197128` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP10-079|SP10-080`.
+
+## Tanda 2026-06-15 - `pack_10` visual stale refresh ola `stale_p10_an`
+
+Cierre 2x2 del stale historico de `pack_10`.
+
+Presets regenerados:
+
+- `SP10-079` / `Foil Stamping`
+- `SP10-080` / `Letterpress`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_10 "--preset=SP10-079|SP10-080" --parallel=2 --session-suffix=stale_p10_an --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_10`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP10-079.webp` (`524922` bytes)
+  - `assets/recipes/styles/defaults/SP10-080.webp` (`562232` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_10 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP10-079/080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: empezar `pack_11` visual stale desde su primer par activo.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_a`
+
+Inicio 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-001` / `Lego Toy Brick Build`
+- `SP11-002` / `Funko Pop Vinyl Collectible Figure`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-001|SP11-002" --parallel=2 --session-suffix=stale_p11_a --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-001.webp` (`265016` bytes)
+  - `assets/recipes/styles/defaults/SP11-002.webp` (`250682` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=2/80 staleDefaultImages=78 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-003|SP11-004`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_b`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-003` / `Play-Doh Clay`
+- `SP11-004` / `Papercraft Low Poly`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-003|SP11-004" --parallel=2 --session-suffix=stale_p11_b --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-003.webp` (`266114` bytes)
+  - `assets/recipes/styles/defaults/SP11-004.webp` (`237748` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=4/80 staleDefaultImages=76 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-005|SP11-006`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_c`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-005` / `Amigurumi Crochet`
+- `SP11-006` / `Chalkboard Art`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-005|SP11-006" --parallel=2 --session-suffix=stale_p11_c --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-005.webp` (`258388` bytes)
+  - `assets/recipes/styles/defaults/SP11-006.webp` (`393370` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=6/80 staleDefaultImages=74 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-007|SP11-008`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_d`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-007` / `Tattoo Flash (Old School)`
+- `SP11-008` / `Stained Glass`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-007|SP11-008" --parallel=2 --session-suffix=stale_p11_d --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-007.webp` (`727930` bytes)
+  - `assets/recipes/styles/defaults/SP11-008.webp` (`682380` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=8/80 staleDefaultImages=72 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-009|SP11-010`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_e`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-009` / `Emoji 3D`
+- `SP11-010` / `Indexed Pixel Constraint`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-009|SP11-010" --parallel=2 --session-suffix=stale_p11_e --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-009.webp` (`210838` bytes)
+  - `assets/recipes/styles/defaults/SP11-010.webp` (`274388` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=10/80 staleDefaultImages=70 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-011|SP11-012`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_f`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-011` / `Chrome Horizon Voltage`
+- `SP11-012` / `Solarpunk`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-011|SP11-012" --parallel=2 --session-suffix=stale_p11_f --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-011.webp` (`364464` bytes)
+  - `assets/recipes/styles/defaults/SP11-012.webp` (`475424` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=12/80 staleDefaultImages=68 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-013|SP11-014`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_g`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-013` / `Dieselpunk`
+- `SP11-014` / `Cottagecore`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-013|SP11-014" --parallel=2 --session-suffix=stale_p11_g --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-013.webp` (`380924` bytes)
+  - `assets/recipes/styles/defaults/SP11-014.webp` (`405286` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=14/80 staleDefaultImages=66 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-015|SP11-016`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_h`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-015` / `Dark Academia`
+- `SP11-016` / `Plushie`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-015|SP11-016" --parallel=2 --session-suffix=stale_p11_h --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-015.webp` (`226746` bytes)
+  - `assets/recipes/styles/defaults/SP11-016.webp` (`249438` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=16/80 staleDefaultImages=64 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-017|SP11-018`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_i`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-017` / `Action Figure (90s)`
+- `SP11-018` / `Balloon Art`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-017|SP11-018" --parallel=2 --session-suffix=stale_p11_i --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-017.webp` (`360504` bytes)
+  - `assets/recipes/styles/defaults/SP11-018.webp` (`160110` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=18/80 staleDefaultImages=62 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-019|SP11-020`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_j`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-019` / `Felt Signal Handmade Broadcast`
+- `SP11-020` / `Wooden Toy`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-019|SP11-020" --parallel=2 --session-suffix=stale_p11_j --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-019.webp` (`376900` bytes)
+  - `assets/recipes/styles/defaults/SP11-020.webp` (`328452` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=20/80 staleDefaultImages=60 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-021|SP11-022`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_k`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-021` / `Sticker Art`
+- `SP11-022` / `Clay Stop-Motion Comedy`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-021|SP11-022" --parallel=2 --session-suffix=stale_p11_k --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-021.webp` (`222256` bytes)
+  - `assets/recipes/styles/defaults/SP11-022.webp` (`191248` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=22/80 staleDefaultImages=58 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-023|SP11-024`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_l`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-023` / `Tin Toy`
+- `SP11-024` / `Diorama Box`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-023|SP11-024" --parallel=2 --session-suffix=stale_p11_l --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-023.webp` (`372152` bytes)
+  - `assets/recipes/styles/defaults/SP11-024.webp` (`379514` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=24/80 staleDefaultImages=56 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-025|SP11-026`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_m`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-025` / `Button Eye Doll`
+- `SP11-026` / `Aerosol Velocity Layering`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-025|SP11-026" --parallel=2 --session-suffix=stale_p11_m --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-025.webp` (`285418` bytes)
+  - `assets/recipes/styles/defaults/SP11-026.webp` (`696110` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=26/80 staleDefaultImages=54 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-027|SP11-028`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_n`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-027` / `Mosaic Tile`
+- `SP11-028` / `Gas-Tube Halo Typography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-027|SP11-028" --parallel=2 --session-suffix=stale_p11_n --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-027.webp` (`901896` bytes)
+  - `assets/recipes/styles/defaults/SP11-028.webp` (`296398` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=28/80 staleDefaultImages=52 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-029|SP11-030`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_o`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-029` / `Embroidery`
+- `SP11-030` / `Sand Art`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-029|SP11-030" --parallel=2 --session-suffix=stale_p11_o --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-029.webp` (`759984` bytes)
+  - `assets/recipes/styles/defaults/SP11-030.webp` (`315660` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=30/80 staleDefaultImages=50 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-029/030` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-031|SP11-032`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_p`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-031` / `Ice Carving`
+- `SP11-032` / `Latte Art`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-031|SP11-032" --parallel=2 --session-suffix=stale_p11_p --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-031.webp` (`480800` bytes)
+  - `assets/recipes/styles/defaults/SP11-032.webp` (`339988` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=32/80 staleDefaultImages=48 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-033|SP11-034`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_q`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-033` / `Blueprint`
+- `SP11-034` / `X-Ray`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-033|SP11-034" --parallel=2 --session-suffix=stale_p11_q --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-033.webp` (`595686` bytes)
+  - `assets/recipes/styles/defaults/SP11-034.webp` (`273366` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=34/80 staleDefaultImages=46 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-033/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-035|SP11-036`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_r`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-035` / `Thermal Vision`
+- `SP11-036` / `Liminal Consumer Vapor`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-035|SP11-036" --parallel=2 --session-suffix=stale_p11_r --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-035.webp` (`360568` bytes)
+  - `assets/recipes/styles/defaults/SP11-036.webp` (`251380` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=36/80 staleDefaultImages=44 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-035/036` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-037|SP11-038`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_s`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-037` / `Steampunk`
+- `SP11-038` / `Biopunk`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-037|SP11-038" --parallel=2 --session-suffix=stale_p11_s --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-037.webp` (`329184` bytes)
+  - `assets/recipes/styles/defaults/SP11-038.webp` (`392506` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=38/80 staleDefaultImages=42 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-037/038` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-039|SP11-040`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_t`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-039` / `Gothic Horror`
+- `SP11-040` / `Kawaii Pastel`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-039|SP11-040" --parallel=2 --session-suffix=stale_p11_t --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-039.webp` (`268416` bytes)
+  - `assets/recipes/styles/defaults/SP11-040.webp` (`212034` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=40/80 staleDefaultImages=40 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-039/040` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-041|SP11-042`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_u`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-041` / `Grimdark`
+- `SP11-042` / `Frutiger Aero`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-041|SP11-042" --parallel=2 --session-suffix=stale_p11_u --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-041.webp` (`425406` bytes)
+  - `assets/recipes/styles/defaults/SP11-042.webp` (`328096` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=42/80 staleDefaultImages=38 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-043|SP11-044`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_v`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-043` / `Postmodern Pattern Clash`
+- `SP11-044` / `Silkscreen Icon Impact`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-043|SP11-044" --parallel=2 --session-suffix=stale_p11_v --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-043.webp` (`412122` bytes)
+  - `assets/recipes/styles/defaults/SP11-044.webp` (`731098` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=44/80 staleDefaultImages=36 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-045|SP11-046`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_w`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-045` / `Liquid Optic Recursion`
+- `SP11-046` / `Michelin Fine-Dining Editorial`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-045|SP11-046" --parallel=2 --session-suffix=stale_p11_w --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-045.webp` (`370952` bytes)
+  - `assets/recipes/styles/defaults/SP11-046.webp` (`198386` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=46/80 staleDefaultImages=34 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-047|SP11-048`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_x`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-047` / `Candy Land`
+- `SP11-048` / `Sushi Platter`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-047|SP11-048" --parallel=2 --session-suffix=stale_p11_x --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-047.webp` (`316252` bytes)
+  - `assets/recipes/styles/defaults/SP11-048.webp` (`427922` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=48/80 staleDefaultImages=32 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-049|SP11-050`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_y`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-049` / `Fast Food Commercial`
+- `SP11-050` / `Cocktail Macro`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-049|SP11-050" --parallel=2 --session-suffix=stale_p11_y --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-049.webp` (`423282` bytes)
+  - `assets/recipes/styles/defaults/SP11-050.webp` (`343130` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=50/80 staleDefaultImages=30 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-051|SP11-052`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_z`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-051` / `Bakery Window`
+- `SP11-052` / `Fruit Explosion`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-051|SP11-052" --parallel=2 --session-suffix=stale_p11_z --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-051.webp` (`234688` bytes)
+  - `assets/recipes/styles/defaults/SP11-052.webp` (`431604` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=52/80 staleDefaultImages=28 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-053|SP11-054`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_aa`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-053` / `Chocolate Flow`
+- `SP11-054` / `Bento Box`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-053|SP11-054" --parallel=2 --session-suffix=stale_p11_aa --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-053.webp` (`195248` bytes)
+  - `assets/recipes/styles/defaults/SP11-054.webp` (`248012` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=54/80 staleDefaultImages=26 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-055|SP11-056`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ab`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-055` / `Pizza Melt`
+- `SP11-056` / `Electron Microscope`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-055|SP11-056" --parallel=2 --session-suffix=stale_p11_ab --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-055.webp` (`395306` bytes)
+  - `assets/recipes/styles/defaults/SP11-056.webp` (`390166` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=56/80 staleDefaultImages=24 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-057|SP11-058`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ac`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-057` / `Insect Eye`
+- `SP11-058` / `Cellular Life`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-057|SP11-058" --parallel=2 --session-suffix=stale_p11_ac --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-057.webp` (`380716` bytes)
+  - `assets/recipes/styles/defaults/SP11-058.webp` (`529400` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-059|SP11-060`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ad`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-059` / `Snowflake`
+- `SP11-060` / `Circuit Board`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-059|SP11-060" --parallel=2 --session-suffix=stale_p11_ad --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-059.webp` (`354048` bytes)
+  - `assets/recipes/styles/defaults/SP11-060.webp` (`386698` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=60/80 staleDefaultImages=20 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-061|SP11-062`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ae`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-061` / `Water Drop Reflection`
+- `SP11-062` / `Fiber/Fabric Macro`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-061|SP11-062" --parallel=2 --session-suffix=stale_p11_ae --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-061.webp` (`217876` bytes)
+  - `assets/recipes/styles/defaults/SP11-062.webp` (`535718` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=62/80 staleDefaultImages=18 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-063|SP11-064`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_af`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-063` / `Rust/Decay Macro`
+- `SP11-064` / `Iris/Eye Macro`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-063|SP11-064" --parallel=2 --session-suffix=stale_p11_af --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-063.webp` (`400630` bytes)
+  - `assets/recipes/styles/defaults/SP11-064.webp` (`375014` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=64/80 staleDefaultImages=16 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-065|SP11-066`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ag`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-065` / `Soap Bubble`
+- `SP11-066` / `Holographic Flake Scatter`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-065|SP11-066" --parallel=2 --session-suffix=stale_p11_ag --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-065.webp` (`229534` bytes)
+  - `assets/recipes/styles/defaults/SP11-066.webp` (`579794` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=66/80 staleDefaultImages=14 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-067|SP11-068`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ah`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-067` / `Feather Macro`
+- `SP11-068` / `Leaf Veins`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-067|SP11-068" --parallel=2 --session-suffix=stale_p11_ah --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-067.webp` (`426720` bytes)
+  - `assets/recipes/styles/defaults/SP11-068.webp` (`444374` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=68/80 staleDefaultImages=12 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-069|SP11-070`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ai`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-069` / `Skin Pores`
+- `SP11-070` / `Ink in Water`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-069|SP11-070" --parallel=2 --session-suffix=stale_p11_ai --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-069.webp` (`366682` bytes)
+  - `assets/recipes/styles/defaults/SP11-070.webp` (`310760` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=70/80 staleDefaultImages=10 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-071|SP11-072`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_aj`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-071` / `Fungi/Mold`
+- `SP11-072` / `Crystal Growth`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-071|SP11-072" --parallel=2 --session-suffix=stale_p11_aj --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-071.webp` (`442388` bytes)
+  - `assets/recipes/styles/defaults/SP11-072.webp` (`343698` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-073|SP11-074`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_ak`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-073` / `Vinyl Record Grooves`
+- `SP11-074` / `Velcro`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-073|SP11-074" --parallel=2 --session-suffix=stale_p11_ak --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-073.webp` (`295116` bytes)
+  - `assets/recipes/styles/defaults/SP11-074.webp` (`413992` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=74/80 staleDefaultImages=6 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-075|SP11-076`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_al`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-075` / `Sponge`
+- `SP11-076` / `Moss`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-075|SP11-076" --parallel=2 --session-suffix=stale_p11_al --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-075.webp` (`366930` bytes)
+  - `assets/recipes/styles/defaults/SP11-076.webp` (`278086` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=76/80 staleDefaultImages=4 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-077|SP11-078`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_am`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-077` / `Sandpaper`
+- `SP11-078` / `Cork`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-077|SP11-078" --parallel=2 --session-suffix=stale_p11_am --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-077.webp` (`490752` bytes)
+  - `assets/recipes/styles/defaults/SP11-078.webp` (`276294` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- proxima ola sugerida: `SP11-079|SP11-080`.
+
+## Tanda 2026-06-15 - `pack_11` visual stale refresh ola `stale_p11_an`
+
+Continuacion 2x2 del stale historico de `pack_11`.
+
+Presets regenerados:
+
+- `SP11-079` / `Carbon Fiber`
+- `SP11-080` / `Dandelion Seed`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_11 "--preset=SP11-079|SP11-080" --parallel=2 --session-suffix=stale_p11_an --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_11`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP11-079.webp` (`264166` bytes)
+  - `assets/recipes/styles/defaults/SP11-080.webp` (`212914` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_11 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP11-079/080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- timeout interno explicito evito wrapper mudo y la ola cerro sin recuperacion manual;
+- `pack_11` queda sin stale visual pendiente si la cobertura final confirma `80/80`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_a`
+
+Inicio 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-001` / `Neon Samurai District`
+- `SP12-002` / `Bioluminescent Jungle Raid`
+
+Evidencia:
+
+- primer intento fallo por `ConnectionRefused` contra `http://127.0.0.1:17223/api/health`; se levanto `bun run dev:server` local para recuperar el runtime requerido.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-001|SP12-002" --parallel=2 --session-suffix=stale_p12_a --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-001.webp` (`400988` bytes)
+  - `assets/recipes/styles/defaults/SP12-002.webp` (`377972` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=2/80 staleDefaultImages=78 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-001/002` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada, no se mezcla con esta tanda visual;
+- proxima ola sugerida: `SP12-003|SP12-004`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_b`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-003` / `Desert Mech Convoy`
+- `SP12-004` / `Clockwork Sky Armada`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-003|SP12-004" --parallel=2 --session-suffix=stale_p12_b --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-003.webp` (`422676` bytes)
+  - `assets/recipes/styles/defaults/SP12-004.webp` (`394226` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=4/80 staleDefaultImages=76 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-003/004` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-005|SP12-006`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_c`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-005` / `Moonbase Breach Alarm`
+- `SP12-006` / `Arcane Library Boss Arena`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-005|SP12-006" --parallel=2 --session-suffix=stale_p12_c --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-005.webp` (`273074` bytes)
+  - `assets/recipes/styles/defaults/SP12-006.webp` (`343098` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=6/80 staleDefaultImages=74 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-005/006` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-007|SP12-008`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_d`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-007` / `Glacier Fortress Assault`
+- `SP12-008` / `Holographic Grand Prix Night`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-007|SP12-008" --parallel=2 --session-suffix=stale_p12_d --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-007.webp` (`410556` bytes)
+  - `assets/recipes/styles/defaults/SP12-008.webp` (`504362` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=8/80 staleDefaultImages=72 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-007/008` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-009|SP12-010`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_e`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-009` / `Ruined Cathedral Co-op Siege`
+- `SP12-010` / `Volcanic Forge Dungeon`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-009|SP12-010" --parallel=2 --session-suffix=stale_p12_e --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-009.webp` (`410982` bytes)
+  - `assets/recipes/styles/defaults/SP12-010.webp` (`353062` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=10/80 staleDefaultImages=70 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-009/010` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-011|SP12-012`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_f`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-011` / `Underwater Research Collapse`
+- `SP12-012` / `Pixel Tavern Quest Hub`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-011|SP12-012" --parallel=2 --session-suffix=stale_p12_f --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-011.webp` (`407698` bytes)
+  - `assets/recipes/styles/defaults/SP12-012.webp` (`402984` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=12/80 staleDefaultImages=68 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-011/012` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-013|SP12-014`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_g`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-013` / `Crystal Desert Shrine`
+- `SP12-014` / `Urban Parkour Rooftop Wars`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-013|SP12-014" --parallel=2 --session-suffix=stale_p12_g --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-013.webp` (`402256` bytes)
+  - `assets/recipes/styles/defaults/SP12-014.webp` (`347496` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=14/80 staleDefaultImages=66 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-013/014` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-015|SP12-016`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_h`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-015` / `Ancient Mecha Temple`
+- `SP12-016` / `Shadow Opera Assassin Court`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-015|SP12-016" --parallel=2 --session-suffix=stale_p12_h --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-015.webp` (`366858` bytes)
+  - `assets/recipes/styles/defaults/SP12-016.webp` (`214416` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=16/80 staleDefaultImages=64 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-015/016` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-017|SP12-018`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_i`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-017` / `Lava Skate Arena`
+- `SP12-018` / `Storm Citadel Defense Grid`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-017|SP12-018" --parallel=2 --session-suffix=stale_p12_i --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-017.webp` (`436090` bytes)
+  - `assets/recipes/styles/defaults/SP12-018.webp` (`407830` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=18/80 staleDefaultImages=62 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-017/018` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-019|SP12-020`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_j`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-019` / `Forgotten Subway Mutation Zone`
+- `SP12-020` / `Celestial Harbor Trade Wars`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-019|SP12-020" --parallel=2 --session-suffix=stale_p12_j --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-019.webp` (`276200` bytes)
+  - `assets/recipes/styles/defaults/SP12-020.webp` (`423660` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=20/80 staleDefaultImages=60 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-019/020` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-021|SP12-022`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_k`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-021` / `Drift Kingdom Sandstorm Cup`
+- `SP12-022` / `Frozen Bazaar Survival Night`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-021|SP12-022" --parallel=2 --session-suffix=stale_p12_k --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-021.webp` (`427472` bytes)
+  - `assets/recipes/styles/defaults/SP12-022.webp` (`498622` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=22/80 staleDefaultImages=58 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-021/022` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-023|SP12-024`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_l`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-023` / `Orbital Garden Colony Builder`
+- `SP12-024` / `Temple Runner Trap Gauntlet`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-023|SP12-024" --parallel=2 --session-suffix=stale_p12_l --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-023.webp` (`363722` bytes)
+  - `assets/recipes/styles/defaults/SP12-024.webp` (`441280` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=24/80 staleDefaultImages=56 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-023/024` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-025|SP12-026`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_m`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-025` / `Neon Underpass Brawler`
+- `SP12-026` / `Verdant Ruins Tactical RPG`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-025|SP12-026" --parallel=2 --session-suffix=stale_p12_m --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-025.webp` (`451548` bytes)
+  - `assets/recipes/styles/defaults/SP12-026.webp` (`569830` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=26/80 staleDefaultImages=54 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-025/026` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-027|SP12-028`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_n`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-027` / `Deep Mine Co-op Extraction`
+- `SP12-028` / `Sky Monastery Duel`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-027|SP12-028" --parallel=2 --session-suffix=stale_p12_n --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-027.webp` (`454190` bytes)
+  - `assets/recipes/styles/defaults/SP12-028.webp` (`362596` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=28/80 staleDefaultImages=52 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-027/028` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-029|SP12-030`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_o`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-029` / `Coral Reef Underkingdom`
+- `SP12-030` / `Cursed Carnival Showdown`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-029|SP12-030" --parallel=2 --session-suffix=stale_p12_o --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-029.webp` (`500262` bytes)
+  - `assets/recipes/styles/defaults/SP12-030.webp` (`368588` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=30/80 staleDefaultImages=50 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-029/030` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-029/030` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-031|SP12-032`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_p`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-031` / `Astral Chess Battlefield`
+- `SP12-032` / `Harbor Smuggler Night Heist`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-031|SP12-032" --parallel=2 --session-suffix=stale_p12_p --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-031.webp` (`396394` bytes)
+  - `assets/recipes/styles/defaults/SP12-032.webp` (`311170` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=32/80 staleDefaultImages=48 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-031/032` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-033|SP12-034`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_q`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-033` / `Robot Orchard Defense`
+- `SP12-034` / `Crimson Canyon Sniper Run`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-033|SP12-034" --parallel=2 --session-suffix=stale_p12_q --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-033.webp` (`421892` bytes)
+  - `assets/recipes/styles/defaults/SP12-034.webp` (`423598` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=34/80 staleDefaultImages=46 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-033/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-033/034` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-035|SP12-036`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_r_retry`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-035` / `Mythic Train Defense`
+- `SP12-036` / `Lunar Monolith Puzzle Chamber`
+
+Evidencia:
+
+- intento inicial: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-035|SP12-036" --parallel=2 --session-suffix=stale_p12_r --force`
+- resultado inicial: `generated=0 attempted=2 skipped=78 failed=2 packs=pack_12`; ambos jobs expiraron tras `900000` ms y el server local dejo de escuchar en `17223`.
+- retry exitoso: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-035|SP12-036" --parallel=2 --session-suffix=stale_p12_r_retry --force`
+- resultado retry: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-035.webp` (`391952` bytes)
+  - `assets/recipes/styles/defaults/SP12-036.webp` (`315742` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=36/80 staleDefaultImages=44 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-035/036` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-035/036` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- hubo caida/timeout del server local durante el primer intento, mitigado reiniciando runtime y reintentando la misma pareja;
+- proxima ola sugerida: `SP12-037|SP12-038`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_s`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-037` / `Mushroom Kingdom Frontier`
+- `SP12-038` / `Iron Reef Naval Skirmish`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-037|SP12-038" --parallel=2 --session-suffix=stale_p12_s --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-037.webp` (`308798` bytes)
+  - `assets/recipes/styles/defaults/SP12-038.webp` (`407116` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=38/80 staleDefaultImages=42 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-037/038` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-037/038` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-039|SP12-040`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_t`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-039` / `Phantom Theater Rhythm Battle`
+- `SP12-040` / `Thunder Plains Beast Hunt`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-039|SP12-040" --parallel=2 --session-suffix=stale_p12_t --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-039.webp` (`351506` bytes)
+  - `assets/recipes/styles/defaults/SP12-040.webp` (`370190` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=40/80 staleDefaultImages=40 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-039/040` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-039/040` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-041|SP12-042`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_u`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-041` / `Emberwood Ranger Outpost`
+- `SP12-042` / `Quantum Laboratory Rift`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-041|SP12-042" --parallel=2 --session-suffix=stale_p12_u --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-041.webp` (`337610` bytes)
+  - `assets/recipes/styles/defaults/SP12-042.webp` (`353376` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=42/80 staleDefaultImages=38 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-041/042` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-043|SP12-044`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_v`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-043` / `Harbor Kaiju Evacuation`
+- `SP12-044` / `Mirage Palace Stealth Gala`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-043|SP12-044" --parallel=2 --session-suffix=stale_p12_v --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-043.webp` (`295500` bytes)
+  - `assets/recipes/styles/defaults/SP12-044.webp` (`372286` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=44/80 staleDefaultImages=36 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-043/044` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-045|SP12-046`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_w`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-045` / `Alloy Forest Mech Hunt`
+- `SP12-046` / `Solar Rail Nomad Camp`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-045|SP12-046" --parallel=2 --session-suffix=stale_p12_w --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-045.webp` (`472582` bytes)
+  - `assets/recipes/styles/defaults/SP12-046.webp` (`377886` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=46/80 staleDefaultImages=34 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-045/046` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-047|SP12-048`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_x`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-047` / `Obsidian Arena Champion Trial`
+- `SP12-048` / `Crystal Metro Hoverline`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-047|SP12-048" --parallel=2 --session-suffix=stale_p12_x --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-047.webp` (`411464` bytes)
+  - `assets/recipes/styles/defaults/SP12-048.webp` (`305780` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=48/80 staleDefaultImages=32 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-047/048` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-049|SP12-050`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_y`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-049` / `Thorn Castle Moon Raid`
+- `SP12-050` / `Polar Signal Tower Outbreak`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-049|SP12-050" --parallel=2 --session-suffix=stale_p12_y --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-049.webp` (`405736` bytes)
+  - `assets/recipes/styles/defaults/SP12-050.webp` (`267076` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=50/80 staleDefaultImages=30 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-049/050` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-051|SP12-052`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_z`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-051` / `Sapphire Bazaar Deckbuilder Hub`
+- `SP12-052` / `Rift Bridge Capture Point`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-051|SP12-052" --parallel=2 --session-suffix=stale_p12_z --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-051.webp` (`424448` bytes)
+  - `assets/recipes/styles/defaults/SP12-052.webp` (`393464` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=52/80 staleDefaultImages=28 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-051/052` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-053|SP12-054`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_aa`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-053` / `Marsh Witch Coven Arena`
+- `SP12-054` / `Copper Canyon Train Robbery`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-053|SP12-054" --parallel=2 --session-suffix=stale_p12_aa --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-053.webp` (`360430` bytes)
+  - `assets/recipes/styles/defaults/SP12-054.webp` (`272818` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=54/80 staleDefaultImages=26 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-053/054` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-055|SP12-056`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ab`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-055` / `Orchid Palace Puzzle Gardens`
+- `SP12-056` / `Carbon Megacity Rooftop Chase`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-055|SP12-056" --parallel=2 --session-suffix=stale_p12_ab --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-055.webp` (`376460` bytes)
+  - `assets/recipes/styles/defaults/SP12-056.webp` (`341016` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=56/80 staleDefaultImages=24 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-055/056` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-057|SP12-058`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ac`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-057` / `Verdigris Harbor Pirate Skies`
+- `SP12-058` / `Echo Cavern Sound Puzzle`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-057|SP12-058" --parallel=2 --session-suffix=stale_p12_ac --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-057.webp` (`446226` bytes)
+  - `assets/recipes/styles/defaults/SP12-058.webp` (`325242` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-057/058` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-059|SP12-060`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ad`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-059` / `Prismatic Arena Hero Draft`
+- `SP12-060` / `Hollow Basilica Final Stand`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-059|SP12-060" --parallel=2 --session-suffix=stale_p12_ad --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-059.webp` (`375636` bytes)
+  - `assets/recipes/styles/defaults/SP12-060.webp` (`338786` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=60/80 staleDefaultImages=20 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-059/060` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-061|SP12-062`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ae`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-061` / `Jade Volcano Shrine Run`
+- `SP12-062` / `Neon Koi River District`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-061|SP12-062" --parallel=2 --session-suffix=stale_p12_ae --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-061.webp` (`461788` bytes)
+  - `assets/recipes/styles/defaults/SP12-062.webp` (`388916` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=62/80 staleDefaultImages=18 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-061/062` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-063|SP12-064`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_af`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-063` / `Obelisk Desert Relic Race`
+- `SP12-064` / `Iron Orchard Defense Night`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-063|SP12-064" --parallel=2 --session-suffix=stale_p12_af --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-063.webp` (`432016` bytes)
+  - `assets/recipes/styles/defaults/SP12-064.webp` (`414048` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=64/80 staleDefaultImages=16 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-063/064` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-065|SP12-066`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ag`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-065` / `Crystal Crown Duel Hall`
+- `SP12-066` / `Abyss Rail Horror Transit`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-065|SP12-066" --parallel=2 --session-suffix=stale_p12_ag --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-065.webp` (`407428` bytes)
+  - `assets/recipes/styles/defaults/SP12-066.webp` (`265658` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=66/80 staleDefaultImages=14 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-065/066` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-067|SP12-068`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ah`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-067` / `Bronze Marsh Siege Camp`
+- `SP12-068` / `Skyforge Dragon Dock`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-067|SP12-068" --parallel=2 --session-suffix=stale_p12_ah --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-067.webp` (`343844` bytes)
+  - `assets/recipes/styles/defaults/SP12-068.webp` (`381302` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=68/80 staleDefaultImages=12 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-067/068` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-069|SP12-070`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ai`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-069` / `Static Dune Radio Wars`
+- `SP12-070` / `Moonlit Shrine Archer Trials`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-069|SP12-070" --parallel=2 --session-suffix=stale_p12_ai --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-069.webp` (`317032` bytes)
+  - `assets/recipes/styles/defaults/SP12-070.webp` (`351576` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=70/80 staleDefaultImages=10 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-069/070` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-071|SP12-072`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_aj`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-071` / `Verdant Metro Rebellion`
+- `SP12-072` / `Dust Cathedral Rally Raid`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-071|SP12-072" --parallel=2 --session-suffix=stale_p12_aj --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-071.webp` (`440504` bytes)
+  - `assets/recipes/styles/defaults/SP12-072.webp` (`375606` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-071/072` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-073|SP12-074`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_ak`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-073` / `Titan Orchard Colossus Hunt`
+- `SP12-074` / `Prism Alley Card Duel`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-073|SP12-074" --parallel=2 --session-suffix=stale_p12_ak --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-073.webp` (`325528` bytes)
+  - `assets/recipes/styles/defaults/SP12-074.webp` (`379730` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=74/80 staleDefaultImages=6 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-073/074` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-075|SP12-076`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_al`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-075` / `Cobalt Docks Mechball League`
+- `SP12-076` / `Aurora Bastion Siege`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-075|SP12-076" --parallel=2 --session-suffix=stale_p12_al --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-075.webp` (`349726` bytes)
+  - `assets/recipes/styles/defaults/SP12-076.webp` (`421554` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=76/80 staleDefaultImages=4 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-075/076` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-077|SP12-078`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_am`
+
+Continuacion 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-077` / `Basilisk Quarry Escape`
+- `SP12-078` / `Midnight Lotus Ninja Heist`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-077|SP12-078" --parallel=2 --session-suffix=stale_p12_am --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-077.webp` (`296444` bytes)
+  - `assets/recipes/styles/defaults/SP12-078.webp` (`330868` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-077/078` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- proxima ola sugerida: `SP12-079|SP12-080`.
+
+## Tanda 2026-06-15 - `pack_12` visual stale refresh ola `stale_p12_an`
+
+Cierre 2x2 del stale historico de `pack_12`.
+
+Presets regenerados:
+
+- `SP12-079` / `Radiant Citadel Co-op Hold`
+- `SP12-080` / `Endgame Eclipse Throne Room`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_12 "--preset=SP12-079|SP12-080" --parallel=2 --session-suffix=stale_p12_an --force`
+- resultado: `generated=2 attempted=2 skipped=78 failed=0 packs=pack_12`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP12-079.webp` (`510206` bytes)
+  - `assets/recipes/styles/defaults/SP12-080.webp` (`388288` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_12 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP12-079/080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- los manifests de `SP12-079/080` conservan mojibake heredado en campos `visualDna`; queda como deuda semantica separada;
+- `pack_12` queda visualmente cerrado si la cobertura confirma `staleDefaultImages=0`;
+- proxima ola sugerida segun `lib/staleStyleDefaultImages.generated.ts`: `SP01-001|SP01-002`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_a`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-001` / `Studio Headshot`
+- `SP01-002` / `Candid Street Portrait`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-001|SP01-002" --parallel=2 --session-suffix=stale_p01_a --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-001.webp` (`194134` bytes)
+  - `assets/recipes/styles/defaults/SP01-002.webp` (`186876` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=8/87 staleDefaultImages=79 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-003|SP01-004`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_b`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-003` / `Environmental Portrait`
+- `SP01-004` / `Glamour Shot`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-003|SP01-004" --parallel=2 --session-suffix=stale_p01_b --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-003.webp` (`322142` bytes)
+  - `assets/recipes/styles/defaults/SP01-004.webp` (`195924` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=10/87 staleDefaultImages=77 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-005|SP01-006`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_c`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-005` / `Cinematic Close-up`
+- `SP01-006` / `Selfie Style`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-005|SP01-006" --parallel=2 --session-suffix=stale_p01_c --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-005.webp` (`188288` bytes)
+  - `assets/recipes/styles/defaults/SP01-006.webp` (`241810` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=12/87 staleDefaultImages=75 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-007|SP01-008`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_d`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-007` / `Silhouette Portrait`
+- `SP01-008` / `Double Exposure Portrait`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-007|SP01-008" --parallel=2 --session-suffix=stale_p01_d --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-007.webp` (`65030` bytes)
+  - `assets/recipes/styles/defaults/SP01-008.webp` (`274430` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=14/87 staleDefaultImages=73 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-007` pesa `65030` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-009|SP01-010`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_e`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-009` / `High Key Portrait`
+- `SP01-010` / `Low Key Portrait`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-009|SP01-010" --parallel=2 --session-suffix=stale_p01_e --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-009.webp` (`103904` bytes)
+  - `assets/recipes/styles/defaults/SP01-010.webp` (`109420` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=16/87 staleDefaultImages=71 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-009/010` pesan `103904`/`109420` bytes; quedan como puntos de QA visual posterior, no bloquean cobertura;
+- proxima ola sugerida: `SP01-011|SP01-012`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_f`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-011` / `Kodak Portra 400`
+- `SP01-012` / `Fujifilm Velvia 50`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-011|SP01-012" --parallel=2 --session-suffix=stale_p01_f --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-011.webp` (`328720` bytes)
+  - `assets/recipes/styles/defaults/SP01-012.webp` (`301374` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=18/87 staleDefaultImages=69 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-013|SP01-014`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_g`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-013` / `Ilford HP5 Plus`
+- `SP01-014` / `Cinestill 800T`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-013|SP01-014" --parallel=2 --session-suffix=stale_p01_g --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-013.webp` (`271274` bytes)
+  - `assets/recipes/styles/defaults/SP01-014.webp` (`371128` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=20/87 staleDefaultImages=67 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-015|SP01-016`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_h`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-015` / `Kodachrome 64`
+- `SP01-016` / `Polaroid 600`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-015|SP01-016" --parallel=2 --session-suffix=stale_p01_h --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-015.webp` (`228548` bytes)
+  - `assets/recipes/styles/defaults/SP01-016.webp` (`136508` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=22/87 staleDefaultImages=65 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-016` pesa `136508` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-017|SP01-018`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_i`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-017` / `Lomo LC-A`
+- `SP01-018` / `Wet Plate Collodion`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-017|SP01-018" --parallel=2 --session-suffix=stale_p01_i --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-017.webp` (`304570` bytes)
+  - `assets/recipes/styles/defaults/SP01-018.webp` (`165168` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=24/87 staleDefaultImages=63 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-018` pesa `165168` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-019|SP01-020`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_j`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-019` / `Infrared Film`
+- `SP01-020` / `Expired Film`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-019|SP01-020" --parallel=2 --session-suffix=stale_p01_j --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-019.webp` (`312704` bytes)
+  - `assets/recipes/styles/defaults/SP01-020.webp` (`378892` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=26/87 staleDefaultImages=61 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-021|SP01-022`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_k`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-021` / `Large Format (4x5)`
+- `SP01-022` / `Disposable Camera`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-021|SP01-022" --parallel=2 --session-suffix=stale_p01_k --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-021.webp` (`185958` bytes)
+  - `assets/recipes/styles/defaults/SP01-022.webp` (`205334` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=28/87 staleDefaultImages=59 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-023|SP01-024`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_l`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-023` / `GoPro Wide`
+- `SP01-024` / `Drone Aerial`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-023|SP01-024" --parallel=2 --session-suffix=stale_p01_l --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-023.webp` (`364294` bytes)
+  - `assets/recipes/styles/defaults/SP01-024.webp` (`738036` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=30/87 staleDefaultImages=57 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-025|SP01-026`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_m`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-025` / `CCTV Security`
+- `SP01-026` / `Pinhole Camera`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-025|SP01-026" --parallel=2 --session-suffix=stale_p01_m --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-025.webp` (`120432` bytes)
+  - `assets/recipes/styles/defaults/SP01-026.webp` (`58944` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=32/87 staleDefaultImages=55 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-025/026` pesan `120432`/`58944` bytes; quedan como puntos de QA visual posterior, no bloquean cobertura;
+- proxima ola sugerida: `SP01-027|SP01-028`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_n`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-027` / `Dashcam`
+- `SP01-028` / `Thermal Camera`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-027|SP01-028" --parallel=2 --session-suffix=stale_p01_n --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-027.webp` (`175112` bytes)
+  - `assets/recipes/styles/defaults/SP01-028.webp` (`191980` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=34/87 staleDefaultImages=53 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-029|SP01-030`.

@@ -780,34 +780,6 @@ Operational note:
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP01-001 | `components/recipes/styles/manifests/presets/pack_01/SP01-001.yaml` | `assets/recipes/styles/defaults/SP01-001.webp` |
-| SP01-002 | `components/recipes/styles/manifests/presets/pack_01/SP01-002.yaml` | `assets/recipes/styles/defaults/SP01-002.webp` |
-| SP01-003 | `components/recipes/styles/manifests/presets/pack_01/SP01-003.yaml` | `assets/recipes/styles/defaults/SP01-003.webp` |
-| SP01-004 | `components/recipes/styles/manifests/presets/pack_01/SP01-004.yaml` | `assets/recipes/styles/defaults/SP01-004.webp` |
-| SP01-005 | `components/recipes/styles/manifests/presets/pack_01/SP01-005.yaml` | `assets/recipes/styles/defaults/SP01-005.webp` |
-| SP01-006 | `components/recipes/styles/manifests/presets/pack_01/SP01-006.yaml` | `assets/recipes/styles/defaults/SP01-006.webp` |
-| SP01-007 | `components/recipes/styles/manifests/presets/pack_01/SP01-007.yaml` | `assets/recipes/styles/defaults/SP01-007.webp` |
-| SP01-008 | `components/recipes/styles/manifests/presets/pack_01/SP01-008.yaml` | `assets/recipes/styles/defaults/SP01-008.webp` |
-| SP01-009 | `components/recipes/styles/manifests/presets/pack_01/SP01-009.yaml` | `assets/recipes/styles/defaults/SP01-009.webp` |
-| SP01-010 | `components/recipes/styles/manifests/presets/pack_01/SP01-010.yaml` | `assets/recipes/styles/defaults/SP01-010.webp` |
-| SP01-011 | `components/recipes/styles/manifests/presets/pack_01/SP01-011.yaml` | `assets/recipes/styles/defaults/SP01-011.webp` |
-| SP01-012 | `components/recipes/styles/manifests/presets/pack_01/SP01-012.yaml` | `assets/recipes/styles/defaults/SP01-012.webp` |
-| SP01-013 | `components/recipes/styles/manifests/presets/pack_01/SP01-013.yaml` | `assets/recipes/styles/defaults/SP01-013.webp` |
-| SP01-014 | `components/recipes/styles/manifests/presets/pack_01/SP01-014.yaml` | `assets/recipes/styles/defaults/SP01-014.webp` |
-| SP01-015 | `components/recipes/styles/manifests/presets/pack_01/SP01-015.yaml` | `assets/recipes/styles/defaults/SP01-015.webp` |
-| SP01-016 | `components/recipes/styles/manifests/presets/pack_01/SP01-016.yaml` | `assets/recipes/styles/defaults/SP01-016.webp` |
-| SP01-017 | `components/recipes/styles/manifests/presets/pack_01/SP01-017.yaml` | `assets/recipes/styles/defaults/SP01-017.webp` |
-| SP01-018 | `components/recipes/styles/manifests/presets/pack_01/SP01-018.yaml` | `assets/recipes/styles/defaults/SP01-018.webp` |
-| SP01-019 | `components/recipes/styles/manifests/presets/pack_01/SP01-019.yaml` | `assets/recipes/styles/defaults/SP01-019.webp` |
-| SP01-020 | `components/recipes/styles/manifests/presets/pack_01/SP01-020.yaml` | `assets/recipes/styles/defaults/SP01-020.webp` |
-| SP01-021 | `components/recipes/styles/manifests/presets/pack_01/SP01-021.yaml` | `assets/recipes/styles/defaults/SP01-021.webp` |
-| SP01-022 | `components/recipes/styles/manifests/presets/pack_01/SP01-022.yaml` | `assets/recipes/styles/defaults/SP01-022.webp` |
-| SP01-023 | `components/recipes/styles/manifests/presets/pack_01/SP01-023.yaml` | `assets/recipes/styles/defaults/SP01-023.webp` |
-| SP01-024 | `components/recipes/styles/manifests/presets/pack_01/SP01-024.yaml` | `assets/recipes/styles/defaults/SP01-024.webp` |
-| SP01-025 | `components/recipes/styles/manifests/presets/pack_01/SP01-025.yaml` | `assets/recipes/styles/defaults/SP01-025.webp` |
-| SP01-026 | `components/recipes/styles/manifests/presets/pack_01/SP01-026.yaml` | `assets/recipes/styles/defaults/SP01-026.webp` |
-| SP01-027 | `components/recipes/styles/manifests/presets/pack_01/SP01-027.yaml` | `assets/recipes/styles/defaults/SP01-027.webp` |
-| SP01-028 | `components/recipes/styles/manifests/presets/pack_01/SP01-028.yaml` | `assets/recipes/styles/defaults/SP01-028.webp` |
 | SP01-029 | `components/recipes/styles/manifests/presets/pack_01/SP01-029.yaml` | `assets/recipes/styles/defaults/SP01-029.webp` |
 | SP01-030 | `components/recipes/styles/manifests/presets/pack_01/SP01-030.yaml` | `assets/recipes/styles/defaults/SP01-030.webp` |
 | SP01-031 | `components/recipes/styles/manifests/presets/pack_01/SP01-031.yaml` | `assets/recipes/styles/defaults/SP01-031.webp` |
@@ -1534,285 +1506,23 @@ Operational note:
 
 ### pack_09
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP09-059 | `components/recipes/styles/manifests/presets/pack_09/SP09-059.yaml` | `assets/recipes/styles/defaults/SP09-059.webp` |
-| SP09-060 | `components/recipes/styles/manifests/presets/pack_09/SP09-060.yaml` | `assets/recipes/styles/defaults/SP09-060.webp` |
-| SP09-061 | `components/recipes/styles/manifests/presets/pack_09/SP09-061.yaml` | `assets/recipes/styles/defaults/SP09-061.webp` |
-| SP09-062 | `components/recipes/styles/manifests/presets/pack_09/SP09-062.yaml` | `assets/recipes/styles/defaults/SP09-062.webp` |
-| SP09-063 | `components/recipes/styles/manifests/presets/pack_09/SP09-063.yaml` | `assets/recipes/styles/defaults/SP09-063.webp` |
-| SP09-064 | `components/recipes/styles/manifests/presets/pack_09/SP09-064.yaml` | `assets/recipes/styles/defaults/SP09-064.webp` |
-| SP09-065 | `components/recipes/styles/manifests/presets/pack_09/SP09-065.yaml` | `assets/recipes/styles/defaults/SP09-065.webp` |
-| SP09-066 | `components/recipes/styles/manifests/presets/pack_09/SP09-066.yaml` | `assets/recipes/styles/defaults/SP09-066.webp` |
-| SP09-067 | `components/recipes/styles/manifests/presets/pack_09/SP09-067.yaml` | `assets/recipes/styles/defaults/SP09-067.webp` |
-| SP09-068 | `components/recipes/styles/manifests/presets/pack_09/SP09-068.yaml` | `assets/recipes/styles/defaults/SP09-068.webp` |
-| SP09-069 | `components/recipes/styles/manifests/presets/pack_09/SP09-069.yaml` | `assets/recipes/styles/defaults/SP09-069.webp` |
-| SP09-070 | `components/recipes/styles/manifests/presets/pack_09/SP09-070.yaml` | `assets/recipes/styles/defaults/SP09-070.webp` |
-| SP09-071 | `components/recipes/styles/manifests/presets/pack_09/SP09-071.yaml` | `assets/recipes/styles/defaults/SP09-071.webp` |
-| SP09-072 | `components/recipes/styles/manifests/presets/pack_09/SP09-072.yaml` | `assets/recipes/styles/defaults/SP09-072.webp` |
-| SP09-073 | `components/recipes/styles/manifests/presets/pack_09/SP09-073.yaml` | `assets/recipes/styles/defaults/SP09-073.webp` |
-| SP09-074 | `components/recipes/styles/manifests/presets/pack_09/SP09-074.yaml` | `assets/recipes/styles/defaults/SP09-074.webp` |
-| SP09-075 | `components/recipes/styles/manifests/presets/pack_09/SP09-075.yaml` | `assets/recipes/styles/defaults/SP09-075.webp` |
-| SP09-076 | `components/recipes/styles/manifests/presets/pack_09/SP09-076.yaml` | `assets/recipes/styles/defaults/SP09-076.webp` |
-| SP09-077 | `components/recipes/styles/manifests/presets/pack_09/SP09-077.yaml` | `assets/recipes/styles/defaults/SP09-077.webp` |
-| SP09-078 | `components/recipes/styles/manifests/presets/pack_09/SP09-078.yaml` | `assets/recipes/styles/defaults/SP09-078.webp` |
-| SP09-079 | `components/recipes/styles/manifests/presets/pack_09/SP09-079.yaml` | `assets/recipes/styles/defaults/SP09-079.webp` |
-| SP09-080 | `components/recipes/styles/manifests/presets/pack_09/SP09-080.yaml` | `assets/recipes/styles/defaults/SP09-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_10
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP10-001 | `components/recipes/styles/manifests/presets/pack_10/SP10-001.yaml` | `assets/recipes/styles/defaults/SP10-001.webp` |
-| SP10-002 | `components/recipes/styles/manifests/presets/pack_10/SP10-002.yaml` | `assets/recipes/styles/defaults/SP10-002.webp` |
-| SP10-003 | `components/recipes/styles/manifests/presets/pack_10/SP10-003.yaml` | `assets/recipes/styles/defaults/SP10-003.webp` |
-| SP10-004 | `components/recipes/styles/manifests/presets/pack_10/SP10-004.yaml` | `assets/recipes/styles/defaults/SP10-004.webp` |
-| SP10-005 | `components/recipes/styles/manifests/presets/pack_10/SP10-005.yaml` | `assets/recipes/styles/defaults/SP10-005.webp` |
-| SP10-006 | `components/recipes/styles/manifests/presets/pack_10/SP10-006.yaml` | `assets/recipes/styles/defaults/SP10-006.webp` |
-| SP10-007 | `components/recipes/styles/manifests/presets/pack_10/SP10-007.yaml` | `assets/recipes/styles/defaults/SP10-007.webp` |
-| SP10-008 | `components/recipes/styles/manifests/presets/pack_10/SP10-008.yaml` | `assets/recipes/styles/defaults/SP10-008.webp` |
-| SP10-009 | `components/recipes/styles/manifests/presets/pack_10/SP10-009.yaml` | `assets/recipes/styles/defaults/SP10-009.webp` |
-| SP10-010 | `components/recipes/styles/manifests/presets/pack_10/SP10-010.yaml` | `assets/recipes/styles/defaults/SP10-010.webp` |
-| SP10-011 | `components/recipes/styles/manifests/presets/pack_10/SP10-011.yaml` | `assets/recipes/styles/defaults/SP10-011.webp` |
-| SP10-012 | `components/recipes/styles/manifests/presets/pack_10/SP10-012.yaml` | `assets/recipes/styles/defaults/SP10-012.webp` |
-| SP10-013 | `components/recipes/styles/manifests/presets/pack_10/SP10-013.yaml` | `assets/recipes/styles/defaults/SP10-013.webp` |
-| SP10-014 | `components/recipes/styles/manifests/presets/pack_10/SP10-014.yaml` | `assets/recipes/styles/defaults/SP10-014.webp` |
-| SP10-015 | `components/recipes/styles/manifests/presets/pack_10/SP10-015.yaml` | `assets/recipes/styles/defaults/SP10-015.webp` |
-| SP10-016 | `components/recipes/styles/manifests/presets/pack_10/SP10-016.yaml` | `assets/recipes/styles/defaults/SP10-016.webp` |
-| SP10-017 | `components/recipes/styles/manifests/presets/pack_10/SP10-017.yaml` | `assets/recipes/styles/defaults/SP10-017.webp` |
-| SP10-018 | `components/recipes/styles/manifests/presets/pack_10/SP10-018.yaml` | `assets/recipes/styles/defaults/SP10-018.webp` |
-| SP10-019 | `components/recipes/styles/manifests/presets/pack_10/SP10-019.yaml` | `assets/recipes/styles/defaults/SP10-019.webp` |
-| SP10-020 | `components/recipes/styles/manifests/presets/pack_10/SP10-020.yaml` | `assets/recipes/styles/defaults/SP10-020.webp` |
-| SP10-021 | `components/recipes/styles/manifests/presets/pack_10/SP10-021.yaml` | `assets/recipes/styles/defaults/SP10-021.webp` |
-| SP10-022 | `components/recipes/styles/manifests/presets/pack_10/SP10-022.yaml` | `assets/recipes/styles/defaults/SP10-022.webp` |
-| SP10-023 | `components/recipes/styles/manifests/presets/pack_10/SP10-023.yaml` | `assets/recipes/styles/defaults/SP10-023.webp` |
-| SP10-024 | `components/recipes/styles/manifests/presets/pack_10/SP10-024.yaml` | `assets/recipes/styles/defaults/SP10-024.webp` |
-| SP10-025 | `components/recipes/styles/manifests/presets/pack_10/SP10-025.yaml` | `assets/recipes/styles/defaults/SP10-025.webp` |
-| SP10-026 | `components/recipes/styles/manifests/presets/pack_10/SP10-026.yaml` | `assets/recipes/styles/defaults/SP10-026.webp` |
-| SP10-027 | `components/recipes/styles/manifests/presets/pack_10/SP10-027.yaml` | `assets/recipes/styles/defaults/SP10-027.webp` |
-| SP10-028 | `components/recipes/styles/manifests/presets/pack_10/SP10-028.yaml` | `assets/recipes/styles/defaults/SP10-028.webp` |
-| SP10-029 | `components/recipes/styles/manifests/presets/pack_10/SP10-029.yaml` | `assets/recipes/styles/defaults/SP10-029.webp` |
-| SP10-030 | `components/recipes/styles/manifests/presets/pack_10/SP10-030.yaml` | `assets/recipes/styles/defaults/SP10-030.webp` |
-| SP10-031 | `components/recipes/styles/manifests/presets/pack_10/SP10-031.yaml` | `assets/recipes/styles/defaults/SP10-031.webp` |
-| SP10-032 | `components/recipes/styles/manifests/presets/pack_10/SP10-032.yaml` | `assets/recipes/styles/defaults/SP10-032.webp` |
-| SP10-033 | `components/recipes/styles/manifests/presets/pack_10/SP10-033.yaml` | `assets/recipes/styles/defaults/SP10-033.webp` |
-| SP10-034 | `components/recipes/styles/manifests/presets/pack_10/SP10-034.yaml` | `assets/recipes/styles/defaults/SP10-034.webp` |
-| SP10-035 | `components/recipes/styles/manifests/presets/pack_10/SP10-035.yaml` | `assets/recipes/styles/defaults/SP10-035.webp` |
-| SP10-036 | `components/recipes/styles/manifests/presets/pack_10/SP10-036.yaml` | `assets/recipes/styles/defaults/SP10-036.webp` |
-| SP10-037 | `components/recipes/styles/manifests/presets/pack_10/SP10-037.yaml` | `assets/recipes/styles/defaults/SP10-037.webp` |
-| SP10-038 | `components/recipes/styles/manifests/presets/pack_10/SP10-038.yaml` | `assets/recipes/styles/defaults/SP10-038.webp` |
-| SP10-039 | `components/recipes/styles/manifests/presets/pack_10/SP10-039.yaml` | `assets/recipes/styles/defaults/SP10-039.webp` |
-| SP10-040 | `components/recipes/styles/manifests/presets/pack_10/SP10-040.yaml` | `assets/recipes/styles/defaults/SP10-040.webp` |
-| SP10-041 | `components/recipes/styles/manifests/presets/pack_10/SP10-041.yaml` | `assets/recipes/styles/defaults/SP10-041.webp` |
-| SP10-042 | `components/recipes/styles/manifests/presets/pack_10/SP10-042.yaml` | `assets/recipes/styles/defaults/SP10-042.webp` |
-| SP10-043 | `components/recipes/styles/manifests/presets/pack_10/SP10-043.yaml` | `assets/recipes/styles/defaults/SP10-043.webp` |
-| SP10-044 | `components/recipes/styles/manifests/presets/pack_10/SP10-044.yaml` | `assets/recipes/styles/defaults/SP10-044.webp` |
-| SP10-045 | `components/recipes/styles/manifests/presets/pack_10/SP10-045.yaml` | `assets/recipes/styles/defaults/SP10-045.webp` |
-| SP10-046 | `components/recipes/styles/manifests/presets/pack_10/SP10-046.yaml` | `assets/recipes/styles/defaults/SP10-046.webp` |
-| SP10-047 | `components/recipes/styles/manifests/presets/pack_10/SP10-047.yaml` | `assets/recipes/styles/defaults/SP10-047.webp` |
-| SP10-048 | `components/recipes/styles/manifests/presets/pack_10/SP10-048.yaml` | `assets/recipes/styles/defaults/SP10-048.webp` |
-| SP10-049 | `components/recipes/styles/manifests/presets/pack_10/SP10-049.yaml` | `assets/recipes/styles/defaults/SP10-049.webp` |
-| SP10-050 | `components/recipes/styles/manifests/presets/pack_10/SP10-050.yaml` | `assets/recipes/styles/defaults/SP10-050.webp` |
-| SP10-051 | `components/recipes/styles/manifests/presets/pack_10/SP10-051.yaml` | `assets/recipes/styles/defaults/SP10-051.webp` |
-| SP10-052 | `components/recipes/styles/manifests/presets/pack_10/SP10-052.yaml` | `assets/recipes/styles/defaults/SP10-052.webp` |
-| SP10-053 | `components/recipes/styles/manifests/presets/pack_10/SP10-053.yaml` | `assets/recipes/styles/defaults/SP10-053.webp` |
-| SP10-054 | `components/recipes/styles/manifests/presets/pack_10/SP10-054.yaml` | `assets/recipes/styles/defaults/SP10-054.webp` |
-| SP10-055 | `components/recipes/styles/manifests/presets/pack_10/SP10-055.yaml` | `assets/recipes/styles/defaults/SP10-055.webp` |
-| SP10-056 | `components/recipes/styles/manifests/presets/pack_10/SP10-056.yaml` | `assets/recipes/styles/defaults/SP10-056.webp` |
-| SP10-057 | `components/recipes/styles/manifests/presets/pack_10/SP10-057.yaml` | `assets/recipes/styles/defaults/SP10-057.webp` |
-| SP10-058 | `components/recipes/styles/manifests/presets/pack_10/SP10-058.yaml` | `assets/recipes/styles/defaults/SP10-058.webp` |
-| SP10-059 | `components/recipes/styles/manifests/presets/pack_10/SP10-059.yaml` | `assets/recipes/styles/defaults/SP10-059.webp` |
-| SP10-060 | `components/recipes/styles/manifests/presets/pack_10/SP10-060.yaml` | `assets/recipes/styles/defaults/SP10-060.webp` |
-| SP10-061 | `components/recipes/styles/manifests/presets/pack_10/SP10-061.yaml` | `assets/recipes/styles/defaults/SP10-061.webp` |
-| SP10-062 | `components/recipes/styles/manifests/presets/pack_10/SP10-062.yaml` | `assets/recipes/styles/defaults/SP10-062.webp` |
-| SP10-063 | `components/recipes/styles/manifests/presets/pack_10/SP10-063.yaml` | `assets/recipes/styles/defaults/SP10-063.webp` |
-| SP10-064 | `components/recipes/styles/manifests/presets/pack_10/SP10-064.yaml` | `assets/recipes/styles/defaults/SP10-064.webp` |
-| SP10-065 | `components/recipes/styles/manifests/presets/pack_10/SP10-065.yaml` | `assets/recipes/styles/defaults/SP10-065.webp` |
-| SP10-066 | `components/recipes/styles/manifests/presets/pack_10/SP10-066.yaml` | `assets/recipes/styles/defaults/SP10-066.webp` |
-| SP10-067 | `components/recipes/styles/manifests/presets/pack_10/SP10-067.yaml` | `assets/recipes/styles/defaults/SP10-067.webp` |
-| SP10-068 | `components/recipes/styles/manifests/presets/pack_10/SP10-068.yaml` | `assets/recipes/styles/defaults/SP10-068.webp` |
-| SP10-069 | `components/recipes/styles/manifests/presets/pack_10/SP10-069.yaml` | `assets/recipes/styles/defaults/SP10-069.webp` |
-| SP10-070 | `components/recipes/styles/manifests/presets/pack_10/SP10-070.yaml` | `assets/recipes/styles/defaults/SP10-070.webp` |
-| SP10-071 | `components/recipes/styles/manifests/presets/pack_10/SP10-071.yaml` | `assets/recipes/styles/defaults/SP10-071.webp` |
-| SP10-072 | `components/recipes/styles/manifests/presets/pack_10/SP10-072.yaml` | `assets/recipes/styles/defaults/SP10-072.webp` |
-| SP10-073 | `components/recipes/styles/manifests/presets/pack_10/SP10-073.yaml` | `assets/recipes/styles/defaults/SP10-073.webp` |
-| SP10-074 | `components/recipes/styles/manifests/presets/pack_10/SP10-074.yaml` | `assets/recipes/styles/defaults/SP10-074.webp` |
-| SP10-075 | `components/recipes/styles/manifests/presets/pack_10/SP10-075.yaml` | `assets/recipes/styles/defaults/SP10-075.webp` |
-| SP10-076 | `components/recipes/styles/manifests/presets/pack_10/SP10-076.yaml` | `assets/recipes/styles/defaults/SP10-076.webp` |
-| SP10-077 | `components/recipes/styles/manifests/presets/pack_10/SP10-077.yaml` | `assets/recipes/styles/defaults/SP10-077.webp` |
-| SP10-078 | `components/recipes/styles/manifests/presets/pack_10/SP10-078.yaml` | `assets/recipes/styles/defaults/SP10-078.webp` |
-| SP10-079 | `components/recipes/styles/manifests/presets/pack_10/SP10-079.yaml` | `assets/recipes/styles/defaults/SP10-079.webp` |
-| SP10-080 | `components/recipes/styles/manifests/presets/pack_10/SP10-080.yaml` | `assets/recipes/styles/defaults/SP10-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_11
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP11-001 | `components/recipes/styles/manifests/presets/pack_11/SP11-001.yaml` | `assets/recipes/styles/defaults/SP11-001.webp` |
-| SP11-002 | `components/recipes/styles/manifests/presets/pack_11/SP11-002.yaml` | `assets/recipes/styles/defaults/SP11-002.webp` |
-| SP11-003 | `components/recipes/styles/manifests/presets/pack_11/SP11-003.yaml` | `assets/recipes/styles/defaults/SP11-003.webp` |
-| SP11-004 | `components/recipes/styles/manifests/presets/pack_11/SP11-004.yaml` | `assets/recipes/styles/defaults/SP11-004.webp` |
-| SP11-005 | `components/recipes/styles/manifests/presets/pack_11/SP11-005.yaml` | `assets/recipes/styles/defaults/SP11-005.webp` |
-| SP11-006 | `components/recipes/styles/manifests/presets/pack_11/SP11-006.yaml` | `assets/recipes/styles/defaults/SP11-006.webp` |
-| SP11-007 | `components/recipes/styles/manifests/presets/pack_11/SP11-007.yaml` | `assets/recipes/styles/defaults/SP11-007.webp` |
-| SP11-008 | `components/recipes/styles/manifests/presets/pack_11/SP11-008.yaml` | `assets/recipes/styles/defaults/SP11-008.webp` |
-| SP11-009 | `components/recipes/styles/manifests/presets/pack_11/SP11-009.yaml` | `assets/recipes/styles/defaults/SP11-009.webp` |
-| SP11-010 | `components/recipes/styles/manifests/presets/pack_11/SP11-010.yaml` | `assets/recipes/styles/defaults/SP11-010.webp` |
-| SP11-011 | `components/recipes/styles/manifests/presets/pack_11/SP11-011.yaml` | `assets/recipes/styles/defaults/SP11-011.webp` |
-| SP11-012 | `components/recipes/styles/manifests/presets/pack_11/SP11-012.yaml` | `assets/recipes/styles/defaults/SP11-012.webp` |
-| SP11-013 | `components/recipes/styles/manifests/presets/pack_11/SP11-013.yaml` | `assets/recipes/styles/defaults/SP11-013.webp` |
-| SP11-014 | `components/recipes/styles/manifests/presets/pack_11/SP11-014.yaml` | `assets/recipes/styles/defaults/SP11-014.webp` |
-| SP11-015 | `components/recipes/styles/manifests/presets/pack_11/SP11-015.yaml` | `assets/recipes/styles/defaults/SP11-015.webp` |
-| SP11-016 | `components/recipes/styles/manifests/presets/pack_11/SP11-016.yaml` | `assets/recipes/styles/defaults/SP11-016.webp` |
-| SP11-017 | `components/recipes/styles/manifests/presets/pack_11/SP11-017.yaml` | `assets/recipes/styles/defaults/SP11-017.webp` |
-| SP11-018 | `components/recipes/styles/manifests/presets/pack_11/SP11-018.yaml` | `assets/recipes/styles/defaults/SP11-018.webp` |
-| SP11-019 | `components/recipes/styles/manifests/presets/pack_11/SP11-019.yaml` | `assets/recipes/styles/defaults/SP11-019.webp` |
-| SP11-020 | `components/recipes/styles/manifests/presets/pack_11/SP11-020.yaml` | `assets/recipes/styles/defaults/SP11-020.webp` |
-| SP11-021 | `components/recipes/styles/manifests/presets/pack_11/SP11-021.yaml` | `assets/recipes/styles/defaults/SP11-021.webp` |
-| SP11-022 | `components/recipes/styles/manifests/presets/pack_11/SP11-022.yaml` | `assets/recipes/styles/defaults/SP11-022.webp` |
-| SP11-023 | `components/recipes/styles/manifests/presets/pack_11/SP11-023.yaml` | `assets/recipes/styles/defaults/SP11-023.webp` |
-| SP11-024 | `components/recipes/styles/manifests/presets/pack_11/SP11-024.yaml` | `assets/recipes/styles/defaults/SP11-024.webp` |
-| SP11-025 | `components/recipes/styles/manifests/presets/pack_11/SP11-025.yaml` | `assets/recipes/styles/defaults/SP11-025.webp` |
-| SP11-026 | `components/recipes/styles/manifests/presets/pack_11/SP11-026.yaml` | `assets/recipes/styles/defaults/SP11-026.webp` |
-| SP11-027 | `components/recipes/styles/manifests/presets/pack_11/SP11-027.yaml` | `assets/recipes/styles/defaults/SP11-027.webp` |
-| SP11-028 | `components/recipes/styles/manifests/presets/pack_11/SP11-028.yaml` | `assets/recipes/styles/defaults/SP11-028.webp` |
-| SP11-029 | `components/recipes/styles/manifests/presets/pack_11/SP11-029.yaml` | `assets/recipes/styles/defaults/SP11-029.webp` |
-| SP11-030 | `components/recipes/styles/manifests/presets/pack_11/SP11-030.yaml` | `assets/recipes/styles/defaults/SP11-030.webp` |
-| SP11-031 | `components/recipes/styles/manifests/presets/pack_11/SP11-031.yaml` | `assets/recipes/styles/defaults/SP11-031.webp` |
-| SP11-032 | `components/recipes/styles/manifests/presets/pack_11/SP11-032.yaml` | `assets/recipes/styles/defaults/SP11-032.webp` |
-| SP11-033 | `components/recipes/styles/manifests/presets/pack_11/SP11-033.yaml` | `assets/recipes/styles/defaults/SP11-033.webp` |
-| SP11-034 | `components/recipes/styles/manifests/presets/pack_11/SP11-034.yaml` | `assets/recipes/styles/defaults/SP11-034.webp` |
-| SP11-035 | `components/recipes/styles/manifests/presets/pack_11/SP11-035.yaml` | `assets/recipes/styles/defaults/SP11-035.webp` |
-| SP11-036 | `components/recipes/styles/manifests/presets/pack_11/SP11-036.yaml` | `assets/recipes/styles/defaults/SP11-036.webp` |
-| SP11-037 | `components/recipes/styles/manifests/presets/pack_11/SP11-037.yaml` | `assets/recipes/styles/defaults/SP11-037.webp` |
-| SP11-038 | `components/recipes/styles/manifests/presets/pack_11/SP11-038.yaml` | `assets/recipes/styles/defaults/SP11-038.webp` |
-| SP11-039 | `components/recipes/styles/manifests/presets/pack_11/SP11-039.yaml` | `assets/recipes/styles/defaults/SP11-039.webp` |
-| SP11-040 | `components/recipes/styles/manifests/presets/pack_11/SP11-040.yaml` | `assets/recipes/styles/defaults/SP11-040.webp` |
-| SP11-041 | `components/recipes/styles/manifests/presets/pack_11/SP11-041.yaml` | `assets/recipes/styles/defaults/SP11-041.webp` |
-| SP11-042 | `components/recipes/styles/manifests/presets/pack_11/SP11-042.yaml` | `assets/recipes/styles/defaults/SP11-042.webp` |
-| SP11-043 | `components/recipes/styles/manifests/presets/pack_11/SP11-043.yaml` | `assets/recipes/styles/defaults/SP11-043.webp` |
-| SP11-044 | `components/recipes/styles/manifests/presets/pack_11/SP11-044.yaml` | `assets/recipes/styles/defaults/SP11-044.webp` |
-| SP11-045 | `components/recipes/styles/manifests/presets/pack_11/SP11-045.yaml` | `assets/recipes/styles/defaults/SP11-045.webp` |
-| SP11-046 | `components/recipes/styles/manifests/presets/pack_11/SP11-046.yaml` | `assets/recipes/styles/defaults/SP11-046.webp` |
-| SP11-047 | `components/recipes/styles/manifests/presets/pack_11/SP11-047.yaml` | `assets/recipes/styles/defaults/SP11-047.webp` |
-| SP11-048 | `components/recipes/styles/manifests/presets/pack_11/SP11-048.yaml` | `assets/recipes/styles/defaults/SP11-048.webp` |
-| SP11-049 | `components/recipes/styles/manifests/presets/pack_11/SP11-049.yaml` | `assets/recipes/styles/defaults/SP11-049.webp` |
-| SP11-050 | `components/recipes/styles/manifests/presets/pack_11/SP11-050.yaml` | `assets/recipes/styles/defaults/SP11-050.webp` |
-| SP11-051 | `components/recipes/styles/manifests/presets/pack_11/SP11-051.yaml` | `assets/recipes/styles/defaults/SP11-051.webp` |
-| SP11-052 | `components/recipes/styles/manifests/presets/pack_11/SP11-052.yaml` | `assets/recipes/styles/defaults/SP11-052.webp` |
-| SP11-053 | `components/recipes/styles/manifests/presets/pack_11/SP11-053.yaml` | `assets/recipes/styles/defaults/SP11-053.webp` |
-| SP11-054 | `components/recipes/styles/manifests/presets/pack_11/SP11-054.yaml` | `assets/recipes/styles/defaults/SP11-054.webp` |
-| SP11-055 | `components/recipes/styles/manifests/presets/pack_11/SP11-055.yaml` | `assets/recipes/styles/defaults/SP11-055.webp` |
-| SP11-056 | `components/recipes/styles/manifests/presets/pack_11/SP11-056.yaml` | `assets/recipes/styles/defaults/SP11-056.webp` |
-| SP11-057 | `components/recipes/styles/manifests/presets/pack_11/SP11-057.yaml` | `assets/recipes/styles/defaults/SP11-057.webp` |
-| SP11-058 | `components/recipes/styles/manifests/presets/pack_11/SP11-058.yaml` | `assets/recipes/styles/defaults/SP11-058.webp` |
-| SP11-059 | `components/recipes/styles/manifests/presets/pack_11/SP11-059.yaml` | `assets/recipes/styles/defaults/SP11-059.webp` |
-| SP11-060 | `components/recipes/styles/manifests/presets/pack_11/SP11-060.yaml` | `assets/recipes/styles/defaults/SP11-060.webp` |
-| SP11-061 | `components/recipes/styles/manifests/presets/pack_11/SP11-061.yaml` | `assets/recipes/styles/defaults/SP11-061.webp` |
-| SP11-062 | `components/recipes/styles/manifests/presets/pack_11/SP11-062.yaml` | `assets/recipes/styles/defaults/SP11-062.webp` |
-| SP11-063 | `components/recipes/styles/manifests/presets/pack_11/SP11-063.yaml` | `assets/recipes/styles/defaults/SP11-063.webp` |
-| SP11-064 | `components/recipes/styles/manifests/presets/pack_11/SP11-064.yaml` | `assets/recipes/styles/defaults/SP11-064.webp` |
-| SP11-065 | `components/recipes/styles/manifests/presets/pack_11/SP11-065.yaml` | `assets/recipes/styles/defaults/SP11-065.webp` |
-| SP11-066 | `components/recipes/styles/manifests/presets/pack_11/SP11-066.yaml` | `assets/recipes/styles/defaults/SP11-066.webp` |
-| SP11-067 | `components/recipes/styles/manifests/presets/pack_11/SP11-067.yaml` | `assets/recipes/styles/defaults/SP11-067.webp` |
-| SP11-068 | `components/recipes/styles/manifests/presets/pack_11/SP11-068.yaml` | `assets/recipes/styles/defaults/SP11-068.webp` |
-| SP11-069 | `components/recipes/styles/manifests/presets/pack_11/SP11-069.yaml` | `assets/recipes/styles/defaults/SP11-069.webp` |
-| SP11-070 | `components/recipes/styles/manifests/presets/pack_11/SP11-070.yaml` | `assets/recipes/styles/defaults/SP11-070.webp` |
-| SP11-071 | `components/recipes/styles/manifests/presets/pack_11/SP11-071.yaml` | `assets/recipes/styles/defaults/SP11-071.webp` |
-| SP11-072 | `components/recipes/styles/manifests/presets/pack_11/SP11-072.yaml` | `assets/recipes/styles/defaults/SP11-072.webp` |
-| SP11-073 | `components/recipes/styles/manifests/presets/pack_11/SP11-073.yaml` | `assets/recipes/styles/defaults/SP11-073.webp` |
-| SP11-074 | `components/recipes/styles/manifests/presets/pack_11/SP11-074.yaml` | `assets/recipes/styles/defaults/SP11-074.webp` |
-| SP11-075 | `components/recipes/styles/manifests/presets/pack_11/SP11-075.yaml` | `assets/recipes/styles/defaults/SP11-075.webp` |
-| SP11-076 | `components/recipes/styles/manifests/presets/pack_11/SP11-076.yaml` | `assets/recipes/styles/defaults/SP11-076.webp` |
-| SP11-077 | `components/recipes/styles/manifests/presets/pack_11/SP11-077.yaml` | `assets/recipes/styles/defaults/SP11-077.webp` |
-| SP11-078 | `components/recipes/styles/manifests/presets/pack_11/SP11-078.yaml` | `assets/recipes/styles/defaults/SP11-078.webp` |
-| SP11-079 | `components/recipes/styles/manifests/presets/pack_11/SP11-079.yaml` | `assets/recipes/styles/defaults/SP11-079.webp` |
-| SP11-080 | `components/recipes/styles/manifests/presets/pack_11/SP11-080.yaml` | `assets/recipes/styles/defaults/SP11-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_12
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP12-001 | `components/recipes/styles/manifests/presets/pack_12/SP12-001.yaml` | `assets/recipes/styles/defaults/SP12-001.webp` |
-| SP12-002 | `components/recipes/styles/manifests/presets/pack_12/SP12-002.yaml` | `assets/recipes/styles/defaults/SP12-002.webp` |
-| SP12-003 | `components/recipes/styles/manifests/presets/pack_12/SP12-003.yaml` | `assets/recipes/styles/defaults/SP12-003.webp` |
-| SP12-004 | `components/recipes/styles/manifests/presets/pack_12/SP12-004.yaml` | `assets/recipes/styles/defaults/SP12-004.webp` |
-| SP12-005 | `components/recipes/styles/manifests/presets/pack_12/SP12-005.yaml` | `assets/recipes/styles/defaults/SP12-005.webp` |
-| SP12-006 | `components/recipes/styles/manifests/presets/pack_12/SP12-006.yaml` | `assets/recipes/styles/defaults/SP12-006.webp` |
-| SP12-007 | `components/recipes/styles/manifests/presets/pack_12/SP12-007.yaml` | `assets/recipes/styles/defaults/SP12-007.webp` |
-| SP12-008 | `components/recipes/styles/manifests/presets/pack_12/SP12-008.yaml` | `assets/recipes/styles/defaults/SP12-008.webp` |
-| SP12-009 | `components/recipes/styles/manifests/presets/pack_12/SP12-009.yaml` | `assets/recipes/styles/defaults/SP12-009.webp` |
-| SP12-010 | `components/recipes/styles/manifests/presets/pack_12/SP12-010.yaml` | `assets/recipes/styles/defaults/SP12-010.webp` |
-| SP12-011 | `components/recipes/styles/manifests/presets/pack_12/SP12-011.yaml` | `assets/recipes/styles/defaults/SP12-011.webp` |
-| SP12-012 | `components/recipes/styles/manifests/presets/pack_12/SP12-012.yaml` | `assets/recipes/styles/defaults/SP12-012.webp` |
-| SP12-013 | `components/recipes/styles/manifests/presets/pack_12/SP12-013.yaml` | `assets/recipes/styles/defaults/SP12-013.webp` |
-| SP12-014 | `components/recipes/styles/manifests/presets/pack_12/SP12-014.yaml` | `assets/recipes/styles/defaults/SP12-014.webp` |
-| SP12-015 | `components/recipes/styles/manifests/presets/pack_12/SP12-015.yaml` | `assets/recipes/styles/defaults/SP12-015.webp` |
-| SP12-016 | `components/recipes/styles/manifests/presets/pack_12/SP12-016.yaml` | `assets/recipes/styles/defaults/SP12-016.webp` |
-| SP12-017 | `components/recipes/styles/manifests/presets/pack_12/SP12-017.yaml` | `assets/recipes/styles/defaults/SP12-017.webp` |
-| SP12-018 | `components/recipes/styles/manifests/presets/pack_12/SP12-018.yaml` | `assets/recipes/styles/defaults/SP12-018.webp` |
-| SP12-019 | `components/recipes/styles/manifests/presets/pack_12/SP12-019.yaml` | `assets/recipes/styles/defaults/SP12-019.webp` |
-| SP12-020 | `components/recipes/styles/manifests/presets/pack_12/SP12-020.yaml` | `assets/recipes/styles/defaults/SP12-020.webp` |
-| SP12-021 | `components/recipes/styles/manifests/presets/pack_12/SP12-021.yaml` | `assets/recipes/styles/defaults/SP12-021.webp` |
-| SP12-022 | `components/recipes/styles/manifests/presets/pack_12/SP12-022.yaml` | `assets/recipes/styles/defaults/SP12-022.webp` |
-| SP12-023 | `components/recipes/styles/manifests/presets/pack_12/SP12-023.yaml` | `assets/recipes/styles/defaults/SP12-023.webp` |
-| SP12-024 | `components/recipes/styles/manifests/presets/pack_12/SP12-024.yaml` | `assets/recipes/styles/defaults/SP12-024.webp` |
-| SP12-025 | `components/recipes/styles/manifests/presets/pack_12/SP12-025.yaml` | `assets/recipes/styles/defaults/SP12-025.webp` |
-| SP12-026 | `components/recipes/styles/manifests/presets/pack_12/SP12-026.yaml` | `assets/recipes/styles/defaults/SP12-026.webp` |
-| SP12-027 | `components/recipes/styles/manifests/presets/pack_12/SP12-027.yaml` | `assets/recipes/styles/defaults/SP12-027.webp` |
-| SP12-028 | `components/recipes/styles/manifests/presets/pack_12/SP12-028.yaml` | `assets/recipes/styles/defaults/SP12-028.webp` |
-| SP12-029 | `components/recipes/styles/manifests/presets/pack_12/SP12-029.yaml` | `assets/recipes/styles/defaults/SP12-029.webp` |
-| SP12-030 | `components/recipes/styles/manifests/presets/pack_12/SP12-030.yaml` | `assets/recipes/styles/defaults/SP12-030.webp` |
-| SP12-031 | `components/recipes/styles/manifests/presets/pack_12/SP12-031.yaml` | `assets/recipes/styles/defaults/SP12-031.webp` |
-| SP12-032 | `components/recipes/styles/manifests/presets/pack_12/SP12-032.yaml` | `assets/recipes/styles/defaults/SP12-032.webp` |
-| SP12-033 | `components/recipes/styles/manifests/presets/pack_12/SP12-033.yaml` | `assets/recipes/styles/defaults/SP12-033.webp` |
-| SP12-034 | `components/recipes/styles/manifests/presets/pack_12/SP12-034.yaml` | `assets/recipes/styles/defaults/SP12-034.webp` |
-| SP12-035 | `components/recipes/styles/manifests/presets/pack_12/SP12-035.yaml` | `assets/recipes/styles/defaults/SP12-035.webp` |
-| SP12-036 | `components/recipes/styles/manifests/presets/pack_12/SP12-036.yaml` | `assets/recipes/styles/defaults/SP12-036.webp` |
-| SP12-037 | `components/recipes/styles/manifests/presets/pack_12/SP12-037.yaml` | `assets/recipes/styles/defaults/SP12-037.webp` |
-| SP12-038 | `components/recipes/styles/manifests/presets/pack_12/SP12-038.yaml` | `assets/recipes/styles/defaults/SP12-038.webp` |
-| SP12-039 | `components/recipes/styles/manifests/presets/pack_12/SP12-039.yaml` | `assets/recipes/styles/defaults/SP12-039.webp` |
-| SP12-040 | `components/recipes/styles/manifests/presets/pack_12/SP12-040.yaml` | `assets/recipes/styles/defaults/SP12-040.webp` |
-| SP12-041 | `components/recipes/styles/manifests/presets/pack_12/SP12-041.yaml` | `assets/recipes/styles/defaults/SP12-041.webp` |
-| SP12-042 | `components/recipes/styles/manifests/presets/pack_12/SP12-042.yaml` | `assets/recipes/styles/defaults/SP12-042.webp` |
-| SP12-043 | `components/recipes/styles/manifests/presets/pack_12/SP12-043.yaml` | `assets/recipes/styles/defaults/SP12-043.webp` |
-| SP12-044 | `components/recipes/styles/manifests/presets/pack_12/SP12-044.yaml` | `assets/recipes/styles/defaults/SP12-044.webp` |
-| SP12-045 | `components/recipes/styles/manifests/presets/pack_12/SP12-045.yaml` | `assets/recipes/styles/defaults/SP12-045.webp` |
-| SP12-046 | `components/recipes/styles/manifests/presets/pack_12/SP12-046.yaml` | `assets/recipes/styles/defaults/SP12-046.webp` |
-| SP12-047 | `components/recipes/styles/manifests/presets/pack_12/SP12-047.yaml` | `assets/recipes/styles/defaults/SP12-047.webp` |
-| SP12-048 | `components/recipes/styles/manifests/presets/pack_12/SP12-048.yaml` | `assets/recipes/styles/defaults/SP12-048.webp` |
-| SP12-049 | `components/recipes/styles/manifests/presets/pack_12/SP12-049.yaml` | `assets/recipes/styles/defaults/SP12-049.webp` |
-| SP12-050 | `components/recipes/styles/manifests/presets/pack_12/SP12-050.yaml` | `assets/recipes/styles/defaults/SP12-050.webp` |
-| SP12-051 | `components/recipes/styles/manifests/presets/pack_12/SP12-051.yaml` | `assets/recipes/styles/defaults/SP12-051.webp` |
-| SP12-052 | `components/recipes/styles/manifests/presets/pack_12/SP12-052.yaml` | `assets/recipes/styles/defaults/SP12-052.webp` |
-| SP12-053 | `components/recipes/styles/manifests/presets/pack_12/SP12-053.yaml` | `assets/recipes/styles/defaults/SP12-053.webp` |
-| SP12-054 | `components/recipes/styles/manifests/presets/pack_12/SP12-054.yaml` | `assets/recipes/styles/defaults/SP12-054.webp` |
-| SP12-055 | `components/recipes/styles/manifests/presets/pack_12/SP12-055.yaml` | `assets/recipes/styles/defaults/SP12-055.webp` |
-| SP12-056 | `components/recipes/styles/manifests/presets/pack_12/SP12-056.yaml` | `assets/recipes/styles/defaults/SP12-056.webp` |
-| SP12-057 | `components/recipes/styles/manifests/presets/pack_12/SP12-057.yaml` | `assets/recipes/styles/defaults/SP12-057.webp` |
-| SP12-058 | `components/recipes/styles/manifests/presets/pack_12/SP12-058.yaml` | `assets/recipes/styles/defaults/SP12-058.webp` |
-| SP12-059 | `components/recipes/styles/manifests/presets/pack_12/SP12-059.yaml` | `assets/recipes/styles/defaults/SP12-059.webp` |
-| SP12-060 | `components/recipes/styles/manifests/presets/pack_12/SP12-060.yaml` | `assets/recipes/styles/defaults/SP12-060.webp` |
-| SP12-061 | `components/recipes/styles/manifests/presets/pack_12/SP12-061.yaml` | `assets/recipes/styles/defaults/SP12-061.webp` |
-| SP12-062 | `components/recipes/styles/manifests/presets/pack_12/SP12-062.yaml` | `assets/recipes/styles/defaults/SP12-062.webp` |
-| SP12-063 | `components/recipes/styles/manifests/presets/pack_12/SP12-063.yaml` | `assets/recipes/styles/defaults/SP12-063.webp` |
-| SP12-064 | `components/recipes/styles/manifests/presets/pack_12/SP12-064.yaml` | `assets/recipes/styles/defaults/SP12-064.webp` |
-| SP12-065 | `components/recipes/styles/manifests/presets/pack_12/SP12-065.yaml` | `assets/recipes/styles/defaults/SP12-065.webp` |
-| SP12-066 | `components/recipes/styles/manifests/presets/pack_12/SP12-066.yaml` | `assets/recipes/styles/defaults/SP12-066.webp` |
-| SP12-067 | `components/recipes/styles/manifests/presets/pack_12/SP12-067.yaml` | `assets/recipes/styles/defaults/SP12-067.webp` |
-| SP12-068 | `components/recipes/styles/manifests/presets/pack_12/SP12-068.yaml` | `assets/recipes/styles/defaults/SP12-068.webp` |
-| SP12-069 | `components/recipes/styles/manifests/presets/pack_12/SP12-069.yaml` | `assets/recipes/styles/defaults/SP12-069.webp` |
-| SP12-070 | `components/recipes/styles/manifests/presets/pack_12/SP12-070.yaml` | `assets/recipes/styles/defaults/SP12-070.webp` |
-| SP12-071 | `components/recipes/styles/manifests/presets/pack_12/SP12-071.yaml` | `assets/recipes/styles/defaults/SP12-071.webp` |
-| SP12-072 | `components/recipes/styles/manifests/presets/pack_12/SP12-072.yaml` | `assets/recipes/styles/defaults/SP12-072.webp` |
-| SP12-073 | `components/recipes/styles/manifests/presets/pack_12/SP12-073.yaml` | `assets/recipes/styles/defaults/SP12-073.webp` |
-| SP12-074 | `components/recipes/styles/manifests/presets/pack_12/SP12-074.yaml` | `assets/recipes/styles/defaults/SP12-074.webp` |
-| SP12-075 | `components/recipes/styles/manifests/presets/pack_12/SP12-075.yaml` | `assets/recipes/styles/defaults/SP12-075.webp` |
-| SP12-076 | `components/recipes/styles/manifests/presets/pack_12/SP12-076.yaml` | `assets/recipes/styles/defaults/SP12-076.webp` |
-| SP12-077 | `components/recipes/styles/manifests/presets/pack_12/SP12-077.yaml` | `assets/recipes/styles/defaults/SP12-077.webp` |
-| SP12-078 | `components/recipes/styles/manifests/presets/pack_12/SP12-078.yaml` | `assets/recipes/styles/defaults/SP12-078.webp` |
-| SP12-079 | `components/recipes/styles/manifests/presets/pack_12/SP12-079.yaml` | `assets/recipes/styles/defaults/SP12-079.webp` |
-| SP12-080 | `components/recipes/styles/manifests/presets/pack_12/SP12-080.yaml` | `assets/recipes/styles/defaults/SP12-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_13
 
@@ -3751,5 +3461,169 @@ Actualizacion semantica 2026-06-12 sobre cierre ampliado de boilerplate residual
 - Coverage after wave:
   - `bun run styles:runtime:check` -> current.
   - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=58/80 staleDefaultImages=22 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_ad
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-059|SP09-060" --parallel=2 --session-suffix=stale_p09_ad --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-059.webp` (`284912` bytes)
+  - `assets/recipes/styles/defaults/SP09-060.webp` (`346362` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-059` / `Soap Bubbles` and `SP09-060` / `Mercury (Liquid Metal)`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=60/80 staleDefaultImages=20 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-14 - `pack_09` ola stale_p09_ae
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-061|SP09-062" --parallel=2 --session-suffix=stale_p09_ae --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-061.webp` (`218284` bytes)
+  - `assets/recipes/styles/defaults/SP09-062.webp` (`394030` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-061` / `Dry Ice Fog` and `SP09-062` / `Confetti`.
+- Coverage after wave:
+  - `bun run styles:runtime:check` -> current.
+  - `bun run styles:validate -- --pack=pack_09 --coverage` -> `pack_09 defaultImages=80/80 availableDefaultImages=62/80 staleDefaultImages=18 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_af
+
+- Command:
+  - `bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-063|SP09-064" --parallel=2 --session-suffix=stale_p09_af --force`
+- Result:
+  - wrapper timed out after creating jobs; outputs were recovered from Codex image cache for the same job prompts.
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-063.webp` (`328378` bytes)
+  - `assets/recipes/styles/defaults/SP09-064.webp` (`282680` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-063` / `Cobweb` and `SP09-064` / `Mud (Cracked)`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=64/80 staleDefaultImages=16 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+- Runtime risk note:
+  - local app-server timed out notification finalization for `SP09-063`; `SP09-064` completed normally. Both assets were recovered/confirmed from `C:\Users\cristian\.codex\generated_images`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_ag
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-065|SP09-066" --parallel=2 --session-suffix=stale_p09_ag --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-065.webp` (`275508` bytes)
+  - `assets/recipes/styles/defaults/SP09-066.webp` (`372098` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-065` / `Tar` and `SP09-066` / `Sand (Beach)`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=66/80 staleDefaultImages=14 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_ah
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-067|SP09-068" --parallel=2 --session-suffix=stale_p09_ah --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-067.webp` (`268646` bytes)
+  - `assets/recipes/styles/defaults/SP09-068.webp` (`309434` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-067` / `Snow (Powder)` and `SP09-068` / `Lava Rock (Cooled)`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=68/80 staleDefaultImages=12 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_ai
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-069|SP09-070" --parallel=2 --session-suffix=stale_p09_ai --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-069.webp` (`466704` bytes)
+  - `assets/recipes/styles/defaults/SP09-070.webp` (`240222` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-069` / `Fiberglass Insulation` and `SP09-070` / `Polystyrene (Styrofoam)`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=70/80 staleDefaultImages=10 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_aj
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-071|SP09-072" --parallel=2 --session-suffix=stale_p09_aj --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-071.webp` (`220514` bytes)
+  - `assets/recipes/styles/defaults/SP09-072.webp` (`470544` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-071` / `Plywood` and `SP09-072` / `OSB Board`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_ak
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-073|SP09-074" --parallel=2 --session-suffix=stale_p09_ak --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-073.webp` (`312882` bytes)
+  - `assets/recipes/styles/defaults/SP09-074.webp` (`430208` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-073` / `Linoleum Floor` and `SP09-074` / `Carpet (Shag)`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=74/80 staleDefaultImages=6 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_al
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-075|SP09-076" --parallel=2 --session-suffix=stale_p09_al --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-075.webp` (`387884` bytes)
+  - `assets/recipes/styles/defaults/SP09-076.webp` (`263228` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-075` / `Astroturf` and `SP09-076` / `Chain Link Fence`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=76/80 staleDefaultImages=4 missingDefaultImages=0`
+- Prompt quality note:
+  - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Visual stale refresh - 2026-06-15 - `pack_09` ola stale_p09_am
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=900000 bun run scripts/generate-style-defaults.ts --pack=pack_09 "--preset=SP09-077|SP09-078" --parallel=2 --session-suffix=stale_p09_am --force`
+- Result:
+  - `generated=2 attempted=2 skipped=78 failed=0 packs=pack_09`
+- Refreshed files:
+  - `assets/recipes/styles/defaults/SP09-077.webp` (`282518` bytes)
+  - `assets/recipes/styles/defaults/SP09-078.webp` (`290276` bytes)
+- Manifest checkpoint:
+  - `manifest-pack_09.json` now refreshes `SP09-077` / `Barbed Wire` and `SP09-078` / `Solar Panel`.
+- Coverage after wave:
+  - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
 - Prompt quality note:
   - generation used global denoise suffix from `scripts/style-default-utils.ts`.

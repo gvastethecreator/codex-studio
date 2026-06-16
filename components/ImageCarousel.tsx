@@ -38,6 +38,18 @@ interface ImageCarouselProps {
   transitionName?: string;
 }
 
+type CarouselState = {
+  direction: number;
+  isSliding: boolean;
+  isFullscreen: boolean;
+  copiedPrompt: boolean;
+  isComparing: boolean;
+};
+
+export function finishCarouselSlideState(state: CarouselState): CarouselState {
+  return state.isSliding ? { ...state, isSliding: false } : state;
+}
+
 const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor;
 
 const CarouselImageItem: React.FC<{
@@ -435,6 +447,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
     handleJumpTo(prevIndex);
   }, [allImages.length, handleJumpTo]);
 
+  const handleSlideAnimationComplete = useCallback(() => {
+    setCarouselState(finishCarouselSlideState);
+  }, []);
+
   const handleNextRef = useRef(handleNext);
   handleNextRef.current = handleNext;
   const handlePrevRef = useRef(handlePrev);
@@ -609,9 +625,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
               initial="enter"
               animate="center"
               exit="exit"
-              onAnimationComplete={() =>
-                setCarouselState((prev) => ({ ...prev, isSliding: false }))
-              }
+              onAnimationComplete={handleSlideAnimationComplete}
               className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
             >
               <CarouselImageItem
