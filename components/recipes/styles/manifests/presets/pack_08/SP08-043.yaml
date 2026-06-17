@@ -16,7 +16,7 @@ visualDna:
   form_and_line: Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality
   color_palette: Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet
   lighting_setup: Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight
-  material_texture: Exotic fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk
+  material_texture: Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk
   render_quality: Regal alien opulence, galactic-court high fashion, ceremonial precision
   spatial_distortion: Ceremonial halo exaggeration
   atmosphere: Serious, political, galactic-court gravity, doomed-romance elegance, diplomatic tension
@@ -24,14 +24,14 @@ visualDna:
   creative_brief: >-
     Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal thread,
     feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality as a portable
-    style anchor, not as throne rooms, senate chambers, twin-sun tableaux or specific royal figures.
+    style anchor, not as throne rooms, senate chambers, binary-sun scenic tableaux or specific royal figures.
 avoidRules:
-  - simple
-  - earth
+  - plain everyday minimalwear
+  - contemporary Earth-uniform literalism
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-043.webp
 attributes:
-  negativePrompt: simple, earth
+  negativePrompt: plain everyday minimalwear, contemporary Earth-uniform literalism
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -27,11 +27,11 @@ visualDna:
     fijo, planeta selvatico ni set especifico. Mantiene material vivo, tension suspendida, escala vertical y ritmo de
     amarre sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - metal
+  - dominant polished industrial metal
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-062.webp
 attributes:
-  negativePrompt: metal
+  negativePrompt: dominant polished industrial metal, cold machine structure
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -32,14 +32,13 @@ visualDna:
     estructurante. La identidad debe sostenerse por clima, material y secuencia espacial, no por una
     narrativa de villa puntual.
 avoidRules:
-  - rain
-  - cold
-  - dark
-  - grey
+  - overcast gloom
+  - cold industrial grey cast
+  - storm-soaked mood overriding sunlit lime terracotta identity
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-013.webp
 attributes:
-  negativePrompt: rain, cold, dark, grey
+  negativePrompt: overcast gloom, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

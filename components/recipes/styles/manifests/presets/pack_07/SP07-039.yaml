@@ -12,36 +12,35 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Infraestructura crítica de datos orientada a continuidad operativa y lógica machine-first.
-  form_and_line: >-
-    Series modulares, corredores térmicos rígidos, bandejas ortogonales y repetición de panel
-    perforado funcional.
+  aesthetic: Critical data infrastructure focused on operational continuity and machine-first logic.
+  form_and_line: Modular series, thermal-containment lanes, orthogonal trays and functional perforated-panel repetition.
   color_palette: Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal
   lighting_setup: >-
-    Luz fría artificial continua, glow de rack, tiras de servicio y constelaciones LED de estado con
-    contención térmica visible.
+    Continuous cold artificial light, rack-like glow, service strips and status
+    LED constellations with visible thermal containment.
   material_texture: >-
-    Acero pintado en polvo, fibra trenzada, malla perforada, superficie técnica gomada y polvo de
-    admisión.
+    Powder-coated steel, braided fiber, perforated mesh, rubberized technical
+    surfaces and intake-dust residue.
   render_quality: >-
-    Realismo facility-grade con alta densidad informativa y legibilidad de sistema bajo iluminación
-    técnica.
-  spatial_distortion: None
-  atmosphere: Urgencia controlada, vigilancia infraestructural y ocupación humana mínima.
-  key_features: >-
-    Clúster LED de estado, contención térmica, pistas de flujo, patch fields etiquetados y
-    repetición redundante.
+    Facility-grade realism with high information density and system readability
+    under technical lighting.
+  spatial_distortion: >-
+    Modular redundancy, thermal-lane compression and machine-grid repetition
+    without forcing racks, aisles or a data-center corridor.
+  atmosphere: Controlled urgency, infrastructural surveillance and minimal human occupation.
+  key_features: Status LED clusters, thermal containment cues, cable-routing logic, patch-field rhythm and redundant repetition.
   creative_brief: >-
-    Vuelve cualquier input infraestructura critica: redundancia modular, contencion termica, LEDs de
-    estado y superficies machine-first. Debe sentirse como continuidad operativa vigilada, no como
-    ciencia ficcion generica.
+    Turn any input into critical infrastructure: modular redundancy, thermal
+    containment, status-light logic and machine-first surfaces. It should feel
+    like guarded operational continuity, not generic science fiction or a fixed
+    server room scene.
 avoidRules:
   - messy
-  - organic
+  - organic clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-039.webp
 attributes:
-  negativePrompt: messy, organic
+  negativePrompt: messy, organic clutter
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

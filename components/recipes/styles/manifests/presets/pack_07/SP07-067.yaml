@@ -33,11 +33,11 @@ visualDna:
     horizonte costero o arena de juguete literal. Conserva granulacion humeda, erosion, molde repetido y fragilidad
     mareal sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - stone
+  - hard carved stone finish replacing wet sand
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-067.webp
 attributes:
-  negativePrompt: stone
+  negativePrompt: hard carved stone finish replacing wet sand, permanent masonry read
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

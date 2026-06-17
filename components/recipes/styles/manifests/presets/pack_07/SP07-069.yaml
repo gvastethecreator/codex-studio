@@ -26,10 +26,9 @@ visualDna:
     Bastidor tubular presurizado, retÃ­cula de costura tÃ©rmica, zonificaciÃ³n vÃ­vida, paneles mesh y nodos de inflado
     visibles.
   creative_brief: >-
-    Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presiÃ³n, soldaduras tÃ©rmicas, brillos
-    glossy y color safety-pop. El estilo debe ser neumatico y temporal, no una pieza de parque o castillo especifico.
-    Conserva volumen presurizado, costuras termicas, brillo PVC y temporalidad ludica sin exigir edificio, paisaje, set,
-    criatura ni escena fija.
+    Aplica comportamiento de vinilo inflable cuando sea compatible: bordes redondeados por presion,
+    soldaduras termicas, brillos PVC, costuras temporales y color safety-pop. El estilo debe sugerir
+    presion, juego y temporalidad sin convertir todo sujeto en parque, castillo o volumen inflable literal.
 avoidRules:
   - hard edges
 assets:

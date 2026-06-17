@@ -30,9 +30,9 @@ visualDna:
   atmosphere: Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.
   key_features: Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.
   creative_brief: >-
-    Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de
-    borde y macro-perspectiva. La identidad viene de continuidad anular y planificacion biosferica. Conserva curvatura
-    orbital, ecologia lineal, escala macro y horizonte ascendente sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Usa claves de banda orbital como lenguaje de escala: curvatura ascendente, horizon wrap,
+    ecologia lineal, muros de borde y perspectiva macro. La identidad viene de continuidad anular
+    y planificacion biosferica sin obligar a que toda composicion sea un habitat completo.
 avoidRules:
   - globe
 assets:

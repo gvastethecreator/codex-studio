@@ -11435,3 +11435,3858 @@ Lectura de riesgo:
 - se removieron `SP01-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
 - la generacion uso suffix global de denoise y control de microdetalle;
 - proxima ola sugerida: `SP01-043|SP01-044`.
+
+## Tanda 2026-06-15 - `pack_01` visual stale refresh ola `stale_p01_v`
+
+Continuacion 2x2 del stale historico de `pack_01`; intento inicial abortado antes de escribir assets, reintentado sin proceso colgado.
+
+Presets regenerados:
+
+- `SP01-043` / `Ring Light`
+- `SP01-044` / `Projector Light`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-043|SP01-044" --parallel=2 --session-suffix=stale_p01_v --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-043.webp` (`151736` bytes)
+  - `assets/recipes/styles/defaults/SP01-044.webp` (`179462` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-043.2026-06-16T02-48-44-411Z.webp` (`278450` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-044.2026-06-16T02-50-03-757Z.webp` (`249190` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=50/87 staleDefaultImages=37 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-045|SP01-046`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_w`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-045` / `Light Painting`
+- `SP01-046` / `Street Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-045|SP01-046" --parallel=2 --session-suffix=stale_p01_w --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-045.webp` (`191762` bytes)
+  - `assets/recipes/styles/defaults/SP01-046.webp` (`217762` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-045.2026-06-16T03-01-48-370Z.webp` (`373050` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-046.2026-06-16T03-03-11-035Z.webp` (`161166` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=52/87 staleDefaultImages=35 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-047|SP01-048`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_x`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-047` / `Landscape (Ansel Adams)`
+- `SP01-048` / `Macro Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-047|SP01-048" --parallel=2 --session-suffix=stale_p01_x --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-047.webp` (`376790` bytes)
+  - `assets/recipes/styles/defaults/SP01-048.webp` (`317678` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-047.2026-06-16T03-11-04-541Z.webp` (`241732` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-048.2026-06-16T03-10-39-143Z.webp` (`252558` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=54/87 staleDefaultImages=33 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-049|SP01-050`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_y`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-049` / `Food Photography`
+- `SP01-050` / `Product Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-049|SP01-050" --parallel=2 --session-suffix=stale_p01_y --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-049.webp` (`221970` bytes)
+  - `assets/recipes/styles/defaults/SP01-050.webp` (`247562` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-049.2026-06-16T03-20-22-241Z.webp` (`314354` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-050.2026-06-16T03-20-35-340Z.webp` (`155730` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=56/87 staleDefaultImages=31 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-051|SP01-052`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_z`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-051` / `Fashion Editorial`
+- `SP01-052` / `Sports Action`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-051|SP01-052" --parallel=2 --session-suffix=stale_p01_z --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-051.webp` (`224394` bytes)
+  - `assets/recipes/styles/defaults/SP01-052.webp` (`328100` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-051.2026-06-16T03-29-12-939Z.webp` (`212974` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-052.2026-06-16T03-29-14-595Z.webp` (`258466` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=58/87 staleDefaultImages=29 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-053|SP01-054`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_aa`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-053` / `Wildlife Photography`
+- `SP01-054` / `Astrophotography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-053|SP01-054" --parallel=2 --session-suffix=stale_p01_aa --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-053.webp` (`276278` bytes)
+  - `assets/recipes/styles/defaults/SP01-054.webp` (`261142` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-053.2026-06-16T03-37-37-286Z.webp` (`208534` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-054.2026-06-16T03-37-43-861Z.webp` (`329446` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=60/87 staleDefaultImages=27 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-055|SP01-056`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ab`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-055` / `Underwater`
+- `SP01-056` / `Architecture (Modern)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-055|SP01-056" --parallel=2 --session-suffix=stale_p01_ab --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-055.webp` (`302628` bytes)
+  - `assets/recipes/styles/defaults/SP01-056.webp` (`192690` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-055.2026-06-16T03-49-25-125Z.webp` (`361624` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-056.2026-06-16T03-49-23-456Z.webp` (`384100` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=62/87 staleDefaultImages=25 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-057|SP01-058`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ac`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-057` / `Interior Design`
+- `SP01-058` / `Minimalist Photo`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-057|SP01-058" --parallel=2 --session-suffix=stale_p01_ac --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-057.webp` (`144788` bytes)
+  - `assets/recipes/styles/defaults/SP01-058.webp` (`101038` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-057.2026-06-16T04-01-32-066Z.webp` (`261064` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-058.2026-06-16T04-01-29-639Z.webp` (`93814` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=64/87 staleDefaultImages=23 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-057/058` pesan `144788`/`101038` bytes; quedan como puntos de QA visual posterior, no bloquean cobertura;
+- proxima ola sugerida: `SP01-059|SP01-060`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ad`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-059` / `Abstract Photo`
+- `SP01-060` / `Documentary (War)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-059|SP01-060" --parallel=2 --session-suffix=stale_p01_ad --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-059.webp` (`182410` bytes)
+  - `assets/recipes/styles/defaults/SP01-060.webp` (`221680` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-059.2026-06-16T04-17-55-196Z.webp` (`539478` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-060.2026-06-16T04-18-23-873Z.webp` (`385148` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=66/87 staleDefaultImages=21 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-059` bajo de `539478` a `182410` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-061|SP01-062`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ae`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-061` / `Paparazzi Style`
+- `SP01-062` / `Corporate Stock Photo`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-061|SP01-062" --parallel=2 --session-suffix=stale_p01_ae --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-061.webp` (`154038` bytes)
+  - `assets/recipes/styles/defaults/SP01-062.webp` (`102440` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-061.2026-06-16T04-35-44-500Z.webp` (`224574` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-062.2026-06-16T04-35-41-200Z.webp` (`190472` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=68/87 staleDefaultImages=19 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-061/062` pesan `154038`/`102440` bytes; quedan como puntos de QA visual posterior, no bloquean cobertura;
+- proxima ola sugerida: `SP01-063|SP01-064`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_af`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-063` / `Real Estate (HDR)`
+- `SP01-064` / `Concert Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-063|SP01-064" --parallel=2 --session-suffix=stale_p01_af --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-063.webp` (`473146` bytes)
+  - `assets/recipes/styles/defaults/SP01-064.webp` (`125688` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-063.2026-06-16T04-56-49-147Z.webp` (`441164` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-064.2026-06-16T04-56-57-385Z.webp` (`253672` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=70/87 staleDefaultImages=17 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-064` pesa `125688` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-065|SP01-066`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ag`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-065` / `Pet Photography`
+- `SP01-066` / `Automotive Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-065|SP01-066" --parallel=2 --session-suffix=stale_p01_ag --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-065.webp` (`254356` bytes)
+  - `assets/recipes/styles/defaults/SP01-066.webp` (`360164` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-065.2026-06-16T05-05-32-069Z.webp` (`281058` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-066.2026-06-16T05-05-30-428Z.webp` (`243036` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=72/87 staleDefaultImages=15 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-067|SP01-068`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ah`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-067` / `Wedding Photography`
+- `SP01-068` / `Newborn Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-067|SP01-068" --parallel=2 --session-suffix=stale_p01_ah --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-067.webp` (`319608` bytes)
+  - `assets/recipes/styles/defaults/SP01-068.webp` (`177580` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-067.2026-06-16T05-16-00-558Z.webp` (`335016` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-068.2026-06-16T05-15-45-793Z.webp` (`258048` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=74/87 staleDefaultImages=13 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-069|SP01-070`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ai`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-069` / `Boudoir Photography`
+- `SP01-070` / `Travel Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-069|SP01-070" --parallel=2 --session-suffix=stale_p01_ai --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-069.webp` (`109474` bytes)
+  - `assets/recipes/styles/defaults/SP01-070.webp` (`158918` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-069.2026-06-16T05-29-44-142Z.webp` (`184046` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-070.2026-06-16T05-25-17-674Z.webp` (`319620` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=76/87 staleDefaultImages=11 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-069` pesa `109474` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-071|SP01-072`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_aj`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-071` / `Flat Lay`
+- `SP01-072` / `Tilt-Shift (Miniature)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-071|SP01-072" --parallel=2 --session-suffix=stale_p01_aj --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-071.webp` (`411084` bytes)
+  - `assets/recipes/styles/defaults/SP01-072.webp` (`164248` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-071.2026-06-16T05-38-18-190Z.webp` (`348110` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-072.2026-06-16T05-37-56-093Z.webp` (`186304` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=78/87 staleDefaultImages=9 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-073|SP01-074`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ak`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-073` / `Long Exposure (Water)`
+- `SP01-074` / `Bokeh Panorama (Brenizer)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-073|SP01-074" --parallel=2 --session-suffix=stale_p01_ak --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-073.webp` (`217122` bytes)
+  - `assets/recipes/styles/defaults/SP01-074.webp` (`310592` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-073.2026-06-16T05-52-40-112Z.webp` (`360650` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-074.2026-06-16T05-54-11-867Z.webp` (`194332` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=80/87 staleDefaultImages=7 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-075|SP01-076`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_al`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-075` / `Urbex (Urban Exploration)`
+- `SP01-076` / `Forensic Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-075|SP01-076" --parallel=2 --session-suffix=stale_p01_al --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-075.webp` (`343950` bytes)
+  - `assets/recipes/styles/defaults/SP01-076.webp` (`166966` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-075.2026-06-16T06-04-38-232Z.webp` (`351262` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-076.2026-06-16T06-04-21-850Z.webp` (`381046` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=82/87 staleDefaultImages=5 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-077|SP01-078`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_am`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-077` / `Medical Photography`
+- `SP01-078` / `School Portrait`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-077|SP01-078" --parallel=2 --session-suffix=stale_p01_am --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-077.webp` (`152704` bytes)
+  - `assets/recipes/styles/defaults/SP01-078.webp` (`301366` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-077.2026-06-16T06-14-16-492Z.webp` (`270006` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-078.2026-06-16T06-12-43-360Z.webp` (`327172` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=84/87 staleDefaultImages=3 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP01-077` pesa `152704` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP01-079|SP01-080`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_an`
+
+Continuacion 2x2 del stale historico de `pack_01`.
+
+Presets regenerados:
+
+- `SP01-079` / `Mugshot`
+- `SP01-080` / `Passport Photo`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-079|SP01-080" --parallel=2 --session-suffix=stale_p01_an --force`
+- resultado: `generated=2 attempted=2 skipped=85 failed=0 packs=pack_01`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP01-079.webp` (`175204` bytes)
+  - `assets/recipes/styles/defaults/SP01-080.webp` (`188624` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-079.2026-06-16T06-22-54-352Z.webp` (`309288` bytes)
+  - `.tmp/style-default-card-archive/previous/SP01-080.2026-06-16T06-23-05-800Z.webp` (`203092` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=86/87 staleDefaultImages=1 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP01-079/080` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP01-081`.
+
+## Tanda 2026-06-16 - `pack_01` visual stale refresh ola `stale_p01_ao`
+
+Cierre 1x1 del stale historico de `pack_01`.
+
+Preset regenerado:
+
+- `SP01-081` / `Soft Editorial Window`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-081" --parallel=1 --session-suffix=stale_p01_ao --force`
+- resultado: `generated=1 attempted=1 skipped=86 failed=0 packs=pack_01`
+- archivo refrescado:
+  - `assets/recipes/styles/defaults/SP01-081.webp` (`172442` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP01-081.2026-06-16T06-31-56-712Z.webp` (`29598` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_01 defaultImages=87/87 availableDefaultImages=87/87 staleDefaultImages=0 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removio `SP01-081` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `pack_01` queda sin stale visual pendiente tras validar coverage.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_a`
+
+Inicio 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-001` / `Film Noir`
+- `SP02-002` / `Spaghetti Western`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-001|SP02-002" --parallel=2 --session-suffix=stale_p02_a --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-001.webp` (`105742` bytes)
+  - `assets/recipes/styles/defaults/SP02-002.webp` (`270016` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-001.2026-06-16T06-40-50-604Z.webp` (`111948` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-002.2026-06-16T06-41-01-220Z.webp` (`383460` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=10/128 staleDefaultImages=118 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-001/002` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-001` pesa `105742` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-003|SP02-004`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_b`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-003` / `80s Sci-Fi`
+- `SP02-004` / `Technicolor Musical`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-004" --parallel=2 --session-suffix=stale_p02_b --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-003.webp` (`281338` bytes)
+  - `assets/recipes/styles/defaults/SP02-004.webp` (`292768` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-003.2026-06-16T06-48-58-735Z.webp` (`238938` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-004.2026-06-16T06-48-50-560Z.webp` (`352830` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=12/128 staleDefaultImages=116 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-003/004` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-005|SP02-006`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_c`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-005` / `French New Wave`
+- `SP02-006` / `Grindhouse/Exploitation`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-005|SP02-006" --parallel=2 --session-suffix=stale_p02_c --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-005.webp` (`90616` bytes)
+  - `assets/recipes/styles/defaults/SP02-006.webp` (`324850` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-005.2026-06-16T06-57-03-192Z.webp` (`398782` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-006.2026-06-16T06-57-14-631Z.webp` (`494908` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=14/128 staleDefaultImages=114 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-005/006` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-005` pesa `90616` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-007|SP02-008`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_d`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-007` / `Silent Film`
+- `SP02-008` / `Found Footage Horror`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-007|SP02-008" --parallel=2 --session-suffix=stale_p02_d --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-007.webp` (`233088` bytes)
+  - `assets/recipes/styles/defaults/SP02-008.webp` (`200006` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-007.2026-06-16T07-07-01-344Z.webp` (`366944` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-008.2026-06-16T07-06-52-315Z.webp` (`209342` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=16/128 staleDefaultImages=112 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-007/008` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-009|SP02-010`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_e`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-009` / `Kaiju Movie (Suitmation)`
+- `SP02-010` / `Kung Fu Studio Epic (Shaw Brothers)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-009|SP02-010" --parallel=2 --session-suffix=stale_p02_e --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-009.webp` (`228910` bytes)
+  - `assets/recipes/styles/defaults/SP02-010.webp` (`217828` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-009.2026-06-16T07-15-30-354Z.webp` (`457258` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-010.2026-06-16T07-15-39-352Z.webp` (`263998` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=18/128 staleDefaultImages=110 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-009/010` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-011|SP02-012`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_f`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-011` / `Cyberpunk Anime (90s)`
+- `SP02-012` / `Wes Anderson Symmetrical Storybook Cinema`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-011|SP02-012" --parallel=2 --session-suffix=stale_p02_f --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-011.webp` (`307860` bytes)
+  - `assets/recipes/styles/defaults/SP02-012.webp` (`297120` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-011.2026-06-16T07-24-04-233Z.webp` (`313476` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-012.2026-06-16T07-23-58-455Z.webp` (`250504` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=20/128 staleDefaultImages=108 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-011/012` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-013|SP02-014`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_g`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-013` / `Blockbuster Teal & Orange`
+- `SP02-014` / `Giallo Horror`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-013|SP02-014" --parallel=2 --session-suffix=stale_p02_g --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-013.webp` (`200966` bytes)
+  - `assets/recipes/styles/defaults/SP02-014.webp` (`144120` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-013.2026-06-16T07-32-11-039Z.webp` (`289266` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-014.2026-06-16T07-32-20-869Z.webp` (`183278` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=22/128 staleDefaultImages=106 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-013/014` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-014` pesa `144120` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-015|SP02-016`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_h`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-015` / `Mumblecore`
+- `SP02-016` / `Space Opera (70s)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-015|SP02-016" --parallel=2 --session-suffix=stale_p02_h --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-015.webp` (`148844` bytes)
+  - `assets/recipes/styles/defaults/SP02-016.webp` (`286030` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-015.2026-06-16T07-42-22-139Z.webp` (`131016` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-016.2026-06-16T07-40-45-739Z.webp` (`256084` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=24/128 staleDefaultImages=104 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-015/016` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-015` pesa `148844` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-017|SP02-018`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_i`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-017` / `90s Sitcom`
+- `SP02-018` / `News Broadcast`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-017|SP02-018" --parallel=2 --session-suffix=stale_p02_i --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-017.webp` (`202780` bytes)
+  - `assets/recipes/styles/defaults/SP02-018.webp` (`118246` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-017.2026-06-16T07-50-14-806Z.webp` (`254190` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-018.2026-06-16T07-50-21-361Z.webp` (`130000` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=26/128 staleDefaultImages=102 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-017/018` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-018` pesa `118246` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-019|SP02-020`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_j`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-019` / `Soap Opera`
+- `SP02-020` / `Reality TV Confessional`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-019|SP02-020" --parallel=2 --session-suffix=stale_p02_j --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-019.webp` (`269484` bytes)
+  - `assets/recipes/styles/defaults/SP02-020.webp` (`176814` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-019.2026-06-16T07-59-12-112Z.webp` (`185170` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-020.2026-06-16T08-08-18-420Z.webp` (`175224` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=28/128 staleDefaultImages=100 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-019/020` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-021|SP02-022`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_k`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-021` / `Hype Williams Fisheye Glam Video`
+- `SP02-022` / `CCTV/Security Cam`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-021|SP02-022" --parallel=2 --session-suffix=stale_p02_k --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-021.webp` (`324864` bytes)
+  - `assets/recipes/styles/defaults/SP02-022.webp` (`151770` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-021.2026-06-16T08-19-10-482Z.webp` (`292032` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-022.2026-06-16T08-18-40-946Z.webp` (`191442` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=30/128 staleDefaultImages=98 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-021/022` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-022` pesa `151770` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-023|SP02-024`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_l`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-023` / `VHS Home Video`
+- `SP02-024` / `Public Access TV`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-023|SP02-024" --parallel=2 --session-suffix=stale_p02_l --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-023.webp` (`126584` bytes)
+  - `assets/recipes/styles/defaults/SP02-024.webp` (`361916` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-023.2026-06-16T08-30-29-319Z.webp` (`192106` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-024.2026-06-16T08-30-38-328Z.webp` (`199772` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=32/128 staleDefaultImages=96 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-023/024` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-023` pesa `126584` bytes; queda como punto de QA visual posterior, no bloquea cobertura;
+- proxima ola sugerida: `SP02-025|SP02-026`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_m`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-025` / `Infomercial`
+- `SP02-026` / `Sports Broadcast`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-025|SP02-026" --parallel=2 --session-suffix=stale_p02_m --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-025.webp` (`242128` bytes)
+  - `assets/recipes/styles/defaults/SP02-026.webp` (`231702` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-025.2026-06-16T08-38-43-138Z.webp` (`318938` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-026.2026-06-16T08-38-57-020Z.webp` (`286344` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=34/128 staleDefaultImages=94 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-025/026` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-027|SP02-028`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_n`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-027` / `Weather Channel`
+- `SP02-028` / `MTV 90s Grunge Broadcast`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-027|SP02-028" --parallel=2 --session-suffix=stale_p02_n --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-027.webp` (`379526` bytes)
+  - `assets/recipes/styles/defaults/SP02-028.webp` (`249242` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-027.2026-06-16T08-47-18-738Z.webp` (`363206` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-028.2026-06-16T08-47-11-334Z.webp` (`418618` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=36/128 staleDefaultImages=92 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-027/028` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-029|SP02-030`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_o`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-029` / `Cooking Show`
+- `SP02-030` / `Nature Documentary`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-029|SP02-030" --parallel=2 --session-suffix=stale_p02_o --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-029.webp` (`316756` bytes)
+  - `assets/recipes/styles/defaults/SP02-030.webp` (`262950` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-029.2026-06-16T08-59-03-725Z.webp` (`323768` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-030.2026-06-16T08-58-44-062Z.webp` (`387912` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=38/128 staleDefaultImages=90 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-029/030` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-031|SP02-032`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_p`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-031` / `Classic Disney Golden Age Cel Feature`
+- `SP02-032` / `Studio Ghibli Painterly Nature Anime`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-031|SP02-032" --parallel=2 --session-suffix=stale_p02_p --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-031.webp` (`402706` bytes)
+  - `assets/recipes/styles/defaults/SP02-032.webp` (`229272` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-031.2026-06-16T09-10-16-093Z.webp` (`323084` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-032.2026-06-16T09-07-35-672Z.webp` (`419296` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=40/128 staleDefaultImages=88 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-031/032` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-033|SP02-034`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_q`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-033` / `Pixar Style Family Feature CG`
+- `SP02-034` / `Laika Moody Stop-Motion`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-033|SP02-034" --parallel=2 --session-suffix=stale_p02_q --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-033.webp` (`161330` bytes)
+  - `assets/recipes/styles/defaults/SP02-034.webp` (`196280` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-033.2026-06-16T09-18-57-238Z.webp` (`199220` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-034.2026-06-16T09-18-55-611Z.webp` (`256954` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=42/128 staleDefaultImages=86 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-033/034` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-035|SP02-036`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_r`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-035` / `Looney Tunes Chuck Jones Golden Age Cartoon Frenzy`
+- `SP02-036` / `Fleischer Rubber Hose Cartoon`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-035|SP02-036" --parallel=2 --session-suffix=stale_p02_r --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-035.webp` (`241090` bytes)
+  - `assets/recipes/styles/defaults/SP02-036.webp` (`251630` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-035.2026-06-16T09-40-03-994Z.webp` (`165080` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-036.2026-06-16T09-34-10-541Z.webp` (`395582` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=44/128 staleDefaultImages=84 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-035/036` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-035` necesito retries por `needs_review`; archivo final existe y pesa `241090` bytes, queda como punto de QA visual posterior;
+- proxima ola sugerida: `SP02-037|SP02-038`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_s`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-037` / `Anime (90s Aesthetic)`
+- `SP02-038` / `Spider-Verse Comic Offset 3D`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-037|SP02-038" --parallel=2 --session-suffix=stale_p02_s --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-037.webp` (`383210` bytes)
+  - `assets/recipes/styles/defaults/SP02-038.webp` (`677942` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-037.2026-06-16T09-52-01-157Z.webp` (`362898` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-038.2026-06-16T09-51-32-605Z.webp` (`577638` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=46/128 staleDefaultImages=82 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-037/038` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-039|SP02-040`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_t`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-039` / `UPA Style (Mid-Century)`
+- `SP02-040` / `South Park Style`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-039|SP02-040" --parallel=2 --session-suffix=stale_p02_t --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-039.webp` (`232450` bytes)
+  - `assets/recipes/styles/defaults/SP02-040.webp` (`191532` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-039.2026-06-16T10-01-24-387Z.webp` (`399410` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-040.2026-06-16T10-01-14-570Z.webp` (`294606` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=48/128 staleDefaultImages=80 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-039/040` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-041|SP02-042`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_u`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-041` / `Rotoscoping`
+- `SP02-042` / `Papercraft Animation`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-041|SP02-042" --parallel=2 --session-suffix=stale_p02_u --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-041.webp` (`123628` bytes)
+  - `assets/recipes/styles/defaults/SP02-042.webp` (`322896` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-041.2026-06-16T10-10-43-183Z.webp` (`204922` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-042.2026-06-16T10-11-51-798Z.webp` (`344792` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=50/128 staleDefaultImages=78 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-041/042` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-043|SP02-044`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_v`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-043` / `Flash Animation (2000s)`
+- `SP02-044` / `Oil Paint Animation`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-043|SP02-044" --parallel=2 --session-suffix=stale_p02_v --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-043.webp` (`136368` bytes)
+  - `assets/recipes/styles/defaults/SP02-044.webp` (`562372` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-043.2026-06-16T10-19-46-893Z.webp` (`130510` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-044.2026-06-16T10-19-44-440Z.webp` (`663356` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=52/128 staleDefaultImages=76 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-043/044` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-045|SP02-046`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_w`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-045` / `Pixel Art Animation`
+- `SP02-046` / `Daguerreotype (1840s)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-045|SP02-046" --parallel=2 --session-suffix=stale_p02_w --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-045.webp` (`238216` bytes)
+  - `assets/recipes/styles/defaults/SP02-046.webp` (`315516` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-045.2026-06-16T10-29-02-097Z.webp` (`362366` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-046.2026-06-16T10-29-20-976Z.webp` (`417246` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=54/128 staleDefaultImages=74 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-045/046` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-047|SP02-048`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_x`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-047` / `Tintype (Civil War)`
+- `SP02-048` / `Autochrome (1900s)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-047|SP02-048" --parallel=2 --session-suffix=stale_p02_x --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-047.webp` (`256728` bytes)
+  - `assets/recipes/styles/defaults/SP02-048.webp` (`395700` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-047.2026-06-16T10-38-38-973Z.webp` (`249868` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-048.2026-06-16T10-38-20-205Z.webp` (`665768` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=56/128 staleDefaultImages=72 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-047/048` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-049|SP02-050`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_y`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-049` / `Kodachrome (50s)`
+- `SP02-050` / `Polaroid (Instant)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-049|SP02-050" --parallel=2 --session-suffix=stale_p02_y --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-049.webp` (`507604` bytes)
+  - `assets/recipes/styles/defaults/SP02-050.webp` (`173460` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-049.2026-06-16T10-49-07-406Z.webp` (`373042` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-050.2026-06-16T10-47-22-188Z.webp` (`139832` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=58/128 staleDefaultImages=70 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-049/050` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-051|SP02-052`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_z`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-051` / `Disposable Camera (90s)`
+- `SP02-052` / `Lomography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-051|SP02-052" --parallel=2 --session-suffix=stale_p02_z --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-051.webp` (`274112` bytes)
+  - `assets/recipes/styles/defaults/SP02-052.webp` (`261890` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-051.2026-06-16T10-59-19-510Z.webp` (`352278` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-052.2026-06-16T10-58-06-654Z.webp` (`333544` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=60/128 staleDefaultImages=68 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-051/052` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-053|SP02-054`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_aa`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-053` / `Wet Plate Collodion`
+- `SP02-054` / `Infrared Film (Aerochrome)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-053|SP02-054" --parallel=2 --session-suffix=stale_p02_aa --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-053.webp` (`179476` bytes)
+  - `assets/recipes/styles/defaults/SP02-054.webp` (`289734` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-053.2026-06-16T11-10-40-726Z.webp` (`344860` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-054.2026-06-16T11-09-49-389Z.webp` (`414262` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=62/128 staleDefaultImages=66 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-053/054` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-055|SP02-056`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ab`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-055` / `Cyanotype (Photo)`
+- `SP02-056` / `Early Digital (2000s)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-055|SP02-056" --parallel=2 --session-suffix=stale_p02_ab --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-055.webp` (`271388` bytes)
+  - `assets/recipes/styles/defaults/SP02-056.webp` (`183802` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-055.2026-06-16T11-20-26-944Z.webp` (`518618` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-056.2026-06-16T11-20-14-640Z.webp` (`279990` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=64/128 staleDefaultImages=64 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-055/056` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-057|SP02-058`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ac`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-057` / `Pinhole Camera`
+- `SP02-058` / `X-Ray Photography`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-057|SP02-058" --parallel=2 --session-suffix=stale_p02_ac --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-057.webp` (`62352` bytes)
+  - `assets/recipes/styles/defaults/SP02-058.webp` (`216384` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-057.2026-06-16T11-29-37-357Z.webp` (`81666` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-058.2026-06-16T11-30-15-730Z.webp` (`308296` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=66/128 staleDefaultImages=62 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-057/058` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- `SP02-057` queda como punto QA visual posterior por peso bajo relativo (`62352` bytes);
+- proxima ola sugerida: `SP02-059|SP02-060`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ad`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-059` / `Thermal Camera`
+- `SP02-060` / `Night Vision (Green)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-059|SP02-060" --parallel=2 --session-suffix=stale_p02_ad --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-059.webp` (`160606` bytes)
+  - `assets/recipes/styles/defaults/SP02-060.webp` (`187322` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-059.2026-06-16T11-40-01-186Z.webp` (`346362` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-060.2026-06-16T11-39-54-609Z.webp` (`446828` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=68/128 staleDefaultImages=60 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-059/060` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-061|SP02-062`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ae`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-061` / `Golden Hour`
+- `SP02-062` / `Blue Hour`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-061|SP02-062" --parallel=2 --session-suffix=stale_p02_ae --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-061.webp` (`159854` bytes)
+  - `assets/recipes/styles/defaults/SP02-062.webp` (`112232` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-061.2026-06-16T11-49-59-041Z.webp` (`231670` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-062.2026-06-16T11-48-42-233Z.webp` (`187204` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=70/128 staleDefaultImages=58 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-061/062` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-063|SP02-064`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_af`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-063` / `Rembrandt Lighting`
+- `SP02-064` / `Neon Noir`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-063|SP02-064" --parallel=2 --session-suffix=stale_p02_af --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-063.webp` (`179158` bytes)
+  - `assets/recipes/styles/defaults/SP02-064.webp` (`190042` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-063.2026-06-16T11-58-34-170Z.webp` (`146336` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-064.2026-06-16T11-58-31-735Z.webp` (`226940` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=72/128 staleDefaultImages=56 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-063/064` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-065|SP02-066`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ag`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-065` / `God Rays (Volumetric)`
+- `SP02-066` / `Silhouette`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-065|SP02-066" --parallel=2 --session-suffix=stale_p02_ag --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-065.webp` (`244620` bytes)
+  - `assets/recipes/styles/defaults/SP02-066.webp` (`226826` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-065.2026-06-16T12-09-47-675Z.webp` (`231738` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-066.2026-06-16T12-07-45-957Z.webp` (`176996` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=74/128 staleDefaultImages=54 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-065/066` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-067|SP02-068`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ah`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-067` / `Double Exposure`
+- `SP02-068` / `Bokeh (Macro)`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-067|SP02-068" --parallel=2 --session-suffix=stale_p02_ah --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-067.webp` (`188304` bytes)
+  - `assets/recipes/styles/defaults/SP02-068.webp` (`136600` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-067.2026-06-16T12-18-29-537Z.webp` (`291516` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-068.2026-06-16T12-18-36-919Z.webp` (`94940` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=76/128 staleDefaultImages=52 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-067/068` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-069|SP02-070`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ai`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-069` / `Split Lighting`
+- `SP02-070` / `Butterfly Lighting`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-069|SP02-070" --parallel=2 --session-suffix=stale_p02_ai --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-069.webp` (`148864` bytes)
+  - `assets/recipes/styles/defaults/SP02-070.webp` (`226558` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-069.2026-06-16T12-32-49-629Z.webp` (`177142` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-070.2026-06-16T12-32-52-083Z.webp` (`226900` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=78/128 staleDefaultImages=50 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-069/070` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-071|SP02-072`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_aj`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-071` / `Day for Night`
+- `SP02-072` / `Candlelight`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-071|SP02-072" --parallel=2 --session-suffix=stale_p02_aj --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-071.webp` (`199162` bytes)
+  - `assets/recipes/styles/defaults/SP02-072.webp` (`144308` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-071.2026-06-16T12-43-33-062Z.webp` (`220624` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-072.2026-06-16T12-43-34-721Z.webp` (`185358` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=80/128 staleDefaultImages=48 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-071/072` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-073|SP02-074`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ak`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-073` / `Bioluminescence`
+- `SP02-074` / `Strobe Light`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-073|SP02-074" --parallel=2 --session-suffix=stale_p02_ak --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-073.webp` (`178884` bytes)
+  - `assets/recipes/styles/defaults/SP02-074.webp` (`133208` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-073.2026-06-16T12-54-02-689Z.webp` (`305628` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-074.2026-06-16T12-54-08-409Z.webp` (`269824` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=82/128 staleDefaultImages=46 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-073/074` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-075|SP02-076`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_al`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-075` / `Prism Effect`
+- `SP02-076` / `Rim Lighting`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-075|SP02-076" --parallel=2 --session-suffix=stale_p02_al --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-075.webp` (`214058` bytes)
+  - `assets/recipes/styles/defaults/SP02-076.webp` (`167156` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-075.2026-06-16T13-04-02-373Z.webp` (`238960` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-076.2026-06-16T13-04-05-651Z.webp` (`158480` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=84/128 staleDefaultImages=44 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-075/076` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-077|SP02-078`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_am`
+
+Continuacion 2x2 del stale historico de `pack_02`.
+
+Presets regenerados:
+
+- `SP02-077` / `Underwater Light`
+- `SP02-078` / `Light Painting`
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-077|SP02-078" --parallel=2 --session-suffix=stale_p02_am --force`
+- resultado: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- archivos refrescados:
+  - `assets/recipes/styles/defaults/SP02-077.webp` (`291750` bytes)
+  - `assets/recipes/styles/defaults/SP02-078.webp` (`246926` bytes)
+- backup local creado:
+  - `.tmp/style-default-card-archive/previous/SP02-077.2026-06-16T13-16-04-099Z.webp` (`257728` bytes)
+  - `.tmp/style-default-card-archive/previous/SP02-078.2026-06-16T13-14-20-258Z.webp` (`283126` bytes)
+- `bun run styles:runtime` refresca `lib/staleStyleDefaultImages.generated.ts` desde el backlog activo.
+- cobertura esperada tras check: `pack_02 defaultImages=128/128 availableDefaultImages=86/128 staleDefaultImages=42 missingDefaultImages=0`
+
+Lectura de riesgo:
+
+- ola visual, no cambia manifests semanticos;
+- se removieron `SP02-077/078` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- la generacion uso suffix global de denoise y control de microdetalle;
+- proxima ola sugerida: `SP02-079|SP02-080`.
+
+## Tanda 2026-06-16 - QA visual anti-literalizacion `pack_01` / `pack_02`
+
+Correccion de calidad posterior a revision visual de usuario. Problema detectado: varios presets literalizaban el nombre como objeto, locacion o narrativa en vez de aplicar el estilo como tratamiento transferible.
+
+Cambios de prompt:
+
+- `scripts/generate-style-defaults.ts` agrega guardrails fuertes para `pack_02__cinematic_lighting_and_lenses`: camara/lente/pinhole/noir/underwater se tratan como lenguaje optico, no como props fisicos; se bloquean camaras, tripodes, objetos en manos, librerias, mercados, fantasy halls, pasillos largos y worldbuilding no requerido.
+- `pack_02__broadcast_and_tv_look` recibe guardrail suave: evita camaras/mercados/fantasy halls accidentales, pero conserva sets, monitores, chroma y graficas TV cuando aplican.
+- `SP01-044`, `SP01-050`, `SP01-061`, `SP01-063`, `SP01-066`, `SP01-067`, `SP01-068`, `SP01-079` reciben guardrail ID-scoped: tratamiento fotografico transferible, sujetos/materiales neutros, sin rostros/modelos, sin coches, bodas, bebes, sospechosos, mansiones, llaves, persecucion paparazzi ni literalizacion del titulo.
+
+Presets regenerados e inspeccionados visualmente:
+
+- `SP02-057` / `Pinhole Camera` (`55420` bytes): pasa, efecto pinhole sin camara fisica.
+- `SP02-064` / `Neon Noir` (`247648` bytes): pasa, escena grounded sin pasillo/mercado/libreria.
+- `SP02-071` / `Day for Night` (`196184` bytes): pasa, exterior limpio sin props raros.
+- `SP02-077` / `Underwater Light` (`211730` bytes): segunda correccion pasa, caustics/luz sin orbe en manos.
+- `SP02-079` / `Softbox Studio` (`56566` bytes): pasa, softbox como luz sin equipo fisico ni palacio/orbe.
+- `SP02-080` / `JJ Abrams Anamorphic Overflare` (`94242` bytes): pasa, flare como tratamiento sin prisma/objeto.
+- `SP01-061` / `Paparazzi Style` (`109722` bytes): pasa, flash duro sobre objeto/material sin persona sorprendida/camara/chase.
+- `SP01-063` / `Real Estate (HDR)` (`304558` bytes): pasa, HDR/comercial luminoso sin mansion/agente/llave.
+- `SP01-066` / `Automotive Photography` (`139250` bytes): pasa, metal/sleek automotriz sin coche literal.
+- `SP01-067` / `Wedding Photography` (`131612` bytes): pasa, backlight/lace/white softness sin novia/pareja.
+- `SP01-068` / `Newborn Photography` (`193078` bytes): pasa, suavidad newborn sin bebe.
+- `SP01-079` / `Mugshot` (`191602` bytes): pasa, mugshot lighting/line grammar sin sospechoso/persona.
+- `SP01-044` / `Projector Light` (`297434` bytes): pasa, luz proyectada sobre objeto sin backstage/modelo.
+- `SP01-050` / `Product Photography` (`160278` bytes): pasa, packshot limpio sin mercado/calle.
+
+Evidencia de generacion:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-057|SP02-064|SP02-071|SP02-077" --parallel=2 --session-suffix=quality_scene_guard_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-077" --parallel=1 --session-suffix=quality_no_props_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-079|SP02-080" --parallel=2 --session-suffix=quality_scene_guard_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-061|SP01-063" --parallel=2 --session-suffix=quality_transferable_p01_no_faces --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-066" --parallel=1 --session-suffix=quality_transferable_p01_no_faces --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-067" --parallel=1 --session-suffix=quality_transferable_p01_no_faces --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-068|SP01-079" --parallel=2 --session-suffix=quality_transferable_p01_no_faces --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_01 "--preset=SP01-044|SP01-050" --parallel=2 --session-suffix=quality_transferable_p01_no_faces --force`
+
+Nota operativa:
+
+- hubo un intento fallido transitorio en `SP01-066|SP01-067` por `Timed out waiting for Codex notification` / `Codex app-server socket closed`; se resolvio regenerando single-job.
+- el prompt conserva suffix global de denoise/control de microdetalle.
+- siguiente frente recomendado: auditar `pack_02` completo con los guardrails nuevos y continuar stale desde `SP02-081|SP02-082`, priorizando tambien `SP02-098`, `SP02-117`, `SP02-119`, `SP02-091`, `SP02-114`, `SP02-115`, `SP02-120` por riesgo de literalizacion.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_an/ao`
+
+Continuacion 2x2 del stale historico de `pack_02`, despues de los guardrails anti-literalizacion.
+
+Hallazgo:
+
+- `SP02-081..120` tienen DNA cartoon/media, pero la taxonomy autoritativa actual los mantiene en `1. Cinematic Lighting And Lenses`; se agrego branch de prompt por rango `SP02-081..120` para evitar que esa taxonomy fuerce adulto/modelo/camara mientras queda pendiente refactor semantico de categorias.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-081` / `Grotesque Exaggeration Cartoon` (`373896` bytes): pasa, cartoon grotesque en estudio neutro, sin mercado/pasillo/fantasia/camara.
+- `SP02-082` / `Silly Scribble Doodle` (`514334` bytes): pasa, doodle crayon/papel, sin libreria/mercado/fantasia/camara.
+- `SP02-083` / `Uncanny Valley Caricature` (`125680` bytes): pasa, uncanny caricature sin props/camaras/mercado.
+- `SP02-084` / `Political Satire Cartoon` (`655212` bytes): pasa, caricatura politica generica sin politico real/logos/news scene.
+
+Correccion posterior anti-template de estudio:
+
+- usuario detecto que silla/cortina/studio session tambien era un patron incorrecto;
+- `scripts/generate-style-defaults.ts` elimina `stool`, `chair`, `curtain`, `fabric drop`, `cyclorama` y staged model-session layouts de los anchors/guardrails de `pack_02`;
+- `SP02-079` y `SP02-080` quedan ID-scoped como no-portrait lighting: sujetos no humanos sobre arquitectura/vidrio/metal/agua/haze/sombra;
+- se limpiaron tambien anchors ID-scoped de `pack_01` para futuras regeneraciones, removiendo chair/pedestal/cyclorama como plantilla.
+
+Presets corregidos e inspeccionados por esta observacion:
+
+- `SP02-057` / `Pinhole Camera` (`40192` bytes): pasa, sin silla/cortina/studio session.
+- `SP02-079` / `Softbox Studio` (`151246` bytes): pasa, softbox como luz sobre vidrio/arquitectura, sin modelo ni silla/cortina.
+- `SP02-080` / `JJ Abrams Anamorphic Overflare` (`244796` bytes): pasa, overflare sobre vidrio/arquitectura, sin modelo ni studio props.
+- `SP02-084` / `Political Satire Cartoon` (`733888` bytes): pasa para el error reportado, sin silla; queda riesgo menor de arquetipo politico generico para QA semantica posterior.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-081|SP02-082" --parallel=2 --session-suffix=stale_p02_an_cartoon_media --force`
+- resultado final `081|082`: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-083|SP02-084" --parallel=2 --session-suffix=stale_p02_ao_cartoon_media --force`
+- resultado `083|084`: `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-057|SP02-079" --parallel=2 --session-suffix=quality_no_studio_props_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-079|SP02-080" --parallel=2 --session-suffix=quality_nonportrait_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-084" --parallel=1 --session-suffix=quality_no_studio_props_p02 --force`
+
+Lectura de riesgo:
+
+- esta tanda corrige default cards, no corrige taxonomy semantica de `SP02-081..120`;
+- se removieron `SP02-081..084` de la tabla activa de stale para refrescar `lib/staleStyleDefaultImages.generated.ts`;
+- proxima ola visual sugerida: `SP02-085|SP02-086`;
+- deuda semantica: revisar si `SP02-081..120` deben salir de `cinematic-lighting-and-lenses` hacia categorias cartoon/media antes de cierre final de auditoria.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ap`
+
+Continuacion 2x2 sobre `SP02-085|SP02-086`, con correccion adicional por revision visual del usuario: las cards seguian generando escenarios especificos y elementos repetidos como lamparas, paredes, panuelos/telas y setups de estudio.
+
+Cambio de prompt:
+
+- `SP02-081..120` pasan a lenguaje `style specimen` / `flat sticker/poster icon`;
+- fondo requerido: full-bleed graphic color/texture field;
+- se bloquea construccion de escena: rooms, walls, wall-floor seams, floors, cast shadows, horizon lines, corners, windows, lamps, lighting fixtures, chairs, stools, curtains, fabric drops, handkerchiefs, cloth props, shelves, desks, cameras, phones, market aisles, fantasy halls, long corridors, readable signs, flags, logos, real politicians, celebrity identities y realistic adult model photography;
+- objetivo: que line shape, exaggeration, color, marker, collage o animation texture carguen el preset, no la escenografia.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-085` / `Liquid Melt Caricature` (`479190` bytes): pasa para el error reportado; no hay lampara/prop/escenario real, queda melt sobre campo grafico abstracto.
+- `SP02-086` / `Ugly-Cute Creature` (`348770` bytes): pasa; fondo grafico, sin pared/sala/lampara/props repetidos.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-085|SP02-086" --parallel=2 --session-suffix=quality_no_scene_p02 --force`
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-086" --parallel=1 --session-suffix=quality_sticker_icon_p02 --force`
+
+Lectura de riesgo:
+
+- no se avanza nueva tanda hasta que el generador no conserve esta regla no-scene;
+- se removieron `SP02-085/086` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-087|SP02-088`, con inspeccion estricta de fondo full-bleed y cero props repetidos.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_aq`
+
+Continuacion 2x2 sobre `SP02-087|SP02-088`. Primer intento expuso dos problemas utiles: `SP02-087` cayo en `needs_review` y `SP02-088` genero un monstruo literal con contacto/sombra. Se ajusto el prompt generator sin tocar YAML:
+
+- `SP02-081..120` ahora fuerzan slots planos para `HERO`, `ENVIRONMENT`, `COMPOSITION`, `MATERIAL`, `LIGHTING`, `DETAIL`, `FEELING`, `CAMERA FOCUS` y `ACTION`;
+- los anchors de estos IDs usan la familia cartoon/media aunque la taxonomy legacy siga en `cinematic-lighting-and-lenses`;
+- `SP02-087` usa label seguro `RUBBER-HOSE ELASTIC MOTION`;
+- `SP02-088` usa label seguro `CRUDE CRAYON MARK-MAKING`;
+- ambos evitan character/body/person/object literal y priorizan marcas graficas abstractas full-bleed.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-087` / `Rubber-Hose Insanity` (`493450` bytes): pasa; lineas elasticas abstractas, sin personaje, pared, piso, lampara, tela, prop ni escena.
+- `SP02-088` / `Crude Crayon Monster` (`504362` bytes): pasa; cluster abstracto de crayon, sin monstruo literal, piso, sombra, pared, lampara ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-087|SP02-088" --parallel=2 --session-suffix=quality_no_scene_p02_next --force` -> `SP02-087` fallo `needs_review`, `SP02-088` genero pero fue rechazado por literalizacion visual.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-087|SP02-088" --parallel=2 --session-suffix=quality_no_scene_p02_abstract2 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- el bloque `SP02-089..096` sigue teniendo alto riesgo semantico por nombres/briefs con cuerpo, oficina, lampara, cueva, family portrait, comic-strip y skateboard;
+- se removieron `SP02-087/088` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-089|SP02-090`, con el mismo modo abstracto no-scene y revision especial de literalizacion corporal.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ar`
+
+Continuacion 2x2 sobre `SP02-089|SP02-090`. Antes de generar se endurecio el prompt para evitar que nombres/briefs con body-horror o actitud edgy se convirtieran en cuerpo, personaje, skateboard, escena o props.
+
+Cambio de prompt:
+
+- `SP02-089` usa label seguro `GROTESQUE CARTOON MATERIAL TEXTURE`;
+- `SP02-090` usa label seguro `SPIKY ANGULAR CARTOON GRAPHICS`;
+- `SP02-089` reemplaza Style DNA peligrosa por materialidad abstracta no grafica: translucent wrapping, fiber-like linework, mesh cells, wet ink sheen y surgical color como patron, no anatomia;
+- `SP02-090` reemplaza Style DNA literal por shards/triangles/hatching/zine texture, no personaje ni escena.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-089` / `Grotesque Meat Puppet` (`521520` bytes): primer intento fue rechazado por silueta organica tipo cuerpo/animal; segundo intento pasa como ribbons/mesh abstracto sobre fondo plano, sin cuerpo, animal, pared, piso, lampara, tela ni prop.
+- `SP02-090` / `Spiky Edgy Attitude Cartoon` (`375704` bytes): pasa; triangulos y shards abstractos, sin personaje, skateboard, calle, pared, piso, lampara ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-089|SP02-090" --parallel=2 --session-suffix=quality_no_scene_p02_abstract3 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero `SP02-089` se rechazo visualmente.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-089" --parallel=1 --session-suffix=quality_no_body_shape_p02 --force` -> `generated=1 attempted=1 skipped=127 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-091|092` tienen riesgo alto de whiteboard/oficina y desk-lamp/still-life literal;
+- se removieron `SP02-089/090` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-091|SP02-092`, con override abstracto no-room/no-lamp/no-desk.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_as`
+
+Continuacion 2x2 sobre `SP02-091|SP02-092`. Antes de generar se agregaron labels y Style DNA seguros para evitar que `Office Whiteboard Doodle` y `Crumpled-Paper Scribble` se conviertan en oficina, marco de whiteboard, lampara de escritorio, mesa o still-life.
+
+Cambio de prompt:
+
+- `SP02-091` usa label seguro `DRY-ERASE ABSTRACT MARKS`;
+- `SP02-092` usa label seguro `CRUMPLED PAPER ABSTRACT TEXTURE`;
+- `SP02-091` fuerza marcas dry-erase abstractas sobre campo blanco full-bleed, sin board frame, office, meeting room, wall, fluorescent light, readable text, business diagram, stick figure, desk ni marker objects;
+- `SP02-092` fuerza paper damage/crease fields full-bleed, sin desk lamp, tabletop, coffee cup, notebook, trash scene, literal sketch subject, room, wall, floor ni cast shadow.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-091` / `Office Whiteboard Doodle` (`369048` bytes): pasa; marcas dry-erase abstractas, sin oficina, board frame, pared, texto legible, lampara ni props.
+- `SP02-092` / `Crumpled-Paper Scribble` (`618556` bytes): pasa; textura de papel arrugado full-bleed, sin lampara de escritorio, mesa, taza, habitacion, pared, piso ni still-life.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-091|SP02-092" --parallel=2 --session-suffix=quality_no_scene_p02_abstract4 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-093|094` tienen riesgo alto de cave/wall/torch y family/house/sky-ground literal;
+- se removieron `SP02-091/092` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-093|SP02-094`, con override abstracto no-cave/no-wall/no-family/no-house.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_at`
+
+Continuacion 2x2 sobre `SP02-093|SP02-094`. Antes de generar se agregaron labels y Style DNA seguros para evitar cueva/pared/torch/animal y family/house/sky-ground. La primera generacion corrigio esas escenas, pero ambos resultados cayeron en siluetas tipo camara/proyector/lente; se rechazo y se agrego un bloqueo especifico anti-camera/lens/projector/device.
+
+Cambio de prompt:
+
+- `SP02-093` usa label seguro `OCHRE MINERAL ABSTRACT MARKS`;
+- `SP02-094` usa label seguro `KINDERGARTEN CRAYON GEOMETRY`;
+- `SP02-093` fuerza ochre pigment strokes, charcoal scuffs, mineral speckles y stencil-like shapes sin cave wall, torch, flame, animal, handprint, camera, lens ni projector;
+- `SP02-094` fuerza crayon geometry abstracta con circulos separados, square/triangle fragments y lollipop dots sin family members, house, sun corner, sky/ground stripes, camera, projector, lens ni robot-face.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-093` / `Prehistoric Cave Painting` (`568768` bytes): primer intento rechazado por forma tipo camara/lente; segundo intento pasa como mineral abstracto, sin cueva, torch, animal, handprint, camara, pared, piso ni escena.
+- `SP02-094` / `Kindergarten Family Portrait` (`460538` bytes): primer intento rechazado por forma tipo camara/proyector; segundo intento pasa como geometria crayon abstracta, sin familia, casa, sun/sky/ground scene, camara, pared, piso ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-093|SP02-094" --parallel=2 --session-suffix=quality_no_scene_p02_abstract5 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero ambos fueron rechazados visualmente por forma tipo camara/proyector.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-093|SP02-094" --parallel=2 --session-suffix=quality_no_camera_shapes_p02 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-095|096` tienen riesgo alto de comic-strip/model-sheet y skateboard/deck literal;
+- se removieron `SP02-093/094` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-095|SP02-096`, con override abstracto no-comic-panel/no-character/no-skateboard.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_au`
+
+Continuacion 2x2 sobre `SP02-095|SP02-096`. Antes de generar se agregaron labels y Style DNA seguros para evitar comic panels/personajes/texto y skateboard/deck/wheels/skull/monster. La primera generacion evito esos literales, pero `SP02-095` cayo en forma tipo ojo/lente y `SP02-096` en camara/proyector; se rechazo y se agrego bloqueo anti-device/circular-lens.
+
+Cambio de prompt:
+
+- `SP02-095` usa label seguro `NEWSPRINT HALFTONE ABSTRACT PRINT`;
+- `SP02-096` usa label seguro `PUNK SCREENPRINT ABSTRACT GRAPHICS`;
+- `SP02-095` fuerza halftone fields, Ben-Day dots, off-register CMYK, ink smudge y pulp texture sin panels, characters, speech balloons, readable text, eye/lens/camera/device;
+- `SP02-096` fuerza punk screenprint shards, slime-like abstract drips, neon splatter y overprint texture sin skateboard, deck, wheels, skull, monster, typography, camera, projector ni device silhouette.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-095` / `Newspaper Sunday Funnies` (`728854` bytes): primer intento rechazado por forma ojo/lente; segundo intento pasa como halftone abstracto, sin panel, personaje, texto, camara, pared, piso ni escena.
+- `SP02-096` / `Skateboard Deck Graphic` (`301176` bytes): primer intento rechazado por camara/proyector literal; segundo intento pasa como screenprint punk abstracto, sin skateboard/deck/wheels/camara/skull/monster, pared, piso ni escena.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-095|SP02-096" --parallel=2 --session-suffix=quality_no_scene_p02_abstract6 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero ambos fueron rechazados visualmente por forma lens/device.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-095|SP02-096" --parallel=2 --session-suffix=quality_no_device_shapes_p02 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-097|098` mantienen riesgo por collage/photo-booth o parody/persona literal segun manifests;
+- se removieron `SP02-095/096` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-097|SP02-098`, con override abstracto no-person/no-photo-booth/no-parody-target.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_av`
+
+Continuacion 2x2 sobre `SP02-097|SP02-098`. Antes de generar se agregaron labels y Style DNA seguros para evitar mascota/personaje/logo/product shot y blueprint/napkin/bar/table literal. `SP02-098` primer intento cayo en radial/circular schematic; se rechazo y se agrego bloqueo anti-radial/anti-circular blueprint.
+
+Cambio de prompt:
+
+- `SP02-097` usa label seguro `UNCANNY CORPORATE VECTOR ABSTRACT`;
+- `SP02-098` usa label seguro `NAPKIN BALLPOINT ABSTRACT MARKS`;
+- `SP02-097` fuerza vector/plastic abstract polish sin mascot body, character, eyes, smile, thumbs-up, costume, person, logo, brand mark ni product photo;
+- `SP02-098` fuerza ballpoint marks, absorbent napkin texture, folds, stains y ink skips sin readable text, blueprint plan, invention, bar, cocktail, glass, table, device, circular blueprint ni radial schematic.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-097` / `Rejected Corporate Mascot` (`215610` bytes): pasa; vector abstracto, sin mascota, ojos, sonrisa, persona, logo, producto, pared, piso ni escena.
+- `SP02-098` / `Napkin Scribble Blueprint` (`608760` bytes): primer intento rechazado por esquema circular/radial; segundo intento pasa como napkin/ballpoint abstracto, sin texto, blueprint circular, bar, mesa, device, pared, piso ni escena.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-097|SP02-098" --parallel=2 --session-suffix=quality_no_scene_p02_abstract7 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero `SP02-098` fue rechazado visualmente por circular schematic.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-098" --parallel=1 --session-suffix=quality_no_circular_schematic_p02 --force` -> `generated=1 attempted=1 skipped=127 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-099|100` siguen dentro del bloque cartoon/media y deben mantener no-scene/no-person/no-device; revisar YAML antes de generar;
+- se removieron `SP02-097/098` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-099|SP02-100`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_aw`
+
+Continuacion 2x2 sobre `SP02-099|SP02-100`. Antes de generar se agregaron labels y Style DNA seguros para evitar zine/book/desk/scissors/hands y flipbook/desk/lamp/animator-table/personaje. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-099` usa label seguro `PUNK ZINE ABSTRACT COLLAGE`;
+- `SP02-100` usa label seguro `FLIPBOOK ROUGH MOTION MARKS`;
+- `SP02-099` fuerza torn xerox blocks, tape-like strips, photocopy smears, neon overprint y jagged collage edges sin magazine/booklet, table, desk, scissors, hands, readable text, face, body, wall, room ni device;
+- `SP02-100` fuerza pencil-test jitter, onion-skin ghosts, registration offsets, page-edge rhythm y timing arcs sin flipbook, hand, desk, lamp, animator table, character, face, body, camera, projector ni room.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-099` / `Punk Zine Cut-and-Paste` (`819004` bytes): pasa; collage abstracto full-bleed, sin texto legible, mesa, manos, revista literal, pared, piso ni escena.
+- `SP02-100` / `Flipbook Rough Animation` (`528152` bytes): pasa; motion marks y pencil ghosts abstractos, sin libro, mano, escritorio, lampara, personaje, camara, pared, piso ni estudio.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-099|SP02-100" --parallel=2 --session-suffix=quality_no_scene_p02_abstract8 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-099.webp` y `assets/recipes/styles/defaults/SP02-100.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-101|102` mantienen riesgo alto por grossout/literal sensory room; preparar overrides no-body/no-room/no-prop antes de generar;
+- se removieron `SP02-099/100` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-101|SP02-102`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ax`
+
+Continuacion 2x2 sobre `SP02-101|SP02-102`. Antes de generar se agregaron labels y Style DNA seguros para evitar anatomia/gore/cara y workplace/oficina/personaje. `SP02-102` primer intento leyo demasiado como perfil/cara; se rechazo y se agrego bloqueo anti-profile/eye/mouth/head-like silhouette.
+
+Cambio de prompt:
+
+- `SP02-101` usa label seguro `GROSSOUT MATERIAL ABSTRACT`;
+- `SP02-102` usa label seguro `FLAT WEIRD COMEDY ABSTRACT`;
+- `SP02-101` fuerza swollen paint blobs, pore-like dots, wet sheen y greasy texture sin face, mouth, teeth, gums, tongue, nose, eye, skin, body, creature, wound, gore, room ni device;
+- `SP02-102` fuerza sour pastel blocks, thin awkward contours, tiny panic scribbles y cheap digital fills sin office, cubicle, hallway, desk, chair, lamp, wall-floor seam, worker, character, smiling face, profile, eye dot ni mouth notch.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-101` / `Ren & Stimpy - Veiny Close-Up Grossout` (`524792` bytes): pasa; blob/material grossout abstracto, sin cuerpo, cara, gore, anatomia, pared, piso ni escena.
+- `SP02-102` / `Smiling Friends - Flat Weird Dayjob Chaos` (`230086` bytes): primer intento rechazado por perfil/cara abstracta; segundo intento pasa como shapes separados, sin oficina, personaje, cara, mesa, lampara, pared, piso ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-101|SP02-102" --parallel=2 --session-suffix=quality_no_scene_p02_abstract9 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero `SP02-102` fue rechazado visualmente por profile/face-like silhouette.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-102" --parallel=1 --session-suffix=quality_no_face_profile_p02 --force` -> `generated=1 attempted=1 skipped=127 failed=0 packs=pack_02`.
+
+Lectura de riesgo:
+
+- `SP02-103|104` mantienen riesgo por sewer/monster/kid y vaporwave mall/arcade/literal environment; preparar overrides abstractos no-location/no-creature/no-prop antes de generar;
+- se removieron `SP02-101/102` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-103|SP02-104`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ay`
+
+Continuacion 2x2 sobre `SP02-103|SP02-104`. Antes de generar se agregaron labels y Style DNA seguros para evitar sewer/monster/kid y toddler/home/toy/room literal. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-103` usa label seguro `SLIME-GRIME ABSTRACT CARTOON`;
+- `SP02-104` usa label seguro `TODDLER-SCALE CRAYON ABSTRACT`;
+- `SP02-103` fuerza lumpy asymmetrical blobs, sewer-water teal, slime green, pitted grime dots, rubbery curves y grate-like stripe fragments sin monster, child, creature, eyes, teeth, claws, body, sewer tunnel, junkyard, brick wall, trash bag, room, corridor ni device;
+- `SP02-104` fuerza oversized soft pastel shapes, chunky uneven outlines, low-scale wobble marks y nervous marker curves sin toddler, child, diaper, toy, crib, nursery, home, carpeted room, furniture, lamp, wall-floor seam, prop, character ni face.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-103` / `Aaahh!!! Real Monsters - Sewer Kid Grotesque` (`643228` bytes): pasa; slime/grime abstracto full-bleed, sin monstruo, criatura, sewer, pared, piso, pasillo ni props.
+- `SP02-104` / `Rugrats - Toddler Crayon Panic` (`347136` bytes): pasa; crayon/pastel abstracto, sin toddler, toy, cuarto, furniture, pared, piso ni escena domestica.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-103|SP02-104" --parallel=2 --session-suffix=quality_no_scene_p02_abstract10 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-103.webp` y `assets/recipes/styles/defaults/SP02-104.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-105|106` mantienen riesgo por jawbreaker/candy/scam literal y couch/family/living-room scene; preparar overrides abstractos no-candy/no-room/no-character antes de generar;
+- se removieron `SP02-103/104` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-105|SP02-106`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_az`
+
+Continuacion 2x2 sobre `SP02-105|SP02-106`. Antes de generar se agregaron labels y Style DNA seguros para evitar jawbreaker/candy/scam/gadget literal y suburb/room/furniture/consumer-product literal. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-105` usa label seguro `BOILING-LINE SCAM ABSTRACT`;
+- `SP02-106` usa label seguro `BEIGE ANXIETY ABSTRACT`;
+- `SP02-105` fuerza vibrating contours, stretched smear shapes, sticky summer yellows, candy-red color as flat block y rough pencil boil sin jawbreaker, candy, gadget, scheme board, map, money, character, suburban street, room ni device;
+- `SP02-106` fuerza pastel discomfort, noodle panic marks, awkward consumer-like curves, wallpaper-cream flat fields, dusty teal y tired salmon blocks sin suburb, house, living room, couch, appliance, furniture, brand label, readable text, room, wall-floor seam ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-105` / `Ed, Edd n Eddy - Jawbreaker Scam Cartoon` (`571090` bytes): pasa; boiling-line abstracto, sin candy/jawbreaker/gadget/personaje/escena.
+- `SP02-106` / `Rocko's Modern Life - Beige Suburban Anxiety` (`371404` bytes): pasa; beige anxious shapes abstractas, sin suburbio, interior, furniture, brand, pared, piso ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-105|SP02-106" --parallel=2 --session-suffix=quality_no_scene_p02_abstract11 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-105.webp` y `assets/recipes/styles/defaults/SP02-106.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-107|108` mantienen riesgo por rural/nightmare/house/field y sci-fi/horror/invader/room literal; preparar overrides abstractos no-location/no-creature/no-house antes de generar;
+- se removieron `SP02-105/106` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-107|SP02-108`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_ba`
+
+Continuacion 2x2 sobre `SP02-107|SP02-108`. Antes de generar se agregaron labels y Style DNA seguros para evitar farmhouse/field/road/pet/intruder literal y cow/chicken/animal/mouth/limbs/hallway literal. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-107` usa label seguro `RURAL NIGHTMARE PASTEL ABSTRACT`;
+- `SP02-108` usa label seguro `LOUD PRIMARY ABSTRACT DERANGEMENT`;
+- `SP02-107` fuerza dusty empty-space fields, tiny panic marks, moonlit blue blocks, alarm-red insert shapes y dry pastel grain sin farmhouse, field, road, barn, pet, intruder, character, house silhouette, room, horizon ni device;
+- `SP02-108` fuerza shouting red/yellow/blue blocks, thick crude contours, jagged comic bursts, rubbery scale mismatch y cheap poster-white gaps sin cow, chicken, animal, sibling, mouth, teeth, tongue, limbs, body, hallway, room, furniture ni prop.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-107` / `Courage the Cowardly Dog - Rural Nightmare Pastel` (`509658` bytes): pasa; pastel nightmare abstracto, sin farmhouse, field, road, house, horizon, personaje ni escena rural.
+- `SP02-108` / `Cow and Chicken - Loud Primary Derangement` (`307654` bytes): pasa; primary-color abstracto, sin animal, cuerpo, boca, limbs, hallway, room ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-107|SP02-108" --parallel=2 --session-suffix=quality_no_scene_p02_abstract12 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-107.webp` y `assets/recipes/styles/defaults/SP02-108.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-109|110` mantienen riesgo por shared-body/cat-dog/limbs y nickelodeon splat/logo/prop literal; preparar overrides abstractos no-animal/no-body/no-logo antes de generar;
+- se removieron `SP02-107/108` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-109|SP02-110`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_bb`
+
+Continuacion 2x2 sobre `SP02-109|SP02-110`. Antes de generar se agregaron labels y Style DNA seguros para evitar cat/dog/shared-body/anatomy literal y sponge/undersea/face/body/gross anatomy literal. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-109` usa label seguro `SHARED-FORM ELASTIC ABSTRACT`;
+- `SP02-110` usa label seguro `GROSS-UP TEXTURE ABSTRACT`;
+- `SP02-109` fuerza one long ribbon-like shape, two opposing color states, accordion compression y soft squash curves sin cat, dog, animal, creature, head, face, eyes, mouth, limbs, body, shared anatomy, lawn, room ni prop;
+- `SP02-110` fuerza cheerful flat yellow-blue blocks interrupted by pore-like dots, wet gloss, sickly pink accents, greasy beige folds y macro texture patch sin sponge, undersea prop, face, eyes, mouth, teeth, tongue, skin, body, creature, gore, room ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-109` / `CatDog - Shared-Body Elastic Nonsense` (`492484` bytes): pasa; elastic ribbon abstracto, sin cat/dog, animal, body, anatomy, face, room ni props.
+- `SP02-110` / `SpongeBob Gross-Up Freeze Frame` (`371042` bytes): pasa; gross-up texture abstracta, sin sponge, face, body, anatomy, undersea props ni escena.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-109|SP02-110" --parallel=2 --session-suffix=quality_no_scene_p02_abstract13 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-109.webp` y `assets/recipes/styles/defaults/SP02-110.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-111|112` mantienen riesgo por couch/slouch/living-room y office/cubicle/desk/person literal; preparar overrides abstractos no-room/no-furniture/no-prop antes de generar;
+- se removieron `SP02-109/110` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-111|SP02-112`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_bc`
+
+Continuacion 2x2 sobre `SP02-111|SP02-112`. Antes de generar se agregaron labels y Style DNA seguros para evitar couch/chair/person/interior/profile/body y office/cubicle/desk/paperwork/chair/person/room/text. Ambos resultados pasaron primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-111` usa label seguro `SLOUCH GEOMETRY ABSTRACT`;
+- `SP02-112` usa label seguro `OFFICE-BOREDOM GEOMETRY ABSTRACT`;
+- `SP02-111` fuerza sagging jagged contour blocks, cheap TV beige, nicotine yellow, washed denim blue y cathode-green accents sin couch, chair, teen, person, face, profile, neck, body, room, interior, fabric, lamp, camera ni device;
+- `SP02-112` fuerza dry beige blocks, copy-paper white fields, muted toner-black lines y boxy rhythm sin office, cubicle, desk, paperwork, tie, face, person, body, chair, carpet, fluorescent fixture, room, wall-floor seam, logo, readable text, camera ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-111` / `Beavis and Butt-Head - Dumb Couch Slouch` (`310580` bytes): pasa; slouch geometry abstracta, sin couch, silla, persona, profile/body, room/interior/fabric/props.
+- `SP02-112` / `Mike Judge Office Boredom Sketch` (`274662` bytes): pasa; beige geometry abstracta, sin office/cubicle/desk/paperwork/chair/person/room/text.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-111|SP02-112" --parallel=2 --session-suffix=quality_no_scene_p02_abstract14 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-111.webp` y `assets/recipes/styles/defaults/SP02-112.webp` -> ambos aceptados.
+
+Follow-up por nueva revision visual:
+
+- causa raiz detectada: `CATEGORY_BASE_PROMPTS`, `CATEGORY_SCENE_ANCHORS` y `GENERIC_SCENE_ANCHORS` todavia inyectaban escenas concretas como studio cyclorama, stools, fabric drops, walls, lamps, corridors, market/library-like spaces y props repetidos;
+- se reemplazan anchors genericos peligrosos por campos no-place/material/optical, y se agrega `REPEATED-SCENE GUARDRAILS` para `pack_02`;
+- hard ban activo para siguientes generaciones `pack_02`: no lamps/lamp shades, walls/wall-floor seams, curtains, chairs/stools, handkerchiefs/cloth props, shelves, market/library aisles, fantasy halls, cameras/phones/tripods, desks/paperwork, windows, studio cyclorama, portrait-session setup ni objetos decorativos repetidos, salvo que el preset explicitamente requiera ese objeto como sujeto;
+- los IDs ya aceptados antes de este ajuste pueden necesitar segunda auditoria visual si el usuario detecta props especificos persistentes.
+
+Lectura de riesgo:
+
+- `SP02-113|114` mantienen riesgo por suburb/family/house/body y therapy/couch/person/office literal; preparar overrides abstractos no-family/no-suburb/no-room/no-furniture/no-person antes de generar;
+- se removieron `SP02-111/112` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-113|SP02-114`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_bd`
+
+Continuacion 2x2 sobre `SP02-113|SP02-114`. Antes de generar se agregaron labels y Style DNA seguros para evitar familia/suburbio/casa/cuerpo y terapia/couch/consultorio/personas. `SP02-114` primer intento cayo en ovalo central tipo cara/boca; se rechazo y se agrego bloqueo anti-face/anti-mouth/anti-head-like.
+
+Cambio de prompt:
+
+- `SP02-113` usa label seguro `TOXIC SUBURB COLOR ABSTRACTION`;
+- `SP02-114` usa label seguro `SQUIGGLEVISION LINE-BOIL ABSTRACT`;
+- `SP02-113` fuerza lopsided polluted color fields, malformed contour fragments, grime speckles, cheap tan y landfill green blocks sin family, person, body, face, suburb, house, trailer, yard, fence, street, trash pile, smokestack, room, wall, lamp, camera ni device;
+- `SP02-114` fuerza separated trembling contour loops, muted beige/teal/salmon fields, anxious line boil y low-action empty spacing sin therapist, patient, person, face, head, portrait oval, mouth-like center, eye-like mark, couch, chair, office, therapy room, desk, wall, lamp, window, microphone, stage, camera ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-113` / `The Oblongs - Toxic Suburb Family` (`582652` bytes): pasa; toxic-suburb abstracto, sin familia, cuerpo, casa, suburbio, trash pile, pared, lampara ni escena.
+- `SP02-114` / `Dr. Katz - Squigglevision Therapy Doodle` (`477292` bytes): primer intento rechazado por forma central face/mouth-like; segundo intento pasa con squiggle clusters separados, sin persona, cara, consultorio, couch, lampara, pared ni props.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-113|SP02-114" --parallel=2 --session-suffix=quality_no_scene_p02_abstract15 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero `SP02-114` fue rechazado visualmente por face/mouth-like center.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-114" --parallel=1 --session-suffix=quality_no_face_oval_p02 --force` -> `generated=1 attempted=1 skipped=127 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-113.webp` y `assets/recipes/styles/defaults/SP02-114.webp` -> ambos aceptados tras reintento de `SP02-114`.
+
+Lectura de riesgo:
+
+- `SP02-115|116` mantienen riesgo por kids/school/suburban room/poses y notebook/school/kid/prop/social-scene literal; preparar overrides abstractos no-person/no-room/no-school/no-notebook-object antes de generar;
+- se removieron `SP02-113/114` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-115|SP02-116`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_be`
+
+Continuacion 2x2 sobre `SP02-115|SP02-116`. Antes de generar se agregaron labels y Style DNA seguros para evitar kids/school/suburban room/poses y notebook/school/person/prop/social scene. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-115` usa label seguro `MARKER-EDGE SITCOM ABSTRACT`;
+- `SP02-116` usa label seguro `NOTEBOOK ANXIETY MARKS ABSTRACT`;
+- `SP02-115` fuerza dry felt-tip contour fragments, awkward pause spacing, school-paper beige fields y muted primary marker blocks sin kid, person, face, pose, school project, suburban room, couch, chair, desk, wall, lamp, notebook, camera, phone ni device;
+- `SP02-116` fuerza soft marker fields, margin-like drift lines, diary-doodle contours y teal/purple/peach blocks sin notebook object, page, school, neighborhood, kid, person, face, body, desk, pencil, prop, social scene, wall, lamp, camera ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-115` / `Home Movies - Marker-Edge Improvised Sitcom` (`360886` bytes): pasa; marker shapes abstractos, sin persona/kid/cuarto/desk/lampara/device.
+- `SP02-116` / `Doug Notebook Anxiety Cartoon` (`413470` bytes): pasa; notebook-anxiety marks abstractos, sin notebook literal, school, persona, desk, wall ni device.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-115|SP02-116" --parallel=2 --session-suffix=quality_no_scene_p02_abstract16 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-115.webp` y `assets/recipes/styles/defaults/SP02-116.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `SP02-117|118` mantienen riesgo por face/body/collage cutout literal y trading-card/sticker/kid/body/gross-scene literal; preparar overrides abstractos no-face/no-body/no-card-object/no-sticker-object antes de generar;
+- se removieron `SP02-115/116` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-117|SP02-118`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_bf`
+
+Continuacion 2x2 sobre `SP02-117|SP02-118`. Antes de generar se agregaron labels y Style DNA seguros para evitar face/body/person/photo-cutout literal y kid/body/trading-card/sticker/product literal. `SP02-118` primer intento cayo en sticker die-cut por borde blanco/negro; se rechazo y se agrego bloqueo anti-sticker-outline/anti-product-silhouette.
+
+Cambio de prompt:
+
+- `SP02-117` usa label seguro `PHOTO-CUTOUT XEROX ABSTRACT`;
+- `SP02-118` usa label seguro `GARBAGE-PAIL STICKER ABSTRACT`;
+- `SP02-117` fuerza xerox black-white fragments, scissor-cut edges, mismatched paste-up seams y dirty grey toner shadows sin face, head, body, person, schoolyard, yearbook, revenge scene, paper doll, puppet, room, wall, desk, camera, phone ni device;
+- `SP02-118` fuerza sticker-card primaries as color fields, separated goo-like abstract drips, swollen defect marks y cheap halftone edges sin kid, body, face, mouth, teeth, skin, bodily-function scene, trading-card border, readable text, sticker object, die-cut sticker outline, white product outline, single central product silhouette, room, camera ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-117` / `Angela Anaconda Photo-Cutout Menace` (`642046` bytes): pasa; xerox fragments abstractos, sin face/body/person/room/device.
+- `SP02-118` / `Crash Zoom Garbage Pail Caricature` (`602960` bytes): primer intento rechazado por sticker die-cut; segundo intento pasa con drips separados, sin sticker unico/product/card/persona/body/room/device.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-117|SP02-118" --parallel=2 --session-suffix=quality_no_scene_p02_abstract17 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`, pero `SP02-118` fue rechazado visualmente por die-cut sticker outline.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-118" --parallel=1 --session-suffix=quality_no_sticker_outline_p02 --force` -> `generated=1 attempted=1 skipped=127 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-117.webp` y `assets/recipes/styles/defaults/SP02-118.webp` -> ambos aceptados tras reintento de `SP02-118`.
+
+Lectura de riesgo:
+
+- `SP02-119|120` mantienen riesgo por pool/monster/creature/body y classroom/student/desk/page/text literal; preparar overrides abstractos no-pool/no-monster/no-classroom/no-text/no-object antes de generar;
+- se removieron `SP02-117/118` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP02-119|SP02-120`.
+
+## Tanda 2026-06-16 - `pack_02` visual stale refresh ola `stale_p02_bg`
+
+Continuacion 2x2 sobre `SP02-119|SP02-120`. Antes de generar se agregaron labels y Style DNA seguros para evitar pool/monster/creature/body y classroom/student/desk/page/text literal. Ambos resultados pasaron en primera inspeccion visual.
+
+Cambio de prompt:
+
+- `SP02-119` usa label seguro `CHLORINE SLIME DOODLE ABSTRACT`;
+- `SP02-120` usa label seguro `TOXIC MARKER FREAKOUT ABSTRACT`;
+- `SP02-119` fuerza chlorine green slime marks, wet turquoise blobs, sticky yellow heat bands y crooked marker curves sin pool, monster, creature, body, face, eyes, mouth, teeth, diving board, flip-flop object, summer prop, room, wall, camera ni device;
+- `SP02-120` fuerza permanent-marker scratches, malformed margin contours, red correction slashes y highlighter yellow blocks sin classroom, student, desk, page, notebook object, lesson, monster, body, face, readable rude text, symbol words, room, wall, lamp, camera ni device.
+
+Presets regenerados e inspeccionados:
+
+- `SP02-119` / `Public Pool Mucus Monster Doodle` (`434632` bytes): pasa; slime abstracto, sin pool, monster, body, props ni device.
+- `SP02-120` / `Toxic Marker Classroom Freakout` (`605504` bytes): pasa; marker abstracto, sin classroom, student, desk, page, text ni device.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-119|SP02-120" --parallel=2 --session-suffix=quality_no_scene_p02_abstract18 --force` -> `generated=2 attempted=2 skipped=126 failed=0 packs=pack_02`.
+- Inspeccion visual manual de `assets/recipes/styles/defaults/SP02-119.webp` y `assets/recipes/styles/defaults/SP02-120.webp` -> ambos aceptados.
+
+Lectura de riesgo:
+
+- `pack_02` queda listo para cierre operativo de stale tras runtime/coverage;
+- si aparecen quejas visuales nuevas, reauditar primero `SP02-098`, `SP02-091`, `SP02-119`, `SP02-120` por su historial de literalizacion;
+- proxima ola recomendada: tomar el primer pack/ID desde `lib/staleStyleDefaultImages.generated.ts` despues de refrescar runtime.
+
+## Tanda 2026-06-16 - `pack_03` visual stale refresh ola `stale_p03_aa`
+
+Continuacion 2x2 sobre `SP03-001|SP03-002`, entrando en territorio 3D/lookdev. Antes de cerrar la ronda se agrego base + anchors para `pack_03__lookdev_and_render_pipelines`: lookdev abstracto, full-bleed, sin showroom, pedestal, plataforma, piso, pared, wall-floor seam, galeria, room, persona, criatura, mundo completo, screenshot, UI, logo ni texto. Se agrego tambien bloqueo explicito contra lamparas, cortinas, panuelos/cloth props, camaras/lentes/devices y objetos hero repetidos.
+
+Cambio de prompt:
+
+- `pack_03__lookdev_and_render_pipelines` usa shader forms, material wedges, light probes, reflection planes, caustics, volumetric depth y geometry-density samples como sujeto abstracto.
+- `SP03-002` recibio guardrail ID-scoped por su historial de literalizacion: no camera, lens, aperture, device, fabric/cloth/chain, humanoid/alien/creature, face/head/eye/hand/fingers/body/armor, orb/sphere/circular central object, pedestal/floor/wall/room/showroom/screenshot/UI/text.
+- La direccion nueva trata nombres de motores como tecnologia de render, no como hardware, escena, prop, personaje o interfaz literal.
+
+Presets regenerados e inspeccionados:
+
+- `SP03-001` / `Octane Spectral GPU Path Tracer` (`195076` bytes): pasa; specimen espectral/material/lookdev, sin persona, texto, logo ni producto reconocible.
+- `SP03-002` / `Unreal Engine 5 Next-Gen Real-Time Engine` (`213140` bytes): intentos rechazados por showroom/pedestal, lente/device/fabric, humanoid/hand y orb/lens/device; resultado final pasa como paneles abstractos de densidad Nanite-like, sin lente/device/persona/UI/text.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-001|SP03-002" --parallel=2 --session-suffix=quality_p03_lookdev_no_scene_a --force` -> `generated=2 attempted=2 skipped=78 failed=0 packs=pack_03`; `SP03-002` rechazado visualmente por showroom/pedestal.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-002" --parallel=1 --session-suffix=quality_p03_no_showroom_pedestal --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; rechazado por lens/device/fabric.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-002" --parallel=1 --session-suffix=quality_p03_no_lens_device_fabric --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; rechazado por humanoid/hand.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-002" --parallel=1 --session-suffix=quality_p03_tiles_only_no_character --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; rechazado por orb/lens/device.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-002" --parallel=1 --session-suffix=quality_p03_tiles_no_circular_object --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- `SP03-003|SP03-004` siguen en la misma zona render/lookdev; preparar no-device/no-product/no-showroom/no-ui/no-wall/no-cloth antes de generar.
+- se removieron `SP03-001/002` de la tabla activa de stale para refrescar runtime;
+- proxima ola visual sugerida: `SP03-003|SP03-004`.
+
+## Correccion 2026-06-16 - replanteo de cards `pack_03`
+
+Revision de usuario: la correccion anti-escena se fue demasiado lejos y produjo cards demasiado abstractas, menos representativas que el estado anterior. Se pausa generacion nueva hasta que la UI pueda mostrar varias imagenes por preset y hasta que el prompt vuelva a permitir sujetos representativos.
+
+Cambio aplicado:
+
+- `components/recipes/StylesRecipe.tsx` ahora arma un carousel interno por card cuando hay mas de una imagen disponible para el preset.
+- Las fuentes actuales del carousel son: imagenes generadas para ese preset, variants revisables, default card exacta y preview fallback si no hay otra fuente. Si la primaria esta stale, las variants se muestran antes que la primaria vieja.
+- Las flechas laterales aparecen dentro de la card de forma visible; el contador inferior/top muestra posicion.
+- `scripts/generate-style-defaults.ts` deja de pedir `abstract only` para `pack_03__lookdev_and_render_pipelines`.
+
+Nueva regla visual:
+
+- Evitar scene drift repetido sigue siendo obligatorio: lamparas, paredes, wall-floor seams, cortinas, panuelos/cloth props, showrooms, camaras/lentes/devices, UI, screenshots, logos y texto legible son problema cuando se vuelven formula repetida, no porque esten absolutamente prohibidos.
+- Pero cada card debe ser representativa: puede y debe usar un sujeto original, character bust, creature/object fragment, material hero form o specimen 3D cuando eso haga leer mejor el preset.
+- La proxima generacion debe crear variantes mas representativas, no reemplazar todo por campos abstractos ni promover primarias sin revision visual.
+
+Evidencia:
+
+- Tras el replanteo, `SP03-003.webp` y `SP03-004.webp` volvieron a las primarias viejas (`2026-06-05 14:16:06`) y las nuevas lecturas quedan como `variants/SP03-003-01.webp` y `variants/SP03-004-01.webp`.
+- `bun run test -- lib/stylePresetVisuals.test.ts` -> `1 passed`, `6 passed`.
+- `bun run check -- components/recipes/StylesRecipe.tsx lib/stylePresetVisuals.ts lib/stylePresetVisuals.test.ts scripts/generate-style-defaults.ts` -> formato/lint/types OK.
+
+## Correccion 2026-06-16 - soporte multi-card por preset
+
+Se agrega soporte real para varias default-card images por preset antes de seguir generando.
+
+Cambio aplicado:
+
+- Convencion de archivo: `assets/recipes/styles/defaults/variants/<PRESET_ID>-NN.webp`.
+- `scripts/generate-style-runtime-data.ts` indexa variants y exporta `GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS`.
+- `lib/recipeAssetCatalog.ts` expone `resolveStyleDefaultImageVariants(presetId)`.
+- `components/recipes/StylesRecipe.tsx` agrega variants al carousel interno de cada card.
+- `scripts/generate-style-defaults.ts` acepta `--variant-slot=<1..99>`, `--variant-slots=1,2,3` y `--variant-count=<N>` para escribir variants sin reemplazar `<PRESET_ID>.webp` ni tocar `manifest-pack_*.json`.
+
+Uso recomendado:
+
+- Variante representativa 2x2: `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-005|SP03-006" --parallel=2 --variant-count=2 --force`
+- Variante dirigida: `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-005|SP03-006" --parallel=2 --variant-slots=3,4 --force`
+- Primaria estable: solo despues de revisar variants en UI y promover manualmente una imagen aceptada.
+- Despues de escribir variants: `bun run scripts/generate-style-runtime-data.ts` y `bun run scripts/generate-style-runtime-data.ts --check`.
+
+Regla de calidad:
+
+- Variants no son excusa para llenar carousel con ruido; cada variant debe representar otra lectura clara del preset.
+- Evitar extremos: ni escenario literal repetido con lamparas/paredes/cortinas/camaras, ni campo abstracto vacio que no explique el preset.
+- Regla de prompt nueva: `REPRESENTATION RULE` obliga a incluir un ancla legible cuando la categoria lo permita; abstracto si, vacio no.
+
+## Correccion 2026-06-16 - anti-repeticion, no prohibicion absoluta
+
+Revision de usuario: la tanda siguiente seguia demasiado abstracta. Diagnostico: el prompt interpretaba "evitar lamparas/paredes/camaras/etc." como hard-ban absoluto, cuando la regla real es evitar repeticion/formula.
+
+Cambio aplicado:
+
+- Se corto la generacion `quality_p03_representative_variant_cd`.
+- Parciales `SP03-006-01.webp` y `SP03-006-02.webp` se movieron a `.tmp/style-default-card-archive/rejected/` y no quedan en `assets/recipes/styles/defaults/variants/`.
+- `scripts/generate-style-defaults.ts` agrega `--print-prompts` / `--dry-run-prompts` para revisar prompts sin tocar server, jobs, manifests ni assets.
+- `scripts/generate-style-defaults.ts` agrega `CONSTRAINT SEMANTICS`: las listas `avoid/no` son anti-repeticion, no prohibiciones absolutas.
+- `pack_03__lookdev_and_render_pipelines` ahora permite sujeto, personaje, fragmento, specimen o entorno cuando ayudan al preset; solo bloquea el uso formulaico de esos elementos.
+- `SP03-005` recibe cue especifico de Blender Cycles: sujeto 3D/procedural material sculpture, Filmic rolloff, Principled BSDF, GI denoised, swatches fisicos no UI; desk/wall/lamp/room permitidos si apoyan Cycles.
+- `SP03-006` recibe cue especifico de V-Ray ArchViz: fragmento arquitectonico/interior corner/facade slice/material-rich room moment; furniture/walls/windows/lamps permitidos si apoyan ArchViz.
+- `pack_02` cartoon/media deja de usar `Hard ban` / `No environment`; permite entorno concreto si representa mejor el preset y no es filler repetido.
+
+Regla nueva:
+
+- Las cards deben ser representativas y con algo reconocible dentro cuando ayude al preset.
+- Pared, lampara, cortina, camara, corridor, shelf, room, persona u objeto pueden aparecer si son intencionales y especificos del preset.
+- Lo que no puede pasar: repetir siempre los mismos sets, props, pasillos, estudios o composiciones default.
+
+Smoke prompt:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-005|SP03-006" --variant-count=1 --session-suffix=prompt_review_p03_cd --print-prompts` -> `prompts=2 skipped=78 packs=pack_03`; confirma `CONSTRAINT SEMANTICS` y `REPRESENTATION RULE` sin generar imagenes.
+- Re-smoke despues de limpiar hard-bans: `SP03-005` y `SP03-006` ya no prohiben paredes/lamparas/rooms como absolutos; las permiten cuando son intencionales y especificas del preset.
+
+## Correccion 2026-06-16 - reset operativo tras retroceso visual
+
+Revision de usuario: las nuevas cards estaban retrocediendo frente a versiones anteriores porque la correccion anti-repeticion se convirtio en abstraccion excesiva. Se mantiene pausa de generacion hasta revisar prompts y ejemplos; no se promueven primarias nuevas.
+
+Cambio aplicado:
+
+- `scripts/generate-style-defaults.ts` agrega `VISUAL RESET` despues de Style DNA: cualquier frase previa tipo abstract-only/no-scene/no-object se reinterpreta como anti-cliche, no como prohibicion.
+- La card final debe tener un sujeto legible: personaje, figura, objeto, fragmento de habitacion/escena, forma material o motivo de entorno cuando ayude a reconocer el preset.
+- `pack_02` suaviza anchors comunes para permitir paredes, lamparas, rooms, floors, sombras, cortinas, mercados/librerias/halls o props si son especificos del preset.
+- `pack_02` deja de usar labels `ABSTRACT` en el `TARGET STYLE` visible para cartoon/media; el label ahora describe el estilo sin empujar a campo abstracto.
+
+Smoke prompt sin generar imagenes:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-005|SP03-006" --variant-count=1 --session-suffix=prompt_review_p03_reset --print-prompts` -> `prompts=2 skipped=78 packs=pack_03`.
+- `bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-087|SP02-088" --variant-count=1 --session-suffix=prompt_review_p02_reset --print-prompts` -> `prompts=2 skipped=126 packs=pack_02`.
+
+Siguiente regla operativa:
+
+- Proxima tanda debe generar solo variants, no primarias.
+- Primero prompt review, despues 1-2 candidates, despues inspeccion visual.
+- Rechazar: abstraccion vacia, contacto/reference sheet, UI, logos/texto, camera/device accidental, o set repetido.
+- Aceptar: card representativa aunque tenga pared, lampara, room, objeto, persona o escena si eso ayuda al preset y no se repite como plantilla.
+
+Benchmark visual:
+
+- Se armaron contact sheets temporales en `.tmp/style-card-qa/` para comparar cards marcadas, deriva abstracta de `SP02-087..120`, benchmark estable `pack_08` y primarias actuales `SP03-003|SP03-004`.
+- Hallazgo: las mejores cards no eran "sin escenario"; tenian sujeto dominante, contexto legible, estilo claro y variedad de entorno. Paredes, lamparas, props o habitaciones funcionaban cuando apoyaban la lectura.
+- Fallo concreto previo: `SP02-087..120` colapso casi completo a posters abstractos. El prompt decia "abstract", "no body", "no scene" demasiadas veces.
+- Correccion adicional: el `HERO` de cartoon/media ahora suaviza los cues internos `no body/no character` para que signifiquen "no cuerpo realista/literal/narrativo", manteniendo un ancla original visible.
+- Resultado de prueba: `SP02-087-01.webp` queda aceptada como variant activa por revision de usuario; representa mejor la direccion cartoon/personaje que los posters abstractos previos. `SP02-088-01.webp` queda aceptada como variant activa por lectura clara de crude crayon monster, sin abstraccion vacia. `SP02-089-01.webp` queda aceptada como variant activa por lectura de grotesque cartoon material/puppet sin gore explicito. `SP02-090-01.webp` queda aceptada como spiky graphic creature/attitude card. `SP02-091-01.webp` queda aceptada porque persona + marker + whiteboard son cue intencional del preset, no filler repetido. `SP02-092-01.webp` queda aceptada tras reintento como crumpled-paper character; el primer intento se archivo por vacio + camera/reel accidental. `SP02-093-01.webp` queda aceptada como prehistoric graphic figure, con motivo claro y no texture-only. `SP02-094-01.webp` queda aceptada como kindergarten crayon geometry character. `SP02-095-01.webp` queda aceptada como Sunday-funnies halftone character sin texto ni paneles. `SP02-096-01.webp` queda aceptada como punk/skate graphic character, con sujeto dominante y energia screenprint sin camara ni pasillo. `SP02-097-01.webp` queda aceptada como rejected corporate mascot, con personaje plastico simple y fondo grafico intencional. `SP02-098-01.webp` queda aceptada como napkin ballpoint character/idea sketch; el foco es cue de idea, no lampara repetida. `SP02-099-01.webp` queda aceptada como punk zine collage figure con sujeto dominante y textura clara. `SP02-100-01.webp` queda aceptada como flipbook rough-motion character, con onion-skin/pencil marks e identidad clara. `SP02-101-01.webp` queda aceptada como grossout cartoon blob/face, no IP ni gore; el prompt se ajusto para permitir rasgos estilizados y bloquear solo anatomia realista/gore/franchise. `SP02-102-01.webp` queda aceptada como flat weird-comedy character, simple y legible sin oficina/camara/pasillo. `SP02-103-01.webp` queda aceptada como slime-grime cartoon blob, no gore ni sewer/corridor; el prompt ahora bloquea dientes realistas y permite fangs cartoon. `SP02-104-01.webp` queda aceptada tras dos rechazos como toddler-scale crayon character sin film reel, spotlight ni stage. `SP02-105-01.webp` queda aceptada como boiling-line scam cartoon, con sujeto estirado y energia clara sin props scam. `SP02-106-01.webp` queda aceptada como beige anxiety character, legible y sin suburbio/room/camara. `SP02-107-01.webp` queda aceptada como rural nightmare pastel, con simbolos nocturnos planos y sujeto inquietante sin pasillo ni escena detallada. `SP02-108-01.webp` queda aceptada como loud-primary derangement, con personaje original y energia clara. `SP02-109-01.webp` queda aceptada como shared-form elastic, con forma doble legible sin cat/dog reconocible ni escena filler. `SP02-110-01.webp` queda aceptada como gross-up texture blob, no sponge/IP/gore. `SP02-111-01.webp` queda aceptada como slouch geometry figure, sin couch/room filler. `SP02-112-01.webp` queda aceptada como office-boredom geometry character, con gesto aburrido y sin cubicle/desk/camera filler. `SP02-113-01.webp` queda aceptada como toxic house-character motif; usa casa como ancla concreta del preset, sin pasillo/mercado/fantasia/studio/camara. `SP02-114-01.webp` queda aceptada tras rechazar un TV-device previo; el resultado final es squigglevision nervous figure, sin monitor/camara/therapy room. `SP02-115-01.webp` queda aceptada como marker-edge sitcom character, simple y legible sin set escolar/suburbano. `SP02-116-01.webp` queda aceptada como notebook-anxiety marker character, con color suave y sin notebook literal. `SP02-117-01.webp` queda aceptada como photo-cutout xerox bird-like figure, con collage/toner claro y sin camara/room. `SP02-118-01.webp` queda aceptada como garbage-pail gross sticker object, cartoon y no realista, sin escena ni camera/device. `SP02-119-01.webp` queda aceptada como chlorine slime doodle monster, color fuerte y sin pool/pasillo/camara. `SP02-120-01.webp` queda aceptada como toxic marker freakout creature, energia marker clara sin classroom literal/texto. No se promueven primarias.
+
+Cierre de bloque: `SP02-087..SP02-120` ya tienen variant representative `-01` aceptada. Mantener las primarias actuales intactas hasta una decision explicita de promocion.
+
+Velocidad de tanda: a partir de esta prueba, usar `4` presets por corrida como default operativo; subir a `6` solo cuando el bloque comparta familia de prompt y no haya rechazos recientes. Mantener revision visual obligatoria y archivar rechazos antes de contarlos.
+
+## Tanda 2026-06-16 - `pack_03` representative variants ola `variant_p03_ab`
+
+Continuacion sobre `SP03-003|SP03-004`, ahora como variants en `assets/recipes/styles/defaults/variants/` para probar lectura representativa sin pisar primarias stale.
+
+Cambio de prompt:
+
+- `SP03-003` mantiene representacion Redshift con hero form/sujeto 3D, material swatches y caustics sin camara, lampara, pared dominante ni abstraccion vacia.
+- `SP03-004` tuvo dos rechazos: primero por studio/showroom con luz visible; segundo por contact sheet/grid con paneles inferiores. Se agrego bloqueo ID-scoped para visible studio light/lamp/fixture, wall panel, tabletop, contact sheet, reference sheet, grid, panel strip, bottom swatch row y multiple frames.
+
+Variants aceptadas:
+
+- `SP03-003-01` / `Redshift Biased GPU Renderer` (`272934` bytes): pasa; sujeto/hero form 3D con swatches y caustics, no camara, lampara ni pared dominante.
+- `SP03-004-01` / `Arnold Feature Film Path Tracer` (`384214` bytes): pasa tras segundo reintento; character/material hero form integrado, sin studio light visible, sin grid/contact sheet, sin UI/text.
+- `SP03-005-01` / `Blender Cycles Open Path Tracer` (`280242` bytes): pasa; bust/subject 3D con path-traced material read, caustic/lookdev cues, sin UI/text/camera prop.
+- `SP03-006-01` / `V-Ray ArchViz Raytracer` (`336066` bytes): pasa; ArchViz fragment/material-rich room moment, swatches e IES-like light como cues especificos, no showroom generico ni UI/text.
+- `SP03-007-01` / `KeyShot Product Studio Renderer` (`217766` bytes): pasa; product/bust presentation con material swatches y controlled studio reflections, sin logo/text/camera prop.
+- `SP03-008-01` / `Pixar RenderMan Feature Animation Renderer` (`244376` bytes): pasa; character bust stylized feature-animation lookdev, warm/cool lighting, material evidence, sin franquicia/logo/text.
+- `SP03-009-01` / `ZBrush Digital Clay Sculpt` (`215324` bytes): pasa; bust de arcilla/matcap con sculpt detail y swatches, sin UI/text/camera prop.
+- `SP03-010-01` / `Unity HDRP High-End Game Pipeline` (`372866` bytes): pasa; hero form realtime/HDRP con material panels y volumetric game lighting, sin UI legible ni camera prop.
+- `SP03-011-01` / `Glass & Crystal` (`336948` bytes): pasa; crystal bust/material hero con caustics, dispersion y refraction read, sin showroom/text/UI.
+- `SP03-012-01` / `Liquid Simulation` (`482790` bytes): pasa; liquid horse/splash simulation, sujeto fluido claro; fondo fantastico funciona como motivo, no como pasillo/escena filler.
+- `SP03-013-01` / `Subsurface Scattering (SSS)` (`164640` bytes): pasa; translucent organic bust con inner glow/backlight y SSS claro, sin UI/text/camera prop.
+- `SP03-014-01` / `Chrome & Metal` (`207248` bytes): pasa; chrome hero object/environment reflection, metal anisotropic read, sin camera prop ni texto.
+- `SP03-015-01` / `Claymation (Stop Motion)` (`296204` bytes): pasa; clay character bust con thumbprint/material craft; entorno/lamp cues apoyan stop-motion, no escena filler.
+- `SP03-016-01` / `Fur & Hair` (`250502` bytes): pasa; fur creature con strand/clump variation legible; entorno interior no domina el preset.
+- `SP03-017-01` / `Slime & Goo` (`340654` bytes): pasa; slime creature/material specimen con drips/stretch strings y lookdev swatches, sin text/UI/camera prop.
+- `SP03-018-01` / `Carbon Fiber` (`314612` bytes): pasa; carbon-fiber hero object con weave/aniso highlights y material swatches, sin logo/text/camera prop.
+- `SP03-019-01` / `Hologram` (`292440` bytes): pasa; holographic bust/projection con scanlines y interference; paneles son cue de material, sin texto/UI legible.
+- `SP03-020-01` / `Porcelain` (`171830` bytes): pasa; porcelain bust con glaze/crackle/painted detail, entorno de material intencional y no filler.
+- `SP03-021-01` / `Low Poly` (`104192` bytes): pasa; low-poly mech/hero object con facets y baked-light read, sin UI/text/camera prop.
+- `SP03-022-01` / `Voxel Art` (`380746` bytes): pasa; voxel fox bust/world fragment con cube grid y material blocks, sin texto/logo/camera prop.
+- `SP03-023-01` / `Isometric 3D` (`303556` bytes): pasa; isometric style-card con orthographic layout y material panels, sin UI legible ni contact-sheet-only fallback.
+- `SP03-024-01` / `Wireframe Render` (`512284` bytes): pasa; wireframe bust/topology card con edge-flow visible y debug look, sin texto/logo/camera prop.
+- `SP03-025-01` / `Kitbash` (`352740` bytes): pasa; hard-surface industrial hero form con greebles y wear legible, sin camara, mercado, biblioteca ni corridor-filler.
+- `SP03-026-01` / `Knolling (Flat Lay)` (`415488` bytes): pasa; flat-lay/exploded lookdev con sujeto y swatches ordenados, no contact-sheet vacio ni UI/text.
+- `SP03-027-01` / `Metaballs` (`113506` bytes): pasa; organic blobby character/material form con smooth merges y color read, sin escena literal ni ruido fino.
+- `SP03-028-01` / `Nurbs Surface` (`237464` bytes): pasa tras un retry; freeform CAD/class-A surface con zebra reflection bands, ya no silla/furniture/studio-chair.
+- `SP03-029-01` / `Fractal 3D` (`433080` bytes): pasa; fractal creature/material bust con self-similar ridges y lookdev swatches, sin UI/text/camera prop.
+- `SP03-030-01` / `Glitch 3D` (`429226` bytes): pasa; corrupted character bust/mesh explosion con UV tearing y chromatic datamosh, sin device/screen/camera prop.
+- `SP03-031-01` / `Global Illumination` (`175902` bytes): pasa tras retry; organic/material subject con bounce, contact shadows y ambient fill, sin curtain/plant/pool interior.
+- `SP03-032-01` / `Volumetric Fog` (`145078` bytes): pasa tras dos retries; material bust en volumetric test space con shafts/fog, sin cave/fantasy landscape/orb.
+- `SP03-033-01` / `Neon City (Cyberpunk)` (`405916` bytes): pasa; cyberpunk material bust con wet neon reflections y magenta/cyan haze, sin street/signage/text/camera prop.
+- `SP03-034-01` / `Studio Lighting (3 Point)` (`174322` bytes): pasa tras retry; clean bust/material specimen con key/fill/rim behavior, sin visible softbox/camera/text/brand mark.
+- `SP03-035-01` / `HDRI Environment` (`176816` bytes): pasa tras retry; reflective CG object en neutral HDRI light field, sin sunset/canyon/travel landscape.
+- `SP03-036-01` / `Caustics` (`340570` bytes): pasa; refractive bust con caustic photon webs y prismatic light pools, sin pool/underwater/camera prop.
+- `SP03-037-01` / `Ambient Occlusion Pass` (`108564` bytes): pasa; clay-white AO creature bust con contact shadows y crevice gradients, sin color/direct light/UI.
+- `SP03-038-01` / `Rim Lighting` (`231982` bytes): pasa tras retry; dark hero form definido por edge-rim glow, sin contact sheet/swatch strip.
+- `SP03-039-01` / `Bioluminescent Forest` (`312310` bytes): pasa; organic bioluminescent form con cyan/violet glow y spores, bosque funciona como cue preset-specific.
+- `SP03-040-01` / `Toon Shader (Cel Shaded)` (`218798` bytes): pasa; original cel-shaded character card con bold outlines/flat bands, sin UI/text/logo/franchise.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-003|SP03-004" --parallel=2 --variant-slot=1 --session-suffix=quality_p03_representative_variant_a --force` -> `generated=2 attempted=2 skipped=78 failed=0 packs=pack_03`; `SP03-004` rechazado por studio/showroom light.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-004" --parallel=1 --variant-slot=1 --session-suffix=quality_p03_representative_no_studio_light --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; rechazado por contact sheet/grid.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-004" --parallel=1 --variant-slot=1 --session-suffix=quality_p03_representative_no_contact_sheet --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+- `bun run scripts/generate-style-runtime-data.ts` indexo variants en `GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS` para `SP03-003` y `SP03-004`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-025|SP03-026|SP03-027|SP03-028" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_025_028_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-028` rechazado por chair/studio read.
+- `SP03-028` reject archivado en `.tmp/style-default-card-archive/rejected/`; se agrego guardrail ID-scoped para freeform class-A CAD test surface, no chair/seat/furniture/showroom/lab/studio/circular wall light.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-028" --parallel=1 --variant-slot=1 --session-suffix=qa_p03_028_retry --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-029|SP03-030|SP03-031|SP03-032" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_029_032_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-031` rechazado por curtain/plant/pool interior y `SP03-032` por cave/fantasy/orb.
+- `SP03-031` y `SP03-032` rejects archivados en `.tmp/style-default-card-archive/rejected/`; se agregaron guardrails ID-scoped para evitar curtain/plant/pool/spa interior y cave/cavern/fantasy landscape/orb/alien drift.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-031|SP03-032" --parallel=2 --variant-slot=1 --session-suffix=qa_p03_031_032_retry --force` -> `generated=2 attempted=2 skipped=78 failed=0 packs=pack_03`; `SP03-032` rechazado otra vez por fantasy landscape/alien.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-032" --parallel=1 --variant-slot=1 --session-suffix=qa_p03_032_retry_controlled --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-033|SP03-034|SP03-035|SP03-036" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_033_036_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-034` rechazado por helmet text/brand-like mark y `SP03-035` por sunset/canyon landscape.
+- `SP03-034` y `SP03-035` rejects archivados en `.tmp/style-default-card-archive/rejected/`; se agregaron guardrails ID-scoped para bloquear readable text/brand-like markings y sunset/canyon/travel landscape.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-034|SP03-035" --parallel=2 --variant-slot=1 --session-suffix=qa_p03_034_035_retry --force` -> `generated=2 attempted=2 skipped=78 failed=0 packs=pack_03`; aceptados visualmente.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-037|SP03-038|SP03-039|SP03-040" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_037_040_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-038` rechazado por contact sheet/swatch strip dominante.
+- `SP03-038` reject archivado en `.tmp/style-default-card-archive/rejected/`; se agrego guardrail ID-scoped para bloquear contact sheet, swatch strip, reference grid y bottom tile row.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-038" --parallel=1 --variant-slot=1 --session-suffix=qa_p03_038_retry_no_swatches --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- Estas variants alimentan el carousel, pero no cierran stale primario; `SP03-003..SP03-040` siguen en la tabla activa hasta que una primaria sea aprobada explicitamente.
+- Replanteo posterior del usuario: no promover mas primarias automaticamente. Proxima accion recomendada: generar `SP03-041|SP03-042|SP03-043|SP03-044` como variants en batch de 4; no subir a 6 todavia porque esta tanda tuvo reject.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_041_044_x4`
+
+Continuacion x4 sobre `SP03-041|SP03-042|SP03-043|SP03-044`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-041` recibio guardrail ID-scoped para evitar cathedral, temple, ruins, fantasy hall, magic ring, glowing portal, robed mystic figure, floating platform, shrine, forest canopy, corridor, window-beam cliche, UI, text, camera o device prop.
+
+Variants aceptadas:
+
+- `SP03-041-01` / `God Rays (Volumetric)` (`156542` bytes): pasa tras retry; monolito/material hero con shafts volumetricos limpios, sin templo, figura mistica, portal, ring ni fantasy hall.
+- `SP03-042-01` / `Diorama Lighting` (`356862` bytes): pasa; bust miniature/tabletop con tilt-shift depth y cue de linterna intencional, no como studio filler.
+- `SP03-043-01` / `X-Ray Shader` (`299770` bytes): pasa; technical hero object translucido con estructura interna legible, sin UI/text/camera prop.
+- `SP03-044-01` / `Thermal Vision` (`286404` bytes): pasa; alien/material bust con lectura thermal clara y color false-sensor, sin device/camera/UI.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-041|SP03-042|SP03-043|SP03-044" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_041_044_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-041|SP03-042|SP03-043|SP03-044" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_041_044_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-041` rechazado por fantasy hall/temple/robed mystic figure/magic ring.
+- `SP03-041` reject archivado en `.tmp/style-default-card-archive/rejected/SP03-041-01-rejected-fantasy-hall-20260617-004625.webp`; se agrego guardrail puntual.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-041 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_041_retry_no_fantasy_hall --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- La tanda confirma que x4 es el nuevo ritmo util, pero no conviene subir a x6 todavia: hubo un reject real y retry.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-045|SP03-046|SP03-047|SP03-048` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_045_048_x4`
+
+Continuacion x4 sobre `SP03-045|SP03-046|SP03-047|SP03-048`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-046` recibio guardrail ID-scoped para evitar human bust, mannequin, portrait head, showroom, UI, screenshot, text, logo, camera, weapon-first read o generic product render; pide game-ready PBR asset con albedo/roughness/metalness/normal-map evidence.
+
+Variants aceptadas:
+
+- `SP03-045-01` / `Wireframe on Shaded` (`468998` bytes): pasa; bust tecnico con topology overlay sobre shaded surface, sin UI/text/camera prop. Paneles auxiliares quedan como apoyo visual, no como contact sheet dominante.
+- `SP03-046-01` / `Game Asset (PBR)` (`326714` bytes): pasa tras retry; modulo hard-surface sci-fi con PBR swatches y normal/roughness/metalness read, sin bust generico.
+- `SP03-047-01` / `Architectural Visualization` (`176814` bytes): pasa; model slice arquitectonico con daylight, straight verticals y material board, sin real-estate filler ni texto.
+- `SP03-048-01` / `Product Render` (`189368` bytes): pasa; producto abstracto premium con controlled reflections y material swatches, sin logo/text/UI.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-045|SP03-046|SP03-047|SP03-048" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_045_048_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-045|SP03-046|SP03-047|SP03-048" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_045_048_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-046` rechazado por generic human bust / weak PBR-asset read.
+- `SP03-046` reject archivado en `.tmp/style-default-card-archive/rejected/SP03-046-01-rejected-generic-bust-20260617-005323.webp`; se agrego guardrail puntual.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-046 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_046_retry_asset_pbr --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Estado objetivo verificado en esta ronda:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=80/80 staleDefaultImages=0 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> `pack_14 taxonomy=123/123 defaultImages=123/123 availableDefaultImages=123/123 staleDefaultImages=0 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> `pack_15 taxonomy=137/137 defaultImages=137/137 availableDefaultImages=137/137 staleDefaultImages=0 missingDefaultImages=0`.
+- `bun run scripts/audit-style-category-bases.ts` -> `docs/active/style-category-bases-audit.md`; objective slice `pack_08..pack_11` sigue completo en `5/5` por pack.
+
+Lectura de riesgo:
+
+- x4 sigue siendo buen ritmo, pero hubo otro reject/retry; no subir a x6 todavia.
+- `pack_14` y `pack_15` no tienen deuda visual actual; no se fuerza trabajo artificial.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-049|SP03-050|SP03-051|SP03-052` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_049_052_x4`
+
+Continuacion x4 sobre `SP03-049|SP03-050|SP03-051|SP03-052`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-049` recibio guardrail ID-scoped para neutral A-pose/T-pose, production backdrop, modest production outfit/armor, no sexualized body-first design, no fantasy environment, no UI/text/labels.
+- `SP03-050` recibio guardrail ID-scoped para kinetic abstract 3D hero form con glossy spheres/ribbons/splines/trails, sin logo reveal, text, brand mark, costume trim o character bust.
+- `SP03-051` recibio guardrail ID-scoped para diagnostic cutaway limpio no-gory, sin readable labels/text/UI/blood/gore/hospital room/full human body.
+- `SP03-052` recibio guardrail ID-scoped para aerodynamic surface/vehicle fragment/body-contour sculpture, sin full generic car ad, logo, showroom, road scene o dealership setup.
+
+Variants aceptadas:
+
+- `SP03-049-01` / `Character Design (T-Pose)` (`167216` bytes): pasa tras dos retries; character production sheet neutral con T-pose, swatches fisicos, modest outfit, sin fantasy courtyard.
+- `SP03-050-01` / `Motion Graphics` (`252320` bytes): pasa; glossy kinetic abstract form con gradient trails y mograph read, sin logo/text/UI.
+- `SP03-051-01` / `Medical Illustration 3D` (`251768` bytes): pasa; diagnostic cutaway limpio red/blue/white, translucido, sin gore ni labels legibles.
+- `SP03-052-01` / `Automotive Render` (`170148` bytes): pasa; aerodynamic metallic body-contour sculpture con reflection sweeps, sin logo/text/car-ad scene.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-049|SP03-050|SP03-051|SP03-052" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_049_052_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-049|SP03-050|SP03-051|SP03-052" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_049_052_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-049` rechazado por sexualized/body-first humanoid.
+- `SP03-049` primer reject archivado en `.tmp/style-default-card-archive/rejected/SP03-049-01-rejected-sexualized-body-first-20260617-010602.webp`; se ajusto guardrail a modest/non-sexual production outfit.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-049 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_049_retry_modest_tpose --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; rechazado por fantasy courtyard/arch/fountain/plant drift aunque el usuario marco que la direccion no estaba mal.
+- `SP03-049` segundo reject archivado en `.tmp/style-default-card-archive/rejected/SP03-049-01-rejected-fantasy-courtyard-20260617-010810.webp`; se ajusto guardrail a plain grey production backdrop.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-049 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_049_retry_plain_sheet --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- x4 sigue siendo util, pero esta tanda tuvo dos rejects en un ID sensible; no subir a x6.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-053|SP03-054|SP03-055|SP03-056` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_053_056_x4`
+
+Continuacion x4 sobre `SP03-053|SP03-054|SP03-055|SP03-056`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-053` recibio guardrail ID-scoped para high-jewelry material specimen, faceted sculptural object, gemstone cluster o precious-metal micro-architecture, sin ring/proposal/wedding box/hand/model/bridal scene/logo/text/camera/generic jewelry ad.
+- `SP03-054` recibio guardrail ID-scoped para CGI food hero form, fruit/gel/sauce/material specimen o edible construction con droplets/steam/gloss/subsurface read, sin burger/fries default, character bust, restaurant clutter, packaging/logo/text o rotten/gross read.
+- `SP03-055` recibio guardrail ID-scoped para VR-ready scene fragment o interactive-scale environment module, sin headset/goggles/person/controller/UI/screenshot/generic room/corridor/fantasy hall/text/camera prop.
+- `SP03-056` recibio guardrail ID-scoped para scientific data hero form como protein fold, particle cloud, molecule cluster, galaxy simulation o volumetric measurement field, sin UI/charts/readable labels/lab room/magic-fantasy glow/character/camera/logo/text.
+
+Variants aceptadas:
+
+- `SP03-053-01` / `Jewelry Render` (`223828` bytes): pasa; high-jewelry material sculpture con crystal/gold luxury read, sin hand/model/text/logo.
+- `SP03-054-01` / `Food CGI` (`361832` bytes): pasa; glossy edible material construction con droplets/steam/food-render read, sin burger/brand/text/restaurant clutter.
+- `SP03-055-01` / `Virtual Reality Environment` (`280838` bytes): pasa por aprobacion del usuario; immersive wide-FOV scene con riesgo portal/hall-adjacent aceptado, sin headset/person/text.
+- `SP03-056-01` / `Scientific Visualization` (`355278` bytes): pasa; protein/data hero form con false-color scientific read, sin labels legibles/lab room/character.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-053|SP03-054|SP03-055|SP03-056" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_053_056_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-053|SP03-054|SP03-055|SP03-056" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_053_056_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`.
+
+Lectura de riesgo:
+
+- Esta tanda queda aceptada sin retries. `SP03-055` conserva riesgo estetico portal/hall-adjacent, pero el usuario lo aprobo como no problem; no rechazar por sobreinterpretar bans.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-057|SP03-058|SP03-059|SP03-060` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_057_060_x4`
+
+Continuacion x4 sobre `SP03-057|SP03-058|SP03-059|SP03-060`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-057` recibio guardrail ID-scoped para original collectible 3D avatar bust/creature head/mask/toy-like character fragment, sin ape copy, franchise/IP cue, NFT marketplace UI, crypto logo, readable text, screenshot, camera o generic portrait studio.
+- `SP03-058` recibio guardrail ID-scoped para abstract glyph sculpture/invented letterform mass/typographic-object construction, sin readable word, alphabet chart, slogan, logo, UI, poster layout, flat text o signage.
+- `SP03-059` recibio guardrail ID-scoped para digital fashion hero garment/simulated textile/stylized figure fragment, sin curtain, generic fabric backdrop, showroom, retail store, runway crowd, logo, readable text, camera o stiff cloth.
+- `SP03-060` recibio guardrail ID-scoped para environment-design scene fragment/modular kit corner/terrain slice/worldbuilding material study, sin library aisle, market aisle, generic corridor, fantasy hallway, shop shelves, drone, surveillance pod, chrome orb, tarp, fabric sheet, UI, logo, readable text o camera prop.
+
+Variants aceptadas:
+
+- `SP03-057-01` / `NFT Collectible Avatar Render` (`262684` bytes): pasa; creature/avatar bust original neon/gold, sin ape/IP/UI/text.
+- `SP03-058-01` / `3D Typography` (`185898` bytes): pasa; glyph inventado 3D con bevel/material read, sin palabra/logo/signage.
+- `SP03-059-01` / `Digital Fashion` (`289942` bytes): pasa; garment/mannequin con cloth sim e iridescent material, sin curtain ni retail/runway crowd.
+- `SP03-060-01` / `Environment Design` (`426644` bytes): pasa tras retry; modular kit/environment slice con material board, sin drones/orbs/camaras.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-057|SP03-058|SP03-059|SP03-060" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_057_060_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-057|SP03-058|SP03-059|SP03-060" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_057_060_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-060` rechazado por drones/camera-like orbs/tarps.
+- `SP03-060` reject archivado en `.tmp/style-default-card-archive/rejected/SP03-060-01-rejected-drone-camera-orbs-tarps-20260617-012138.webp`; se ajusto guardrail a no drone/surveillance pod/chrome orb/tarp/fabric sheet.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-060 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_060_retry_no_drones_orbs --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- x4 sigue bien como velocidad base, pero no subir a x6 todavia porque `SP03-060` necesito retry por objetos tipo camara.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-061|SP03-062|SP03-063|SP03-064` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_061_064_x4`
+
+Continuacion x4 sobre `SP03-061|SP03-062|SP03-063|SP03-064`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-061` recibio guardrail ID-scoped para hard-surface engineering hero form/mech torso fragment/industrial module/machined armor panel, sin weapon, gun, missile, battlefield, soldier, military insignia, cockpit UI, camera prop, readable text o generic vehicle ad.
+- `SP03-062` recibio guardrail ID-scoped para organic sculpt hero form/creature bust fragment/botanical anatomy/growth-like material specimen, sin gore, horror monster, forest scene, hard robot edges, lab specimen jar, readable text, logo o camera prop.
+- `SP03-063` recibio guardrail ID-scoped para isometric 3D cartographic terrain miniature/stacked contour island/elevation-coded scene fragment, sin flat 2D paper map, parchment, atlas page, UI minimap, readable labels, compass rose, market/library aisle, logo o text.
+- `SP03-064` recibio guardrail ID-scoped para exploded-view assembly de creature/object/module con separated layers/invisible axes/cross-section surfaces/subsystem color coding, sin readable labels, arrows with text, instruction manual page, UI, contact sheet, weapon assembly, camera prop, logo o flat diagram.
+
+Variants aceptadas:
+
+- `SP03-061-01` / `Hard Surface Modeling` (`239460` bytes): pasa; machined armor/mech-torso module con panel lines, sin weapons/soldier/UI/text.
+- `SP03-062-01` / `Organic Modeling` (`182672` bytes): pasa con riesgo menor; humanoid botanical sculpt con topology/subsurface read, sin gore/forest/lab jar/text/camera.
+- `SP03-063-01` / `3D Map` (`285828` bytes): pasa; isometric terrain miniature con contour/elevation readability, sin flat paper map/UI/labels/text.
+- `SP03-064-01` / `Exploded View` (`358842` bytes): pasa; creature/object assembly separado por capas, sin labels/UI/contact sheet/weapon assembly.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-061|SP03-062|SP03-063|SP03-064" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_061_064_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-061|SP03-062|SP03-063|SP03-064" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_061_064_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`.
+
+Lectura de riesgo:
+
+- Tanda sin retries. `SP03-062` queda aceptado como representative organic sculpt, pero marcarlo como borderline por humanoid/body-first; si el usuario lo rechaza, retry aislado hacia botanical/creature-material specimen.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-065|SP03-066|SP03-067|SP03-068` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_065_068_x4`
+
+Continuacion x4 sobre `SP03-065|SP03-066|SP03-067|SP03-068`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-065` recibio guardrail ID-scoped para 3D app-icon-like hero object/squircle glass-plastic emblem/friendly platform-icon sculpt, sin real app logo, brand mark, readable letter, UI screen, phone mockup, app store layout, flat 2D icon, camera prop o text.
+- `SP03-066` recibio guardrail ID-scoped para polished abstract 3D wallpaper con flowing sculptural ribbons/translucent gel forms/broad gradient fields, sin character, product, room, wall/floor seam, curtain, lamp, shelf, corridor, text, logo, UI o noisy microdetail clutter.
+- `SP03-067` recibio guardrail ID-scoped para clean cybernetic integration hero form/prosthetic module/chrome-skin transition fragment, sin gore, exposed wound, surgery, horror mood, weapon, UI, readable text, camera prop, logo o fetishized body framing.
+- `SP03-068` recibio guardrail ID-scoped para grounded photogrammetry scan asset/photo-textured material chunk/scanned architectural fragment, sin generic rock pile, tree stump, ruined wall default, outdoor trail, market/library aisle, UI, labels, logo, text o camera prop.
+
+Variants aceptadas:
+
+- `SP03-065-01` / `3D Icon` (`218872` bytes): pasa; friendly jellyfish squircle icon, sin real app/logo/text/UI.
+- `SP03-066-01` / `Abstract Background` (`138082` bytes): pasa; polished abstract 3D wallpaper form con broad gradients, sin text/logo/UI/noisy microdetail; queda watchlist por seam/room-ish planes.
+- `SP03-067-01` / `Cybernetic Implant` (`224182` bytes): pasa; clean portrait/implant integration, sin gore/horror/text/weapon; ring tech de fondo no domina como camera prop.
+- `SP03-068-01` / `3D Scan (Photogrammetry)` (`338274` bytes): pasa; scanned architectural fragment con scan texture/mesh imperfections, sin labels/UI/camera.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-065|SP03-066|SP03-067|SP03-068" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_065_068_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-065|SP03-066|SP03-067|SP03-068" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_065_068_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`.
+
+Lectura de riesgo:
+
+- Tanda sin retries. `SP03-066` y `SP03-067` pasan visualmente, pero quedan watchlist si el usuario quiere menos abstract-room seam o menos portrait-cyberpunk.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-069|SP03-070|SP03-071|SP03-072` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_069_072_x4`
+
+Continuacion x4 sobre `SP03-069|SP03-070|SP03-071|SP03-072`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-069` recibio guardrail ID-scoped para controlled Houdini-style pyro simulation hero volume/smoke plume/heat vortex/fire-smoke material specimen, sin explosion disaster scene, weapon blast, burning building, person, battlefield, skull/monster, readable text, logo, UI o camera prop.
+- `SP03-070` recibio guardrail ID-scoped para original retro-90s CGI hero object/simple polygon creature-object/checkerboard material study, sin Toy Story/Reboot/franchise likeness, mascot copy, readable text, logo, UI, modern PBR realism, camera prop o crowded room.
+- `SP03-071` recibio guardrail ID-scoped para tactile glassmorphism material interface sculpture con frosted translucent cards/white border layers/blurred color fields/depth stacking, sin readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop o flat opaque panel.
+- `SP03-072` recibio guardrail ID-scoped para friendly clay-UI material sculpture con soft rounded cards/pill forms/molded buttons/pastel matte surfaces, sin readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop, pottery studio scene o flat sharp panel.
+
+Variants aceptadas:
+
+- `SP03-069-01` / `VFX Simulation (Fire/Smoke)` (`312110` bytes): pasa; controlled pyro plume/material specimen con smoke/fire dynamics, sin person/disaster/text/UI.
+- `SP03-070-01` / `Retro CGI (90s)` (`161744` bytes): pasa; low-poly retro object scene con primary colors/checkerboard, sin IP/logo/text/UI.
+- `SP03-071-01` / `Glassmorphism UI` (`123748` bytes): pasa; frosted glass interface sculpture con translucent card layers, sin readable UI text/logo/screenshot.
+- `SP03-072-01` / `Clay UI` (`218624` bytes): pasa; soft pastel character/interface scene, sin readable UI text/logo/screenshot; queda watchlist por character-toy sobre UI-pure.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-069|SP03-070|SP03-071|SP03-072" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_069_072_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-069|SP03-070|SP03-071|SP03-072" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_069_072_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`.
+
+Lectura de riesgo:
+
+- Tanda sin retries. `SP03-072` pasa por claridad y ausencia de texto/logo, pero queda watchlist si se quiere una tarjeta mas UI-pure y menos character-toy.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-073|SP03-074|SP03-075|SP03-076` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_073_076_x4`
+
+Continuacion x4 sobre `SP03-073|SP03-074|SP03-075|SP03-076`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-073` recibio guardrail ID-scoped para papercraft 3D hero form/layered cardstock creature-object/folded architectural fragment/cut-paper material sculpture, sin craft table, scissors, glue, hands, instruction sheet, origami crane default, readable text, logo, UI o camera prop.
+- `SP03-074` recibio guardrail ID-scoped para abstract neon-tube sculpture/bent-glass creature-object outline/non-text emissive sign-form, sin readable word, letters, logo, bar sign, brick wall default, nightclub scene, brand mark, UI, camera prop o flat print.
+- `SP03-075` recibio guardrail ID-scoped para original ice sculpture hero form/carved translucent creature-object/frozen material specimen/chiseled architectural fragment, sin gala/event table, swan default, cocktail sculpture, warm lighting, puddle melt, readable text, logo, UI o camera prop.
+- `SP03-076` recibio guardrail ID-scoped para original inflatable Mylar pop-sculpture/abstract foil organism/floating material form, sin Jeff Koons copy, bunny/rabbit, dog, balloon-animal default, flower bouquet, gallery plinth default, party balloons cluster, birthday scene, readable text, logo, UI, camera prop o hard heavy object.
+
+Variants aceptadas:
+
+- `SP03-073-01` / `Papercraft 3D` (`338954` bytes): pasa; layered cardstock creature/scene con fold lines y paper grain, sin craft tools/text/UI; watchlist por material-strip bottom.
+- `SP03-074-01` / `Neon Sign 3D` (`216746` bytes): pasa; abstract bent-glass neon sculpture, sin readable word/logo/bar sign/UI.
+- `SP03-075-01` / `Ice Sculpture` (`473340` bytes): pasa; carved translucent dragon/creature form con refraction/frosty dispersion, sin gala/event/text/UI; watchlist por side swatches.
+- `SP03-076-01` / `Balloon Art (Inflatable)` (`287698` bytes): pasa tras retry; abstract Mylar foil organism, sin bunny/dog/Koons/party/text/logo/UI.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-073|SP03-074|SP03-075|SP03-076" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_073_076_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-073|SP03-074|SP03-075|SP03-076" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_073_076_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`; `SP03-076` rechazado por balloon bunny / Koons-ish read.
+- `SP03-076` reject archivado en `.tmp/style-default-card-archive/rejected/SP03-076-01-rejected-balloon-bunny-koons-ish-20260617-015413.webp`; se ajusto guardrail a no bunny/rabbit/dog/balloon-animal default.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 --preset=SP03-076 --parallel=1 --variant-slot=1 --session-suffix=qa_p03_076_retry_no_bunny --force` -> `generated=1 attempted=1 skipped=79 failed=0 packs=pack_03`; aceptado visualmente.
+
+Lectura de riesgo:
+
+- `SP03-073` y `SP03-075` pasan por fuerza representativa, pero quedan watchlist por material strips / side swatches.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- Proxima ola recomendada: `SP03-077|SP03-078|SP03-079|SP03-080` con prompt preview, x4, revision visual y archivo de rejects antes de contar avance.
+
+## Tanda 2026-06-17 - `pack_03` representative variants ola `qa_p03_077_080_x4`
+
+Continuacion x4 sobre `SP03-077|SP03-078|SP03-079|SP03-080`, solo como variants de carousel. Antes de generar se hizo prompt review con `--print-prompts`; los cuatro prompts conservaron `VISUAL RESET`, `CONSTRAINT SEMANTICS`, `REPRESENTATION RULE` y el suffix global de denoise/control de microdetalle.
+
+Cambio de prompt:
+
+- `SP03-077` recibio guardrail ID-scoped para toy-brick 3D construction/studded creature-object/modular brick material sculpture, sin LEGO logo, minifigure, franchise/IP likeness, brick city default, toy box, readable text, logo, UI, camera prop o smooth melted plastic.
+- `SP03-078` recibio guardrail ID-scoped para original origami 3D folded creature-object/faceted material form/single-sheet sculptural fragment, sin crane, lotus, paper boat default, craft table, scissors, hands, readable text, logo, UI, camera prop, cuts, glue o paper crane cliche.
+- `SP03-079` recibio guardrail ID-scoped para original bronze sculpture/cast-metal creature-object/abstract monument fragment/patinated material specimen, sin famous statue, museum/gallery default, human bust default, pedestal/plinth focus, readable plaque/text, logo, UI, camera prop o fleshy skin read.
+- `SP03-080` recibio guardrail ID-scoped para original marble sculpture/carved stone creature-object/abstract Carrara material specimen/chiseled architectural fragment, sin famous statue, museum/gallery default, human bust default, Michelangelo/classical copy, pedestal/plinth focus, readable plaque/text, logo, UI, camera prop o fleshy warm skin read.
+
+Variants aceptadas:
+
+- `SP03-077-01` / `Lego Brick-Built 3D` (`356492` bytes): pasa; original red/yellow studded brick creature/object, sin LEGO logo/minifig/IP/text.
+- `SP03-078-01` / `Origami 3D` (`201046` bytes): pasa; folded fox-like origami creature/form, sin crane/lotus/tools/text.
+- `SP03-079-01` / `Bronze Statue` (`339738` bytes): pasa; original bronze creature/monument form con patina, sin famous statue/plaque/text.
+- `SP03-080-01` / `Marble Statue` (`197374` bytes): pasa; original marble creature/armor form, sin famous statue/text/logo; watchlist leve por fondo tipo galeria.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-077|SP03-078|SP03-079|SP03-080" --parallel=4 --variant-slot=1 --session-suffix=prompt_review_p03_077_080_x4 --print-prompts` -> `prompts=4 skipped=76 packs=pack_03`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-077|SP03-078|SP03-079|SP03-080" --parallel=4 --variant-slot=1 --session-suffix=qa_p03_077_080_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_03`.
+- QA visual manual: las cuatro pasan como carousel variants; no hubo rejects archivados en esta ola.
+
+Lectura de riesgo:
+
+- `SP03-080` queda watchlist leve por fondo tipo galeria, pero el sujeto no cae en estatua famosa ni texto/logo.
+- Estas variants alimentan el carousel; no cierran stale primario mientras no haya promocion explicita.
+- `pack_03` queda con accepted representative variants para `SP03-041..SP03-080`; proxima ola recomendada: `SP04-001|SP04-002|SP04-003|SP04-004` con prompt preview, x4 y revision visual.
+
+## Tanda 2026-06-17 - auditoria semantica con subagentes `pack_07` / `pack_08`
+
+Auditoria paralela read-only aplicada con subagentes: un agente reviso `pack_07`, otro `pack_08`, y un tercero audito cola visual/category bases sin escribir assets. La escritura quedo centralizada para evitar colisiones en manifests, default-card manifests o category-base manifest.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-041.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-063.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-080.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-027.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-065.yaml`
+
+Alcance:
+
+- `SP07-035`: baja room/library-prop lock y reemplaza `spatial_distortion: None` por ritmo vertical de archivo, compresion de alcobas y orden catalografico portable.
+- `SP07-041`: baja fountain-axis/protocol route lock y reemplaza `spatial_distortion: None` por orden planimetrico, ejes espejados y compresion de profundidad topiaria.
+- `SP07-063`: cambia negativos demasiado amplios (`life`, `lush vegetation`) por `lush garden` y `cozy living space`, para no bloquear sujetos vivos cuando el usuario los necesite.
+- `SP07-080`: baja rotor/control-room lock y reemplaza `small` por bloqueos concretos (`literal control room`, `single rotor prop`).
+- `SP08-002`: baja visible-branding/collab/crossbody-prop lock y explicita que hype-drop no exige logos legibles ni street queue.
+- `SP08-027`: baja brand/logo/fisheye composition lock; conserva skate-zine, grip-tape, suede scuffs y oversized casual sin Vans/logo tee obligatorio.
+- `SP08-038`: baja `chest hair` como requisito corporal; conserva disco por flare, lapel, platform, medallion glint y mirror-ball sparkle.
+- `SP08-065`: baja IP/franchise/identity-disc/helmet-visor lock y reemplaza `dark` negativo conflictivo por bloqueos concretos de franchise icon y helmet visor.
+
+Lectura de riesgo:
+
+- `pack_07` ya estaba cerrado grueso; esta tanda es cleanup fino detectado por subagente, no reescritura masiva.
+- `pack_08` vuelve a tener 4 default cards stale por cambio semantico actual (`SP08-002`, `SP08-027`, `SP08-038`, `SP08-065`), aunque antes estaba visualmente cerrado.
+- Generacion: subagentes pueden auditar y planear, pero los writers de assets deben seguir siendo unicos; no correr dos procesos contra `manifest-pack_*.json`, `failures-*.json` o `assets/recipes/styles/category-bases/manifest.json`.
+- Proxima semantica recomendada: seguir cola subagente `pack_07` con `SP07-036|SP07-039|SP07-047|SP07-050` o cola `pack_08` con `SP08-026|SP08-035|SP08-037|SP08-040`.
+- Proxima visual recomendada despues de cerrar semantic checks: category bases faltantes de `pack_14` en writer unico (`bun run scripts/generate-style-category-bases.ts --pack=pack_14 --limit=1`) o carousel/primary segun decision de promocion.
+
+## Tanda 2026-06-17 - auditoria semantica subagent queue 2 `pack_07` / `pack_08`
+
+Segunda miniola sobre la cola detectada por subagentes. Sin nuevos subagentes en esta tanda: se ejecuto la recomendacion ya producida para evitar doble exploracion y mantener writer unico.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-047.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-050.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-035.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-040.yaml`
+
+Alcance:
+
+- `SP07-036`: baja casino-floor/prize-prop lock; reemplaza `spatial_distortion: None` por attention-loop compression, mirrored depth y circulacion no direccional.
+- `SP07-039`: baja data-center corridor/rack lock; reemplaza `spatial_distortion: None` por redundancia modular, thermal-lane compression y machine-grid repetition.
+- `SP07-047`: baja literal maze/center-marker lock; reemplaza `spatial_distortion: None` por route compression, false-node rhythm y living-wall enclosure.
+- `SP07-050`: baja greenhouse-room lock y `outdoor` negativo amplio; queda como ribbed-glass repetition, condensation refraction y layered botanical depth.
+- `SP08-026`: baja gang/club-insignia/motorcycle lock; conserva leather utility, chrome-road defiance y patch texture sin readable insignia.
+- `SP08-035`: baja warrior/weapon identity lock; conserva lacquer, odoshi, kabuto geometry y menpo severity sin katana/duel/human face obligatorio.
+- `SP08-037`: baja holster/spur/gunslinger lock; conserva frontier workwear, oilskin, denim, bandana y brass hardware sin weapon draw.
+- `SP08-040`: baja Apollo/NASA/mission-patch/logo lock; conserva retro EVA, beta cloth, gold visor, gasket rings y vacuum clarity sin agency logo.
+
+Lectura de riesgo:
+
+- `pack_07` sigue stale completo por deuda visual ya existente; esta miniola solo mejora semantica.
+- `pack_08` suma 4 stale cards mas por cambio semantico actual (`SP08-026`, `SP08-035`, `SP08-037`, `SP08-040`), quedando 8 stale visuales de esta reauditoria reciente cuando runtime se regenere.
+- Proxima semantica recomendada: `SP07-053|SP07-070|SP07-029|SP07-043` o `SP08-042|SP08-044|SP08-048|SP08-050`.
+
+## Tanda 2026-06-17 - auditoria semantica subagent queue 3 `pack_07` / `pack_08`
+
+Tercera miniola sobre la cola detectada por subagentes. Se mantuvo writer unico: solo manifests y runtime generado; sin generacion de cards ni variants.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-029.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-053.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-070.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-042.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-044.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-050.yaml`
+
+Alcance:
+
+- `SP07-029`: baja contradiccion `wood` vs vigas; reemplaza kiva/hearth literal por nicho termico portable.
+- `SP07-043`: baja negativos `plants/water` demasiado amplios; conserva moss/lichen puntual y bloquea lush planting, pond, running water y spa decor.
+- `SP07-053`: baja castillo/waterfall/ground lock; conserva masa suspendida, void cuts, mist plume y gravedad negada.
+- `SP07-070`: baja literal gingerbread-house/product-photo lock; agrega icing seam swelling, sugar sag y candy-module compression.
+- `SP08-042`: baja IP/chase/weapon/gas-mask portrait lock; conserva wasteland utility couture con canvas, tire rubber, oxidized metal y strapped compression.
+- `SP08-044`: baja staff/hat/book/library lock; conserva robe grammar, rune embroidery, cowl depth y constellation stitch.
+- `SP08-048`: baja IP/gore/wound/zombie/weapon lock; conserva outbreak utilitywear con patched layers y field-repair asymmetry.
+- `SP08-050`: baja designer/IP/space-terminal/humanoid-alien lock; conserva xeno-couture, orange rubber, clear plastic, chrome vinyl y strap lattice.
+
+Evidencia:
+
+- `bun run styles:runtime` -> `packs=16 presets=1662`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- `pack_07` sigue stale completo por deuda visual historica; esta tanda solo mejora semantica.
+- `pack_08` mantiene la cola stale exacta ya registrada: `SP08-002|SP08-026|SP08-027|SP08-035|SP08-037|SP08-038|SP08-040|SP08-065`. La miniola actual no agrego nuevos IDs a `lib/staleStyleDefaultImages.generated.ts`.
+- Proxima semantica recomendada: usar extras de auditoria `SP07-038|SP07-064` y luego pedir otro scout read-only para el siguiente bloque, o pasar a generar variants `pack_08` stale en writer unico x4.
+
+## Tanda 2026-06-17 - `pack_08` representative variants ola `qa_p08_a_b_queue_x4`
+
+Generacion visual en paralelo con auditoria read-only. Se uso un solo writer con `--parallel=4` por proceso y `variant-slot=1`; no se promovieron primarias. Antes de generar se amplio el suffix global de denoise en `scripts/style-default-utils.ts` para bloquear noisy grain, oversharpening, ultra-fine detail clutter, camera-in-hand, library/market corridors, fantasy hallways, studio chair, curtain y lamp filler.
+
+Variants aceptadas:
+
+- `SP08-002-01` / `Streetwear Hypebeast` (`214184` bytes): pasa; hypewear representativo, sin branding legible ni camera/pasillo.
+- `SP08-026-01` / `Biker Gang` (`282224` bytes): watchlist; leather/biker claro, pero trae moto/locker literal.
+- `SP08-027-01` / `Skater Style` (`318764` bytes): pasa con watchlist leve por dormitorio/skate-room; skateboard y outfit claros.
+- `SP08-035-01` / `Samurai Armor` (`216196` bytes): pasa; armor claro, sin arma protagonista.
+- `SP08-037-01` / `Wild West Cowboy` (`281688` bytes): pasa con watchlist leve por western literal; sin weapon draw.
+- `SP08-038-01` / `Disco (70s)` (`232756` bytes): pasa; disco legible, ruido controlado.
+- `SP08-040-01` / `Space Suit (Retro)` (`339830` bytes): pasa; retro space suit claro, sin agency logo legible.
+- `SP08-065-01` / `Neon Light Suit` (`233726` bytes): pasa con watchlist leve por vibe franchise-adjacent, sin logo/icono claro.
+
+Evidencia:
+
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-002|SP08-026|SP08-027|SP08-035" --variant-slot=1 --session-suffix=prompt_review_p08_a_queue --print-prompts` -> `prompts=4 skipped=76 packs=pack_08`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-002|SP08-026|SP08-027|SP08-035" --parallel=4 --variant-slot=1 --session-suffix=qa_p08_a_queue_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_08`.
+- `bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-037|SP08-038|SP08-040|SP08-065" --variant-slot=1 --session-suffix=prompt_review_p08_b_queue --print-prompts` -> `prompts=4 skipped=76 packs=pack_08`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-037|SP08-038|SP08-040|SP08-065" --parallel=4 --variant-slot=1 --session-suffix=qa_p08_b_queue_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_08`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; `lib/styleDefaultImages.generated.ts` importa `SP08-002-01` a `SP08-065-01`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+
+Lectura de riesgo:
+
+- Estas variants alimentan carousel; no cierran stale primario hasta promocion explicita.
+- Proxima generacion recomendada: avanzar `pack_04` variants desde `SP04-001|SP04-002|SP04-003|SP04-004`, con prompt preview y writer unico x4.
+
+## Tanda 2026-06-17 - `pack_04` representative variants olas `qa_p04_001_008_x4`
+
+Generacion visual acelerada mientras la auditoria semantica corria por subagentes. Para ahorrar tokens se omitio `--print-prompts` en esta tanda y se hizo QA visual posterior. Se mantuvo un solo writer con `--parallel=4` y `variant-slot=1`; no se promovieron primarias.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-001-01` / `Golden Age Comic` (`747232` bytes): watchlist por emblema rayo superheroico generico; sin texto/logo real.
+- `SP04-002-01` / `Silver Age Comic` (`829296` bytes): watchlist alto por cuerpo/capa superhero literal; util solo como carousel candidate.
+- `SP04-003-01` / `Modern Superhero (Digital)` (`329180` bytes): watchlist alto por rooftop/cape/hero-power literal; util solo como carousel candidate.
+- `SP04-004-01` / `Manga (Shonen)` (`568796` bytes): watchlist por arma/ruina literal; sin IP/texto.
+- `SP04-005-01` / `Manga (Shojo)` (`323574` bytes): pasa; shojo delicado, sin texto/UI.
+- `SP04-006-01` / `Webtoon Style` (`218704` bytes): watchlist leve por penthouse/interior con sofa/planta.
+- `SP04-007-01` / `Franco-Belgian (Ligne Claire)` (`260990` bytes): pasa; ligne claire legible, sin texto.
+- `SP04-008-01` / `Sin City Noir Comic (High Contrast)` (`220868` bytes): pasa; noir alto contraste, sin texto.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-001|SP04-002|SP04-003|SP04-004" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_001_004_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-005|SP04-006|SP04-007|SP04-008" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_005_008_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; `lib/styleDefaultImages.generated.ts` importa `SP04-001-01` a `SP04-008-01`.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- Estas variants aceleran carousel, pero varias quedan watchlist por ser demasiado literales; no deben promoverse a primary sin segunda pasada o seleccion humana.
+- Proxima generacion recomendada: `SP04-009|SP04-010|SP04-011|SP04-012` en writer unico x4, manteniendo QA visual posterior.
+
+## Tanda 2026-06-17 - auditoria semantica queue 4 y `pack_04` variants `qa_p04_009_012_x4`
+
+Cuarta miniola semantica sobre `pack_07` / `pack_08` y tercera ola visual de `pack_04`. Se mantuvo writer unico para assets; las imagenes generadas son solo variants de carousel, sin promocion de primarias.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-038.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-048.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-052.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-064.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-046.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-051.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-071.yaml`
+
+Alcance:
+
+- `SP07-038`: reemplaza `living` como negativo amplio por bloqueos concretos de restos humanos/gore/horror display.
+- `SP07-048`: baja terraza/deck literal y mantiene capa biophilic elevada como gramatica portable.
+- `SP07-052`: cambia negativos amplios `wood`, `light`, `delicate` por bloqueos concretos de acabado liviano/delicado; refuerza forge/megalithic compression.
+- `SP07-064`: cambia `ground` como negativo amplio por `flat ground-level city`, `airport terminal lock` y `terrestrial baseplate`.
+- `SP08-045`: baja superhero/franchise/bodybuilder lock; conserva spandex, emblem geometry y power-pop silhouette sin icono conocido ni muscle shading.
+- `SP08-046`: baja anime/franchise/latex/cockpit lock; conserva mecha pilot grammar sin piloto literal obligatorio.
+- `SP08-051`: baja high-gloss polymer/fetish/body-first lock; conserva cyberpunk through seams, matte panels y luminous trims.
+- `SP08-071`: baja skin/living-doll/face-stare lock; conserva porcelain, enamel blush, glass-eye catchlight y seam logic sin cuerpo de muneca viva.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-009-01` / `Underground Comix` (`690728` bytes): pasa con watchlist; underground comix claro, papel/dibujo sin texto legible.
+- `SP04-010-01` / `Graphic Novel (Painted)` (`279186` bytes): pasa; painterly graphic novel legible.
+- `SP04-011-01` / `Junji Ito Horror Manga (Obsessive Ink)` (`650172` bytes): watchlist; horror/cabin literal y alto detalle, sin texto/UI.
+- `SP04-012-01` / `Moebius Retro Sci-Fi Comic (Dreamline)` (`507696` bytes): pasa fuerte; dreamline sci-fi claro, sin texto/logo.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-009|SP04-010|SP04-011|SP04-012" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_009_012_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; `lib/styleDefaultImages.generated.ts` importa `SP04-009-01` a `SP04-012-01`.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- `SP04-011` queda watchlist por literalizacion de cabin/horror; mantener como carousel candidate, no primary.
+- `pack_04` sigue `availableDefaultImages=0/100` porque las primarias siguen stale; variants solo mejoran carousel.
+- `pack_07` sigue stale completo por deuda visual historica; esta tanda solo mejora semantica.
+- `pack_08` mantiene stale exacto en `SP08-002|SP08-026|SP08-027|SP08-035|SP08-037|SP08-038|SP08-040|SP08-065`; los cuatro ajustes nuevos no agregaron stale en runtime.
+- Proxima generacion recomendada: `SP04-013|SP04-014|SP04-015|SP04-016` en writer unico x4, con QA visual posterior.
+
+## Tanda 2026-06-17 - auditoria semantica subagents queue 5 y `pack_04` variants `qa_p04_013_016_x4`
+
+Auditoria read-only nueva con subagentes sobre restos de `pack_07` y `pack_08`, mientras el writer unico genero otra ola x4 de variants para `pack_04`. Sin promocion de primarias.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-065.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-066.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-073.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-062.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-072.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-079.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-080.yaml`
+
+Alcance:
+
+- `SP07-062`: reemplaza `metal` global por bloqueo concreto de metal industrial pulido dominante.
+- `SP07-065`: reemplaza `realistic` global por `photoreal material finish` y `full-scale real scene`.
+- `SP07-066`: reemplaza `smooth, realistic` por bloqueos de material fotoreal sin studs y construccion real a escala completa.
+- `SP07-073`: reemplaza `surface` global por bloqueo de vista exterior plana/sin corte.
+- `SP08-062`: reemplaza `metal, cloth` global por plate-metal armor dominance y soft-cloth dominance.
+- `SP08-072`: reorienta tattoo skin hacia tattoo-style graphic surface mapping y bloquea superficie en blanco/piel limpia como foco.
+- `SP08-079`: reemplaza `visible` global por fully opaque normal fabric sin refraction/partial reveal.
+- `SP08-080`: reemplaza `light` global por bright cheerful lighting / fully illuminated surface.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-013-01` / `Chibi Style` (`194126` bytes): pasa; chibi legible, set toy suave, sin texto/camara.
+- `SP04-014-01` / `Pixel Art Comic` (`357030` bytes): watchlist alto; pixel art claro, pero superhero/cyber panel literal y panel UI-like.
+- `SP04-015-01` / `Risograph Print` (`818540` bytes): watchlist alto; risograph fuerte, pero robot/profesor, puntero y sala demasiado especificos.
+- `SP04-016-01` / `Tech Noir Comic` (`329340` bytes): watchlist alto; tech-noir legible, pero escena/pasillo/prop UI-like demasiado concreto.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-013|SP04-014|SP04-015|SP04-016" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_013_016_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; runtime y catalogo de variants actualizados.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- `SP04-014`, `SP04-015` y `SP04-016` son utiles para carousel, pero no deben promoverse sin segunda pasada.
+- Subagentes sugirieron cola siguiente read-only: `SP07-067|SP07-072|SP07-074|SP07-076` y `SP08-054|SP08-074|SP08-039|SP08-043`.
+- Proxima generacion recomendada: seguir `SP04-017|SP04-018|SP04-019|SP04-020` solo si aceptamos mas carousel candidates con QA posterior; si se busca primary-ready, conviene prompt preview y ajustes ID-scoped antes de generar.
+
+## Tanda 2026-06-17 - auditoria semantica queue 6 y `pack_04` variants `qa_p04_017_020_x4`
+
+Tercera ola consecutiva en modo no-stop: se genero otro bloque x4 de variants y se aplico la cola semantica siguiente sugerida por subagentes. Sin promocion de primarias.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-067.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-072.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-074.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-076.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-039.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-043.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-054.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-074.yaml`
+
+Alcance:
+
+- `SP07-067`: reemplaza `stone` global por bloqueo de acabado piedra tallada permanente que reemplaza arena humeda.
+- `SP07-072`: reemplaza `ocean` global por open-ocean/seascape dominance, permitiendo tema maritimo encapsulado.
+- `SP07-074`: reemplaza `full wall` por pared cerrada/sin corte que oculta seccion.
+- `SP07-076`: reemplaza `planet surface` por bloqueo de paisaje planetario a nivel de suelo.
+- `SP08-039`: baja Marie/huge-wig/fan lock; conserva Rococo por pannier, taffeta, powdered texture y court ornament density.
+- `SP08-043`: reemplaza `simple, earth` por bloqueos de minimalwear cotidiano y Earth-uniform literalism.
+- `SP08-054`: reemplaza `cloth` global por fabric-only/soft textile dominance.
+- `SP08-074`: reemplaza `skin` global por exposed mummy face / bare-skin focus / unwrapped body emphasis.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-017-01` / `Watercolor Storybook` (`487484` bytes): pasa con watchlist; watercolor storybook fuerte, pero cuarto/libreria literal.
+- `SP04-018-01` / `Paper Cutout (Collage)` (`347230` bytes): pasa con watchlist; paper cutout claro, pero shelves/cuarto literal.
+- `SP04-019-01` / `Crayon Drawing` (`808606` bytes): pasa; crayon fuerte y representativo, fantasy scene literal pero estilo claro.
+- `SP04-020-01` / `Kurzgesagt Vector Flat (Infographic)` (`150612` bytes): pasa; vector flat infografico claro, iconos sin texto legible.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-017|SP04-018|SP04-019|SP04-020" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_017_020_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; runtime y catalogo de variants actualizados.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- `SP04-017` y `SP04-018` caen en libreria/cuarto literal; mantener como carousel, no primary.
+- `SP04-019` y `SP04-020` son mas fuertes como representacion del preset, pero siguen sin promocion automatica.
+- Proxima semantica pendiente desde subagentes: `SP07-078|SP07-055` y `SP08-033|SP08-023`; conviene pedir nuevo scout read-only antes de otra tanda grande.
+- Proxima generacion recomendada: `SP04-021|SP04-022|SP04-023|SP04-024` con writer unico x4; si aparecen mas cuarto/shelves, agregar guardrail ID-scoped para storybook/papercut antes de seguir.
+
+## Tanda 2026-06-17 - auditoria semantica queue 7 y `pack_04` variants `qa_p04_021_024_x4`
+
+Se agrego guardrail minimo de `pack_04` para evitar que childrens/storybook/papercut vuelvan a librerias, shelves, reading rooms o classroom defaults. Se mantuvo writer unico y las nuevas imagenes son solo variants de carousel.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-037.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-055.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-056.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-078.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-007.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-017.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-023.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-033.yaml`
+
+Alcance:
+
+- `SP07-037`: cambia `dry` global por bloqueos concretos de escena seca sin refraccion/optica acuaria.
+- `SP07-055`: cambia `scary, realistic` por horror candy, photoreal food macro y edible mascot/kid-party literal.
+- `SP07-056`: cambia `sky, dry` por open-sky alegre y dry clean luxury interior, sin bloquear cielo/sequedad como input.
+- `SP07-078`: cambia `smooth` por featureless minimal surfaces / clean seamless shell.
+- `SP08-007`: baja corset-waist/body lock y negativos `happy/pink/sun` a cheerful pastel daylight / sunny cute palette.
+- `SP08-017`: elimina marca/persona drift (`New Balance`, round glasses) hacia unbranded suede, graphite basics y launch-light restraint.
+- `SP08-023`: baja bonnet/gloves/Mary-Jane kit obligatorio y `modern/pants` global hacia plain contemporary casualwear / trouser-dominant outfit.
+- `SP08-033`: baja uraeus/crown/pants/modern lock hacia relief-line ornament, faience-lapis accents y contemporary-tailoring dominance.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-021-01` / `Gouache Illustration` (`511646` bytes): pasa; gouache claro, museo/fosil literal pero sin libreria.
+- `SP04-022-01` / `Colored Pencil` (`659514` bytes): pasa con watchlist; colored pencil fuerte, wizard/staff/fantasy literal.
+- `SP04-023-01` / `Scratchboard` (`445370` bytes): pasa con watchlist; scratchboard fuerte, mesa/prop ritual y pseudo-simbolos pequenos.
+- `SP04-024-01` / `Claymation Style` (`232970` bytes): pasa con watchlist; claymation fuerte, weapon/staff-ish prop y fantasy warrior literal.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-021|SP04-022|SP04-023|SP04-024" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_021_024_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; runtime y catalogo de variants actualizados.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- El guardrail redujo libreria/cuarto en esta tanda, pero `SP04-022/023/024` siguen con props/escena demasiado concretos; carousel si, primary no.
+- Se corrigieron los 8 candidatos de mayor valor devueltos por subagentes en esta ronda. Proxima semantica: pedir otro scout read-only o revisar manualmente los remanentes de `pack_07` / `pack_08` antes de tocar mas.
+- Proxima generacion recomendada: `SP04-025|SP04-026|SP04-027|SP04-028` solo si aceptamos carousel candidates con QA; para primary-ready conviene `--print-prompts` y guardrails ID-scoped primero.
+
+## Tanda 2026-06-17 - auditoria semantica queue 8 y `pack_04` variants `qa_p04_025_028_x4`
+
+Scouts read-only revisaron remanentes de `pack_07` y `pack_08`; se aplicaron 8 fixes semanticos minimos y se genero otra ola x4 de variants de carousel. Sin promocion de primarias.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-013.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-061.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-069.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-077.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-015.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-016.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-021.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-056.yaml`
+
+Alcance:
+
+- `SP07-013`: cambia `rain/cold/dark/grey` por overcast gloom, cold industrial grey cast y storm-soaked drift.
+- `SP07-061`: cambia `warm/fire` por dominant warm palette, cozy fireplace mood y orange heat glow overriding glacial optics.
+- `SP07-069`: baja conversion obligatoria a vinilo inflable; queda como comportamiento compatible de presion, seams y brillo PVC.
+- `SP07-077`: baja habitat orbital obligatorio; conserva curvature, horizon wrap, ecologia lineal y escala macro como lenguaje.
+- `SP08-015`: cambia `realistic clothes/dull` por licensed-character replica, low-effort costume y flat convention snapshot.
+- `SP08-016`: reemplaza ancla IP `Seinfeld` por `90s sitcom normcore` / everyday New York casual.
+- `SP08-021`: baja props obligatorios y `all black`; conserva pastel-goth contrast con motifs opcionales.
+- `SP08-056`: elimina boilerplate generico final; concentra brief en liquid highlight, non-clinging drape y satin material behavior.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-025-01` / `Felt Tip Marker` (`497640` bytes): watchlist alto; se fue a watercolor/fantasy prop, no lee felt-tip marker con claridad.
+- `SP04-026-01` / `Pop-Up Book` (`372234` bytes): pasa fuerte; pop-up book muy legible, literal pero preset-compatible.
+- `SP04-027-01` / `Whimsical Ink` (`429318` bytes): pasa con watchlist; ink/storybook claro, pero linterna protagonista.
+- `SP04-028-01` / `Chalk Pastel` (`541806` bytes): pasa con watchlist; pastel fuerte, pero orbe/portal/fantasy literal.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-025|SP04-026|SP04-027|SP04-028" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_025_028_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run styles:runtime` -> `packs=16 presets=1662`; runtime y catalogo de variants actualizados.
+- `bun run styles:validate -- --pack=pack_04 --coverage` -> `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `pack_07 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=0/80 staleDefaultImages=80 missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> `pack_08 taxonomy=80/80 defaultImages=80/80 availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+Lectura de riesgo:
+
+- `SP04-025` no deberia contarse como buen candidate; mantener solo como carousel opcional o regenerar con prompt ID-scoped.
+- `SP04-027/028` siguen con objeto magico/orbe/portal. Para primary-ready, preview prompts antes de seguir `SP04-029+`.
+- Proxima semantica: otro scout read-only sobre remanentes reales o pasar a cierre visual/category bases cuando pack_07/08 ya no devuelvan top issues claros.
+
+## Tanda 2026-06-17 - auditoria semantica queue 9 y `pack_04` variants `qa_p04_029_040_x4`
+
+Se corrio auditoria read-only en subagentes mientras seguia la generacion. Darwin detecto que `pack_04` estaba cayendo a base generica para categorias reales nuevas; se agregaron bases para `fantasy_and_concept_illustration`, `childrens_and_educational` y `editorial_illustration`, mas guardrail `pack_04` reforzado contra rooms, markets, libraries, fantasy hallways, props protagonistas y abstraccion vacia. Tesla devolvio 12 fixes semanticos de alto valor; se aplicaron todos.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-004.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-006.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-028.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-058.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-008.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-012.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-019.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-022.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-028.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-029.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-036.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-066.yaml`
+
+Alcance:
+
+- `SP07-004`: negativos `dark/cold/metal/plastic` pasan a drift concreto: gloomy low-key, cold industrial, hard metal dominance y glossy plastic dominance.
+- `SP07-006`: negativos `wood/glass/painted/delicate` pasan a wood-warmth, glass-curtain-wall, painted finish hiding raw mass y delicate trim.
+- `SP07-028`: `concrete/industrial` pasa a bare gray concrete dominance, smokestack industrial mood y greenwashing tech facade.
+- `SP07-058`: `brick/wood` pasa a ordinary brick-wall dominance, wood-cabin material lock y opaque masonry overriding crystalline optics.
+- `SP08-008`: slogan legible pasa a illegible protest marks; negative agrega `readable text`.
+- `SP08-012`: baja anclas Holbein/Tudor/French hood/chain-of-office hacia early-modern court regalia, structured court headwear y ceremonial trim.
+- `SP08-019`: baja pump/portfolio lock hacia tailored geometry y polished leather accessory cues.
+- `SP08-022`: elimina marca `Converse`; queda unbranded canvas low-top / worn canvas sneaker texture.
+- `SP08-028`: resuelve contradiccion `basket` obligatorio vs anti-basket; queda woven-straw texture y apron-tie logic.
+- `SP08-029`: baja glasses/satchel/fountain-pen lock hacia wire-rim geometry, paper-cream contrast, worn-leather accents e ink mood.
+- `SP08-036`: reemplaza `Thor-hammer` por hammer-like amulet silhouette.
+- `SP08-066`: reemplaza negative `fabric` por soft textile drape dominance, sewn garment realism y cloth-first finish.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-029-01` / `Sticker Art` (`328596` bytes): usable con watchlist alto; sticker read claro, pero personaje fantasy demasiado protagonista.
+- `SP04-030-01` / `Scientific Botanical` (`436108` bytes): pasa fuerte; botanical diagram/read limpio, sin texto legible.
+- `SP04-031-01` / `Art Deco Poster` (`391050` bytes): usable con watchlist; deco fuerte, pero escenario/personaje especifico.
+- `SP04-032-01` / `Mucha Art Nouveau Poster` (`661036` bytes): pasa con watchlist; estilo fuerte, prop magico protagonista.
+- `SP04-033-01` / `Propaganda Poster` (`471060` bytes): usable con watchlist; poster fuerte, pero asta/arma-like prop.
+- `SP04-034-01` / `Psychedelic Poster (60s)` (`714908` bytes): pasa fuerte; poster psicodelico claro, sin texto.
+- `SP04-035-01` / `Minimalist Vector` (`99646` bytes): watchlist alto; vector minimo, pero personaje fantasy con lanza debilita preset.
+- `SP04-036-01` / `Collage Art (Dada)` (`643342` bytes): pasa fuerte; collage dada claro, sin texto legible.
+- `SP04-037-01` / `Bauhaus Poster` (`474976` bytes): pasa fuerte; Bauhaus geometry readable, sin texto.
+- `SP04-038-01` / `National Park Poster (WPA)` (`537932` bytes): pasa con watchlist; WPA/screenprint claro, pero fantasy landscape drift.
+- `SP04-039-01` / `Movie Poster (Painted)` (`313588` bytes): watchlist alto; se fue a escena fantasy cinematografica mas que painted poster.
+- `SP04-040-01` / `Infographic` (`123098` bytes): usable con watchlist; chart primitives claros, pero objeto/instalacion UI-like.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-029|SP04-030|SP04-031|SP04-032" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_029_032_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-033|SP04-034|SP04-035|SP04-036" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_033_036_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-037|SP04-038|SP04-039|SP04-040" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_037_040_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- Mejora clara tras bases/guardrails, pero `SP04-035` y `SP04-039` no son buenos primary candidates. Mantener como carousel o regenerar con prompts ID-scoped mas fuertes.
+- `SP04-029/031/032/033/038/040` son carousel candidates, no primarias automaticas.
+- Para acelerar sin degradar: siguiente ola puede ser `SP04-041|SP04-042|SP04-043|SP04-044`, pero conviene revisar categorias/presets primero si apuntamos a primary-ready.
+
+## Tanda 2026-06-17 - auditoria semantica queue 10 y `pack_04` variants `qa_p04_041_044_x4`
+
+Noether hizo segundo pase read-only sobre remanentes de `pack_07` / `pack_08` y encontro 9 issues high-value. Se aplicaron 8 completos y 1 parcial (`SP07-075`: nombre corregido; queda aesthetic interno con palabra derivada por encoding si queremos limpieza posterior). En paralelo se genero otra ola x4 de variants para carousel.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-019.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-059.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-006.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-013.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-014.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-060.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-075.yaml`
+
+Alcance:
+
+- `SP08-006`: marcas/materiales propietarios `Gore-Tex Pro`, `Dyneema`, `fidlock` pasan a waterproof membrane, UHMWPE composite panels y magnetic technical closures.
+- `SP08-014`: `Multicam` / `Cordura` pasan a multiscale camouflage breakup y abrasion-resistant ballistic nylon.
+- `SP08-075`: `Klimt-gold` / `Klimt-like luxury` pasan a Secessionist/ornamental gilded mosaic luxury.
+- `SP07-075`: nombre visible pasa de `Escherian Impossible Circulation` a `Impossible Circulation Optical Paradox`; queda aesthetic interno pendiente por encoding.
+- `SP07-059`: exclusiones `hobbit-home` / madriguera literaria pasan a round-door pastoral burrow-home trope / licensed literary burrow-home.
+- `SP08-013`: `undying-lands longing` pasa a timeless immortal-realm longing.
+- `SP07-019`: `Tiffany` / `favrile` pasan a vidrio emplomado / art glass; negative `straight lines` pasa a `rigid rectilinear grid`.
+- `SP08-060`: negative `shiny/hard` pasa a `plastic gloss` / `hard metal glare`.
+- `SP07-030`: negative conceptual `capitalist` pasa a luxury retail gloss, corporate glass tower y consumer signage.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-041-01` / `Fashion Illustration` (`329150` bytes): pasa fuerte; fashion illustration clara, sin texto/UI.
+- `SP04-042-01` / `Album Cover (Surreal)` (`472170` bytes): usable con watchlist; surreal/album cover fuerte, pero personaje fantasy-staging.
+- `SP04-043-01` / `Pulp Magazine Cover` (`577676` bytes): pasa con watchlist; pulp claro, pero escena noir muy especifica.
+- `SP04-044-01` / `Travel Poster (Vintage)` (`561226` bytes): pasa fuerte; travel poster vintage claro, sin texto.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-041|SP04-042|SP04-043|SP04-044" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_041_044_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-041` y `SP04-044` son buenos carousel candidates.
+- `SP04-042` y `SP04-043` deben quedarse como carousel/watchlist, no primary automatico.
+- Si seguimos generando rapido, proxima ola natural: `SP04-045|SP04-046|SP04-047|SP04-048`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_045_048_x4`
+
+Se genero otra ola x4 de variants de carousel usando los guardrails actuales de `pack_04`. No hubo cambios semanticos nuevos en esta mini-tanda.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-045-01` / `Gig Poster (Screenprint)` (`824886` bytes): usable con watchlist alto; screenprint fuerte, pero personaje fantasy/prop protagonista.
+- `SP04-046-01` / `Speedpaint` (`278332` bytes): usable con watchlist; gestualidad speedpaint clara, pero warrior/fantasy scene domina.
+- `SP04-047-01` / `Matte Painting` (`155972` bytes): pasa con watchlist; matte painting atmosferico claro, pero personaje/fantasy landscape literal.
+- `SP04-048-01` / `Character Sheet` (`298518` bytes): pasa fuerte; character sheet legible con vistas secundarias y swatches sin texto.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-045|SP04-046|SP04-047|SP04-048" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_045_048_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-048` puede quedar como buen carousel candidate.
+- `SP04-045/046/047` suman cobertura visual, pero no primary-ready sin una segunda pasada mas anti-fantasy-character.
+- Proxima ola natural: `SP04-049|SP04-050|SP04-051|SP04-052`, idealmente con prompt preview si queremos cortar el sesgo a personaje epico.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_049_052_x4` y category bases `pack_08..pack_11`
+
+Se genero otra ola x4 de variants de carousel. Tambien se actualizo `docs/active/style-category-bases-audit.md` con el auditor existente; el slice objetivo `pack_08..pack_11` queda cubierto `20/20`.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-049-01` / `Environment Concept` (`285532` bytes): usable con watchlist; environment concept claro, pero personaje/staff fantasy domina.
+- `SP04-050-01` / `Vehicle Design` (`317578` bytes): pasa; vehicle design legible, sin texto/UI.
+- `SP04-051-01` / `Creature Design` (`438772` bytes): pasa; criatura clara, buen foco de diseno.
+- `SP04-052-01` / `Isometric Game Art` (`261880` bytes): pasa; isometric game art claro, prop/personaje coherente.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-049|SP04-050|SP04-051|SP04-052" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_049_052_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `bun run scripts/audit-style-category-bases.ts` -> actualizo `docs/active/style-category-bases-audit.md`.
+- Category bases objective slice: `pack_08 5/5`, `pack_09 5/5`, `pack_10 5/5`, `pack_11 5/5`.
+
+Lectura de riesgo:
+
+- `SP04-049` debe quedarse como carousel/watchlist, no primary automatico.
+- `SP04-050/051/052` son buenos carousel candidates.
+- Faltantes de category bases siguen fuera del slice objetivo actual (`pack_04`, `pack_05`, `pack_06`, `pack_07`, `pack_12`, `pack_13`, `pack_14`, `pack_15`, `pack_16`).
+
+## Tanda 2026-06-17 - auditoria semantica queue 11 y `pack_04` variants `qa_p04_053_056_x4`
+
+Hypatia hizo pase read-only final sobre `pack_07` / `pack_08` y encontro 8 issues high-value remanentes. Se aplicaron todos con reemplazos de string concretos. En paralelo se genero otra ola x4 de variants de carousel.
+
+Presets ajustados:
+
+- `components/recipes/styles/manifests/presets/pack_07/SP07-031.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-075.yaml`
+- `components/recipes/styles/manifests/presets/pack_07/SP07-080.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-012.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-030.yaml`
+- `components/recipes/styles/manifests/presets/pack_08/SP08-067.yaml`
+
+Alcance:
+
+- `SP08-067`: `Warhol-factory` pasa a factory-floor pop-art irreverence; negative `fabric` pasa a plain textile drape dominance / soft woven cloth replacing bubble plastic.
+- `SP08-002`: `reflective 3M` pasa a retroreflective tape.
+- `SP08-030`: `reflective 3M` pasa a retroreflective tape.
+- `SP07-031`: `Velcro Blue` / `velcro de retencion` pasa a Hook-and-loop Blue / hook-and-loop retention.
+- `SP07-075`: `escheriana` pasa a perspectiva imposible sin artista/persona.
+- `SP08-012`: `Holbein citation` pasa a early-modern court-portrait citation.
+- `SP07-080`: `time-machine roundels` / `roundels` pasa a recursive retrofuturist control-surface grammar / circular wall modules.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-053-01` / `Storyboard Sketch` (`518868` bytes): pasa con watchlist; storyboard sketch claro, pero arrows/circles muy marcados.
+- `SP04-054-01` / `Prop Design` (`472176` bytes): usable con watchlist alto; prop design claro, pero sword/weapon domina.
+- `SP04-055-01` / `Keyframe Art` (`222544` bytes): watchlist alto; fantasy-character key art demasiado generico.
+- `SP04-056-01` / `Photobash` (`293384` bytes): watchlist alto; photobash/cinematic read, pero fantasy-character scene domina.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-053|SP04-054|SP04-055|SP04-056" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_053_056_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-053` sirve como carousel; `SP04-054/055/056` no son primary-ready.
+- Si seguimos `SP04-057..060`, conviene aplicar guardrail local anti-fantasy-character para concept-art production assets.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_057_060_x4`
+
+Se agregaron motif guardrails locales para `SP04-057..060` antes de generar: blueprint sin texto legible, low-poly sin epic hero como default, HUD sin mission/gun-sight UI, y weapon-design sin arma literal como unico sujeto. Se genero otra ola x4 de variants de carousel.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-057-01` / `Blueprint Schematic` (`505666` bytes): pasa fuerte; blueprint/orthographic/exploded view claro, sin texto legible.
+- `SP04-058-01` / `Low Poly Concept` (`253528` bytes): usable con watchlist; low-poly claro, pero personaje fantasy todavia presente.
+- `SP04-059-01` / `UI/HUD Design` (`390692` bytes): watchlist alto; HUD visible, pero personaje+espada dominan.
+- `SP04-060-01` / `Weapon Design` (`162980` bytes): watchlist alto; concept mechanical claro, pero arma literal domina.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-057|SP04-058|SP04-059|SP04-060" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_057_060_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- Guardrails ayudaron en `SP04-057`, parcial en `SP04-058`, insuficientes en `SP04-059/060`.
+- `SP04-059/060` no deben ser primary; si hacen falta primary-ready, regenerar con prompt aun mas abstracto/object-system.
+- Proxima ola natural: `SP04-061|SP04-062|SP04-063|SP04-064`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_061_064_x4`
+
+Se agregaron motif guardrails locales para `SP04-061..064` antes de generar: linocut sin workshop/portrait default, etching sin banknote/seal/portrait, ukiyo-e sin masterwork/seal/calligraphy, stipple sin tattoo/portrait/fantasy hero. Se genero otra ola x4 de variants de carousel.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-061-01` / `Linocut Print` (`738520` bytes): watchlist alto; linocut claro, pero workshop/persona/portrait domina.
+- `SP04-062-01` / `Etching (Engraving)` (`951714` bytes): watchlist alto; etching claro, pero retrato/artista domina.
+- `SP04-063-01` / `Hokusai Woodcut (Floating World)` (`629554` bytes): pasa con watchlist; woodcut/ukiyo-e claro, paisaje/figura literal.
+- `SP04-064-01` / `Stipple (Dotwork)` (`766580` bytes): pasa con watchlist; dotwork fuerte, pero fantasy figure presente.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-061|SP04-062|SP04-063|SP04-064" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_061_064_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-061/062` no deben ser primary; requieren prompt mas object/mark-system y menos human-maker.
+- `SP04-063/064` sirven como carousel, no primary automatico.
+- Proxima ola natural: `SP04-065|SP04-066|SP04-067|SP04-068`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_065_068_x4`
+
+Se agregaron motif guardrails locales para `SP04-065..068` antes de generar: lithograph sin studio/portrait, screenprint sin celebrity/product/title, monotype sin artist portrait, cyanotype sin botanicals-only/science-prop cliche. Se genero otra ola x4 de variants de carousel.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-065-01` / `Lithograph` (`637076` bytes): pasa fuerte; litho grain y soft tonal field claros, sin texto.
+- `SP04-066-01` / `Screenprint (Serigraph)` (`643674` bytes): pasa con watchlist; screenprint claro, pero fantasy character domina.
+- `SP04-067-01` / `Monotype` (`618446` bytes): watchlist alto; print transfer visible, pero portrait/artist staging domina.
+- `SP04-068-01` / `Cyanotype (Blueprint)` (`617824` bytes): pasa con watchlist; cyanotype claro, pero fantasy figure presente.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-065|SP04-066|SP04-067|SP04-068" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_065_068_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-065` es buen carousel candidate.
+- `SP04-067` no debe ser primary; necesita regenerate object/mark-system.
+- `SP04-066/068` sirven solo como carousel/watchlist por personaje fantasy.
+- Proxima ola natural: `SP04-069|SP04-070|SP04-071|SP04-072`.
+
+## Tanda 2026-06-17 - auditoria semantica queue 12 y `pack_04` variants `qa_p04_069_072_x4`
+
+Se mantuvo generacion x4 mientras un subagente hizo auditoria read-only de `pack_07` / `pack_08`. Se agregaron motifs locales para `SP04-069..072` antes de generar, apuntando a tecnica grafica legible sin oficina/documento, gothic-room, notebook/desk o retrato por default.
+
+Fixes semanticos aplicados:
+
+- `SP07-080`: se retiro lenguaje `temporal` / `rotor` y se reemplazo por control-surface dimensional, circular modules y central mechanism neutral.
+- `SP08-035`: `Kurosawa-frame` -> `jidaigeki widescreen gravitas`.
+- `SP08-042`: `war-boy white` -> `bone-white road paint`.
+- `SP08-043`: `Exotic fabric` -> `Rare off-world fabric`; `twin-sun tableaux` -> `binary-sun scenic tableaux`.
+- `SP08-045`: `Kirby-style copy` -> `silver-age artist imitation`.
+- `SP08-061`: negativo reforzado contra `bare-skin focus`, `lingerie body read`, `portrait body`.
+- `SP08-073`: negativo reforzado contra `nude-body setup`, `bare-skin focus`, `body-first portrait`.
+- `SP08-079`: renombrado `Invisibility Cloak` -> `Refractive Concealment Veil`; se reemplazo wizard-cloak/magic por optica/refraccion.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-069-01` / `Rubber Stamp` (`738408` bytes): pasa con watchlist; stamp grammar clara, pero sujeto fantasy con objeto vertical domina.
+- `SP04-070-01` / `Mezzotint` (`221450` bytes): watchlist alto; mezzotint/chiaroscuro claro, pero retrato fantasy/gothic domina.
+- `SP04-071-01` / `Aquatint` (`626986` bytes): watchlist alto; aquatint/grain atmosferico claro, pero figura encapuchada + escena fantasy dominan.
+- `SP04-072-01` / `Ballpoint Pen` (`844582` bytes): pasa con watchlist; ballpoint blue/hatching claro, criatura representativa, pero background algo recargado.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-069|SP04-070|SP04-071|SP04-072" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_069_072_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-069` y `SP04-072` son buenos carousel candidates.
+- `SP04-070` y `SP04-071` no deben promoverse a primary; regenerar con object/mark-system mas fuerte si se buscan primarias.
+- Proxima ola natural: `SP04-073|SP04-074|SP04-075|SP04-076`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_073_076_x4`
+
+Se agregaron motif guardrails locales para `SP04-073..076` antes de generar: fountain-pen sin escritura/manuscrito/prop pen; Sharpie sin poster/tag/signage; tattoo flash sin skull/rose/dagger/skin/flash-grid; graffiti tag sin word/name/wall/brick alley. Se genero otra ola x4 de variants de carousel.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-073-01` / `Fountain Pen` (`403808` bytes): pasa fuerte; flex-stroke, wet ink y vellum read claros, sin texto.
+- `SP04-074-01` / `Sharpie Art` (`264266` bytes): watchlist alto; marker masses claras, pero fantasy hero/flag domina.
+- `SP04-075-01` / `Tattoo Flash (Traditional)` (`675784` bytes): pasa fuerte; flash grammar clara, criatura amistosa, sin texto ni skin.
+- `SP04-076-01` / `Graffiti (Tag)` (`471810` bytes): pasa con watchlist; aerosol gesture/overspray claros, criatura no-textual, pero base de wall/platform aparece.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-073|SP04-074|SP04-075|SP04-076" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_073_076_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-073` y `SP04-075` son buenos carousel candidates.
+- `SP04-076` sirve como carousel, no primary automatico por staging de pared/plataforma.
+- `SP04-074` no debe promoverse a primary; regenerar con object/emblem sin personaje fantasy.
+- Proxima ola natural: `SP04-077|SP04-078|SP04-079|SP04-080`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_077_080_x4` y retry `SP04-080`
+
+Se agregaron motif guardrails locales para `SP04-077..080`: wildstyle sin palabra/mural/train/street; protest-stencil sin slogan/crowd/political figure/wall; blackletter sin palabra/manuscrito/scroll; brush-pen sin texto/bamboo/landscape/brush prop. La primera salida de `SP04-080` cayo en taller/persona y la segunda en bloque/mesa; se agrego base override para `SP04-080` porque la base de `Printmaking And Ink` empujaba a plate/block/press. Tercer retry usable.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-077-01` / `Graffiti (Piece)` (`566450` bytes): pasa con watchlist; wildstyle creature/letterform claro, pero wall/platform staging presente.
+- `SP04-078-01` / `Street Protest Stencil Art` (`654394` bytes): watchlist alto; stencil/overspray claro, pero figura hero y arquitectura dominan.
+- `SP04-079-01` / `Calligraphy (Blackletter)` (`561336` bytes): pasa fuerte; blackletter ornamental dragon/emblem claro, sin texto legible.
+- `SP04-080-03` / `Brush Pen Ink` (`341554` bytes): pasa fuerte; brush-ink/wash sobre sujeto simple, sin persona/taller.
+
+Variants rechazadas / no usar:
+
+- `SP04-080-01` (`526408` bytes): rechazo; persona, mesa, bloque de impresion, roller.
+- `SP04-080-02` (`481596` bytes): rechazo; bloque/mesa sigue dominando.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-077|SP04-078|SP04-079|SP04-080" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_077_080_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-080 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_080_retry_object --force` -> `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-080 --parallel=1 --variant-slot=3 --session-suffix=qa_p04_080_retry_base --force` -> `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-079` y `SP04-080-03` son buenos carousel candidates.
+- `SP04-077` sirve como carousel, no primary automatico.
+- `SP04-078` no debe promoverse a primary sin regenerar object/symbol-only.
+- Proxima ola natural: `SP04-081|SP04-082|SP04-083|SP04-084`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_081_084_x4` y retry `SP04-082`
+
+Se retiraron referencias autorales concretas de `SP04-081` y `SP04-083`. Se agregaron motif guardrails locales para `SP04-081..084`: silhouette sin artist imitation/grid/UI; photobash sin character portrait/weapon/UI; gesture sin named animator/model sheet; material sheet sin labels/text/product board. `SP04-082-01` quedo demasiado character-concept; se agrego base override y retry `SP04-082-02`.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-081-01` / `Thumbnail Silhouette Exploration` (`305662` bytes): pasa con watchlist; 3-value silhouette claro, pero single fantasy hero/sword domina.
+- `SP04-082-02` / `Photobash Paintover Iteration` (`399426` bytes): usable con watchlist; fragmento environment/object y textura compuesta mejor que `-01`, pero fantasy environment domina.
+- `SP04-083-01` / `Loose Gesture Energy Sketch` (`544594` bytes): pasa con watchlist; gesture/search lines fuertes, pero fantasy hero/sword domina.
+- `SP04-084-01` / `Material Texture Exploration Sheet` (`643820` bytes): pasa fuerte; swatches/material insets claros, sin texto legible.
+
+Variants rechazadas / no usar:
+
+- `SP04-082-01` (`523718` bytes): rechazo; character portrait/key art domina, photobash-paintover poco legible.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-081|SP04-082|SP04-083|SP04-084" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_081_084_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-082 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_082_retry_base --force` -> `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-084` es buen carousel candidate.
+- `SP04-081`, `SP04-082-02` y `SP04-083` sirven como carousel, no primary automatico.
+- Si se buscan primarias, regenerar `SP04-081/083` sin hero/sword y `SP04-082` con object/material fragment mas literal.
+- Proxima ola natural: `SP04-085|SP04-086|SP04-087|SP04-088`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_085_088_x4` y retries `SP04-085/088`
+
+Se retiro referencia autoral concreta de `SP04-088`. Se agregaron motif guardrails para `SP04-085..088`: color-script sin hero/personaje/panel grid; callout sin texto/dimensiones; silhouette iteration sin single hero/sword; rough environment sin named-artist/hero/corridor. `SP04-085-01` y `SP04-088-01` cayeron en personaje fantasy; se agregaron base overrides y retry x2.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-085-02` / `Mood Color Script Pass` (`102156` bytes): pasa fuerte; tres mood keys, palette/time progression, sin personaje.
+- `SP04-086-01` / `Callout Detail Sheet` (`501738` bytes): pasa con watchlist; callouts/exploded details claros, pero character/armor sheet domina.
+- `SP04-087-01` / `Silhouette Iteration Sheet` (`203914` bytes): pasa fuerte; silhouette variants claras, sin texto.
+- `SP04-088-02` / `Rough Environment Pass` (`239788` bytes): usable con watchlist; environment blockout y atmosfera claros, pero fantasy architecture domina.
+
+Variants rechazadas / no usar:
+
+- `SP04-085-01` (`290004` bytes): rechazo; hero character + fantasy landscape domina.
+- `SP04-088-01` (`251176` bytes): rechazo; hero character + cliff pose domina.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-085|SP04-086|SP04-087|SP04-088" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_085_088_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-085|SP04-088" --parallel=2 --variant-slot=2 --session-suffix=qa_p04_085_088_retry_base --force` -> `generated=2 attempted=2 skipped=98 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-085-02` y `SP04-087-01` son buenos carousel candidates.
+- `SP04-086-01` y `SP04-088-02` sirven como carousel, no primary automatico.
+- Si se buscan primarias, regenerar `SP04-086` object/detail-only y `SP04-088` menos fantasy architecture.
+- Proxima ola natural: `SP04-089|SP04-090|SP04-091|SP04-092`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_089_092_x4` y retry `SP04-092`
+
+Se retiro referencia autoral concreta de `SP04-089`. Se agregaron motif guardrails para `SP04-089..092`: creature design sin named artist/human/final monster; prop variant sin weapon/UI/text; architecture massing sin workshop/furniture/photo; costume board sin full model/body-first/lingerie/readable labels. `SP04-092-01` cayo en full posed model; se agrego base override y retry usable.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-089-01` / `Creature Design Iteration` (`528634` bytes): pasa fuerte; anatomy/variant/swatch sheet claro, sin texto.
+- `SP04-090-01` / `Prop Variant Design Sheet` (`536752` bytes): pasa fuerte; prop variants y exploded parts claros, sin texto legible.
+- `SP04-091-01` / `Architecture Massing Model` (`451680` bytes): pasa fuerte; foam-core/chipboard massing claro, sin furniture/interior.
+- `SP04-092-02` / `Costume Design Exploration Board` (`456018` bytes): pasa fuerte; garment fragments, swatches y trims claros, sin rostro/full body.
+
+Variants rechazadas / no usar:
+
+- `SP04-092-01` (`584740` bytes): rechazo; full posed model domina.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-089|SP04-090|SP04-091|SP04-092" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_089_092_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-092 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_092_retry_base --force` -> `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- Los cuatro son buenos carousel candidates.
+- `SP04-090` puede necesitar version object-only si se promueve a primary.
+- Proxima ola natural: `SP04-093|SP04-094|SP04-095|SP04-096`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_093_096_x4` y retries `SP04-093/096`
+
+Se retiraron referencias autorales concretas de `SP04-094` y `SP04-095`. Se agregaron motif guardrails para `SP04-093..096`: lighting scenario sin character/hero/UI; anatomy sheet sin named artist/human medical/gore; foliage kit sin named studio/forest scene; weapon progression como equipment no-weapon. `SP04-093-01` cayo en hero fantasy; `SP04-096-01` era usable pero sin progresion clara. Se agregaron base overrides y retry x2.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-093-02` / `Lighting Scenario Pass` (`170098` bytes): pasa fuerte; same-form relighting x5 claro, sin personaje.
+- `SP04-094-01` / `Anatomy Reference Sheet` (`588812` bytes): pasa fuerte; layered anatomy/reference plate no-humana clara, sin texto.
+- `SP04-095-01` / `Foliage Design Kit` (`617316` bytes): pasa con watchlist; foliage/material read claro, pero mas escena botanica que kit.
+- `SP04-096-02` / `Weapon Tier Progression` (`419552` bytes): pasa fuerte; equipment progression no-weapon clara, 4 tiers.
+
+Variants rechazadas / no usar:
+
+- `SP04-093-01` (`152414` bytes): rechazo; hero character + fantasy vista domina.
+- `SP04-096-01` (`512094` bytes): no preferida; ornate equipment claro pero sin progresion comparativa suficiente.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-093|SP04-094|SP04-095|SP04-096" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_093_096_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-093|SP04-096" --parallel=2 --variant-slot=2 --session-suffix=qa_p04_093_096_retry_base --force` -> `generated=2 attempted=2 skipped=98 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-093-02`, `SP04-094-01`, `SP04-096-02` son buenos carousel candidates.
+- `SP04-095-01` sirve como carousel, no primary automatico.
+- Proxima ola natural: `SP04-097|SP04-098|SP04-099|SP04-100`.
+
+## Tanda 2026-06-17 - `pack_04` variants `qa_p04_097_100_x4` y retry `SP04-097`
+
+Se retiro referencia autoral concreta de `SP04-097`. Se agregaron motif guardrails para `SP04-097..100`: thumbnail grid sin director/cine/printmaking prop; world map sin labels/compass hero/fantasy novel map cliche; UI/HUD wireframe sin texto/numeros/screenshot/targeting; monster scale chart sin labels/human benchmark/single creature. `SP04-097-01` cayo en prop repetido de printmaking; se agrego base override y retry usable.
+
+Variants aceptadas como carousel candidates:
+
+- `SP04-097-02` / `Composition Thumbnail Grid` (`586658` bytes): pasa fuerte; grayscale composition thumbnails claros, sin brayer/prop repetido.
+- `SP04-098-01` / `World Map Concept` (`812532` bytes): pasa fuerte; atlas/cartographic plate claro, sin labels legibles.
+- `SP04-099-01` / `UI/HUD Wireframe Concept` (`536546` bytes): usable con watchlist; wireframe/HUD claro, pero central marker character-like domina.
+- `SP04-100-01` / `Monster Size Comparison Chart` (`358630` bytes): pasa fuerte; monster scale lineup y footprint marks claros, sin labels/texto.
+
+Variants rechazadas / no usar:
+
+- `SP04-097-01` (`520994` bytes): rechazo; brayer/printmaking tool como prop repetido.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-097|SP04-098|SP04-099|SP04-100" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_097_100_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-097 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_097_retry_base --force` -> `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`.
+
+Lectura de riesgo:
+
+- `SP04-097-02`, `SP04-098-01` y `SP04-100-01` son buenos carousel candidates.
+- `SP04-099-01` sirve como carousel, no primary automatico.
+- `pack_04` queda completo como sweep de carousel variants `SP04-001..100`; primaries siguen stale/default y requieren politica separada de promocion o regeneracion.
+
+## Tanda 2026-06-17 - `pack_05` variants `qa_p05_021_029*`
+
+Primera entrada a `pack_05`. La primera ola salio demasiado fan-anime/IP-like y una generacion fallo por socket; se endurecieron `pack_05__modern_shonen_and_action` y motifs `SP05-021/022/023/025/028/029`. Se reintentaron slots seguros sin promover primaries.
+
+Variants aceptadas como carousel candidates:
+
+- `SP05-021-03` / `Headband Ninja Journey` (`409504` bytes): usable con watchlist; costume/motion fragment, menos IP-like que slots previos.
+- `SP05-022-02` / `Urban Spirit Blade` (`255670` bytes): usable; aura urbana sobrenatural, sin espada visible.
+- `SP05-023-03` / `Grand Pirate Adventure` (`376638` bytes): usable con watchlist; headless costume/sky/rope read, menos IP-like.
+- `SP05-025-02` / `Shadow Notebook Thriller` (`314704` bytes): pasa; thriller grafico, abstract-symbolic, sin notebook legible.
+- `SP05-028-04` / `Lo-Fi Sword Roadtrip` (`487926` bytes): usable; roadtrip rhythm, no sword/lamp/interior.
+- `SP05-029-02` / `Chaotic Indie Adolescence` (`495668` bytes): pasa; chaotic pop-collage anime energy, no readable text.
+
+Variants rechazadas / no usar:
+
+- `SP05-021-01` (`407838` bytes) y `SP05-021-02` (`421882` bytes): demasiado ninja-franchise-like.
+- `SP05-022-01` (`308756` bytes): sword/urban spirit blade demasiado literal.
+- `SP05-023-01` (`423474` bytes) y `SP05-023-02` (`369268` bytes): demasiado pirate-franchise-like.
+- `SP05-025-01` (`263394` bytes): pelea/escalera demasiado literal.
+- `SP05-028-01` (`433000` bytes), `SP05-028-02` (`476808` bytes) y `SP05-028-03` (`334382` bytes): sword/personaje/interior/lamp.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_021_029_x6 --force` -> `generated=5 attempted=6 skipped=129 failed=1 packs=pack_05`; `SP05-029` fallo por `Codex app-server socket closed`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029" --parallel=6 --variant-slot=2 --session-suffix=qa_p05_021_029_retry_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-023|SP05-028" --parallel=3 --variant-slot=3 --session-suffix=qa_p05_021_023_028_retry_fragment_x3 --force` -> `generated=3 attempted=3 skipped=132 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 --preset=SP05-028 --parallel=1 --variant-slot=4 --session-suffix=qa_p05_028_retry_no_room --force` -> `generated=1 attempted=1 skipped=134 failed=0 packs=pack_05`.
+
+## Tanda 2026-06-17 - `pack_05` variants `qa_p05_031_036_x6`
+
+Se agregaron motifs seguros para `SP05-031..036` por riesgo IP/violencia: no named likeness, no gore, no weapon-first. `SP05-032-01` y `SP05-036-01` cayeron en weapon/hero literal; se reintentaron con base overrides no-weapon.
+
+Variants aceptadas como carousel candidates:
+
+- `SP05-031-01` / `Painterly Blade Fantasy` (`524460` bytes): usable; ceremonial motion arcs, no blade visible.
+- `SP05-032-02` / `Gritty Urban Curses` (`356292` bytes): usable con watchlist; occult aura/hand crop, prop raro abajo.
+- `SP05-033-01` / `Chaotic Splatter Action` (`664016` bytes): watchlist; punk splatter graphic, rojo intenso pero no gore explicito.
+- `SP05-034-01` / `Bright Hero Academy` (`310186` bytes): usable; bright academy-hero styling, no readable badges.
+- `SP05-035-01` / `Gritty Wallbound Survival` (`441200` bytes): usable con watchlist; vertical survival clear, industrial lamp present but preset-specific.
+- `SP05-036-02` / `Colossal War Drama` (`247138` bytes): usable; ruined mechanized scale and smoke planes, no foreground weapon.
+
+Variants rechazadas / no usar:
+
+- `SP05-032-01` (`335572` bytes): sword/weapon-first urban fight.
+- `SP05-036-01` (`287044` bytes): weapon/hero-first war drama.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-031|SP05-032|SP05-033|SP05-034|SP05-035|SP05-036" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_031_036_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-032|SP05-036" --parallel=2 --variant-slot=2 --session-suffix=qa_p05_032_036_retry_no_weapon --force` -> `generated=2 attempted=2 skipped=133 failed=0 packs=pack_05`.
+
+Lectura de riesgo:
+
+- `pack_05` necesita prompts id-specific antes de cada ola; los nombres están cerca de franquicias anime conocidas.
+- Siguiente ola recomendada: continuar con los próximos IDs del backlog `SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052`.
+
+## Tanda 2026-06-17 - semantica `pack_07/pack_08` cola subagente y `pack_05` variants `qa_p05_037_052_x6`
+
+Se cerraron ajustes semanticos pendientes de la cola read-only: `SP07-035`, `SP07-038`, `SP07-043`, `SP07-079`, `SP08-026`, `SP08-027` y `SP08-061`. Cambios clave:
+
+- `SP07-035`: baja library/lamp/shelf literal; conserva archival classicism.
+- `SP07-038`: baja bone/remains language; conserva mineral calcic subterranean pressure.
+- `SP07-043`: baja empty-field dominance; exige anchors/scale cues.
+- `SP07-079`: baja cinematic monolith proportions; conserva matte-black vertical austerity.
+- `SP08-026`: baja gang identity/intimidation/road-club scene; conserva road-worn leather utility.
+- `SP08-027`: baja fisheye/skatepark/parking-lot lock; conserva skate-zine casual.
+- `SP08-061`: elimina `nude-illusion`; conserva lace over neutral textile substrate.
+
+Para `SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052` se agregaron motifs id-specific anti-IP/anti-weapon/anti-readable-UI antes de generar.
+
+Variants aceptadas como carousel candidates:
+
+- `SP05-037-01` / `Impact Frame Comedy Hero` (`353098` bytes): usable con watchlist; deadpan impact comedy, protagonista fuerte pero no IP obvia.
+- `SP05-038-01` / `Psychedelic Psychic Minimalism` (`476152` bytes): usable con watchlist; psychic pop rupture claro, corredor/figura dominan.
+- `SP05-039-01` / `Tactical Adventure Shonen` (`361052` bytes): usable; tactical vectors y adventure clarity, sin UI/texto.
+- `SP05-040-01` / `Blade Field Urban Fantasy` (`528336` bytes): usable; mythic symbolic field, no weapon foreground.
+- `SP05-051-01` / `Neon Kinetic Alloy Sprint` (`330400` bytes): usable; neon alloy/cyber motion claro.
+- `SP05-052-01` / `Surveillance Verdict Grid` (`297398` bytes): usable con watchlist; surveillance grid read, cyborg protagonist fuerte.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_037_052_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+
+Lectura de riesgo:
+
+- `pack_05` mantiene riesgo alto de protagonistas demasiado fan-anime; seguir con motifs id-specific por ola.
+- Proxima ola recomendada: `SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058`.
+
+## Tanda 2026-06-17 - `pack_05` variants `qa_p05_053_058_x6` y retry `SP05-055/058`
+
+Se agregaron motifs id-specific anti-IP/anti-weapon/anti-gore para `SP05-053..058`. `SP05-055-01` cayo en blade-like foreground; `SP05-058-01` quedo con UI readable-ish y drones weapon-like. Se agregaron base overrides object/environment-first para `SP05-055/058` y retry x2.
+
+Variants aceptadas como carousel candidates:
+
+- `SP05-053-01` / `Hydraulic Attrition Mass` (`554678` bytes): pasa fuerte; mecha industrial pesado, sin insignia/weapon-first.
+- `SP05-054-01` / `Luminous Beam Opera` (`485886` bytes): usable con watchlist; luminous space-opera, protagonista fuerte pero sin weapon foco.
+- `SP05-055-02` / `Gothic Tech Existential Dread` (`357758` bytes): pasa fuerte; sacred industrial shell/object, sin persona/weapon.
+- `SP05-056-01` / `Geometric Ignition Urgency` (`332446` bytes): usable con watchlist; geometric ignition, protagonista fuerte pero sin texto/weapon.
+- `SP05-057-01` / `Sleek Collapse Romance` (`358252` bytes): usable con watchlist; polished collapse romance, body/suit focus fuerte pero no sexualizado.
+- `SP05-058-02` / `Remote Command Grief` (`83816` bytes): usable con watchlist alto; grief/control mood claro, baja UI, pero blando/persona fuerte.
+
+Variants rechazadas / no usar:
+
+- `SP05-055-01` (`408926` bytes): rechazo; blade-like foreground.
+- `SP05-058-01` (`280726` bytes): no preferida; readable-ish UI y drones weapon-like.
+
+Evidencia:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_053_058_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-055|SP05-058" --parallel=2 --variant-slot=2 --session-suffix=qa_p05_055_058_retry_object --force` -> `generated=2 attempted=2 skipped=133 failed=0 packs=pack_05`.
+
+Lectura de riesgo:
+
+- `SP05-058` necesita otro retry si se busca primary; `-02` solo carousel.
+- Proxima ola recomendada: `SP05-059|SP05-060|SP05-061|SP05-062|SP05-063|SP05-064`.
+
+## Tanda 2026-06-17 - `pack_05` variants `qa_p05_059_070*` y bloqueo provider
+
+Se agregaron motifs/base overrides id-specific para `SP05-059..070`, incluyendo denoise fuerte y guardrails contra armas, UI/texto, IP, corredores, mercados/bibliotecas, fantasia generica, studio props, silla/cortina/lampara repetida y microdetalle ruidoso.
+
+Variants aceptadas como carousel candidates:
+
+- `SP05-059-01` (`439490` bytes): usable con watchlist; tactical network cognition, overlays no claramente legibles.
+- `SP05-060-01` (`444102` bytes): usable con watchlist; orbital rivalry/symmetry clara, sin foreground weapon.
+- `SP05-061-02` (`546824` bytes): usable con watchlist; doom/eclipsed weight claro, todavia person-forward.
+- `SP05-062-03` (`302784` bytes): usable con watchlist alto; split mask/emblem mejorado, aun ruin/skull-adjacent.
+- `SP05-063-01` (`401234` bytes): usable con watchlist; crimson gothic authority, sin gore explicito.
+- `SP05-064-02` (`436090` bytes): usable con watchlist; wind-scoured redemption, figura fuerte pero sin weapon/gore.
+- `SP05-065-01` (`387782` bytes): solo watchlist; pale threshold claro, pero hero/ruin dominante.
+- `SP05-066-01` (`384526` bytes): watchlist; ceramic-botanical corruption, humanoid/cathedral-adjacent.
+- `SP05-070-01` (`327634` bytes): usable con watchlist; neon metamorphosis claro, character silhouette fuerte.
+
+Variants rechazadas / no usar como primary:
+
+- `SP05-061-01`, `SP05-062-01`, `SP05-062-02`, `SP05-064-01`: demasiado hero/IP/body-horror/samurai-like.
+- `SP05-067-01`, `SP05-068-01`, `SP05-069-01`: hero/cathedral/dungeon geometry dominan, no cumplen intencion object/depth/material.
+
+Hallazgo operativo:
+
+- Desde retries object-only y siguientes bloques (`SP05-091..096`, `SP05-121..126`, `SP05-221..226`, `SP05-237..242`) el provider devolvio `status needs_review`. En `qa_p05_065_070_x6` si hubo assets/repo variants; en sesiones posteriores no hubo assets recuperables via `/api/assets`.
+- Se agrego ruta `safeImagegenStyleLabel` / `safeImagegenStyleDna` / compact prompt para probar labels sanos sin nombres de franquicia, pero `SP05-121` siguio bloqueado. Siguiente prefactor recomendado: separar `provider-safe prompt request` de `preset manifest name`, y agregar recuperacion controlada de assets para jobs `needs_review` cuando existan.
+
+Auditoria subagente recibida:
+
+- `SP05-065..070`: riesgos principales confirmados en horror/anatomy/corridor/weapon/IP; `SP05-066`, `SP05-069`, `SP05-070` requieren overrides mas conservadores si se reintentan.
+- `SP05-091..100`: riesgo alto por IP, HUD/UI, gameboard/cards, bone throne, literal slime/shield/dungeon-lantern. Requieren safe prompts sin nombres de obra ni terminos bloqueantes en negatives.
+- `SP07/08`: P1 pendientes sugeridos por auditoria: `SP08-006`, `SP08-014`, `SP08-015`, `SP08-034`, `SP08-036`, `SP08-037`; P2/P3 pendientes: `SP07-032`, `SP07-054`, `SP07-073`, `SP07-080`, `SP08-008`, `SP08-042`, `SP08-074`, `SP08-076`, `SP08-080`, `SP07-003`, `SP07-015`.

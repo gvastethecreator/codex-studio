@@ -12,28 +12,31 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Abstracción mineral seca, contemplación material y economía extrema de gesto.
-  form_and_line: >-
-    Ondas rastrilladas de alta intención, planos vacíos dominantes y anclajes minerales asimétricos de equilibrio tenso.
+  aesthetic: Dry mineral abstraction, material contemplation and extreme economy of gesture.
+  form_and_line: Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.
   color_palette: Grey, White, Moss, Granite Black, Silver sand, Lichen Green
-  lighting_setup: Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.
-  material_texture: Arena/grava fina, granito meteorizado, cuarzo triturado y musgo puntual de grano aterciopelado.
-  render_quality: Minimalismo hiperlimpio con precisión granular y silencio compositivo disciplinado.
-  spatial_distortion: None
-  atmosphere: Quietud enfocada, orden ritual y suspensión temporal.
-  key_features: Campos de rastrillado, anclajes minerales, masas selectivas de materia viva y contención austera.
+  lighting_setup: Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.
+  material_texture: Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.
+  render_quality: Hyperclean minimalism with granular precision and disciplined compositional silence.
+  spatial_distortion: Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.
+  atmosphere: Focused quiet, ritual order and suspended time.
+  key_features: Raked fields, mineral anchors, selective living matter and austere containment.
   creative_brief: >-
-    El estilo reduce cualquier tema a vacío activo, superficie rastrillada y anclajes minerales en tensión. Pocos
-    elementos deben hacer mucho trabajo espacial, evitando jardin zen literal, templo contemplativo o decoracion spa.
-    La regla portable es materia mineral seca, ritmo rastrillado, escala contenida y silencio compositivo; no exige
-    edificio, paisaje, set, criatura ni escena fija.
+    Reduce any theme to active quiet, raked surface and mineral anchors in
+    tension. Few elements do heavy spatial work; moss or lichen can appear as
+    pinpoint accent, not lush garden. Keep subject legibility and scale cues;
+    avoid blank-field dominance or empty texture-only output.
 avoidRules:
-  - plants
-  - water
+  - lush planting
+  - pond
+  - running water
+  - spa rock decor
+  - blank-field dominance
+  - empty texture-only output
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-043.webp
 attributes:
-  negativePrompt: plants, water
+  negativePrompt: lush planting, pond, running water, spa rock decor, blank-field dominance, empty texture-only output
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

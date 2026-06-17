@@ -12,27 +12,27 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Uncanny porcelain artifice, bisque fragility, toy-cabinet tension translated into surface grammar
-  form_and_line: Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes, hinged articulation logic
+  aesthetic: Uncanny porcelain artifice, bisque fragility and toy-cabinet tension translated into surface grammar.
+  form_and_line: Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes and hinged articulation logic.
   color_palette: Pale white, pink, bisque, rose blush, glass blue, crackle gold, porcelain cream
-  lighting_setup: Glossy porcelain highlights, display-spot precision, soft window daylight, toy-room dimness
-  material_texture: Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi
-  render_quality: Precise, uncanny, dollmaker-artisan finish, lacquered stillness
+  lighting_setup: Glossy porcelain highlights, display-spot precision and soft window daylight.
+  material_texture: Ceramic bisque, high-fire glaze, glassy highlights, mohair-like softness, painted blush and crackle-kintsugi.
+  render_quality: Precise, uncanny dollmaker-artisan finish with lacquered stillness.
   spatial_distortion: None
-  atmosphere: Uncanny, delicate, stiff, porcelain-fragility tension
-  key_features: Glossy bisque, glassy focal cues, articulation seams, painted blush, crackle-kintsugi detail
+  atmosphere: Uncanny, delicate, stiff and porcelain-fragile.
+  key_features: Glossy bisque, glassy focal cues, articulation seams, painted blush and crackle-kintsugi detail.
   creative_brief: >-
-    Recast the input with porcelain-artifice grammar: bisque glaze,
-    articulation seams, painted blush, glassy focal shine, mohair-like softness
-    and crackle-kintsugi detail. Keep uncanny toy-cabinet tension as finish
-    only; do not require a living doll body, display cabinet, face stare or
-    posed limbs.
+    Recast the input with porcelain-artifice grammar: bisque glaze, articulation seams, painted blush,
+    glassy focal shine, mohair-like softness and crackle-kintsugi detail. Keep uncanny toy-cabinet tension
+    as finish only; do not require skinless body, living doll body, display cabinet, face stare or posed limbs.
 avoidRules:
-  - skin
+  - natural skin texture
+  - living doll body
+  - face stare lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-071.webp
 attributes:
-  negativePrompt: skin
+  negativePrompt: natural skin texture, living doll body, face stare lock
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

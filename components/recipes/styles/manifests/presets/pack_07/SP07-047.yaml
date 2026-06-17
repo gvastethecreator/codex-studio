@@ -12,22 +12,24 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Tipología de laberinto vegetal formal, basada en desorientación lúdica y cerramiento topiario.
+  aesthetic: Formal vegetative maze grammar based on playful disorientation and clipped enclosure.
   form_and_line: >-
-    Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad
-    de muros vivos altos.
+    Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy
+    and continuous tall living-wall mass.
   color_palette: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
-  lighting_setup: Pasillos en sombra con franjas solares, remates de luz al fondo y patrón moteado sobre grava.
-  material_texture: Seto densamente podado, hoja compacta, grava de tránsito y acentos de piedra/musgo en nodos.
-  render_quality: Geometría topiaria precisa con tensión de wayfinding y legibilidad de recorrido.
-  spatial_distortion: None
-  atmosphere: Desorientación curiosa, ansiedad lúdica y progresión cerrada hacia destino incierto.
-  key_features: >-
-    Cerramiento vivo recortado, ritmo de nodos, textura de ruta en grava y marcador central de
-    terminación.
+  lighting_setup: Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.
+  material_texture: Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.
+  render_quality: Precise topiary geometry with wayfinding tension and readable route pressure.
+  spatial_distortion: >-
+    Maze-like route compression, false-node rhythm and living-wall enclosure
+    without requiring a literal maze plan or central destination.
+  atmosphere: Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.
+  key_features: Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.
   creative_brief: >-
-    Cualquier imagen se vuelve decision espacial repetida: seto alto, ruta parcial, nodos falsos y
-    centro prometido. La tension nace de wayfinding controlado, no de fantasia ni misterio literal.
+    Any image becomes repeated spatial decision: high hedge pressure, partial
+    route, false nodes and controlled sightlines. Tension comes from wayfinding
+    behavior, not from fantasy mystery, a literal hedge maze or a promised
+    center marker.
 avoidRules:
   - open field
 assets:

@@ -27,14 +27,14 @@ visualDna:
     domestica concreta. Conserva logica material, escala baja y ritmo arquitectonico sereno sin fijar tipologia,
     paisaje, franquicia, criatura ni escena cerrada.
 avoidRules:
-  - dark
-  - cold
-  - metal
-  - plastic
+  - gloomy low-key palette
+  - cold industrial mood
+  - hard metal dominance
+  - glossy plastic dominance
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-004.webp
 attributes:
-  negativePrompt: dark, cold, metal, plastic
+  negativePrompt: gloomy low-key palette, cold industrial mood, hard metal dominance, glossy plastic dominance
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

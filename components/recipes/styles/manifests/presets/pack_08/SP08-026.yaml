@@ -12,26 +12,30 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Motorcycle-club iconography, outlaw utility, open-road defiance
-  form_and_line: Heavy leather, cut-off vest, engineer-boot stomp, bandana-mask line
-  color_palette: Black leather, Silver, denim-blue, club-patch color, chrome, grease-black
-  lighting_setup: Harsh chrome-reflection highlights, bar-sign neon hints, sun-glare heat
-  material_texture: Heavyweight cowhide leather, embroidered patches, metal studs, chain, dirty denim, brass zippers
-  render_quality: Tough dangerous finish, asphalt authenticity, outlaw grit
+  aesthetic: Road-worn leather utility, chrome hardware and patch-like texture without gang identity.
+  form_and_line: Heavy leather mass, cut-off vest geometry, engineer-boot structure and bandana-like line.
+  color_palette: Black leather, Silver, denim-blue, muted patch color, chrome, grease-black
+  lighting_setup: Harsh chrome-reflection highlights, restrained neon hints and sun-glare heat.
+  material_texture: Heavyweight cowhide, worn embroidery, metal studs, chain, dirty denim and brass zippers.
+  render_quality: Tough asphalt authenticity, road-worn grit and durable utility finish.
   spatial_distortion: None
-  atmosphere: Intimidating, cool, road-dog defiance, exhaust-fume authority, outlaw gravity
-  key_features: Leather vest, three-piece patch, engineer boots, chain wallet
+  atmosphere: Cool road defiance, anti-polish gravity and worn-material confidence.
+  key_features: Leather vest panels, engineer boots, chain hardware, grease-black wear and patch-like geometry without readable insignia.
   creative_brief: >-
-    Recast the input in outlaw biker codes: heavyweight cowhide, cut-off vest, embroidered patches, engineer boots,
-    chain wallet, grease black and chrome glints. Keep two-wheel defiance as style pressure without requiring a gang,
-    clubhouse, road scene, literal motorcycle or intimidating persona.
+    Recast the input in road-worn leather utility codes: heavyweight cowhide,
+    cut-off vest structure, worn patch texture, engineer boots, grease black and
+    chrome glints. Keep defiance as style pressure without requiring gang
+    identity, intimidation, motorcycle-club scene, readable insignia or road-club identity.
 avoidRules:
   - soft
-  - colorful
+  - readable insignia
+  - gang identity
+  - intimidation
+  - road-club scene
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-026.webp
 attributes:
-  negativePrompt: soft, colorful
+  negativePrompt: soft, readable insignia, gang identity, intimidation, road-club scene
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

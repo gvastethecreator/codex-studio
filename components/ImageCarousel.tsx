@@ -24,6 +24,7 @@ import { finishCarouselSlideState } from '../lib/imageCarouselState';
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
+import { resolveStudioCarouselDisplaySrc } from '../lib/studioCarouselImage';
 
 interface ImageCarouselProps {
   activeImage: GeneratedImageWithConfig | null;
@@ -48,9 +49,6 @@ const CarouselImageItem: React.FC<{
   isSliding: boolean;
   isComparing: boolean;
 }> = React.memo(({ image, transitionName, isActive, isSliding, isComparing }) => {
-  const thumbnailSrc = image.thumbnail || image.preview || image.src;
-  const previewSrc = image.preview || thumbnailSrc;
-  const [loadedPreviewSrc, setLoadedPreviewSrc] = useState<string | null>(null);
   const [uiScale, setUiScale] = useState(1);
 
   const imgRef = useRef<HTMLImageElement>(null);
@@ -60,31 +58,7 @@ const CarouselImageItem: React.FC<{
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  useEffect(() => {
-    if (previewSrc === thumbnailSrc || loadedPreviewSrc === previewSrc) return;
-
-    let isCancelled = false;
-    const previewImage = new Image();
-    previewImage.decoding = 'async';
-    previewImage.onload = () => {
-      if (!isCancelled) {
-        setLoadedPreviewSrc(previewSrc);
-      }
-    };
-    previewImage.src = previewSrc;
-
-    return () => {
-      isCancelled = true;
-    };
-  }, [loadedPreviewSrc, previewSrc, thumbnailSrc]);
-
-  // Determine which source to show (Generated preview vs Original Reference)
-  const displaySrc =
-    isComparing && image.config.attachments?.[0]?.dataUrl
-      ? image.config.attachments[0].dataUrl
-      : loadedPreviewSrc === previewSrc
-        ? previewSrc
-        : thumbnailSrc;
+  const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
   const aspectRatioStyle = image.config.aspectRatio

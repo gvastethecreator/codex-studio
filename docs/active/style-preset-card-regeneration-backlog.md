@@ -14,6 +14,10 @@ Operating rule:
 - If `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt` change, the existing card is considered obsolete.
 - Every modified preset must be annotated here with `needs-regeneration` state.
 - When regenerating, replace `assets/recipes/styles/defaults/<PRESET_ID>.webp` and update the `manifest-<pack>.json` checkpoint.
+- Additional representative variants may be stored as `assets/recipes/styles/defaults/variants/<PRESET_ID>-NN.webp`.
+- Generate variants with `bun run scripts/generate-style-defaults.ts --pack=<pack> "--preset=<ID>" --variant-slot=<N> --force`; variant files are indexed by `styles:runtime` and shown in the card carousel without replacing the primary default image or manifest checkpoint.
+- Generate multiple review candidates in one run with `--variant-count=<N>` or explicit `--variant-slots=1,2,3`; use this for visual exploration before replacing any primary default.
+- Preview prompts first with `--print-prompts` or `--dry-run-prompts`; this prints planned prompts without touching server, jobs, manifests, or assets.
 - Do not close a visual batch as final if any obsolete cards remain un-annotated.
 
 ## Pending regeneration
@@ -124,6 +128,180 @@ Operational note:
   - remaining real missing ids: `SP01-084`, `SP01-085`, `SP01-086`, `SP01-087`
 - Prompt quality note:
   - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### QA visual anti-literalizacion - 2026-06-16 - `pack_01` / `pack_02`
+
+- Trigger:
+  - revision visual de usuario encontro camaras/objetos en manos, pasillos de libreria, pasillos de mercado, lugares fantasia y literalizacion de presets.
+- Prompt fix:
+  - `scripts/generate-style-defaults.ts` agrega guardrails fuertes para `pack_02__cinematic_lighting_and_lenses`, guardrail suave para `pack_02__broadcast_and_tv_look`, y regla ID-scoped para `SP01-044`, `SP01-050`, `SP01-061`, `SP01-063`, `SP01-066`, `SP01-067`, `SP01-068`, `SP01-079`.
+  - follow-up 2026-06-16: se endurecen `CATEGORY_BASE_PROMPTS`, `CATEGORY_SCENE_ANCHORS`, `GENERIC_SCENE_ANCHORS` y `REPEATED-SCENE GUARDRAILS` para `pack_02`; objetivo: evitar lamparas, paredes, wall-floor seams, sillas/stools, cortinas, panuelos/cloth props, shelves, pasillos de libreria/mercado, fantasy halls, camaras/devices y composiciones tipo studio-session cuando el preset debe ser transferable/abstracto.
+- Regenerated before later quality objection; requires renewed visual review:
+  - `SP02-057`, `SP02-064`, `SP02-071`, `SP02-077`, `SP02-079`, `SP02-080`.
+  - `SP02-087`, `SP02-088`.
+  - `SP02-089`, `SP02-090`.
+  - `SP02-091`, `SP02-092`.
+  - `SP02-093`, `SP02-094`.
+  - `SP02-095`, `SP02-096`.
+  - `SP02-097`, `SP02-098`.
+  - `SP02-099`, `SP02-100`.
+  - `SP02-101`, `SP02-102`.
+  - `SP02-103`, `SP02-104`.
+  - `SP02-105`, `SP02-106`.
+  - `SP02-107`, `SP02-108`.
+  - `SP02-109`, `SP02-110`.
+  - `SP02-111`, `SP02-112`.
+  - `SP02-113`, `SP02-114`.
+  - `SP02-115`, `SP02-116`.
+  - `SP02-117`, `SP02-118`.
+  - `SP02-119`, `SP02-120`.
+  - `SP01-044`, `SP01-050`, `SP01-061`, `SP01-063`, `SP01-066`, `SP01-067`, `SP01-068`, `SP01-079`.
+  - `SP03-001`, `SP03-002`.
+- Next queue guidance:
+  - `pack_02` should not be treated as visually closed after the later user review; generated files exist, but the abstract-only direction needs rework through carousel variants.
+  - use the representative variant workflow: generate multiple candidates, review in-card carousel, reject scene-drift/contact-sheet/empty-abstract attempts, then promote only explicitly accepted results.
+  - correction 2026-06-16: `avoid/no` prompt lists must be read as anti-repetition guidance, not absolute bans. Concrete walls, lamps, cameras, curtains, rooms, props, people, or environments are allowed when they are intentional and preset-specific.
+  - prioritize semantic QA for previously accepted-but-risky ids if user flags visual issues: `SP02-098`, `SP02-091`, `SP02-119`, `SP02-120`.
+  - do not generate multiple writers against `manifest-pack_02.json` in parallel; subagents should audit/classify, main writer should generate.
+- Prompt quality note:
+  - generation used global denoise suffix and anti-microdetail directive from `scripts/style-default-utils.ts`.
+  - follow-up guardrail added after visual review: avoid recurring studio props/templates (`stools`, `chairs`, `curtains`, `fabric drops`, `cyclorama`, portrait-session furniture) and avoid making every card look like a staged studio session.
+  - next `pack_02` cartoon/media waves must use a simple original graphic anchor plus style marks, not empty abstract fields. Still no rooms, walls, floors, wall-floor seams, lamps, shelves, markets, libraries, corridors, handkerchiefs, cloth props, cameras/devices, or repeated literal objects unless the preset explicitly requires that object.
+  - correction 2026-06-16: `pack_03` lookdev must not become abstract-only. Cards should allow one original subject, character bust, creature/object fragment, or material hero form when that makes the preset readable, while still avoiding repeated lamps, walls, floor planes, curtains, cloth/fabric props, handkerchief-like fabric, showroom/gallery/pedestal staging, camera/lens/device literalization, UI, screenshots, logos, and readable text.
+  - correction 2026-06-16 follow-up: `SP03-003` and `SP03-004` primary promotion was reverted; the new images now live as `variants/SP03-003-01.webp` and `variants/SP03-004-01.webp`, while old primaries remain active stale defaults.
+  - aborted 2026-06-16 follow-up: `quality_p03_representative_variant_cd` for `SP03-005|SP03-006` was stopped because outputs remained too abstract. Partials `SP03-006-01.webp` and `SP03-006-02.webp` were moved to `.tmp/style-default-card-archive/rejected/` and must not be counted as active variants.
+  - safe next command before any generation: `bun run scripts/generate-style-defaults.ts --pack=pack_03 "--preset=SP03-005|SP03-006" --variant-count=1 --session-suffix=prompt_review_p03_cd --print-prompts`.
+  - prompt follow-up: `SP03-005` / Blender Cycles now allows creator-friendly concrete staging when it supports Cycles craft; `SP03-006` / V-Ray now allows architecture, walls, windows, lamps, and furniture when they support ArchViz instead of treating those elements as bans.
+  - retrospective reset 2026-06-16: generation remains paused until candidate quality is representative again. The prompt builder now adds `VISUAL RESET` after Style DNA so any remaining abstract-only/no-scene/no-object wording is interpreted as anti-cliche guidance, not as a command to remove subjects. Cards must contain one readable subject, figure, object, room/scene fragment, material form, or environment motif when useful.
+  - `pack_02` shared anchors were softened: walls, lamps, rooms, cast shadows, floors, curtains, props, markets/libraries/halls are allowed when they clarify the preset; they are rejected only when repeated as filler.
+  - visual benchmark pass: `.tmp/style-card-qa/flagged-current-cards.webp`, `.tmp/style-card-qa/recent-abstract-sp02.webp`, `.tmp/style-card-qa/stable-pack08-benchmark.webp`, `.tmp/style-card-qa/pack03-current-primaries.webp`.
+  - benchmark conclusion: good cards have dominant subject + readable context + style signal + varied staging. Bad cards fail by repeated studio/tabletop/corridor formula or by empty abstract poster behavior.
+  - prompt correction: cartoon/media `HERO` cues now soften internal `no body/no character` clauses so they preserve one original visible anchor instead of deleting subject matter.
+  - accepted user-reviewed candidate: `assets/recipes/styles/defaults/variants/SP02-087-01.webp`; keep as carousel variant only, not primary.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-088-01.webp`; strong crude-crayon monster read, no abstract-empty fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-089-01.webp`; strong grotesque cartoon material/puppet read, non-graphic, no abstract-empty fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-090-01.webp`; spiky graphic creature/attitude read, no empty abstract fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-091-01.webp`; office marker/whiteboard cue is intentional for this preset, not repeated filler, keep as carousel variant only.
+  - rejected candidate archived: `.tmp/style-default-card-archive/rejected/SP02-092-01.20260616-200513.empty-camera-reel.webp`; too empty and introduced accidental reel/camera shape.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-092-01.webp`; crumpled-paper character read after reattempt, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-093-01.webp`; prehistoric graphic figure read, not texture-only, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-094-01.webp`; kindergarten crayon geometry character, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-095-01.webp`; Sunday-funnies halftone character without text/panels, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-096-01.webp`; punk/skate graphic character with dominant subject, no accidental camera/corridor/studio fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-097-01.webp`; rejected corporate mascot with intentional toy/plastic character read, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-098-01.webp`; napkin ballpoint character/idea sketch, lightbulb used as preset cue rather than repeated lamp filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-099-01.webp`; punk zine collage figure with readable subject and collage texture, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-100-01.webp`; flipbook rough-motion character with pencil/onion-skin marks, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-101-01.webp`; grossout cartoon blob/face, no IP or gore, keep as carousel variant only.
+  - prompt correction: `SP02-100|SP02-101` safe DNA now allows stylized original character/face anchors while still blocking franchise, realistic anatomy, gore, cameras, and repeated scene filler.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-102-01.webp`; flat weird-comedy character, simple and readable, no office/camera/corridor fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-103-01.webp`; slime-grime cartoon blob, no gore or sewer/corridor fallback, keep as carousel variant only.
+  - prompt correction: `SP02-102|SP02-103` safe DNA now allows original character/blob anchors while still blocking franchise, realistic anatomy, gore, cameras, office/sewer/corridor filler.
+  - rejected candidate archived: `.tmp/style-default-card-archive/rejected/SP02-104-01.20260616-210637.film-reel-device.webp`; good crayon texture but accidental film-reel/device body.
+  - rejected candidate archived: `.tmp/style-default-card-archive/rejected/SP02-104-01.20260616-211056.spotlight-stage.webp`; good crayon texture but accidental spotlight/stage prop.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-104-01.webp`; toddler-scale crayon character after reattempt, no film reel, spotlight, camera, or stage, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-105-01.webp`; boiling-line scam cartoon with stretched original subject, no scam props, keep as carousel variant only.
+  - prompt correction: `SP02-104|SP02-105` safe DNA now allows original crayon/boiling-line anchors while blocking franchise, film reel/device, spotlight/stage, scam props, realistic body, cameras, and repeated room/street filler.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-106-01.webp`; beige anxiety character, legible and no suburb/room/camera fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-107-01.webp`; rural nightmare pastel with symbolic night motifs and uneasy anchor, no corridor/detailed scene fallback, keep as carousel variant only.
+  - prompt correction: `SP02-106|SP02-107` safe DNA now allows original anxious/rural-nightmare anchors while blocking franchise, product/consumer props, detailed suburb/farm scenes, cameras, lamps, and repeated room/corridor filler.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-108-01.webp`; loud-primary derangement with readable original character and strong primary palette, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-109-01.webp`; shared-form elastic with readable two-state ribbon figure, no recognizable cat/dog or filler scene, keep as carousel variant only.
+  - prompt correction: `SP02-108|SP02-109` safe DNA now allows original loud-primary/shared-elastic anchors while blocking franchise, recognizable animals, rooms, props, cameras, and repeated scene filler.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-110-01.webp`; gross-up texture blob, no sponge/IP/gore, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-111-01.webp`; slouch geometry figure, no couch/room filler, keep as carousel variant only.
+  - prompt correction: `SP02-110|SP02-111` safe DNA now allows original gross-up/slouch anchors while blocking franchise, undersea props, realistic anatomy, gore, couches, rooms, cameras, and repeated scene filler.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-112-01.webp`; office-boredom geometry character with readable tired anchor, no cubicle/desk/camera filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-113-01.webp`; toxic house-character motif, concrete but not corridor/market/fantasy/studio/camera filler, keep as carousel variant only.
+  - prompt correction: `SP02-112|SP02-113` safe DNA now allows original office-boredom/toxic-suburb anchors while blocking repeated props, staged rooms, cameras/devices, corridors, market/library/fantasy drift, and accidental text/logos.
+  - rejected QA candidate archived: `.tmp/style-default-card-archive/rejected/SP02-114-01.20260616-221815.tv-device-face-anchor.webp`; first retry fell into TV/device-face subject.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-114-01.webp`; squigglevision nervous figure after prompt tightening, no monitor/camera/therapy room, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-115-01.webp`; marker-edge sitcom character, no school/suburb set filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-116-01.webp`; notebook-anxiety marker character, no notebook/page prop literalization, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-117-01.webp`; photo-cutout xerox bird-like figure, no camera/room filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-118-01.webp`; garbage-pail gross sticker object, cartoon/non-realistic and not scene filler, keep as carousel variant only.
+  - prompt correction: `SP02-114` now blocks TV set, monitor, face-screen, phone, camera, microphone, stage, therapy room, and device while still requiring one original wobbly doodle figure or nervous shape mascot.
+  - throughput correction: move from 2-preset waves to 4-preset waves by default; use 6 only for low-risk prompt families after preview. Keep manual visual inspection and archived rejects mandatory.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-119-01.webp`; chlorine slime doodle monster, no pool/camera/corridor scene, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP02-120-01.webp`; toxic marker freakout creature, no classroom literal/readable text/camera, keep as carousel variant only.
+  - `SP02-087..SP02-120` now have accepted representative `-01` carousel variants. Do not promote primaries automatically.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-005-01.webp`; Blender Cycles 3D bust/lookdev subject with caustic/material cues, no UI/text/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-006-01.webp`; V-Ray ArchViz architectural/material fragment with swatches and intentional room/light cues, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-007-01.webp`; KeyShot product/bust studio render with material swatches and controlled reflections, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-008-01.webp`; RenderMan-style feature-animation bust/lookdev, no franchise/logo/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-009-01.webp`; ZBrush clay bust/material sculpt, no UI/text/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-010-01.webp`; Unity HDRP hero form with volumetric game-light read and material panels, no readable UI/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-011-01.webp`; glass/crystal bust with caustics/refraction/dispersion, no showroom/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-012-01.webp`; liquid simulation horse/splash, fantasy motif serves fluid subject rather than filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-013-01.webp`; SSS translucent organic bust with inner glow/backlight, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-014-01.webp`; chrome/metal hero object with environment reflections, no camera prop/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-015-01.webp`; claymation character bust with visible craft/texture, environment cues support preset, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-016-01.webp`; fur/hair creature with readable strand/clump variation, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-017-01.webp`; slime/goo creature-material specimen with drips/stretch strings, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-018-01.webp`; carbon fiber hero object with weave/aniso highlights and swatches, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-019-01.webp`; hologram bust/projection with scanlines/interference, no readable UI/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-020-01.webp`; porcelain bust with glaze/crackle/painted detail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-021-01.webp`; low-poly mech/hero object with clear facets, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-022-01.webp`; voxel fox bust/world fragment with cube-grid read, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-023-01.webp`; isometric 3D orthographic style-card with material panels, no readable UI/contact-sheet-only fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-024-01.webp`; wireframe render bust/topology card with visible edge-flow, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-025-01.webp`; kitbash industrial hero form with readable greebles/wear, no camera/market/library/corridor filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-026-01.webp`; knolling flat-lay/exploded lookdev with ordered subject and swatches, no empty contact-sheet fallback, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-027-01.webp`; metaballs organic blobby character/material form, smooth and denoised, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-028-01.webp`; Nurbs Surface freeform CAD/class-A surface accepted after one archived chair/studio reject and ID-scoped prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-029-01.webp`; fractal creature/material bust with self-similar ridges and lookdev swatches, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-030-01.webp`; corrupted character/mesh bust with vertex explosion and UV tearing, no device/screen/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-031-01.webp`; Global Illumination organic/material subject accepted after archived curtain/plant/pool interior reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-032-01.webp`; Volumetric Fog material bust accepted after archived cave/fantasy/orb and fantasy-landscape/alien rejects, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-033-01.webp`; Neon City cyberpunk material bust with wet neon reflections, no street/signage/text/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-034-01.webp`; Studio Lighting 3-point clean bust/material specimen accepted after archived helmet-text/brand-mark reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-035-01.webp`; HDRI Environment reflective CG object accepted after archived sunset/canyon landscape reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-036-01.webp`; Caustics refractive bust with caustic photon webs/prismatic pools, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-037-01.webp`; Ambient Occlusion clay-white creature bust with contact shadows/crevice gradients, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-038-01.webp`; Rim Lighting dark hero form accepted after archived contact-sheet/swatch-strip reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-039-01.webp`; Bioluminescent Forest organic glowing form with spore/branch cues, preset-specific forest read acceptable, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-040-01.webp`; Toon Shader original cel-shaded character with bold outlines/flat bands, no UI/text/logo/franchise, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-041-01.webp`; God Rays material monolith with clean volumetric shafts accepted after archived fantasy-hall/mystic-figure reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-042-01.webp`; Diorama Lighting miniature bust/tabletop world with tilt-shift depth and intentional warm lantern cue, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-043-01.webp`; X-Ray Shader translucent technical hero object with readable internal structure, no UI/text/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-044-01.webp`; Thermal Vision alien bust/material form with strong heat-map read, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-045-01.webp`; Wireframe on Shaded technical bust with topology overlay and shaded surface, no UI/text/camera prop, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-046-01.webp`; Game Asset PBR hard-surface module accepted after archived generic-bust reject and prompt guardrail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-047-01.webp`; Architectural Visualization model slice with daylight, straight verticals, material board, no real-estate filler, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-048-01.webp`; Product Render premium abstract product form with controlled reflections and material swatches, no logo/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-049-01.webp`; Character Design T-pose neutral production-sheet character accepted after archived sexualized/body-first and fantasy-courtyard rejects, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-050-01.webp`; Motion Graphics glossy kinetic abstract form with gradient trails, no logo/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-051-01.webp`; Medical Illustration 3D clean diagnostic cutaway with red/blue/white translucent structure, no text/gore, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-052-01.webp`; Automotive Render aerodynamic metallic body-contour sculpture with reflection sweeps, no logo/text/car-ad scene, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-053-01.webp`; Jewelry Render high-jewelry material sculpture with faceted crystal/gold read and luxury context, no hand/model/text/logo, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-054-01.webp`; Food CGI glossy edible material construction with droplets/steam/food-render read, no burger/brand/text/restaurant clutter, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-055-01.webp`; Virtual Reality Environment wide-FOV immersive scene accepted by user despite portal/hall-adjacent risk, no headset/person/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-056-01.webp`; Scientific Visualization protein/data hero form with false-color scientific read, no readable labels/lab room/character, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-057-01.webp`; NFT Collectible Avatar Render original neon/gold creature avatar bust, no ape/IP/UI/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-058-01.webp`; 3D Typography invented glyph sculpture with bevel/material read, no readable word/logo/signage, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-059-01.webp`; Digital Fashion iridescent garment/mannequin cloth-sim hero, no curtain/retail/runway crowd/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-060-01.webp`; Environment Design modular scene kit/material-board slice accepted after archived drone/camera-orb/tarp reject, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-061-01.webp`; Hard Surface Modeling machined armor/mech-torso module with panel lines, no weapons/soldier/UI/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-062-01.webp`; Organic Modeling humanoid botanical sculpt with topology/subsurface read, no gore/forest/lab jar/text/camera, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-063-01.webp`; 3D Map isometric terrain miniature with contour/elevation readability, no flat paper map/UI/labels/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-064-01.webp`; Exploded View creature/object assembly with separated layers and cross-sections, no labels/UI/contact sheet/weapon assembly, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-065-01.webp`; 3D Icon friendly jellyfish squircle icon, no real app/logo/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-066-01.webp`; Abstract Background polished abstract 3D wallpaper form with broad gradients, no text/logo/UI/noisy microdetail, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-067-01.webp`; Cybernetic Implant clean portrait/implant integration, no gore/horror/text/weapon, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-068-01.webp`; 3D Scan photogrammetry architectural fragment with scan texture/mesh imperfections, no labels/UI/camera, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-069-01.webp`; VFX Simulation controlled pyro plume/material specimen with smoke/fire dynamics, no person/disaster/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-070-01.webp`; Retro CGI 90s low-poly toy/object scene with primary colors/checkerboard, no IP/logo/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-071-01.webp`; Glassmorphism UI frosted glass interface sculpture with translucent card layers, no readable UI text/logo/screenshot, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-072-01.webp`; Clay UI soft pastel character/interface scene, no readable UI text/logo/screenshot, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-073-01.webp`; Papercraft 3D layered cardstock creature/scene with visible fold lines and paper grain, no craft tools/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-074-01.webp`; Neon Sign 3D abstract bent-glass neon sculpture, no readable word/logo/bar sign/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-075-01.webp`; Ice Sculpture carved translucent dragon/creature form with refraction/frosty dispersion, no gala/event/text/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-076-01.webp`; Balloon Art abstract Mylar foil organism accepted after archived bunny/Koons-ish reject, no party/text/logo/UI, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-077-01.webp`; Lego Brick-Built 3D original studded brick creature/object, no LEGO logo/minifig/IP/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-078-01.webp`; Origami 3D folded fox-like creature/form, no crane/lotus/tools/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-079-01.webp`; Bronze Statue original patinated creature/monument form, no famous statue/plaque/text, keep as carousel variant only.
+  - accepted QA candidate: `assets/recipes/styles/defaults/variants/SP03-080-01.webp`; Marble Statue original marble creature/armor form accepted with mild gallery-background watchlist, no famous statue/text/logo, keep as carousel variant only.
+  - next generation should continue carousel variants at `pack_04` in 4-preset waves, starting with `SP04-001|SP04-002|SP04-003|SP04-004` after prompt preview; `pack_03` now has accepted representative variants for `SP03-041..SP03-080`, but primaries remain stale until explicit promotion.
 - Runtime visibility follow-up:
   - `SP01-082` and `SP01-083` were removed from the active stale/default table after their files and manifest/YAML links were verified;
   - `bun run styles:runtime` refreshed `lib/staleStyleDefaultImages.generated.ts`;
@@ -778,179 +956,15 @@ Operational note:
 
 ### pack_01
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP01-043 | `components/recipes/styles/manifests/presets/pack_01/SP01-043.yaml` | `assets/recipes/styles/defaults/SP01-043.webp` |
-| SP01-044 | `components/recipes/styles/manifests/presets/pack_01/SP01-044.yaml` | `assets/recipes/styles/defaults/SP01-044.webp` |
-| SP01-045 | `components/recipes/styles/manifests/presets/pack_01/SP01-045.yaml` | `assets/recipes/styles/defaults/SP01-045.webp` |
-| SP01-046 | `components/recipes/styles/manifests/presets/pack_01/SP01-046.yaml` | `assets/recipes/styles/defaults/SP01-046.webp` |
-| SP01-047 | `components/recipes/styles/manifests/presets/pack_01/SP01-047.yaml` | `assets/recipes/styles/defaults/SP01-047.webp` |
-| SP01-048 | `components/recipes/styles/manifests/presets/pack_01/SP01-048.yaml` | `assets/recipes/styles/defaults/SP01-048.webp` |
-| SP01-049 | `components/recipes/styles/manifests/presets/pack_01/SP01-049.yaml` | `assets/recipes/styles/defaults/SP01-049.webp` |
-| SP01-050 | `components/recipes/styles/manifests/presets/pack_01/SP01-050.yaml` | `assets/recipes/styles/defaults/SP01-050.webp` |
-| SP01-051 | `components/recipes/styles/manifests/presets/pack_01/SP01-051.yaml` | `assets/recipes/styles/defaults/SP01-051.webp` |
-| SP01-052 | `components/recipes/styles/manifests/presets/pack_01/SP01-052.yaml` | `assets/recipes/styles/defaults/SP01-052.webp` |
-| SP01-053 | `components/recipes/styles/manifests/presets/pack_01/SP01-053.yaml` | `assets/recipes/styles/defaults/SP01-053.webp` |
-| SP01-054 | `components/recipes/styles/manifests/presets/pack_01/SP01-054.yaml` | `assets/recipes/styles/defaults/SP01-054.webp` |
-| SP01-055 | `components/recipes/styles/manifests/presets/pack_01/SP01-055.yaml` | `assets/recipes/styles/defaults/SP01-055.webp` |
-| SP01-056 | `components/recipes/styles/manifests/presets/pack_01/SP01-056.yaml` | `assets/recipes/styles/defaults/SP01-056.webp` |
-| SP01-057 | `components/recipes/styles/manifests/presets/pack_01/SP01-057.yaml` | `assets/recipes/styles/defaults/SP01-057.webp` |
-| SP01-058 | `components/recipes/styles/manifests/presets/pack_01/SP01-058.yaml` | `assets/recipes/styles/defaults/SP01-058.webp` |
-| SP01-059 | `components/recipes/styles/manifests/presets/pack_01/SP01-059.yaml` | `assets/recipes/styles/defaults/SP01-059.webp` |
-| SP01-060 | `components/recipes/styles/manifests/presets/pack_01/SP01-060.yaml` | `assets/recipes/styles/defaults/SP01-060.webp` |
-| SP01-061 | `components/recipes/styles/manifests/presets/pack_01/SP01-061.yaml` | `assets/recipes/styles/defaults/SP01-061.webp` |
-| SP01-062 | `components/recipes/styles/manifests/presets/pack_01/SP01-062.yaml` | `assets/recipes/styles/defaults/SP01-062.webp` |
-| SP01-063 | `components/recipes/styles/manifests/presets/pack_01/SP01-063.yaml` | `assets/recipes/styles/defaults/SP01-063.webp` |
-| SP01-064 | `components/recipes/styles/manifests/presets/pack_01/SP01-064.yaml` | `assets/recipes/styles/defaults/SP01-064.webp` |
-| SP01-065 | `components/recipes/styles/manifests/presets/pack_01/SP01-065.yaml` | `assets/recipes/styles/defaults/SP01-065.webp` |
-| SP01-066 | `components/recipes/styles/manifests/presets/pack_01/SP01-066.yaml` | `assets/recipes/styles/defaults/SP01-066.webp` |
-| SP01-067 | `components/recipes/styles/manifests/presets/pack_01/SP01-067.yaml` | `assets/recipes/styles/defaults/SP01-067.webp` |
-| SP01-068 | `components/recipes/styles/manifests/presets/pack_01/SP01-068.yaml` | `assets/recipes/styles/defaults/SP01-068.webp` |
-| SP01-069 | `components/recipes/styles/manifests/presets/pack_01/SP01-069.yaml` | `assets/recipes/styles/defaults/SP01-069.webp` |
-| SP01-070 | `components/recipes/styles/manifests/presets/pack_01/SP01-070.yaml` | `assets/recipes/styles/defaults/SP01-070.webp` |
-| SP01-071 | `components/recipes/styles/manifests/presets/pack_01/SP01-071.yaml` | `assets/recipes/styles/defaults/SP01-071.webp` |
-| SP01-072 | `components/recipes/styles/manifests/presets/pack_01/SP01-072.yaml` | `assets/recipes/styles/defaults/SP01-072.webp` |
-| SP01-073 | `components/recipes/styles/manifests/presets/pack_01/SP01-073.yaml` | `assets/recipes/styles/defaults/SP01-073.webp` |
-| SP01-074 | `components/recipes/styles/manifests/presets/pack_01/SP01-074.yaml` | `assets/recipes/styles/defaults/SP01-074.webp` |
-| SP01-075 | `components/recipes/styles/manifests/presets/pack_01/SP01-075.yaml` | `assets/recipes/styles/defaults/SP01-075.webp` |
-| SP01-076 | `components/recipes/styles/manifests/presets/pack_01/SP01-076.yaml` | `assets/recipes/styles/defaults/SP01-076.webp` |
-| SP01-077 | `components/recipes/styles/manifests/presets/pack_01/SP01-077.yaml` | `assets/recipes/styles/defaults/SP01-077.webp` |
-| SP01-078 | `components/recipes/styles/manifests/presets/pack_01/SP01-078.yaml` | `assets/recipes/styles/defaults/SP01-078.webp` |
-| SP01-079 | `components/recipes/styles/manifests/presets/pack_01/SP01-079.yaml` | `assets/recipes/styles/defaults/SP01-079.webp` |
-| SP01-080 | `components/recipes/styles/manifests/presets/pack_01/SP01-080.yaml` | `assets/recipes/styles/defaults/SP01-080.webp` |
-| SP01-081 | `components/recipes/styles/manifests/presets/pack_01/SP01-081.yaml` | `assets/recipes/styles/defaults/SP01-081.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
-### pack_02
-
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP02-001 | `components/recipes/styles/manifests/presets/pack_02/SP02-001.yaml` | `assets/recipes/styles/defaults/SP02-001.webp` |
-| SP02-002 | `components/recipes/styles/manifests/presets/pack_02/SP02-002.yaml` | `assets/recipes/styles/defaults/SP02-002.webp` |
-| SP02-003 | `components/recipes/styles/manifests/presets/pack_02/SP02-003.yaml` | `assets/recipes/styles/defaults/SP02-003.webp` |
-| SP02-004 | `components/recipes/styles/manifests/presets/pack_02/SP02-004.yaml` | `assets/recipes/styles/defaults/SP02-004.webp` |
-| SP02-005 | `components/recipes/styles/manifests/presets/pack_02/SP02-005.yaml` | `assets/recipes/styles/defaults/SP02-005.webp` |
-| SP02-006 | `components/recipes/styles/manifests/presets/pack_02/SP02-006.yaml` | `assets/recipes/styles/defaults/SP02-006.webp` |
-| SP02-007 | `components/recipes/styles/manifests/presets/pack_02/SP02-007.yaml` | `assets/recipes/styles/defaults/SP02-007.webp` |
-| SP02-008 | `components/recipes/styles/manifests/presets/pack_02/SP02-008.yaml` | `assets/recipes/styles/defaults/SP02-008.webp` |
-| SP02-009 | `components/recipes/styles/manifests/presets/pack_02/SP02-009.yaml` | `assets/recipes/styles/defaults/SP02-009.webp` |
-| SP02-010 | `components/recipes/styles/manifests/presets/pack_02/SP02-010.yaml` | `assets/recipes/styles/defaults/SP02-010.webp` |
-| SP02-011 | `components/recipes/styles/manifests/presets/pack_02/SP02-011.yaml` | `assets/recipes/styles/defaults/SP02-011.webp` |
-| SP02-012 | `components/recipes/styles/manifests/presets/pack_02/SP02-012.yaml` | `assets/recipes/styles/defaults/SP02-012.webp` |
-| SP02-013 | `components/recipes/styles/manifests/presets/pack_02/SP02-013.yaml` | `assets/recipes/styles/defaults/SP02-013.webp` |
-| SP02-014 | `components/recipes/styles/manifests/presets/pack_02/SP02-014.yaml` | `assets/recipes/styles/defaults/SP02-014.webp` |
-| SP02-015 | `components/recipes/styles/manifests/presets/pack_02/SP02-015.yaml` | `assets/recipes/styles/defaults/SP02-015.webp` |
-| SP02-016 | `components/recipes/styles/manifests/presets/pack_02/SP02-016.yaml` | `assets/recipes/styles/defaults/SP02-016.webp` |
-| SP02-017 | `components/recipes/styles/manifests/presets/pack_02/SP02-017.yaml` | `assets/recipes/styles/defaults/SP02-017.webp` |
-| SP02-018 | `components/recipes/styles/manifests/presets/pack_02/SP02-018.yaml` | `assets/recipes/styles/defaults/SP02-018.webp` |
-| SP02-019 | `components/recipes/styles/manifests/presets/pack_02/SP02-019.yaml` | `assets/recipes/styles/defaults/SP02-019.webp` |
-| SP02-020 | `components/recipes/styles/manifests/presets/pack_02/SP02-020.yaml` | `assets/recipes/styles/defaults/SP02-020.webp` |
-| SP02-021 | `components/recipes/styles/manifests/presets/pack_02/SP02-021.yaml` | `assets/recipes/styles/defaults/SP02-021.webp` |
-| SP02-022 | `components/recipes/styles/manifests/presets/pack_02/SP02-022.yaml` | `assets/recipes/styles/defaults/SP02-022.webp` |
-| SP02-023 | `components/recipes/styles/manifests/presets/pack_02/SP02-023.yaml` | `assets/recipes/styles/defaults/SP02-023.webp` |
-| SP02-024 | `components/recipes/styles/manifests/presets/pack_02/SP02-024.yaml` | `assets/recipes/styles/defaults/SP02-024.webp` |
-| SP02-025 | `components/recipes/styles/manifests/presets/pack_02/SP02-025.yaml` | `assets/recipes/styles/defaults/SP02-025.webp` |
-| SP02-026 | `components/recipes/styles/manifests/presets/pack_02/SP02-026.yaml` | `assets/recipes/styles/defaults/SP02-026.webp` |
-| SP02-027 | `components/recipes/styles/manifests/presets/pack_02/SP02-027.yaml` | `assets/recipes/styles/defaults/SP02-027.webp` |
-| SP02-028 | `components/recipes/styles/manifests/presets/pack_02/SP02-028.yaml` | `assets/recipes/styles/defaults/SP02-028.webp` |
-| SP02-029 | `components/recipes/styles/manifests/presets/pack_02/SP02-029.yaml` | `assets/recipes/styles/defaults/SP02-029.webp` |
-| SP02-030 | `components/recipes/styles/manifests/presets/pack_02/SP02-030.yaml` | `assets/recipes/styles/defaults/SP02-030.webp` |
-| SP02-031 | `components/recipes/styles/manifests/presets/pack_02/SP02-031.yaml` | `assets/recipes/styles/defaults/SP02-031.webp` |
-| SP02-032 | `components/recipes/styles/manifests/presets/pack_02/SP02-032.yaml` | `assets/recipes/styles/defaults/SP02-032.webp` |
-| SP02-033 | `components/recipes/styles/manifests/presets/pack_02/SP02-033.yaml` | `assets/recipes/styles/defaults/SP02-033.webp` |
-| SP02-034 | `components/recipes/styles/manifests/presets/pack_02/SP02-034.yaml` | `assets/recipes/styles/defaults/SP02-034.webp` |
-| SP02-035 | `components/recipes/styles/manifests/presets/pack_02/SP02-035.yaml` | `assets/recipes/styles/defaults/SP02-035.webp` |
-| SP02-036 | `components/recipes/styles/manifests/presets/pack_02/SP02-036.yaml` | `assets/recipes/styles/defaults/SP02-036.webp` |
-| SP02-037 | `components/recipes/styles/manifests/presets/pack_02/SP02-037.yaml` | `assets/recipes/styles/defaults/SP02-037.webp` |
-| SP02-038 | `components/recipes/styles/manifests/presets/pack_02/SP02-038.yaml` | `assets/recipes/styles/defaults/SP02-038.webp` |
-| SP02-039 | `components/recipes/styles/manifests/presets/pack_02/SP02-039.yaml` | `assets/recipes/styles/defaults/SP02-039.webp` |
-| SP02-040 | `components/recipes/styles/manifests/presets/pack_02/SP02-040.yaml` | `assets/recipes/styles/defaults/SP02-040.webp` |
-| SP02-041 | `components/recipes/styles/manifests/presets/pack_02/SP02-041.yaml` | `assets/recipes/styles/defaults/SP02-041.webp` |
-| SP02-042 | `components/recipes/styles/manifests/presets/pack_02/SP02-042.yaml` | `assets/recipes/styles/defaults/SP02-042.webp` |
-| SP02-043 | `components/recipes/styles/manifests/presets/pack_02/SP02-043.yaml` | `assets/recipes/styles/defaults/SP02-043.webp` |
-| SP02-044 | `components/recipes/styles/manifests/presets/pack_02/SP02-044.yaml` | `assets/recipes/styles/defaults/SP02-044.webp` |
-| SP02-045 | `components/recipes/styles/manifests/presets/pack_02/SP02-045.yaml` | `assets/recipes/styles/defaults/SP02-045.webp` |
-| SP02-046 | `components/recipes/styles/manifests/presets/pack_02/SP02-046.yaml` | `assets/recipes/styles/defaults/SP02-046.webp` |
-| SP02-047 | `components/recipes/styles/manifests/presets/pack_02/SP02-047.yaml` | `assets/recipes/styles/defaults/SP02-047.webp` |
-| SP02-048 | `components/recipes/styles/manifests/presets/pack_02/SP02-048.yaml` | `assets/recipes/styles/defaults/SP02-048.webp` |
-| SP02-049 | `components/recipes/styles/manifests/presets/pack_02/SP02-049.yaml` | `assets/recipes/styles/defaults/SP02-049.webp` |
-| SP02-050 | `components/recipes/styles/manifests/presets/pack_02/SP02-050.yaml` | `assets/recipes/styles/defaults/SP02-050.webp` |
-| SP02-051 | `components/recipes/styles/manifests/presets/pack_02/SP02-051.yaml` | `assets/recipes/styles/defaults/SP02-051.webp` |
-| SP02-052 | `components/recipes/styles/manifests/presets/pack_02/SP02-052.yaml` | `assets/recipes/styles/defaults/SP02-052.webp` |
-| SP02-053 | `components/recipes/styles/manifests/presets/pack_02/SP02-053.yaml` | `assets/recipes/styles/defaults/SP02-053.webp` |
-| SP02-054 | `components/recipes/styles/manifests/presets/pack_02/SP02-054.yaml` | `assets/recipes/styles/defaults/SP02-054.webp` |
-| SP02-055 | `components/recipes/styles/manifests/presets/pack_02/SP02-055.yaml` | `assets/recipes/styles/defaults/SP02-055.webp` |
-| SP02-056 | `components/recipes/styles/manifests/presets/pack_02/SP02-056.yaml` | `assets/recipes/styles/defaults/SP02-056.webp` |
-| SP02-057 | `components/recipes/styles/manifests/presets/pack_02/SP02-057.yaml` | `assets/recipes/styles/defaults/SP02-057.webp` |
-| SP02-058 | `components/recipes/styles/manifests/presets/pack_02/SP02-058.yaml` | `assets/recipes/styles/defaults/SP02-058.webp` |
-| SP02-059 | `components/recipes/styles/manifests/presets/pack_02/SP02-059.yaml` | `assets/recipes/styles/defaults/SP02-059.webp` |
-| SP02-060 | `components/recipes/styles/manifests/presets/pack_02/SP02-060.yaml` | `assets/recipes/styles/defaults/SP02-060.webp` |
-| SP02-061 | `components/recipes/styles/manifests/presets/pack_02/SP02-061.yaml` | `assets/recipes/styles/defaults/SP02-061.webp` |
-| SP02-062 | `components/recipes/styles/manifests/presets/pack_02/SP02-062.yaml` | `assets/recipes/styles/defaults/SP02-062.webp` |
-| SP02-063 | `components/recipes/styles/manifests/presets/pack_02/SP02-063.yaml` | `assets/recipes/styles/defaults/SP02-063.webp` |
-| SP02-064 | `components/recipes/styles/manifests/presets/pack_02/SP02-064.yaml` | `assets/recipes/styles/defaults/SP02-064.webp` |
-| SP02-065 | `components/recipes/styles/manifests/presets/pack_02/SP02-065.yaml` | `assets/recipes/styles/defaults/SP02-065.webp` |
-| SP02-066 | `components/recipes/styles/manifests/presets/pack_02/SP02-066.yaml` | `assets/recipes/styles/defaults/SP02-066.webp` |
-| SP02-067 | `components/recipes/styles/manifests/presets/pack_02/SP02-067.yaml` | `assets/recipes/styles/defaults/SP02-067.webp` |
-| SP02-068 | `components/recipes/styles/manifests/presets/pack_02/SP02-068.yaml` | `assets/recipes/styles/defaults/SP02-068.webp` |
-| SP02-069 | `components/recipes/styles/manifests/presets/pack_02/SP02-069.yaml` | `assets/recipes/styles/defaults/SP02-069.webp` |
-| SP02-070 | `components/recipes/styles/manifests/presets/pack_02/SP02-070.yaml` | `assets/recipes/styles/defaults/SP02-070.webp` |
-| SP02-071 | `components/recipes/styles/manifests/presets/pack_02/SP02-071.yaml` | `assets/recipes/styles/defaults/SP02-071.webp` |
-| SP02-072 | `components/recipes/styles/manifests/presets/pack_02/SP02-072.yaml` | `assets/recipes/styles/defaults/SP02-072.webp` |
-| SP02-073 | `components/recipes/styles/manifests/presets/pack_02/SP02-073.yaml` | `assets/recipes/styles/defaults/SP02-073.webp` |
-| SP02-074 | `components/recipes/styles/manifests/presets/pack_02/SP02-074.yaml` | `assets/recipes/styles/defaults/SP02-074.webp` |
-| SP02-075 | `components/recipes/styles/manifests/presets/pack_02/SP02-075.yaml` | `assets/recipes/styles/defaults/SP02-075.webp` |
-| SP02-076 | `components/recipes/styles/manifests/presets/pack_02/SP02-076.yaml` | `assets/recipes/styles/defaults/SP02-076.webp` |
-| SP02-077 | `components/recipes/styles/manifests/presets/pack_02/SP02-077.yaml` | `assets/recipes/styles/defaults/SP02-077.webp` |
-| SP02-078 | `components/recipes/styles/manifests/presets/pack_02/SP02-078.yaml` | `assets/recipes/styles/defaults/SP02-078.webp` |
-| SP02-079 | `components/recipes/styles/manifests/presets/pack_02/SP02-079.yaml` | `assets/recipes/styles/defaults/SP02-079.webp` |
-| SP02-080 | `components/recipes/styles/manifests/presets/pack_02/SP02-080.yaml` | `assets/recipes/styles/defaults/SP02-080.webp` |
-| SP02-081 | `components/recipes/styles/manifests/presets/pack_02/SP02-081.yaml` | `assets/recipes/styles/defaults/SP02-081.webp` |
-| SP02-082 | `components/recipes/styles/manifests/presets/pack_02/SP02-082.yaml` | `assets/recipes/styles/defaults/SP02-082.webp` |
-| SP02-083 | `components/recipes/styles/manifests/presets/pack_02/SP02-083.yaml` | `assets/recipes/styles/defaults/SP02-083.webp` |
-| SP02-084 | `components/recipes/styles/manifests/presets/pack_02/SP02-084.yaml` | `assets/recipes/styles/defaults/SP02-084.webp` |
-| SP02-085 | `components/recipes/styles/manifests/presets/pack_02/SP02-085.yaml` | `assets/recipes/styles/defaults/SP02-085.webp` |
-| SP02-086 | `components/recipes/styles/manifests/presets/pack_02/SP02-086.yaml` | `assets/recipes/styles/defaults/SP02-086.webp` |
-| SP02-087 | `components/recipes/styles/manifests/presets/pack_02/SP02-087.yaml` | `assets/recipes/styles/defaults/SP02-087.webp` |
-| SP02-088 | `components/recipes/styles/manifests/presets/pack_02/SP02-088.yaml` | `assets/recipes/styles/defaults/SP02-088.webp` |
-| SP02-089 | `components/recipes/styles/manifests/presets/pack_02/SP02-089.yaml` | `assets/recipes/styles/defaults/SP02-089.webp` |
-| SP02-090 | `components/recipes/styles/manifests/presets/pack_02/SP02-090.yaml` | `assets/recipes/styles/defaults/SP02-090.webp` |
-| SP02-091 | `components/recipes/styles/manifests/presets/pack_02/SP02-091.yaml` | `assets/recipes/styles/defaults/SP02-091.webp` |
-| SP02-092 | `components/recipes/styles/manifests/presets/pack_02/SP02-092.yaml` | `assets/recipes/styles/defaults/SP02-092.webp` |
-| SP02-093 | `components/recipes/styles/manifests/presets/pack_02/SP02-093.yaml` | `assets/recipes/styles/defaults/SP02-093.webp` |
-| SP02-094 | `components/recipes/styles/manifests/presets/pack_02/SP02-094.yaml` | `assets/recipes/styles/defaults/SP02-094.webp` |
-| SP02-095 | `components/recipes/styles/manifests/presets/pack_02/SP02-095.yaml` | `assets/recipes/styles/defaults/SP02-095.webp` |
-| SP02-096 | `components/recipes/styles/manifests/presets/pack_02/SP02-096.yaml` | `assets/recipes/styles/defaults/SP02-096.webp` |
-| SP02-097 | `components/recipes/styles/manifests/presets/pack_02/SP02-097.yaml` | `assets/recipes/styles/defaults/SP02-097.webp` |
-| SP02-098 | `components/recipes/styles/manifests/presets/pack_02/SP02-098.yaml` | `assets/recipes/styles/defaults/SP02-098.webp` |
-| SP02-099 | `components/recipes/styles/manifests/presets/pack_02/SP02-099.yaml` | `assets/recipes/styles/defaults/SP02-099.webp` |
-| SP02-100 | `components/recipes/styles/manifests/presets/pack_02/SP02-100.yaml` | `assets/recipes/styles/defaults/SP02-100.webp` |
-| SP02-101 | `components/recipes/styles/manifests/presets/pack_02/SP02-101.yaml` | `assets/recipes/styles/defaults/SP02-101.webp` |
-| SP02-102 | `components/recipes/styles/manifests/presets/pack_02/SP02-102.yaml` | `assets/recipes/styles/defaults/SP02-102.webp` |
-| SP02-103 | `components/recipes/styles/manifests/presets/pack_02/SP02-103.yaml` | `assets/recipes/styles/defaults/SP02-103.webp` |
-| SP02-104 | `components/recipes/styles/manifests/presets/pack_02/SP02-104.yaml` | `assets/recipes/styles/defaults/SP02-104.webp` |
-| SP02-105 | `components/recipes/styles/manifests/presets/pack_02/SP02-105.yaml` | `assets/recipes/styles/defaults/SP02-105.webp` |
-| SP02-106 | `components/recipes/styles/manifests/presets/pack_02/SP02-106.yaml` | `assets/recipes/styles/defaults/SP02-106.webp` |
-| SP02-107 | `components/recipes/styles/manifests/presets/pack_02/SP02-107.yaml` | `assets/recipes/styles/defaults/SP02-107.webp` |
-| SP02-108 | `components/recipes/styles/manifests/presets/pack_02/SP02-108.yaml` | `assets/recipes/styles/defaults/SP02-108.webp` |
-| SP02-109 | `components/recipes/styles/manifests/presets/pack_02/SP02-109.yaml` | `assets/recipes/styles/defaults/SP02-109.webp` |
-| SP02-110 | `components/recipes/styles/manifests/presets/pack_02/SP02-110.yaml` | `assets/recipes/styles/defaults/SP02-110.webp` |
-| SP02-111 | `components/recipes/styles/manifests/presets/pack_02/SP02-111.yaml` | `assets/recipes/styles/defaults/SP02-111.webp` |
-| SP02-112 | `components/recipes/styles/manifests/presets/pack_02/SP02-112.yaml` | `assets/recipes/styles/defaults/SP02-112.webp` |
-| SP02-113 | `components/recipes/styles/manifests/presets/pack_02/SP02-113.yaml` | `assets/recipes/styles/defaults/SP02-113.webp` |
-| SP02-114 | `components/recipes/styles/manifests/presets/pack_02/SP02-114.yaml` | `assets/recipes/styles/defaults/SP02-114.webp` |
-| SP02-115 | `components/recipes/styles/manifests/presets/pack_02/SP02-115.yaml` | `assets/recipes/styles/defaults/SP02-115.webp` |
-| SP02-116 | `components/recipes/styles/manifests/presets/pack_02/SP02-116.yaml` | `assets/recipes/styles/defaults/SP02-116.webp` |
-| SP02-117 | `components/recipes/styles/manifests/presets/pack_02/SP02-117.yaml` | `assets/recipes/styles/defaults/SP02-117.webp` |
-| SP02-118 | `components/recipes/styles/manifests/presets/pack_02/SP02-118.yaml` | `assets/recipes/styles/defaults/SP02-118.webp` |
-| SP02-119 | `components/recipes/styles/manifests/presets/pack_02/SP02-119.yaml` | `assets/recipes/styles/defaults/SP02-119.webp` |
-| SP02-120 | `components/recipes/styles/manifests/presets/pack_02/SP02-120.yaml` | `assets/recipes/styles/defaults/SP02-120.webp` |
+Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `assets/recipes/styles/defaults/variants/` con writer unico x4. `SP04-005`, `SP04-007` y `SP04-008` pasan visualmente; `SP04-001`, `SP04-002`, `SP04-003`, `SP04-004` y `SP04-006` quedan watchlist por literalidad de superhero/weapon/interior. No se promovieron primarias, por eso `pack_04` sigue `availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`.
 
 ### pack_03
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP03-001 | `components/recipes/styles/manifests/presets/pack_03/SP03-001.yaml` | `assets/recipes/styles/defaults/SP03-001.webp` |
-| SP03-002 | `components/recipes/styles/manifests/presets/pack_03/SP03-002.yaml` | `assets/recipes/styles/defaults/SP03-002.webp` |
 | SP03-003 | `components/recipes/styles/manifests/presets/pack_03/SP03-003.yaml` | `assets/recipes/styles/defaults/SP03-003.webp` |
 | SP03-004 | `components/recipes/styles/manifests/presets/pack_03/SP03-004.yaml` | `assets/recipes/styles/defaults/SP03-004.webp` |
 | SP03-005 | `components/recipes/styles/manifests/presets/pack_03/SP03-005.yaml` | `assets/recipes/styles/defaults/SP03-005.webp` |
@@ -1487,8 +1501,20 @@ Operational note:
 
 ### pack_08
 
-| Preset | Manifest | Default card |
-| ------ | -------- | ------------ |
+| Preset   | Manifest                                                            | Default card                                   |
+| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
+| SP08-002 | `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml` | `assets/recipes/styles/defaults/SP08-002.webp` |
+| SP08-026 | `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml` | `assets/recipes/styles/defaults/SP08-026.webp` |
+| SP08-027 | `components/recipes/styles/manifests/presets/pack_08/SP08-027.yaml` | `assets/recipes/styles/defaults/SP08-027.webp` |
+| SP08-035 | `components/recipes/styles/manifests/presets/pack_08/SP08-035.yaml` | `assets/recipes/styles/defaults/SP08-035.webp` |
+| SP08-037 | `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml` | `assets/recipes/styles/defaults/SP08-037.webp` |
+| SP08-038 | `components/recipes/styles/manifests/presets/pack_08/SP08-038.yaml` | `assets/recipes/styles/defaults/SP08-038.webp` |
+| SP08-040 | `components/recipes/styles/manifests/presets/pack_08/SP08-040.yaml` | `assets/recipes/styles/defaults/SP08-040.webp` |
+| SP08-065 | `components/recipes/styles/manifests/presets/pack_08/SP08-065.yaml` | `assets/recipes/styles/defaults/SP08-065.webp` |
+
+Nota 2026-06-17 queue 3: tras reauditar semanticamente `SP08-042|SP08-044|SP08-048|SP08-050` y regenerar runtime, la cola visual autoritativa de `lib/staleStyleDefaultImages.generated.ts` sigue en estos 8 IDs. `bun run styles:validate -- --pack=pack_08 --coverage` -> `availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+
+Nota 2026-06-17 variants carousel: generadas `SP08-002-01|SP08-026-01|SP08-027-01|SP08-035-01|SP08-037-01|SP08-038-01|SP08-040-01|SP08-065-01` en `assets/recipes/styles/defaults/variants/` con writer unico x4. QA visual acepta las 8 como carousel candidates; `SP08-026`, `SP08-027`, `SP08-037` y `SP08-065` quedan watchlist leve. No se promovieron primarias, por eso `pack_08` sigue `availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
 
 ### pack_09
 
@@ -3613,3 +3639,657 @@ Actualizacion semantica 2026-06-12 sobre cierre ampliado de boilerplate residual
   - expected after runtime refresh: `pack_09 defaultImages=80/80 availableDefaultImages=78/80 staleDefaultImages=2 missingDefaultImages=0`
 - Prompt quality note:
   - generation used global denoise suffix from `scripts/style-default-utils.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_009_012_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-009|SP04-010|SP04-011|SP04-012" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_009_012_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-009-01.webp` (`690728` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-010-01.webp` (`279186` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-011-01.webp` (`650172` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-012-01.webp` (`507696` bytes)
+- QA:
+  - `SP04-009-01`: pass with watchlist; underground comix clear, paper/drawing cue, no readable text.
+  - `SP04-010-01`: pass; painted graphic novel read.
+  - `SP04-011-01`: watchlist; horror/cabin literal and high detail, no text/UI.
+  - `SP04-012-01`: strong pass; Moebius/dreamline sci-fi read.
+- Coverage after runtime refresh:
+  - `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `pack_04` still has stale primary debt for all 100 presets.
+  - next visual wave: `SP04-013|SP04-014|SP04-015|SP04-016` with one writer and post-generation visual QA.
+- Prompt quality note:
+  - generation used global denoise suffix and anti-microdetail directive from `scripts/style-default-utils.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_013_016_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-013|SP04-014|SP04-015|SP04-016" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_013_016_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-013-01.webp` (`194126` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-014-01.webp` (`357030` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-015-01.webp` (`818540` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-016-01.webp` (`329340` bytes)
+- QA:
+  - `SP04-013-01`: pass; chibi readable, toy-set light, no text/camera.
+  - `SP04-014-01`: high watchlist; pixel art readable, but superhero/cyber panel and UI-like element.
+  - `SP04-015-01`: high watchlist; risograph strong, but robot teacher/pointer/classroom specificity.
+  - `SP04-016-01`: high watchlist; tech-noir readable, but corridor/scene/prop UI-like specificity.
+- Coverage after runtime refresh:
+  - `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-014`, `SP04-015`, and `SP04-016` should not be promoted without a second prompt/visual pass.
+  - next visual wave can continue with `SP04-017|SP04-018|SP04-019|SP04-020`, but primary-ready generation needs tighter ID-scoped prompt review first.
+- Prompt quality note:
+  - generation used global denoise suffix and anti-microdetail directive from `scripts/style-default-utils.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_017_020_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-017|SP04-018|SP04-019|SP04-020" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_017_020_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-017-01.webp` (`487484` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-018-01.webp` (`347230` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-019-01.webp` (`808606` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-020-01.webp` (`150612` bytes)
+- QA:
+  - `SP04-017-01`: pass with watchlist; watercolor storybook strong, but library/room literal.
+  - `SP04-018-01`: pass with watchlist; paper cutout clear, but shelves/room literal.
+  - `SP04-019-01`: pass; crayon drawing strong, fantasy scene literal but readable.
+  - `SP04-020-01`: pass; vector flat infographic read, icons but no readable text.
+- Coverage after runtime refresh:
+  - `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-017` and `SP04-018` should not be promoted without prompt tightening because they repeat library/room staging.
+  - next visual wave: `SP04-021|SP04-022|SP04-023|SP04-024` with one writer; consider ID-scoped guardrails if repeated rooms/shelves continue.
+- Prompt quality note:
+  - generation used global denoise suffix and anti-microdetail directive from `scripts/style-default-utils.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_021_024_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-021|SP04-022|SP04-023|SP04-024" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_021_024_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-021-01.webp` (`511646` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-022-01.webp` (`659514` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-023-01.webp` (`445370` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-024-01.webp` (`232970` bytes)
+- QA:
+  - `SP04-021-01`: pass; gouache clear, museum/fossil literal but no library.
+  - `SP04-022-01`: pass with watchlist; colored pencil strong, wizard/staff/fantasy literal.
+  - `SP04-023-01`: pass with watchlist; scratchboard strong, ritual tabletop prop and tiny pseudo-symbols.
+  - `SP04-024-01`: pass with watchlist; claymation strong, weapon/staff-ish prop and fantasy warrior literal.
+- Coverage after runtime refresh:
+  - `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-022`, `SP04-023`, and `SP04-024` should not be promoted without tighter ID-scoped prompts.
+  - next visual wave: `SP04-025|SP04-026|SP04-027|SP04-028` only if carousel candidates are acceptable; otherwise preview prompts first.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, and the new `pack_04` repeated-scene guardrail in `scripts/generate-style-defaults.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_025_028_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-025|SP04-026|SP04-027|SP04-028" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_025_028_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-025-01.webp` (`497640` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-026-01.webp` (`372234` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-027-01.webp` (`429318` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-028-01.webp` (`541806` bytes)
+- QA:
+  - `SP04-025-01`: high watchlist; watercolor/fantasy prop drift, weak felt-tip marker read.
+  - `SP04-026-01`: pass; pop-up book very readable, literal but preset-compatible.
+  - `SP04-027-01`: pass with watchlist; whimsical ink clear, but lantern is protagonist prop.
+  - `SP04-028-01`: pass with watchlist; chalk pastel strong, but orb/portal/fantasy literal.
+- Coverage after runtime refresh:
+  - `pack_04 taxonomy=100/100 defaultImages=100/100 availableDefaultImages=0/100 staleDefaultImages=100 missingDefaultImages=0`
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-025` should be regenerated with ID-scoped prompt before any primary use.
+  - next visual wave should use `--print-prompts` if aiming for primary-ready rather than carousel fill.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, and the `pack_04` repeated-scene guardrail in `scripts/generate-style-defaults.ts`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_029_040_x4`
+
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-029|SP04-030|SP04-031|SP04-032" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_029_032_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-033|SP04-034|SP04-035|SP04-036" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_033_036_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-037|SP04-038|SP04-039|SP04-040" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_037_040_x4 --force`
+- Result:
+  - `generated=12 attempted=12 skipped=288 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-029-01.webp` (`328596` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-030-01.webp` (`436108` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-031-01.webp` (`391050` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-032-01.webp` (`661036` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-033-01.webp` (`471060` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-034-01.webp` (`714908` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-035-01.webp` (`99646` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-036-01.webp` (`643342` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-037-01.webp` (`474976` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-038-01.webp` (`537932` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-039-01.webp` (`313588` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-040-01.webp` (`123098` bytes)
+- QA:
+  - `SP04-029-01`: usable with high watchlist; sticker read clear, but fantasy character dominates.
+  - `SP04-030-01`: pass; scientific botanical diagram clear, no readable text.
+  - `SP04-031-01`: usable with watchlist; art deco strong, but scene/character too specific.
+  - `SP04-032-01`: pass with watchlist; Mucha read strong, but magic prop dominates.
+  - `SP04-033-01`: usable with watchlist; propaganda poster strong, but staff/weapon-like prop.
+  - `SP04-034-01`: pass; psychedelic poster clear, no text.
+  - `SP04-035-01`: high watchlist; minimal vector read, but fantasy spear character weakens preset.
+  - `SP04-036-01`: pass; Dada collage clear, no readable text.
+  - `SP04-037-01`: pass; Bauhaus geometry clear, no text.
+  - `SP04-038-01`: pass with watchlist; WPA screenprint clear, but fantasy landscape drift.
+  - `SP04-039-01`: high watchlist; cinematic fantasy scene more than painted movie poster.
+  - `SP04-040-01`: usable with watchlist; infographic primitives clear, but object/install UI-like staging.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, new `pack_04` category bases, strengthened `pack_04` repeated-scene guardrail, and ID-scoped motif guidance for `SP04-037..040`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-035` and `SP04-039` should be regenerated before any primary use.
+  - next visual wave: `SP04-041|SP04-042|SP04-043|SP04-044`, with prompt preview if primary-ready quality is required.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_041_044_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-041|SP04-042|SP04-043|SP04-044" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_041_044_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-041-01.webp` (`329150` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-042-01.webp` (`472170` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-043-01.webp` (`577676` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-044-01.webp` (`561226` bytes)
+- QA:
+  - `SP04-041-01`: pass; fashion illustration clear, no text/UI.
+  - `SP04-042-01`: usable with watchlist; surreal album-cover read, but fantasy-character staging.
+  - `SP04-043-01`: pass with watchlist; pulp magazine cover read strong, but noir scene very specific.
+  - `SP04-044-01`: pass; vintage travel poster clear, no text.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, and strengthened repeated-scene guardrail.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-042` and `SP04-043` should stay watchlist unless regenerated with tighter prompt.
+  - next visual wave: `SP04-045|SP04-046|SP04-047|SP04-048`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_045_048_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-045|SP04-046|SP04-047|SP04-048" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_045_048_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-045-01.webp` (`824886` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-046-01.webp` (`278332` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-047-01.webp` (`155972` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-048-01.webp` (`298518` bytes)
+- QA:
+  - `SP04-045-01`: usable with high watchlist; screenprint/gig-poster read, but fantasy character and prop dominate.
+  - `SP04-046-01`: usable with watchlist; speedpaint gesture clear, but warrior fantasy scene dominates.
+  - `SP04-047-01`: pass with watchlist; matte painting atmosphere clear, but character/fantasy landscape literal.
+  - `SP04-048-01`: pass; character sheet readable, secondary views and swatches, no text.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, and strengthened repeated-scene guardrail.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-045`, `SP04-046`, and `SP04-047` should not become primary without anti-fantasy-character regeneration.
+  - next visual wave: `SP04-049|SP04-050|SP04-051|SP04-052`, preferably after prompt preview.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_049_052_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-049|SP04-050|SP04-051|SP04-052" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_049_052_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-049-01.webp` (`285532` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-050-01.webp` (`317578` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-051-01.webp` (`438772` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-052-01.webp` (`261880` bytes)
+- QA:
+  - `SP04-049-01`: usable with watchlist; environment concept clear, but fantasy figure/staff dominates.
+  - `SP04-050-01`: pass; vehicle design readable, no text/UI.
+  - `SP04-051-01`: pass; creature design clear, good design focus.
+  - `SP04-052-01`: pass; isometric game art clear, prop/character coherent.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, and strengthened repeated-scene guardrail.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-049` should stay watchlist unless regenerated without protagonist/staff.
+  - next visual wave: `SP04-053|SP04-054|SP04-055|SP04-056`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_053_056_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-053|SP04-054|SP04-055|SP04-056" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_053_056_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-053-01.webp` (`518868` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-054-01.webp` (`472176` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-055-01.webp` (`222544` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-056-01.webp` (`293384` bytes)
+- QA:
+  - `SP04-053-01`: pass with watchlist; storyboard sketch clear, but arrows/circles are strong.
+  - `SP04-054-01`: usable with high watchlist; prop design clear, but sword/weapon dominates.
+  - `SP04-055-01`: high watchlist; fantasy-character key art too generic.
+  - `SP04-056-01`: high watchlist; photobash/cinematic read, but fantasy-character scene dominates.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, and strengthened repeated-scene guardrail.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-054`, `SP04-055`, and `SP04-056` should not become primary without anti-fantasy-character regeneration.
+  - next visual wave: `SP04-057|SP04-058|SP04-059|SP04-060`, preferably with local guardrail.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_057_060_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-057|SP04-058|SP04-059|SP04-060" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_057_060_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-057-01.webp` (`505666` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-058-01.webp` (`253528` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-059-01.webp` (`390692` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-060-01.webp` (`162980` bytes)
+- QA:
+  - `SP04-057-01`: pass; blueprint schematic clear, orthographic/exploded view, no readable text.
+  - `SP04-058-01`: usable with watchlist; low-poly clear, but fantasy character remains.
+  - `SP04-059-01`: high watchlist; HUD visible, but character/sword dominates.
+  - `SP04-060-01`: high watchlist; mechanical concept clear, but literal weapon dominates.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, strengthened repeated-scene guardrail, and ID-scoped motifs for `SP04-057..060`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-059` and `SP04-060` should be regenerated for primary use.
+  - next visual wave: `SP04-061|SP04-062|SP04-063|SP04-064`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_061_064_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-061|SP04-062|SP04-063|SP04-064" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_061_064_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-061-01.webp` (`738520` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-062-01.webp` (`951714` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-063-01.webp` (`629554` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-064-01.webp` (`766580` bytes)
+- QA:
+  - `SP04-061-01`: high watchlist; linocut clear, but workshop/persona/portrait dominates.
+  - `SP04-062-01`: high watchlist; etching clear, but portrait/artist staging dominates.
+  - `SP04-063-01`: pass with watchlist; woodcut/ukiyo-e clear, literal landscape/figure.
+  - `SP04-064-01`: pass with watchlist; dotwork strong, but fantasy figure present.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, strengthened repeated-scene guardrail, and ID-scoped motifs for `SP04-061..064`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-061` and `SP04-062` should be regenerated for primary use.
+  - next visual wave: `SP04-065|SP04-066|SP04-067|SP04-068`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_065_068_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-065|SP04-066|SP04-067|SP04-068" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_065_068_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-065-01.webp` (`637076` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-066-01.webp` (`643674` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-067-01.webp` (`618446` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-068-01.webp` (`617824` bytes)
+- QA:
+  - `SP04-065-01`: pass; lithograph grain and soft tonal field clear, no text.
+  - `SP04-066-01`: pass with watchlist; screenprint clear, but fantasy character dominates.
+  - `SP04-067-01`: high watchlist; transfer texture visible, but portrait/artist staging dominates.
+  - `SP04-068-01`: pass with watchlist; cyanotype clear, but fantasy figure present.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, strengthened repeated-scene guardrail, and ID-scoped motifs for `SP04-065..068`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-067` should be regenerated for primary use.
+  - next visual wave: `SP04-069|SP04-070|SP04-071|SP04-072`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_069_072_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-069|SP04-070|SP04-071|SP04-072" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_069_072_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-069-01.webp` (`738408` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-070-01.webp` (`221450` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-071-01.webp` (`626986` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-072-01.webp` (`844582` bytes)
+- QA:
+  - `SP04-069-01`: pass with watchlist; rubber-stamp transfer and broken ink are clear, but fantasy figure/object dominates.
+  - `SP04-070-01`: high watchlist; mezzotint chiaroscuro reads, but gothic fantasy portrait dominates.
+  - `SP04-071-01`: high watchlist; aquatint tone and grain read, but hooded fantasy figure dominates.
+  - `SP04-072-01`: pass with watchlist; ballpoint blue hatching and creature anchor read, but dense coastal background adds clutter.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, strengthened repeated-scene guardrail, and ID-scoped motifs for `SP04-069..072`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-070` and `SP04-071` should be regenerated for primary use with object/mark-system prompts.
+  - next visual wave: `SP04-073|SP04-074|SP04-075|SP04-076`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_073_076_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-073|SP04-074|SP04-075|SP04-076" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_073_076_x4 --force`
+- Result:
+  - `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-073-01.webp` (`403808` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-074-01.webp` (`264266` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-075-01.webp` (`675784` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-076-01.webp` (`471810` bytes)
+- QA:
+  - `SP04-073-01`: pass; fountain-pen flex strokes, wet ink, vellum warmth, no readable text.
+  - `SP04-074-01`: high watchlist; Sharpie masses read, but fantasy hero and flag silhouette dominate.
+  - `SP04-075-01`: pass; traditional tattoo-flash grammar clear, friendly seahorse anchor, no skin/text.
+  - `SP04-076-01`: pass with watchlist; graffiti aerosol gesture and non-text creature read, but wall/platform staging remains.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, current `pack_04` category bases, strengthened repeated-scene guardrail, and ID-scoped motifs for `SP04-073..076`.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-074` should be regenerated for primary use with object/emblem prompt.
+  - next visual wave: `SP04-077|SP04-078|SP04-079|SP04-080`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_077_080_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-077|SP04-078|SP04-079|SP04-080" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_077_080_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-080 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_080_retry_object --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-080 --parallel=1 --variant-slot=3 --session-suffix=qa_p04_080_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry 1: `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`
+  - retry 2: `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-077-01.webp` (`566450` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-078-01.webp` (`654394` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-079-01.webp` (`561336` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-080-03.webp` (`341554` bytes)
+- Rejected variants:
+  - `assets/recipes/styles/defaults/variants/SP04-080-01.webp` (`526408` bytes): reject; person/workshop/table/print block.
+  - `assets/recipes/styles/defaults/variants/SP04-080-02.webp` (`481596` bytes): reject; print block/table still dominates.
+- QA:
+  - `SP04-077-01`: pass with watchlist; wildstyle creature/letterform clear, but wall/platform staging remains.
+  - `SP04-078-01`: high watchlist; stencil/overspray clear, but hero figure and architecture dominate.
+  - `SP04-079-01`: pass; blackletter ornamental dragon/emblem clear, no readable text.
+  - `SP04-080-03`: pass; brush-pen ink and wash over simple subject, no person/workshop.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-077..080`, and a dedicated `SP04-080` base override after two bad retries.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-078` should be regenerated for primary use with object/symbol-only prompt.
+  - next visual wave: `SP04-081|SP04-082|SP04-083|SP04-084`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_081_084_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-081|SP04-082|SP04-083|SP04-084" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_081_084_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-082 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_082_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry: `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-081-01.webp` (`305662` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-082-02.webp` (`399426` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-083-01.webp` (`544594` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-084-01.webp` (`643820` bytes)
+- Rejected variants:
+  - `assets/recipes/styles/defaults/variants/SP04-082-01.webp` (`523718` bytes): reject; character portrait/key art dominates.
+- QA:
+  - `SP04-081-01`: pass with watchlist; 3-value silhouette read, but single fantasy hero/sword dominates.
+  - `SP04-082-02`: usable with watchlist; better object/environment fragment, but fantasy environment still dominates.
+  - `SP04-083-01`: pass with watchlist; gesture/search-line energy clear, but fantasy hero/sword dominates.
+  - `SP04-084-01`: pass; material swatches and texture insets clear, no readable text.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-081..084`, and a dedicated `SP04-082` base override after one bad output.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-081`, `SP04-082`, and `SP04-083` need stricter primary regeneration if promoted later.
+  - next visual wave: `SP04-085|SP04-086|SP04-087|SP04-088`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_085_088_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-085|SP04-086|SP04-087|SP04-088" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_085_088_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-085|SP04-088" --parallel=2 --variant-slot=2 --session-suffix=qa_p04_085_088_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry: `generated=2 attempted=2 skipped=98 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-085-02.webp` (`102156` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-086-01.webp` (`501738` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-087-01.webp` (`203914` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-088-02.webp` (`239788` bytes)
+- Rejected variants:
+  - `assets/recipes/styles/defaults/variants/SP04-085-01.webp` (`290004` bytes): reject; hero character + fantasy landscape.
+  - `assets/recipes/styles/defaults/variants/SP04-088-01.webp` (`251176` bytes): reject; hero character + cliff pose.
+- QA:
+  - `SP04-085-02`: pass; mood color-script/time progression clear, no person.
+  - `SP04-086-01`: pass with watchlist; callout/exploded details clear, but character armor sheet dominates.
+  - `SP04-087-01`: pass; silhouette iteration variants clear, no readable text.
+  - `SP04-088-02`: usable with watchlist; rough environment blockout clear, but fantasy architecture dominates.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-085..088`, and dedicated base overrides for `SP04-085/088` after bad first outputs.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-086` and `SP04-088` need stricter primary regeneration if promoted later.
+  - next visual wave: `SP04-089|SP04-090|SP04-091|SP04-092`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_089_092_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-089|SP04-090|SP04-091|SP04-092" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_089_092_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-092 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_092_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry: `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-089-01.webp` (`528634` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-090-01.webp` (`536752` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-091-01.webp` (`451680` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-092-02.webp` (`456018` bytes)
+- Rejected variants:
+  - `assets/recipes/styles/defaults/variants/SP04-092-01.webp` (`584740` bytes): reject; full posed model dominates.
+- QA:
+  - `SP04-089-01`: pass; anatomy/variant/swatch sheet clear, no text.
+  - `SP04-090-01`: pass; prop variants and exploded parts clear, no readable text.
+  - `SP04-091-01`: pass; foam-core/chipboard massing clear, no furniture/interior.
+  - `SP04-092-02`: pass; garment fragments, swatches, and trim systems clear, no face/full body.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-089..092`, and dedicated `SP04-092` base override after one bad output.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-090` may need object-only regeneration if promoted later.
+  - next visual wave: `SP04-093|SP04-094|SP04-095|SP04-096`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_093_096_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-093|SP04-094|SP04-095|SP04-096" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_093_096_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-093|SP04-096" --parallel=2 --variant-slot=2 --session-suffix=qa_p04_093_096_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry: `generated=2 attempted=2 skipped=98 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-093-02.webp` (`170098` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-094-01.webp` (`588812` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-095-01.webp` (`617316` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-096-02.webp` (`419552` bytes)
+- Rejected / non-preferred variants:
+  - `assets/recipes/styles/defaults/variants/SP04-093-01.webp` (`152414` bytes): reject; hero character + fantasy vista.
+  - `assets/recipes/styles/defaults/variants/SP04-096-01.webp` (`512094` bytes): non-preferred; ornate equipment but weak tier progression.
+- QA:
+  - `SP04-093-02`: pass; same-form relighting x5 clear, no person.
+  - `SP04-094-01`: pass; non-human layered anatomy/reference plate clear, no text.
+  - `SP04-095-01`: pass with watchlist; foliage read strong, but more botanical scene than kit.
+  - `SP04-096-02`: pass; non-weapon equipment tier progression clear.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-093..096`, and base overrides for `SP04-093/096` after weak first outputs.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `SP04-095` may need kit/swatch regeneration if promoted later.
+  - next visual wave: `SP04-097|SP04-098|SP04-099|SP04-100`.
+
+### Representative variants - 2026-06-17 - `pack_04` ola `qa_p04_097_100_x4`
+
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-097|SP04-098|SP04-099|SP04-100" --parallel=4 --variant-slot=1 --session-suffix=qa_p04_097_100_x4 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-097 --parallel=1 --variant-slot=2 --session-suffix=qa_p04_097_retry_base --force`
+- Result:
+  - first wave: `generated=4 attempted=4 skipped=96 failed=0 packs=pack_04`
+  - retry: `generated=1 attempted=1 skipped=99 failed=0 packs=pack_04`
+- New carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP04-097-02.webp` (`586658` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-098-01.webp` (`812532` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-099-01.webp` (`536546` bytes)
+  - `assets/recipes/styles/defaults/variants/SP04-100-01.webp` (`358630` bytes)
+- Rejected variants:
+  - `assets/recipes/styles/defaults/variants/SP04-097-01.webp` (`520994` bytes): reject; brayer/printmaking prop dominates.
+- QA:
+  - `SP04-097-02`: pass; grayscale composition thumbnails clear, no brayer/tool prop.
+  - `SP04-098-01`: pass; world-map/atlas plate clear, no readable labels.
+  - `SP04-099-01`: usable with watchlist; UI/HUD wireframe clear, but central character-like marker dominates.
+  - `SP04-100-01`: pass; monster scale lineup and footprint marks clear, no labels/text.
+- Prompt quality note:
+  - generation used global denoise suffix, anti-microdetail directive, strengthened repeated-scene guardrail, ID-scoped motifs for `SP04-097..100`, and dedicated `SP04-097` base override after one bad output.
+- Interpretation:
+  - variants are carousel candidates only; no primary promotion happened.
+  - `pack_04` carousel sweep now covers `SP04-001..100`.
+  - `pack_04` primary default images remain stale/default until promotion or primary regeneration policy runs.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_021_029*`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-021-03.webp` (`409504` bytes): usable with watchlist; costume/motion fragment, less IP-like than prior slots.
+  - `assets/recipes/styles/defaults/variants/SP05-022-02.webp` (`255670` bytes): usable; urban supernatural aura, no visible sword.
+  - `assets/recipes/styles/defaults/variants/SP05-023-03.webp` (`376638` bytes): usable with watchlist; headless adventure costume/rope/sky read.
+  - `assets/recipes/styles/defaults/variants/SP05-025-02.webp` (`314704` bytes): pass; cerebral thriller graphic tension, no readable notebook.
+  - `assets/recipes/styles/defaults/variants/SP05-028-04.webp` (`487926` bytes): usable; lo-fi roadtrip rhythm, no sword/lamp/interior.
+  - `assets/recipes/styles/defaults/variants/SP05-029-02.webp` (`495668` bytes): pass; chaotic indie pop-collage anime energy.
+- Rejected / non-preferred variants:
+  - `SP05-021-01`, `SP05-021-02`, `SP05-023-01`, `SP05-023-02`: too franchise-like.
+  - `SP05-022-01`, `SP05-025-01`, `SP05-028-01`, `SP05-028-02`, `SP05-028-03`: too sword/fight/interior/lamp/person-first.
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_021_029_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029" --parallel=6 --variant-slot=2 --session-suffix=qa_p05_021_029_retry_safe_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-021|SP05-023|SP05-028" --parallel=3 --variant-slot=3 --session-suffix=qa_p05_021_023_028_retry_fragment_x3 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 --preset=SP05-028 --parallel=1 --variant-slot=4 --session-suffix=qa_p05_028_retry_no_room --force`
+- Interpretation:
+  - no primary promotion happened.
+  - `pack_05` requires ID-specific IP guardrails before each wave.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_031_036_x6`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-031-01.webp` (`524460` bytes): usable; ceremonial motion arcs, no visible blade.
+  - `assets/recipes/styles/defaults/variants/SP05-032-02.webp` (`356292` bytes): usable with watchlist; occult aura/hand crop, odd small prop.
+  - `assets/recipes/styles/defaults/variants/SP05-033-01.webp` (`664016` bytes): watchlist; punk graphic splatter, no explicit gore.
+  - `assets/recipes/styles/defaults/variants/SP05-034-01.webp` (`310186` bytes): usable; bright academy-hero styling.
+  - `assets/recipes/styles/defaults/variants/SP05-035-01.webp` (`441200` bytes): usable with watchlist; vertical survival read, industrial lamp is preset-specific.
+  - `assets/recipes/styles/defaults/variants/SP05-036-02.webp` (`247138` bytes): usable; colossal ruined mechanized scale, no foreground weapon.
+- Rejected / non-preferred variants:
+  - `SP05-032-01` (`335572` bytes): sword/weapon-first urban fight.
+  - `SP05-036-01` (`287044` bytes): weapon/hero-first war drama.
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-031|SP05-032|SP05-033|SP05-034|SP05-035|SP05-036" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_031_036_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-032|SP05-036" --parallel=2 --variant-slot=2 --session-suffix=qa_p05_032_036_retry_no_weapon --force`
+- Next:
+  - continue `SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052`.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_037_052_x6`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-037-01.webp` (`353098` bytes): usable with watchlist; deadpan impact comedy, strong protagonist but no obvious IP.
+  - `assets/recipes/styles/defaults/variants/SP05-038-01.webp` (`476152` bytes): usable with watchlist; psychic pop rupture clear, corridor/figure dominate.
+  - `assets/recipes/styles/defaults/variants/SP05-039-01.webp` (`361052` bytes): usable; tactical vectors and adventure clarity, no UI/text.
+  - `assets/recipes/styles/defaults/variants/SP05-040-01.webp` (`528336` bytes): usable; mythic symbolic field, no foreground weapon.
+  - `assets/recipes/styles/defaults/variants/SP05-051-01.webp` (`330400` bytes): usable; neon alloy/cyber motion read.
+  - `assets/recipes/styles/defaults/variants/SP05-052-01.webp` (`297398` bytes): usable with watchlist; surveillance grid read, cyborg protagonist strong.
+- Prompt quality note:
+  - added ID-specific anti-IP/anti-weapon/anti-readable-UI motifs for `SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052` before generation.
+- Command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_037_052_x6 --force`
+- Next:
+  - continue `SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058`.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_053_058_x6`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-053-01.webp` (`554678` bytes): pass; heavy hydraulic industrial mecha, no insignia/weapon-first.
+  - `assets/recipes/styles/defaults/variants/SP05-054-01.webp` (`485886` bytes): usable with watchlist; luminous space-opera, strong protagonist but no weapon focus.
+  - `assets/recipes/styles/defaults/variants/SP05-055-02.webp` (`357758` bytes): pass; gothic industrial shell/object, no person/weapon.
+  - `assets/recipes/styles/defaults/variants/SP05-056-01.webp` (`332446` bytes): usable with watchlist; geometric ignition, strong protagonist but no text/weapon.
+  - `assets/recipes/styles/defaults/variants/SP05-057-01.webp` (`358252` bytes): usable with watchlist; sleek collapse romance, strong suit/body focus but not sexualized.
+  - `assets/recipes/styles/defaults/variants/SP05-058-02.webp` (`83816` bytes): usable with high watchlist; grief/control mood clear, lower UI risk, but soft and person-forward.
+- Rejected / non-preferred variants:
+  - `SP05-055-01` (`408926` bytes): reject; blade-like foreground.
+  - `SP05-058-01` (`280726` bytes): non-preferred; readable-ish UI and weapon-like drones.
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_053_058_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-055|SP05-058" --parallel=2 --variant-slot=2 --session-suffix=qa_p05_055_058_retry_object --force`
+- Next:
+  - continue `SP05-059|SP05-060|SP05-061|SP05-062|SP05-063|SP05-064`.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_059_064_x6`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-059-01.webp` (`439490` bytes): usable with watchlist; tactical network cognition, UI-like overlays not clearly readable.
+  - `assets/recipes/styles/defaults/variants/SP05-060-01.webp` (`444102` bytes): usable with watchlist; orbital rivalry/symmetry clear, no foreground weapon.
+  - `assets/recipes/styles/defaults/variants/SP05-061-02.webp` (`546824` bytes): usable with watchlist; crosshatched doom/eclipsed weight, still person-forward.
+  - `assets/recipes/styles/defaults/variants/SP05-062-03.webp` (`302784` bytes): usable with high watchlist; split mask/emblem improved, but still dark ruin/skull-adjacent.
+  - `assets/recipes/styles/defaults/variants/SP05-063-01.webp` (`401234` bytes): usable with watchlist; crimson gothic authority, no explicit gore.
+  - `assets/recipes/styles/defaults/variants/SP05-064-02.webp` (`436090` bytes): usable with watchlist; wind-scoured redemption, figure remains but no weapon/gore.
+- Rejected / non-preferred variants:
+  - `SP05-061-01` (`603812` bytes): too famous dark-fantasy swordsman-like / hero portrait.
+  - `SP05-062-01` (`363580` bytes): too body-horror/person-forward.
+  - `SP05-062-02` (`473512` bytes): reject; humanoid dominant, aggressive ribbon/blade read, gothic ruin.
+  - `SP05-064-01` (`315976` bytes): too famous dark-fantasy/samurai-like, kneeling hero.
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-059|SP05-060|SP05-061|SP05-062|SP05-063|SP05-064" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_059_064_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-061|SP05-062|SP05-064" --parallel=3 --variant-slot=2 --session-suffix=qa_p05_061_062_064_retry_object --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 --preset=SP05-062 --parallel=1 --variant-slot=3 --session-suffix=qa_p05_062_retry_emblem --force`
+- Interpretation:
+  - no primary promotion happened.
+  - `SP05-061`, `SP05-062`, and `SP05-064` need better primary candidates if this category is promoted later.
+
+### Representative variants - 2026-06-17 - `pack_05` ola `qa_p05_065_070_x6`
+
+- Accepted carousel variants:
+  - `assets/recipes/styles/defaults/variants/SP05-065-01.webp` (`387782` bytes): usable only as watchlist; pale threshold mood clear, but hero/ruin remain too strong.
+  - `assets/recipes/styles/defaults/variants/SP05-066-01.webp` (`384526` bytes): usable with watchlist; ceramic-botanical corruption, still humanoid/cathedral-adjacent.
+  - `assets/recipes/styles/defaults/variants/SP05-067-01.webp` (`376094` bytes): reject for primary; hero with weapon/cathedral, not aligned with object/depth intent.
+  - `assets/recipes/styles/defaults/variants/SP05-068-01.webp` (`342830` bytes): reject for primary; hero/ruin/lamp/cathedral dominates.
+  - `assets/recipes/styles/defaults/variants/SP05-069-01.webp` (`491818` bytes): reject for primary; full hero and dungeon-like geometry dominate.
+  - `assets/recipes/styles/defaults/variants/SP05-070-01.webp` (`327634` bytes): usable with watchlist; neon tragic metamorphosis energy clear, strong character silhouette.
+- Provider-blocked retries:
+  - `qa_p05_065_069_retry_object` returned `generated=0 attempted=5 failed=5`, all `status needs_review`; no repo variants written.
+  - `qa_p05_091_096_x6`, `qa_p05_091_096_safe_label_x6`, `qa_p05_121_126_x6`, `qa_p05_121_122_compact_safe`, `qa_p05_121_material_safe`, `qa_p05_221_226_x6`, and `qa_p05_237_242_x6` also returned `status needs_review` with no recoverable assets for those sessions.
+- Commands:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-065|SP05-066|SP05-067|SP05-068|SP05-069|SP05-070" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_065_070_x6 --force`
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-065|SP05-066|SP05-067|SP05-068|SP05-069" --parallel=5 --variant-slot=2 --session-suffix=qa_p05_065_069_retry_object --force`
+- Interpretation:
+  - `needs_review` jobs can still leave assets in Studio Library; `qa_p05_065_070_x6` had assets and repo variants, later blocked sessions did not.
+  - Next implementation step should add a script path that can inspect/recover assets from `needs_review` jobs by session when safe, or route sensitive pack_05 prompts through a more conservative provider-safe recipe.

@@ -31,11 +31,13 @@ visualDna:
     leerse como sistema-programa.
 avoidRules:
   - ornate
-  - capitalist
+  - luxury retail gloss
+  - corporate glass tower
+  - consumer signage
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-030.webp
 attributes:
-  negativePrompt: ornate, capitalist
+  negativePrompt: ornate, luxury retail gloss, corporate glass tower, consumer signage
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

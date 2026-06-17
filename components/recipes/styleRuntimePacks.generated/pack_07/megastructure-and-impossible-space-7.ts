@@ -41,11 +41,11 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line:
         'Retículas modulares, aperturas circulares, vectores de sujeción y grillas de acceso técnico de alta densidad.',
       color_palette:
-        'White, Velcro Blue, Equipment Beige, Soft-glow Green LED, Black panel accents',
+        'White, Hook-and-loop Blue, Equipment Beige, Soft-glow Green LED, Black panel accents',
       lighting_setup:
         'LED técnico de alto control, focos de tarea integrados en panel, rebote frío y modo nocturno ámbar de baja fatiga.',
       material_texture:
-        'Paneles textiles técnicos ignífugos, aleación cepillada, velcro de retención, foil aislante y polímeros moldeados funcionales.',
+        'Paneles textiles técnicos ignífugos, aleación cepillada, hook-and-loop retention, foil aislante y polímeros moldeados funcionales.',
       render_quality:
         'Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste realista de uso continuo.',
       spatial_distortion:
@@ -62,37 +62,37 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-064',
     name: 'Aerostatic Cloud Retrofuture',
     category: '7. Megastructure And Impossible Space',
-    negativePrompt: 'ground',
+    negativePrompt: 'flat ground-level city, airport terminal lock, terrestrial baseplate',
     style: {
       aesthetic:
-        'Retrofuturismo aerostÃ¡tico de gran altitud, entre lujo modernista y equilibrio suspendido sereno.',
+        'High-altitude aerostatic retrofuture between modernist luxury and serene suspended balance.',
       form_and_line:
-        'Plataformas circulares estratificadas, cubiertas aerodinÃ¡micas curvadas, aletas de aguja y anillos concÃ©ntricos suspendidos.',
+        'Layered circular platforms, curved aerodynamic canopies, needle fins and suspended concentric rings.',
       color_palette:
         'Sunset amber haze, pearl ivory superstructures, rose-gold cloud gradients, muted champagne metallics, and cool silver edge highlights',
       lighting_setup:
-        'Ambiente difuso de horizonte, balizas suaves, backscatter cÃ¡lido y bloom controlado en atmÃ³sfera de altura.',
+        'Horizon-diffused ambience, soft beacons, warm backscatter and controlled bloom in high atmosphere.',
       material_texture:
-        'Revestimiento de aleaciÃ³n satinada, piel compuesta pulida, vidrio de grano bajo y costuras de precisiÃ³n.',
+        'Satin alloy cladding, polished composite skin, low-grain glass and precision seams.',
       render_quality:
-        'Arquitectura especulativa premium, legible a distancia y separada por capas atmosfÃ©ricas elegantes.',
+        'Premium speculative architecture, readable at distance and separated by elegant atmospheric layers.',
       spatial_distortion:
-        'Emphasize stacked floating tier depth, long vertical voids, and gentle perspective curvature without surreal deformation',
-      atmosphere: 'Refinada, tranquila y aspiracional, con gracia tecnolÃ³gica diplomÃ¡tica.',
+        'Stacked floating tier depth, long vertical voids and gentle perspective curvature without surreal deformation.',
+      atmosphere: 'Refined, tranquil and aspirational, with diplomatic technological grace.',
       key_features:
-        'JerarquÃ­a de plataformas concÃ©ntricas, coronas suspendidas, balizaje perimetral suave y contorno metÃ¡lico prÃ­stino.',
+        'Concentric platform hierarchy, suspended crowns, soft perimeter beacons and pristine metallic contour.',
       creative_brief:
-        'Define un retrofuturo aerostÃ¡tico transferible: tiers flotantes, superficies satinadas, atmÃ³sfera de ocaso, balizas suaves y vacÃ­o vertical elegante. Debe sugerir altura, suspensiÃ³n y lujo tecnolÃ³gico sin depender de sky-city, terminal o ciudad licenciada.',
+        'Define transferable aerostatic retrofuture: floating tiers, satin surfaces, sunset atmosphere, soft beacons and elegant vertical void. Suggest height, suspension and technological luxury without depending on sky-city, airport terminal, licensed city, or a total absence of ground/base context.',
     },
   },
   {
     id: 'SP07-075',
-    name: 'Escherian Impossible Circulation',
+    name: 'Impossible Circulation Optical Paradox',
     category: '7. Megastructure And Impossible Space',
     negativePrompt: 'logical physics',
     style: {
       aesthetic:
-        'Paradoja espacial escheriana, ambigüedad óptica matemática y circulación imposible.',
+        'Paradoja espacial de perspectiva imposible, ambigüedad óptica matemática y circulación imposible.',
       form_and_line:
         'Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en trayectorias cerradas.',
       color_palette:
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-076',
     name: 'Stellar Shell Megastructure',
     category: '7. Megastructure And Impossible Space',
-    negativePrompt: 'planet surface',
+    negativePrompt: 'ground-level planetary landscape lock, ordinary planet surface view',
     style: {
       aesthetic:
         'Megaestructura estelar de escala civilizatoria con encapsulamiento luminoso y monumentalismo industrial cósmico.',
@@ -164,14 +164,14 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.',
       creative_brief:
-        'Convierte composición en hábitat de banda orbital: curvatura de horizonte ascendente, ecología lineal, muros de borde y macro-perspectiva. La identidad viene de continuidad anular y planificacion biosferica. Conserva curvatura orbital, ecologia lineal, escala macro y horizonte ascendente sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Usa claves de banda orbital como lenguaje de escala: curvatura ascendente, horizon wrap, ecologia lineal, muros de borde y perspectiva macro. La identidad viene de continuidad anular y planificacion biosferica sin obligar a que toda composicion sea un habitat completo.',
     },
   },
   {
     id: 'SP07-078',
     name: 'Cybernetic Hive Infrastructure',
     category: '7. Megastructure And Impossible Space',
-    negativePrompt: 'smooth',
+    negativePrompt: 'featureless minimal surfaces, clean seamless shell, empty smooth panels',
     style: {
       aesthetic:
         'Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.',
@@ -197,55 +197,55 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-079',
     name: 'Absolute Black Monolith',
     category: '7. Megastructure And Impossible Space',
-    negativePrompt: 'ornamentation',
+    negativePrompt: 'ornamentation, recognizable cinematic monolith proportions',
     style: {
       aesthetic:
-        'Monolithic black austerity de geometría absoluta, presencia simbólica y monumentalidad cósmica mínima.',
+        'Matte-black vertical mass austerity, severe edge light and symbolic monumental restraint.',
       form_and_line:
-        'Proporción rectangular estricta, caras planas impecables y aristas verticales limpias sin ornamento.',
+        'Vertical planar massing, flawless dark faces and clean severe edges without ornament.',
       color_palette:
-        'Deep matte black mass, near-void black absorption fields, faint edge silver glints, and sparse neutral lunar-gray environmental reflections',
+        'Deep matte black mass, near-void black absorption fields, faint edge silver glints, sparse neutral lunar-gray reflections',
       lighting_setup:
-        'Iluminación direccional de alto contraste, absorción extrema, catch-light mínimo y sombra proyectada severa.',
+        'High-contrast directional light, extreme absorption, minimal catch-light and severe projected shadow.',
       material_texture:
-        'Superficie ultrasuave y anónima, mate no granular, supresión casi total del especular y uniformidad de artefacto.',
+        'Ultrasmooth anonymous matte surface, near-total specular suppression and artifact-like uniformity.',
       render_quality:
-        'Minimalismo de precisión con autoridad geométrica máxima y economía tonal disciplinada.',
+        'Precision minimalism with geometric authority and disciplined tonal economy.',
       spatial_distortion: 'None',
       atmosphere:
-        'Ominosa, contemplativa y trascendente, con silencio intelectualmente inquietante.',
+        'Ominous, contemplative and transcendent, with intellectually unsettling silence.',
       key_features:
-        'Proporción canónica, planos negros absorbentes, perfil sin rasgos y anclaje compositivo vertical severo.',
+        'Non-canonical vertical mass, absorbent black planes, featureless profile and severe vertical composition.',
       creative_brief:
-        'Reduce cualquier sujeto a presencia monolítica: proporción estricta, planos negros absorbentes, mínima luz de borde y autoridad simbólica. Debe conservar misterio austero sin depender de locación espacial.',
+        'Reduce any subject to abstract vertical presence: absorbent black planes, minimal edge light and symbolic authority. Preserve austere mystery without requiring a space location or recognizable cinematic monolith proportions.',
     },
   },
   {
     id: 'SP07-080',
     name: 'Dimensional Console Retrotech',
     category: '7. Megastructure And Impossible Space',
-    negativePrompt: 'small',
+    negativePrompt:
+      'literal control room, single central prop, named franchise interior, iconic control-room layout',
     style: {
       aesthetic:
-        'Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión interior imposible.',
+        'Dimensional retrotech interior grammar inspired by recursive retrofuturist control-surface grammar, circular wall modules, organic architectural growth, tactile command surfaces and impossible interior expansion.',
       form_and_line:
-        'Eje central energético, nodo hex radial, repetición de roundels y anillos en recesión no euclidiana.',
+        'Circular wall modules, hex nodes, ribbed thresholds and console-like control surfaces arranged as recursive retrotech depth, not one fixed central mechanism room.',
       color_palette:
-        'Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel highlights, and temporal blue accent glows',
+        'Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold circular-module highlights, and dimensional blue accent glows',
       lighting_setup:
-        'Pulso lumínico central, spill de mando, rebote indirecto en roundels y bloom dorado controlado.',
+        'Command-surface glow, indirect circular-module bounce, controlled golden bloom and soft dimensional accent light.',
       material_texture:
-        'Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y cableado trenzado.',
+        'Mixed organo-technological surfaces, coral-like ribs, worn console metal, diffused glass and braided cabling.',
       render_quality:
-        'Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.',
+        'High-detail retrofuturist dimensional depth with coherent impossible-space layering.',
       spatial_distortion:
-        'Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation',
-      atmosphere:
-        'Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.',
+        'Non-euclidean depth recursion, repeated circular wall modules and expandable interior scale without requiring a central mechanism.',
+      atmosphere: 'Adventurous, mysterious and spatially uncanny, with recursive depth.',
       key_features:
-        'Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.',
+        'Repeating circular wall modules, hexagonal control logic, copper-coral ribs, layered command surfaces and expandable dimensional thresholds.',
       creative_brief:
-        'Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando tactil sin exigir cabina heroica, rotor central literal o sala de control cerrada. Conserva eje energetico, roundels, recesion dimensional y tactilidad retrotech sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Build retrotech dimensional language with rhythmic circular wall modules, copper-brass metal, organotech ribs, tactile command surfaces and expanded interior scale. Avoid named franchise interiors, iconic control-room layouts, concrete license reads; prioritize spatial paradox, depth recursion and console-like tactility without requiring a fixed cabin, literal central mechanism or closed control room.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

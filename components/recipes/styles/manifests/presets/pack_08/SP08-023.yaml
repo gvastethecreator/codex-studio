@@ -20,18 +20,18 @@ visualDna:
   render_quality: Cute elaborate couture, confectionary precision, porcelain-finish restraint
   spatial_distortion: None
   atmosphere: Sweet, storybook serenity, lace-gloved delicacy, porcelain calm
-  key_features: Bonnet, lace gloves, Mary-Jane pumps, ribbon-laced corset back
+  key_features: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm
   creative_brief: >-
     Render the input through Lolita construction: bell architecture, tiered ruffles, satin ribbons, pintucked voile,
     bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid Harajuku
     streets, dollhouse parlors, childlike figure lock or literal party scenes.
 avoidRules:
-  - modern
-  - pants
+  - plain contemporary casualwear
+  - trouser-dominant outfit
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-023.webp
 attributes:
-  negativePrompt: modern, pants
+  negativePrompt: plain contemporary casualwear, trouser-dominant outfit
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -10,23 +10,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wild, messy',
     style: {
       aesthetic:
-        'Clasicismo paisajístico formal donde la geometría vegetal expresa poder, protocolo y orden territorial.',
+        'Formal landscape classicism where clipped vegetation expresses power, protocol and territorial order.',
       form_and_line:
-        'Eje central dominante, parterres espejados, allées perspectivos y jerarquía de focos por lámina de agua.',
+        'Clipped hedge bands, mirrored parterre logic, long perspective pressure and measured control points without forcing one fountain-axis composition.',
       color_palette:
         'Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone',
       lighting_setup:
-        'Sol plano de lectura planimétrica, dramatismo axial por sombras largas y destellos en nodos ceremoniales.',
+        'Planimetric sunlight, long-shadow axial drama and restrained reflective glints.',
       material_texture:
-        'Setos recortados milimétricos, grava rastrillada, piedra de fuente y césped de patrón controlado.',
+        'Millimeter-clipped hedges, raked gravel, limestone edging, controlled turf pattern and optional reflective water as texture, not required centerpiece.',
       render_quality:
-        'Precisión de proyecto de paisaje con profundidad ceremonial y legibilidad topiaria estricta.',
-      spatial_distortion: 'None',
-      atmosphere: 'Ceremonial, monumental y disciplinada, con autoridad visual intencional.',
+        'Landscape-design precision with ceremonial depth and strict topiary readability.',
+      spatial_distortion:
+        'Planimetric garden order, mirrored axes and clipped-depth compression that can wrap any subject or surface.',
+      atmosphere: 'Ceremonial, monumental and disciplined, with intentional visual authority.',
       key_features:
-        'Parterres bordados, planos de seto, reflejos axiales, nodos ceremoniales y puntos de control visual lejano.',
+        'Embroidered parterres, hedge planes, axial reflection logic, ceremonial nodes and distant control points.',
       creative_brief:
-        'Cualquier sujeto debe someterse a eje, espejo y corte vegetal milimetrico. La imagen funciona como arquitectura horizontal: protocolo, control visual lejano y topiaria precisa reemplazan espontaneidad sin exigir jardin palaciego, fuente axial o recorrido ceremonial literal.',
+        'Any subject should submit to vegetal mirroring, millimetric clipping and territorial control. The image works as horizontal architecture: protocol, long-distance readability and precise topiary replace spontaneity without requiring a palace garden, axial fountain or literal ceremonial route.',
     },
   },
   {
@@ -59,24 +60,26 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-043',
     name: 'Karesansui Dry Abstraction',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'plants, water',
+    negativePrompt:
+      'lush planting, pond, running water, spa rock decor, blank-field dominance, empty texture-only output',
     style: {
-      aesthetic: 'Abstracción mineral seca, contemplación material y economía extrema de gesto.',
+      aesthetic: 'Dry mineral abstraction, material contemplation and extreme economy of gesture.',
       form_and_line:
-        'Ondas rastrilladas de alta intención, planos vacíos dominantes y anclajes minerales asimétricos de equilibrio tenso.',
+        'Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.',
       color_palette: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
       lighting_setup:
-        'Luz rasante de bajo ángulo, sombras en surcos y contraste nítido de primera hora bajo alero.',
+        'Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.',
       material_texture:
-        'Arena/grava fina, granito meteorizado, cuarzo triturado y musgo puntual de grano aterciopelado.',
+        'Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.',
       render_quality:
-        'Minimalismo hiperlimpio con precisión granular y silencio compositivo disciplinado.',
-      spatial_distortion: 'None',
-      atmosphere: 'Quietud enfocada, orden ritual y suspensión temporal.',
+        'Hyperclean minimalism with granular precision and disciplined compositional silence.',
+      spatial_distortion:
+        'Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.',
+      atmosphere: 'Focused quiet, ritual order and suspended time.',
       key_features:
-        'Campos de rastrillado, anclajes minerales, masas selectivas de materia viva y contención austera.',
+        'Raked fields, mineral anchors, selective living matter and austere containment.',
       creative_brief:
-        'El estilo reduce cualquier tema a vacío activo, superficie rastrillada y anclajes minerales en tensión. Pocos elementos deben hacer mucho trabajo espacial, evitando jardin zen literal, templo contemplativo o decoracion spa. La regla portable es materia mineral seca, ritmo rastrillado, escala contenida y silencio compositivo; no exige edificio, paisaje, set, criatura ni escena fija.',
+        'Reduce any theme to active quiet, raked surface and mineral anchors in tension. Few elements do heavy spatial work; moss or lichen can appear as pinpoint accent, not lush garden. Keep subject legibility and scale cues; avoid blank-field dominance or empty texture-only output.',
     },
   },
   {
@@ -166,51 +169,52 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'open field',
     style: {
       aesthetic:
-        'Tipología de laberinto vegetal formal, basada en desorientación lúdica y cerramiento topiario.',
+        'Formal vegetative maze grammar based on playful disorientation and clipped enclosure.',
       form_and_line:
-        'Matriz ortogonal de corredores, dead-ends rítmicos, jerarquía de rutas al centro y continuidad de muros vivos altos.',
+        'Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy and continuous tall living-wall mass.',
       color_palette:
         'Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue',
       lighting_setup:
-        'Pasillos en sombra con franjas solares, remates de luz al fondo y patrón moteado sobre grava.',
+        'Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.',
       material_texture:
-        'Seto densamente podado, hoja compacta, grava de tránsito y acentos de piedra/musgo en nodos.',
+        'Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.',
       render_quality:
-        'Geometría topiaria precisa con tensión de wayfinding y legibilidad de recorrido.',
-      spatial_distortion: 'None',
+        'Precise topiary geometry with wayfinding tension and readable route pressure.',
+      spatial_distortion:
+        'Maze-like route compression, false-node rhythm and living-wall enclosure without requiring a literal maze plan or central destination.',
       atmosphere:
-        'Desorientación curiosa, ansiedad lúdica y progresión cerrada hacia destino incierto.',
+        'Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.',
       key_features:
-        'Cerramiento vivo recortado, ritmo de nodos, textura de ruta en grava y marcador central de terminación.',
+        'Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.',
       creative_brief:
-        'Cualquier imagen se vuelve decision espacial repetida: seto alto, ruta parcial, nodos falsos y centro prometido. La tension nace de wayfinding controlado, no de fantasia ni misterio literal.',
+        'Any image becomes repeated spatial decision: high hedge pressure, partial route, false nodes and controlled sightlines. Tension comes from wayfinding behavior, not from fantasy mystery, a literal hedge maze or a promised center marker.',
     },
   },
   {
     id: 'SP07-048',
     name: 'Elevated Biophilic Terrace',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'ground level',
+    negativePrompt: 'literal rooftop deck, skyline-view terrace, ground-level patio',
     style: {
       aesthetic:
-        'Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica calmada.',
+        'Elevated biophilic layer system with refined outdoor minimalism and calm geometric planting rhythm.',
       form_and_line:
-        'Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal suavizado.',
+        'Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge layers.',
       color_palette:
         'Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights',
       lighting_setup:
-        'Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.',
+        'Warm twilight gradient with soft integrated points and low-contrast edge identification.',
       material_texture:
-        'Madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y zinc cepillado.',
+        'Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.',
       render_quality:
-        'Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.',
+        'Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.',
       spatial_distortion:
-        'Long-axis compositional pull with shallow vertical compression to preserve terrace layering and planting cadence',
-      atmosphere: 'Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.',
+        'Long-axis pull, shallow vertical compression and stacked biophilic edge layering.',
+      atmosphere: 'Quiet, restorative and contemplative, with breathable design comfort.',
       key_features:
-        'Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste verde-hardscape.',
+        'Modular planting bands, warm deck-like planes, integrated light and green-hardscape contrast.',
       creative_brief:
-        'Trata cualquier prompt como paisaje elevado de baja voz: bandas de plantacion, deck calido, luz integrada y borde contenido. La altura se sugiere por capas y aire, nunca por skyline obligatorio.',
+        'Treat any prompt as an elevated biophilic layer: planting bands, warm horizontal planes, integrated light and contained edges. Height comes from layering, air, railing hints or suspended planters, not from a literal luxury terrace, skyline view, rooftop deck or fixed outdoor lounge scene.',
     },
   },
   {
@@ -244,26 +248,26 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-050',
     name: 'Botanical Iron Glasshouse',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'outdoor',
+    negativePrompt: 'exterior garden',
     style: {
       aesthetic:
-        'Glasshouse histórico en hierro y vidrio con lógica de catedral botánica climáticamente controlada.',
+        'Historic iron-and-glass botanical conservatory logic with controlled humid climate.',
       form_and_line:
-        'Bóvedas acristaladas nervadas, repetición modular de hierro colado y capas verticales vegetales.',
+        'Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.',
       color_palette:
         'White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver',
       lighting_setup:
-        'Brillo difuso de invernadero, prismas de condensación, lluvia sobre vidrio y glow cálido sobre herrería.',
-      material_texture:
-        'Vidrio húmedo, hierro fundido, baldosa de terracota y textura vegetal tropical de gran hoja.',
+        'Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle and warm glow over ironwork.',
+      material_texture: 'Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.',
       render_quality:
-        'Conservatorio museum-grade con claridad estructural y atmósfera húmeda técnicamente creíble.',
-      spatial_distortion: 'None',
-      atmosphere: 'Lushness encerrada, calma húmeda de cultivo y asombro botánico curado.',
+        'Museum-grade conservatory clarity with technically credible humid atmosphere.',
+      spatial_distortion:
+        'Ribbed-glass repetition, condensation refraction and layered botanical depth without requiring a fixed greenhouse room.',
+      atmosphere: 'Enclosed lushness, humid cultivation calm and curated botanical awe.',
       key_features:
-        'Bahías de celosía de hierro, vidrio prismático condensado, doseles tropicales en capas y circulación limpia.',
+        'Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.',
       creative_brief:
-        'La imagen combina herreria ritmica, vidrio humedo y vegetacion de exhibicion densa. Cualquier sujeto debe sentirse curado dentro de clima controlado, con estructura visible al mismo nivel que la botanica.',
+        'Combine rhythmic ironwork, humid glass and dense exhibition botany. Any subject should feel climate-curated, with visible structure as important as foliage, without requiring an exterior garden, tourist conservatory or fixed greenhouse scene.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

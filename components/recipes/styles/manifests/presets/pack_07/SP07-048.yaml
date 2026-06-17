@@ -12,35 +12,29 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: >-
-    Terraza elevada biophilic-modern de minimalismo exterior refinado y plantación geométrica
-    calmada.
-  form_and_line: >-
-    Módulos lineales de plantación, horizontales bajas, sombra ligera y hardscape ortogonal
-    suavizado.
+  aesthetic: Elevated biophilic layer system with refined outdoor minimalism and calm geometric planting rhythm.
+  form_and_line: Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge layers.
   color_palette: >-
     Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents,
     low-intensity amber highlights
-  lighting_setup: Gradiente cálido de twilight con puntuales suaves e identificación de borde de bajo contraste.
-  material_texture: Madera aceitada, metal mate pintado, grava mineral, textil exterior tejido y zinc cepillado.
-  render_quality: Acabado premium de paisaje con jerarquía limpia, bloom contenido y tactilidad material legible.
-  spatial_distortion: >-
-    Long-axis compositional pull with shallow vertical compression to preserve terrace layering and
-    planting cadence
-  atmosphere: Silenciosa, restaurativa y contemplativa, con confort respirable de diseño.
-  key_features: >-
-    Bandas modulares de plantación, planos cálidos de deck, luz integrada y contraste
-    verde-hardscape.
+  lighting_setup: Warm twilight gradient with soft integrated points and low-contrast edge identification.
+  material_texture: Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.
+  render_quality: Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.
+  spatial_distortion: Long-axis pull, shallow vertical compression and stacked biophilic edge layering.
+  atmosphere: Quiet, restorative and contemplative, with breathable design comfort.
+  key_features: Modular planting bands, warm deck-like planes, integrated light and green-hardscape contrast.
   creative_brief: >-
-    Trata cualquier prompt como paisaje elevado de baja voz: bandas de plantacion, deck calido, luz
-    integrada y borde contenido. La altura se sugiere por capas y aire, nunca por skyline
-    obligatorio.
+    Treat any prompt as an elevated biophilic layer: planting bands, warm horizontal planes, integrated light
+    and contained edges. Height comes from layering, air, railing hints or suspended planters, not from a literal
+    luxury terrace, skyline view, rooftop deck or fixed outdoor lounge scene.
 avoidRules:
-  - ground level
+  - literal rooftop deck
+  - skyline-view terrace
+  - ground-level patio
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-048.webp
 attributes:
-  negativePrompt: ground level
+  negativePrompt: literal rooftop deck, skyline-view terrace, ground-level patio
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -12,26 +12,28 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Four-color superhero costume language, emblematic idealism, panel-breaking dynamism
-  form_and_line: Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm, bold seam blocking
+  aesthetic: Four-color heroic costume language, emblematic idealism and panel-breaking dynamism.
+  form_and_line: Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm and bold seam blocking.
   color_palette: Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white
-  lighting_setup: Rim light, heroic edge-highlight, two-source dramatic, comic-ink contrast
-  material_texture: Matte spandex, dimensional-print muscle shading, vinyl cape, rubber sole, metallic accents
-  render_quality: Heroic, bold, splash-page energy, Kirby-esque power
-  spatial_distortion: Iconic silhouette exaggeration
-  atmosphere: Bold, brave, civic-myth clarity, splash-page dynamism, unwavering resolve
-  key_features: Emblem panel, cape, utility belt, domino-mask cues, heroic-boot finish
+  lighting_setup: Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.
+  material_texture: Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents.
+  render_quality: Bold splash-page costume energy with original heroic clarity, not franchise imitation.
+  spatial_distortion: Iconic silhouette exaggeration.
+  atmosphere: Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.
+  key_features: Emblem panel, cape logic, utility belt geometry, mask-like cues and heroic boot finish.
   creative_brief: >-
-    Recast any input in superhero costume language: matte spandex, emblem-first panel geometry, cape
-    sweep, utility belt logic, heroic boot finish and four-color ink contrast. Preserve iconic
-    optimism and silhouette clarity without forcing a human hero, bodybuilder anatomy, action pose,
-    city rescue or fixed comic panel.
+    Recast any input in heroic costume language: emblem-first panel geometry, cape sweep, utility-belt logic,
+    heroic boot finish and four-color ink contrast. Preserve optimism and silhouette clarity without silver-age
+    artist imitation, bodybuilder anatomy, muscle shading, franchise icon, action pose, city rescue or fixed comic panel.
 avoidRules:
   - loose clothes
+  - franchise icon
+  - bodybuilder anatomy
+  - muscle shading
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-045.webp
 attributes:
-  negativePrompt: loose clothes
+  negativePrompt: loose clothes, franchise icon, bodybuilder anatomy, muscle shading
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

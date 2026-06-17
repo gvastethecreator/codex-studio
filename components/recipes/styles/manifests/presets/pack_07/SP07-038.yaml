@@ -12,26 +12,30 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Lenguaje osario subterraneo abstracto, donde modulo calcico, presion enterrada y reverencia historica definen la superficie.
-  form_and_line: Repeticion modular calcica, arcos bajos secuenciados, nichos comprimidos y bandas oseas sin exigir corredor funerario fijo.
+  aesthetic: Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define surface.
+  form_and_line: Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed funeral corridor.
   color_palette: Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream
-  lighting_setup: Fuentes calidas puntuales, parpadeo bajo sobre calcio y sombras densas en profundidad comprimida.
-  material_texture: Calcio yesoso, porosidad cortical, mortero polvoriento y transiciones humedas de piedra enterrada.
-  render_quality: Fidelidad arqueologica de bajo nivel luminico con microtextura funeraria legible y sin horror explicito.
-  spatial_distortion: Compressed subterranean pressure and repetitive calcic stacking
-  atmosphere: Solemne, comprimida y reverencial, con quietud de tiempo profundo.
-  key_features: Hiladas calcicas, bandas cruzadas, nichos minerales y presion de boveda baja.
+  lighting_setup: Low warm points, flicker across calcium and dense shadows in compressed depth.
+  material_texture: Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.
+  render_quality: Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.
+  spatial_distortion: Compressed subterranean pressure and repetitive calcic stacking.
+  atmosphere: Solemn, compressed and reverential, with deep-time stillness.
+  key_features: Calcic courses, crossed bands, mineral niches and low-vault pressure.
   creative_brief: >-
-    Organiza cualquier composicion por modulo calcico, presion subterranea y luz baja de reverencia historica.
-    Repeticion, polvo y porosidad funeraria deben cargar el estilo sin depender de pasillos, catacumba literal, restos
-    humanos exhibidos o escena ritual cerrada. Conserva logica material, escala comprimida y ritmo osario sin fijar
-    tipologia, paisaje, franquicia, criatura ni escena cerrada.
+    Organize any composition through chalky mineral module, subterranean pressure
+    and low reverent light. Repetition, dust and porosity carry the style without
+    depending on corridors, literal catacombs, bone/remains language, exposed
+    human remains, gore, fresh remains, horror display or closed ritual scene.
 avoidRules:
-  - living
+  - bone/remains language
+  - exposed human remains
+  - gore
+  - fresh remains
+  - horror display
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-038.webp
 attributes:
-  negativePrompt: living
+  negativePrompt: bone/remains language, exposed human remains, gore, fresh remains, horror display
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -7,7 +7,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-065',
     name: 'Papercraft Diorama Construction',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'realistic',
+    negativePrompt: 'photoreal material finish, full-scale real scene',
     style: {
       aesthetic:
         'Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad manual portable.',
@@ -33,7 +33,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-066',
     name: 'Studded ABS Brick System',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'smooth, realistic',
+    negativePrompt: 'seamless photoreal material without studs, full-scale realistic construction',
     style: {
       aesthetic:
         'Toy brick-built con ensamblaje modular ABS, lógica stud-visible e ingeniería lúdica simplificada.',
@@ -59,7 +59,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-067',
     name: 'Wet-Sand Ephemeral Modeling',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'stone',
+    negativePrompt: 'hard carved stone finish replacing wet sand, permanent masonry read',
     style: {
       aesthetic:
         'Construcción litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.',
@@ -131,33 +131,34 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Bastidor tubular presurizado, retÃ­cula de costura tÃ©rmica, zonificaciÃ³n vÃ­vida, paneles mesh y nodos de inflado visibles.',
       creative_brief:
-        'Haz que todo volumen se comporte como vinilo inflable: bordes redondeados por presiÃ³n, soldaduras tÃ©rmicas, brillos glossy y color safety-pop. El estilo debe ser neumatico y temporal, no una pieza de parque o castillo especifico. Conserva volumen presurizado, costuras termicas, brillo PVC y temporalidad ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Aplica comportamiento de vinilo inflable cuando sea compatible: bordes redondeados por presion, soldaduras termicas, brillos PVC, costuras temporales y color safety-pop. El estilo debe sugerir presion, juego y temporalidad sin convertir todo sujeto en parque, castillo o volumen inflable literal.',
     },
   },
   {
     id: 'SP07-070',
     name: 'Confectionery Structural Ornament',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'inedible',
+    negativePrompt: 'literal gingerbread house only, bakery product photo, spoiled food',
     style: {
       aesthetic:
-        'Construcción festiva comestible con lógica de ornamento confitero y masa de cuento artesanal.',
+        'Festive edible construction with confectionery ornament logic and handmade storybook mass.',
       form_and_line:
-        'Contornos de icing trazado, teja de galleta festoneada, repetición de columnas candy y marcos de pretzel redondeados.',
+        'Piped icing contours, scalloped cookie tiling, repeated candy columns and rounded pretzel frames.',
       color_palette:
         'Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel notes, and sprinkle multicolor highlights',
       lighting_setup:
-        'Ámbar interior cálido, destellos de cristal de azúcar, twinkle festivo suave y sombra cozy de bajo contraste.',
+        'Warm amber interior glow, sugar-crystal sparkle, soft festive twinkle and low-contrast cozy shadow.',
       material_texture:
-        'Grano de galleta horneada, relieve de icing, polvo azucarado cristalino, gloss candy duro y acentos de glaseado chocolate.',
+        'Baked cookie grain, raised icing relief, crystalline sugar dust, hard candy gloss and chocolate glaze accents.',
       render_quality:
-        'Confection-architecture de alto detalle con materialidad comestible legible y precisión decorativa artesanal.',
-      spatial_distortion: 'None',
-      atmosphere: 'Festiva, indulgente y acogedora, con ritual artesanal celebratorio.',
+        'High-detail confection architecture with legible edible materiality and precise handmade decoration.',
+      spatial_distortion:
+        'Icing seam swelling, sugar sag, candy-module compression and softened baked geometry.',
+      atmosphere: 'Festive, indulgent and cozy, with celebratory craft ritual.',
       key_features:
-        'Juntas definidas por icing, nodos gumdrop, ritmo de cubierta cookie, motivos peppermint lineales y microdetalle sprinkle.',
+        'Icing seams, gumdrop nodes, cookie-roof rhythm, peppermint line motifs and sprinkle microdetail.',
       creative_brief:
-        'Convierte estructura en sistema comestible ornamental: icing como línea constructiva, galleta como masa, azúcar como textura y candy como acento modular. Funciona sobre cualquier tema sin exigir casita navideña.',
+        'Turn any theme into an edible ornamental system: icing as construction line, cookie as mass, sugar as texture and candy as modular accent. It can suggest storybook architecture, but does not require a holiday gingerbread house, bakery product photo or dessert table.',
     },
   },
   {
@@ -192,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-072',
     name: 'Bottle-Glass Curio Miniature',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'ocean',
+    negativePrompt: 'open ocean background, seascape dominance, full maritime landscape',
     style: {
       aesthetic:
         'Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.',
@@ -219,7 +220,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-073',
     name: 'Subterranean Bio-Cutaway',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'surface',
+    negativePrompt: 'flat exterior-only view, uncut surface-only exterior',
     style: {
       aesthetic:
         'Sección subterránea biofuncional con red capilar y zonificación interna estricta.',
@@ -245,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-074',
     name: 'Toy-Scale Sectional Cutaway',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'full wall',
+    negativePrompt: 'closed uncut wall hiding section, sealed exterior facade',
     style: {
       aesthetic:
         'Miniatura en corte abierto, curada por compartimentos-caja y precisión de exhibición artesanal.',

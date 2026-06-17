@@ -22,7 +22,7 @@ export const defaultsDir = path.join(recipeStylesDir, 'defaults');
 export const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
 export const IMAGEGEN_DENOISE_SUFFIX =
-  'Apply a strong denoise pass. Avoid noisy grain, oversharpening, crunchy micro-contrast, and ultra-fine detail clutter. Favor cleaner large shapes, smoother tonal transitions, controlled texture, and readable forms.';
+  'Apply a strong denoise pass. Use controlled grain only when it helps the preset. Avoid noisy grain, oversharpening, crunchy micro-contrast, excessive ultra-fine noise, ultra-fine detail clutter, repeated camera-in-hand, library or market corridor, fantasy hallway, studio chair, curtain, and lamp filler. Favor cleaner large shapes, smoother tonal transitions, controlled texture, readable forms, and one clear representative subject, object, material, or scene fragment.';
 export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
 export const defaultCodexHome = path.join(homeDir, '.codex');
 

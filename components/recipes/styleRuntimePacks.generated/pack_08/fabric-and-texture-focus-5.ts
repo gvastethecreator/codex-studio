@@ -53,24 +53,25 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-051',
     name: 'High-Gloss Polymer',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'matte, cotton',
+    negativePrompt: 'matte, cotton, fetish framing, body-first silhouette',
     style: {
-      aesthetic: 'High-gloss polymer couture, reflective power dressing, lacquered futurism',
+      aesthetic: 'High-gloss polymer couture, reflective power dressing and lacquered futurism.',
       form_and_line:
-        'Tight highlights, compression seams, sculpted contour, elongated extensions, continuous glossy wrapping',
+        'Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping.',
       color_palette:
         'Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux',
       lighting_setup:
-        'High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen',
+        'High contrast reflection, rim-light gloss, studio-strip catchlights and controlled wet-look sheen.',
       material_texture:
-        'Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish',
-      render_quality: 'Shiny, edgy, high-polish couture aesthetic, studio-reflection perfection',
-      spatial_distortion: 'None',
-      atmosphere: 'Intense, sleek, power-dressing charge, mirror-shine confidence, lacquered edge',
+        'Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish.',
+      render_quality: 'Shiny, edgy high-polish couture with material reflection precision.',
+      spatial_distortion: 'Reflection-bend compression across broad glossy planes.',
+      atmosphere:
+        'Intense, sleek, mirror-shine confidence and lacquered edge without fetish framing.',
       key_features:
-        'Reflections, crease-free tension, zip-line cues, seam articulation, high-shine polish',
+        'Reflections, crease-free tension, zip-line cues, seam articulation and high-shine polish.',
       creative_brief:
-        'Coat the input in high-gloss polymer logic: seamless reflection, sculpted compression, zip-line detailing, seam articulation and strip-light catchlights. Preserve power-dressing intensity without requiring a club, fetish-coded framing, second-skin portrait or body-first silhouette.',
+        'Coat the input in high-gloss polymer logic: seamless reflection, broad glossy panels, zip-line detailing, seam articulation and strip-light catchlights. Preserve power-dressing intensity without club setting, fetish-coded framing, second-skin portrait, body-first silhouette or wet-look body emphasis.',
     },
   },
   {
@@ -115,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement',
       creative_brief:
-        'Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin ripples and champagne specular highlights. Keep intimate luxury as mood only; avoid bedroom scenes, body cling, slip-dress framing or portrait-first glamour. Preserve drape behavior, silhouette logic, trim cues and material attitude without requiring a body, runway, room, prop, role or fixed character scene.',
+        'Pour silk/satin behavior over the input: charmeuse shine, bias-cut flow, cowl folds, hammered satin ripples and champagne specular highlights. Keep intimate luxury as mood only; avoid bedroom scenes, body cling, slip-dress framing or portrait-first glamour. Preserve liquid highlight roll, non-clinging drape, trim cues and soft-luxury material attitude.',
     },
   },
   {
@@ -146,7 +147,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-073',
     name: 'Body Paint',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'real stitched garment',
+    negativePrompt: 'real stitched garment, nude-body setup, bare-skin focus, body-first portrait',
     style: {
       aesthetic:
         "Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation",
@@ -195,10 +196,11 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-072',
     name: 'Tattoo Skin',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'clean skin',
+    negativePrompt:
+      'blank unmarked surface, clean uninked skin focus, tattoo-parlor portrait setup',
     style: {
       aesthetic:
-        'Dense tattoo-surface mapping, ceremonial ink devotion, graphic body-art translated into transferable pattern logic',
+        'Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language',
       form_and_line:
         'Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic',
       color_palette:
@@ -213,14 +215,14 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection',
       creative_brief:
-        'Recast the input through tattoo-surface mapping: tebori indigo, iron-black linework, old-school accent notes, irezumi waves, wind bars, stippled shading and healed-ink depth should behave like transferable graphic coverage. Keep skin devotion optional; do not require a torso, nude body, chest panel, tattoo-parlor scene or portrait setup.',
+        'Recast the input through tattoo-surface mapping: tebori indigo, iron-black linework, old-school accent notes, irezumi waves, wind bars, stippled shading and healed-ink depth should behave like transferable graphic coverage. Keep skin devotion optional and let the marks map onto surfaces, garments, objects, figures, or material fields; do not require a torso, nude body, chest panel, tattoo-parlor scene or portrait setup.',
     },
   },
   {
     id: 'SP08-062',
     name: 'Leather Armor',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'metal, cloth',
+    negativePrompt: 'plate-metal armor dominance, plain soft cloth dominance',
     style: {
       aesthetic: 'Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism',
       form_and_line:
@@ -242,7 +244,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-074',
     name: 'Bandage/Mummy',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'skin',
+    negativePrompt: 'exposed mummy face, bare-skin focus, unwrapped body emphasis',
     style: {
       aesthetic: 'Bandage-wrapped concealment, ancient dread, desiccated wrap grammar',
       form_and_line:
@@ -287,30 +289,31 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-061',
     name: 'Lace',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'solid',
+    negativePrompt: 'solid, bare-skin focus, nude-illusion, lingerie body read, portrait body',
     style: {
       aesthetic: 'Lace textile detail, heirloom romance, openwork delicacy',
       form_and_line:
-        'Intricate web, Alencon-pattern spread, scalloped-edge flow, illusion-boundary tracing, trailing relief',
-      color_palette: 'White, Black, ivory, candlelight, champagne, jet, nude-illusion',
+        'Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief',
+      color_palette: 'White, Black, ivory, candlelight, champagne, jet, neutral textile shadow',
       lighting_setup:
-        'Backlit translucency, window-light diffusion, veil-glow softness, morning-light ethereality',
+        'Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality',
       material_texture:
-        'Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza appliqué, re-embroidered motifs',
-      render_quality: 'Delicate, detailed, lacemaker-artisan precision, bridal-couture heritage',
+        'Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered motifs',
+      render_quality:
+        'Delicate, detailed, lacemaker-artisan precision and heirloom textile heritage',
       spatial_distortion: 'None',
-      atmosphere: 'Romantic, fragile, heirloom tenderness, hush beauty',
+      atmosphere: 'Romantic, fragile, heirloom tenderness and hush beauty',
       key_features:
-        'Pattern, floral motif, scalloped edge, illusion neckline, hand-embroidered detail',
+        'Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail',
       creative_brief:
-        'Lace the input with openwork structure: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle ground and backlit translucency. Keep heirloom and ceremonial romance as textile mood only, not as bride, chapel, veil-lift tableau, cathedral train, portrait body or wedding scene.',
+        'Lace the input with openwork structure over neutral textile substrate: Chantilly motifs, Alencon relief, guipure edges, scalloped hems, tulle ground and backlit translucency. Keep heirloom and ceremonial romance as textile mood only, not as nude-illusion, bride, chapel, veil-lift tableau, cathedral train, portrait body or wedding scene.',
     },
   },
   {
     id: 'SP08-054',
     name: 'Chainmail',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'cloth',
+    negativePrompt: 'plain fabric-only surface, soft textile dominance',
     style: {
       aesthetic: 'Armor mesh, medieval-smithy craft, interlocked-defense beauty',
       form_and_line:
@@ -353,7 +356,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-060',
     name: 'Velvet',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'shiny, hard',
+    negativePrompt: 'plastic gloss, hard metal glare',
     style: {
       aesthetic: 'Evening jacket, after-dark luxury, candlelit-sophistication',
       form_and_line:
@@ -375,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-066',
     name: 'Origami Paper',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fabric',
+    negativePrompt: 'soft textile drape dominance, sewn garment realism, cloth-first finish',
     style: {
       aesthetic: 'Origami-paper couture, washi-sculpture fragility, geometric fold discipline',
       form_and_line:
@@ -422,25 +425,25 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-071',
     name: 'Porcelain Doll',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'skin',
+    negativePrompt: 'natural skin texture, living doll body, face stare lock',
     style: {
       aesthetic:
-        'Uncanny porcelain artifice, bisque fragility, toy-cabinet tension translated into surface grammar',
+        'Uncanny porcelain artifice, bisque fragility and toy-cabinet tension translated into surface grammar.',
       form_and_line:
-        'Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes, hinged articulation logic',
+        'Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes and hinged articulation logic.',
       color_palette:
         'Pale white, pink, bisque, rose blush, glass blue, crackle gold, porcelain cream',
       lighting_setup:
-        'Glossy porcelain highlights, display-spot precision, soft window daylight, toy-room dimness',
+        'Glossy porcelain highlights, display-spot precision and soft window daylight.',
       material_texture:
-        'Ceramic bisque, high-fire glaze, glass eyes, mohair wig, kid-leather body, painted-blush, crackle-kintsugi',
-      render_quality: 'Precise, uncanny, dollmaker-artisan finish, lacquered stillness',
+        'Ceramic bisque, high-fire glaze, glassy highlights, mohair-like softness, painted blush and crackle-kintsugi.',
+      render_quality: 'Precise, uncanny dollmaker-artisan finish with lacquered stillness.',
       spatial_distortion: 'None',
-      atmosphere: 'Uncanny, delicate, stiff, porcelain-fragility tension',
+      atmosphere: 'Uncanny, delicate, stiff and porcelain-fragile.',
       key_features:
-        'Glossy bisque, glassy focal cues, articulation seams, painted blush, crackle-kintsugi detail',
+        'Glossy bisque, glassy focal cues, articulation seams, painted blush and crackle-kintsugi detail.',
       creative_brief:
-        'Recast the input with porcelain-artifice grammar: bisque glaze, articulation seams, painted blush, glassy focal shine, mohair-like softness and crackle-kintsugi detail. Keep uncanny toy-cabinet tension as finish only; do not require a living doll body, display cabinet, face stare or posed limbs.',
+        'Recast the input with porcelain-artifice grammar: bisque glaze, articulation seams, painted blush, glassy focal shine, mohair-like softness and crackle-kintsugi detail. Keep uncanny toy-cabinet tension as finish only; do not require skinless body, living doll body, display cabinet, face stare or posed limbs.',
     },
   },
   {
@@ -515,7 +518,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-067',
     name: 'Bubble Wrap',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fabric',
+    negativePrompt: 'plain textile drape dominance, soft woven cloth replacing bubble plastic',
     style: {
       aesthetic: 'Plastic fashion, pop-art materialism, bubble-texture absurdity',
       form_and_line:
@@ -526,7 +529,8 @@ export const GENERATED_STYLE_PRESETS = [
         'Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead',
       material_texture:
         'Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam',
-      render_quality: 'Weird, pop art, Warhol-factory irreverence, inflated-sculpture playfulness',
+      render_quality:
+        'Weird, pop art, factory-floor pop-art irreverence, inflated-sculpture playfulness',
       spatial_distortion: 'Bulky',
       atmosphere:
         'Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire',
@@ -576,14 +580,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection',
       material_texture:
         "Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust",
-      render_quality: 'Expensive, statue, Klimt-gold luxuriance, gilded-age opulence',
+      render_quality: 'Expensive, statue, Secessionist gilded pattern luxury, gilded-age opulence',
       spatial_distortion: 'None',
       atmosphere:
         'Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness',
       key_features:
         'Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust',
       creative_brief:
-        'Gild the input with gold-leaf behavior: overlapping foil flakes, burnished reflection, leaf seams, mica dust, white-gold or copper-patina variation and Klimt-like luxury. Keep divine opulence without requiring skin application, temple treasury, human figure contour or living-statue body.',
+        'Gild the input with gold-leaf behavior: overlapping foil flakes, burnished reflection, leaf seams, mica dust, white-gold or copper-patina variation and ornamental gilded mosaic luxury. Keep divine opulence without requiring skin application, temple treasury, human figure contour or living-statue body.',
     },
   },
   {

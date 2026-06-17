@@ -38,11 +38,12 @@ visualDna:
     compresión por cuello, microdetalle meticuloso y base de vitrina. No depende de barco; depende
     de imposibilidad artesanal encapsulada.
 avoidRules:
-  - ocean
+  - open ocean background
+  - seascape dominance
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-072.webp
 attributes:
-  negativePrompt: ocean
+  negativePrompt: open ocean background, seascape dominance, full maritime landscape
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -27,11 +27,12 @@ visualDna:
     defense weight without requiring a castle, fortress corridor, warrior,
     crusader silhouette or battle scene.
 avoidRules:
-  - cloth
+  - plain fabric-only surface
+  - soft textile dominance
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-054.webp
 attributes:
-  negativePrompt: cloth
+  negativePrompt: plain fabric-only surface, soft textile dominance
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

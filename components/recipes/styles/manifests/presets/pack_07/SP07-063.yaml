@@ -12,34 +12,37 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Monumentalidad ceremonial sepulcral con gravedad ritual y civismo mineral de escala masiva.
+  aesthetic: Monumental ceremonial sepulchral gravity with mineral civic scale.
   form_and_line: >-
-    Axialidad severa, masas escalonadas, cÃ¡maras selladas, retÃ­culas lapÃ­deas y acentos verticales
-    de rito contenido.
+    Severe axiality, stepped masses, sealed chambers, lapidary grids and
+    contained ritual vertical accents.
   color_palette: >-
-    Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and
-    bruised violet shadow fields
+    Black basalt, bone-white marble, oxidized bronze, dim funerary gold,
+    spectral green haze, and bruised violet shadow fields
   lighting_setup: >-
-    Glow bajo mineral, difusiÃ³n lunar pÃ¡lida, faroles espectrales contenidos y niebla volumÃ©trica
-    de enclave sellado.
+    Low mineral glow, pale moon diffusion, contained spectral lanterns and
+    sealed-enclave volumetric haze.
   material_texture: >-
-    SillerÃ­a erosionada, mÃ¡rmol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios
-    tallados.
-  render_quality: Dark fantasy arquitectÃ³nica de alto detalle con contenciÃ³n tonal y lectura monumental opresiva.
-  spatial_distortion: Profundidad axial procesional con compresiÃ³n sepulcral controlada.
-  atmosphere: Solemne, ritualista y opresiva, con silencio acÃºstico de recinto contenido.
-  key_features: Ritmo procesional, cÃ¡maras selladas, wayfinding rÃºnico y umbrales masivos.
+    Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved
+    ossuary relief.
+  render_quality: >-
+    High-detail architectural dark fantasy with tonal restraint and oppressive
+    monumental readability.
+  spatial_distortion: Controlled processional depth with sepulchral compression.
+  atmosphere: Solemn, ritual and oppressive, with contained acoustic silence.
+  key_features: Processional rhythm, sealed chambers, runic wayfinding and massive thresholds.
   creative_brief: >-
-    Lleva cualquier input a monumentalidad ceremonial sepulcral: axialidad procesional, piedra
-    severa, baja luz espectral, bronce oxidado y jerarquÃ­as de recinto sellado. Evita cementerio,
-    obelisco o cripta literal como requisito; sostÃ©n solemnidad arquitectÃ³nica portable.
+    Push any input toward sepulchral civic monumentality: processional axiality,
+    severe stone, low spectral light, oxidized bronze and sealed-threshold
+    hierarchy. Avoid requiring a cemetery, obelisk or literal crypt; preserve
+    portable architectural solemnity.
 avoidRules:
-  - life
-  - lush vegetation
+  - lush garden
+  - cozy living space
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-063.webp
 attributes:
-  negativePrompt: life, lush vegetation
+  negativePrompt: lush garden, cozy living space
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

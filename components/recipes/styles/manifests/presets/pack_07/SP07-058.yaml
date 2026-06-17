@@ -27,12 +27,13 @@ visualDna:
     templo gema o skyline de monolitos identicos. Conserva logica mineral, escala prismatica, ritmo facetado y atmosfera
     fria sin depender de edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - brick
-  - wood
+  - ordinary brick-wall dominance
+  - wood-cabin material lock
+  - opaque masonry overriding crystalline optics
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-058.webp
 attributes:
-  negativePrompt: brick, wood
+  negativePrompt: ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

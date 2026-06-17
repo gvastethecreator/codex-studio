@@ -12,7 +12,7 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Dense tattoo-surface mapping, ceremonial ink devotion, graphic body-art translated into transferable pattern logic
+  aesthetic: Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language
   form_and_line: Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic
   color_palette: Tebori indigo, iron black, oxidized red, aged yellow, moss green accent, parchment-neutral ground
   lighting_setup: Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read
@@ -25,14 +25,15 @@ visualDna:
     Recast the input through tattoo-surface mapping: tebori indigo, iron-black
     linework, old-school accent notes, irezumi waves, wind bars, stippled
     shading and healed-ink depth should behave like transferable graphic
-    coverage. Keep skin devotion optional; do not require a torso, nude body,
-    chest panel, tattoo-parlor scene or portrait setup.
+    coverage. Keep skin devotion optional and let the marks map onto surfaces,
+    garments, objects, figures, or material fields; do not require a torso,
+    nude body, chest panel, tattoo-parlor scene or portrait setup.
 avoidRules:
-  - clean skin
+  - blank unmarked surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-072.webp
 attributes:
-  negativePrompt: clean skin
+  negativePrompt: blank unmarked surface, clean uninked skin focus, tattoo-parlor portrait setup
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -28,12 +28,13 @@ visualDna:
     transformation as fabrication energy, not as a named character, replica
     pose, portrait body or convention-hall scene.
 avoidRules:
-  - realistic clothes
-  - dull
+  - licensed-character replica
+  - low-effort costume
+  - flat convention snapshot
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
 attributes:
-  negativePrompt: realistic clothes, dull
+  negativePrompt: licensed-character replica, low-effort costume, flat convention snapshot
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

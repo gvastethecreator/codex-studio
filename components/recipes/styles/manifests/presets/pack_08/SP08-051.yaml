@@ -12,27 +12,28 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: High-gloss polymer couture, reflective power dressing, lacquered futurism
-  form_and_line: Tight highlights, compression seams, sculpted contour, elongated extensions, continuous glossy wrapping
+  aesthetic: High-gloss polymer couture, reflective power dressing and lacquered futurism.
+  form_and_line: Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping.
   color_palette: Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux
-  lighting_setup: High contrast reflection, rim-light gloss, studio-strip catchlights, wet-look sheen
-  material_texture: Glossy latex, polished PVC, wet-look spandex, patent leather, chlorinated rubber, slick sealant finish
-  render_quality: Shiny, edgy, high-polish couture aesthetic, studio-reflection perfection
-  spatial_distortion: None
-  atmosphere: Intense, sleek, power-dressing charge, mirror-shine confidence, lacquered edge
-  key_features: Reflections, crease-free tension, zip-line cues, seam articulation, high-shine polish
+  lighting_setup: High contrast reflection, rim-light gloss, studio-strip catchlights and controlled wet-look sheen.
+  material_texture: Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish.
+  render_quality: Shiny, edgy high-polish couture with material reflection precision.
+  spatial_distortion: Reflection-bend compression across broad glossy planes.
+  atmosphere: Intense, sleek, mirror-shine confidence and lacquered edge without fetish framing.
+  key_features: Reflections, crease-free tension, zip-line cues, seam articulation and high-shine polish.
   creative_brief: >-
-    Coat the input in high-gloss polymer logic: seamless reflection, sculpted
-    compression, zip-line detailing, seam articulation and strip-light
-    catchlights. Preserve power-dressing intensity without requiring a club,
-    fetish-coded framing, second-skin portrait or body-first silhouette.
+    Coat the input in high-gloss polymer logic: seamless reflection, broad glossy panels, zip-line detailing,
+    seam articulation and strip-light catchlights. Preserve power-dressing intensity without club setting,
+    fetish-coded framing, second-skin portrait, body-first silhouette or wet-look body emphasis.
 avoidRules:
   - matte
   - cotton
+  - fetish framing
+  - body-first silhouette
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-051.webp
 attributes:
-  negativePrompt: matte, cotton
+  negativePrompt: matte, cotton, fetish framing, body-first silhouette
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

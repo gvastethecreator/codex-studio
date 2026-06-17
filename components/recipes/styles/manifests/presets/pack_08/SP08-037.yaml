@@ -12,26 +12,28 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Frontier workwear myth, dust-worn practicality, high-noon Americana tension
-  form_and_line: Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm, strap-and-yoke structure
+  aesthetic: Frontier workwear myth, dust-worn practicality and high-noon Americana tension.
+  form_and_line: Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure.
   color_palette: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
-  lighting_setup: High-noon glare, merciless desert sun, amber practical warmth, campfire flicker
-  material_texture: Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel
-  render_quality: Iconic, rugged, Leone-widescreen grit, frontier-photograph clarity
+  lighting_setup: High-noon glare, merciless dry sun, amber practical warmth and campfire flicker.
+  material_texture: Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.
+  render_quality: Iconic, rugged, frontier-photograph clarity with western grit.
   spatial_distortion: None
-  atmosphere: Tough, lonely, high-noon tension, frontier solitude, whiskey-bottle weariness
-  key_features: Stetson-brim cues, holster-strap motif, spurred-boot hardware, bandana folds, tin-star detail
+  atmosphere: Tough, lonely, high-noon tension, frontier solitude and weathered resolve.
+  key_features: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.
   creative_brief: >-
-    Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim,
-    bandana triangles, Stetson brim and spur-metal glints. Keep the gunslinger myth as a style
-    anchor without requiring saloons, street standoffs, weapon draws, desert figures or cowboy portraits.
+    Give any input frontier workwear logic: oilskin leather, duster sweep,
+    tobacco tan, denim, bandana triangles, brim geometry and brass glints. Keep
+    western myth as a style anchor without requiring holsters, spurs, weapons,
+    saloons, street standoffs, desert figures or cowboy portraits.
 avoidRules:
   - city
   - clean
+  - weapon draw
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-037.webp
 attributes:
-  negativePrompt: city, clean
+  negativePrompt: city, clean, weapon draw
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

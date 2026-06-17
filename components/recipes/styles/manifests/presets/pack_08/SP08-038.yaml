@@ -17,21 +17,24 @@ visualDna:
   color_palette: White suit, Gold, burgundy, burnt orange, avocado green, shiny-black, metallic silver
   lighting_setup: Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze
   material_texture: Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather
-  render_quality: Fun, dance, Studio 54 electricity, Bee-Gees swagger
+  render_quality: Fun, dance, 1970s mirror-ball nightlife energy, polyester sparkle
   spatial_distortion: None
-  atmosphere: Groovy, energetic, mirror-ball transcendence, Saturday-night immortality
-  key_features: Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair
+  atmosphere: Groovy, energetic, mirror-ball transcendence, warm nightlife confidence
+  key_features: Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle
   creative_brief: >-
-    Style any input as 70s disco: polyester sheen, wide lapels, flared pants, platform soles, gold
-    medallion cues, burnt orange and mirror-ball sparkle. Keep dancefloor euphoria without requiring
-    a dancer, club, Studio 54 reference or literal dancefloor sanctuary.
+    Style any input as 70s disco: polyester sheen, wide lapels, flared geometry,
+    platform elevation, gold medallion cues, burnt orange and mirror-ball
+    sparkle. Keep dancefloor euphoria without requiring exposed body cues, a
+    dancer, named venue, named band, specific club or literal dancefloor sanctuary.
 avoidRules:
   - boring
   - matte
+  - named venue
+  - named band
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-038.webp
 attributes:
-  negativePrompt: boring, matte
+  negativePrompt: boring, matte, named venue, named band
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

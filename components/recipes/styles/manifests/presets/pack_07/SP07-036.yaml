@@ -12,25 +12,28 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Hipercomercio de juego sensorial, diseñado para atención continua y permanencia prolongada.
+  aesthetic: High-stimulus commercial gaming logic designed for continuous attention and prolonged dwell time.
   form_and_line: >-
-    Densidad ortogonal de módulos brillantes, patrón no direccional, espejos estratégicos y
-    circulación deliberadamente ambigua.
+    Dense luminous modules, non-directional pattern fields, strategic reflection
+    layers and deliberately ambiguous circulation cues.
   color_palette: Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple
   lighting_setup: >-
-    Base oscura con hotspots seriados, wash de techo, destellos decorativos y sobreestimulación
-    luminosa controlada.
-  material_texture: Patrón saturado, carcasas moldeadas, cromo usado, laminados brillantes y paño denso.
-  render_quality: Realismo de estímulo alto con jerarquía lumínica comercial y acabado nocturno de gran densidad.
-  spatial_distortion: None
-  atmosphere: Activación continua, desorientación temporal y confort-presión de consumo.
-  key_features: >-
-    Envolvente sin tiempo, glow bajo, clusters de premio, supresión de wayfinding y profundidad
-    espejada.
+    Dark base with serial hotspots, ceiling wash, decorative glints and
+    controlled luminous overstimulation.
+  material_texture: Saturated pattern, molded casing sheen, worn chrome, glossy laminate and dense felt texture.
+  render_quality: >-
+    High-stimulus realism with commercial light hierarchy and dense nocturnal
+    finish.
+  spatial_distortion: >-
+    Attention-loop compression, mirrored depth and non-directional circulation
+    that can trap any subject without requiring a venue floor.
+  atmosphere: Continuous activation, temporal disorientation and consumption-pressure comfort.
+  key_features: Low glow, mirrored depth, jackpot-color clusters, wayfinding suppression and sensory grid rhythm.
   creative_brief: >-
-    El preset debe secuestrar atención con patrón, glow bajo, reflejo y desorientación comercial.
-    Cualquier input se vuelve estímulo táctico de permanencia prolongada, más psicología ambiental
-    que fiesta decorativa.
+    Hijack attention through pattern, low glow, reflection and commercial
+    disorientation. Any input becomes a tactical dwell-time stimulus; keep the
+    environmental psychology without requiring slot machines, prize props, a
+    casino floor or party spectacle.
 avoidRules:
   - daylight
   - calm

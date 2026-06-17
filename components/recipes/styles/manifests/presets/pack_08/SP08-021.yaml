@@ -20,17 +20,17 @@ visualDna:
   render_quality: Kawaii, spooky, pastel-goth crispness, creepy-cute editorial
   spatial_distortion: None
   atmosphere: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
-  key_features: Bat wings, bow hair clips, pentagram choker, platform creepers
+  key_features: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass
   creative_brief: >-
     Mix cute and occult into any input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows,
     chokers, platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring
     graveyards, bedroom lighting, doll poses or a fixed gothic subject.
 avoidRules:
-  - all black
+  - flat monochrome goth with no pastel contrast
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-021.webp
 attributes:
-  negativePrompt: all black
+  negativePrompt: flat monochrome goth with no pastel contrast
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

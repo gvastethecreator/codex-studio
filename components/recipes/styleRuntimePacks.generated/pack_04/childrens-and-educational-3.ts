@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
       'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork',
     style: {
       aesthetic:
-        'Educational anatomical reference plate with layered structural clarity (Leonardo da Vinci and classical medical-plate influence)',
+        'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence',
       form_and_line: 'Precise technical linework for muscle, bone, and tendon mapping',
       color_palette:
         'Standardized didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',

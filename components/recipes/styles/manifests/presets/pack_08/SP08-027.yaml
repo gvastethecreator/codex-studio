@@ -13,24 +13,29 @@ tags:
   - subcultures
 visualDna:
   aesthetic: Skate-zine style, deck-grip authenticity, casual session culture
-  form_and_line: Baggy, relaxed-denim silhouette, oversized tee, hoodie-stack, beanie-slouch
-  color_palette: Grey, Black, Graphic Tee, heather, logo-white, washed-black, grip-tape grey
-  lighting_setup: Outdoor sun, fisheye-lens flare, golden-hour edge light, hard pavement bounce
+  form_and_line: Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch
+  color_palette: Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey
+  lighting_setup: Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock.
   material_texture: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
-  render_quality: Casual, active, fisheye-video energy, street-credible rawness
+  render_quality: Casual, active, skate-zine rawness and street-credible wear without brand or logo dependence
   spatial_distortion: None
-  atmosphere: Chill, active, session-flow ease, board-pop rhythm, raw casualness
-  key_features: Vans skate shoes, ollie-worn suede, five-panel cap, logo tee
+  atmosphere: Chill, active, session-flow ease, board-pop rhythm and raw casualness
+  key_features: Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges
   creative_brief: >-
-    Convert any input into skater casual: oversized tee, hoodie stack, baggy denim, suede scuffs,
-    grip-tape grit, five-panel cap cues and fisheye video rawness. Keep board-pop rhythm without
-    requiring tricks, ledges, parking lots, city playgrounds or a skater body.
+    Convert any input into skater casual: oversized tee mass, hoodie stack,
+    baggy denim, suede scuffs, grip-tape grit and five-panel cap cues. Keep
+    board-pop rhythm and zine rawness without requiring branded shoes, logo tee,
+    fisheye lens, skatepark, parking lot, fixed session scene or a skater body.
 avoidRules:
   - tight clothes
+  - logos
+  - fisheye lens
+  - skatepark lock
+  - parking lot lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-027.webp
 attributes:
-  negativePrompt: tight clothes
+  negativePrompt: tight clothes, logos, fisheye lens, skatepark lock, parking lot lock
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

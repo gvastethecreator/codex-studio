@@ -27,11 +27,12 @@ visualDna:
     ancient dread as texture only; do not require a sarcophagus, walking
     mummy, exposed skin, wrapped face or tomb scene.
 avoidRules:
-  - skin
+  - exposed mummy face
+  - bare-skin focus
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-074.webp
 attributes:
-  negativePrompt: skin
+  negativePrompt: exposed mummy face, bare-skin focus, unwrapped body emphasis
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

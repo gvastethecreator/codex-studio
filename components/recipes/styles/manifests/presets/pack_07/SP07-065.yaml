@@ -29,11 +29,12 @@ visualDna:
     calle de maqueta, vitrina museistica o escena urbana obligatoria. Conserva pliegue, pestanas, fibra visible,
     escala de maqueta y sombra por capas sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - realistic
+  - photoreal material finish
+  - full-scale real scene
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-065.webp
 attributes:
-  negativePrompt: realistic
+  negativePrompt: photoreal material finish, full-scale real scene
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -16,13 +16,13 @@ visualDna:
   form_and_line: Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines
   color_palette: Matte Black, Dark Grey, charcoal shadow, stealth anthracite, muted olive-black
   lighting_setup: Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light
-  material_texture: Waterproof technical fabric, Gore-Tex Pro, Dyneema composite, laser-cut nylon, bonded seam tape
+  material_texture: Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape
   render_quality: Technical utility precision, dystopian functional polish, shadow-ops restraint
   spatial_distortion: Optional masked or hooded identity cues
   atmosphere: Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint
-  key_features: Utility focus, MOLLE webbing, magnetic fidlock closures, articulated hood
+  key_features: Utility focus, MOLLE webbing, magnetic technical closures, articulated hood
   creative_brief: >-
-    Mechanize the input through cyberpunk techwear: bonded seams, Dyneema panels, harness geometry, magnetic closures,
+    Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures,
     hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley,
     mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.
 avoidRules:

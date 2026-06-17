@@ -30,12 +30,12 @@ visualDna:
     elegante bajo agua, metal envejecido, vidrio presurizado y bioluminiscencia como sistema de
     lectura. Evita fijar ciudad; prioriza sensación de ingeniería sumergida y lujo erosionado.
 avoidRules:
-  - sky
-  - dry
+  - cheerful open-sky scene
+  - dry clean luxury interior
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-056.webp
 attributes:
-  negativePrompt: sky, dry
+  negativePrompt: cheerful open-sky scene, dry clean luxury interior, no pressure atmosphere
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

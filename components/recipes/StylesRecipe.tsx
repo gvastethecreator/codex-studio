@@ -36,10 +36,15 @@ import {
   STYLE_CATEGORY_PREVIEWS,
   STYLE_PACK_FALLBACK_IMAGES,
   resolveStyleDefaultImage,
+  resolveStyleDefaultImageVariants,
 } from '../../lib/recipeAssetCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
+import {
+  resolveStylePresetCardImages,
+  type StylePresetCardImage,
+} from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
@@ -296,6 +301,7 @@ interface StylePresetVisualState {
   presetPackName: string;
   resultImages: GeneratedImageWithConfig[];
   defaultImage: string | undefined;
+  defaultImageVariants: string[];
   defaultImageStale: boolean;
   previewImage: string | undefined;
   exampleImageSrc: string | null;
@@ -315,37 +321,11 @@ interface StylePresetCardProps {
 }
 
 function resolveStyleCardImageDiagnostics({
-  activeResultImage,
-  visualState,
+  activeCardImage,
 }: {
-  activeResultImage: GeneratedImageWithConfig | null;
-  visualState: StylePresetVisualState | undefined;
+  activeCardImage: StylePresetCardImage | null;
 }) {
-  if (activeResultImage) {
-    return {
-      kind: 'result',
-      src: activeResultImage.thumbnail || activeResultImage.src || null,
-    } as const;
-  }
-
-  if (visualState?.defaultImage) {
-    return {
-      kind: visualState.defaultImageStale ? 'stale-default' : 'default',
-      src: visualState.defaultImage,
-    } as const;
-  }
-
-  if (visualState?.previewImage) {
-    return {
-      kind: 'preview',
-      src: visualState.previewImage,
-    } as const;
-  }
-
-  return {
-    kind: 'empty',
-    src: null,
-  } as const;
+  return activeCardImage ?? ({ kind: 'empty', src: null } as const);
 }
 
 interface StylePresetGroupSectionProps {
@@ -368,25 +348,23 @@ interface StylePresetGroupSectionProps {
 }
 
 interface StylePresetResultButtonProps {
-  activeResultImage: GeneratedImageWithConfig | null;
+  activeCardImage: StylePresetCardImage | null;
   preset: StyleRuntimePreset;
   onCycle: (dir: number) => void;
-  hasMultipleResults: boolean;
-  resultIndex: number;
-  resultCount: number;
-  visualState: StylePresetVisualState | undefined;
+  hasMultipleImages: boolean;
+  imageIndex: number;
+  imageCount: number;
   theme: { color: string; bg: string; border: string; text: string };
   onApply: (preset: StyleRuntimePreset) => void;
 }
 
 const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
-  activeResultImage,
+  activeCardImage,
   preset,
   onCycle,
-  hasMultipleResults,
-  resultIndex,
-  resultCount,
-  visualState,
+  hasMultipleImages,
+  imageIndex,
+  imageCount,
   theme,
   onApply,
 }) => {
@@ -404,7 +382,22 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
     onCycle(direction);
   };
 
-  if (activeResultImage) {
+  if (activeCardImage) {
+    const staleBadge =
+      activeCardImage.kind === 'stale-default' ? (
+        <div className="absolute left-2 top-2 z-20 rounded-full border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
+          Stale
+        </div>
+      ) : activeCardImage.kind === 'variant' ? (
+        <div className="absolute left-2 top-2 z-20 rounded-full border border-emerald-400/30 bg-emerald-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-emerald-100 shadow-lg backdrop-blur-md">
+          Variant
+        </div>
+      ) : activeCardImage.kind === 'preview' ? (
+        <div className="absolute left-2 top-2 z-20 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+          Preview
+        </div>
+      ) : null;
+
     return (
       <div className="absolute inset-0 group/image">
         <button
@@ -414,10 +407,19 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           className="absolute inset-0 z-10 cursor-pointer"
         >
           <img
-            src={activeResultImage.thumbnail || activeResultImage.src}
-            className="style-preset-thumbnail size-full object-cover opacity-[0.96] transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02]"
+            src={activeCardImage.src}
+            className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02] ${
+              activeCardImage.kind === 'stale-default'
+                ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
+                : activeCardImage.kind === 'preview'
+                  ? 'opacity-75 saturate-[0.9]'
+                  : 'opacity-[0.96]'
+            }`}
             alt={preset.name}
           />
+          {activeCardImage.kind === 'stale-default' ? (
+            <div className="absolute inset-0 bg-zinc-950/18 transition-colors group-hover/image:bg-zinc-950/10" />
+          ) : null}
           <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
             <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
@@ -426,8 +428,10 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           </div>
         </button>
 
-        {hasMultipleResults && (
-          <div className="absolute left-2 right-12 top-2 z-20 flex items-center justify-between gap-2 opacity-0 transition-opacity group-hover/image:opacity-100">
+        {staleBadge}
+
+        {hasMultipleImages && (
+          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-85 transition-opacity group-hover/image:opacity-100">
             <button
               type="button"
               onClick={(e) => {
@@ -435,14 +439,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(-1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
-              aria-label={`Previous result for ${preset.name}`}
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-full border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              aria-label={`Previous image for ${preset.name}`}
             >
               <ChevronLeft size={14} />
             </button>
-            <div className="rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
-              {resultIndex + 1} / {resultCount}
-            </div>
             <button
               type="button"
               onClick={(e) => {
@@ -450,11 +451,17 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="flex size-8 items-center justify-center rounded-full border border-white/10 bg-zinc-950/60 text-white/90 backdrop-blur-md transition-colors hover:bg-zinc-950/80"
-              aria-label={`Next result for ${preset.name}`}
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-full border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              aria-label={`Next image for ${preset.name}`}
             >
               <ChevronRight size={14} />
             </button>
+          </div>
+        )}
+
+        {hasMultipleImages && (
+          <div className="absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
+            {imageIndex + 1} / {imageCount}
           </div>
         )}
 
@@ -473,77 +480,6 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           </button>
         </div>
       </div>
-    );
-  }
-
-  if (visualState?.defaultImage) {
-    const staleBadge = visualState.defaultImageStale ? (
-      <div className="absolute left-2 top-2 z-20 rounded-full border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
-        Stale
-      </div>
-    ) : null;
-
-    return (
-      <button
-        type="button"
-        onClick={() => onApply(preset)}
-        className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
-      >
-        <img
-          src={visualState.defaultImage}
-          className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover:opacity-100 group-hover:brightness-[1.02] group-hover:saturate-[1.02] ${
-            visualState.defaultImageStale
-              ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
-              : 'opacity-[0.96]'
-          }`}
-          alt={preset.name}
-        />
-        {visualState.defaultImageStale ? (
-          <>
-            <div className="absolute inset-0 bg-zinc-950/18 transition-colors group-hover:bg-zinc-950/10" />
-            {staleBadge}
-          </>
-        ) : null}
-        <div
-          className={`absolute z-20 flex gap-1 transition-opacity ${
-            visualState.defaultImageStale
-              ? 'left-2 top-11 opacity-100 group-hover:opacity-100'
-              : 'left-2 top-2 opacity-0 group-hover:opacity-100'
-          }`}
-        >
-          <div className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md">
-            <RefreshCw size={14} />
-          </div>
-        </div>
-      </button>
-    );
-  }
-
-  if (visualState?.previewImage) {
-    return (
-      <button
-        type="button"
-        onClick={() => onApply(preset)}
-        className="absolute inset-0 size-full cursor-pointer bg-zinc-900 disabled:cursor-not-allowed"
-      >
-        <img
-          src={visualState.previewImage}
-          className="style-preset-thumbnail size-full object-cover opacity-75 saturate-[0.9] transition-[opacity,filter] duration-300 ease-out group-hover:opacity-[0.94] group-hover:brightness-[1.01] group-hover:saturate-100"
-          alt=""
-        />
-        <div className="absolute inset-0 bg-zinc-950/15 transition-colors group-hover:bg-zinc-950/8" />
-        <div className="absolute left-2 top-2 z-20 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
-          Preview
-        </div>
-        <div className="absolute inset-0 flex translate-y-2 flex-col items-center justify-center gap-3 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-          <div
-            className={`flex size-14 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white shadow-xl backdrop-blur-md transition-colors duration-300 group-hover:bg-zinc-950/62 ${theme.text}`}
-          >
-            <Palette size={24} />
-          </div>
-          <span className="text-[9px] font-black uppercase tracking-widest text-white">Apply</span>
-        </div>
-      </button>
     );
   }
 
@@ -578,21 +514,37 @@ const StylePresetCard = React.memo(
     onToggleFavorite,
     onHoverPreviewChange,
   }: StylePresetCardProps) => {
-    const [resultIndex, setResultIndex] = useState(0);
+    const [imageIndex, setImageIndex] = useState(0);
     const isHoveredRef = useRef(false);
 
     const resultImages = visualState?.resultImages ?? EMPTY_IMAGES;
-    const hasMultipleResults = resultImages.length > 1;
-    const activeResultImage = resultImages[resultIndex] ?? resultImages[0] ?? null;
+    const cardImages = useMemo(
+      () =>
+        resolveStylePresetCardImages({
+          resultImages,
+          defaultImage: visualState?.defaultImage,
+          defaultImageVariants: visualState?.defaultImageVariants,
+          defaultImageStale: visualState?.defaultImageStale ?? false,
+          previewImage: visualState?.previewImage,
+        }),
+      [
+        resultImages,
+        visualState?.defaultImage,
+        visualState?.defaultImageVariants,
+        visualState?.defaultImageStale,
+        visualState?.previewImage,
+      ],
+    );
+    const hasMultipleImages = cardImages.length > 1;
+    const activeCardImage = cardImages[imageIndex] ?? cardImages[0] ?? null;
     const imageDiagnostics = resolveStyleCardImageDiagnostics({
-      activeResultImage,
-      visualState,
+      activeCardImage,
     });
 
-    const prevResultCountRef = useRef(resultImages.length);
-    if (prevResultCountRef.current !== resultImages.length) {
-      prevResultCountRef.current = resultImages.length;
-      setResultIndex(0);
+    const prevImageCountRef = useRef(cardImages.length);
+    if (prevImageCountRef.current !== cardImages.length) {
+      prevImageCountRef.current = cardImages.length;
+      setImageIndex(0);
     }
 
     const applyHoverPreview = useCallback(
@@ -611,26 +563,23 @@ const StylePresetCard = React.memo(
 
     const syncHoverPreview = useCallback(
       (nextIndex: number) => {
-        const nextImage = resultImages[nextIndex] ?? null;
-        applyHoverPreview(
-          nextImage?.thumbnail || nextImage?.src || visualState?.exampleImageSrc || null,
-        );
+        applyHoverPreview(cardImages[nextIndex]?.src || visualState?.exampleImageSrc || null);
       },
-      [applyHoverPreview, resultImages, visualState?.exampleImageSrc],
+      [applyHoverPreview, cardImages, visualState?.exampleImageSrc],
     );
 
     const handleCycle = useCallback(
       (delta: number) => {
-        if (!hasMultipleResults) return;
-        setResultIndex((current) => {
-          const next = (current + delta + resultImages.length) % resultImages.length;
+        if (!hasMultipleImages) return;
+        setImageIndex((current) => {
+          const next = (current + delta + cardImages.length) % cardImages.length;
           if (isHoveredRef.current) {
             queueMicrotask(() => syncHoverPreview(next));
           }
           return next;
         });
       },
-      [hasMultipleResults, resultImages.length, syncHoverPreview],
+      [cardImages.length, hasMultipleImages, syncHoverPreview],
     );
 
     return (
@@ -659,7 +608,7 @@ const StylePresetCard = React.memo(
         <div
           onPointerEnter={() => {
             isHoveredRef.current = true;
-            syncHoverPreview(resultIndex);
+            syncHoverPreview(imageIndex);
           }}
           onPointerLeave={() => {
             isHoveredRef.current = false;
@@ -678,13 +627,12 @@ const StylePresetCard = React.memo(
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
             <StylePresetResultButton
-              activeResultImage={activeResultImage}
+              activeCardImage={activeCardImage}
               preset={preset}
               onCycle={handleCycle}
-              hasMultipleResults={hasMultipleResults}
-              resultIndex={resultIndex}
-              resultCount={resultImages.length}
-              visualState={visualState}
+              hasMultipleImages={hasMultipleImages}
+              imageIndex={imageIndex}
+              imageCount={cardImages.length}
               theme={theme}
               onApply={onApply}
             />
@@ -721,7 +669,7 @@ const StylePresetCard = React.memo(
                   >
                     {preset.name}
                   </span>
-                  {activeResultImage && (
+                  {activeCardImage?.kind === 'result' && (
                     <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
                   )}
                 </div>
@@ -731,9 +679,9 @@ const StylePresetCard = React.memo(
               </button>
 
               <div className="absolute bottom-2 right-2 flex items-center gap-1">
-                {hasMultipleResults && (
+                {hasMultipleImages && (
                   <span className="rounded-md border border-white/10 bg-zinc-950/50 px-1.5 py-1 text-[7px] font-black uppercase tracking-[0.18em] text-zinc-300/80">
-                    {resultIndex + 1}/{resultImages.length}
+                    {imageIndex + 1}/{cardImages.length}
                   </span>
                 )}
                 <button
@@ -1203,6 +1151,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         .sort((a, b) => b.createdAt - a.createdAt);
       const defaultImageStale = isStyleDefaultImageStale(preset.id);
       const defaultImage = resolveStyleDefaultImage(preset.id);
+      const defaultImageVariants = resolveStyleDefaultImageVariants(preset.id);
       const categoryImage = preset.category
         ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
         : undefined;
@@ -1213,13 +1162,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         presetPackName: presetPack.name,
         resultImages,
         defaultImage,
+        defaultImageVariants,
         defaultImageStale,
         previewImage,
         exampleImageSrc:
-          defaultImage ||
-          previewImage ||
           resultImages[0]?.thumbnail ||
+          resultImages[0]?.preview ||
           resultImages[0]?.src ||
+          defaultImage ||
+          defaultImageVariants[0] ||
+          previewImage ||
           null,
       });
     });

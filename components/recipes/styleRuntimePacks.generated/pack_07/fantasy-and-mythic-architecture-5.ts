@@ -33,51 +33,53 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-052',
     name: 'Dwarven Megalithic Forge',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'wood, light, delicate',
+    negativePrompt: 'wood-dominant finish, lightweight construction, delicate trim',
     style: {
       aesthetic:
-        'Monumentalidad enana de tierra profunda, calor de forja y doctrina ancestral de cantería pesada.',
+        'Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.',
       form_and_line:
-        'Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.',
+        'Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.',
       color_palette:
         'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
       lighting_setup:
-        'Brillo térmico de forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja mineral.',
+        'Forge thermal glow, amber crystal lamps, torch rhythm and orange mineral heat.',
       material_texture:
-        'Granito labrado, marcas de cincel, oro martillado, hierro fundido, vetas cristalinas y cuero denso.',
+        'Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.',
       render_quality:
-        'Fortaleza épica de alta fidelidad con peso material y gravedad estructural contundente.',
-      spatial_distortion: 'None',
-      atmosphere: 'Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.',
-      key_features: 'Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.',
+        'Epic forge-fortress fidelity with material weight and blunt structural gravity.',
+      spatial_distortion:
+        'Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.',
+      atmosphere: 'Ancestral resilience, clan authority and deep-earth solemnity.',
+      key_features:
+        'Runic supports, forge cores, thermal channels, hammer-marked metal and monumental axial weight.',
       creative_brief:
-        'Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza enana o set heroico generico. Conserva peso megalitico, calor mineral, escala de carga y solemnidad ancestral sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Carry any form toward ancestral weight: megalithic pillars, chisel marks, forge heat and hammered metal. It should feel built to survive centuries under load, not like a generic dwarf fortress or hero set. Keep megalithic weight, mineral heat, load-bearing scale and ancestral solemnity without requiring building, landscape, creature or fixed scene.',
     },
   },
   {
     id: 'SP07-053',
     name: 'Suspended Fortress Sublime',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'grounded',
+    negativePrompt: 'literal castle, ground-level building, static terrain lock',
     style: {
       aesthetic:
-        'Romanticismo de fortaleza aérea con megastructura suspendida y soberanía en altura.',
+        'Sky-borne mass sublime with suspended architectural gravity, aerial sovereignty and impossible altitude.',
       form_and_line:
-        'Clústeres de agujas verticales, estratificación de masa flotante, cortes de vacío y vectores descendentes.',
+        'Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.',
       color_palette:
-        'White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above',
+        'White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere',
       lighting_setup:
-        'Sol alto, rebote en nubes, rayos volumétricos y rim dorado de borde sobre siluetas suspendidas.',
-      material_texture:
-        'Piedra aérea, niebla de base, aristas cristalinas y roca flotante de estrato erosionado.',
+        'High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.',
+      material_texture: 'Airborne stone, base mist, crystalline edges and eroded floating strata.',
       render_quality:
-        'Sky-architecture fantástica con profundidad atmosférica y coherencia de ingeniería imposible.',
-      spatial_distortion: 'Floating rocks',
-      atmosphere: 'Sublime de gran altitud, calma improbable y grandeza impulsada por viento.',
+        'Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.',
+      spatial_distortion:
+        'Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.',
+      atmosphere: 'High-altitude sublime, improbable calm and wind-driven grandeur.',
       key_features:
-        'Tramos sobre vacío, nubes inferiores, undercuts flotantes, vectores aéreos y silueta dominante.',
+        'Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky silhouette.',
       creative_brief:
-        'Cualquier sujeto gana soberania aerea mediante masa suspendida, undercuts, niebla inferior y rim solar de altura. Lo importante es gravedad negada con coherencia visual, no un castillo especifico.',
+        'Any subject gains aerial sovereignty through suspended mass, undercuts, lower mist and high solar rim. The anchor is coherent negated gravity and sky-scale construction, not a literal castle, waterfall scene or fixed fantasy vista.',
     },
   },
   {
@@ -112,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-055',
     name: 'Confectionery Surrealism',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'scary, realistic',
+    negativePrompt: 'horror candy, gore, photoreal food macro, edible mascot, kid-party literal',
     style: {
       aesthetic:
         'Fantasia confitera de surrealismo comestible, donde masa, azucar y glaseado se vuelven sistema arquitectonico portable.',
@@ -139,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-056',
     name: 'Abyssal Deco Pressure',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'sky, dry',
+    negativePrompt: 'cheerful open-sky scene, dry clean luxury interior, no pressure atmosphere',
     style: {
       aesthetic:
         'Deco abisal retrofuturista con presión marina y decadencia monumental reclamadas por el agua.',
@@ -191,7 +193,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-058',
     name: 'Prismatic Mineral Megastructure',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'brick, wood',
+    negativePrompt:
+      'ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics',
     style: {
       aesthetic:
         'Megaestructura cristalina de crecimiento geologico y futurismo mineral monolitico, portable a cualquier masa o sistema.',
@@ -237,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Umbral redondeado, cubierta vegetal, masa bermada y núcleo compacto de calor doméstico.',
       creative_brief:
-        'Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de hobbit-home, madriguera literaria, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada, calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de round-door pastoral burrow-home trope, licensed literary burrow-home, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada, calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
@@ -271,7 +274,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-061',
     name: 'Cryomorphic Palace Geometry',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'warm, fire',
+    negativePrompt:
+      'dominant warm palette, cozy fireplace mood, orange heat glow overriding glacial optics',
     style: {
       aesthetic:
         'Monumentalidad criomórfica glacial, con elegancia invernal soberana y pureza cristalina.',
@@ -298,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-062',
     name: 'Canopy Rope Vernacular',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'metal',
+    negativePrompt: 'dominant polished industrial metal, cold machine structure',
     style: {
       aesthetic:
         'Vernáculo de canopy elevado, con ingeniería orgánica artesanal y vida comunal suspendida.',
@@ -324,25 +328,25 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-063',
     name: 'Sepulchral Civic Monumentalism',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'life, lush vegetation',
+    negativePrompt: 'lush garden, cozy living space',
     style: {
-      aesthetic:
-        'Monumentalidad ceremonial sepulcral con gravedad ritual y civismo mineral de escala masiva.',
+      aesthetic: 'Monumental ceremonial sepulchral gravity with mineral civic scale.',
       form_and_line:
-        'Axialidad severa, masas escalonadas, cÃ¡maras selladas, retÃ­culas lapÃ­deas y acentos verticales de rito contenido.',
+        'Severe axiality, stepped masses, sealed chambers, lapidary grids and contained ritual vertical accents.',
       color_palette:
         'Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields',
       lighting_setup:
-        'Glow bajo mineral, difusiÃ³n lunar pÃ¡lida, faroles espectrales contenidos y niebla volumÃ©trica de enclave sellado.',
+        'Low mineral glow, pale moon diffusion, contained spectral lanterns and sealed-enclave volumetric haze.',
       material_texture:
-        'SillerÃ­a erosionada, mÃ¡rmol fisurado, rejas oxidadas, pavimento ceniciento y relieves osarios tallados.',
+        'Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved ossuary relief.',
       render_quality:
-        'Dark fantasy arquitectÃ³nica de alto detalle con contenciÃ³n tonal y lectura monumental opresiva.',
-      spatial_distortion: 'Profundidad axial procesional con compresiÃ³n sepulcral controlada.',
-      atmosphere: 'Solemne, ritualista y opresiva, con silencio acÃºstico de recinto contenido.',
-      key_features: 'Ritmo procesional, cÃ¡maras selladas, wayfinding rÃºnico y umbrales masivos.',
+        'High-detail architectural dark fantasy with tonal restraint and oppressive monumental readability.',
+      spatial_distortion: 'Controlled processional depth with sepulchral compression.',
+      atmosphere: 'Solemn, ritual and oppressive, with contained acoustic silence.',
+      key_features:
+        'Processional rhythm, sealed chambers, runic wayfinding and massive thresholds.',
       creative_brief:
-        'Lleva cualquier input a monumentalidad ceremonial sepulcral: axialidad procesional, piedra severa, baja luz espectral, bronce oxidado y jerarquÃ­as de recinto sellado. Evita cementerio, obelisco o cripta literal como requisito; sostÃ©n solemnidad arquitectÃ³nica portable.',
+        'Push any input toward sepulchral civic monumentality: processional axiality, severe stone, low spectral light, oxidized bronze and sealed-threshold hierarchy. Avoid requiring a cemetery, obelisk or literal crypt; preserve portable architectural solemnity.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

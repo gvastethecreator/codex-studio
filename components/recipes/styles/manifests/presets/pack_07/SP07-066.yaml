@@ -40,12 +40,12 @@ visualDna:
     blocking plástico y brillo ABS. El estilo debe leer como sistema modular de juguete aplicable a
     cualquier sujeto.
 avoidRules:
-  - smooth
-  - realistic
+  - seamless photoreal material without studs
+  - full-scale realistic construction
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-066.webp
 attributes:
-  negativePrompt: smooth, realistic
+  negativePrompt: seamless photoreal material without studs, full-scale realistic construction
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

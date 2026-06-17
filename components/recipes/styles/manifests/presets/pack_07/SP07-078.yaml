@@ -32,11 +32,11 @@ visualDna:
     recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar faccion, personaje o nave. Conserva modularidad
     hive, conducciones densas, fosforescencia verde y utilidad colectiva sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - smooth
+  - featureless minimal surfaces
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-078.webp
 attributes:
-  negativePrompt: smooth
+  negativePrompt: featureless minimal surfaces, clean seamless shell, empty smooth panels
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

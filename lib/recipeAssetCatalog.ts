@@ -1,5 +1,8 @@
 import type { RecipeId } from '../types';
-import { GENERATED_STYLE_DEFAULT_IMAGES } from './styleDefaultImages.generated';
+import {
+  GENERATED_STYLE_DEFAULT_IMAGES,
+  GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS,
+} from './styleDefaultImages.generated';
 import { isStyleDefaultImageStale } from './staleStyleDefaultImages.generated';
 import { buildPackFallbackCatalog } from './stylePresetVisuals';
 
@@ -49,6 +52,7 @@ const recipeCardCatalogByRecipeId = Object.entries(recipeCardCatalog).reduce<
 export const RECIPE_CARD_IMAGES = recipeCardCatalogByRecipeId;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
 export const STYLE_DEFAULT_IMAGES = GENERATED_STYLE_DEFAULT_IMAGES;
+export const STYLE_DEFAULT_IMAGE_VARIANTS = GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS;
 export const STYLE_AVAILABLE_DEFAULT_IMAGES = Object.fromEntries(
   Object.entries(STYLE_DEFAULT_IMAGES).filter(([presetId]) => !isStyleDefaultImageStale(presetId)),
 );
@@ -56,6 +60,10 @@ export const STYLE_PACK_FALLBACK_IMAGES = buildPackFallbackCatalog(STYLE_AVAILAB
 
 export function resolveStyleDefaultImage(presetId: string) {
   return STYLE_DEFAULT_IMAGES[presetId];
+}
+
+export function resolveStyleDefaultImageVariants(presetId: string) {
+  return STYLE_DEFAULT_IMAGE_VARIANTS[presetId] ?? [];
 }
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {

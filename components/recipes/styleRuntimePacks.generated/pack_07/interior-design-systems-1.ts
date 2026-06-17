@@ -90,7 +90,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-004',
     name: 'Scandinavian Hygge',
     category: '1. Interior Design Systems',
-    negativePrompt: 'dark, cold, metal, plastic',
+    negativePrompt:
+      'gloomy low-key palette, cold industrial mood, hard metal dominance, glossy plastic dominance',
     style: {
       aesthetic:
         'Confort nordico de bajo contraste, intimidad termica y bienestar cotidiano traducidos a una gramatica material portable.',
@@ -224,7 +225,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-013',
     name: 'Mediterranean Villa',
     category: '1. Interior Design Systems',
-    negativePrompt: 'rain, cold, dark, grey',
+    negativePrompt:
+      'overcast gloom, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity',
     style: {
       aesthetic: 'Mediterráneo solar de cal y terracota, claridad térmica y umbral ventilado.',
       form_and_line:
@@ -385,7 +387,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-019',
     name: 'Art Nouveau Interior',
     category: '1. Interior Design Systems',
-    negativePrompt: 'straight lines',
+    negativePrompt: 'rigid rectilinear grid',
     style: {
       aesthetic:
         'Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
@@ -393,9 +395,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.',
       color_palette: 'Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.',
       lighting_setup:
-        'Luz filtrada por vitral, lamparas calidas tipo Tiffany, apliques petalo y brillo irisado suave.',
+        'Luz filtrada por vitral, lamparas calidas de vidrio emplomado, apliques petalo y brillo irisado suave.',
       material_texture:
-        'Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marqueteria floral.',
+        'Madera tallada, art glass iridiscente, hierro forjado, bronce patinado y marqueteria floral.',
       render_quality:
         'Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.',
       spatial_distortion:

@@ -12,26 +12,30 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Samurai armor regalia, bushido silence, floating-world legend
-  form_and_line: Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity
+  aesthetic: Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure.
+  form_and_line: Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.
   color_palette: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
-  lighting_setup: Dramatic dawn-mist light, lacquer edge shine, indigo shadow, gold-leaf glint
-  material_texture: Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo
-  render_quality: Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft
+  lighting_setup: Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.
+  material_texture: Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.
+  render_quality: Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas
   spatial_distortion: None
-  atmosphere: Honorable, fierce, impermanence, pre-dawn stillness, unblinking discipline
-  key_features: Kabuto helmet, maedate crest, mempo mask cues, silk odoshi lacing, sashimono geometry
+  atmosphere: Reverent, still, impermanent, pre-dawn calm and disciplined.
+  key_features: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm.
   creative_brief: >-
-    Translate any input into samurai armor language: lacquered plates, silk odoshi lacing, kabuto
-    crest, mempo severity, sode shoulders and disciplined red-black-gold craft. Preserve warrior
-    identity cues without requiring bamboo forests, castle interiors, katana duels or fixed human
-    faces.
+    Translate any input into ceremonial armor craft language: lacquered plates,
+    silk lacing, crest geometry, shoulder panels and disciplined red-black-gold
+    construction. Preserve regalia pressure without requiring warrior identity,
+    weapons, combat, named historical roles, bamboo forests, castle interiors or
+    fixed human faces.
 avoidRules:
   - european armor
+  - weapon prop
+  - combat scene
+  - named warrior role
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-035.webp
 attributes:
-  negativePrompt: european armor
+  negativePrompt: european armor, weapon prop, combat scene, named warrior role
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

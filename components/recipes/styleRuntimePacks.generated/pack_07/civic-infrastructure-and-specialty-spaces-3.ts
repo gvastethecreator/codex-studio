@@ -86,27 +86,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-035',
     name: 'Bibliographic Classicism',
     category: '3. Civic Infrastructure And Specialty Spaces',
-    negativePrompt: 'digital, modern',
+    negativePrompt: 'digital, modern, literal library, reading table, lamps, shelf aisle',
     style: {
       aesthetic:
-        'Clasicismo bibliográfico histórico con monumentalidad silenciosa y disciplina de lectura.',
+        'Archival classicism with quiet monumentality, leather-paper-brass order and reading discipline.',
       form_and_line:
-        'Crugías altas de archivo, verticales de acceso, simetría de lectura y cadencia de bóveda/alcoba.',
+        'Tall catalog rhythm, access verticals, ordered symmetry and vault/alcove cadence.',
       color_palette:
         'Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather',
       lighting_setup:
-        'Lámparas cálidas focales, pantalla verde de lectura, shafts altos de luz y apliques de latón envejecido.',
+        'Warm archival glow, green-amber focal light, high shafts and aged brass accents.',
       material_texture:
-        'Cuero oxidado, papel de canto irregular, dorados gastados, roble pulido por uso y latón oscurecido.',
-      render_quality:
-        'Calidad museo con envejecimiento noble y profundidad de campo apta para lectura catalográfica.',
-      spatial_distortion: 'None',
+        'Oxidized leather, irregular paper edges, worn gilding, use-polished oak and darkened brass.',
+      render_quality: 'Museum-quality aging with noble patina and catalog-readable depth of field.',
+      spatial_distortion:
+        'Vertical archive rhythm, alcove compression and catalog-order depth that can organize any subject without requiring a literal library room.',
       atmosphere:
-        'Contemplativa, rigurosa y reverencial, con calidez puntual sobre un fondo de silencio estructurado.',
+        'Contemplative, rigorous and reverential, with punctual warmth over structured silence.',
       key_features:
-        'Luz green-shade, clústeres catalográficos, verticales móviles, numeración de bahías y acentos cartográficos.',
+        'Green-amber warmth, catalog clusters, leather-paper-brass material hierarchy, vertical bay rhythm and cartographic accents.',
       creative_brief:
-        'Cualquier sujeto debe ordenarse como conocimiento viejo: ritmos verticales de archivo, luz focal verde-ambar, cuero oxidado, papel irregular y latón apagado. La solemnidad viene de catalogar y preservar, no de un salón fijo.',
+        'Any subject should be ordered like old knowledge: vertical rhythm, green-amber focal light, oxidized leather, irregular paper and muted brass. Solemnity comes from cataloging and preservation, not from a fixed hall, mandatory shelves, lamps, reading tables or literal library props.',
     },
   },
   {
@@ -116,29 +116,31 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'daylight, calm',
     style: {
       aesthetic:
-        'Hipercomercio de juego sensorial, diseñado para atención continua y permanencia prolongada.',
+        'High-stimulus commercial gaming logic designed for continuous attention and prolonged dwell time.',
       form_and_line:
-        'Densidad ortogonal de módulos brillantes, patrón no direccional, espejos estratégicos y circulación deliberadamente ambigua.',
+        'Dense luminous modules, non-directional pattern fields, strategic reflection layers and deliberately ambiguous circulation cues.',
       color_palette: 'Red, Gold, Neon, Casino Carpet Confetti, Chrome, Velvet Purple',
       lighting_setup:
-        'Base oscura con hotspots seriados, wash de techo, destellos decorativos y sobreestimulación luminosa controlada.',
+        'Dark base with serial hotspots, ceiling wash, decorative glints and controlled luminous overstimulation.',
       material_texture:
-        'Patrón saturado, carcasas moldeadas, cromo usado, laminados brillantes y paño denso.',
+        'Saturated pattern, molded casing sheen, worn chrome, glossy laminate and dense felt texture.',
       render_quality:
-        'Realismo de estímulo alto con jerarquía lumínica comercial y acabado nocturno de gran densidad.',
-      spatial_distortion: 'None',
-      atmosphere: 'Activación continua, desorientación temporal y confort-presión de consumo.',
+        'High-stimulus realism with commercial light hierarchy and dense nocturnal finish.',
+      spatial_distortion:
+        'Attention-loop compression, mirrored depth and non-directional circulation that can trap any subject without requiring a venue floor.',
+      atmosphere:
+        'Continuous activation, temporal disorientation and consumption-pressure comfort.',
       key_features:
-        'Envolvente sin tiempo, glow bajo, clusters de premio, supresión de wayfinding y profundidad espejada.',
+        'Low glow, mirrored depth, jackpot-color clusters, wayfinding suppression and sensory grid rhythm.',
       creative_brief:
-        'El preset debe secuestrar atención con patrón, glow bajo, reflejo y desorientación comercial. Cualquier input se vuelve estímulo táctico de permanencia prolongada, más psicología ambiental que fiesta decorativa.',
+        'Hijack attention through pattern, low glow, reflection and commercial disorientation. Any input becomes a tactical dwell-time stimulus; keep the environmental psychology without requiring slot machines, prize props, a casino floor or party spectacle.',
     },
   },
   {
     id: 'SP07-037',
     name: 'Immersive Aquarium Optics',
     category: '3. Civic Infrastructure And Specialty Spaces',
-    negativePrompt: 'dry',
+    negativePrompt: 'flat dry-air scene, no refraction, no water optics, no suspended particles',
     style: {
       aesthetic:
         'Inmersión azul técnica, donde envolvente acrílica y columna de agua construyen espectáculo óptico.',
@@ -165,50 +167,52 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-038',
     name: 'Ossuary Subterranean',
     category: '3. Civic Infrastructure And Specialty Spaces',
-    negativePrompt: 'living',
+    negativePrompt:
+      'bone/remains language, exposed human remains, gore, fresh remains, horror display',
     style: {
       aesthetic:
-        'Lenguaje osario subterraneo abstracto, donde modulo calcico, presion enterrada y reverencia historica definen la superficie.',
+        'Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define surface.',
       form_and_line:
-        'Repeticion modular calcica, arcos bajos secuenciados, nichos comprimidos y bandas oseas sin exigir corredor funerario fijo.',
+        'Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed funeral corridor.',
       color_palette: 'Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream',
       lighting_setup:
-        'Fuentes calidas puntuales, parpadeo bajo sobre calcio y sombras densas en profundidad comprimida.',
+        'Low warm points, flicker across calcium and dense shadows in compressed depth.',
       material_texture:
-        'Calcio yesoso, porosidad cortical, mortero polvoriento y transiciones humedas de piedra enterrada.',
+        'Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.',
       render_quality:
-        'Fidelidad arqueologica de bajo nivel luminico con microtextura funeraria legible y sin horror explicito.',
-      spatial_distortion: 'Compressed subterranean pressure and repetitive calcic stacking',
-      atmosphere: 'Solemne, comprimida y reverencial, con quietud de tiempo profundo.',
-      key_features: 'Hiladas calcicas, bandas cruzadas, nichos minerales y presion de boveda baja.',
+        'Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.',
+      spatial_distortion: 'Compressed subterranean pressure and repetitive calcic stacking.',
+      atmosphere: 'Solemn, compressed and reverential, with deep-time stillness.',
+      key_features: 'Calcic courses, crossed bands, mineral niches and low-vault pressure.',
       creative_brief:
-        'Organiza cualquier composicion por modulo calcico, presion subterranea y luz baja de reverencia historica. Repeticion, polvo y porosidad funeraria deben cargar el estilo sin depender de pasillos, catacumba literal, restos humanos exhibidos o escena ritual cerrada. Conserva logica material, escala comprimida y ritmo osario sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
+        'Organize any composition through chalky mineral module, subterranean pressure and low reverent light. Repetition, dust and porosity carry the style without depending on corridors, literal catacombs, bone/remains language, exposed human remains, gore, fresh remains, horror display or closed ritual scene.',
     },
   },
   {
     id: 'SP07-039',
     name: 'Data Center Grid',
     category: '3. Civic Infrastructure And Specialty Spaces',
-    negativePrompt: 'messy, organic',
+    negativePrompt: 'messy, organic clutter',
     style: {
       aesthetic:
-        'Infraestructura crítica de datos orientada a continuidad operativa y lógica machine-first.',
+        'Critical data infrastructure focused on operational continuity and machine-first logic.',
       form_and_line:
-        'Series modulares, corredores térmicos rígidos, bandejas ortogonales y repetición de panel perforado funcional.',
+        'Modular series, thermal-containment lanes, orthogonal trays and functional perforated-panel repetition.',
       color_palette:
         'Black, Blue LED, Blinking Amber, Cool White fluorescent, Signal Green status, Grey metal',
       lighting_setup:
-        'Luz fría artificial continua, glow de rack, tiras de servicio y constelaciones LED de estado con contención térmica visible.',
+        'Continuous cold artificial light, rack-like glow, service strips and status LED constellations with visible thermal containment.',
       material_texture:
-        'Acero pintado en polvo, fibra trenzada, malla perforada, superficie técnica gomada y polvo de admisión.',
+        'Powder-coated steel, braided fiber, perforated mesh, rubberized technical surfaces and intake-dust residue.',
       render_quality:
-        'Realismo facility-grade con alta densidad informativa y legibilidad de sistema bajo iluminación técnica.',
-      spatial_distortion: 'None',
-      atmosphere: 'Urgencia controlada, vigilancia infraestructural y ocupación humana mínima.',
+        'Facility-grade realism with high information density and system readability under technical lighting.',
+      spatial_distortion:
+        'Modular redundancy, thermal-lane compression and machine-grid repetition without forcing racks, aisles or a data-center corridor.',
+      atmosphere: 'Controlled urgency, infrastructural surveillance and minimal human occupation.',
       key_features:
-        'Clúster LED de estado, contención térmica, pistas de flujo, patch fields etiquetados y repetición redundante.',
+        'Status LED clusters, thermal containment cues, cable-routing logic, patch-field rhythm and redundant repetition.',
       creative_brief:
-        'Vuelve cualquier input infraestructura critica: redundancia modular, contencion termica, LEDs de estado y superficies machine-first. Debe sentirse como continuidad operativa vigilada, no como ciencia ficcion generica.',
+        'Turn any input into critical infrastructure: modular redundancy, thermal containment, status-light logic and machine-first surfaces. It should feel like guarded operational continuity, not generic science fiction or a fixed server room scene.',
     },
   },
   {

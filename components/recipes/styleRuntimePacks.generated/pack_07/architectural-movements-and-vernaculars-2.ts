@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-006',
     name: 'Brutalist Architecture',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'delicate, painted, wood, glass',
+    negativePrompt:
+      'delicate trim, painted finish hiding raw mass, wood-warmth dominance, glass-curtain-wall dominance',
     style: {
       aesthetic:
         'Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica sin concesiones decorativas.',
@@ -273,7 +274,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-028',
     name: 'Sustainable Green',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'concrete, industrial',
+    negativePrompt:
+      'bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade',
     style: {
       aesthetic:
         'Bioclimatismo de envolvente viva, donde vegetación, estructura y clima operan como un único sistema metabólico.',
@@ -300,33 +302,32 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-029',
     name: 'Adobe/Pueblo',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'sharp edges, wood',
+    negativePrompt: 'sharp edges, log-cabin wood dominance',
     style: {
       aesthetic:
-        'Vernáculo adobe de masa térmica, domesticidad desértica y expresión manual de arraigo territorial.',
+        'Earthen adobe vernacular with thermal mass, desert domesticity and handmade territorial rootedness.',
       form_and_line:
-        'Muros gruesos monolíticos, aristas suavizadas, cubiertas escalonadas, huecos profundos y parapetos bajos.',
-      color_palette: 'Terracota, arena, ocre cálido, salvia, canela y arcilla soleada.',
+        'Thick monolithic walls, softened edges, stepped roofs, deep openings and low parapets.',
+      color_palette: 'Terracotta, sand, warm ochre, sage, cinnamon and sunlit clay.',
       lighting_setup:
-        'Sol desértico duro, sombras profundas en vanos, glow de nichos y parpadeo de hogar tipo kiva.',
+        'Hard desert sun, deep reveal shadows, thermal-niche glow and warm bounce under eaves.',
       material_texture:
-        'Revoco de tierra encalada, fibra vegetal visible, huella de llana manual, vigas expuestas y teja de barro usada.',
+        'Limewashed earth render, visible vegetal fiber, hand-trowel marks, discreet exposed vigas and worn clay tile.',
       render_quality:
-        'Honestidad material de alto realismo climático con imperfección artesanal plausible.',
-      spatial_distortion:
-        'Ondulación leve de muros por manufactura manual, manteniendo estabilidad tectónica.',
-      atmosphere: 'Cobijo térmico, calma árida y continuidad ancestral.',
+        'Material honesty with climate-aware realism and plausible handmade imperfection.',
+      spatial_distortion: 'Gentle hand-built wall undulation while retaining tectonic stability.',
+      atmosphere: 'Thermal shelter, arid calm and ancestral continuity.',
       key_features:
-        'Huecos profundos, masa excavada, nichos térmicos, geometría de hogar kiva y aristas manuales suavizadas.',
+        'Deep openings, carved mass, thermal niches, recessed thermal-niche geometry and softened handmade edges.',
       creative_brief:
-        'Mantén una gramática adobe transferible centrada en inercia térmica, hueco profundo y acabado manual visible. Debe comunicar adaptación climática y arraigo constructivo, no exotismo escénico.',
+        'Keep portable adobe grammar centered on thermal inertia, deep apertures and visible hand finish. It should communicate climate adaptation and construction rootedness, not exotic scenic staging or fixed pueblo-room props.',
     },
   },
   {
     id: 'SP07-030',
     name: 'Soviet Constructivist',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'ornate, capitalist',
+    negativePrompt: 'ornate, luxury retail gloss, corporate glass tower, consumer signage',
     style: {
       aesthetic:
         'Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.',

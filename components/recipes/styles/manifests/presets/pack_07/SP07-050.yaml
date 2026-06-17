@@ -12,31 +12,30 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: >-
-    Glasshouse histórico en hierro y vidrio con lógica de catedral botánica climáticamente
-    controlada.
-  form_and_line: Bóvedas acristaladas nervadas, repetición modular de hierro colado y capas verticales vegetales.
+  aesthetic: Historic iron-and-glass botanical conservatory logic with controlled humid climate.
+  form_and_line: Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.
   color_palette: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
   lighting_setup: >-
-    Brillo difuso de invernadero, prismas de condensación, lluvia sobre vidrio y glow cálido sobre
-    herrería.
-  material_texture: Vidrio húmedo, hierro fundido, baldosa de terracota y textura vegetal tropical de gran hoja.
-  render_quality: Conservatorio museum-grade con claridad estructural y atmósfera húmeda técnicamente creíble.
-  spatial_distortion: None
-  atmosphere: Lushness encerrada, calma húmeda de cultivo y asombro botánico curado.
-  key_features: >-
-    Bahías de celosía de hierro, vidrio prismático condensado, doseles tropicales en capas y
-    circulación limpia.
+    Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle
+    and warm glow over ironwork.
+  material_texture: Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.
+  render_quality: Museum-grade conservatory clarity with technically credible humid atmosphere.
+  spatial_distortion: >-
+    Ribbed-glass repetition, condensation refraction and layered botanical depth
+    without requiring a fixed greenhouse room.
+  atmosphere: Enclosed lushness, humid cultivation calm and curated botanical awe.
+  key_features: Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.
   creative_brief: >-
-    La imagen combina herreria ritmica, vidrio humedo y vegetacion de exhibicion densa. Cualquier
-    sujeto debe sentirse curado dentro de clima controlado, con estructura visible al mismo nivel
-    que la botanica.
+    Combine rhythmic ironwork, humid glass and dense exhibition botany. Any
+    subject should feel climate-curated, with visible structure as important as
+    foliage, without requiring an exterior garden, tourist conservatory or fixed
+    greenhouse scene.
 avoidRules:
-  - outdoor
+  - exterior garden
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-050.webp
 attributes:
-  negativePrompt: outdoor
+  negativePrompt: exterior garden
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

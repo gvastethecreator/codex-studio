@@ -13,31 +13,47 @@ tags:
   - megastructure-and-impossible-space
 visualDna:
   aesthetic: >-
-    Cámara dimensional retro-tech inspirada en time-machine, con crecimiento orgánico arquitectónico y expansión
-    interior imposible.
-  form_and_line: Eje central energético, nodo hex radial, repetición de roundels y anillos en recesión no euclidiana.
+    Dimensional retrotech interior grammar inspired by recursive retrofuturist control-surface grammar,
+    circular wall modules, organic architectural growth, tactile command surfaces and impossible
+    interior expansion.
+  form_and_line: >-
+    Circular wall modules, hex nodes, ribbed thresholds and console-like control surfaces
+    arranged as recursive retrotech depth, not one fixed central mechanism room.
   color_palette: >-
-    Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold roundel
-    highlights, and temporal blue accent glows
-  lighting_setup: Pulso lumínico central, spill de mando, rebote indirecto en roundels y bloom dorado controlado.
+    Coral amber emissive warmth, deep teal structural shadows, copper-brass
+    console metals, warm gold circular-module highlights, and dimensional blue accent glows
+  lighting_setup: >-
+    Command-surface glow, indirect circular-module bounce, controlled golden bloom and
+    soft dimensional accent light.
   material_texture: >-
-    Superficies orgánico-tecnológicas mixtas, costillas tipo coral, metal de consola gastado, difusión en vidrio y
-    cableado trenzado.
-  render_quality: Interior sci-fi de alto detalle con profundidad dimensional estratificada y elegancia retrofuturista coherente.
-  spatial_distortion: Non-euclidean depth recursion with center-anchored rotor perspective and interior scale dilation
-  atmosphere: Aventurera, misteriosa y asombrosa, con sensación temporal y espacial sin borde.
-  key_features: Columna central energética, nodo de mando hex radial, roundels repetitivos y circulación multinivel.
+    Mixed organo-technological surfaces, coral-like ribs, worn console metal,
+    diffused glass and braided cabling.
+  render_quality: >-
+    High-detail retrofuturist dimensional depth with coherent impossible-space
+    layering.
+  spatial_distortion: >-
+    Non-euclidean depth recursion, repeated circular wall modules and expandable
+    interior scale without requiring a central mechanism.
+  atmosphere: Adventurous, mysterious and spatially uncanny, with recursive depth.
+  key_features: >-
+    Repeating circular wall modules, hexagonal control logic, copper-coral ribs, layered
+    command surfaces and expandable dimensional thresholds.
   creative_brief: >-
-    Construye un lenguaje interior-dimensional: eje energético central, roundels rítmicos, metal retrotech, recursión no
-    euclidiana y escala interna expandida. Evita licencia concreta; prioriza paradoja espacial y mando tactil sin exigir
-    cabina heroica, rotor central literal o sala de control cerrada. Conserva eje energetico, roundels, recesion
-    dimensional y tactilidad retrotech sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Build retrotech dimensional language with rhythmic circular wall modules, copper-brass
+    metal, organotech ribs, tactile command surfaces and expanded interior
+    scale. Avoid named franchise interiors, iconic control-room layouts,
+    concrete license reads; prioritize spatial paradox, depth
+    recursion and console-like tactility without requiring a fixed cabin,
+    literal central mechanism or closed control room.
 avoidRules:
-  - small
+  - literal control room
+  - single central prop
+  - named franchise interior
+  - iconic control-room layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-080.webp
 attributes:
-  negativePrompt: small
+  negativePrompt: literal control room, single central prop, named franchise interior, iconic control-room layout
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

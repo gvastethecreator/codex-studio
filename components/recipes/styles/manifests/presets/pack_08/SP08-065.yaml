@@ -12,26 +12,31 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Tron light-grid suiting, identity-disc glow, digital frontier, Grid-terminal icon
-  form_and_line: Glowing lines, hex-circuit geometry, modular panel segmentation, disc-like emitter plate, luminescent-stripe contour
-  color_palette: Black + Cyan, grid-blue, identity-disc white, amber-iso, CLU-orange, deep-circuit black
+  aesthetic: Neon grid suiting, electroluminescent circuit couture, digital frontier energy
+  form_and_line: >-
+    Glowing linework, hex-circuit geometry, modular panel segmentation, emitter
+    plates and luminescent contour breaks
+  color_palette: Black + Cyan, grid-blue, emitter white, amber-iso, hot orange, deep-circuit black
   lighting_setup: Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light
-  material_texture: Light, electroluminescent panel, matte neoprene, polycarbonate disc, luminous-flex circuit, silicone grip
-  render_quality: Sci-fi, digital, Flynn-lives luminescence, light-cycle precision
+  material_texture: Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip
+  render_quality: Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism
   spatial_distortion: None
-  atmosphere: Future, tech, Grid-frontier freedom, data-stream electricity, programmatic drama
-  key_features: Glow, identity disc, circuit-line grid, illuminated piping, dark-helmet visor
+  atmosphere: Future, tech, grid-frontier freedom, data-stream electricity, programmatic drama
+  key_features: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams
   creative_brief: >-
     Convert the input into neon grid suiting: cyan circuit lines, matte neoprene,
-    electroluminescent panels, emitter-disc glow and black-cyan contrast. Keep
-    Tron-like digital frontier energy while avoiding a required bodysuit wearer,
-    arena, light-cycle action, visor silhouette or floor-grid scene.
+    electroluminescent panels, emitter-plate glow and black-cyan contrast. Keep
+    digital frontier energy while avoiding a required bodysuit wearer, franchise
+    icon, vehicle, arena, helmet visor silhouette or floor-grid scene.
 avoidRules:
-  - dark
+  - franchise icon
+  - helmet visor
+  - neon vehicle
+  - grid arena
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-065.webp
 attributes:
-  negativePrompt: dark
+  negativePrompt: franchise icon, helmet visor, neon vehicle, grid arena
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

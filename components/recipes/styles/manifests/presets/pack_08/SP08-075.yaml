@@ -17,14 +17,14 @@ visualDna:
   color_palette: Metallic Gold, 24k-yellow, rose-gold, white-gold, champagne-foil, burnished-bronze, copper-patina
   lighting_setup: Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection
   material_texture: Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust
-  render_quality: Expensive, statue, Klimt-gold luxuriance, gilded-age opulence
+  render_quality: Expensive, statue, Secessionist gilded pattern luxury, gilded-age opulence
   spatial_distortion: None
   atmosphere: Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness
   key_features: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust
   creative_brief: >-
     Gild the input with gold-leaf behavior: overlapping foil flakes, burnished
     reflection, leaf seams, mica dust, white-gold or copper-patina variation and
-    Klimt-like luxury. Keep divine opulence without requiring skin application,
+    ornamental gilded mosaic luxury. Keep divine opulence without requiring skin application,
     temple treasury, human figure contour or living-statue body.
 avoidRules:
   - dull

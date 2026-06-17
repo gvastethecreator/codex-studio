@@ -28,12 +28,12 @@ visualDna:
     only; do not require weapons, dungeon corridors, lockpicking, shadow
     alleys or humanoid adventurer body.
 avoidRules:
-  - metal
-  - cloth
+  - plate-metal armor dominance
+  - plain soft cloth dominance
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-062.webp
 attributes:
-  negativePrompt: metal, cloth
+  negativePrompt: plate-metal armor dominance, plain soft cloth dominance
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

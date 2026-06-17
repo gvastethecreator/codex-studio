@@ -12,26 +12,28 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Rococo court excess, Marie Antoinette reference, pre-revolution glamour
+  aesthetic: Rococo court excess, powdered aristocratic texture, pre-revolution glamour
   form_and_line: Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep
   color_palette: Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove
   lighting_setup: Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce
-  material_texture: Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher
+  material_texture: Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament
   render_quality: Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy
-  spatial_distortion: Huge wig
+  spatial_distortion: Pannier volume and court-pageant silhouette exaggeration
   atmosphere: Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension
-  key_features: Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops
+  key_features: Powdered texture cues, beauty-patch dots, ribbon choker logic, pannier side-hoops, court ornament density
   creative_brief: >-
     Turn the input into Rococo excess: pannier width, robe-a-la-francaise
-    volume, silk taffeta, powdered-hair cues, ostrich plumes, ribbon garlands
-    and paste-jewel sparkle. Keep Versailles/Antoinette tension as style anchor
-    without requiring palace halls, a face, fan pose or guillotine narrative.
+    volume, silk taffeta, powdered texture cues, ostrich-plume accents, ribbon
+    garlands and paste-jewel sparkle. Keep pre-revolution court tension as style
+    anchor without requiring palace halls, a face, huge wig, fan pose or
+    guillotine narrative.
 avoidRules:
-  - modern
+  - contemporary casualwear dominance
+  - generic modern streetwear
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-039.webp
 attributes:
-  negativePrompt: modern
+  negativePrompt: contemporary casualwear dominance, generic modern streetwear
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

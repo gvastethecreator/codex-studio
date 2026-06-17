@@ -27,11 +27,13 @@ visualDna:
     hard raking shadows. Keep paper-sculpture wonder without requiring a
     bodice, crane, gallery display or standing garment body.
 avoidRules:
-  - fabric
+  - soft textile drape dominance
+  - sewn garment realism
+  - cloth-first finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-066.webp
 attributes:
-  negativePrompt: fabric
+  negativePrompt: soft textile drape dominance, sewn garment realism, cloth-first finish
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

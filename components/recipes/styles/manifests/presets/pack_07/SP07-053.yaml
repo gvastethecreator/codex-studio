@@ -12,27 +12,28 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Romanticismo de fortaleza aérea con megastructura suspendida y soberanía en altura.
+  aesthetic: Sky-borne mass sublime with suspended architectural gravity, aerial sovereignty and impossible altitude.
   form_and_line: >-
-    Clústeres de agujas verticales, estratificación de masa flotante, cortes de vacío y vectores
-    descendentes.
-  color_palette: White, Blue sky, Cloud-silver, Golden sun edge, Waterfall-cascade White, Lapis above
-  lighting_setup: Sol alto, rebote en nubes, rayos volumétricos y rim dorado de borde sobre siluetas suspendidas.
-  material_texture: Piedra aérea, niebla de base, aristas cristalinas y roca flotante de estrato erosionado.
-  render_quality: Sky-architecture fantástica con profundidad atmosférica y coherencia de ingeniería imposible.
-  spatial_distortion: Floating rocks
-  atmosphere: Sublime de gran altitud, calma improbable y grandeza impulsada por viento.
-  key_features: Tramos sobre vacío, nubes inferiores, undercuts flotantes, vectores aéreos y silueta dominante.
+    Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.
+  color_palette: White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere
+  lighting_setup: High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.
+  material_texture: Airborne stone, base mist, crystalline edges and eroded floating strata.
+  render_quality: Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.
+  spatial_distortion: Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.
+  atmosphere: High-altitude sublime, improbable calm and wind-driven grandeur.
+  key_features: Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky silhouette.
   creative_brief: >-
-    Cualquier sujeto gana soberania aerea mediante masa suspendida, undercuts, niebla inferior y rim
-    solar de altura. Lo importante es gravedad negada con coherencia visual, no un castillo
-    especifico.
+    Any subject gains aerial sovereignty through suspended mass, undercuts, lower mist and high solar rim.
+    The anchor is coherent negated gravity and sky-scale construction, not a literal castle, waterfall scene
+    or fixed fantasy vista.
 avoidRules:
-  - grounded
+  - literal castle
+  - ground-level building
+  - static terrain lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-053.webp
 attributes:
-  negativePrompt: grounded
+  negativePrompt: literal castle, ground-level building, static terrain lock
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

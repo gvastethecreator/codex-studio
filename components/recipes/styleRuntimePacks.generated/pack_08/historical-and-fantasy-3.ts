@@ -7,7 +7,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-033',
     name: 'Ancient Egyptian',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'pants, modern',
+    negativePrompt: 'contemporary tailoring dominance, generic modern streetwear',
     style: {
       aesthetic: 'Ancient Egyptian regalia, Nile-divinity splendor, temple-relief majesty',
       form_and_line:
@@ -22,7 +22,8 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere:
         'Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness',
-      key_features: 'Gold usekh collar, kohl-line cues, uraeus or crown detail, pleated kalasiris',
+      key_features:
+        'Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents',
       creative_brief:
         'Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without requiring a pharaoh, queen, temple, desert pose, crook/flail or human eyes.',
     },
@@ -31,46 +32,48 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-037',
     name: 'Wild West Cowboy',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'city, clean',
+    negativePrompt: 'city, clean, weapon draw',
     style: {
-      aesthetic: 'Frontier workwear myth, dust-worn practicality, high-noon Americana tension',
+      aesthetic: 'Frontier workwear myth, dust-worn practicality and high-noon Americana tension.',
       form_and_line:
-        'Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm, strap-and-yoke structure',
+        'Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure.',
       color_palette: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
       lighting_setup:
-        'High-noon glare, merciless desert sun, amber practical warmth, campfire flicker',
+        'High-noon glare, merciless dry sun, amber practical warmth and campfire flicker.',
       material_texture:
-        'Oilskin leather, trail dust, brass-cartridge metal, raw denim, wool serape, spur rowel',
-      render_quality: 'Iconic, rugged, Leone-widescreen grit, frontier-photograph clarity',
+        'Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.',
+      render_quality: 'Iconic, rugged, frontier-photograph clarity with western grit.',
       spatial_distortion: 'None',
-      atmosphere: 'Tough, lonely, high-noon tension, frontier solitude, whiskey-bottle weariness',
+      atmosphere: 'Tough, lonely, high-noon tension, frontier solitude and weathered resolve.',
       key_features:
-        'Stetson-brim cues, holster-strap motif, spurred-boot hardware, bandana folds, tin-star detail',
+        'Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.',
       creative_brief:
-        'Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, Stetson brim and spur-metal glints. Keep the gunslinger myth as a style anchor without requiring saloons, street standoffs, weapon draws, desert figures or cowboy portraits.',
+        'Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, brim geometry and brass glints. Keep western myth as a style anchor without requiring holsters, spurs, weapons, saloons, street standoffs, desert figures or cowboy portraits.',
     },
   },
   {
     id: 'SP08-035',
     name: 'Samurai Armor',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'european armor',
+    negativePrompt: 'european armor, weapon prop, combat scene, named warrior role',
     style: {
-      aesthetic: 'Samurai armor regalia, bushido silence, floating-world legend',
+      aesthetic:
+        'Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure.',
       form_and_line:
-        'Laced plates, do-chest breadth, sode-shoulder square, haidate-thigh panel, menpo-mask severity',
+        'Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.',
       color_palette: 'Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory',
       lighting_setup:
-        'Dramatic dawn-mist light, lacquer edge shine, indigo shadow, gold-leaf glint',
+        'Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.',
       material_texture:
-        'Lacquered iron, silk odoshi lacing, ray-skin tsuka, hammered gold leaf, braided silk cord, iron menpo',
-      render_quality: 'Intimidating, detailed, Kurosawa-frame gravitas, daimyo-level craft',
+        'Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.',
+      render_quality:
+        'Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas',
       spatial_distortion: 'None',
-      atmosphere: 'Honorable, fierce, impermanence, pre-dawn stillness, unblinking discipline',
+      atmosphere: 'Reverent, still, impermanent, pre-dawn calm and disciplined.',
       key_features:
-        'Kabuto helmet, maedate crest, mempo mask cues, silk odoshi lacing, sashimono geometry',
+        'Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm.',
       creative_brief:
-        'Translate any input into samurai armor language: lacquered plates, silk odoshi lacing, kabuto crest, mempo severity, sode shoulders and disciplined red-black-gold craft. Preserve warrior identity cues without requiring bamboo forests, castle interiors, katana duels or fixed human faces.',
+        'Translate any input into ceremonial armor craft language: lacquered plates, silk lacing, crest geometry, shoulder panels and disciplined red-black-gold construction. Preserve regalia pressure without requiring warrior identity, weapons, combat, named historical roles, bamboo forests, castle interiors or fixed human faces.',
     },
   },
   {
@@ -79,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'modern, simple, cheap',
     style: {
-      aesthetic: '16th century court regalia, Tudor-adjacent majesty, painted-court splendor',
+      aesthetic: '16th century court regalia, early-modern majesty, painted-court splendor',
       form_and_line:
         'Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture',
       color_palette: 'Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white',
@@ -89,9 +92,10 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Historical museum-grade finish, painted-court realism, formal gravitas',
       spatial_distortion: 'Stiff posture',
       atmosphere: 'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
-      key_features: 'Ornate details, neck ruff, jeweled bodice, French hood, chain of office',
+      key_features:
+        'Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim',
       creative_brief:
-        'Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style anchor without forcing Holbein citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.',
+        'Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style anchor without forcing early-modern court-portrait citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.',
     },
   },
   {
@@ -191,7 +195,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-038',
     name: 'Disco (70s)',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'boring, matte',
+    negativePrompt: 'boring, matte, named venue, named band',
     style: {
       aesthetic: '70s disco styling, mirror-ball swagger, polyester-dream confidence',
       form_and_line:
@@ -202,21 +206,22 @@ export const GENERATED_STYLE_PRESETS = [
         'Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze',
       material_texture:
         'Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather',
-      render_quality: 'Fun, dance, Studio 54 electricity, Bee-Gees swagger',
+      render_quality: 'Fun, dance, 1970s mirror-ball nightlife energy, polyester sparkle',
       spatial_distortion: 'None',
-      atmosphere: 'Groovy, energetic, mirror-ball transcendence, Saturday-night immortality',
-      key_features: 'Bell bottoms, wide-collar shirt, gold medallion, platform shoes, chest hair',
+      atmosphere: 'Groovy, energetic, mirror-ball transcendence, warm nightlife confidence',
+      key_features:
+        'Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle',
       creative_brief:
-        'Style any input as 70s disco: polyester sheen, wide lapels, flared pants, platform soles, gold medallion cues, burnt orange and mirror-ball sparkle. Keep dancefloor euphoria without requiring a dancer, club, Studio 54 reference or literal dancefloor sanctuary.',
+        'Style any input as 70s disco: polyester sheen, wide lapels, flared geometry, platform elevation, gold medallion cues, burnt orange and mirror-ball sparkle. Keep dancefloor euphoria without requiring exposed body cues, a dancer, named venue, named band, specific club or literal dancefloor sanctuary.',
     },
   },
   {
     id: 'SP08-039',
     name: 'French Revolution',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'modern',
+    negativePrompt: 'contemporary casualwear dominance, generic modern streetwear',
     style: {
-      aesthetic: 'Rococo court excess, Marie Antoinette reference, pre-revolution glamour',
+      aesthetic: 'Rococo court excess, powdered aristocratic texture, pre-revolution glamour',
       form_and_line:
         'Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep',
       color_palette:
@@ -224,14 +229,15 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce',
       material_texture:
-        'Silk taffeta, lace engageantes, powdered hair, ostrich plume, ribbon garlands, paste-jewel stomacher',
+        'Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament',
       render_quality: 'Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy',
-      spatial_distortion: 'Huge wig',
+      spatial_distortion: 'Pannier volume and court-pageant silhouette exaggeration',
       atmosphere:
         'Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension',
-      key_features: 'Powdered wig, beauty patch, ribbon choker, fan, pannier side-hoops',
+      key_features:
+        'Powdered texture cues, beauty-patch dots, ribbon choker logic, pannier side-hoops, court ornament density',
       creative_brief:
-        'Turn the input into Rococo excess: pannier width, robe-a-la-francaise volume, silk taffeta, powdered-hair cues, ostrich plumes, ribbon garlands and paste-jewel sparkle. Keep Versailles/Antoinette tension as style anchor without requiring palace halls, a face, fan pose or guillotine narrative.',
+        'Turn the input into Rococo excess: pannier width, robe-a-la-francaise volume, silk taffeta, powdered texture cues, ostrich-plume accents, ribbon garlands and paste-jewel sparkle. Keep pre-revolution court tension as style anchor without requiring palace halls, a face, huge wig, fan pose or guillotine narrative.',
     },
   },
   {
@@ -252,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Tough, cold, sea-spray resolve, saga warmth, raven-flight omen',
       key_features:
-        'Thor-hammer cues, round-shield geometry, fur mantle edge, knotwork or rune detail',
+        'Hammer-like amulet silhouette, round-shield geometry, fur mantle edge, knotwork or rune detail',
       creative_brief:
         'Wrap any input in Norse seafaring materiality: wolf fur, riveted chainmail, coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber warmth. Keep saga hardness as a stylistic anchor without requiring beards, longships, shield walls, axes, tattooed torsos or a raider body.',
     },

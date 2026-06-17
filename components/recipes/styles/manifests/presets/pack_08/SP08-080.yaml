@@ -27,11 +27,12 @@ visualDna:
     surface. Keep menace optional and atmospheric; do not require a humanoid
     figure, evil character, realm scene, garment wearer or literal standing pose.
 avoidRules:
-  - light
+  - bright cheerful lighting
+  - fully illuminated surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-080.webp
 attributes:
-  negativePrompt: light
+  negativePrompt: bright cheerful lighting, fully illuminated surface, high-key friendly mood
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

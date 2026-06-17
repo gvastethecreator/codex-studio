@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP07-075
 packId: pack_07
-name: Escherian Impossible Circulation
+name: Impossible Circulation Optical Paradox
 category: 7. Megastructure And Impossible Space
 version: 1
 supportedTasks:
@@ -12,7 +12,7 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Paradoja espacial escheriana, ambigüedad óptica matemática y circulación imposible.
+  aesthetic: Paradoja espacial de perspectiva imposible, ambigüedad óptica matemática y circulación imposible.
   form_and_line: >-
     Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en
     trayectorias cerradas.

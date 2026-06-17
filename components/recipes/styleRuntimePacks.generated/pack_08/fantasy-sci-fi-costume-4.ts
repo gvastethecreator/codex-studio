@@ -7,31 +7,33 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-040',
     name: 'Space Suit (Retro)',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'modern sleek',
+    negativePrompt: 'modern sleek, readable agency logo',
     style: {
-      aesthetic: 'Apollo-era retro space suit, one-small-step romance, Cape-Canaveral optimism',
+      aesthetic: 'Retro EVA suit language, archival space-age optimism and beta-cloth engineering.',
       form_and_line:
-        'Bulky suit, pressurized-ring segmentation, hose-connector geometry, glove-gasket bulk, backpack-box volume',
+        'Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume.',
       color_palette:
-        'White, silver, American-flag accent, visor-gold, beta-cloth cream, mission-patch color',
+        'White, silver, muted flag accent, visor-gold, beta-cloth cream, mission-patch color',
       lighting_setup:
-        'Harsh vacuum-like key light, unfiltered-solar glare, helmet-interior bounce, gold-visor reflection',
+        'Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection.',
       material_texture:
-        'Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing, Velcro patches',
-      render_quality: 'Historic, tech, NASA-archive authenticity, vacuum-silence clarity',
+        'Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture.',
+      render_quality:
+        'Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.',
       spatial_distortion: 'None',
       atmosphere:
-        'Heroic, exploration, mission-control suspense, giant-leap awe, archival optimism',
-      key_features: 'Bubble helmet, gold visor, mission patch, umbilical hoses, moon boots',
+        'Heroic exploration, mission-control suspense, giant-leap awe and restrained archival optimism.',
+      key_features:
+        'Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass.',
       creative_brief:
-        'Translate the input into retro EVA suit language: beta cloth, bubble helmet, gold visor, rubber gaskets, umbilical hoses, aluminum rings and mission-patch color. Keep Apollo optimism and vacuum clarity without requiring a lunar surface, astronaut hero pose or NASA archive reenactment.',
+        'Translate the input into retro EVA suit language: beta cloth, bubble-helmet geometry, gold visor, rubber gaskets, umbilical-hose rhythm and aluminum rings. Keep space-age optimism and vacuum clarity without requiring logos, flag patches, lunar surface, astronaut hero pose or NASA archive reenactment.',
     },
   },
   {
     id: 'SP08-015',
     name: 'Cosplay Anime',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'realistic clothes, dull',
+    negativePrompt: 'licensed-character replica, low-effort costume, flat convention snapshot',
     style: {
       aesthetic:
         'Convention-grade costume craft, stylized transformation energy, anime-adjacent fabrication spectacle',
@@ -69,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Epic fantasy polish, elven grace, artisan-fantasy caliber',
       spatial_distortion: 'Floating fabric',
       atmosphere:
-        'Magical, soft, dreamlike, ancient enchantment, starlit serenity, undying-lands longing',
+        'Magical, soft, dreamlike, ancient enchantment, starlit serenity, timeless immortal-realm longing',
       key_features:
         'Translucency, flowing sleeves, circlet or brooch cues, silver-thread constellation detail',
       creative_brief:
@@ -116,24 +118,24 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light',
       material_texture:
-        'Waterproof technical fabric, Gore-Tex Pro, Dyneema composite, laser-cut nylon, bonded seam tape',
+        'Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape',
       render_quality:
         'Technical utility precision, dystopian functional polish, shadow-ops restraint',
       spatial_distortion: 'Optional masked or hooded identity cues',
       atmosphere:
         'Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint',
-      key_features: 'Utility focus, MOLLE webbing, magnetic fidlock closures, articulated hood',
+      key_features: 'Utility focus, MOLLE webbing, magnetic technical closures, articulated hood',
       creative_brief:
-        'Mechanize the input through cyberpunk techwear: bonded seams, Dyneema panels, harness geometry, magnetic closures, hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
+        'Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures, hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
     },
   },
   {
     id: 'SP08-079',
-    name: 'Invisibility Cloak',
+    name: 'Refractive Concealment Veil',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'visible',
+    negativePrompt: 'fully opaque normal fabric, no refraction edge, no partial reveal',
     style: {
-      aesthetic: 'Partially invisible, refraction-mirage wonder, stealth-magic concealment',
+      aesthetic: 'Partially invisible, refraction-mirage wonder, optical concealment mystery',
       form_and_line:
         'Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape',
       color_palette:
@@ -142,39 +144,40 @@ export const GENERATED_STYLE_PRESETS = [
         'Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge',
       material_texture:
         'Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo',
-      render_quality: 'Magic, stealth, optical-illusion wonder, wizard-cloak mystery',
+      render_quality: 'Stealth, optical-illusion wonder, refractive concealment mystery',
       spatial_distortion: 'Missing parts',
       atmosphere:
-        'Hidden, magic, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry',
+        'Hidden, disappearing-presence wonder, see-but-not-see mystique, veil-between-worlds poetry',
       key_features:
         'Distortion, bend-light edge, partial reveal, environment-through-body, glass-warp seam',
       creative_brief:
-        'Apply invisibility-cloak optics to any input: refractive edge distortion, background-matching transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the disappearing-presence effect without forcing a body, hand reveal, wizard-cloak scene, garment wearer or specific environment.',
+        'Apply invisibility-cloak optics to any input: refractive edge distortion, background-matching transparency, glass-blue seams, chromatic fringe and adaptive-camo shimmer. Preserve the disappearing-presence effect without forcing a body, hand reveal, wizard scene, garment wearer or specific environment.',
     },
   },
   {
     id: 'SP08-065',
     name: 'Neon Light Suit',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'dark',
+    negativePrompt: 'franchise icon, helmet visor, neon vehicle, grid arena',
     style: {
-      aesthetic:
-        'Tron light-grid suiting, identity-disc glow, digital frontier, Grid-terminal icon',
+      aesthetic: 'Neon grid suiting, electroluminescent circuit couture, digital frontier energy',
       form_and_line:
-        'Glowing lines, hex-circuit geometry, modular panel segmentation, disc-like emitter plate, luminescent-stripe contour',
+        'Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour breaks',
       color_palette:
-        'Black + Cyan, grid-blue, identity-disc white, amber-iso, CLU-orange, deep-circuit black',
+        'Black + Cyan, grid-blue, emitter white, amber-iso, hot orange, deep-circuit black',
       lighting_setup:
         'Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light',
       material_texture:
-        'Light, electroluminescent panel, matte neoprene, polycarbonate disc, luminous-flex circuit, silicone grip',
-      render_quality: 'Sci-fi, digital, Flynn-lives luminescence, light-cycle precision',
+        'Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip',
+      render_quality:
+        'Sci-fi digital polish, crisp emissive edges, neon circuit couture without franchise literalism',
       spatial_distortion: 'None',
       atmosphere:
-        'Future, tech, Grid-frontier freedom, data-stream electricity, programmatic drama',
-      key_features: 'Glow, identity disc, circuit-line grid, illuminated piping, dark-helmet visor',
+        'Future, tech, grid-frontier freedom, data-stream electricity, programmatic drama',
+      key_features:
+        'Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams',
       creative_brief:
-        'Convert the input into neon grid suiting: cyan circuit lines, matte neoprene, electroluminescent panels, emitter-disc glow and black-cyan contrast. Keep Tron-like digital frontier energy while avoiding a required bodysuit wearer, arena, light-cycle action, visor silhouette or floor-grid scene.',
+        'Convert the input into neon grid suiting: cyan circuit lines, matte neoprene, electroluminescent panels, emitter-plate glow and black-cyan contrast. Keep digital frontier energy while avoiding a required bodysuit wearer, franchise icon, vehicle, arena, helmet visor silhouette or floor-grid scene.',
     },
   },
   {
@@ -208,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-080',
     name: 'Shadow Form',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'light',
+    negativePrompt: 'bright cheerful lighting, fully illuminated surface, high-key friendly mood',
     style: {
       aesthetic: 'Made of shadow, void-walker mystery, darkness-incarnate presence',
       form_and_line:
@@ -231,56 +234,61 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-044',
     name: 'Wizard Robes',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'pants, modern',
+    negativePrompt:
+      'literal school uniform, modern streetwear, prop-only wizard cliche, library scene lock',
     style: {
-      aesthetic: 'Classic mage regalia, arcane scholar mystique, spellcraft textile language',
+      aesthetic: 'Classic mage regalia, arcane scholar mystique and spellcraft textile language.',
       form_and_line:
-        'Flowing robes, bell-sleeve drape, hooded-cowl depth, floor-length column, pointed-hat apex',
+        'Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry',
       color_palette:
         'Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald',
       lighting_setup:
-        'Magic glow, spell-light rim, candle-flicker ambiance, crystal-orb luminescence, staff-gem radiance',
+        'Arcane glow, silver rim, manuscript-table warmth, jewel luminescence and embroidered highlight glints',
       material_texture:
         'Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay',
       render_quality: 'Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas',
-      spatial_distortion: 'None',
+      spatial_distortion:
+        'Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression.',
       atmosphere:
         'Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus',
-      key_features: 'Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe',
+      key_features:
+        'Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and optional staff or book cues',
       creative_brief:
-        'Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay, spell-light rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset should not require towers, libraries, sanctums or spellcasting scenes.',
+        'Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay, arcane rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset should not require towers, libraries, sanctums, candle altars or spellcasting scenes.',
     },
   },
   {
     id: 'SP08-048',
     name: 'Zombie Survivor',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'clean',
+    negativePrompt: 'clean, gore, visible wound, weapon focus, zombie figure',
     style: {
       aesthetic:
-        'Walking Dead post-outbreak survivor wear, bite-mark paranoia, terminus-road desperation',
+        'Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism.',
       form_and_line:
-        'Dirty layers, scavenged-onion bulk, duct-tape reinforcement, wrapped-forearm binding, boot-cut pragmatism',
-      color_palette: 'Grey, Blood stain, mud-brown, rust, faded-olive, dried-crimson, ash-grey',
+        'Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism',
+      color_palette: 'Grey, mud brown, rust, faded olive, dried crimson accent, ash grey',
       lighting_setup:
-        'Gritty overcast grey, dust-haze shadow, emergency-orange rim, dirty practical light',
+        'Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light',
       material_texture:
-        'Blood-crusted fabric, dirt-embedded denim, duct-tape patches, torn flannel, sweat-soaked cotton, leather holster wear',
-      render_quality: 'Horror, survival, walker-apocalypse realism, exhaustion-verite',
-      spatial_distortion: 'Wounds',
+        'Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains.',
+      render_quality:
+        'Survival editorial realism with worn textile clarity and grounded material distress.',
+      spatial_distortion:
+        'Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry.',
       atmosphere:
-        'Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread',
+        'Tough, vigilant, exhausted and resourceful without gore, zombie spectacle or weapon focus.',
       key_features:
-        'Backpack, fingerless gloves, duct-tape patches, bite-protection layers, relic accessory cues',
+        'Backpack straps, fingerless gloves, duct-tape patches, bite-protection layers and relic accessory cues',
       creative_brief:
-        'Turn any input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear, mud, dried crimson stains, bite-protection wraps and exhausted layering. It may imply zombie danger, but should not require a weapon, sheriff hat, forest, abandoned building or survivor portrait.',
+        'Turn any input into outbreak-era utilitywear: duct-taped denim, torn flannel, abraded leather, mud, dried emergency stains, bite-protection wraps and exhausted layering. It may imply danger, but should not require gore, wounds, zombies, weapons, forest, abandoned building or survivor portrait.',
     },
   },
   {
     id: 'SP08-043',
     name: 'Space Opera Royal',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'simple, earth',
+    negativePrompt: 'plain everyday minimalwear, contemporary Earth-uniform literalism',
     style: {
       aesthetic: 'Operatic space-court couture, sovereign nebular regality, diplomatic authority',
       form_and_line:
@@ -289,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet',
       lighting_setup: 'Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight',
       material_texture:
-        'Exotic fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk',
+        'Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk',
       render_quality: 'Regal alien opulence, galactic-court high fashion, ceremonial precision',
       spatial_distortion: 'Ceremonial halo exaggeration',
       atmosphere:
@@ -297,39 +305,42 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Ceremonial signal-paint cues, halo headpiece logic, gown architecture, feathered cape',
       creative_brief:
-        'Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal thread, feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality as a portable style anchor, not as throne rooms, senate chambers, twin-sun tableaux or specific royal figures.',
+        'Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal thread, feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality as a portable style anchor, not as throne rooms, senate chambers, binary-sun scenic tableaux or specific royal figures.',
     },
   },
   {
     id: 'SP08-045',
     name: 'Superhero Spandex',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'loose clothes',
+    negativePrompt: 'loose clothes, franchise icon, bodybuilder anatomy, muscle shading',
     style: {
       aesthetic:
-        'Four-color superhero costume language, emblematic idealism, panel-breaking dynamism',
+        'Four-color heroic costume language, emblematic idealism and panel-breaking dynamism.',
       form_and_line:
-        'Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm, bold seam blocking',
+        'Cape-sweep drama, emblem-centered geometry, gauntlet-to-boot rhythm and bold seam blocking.',
       color_palette: 'Primary Colors, flag-blue, signal-red, gold-yellow, ink-black, optic-white',
-      lighting_setup: 'Rim light, heroic edge-highlight, two-source dramatic, comic-ink contrast',
+      lighting_setup: 'Rim light, heroic edge-highlight, two-source drama and comic-ink contrast.',
       material_texture:
-        'Matte spandex, dimensional-print muscle shading, vinyl cape, rubber sole, metallic accents',
-      render_quality: 'Heroic, bold, splash-page energy, Kirby-esque power',
-      spatial_distortion: 'Iconic silhouette exaggeration',
-      atmosphere: 'Bold, brave, civic-myth clarity, splash-page dynamism, unwavering resolve',
-      key_features: 'Emblem panel, cape, utility belt, domino-mask cues, heroic-boot finish',
+        'Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents.',
+      render_quality:
+        'Bold splash-page costume energy with original heroic clarity, not franchise imitation.',
+      spatial_distortion: 'Iconic silhouette exaggeration.',
+      atmosphere: 'Bold, brave, civic-myth clarity, splash-page dynamism and unwavering resolve.',
+      key_features:
+        'Emblem panel, cape logic, utility belt geometry, mask-like cues and heroic boot finish.',
       creative_brief:
-        'Recast any input in superhero costume language: matte spandex, emblem-first panel geometry, cape sweep, utility belt logic, heroic boot finish and four-color ink contrast. Preserve iconic optimism and silhouette clarity without forcing a human hero, bodybuilder anatomy, action pose, city rescue or fixed comic panel.',
+        'Recast any input in heroic costume language: emblem-first panel geometry, cape sweep, utility-belt logic, heroic boot finish and four-color ink contrast. Preserve optimism and silhouette clarity without silver-age artist imitation, bodybuilder anatomy, muscle shading, franchise icon, action pose, city rescue or fixed comic panel.',
     },
   },
   {
     id: 'SP08-050',
     name: 'Alien Fashion',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'ordinary casualwear',
+    negativePrompt:
+      'ordinary casualwear, designer reference, franchise likeness, space terminal, humanoid alien body lock',
     style: {
       aesthetic:
-        'Bold alien couture, late-90s sci-fi editorial energy, interstellar-couture rebellion',
+        'Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour.',
       form_and_line:
         'Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves',
       color_palette:
@@ -338,39 +349,43 @@ export const GENERATED_STYLE_PRESETS = [
         'Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill',
       material_texture:
         'Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC',
-      render_quality: 'Weird, futuristic, couture precision, space-opera editorial spectacle',
+      render_quality:
+        'Futuristic couture precision with weird synthetic material clarity and editorial spectacle.',
       spatial_distortion: 'None',
       atmosphere:
-        'Alien, fashion, zero-g couture attitude, cosmic glamour, rebellious artificiality',
+        'Xeno-fashion attitude, zero-g couture poise, cosmic glamour and rebellious artificiality',
       key_features:
         'Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring',
       creative_brief:
-        'Make the input feel designed by non-human couture logic: orange rubber, clear plastic, chrome vinyl, structural strap lattices, strange cutouts, tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element rebellion as a late-90s sci-fi-fashion energy, without requiring a space terminal, humanoid alien body, lab or runway.',
+        'Make the input feel designed by xeno-couture logic: orange rubber, clear plastic, chrome vinyl, structural strap lattices, strange cutouts, tab-built sleeves and utility rings. Keep late-90s sci-fi-fashion rebellion without designer/IP references, space terminal, humanoid alien body, lab or runway lock.',
     },
   },
   {
     id: 'SP08-042',
     name: 'Post-Apocalyptic Scavenger',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'clean, new',
+    negativePrompt: 'clean, new, franchise likeness, chase vehicle, weapon focus',
     style: {
       aesthetic:
-        'Mad Max wasteland survivor gear, guzzoline grit, Fury Road desperation, chrome-sprayed myth',
+        'Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth.',
       form_and_line:
-        'Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding, improvised asymmetry',
+        'Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry',
       color_palette:
-        'Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, war-boy white, desert-ochre',
+        'Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, bone-white road paint, desert-ochre',
       lighting_setup:
-        'Desert sun, heat-shimmer distortion, dust-storm diffusion, engine-fire orange, post-blast haze',
+        'Harsh sun, heat-shimmer distortion, dust diffusion, engine-fire orange accents and post-blast haze',
       material_texture:
         'Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim',
-      render_quality: 'Survival, gritty, post-apocalypse verite, guzzoline-desperation rawness',
-      spatial_distortion: 'None',
+      render_quality:
+        'Survival couture realism with gritty material hierarchy and improvised engineering clarity.',
+      spatial_distortion:
+        'Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks.',
       atmosphere:
-        'Desperate, tough, resource-scarcity tension, wasteland-wind solitude, witness-me ferocity',
-      key_features: 'Goggles, shoulder pad, bandolier, gas-mask, improvised armor cues',
+        'Tough resource-scarcity tension, wind-burned solitude and ferocious repair culture.',
+      key_features:
+        'Optional goggles, shoulder pad, bandolier-like straps, respirator cues and improvised armor fragments',
       creative_brief:
-        'Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain, car-part armor, gauze wraps, oxidized metal and dust-choked layering. Keep resource-scarcity ferocity without requiring a wasteland chase, weapon, survivor portrait or specific desert scene.',
+        'Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain texture, car-part armor fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity ferocity without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.',
     },
   },
   {
@@ -400,24 +415,23 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-046',
     name: 'Mech Pilot Suit',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'casual',
+    negativePrompt: 'casual, latex body read, cockpit lock, franchise suit',
     style: {
-      aesthetic: 'Biomech pilot interfacewear, sync-signal shine, pressure-cabin tension',
+      aesthetic: 'Biomech interfacewear, sync-signal shine and pressure-system readiness.',
       form_and_line:
-        'Panel lines, capsule-contour geometry, compression seams, interface cutouts, sealed-edge bands',
+        'Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps.',
       color_palette: 'Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black',
       lighting_setup:
-        'Amber immersion glow, display-screen backlight, capsule bioluminescence, sync-alert rim',
+        'Amber system glow, display backlight, capsule bioluminescence and sync-alert rim.',
       material_texture:
-        'Latex, plastic, neoprene compression, interface gel, carbon-fiber panel, memory-foam inner',
-      render_quality:
-        'Anime sci-fi precision, cel-shaded engineering polish, high-spec interfacewear',
+        'Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads.',
+      render_quality: 'Original sci-fi engineering polish with high-spec interfacewear clarity.',
       spatial_distortion: 'None',
-      atmosphere: 'Ready, tech, sync tension, impact-alert urgency, machine-link suspense',
+      atmosphere: 'Ready, technical, machine-linked and tense without anime-franchise identity.',
       key_features:
-        'Interface headset cues, neural-clip detailing, pilot-panel seams, immersion-fluid sheen',
+        'Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands.',
       creative_brief:
-        'Translate the input into biomech interfacewear: glossy panel lines, compression-seam mapping, sealed-edge bands, neural-clip detailing, amber immersion sheen and synchronization signal cues. Preserve machine-linked tension without requiring a cockpit, hangar, launch tube, battle pose or a human pilot body.',
+        'Translate the input into biomech interfacewear: glossy panel lines, sealed-edge bands, connector plates, support padding, neural-port-like detailing and synchronization signal cues. Preserve machine-linked tension without latex body read, cockpit, hangar, launch tube, battle pose, franchise suit or mandatory human pilot body.',
     },
   },
   {

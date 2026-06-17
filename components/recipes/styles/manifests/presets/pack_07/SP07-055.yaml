@@ -27,12 +27,13 @@ visualDna:
     de postres o escena infantil fija. Mantiene logica comestible, escala de ensamblaje, ritmo candy y atmosfera ludica
     sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - scary
-  - realistic
+  - horror candy
+  - photoreal food macro
+  - edible mascot party scene
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-055.webp
 attributes:
-  negativePrompt: scary, realistic
+  negativePrompt: horror candy, gore, photoreal food macro, edible mascot, kid-party literal
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

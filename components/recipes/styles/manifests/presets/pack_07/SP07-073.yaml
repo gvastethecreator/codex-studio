@@ -29,11 +29,11 @@ visualDna:
     vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional
     interna sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - surface
+  - flat exterior-only view
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-073.webp
 attributes:
-  negativePrompt: surface
+  negativePrompt: flat exterior-only view, uncut surface-only exterior
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

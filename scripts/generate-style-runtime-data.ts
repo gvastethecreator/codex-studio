@@ -200,6 +200,31 @@ async function loadStyleDefaultImageIds() {
   }
 }
 
+interface StyleDefaultImageVariant {
+  presetId: string;
+  fileName: string;
+}
+
+async function loadStyleDefaultImageVariants(): Promise<StyleDefaultImageVariant[]> {
+  try {
+    const entries = await readdir(path.join(defaultsDir, 'variants'), { withFileTypes: true });
+    return entries
+      .filter((entry) => entry.isFile())
+      .map((entry) => {
+        const match = entry.name.match(/^(SP\d{2}-\d{3})[-_][a-z0-9-]+\.webp$/i);
+        return match ? { presetId: match[1], fileName: entry.name } : null;
+      })
+      .filter((entry): entry is StyleDefaultImageVariant => Boolean(entry))
+      .sort(
+        (first, second) =>
+          comparePresetIds(first.presetId, second.presetId) ||
+          first.fileName.localeCompare(second.fileName),
+      );
+  } catch {
+    return [];
+  }
+}
+
 async function loadStaleDefaultImageIds() {
   let backlog = '';
   try {
@@ -229,15 +254,34 @@ function buildStaleDefaultImagesSource(staleDefaultImageIds: string[]) {
   ].join('\n');
 }
 
-function buildStyleDefaultImagesSource(styleDefaultImageIds: string[]) {
+function buildStyleDefaultImagesSource(
+  styleDefaultImageIds: string[],
+  styleDefaultImageVariants: StyleDefaultImageVariant[],
+) {
   const imports = styleDefaultImageIds
     .map(
       (presetId, index) =>
         `import image${index} from '../assets/recipes/styles/defaults/${presetId}.webp?url';`,
     )
     .join('\n');
+  const variantImports = styleDefaultImageVariants
+    .map(
+      (variant, index) =>
+        `import variant${index} from '../assets/recipes/styles/defaults/variants/${variant.fileName}?url';`,
+    )
+    .join('\n');
   const entries = styleDefaultImageIds
     .map((presetId, index) => `  ${JSON.stringify(presetId)}: image${index},`)
+    .join('\n');
+  const variantEntriesByPresetId = new Map<string, string[]>();
+  styleDefaultImageVariants.forEach((variant, index) => {
+    variantEntriesByPresetId.set(variant.presetId, [
+      ...(variantEntriesByPresetId.get(variant.presetId) ?? []),
+      `variant${index}`,
+    ]);
+  });
+  const variantEntries = Array.from(variantEntriesByPresetId.entries())
+    .map(([presetId, values]) => `  ${JSON.stringify(presetId)}: [${values.join(', ')}],`)
     .join('\n');
 
   return [
@@ -245,9 +289,14 @@ function buildStyleDefaultImagesSource(styleDefaultImageIds: string[]) {
     '// Add/remove style default images, then run `bun run styles:runtime`.',
     '',
     imports,
+    variantImports ? `\n${variantImports}` : '',
     '',
     'export const GENERATED_STYLE_DEFAULT_IMAGES: Record<string, string> = {',
     entries,
+    '};',
+    '',
+    'export const GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS: Record<string, string[]> = {',
+    variantEntries,
     '};',
     '',
   ].join('\n');
@@ -327,10 +376,9 @@ if (checkMode) {
   const checkCategoryPaths = packChunks.map(({ pack, category }) =>
     path.join(packOutputDir, pack.id, `${category.id}${checkPackFileSuffix}`),
   );
-  const [staleDefaultImageIds, styleDefaultImageIds] = await Promise.all([
-    loadStaleDefaultImageIds(),
-    loadStyleDefaultImageIds(),
-  ]);
+  const [staleDefaultImageIds, styleDefaultImageIds, styleDefaultImageVariants] = await Promise.all(
+    [loadStaleDefaultImageIds(), loadStyleDefaultImageIds(), loadStyleDefaultImageVariants()],
+  );
   try {
     await mkdir(packOutputDir, { recursive: true });
     await Promise.all(
@@ -345,7 +393,7 @@ if (checkMode) {
       ),
       writeFile(
         checkStyleDefaultImagesOutputPath,
-        buildStyleDefaultImagesSource(styleDefaultImageIds),
+        buildStyleDefaultImagesSource(styleDefaultImageIds, styleDefaultImageVariants),
         'utf8',
       ),
       ...packs.map((pack) =>
@@ -475,9 +523,10 @@ const categoryOutputPaths = packs.flatMap((pack) =>
     path.join(packOutputDir, pack.id, `${category.id}.ts`),
   ),
 );
-const [staleDefaultImageIds, styleDefaultImageIds] = await Promise.all([
+const [staleDefaultImageIds, styleDefaultImageIds, styleDefaultImageVariants] = await Promise.all([
   loadStaleDefaultImageIds(),
   loadStyleDefaultImageIds(),
+  loadStyleDefaultImageVariants(),
 ]);
 await Promise.all(
   packs.map((pack) => mkdir(path.join(packOutputDir, pack.id), { recursive: true })),
@@ -491,7 +540,7 @@ await Promise.all([
   ),
   writeFile(
     styleDefaultImagesOutputPath,
-    buildStyleDefaultImagesSource(styleDefaultImageIds),
+    buildStyleDefaultImagesSource(styleDefaultImageIds, styleDefaultImageVariants),
     'utf8',
   ),
   ...packs.map((pack) =>

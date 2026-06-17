@@ -27,12 +27,12 @@ visualDna:
     after-dark luxury without requiring a smoking jacket, private club, piano bar
     or wearer.
 avoidRules:
-  - shiny
-  - hard
+  - plastic gloss
+  - hard metal glare
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-060.webp
 attributes:
-  negativePrompt: shiny, hard
+  negativePrompt: plastic gloss, hard metal glare
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

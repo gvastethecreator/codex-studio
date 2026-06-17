@@ -40,11 +40,11 @@ visualDna:
     extremo y horizonte interior curvo. Debe transmitir captura energética civilizatoria sin fijar
     una esfera literal.
 avoidRules:
-  - planet surface
+  - ground-level planetary landscape lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-076.webp
 attributes:
-  negativePrompt: planet surface
+  negativePrompt: ground-level planetary landscape lock, ordinary planet surface view
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

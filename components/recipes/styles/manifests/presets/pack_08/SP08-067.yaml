@@ -17,7 +17,7 @@ visualDna:
   color_palette: Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white
   lighting_setup: Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead
   material_texture: Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam
-  render_quality: Weird, pop art, Warhol-factory irreverence, inflated-sculpture playfulness
+  render_quality: Weird, pop art, factory-floor pop-art irreverence, inflated-sculpture playfulness
   spatial_distortion: Bulky
   atmosphere: Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire
   key_features: Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers
@@ -27,11 +27,12 @@ visualDna:
     without requiring bodice shaping, dress sculpture, packaging joke, wearable
     object or gallery plinth framing.
 avoidRules:
-  - fabric
+  - plain textile drape dominance
+  - soft woven cloth replacing bubble plastic
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-067.webp
 attributes:
-  negativePrompt: fabric
+  negativePrompt: plain textile drape dominance, soft woven cloth replacing bubble plastic
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

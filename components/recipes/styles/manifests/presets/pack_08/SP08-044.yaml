@@ -12,27 +12,29 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Classic mage regalia, arcane scholar mystique, spellcraft textile language
-  form_and_line: Flowing robes, bell-sleeve drape, hooded-cowl depth, floor-length column, pointed-hat apex
+  aesthetic: Classic mage regalia, arcane scholar mystique and spellcraft textile language.
+  form_and_line: Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry
   color_palette: Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald
-  lighting_setup: Magic glow, spell-light rim, candle-flicker ambiance, crystal-orb luminescence, staff-gem radiance
+  lighting_setup: Arcane glow, silver rim, manuscript-table warmth, jewel luminescence and embroidered highlight glints
   material_texture: Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay
   render_quality: Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas
-  spatial_distortion: None
+  spatial_distortion: Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression.
   atmosphere: Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus
-  key_features: Staff, pointed hat, spellbook, crystal pendant, rune-embroidered robe
+  key_features: Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and optional staff or book cues
   creative_brief: >-
     Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery,
-    moonstone inlay, spell-light rim and silver constellations. Staff, hat or spellbook cues may
-    appear when useful, but the preset should not require towers, libraries, sanctums or
+    moonstone inlay, arcane rim and silver constellations. Staff, hat or spellbook cues may appear
+    when useful, but the preset should not require towers, libraries, sanctums, candle altars or
     spellcasting scenes.
 avoidRules:
-  - pants
-  - modern
+  - literal school uniform
+  - modern streetwear
+  - prop-only wizard cliche
+  - library scene lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-044.webp
 attributes:
-  negativePrompt: pants, modern
+  negativePrompt: literal school uniform, modern streetwear, prop-only wizard cliche, library scene lock
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

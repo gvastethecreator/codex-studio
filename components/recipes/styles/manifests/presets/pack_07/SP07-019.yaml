@@ -15,8 +15,8 @@ visualDna:
   aesthetic: Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
   form_and_line: Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.
   color_palette: Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.
-  lighting_setup: Luz filtrada por vitral, lamparas calidas tipo Tiffany, apliques petalo y brillo irisado suave.
-  material_texture: Madera tallada, favrile iridiscente, hierro forjado, bronce patinado y marqueteria floral.
+  lighting_setup: Luz filtrada por vitral, lamparas calidas de vidrio emplomado, apliques petalo y brillo irisado suave.
+  material_texture: Madera tallada, art glass iridiscente, hierro forjado, bronce patinado y marqueteria floral.
   render_quality: Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.
   spatial_distortion: Ligera fluidez morfologica para enfatizar continuidad organica sobre rigidez geometrica.
   atmosphere: Romantica, envolvente, botanica y artesanal.
@@ -26,11 +26,11 @@ visualDna:
     ornamento estructural fluido. Debe leerse como organismo disenado de adentro hacia afuera, no
     como floralidad aplicada ni como una habitacion de epoca obligatoria.
 avoidRules:
-  - straight lines
+  - rigid rectilinear grid
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-019.webp
 attributes:
-  negativePrompt: straight lines
+  negativePrompt: rigid rectilinear grid
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

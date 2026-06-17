@@ -12,7 +12,7 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: 16th century court regalia, Tudor-adjacent majesty, painted-court splendor
+  aesthetic: 16th century court regalia, early-modern majesty, painted-court splendor
   form_and_line: Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture
   color_palette: Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white
   lighting_setup: Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold
@@ -20,11 +20,11 @@ visualDna:
   render_quality: Historical museum-grade finish, painted-court realism, formal gravitas
   spatial_distortion: Stiff posture
   atmosphere: Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality
-  key_features: Ornate details, neck ruff, jeweled bodice, French hood, chain of office
+  key_features: Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim
   creative_brief: >-
     Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure, slashed
     sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style anchor without
-    forcing Holbein citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.
+    forcing early-modern court-portrait citation, Tudor portrait pose, candlelit hall, rigid queenly body or specific monarch.
 avoidRules:
   - modern
   - simple

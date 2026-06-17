@@ -40,12 +40,13 @@ visualDna:
     inseparables. La estética debe mostrar desempeño técnico real (sombra, drenaje, inercia,
     mantenimiento) además de densidad orgánica, aplicable a cualquier input.
 avoidRules:
-  - concrete
-  - industrial
+  - bare gray concrete dominance
+  - smokestack industrial mood
+  - greenwashing tech facade
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-028.webp
 attributes:
-  negativePrompt: concrete, industrial
+  negativePrompt: bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -12,37 +12,32 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Construcción festiva comestible con lógica de ornamento confitero y masa de cuento artesanal.
+  aesthetic: Festive edible construction with confectionery ornament logic and handmade storybook mass.
   form_and_line: >-
-    Contornos de icing trazado, teja de galleta festoneada, repetición de columnas candy y marcos de
-    pretzel redondeados.
+    Piped icing contours, scalloped cookie tiling, repeated candy columns and rounded pretzel frames.
   color_palette: >-
     Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm
     caramel notes, and sprinkle multicolor highlights
-  lighting_setup: >-
-    Ámbar interior cálido, destellos de cristal de azúcar, twinkle festivo suave y sombra cozy de
-    bajo contraste.
+  lighting_setup: Warm amber interior glow, sugar-crystal sparkle, soft festive twinkle and low-contrast cozy shadow.
   material_texture: >-
-    Grano de galleta horneada, relieve de icing, polvo azucarado cristalino, gloss candy duro y
-    acentos de glaseado chocolate.
-  render_quality: >-
-    Confection-architecture de alto detalle con materialidad comestible legible y precisión
-    decorativa artesanal.
-  spatial_distortion: None
-  atmosphere: Festiva, indulgente y acogedora, con ritual artesanal celebratorio.
+    Baked cookie grain, raised icing relief, crystalline sugar dust, hard candy gloss and chocolate glaze accents.
+  render_quality: High-detail confection architecture with legible edible materiality and precise handmade decoration.
+  spatial_distortion: Icing seam swelling, sugar sag, candy-module compression and softened baked geometry.
+  atmosphere: Festive, indulgent and cozy, with celebratory craft ritual.
   key_features: >-
-    Juntas definidas por icing, nodos gumdrop, ritmo de cubierta cookie, motivos peppermint lineales
-    y microdetalle sprinkle.
+    Icing seams, gumdrop nodes, cookie-roof rhythm, peppermint line motifs and sprinkle microdetail.
   creative_brief: >-
-    Convierte estructura en sistema comestible ornamental: icing como línea constructiva, galleta
-    como masa, azúcar como textura y candy como acento modular. Funciona sobre cualquier tema sin
-    exigir casita navideña.
+    Turn any theme into an edible ornamental system: icing as construction line, cookie as mass,
+    sugar as texture and candy as modular accent. It can suggest storybook architecture, but does
+    not require a holiday gingerbread house, bakery product photo or dessert table.
 avoidRules:
-  - inedible
+  - literal gingerbread house only
+  - bakery product photo
+  - spoiled food
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-070.webp
 attributes:
-  negativePrompt: inedible
+  negativePrompt: literal gingerbread house only, bakery product photo, spoiled food
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

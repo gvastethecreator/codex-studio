@@ -12,28 +12,28 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Monumentalidad enana de tierra profunda, calor de forja y doctrina ancestral de cantería pesada.
-  form_and_line: Retículas megalíticas de pilares, geometría de masa cincelada, arcos con bandas rúnicas y bóvedas de gran carga.
+  aesthetic: Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.
+  form_and_line: Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.
   color_palette: Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black
-  lighting_setup: Brillo térmico de forja, lámparas de cristal ámbar, ritmo de antorchas y calor naranja mineral.
-  material_texture: Granito labrado, marcas de cincel, oro martillado, hierro fundido, vetas cristalinas y cuero denso.
-  render_quality: Fortaleza épica de alta fidelidad con peso material y gravedad estructural contundente.
-  spatial_distortion: None
-  atmosphere: Resiliencia ancestral, autoridad de clan y solemnidad de tierra profunda.
-  key_features: Soportes rúnicos, núcleos de forja, canales térmicos y axialidad monumental.
+  lighting_setup: Forge thermal glow, amber crystal lamps, torch rhythm and orange mineral heat.
+  material_texture: Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.
+  render_quality: Epic forge-fortress fidelity with material weight and blunt structural gravity.
+  spatial_distortion: Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.
+  atmosphere: Ancestral resilience, clan authority and deep-earth solemnity.
+  key_features: Runic supports, forge cores, thermal channels, hammer-marked metal and monumental axial weight.
   creative_brief: >-
-    Lleva cualquier forma hacia peso ancestral: pilares megaliticos, marcas de cincel, calor de forja y metal
-    martillado. Debe sentirse construido para durar siglos bajo carga, no como fortaleza enana o set heroico generico.
-    Conserva peso megalitico, calor mineral, escala de carga y solemnidad ancestral sin exigir edificio, paisaje, set,
-    criatura ni escena fija.
+    Carry any form toward ancestral weight: megalithic pillars, chisel marks, forge heat and hammered metal.
+    It should feel built to survive centuries under load, not like a generic dwarf fortress or hero set.
+    Keep megalithic weight, mineral heat, load-bearing scale and ancestral solemnity without requiring
+    building, landscape, creature or fixed scene.
 avoidRules:
-  - wood
-  - light
-  - delicate
+  - wood-dominant finish
+  - lightweight construction
+  - delicate trim
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-052.webp
 attributes:
-  negativePrompt: wood, light, delicate
+  negativePrompt: wood-dominant finish, lightweight construction, delicate trim
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -12,28 +12,30 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Walking Dead post-outbreak survivor wear, bite-mark paranoia, terminus-road desperation
-  form_and_line: Dirty layers, scavenged-onion bulk, duct-tape reinforcement, wrapped-forearm binding, boot-cut pragmatism
-  color_palette: Grey, Blood stain, mud-brown, rust, faded-olive, dried-crimson, ash-grey
-  lighting_setup: Gritty overcast grey, dust-haze shadow, emergency-orange rim, dirty practical light
+  aesthetic: Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism.
+  form_and_line: Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism
+  color_palette: Grey, mud brown, rust, faded olive, dried crimson accent, ash grey
+  lighting_setup: Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light
   material_texture: >-
-    Blood-crusted fabric, dirt-embedded denim, duct-tape patches, torn flannel, sweat-soaked cotton, leather holster
-    wear
-  render_quality: Horror, survival, walker-apocalypse realism, exhaustion-verite
-  spatial_distortion: Wounds
-  atmosphere: Scared, tough, constant-vigilance exhaustion, survival-instinct clarity, herd-approach dread
-  key_features: Backpack, fingerless gloves, duct-tape patches, bite-protection layers, relic accessory cues
+    Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains.
+  render_quality: Survival editorial realism with worn textile clarity and grounded material distress.
+  spatial_distortion: Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry.
+  atmosphere: Tough, vigilant, exhausted and resourceful without gore, zombie spectacle or weapon focus.
+  key_features: Backpack straps, fingerless gloves, duct-tape patches, bite-protection layers and relic accessory cues
   creative_brief: >-
-    Turn any input into post-outbreak survival wear: duct-taped denim, torn flannel, leather wear,
-    mud, dried crimson stains, bite-protection wraps and exhausted layering. It may imply zombie
-    danger, but should not require a weapon, sheriff hat, forest, abandoned building or survivor
-    portrait.
+    Turn any input into outbreak-era utilitywear: duct-taped denim, torn flannel, abraded leather,
+    mud, dried emergency stains, bite-protection wraps and exhausted layering. It may imply danger,
+    but should not require gore, wounds, zombies, weapons, forest, abandoned building or survivor portrait.
 avoidRules:
   - clean
+  - gore
+  - visible wound
+  - weapon focus
+  - zombie figure
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-048.webp
 attributes:
-  negativePrompt: clean
+  negativePrompt: clean, gore, visible wound, weapon focus, zombie figure
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

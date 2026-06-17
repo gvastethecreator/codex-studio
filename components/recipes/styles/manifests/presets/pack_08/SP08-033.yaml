@@ -20,18 +20,18 @@ visualDna:
   render_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
   spatial_distortion: None
   atmosphere: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
-  key_features: Gold usekh collar, kohl-line cues, uraeus or crown detail, pleated kalasiris
+  key_features: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents
   creative_brief: >-
     Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience
     beads, lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without
     requiring a pharaoh, queen, temple, desert pose, crook/flail or human eyes.
 avoidRules:
-  - pants
-  - modern
+  - contemporary tailoring dominance
+  - generic modern streetwear
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-033.webp
 attributes:
-  negativePrompt: pants, modern
+  negativePrompt: contemporary tailoring dominance, generic modern streetwear
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

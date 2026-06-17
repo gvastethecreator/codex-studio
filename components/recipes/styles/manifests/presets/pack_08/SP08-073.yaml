@@ -28,10 +28,13 @@ visualDna:
     without requiring a body, portrait, runway, room, prop, role or fixed character scene.
 avoidRules:
   - real stitched garment
+  - nude-body setup
+  - bare-skin focus
+  - body-first portrait
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-073.webp
 attributes:
-  negativePrompt: real stitched garment
+  negativePrompt: real stitched garment, nude-body setup, bare-skin focus, body-first portrait
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

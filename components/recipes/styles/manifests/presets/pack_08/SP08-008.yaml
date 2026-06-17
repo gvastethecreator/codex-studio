@@ -20,10 +20,10 @@ visualDna:
   render_quality: Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish
   spatial_distortion: Mohawk hair
   atmosphere: Angry, loud, chaotic, confrontational snarl, three-chord fury, DIY refusal
-  key_features: DIY aesthetic, hand-scrawled slogans, padlock necklace, torn fishnets
+  key_features: DIY aesthetic, illegible protest-mark texture, padlock-necklace hardware, torn graphic patches
   creative_brief: >-
     Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs,
-    slogans, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a
+    illegible protest marks, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a
     club, crime scene, body-first rebel read, mohawk or performance setting.
 avoidRules:
   - clean
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-008.webp
 attributes:
-  negativePrompt: clean, expensive, nice
+  negativePrompt: clean, expensive, nice, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

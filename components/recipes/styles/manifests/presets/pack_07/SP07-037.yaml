@@ -36,11 +36,12 @@ visualDna:
     partículas suspendidas y curvatura óptica. La biota puede aparecer, pero el estilo vive en la
     física visual del tanque.
 avoidRules:
-  - dry
+  - flat dry-air scene
+  - no refraction or water optics
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-037.webp
 attributes:
-  negativePrompt: dry
+  negativePrompt: flat dry-air scene, no refraction, no water optics, no suspended particles
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -68,7 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Professional competent polish, low-risk clarity, workplace-ready finish',
       spatial_distortion: 'None',
       atmosphere: 'Professional calm, deadline focus, competent neutrality, low-risk polish',
-      key_features: 'Blazer, structured shoulder, pointed-toe pump, leather portfolio bag',
+      key_features:
+        'Blazer, structured shoulder, tapered trouser line, polished leather accessory cues',
       creative_brief:
         'Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference room, headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.',
     },
@@ -111,12 +112,12 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_setup:
         'Controlled product-launch spotlight, soft auditorium backlight, keynote-grade haze',
       material_texture:
-        'Cotton t-shirt, merino turtleneck, selvedge denim, New Balance suede, brushed cashmere',
+        'Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere',
       render_quality: 'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
       spatial_distortion: 'None',
       atmosphere: 'Serious, visionary calm, controlled intensity, uniform-dressing certainty',
       key_features:
-        'Turtle neck/Hoodie, round-frame glasses, minimalist sneakers, no visible branding',
+        'Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding',
       creative_brief:
         'Reduce the input to tech-industry uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote polish as attitude only; do not require a stage, founder portrait, round glasses, laptop, auditorium or specific startup persona.',
     },
@@ -177,7 +178,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flashy, expensive',
     style: {
       aesthetic:
-        'Seinfeld everyday sitcom casual, 90s New York normcore, puffy jacket charm, nothing-to-prove comfort',
+        '90s sitcom normcore, everyday New York casual, dad-denim anti-fashion, nothing-to-prove comfort',
       form_and_line: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
       color_palette:
         'Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo',

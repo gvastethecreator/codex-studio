@@ -27,12 +27,13 @@ visualDna:
     palacio de hielo, catedral invernal o salon real literal. Conserva faceta, escala, refraccion fria y atmosfera
     soberana sin exigir edificio, paisaje, set, criatura ni escena fija.
 avoidRules:
-  - warm
-  - fire
+  - dominant warm palette
+  - cozy fireplace mood
+  - orange heat glow overriding glacial optics
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-061.webp
 attributes:
-  negativePrompt: warm, fire
+  negativePrompt: dominant warm palette, cozy fireplace mood, orange heat glow overriding glacial optics
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

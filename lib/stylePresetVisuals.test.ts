@@ -2,9 +2,11 @@ import { describe, expect, it } from 'vite-plus/test';
 import {
   buildPackFallbackCatalog,
   packIdFromPresetId,
+  resolveStylePresetCardImages,
   resolveStyleCatalogResultImage,
   resolveStylePreviewImage,
 } from './stylePresetVisuals';
+import { DEFAULT_GENERATION_CONFIG } from '../constants';
 
 describe('stylePresetVisuals', () => {
   it('derives pack ids from preset ids', () => {
@@ -72,5 +74,65 @@ describe('stylePresetVisuals', () => {
         packFallbackImage: '/defaults/SP12-010.webp',
       }),
     ).toBe('/defaults/SP12-010.webp');
+  });
+
+  it('builds card carousel images from generated results plus default card', () => {
+    expect(
+      resolveStylePresetCardImages({
+        resultImages: [
+          {
+            id: 'generated-1',
+            src: '/outputs/full.webp',
+            thumbnail: '/outputs/thumb.webp',
+            batchId: 'batch-1',
+            createdAt: 1,
+            config: DEFAULT_GENERATION_CONFIG,
+          },
+        ],
+        defaultImage: '/defaults/SP03-001.webp',
+        defaultImageStale: false,
+      }),
+    ).toEqual([
+      { kind: 'result', src: '/outputs/thumb.webp', label: 'Generated' },
+      { kind: 'default', src: '/defaults/SP03-001.webp', label: 'Card' },
+    ]);
+  });
+
+  it('adds default-card variants after the primary default card', () => {
+    expect(
+      resolveStylePresetCardImages({
+        resultImages: [],
+        defaultImage: '/defaults/SP03-001.webp',
+        defaultImageVariants: ['/defaults/variants/SP03-001-01.webp'],
+        defaultImageStale: false,
+      }),
+    ).toEqual([
+      { kind: 'default', src: '/defaults/SP03-001.webp', label: 'Card' },
+      { kind: 'variant', src: '/defaults/variants/SP03-001-01.webp', label: 'Variant 1' },
+    ]);
+  });
+
+  it('shows variants before a stale primary default card', () => {
+    expect(
+      resolveStylePresetCardImages({
+        resultImages: [],
+        defaultImage: '/defaults/SP03-003.webp',
+        defaultImageVariants: ['/defaults/variants/SP03-003-01.webp'],
+        defaultImageStale: true,
+      }),
+    ).toEqual([
+      { kind: 'variant', src: '/defaults/variants/SP03-003-01.webp', label: 'Variant 1' },
+      { kind: 'stale-default', src: '/defaults/SP03-003.webp', label: 'Stale' },
+    ]);
+  });
+
+  it('uses preview only when no generated or default image exists', () => {
+    expect(
+      resolveStylePresetCardImages({
+        resultImages: [],
+        defaultImageStale: false,
+        previewImage: '/preview/category.webp',
+      }),
+    ).toEqual([{ kind: 'preview', src: '/preview/category.webp', label: 'Preview' }]);
   });
 });

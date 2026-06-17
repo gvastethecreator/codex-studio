@@ -30,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
       'rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight',
     style: {
       aesthetic:
-        'Composition thumbnail grid for shot-language exploration (Alfred Hitchcock-inspired camera grammar)',
+        'Composition thumbnail grid for shot-language exploration and suspense-focused camera grammar',
       form_and_line: 'Loose value thumbnails with framing guides and camera-angle markers',
       color_palette:
         'Predominantly grayscale with optional restrained warm/cool key differentiation',
@@ -74,7 +74,7 @@ export const GENERATED_STYLE_PRESETS = [
       'human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single version',
     style: {
       aesthetic:
-        'Speculative creature-design sheet with layered anatomical logic (Terryl Whitlatch-style anatomical imagination)',
+        'Speculative creature-design sheet with layered anatomical logic and believable biological imagination',
       form_and_line: 'Construction underdrawings, skeletal overlays, muscular contour notes',
       color_palette: 'Neutral sketch tones with limited functional overlay coding',
       lighting_setup: 'Form-reading study light with selective translucency cues',

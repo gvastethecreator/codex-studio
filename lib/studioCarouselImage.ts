@@ -12,3 +12,14 @@ export function resolveStudioCarouselImage({
   if (!activeCarouselId) return modalImage;
   return images.find((image) => image.id === activeCarouselId) ?? modalImage;
 }
+
+export function resolveStudioCarouselDisplaySrc({
+  image,
+  isComparing,
+}: {
+  image: GeneratedImageWithConfig;
+  isComparing: boolean;
+}) {
+  const referenceSrc = image.config.attachments?.[0]?.dataUrl;
+  return isComparing && referenceSrc ? referenceSrc : image.src;
+}

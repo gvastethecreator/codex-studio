@@ -12,26 +12,30 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Bold alien couture, late-90s sci-fi editorial energy, interstellar-couture rebellion
+  aesthetic: Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour.
   form_and_line: Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves
   color_palette: Orange, Plastic, optic-white, safety-yellow, chrome, rubber-black, sky-blue, metallic-mint
   lighting_setup: Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill
   material_texture: Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC
-  render_quality: Weird, futuristic, couture precision, space-opera editorial spectacle
+  render_quality: Futuristic couture precision with weird synthetic material clarity and editorial spectacle.
   spatial_distortion: None
-  atmosphere: Alien, fashion, zero-g couture attitude, cosmic glamour, rebellious artificiality
+  atmosphere: Xeno-fashion attitude, zero-g couture poise, cosmic glamour and rebellious artificiality
   key_features: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring
   creative_brief: >-
-    Make the input feel designed by non-human couture logic: orange rubber,
+    Make the input feel designed by xeno-couture logic: orange rubber,
     clear plastic, chrome vinyl, structural strap lattices, strange cutouts,
-    tab-built sleeves and utility rings. Keep the Gaultier/Fifth Element
-    rebellion as a late-90s sci-fi-fashion energy, without requiring a space terminal, humanoid alien body, lab or runway.
+    tab-built sleeves and utility rings. Keep late-90s sci-fi-fashion rebellion
+    without designer/IP references, space terminal, humanoid alien body, lab or runway lock.
 avoidRules:
   - ordinary casualwear
+  - designer reference
+  - franchise likeness
+  - space terminal
+  - humanoid alien body lock
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-050.webp
 attributes:
-  negativePrompt: ordinary casualwear
+  negativePrompt: ordinary casualwear, designer reference, franchise likeness, space terminal, humanoid alien body lock
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

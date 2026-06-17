@@ -461,7 +461,7 @@ export const GENERATED_STYLE_PRESETS = [
       'tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful',
     style: {
       aesthetic:
-        'Kinetic gesture sketch language with motion-first drawing priority (Glen Keane-inspired animation rough energy)',
+        'Kinetic gesture sketch language with motion-first drawing priority and animation rough energy',
       form_and_line: 'Long sweeping arcs, repeated search lines, pressure-led scribble massing',
       color_palette: 'Monochrome drawing media on warm paper base',
       lighting_setup: 'Value implied by stroke density rather than rendered light',
@@ -641,7 +641,7 @@ export const GENERATED_STYLE_PRESETS = [
       'bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile',
     style: {
       aesthetic:
-        'Vegetation design kit with broad botanical shape-library coverage (Hayao Miyazaki-influenced natural poetry + production readability)',
+        'Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability',
       form_and_line:
         'Organic contour families spanning canopy, shrub, vine, and groundcover archetypes',
       color_palette: 'Seasonal green-driven spectrum with bark/flower accent channels',
@@ -687,7 +687,7 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version',
     style: {
       aesthetic:
-        'Value-thumbnail silhouette ideation focused on shape readability (Feng Zhu-style rapid ideation)',
+        'Value-thumbnail silhouette ideation focused on shape readability and rapid production-design iteration',
       form_and_line: 'Bold filled contours with minimal or no internal linework',
       color_palette: 'Strict 3-value grayscale (black, mid gray, white)',
       lighting_setup: 'Light logic expressed only through value grouping and rim separation',
@@ -738,7 +738,7 @@ export const GENERATED_STYLE_PRESETS = [
       'detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate',
     style: {
       aesthetic:
-        'Rough environment blockout with macro-shape worldbuilding focus (Feng Zhu and James Gurney-influenced)',
+        'Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production scale',
       form_and_line: 'Broad brush masses, low-detail edge control, minimal explicit linework',
       color_palette: 'Depth-driven warm/cool separation with fog-desaturated distance bands',
       lighting_setup: 'Single clear key direction with volumetric atmosphere indication',

@@ -1,31 +1,31 @@
 [
   {
     "presetId": "SP03-001",
-    "presetName": "Octane Render",
+    "presetName": "Octane Spectral GPU Path Tracer",
     "packId": "pack_03",
     "packName": "3D & CGI Rendering",
-    "category": "5. Render Engines",
+    "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-001.webp",
-    "jobId": "650b40ae-c318-42d4-9840-bd994aa50e26",
+    "jobId": "085390dd-4616-4a49-a793-1cc9d8fd5dc4",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-001.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.5",
+    "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-05-05T22:57:14.387Z"
+    "generatedAt": "2026-06-16T20:13:56.078Z"
   },
   {
     "presetId": "SP03-002",
-    "presetName": "Unreal Engine 5",
+    "presetName": "Unreal Engine 5 Next-Gen Real-Time Engine",
     "packId": "pack_03",
     "packName": "3D & CGI Rendering",
-    "category": "5. Render Engines",
+    "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-002.webp",
-    "jobId": "53b559a8-141b-4253-9f49-e2ba1282297a",
+    "jobId": "b458d7eb-2cee-4966-8c86-4c11ffb37ec3",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-002.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.5",
+    "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-05-05T23:03:49.972Z"
+    "generatedAt": "2026-06-16T20:32:11.507Z"
   },
   {
     "presetId": "SP03-003",
