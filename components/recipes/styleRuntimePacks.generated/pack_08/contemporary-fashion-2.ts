@@ -126,7 +126,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-018',
     name: 'Pop-Performance Tailoring',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'boring, dark',
+    negativePrompt: 'boring, dark, body idol, group choreography, backstage set, fandom crowd',
     style: {
       aesthetic:
         'Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision',
@@ -134,18 +134,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm',
       color_palette:
         'Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink',
-      lighting_setup: 'Studio-bright beauty light, color-shifting gels, high-key rim sparkle',
+      lighting_setup: 'Editorial-bright beauty light, color-shifting gels, high-key rim sparkle',
       material_texture:
         'Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones',
       render_quality:
         'Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity',
       spatial_distortion: 'None',
       atmosphere:
-        'Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy',
+        'Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy',
       key_features:
         'Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
       creative_brief:
-        'Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma and fan-energy charge as finish only, not as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.',
+        'Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.',
     },
   },
   {
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
       creative_brief:
-        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep campus, regatta or library cues as atmosphere only; do not require a college scene, human student, country-club tableau or inherited-wealth portrait.',
+        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep heritage prep cues as atmosphere only; do not require a college scene, human student, country-club tableau or inherited-wealth portrait.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

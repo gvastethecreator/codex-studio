@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-006
 packId: pack_08
-name: Cyberpunk Techwear
+name: Technical Modular Outerwear
 category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
@@ -12,18 +12,18 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Cyberpunk technical utility, stealth modular operator cues, rain-slicked futurewear
+  aesthetic: Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear
   form_and_line: Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines
   color_palette: Matte Black, Dark Grey, charcoal shadow, stealth anthracite, muted olive-black
   lighting_setup: Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light
   material_texture: Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape
-  render_quality: Technical utility precision, dystopian functional polish, shadow-ops restraint
-  spatial_distortion: Optional masked or hooded identity cues
-  atmosphere: Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint
+  render_quality: Technical utility precision, dystopian functional polish, modular restraint
+  spatial_distortion: Optional hooded volume or layered collar geometry
+  atmosphere: Dark, prepared, cool, anticipatory stillness, modular survival, urban restraint
   key_features: Utility focus, MOLLE webbing, magnetic technical closures, articulated hood
   creative_brief: >-
     Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures,
-    hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley,
+    layered hood volume and neon edge reflections. Keep the language technical and modular without requiring a city alley,
     mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.
 avoidRules:
   - vintage
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-006.webp
 attributes:
-  negativePrompt: vintage, natural, soft
+  negativePrompt: vintage, natural, soft, surveillance camera, mercenary, weapon, operator portrait
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

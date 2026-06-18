@@ -15290,3 +15290,183 @@ Auditoria subagente recibida:
 - `SP05-065..070`: riesgos principales confirmados en horror/anatomy/corridor/weapon/IP; `SP05-066`, `SP05-069`, `SP05-070` requieren overrides mas conservadores si se reintentan.
 - `SP05-091..100`: riesgo alto por IP, HUD/UI, gameboard/cards, bone throne, literal slime/shield/dungeon-lantern. Requieren safe prompts sin nombres de obra ni terminos bloqueantes en negatives.
 - `SP07/08`: P1 pendientes sugeridos por auditoria: `SP08-006`, `SP08-014`, `SP08-015`, `SP08-034`, `SP08-036`, `SP08-037`; P2/P3 pendientes: `SP07-032`, `SP07-054`, `SP07-073`, `SP07-080`, `SP08-008`, `SP08-042`, `SP08-074`, `SP08-076`, `SP08-080`, `SP07-003`, `SP07-015`.
+
+## Tanda 2026-06-17 - semantica P1 `pack_08`
+
+Refactor aplicado a 6 presets P1 de `pack_08` detectados por auditoria paralela:
+
+- `SP08-006`: `Cyberpunk Techwear` -> `Technical Modular Outerwear`; baja stealth/surveillance/operator persona y conserva modular techwear.
+- `SP08-014`: `Military Surplus` -> `Field Utility Textile`; baja militarizacion/combat narrative y conserva field utility textile.
+- `SP08-015`: `Cosplay Anime` -> `Convention Craft Costume`; baja anime/fandom replica y conserva craft/fabrication spectacle.
+- `SP08-034`: `Roman Gladiator` -> `Roman Ceremonial Regalia`; baja arena/gladiator body/combat y conserva bronze ceremonial regalia.
+- `SP08-036`: `Viking Warrior` -> `Norse Seafaring Regalia`; baja warrior/weapon/shield-wall pull y conserva Norse material culture.
+- `SP08-037`: `Wild West Cowboy` -> `Frontier Workwear`; baja cowboy portrait/standoff/weapon cliche y conserva frontier textile/workwear.
+
+Pendiente siguiente tanda P2/P3:
+
+- `SP07-003`, `SP07-015`, `SP07-032`, `SP07-054`, `SP07-073`, `SP07-080`
+- `SP08-008`, `SP08-042`, `SP08-074`, `SP08-076`, `SP08-080`
+
+## Tanda 2026-06-17 - semantica P2/P3 `pack_07/pack_08`
+
+Refactor aplicado a 11 presets P2/P3 de auditoria paralela:
+
+- `SP07-003`: baja lampara literal/sala escenificada; conserva mid-century material grammar.
+- `SP07-015`: baja cortina dominante/mansion-room literal; conserva sombra textil victoriana y opulencia.
+- `SP07-032`: reemplaza senaletica/texto por bandas de orientacion no legibles; bloquea ads/logos/maps.
+- `SP07-054`: reemplaza corridor pressure por sectional layering; bloquea hallway/corridor/camera drift.
+- `SP07-073`: cambia `camaras nodales` a `cavidades nodales` para evitar camera read; conserva cutaway funcional.
+- `SP07-080`: baja control-room/console pull; conserva retrotech tactile surface/depth recursion.
+- `SP08-008`: baja flags/slogans/political-symbols; conserva punk DIY/tartan/studs.
+- `SP08-042`: baja blood/post-blast/car-part literalidad; conserva scavenged survival couture.
+- `SP08-074`: baja mummy/horror/corpse/blood; conserva archival aged wrap texture.
+- `SP08-076`: `Slime/Goo` -> `Viscous Gel Couture`; baja disgust/lab/body-horror; conserva viscous gel surface.
+- `SP08-080`: agrega rim/smoke/velvet anchors para evitar black-card vacio; conserva shadow-form materiality.
+
+Pendiente semantico visible:
+
+- Recontar auditoria restante contra manifests actuales antes de nuevas ediciones; P1/P2/P3 de subagentes ya aplicados salvo hallazgos nuevos que aparezcan en barrido.
+
+## Tanda 2026-06-17 - semantica residual `pack_07/pack_08` y `pack_05` variants safe-label
+
+Auditoria paralela read-only encontro deuda residual concreta en `pack_07/pack_08`. Se aplicaron 9 ajustes puntuales:
+
+- `SP07-034`: baja senaletica textual a placas graficas no legibles.
+- `SP07-065`: baja `key de mesa` para evitar tabletop fijo; conserva lectura de maqueta.
+- `SP07-079`: evita black-card abstract-only agregando un silhouette anchor legible.
+- `SP07-080`: `Dimensional Console Retrotech` -> `Dimensional Retrotech Surfaces`; cambia `control logic` por `modular signal logic`.
+- `SP08-010`: baja campus/regatta/library cues a heritage prep cues.
+- `SP08-015`: baja studio/three-point rig; conserva lighting de craft controlado.
+- `SP08-029`: baja old-study/window/ink room cues; conserva archival tailoring.
+- `SP08-044`: baja manuscript-table/staff/book cues; conserva arcane robe/accessory language.
+- `SP08-051`: baja `studio-strip catchlights`; conserva controlled strip catchlights.
+
+Tambien se agregaron safe labels y motifs de generacion para nuevos bloques `pack_05` sensibles, separando labels provider-safe de nombres YAML con potencial IP-like:
+
+- `SP05-243`, `SP05-244`, `SP05-245`, `SP05-246`, `SP05-250`, `SP05-255`.
+- `SP05-252`, `SP05-253`, `SP05-257`, `SP05-258`, `SP05-259`, `SP05-260`.
+- `SP05-262`, `SP05-265`, `SP05-271`, `SP05-272`, `SP05-273`, `SP05-278`.
+
+Generacion realizada:
+
+- `qa_p05_252_260_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+- `qa_p05_243_255_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+- `qa_p05_262_278_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+- `qa_p05_097_100_safe_x4`: `generated=4 attempted=4 skipped=131 failed=0`.
+
+Lectura QA:
+
+- Mejores carousel candidates de esta ronda: `SP05-098-01`, `SP05-099-01`, `SP05-100-01`, `SP05-253-01`, `SP05-257-01`, `SP05-260-01`.
+- Usables con watchlist: `SP05-243-01`, `SP05-244-01`, `SP05-245-01`, `SP05-246-01`, `SP05-250-01`, `SP05-255-01`, `SP05-252-01`, `SP05-258-01`, `SP05-259-01`, `SP05-097-01`.
+- Rechazar/no promover como primary: `SP05-262-01`, `SP05-265-01`, `SP05-271-01`, `SP05-272-01`, `SP05-273-01`, `SP05-278-01`; todos cayeron en dark-hero/cathedral/corridor/weapon-like convergence.
+
+Siguiente ruta recomendada:
+
+- Continuar con lotes no-oscuros y safe-label antes de generar.
+- Para `dark_fantasy_and_seinen`, cambiar a object/material/environment-first antes de otro intento; no usar hero-forward base.
+
+## Tanda 2026-06-17 - `pack_05` variants safe-label `qa_p05_130_148`, `qa_p05_124_254`, `qa_p05_094_256`
+
+Auditoria paralela read-only eligio rangos `pack_05` de menor riesgo relativo. Se agregaron safe labels/motifs para:
+
+- `SP05-129`, `SP05-130`, `SP05-133`, `SP05-137`, `SP05-140`, `SP05-143`, `SP05-144`, `SP05-148`.
+- `SP05-222`, `SP05-225`, `SP05-228`, `SP05-239`.
+- `SP05-248`, `SP05-254`, `SP05-256`.
+
+Generacion realizada:
+
+- `qa_p05_130_148_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+- `qa_p05_124_254_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+- `qa_p05_094_256_safe_x6`: `generated=6 attempted=6 skipped=129 failed=0`.
+
+Lectura QA:
+
+- Mejores carousel candidates: `SP05-094-01`, `SP05-126-01`, `SP05-130-01`, `SP05-140-01`, `SP05-143-01`, `SP05-144-01`, `SP05-222-01`, `SP05-228-01`, `SP05-239-01`, `SP05-254-01`.
+- Usables con watchlist: `SP05-124-01`, `SP05-129-01`, `SP05-133-01`, `SP05-137-01`, `SP05-148-01`, `SP05-225-01`, `SP05-248-01`, `SP05-256-01`.
+
+Siguiente ruta recomendada:
+
+- Continuar con `SP05-095`, `SP05-096` y luego `SP05-228/231/236` o safe non-dark restantes.
+- Evitar por ahora rangos gore/weapon/cathedral/corridor hasta tener base object/material-first.
+
+## Tanda 2026-06-17 - `pack_05` variants safe-label `qa_p05_095_236`
+
+Se agregaron safe labels/motifs para `SP05-231` y `SP05-236`; `SP05-095/096` ya tenian safe DNA/labels.
+
+Generacion realizada:
+
+- `qa_p05_095_236_safe_x4`: `generated=4 attempted=4 skipped=131 failed=0`.
+
+Lectura QA:
+
+- Fuertes carousel candidates: `SP05-095-01`, `SP05-096-01`.
+- Usables con watchlist: `SP05-231-01`, `SP05-236-01`; ambos mantienen lectura pero siguen cerca de humanoid/corridor convergence, no promover primary sin retry object/material-first.
+
+Siguiente ruta recomendada:
+
+- Continuar con safe non-dark restantes o empezar prefactor object/material-first para mecha/dark IDs riesgosos.
+
+## Tanda 2026-06-17 - `pack_05` variants safe-label probe `qa_p05_121_125`
+
+Probe controlado de IDs previamente riesgosos pero con safe labels existentes.
+
+Generacion realizada:
+
+- `qa_p05_121_125_safe_probe_x4`: `generated=4 attempted=4 skipped=131 failed=0`.
+
+Lectura QA:
+
+- Fuertes carousel candidates: `SP05-121-01`, `SP05-122-01`.
+- Usables con watchlist alto: `SP05-123-01`, `SP05-125-01`; ambos preservan lectura, pero siguen cerca de hero/uniform/cathedral/action convergence. No promover primary sin retry object/material-first.
+
+Siguiente ruta recomendada:
+
+- Dejar `SP05-123/125` solo como carousel watchlist.
+- Para los restantes riesgosos, no insistir hero-forward; usar object/material-first o saltar a deuda stale primaria.
+
+## Tanda 2026-06-17 - semantica residual `pack_08` P2 y checkpoint visual `pack_14/15`
+
+Barrido semantico actual contra `pack_07/pack_08` no encontro P1 nuevos. Se aplicaron 4 P2 en `pack_08` para bajar props/sets repetibles sin borrar el anchor:
+
+- `SP08-047`: baja candelabra/cathedral-shadow y tono `evil`; conserva aristocratic gothic nocturne.
+- `SP08-054`: `mail curtain` -> `flexible mail drape` para evitar cortina literal.
+- `SP08-076`: `under-shelf neon` -> contained neon edge glow; evita shelf/studio prop.
+- `SP08-078`: `dark-room contrast` -> low-background contrast; evita room lock.
+
+Checkpoint visual segun coverage actual:
+
+- `pack_14`: `defaultImages=123/123`, `availableDefaultImages=123/123`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- `pack_15`: `defaultImages=137/137`, `availableDefaultImages=137/137`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+
+Lectura:
+
+- `pack_14/15` no necesitan wave visual ahora; seguir con otros packs stale antes de gastar ciclos ahi.
+- Proximo cierre semantico: correr `pack_07`, `pack_08`, `styles:quality:audit`, `styles:runtime:check`.
+
+## Tanda 2026-06-17 - primary default cards `pack_08` stale `SP08-002/026/027/035`
+
+Se empezo cierre real de stale defaults en `pack_08`, no carousel-only. IDs elegidos desde `lib/staleStyleDefaultImages.generated.ts`.
+
+Backup antes de overwrite:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_08_20260617-193641`
+
+Prompt guardrails agregados para evitar room/studio/curtain/chair drift:
+
+- `SP08-002`, `SP08-026`, `SP08-027`, `SP08-035`.
+
+Generacion:
+
+- `primary_p08_002_035_x4`: `generated=4 attempted=4 skipped=76 failed=0`.
+- Retry `primary_p08_002_027_retry_no_room`: `generated=3 attempted=3 skipped=77 failed=0`.
+
+QA:
+
+- `SP08-002.webp`: pass; streetwear exterior/edge, no room lock.
+- `SP08-026.webp`: usable; road-worn leather, no studio cloth; watchlist for person-forward.
+- `SP08-027.webp`: usable; skater context, no bedroom/studio; watchlist for person-forward.
+- `SP08-035.webp`: pass; ceremonial armor, no weapon foreground.
+
+Siguiente pack_08 primary wave:
+
+- `SP08-037`, `SP08-038`, `SP08-040`, `SP08-065`.

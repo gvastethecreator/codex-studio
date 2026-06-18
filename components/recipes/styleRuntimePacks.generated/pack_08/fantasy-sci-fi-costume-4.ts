@@ -31,18 +31,19 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-015',
-    name: 'Cosplay Anime',
+    name: 'Convention Craft Costume',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'licensed-character replica, low-effort costume, flat convention snapshot',
+    negativePrompt:
+      'licensed-character replica, low-effort costume, flat convention snapshot, named character, franchise cues, logos',
     style: {
       aesthetic:
-        'Convention-grade costume craft, stylized transformation energy, anime-adjacent fabrication spectacle',
+        'Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle',
       form_and_line:
         'Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry',
       color_palette:
         'Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues',
       lighting_setup:
-        'Studio craft lighting, three-point rig, colored gel accents, anime-style rim',
+        'Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim',
       material_texture:
         'Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex',
       render_quality: 'Detailed, playful, craftsmanship-forward, competition-grade finish',
@@ -51,7 +52,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing',
       creative_brief:
-        'Translate the input into polished cosplay craft language: styled synthetic fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic stretch surfaces and exaggerated convention-build clarity. Keep fandom transformation as fabrication energy, not as a named character, replica pose, portrait body or convention-hall scene.',
+        'Translate the input into polished cosplay craft language: styled synthetic fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic stretch surfaces and exaggerated convention-build clarity. Keep transformation as fabrication energy, not as a named character, replica pose, portrait body or convention-hall scene.',
     },
   },
   {
@@ -105,12 +106,12 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-006',
-    name: 'Cyberpunk Techwear',
+    name: 'Technical Modular Outerwear',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'vintage, natural, soft',
+    negativePrompt:
+      'vintage, natural, soft, surveillance camera, mercenary, weapon, operator portrait',
     style: {
-      aesthetic:
-        'Cyberpunk technical utility, stealth modular operator cues, rain-slicked futurewear',
+      aesthetic: 'Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear',
       form_and_line:
         'Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines',
       color_palette:
@@ -119,14 +120,12 @@ export const GENERATED_STYLE_PRESETS = [
         'Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light',
       material_texture:
         'Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape',
-      render_quality:
-        'Technical utility precision, dystopian functional polish, shadow-ops restraint',
-      spatial_distortion: 'Optional masked or hooded identity cues',
-      atmosphere:
-        'Dark, prepared, cool, anticipatory stillness, modular survival, surveillance-era restraint',
+      render_quality: 'Technical utility precision, dystopian functional polish, modular restraint',
+      spatial_distortion: 'Optional hooded volume or layered collar geometry',
+      atmosphere: 'Dark, prepared, cool, anticipatory stillness, modular survival, urban restraint',
       key_features: 'Utility focus, MOLLE webbing, magnetic technical closures, articulated hood',
       creative_brief:
-        'Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures, hooded-or-masked cues and neon edge reflections. It may imply stealth operations, but must not require a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
+        'Mechanize the input through cyberpunk techwear: bonded seams, UHMWPE composite panels, harness geometry, magnetic closures, layered hood volume and neon edge reflections. Keep the language technical and modular without requiring a city alley, mercenary scene, weapon, surveillance camera, body-first operator read or fixed character role.',
     },
   },
   {
@@ -193,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Blue monochrome, hologram azure, transmission-static white, fade-to-transparent edge, flicker-blue',
       lighting_setup:
-        'Self-lit, emissive-blue glow, projection-cone light, dark-room contrast, flicker-instability pulse',
+        'Self-lit emissive-blue glow, projection-cone light, low-background contrast and flicker-instability pulse',
       material_texture:
         'Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe',
       render_quality:
@@ -211,23 +210,24 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-080',
     name: 'Shadow Form',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'bright cheerful lighting, fully illuminated surface, high-key friendly mood',
+    negativePrompt:
+      'bright cheerful lighting, fully illuminated surface, high-key friendly mood, featureless black card',
     style: {
-      aesthetic: 'Made of shadow, void-walker mystery, darkness-incarnate presence',
+      aesthetic: 'Shadow-form materiality, void-edge mystery, darkness-as-surface presence',
       form_and_line:
         'Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape',
       color_palette: 'Black, void, abyss, pitch, ink, unlit, dark-matter',
       lighting_setup:
-        'None, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge',
+        'Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge',
       material_texture:
         'Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface',
-      render_quality: 'Scary, void, light-swallowing menace, heart-of-darkness poetry',
+      render_quality: 'Void material poetry, light-swallowing depth, readable silhouette contour',
       spatial_distortion: 'Silhouette',
-      atmosphere: 'Mystery, primeval-darkness dread, unnamed-fear stillness, shadow-realm silence',
+      atmosphere: 'Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence',
       key_features:
-        'No details, featureless void, light-absorbing depth, negative shape, silhouette-only form',
+        'Rim separation, smoke-edge texture, velvet grain, light-absorbing depth, negative shape, silhouette contour',
       creative_brief:
-        'Transform the input into shadow-form materiality: light-absorbing void, velvety black depth, rim-only edge, undefined silhouette and absence as surface. Keep menace optional and atmospheric; do not require a humanoid figure, evil character, realm scene, garment wearer or literal standing pose.',
+        'Transform the input into shadow-form materiality: light-absorbing void, velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as surface. Keep menace optional and atmospheric; do not require a humanoid figure, evil character, realm scene, garment wearer or literal standing pose.',
     },
   },
   {
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Deep Blue, Stars, burgundy, amethyst, midnight, silver-thread constellations, emerald',
       lighting_setup:
-        'Arcane glow, silver rim, manuscript-table warmth, jewel luminescence and embroidered highlight glints',
+        'Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints',
       material_texture:
         'Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay',
       render_quality: 'Magical, wise, illuminated-manuscript wonder, arcane-academia gravitas',
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         'Mysterious, powerful, forbidden-knowledge awe, incantation tension, arcane focus',
       key_features:
-        'Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and optional staff or book cues',
+        'Rune-embroidered robe, silver constellation thread, crystal pendant, deep cowl and arcane accessory cues when useful',
       creative_brief:
         'Give any input wizard-robe grammar: velvet depth, bell sleeves, hooded cowl, rune embroidery, moonstone inlay, arcane rim and silver constellations. Staff, hat or spellbook cues may appear when useful, but the preset should not require towers, libraries, sanctums, candle altars or spellcasting scenes.',
     },
@@ -364,18 +364,18 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-042',
     name: 'Post-Apocalyptic Scavenger',
     category: '4. Fantasy Sci-Fi Costume',
-    negativePrompt: 'clean, new, franchise likeness, chase vehicle, weapon focus',
+    negativePrompt: 'clean, new, franchise likeness, chase vehicle, weapon focus, blood, gore',
     style: {
       aesthetic:
         'Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth.',
       form_and_line:
         'Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry',
       color_palette:
-        'Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, bone-white road paint, desert-ochre',
+        'Dust, Brown, Rust, sun-bleached tan, oxidized copper, dark oxidized rust, chalk-white road paint, desert-ochre',
       lighting_setup:
-        'Harsh sun, heat-shimmer distortion, dust diffusion, engine-fire orange accents and post-blast haze',
+        'Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze',
       material_texture:
-        'Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim',
+        'Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim',
       render_quality:
         'Survival couture realism with gritty material hierarchy and improvised engineering clarity.',
       spatial_distortion:
@@ -385,7 +385,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Optional goggles, shoulder pad, bandolier-like straps, respirator cues and improvised armor fragments',
       creative_brief:
-        'Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain texture, car-part armor fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity ferocity without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.',
+        'Render any input as scavenged survival couture: dirty canvas, tire rubber, oxidized chain texture, scrap-panel fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity ferocity without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.',
     },
   },
   {
@@ -399,13 +399,12 @@ export const GENERATED_STYLE_PRESETS = [
         'High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents',
       color_palette: 'Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white',
       lighting_setup:
-        'Moonlight silver rim, candelabra flicker, fog-diffused ambiance, cathedral-shadow dimness',
+        'Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast',
       material_texture:
         'Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool',
       render_quality: 'Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance',
       spatial_distortion: 'None',
-      atmosphere:
-        'Evil, elegant, ancient-hunger menace, moonlit-seduction danger, aristocratic dread',
+      atmosphere: 'Elegant, ancient-hunger menace, moonlit danger and aristocratic dread',
       key_features: 'Opera cape, high collar, medallion, heraldic signet, crimson lining',
       creative_brief:
         "Style the input through vampire-aristocratic costume grammar: black velvet cape, crimson silk lining, high collar, cravat precision, onyx heraldic accents and moonlit silver edging. Keep immortal menace and old-world elegance without requiring a castle, fangs, widow's peak, portrait bust or a named vampire scene.",

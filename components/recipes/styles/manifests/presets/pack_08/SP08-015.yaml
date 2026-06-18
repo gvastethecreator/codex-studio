@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-015
 packId: pack_08
-name: Cosplay Anime
+name: Convention Craft Costume
 category: 4. Fantasy Sci-Fi Costume
 version: 1
 supportedTasks:
@@ -12,10 +12,10 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Convention-grade costume craft, stylized transformation energy, anime-adjacent fabrication spectacle
+  aesthetic: Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle
   form_and_line: Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry
   color_palette: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
-  lighting_setup: Studio craft lighting, three-point rig, colored gel accents, anime-style rim
+  lighting_setup: Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim
   material_texture: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
   render_quality: Detailed, playful, craftsmanship-forward, competition-grade finish
   spatial_distortion: None
@@ -24,8 +24,8 @@ visualDna:
   creative_brief: >-
     Translate the input into polished cosplay craft language: styled synthetic
     fiber, EVA and Worbla seam logic, thermoplastic edgework, holographic
-    stretch surfaces and exaggerated convention-build clarity. Keep fandom
-    transformation as fabrication energy, not as a named character, replica
+    stretch surfaces and exaggerated convention-build clarity. Keep transformation
+    as fabrication energy, not as a named character, replica
     pose, portrait body or convention-hall scene.
 avoidRules:
   - licensed-character replica
@@ -34,7 +34,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
 attributes:
-  negativePrompt: licensed-character replica, low-effort costume, flat convention snapshot
+  negativePrompt: licensed-character replica, low-effort costume, flat convention snapshot, named character, franchise cues, logos
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

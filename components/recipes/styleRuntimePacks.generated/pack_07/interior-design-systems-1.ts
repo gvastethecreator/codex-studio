@@ -63,7 +63,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-003',
     name: 'Mid-Century Modern',
     category: '1. Interior Design Systems',
-    negativePrompt: 'antique, victorian, industrial',
+    negativePrompt: 'antique, victorian, industrial, literal lamp, staged living room',
     style: {
       aesthetic:
         'Modernismo doméstico de mitad de siglo con optimismo atómico, sofisticación sobria y presencia escultórica habitable.',
@@ -72,7 +72,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para cohesión.',
       lighting_setup:
-        'Pools cálidos de lámpara, colgantes de época, luz de tarde filtrada y contraste suave de hospitalidad social.',
+        'Resplandor práctico cálido, colgantes de época como geometría opcional, luz de tarde filtrada y contraste suave de hospitalidad social.',
       material_texture:
         'Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.',
       render_quality:
@@ -83,7 +83,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Silueta baja, soporte cónico, calidez nogal-teca, acentos atómicos y equilibrio entre función legible y curva suave.',
       creative_brief:
-        'Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input, sin caer en pastiche vintage.',
+        'Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input, sin caer en pastiche vintage ni depender de lámparas literales o sala escenificada.',
     },
   },
   {
@@ -279,7 +279,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-015',
     name: 'Victorian Mansion',
     category: '1. Interior Design Systems',
-    negativePrompt: 'minimal, bright, open',
+    negativePrompt: 'minimal, bright, open, curtain-dominant interior, literal mansion room',
     style: {
       aesthetic:
         'Victoriano de herencia pesada, exceso ornamental y teatralidad historica contenida.',
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.',
       lighting_setup:
-        'Gaslight tenue, pools de lampara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje espeso.',
+        'Gaslight tenue, brillo aceitoso bajo, parpadeo de hogar y penumbra filtrada por sombra textil espesa.',
       material_texture:
         'Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.',
       render_quality:
@@ -297,9 +297,9 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad estable saturada por acumulacion decorativa en multiples capas.',
       atmosphere: 'Opresiva, aristocratica, nostalgica y ceremoniosa.',
       key_features:
-        'Draperia pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen overstuffed.',
+        'Sombra textil pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen overstuffed.',
       creative_brief:
-        'Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas profundas y luz baja ritual, no de una mansion concreta ni de una escena literaria cerrada.',
+        'Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas profundas y luz baja ritual, no de una mansion concreta, cortina dominante ni escena literaria cerrada.',
     },
   },
   {
@@ -333,7 +333,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-017',
     name: 'Maximalist Decor',
     category: '1. Interior Design Systems',
-    negativePrompt: 'empty, white, minimal',
+    negativePrompt: 'empty, white, minimal, literal lamp, bookshelf wall, clutter-only room',
     style: {
       aesthetic:
         'Maximalismo curatorial de alta saturacion, donde superposicion y coleccion son gramatica base.',
@@ -342,9 +342,9 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias controladas.',
       lighting_setup:
-        'Red calida de lamparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.',
+        'Red calida de brillos puntuales, luces de cuadro, reflejos de cristal y ambientes regulados por dimmer.',
       material_texture:
-        'Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro visible.',
+        'Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y bandas graficas visible.',
       render_quality:
         'Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de jerarquia.',
       spatial_distortion:
@@ -387,7 +387,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-019',
     name: 'Art Nouveau Interior',
     category: '1. Interior Design Systems',
-    negativePrompt: 'rigid rectilinear grid',
+    negativePrompt: 'rigid rectilinear grid, literal lamp, fixed period room',
     style: {
       aesthetic:
         'Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
@@ -395,7 +395,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.',
       color_palette: 'Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.',
       lighting_setup:
-        'Luz filtrada por vitral, lamparas calidas de vidrio emplomado, apliques petalo y brillo irisado suave.',
+        'Luz filtrada por vitral, brillo calido de vidrio emplomado, apliques petalo opcionales y brillo irisado suave.',
       material_texture:
         'Madera tallada, art glass iridiscente, hierro forjado, bronce patinado y marqueteria floral.',
       render_quality:
@@ -413,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-020',
     name: 'Memphis Design',
     category: '1. Interior Design Systems',
-    negativePrompt: 'boring, beige',
+    negativePrompt: 'boring, beige, studio set, 1980s living room',
     style: {
       aesthetic:
         'Postmodernismo Memphis radical, ludico e irreverente, orientado al choque visual deliberado.',
@@ -422,7 +422,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja vivo.',
       lighting_setup:
-        'Iluminacion de estudio brillante, acentos neon, bombillas cromaticas y spots expositivos de alto contraste.',
+        'Iluminacion grafica brillante, acentos neon, globos cromaticos y spots expositivos de alto contraste.',
       material_texture:
         'Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.',
       render_quality:
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Patrones bacterianos, squiggles reflectivos, modulos descentrados, bloques cromaticos y formas totemizadas.',
       creative_brief:
-        'Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a decoracion novelty ni a un living ochentoso fijo.',
+        'Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a decoracion novelty, set de estudio ni a un living ochentoso fijo.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

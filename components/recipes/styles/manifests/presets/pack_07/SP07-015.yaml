@@ -16,19 +16,19 @@ visualDna:
   form_and_line: Densidad de patron, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.
   color_palette: Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.
   lighting_setup: >-
-    Gaslight tenue, pools de lampara de aceite, parpadeo de hogar y penumbra filtrada por cortinaje
-    espeso.
+    Gaslight tenue, brillo aceitoso bajo, parpadeo de hogar y penumbra filtrada por sombra textil
+    espesa.
   material_texture: Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.
   render_quality: Densidad museografica de epoca con lectura material opulenta y atmosfera historica densa.
   spatial_distortion: Profundidad estable saturada por acumulacion decorativa en multiples capas.
   atmosphere: Opresiva, aristocratica, nostalgica y ceremoniosa.
   key_features: >-
-    Draperia pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen
+    Sombra textil pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen
     overstuffed.
   creative_brief: >-
     Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y
     opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas
-    profundas y luz baja ritual, no de una mansion concreta ni de una escena literaria cerrada.
+    profundas y luz baja ritual, no de una mansion concreta, cortina dominante ni escena literaria cerrada.
 avoidRules:
   - minimal
   - bright
@@ -36,7 +36,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-015.webp
 attributes:
-  negativePrompt: minimal, bright, open
+  negativePrompt: minimal, bright, open, curtain-dominant interior, literal mansion room
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

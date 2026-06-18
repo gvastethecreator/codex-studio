@@ -12,15 +12,15 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Dark academia tailoring, Oxford-common-room nostalgia, candlelit-scholar romance
+  aesthetic: Dark academia tailoring, archival material nostalgia, candlelit-scholar romance
   form_and_line: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
   color_palette: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
-  lighting_setup: Reading-lamp pools, stained-glass amber, fireplace glow, overcast-window grey
+  lighting_setup: Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey
   material_texture: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
-  render_quality: Intellectual, moody, library-quiet gravitas, Brideshead nostalgia
+  render_quality: Intellectual, moody, archival-quiet gravitas, old-campus nostalgia
   spatial_distortion: None
-  atmosphere: Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension
-  key_features: Wire-rim geometry, paper-cream contrast, worn-leather accents, ink-and-parchment mood
+  atmosphere: Studious, serious, archival solitude, paper-cream contemplation, secret-history tension
+  key_features: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood
   creative_brief: >-
     Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn
     buttons, elbow patches and paper-cream contrast. Keep secret-history tension without requiring a
@@ -31,7 +31,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-029.webp
 attributes:
-  negativePrompt: bright, sport
+  negativePrompt: bright, sport, library table, fountain pen, satchel, student figure
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

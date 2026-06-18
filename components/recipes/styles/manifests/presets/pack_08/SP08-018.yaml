@@ -15,15 +15,15 @@ visualDna:
   aesthetic: Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision
   form_and_line: Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm
   color_palette: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
-  lighting_setup: Studio-bright beauty light, color-shifting gels, high-key rim sparkle
+  lighting_setup: Editorial-bright beauty light, color-shifting gels, high-key rim sparkle
   material_texture: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
   render_quality: Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity
   spatial_distortion: None
-  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, fan-energy joy
+  atmosphere: Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy
   key_features: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings
   creative_brief: >-
     Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones,
-    pastel-neon color and exact coordination. Preserve synchronized charisma and fan-energy charge as finish only, not
+    pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not
     as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.
 avoidRules:
   - boring
@@ -31,7 +31,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-018.webp
 attributes:
-  negativePrompt: boring, dark
+  negativePrompt: boring, dark, body idol, group choreography, backstage set, fandom crowd
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

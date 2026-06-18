@@ -19,9 +19,9 @@ visualDna:
   color_palette: >-
     Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias
     controladas.
-  lighting_setup: Red calida de lamparas, luces de cuadro, brillos de candelabro y ambientes regulados por dimmer.
+  lighting_setup: Red calida de brillos puntuales, luces de cuadro, reflejos de cristal y ambientes regulados por dimmer.
   material_texture: >-
-    Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y lomo de libro
+    Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y bandas graficas
     visible.
   render_quality: >-
     Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de
@@ -40,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-017.webp
 attributes:
-  negativePrompt: empty, white, minimal
+  negativePrompt: empty, white, minimal, literal lamp, bookshelf wall, clutter-only room
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

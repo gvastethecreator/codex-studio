@@ -33,7 +33,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-052',
     name: 'Dwarven Megalithic Forge',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'wood-dominant finish, lightweight construction, delicate trim',
+    negativePrompt:
+      'wood-dominant finish, lightweight construction, delicate trim, literal lamp, hero forge scene',
     style: {
       aesthetic:
         'Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.',
@@ -42,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
       lighting_setup:
-        'Forge thermal glow, amber crystal lamps, torch rhythm and orange mineral heat.',
+        'Forge thermal glow, amber crystal glow, torchlike rhythm and orange mineral heat.',
       material_texture:
         'Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.',
       render_quality:
@@ -86,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-054',
     name: 'Techno-Brutalist Compression',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'clean, wide empty space',
+    negativePrompt: 'clean, wide empty space, hallway, corridor, surveillance camera',
     style: {
       aesthetic:
         'Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural persistente.',
@@ -101,13 +102,13 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality:
         'Densidad distópica de detalle alto, clutter legible y ruido visual controlado.',
       spatial_distortion:
-        'Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space intervals',
+        'Vertical stacking exaggeration with compressed sectional layering and constrained breathing-space intervals',
       atmosphere:
         'Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.',
       key_features:
         'Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y circulación constreñida.',
       creative_brief:
-        'Presiona cualquier input con apilamiento modular, servicios expuestos, cables, neon bajo y material fatigado. Debe sentirse comprimido por infraestructura de supervivencia, no sucio por decoracion.',
+        'Presiona cualquier input con apilamiento modular, servicios expuestos, cables, neon bajo y material fatigado. Debe sentirse comprimido por infraestructura de supervivencia, no sucio por decoracion ni por pasillo distopico repetido.',
     },
   },
   {

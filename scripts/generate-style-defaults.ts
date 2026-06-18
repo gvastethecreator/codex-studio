@@ -843,6 +843,41 @@ function safeImagegenStyleLabel(preset: StyleRuntimePreset) {
     'SP05-124': 'PREDATOR EGO SPORTS INTENSITY',
     'SP05-125': 'CIVIC COLOSSAL RESPONSE ACTION',
     'SP05-126': 'PARANORMAL TURBO COMEDY ACTION',
+    'SP05-129': 'DEADPAN PRESTIGE IMPACT SATIRE',
+    'SP05-130': 'PSYCHIC PAINT SURGE EMOTION',
+    'SP05-133': 'DEADPAN MAGIC FORCE COMEDY',
+    'SP05-137': 'SCIENCE BLUEPRINT OPTIMISM',
+    'SP05-140': 'ANCIENT CALM SPELL IMPACT',
+    'SP05-143': 'ELECTRIC NIGHT RAIN NOIR',
+    'SP05-144': 'LO FI SUNBAKED RHYTHM',
+    'SP05-148': 'JAZZ PULP MOTION ENSEMBLE',
+    'SP05-222': 'CIVIC MACHINE PROCEDURE',
+    'SP05-225': 'SCRAP VELOCITY RESILIENCE',
+    'SP05-228': 'PALE MACHINE ELEGY',
+    'SP05-231': 'CORAL RESONANCE LITURGY',
+    'SP05-236': 'COMPACT ATTRITION HARDWARE',
+    'SP05-239': 'BUBBLEGUM COSMIC SCALE',
+    'SP05-243': 'CLASSIC OVA QUEST TAPESTRY FANTASY',
+    'SP05-244': 'JADE CINNABAR RITUAL AUTHORITY FANTASY',
+    'SP05-245': 'WINDBLOWN PROPHECY ROMANCE FANTASY',
+    'SP05-246': 'AMBER TURQUOISE ARABESQUE ADVENTURE',
+    'SP05-248': 'FUNCTIONAL FANTASY CUISINE',
+    'SP05-250': 'QUIET VOW SACRED STONE FANTASY',
+    'SP05-255': 'GEM ENGINE COOPERATIVE MAGIC FANTASY',
+    'SP05-256': 'FOLKLORE THRESHOLD ROMANCE',
+    'SP05-252': 'MERCHANT ROAD COMFORT FANTASY',
+    'SP05-253': 'HERBARIUM COURT HEALING FANTASY',
+    'SP05-254': 'CELESTIAL ROMANCE OMEN FANTASY',
+    'SP05-257': 'MOONLIT PRACTICAL DIPLOMACY FANTASY',
+    'SP05-258': 'UTILITY CRAFT PARTY QUEST FANTASY',
+    'SP05-259': 'STORYBOOK COURAGE CROWN FANTASY',
+    'SP05-260': 'PASTEL COMPANION QUEST FANTASY',
+    'SP05-262': 'QUIET MORAL SUSPENSE REALISM',
+    'SP05-265': 'ROSE BLACK LACQUER GOTHIC ROMANCE',
+    'SP05-271': 'SUN BLEACHED CONCRETE MYSTERY',
+    'SP05-272': 'RAIN POLISHED MACHINE MOURNING',
+    'SP05-273': 'MOONLIT ECOLOGICAL CALM',
+    'SP05-278': 'CRYSTALLINE LONELINESS MINERAL VOID',
   };
   return labels[preset.id] ?? sanitizeStylePromptName(preset.name).toUpperCase();
 }
@@ -1940,6 +1975,357 @@ function presetMotifForPrompt(
   }
   if (preset.id === 'SP05-126') {
     return 'Use an original paranormal turbo comedy style-card with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil; no famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke.';
+  }
+  if (preset.id === 'SP05-129') {
+    return 'Use an original deadpan prestige impact satire style-card with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry; no named franchise likeness, bald hero copy, fist foreground, city destruction gore, weapon, or readable text.';
+  }
+  if (preset.id === 'SP05-130') {
+    return 'Use an original psychic paint-surge style-card with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload; no named franchise likeness, school uniform copy, city fight, weapon, readable symbols, or angry monster face.';
+  }
+  if (preset.id === 'SP05-133') {
+    return 'Use an original deadpan magic-force comedy style-card with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color; no named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, or magic-circle text.';
+  }
+  if (preset.id === 'SP05-137') {
+    return 'Use an original science-blueprint optimism style-card with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery; no named franchise likeness, readable formulas, lab classroom, weapon, or tool pile.';
+  }
+  if (preset.id === 'SP05-140') {
+    return 'Use an original ancient-calm spell-impact style-card with pale sky memory, precise arcane geometry, soft cloth, and understated authority; no named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, or party lineup.';
+  }
+  if (preset.id === 'SP05-143') {
+    return 'Use an original electric night-rain noir style-card with wet glass, cyan thread arcs, masked negative space, and lonely secrecy; no named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, or alley corridor lock.';
+  }
+  if (preset.id === 'SP05-144') {
+    return 'Use an original lo-fi sunbaked rhythm style-card with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop; no named franchise likeness, sword foreground, duel pose, dojo corridor, readable graffiti, or samurai costume copy.';
+  }
+  if (preset.id === 'SP05-148') {
+    return 'Use an original jazz-pulp motion style-card with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere; no named franchise likeness, gun foreground, blood, train-car corridor lock, readable signage, or gang lineup.';
+  }
+  if (preset.id === 'SP05-222') {
+    return 'Use an original civic machine procedure style-card with maintenance grids, utility color, practical engineering, wet asphalt reflections, and procedural humor; no named franchise likeness, cockpit UI, drone weapon, robot battle, readable paperwork, or garage corridor lock.';
+  }
+  if (preset.id === 'SP05-225') {
+    return 'Use an original scrap-velocity resilience style-card with dented alloy, spark trails, compact fast motion, and rough human-made machine grit; no named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, or gore.';
+  }
+  if (preset.id === 'SP05-228') {
+    return 'Use an original pale machine elegy style-card with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments; no named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, or cockpit UI.';
+  }
+  if (preset.id === 'SP05-231') {
+    return 'Use an original coral resonance liturgy style-card with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale; no named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, or body-horror gore.';
+  }
+  if (preset.id === 'SP05-236') {
+    return 'Use an original compact attrition hardware style-card with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality; no named franchise likeness, gun foreground, tank copy, soldier portrait, battlefield gore, readable markings, or garage corridor lock.';
+  }
+  if (preset.id === 'SP05-239') {
+    return 'Use an original bubblegum cosmic scale style-card with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos; no named franchise likeness, cockpit, weapon, mecha battle, readable UI, or toy-logo composition.';
+  }
+  if (preset.id === 'SP05-243') {
+    return 'Use an original classic OVA quest tapestry style-card with noble color blocks, painted epic light, and aged cel-fantasy depth; no named franchise likeness, fixed ensemble lineup, weapon foreground, readable banner, or castle hallway lock.';
+  }
+  if (preset.id === 'SP05-244') {
+    return 'Use an original jade-cinnabar ritual authority style-card with solemn vertical protocol, court textile geometry, and ceremonial calm; no named franchise likeness, imperial costume copy, throne-room lock, weapon, or readable insignia.';
+  }
+  if (preset.id === 'SP05-245') {
+    return 'Use an original windblown prophecy romance style-card with carmine sky, angular destiny shapes, and emotional forward motion; no named franchise likeness, tarot card, mecha copy, weapon-first pose, or readable symbol.';
+  }
+  if (preset.id === 'SP05-246') {
+    return 'Use an original amber-turquoise arabesque adventure style-card with jewel ornament, warm desert rhythm, and curved route energy; no named franchise likeness, market aisle, caravan clutter, labyrinth corridor, readable sign, or map.';
+  }
+  if (preset.id === 'SP05-248') {
+    return 'Use an original functional fantasy cuisine style-card with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow; no named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, or kitchen clutter.';
+  }
+  if (preset.id === 'SP05-250') {
+    return 'Use an original quiet vow sacred-stone fantasy style-card with ethical calm, soft vow light, and grounded holy geometry; no named franchise likeness, paladin armor copy, weapon, temple hallway, readable scripture, or throne pose.';
+  }
+  if (preset.id === 'SP05-255') {
+    return 'Use an original gem-engine cooperative magic style-card with bright upward energy, chromatic teamwork, and rune-mechanical glow; no named franchise likeness, magic-knight costume copy, group lineup, weapon foreground, readable glyphs, or logo.';
+  }
+  if (preset.id === 'SP05-256') {
+    return 'Use an original folklore-threshold romance style-card with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion; no named franchise likeness, red-robed character copy, shrine hallway, sword, demon attack, readable talisman text, or well prop lock.';
+  }
+  if (preset.id === 'SP05-252') {
+    return 'Use an original warm travel-comfort fantasy style-card with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere; no named franchise likeness, market corridor, tavern clutter, readable sign, or banquet table lock.';
+  }
+  if (preset.id === 'SP05-253') {
+    return 'Use an original botanical healing fantasy style-card with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces; no named franchise likeness, laboratory room lock, bookshelf, readable label, or crowded table.';
+  }
+  if (preset.id === 'SP05-254') {
+    return 'Use an original celestial romance omen style-card with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow; no named franchise likeness, couple copy, school uniform, readable sigil, shrine hallway, or tarot/card prop.';
+  }
+  if (preset.id === 'SP05-257') {
+    return 'Use an original moonlit practical diplomacy fantasy style-card with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token; no named franchise likeness, market aisle, merchant stall clutter, readable sign, or map.';
+  }
+  if (preset.id === 'SP05-258') {
+    return 'Use an original utility craft party-quest style-card with competent hands, small functional craft, warm tool-metal accents, and humble support energy; no named franchise likeness, toolbox pile, workshop table lock, weapon, or readable label.';
+  }
+  if (preset.id === 'SP05-259') {
+    return 'Use an original storybook courage fantasy style-card with soft scale, simple crown motif, moral warmth, vulnerable bravery, and clear fable shapes; no named franchise likeness, child-copy design, castle hallway, royal portrait, or readable emblem.';
+  }
+  if (preset.id === 'SP05-260') {
+    return 'Use an original pastel companion quest style-card with candy-clean light, shared joy, soft abundance, and camaraderie color; no named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, or readable sign.';
+  }
+  if (preset.id === 'SP05-262') {
+    return 'Use an original quiet moral suspense style-card with ordinary matte danger, restrained realism, subdued color, and one readable human-scale anchor; no named franchise likeness, school corridor, courtroom, weapon, blood, readable text, or cinematic IP pose.';
+  }
+  if (preset.id === 'SP05-265') {
+    return 'Use an original rose-black lacquer gothic romance style-card with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic figure or object; no named franchise likeness, coffin, blood, weapon, cathedral hallway, or readable crest.';
+  }
+  if (preset.id === 'SP05-271') {
+    return 'Use an original sun-bleached concrete mystery style-card with plant-softened architecture, quiet anomaly, warm dust, and one simple figure or object; no named franchise likeness, institutional corridor, classroom, hospital, readable sign, or empty landscape.';
+  }
+  if (preset.id === 'SP05-272') {
+    return 'Use an original rain-polished machine mourning style-card with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor; no named franchise likeness, interior investigation room, gun, gore, readable UI, or police signage.';
+  }
+  if (preset.id === 'SP05-273') {
+    return 'Use an original moonlit ecological calm style-card with pale living haze, quiet biosphere glow, and one readable organic anchor; no named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, or readable label.';
+  }
+  if (preset.id === 'SP05-278') {
+    return 'Use an original crystalline loneliness style-card with mineral fractures, clean pale void, emotional isolation, and one readable crystal/figure silhouette; no named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, or readable symbol.';
+  }
+  if (preset.id === 'SP08-002') {
+    return 'Use an original streetwear hype style-card with oversized garment mass, sneaker-scale detail, reflective hits, and outdoor drop-culture energy; no bedroom, studio room, chair, curtain, clothing rack, readable branding, logo, or storefront ad.';
+  }
+  if (preset.id === 'SP08-026') {
+    return 'Use an original road-worn leather utility style-card with chrome hardware, grease-black leather, denim texture, and open-road material grit; no indoor room, studio backdrop, curtain, bed, chair, intimidation pose, gang insignia, readable patch, or motorcycle-club scene.';
+  }
+  if (preset.id === 'SP08-027') {
+    return 'Use an original skate-zine casual style-card with hoodie mass, grip-tape grit, suede scuffs, concrete ledge energy, and relaxed motion; no bedroom, studio room, chair, curtain, fisheye camera, logo, skatepark lock, or parking-lot lock.';
+  }
+  if (preset.id === 'SP08-035') {
+    return 'Use an original ceremonial lacquer armor style-card with silk lacing, crest geometry, layered shoulder panels, and disciplined red-black-gold craft; no weapon, combat pose, castle interior, bamboo forest, named warrior, or human face closeup.';
+  }
+  if (preset.id === 'SP08-037') {
+    return 'Use an original frontier workwear style-card as garment-first portrait crop: headless or face-minimized mannequin/torso anchor, duster sweep, oilskin leather, denim, saddle-tan dust, bandana folds, brass hardware, and boot-leather rhythm; no cowboy portrait, gunslinger, holster focus, pistol, rope foreground, spurs, horse, saloon, western street standoff, desert hero pose, studio room, chair, curtain, lamp, market aisle, library aisle, or camera prop.';
+  }
+  if (preset.id === 'SP08-038') {
+    return 'Use an original 1970s disco style-card with wide lapels, flare geometry, platform-sole rhythm, polyester sheen, gold accents, mirror-ball sparkle, and one lively fashion anchor; no literal club corridor, stage performance, named venue, band, microphone, crowd scene, studio room, chair, curtain, lamp, readable logo, or camera prop.';
+  }
+  if (preset.id === 'SP08-040') {
+    return 'Use an original retro EVA suit style-card as suit-engineering portrait crop: blank beta-cloth torso, bubble-helmet edge, gold visor reflection, gasket rings, hose rhythm, glove bulk, aluminum connectors, and vacuum-like light; no readable agency logo, flag patch, national emblem, mission patch, astronaut hero pose, lunar reenactment, spaceship corridor, control room, museum exhibit, helmet-only closeup, studio room, chair, curtain, lamp, or camera prop.';
+  }
+  if (preset.id === 'SP08-065') {
+    return 'Use an original neon light suit style-card as tech-fashion garment crop: mannequin/torso-first anchor, matte black panels, cyan circuit tracery, modular seams, emitter-plate glow, and luminous piping on fabric; no face-forward model, superhero pose, bodysuit pinup, franchise icon, helmet visor silhouette, held disc, weapon, floor-grid arena, neon vehicle, cyberpunk alley, studio room, chair, curtain, lamp, market aisle, library aisle, or camera prop.';
+  }
+  if (preset.id === 'SP07-003') {
+    return 'Use an original mid-century modern style-card with one readable built/furniture-detail anchor, low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture, and atomic-era optimism; no staged living room formula, sofa-and-lamp scene, dominant chair, curtain wall, showroom corner, readable poster, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-015') {
+    return 'Use an original Victorian mansion style-card with one readable ornate architectural/material anchor, dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight, and low ritual glow; no literal mansion room, curtain-dominant composition, chair-and-lamp setup, fireplace tableau, corridor, library aisle, market aisle, readable portrait, ghost story scene, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-032') {
+    return 'Use an original metropolitan transit patina style-card with one readable infrastructure anchor, chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes, and damp fluorescent pressure; no readable text, map, logo, ad, subway-car hero, long empty corridor, market aisle, library aisle, fantasy hall, camera prop, or featureless abstraction.';
+  }
+  if (preset.id === 'SP07-035') {
+    return 'Use an original bibliographic classicism style-card with one readable archival material/built-detail anchor, leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina, and solemn preservation logic; no literal library aisle, bookstore corridor, reading table, desk lamp, open book prop, hand holding book, readable text, market aisle, fantasy hall, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-038') {
+    return 'Use an original ossuary-subterranean style-card with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone, and reverent archaeological pressure around one readable built fragment; no human remains, skulls, bones, gore, horror display, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-054') {
+    return 'Use an original techno-brutalist compression style-card with one readable megastructure section anchor, stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow, and constrained vertical pressure; no hallway/corridor, surveillance camera, fantasy hall, cyberpunk alley, market aisle, library aisle, room-with-chair setup, readable signage, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-039') {
+    return 'Use an original data-center grid style-card with one readable machine-infrastructure anchor, modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression, and powder-coated surfaces; no server-room aisle lock, long corridor, surveillance camera, monitor wall, readable labels, UI, office room, chair, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-043') {
+    return 'Use an original karesansui dry-abstraction style-card with one readable raked mineral landscape anchor, disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows, and austere containment; no spa decor, pond, lush garden, blank texture field, zen room, chair, lantern prop, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-047') {
+    return 'Use an original topiary wayfinding style-card with one readable clipped-hedge spatial anchor, living-wall mass, partial route pressure, gravel node, controlled sightline break, and playful disorientation; no literal maze map, fantasy garden gate, statue centerpiece, open field, market aisle, library aisle, corridor tunnel, camera prop, readable signage, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-052') {
+    return 'Use an original dwarven megalithic forge style-card with one readable load-bearing stone/metal anchor, chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow, and blunt structural gravity; no dwarf character, hero forge scene, weapon, hammer prop, fantasy hall corridor, castle throne room, readable runes/text, market aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-055') {
+    return 'Use an original confectionery surrealism style-card with one readable candy-architecture material anchor, icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights, and playful edible construction; no photoreal food macro, dessert table, kid party, candy mascot, fairy-tale street, castle, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-060') {
+    return 'Use an original haunted-toon deformation style-card with one readable warped architectural/object anchor, elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks, and playful spooky graphic rhythm; no realistic horror, haunted mansion literal, Halloween set, corridor, fantasy hall, monster, gore, chair, curtain, lamp, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-073') {
+    return 'Use an original subterranean bio-cutaway style-card with one readable sectional architecture/soil anchor, capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets, and functional internal circulation as a designed cross-section; no ants, insects, insect colony, ant farm, larvae/eggs, camera equipment, display case, creature focus, gore, body anatomy, flat exterior view, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-075') {
+    return 'Use an original impossible-circulation optical-paradox style-card with one readable impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework, and connected floor-wall-ceiling transitions; no generic staircase-only scene, fantasy castle, library aisle, market aisle, corridor tunnel, readable text, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-078') {
+    return 'Use an original cybernetic hive infrastructure style-card with one readable modular machine-architecture anchor, cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids, and oppressive collective utility; no named faction, creature, spaceship corridor, cockpit/control room, vehicle, surveillance camera, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-079') {
+    return 'Use an original absolute-black monolith style-card with one readable severe vertical architectural anchor, matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry, and symbolic restraint; no recognizable cinematic monolith proportions, sci-fi portal, space scene, featureless black rectangle only, corridor, room set, readable text, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-080') {
+    return 'Use an original dimensional retrotech surface style-card with one readable recursive wall-surface anchor, circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow, braided cabling, and impossible depth; no named franchise interior, iconic control room, central console, single central prop, spaceship cabin, corridor, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-001') {
+    return 'Use an original modern-minimalist style-card with one readable architectural detail anchor, flush planes, hidden joints, warm mineral white, soft daylight, microcement, pale oak accent, and active negative space; no showroom living room, chair focus, sofa, lamp, curtain, plant prop, kitchen appliance, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-002') {
+    return 'Use an original industrial-loft style-card with one readable tectonic infrastructure anchor, exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper, reclaimed wood, and controlled utilitarian patina; no cozy living-room setup, chair/sofa focus, pendant-lamp hero, curtain, carpet, wallpaper, market aisle, library aisle, corridor, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-004') {
+    return 'Use an original Scandinavian hygge style-card with one readable low architectural/material anchor, pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light, and calm tactile refuge; no staged living room, chair/sofa focus, blanket pile as only subject, lamp hero, curtain wall, fireplace scene, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-005') {
+    return 'Use an original bohemian-eclectic style-card with one readable crafted interior/material anchor, woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm, and curated tactile density; no chaotic junk pile, plant-only scene, chair/sofa focus, curtain-dominant setup, lamp hero, market aisle, library aisle, corridor, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-006') {
+    return 'Use an original brutalist-architecture style-card with one readable raw concrete mass anchor, board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette, and institutional tectonic gravity; no glass curtain wall dominance, warm wood room, chair/sofa setup, corridor tunnel, market aisle, library aisle, camera prop, readable signage, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-007') {
+    return 'Use an original art-deco architecture style-card with one readable geometric ornament/built anchor, stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass, marble, and axial glamour; no hotel lobby formula, chair/sofa focus, chandelier/lamp hero, nightclub stage, readable signage, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-008') {
+    return 'Use an original Japanese-zen style-card with one readable modular material/spatial anchor, low grid, translucent paper filter, raw wood, matte clay, tatami-green accent, asymmetric void, and contemplative quiet; no literal temple room, tea set prop, lantern hero, chair, curtain, dry-garden duplicate, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-009') {
+    return 'Use an original gothic-revival style-card with one readable pointed-arch/stone-tracery anchor, carved limestone, ribbed verticals, muted stained-glass color projection, cold iron, and solemn upward pull; no horror ruin, cathedral nave corridor, candle/lamp hero, pew rows, readable religious icon/text, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-010') {
+    return 'Use an original futuristic-pod style-card with one readable continuous shell/interior module anchor, cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold, and smart matte-gloss surfaces; no spaceship cockpit, control room, central console, chair focus, bed pod scene, corridor tunnel, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-011') {
+    return 'Use an original luxury-penthouse style-card with one readable premium architectural/material anchor, bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints, indirect light, and controlled editorial spacing; no skyline/view dependency, sofa/chair focus, lamp hero, curtain wall, hotel lobby, staged living room, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-012') {
+    return 'Use an original rustic-cabin style-card with one readable heavy natural-material anchor, hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow, and protective compact mass; no literal cabin exterior, fireplace-only tableau, chair/sofa focus, plaid blanket pile as only subject, lamp hero, taxidermy, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-013') {
+    return 'Use an original Mediterranean-villa style-card with one readable lime-plaster/terracotta architectural anchor, soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce, and airy shadow transition; no postcard villa view, pool resort scene, dining table, chair focus, curtain, lamp hero, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-014') {
+    return 'Use an original cyberpunk-apartment style-card with one readable improvised tech-infrastructure anchor, dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets, and functional nocturnal clutter; no gamer desk, monitor wall, readable UI/text, weapon, person, chair/bed focus, alley/street scene, market aisle, library aisle, corridor tunnel, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-016') {
+    return 'Use an original Bauhaus-interior style-card with one readable functional geometry/material anchor, circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass, bent wood, and rational proportional order; no chair focus, classroom poster, readable text, lamp hero, cluttered room, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-017') {
+    return 'Use an original maximalist-decor style-card with one readable curated display/material anchor, jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces, and clear hierarchy through excess; no bookshelf wall, lamp hero, clutter-only room, chair/sofa focus, curtain-dominant scene, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-018') {
+    return 'Use an original farmhouse-chic style-card as close material/built-detail composition: warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge, beadboard rhythm, and refined rural utility; no hallway view, linen cabinet, kitchen sink/appliance scene, dining table, chair focus, pendant-lamp hero, flower bucket centerpiece, TV farmhouse cliche, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-019') {
+    return 'Use an original art-nouveau interior style-card with one readable organic architectural/material anchor, whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood, peacock/sage accents, and integrated vegetal continuity; no fixed period room, lamp hero, chair focus, literal flower bouquet, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-020') {
+    return 'Use an original Memphis-design style-card with one readable postmodern object/spatial anchor, squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern, bubblegum pink, teal, yellow, and playful totem geometry; no 1980s living room, studio set, chair/sofa focus, lamp hero, readable text, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-021') {
+    return 'Use an original deconstructivist architecture style-card with one readable folded-metal/faceted built anchor, fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts, and controlled spatial instability; no named landmark, museum postcard, generic corridor, city street, glass box, symmetrical facade, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-022') {
+    return 'Use an original neoclassical style-card with one readable civic stone-detail anchor, column rhythm, pediment geometry, stepped plinth, white marble, pale limestone, bronze accent, and strict axial authority; no capitol/courthouse copy, tourist facade postcard, statue hero, flag, readable inscription, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-023') {
+    return 'Use an original parametric-architecture style-card with one readable morphogenetic surface anchor, continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints, and computational precision; no generic airport hall, shopping mall, chair/sofa focus, corridor tunnel, market aisle, library aisle, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-024') {
+    return 'Use an original Victorian-painted-lady style-card with one readable painted carpenter-detail anchor, gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings, and narrow vertical craft; no preserved street postcard, full house exterior default, porch-chair scene, readable sign, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-025') {
+    return 'Use an original Bauhaus-architecture style-card with one readable rational building-detail anchor, clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal, and functional asymmetry; no generic office block, chair/sofa focus, decoration, roof tiles, market aisle, library aisle, corridor, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-026') {
+    return 'Use an original Googie-architecture style-card with one readable atomic-age canopy/signage-form anchor, boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass, and optimistic motion; no diner/roadside postcard, readable sign text, car hero, gas station scene, chair/sofa focus, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-027') {
+    return 'Use an original Tudor-revival style-card with one readable half-timber architectural-detail anchor, dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones, and protective historic warmth; no cottage postcard, village street, fireplace-only interior, chair/sofa focus, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-028') {
+    return 'Use an original sustainable green architecture style-card with one readable building-envelope or material-detail anchor, layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues, and calm ecological optimism; no greenwashing corporate facade, generic plant wall, park landscape, rendered office lobby, market aisle, library aisle, corridor, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-029') {
+    return 'Use an original adobe and pueblo style-card with one readable earth-material architectural-detail anchor, thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments, and handmade shade; no tourist pueblo postcard, pottery/table prop focus, desert scenic overlook, market aisle, library aisle, corridor, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-030') {
+    return 'Use an original Soviet constructivist style-card with one readable machine-civic architectural or graphic-structure anchor, raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing, and industrial momentum; no propaganda poster, readable text, flags, named monument, consumer signage, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-031') {
+    return 'Use an original orbital utility habitat style-card with one readable compact spacecraft-module detail anchor, circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams, clipped utility lighting, and zero-gravity storage logic; no cockpit/control-room hero, astronaut/person, readable labels, logos, UI screens, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-033') {
+    return 'Use an original conservatory bioclimate style-card with one readable greenhouse structural-detail anchor, glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues, and living climate control; no plant store, market aisle, library aisle, dry dark interior, chair/table focus, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-034') {
+    return 'Use an original institutional ruin patina style-card as a close architectural material study, with one readable decayed administrative-wall or service-counter detail anchor, delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text, and sober civic abandonment; no people, guard, inspector, character, hospital/asylum horror, long corridor, gore, creature, readable signage, furniture focus, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-036') {
+    return 'Use an original casino sensory grid style-card as a tight empty architectural detail, with one readable carpet-ceiling-mirror junction or luminous wall pattern anchor, red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry, and attention-trap overload at thumbnail scale; no people, staff, hands, slot machine, kiosk, console, terminal, display screen, playing cards, chips, gambling table, casino floor crowd, readable signage, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-037') {
+    return 'Use an original immersive aquarium optics style-card as a close material-light study, with one readable thick acrylic panel edge or water-window detail anchor, blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes, and submerged viewing physics; no people, diver, visitor, camera prop, shark/fish hero, aquarium tunnel corridor, dry-air interior, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-040') {
+    return 'Use an original arboreal craft shelter style-card with one readable elevated hand-built joinery anchor, weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light, and plausible suspended structure; no children treehouse postcard, adventure scene, person, ground-level hut, fantasy forest, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-041') {
+    return 'Use an original formal topiary axis style-card with one readable clipped-hedge or parterre-detail anchor, mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth, and strict landscape precision; no wild meadow, messy garden, palace postcard, fountain hero, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-042') {
+    return 'Use an original cottage bloom layering style-card with one readable overflowing planting-border anchor, layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms, and intimate domestic abundance; no formal parterre, concrete patio, porch furniture, market aisle, library aisle, corridor, person, camera prop, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-044') {
+    return 'Use an original postindustrial ecological promenade style-card with one readable reclaimed-edge material anchor, weathered concrete, corten steel, gravel, resilient grasses, modular retention bands, and civic ecological reuse; no wild forest, heroic walkway scene, people, bikes, retail promenade, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-045') {
+    return 'Use an original xeriscape climate grammar style-card with one readable water-wise planting-detail anchor, agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone, and hard sun; no lawn, wet lush garden, desert postcard, cactus character, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-046') {
+    return 'Use an original water-horizon hospitality style-card as a tight material-light study, with one readable infinity-edge waterline or shallow-water terrace edge anchor, turquoise reflection, warm wet stone, teak trim, tropical leaf shadow, and slow luxury atmosphere; no cabana, sofa, lounge chair, bed, furniture focus, hotel room, pool party, people, brand resort, beach postcard, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-048') {
+    return 'Use an original elevated biophilic terrace style-card as a cropped planter-infrastructure detail, with one readable raised planter edge or railing-light anchor, modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel, and airy suspended comfort; no blanket, cushion, sofa, chair, lounge furniture, literal rooftop lounge, skyline-view terrace, ground patio, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-049') {
+    return 'Use an original tournament turf strategy style-card as a cropped surface-design study, with one readable precision-turf and raked-sand edge anchor, striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour, and competitive surface control; no flag, pole, cup marker, golfers, players, stadium, generic park lawn, weeds, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-050') {
+    return 'Use an original botanical iron glasshouse style-card with one readable iron-and-glass conservatory detail anchor, ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass, and layered tropical leaves; no exterior garden, tourist greenhouse room, people, benches, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-051') {
+    return 'Use an original verdant elven sanctuary style-card with one readable biocentric architectural-detail anchor, branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow, moss green, and lyrical sacred calm; no licensed fantasy location, elf/person, weapon, throne room, long corridor, market aisle, library aisle, industrial block, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-053') {
+    return 'Use an original suspended fortress sublime style-card with one readable floating-mass undercut or sky-structure detail anchor, airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light, and coherent impossible gravity; no literal castle, ground-level building, waterfall postcard, dragon, person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-056') {
+    return 'Use an original abyssal deco pressure style-card with one readable underwater deco-engineering detail anchor, pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation, bioluminescent wayfinding glow, and leak signatures; no cheerful open sky, dry luxury lobby, diver/person, submarine cockpit, readable signage, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-057') {
+    return 'Use an original neo-victorian steamwork style-card with one readable brass-pipe or boiler-wall detail anchor, riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam, gear nodes, and plausible mechanical hierarchy; no vehicle/train hero, weapon, person, control room, market aisle, library aisle, corridor, clean energy lab, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-058') {
+    return 'Use an original prismatic mineral megastructure style-card with one readable crystalline architectural-mass detail anchor, faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges, and monumental mineral logic; no temple postcard, single spire hero, ordinary brick, wood cabin, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-059') {
+    return 'Use an original bermed round-door pastoral style-card with one readable round-threshold or sod-roof material detail anchor, lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass, and intimate low domestic scale; no licensed hobbit-hole copy, village postcard, people, table/chair focus, tall square house, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-061') {
+    return 'Use an original cryomorphic palace geometry style-card with one readable glacial architectural-detail anchor, faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes, and sovereign winter monumentality; no literal palace hall, throne room, warm fireplace, orange heat glow, person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-062') {
+    return 'Use an original canopy rope vernacular style-card with one readable elevated rope-and-wood joinery anchor, catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light, and communal suspended craft logic; no tribe/person, jungle village postcard, polished metal dominance, ground hut, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-063') {
+    return 'Use an original sepulchral civic monumentalism style-card with one readable severe stone-threshold or sealed-chamber detail anchor, black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids, and solemn ritual civic scale; no cemetery scene, skull/gore, monster, person, cozy living room, lush garden, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-064') {
+    return 'Use an original aerostatic cloud retrofuture style-card with one readable floating-platform or satin-alloy ring detail anchor, pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze, and elegant suspended balance; no airport terminal, flat ground city, terrestrial baseplate, people, aircraft cockpit, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-065') {
+    return 'Use an original papercraft diorama construction style-card with one readable folded paper architecture-detail anchor, visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency, fiber texture, and soft model shadows; no photoreal full-scale scene, museum vitrine, city miniature postcard, people, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-066') {
+    return 'Use an original studded ABS brick system style-card with one readable toy-brick modular detail anchor, visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking, and baseplate logic; no brand logo, minifigure/person, photoreal masonry, full-scale construction site, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-067') {
+    return 'Use an original wet-sand ephemeral modeling style-card with one readable damp-sand sculptural detail anchor, bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges, and fragile tide-worn form; no hard carved stone, permanent masonry, beach crowd, person, toy plastic, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-068') {
+    return 'Use an original corrugated cardboard improvisation style-card with one readable exposed-corrugation construction detail anchor, kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework, and patched low-tech load paths; no playroom scene, child/person, toy clutter, solid wall, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-069') {
+    return 'Use an original pressurized vinyl playform style-card with one readable inflatable vinyl material-detail anchor, rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware, and temporary soft-volume geometry; no bounce castle, amusement park scene, children/person, hard edges, market aisle, library aisle, corridor, or empty abstract tile.';
   }
   if (preset.id === 'SP03-028') {
     return 'Use one freeform class-A CAD test surface or flowing curvature sculpture with zebra reflection bands and G2 continuity; no chair, seat, furniture, vehicle, showroom, lab room, circular wall light, studio setup, product pedestal, or interior scene.';

@@ -14,16 +14,16 @@ tags:
 visualDna:
   aesthetic: Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth.
   form_and_line: Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry
-  color_palette: Dust, Brown, Rust, sun-bleached tan, oxidized copper, blood-rust, bone-white road paint, desert-ochre
-  lighting_setup: Harsh sun, heat-shimmer distortion, dust diffusion, engine-fire orange accents and post-blast haze
-  material_texture: Dirty canvas, torn leather, salvaged tire rubber, rusty chain, car-part armor, gauze wraps, weathered denim
+  color_palette: Dust, Brown, Rust, sun-bleached tan, oxidized copper, dark oxidized rust, chalk-white road paint, desert-ochre
+  lighting_setup: Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze
+  material_texture: Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim
   render_quality: Survival couture realism with gritty material hierarchy and improvised engineering clarity.
   spatial_distortion: Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks.
   atmosphere: Tough resource-scarcity tension, wind-burned solitude and ferocious repair culture.
   key_features: Optional goggles, shoulder pad, bandolier-like straps, respirator cues and improvised armor fragments
   creative_brief: >-
-    Render any input as scavenged survival couture: dirty canvas, tire rubber, rusty chain texture,
-    car-part armor fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity
+    Render any input as scavenged survival couture: dirty canvas, tire rubber, oxidized chain texture,
+    scrap-panel fragments, gauze wraps, oxidized metal and dust-choked layering. Keep scarcity
     ferocity without IP cues, chase vehicles, weapons, gas-mask portrait lock or specific desert scene.
 avoidRules:
   - clean
@@ -34,7 +34,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-042.webp
 attributes:
-  negativePrompt: clean, new, franchise likeness, chase vehicle, weapon focus
+  negativePrompt: clean, new, franchise likeness, chase vehicle, weapon focus, blood, gore
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

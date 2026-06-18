@@ -52,25 +52,26 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-014',
-    name: 'Military Surplus',
+    name: 'Field Utility Textile',
     category: '2. Subcultures',
-    negativePrompt: 'bright, delicate, clean',
+    negativePrompt:
+      'bright, delicate, clean, soldier persona, battlefield, weapon, patrol, combat narrative',
     style: {
-      aesthetic: 'Military surplus styling, field-readiness doctrine, rugged utility silhouette',
+      aesthetic:
+        'Field utility textile styling, expedition-readiness logic, rugged utility silhouette',
       form_and_line:
-        'Boxy utility blocks, pocket density, MOLLE grid, carrier-like bulk, bloused taper',
+        'Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper',
       color_palette:
         'Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown',
       lighting_setup: 'Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey',
       material_texture:
-        'Mil-spec canvas, abrasion-resistant ballistic nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric',
+        'Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric',
       render_quality: 'Tough functional finish, field-worn authenticity, surplus-grade veracity',
       spatial_distortion: 'Bulky silhouette',
-      atmosphere: 'Serious, ready, operational tension, mission focus, silent professionalism',
-      key_features:
-        'Utility pockets, webbing pouches, patrol-cap cues, combat-boot logic, patch accents',
+      atmosphere: 'Serious, ready, field tension, repair focus, quiet professionalism',
+      key_features: 'Utility pockets, webbing pouches, cap cues, rugged boot logic, patch accents',
       creative_brief:
-        'Convert the input into military-surplus utility: olive drab, camo breakup, MOLLE grids, carrier-like bulk, ballistic-nylon abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona, battlefield, weapon, patrol scene or combat narrative.',
+        'Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk, coated-nylon abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona, battlefield, weapon, patrol scene or combat narrative.',
     },
   },
   {
@@ -146,7 +147,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-008',
     name: 'Punk Rock',
     category: '2. Subcultures',
-    negativePrompt: 'clean, expensive, nice, readable text',
+    negativePrompt: 'clean, expensive, nice, readable text, flags, slogans, political symbols',
     style: {
       aesthetic: '1970s punk insurrection, DIY anarchy boutique, anti-polish refusal',
       form_and_line:
@@ -155,37 +156,37 @@ export const GENERATED_STYLE_PRESETS = [
         'Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome',
       lighting_setup: 'Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe',
       material_texture:
-        'Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, union jack patches',
+        'Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches',
       render_quality:
         'Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish',
       spatial_distortion: 'Mohawk hair',
-      atmosphere: 'Angry, loud, chaotic, confrontational snarl, three-chord fury, DIY refusal',
+      atmosphere: 'Loud, chaotic, abrasive, three-chord fury, DIY refusal',
       key_features:
-        'DIY aesthetic, illegible protest-mark texture, padlock-necklace hardware, torn graphic patches',
+        'DIY aesthetic, illegible scuffed-mark texture, padlock-necklace hardware, torn abstract patches',
       creative_brief:
-        'Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs, illegible protest marks, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a club, crime scene, body-first rebel read, mohawk or performance setting.',
+        'Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs, illegible scuffed marks, studs and asymmetry. The result should feel damaged by design and loud without requiring a club, crime scene, body-first rebel read, mohawk or performance setting.',
     },
   },
   {
     id: 'SP08-029',
     name: 'Dark Academia',
     category: '2. Subcultures',
-    negativePrompt: 'bright, sport',
+    negativePrompt: 'bright, sport, library table, fountain pen, satchel, student figure',
     style: {
-      aesthetic: 'Dark academia tailoring, Oxford-common-room nostalgia, candlelit-scholar romance',
+      aesthetic: 'Dark academia tailoring, archival material nostalgia, candlelit-scholar romance',
       form_and_line:
         'Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap',
       color_palette: 'Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal',
       lighting_setup:
-        'Reading-lamp pools, stained-glass amber, fireplace glow, overcast-window grey',
+        'Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey',
       material_texture:
         'Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons',
-      render_quality: 'Intellectual, moody, library-quiet gravitas, Brideshead nostalgia',
+      render_quality: 'Intellectual, moody, archival-quiet gravitas, old-campus nostalgia',
       spatial_distortion: 'None',
       atmosphere:
-        'Studious, serious, ink-and-parchment solitude, rainy-window contemplation, secret-history tension',
+        'Studious, serious, archival solitude, paper-cream contemplation, secret-history tension',
       key_features:
-        'Wire-rim geometry, paper-cream contrast, worn-leather accents, ink-and-parchment mood',
+        'Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood',
       creative_brief:
         'Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn buttons, elbow patches and paper-cream contrast. Keep secret-history tension without requiring a university, library table, fountain pen, satchel or student figure.',
     },

@@ -29,7 +29,7 @@ visualDna:
     manchado.
   render_quality: Densidad distópica de detalle alto, clutter legible y ruido visual controlado.
   spatial_distortion: >-
-    Vertical stacking exaggeration with narrow depth corridors and compressed breathing-space
+    Vertical stacking exaggeration with compressed sectional layering and constrained breathing-space
     intervals
   atmosphere: Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.
   key_features: >-
@@ -38,14 +38,14 @@ visualDna:
   creative_brief: >-
     Presiona cualquier input con apilamiento modular, servicios expuestos, cables, neon bajo y
     material fatigado. Debe sentirse comprimido por infraestructura de supervivencia, no sucio por
-    decoracion.
+    decoracion ni por pasillo distopico repetido.
 avoidRules:
   - clean
   - wide empty space
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-054.webp
 attributes:
-  negativePrompt: clean, wide empty space
+  negativePrompt: clean, wide empty space, hallway, corridor, surveillance camera
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

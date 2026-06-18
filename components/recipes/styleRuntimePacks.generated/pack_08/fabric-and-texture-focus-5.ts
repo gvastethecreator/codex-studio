@@ -61,7 +61,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux',
       lighting_setup:
-        'High contrast reflection, rim-light gloss, studio-strip catchlights and controlled wet-look sheen.',
+        'High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen.',
       material_texture:
         'Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish.',
       render_quality: 'Shiny, edgy high-polish couture with material reflection precision.',
@@ -174,13 +174,14 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-057',
     name: 'Tweed Suit',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'smooth, shiny',
+    negativePrompt:
+      'smooth, shiny, study room, library, armchair, estate weekend, literal suit portrait',
     style: {
       aesthetic: 'Tweed tailoring heritage, scholarly restraint, moss-toned country classicism',
       form_and_line:
         'Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm',
       color_palette: 'Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss',
-      lighting_setup: 'Rainy-window grey, study-lamp warmth, flat wool-revealing light',
+      lighting_setup: 'Rainy grey softness, low study warmth, flat wool-revealing light',
       material_texture:
         'Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining',
       render_quality: 'Classic, textured, heritage-tailoring precision, wool-depth authenticity',
@@ -244,24 +245,25 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-074',
     name: 'Bandage/Mummy',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'exposed mummy face, bare-skin focus, unwrapped body emphasis',
+    negativePrompt:
+      'exposed mummy face, bare-skin focus, unwrapped body emphasis, blood, corpse, gore, horror monster',
     style: {
-      aesthetic: 'Bandage-wrapped concealment, ancient dread, desiccated wrap grammar',
+      aesthetic: 'Archival wrap concealment, aged linen tension, desiccated wrap grammar',
       form_and_line:
         'Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm',
       color_palette:
-        'White, Dirty, aged-linen, dried-blood brown, desert-dust tan, tomb-shadow grey, ancient-yellow',
+        'White, Dirty, aged-linen, aged umber stain, desert-dust tan, archival-shadow grey, ancient-yellow',
       lighting_setup:
-        'Flat dimness, torch-flicker amber, excavation daylight, wrapped-shadow mystery',
+        'Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery',
       material_texture:
         'Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk',
-      render_quality: 'Spooky, dry, cursed-wrap texture, desiccated-linen dread',
+      render_quality: 'Dry archival wrap texture, desiccated-linen tension',
       spatial_distortion: 'None',
-      atmosphere: 'Hidden, ominous, ancient, dry, restrained-horror',
+      atmosphere: 'Hidden, ancient, dry, restrained, archival',
       key_features:
         'Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid',
       creative_brief:
-        'Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust, trailing frays and conceal-reveal gaps. Keep ancient dread as texture only; do not require a sarcophagus, walking mummy, exposed skin, wrapped face or tomb scene.',
+        'Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust, trailing frays and conceal-reveal gaps. Keep ancient tension as texture only; do not require a sarcophagus, walking figure, exposed skin, wrapped face or tomb scene.',
     },
   },
   {
@@ -326,7 +328,7 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Detailed, heavy, forge-craft authenticity, ring-by-ring precision',
       spatial_distortion: 'None',
       atmosphere: 'Protective, historic, heavy craft pride, defensive patience, anvil-song weight',
-      key_features: 'Mesh pattern, ring grid, coif cues, riveted links, mail curtain',
+      key_features: 'Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape',
       creative_brief:
         'Overlay the input with chainmail structure: riveted steel rings, butted grids, coif-like cues, oiled metal and ring-by-ring glints. Keep medieval defense weight without requiring a castle, fortress corridor, warrior, crusader silhouette or battle scene.',
     },
@@ -448,26 +450,26 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-076',
-    name: 'Slime/Goo',
+    name: 'Viscous Gel Couture',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'dry',
+    negativePrompt: 'dry, gore, creature, body horror, lab accident',
     style: {
-      aesthetic: 'Slime/goo material, toxic-spill horror, ectoplasmic wet gloss',
+      aesthetic: 'Viscous gel material, glossy couture surface, ectoplasmic wet gloss',
       form_and_line:
         'Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation',
       color_palette:
-        'Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow',
+        'Neon Green, chartreuse, radioactive-amber, bioluminescent-blue, translucent teal, sickly-yellow',
       lighting_setup:
-        'Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker',
+        'Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights',
       material_texture:
         'Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension',
-      render_quality: 'Gross, sci-fi, ectoplasm goo, containment-breach horror',
+      render_quality: 'Sci-fi gel couture, ectoplasm gloss, controlled viscous material read',
       spatial_distortion: 'Melting',
-      atmosphere: 'Weird, sticky, containment-breach disgust, oozing-drip tension',
+      atmosphere: 'Weird, sticky, tactile, oozing-drip tension',
       key_features:
         'Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form',
       creative_brief:
-        'Cover the input in slime/goo dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence. Keep containment-breach disgust without requiring shoulder-like anatomy, floor puddles, body beneath, lab accident or creature scene.',
+        'Cover the input in viscous gel dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence. Keep the material strange without requiring shoulder-like anatomy, floor puddles, body beneath, lab accident or creature scene.',
     },
   },
   {
@@ -496,7 +498,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-063',
     name: 'Feathers',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'fur, hair',
+    negativePrompt: 'fur, hair, performer body, curtain call, stage scene',
     style: {
       aesthetic: 'Feather couture opulence, plume-driven extravagance, ceremonial plumage drama',
       form_and_line:
@@ -508,17 +510,18 @@ export const GENERATED_STYLE_PRESETS = [
         'Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle',
       render_quality: 'Luxurious, soft, plume-spectacle grandeur, couture opulence',
       spatial_distortion: 'None',
-      atmosphere: 'Grand, buoyant, ornamental, plume-pride majesty',
+      atmosphere: 'Grand, buoyant, ornamental, plume majesty',
       key_features: 'Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs',
       creative_brief:
-        'Feather the input with couture plumage: ostrich plumes, marabou fluff, peacock eyes, fan spreads, headdress arcs and translucent barbs. Keep spectacle as ornamental pressure, not as a showgirl body, performer pose, curtain call or stage scene.',
+        'Feather the input with couture plumage: ostrich plumes, marabou fluff, peacock eyes, fan spreads, headdress arcs and translucent barbs. Keep spectacle as ornamental pressure, not as a performer body, pose, curtain call or stage scene.',
     },
   },
   {
     id: 'SP08-067',
     name: 'Bubble Wrap',
     category: '5. Fabric & Texture Focus',
-    negativePrompt: 'plain textile drape dominance, soft woven cloth replacing bubble plastic',
+    negativePrompt:
+      'plain textile drape dominance, soft woven cloth replacing bubble plastic, gallery plinth, studio setup',
     style: {
       aesthetic: 'Plastic fashion, pop-art materialism, bubble-texture absurdity',
       form_and_line:
@@ -526,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white',
       lighting_setup:
-        'Highlights, point-reflection catchlights, studio-softbox pop, plastic-sheen bounce, gallery-overhead',
+        'Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce, overhead sheen',
       material_texture:
         'Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam',
       render_quality:

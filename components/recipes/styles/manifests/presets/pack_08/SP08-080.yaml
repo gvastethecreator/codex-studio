@@ -12,18 +12,18 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Made of shadow, void-walker mystery, darkness-incarnate presence
+  aesthetic: Shadow-form materiality, void-edge mystery, darkness-as-surface presence
   form_and_line: Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape
   color_palette: Black, void, abyss, pitch, ink, unlit, dark-matter
-  lighting_setup: None, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge
+  lighting_setup: Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge
   material_texture: Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface
-  render_quality: Scary, void, light-swallowing menace, heart-of-darkness poetry
+  render_quality: Void material poetry, light-swallowing depth, readable silhouette contour
   spatial_distortion: Silhouette
-  atmosphere: Mystery, primeval-darkness dread, unnamed-fear stillness, shadow-realm silence
-  key_features: No details, featureless void, light-absorbing depth, negative shape, silhouette-only form
+  atmosphere: Mystery, primeval-darkness stillness, unnamed-fear quiet, shadow silence
+  key_features: Rim separation, smoke-edge texture, velvet grain, light-absorbing depth, negative shape, silhouette contour
   creative_brief: >-
     Transform the input into shadow-form materiality: light-absorbing void,
-    velvety black depth, rim-only edge, undefined silhouette and absence as
+    velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as
     surface. Keep menace optional and atmospheric; do not require a humanoid
     figure, evil character, realm scene, garment wearer or literal standing pose.
 avoidRules:
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-080.webp
 attributes:
-  negativePrompt: bright cheerful lighting, fully illuminated surface, high-key friendly mood
+  negativePrompt: bright cheerful lighting, fully illuminated surface, high-key friendly mood, featureless black card
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

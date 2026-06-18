@@ -13,7 +13,7 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: Sección subterránea biofuncional con red capilar y zonificación interna estricta.
-  form_and_line: Ramificaciones capilares, cámaras nodales, conectores verticales y estratos seccionados por capas.
+  form_and_line: Ramificaciones capilares, cavidades nodales, conectores verticales y estratos seccionados por capas.
   color_palette: >-
     Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly
     turned earth tones
@@ -22,9 +22,9 @@ visualDna:
   render_quality: Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.
   spatial_distortion: None
   atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie inferida.
-  key_features: Jerarquía capilar, cámaras funcionales, ejes de circulación vertical y lectura estratificada de sección.
+  key_features: Jerarquía capilar, cavidades funcionales, ejes de circulación vertical y lectura estratificada de sección.
   creative_brief: >-
-    Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cámaras nodales,
+    Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cavidades nodales,
     estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero,
     vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional
     interna sin exigir edificio, paisaje, set, criatura ni escena fija.
@@ -33,7 +33,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-073.webp
 attributes:
-  negativePrompt: flat exterior-only view, uncut surface-only exterior
+  negativePrompt: flat exterior-only view, uncut surface-only exterior, camera equipment
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

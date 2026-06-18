@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-034
 packId: pack_08
-name: Roman Gladiator
+name: Roman Ceremonial Regalia
 category: 3. Historical & Fantasy
 version: 1
 supportedTasks:
@@ -12,18 +12,18 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Roman arena-forged regalia, martial pageantry, bronze-and-oxblood defiance
+  aesthetic: Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity
   form_and_line: Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence
   color_palette: Bronze, red, iron-grey, oxblood, dusted tan, leather-brown
   lighting_setup: Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light
   material_texture: Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges
-  render_quality: Tough, historical, arena-dust authenticity, ceremonial grit
+  render_quality: Tough, historical, dust-patina authenticity, ceremonial grit
   spatial_distortion: None
-  atmosphere: Martial, pressurized, ceremonial, defiant, mortal-peril gravity
-  key_features: Galea crest cues, scutum geometry, armored manica, pteruges rhythm, bronze articulation
+  atmosphere: Martial, pressurized, ceremonial, defiant, processional gravity
+  key_features: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation
   creative_brief: >-
-    Give the input Roman arena regalia: bronze articulation, oiled leather
-    straps, galea-crest cues, greave taper, linen pteruges and sand-grit
+    Give the input Roman ceremonial regalia: bronze articulation, oiled leather
+    straps, crest cues, greave taper, linen pteruges and sand-grit
     patina. Keep martial pressure as material atmosphere only; do not require
     a torso, face, arena combat, weapon pose, crowd or literal gladiator
     body.
@@ -33,7 +33,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-034.webp
 attributes:
-  negativePrompt: clean, suit
+  negativePrompt: clean, suit, arena combat, weapon pose, crowd, literal gladiator body
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -16,14 +16,14 @@ visualDna:
   form_and_line: Ripped, torn, pinned, shredded asymmetry, bondage-strap tension, drainpipe jeans
   color_palette: Black, Red Plaid, Silver, safety-orange accent, bleached-out tartan, rusted chrome
   lighting_setup: Flash bulb, harsh paparazzi pop, sweat-sheen glare, basement-gig strobe
-  material_texture: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, union jack patches
+  material_texture: Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches
   render_quality: Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish
   spatial_distortion: Mohawk hair
-  atmosphere: Angry, loud, chaotic, confrontational snarl, three-chord fury, DIY refusal
-  key_features: DIY aesthetic, illegible protest-mark texture, padlock-necklace hardware, torn graphic patches
+  atmosphere: Loud, chaotic, abrasive, three-chord fury, DIY refusal
+  key_features: DIY aesthetic, illegible scuffed-mark texture, padlock-necklace hardware, torn abstract patches
   creative_brief: >-
     Push the input through punk refusal: torn tartan, painted leather, safety-pin punctuation, gaffer-tape repairs,
-    illegible protest marks, studs and asymmetry. The result should feel damaged by design and politically loud without requiring a
+    illegible scuffed marks, studs and asymmetry. The result should feel damaged by design and loud without requiring a
     club, crime scene, body-first rebel read, mohawk or performance setting.
 avoidRules:
   - clean
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-008.webp
 attributes:
-  negativePrompt: clean, expensive, nice, readable text
+  negativePrompt: clean, expensive, nice, readable text, flags, slogans, political symbols
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

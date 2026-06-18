@@ -20,7 +20,7 @@ visualDna:
     Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja
     vivo.
   lighting_setup: >-
-    Iluminacion de estudio brillante, acentos neon, bombillas cromaticas y spots expositivos de alto
+    Iluminacion grafica brillante, acentos neon, globos cromaticos y spots expositivos de alto
     contraste.
   material_texture: Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.
   render_quality: Clash postmoderno legible, ironico y energetico sin perder estructura formal.
@@ -32,14 +32,14 @@ visualDna:
   creative_brief: >-
     Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y
     color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a
-    decoracion novelty ni a un living ochentoso fijo.
+    decoracion novelty, set de estudio ni a un living ochentoso fijo.
 avoidRules:
   - boring
   - beige
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-020.webp
 attributes:
-  negativePrompt: boring, beige
+  negativePrompt: boring, beige, studio set, 1980s living room
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

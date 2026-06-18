@@ -217,35 +217,35 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Non-canonical vertical mass, absorbent black planes, featureless profile and severe vertical composition.',
       creative_brief:
-        'Reduce any subject to abstract vertical presence: absorbent black planes, minimal edge light and symbolic authority. Preserve austere mystery without requiring a space location or recognizable cinematic monolith proportions.',
+        'Reduce any subject to transformed vertical presence: absorbent black planes, minimal edge light, one readable silhouette anchor and symbolic authority. Preserve austere mystery without requiring a space location or recognizable cinematic monolith proportions.',
     },
   },
   {
     id: 'SP07-080',
-    name: 'Dimensional Console Retrotech',
+    name: 'Dimensional Retrotech Surfaces',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'literal control room, single central prop, named franchise interior, iconic control-room layout',
+      'literal control room, single central prop, named franchise interior, iconic control-room layout, central console',
     style: {
       aesthetic:
-        'Dimensional retrotech interior grammar inspired by recursive retrofuturist control-surface grammar, circular wall modules, organic architectural growth, tactile command surfaces and impossible interior expansion.',
+        'Dimensional retrotech surface grammar with recursive retrofuturist panel rhythm, circular wall modules, organic architectural growth, tactile surface arrays and impossible interior expansion.',
       form_and_line:
-        'Circular wall modules, hex nodes, ribbed thresholds and console-like control surfaces arranged as recursive retrotech depth, not one fixed central mechanism room.',
+        'Circular wall modules, hex nodes, ribbed thresholds and tactile panel surfaces arranged as recursive retrotech depth, not one fixed central mechanism room.',
       color_palette:
-        'Coral amber emissive warmth, deep teal structural shadows, copper-brass console metals, warm gold circular-module highlights, and dimensional blue accent glows',
+        'Coral amber emissive warmth, deep teal structural shadows, copper-brass retrotech metals, warm gold circular-module highlights, and dimensional blue accent glows',
       lighting_setup:
-        'Command-surface glow, indirect circular-module bounce, controlled golden bloom and soft dimensional accent light.',
+        'Tactile surface glow, indirect circular-module bounce, controlled golden bloom and soft dimensional accent light.',
       material_texture:
-        'Mixed organo-technological surfaces, coral-like ribs, worn console metal, diffused glass and braided cabling.',
+        'Mixed organo-technological surfaces, coral-like ribs, worn copper metal, diffused glass and braided cabling.',
       render_quality:
         'High-detail retrofuturist dimensional depth with coherent impossible-space layering.',
       spatial_distortion:
         'Non-euclidean depth recursion, repeated circular wall modules and expandable interior scale without requiring a central mechanism.',
       atmosphere: 'Adventurous, mysterious and spatially uncanny, with recursive depth.',
       key_features:
-        'Repeating circular wall modules, hexagonal control logic, copper-coral ribs, layered command surfaces and expandable dimensional thresholds.',
+        'Repeating circular wall modules, hexagonal modular signal logic, copper-coral ribs, layered tactile surface arrays and expandable dimensional thresholds.',
       creative_brief:
-        'Build retrotech dimensional language with rhythmic circular wall modules, copper-brass metal, organotech ribs, tactile command surfaces and expanded interior scale. Avoid named franchise interiors, iconic control-room layouts, concrete license reads; prioritize spatial paradox, depth recursion and console-like tactility without requiring a fixed cabin, literal central mechanism or closed control room.',
+        'Build retrotech dimensional language with rhythmic circular wall modules, copper-brass metal, organotech ribs, tactile panel surfaces and expanded interior scale. Avoid named franchise interiors, iconic control-room layouts, concrete license reads; prioritize spatial paradox, depth recursion and retrotech tactility without requiring a fixed cabin, literal central mechanism or closed control room.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

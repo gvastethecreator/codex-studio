@@ -16,11 +16,11 @@ visualDna:
     Infraestructura metropolitana de alto flujo, con pátina cerámica y presión cotidiana de
     movilidad masiva.
   form_and_line: >-
-    Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas de señalética
-    estructural.
+    Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas abstractas de orientación
+    no legible.
   color_palette: Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone
   lighting_setup: >-
-    Fluorescencia intermitente, pools de borde operativo, glare publicitario y vacío negro como
+    Fluorescencia intermitente, pools de borde operativo, brillo comercial no textual y vacío negro como
     contrapunto.
   material_texture: >-
     Baldosa astillada, acero oxidado, grasa mineral, humedad capilar y pavimento antideslizante
@@ -31,11 +31,11 @@ visualDna:
   spatial_distortion: Blur de tránsito y compresión longitudinal por flujo.
   atmosphere: Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.
   key_features: >-
-    Franja de seguridad, wayfinding en banda, conducciones vistas, derrame de luz comercial y huecos
+    Franja de seguridad, bandas de orientación no legibles, conducciones vistas, derrame de luz comercial y huecos
     profundos.
   creative_brief: >-
     Convierte cualquier input en infraestructura de flujo masivo: repetición modular, cerámica
-    gastada, señalética como estructura y humedad subterránea. La imagen debe cargar presión de
+    gastada, orientación abstracta como estructura y humedad subterránea. La imagen debe cargar presión de
     tránsito aun sin mostrar una estación literal.
 avoidRules:
   - clean
@@ -43,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-032.webp
 attributes:
-  negativePrompt: clean, sunny
+  negativePrompt: clean, sunny, readable text, ads, logos, maps
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

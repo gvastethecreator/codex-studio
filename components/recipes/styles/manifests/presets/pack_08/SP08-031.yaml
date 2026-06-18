@@ -15,7 +15,7 @@ visualDna:
   aesthetic: Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor
   form_and_line: Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation
   color_palette: Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum
-  lighting_setup: Chandelier sparkle, feathered-lamp glow, champagne-bubble ambience, soft smoky gleam
+  lighting_setup: Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam
   material_texture: Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon
   render_quality: Vintage eveningwear polish, speakeasy glamour, Deco-era elegance
   spatial_distortion: None
@@ -31,7 +31,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-031.webp
 attributes:
-  negativePrompt: long dress, modern
+  negativePrompt: long dress, modern, party scene, dancer, cigarette-holder prop, portrait body
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

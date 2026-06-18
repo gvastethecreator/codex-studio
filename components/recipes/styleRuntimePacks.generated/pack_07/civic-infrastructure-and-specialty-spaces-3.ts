@@ -7,16 +7,16 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-032',
     name: 'Metropolitan Transit Patina',
     category: '3. Civic Infrastructure And Specialty Spaces',
-    negativePrompt: 'clean, sunny',
+    negativePrompt: 'clean, sunny, readable text, ads, logos, maps',
     style: {
       aesthetic:
         'Infraestructura metropolitana de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.',
       form_and_line:
-        'Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas de señalética estructural.',
+        'Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas abstractas de orientación no legible.',
       color_palette:
         'Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone',
       lighting_setup:
-        'Fluorescencia intermitente, pools de borde operativo, glare publicitario y vacío negro como contrapunto.',
+        'Fluorescencia intermitente, pools de borde operativo, brillo comercial no textual y vacío negro como contrapunto.',
       material_texture:
         'Baldosa astillada, acero oxidado, grasa mineral, humedad capilar y pavimento antideslizante gastado.',
       render_quality:
@@ -25,9 +25,9 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere:
         'Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.',
       key_features:
-        'Franja de seguridad, wayfinding en banda, conducciones vistas, derrame de luz comercial y huecos profundos.',
+        'Franja de seguridad, bandas de orientación no legibles, conducciones vistas, derrame de luz comercial y huecos profundos.',
       creative_brief:
-        'Convierte cualquier input en infraestructura de flujo masivo: repetición modular, cerámica gastada, señalética como estructura y humedad subterránea. La imagen debe cargar presión de tránsito aun sin mostrar una estación literal.',
+        'Convierte cualquier input en infraestructura de flujo masivo: repetición modular, cerámica gastada, orientación abstracta como estructura y humedad subterránea. La imagen debe cargar presión de tránsito aun sin mostrar una estación literal.',
     },
   },
   {
@@ -77,7 +77,7 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'Partial collapse, axis interruption and service-depth fracture',
       atmosphere: 'Inmovilidad opresiva, vacio acustico frio y memoria administrativa detenida.',
       key_features:
-        'Senaletica deslavada, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.',
+        'Placas graficas deslavadas no legibles, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.',
       creative_brief:
         'Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, repeticion administrativa, humedad mineral y luz residual. La tension debe surgir de burocracia detenida y desgaste sistemico, no de hospital embrujado, pasillo de asylum o ruina de terror demasiado literal. Conserva patina institucional, repeticion de servicio, escala administrativa y luz rota sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },

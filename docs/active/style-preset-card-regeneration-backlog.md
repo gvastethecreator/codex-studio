@@ -1418,67 +1418,6 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP07-001 | `components/recipes/styles/manifests/presets/pack_07/SP07-001.yaml` | `assets/recipes/styles/defaults/SP07-001.webp` |
-| SP07-002 | `components/recipes/styles/manifests/presets/pack_07/SP07-002.yaml` | `assets/recipes/styles/defaults/SP07-002.webp` |
-| SP07-003 | `components/recipes/styles/manifests/presets/pack_07/SP07-003.yaml` | `assets/recipes/styles/defaults/SP07-003.webp` |
-| SP07-004 | `components/recipes/styles/manifests/presets/pack_07/SP07-004.yaml` | `assets/recipes/styles/defaults/SP07-004.webp` |
-| SP07-005 | `components/recipes/styles/manifests/presets/pack_07/SP07-005.yaml` | `assets/recipes/styles/defaults/SP07-005.webp` |
-| SP07-006 | `components/recipes/styles/manifests/presets/pack_07/SP07-006.yaml` | `assets/recipes/styles/defaults/SP07-006.webp` |
-| SP07-007 | `components/recipes/styles/manifests/presets/pack_07/SP07-007.yaml` | `assets/recipes/styles/defaults/SP07-007.webp` |
-| SP07-008 | `components/recipes/styles/manifests/presets/pack_07/SP07-008.yaml` | `assets/recipes/styles/defaults/SP07-008.webp` |
-| SP07-009 | `components/recipes/styles/manifests/presets/pack_07/SP07-009.yaml` | `assets/recipes/styles/defaults/SP07-009.webp` |
-| SP07-010 | `components/recipes/styles/manifests/presets/pack_07/SP07-010.yaml` | `assets/recipes/styles/defaults/SP07-010.webp` |
-| SP07-011 | `components/recipes/styles/manifests/presets/pack_07/SP07-011.yaml` | `assets/recipes/styles/defaults/SP07-011.webp` |
-| SP07-012 | `components/recipes/styles/manifests/presets/pack_07/SP07-012.yaml` | `assets/recipes/styles/defaults/SP07-012.webp` |
-| SP07-013 | `components/recipes/styles/manifests/presets/pack_07/SP07-013.yaml` | `assets/recipes/styles/defaults/SP07-013.webp` |
-| SP07-014 | `components/recipes/styles/manifests/presets/pack_07/SP07-014.yaml` | `assets/recipes/styles/defaults/SP07-014.webp` |
-| SP07-015 | `components/recipes/styles/manifests/presets/pack_07/SP07-015.yaml` | `assets/recipes/styles/defaults/SP07-015.webp` |
-| SP07-016 | `components/recipes/styles/manifests/presets/pack_07/SP07-016.yaml` | `assets/recipes/styles/defaults/SP07-016.webp` |
-| SP07-017 | `components/recipes/styles/manifests/presets/pack_07/SP07-017.yaml` | `assets/recipes/styles/defaults/SP07-017.webp` |
-| SP07-018 | `components/recipes/styles/manifests/presets/pack_07/SP07-018.yaml` | `assets/recipes/styles/defaults/SP07-018.webp` |
-| SP07-019 | `components/recipes/styles/manifests/presets/pack_07/SP07-019.yaml` | `assets/recipes/styles/defaults/SP07-019.webp` |
-| SP07-020 | `components/recipes/styles/manifests/presets/pack_07/SP07-020.yaml` | `assets/recipes/styles/defaults/SP07-020.webp` |
-| SP07-021 | `components/recipes/styles/manifests/presets/pack_07/SP07-021.yaml` | `assets/recipes/styles/defaults/SP07-021.webp` |
-| SP07-022 | `components/recipes/styles/manifests/presets/pack_07/SP07-022.yaml` | `assets/recipes/styles/defaults/SP07-022.webp` |
-| SP07-023 | `components/recipes/styles/manifests/presets/pack_07/SP07-023.yaml` | `assets/recipes/styles/defaults/SP07-023.webp` |
-| SP07-024 | `components/recipes/styles/manifests/presets/pack_07/SP07-024.yaml` | `assets/recipes/styles/defaults/SP07-024.webp` |
-| SP07-025 | `components/recipes/styles/manifests/presets/pack_07/SP07-025.yaml` | `assets/recipes/styles/defaults/SP07-025.webp` |
-| SP07-026 | `components/recipes/styles/manifests/presets/pack_07/SP07-026.yaml` | `assets/recipes/styles/defaults/SP07-026.webp` |
-| SP07-027 | `components/recipes/styles/manifests/presets/pack_07/SP07-027.yaml` | `assets/recipes/styles/defaults/SP07-027.webp` |
-| SP07-028 | `components/recipes/styles/manifests/presets/pack_07/SP07-028.yaml` | `assets/recipes/styles/defaults/SP07-028.webp` |
-| SP07-029 | `components/recipes/styles/manifests/presets/pack_07/SP07-029.yaml` | `assets/recipes/styles/defaults/SP07-029.webp` |
-| SP07-030 | `components/recipes/styles/manifests/presets/pack_07/SP07-030.yaml` | `assets/recipes/styles/defaults/SP07-030.webp` |
-| SP07-031 | `components/recipes/styles/manifests/presets/pack_07/SP07-031.yaml` | `assets/recipes/styles/defaults/SP07-031.webp` |
-| SP07-032 | `components/recipes/styles/manifests/presets/pack_07/SP07-032.yaml` | `assets/recipes/styles/defaults/SP07-032.webp` |
-| SP07-033 | `components/recipes/styles/manifests/presets/pack_07/SP07-033.yaml` | `assets/recipes/styles/defaults/SP07-033.webp` |
-| SP07-034 | `components/recipes/styles/manifests/presets/pack_07/SP07-034.yaml` | `assets/recipes/styles/defaults/SP07-034.webp` |
-| SP07-035 | `components/recipes/styles/manifests/presets/pack_07/SP07-035.yaml` | `assets/recipes/styles/defaults/SP07-035.webp` |
-| SP07-036 | `components/recipes/styles/manifests/presets/pack_07/SP07-036.yaml` | `assets/recipes/styles/defaults/SP07-036.webp` |
-| SP07-037 | `components/recipes/styles/manifests/presets/pack_07/SP07-037.yaml` | `assets/recipes/styles/defaults/SP07-037.webp` |
-| SP07-038 | `components/recipes/styles/manifests/presets/pack_07/SP07-038.yaml` | `assets/recipes/styles/defaults/SP07-038.webp` |
-| SP07-039 | `components/recipes/styles/manifests/presets/pack_07/SP07-039.yaml` | `assets/recipes/styles/defaults/SP07-039.webp` |
-| SP07-040 | `components/recipes/styles/manifests/presets/pack_07/SP07-040.yaml` | `assets/recipes/styles/defaults/SP07-040.webp` |
-| SP07-041 | `components/recipes/styles/manifests/presets/pack_07/SP07-041.yaml` | `assets/recipes/styles/defaults/SP07-041.webp` |
-| SP07-042 | `components/recipes/styles/manifests/presets/pack_07/SP07-042.yaml` | `assets/recipes/styles/defaults/SP07-042.webp` |
-| SP07-043 | `components/recipes/styles/manifests/presets/pack_07/SP07-043.yaml` | `assets/recipes/styles/defaults/SP07-043.webp` |
-| SP07-044 | `components/recipes/styles/manifests/presets/pack_07/SP07-044.yaml` | `assets/recipes/styles/defaults/SP07-044.webp` |
-| SP07-045 | `components/recipes/styles/manifests/presets/pack_07/SP07-045.yaml` | `assets/recipes/styles/defaults/SP07-045.webp` |
-| SP07-046 | `components/recipes/styles/manifests/presets/pack_07/SP07-046.yaml` | `assets/recipes/styles/defaults/SP07-046.webp` |
-| SP07-047 | `components/recipes/styles/manifests/presets/pack_07/SP07-047.yaml` | `assets/recipes/styles/defaults/SP07-047.webp` |
-| SP07-048 | `components/recipes/styles/manifests/presets/pack_07/SP07-048.yaml` | `assets/recipes/styles/defaults/SP07-048.webp` |
-| SP07-049 | `components/recipes/styles/manifests/presets/pack_07/SP07-049.yaml` | `assets/recipes/styles/defaults/SP07-049.webp` |
-| SP07-050 | `components/recipes/styles/manifests/presets/pack_07/SP07-050.yaml` | `assets/recipes/styles/defaults/SP07-050.webp` |
-| SP07-051 | `components/recipes/styles/manifests/presets/pack_07/SP07-051.yaml` | `assets/recipes/styles/defaults/SP07-051.webp` |
-| SP07-052 | `components/recipes/styles/manifests/presets/pack_07/SP07-052.yaml` | `assets/recipes/styles/defaults/SP07-052.webp` |
-| SP07-053 | `components/recipes/styles/manifests/presets/pack_07/SP07-053.yaml` | `assets/recipes/styles/defaults/SP07-053.webp` |
-| SP07-054 | `components/recipes/styles/manifests/presets/pack_07/SP07-054.yaml` | `assets/recipes/styles/defaults/SP07-054.webp` |
-| SP07-055 | `components/recipes/styles/manifests/presets/pack_07/SP07-055.yaml` | `assets/recipes/styles/defaults/SP07-055.webp` |
-| SP07-056 | `components/recipes/styles/manifests/presets/pack_07/SP07-056.yaml` | `assets/recipes/styles/defaults/SP07-056.webp` |
-| SP07-057 | `components/recipes/styles/manifests/presets/pack_07/SP07-057.yaml` | `assets/recipes/styles/defaults/SP07-057.webp` |
-| SP07-058 | `components/recipes/styles/manifests/presets/pack_07/SP07-058.yaml` | `assets/recipes/styles/defaults/SP07-058.webp` |
-| SP07-059 | `components/recipes/styles/manifests/presets/pack_07/SP07-059.yaml` | `assets/recipes/styles/defaults/SP07-059.webp` |
-| SP07-060 | `components/recipes/styles/manifests/presets/pack_07/SP07-060.yaml` | `assets/recipes/styles/defaults/SP07-060.webp` |
-| SP07-061 | `components/recipes/styles/manifests/presets/pack_07/SP07-061.yaml` | `assets/recipes/styles/defaults/SP07-061.webp` |
 | SP07-062 | `components/recipes/styles/manifests/presets/pack_07/SP07-062.yaml` | `assets/recipes/styles/defaults/SP07-062.webp` |
 | SP07-063 | `components/recipes/styles/manifests/presets/pack_07/SP07-063.yaml` | `assets/recipes/styles/defaults/SP07-063.webp` |
 | SP07-064 | `components/recipes/styles/manifests/presets/pack_07/SP07-064.yaml` | `assets/recipes/styles/defaults/SP07-064.webp` |
@@ -1490,31 +1429,37 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 | SP07-070 | `components/recipes/styles/manifests/presets/pack_07/SP07-070.yaml` | `assets/recipes/styles/defaults/SP07-070.webp` |
 | SP07-071 | `components/recipes/styles/manifests/presets/pack_07/SP07-071.yaml` | `assets/recipes/styles/defaults/SP07-071.webp` |
 | SP07-072 | `components/recipes/styles/manifests/presets/pack_07/SP07-072.yaml` | `assets/recipes/styles/defaults/SP07-072.webp` |
-| SP07-073 | `components/recipes/styles/manifests/presets/pack_07/SP07-073.yaml` | `assets/recipes/styles/defaults/SP07-073.webp` |
 | SP07-074 | `components/recipes/styles/manifests/presets/pack_07/SP07-074.yaml` | `assets/recipes/styles/defaults/SP07-074.webp` |
-| SP07-075 | `components/recipes/styles/manifests/presets/pack_07/SP07-075.yaml` | `assets/recipes/styles/defaults/SP07-075.webp` |
 | SP07-076 | `components/recipes/styles/manifests/presets/pack_07/SP07-076.yaml` | `assets/recipes/styles/defaults/SP07-076.webp` |
 | SP07-077 | `components/recipes/styles/manifests/presets/pack_07/SP07-077.yaml` | `assets/recipes/styles/defaults/SP07-077.webp` |
-| SP07-078 | `components/recipes/styles/manifests/presets/pack_07/SP07-078.yaml` | `assets/recipes/styles/defaults/SP07-078.webp` |
-| SP07-079 | `components/recipes/styles/manifests/presets/pack_07/SP07-079.yaml` | `assets/recipes/styles/defaults/SP07-079.webp` |
-| SP07-080 | `components/recipes/styles/manifests/presets/pack_07/SP07-080.yaml` | `assets/recipes/styles/defaults/SP07-080.webp` |
+
+Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP07-003|SP07-015|SP07-032|SP07-035|SP07-038|SP07-054` con guardrails contra formula de studio/chair/curtain/lamp/corridor/library/market/fantasy hall/camera prop. QA visual: `SP07-003`, `SP07-015`, `SP07-032`, `SP07-038`, `SP07-054` pasan; `SP07-035` pasa con watchlist leve por puerta/corredor monumental. Pendientes esperados tras runtime: 74 stale.
+
+Nota 2026-06-17 primary wave 2: regeneradas y aprobadas `SP07-039|SP07-043|SP07-047|SP07-052|SP07-055|SP07-060` con guardrails de ancla concreta y sin corridor/market/library/camera/empty abstract. QA visual: las seis pasan; `SP07-052` y `SP07-055` quedan watchlist leve por fantasy hall/castle-like, pero representan bien el preset. Pendientes esperados tras runtime: 68 stale.
+
+Nota 2026-06-17 primary wave 3: regeneradas y aprobadas `SP07-001|SP07-073|SP07-075|SP07-078|SP07-079|SP07-080`. `SP07-073` requirio retry para quitar insectos literales; QA final pasa como cutaway arquitectonico subterraneo. Pendientes esperados tras runtime: 62 stale.
+
+Nota 2026-06-17 primary wave 4: regeneradas y aprobadas `SP07-002|SP07-004|SP07-005|SP07-006|SP07-007|SP07-008|SP07-009|SP07-010` con guardrails contra sala generica, silla/sofa/lamp/curtain/corridor/control-room/empty abstract. QA visual: pasan las ocho; `SP07-004` queda watchlist leve por cozy prop/luz, aceptado por preset. Pendientes esperados tras runtime: 54 stale.
+
+Nota 2026-06-17 primary wave 5: regeneradas y aprobadas `SP07-011|SP07-012|SP07-013|SP07-014|SP07-016|SP07-017|SP07-018|SP07-019` con guardrails contra catalog-room, silla/sofa/lamp/curtain/corridor/control-room/empty abstract. `SP07-018` requirio retry para evitar hallway/catálogo farmhouse; QA final pasa como material-detail. `SP07-014` queda watchlist leve por room tech, aceptado por ancla infraestructura. Pendientes esperados tras runtime: 46 stale.
+
+Nota 2026-06-17 primary wave 6: regeneradas y aprobadas `SP07-020|SP07-021|SP07-022|SP07-023|SP07-024|SP07-025|SP07-026|SP07-027` con guardrails contra postcards literales, signage/text, silla/sofa/lamp/corridor/empty abstract. QA visual: pasan las ocho; `SP07-024` y `SP07-027` quedan watchlist leve por exterior postcard, aceptadas por detalle dominante. Pendientes esperados tras runtime: 38 stale.
+
+Nota 2026-06-17 primary wave 7: regeneradas y aprobadas `SP07-028|SP07-029|SP07-030|SP07-031|SP07-033|SP07-034|SP07-036|SP07-037` con guardrails contra personas/camaras, pasillos de mercado/library, props dominantes, signage/text y abstraccion vacia. QA visual: `SP07-034`, `SP07-036` y `SP07-037` requirieron retry; final pasan. `SP07-029` queda watchlist leve por pequeno cuenco, aceptado porque domina el detalle adobe. Pendientes esperados tras runtime: 30 stale.
+
+Nota 2026-06-17 primary wave 8: regeneradas y aprobadas `SP07-040|SP07-041|SP07-042|SP07-044|SP07-045|SP07-046|SP07-048|SP07-049` con guardrails contra personas, resort/lounges, furniture focus, flags hero, mercado/library/corridor y abstraccion vacia. QA visual: `SP07-046`, `SP07-048` y `SP07-049` requirieron retry; final pasan. `SP07-042`, `SP07-048` y `SP07-049` quedan watchlist leve por props pequenos no dominantes. Pendientes esperados tras runtime: 22 stale.
+
+Nota 2026-06-17 primary wave 9: regeneradas y aprobadas `SP07-050|SP07-051|SP07-053|SP07-056|SP07-057|SP07-058|SP07-059|SP07-061` con guardrails contra personas, licensed fantasy look, vehiculo/maquina hero, text/signage, corridor/market/library y abstraccion vacia. QA visual: pasan las ocho. `SP07-051` queda watchlist por rostros escultoricos; `SP07-053` por vista amplia; `SP07-059` por literalidad pastoral, aceptadas por representatividad fuerte. Pendientes esperados tras runtime: 14 stale.
 
 ### pack_08
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP08-002 | `components/recipes/styles/manifests/presets/pack_08/SP08-002.yaml` | `assets/recipes/styles/defaults/SP08-002.webp` |
-| SP08-026 | `components/recipes/styles/manifests/presets/pack_08/SP08-026.yaml` | `assets/recipes/styles/defaults/SP08-026.webp` |
-| SP08-027 | `components/recipes/styles/manifests/presets/pack_08/SP08-027.yaml` | `assets/recipes/styles/defaults/SP08-027.webp` |
-| SP08-035 | `components/recipes/styles/manifests/presets/pack_08/SP08-035.yaml` | `assets/recipes/styles/defaults/SP08-035.webp` |
-| SP08-037 | `components/recipes/styles/manifests/presets/pack_08/SP08-037.yaml` | `assets/recipes/styles/defaults/SP08-037.webp` |
-| SP08-038 | `components/recipes/styles/manifests/presets/pack_08/SP08-038.yaml` | `assets/recipes/styles/defaults/SP08-038.webp` |
-| SP08-040 | `components/recipes/styles/manifests/presets/pack_08/SP08-040.yaml` | `assets/recipes/styles/defaults/SP08-040.webp` |
-| SP08-065 | `components/recipes/styles/manifests/presets/pack_08/SP08-065.yaml` | `assets/recipes/styles/defaults/SP08-065.webp` |
+Nota 2026-06-17 queue 4: tras regenerar primarias para `SP08-002|SP08-026|SP08-027|SP08-035` y sacar esas filas de la cola markdown autoritativa, quedaron pendientes `SP08-037|SP08-038|SP08-040|SP08-065`.
 
-Nota 2026-06-17 queue 3: tras reauditar semanticamente `SP08-042|SP08-044|SP08-048|SP08-050` y regenerar runtime, la cola visual autoritativa de `lib/staleStyleDefaultImages.generated.ts` sigue en estos 8 IDs. `bun run styles:validate -- --pack=pack_08 --coverage` -> `availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+Nota 2026-06-17 primary close: regeneradas primarias `SP08-037|SP08-038|SP08-040|SP08-065` con guardrails garment-first/material-first. QA visual: `SP08-038` y `SP08-065` pasan; `SP08-037` pasa con interior contextual frontier, sin rostro/arma; `SP08-040` pasa con watchlist por patch-like/lunar-ish pero sin logo real. Cola `pack_08` queda sin filas stale; requiere runtime para reflejar `availableDefaultImages=80/80 staleDefaultImages=0`.
 
-Nota 2026-06-17 variants carousel: generadas `SP08-002-01|SP08-026-01|SP08-027-01|SP08-035-01|SP08-037-01|SP08-038-01|SP08-040-01|SP08-065-01` en `assets/recipes/styles/defaults/variants/` con writer unico x4. QA visual acepta las 8 como carousel candidates; `SP08-026`, `SP08-027`, `SP08-037` y `SP08-065` quedan watchlist leve. No se promovieron primarias, por eso `pack_08` sigue `availableDefaultImages=72/80 staleDefaultImages=8 missingDefaultImages=0`.
+Nota 2026-06-17 variants carousel: generadas `SP08-002-01|SP08-026-01|SP08-027-01|SP08-035-01|SP08-037-01|SP08-038-01|SP08-040-01|SP08-065-01` en `assets/recipes/styles/defaults/variants/` con writer unico x4. QA visual acepta las 8 como carousel candidates; `SP08-026`, `SP08-027`, `SP08-037` y `SP08-065` quedan watchlist leve. Las ocho tienen primaria regenerada al cierre visual `pack_08`.
 
 ### pack_09
 
@@ -4293,3 +4238,219 @@ Actualizacion semantica 2026-06-12 sobre cierre ampliado de boilerplate residual
 - Interpretation:
   - `needs_review` jobs can still leave assets in Studio Library; `qa_p05_065_070_x6` had assets and repo variants, later blocked sessions did not.
   - Next implementation step should add a script path that can inspect/recover assets from `needs_review` jobs by session when safe, or route sensitive pack_05 prompts through a more conservative provider-safe recipe.
+
+### Representative variants - 2026-06-17 - `pack_05` olas safe-label `qa_p05_252_260`, `qa_p05_243_255`, `qa_p05_262_278`, `qa_p05_097_100`
+
+Se agregaron safe labels/motifs provider-safe en `scripts/generate-style-defaults.ts` para separar prompt visible de nombres YAML IP-like. Todos los prompts mantienen denoise fuerte y anti-microdetail al final.
+
+Accepted carousel candidates:
+
+- `assets/recipes/styles/defaults/variants/SP05-098-01.webp` (`508676` bytes): usable; bright monster-nation fantasy, readable subject, no obvious IP lock.
+- `assets/recipes/styles/defaults/variants/SP05-099-01.webp` (`427992` bytes): usable; defensive underdog aura, barrier geometry clear.
+- `assets/recipes/styles/defaults/variants/SP05-100-01.webp` (`425300` bytes): usable; luminous vertical adventure space, no weapon foreground.
+- `assets/recipes/styles/defaults/variants/SP05-253-01.webp` (`402052` bytes): usable; herbarium/healing glow, strong botanical/court read.
+- `assets/recipes/styles/defaults/variants/SP05-257-01.webp` (`302648` bytes): usable; moonlit diplomacy mood, no market aisle lock.
+- `assets/recipes/styles/defaults/variants/SP05-260-01.webp` (`394018` bytes): usable; pastel companion quest, readable and distinct.
+
+Usable with watchlist:
+
+- `assets/recipes/styles/defaults/variants/SP05-243-01.webp` (`481840` bytes): fantasy route/hero-forward but readable OVA quest tone.
+- `assets/recipes/styles/defaults/variants/SP05-244-01.webp` (`269674` bytes): ritual authority clear; watchlist for court-costume/person dominance.
+- `assets/recipes/styles/defaults/variants/SP05-245-01.webp` (`432770` bytes): prophecy romance clear; watchlist for fantasy vista convergence.
+- `assets/recipes/styles/defaults/variants/SP05-246-01.webp` (`562776` bytes): jewel adventure clear; watchlist for market/ornament density.
+- `assets/recipes/styles/defaults/variants/SP05-250-01.webp` (`519370` bytes): quiet vow read; watchlist for paladin/temple route.
+- `assets/recipes/styles/defaults/variants/SP05-255-01.webp` (`546808` bytes): bright gem-engine magic read; watchlist for anime hero route.
+- `assets/recipes/styles/defaults/variants/SP05-252-01.webp` (`394128` bytes): comfort-road read; watchlist for hero/food prop.
+- `assets/recipes/styles/defaults/variants/SP05-258-01.webp` (`335562` bytes): utility quest mood; watchlist for generic hero.
+- `assets/recipes/styles/defaults/variants/SP05-259-01.webp` (`451330` bytes): storybook courage tone; watchlist for fantasy town/hero.
+- `assets/recipes/styles/defaults/variants/SP05-097-01.webp` (`435828` bytes): dark dominion read; watchlist high for tower/hero darkness.
+
+Rejected / do not promote as primary:
+
+- `assets/recipes/styles/defaults/variants/SP05-262-01.webp` (`295028` bytes): dark hero/cathedral convergence.
+- `assets/recipes/styles/defaults/variants/SP05-265-01.webp` (`470372` bytes): weapon-like dark hero/cathedral convergence.
+- `assets/recipes/styles/defaults/variants/SP05-271-01.webp` (`415328` bytes): dark corridor/hero convergence.
+- `assets/recipes/styles/defaults/variants/SP05-272-01.webp` (`350406` bytes): dark hero/city/cathedral convergence.
+- `assets/recipes/styles/defaults/variants/SP05-273-01.webp` (`301558` bytes): gothic creature/ruin convergence, not ecological calm enough.
+- `assets/recipes/styles/defaults/variants/SP05-278-01.webp` (`359704` bytes): cave/cathedral dark hero convergence.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-252|SP05-253|SP05-257|SP05-258|SP05-259|SP05-260" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_252_260_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-243|SP05-244|SP05-245|SP05-246|SP05-250|SP05-255" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_243_255_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-271|SP05-273|SP05-278|SP05-272|SP05-265|SP05-262" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_262_278_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-097|SP05-098|SP05-099|SP05-100" --parallel=4 --variant-slot=1 --session-suffix=qa_p05_097_100_safe_x4 --force` -> `generated=4 attempted=4 skipped=131 failed=0 packs=pack_05`.
+
+Interpretation:
+
+- no primary promotion happened.
+- `dark_fantasy_and_seinen` needs a stricter object/material/environment-first base before more generation.
+- continue next with safer non-dark `pack_05` ranges, using safe labels before generation.
+
+### Representative variants - 2026-06-17 - `pack_05` olas safe-label `qa_p05_130_148`, `qa_p05_124_254`, `qa_p05_094_256`
+
+Se agregaron safe labels/motifs provider-safe para continuar `pack_05` sin enviar nombres IP-like como target style. No primary promotion happened.
+
+Accepted carousel candidates:
+
+- `assets/recipes/styles/defaults/variants/SP05-094-01.webp` (`210796` bytes): pass; object/card-like parody fantasy timing, no hero/corridor drift.
+- `assets/recipes/styles/defaults/variants/SP05-126-01.webp` (`281576` bytes): pass; paranormal comedy color/shape read, no gore/weapon.
+- `assets/recipes/styles/defaults/variants/SP05-130-01.webp` (`643130` bytes): pass; psychic paint overflow, strong visual identity.
+- `assets/recipes/styles/defaults/variants/SP05-140-01.webp` (`378622` bytes): pass; ancient calm spell geometry, readable and clean.
+- `assets/recipes/styles/defaults/variants/SP05-143-01.webp` (`381030` bytes): pass; electric night-rain noir, no gun/knife foreground.
+- `assets/recipes/styles/defaults/variants/SP05-144-01.webp` (`305898` bytes): pass; lo-fi dusty swagger, readable motion.
+- `assets/recipes/styles/defaults/variants/SP05-222-01.webp` (`429940` bytes): pass; civic machine procedure, no readable UI.
+- `assets/recipes/styles/defaults/variants/SP05-228-01.webp` (`346218` bytes): pass; pale machine elegy, distinct from hero-fantasy drift.
+- `assets/recipes/styles/defaults/variants/SP05-239-01.webp` (`345400` bytes): pass; bubblegum cosmic scale, colorful and distinct.
+- `assets/recipes/styles/defaults/variants/SP05-254-01.webp` (`583392` bytes): pass; celestial romance omen, readable but watch for fantasy town reuse later.
+
+Usable with watchlist:
+
+- `assets/recipes/styles/defaults/variants/SP05-124-01.webp` (`397066` bytes): sports ego pressure clear; watchlist for hero-action/crouch formula.
+- `assets/recipes/styles/defaults/variants/SP05-129-01.webp` (`467090` bytes): impact satire clear; watchlist for generic hero destruction.
+- `assets/recipes/styles/defaults/variants/SP05-133-01.webp` (`330970` bytes): magic-force comedy clear; watchlist for academy/crowd backdrop.
+- `assets/recipes/styles/defaults/variants/SP05-137-01.webp` (`506984` bytes): invention/blueprint energy clear; watchlist for action-hero read.
+- `assets/recipes/styles/defaults/variants/SP05-148-01.webp` (`577138` bytes): jazz pulp motion clear; watchlist for gang/action convergence.
+- `assets/recipes/styles/defaults/variants/SP05-225-01.webp` (`532198` bytes): scrap velocity clear; watchlist for corridor/mecha chase.
+- `assets/recipes/styles/defaults/variants/SP05-248-01.webp` (`474424` bytes): fantasy cuisine clear; watchlist for dungeon/cooking prop scene.
+- `assets/recipes/styles/defaults/variants/SP05-256-01.webp` (`551720` bytes): folklore threshold romance clear; watchlist for fantasy-town/hero.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-130|SP05-137|SP05-140|SP05-143|SP05-144|SP05-148" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_130_148_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-129|SP05-133|SP05-124|SP05-126|SP05-254|SP05-222" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_124_254_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-225|SP05-228|SP05-239|SP05-248|SP05-256|SP05-094" --parallel=6 --variant-slot=1 --session-suffix=qa_p05_094_256_safe_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`.
+
+Next:
+
+- generate `SP05-095|SP05-096` and selected `SP05-228|SP05-231|SP05-236` family after adding safe labels where missing.
+- keep dark-fantasy retries paused until object/material-first base is in place.
+
+### Representative variants - 2026-06-17 - `pack_05` ola safe-label `qa_p05_095_236`
+
+Se agregaron safe labels/motifs para `SP05-231` y `SP05-236`; `SP05-095/096` ya usaban safe DNA. No primary promotion happened.
+
+Accepted carousel candidates:
+
+- `assets/recipes/styles/defaults/variants/SP05-095-01.webp` (`221698` bytes): pass; afterquest melancholy as clean relic/meadow memory, no hero/IP lock.
+- `assets/recipes/styles/defaults/variants/SP05-096-01.webp` (`263050` bytes): pass; candy-neon strategy object, strong card read, no UI/text.
+
+Usable with watchlist:
+
+- `assets/recipes/styles/defaults/variants/SP05-231-01.webp` (`467660` bytes): watchlist; coral resonance mood clear, but humanoid/cathedral-corridor pressure remains.
+- `assets/recipes/styles/defaults/variants/SP05-236-01.webp` (`320134` bytes): watchlist; compact hardware read clear, but dark corridor/robot crouch remains.
+
+Command:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-095|SP05-096|SP05-231|SP05-236" --parallel=4 --variant-slot=1 --session-suffix=qa_p05_095_236_safe_x4 --force` -> `generated=4 attempted=4 skipped=131 failed=0 packs=pack_05`.
+
+Next:
+
+- keep `SP05-231/236` as carousel only.
+- next safe route: non-dark/non-mecha IDs, or add object/material-first base before risky mecha/dark retries.
+
+### Representative variants - 2026-06-17 - `pack_05` probe safe-label `qa_p05_121_125`
+
+Probe de cuatro IDs riesgosos ya cubiertos por safe labels. No primary promotion happened.
+
+Accepted carousel candidates:
+
+- `assets/recipes/styles/defaults/variants/SP05-121-01.webp` (`283362` bytes): pass; lantern-elemental object card, no weapon/character copy.
+- `assets/recipes/styles/defaults/variants/SP05-122-01.webp` (`462294` bytes): usable/pass; grimy contract-panic object read, no gore/weapon foreground.
+
+Usable with high watchlist:
+
+- `assets/recipes/styles/defaults/variants/SP05-123-01.webp` (`492178` bytes): hero/cathedral-inferno pressure remains.
+- `assets/recipes/styles/defaults/variants/SP05-125-01.webp` (`313762` bytes): civic response read clear, but uniform/hero-action still dominant.
+
+Command:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-121|SP05-122|SP05-123|SP05-125" --parallel=4 --variant-slot=1 --session-suffix=qa_p05_121_125_safe_probe_x4 --force` -> `generated=4 attempted=4 skipped=131 failed=0 packs=pack_05`.
+
+Next:
+
+- do not promote `SP05-123/125` as primary without object/material-first retry.
+- remaining risky IDs should use new base strategy, not more hero-forward probes.
+
+### Visual checkpoint - 2026-06-17 - `pack_14` / `pack_15`
+
+Coverage rechecked:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage`
+- `bun run styles:validate -- --pack=pack_15 --coverage`
+
+Current state:
+
+- `pack_14`: `defaultImages=123/123`, `availableDefaultImages=123/123`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- `pack_15`: `defaultImages=137/137`, `availableDefaultImages=137/137`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+
+Interpretation:
+
+- `pack_14` and `pack_15` remain closed for stale/missing default-card debt.
+- Do not prioritize new visual generation there unless a fresh semantic edit lands on specific IDs.
+- Current visual debt remains concentrated in packs with stale defaults: `pack_03`, `pack_04`, `pack_05`, `pack_06`, `pack_07`, `pack_13`, `pack_16`.
+
+### Semantic-only wave - 2026-06-17 - `pack_08` residual P2
+
+No card images generated in this wave.
+
+Updated manifests:
+
+- `SP08-047`: reduced candelabra/cathedral literal pull.
+- `SP08-054`: changed `mail curtain` to `flexible mail drape`.
+- `SP08-076`: reduced under-shelf/studio prop pull.
+- `SP08-078`: reduced dark-room lock.
+
+Visual backlog impact:
+
+- these IDs become stale by manifest-change rule until primary regeneration or carousel promotion policy covers them.
+
+### Primary defaults - 2026-06-17 - `pack_08` stale ola `SP08-002/026/027/035`
+
+First real primary replacement wave for current `pack_08` stale defaults. IDs came from `lib/staleStyleDefaultImages.generated.ts`, not docs.
+
+Backup before overwrite:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_08_20260617-193641`
+
+Prompt guardrails added:
+
+- `SP08-002`: no bedroom/studio/chair/curtain/clothing rack/readable branding.
+- `SP08-026`: no indoor room/studio backdrop/curtain/bed/chair/gang insignia.
+- `SP08-027`: no bedroom/studio/chair/curtain/fisheye/logos.
+- `SP08-035`: no weapon/combat/castle interior/human face closeup.
+
+Generated primary defaults:
+
+- `assets/recipes/styles/defaults/SP08-002.webp` (`251222` bytes): pass; streetwear exterior/edge, no room lock.
+- `assets/recipes/styles/defaults/SP08-026.webp` (`276616` bytes): usable; road-worn leather read, watchlist person-forward.
+- `assets/recipes/styles/defaults/SP08-027.webp` (`320992` bytes): usable; skater context, watchlist person-forward.
+- `assets/recipes/styles/defaults/SP08-035.webp` (`387376` bytes): pass; ceremonial armor, no weapon foreground.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-002|SP08-026|SP08-027|SP08-035" --parallel=4 --session-suffix=primary_p08_002_035_x4 --force` -> `generated=4 attempted=4 skipped=76 failed=0 packs=pack_08`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_08 "--preset=SP08-002|SP08-026|SP08-027" --parallel=3 --session-suffix=primary_p08_002_027_retry_no_room --force` -> `generated=3 attempted=3 skipped=77 failed=0 packs=pack_08`.
+
+Next stale primary IDs:
+
+- `SP08-037`, `SP08-038`, `SP08-040`, `SP08-065`.
+
+### Semantic-only wave - 2026-06-17 - `pack_08` P1
+
+- No card images generated in this wave.
+- Updated manifests only:
+  - `SP08-006`, `SP08-014`, `SP08-015`, `SP08-034`, `SP08-036`, `SP08-037`.
+- Visual backlog impact:
+  - primary/stale counts unchanged until card regeneration or promotion policy runs.
+  - next visual work remains blocked on provider-safe generation for sensitive `pack_05` sessions or stale-default primary promotion flow.
+
+### Semantic-only wave - 2026-06-17 - `pack_07/pack_08` P2/P3
+
+- No card images generated in this wave.
+- Updated manifests only:
+  - `pack_07`: `SP07-003`, `SP07-015`, `SP07-032`, `SP07-054`, `SP07-073`, `SP07-080`.
+  - `pack_08`: `SP08-008`, `SP08-042`, `SP08-074`, `SP08-076`, `SP08-080`.
+- Visual backlog impact:
+  - stale/missing counts unchanged.
+  - these edits reduce future card drift around lamps, curtains, signage, corridors, cameras, flags, gore, body-horror, and featureless black-card outputs.

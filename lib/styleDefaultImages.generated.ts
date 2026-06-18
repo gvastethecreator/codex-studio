@@ -1936,14 +1936,62 @@ import variant268 from '../assets/recipes/styles/defaults/variants/SP05-067-01.w
 import variant269 from '../assets/recipes/styles/defaults/variants/SP05-068-01.webp?url';
 import variant270 from '../assets/recipes/styles/defaults/variants/SP05-069-01.webp?url';
 import variant271 from '../assets/recipes/styles/defaults/variants/SP05-070-01.webp?url';
-import variant272 from '../assets/recipes/styles/defaults/variants/SP08-002-01.webp?url';
-import variant273 from '../assets/recipes/styles/defaults/variants/SP08-026-01.webp?url';
-import variant274 from '../assets/recipes/styles/defaults/variants/SP08-027-01.webp?url';
-import variant275 from '../assets/recipes/styles/defaults/variants/SP08-035-01.webp?url';
-import variant276 from '../assets/recipes/styles/defaults/variants/SP08-037-01.webp?url';
-import variant277 from '../assets/recipes/styles/defaults/variants/SP08-038-01.webp?url';
-import variant278 from '../assets/recipes/styles/defaults/variants/SP08-040-01.webp?url';
-import variant279 from '../assets/recipes/styles/defaults/variants/SP08-065-01.webp?url';
+import variant272 from '../assets/recipes/styles/defaults/variants/SP05-094-01.webp?url';
+import variant273 from '../assets/recipes/styles/defaults/variants/SP05-095-01.webp?url';
+import variant274 from '../assets/recipes/styles/defaults/variants/SP05-096-01.webp?url';
+import variant275 from '../assets/recipes/styles/defaults/variants/SP05-097-01.webp?url';
+import variant276 from '../assets/recipes/styles/defaults/variants/SP05-098-01.webp?url';
+import variant277 from '../assets/recipes/styles/defaults/variants/SP05-099-01.webp?url';
+import variant278 from '../assets/recipes/styles/defaults/variants/SP05-100-01.webp?url';
+import variant279 from '../assets/recipes/styles/defaults/variants/SP05-121-01.webp?url';
+import variant280 from '../assets/recipes/styles/defaults/variants/SP05-122-01.webp?url';
+import variant281 from '../assets/recipes/styles/defaults/variants/SP05-123-01.webp?url';
+import variant282 from '../assets/recipes/styles/defaults/variants/SP05-124-01.webp?url';
+import variant283 from '../assets/recipes/styles/defaults/variants/SP05-125-01.webp?url';
+import variant284 from '../assets/recipes/styles/defaults/variants/SP05-126-01.webp?url';
+import variant285 from '../assets/recipes/styles/defaults/variants/SP05-129-01.webp?url';
+import variant286 from '../assets/recipes/styles/defaults/variants/SP05-130-01.webp?url';
+import variant287 from '../assets/recipes/styles/defaults/variants/SP05-133-01.webp?url';
+import variant288 from '../assets/recipes/styles/defaults/variants/SP05-137-01.webp?url';
+import variant289 from '../assets/recipes/styles/defaults/variants/SP05-140-01.webp?url';
+import variant290 from '../assets/recipes/styles/defaults/variants/SP05-143-01.webp?url';
+import variant291 from '../assets/recipes/styles/defaults/variants/SP05-144-01.webp?url';
+import variant292 from '../assets/recipes/styles/defaults/variants/SP05-148-01.webp?url';
+import variant293 from '../assets/recipes/styles/defaults/variants/SP05-222-01.webp?url';
+import variant294 from '../assets/recipes/styles/defaults/variants/SP05-225-01.webp?url';
+import variant295 from '../assets/recipes/styles/defaults/variants/SP05-228-01.webp?url';
+import variant296 from '../assets/recipes/styles/defaults/variants/SP05-231-01.webp?url';
+import variant297 from '../assets/recipes/styles/defaults/variants/SP05-236-01.webp?url';
+import variant298 from '../assets/recipes/styles/defaults/variants/SP05-239-01.webp?url';
+import variant299 from '../assets/recipes/styles/defaults/variants/SP05-243-01.webp?url';
+import variant300 from '../assets/recipes/styles/defaults/variants/SP05-244-01.webp?url';
+import variant301 from '../assets/recipes/styles/defaults/variants/SP05-245-01.webp?url';
+import variant302 from '../assets/recipes/styles/defaults/variants/SP05-246-01.webp?url';
+import variant303 from '../assets/recipes/styles/defaults/variants/SP05-248-01.webp?url';
+import variant304 from '../assets/recipes/styles/defaults/variants/SP05-250-01.webp?url';
+import variant305 from '../assets/recipes/styles/defaults/variants/SP05-252-01.webp?url';
+import variant306 from '../assets/recipes/styles/defaults/variants/SP05-253-01.webp?url';
+import variant307 from '../assets/recipes/styles/defaults/variants/SP05-254-01.webp?url';
+import variant308 from '../assets/recipes/styles/defaults/variants/SP05-255-01.webp?url';
+import variant309 from '../assets/recipes/styles/defaults/variants/SP05-256-01.webp?url';
+import variant310 from '../assets/recipes/styles/defaults/variants/SP05-257-01.webp?url';
+import variant311 from '../assets/recipes/styles/defaults/variants/SP05-258-01.webp?url';
+import variant312 from '../assets/recipes/styles/defaults/variants/SP05-259-01.webp?url';
+import variant313 from '../assets/recipes/styles/defaults/variants/SP05-260-01.webp?url';
+import variant314 from '../assets/recipes/styles/defaults/variants/SP05-262-01.webp?url';
+import variant315 from '../assets/recipes/styles/defaults/variants/SP05-265-01.webp?url';
+import variant316 from '../assets/recipes/styles/defaults/variants/SP05-271-01.webp?url';
+import variant317 from '../assets/recipes/styles/defaults/variants/SP05-272-01.webp?url';
+import variant318 from '../assets/recipes/styles/defaults/variants/SP05-273-01.webp?url';
+import variant319 from '../assets/recipes/styles/defaults/variants/SP05-278-01.webp?url';
+import variant320 from '../assets/recipes/styles/defaults/variants/SP08-002-01.webp?url';
+import variant321 from '../assets/recipes/styles/defaults/variants/SP08-026-01.webp?url';
+import variant322 from '../assets/recipes/styles/defaults/variants/SP08-027-01.webp?url';
+import variant323 from '../assets/recipes/styles/defaults/variants/SP08-035-01.webp?url';
+import variant324 from '../assets/recipes/styles/defaults/variants/SP08-037-01.webp?url';
+import variant325 from '../assets/recipes/styles/defaults/variants/SP08-038-01.webp?url';
+import variant326 from '../assets/recipes/styles/defaults/variants/SP08-040-01.webp?url';
+import variant327 from '../assets/recipes/styles/defaults/variants/SP08-065-01.webp?url';
 
 export const GENERATED_STYLE_DEFAULT_IMAGES: Record<string, string> = {
   'SP01-001': image0,
@@ -3857,12 +3905,60 @@ export const GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS: Record<string, string[]> = 
   'SP05-068': [variant269],
   'SP05-069': [variant270],
   'SP05-070': [variant271],
-  'SP08-002': [variant272],
-  'SP08-026': [variant273],
-  'SP08-027': [variant274],
-  'SP08-035': [variant275],
-  'SP08-037': [variant276],
-  'SP08-038': [variant277],
-  'SP08-040': [variant278],
-  'SP08-065': [variant279],
+  'SP05-094': [variant272],
+  'SP05-095': [variant273],
+  'SP05-096': [variant274],
+  'SP05-097': [variant275],
+  'SP05-098': [variant276],
+  'SP05-099': [variant277],
+  'SP05-100': [variant278],
+  'SP05-121': [variant279],
+  'SP05-122': [variant280],
+  'SP05-123': [variant281],
+  'SP05-124': [variant282],
+  'SP05-125': [variant283],
+  'SP05-126': [variant284],
+  'SP05-129': [variant285],
+  'SP05-130': [variant286],
+  'SP05-133': [variant287],
+  'SP05-137': [variant288],
+  'SP05-140': [variant289],
+  'SP05-143': [variant290],
+  'SP05-144': [variant291],
+  'SP05-148': [variant292],
+  'SP05-222': [variant293],
+  'SP05-225': [variant294],
+  'SP05-228': [variant295],
+  'SP05-231': [variant296],
+  'SP05-236': [variant297],
+  'SP05-239': [variant298],
+  'SP05-243': [variant299],
+  'SP05-244': [variant300],
+  'SP05-245': [variant301],
+  'SP05-246': [variant302],
+  'SP05-248': [variant303],
+  'SP05-250': [variant304],
+  'SP05-252': [variant305],
+  'SP05-253': [variant306],
+  'SP05-254': [variant307],
+  'SP05-255': [variant308],
+  'SP05-256': [variant309],
+  'SP05-257': [variant310],
+  'SP05-258': [variant311],
+  'SP05-259': [variant312],
+  'SP05-260': [variant313],
+  'SP05-262': [variant314],
+  'SP05-265': [variant315],
+  'SP05-271': [variant316],
+  'SP05-272': [variant317],
+  'SP05-273': [variant318],
+  'SP05-278': [variant319],
+  'SP08-002': [variant320],
+  'SP08-026': [variant321],
+  'SP08-027': [variant322],
+  'SP08-035': [variant323],
+  'SP08-037': [variant324],
+  'SP08-038': [variant325],
+  'SP08-040': [variant326],
+  'SP08-065': [variant327],
 };

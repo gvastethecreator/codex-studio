@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-014
 packId: pack_08
-name: Military Surplus
+name: Field Utility Textile
 category: 2. Subcultures
 version: 1
 supportedTasks:
@@ -12,17 +12,17 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Military surplus styling, field-readiness doctrine, rugged utility silhouette
-  form_and_line: Boxy utility blocks, pocket density, MOLLE grid, carrier-like bulk, bloused taper
+  aesthetic: Field utility textile styling, expedition-readiness logic, rugged utility silhouette
+  form_and_line: Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper
   color_palette: Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown
   lighting_setup: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
-  material_texture: Mil-spec canvas, abrasion-resistant ballistic nylon, dirt, parkerized metal, ballistic nylon, IR-treated fabric
+  material_texture: Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric
   render_quality: Tough functional finish, field-worn authenticity, surplus-grade veracity
   spatial_distortion: Bulky silhouette
-  atmosphere: Serious, ready, operational tension, mission focus, silent professionalism
-  key_features: Utility pockets, webbing pouches, patrol-cap cues, combat-boot logic, patch accents
+  atmosphere: Serious, ready, field tension, repair focus, quiet professionalism
+  key_features: Utility pockets, webbing pouches, cap cues, rugged boot logic, patch accents
   creative_brief: >-
-    Convert the input into military-surplus utility: olive drab, camo breakup, MOLLE grids, carrier-like bulk, ballistic-nylon
+    Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk, coated-nylon
     abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a soldier persona,
     battlefield, weapon, patrol scene or combat narrative.
 avoidRules:
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-014.webp
 attributes:
-  negativePrompt: bright, delicate, clean
+  negativePrompt: bright, delicate, clean, soldier persona, battlefield, weapon, patrol, combat narrative
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -22,7 +22,7 @@ visualDna:
     Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para
     cohesión.
   lighting_setup: >-
-    Pools cálidos de lámpara, colgantes de época, luz de tarde filtrada y contraste suave de
+    Resplandor práctico cálido, colgantes de época como geometría opcional, luz de tarde filtrada y contraste suave de
     hospitalidad social.
   material_texture: Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.
   render_quality: >-
@@ -38,7 +38,7 @@ visualDna:
   creative_brief: >-
     Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía
     madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input,
-    sin caer en pastiche vintage.
+    sin caer en pastiche vintage ni depender de lámparas literales o sala escenificada.
 avoidRules:
   - antique
   - victorian
@@ -46,7 +46,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-003.webp
 attributes:
-  negativePrompt: antique, victorian, industrial
+  negativePrompt: antique, victorian, industrial, literal lamp, staged living room
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

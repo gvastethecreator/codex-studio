@@ -30,25 +30,26 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-037',
-    name: 'Wild West Cowboy',
+    name: 'Frontier Workwear',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'city, clean, weapon draw',
+    negativePrompt:
+      'city, clean, weapon draw, holsters, saloons, street standoffs, cowboy portrait',
     style: {
-      aesthetic: 'Frontier workwear myth, dust-worn practicality and high-noon Americana tension.',
+      aesthetic: 'Frontier workwear myth, dust-worn practicality and sun-baked material tension.',
       form_and_line:
         'Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure.',
       color_palette: 'Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print',
       lighting_setup:
-        'High-noon glare, merciless dry sun, amber practical warmth and campfire flicker.',
+        'Dry sun glare, merciless warm light, amber practical warmth and campfire flicker.',
       material_texture:
         'Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.',
-      render_quality: 'Iconic, rugged, frontier-photograph clarity with western grit.',
+      render_quality: 'Iconic, rugged, frontier-photograph clarity with workwear grit.',
       spatial_distortion: 'None',
-      atmosphere: 'Tough, lonely, high-noon tension, frontier solitude and weathered resolve.',
+      atmosphere: 'Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.',
       key_features:
         'Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.',
       creative_brief:
-        'Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, brim geometry and brass glints. Keep western myth as a style anchor without requiring holsters, spurs, weapons, saloons, street standoffs, desert figures or cowboy portraits.',
+        'Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana triangles, brim geometry and brass glints. Keep frontier myth as a style anchor without requiring holsters, spurs, weapons, saloons, street standoffs, desert figures or cowboy portraits.',
     },
   },
   {
@@ -102,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-032',
     name: 'Victorian Mourning',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'color, happy',
+    negativePrompt: 'color, happy, drawn curtain, window tableau, graveyard, portrait setup',
     style: {
       aesthetic: 'Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry',
       form_and_line:
@@ -115,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
       render_quality: 'Formal funereal stillness, ritual gravity, mourning-grade finish',
       spatial_distortion: 'None',
       atmosphere:
-        'Somber, gothic, ritual sorrow, drawn-curtain isolation, eternal-mourning silence',
+        'Somber, gothic, ritual sorrow, enclosed textile isolation, eternal-mourning silence',
       key_features: 'Black veil, jet brooch, mourning-cap cues, black-bordered textile accents',
       creative_brief:
         'Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling, mourning-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without requiring a widow persona, face, window tableau, graveyard or portrait setup.',
@@ -150,14 +151,14 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-031',
     name: 'Roaring 20s (Flapper)',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'long dress, modern',
+    negativePrompt: 'long dress, modern, party scene, dancer, cigarette-holder prop, portrait body',
     style: {
       aesthetic: 'Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor',
       form_and_line:
         'Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation',
       color_palette: 'Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum',
       lighting_setup:
-        'Chandelier sparkle, feathered-lamp glow, champagne-bubble ambience, soft smoky gleam',
+        'Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam',
       material_texture:
         'Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon',
       render_quality: 'Vintage eveningwear polish, speakeasy glamour, Deco-era elegance',
@@ -171,24 +172,24 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-034',
-    name: 'Roman Gladiator',
+    name: 'Roman Ceremonial Regalia',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'clean, suit',
+    negativePrompt: 'clean, suit, arena combat, weapon pose, crowd, literal gladiator body',
     style: {
-      aesthetic: 'Roman arena-forged regalia, martial pageantry, bronze-and-oxblood defiance',
+      aesthetic: 'Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity',
       form_and_line:
         'Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence',
       color_palette: 'Bronze, red, iron-grey, oxblood, dusted tan, leather-brown',
       lighting_setup: 'Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light',
       material_texture:
         'Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges',
-      render_quality: 'Tough, historical, arena-dust authenticity, ceremonial grit',
+      render_quality: 'Tough, historical, dust-patina authenticity, ceremonial grit',
       spatial_distortion: 'None',
-      atmosphere: 'Martial, pressurized, ceremonial, defiant, mortal-peril gravity',
+      atmosphere: 'Martial, pressurized, ceremonial, defiant, processional gravity',
       key_features:
-        'Galea crest cues, scutum geometry, armored manica, pteruges rhythm, bronze articulation',
+        'Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation',
       creative_brief:
-        'Give the input Roman arena regalia: bronze articulation, oiled leather straps, galea-crest cues, greave taper, linen pteruges and sand-grit patina. Keep martial pressure as material atmosphere only; do not require a torso, face, arena combat, weapon pose, crowd or literal gladiator body.',
+        'Give the input Roman ceremonial regalia: bronze articulation, oiled leather straps, crest cues, greave taper, linen pteruges and sand-grit patina. Keep martial pressure as material atmosphere only; do not require a torso, face, arena combat, weapon pose, crowd or literal gladiator body.',
     },
   },
   {
@@ -242,9 +243,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-036',
-    name: 'Viking Warrior',
+    name: 'Norse Seafaring Regalia',
     category: '3. Historical & Fantasy',
-    negativePrompt: 'clean, shiny',
+    negativePrompt: 'clean, shiny, axes, shield wall, raider body, weapon prop',
     style: {
       aesthetic:
         'Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture',
@@ -258,7 +259,7 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Tough, cold, sea-spray resolve, saga warmth, raven-flight omen',
       key_features:
-        'Hammer-like amulet silhouette, round-shield geometry, fur mantle edge, knotwork or rune detail',
+        'Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail',
       creative_brief:
         'Wrap any input in Norse seafaring materiality: wolf fur, riveted chainmail, coarse wool wadmal, oil-tanned leather, iron bosses, rune marks and amber warmth. Keep saga hardness as a stylistic anchor without requiring beards, longships, shield walls, axes, tattooed torsos or a raider body.',
     },

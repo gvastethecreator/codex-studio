@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP08-076
 packId: pack_08
-name: Slime/Goo
+name: Viscous Gel Couture
 category: 5. Fabric & Texture Focus
 version: 1
 supportedTasks:
@@ -12,26 +12,26 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Slime/goo material, toxic-spill horror, ectoplasmic wet gloss
+  aesthetic: Viscous gel material, glossy couture surface, ectoplasmic wet gloss
   form_and_line: Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation
-  color_palette: Neon Green, toxic-slime, chartreuse, radioactive-amber, bioluminescent-blue, nuclear-waste, sickly-yellow
-  lighting_setup: Glossy, wet-look specular, blacklight-UV fluorescence, under-shelf neon, lab-emergency flicker
+  color_palette: Neon Green, chartreuse, radioactive-amber, bioluminescent-blue, translucent teal, sickly-yellow
+  lighting_setup: Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights
   material_texture: Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension
-  render_quality: Gross, sci-fi, ectoplasm goo, containment-breach horror
+  render_quality: Sci-fi gel couture, ectoplasm gloss, controlled viscous material read
   spatial_distortion: Melting
-  atmosphere: Weird, sticky, containment-breach disgust, oozing-drip tension
+  atmosphere: Weird, sticky, tactile, oozing-drip tension
   key_features: Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form
   creative_brief: >-
-    Cover the input in slime/goo dynamics: chartreuse viscosity, stringy
+    Cover the input in viscous gel dynamics: chartreuse viscosity, stringy
     tendrils, wet speculars, bubble suspension, gravity sag and UV fluorescence.
-    Keep containment-breach disgust without requiring shoulder-like anatomy,
+    Keep the material strange without requiring shoulder-like anatomy,
     floor puddles, body beneath, lab accident or creature scene.
 avoidRules:
   - dry
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-076.webp
 attributes:
-  negativePrompt: dry
+  negativePrompt: dry, gore, creature, body horror, lab accident
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

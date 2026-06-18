@@ -16,7 +16,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_palette:
         'Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents',
       lighting_setup:
-        'Key de mesa suave, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.',
+        'Key suave de maqueta, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.',
       material_texture:
         'Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.',
       render_quality:
@@ -220,12 +220,12 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-073',
     name: 'Subterranean Bio-Cutaway',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'flat exterior-only view, uncut surface-only exterior',
+    negativePrompt: 'flat exterior-only view, uncut surface-only exterior, camera equipment',
     style: {
       aesthetic:
         'Sección subterránea biofuncional con red capilar y zonificación interna estricta.',
       form_and_line:
-        'Ramificaciones capilares, cámaras nodales, conectores verticales y estratos seccionados por capas.',
+        'Ramificaciones capilares, cavidades nodales, conectores verticales y estratos seccionados por capas.',
       color_palette:
         'Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones',
       lighting_setup:
@@ -237,9 +237,9 @@ export const GENERATED_STYLE_PRESETS = [
       spatial_distortion: 'None',
       atmosphere: 'Laboriosa, biológica y funcional, escondida bajo superficie inferida.',
       key_features:
-        'Jerarquía capilar, cámaras funcionales, ejes de circulación vertical y lectura estratificada de sección.',
+        'Jerarquía capilar, cavidades funcionales, ejes de circulación vertical y lectura estratificada de sección.',
       creative_brief:
-        'Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cámaras nodales, estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero, vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional interna sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cavidades nodales, estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero, vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional interna sin exigir edificio, paisaje, set, criatura ni escena fija.',
     },
   },
   {
