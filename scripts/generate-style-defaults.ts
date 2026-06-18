@@ -2327,6 +2327,99 @@ function presetMotifForPrompt(
   if (preset.id === 'SP07-069') {
     return 'Use an original pressurized vinyl playform style-card with one readable inflatable vinyl material-detail anchor, rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware, and temporary soft-volume geometry; no bounce castle, amusement park scene, children/person, hard edges, market aisle, library aisle, corridor, or empty abstract tile.';
   }
+  if (preset.id === 'SP07-070') {
+    return 'Use an original confectionery structural ornament style-card with one readable edible-construction detail anchor, piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents, and warm handmade storybook structure; no literal holiday gingerbread house only, bakery product photo, dessert table, spoiled food, person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-071') {
+    return 'Use an original fungal vernacular miniature style-card with one readable cap-and-stem architectural detail anchor, matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust, and small ecological scale; no fairy cottage cliche, forest floor postcard, creature/person, square house, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-072') {
+    return 'Use an original bottle-glass curio miniature style-card with one readable glass-encapsulated miniature detail anchor, cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint, and museum-curio precision; no open ocean, seascape, full maritime landscape, person, readable label, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-074') {
+    return 'Use an original toy-scale sectional cutaway style-card with one readable open-section compartment detail anchor, removed front face, stacked miniature rooms, painted toy wood, pastel wall fields, tiny textile texture, and even display lighting; no closed facade, sealed wall, dollhouse product photo, person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-076') {
+    return 'Use an original stellar shell megastructure style-card with one readable radial collector-panel or interior-horizon detail anchor, near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins, and civilization-scale energy capture; no ordinary planet surface, ground landscape, spaceship cockpit, astronaut/person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP07-077') {
+    return 'Use an original orbital ribbon habitat style-card with one readable curved habitat-band or edge-wall detail anchor, upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment, and macro-civilization planning; no globe view, ordinary planet surface, spacecraft cockpit, astronaut/person, market aisle, library aisle, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-003') {
+    return 'Use an original biased GPU render style-card as a close non-character CG material-light study, with one readable caustic glass, polished metal, or shader-surface anchor, photon-mapped caustics, soft shadow pools, fast blur, noise-free production detail, and broadcast-ready cinematic polish; no bust, head, face, body, creature, mannequin, material-sphere board, UI screen, render settings panel, camera prop, product-table setup, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-004') {
+    return 'Use an original feature-film path-traced style-card as a close non-character CG material-light study, with one readable displaced stone, wet metal, glass, or volume-scattering surface anchor, unclamped global illumination, ACES filmic color, micro-displacement, and grounded cinematic bounce light; no bust, head, face, body, creature, robot, mannequin, material-sphere board, VFX shot with actors, UI screen, camera prop, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-005') {
+    return 'Use an original open path-tracer lookdev style-card as a close non-character procedural material study, with one readable layered shader surface, bevelled test geometry, clean mesh edge, principled BSDF variation, Filmic highlight rolloff, and denoised bounce light; no bust, head, face, body, creature, benchmark monkey, material-sphere board, software UI, product turntable, gallery room, person, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-006') {
+    return 'Use an original architectural raytracer style-card as a tight architectural material-light detail, with one readable stone, glass, metal, or wall-edge anchor, layered BRDF surfaces, IES light falloff, adaptive dome softness, straight-line precision, and warm expensive ArchViz exposure; no material-sphere board, collage grid, swatch panel, furniture showroom, lifestyle room, window-wall catalog scene, person, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-007') {
+    return 'Use an original product-studio renderer style-card with one readable accurate plastic-or-metal material anchor, controlled HDRI reflections, clean silhouette edge, polymer texture fidelity, premium commercial isolation, and exact color discipline; no brand logo, packaging text, floating product ad, empty studio void, person, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-008') {
+    return 'Use an original feature-animation renderer style-card as a non-character soft-form material study, with one readable rounded prop-free abstract CG shape, translucent surface, soft bevel, subsurface edge glow, elastic squash-stretch geometry, vibrant cinematic light, and warm stylized-real material response; no character, face, body, creature, cute mascot, story pose, material-sphere board, named studio imitation, anime, UI, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-009') {
+    return 'Use an original digital-clay sculpt style-card as a non-character sculptural surface study, with one readable abstract carved form, folded clay plane, dynamesh topology cue, stylus stroke ridge, wax or grey matcap material, and rim-lit high-poly surface detail; no bust, head, face, body, creature, anatomy study, material board, software UI, textured final render, person, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-010') {
+    return 'Use an original high-end game-engine pipeline style-card as a non-character real-time environment-material detail, with one readable modular wall, floor, machinery, or terrain-surface anchor, volumetric fog, filmic tonemap, restrained HDR bloom, substance-like PBR tiling, real-time GI, and cutscene-grade interactive energy; no bust, head, face, body, creature, robot, player character, HUD/UI, loading screen, weapon, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-011') {
+    return 'Use an original glass and crystal style-card as a close refractive material study, with one readable thick-edged crystal or glass-surface anchor, caustic light paths, prismatic dispersion, optical bending, transparent layered depth, and clean gallery-grade highlights; no bottle, jewelry display, product ad, face, body, person, UI, readable text, material-board grid, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-012') {
+    return 'Use an original liquid simulation style-card as a close fluid-motion material study, with one readable splash crown, suspended droplet sheet, surface-tension strand, foam edge, wet specular pool, and frozen high-speed motion; no ocean scene, seascape, body, person, glass cup, bucket, lab accident, UI, readable text, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-013') {
+    return 'Use an original subsurface scattering style-card as a close translucent material study, with one readable abstract wax, jade, alabaster, or organic polymer slab, folded shell, or carved non-figurative form, internal warm glow, backlit rim, soft color bleed, and milky depth; no head, face, ear, portrait, bust, mannequin, anatomy, body, creature, food, candle product, person, UI, material-board grid, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-014') {
+    return 'Use an original chrome and metal style-card as a close reflective surface study, with one readable mirror-grade curved panel or abstract mechanical surface, HDRI ribbon reflections, anisotropic highlights, polished metal depth, and gold-chrome tonal shifts; no car, vehicle, helmet, robot, bust, product pedestal, showroom, person, UI, readable text, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-015') {
+    return 'Use an original claymation stop-motion style-card as an extreme close plasticine material-form study, with one readable handmade folded clay slab, clay curl, or non-figurative clay sculpture filling the frame, thumbprints, dust specks, matte clay colors, folded seams, miniature stop-motion lighting, and tactile imperfection; no diorama, room set, background props, wall, lamp, mirror, hand shape, character, head, face, eyes, body, named studio imitation, person, UI, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-016') {
+    return 'Use an original fur and hair style-card as a close groom-material study, with one readable fuzzy surface anchor, dense strands, clump variation, rim-lit fuzz, wind-frozen filaments, soft underlayer shadow, and high-quality strand definition; no animal, creature, body, face, portrait, pelt rug, person, UI, readable text, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-017') {
+    return 'Use an original slime and goo style-card as a close viscous material study, with one readable neon goo sheet, stretch strings, dripping folds, surface-tension bridges, glossy pools, and playful wet specular color; no creature, body, prank bucket, lab accident, person, food, gore, UI, readable text, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-018') {
+    return 'Use an original carbon fiber style-card as a close woven-composite material study, with one readable curved engineering panel, black-grey twill weave, clearcoat depth, anisotropic glints, and motorsport-grade tension without literal vehicle context; no car, vehicle, bike, helmet, weapon, product hero, person, UI, readable text, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-019') {
+    return 'Use an original hologram style-card as a close volumetric projection-material study, with one readable translucent object fragment, scanline interference, RGB edge split, flickering depth planes, light-field shimmer, and dark clean negative space; no face, bust, body, person, screen UI, dashboard, readable text, camera prop, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-020') {
+    return 'Use an original porcelain style-card as a close ceramic material study, with one readable glazed porcelain shell, vessel fragment, or non-figurative sculpted shard, blue-white glaze depth, hairline crackle, kiln specks, and soft reflective highlights; no doll, face, bust, body, figurine, teacup product ad, table setting, person, UI, readable text, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-021') {
+    return 'Use an original low-poly 3D style-card with one readable faceted prop, terrain fragment, or animal-free geometric sculpture, broad planar faces, crisp silhouette, simple color blocks, stylized ambient occlusion, and game-art clarity; no franchise game scene, character, face, body, weapon, HUD/UI, text, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-022') {
+    return 'Use an original voxel art style-card with one readable voxel-built object, micro-landform, or modular structure fragment, chunky cubic silhouettes, grid-snapped steps, block shadows, playful palette, and thumbnail-scale readability; no head, face, bust, statue, character, body, game screenshot, franchise terrain, weapon, HUD/UI, readable text, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-023') {
+    return 'Use an original isometric 3D style-card with one readable isometric miniature platform fragment, stepped architectural cutaway, or abstract geometric monument only, 30-degree camera logic, crisp bevels, tidy depth layers, and compact toy-scale readability; no head, face, bust, statue, hand, body, person, figurative relief, drone, camera, lens, city map, fantasy market, library aisle, corridor, HUD/UI, labels, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-024') {
+    return 'Use an original wireframe render style-card with one readable object or architectural fragment shown as luminous mesh over solid dark form, clean topology lines, vertex glow, controlled transparency, and technical CG elegance; no software screenshot, viewport UI, node graph, readable text, face, bust, body, camera prop, corridor, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-025') {
+    return 'Use an original kitbash style-card with one readable hard-surface machinery fragment, modular armor panel, or sci-fi greeble cluster, layered plates, bolts, vents, asymmetric assemblies, and cinematic industrial scale; no camera, lens, weapon, robot face, vehicle cockpit, corridor, market aisle, library aisle, UI, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-026') {
+    return 'Use an original knolling flat-lay style-card with one readable ordered layout of low-tech abstract CG parts, material tiles, simple clay blocks, flat panels, rods, rings, and geometry modules only, strict orthographic spacing, clean shadows, color-coded organization, and graphic clarity; no central device, circular lens core, sci-fi module, camera gear, head, face, bust, mannequin, figurine, body, sculpture, phones, laptops, brand objects, readable text, market products, person, UI screenshot, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-027') {
+    return 'Use an original metaballs style-card with one readable blobby merged-form object or soft cellular material cluster, smooth implicit-surface bridges, glossy rounded contact seams, liquid-solid tension, and clean volumetric depth; no empty blob wallpaper, face, head, bust, body, creature, toy pile, UI, readable text, corridor, market aisle, library aisle, or empty abstract tile.';
+  }
   if (preset.id === 'SP03-028') {
     return 'Use one freeform class-A CAD test surface or flowing curvature sculpture with zebra reflection bands and G2 continuity; no chair, seat, furniture, vehicle, showroom, lab room, circular wall light, studio setup, product pedestal, or interior scene.';
   }
@@ -2334,73 +2427,91 @@ function presetMotifForPrompt(
     return 'Use one readable Mandelbulb/fractal creature bust or sculptural hero form with self-similar ridges at broad thumbnail scale; no cave, cathedral, corridor, fantasy hall, landscape fly-through, UI grid, or empty abstract-only field.';
   }
   if (preset.id === 'SP03-030') {
-    return 'Use one corrupted 3D character bust, creature fragment, or mesh hero form with vertex explosion, UV tearing, and chromatic data-mosh seams; no camera, phone, monitor, screen, console, generic prop, UI, text, or device silhouette.';
+    return 'Use one corrupted non-figurative 3D mesh hero form or abstract object fragment with vertex explosion, UV tearing, chromatic data-mosh seams, broken polygons, and glitch-material shimmer; no head, face, bust, body, hand, character, creature, camera, phone, monitor, screen, console, UI, text, or device silhouette.';
   }
   if (preset.id === 'SP03-031') {
-    return 'Use one simple organic/material hero subject showing soft bounced color, ambient occlusion, contact shadows, and indirect fill; no lamp, studio light, showroom, staged room, chair, curtain, plant, vase, pool, spa interior, window-wall formula, or direct-flash setup.';
+    return 'Use one simple non-figurative organic or material hero object showing soft bounced color, ambient occlusion, contact shadows, indirect fill, and gentle global illumination gradients; no head, face, bust, body, creature, lamp, studio light, showroom, staged room, chair, curtain, plant, vase, pool, spa interior, window-wall formula, or direct-flash setup.';
   }
   if (preset.id === 'SP03-032') {
-    return 'Use one single material bust or abstract hero object in a neutral volumetric lookdev test space with sculpted light shafts and layered air density; no cathedral, forest, cave, cavern, corridor, fantasy hall, shrine, orb prop, alien warrior, fantasy landscape, battlefield, sun-disk sky, secondary creature, window-beam formula, lamp, smoke machine, or empty fog-only landscape.';
+    return 'Use one single abstract hero object or material form in a neutral volumetric lookdev test space with sculpted light shafts, layered air density, and readable fog falloff; no head, face, bust, body, creature, cathedral, forest, cave, cavern, corridor, fantasy hall, shrine, orb prop, alien warrior, fantasy landscape, battlefield, sun-disk sky, secondary creature, window-beam formula, lamp, smoke machine, or empty fog-only landscape.';
   }
   if (preset.id === 'SP03-033') {
-    return 'Use one original cyberpunk material bust or hero object with wet neon reflections, magenta/cyan emissive haze, and rain-slick shader evidence; no literal street, alley, city corridor, readable sign, kanji, storefront, billboard, crowd, vehicle, camera, device, or UI.';
+    return 'Use one original cyberpunk material hero object, wet neon panel, or abstract hard-surface fragment with magenta/cyan emissive haze, rain-slick shader evidence, and glossy reflected color; no head, face, bust, body, person, literal street, alley, city corridor, readable sign, kanji, storefront, billboard, crowd, vehicle, camera, device, or UI.';
   }
   if (preset.id === 'SP03-034') {
-    return 'Use one clean original bust, product-like hero object, or material specimen where key/fill/rim separation is visible through light behavior only; no visible softbox, lamp, stand, camera, studio room, cyclorama, backdrop roll, chair, stool, curtain, portrait-session setup, readable text, engraving, decal, logo, label, or brand-like marking.';
+    return 'Use one clean original non-figurative hero object or material specimen where key/fill/rim separation is visible through light behavior only; no head, face, bust, statue, body, product ad, visible softbox, lamp, stand, camera, studio room, cyclorama, backdrop roll, chair, stool, curtain, portrait-session setup, readable text, engraving, decal, logo, label, or brand-like marking.';
   }
   if (preset.id === 'SP03-035') {
-    return 'Use one reflective material hero object or CG creature/object fragment integrated into a neutral HDRI light-dome/probe field with matched reflections, contact shadows, and ambient color wrap; no studio background, sunset, sun disk, canyon, mountaintop, cliffs, desert, beach, city square, street, literal room, travel landscape, vehicle, camera, or generic prop scene.';
+    return 'Use one reflective material hero object, abstract CG form, or curved surface integrated into a neutral HDRI light-dome/probe field with matched reflections, contact shadows, ambient color wrap, and readable environment-light evidence; no head, face, bust, body, creature, studio background, sunset, sun disk, canyon, mountaintop, cliffs, desert, beach, city square, street, literal room, travel landscape, vehicle, camera, or generic prop scene.';
   }
   if (preset.id === 'SP03-036') {
-    return 'Use one original material bust or refractive hero form covered by caustic photon webs and prismatic light pools; no underwater scene, swimming pool, aquarium, glassware prop, lens/camera, compass-like object, literal crystal product shot, floor-wall room, or empty light pattern.';
+    return 'Use one original refractive hero form, glass-like material shell, or abstract surface covered by caustic photon webs and prismatic light pools; no head, face, bust, body, creature, underwater scene, swimming pool, aquarium, glassware prop, lens/camera, compass-like object, literal crystal product shot, floor-wall room, or empty light pattern.';
   }
   if (preset.id === 'SP03-037') {
-    return 'Use one clay-white matte sculptural bust, creature fragment, or geometry hero form in a pure ambient-occlusion review pass with grey contact shadows and crevice gradients only; no colored light, rim light, bloom, swatches, props, room, turntable UI, direct light, or decorative scene.';
+    return 'Use one clay-white matte geometric hero form or abstract sculptural object in a pure ambient-occlusion review pass with grey contact shadows and crevice gradients only; no head, face, bust, body, creature, colored light, rim light, bloom, swatches, props, room, turntable UI, direct light, or decorative scene.';
   }
   if (preset.id === 'SP03-038') {
-    return 'Use one dark readable bust, creature fragment, or hero object defined by crisp edge rim glow and halo separation; no visible light fixture, lamp, studio setup, corridor, weapon prop, readable text, camera, UI, front-lit portrait, contact sheet, swatch strip, reference grid, bottom tile row, or multi-frame panel layout.';
+    return 'Use one dark readable non-figurative hero object, material shard, or hard-surface form defined by crisp edge rim glow and halo separation; no head, face, bust, body, creature, visible light fixture, lamp, studio setup, corridor, weapon prop, readable text, camera, UI, front-lit portrait, contact sheet, swatch strip, reference grid, bottom tile row, or multi-frame panel layout.';
   }
   if (preset.id === 'SP03-039') {
-    return 'Use one bioluminescent organic creature/object fragment with branching cyan-violet glow, spore halos, and internal phosphorescent networks; no literal forest, Pandora landscape, floating mountains, tree canopy, path, corridor, shrine, human explorer, or franchise creature.';
+    return 'Use one bioluminescent organic object fragment, fungal material form, or abstract cellular surface with branching cyan-violet glow, spore halos, and internal phosphorescent networks; no head, face, bust, body, creature, literal forest, Pandora landscape, floating mountains, tree canopy, path, corridor, shrine, human explorer, or franchise creature.';
   }
   if (preset.id === 'SP03-040') {
-    return 'Use one original cel-shaded 3D character bust or hero object with bold black outlines, flat color bands, and hard shadow edges; no recognizable game/anime franchise, sword pose, UI, speech bubble, readable text, logo, screen capture, or realistic gradient rendering.';
+    return 'Use one original cel-shaded 3D hero object, rounded prop-free geometric form, or toy-like abstract sculpture with bold black outlines, flat color bands, and hard shadow edges; no blade, sword, weapon, sharp spear shape, head, face, bust, body, character, recognizable game/anime franchise, UI, speech bubble, readable text, logo, screen capture, or realistic gradient rendering.';
   }
   if (preset.id === 'SP03-041') {
-    return 'Use one clean material hero subject, simple CG figure, or sculptural object pierced by visible volumetric light shafts in a controlled lookdev space; no cathedral, temple, ruins, fantasy hall, magic ring, glowing portal, robed mystic figure, floating platform, shrine, forest canopy, corridor, window-beam cliche, UI, text, camera, or device prop.';
+    return 'Use one clean material hero object or abstract sculptural form pierced by visible volumetric light shafts in a controlled lookdev space; no head, face, bust, body, simple CG figure, creature, cathedral, temple, ruins, fantasy hall, magic ring, glowing portal, robed mystic figure, floating platform, shrine, forest canopy, corridor, window-beam cliche, UI, text, camera, or device prop.';
+  }
+  if (preset.id === 'SP03-042') {
+    return 'Use one miniature maquette style-card with a close handcrafted scale-model object, terrain slice, or architectural fragment, tactile model materials, visible tiny bevels, and readable physical miniature lighting; no tabletop room scene, lantern, diorama clutter, toy character, person, face, bust, body, camera, studio wall, curtain, market aisle, library aisle, corridor, UI, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-043') {
+    return 'Use one x-ray shader style-card with a translucent technical object, mechanical shell, or abstract material form revealing internal structure, layered ghosted surfaces, glowing core lines, and clinical blue-white depth; no anatomical torso, skeleton, organs, body, head, face, bust, person, medical UI, screen, camera, device ad, readable text, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-044') {
+    return 'Use one thermal vision style-card with an alien material object, abstract heat-map form, or mechanical part showing false-color temperature gradients, hot core, cool edges, and infrared sensor palette; no face, portrait, body, person, animal, surveillance camera view, UI overlay, readable numbers, weapon, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-045') {
+    return 'Use one wireframe-on-shaded style-card with a shaded object or architectural fragment overlaid by clean topology lines, visible edge loops, surface normals, and CG model structure; no head, face, bust, body, creature, viewport UI, software screenshot, camera, readable text, studio portrait, or empty abstract tile.';
   }
   if (preset.id === 'SP03-046') {
     return 'Use one game-ready PBR asset such as an original sci-fi crate, stylized tool, modular door panel, shield-like prop, creature armor plate, or environment module with albedo/roughness/metalness/normal-map evidence as physical swatches; no human bust, mannequin, portrait head, showroom, UI, screenshot, text, logo, camera, weapon-first read, or generic product render.';
   }
+  if (preset.id === 'SP03-047') {
+    return 'Use one architectural visualization style-card as a tight daylight model slice, facade-material detail, or interior edge fragment with realistic GI, glass/stone/wood material fidelity, and scale-readable spatial craft; no corridor, library aisle, market aisle, fantasy hall, real-estate room filler, couch showroom, person, camera, readable signage, or empty abstract tile.';
+  }
+  if (preset.id === 'SP03-048') {
+    return 'Use one premium product-render style-card with an abstract product-like material form, polished packaging-free object, or precise industrial surface on controlled commercial lighting, with clean reflections and material swatches; no phone, laptop, camera, lens, device ad, logo, readable text, brand-like mark, white studio void, person, or empty abstract tile.';
+  }
   if (preset.id === 'SP03-049') {
-    return 'Use one original rig-ready stylized character, robot, creature, or armored mascot in neutral A-pose or T-pose against a plain grey production backdrop, with front-facing silhouette, modest production outfit/armor, simple material callouts as physical swatches, and clean turnaround-sheet clarity; no sexualized body-first design, exposed lingerie-like armor, action pose, diagonal motion, fighting stance, weapon, narrative background, arch, courtyard, ruin, fountain, statue, plant, fantasy environment, multi-character lineup, contact sheet grid, UI, text, or labels.';
+    return 'Use one original rig-ready non-human stylized robot, creature, or armored mascot in neutral A-pose or T-pose against a plain grey production backdrop, with front-facing silhouette, modest production armor, simple material swatches, and clean turnaround-sheet clarity; no human face, realistic person, sexualized body-first design, exposed lingerie-like armor, action pose, diagonal motion, fighting stance, weapon, narrative background, arch, courtyard, ruin, fountain, statue, plant, fantasy environment, multi-character lineup, contact sheet grid, UI, text, or labels.';
   }
   if (preset.id === 'SP03-050') {
     return 'Use one kinetic abstract 3D hero form made of glossy spheres, ribbons, splines, or elastic geometry with visible motion trails and gradient energy; no logo reveal, readable text, brand mark, UI, costume trim, character bust, office/corporate scene, camera, or static product display.';
   }
   if (preset.id === 'SP03-051') {
-    return 'Use one clean non-gory diagnostic cutaway of an original organ-like system, botanical/creature anatomy, or mechanical-biological specimen with translucent layers and red/blue/white coding; no readable labels, text, UI, blood, gore, realistic surgery, hospital room, full human body, or horror mood.';
+    return 'Use one clean non-gory diagnostic cutaway of an original mechanical-biological, botanical, or creature-specimen system with translucent layers and red/blue/white coding; no readable labels, text, UI, blood, gore, human torso, realistic human anatomy, surgery, hospital room, full body, or horror mood.';
   }
   if (preset.id === 'SP03-052') {
-    return 'Use one aerodynamic original surface form, vehicle fragment, wheel-arch slice, grille-like module, or metallic body-contour sculpture with long studio reflection sweeps and color-shift paint; no full generic car ad, brand/logo, showroom floor, road scene, camera, readable text, driver, or dealership setup.';
+    return 'Use one aerodynamic original surface form, wheel-arch slice, grille-like module, or metallic body-contour sculpture with long reflection sweeps and color-shift paint; no full car hero, generic car ad, brand/logo, showroom, dealership, road scene, camera, readable text, driver, or vehicle lifestyle setup.';
   }
   if (preset.id === 'SP03-053') {
-    return 'Use one original high-jewelry material specimen, faceted sculptural object, gemstone cluster, or precious-metal micro-architecture with macro caustics, dispersion, polished metal, and carat-level clarity; no ring/proposal/wedding box/hand/model/bridal scene, logo, text, camera, or generic jewelry ad.';
+    return 'Use one original high-jewelry material specimen, faceted sculptural object, gemstone cluster, or precious-metal micro-architecture with macro caustics, dispersion, polished metal, and carat-level clarity; no ring/proposal/wedding box/hand/model/neck display/product pedestal/bridal scene, logo, text, camera, or generic jewelry ad.';
   }
   if (preset.id === 'SP03-054') {
-    return 'Use one appetizing CGI food hero form, fruit/gel/sauce/material specimen, or stylized edible construction with droplets, steam, glossy highlights, crumb texture, and subsurface glow; no burger/fries default, character bust, face, restaurant scene, table clutter, brand packaging, logo, readable text, or rotten/gross read.';
+    return 'Use one appetizing CGI food hero form, fruit/gel/sauce/material specimen, or stylized edible construction with droplets, steam, glossy highlights, crumb texture, and subsurface glow; no burger/fries default, character, bust, face, body, restaurant scene, table/plate clutter, brand packaging, logo, readable text, or rotten/gross read.';
   }
   if (preset.id === 'SP03-055') {
-    return 'Use one inhabitable VR-ready scene fragment or interactive-scale environment module with wide-FOV depth, parallax layers, player-scale cues, optimized surfaces, and clear interaction distance; no headset, goggles, person wearing VR gear, UI, controller, screenshot, full generic room, corridor, fantasy hall, readable text, or camera prop.';
+    return 'Use one inhabitable VR-ready scene fragment or interactive-scale environment module with wide-FOV depth, parallax layers, player-scale cues, optimized surfaces, and clear interaction distance; no headset, goggles, person, VR gear, UI, controller, screenshot, portal, corridor, hallway, aisle, fantasy hall, full generic room, readable text, or camera prop.';
   }
   if (preset.id === 'SP03-056') {
-    return 'Use one scientific data hero form such as protein fold, particle cloud, molecule cluster, galaxy simulation, or volumetric measurement field with false-color data and scale cues; no UI, charts, readable labels, lab room, magic/fantasy glow, character, camera, logo, or text.';
+    return 'Use one scientific data hero form such as protein fold, particle cloud, molecule cluster, galaxy simulation, or volumetric measurement field with false-color data and scale cues; no UI, charts, lab screen, readable labels, lab room, magic/fantasy glow, character, camera, logo, or text.';
   }
   if (preset.id === 'SP03-057') {
-    return 'Use one original collectible 3D avatar bust, creature head, mask, or toy-like character fragment with glossy rarity traits, neon/gold accents, clean profile-picture readability, and materialized accessories; no ape copy, franchise/IP cue, NFT marketplace UI, crypto logo, readable text, screenshot, camera, or generic portrait studio.';
+    return 'Use one original collectible 3D mask, toy-emblem, creature-token object, or profile-picture-ready avatar artifact with glossy rarity traits, neon/gold accents, and materialized accessories; no human face, human body, bust, ape copy, franchise/IP cue, NFT marketplace UI, crypto logo, readable text, screenshot, camera, or generic portrait studio.';
   }
   if (preset.id === 'SP03-058') {
-    return 'Use one bold abstract glyph sculpture, invented letterform mass, or typographic-object construction with extruded bevels, material-built strokes, readable silhouette rhythm, and brand-color energy; no readable word, alphabet chart, slogan, logo, UI, poster layout, flat text, or signage.';
+    return 'Use one bold invented glyph sculpture, abstract letterform mass, or typographic-object construction with extruded bevels, material-built strokes, readable silhouette rhythm, and brand-color energy; no readable word, real alphabet sample, slogan, logo, UI, poster layout, flat text, or signage.';
   }
   if (preset.id === 'SP03-059') {
     return 'Use one digital fashion hero garment, simulated textile form, or stylized figure fragment wearing impossible iridescent fabric with real drape, weave, seams, folds, and cloth dynamics; no curtain, generic fabric backdrop, showroom, retail store, runway crowd, logo, readable text, camera, or stiff cloth.';

@@ -15470,3 +15470,108 @@ QA:
 Siguiente pack_08 primary wave:
 
 - `SP08-037`, `SP08-038`, `SP08-040`, `SP08-065`.
+
+## Tanda 2026-06-17 - cierre visual primary `pack_07`
+
+Se cerraron las dos ultimas waves stale de `pack_07` con primarias nuevas, QA visual y backups externos:
+
+- Wave 10: `SP07-062|SP07-063|SP07-064|SP07-065|SP07-066|SP07-067|SP07-068|SP07-069`.
+- Wave 11: `SP07-070|SP07-071|SP07-072|SP07-074|SP07-076|SP07-077`.
+- Backups: `D:\codex-studio-backups\style-defaults-primary-backup\pack_07_wave10_20260617-214049` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_07_wave11_20260617-214923`.
+
+QA:
+
+- Pasan las 14.
+- Watchlist aceptado: `SP07-067` literal sandcastle, `SP07-069` indoor inflatable playform, `SP07-071` depth tipo pasaje, `SP07-074` furniture propio de cutaway toy-scale.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> `availableDefaultImages=80/80`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> runtime current.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 1
+
+Se inicio deuda visual real de `pack_03` desde backlog stale. IDs:
+
+- `SP03-003|SP03-004|SP03-005|SP03-006|SP03-007|SP03-008|SP03-009|SP03-010`.
+
+La primera generacion derivo a bust/personaje y material boards en la mayoria. Se endurecieron overrides `no-bust/no-character` para renderer/lookdev y se reintentaron 7 IDs.
+
+QA:
+
+- Pasa fuerte: `SP03-003`, `SP03-006`, `SP03-007`.
+- Watchlist aceptado por categoria lookdev: `SP03-004`, `SP03-005`, `SP03-008`, `SP03-009`, `SP03-010` conservan material-board/swatch cues, sin UI/text/persona.
+
+Backup:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave1_20260617-220545`.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 2
+
+Se continuo deuda visual real de `pack_03` con primarias nuevas:
+
+- IDs: `SP03-011|SP03-012|SP03-013|SP03-014|SP03-015|SP03-016|SP03-017|SP03-018`.
+- Generacion base: `primary_p03_wave2_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retries selectivos: `SP03-013|SP03-015` por bust/personaje; `SP03-015` requirio un retry adicional para bajar diorama/hand prop.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave2_20260617-223344`.
+
+QA:
+
+- Pasa fuerte: `SP03-011`, `SP03-012`, `SP03-013`, `SP03-014`, `SP03-016`.
+- Watchlist aceptado por categoria lookdev/material: `SP03-015`, `SP03-017`, `SP03-018`; sin texto/UI/persona dominante.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 3
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-019|SP03-020|SP03-021|SP03-022|SP03-023|SP03-024|SP03-025|SP03-026`.
+- Generacion base: `primary_p03_wave3_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retries selectivos: `SP03-022|SP03-023|SP03-026` por bust/camera drift; `SP03-026` requirio un retry adicional para evitar lente/dispositivo central.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave3_20260617-225231`.
+
+QA:
+
+- Pasan: `SP03-019`, `SP03-020`, `SP03-021`, `SP03-022`, `SP03-023`, `SP03-025`, `SP03-026`.
+- Watchlist aceptado: `SP03-024` por blueprint/contact-sheet cues propios de wireframe, sin texto/UI legible.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 4
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-027|SP03-028|SP03-029|SP03-030|SP03-031|SP03-032|SP03-033|SP03-034`.
+- Generacion base: `primary_p03_wave4_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retries selectivos: `SP03-030|SP03-031|SP03-032|SP03-033|SP03-034` porque overrides viejos invitaban bust/creature; se cambiaron a objeto/material no-figurativo.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave4_20260617-231730`.
+
+QA:
+
+- Pasan: `SP03-027`, `SP03-028`, `SP03-029`, `SP03-030`, `SP03-031`, `SP03-033`.
+- Watchlist aceptado: `SP03-032` por volumetric lookdev/hall cue y `SP03-034` por studio/material-board cue; sin bust/persona/camara dominante.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 5
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-035|SP03-036|SP03-037|SP03-038|SP03-039|SP03-040|SP03-041|SP03-042`.
+- Generacion base: `primary_p03_wave5_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retry selectivo: `SP03-040` por drift blade/weapon-like.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave5_20260617-233649`.
+
+QA:
+
+- Pasan las ocho.
+- Watchlist aceptado: `SP03-035` por exterior/HDRI landscape y `SP03-042` por miniature terrain/diorama cues; ambos representativos.
+
+## Tanda 2026-06-17 - primary default cards `pack_03` wave 6
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-043|SP03-044|SP03-045|SP03-046|SP03-047|SP03-048|SP03-049|SP03-050`.
+- Generacion base: `primary_p03_wave6_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave6_20260617-235244`.
+
+QA:
+
+- Pasan las ocho.
+- Watchlist aceptado: `SP03-047` por archviz room/material slice y `SP03-049` por T-pose robot, excepcion representativa del preset; sin humano real/texto/UI dominante.

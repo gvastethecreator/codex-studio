@@ -965,54 +965,6 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP03-003 | `components/recipes/styles/manifests/presets/pack_03/SP03-003.yaml` | `assets/recipes/styles/defaults/SP03-003.webp` |
-| SP03-004 | `components/recipes/styles/manifests/presets/pack_03/SP03-004.yaml` | `assets/recipes/styles/defaults/SP03-004.webp` |
-| SP03-005 | `components/recipes/styles/manifests/presets/pack_03/SP03-005.yaml` | `assets/recipes/styles/defaults/SP03-005.webp` |
-| SP03-006 | `components/recipes/styles/manifests/presets/pack_03/SP03-006.yaml` | `assets/recipes/styles/defaults/SP03-006.webp` |
-| SP03-007 | `components/recipes/styles/manifests/presets/pack_03/SP03-007.yaml` | `assets/recipes/styles/defaults/SP03-007.webp` |
-| SP03-008 | `components/recipes/styles/manifests/presets/pack_03/SP03-008.yaml` | `assets/recipes/styles/defaults/SP03-008.webp` |
-| SP03-009 | `components/recipes/styles/manifests/presets/pack_03/SP03-009.yaml` | `assets/recipes/styles/defaults/SP03-009.webp` |
-| SP03-010 | `components/recipes/styles/manifests/presets/pack_03/SP03-010.yaml` | `assets/recipes/styles/defaults/SP03-010.webp` |
-| SP03-011 | `components/recipes/styles/manifests/presets/pack_03/SP03-011.yaml` | `assets/recipes/styles/defaults/SP03-011.webp` |
-| SP03-012 | `components/recipes/styles/manifests/presets/pack_03/SP03-012.yaml` | `assets/recipes/styles/defaults/SP03-012.webp` |
-| SP03-013 | `components/recipes/styles/manifests/presets/pack_03/SP03-013.yaml` | `assets/recipes/styles/defaults/SP03-013.webp` |
-| SP03-014 | `components/recipes/styles/manifests/presets/pack_03/SP03-014.yaml` | `assets/recipes/styles/defaults/SP03-014.webp` |
-| SP03-015 | `components/recipes/styles/manifests/presets/pack_03/SP03-015.yaml` | `assets/recipes/styles/defaults/SP03-015.webp` |
-| SP03-016 | `components/recipes/styles/manifests/presets/pack_03/SP03-016.yaml` | `assets/recipes/styles/defaults/SP03-016.webp` |
-| SP03-017 | `components/recipes/styles/manifests/presets/pack_03/SP03-017.yaml` | `assets/recipes/styles/defaults/SP03-017.webp` |
-| SP03-018 | `components/recipes/styles/manifests/presets/pack_03/SP03-018.yaml` | `assets/recipes/styles/defaults/SP03-018.webp` |
-| SP03-019 | `components/recipes/styles/manifests/presets/pack_03/SP03-019.yaml` | `assets/recipes/styles/defaults/SP03-019.webp` |
-| SP03-020 | `components/recipes/styles/manifests/presets/pack_03/SP03-020.yaml` | `assets/recipes/styles/defaults/SP03-020.webp` |
-| SP03-021 | `components/recipes/styles/manifests/presets/pack_03/SP03-021.yaml` | `assets/recipes/styles/defaults/SP03-021.webp` |
-| SP03-022 | `components/recipes/styles/manifests/presets/pack_03/SP03-022.yaml` | `assets/recipes/styles/defaults/SP03-022.webp` |
-| SP03-023 | `components/recipes/styles/manifests/presets/pack_03/SP03-023.yaml` | `assets/recipes/styles/defaults/SP03-023.webp` |
-| SP03-024 | `components/recipes/styles/manifests/presets/pack_03/SP03-024.yaml` | `assets/recipes/styles/defaults/SP03-024.webp` |
-| SP03-025 | `components/recipes/styles/manifests/presets/pack_03/SP03-025.yaml` | `assets/recipes/styles/defaults/SP03-025.webp` |
-| SP03-026 | `components/recipes/styles/manifests/presets/pack_03/SP03-026.yaml` | `assets/recipes/styles/defaults/SP03-026.webp` |
-| SP03-027 | `components/recipes/styles/manifests/presets/pack_03/SP03-027.yaml` | `assets/recipes/styles/defaults/SP03-027.webp` |
-| SP03-028 | `components/recipes/styles/manifests/presets/pack_03/SP03-028.yaml` | `assets/recipes/styles/defaults/SP03-028.webp` |
-| SP03-029 | `components/recipes/styles/manifests/presets/pack_03/SP03-029.yaml` | `assets/recipes/styles/defaults/SP03-029.webp` |
-| SP03-030 | `components/recipes/styles/manifests/presets/pack_03/SP03-030.yaml` | `assets/recipes/styles/defaults/SP03-030.webp` |
-| SP03-031 | `components/recipes/styles/manifests/presets/pack_03/SP03-031.yaml` | `assets/recipes/styles/defaults/SP03-031.webp` |
-| SP03-032 | `components/recipes/styles/manifests/presets/pack_03/SP03-032.yaml` | `assets/recipes/styles/defaults/SP03-032.webp` |
-| SP03-033 | `components/recipes/styles/manifests/presets/pack_03/SP03-033.yaml` | `assets/recipes/styles/defaults/SP03-033.webp` |
-| SP03-034 | `components/recipes/styles/manifests/presets/pack_03/SP03-034.yaml` | `assets/recipes/styles/defaults/SP03-034.webp` |
-| SP03-035 | `components/recipes/styles/manifests/presets/pack_03/SP03-035.yaml` | `assets/recipes/styles/defaults/SP03-035.webp` |
-| SP03-036 | `components/recipes/styles/manifests/presets/pack_03/SP03-036.yaml` | `assets/recipes/styles/defaults/SP03-036.webp` |
-| SP03-037 | `components/recipes/styles/manifests/presets/pack_03/SP03-037.yaml` | `assets/recipes/styles/defaults/SP03-037.webp` |
-| SP03-038 | `components/recipes/styles/manifests/presets/pack_03/SP03-038.yaml` | `assets/recipes/styles/defaults/SP03-038.webp` |
-| SP03-039 | `components/recipes/styles/manifests/presets/pack_03/SP03-039.yaml` | `assets/recipes/styles/defaults/SP03-039.webp` |
-| SP03-040 | `components/recipes/styles/manifests/presets/pack_03/SP03-040.yaml` | `assets/recipes/styles/defaults/SP03-040.webp` |
-| SP03-041 | `components/recipes/styles/manifests/presets/pack_03/SP03-041.yaml` | `assets/recipes/styles/defaults/SP03-041.webp` |
-| SP03-042 | `components/recipes/styles/manifests/presets/pack_03/SP03-042.yaml` | `assets/recipes/styles/defaults/SP03-042.webp` |
-| SP03-043 | `components/recipes/styles/manifests/presets/pack_03/SP03-043.yaml` | `assets/recipes/styles/defaults/SP03-043.webp` |
-| SP03-044 | `components/recipes/styles/manifests/presets/pack_03/SP03-044.yaml` | `assets/recipes/styles/defaults/SP03-044.webp` |
-| SP03-045 | `components/recipes/styles/manifests/presets/pack_03/SP03-045.yaml` | `assets/recipes/styles/defaults/SP03-045.webp` |
-| SP03-046 | `components/recipes/styles/manifests/presets/pack_03/SP03-046.yaml` | `assets/recipes/styles/defaults/SP03-046.webp` |
-| SP03-047 | `components/recipes/styles/manifests/presets/pack_03/SP03-047.yaml` | `assets/recipes/styles/defaults/SP03-047.webp` |
-| SP03-048 | `components/recipes/styles/manifests/presets/pack_03/SP03-048.yaml` | `assets/recipes/styles/defaults/SP03-048.webp` |
-| SP03-049 | `components/recipes/styles/manifests/presets/pack_03/SP03-049.yaml` | `assets/recipes/styles/defaults/SP03-049.webp` |
-| SP03-050 | `components/recipes/styles/manifests/presets/pack_03/SP03-050.yaml` | `assets/recipes/styles/defaults/SP03-050.webp` |
 | SP03-051 | `components/recipes/styles/manifests/presets/pack_03/SP03-051.yaml` | `assets/recipes/styles/defaults/SP03-051.webp` |
 | SP03-052 | `components/recipes/styles/manifests/presets/pack_03/SP03-052.yaml` | `assets/recipes/styles/defaults/SP03-052.webp` |
 | SP03-053 | `components/recipes/styles/manifests/presets/pack_03/SP03-053.yaml` | `assets/recipes/styles/defaults/SP03-053.webp` |
@@ -1043,6 +995,18 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 | SP03-078 | `components/recipes/styles/manifests/presets/pack_03/SP03-078.yaml` | `assets/recipes/styles/defaults/SP03-078.webp` |
 | SP03-079 | `components/recipes/styles/manifests/presets/pack_03/SP03-079.yaml` | `assets/recipes/styles/defaults/SP03-079.webp` |
 | SP03-080 | `components/recipes/styles/manifests/presets/pack_03/SP03-080.yaml` | `assets/recipes/styles/defaults/SP03-080.webp` |
+
+Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP03-003|SP03-004|SP03-005|SP03-006|SP03-007|SP03-008|SP03-009|SP03-010` con guardrails contra bust/personaje, UI/text, product-table, corridor/market/library y abstraccion vacia. QA visual: `SP03-003`, `SP03-006`, `SP03-007` pasan fuerte; `SP03-004`, `SP03-005`, `SP03-008`, `SP03-009`, `SP03-010` quedan watchlist por material-board/swatch cues aceptables para lookdev renderer. `SP03-003|004|005|006|008|009|010` requirieron retry no-bust. Pendientes esperados tras runtime: 70 stale.
+
+Nota 2026-06-17 primary wave 2: regeneradas y aprobadas `SP03-011|SP03-012|SP03-013|SP03-014|SP03-015|SP03-016|SP03-017|SP03-018` como primarias nuevas con guardrails contra bust/personaje, UI/text, product-table, corridor/market/library y abstraccion vacia. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave2_20260617-223344`. QA visual: `SP03-011`, `SP03-012`, `SP03-013`, `SP03-014`, `SP03-016` pasan fuerte; `SP03-015`, `SP03-017`, `SP03-018` quedan watchlist aceptado por clay/material-board cues propios de lookdev, sin texto/UI/persona dominante. `SP03-013` requirio retry no-face y `SP03-015` dos retries para sacar bust/personaje/hand prop. Pendientes esperados tras runtime: 62 stale.
+
+Nota 2026-06-17 primary wave 3: regeneradas y aprobadas `SP03-019|SP03-020|SP03-021|SP03-022|SP03-023|SP03-024|SP03-025|SP03-026` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave3_20260617-225231`. QA visual: `SP03-019`, `SP03-020`, `SP03-021`, `SP03-022`, `SP03-023`, `SP03-025`, `SP03-026` pasan; `SP03-024` queda watchlist aceptado por blueprint/contact-sheet cues propios de wireframe, sin texto/UI legible. `SP03-022`, `SP03-023`, `SP03-026` requirieron retries para sacar bust/face/camera-device drift. Pendientes esperados tras runtime: 54 stale.
+
+Nota 2026-06-17 primary wave 4: regeneradas y aprobadas `SP03-027|SP03-028|SP03-029|SP03-030|SP03-031|SP03-032|SP03-033|SP03-034` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave4_20260617-231730`. QA visual: `SP03-027`, `SP03-028`, `SP03-029`, `SP03-030`, `SP03-031`, `SP03-033` pasan; `SP03-032` queda watchlist por volumetric lookdev/hall cue y `SP03-034` por studio/material-board cue, ambos aceptados sin bust/persona/camara dominante. `SP03-030|031|032|033|034` requirieron retry para sacar overrides viejos que invitaban bust/creature. Pendientes esperados tras runtime: 46 stale.
+
+Nota 2026-06-17 primary wave 5: regeneradas y aprobadas `SP03-035|SP03-036|SP03-037|SP03-038|SP03-039|SP03-040|SP03-041|SP03-042` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave5_20260617-233649`. QA visual: pasan las ocho; `SP03-035` queda watchlist por exterior/HDRI landscape, `SP03-042` por miniature terrain/diorama cues, aceptadas por representatividad. `SP03-040` requirio retry para sacar blade/weapon-like drift. Pendientes esperados tras runtime: 38 stale.
+
+Nota 2026-06-17 primary wave 6: regeneradas y aprobadas `SP03-043|SP03-044|SP03-045|SP03-046|SP03-047|SP03-048|SP03-049|SP03-050` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave6_20260617-235244`. QA visual: pasan las ocho. Watchlist aceptado: `SP03-047` por archviz room/material slice y `SP03-049` por T-pose robot, excepcion representativa del preset; sin humano real/texto/UI dominante. Pendientes esperados tras runtime: 30 stale.
 
 ### pack_04
 
@@ -1418,21 +1382,6 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP07-062 | `components/recipes/styles/manifests/presets/pack_07/SP07-062.yaml` | `assets/recipes/styles/defaults/SP07-062.webp` |
-| SP07-063 | `components/recipes/styles/manifests/presets/pack_07/SP07-063.yaml` | `assets/recipes/styles/defaults/SP07-063.webp` |
-| SP07-064 | `components/recipes/styles/manifests/presets/pack_07/SP07-064.yaml` | `assets/recipes/styles/defaults/SP07-064.webp` |
-| SP07-065 | `components/recipes/styles/manifests/presets/pack_07/SP07-065.yaml` | `assets/recipes/styles/defaults/SP07-065.webp` |
-| SP07-066 | `components/recipes/styles/manifests/presets/pack_07/SP07-066.yaml` | `assets/recipes/styles/defaults/SP07-066.webp` |
-| SP07-067 | `components/recipes/styles/manifests/presets/pack_07/SP07-067.yaml` | `assets/recipes/styles/defaults/SP07-067.webp` |
-| SP07-068 | `components/recipes/styles/manifests/presets/pack_07/SP07-068.yaml` | `assets/recipes/styles/defaults/SP07-068.webp` |
-| SP07-069 | `components/recipes/styles/manifests/presets/pack_07/SP07-069.yaml` | `assets/recipes/styles/defaults/SP07-069.webp` |
-| SP07-070 | `components/recipes/styles/manifests/presets/pack_07/SP07-070.yaml` | `assets/recipes/styles/defaults/SP07-070.webp` |
-| SP07-071 | `components/recipes/styles/manifests/presets/pack_07/SP07-071.yaml` | `assets/recipes/styles/defaults/SP07-071.webp` |
-| SP07-072 | `components/recipes/styles/manifests/presets/pack_07/SP07-072.yaml` | `assets/recipes/styles/defaults/SP07-072.webp` |
-| SP07-074 | `components/recipes/styles/manifests/presets/pack_07/SP07-074.yaml` | `assets/recipes/styles/defaults/SP07-074.webp` |
-| SP07-076 | `components/recipes/styles/manifests/presets/pack_07/SP07-076.yaml` | `assets/recipes/styles/defaults/SP07-076.webp` |
-| SP07-077 | `components/recipes/styles/manifests/presets/pack_07/SP07-077.yaml` | `assets/recipes/styles/defaults/SP07-077.webp` |
-
 Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP07-003|SP07-015|SP07-032|SP07-035|SP07-038|SP07-054` con guardrails contra formula de studio/chair/curtain/lamp/corridor/library/market/fantasy hall/camera prop. QA visual: `SP07-003`, `SP07-015`, `SP07-032`, `SP07-038`, `SP07-054` pasan; `SP07-035` pasa con watchlist leve por puerta/corredor monumental. Pendientes esperados tras runtime: 74 stale.
 
 Nota 2026-06-17 primary wave 2: regeneradas y aprobadas `SP07-039|SP07-043|SP07-047|SP07-052|SP07-055|SP07-060` con guardrails de ancla concreta y sin corridor/market/library/camera/empty abstract. QA visual: las seis pasan; `SP07-052` y `SP07-055` quedan watchlist leve por fantasy hall/castle-like, pero representan bien el preset. Pendientes esperados tras runtime: 68 stale.
@@ -1450,6 +1399,10 @@ Nota 2026-06-17 primary wave 7: regeneradas y aprobadas `SP07-028|SP07-029|SP07-
 Nota 2026-06-17 primary wave 8: regeneradas y aprobadas `SP07-040|SP07-041|SP07-042|SP07-044|SP07-045|SP07-046|SP07-048|SP07-049` con guardrails contra personas, resort/lounges, furniture focus, flags hero, mercado/library/corridor y abstraccion vacia. QA visual: `SP07-046`, `SP07-048` y `SP07-049` requirieron retry; final pasan. `SP07-042`, `SP07-048` y `SP07-049` quedan watchlist leve por props pequenos no dominantes. Pendientes esperados tras runtime: 22 stale.
 
 Nota 2026-06-17 primary wave 9: regeneradas y aprobadas `SP07-050|SP07-051|SP07-053|SP07-056|SP07-057|SP07-058|SP07-059|SP07-061` con guardrails contra personas, licensed fantasy look, vehiculo/maquina hero, text/signage, corridor/market/library y abstraccion vacia. QA visual: pasan las ocho. `SP07-051` queda watchlist por rostros escultoricos; `SP07-053` por vista amplia; `SP07-059` por literalidad pastoral, aceptadas por representatividad fuerte. Pendientes esperados tras runtime: 14 stale.
+
+Nota 2026-06-17 primary wave 10: regeneradas y aprobadas `SP07-062|SP07-063|SP07-064|SP07-065|SP07-066|SP07-067|SP07-068|SP07-069` con guardrails contra personas, playroom, horror/gore, airport/ground lock, brand/logo, corridor/market/library y abstraccion vacia. QA visual: pasan las ocho. `SP07-067` queda watchlist por sandcastle literal; `SP07-069` por indoor inflatable playform, aceptadas por materialidad dominante. Pendientes esperados tras runtime: 6 stale.
+
+Nota 2026-06-17 primary wave 11: regeneradas y aprobadas `SP07-070|SP07-071|SP07-072|SP07-074|SP07-076|SP07-077` con guardrails contra product photo, fairy cliche, open ocean, closed facade, planet-surface lock, personas y abstraccion vacia. QA visual: pasan las seis. `SP07-071` queda watchlist leve por depth tipo pasaje, `SP07-074` por furniture propio de cutaway toy-scale, aceptadas por preset. Pendientes esperados tras runtime: 0 stale.
 
 ### pack_08
 
